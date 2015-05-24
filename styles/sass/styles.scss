@@ -4,7 +4,11 @@
 }
 
 @media (max-width: 1200px) {
-    body {
+	body {
 		padding-top: 60px;
 	}
-  }
+}
+
+a, a:hover, a:focus {
+	color: #827717;
+}
