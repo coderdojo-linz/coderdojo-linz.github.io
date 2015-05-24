@@ -1,2 +1,7 @@
 body {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding-top: 70px; }
+
+@media (max-width: 1200px) {
+  body {
+    padding-top: 60px; } }

@@ -31,6 +31,12 @@
     <Content Include="scripts\dependencies.min.js" />
     <Content Include="styles\dependencies.css" />
     <Content Include="styles\styles.css" />
+    <Content Include="_includes\footer.html" />
+    <Content Include="_includes\head.html" />
+    <Content Include="_includes\header.html" />
+    <Content Include="_layouts\default.html" />
+    <Content Include="_layouts\page.html" />
+    <Content Include="_layouts\post.html" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
@@ -61,6 +67,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="styles\sass\styles.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_sass\_base.scss" />
+    <Content Include="_sass\_layout.scss" />
+    <Content Include="_sass\_syntax-highlighting.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_config.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eltern.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_posts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
