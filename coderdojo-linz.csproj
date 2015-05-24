@@ -27,6 +27,7 @@
     <Content Include="fonts\Material-Design-Icons.svg" />
     <Content Include="Gulpfile.js" />
     <Content Include="index.html" />
+    <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
     <Content Include="styles\dependencies.css" />
     <Content Include="styles\styles.css" />
@@ -38,7 +39,9 @@
     <Content Include="package.json" />
     <Content Include="bower.json" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="scripts\maps\application.js.map" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -86,8 +89,10 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
-    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptNoImplicitAny>True</TypeScriptNoImplicitAny>
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>

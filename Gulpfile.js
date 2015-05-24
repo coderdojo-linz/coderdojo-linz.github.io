@@ -1,4 +1,4 @@
-﻿/// <binding BeforeBuild='default' />
+﻿/// <binding BeforeBuild='default' ProjectOpened='sass:watch' />
 /*
 This file in the main entry point for defining Gulp tasks and using Gulp plugins.
 Click here to learn more. http://go.microsoft.com/fwlink/?LinkId=518007
@@ -21,7 +21,7 @@ var dependencyStylesheets = ["bower_components/bootstrap/dist/css/bootstrap.css"
 var bootstrapFonts = ["bower_components/bootstrap/dist/fonts/*.*", "bower_components/bootstrap-material-design/dist/fonts/*.*"];
 //var uiGridResources = ["bower_components/angular-ui-grid/ui-grid.eot", "bower_components/angular-ui-grid/ui-grid.svg", "bower_components/angular-ui-grid/ui-grid.ttf", "bower_components/angular-ui-grid/ui-grid.woff"];
 var customStylesheets = ["styles/sass/styles.scss"];
-//var typescriptFiles = ["wwwroot/*.ts", "wwwroot/**/*.ts"];
+var typescriptFiles = ["app.ts"];
 
 // Delete scripts for dependencies
 gulp.task("clean", function () {
@@ -70,25 +70,25 @@ gulp.task("sass", [], function () {
 		.pipe(gulp.dest("styles/"));
 });
 
-//gulp.task("sass:watch", function () {
-//	gulp.watch("styles/*.scss", ["sass"]);
-//});
+gulp.task("sass:watch", function () {
+	gulp.watch(customStylesheets, ["sass"]);
+});
 
-//gulp.task("typescript", [], function () {
-//	return gulp.src(typescriptFiles)
-//		.pipe(newer("wwwroot/scripts/application.js"))
-//		.pipe(sourcemaps.init())
-//		.pipe(ts({
-//			noImplicitAny: true,
-//			out: "application.js"
-//		}))
-//		.pipe(sourcemaps.write("./maps"))
-//		.pipe(gulp.dest("wwwroot/scripts"));
-//});
+gulp.task("typescript", [], function () {
+	return gulp.src(typescriptFiles)
+		.pipe(newer("scripts/application.js"))
+		.pipe(sourcemaps.init())
+		.pipe(ts({
+			noImplicitAny: true,
+			out: "application.js"
+		}))
+		.pipe(sourcemaps.write("./maps"))
+		.pipe(gulp.dest("scripts"));
+});
 
-//gulp.task("typescript:watch", function () {
-//	gulp.watch(["wwwroot/*.ts", "wwwroot/**/*.ts"], ["typescript"]);
-//});
+gulp.task("typescript:watch", function () {
+	gulp.watch(typescriptFiles, ["typescript"]);
+});
 
 //Set a default tasks
 gulp.task("default", ["clean", "dependencyScriptsAndStyles", "sass"], function () { });
