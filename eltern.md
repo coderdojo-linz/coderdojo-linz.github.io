@@ -7,9 +7,9 @@ description: Häufige Fragen für Eltern zum CoderDojo
 # Häufige Fragen für Eltern #
 
 
-## Was ist *CoderDojo* ##
+## Was ist ein *CoderDojo*? ##
 
-In der CoderDojo Gemeinschaft bieten Freiwillige auf der ganzen Welt Programmierclubs für Kinder und Jugendliche zwischen 7 und 17 Jahren an. Sie lernen dort spielerisch wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und haben generell die Möglichkeit, Technologie zu entdecken. Bei CoderDojo Treffen treffen sie auch andere Kinder und Jugendliche, die ebenfalls an Technologie interessiert sind und können sich mit ihnen über ihre Projekte auszutauschen.
+In der *CoderDojo* Gemeinschaft bieten Freiwillige auf der ganzen Welt Programmierclubs für Kinder und Jugendliche an. Sie lernen dort spielerisch wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und haben generell die Möglichkeit, Technologie zu entdecken. Bei CoderDojo Treffen treffen sie auch andere Kinder und Jugendliche, die ebenfalls an Technologie interessiert sind und können sich mit ihnen über ihre Projekte auszutauschen.
 
 Bei CoderDojo stehen das gemeinsame Entdecken, Teamarbeit, [Mentoring](http://de.wikipedia.org/wiki/Mentoring "Mentoring auf Wikipedia"){:target="_blank"} sowie selbstorganisiertes Lernen und Experimentieren im Vordergrund. Offenheit, gegenseitiges Helfen und das Weitergeben von erworbenem Wissen sind wichtige Grundprinzipien von CoderDojo.
 
@@ -23,19 +23,6 @@ Mehr Informationen (Englisch) über die internationale CoderDojo-Gemeinschaft fi
 [Dōjō](http://de.wikipedia.org/wiki/D%C5%8Dj%C5%8D "Dojo auf Wikipedia"){:target="_blank"} kommt aus dem Japanischen (道場). Will man Judo, Karate oder eine andere japanische Kampfkunst lernen, besucht man ein Dojo. Im übertragenen Sinn bedeutet Dojo die *Gemeinschaft der Übenden*. Analog dazu soll *CoderDojo* Raum und Gemeinschaft für das Erlernen und Üben von Programmieren bieten.
 
 
-## Was sind CoderDojos *nicht*? ##
-
-CoderDojos sind *kein* Schulunterricht und *keine* Nachhilfestunden.
-
-Bei CoderDojos steht *nicht* das Computerspielen im Vordergrund. Kinder und Jugendliche erstellen im CoderDojo selbst Computerspiele statt diese nur zu konsumieren.
-
-## Welche Regeln gibt es? ##
-
-Bei den Projekten sind kaum Grenzen gesetzt. Spiele, Elektronik, Apps, Webseiten etc., alles ist möglich. Die Mentoren achten darauf, dass die Projektinhalte kindgerecht sind (z.B. keine Gewalt gegen Menschen oder Tiere, keine Pornografie etc.).
-
-Die Arbeit mit sozialen Netzwerken wie Facebook oder Twitter ist erlaubt, damit die Kinder und Jugendlichen mit Hilfe der Mentoren den verantwortlichen Umgang damit erlernen. Voraussetzung ist aber, dass das Kind alt genug entsprechend der Nutzungsbedingungen der jeweiligen Plattform ist. 
-
-
 ## Ist Programmieren wichtig für mein Kind? ##
 
 Programmieren ist eine Fähigkeit, die heutzutage immer wichtiger wird. Grundkenntnisse der Softwareentwicklung werden die meisten Kinder und Jugendliche in Ausbildung, Beruf und sogar vermehrt im Alltagsleben brauchen. Im Gegensatz zu Mathematik oder Physik ist Programmieren jedoch noch kein fester Bestandteil im Schulalltag.
@@ -43,6 +30,20 @@ Programmieren ist eine Fähigkeit, die heutzutage immer wichtiger wird. Grundken
 Bei den CoderDojos lernen Kinder spielerisch Programmieren kennen. Sie erwerben Fähigkeiten, die ihnen in der Schule, bei einem eventuellen Studium und im Beruf sehr hilfreich sein werden.
 
 Darüber hinaus erweitert es die Perspektive der Kinder und Jugendlichen in Sachen Berufswahl. Gute Techniker und Technikerinnen sind heute sehr gefragt. In CoderDojos können Ihre Kinder herausfinden, ob ihnen ein technischer Beruf im Bereich Softwareentwicklung Spaß machen könnte.
+
+
+## Was sind CoderDojos *nicht*? ##
+
+CoderDojos sind *kein* Schulunterricht und *keine* Nachhilfestunden.
+
+Bei CoderDojos steht *nicht* das Computerspielen im Vordergrund. Kinder und Jugendliche erstellen im CoderDojo selbst Computerspiele statt diese nur zu konsumieren.
+
+
+## Welche Regeln gibt es? ##
+
+Bei den Projekten sind kaum Grenzen gesetzt. Spiele, Elektronik, Apps, Webseiten etc., alles ist möglich. Die Mentoren achten darauf, dass die Projektinhalte kindgerecht sind (z.B. keine Gewalt gegen Menschen oder Tiere, keine Pornografie etc.).
+
+Die Arbeit mit sozialen Netzwerken wie Facebook oder Twitter ist erlaubt, damit die Kinder und Jugendlichen mit Hilfe der Mentoren den verantwortlichen Umgang damit erlernen. Voraussetzung ist aber, dass das Kind alt genug entsprechend der Nutzungsbedingungen der jeweiligen Plattform ist. 
 
 
 ## Wie funktionieren CoderDojos? ##
@@ -73,5 +74,12 @@ Es ist schwer im Vorhinein herauszufinden, ob ein Kind Spaß beim CoderDojo habe
 Falls Ihr Kind jünger als 13 Jahre ist, muss es von einem Erwachsenen zum CoderDojo begleitet werden, der während des gesamten CoderDojos anwesend ist.
 
 Begleitpersonen sind natürlich herzlich eingeladen, als Mentoren oder anderweitige Helfer (es gibt bei einem CoderDojo viele Dinge abseits von Programmieren, die zu tun sind) mitzuwirken.
+
+
+## Braucht mein Kind einen Laptop? ##
+
+Ja. Der Laptop muss nicht besonders schnell sein. Es ist egal, ob er mit Windows, Mac OS oder Linux betrieben wird. iPads, Android-Tablets oder Smartphones reichen nicht aus.
+
+Falls ein Kind oder Jugendlicher teilnehmen möchte, der keinen eigenen Laptop mitbringen kann, nehmen Sie mit uns [Kontakt](http://coderdojo-linz.github.io/kontakt.html) auf. Wir haben eine limitierte Anzahl an Geräten, die wir während der CoderDojos zur Verfügung stellen können.
 
 
