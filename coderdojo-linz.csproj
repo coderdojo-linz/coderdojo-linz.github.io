@@ -26,7 +26,7 @@
     <Content Include="fonts\LICENSE.txt" />
     <Content Include="fonts\Material-Design-Icons.svg" />
     <Content Include="Gulpfile.js" />
-    <Content Include="index.html" />
+    <None Include="index.md" />
     <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
     <Content Include="styles\dependencies.css" />
@@ -37,6 +37,9 @@
     <Content Include="_layouts\default.html" />
     <Content Include="_layouts\page.html" />
     <Content Include="_layouts\post.html" />
+    <Content Include="kontakt.md" />
+    <Content Include="termine.md" />
+    <Content Include="tsd.json" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
