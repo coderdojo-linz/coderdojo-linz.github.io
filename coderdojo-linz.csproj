@@ -25,6 +25,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\LICENSE.txt" />
     <Content Include="fonts\Material-Design-Icons.svg" />
+    <Content Include="google588e4c0c7f00cc6f.html" />
     <Content Include="Gulpfile.js" />
     <None Include="index.md" />
     <Content Include="scripts\application.js" />
