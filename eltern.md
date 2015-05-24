@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Eltern
-description: Häufige Fragen für Eltern zum CoderDojo
+title: Für Eltern
+description: Häufige Fragen von Eltern zum CoderDojo
 ---
 
-# Häufige Fragen für Eltern #
+# Informationen für Eltern #
 
 
 ## Was ist ein *CoderDojo*? ##
@@ -93,6 +93,4 @@ Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, ne
 
 ## Was muss mein Kind mitbringen? ##
 
-**Etwas zu trinken und vielleicht eine kleine Jause.**
-
-Bitte achten Sie auf gesunde Lebensmittel und verzichten Sie auf Getränke mit hohem Zuckeranteil (z.B. Cola), größere Mengen an Süßigkeiten, Knabbergebäck (z.B. Chips) etc.
+**Nichts. Wasser und Obst als Jause stellen wir zur Verfügung.**
