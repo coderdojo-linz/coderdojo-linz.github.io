@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Termine
+title: Mentoren
 ---
 
 # Mentoren #

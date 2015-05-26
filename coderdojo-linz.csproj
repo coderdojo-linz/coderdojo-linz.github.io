@@ -32,6 +32,7 @@
     <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
     <Content Include="styles\dependencies.css" />
+    <Content Include="styles\images\coderdojo.png" />
     <Content Include="styles\styles.css" />
     <Content Include="_includes\footer.html" />
     <Content Include="_includes\head.html" />
