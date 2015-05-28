@@ -32,6 +32,7 @@
     <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
     <Content Include="styles\dependencies.css" />
+    <Content Include="styles\images\coderdojo.png" />
     <Content Include="styles\styles.css" />
     <Content Include="_includes\footer.html" />
     <Content Include="_includes\head.html" />
@@ -40,8 +41,9 @@
     <Content Include="_layouts\page.html" />
     <Content Include="_layouts\post.html" />
     <Content Include="kontakt.md" />
-    <Content Include="termine.md" />
+    <Content Include="mentoren.md" />
     <Content Include="tsd.json" />
+    <Content Include="termine.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
