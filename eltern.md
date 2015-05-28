@@ -78,6 +78,8 @@ Außerdem sollen Kinder und Jugendliche im CoderDojo gemeinsam Dinge ausprobiere
 
 Begleitpersonen sind natürlich herzlich eingeladen, als Mentoren oder anderweitige Helfer mitzuwirken. Bei einem CoderDojo gibt es auch viele Dinge abseits von Programmieren, die zu tun sind. Je mehr helfende Hände da sind, desto mehr können sich die Mentoren auf die Arbeit mit den Kindern und Jugendlichen konzentrieren.
 
+**Vor der ersten Teilnahme muss ein Erziehungsberechtigter die Teilnahmebedingungen unterschreiben.**
+
 
 ## Wann kann man einsteigen? ##
 
@@ -94,3 +96,5 @@ Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, ne
 ## Was muss mein Kind mitbringen? ##
 
 **Nichts. Wasser und Obst als Jause stellen wir zur Verfügung.**
+
+Kinder und jugendliche, die das erste Mal teilnehmen, müssen die von einem Erziehungsberechtigten unterschriebenen Teilnahmebedingungen mitbringen.
