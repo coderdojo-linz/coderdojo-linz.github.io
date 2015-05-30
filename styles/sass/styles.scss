@@ -36,6 +36,16 @@ h2 {
 	}
 }
 
+.navbar{ 
+	.navbar-nav > li > a, .navbar-nav > li > a:hover {
+		color: #ffffff;
+	}
+
+	i {
+		font-size: 18px;
+	}
+}
+
 .container-full-width {
 	width: 100%;
 	height: auto;

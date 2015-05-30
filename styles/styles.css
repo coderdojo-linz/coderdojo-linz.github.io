@@ -28,6 +28,12 @@ h2 {
   .navbar > .container .navbar-brand {
     margin-left: 0; } }
 
+.navbar .navbar-nav > li > a, .navbar .navbar-nav > li > a:hover {
+  color: #ffffff; }
+
+.navbar i {
+  font-size: 18px; }
+
 .container-full-width {
   width: 100%;
   height: auto;
