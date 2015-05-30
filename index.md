@@ -1,6 +1,7 @@
 ---
 layout: default
-title: About Us
+title: Über uns
+image: /images/programming.jpg
 ---
 
 # CoderDojo Linz #

@@ -1,20 +1,16 @@
 ﻿body {
 	background-color: #ffffff;
-	padding-top: 70px;
+	padding-top: 61px;
 	font-size: 15px;
 }
 
 @media (max-width: 1200px) {
 	body {
-		padding-top: 60px;
+		padding-top: 51px;
 	}
 }
 
-a, a:hover, a:focus {
-	color: #827717;
-}
-
-.navbar .navbar-brand {
+.navbar > .container .navbar-brand {
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3wUaEws4DW5ArQAAApJJREFUOMuVlD1IW3EUxX/v1RBDoUQIFsHNMVLQiBDTQIYmDUWoWIkgZOvSJUNGoWMwLqUOAYeGh1MdrHToEBBiiymBopE4aVPw4yWBtIpDJcZo3+1kGvNh44ELl8u955z/fbyr0Brq6Ojoc6/X+3JgYOCR1Wp9YDKZlO3t7Z+Li4uJYrH4EUgCBv+D0+kcj8fjpWq1Kq1wfHwsbrdbgE3AfSvZ1NTUm8PDwxsElUpFMpmMbG1tSaVSERGRk5MT6evrE+AKCNdz3LtOJicnY5qmhXp7e2+ILCwskMvl2N/fZ3Nzk7GxMSwWC4ZhsLa2pgJPgSqQqg15PJ5xXddbPjESiYiu61IoFCQSidTq6XRagOu4Ah4DqIAyMzPzrr+/n7ugu7u78aVvAaVraGjIHwwGH7YbVBSFo6MjVFVFUZRaPZvNNrY6AFeX3+8PNajdQCAQYGVlpZYDGIZBLBZr1f6CeDxekDvAMAwJh8P1+6uPDVZXV393QlQulyWZTIrP52tHJsCPrvq9NCKRSDA/P082m+X09LSzr6VpWr6Vo7m5OVEU5TY3reKLmsvlthpFUqkUs7OziAhOp5NoNIrdbu/EX5rh4WH/+fn5DXfBYLCmajKZJBAIyMTERCcOXWomk0ksLS3l62V2dnZq+eXlJWdnZ524+wx8VQGWl5df5fP/OM1mc1N3T08PoVCoHdkf4HXtOBwcHHwvlUoWn8/32Gw2s7e3RzqdBmBwcJDp6WnsdjsXFxesr6+3IgwBH5qqXq83uru7K/l8XqxWqwBis9nE4XCIw+EQm83WuLOm89UEl8v1TNO0YjKZvL557SIFuJr+/XbEHo/nycjISFjXdWexWLy/sbFRBn4Bn4D3wLdWc38By8rmRCBfGBIAAAAASUVORK5CYII=') /*/styles/images/coderdojo.png*/;
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -23,3 +19,26 @@ a, a:hover, a:focus {
 	padding-left: 30px;
 	margin-left: 15px;
 }
+
+@media (min-width: 768px) {
+	.navbar > .container .navbar-brand {
+		margin-left: 0;
+	}
+}
+
+.container-full-width {
+	width: 100%;
+	height: auto;
+	max-height: 66vh;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+a, a:hover, a:focus {
+	color: #01579b;
+}
+

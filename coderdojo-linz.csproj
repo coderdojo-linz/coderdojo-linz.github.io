@@ -29,6 +29,7 @@
     <Content Include="google588e4c0c7f00cc6f.html" />
     <Content Include="Gulpfile.js" />
     <None Include="index.md" />
+    <Content Include="images\programming.jpg" />
     <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
     <Content Include="styles\dependencies.css" />
@@ -86,9 +87,7 @@
   <ItemGroup>
     <None Include="eltern.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="_posts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
