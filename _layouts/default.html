@@ -9,14 +9,11 @@
 	{% if page.bannerimage %}
 	<div class="container-full-width">
 		<img src="{{ page.bannerimage }}" />
+		{% if page.bannerimagetext %}
 		<div class="banner-image-content">
-			<!--<div class="container">
-				<div class="banner-image-text-background" />
-				<div class="banner-image-text">
-					{{ page.bannerimagetext }}
-				</div>
-			</div>-->
+			{{ page.bannerimagetext }}
 		</div>
+		{% endif %}
 	</div>
 	{% endif %}
 

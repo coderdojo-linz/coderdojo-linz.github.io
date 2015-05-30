@@ -24,7 +24,8 @@ body {
   width: 100%;
   height: auto;
   max-height: 66vh;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .container-full-width img {
     width: 100%;
     height: auto; }
@@ -32,6 +33,31 @@ body {
 a, a:hover, a:focus {
   color: #01579b; }
 
-banner-image-text-background {
-  background-color: #263238;
-  opacity: 0.8; }
+.banner-image-content {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(55, 71, 79, 0.9);
+  color: #ffffff;
+  font-size: 14px;
+  padding: 15px 15px; }
+
+@media (min-width: 768px) {
+  .banner-image-content {
+    /*width: 720px;*/
+    width: 360px;
+    left: calc(50% - 360px);
+    font-size: 16px; } }
+
+@media (min-width: 992px) {
+  .banner-image-content {
+    /*width: 940px;*/
+    width: 470px;
+    left: calc(50% - 470px);
+    font-size: 18px; } }
+
+@media (min-width: 1200px) {
+  .banner-image-content {
+    /*width: 1130px;*/
+    width: 565px;
+    left: calc(50% - 565px);
+    font-size: 18px; } }
