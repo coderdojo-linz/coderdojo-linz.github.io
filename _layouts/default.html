@@ -6,9 +6,17 @@
 <body>
 	{% include header.html %}
 
-	{% if page.image %}
+	{% if page.bannerimage %}
 	<div class="container-full-width">
-		<img src="{{ page.image }}" />
+		<img src="{{ page.bannerimage }}" />
+		<div class="banner-image-content">
+			<!--<div class="container">
+				<div class="banner-image-text-background" />
+				<div class="banner-image-text">
+					{{ page.bannerimagetext }}
+				</div>
+			</div>-->
+		</div>
 	</div>
 	{% endif %}
 

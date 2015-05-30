@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Über uns
-image: /images/programming.jpg
+bannerimage: /images/programming.jpg
+bannerimagetext: Wolltest du immer schon wissen, wie Computer, iPad oder Smartphone funktionieren? Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren? Dann bist du richtig beim CoderDojo!
 ---
 
 # CoderDojo Linz #
