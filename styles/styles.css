@@ -50,7 +50,7 @@ a, a:hover, a:focus {
 .banner-image-content {
   position: absolute;
   bottom: 20px;
-  background: rgba(55, 71, 79, 0.9);
+  background: rgba(3, 155, 229, 0.9);
   color: #ffffff;
   font-size: 14px;
   padding: 15px 15px; }
@@ -60,18 +60,18 @@ a, a:hover, a:focus {
     /*width: 720px;*/
     width: 360px;
     left: calc(50% - 360px);
-    font-size: 16px; } }
+    font-size: 18px; } }
 
 @media (min-width: 992px) {
   .banner-image-content {
     /*width: 940px;*/
     width: 470px;
     left: calc(50% - 470px);
-    font-size: 18px; } }
+    font-size: 20px; } }
 
 @media (min-width: 1200px) {
   .banner-image-content {
     /*width: 1130px;*/
     width: 565px;
     left: calc(50% - 565px);
-    font-size: 18px; } }
+    font-size: 24px; } }

@@ -29,6 +29,7 @@
     <Content Include="google588e4c0c7f00cc6f.html" />
     <Content Include="Gulpfile.js" />
     <None Include="index.md" />
+    <Content Include="images\binary.jpg" />
     <Content Include="images\programming.jpg" />
     <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />

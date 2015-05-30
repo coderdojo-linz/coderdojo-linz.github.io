@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Über uns
-bannerimage: /images/programming.jpg
+bannerimage: /images/binary.jpg
 bannerimagetext: Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren? Dann bist du richtig beim CoderDojo!
 ---
 
