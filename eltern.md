@@ -35,7 +35,7 @@ Computerspiele sind ein wichtiges Element beim CoderDojo. Statt diese aber nur z
 
 ## Welche Regeln gibt es? ##
 
-**Bei den Projekten sind kaum Grenzen gesetzt. Spiele, Elektronik, Apps, Webseiten etc., alles ist möglich. Die Mentoren achten darauf, dass die Projektinhalte kindgerecht sind** (z.B. keine Gewalt gegen Menschen oder Tiere, keine Pornografie etc.).
+**Bei den Projekten sind kaum Grenzen gesetzt. Spiele, Elektronik, Apps oder Webseiten, alles ist möglich. Die Mentoren achten darauf, dass die Projektinhalte kindgerecht sind** (z.B. keine Gewalt gegen Menschen oder Tiere, keine Pornografie).
 
 Die Arbeit mit sozialen Netzwerken wie Facebook oder Twitter ist erlaubt, damit die Kinder und Jugendlichen mit Hilfe der Mentoren den verantwortlichen Umgang damit erlernen. Voraussetzung ist aber, dass das Kind alt genug entsprechend der Nutzungsbedingungen der jeweiligen Plattform ist (z.B. bei Facebook muss das Kind mindestens 13 Jahre alt sein). 
 
@@ -54,6 +54,8 @@ Für Anfänger haben wir einige spannende Projekte, die wir vorschlagen können.
 **Nichts, kein Teilnahmegebühr, kein Abo, keine finanziellen Verpflichtungen!**
 
 Alle Mentoren und Helfer, die bei den CoderDojos mitmachen, sind Freiwillige und bekommen für ihre Tätigkeiten kein Geld. Alle eventuellen Ausgaben für die Organisation und Durchführung der CoderDojos werden mit Hilfe von Spenden und Förderungen gedeckt.
+
+Sollte Ihr Kind Projekte machen wollen, für die spezielle Hardware (z.B. [Lego Mindstorms](http://mindstorms.lego.com/ "Homepage von Lego Mindstorms"){:target="_blank"}, [TinkerForge](http://www.tinkerforge.com/de/ "Homepage von TinkerForge"){:target="_blank"}) oder Software (z.B. [Minecraft](https://minecraft.net/ "Homagepage von Minecraft"){:target="_blank"}) notwendig ist und sollten Sie damit einverstanden sein, sind die Kosten für Hard- und Software von Ihnen zu tragen. Parallel dazu werden wir versuchen, kleinere Anschaffungen als Grundlage für interessante Projekte mit Hilfe von Sponsoren abzuwickeln, damit Ihnen möglichst wenig Kosten entstehen.
 
 
 ## Ist CoderDojo das Richtige für mein Kind? ##
@@ -78,6 +80,8 @@ Außerdem sollen Kinder und Jugendliche im CoderDojo gemeinsam Dinge ausprobiere
 
 Begleitpersonen sind natürlich herzlich eingeladen, als Mentoren oder anderweitige Helfer mitzuwirken. Bei einem CoderDojo gibt es auch viele Dinge abseits von Programmieren, die zu tun sind. Je mehr helfende Hände da sind, desto mehr können sich die Mentoren auf die Arbeit mit den Kindern und Jugendlichen konzentrieren.
 
+**Vor der ersten Teilnahme muss ein Erziehungsberechtigter die Teilnahmebedingungen unterschreiben.**
+
 
 ## Wann kann man einsteigen? ##
 
@@ -94,3 +98,5 @@ Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, ne
 ## Was muss mein Kind mitbringen? ##
 
 **Nichts. Wasser und Obst als Jause stellen wir zur Verfügung.**
+
+Kinder und jugendliche, die das erste Mal teilnehmen, müssen die von einem Erziehungsberechtigten unterschriebenen Teilnahmebedingungen mitbringen.
