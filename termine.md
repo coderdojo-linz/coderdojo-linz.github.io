@@ -3,7 +3,7 @@ layout: default
 title: Termine
 ---
 
-# Termine #
+# Termine
 
 Die ersten Termine für das CoderDojo Linz stehen fest! Wir freuen uns, im Sommer fünf Termine anbieten zu können:
 
@@ -13,7 +13,14 @@ Die ersten Termine für das CoderDojo Linz stehen fest! Wir freuen uns, im Somme
 * Freitag, 14. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195643633){:target="_blank"}
 * Freitag, 28. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195644636){:target="_blank"}
 
-## Ort ##
+## Was muss mitgebracht werden?
+
+Grundsätzlich muss jedes Kind einen Laptop mitbringen. Der Laptop muss aber nicht besonders schnell sein. Es ist egal, ob er mit Windows, Mac OS oder Linux betrieben wird. iPads, Android-Tablets oder Smartphones reichen nicht aus.
+
+Falls kein Laptop zur Verfügung steht, nehmen Sie bitte mit uns [Kontakt](http://coderdojo-linz.github.io/kontakt.html) auf. Wir haben eine limitierte Anzahl an Geräten, die wir während der CoderDojos zur Verfügung stellen können.
+
+
+## Ort
 
 Die ersten Dojos finden im Büro der software architects gmbh in Leonding, Welser Straße 26 statt.
 
