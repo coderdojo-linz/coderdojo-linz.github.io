@@ -5,5 +5,6 @@ title: Mentoren
 
 ## Möchtest du Mentor werden? ##
 
-Wenn du mitmachen möchtet, 
-schick uns eine Mail an [info@coderdojo-linz.org](info@coderdojo-linz.org?subject=CoderDojo%20Termine).
+Wir haben dir einige [Informationen für Mentoren](/infos/mentoren.html) zusammengestellt.
+ 
+Wenn du mitmachen möchtest, nimm bitter per Email [Kontakt](http://coderdojo-linz.github.io/kontakt.html) mit uns auf.
