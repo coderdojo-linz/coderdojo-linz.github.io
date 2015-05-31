@@ -29,8 +29,8 @@ h2 {
   .navbar .navbar > .container .navbar-brand {
     margin-left: 0; } }
 
-.navbar .navbar-nav > li > a, .navbar .navbar-nav > li > a:hover {
-  color: #ffffff; }
+.navbar .navbar-nav > li > a, .navbar .navbar-nav > li > a:hover, .navbar a, .navbar a:hover {
+  color: #ffffff !important; }
 
 .navbar i {
   font-size: 18px; }
@@ -65,18 +65,19 @@ h2 {
   max-height: calc(100vh - 50px); }
 
 /* content */
-.container-full-width {
-  width: 100%;
-  height: auto;
-  max-height: 50vh;
-  overflow: hidden;
-  position: relative; }
-  .container-full-width img {
-    width: 100%;
-    height: auto; }
-
 a, a:hover, a:focus {
   color: #01579b; }
+
+.container-banner-image {
+  width: 100%;
+  height: auto;
+  min-height: 170px;
+  max-height: 40vh;
+  overflow: hidden;
+  position: relative; }
+  .container-banner-image img {
+    width: 100%;
+    height: auto; }
 
 .banner-image-content {
   position: absolute;
