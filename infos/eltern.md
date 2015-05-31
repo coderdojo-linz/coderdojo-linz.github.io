@@ -7,9 +7,9 @@ description: Häufige Fragen von Eltern zum CoderDojo
 # Informationen für Eltern #
 
 
-## Was ist ein *CoderDojo*? ##
+## Was ist ein CoderDojo? ##
 
-**In der weltweiten *CoderDojo* Gemeinschaft bieten Freiwillige Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.**
+**In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.**
 
 Gemeinsames Entdecken, Teamarbeit, [Mentoring](http://de.wikipedia.org/wiki/Mentoring "Mentoring auf Wikipedia"){:target="_blank"} sowie selbstorganisiertes Lernen und Experimentieren stehen im CoderDojo im Vordergrund. Offenheit, gegenseitiges Helfen und das Weitergeben von erworbenem Wissen sind wichtige Grundprinzipien. An oberster Stelle steht aber die Förderung von Kreativität und Spaß an Technologie. Softwareentwicklung in einer Gemeinschaft soll Spaß machen, cool sein und den Kindern neue Perspektiven in einer Welt eröffnen, die immer mehr von Technologie, Computern und Software geprägt ist.
 
@@ -26,9 +26,9 @@ Im Gegensatz zu Mathematik oder Physik ist Programmieren noch kein fester Bestan
 Neben dem Erwerben zusätzlicher Fähigkeiten sollen CoderDojos auch die Perspektive der Kinder und Jugendlichen in Sachen Berufswahl erweitern. Gute Technikerinnen und Techniker sind sehr gefragt. In CoderDojos können Ihre Kinder herausfinden, ob ihnen ein technischer Beruf im Bereich Softwareentwicklung Spaß machen könnte.
 
 
-## Was sind CoderDojos *nicht*? ##
+## Was sind CoderDojos nicht? ##
 
-**CoderDojos sind *kein* Schulunterricht, *keine* Nachhilfestunden und *keine* Treffen zum Computerspielen.**
+**CoderDojos sind kein Schulunterricht, keine Nachhilfestunden und keine Treffen zum Computerspielen.**
 
 Computerspiele sind ein wichtiges Element beim CoderDojo. Statt diese aber nur zu konsumieren, erstellen oder erweitern Kinder und Jugendliche sie im CoderDojo selbst.
 
@@ -42,7 +42,7 @@ Die Arbeit mit sozialen Netzwerken wie Facebook oder Twitter ist erlaubt, damit 
 
 ## Wie funktionieren CoderDojos? ##
 
-**Treffen finden in der Regel alle zwei Wochen statt. Die Kinder und Jugendlichen treffen sich mit freiwilligen, technisch versierten Mentoren, um zusammen zu programmieren und unter Anleitung ihre Fähigkeiten zu entwickeln und auszubauen.**
+**Die Treffen finden in der Regel alle zwei Wochen statt. Die Kinder und Jugendlichen treffen sich mit freiwilligen, technisch versierten Mentoren, um zusammen zu programmieren und unter Anleitung ihre Fähigkeiten zu entwickeln und auszubauen.**
 
 Die Kinder und Jugendlichen sollen zum selbständigen Entdecken und Kreativsein angeregt werden. Die oberste Regel lautet, dass die Arbeit an den Projekten Spaß machen und cool sein muss.
 
@@ -55,14 +55,16 @@ Für Anfänger haben wir einige spannende Projekte, die wir vorschlagen können.
 
 Alle Mentoren und Helfer, die bei den CoderDojos mitmachen, sind Freiwillige und bekommen für ihre Tätigkeiten kein Geld. Alle eventuellen Ausgaben für die Organisation und Durchführung der CoderDojos werden mit Hilfe von Spenden und Förderungen gedeckt.
 
-Sollte Ihr Kind Projekte machen wollen, für die spezielle Hardware (z.B. [Lego Mindstorms](http://mindstorms.lego.com/ "Homepage von Lego Mindstorms"){:target="_blank"}, [TinkerForge](http://www.tinkerforge.com/de/ "Homepage von TinkerForge"){:target="_blank"}) oder Software (z.B. [Minecraft](https://minecraft.net/ "Homagepage von Minecraft"){:target="_blank"}) notwendig ist und sollten Sie damit einverstanden sein, sind die Kosten für Hard- und Software von Ihnen zu tragen. Parallel dazu werden wir versuchen, kleinere Anschaffungen als Grundlage für interessante Projekte mit Hilfe von Sponsoren abzuwickeln, damit Ihnen möglichst wenig Kosten entstehen.
+Falls Ihr Kind Projekte machen möchte, für die spezielle Hardware (z.B. [Lego Mindstorms](http://mindstorms.lego.com/ "Homepage von Lego Mindstorms"){:target="_blank"}, [TinkerForge](http://www.tinkerforge.com/de/ "Homepage von TinkerForge"){:target="_blank"}) oder Software (z.B. [Minecraft](https://minecraft.net/ "Homagepage von Minecraft"){:target="_blank"}) notwendig sind und sollten Sie damit einverstanden sein, sind die Kosten für Hard- und Software von Ihnen zu tragen. Parallel dazu werden wir versuchen, kleinere Anschaffungen als Grundlage für interessante Projekte mit Hilfe von Sponsoren abzuwickeln, damit Ihnen möglichst wenig Kosten entstehen.
+
+Grundsätzlich ist es aber nicht notwendig Hard-oder Software für Ihr Kind zu kaufen. Wir werden dafür sorgen, dass in unserem Programm immer kostenfreie Alternativen angeboten werden.
 
 
-## Ist CoderDojo das Richtige für mein Kind? ##
+## Ist das CoderDojo das Richtige für mein Kind? ##
 
-**Voraussetzung für die Teilnahme am Linzer CoderDojo ist, dass das Kind zwischen 8 und 17 Jahren alt ist. Besondere Vorkenntnisse sind nicht notwendig.**
+**Voraussetzung für die Teilnahme am Linzer CoderDojo ist, dass das Kind zwischen 8 und 17 Jahren alt ist. Vorkenntnisse sind nicht notwendig.**
 
-Es ist natürlich einfacher, wenn Ihr Kind schon einmal einen Computer bedient hat. Falls nicht, können wir das aber rasch nachholen. Es ist ausdrücklich nicht Voraussetzung, dass Ihr Kind schon programmieren kann. Gerade das soll es ja im CoderDojo lernen.
+Es ist natürlich einfacher, wenn Ihr Kind schon einmal einen Computer bedient hat. Wenn nicht, können wir das aber rasch nachholen. Es ist ausdrücklich nicht Voraussetzung, dass Ihr Kind schon programmieren kann. Gerade das soll es ja im CoderDojo lernen.
 
 Es ist schwer im Vorhinein herauszufinden, ob ein Kind Spaß beim CoderDojo haben wird. Am einfachsten ist es, einfach vorbeizuschauen und es auszuprobieren. Wenn es Spaß macht, freuen wir uns über eine regelmäßige Teilnahme.
 
@@ -80,12 +82,14 @@ Außerdem sollen Kinder und Jugendliche im CoderDojo gemeinsam Dinge ausprobiere
 
 Begleitpersonen sind natürlich herzlich eingeladen, als Mentoren oder anderweitige Helfer mitzuwirken. Bei einem CoderDojo gibt es auch viele Dinge abseits von Programmieren, die zu tun sind. Je mehr helfende Hände da sind, desto mehr können sich die Mentoren auf die Arbeit mit den Kindern und Jugendlichen konzentrieren.
 
-**Vor der ersten Teilnahme muss ein Erziehungsberechtigter die Teilnahmebedingungen unterschreiben.**
+**Vor der ersten Teilnahme muss ein Erziehungsberechtigter die Teilnahmebedingungen (sind noch in Arbeit und stehen in Kürze zum Download zur Verfügung) unterschreiben.**
 
 
 ## Wann kann man einsteigen? ##
 
 **Jederzeit.**
+
+Es sind immer mehrere Mentoren anwesend, so können wir sowohl auf Anfänger als auch auf Fortgeschrittene eingehen.
 
 
 ## Braucht mein Kind einen Laptop? ##
@@ -95,8 +99,12 @@ Begleitpersonen sind natürlich herzlich eingeladen, als Mentoren oder anderweit
 Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, nehmen Sie bitte mit uns [Kontakt](http://coderdojo-linz.github.io/kontakt.html) auf. Wir haben eine limitierte Anzahl an Geräten, die wir in Ausnahmefällen während der CoderDojos zur Verfügung stellen können.
 
 
-## Was muss mein Kind mitbringen? ##
+## Was muss mein Kind sonst noch mitbringen? ##
 
 **Nichts. Wasser und Obst als Jause stellen wir zur Verfügung.**
 
-Kinder und jugendliche, die das erste Mal teilnehmen, müssen die von einem Erziehungsberechtigten unterschriebenen Teilnahmebedingungen mitbringen.
+Kinder und Jugendliche, die das erste Mal teilnehmen, müssen die von einem Erziehungsberechtigten unterschriebenen Teilnahmebedingungen (sind noch in Arbeit und stehen in Kürze zum Download zur Verfügung) mitbringen.
+
+## Neugierig geworden?
+
+Dann [melden Sie Ihr Kind zu einem der nächsten Termine an](/termine.html) und kommen Sie bei uns vorbei!
