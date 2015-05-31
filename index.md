@@ -12,17 +12,25 @@ bannerimagetext: Möchtest du Computerspiele nicht nur spielen sondern selbst pr
 <div class="row">
 	<div class="col-md-4">
 		<h3>Was ist ein CoderDojo?</h3>
-		<p>Das <a href="https://coderdojo.com/" target="_blank">CoderDojo</a> ist ein Club für Kinder und Jugendliche, die programmieren lernen und Spaß haben wollen. In regelmäßigen Treffen wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt oder Apps und Spiele programmiert.</p>
+		<p>
+			Das <a href="https://coderdojo.com/" target="_blank">CoderDojo</a> ist ein Club für Kinder und Jugendliche, die programmieren lernen und Spaß haben wollen.
+			In regelmäßigen Treffen wird gelernt wie man Code schreibt, Webseiten entwickelt oder Apps und Spiele programmiert. 
+            <a href="/infos/kinder.html">Mehr Infos&nbsp;...</a>
+		</p>
 	</div>
 	<div class="col-md-4">
 		<h3>Für wen?</h3>
-		<p>Teilnehmen können Kinder und Jugendliche im Alter von 8 bis 17 Jahren. Es sind keine Vorkenntnisse notwendig und die Teilnahme ist kostenfrei. Kinder unter 13 Jahren müssen von einem Erwachsenen begleitet werden.</p>
-		<p></p>
+		<p>
+			Teilnehmen können Kinder und Jugendliche im Alter von 8 bis 17 Jahren.
+			Es sind keine Vorkenntnisse notwendig und die Teilnahme ist kostenfrei.
+			Kinder unter 13 Jahren müssen von einem Erwachsenen begleitet werden. 
+            <a href="/infos/eltern.html">Mehr Infos&nbsp;...</a>
+		</p>
 	</div>
 	<div class="col-md-4">
 		<h3>Wann geht's los?</h3>
-		<p>Wir starten am 03. Juli, 16:00 mit dem ersten Termin in Leonding in der Welserstraße 26.</p>
-		<p>Wenn du Spaß und Interesse an Technik hast, dann sei dabei beim Start des CoderDojos in Linz! Wir freuen uns auf dich!</p>
+		<p>Wir starten am 03. Juli, 16:00 mit dem ersten Termin in Leonding in der Welserstraße 26. <a href="/termine.html">Weitere Termine&nbsp;...</a></p>
+		<p>Wenn du Spaß und Interesse an Technik hast, dann sei dabei beim Start des CoderDojos in Linz!</p>
 	</div>
 </div>
 

@@ -23,13 +23,14 @@ h2 {
   font-size: 20px;
   text-transform: uppercase;
   padding-left: 30px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  color: #ffffff !important; }
 
 @media (min-width: 768px) {
   .navbar .navbar > .container .navbar-brand {
     margin-left: 0; } }
 
-.navbar .navbar-nav > li > a, .navbar .navbar-nav > li > a:hover, .navbar a, .navbar a:hover {
+.navbar .navbar-nav > li > a, .navbar .navbar-nav > li > a:hover {
   color: #ffffff !important; }
 
 .navbar i {
@@ -59,7 +60,8 @@ h2 {
       padding: 0 15px; }
     .navbar .navbar-nav .dropdown-menu li > a {
       line-height: 40px !important;
-      padding: 0 45px; } }
+      padding: 0 45px;
+      color: #ffffff !important; } }
 
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
   max-height: calc(100vh - 50px); }
