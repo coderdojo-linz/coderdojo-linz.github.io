@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>Unsere Mentoren</h1>
+
+{% for page in site.pages %}
+   {% if page.page-category == "mentor" %}
+<h3>{{ page.title }}</h3>
+{{ page.content }}
+   {% endif %}
+{% endfor %}
+
+{{ content }}

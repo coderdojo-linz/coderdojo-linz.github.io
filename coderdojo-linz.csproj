@@ -40,6 +40,7 @@
     <Content Include="_includes\head.html" />
     <Content Include="_includes\header.html" />
     <Content Include="_layouts\default.html" />
+    <Content Include="_layouts\mentoren.html" />
     <Content Include="_layouts\page.html" />
     <Content Include="_layouts\post.html" />
     <Content Include="kontakt.md" />
@@ -47,6 +48,10 @@
     <Content Include="tsd.json" />
     <Content Include="termine.md" />
     <Content Include="infos\kinder.md" />
+    <Content Include="mentoren\huber-karin.md" />
+    <Content Include="mentoren\stropek-rainer.md" />
+    <Content Include="mentoren.md" />
+    <Content Include="mentoren\schacherl-roman.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
@@ -90,7 +95,7 @@
     <None Include="infos\eltern.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="mentoren\" />
+    <Folder Include="mentoren\images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

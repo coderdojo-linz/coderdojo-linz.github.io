@@ -5,4 +5,13 @@ title: Kontakt
 
 # Kontakt #
 
-Wenn ihr Fragen zu den Dojos habt oder als Mentor mitmachen möchtet, sendet uns eine Mail an [info@coderdojo-linz.org](mailto:info@coderdojo-linz.org).
+Bei Fragen oder Anregungen schickt uns eine Mail an [info@coderdojo-linz.org](mailto:info@coderdojo-linz.org).
+
+## Impressum ##
+
+**CoderDojo Linz<br />**
+Rainer Stropek und Karin Huber<br />
+Birkenweg 16<br />
+4060 Leonding
+
+[info@coderdojo-linz.org](mailto:info@coderdojo-linz.org)
