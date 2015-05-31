@@ -43,10 +43,10 @@
     <Content Include="_layouts\page.html" />
     <Content Include="_layouts\post.html" />
     <Content Include="kontakt.md" />
-    <Content Include="mentoren.md" />
+    <Content Include="infos\mentoren.md" />
     <Content Include="tsd.json" />
     <Content Include="termine.md" />
-    <Content Include="kinder.md" />
+    <Content Include="infos\kinder.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
@@ -87,9 +87,11 @@
     <Content Include="_config.yml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="eltern.md" />
+    <None Include="infos\eltern.md" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="mentoren\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
