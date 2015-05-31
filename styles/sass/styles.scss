@@ -112,14 +112,14 @@ a, a:hover, a:focus {
 	img {
 		width: 100%; 
 		height: auto;
+		min-height: 170px;	
 	}
 }
 
 .banner-image-content {
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	background: rgba(3, 155, 229, 0.95);
-	//background: rgba(38, 50, 56, 0.9);
 	color: #ffffff;
 	font-size: 14px;
 	padding: 15px 15px;

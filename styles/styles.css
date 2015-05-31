@@ -79,11 +79,12 @@ a, a:hover, a:focus {
   position: relative; }
   .container-banner-image img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    min-height: 170px; }
 
 .banner-image-content {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   background: rgba(3, 155, 229, 0.95);
   color: #ffffff;
   font-size: 14px;
