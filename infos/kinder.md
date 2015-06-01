@@ -26,7 +26,7 @@ Im CoderDojo habt ihr Hilfe von erwachsenen Mentoren, die viel technische Erfahr
 
 Wenn ihr regelmäßig kommt, freut uns das besonders. Es gibt aber keine Verpflichtung bei jedem Termin dabeizusein.
 
-Bitte schaut mit euren Eltern die [Informationen für Eltern](eltern.html) aufmerksam durch. Falls Ihr jünger als 13 Jahr alt seid, muss eine erwachsene Begleitperson mit euch zum CoderDojo kommen und die ganze Zeit anwesend bleibt.
+Bitte schaut mit euren Eltern die [Informationen für Eltern](eltern.html) aufmerksam durch. Falls Ihr jünger als 13 Jahre alt seid, muss eine erwachsene Begleitperson mit euch zum CoderDojo kommen und die ganze Zeit anwesend bleiben.
 
 
 ## Was wird beim CoderDojo gemacht?
