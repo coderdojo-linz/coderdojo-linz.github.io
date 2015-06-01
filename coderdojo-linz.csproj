@@ -31,6 +31,9 @@
     <None Include="index.md" />
     <Content Include="images\binary.jpg" />
     <Content Include="images\programming.jpg" />
+    <Content Include="mentoren\images\karin-huber.jpg" />
+    <Content Include="mentoren\images\rainer-stropek.jpg" />
+    <Content Include="mentoren\images\roman-schacherl.jpg" />
     <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
     <Content Include="styles\dependencies.css" />
@@ -94,9 +97,7 @@
   <ItemGroup>
     <None Include="infos\eltern.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="mentoren\images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>

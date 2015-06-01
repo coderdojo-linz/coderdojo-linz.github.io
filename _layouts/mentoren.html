@@ -3,12 +3,24 @@ layout: default
 ---
 
 <h1>Unsere Mentoren</h1>
-
 {% for page in site.pages %}
-   {% if page.page-category == "mentor" %}
-<h3>{{ page.title }}</h3>
-{{ page.content }}
-   {% endif %}
+	{% if page.page-category == "mentor" %}
+<div class="clearfix">
+	<img src="{{ page.image }}" class="mentor-image pull-left" />
+	<h3>{{ page.title }}</h3>
+	{{ page.content }}
+</div>
+
+<!--<div class="row">
+	<div class="col-md-2 col-xs-4  mentor-image-container">
+		<img src="{{ page.image }}" class="mentor-image" />
+	</div>
+	<div class="col-md-10 col-xs-8">
+		<h3>{{ page.title }}</h3>
+		{{ page.content }}
+	</div>
+</div>-->
+	{% endif %}
 {% endfor %}
 
 {{ content }}

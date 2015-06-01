@@ -2,6 +2,7 @@
 layout:
 title: Rainer Stropek
 description: 
+image: /mentoren/images/rainer-stropek.jpg
 page-category: mentor
 ---
 

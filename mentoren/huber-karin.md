@@ -2,6 +2,7 @@
 layout:
 title: Karin Huber
 description: 
+image: /mentoren/images/karin-huber.jpg
 page-category: mentor
 ---
 
