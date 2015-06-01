@@ -19,7 +19,7 @@ Gemeinsames Entdecken, Teamarbeit, [Mentoring](http://de.wikipedia.org/wiki/Ment
 
 ## Ist Programmieren wichtig für mein Kind? ##
 
-**In der heutigen Welt sind wir von Technologie umgeben, die durch Software gesteuert wird. Programmieren ist daher eine wichtige Fähigkeit. Sie wird Ihren Kindern in Ausbildung, ihrem und manchmal auch im Alltagsleben helfen.**
+**In der heutigen Welt sind wir von Technologie umgeben, die durch Software gesteuert wird. Programmieren ist daher eine wichtige Fähigkeit. Sie wird Ihren Kindern in der Ausbildung und manchmal auch im Alltagsleben helfen.**
 
 Im Gegensatz zu Mathematik oder Physik ist Programmieren noch kein fester Bestandteil im Schulalltag. Bei den CoderDojos lernen Kinder spielerisch Technologie und Programmieren kennen. Nebenbei werden dabei logisches Denken, Teamarbeit, Englisch u.v.m. gefördert.
 
@@ -57,7 +57,7 @@ Alle Mentoren und Helfer, die bei den CoderDojos mitmachen, sind Freiwillige und
 
 Falls Ihr Kind Projekte machen möchte, für die spezielle Hardware (z.B. [Lego Mindstorms](http://mindstorms.lego.com/ "Homepage von Lego Mindstorms"){:target="_blank"}, [TinkerForge](http://www.tinkerforge.com/de/ "Homepage von TinkerForge"){:target="_blank"}) oder Software (z.B. [Minecraft](https://minecraft.net/ "Homagepage von Minecraft"){:target="_blank"}) notwendig sind und sollten Sie damit einverstanden sein, sind die Kosten für Hard- und Software von Ihnen zu tragen. Parallel dazu werden wir versuchen, kleinere Anschaffungen als Grundlage für interessante Projekte mit Hilfe von Sponsoren abzuwickeln, damit Ihnen möglichst wenig Kosten entstehen.
 
-Grundsätzlich ist es aber nicht notwendig Hard-oder Software für Ihr Kind zu kaufen. Wir werden dafür sorgen, dass in unserem Programm immer kostenfreie Alternativen angeboten werden.
+Grundsätzlich ist es aber nicht notwendig Hard- oder Software für Ihr Kind zu kaufen. Wir werden dafür sorgen, dass in unserem Programm immer kostenfreie Alternativen angeboten werden.
 
 
 ## Ist das CoderDojo das Richtige für mein Kind? ##
