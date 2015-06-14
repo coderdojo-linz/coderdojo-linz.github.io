@@ -7,4 +7,4 @@ title: Mentoren
 
 Wir haben dir einige [Informationen für Mentoren](/infos/mentoren.html) zusammengestellt.
  
-Wenn du mitmachen möchtest, nimm bitter per Email [Kontakt](http://coderdojo-linz.github.io/kontakt.html) mit uns auf.
+Wenn du mitmachen möchtest, nimm bitte per Email [Kontakt](http://coderdojo-linz.github.io/kontakt.html) mit uns auf.

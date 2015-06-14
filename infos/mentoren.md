@@ -49,7 +49,7 @@ CoderDojo Mentoren haben keine Erziehungsaufgabe, es geht auch nicht um ein Betr
 
 **Das hängt stark von dir selbst ab.**
 
-Zumindest die Zeit für das CoderDojo selbst. Wir brauchen aber auch Mentoren, die darüber hinaus Zeit für vorbereitende Arbeiten investieren können und wollen.**
+Zumindest die Zeit für das CoderDojo selbst. Wir brauchen aber auch Mentoren, die darüber hinaus Zeit für vorbereitende Arbeiten investieren können und wollen.
 
 ### Wie gehe ich das an?
 
