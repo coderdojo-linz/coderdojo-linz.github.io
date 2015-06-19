@@ -32,6 +32,7 @@
     <Content Include="images\binary.jpg" />
     <Content Include="images\programming.jpg" />
     <Content Include="mentoren\images\karin-huber.jpg" />
+    <Content Include="mentoren\images\peter-paul-kirschner.jpg" />
     <Content Include="mentoren\images\rainer-stropek.jpg" />
     <Content Include="mentoren\images\roman-schacherl.jpg" />
     <Content Include="scripts\application.js" />
@@ -55,6 +56,7 @@
     <Content Include="mentoren\stropek-rainer.md" />
     <Content Include="mentoren.md" />
     <Content Include="mentoren\schacherl-roman.md" />
+    <Content Include="mentoren\kirschner-peter-paul.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
