@@ -33,14 +33,8 @@ h2 {
 		font-size: 20px;
 		text-transform: uppercase;
 		padding-left: 30px;
-		margin-left: 15px;
+		margin-left: 0;
 		color: #ffffff !important;
-	}
-
-	@media (min-width: 768px) {
-		.navbar > .container .navbar-brand {
-			margin-left: 0;
-		}
 	}
 
 	.navbar-nav > li > a, .navbar-nav > li > a:hover {
@@ -93,6 +87,10 @@ h2 {
 				color: #ffffff !important;
 			}
 		}
+
+		> .container .navbar-brand {
+			margin-left: 15px;
+		}
 	}
 }
 
@@ -117,6 +115,7 @@ a, a:hover, a:focus {
 		width: 100%;
 		height: auto;
 		min-height: 170px;
+		opacity: 0.8;
 	}
 }
 
@@ -167,4 +166,10 @@ a, a:hover, a:focus {
 	margin-bottom: 10px;
 	width: 200px;
 	max-width: 33%;
+}
+
+/* text styles */
+.warning {
+	color: #e53935;
+	font-weight: bold;
 }
