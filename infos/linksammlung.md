@@ -9,7 +9,7 @@ description: Wichtige Links für Teilnehmer, Eltern und Mentoren
 
 ## Für Teilnehmer ##
 
-### Microsoft DreamSpark ###
+### Microsoft DreamSpark [DreamSpark] ###
 
 **Microsoft stellt Schülern und Studenten im Rahmen des [DreamSpark Programms](https://www.dreamspark.com/Default.aspx){:target="_blank"} kostenlos professionelle Softwareentwicklungswerkzeuge zur Verfügung.**
 
@@ -27,11 +27,11 @@ Hier wichtige Links für euch, die ihr natürlich auch an eure Schule oder Elter
 **[Link zur Anmeldung zu Microsoft DreamSpark](https://www.dreamspark.com/Student/Default.aspx){:target="_blank"}**
 
 
-### Microsoft Azure ###
+### Microsoft Azure [Azure] ###
 
 ***Microsoft Azure* ist eine sogenannte [Cloud Computing](https://de.wikipedia.org/wiki/Cloud_Computing "Cloud Computing in Wikipedia"){:target="_blank"} Umgebung. Wenn Programme von euch im Internet zur Verfügung stehen sollen, könnt ihr dafür in vielen Fällen Azure verwenden.**
 
-Über [DreamSpark](#Microsoft-DreamSpark) bekommt ihr ein **kostenloses** Guthaben in Azure.
+Über [DreamSpark](#DreamSpark) bekommt ihr ein **kostenloses** Guthaben in Azure.
 
 Hier wichtige Links für euch, bei denen ihr mehr Informationen zu Azure findet:
 
@@ -45,7 +45,7 @@ Hier wichtige Links für euch, bei denen ihr mehr Informationen zu Azure findet:
 
 Wenn ihr Kind erfahrener in Sachen Programmieren wird, kann es im CoderDojo Software für das Internet entwickeln (z.B. mit HTML, JavaScript und CSS). Das macht natürlich noch mehr Spaß, wenn man die Ergebnisse mit anderen teilen kann. Schließlich möchte man, dass die Freundinnen und Freunde z.B. das selbst programmierte Spiel ausprobieren können.
 
-**Microsoft bietet über [Azure](#Microsoft-Azure) eine kostenlose Möglichkeit, mit der Schüler und Studenten ihre Programme im Internet verfügbar machen können.**
+**Microsoft bietet über [Azure](#Azure) eine kostenlose Möglichkeit, mit der Schüler und Studenten ihre Programme im Internet verfügbar machen können.**
 
 Die kostenlosen Dienste in Azure sind natürlich beschränkt. Es kann sein, dass Ihr Kind im Lauf der Zeit mehr machen möchte, als gratis möglich ist. Wenn Sie dies erlauben möchten, können Sie ein kostenpflichtiges Abonnement von Azure abschließen und Ihrem Kind Zugriff darauf geben.
 
