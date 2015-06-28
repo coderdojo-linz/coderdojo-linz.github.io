@@ -82,7 +82,7 @@ Außerdem sollen Kinder und Jugendliche im CoderDojo gemeinsam Dinge ausprobiere
 
 Begleitpersonen sind natürlich herzlich eingeladen, als Mentoren oder anderweitige Helfer mitzuwirken. Bei einem CoderDojo gibt es auch viele Dinge abseits von Programmieren, die zu tun sind. Je mehr helfende Hände da sind, desto mehr können sich die Mentoren auf die Arbeit mit den Kindern und Jugendlichen konzentrieren.
 
-**Vor der ersten Teilnahme muss ein Erziehungsberechtigter die Teilnahmebedingungen (sind noch in Arbeit und stehen in Kürze zum Download zur Verfügung) unterschreiben.**
+**Vor der ersten Teilnahme muss ein Erziehungsberechtigter die [Einverständniserklärung zur Teilnahme](EinverstaendniserklaerungTeilnahme.pdf){:target="_blank"} unterschreiben und zum CoderDojo mitbringen.**
 
 Als Programmierclub möchten wir natürlich auch moderne Wege zur Kommunikation mit Teilnehmern, Eltern, Mentoren und Medien nutzen (z.B. Blogs, Facebook, Twitter). Dafür brauchen wir auch Fotos und Videos. **Wir bitten Sie daher um Ihr Einverständnis, dass wir Fotos und Videos von CoderDojo Treffen verwenden dürfen.** Bitte füllen Sie die [Einverständniserklärung bzgl. Fotos und Videos](EinverstaendniserklaerungFotosVideos.pdf){:target="_blank"} aus und geben Sie das unterschriebene Exemplar Ihrem Kind zum CoderDojo mit. Sollten Sie ausdrücklich keine Fotos Ihres Kindes wünschen, bitten wir Sie um einen entsprechenden Hinweis persönlich beim CoderDojo oder per Email ([Kontaktinformationen](http://coderdojo-linz.github.io/kontakt.html)). 
 
