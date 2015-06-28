@@ -41,9 +41,13 @@
     <Content Include="styles\dependencies.css" />
     <Content Include="styles\images\coderdojo.png" />
     <Content Include="styles\styles.css" />
+    <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite-deutsch.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratcher-werden.png" />
     <Content Include="_includes\footer.html" />
     <Content Include="_includes\head.html" />
     <Content Include="_includes\header.html" />
+    <Content Include="_layouts\sushi.html" />
     <Content Include="_layouts\default.html" />
     <Content Include="_layouts\mentoren.html" />
     <Content Include="_layouts\page.html" />
@@ -59,6 +63,8 @@
     <Content Include="mentoren\schacherl-roman.md" />
     <Content Include="mentoren\kirschner-peter-paul.md" />
     <Content Include="mentoren\sklenitzka-daniel.md" />
+    <Content Include="styles\sass\sushi.scss" />
+    <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
