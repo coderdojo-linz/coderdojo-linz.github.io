@@ -84,6 +84,8 @@ Begleitpersonen sind natürlich herzlich eingeladen, als Mentoren oder anderweit
 
 **Vor der ersten Teilnahme muss ein Erziehungsberechtigter die Teilnahmebedingungen (sind noch in Arbeit und stehen in Kürze zum Download zur Verfügung) unterschreiben.**
 
+Als Programmierclub möchten wir natürlich auch moderne Wege zur Kommunikation mit Teilnehmern, Eltern, Mentoren und Medien nutzen (z.B. Blogs, Facebook, Twitter). Dafür brauchen wir auch Fotos und Videos. **Wir bitten Sie daher um Ihr Einverständnis, dass wir Fotos und Videos von CoderDojo Treffen verwenden dürfen.** Bitte füllen Sie die [Einverständniserklärung bzgl. Fotos und Videos](EinverstaendniserklaerungFotosVideos.pdf){:target="_blank"} aus und geben Sie das unterschriebene Exemplar Ihrem Kind zum CoderDojo mit.
+
 
 ## Wann kann man einsteigen? ##
 
