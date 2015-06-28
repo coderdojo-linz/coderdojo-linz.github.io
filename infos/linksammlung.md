@@ -6,8 +6,16 @@ description: Wichtige Links für Teilnehmer, Eltern und Mentoren
 
 # Wichtige Links für Teilnehmer, Eltern und Mentoren #
 
+* [Für Teilnehmer](#Teilnehmer)
+* [Für Eltern](#Eltern)
 
-## Für Teilnehmer ##
+
+## <a name="Teilnehmer">Für Teilnehmer</a> ##
+
+* [Microsoft DreamSpark](#DreamSpark)
+* [Microsoft Azure](#Azure)
+* [Heroku](#Heroku)
+* [Visual Studio Code Editor](#VSCode)
 
 ### <a name="DreamSpark">Microsoft DreamSpark</a> ###
 
@@ -38,7 +46,7 @@ Hier wichtige Links für euch, bei denen ihr mehr Informationen zu Azure findet:
 * [Informationen über MySQL in Azure](https://azure.microsoft.com/de-de/documentation/articles/store-php-create-mysql-database/){:target="_blank"}
 * [Link zur Anmeldung zu Azure über DreamSpark](https://www.dreamspark.com/Product/Product.aspx?productid=99){:target="_blank"}
 
-### Heroku ###
+### <a name="Heroku">Heroku</a> ###
 
 **Ähnlich wie [Azure](#Azure) ist *Heroku* auch eine [Cloud Computing](https://de.wikipedia.org/wiki/Cloud_Computing "Cloud Computing in Wikipedia"){:target="_blank"} Umgebung zum Betreiben eurer Web-Projekte im Internet.**
 
@@ -50,8 +58,17 @@ Hier wichtige Links für euch, bei denen ihr mehr Informationen (in Englisch) zu
 * [Rechtliche Detailinformationen](https://www.heroku.com/policy/tos){:target="_blank"} (wichtig für eure Eltern)
 * [Link zur Anmeldung zu Heroku](https://signup.heroku.com/www-header){:target="_blank"}
 
+### <a name="VSCode">Visual Studio Code</a> ###
 
-## Für Eltern ##
+***Visual Studio Code* ist ein kostenloser Editor (in Englisch), den ihr unter anderem zum Erstellen von Programmen für das Internet verwenden könnt.**
+
+Im CoderDojo verwenden wir ihn, um HTML, JavaScript und CSS zu programmieren. Visual Studio Code ist ganz einfach zu installieren und funktioniert unter Windows, Linux und MacOS. Eure CoderDojo Mentoren zeigen euch gerne, wie man Visual Studio Code installiert.
+
+* [Englische Homepage von Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}
+* [Link zum Herunterladen von Visual Studio Code](https://code.visualstudio.com/Download){:target="_blank"} 
+
+
+## <a name="Eltern">Für Eltern</a> ##
 
 ### Microsoft Azure Kostenkontrolle ###
 
