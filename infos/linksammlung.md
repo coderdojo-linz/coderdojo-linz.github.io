@@ -9,7 +9,7 @@ description: Wichtige Links für Teilnehmer, Eltern und Mentoren
 
 ## Für Teilnehmer ##
 
-### Microsoft DreamSpark [DreamSpark] ###
+### <a name="DreamSpark">Microsoft DreamSpark</a> ###
 
 **Microsoft stellt Schülern und Studenten im Rahmen des [DreamSpark Programms](https://www.dreamspark.com/Default.aspx){:target="_blank"} kostenlos professionelle Softwareentwicklungswerkzeuge zur Verfügung.**
 
@@ -27,7 +27,7 @@ Hier wichtige Links für euch, die ihr natürlich auch an eure Schule oder Elter
 **[Link zur Anmeldung zu Microsoft DreamSpark](https://www.dreamspark.com/Student/Default.aspx){:target="_blank"}**
 
 
-### Microsoft Azure [Azure] ###
+### <a name="Azure">Microsoft Azure</a> ###
 
 ***Microsoft Azure* ist eine sogenannte [Cloud Computing](https://de.wikipedia.org/wiki/Cloud_Computing "Cloud Computing in Wikipedia"){:target="_blank"} Umgebung. Wenn Programme von euch im Internet zur Verfügung stehen sollen, könnt ihr dafür in vielen Fällen Azure verwenden.**
 
