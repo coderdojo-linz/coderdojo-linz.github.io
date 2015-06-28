@@ -16,6 +16,7 @@ description: Wichtige Links für Teilnehmer, Eltern und Mentoren
 * [Microsoft Azure](#Azure)
 * [Heroku](#Heroku)
 * [Visual Studio Code Editor](#VSCode)
+* [Tools für Webentwicklung](#WebTools)
 
 ### <a name="DreamSpark">Microsoft DreamSpark</a> ###
 
@@ -66,6 +67,16 @@ Im CoderDojo verwenden wir ihn, um HTML, JavaScript und CSS zu programmieren. Vi
 
 * [Englische Homepage von Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}
 * [Link zum Herunterladen von Visual Studio Code](https://code.visualstudio.com/Download){:target="_blank"} 
+
+### <a name="WebTools">Tools für Webentwicklung</a> ###
+
+Für die Entwicklung von Programmen für das Internet gibt es einige Tools, die sehr hilfreich, manchmal sogar unbedingt notwendig sind. Hier findet ihr eine Liste von Links zu diesen Tools. Sie funktionieren alle sowohl unter Windows, Linux und MacOS. Die meisten Seiten sind Englisch, also eine gute Gelegenheit, eure Sprachkenntnisse in Englisch zu verbessern.
+
+* [**Git**](https://git-scm.com/){:target="_blank"}:<br/>
+  Git ist eine kostenlose [Versionsverwaltung](https://de.wikipedia.org/wiki/Versionsverwaltung "Versionsverwaltung in Wikipedia nachschlagen") für Programmcode. Mehr über Git könnt ihr im kostenlosen [Git Buch](https://git-scm.com/book/en/v2){:target="_blank"} nachlesen. Viele Umgebungen (wie auch die oben erwähnten [Azure](#Azure) und [Heroku](#Heroku)) verwenden Git. Es gibt eine Menge kostenloser *Git Clients*, manche für die [Kommandozeile](https://de.wikipedia.org/wiki/Kommandozeile "Kommandozeile in Wikipedia nachschlagen") und manche mit grafischer Benutzeroberfläche. Die Downloadlinks findet ihr [hier](https://git-scm.com/downloads "Downloadlinks zu Git Clients auf Git Homepage"){:target="_blank"}.
+
+* [**Node.js**](https://nodejs.org/){:target="_blank"}:<br/>
+  [JavaScript](http://www.w3schools.com/js/ "Link zu einer Webseite zum Lernen von JavaScript"){:target="_blank"} ist für Programme im Internet eine wichtige Programmiersprache. Sie wird von [Webbrowsern](https://de.wikipedia.org/wiki/Webbrowser "Webbrowser in Wikipedia nachschlagen"){:target="_blank"} ausgeführt. Man kann JavaScript aber auch auf Servern ausführen. Dafür ist [Node.js](https://nodejs.org/) da. Wenn du Node.js selbst lernen möchtest, findest du [hier](http://nodeschool.io/de/){:target="_blank"} eine Webseite zum Lernen. Den kostenlosen Download von Node.JS findest du [hier](https://nodejs.org/download/){:target="_blank"}.
 
 
 ## <a name="Eltern">Für Eltern</a> ##
