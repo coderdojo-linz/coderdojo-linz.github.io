@@ -10,12 +10,11 @@ Um deine Projekte in Scratch speichern und teilen zu können, brauchst du ein Ko
 
 ## Anleitung ##
 
-1. Öffnen einen Webbrowser und navigiere zur Scratch Webseite: [http://scratch.mit.edu](http://scratch.mit.edu){:target="_blank"}
-![Scratch Webseite öffnen](scratch-konto-anlegen/scratch-webseite.png)
+1. ![Scratch Webseite öffnen](scratch-konto-anlegen/scratch-webseite.png)
+Öffnen einen Webbrowser und navigiere zur Scratch Webseite: [http://scratch.mit.edu](http://scratch.mit.edu){:target="_blank"}
 
-2. Wenn die Seite nicht in Deutsch angezeigt wird, scrolle ganz nach unten und wähle in der Combobox "Deutsch" aus.
-![Scratch Webseite auf Deutsch umschalten](scratch-konto-anlegen/scratch-webseite-deutsch.png)
+2. ![Scratch Webseite auf Deutsch umschalten](scratch-konto-anlegen/scratch-webseite-deutsch.png)
+Wenn die Seite nicht in Deutsch angezeigt wird, scrolle ganz nach unten und wähle in der Combobox "Deutsch" aus.
 
-3. Wähle rechts oben im Menü das Element "Scratcher werden" aus und führe die drei Schritte durch, um dein Scratch Konto zu erstellen.
-![Scratch Konto anlegen](scratch-konto-anlegen/scratcher-werden.png)
-
+3. ![Scratch Konto anlegen](scratch-konto-anlegen/scratcher-werden.png)
+Wähle rechts oben im Menü das Element "Scratcher werden" aus und führe die drei Schritte durch, um dein Scratch Konto zu erstellen.
