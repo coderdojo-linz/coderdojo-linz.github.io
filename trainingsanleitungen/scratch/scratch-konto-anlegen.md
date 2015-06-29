@@ -18,7 +18,3 @@ Falls die Scratch-Seite nicht in Deutsch angezeigt wird, scrolle ganz nach unten
 
 3. ![Scratch Konto anlegen](scratch-konto-anlegen/scratcher-werden.png)
 Klicke rechts oben *Scratcher werden* an.
-
-
-
-
