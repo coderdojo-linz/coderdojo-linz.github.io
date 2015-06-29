@@ -4,6 +4,13 @@
 	li {
 		clear: both;
 		padding-bottom: 10px;
+		padding-top: 20px;
+		border-top: 1px dotted #666666;
+	}
+
+	li:first-of-type {
+		padding-top: 0;
+		border-top: none;
 	}
 
 	li > p > img {
@@ -12,4 +19,10 @@
 		padding-bottom: 20px;
 		float: right;
 	}
+}
+
+@media print {
+  @page { margin: 0; }
+  body { margin: 1cm; padding-top: 0; }
+  .container { min-width: 100%; }
 }
