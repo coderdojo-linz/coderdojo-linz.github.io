@@ -16,6 +16,7 @@ description: Wichtige Links für Teilnehmer, Eltern und Mentoren
 * [Microsoft Azure](#Azure)
 * [Heroku](#Heroku)
 * [Visual Studio Code Editor](#VSCode)
+* [Tools für Webentwicklung](#WebTools)
 
 ### <a name="DreamSpark">Microsoft DreamSpark</a> ###
 
@@ -66,6 +67,23 @@ Im CoderDojo verwenden wir ihn, um HTML, JavaScript und CSS zu programmieren. Vi
 
 * [Englische Homepage von Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}
 * [Link zum Herunterladen von Visual Studio Code](https://code.visualstudio.com/Download){:target="_blank"} 
+
+### <a name="WebTools">Tools für Webentwicklung</a> ###
+
+Für die Entwicklung von Programmen für das Internet gibt es einige Tools, die sehr hilfreich, manchmal sogar unbedingt notwendig sind. Hier findet ihr eine Liste von Links zu diesen Tools. Sie funktionieren alle sowohl unter Windows, Linux und MacOS. Die meisten Seiten sind Englisch, also eine gute Gelegenheit, eure Sprachkenntnisse in Englisch zu verbessern.
+
+* [**Git**](https://git-scm.com/){:target="_blank"}:<br/>
+  Git ist eine kostenlose [Versionsverwaltung](https://de.wikipedia.org/wiki/Versionsverwaltung "Versionsverwaltung in Wikipedia nachschlagen") für Programmcode. Viele Umgebungen (wie auch die oben erwähnten [Azure](#Azure) und [Heroku](#Heroku)) verwenden Git. Es gibt eine Menge kostenloser *Git Clients*, manche für die [Kommandozeile](https://de.wikipedia.org/wiki/Kommandozeile "Kommandozeile in Wikipedia nachschlagen") und manche mit grafischer Benutzeroberfläche.
+    * Kostenloses [Git Buch](https://git-scm.com/book/en/v2){:target="_blank"} nachlesen.
+    * [Links zum Herunterladen von Git Clients](https://git-scm.com/downloads "Downloadlinks zu Git Clients auf Git Homepage"){:target="_blank"}
+* [**Node.js**](https://nodejs.org/){:target="_blank"}:<br/>
+  [JavaScript](http://www.w3schools.com/js/ "Link zu einer Webseite zum Lernen von JavaScript"){:target="_blank"} ist für Programme im Internet eine wichtige Programmiersprache. Sie wird von [Webbrowsern](https://de.wikipedia.org/wiki/Webbrowser "Webbrowser in Wikipedia nachschlagen"){:target="_blank"} ausgeführt. Man kann JavaScript aber auch auf Servern ausführen. Dafür ist [Node.js](https://nodejs.org/) da.
+    * [Webseite zum Lernen von Node.js](http://nodeschool.io/de/){:target="_blank"}
+    * [Links zum Herunterladen von Node.js](https://nodejs.org/download/){:target="_blank"}
+* [**TypeScript**](http://www.typescriptlang.org){:target="_blank"}:<br/>
+  JavaScript ist eine sehr einfache und schlanke Programmiersprache. Als Entwickler muss man sich um viele Details kümmern, die nichts mit dem eigentlichen Problem zu tun haben, das man lösen möchte. [TypeScript](http://www.typescriptlang.org){:target="_blank"} ist eine Ergänzung zu JavaScript, die die JavaScript-Programmierung einfacher macht.
+    * [Webseite zum Lernen von TypeScript](http://www.typescriptlang.org/Tutorial){:target="_blank"}
+    * Installiert wird TypeScript mit Hilfe von Node.js (siehe oben). Der entsprechende Kommandozeilenbefehl lautet `npm i -g typescript`.
 
 
 ## <a name="Eltern">Für Eltern</a> ##
