@@ -32,7 +32,24 @@ ol {
 }
 
 @media print {
-  @page { margin: 0; }
-  body { margin: 1cm; padding-top: 0; }
-  .container { min-width: 100%; }
+	@page {
+		margin: 2cm 0 2cm 0;
+	}
+
+	@page:first {
+		margin: 0;
+	}
+
+	body {
+		margin: 1cm;
+		padding-top: 0;
+	}
+
+	.container {
+		min-width: 100%;
+	}
+
+	.navbar {
+		display: none;
+	}
 }
