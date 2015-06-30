@@ -1,4 +1,8 @@
-﻿ol {
+﻿h2, h3 {
+	clear: both;
+}
+
+ol {
 	padding-left: 20px;
 
 	li {
@@ -13,8 +17,14 @@
 		border-top: none;
 	}
 
-	li > p > img {
+	li img {
+		padding-top: 20px;
+		max-width: 100%;
+	}
+
+	li img.right {
 		width: 50%;
+		padding-top: 0;
 		padding-left: 20px;
 		padding-bottom: 20px;
 		float: right;

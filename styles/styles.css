@@ -126,6 +126,9 @@ a, a:hover, a:focus {
   color: #e53935;
   font-weight: bold; }
 
+h2, h3 {
+  clear: both; }
+
 ol {
   padding-left: 20px; }
   ol li {
@@ -136,8 +139,12 @@ ol {
   ol li:first-of-type {
     padding-top: 0;
     border-top: none; }
-  ol li > p > img {
+  ol li img {
+    padding-top: 20px;
+    max-width: 100%; }
+  ol li img.right {
     width: 50%;
+    padding-top: 0;
     padding-left: 20px;
     padding-bottom: 20px;
     float: right; }

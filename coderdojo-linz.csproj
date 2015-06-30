@@ -41,6 +41,10 @@
     <Content Include="styles\dependencies.css" />
     <Content Include="styles\images\coderdojo.png" />
     <Content Include="styles\styles.css" />
+    <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\erste-schritte-scratchy.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\neues-scratch-projekt.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\scratch-projekt-erstellen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\scratchy-geht-im-kreis.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite-deutsch.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratcher-werden.png" />
@@ -65,6 +69,8 @@
     <Content Include="mentoren\sklenitzka-daniel.md" />
     <Content Include="styles\sass\sushi.scss" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
@@ -107,7 +113,9 @@
   <ItemGroup>
     <None Include="infos\eltern.md" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="trainingsanleitungen\scratch\scratch-paddle-game\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
