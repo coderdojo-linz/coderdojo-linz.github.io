@@ -12,7 +12,7 @@ Das Spiel soll folgendermaßen funktionieren: Der Computer denkt sich eine Zahl 
 
 ## HTML Seite herunterladen
 
-Die Programmiersprache JavaScript wird vor allem auf Webseiten im Internet verwendet. Damit du nicht bei Null beginnen musst, kannst du dir eine HTML-Seite [https://raw.githubusercontent.com/coderdojo-linz/coderdojo-linz.github.io/master/trainingsanleitungen/web/javascript-zahlen-raten/zahlen-raten.html](hier)){:target="_blank"} herunterladen. Speichere die Datei auf deinem Computer ab und öffne sie mit einem Webbrowser (du kannst die Datei einfach ins Browserfenster hineinziehen).
+Die Programmiersprache JavaScript wird vor allem auf Webseiten im Internet verwendet. Damit du nicht bei Null beginnen musst, kannst du dir eine HTML-Seite [hier](https://raw.githubusercontent.com/coderdojo-linz/coderdojo-linz.github.io/master/trainingsanleitungen/web/javascript-zahlen-raten/zahlen-raten.html){:target="_blank"} herunterladen. Speichere die Datei auf deinem Computer ab und öffne sie mit einem Webbrowser (du kannst die Datei einfach ins Browserfenster hineinziehen).
 
 Du solltest folgende Seite sehen:
 
@@ -94,7 +94,7 @@ Damit hast du einen Button, aber es passiert noch nichts wenn du darauf klickst.
         outputCount.innerHTML = "";
     }
 	
-Jetzt kannst du das Spiel jederzeit neu starten. Die fertige Datei kannst du auch unter [https://raw.githubusercontent.com/coderdojo-linz/coderdojo-linz.github.io/master/trainingsanleitungen/web/javascript-zahlen-raten/zahlen-raten-final.html](hier){:target="_blank"} herunterladen.
+Jetzt kannst du das Spiel jederzeit neu starten. Die fertige Datei kannst du [hier ](https://raw.githubusercontent.com/coderdojo-linz/coderdojo-linz.github.io/master/trainingsanleitungen/web/javascript-zahlen-raten/zahlen-raten-final.html){:target="_blank"} herunterladen.
 
 ## Wie geht's weiter?
 
