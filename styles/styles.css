@@ -126,23 +126,23 @@ a, a:hover, a:focus {
   color: #e53935;
   font-weight: bold; }
 
-h2, h3 {
+body.sushi h2, body.sushi h3 {
   clear: both; }
 
-ol {
+body.sushi ol {
   padding-left: 20px; }
-  ol li {
+  body.sushi ol li {
     clear: both;
     padding-bottom: 10px;
     padding-top: 20px;
     border-top: 1px dotted #666666; }
-  ol li:first-of-type {
+  body.sushi ol li:first-of-type {
     padding-top: 0;
     border-top: none; }
-  ol li img {
+  body.sushi ol li img {
     padding-top: 20px;
     max-width: 100%; }
-  ol li img.right {
+  body.sushi ol li img.right {
     width: 50%;
     padding-top: 0;
     padding-left: 20px;
@@ -150,15 +150,16 @@ ol {
     float: right; }
 
 @media print {
-  /*@page {
-		margin: 1cm;
-	}*/
-  body {
-    margin: 0;
-    padding: 0; }
-  h1 {
-    margin-top: 0; }
-  .container {
-    min-width: 100%; }
-  .navbar {
-    display: none; } }
+  body.sushi {
+    /*@page {
+			margin: 1cm;
+		}*/ }
+    body.sushi body {
+      margin: 0;
+      padding: 0; }
+    body.sushi h1 {
+      margin-top: 0; }
+    body.sushi .container {
+      min-width: 100%; }
+    body.sushi .navbar {
+      display: none; } }

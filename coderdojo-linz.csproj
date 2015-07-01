@@ -35,6 +35,7 @@
     <Content Include="mentoren\images\karin-huber.jpg" />
     <Content Include="mentoren\images\peter-paul-kirschner.jpg" />
     <Content Include="mentoren\images\rainer-stropek.jpg" />
+    <Content Include="mentoren\images\raphael-schwarz.png" />
     <Content Include="mentoren\images\roman-schacherl.jpg" />
     <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
@@ -49,6 +50,20 @@
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\scratchy-geht-im-kreis.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\scratchy-malt.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\wische-malspuren-weg.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\buehnenbild-hinzufuegen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\buehnenbild-wechseln.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\figur-auswaehlen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\krabbe-aktivieren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\krabbe-auswaehlen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\krabbe-steuern.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\scratchy-ganz-links.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\scratchy-gleiten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\scratchy-in-der-mitte.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\scratchy-sagt-etwas.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\scratchy-sagt-miau.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\scratchy-starten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\scratchy-startposition.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\strand-buehnenbild.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite-deutsch.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratcher-werden.png" />
@@ -85,6 +100,8 @@
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen.md" />
     <Content Include="infos\uebungsbeispiele.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente.md" />
+    <Content Include="mentoren\schwarz-raphael.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
