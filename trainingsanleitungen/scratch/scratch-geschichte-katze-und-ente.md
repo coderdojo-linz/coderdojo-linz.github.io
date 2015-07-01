@@ -52,7 +52,10 @@ Wähle ein Bild vom Strand aus und klicke auf "OK".
 12. ![Krabbe auswählen](scratch-geschichte-katze-und-ente/krabbe-auswaehlen.png){: .right}
 Wähle die Krabbe aus und klicke auf "OK". Schiebe sie anschließend an den rechten unteren Rand.
 
-13. ![Krabbe steuern](scratch-geschichte-katze-und-ente/krabbe-steuern.png){: .right}
+13. ![Krabbe aktivieren](scratch-geschichte-katze-und-ente/krabbe-aktivieren.png){: .right}
+Damit du das Programm für die Krabbe ändern kannst, klicke sie in der Figurenliste an.
+
+14. ![Krabbe steuern](scratch-geschichte-katze-und-ente/krabbe-steuern.png){: .right}
 Die Krabbe soll am Anfang unsichtbar sein. Sie soll erst sichtbar werden, wenn der Strand als Hintergrund erscheint. Das Bild rechts zeigt dir, wie dein Programm dafür aussehen muss. Probiere es mit der grünen Flagge aus. Scratchy wird jetzt von der Krabbe begrüßt, wenn sie an den Strand kommt.
 
 
