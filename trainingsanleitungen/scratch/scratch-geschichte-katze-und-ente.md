@@ -8,19 +8,24 @@ description: In dieser Übung lernst du, wie man mit Scratch eine kurze Geschich
 
 Mit Scratch kannst du Geschichten erzählen. Du kannst Figuren erscheinen lassen, sie bewegen, den Hintergrund austauschen und vieles mehr.
 
+## Neues Projekt erstellen
+
+1. ![Neues Scratch Projekt erstellen](scratch-erste-schritte/scratch-projekt-erstellen.png){: .right}
+Öffne Scratch und klicke links oben im Menü auf *Entwickeln*. Im neuen Projekt siehst du Scratchy, die Katze. Noch macht Scratchy nichts, da sie noch kein Programm hat.
+
 ## Scratchy auftreten lassen
 
 1. ![Scratchy ganz nach links schieben](scratch-geschichte-katze-und-ente/scratchy-ganz-links.png){: .right}
 Schiebe Scratchy ganz nach links. Man darf nur ein kleines Stück von ihr sehen.
 
 2. ![Startposition setzen](scratch-geschichte-katze-und-ente/scratchy-startposition.png){: .right}
-Wir möchten, dass Scratchy immer dort links außen ist, wenn wir mit der grünen Flagge die Geschichte starten. Deshalb setzen wir ihn auf diese Position wenn die grüne Flagge angeklickt wird.
+Wir möchten, dass Scratchy immer dort links außen ist, wenn wir die Geschichte starten. Deshalb setzen wir ihn auf diese Position wenn die grüne Flagge angeklickt wird. Dazu reagiert unser Programm auf ein *Ereignis". Wenn es eintritt, verwenden wir den *gehe* Block, um Scratchy an die gewünschte Stelle zu positionieren. 
 
 3.  ![Zielposition setzen](scratch-geschichte-katze-und-ente/scratchy-in-der-mitte.png){: .right}
 Schiebe Scratchy jetzt etwas weiter in die Mitte wie du es am Bild rechts siehst.
 
 4.  ![Scratchy gleiten lassen](scratch-geschichte-katze-und-ente/scratchy-gleiten.png){: .right}
-Wir möchten, dass Scratchy nicht zu dieser Position springt sondern dort langsam hingleitet. Das soll aussehen, als ob er die Bühne betritt. Das machen wir mit dem "gleite" Block.
+Wir möchten, dass Scratchy nicht zu dieser Position springt sondern dort langsam hingleitet. Es soll aussehen, als ob er die Bühne langsam betritt. Das machen wir mit dem *gleite* Block.
 
 5. ![Mit grüner Flagge starten](scratch-geschichte-katze-und-ente/scratchy-starten.png){: .right}
 Klicke auf die grüne Flagge und sieh dir an, wie Scratchy die Bühne betritt.
@@ -28,10 +33,10 @@ Klicke auf die grüne Flagge und sieh dir an, wie Scratchy die Bühne betritt.
 ## Scratchy etwas sagen lassen
 
 6. ![Scratchy sagt etwas](scratch-geschichte-katze-und-ente/scratchy-sagt-etwas.png){: .right}
-Mit dem "sage" Block kannst du Scratchy etwas sagen lassen.
+Mit dem "sage" Block kannst du Scratchy etwas sagen lassen. Achte darauf, dass die Blöcke unterschiedliche Farben haben. Die Farben helfen dir, die Blöcke wiederzufinden.
 
 7. ![Scratchy sagt Miau](scratch-geschichte-katze-und-ente/scratchy-sagt-miau.png){: .right}
-Scratchy kann auch Geräusche machen. Lass ihn "Miau" sagen.
+Scratchy kann auch Geräusche machen. Lass ihn "Miau" sagen. Das machst du mit dem Block *spiele Klang*.
 
 ## Hintergrund ändern
 
