@@ -1,0 +1,61 @@
+---
+layout: sushi
+title: Mit Scratch eine Geschichte erzählen
+description: In dieser Übung lernst du, wie man mit Scratch eine kurze Geschichte erzählen kann.
+---
+
+# Mit Scratch eine Geschichte erzählen
+
+Mit Scratch kannst du Geschichten erzählen. Du kannst Figuren erscheinen lassen, sie bewegen, den Hintergrund austauschen und vieles mehr.
+
+## Scratchy auftreten lassen
+
+1. ![Scratchy ganz nach links schieben](scratch-geschichte-katze-und-ente/scratchy-ganz-links.png){: .right}
+Schiebe Scratchy ganz nach links. Man darf nur ein kleines Stück von ihr sehen.
+
+2. ![Startposition setzen](scratch-geschichte-katze-und-ente/scratchy-startposition.png){: .right}
+Wir möchten, dass Scratchy immer dort links außen ist, wenn wir mit der grünen Flagge die Geschichte starten. Deshalb setzen wir ihn auf diese Position wenn die grüne Flagge angeklickt wird.
+
+3.  ![Zielposition setzen](scratch-geschichte-katze-und-ente/scratchy-in-der-mitte.png){: .right}
+Schiebe Scratchy jetzt etwas weiter in die Mitte wie du es am Bild rechts siehst.
+
+4.  ![Scratchy gleiten lassen](scratch-geschichte-katze-und-ente/scratchy-gleiten.png){: .right}
+Wir möchten, dass Scratchy nicht zu dieser Position springt sondern dort langsam hingleitet. Das soll aussehen, als ob er die Bühne betritt. Das machen wir mit dem "gleite" Block.
+
+5. ![Mit grüner Flagge starten](scratch-geschichte-katze-und-ente/scratchy-starten.png){: .right}
+Klicke auf die grüne Flagge und sieh dir an, wie Scratchy die Bühne betritt.
+
+## Scratchy etwas sagen lassen
+
+6. ![Scratchy sagt etwas](scratch-geschichte-katze-und-ente/scratchy-sagt-etwas.png){: .right}
+Mit dem "sage" Block kannst du Scratchy etwas sagen lassen.
+
+7. ![Scratchy sagt Miau](scratch-geschichte-katze-und-ente/scratchy-sagt-miau.png){: .right}
+Scratchy kann auch Geräusche machen. Lass ihn "Miau" sagen.
+
+## Hintergrund ändern
+
+8. ![Bühnenbild hinzufügen](scratch-geschichte-katze-und-ente/buehnenbild-hinzufuegen.png){: .right}
+Damit wir Scratchy an den Strand bringen, müssen wir ein Bühnenbild hinzufügen.
+
+9. ![Bühnenbild auswählen](scratch-geschichte-katze-und-ente/strand-buehnenbild.png){: .right}
+Wähle ein Bild vom Strand aus und klicke auf "OK".
+
+10. ![Bühnenbild einblenden](scratch-geschichte-katze-und-ente/buehnenbild-wechseln.png){: .right}
+Ändere dein Programm so, dass am Beginn das leere Bühnenbild sichtbar ist und am Ende zum Strand gewechselt wird. Probiere dein Programm mit der grünen Flagge aus. Scratchy wünscht sich den Strand, der Stand erscheint und Scratchy freut sich.
+
+## Eine zweite Figur einblenden
+
+11. ![Figur auswählen](scratch-geschichte-katze-und-ente/figur-auswaehlen.png){: .right}
+Öffne die Bibliothek, damit du dir eine neue Figur auswählen kannst.
+
+12. ![Krabbe auswählen](scratch-geschichte-katze-und-ente/krabbe-auswaehlen.png){: .right}
+Wähle die Krabbe aus und klicke auf "OK". Schiebe sie anschließend an den rechten unteren Rand.
+
+13. ![Krabbe steuern](scratch-geschichte-katze-und-ente/krabbe-steuern.png){: .right}
+Die Krabbe soll am Anfang unsichtbar sein. Sie soll erst sichtbar werden, wenn der Strand als Hintergrund erscheint. Das Bild rechts zeigt dir, wie dein Programm dafür aussehen muss. Probiere es mit der grünen Flagge aus. Scratchy wird jetzt von der Krabbe begrüßt, wenn sie an den Strand kommt.
+
+
+## Ausprobieren
+
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/69122768/](https://scratch.mit.edu/projects/69122768){:target="_blank"} ausprobieren.
