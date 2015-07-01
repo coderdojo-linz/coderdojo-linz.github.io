@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Zahlen raten</title>
+	</head>
+	<body>
+		<h2>Zahlen raten</h2>
+		
+		<p>Versuche, die Zahl zwischen 0 und 100 zu erraten!</p>
+		
+		<div style="height: 120px">
+			<label>Dein Tipp:</label>
+			<input type="text" id="inputGuess" style="width:100px"/>
+			<button>Überprüfen</button>
+			
+			<p id="outputResult"></p>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		var inputGuess = document.getElementById("inputGuess");
+		var outputResult = document.getElementById("outputResult");
+		
+		var number;
+		number = Math.floor(Math.random() * 100);
+	</script>
+</html>
