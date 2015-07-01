@@ -75,6 +75,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-paddle-game.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
@@ -118,6 +119,7 @@
     <None Include="infos\eltern.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\" />
     <Folder Include="trainingsanleitungen\scratch\scratch-paddle-game\" />
   </ItemGroup>
   <PropertyGroup>
