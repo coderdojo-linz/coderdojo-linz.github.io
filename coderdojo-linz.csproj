@@ -84,6 +84,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-paddle-game.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen.md" />
+    <Content Include="infos\uebungsbeispiele.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
