@@ -89,7 +89,7 @@ Damit hast du einen Button, aber es passiert noch nichts wenn du darauf klickst.
         number = Math.floor(Math.random() * 100);
         count = 0;
 	
-		inputGuess.value = "";
+        inputGuess.value = "";
         outputResult.innerHTML = "";
         outputCount.innerHTML = "";
     }
