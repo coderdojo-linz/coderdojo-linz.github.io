@@ -43,8 +43,8 @@ Scratchy kann auch Geräusche machen. Lass ihn "Miau" sagen. Das machst du mit d
 8. ![Bühnenbild hinzufügen](scratch-geschichte-katze-und-ente/buehnenbild-hinzufuegen.png){: .right}
 Damit wir Scratchy an den Strand bringen, müssen wir ein Bühnenbild hinzufügen.
 
-9. ![Bühnenbild auswählen](scratch-geschichte-katze-und-ente/strand-buehnenbild.png){: .right}
-Wähle ein Bild vom Strand aus und klicke auf "OK".
+9. Wähle ein Bild vom Strand aus und klicke auf "OK".<br/>
+![Bühnenbild auswählen](scratch-geschichte-katze-und-ente/strand-buehnenbild.png)
 
 10. ![Bühnenbild einblenden](scratch-geschichte-katze-und-ente/buehnenbild-wechseln.png){: .right}
 Ändere dein Programm so, dass am Beginn das leere Bühnenbild sichtbar ist und am Ende zum Strand gewechselt wird. Probiere dein Programm mit der grünen Flagge aus. Scratchy wünscht sich den Strand, der Stand erscheint und Scratchy freut sich.
@@ -54,8 +54,8 @@ Wähle ein Bild vom Strand aus und klicke auf "OK".
 11. ![Figur auswählen](scratch-geschichte-katze-und-ente/figur-auswaehlen.png){: .right}
 Öffne die Bibliothek, damit du dir eine neue Figur auswählen kannst.
 
-12. ![Krabbe auswählen](scratch-geschichte-katze-und-ente/krabbe-auswaehlen.png){: .right}
-Wähle die Krabbe aus und klicke auf "OK". Schiebe sie anschließend an den rechten unteren Rand.
+12. Wähle die Krabbe aus und klicke auf "OK". Schiebe sie anschließend an den rechten unteren Rand.<br/>
+![Krabbe auswählen](scratch-geschichte-katze-und-ente/krabbe-auswaehlen.png)
 
 13. ![Krabbe aktivieren](scratch-geschichte-katze-und-ente/krabbe-aktivieren.png){: .right}
 Damit du das Programm für die Krabbe ändern kannst, klicke sie in der Figurenliste an.
