@@ -15,14 +15,14 @@ Mit Scratch kannst du Geschichten erzählen. Du kannst Figuren erscheinen lassen
 
 ## Scratchy auftreten lassen
 
-1. ![Scratchy ganz nach links schieben](scratch-geschichte-katze-und-ente/scratchy-ganz-links.png){: .right}
-Schiebe Scratchy ganz nach links. Man darf nur ein kleines Stück von ihr sehen.
+1. Schiebe Scratchy ganz nach links. Man darf nur ein kleines Stück von ihr sehen.<br/>
+![Scratchy ganz nach links schieben](scratch-geschichte-katze-und-ente/scratchy-ganz-links.png)
 
 2. ![Startposition setzen](scratch-geschichte-katze-und-ente/scratchy-startposition.png){: .right}
 Wir möchten, dass Scratchy immer dort links außen ist, wenn wir die Geschichte starten. Deshalb setzen wir ihn auf diese Position wenn die grüne Flagge angeklickt wird. Dazu reagiert unser Programm auf ein *Ereignis". Wenn es eintritt, verwenden wir den *gehe* Block, um Scratchy an die gewünschte Stelle zu positionieren. 
 
-3.  ![Zielposition setzen](scratch-geschichte-katze-und-ente/scratchy-in-der-mitte.png){: .right}
-Schiebe Scratchy jetzt etwas weiter in die Mitte wie du es am Bild rechts siehst.
+3. Schiebe Scratchy jetzt etwas weiter in die Mitte wie du es am Bild siehst.<br/>
+![Zielposition setzen](scratch-geschichte-katze-und-ente/scratchy-in-der-mitte.png)
 
 4.  ![Scratchy gleiten lassen](scratch-geschichte-katze-und-ente/scratchy-gleiten.png){: .right}
 Wir möchten, dass Scratchy nicht zu dieser Position springt sondern dort langsam hingleitet. Es soll aussehen, als ob er die Bühne langsam betritt. Das machen wir mit dem *gleite* Block.
