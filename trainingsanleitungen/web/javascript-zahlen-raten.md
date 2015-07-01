@@ -26,7 +26,7 @@ Wenn man Scripts oder Programme aus dem Internet herunterlädt, muss man immer v
 
 ## Das Spiel
 
-Wenn du jetzt eine Zahl eingibst und auf "Überprüfen"" klickst, passiert noch nichts. Das werden wir jetzt ändern. Öffne dazu die HTML-Datei mit einem Texteditor (z.B. Notepad, Word ist nicht so gut geeignet). Dort siehst du zwei Bereiche: Einen für den HTML-Code (rot) und einen für den JavaScript-Code (blau).
+Wenn du jetzt eine Zahl eingibst und auf "Überprüfen" klickst, passiert noch nichts. Das werden wir jetzt ändern. Öffne dazu die HTML-Datei mit einem Texteditor (z.B. Notepad, Word ist nicht so gut geeignet). Dort siehst du zwei Bereiche: Einen für den HTML-Code (rot) und einen für den JavaScript-Code (blau).
 
 ![HTML (rot) und Javascript (blau)](javascript-zahlen-raten/html-javascript.png)
 
@@ -51,7 +51,7 @@ Natürlich fehlt jetzt noch der wichtigste Teil des Spiels: Die Überprüfung, o
 
 Vielleicht ist es dir schon aufgefallen: Man kann in das Tippfeld nicht nur Zahlen eingeben, sondern auch Buchstaben. Bevor wir die Zahlen vergleichen können, müssen wir zuerst sicher sein, ob das überhaupt eine gültige Eingabe ist.
 
-Füge dazu folgenden Codezeilen vor `count = count + 1;` ein:
+Füge dazu folgende Codezeilen vor `count = count + 1;` ein:
 
     var guess = parseInt(inputGuess.value);
     
