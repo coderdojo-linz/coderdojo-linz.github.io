@@ -52,6 +52,14 @@
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite-deutsch.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratcher-werden.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\anzahl-ecken-abfragen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\anzahl-schritte-anpassen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\ausgabe.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\fertige-figur.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\input.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\kante-malen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\male-n-kanten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\scratch-malflaeche-initialisieren.png" />
     <Content Include="_includes\footer.html" />
     <Content Include="_includes\head.html" />
     <Content Include="_includes\header.html" />
@@ -119,7 +127,6 @@
     <None Include="infos\eltern.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\" />
     <Folder Include="trainingsanleitungen\scratch\scratch-paddle-game\" />
   </ItemGroup>
   <PropertyGroup>
