@@ -129,6 +129,9 @@ a, a:hover, a:focus {
 body.sushi h2, body.sushi h3 {
   clear: both; }
 
+body.sushi ul {
+  padding-left: 20px; }
+
 body.sushi ol {
   padding-left: 20px; }
   body.sushi ol li {

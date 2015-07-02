@@ -102,6 +102,7 @@
     <Content Include="infos\uebungsbeispiele.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente.md" />
     <Content Include="mentoren\schwarz-raphael.md" />
+    <Content Include="infos\linksammlung.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
