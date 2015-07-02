@@ -19,3 +19,11 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 ## HTML
 
 1. [Programmiere ein einfaches "Zahlen raten" Spiel mit JavaScript](/trainingsanleitungen/web/javascript-zahlen-raten.html)
+
+## Hinweise für Mentoren
+
+Die meisten der Übungsbeispiele kann man mit der Druckfunktion des Browsers auf vier Seiten ausdrucken. Dadurch passen sie bei doppelseitigem Druck mit zwei Blättern auf einer Seite auf ein Blatt Papier und können somit leicht an Teilnehmer verteilt werden.
+
+## Änderungen und Ergänzungen
+
+Möchtet ihr an den Beispielen etwas ändern? Habt ihr einen Fehler entdeckt? Möchtet ihr eigene Beispiele hinzufügen? Diese Webseite steht vollständig im Quelltext auf Github unter [https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen){:target="_blank"} zur Verfügung. Unsere regelmäßigen Mentoren können jederzeit Schreibzugriff haben. Alle anderen bitten wir bei Änderungswünschen um [Pull-Requests](https://help.github.com/articles/using-pull-requests/){:target="_blank"}.
