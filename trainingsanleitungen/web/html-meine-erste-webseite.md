@@ -45,6 +45,7 @@ Zwischen die Tags <code>&lt;head&gt;</code> und <code>&lt;/head&gt;</code> notie
 ## Der Titel der Seite
 
 Jede HTML-Datei muss einen Titel erhalten. Dieser Titel dient in der Praxis mehreren Zwecken, aber solange Du die Seiten nur zum Lernen und Ausprobieren auf Deinem eigenen Computer entwickelst und testest, wird für Dich erstmal wichtig sein, dass der Titel im Browser in der Titelzeile des Anzeigefensters bzw. Karteireiters (Tab) angezeigt wird. So könnte dies beispielsweise beim Dojo so aussehen.
+
 <img src="html-meine-erste-webseite/html-BrowserTitle.png" />
 
 Später, wenn Deine HTML-Datei aus dem Internet erreichbar sein wird, bekommt der Titel einer HTML-Seite sogar noch grö&szlig;ere Bedeutung:
@@ -115,7 +116,7 @@ Geordnet schaut es so aus:
 &lt;/ol&gt;</code></pre>
 
 Das sollte im Browser dann ungefähr so dargestellt werden:
-<ol>
+<ol class="plain">
 	<li>radfahren</li>
 	<li>Musik hören</li>
 	<li>mit Freunden spielen</li>
@@ -177,9 +178,9 @@ Eine gute Auflistung ist <a href="http://wiki.selfhtml.org/wiki/Referenz:HTML/Ze
 
 Das Bild-Element kommt wie alle anderen Elemente auch aus dem englsichen. Bild ist Image auf englisch, da Entwickler gerne Zeichen sparen, wurde es einfach auf <code>img</code> verkürzt.
 
-Jedes Bild braucht auch einen Verweis wo die Bild-Datei zu finden ist. Dies wird als Quelle bezeichnet und lautet im englishen Source also für Entwickler kurz <code>src</code>
+Jedes Bild braucht auch einen Verweis wo die Bild-Datei zu finden ist. Dies wird als Quelle bezeichnet und lautet im englishen Source also für Entwickler kurz <code>src</code>.
 
-Nun kommt noch ein Attribut, dieses ist nicht zwingend notwendig, aber es wird angezeigt, wenn die Datei nicht geladen werden kann, bzw. für Blinde ist dieses Attribut wichtig
+Nun kommt noch ein Attribut, dieses ist nicht zwingend notwendig, aber es wird angezeigt, wenn die Datei nicht geladen werden kann, bzw. für Blinde ist dieses Attribut wichtig.
 
 <code>&lt;img src="meinBild.png" alt="Alternativer Text" /&gt;</code>
 
@@ -191,4 +192,4 @@ Das zugehörige Attribut hei&szlig;t <code>href</code> (englisch: hyper referenc
 
 <code>&lt;a href="meinBild.png" alt="Alternativer Text"&gt;Text zum anklicken&lt;/a&gt;</code>
 
-Das sind nun die wichtigsten Begriffe zum Thema HTML
+Das sind nun die wichtigsten Begriffe zum Thema HTML.

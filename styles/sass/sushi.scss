@@ -36,6 +36,14 @@
 		}
 	}
 
+	ol.plain {
+		li {
+			padding-top: 0;
+			padding-bottom: 0;
+			border-top: none;
+		}
+	}
+
 	@media print {
 		/*@page {
 			margin: 1cm;
