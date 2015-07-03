@@ -64,7 +64,6 @@ Wenn du den *npm* Befehl ausgeführt hast, müsste deine Verzeichnisstruktur so 
 
 3. Einen Webserver zu programmieren ist mit Node.js nicht schwierig. Es reichen ein paar Zeilen Code. Hier sind sie. Schreibe sie in deine *server.js* Datei und achte besonders auf die enthaltenen Kommentarzeilen:
 
-        ```JavaScript
         // express und http Module importieren. Sie sind dazu da, die HTML-Dateien
         // aus dem Ordner "public" zu veröffentlichen.
         var express = require('express');
@@ -83,7 +82,6 @@ Wenn du den *npm* Befehl ausgeführt hast, müsste deine Verzeichnisstruktur so 
         app.use(express.static(__dirname + '/public'));
         
         // Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
-        ```
 
 ## Den Clientcode erstellen
 
