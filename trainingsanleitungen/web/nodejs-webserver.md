@@ -52,7 +52,7 @@ Das *http* Modul ist in Node.js immer vorhanden. *express* müssen wir installie
 
 *npm* steht für *Node.js Package Manager*, also ein Programm zum Verwalten von Node.js Paketen. Mehr über NPM kannst du [hier](https://docs.npmjs.com/ "NPM Dokumentation"){:target="_blank"} erfahren. Du brauchst aber für dieses Beispiel kein Detailwissen über NPM. Das kannst du auch gerne später nachlesen.
 
-Wenn du die beiden *npm* Befehle ausgeführt hast, müsste deine Verzeichnisstruktur so aussehen:<br/>
+Wenn du den *npm* Befehl ausgeführt hast, müsste deine Verzeichnisstruktur so aussehen:<br/>
 ![Verzeichnisstruktur Node.js Module](nodejs-webserver/nodejs-module.png)
 
 ## Den Servercode programmieren
@@ -83,7 +83,9 @@ Wenn du die beiden *npm* Befehle ausgeführt hast, müsste deine Verzeichnisstru
         
         // Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
 
-4. Noch können wir nichts ausprobieren, da unser *public* Verzeichnis leer ist. Erstelle daher im *public* Verzeichnis eine Datei namens *chat.html* und füge zum Testen folgenden Inhalt ein. Wie du siehst enthält die Datei nur eine Begrüßung, sonst nichts.
+## Den Clientcode erstellen
+
+Noch können wir nichts ausprobieren, da unser *public* Verzeichnis leer ist. Erstelle daher im *public* Verzeichnis eine Datei namens *chat.html* und füge zum Testen folgenden Inhalt ein. Wie du siehst enthält die Datei nur eine Begrüßung, sonst nichts.
 
         <!doctype html>
         <html lang="de">
@@ -96,9 +98,11 @@ Wenn du die beiden *npm* Befehle ausgeführt hast, müsste deine Verzeichnisstru
         </body>
         </html>
 
-5. Geschafft, jetzt können wir unseren Webserver ausprobieren. Starte dazu das Kommando `node server.js` in der Kommandozeile. Es müsste die Meldung erscheinen `Webserver läuft und hört auf Port 3000`.<br/>
+## Ausprobieren
+
+1. Geschafft, jetzt können wir unseren Webserver ausprobieren. Starte dazu das Kommando `node server.js` in der Kommandozeile. Es müsste die Meldung erscheinen `Webserver läuft und hört auf Port 3000`.<br/>
 ![Node.js starten](nodejs-webserver/nodejs-starten.png)
 
-6. Starte einen Webbrowser und öffne die URL `http://localhost:3000/chat.html`. Siehst du deine HTML Seite? Falls ein Fehler auftritt, bitte einen Mentor um Hilfe.
+2. Starte einen Webbrowser und öffne die URL `http://localhost:3000/chat.html`. Siehst du deine HTML Seite? Falls ein Fehler auftritt, bitte einen Mentor um Hilfe.
 
 
