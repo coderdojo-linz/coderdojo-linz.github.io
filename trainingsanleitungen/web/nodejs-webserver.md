@@ -29,13 +29,14 @@ Jetzt sind wir bereit, unseren Code zu schreiben. Bevor wir das tun, müssen wir
 
 Unser Programm braucht einen Server und einen Client. Auf beiden Seiten wollen wir JavaScript programmieren. Am Client führt der Browser JavaScript aus. Am Server gibt es dafür [Node.js](https://nodejs.org/ "Node.js Homepage"){:target="_blank"}. Um während der Entwicklung den Server lokal auf unserem Computer ausführen zu können, müssen wir Node.js installieren.
 
-1. Node.js installieren:
-	* Unter Windows kannst du einfach auf *Install* auf der [Homepage von Node.js](https://nodejs.org/ "Node.js Homepage"){:target="_blank"} klicken.
-	* Unter Linux verwendest du einen [Package Manager](https://de.wikipedia.org/wiki/Paketverwaltung "Mehr über Paketverwaltung auf Wikipedia nachlesen"){:target="_blank"} zur Installation. Anleitungen für verschiedene Arten von Linux findest du [hier](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager){:target="_blank"}.
-2. Node.js probieren:
-	* Öffne eine Kommandozeile ([Anleitung für Windows](http://praxistipps.chip.de/windows-konsole-oeffnen-so-gehts_1320){:target="_blank"}) bzw. eine Konsolenfenster ([Anleitung für Linux](http://www.pcwelt.de/ratgeber/Die_10_wichtigsten_Linux-Befehle_fuer_Einsteiger-Kommandozeile_alias_Terminal-8858519.html){:target="_blank"}).
-	* Wechsle in das von dir angelegte Verzeichnis mit dem *cd* Befehl (*Change Directory*): `cd /Code/Chat`.
-	* ![Node.js überprüfen](nodejs-webserver/nodejs-pruefen.png){: .right} Prüfe, ob Node.js funktioniert. Dazu verwendest du die beiden Befehle `node -v` und `npm -v`. Falls ein Fehler auftritt, bitte einen Mentor dir zu helfen.
+1. Node.js installieren:<br/>
+Unter Windows kannst du einfach auf *Install* auf der [Homepage von Node.js](https://nodejs.org/ "Node.js Homepage"){:target="_blank"} klicken. Unter Linux verwendest du einen [Package Manager](https://de.wikipedia.org/wiki/Paketverwaltung "Mehr über Paketverwaltung auf Wikipedia nachlesen"){:target="_blank"} zur Installation. Anleitungen für verschiedene Arten von Linux findest du [hier](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager){:target="_blank"}.
+
+2. Öffne eine Kommandozeile ([Anleitung für Windows](http://praxistipps.chip.de/windows-konsole-oeffnen-so-gehts_1320){:target="_blank"}) bzw. eine Konsolenfenster ([Anleitung für Linux](http://www.pcwelt.de/ratgeber/Die_10_wichtigsten_Linux-Befehle_fuer_Einsteiger-Kommandozeile_alias_Terminal-8858519.html){:target="_blank"}).
+
+3. Wechsle in das von dir angelegte Verzeichnis mit dem *cd* Befehl (*Change Directory*): `cd /Code/Chat`.
+
+4. ![Node.js überprüfen](nodejs-webserver/nodejs-pruefen.png){: .right} Prüfe, ob Node.js funktioniert. Dazu verwendest du die beiden Befehle `node -v` und `npm -v`. Falls ein Fehler auftritt, bitte einen Mentor dir zu helfen.
 
 Jetzt sind wir bereit, loszulegen.
 
@@ -61,6 +62,7 @@ Erstelle eine neue Datei in Visual Studio Code. Nenne sie *server.js*.
 2. Direkt neben dem Symbol für *Neue Datei* findest du das Kommando für *Neues Verzeichnis*. Lege ein Verzeichnis namens *public* an. Es wird die öffentlich sichtbaren HTML-Dateien enthalten, daher der Name *public*.
 
 3. Einen Webserver zu programmieren ist mit Node.js nicht schwierig. Es reichen ein paar Zeilen Code. Hier sind sie. Schreibe sie in deine *server.js* Datei und achte besonders auf die enthaltenen Kommentarzeilen:
+
 	// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
 	// aus dem Ordner "public" zu veröffentlichen.
 	var express = require('express');
@@ -81,6 +83,7 @@ Erstelle eine neue Datei in Visual Studio Code. Nenne sie *server.js*.
 	// Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
 
 4. Noch können wir nichts ausprobieren, da unser *public* Verzeichnis leer ist. Erstelle daher im *public* Verzeichnis eine Datei namens *chat.html* und füge zum Testen folgenden Inhalt ein. Wie du siehst enthält die Datei nur eine Begrüßung, sonst nichts.
+
 	<!doctype html>
 	<html lang="de">
 	<head>
