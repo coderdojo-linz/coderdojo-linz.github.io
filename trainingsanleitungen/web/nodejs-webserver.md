@@ -63,38 +63,40 @@ Erstelle eine neue Datei in Visual Studio Code. Nenne sie *server.js*.
 
 3. Einen Webserver zu programmieren ist mit Node.js nicht schwierig. Es reichen ein paar Zeilen Code. Hier sind sie. Schreibe sie in deine *server.js* Datei und achte besonders auf die enthaltenen Kommentarzeilen:
 
-	// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
-	// aus dem Ordner "public" zu veröffentlichen.
-	var express = require('express');
-	var app = express();
-	var server = require('http').createServer(app);
-	var port = 3000;
-	
-	// Mit diesem Kommando starten wir den Webserver.
-	server.listen(port, function () {
-		// Wir geben einen Hinweis aus, dass der Webserer läuft.
-		console.log('Webserver läuft und hört auf Port %d', port);
-	});
-	
-	// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
-	// im Ordner "public" zu finden sind.
-	app.use(express.static(__dirname + '/public'));
-	
-	// Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
+        // express und http Module importieren. Sie sind dazu da, die HTML-Dateien
+        // aus dem Ordner "public" zu veröffentlichen.
+        var express = require('express');
+        var app = express();
+        var server = require('http').createServer(app);
+        var port = 3000;
+        
+        // Mit diesem Kommando starten wir den Webserver.
+        server.listen(port, function () {
+        	// Wir geben einen Hinweis aus, dass der Webserer läuft.
+        	console.log('Webserver läuft und hört auf Port %d', port);
+        });
+        
+        // Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
+        // im Ordner "public" zu finden sind.
+        app.use(express.static(__dirname + '/public'));
+        
+        // Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
 
 4. Noch können wir nichts ausprobieren, da unser *public* Verzeichnis leer ist. Erstelle daher im *public* Verzeichnis eine Datei namens *chat.html* und füge zum Testen folgenden Inhalt ein. Wie du siehst enthält die Datei nur eine Begrüßung, sonst nichts.
 
-	<!doctype html>
-	<html lang="de">
-	<head>
-		<meta charset="UTF-8">
-		<title>CoderDojo Linz | Chat Beispiel</title>
-	</head>
-	<body>
-		<h1>Hallo Chat!</h1>
-	</body>
-	</html>
+        <!doctype html>
+        <html lang="de">
+        <head>
+            <meta charset="UTF-8">
+            <title>CoderDojo Linz | Chat Beispiel</title>
+        </head>
+        <body>
+            <h1>Hallo Chat!</h1>
+        </body>
+        </html>
 
 5. ![Node.js starten](nodejs-webserver/nodejs-starten.png){: .right} Geschafft, jetzt können wir unseren Webserver ausprobieren. Starte dazu das Kommando `node server.js` in der Kommandozeile. Es müsste die Meldung erscheinen `Webserver läuft und hört auf Port 3000`.
 
 6. Starte einen Webbrowser und öffne die URL `http://localhost:3000/chat.html`. Siehst du deine HTML Seite? Falls ein Fehler auftritt, bitte einen Mentor um Hilfe.
+
+
