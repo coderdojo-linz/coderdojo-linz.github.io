@@ -20,8 +20,8 @@ Ganz einfache HTML und JavaScript Programme kann man in einfachen Editoren wie *
 
 3. Starte Visual Studio Code.
 
-3. ![Ordner in Visual Studio Code öffnen](nodejs-webserver/vscode-ordner-oeffnen.png){: .right}
-Öffne den Ordner *C:\Code\Chat* in Visual Studio Code.
+3. Öffne den Ordner *C:\Code\Chat* in Visual Studio Code.<br/>
+![Ordner in Visual Studio Code öffnen](nodejs-webserver/vscode-ordner-oeffnen.png)
 
 Jetzt sind wir bereit, unseren Code zu schreiben. Bevor wir das tun, müssen wir aber noch weitere Vorbereitungsarbeiten durchführen.
 
@@ -36,7 +36,8 @@ Unter Windows kannst du einfach auf *Install* auf der [Homepage von Node.js](htt
 
 3. Wechsle in das von dir angelegte Verzeichnis mit dem *cd* Befehl (*Change Directory*): `cd /Code/Chat`.
 
-4. ![Node.js überprüfen](nodejs-webserver/nodejs-pruefen.png){: .right} Prüfe, ob Node.js funktioniert. Dazu verwendest du die beiden Befehle `node -v` und `npm -v`. Falls ein Fehler auftritt, bitte einen Mentor dir zu helfen.
+4. Prüfe, ob Node.js funktioniert. Dazu verwendest du die beiden Befehle `node -v` und `npm -v`. Falls ein Fehler auftritt, bitte einen Mentor dir zu helfen.<br/>
+![Node.js überprüfen](nodejs-webserver/nodejs-pruefen.png)
 
 Jetzt sind wir bereit, loszulegen.
 
@@ -51,13 +52,13 @@ Das *http* Modul ist in Node.js immer vorhanden. *express* müssen wir installie
 
 *npm* steht für *Node.js Package Manager*, also ein Programm zum Verwalten von Node.js Paketen. Mehr über NPM kannst du [hier](https://docs.npmjs.com/ "NPM Dokumentation"){:target="_blank"} erfahren. Du brauchst aber für dieses Beispiel kein Detailwissen über NPM. Das kannst du auch gerne später nachlesen.
 
-![Verzeichnisstruktur Node.js Module](nodejs-webserver/nodejs-module.png){: .right}
-Wenn du die beiden *npm* Befehle ausgeführt hast, müsste deine Verzeichnisstruktur so aussehen:
+Wenn du die beiden *npm* Befehle ausgeführt hast, müsste deine Verzeichnisstruktur so aussehen:<br/>
+![Verzeichnisstruktur Node.js Module](nodejs-webserver/nodejs-module.png)
 
 ## Den Servercode programmieren
 
-1. ![Neue Datei in Visual Studio Code](nodejs-webserver/vscode-neue-datei.png){: .right} 
-Erstelle eine neue Datei in Visual Studio Code. Nenne sie *server.js*.
+1. Erstelle eine neue Datei in Visual Studio Code. Nenne sie *server.js*.<br/>
+![Neue Datei in Visual Studio Code](nodejs-webserver/vscode-neue-datei.png)
 
 2. Direkt neben dem Symbol für *Neue Datei* findest du das Kommando für *Neues Verzeichnis*. Lege ein Verzeichnis namens *public* an. Es wird die öffentlich sichtbaren HTML-Dateien enthalten, daher der Name *public*.
 
@@ -95,7 +96,8 @@ Erstelle eine neue Datei in Visual Studio Code. Nenne sie *server.js*.
         </body>
         </html>
 
-5. ![Node.js starten](nodejs-webserver/nodejs-starten.png){: .right} Geschafft, jetzt können wir unseren Webserver ausprobieren. Starte dazu das Kommando `node server.js` in der Kommandozeile. Es müsste die Meldung erscheinen `Webserver läuft und hört auf Port 3000`.
+5. Geschafft, jetzt können wir unseren Webserver ausprobieren. Starte dazu das Kommando `node server.js` in der Kommandozeile. Es müsste die Meldung erscheinen `Webserver läuft und hört auf Port 3000`.<br/>
+![Node.js starten](nodejs-webserver/nodejs-starten.png)
 
 6. Starte einen Webbrowser und öffne die URL `http://localhost:3000/chat.html`. Siehst du deine HTML Seite? Falls ein Fehler auftritt, bitte einen Mentor um Hilfe.
 
