@@ -116,7 +116,7 @@ Geordnet schaut es so aus:
 &lt;/ol&gt;</code></pre>
 
 Das sollte im Browser dann ungefähr so dargestellt werden:
-<ol class="plain">
+<ol class='plain'>
 	<li>radfahren</li>
 	<li>Musik hören</li>
 	<li>mit Freunden spielen</li>
