@@ -103,6 +103,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente.md" />
     <Content Include="mentoren\schwarz-raphael.md" />
     <Content Include="infos\linksammlung.md" />
+    <Content Include="trainingsanleitungen\html\html-meine-erste-webseite.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
@@ -146,6 +147,7 @@
     <None Include="infos\eltern.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="trainingsanleitungen\html\html-meine-erste-webseite\" />
     <Folder Include="trainingsanleitungen\scratch\scratch-paddle-game\" />
   </ItemGroup>
   <PropertyGroup>
