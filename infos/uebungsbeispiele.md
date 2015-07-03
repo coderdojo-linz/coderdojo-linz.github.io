@@ -18,7 +18,8 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 
 ## HTML
 
-1. [Programmiere ein einfaches "Zahlen raten" Spiel mit JavaScript](/trainingsanleitungen/web/javascript-zahlen-raten.html)
+1. [Baue deine erste Webseite](/trainingsanleitungen/web/html-meine-erste-webseite.html)
+2. [Programmiere ein einfaches "Zahlen raten" Spiel mit JavaScript](/trainingsanleitungen/web/javascript-zahlen-raten.html)
 
 ## Hinweise für Mentoren
 

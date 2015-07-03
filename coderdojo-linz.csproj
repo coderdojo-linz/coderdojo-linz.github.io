@@ -75,6 +75,11 @@
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\kante-malen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\male-n-kanten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\scratch-malflaeche-initialisieren.png" />
+    <Content Include="trainingsanleitungen\web\javascript-zahlen-raten\html-javascript.png" />
+    <Content Include="trainingsanleitungen\web\javascript-zahlen-raten\html-seite.png" />
+    <Content Include="trainingsanleitungen\web\javascript-zahlen-raten\script-warnung.png" />
+    <Content Include="trainingsanleitungen\web\javascript-zahlen-raten\zahlen-raten-final.html" />
+    <Content Include="trainingsanleitungen\web\javascript-zahlen-raten\zahlen-raten.html" />
     <Content Include="_includes\footer.html" />
     <Content Include="_includes\head.html" />
     <Content Include="_includes\header.html" />
@@ -103,7 +108,8 @@
     <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente.md" />
     <Content Include="mentoren\schwarz-raphael.md" />
     <Content Include="infos\linksammlung.md" />
-    <Content Include="trainingsanleitungen\html\html-meine-erste-webseite.md" />
+    <Content Include="trainingsanleitungen\web\html-meine-erste-webseite.md" />
+    <Content Include="trainingsanleitungen\web\javascript-zahlen-raten.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
@@ -147,8 +153,8 @@
     <None Include="infos\eltern.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="trainingsanleitungen\html\html-meine-erste-webseite\" />
     <Folder Include="trainingsanleitungen\scratch\scratch-paddle-game\" />
+    <Folder Include="trainingsanleitungen\web\html-meine-erste-webseite\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
