@@ -75,6 +75,9 @@
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\kante-malen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\male-n-kanten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\scratch-malflaeche-initialisieren.png" />
+    <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\html-BrowserTitle.png" />
+    <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\html-BrowserTitleGoogle.png" />
+    <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\meine-erste-webseite.html" />
     <Content Include="trainingsanleitungen\web\javascript-zahlen-raten\html-javascript.png" />
     <Content Include="trainingsanleitungen\web\javascript-zahlen-raten\html-seite.png" />
     <Content Include="trainingsanleitungen\web\javascript-zahlen-raten\script-warnung.png" />
@@ -154,7 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="trainingsanleitungen\scratch\scratch-paddle-game\" />
-    <Folder Include="trainingsanleitungen\web\html-meine-erste-webseite\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

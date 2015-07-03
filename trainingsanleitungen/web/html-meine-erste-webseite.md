@@ -14,12 +14,12 @@ Um nun richtig anfangen zu können, beginnst Du mit einer Textdatei, die folgend
 
 <pre><code>&lt;html&gt;
 &lt;head&gt;
-&nbsp;&nbsp; &lt;meta charset=&quot;utf-8&quot;&gt;<br />
-&nbsp;&nbsp; &lt;title&gt;Beschreibung der Seite (erscheint in der Titelzeile des Browsers)&lt;/title&gt;<br />
-&nbsp; &lt;/head&gt;<br />
-&nbsp; &lt;body&gt;<br />
-&nbsp;&nbsp;&nbsp; &lt;p&gt;Dieser Text wird im Browserfenster angezeigt.&lt;/p&gt;<br />
-&nbsp; &lt;/body&gt;<br />
+&nbsp;&nbsp; &lt;meta charset=&quot;utf-8&quot;&gt;
+&nbsp;&nbsp; &lt;title&gt;Beschreibung der Seite (erscheint in der Titelzeile des Browsers)&lt;/title&gt;
+&nbsp; &lt;/head&gt;
+&nbsp; &lt;body&gt;
+&nbsp;&nbsp;&nbsp; &lt;p&gt;Dieser Text wird im Browserfenster angezeigt.&lt;/p&gt;
+&nbsp; &lt;/body&gt;
 &lt;/html&gt;</code></pre> 
  
 Wenn Du beim Anblick dieser HTML-Datei denkst: &quot;Das ist aber schön bunt!&quot; - und vielleicht sogar ein wenig enttäuscht bist, dass es bei Dir nicht so aussieht, keine Sorge! So oder so ähnlich sieht es aus, wenn eine HTML-Datei von einem richtigen HTML-Editor, also einem speziellen Programm zur Anzeige von HTML-Dateien, dargestellt wird.
@@ -44,7 +44,7 @@ Zwischen die Tags <code>&lt;head&gt;</code> und <code>&lt;/head&gt;</code> notie
 
 ## Der Titel der Seite
 
-Jede HTML-Datei muss einen Titel erhalten. Dieser Titel dient in der Praxis mehreren Zwecken, aber solange Du die Seiten nur zum Lernen und Ausprobieren auf Deinem eigenen Computer entwickelst und testest, wird für Dich erstmal wichtig sein, dass der Titel im Browser in der Titelzeile des Anzeigefensters bzw. Karteireiters (Tab) angezeigt wird. So könnte dies Beispielsweise beim Dojo so aussehen.
+Jede HTML-Datei muss einen Titel erhalten. Dieser Titel dient in der Praxis mehreren Zwecken, aber solange Du die Seiten nur zum Lernen und Ausprobieren auf Deinem eigenen Computer entwickelst und testest, wird für Dich erstmal wichtig sein, dass der Titel im Browser in der Titelzeile des Anzeigefensters bzw. Karteireiters (Tab) angezeigt wird. So könnte dies beispielsweise beim Dojo so aussehen.
 <img src="html-meine-erste-webseite/html-BrowserTitle.png" />
 
 Später, wenn Deine HTML-Datei aus dem Internet erreichbar sein wird, bekommt der Titel einer HTML-Seite sogar noch grö&szlig;ere Bedeutung:
@@ -68,15 +68,15 @@ Da wir gerade erst anfangen, wird die &Uuml;berschrift zwischen die Tags <code>&
 
 Die HTML-Datei sieht jetzt so aus:
 
-<pre><code>&lt;html&gt;<br />
-&nbsp; &lt;head&gt;<br />
-&nbsp;&nbsp; &nbsp;&lt;meta charset=&quot;utf-8&quot;&gt;<br />
-&nbsp;&nbsp;&nbsp; &lt;title&gt;CoderDojo  Linz | Meine erste Webseite &lt;/title&gt;<br />
-&nbsp; &lt;/head&gt;<br />
-&nbsp; &lt;body&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;h1&gt;Meine erste Webseite&lt;/h1&gt;<br />
-&nbsp;&nbsp;&nbsp;&lt;p&gt;Dieser Text wird im Browserfenster angezeigt.&lt;/p&gt;<br />
-&nbsp; &lt;/body&gt;<br />
+<pre><code>&lt;html&gt;
+&nbsp; &lt;head&gt;
+&nbsp;&nbsp; &nbsp;&lt;meta charset=&quot;utf-8&quot;&gt;
+&nbsp;&nbsp;&nbsp; &lt;title&gt;CoderDojo  Linz | Meine erste Webseite &lt;/title&gt;
+&nbsp; &lt;/head&gt;
+&nbsp; &lt;body&gt;
+&nbsp;&nbsp;&nbsp;&lt;h1&gt;Meine erste Webseite&lt;/h1&gt;
+&nbsp;&nbsp;&nbsp;&lt;p&gt;Dieser Text wird im Browserfenster angezeigt.&lt;/p&gt;
+&nbsp; &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
 Speichere die Datei z.B. unter dem Namen index.html ab. Du kannst jetzt z.B. auf diese Datei doppelklicken, und dann sollte diese im Standardbrowser Deines Systems geöffnet und im Browserfenster angezeigt werden. Die HTML-Datei ist eine ganz normale Textdatei, die Du mit jedem beliebigen Editor oder Browser auf dem normalen Weg öffnen und bearbeiten kannst, wie Du es auch mit anderen Dateien machst.
@@ -89,11 +89,11 @@ Du willst sicher ein paar Worte über dich schreiben. &Uuml;blicherweise wird ei
 
 Wir sind gleich durch, Schön. Was stand als nächstes auf deiner Liste? Ah ja, die Liste mit den Lieblingsbeschäftigungen. Liste hei&szlig;t auf Englisch list und man notiert sie grundsätzlich auf eine von zwei Arten: Entweder nummeriert (geordnet) oder eben nicht nummeriert (ungeordnet). Nicht nummerierte Listen haben meistens irgendein Symbol vor den einzelnen Listenpunkten; das kennst Du vermutlich aus einem Textverarbeitungsprogramm. Eine geordnete Liste (ordered list) wird bei HTML zwischen <code>&lt;ol&gt;&lt;/ol&gt;</code> notiert. Eine ungeordnete Liste (unordered list) wird zwischen <code>&lt;ul&gt;&lt;/ul&gt;</code> notiert. Jedes einzelne Element der Liste (egal, ob geordnet oder ungeordnet) wird wiederum zwischen die Tags <code>&lt;li&gt;&lt;/li&gt;</code>gesetzt. Probier es einfach mal aus:
 
-<pre><code>&lt;ul&gt;<br />
-&nbsp;&lt;li&gt;radfahren&lt;/li&gt;<br />
-&nbsp;&lt;li&gt;Musik hören&lt;/li&gt;<br />
-&nbsp;&lt;li&gt;mit Freunden spielen&lt;/li&gt;<br />
-&nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;<br />
+<pre><code>&lt;ul&gt;
+&nbsp;&lt;li&gt;radfahren&lt;/li&gt;
+&nbsp;&lt;li&gt;Musik hören&lt;/li&gt;
+&nbsp;&lt;li&gt;mit Freunden spielen&lt;/li&gt;
+&nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
 Das sollte im Browser dann ungefähr so dargestellt werden:
@@ -107,11 +107,11 @@ Das sollte im Browser dann ungefähr so dargestellt werden:
 
 Geordnet schaut es so aus:
 
-<pre><code>&lt;ol&gt;<br />
-&nbsp;&lt;li&gt;radfahren&lt;/li&gt;<br />
-&nbsp;&lt;li&gt;Musik hören&lt;/li&gt;<br />
-&nbsp;&lt;li&gt;mit Freunden spielen&lt;/li&gt;<br />
-&nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;<br />
+<pre><code>&lt;ol&gt;
+&nbsp;&lt;li&gt;radfahren&lt;/li&gt;>
+&nbsp;&lt;li&gt;Musik hören&lt;/li&gt;
+&nbsp;&lt;li&gt;mit Freunden spielen&lt;/li&gt;
+&nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
 
 Das sollte im Browser dann ungefähr so dargestellt werden:
@@ -140,17 +140,17 @@ Wir können auch die Listen verschachteln:
 
 Wie bekommt man so eine Verschachtelung hin? Ganz einfach: Die Lösung dafür ist die Liste in der Liste! Jetzt müssen wir uns ein bisschen konzentrieren, aber das bekommen wir hin: 
 
-<pre><code>&lt;ul&gt;<br />
-&nbsp;&lt;li&gt;radfahren&lt;/li&gt;<br />
-&nbsp;&lt;li&gt;Musik hören<br />
-&nbsp;&nbsp; &lt;ul&gt;<br />
-&nbsp;&nbsp; &nbsp;&lt;li&gt;Jazz&lt;/li&gt;<br />
-&nbsp;&nbsp; &nbsp;&lt;li&gt;Rock&lt;/li&gt;<br />
-&nbsp;&nbsp; &nbsp;&lt;li&gt;Pop&lt;/li&gt;<br />
-&nbsp;&nbsp; &nbsp;&lt;/ul&gt;<br />
-&nbsp;&lt;/li&gt;<br />
-&nbsp;&lt;li&gt;mit Freunden spielen&lt;/li&gt;<br />
-&nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;<br />
+<pre><code>&lt;ul&gt;
+&nbsp;&lt;li&gt;radfahren&lt;/li&gt;
+&nbsp;&lt;li&gt;Musik hören
+&nbsp;&nbsp; &lt;ul&gt;
+&nbsp;&nbsp; &nbsp;&lt;li&gt;Jazz&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&lt;li&gt;Rock&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&lt;li&gt;Pop&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&lt;/ul&gt;
+&nbsp;&lt;/li&gt;
+&nbsp;&lt;li&gt;mit Freunden spielen&lt;/li&gt;
+&nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
 Wir haben Dir eine Vorlage zusammengestellt <a href="https://raw.githubusercontent.com/coderdojo-linz/coderdojo-linz.github.io/master/trainingsanleitungen/web/html-meine-erste-webseite/meine-erste-webseite.html" target="_blank">hier</a> klicken zum Herunterladen.
