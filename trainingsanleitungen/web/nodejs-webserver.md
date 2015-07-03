@@ -4,7 +4,7 @@ title: Node.js Webserver
 description: In dieser Übung lernst du, wie du mit Node.js einen einfachen Webserver programmierst.
 ---
 
-# Einen Node.js Webserver programmieren
+# Ein Webserver mit Node.js
 
 ## Ziel der Übung
 
