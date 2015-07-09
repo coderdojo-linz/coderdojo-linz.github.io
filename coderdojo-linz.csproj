@@ -33,6 +33,7 @@
     <Content Include="images\programming.jpg" />
     <Content Include="mentoren\images\daniel-sklenitzka.jpg" />
     <Content Include="mentoren\images\elisabeth-rosemann.jpg" />
+    <Content Include="mentoren\images\gurpreet-juttla.jpg" />
     <Content Include="mentoren\images\karin-huber.jpg" />
     <Content Include="mentoren\images\peter-paul-kirschner.jpg" />
     <Content Include="mentoren\images\rainer-stropek.jpg" />
@@ -115,6 +116,7 @@
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite.md" />
     <Content Include="trainingsanleitungen\web\javascript-zahlen-raten.md" />
     <Content Include="mentoren\rosemann-elisabeth.md" />
+    <Content Include="mentoren\juttla-gurpreet.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
