@@ -115,6 +115,7 @@ Geordnet schaut es so aus:
 &nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
 
+<div class="plainOrderedList">
 Das sollte im Browser dann ungefähr so dargestellt werden:
 <ol>
 	<li>radfahren</li>
@@ -122,6 +123,7 @@ Das sollte im Browser dann ungefähr so dargestellt werden:
 	<li>mit Freunden spielen</li>
 	<li>vor dem Rechner sitzen</li>
 </ol>
+</div>
 
 
 Wir können auch die Listen verschachteln:

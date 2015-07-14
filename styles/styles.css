@@ -152,7 +152,7 @@ body.sushi ol {
     padding-bottom: 20px;
     float: right; }
 
-body.sushi ol.plain li {
+body.sushi div.plainOrderedList li {
   padding-top: 0;
   padding-bottom: 0;
   border-top: none; }
