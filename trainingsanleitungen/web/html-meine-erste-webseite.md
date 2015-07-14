@@ -116,7 +116,7 @@ Geordnet schaut es so aus:
 &lt;/ol&gt;</code></pre>
 
 <div class="plainOrderedList">
-Das sollte im Browser dann ungefähr so dargestellt werden:
+<p>Das sollte im Browser dann ungefähr so dargestellt werden:</p>
 <ol>
 	<li>radfahren</li>
 	<li>Musik hören</li>
