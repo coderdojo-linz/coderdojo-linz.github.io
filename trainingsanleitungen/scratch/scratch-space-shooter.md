@@ -26,13 +26,14 @@ Und als letzte Figur brauchst du noch einen Meteoriten.
 
 ## Skripte für das Raumschiff
 
-Das Raumschiff hat drei Aufgaben:
-
-1. Es muss erkennen, wann es von einem Meteoriten getroffen wurde und dann das Spiel beenden.
-
-2. Mit den Pfeiltasten kann es nach links und rechts bewegt werden.
-
-3. Mit den Tasten a und d kann es nach links und rechts gedreht werden.
+Das Raumschiff hat drei Aufgaben: 
+<div class="plainOrderedList">
+    <ol>
+        <li>Es muss erkennen, wann es von einem Meteoriten getroffen wurde und dann das Spiel beenden.</li>
+        <li>Mit den Pfeiltasten kann es nach links und rechts bewegt werden.</li>
+        <li>Mit den Tasten a und d kann es nach links und rechts gedreht werden.</li>
+    </ol>
+</div>
 
 ![Skripte für das Raumschiff](scratch-space-shooter/skripte-raumschiff.png)
 
