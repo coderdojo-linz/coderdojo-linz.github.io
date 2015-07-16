@@ -28,7 +28,8 @@ du neue Figuren hinzufügen kannst. Bei Thema *Sport* findest du verschiedene B�
 Als nächstes ist der Schläger dran. Diesen malen wir selbst. Dafür gibt es rechts neben dem Punkt *Figur hinzufügen* 
 einen weiteren Punkt *Figur zeichnen*. Wählen ihn aus und du bekommst rechts eine Zeichenfläche.
 
-5. Male einen einfaches Rechteck, dass den Ball daran hindern wird, am Boden aufzuschlagen. Du brauchst dazu 
+5. Male einen einfaches Rechteck, dass
+ den Ball daran hindern wird, am Boden aufzuschlagen. Du brauchst dazu 
 das Werkzeug um Rechtecke zu malen und das Werkzeug um Flächen auszufüllen.<br/><br/>
 Wenn du das Rechteck gemalt hast, kannst du es im linke Bereich auf der Bühne verschieben. Verschiebe es in den unteren Bereich 
 der Bühne, aber nicht ganz nach unten. Hier brauchen wir noch ein wenig Platz für den Bereich, in dem der Ball im *Out* ist.
