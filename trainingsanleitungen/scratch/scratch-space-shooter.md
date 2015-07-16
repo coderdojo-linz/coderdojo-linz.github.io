@@ -26,7 +26,8 @@ Und als letzte Figur brauchst du noch einen Meteoriten.
 
 ## Skripte für das Raumschiff
 
-Das Raumschiff hat drei Aufgaben: 
+Das Raumschiff hat drei Aufgaben:
+
 <div class="plainOrderedList">
     <ol>
         <li>Es muss erkennen, wann es von einem Meteoriten getroffen wurde und dann das Spiel beenden.</li>
