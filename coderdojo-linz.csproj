@@ -31,6 +31,7 @@
     <None Include="index.md" />
     <Content Include="images\binary.jpg" />
     <Content Include="images\programming.jpg" />
+    <Content Include="mentoren\images\albrecht-woess.jpg" />
     <Content Include="mentoren\images\arno-huetter.jpg" />
     <Content Include="mentoren\images\daniel-sklenitzka.jpg" />
     <Content Include="mentoren\images\elisabeth-rosemann.jpg" />
@@ -127,6 +128,7 @@
     <Content Include="mentoren\juttla-gurpreet.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter.md" />
     <Content Include="mentoren\huetter-arno.md" />
+    <Content Include="mentoren\woess-albrecht.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
