@@ -5,9 +5,7 @@ title: Termine
 
 # Termine
 
-* Freitag, 17. Juli 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ausgebucht
-<br/>Leonding, Haidfeldstraße 33
-* Freitag, 31. Juli 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195539321){:target="_blank"}
+* Freitag, 31. Juli 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ausgebucht
 <br/>Leonding, Haidfeldstraße 33
 * Freitag, 14. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195643633){:target="_blank"}
 <br/>Leonding, genauer Ort wird noch bekanntgegeben
