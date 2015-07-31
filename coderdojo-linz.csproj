@@ -37,6 +37,7 @@
     <Content Include="mentoren\images\elisabeth-rosemann.jpg" />
     <Content Include="mentoren\images\gurpreet-juttla.jpg" />
     <Content Include="mentoren\images\karin-huber.jpg" />
+    <Content Include="mentoren\images\peter-bauer.jpg" />
     <Content Include="mentoren\images\peter-paul-kirschner.jpg" />
     <Content Include="mentoren\images\rainer-stropek.jpg" />
     <Content Include="mentoren\images\raphael-schwarz.png" />
@@ -129,6 +130,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter.md" />
     <Content Include="mentoren\huetter-arno.md" />
     <Content Include="mentoren\woess-albrecht.md" />
+    <Content Include="mentoren\bauer-peter.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
