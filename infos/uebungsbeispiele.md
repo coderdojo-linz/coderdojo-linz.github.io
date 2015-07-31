@@ -20,6 +20,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 ## HTML
 
 1. [Baue deine erste Webseite](/trainingsanleitungen/web/html-meine-erste-webseite.html)
+2. [Erste Schritte mit CSS](/trainingsanleitungen/web/erste-schritte-mit-css.html)
 2. [Programmiere ein einfaches "Zahlen raten" Spiel mit JavaScript](/trainingsanleitungen/web/javascript-zahlen-raten.html)
 3. [Einen Node.js Webserver programmieren](/trainingsanleitungen/web/nodejs-webserver.html)
 4. [Programmiere einen Chat mit Node.js und Socket.io](/trainingsanleitungen/web/nodejs-socketio-chat.html)
