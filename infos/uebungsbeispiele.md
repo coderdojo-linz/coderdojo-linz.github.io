@@ -15,7 +15,9 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 3. [Erzähle eine kurze Geschichte mit Scratch](/trainingsanleitungen/scratch/scratch-geschichte-katze-und-ente.html)
 4. [Male Formen mit verschieden vielen Ecken wie Dreiecke, Vierecke oder Siebenecke](/trainingsanleitungen/scratch/scratch-n-ecke-malen.html)
 5. [Paddle Game - Lass den Ball nicht auf den Boden fallen](/trainingsanleitungen/scratch/scratch-paddle-game.html)
-5. [Space Shooter - Zerstöre die Meteoriten bevor sie dein Raumschiff zerstören](/trainingsanleitungen/scratch/scratch-space-shooter.html)
+6. [Space Shooter - Zerstöre die Meteoriten bevor sie dein Raumschiff zerstören](/trainingsanleitungen/scratch/scratch-space-shooter.html)
+7. [Zahlen raten: Wie viele Tipps brauchst du?](/trainingsanleitungen/scratch/scratch-zahlenraten.html)
+
 
 ## HTML
 
