@@ -18,9 +18,9 @@ Besonders einfach ist es mit HTML und CSS zu experimentieren, indem man die Webs
 
 1. Öffne einen Webbrowser deiner Wahl und navigiere zu [https://jsfiddle.net/](https://jsfiddle.net/){:target="_blank"}.
 
-2. Klicke rechts oben auf Login/Sign up, und lege dir einen Benutzer an. Die Anmeldung ist wichtig, damit du deine Arbeitsergebnisse speichern kannst.
+2. Klicke rechts oben auf *Login/Sign up*, und lege dir einen Benutzer an. Die Anmeldung ist wichtig, damit du deine Arbeitsergebnisse speichern kannst.
 
-3. Nach dem Anlegen des Benutzers kehre zurück zum JSFIDDLE Editor, damit wir mit der Übung beginnen können.
+3. Nach dem Anlegen des Benutzers kehre zurück zum *JSFIDDLE Editor*, damit wir mit der Übung beginnen können.
 
 ## HTML Grundgerüst
 
@@ -82,7 +82,7 @@ Unser Ziel ist folgendes Layout. Wir möchten es nur mit Hilfe von CSS erreichen
             padding-left: 60px;
         }
 
-4. Spiele mit verschiedenen Farben (siehe auch [HTML Color Picker](http://www.w3schools.com/tags/ref_colorpicker.asp){:target="_blank"}, Schriftgrößen und Abständen, indem du die CSS Elemente veränderst. Lies dazu auf [w3schools](http://www.w3schools.com/css/css_text.asp){:target="_blank"} nach, um mehr über Textformatierung, Schriftarten, Ränder etc. zu erfahren.
+4. Spiele mit verschiedenen Farben (siehe auch [HTML Color Picker](http://www.w3schools.com/tags/ref_colorpicker.asp){:target="_blank"}), Schriftgrößen und Abständen, indem du die CSS Elemente veränderst. Lies dazu auf [w3schools](http://www.w3schools.com/css/css_text.asp){:target="_blank"} nach, um mehr über Textformatierung, Schriftarten, Ränder etc. zu erfahren.
 
 ## Klassen und IDs selektieren
 
