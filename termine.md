@@ -5,12 +5,26 @@ title: Termine
 
 # Termine
 
-* Freitag, 31. Juli 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ausgebucht
-<br/>Leonding, Haidfeldstraße 33
 * Freitag, 14. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195643633){:target="_blank"}
-<br/>Leonding, genauer Ort wird noch bekanntgegeben
+<br/>Ort wird noch bekanntgegeben
 * Freitag, 28. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195644636){:target="_blank"}
-<br/>Leonding, genauer Ort wird noch bekanntgegeben
+<br/>Ort wird noch bekanntgegeben
+* Freitag, 11. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993495028){:target="_blank"}
+<br/>Ort wird noch bekanntgegeben
+* Freitag, 25. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993496031){:target="_blank"}
+<br/>Ort wird noch bekanntgegeben
+* Freitag, 09. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993497034){:target="_blank"}
+<br/>Ort wird noch bekanntgegeben
+* Freitag, 23. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993498037){:target="_blank"}
+<br/>Ort wird noch bekanntgegeben
+* Freitag, 06. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993499040){:target="_blank"}
+<br/>Ort wird noch bekanntgegeben
+* Freitag, 20. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993500043){:target="_blank"}
+<br/>Ort wird noch bekanntgegeben
+* Freitag, 04. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993501046){:target="_blank"}
+<br/>Ort wird noch bekanntgegeben
+* Freitag, 18. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993502049){:target="_blank"}
+<br/>Ort wird noch bekanntgegeben
 
 ## Was muss mitgebracht werden?
 
@@ -24,4 +38,4 @@ Die nächsten beiden Termine am 17. und 31. Juli finden im Büro der Firma [cubi
 
 <iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed/v1/place?q=Haidfeldstra%C3%9Fe%2033%2C%204060%20Leonding&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE"></iframe> 
 
-Für die weiteren Termine im August werden wir rechtzeitig vor dem jeweiligen Termin bekanntgeben, wo das Dojo stattfinden wird.
+Für die weiteren Termine werden wir rechtzeitig vor dem jeweiligen Termin bekanntgeben, wo das Dojo stattfinden wird.
