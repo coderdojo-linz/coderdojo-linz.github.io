@@ -28,9 +28,9 @@ bannerimagetext: Möchtest du Computerspiele nicht nur spielen sondern selbst pr
 		</p>
 	</div>
 	<div class="col-md-4">
-		<h3>Wann geht's los?</h3>
-		<p>Wir starten am 03. Juli, 16:00 mit dem ersten Termin in Leonding in der Welserstraße 26. <a href="/termine.html">Weitere Termine&nbsp;...</a></p>
-		<p>Wenn du Spaß und Interesse an Technik hast, dann sei dabei beim Start des CoderDojos in Linz!</p>
+		<h3>Wann?</h3>
+		<p>Wir treffen uns jeden zweiten Freitag von 16:00 bis 18:00. <a href="/termine.html">Nächste Termine&nbsp;...</a></p>
+		<p>Wenn du Spaß und Interesse an Technik hast, dann komm zum CoderDojo in Linz!</p>
 	</div>
 </div>
 
