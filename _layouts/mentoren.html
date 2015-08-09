@@ -2,9 +2,20 @@
 layout: default
 ---
 
-<h1>Unsere Mentoren</h1>
+<h1>Unsere Mentorinnen und Mentoren</h1>
+
+<h2>St&auml;ndige Mentorinnen und Mentoren</h2>
 {% for page in site.pages %}
 	{% if page.page-category == "mentor" %}
+<div class="clearfix">
+	<img src="{{ page.image }}" class="mentor-image pull-left" />
+	<h3>{{ page.title }}</h3>
+	{{ page.content }}
+</div>
+
+<h2>Gastmentorinnen und -mentoren</h2>
+{% for page in site.pages %}
+	{% if page.page-category == "guest-mentor" %}
 <div class="clearfix">
 	<img src="{{ page.image }}" class="mentor-image pull-left" />
 	<h3>{{ page.title }}</h3>
