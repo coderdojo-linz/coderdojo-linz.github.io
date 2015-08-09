@@ -9,7 +9,7 @@ layout: default
 	{% if page.page-category == "mentor" %}
 <div class="clearfix">
 	<img src="{{ page.image }}" class="mentor-image pull-left" />
-	<h3>{{ page.title }}</h3>
+	<h3><a name="{{ page.title }}">{{ page.title }}</a></h3>
 	{{ page.content }}
 </div>
 	{% endif %}
@@ -20,7 +20,7 @@ layout: default
 	{% if page.page-category == "guest-mentor" %}
 <div class="clearfix">
 	<img src="{{ page.image }}" class="mentor-image pull-left" />
-	<h3>{{ page.title }}</h3>
+	<h3><a name="{{ page.title }}">{{ page.title }}</a></h3>
 	{{ page.content }}
 </div>
 	{% endif %}
