@@ -13,6 +13,7 @@ layout: default
 	{{ page.content }}
 </div>
 	{% endif %}
+{% endfor %}
 
 <h2>Gastmentorinnen und -mentoren</h2>
 {% for page in site.pages %}
@@ -23,6 +24,7 @@ layout: default
 	{{ page.content }}
 </div>
 	{% endif %}
+{% endfor %}
 
 <!--<div class="row">
 	<div class="col-md-2 col-xs-4  mentor-image-container">
@@ -33,6 +35,5 @@ layout: default
 		{{ page.content }}
 	</div>
 </div>-->
-{% endfor %}
 
 {{ content }}
