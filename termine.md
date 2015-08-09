@@ -6,7 +6,7 @@ title: Termine
 # Termine
 
 * Freitag, 14. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195643633){:target="_blank"}
-<br/>*Gastmentorin: [Rina Ahmed](http://coderdojo-linz.github.io/mentoren.html), Microsoft*
+<br/>*Gastmentorin: [Rina Ahmed](http://coderdojo-linz.github.io/mentoren.html#Rina Ahmed), Microsoft*
 <br/>Firma ebit, Kornstraße 7A, 4060 Leonding
 * Freitag, 28. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195644636){:target="_blank"}
 <br/>Firma ebit, Kornstraße 7A, 4060 Leonding
