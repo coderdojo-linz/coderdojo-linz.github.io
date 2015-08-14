@@ -20,13 +20,14 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 8. [Fang mich - Kannst du dem Haifisch entkommen?](/trainingsanleitungen/scratch/scratch-fang-mich.html)
 9. [Breakout - Pulverisiere bunte Mauersteine](/trainingsanleitungen/scratch/scratch-breakout.html)
 
-## HTML
+## Webentwicklung (HTML, JavaScript & Co.)
 
 1. [Baue deine erste Webseite](/trainingsanleitungen/web/html-meine-erste-webseite.html)
 2. [Erste Schritte mit CSS](/trainingsanleitungen/web/erste-schritte-mit-css.html)
 2. [Programmiere ein einfaches "Zahlen raten" Spiel mit JavaScript](/trainingsanleitungen/web/javascript-zahlen-raten.html)
 3. [Einen Node.js Webserver programmieren](/trainingsanleitungen/web/nodejs-webserver.html)
 4. [Programmiere einen Chat mit Node.js und Socket.io](/trainingsanleitungen/web/nodejs-socketio-chat.html)
+5. [Ein Space Shooter mit TypeScript und Phaser.io](/trainingsanleitungen/web/space-shooter.html)
 
 ## Unity (Spieleentwicklungsplattform)
 
