@@ -47,6 +47,17 @@
     <Content Include="styles\dependencies.css" />
     <Content Include="styles\images\coderdojo.png" />
     <Content Include="styles\styles.css" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\01-choose-background.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\02-delete-scratchy.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\03-create-figures.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\04-center-sprites.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\05-ball-sprites.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\06-block-sprites.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\07-add-sounds.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\08-paddle-scripts.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\09-ball-script.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\10-block-scripts.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\11-done.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\ereignisse.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\erste-schritte-scratchy.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\mehrere-quadrate.png" />
@@ -55,6 +66,16 @@
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\scratchy-geht-im-kreis.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\scratchy-malt.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\wische-malspuren-weg.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\01-background.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\02-delete-scratchy.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\03-fish.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\04-resize.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\05-fish-center.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\06-rename.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\07-move-fish.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\08-move-shark.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\09-touch-fish.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich\10-touch-shark.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\buehnenbild-hinzufuegen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\buehnenbild-wechseln.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-geschichte-katze-und-ente\figur-auswaehlen.png" />
@@ -87,6 +108,14 @@
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\skripte-meteoriten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\skripte-raumschiff.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\space-shooter.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\01-variable.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\03-versuche-uebrig.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\04-versuche-uebrig.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\07-falls.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\08-falls.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\09-kleiner.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\10-liste.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\11-liste.PNG" />
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\html-BrowserTitle.png" />
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\html-BrowserTitleGoogle.png" />
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\meine-erste-webseite.html" />
@@ -131,6 +160,9 @@
     <Content Include="mentoren\huetter-arno.md" />
     <Content Include="mentoren\woess-albrecht.md" />
     <Content Include="mentoren\bauer-peter.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-fang-mich.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
