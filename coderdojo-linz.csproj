@@ -122,6 +122,30 @@
     <Content Include="trainingsanleitungen\touch-develop\erste-schritte\4.PNG" />
     <Content Include="trainingsanleitungen\touch-develop\erste-schritte\5.PNG" />
     <Content Include="trainingsanleitungen\touch-develop\erste-schritte\6.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\2-1.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\2-2.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\2-3.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\2-4.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\2-5.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\3-1.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\3-2.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\3-3.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\3-4.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\3-5.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\3-6.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\3-7.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\4-1.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\4-2.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\4-3.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\4-4.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\4-5.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\4-6.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\5-1.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\5-2.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\6-1.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\6-2.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\6-3.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel\6-4.PNG" />
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\bildschirmaufbau-unity.png" />
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\fertiges-spiel.png" />
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\script-in-visual-studio.png" />
@@ -175,6 +199,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-breakout.md" />
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity.md" />
     <Content Include="trainingsanleitungen\touch-develop\erste-schritte.md" />
+    <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
