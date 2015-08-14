@@ -22,8 +22,8 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 
 ## TouchDevelop
 
-1. [Erste Schritte - Lerne die Arbeitsumgebung von TouchDevelop kennen][/trainingsanleitungen/touch-develop/erste-schritte.html]
-2. [Seifenblasen Spiel - Lass Seifenblasen zerplatzen][/trainingsanleitungen/touch-develop/seifenblasen-spiel.html]
+1. [Erste Schritte - Lerne die Arbeitsumgebung von TouchDevelop kennen](/trainingsanleitungen/touch-develop/erste-schritte.html)
+2. [Seifenblasen Spiel - Lass Seifenblasen zerplatzen](/trainingsanleitungen/touch-develop/seifenblasen-spiel.html)
 
 ## Webentwicklung (HTML, JavaScript & Co.)
 
