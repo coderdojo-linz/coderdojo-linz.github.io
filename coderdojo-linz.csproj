@@ -116,6 +116,16 @@
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\09-kleiner.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\10-liste.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\11-liste.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\erste-schritte\1.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\erste-schritte\2-signin.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\erste-schritte\3.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\erste-schritte\4.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\erste-schritte\5.PNG" />
+    <Content Include="trainingsanleitungen\touch-develop\erste-schritte\6.PNG" />
+    <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\bildschirmaufbau-unity.png" />
+    <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\fertiges-spiel.png" />
+    <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\script-in-visual-studio.png" />
+    <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\unity-mit-visual-studio-verbinden.png" />
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\html-BrowserTitle.png" />
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\html-BrowserTitleGoogle.png" />
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\meine-erste-webseite.html" />
@@ -163,6 +173,8 @@
     <Content Include="trainingsanleitungen\scratch\scratch-fang-mich.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-breakout.md" />
+    <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity.md" />
+    <Content Include="trainingsanleitungen\touch-develop\erste-schritte.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
