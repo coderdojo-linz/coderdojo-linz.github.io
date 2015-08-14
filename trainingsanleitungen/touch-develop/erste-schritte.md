@@ -1,7 +1,7 @@
 ---
 layout: sushi
 title: Erste Schritte mit TouchDevelop
-description: TouchDevelop ist eine Webseite, auf der man Spiele entwickeln kann. Du kannst auf die Webseite von jedem Web Browser auf deinem PC, Laptop, Tablet oder Handy aus zugreifen.
+description: Lerne die Arbeitsumgebung von TouchDevelop kennen
 ---
 
 #Erste Schritte mit TouchDevelop
@@ -18,7 +18,6 @@ Die Spiele in TouchDevelop werden in einer eigenen Sprache geschrieben. Diese Sp
 
 Jeder kann auf TouchDevelop auch ohne Anmeldung sofort loslegen, Spiele zu entwickeln. Wenn du dich aber in TouchDevelop anmeldest, dann kannst du deine Spiele auch speichern und später wieder bearbeiten. Wenn du mehrere Spiele schreibst, hast du so alle deine Spiele an einer Stelle gesammelt und gespeichert. Wir wollen uns daher anmelden. 
 
-
 ### 1. Die Webseite öffnen
 
 Wir öffnen einen Browser und navigieren zur Seite [www.touchdevelop.com](http://www.touchdevelop.com). 
@@ -27,7 +26,7 @@ Wir öffnen einen Browser und navigieren zur Seite [www.touchdevelop.com](http:/
 
 ![alt text](erste-schritte/1.PNG "Launch Button klicken")
 
-Jetzt öffnet sich die Seite, wo wir unsere Spiele schreiben können. Ihr seid einige Abschnitte auf dieser Seite. Die interessantesten sind **Meine Skripte** und **tutorials**. Im ersten Abschnitt seht ihr alle eure gespeicherten Spiele, wenn ihr angemeldet seid. Im Abschnitt **tutorials** seht ihr verschiedene Kurse, wo ihr beispielhafte Spiele nachbauen kömmt. 
+Jetzt öffnet sich die Seite, wo wir unsere Spiele schreiben können. Ihr seht einige Abschnitte auf dieser Seite. Die interessantesten sind **Meine Skripte** und **tutorials**. Im ersten Abschnitt seht ihr alle eure gespeicherten Spiele, wenn ihr angemeldet seid. Im Abschnitt **tutorials** seht ihr verschiedene Kurse, wo ihr beispielhafte Spiele nachbauen kömmt. 
 
 ### 3. *Sign In* Button klicken
 

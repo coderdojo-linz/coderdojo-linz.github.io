@@ -20,6 +20,11 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 8. [Fang mich - Kannst du dem Haifisch entkommen?](/trainingsanleitungen/scratch/scratch-fang-mich.html)
 9. [Breakout - Pulverisiere bunte Mauersteine](/trainingsanleitungen/scratch/scratch-breakout.html)
 
+## TouchDevelop
+
+1. [Erste Schritte - Lerne die Arbeitsumgebung von TouchDevelop kennen][/trainingsanleitungen/touch-develop/erste-schritte.html]
+2. [Seifenblasen Spiel - Lass Seifenblasen zerplatzen][/trainingsanleitungen/touch-develop/seifenblasen-spiel.html]
+
 ## Webentwicklung (HTML, JavaScript & Co.)
 
 1. [Baue deine erste Webseite](/trainingsanleitungen/web/html-meine-erste-webseite.html)

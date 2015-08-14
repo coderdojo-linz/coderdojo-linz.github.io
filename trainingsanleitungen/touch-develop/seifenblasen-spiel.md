@@ -1,10 +1,10 @@
 ---
 layout: sushi
 title: Seifenblasen Spiel
-description: TouchDevelop ist eine Webseite, auf der man Spiele entwickeln kann. Du kannst auf die Webseite von jedem Web Browser auf deinem PC, Laptop, Tablet oder Handy aus zugreifen.
+description: Lass Seifenblasen zerplatzen
 ---
 
-#Spielvorbereitung: Seifenblasen zerplatzen
+#Seifenblasen Spiel
 
 ## Vorbereiten des Skripts
 
