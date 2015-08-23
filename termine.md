@@ -5,9 +5,8 @@ title: Termine
 
 # Termine
 
-* Freitag, 14. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195643633){:target="_blank"}
-<br/>Firma ebit, Kornstraße 7A, 4060 Leonding
 * Freitag, 28. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195644636){:target="_blank"}
+<br/>*Gastmentoren: [Oliver Lintner](http://coderdojo-linz.github.io/mentoren.html#Oliver Lintner) und [Andreas Schabus](http://coderdojo-linz.github.io/mentoren.html#Andreas Schabus), Microsoft*
 <br/>Firma ebit, Kornstraße 7A, 4060 Leonding
 * Freitag, 11. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993495028){:target="_blank"}
 <br/>Wissensturm, Kärntnerstraße 26, 4020 Linz
@@ -34,7 +33,7 @@ Falls kein Laptop zur Verfügung steht, nehmen Sie bitte mit uns [Kontakt](http:
 
 ## Ort
 
-Die nächsten beiden Termine am 14. und 28. August finden im Büro der Firma [ebit](http://www.ebit.at/){:target="_blank"} in der Kornstraße 7A, 4060 Leonding statt. Wir bedanken uns herzlich, dass wir den Besprechungsraum in Beschlag nehmen dürfen!
+Der nächste Termin am 28. August findet im Büro der Firma [ebit](http://www.ebit.at/){:target="_blank"} in der Kornstraße 7A, 4060 Leonding statt. Wir bedanken uns herzlich, dass wir den Besprechungsraum in Beschlag nehmen dürfen!
 
 <iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed/v1/place?q=Kornstra%C3%9Fe%207a%2C%204060%20Leonding&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE"></iframe> 
 

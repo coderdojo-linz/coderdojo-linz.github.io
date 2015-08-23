@@ -16,16 +16,27 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 4. [Male Formen mit verschieden vielen Ecken wie Dreiecke, Vierecke oder Siebenecke](/trainingsanleitungen/scratch/scratch-n-ecke-malen.html)
 5. [Paddle Game - Lass den Ball nicht auf den Boden fallen](/trainingsanleitungen/scratch/scratch-paddle-game.html)
 6. [Space Shooter - Zerstöre die Meteoriten bevor sie dein Raumschiff zerstören](/trainingsanleitungen/scratch/scratch-space-shooter.html)
-7. [Zahlen raten: Wie viele Tipps brauchst du?](/trainingsanleitungen/scratch/scratch-zahlenraten.html)
+7. [Zahlen raten - Wie viele Tipps brauchst du?](/trainingsanleitungen/scratch/scratch-zahlenraten.html)
+8. [Fang mich - Kannst du dem Haifisch entkommen?](/trainingsanleitungen/scratch/scratch-fang-mich.html)
+9. [Breakout - Pulverisiere bunte Mauersteine](/trainingsanleitungen/scratch/scratch-breakout.html)
 
+## TouchDevelop
 
-## HTML
+1. [Erste Schritte - Lerne die Arbeitsumgebung von TouchDevelop kennen](/trainingsanleitungen/touch-develop/erste-schritte.html)
+2. [Seifenblasen Spiel - Lass Seifenblasen zerplatzen](/trainingsanleitungen/touch-develop/seifenblasen-spiel.html)
+
+## Webentwicklung (HTML, JavaScript & Co.)
 
 1. [Baue deine erste Webseite](/trainingsanleitungen/web/html-meine-erste-webseite.html)
 2. [Erste Schritte mit CSS](/trainingsanleitungen/web/erste-schritte-mit-css.html)
 2. [Programmiere ein einfaches "Zahlen raten" Spiel mit JavaScript](/trainingsanleitungen/web/javascript-zahlen-raten.html)
 3. [Einen Node.js Webserver programmieren](/trainingsanleitungen/web/nodejs-webserver.html)
 4. [Programmiere einen Chat mit Node.js und Socket.io](/trainingsanleitungen/web/nodejs-socketio-chat.html)
+5. [Ein Space Shooter mit TypeScript und Phaser.io](/trainingsanleitungen/web/space-shooter.html)
+
+## Unity (Spieleentwicklungsplattform)
+
+1. [Erste Schritte mit Unity](/trainingsanleitungen/unity/erste-schritte-mit-unity.html)
 
 ## Änderungen und Ergänzungen
 
