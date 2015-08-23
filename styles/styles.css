@@ -81,8 +81,7 @@ a, a:hover, a:focus {
   .container-banner-image img {
     width: 100%;
     height: auto;
-    min-height: 170px;
-    opacity: 0.8; }
+    min-height: 170px; }
 
 .banner-image-content {
   position: absolute;
