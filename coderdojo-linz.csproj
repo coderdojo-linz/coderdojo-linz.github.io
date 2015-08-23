@@ -30,6 +30,7 @@
     <Content Include="Gulpfile.js" />
     <None Include="index.md" />
     <Content Include="images\binary.jpg" />
+    <Content Include="images\coderdojo-banner-1.jpg" />
     <Content Include="images\programming.jpg" />
     <Content Include="mentoren\images\albrecht-woess.jpg" />
     <Content Include="mentoren\images\arno-huetter.jpg" />
