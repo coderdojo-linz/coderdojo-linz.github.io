@@ -2,7 +2,6 @@
 layout: default
 title: Über uns
 bannerimage: /images/coderdojo-banner-1.jpg
-bannerimagetext: Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren? Dann bist du richtig beim CoderDojo!
 ---
 
 <div id="fb-root"></div>
@@ -16,9 +15,9 @@ bannerimagetext: Möchtest du Computerspiele nicht nur spielen sondern selbst pr
 
 <div class="row">
 	<div class="col-md-8">
-		<h1>Das CoderDojo startet in Linz!</h1>
+		<h1>Lerne programmieren im CoderDojo Linz</h1>
 
-		<p><b>CoderDojos gibt es bereits an mehr als 650 Standorten in 57 Ländern. Diesen Sommer starten wir auch in Linz!</b></p>
+		<p><b>Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren? Dann bist du richtig beim CoderDojo!</b></p>
 
 		<h3>Was ist ein CoderDojo?</h3>
 		<p>

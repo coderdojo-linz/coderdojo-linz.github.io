@@ -74,14 +74,14 @@ a, a:hover, a:focus {
 .container-banner-image {
   width: 100%;
   height: auto;
-  min-height: 170px;
+  min-height: 100px;
   max-height: 25vh;
   overflow: hidden;
   position: relative; }
   .container-banner-image img {
     width: 100%;
     height: auto;
-    min-height: 170px; }
+    min-height: 100px; }
 
 .banner-image-content {
   position: absolute;

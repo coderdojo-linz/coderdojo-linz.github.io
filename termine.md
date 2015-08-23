@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Termine
+bannerimage: /images/coderdojo-banner-3.jpg
 ---
 
 # Termine
