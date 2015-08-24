@@ -32,7 +32,8 @@ public class FirstPlugin extends JavaPlugin {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        sender.sendMessage("Hello stranger");
+        // sender.sendMessage("Hello stranger");
+        sender.sendMessage("Hello " + sender.getName());
         return true;
     }
     
