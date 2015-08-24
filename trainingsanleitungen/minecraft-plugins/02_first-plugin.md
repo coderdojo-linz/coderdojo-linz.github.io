@@ -67,6 +67,14 @@ Jetzt solltest du in NetBeans ziemlich genau dieses Bild vor dir haben:
 
 ![New Class Step 2](02_first-plugin/NewClassStep3.png)
 
+Die grauen Zeilen am Anfang des Files sehen wahrscheinlich ein wenig anders aus. Das macht aber nix, weil das ist ein Kommentar und Kommentare werden vom Compiler ignoriert. Man verwendet Kommentare, um etwas in sein Programm reinzuschreiben, das für Menschen wichtig ist, aber nicht für Computer. Du kannst das ausprobieren und in einer Zeile *außerhalb* eines Kommentars folgende Zeilen dazuschreiben:
+
+    /*
+    Ich kann so schreiben wie ich bin. Du darfst.
+    */
+    
+Wenn du jetzt aber die Zeichen ``/*`` und ``*/`` wegnimmst, dann wirst du sehen, dass der Text, den du geschrieben hast, rot unterstrichen ist und das bedeutet, dass der Compiler in deinem Java-Programm einen Fehler entdeckt hat. Also schließen wir daraus, dass mit ``/*`` ein Kommentar beginnt und so lange ist, bis die Zeichen ``*/`` vorkommen.
+
 ## Die Klasse programmieren
 Nun müssen wir dieser Klasse als erstes mal mitteilen, dass sie ein Plugin werden soll. Das machen wir indem wir in der Zeile mit ``public class FirstPlugin {`` folgendes dazuschreibst:
 
@@ -93,17 +101,18 @@ Und weils grad so lustig ist, kommt gleich noch ein Fenster, in welchem wir die 
 
 ![Add onCommand](02_first-plugin/AddOnCommandStep3.png)
 
-Wenn du dann auf **Generate** klickst, siehst du in deiner Klasse eine erste Methode. Hier legen wir fest, was das Plugin machen soll. Dazu löschen wir als erstes die Zeile mit ``return super.onCommand(sender, command, label, args)`` und schreiben folgendes rein:
+Wenn du dann auf **Generate** klickst, siehst du in deiner Klasse eine erste *Methode*. In einer Methode legst du fest, was das Plugin machen soll. Dazu löschst du als erstes die Zeile mit ``return super.onCommand(sender, command, label, args)`` und schreibst stattdessen folgendes rein:
 
-    @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         sender.sendMessage("Hello stranger");
         return true;
-    }
 
 Am Ende sollte deine Klasse genau so aussehen:
 
-Ok, damit sind wir beinah durch. Was uns noch fehlt ist, dass wir für Minecraft erkenntlich machen, wie das Plugin heißt und auf welches Kommando es reagiert. Das machen wir im ``plugin.yml``.
+![Add onCommand](02_first-plugin/AddOnCommandStep4.png)
+
+Wenn du dich ein wenig umsiehst, wirst du merken, dass zum Import von ``org.bukkit.plugin.java.JavaPlugin`` noch ein paar weitere Imports dazugekommen sind und dann eben die *Methode* ``onCommand``. Wenn du das noch nicht verstehst, mach dir keine Sorgen. Wir kommen darauf zurück. 
+
+Jetzt wollen wir aber so schnell wie möglich durch und unser Plugin zum Laufen bekommen. Was uns noch fehlt ist, dass wir für Minecraft erkenntlich machen, wie das Plugin heißt und auf welches Kommando es reagiert. Das machen wir im ``plugin.yml``.
 
 ## Das ``plugin.yml`` anlegen, das Projekt bauen und testen
 Im ``plugin.yml`` schreiben wir alles das rein, das Minecraft braucht, um unser Plugin zu erkennen und im richtigen Moment auch aufrufen zu können. Dazu legen wir das File zuerst einmal an. Überraschenderweise klickst du wieder mit der rechten Maustaste auf das **Source Package** und wählst **New** und **YAML File...** aus. Falls du diesen Eintrag nicht findest, wählst du im Menü ganz unten **Other...** aus und wählst aus der Kategorie **Other** den Punkt **YAML File** aus.
@@ -127,34 +136,61 @@ Jetzt haben wir wieder ein leeres File und dürfen hier die notwendigen Informat
 
 Bevor du beginnst, das abzuschreiben, lies dir die folgenden Punkte bitte durch: Als erstes achte bitte darauf, dass nach den Doppelpunkten immer unbedingt ein Leerzeichen kommen muss.
 
-1. name ist eben der Name und kann beliebig gewählt werden. Sinnvollerweise nennen wir unser Plugin so, wie wir auch das Projekt genannt haben.
-2. **Aufpassen!** In dieser Zeile legen wir fest, in welcher Klasse das Plugin implementiert ist. Und zwar müssen wir das inklusive dem Package-Namen angeben. Vergleiche die Zeile mit ``main`` mit der Darstellung des Packages und der Klasse im Bild darüber. Die siehst, dass das übereinstimmt (bis auf ``.java``.)
-3. version ist eben die Verion. Das darfst du dir aussuchen.
-4. authors ist eine Liste der Authoren, die untereinander stehen und mit einem Minus (-) anfangen. Hier musst du darauf achten, dass die Zeilen mit den Listeneinträgen ein paar Leerzeichen (**Achtung: keine Tabs**) eingerückt sind.
-5. description beschreibt das Plugin. Hier kannst du deiner Fantasie wieder freien Lauf lassen.
-6. commands listet alle Kommandos, auf die das Plugin reagiert auf und gibt eine kurze Beschreibung und einen Benutzungshinweis an. Wir wollen, dass unser Plugin auf das Kommando ``/sayhello`` reagiert. Daher haben wir genau dieses Kommando angegeben. Auch hier achte wieder auf die Einrückungen. Diesmal sind es sogar zwei bei description und usage.
+1. **name** ist eben der Name und kann beliebig gewählt werden. Sinnvollerweise nennen wir unser Plugin so, wie wir auch das Projekt genannt haben.
+2. In **main** legen wir fest, in welcher Klasse das Plugin implementiert ist. Und zwar müssen wir das inklusive dem Package-Namen angeben. Vergleiche die Zeile mit ``main`` mit der Darstellung des Packages und der Klasse im Bild darüber. Du siehst, dass das übereinstimmt (bis auf ``.java``).
+3. **version** ist eben die Verion. Das darfst du dir aussuchen.
+4. **authors** ist eine Liste der Authoren, die untereinander stehen und mit einem Minus (-) anfangen. Hier musst du darauf achten, dass die Zeilen mit den Listeneinträgen ein paar Leerzeichen (**Achtung: keine Tabs**) eingerückt sind.
+5. **description** beschreibt das Plugin. Hier kannst du deiner Fantasie wieder freien Lauf lassen.
+6. **commands** listet alle Kommandos, auf die das Plugin reagiert auf und gibt eine kurze Beschreibung und einen Benutzungshinweis an. Wir wollen, dass unser Plugin auf das Kommando ``/sayhello`` reagiert. Daher haben wir genau dieses Kommando angegeben. Auch hier achte wieder auf die Einrückungen. Diesmal sind es sogar zwei bei description und usage.
 
 Damit bist du jetzt wirklich fertig und kannst das gesamte Projekt bauen. Dazu klickst du auf den Hammer in der **Toolbar**:
 
-![Add onCommand](02_first-plugin/Toolbar.png)
+![Toolbar](02_first-plugin/Toolbar.png)
 
 Daraufhin sollte im **Information Panel** im Tab **Output** ca. folgende Information stehen:
 
-![Add onCommand](02_first-plugin/BuildOutput.png)
+![Output of the build run](02_first-plugin/BuildOutput.png)
 
-Der wichtigste Punkt ist die letzte Zeile, in der auf jeden Fall ``BUILD SUCCESSFULL`` stehen muss. Damit ist nämlich klar, dass dein Projekt korrekt ist und übersetzt werden kann.
+Der wichtigste Punkt ist die letzte Zeile, in der auf jeden Fall ``BUILD SUCCESSFULL`` stehen muss. Damit ist nämlich klar, dass dein Projekt korrekt ist und vom übersetzt werden kann.
 
-Um dein Plugin auszurprobieren musst du im File-Explorer (Windows) oder Finder (Mac) in dein NetBeans Projekt-Directory reinsehen. Dort sollte sich nun ein weiteres Directory ``dist`` befinden, in dem sich wiederum ein File ``FirstPlugin.jar`` befinden sollte. Dieses nimmst du nun und bewegst es in das Directory ``plugins`` des Server-Directories, das du noch aus unserer ersten Episode kennst.
+Um dein Plugin auszuprobieren musst du im File-Explorer (Windows) oder Finder (Mac) in dein NetBeans Projekt-Directory reinsehen. Dort sollte sich nun ein weiteres Directory ``dist`` befinden, in dem sich wiederum ein File ``FirstPlugin.jar`` befinden sollte. Dieses nimmst du nun und bewegst es in das Directory ``plugins`` des Server-Directories, das du noch aus unserer ersten Episode kennst.
 
 Nun kannst du den Server starten. Als erstes überprüfen wir, ob das Plugin korrekt geladen wurde. Das sehen wir im Log des Servers, wenn er hochstaret.
 
-Abschließend kannst du testen, indem du das Kommando ``sayhello`` in der Konsole eingibst. Der Server sollte mit ``Hello stranger`` antworten. Auch kannst du noch ins Spiel gehen und dort den Befehl mit Slash ``/sayhello`` eingeben. Auch ier sollte der Server mit einem freundlichen ``Hello stranger`` antworten.
+Abschließend kannst du testen, indem du das Kommando ``sayhello`` in der Konsole eingibst. Der Server sollte mit ``Hello stranger`` antworten. Auch kannst du noch ins Spiel gehen und dort den Befehl mit Slash ``/sayhello`` eingeben. Auch hier sollte der Server mit einem freundlichen ``Hello stranger`` antworten.
 
-## Eine erste Erweiterung
-Nur im Spiel und nicht in der Konsole
+## Eine Erweiterung
+Apropos freundlich. Jemanden mit "Stranger" zu begrüßen ist in Bezug auf Freundlichkeit sicherlich noch ausbaufähig. Da das Bukkit-API uns die Möglichkeit gibt, den Namen des Spielers (also den Minecraft-Namen natürlich) rauszufinden, werden wir das benutzen um den Spieler wirklich freundlich mit Namen zu begrüßen.
 
-## Eine zweite Erweiterung
-Name des Spielers statt stranger.
+Dazu gehen wir wieder ins NetBeans und zur Methode ``onCommand`` unseres Plugins. Weil grad Zeit ist, sehen wir uns den Code der Methode ein wenig genauer an.
+
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        sender.sendMessage("Hello stranger");
+        return true;
+    }
+
+Also der Reihe nach:
+
+* In der ersten Zeile fällt in der Mitte eben der Name ``onCommand`` auf. **Wir merken uns**: Jede Methode hat einen Namen.
+* Nach dem Namen ist eine Klammer auf, die kurz vor Ende der Zeile auch wieder zu geht. **Wir merken uns**: Jede Methode hat gleich nach dem Namen eine Klammer auf und auch wieder eine Klammer zu.
+* Das zwischen diesen Klammern nennt man *Parameter*. Mit diesen kann man einer Methode Informationen geben, die sie für ihre Arbeit braucht. Du siehst bei der Methode ``onCommand`` oben, dass sie einen Parameter ``sender`` hat. Damit ist der "Absender" des Kommandos, also die Spielerin, die ``/sayhello`` eingetippt hat, gemeint.
+* Am Ende der Zeile ist eine geschwungene Klammer auf (``{``), die drei Zeilen später auch wieder geschlossen wird. Zwischen diesen Klammern steht drinnen, was die Methode jetzt wirklich macht. Das sind in unserem Fall zwei Dinge und da sehen wir uns grad mal die erste Zeile an: ``sender.sendMessage("Hello stranger");``: Wir wissen schon von oben: ``sender`` ist der Absender des Kommandos. Nach dem Punkt kannst du alle die Methoden hinschreiben, die ein Sender "versteht". ``sendMessage`` ist offensichtlich eine Methode, die einen Text ausgibt. Diese Methode hat ebenfalls einen Parameter, nämlich den Text, den wir gerne ausgegeben hätten.
+
+Gut, mit diesem Wissen können wir uns sammeln und kurz überlegen, was wir brauchen, damit wir den Sender mit seinem Minecraft-Namen begrüßen können.
+
+1. Wir brauchen eine Möglichkeit den Namen rauszufinden. Das geht mit der Methode ``sender.getName()``. Du siehst, diese Methode braucht keine Parameter. Daher kommt nach der Klammer auf, sofort wieder eine Klammer zu.
+2. Damit wären wir bei ``sender.sendMessage(sender.getName())``. Aber was ist mit dem "Hello", damit unsere Begrüßung auch wirklich freundlich wird?
+3. Daher brauchen wir eine Möglickeit zwei Texte (also "Hello" und den Minecraft-Namen der Spielerin) zusammenzukleben. Das geht in Java mit dem Zeichen +. Also ergibt zum Beispiel ``"Ich " + "programmiere " + "Java"`` den Text ``"Ich programmiere Java"``.
+4. Also müssen wir die Zeile noch folgendermaßen erweitern: ``sender.sendMessage("Hello " + sender.getName());``.
+
+Nun sind wir schon wieder fertig. Wie oben musst du das Projekt wieder bauen (weißt schon, der Hammer in der Toolbar) und dann legst du am besten in deinem Verzeichnis ``plugins`` im Verzeichnis``bukkitServer`` ein weiteres Verzeichnis mit Namen ``update`` an. Dorthinein kopierst du jetzt das jar-File. Abschließend gehst du in die Console, in der du den Server gestartet hast und tippst einfach ``reload``. Dann sollte das Plugin neu geladen sein und du kannst es ausprobieren.
+
+
+### Großeltern-Imponier-Wissen
+* Texte nennt man in der Informatik Zeichenketten oder auf Englisch: Strings
+
+
+
 
 ## Zusammenfassung für Profis
 1. Neues Projekt anlegen
@@ -165,4 +201,5 @@ Name des Spielers statt stranger.
 6. Methode ``onCommand`` zur Klasse geben
 7. ``plugin.yml`` zum Projekt hinzufügen
 8. Bauen
-9. Fertiges jar File aus ``dist`` in das Plugins-Verzeichnis kopieren
+9. Fertiges jar File aus ``dist`` in das Plugins-Verzeichnis kopieren (oder update-Verzeichnis, wenn das Plugin bereits geladen wurde)
+10. Server starten oder ``reload`` eingeben
