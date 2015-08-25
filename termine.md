@@ -6,7 +6,7 @@ bannerimage: /images/coderdojo-banner-3.jpg
 
 # Termine
 
-* Freitag, 28. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195644636){:target="_blank"}
+* Freitag, 28. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ausgebucht
 <br/>*Gastmentoren: [Oliver Lintner](http://coderdojo-linz.github.io/mentoren.html#Oliver Lintner) und [Andreas Schabus](http://coderdojo-linz.github.io/mentoren.html#Andreas Schabus), Microsoft*
 <br/>Firma ebit, Kornstraße 7A, 4060 Leonding
 * Freitag, 11. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993495028){:target="_blank"}
