@@ -101,6 +101,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\kante-malen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\male-n-kanten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\scratch-malflaeche-initialisieren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-snake\snake-game.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\laser.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\meteroit.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\raumschiff.png" />
@@ -200,6 +201,7 @@
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity.md" />
     <Content Include="trainingsanleitungen\touch-develop\erste-schritte.md" />
     <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-snake.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
