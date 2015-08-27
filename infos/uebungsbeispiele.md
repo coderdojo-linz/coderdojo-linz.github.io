@@ -19,6 +19,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 7. [Zahlen raten - Wie viele Tipps brauchst du?](/trainingsanleitungen/scratch/scratch-zahlenraten.html)
 8. [Fang mich - Kannst du dem Haifisch entkommen?](/trainingsanleitungen/scratch/scratch-fang-mich.html)
 9. [Breakout - Pulverisiere bunte Mauersteine](/trainingsanleitungen/scratch/scratch-breakout.html)
+10. [Snake - Lass die Schlange die Äpfel aufsammeln](/trainingsanleitungen/scratch/scratch-snake.html)
 
 ## TouchDevelop
 
