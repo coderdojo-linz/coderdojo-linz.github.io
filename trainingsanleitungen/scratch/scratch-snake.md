@@ -8,32 +8,34 @@ description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Ran
 
 Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auch, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
 
-![Snake Game](scratch-snake/snake-game.png){: .right}
+![Snake Game](scratch-snake/snake-game.png)
+
 Das Spiel besteht aus 3 Figuren und 14 Skripten. In der folgenden Anleitung findest du einige Fragezeichen in den Skripten. Hier bist du gefordert, die richtige Lösung zu finden!
 
 Wenn du noch keine Idee hast, welche Bausteine hier fehlen könnten, findest am Ende der Anleitung die vollständigen Skripte.
 
 ## Figuren anlegen
 
-1. ![Figur löschen](scratch-fang-mich/02-delete-scratchy.png){: .right}
+1. ![Figur löschen](scratch-snake/figur-loeschen.png){: .right}
 Lösche als erstes die Figur Scratchy mit dem Namen *Sprite1* indem du mit der rechten Maustaste darauf klickst. 
 Im angezeigten Menü kannst du Scratchy löschen.
 
-2. ![Figuren hinzufügen](scratch-fang-mich/03-fish.png){: .right}
-Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke dazu auf *Figur aus der Bibliothek wählen* und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonläuft oder eine Person die dem Löwen davon läuft.
+2. ![Schlange hinzufügen](scratch-snake/figur-schlange.png){: .right}
+Die Schlange besteht aus zwei Kostümen - dem Kopf und dem Körper. Wir wollen, dass sich die Schlange später in 20iger Schritten bewegt. Die Figur darf daher nicht größer als 20 sein. 
+Eine Ausnahme ist die Zunge, die darf etwas länger sein.
 
-2. ![Fisch verkleinern](scratch-fang-mich/04-resize.png){: .right}
-Damit der kleine Fisch auch kleiner ist als der große Haifisch, müssen wir den Fisch verkleinern. Wähle dazu den Fisch bei den Figuren aus, sodass er blau umrandet ist. Klicke anschließend auf den Tab *Kostüme*, wähle den Fisch aus und verkleinere ihn, indem du ihn an den Ecken kleiner ziehst.
+3. ![Apfel hinzufügen](scratch-snake/figur-apfel.png){: .right}
+Der Apfel braucht nur ein Kostüm. Damit er von der Schlange nur erwischt wird, wenn diese sich genau über den Apfel bewegt, darf auch der Apfel nicht größer als 20 sein.
 
-5. ![Drehpunkt setzen](scratch-fang-mich/05-fish-center.png){: .right}
-Damit der kleine Fisch sich auch um den richtigen Punkt dreht, wenn er umdreht, musst du den Drehpunkt des Kostüms anpassen. Wähle dazu den Fisch bei den Figuren aus, sodass er blau umrandet ist. Klicke anschließend auf den Tab *Kostüme*, wähle den Fisch aus und klicke auf das Kreuz-Bildchen im rechten oberen Eck. Das angezeigte Kreuz soll genau über der Mitte des Fisches sein.
+4. ![Game Over hinzufügen](scratch-snake/figur-game-over.png){: .right}
+Dann brauchst du noch eine Figur für die "Game Over" Meldung (Englisch für "das Spiel aus aus"), die angezeigt wird, wenn der Spieler verloren hat.
 
-6. ![Figuren benennen](scratch-fang-mich/06-rename.png){: .right}
-Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Haifisch* und *Fisch*. Du kannst die Eigenschaften von Figuren ändern, indem du auf das blaue *i* links über der Figur klickst.
+5. ![Figuren zentrieren](scratch-snake/figur-zentrieren.png){: .right}
+Vergiss nicht, dass du mit Hilfe des Fadenkreuzes rechts oben für alle Figuren den Mittelpunkt markieren musst.
 
-## Fisch bewegen
+## Daten
 
-1. ![Fisch bewegen](scratch-fang-mich/07-move-fish.png){: .right}
+1. ![Fisch bewegen](scratch-snake/07-move-fish.png){: .right}
 Damit du den Fisch bewegen kannst, musst er nach links und rechts sowie oben und unten bewegt werden können.<br/><br/>
   • Wähle zuerst den Fisch aus, damit er blau umrandet ist.<br/>
   • Im Tab *Skripte* kannst du deinen Fisch nun bewegen. Verwende das Ereignis *Wenn Taste ... gedrückt* unter *Ereignisse*.<br/>
@@ -48,7 +50,7 @@ Je größer die Schrittanzahl, desto schneller ist dein Fisch.
 
 ## Haifisch bewegen
 
-1. ![Haifisch bewegen](scratch-fang-mich/08-move-shark.png){: .right}
+1. ![Haifisch bewegen](scratch-snake/08-move-shark.png){: .right}
 Jetzt soll der Haifisch im Aquarium herumschwimmen.<br/><br/> 
   • Wähle dazu den Haifisch aus, damit er blau umrandet ist.<br/>
   • Im Tab *Skripte* kannst du den Haifisch nun bewegen.<br/>
@@ -60,7 +62,7 @@ Jetzt soll der Haifisch im Aquarium herumschwimmen.<br/><br/>
   
 ## Fisch fangen
 
-1. ![Fisch wird berührt](scratch-fang-mich/09-touch-fish.png){: .right}
+1. ![Fisch wird berührt](scratch-snake/09-touch-fish.png){: .right}
 Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt werden.<br/><br/> 
   • Wähle dazu den Fisch aus, damit er blau umrandet ist.<br/>
   • Im Tab *Skripte* kannst du den Fisch verschwinden lassen, sobald er den Haifisch berührt.<br/>
@@ -69,7 +71,7 @@ Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins 
   • Falls jetzt der Hai berührt wird (*Steuerung* *falls ... dann*), dann *sende "berührt" an alle*, *verstecke dich*, *warte 5 Sekunden*, *zeige dich*, und gehe wieder ins linke obere Eck mit *gehe zu x: -230, y: 170*. Anschließend sage *Willkommen zurück* für 2 Sekunden.
 
 
-2. ![Hai wird berührt](scratch-fang-mich/10-touch-shark.png){: .right}
+2. ![Hai wird berührt](scratch-snake/10-touch-shark.png){: .right}
 Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel "Game Over" sein.<br/><br/> 
   • Wähle dazu den Haifisch aus, damit er blau umrandet ist.<br/>
   • Im Tab *Skripte* kannst du den Haifisch "Game Over" sagen lassen.<br/>
