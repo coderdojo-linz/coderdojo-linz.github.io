@@ -8,21 +8,21 @@ description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Ran
 
 Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auch, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
 
-![Snake Game](scratch-snake/snake-game.png)
+![Snake Game](scratch-snake/snake-game.png){: .right}
+Das Spiel besteht aus 3 Figuren und 14 Skripten. In der folgenden Anleitung findest du einige Fragezeichen in den Skripten. Hier bist du gefordert, die richtige Lösung zu finden!
+
+Wenn du noch keine Idee hast, welche Bausteine hier fehlen könnten, findest am Ende der Anleitung die vollständigen Skripte.
 
 ## Figuren anlegen
 
-1. ![Bühnenbild auswählen](scratch-fang-mich/01-background.png){: .right}
-Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst das Aquarium, in dem die Fische schwimmen. Wähle als erstes links unten unter *Bühnenbild aus der Bibliothek wählen* ein Bühnenbild aus, zum Beispiel ein Aquarium.
-
-2. ![Figur löschen](scratch-fang-mich/02-delete-scratchy.png){: .right}
-Als nächstes lösche die Figur Scratchy mit dem Namen *Sprite1* indem du mit der rechten Maustaste darauf klickst. 
+1. ![Figur löschen](scratch-fang-mich/02-delete-scratchy.png){: .right}
+Lösche als erstes die Figur Scratchy mit dem Namen *Sprite1* indem du mit der rechten Maustaste darauf klickst. 
 Im angezeigten Menü kannst du Scratchy löschen.
 
-3. ![Figuren hinzufügen](scratch-fang-mich/03-fish.png){: .right}
+2. ![Figuren hinzufügen](scratch-fang-mich/03-fish.png){: .right}
 Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke dazu auf *Figur aus der Bibliothek wählen* und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonläuft oder eine Person die dem Löwen davon läuft.
 
-4. ![Fisch verkleinern](scratch-fang-mich/04-resize.png){: .right}
+2. ![Fisch verkleinern](scratch-fang-mich/04-resize.png){: .right}
 Damit der kleine Fisch auch kleiner ist als der große Haifisch, müssen wir den Fisch verkleinern. Wähle dazu den Fisch bei den Figuren aus, sodass er blau umrandet ist. Klicke anschließend auf den Tab *Kostüme*, wähle den Fisch aus und verkleinere ihn, indem du ihn an den Ecken kleiner ziehst.
 
 5. ![Drehpunkt setzen](scratch-fang-mich/05-fish-center.png){: .right}
@@ -85,3 +85,5 @@ Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel "G
 ## Ausprobieren
 
 Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/73821694/](https://scratch.mit.edu/projects/73821694/){:target="_blank"} ausprobieren.
+
+## Gesamte Skripte je Figur
