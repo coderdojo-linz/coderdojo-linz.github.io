@@ -109,7 +109,9 @@
     <Content Include="trainingsanleitungen\scratch\scratch-snake\figur-loeschen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\figur-schlange.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\figur-zentrieren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-apfel-1.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-apfel.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-game-over-1.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-game-over.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-schlange.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\snake-game.png" />

@@ -31,7 +31,7 @@ Der Apfel braucht nur ein Kostüm. Damit er von der Schlange nur erwischt wird, 
 Dann brauchst du noch eine Figur für die "Game Over" Meldung (Englisch für "das Spiel aus aus"), die angezeigt wird, wenn der Spieler verloren hat.
 
 5. ![Figuren zentrieren](scratch-snake/figur-zentrieren.png){: .right}
-Vergiss nicht, dass du mit Hilfe des Fadenkreuzes rechts oben für alle Figuren den Mittelpunkt markieren musst.
+Vergiss nicht, dass du mit Hilfe des Fadenkreuzes rechts oben für alle Figuren den Mittelpunkt markieren musst. Bei der Schlange musst du das für beide Kostüme machen.
 
 ## Daten
 
@@ -40,7 +40,7 @@ Damit sich die Schlange bewegen kann müssen wir zwei Informationen speichern: d
 
 Lege dafür zwei Variablen mit den Namen "DauerProPosition" und "Länge" an, die für alle Figuren zur Verfügung stehen.
 
-## Haifisch bewegen
+## Skripte für die Schlange
 
 1. ![Haifisch bewegen](scratch-snake/08-move-shark.png){: .right}
 Jetzt soll der Haifisch im Aquarium herumschwimmen.<br/><br/> 
@@ -52,7 +52,7 @@ Jetzt soll der Haifisch im Aquarium herumschwimmen.<br/><br/>
   • Um etwas mehr Zufall reinzubringen, nimm im Menü *Operatoren* den Block *Zufallszahl von 1 bis 10* und ziehe ihn an die Stelle der 15 Grad.
 
   
-## Fisch fangen
+## Skripte für den Apfel
 
 1. ![Fisch wird berührt](scratch-snake/09-touch-fish.png){: .right}
 Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt werden.<br/><br/> 
@@ -63,14 +63,11 @@ Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins 
   • Falls jetzt der Hai berührt wird (*Steuerung* *falls ... dann*), dann *sende "berührt" an alle*, *verstecke dich*, *warte 5 Sekunden*, *zeige dich*, und gehe wieder ins linke obere Eck mit *gehe zu x: -230, y: 170*. Anschließend sage *Willkommen zurück* für 2 Sekunden.
 
 
-2. ![Hai wird berührt](scratch-snake/10-touch-shark.png){: .right}
-Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel "Game Over" sein.<br/><br/> 
-  • Wähle dazu den Haifisch aus, damit er blau umrandet ist.<br/>
-  • Im Tab *Skripte* kannst du den Haifisch "Game Over" sagen lassen.<br/>
-  • Unter *Ereignisse* wähle *Wenn ich ... empfange*, der Hai reagiert somit auf die vom Fisch ausgelöste Nachricht.<br/>
-  • Anschließend wähle *wiederhole 2 mal* bei *Steuerung* aus.<br/>
-  • Um den Haifisch schnappen zu lassen, gibt es unter *Aussehen* verschiedene Varianten des Hais. Füge folgende Blöcke in den Wiederhol-Block: *wechsle zu Kostüm b*, *warte 0,3 Sek.*, *wechsel zu Kostüm a*, *warte 0,3 Sek.*<br/>
-  • Und um den Haifisch "Game over" sagen zu lassen, füge einen neuen *Wenn ich ... empfange* Block hinzu und *sage "Game Over!" für 4.5 Sekunden*.
+## Skripte für SpielZuEnde
+
+1. ![Game Over](scratch-snake/skript-game-over-1.png){: .right}
+  - Beim Start des Spiels verstecke die Figur SpielZuEnde und setzte sie in die Mitte der Bühne.
+  - Wenn du die Nachricht "Verloren" empfängst, zeige die Figur an und spiele einen Klang. Nach drei Sekunden kannst du die Figur wieder verstecken und alle Skripte stoppten.
 
 ## Weitere Ideen
 
