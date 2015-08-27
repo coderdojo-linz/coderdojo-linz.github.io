@@ -115,6 +115,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-game-over.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-schlange-1.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-schlange-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-schlange-3.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-schlange.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\snake-game.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\laser.png" />

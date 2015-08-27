@@ -46,6 +46,15 @@ Zeige als erstes den Kopf der Schlange in der Mitte der Bühne an und lass sie n
 Dann setze die Werte für die Daten Länge auf 5 und für DauerProPosition auf 0.2.<br/><br/>
 Dann lass die Schlange fortlaufend 20iger Schritte gehen, warte für DauerProPosition Sekunden und erzeuge dann einen Klon. Der Klon wird später der Körber der Schlange.
 
+2. ![Mache den Klon zum Körper der Schlange](scratch-snake/skript-schlange-2.png){: .right}
+Mache den Klon zum Körper der Schlange indem du das Kostüm auf Körper wechselst.<br/><br/>
+Zeige Klon für jede Position im Körper für die LängeProPosition an.<br/><br/>
+Wenn die Schlange eine Länge von 3 hat, dann wird der Klon für 3 * 0.2 Sekunden = 0.6 Sekunden angezeigt. Wenn die Schlange schon eine Länge von 10 hat, 
+dann wird der Klon für 10 * 0.2 Sekunden = 2 Sekunden angezeigt.<br/><br/>
+Lösche dann den Klon.
+
+3. ![Ändere die Richtung der Schlange](scratch-snake/skript-schlange-3.png){: .right}
+Ändere mit den Pfeiltasten die Richtung der Schlange.
   
 ## Skripte für den Apfel
 
@@ -62,7 +71,7 @@ Der Apfel muss zwei Aufgaben erfüllen: er muss eine Position finden, an der sic
 	
 ## Skripte für SpielZuEnde
 
-1. ![Game Over](scratch-snake/skript-game-over-1.png){: .right}<br/><br/>
+1. ![Game Over](scratch-snake/skript-game-over-1.png){: .right}
 Die Figur SpielZuEnde wird erst angezeigt, wenn du mit der Schlange entweder den Rand oder die Schlange selbst berührst.
   • Beim Start des Spiels verstecke die Figur SpielZuEnde und setzte sie in die Mitte der Bühne.<br/>
   • Wenn du die Nachricht "Verloren" empfängst, zeige die Figur an und spiele einen Klang. Nach drei Sekunden kannst du die Figur wieder verstecken und alle Skripte stoppten.
