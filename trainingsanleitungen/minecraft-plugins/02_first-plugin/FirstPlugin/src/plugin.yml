@@ -1,0 +1,12 @@
+## YAML Template.
+---
+name: FirstPlugin
+main: com.bajupa.firstplugin.FirstPlugin
+version: 0.1.0
+authors:
+    - P. Bauer
+description: A first plugin.
+commands:
+    sayhello:
+        description: Says hello.
+        usage: /sayhello
