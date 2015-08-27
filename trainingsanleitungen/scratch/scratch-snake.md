@@ -8,9 +8,7 @@ description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Ran
 
 Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auch, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
 
-<p class="center">
-![Snake Game](scratch-snake/snake-game.png)
-</p>
+<p class="center"><img alt="Snake Game" src="scratch-snake/snake-game.png" /></p>
 
 Das Spiel besteht aus 3 Figuren und 14 Skripten. In der folgenden Anleitung findest du einige Fragezeichen in den Skripten. Hier bist du gefordert, die richtige Lösung zu finden!
 
@@ -43,14 +41,10 @@ Lege dafür zwei Variablen mit den Namen "DauerProPosition" und "Länge" an, die
 
 ## Skripte für die Schlange
 
-1. ![Haifisch bewegen](scratch-snake/08-move-shark.png){: .right}
-Jetzt soll der Haifisch im Aquarium herumschwimmen.<br/><br/> 
-  • Wähle dazu den Haifisch aus, damit er blau umrandet ist.<br/>
-  • Im Tab *Skripte* kannst du den Haifisch nun bewegen.<br/>
-  • Unter *Ereignisse* wähle *Wenn ... angeklickt*.<br/>
-  • Anschließend wähle *wiederhole fortlaufend* bei *Steuerung* aus.<br/>
-  • Bewege den Haifisch mit *gehe 10er-Schritt*, *warte 0,1 Sek.", *pralle vom Rand ab* und *drehe dich um ... Grad*<br/>
-  • Um etwas mehr Zufall reinzubringen, nimm im Menü *Operatoren* den Block *Zufallszahl von 1 bis 10* und ziehe ihn an die Stelle der 15 Grad.
+1. ![Bewege die Schlange](scratch-snake/skript-schlange-1.png){: .right}
+Zeige als erstes den Kopf der Schlange in der Mitte der Bühne an und lass sie nach rechts schauen.<br/><br/>
+Dann setze die Werte für die Daten Länge auf 5 und für DauerProPosition auf 0.2.<br/><br/>
+Dann lass die Schlange fortlaufend 20iger Schritte gehen, warte für DauerProPosition Sekunden und erzeuge dann einen Klon. Der Klon wird später der Körber der Schlange.
 
   
 ## Skripte für den Apfel
@@ -69,12 +63,13 @@ Der Apfel muss zwei Aufgaben erfüllen: er muss eine Position finden, an der sic
 ## Skripte für SpielZuEnde
 
 1. ![Game Over](scratch-snake/skript-game-over-1.png){: .right}<br/><br/>
+Die Figur SpielZuEnde wird erst angezeigt, wenn du mit der Schlange entweder den Rand oder die Schlange selbst berührst.
   • Beim Start des Spiels verstecke die Figur SpielZuEnde und setzte sie in die Mitte der Bühne.<br/>
   • Wenn du die Nachricht "Verloren" empfängst, zeige die Figur an und spiele einen Klang. Nach drei Sekunden kannst du die Figur wieder verstecken und alle Skripte stoppten.
 
 ## Weitere Ideen
 
-* ...
+* Zähle mit, wie viele Äpfel du erwischst, bevor die Schlange zu lange wird.
 
 ## Ausprobieren
 
