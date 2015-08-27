@@ -55,6 +55,15 @@ Lösche dann den Klon.
 
 3. ![Ändere die Richtung der Schlange](scratch-snake/skript-schlange-3.png){: .right}
 Ändere mit den Pfeiltasten die Richtung der Schlange.
+
+4. ![Erhöhe die Geschwindigkeit](scratch-snake/skript-schlange-4.png){: .right}
+Mach die DauerProPosition alle 10 Sekunden um 0.02 kleiner. Wenn die Schlange weniger lang an einer Position verweilt wird sie schneller.
+
+5. ![Erkenne wann das Spiel vorbei ist](scratch-snake/skript-schlange-5.png){: .right}
+Das Spiel ist vorbei wenn die Schlange entweder den Rand berührt oder wenn die Zunge der Schlange (rot) ihren Körper (grün) berührt. Sende dann die Nachricht "Verloren".
+
+6. ![Stoppe alle Skripte](scratch-snake/skript-schlange-6.png){: .right}
+Wenn die Nachricht "Verloren" versandt wurde, stoppe alle Skripte und setzte die Schlange wieder auf die Anfangsposition.
   
 ## Skripte für den Apfel
 
