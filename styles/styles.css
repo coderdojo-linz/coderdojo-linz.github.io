@@ -74,15 +74,14 @@ a, a:hover, a:focus {
 .container-banner-image {
   width: 100%;
   height: auto;
-  min-height: 170px;
-  max-height: 40vh;
+  min-height: 100px;
+  max-height: 25vh;
   overflow: hidden;
   position: relative; }
   .container-banner-image img {
     width: 100%;
     height: auto;
-    min-height: 170px;
-    opacity: 0.8; }
+    min-height: 100px; }
 
 .banner-image-content {
   position: absolute;
@@ -91,6 +90,9 @@ a, a:hover, a:focus {
   color: #ffffff;
   font-size: 14px;
   padding: 15px 15px; }
+
+.fb-page {
+  margin-top: 46px; }
 
 @media (min-width: 768px) {
   .banner-image-content {
