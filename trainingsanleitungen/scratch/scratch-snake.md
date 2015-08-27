@@ -12,7 +12,7 @@ Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auch, dass du nicht 
 
 Das Spiel besteht aus 3 Figuren und 14 Skripten. In der folgenden Anleitung findest du einige Fragezeichen in den Skripten. Hier bist du gefordert, die richtige Lösung zu finden!
 
-Wenn du noch keine Idee hast, welche Bausteine hier fehlen könnten, findest am Ende der Anleitung die vollständigen Skripte.
+Wenn du noch keine Idee hast, welche Bausteine hier fehlen könnten, findest du am Ende der Anleitung die vollständigen Skripte.
 
 ## Figuren anlegen
 
@@ -44,7 +44,7 @@ Lege dafür zwei Variablen mit den Namen "DauerProPosition" und "Länge" an, die
 1. ![Bewege die Schlange](scratch-snake/skript-schlange-1.png){: .right}
 Zeige als erstes den Kopf der Schlange in der Mitte der Bühne an und lass sie nach rechts schauen.<br/><br/>
 Dann setze die Werte für die Daten Länge auf 5 und für DauerProPosition auf 0.2.<br/><br/>
-Dann lass die Schlange fortlaufend 20iger Schritte gehen, warte für DauerProPosition Sekunden und erzeuge dann einen Klon. Der Klon wird später der Körber der Schlange.
+Dann lass die Schlange fortlaufend 20iger Schritte gehen, warte für DauerProPosition Sekunden und erzeuge dann einen Klon. Der Klon wird später der Körper der Schlange.
 
 2. ![Mache den Klon zum Körper der Schlange](scratch-snake/skript-schlange-2.png){: .right}
 Mache den Klon zum Körper der Schlange indem du das Kostüm auf Körper wechselst.<br/><br/>
