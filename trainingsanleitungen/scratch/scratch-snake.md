@@ -27,7 +27,7 @@ Eine Ausnahme ist die Zunge, die darf etwas länger sein.
 3. ![Apfel hinzufügen](scratch-snake/figur-apfel.png){: .right}
 Der Apfel braucht nur ein Kostüm. Damit er von der Schlange nur erwischt wird, wenn diese sich genau über den Apfel bewegt, darf auch der Apfel nicht größer als 20 sein.
 
-4. ![Game Over hinzufügen](scratch-snake/figur-game-over.png){: .right}
+4. ![SpielZuEnde hinzufügen](scratch-snake/figur-game-over.png){: .right}
 Dann brauchst du noch eine Figur für die "Game Over" Meldung (Englisch für "das Spiel aus aus"), die angezeigt wird, wenn der Spieler verloren hat.
 
 5. ![Figuren zentrieren](scratch-snake/figur-zentrieren.png){: .right}
@@ -35,18 +35,10 @@ Vergiss nicht, dass du mit Hilfe des Fadenkreuzes rechts oben für alle Figuren 
 
 ## Daten
 
-1. ![Fisch bewegen](scratch-snake/07-move-fish.png){: .right}
-Damit du den Fisch bewegen kannst, musst er nach links und rechts sowie oben und unten bewegt werden können.<br/><br/>
-  • Wähle zuerst den Fisch aus, damit er blau umrandet ist.<br/>
-  • Im Tab *Skripte* kannst du deinen Fisch nun bewegen. Verwende das Ereignis *Wenn Taste ... gedrückt* unter *Ereignisse*.<br/>
-  • Verknüpfe es jeweils mit einer Drehung *setze Richtung auf ...* unter *Bewegung*, damit der Fisch in die richtige Richtung schaut.<br/>
-  • Außerdem brauchen wir *gehe ...er Schritt*, um den Fisch zu bewegen.<br/><br/>
-Für *Pfeil nach oben* gedrückt: Richtung 0 Grad, gehe 10er-Schritte.<br/>
-Für *Pfeil nach unten* gedrückt: Richtung 180 Grad, gehe 10er-Schritte.<br/>
-Für *Pfeil nach rechts* gedrückt: Richtung 90 Grad, gehe 10er-Schritte.<br/>
-Für *Pfeil nach links* gedrückt: Richtung -90 Grad, gehe 10er-Schritte.<br/><br/>
-Je größer die Schrittanzahl, desto schneller ist dein Fisch.
+1. ![Daten](scratch-snake/daten.png){: .right}
+Damit sich die Schlange bewegen kann müssen wir zwei Informationen speichern: die Länge der Schlange und wie lange jeder Teil der Schlange auf einer Position bleibt.
 
+Lege dafür zwei Variablen mit den Namen "DauerProPosition" und "Länge" an, die für alle Figuren zur Verfügung stehen.
 
 ## Haifisch bewegen
 
@@ -89,3 +81,15 @@ Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel "G
 Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/73821694/](https://scratch.mit.edu/projects/73821694/){:target="_blank"} ausprobieren.
 
 ## Gesamte Skripte je Figur
+
+### Schlange
+
+![Skripte für die Schlange](scratch-snake/skript-schlange.png)
+
+### Apfel
+
+![Skripte für den Apfel](scratch-snake/skript-apfel.png)
+
+### SpielZuEnde
+
+![Skripte für die Game Over Meldung](scratch-snake/skript-game-over.png)
