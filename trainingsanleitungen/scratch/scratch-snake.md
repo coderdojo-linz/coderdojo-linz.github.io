@@ -36,8 +36,7 @@ Vergiss nicht, dass du mit Hilfe des Fadenkreuzes rechts oben für alle Figuren 
 ## Daten
 
 1. ![Daten](scratch-snake/daten.png){: .right}
-Damit sich die Schlange bewegen kann müssen wir zwei Informationen speichern: die Länge der Schlange und wie lange jeder Teil der Schlange auf einer Position bleibt.
-
+Damit sich die Schlange bewegen kann müssen wir zwei Informationen speichern: die Länge der Schlange und wie lange jeder Teil der Schlange auf einer Position bleibt.<br/><br/>
 Lege dafür zwei Variablen mit den Namen "DauerProPosition" und "Länge" an, die für alle Figuren zur Verfügung stehen.
 
 ## Skripte für die Schlange
@@ -54,20 +53,22 @@ Jetzt soll der Haifisch im Aquarium herumschwimmen.<br/><br/>
   
 ## Skripte für den Apfel
 
-1. ![Fisch wird berührt](scratch-snake/09-touch-fish.png){: .right}
-Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt werden.<br/><br/> 
-  • Wähle dazu den Fisch aus, damit er blau umrandet ist.<br/>
-  • Im Tab *Skripte* kannst du den Fisch verschwinden lassen, sobald er den Haifisch berührt.<br/>
-  • Unter *Ereignisse* wähle *Wenn ... angeklickt*.<br/>
-  • Setze den Fisch an Position -230 und 170 mittels *gehe zu x: -230, y: 170*, um den Fisch ins linke obere Eck zu setzen, und *zeige dich*.<br/>
-  • Falls jetzt der Hai berührt wird (*Steuerung* *falls ... dann*), dann *sende "berührt" an alle*, *verstecke dich*, *warte 5 Sekunden*, *zeige dich*, und gehe wieder ins linke obere Eck mit *gehe zu x: -230, y: 170*. Anschließend sage *Willkommen zurück* für 2 Sekunden.
-
-
+1. ![Skripte Apfel](scratch-snake/skript-apfel-1.png){: .right}
+Der Apfel muss zwei Aufgaben erfüllen: er muss eine Position finden, an der sich die Schlange gerade nicht befindet und er muss erkennen, wenn er von der Schlange berührt wird.<br/><br/> 
+  • Zeige den Apfel als erste an und setzte ihn auf die Position x: 20, y: 0.<br/>
+  • Dann wiederhole fortlaufend folgende Schritte:<br/>
+    • Finde eine Position, an der sich die Schlange gerade nicht befindet.<br/>
+    • Generiere dazu Zufallszahlen, die ein Vielfaches von 20 sind. Wir bewegen die Schlange in 20iger Schritten, daher sollte auch der Apfel auf einem Vielfachen von 20 platziert sein.<br/>
+    • Wiederhole das Generieren der Zufallszahlen solange, bis du eine Position findest, an der die Schlange gerade nicht berührt wird.<br />
+	• Dann warte bis der Apfel von der Schlange berührt wird.<br />
+	• Spiele einen Klang ab und mach die Schlange um einen Körperteil länger.<br />
+	• Dann beginne wieder von vorne und suche eine neue Position für den Apfel.
+	
 ## Skripte für SpielZuEnde
 
-1. ![Game Over](scratch-snake/skript-game-over-1.png){: .right}
-  - Beim Start des Spiels verstecke die Figur SpielZuEnde und setzte sie in die Mitte der Bühne.
-  - Wenn du die Nachricht "Verloren" empfängst, zeige die Figur an und spiele einen Klang. Nach drei Sekunden kannst du die Figur wieder verstecken und alle Skripte stoppten.
+1. ![Game Over](scratch-snake/skript-game-over-1.png){: .right}<br/><br/>
+  • Beim Start des Spiels verstecke die Figur SpielZuEnde und setzte sie in die Mitte der Bühne.<br/>
+  • Wenn du die Nachricht "Verloren" empfängst, zeige die Figur an und spiele einen Klang. Nach drei Sekunden kannst du die Figur wieder verstecken und alle Skripte stoppten.
 
 ## Weitere Ideen
 
