@@ -8,7 +8,9 @@ description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Ran
 
 Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auch, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
 
+<p class="center">
 ![Snake Game](scratch-snake/snake-game.png)
+</p>
 
 Das Spiel besteht aus 3 Figuren und 14 Skripten. In der folgenden Anleitung findest du einige Fragezeichen in den Skripten. Hier bist du gefordert, die richtige Lösung zu finden!
 
