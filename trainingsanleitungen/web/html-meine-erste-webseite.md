@@ -13,6 +13,7 @@ In dieser Übung lernst du die [Hypertext Markup Language](https://de.wikipedia.
 ## Das Grundgerüst einer HTML-Seite
 
 1. Öffne einen beliebigen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Hier einige Links zu kostenlosen Editoren, mit denen du HTML gut schreiben kannst. Falls du nicht sicher bist, welchen du nehmen sollst, nimm gleich den ersten. Im Lauf der Zeit kannst du mit verschiedenen experimentieren und dich für den entscheiden, der dir am besten gefällt.
+
 	* [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"} (Windows, MacOS, Linux)
 	* [Notepad++](https://notepad-plus-plus.org/download/v6.8.2.html){:target="_blank"} (Windows)
 	* [Sublime Text](http://www.sublimetext.com/2){:target="_blank"} (Windows, MacOS, Linux)
@@ -158,16 +159,16 @@ Eine geordnete Liste (*ordered list*) wird bei HTML zwischen `<ol></ol>` notiert
 
 Kannst du dich an das Problem mit dem *ö* erinnern? Hier die wichtigsten Sonderzeichen der deutschen Sprache mit ihren HTML-Codes: 
 
-Zeichen | in Worten              | Html Code
---------|------------------------|-----------
-ß       | schafes S (sz-Ligatur) | &amp;szlig;
-ä       | a Umlaut               | &amp;auml;
-ü       | u Umlaut               | &amp;uuml;
-ö       | o Umlaut               | &amp;ouml;
-Ä       | a Umlaut               | &amp;Auml;
-Ü       | u Umlaut               | &amp;Uuml;
-Ö       | o Umlaut               | &amp;Ouml;
-&       | *und* Zeichen          | &amp;amp;
+Zeichen&nbsp; | in Worten              | Html Code
+--------------|------------------------|-----------
+ß             | schafes S (sz-Ligatur) | &amp;szlig;
+ä             | a Umlaut               | &amp;auml;
+ü             | u Umlaut               | &amp;uuml;
+ö             | o Umlaut               | &amp;ouml;
+Ä             | a Umlaut               | &amp;Auml;
+Ü             | u Umlaut               | &amp;Uuml;
+Ö             | o Umlaut               | &amp;Ouml;
+&             | *und* Zeichen          | &amp;amp;
 
 Eine gute Auflistung ist [hier](http://wiki.selfhtml.org/wiki/Referenz:HTML/Zeichenreferenz){:target="_blank"} zu finden
 
