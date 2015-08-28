@@ -32,4 +32,4 @@ Der Kursausweis gilt als Fahrausweis.
 
 Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp).
 
-<iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.at/maps/place/Volkshochschule+Stadtbibliothek+Linz+-+Wissensturm/@48.2908184,14.28819,17z/data=!3m1!4b1!4m2!3m1!1s0x477397bd61b10041:0x3bb22d05774c1bc6?hl=de&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE"></iframe> 
+<iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed/v1/place?q=Wissensturm%20Volkshochschule%20Linz%20Stadtbibliothek%2C%20K%C3%A4rntnerstra%C3%9Fe%2C%20Linz%2C%20Austria&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE" allowfullscreen></iframe> 
