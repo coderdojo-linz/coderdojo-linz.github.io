@@ -6,25 +6,15 @@ bannerimage: /images/coderdojo-banner-3.jpg
 
 # Termine
 
-* Freitag, 28. August 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17195644636){:target="_blank"}
-<br/>*Gastmentoren: [Oliver Lintner](http://coderdojo-linz.github.io/mentoren.html#Oliver Lintner) und [Andreas Schabus](http://coderdojo-linz.github.io/mentoren.html#Andreas Schabus), Microsoft*
-<br/>Firma ebit, Kornstraße 7A, 4060 Leonding
 * Freitag, 11. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993495028){:target="_blank"}
-<br/>Wissensturm, Kärntnerstraße 26, 4020 Linz
 * Freitag, 25. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993496031){:target="_blank"}
-<br/>Wissensturm, Kärntnerstraße 26, 4020 Linz
 * Freitag, 09. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993497034){:target="_blank"}
-<br/>Wissensturm, Kärntnerstraße 26, 4020 Linz
 * Freitag, 23. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993498037){:target="_blank"}
-<br/>Wissensturm, Kärntnerstraße 26, 4020 Linz
 * Freitag, 06. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993499040){:target="_blank"}
-<br/>Wissensturm, Kärntnerstraße 26, 4020 Linz
 * Freitag, 20. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993500043){:target="_blank"}
-<br/>Wissensturm, Kärntnerstraße 26, 4020 Linz
 * Freitag, 04. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993501046){:target="_blank"}
-<br/>Wissensturm, Kärntnerstraße 26, 4020 Linz
 * Freitag, 18. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993502049){:target="_blank"}
-<br/>Ort wird noch bekanntgegeben
+<br/>Der Ort für diesen Termin wird noch bekanntgegeben.
 
 ## Was muss mitgebracht werden?
 
@@ -34,8 +24,12 @@ Falls kein Laptop zur Verfügung steht, nehmen Sie bitte mit uns [Kontakt](http:
 
 ## Ort
 
-Der nächste Termin am 28. August findet im Büro der Firma [ebit](http://www.ebit.at/){:target="_blank"} in der Kornstraße 7A, 4060 Leonding statt. Wir bedanken uns herzlich, dass wir den Besprechungsraum in Beschlag nehmen dürfen!
+Das CoderDojo findet im Herbstsemester 2015 im [Wissensturm](http://www.linz.at/wissensturm/) in der Kärtnerstraße 26, 4020 Linz statt. 
 
-<iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed/v1/place?q=Kornstra%C3%9Fe%207a%2C%204060%20Leonding&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE"></iframe> 
+Wenn ihr mit öffentlichen Verkehrsmitteln anreist, bekommt ihr von der Volkshochschule ein kostenloses Ticket für die Linz AG. Meldet euch dazu bitte zusätzlich zur Anmeldung zu den einzelnen 
+Terminen einmal pro Semester direkt bei der Volkshochschule Linz zum Kurs [CoderDojo Linz](https://vhskurs.linz.gv.at/index.php?kathaupt=11&knr=15.24760&kursname=CoderDojo+Linz) an. 
+Der Kursausweis gilt als Fahrausweis.
 
-Für die weiteren Termine freuen wir uns, dass uns der Wissensturm in Linz Räumlichkeiten zur Verfügung stellen wird.
+Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp).
+
+<iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.at/maps/place/Volkshochschule+Stadtbibliothek+Linz+-+Wissensturm/@48.2908184,14.28819,17z/data=!3m1!4b1!4m2!3m1!1s0x477397bd61b10041:0x3bb22d05774c1bc6?hl=de&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE"></iframe> 
