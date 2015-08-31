@@ -198,7 +198,8 @@ Nun sind wir schon wieder fertig. Wie oben musst du das Projekt wieder bauen (we
 3. Package anlegen
 4. Klasse anlegen
 5. ``extends JavaPlugin`` dazuschreiben
-6. Methode ``onCommand`` zur Klasse geben
+6. Methode ``onCommand`` generieren
+7. Die Methode ausprogrammieren, also reinschreiben, was geschehen soll, wenn das Command aufgerufen wird
 7. ``plugin.yml`` zum Projekt hinzufügen
 8. Bauen
 9. Fertiges jar File aus ``dist`` in das Plugins-Verzeichnis kopieren (oder update-Verzeichnis, wenn das Plugin bereits geladen wurde)
