@@ -19,7 +19,6 @@ Also im Grunde zwei Kommandos:
 
 
 ![How the command looks like](03_getafix-Player/Command.png)
-![How the result looks like](03_getafix-Player/Result.png)
 
 Wenn du dich wunderst, warum das Plugin nun *Getafix* heißt, verrate ich dir, dass auf Englisch der Druide nicht Miraculix sonder Getafix heißt. Und du hast sicher schon bemerkt, dass wir Informatiker gerne Dinge in englischer Sprache benennen. Daher kommt das. Jetzt kannst du deine Englischlehrerin oder deinen Englischlehrer abtesten, ob er oder sie die wirklich wichtige Literatur auch auf Englisch gelesen hat :-).
 
@@ -85,7 +84,7 @@ Habe ich schon erwähnt, dass Java (wie die meisten Programmiersprachen) sehr sc
 
 Jetzt, da du das verstanden hast, kannst du dir auch vorstellen, dass du den Namen `sender` im `onCommand` ändern kannst, ohne dass die Funktionalität leiden würde. Wie im echten Leben kannst du deine Kinder nennen, wie du magst. Wenn du aber den Datentyp `CommandSender` ändern würdest, dann würde plötzlich nix mehr funktionieren, weil das `onCommand` als ersten Parameter einen `CommandSender` erwartet. Wieder hilft uns das echte Leben: Wenn du neue Möbel für dein Wohnzimmer brauchst, dann willst du einen Tischler und keinen Programmierer.
 
-## Eine erste Version
+## Version 1: /gethealth
 Wir beginnen mit einem einfachen Fall. Sobald der Spieler ``/gethealth`` im Spiel eingibt, soll die Gesundheit als Zahl zwischen 0 und 20 ausgegeben werden. Also sehen wir uns den Typ des Parameters ``sender`` einmal an. Das ist ein ``CommandSender`` und wenn du nun ``sender.`` in einer Zeile der Methode ``onCommand`` eintippst, dann siehst du, was so ein ``CommandSender`` alles kann. Du wirst feststellen, dass der aber mit Gesundheit nix am Hut hat, weil wir keine Methode finden, die irgendwo "Health" im Namen hat. Aber es gibt einen anderen Datentypen, nämlich ``Player``, der den Spieler in einem Minecraft-Game genauer spezifiziert. Genauer gesagt ist ein ``Player`` auch ein ``CommandSender``und kann aber noch um einiges mehr. Du kannst das ausprobieren, indem du folgendes eintippst:
 <pre>
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -201,3 +200,90 @@ Zum Glück gibts für alle drei Dinge eine Lösung. Also der Reihe nach:
 
 Gut, dann bauen und testen!
 
+## Version 2: /heal
+### Das yml-file erweitern
+Wir müssen unser Plugin so umschreiben, dass es nun auf zwei verschiedene Kommandos reagiert. Beginnen wir einmal damit, dass es überhaupt auf ein weiteres Kommando reagiert. Dazu erweitern wir das `plugin.yml`.
+
+<pre>
+    ## YAML Template.
+    ---
+    name: Getafix
+    main: com.bajupa.getafix.Getafix
+    version: 0.<b>2</b>.0
+    authors:
+        - P. Bauer
+    description: A miraculous healing plugin.
+    commands:
+        gethealth:
+            description: Displays health level of player.
+            usage: /gethealth me | player-name
+        <b>heal:
+            description: Brings your health to the top level.
+            usage: /heal me | player-name
+        </b>
+</pre>
+
+Wir probieren das gleich aus, ob es funktioniert. Also bauen und dann kannst du in deinem Testserver-Verzeichnis einen weiteren Ordner namens **update** anlegen und dort kopierst du nun das `Getafix.jar` rein. Wenn dein Server vom letzten Test noch läuft, dann tippst du in der Konsole einfach `reload` ein und das neue jar-File wird geladen. Du erkennst es daran, dass das **update**-Verzeichnis nun leer ist. Wenn du nun `/heal` in die Konsole eintippst bekommst du die Fehlermeldung, dass du in der Konsole keine Gesundheitsdaten zur Verfügung hast. Das ist noch nicht ideal, aber logisch, weil ja noch nix programmiert wurde. Wir sehen aber, dass unser Plugin schon mal auf den neuen Befehl reagiert.
+
+### Wieder ein paar Überlegungen
+Nun müssen wir uns überlegen, was wir eigentlich wollen.
+
+1. Wir wollen unterscheiden, welches Kommando der Sender jetzt eingetippt hat. Dazu können wir einen weiteren Parameter, nämlich ``label`` verwenden.
+2. Wir wollen, je nachdem, welches Kommando eingegeben wurde, unterschiedliche Code-Teile ausführen. Da klingelt's wahrscheinlich schon: das wird wieder einmal ein Fall für unser `if`.
+
+Naja, das sieht ja schon ganz gut aus. Wir wollen uns jetzt die beiden Punkte 
+
+### Erste Code-Erweiterungen
+Als erstes sehen wir uns die Sache mit dem `label` an. Du erinnerst dich? `label` ist der Name und `String` ist der Datentyp. `String`s sind Zeichenketten, das hatten wir schon mal bei der Methode `sendMessage`, der wir einen Text zum Anzeigen mitgegeben haben und das war auch der mit dem + zum Aneinanderkleben von mehreren Strings. So ein String kann aber noch mehr.
+
+Als erstes sehen wir uns aber an, ob im `label` auch wirklich das Kommando drinnensteht. Da wir mit `sendMessage` eine Methode haben, einen String auszugeben benutzen wir das gleich mal:
+
+<pre>
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        <b>sender.sendMessage("Label: " + label);</b>
+        if (sender instanceof Player) {
+            Player player = (Player) sender;
+            sender.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
+            return true;
+        }
+        else {
+            sender.sendMessage("Poor guy you are no player -> no health data available");
+            return false;
+        }
+     }
+</pre>
+
+Wenn du das jetzt baust und das jar neu lädst müsste bei Aufruf von `/gethealth` oder auch `heal` immer das Kommando, das du eingegeben hast, ausgegeben werden. Naja, damit haben wir doch schon mal unser Unterscheidungskriterium. Jetzt wollen wir das ganze in ein `if` verpacken und dann haben wir wieder schön unterscheidbare Code-Teile, die je nach Eingabe ausgeführt werden.
+
+<pre>
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        <b>if (label.equalsIgnoreCase("gethealth")) {</b>
+            if (sender instanceof Player) {
+                Player player = (Player) sender;
+                sender.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
+                return true;
+            }
+            else {
+                sender.sendMessage("Poor guy you are no player -> no health data available");
+                return false;
+            }
+        <b>}
+       else {
+           sender.sendMessage("Healing will be done later, sorry");
+           return true;
+       }</b>
+     }
+</pre>
+
+Gut, das `label.equalsIgnoreCase("gethealth")` ist vielleicht noch eine kleine Erklärung wert: Also, wir wissen, dass `label` vom Datentyp `String` ist und Strings können ein paar Dinge (Denke wieder an die Berufe). Eines davon ist sich selbst mit einem anderen String zu vergleichen. Das ist `equals`, welches ein `true` (wahr) zurückgibt, wenn der String, der als Parameter mitgegeben wird gleich ist und `false`, wenn nicht.
+
+Das `equals` achtet aber auf Groß- und Kleinschreibung und damit würde das Kommando `/getHealth` nicht mehr erkannt werden (`equals` würde `false` zurückgeben). Damit das nicht passiert, gibt es `equalsIgnoreCase`, das eben über Groß- und Kleinschreibschwächen hinwegsieht.
+
+Zum Schluss dieser Episode wollen wir noch den Code einfügen, der eigentlich gemacht werden soll, wenn der Spieler `/heal` eingibt. Wie immer dazu ...
+
+### Ein paar weitere kleine Überlegungen
+1. Wie bei `gethealth` werden wir diese Überprüfung mit `instanceof Player` brauchen und dann wieder den `sender` auf einen `Player` casten (merkst du, dass wir schon wie echte Informatiker sprechen, das heißt, dass dich deine Großeltern sicher nimmer verstehen).
+2. Wir brauchen eine Methode von `Player`, um dessen Gesundheit zu verändern. Das ist die Methode `setHealth`.
+
+###Letzte Code-Erweiterung
+Da habe ich jetzt einen Vorschlag. Das probierst du jetzt schnell mal selber. Die Mentoren können dir dabei helfen. Außerdem gibt es in der nächsten Episode natürlich die Auflösung. Viel Spaß
