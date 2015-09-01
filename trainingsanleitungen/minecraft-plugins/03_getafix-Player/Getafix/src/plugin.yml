@@ -2,11 +2,14 @@
 ---
 name: Getafix
 main: com.bajupa.getafix.Getafix
-version: 0.1.0
+version: 0.2.0
 authors:
     - P. Bauer
 description: A miraculous healing plugin.
 commands:
     gethealth:
         description: Displays health level of player.
-        usage: /gethealth <player name>
+        usage: /gethealth me | <player name>
+    heal:
+        description: Brings your health to the top level
+        usage: /heal me | <player name>

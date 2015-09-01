@@ -36,12 +36,25 @@ public class Getafix extends JavaPlugin {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
-            sender.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
-            return true;
+        if (label.equalsIgnoreCase("gethealth")) {
+            if (sender instanceof Player) {
+                Player player = (Player) sender;
+                sender.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
+                return true;
+            } else {
+                sender.sendMessage("Poor guy you are no player -> no health data available");
+                return false;
+            }
         } else {
-            return false;
+            if (sender instanceof Player) {
+            Player player = (Player) sender;
+            player.setHealth(20.);
+            return true;
+            }
+            else {
+                sender.sendMessage("Poor guy you are no player -> can't heal you");
+                return false;
+            }
         }
     }
 
