@@ -35,12 +35,14 @@
     <Content Include="images\programming.jpg" />
     <Content Include="mentoren\images\albrecht-woess.jpg" />
     <Content Include="mentoren\images\arno-huetter.jpg" />
+    <Content Include="mentoren\images\brigitte-kalipcioglu.jpg" />
     <Content Include="mentoren\images\daniel-sklenitzka.jpg" />
     <Content Include="mentoren\images\elisabeth-rosemann.jpg" />
     <Content Include="mentoren\images\gurpreet-juttla.jpg" />
     <Content Include="mentoren\images\karin-huber.jpg" />
     <Content Include="mentoren\images\peter-bauer.jpg" />
     <Content Include="mentoren\images\peter-paul-kirschner.jpg" />
+    <Content Include="mentoren\images\pia-gerhofer.jpg" />
     <Content Include="mentoren\images\rainer-stropek.jpg" />
     <Content Include="mentoren\images\raphael-schwarz.png" />
     <Content Include="mentoren\images\roman-schacherl.jpg" />
@@ -221,6 +223,7 @@
     <Content Include="trainingsanleitungen\touch-develop\erste-schritte.md" />
     <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake.md" />
+    <Content Include="mentoren\gerhofer-pia.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
