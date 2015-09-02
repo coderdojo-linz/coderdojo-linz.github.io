@@ -47,11 +47,10 @@ public class Getafix extends JavaPlugin {
             }
         } else {
             if (sender instanceof Player) {
-            Player player = (Player) sender;
-            player.setHealth(20.);
-            return true;
-            }
-            else {
+                Player player = (Player) sender;
+                player.setHealth(20.);
+                return true;
+            } else {
                 sender.sendMessage("Poor guy you are no player -> can't heal you");
                 return false;
             }
