@@ -23,6 +23,7 @@
  */
 package com.bajupa.getafix;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -36,34 +37,26 @@ public class Getafix extends JavaPlugin {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        sender.sendMessage("There were " + args.length + " arguments given.");
-        sender.sendMessage("The first is " + args[0]);
-        if (label.equalsIgnoreCase("gethealth")) {
-            return handleGetHealth(sender);
-        } else {
-            return handleHeal(sender);
-        }
-    }
-    
-    private boolean handleGetHealth(CommandSender sender) {
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
-            sender.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
-            return true;
-        } else {
-            sender.sendMessage("Poor guy you are no player -> no health data available");
+        if (!(sender instanceof Player)) {
+            sender.sendMessage("Command can only be used by player");
             return false;
         }
-    }
-    
-    private boolean handleHeal(CommandSender sender) {
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
+
+        String playerName = args[0];    // first argument is player name
+        Player player;
+
+        if (playerName.equalsIgnoreCase("me")) {
+            player = (Player) sender;
+        } else {
+            player = Bukkit.getPlayer(playerName);
+        }
+
+        if (label.equalsIgnoreCase("gethealth")) {
+            player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
+            return true;
+        } else {
             player.setHealth(20.);
             return true;
-        } else {
-            sender.sendMessage("Poor guy you are no player -> can't heal you");
-            return false;
         }
     }
 }
