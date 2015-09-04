@@ -66,7 +66,8 @@ Damit du es gut erkennst habe ich die beiden Blöcke fett eingezeichnet. Nun ist
         } else {
             player.setHealth(20.);
             return true;
-        }        
+        }
+    }
 </pre>
 
 Ok, da hat sich jetzt einiges getan, das wir uns näher ansehen müssen: Zu Beginn haben wir das `if` mit der eh schon bekannten Bedingung, doch halt! Siehst du das `!` vor der Bedingung? Das bedeutet *Nicht*. Das heißt jetzt, wenn `sender` *nicht* ein `Player` (also wenn `sender` *kein*  `Player`) ist, dann geben wir eine Fehlermeldung aus. Und dann kommt da das `return false`. Das wollen wir uns auch gleich mal ansehen:
@@ -101,6 +102,7 @@ Damit haben wir nach diesem `if`-Block freie Bahn, den `sender` auf `Player` zu 
             player.setHealth(20.);
         }
         return true;
+    }
 </pre>
 
 
@@ -113,8 +115,8 @@ Jetzt wollen wir sehen, wie wir auf diese einzelnen Teile dieses Arrays zugreife
 
 <pre>
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-       <b>sender.sendMessage("There were " + args.length + " arguments given.");
-       sender.sendMessage("The first is " + args[0]);</b>
+        <b>sender.sendMessage("There were " + args.length + " arguments given.");
+        sender.sendMessage("The first is " + args[0]);</b>
        
         if (!(sender instanceof Player)) {
             sender.sendMessage("Command can only be used by player");
