@@ -5,7 +5,7 @@ description: In dieser Episode wirst du dich selbst heilen lernen
 ---
 
 # Getafix der Wunderheiler
-Vielleicht hast du schon einmal Asterix und Obelix gelesen oder einen der Filme angesehen. Dann wirst du dich sicherlich an den Druiden Miraculix erinnern, das ist der, der den Zaubertrank zubereiten kann. Wir werden in dieser und der nächsten Episode ein Plugin programmieren, mit dem du dich und andere Spieler sofort heilen kannst. Auch kannst du deine Gesundheit oder die Gesundheit anderer Spieler anzeigen. Dazu soll es folgende Befehle geben:
+Vielleicht hast du schon einmal Asterix und Obelix gelesen oder einen der Filme angesehen. Dann wirst du dich sicherlich an den Druiden Miraculix erinnern, das ist der, der den Zaubertrank zubereiten kann. Wir werden in dieser und einigen weiteren Episoden ein Plugin programmieren, mit dem du Miraculix spielen kannst. Wir fangen damit an, dass du dich und andere Spieler sofort heilen kannst. Auch kannst du deine Gesundheit oder die Gesundheit anderer Spieler anzeigen. Dazu soll es folgende Befehle geben:
 
     /gethealth me
     /gethealth OidaZocktYT
@@ -23,14 +23,15 @@ Also im Grunde zwei Kommandos:
 Wenn du dich wunderst, warum das Plugin nun *Getafix* heißt, verrate ich dir, dass auf Englisch der Druide nicht Miraculix sonder Getafix heißt. Und du hast sicher schon bemerkt, dass wir Informatiker gerne Dinge in englischer Sprache benennen. Daher kommt das. Jetzt kannst du deine Englischlehrerin oder deinen Englischlehrer abtesten, ob er oder sie die wirklich wichtige Literatur auch auf Englisch gelesen hat :-).
 
 ## Wir starten
-###Grundsätzliche Überlegungen
+
+### Grundsätzliche Überlegungen
 Jetzt wollen wir mal überlegen, was wir zum Schreiben eines Plugins, welches die Gesundheit eines Spielers ausliest und verändert, brauchen und wie wir am besten vorgehen:
 
 1. Wir müssen bei der Eingabe von ``/gethealth`` die Gesundheit des Senders ermitteln. Dazu benötigen wir eine Möglichkeit, die Gesundheit des Spielers zu ermitteln. Du erinnerst dich, dass der Spieler im `onCommand` als Parameter `sender` ansprechbar ist. Da brauchen wir dann für diesen Sender eine Methode, die irgendwas mit `health` im Namen hat. Die werden wir, nachdem du das NetBeans-Projekt angelegt hast, suchen.
-2. Damit es für den Anfang schön einfach bleibt, werden wir die Geschichte mit dem `me` oder dem Namen eines anderen Spielers noch lassen und nur auf den Befehl `/gethealth` oder `heal` (so, wie in den Screenshots oben) reagieren und immer unsere eigene Gesundheit ausgeben oder uns selbst heilen.
+2. Damit es für den Anfang schön einfach bleibt, werden wir die Geschichte mit dem `me` oder dem Namen eines anderen Spielers noch lassen und nur auf den Befehl `/gethealth` oder `/heal` (so, wie in den Screenshots oben) reagieren und immer unsere eigene Gesundheit ausgeben oder uns selbst heilen.
 
 ### Neues NetBeans-Projekt anlegen
-Anfangen tut das ganze mit bereits bekannten Arbeitsschritten. Wir legen ein Projekt an mit dem Namen ``Getafix``. Dann legst du gleich ein Package mit dem Namen ``getafix`` an (vergiss nicht, vorher deinen Namen plus eine Domain anzugeben. Bei mir hieße das ``com.bajupa.getafix``). Falls du dich nicht mehr ganz gut erinnern kannst, sieh einfach in der Episode 2 nach, wie wir ein neues Projekt und ein neues Package angelegt haben. Zum Schluss legen wir eine neue Klasse mit dem Namen ``Getafix`` an (achte bitte wieder auf die Groß- und Kleinschreibung). Kurz gesagt: du musst die ersten sechs Punkte der *Zusammenfassung für Profis* aus der zweiten Episode abgearbeitet haben.
+Anfangen tut das Ganze mit bereits bekannten Arbeitsschritten. Wir legen ein Projekt an mit dem Namen ``Getafix``. Dann legst du gleich ein Package mit dem Namen ``getafix`` an (vergiss nicht, vorher deinen Namen plus eine Domain anzugeben. Bei mir hieße das ``com.bajupa.getafix``). Falls du dich nicht mehr ganz gut erinnern kannst, sieh einfach in der Episode 2 nach, wie wir ein neues Projekt und ein neues Package angelegt haben. Zum Schluss legen wir eine neue Klasse mit dem Namen ``Getafix`` an (achte bitte wieder auf die Groß- und Kleinschreibung). Kurz gesagt: du musst die ersten sechs Punkte der *Zusammenfassung für Profis* aus der zweiten Episode abgearbeitet haben.
 
 Da das jetzt nicht mehr alles ganz neu ist für dich, wollen wir uns an dieser Stelle noch ein klein bisschen genauer umsehen. Du erinnerst dich, dass wir vom Parameter ``sender`` verschiedene Methoden aufrufen konnten (``sendMessage`` und ``getName`` im letzten Fall). Vielleicht hast du das letzte Mal schon bemerkt, dass, sobald du nach ``sender`` einen Punkt eintippst, ein Menü erscheint, in welchem alle Methoden, die du hier aufrufen kannst, aufgelistet sind. Falls das nicht der Fall ist, kannst du mit ``Strg`` und ``Space`` (also die große Taste unten für das Leerzeichen) nachhelfen, dass das Menü auch wirklich kommt. Dann sollte das ganze ca. so aussehen. Probiere es gleich mal aus:
 
@@ -44,10 +45,10 @@ Das ist jetzt noch nicht sonderlich hilfreich, weil eine Fehlermeldung drinsteht
 
 ![Javadoc info with missing Javadoc](03_getafix-Player/SelectJavadoc.png)
 
-Nun solltest du für jede Methode eine kurze Beschreibung bekommen. Ich weiß ja nicht, wie es dir geht, aber zum Thema Gesundheit hat der `sender` nix wirklich anzubieten. Damit wir hier weiterkommen, muss ich dir noch kurz eine Geschichte erzählen. Dauert auch nicht lange, versprochen:
+Nun solltest du für jede Methode eine kurze Beschreibung bekommen. Ich weiß ja nicht, wie es dir geht, aber zum Thema Gesundheit kann ich beim `sender` kein wirkliches Angebot finden. Damit wir hier weiterkommen, muss ich dir noch kurz eine Geschichte erzählen. Dauert auch nicht lange, versprochen:
 
 ## Über Menschen, Berufe, Variablen, Parameter und Datentypen
-In der letzten Episode, als wir das erste Plugin geschrieben haben, war ich ein bisschen schlampig bei meinen Erklärungen. Du erinnerst sich sicher noch an den Parameter ``sender``, mit dem wir die Spielerin, die das Kommando eingetippt hat "ansprechen" konnten und ihr eine Nachricht mit Hilfe der Methode ``sendMessage`` senden konnten.
+In der letzten Episode, als wir das erste Plugin geschrieben haben, war ich ein bisschen schlampig bei meinen Erklärungen. Du erinnerst dich sicher noch an den Parameter ``sender``, mit dem wir die Spielerin, die das Kommando eingetippt hat "ansprechen" konnten und ihr eine Nachricht mit Hilfe der Methode ``sendMessage`` senden konnten.
 
 Ja gut und ich habe dir gar nicht gesagt, warum das so funktioniert, weil ich wollte, dass wir ganz schnell unser Plugin fertig bekommen. Diese Sache hole ich jetzt nach. Du erinnerst dich ja noch, dass die leere Methode `onCommand` so ausgesehen hat:
 
@@ -143,7 +144,7 @@ Jetzt fehlt uns noch das ``plugin.yml``:
 
 Damit kannst du das Plugin nun bauen und aus dem ``dist`` Verzeichnis in dein Testserver-Verzeichnis kopieren, den Server starten und dich dann von deinem Minecraft-Client aus mit deinem Server verbinden.
 
-Als erstes achte darauf, dass du im survival mode bist (unten am Schirm sind Herzen und Becher zu sehen, die deine Gesundheit und deine Sättigung anzeigen). Wenn nicht, dann `/gamemode 0`. Probiere gleich aus, wie dein health level ist, indem du ``/gethealth`` eintippst. Dann lass dich von einem größeren Blockhaufen runterfallen oder mach sonst etwas, das deine Gesundheit verschlechtert und gib das Kommando nochmals ein. 
+Als erstes achte darauf, dass du im survival mode bist (unten am Schirm sind Herzen und Becher zu sehen, die deine Gesundheit und deine Sättigung anzeigen). Wenn du das nicht siehst, dann tippe als erstes das Kommando `/gamemode 0` ein. Probiere gleich aus, wie dein health level ist, indem du ``/gethealth`` eintippst. Dann lass dich von einem größeren Blockhaufen runterfallen oder mach sonst etwas, das deine Gesundheit verschlechtert und gib das Kommando nochmals ein. 
 
 ## Eine notwendige Erweiterung
 Wir können ja alle Minecraft-Befehle (also auch die von Plugins) in der Server-Konsole eintippen. Das probierst du am besten auch gleich aus. Achte darauf, dass in diesem Fall **kein** Schrägstrich davorkommt.
@@ -177,12 +178,20 @@ Also Houston, wir haben ein Problem: Wenn jemand in der Console seine eigene Hea
 3. Freundlich wäre, wenn wir, falls der `sender` **nicht** vom Datentyp `Player` ist, dem `sender` mitteilten, dass er eben kein `Player` ist und deswegen er keine Gesundheitsdaten hat, der Arme.
 
 Zum Glück gibts für alle drei Dinge eine Lösung. Also der Reihe nach:
+<ol>
+<li> `sender instanceof Player` ist eine Aussage, die eindeutig mit wahr oder falsch beantwortet werden kann (so ähnlich wie "jetzt scheint die Sonne"). Wenn ein Spieler im Spiel unser Command aufruft, ist `sender instanceof Player` wahr (auf Englisch `true`), wenn jemand in der Console unser Command aufruft ist `sender instanceof Player` aber falsch (auf Englisch `false`)</li>
 
-1. `sender instanceof Player` ist eine Aussage, die eindeutig mit wahr oder falsch beantwortet werden kann (so ähnlich wie "jetzt scheint die Sonne"). Wenn ein Spieler im Spiel unser Command aufruft, ist `sender instanceof Player` wahr (auf Englisch `true`), wenn jemand in der Console unser Command aufruft ist `sender instanceof Player` aber falsch (auf Englisch `false`)
-2. Wenn wir Code ausführen wollen, der nur im Fall, wenn die Aussage `sender instanceof Player` wahr ist dann gibt es in Java das schöne Wort `if`. Insgesamt sieht das dann so aus:<pre>if (sender instanceof Player) {
+<li>Wenn wir Code ausführen wollen, der nur im Fall, wenn die Aussage `sender instanceof Player` wahr ist dann gibt es in Java das schöne Wort `if`. Insgesamt sieht das dann so aus:
+
+<pre>
+if (sender instanceof Player) {
 }
-</pre>Achte darauf, dass die Aussage (manchmal sagen wir auch einfach die Bedingung) in einem runden Klammernpaar geschrieben werden muss (so ähnlich wie die Parameter einer Methode). Zwischen den geschwungenen Klammern kommt dann der Code, der ausgeführt werden soll.
-3. Für den Fall, dass die Aussage nicht wahr ist, und wir auch hier Code ausführen wollen, gibt es das Wort `else`. Alles zusammen sieht das dann so aus:
+</pre>
+
+Achte darauf, dass die Aussage (meistens sagen wir einfach die Bedingung) in einem runden Klammernpaar geschrieben werden muss (so ähnlich wie die Parameter einer Methode). Zwischen den geschwungenen Klammern kommt dann der Code, der ausgeführt werden soll, wenn die Bedingung wahr ist.
+</li>
+
+<li>Für den Fall, dass die Aussage nicht wahr ist, und wir in diesem Fall anderen Code ausführen wollen, gibt es das Wort `else`. Alles zusammen sieht das dann so aus:
 
 <pre>
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -197,10 +206,12 @@ Zum Glück gibts für alle drei Dinge eine Lösung. Also der Reihe nach:
         }</b>
      }
 </pre>
-
+</li>
+</ol>
 Gut, dann bauen und testen!
 
 ## Version 2: /heal
+
 ### Das yml-file erweitern
 Wir müssen unser Plugin so umschreiben, dass es nun auf zwei verschiedene Kommandos reagiert. Beginnen wir einmal damit, dass es überhaupt auf ein weiteres Kommando reagiert. Dazu erweitern wir das `plugin.yml`.
 
@@ -223,7 +234,7 @@ Wir müssen unser Plugin so umschreiben, dass es nun auf zwei verschiedene Komma
         </b>
 </pre>
 
-Wir probieren das gleich aus, ob es funktioniert. Also bauen und dann kannst du in deinem Testserver-Verzeichnis einen weiteren Ordner namens **update** anlegen und dort kopierst du nun das `Getafix.jar` rein. Wenn dein Server vom letzten Test noch läuft, dann tippst du in der Konsole einfach `reload` ein und das neue jar-File wird geladen. Du erkennst es daran, dass das **update**-Verzeichnis nun leer ist. Wenn du nun `/heal` in die Konsole eintippst bekommst du die Fehlermeldung, dass du in der Konsole keine Gesundheitsdaten zur Verfügung hast. Das ist noch nicht ideal, aber logisch, weil ja noch nix programmiert wurde. Wir sehen aber, dass unser Plugin schon mal auf den neuen Befehl reagiert.
+Wir probieren das gleich aus, ob es funktioniert. Also baust du und dann kannst du in deinem Testserver-Verzeichnis einen weiteren Ordner namens **update** anlegen und dort kopierst du nun das `Getafix.jar` rein. Wenn dein Server vom letzten Test noch läuft, dann tippst du in der Konsole einfach `reload` ein und das neue jar-File wird geladen. Du erkennst es daran, dass das **update**-Verzeichnis nun leer ist. Wenn du nun `heal` in die Konsole eintippst bekommst du die Fehlermeldung, dass du in der Konsole keine Gesundheitsdaten zur Verfügung hast. Das ist noch nicht ideal, aber logisch, weil ja noch nix programmiert wurde. Wir sehen aber, dass unser Plugin schon mal auf den neuen Befehl reagiert.
 
 ### Wieder ein paar Überlegungen
 Nun müssen wir uns überlegen, was wir eigentlich wollen.
@@ -231,7 +242,7 @@ Nun müssen wir uns überlegen, was wir eigentlich wollen.
 1. Wir wollen unterscheiden, welches Kommando der Sender jetzt eingetippt hat. Dazu können wir einen weiteren Parameter, nämlich ``label`` verwenden.
 2. Wir wollen, je nachdem, welches Kommando eingegeben wurde, unterschiedliche Code-Teile ausführen. Da klingelt's wahrscheinlich schon: das wird wieder einmal ein Fall für unser `if`.
 
-Naja, das sieht ja schon ganz gut aus. Wir wollen uns jetzt die beiden Punkte 
+Naja, das sieht ja schon ganz gut aus. 
 
 ### Erste Code-Erweiterungen
 Als erstes sehen wir uns die Sache mit dem `label` an. Du erinnerst dich? `label` ist der Name und `String` ist der Datentyp. `String`s sind Zeichenketten, das hatten wir schon mal bei der Methode `sendMessage`, der wir einen Text zum Anzeigen mitgegeben haben und das war auch der mit dem + zum Aneinanderkleben von mehreren Strings. So ein String kann aber noch mehr.
@@ -253,7 +264,7 @@ Als erstes sehen wir uns aber an, ob im `label` auch wirklich das Kommando drinn
      }
 </pre>
 
-Wenn du das jetzt baust und das jar neu lädst müsste bei Aufruf von `/gethealth` oder auch `heal` immer das Kommando, das du eingegeben hast, ausgegeben werden. Naja, damit haben wir doch schon mal unser Unterscheidungskriterium. Jetzt wollen wir das ganze in ein `if` verpacken und dann haben wir wieder schön unterscheidbare Code-Teile, die je nach Eingabe ausgeführt werden.
+Wenn du das jetzt baust und das jar neu lädst müsste bei Aufruf von `/gethealth` oder auch `/heal` immer das Kommando, das du eingegeben hast, ausgegeben werden. Naja, damit haben wir doch schon mal unser Unterscheidungskriterium. Jetzt wollen wir das ganze in ein `if` verpacken und dann haben wir wieder schön unterscheidbare Code-Teile, die je nach Eingabe ausgeführt werden.
 
 <pre>
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -268,10 +279,10 @@ Wenn du das jetzt baust und das jar neu lädst müsste bei Aufruf von `/gethealt
                 return false;
             }
         <b>}
-       else {
-           sender.sendMessage("Healing will be done later, sorry");
-           return true;
-       }</b>
+        else {
+            sender.sendMessage("Healing will be done later, sorry");
+            return true;
+        }</b>
      }
 </pre>
 
