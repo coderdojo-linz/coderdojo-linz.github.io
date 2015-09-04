@@ -49,7 +49,7 @@ Du siehst ja sicherlich, dass sich die ganze Methode in zwei große Blöcke unte
 1. Die Behandlung von `/gethealth`
 2. Die Behandlung von `/heal`
 
-Damit du es gut erkennst habe ich die beiden Blöcke fett eingezeichnet. Nun ist es aber so, dass die beiden Blöcke selbst wieder sehr ähnlich sind. Sie überprüfen beide, ob `sender` eh ein `Player` ist und machen dann das Gewünschte oder geben eine Fehlermeldung aus. Da könnte wir doch die Überprüfung, ob `sender` ein `Player` ist gleich am Anfang der Methode genau einmal machen und dann erst das Kommando ausführen.
+Damit du es gut erkennst habe ich die beiden Blöcke fett eingezeichnet. Nun ist es aber so, dass die beiden Blöcke selbst wieder sehr ähnlich sind. Sie überprüfen beide, ob `sender` eh ein `Player` ist und machen dann das Gewünschte oder geben eine Fehlermeldung aus. Da könnten wir doch die Überprüfung, ob `sender` ein `Player` ist gleich am Anfang der Methode genau einmal machen und dann erst das Kommando ausführen.
 
 <pre>
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -79,7 +79,7 @@ Gut wirst du sagen, das ist ja alles recht gut und schön, aber warum steht da n
     
 Den hinteren Teil ab `onCommand` haben wir uns ja schon letztes Mal angesehen (du weißt schon: `onCommand` ist der Name, dann kommen die Parameter). Heute wollen wir uns die ersten beiden Wörter ansehen:
 
-1. `public` heißt, dass die Methode von außen aufgerufen wird. Stell dir das so vor, dass der Spieler die Methode `onCommand` durch das Eintippen des Kommandos `/gethealth` oder `/heal` aufruft. Das passiert aber außerhalb dieser Klasse. Wenn du die neue Methode ansiehst, dann ist die `private` weil sie nur von `onCommand` aber nicht von irgendwo außerhalb dieser Klasse aufgerufen wird.
+1. `public` heißt, dass die Methode von außen aufgerufen wird. Stell dir das so vor, dass der Spieler die Methode `onCommand` durch das Eintippen des Kommandos `/gethealth` oder `/heal` aufruft. Das passiert aber außerhalb dieser Klasse. Wenn wir dann gegen Ende dieser Episode neue Methoden hinzufügen, dann werden die `private` sein weil sie nur von `onCommand` aber nicht von irgendwo außerhalb dieser Klasse aufgerufen werden.
 2. `boolean` heißt, dass beim Verlassen der Methode ein Wert des Datentyps `boolean` (das ist entweder `true` oder `false`, ja genau so wie bei der Bedingung in einer `if`-Bedingung) zurückgegeben wird.
 
 Also heißt das, dass `onCommand` nicht einfach so verlassen werden kann, sondern, dass ein boolescher Wert angegeben werden muss. Deswegen steht hier auch noch das `false`. Wir könnten auch `true` zurückgeben, aber es gibt die Konvention, dass `onCommand` den Wert `true` genau dann zurückgibt, wenn es das Kommando *erfolgreich* ausführen konnte. Das ist aber hier nicht der Fall, deswegen `false`.
@@ -113,7 +113,7 @@ Jetzt wollen wir sehen, wie wir auf diese einzelnen Teile dieses Arrays zugreife
 
 <pre>
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        <b>sender.sendMessage("There were " + args.length + " arguments given.");
+       <b>sender.sendMessage("There were " + args.length + " arguments given.");
        sender.sendMessage("The first is " + args[0]);</b>
        
         if (!(sender instanceof Player)) {
@@ -153,14 +153,14 @@ public boolean onCommand(CommandSender sender, Command command, String label, St
             return false;
         }
 <b>
-       String playerName = args[0];    // first argument is player name
-       Player player;
+        String playerName = args[0];    // first argument is player name
+        Player player;
 
-       if (playerName.equalsIgnoreCase("me")) {
-           player = (Player) sender;
-       } else {
-           player = Bukkit.getPlayer(playerName);
-       }
+        if (playerName.equalsIgnoreCase("me")) {
+            player = (Player) sender;
+        } else {
+            player = Bukkit.getPlayer(playerName);
+        }
 </b>
         if (label.equalsIgnoreCase("gethealth")) {
             player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
@@ -171,7 +171,7 @@ public boolean onCommand(CommandSender sender, Command command, String label, St
     }
 </pre>
 
-Du siehst, wir haben nur den mittleren Teil verändert (der fett gedruckte Teil).  Hier speichern wir uns zuerst den Spielernamen in eine eigen Variable, damit das ganze einfacher lesbar wird. 
+Du siehst, wir haben nur den mittleren Teil verändert (der fett gedruckte Teil).  Hier speichern wir uns zuerst den Spielernamen in eine eigene Variable, damit das ganze einfacher lesbar wird. 
 
 Dann kommt der Teil mit dem Rausfinden des Spielers. Zuerst deklarieren wir nur eine Variable `player`, ohne ihr sofort einen Wert zuzuweisen und dann kommt das `if`: Wenn der `playerName` den Wert `me` hat, dann machen wir, wie oben überlegt, den üblichen cast. Wenn `playerName` aber einen anderen Wert hat, dann holen wir uns den `Player`. Dafür gibt es von `Bukkit` eine eigene Methode `getPlayer`. Cool, nicht?
 
@@ -180,8 +180,8 @@ Damit geht es wieder ans Bauen und Probieren. Sinnvollerweise änderst du die Ve
 ## Ein paar notwendige Erweiterungen
 Und wie sind deine Tests verlaufen? Also mir sind folgende Dinge aufgefallen.
 
-1. Wenn ich vergesse einen Namen oder auch `me` einzugeben, kommt wieder eine Exception
-2. Wenn ich einen Namen eingebe, der grad nicht auf meinem Server Spielt, bekomme ich auch eine Exception.
+1. Wenn ich vergesse einen Namen oder auch `me` einzugeben, kommt wieder eine Exception. Das kommt daher, weil wir auf ein Element des Arrays `args` zugreifen wollen, das es gar nicht gibt.
+2. Wenn ich einen Namen eingebe, der grad nicht auf meinem Server Spielt, bekomme ich auch eine Exception. Das kommt daher, dass `player` dann keinen gültigen Wert haben kann (woher auch, wenns den Spieler auf dem Server gar nicht gibt) und damit die Methoden `player.sendMessage` und `player.setHealth` nicht ausgeführt werden können.
 
 Das müssen wir unbedingt beheben, weil so einen Mist werden wir sicherlich nicht ausliefern.
 
@@ -197,7 +197,7 @@ Um den Fehler Nummer 2 zu beheben, müssen wir wissen, dass `Bukkit.getPlayer` d
         
         <b>if (args.length != 1) {
             return false;
-       }</b>
+        }</b>
        
         String playerName = args[0];    // first argument is player name
         Player player;
@@ -210,7 +210,7 @@ Um den Fehler Nummer 2 zu beheben, müssen wir wissen, dass `Bukkit.getPlayer` d
         
         <b>if (player == null) {
             sender.sendMessage("Player " + playerName + " is not online");
-       }</b>
+        }</b>
 
         if (label.equalsIgnoreCase("gethealth")) {
             player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
@@ -244,7 +244,7 @@ Und genauso wollen wir unsere Methode jetzt strukturieren. Im folgenden Code sie
         
         if (args.length != 1) {
             return false;
-       }</b>
+        }</b>
        
         String playerName = args[0];    // first argument is player name
         Player player;
@@ -277,7 +277,7 @@ Nachdem du den Menüpunkt ausgewählt hast, bekommst du folgendes Bild
 
 ![Name extracted method](04_getafix-Arguments/ExtractMethodStep2.png)
 
-Wir benennen die neue Methode `argumentCannotBeHandled`, da wir in dem Code ja die beiden Situationen rausfiltern, wo wir das Kommando nicht sinnvoll ausführen können. Weiters legen wir fest, dass ihr **Access private** sein soll. Wenn du jetzt **Ok** klickst, dann sollte dein Code folgendermaßen aussehen.
+Wir benennen die neue Methode `argumentCannotBeHandled`, da wir in dem Code ja die beiden Situationen rausfiltern, wo wir das Kommando nicht sinnvoll ausführen können. Weiters legen wir fest, dass ihr **Access private** sein soll, weil sie eben nur aus `onCommand` aufgerufen wird und nicht von irgendwo außerhalb der Klasse (beispielsweise vom Spieler). Wenn du jetzt **Ok** klickst, dann sollte dein Code folgendermaßen aussehen.
 <pre>
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         <b>if (commandCannotBeHandled(sender, args)) return false;</b>
@@ -377,10 +377,10 @@ Nun der dritte Block:
         String playerName = args[0];    // first argument is player name
         Player player = getPlayer(playerName, sender);
         <b>
-       if (player == null) {
-           sender.sendMessage("Player " + playerName + " is not online");
-           return false;
-       }</b>
+        if (player == null) {
+            sender.sendMessage("Player " + playerName + " is not online");
+            return false;
+        }</b>
 
         if (label.equalsIgnoreCase("gethealth")) {
             player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
@@ -423,10 +423,10 @@ Und zum Schluss noch der vierte Streich:
         if (playerIsOffline(player, sender, playerName)) return false;
 
         <b>if (label.equalsIgnoreCase("gethealth")) {
-           player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
-       } else {
-           player.setHealth(20.);
-       }</b>
+            player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
+        } else {
+            player.setHealth(20.);
+        }</b>
         return true;
     }
 </pre>
@@ -515,7 +515,7 @@ Dazu kann man den `sender` mit der methode `sender.isOp` fragen, ob er op ist. D
 <pre>
     private boolean commandCanBeHandled(CommandSender sender, String[] args) {
         <b>if (!(sender instanceof Player) || !sender.isOp()) {
-          sender.sendMessage("Command can only be used by player who is op");</b>
+            sender.sendMessage("Command can only be used by player who is op");</b>
             return false;
         }
         if (args.length != 1) {
