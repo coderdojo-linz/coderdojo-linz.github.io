@@ -41,6 +41,10 @@ public class Getafix extends JavaPlugin {
             sender.sendMessage("Command can only be used by player");
             return false;
         }
+        
+        if (args.length != 1) {
+            return false;
+        }
 
         String playerName = args[0];    // first argument is player name
         Player player;
@@ -49,6 +53,11 @@ public class Getafix extends JavaPlugin {
             player = (Player) sender;
         } else {
             player = Bukkit.getPlayer(playerName);
+        }
+        
+        if (player == null) {
+            sender.sendMessage("Player " + playerName + " is not online");
+            return false;
         }
 
         if (label.equalsIgnoreCase("gethealth")) {
