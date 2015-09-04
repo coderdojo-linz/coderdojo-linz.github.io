@@ -510,7 +510,28 @@ Du siehst, dass unser `onCommand` damit viel kürzer und leichter lesbar geworde
 ## Eine letzte Sache
 Du musst zugeben, dass es schon ein wenig komisch ist, dass sich dann jeder gleich selbst oder andere heilen kann, wenn er mal wo runtergefallen ist oder von einem Creeper angegriffen worden ist. Damit ist die Sache mit der Gesundheit bei den Minecraft-Spielen ziemlich witzlos geworden. Wir wollen dem entgegenwirken und sagen, dass nur mehr *op*s unsere Kommandos aufrufen dürfen.
 
-## Ideen für weitere Entwicklungen
-Jetzt sind wir fertig für heute. Ich glaube wir haben ein ziemlich tolles Programm durchgemacht und du warst wirklich fleißig. Sie dir das Programm morgen oder in ein paar Tagen nochmals genau an und versuche genau zu verstehen, warum die Sache jetzt so funktioniert. Wenn dir etwas unklar ist, schreib es auf und frage nächstes Mal deinen Mentor.
+Dazu kann man den `sender` mit der methode `sender.isOp` fragen, ob er op ist. Das war ja einfach. Was wäre nun eine sinnvolle Methode, in der wir unsere Abfrage platzieren könnten? Man kann sagen, dass dies ja eine Bedingung ist, ob das Kommando ausgeführt werden darf. Daher gehen wir in unsere Methode `commandCanBeHandled` und geben zu unserer Bedingung `!(sender instanceof Player)` noch dazu, dass er nicht op sein darf und ändern die Fehlermeldung leicht. Die Methode sollte dann so aussehen:
 
-Falls du Lust hast kannst du ja unser Programm verändern: 
+<pre>
+    private boolean commandCanBeHandled(CommandSender sender, String[] args) {
+        <b>if (!(sender instanceof Player) && !sender.isOp()) {
+          sender.sendMessage("Command can only be used by player who is op");</b>
+            return false;
+        }
+        if (args.length != 1) {
+            return false;
+        }
+        return true;
+    }
+</pre>
+
+Falls dir noch aufgefallen ist, dass in der Zeile `if (args.length != 1) {` am Rand eine Glühbirne angezeigt wird, kannst du ja mal draufklicken und `The if statement ist redundant` auswählen. Was passiert und warum funktioniert das?
+
+## Ideen für weitere Entwicklungen
+Jetzt sind wir fertig für heute. Ich glaube wir haben ein ziemlich tolles Programm durchgemacht und du warst wirklich fleißig. Sieh dir das Programm morgen oder in ein paar Tagen nochmals genau an und versuche genau zu verstehen, warum das alles so funktioniert. Wenn dir etwas unklar ist, schreib es auf und frage nächstes Mal deinen Mentor.
+
+Falls du Lust hast kannst du ja unser Programm verändern. Einige Ideen gefällig?
+
+1. Man darf sich nicht mehr selber heilen. D. h. du musst `me` als mögliches Argument rausnehmen und aufpassen, dass der Name des Spielers, der geheilt werden soll nicht gleich dem Namen des Senders ist.
+2. Heilen bedeutet nicht, dass man gleich auf 20 Gesundheitspunkte kommt, sondern man bekommt 3 Punkte dazu. Was passiert, wenn du jemanden, der 18 Punkte hat heilst? Hat der dann 21? Das darf natürlich nicht passieren
+3. Das Kommando `gethealth` darf von jedem ausgeführt werden, aber `heal` nur von ops.
