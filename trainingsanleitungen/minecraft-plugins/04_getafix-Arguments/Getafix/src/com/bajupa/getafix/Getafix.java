@@ -37,35 +37,55 @@ public class Getafix extends JavaPlugin {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!(sender instanceof Player)) {
-            sender.sendMessage("Command can only be used by player");
-            return false;
-        }
-        
-        if (args.length != 1) {
+        if (!commandCanBeHandled(sender, args)) {
             return false;
         }
 
         String playerName = args[0];    // first argument is player name
-        Player player;
+        Player player = getPlayer(playerName, sender);
 
+        if (playerIsOffline(player, sender, playerName)) {
+            return false;
+        }
+
+        handleCommand(label, player);
+        return true;
+    }
+
+    private boolean commandCanBeHandled(CommandSender sender, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage("Command can only be used by player");
+            return false;
+        }
+        if (args.length != 1) {
+            return false;
+        }
+        return true;
+    }
+
+    private Player getPlayer(String playerName, CommandSender sender) {
+        Player player;
         if (playerName.equalsIgnoreCase("me")) {
             player = (Player) sender;
         } else {
             player = Bukkit.getPlayer(playerName);
         }
-        
+        return player;
+    }
+
+    private boolean playerIsOffline(Player player, CommandSender sender, String playerName) {
         if (player == null) {
             sender.sendMessage("Player " + playerName + " is not online");
-            return false;
+            return true;
         }
+        return false;
+    }
 
+    private void handleCommand(String label, Player player) {
         if (label.equalsIgnoreCase("gethealth")) {
             player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
-            return true;
         } else {
             player.setHealth(20.);
-            return true;
         }
     }
 }
