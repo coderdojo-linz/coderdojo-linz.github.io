@@ -514,7 +514,7 @@ Dazu kann man den `sender` mit der methode `sender.isOp` fragen, ob er op ist. D
 
 <pre>
     private boolean commandCanBeHandled(CommandSender sender, String[] args) {
-        <b>if (!(sender instanceof Player) && !sender.isOp()) {
+        <b>if (!(sender instanceof Player) || !sender.isOp()) {
           sender.sendMessage("Command can only be used by player who is op");</b>
             return false;
         }
@@ -524,6 +524,8 @@ Dazu kann man den `sender` mit der methode `sender.isOp` fragen, ob er op ist. D
         return true;
     }
 </pre>
+
+Die Bedingung in diesem `if` Statement müssen wir folgendermaßen lesen: Wenn `sender` kein `Player` ist *oder* wenn `sender` kein op ist, dann darf das Kommando nicht ausgeführt werden. Die beiden geraden Striche (`||`) bedeuten also *oder* und damit kannst du Bedienungen in einem `if` verknüpfen. Falls du mal Bedingungen mit einem *und* verknüpfen willst, verwendest du `&&`.
 
 Falls dir noch aufgefallen ist, dass in der Zeile `if (args.length != 1) {` am Rand eine Glühbirne angezeigt wird, kannst du ja mal draufklicken und `The if statement ist redundant` auswählen. Was passiert und warum funktioniert das?
 
