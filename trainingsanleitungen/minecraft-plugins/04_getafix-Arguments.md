@@ -12,7 +12,7 @@ In der letzten Episode haben wir begonnen, ein Plugin für die Befehle `gethealt
     /heal me
     /heal OidaZocktYT
 
-![How the command looks like](03_getafix-Player/Command.png)
+![How the command looks like](04_getafix-Arguments/Command.png)
 
 ## Am Anfang ein wenig Zusammenräumen
 Ich habe dir ja in der letzten Episode die Lösung für das `/heal` Kommando versprochen. Also am Ende sollte deine Methode `onCommand` so aussehen:
