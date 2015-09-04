@@ -53,7 +53,7 @@ public class Getafix extends JavaPlugin {
     }
 
     private boolean commandCanBeHandled(CommandSender sender, String[] args) {
-        if (!(sender instanceof Player) && !sender.isOp()) {
+        if (!(sender instanceof Player) || !sender.isOp()) {
             sender.sendMessage("Command can only be used by player who is op");
             return false;
         }
