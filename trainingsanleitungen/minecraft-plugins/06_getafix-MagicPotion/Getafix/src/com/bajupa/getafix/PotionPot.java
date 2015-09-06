@@ -23,35 +23,26 @@
  */
 package com.bajupa.getafix;
 
-import org.bukkit.entity.EntityType;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.UUID;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
-import org.bukkit.event.entity.EntityDamageEvent;
 
 /**
  *
  * @author P. Bauer <p.bauer@htl-leonding.ac.at>
  */
-public class DamageEventListener implements Listener {
+class PotionPot {
+    private final Set<UUID> playersWhoDrunk;
 
-    private final PotionPot potionPot;
-
-    DamageEventListener(PotionPot potionPot) {
-        this.potionPot = potionPot;
+    public PotionPot() {
+        playersWhoDrunk = new TreeSet<>();
+    }
+    void add(UUID uniqueId) {
+        playersWhoDrunk.add(uniqueId);
     }
 
-    @EventHandler
-    public void onDamageEvent(EntityDamageEvent event) {
-        if (event.getEntityType() != EntityType.PLAYER) {
-            return;
-        }
-        Player threatenedPlayer = (Player) event.getEntity();
-        if (potionPot.hasBeenDrunkenBy(threatenedPlayer)) {
-            threatenedPlayer.sendMessage("oops");
-            event.setCancelled(true);
-        } else {
-            threatenedPlayer.sendMessage("Poor guy, no magic potion");
-        }
+    boolean hasBeenDrunkenBy(Player damagedPlayer) {
+        return playersWhoDrunk.contains(damagedPlayer.getUniqueId());
     }
 }

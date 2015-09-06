@@ -2,7 +2,7 @@
 ---
 name: Getafix
 main: com.bajupa.getafix.Getafix
-version: 0.5.2
+version: 0.6.0
 authors:
     - P. Bauer
 description: A miraculous healing plugin.
@@ -13,3 +13,6 @@ commands:
     heal:
         description: Brings your health to the top level
         usage: /heal me | <player name>
+    magicpotion:
+        description: Gives a magic potion to a player
+        usage: /magicpotion <player name>

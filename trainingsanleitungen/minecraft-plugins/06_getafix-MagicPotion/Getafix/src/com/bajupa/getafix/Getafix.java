@@ -34,10 +34,12 @@ import org.bukkit.plugin.java.JavaPlugin;
  * @author P. Bauer <p.bauer@htl-leonding.ac.at>
  */
 public class Getafix extends JavaPlugin {
+    private PotionPot potionPot;
 
     @Override
     public void onEnable() {
-        getServer().getPluginManager().registerEvents(new DamageEventListener(), this);
+        potionPot = new PotionPot();
+        getServer().getPluginManager().registerEvents(new DamageEventListener(potionPot), this);
     }
 
     
@@ -54,7 +56,7 @@ public class Getafix extends JavaPlugin {
             return false;
         }
 
-        handleCommand(label, player);
+        handleCommand(sender, label, player);
         return true;
     }
 
@@ -84,11 +86,15 @@ public class Getafix extends JavaPlugin {
         return false;
     }
 
-    private void handleCommand(String label, Player player) {
+    private void handleCommand(CommandSender sender, String label, Player player) {
         if (label.equalsIgnoreCase("gethealth")) {
-            player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
-        } else {
+            sender.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
+        } else if (label.equalsIgnoreCase("heal")) {
             player.setHealth(20.);
+            sender.sendMessage("Healed player " + player.getName());
+        } else {
+            potionPot.add(player.getUniqueId());
+            sender.sendMessage("Gave player " + player.getName() + " some magic potion");
         }
     }
 }
