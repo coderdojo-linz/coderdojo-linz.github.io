@@ -9,7 +9,7 @@ In der letzten Episode haben wir gelernt, wie man auf Events horchen und reagier
 
     /magigpotion OidaZocktYT
 
-Mit diesem Kommando (das natürlich wieder nur von ops verwendet werden darf) ist der Spieler *OidaZocktYT* unbesiegbar, das heißt, er verliert keine Gesundheit mehr. Kommen wir noch dazu, das auch mit Zeitablauf zu machen?
+Mit diesem Kommando (das natürlich wieder nur von ops verwendet werden darf) ist der Spieler *OidaZocktYT* unbesiegbar, das heißt, er verliert keine Gesundheit mehr. Kommen wir noch dazu, das auch mit Zeitablauf zu machen oder ist es besser zusammenzuräumen und die Command-Handler einzuführen?
 
 ![How the command looks like](06_getafix-Arguments/Command.png)
 
@@ -34,6 +34,7 @@ Jetzt können wir den Event des Damage abfangen. Das passiert aber immer und fü
 
 ## Ein wenig zusammenräumen
 
+## Die Liste der Leute, die Zaubertrank getrunken haben
 
 ## Ideen für weitere Entwicklungen
 Der Zaubertrank soll natürlich nicht unendlich lange wirken. Das werden wir in der nächsten Episode fixen. Außerdem werden wir die Behandlung der einzelnen Kommandos ein wenig zusammenräumen. 
