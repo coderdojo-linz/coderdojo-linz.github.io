@@ -16,3 +16,5 @@ commands:
     magicpotion:
         description: Gives a magic potion to a player
         usage: /magicpotion <player name>
+    listpotiondrinkers:
+        description: Lists the players

@@ -45,4 +45,8 @@ class PotionPot {
     boolean hasBeenDrunkenBy(Player damagedPlayer) {
         return playersWhoDrunk.contains(damagedPlayer.getUniqueId());
     }
+
+    Iterable<UUID> getDrinkers() {
+        return playersWhoDrunk;
+    }
 }

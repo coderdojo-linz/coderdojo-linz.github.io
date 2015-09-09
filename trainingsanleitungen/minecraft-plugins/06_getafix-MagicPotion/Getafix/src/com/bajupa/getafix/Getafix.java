@@ -23,6 +23,7 @@
  */
 package com.bajupa.getafix;
 
+import java.util.UUID;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -34,6 +35,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  * @author P. Bauer <p.bauer@htl-leonding.ac.at>
  */
 public class Getafix extends JavaPlugin {
+
     private PotionPot potionPot;
 
     @Override
@@ -42,20 +44,24 @@ public class Getafix extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new DamageEventListener(potionPot), this);
     }
 
-    
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (label.equalsIgnoreCase("listpotiondrinkers")) {
+            return handleListPotionDrinkers(sender);
+        } else {
+            return handlePlayerRelatedCommands(sender, args, label);
+        }
+    }
+
+    private boolean handlePlayerRelatedCommands(CommandSender sender, String[] args, String label) {
         if (!commandCanBeHandled(sender, args)) {
             return false;
         }
-
         String playerName = args[0];    // first argument is player name
         Player player = getPlayer(playerName, sender);
-
         if (playerIsOffline(player, sender, playerName)) {
             return false;
         }
-
         handleCommand(sender, label, player);
         return true;
     }
@@ -96,5 +102,13 @@ public class Getafix extends JavaPlugin {
             potionPot.add(player.getUniqueId());
             sender.sendMessage("Gave player " + player.getName() + " some magic potion");
         }
+    }
+
+    private boolean handleListPotionDrinkers(CommandSender sender) {
+        for (UUID drinkerId : potionPot.getDrinkers()) {
+            Player p = Bukkit.getPlayer(drinkerId);
+            sender.sendMessage(p.getName());
+        }
+        return true;
     }
 }
