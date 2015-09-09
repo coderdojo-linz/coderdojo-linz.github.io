@@ -11,6 +11,8 @@ Damit dein Computer ein Minecraft-Server wird, musst du eine bestimmte Software 
 
 Also, um deinen Computer zu einem Minecraft-Server zu machen, musst du eine Server-Software, den "Minecraft-Server" installieren, alles klar?
 
+Zum Testen brauchst du weiters natürlich einen Minecraft-Client und einen gültigen Minecraft-Account. Achte bitte darauf, dass sog. "Cracked-Versions" des Minecraft-Clients nicht funktionieren, weil man sich damit nicht auf einen anderen Server verbinden kann. Nun wären alle wichtigen Fragen geklärt und wir können loslegen.
+
 ## Download Java
 Minecraft ist ein Java-Programm. Um Java-Programme laufen lassen zu können, musst du die Java Virtual Machine (JVM) auf deinem Computer installiert haben. Damit sich die ganze Installiererei auszahlt, ist auch noch NetBeans (das Programm, mit dem wir dann Java Programme schreiben werden) ein Java-Programm.
 
@@ -38,7 +40,7 @@ Nun öffen wir im Browser die Adresse <http://www.oracle.com/technetwork/java/ja
 
 Auja, und den Radio-Button mit dem du das License Agreement akzeptierst, darfst du auch nicht vergessen, sonst wirds nix mit dem Download.
 
-Wenn das exe auf deinem Computer heruntergeladen ist, startest du es und folgst den Installationsanweisungen. Wenn dir etwas komisch vorkommt, frag einen deiner Mentoren.
+Wenn das exe auf deinem Computer heruntergeladen ist, startest du es und folgst den Installationsanweisungen. Wenn dir etwas komisch vorkommt, frag eineN deiner MentorInnen.
 
 ### Unter MacOS
 
@@ -48,7 +50,7 @@ Du öffnest im Browser die Adresse <http://www.oracle.com/technetwork/java/javas
 
 Auja, und den Radio-Button mit dem du das License Agreement akzeptierst, darfst du auch nicht vergessen, sonst wirds nix mit dem Download.
 
-Wenn das dmg vollständig runtergeladen ist machst du einen Doppelklick auf das dmg in deinem Download-Folder, startest den Installer und folgst den Anweisungen. Wenn dir etwas komisch vorkommt, frag einen deiner Mentoren.
+Wenn das dmg vollständig runtergeladen ist machst du einen Doppelklick auf das dmg in deinem Download-Folder, startest den Installer und folgst den Anweisungen. Wenn dir etwas komisch vorkommt, frag eineN deiner MentorInnen.
 
      
 ### Großeltern-Imponier-Wissen
