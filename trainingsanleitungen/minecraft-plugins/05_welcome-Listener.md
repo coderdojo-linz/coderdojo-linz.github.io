@@ -14,11 +14,11 @@ Bisher haben wir in unseren Plugins immer etwas gemacht, sobald vom Spieler oder
 * Wenn ein Sign geändert wird
 * ...
 
-Du kannst unter `org.bukkit.event.*` die Liste aller Events ansehen. Wir fangen nun mit einem einfachen Event an. Wenn ein neuer Spieler deinem Server beitritt wollen wir ihn freundlich begrüßen, wenn er ihn verlässt soll er freundlich verabschiedet werden und wenn die Spieler miteinander chatten wollen wir die Nachrichten der ops in einer speziellen Farbe darstellen.
+Du kannst unter `org.bukkit.event.*` die Liste aller Events ansehen. Wir fangen nun mit einem einfachen Event an. Wenn ein neuer Spieler deinem Server beitritt wollen wir ihn freundlich begrüßen, wenn er ihn verlässt soll er freundlich verabschiedet werden. Im folgenden Screenshot siehst du die Extrabegrüßung, die dein Server dann darstellen wird.
 
-![How the command looks like](06_getafix-Arguments/Command.png)
+![How the command looks like](05_welcome-Listener/WelcomeMsg.png)
 
-Da diese Listender sehr gut zum Thema Begrüßen passt, kannst du sie zu deinem ersten Plugin (das mit dem `/sayhello`) dazugeben oder auch ein neues Projekt beginnen, wie du willst.
+Außerdem werden wir, wenn die Spieler miteinander chatten, die Nachrichten der ops in einer speziellen Farbe darstellen. Da diese Listender sehr gut zum Thema Begrüßen passt, kannst du sie zu deinem ersten Plugin (das mit dem `/sayhello`) dazugeben oder auch ein neues Projekt beginnen, wie du willst.
 
 ## Die Listener-Klasse
 Wenn du dein erstes Plugin nicht erweitern willst, dann musst du wieder ein neues Projekt erstellen, ein neues Package und darin eine neue Klasse (`com.bajupa.welcome.Welcome`). Gut, jetzt sind wir bereit, unseren ersten Listener einzubauen.
@@ -98,7 +98,7 @@ public void onEnable() {
 ## Auch eine schöne Verabschiedung
 Damit wir das mit den Event Handlern gleich ein wenig üben, schlage ich vor, dass wir noch einen zweiten Handler zur Verabschiedung, also wenn ein Spieler den Server verlässt, hinzufügen. Der Event heißt `PlayerQuitEvent`. Damit sollte aber genug gesagt sein und den Rest solltest du schon ganz allein hinbekommen. Die Auflösung gibts in der nächsten Episode.
 
-## Und noch ein kleines Beispiel zum Abschluss
+## Chat-Messages der ops hervorheben
 Wenn du die Verabschiedung auch schon fertig hast, probier doch noch folgendes: Wir wollen beim Chatten die ops besonders hervorheben, weil sie ja auch soooo superwichtig sind. Das heißt, dass Chat-Nachrichten normaler Spiele, wie üblich in der Farbe weiß dargestellt werden. Wenn aber ein op eine Nachricht sendet, soll diese in einer anderen Farbe (wie zum Beispiel im folgenden Screenshot) golden dargestellt werden.
 
 ![Select onEnable](05_welcome-Listener/OpMessage.png)
