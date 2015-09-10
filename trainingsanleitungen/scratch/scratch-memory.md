@@ -77,14 +77,19 @@ Wenn die Meldung "KeinPaarGefunden" kommt, muss die Karte wieder zurückgedreht 
 ## Skripte für die Bilder
 
 1. ![Bilder anordnen](scratch-memory/bilder-anordnen.png){: .right}
-Damit man sehen kann, welche Tipps bereits abgegeben wurden, fügen wir eine neue Liste zu unserem Programm hinzu. Listen findest du im Menüpunkt "Daten", sie funktionieren so ähnlich wie Variablen.<br/><br/>
-Durch Anklicken der kleinen Box erscheint die Liste auch auf der Bühne.
+Nun muss bei jeder Karte auch ein Bild platziert werden. Die Bilder dürfen aber nicht einfacher nacheinander positioniert werden, sondern sie müssen per Zufallszahl verteilt werden.<br /><br />
+Es werden 16 Klone erstellt - zwei für jedes Kostüm. Die Klone werden zufällig an den 16 Position angeordnet. Die Liste "Karten" hilft uns dabei zu erkennen, 
+an welcher Position bereits ein Bild liegt.
 
 1. ![Bild anzeigen](scratch-memory/bild-anzeigen.png){: .right}
-Lösche am Beginn alle Einträge aus der Liste und füge neue Einträge ein, sobald ein Tipp abgegeben wurde. Achte wieder auf die Änderungen im Skript.
+Wird eine Karte angeklickt, schickt sie die Nachricht "KarteAngeklickt". Es muss dann überprüft werden, welcher Klon des Bilder davon betroffen ist.<br/><br/>
+Handelt es sich um die erste angeklickte Karte, wird ihre Kostümnummer gespeichert.<br/><br/>
+Ist dies die zweite angeklickte Karte, dann muss geprüft werden, ob die Kostümnummer gleich ist, wie bei der ersten Karte. Wenn ja, dann wurde ein Paar gefunden und die Karten können gelöscht werden. 
+Wenn nein, dann müssen die Karten wieder umgedreht werden.
 
 1. ![Bild verstecken oder löschen](scratch-memory/bild-verstecken-oder-loeschen.png){: .right}
-Lösche am Beginn alle Einträge aus der Liste und füge neue Einträge ein, sobald ein Tipp abgegeben wurde. Achte wieder auf die Änderungen im Skript.
+Wenn die Meldung "KeinPaarGefunden" kommt, muss das Bild wieder versteckt werden.<br/><br/>
+Wenn die Meldung "PaarGefunden" kommt, kann das Bild gelöscht werden.
 
 ## Weitere Ideen
 * Zähle mit wie viele Paare gefunden wurden und zeige dem Benutzer an, wenn er alle entdeckt hat.
