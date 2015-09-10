@@ -176,3 +176,6 @@ body.sushi div.plainOrderedList li {
       min-width: 100%; }
     body.sushi .navbar {
       display: none; } }
+
+body.sushi img.full {
+  width: 100%; }

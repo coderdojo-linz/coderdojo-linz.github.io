@@ -68,10 +68,11 @@ Als erstes müssen die Karten auf der Bühne angeordnet werden. Wir wollen vier 
 Erzeuge dazu 16 Klone von der Karte und platziere sie an der richtigen Position.
 
 1. ![Karte umdrehen](scratch-memory/karten-umdrehen.png){: .right}
-Im Moment hätten wir dann genau einen Versuch - wahrscheinlich ist das zu wenig. Wir brauchen eine Schleife, und müssen so oft fragen, bis der Spieler die richtige Antwort erraten hat (oder zu viele Versuche benötigt hat).<br/><br/>Dafür legen wir uns eine neue Variable an, wir nennen sie "erraten". Solange die Variable den Wert 0 hat, bitten wir den Spieler um einen weiteren Tipp. Sobald der Tipp richtig war, setzen wir die Variable auf 1 - und hören auf zu fragen.<br/><br/>Achte genau auf die Unterschiede zum vorherigen Skript!
+Wenn eine Karte angeklickt wird, muss sie angezeigt werden. Es dürfe immer nur zwei Karten gleichzeitig angezeigt werden.
 
 1. ![Karten zurückdrehen oder löschen](scratch-memory/karten-zurueckdrehen-oder-loeschen.png){: .right}
-Damit man schneller zum Ziel kommt, geben wir noch Tipps, ob die gesuchte Zahl kleiner oder größer als die Eingabe ist.
+Wenn die Meldung "PaarGefunden" kommt, kann die Karte gelöscht werden.<br/><br/>
+Wenn die Meldung "KeinPaarGefunden" kommt, muss die Karte wieder zurückgedreht werden.
 
 ## Skripte für die Bilder
 
@@ -96,8 +97,8 @@ Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/75528668/]
 
 ### Karte
 
-<img alt="Skripte für die Karte" scr="scratch-memory/skripte-karte.png" style="width: 100%" />
+![Skripte für die Karte](scratch-memory/skripte-karte.png){: .fullWidth}
 
 ### Bilder
 
-<img alt="Skripte für die Bilder" scr="scratch-memory/skripte-bilder.png" style="width: 100%" />
+![Skripte für die Bilder](scratch-memory/skripte-bilder.png){: .fullWidth}
