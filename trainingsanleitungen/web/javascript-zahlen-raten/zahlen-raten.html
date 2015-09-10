@@ -10,7 +10,7 @@
 		
 		<div style="height: 120px">
 			<label>Dein Tipp:</label>
-			<input type="text" id="inputGuess" style="width:100px"/>
+			<input type="number" id="inputGuess" style="width:100px"/>
 			<button>Überprüfen</button>
 			
 			<p id="outputResult"></p>
@@ -25,9 +25,12 @@
 		
 		var number, count;
 		number = Math.floor(Math.random() * 100);
-		
-		
-		
-		
+
+        count = 0;
+    
+        function checkNumber() {
+    		count = count + 1;
+    		outputCount.innerHTML = "Du hast bisher " + count + " Versuche gebraucht.";
+        }
 	</script>
 </html>

@@ -10,7 +10,7 @@
 		
 		<div style="height: 120px">
 			<label>Dein Tipp:</label>
-			<input type="text" id="inputGuess" style="width:100px"/>
+			<input type="number" id="inputGuess" style="width:100px"/>
 			<button onclick="checkNumber()">Überprüfen</button>
 			
 			<p id="outputResult"></p>
@@ -30,11 +30,8 @@
 		count = 0;
 		
 		function checkNumber() {
-			var guess = parseInt(inputGuess.value);
-			
-			if (isNaN(guess))
-				outputResult.innerHTML  = "Bitte gib eine Zahl ein.";
-			else if (guess < number)
+			var guess = parseInt(inputGuess.value);			
+			if (guess < number)
 				outputResult.innerHTML  = "Dein Tipp war zu niedrig.";
 			else if (guess > number)
 				outputResult.innerHTML  = "Dein Tipp war zu hoch.";
