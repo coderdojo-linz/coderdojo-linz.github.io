@@ -94,7 +94,7 @@ Natürlich fehlt jetzt noch der wichtigste Teil des Spiels: Die Überprüfung, o
 
 ## Höher oder niedriger?
 
-Jetzt wo wir wissen, dass die Zahl gültig ist, können wir sie mit der Zahl des Computers vergleichen.
+Jetzt können wir die eingegebene Zahl mit der Zahl des Computers vergleichen.
 
 1. Wechsle zurück zur HTML-Datei im Texteditor. 
 
@@ -141,6 +141,12 @@ Die fertige Datei kannst du [hier](javascript-zahlen-raten/zahlen-raten-final.ht
 
 Wenn du noch weiterprogrammieren willst, hier noch ein paar Ideen:
 
-* Nach dem ersten Versuch ist der angezeigte Text noch etwas unschön: "Du hast bisher 1 Versuche gebraucht." Besser wäre "Du hast bisher 1 Versuch gebraucht." (Einzahl)
-* Lass den Computer genauere Hinweise geben: "Dein Tipp war viel zu hoch." oder "Fast! Dein Tipp war ein bisschen zu niedrig."
-* Wähle (zufallsbasiert) zwischen verschiedenen gleichbedeutenden Antworten: "Dein Tipp war zu hoch.", "Nein, das ist zu hoch.", "Du musst niedriger tippen."
+1. Nach dem ersten Versuch ist der angezeigte Text noch etwas unschön: "Du hast bisher 1 Versuche gebraucht." Besser wäre "Du hast bisher 1 Versuch gebraucht." (Einzahl)
+
+2. Lass den Computer genauere Hinweise geben: "Dein Tipp war viel zu hoch." oder "Fast! Dein Tipp war ein bisschen zu niedrig."
+
+3. Wähle (zufallsbasiert) zwischen verschiedenen gleichbedeutenden Antworten: "Dein Tipp war zu hoch.", "Nein, das ist zu hoch.", "Du musst niedriger tippen."
+
+4. Wenn du schon etwas Erfahrung mit JavaScript gesammelt hast, kannst du das [JavaScript Quiz auf w3schools](http://www.w3schools.com/js/js_quiz.asp){:target="_blank"} probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein HTML-Wissen noch zu erweitern.
+
+4. Möchtest du deine Webseite etwas schöner gestalten? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/erste-schritte-mit-css.html).
