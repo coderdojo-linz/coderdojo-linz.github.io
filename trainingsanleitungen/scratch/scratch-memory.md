@@ -23,12 +23,12 @@ Im angezeigten Menü kannst du Scratchy löschen.
 
 2. ![Karte hinzufügen](scratch-memory/figur-karte.png){: .right}
 Die Karte besteht aus zwei Kostümen: der Vorder- und der Rückseite. Die Rückseite ist grau und zeigt das Scratch Logo. Die Vorderseite ist weiß. Auf dieser werden später die Bilder angezeigt. 
-Achte darauf, dass die Karte eine Breite von 60 und eine Höhe von 80 hat.
+Achte darauf, dass die Karte eine Breite von 60 und eine Höhe von 80 hat.<br/><br/>
+Vergiss nicht beide Kostüme mit dem Fadenkreuz zu zentrieren.
 
 2. ![Karte hinzufügen](scratch-memory/figur-bilder.png){: .right}
 Die Figur Bilder besteht aus acht Kostümen, nämlich den acht verschiedenen Bilder, die auf den Karten angezeigt werden sollen. Wähle acht Bilder aus oder zeichne selber welche. 
-Die Bilder müssen kleiner als die Karte sein, sonst würden sie nachher über den Rand der Karte hinausschauen.
-
+Die Bilder müssen kleiner als die Karte sein, sonst würden sie nachher über den Rand der Karte hinausschauen.<br/><br/>
 Vergiss nicht alle Kostüme mit dem Fadenkreuz zu zentrieren.
 
 ## Daten anlegen
