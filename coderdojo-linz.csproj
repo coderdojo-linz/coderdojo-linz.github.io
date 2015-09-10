@@ -104,6 +104,8 @@
     <Content Include="trainingsanleitungen\scratch\scratch-memory\figur-karte.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\figur-loeschen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\memory-game.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-memory\skripte-bilder.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-memory\skripte-karte.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\anzahl-ecken-abfragen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\anzahl-schritte-anpassen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\ausgabe.png" />

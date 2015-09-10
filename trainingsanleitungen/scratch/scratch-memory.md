@@ -64,8 +64,8 @@ Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/75528668/]
 
 ### Karte
 
-![Skripte für die Schlange](scratch-memory/skript-schlange.png)
+![Skripte für die Karte](scratch-memory/skripte-karte.png)
 
-### Figuren
+### Bilder
 
-![Skripte für den Apfel](scratch-memory/skript-apfel.png)
+![Skripte für die Bilder](scratch-memory/skripte-bilder.png)
