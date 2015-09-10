@@ -7,7 +7,7 @@ bannerimage: /images/coderdojo-banner-3.jpg
 # Termine
 
 * Freitag, 11. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ausgebucht
-* Freitag, 25. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993496031){:target="_blank"}, nur noch wenige Plätze frei
+* Freitag, 25. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ausgebucht
 * Freitag, 09. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993497034){:target="_blank"}
 * Freitag, 23. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993498037){:target="_blank"}
 * Freitag, 06. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993499040){:target="_blank"}
