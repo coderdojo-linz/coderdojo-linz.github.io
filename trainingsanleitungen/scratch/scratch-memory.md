@@ -26,12 +26,41 @@ Die Karte besteht aus zwei Kostümen: der Vorder- und der Rückseite. Die Rücks
 Achte darauf, dass die Karte eine Breite von 60 und eine Höhe von 80 hat.<br/><br/>
 Vergiss nicht beide Kostüme mit dem Fadenkreuz zu zentrieren.
 
-2. ![Karte hinzufügen](scratch-memory/figur-bilder.png){: .right}
+3. ![Karte hinzufügen](scratch-memory/figur-bilder.png){: .right}
 Die Figur Bilder besteht aus acht Kostümen, nämlich den acht verschiedenen Bilder, die auf den Karten angezeigt werden sollen. Wähle acht Bilder aus oder zeichne selber welche. 
 Die Bilder müssen kleiner als die Karte sein, sonst würden sie nachher über den Rand der Karte hinausschauen.<br/><br/>
 Vergiss nicht alle Kostüme mit dem Fadenkreuz zu zentrieren.
 
 ## Daten anlegen
+
+In diesem Spiel werden eine ganze Menge an Daten benötigt. Sie werden später in den Skripten verwendet. Lege als erstes folgende Daten an:
+
+### Daten für alle Figuren
+
+* Dauer
+* Fehlversuche
+* Klicks
+* KostümErsteKarte
+* Position
+* SpalteAngeklickt
+* ZeileAngeklickt
+
+
+### Listen für alle Figuren
+
+* Karten
+
+### Daten für die Karte
+
+* Sichtbar
+* Spalte
+* Zeile
+
+### Daten für die Bilder
+
+* Sichtbar
+* Spalte
+* Zeile
 
 ## Skripte für die Karte
 4. ![Zahlen vergleichen](scratch-memory/07-falls.PNG){: .right}
@@ -44,7 +73,7 @@ Im Moment hätten wir dann genau einen Versuch - wahrscheinlich ist das zu wenig
 6. ![Tipps geben](scratch-memory/09-kleiner.PNG){: .right}
 Damit man schneller zum Ziel kommt, geben wir noch Tipps, ob die gesuchte Zahl kleiner oder größer als die Eingabe ist.
 
-## Skripte für die Figuren
+## Skripte für die Bilder
 
 7. ![Liste hinzufügen](scratch-memory/10-liste.PNG){: .right}
 Damit man sehen kann, welche Tipps bereits abgegeben wurden, fügen wir eine neue Liste zu unserem Programm hinzu. Listen findest du im Menüpunkt "Daten", sie funktionieren so ähnlich wie Variablen.<br/><br/>
@@ -54,7 +83,7 @@ Durch Anklicken der kleinen Box erscheint die Liste auch auf der Bühne.
 Lösche am Beginn alle Einträge aus der Liste und füge neue Einträge ein, sobald ein Tipp abgegeben wurde. Achte wieder auf die Änderungen im Skript.
 
 ## Weitere Ideen
-* ...
+* Zähle mit wie viele Paare gefunden wurden und zeige dem Benutzer an, wenn er alle entdeckt hat.
 
 ## Ausprobieren
 
