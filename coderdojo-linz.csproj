@@ -100,9 +100,15 @@
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite-deutsch.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratch-webseite.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-konto-anlegen\scratcher-werden.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-memory\bild-anzeigen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-memory\bild-verstecken-oder-loeschen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-memory\bilder-anordnen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\figur-bilder.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\figur-karte.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\figur-loeschen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-memory\karten-anordnen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-memory\karten-umdrehen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-memory\karten-zurueckdrehen-oder-loeschen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\memory-game.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\skripte-bilder.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\skripte-karte.png" />

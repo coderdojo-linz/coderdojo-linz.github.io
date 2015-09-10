@@ -63,23 +63,26 @@ In diesem Spiel werden eine ganze Menge an Daten benötigt. Sie werden später i
 * Zeile
 
 ## Skripte für die Karte
-4. ![Zahlen vergleichen](scratch-memory/07-falls.PNG){: .right}
-Jetzt wirds etwas komplizierter: wir möchten den Spieler um seinen Tipp fragen, dafür wählen wir aus dem Punkt "Fühlen" die Frage aus. An dieser Stelle wartet der Computer dann auf eine Eingabe - und speichert diese in einer... - Variable! Sie heißt "Antwort".<br/>
-Daher können wir nach der Frage überprüfen, ob die Antwort korrekt war: falls die Antwort gleich unserer Zufallszahl ist, dann hat der Spieler die Zahl erraten!
+1. ![Karten anordnen](scratch-memory/karten-anordnen.png){: .right}
+Als erstes müssen die Karten auf der Bühne angeordnet werden. Wir wollen vier Spalten und vier Zeilen mit Karten - das sind insgesamt 16 Karten.<br/><br/>
+Erzeuge dazu 16 Klone von der Karte und platziere sie an der richtigen Position.
 
-5. ![Schleife](scratch-memory/08-falls.PNG){: .right}
+1. ![Karte umdrehen](scratch-memory/karten-umdrehen.png){: .right}
 Im Moment hätten wir dann genau einen Versuch - wahrscheinlich ist das zu wenig. Wir brauchen eine Schleife, und müssen so oft fragen, bis der Spieler die richtige Antwort erraten hat (oder zu viele Versuche benötigt hat).<br/><br/>Dafür legen wir uns eine neue Variable an, wir nennen sie "erraten". Solange die Variable den Wert 0 hat, bitten wir den Spieler um einen weiteren Tipp. Sobald der Tipp richtig war, setzen wir die Variable auf 1 - und hören auf zu fragen.<br/><br/>Achte genau auf die Unterschiede zum vorherigen Skript!
 
-6. ![Tipps geben](scratch-memory/09-kleiner.PNG){: .right}
+1. ![Karten zurückdrehen oder löschen](scratch-memory/karten-zurueckdrehen-oder-loeschen.png){: .right}
 Damit man schneller zum Ziel kommt, geben wir noch Tipps, ob die gesuchte Zahl kleiner oder größer als die Eingabe ist.
 
 ## Skripte für die Bilder
 
-7. ![Liste hinzufügen](scratch-memory/10-liste.PNG){: .right}
+1. ![Bilder anordnen](scratch-memory/bilder-anordnen.png){: .right}
 Damit man sehen kann, welche Tipps bereits abgegeben wurden, fügen wir eine neue Liste zu unserem Programm hinzu. Listen findest du im Menüpunkt "Daten", sie funktionieren so ähnlich wie Variablen.<br/><br/>
 Durch Anklicken der kleinen Box erscheint die Liste auch auf der Bühne.
 
-8. ![Einträge einfügen](scratch-memory/11-liste.PNG){: .right}
+1. ![Bild anzeigen](scratch-memory/bild-anzeigen.png){: .right}
+Lösche am Beginn alle Einträge aus der Liste und füge neue Einträge ein, sobald ein Tipp abgegeben wurde. Achte wieder auf die Änderungen im Skript.
+
+1. ![Bild verstecken oder löschen](scratch-memory/bild-verstecken-oder-loeschen.png){: .right}
 Lösche am Beginn alle Einträge aus der Liste und füge neue Einträge ein, sobald ein Tipp abgegeben wurde. Achte wieder auf die Änderungen im Skript.
 
 ## Weitere Ideen
@@ -93,8 +96,8 @@ Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/75528668/]
 
 ### Karte
 
-![Skripte für die Karte](scratch-memory/skripte-karte.png)
+<img alt="Skripte für die Karte" scr="scratch-memory/skripte-karte.png" style="width: 100%" />
 
 ### Bilder
 
-![Skripte für die Bilder](scratch-memory/skripte-bilder.png)
+<img alt="Skripte für die Bilder" scr="scratch-memory/skripte-bilder.png" style="width: 100%" />
