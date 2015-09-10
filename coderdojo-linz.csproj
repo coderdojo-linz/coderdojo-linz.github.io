@@ -34,15 +34,20 @@
     <Content Include="images\coderdojo-banner-3.jpg" />
     <Content Include="images\programming.jpg" />
     <Content Include="mentoren\images\albrecht-woess.jpg" />
+    <Content Include="mentoren\images\andreas-schabus.png" />
     <Content Include="mentoren\images\arno-huetter.jpg" />
+    <Content Include="mentoren\images\brigitte-kalipcioglu.jpg" />
     <Content Include="mentoren\images\daniel-sklenitzka.jpg" />
     <Content Include="mentoren\images\elisabeth-rosemann.jpg" />
     <Content Include="mentoren\images\gurpreet-juttla.jpg" />
     <Content Include="mentoren\images\karin-huber.jpg" />
+    <Content Include="mentoren\images\oliver-lintner.jpg" />
     <Content Include="mentoren\images\peter-bauer.jpg" />
     <Content Include="mentoren\images\peter-paul-kirschner.jpg" />
+    <Content Include="mentoren\images\pia-gerhofer.jpg" />
     <Content Include="mentoren\images\rainer-stropek.jpg" />
     <Content Include="mentoren\images\raphael-schwarz.png" />
+    <Content Include="mentoren\images\rina-ahmed.jpg" />
     <Content Include="mentoren\images\roman-schacherl.jpg" />
     <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
@@ -224,6 +229,10 @@
     <Content Include="trainingsanleitungen\touch-develop\seifenblasen-spiel.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory.md" />
+    <Content Include="mentoren\ahmed-rina.md" />
+    <Content Include="mentoren\lintner-oliver.md" />
+    <Content Include="mentoren\schabus-andreas.md" />
+    <Content Include="mentoren\kalipcioglu-brigitte.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />

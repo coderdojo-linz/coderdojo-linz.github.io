@@ -154,7 +154,6 @@ Unser Ziel ist es, einen Kasten mit einem wichtigen Hinweis rechts neben die Ein
 
         .sidebar {
             width: 200px;
-            height: 100%;
             float: right;
             background: #b20000;
             padding: 25px;

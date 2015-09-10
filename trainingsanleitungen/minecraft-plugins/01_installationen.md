@@ -70,7 +70,7 @@ Gratuliere, damit haben wir bereits den Großteil unserer Vorbereitungsarbeiten 
 * Eine IDE ist eine Integrierte Entwicklungsumgebung (**I**ntegrated **D**evelopment **E**nvironment). Damit kann man sehr bequem Programme entwickeln. Bekannte Exemplare dieser Gattung sind Visual Studio, Netbeans, Eclipse, XCode, IntelliJ usw.
 
 ## Download Server-Software
-Es gibt eine Reihe von verschiedenen Servern, die wir installieren können. Die Originalfirma (Mojang) bietet zum Beispiel den Vanilla-Server an. Der hat aber den Nachteil, dass er keine Plugin-Schnittstelle zur Verfügung stellt. Die bekannteste Server-Software mit der man auch Plugins erstellen kann, ist Bukkit, welche wir auch verwenden werden. Du kannst im Internet nach der Server-Software suchen oder einfach auf die Coderdojo Website gehen und die Datei ``craftbukkit.jar`` auf deinen Computer herunterladen.
+Es gibt eine Reihe von verschiedenen Servern, die wir installieren können. Die Originalfirma (Mojang) bietet zum Beispiel den Vanilla-Server an. Der hat aber den Nachteil, dass er keine Plugin-Schnittstelle zur Verfügung stellt. Die bekannteste Server-Software mit der man auch Plugins erstellen kann, ist Bukkit, welche wir auch verwenden werden. Du kannst im Internet nach der Server-Software suchen oder einfach auf die Coderdojo Website gehen und die Datei [``craftbukkit.jar``](craftbukkit.jar) auf deinen Computer herunterladen.
 
 Dieses ``craftbukkit.jar`` ist unsere Server-Software, die wir jetzt starten müssen. Damit wir das in gewohnter Weise mit einem Doppelklick machen können, müssen wir noch eine kleine Vorkehrung treffen. Diese unterscheidet sich wieder leicht zwischen Windows und MacOS:
 
@@ -80,7 +80,7 @@ Erstelle als erstes einen neuen Ordner mit Namen ``bukkitServer`` und bewege ``c
     java -Xms1024M -Xmx2048M -jar craftbukkit.jar -o true
     pause
 
-Dann speicherst du die Datei unter dem Namen ``start.bat`` ab. 
+Dann speicherst du die Datei unter dem Namen ``start.bat`` in den Ordner `bukkitServer` gleich neben `craftbukkit.jar` ab. 
 
 ### MacOS
 Erstelle als erstes einen neuen Ordner mit Namen ``bukkitServer`` und bewege ``craftbukkit.jar`` da hinein. Dann starte deinen Lieblings-Texteditor (bitte nicht Word oder Pages, sonder TextEdit oder besser Atom oder TextWrangler) und tippe folgende Zeilen ab:
@@ -89,7 +89,7 @@ Erstelle als erstes einen neuen Ordner mit Namen ``bukkitServer`` und bewege ``c
     cd "$( dirname "$0")"
     java -Xmx1024M -jar craftbukkit.jar -o true
 
-Dieses File speicherst du am besten unter dem Namen ``start.sh``.
+Dann speicherst du die Datei unter dem Namen ``start.sh`` in den Ordner `bukkitServer` gleich neben `craftbukkit.jar` ab. 
 
 ### Großeltern-Imponier-Wissen:
 * Ein Plugin ist ein Stück Software, mit dem man eine bestehende Software erweitert.
@@ -104,7 +104,7 @@ Wenn du diese Datei nun mit einem Doppelklick startest müsste ein Fenster mit d
     [18:22:27 INFO]: Stopping server
     [18:22:27 INFO]: Stopping server
     
-Damit sind wir schon fast am Ziel. Wie du oben siehst, will der Server noch, dass wir das EULA akzeptieren. Freundlicherweise schreibt er auch, was wir tun sollen, nämlich ``eula.txt`` für weitere Informationen ansehen. Wir nehmen also wieder unseren Lieblings-Editor zur Hand und öffnen dieses ``eula.txt``.
+Damit sind wir schon fast am Ziel. Wie du oben siehst, will der Server noch, dass wir das EULA akzeptieren. Freundlicherweise schreibt er auch, was wir tun sollen, nämlich ``eula.txt`` für weitere Informationen ansehen. Diese Datei wurde durch das erste Mal starten im Ordner `bukkitServer` erstellt. Wir nehmen also wieder unseren Lieblings-Editor zur Hand und öffnen dieses ``eula.txt``.
 
 In der letzten Zeile dieses Files steht ``eula=false``. Das müssen wir in ``eula=true`` umschreiben und dann probieren wir es noch mal und starten den Server mit einem Doppelklick. Jetzt müsste er sauber starten. Du merkst das, dass nun im Fenster sehr viel mehr Meldungen angezeigt werden und zum Schluss die Zeile
 
@@ -116,6 +116,7 @@ Da wir den Server aber sicherlich öfter brauchen werden, zahlt es sich wahrsche
 
 So jetzt solltest du dich mit dem Server verbinden können. Wenn du andere Spieler auf deinen Server einladen möchtest und diese Spieler im gleichen lokalen Netz sind wie du, musst du ihnen die IP-Number deines Computers mitteilen. Diese müssen sie dann bei Server-Adresse eingeben. Dann sollten Sie deinem Server beitreten können.
 
+Gratuliere, du hast auf deinem Computer einen Minecraft-Server installiert. Auch hast du sonst schon alle Vorbereitungen getroffen, damit du in der nächsten Episode mit der Entwicklung deines ersten Plugins beginnen kannst.
 
 ### Großeltern-Imponier-Wissen:
 * EULA ist eine Abkürzung und bedeutet **E**nd **U**ser **L**icense **A**greement, also Endbenutzer-Lizenz-Vereinbarung (danke ihr lieben JuristInnen, hüstel).

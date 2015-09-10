@@ -35,6 +35,13 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 4. [Programmiere einen Chat mit Node.js und Socket.io](/trainingsanleitungen/web/nodejs-socketio-chat.html)
 5. [Ein Space Shooter mit TypeScript und Phaser.io](/trainingsanleitungen/web/space-shooter.html)
 
+## Minecraft
+
+1. [Installiere deinen eigenen Minecraft-Server](/trainingsanleitungen/minecraft-plugins/01_installationen.html)
+2. [Entwickle dein erstes Minecraft-Plugin](/trainingsanleitungen/minecraft-plugins/02_first-plugin.html)
+3. [Getafix - ein Minecraft-Plugin für magische Heilung Teil 1](/trainingsanleitungen/minecraft-plugins/03_getafix-Player.html)
+4. [Getafix - ein Minecraft-Plugin für magische Heilung Teil 2](/trainingsanleitungen/minecraft-plugins/04_getafix-Arguments.html)
+
 ## Unity (Spieleentwicklungsplattform)
 
 1. [Erste Schritte mit Unity](/trainingsanleitungen/unity/erste-schritte-mit-unity.html)

@@ -4,194 +4,230 @@ title: HTML Meine erste Webseite
 description: In dieser Übung erstellst Du deine erste Webseite.
 ---
 
+
 # Meine erste Webseite
 
-Das Internet besteht aus vielen Seiten und jede folgt einem strukturiertem Aufbau. 
+In dieser Übung lernst du die [Hypertext Markup Language](https://de.wikipedia.org/wiki/Hypertext_Markup_Language){:target="_blank"} (kurz HTML) kennen. Unser Ziel ist es, Schritt für Schritt eine HTML-Seite zu erstellen und dabei die wichtigsten Grundbegriffe von HTML zu entdecken. Wenn du nach dieser Übung mehr über HTML lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf [die HTML Einführung auf w3schools.com](http://www.w3schools.com/html/default.asp){:target="_blank"} werfen.
+
 
 ## Das Grundgerüst einer HTML-Seite
 
-Um nun richtig anfangen zu können, beginnst Du mit einer Textdatei, die folgenden Inhalt hat:
+1. Öffne einen beliebigen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Hier einige Links zu kostenlosen Editoren, mit denen du HTML gut schreiben kannst. Falls du nicht sicher bist, welchen du nehmen sollst, nimm gleich den ersten. Im Lauf der Zeit kannst du mit verschiedenen experimentieren und dich für den entscheiden, der dir am besten gefällt.
 
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-&nbsp;&nbsp; &lt;meta charset=&quot;utf-8&quot;&gt;
-&nbsp;&nbsp; &lt;title&gt;Beschreibung der Seite (erscheint in der Titelzeile des Browsers)&lt;/title&gt;
-&nbsp; &lt;/head&gt;
-&nbsp; &lt;body&gt;
-&nbsp;&nbsp;&nbsp; &lt;p&gt;Dieser Text wird im Browserfenster angezeigt.&lt;/p&gt;
-&nbsp; &lt;/body&gt;
-&lt;/html&gt;</code></pre> 
- 
-Wenn Du beim Anblick dieser HTML-Datei denkst: &quot;Das ist aber schön bunt!&quot; - und vielleicht sogar ein wenig enttäuscht bist, dass es bei Dir nicht so aussieht, keine Sorge! So oder so ähnlich sieht es aus, wenn eine HTML-Datei von einem richtigen HTML-Editor, also einem speziellen Programm zur Anzeige von HTML-Dateien, dargestellt wird.
+	* [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"} (Windows, MacOS, Linux)
+	* [Notepad++](https://notepad-plus-plus.org/download/v6.8.2.html){:target="_blank"} (Windows)
+	* [Sublime Text](http://www.sublimetext.com/2){:target="_blank"} (Windows, MacOS, Linux)
+	* [Brackets](http://brackets.io/){:target="_blank"} (Windows, MacOS, Linux)
+	* [Atom](https://atom.io/){:target="_blank"} (Windows, MacOS, Linux)
 
-Mit der ersten Zeile <code>&lt;!doctype html&gt;</code> sagst Du dem Browser: &quot;Ich versuche, mich an den HTML-Standard zu halten, versuch du bitte dasselbe!&quot; Das im Browser sichtbare Ergebnis wird davon nicht unbedingt immer beeinflusst; dennoch ist es allgemein empfehlenswert, die Zeile einfach so zu übernehmen, wie sie ist.
+2. Erstelle eine neue Textdatei. In *Visual Studio Code* geht das so: <br/>![Neue Datei in Visual Studio Code erstellen](html-meine-erste-webseite/code-neue-datei.png)
 
-Bestimmt sind Dir schon diese spitzen Klammern aufgefallen. Die sind typisch für HTML. Welche Angabe Du auch immer machst: Wenn Du möchtest, dass der Browser Dich versteht, must du diese Klammern drumherum setzen. So hei&szlig;t die Angabe <code>&lt;html&gt;</code>: Hier fängt der HTML-Bereich an.
+3. Gib folgenden Code in die neue Datei ein:
 
-Die zweite Angabe mit dem Schrägstrich darin <code>&lt;/html&gt;</code> sagt dem Browser, dass der HTML-Bereich hier zu Ende ist. Auch dieses System zieht sich durch HTML und bleibt sehr verlässlich so. Es gibt zwar ein paar Ausnahmen, aber darum kümmern wir uns jetzt einfach erst einmal nicht. Wir merken uns: Spitze Klammern mit einer Bezeichnung drin - Anfang. Spitze Klammern mit einem Schrägstrich und derselben Bezeichnung drin - Ende.
+        <!DOCTYPE html>
+        <html>
 
-Das englische &quot;to tag something&quot; bedeutet &quot;etwas markieren" oder &quot;etwas kennzeichnen&quot;, und so spricht man bei HTML von Tags. <code>&lt;html&gt;</code> ist also ein öffnendes Tag, und <code>&lt;/html&gt;</code> ist ein schlie&szlig;endes Tag - beide zusammen &quot;kennzeichnen&quot; den HTML-Bereich.
+          <head>
+           <title>Beschreibung der Seite (erscheint in der Titelzeile des Browsers)</title>
+          </head>
 
-Nun müssen wir aber endlich zu einem häufig gebrauchten Fachbegriff kommen, bevor wir uns noch was Falsches angewöhnen: Der HTML-Profi spricht nicht von &quot;Bereichen&quot;, sondern von &quot;Elementen&quot;. Wir sagen also nicht mehr &quot;HTML-Bereich&quot;, sondern &quot;HTML-Element&quot;.
+          <body>
+            <p>Dieser Text wird im Browserfenster angezeigt.</p>
+          </body>
 
-Nun können HTML-Elemente auch ineinander verschachtelt sein, d.h. ein Element befindet sich innerhalb eines anderen Elements. Das ist bei HTML ganz normal - auch bei unserer kleinen Beispielseite oben. Das HTML-Element beispielsweise enthält noch zwei weitere Elemente, nämlich <code>head</code> und <code>body</code> (&quot;Kopf&quot; und &quot;Körper&quot;).
+        </html>
 
-Das <code>head</code>-Element (der &quot;Kopf&quot;) enthält Angaben über das folgende Dokument; der eigentliche Inhalt, also das, was der Browser letztlich anzeigen soll, folgt später im <code>body</code>-Element (im &quot;Körper&quot;).
+3. Speichere die Datei in einem Ordner unter dem Namen `default.html` ab. Merke dir den Ordner, in dem du sie speicherst. Du wirst ihn gleich brauchen.
 
-Zwischen die Tags <code>&lt;head&gt;</code> und <code>&lt;/head&gt;</code> notierst Du jetzt einige Angaben, die dem Browser helfen, das Dokument auf den Bildschirm zu zaubern. Los geht's mit der Zeichenkodierung. Es gibt verschiedene Zeichenkodierungen, aber heute nimmt man üblicherweise UTF-8, weil damit die meisten Anwendungsfälle abgedeckt sind. Das Thema Kodierung wird wichtig, wenn Besucher die Seite sehen mit anderen Schrift-Zeichen (Chinesen / Japaner / Araber / ... ):
+4. Suche die gespeicherte Datei im Dateiexplorer (Windows) bzw. Finder (MacOS). Öffne sie durch Doppelklick. Ein Webbrowser sollte sich öffnen und deine erste Webseite anzeigen.<br/>![HTML-Datei im Webbrowser](html-meine-erste-webseite/erste-html-datei.png)
 
-<pre><code>&lt;meta charset=&quot;utf-8&quot;&gt;</code></pre>
+3. Mache dich mit dem HTML-Code vertraut. Es folgen einige Erklärungen. Falls du Fragen hast, wende dich an einen CoderDojo Mentor. 
+
+	* Mit der ersten Zeile `<!DOCTYPE html>` sagst Du dem Browser: *Das ist eine HTML-Datei*. Auch wenn diese Zeile nicht immer notwendig ist, gewöhne dir an, sie immer am Beginn einer HTML-Datei hinzuschreiben.
+
+	* Bestimmt sind Dir schon diese spitzen Klammern (`<` und `>`) aufgefallen. Sie sind typisch für HTML. Welche Angabe Du auch immer machst: Wenn Du möchtest, dass der Browser Dich versteht, must du diese Klammern drumherum setzen. So heißt die Angabe `<html>` *Hier fängt der HTML-Bereich an*.
+
+	* Die zweite Angabe mit dem Schrägstrich darin (z.B. `</html>`) sagt dem Browser, dass der HTML-Bereich hier zu Ende ist. Wir merken uns: Spitze Klammern mit einer Bezeichnung drin - Anfang. Spitze Klammern mit einem Schrägstrich und derselben Bezeichnung drin - Ende.<br/>Das englische *to tag something* bedeutet *etwas markieren* oder *etwas kennzeichnen*, und so spricht man bei HTML von *Tags*. `<html>` ist also ein öffnendes Tag, und `</html>` ist ein schließendes Tag - beide zusammen *kennzeichnen* das HTML-Element.
+
+	* HTML-Elemente können auch ineinander verschachtelt sein, d.h. ein Element befindet sich innerhalb eines anderen Elements. Das ist bei HTML ganz normal - auch bei unserer kleinen Beispielseite oben. Das `html`-Element beispielsweise enthält noch zwei weitere Elemente, nämlich `head` und `body` (*Kopf* und *Körper*).<br/>Das `head`-Element (der *Kopf*) enthält Angaben über das folgende Dokument; der eigentliche Inhalt, also das, was der Browser letztlich anzeigen soll, folgt später im `body`-Element (im *Körper*).
 
 ## Der Titel der Seite
 
-Jede HTML-Datei muss einen Titel erhalten. Dieser Titel dient in der Praxis mehreren Zwecken, aber solange Du die Seiten nur zum Lernen und Ausprobieren auf Deinem eigenen Computer entwickelst und testest, wird für Dich erstmal wichtig sein, dass der Titel im Browser in der Titelzeile des Anzeigefensters bzw. Karteireiters (Tab) angezeigt wird. So könnte dies beispielsweise beim Dojo so aussehen.
+Jede HTML-Datei muss einen Titel erhalten. Dieser Titel dient in der Praxis mehreren Zwecken, aber solange du die Seiten nur zum Lernen und Ausprobieren auf deinem eigenen Computer entwickelst und testest, wird für dich erstmal wichtig sein, dass der Titel im Browser in der Titelzeile des Anzeigefensters bzw. Karteireiters (*Tab*) angezeigt wird. So könnte dies beispielsweise beim Dojo so aussehen.
 
-<img src="html-meine-erste-webseite/html-BrowserTitle.png" />
+![Tab mit Titel](html-meine-erste-webseite/html-BrowserTitle.png)
 
-Später, wenn Deine HTML-Datei aus dem Internet erreichbar sein wird, bekommt der Titel einer HTML-Seite sogar noch grö&szlig;ere Bedeutung:
+Später, wenn Deine HTML-Datei aus dem Internet erreichbar sein wird, bekommt der Titel einer HTML-Seite sogar noch größere Bedeutung:
 
-* Der Titel der Datei wird vom Web-Browser beim Setzen von Lesezeichen (Bookmarks, Favoriten) verwendet.
+* Der Titel der Datei wird vom Web-Browser beim Setzen von Lesezeichen (*Bookmarks*, *Favoriten*) verwendet.
 * Der Titel der Datei wird im Web-Browser in der Liste der bereits besuchten Seiten (Verlauf) angezeigt.
-* Der Titel der Datei dient im Web vielen automatischen Suchprogrammen als wichtige Informationsquelle, so dass Deine HTML-Seiten leichter von Interessenten mit einer Suchmaschine wie z.B. Google gefunden werden kann, sofern Du sinnvolle Titel für Deine HTML-Seiten vergeben hast.
+* Der Titel der Datei dient im Web vielen automatischen Suchprogrammen als wichtige Informationsquelle, sodass deine HTML-Seiten leichter von Interessenten mit einer Suchmaschine wie z.B. Google gefunden werden können, wenn du sinnvolle Titel für deine HTML-Seiten vergeben hast.
 * Wenn die Datei zu den Suchtreffern einer Suche gehört, bieten viele Suchmaschinen den Titel der Datei als anklickbaren Verweis an. 
 
-<img src="html-meine-erste-webseite/html-BrowserTitleGoogle.png" />
+![Titel in Google](html-meine-erste-webseite/html-BrowserTitleGoogle.png)
 
-Unser CoderDojo wird also sicherlich etwas wie das Folgende eintragen:
+1. Für unser CoderDojo wäre folgender Titel passend. Ersetze den Titel in deiner HTML-Datei durch diesen Code. Vergiss nicht, die HTML-Datei abzuspeichern! 
 
-<pre><code>&lt;title&gt;CoderDojo Linz | Meine erste Webseite&lt;/title&gt;</code></pre>
+        <title>CoderDojo Linz | Meine erste Webseite</title>
+
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Titel ändert.<br/>![Neuer Titel](html-meine-erste-webseite/neuer-title.png)
+
 
 ## Nach dem Kopf folgt der Körper
                
-Nun wird es Zeit, dem Browser zu sagen, was er auf dem Monitor darstellen soll. Wie schonschon erwähnt, kommt das in das body-Element rein. Nehmen wir als Beispiel eine schöne gro&szlig;e &Uuml;berschrift. &Uuml;berschrift hei&szlig;t auf Englisch heading. Es gibt sechs &Uuml;berschriftenebenen, die einfach von eins bis sechs nummeriert werden (h1, h2, h3, h4, h5, h6). Gewöhnlich fängt man mit <code>h1</code> an; das ist die grö&szlig;te. Wenn man dann das, was auf diese &Uuml;berschrift folgt, nochmals unterteilen will, nimmt man die nächste: <code>h2</code>. Und so weiter, und so fort.
+Wie schon erwähnt, kommt der eigentliche Inhalt der Webseite in das `body`-Element.
 
-Da wir gerade erst anfangen, wird die &Uuml;berschrift zwischen die Tags <code>&lt;h1&gt;&lt;/h1&gt;</code>gesetzt. 
+1. Nehmen wir als erstes Beispiel eine schöne große Überschrift. Überschrift heißt auf Englisch *heading*. Es gibt verschiedene Überschriftenebenen, die einfach mit eins beginnend nummeriert werden (*h1, h2, h3, ...*). Man fängt mit `h1` an; das ist die größte. Wenn man dann das, was auf diese Überschrift folgt, nochmals unterteilen will, nimmt man die nächste: `h2`. Und so weiter, und so fort.<br/>Füge vor dem `<p>` Absatz eine Überschrift mit `<h1>` ein. Vergiss nicht, die HTML-Datei danach abzuspeichern! 
 
-Die HTML-Datei sieht jetzt so aus:
+        ...
+        <body>
+          <h1>Meine erste Webseite</h1>
+          <p>Dieser Text wird im Browserfenster angezeigt.</p>
+        </body>
+        ...
 
-<pre><code>&lt;html&gt;
-&nbsp; &lt;head&gt;
-&nbsp;&nbsp; &nbsp;&lt;meta charset=&quot;utf-8&quot;&gt;
-&nbsp;&nbsp;&nbsp; &lt;title&gt;CoderDojo  Linz | Meine erste Webseite &lt;/title&gt;
-&nbsp; &lt;/head&gt;
-&nbsp; &lt;body&gt;
-&nbsp;&nbsp;&nbsp;&lt;h1&gt;Meine erste Webseite&lt;/h1&gt;
-&nbsp;&nbsp;&nbsp;&lt;p&gt;Dieser Text wird im Browserfenster angezeigt.&lt;/p&gt;
-&nbsp; &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![HTML Seite mit Überschrift](html-meine-erste-webseite/html-seite-mit-titel.png)
 
-Speichere die Datei z.B. unter dem Namen index.html ab. Du kannst jetzt z.B. auf diese Datei doppelklicken, und dann sollte diese im Standardbrowser Deines Systems geöffnet und im Browserfenster angezeigt werden. Die HTML-Datei ist eine ganz normale Textdatei, die Du mit jedem beliebigen Editor oder Browser auf dem normalen Weg öffnen und bearbeiten kannst, wie Du es auch mit anderen Dateien machst.
+3. Du willst sicher ein paar Worte über dich oder ein Thema, das dir wichtig ist, schreiben. Ein normalen Text wird in Absätze gegliedert. Das englische Wort für *Absatz* ist *paragraph*, und daraus ergeben sich dann die Tags `<p>` (Absatzanfang) und `</p>` (Absatzende).<br/>Füge ein paar Absätze in deine HTML-Datei ein wie unten gezeigt. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
-So schön diese Begrü&szlig;ung auch sein mag: Es fehlt noch etwas, nämlich der eigentliche Inhalt. Deswegen fangen wir jetzt mit dem ernsthaften Erstellen an.
+        ...        
+        <body>
+          <h1>Meine erste Webseite</h1>
+          <p>Diese Webseite soll zeigen, wie HTML funktioniert. Hier lernen wir gerade, 
+             wie man mit dem p-Element umgeht.</p>
+          <p>Das ist ein zweiter Absatz. Um zu sehen, was die Auswirkung ist, geben 
+             wir hier etwas sinnlosen Beispieltext ein. Bla bla bla ...</p>
+        </body>
+        ...        
 
-Du willst sicher ein paar Worte über dich schreiben. &Uuml;blicherweise wird ein normalen Text mit Absätzen verfasst. Das englische Wort für &quot;Absatz&quot; lautet paragraph, und daraus ergeben sich dann die Tags <code>&lt;p&gt;</code> (Absatzanfang) und <code>&lt;/p&gt;</code> (Absatzende).
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![HTML Seite mit mehreren Absätzen](html-meine-erste-webseite/html-seite-mit-mehreren-absaetzen.png)
 
 ## Ungeordnete Listen, Aufzählungen
 
-Wir sind gleich durch, Schön. Was stand als nächstes auf deiner Liste? Ah ja, die Liste mit den Lieblingsbeschäftigungen. Liste hei&szlig;t auf Englisch list und man notiert sie grundsätzlich auf eine von zwei Arten: Entweder nummeriert (geordnet) oder eben nicht nummeriert (ungeordnet). Nicht nummerierte Listen haben meistens irgendein Symbol vor den einzelnen Listenpunkten; das kennst Du vermutlich aus einem Textverarbeitungsprogramm. Eine geordnete Liste (ordered list) wird bei HTML zwischen <code>&lt;ol&gt;&lt;/ol&gt;</code> notiert. Eine ungeordnete Liste (unordered list) wird zwischen <code>&lt;ul&gt;&lt;/ul&gt;</code> notiert. Jedes einzelne Element der Liste (egal, ob geordnet oder ungeordnet) wird wiederum zwischen die Tags <code>&lt;li&gt;&lt;/li&gt;</code>gesetzt. Probier es einfach mal aus:
+Liste heißt auf Englisch *list*. Es gibt sie in zwei Arten: Entweder nummeriert (geordnet) oder eben nicht nummeriert (ungeordnet). Ungeordnete Listen (*unordered list*) haben meistens irgendein Symbol vor den einzelnen Listenpunkten; das kennst Du vermutlich aus einem Textverarbeitungsprogramm.
 
-<pre><code>&lt;ul&gt;
-&nbsp;&lt;li&gt;radfahren&lt;/li&gt;
-&nbsp;&lt;li&gt;Musik hören&lt;/li&gt;
-&nbsp;&lt;li&gt;mit Freunden spielen&lt;/li&gt;
-&nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+Eine geordnete Liste (*ordered list*) wird bei HTML zwischen `<ol></ol>` notiert. Eine ungeordnete Liste (*unordered list*) wird zwischen `<ul></ul>` notiert. Jedes einzelne *Element* der Liste (egal, ob geordnet oder ungeordnet) wird wiederum zwischen die Tags `<li></li>`gesetzt.
 
-Das sollte im Browser dann ungefähr so dargestellt werden:
+1. Erweitere den Code deiner HTML-Datei wie unten gezeigt. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
-<ul>
-	<li>radfahren</li>
-	<li>Musik hören</li>
-	<li>mit Freunden spielen</li>
-	<li>vor dem Rechner sitzen</li>
-</ul>
+        ...        
+        <body>
+          <h1>Meine erste Webseite</h1>
+        
+          <h2>Einleitung</h2>
+          <p>Diese Webseite soll zeigen, wie HTML funktioniert. Hier lernen wir gerade, 
+             wie man mit dem p-Element umgeht.</p>
+          <p>Das ist ein zweiter Absatz. Um zu sehen, was die Auswirkung ist, geben 
+             wir hier etwas sinnlosen Beispieltext ein. Bla bla bla ...</p>
+        
+          <h2>Meine Hobbies</h2>
+          <ul>
+            <li>radfahren</li>
+            <li>Musik hören</li>
+            <li>mit Freunden spielen</li>
+            <li>vor dem Rechner sitzen</li>
+          </ul>
+        
+        </body>
+        ...        
 
-Geordnet schaut es so aus:
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert. Fällt dir auf, dass die HTML-Seite das Zeichen *ö* falsch darstellt? Das kommt daher, dass HTML mit deutschen Sonderzeichen nicht richtig umgehen kann. Sie brauchen eine besondere Schreibweise, auf die wir unten noch eingehen werden.<br/>![HTML Seite mit Liste](html-meine-erste-webseite/unordered-list.png)
 
-<pre><code>&lt;ol&gt;
-&nbsp;&lt;li&gt;radfahren&lt;/li&gt;>
-&nbsp;&lt;li&gt;Musik hören&lt;/li&gt;
-&nbsp;&lt;li&gt;mit Freunden spielen&lt;/li&gt;
-&nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
+3. Ändere die ungeordnete Liste auf eine geordnete List, indem du `ul` auf `ol` änderst. Schau dir den Unterschied im Webbrowser an.
 
-<div class="plainOrderedList">
-<p>Das sollte im Browser dann ungefähr so dargestellt werden:</p>
-<ol>
-	<li>radfahren</li>
-	<li>Musik hören</li>
-	<li>mit Freunden spielen</li>
-	<li>vor dem Rechner sitzen</li>
-</ol>
-</div>
+4. Man kann Listen auch verschachteln. Ändere den HTML-Code deiner Liste wie folgt. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
+        ...
+        <h2>Meine Hobbies</h2>
+        <ul>
+          <li>radfahren</li>
+          <li>Musik hören
+            <ul>
+              <li>Jazz</li>
+              <li>Rock</li>
+              <li>Pop</li>
+            </ul>
+          </li>
+          <li>mit Freunden spielen</li>
+          <li>vor dem Rechner sitzen</li>
+        </ul>
+        ...
 
-Wir können auch die Listen verschachteln:
-<ul>
-	<li>radfahren</li>
-	<li>
-		Musik hören
-		<ul>
-			<li>Jazz</li>
-			<li>Rock</li>
-			<li>Pop</li>
-		</ul>
-	</li>
-	<li>mit Freunden spielen</li>
-	<li>vor dem Rechner sitzen</li>
-</ul>
-
-Wie bekommt man so eine Verschachtelung hin? Ganz einfach: Die Lösung dafür ist die Liste in der Liste! Jetzt müssen wir uns ein bisschen konzentrieren, aber das bekommen wir hin: 
-
-<pre><code>&lt;ul&gt;
-&nbsp;&lt;li&gt;radfahren&lt;/li&gt;
-&nbsp;&lt;li&gt;Musik hören
-&nbsp;&nbsp; &lt;ul&gt;
-&nbsp;&nbsp; &nbsp;&lt;li&gt;Jazz&lt;/li&gt;
-&nbsp;&nbsp; &nbsp;&lt;li&gt;Rock&lt;/li&gt;
-&nbsp;&nbsp; &nbsp;&lt;li&gt;Pop&lt;/li&gt;
-&nbsp;&nbsp; &nbsp;&lt;/ul&gt;
-&nbsp;&lt;/li&gt;
-&nbsp;&lt;li&gt;mit Freunden spielen&lt;/li&gt;
-&nbsp;&lt;li&gt;vor dem Rechner sitzen&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-
-Wir haben Dir eine Vorlage zusammengestellt <a href="https://raw.githubusercontent.com/coderdojo-linz/coderdojo-linz.github.io/master/trainingsanleitungen/web/html-meine-erste-webseite/meine-erste-webseite.html" target="_blank">hier</a> klicken zum Herunterladen.
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![Verschachtelte Liste](html-meine-erste-webseite/verschachtelte-liste.png)
 
 ## Wichtige Sonderzeichen
 
-Hier nur mal die wichtigsten Zeichen in der deutschen Sprache 
+Kannst du dich an das Problem mit dem *ö* erinnern? Hier die wichtigsten Sonderzeichen der deutschen Sprache mit ihren HTML-Codes: 
 
-<table class="table">
-	<tr><th><b>Zeichen</b></th><th><b>in Worten</b></th><th><b>Html Code</b></th></tr>
-	<tr><td>&szlig;</td><td>scharfes S (sz-Ligatur)</td><td>&amp;szlig;</td></tr>
-	<tr><td>ä</td> <td>a Umlaut</td><td>&amp;auml;</td></tr>
-	<tr><td>ü</td> <td>u Umlaut</td><td>&amp;uuml;</td></tr>
-	<tr><td>ö</td> <td>o Umlaut</td><td>&amp;ouml;</td></tr>
-	<tr><td>&Auml;</td> <td>a Umlaut</td><td>&amp;Auml;</td></tr>
-	<tr><td>&Uuml;</td> <td>u Umlaut</td><td>&amp;Uuml;</td></tr>
-	<tr><td>&Ouml;</td> <td>o Umlaut</td><td>&amp;Ouml;</td></tr>
-	<tr><td>&amp;</td>  <td>und Zeichen</td><td>&amp;amp;</td></tr>
-</table>
+Zeichen&nbsp; | in Worten              | Html Code
+--------------|------------------------|-----------
+ß             | schafes S (sz-Ligatur) | &amp;szlig;
+ä             | a Umlaut               | &amp;auml;
+ü             | u Umlaut               | &amp;uuml;
+ö             | o Umlaut               | &amp;ouml;
+Ä             | a Umlaut               | &amp;Auml;
+Ü             | u Umlaut               | &amp;Uuml;
+Ö             | o Umlaut               | &amp;Ouml;
+&             | *und* Zeichen          | &amp;amp;
 
-Eine gute Auflistung ist <a href="http://wiki.selfhtml.org/wiki/Referenz:HTML/Zeichenreferenz" target="_blank">hier</a> zu finden
+Eine gute Auflistung ist [hier](http://wiki.selfhtml.org/wiki/Referenz:HTML/Zeichenreferenz){:target="_blank"} zu finden
+
+1. Ändere im HTML-Code `<li>Musik hören</li>` auf `<li>Musik h&ouml;ren</li>`. Vergiss nicht, die HTML-Datei danach abzuspeichern!
+
+2. Aktualisiere deine HTML-Datei im Webbrowser und kontrolliere, ob das *ö* jetzt richtig angezeigt wird.
 
 ## Bilder einfügen
 
-Das Bild-Element kommt wie alle anderen Elemente auch aus dem englsichen. Bild ist Image auf englisch, da Entwickler gerne Zeichen sparen, wurde es einfach auf <code>img</code> verkürzt.
+Das Bild-Element kommt wie alle anderen Elemente auch aus dem Englischen. Bild heißt auf Englisch *Image*. Da Entwickler gerne Zeichen sparen, wurde es einfach auf `img` verkürzt. Jedes Bild braucht auch einen Verweis wo die Bild-Datei zu finden ist. Dies wird als Quelle bezeichnet und lautet im englishen Source also für Entwickler kurz `src`.
 
-Jedes Bild braucht auch einen Verweis wo die Bild-Datei zu finden ist. Dies wird als Quelle bezeichnet und lautet im englishen Source also für Entwickler kurz <code>src</code>.
+1. Mach ein Foto oder suche eine Bilddatei aus dem Internet, die dir gefällt.<br/>**Wenn du Bilder aus dem Internet kopierst, achte immer darauf, ob du das lizenzrechtlich darfst. Verwende keine Bilder, bei denen du nicht sicher bist!** Die Google-Bildersuche ermöglicht es, nach Bildern zu suchen, die man wiederverwenden darf:<br/>![Google Bildersuche](html-meine-erste-webseite/creative-commons-bildersuche.png)
 
-Nun kommt noch ein Attribut, dieses ist nicht zwingend notwendig, aber es wird angezeigt, wenn die Datei nicht geladen werden kann, bzw. für Blinde ist dieses Attribut wichtig.
+2. Speichere die Bilddatei aus dem Internet in den Ordner, in dem auch deine HTML-Datei liegt. In unserem Beispiel haben wir uns das Bild eines Apfels ausgesucht und speichern es unter dem Namen `apfel.jpg`.<br/>![Bild speichern](html-meine-erste-webseite/save-image.png)
 
-<code>&lt;img src="meinBild.png" alt="Alternativer Text" /&gt;</code>
+3. Füge ein `img` Tag zu deinem HTML-Code hinzu, um das Bild in deiner Webseite anzuzeigen. Vergiss nicht, die HTML-Datei danach abzuspeichern!
+
+        ...
+        <body>
+          <h1>Meine erste Webseite</h1>
+        
+          <h2>Einleitung</h2>
+          ...
+        
+          <h2>Meine Hobbies</h2>
+          ...
+        
+          <h2>Ein sch&ouml;nes Bild</h2>
+          <img src="apfel.jpg" width="300" />
+        </body>
+        ...
+
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![HTML-Seite mit Bild](html-meine-erste-webseite/html-mit-bild.png)
 
 ## Verlinkungen, Verweise
 
-Der <code>a</code> Tag kommt vom englischen &quot;to anchor&quot; dies kann übersetzt werden mit &quot;verankern&quot; oder &quot;befestigen&quot;
+Der `a` Tag kommt vom englischen *to anchor* dies kann übersetzt werden mit *verankern* oder *befestigen*. Das zugehörige Attribut heißt `href` (englisch: *hyper reference* = Hyper[text]-Referenz). Darauf folgt das Gleichheitszeichen (=) und darauf, eingeschlossen in doppelte Anführungszeichen, die *Adresse* (HTML-Datei) zu der man beim Anklicken gelangen soll.
 
-Das zugehörige Attribut hei&szlig;t <code>href</code> (englisch: hyper reference = Hyper[text]-Referenz). Darauf folgt das Gleichheitszeichen (=) und darauf, eingeschlossen in doppelte Anführungszeichen, die &quot;Adresse&quot; (HTML-Datei) zu der man beim Anklicken gelangen soll.
+1. Füge am Beginn der HTML-Seite einen Absatz mit einem Link zur CoderDojo Linz Seite ein. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
-<code>&lt;a href="meinBild.png" alt="Alternativer Text"&gt;Text zum anklicken&lt;/a&gt;</code>
+        ...
+        <body>
+          <h1>Meine erste Webseite</h1>
+        
+          <p>Zur <a href="http://coderdojo-linz.github.io">CoderDojo Linz Webseite</a> gehen ...</p>
+        
+          <h2>Einleitung</h2>
+          ...
 
-Das sind nun die wichtigsten Begriffe zum Thema HTML.
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![HTML-Seite mit Link](html-meine-erste-webseite/html-mit-link.png)
+
+## Musterlösung
+
+Wir haben Dir die fertige HTML-Datei zusammengestellt. Du kannst sie [hier](html-meine-erste-webseite/meine-erste-webseite.html){:target="_blank"} ansehen.
+
+## Weitere Übungen
+
+1. Wenn du schon etwas Erfahrung mit HTML gesammelt hast, kannst du das [HTML Quiz auf w3schools](http://www.w3schools.com/html/html_quiz.asp){:target="_blank"} probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein HTML-Wissen noch zu erweitern.
+
+2. Möchtest du deine Webseite etwas schöner gestalten? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/erste-schritte-mit-css.html).
+
+3. Möchtest du lernen, wie man Programme in JavaScript in eine Webseite einbettet? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/javascript-zahlen-raten.html).

@@ -5,7 +5,11 @@ description: In dieser Übung wirst du dein erstes Minecraft-Plugin erstellen
 ---
 
 # Dein erstes Plugin
-Nach den Vorbereitungsarbeiten können wir nun endlich unser erstes Plugin entwickeln. Wenn wir mit dieser Episode fertig sind, wirst du in Minecraft den Befehl ``/sayhello`` eingeben können und du wirst die Antwort ``Hello *dein-Minecraft-Name*`` erhalten (*dein-Minecraft-Name* wird natürlich durch deinen wirklichen Minecraft-Namen ersetzt werden). Dieses wird vielleicht noch nicht das absolute Killer-Plugin auf *Curse* sein aber eine Reise beginnt immer mit ihrem ersten Schritt. Also, los gehts:
+Nach den Vorbereitungsarbeiten können wir nun endlich unser erstes Plugin entwickeln. Wenn wir mit dieser Episode fertig sind, wirst du in Minecraft den Befehl ``/sayhello`` eingeben können und du wirst eine Antwort erhalten und er wird dich sogar mit deinem Minecraft-Namen ansprechen.
+
+![Command screenshot](02_first-plugin/Command.png)
+
+Dieses wird vielleicht noch nicht das absolute Killer-Plugin auf *Curse* sein aber eine Reise beginnt immer mit ihrem ersten Schritt. Also, los gehts:
 
 ## Ein neues NetBeans-Projekt anlegen
 Als erstes starten wir natürlich NetBeans. Die StartPage brauchen wir nicht und du kannst sie gleich wegklicken. Jetzt gehst du ins Menü **File** und findest als ersten Menüpunkt **New Project …** Wenn du den auswählst, siehst du folgendes Fenster:
@@ -16,7 +20,7 @@ Du wählst die Kategorie **Java** und von den Projekten **Java Class Library**, 
 
 ![Name and locate project](02_first-plugin/NameAndLocateProject.png)
 
-Hier vergibst du einen sinnvollen Projektnamen. Da es unser erstes Plugin ist, tut es auch ein etwas einfallsloses **FirstPlugin**, besser verständlich ist natürlich ein Name wie **GreetMe**. Für die Project Location suchst du dir einen Platz auf deiner Festplatte, wo du das Plugin auch wiederfindest. Project Folder lässt sich nicht ändern. Dieses Feld zeigt dir nur, wo dein Projekt und alle seine Files gespeichert werden. Damit bist du fertig und kannst auf den Button **Finish** drücken. Damit verschwindet das Fenster und du hast einen ersten Blick auf dein gesamtes Projekt.
+Hier vergibst du einen sinnvollen Projektnamen. Da es unser erstes Plugin ist, tut es auch ein etwas einfallsloses **FirstPlugin**, besser verständlich ist natürlich ein Name wie **GreetMe**. Für die **Project Location** suchst du dir einen Platz auf deiner Festplatte, wo du das Plugin auch wiederfindest. **Project Folder** lässt sich nicht ändern. Dieses Feld zeigt dir nur, wo dein Projekt und alle seine Files gespeichert werden. Damit bist du fertig und kannst auf den Button **Finish** drücken. Damit verschwindet das Fenster und du hast einen ersten Blick auf dein gesamtes Projekt.
 
 So nun wollen wir uns mal ein wenig orientieren.
 
@@ -25,12 +29,12 @@ So nun wollen wir uns mal ein wenig orientieren.
 Der Arbeitsbereich in NetBeans gliedert sich grundsätzlich in 5 Teile. Wir gehen diese nummernweise durch:
 
 1. Im *Project Explorer* hast du einen Überblick über dein Projekt. Alle Dateien, die du dazu brauchst sind hier aufgelistet und können relative schnell gefunden werden. Die wichtigsten Files wirst du unter **Source Packages** finden.
-2. Im *Navigator* wirst du, nachdem wir das erste File editieren, einen Überblick über das geöffnete File haben. Wenn das File ein wenig größer wird, wirst du sehen, dass es sehr bequem ist, wenn man schnell zu bestimmten Punkten im File springe kann.
+2. Im *Navigator* wirst du, nachdem wir das erste File editieren, einen Überblick über das geöffnete File haben. Wenn das File ein wenig größer wird, wirst du sehen, dass es sehr bequem ist, wenn man schnell zu bestimmten Punkten im File springen kann.
 3. Im *Information Panel* bekommst du Informationen, die beim Arbeiten wichtig sind. Beispielsweise kannst du hier sehen, ob du dein Projekt erfolgreich "baut", das heißt für den Einsatz in Minecraft übersetzt werden kann.
-4. Das ist der Editor. Hier werden wir dann Java-Code reinschreiben
-5. Das ist die Toolbar. Manche Befehle (z. B. um das Projekt zu bauen) können wir hier schnell erreichen.
+4. Das ist der *Editor*. Hier werden wir dann Java-Code reinschreiben
+5. Das ist die *Toolbar*. Manche Befehle (z. B. um das Projekt zu bauen) können wir hier schnell erreichen.
 
-Bevor wir jetzt endlich mit dem Programmieren beginnen müssen wir noch die Datei ``craftbukkit.jar`` zu unserem Projekt hinzufügen. Ja du liest richtig, es ist genau dieselbe Datei, die wir bereits verwendet haben, um unseren Server zu starten. Am besten legst du dir eine Kopie an und legst sie im Ordner neben deinem FirstPlugin ab. Nun klickst du im **Project Explorer** mit der rechten Maustaste auf den Ordner **Libraries** und wählst den Punkt **Add JAR/Folder…** aus:
+Bevor wir jetzt endlich mit dem Programmieren beginnen, müssen wir noch die Datei ``craftbukkit.jar`` zu unserem Projekt hinzufügen. Ja du liest richtig, es ist genau dieselbe Datei, die wir bereits verwendet haben, um unseren Server zu starten. Am besten legst du dir eine Kopie an und legst sie im Ordner neben deinem FirstPlugin ab. Nun klickst du im **Project Explorer** mit der rechten Maustaste auf den Ordner **Libraries** und wählst den Punkt **Add JAR/Folder…** aus:
 
 ![Add JAR Step 1](02_first-plugin/AddJarStep1.png)
 
@@ -41,11 +45,11 @@ Nun siehst du folgendes Fenster in welchem du zum File ``craftbukkit.jar`` navig
 Jetzt siehst du im **Project Explorer** im Ordner **Libraries** die Datei ``craftbukkit.jar``. So jetzt können wir mit dem Programmieren beginnen.
 
 ### Großeltern-Imponier-Wissen
-* Java-Programme müssen, bevor sie ausgeführt werden können, *gebaut* werden. Das heißt, dass man den Java-Code (also, das, was du schreibst) in einen Maschinen-Code umwandeln muss. Manchmal sagt man auch, dass das Programm *compiliert* werden muss.
-* Wenn du ein Minecraft-Plugin schreibst, brauchst du Informationen vom Server (z. B. den Namen des Spielers) oder willst auch das Verhalten des Servers teilweise verändern (z. B. soll er auf das Kommando ``/sayhello`` reagieren, was er ja sonst mal so nicht täte). Damit das möglich ist, gibt es das sogenannte *API* (Application Programmer Interface), das sind alle "Funktionen", die der Server für dich zum Programmieren zur Verfügung stellt. Damit wir das API zur Verfügung haben, fügen wir die Datei ``craftbukkit.jar`` zu unserem Projekt dazu.
+* Java-Programme müssen, bevor sie ausgeführt werden können, *gebaut* werden. Das heißt, dass man den Java-Code (also das, was du schreibst) in einen Maschinen-Code (also das, was ein Computer ausführen kann) umwandeln muss. Manchmal sagt man auch, dass das Programm *compiliert* werden muss.
+* Wenn du ein Minecraft-Plugin schreibst, brauchst du Informationen vom Server (z. B. den Namen des Spielers) oder willst auch das Verhalten des Servers teilweise verändern (z. B. soll er auf das Kommando ``/sayhello`` reagieren, was er ja sonst mal so nicht täte). Damit das möglich ist, gibt es das sogenannte *API* (**A**pplication **P**rogrammer **I**nterface), das sind alle "Funktionen", die der Server für dich zum Programmieren zur Verfügung stellt. Damit wir das API zur Verfügung haben, fügen wir die Datei ``craftbukkit.jar`` zu unserem Projekt dazu.
 
 ## Ein Package und die Plugin-Klasse anlegen
-Du speicherst Java-Dateien in *Packages* ab. Wenn du im **Project Explorer** den Ordner **Source Packages** öffnest, siehst du das Package **\<default package\>**. Damit Package-Namen aber sicherlich eindeutig sind, legst du aber besser ein neues Package an, mit ``io.coderdojo-linz.<dein-name>.firstplugin`` (dabei ersetzt du ``<dein-name>`` durch deinen Namen). Wenn du eine eigene Domain über die du im Netz erreichbar bist hast, dann kannst du auch die verwenden.
+Du speicherst Java-Dateien in *Packages* ab. Wenn du im **Project Explorer** den Ordner **Source Packages** öffnest, siehst du das Package **\<default package\>**. Damit Package-Namen aber sicherlich eindeutig sind, legst du besser ein neues Package an, mit ``io.coderdojo-linz.<dein-name>.firstplugin`` (dabei ersetzt du ``<dein-name>`` durch deinen Namen). Wenn du eine eigene Domain über die du im Netz erreichbar bist hast, dann kannst du auch die verwenden.
 
 Also klickst du mit der rechten Maustaste auf **Source Packages** und wählst aus dem Kontextmenü **New** und dann **Java Package ...** aus. 
 
@@ -76,11 +80,11 @@ Die grauen Zeilen am Anfang des Files sehen wahrscheinlich ein wenig anders aus.
 Wenn du jetzt aber die Zeichen ``/*`` und ``*/`` wegnimmst, dann wirst du sehen, dass der Text, den du geschrieben hast, rot unterstrichen ist und das bedeutet, dass der Compiler in deinem Java-Programm einen Fehler entdeckt hat. Also schließen wir daraus, dass mit ``/*`` ein Kommentar beginnt und so lange ist, bis die Zeichen ``*/`` vorkommen.
 
 ## Die Klasse programmieren
-Nun müssen wir dieser Klasse als erstes mal mitteilen, dass sie ein Plugin werden soll. Das machen wir indem wir in der Zeile mit ``public class FirstPlugin {`` folgendes dazuschreibst:
+Nun musst du dieser Klasse als erstes mal mitteilen, dass sie ein Plugin werden soll. Das machst du indem du in der Zeile mit ``public class FirstPlugin {`` folgendes dazuschreibst:
 
 ![Extend class to JavaPlugin](02_first-plugin/ExtendJavaPlugin.png)
 
-Du siehst nun, dass das Wort **JavaPlugin** rot unterstrichen ist und am Beginn der Zeile einen Hinweis bekommen hast. Das bedeutet, dass der Compiler einen Fehler gefunden hat (rot unterstrichen) und aber einen oder mehrere Lösungsvorschläge für dich hat (gelbe Glühbirne am Beginn der Zeile). Wenn du auf die Glübirne klickst, bekommst du die Option angeboten, **Add import org.bukkit.plugin.java.JavaPlugin** und genau das wählst du aus. Damit sollte die Fehlermeldung verschwunden sein und ein paar Zeilen über der Zeile, die du gerade geschrieben hast, die Codezeile ``import org.bukkit.plugin.java.JavaPlugin;`` stehen.
+Du siehst nun, dass das Wort `JavaPlugin` rot unterstrichen ist und am Beginn der Zeile einen Hinweis bekommen hast. Das bedeutet, dass der Compiler einen Fehler gefunden hat (rot unterstrichen) und aber einen oder mehrere Lösungsvorschläge für dich hat (gelbe Glühbirne am Beginn der Zeile). Wenn du auf die Glühbirne klickst, bekommst du die Option angeboten, **Add import org.bukkit.plugin.java.JavaPlugin** und genau das wählst du aus. Damit sollte die Fehlermeldung verschwunden sein und ein paar Zeilen über der Zeile, die du gerade geschrieben hast, die Codezeile ``import org.bukkit.plugin.java.JavaPlugin;`` stehen.
 
 Somit hätten wir ein fast lauffähiges Plugin, das genau gar nix macht. Da das genau niemand braucht, werden wir dem Ding mal sagen, dass es bei Aufruf ``Hello stranger`` ausgeben soll. Dazu müssen wir eine *Methode* anlegen und das geht so: Als erstes klickst du in die Klasse ``FirstPlugin``, das heißt, du platzierst den Cursor in die Zeile zwischen der geschwungenen Klammer auf und wieder zu. 
 
@@ -97,7 +101,7 @@ Damit bekommst du ein kleines Fensterchen, in welchem du **Override Method...** 
 
 ![Add onCommand](02_first-plugin/AddOnCommandStep2.png)
 
-Und weils grad so lustig ist, kommt gleich noch ein Fenster, in welchem wir die Zeile mit **onCommand(...** auswählen.
+Und weils grad so lustig ist, kommt gleich noch ein Fenster, in welchem wir die Zeile mit **onCommand(CommandSender sender, ...)** auswählen.
 
 ![Add onCommand](02_first-plugin/AddOnCommandStep3.png)
 
@@ -151,11 +155,28 @@ Daraufhin sollte im **Information Panel** im Tab **Output** ca. folgende Informa
 
 ![Output of the build run](02_first-plugin/BuildOutput.png)
 
-Der wichtigste Punkt ist die letzte Zeile, in der auf jeden Fall ``BUILD SUCCESSFULL`` stehen muss. Damit ist nämlich klar, dass dein Projekt korrekt ist und vom übersetzt werden kann.
+Der wichtigste Punkt ist die letzte Zeile, in der auf jeden Fall ``BUILD SUCCESSFULL`` stehen muss. Damit ist nämlich klar, dass dein Projekt korrekt ist und vom Compiler übersetzt werden kann.
 
 Um dein Plugin auszuprobieren musst du im File-Explorer (Windows) oder Finder (Mac) in dein NetBeans Projekt-Directory reinsehen. Dort sollte sich nun ein weiteres Directory ``dist`` befinden, in dem sich wiederum ein File ``FirstPlugin.jar`` befinden sollte. Dieses nimmst du nun und bewegst es in das Directory ``plugins`` des Server-Directories, das du noch aus unserer ersten Episode kennst.
 
-Nun kannst du den Server starten. Als erstes überprüfen wir, ob das Plugin korrekt geladen wurde. Das sehen wir im Log des Servers, wenn er hochstaret.
+Nun kannst du den Server starten. Als erstes überprüfen wir, ob das Plugin korrekt geladen wurde. Das sehen wir im Log des Servers, wenn er hochstartet:
+<pre>
+Loading libraries, please wait...
+[20:49:34 INFO]: Starting minecraft server version 1.8.7
+[20:49:34 INFO]: Loading properties
+[20:49:34 INFO]: Default game type: SURVIVAL
+[20:49:34 INFO]: This server is running CraftBukkit version git-Spigot-6d16e64-b105298 (MC: 1.8.7) (Implementing API version 1.8.7-R0.1-SNAPSHOT)
+[20:49:34 INFO]: Debug logging is disabled
+[20:49:34 INFO]: Server Ping Player Sample Count: 12
+[20:49:34 INFO]: Using 4 threads for Netty based IO
+[20:49:34 INFO]: Generating keypair
+[20:49:34 INFO]: Starting Minecraft server on *:25565
+[20:49:34 INFO]: Using default channel type
+[20:49:34 INFO]: Set PluginClassLoader as parallel capable
+[20:49:34 INFO]: [FirstPlugin] Loading FirstPlugin v0.1.0
+...
+</pre>
+Innerhalb der ersten 15 bis 20 Zeilen solltest du die Zeile `[FirstPlugin] Loading FirstPlugin v0.1.0` sehen, dann wurde dein Plugin korrekt geladen. Lass dich nicht verwirren, da steht noch sehr viel mehr in der Console, also musst du ein Stück weit nach oben scrollen, damit du das siehst.
 
 Abschließend kannst du testen, indem du das Kommando ``sayhello`` in der Konsole eingibst. Der Server sollte mit ``Hello stranger`` antworten. Auch kannst du noch ins Spiel gehen und dort den Befehl mit Slash ``/sayhello`` eingeben. Auch hier sollte der Server mit einem freundlichen ``Hello stranger`` antworten.
 
@@ -193,13 +214,16 @@ Nun sind wir schon wieder fertig. Wie oben musst du das Projekt wieder bauen (we
 
 
 ## Zusammenfassung für Profis
+Wenn du das Gefühl hast, dass das alles ganz schön viel ist und ein wenig verwirrend, dann lass dich nicht einschüchtern. Am Besten probierst du es gleich nochmal von vorne und legst nochmals ein neues Plugin-Projekt an. Am Anfang wirst du vielleicht noch öfter nachsehen müssen, dann reicht vielleicht eine Liste der Dinge, die gemacht werden müssen. So eine siehst du hier am Ende dieser Episode. Und nach einer Weile wird dir das ganz geläufig sein. Wie fast immer: Übung macht die Meisterin (und auch den Meister).
+
 1. Neues Projekt anlegen
 2. ``craftbukkit.jar`` zu den Libraries dazufügen
 3. Package anlegen
 4. Klasse anlegen
 5. ``extends JavaPlugin`` dazuschreiben
-6. Methode ``onCommand`` zur Klasse geben
+6. Methode ``onCommand`` generieren
+7. Die Methode ausprogrammieren, also reinschreiben, was geschehen soll, wenn das Command aufgerufen wird
 7. ``plugin.yml`` zum Projekt hinzufügen
 8. Bauen
-9. Fertiges jar File aus ``dist`` in das Plugins-Verzeichnis kopieren (oder update-Verzeichnis, wenn das Plugin bereits geladen wurde)
+9. Fertiges jar File aus ``dist`` in das Plugins-Verzeichnis kopieren (oder `update`-Verzeichnis, wenn das Plugin bereits geladen wurde)
 10. Server starten oder ``reload`` eingeben
