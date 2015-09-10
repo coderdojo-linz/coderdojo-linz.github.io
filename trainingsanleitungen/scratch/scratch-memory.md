@@ -14,16 +14,24 @@ Das Spiel besteht aus 2 Figuren und 10 Skripten.
 
 ## Figuren anlegen
 
-## Daten anlegen
-
-Das Spiel besteht nur aus zwei Figuren: der Karte mit einer Vorder- und einer Rückseite und der Bilder, die auf den Karten angezeigt werden sollen. 
+Das Spiel besteht aus nur zwei Figuren: der Karte mit einer Vorder- und einer Rückseite und der Bilder, die auf den Karten angezeigt werden sollen. 
 Alle Bilder werden als Kostüme in einer Figur zusammengefasst.
 
 1. ![Figur löschen](scratch-memory/figur-loeschen.png){: .right}
 Lösche als erstes die Figur Scratchy mit dem Namen *Sprite1* indem du mit der rechten Maustaste darauf klickst. 
 Im angezeigten Menü kannst du Scratchy löschen.
 
+2. ![Karte hinzufügen](scratch-memory/figur-karte.png){: .right}
+Die Karte besteht aus zwei Kostümen: der Vorder- und der Rückseite. Die Rückseite ist grau und zeigt das Scratch Logo. Die Vorderseite ist weiß. Auf dieser werden später die Bilder angezeigt. 
+Achte darauf, dass die Karte eine Breite von 60 und eine Höhe von 80 hat.
 
+2. ![Karte hinzufügen](scratch-memory/figur-bilder.png){: .right}
+Die Figur Bilder besteht aus acht Kostümen, nämlich den acht verschiedenen Bilder, die auf den Karten angezeigt werden sollen. Wähle acht Bilder aus oder zeichne selber welche. 
+Die Bilder müssen kleiner als die Karte sein, sonst würden sie nachher über den Rand der Karte hinausschauen.
+
+Vergiss nicht alle Kostüme mit dem Fadenkreuz zu zentrieren.
+
+## Daten anlegen
 
 ## Skripte für die Karte
 4. ![Zahlen vergleichen](scratch-memory/07-falls.PNG){: .right}
