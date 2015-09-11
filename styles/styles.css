@@ -179,3 +179,7 @@ body.sushi div.plainOrderedList li {
 
 body.sushi img.full {
   width: 100%; }
+
+@media print {
+  body.sushi h1, body.sushi h2, body.sushi h3 {
+    page-break-after: avoid; } }
