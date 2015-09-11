@@ -204,13 +204,38 @@ Gut, mit diesem Wissen können wir uns sammeln und kurz überlegen, was wir brau
 3. Daher brauchen wir eine Möglickeit zwei Texte (also "Hello" und den Minecraft-Namen der Spielerin) zusammenzukleben. Das geht in Java mit dem Zeichen +. Also ergibt zum Beispiel ``"Ich " + "programmiere " + "Java"`` den Text ``"Ich programmiere Java"``.
 4. Also müssen wir die Zeile noch folgendermaßen erweitern: ``sender.sendMessage("Hello " + sender.getName());``.
 
+Zum Schluss sollte deine Methode so aussehen:
+
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        sender.sendMessage("Hello " + sender.getName());
+        return true;
+    }
+
 Nun sind wir schon wieder fertig. Wie oben musst du das Projekt wieder bauen (weißt schon, der Hammer in der Toolbar) und dann legst du am besten in deinem Verzeichnis ``plugins`` im Verzeichnis``bukkitServer`` ein weiteres Verzeichnis mit Namen ``update`` an. Dorthinein kopierst du jetzt das jar-File. Abschließend gehst du in die Console, in der du den Server gestartet hast und tippst einfach ``reload``. Dann sollte das Plugin neu geladen sein und du kannst es ausprobieren.
 
+Zum Abschluss möchte ich dir noch eine Kleinigkeit zeigen: Es wird immer wieder notwendig sein, dass wir auf die Konsole des Servers etwas rausschreiben und daher wollen wir das gleich mal üben. Bisher kam die Antwort des Servers ja nur auf die Konsole, wenn du das Kommando direkt in der Konsole eingetippt hast. Wir wollen aber, dass, sobald irgendwer das Kommando `/sayhello` eintippt, in der Konsole vermerkt wird, dass dieses Kommando aufgerufen wurde.
 
+Du kannst über `Bukkit.getLogger()` immer auf die Konsole zugreifen und der `Logger` hat eine Methode `info` mit der du Informationen in die Konsole schreiben kannst. Zusammengefasst sieht das ganze dann so aus:
+
+<pre>
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        sender.sendMessage("Hello " + sender.getName());
+        <b>Bukkit.getLogger().info("A player was greeted");</b>
+        return true;
+    }
+</pre>
+
+Der Logger hat verschiedene *Levels*, die das Filtern des Logs erlauben. Die wichtigsten sind
+ 
+ * **Info**: das sind einfache Informationen. Diese werden mit der Methode `info` ausgegeben.
+ * **Warning**: das sind Meldungen, die von einem Server-Administrator beachtet werden sollten. Diese werden mit der Methode `warning`ausgegeben.
+ * **Severe**: das sind kritische Meldungen, denen 100%ig auf den Grund gegangen werden muss. Diese werden mit der Methode `severe` ausgegeben.
+ 
+Da die Information, dass ein Spieler begrüßt wurde, nicht wirklich kritisch ist, belassen wir es bei einer einfachen Info-Message im Log.
+ 
 ### Großeltern-Imponier-Wissen
 * Texte nennt man in der Informatik Zeichenketten oder auf Englisch: Strings
-
-
+* Ein *Log* ist so etwas wie ein Tagebuch. Vielleicht kennst du das aus Star Treck: "Logbuch der Enterprise, Sternzeit ..."
 
 
 ## Zusammenfassung für Profis
