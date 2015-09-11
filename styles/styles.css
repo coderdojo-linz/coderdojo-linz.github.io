@@ -135,16 +135,15 @@ body.sushi ul {
   padding-left: 20px; }
 
 body.sushi ol {
-  padding-left: 20px;
-  /*li:first-of-type {
-			padding-top: 0;
-			border-top: none;
-		}*/ }
+  padding-left: 20px; }
   body.sushi ol li {
     clear: both;
     padding-bottom: 10px;
     padding-top: 20px;
-    border-bottom: 1px dotted #666666; }
+    border-top: 1px dotted #666666; }
+  body.sushi ol li:first-of-type {
+    padding-top: 0;
+    border-top: none; }
   body.sushi ol li img {
     padding-top: 20px;
     max-width: 100%; }
@@ -161,8 +160,7 @@ body.sushi .center {
 body.sushi div.plainOrderedList li {
   padding-top: 0;
   padding-bottom: 0;
-  border-top: none;
-  border-bottom: none; }
+  border-top: none; }
 
 @media print {
   body.sushi {
