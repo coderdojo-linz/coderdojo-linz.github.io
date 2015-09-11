@@ -20,6 +20,7 @@
  */
 package com.bajupa.firstplugin;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -34,6 +35,7 @@ public class FirstPlugin extends JavaPlugin {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         // sender.sendMessage("Hello stranger");
         sender.sendMessage("Hello " + sender.getName());
+        Bukkit.getLogger().info("A player was greeted");
         return true;
     }
     
