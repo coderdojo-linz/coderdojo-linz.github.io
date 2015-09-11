@@ -98,12 +98,12 @@ Wenn die Meldung "PaarGefunden" kommt, kann das Bild gelöscht werden.
 
 Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/75528668/](https://scratch.mit.edu/projects/75528668/){:target="_blank"} ausprobieren.
 
-## Gesamte Skripte je Figur
+<h2 class="page-break-before">Gesamte Skripte je Figur</h2>
 
 ### Karte
 
 ![Skripte für die Karte](scratch-memory/skripte-karte.png){: .fullWidth}
 
-### Bilder
+<h3 class="page-break-before">Bilder</h3>
 
 ![Skripte für die Bilder](scratch-memory/skripte-bilder.png){: .fullWidth}

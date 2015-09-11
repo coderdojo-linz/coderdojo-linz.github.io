@@ -181,6 +181,5 @@ body.sushi img.full {
   width: 100%; }
 
 @media print {
-  body.sushi h1, body.sushi h2, body.sushi h3 {
-    page-break-after: avoid;
-    break-after: avoid; } }
+  body.sushi .page-break-before {
+    page-break-before: always; } }
