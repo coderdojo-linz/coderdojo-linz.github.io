@@ -49,6 +49,7 @@
     <Content Include="mentoren\images\raphael-schwarz.png" />
     <Content Include="mentoren\images\rina-ahmed.jpg" />
     <Content Include="mentoren\images\roman-schacherl.jpg" />
+    <Content Include="mentoren\images\wolfgang-ziegler.jpg" />
     <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
     <Content Include="styles\dependencies.css" />
@@ -243,6 +244,7 @@
     <Content Include="mentoren\lintner-oliver.md" />
     <Content Include="mentoren\schabus-andreas.md" />
     <Content Include="mentoren\kalipcioglu-brigitte.md" />
+    <Content Include="mentoren\ziegler-wolfgang.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
