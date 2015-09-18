@@ -42,21 +42,6 @@ Ich habe dir ja in der letzten Episode die Lösung für das `/heal` Kommando ver
 </pre>
 Ich weiß ja nicht, wie es dir geht, aber das fängt an, wie ein richtiges Programm auszusehen. Leider muss man auch anmerken, dass es auch schon anfängt, ein wenig unübersichtlich zu werden.
 
-```java
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (label.equalsIgnoreCase("gethealth")) {    // get health
-            <b>if (sender instanceof Player) {
-                Player player = (Player) sender;
-                sender.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
-                return true;
-            } else {
-                sender.sendMessage("This command can only be used by players");
-                return false;
-            }</b>
-        } 
-    }
-```
-
 Bevor das mit dem Einbau neuer Features wirklich in Chaos ausartet, wollen wir gleich ein bisschen zusammenräumen.
 
 Du siehst ja sicherlich, dass sich die ganze Methode in zwei große Blöcke unterteilt
