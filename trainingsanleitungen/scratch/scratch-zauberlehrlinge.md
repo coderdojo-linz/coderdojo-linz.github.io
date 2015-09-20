@@ -19,9 +19,6 @@ Um die Landschaft zu zeichnen, verwenden wir eine unsichtbare Figur, die mit dem
 * Erstelle eine Figur und lösche ihr Kostüm - die Figur selbst ist im Spiel nicht sichtbar, nur ihr Malstift.
 * Gib der Figur den Namen "Landschaft".
 * Erstelle ein Skript für die Figur, das läuft, wenn die grüne Fahne angeklickt wird.
-* Wische alle Malspuren weg.
-* Setze die Stiftfarbe und -dicke (z.B. auf grün und 3, aber du kannst da ruhig ein bisschen experimentieren).
-
 
 Wenn du mit der Maus über die Bühne fährst, siehst du rechts unten die zwei Werte x und y. x verändert sich, wenn du mit der Maus von links nach rechts fährst, y wenn du von oben nach unten fährst.
 Unsere unsichtbare Figur soll jetzt einmal von ganz links (x: -240) bis ganz rechts (x: 240) laufen.
@@ -34,11 +31,19 @@ Auf welcher Höhe (bei welchem y) wir beginnen, soll zufällig entschieden werde
 * Setze "Position Tim" auf einen zufälligen Wert zwischen -140 und 100.
 * Setze y auf "Position Tim".
 
+Bevor wir losgehen, müssen wir noch den Malstift richtig einstellen.
+* Wische alle Malspuren weg.
+* Setze die Stiftfarbe und -dicke (z.B. auf grün und 3, aber du kannst da ruhig ein bisschen experimentieren).
+* Schalte den Stift ein
+
 Die ersten paar Schritte müssen wir gerade nach rechts machen, damit Tim dort gut stehen kann.
-
 * Setze Richtung auf 90 (rechts).
-* Gehe einen 20er Schritt.
+* Gehe einen 40er Schritt.
 
+Wenn du jetzt auf die grüne Fahne klickst, müsstest du links einen grünen Strich sehen (jedesmal auf anderer Höhe).
+1. ![Fertiges Spiel](scratch-zauberlehrlinge/01-strich.png){: .right}
+
+Jetzt müssen wir solange nach 
 
 Das Skript soll folgendes machen:
 
