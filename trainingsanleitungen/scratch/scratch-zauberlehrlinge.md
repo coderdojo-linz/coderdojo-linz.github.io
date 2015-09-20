@@ -8,7 +8,7 @@ description: Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und 
 
 Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen. Ihr seid dabei immer abwechselnd an der Reihe einen Zauberspruch zu verschießen. Doch es ist gar nicht so leicht, den anderen zu treffen - man muss genau in die richtige Richtung zielen!
 
-1. ![Fertiges Spiel](scratch-zauberlehrlinge/01-fertig.png){: .right}
+![Fertiges Spiel](scratch-zauberlehrlinge/01-fertig.png){: .right}
 
 Damit es nicht langweilig wird, wollen wir die Landschaft im Hintergrund jedes mal ein bisschen anders zeichnen. Damit fangen wir an.
 
@@ -32,16 +32,19 @@ Auf welcher Höhe (bei welchem y) wir beginnen, soll zufällig entschieden werde
 * Setze y auf "Position Tim".
 
 Bevor wir losgehen, müssen wir noch den Malstift richtig einstellen.
+
 * Wische alle Malspuren weg.
 * Setze die Stiftfarbe und -dicke (z.B. auf grün und 3, aber du kannst da ruhig ein bisschen experimentieren).
 * Schalte den Stift ein
 
 Die ersten paar Schritte müssen wir gerade nach rechts machen, damit Tim dort gut stehen kann.
+
 * Setze Richtung auf 90 (rechts).
 * Gehe einen 40er Schritt.
 
 Wenn du jetzt auf die grüne Fahne klickst, müsstest du links einen grünen Strich sehen (jedesmal auf anderer Höhe).
-1. ![Der erste Strich der Landschaft](scratch-zauberlehrlinge/02-strich.png){: .right}
+
+![Der erste Strich der Landschaft](scratch-zauberlehrlinge/02-strich.png){: .right}
 
 Jetzt müssen wir solange nach 
 
