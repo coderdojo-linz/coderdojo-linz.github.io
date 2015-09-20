@@ -125,19 +125,23 @@ In der Mitte des langen Skripts haben wir eine Nachricht geschickt, wenn wir fes
 
 Wenn die Nachricht "getroffen" empfangen wird, überprüfe ob der Blitz vom anderen Spieler kommt (ob der andere gerade dran ist). Wenn ja, ändere das Kostüm auf den Frosch und setze die Variable "Spieler" dann auf einen leeren Wert, damit das Spiel nicht mehr weitergeht. Füge dieses Skript auch bei der anderen Figur ein.
 
-## Skripte für Tim
+## Skripte
+
+Hier kannst du nachsehen, wenn du bei einem Skript nicht weiterkommst oder deine eigene Lösung mit unserer vergleichen willst.
+
+### Skripte für Tim
 
 ![Die Skripte für Tim](scratch-zauberlehrlinge/07-tim-skripte.png){: .right}
 
-## Skripte für Melley
+### Skripte für Melley
 
 ![Die Skripte für Melley](scratch-zauberlehrlinge/09-melley-skripte.png){: .right}
 
-## Skripte für den Blitz
+### Skripte für den Blitz
 
 ![Die Skripte für den Blitz](scratch-zauberlehrlinge/12-blitz-skripte.png){: .right}
 
-## Skript, wenn der Spieler getroffen wird
+### Skript, wenn der Spieler getroffen wird
 
 ![Das Skript, wenn getroffen wurde](scratch-zauberlehrlinge/13-skript-getroffen.png){: .right}
 
