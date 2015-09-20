@@ -129,19 +129,19 @@ Wenn die Nachricht "getroffen" empfangen wird, überprüfe ob der Blitz vom ande
 
 Hier kannst du nachsehen, wenn du bei einem Skript nicht weiterkommst oder deine eigene Lösung mit unserer vergleichen willst.
 
-### Skripte für Tim
+### Tim
 
 ![Die Skripte für Tim](scratch-zauberlehrlinge/07-tim-skripte.png){: .right}
 
-### Skripte für Melley
+### Melley
 
 ![Die Skripte für Melley](scratch-zauberlehrlinge/09-melley-skripte.png){: .right}
 
-### Skripte für den Blitz
+### Blitz
 
 ![Die Skripte für den Blitz](scratch-zauberlehrlinge/12-blitz-skripte.png){: .right}
 
-### Skript, wenn der Spieler getroffen wird
+### Tim wurde getroffen
 
 ![Das Skript, wenn getroffen wurde](scratch-zauberlehrlinge/13-skript-getroffen.png){: .right}
 
