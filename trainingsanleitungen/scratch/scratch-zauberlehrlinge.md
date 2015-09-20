@@ -41,7 +41,7 @@ Die ersten paar Schritte müssen wir gerade nach rechts machen, damit Tim dort g
 * Gehe einen 40er Schritt.
 
 Wenn du jetzt auf die grüne Fahne klickst, müsstest du links einen grünen Strich sehen (jedesmal auf anderer Höhe).
-1. ![Fertiges Spiel](scratch-zauberlehrlinge/01-strich.png){: .right}
+1. ![Der erste Strich der Landschaft](scratch-zauberlehrlinge/02-strich.png){: .right}
 
 Jetzt müssen wir solange nach 
 
