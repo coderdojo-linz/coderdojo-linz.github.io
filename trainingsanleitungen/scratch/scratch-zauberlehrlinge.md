@@ -14,7 +14,7 @@ Damit es nicht langweilig wird, wollen wir die Landschaft im Hintergrund jedes m
 
 ## Landschaft zeichnen
 
-Beginne damit, die Landschaft zu zeichnen. Lasse dazu eine unsichtbare Figur mit aktiviertem Malstift von links nach rechts über den Bildschirm laufen. Am Ende jedes Kapitels findest du eine Abbildung des Skripts, aber versuche zuerst die Aufgabe selbst zu lösen.
+Zum Zeichnen lassen wir eine unsichtbare Figur mit aktiviertem Malstift von links nach rechts über den Bildschirm laufen. Weiter hinten findest du eine Abbildung aller Skripte, aber versuche selbst eine Idee zu entwickeln, bevor du nachsiehst. 
 
 Hier noch ein paar Hinweise:
 
@@ -22,10 +22,11 @@ Hier noch ein paar Hinweise:
 * Ändere alle paar Schritte zufällig die Richtung. Auch die Höhe (y-Position) zu Beginn kannst du zufällig auswählen.
 * Versuche am linken und rechten Rand des Bildes eine gerade (waagrechte) Linie zu zeichnen, damit die Figuren dort Platz haben und stehen können.
 
-So in etwa sollte die Landschaft aussehen, wenn du fertig bist.
+So in etwa sollte die Landschaft aussehen, wenn du fertig bist:
+
 ![Die Landschaft](scratch-zauberlehrlinge/03-landschaft.png){: .right}
 
-Damit wir die Figuren an den richtigen Positionen zeichnen können, müssen wir uns merken, auf welche Höhe (y-Position) die Landschaft am linken und rechten Bildrand hat.
+Damit wir die Figuren an den richtigen Positionen zeichnen können, müssen wir uns merken, welche Höhe (y-Position) die Landschaft am linken und rechten Bildrand hat.
 
 * Erstelle zwei Variablen (z.B. "Position Tim" und "Position Melley") und setze sie auf die y-Position der Landschaft, einmal bevor du anfängst zu zeichnen und einmal nachdem du fertig bist.
 
@@ -53,18 +54,18 @@ Jetzt brauchen wir noch ein paar Skripte für die Figur:
 * Zu Beginn, wenn die Landschaft gezeichnet wird, soll die Figur sich verstecken.
 * Sobald es losgeht (wenn die Nachricht empfangen wird), sollen mehrere Dinge passieren:
 	* Platziere die Figur an der richtigen Position. Die y-Position haben wir vorhin in der Variable gespeichert, die x-Position muss ein Stück vom Rand entfernt sein (in der Mitte des geraden Strichs, den du am Rand gezeichnet hast).
-	* Lass die Figur nach rechts sehen (Richtung: 90);
+	* Lass die Figur nach rechts sehen (Richtung: 90)
 	* Wechsle zum ersten, normalen Kostüm.
 	* Die Figur soll sich zeigen.
 * Wenn die Taste "Pfeil nach oben" gedrückt wird und die Figur gerade dran ist, soll sie sich um 1 Grad gegen den Uhrzeigersinn (nach links) drehen.
 * Wenn die Taste "Pfeil nach unten" gedrückt wird und die Figur gerade dran ist, soll sie sich um 1 Grad mit dem Uhrzeigersinn (nach rechts) drehen.
 * Wer gerade dran ist, kannst du über die Variable "Spieler" rausfinden, die wir oben erstellt haben.
 
-Wenn du Hilfe brauchst, findest du am Ende der Anleitung alle Skripte, aber versuche es zuerst selbst zu lösen. Die Mentoren helfen dir auch gerne, wenn du Fragen hast.
+Wenn du Hilfe brauchst, findest du am Ende der Anleitung die Skripte, aber wie gesagt: versuche zuerst mal es selbst zu lösen. Die Mentoren helfen dir auch gerne, wenn du Fragen hast.
 
 ## Der Zauberlehrling Melley
 
-Für Melley brauchen wir eigentlich genau das gleiche wie für Tim. Erstelle eine neue Figur mit zwei Kostümen. Einen kleinen Unterschied gibt es aber! Melley soll in die andere Richtung sehen. Damit das nachher richtig funktioniert, müssen wir ihr Kostüm auf dem Kopf stehen lassen!
+Für Melley brauchen wir eigentlich genau das gleiche wie für Tim. Erstelle eine neue Figur mit zwei Kostümen. Einen kleinen Unterschied gibt es aber: Melley soll in die andere Richtung sehen. Damit das nachher richtig funktioniert, müssen wir ihr Kostüm auf dem Kopf stehen lassen!
 Klicke dazu einmal auf den Knopf "Oben und Unten vertauschen" (rechts oben) und platziere das Bild diesmal *unter* dem Kreuz:
 
 ![Richtige Position des zweiten Kostüms](scratch-zauberlehrlinge/08-melley.png){: .right}
@@ -97,7 +98,7 @@ Das zweite Skript soll dafür sorgen, dass der Spieler, der gerade dran ist, ein
 
 Folgendes muss dabei passieren:
 
-* Setzt die Position und Richtung des Blitzes auf Position und Richtung des Spielers, der gerade dran ist.
+* Setze die Position und Richtung des Blitzes auf Position und Richtung des Spielers, der gerade dran ist.
 * Zeige den Blitz.
 * Wiederhole:
   * Bewege den Blitz ein Stück vorwärts (z.B. 10er Schritt, je nachdem wie schnell der Blitz fliegen soll).
@@ -120,11 +121,9 @@ Puh, das war ein ganz schön langes Skript. Jetzt solltest du mit der Leertaste 
 
 Was fehlt jetzt noch? Genau, die Verwandlung in den Frosch, wenn ein Spieler getroffen wird!
 
-In der Mitte des langen Skripts haben wir eine Nachricht geschickt, wenn wir festgestellt haben, dass ein Spieler getroffen wurde. Jetzt müssen wir bei beiden Spieler noch ein Skript einbauen:
+In der Mitte des langen Skripts haben wir eine Nachricht geschickt, wenn wir festgestellt haben, dass ein Spieler getroffen wurde. Jetzt müssen wir bei beiden Spielern noch ein Skript einbauen:
 
 Wenn die Nachricht "getroffen" empfangen wird, überprüfe ob der Blitz vom anderen Spieler kommt (ob der andere gerade dran ist). Wenn ja, ändere das Kostüm auf den Frosch und setze die Variable "Spieler" dann auf einen leeren Wert, damit das Spiel nicht mehr weitergeht. Füge dieses Skript auch bei der anderen Figur ein.
-
-![Das Skript, wenn getroffen wurde](scratch-zauberlehrlinge/13-skript-getroffen.png){: .right}
 
 ## Skripte für Tim
 
@@ -137,6 +136,10 @@ Wenn die Nachricht "getroffen" empfangen wird, überprüfe ob der Blitz vom ande
 ## Skripte für den Blitz
 
 ![Die Skripte für den Blitz](scratch-zauberlehrlinge/12-blitz-skripte.png){: .right}
+
+## Skript, wenn der Spieler getroffen wird
+
+![Das Skript, wenn getroffen wurde](scratch-zauberlehrlinge/13-skript-getroffen.png){: .right}
 
 ## Weitere Ideen
 
