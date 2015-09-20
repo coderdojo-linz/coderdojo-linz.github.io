@@ -8,32 +8,36 @@ description: Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und 
 
 Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen. Ihr seid dabei immer abwechselnd an der Reihe einen Zauberspruch zu verschießen. Doch es ist gar nicht so leicht, den anderen zu treffen - man muss genau in die richtige Richtung zielen!
 
+1. ![Fertiges Spiel](scratch-zauberlehrlinge/01-fertig.png){: .right}
+
 Damit es nicht langweilig wird, wollen wir die Landschaft im Hintergrund jedes mal ein bisschen anders zeichnen. Damit fangen wir an.
 
 ## Landschaft zeichnen
 
-1. ![Fertiges Spiel](scratch-zauberlehrlinge/01-fertig.png){: .right}
 Um die Landschaft zu zeichnen, verwenden wir eine unsichtbare Figur, die mit dem Malstift einmal von links nach rechts durch das Bild läuft.
 
-<div class="plainOrderedList">
-    <ol>
-        <li>Erstelle eine Figur und lösche ihr Kostüm - die Figur selbst ist im Spiel nicht sichtbar, nur ihr Malstift.</li>
-        <li>Gib der Figur den Namen "Landschaft".</li>
-		<li>Erstelle ein Skript für die Figur, das läuft, wenn die grüne Fahne angeklickt wird.</li>
-    </ol>
-</div>
+* Erstelle eine Figur und lösche ihr Kostüm - die Figur selbst ist im Spiel nicht sichtbar, nur ihr Malstift.
+* Gib der Figur den Namen "Landschaft".
+* Erstelle ein Skript für die Figur, das läuft, wenn die grüne Fahne angeklickt wird.
+* Wische alle Malspuren weg.
+* Setze die Stiftfarbe und -dicke (z.B. auf grün und 3, aber du kannst da ruhig ein bisschen experimentieren).
+
 
 Wenn du mit der Maus über die Bühne fährst, siehst du rechts unten die zwei Werte x und y. x verändert sich, wenn du mit der Maus von links nach rechts fährst, y wenn du von oben nach unten fährst.
 Unsere unsichtbare Figur soll jetzt einmal von ganz links (x: -240) bis ganz rechts (x: 240) laufen.
+
+* Setze x auf -240 (ganz links).
+
 Auf welcher Höhe (bei welchem y) wir beginnen, soll zufällig entschieden werden. Den Wert müssen wir uns aber merken, damit wir nachher die Figur Tim dort hinstellen müssen. Lege unter Daten eine neue Variable mit Namen "Position Tim" an.
 
-<div class="plainOrderedList">
-    <ol>
-        <li>Erstelle eine Figur und lösche ihr Kostüm - die Figur selbst ist im Spiel nicht sichtbar, nur ihr Malstift.</li>
-        <li>Gib der Figur den Namen "Landschaft".</li>
-		<li>Erstelle ein Skript für die Figur, das läuft, wenn die grüne Fahne angeklickt wird.</li>
-    </ol>
-</div>
+* Erstelle unter Daten eine Variable namens "Position Tim".
+* Setze "Position Tim" auf einen zufälligen Wert zwischen -140 und 100.
+* Setze y auf "Position Tim".
+
+Die ersten paar Schritte müssen wir gerade nach rechts machen, damit Tim dort gut stehen kann.
+
+* Setze Richtung auf 90 (rechts).
+* Gehe einen 20er Schritt.
 
 
 Das Skript soll folgendes machen:
