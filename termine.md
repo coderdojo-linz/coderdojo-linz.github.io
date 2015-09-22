@@ -7,12 +7,12 @@ bannerimage: /images/coderdojo-banner-3.jpg
 # Termine
 
 * Freitag, 25. September 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](http://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993496031){:target="_blank"}
-* Freitag, 09. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993497034){:target="_blank"}
-* Freitag, 23. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993498037){:target="_blank"}
-* Freitag, 06. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993499040){:target="_blank"}
-* Freitag, 20. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993500043){:target="_blank"}
-* Freitag, 04. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993501046){:target="_blank"}
-* Freitag, 18. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-tickets-17993502049){:target="_blank"}
+* Freitag, 09. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](http://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993497034){:target="_blank"}
+* Freitag, 23. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](http://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993498037){:target="_blank"}
+* Freitag, 06. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993499040){:target="_blank"}
+* Freitag, 20. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993500043){:target="_blank"}
+* Freitag, 04. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993501046){:target="_blank"}
+* Freitag, 18. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993502049){:target="_blank"}
 <br/>Der Ort für diesen Termin wird noch bekanntgegeben.
 
 ## Was muss mitgebracht werden?
