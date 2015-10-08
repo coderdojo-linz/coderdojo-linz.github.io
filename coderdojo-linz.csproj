@@ -211,6 +211,22 @@
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\skripte-meteoriten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\skripte-raumschiff.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\space-shooter.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\buehnenbild-anlegen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\daten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-untergrund.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-loeschen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-pico.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-stern.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-zentrieren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-pico-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-pico-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-pico-3.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-stern-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-stern-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-stern-3.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skripte-pico.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skripte-stern.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\sterne-fangen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\01-variable.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\03-versuche-uebrig.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\04-versuche-uebrig.PNG" />
@@ -332,6 +348,7 @@
     <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\nbproject\genfiles.properties" />
     <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\nbproject\project.properties" />
     <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\src\plugin.yml" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
