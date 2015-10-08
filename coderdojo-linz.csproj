@@ -349,6 +349,7 @@
     <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\nbproject\project.properties" />
     <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\src\plugin.yml" />
     <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
