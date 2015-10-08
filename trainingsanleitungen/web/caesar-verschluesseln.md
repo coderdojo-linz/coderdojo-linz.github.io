@@ -6,6 +6,8 @@ description: In dieser Übung programmierst du deine eigene Verschlüsselung
 
 # Verschlüsseln mit JavaScript
 
+![Ausgabe des Ergebnis](caesar-verschluesseln/ergebnis-ausgabe.png)
+
 ## Ziel der Übung
 
 In dieser Übung lernst du ein einfaches Verschlüsselungsverfahren kennen.
