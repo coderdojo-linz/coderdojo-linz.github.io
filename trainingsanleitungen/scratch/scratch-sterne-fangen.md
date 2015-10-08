@@ -11,7 +11,7 @@ Fange so viele Sterne wie möglich.
 
 <p class="center"><img alt="Snake Game" src="scratch-sterne-fangen/sterne-fangen.png" /></p>
 
-Das Spiel besteht aus 3 Figuren und 7 Skripten. 
+Das Spiel besteht aus 3 Figuren und 7 Skripten. Es basiert auf dem Spiel [Gravity!! von gilnz21](https://scratch.mit.edu/projects/63121636/){:target="_blank"}.
 
 ## Figuren anlegen
 
@@ -74,7 +74,7 @@ Wenn die Nachricht "SpielVorbei" gesendet wird, stoppe alle Skripte und lösche 
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/73821694/](https://scratch.mit.edu/projects/73821694/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/80926486/](https://scratch.mit.edu/projects/80926486/){:target="_blank"} ausprobieren.
 
 ## Gesamte Skripte je Figur
 
