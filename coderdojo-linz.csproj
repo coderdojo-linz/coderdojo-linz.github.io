@@ -34,6 +34,7 @@
     <Content Include="images\coderdojo-banner-3.jpg" />
     <Content Include="images\programming.jpg" />
     <Content Include="mentoren\images\albrecht-woess.jpg" />
+    <Content Include="mentoren\images\alexander-rosemann.png" />
     <Content Include="mentoren\images\andreas-schabus.png" />
     <Content Include="mentoren\images\arno-huetter.jpg" />
     <Content Include="mentoren\images\brigitte-kalipcioglu.jpg" />
@@ -363,6 +364,7 @@
     <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\src\plugin.yml" />
     <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge.md" />
+    <Content Include="mentoren\rosemann-alexander.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
