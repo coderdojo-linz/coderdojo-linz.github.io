@@ -1,6 +1,6 @@
 ---
 layout:
-title: Pia Gerhofer
+title: Andrea Emmersberger
 description: 
 image: /mentoren/images/andrea-emmersberger.jpg
 page-category: mentor

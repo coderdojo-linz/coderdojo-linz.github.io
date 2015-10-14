@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.6</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -35,6 +35,7 @@
     <Content Include="images\programming.jpg" />
     <Content Include="mentoren\images\albrecht-woess.jpg" />
     <Content Include="mentoren\images\andrea-emmersberger.jpg" />
+    <Content Include="mentoren\images\alexander-rosemann.jpg" />
     <Content Include="mentoren\images\andreas-schabus.png" />
     <Content Include="mentoren\images\arno-huetter.jpg" />
     <Content Include="mentoren\images\brigitte-kalipcioglu.jpg" />
@@ -56,6 +57,71 @@
     <Content Include="styles\dependencies.css" />
     <Content Include="styles\images\coderdojo.png" />
     <Content Include="styles\styles.css" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\01_installationen\CheckWinArchitectureStep2.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\01_installationen\NetBeansStartupPage.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\01_installationen\SelectOs.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddJarStep1.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddJarStep2.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddOnCommandStep1.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddOnCommandStep2.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddOnCommandStep3.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddOnCommandStep4.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddPackage.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddYamlStep1.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddYamlStep2.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddYamlStep3.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AddYamlStep4.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\AttachJavaDoc.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\BuildOutput.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\ChooseProject.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\Command.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\ExtendJavaPlugin.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\FirstPlugin\build.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\FirstPlugin\nbproject\build-impl.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\FirstPlugin\nbproject\private\private.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\FirstPlugin\nbproject\project.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\FirstPlugin\src\com\bajupa\firstplugin\FirstPlugin.java" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\NameAndLocateProject.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\NetBeansOverview.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\NewClassStep1.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\NewClassStep2.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\NewClassStep3.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\NewPackageStep1.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\NewPackageStep2.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\Toolbar.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\AvailableMethods.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\Command.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\Getafix\build.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\Getafix\nbproject\build-impl.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\Getafix\nbproject\project.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\Getafix\src\com\bajupa\getafix\Getafix.java" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\MissingJavadoc.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\SelectJavadoc.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\Command.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\ExtractMethodStep1.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\ExtractMethodStep2.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\Getafix\build.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\Getafix\nbproject\build-impl.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\Getafix\nbproject\project.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\Getafix\src\com\bajupa\getafix\Getafix.java" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\InsertOnEnable.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\OpMessage.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\SelectRegisterEvents.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\WelcomeMsg.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\Welcome\build.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\Welcome\nbproject\build-impl.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\Welcome\nbproject\project.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\Welcome\src\com\bajupa\welcome\ChatListener.java" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\Welcome\src\com\bajupa\welcome\JoinAndLeaveListener.java" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\Welcome\src\com\bajupa\welcome\Welcome.java" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\build.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\nbproject\build-impl.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\nbproject\project.xml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\src\com\bajupa\getafix\DamageEventListener.java" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\src\com\bajupa\getafix\Getafix.java" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\src\com\bajupa\getafix\PotionPot.java" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\ListPotionDrinkers.png" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\craftbukkit.jar" />
     <Content Include="trainingsanleitungen\scratch\scratch-breakout\01-choose-background.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-breakout\02-delete-scratchy.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-breakout\03-create-figures.png" />
@@ -147,6 +213,22 @@
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\skripte-meteoriten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\skripte-raumschiff.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\space-shooter.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\buehnenbild-anlegen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\daten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-untergrund.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-loeschen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-pico.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-stern.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\figur-zentrieren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-pico-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-pico-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-pico-3.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-stern-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-stern-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skript-stern-3.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skripte-pico.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skripte-stern.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\sterne-fangen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\01-variable.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\03-versuche-uebrig.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\04-versuche-uebrig.PNG" />
@@ -155,6 +237,19 @@
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\09-kleiner.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\10-liste.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\11-liste.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\01-fertig.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\02-strich.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\03-landschaft.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\04-landschaft-skript.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\05-tim.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\06-tim-kreuz.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\07-tim-skripte.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\08-melley.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\09-melley-skripte.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\10-figuren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\11-blitz.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\12-blitz-skripte.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge\13-skript-getroffen.png" />
     <Content Include="trainingsanleitungen\touch-develop\erste-schritte\1.PNG" />
     <Content Include="trainingsanleitungen\touch-develop\erste-schritte\2-signin.PNG" />
     <Content Include="trainingsanleitungen\touch-develop\erste-schritte\3.PNG" />
@@ -246,8 +341,31 @@
     <Content Include="mentoren\schabus-andreas.md" />
     <Content Include="mentoren\kalipcioglu-brigitte.md" />
     <Content Include="mentoren\ziegler-wolfgang.md" />
-    <Content Include="mentoren\gerhofer-pia.md" />
-    <Content Include="mentoren\emmersberger-andrea.md" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\01_installationen.md" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin.md" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\FirstPlugin\nbproject\genfiles.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\FirstPlugin\nbproject\private\private.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\FirstPlugin\nbproject\project.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\02_first-plugin\FirstPlugin\src\plugin.yml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player.md" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\Getafix\nbproject\genfiles.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\Getafix\nbproject\project.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\03_getafix-Player\Getafix\src\plugin.yml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments.md" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\Getafix\nbproject\genfiles.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\Getafix\nbproject\project.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\04_getafix-Arguments\Getafix\src\plugin.yml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener.md" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\Welcome\nbproject\genfiles.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\Welcome\nbproject\project.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\05_welcome-Listener\Welcome\src\plugin.yml" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion.md" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\nbproject\genfiles.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\nbproject\project.properties" />
+    <Content Include="trainingsanleitungen\minecraft-plugins\06_getafix-MagicPotion\Getafix\src\plugin.yml" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge.md" />
+    <Content Include="mentoren\rosemann-alexander.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
