@@ -34,6 +34,7 @@
     <Content Include="images\coderdojo-banner-3.jpg" />
     <Content Include="images\programming.jpg" />
     <Content Include="mentoren\images\albrecht-woess.jpg" />
+    <Content Include="mentoren\images\andrea-emmersberger.jpg" />
     <Content Include="mentoren\images\andreas-schabus.png" />
     <Content Include="mentoren\images\arno-huetter.jpg" />
     <Content Include="mentoren\images\brigitte-kalipcioglu.jpg" />
@@ -245,6 +246,8 @@
     <Content Include="mentoren\schabus-andreas.md" />
     <Content Include="mentoren\kalipcioglu-brigitte.md" />
     <Content Include="mentoren\ziegler-wolfgang.md" />
+    <Content Include="mentoren\gerhofer-pia.md" />
+    <Content Include="mentoren\emmersberger-andrea.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
