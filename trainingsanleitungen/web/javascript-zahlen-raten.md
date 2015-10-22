@@ -150,3 +150,5 @@ Wenn du noch weiterprogrammieren willst, hier noch ein paar Ideen:
 4. Wenn du schon etwas Erfahrung mit JavaScript gesammelt hast, kannst du das [JavaScript Quiz auf w3schools](http://www.w3schools.com/js/js_quiz.asp){:target="_blank"} probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein HTML-Wissen noch zu erweitern.
 
 4. Möchtest du deine Webseite etwas schöner gestalten? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/erste-schritte-mit-css.html).
+
+4. Möchtest du deine Webseite im Internet veröffentlichen? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/dreamspark-azure.html).

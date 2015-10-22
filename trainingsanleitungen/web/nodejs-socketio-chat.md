@@ -285,3 +285,5 @@ Hier noch einige Ideen, die du dir erarbeiten oder mit deinen Mentoren durchgehe
 [Hier](https://developer.chrome.com/devtools/docs/javascript-debugging){:target="_blank"} findest du eine Anleitung, wie das im Chrome-Browser funktioniert.
 
 * Veröffentlichen der Anwendung im Internet (siehe auch [Linksammlung](/infos/linksammlung.html)).
+
+* Möchtest du deine Webseite im Internet veröffentlichen? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/dreamspark-azure.html).

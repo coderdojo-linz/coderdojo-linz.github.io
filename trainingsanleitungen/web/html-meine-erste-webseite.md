@@ -231,3 +231,5 @@ Wir haben Dir die fertige HTML-Datei zusammengestellt. Du kannst sie [hier](html
 2. Möchtest du deine Webseite etwas schöner gestalten? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/erste-schritte-mit-css.html).
 
 3. Möchtest du lernen, wie man Programme in JavaScript in eine Webseite einbettet? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/javascript-zahlen-raten.html).
+
+4. Möchtest du deine Webseite im Internet veröffentlichen? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/dreamspark-azure.html).

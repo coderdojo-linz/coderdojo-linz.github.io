@@ -487,5 +487,5 @@ Wenn du das Spiel erfolgreich zum Laufen gebracht hast, haben wir hier ein paar 
 
 * Spielstand aufzeichnen - für jeden abgeschossenen Meteor könntest du Punkte vergeben.
 * Das Spiel könnte langsam schwieriger werden, indem die Meteoriten schneller herunterfallen.
+* Möchtest du deine Webseite im Internet veröffentlichen? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/dreamspark-azure.html).
 * Für Profis: Verwende einen [Phaser Particle Emitter](http://phaser.io/docs#particles){:target="_blank"}, um Meteoriten explodieren zu lassen.
-
