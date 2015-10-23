@@ -4,7 +4,7 @@ title: Scratch Dragons Realm
 description: Springe hoch, um die herumfliegenden Sterne zu fangen.
 ---
 
-# Scratch Dragons Realm
+# Dragons Realm
 
 Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindringende Raubritter verteidigt. 
 Mit den Pfeiltasten lenkst du den Drachen (du kannst auch zwei Tasten gleichzeitig drücken, mit ↑ und → fliegt man zum Beispiel nach rechts oben). 
