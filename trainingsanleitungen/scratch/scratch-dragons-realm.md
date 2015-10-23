@@ -12,7 +12,7 @@ Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren la
 Damit das Spiel auch auf Tablets und Handys funktioniert, wurde nachträglich eine Maus/Touch-Steuerung eingebaut. 
 Generell ist das Spielerlebnis mit der Tastatur aber besser.
 
-<p class="center"><img alt="Dragons Realm" src="scratch-dragons-realm/dragons-realm.png" /></p>
+<p class="center"><img alt="Dragons Realm" src="scratch-dragons-realm/dragons-realm.png" style="max-width: 100%" /></p>
 
 Möchtest du das Spiel zuerst einmal ausprobieren? Rufe dazu die Adresse [https://scratch.mit.edu/projects/81928816](https://scratch.mit.edu/projects/81928816){:target="_blank"} auf. 
 Dort kannst du außerdem nachsehen und vergleichen, ob in deinem Code nichts vergessen wurde.
