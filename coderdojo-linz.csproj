@@ -133,6 +133,23 @@
     <Content Include="trainingsanleitungen\scratch\scratch-breakout\09-ball-script.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-breakout\10-block-scripts.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-breakout\11-done.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\block-scroll-through.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\daten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\dragons-realm.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\figur-dragon-drehpunkt.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\figur-dragon-kostueme.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\figur-dragon.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\figur-fireball-kostueme.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\figuren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\skripte-background.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\skripte-border.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\skripte-dragon-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\skripte-dragon-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\skripte-dragon-3.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\skripte-fireball-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\skripte-fireball-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\skripte-knight.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\skripte-tiles.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\ereignisse.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\erste-schritte-scratchy.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-erste-schritte\mehrere-quadrate.png" />
@@ -366,6 +383,10 @@
     <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-zauberlehrlinge.md" />
     <Content Include="mentoren\rosemann-alexander.md" />
+    <Content Include="mentoren\emmersberger-andrea.md" />
+    <Content Include="mentoren\gerhofer-pia.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\dragons.zip" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
