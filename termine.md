@@ -6,12 +6,27 @@ bannerimage: /images/coderdojo-banner-3.jpg
 
 # Termine
 
-* Freitag, 23. Oktober 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](http://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993498037){:target="_blank"}
-* Freitag, 06. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993499040){:target="_blank"}
+### 2015
+
 * Freitag, 20. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993500043){:target="_blank"}
 * Freitag, 04. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993501046){:target="_blank"}
 * Freitag, 18. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993502049){:target="_blank"}
 <br/>Der Ort für diesen Termin wird noch bekanntgegeben.
+
+### 2016
+
+* Freitag, 15. Jänner 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19222587276){:target="_blank"}
+* Freitag, 29. Jänner 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19222588279){:target="_blank"}
+* Freitag, 12. Februar 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19222589282){:target="_blank"}
+* Freitag, 26. Februar 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19222590285){:target="_blank"}
+* Freitag, 11. März 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19222591288){:target="_blank"}
+* Freitag, 08. April 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* Freitag, 22. April 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* Freitag, 06. Mai 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* Freitag, 20. Mai 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* Freitag, 03. Juni 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* Freitag, 17. Juni 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+* Freitag, 01. Juli 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Was muss mitgebracht werden?
 
