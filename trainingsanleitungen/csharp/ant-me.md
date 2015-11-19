@@ -12,11 +12,9 @@ C# (Englisch "C Sharp") ist eine der am meist verwendeten Programmiersprachen de
 
 Ein Ziel dieser Übung ist es, dass du C# auf eine Weise kennenlernst, die Spaß macht. Dein Ziel wird es sein, in C# einen Computerspieler für ein Spiel zu programmieren, bei dem du Ameisen einer Ameisenkolonie steuerst. Du lerst dabei nicht nur die Programmiersprache C# kennen, du musst dir auch einen schlauen Algorithmus für deine Ameisen überlegen.
 
-## AntMe!
+In dieser Übung verwenden wir das Spiel [AntMe!](http://www.antme.net/de/){:target="_blank"}.  
 
 ![AntMe! Logo](http://www.antme.net/wp-content/themes/antme/img/logo.png)
-
-In dieser Übung verwenden wir das Spiel [AntMe!](http://www.antme.net/de/){:target="_blank"}.  
 
 ## Systemvoraussetzungen
 
