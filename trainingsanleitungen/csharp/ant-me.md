@@ -8,9 +8,9 @@ description: Lerne C# kennen, indem du damit eine Ameise in einem Spiel steuerst
 
 ## Ziel der Übung
 
-C# (Englisch "C Sharp") ist eine der am meist verwendeten Programmiersprachen der Welt. Sie ist Open Source und plattformunabhängig. Mit C# werden verschiedenste Programme geschrieben. Spiele, wirtschaftliche Software, Webseiten und vieles mehr.
+C# (Englisch "C Sharp") ist eine der meist verwendeten Programmiersprachen der Welt. Sie ist Open Source und plattformunabhängig. Mit C# werden verschiedenste Programme geschrieben: Spiele, wirtschaftliche Software, Webseiten und vieles mehr.
 
-Ein Ziel dieser Übung ist es, dass du C# auf eine Weise kennenlernst, die Spaß macht. Dein Ziel wird es sein, in C# einen Computerspieler für ein Spiel zu programmieren, bei dem du Ameisen einer Ameisenkolonie steuerst. Du lerst dabei nicht nur die Programmiersprache C# kennen, du musst dir auch einen schlauen Algorithmus für deine Ameisen überlegen.
+Ein Ziel dieser Übung ist es, dass du C# auf eine Weise kennenlernst, die Spaß macht. Dein Ziel wird es sein, in C# einen Computerspieler zu programmieren, der die Ameisen einer Ameisenkolonie steuert. Du lernst dabei nicht nur die Programmiersprache C# kennen, du musst dir auch einen schlauen Algorithmus für deine Ameisen überlegen.
 
 In dieser Übung verwenden wir das Spiel [AntMe!](http://www.antme.net/de/){:target="_blank"}.  
 
@@ -44,6 +44,8 @@ Hast du kein Windows sondern einen Mac oder Linux? Sag einem Mentor beim CoderDo
 
 ## Wie gehts weiter?
 
-C# gefällt dir? Du möchtest mehr wissen? Wenn du Lust hast kannst du einen kostenlosen [Online-Videokurs über C#](https://mva.microsoft.com/de-de/training-courses/programmieren-f-r-beginner-mit-c--10140?l=JqnuG5A6_9704984382){:target="_blank"} machen. Dabei lernst du die Programmiersprache von Grund auf Schritt für Schritt kennen.
+C# gefällt dir? Du möchtest mehr wissen?
 
-Wenn du im CoderDojo bist, löchere deine Mentoren mit Fragen. In Linz haben wir bei paar echte C# Profis dabei, die in diesem Bereich weit über die Grenzen von Österreich hinaus bekannt sind.
+1. Wenn du Lust hast kannst du einen kostenlosen [Online-Videokurs über C#](https://mva.microsoft.com/de-de/training-courses/programmieren-f-r-beginner-mit-c--10140?l=JqnuG5A6_9704984382){:target="_blank"} machen. Dabei lernst du die Programmiersprache von Grund auf Schritt für Schritt kennen.
+
+2. Wenn du im CoderDojo bist, löchere deine Mentoren mit Fragen. In Linz haben wir bei paar echte C# Profis dabei, die in diesem Bereich weit über die Grenzen von Österreich hinaus bekannt sind.
