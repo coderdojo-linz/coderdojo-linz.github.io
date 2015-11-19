@@ -6,6 +6,8 @@ description: Lerne C# kennen, indem du damit eine Ameise in einem Spiel steuerst
 
 # AntMe! Wie schlau ist deine Ameise?
 
+![AntMe!](ant-me/antme-screenshot.png)
+
 ## Ziel der Übung
 
 C# (Englisch "C Sharp") ist eine der meist verwendeten Programmiersprachen der Welt. Sie ist Open Source und plattformunabhängig. Mit C# werden verschiedenste Programme geschrieben: Spiele, wirtschaftliche Software, Webseiten und vieles mehr.
@@ -41,6 +43,13 @@ Hast du kein Windows sondern einen Mac oder Linux? Sag einem Mentor beim CoderDo
 3. Deine Ameisen sind nicht auf sich alleine gestellt. Sie können mit anderen Ameisen über Duftstoffe kommunizieren. Wie das geht lernst du in der [dritten AntMe! Übung](http://wiki.antme.net/de/Lektion6){:target="_blank"}.
 
 4. Möchtest du, dass deine Ameisen schneller oder stärker sind? Du kannst das beeinflussen. Wie, das findest du in [Übung vier von AntMe!](http://wiki.antme.net/de/Lektion7){:target="_blank"} heraus.
+
+## Kreativ sein und andere Coder herausfordern
+
+1. Nach den Übungen kannst du beginnen, die Strategie deiner Ameisen weiter zu verbessern. Du kannst deinen Computerspieler gegen verschiedene Beispiel-Spieler antreten lassen, die AntMe! mitbringt. Wie schlagen sich deine Ameisen im Vergleich zu ihnen?<br/>
+![Mehrere Computerspieler gleichzeitig](ant-me/mehrere-spieler-vergleichen.png)
+
+2. Wenn mehrere Coder im Dojo AntMe! programmieren, könnt ihr eure eigenen Computerspieler gegeneinander spielen lassen. Wessen Ameisen schneiden am besten ab?
 
 ## Wie gehts weiter?
 
