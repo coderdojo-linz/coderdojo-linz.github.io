@@ -48,6 +48,10 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 3. [Getafix - ein Minecraft-Plugin für magische Heilung Teil 1](/trainingsanleitungen/minecraft-plugins/03_getafix-Player.html)
 4. [Getafix - ein Minecraft-Plugin für magische Heilung Teil 2](/trainingsanleitungen/minecraft-plugins/04_getafix-Arguments.html)
 
+## C# (C Sharp)
+
+1. [AntMe! Wie schlau ist deine Ameise?](/trainingsanleitungen/csharp/ant-me.html)
+
 ## Unity (Spieleentwicklungsplattform)
 
 1. [Erste Schritte mit Unity](/trainingsanleitungen/unity/erste-schritte-mit-unity.html)
