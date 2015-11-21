@@ -8,7 +8,6 @@ bannerimage: /images/coderdojo-banner-3.jpg
 
 ### 2015
 
-* Freitag, 20. November 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993500043){:target="_blank"}
 * Freitag, 04. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993501046){:target="_blank"}
 * Freitag, 18. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993502049){:target="_blank"}
 <br/>Der Ort für diesen Termin wird noch bekanntgegeben.
@@ -22,7 +21,6 @@ bannerimage: /images/coderdojo-banner-3.jpg
 * Freitag, 11. März 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19222591288){:target="_blank"}
 * Freitag, 08. April 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 * Freitag, 22. April 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-* Freitag, 06. Mai 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 * Freitag, 20. Mai 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 * Freitag, 03. Juni 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 * Freitag, 17. Juni 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
