@@ -223,6 +223,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-schlange-6.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\skript-schlange.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\snake-game.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\daten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\laser.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\meteroit.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-space-shooter\raumschiff.png" />

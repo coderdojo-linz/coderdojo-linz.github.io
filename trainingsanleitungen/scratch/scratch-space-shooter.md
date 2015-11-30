@@ -24,6 +24,13 @@ Die nächste Figur ist der Laserstrahl, der von der Rakte abgefeuert werden kann
 4. ![Meteroit](scratch-space-shooter/meteroit.png){: .right}
 Und als letzte Figur brauchst du noch einen Meteoriten.
 
+## Daten
+
+1. ![Daten](scratch-space-shooter/daten.png){: .right}
+Wir brauchen für den Space Shooter einige Daten: die Anzahl der Treffer, die Enstehungszeit von Meteoriten, deren Geschwindigkeit und 
+einen Indikator, ob ein Meteroit getroffen wurde. ACHTUNG: die Variable getroffen gilt nur für die Figur "Meteroit", 
+alle anderen Variablen gelten für alle Figuren.
+
 ## Skripte für das Raumschiff
 
 Das Raumschiff hat drei Aufgaben:
