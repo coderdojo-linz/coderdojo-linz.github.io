@@ -11,7 +11,7 @@ bannerimage: /images/coderdojo-banner-3.jpg
 * Freitag, 04. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993501046){:target="_blank"}
 <br/>Wissensturm Linz
 * Freitag, 18. Dezember 2015 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-17993502049){:target="_blank"}
-<br/>GRZ IT Center GmbH, Goethestr. 80, 4020 Linz, [Anfahrtsplan](http://www.grz.at/eBusiness/01_template1/1077528498541834366-1079162600655747802_1079162937542245764-1079162937542245764-NA-42-NA.html)
+<br/>GRZ IT Center GmbH, Goethestr. 80, 4020 Linz, [Anfahrtsplan](http://www.grz.at/eBusiness/01_template1/1077528498541834366-1079162600655747802_1079162937542245764-1079162937542245764-NA-42-NA.html){:target="_blank"}
 
 ### 2016
 
