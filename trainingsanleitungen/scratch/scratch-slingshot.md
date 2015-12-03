@@ -28,15 +28,14 @@ mit Hilfe eines Skripts zeichnen werden.
 
 1. ![Daten](scratch-slingshot/daten.png){: .right}
 Wir brauchen für das Spiel verschiedene Variablen:
-<br /><br />
-Geschwindigkeit: sie gibt an, wie schnell die Banane abgeschossen wird und damit auch wie weit sie fliegt
-MaxGeschwindigkeit: sie gibt an, wie weit die Steinschleuder maximal geladen werden kann
-Winkel: der Winkel, in dem die Banane geworfen wird, wird verwenden hier 45°
-bereit: gibt an, ob die Steinschleuder gerade bereit für einen Wurf ist
-t: die vergangene Zeit während des Wurfs
-x0: die x-Position der Banane am Beginn des Wurfs
-y0: die y-Position der Banane am Beginn des Wurfs
-<br /><br />Alle Variablen gelten für alle Figuren.
+<br />**Geschwindigkeit**: sie gibt an, wie schnell die Banane abgeschossen wird und damit auch wie weit sie fliegt
+<br />**MaxGeschwindigkeit**: sie gibt an, wie weit die Steinschleuder maximal geladen werden kann
+<br />**Winkel**: der Winkel, in dem die Banane geworfen wird, wird verwenden hier 45°
+<br />**bereit**: gibt an, ob die Steinschleuder gerade bereit für einen Wurf ist
+<br />**t**: die vergangene Zeit während des Wurfs
+<br />**x0**: die x-Position der Banane am Beginn des Wurfs
+<br />**y0**: die y-Position der Banane am Beginn des Wurfs
+<br />Alle Variablen gelten für alle Figuren.
 
 ## Skripte für das Gummiband
 
