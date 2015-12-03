@@ -24,6 +24,8 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Die Zauberlehrlinge - Dieses Spiel kannst du gemeinsam mit einem Freund oder einer Freundin spielen](/trainingsanleitungen/scratch/scratch-zauberlehrlinge.html)
 1. [Sterne fangen - Springe hoch, um möglichst viele Sterne zu fangen](/trainingsanleitungen/scratch/scratch-sterne-fangen.html)
 1. [Dragons Realm - Verteidige dein Reich mit Feuerbällen](/trainingsanleitungen/scratch/scratch-dragons-realm.html)
+1. [Steinschleuder - Füttere den Affen mit Bananen](/trainingsanleitungen/scratch/scratch-slingshot.html)
+
 
 ## TouchDevelop
 

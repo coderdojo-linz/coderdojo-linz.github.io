@@ -205,6 +205,13 @@
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\kante-malen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\male-n-kanten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\scratch-malflaeche-initialisieren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-slingshot\buehne-und-figuren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-slingshot\daten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-slingshot\figur-loeschen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-slingshot\skripte-banane-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-slingshot\skripte-banane-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-slingshot\skripte-gummiband.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-slingshot\slingshot-affe-fuettern.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\daten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\figur-apfel.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\figur-game-over.png" />
@@ -388,6 +395,7 @@
     <Content Include="mentoren\gerhofer-pia.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\dragons.zip" />
+    <Content Include="trainingsanleitungen\scratch\scratch-slingshot.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
