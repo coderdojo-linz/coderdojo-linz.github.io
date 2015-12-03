@@ -29,13 +29,13 @@ mit Hilfe eines Skripts zeichnen werden.
 1. ![Daten](scratch-slingshot/daten.png){: .right}
 Wir brauchen für das Spiel verschiedene Variablen:
 <br /><br />
-    * Geschwindigkeit: sie gibt an, wie schnell die Banane abgeschossen wird und damit auch wie weit sie fliegt
-    * MaxGeschwindigkeit: sie gibt an, wie weit die Steinschleuder maximal geladen werden kann
-    * Winkel: der Winkel, in dem die Banane geworfen wird, wird verwenden hier 45°
-    * bereit: gibt an, ob die Steinschleuder gerade bereit für einen Wurf ist
-    * t: die vergangene Zeit während des Wurfs
-    * x0: die x-Position der Banane am Beginn des Wurfs
-    * y0: die y-Position der Banane am Beginn des Wurfs
+Geschwindigkeit: sie gibt an, wie schnell die Banane abgeschossen wird und damit auch wie weit sie fliegt
+MaxGeschwindigkeit: sie gibt an, wie weit die Steinschleuder maximal geladen werden kann
+Winkel: der Winkel, in dem die Banane geworfen wird, wird verwenden hier 45°
+bereit: gibt an, ob die Steinschleuder gerade bereit für einen Wurf ist
+t: die vergangene Zeit während des Wurfs
+x0: die x-Position der Banane am Beginn des Wurfs
+y0: die y-Position der Banane am Beginn des Wurfs
 <br /><br />Alle Variablen gelten für alle Figuren.
 
 ## Skripte für das Gummiband
@@ -57,7 +57,7 @@ musst die Flugbahn der Banane berechnen.
 ## Weitere Ideen
 
 * Mach den Winkel mit den Pfeiltaste veränderbar.
-* Mache die Steinschleuder mit der Maus steuerbar. Unter [https://scratch.mit.edu/projects/89442992/](https://scratch.mit.edu/projects/89442992/) findest 
+* Mache die Steinschleuder mit der Maus steuerbar. Unter [https://scratch.mit.edu/projects/89442992/](https://scratch.mit.edu/projects/89442992/){:target="_blank"} findest 
 du ein Beispiel, wie das funktionieren könnte.
 
 ## Ausprobieren
