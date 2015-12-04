@@ -49,12 +49,12 @@ Stift das Gummiband. Es muss vom linken Rand der Steinschleuder zur Bananen und 
 Die Banane wird beim Drücken der Leertaste in der Steinschleuder eingespannt. Je länger man drückt, desto 
 weiter wird die Banane zurückgezogen. So fliegt sie dann weiter.
 
-![Skripte Stern](scratch-slingshot/skripte-banane-1.png){: .right}
+![Skripte Stern](scratch-slingshot/skripte-banane-1.png)
 
 Wenn man die Leertaste loslässt, wird die Banane abgefeuert. Hier kommt jetzt die wirklich spannenden Teil. Du 
 musst die Flugbahn der Banane berechnen.
 
-![Skripte Stern](scratch-slingshot/skripte-banane-2.png){: .right}
+![Skripte Stern](scratch-slingshot/skripte-banane-2.png)
 	
 ## Weitere Ideen
 
