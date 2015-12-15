@@ -396,6 +396,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\dragons.zip" />
     <Content Include="trainingsanleitungen\scratch\scratch-slingshot.md" />
+    <Content Include="sponsoring.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
