@@ -4,8 +4,13 @@
 	font-size: 15px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	color: #039be5;
+
+	a, a:hover {
+		color: #039be5;
+		text-decoration: none;
+	}
 }
 
 h1 {
@@ -15,6 +20,17 @@ h1 {
 
 h2 {
 	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 16px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 }
 
