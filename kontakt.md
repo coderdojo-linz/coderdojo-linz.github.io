@@ -9,8 +9,7 @@ Bei Fragen oder Anregungen schickt uns eine Mail an [info@coderdojo-linz.org](ma
 
 ## Impressum ##
 
-**CoderDojo Linz<br />**
-Rainer Stropek und Karin Huber<br />
+**Coding Club Linz<br />**
 Birkenweg 16<br />
 4060 Leonding
 
