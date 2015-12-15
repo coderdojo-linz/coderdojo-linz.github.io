@@ -6,70 +6,70 @@ title: Sponsoring
 # Sponsoring
 
 ## Wer sind wir?
-In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.
+In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Programmierclubs fÃ¼r Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und kÃ¶nnen sich Ã¼ber ihre Projekte austauschen.
 
-Hier in Linz sind wir ein gemeinnütziger Verein, an dessen oberster Stelle das gemeinsame Entdecken, Teamarbeit und Mentoring zur Vermittlung von Technologien und Programmierung an Kinder steht. Wir organisieren alle zwei Wochen eine Veranstaltung, an meistens um die 30 Kinder teilnehmen. Als Räumlichkeiten dient dazu der Wissensturm in Linz.
+Hier in Linz sind wir ein gemeinnÃ¼tziger Verein, an dessen oberster Stelle das gemeinsame Entdecken, Teamarbeit und Mentoring zur Vermittlung von Technologien und Programmierung an Kinder steht. Wir organisieren alle zwei Wochen eine Veranstaltung, an der meistens um die 30 Kinder teilnehmen. Als RÃ¤umlichkeiten dient dazu der Wissensturm in Linz.
 
 ## Wieso Sponsoring?
 
-Um möglichst viele Kinder zu erreichen, sollen für die Kinder bzw. deren Eltern keinerlei Gebühren oder sonstige finanzielle Verpflichtungen anfallen. Daher wir kein Eintrittspreis, Mitgliedschaft oder sonstiges für die Teilnahme der Kinder verlangt.
+Um mÃ¶glichst viele Kinder zu erreichen, sollen fÃ¼r die Kinder bzw. deren Eltern keinerlei GebÃ¼hren oder sonstige finanzielle Verpflichtungen anfallen. Daher wir kein Eintrittspreis, Mitgliedschaft oder sonstiges fÃ¼r die Teilnahme der Kinder verlangt.
 
-Auch unsere Mentoren engagieren sich ehrenamtlich. Vorbereitung von Anleitungen für Programmierbeispielen sowie die Betreuung der Veranstaltungen werden in der Freizeit durchgeführt.
+Auch unsere Mentoren engagieren sich ehrenamtlich. Vorbereitung von Anleitungen fÃ¼r Programmierbeispielen sowie die Betreuung der Veranstaltungen werden in der Freizeit durchgefÃ¼hrt.
 
 ## Welchen Beitrag kann ich leisten?
 
-Egal ob mittels Mithilfe als Mentor oder helfende Hand bei den Veranstaltungen, Spende von Sachmitteln/Lizenzen oder durch finanzielle Unterstützung, wir freuen uns über jeden Beitrag.
+Egal ob mittels Mithilfe als Mentor oder helfende Hand bei den Veranstaltungen, Spende von Sachmitteln/Lizenzen oder durch finanzielle UnterstÃ¼tzung, wir freuen uns Ã¼ber jeden Beitrag.
  
 ### Geldspenden
-Im Folgenden findest du Vorschläge, wie du das CoderDojo Linz finanziell unterstützen kannst. Deiner Kreativität sind natürlich keine Grenzen gesetzt, wir freuen uns über neue Vorschläge. Die Preise sind Richtwerte.
+Im Folgenden findest du VorschlÃ¤ge, wie du das CoderDojo Linz finanziell unterstÃ¼tzen kannst. Deiner KreativitÃ¤t sind natÃ¼rlich keine Grenzen gesetzt, wir freuen uns Ã¼ber neue VorschlÃ¤ge. Die Preise sind Richtwerte.
 
-#### Sponsor a Dojo: ab 100€
+#### Sponsor a Dojo: ab 100â‚¬
 
-Präsentiere dich als Firma und sponsere ein CoderDojo. Dein Geld wird ausschließlich für die Kinder verwendet. Die Vorteile:
+PrÃ¤sentiere dich als Firma und sponsere ein CoderDojo. Dein Geld wird ausschlieÃŸlich fÃ¼r die Kinder verwendet. Die Vorteile:
 
-- Verlinkung und Ankündigung der Firma in der Ausschreibung 
-- Verlinkung und Ankündigung der Firma im Termin auf der Webseite. 
-- Möglichkeit zur Aufstellung eines Werbebanners. 
+- Verlinkung und AnkÃ¼ndigung der Firma in der Ausschreibung 
+- Verlinkung und AnkÃ¼ndigung der Firma im Termin auf der Webseite. 
+- MÃ¶glichkeit zur Aufstellung eines Werbebanners. 
 
-#### Sponsor 5 Dojos: ab 500€
+#### Sponsor 5 Dojos: ab 500â‚¬
 
-Präsentiere dich als Firma und sponsere gleich fünf oder mehr CoderDojos. Die Vorteile:
+PrÃ¤sentiere dich als Firma und sponsere gleich fÃ¼nf oder mehr CoderDojos. Die Vorteile:
 
-- Wie „Sponsor a Dojo“ 
-- Zusätzlich die Möglichkeit zur Veranstaltung eines firmen-internes Dojo mit unseren Mentoren, zum Beispiel an deinem Tag der offenen Tür.
+- Wie â€Sponsor a Dojoâ€œ 
+- ZusÃ¤tzlich die MÃ¶glichkeit zur Veranstaltung eines firmen-internes Dojo mit unseren Mentoren, zum Beispiel an deinem Tag der offenen TÃ¼r.
 
-#### Gönner: monatlich ab 1€
+#### GÃ¶nner: monatlich ab 1â‚¬
 
-Trete als CoderDojo Gönner auf und spende monatlich einen Betrag deiner Wahl. Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucken der Anleitungen, für Obst während der Veranstaltungen, oder für die Veranstaltung eines CoderDojo Festes für die Kinder. Wenn gewünscht, wirst du außerdem auf unserer Webseite namentlich erwähnt.
+Trete als CoderDojo GÃ¶nner auf und spende monatlich einen Betrag deiner Wahl. Das Geld wird ausschlieÃŸlich fÃ¼r die Kinder verwendet, z.B. fÃ¼r das Ausdrucken der Anleitungen, fÃ¼r Obst wÃ¤hrend der Veranstaltungen, oder fÃ¼r die Veranstaltung eines CoderDojo Festes fÃ¼r die Kinder. Wenn gewÃ¼nscht, wirst du auÃŸerdem auf unserer Webseite namentlich erwÃ¤hnt.
 
-#### Sponsor our Mentors: ab 10€
+#### Sponsor our Mentors: ab 10â‚¬
 
-Da unsere Mentoren die Dojos in ihrer Freizeit abhalten, freuen wir uns natürlich auch über Spenden für unsere Mentoren. Es gibt nach jedem Dojo ein gemeinsames Beisammensein im N.I.U., wo wir das Geld gerne für Getränke aufwenden. Außerdem kann auch gerne die Ausrichtung der Weihnachtsfeier bzw. Generalversammlung übernommen werden.
+Da unsere Mentoren die Dojos in ihrer Freizeit abhalten, freuen wir uns natÃ¼rlich auch Ã¼ber Spenden fÃ¼r unsere Mentoren. Es gibt nach jedem Dojo ein gemeinsames Beisammensein im N.I.U., wo wir das Geld gerne fÃ¼r GetrÃ¤nke aufwenden. AuÃŸerdem kann auch gerne die Ausrichtung der Weihnachtsfeier bzw. Generalversammlung Ã¼bernommen werden.
  
 ### Zeit- und Sachspenden
 
 #### Mentor
 
-Du bist technikbegeistert und gibst gern dein Wissen weiter? Dann unterstütze uns als Mentor. Entweder regelmäßig oder punktuell. Oder als Gast-Mentor an speziellen Thementagen. Alles was wir wollen ist dich und deine Zeit.
+Du bist technikbegeistert und gibst gern dein Wissen weiter? Dann unterstÃ¼tze uns als Mentor. Entweder regelmÃ¤ÃŸig oder punktuell. Oder als Gast-Mentor an speziellen Thementagen. Alles was wir wollen ist dich und deine Zeit.
 
 #### Helfende Hand
 
-Bei einem CoderDojo gibt es auch viele Dinge abseits von Programmieren, die zu tun sind. Sei es das Her- und Wegräumen der Bestuhlung, Her- und Wegräumen von Getränken und Obst, Registrierung der Kinder am Anfang jeder Veranstaltung, oder einfach nur als Ansprechperson da sein. Wir freuen uns auf deine Unterstützung durch deine Zeit.
+Bei einem CoderDojo gibt es auch viele Dinge abseits von Programmieren, die zu tun sind. Sei es das Her- und WegrÃ¤umen der Bestuhlung, Her- und WegrÃ¤umen von GetrÃ¤nken und Obst, Registrierung der Kinder am Anfang jeder Veranstaltung, oder einfach nur als Ansprechperson da sein. Wir freuen uns auf deine UnterstÃ¼tzung durch deine Zeit.
 
 #### Sachmittelspende
 
-Du hast deinen funktionierenden Laptop gegen ein neues Gerät ausgetauscht? Wir sind immer auf der Suche nach funktionierenden Laptops, die wir den Kindern als Leihgeräte während der Veranstaltung zur Verfügung stellen können. Oder du verwendest deinen Raspberry Pi nicht mehr? Einfach vorbei bringen. 
+Du hast deinen funktionierenden Laptop gegen ein neues GerÃ¤t ausgetauscht? Wir sind immer auf der Suche nach funktionierenden Laptops, die wir den Kindern als LeihgerÃ¤te wÃ¤hrend der Veranstaltung zur VerfÃ¼gung stellen kÃ¶nnen. Oder du verwendest deinen Raspberry Pi nicht mehr? Einfach vorbei bringen. 
 
-Voraussetzung ist natürlich, dass die Geräte funktionieren.
+Voraussetzung ist natÃ¼rlich, dass die GerÃ¤te funktionieren.
 
 #### Lizenzspende
 
-Du möchtest den Kindern die Möglichkeit geben, kommerzielle Werkzeuge zu verwenden? Dann freuen wir uns über die Spende von Lizenzen.
+Du mÃ¶chtest den Kindern die MÃ¶glichkeit geben, kommerzielle Werkzeuge zu verwenden? Dann freuen wir uns Ã¼ber die Spende von Lizenzen.
  
 ## Kontakt
 
-Bei Fragen zu unserem Verein oder zu Sponsoring-Möglichkeiten kontaktiere uns bitte unter [info@coderdojo-linz.org](mailto:info@coderdojo-linz.org).
+Bei Fragen zu unserem Verein oder zu Sponsoring-MÃ¶glichkeiten kontaktiere uns bitte unter [info@coderdojo-linz.org](mailto:info@coderdojo-linz.org).
 
-Wir freuen uns auf deine Unterstützung!
+Wir freuen uns auf deine UnterstÃ¼tzung!
 
 Dein CoderDojo Linz - Team
