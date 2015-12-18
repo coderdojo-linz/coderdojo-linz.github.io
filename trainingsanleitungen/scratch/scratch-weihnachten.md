@@ -71,7 +71,7 @@ Jetzt beginnt der Stress: der Weihnachtsmann hat nur 60 Sekunden Zeit, um die Pa
 
 Lege unter "Daten" eine neue Variable namens "Zeit" an. Wenn du den Haken neben der Variable ankreuzt, dann wird der aktuelle Wert auch auf der Bühne angezeigt.
 
-![Variable Zeit](scratch-weihnachten/variable-time.png){: .right}
+![Variable Zeit](scratch-weihnachten/variable-time.PNG){: .right}
 
 Im Weihnachtsmann-Skript kannst du nun einen neuen Block hinzufügen, der die Zeit am Beginn auf 60 setzt - und anschließend nach unten zählt.
 
