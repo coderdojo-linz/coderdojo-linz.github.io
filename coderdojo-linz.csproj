@@ -254,6 +254,20 @@
     <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skripte-pico.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skripte-stern.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\sterne-fangen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\create-gift.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\gift-scripts-basic.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\gift-scripts-extended.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\Haus-Drehmodus.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\Haus-Drehpunkt.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\haus-script.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\hintergrund-position.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\hintergrund-script.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\Hintergrund-Skizze.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\sound-selection.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\sound.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\variable-time.PNG" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\weihnachtsmann-position.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\weihnachtsmann-timeout.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\01-variable.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\03-versuche-uebrig.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-zahlenraten\04-versuche-uebrig.PNG" />
@@ -397,6 +411,8 @@
     <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\dragons.zip" />
     <Content Include="trainingsanleitungen\scratch\scratch-slingshot.md" />
     <Content Include="sponsoring.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\Weihnachtsspiel.zip" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
