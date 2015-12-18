@@ -1,4 +1,4 @@
-﻿---
+---
 layout: sushi
 title: Scratch Weihnachtsspiel
 description: Wie viele Geschenke kannst du in einer Minute liefern?
