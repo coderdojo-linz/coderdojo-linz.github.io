@@ -4,6 +4,7 @@ title: Scratch Weihnachtsspiel
 description: Wie viele Geschenke kannst du in einer Minute liefern?
 ---
 
+
 # Scratch Weihnachtsspiel
 Bald ist Weihnachten - und der Weihnachtsmann hat alle Hände voll zu tun, um die Geschenke rechtzeitig in die Häuser zu bringen. Wie viel schaffst du in einer Minute?
 
