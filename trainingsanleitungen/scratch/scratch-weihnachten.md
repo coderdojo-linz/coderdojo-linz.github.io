@@ -85,8 +85,10 @@ Es wird ernst: die Geschenke kommen!
 Füge eine neue Figur aus der Bibliothek hinzu: in der Rubrik "Weihnachten" gibt es ein Geschenkpackerl zur Auswahl.
 
 Erstelle zwei Skript-Blöcke:
-* Beim Start des Spiels soll die Figur versteckt werden.
-* Wenn ein neues Geschenk erzeugt wird ("Wenn ich als Klon entstehe"), dann soll das Geschenk an die Position des Weihnachtsmanns verschoben werden. Anschließend wird es angezeigt und nach unten fallen gelassen: also die y-Position in einer Schleife verändert.
+
+Beim Start des Spiels soll die Figur versteckt werden.
+
+Wenn ein neues Geschenk erzeugt wird ("Wenn ich als Klon entstehe"), dann soll das Geschenk an die Position des Weihnachtsmanns verschoben werden. Anschließend wird es angezeigt und nach unten fallen gelassen: also die y-Position in einer Schleife verändert.
 
 ![Geschenke Teil 1](scratch-weihnachten/gift-scripts-basic.PNG){: .right}
 
@@ -95,9 +97,12 @@ Erstelle zwei Skript-Blöcke:
 Damit wir am Ende wissen, wie viele Pakete zugestellt werden konnten, benötigen wir wieder eine neue Variable. Erstelle unter "Daten" die Variable "Punkte".
 
 Anschließend ergänzen wir die beiden Skripts im Geschenk um die Punktevergabe:
-* setze die Variable am Beginn auf 0
-* wenn die graue Farbe am unteren Rand des Hintergrundbilds berührt wird: ziehe einen Punkt ab
-* wenn ein Haus berührt wird: zähle einen Punkt dazu.
+
+setze die Variable am Beginn auf 0
+
+wenn die graue Farbe am unteren Rand des Hintergrundbilds berührt wird: ziehe einen Punkt ab
+
+wenn ein Haus berührt wird: zähle einen Punkt dazu.
 
 ![Geschenke Teil 2](scratch-weihnachten/gift-scripts-extended.PNG){: .right}
 
