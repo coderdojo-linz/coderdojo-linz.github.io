@@ -12,7 +12,7 @@ Hier in Linz sind wir ein gemeinnütziger Verein, an dessen oberster Stelle das 
 
 ## Wieso Sponsoring?
 
-Um möglichst viele Kinder zu erreichen, sollen für die Kinder bzw. deren Eltern keinerlei Gebühren oder sonstige finanzielle Verpflichtungen anfallen. Daher wir kein Eintrittspreis, Mitgliedschaft oder sonstiges für die Teilnahme der Kinder verlangt.
+Um möglichst viele Kinder zu erreichen, sollen für die Kinder bzw. deren Eltern keinerlei Gebühren oder sonstige finanzielle Verpflichtungen anfallen. Daher wird kein Eintrittspreis, Mitgliedschaft oder sonstiges für die Teilnahme der Kinder verlangt.
 
 Auch unsere Mentoren engagieren sich ehrenamtlich. Vorbereitung von Anleitungen für Programmierbeispielen sowie die Betreuung der Veranstaltungen werden in der Freizeit durchgeführt.
 
