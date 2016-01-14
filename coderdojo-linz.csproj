@@ -205,6 +205,27 @@
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\kante-malen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\male-n-kanten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\scratch-malflaeche-initialisieren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\ball-bewegen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\buehne-und-figuren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\buehnenbild-auswaehlen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\buehnenbild-auswählen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\figur-hinzufuegen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\figur-loeschen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\figur-zeichnen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\figuren-benennen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\game-over.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\out-erkennen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\out.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\paddle-malen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\schlaeger-beruehren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\schlaeger-bewegen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck\daten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck\dreieck-mit-farben.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck\erstes-dreieck.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck\figur.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck\sierpinski-dreieck.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck\start-position.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck\zweite-ebene.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-slingshot\buehne-und-figuren.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-slingshot\daten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-slingshot\figur-loeschen.png" />
@@ -413,6 +434,7 @@
     <Content Include="sponsoring.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-weihnachten.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\Weihnachtsspiel.zip" />
+    <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
@@ -455,9 +477,7 @@
   <ItemGroup>
     <None Include="infos\eltern.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="trainingsanleitungen\scratch\scratch-paddle-game\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
