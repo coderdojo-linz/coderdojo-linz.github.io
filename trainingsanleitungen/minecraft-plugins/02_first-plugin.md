@@ -1,17 +1,27 @@
 ---
 layout: sushi
 title: Dein erstes Plugin
-description: In dieser Übung wirst du dein erstes Minecraft-Plugin erstellen
+description: In dieser Übung wirst du dein erstes Minecraft-Plugin erstellen, das dich auf Kommando begrüßt
 ---
 
-# Dein erstes Plugin
+# Dein erstes Plugin /sayhello
+
+Inhalt:
+
+* [Einleitung](#intro)
+* [Neues NetBeans-Projekt](#project)
+* [Ausführliche Anleitung](#long)
+* [Kurzversion für Profis](#short)
+
+## <a name="intro"></a>Einleitung
 Nach den Vorbereitungsarbeiten können wir nun endlich unser erstes Plugin entwickeln. Wenn wir mit dieser Episode fertig sind, wirst du in Minecraft den Befehl ``/sayhello`` eingeben können und du wirst eine Antwort erhalten und er wird dich sogar mit deinem Minecraft-Namen ansprechen.
 
 ![Command screenshot](02_first-plugin/Command.png)
 
 Dieses wird vielleicht noch nicht das absolute Killer-Plugin auf *Curse* sein aber eine Reise beginnt immer mit ihrem ersten Schritt. Also, los gehts:
 
-## Ein neues NetBeans-Projekt anlegen
+
+## <a name="project"></a>Ein neues NetBeans-Projekt anlegen
 Als erstes starten wir natürlich NetBeans. Die StartPage brauchen wir nicht und du kannst sie gleich wegklicken. Jetzt gehst du ins Menü **File** und findest als ersten Menüpunkt **New Project …** Wenn du den auswählst, siehst du folgendes Fenster:
 
 ![Choose Project](02_first-plugin/ChooseProject.png)
@@ -48,7 +58,9 @@ Jetzt siehst du im **Project Explorer** im Ordner **Libraries** die Datei ``craf
 * Java-Programme müssen, bevor sie ausgeführt werden können, *gebaut* werden. Das heißt, dass man den Java-Code (also das, was du schreibst) in einen Maschinen-Code (also das, was ein Computer ausführen kann) umwandeln muss. Manchmal sagt man auch, dass das Programm *compiliert* werden muss.
 * Wenn du ein Minecraft-Plugin schreibst, brauchst du Informationen vom Server (z. B. den Namen des Spielers) oder willst auch das Verhalten des Servers teilweise verändern (z. B. soll er auf das Kommando ``/sayhello`` reagieren, was er ja sonst mal so nicht täte). Damit das möglich ist, gibt es das sogenannte *API* (**A**pplication **P**rogrammer **I**nterface), das sind alle "Funktionen", die der Server für dich zum Programmieren zur Verfügung stellt. Damit wir das API zur Verfügung haben, fügen wir die Datei ``craftbukkit.jar`` zu unserem Projekt dazu.
 
-## Ein Package und die Plugin-Klasse anlegen
+## <a name="long"></a>Ausführliche Anleitung
+
+### Ein Package und die Plugin-Klasse anlegen
 Du speicherst Java-Dateien in *Packages* ab. Wenn du im **Project Explorer** den Ordner **Source Packages** öffnest, siehst du das Package **\<default package\>**. Damit Package-Namen aber sicherlich eindeutig sind, legst du besser ein neues Package an, mit ``io.coderdojo-linz.<dein-name>.firstplugin`` (dabei ersetzt du ``<dein-name>`` durch deinen Namen). Wenn du eine eigene Domain über die du im Netz erreichbar bist hast, dann kannst du auch die verwenden.
 
 Also klickst du mit der rechten Maustaste auf **Source Packages** und wählst aus dem Kontextmenü **New** und dann **Java Package ...** aus. 
@@ -79,7 +91,7 @@ Die grauen Zeilen am Anfang des Files sehen wahrscheinlich ein wenig anders aus.
     
 Wenn du jetzt aber die Zeichen ``/*`` und ``*/`` wegnimmst, dann wirst du sehen, dass der Text, den du geschrieben hast, rot unterstrichen ist und das bedeutet, dass der Compiler in deinem Java-Programm einen Fehler entdeckt hat. Also schließen wir daraus, dass mit ``/*`` ein Kommentar beginnt und so lange ist, bis die Zeichen ``*/`` vorkommen.
 
-## Die Klasse programmieren
+### Die Klasse programmieren
 Nun musst du dieser Klasse als erstes mal mitteilen, dass sie ein Plugin werden soll. Das machst du indem du in der Zeile mit ``public class FirstPlugin {`` folgendes dazuschreibst:
 
 ![Extend class to JavaPlugin](02_first-plugin/ExtendJavaPlugin.png)
@@ -118,7 +130,7 @@ Wenn du dich ein wenig umsiehst, wirst du merken, dass zum Import von ``org.bukk
 
 Jetzt wollen wir aber so schnell wie möglich durch und unser Plugin zum Laufen bekommen. Was uns noch fehlt ist, dass wir für Minecraft erkenntlich machen, wie das Plugin heißt und auf welches Kommando es reagiert. Das machen wir im ``plugin.yml``.
 
-## Das ``plugin.yml`` anlegen, das Projekt bauen und testen
+### Das ``plugin.yml`` anlegen, das Projekt bauen und testen
 Im ``plugin.yml`` schreiben wir alles das rein, das Minecraft braucht, um unser Plugin zu erkennen und im richtigen Moment auch aufrufen zu können. Dazu legen wir das File zuerst einmal an. Überraschenderweise klickst du wieder mit der rechten Maustaste auf das **Source Package** und wählst **New** und **YAML File...** aus. Falls du diesen Eintrag nicht findest, wählst du im Menü ganz unten **Other...** aus und wählst aus der Kategorie **Other** den Punkt **YAML File** aus.
 
 ![Add onCommand](02_first-plugin/AddYamlStep1.png)
@@ -180,7 +192,7 @@ Innerhalb der ersten 15 bis 20 Zeilen solltest du die Zeile `[FirstPlugin] Loadi
 
 Abschließend kannst du testen, indem du das Kommando ``sayhello`` in der Konsole eingibst. Der Server sollte mit ``Hello stranger`` antworten. Auch kannst du noch ins Spiel gehen und dort den Befehl mit Slash ``/sayhello`` eingeben. Auch hier sollte der Server mit einem freundlichen ``Hello stranger`` antworten.
 
-## Eine Erweiterung
+### Eine Erweiterung
 Apropos freundlich. Jemanden mit "Stranger" zu begrüßen ist in Bezug auf Freundlichkeit sicherlich noch ausbaufähig. Da das Bukkit-API uns die Möglichkeit gibt, den Namen des Spielers (also den Minecraft-Namen natürlich) rauszufinden, werden wir das benutzen um den Spieler wirklich freundlich mit Namen zu begrüßen.
 
 Dazu gehen wir wieder ins NetBeans und zur Methode ``onCommand`` unseres Plugins. Weil grad Zeit ist, sehen wir uns den Code der Methode ein wenig genauer an.
@@ -237,18 +249,41 @@ Da die Information, dass ein Spieler begrüßt wurde, nicht wirklich kritisch is
 * Texte nennt man in der Informatik Zeichenketten oder auf Englisch: Strings
 * Ein *Log* ist so etwas wie ein Tagebuch. Vielleicht kennst du das aus Star Treck: "Logbuch der Enterprise, Sternzeit ..."
 
-
-## Zusammenfassung für Profis
+### Zusammenfassung
 Wenn du das Gefühl hast, dass das alles ganz schön viel ist und ein wenig verwirrend, dann lass dich nicht einschüchtern. Am Besten probierst du es gleich nochmal von vorne und legst nochmals ein neues Plugin-Projekt an. Am Anfang wirst du vielleicht noch öfter nachsehen müssen, dann reicht vielleicht eine Liste der Dinge, die gemacht werden müssen. So eine siehst du hier am Ende dieser Episode. Und nach einer Weile wird dir das ganz geläufig sein. Wie fast immer: Übung macht die Meisterin (und auch den Meister).
 
-1. Neues Projekt anlegen
-2. ``craftbukkit.jar`` zu den Libraries dazufügen
-3. Package anlegen
-4. Klasse anlegen
-5. ``extends JavaPlugin`` dazuschreiben
-6. Methode ``onCommand`` generieren
-7. Die Methode ausprogrammieren, also reinschreiben, was geschehen soll, wenn das Command aufgerufen wird
-7. ``plugin.yml`` zum Projekt hinzufügen
-8. Bauen
-9. Fertiges jar File aus ``dist`` in das Plugins-Verzeichnis kopieren (oder `update`-Verzeichnis, wenn das Plugin bereits geladen wurde)
-10. Server starten oder ``reload`` eingeben
+## <a name="short"></a>Kurzversion für Profis
+
+1. Neues Projekt anlegen: Menüpunkt **File** > **New Project**, in Choose Project: **Java** > **Java Class Library** mit Projektnamen `FirstPlugin`
+1. ``craftbukkit.jar`` zu den Libraries dazufügen: Rechte Maus-Klick auf **Libraries** > **Add JAR/Folder**
+1. Package anlegen: Rechte Maus-Klick auf **Source Packages**, Auswahl von **New** > **Java Package** mit Package Name z.B. ``io.coderdojo.<dein-name>.firstplugin``
+1. Klasse anlegen: Rechte Maus-Klick auf das eben erstellte Package, Auswahl von **New** > **Java Class** mit Class Name z.B. ``FirstPlugin``
+1. ``extends JavaPlugin`` nach dem Klassennamen dazuschreiben
+1. Methode ``onCommand`` generieren: Rechte Maus-Klick im Editor zwischen den geschwungenen Klammern > **Inserter Code** > **Override Method** > Auswahl von ``onCommand`` > **Generate**
+1. Die Methode ausprogrammieren, also reinschreiben, was geschehen soll, wenn das Command aufgerufen wird:
+	<pre>
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+		sender.sendMessage("Hello " + sender.getName());
+		Bukkit.getLogger().info("A player was greeted.");
+		return true;
+	}
+	</pre>
+1. ``plugin.yml`` zum Projekt hinzufügen: Rechte Maus-Klick auf **Source Packages** > **New** auswählen > **YAML File** mit File Name ``plugin``
+1. Die Details im ``plugin.yml`` eingeben, wobei du die Details in den eckigen Klammern [] durch deine Werte ersetzt:
+	<pre>
+	## YAML Template.
+	---
+	name: [Project Name]
+	main: [Package Name].[Class Name]
+	version: 1.0.0
+	author: [dein Name]
+	description: [deine Beschreibung des Plugins]
+	commands:
+	  [Command Name]:
+		description: [deine Beschreibung des Kommandos]
+		usage: /[Command Name]
+	</pre>
+1. Baue das Paket: In Icon Leiste auf den Hammer **Build Project (F11)** klicken
+1. Kopiere bzw. ersetze das fertige jar File aus ``dist`` (siehe Pfad im **Output**) in das Minecraft Server Plugin-Verzeichnis. 
+1. Starte den Server  oder gib ``reload`` in die Server Konsole ein.
+1. Teste das Plugin indem du in Minecraft dein Kommando mit dem Namen, den du im ``plugin.yml`` unter ``[Command Name]`` vergeben hast, aufrufst.
