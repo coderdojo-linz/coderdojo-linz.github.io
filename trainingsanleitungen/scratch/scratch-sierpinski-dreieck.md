@@ -57,7 +57,7 @@ Dann können wir einfach einen Klon der Figur erstellen und das Malen startet vo
 damit erreichst du alle drei grünen Dreiecke und erzeugst an jeder Position einen Klon
  * Lösche ganz am Ende des Skripts den Klon - auch wenn die Seitenlänge schon kleiner oder gleich 5 ist
 
-4 ![Sierpinski Dreieck in Farbe](scratch-sierpinski-dreieck/dreieck-mit-farben.png){: .right}
+4. ![Sierpinski Dreieck in Farbe](scratch-sierpinski-dreieck/dreieck-mit-farben.png){: .right}
 Gratuliere - dein Sierpinski Dreieck ist nun fertig! Du kannst die Farben für jeden Klon veränden - dann sieht dein Dreieck noch interessanter aus.
   
 ## Ausprobieren
