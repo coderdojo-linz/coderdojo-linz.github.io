@@ -4,7 +4,16 @@ title: Getafix Player
 description: In dieser Episode wirst du dich selbst heilen lernen
 ---
 
-# Getafix der Wunderheiler
+# Miraculix der Druide - Teil 1
+
+Inhalt:
+
+* [Einleitung](#intro)
+* [Ausführliche Anleitung /gethealth](#long1)
+* [Ausführliche Anleitung /heal](#long2)
+* [Kurzversion für Profis](#short)
+
+## <a name="intro"></a>Einleitung
 Vielleicht hast du schon einmal Asterix und Obelix gelesen oder einen der Filme angesehen. Dann wirst du dich sicherlich an den Druiden Miraculix erinnern, das ist der, der den Zaubertrank zubereiten kann. Wir werden in dieser und einigen weiteren Episoden ein Plugin programmieren, mit dem du Miraculix spielen kannst. Wir fangen damit an, dass du dich und andere Spieler sofort heilen kannst. Auch kannst du deine Gesundheit oder die Gesundheit anderer Spieler anzeigen. Dazu soll es folgende Befehle geben:
 
     /gethealth me
@@ -21,8 +30,6 @@ Also im Grunde zwei Kommandos:
 ![How the command looks like](03_getafix-Player/Command.png)
 
 Wenn du dich wunderst, warum das Plugin nun *Getafix* heißt, verrate ich dir, dass auf Englisch der Druide nicht Miraculix sonder Getafix heißt. Und du hast sicher schon bemerkt, dass wir Informatiker gerne Dinge in englischer Sprache benennen. Daher kommt das. Jetzt kannst du deine Englischlehrerin oder deinen Englischlehrer abtesten, ob er oder sie die wirklich wichtige Literatur auch auf Englisch gelesen hat :-).
-
-## Wir starten
 
 ### Grundsätzliche Überlegungen
 Jetzt wollen wir mal überlegen, was wir zum Schreiben eines Plugins, welches die Gesundheit eines Spielers ausliest und verändert, brauchen und wie wir am besten vorgehen:
@@ -47,7 +54,7 @@ Das ist jetzt noch nicht sonderlich hilfreich, weil eine Fehlermeldung drinsteht
 
 Nun solltest du für jede Methode eine kurze Beschreibung bekommen. Ich weiß ja nicht, wie es dir geht, aber zum Thema Gesundheit kann ich beim `sender` kein wirkliches Angebot finden. Damit wir hier weiterkommen, muss ich dir noch kurz eine Geschichte erzählen. Dauert auch nicht lange, versprochen:
 
-## Über Menschen, Berufe, Variablen, Parameter und Datentypen
+### Über Menschen, Berufe, Variablen, Parameter und Datentypen
 In der letzten Episode, als wir das erste Plugin geschrieben haben, war ich ein bisschen schlampig bei meinen Erklärungen. Du erinnerst dich sicher noch an den Parameter ``sender``, mit dem wir die Spielerin, die das Kommando eingetippt hat "ansprechen" konnten und ihr eine Nachricht mit Hilfe der Methode ``sendMessage`` senden konnten.
 
 Ja gut und ich habe dir gar nicht gesagt, warum das so funktioniert, weil ich wollte, dass wir ganz schnell unser Plugin fertig bekommen. Diese Sache hole ich jetzt nach. Du erinnerst dich ja noch, dass die leere Methode `onCommand` so ausgesehen hat:
@@ -85,7 +92,7 @@ Habe ich schon erwähnt, dass Java (wie die meisten Programmiersprachen) sehr sc
 
 Jetzt, da du das verstanden hast, kannst du dir auch vorstellen, dass du den Namen `sender` im `onCommand` ändern kannst, ohne dass die Funktionalität leiden würde. Wie im echten Leben kannst du deine Kinder nennen, wie du magst. Wenn du aber den Datentyp `CommandSender` ändern würdest, dann würde plötzlich nix mehr funktionieren, weil das `onCommand` als ersten Parameter einen `CommandSender` erwartet. Wieder hilft uns das echte Leben: Wenn du neue Möbel für dein Wohnzimmer brauchst, dann willst du einen Tischler und keinen Programmierer.
 
-## Version 1: /gethealth
+## <a name="long1"></a>Ausführliche Anleitung /gethealth
 Wir beginnen mit einem einfachen Fall. Sobald der Spieler ``/gethealth`` im Spiel eingibt, soll die Gesundheit als Zahl zwischen 0 und 20 ausgegeben werden. Also sehen wir uns den Typ des Parameters ``sender`` einmal an. Das ist ein ``CommandSender`` und wenn du nun ``sender.`` in einer Zeile der Methode ``onCommand`` eintippst, dann siehst du, was so ein ``CommandSender`` alles kann. Du wirst feststellen, dass der aber mit Gesundheit nix am Hut hat, weil wir keine Methode finden, die irgendwo "Health" im Namen hat. Aber es gibt einen anderen Datentypen, nämlich ``Player``, der den Spieler in einem Minecraft-Game genauer spezifiziert. Genauer gesagt ist ein ``Player`` auch ein ``CommandSender``und kann aber noch um einiges mehr. Du kannst das ausprobieren, indem du folgendes eintippst:
 <pre>
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -146,7 +153,7 @@ Damit kannst du das Plugin nun bauen und aus dem ``dist`` Verzeichnis in dein Te
 
 Als erstes achte darauf, dass du im survival mode bist (unten am Schirm sind Herzen und Becher zu sehen, die deine Gesundheit und deine Sättigung anzeigen). Wenn du das nicht siehst, dann tippe als erstes das Kommando `/gamemode 0` ein. Probiere gleich aus, wie dein health level ist, indem du ``/gethealth`` eintippst. Dann lass dich von einem größeren Blockhaufen runterfallen oder mach sonst etwas, das deine Gesundheit verschlechtert und gib das Kommando nochmals ein. 
 
-## Eine notwendige Erweiterung
+### Eine notwendige Erweiterung
 Wir können ja alle Minecraft-Befehle (also auch die von Plugins) in der Server-Konsole eintippen. Das probierst du am besten auch gleich aus. Achte darauf, dass in diesem Fall **kein** Schrägstrich davorkommt.
 
 Und hast du schon probiert? Da haben wir nämlich jetzt den Salat und der heißt *Exception*. Wenn eine Exception passiert, dann heißt das immer, dass der Programmierer Mist gebaut hat und das wollen wir ja nun wirklich nicht auf uns sitzen lassen. Daher schauen wir uns das mal ein wenig genauer an:
@@ -210,7 +217,7 @@ Achte darauf, dass die Aussage (meistens sagen wir einfach die Bedingung) in ein
 </ol>
 Gut, dann bauen und testen!
 
-## Version 2: /heal
+## <a name="long2"></a>Ausführliche Anleitung /heal
 
 ### Das yml-file erweitern
 Wir müssen unser Plugin so umschreiben, dass es nun auf zwei verschiedene Kommandos reagiert. Beginnen wir einmal damit, dass es überhaupt auf ein weiteres Kommando reagiert. Dazu erweitern wir das `plugin.yml`.
@@ -298,3 +305,53 @@ Zum Schluss dieser Episode wollen wir noch den Code einfügen, der eigentlich ge
 
 ###Letzte Code-Erweiterung
 Da habe ich jetzt einen Vorschlag. Das probierst du jetzt schnell mal selber. Die Mentoren können dir dabei helfen. Außerdem gibt es in der nächsten Episode natürlich die Auflösung. Viel Spaß
+
+## <a name="short"></a>Kurzversion für Profis
+1. Neues Projekt anlegen: Menüpunkt **File** > **New Project**, in Choose Project: **Java** > **Java Class Library** mit Projektnamen ``GetafixPlugin``
+1. ``craftbukkit.jar`` zu den Libraries dazufügen: Rechte Maus-Klick auf **Libraries** > **Add JAR/Folder**
+1. Package anlegen: Rechte Maus-Klick auf **Source Packages**, Auswahl von **New** > **Java Package** mit Package Name z.B. ``io.coderdojo.<dein-name>.getafix``
+1. Klasse anlegen: Rechte Maus-Klick auf das eben erstellte Package, Auswahl von **New** > **Java Class** mit Class Name z.B. ``GetafixPlugin``
+1. ``extends JavaPlugin`` nach dem Klassennamen dazuschreiben
+1. Methode ``onCommand`` generieren: Rechte Maus-Klick im Editor zwischen den geschwungenen Klammern > **Inserter Code** > **Override Method** > Auswahl von ``onCommand`` > **Generate**
+1. Die Methode ausprogrammieren, also reinschreiben, was geschehen soll, wenn eines der Kommandos aufgerufen wird:
+	<pre>
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (label.equalsIgnoreCase("gethealth")) {
+            if (sender instanceof Player) {
+                Player player = (Player) sender;
+                player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
+                return true;
+            } else {
+                sender.sendMessage("Poor guy you are no player -> no health data available");
+                return false;
+            }
+        } else {
+            //Aufgabe 1: Stelle sicher, dass nur Spieler geheilt werden können.
+            //Aufgabe 2: Heile den Spieler, wenn du weißt dass du die Methode ``setHealth`` für den ``player`` aufrufen musst?
+            //Aufgabe 3: Schreibe dem Spieler, dass du ihn geheilt hast, einmal auf der Minecraft Console, und einmal als Log Statement
+            return true;
+        }
+    }
+	</pre>
+1. ``plugin.yml`` zum Projekt hinzufügen: Rechte Maus-Klick auf **Source Packages** > **New** auswählen > **YAML File** mit File Name ``plugin``
+1. Die Details im ``plugin.yml`` eingeben, wobei du die Details in den eckigen Klammern [] durch deine Werte ersetzt:
+	<pre>
+	## YAML Template.
+	---
+	name: Getafix
+	main: [Package Name].[Class Name]
+	version: 0.1.0
+	author: [dein Name]
+	description: A miraculous healing plugin.
+	commands:
+		gethealth:
+			description: Displays health level of player.
+			usage: /gethealth player-name
+		heal:
+			description: Brings your health to the top level.
+			usage: /heal me | player-name
+	</pre>
+1. Baue das Paket: In Icon Leiste auf den Hammer **Build Project (F11)** klicken
+1. Kopiere bzw. ersetze das fertige jar File aus ``dist`` (siehe Pfad im **Output**) in das Minecraft Server Plugin-Verzeichnis. 
+1. Starte den Server  oder gib ``reload`` in die Server Konsole ein.
+1. Teste das Plugin indem du in Minecraft deine Kommandos ``/gethealth`` und ``/heal`` aufrufst.

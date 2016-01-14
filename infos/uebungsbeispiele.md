@@ -46,10 +46,14 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 
 ## Minecraft
 
-1. [Installiere deinen eigenen Minecraft-Server](/trainingsanleitungen/minecraft-plugins/01_installationen.html)
-2. [Entwickle dein erstes Minecraft-Plugin](/trainingsanleitungen/minecraft-plugins/02_first-plugin.html)
-3. [Getafix - ein Minecraft-Plugin für magische Heilung Teil 1](/trainingsanleitungen/minecraft-plugins/03_getafix-Player.html)
-4. [Getafix - ein Minecraft-Plugin für magische Heilung Teil 2](/trainingsanleitungen/minecraft-plugins/04_getafix-Arguments.html)
+1. [Vorbedingungen - Installationen](/trainingsanleitungen/minecraft-plugins/01_installationen.html)
+1. [Kurzanleitung NetBeans Projektsetup](/trainingsanleitungen/minecraft-plugins/netbeans_cheatsheet.html)
+1. [Plugin 1: Erstes Minecraft-Plugin](/trainingsanleitungen/minecraft-plugins/02_first-plugin.html)
+1. [Plugin 2: Teil 1 - Miraculix (player details)](/trainingsanleitungen/minecraft-plugins/03_getafix-Player.html)
+1. [Plugin 2: Teil 2 - Miraculix (argument handling)](/trainingsanleitungen/minecraft-plugins/04_getafix-Arguments.html)
+1. [Plugin 3: Begrüßen und Verabschieden (listener)](/trainingsanleitungen/minecraft-plugins/05_welcome-Listener.html)
+1. [Plugin 2: Teil 3 - Miraculix (event handling)](/trainingsanleitungen/minecraft-plugins/06_getafix-MagicPotion.html)
+
 
 ## C# (C Sharp)
 

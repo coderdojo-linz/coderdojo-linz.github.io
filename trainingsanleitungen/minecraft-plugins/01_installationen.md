@@ -1,10 +1,20 @@
 ---
 layout: sushi
 title: Installationen
-description: In dieser Übung wirst du die zum Plugin-Programmieren und -Testen nötige Software installieren.
+description: In dieser Übung wirst du die zum Minecraft-Plugin-Programmieren und -Testen nötige Software installieren.
 ---
 
 # Installationen
+
+Inhalt:
+
+* [Einleitung](#intro)
+* [Installation Java](#java)
+* [Installation NetBeans](#netbeans)
+* [Installation Craftbukkit Server-Software](#craftbukkit)
+* [Mein eigener Server](#test)
+
+## <a name="intro"></a>Einleitung
 Damit du deine Plugins bequem testen kannst, ist es sinnvoll zuerst einen Minecraft-Server auf deinem eigenen Computer zu installieren.
 
 Damit dein Computer ein Minecraft-Server wird, musst du eine bestimmte Software installieren, nämlich den "Minecraft-Server". Das klingt jetzt ein wenig seltsam. Das kommt daher, dass wir Informatiker das Wort "Server" manchmal für einen ganzen Computer benutzen (z. B. "Der Web-Server ist heute wieder mal superschnell"). Aber manchmal verwenden wir das Wort "Server" auch nur für ein Programm, die Server-Software, die einen Computer zu einem Server macht.
@@ -13,14 +23,17 @@ Also, um deinen Computer zu einem Minecraft-Server zu machen, musst du eine Serv
 
 Zum Testen brauchst du weiters natürlich einen Minecraft-Client und einen gültigen Minecraft-Account. Achte bitte darauf, dass sog. "Cracked-Versions" des Minecraft-Clients nicht funktionieren, weil man sich damit nicht auf einen anderen Server verbinden kann. Nun wären alle wichtigen Fragen geklärt und wir können loslegen.
 
-## Download Java
+
+
+## <a name="java"></a>Installation Java
 Minecraft ist ein Java-Programm. Um Java-Programme laufen lassen zu können, musst du die Java Virtual Machine (JVM) auf deinem Computer installiert haben. Damit sich die ganze Installiererei auszahlt, ist auch noch NetBeans (das Programm, mit dem wir dann Java Programme schreiben werden) ein Java-Programm.
 
+### Ist bei mir Java installiert?
 Bevor wir beginnen, wollen wir nachsehen, ob eventuell Java bereits auf deinem Rechner installiert ist. Dazu öffnest du unter Windows die Eingabeaufforderung oder am Mac das Terminal. Dann tippst du folgendes ein:
 
     java -version
     
-Wenn du nun eine Antwort bekommst, die so oder zumindest so ähnlich aussieht, dann kannst du sofort zum Punkt **Download NetBeans** weiterspringen:
+Wenn du nun eine Antwort bekommst, die so oder zumindest so ähnlich aussieht, dann kannst du sofort zum Punkt [**Download NetBeans**](#netbeans) weiterspringen:
 
     java version "1.8.0_31"
     Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
@@ -57,7 +70,7 @@ Wenn das dmg vollständig runtergeladen ist machst du einen Doppelklick auf das 
 * Java ist eine Programmiersprache, die auf allen verschiedenen Betriebssystemen (Windows, MacOS, Linux etc.) läuft. Damit das gut funktioniert, benötigt es die JVM (Java Virtual Machine)
 * JDK ist das **J**ava **D**evelopment **K**it. Das ist die Basis-Software, die man braucht, damit man Java entwickeln kann. 
 
-## Download NetBeans
+## <a name="netbeans"></a>Installation NetBeans
 Damit wir unsere Plugins in Java bequem entwickeln können, werden wir NetBeans als IDE verwenden. Wenn du diese noch nicht installiert hast, werden wir das hier machen. Glücklicherweise läuft das unter Windows und MacOS und auch Linux sehr ähnlich ab:
 
 1. Du gehst zur Website  <https://netbeans.org/downloads/index.html>. Dort kannst du dir aussuchen, in welcher "Ausbaustufe" du NetBeans haben möchtest. Wenn du genug Speicher auf deiner Festplatte oder SSD hast, würde ich die Variante "All" empfehlen. Damit kannst du NetBeans auch als IDE für Web-Entwicklung und C/C++-Entwicklung verwenden. Mit einem Klick auf den Button Download lädst du das gewünschte Bundle auf deinen Computer.
@@ -71,10 +84,10 @@ Gratuliere, damit haben wir bereits den Großteil unserer Vorbereitungsarbeiten 
 ### Großeltern-Imponier-Wissen
 * Eine IDE ist eine Integrierte Entwicklungsumgebung (**I**ntegrated **D**evelopment **E**nvironment). Damit kann man sehr bequem Programme entwickeln. Bekannte Exemplare dieser Gattung sind Visual Studio, Netbeans, Eclipse, XCode, IntelliJ usw.
 
-## Download Server-Software
-Es gibt eine Reihe von verschiedenen Servern, die wir installieren können. Die Originalfirma (Mojang) bietet zum Beispiel den Vanilla-Server an. Der hat aber den Nachteil, dass er keine Plugin-Schnittstelle zur Verfügung stellt. Die bekannteste Server-Software mit der man auch Plugins erstellen kann, ist Bukkit, welche wir auch verwenden werden. Du kannst im Internet nach der Server-Software suchen oder einfach auf die Coderdojo Website gehen und die Datei [``craftbukkit.jar``](craftbukkit.jar) auf deinen Computer herunterladen.
+## <a name="craftbukkit"></a>Installation Craftbukkit Server-Software
+Es gibt eine Reihe von verschiedenen Servern, die wir installieren können. Die Originalfirma (Mojang) bietet zum Beispiel den Vanilla-Server an. Der hat aber den Nachteil, dass er keine Plugin-Schnittstelle zur Verfügung stellt. Die bekannteste Server-Software mit der man auch Plugins erstellen kann, ist Bukkit, welche wir auch verwenden werden. Du kannst im Internet nach der Server-Software suchen oder einfach auf die Coderdojo Website gehen und die Datei [``craftbukkit.jar``](http://coderdojo-linz.github.io/trainingsanleitungen/minecraft-plugins/craftbukkit.jar) auf deinen Computer herunterladen.
 
-Dieses ``craftbukkit.jar`` ist unsere Server-Software, die wir jetzt starten müssen. Damit wir das in gewohnter Weise mit einem Doppelklick machen können, müssen wir noch eine kleine Vorkehrung treffen. Diese unterscheidet sich wieder leicht zwischen Windows und MacOS:
+Dieses [``craftbukkit.jar``](http://coderdojo-linz.github.io/trainingsanleitungen/minecraft-plugins/craftbukkit.jar) ist unsere Server-Software, die wir jetzt starten müssen. Damit wir das in gewohnter Weise mit einem Doppelklick machen können, müssen wir noch eine kleine Vorkehrung treffen. Diese unterscheidet sich wieder leicht zwischen Windows und MacOS:
 
 ### Windows
 Erstelle als erstes einen neuen Ordner mit Namen ``bukkitServer`` und bewege ``craftbukkit.jar`` da hinein. Dann starte deinen Lieblings-Texteditor (bitte nicht Word, sonder Notepad oder besser Notepad++) und tippe folgende Zeilen ab:
@@ -97,7 +110,7 @@ Dann speicherst du die Datei unter dem Namen ``start.sh`` in den Ordner `bukkitS
 * Ein Plugin ist ein Stück Software, mit dem man eine bestehende Software erweitert.
 * Eine Schnittstelle (auf Englisch Interface) ist eine Sammlung von Funktionen, mit der man Programme benutzen kann. 
 
-## Den Server das erste Mal starten
+## <a name="test"></a>Teste deinen Server das erste Mal
 Wenn du diese Datei nun mit einem Doppelklick startest müsste ein Fenster mit dem Cmd-Prompt oder dem Terminal (schwarzes Fenster mit weißem Text unter Windows oder weißes Fenster mit schwarzem Text unter MacOS) erscheinen und nach einer Weile folgende Meldungen darin angezeigt werden.
 
     [18:22:27 INFO]: Starting minecraft server version 1.7.10

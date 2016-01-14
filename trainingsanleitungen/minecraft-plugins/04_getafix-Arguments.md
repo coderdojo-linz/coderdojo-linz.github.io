@@ -4,7 +4,17 @@ title: Getafix Arguments
 description: In dieser Episode wirst du andere heilen lernen
 ---
 
-# Getafix der Wunderheiler – Teil 2
+# Miraculix der Druide – Teil 2
+
+Inhalt:
+
+* [Einleitung](#intro)
+* [Ausführliche Anleitung](#long)
+* [Kurzversion für Profis](#short)
+* [Ideen für weitere Entwicklungen](#ideas)
+
+
+## <a name="intro"></a>Einleitung
 In der letzten Episode haben wir begonnen, ein Plugin für die Befehle `gethealth` und `heal` zu implementieren. Ich habe dir ja versprochen, dass wir am Ende nicht nur uns selbst, sondern auch andere Spieler auf dem Server heilen werden können. Also sollen die folgenden Befehle nun wirklich funktionieren: 
 
     /gethealth me
@@ -14,29 +24,31 @@ In der letzten Episode haben wir begonnen, ein Plugin für die Befehle `gethealt
 
 ![How the command looks like](04_getafix-Arguments/Command.png)
 
-## Am Anfang ein wenig Zusammenräumen
+## <a name="long"></a>Ausführliche Anleitung
+
+### Am Anfang ein wenig Zusammenräumen
 Ich habe dir ja in der letzten Episode die Lösung für das `/heal` Kommando versprochen. Also am Ende sollte deine Methode `onCommand` so aussehen:
 <pre>
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (label.equalsIgnoreCase("gethealth")) {    // get health
-            <b>if (sender instanceof Player) {
+            if (sender instanceof Player) {
                 Player player = (Player) sender;
                 sender.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
                 return true;
             } else {
                 sender.sendMessage("This command can only be used by players");
                 return false;
-            }</b>
-        } else {    // heal
-            <b>if (sender instanceof Player) {
-                Player player = (Player) sender;
-                player.setHealth(20.);
-                return true;
             }
-            else {
-                sender.sendMessage("This command can only be used by players");
-                return false;
-            }</b>
+        } else // heal
+        if (sender instanceof Player) {
+            Player player = (Player) sender;
+            player.setHealth(20.);
+            player.sendMessage("Successfully healed player " + player.getName() + ".");
+            Bukkit.getLogger().info("The player " + player.getName() + " was successfully healed.");
+            return true;
+        } else {
+            sender.sendMessage("This command can only be used by players");
+            return false;
         }
     }
 </pre>
@@ -106,7 +118,7 @@ Damit haben wir nach diesem `if`-Block freie Bahn, den `sender` auf `Player` zu 
 </pre>
 
 
-## Argumente eines Kommandos
+### Argumente eines Kommandos
 Bisher haben wir ja das zweite Wort unseres Kommandos völlig ignoriert. Streng genommen werden Kommandos in das eigentliche *Kommando* (in unserem Fall `/gethealth` oder `/heal`) und in weitere *Argumente* (`me` oder `OidaZocktYT` oder einen anderen Spielernamen) aufgeteilt.
 
 Da stellt sich als erstes natürlich die Frage, wie wir zu diesem Argument dazukommen. Wenn du dir die Parameter der Methode `onCommand` ansiehst, siehst du zum Schluss einen namens `args`. Der Datentyp von `args` ist `String[]`. Hmh, `String` kennen wir ja schon aber was ist `String[]`? Überlegen wir mal: wir könnten ja auch einmal ein Kommando `/heal me 3` schreiben wollen, damit wir die Gesundheit um 3 Punkte erhöhen können. Dieses Kommando hätte dann 2 Argumente, nämlich `me` und dann `3`. Das heißt, dass wir 0, 1, 2, ... Argumente haben könnten. Damit ist ein `String` nicht ausreichend, wir brauchen eine Reihe von Stirngs, je nachdem, wieviele Argumente der Benutzer eingetippt hat. Hier kommt dann `String[]` ins Spiel. Das ist eine Reihe von Strings (Informatiker nennen das ein *Array von Strings*), einer für jedes Argument.
@@ -138,14 +150,14 @@ Du siehst, dass wir `args.length` verwenden, um die Anzahl der Elemente in `args
 
 Baue das Projekt und probier es aus, ob es auch wirklich funktioniert. Wenn es passt, dann spiel ein wenig rum und gib auch das zweite und dritte Argument aus. Was passiert, wenn du weniger Argumente eingibst, als du dann in `onCommand` ausliest?
 
-## Einige Überlegungen
+### Einige Überlegungen
 Was brauchen wir jetzt? Wenn der Spieler das Argument `me` eingibt, dann ist das ja sehr einfach, weil wir genau unsere bisherige Methode aufrufen können, damit wir unseren eigenen Health-level ausgeben oder uns selbst heilen können.
 
 Anders ist es, wenn der Spieler einen Spielernamen eingibt. Hier können wir den `Player` nicht einfach durch einen Cast vom `sender` erzeugen. Wir müssen uns aufgrund des Spielernamens den `Player` holen.
 
 Wenn wir den Player dann haben, kann der Rest der Methode wie gehabt ablaufen.
 
-## Endlich das neue Feature
+### Endlich das neue Feature
 Fangen wir gleich mit dem Code an, die Erklärung gibts nachher.
 
 <pre>
@@ -179,7 +191,7 @@ Dann kommt der Teil mit dem Rausfinden des Spielers. Zuerst deklarieren wir nur 
 
 Damit geht es wieder ans Bauen und Probieren. Sinnvollerweise änderst du die Versionsnummer im `plugin.yml` auf `0.3.0`. Zum Testen ist es wichtig, dass eine Freundin oder Freund mit dir auf dem gleichen Server spielt, sonst kannst du ja keinen Namen für `/heal` oder `gethealth` angeben. Was passiert eigentlich, wenn du einen Namen eingibst, der nicht auf dem Server spielt?
 
-## Ein paar notwendige Erweiterungen
+### Ein paar notwendige Erweiterungen
 Und wie sind deine Tests verlaufen? Also mir sind folgende Dinge aufgefallen.
 
 1. Wenn ich vergesse einen Namen oder auch `me` einzugeben, kommt wieder eine Exception. Das kommt daher, weil wir auf ein Element des Arrays `args` zugreifen wollen, das es gar nicht gibt.
@@ -225,7 +237,7 @@ Um den Fehler Nummer 2 zu beheben, müssen wir wissen, dass `Bukkit.getPlayer` d
 </pre>
 So, jetzt kannst du das ganze nochmals bauen und ausführlich testen.
 
-## Und wieder ein wenig zusammenräumen
+### Und wieder ein wenig zusammenräumen
 Und, waren die Tests jetzt erfolgreich? Bei mir ist nix besonderes mehr aufgetaucht. Damit kannst du die Versionsnummer im `plugin.yml` auf 0.3.1 stellen. Du siehst aber, dass die Methode schon ganz schön länglich wird. Sie ist zwar nicht mehr so verschachtelt, wie sie am Anfang unserer Episode war aber mit dem neuen Feature hat sich die Länge einfach verdoppelt. Das wollen wir noch beheben, bevor wir noch eine letzte kleine Verbesserung einbauen.
 
 Der Startpunkt für unser Zusammenräumen ist, dass sich die Methode in vier Teile teilt
@@ -509,7 +521,7 @@ Du siehst, dass unser `onCommand` damit viel kürzer und leichter lesbar geworde
     }
 </pre>
 
-## Eine letzte Sache
+### Eine letzte Sache
 Du musst zugeben, dass es schon ein wenig komisch ist, dass sich dann jeder gleich selbst oder andere heilen kann, wenn er mal wo runtergefallen ist oder von einem Creeper angegriffen worden ist. Damit ist die Sache mit der Gesundheit bei den Minecraft-Spielen ziemlich witzlos geworden. Wir wollen dem entgegenwirken und sagen, dass nur mehr *op*s unsere Kommandos aufrufen dürfen.
 
 Dazu kann man den `sender` mit der methode `sender.isOp` fragen, ob er op ist. Das war ja einfach. Was wäre nun eine sinnvolle Methode, in der wir unsere Abfrage platzieren könnten? Man kann sagen, dass dies ja eine Bedingung ist, ob das Kommando ausgeführt werden darf. Daher gehen wir in unsere Methode `commandCanBeHandled` und geben zu unserer Bedingung `!(sender instanceof Player)` noch dazu, dass er nicht op sein darf und ändern die Fehlermeldung leicht. Die Methode sollte dann so aussehen:
@@ -531,11 +543,59 @@ Die Bedingung in diesem `if` Statement müssen wir folgendermaßen lesen: Wenn `
 
 Falls dir noch aufgefallen ist, dass in der Zeile `if (args.length != 1) {` am Rand eine Glühbirne angezeigt wird, kannst du ja mal draufklicken und `The if statement ist redundant` auswählen. Was passiert und warum funktioniert das?
 
-## Ideen für weitere Entwicklungen
+### Zusammenfassung
 Jetzt sind wir fertig für heute. Ich glaube wir haben ein ziemlich tolles Programm durchgemacht und du warst wirklich fleißig. Sieh dir das Programm morgen oder in ein paar Tagen nochmals genau an und versuche genau zu verstehen, warum das alles so funktioniert. Wenn dir etwas unklar ist, schreib es auf und frage nächstes Mal deinen Mentor.
 
+
+## <a name="short"></a>Kurzversion für Profis
+1. In deinem Plugin vom letzten Mal in die CodeDatei ``GetafixPlugin.java`` gehen.
+1. Methode ``onCommand`` erweitern, damit diese den folgenden Code beinhaltet:
+	<pre>
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage("Command can only be used by player");
+            return false;
+        }
+        
+        if (args.length != 1) {
+            return false;
+        }
+       
+        String playerName = args[0];    // first argument is player name
+        Player player;
+
+        if (playerName.equalsIgnoreCase("me")) {
+            player = (Player) sender;
+        } else {
+            player = Bukkit.getPlayer(playerName);
+        }
+        
+        if (player == null) {
+            sender.sendMessage("Player " + playerName + " is not online");
+        }
+
+        if (label.equalsIgnoreCase("gethealth")) {
+            player.sendMessage("Health of " + player.getName() + ": " + player.getHealth());
+            return true;
+        } else {
+            player.setHealth(20.);
+        }
+        return true;
+    }
+	</pre>
+1. Vereinfache den Code, indem du die ersten zwei ``if`` Bedingungen in eine eigene Methode auslagerst: dazu markierst du den Block, der ausgelagert werden soll, klickst mit der rechten Maustaste darauf, wählst **Refactor** > **Introduce** > **Method** aus und gibt der Methode den Name ``argumentCannotBeHandled``.
+1. Vereinfache den Code erneut, indem du die 5 Zeilen, in denen der ``Player`` initialisiert wird, auslagerst, und der neuen Methode den Namen ``getPlayer`` gibst.
+1. Vereinfache den Code ein drittes Mal, indem du die Überprüfung, ob der ``Player`` online ist, auslagerst und der neuen Methode den Namen ``playerIsOffline`` gibst. 
+1. Baue ein, dass nur Operatoren die Kommandos ``/gethealth`` und ``/heal`` ausführen dürfen, indem du eine zusätzliche Überprüfung hinzufügst mit ``!sender.isOp()`` und eine dementsprechende Nachricht an den ``sender`` schickst.
+1. Baue das Paket: In Icon Leiste auf den Hammer **Build Project (F11)** klicken
+1. Kopiere bzw. ersetze das fertige jar File aus ``dist`` (siehe Pfad im **Output**) in das Minecraft Server Plugin-Verzeichnis. 
+1. Starte den Server  oder gib ``reload`` in die Server Konsole ein.
+1. Teste das Plugin indem du in Minecraft deine Kommandos ``/gethealth`` und ``/heal`` aufrufst.
+
+
+## <a name="ideas"></a>Ideen für weitere Entwicklungen
 Falls du Lust hast kannst du ja unser Programm verändern. Einige Ideen gefällig?
 
 1. Man darf sich nicht mehr selber heilen. D. h. du musst `me` als mögliches Argument rausnehmen und aufpassen, dass der Name des Spielers, der geheilt werden soll nicht gleich dem Namen des Senders ist.
-2. Heilen bedeutet nicht, dass man gleich auf 20 Gesundheitspunkte kommt, sondern man bekommt 3 Punkte dazu. Was passiert, wenn du jemanden, der 18 Punkte hat heilst? Hat der dann 21? Das darf natürlich nicht passieren
-3. Das Kommando `gethealth` darf von jedem ausgeführt werden, aber `heal` nur von ops.
+1. Heilen bedeutet nicht, dass man gleich auf 20 Gesundheitspunkte kommt, sondern man bekommt 3 Punkte dazu. Was passiert, wenn du jemanden, der 18 Punkte hat heilst? Hat der dann 21? Das darf natürlich nicht passieren
+1. Das Kommando `gethealth` darf von jedem ausgeführt werden, aber `heal` nur von ops.
