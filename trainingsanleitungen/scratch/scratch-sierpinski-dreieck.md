@@ -33,6 +33,7 @@ arbeiten, um Dreiecke mit verschiedenen Seitenlängen zu arbeiten, darum darf di
 
 1. ![Malfäche initialisieren](scratch-sierpinski-dreieck/start-position.png){: .right}
 Lege als erstes für die leere Figur ein Skript an, dass beim Klick auf die grüne Flagge die Malfläche initialisiert. Dazu gehören folgende Schritte:
+ * Starte das Script mit der grünen Flagge
  * Wische alle Malspuren weg
  * Wähle eine Stiftfarbe
  * Setzte die Variable "Seitenlaenge" auf 200 - wir malen als erstes das größte Dreieck in der Mitte, das eine Seitelänge von 200 Schritten haben soll
@@ -41,6 +42,7 @@ Lege als erstes für die leere Figur ein Skript an, dass beim Klick auf die grü
 
 2. ![Male das erste Dreieck](scratch-sierpinski-dreieck/erstes-dreieck.png){: .right}
 Male das größte Dreick in der Mitte. Dazu sind folgende Schritte notwendig:
+ * Starte das zweite Skript wenn ein Klon entsteht
  * Setze als erstes die Richtung auf 30°
  * Schalte den Stift ein
  * Wiederhole die folgenden beiden Anweisungen dreimal: 1) Gehe "Seitenlaenge" Schritte 2) Drehe dich um 120° nach links
@@ -48,7 +50,7 @@ Male das größte Dreick in der Mitte. Dazu sind folgende Schritte notwendig:
 
 3. ![Zweite Runde](scratch-sierpinski-dreieck/zweite-ebene.png){: .right}
 Nun müssen wir die zweite Runde an Dreiecken malen. Dazu müssen wir die Ausgangspunkte der drei umliegenden Dreiecke finden. 
-Dann können wir einfach einen Klon der Figur erstellen und das Malen startet von vorne. Folgende Schritte brauchen wir dazu:
+Dann können wir einfach einen Klon der Figur erstellen und das Malen startet von vorne. Folgende Schritte brauchen wir dazu (am zweiten Skript anschließend):
  * Setze die Variable "Seitenlaenge" auf "Seitenlaenge" / 2 - die neuen Dreiecke haben nur halb so lange Kanten
  * Wenn die Seitenlänge noch größer als 5 ist, führe die nachfolgenden Schritte aus
  * Drehe dich 60° nach rechts - die Figur schaut jetzt genau nach rechts (90°)

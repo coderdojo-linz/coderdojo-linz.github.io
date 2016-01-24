@@ -27,10 +27,6 @@ Falls kein Laptop zur Verfügung steht, nehmen Sie bitte mit uns [Kontakt](http:
 
 Das CoderDojo findet im Herbstsemester 2015 im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt. 
 
-Wenn ihr mit öffentlichen Verkehrsmitteln anreist, bekommt ihr von der Volkshochschule ein kostenloses Ticket für die Linz AG. Meldet euch dazu bitte zusätzlich zur Anmeldung zu den einzelnen 
-Terminen einmal pro Semester direkt bei der Volkshochschule Linz zum Kurs [CoderDojo Linz](https://vhskurs.linz.gv.at/index.php?kathaupt=11&knr=15.24760&kursname=CoderDojo+Linz){:target="_blank"} an. 
-Der Kursausweis gilt als Fahrausweis.
-
 Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp){:target="_blank"}.
 
 <iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed/v1/place?q=Wissensturm%20Volkshochschule%20Linz%20Stadtbibliothek%2C%20K%C3%A4rntnerstra%C3%9Fe%2C%20Linz%2C%20Austria&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE" allowfullscreen></iframe> 
