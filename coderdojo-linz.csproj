@@ -46,6 +46,7 @@
     <Content Include="mentoren\images\oliver-lintner.jpg" />
     <Content Include="mentoren\images\peter-bauer.jpg" />
     <Content Include="mentoren\images\peter-paul-kirschner.jpg" />
+    <Content Include="mentoren\images\philipp-pendelin.jpg" />
     <Content Include="mentoren\images\pia-gerhofer.jpg" />
     <Content Include="mentoren\images\rainer-stropek.jpg" />
     <Content Include="mentoren\images\raphael-schwarz.png" />
@@ -435,6 +436,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-weihnachten.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\Weihnachtsspiel.zip" />
     <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck.md" />
+    <Content Include="mentoren\pendelin-philipp.md" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
