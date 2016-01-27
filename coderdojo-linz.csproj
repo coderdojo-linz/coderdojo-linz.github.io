@@ -53,7 +53,6 @@
     <Content Include="mentoren\images\rina-ahmed.jpg" />
     <Content Include="mentoren\images\roman-schacherl.jpg" />
     <Content Include="mentoren\images\wolfgang-ziegler.jpg" />
-    <Content Include="scripts\application.js" />
     <Content Include="scripts\dependencies.min.js" />
     <Content Include="styles\dependencies.css" />
     <Content Include="styles\images\coderdojo.png" />
@@ -439,14 +438,11 @@
     <Content Include="mentoren\pendelin-philipp.md" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
+    <None Include="app.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="bower.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="scripts\maps\application.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
