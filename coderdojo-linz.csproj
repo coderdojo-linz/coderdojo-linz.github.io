@@ -297,6 +297,18 @@
     <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skripte-pico.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\skripte-stern.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-sterne-fangen\sterne-fangen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\daten-grid.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\figuren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\funktion-calc-next-generation.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\funktion-insert-pattern.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\funktion-paint-und-init-grid.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\kostueme-grid.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\kostueme-selection.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\neue-funktion.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\skripte-grid-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\skripte-grid-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\skripte-selection.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life\the-game-of-life.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\create-gift.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\gift-scripts-basic.PNG" />
     <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\gift-scripts-extended.PNG" />
@@ -460,6 +472,7 @@
     <Content Include="mentoren\pendelin-philipp.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-pac-man.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-pac-man\pac-man.zip" />
+    <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />

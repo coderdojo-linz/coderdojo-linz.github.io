@@ -28,6 +28,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Weihnachtsspiel - Wie viele Geschenke schaffst du in 60 Sekunden?](/trainingsanleitungen/scratch/scratch-weihnachten.html)
 1. [Sierpinski Dreieck - Male ein Fraktal](/trainingsanleitungen/scratch/scratch-sierpinski-dreieck.html)
 1. [Pac Man - Friss dich durch's Labyrinth](/trainingsanleitungen/scratch/scratch-pac-man.html)
+1. [The Game of Life - Erwecke Zellen zum Leben](/trainingsanleitungen/scratch/the-game-of-life.html)
 
 
 ## TouchDevelop

@@ -132,12 +132,12 @@ Beim Start des Spieles klonen wir die drei Geister und setzen sie auf ihre Posit
 
 ![Skripte Ghost](scratch-pac-man/skripte-ghost-1.png)
 
-In der Ghost-Hauptschleife bewegen wir den Geist ähnlich durch das Grid wie zuvor PacMan. Wird er von PacMan mit Superkräften berührt, so friert er für zehn Sekunden ein. Die Geister werden auch mit jedem Leven schneller. Und wir rufen den Block „CalcNextDir“ auf, um zu berechnen, wohin der Geist laufen soll.
+In der Ghost-Hauptschleife bewegen wir den Geist ähnlich durch das Grid wie zuvor PacMan. Wird er von PacMan mit Superkräften berührt, so friert er für zehn Sekunden ein. Die Geister werden auch mit jedem Level schneller. Und wir rufen den Block „CalcNextDir“ auf, um zu berechnen, wohin der Geist laufen soll.
 
 ![Skripte Ghost](scratch-pac-man/skripte-ghost-2.png)
 
 Im Block „CalcNextDir“ versucht der Geist möglichst rasch an PacMan heranzukommen. Dazu berechnen wir in welcher Richtung und wie weit entfernt PacMan steht. 
-Ergibt sich eine Möglichkeit eine Abzweigung zu nehmen um die Distanz zu verkürzen, machen wir das durch Richtungswechsel; einem kleinen Zufallsfaktor folgend tun wir das aber nicht immer, dadurch vermeiden wir ein „Hängenbleiben“ hinter Ecken, und auch daß sich zwei Geister nebeneinander immer gleich bewegen. Wenn keine eindeutige Strategie möglich ist, wählen wir die nächste Richtung zufällig. Mit den „GridDef > 0“-Abfragen prüfen wir, ob PacMan das nächste Feld betreten kann.
+Ergibt sich eine Möglichkeit eine Abzweigung zu nehmen um die Distanz zu verkürzen, machen wir das durch Richtungswechsel; einem kleinen Zufallsfaktor folgend tun wir das aber nicht immer, dadurch vermeiden wir ein „Hängenbleiben“ hinter Ecken, und auch daß sich zwei Geister nebeneinander immer gleich bewegen. Wenn keine eindeutige Strategie möglich ist, wählen wir die nächste Richtung zufällig. Mit den „GridDef > 0“-Abfragen prüfen wir, ob der Geist das nächste Feld betreten kann.
 
 ![Skripte Ghost](scratch-pac-man/skripte-ghost-3.png)
 
