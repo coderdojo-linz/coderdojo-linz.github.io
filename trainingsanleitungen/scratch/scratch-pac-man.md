@@ -164,5 +164,3 @@ Wenn PacMan seine Position verändert, fragen wir ab ob er eine Pille berührt, 
 ## Ausprobieren
 
 Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/97137611/](https://scratch.mit.edu/projects/97137611/){:target="_blank"} ausprobieren.
-
-<h2 class="page-break-before">Gesamte Skripte je Figur</h2>
