@@ -41,7 +41,7 @@ Die Skripte von Selection sind relativ einfach. Sie dienen dazu die Menükommand
 
 ## Die Figur Grid
 
-Her ist das eigentliche Spiel implementiert. Das Grid zeichnet sich mit dem Malstift selbst, daher hat es nur ein leeres Kostüm:
+Hier ist das eigentliche Spiel implementiert. Das Grid zeichnet sich mit dem Malstift selbst, daher hat es nur ein leeres Kostüm:
 
 ![Kostüme Grid](scratch-the-game-of-life/kostueme-grid.png)
 
@@ -84,7 +84,7 @@ GliderGun:<br/>
 110000000010001011000010100000000000<br/>
 000000000010000010000000100000000000<br/>
 000000000001000100000000000000000000<br/>
-000000000000110000000000000000000000<
+000000000000110000000000000000000000
 
 Pulsar:<br/>
 0011100011100<br/>
