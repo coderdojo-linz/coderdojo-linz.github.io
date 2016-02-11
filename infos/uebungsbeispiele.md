@@ -27,6 +27,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Steinschleuder - Füttere den Affen mit Bananen](/trainingsanleitungen/scratch/scratch-slingshot.html)
 1. [Weihnachtsspiel - Wie viele Geschenke schaffst du in 60 Sekunden?](/trainingsanleitungen/scratch/scratch-weihnachten.html)
 1. [Sierpinski Dreieck - Male ein Fraktal](/trainingsanleitungen/scratch/scratch-sierpinski-dreieck.html)
+1. [Pac Man - Friss dich durch|s Labyrinth](/trainingsanleitungen/scratch/scratch-pac-man.html)
 
 
 ## TouchDevelop
