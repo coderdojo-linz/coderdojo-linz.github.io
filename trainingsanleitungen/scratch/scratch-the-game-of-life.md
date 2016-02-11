@@ -6,10 +6,6 @@ description: Erwecke Zellen zum Leben.
 
 # The Game of Life
 
-<p class="center"><img alt="The Game of Life" src="scratch-the-game-of-life/the-game-of-life.png" /></p>
-
-Das Spiel besteht aus 2 Figuren und 21 Skripten.
-
 Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“  (schwarz). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
 
 * Eine tote Zelle mit genau drei lebenden Nachbarn wird neu geboren
@@ -17,9 +13,13 @@ Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück
 * Lebende Zellen mit zwei oder drei lebenden Nachbarn bleiben am Leben
 * Lebende Zellen mit mehr als drei lebenden Nachbarn sterben an Überbevölkerung
 
+<p class="center"><img alt="The Game of Life" src="scratch-the-game-of-life/the-game-of-life.png" /></p>
+
 Durch diese einfachen Regeln können aus bestimmten Anfangsmustern komplexe Strukturen entstehen. Es gibt stabile Muster, oszillierende Objekte wie Pulsare oder sogar Raumschiffe. Wer weiß, vielleicht entsteht auf deinem Raster irgendwann eine neue künstliche Lebensform? Durch Klick in das Grid wird das vorausgewählte Muster angelegt.
 
 Du kannst das fertige Spiel unter [https://scratch.mit.edu/projects/96326891](https://scratch.mit.edu/projects/96326891){:target="_blank"} auch gleich ausprobieren.
+
+Das Spiel besteht aus 2 Figuren und 21 Skripten.
 
 
 ## Die Figuren und Skripte
