@@ -459,6 +459,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck.md" />
     <Content Include="mentoren\pendelin-philipp.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-pac-man.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\pac-man.zip" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />

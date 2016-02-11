@@ -19,7 +19,7 @@ Das Spiel besteht aus 3 Figuren und 19 Skripten.
 ## Vorbereitungen
 
 Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. 
-kannst du sie in Kürze auch unter [https://coderdojo-linz.github.io/infos/uebungsbeispiele.html](https://coderdojo-linz.github.io/infos/uebungsbeispiele.html){:target="_blank"} herunterladen. 
+kannst du sie auch unter [http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man/pac-man.zip](https://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man/pac-man.zip){:target="_blank"} herunterladen. 
 Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMan, Ghost und Pill.
 
 ![Figuren](scratch-pac-man/figuren.png)
