@@ -205,6 +205,28 @@
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\kante-malen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\male-n-kanten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\scratch-malflaeche-initialisieren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\daten-ghost.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\daten-griddef.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\daten-pac-man.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\daten-pill.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\daten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\figuren.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\kostuem-ghost.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\kostuem-pac-man.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\kostuem-pill.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\pac-man.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-buehne.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-ghost-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-ghost-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-ghost-3.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pac-man-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pac-man-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pac-man-3.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pac-man-4.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pac-man-5.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pill-1.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pill-2.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pill-3.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\ball-bewegen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\buehne-und-figuren.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\buehnenbild-auswaehlen.png" />
@@ -436,6 +458,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-weihnachten\Weihnachtsspiel.zip" />
     <Content Include="trainingsanleitungen\scratch\scratch-sierpinski-dreieck.md" />
     <Content Include="mentoren\pendelin-philipp.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />

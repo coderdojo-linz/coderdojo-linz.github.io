@@ -3,6 +3,10 @@
 		clear: both;
 	}
 
+	p {
+		clear: both;
+	}
+
 	ul {
 		padding-left: 20px;
 	}
@@ -73,6 +77,10 @@
 
 	img.full {
 		width: 100%;
+	}
+
+	img.floatLeft {
+		float: left;
 	}
 
 	@media print {

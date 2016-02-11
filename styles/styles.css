@@ -143,6 +143,9 @@ a, a:hover, a:focus {
 body.sushi h2, body.sushi h3 {
   clear: both; }
 
+body.sushi p {
+  clear: both; }
+
 body.sushi ul {
   padding-left: 20px; }
 
@@ -191,6 +194,9 @@ body.sushi div.plainOrderedList li {
 
 body.sushi img.full {
   width: 100%; }
+
+body.sushi img.floatLeft {
+  float: left; }
 
 @media print {
   body.sushi .page-break-before {
