@@ -7,13 +7,19 @@ bannerimage: /images/coderdojo-banner-3.jpg
 # Termine
 
 * Freitag, 11. März 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19222591288){:target="_blank"}
+<br />Wissensturm
 * Freitag, 08. April 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903127791){:target="_blank"}
+<br />Wissensturm
 * Freitag, 22. April 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903128794){:target="_blank"}
-* Freitag, 20. Mai 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903129797){:target="_blank"}<br/>
-<a href="http://www.dynatrace.com/de/" target="_blank">Dynatrace</a>, Freistädter Strasse 313 / 2, 4040 Linz
+<br />Wissensturm
+* Freitag, 20. Mai 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903129797){:target="_blank"}
+<br /><a href="http://www.dynatrace.com/de/" target="_blank">Dynatrace</a>, Freistädter Strasse 313 / 2, 4040 Linz
 * Freitag, 03. Juni 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903130800){:target="_blank"}
+<br />Wissensturm
 * Freitag, 17. Juni 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903131803){:target="_blank"}
+<br />Wissensturm
 * Freitag, 01. Juli 2016 16:00 - 18:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[zur Anmeldung](https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903132806){:target="_blank"}
+<br />Wissensturm
 
 ## Was muss mitgebracht werden?
 
@@ -23,7 +29,8 @@ Falls kein Laptop zur Verfügung steht, nehmen Sie bitte mit uns [Kontakt](http:
 
 ## Ort
 
-Das CoderDojo findet im Herbstsemester 2015 im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt. 
+Das CoderDojo findet im Sommersemester 2016 im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt. 
+Die einzige Ausnahme davon ist der 20. Mai. Hier freuen wir uns sehr, dass uns die Firma <a href="http://www.dynatrace.com/de/" target="_blank">Dynatrace</a> zu sich eingeladen hat.
 
 Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp){:target="_blank"}.
 
