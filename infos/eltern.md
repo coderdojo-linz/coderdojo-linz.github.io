@@ -100,13 +100,6 @@ Es sind immer mehrere Mentoren anwesend, so können wir sowohl auf Anfänger als
 
 Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, nehmen Sie bitte mit uns [Kontakt](http://coderdojo-linz.github.io/kontakt.html) auf. Wir haben eine limitierte Anzahl an Geräten, die wir in Ausnahmefällen während der CoderDojos zur Verfügung stellen können.
 
-
-## Was muss mein Kind sonst noch mitbringen? ##
-
-**Nichts. Wasser und Obst als Jause stellen wir zur Verfügung.**
-
-Kinder und Jugendliche, die das erste Mal teilnehmen, müssen die von einem Erziehungsberechtigten unterschriebenen Teilnahmebedingungen (sind noch in Arbeit und stehen in Kürze zum Download zur Verfügung) mitbringen.
-
 ## Neugierig geworden?
 
 Dann [melden Sie Ihr Kind zu einem der nächsten Termine an](/termine.html) und kommen Sie bei uns vorbei!
