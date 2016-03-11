@@ -46,6 +46,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 4. [Programmiere einen Chat mit Node.js und Socket.io](/trainingsanleitungen/web/nodejs-socketio-chat.html)
 5. [Ein Space Shooter mit TypeScript und Phaser.io](/trainingsanleitungen/web/space-shooter.html)
 6. [Deine eigene Verschlüsselung mit JavaScript](/trainingsanleitungen/web/caesar-verschluesseln.html)
+7. [Präsentationen mit HTML statt PowerPoint](/trainingsanleitungen/web/html-prasentationen.html)
 
 ## Minecraft
 
