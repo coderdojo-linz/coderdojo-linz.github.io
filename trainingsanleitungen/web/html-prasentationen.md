@@ -37,7 +37,7 @@ Beachte, dass du für die letzten beiden Tools unter Linux und MacOS einen [Pack
 
 [Reveal.js](http://lab.hakim.se/reveal-js/){:target="_blank"} ist ein Framework zur einfachen Erstellung von HTML-basierenden Präsentationen. 
 
-** Öffne die [Webseite von Reveal.js](http://lab.hakim.se/reveal-js/){:target="_blank"} und gehe die Präsentation, die du dort findest, durch.** Mache dich mit den Möglichkeiten von Reveal.js vertraut.
+**Öffne die [Webseite von Reveal.js](http://lab.hakim.se/reveal-js/){:target="_blank"} und gehe die Präsentation, die du dort findest, durch.** Mache dich mit den Möglichkeiten von Reveal.js vertraut.
 
 
 ## Reveal.js installieren
