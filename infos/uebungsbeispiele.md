@@ -58,6 +58,11 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Plugin 3: Begrüßen und Verabschieden (listener)](/trainingsanleitungen/minecraft-plugins/05_welcome-Listener.html)
 1. [Plugin 2: Teil 3 - Miraculix (event handling)](/trainingsanleitungen/minecraft-plugins/06_getafix-MagicPotion.html)
 
+## Python
+
+1. [Erste Schritte mit Python](/trainingsanleitungen/python/python-erste-schritte.html)
+1. [Geisterspiel](/trainingsanleitungen/python/python-geisterspiel.html)
+1. [Unsinnige Sätze](/trainingsanleitungen/python/python-unsinnige-saetze.html)
 
 ## C# (C Sharp)
 
