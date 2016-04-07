@@ -27,7 +27,7 @@ Lade Python nun herunter und installiere es auf deinem Computer. Python 3 ist ko
 4. Starte nun die Programmierumgebung **IDLE** (**I**ntegrated **D**eve**L**opment **E**nvironment).
 5. Nun sollest du (unter Windows) folgendes Fenster sehen:
 
-![](/trainingsanleitungen/python/python-erste-schritte/IDLE-Windows.png)
+![](python-erste-schritte/IDLE-Windows.png)
 
 
 ## Das Shell-Fenster
@@ -89,7 +89,7 @@ Das ist schon ein richtiges kleines Programm und es ist schade, dass wir daran k
 
 Dazu öffnen wir nun ein neues Fenster, das sogenannte *Code-Fenster*. Klicke dazu mit der Maus im "Shell-Fenster" auf das Menü `File` und dort wiederum auf `New File`.
 
-![](/trainingsanleitungen/python/python-erste-schritte/IDLE-NewFile.png)
+![](python-erste-schritte/IDLE-NewFile.png)
 
 11. Schreibe nun die Befehle von vorhin noch einmal in das neue Fenster:
 
@@ -113,7 +113,7 @@ Dazu öffnen wir nun ein neues Fenster, das sogenannte *Code-Fenster*. Klicke da
 
 12. Jetzt speichern wir unser erstes Python-Programm aber sofort ab. Klicke dazu im Menü `File` auf `Save` (oder drücke STRG+S).
 
-    ![](/trainingsanleitungen/python/python-erste-schritte/IDLE-Save.png)
+    ![](python-erste-schritte/IDLE-Save.png)
 
     Als Dateinamen geben wir z.B. "TurtleZ.py" an (Python-Programmdateien sollte die Dateiendung ".py" haben).
 
@@ -147,9 +147,5 @@ Wer trotzdem lieben auf Deutsch über Python nachschlagen will, der kann z.B. fo
 * [Das Python-Tutorial](https://py-tutorial-de.readthedocs.org/de/python-3.3/){:target="_blank"}
 * [Python 3 Tutorial](http://www.python-kurs.eu/python3_kurs.php){:target="_blank"}
 
-
-<br />
-<br />
-<br />
 
 ### Viel Spaß beim Ausprobieren!!!

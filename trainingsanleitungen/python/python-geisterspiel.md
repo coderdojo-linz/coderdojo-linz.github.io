@@ -68,7 +68,6 @@ und damit dann eine Tür für den Geist auswählen:
 
 	tuer = randint(1, 3)
 
-
 ### Wertetypen für Variablen
 
 Wir können in Variablen aber nicht nur Zahlen, sondern auch Text oder Wahrheitswerte speichern.
@@ -116,8 +115,6 @@ Um eine Bedingung zu prüfen, gibt es den Befehl `if`, gefolgt von der Bedingung
 	* `a > b` ... a ist größer als b
 	* `a <= b` ... a ist kleiner als oder gleich b
 	* `a >= b` ... a ist größer als oder gleich b
-	<br />
-	<br />
 
 * Ein Beispiel für eine if-Anweisung:
 		
