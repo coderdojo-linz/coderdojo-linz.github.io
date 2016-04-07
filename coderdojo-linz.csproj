@@ -57,6 +57,8 @@
     <Content Include="styles\dependencies.css" />
     <Content Include="styles\images\coderdojo.png" />
     <Content Include="styles\styles.css" />
+    <Content Include="trainingsanleitungen\csharp\ant-me\antme-screenshot.png" />
+    <Content Include="trainingsanleitungen\csharp\ant-me\mehrere-spieler-vergleichen.png" />
     <Content Include="trainingsanleitungen\minecraft-plugins\01_installationen\CheckWinArchitectureStep2.png" />
     <Content Include="trainingsanleitungen\minecraft-plugins\01_installationen\NetBeansStartupPage.png" />
     <Content Include="trainingsanleitungen\minecraft-plugins\01_installationen\SelectOs.png" />
@@ -473,6 +475,10 @@
     <Content Include="trainingsanleitungen\scratch\scratch-pac-man.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-pac-man\pac-man.zip" />
     <Content Include="trainingsanleitungen\scratch\scratch-the-game-of-life.md" />
+    <Content Include="trainingsanleitungen\csharp\ant-me.md" />
+    <Content Include="trainingsanleitungen\csharp\python\python-erste-schritte.md" />
+    <Content Include="trainingsanleitungen\csharp\python\python-geisterspiel.md" />
+    <Content Include="trainingsanleitungen\csharp\python\python-unsinnige-saetze.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />
@@ -512,7 +518,11 @@
   <ItemGroup>
     <None Include="infos\eltern.md" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="trainingsanleitungen\csharp\python\python-erste-schritte\" />
+    <Folder Include="trainingsanleitungen\csharp\python\python-geisterspiel\" />
+    <Folder Include="trainingsanleitungen\csharp\python\python-unsinnige-saetze\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
