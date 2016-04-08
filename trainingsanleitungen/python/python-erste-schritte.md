@@ -148,4 +148,4 @@ Wer trotzdem lieben auf Deutsch über Python nachschlagen will, der kann z.B. fo
 * [Python 3 Tutorial](http://www.python-kurs.eu/python3_kurs.php){:target="_blank"}
 
 
-<div class="alert alert-info">Viel Spaß beim Ausprobieren!</div>
+<div class="alert alert-info cd-alert-large">Viel Spaß beim Ausprobieren!</div>

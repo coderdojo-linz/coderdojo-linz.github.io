@@ -198,6 +198,18 @@ body.sushi img.full {
 body.sushi img.floatLeft {
   float: left; }
 
+body.sushi div.cd-alert-large {
+  margin-top: 40px;
+  font-size: 24px;
+  text-align: center; }
+
+body.sushi div.cd-alert-medium {
+  font-size: 20px;
+  text-align: center; }
+
+body.sushi div.empty-page {
+  height: 100vh; }
+
 @media print {
   body.sushi .page-break-before {
     page-break-before: always; } }

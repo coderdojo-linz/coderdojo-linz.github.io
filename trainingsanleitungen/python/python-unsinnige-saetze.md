@@ -99,28 +99,15 @@ Nun rufen wir die Funktion ein paarmal auf:
 
 ## Eine Lösung
 
+<div class="alert alert-info cd-alert-medium">
+    Versuche zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!<br/>
+    <a class="btn btn-success" href="#solution">Lösung anzeigen</a>
+</div>
+<div class="empty-page"></div>
+
 Eine mögliche Lösung für das Unsinnige-Sätze-Programm könnte dann so aussehen:
 
-<div class="alert alert-info">Versuche aber wieder zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!</div>
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<a id="solution"></a>
 
 	# CoderDojo Linz - Unsinnige Sätze
 

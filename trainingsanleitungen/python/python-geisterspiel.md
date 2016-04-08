@@ -142,28 +142,14 @@ Um eine Bedingung zu prüfen, gibt es den Befehl `if`, gefolgt von der Bedingung
 
 ## Eine Lösung
 
+<div class="alert alert-info cd-alert-medium">
+    Versuche zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!<br/>
+    <a class="btn btn-success" href="#solution">Lösung anzeigen</a>
+</div>
+<div class="empty-page"></div>
 Eine mögliche Lösung für das Geisterspiel könnte dann so aussehen:
 
-<div class="alert alert-info">Versuche aber zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!</div>
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<a id="solution"></a>
 
 	# CoderDojo Linz - Geisterspiel
 
@@ -194,4 +180,4 @@ Eine mögliche Lösung für das Geisterspiel könnte dann so aussehen:
 
 	print(' ')
 	print('Game over! Deine Punkte: ', score)
-
+ 
