@@ -101,7 +101,7 @@ Nun rufen wir die Funktion ein paarmal auf:
 
 Eine mögliche Lösung für das Unsinnige-Sätze-Programm könnte dann so aussehen:
 
-#### Versuche aber wieder zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!!!
+<div class="alert alert-info">Versuche aber wieder zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!</div>
 
 <br />
 <br />

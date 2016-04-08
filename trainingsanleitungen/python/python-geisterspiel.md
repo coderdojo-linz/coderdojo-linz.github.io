@@ -144,7 +144,7 @@ Um eine Bedingung zu prüfen, gibt es den Befehl `if`, gefolgt von der Bedingung
 
 Eine mögliche Lösung für das Geisterspiel könnte dann so aussehen:
 
-#### Versuche aber zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!!!
+<div class="alert alert-info">Versuche aber zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!</div>
 
 <br />
 <br />
