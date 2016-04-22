@@ -17,6 +17,7 @@ description: Wichtige Links für Teilnehmer, Eltern und Mentoren
 * [Heroku](#Heroku)
 * [Visual Studio Code Editor](#VSCode)
 * [Tools für Webentwicklung](#WebTools)
+* [SoloLearn](#SoloLearn)
 
 ### <a name="DreamSpark">Microsoft DreamSpark</a> ###
 
@@ -85,6 +86,10 @@ Für die Entwicklung von Programmen für das Internet gibt es einige Tools, die 
     * [Webseite zum Lernen von TypeScript](http://www.typescriptlang.org/Tutorial){:target="_blank"}
     * Installiert wird TypeScript mit Hilfe von Node.js (siehe oben). Der entsprechende Kommandozeilenbefehl lautet `npm i -g typescript`.
 
+### <a name="SoloLearn">SoloLearn</a> ###
+In [**SoloLearn**](http://www.sololearn.com/){:target="_blank"} findet ihr kostenlose Kurse zu verschiedenen Programmiersprachen wie C#, Python oder JavaScript. 
+Außerdem findet ihr dort einen [**CodePlayground**](http://code.sololearn.com/#cs){:target="_blank"}, in dem ihr die verschiedenen Programmiersprachen ausprobieren könnt, 
+ohne dass ihr dafür Software installieren müsst.
 
 ## <a name="Eltern">Für Eltern</a> ##
 
