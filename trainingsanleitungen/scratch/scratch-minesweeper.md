@@ -85,6 +85,34 @@ Die Position werden auf folgende Werte gesetzt:
 Jetzt werden auf dem Spielfeld die Bomben platziert. Mittels Zufallszahl wird die Position 
 der Bomben ermittelt und in der Liste "zellen" mit einem "b" gekennzeichnet.
 
+1. ![Anzahl Bomben ermitteln](scratch-minesweeper/anzahl-bomben-ermitteln.png){: .right}
+Jetzt kommt der wirklich schwierige Teil - wir müssen für jede Zelle am Spielfeld ermitteln, wieviele Bomben an sie angrenzen. 
+Das sind im besten Fall 0 und im schlechtesten Fall 8, wenn alle umliegenden Zellen Bomben enthalten.
+<br/><br/>Je nachdem, ob die Zelle im Eck, am Rand, oder in der Mitte liegt, hat sie mehr oder weniger umliegende Zellen. 
+Das prüfen wir in diesem Script und für jede der Zellen sehen wir nach, ob sie eine Bombe enthält.
+<br/><br/>Am Ende tragen wir die ermittelte Zahl der Bomben in die Liste "zellen" ein.
+
+1. ![Klick auf Zelle](scratch-minesweeper/klick-auf-zelle.png){: .right}
+Nun können wir mit dem Spiel starten, der Spieler kann die erste Zelle anklicken.
+<br/><br/>Mit der linken Maustaste wird eine Zelle aufgedeckt. Wird gleichzeitig die Leertaste gedrückt, 
+wird eine Fahne gesetzt oder wieder entfernt.
+<br/><br/>Falls eine Fahne zum Markieren einer Bombe gesetzt wird, müssen wir nachher überprüfen, 
+ob schon alle Bomben gefunden wurden.
+<br/><br/>Wird eine Zelle zum Aufdecken angeklickt, müssen wir dann das Kostüm ändern.
+
+1. ![Zelle aufdecken](scratch-minesweeper/zelle-aufdecken.png){: .right}
+Die Liste "zellen" enthält für jede Zelle die Anzahl der umliegenden Bomben. Wir müssen nach dem Anklicken nur noch das richtige Kostüm für die Zelle anzeigen.
+<br/><br/>Du kannst das Skript "UmliegendeZellenAufdecken" noch leer lassen. Das Spiel wird jetzt schon funktionieren. Du kannst jetzt gleich ausprobieren, ob du alle Bomben findest.
+
+1. ![Umliegende Zellen aufdecken](scratch-minesweeper/umliegende-zellen-aufdecken.png){: .right}
+Wenn du das Skript "UmliegendeZellenAufdecken" implementierst, wird das Spiel noch besser. Wenn du eine 
+Zelle ohne angrenzende Bomben anklickst, werden automatisch alle umliegenden Zellen aufgedeckt, solange bis Zellen mit angrenzenden Bomben gefunden werden. 
+So musst du nicht alle Zellen mit dem Wert 0 selbst anklicken und kannst viel schneller spielen.
+<br/><br/>In diesem Script werden alle Zellen, die aufgedeckt werden sollen, in der Liste "zellenStatus" mit 1 markiert. Dann wird die Nachricht "zellenAktualiseren" gesendet.
+
+1. ![Zellen aktualisieren](scratch-minesweeper/zellen-aktualisieren.png){: .right}
+Wenn die Nachricht "zellenAktualiseren" dann von jedem einzelnen Klon empfangen wird, prüft dieser, ob seine Position 
+in der Liste "zellenStatus" schon mit 1 markiert ist. Wenn ja, wird die Zelle aufgedeckt.
 
 ## Ausprobieren
 
