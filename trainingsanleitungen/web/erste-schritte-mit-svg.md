@@ -44,13 +44,13 @@ Jetzt legen wir los. Vergiss bitte nicht, während der Arbeit hin und wieder ein
 
 Sinn von SVG ist es, [Vektorgrafiken](https://de.wikipedia.org/wiki/Vektorgrafik){:target="_blank"} zu definieren. Diese lassen sich dann problemlos in HTML-Webseiten eingetten.
 
-Im Gegensatz zu [Rastergrafiken](https://de.wikipedia.org/wiki/Rastergrafik){:target="_blank"} werden Vektorgrafiken nicht als einzelne Pixel sondern als Bildbeschreibung gespeichert. Dadurch lassen sie sich wunderbar vergrößern und verkleinern. Hier ein Beispiel: Das folgende Bild ist eine Rastergrafik, die um einen Faktor fünf vergrößert wurde:
+Im Gegensatz zu [Rastergrafiken](https://de.wikipedia.org/wiki/Rastergrafik){:target="_blank"} werden Vektorgrafiken nicht als einzelne Pixel sondern als Bildbeschreibung gespeichert. Dadurch lassen sie sich wunderbar vergrößern und verkleinern. Hier ein Beispiel: Das folgende Bild ist eine Rastergrafik, die auf eine Auflösung von 500x500 Pixel vergrößert wurde:
 
-![Rastergrafik](https://upload.wikimedia.org/wikipedia/commons/1/13/Zeichen_224_20px.png){:width="500%"}
+![Rastergrafik](https://upload.wikimedia.org/wikipedia/commons/1/13/Zeichen_224_20px.png){:width="500px"}
 
 Hier nun das gleiche Bild als SVG-Vektorgrafik um einen Faktor fünf vergrößert. Siehst du, wie gestochen scharf es bleibt?
 
-![Vektorgrafik](https://upload.wikimedia.org/wikipedia/commons/e/e5/Zeichen_224.svg){:width="500%"}
+![Vektorgrafik](https://upload.wikimedia.org/wikipedia/commons/e/e5/Zeichen_224.svg){:width="500px"}
 
 
 
