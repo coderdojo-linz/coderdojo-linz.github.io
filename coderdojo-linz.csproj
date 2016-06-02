@@ -208,6 +208,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-memory\memory-game.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\skripte-bilder.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\skripte-karte.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\bomben-platzieren.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\daten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\figur-loeschen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\figur-nachrichten.png" />

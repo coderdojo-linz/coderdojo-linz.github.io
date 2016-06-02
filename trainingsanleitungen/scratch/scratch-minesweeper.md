@@ -46,7 +46,7 @@ In diesem Spiel werden eine ganze Menge an Daten benötigt. Sie werden später i
 
 ### Daten für die Zelle
 
-* klonIndex
+* cloneIndex
 
 Wenn du alle Variablen und Listen richtig angelegt hast, solltest du bei den Figuren "Zelle" und "Nachrichten" folgende Daten sehen:
 
@@ -69,13 +69,21 @@ Dazu verwenden wir eigene, neue Blöcke. Der Inhalt dazu kommt später. Am Schlu
 
 1. ![Spielfeld erstellen](scratch-minesweeper/spielfeld-erstellen.png){: .right}
 Zum Erstellen des Spielfelds füllen wir die Listen "zellen" und "zellenStatus" mit Initialwerten.
-<br/><br/>Die Liste "zellen" 
-enthält für jede der 100 Positionen (10 x 10) auf dem Spielfeld eine der folgenden Informationen: - = nicht definiert, b = Bombe, 1 = 1 Bombe in den umliegenden Zellen, 
+<br/><br/>Die Liste "zellen" enthält für jede der 100 Positionen (10 x 10) auf dem Spielfeld eine der folgenden Informationen: - = nicht definiert, b = Bombe, 1 = 1 Bombe in den umliegenden Zellen, 
 2 = 2 Bomben in den umliegenden Zellen, usw. Zum Initialisieren setzen wir den Wert "-" für nicht definiert.
 <br/><br/>Die Liste "zellenStatus" enthält für jede Zelle nur die Information, ob sie aufgedeckt sein soll (0 = nicht aufgedeckt, 1 = aufgedeckt). Das brauchen wir erst später, um bei Klick auf eine Zelle ohne umliegende Bomben automatisch auch die umliegenden Zellen aufzudecken.
 <br/><br/>Außerdem erzeugen wir für jedes Feld einen Klon der Zelle. Diese wird dann im nächsten Skript an der richtigen Position im Spielfeld platziert.
 
 1. ![Zelle platzieren](scratch-minesweeper/zelle-platzieren.png){: .right}
+Sobald ein Klon einer Zelle ensteht, wechseln wir das Kostüm auf "unknown" und zeigen den Kon an. 
+Die Position werden auf folgende Werte gesetzt: 
+<br/><br/>x = -150 + (((cloneIndex - 1) mod 10) * 32)
+<br/><br/>y = 150 - ((abrunden von ((cloneIndex - 1) / 10)) * 32)
+<br/><br/>Wenn du das Spiel jetzt laufen lässt, müsste schon das Spielfeld aufgebaut werden.
+
+1. ![Bomben platzieren](scratch-minesweeper/bomben-platzieren.png){: .right}
+Jetzt werden auf dem Spielfeld die Bomben platziert. Mittels Zufallszahl wird die Position 
+der Bomben ermittelt und in der Liste "zellen" mit einem "b" gekennzeichnet.
 
 
 ## Ausprobieren
