@@ -57,7 +57,7 @@ Jetzt legen wir los. Vergiss bitte nicht, während der Arbeit hin und wieder ein
 
 ## Unser erstes SVG
 
-Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://plnkr.co/edit/bW70b0){:target="_blank"}):
+Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://embed.plnkr.co/bW70b0/){:target="_blank"}):
 
 ```
 <!DOCTYPE html>
@@ -80,8 +80,6 @@ Jetzt legen wir los. Vergiss bitte nicht, während der Arbeit hin und wieder ein
 
 </html>
 ```
-
-![SVG-Beispiel in Plunker](erste-schritte-mit-svg/simple-svg.png)
 
 1. Achte auf das `<svg...>` Tag. Es umschließt die SVG Grafikbeschreibung.
    * Mit den Attributen `width` und `height` legst du die Anzeigegröße fest. Experimentiere mit anderen Werten.
@@ -107,7 +105,7 @@ Jetzt legen wir los. Vergiss bitte nicht, während der Arbeit hin und wieder ein
 
 Man kann SVG nicht nur direkt im HTML Code einbetten sondern es auch in JavaScript generieren. Das wollen wir jetzt probieren. Unser Ziel ist es, das gleiche Beispiel wie zuvor mit JavaScript zu zeichnen.
 
-Erstelle ein neues *Plunk*. Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://plnkr.co/edit/YVS3vdrWjHlQuXA08o6l){:target="_blank"}):
+Erstelle ein neues *Plunk*. Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://embed.plnkr.co/YVS3vdrWjHlQuXA08o6l/){:target="_blank"}):
 
 ```
 <!DOCTYPE html>
@@ -119,11 +117,9 @@ Erstelle ein neues *Plunk*. Ändere den von Plunker generierten HTML Code wie fo
 
   <body>
     <h1>Hallo SVG!</h1>
-    <svg width="200" height="200" viewBox="0 0 74 74" id="svg"></svg>
+    <svg id="svg" width="200" height="200" viewBox="0 0 74 74"></svg>
     <p>
-      Die gesamte SVG-&Uuml;bung findest du auf der 
-      <a href="http://coderdojo-linz.github.io/trainingsanleitungen/web/erste-schritte-mit-svg.html">CoderDojo Linz</a>
-      Seite.
+      Hier kann weiterer Text folgen
     </p>
 
     <script src="script.js"></script>
@@ -144,10 +140,25 @@ s.path("m 44.5,34 -15,0 0,-16 -6,0 0,38 6,0 0,-17 15,0 0,17 6,0 0,-38 -6,0 z")
   .attr("fill", "#008754");
 ```
 
+1. Achte darauf, wie im `head` Tag vom HTML die Bibliothek [*Snap.svg*](http://snapsvg.io/){:target="_blank"} referenziert wird. *Snap.svg* erleichtert die Arbeit mit SVG in JavaScript ganz gewaltig.
+
+1. Achte darauf, dass im HTML das `svg` Tag leer ist.
+
+1. Vergleiche den JavaScript Code mit dem SVG HTML Code aus der letzten Übung. Siehst du die Ähnlichkeiten.
+
+Warum sollte man SVG mit JavaScript statt mit HTML erzeugen wollen? Es gibt dafür unter anderen zwei wichtige Gründe:
+
+* Manchmal ist es leichter, eine Grafik mit Code zu generieren statt sie in HTML vollständig zu beschreiben. Stell dir ein Schachbrettmuster vor. In JavaScript kein Problem. Einfach zwei Schleifen und schon ist es erledigt. In HTML wäre das viel SVG Code, den man mühsam schreiben muss.
+
+* SVG muss nicht statisch sein. Mit JavaScript kann man das Bild laufend ändern und so Animationen erzeugen, man kann auf Benutzeraktionen wie Mausklicks reagieren etc.
+
+
 
 
 
 ## Weitere Übungen
+
+1. Probiere, mit JavaScript ein Schachbrettmuster mit *Snap.svg* zu erzeugen.
 
 1. Es gibt eine kostenlose Open-Source Software, mit der du SVG-Dateien erstellen und bearbeiten kannst: [Inkscape](https://inkscape.org/de/){:target="_blank"}. Es wird auch von Profis verwendet. Installiere Inkscape, erstelle eine SVG-Datei und sieh dir anschließend den von Inkscape generierten SVG-Code an. 
 
