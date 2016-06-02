@@ -57,7 +57,9 @@ Jetzt legen wir los. Vergiss bitte nicht, während der Arbeit hin und wieder ein
 
 ## Unser erstes SVG
 
-Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://embed.plnkr.co/bW70b0/){:target="_blank"}):
+Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://embed.plnkr.co/bW70b0/){:target="_blank"}).
+
+**Tipp:** Drücke gleich am Anfang auf *Run*, dann siehst du laufend das Ergebnis des von dir bereits eingegebenen Codes. 
 
 ```
 <!DOCTYPE html>
@@ -105,7 +107,7 @@ Jetzt legen wir los. Vergiss bitte nicht, während der Arbeit hin und wieder ein
 
 Man kann SVG nicht nur direkt im HTML Code einbetten sondern es auch in JavaScript generieren. Das wollen wir jetzt probieren. Unser Ziel ist es, das gleiche Beispiel wie zuvor mit JavaScript zu zeichnen.
 
-Erstelle ein neues *Plunk*. Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://embed.plnkr.co/YVS3vdrWjHlQuXA08o6l/){:target="_blank"}):
+Erstelle ein neues *Plunk*. Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://embed.plnkr.co/YVS3vdrWjHlQuXA08o6l/){:target="_blank"}). **Nicht vergessen:** Drücke gleich am Anfang auf *Run*, dann siehst du laufend das Ergebnis des von dir bereits eingegebenen Codes. 
 
 ```
 <!DOCTYPE html>
