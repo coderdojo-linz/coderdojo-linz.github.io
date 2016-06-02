@@ -64,18 +64,19 @@ Es gibt vier mögliche Nachrichten, auf die die Figur reagieren kann: spielfeldL
 1. ![Spiel initialisieren](scratch-minesweeper/initialisieren.png){: .right}
 Als erstes müssen wir das Spielfeld initialisieren. Dazu schicken wir zuerst einmal eine Nachricht an die Figur "Nachrichten", 
 dass die Meldung "Spielfeld laden" angezeigt werden soll. Dann werden die Daten auf einen passenden Wert gesetzt. 
-Als nächstes erstellen wir das Spielfeld, platzieren die Bomben und ermitteln für jedes Feld die Anzahl der umliegenden Bomben. 
+<br/><br/>Als nächstes erstellen wir das Spielfeld, platzieren die Bomben und ermitteln für jedes Feld die Anzahl der umliegenden Bomben. 
 Dazu verwenden wir eigene, neue Blöcke. Der Inhalt dazu kommt später. Am Schluss schicken wir nochmal eine Nachricht, dass das Spielfeld jetzt fertig geladen ist.
 
-1. ![Bild anzeigen](scratch-minesweeper/bild-anzeigen.png){: .right}
-Wird eine Karte angeklickt, schickt sie die Nachricht "KarteAngeklickt". Es muss dann überprüft werden, welcher Klon des Bilder davon betroffen ist.<br/><br/>
-Handelt es sich um die erste angeklickte Karte, wird ihre Kostümnummer gespeichert.<br/><br/>
-Ist dies die zweite angeklickte Karte, dann muss geprüft werden, ob die Kostümnummer gleich ist, wie bei der ersten Karte. Wenn ja, dann wurde ein Paar gefunden und die Karten können gelöscht werden. 
-Wenn nein, dann müssen die Karten wieder umgedreht werden.
+1. ![Spielfeld erstellen](scratch-minesweeper/spielfeld-erstellen.png){: .right}
+Zum Erstellen des Spielfelds füllen wir die Listen "zellen" und "zellenStatus" mit Initialwerten.
+<br/><br/>Die Liste "zellen" 
+enthält für jede der 100 Positionen (10 x 10) auf dem Spielfeld eine der folgenden Informationen: - = nicht definiert, b = Bombe, 1 = 1 Bombe in den umliegenden Zellen, 
+2 = 2 Bomben in den umliegenden Zellen, usw. Zum Initialisieren setzen wir den Wert "-" für nicht definiert.
+<br/><br/>Die Liste "zellenStatus" enthält für jede Zelle nur die Information, ob sie aufgedeckt sein soll (0 = nicht aufgedeckt, 1 = aufgedeckt). Das brauchen wir erst später, um bei Klick auf eine Zelle ohne umliegende Bomben automatisch auch die umliegenden Zellen aufzudecken.
+<br/><br/>Außerdem erzeugen wir für jedes Feld einen Klon der Zelle. Diese wird dann im nächsten Skript an der richtigen Position im Spielfeld platziert.
 
-1. ![Bild verstecken oder löschen](scratch-minesweeper/bild-verstecken-oder-loeschen.png){: .right}
-Wenn die Meldung "KeinPaarGefunden" kommt, muss das Bild wieder versteckt werden.<br/><br/>
-Wenn die Meldung "PaarGefunden" kommt, kann das Bild gelöscht werden.
+1. ![Zelle platzieren](scratch-minesweeper/zelle-platzieren.png){: .right}
+
 
 ## Ausprobieren
 

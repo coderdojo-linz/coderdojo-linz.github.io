@@ -215,6 +215,8 @@
     <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\initialisieren.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\minesweeper-game.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\nachrichten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\spielfeld-erstellen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\zelle-platzieren.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\anzahl-ecken-abfragen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\anzahl-schritte-anpassen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\ausgabe.png" />
