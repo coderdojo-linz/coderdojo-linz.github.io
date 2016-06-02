@@ -54,18 +54,18 @@ Wenn du alle Variablen und Listen richtig angelegt hast, solltest du bei den Fig
 
 ## Skripte für die Nachrichten
 
-Für die Figur "Nachrichten" brauchen wir nur wenige Skripte. Sie reagiert auf Nachrichten, 
-die von der Figur "Zelle" geschickt werden und zeigt dem Benutzer die entsprechende Nachricht an.
-
 1. ![Skripte für Nachrichten](scratch-minesweeper/nachrichten.png){: .right}
+Für die Figur "Nachrichten" brauchen wir nur wenige Skripte. Sie reagiert auf Nachrichten, 
+die von der Figur "Zelle" geschickt werden und zeigt dem Benutzer die entsprechende Nachricht an. 
 Es gibt vier mögliche Nachrichten, auf die die Figur reagieren kann: spielfeldLaden, spielfeldGeladen, gewonnen und verloren.
 
 ## Skripte für die Zelle
 
-1. ![Bilder anordnen](scratch-minesweeper/bilder-anordnen.png){: .right}
-Nun muss bei jeder Karte auch ein Bild platziert werden. Die Bilder dürfen aber nicht einfacher nacheinander positioniert werden, sondern sie müssen per Zufallszahl verteilt werden.<br /><br />
-Es werden 16 Klone erstellt - zwei für jedes Kostüm. Die Klone werden zufällig an den 16 Position angeordnet. Die Liste "Karten" hilft uns dabei zu erkennen, 
-an welcher Position bereits ein Bild liegt.
+1. ![Spiel initialisieren](scratch-minesweeper/initialisieren.png){: .right}
+Als erstes müssen wir das Spielfeld initialisieren. Dazu schicken wir zuerst einmal eine Nachricht an die Figur "Nachrichten", 
+dass die Meldung "Spielfeld laden" angezeigt werden soll. Dann werden die Daten auf einen passenden Wert gesetzt. 
+Als nächstes erstellen wir das Spielfeld, platzieren die Bomben und ermitteln für jedes Feld die Anzahl der umliegenden Bomben. 
+Dazu verwenden wir eigene, neue Blöcke. Der Inhalt dazu kommt später. Am Schluss schicken wir nochmal eine Nachricht, dass das Spielfeld jetzt fertig geladen ist.
 
 1. ![Bild anzeigen](scratch-minesweeper/bild-anzeigen.png){: .right}
 Wird eine Karte angeklickt, schickt sie die Nachricht "KarteAngeklickt". Es muss dann überprüft werden, welcher Klon des Bilder davon betroffen ist.<br/><br/>
