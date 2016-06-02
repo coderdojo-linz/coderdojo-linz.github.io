@@ -208,6 +208,12 @@
     <Content Include="trainingsanleitungen\scratch\scratch-memory\memory-game.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\skripte-bilder.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-memory\skripte-karte.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\daten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\figur-loeschen.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\figur-nachrichten.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\figur-zelle.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\minesweeper-game.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\nachrichten.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\anzahl-ecken-abfragen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\anzahl-schritte-anpassen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-n-ecke-malen\ausgabe.png" />
@@ -488,6 +494,8 @@
     <Content Include="trainingsanleitungen\python\python-erste-schritte.md" />
     <Content Include="trainingsanleitungen\python\python-geisterspiel.md" />
     <Content Include="trainingsanleitungen\python\python-unsinnige-saetze.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\Zelle.sprite2" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />
