@@ -20,9 +20,24 @@ Wenn du nach dieser Übung mehr über SVG lernen willst oder während der Übung
 Falls du noch überhaupt keine Erfahrung mit HTML und JavaScript hast, wende dich an eine CoderDojo Mentorin oder einen Mentor. Sie werden dir die HTML-Basics erklären oder dir eine Übung für HTML-Grundlagen zeigen.
 
 
+## Was sind *Vektorgrafiken*?
+
+Das *V* in *SVG* steht für *Vector*. Sinn von SVG ist es also, [Vektorgrafiken](https://de.wikipedia.org/wiki/Vektorgrafik){:target="_blank"} zu definieren. Diese lassen sich dann problemlos in HTML-Webseiten eingetten (dazu später mehr).
+
+Im Gegensatz zu [Rastergrafiken](https://de.wikipedia.org/wiki/Rastergrafik){:target="_blank"} werden Vektorgrafiken nicht als einzelne Pixel sondern als *Bildbeschreibung* gespeichert. Dadurch lassen sie sich wunderbar vergrößern und verkleinern. Hier ein Beispiel: Das folgende Bild ist eine Rastergrafik, die auf eine Auflösung von 300x300 Pixel vergrößert wurde:
+
+![Rastergrafik](https://upload.wikimedia.org/wikipedia/commons/1/13/Zeichen_224_20px.png){:width="300px"}
+
+Hier nun das gleiche, vergrößerte Bild als SVG-Vektorgrafik. Siehst du, wie gestochen scharf es bleibt?
+
+![Vektorgrafik](https://upload.wikimedia.org/wikipedia/commons/e/e5/Zeichen_224.svg){:width="300px"}
+
+Jetzt wollen wir die oben gezeigte Vektorgrafik in SVG schreiben und in eine Webseite einbauen.
+
+
 ## Entwicklungsumgebung öffnen
 
-In der [CSS Übung](erste-schritte-mit-css.md) hast du die Webseite  [https://jsfiddle.net/](https://jsfiddle.net/){:target="_blank"} zum Experimentieren mit HTML kennengelernt. Wenn du möchtest, kannst du sie auch für diese Übung verwenden. Wenn du allerdings etwas neues kennen lernen möchtest, verwende diesmal die Alternative [Plunker](https://plnkr.co){:target="_blank"}.
+In dieser Übung lernst du eine neue Webseite kennen, mit der du rasch HTML-, JavaScript- und CSS-Code ausprobieren kannst. Sie heißt [Plunker](https://plnkr.co){:target="_blank"}.
 
 1. Öffne einen Webbrowser deiner Wahl und navigiere zu [https://plnkr.co](https://plnkr.co){:target="_blank"}.
 
@@ -40,26 +55,100 @@ In der [CSS Übung](erste-schritte-mit-css.md) hast du die Webseite  [https://js
 Jetzt legen wir los. Vergiss bitte nicht, während der Arbeit hin und wieder eine Dateien zu speichern.
 
 
-## Eine erste SVG Grafik
+## Unser erstes SVG
 
-Sinn von SVG ist es, [Vektorgrafiken](https://de.wikipedia.org/wiki/Vektorgrafik){:target="_blank"} zu definieren. Diese lassen sich dann problemlos in HTML-Webseiten eingetten.
+Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://plnkr.co/edit/bW70b0){:target="_blank"}):
 
-Im Gegensatz zu [Rastergrafiken](https://de.wikipedia.org/wiki/Rastergrafik){:target="_blank"} werden Vektorgrafiken nicht als einzelne Pixel sondern als Bildbeschreibung gespeichert. Dadurch lassen sie sich wunderbar vergrößern und verkleinern. Hier ein Beispiel: Das folgende Bild ist eine Rastergrafik, die auf eine Auflösung von 500x500 Pixel vergrößert wurde:
+```
+<!DOCTYPE html>
+<html>
 
-![Rastergrafik](https://upload.wikimedia.org/wikipedia/commons/1/13/Zeichen_224_20px.png){:width="500px"}
+  <body>
+    <h1>Hallo SVG!</h1>
+    
+    <svg id="svg" width="200" height="200" viewBox="0 0 74 74">
+	    <circle fill="#F0CA00" cx="37" cy="37" r="37"/> 
+      <circle fill="#008754" cx="37" cy="37" r="35"/> 
+	    <circle fill="#F0CA00" cx="37" cy="37" r="25"/> 
+    	<path fill="#008754" d="m 44.5,34 -15,0 0,-16 -6,0 0,38 6,0 0,-17 15,0 0,17 6,0 0,-38 -6,0 z"/>
+    </svg>
+    
+    <p>
+      Hier kann weiterer Text folgen
+    </p>
+  </body>
 
-Hier nun das gleiche Bild als SVG-Vektorgrafik um einen Faktor fünf vergrößert. Siehst du, wie gestochen scharf es bleibt?
+</html>
+```
 
-![Vektorgrafik](https://upload.wikimedia.org/wikipedia/commons/e/e5/Zeichen_224.svg){:width="500px"}
+![SVG-Beispiel in Plunker](erste-schritte-mit-svg/simple-svg.png)
+
+1. Achte auf das `<svg...>` Tag. Es umschließt die SVG Grafikbeschreibung.
+   * Mit den Attributen `width` und `height` legst du die Anzeigegröße fest. Experimentiere mit anderen Werten.
+   * Mit dem Attribut `viewBox` kannst du einen Ausschnitt der Grafik anzeigen. Probiere einmal `0 0 50 50` aus. Siehst du, wie ein Teil der Grafik weggeschnitten ist?
+   * Möchtest du ganz, ganz genau wissen, was alles beim `svg` Tag möglich ist. Die Profi-Doku findest du [bei Mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute){:target="_blank"}.
+
+1. Mit dem `circle` Tag kann man Kreise malen.
+   * `cx` legt den Mittelpunkt des Kreises auf der X-Achse fest.
+   * `cy` legt den Mittelpunkt des Kreises auf der Y-Achse fest. **Achtung:** Bei Computergrafik sind Punkte weiter **unten** je **größer** die Koordinaten werden. Der Koordinatenursprung ist also **links oben**.
+   * `r` legt den Radius fest.
+   * `fill` legt die Füllfarbe fest. Wenn du ein Farbe auswählen möchtest, kannst du einen *Color Picker* wie z.B. den von [w3schools](http://www.w3schools.com/colors/colors_picker.asp){:target="_blank"} verwenden.
+
+1. Das `path` Tag ist besonders interessant. Man kann damit Figuren zeichnen, die sich aus einer Folge von Linien und Kreisbogensegmenten zusammensetzen.
+   * In `d` legt man das Aussehen der Figur fest.
+   * `m` steht für `move` und setzt den Zeichencursor an eine Position.
+   * Nach dem `m` folgen durch Leerzeichen getrennte x/y Koordinatenpaare wie z.B. `44.5,34`. Durch das Zeichen `z` wird die Figur geschlossen. Schwierig? Frage eine CoderDojo Mentorin um Hilfe. Sie wird dir Schritt für Schritt erklären, wie `path` funktioniert.
+   * Möchtest du ganz, ganz genau wissen, was alles bei `d` möglich ist. Die Profi-Doku findest du [bei Mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d){:target="_blank"}.        
+
+1. Wenn du möchtest, kannst du weitere Formen ausprobieren. Auf [w3schools](http://www.w3schools.com/svg/svg_examples.asp){:target="_blank"} findest du jede Menge Beispiele mit Linien, Rechtecken, Ellipsen, Polygonen etc.
+
+
+## SVG mit JavaScript zeichnen
+
+Man kann SVG nicht nur direkt im HTML Code einbetten sondern es auch in JavaScript generieren. Das wollen wir jetzt probieren. Unser Ziel ist es, das gleiche Beispiel wie zuvor mit JavaScript zu zeichnen.
+
+Erstelle ein neues *Plunk*. Ändere den von Plunker generierten HTML Code wie folgt ([auf Plunker ausprobieren](https://plnkr.co/edit/YVS3vdrWjHlQuXA08o6l){:target="_blank"}):
+
+```
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg.js"></script>
+  </head>
+
+  <body>
+    <h1>Hallo SVG!</h1>
+    <svg width="200" height="200" viewBox="0 0 74 74" id="svg"></svg>
+    <p>
+      Die gesamte SVG-&Uuml;bung findest du auf der 
+      <a href="http://coderdojo-linz.github.io/trainingsanleitungen/web/erste-schritte-mit-svg.html">CoderDojo Linz</a>
+      Seite.
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
+```
+
+Den von Plunker generierten JavaScript Code in `script.js` musst du wie folgt ändern:
+
+```
+var s = Snap("#svg");
+
+s.circle(37, 37, 37).attr("fill", "#F0CA00");
+s.circle(37, 37, 35).attr("fill", "#008754");
+s.circle(37, 37, 25).attr("fill", "#F0CA00");
+s.path("m 44.5,34 -15,0 0,-16 -6,0 0,38 6,0 0,-17 15,0 0,17 6,0 0,-38 -6,0 z")
+  .attr("fill", "#008754");
+```
+
 
 
 
 ## Weitere Übungen
 
-1. Wir haben ein *internes Stylesheet* erstellt. Lies den Artikel unter [http://www.w3schools.com/css/css_howto.asp](http://www.w3schools.com/css/css_howto.asp){:target="_blank"} und versuche, unser Beispiel auf ein *externes Stylesheet* umzustellen.
+1. Es gibt eine kostenlose Open-Source Software, mit der du SVG-Dateien erstellen und bearbeiten kannst: [Inkscape](https://inkscape.org/de/){:target="_blank"}. Es wird auch von Profis verwendet. Installiere Inkscape, erstelle eine SVG-Datei und sieh dir anschließend den von Inkscape generierten SVG-Code an. 
 
-2. Wenn du schon etwas Erfahrung mit CSS gesammelt hast, kannst du das [CSS Quiz auf w3schools](http://www.w3schools.com/css/css_quiz.asp){:target="_blank"} probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein CSS-Wissen noch zu erweitern.
-
-3. Baue dir einen Webserver mit Node.JS (eine Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/nodejs-webserver.html)) und liefere damit den in dieser Übung erstellten HTML- und CSS-Code aus.
-
-4. Möchtest du deine Webseite im Internet veröffentlichen? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/dreamspark-azure.html).
+1. Möchtest du deine Webseite im Internet veröffentlichen? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/dreamspark-azure.html).
