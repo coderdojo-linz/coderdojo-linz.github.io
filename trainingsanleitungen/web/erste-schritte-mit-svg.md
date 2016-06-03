@@ -69,10 +69,10 @@ Jetzt legen wir los. Vergiss bitte nicht, während der Arbeit hin und wieder ein
     <h1>Hallo SVG!</h1>
     
     <svg id="svg" width="200" height="200" viewBox="0 0 74 74">
-	    <circle fill="#F0CA00" cx="37" cy="37" r="37"/> 
+      <circle fill="#F0CA00" cx="37" cy="37" r="37"/> 
       <circle fill="#008754" cx="37" cy="37" r="35"/> 
-	    <circle fill="#F0CA00" cx="37" cy="37" r="25"/> 
-    	<path fill="#008754" d="m 44.5,34 -15,0 0,-16 -6,0 0,38 6,0 0,-17 15,0 0,17 6,0 0,-38 -6,0 z"/>
+      <circle fill="#F0CA00" cx="37" cy="37" r="25"/> 
+      <path fill="#008754" d="m 44.5,34 -15,0 0,-16 -6,0 0,38 6,0 0,-17 15,0 0,17 6,0 0,-38 -6,0 z"/>
     </svg>
     
     <p>
