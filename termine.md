@@ -25,7 +25,7 @@ bannerimage: /images/coderdojo-banner-3.jpg
 	</tr>
 	<tr>
 	  <td>Freitag, 01. Juli 2016 16:00 - 18:00</td>
-	  <td>Wissensturm, Kärtnerstraße 26, 4020 Linz<br/><br/>Geburtstagsparty! Wir feiern das erste Jahr CoderDojo Linz</td>
+	  <td>Wissensturm, Kärtnerstraße 26, 4020 Linz<br/><br/><span class="warning">Geburtstagsparty! Wir feiern das erste Jahr CoderDojo Linz.</span></td>
 	  <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903132806" target="_blank">zur Anmeldung</a></td>
 	</tr>
        <tr class="subtitle">
@@ -83,6 +83,61 @@ bannerimage: /images/coderdojo-banner-3.jpg
         <td>Freitag, 16. Dezember 2016 16:00 - 18:00</td>
         <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
         <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026383614" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 13. Jänner 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026384617" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 27. Jänner 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026385620" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 10. Februar 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026386623" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 03. März 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026387626" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 17. März 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026388629" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 31. März 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026389632" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 21. April 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026390635" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 05. Mai 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026391638" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 19. Mai 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026392641" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 02. Juni 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026393644" target="_blank">zur Anmeldung</a></td>
+    </tr>
+    <tr>
+        <td>Freitag, 23. Juni 2017 16:00 - 18:00</td>
+        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026394647" target="_blank">zur Anmeldung</a></td>
     </tr>
   </tbody>
 </table>

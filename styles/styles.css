@@ -127,6 +127,10 @@ a, a:hover, a:focus {
     left: calc(50% - 565px);
     font-size: 24px; } }
 
+/* tables */
+.subtitle td {
+  background-color: #ddd; }
+
 /* mentors */
 .mentor-image {
   margin-top: 20px;
