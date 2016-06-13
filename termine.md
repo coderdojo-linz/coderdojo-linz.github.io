@@ -25,7 +25,7 @@ bannerimage: /images/coderdojo-banner-3.jpg
 	</tr>
 	<tr>
 	  <td>Freitag, 01. Juli 2016 16:00 - 18:00</td>
-	  <td>Wissensturm, Kärtnerstraße 26, 4020 Linz<br/><br/><span class="warning">Geburtstagsparty! Wir feiern das erste Jahr CoderDojo Linz.</span></td>
+	  <td>Wissensturm, Kärtnerstraße 26, 4020 Linz<br/><span class="warning">Geburtstagsparty! Wir feiern das erste Jahr CoderDojo Linz.</span></td>
 	  <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903132806" target="_blank">zur Anmeldung</a></td>
 	</tr>
        <tr class="subtitle">
