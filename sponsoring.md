@@ -30,13 +30,11 @@ Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucke
 Wenn gewünscht, wirst du gerne auf unserer Webseite namentlich erwähnt. Schicke uns dazu bitte eine kurze Info an [info@coderdojo-linz.org](mailto:info@coderdojo-linz.org).
 
 <table class="table">
-    <thead>
-        <tr>
+    <tbody>
+        <tr class="subtitle">
             <td width="50%">Bankverbindung</td>
             <td width="50%">PayPal</td>
         </tr>
-    </thead>
-    <tbody>
         <tr>
             <td>
                 Raiffeisen Landesbank Oberösterreich<br/>
