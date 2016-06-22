@@ -29,15 +29,30 @@ Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucke
 
 Wenn gewünscht, wirst du gerne auf unserer Webseite namentlich erwähnt. Schicke uns dazu bitte eine kurze Info an [info@coderdojo-linz.org](mailto:info@coderdojo-linz.org).
 
-Raiffeisen Landesbank Oberösterreich<br/>
+<table class="table">
+    <thead>
+        <tr>
+            <td width="50%">Bankverbindung</td>
+            <td width="50%">PayPal</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                Raiffeisen Landesbank Oberösterreich<br/>
 IBAN: AT81 3400 0000 0508 7333, BIC: RZOOAT2L
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            </td>
+            <td>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="FZS4TBU73STVA">
 <input type="image" src="https://www.paypalobjects.com/de_DE/AT/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
 <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
 </form>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 #### Sponsor a Dojo: ab 100€
 
