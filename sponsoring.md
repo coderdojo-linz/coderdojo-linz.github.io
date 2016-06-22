@@ -23,6 +23,20 @@ Egal ob mittels Mithilfe als Mentor oder helfende Hand bei den Veranstaltungen, 
 ### Geldspenden
 Im Folgenden findest du Vorschläge, wie du das CoderDojo Linz finanziell unterstützen kannst. Deiner Kreativität sind natürlich keine Grenzen gesetzt, wir freuen uns über neue Vorschläge. Die Preise sind Richtwerte.
 
+#### Einmaliger Betrag
+
+Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucken der Anleitungen, für Obst während der Veranstaltungen, oder für die Veranstaltung eines CoderDojo Festes für die Kinder. Wenn gewünscht, wirst du außerdem auf unserer Webseite namentlich erwähnt.
+
+Raiffeisen Landesbank Oberösterreich<br/>
+IBAN: AT81 3400 0000 0508 7333, BIC: RZOOAT2L
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="FZS4TBU73STVA">
+<input type="image" src="https://www.paypalobjects.com/de_DE/AT/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+</form>
+
 #### Sponsor a Dojo: ab 100€
 
 Präsentiere dich als Firma und sponsere ein CoderDojo. Dein Geld wird ausschließlich für die Kinder verwendet. Die Vorteile:
