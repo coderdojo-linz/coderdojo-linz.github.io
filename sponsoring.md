@@ -25,7 +25,9 @@ Im Folgenden findest du Vorschläge, wie du das CoderDojo Linz finanziell unters
 
 #### Einmaliger Betrag
 
-Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucken der Anleitungen, für Obst während der Veranstaltungen, oder für die Veranstaltung eines CoderDojo Festes für die Kinder. Wenn gewünscht, wirst du außerdem auf unserer Webseite namentlich erwähnt.
+Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucken der Anleitungen, für Obst während der Veranstaltungen, oder für die Veranstaltung eines CoderDojo Festes für die Kinder. 
+
+Wenn gewünscht, wirst du gerne auf unserer Webseite namentlich erwähnt. Schicke uns dazu bitte eine kurze Info an [info@coderdojo-linz.org](mailto:info@coderdojo-linz.org).
 
 Raiffeisen Landesbank Oberösterreich<br/>
 IBAN: AT81 3400 0000 0508 7333, BIC: RZOOAT2L
