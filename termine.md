@@ -25,11 +25,16 @@ bannerimage: /images/coderdojo-banner-3.jpg
 	</tr>
        <tr class="subtitle">
           <td colspan="3">Sommerferien 2016</td>
-      </tr>
-      <tr>
+    </tr>
+    <tr>
 	  <td>Freitag, 15. Juli 2016 16:00 - 18:00</td>
 	  <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
 	  <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026374587" target="_blank">zur Anmeldung</a></td>
+	</tr>
+      <tr>
+	  <td>Freitag, 05. August 2016 16:00 - 18:00</td>
+	  <td><span class="warning">AEC Skyloft, Ars-Electronica-Straße 1, 4040 Linz</span></td>
+	  <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26205064052" target="_blank">zur Anmeldung</a></td>
 	</tr>
     <tr>
         <td>Freitag, 19. August 2016 16:00 - 18:00</td>
