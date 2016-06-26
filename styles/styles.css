@@ -26,6 +26,9 @@ h4 {
   margin-top: 20px;
   margin-bottom: 10px; }
 
+p, table, img {
+  margin: 0 0 20px; }
+
 @media (max-width: 1200px) {
   body {
     padding-top: 51px; } }
@@ -143,6 +146,42 @@ a, a:hover, a:focus {
 .warning {
   color: #e53935;
   font-weight: bold; }
+
+body.sushi .row img {
+  width: 100%; }
+
+body.sushi .sushi-intro table.sushi-stats {
+  background-color: #FFF59D;
+  border-radius: 10px;
+  width: auto; }
+  body.sushi .sushi-intro table.sushi-stats tr:first-of-type td {
+    border-top: none; }
+  body.sushi .sushi-intro table.sushi-stats td {
+    padding: 5px 20px;
+    line-height: 1.3em;
+    border-top: 1px solid #fff; }
+    body.sushi .sushi-intro table.sushi-stats td:nth-of-type(2) {
+      text-align: right; }
+
+body.sushi .sushi-overview img {
+  margin: 0;
+  width: auto; }
+
+body.sushi .sushi-overview .sushi-sprites-overview {
+  width: auto; }
+
+body.sushi .sushi-overview .sushi-customes {
+  padding-left: 0; }
+  body.sushi .sushi-overview .sushi-customes li {
+    list-style-type: none;
+    display: inline; }
+    body.sushi .sushi-overview .sushi-customes li > * {
+      margin-bottom: 2px; }
+
+body.sushi .tip {
+  background-color: #FFF59D;
+  border-radius: 10px;
+  padding: 10px 20px; }
 
 body.sushi h2, body.sushi h3 {
   clear: both; }
