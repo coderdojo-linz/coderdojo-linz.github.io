@@ -3,7 +3,7 @@ layout:
 title: Anton Kalcik
 description: 
 image: /mentoren/images/anton-kalcik.jpg
-page-category: mentor
+page-category: guest-mentor
 ---
 
 Toni ist Absolvent des Studiengangs Software Engineering an der Fachhochschule Hagenberg und Software Entwicklung und Multimedia an der Fachhochschule Technikum Wien. 
