@@ -16,7 +16,7 @@ description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Ran
 			<tbody>
 				<tr>
 					<td>Figuren</td>
-					<td>2</td>
+					<td>3</td>
 				</tr>
 				<tr>
 					<td>Skripte</td>
