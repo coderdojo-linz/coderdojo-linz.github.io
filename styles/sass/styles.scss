@@ -200,4 +200,10 @@ a, a:hover, a:focus {
 .warning {
 	color: #e53935;
 	font-weight: bold;
+
+	a {
+		color: #e53935;
+		font-weight: bold;
+		text-decoration: underline;
+	}
 }
