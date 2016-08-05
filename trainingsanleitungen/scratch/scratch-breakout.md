@@ -8,6 +8,27 @@ description: In diesem Spiel pulverisierst du bunte Mauersteine
 
 In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläger einen Ball darauf schleuderst. Wenn alle Mauersteine zerstört sind, kommst du in den nächsten Level, wo dein Ball dann noch schneller fliegt.
 
+## Downloads
+
+<table class="table sushi-overview">
+	<tr class="subtitle">
+		<td>Figur</td>
+		<td>
+	</tr>
+	<tr>
+		<td>Ball</td>
+		<td><a href="scratch-breakout/Ball.sprite2">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>Block</td>
+		<td><a href="scratch-breakout/Block.sprite2">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>Schläger</td>
+		<td><a href="scratch-breakout/Schlaeger.sprite2">Figur downloaden</a></td>
+	</tr>
+</table>
+
 ## Bühne und Figuren anlegen
 
 1. ![Bühnenbild auswählen](scratch-breakout/01-choose-background.png){: .right}

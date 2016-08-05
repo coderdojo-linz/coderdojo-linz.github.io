@@ -514,6 +514,9 @@
     <Content Include="trainingsanleitungen\scratch\scratch-minesweeper.md" />
     <Content Include="trainingsanleitungen\scratch\scratch-minesweeper\Zelle.sprite2" />
     <Content Include="mentoren\kalcik-anton.md" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\Ball.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\Block.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-breakout\Schlaeger.sprite2" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />
