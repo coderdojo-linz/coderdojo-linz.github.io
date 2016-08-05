@@ -15,11 +15,11 @@ description: In diesem Spiel pulverisierst du bunte Mauersteine
 			<tbody>
 				<tr>
 					<td>Figuren</td>
-					<td>8</td>
+					<td>3</td>
 				</tr>
 				<tr>
 					<td>Skripte</td>
-					<td>3</td>
+					<td>8</td>
 				</tr>
 				<tr>
 					<td>Daten</td>
