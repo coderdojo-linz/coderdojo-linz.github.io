@@ -6,11 +6,36 @@ description: Friss dich durch's Labyrinth.
 
 # Scratch Pac Man
 
-Pac-Man ist ein klassisches Computerspiel. Es erschien erstmals 1980 in Japan.
+<div class="row sushi-intro">
+	<div class="col-sm-6"><img alt="Pac Man" src="scratch-pac-man/pac-man.png" /></div>
+	<div class="col-sm-6">
+		<p>Pac-Man ist ein klassisches Computerspiel. Es erschien erstmals 1980 in Japan.</p>
+		<p>Pac-Man muß alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu laufen. Die blauen Pillen verleihen ihm für kurze Zeit Superkräfte, und er kann Geister einfrieren.</p>
+		<p>Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/97137611" target="_blank">https://scratch.mit.edu/projects/97137611</a> auch gleich ausprobieren.</p>
+		<table class="table sushi-stats">
+			<tbody>
+				<tr>
+					<td>Figuren</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>Skripte</td>
+					<td>19</td>
+				</tr>
+				<tr>
+					<td>Daten</td>
+					<td>9 / 24 / 19 / 13</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
 
-Pac-Man muß alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu laufen. Die blauen Pillen verleihen ihm für kurze Zeit Superkräfte, und er kann Geister einfrieren.
 
-Du kannst das fertige Spiel unter [https://scratch.mit.edu/projects/97137611](https://scratch.mit.edu/projects/97137611){:target="_blank"} auch gleich ausprobieren.
+
+
+
+
 
 <p class="center"><img alt="Pac Man" src="scratch-pac-man/pac-man.png" /></p>
 
@@ -33,19 +58,19 @@ Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMa
 	</tr>
 	<tr>
 		<td>Stage</td>
-		<td><a href="scratch-breakout/Stage.png">Figur downloaden</a></td>
+		<td><a href="scratch-pac-man/Stage.png">Figur downloaden</a></td>
 	</tr>
 	<tr>
 		<td>PacMan</td>
-		<td><a href="scratch-breakout/PacMan.sprite2">Figur downloaden</a></td>
+		<td><a href="scratch-pac-man/PacMan.sprite2">Figur downloaden</a></td>
 	</tr>
 	<tr>
 		<td>Ghost</td>
-		<td><a href="scratch-breakout/Ghost.sprite2">Figur downloaden</a></td>
+		<td><a href="scratch-pac-man/Ghost.sprite2">Figur downloaden</a></td>
 	</tr>
 	<tr>
 		<td>Pill</td>
-		<td><a href="scratch-breakout/Pill.sprite2">Figur downloaden</a></td>
+		<td><a href="scratch-pac-man/Pill.sprite2">Figur downloaden</a></td>
 	</tr>
 </table>
 

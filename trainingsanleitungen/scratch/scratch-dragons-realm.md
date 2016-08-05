@@ -30,27 +30,27 @@ Das Spiel besteht aus 6 Figuren und 19 Skripten.
 	</tr>
 	<tr>
 		<td>Background</td>
-		<td><a href="scratch-breakout/Background.sprite2">Figur downloaden</a></td>
+		<td><a href="scratch-dragons-realm/Background.sprite2">Figur downloaden</a></td>
 	</tr>
 	<tr>
 		<td>Border</td>
-		<td><a href="scratch-breakout/Border.sprite2">Figur downloaden</a></td>
+		<td><a href="scratch-dragons-realm/Border.sprite2">Figur downloaden</a></td>
 	</tr>
 	<tr>
 		<td>Dragon</td>
-		<td><a href="scratch-breakout/Dragon.sprite2">Figur downloaden</a></td>
+		<td><a href="scratch-dragons-realm/Dragon.sprite2">Figur downloaden</a></td>
 	</tr>
 	<tr>
 		<td>Fireball</td>
-		<td><a href="scratch-breakout/Fireball.sprite2">Figur downloaden</a></td>
+		<td><a href="scratch-dragons-realm/Fireball.sprite2">Figur downloaden</a></td>
 	</tr>
 	<tr>
 		<td>Tiles</td>
-		<td><a href="scratch-breakout/Tiles.sprite2">Figur downloaden</a></td>
+		<td><a href="scratch-dragons-realm/Tiles.sprite2">Figur downloaden</a></td>
 	</tr>
 	<tr>
 		<td>Knight</td>
-		<td><a href="scratch-breakout/Knight.sprite2">Figur downloaden</a></td>
+		<td><a href="scratch-dragons-realm/Knight.sprite2">Figur downloaden</a></td>
 	</tr>
 </table>
 
