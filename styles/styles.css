@@ -146,6 +146,10 @@ a, a:hover, a:focus {
 .warning {
   color: #e53935;
   font-weight: bold; }
+  .warning a {
+    color: #e53935;
+    font-weight: bold;
+    text-decoration: underline; }
 
 body.sushi {
   /*.row {

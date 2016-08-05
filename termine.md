@@ -15,23 +15,10 @@ bannerimage: /images/coderdojo-banner-3.jpg
     </tr>
   </thead>
   <tbody>
-      <tr class="subtitle">
-          <td colspan="3">Schuljahr 2015 / 2016</td>
-      </tr>
-	<tr>
-	  <td>Freitag, 01. Juli 2016 16:00 - 18:00</td>
-	  <td>Wissensturm, Kärtnerstraße 26, 4020 Linz<br/><span class="warning">Geburtstagsparty! Wir feiern das erste Jahr CoderDojo Linz.</span></td>
-	  <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-19903132806" target="_blank">zur Anmeldung</a></td>
-	</tr>
        <tr class="subtitle">
           <td colspan="3">Sommerferien 2016</td>
     </tr>
     <tr>
-	  <td>Freitag, 15. Juli 2016 16:00 - 18:00</td>
-	  <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-	  <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026374587" target="_blank">zur Anmeldung</a></td>
-	</tr>
-      <tr>
 	  <td>Freitag, 05. August 2016 16:00 - 18:00</td>
 	  <td><span class="warning">AEC Skyloft, Ars-Electronica-Straße 1, 4040 Linz</span></td>
 	  <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26205064052" target="_blank">zur Anmeldung</a></td>
@@ -81,7 +68,7 @@ bannerimage: /images/coderdojo-banner-3.jpg
     </tr>
     <tr>
         <td>Freitag, 16. Dezember 2016 16:00 - 18:00</td>
-        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
+        <td><div class="warning">Weihnachts-Dojo bei <a href="http://www.dynatrace.com/de/" target="_blank">Dynatrace</a>, Freistädter Strasse 313 / 2, 4040 Linz</div></td>
         <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026383614" target="_blank">zur Anmeldung</a></td>
     </tr>
     <tr>
