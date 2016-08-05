@@ -6,7 +6,29 @@ description: In diesem Spiel pulverisierst du bunte Mauersteine
 
 # Scratch Breakout
 
-In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläger einen Ball darauf schleuderst. Wenn alle Mauersteine zerstört sind, kommst du in den nächsten Level, wo dein Ball dann noch schneller fliegt.
+<div class="row sushi-intro">
+	<div class="col-sm-6"><img alt="Breakout" src="scratch-breakout/11-done.png" /></div>
+	<div class="col-sm-6">
+		<p>In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläger einen Ball darauf schleuderst. Wenn alle Mauersteine zerstört sind, kommst du in den nächsten Level, wo dein Ball dann noch schneller fliegt.</p>
+		<p>Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/72990950" target="_blank">https://scratch.mit.edu/projects/72990950</a> auch gleich ausprobieren.</p>
+		<table class="table sushi-stats">
+			<tbody>
+				<tr>
+					<td>Figuren</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<td>Skripte</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>Daten</td>
+					<td>4 / 4 / 7 / 6</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
 
 ## Downloads
 

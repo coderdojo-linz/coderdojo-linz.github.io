@@ -31,16 +31,6 @@ description: Friss dich durch's Labyrinth.
 	</div>
 </div>
 
-
-
-
-
-
-
-<p class="center"><img alt="Pac Man" src="scratch-pac-man/pac-man.png" /></p>
-
-Das Spiel besteht aus 3 Figuren und 19 Skripten.
-
 ## Vorbereitungen
 
 Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. 
