@@ -157,6 +157,8 @@ body.sushi {
 			width: 100%;
 		}
 	}*/ }
+  body.sushi .sushi-intro img {
+    width: 100%; }
   body.sushi .sushi-intro table.sushi-stats {
     background-color: #FFF59D;
     border-radius: 10px;

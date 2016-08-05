@@ -9,9 +9,8 @@ description: Springe hoch, um die herumfliegenden Sterne zu fangen.
 <div class="row sushi-intro">
 	<div class="col-sm-6"><img alt="Dragons Realm" src="scratch-dragons-realm/dragons-realm.png" /></div>
 	<div class="col-sm-6">
-		<p>Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindringende Raubritter verteidigt. </p>
-		<p>Mit den Pfeiltasten lenkst du den Drachen (du kannst auch zwei Tasten gleichzeitig drücken, mit ↑ und → fliegt man zum Beispiel nach rechts oben).</p>
-		<p>Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen.</p>
+		<p>Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindringende Raubritter verteidigt.</p>
+		<p>Mit den Pfeiltasten lenkst du den Drachen (du kannst auch zwei Tasten gleichzeitig drücken, mit ↑ und → fliegt man zum Beispiel nach rechts oben). Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen.</p>
 		<p>Damit das Spiel auch auf Tablets und Handys funktioniert, wurde nachträglich eine Maus/Touch-Steuerung eingebaut. Generell ist das Spielerlebnis mit der Tastatur aber besser.</p>
 		<p>Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/81928816" target="_blank">https://scratch.mit.edu/projects/81928816</a> auch gleich ausprobieren.</p>
 		<table class="table sushi-stats">
