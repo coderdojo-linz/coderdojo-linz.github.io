@@ -13,7 +13,7 @@ In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläge
 <table class="table sushi-overview">
 	<tr class="subtitle">
 		<td>Figur</td>
-		<td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>Ball</td>
