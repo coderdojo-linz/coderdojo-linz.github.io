@@ -50,9 +50,10 @@ Das Spiel besteht aus drei Figuren: der Schlange, dem Apfel und einer Nachricht,
 		<td>Bühne</td>
 		<td><img src="scratch-snake/buehne.png" /></td>
 		<td>Für dieses Spiel brauchen wir kein Bühnenbild. Du kannst es einfach weiß lassen.</td>
+		<td></td>
 	</tr>
 	<tr class="subtitle">
-		<td colspan="3">Figuren</td>
+		<td colspan="4">Figuren</td>
 	</tr>
 	<tr>
 		<td>Schlange</td>
@@ -67,6 +68,7 @@ Das Spiel besteht aus drei Figuren: der Schlange, dem Apfel und einer Nachricht,
 			<p>Am besten, du malst zuerst den Körper mit einer Größe von 20, kopierst diesen dann für den Kopf und fügst Augen und eine Zunge hinzu.</p>
 			<p>Beachte auch, dass der Körper eine andere Farbe als der Kopf haben muss.</p>
 		</td>
+		<td><a href="scratch-snake/Schlange.sprite2"></a></td>
 	</tr>
 	<tr>
 		<td>Apfel</td>
@@ -75,6 +77,7 @@ Das Spiel besteht aus drei Figuren: der Schlange, dem Apfel und einer Nachricht,
 			<p>Der Apfel braucht nur ein Kostüm. Damit er von der Schlange nur erwischt wird, wenn diese sich genau über den Apfel befindet, darf auch der Apfel nicht größer als 20 sein.</p>
 			<p>Du kannst den Apfel selber malen, oder du verwendet den Apfel aus der Scratch Figurenbibliothek.</p>
 		</td>
+		<td><a href="scratch-snake/Apfel.sprite2"></a></td>
 	</tr>
 	<tr>
 		<td>SpielZuEnde</td>
@@ -82,6 +85,7 @@ Das Spiel besteht aus drei Figuren: der Schlange, dem Apfel und einer Nachricht,
 		<td>
 			<p>Dann brauchst du noch eine Figur für die "Game Over" Meldung (Englisch für "das Spiel aus aus"), die angezeigt wird, wenn der Spieler verloren hat.</p>
 		</td>
+		<td><a href="scratch-snake/SpielZuEnde.sprite2"></a></td>
 	</tr>
 </table>
 

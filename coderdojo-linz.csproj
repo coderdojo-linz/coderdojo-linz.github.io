@@ -528,6 +528,9 @@
     <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\Fireball.sprite2" />
     <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\Knight.sprite2" />
     <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\Tiles.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-snake\Apfel.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-snake\Schlange.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-snake\SpielZuEnde.sprite2" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />
