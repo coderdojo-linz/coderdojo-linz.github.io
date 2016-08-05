@@ -37,14 +37,14 @@ Das Spiel besteht aus drei Figuren: der Schlange, dem Apfel und einer Nachricht,
 
 <table class="table sushi-overview">
 	<tr class="subtitle">
-		<td colspan="3">Übersicht</td>
+		<td colspan="4">Übersicht</td>
 	</tr>
 	<tr>
 		<td>Bühne & Figuren</td>
-		<td colspan="2"><img src="scratch-snake/overview.png" class="sushi-sprites-overview" /></td>
+		<td colspan="3"><img src="scratch-snake/overview.png" class="sushi-sprites-overview" /></td>
 	</tr>
 	<tr class="subtitle">
-		<td colspan="3">Bühne</td>
+		<td colspan="4">Bühne</td>
 	</tr>
 	<tr>
 		<td>Bühne</td>
