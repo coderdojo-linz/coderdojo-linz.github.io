@@ -21,6 +21,39 @@ Dragons Realm beinhaltet viele Grafiken. Du bekommst die Grafiken auf Anfrage vo
 
 Das Spiel besteht aus 6 Figuren und 19 Skripten.
 
+## Downloads
+
+<table class="table sushi-overview">
+	<tr class="subtitle">
+		<td>Figur</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Background</td>
+		<td><a href="scratch-breakout/Background.sprite2">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>Border</td>
+		<td><a href="scratch-breakout/Border.sprite2">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>Dragon</td>
+		<td><a href="scratch-breakout/Dragon.sprite2">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>Fireball</td>
+		<td><a href="scratch-breakout/Fireball.sprite2">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>Tiles</td>
+		<td><a href="scratch-breakout/Tiles.sprite2">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>Knight</td>
+		<td><a href="scratch-breakout/Knight.sprite2">Figur downloaden</a></td>
+	</tr>
+</table>
+
 ## Die Figuren
 
 Wir brauchen insgesamt sechs Figuren: Background, Border, Dragon, Fireball, Tiles und Knight:
