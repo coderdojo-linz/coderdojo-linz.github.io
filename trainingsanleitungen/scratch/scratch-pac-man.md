@@ -24,6 +24,31 @@ Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMa
 
 ![Figuren](scratch-pac-man/figuren.png)
 
+## Downloads
+
+<table class="table sushi-overview">
+	<tr class="subtitle">
+		<td>Figur</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Stage</td>
+		<td><a href="scratch-breakout/Stage.png">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>PacMan</td>
+		<td><a href="scratch-breakout/PacMan.sprite2">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>Ghost</td>
+		<td><a href="scratch-breakout/Ghost.sprite2">Figur downloaden</a></td>
+	</tr>
+	<tr>
+		<td>Pill</td>
+		<td><a href="scratch-breakout/Pill.sprite2">Figur downloaden</a></td>
+	</tr>
+</table>
+
 ## Die Bühne „Stage“
 
 In das Bühnenbild lädst du bitte die Grafik „Stage.png“ und den Klang „PacMan.mp3“. Auf der Bühne wollen wir auch die globalen Variablen definieren, und eine Liste namens „GridDef“:

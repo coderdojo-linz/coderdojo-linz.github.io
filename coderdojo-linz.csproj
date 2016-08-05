@@ -255,6 +255,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pill-1.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pill-2.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-pac-man\skripte-pill-3.png" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\Stage.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\ball-bewegen.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\buehne-und-figuren.png" />
     <Content Include="trainingsanleitungen\scratch\scratch-paddle-game\buehnenbild-auswaehlen.png" />
@@ -518,6 +519,15 @@
     <Content Include="trainingsanleitungen\scratch\scratch-breakout\Ball.sprite2" />
     <Content Include="trainingsanleitungen\scratch\scratch-breakout\Block.sprite2" />
     <Content Include="trainingsanleitungen\scratch\scratch-breakout\Schlaeger.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\Ghost.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\PacMan.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-pac-man\Pill.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\Background.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\Border.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\Dragon.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\Fireball.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\Knight.sprite2" />
+    <Content Include="trainingsanleitungen\scratch\scratch-dragons-realm\Tiles.sprite2" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />
