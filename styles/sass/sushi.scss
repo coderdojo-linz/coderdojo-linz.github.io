@@ -104,6 +104,37 @@
 		}
 	}
 
+	.row.sushi-scripts {
+		.sushi-numbering {
+			display: inline-block;
+			float: left;
+			color: #fff;
+			background-color: #0288d1;
+			border-radius: 50%;
+			font-size: 20px;
+			font-weight: bold;
+			width: 40px;
+			line-height: 40px;
+			text-align: center;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+		img {
+			width: 100%;
+			padding-top: 0;
+		}
+
+		p {
+			clear: none;
+		}
+
+		hr {
+			margin-top: 0;
+			background-color: #ddd;
+		}
+	}
+
 	.center {
 		text-align: center;
 	}

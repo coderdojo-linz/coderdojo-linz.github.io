@@ -1,7 +1,7 @@
 body {
   background-color: #ffffff;
   padding-top: 61px;
-  font-size: 15px; }
+  font-size: 16px; }
 
 h1, h2, h3, h4 {
   color: #039be5; }
@@ -11,20 +11,20 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 40px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
 h2 {
   margin-top: 40px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
 h3 {
   margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
 h4 {
   font-size: 16px;
   margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
 p, table, img {
   margin: 0 0 20px; }
@@ -212,6 +212,27 @@ body.sushi {
       padding-left: 20px;
       padding-bottom: 20px;
       float: right; }
+  body.sushi .row.sushi-scripts .sushi-numbering {
+    display: inline-block;
+    float: left;
+    color: #fff;
+    background-color: #0288d1;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+  body.sushi .row.sushi-scripts img {
+    width: 100%;
+    padding-top: 0; }
+  body.sushi .row.sushi-scripts p {
+    clear: none; }
+  body.sushi .row.sushi-scripts hr {
+    margin-top: 0;
+    background-color: #ddd; }
   body.sushi .center {
     text-align: center; }
   body.sushi div.plainOrderedList li {
