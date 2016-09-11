@@ -30,7 +30,7 @@ bannerimage: /images/coderdojo-banner-3.jpg
     </tr>
     <tr>
         <td>Freitag, 21. Oktober 2016 16:00 - 18:00</td>
-        <td><div class="warning"><a href="https://www.wko.at/Content.Node/service/ooe/Service_Reiter_Startseite_Oberoesterreich.html" target="_blank">WKO OÖ</a>, Hessenplatz 3, 4020 Linz</div></td>
+        <td><div class="warning"><a href="https://www.wko.at/Content.Node/service/ooe/Service_Reiter_Startseite_Oberoesterreich..html" target="_blank">WKO OÖ</a>, Hessenplatz 3, 4020 Linz</div></td>
         <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026379602" target="_blank">zur Anmeldung</a></td>
     </tr>
     <tr>
