@@ -19,11 +19,6 @@ bannerimage: /images/coderdojo-banner-3.jpg
         <td colspan="3">Schuljahr 2016 / 2017</td>
     </tr>
     <tr>
-        <td>Freitag, 23. September 2016 16:00 - 18:00</td>
-        <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-        <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026377596" target="_blank">zur Anmeldung</a></td>
-    </tr>
-    <tr>
         <td>Freitag, 07. Oktober 2016 16:00 - 18:00</td>
         <td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
         <td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026378599" target="_blank">zur Anmeldung</a></td>
