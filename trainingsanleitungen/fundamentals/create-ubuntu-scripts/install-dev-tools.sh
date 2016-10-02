@@ -8,3 +8,9 @@ sudo make
 sudo make install
 sudo cp nasm.1 /usr/local/man/man1
 sudo cp ndisasm.1 /usr/local/man/man1
+
+# Configure vim (syntax highlighting for .asm files)
+mkdir -p ~/.vim/syntax
+curl https://raw.githubusercontent.com/Shirk/vim-gas/master/syntax/gas.vim -o ~/.vim/syntax/gas.vim
+mkdir -p ~/.vim/ftdetect
+echo "au BufRead,BufNewFile *.asm set syntax=gas" > mine.vim
