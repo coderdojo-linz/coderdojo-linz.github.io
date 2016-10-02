@@ -93,8 +93,6 @@ Als erstes möchten wir das typische Kennenlernprogramm schreiben, das man in je
 
 1. Gib das [Beispiel-Assemblerprogramm](assembler-hello-world/hello-world/hello.asm) ein.
 
-<script src="http://gist-it.appspot.com/https://raw.githubusercontent.com/coderdojo-linz/coderdojo-linz.github.io/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-world/hello.asm"></script>
-
 1. Kompiliere das Programm mit `nasm -f elf hello.asm`. Als Ergebnis bekommst du eine Datei `hello.o`.
 
 1. Linke das Programm mit `gcc -m32 -o hello hello.o`. Als Ergebnis bekommst du die ausführbare Datei `hello`. Faszinierend, wie klein die Datei ist, oder?
