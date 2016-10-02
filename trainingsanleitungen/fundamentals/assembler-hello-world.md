@@ -56,22 +56,11 @@ Wenn du deinen *Ubuntu* Linux Server installiert hast, musst du die für die Üb
 * [GDB - The GNU Project Debugger](https://www.gnu.org/software/gdb/)
   * GDB wird unter Ubuntu Linux im Paket `gdb` installiert. Start daher `sudo apt-get install gdb`
   * [Dokumentation](http://www.delorie.com/gnu/docs/gdb/gdb_toc.html)
+* Optional kann man [Syntax Highlighting](https://de.wikipedia.org/wiki/Syntaxhervorhebung) für
+  Assemblercode in *vim*, dem Editor, den wir verwenden werden, installieren.
+  * [vim-gas](https://github.com/Shirk/vim-gas)
 
-Hier das gesamte Installationsscript:
-
-```
-sudo apt-get update
-sudo apt-get install -qqy build-essential gdb
-curl --output nasm-2.12.02.tar.gz http://www.nasm.us/pub/nasm/releasebuilds/2.12.02/nasm-2.12.02.tar.gz
-sudo tar -xzf nasm-2.12.02.tar.gz --directory /usr/local/src
-cd /usr/local/src/nasm-2.12.02/
-sudo ./configure
-sudo make
-sudo make install
-sudo cp nasm.1 /usr/local/man/man1
-sudo cp ndisasm.1 /usr/local/man/man1
-cd ~
-```
+Das gesamte Installationsscript findest du in [install-dev-tools.sh](create-ubuntu-scripts/install-dev-tools.sh).
 
 *Ein Hinweis für das Mentorenteam:* Im Ordner [create-ubuntu-scripts](create-ubuntu-scripts) findet ihr ein *ARM-Template* mit zugehörigem PowerShell-Script zum automatischen Anlegen von vorkonfigurierten VMs in Azure.
 
@@ -102,30 +91,9 @@ Als erstes möchten wir das typische Kennenlernprogramm schreiben, das man in je
 
 1. Erstelle mit *vim* die Datei `hello.asm`, indem du das Kommando `vim hello.asm` eingibst.
 
-1. Gib das folgende Assemblerprogramm ein:
+1. Gib das [Beispiel-Assemblerprogramm](assembler-hello-world/hello-world/hello.asm) ein.
 
-```
-        SECTION .data       ; Hier speichern wir Daten
-msg:    db "Hello World",10 ; Diesen Text wollen wir ausgeben
-                            ; Die 10 am Ende bedeutet "naechste Zeile"
-len:    equ $-msg           ; Wir berechnen die Laenge des Text, indem
-                            ; wir die Speicheradresse von msg von der
-                            ; aktuelle Speicheradresse ("$") subtrahieren
-
-        SECTION .text       ; Hier kommt der Code
-        global main         ; Das Programm startet bei "main"
-main:
-        mov edx,len         ; In edx tragen wir die Laenge ein
-        mov ecx,msg         ; In ecx die Adresse des Textes
-        mov ebx,1           ; 1 steht fuer "stdout" = Bildschirm
-        mov eax,4           ; 4 steht fuer "Ausgabe"
-        int 0x80            ; Mit Interrupt 80 hex rufen wir den 
-                            ; Linux Kernel auf
-
-        mov ebx,0           ; 0 steht fuer "normal beendet"
-        mov eax,1           ; 1 steht fuer "programm beenden" 
-        int 0x80
-```
+<script src="http://gist-it.appspot.com/https://raw.githubusercontent.com/coderdojo-linz/coderdojo-linz.github.io/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-world/hello.asm"></script>
 
 1. Kompiliere das Programm mit `nasm -f elf hello.asm`. Als Ergebnis bekommst du eine Datei `hello.o`.
 
@@ -135,6 +103,7 @@ main:
 
 Hier in paar wichtige Links, die dir helfen, das Programm besser zu verstehen:
 
+* [ASCII-Tabelle](http://www.asciitable.com/)
 * [Seite mit Links zu Lernmaterial](http://asm.sourceforge.net/)
 * [Linux System Calls](http://www.lxhp.in-berlin.de/lhpsyscal.html)
 * [Linux File Descriptors](https://en.wikipedia.org/wiki/File_descriptor)
