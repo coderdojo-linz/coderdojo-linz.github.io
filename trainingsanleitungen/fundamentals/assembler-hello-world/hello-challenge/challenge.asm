@@ -12,7 +12,7 @@ part1:
         int 0x80
 
 part2:
-        mov edx,eax
+        mov edx, eax
         mov eax, 4
         mov ebx, 1
         int 0x80
