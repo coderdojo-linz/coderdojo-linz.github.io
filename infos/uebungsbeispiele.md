@@ -74,6 +74,10 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 
 1. [Erste Schritte mit Unity](/trainingsanleitungen/unity/erste-schritte-mit-unity.html)
 
+## Assembler
+
+1. [Assembler Hello World - Lerne, wie ein Computer auf unterster Ebene funktioniert](/trainingsanleitungen/fundamentals/assembler-hello-world.html)
+
 ## Änderungen und Ergänzungen
 
 Möchtet ihr an den Beispielen etwas ändern? Habt ihr einen Fehler entdeckt? Möchtet ihr eigene Beispiele hinzufügen? Diese Webseite steht vollständig im Quelltext auf Github unter [https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen){:target="_blank"} zur Verfügung. Unsere regelmäßigen Mentoren können jederzeit Schreibzugriff haben. Alle anderen bitten wir bei Änderungswünschen um [Pull-Requests](https://help.github.com/articles/using-pull-requests/){:target="_blank"}.

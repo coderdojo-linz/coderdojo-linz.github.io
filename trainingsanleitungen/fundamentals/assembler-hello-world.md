@@ -62,12 +62,12 @@ Wenn du deinen *Ubuntu* Linux Server installiert hast, musst du die für die Üb
   Assemblercode in *vim*, dem Editor, den wir verwenden werden, installieren.
   * [vim-gas](https://github.com/Shirk/vim-gas)
 
-Das gesamte Installationsscript findest du in [install-dev-tools.sh](create-ubuntu-scripts/install-dev-tools.sh).
+Das gesamte Installationsscript findest du in [install-dev-tools.sh](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/create-ubuntu-scripts/install-dev-tools.sh).
 
 *Hinweise für das Mentorenteam bzw. Coder mit umfangreichem Basiswissen:*
 
-* Im Ordner [create-ubuntu-scripts](create-ubuntu-scripts) findet ihr ein *ARM-Template* mit zugehörigem PowerShell-Script zum automatischen Anlegen von vorkonfigurierten VMs in Azure.
-* Es gibt auch ein [Dockerfile](Dockerfile), mit dem ihr ein Docker image erstellen könnt, das die oben genannten Tools enthält (`docker build -t nasm .`). Dazu noch ein Hinweis: Wenn ihr die Übung von unten in einem Docker Container durchführen wollt, braucht ihr folgendes *run* Statement: `docker run -it --rm --security-opt seccomp=unconfined nasm /bin/bash`. Beachtet die Option `--security-opt seccomp=unconfined`. Sie ist nur für `gdb` notwendig.
+* Im Ordner [create-ubuntu-scripts](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/fundamentals/create-ubuntu-scripts) findet ihr ein *ARM-Template* mit zugehörigem PowerShell-Script zum automatischen Anlegen von vorkonfigurierten VMs in Azure.
+* Es gibt auch ein [Dockerfile](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/Dockerfile), mit dem ihr ein Docker image erstellen könnt, das die oben genannten Tools enthält (`docker build -t nasm .`). Dazu noch ein Hinweis: Wenn ihr die Übung von unten in einem Docker Container durchführen wollt, braucht ihr folgendes *run* Statement: `docker run -it --rm --security-opt seccomp=unconfined nasm /bin/bash`. Beachtet die Option `--security-opt seccomp=unconfined`. Sie ist nur für `gdb` notwendig.
 
 
 ## Zum Unbuntu Linux Server verbinden
@@ -96,7 +96,7 @@ Als erstes möchten wir das typische Kennenlernprogramm schreiben, das man in je
 
 1. Erstelle mit *vim* die Datei `hello.asm`, indem du das Kommando `vim hello.asm` eingibst.
 
-1. Gib das [Beispiel-Assemblerprogramm](assembler-hello-world/hello-world/hello.asm) in die Datei `hello.asm` ein.
+1. Gib das [Beispiel-Assemblerprogramm](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-world/hello.asm) in die Datei `hello.asm` ein.
 
 1. [Kompiliere](https://de.wikipedia.org/wiki/Compiler) das Programm mit `nasm -f elf hello.asm`. Als Ergebnis bekommst du eine Datei `hello.o`.
 
@@ -117,9 +117,9 @@ Während des CoderDojos kannst du das Programm mit dem Mentorenteam diskutieren.
 
 ## Challenge: Was macht dieses Programm?
 
-1. Im [diesem Programm](assembler-hello-world/hello-challenge/challenge.asm) sind bewusst keine Kommentare enthalten. Versuche herauszufinden was es macht indem du den Code untersuchst.
+1. Im [diesem Programm](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm) sind bewusst keine Kommentare enthalten. Versuche herauszufinden was es macht indem du den Code untersuchst.
 
-1. Gib [diesen Code](assembler-hello-world/hello-challenge/challenge.asm) in die Datei `challenge.asm` ein, kompiliere und linke es wie im vorigen Beispiel gezeigt.
+1. Gib [diesen Code](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm) in die Datei `challenge.asm` ein, kompiliere und linke es wie im vorigen Beispiel gezeigt.
 
 1. Führe dein Programm mit `./challenge` aus. Macht es was du vermutet hast?
 
@@ -169,7 +169,7 @@ Unsere Aufgabe ist es, ein Programm zu schreiben, bei dem ...
 
 1. Überlege dir, wie der Algorithmus aussehen könnte. Diskutiert das am besten mit eurem Mentorenteam beim CoderDojo bevor ihr die Musterlösung im nächsten Schritt anseht.
 
-1. Wir haben dir eine [Musterlösung](assembler-hello-world/reverse-string/reverse.asm) zusammengestellt. Gib sie ein. Du musst nicht von vorne beginnen. Wenn du das Beispiel *challenge.asm* von oben noch hast ([download](assembler-hello-world/hello-challenge/challenge.asm)), brauchst du dieses nur erweitern. Anfang (Texteingabe) und Ende (Textausgabe) sind bei beiden Beispielen gleich.
+1. Wir haben dir eine [Musterlösung](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/reverse-string/reverse.asm) zusammengestellt. Gib sie ein. Du musst nicht von vorne beginnen. Wenn du das Beispiel *challenge.asm* von oben noch hast ([download](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm)), brauchst du dieses nur erweitern. Anfang (Texteingabe) und Ende (Textausgabe) sind bei beiden Beispielen gleich.
 
 1. Kompiliere (`nasm -f elf -F dwarf -g reverse.asm`) und linke (`gcc -m32 -g -o reverse reverse.o`) das Programm. Falls Fehler erscheinen, frag deinen CoderDojo-Mentor oder deine Mentorin um Hilfe.
 
