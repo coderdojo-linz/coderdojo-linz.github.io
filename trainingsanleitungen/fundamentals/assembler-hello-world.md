@@ -29,7 +29,7 @@ Im CoderDojo wird dir ein Mentor einen Zugang zu einer fertigen Linux-Maschine g
 
 ### Eigene Entwicklungsumgebung
 
-**Wenn du von einem Mentor die Zugangsdaten zu einer fertigen Entwicklungsumgebung bekommen hast, kannst du dieses Kapitel überspringen.***
+**Wenn du von einem Mentor die Zugangsdaten zu einer fertigen Entwicklungsumgebung bekommen hast, kannst du dieses Kapitel überspringen.**
 
 Möchtest du die Entwicklungsumgebung auf deinem Computer haben? Das ist natürlich möglich. Die gesamte, verwendete Software ist Open Source und kostenlos.
 
@@ -128,7 +128,7 @@ Während des CoderDojos kannst du das Programm mit dem Mentorenteam diskutieren.
 
 Ein Debugger ist ein Tool, mit dem du Fehler in einem Programm suchen kannst. Er erlaubt dir, das Programm an jeder beliebigen Stelle anzuhalten und Variablen, Register, etc. anzusehen. Probieren wir den Debugger mit unserem Programm *challenge* aus. 
 
-1. Kompiliere das Programm aus der vorigen Challenge mit `nasm -f elf -F dwarf -g challenge.asm`. Als Ergebnis bekommst du eine Datei `challenge.o`. Achte auf die neue Optionen `-F dwarf -g`. Dadurch fügst du der Zieldatei Daten zum leichteren Debuggen (=Fehlersuchen) hinzu. Näheres zum DWARF format findest du auf [Wikipedia](https://en.wikipedia.org/wiki/DWARF). 
+1. Kompiliere das Programm aus der vorigen Challenge mit `nasm -f elf -F dwarf -g challenge.asm`. Als Ergebnis bekommst du eine Datei `challenge.o`. Achte auf die neue Optionen `-F dwarf -g`. Dadurch fügst du der Zieldatei Daten zum leichteren Debuggen (=Fehlersuchen) hinzu. Näheres zum DWARF Format findest du auf [Wikipedia](https://en.wikipedia.org/wiki/DWARF). 
 
 1. Linke das Programm mit `gcc -m32 -g -o challenge challenge.o`. Als Ergebnis bekommst du die ausführbare Datei `challenge`. Achte auf die neue Option `-g`. Sie sorgt dafür, dass die Debug-Informationen in der ausführbaren Datei erhalten bleiben.
 
