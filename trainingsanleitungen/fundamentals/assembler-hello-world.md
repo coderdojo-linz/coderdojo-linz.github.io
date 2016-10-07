@@ -98,6 +98,33 @@ Als erstes möchten wir das typische Kennenlernprogramm schreiben, das man in je
 
 1. Gib das [Beispiel-Assemblerprogramm](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-world/hello.asm) in die Datei `hello.asm` ein.
 
+```
+        SECTION .data       ; DATEN
+msg:    db "Hello World",10 ; Diesen Text wollen wir ausgeben
+                            ; Die 10 am Ende bedeutet "naechste Zeile".
+                            ; Es handelt sich um einen ASCII-Code (Details
+                            ; siehe http://www.asciitable.com/)
+len:    equ $-msg           ; Wir berechnen die Laenge des Text, indem
+                            ; wir die Speicheradresse von msg von der
+                            ; aktuelle Speicheradresse ("$") subtrahieren
+
+        SECTION .text       ; PROGRAMMCODE
+        global main         ; Das Programm startet bei "main"
+main:
+        mov edx, len        ; In edx tragen wir die Laenge ein.
+                            ; edx ist ein sogenanntes "Register" (Details siehe
+                            ; https://de.wikipedia.org/wiki/Register_(Computer))
+        mov ecx, msg        ; In ecx die Adresse des Textes
+        mov ebx, 1          ; 1 steht fuer "stdout" = Bildschirm
+        mov eax, 4          ; 4 steht fuer "Ausgabe"
+        int 0x80            ; Mit Interrupt 80 hex rufen wir den 
+                            ; Linux Kernel auf
+
+        mov ebx, 0          ; 0 steht fuer "normal beendet"
+        mov eax, 1          ; 1 steht fuer "programm beenden"
+        int 0x80
+```
+
 1. [Kompiliere](https://de.wikipedia.org/wiki/Compiler) das Programm mit `nasm -f elf hello.asm`. Als Ergebnis bekommst du eine Datei `hello.o`.
 
 1. [Linke](https://de.wikipedia.org/wiki/Linker_(Computerprogramm)) das Programm mit `gcc -m32 -o hello hello.o`. Als Ergebnis bekommst du die ausführbare Datei `hello`. Faszinierend, wie klein die Datei ist, oder?
@@ -118,6 +145,31 @@ Während des CoderDojos kannst du das Programm mit dem Mentorenteam diskutieren.
 ## Challenge: Was macht dieses Programm?
 
 1. Im [diesem Programm](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm) sind bewusst keine Kommentare enthalten. Versuche herauszufinden was es macht indem du den Code untersuchst.
+
+```
+        SECTION .bss
+buffer: resb 64
+
+        SECTION .text
+        global main
+main:
+part1:
+        mov edx, 64
+        mov ecx, buffer
+        mov eax, 3
+        mov ebx, 0
+        int 0x80
+
+part2:
+        mov edx, eax
+        mov eax, 4
+        mov ebx, 1
+        int 0x80
+
+quit:
+        mov eax, 1
+        int 0x80
+```
 
 1. Gib [diesen Code](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm) in die Datei `challenge.asm` ein, kompiliere und linke es wie im vorigen Beispiel gezeigt.
 
