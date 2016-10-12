@@ -116,8 +116,8 @@ Falls kein Laptop zur Verfügung steht, nehmen Sie bitte mit uns [Kontakt](http:
 
 ## Ort
 
-Das CoderDojo findet im Sommersemester 2016 im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt.
-Die einzige Ausnahme davon ist der 20. Mai. Hier freuen wir uns sehr, dass uns die Firma <a href="http://www.dynatrace.com/de/" target="_blank">Dynatrace</a> zu sich eingeladen hat.
+Das CoderDojo findet üblicherweise im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt.
+Ausnahmen davon sind der 21. Oktober - hier sind wir bei der <a href="https://www.wko.at/Content.Node/service/ooe/Service_Reiter_Startseite_Oberoesterreich..html" target="_blank">WKO Oberösterreich</a> zu Gast - und der 16. Dezember - hier freuen wir uns sehr, dass uns die Firma <a href="http://www.dynatrace.com/de/" target="_blank">Dynatrace</a> für ein Weihnachts-Dojo eingeladen hat.
 
 Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp){:target="_blank"}.
 
