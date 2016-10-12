@@ -151,6 +151,12 @@ a, a:hover, a:focus {
     font-weight: bold;
     text-decoration: underline; }
 
+.info {
+  color: #e53935; }
+  .info a {
+    color: #e53935;
+    text-decoration: underline; }
+
 body.sushi {
   /*.row {
 		img {

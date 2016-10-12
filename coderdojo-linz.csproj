@@ -33,6 +33,8 @@
     <Content Include="images\binary.jpg" />
     <Content Include="images\coderdojo-banner-1.jpg" />
     <Content Include="images\coderdojo-banner-3.jpg" />
+    <Content Include="images\programmierfabrik-hagenberg.jpg" />
+    <Content Include="images\programmierfabrik-hagenberg.png" />
     <Content Include="images\programming.jpg" />
     <Content Include="mentoren\images\albrecht-woess.jpg" />
     <Content Include="mentoren\images\andrea-emmersberger.jpg" />
