@@ -69,6 +69,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 ## C# (C Sharp)
 
 1. [AntMe! Wie schlau ist deine Ameise?](/trainingsanleitungen/csharp/ant-me.html)
+1. [Türme von Hanoi](/trainingsanleitungen/csharp/towers-of-hanoi.html)
 
 ## Unity (Spieleentwicklungsplattform)
 
