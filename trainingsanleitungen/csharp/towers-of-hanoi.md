@@ -35,9 +35,9 @@ Schiebe 1 von L nach M
 Bei *zwei Spielsteinen* brauchen wir drei Schritte:
 
 ```
-Schiebe 1 von L nach R*
-Schiebe 2 von L nach M*
-Schiebe 1 von R nach M*
+Schiebe 1 von L nach R
+Schiebe 2 von L nach M
+Schiebe 1 von R nach M
 ```
 
 Für *drei Spielsteine* brauchst du schon sieben Schritte:
