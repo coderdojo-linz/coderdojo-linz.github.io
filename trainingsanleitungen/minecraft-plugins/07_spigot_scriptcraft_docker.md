@@ -101,3 +101,4 @@ Jetzt kann man sich zum Server in Minecraft verbinden:
 * [Scriptcraft Homepage](http://scriptcraftjs.org/)
 * [Scriptcraft Guide](https://github.com/walterhiggins/ScriptCraft/blob/master/docs/YoungPersonsGuideToProgrammingMinecraft.md)
 * [Beispiele aus dem Scriptcraft Buch](https://github.com/walterhiggins/Writing-Minecraft-Plugins)
+* [Scriptcraft Source auf GitHub](https://github.com/walterhiggins/ScriptCraft)
