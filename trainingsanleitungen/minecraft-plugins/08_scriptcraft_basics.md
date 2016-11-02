@@ -49,30 +49,30 @@ Ein Tipp am Ende: Wenn du zu einer neuen, leeren Welt zurückkehren möchtest, s
 
 1. Erstelle im *plugins*-Verzeichns eine Datei *hochhaus.js* mit folgendem Inhalt (falls du nicht weißt wo das *plugins*-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):
 
-   ```
-   var utils = require('utils');
+    ```
+    var utils = require('utils');
 
-   exports.hochhaus = function (stockwerke) {
-    // Erstelle eine Drohne an der Position deines Spielers
-    var d = new Drone(utils.getPlayerPos(self));
+    exports.hochhaus = function (stockwerke) {
+      // Erstelle eine Drohne an der Position deines Spielers
+      var d = new Drone(utils.getPlayerPos(self));
 
-    // Bewege dich eine Ebene nach oben und baue ein Rechteck aus Stein 
-    d.fwd(5)
-        .box0(blocks.cobblestone, 25, 1, 25);
-    
-    // Baue die Stockwerke mit Hilfe einer JavaScript-Schleife
-    for (var i = 0; i < stockwerke; i++) {
-        // Baue zwei Ebenen aus Glas und oben drauf einen 
-        // "Deckel" aus Stein.
-        d.up()
-            .box0(blocks.glass, 25, 1, 25)
-            .up()
-            .box0(blocks.glass, 25, 1, 25)
-            .up()
-            .box(blocks.cobblestone, 25, 1, 25);
+      // Bewege dich eine Ebene nach oben und baue ein Rechteck aus Stein 
+      d.fwd(5)
+          .box0(blocks.cobblestone, 25, 1, 25);
+      
+      // Baue die Stockwerke mit Hilfe einer JavaScript-Schleife
+      for (var i = 0; i < stockwerke; i++) {
+          // Baue zwei Ebenen aus Glas und oben drauf einen 
+          // "Deckel" aus Stein.
+          d.up()
+              .box0(blocks.glass, 25, 1, 25)
+              .up()
+              .box0(blocks.glass, 25, 1, 25)
+              .up()
+              .box(blocks.cobblestone, 25, 1, 25);
+      };
     };
-   };
-   ```
+    ```
 
 1. Starte den Minecraft-Server neu.
 
