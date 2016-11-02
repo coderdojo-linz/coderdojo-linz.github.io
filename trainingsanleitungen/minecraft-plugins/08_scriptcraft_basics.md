@@ -48,6 +48,7 @@ Ein Tipp am Ende: Wenn du zu einer neuen, leeren Welt zurückkehren möchtest, s
 ## Entwickeln von Scripts
 
 1. Erstelle im *plugins*-Verzeichns eine Datei *hochhaus.js* mit folgendem Inhalt (falls du nicht weißt wo das *plugins*-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):
+
    ```
    var utils = require('utils');
 
