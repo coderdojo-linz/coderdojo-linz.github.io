@@ -6,7 +6,7 @@ description: In dieser Anleitung lernst du, wie du einen Minecraft Server für S
 
 # Minecraft Server für ScriptCraft
 
-**Wichtiger Hinweis**: Diese Anleitung ist für erfahrene Coder, Mentorinnen und Mentoren. Wenn du im generellen Umgang mit Linux-Servern, Docker, JRE etc. noch unerfahren bist, bitte eine Mentorin aus dem CoderDojo, den Minecraft-Server für dich herzurichten. Später kannst du dich selbst am Installieren eines MineCraft-Servers wie hier beschrieben heran wagen.
+**Wichtiger Hinweis: Diese Anleitung ist für erfahrene Coder, Mentorinnen und Mentoren.** Wenn du im generellen Umgang mit Linux-Servern, Docker, JRE etc. noch unerfahren bist, bitte eine Mentorin aus dem CoderDojo, den Minecraft-Server für dich herzurichten. Später kannst du dich selbst am Installieren eines MineCraft-Servers wie hier beschrieben heran wagen.
 
 
 ## Einleitung
