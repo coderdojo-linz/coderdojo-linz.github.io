@@ -16,11 +16,11 @@ Du brauchst für diese Übungen einen Minecraft Server mit Scriptcraft. **Wenn d
 
 Zum Programmieren von JavaScript brauchst du einen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Hier einige Links zu kostenlosen Editoren, mit denen du JavaScript gut schreiben kannst. Falls du nicht sicher bist, welchen du nehmen sollst, nimm gleich den ersten. Im Lauf der Zeit kannst du mit verschiedenen experimentieren und dich für den entscheiden, der dir am besten gefällt.
 
-    * [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"} (Windows, MacOS, Linux)
-    * [Notepad++](https://notepad-plus-plus.org/download/v6.8.2.html){:target="_blank"} (Windows)
-    * [Sublime Text](http://www.sublimetext.com/2){:target="_blank"} (Windows, MacOS, Linux)
-    * [Brackets](http://brackets.io/){:target="_blank"} (Windows, MacOS, Linux)
-    * [Atom](https://atom.io/){:target="_blank"} (Windows, MacOS, Linux)
+* [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"} (Windows, MacOS, Linux)
+* [Notepad++](https://notepad-plus-plus.org/download/v6.8.2.html){:target="_blank"} (Windows)
+* [Sublime Text](http://www.sublimetext.com/2){:target="_blank"} (Windows, MacOS, Linux)
+* [Brackets](http://brackets.io/){:target="_blank"} (Windows, MacOS, Linux)
+* [Atom](https://atom.io/){:target="_blank"} (Windows, MacOS, Linux)
 
 Um diese Übung ausprobieren zu können, brauchst du das Spiel Minecraft auf deinem Computer.
 
