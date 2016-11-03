@@ -59,6 +59,8 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Plugin 2: Teil 2 - Miraculix (argument handling)](/trainingsanleitungen/minecraft-plugins/04_getafix-Arguments.html)
 1. [Plugin 3: Begrüßen und Verabschieden (listener)](/trainingsanleitungen/minecraft-plugins/05_welcome-Listener.html)
 1. [Plugin 2: Teil 3 - Miraculix (event handling)](/trainingsanleitungen/minecraft-plugins/06_getafix-MagicPotion.html)
+1. [Scriptcraft - Minecraft-Server installieren](/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker.html)
+1. [Programmieren mit Scriptcraft - Grundlagen](/trainingsanleitungen/minecraft-plugins/08_scriptcraft_basics.html)
 
 ## Python
 
