@@ -58,32 +58,32 @@ Ein Tipp am Ende: Wenn du zu einer neuen, leeren Welt zurückkehren möchtest, s
 
 ## Entwickeln von Scripts
 
-1. Erstelle mit deinem Editor im *plugins*-Verzeichns eine Datei *hochhaus.js* mit folgendem Inhalt (falls du nicht weißt wo das *plugins*-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):
+Erstelle mit deinem Editor im *plugins*-Verzeichns eine Datei *hochhaus.js* mit folgendem Inhalt (falls du nicht weißt wo das *plugins*-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):
 
-    ```
-    var utils = require('utils');
+```
+var utils = require('utils');
 
-    exports.hochhaus = function (stockwerke) {
-      // Erstelle eine Drohne an der Position deines Spielers
-      var d = new Drone(utils.getPlayerPos(self));
+exports.hochhaus = function (stockwerke) {
+    // Erstelle eine Drohne an der Position deines Spielers
+    var d = new Drone(utils.getPlayerPos(self));
 
-      // Bewege dich eine Ebene nach oben und baue ein Rechteck aus Stein 
-      d.fwd(5)
-          .box0(blocks.cobblestone, 25, 1, 25);
-      
-      // Baue die Stockwerke mit Hilfe einer JavaScript-Schleife
-      for (var i = 0; i < stockwerke; i++) {
-          // Baue zwei Ebenen aus Glas und oben drauf einen 
-          // "Deckel" aus Stein.
-          d.up()
-              .box0(blocks.glass, 25, 1, 25)
-              .up()
-              .box0(blocks.glass, 25, 1, 25)
-              .up()
-              .box(blocks.cobblestone, 25, 1, 25);
-      };
+    // Bewege dich eine Ebene nach oben und baue ein Rechteck aus Stein 
+    d.fwd(5)
+        .box0(blocks.cobblestone, 25, 1, 25);
+    
+    // Baue die Stockwerke mit Hilfe einer JavaScript-Schleife
+    for (var i = 0; i < stockwerke; i++) {
+        // Baue zwei Ebenen aus Glas und oben drauf einen 
+        // "Deckel" aus Stein.
+        d.up()
+            .box0(blocks.glass, 25, 1, 25)
+            .up()
+            .box0(blocks.glass, 25, 1, 25)
+            .up()
+            .box(blocks.cobblestone, 25, 1, 25);
     };
-    ```
+};
+```
 
 1. Starte den Minecraft-Server neu.
 
@@ -103,13 +103,13 @@ Ein Tipp am Ende: Wenn du zu einer neuen, leeren Welt zurückkehren möchtest, s
 
 In Mods musst do häufig auf Ereignisse reagieren (z.B. neuer Spieler meldet sich an, Block wird zerstört etc.).
 
-1. Erstelle mit deinem Editor im *plugins*-Verzeichns eine Datei *welcome.js* mit folgendem Inhalt (falls du nicht weißt wo das *plugins*-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):
+Erstelle mit deinem Editor im *plugins*-Verzeichns eine Datei *welcome.js* mit folgendem Inhalt (falls du nicht weißt wo das *plugins*-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):
 
-    ```
-    events.playerJoin(function (event) {
-        echo(event.player, "CoderDojo sagt Willkommen!");
-    });
-    ```
+```
+events.playerJoin(function (event) {
+    echo(event.player, "CoderDojo sagt Willkommen!");
+});
+```
 
 1. Lade in Minecraft deine Scripts neu mit `/js refresh()`
 
@@ -126,24 +126,24 @@ Melde dich vom Minecraft Server ab.
 
 Jetzt möchten wir darauf reagieren, wenn ein Pfeil ein Objekt trifft.
 
-1. Erstelle mit deinem Editor im *plugins*-Verzeichns eine Datei *arrowHit.js* mit folgendem Inhalt (falls du nicht weißt wo das *plugins*-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):
+Erstelle mit deinem Editor im *plugins*-Verzeichns eine Datei *arrowHit.js* mit folgendem Inhalt (falls du nicht weißt wo das *plugins*-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):
 
-    ```
-    var fireworks = require('fireworks');
+```
+var fireworks = require('fireworks');
 
-    events.projectileHit(function (event) {
-        var fireworkCount = 5;
-        function launch() {
-            fireworks.firework(event.entity.location);
-            if (--fireworkCount) {
-                setTimeout(launch, 2000);
-            }
+events.projectileHit(function (event) {
+    var fireworkCount = 5;
+    function launch() {
+        fireworks.firework(event.entity.location);
+        if (--fireworkCount) {
+            setTimeout(launch, 2000);
         }
-        launch();
+    }
+    launch();
 
-        event.entity.world.createExplosion(event.entity.location, 1.5);
-    });
-    ```
+    event.entity.world.createExplosion(event.entity.location, 1.5);
+});
+```
 
 1. Lade in Minecraft deine Scripts neu mit `/js refresh()`
 
