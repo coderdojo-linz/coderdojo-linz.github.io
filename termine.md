@@ -19,18 +19,6 @@ bannerimage: /images/coderdojo-banner-3.jpg
 			<td colspan="3">Schuljahr 2016 / 2017</td>
 		</tr>
 		<tr>
-			<td>Freitag, 04. November 2016 16:00 - 18:00</td>
-			<td>
-				Wissensturm, Kärtnerstraße 26, 4020 Linz
-				<div class="info" style="padding-top: 20px; padding-bottom: 5px;">Dieses CoderDojo wird von der <a href="http://www.programmierfabrik.at/" target="_blank">Programmierfabrik Hagenberg</a> gesponsert.</div>
-				<div style="border: solid 1px #ddd; padding: 20px; width: 100%; border-radius: 10px; text-align: center; background-color: #eee;"><a href="http://www.programmierfabrik.at/" target="_blank"><img src="images/programmierfabrik-hagenberg.png" style="width: 100%; max-width: 400px; margin-bottom: 0;" /></a></div>
-			</td>
-			<td>
-				<a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026380605" target="_blank">zur Anmeldung</a>
-
-			</td>
-		</tr>
-		<tr>
 			<td>Freitag, 18. November 2016 16:00 - 18:00</td>
 			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
 			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026381608" target="_blank">zur Anmeldung</a></td>
