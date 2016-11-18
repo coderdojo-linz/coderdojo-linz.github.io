@@ -41,7 +41,7 @@ Auch in *Hour of Code* gibt es Scratch-Beispiele. Unter [https://hourofcode.com/
 
 ## Der nächste Schritt: Spiel programmieren mit *JavaScript*
 
-![Code Combat](https://code.org/images/tutorials/new/code_combat_gamedev.jpg)
+![Code Combat](hour-of-code/code_combat_gamedev.jpg)
 
 Du hast schon Erfahrung mit grafischer Programmierung. Scratch-Spiele sind dir nicht mehr genug? Profis verwenden Programmiersprachen wie *JavaScript* oder *Python*. Im Spiel *Code Combat* kannst du die Grundlagen dieser Sprachen erlernen und dabei dein eigenes Spiel programmieren.
 
