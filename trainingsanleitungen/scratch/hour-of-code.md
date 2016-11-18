@@ -4,14 +4,16 @@ title: Hour of Code
 description: Lerne Programmieren mit Hour of Code
 ---
 
-# Anfänger: Programmieren mit Blöcken
+# Programmieren lernen mit *Hour of Code*
+
+## Anfänger: Programmieren mit Blöcken
 
 ![Hour of Code Logo](https://code.org/images/learn/student2.png)
 
 Programmieranfänger steigen am besten ins Programmieren mit grafischen Block-Programmiersprachen. In *Hour of Code* findest du dafür eine Menge Programmierspiele für Anfänger.
 
-**Tipp:** Die *Hour of Code* Programmierspiele gibt es in vielen Sprachen. Du kannst die Sprache links unten im Browser-Fenster beim jeweiligen Spiel einstellen:<br/>
-![Sprache einstellen](hour-of-code/sprache-einstellen.png)
+1. ![Sprache einstellen](hour-of-code/sprache-einstellen.png){: .right}
+**Tipp:** Die *Hour of Code* Programmierspiele gibt es in vielen Sprachen. Du kannst die Sprache links unten im Browser-Fenster beim jeweiligen Spiel einstellen.
 
 1. ![Angry Birds](https://code.org/images/tutorials/resubmission/codeorg.jpg){: .right}
 Kennst du das Spiel *Angry Birds* von Smartphone oder Tablet? In *Hour of Code* kannst du die ersten Schritte des Programmierens mit den *Angry Birds* erlernen. Programmierspiel unter [https://studio.code.org/hoc/1](https://studio.code.org/hoc/1){:target="_blank"} starten...
@@ -26,7 +28,7 @@ Kennst du den *BB-8* aus Star Wars? In *Hour of Code* bist du für seine Program
 Wusstest du, dass es auch Minecraft-Varianten gibt, mit denen du Programmieren lernen kannst? In *Hour of Code* programmierst du die Handlungen von *Alex* oder *Steve*. Programmierspiel unter [https://studio.code.org/s/mc/reset](https://studio.code.org/s/mc/reset){:target="_blank"} starten...
 
 
-# Fortgeschrittene: Scratch
+## Fortgeschrittene: Scratch
 
 ![Bühnenbild auswählen](scratch-fang-mich/01-background.png)
 
@@ -37,7 +39,7 @@ Für das CoderDojo haben wir [eine Menge Beispiele](http://coderdojo-linz.github
 Auch in *Hour of Code* gibt es Scratch-Beispiele. Unter [https://hourofcode.com/scratchmus](https://hourofcode.com/scratchmus){:target="_blank"} kannst du zum Beispiel deine eigene Musik programmieren.
 
 
-# Der nächste Schritt: Spiel programmieren mit *JavaScript*
+## Der nächste Schritt: Spiel programmieren mit *JavaScript*
 
 ![Code Combat](https://code.org/images/tutorials/new/code_combat_gamedev.jpg)
 
