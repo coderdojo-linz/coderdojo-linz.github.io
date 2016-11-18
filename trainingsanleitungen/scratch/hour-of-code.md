@@ -8,8 +8,6 @@ description: Lerne Programmieren mit Hour of Code
 
 ## Anfänger: Programmieren mit Blöcken
 
-![Hour of Code Logo](https://code.org/images/learn/student2.png)
-
 Programmieranfänger steigen am besten ins Programmieren mit grafischen Block-Programmiersprachen. In *Hour of Code* findest du dafür eine Menge Programmierspiele für Anfänger.
 
 1. ![Sprache einstellen](hour-of-code/sprache-einstellen.png){: .right}
