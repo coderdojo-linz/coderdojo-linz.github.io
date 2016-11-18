@@ -30,8 +30,7 @@ Bei den oben erwähnten Spielen folgst du vorgegebenen Übungsaufgaben. Du möch
 
 1. Für das CoderDojo haben wir [eine Menge Beispiele](http://coderdojo-linz.github.io/infos/uebungsbeispiele.html){:target="_blank"} ausgearbeitet, mit denen du starten kannst. Hast du eigene Ideen für Änderungen oder Erweiterungen? In Scratch kannst du deinen Ideen freien Lauf lassen.
 
-1. ![Bühnenbild auswählen](https://code.org/images/fill-480x360/tutorials/new/scratch_music.jpg){: .right}
-Auch in *Hour of Code* gibt es Scratch-Beispiele. Unter [https://hourofcode.com/scratchmus](https://hourofcode.com/scratchmus){:target="_blank"} kannst du zum Beispiel deine eigene Musik programmieren.
+1. Auch in *Hour of Code* gibt es Scratch-Beispiele. Unter [https://hourofcode.com/scratchmus](https://hourofcode.com/scratchmus){:target="_blank"} kannst du zum Beispiel deine eigene Musik programmieren.
 
 
 ## Der nächste Schritt: Spiel programmieren mit *JavaScript*
