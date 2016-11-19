@@ -10,6 +10,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 
 ## Scratch
 
+1. [Grafisches Programmieren mit Programmierspielen von *Hour of Code* lernen](/trainingsanleitungen/scratch/hour-of-code.html)
 1. [Lege dein eigenes Konto an für Scratch](/trainingsanleitungen/scratch/scratch-konto-anlegen.html)
 1. [Erste Schritte - Lass Scratchy, die Katze, herumlaufen](/trainingsanleitungen/scratch/scratch-erste-schritte.html)
 1. [Erzähle eine kurze Geschichte mit Scratch](/trainingsanleitungen/scratch/scratch-geschichte-katze-und-ente.html)
