@@ -8,7 +8,7 @@ description: Es ist Weihnachten. Zeit, den Baum zu dekorieren.
 
 In diesem Spiel musst du möglichst viele, bunte Kugeln an den Weihnachtsbaum hängen. Wie viele Punkte schaffst du?
 
-<p class="center"><img alt="Weihnachtsspiel" src="scratch-weihnachten-2016/christmas-game.png" /></p>
+!["Weihnachtsspiel"](scratch-weihnachten-2016/christmas-game.png)
 
 ## Spielregeln
 
