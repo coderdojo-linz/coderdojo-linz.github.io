@@ -66,7 +66,7 @@ Jetzt starten wir mit der Programmierung der Kugel.<br/><br/>
 Die Kugel soll zerspringen wenn sie auf eine andere Kugel trifft *und* wenn sie auf den Boden fällt. Damit wir den Programmteil, der das Zerspringen steuert, nicht zwei Mal programmieren müssen, erstellen wir einen eigenen Block. Das machst du im Tab *Skripte* unter *Weitere Blöcke*. Verwende die Blöcke wie in der Abbildung gezeigt.
 
 1. ![Variablen](scratch-weihnachten-2016/variablen.png){: .right}
-Für den nächsten Programmteil brauchen wir *Variablen*. Diese legt man unter *Daten* an. Achte darauf, dass für alle Variablen beim Anlegen *Für alle Figuren* angeklickt ist. Lege die Variablen wie in der Abbildung gezeigt an.
+Für den nächsten Programmteil brauchen wir *Variablen*. Diese legt man unter *Daten* an. Achte darauf, dass für alle Variablen beim Anlegen *Für alle Figuren* angeklickt ist. Lege die Variablen wie in der Abbildung gezeigt an.<br/><br/> 
   • *Crashes* zählt, wie viele Kugeln schon kaputt gegangen sind.<br/>
   • *Game Over* soll auf Null stehen, solange das Spiel läuft. Wenn das Spiel verloren ist, setzen wir diese Variable auf Eins.<br/>
   • *Geschwindigkeit* steuert, wie schnell die Kugeln fallen.<br/>
