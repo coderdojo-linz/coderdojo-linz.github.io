@@ -19,11 +19,6 @@ bannerimage: /images/coderdojo-banner-3.jpg
 			<td colspan="3">Schuljahr 2016 / 2017</td>
 		</tr>
 		<tr>
-			<td>Freitag, 02. Dezember 2016 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026382611" target="_blank">zur Anmeldung</a></td>
-		</tr>
-		<tr>
 			<td>Freitag, 16. Dezember 2016 16:00 - 18:00</td>
 			<td><div class="warning">Weihnachts-Dojo bei <a href="http://www.dynatrace.com/de/" target="_blank">Dynatrace</a>, Freistädter Strasse 313 / 2, 4040 Linz</div></td>
 			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026383614" target="_blank">zur Anmeldung</a></td>
