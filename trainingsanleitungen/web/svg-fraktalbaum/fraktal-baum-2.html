@@ -29,19 +29,15 @@
 
 	<script type="text/javascript">
 		var svg = Snap("#baum");
-		var aenderungswinkel = 20;
-		var aenderungAstlaenge = 0.8;
-
-		function linieZeichnen(x1, y1, x2, y2) {
-			svg.line(x1, y1, x2, y2);
-		}
+		var aenderungswinkel;
+		var aenderungAstlaenge;
 
 		function astZeichnen(x1, y1, winkel, astLaenge, ebene) {
 			if (ebene < 11) {
 				var x2 = x1 + (Math.cos(winkel * Math.PI / 180) * astLaenge);
 				var y2 = y1 + (Math.sin(winkel * Math.PI / 180) * astLaenge);
 
-				linieZeichnen(x1, y1, x2, y2);
+				svg.line(x1, y1, x2, y2);
 				astZeichnen(x2, y2, winkel - aenderungswinkel, astLaenge * aenderungAstlaenge, ebene + 1);
 				astZeichnen(x2, y2, winkel + aenderungswinkel, astLaenge * aenderungAstlaenge, ebene + 1);
 			}
@@ -57,6 +53,8 @@
 			svg.clear();
 			astZeichnen(300, 500, winkel, astLaenge, ebene);
 		}
+
+		baumZeichnen();
 	</script>
 </body>
 </html>

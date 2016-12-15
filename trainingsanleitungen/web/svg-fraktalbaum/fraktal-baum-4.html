@@ -6,7 +6,6 @@
 
 	<style>
 		line {
-			stroke: black;
 		}
 	</style>
 </head>
@@ -26,6 +25,7 @@
 	</div>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js"></script>
 
 	<script type="text/javascript">
 		var svg = Snap("#baum");
@@ -33,13 +33,21 @@
 		var aenderungAstlaenge;
 		var zufallAenderungswinkel = 15;
 		var zufallAstlaenge = 10;
+		var maxEbene = 12;
+		
 
 		function astZeichnen(x1, y1, winkel, astLaenge, ebene) {
-			if (ebene < 12) {
+			if (ebene < maxEbene) {
 				var x2 = x1 + (Math.cos(winkel * Math.PI / 180) * astLaenge);
 				var y2 = y1 + (Math.sin(winkel * Math.PI / 180) * astLaenge);
+				var color = tinycolor("#001100");
 
-				svg.line(x1, y1, x2, y2);
+				var ast = svg.line(x1, y1, x2, y2);
+				ast.attr({
+					stroke: color.lighten(ebene * 3).toString(),
+					strokeWidth: maxEbene - ebene
+				});
+
 				astZeichnen(
 					x2,
 					y2,
