@@ -428,6 +428,7 @@
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\fraktal-baum-2.html" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\fraktal-baum-4.html" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\fraktal-baum-3.html" />
+    <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\fraktal-baum.png" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\svg-fraktalbaum.sln" />
     <Content Include="_includes\footer.html" />
     <Content Include="_includes\head.html" />
@@ -538,6 +539,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-snake\Apfel.sprite2" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\Schlange.sprite2" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\SpielZuEnde.sprite2" />
+    <Content Include="trainingsanleitungen\web\svg-fraktalbaum.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />

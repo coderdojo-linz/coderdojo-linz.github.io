@@ -29,24 +29,19 @@
 
 	<script type="text/javascript">
 		var svg = Snap("#baum");
+
+		// Hier kannst du zeichnen
+		// globale Variablen
 		var aenderungswinkel;
 		var aenderungAstlaenge;
-
-		function astZeichnen(x1, y1, winkel, astLaenge, ebene) {
-			if (ebene < 11) {
-				var x2 = x1 + (Math.cos(winkel * Math.PI / 180) * astLaenge);
-				var y2 = y1 + (Math.sin(winkel * Math.PI / 180) * astLaenge);
-
-				svg.line(x1, y1, x2, y2);
-				astZeichnen(x2, y2, winkel - aenderungswinkel, astLaenge * aenderungAstlaenge, ebene + 1);
-				astZeichnen(x2, y2, winkel + aenderungswinkel, astLaenge * aenderungAstlaenge, ebene + 1);
-			}
-		}
+		baumZeichnen();
 
 		function baumZeichnen() {
 			var ebene = 0;
 			var winkel = -90;
 			var astLaenge = 100;
+
+			// Benutzereingaben auslesen
 			aenderungswinkel = parseInt(document.getElementById("aenderungsWinkel").value);
 			aenderungAstlaenge = parseInt(document.getElementById("aenderungAstlaenge").value) / 100;
 
@@ -54,7 +49,20 @@
 			astZeichnen(300, 500, winkel, astLaenge, ebene);
 		}
 
-		baumZeichnen();
+		function astZeichnen(x1, y1, winkel, astLaenge, ebene) {
+			if (ebene < 11) {
+				// Endkoordinaten berrechnen
+				var x2 = x1 + (Math.cos(winkel * Math.PI / 180) * astLaenge);
+				var y2 = y1 + (Math.sin(winkel * Math.PI / 180) * astLaenge);
+
+				// Linie zeichnen
+				svg.line(x1, y1, x2, y2);
+
+				// zwei weitere Äste mit verändertem Winkel malen
+				astZeichnen(x2, y2, winkel - aenderungswinkel, astLaenge * aenderungAstlaenge, ebene + 1);
+				astZeichnen(x2, y2, winkel + aenderungswinkel, astLaenge * aenderungAstlaenge, ebene + 1);
+			}
+		}
 	</script>
 </body>
 </html>
