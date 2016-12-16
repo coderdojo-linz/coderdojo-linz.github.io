@@ -42,15 +42,16 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 ## Webentwicklung (HTML, JavaScript & Co.)
 
 1. [Baue deine erste Webseite](/trainingsanleitungen/web/html-meine-erste-webseite.html)
-2. [Erste Schritte mit CSS](/trainingsanleitungen/web/erste-schritte-mit-css.html)
-2. [Programmiere ein einfaches "Zahlen raten" Spiel mit JavaScript](/trainingsanleitungen/web/javascript-zahlen-raten.html)
-2. [Erste Schritte mit SVG](/trainingsanleitungen/web/erste-schritte-mit-svg.html)
-6. [Deine eigene Webseite im Internet veröffentlichen](/trainingsanleitungen/web/dreamspark-azure.html)
-3. [Einen Node.js Webserver programmieren](/trainingsanleitungen/web/nodejs-webserver.html)
-4. [Programmiere einen Chat mit Node.js und Socket.io](/trainingsanleitungen/web/nodejs-socketio-chat.html)
-5. [Ein Space Shooter mit TypeScript und Phaser.io](/trainingsanleitungen/web/space-shooter.html)
-6. [Deine eigene Verschlüsselung mit JavaScript](/trainingsanleitungen/web/caesar-verschluesseln.html)
-7. [Präsentationen mit HTML statt PowerPoint](/trainingsanleitungen/web/html-prasentationen.html)
+1. [Erste Schritte mit CSS](/trainingsanleitungen/web/erste-schritte-mit-css.html)
+1. [Programmiere ein einfaches "Zahlen raten" Spiel mit JavaScript](/trainingsanleitungen/web/javascript-zahlen-raten.html)
+1. [Erste Schritte mit SVG](/trainingsanleitungen/web/erste-schritte-mit-svg.html)
+1. [Deine eigene Webseite im Internet veröffentlichen](/trainingsanleitungen/web/dreamspark-azure.html)
+1. [Einen Node.js Webserver programmieren](/trainingsanleitungen/web/nodejs-webserver.html)
+1. [Programmiere einen Chat mit Node.js und Socket.io](/trainingsanleitungen/web/nodejs-socketio-chat.html)
+1. [Ein Space Shooter mit TypeScript und Phaser.io](/trainingsanleitungen/web/space-shooter.html)
+1. [Deine eigene Verschlüsselung mit JavaScript](/trainingsanleitungen/web/caesar-verschluesseln.html)
+1. [Präsentationen mit HTML statt PowerPoint](/trainingsanleitungen/web/html-prasentationen.html)
+1. [Fraktalbaum mit SVG](/trainingsanleitungen/web/svg-fraktalbaum.html)
 
 ## Minecraft
 

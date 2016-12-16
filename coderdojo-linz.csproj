@@ -428,7 +428,13 @@
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\fraktal-baum-2.html" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\fraktal-baum-4.html" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\fraktal-baum-3.html" />
+    <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\fraktal-baum-1.png" />
+    <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\fraktal-baum-2.png" />
+    <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\fraktal-baum-3.png" />
+    <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\fraktal-baum-4-1.png" />
+    <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\fraktal-baum-4.png" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\fraktal-baum.png" />
+    <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\snap-svg-figur.png" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\svg-fraktalbaum.sln" />
     <Content Include="_includes\footer.html" />
     <Content Include="_includes\head.html" />
