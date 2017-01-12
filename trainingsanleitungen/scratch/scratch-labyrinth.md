@@ -79,21 +79,18 @@ Wir brauchen für unsere Figur noch weitere Variablen. Lege die Variablen an, di
 ![Variablen für Spielfeld setzen](scratch-labyrinth/variablen-fuer-spielfeld-setzen.png)
 
 1. Damit du nicht alle Zeilen vom Bild abschreiben musst, findet du hier das Spielfeld als Text. Kopiere den Text jeder Zeile in die Zwischenablage (*Strg + C*) und füge den Text in Scratch ein (*Strg + V*). Wenn das für dich ganz neu ist, frage eine Mentorin oder einen Mentor um Hilfe.
-
-```
-MMMMMMMMMMMMMMMO
-OOMMOBMBOOMMMMMM
-MOMOOOOOOMBMOOBM
-MMMMMMMOMMOOOBMM
-MOOOOOOOOBMMMBBM
-MBMMBMMBBMMBBOOM
-MMOOOOOBOMOOMMOB
-MOOBMMMOOMMOOOBM
-BMMMMBBOMBOOMMMM
-MBBBBOMMMMBMMOOM
-MOMMOOBMOOOMOOOM
-MMMMMMMMMMMMBBBB
-```
+   * `MMMMMMMMMMMMMMMO`
+   * `OOMMOBMBOOMMMMMM`
+   * `MOMOOOOOOMBMOOBM`
+   * `MMMMMMMOMMOOOBMM`
+   * `MOOOOOOOOBMMMBBM`
+   * `MBMMBMMBBMMBBOOM`
+   * `MMOOOOOBOMOOMMOB`
+   * `MOOBMMMOOMMOOOBM`
+   * `BMMMMBBOMBOOMMMM`
+   * `MBBBBOMMMMBMMOOM`
+   * `MOMMOOBMOOOMOOOM`
+   * `MMMMMMMMMMMMBBBB`
 
 1. Das folgende Bild zeigt den neuen Block *Baue Spielfeld*, den du anlegen musst, damit aus der Liste *Spielfeld*, die du im letzten Schritt angelegt hast, das Spielfeld gebaut wird.<br/>
 ![Baue Spielfeld](scratch-labyrinth/baue-spielfeld.png)
