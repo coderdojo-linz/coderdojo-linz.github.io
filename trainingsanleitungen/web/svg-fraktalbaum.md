@@ -1,7 +1,7 @@
 ---
 layout: sushi
 title: Fraktal Baum mit snap.svg
-description: In dieser Übung programmierst du einen Space Shooter mit TypeScript und Phaser.io
+description: In dieser Übung malst du einen Baum mit SVG.
 ---
 
 # Zeichne einen Fraktal Baum mit snap.svg

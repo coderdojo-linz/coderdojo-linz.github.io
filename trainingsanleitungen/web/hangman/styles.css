@@ -1,0 +1,49 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.spielBereich {
+    height: 500px;
+    display: flex;
+    align-items: stretch;
+}
+
+.rateBereich {
+    width: 50%;
+    padding-right: 20px;
+}   
+
+#wort {
+    text-transform: uppercase;
+    font-family: Courier New, Courier, monospace;
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+#info {
+    margin-top: 40px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.hangmanBereich {
+    width: 50%;
+    background-color: #ddff99;
+}
+
+line, circle, ellipse, rect, text, path {
+    stroke: black;
+    fill: none;
+}

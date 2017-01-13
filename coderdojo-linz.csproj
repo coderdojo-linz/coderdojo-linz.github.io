@@ -416,6 +416,10 @@
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\fertiges-spiel.png" />
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\script-in-visual-studio.png" />
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\unity-mit-visual-studio-verbinden.png" />
+    <Content Include="trainingsanleitungen\web\hangman\hangman.html" />
+    <Content Include="trainingsanleitungen\web\hangman\images\hangman.png" />
+    <Content Include="trainingsanleitungen\web\hangman\images\wort-anzeigen.png" />
+    <Content Include="trainingsanleitungen\web\hangman\styles.css" />
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\html-BrowserTitle.png" />
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\html-BrowserTitleGoogle.png" />
     <Content Include="trainingsanleitungen\web\html-meine-erste-webseite\meine-erste-webseite.html" />
