@@ -103,7 +103,7 @@ In dieser Übung programmierst du ein Labyrinth-Spiel [erst mit Scratch](../scra
 
 Jetzt können wir die Variablen für das Spielfeld setzen. Die folgende Grafik stellt den Scratch- und den JavaScript-Code gegenüber. Vergleiche sie und achte auf Unterschiede und Gemeinsamkeiten:
 
-![Variablen für Spielfeld setzen](labyrinth/variablen-fuer-spielfeld-setzen.png){: max-width: 100%; }
+![Variablen für Spielfeld setzen](labyrinth/variablen-fuer-spielfeld-setzen.png){: .full}
 
 Hier der Code als Text, den du in dein Programm einfügen musst:
 
@@ -139,19 +139,19 @@ Hier der Code als Text, den du in dein Programm einfügen musst:
 
 Jetzt haben wir die Variablen für das Spielfeld. Wir können sie verwenden, um die Labyrinthelemente aufzubauen. Beim Positionieren der Elemente müssen wir beachten, dass das Koordinatensystem von SVG anders ist als das von Scratch. Wärend bei Scratch der Mittelpunkt mit x=0 und y=0 genau in der Mitte des Spielfelds ist, ist der Mittelpunkt bei SVG links oben.
 
-![SVG Spielfeld](labyrinth/svg-spielfeld.png){: max-width: 100%; }
+![SVG Spielfeld](labyrinth/svg-spielfeld.png){: .full}
 
 Außerdem musst du bedenken, dass bei Scratch der Nullpunkt einer Figur mit x=0 und y=0 in der Mitte liegt (kann im Figureneditor geändert werden):
 
-![Scratch Nullpunkt einer Figur](labyrinth/scratch-figur-nullpunkt.png){: max-width: 100%; }
+![Scratch Nullpunkt einer Figur](labyrinth/scratch-figur-nullpunkt.png){: .full}
 
 Bei SVG liegt der Nullpunkt aber links oben:
 
-![SVG Nullpunkt einer Figur](labyrinth/svg-figur-nullpunkt.png){: max-width: 100%; }
+![SVG Nullpunkt einer Figur](labyrinth/svg-figur-nullpunkt.png){: .full}
 
 Die folgende Grafik stellt den Scratch- und den JavaScript-Code für das Aufbauen des Spielfelds gegenüber. Vergleiche sie und achte auf Unterschiede und Gemeinsamkeiten:
 
-![Baue Spielfeld](labyrinth/baue-spielfeld.png){: max-width: 100%; }
+![Baue Spielfeld](labyrinth/baue-spielfeld.png){: .full}
 
 Hier der Code als Text, den du in dein Programm einfügen musst:
 
@@ -196,7 +196,7 @@ Hier der Code als Text, den du in dein Programm einfügen musst:
 
 Die nächste Funktion, die wir brauchen, kümmert sich um das Zerstören von schwarzen Hindernissen. Die folgende Grafik stellt den Scratch- und den JavaScript-Code gegenüber. Vergleiche sie und achte auf Unterschiede und Gemeinsamkeiten:
 
-![Schwarze Hindernisse zerstören](labyrinth/zerstoere.png){: max-width: 100%; }
+![Schwarze Hindernisse zerstören](labyrinth/zerstoere.png){: .full}
 
 Hier der Code als Text, den du in dein Programm einfügen musst:
 
@@ -244,7 +244,7 @@ Hier der Code als Text, den du in dein Programm einfügen musst:
 
 Wie in Scratch brauchen wir für den Spieler einige Hilfsfunktionen. Die folgende Grafik stellt den Scratch- und den JavaScript-Code gegenüber. Vergleiche sie und achte auf Unterschiede und Gemeinsamkeiten:
 
-![Spieler Positionieren](labyrinth/position-rechnen.png){: max-width: 100%; }
+![Spieler Positionieren](labyrinth/position-rechnen.png){: .full}
 
 Hier der Code als Text, den du in dein Programm einfügen musst:
 
@@ -261,7 +261,7 @@ Hier der Code als Text, den du in dein Programm einfügen musst:
 
 Der Block für das Bewegen war in Scratch ziemlich groß und kompiliziert. Die gute Nachricht ist, dass die Logik in JavaScript fast genau wie in Scratch funktioniert. Die folgende Grafik stellt den Scratch- und den JavaScript-Code für das vertikale Bewegen gegenüber. Vergleiche sie und achte auf Unterschiede und Gemeinsamkeiten:
 
-![Spieler bewegen](labyrinth/bewege-vertikal.png){: max-width: 100%; }
+![Spieler bewegen](labyrinth/bewege-vertikal.png){: .full}
 
 Hier der Code als Text, den du in dein Programm einfügen musst:
 
@@ -327,7 +327,7 @@ Hier der Code als Text, den du in dein Programm einfügen musst:
 
 Nachdem du jetzt alle *Hilfsfunktionen* programmiert hast, können wir sie mit der Tastensteuerung verknüpfen. Die folgende Grafik stellt den Scratch- und den JavaScript-Code gegenüber. Vergleiche sie und achte auf Unterschiede und Gemeinsamkeiten:
 
-![Tastensteuerung](labyrinth/spielstart.png){: max-width: 100%; }
+![Tastensteuerung](labyrinth/spielstart.png){: .full}
 
 Hier der Code als Text, den du in dein Programm einfügen musst:
 
