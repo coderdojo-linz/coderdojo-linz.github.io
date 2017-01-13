@@ -139,15 +139,15 @@ Hier der Code als Text, den du in dein Programm einfügen musst:
 
 Jetzt haben wir die Variablen für das Spielfeld. Wir können sie verwenden, um die Labyrinthelemente aufzubauen. Beim Positionieren der Elemente müssen wir beachten, dass das Koordinatensystem von SVG anders ist als das von Scratch. Wärend bei Scratch der Mittelpunkt mit x=0 und y=0 genau in der Mitte des Spielfelds ist, ist der Mittelpunkt bei SVG links oben.
 
-![SVG Spielfeld](labyrinth/svg-spielfeld.png){: .full}
+![SVG Spielfeld](labyrinth/svg-spielfeld.png)
 
 Außerdem musst du bedenken, dass bei Scratch der Nullpunkt einer Figur mit x=0 und y=0 in der Mitte liegt (kann im Figureneditor geändert werden):
 
-![Scratch Nullpunkt einer Figur](labyrinth/scratch-figur-nullpunkt.png){: .full}
+![Scratch Nullpunkt einer Figur](labyrinth/scratch-figur-nullpunkt.png)
 
 Bei SVG liegt der Nullpunkt aber links oben:
 
-![SVG Nullpunkt einer Figur](labyrinth/svg-figur-nullpunkt.png){: .full}
+![SVG Nullpunkt einer Figur](labyrinth/svg-figur-nullpunkt.png)
 
 Die folgende Grafik stellt den Scratch- und den JavaScript-Code für das Aufbauen des Spielfelds gegenüber. Vergleiche sie und achte auf Unterschiede und Gemeinsamkeiten:
 
