@@ -126,8 +126,8 @@ Dann brauchen wir noch die Funktionen wortAzeigen, buchstabePruefen und hangmanM
 	// wähle ein Wort aus und zeige es mit * an
 	var wort = window.prompt("Welches Wort soll erraten werden?").toLowerCase();
 	wortAnzeigen();
-	// document.focus() ist in manchen Browsern notwendig, damit später document.onkeyup reagiert
-    document.focus();
+	// window.focus() ist in manchen Browsern notwendig, damit später document.onkeyup reagiert
+    window.focus();
 
 	// reagiere, wenn ein Buchstabe gedrückt wird
 	document.onkeyup = function(event) {
