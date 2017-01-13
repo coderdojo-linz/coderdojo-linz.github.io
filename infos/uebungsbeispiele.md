@@ -53,6 +53,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Deine eigene Verschlüsselung mit JavaScript](/trainingsanleitungen/web/caesar-verschluesseln.html)
 1. [Präsentationen mit HTML statt PowerPoint](/trainingsanleitungen/web/html-prasentationen.html)
 1. [Fraktalbaum mit SVG](/trainingsanleitungen/web/svg-fraktalbaum.html)
+1. [Hangman mit JavaScript und SVG](/trainingsanleitungen/web/hangman.html)
 
 ## Minecraft
 
