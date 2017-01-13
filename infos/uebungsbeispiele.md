@@ -34,7 +34,6 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Weihnachtsspiel 2016 - Dekoriere den Weihnachtsbaum](/trainingsanleitungen/scratch/scratch-weihnachten-2016.html)
 1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/scratch/scratch-labyrinth.html)
 
-
 ## TouchDevelop
 
 1. [Erste Schritte - Lerne die Arbeitsumgebung von TouchDevelop kennen](/trainingsanleitungen/touch-develop/erste-schritte.html)
@@ -54,6 +53,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Präsentationen mit HTML statt PowerPoint](/trainingsanleitungen/web/html-prasentationen.html)
 1. [Fraktalbaum mit SVG](/trainingsanleitungen/web/svg-fraktalbaum.html)
 1. [Hangman mit JavaScript und SVG](/trainingsanleitungen/web/hangman.html)
+1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/web/labyrinth-mit-svg.html)
 
 ## Minecraft
 
