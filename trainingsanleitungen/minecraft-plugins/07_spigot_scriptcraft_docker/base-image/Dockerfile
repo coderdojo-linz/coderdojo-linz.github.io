@@ -23,7 +23,7 @@ RUN mkdir /tmp/spigotmc \
 RUN cd /bin/spigotmc \
     && mkdir plugins \
     && mkdir -p /scriptcraft/plugins \
-    && curl -o plugins/scriptcraft.jar http://scriptcraftjs.org/download/latest/scriptcraft-3.2.0/scriptcraft.jar
+    && curl -o plugins/scriptcraft.jar https://scriptcraftjs.org/download/latest/scriptcraft-3.2.1/scriptcraft.jar
 
 WORKDIR /bin/spigotmc
 
