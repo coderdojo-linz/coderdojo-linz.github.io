@@ -47,3 +47,7 @@ line, circle, ellipse, rect, text, path {
     stroke: black;
     fill: none;
 }
+
+line.helperLine {
+	stroke: #cccccc;
+}

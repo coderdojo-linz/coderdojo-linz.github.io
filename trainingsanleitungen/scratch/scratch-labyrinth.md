@@ -153,7 +153,7 @@ Jetzt müssen wir nur noch dafür sorgen, dass unsere neuen Blöcke aufgerufen w
 
 * Lass dir ein neues, schwierigeres Labyrinth einfallen. Versuche es durch Anpassen des Programms in dein Spiel einzubauen.
 
-* Nachdem du jetzt das Programm in Scratch geschafft hast, könntest du es als nächstes in JavaScript programmieren. Im Bereich *Web* findest du genau das gleiche Spiel als JavaScript-Übung. Du wirst sehen, dass vieles ganz ähnlich funktioniert wie in Scratch.
+* Nachdem du jetzt das Programm in Scratch geschafft hast, könntest du es als nächstes in JavaScript programmieren. Im Bereich *Web* findest du genau [das gleiche Spiel als JavaScript-Übung](../web/labyrinth-mit-svg.html). Du wirst sehen, dass vieles ganz ähnlich funktioniert wie in Scratch.
 
 ## Ausprobieren
 

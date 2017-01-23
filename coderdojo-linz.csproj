@@ -417,6 +417,8 @@
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\script-in-visual-studio.png" />
     <Content Include="trainingsanleitungen\unity\erste-schritte-mit-unity\unity-mit-visual-studio-verbinden.png" />
     <Content Include="trainingsanleitungen\web\hangman\hangman.html" />
+    <Content Include="trainingsanleitungen\web\hangman\images\buchstaben-raten.png" />
+    <Content Include="trainingsanleitungen\web\hangman\images\hangman-svg.png" />
     <Content Include="trainingsanleitungen\web\hangman\images\hangman.png" />
     <Content Include="trainingsanleitungen\web\hangman\images\wort-anzeigen.png" />
     <Content Include="trainingsanleitungen\web\hangman\styles.css" />
@@ -550,6 +552,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-snake\Schlange.sprite2" />
     <Content Include="trainingsanleitungen\scratch\scratch-snake\SpielZuEnde.sprite2" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum.md" />
+    <Content Include="trainingsanleitungen\web\hangman.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />
@@ -602,7 +605,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>29361</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

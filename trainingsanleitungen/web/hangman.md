@@ -108,7 +108,7 @@ oder du erstellst eine neue Datei styles.css mit folgendem Inhalt:
 
 ## Skripte
 
-Damit im Spiel jetzt auch was passiert, müssen wir im <javascript> Bereich unsere Skripte einfügen. Als erstes bauen wir das Grundgerüst für unser Programm. 
+Damit im Spiel jetzt auch was passiert, müssen wir im `<javascript>` Bereich unsere Skripte einfügen. Als erstes bauen wir das Grundgerüst für unser Programm. 
 Wir brauchen Variablen für die Anzahl der Fehlversuche, einen Indikator, ob das Spiel bereits zu Ende ist, die bereits geratenen Buchstaben. 
 Weiters brauchen wir den SVG Zeichen-Bereich mit dem Namen "hangman".
 
@@ -126,6 +126,8 @@ Dann brauchen wir noch die Funktionen wortAzeigen, buchstabePruefen und hangmanM
 	// wähle ein Wort aus und zeige es mit * an
 	var wort = window.prompt("Welches Wort soll erraten werden?").toLowerCase();
 	wortAnzeigen();
+	// window.focus() ist in manchen Browsern notwendig, damit später document.onkeyup reagiert
+    window.focus();
 
 	// reagiere, wenn ein Buchstabe gedrückt wird
 	document.onkeyup = function(event) {
@@ -147,7 +149,8 @@ Dann brauchen wir noch die Funktionen wortAzeigen, buchstabePruefen und hangmanM
 		// TODO
 	}
 
-Wenn du die Seite hangman.html jetzt öffnest, wirst du nach einem Wort gefragt, dann passiert allerdings nichts mehr. Dazu implementieren wir als erstes die Funktion wortAzeigen.
+Wenn du die Seite hangman.html jetzt öffnest, wirst du nach einem Wort gefragt. Dann passiert allerdings nichts mehr, da die Funktionen noch alle leer sind. 
+Als erstes implementieren wir die Funktion wortAzeigen.
 
 	// zeige das Wort mit * für noch nicht erratene Buchstaben an
 	function wortAnzeigen() {
@@ -170,18 +173,113 @@ Wenn du die Seite hangman.html jetzt öffnest, wirst du nach einem Wort gefragt,
 		}
 	}
 
-Wenn du die 
+Wenn du die Seite nun aufrufst, wird du zuerst nach einem Wort gefragt, dann wird für jeden Buchstaben im Wort ein Sternchen angezeigt.
 
 ![Hangman Wort anzeigen](hangman/images/wort-anzeigen.png)
 
+Als nächstes müssen wir dem zweiten Spieler erlauben, Buchstaben einzugeben. Dazu reagieren wir auf das Event `document.onkeyup`. Solange das Spiel noch nicht vorbei ist, 
+prüfen wir den eingegebenen Buchstaben. In der Funktion `buchstabePruefen` unterscheiden wir dazu drei verschiedene Fälle:
+
+- der Buchstabe wurde bereits geraten
+- der Buchstabe wurde noch nicht geraten, kommt aber nicht im Wort vor 
+- der Buchstabe wurde noch nicht geraten und kommt im Wort vor
+
+Wenn die Anzahl der Fehlerversuche 10 ist, dann ist das Spiel zu Ende.
+
+	// reagiere, wenn ein Buchstabe gedrückt wird
+	document.onkeyup = function(event) {
+		if (!gameFinished) {
+			buchstabePruefen(event.key);
+		}
+	};
+
+	// prüfe, ob ein Buchstabe bereits geraten wurde oder gar nicht im Wort vorkommt
+	function buchstabePruefen(key) {
+		if (gerateneBuchstaben.indexOf(key) >= 0) {
+			// der Buchstabe wurde bereits gedrückt
+			document.getElementById("info").innerText = "Du hast den Buchstaben " + key + " bereits geraten.";
+			anzahlFehlversuche++;
+			hangmanMalen();
+		} else if (wort.indexOf(key) < 0) {
+			// der Buchstabe kommt nicht im Wort vor
+			document.getElementById("info").innerText = "Der Buchstabe " + key + " kommt im Wort nicht vor.";
+			gerateneBuchstaben.push(key);
+			anzahlFehlversuche++;
+			hangmanMalen();
+		} else {
+			// es wurde ein Buchstabe erraten
+			document.getElementById("info").innerText = "Super, du hast einen Buchstaben erraten";
+			gerateneBuchstaben.push(key);
+			wortAnzeigen();
+		}
+
+		// nach 10 Fehlversuchen ist das Spiel zu Ende
+		if (anzahlFehlversuche >= 10) {
+			document.getElementById("info").innerText = "Game over!";
+			gameFinished = true;
+		}
+	}
+
+Du kannst das Spiel jetzt schon spielen. Die richtig erratenen Buchstaben werden angezeigt. Nach 10 Fehlversuchen ist das Spiel zu Ende.
+
+![Hangman Wort anzeigen](hangman/images/buchstaben-raten.png)
+
 ## Galgen malen
+
+Jetzt fehlt nur noch der Galgen, damit man auch weiß, wieviele Fehlversuche man schon hatte.
 
 Zum Zeichnen verwenden wir die Bibliothek [snap.svg](http://snapsvg.io/docs/){:target="_blank"}. Du kannst damit ganz einfach Linien, Kreise, Ellipsen, Rechtecke und ähnliches malen.
 
 	// Beispiele
-	svg.circle(300, 250, 200);
-	svg.ellipse(300, 250, 200, 100);
-	svg.rect(100, 50, 400, 400);
-	svg.line(100, 250, 500, 250);
-	svg.text(230, 240, "Ich male mit snap.svg!");
+	svg.circle(x, y, r);
+	svg.ellipse(x, y, rx, ry);
+	svg.rect(x, y, width, height);
+	svg.line(x1, y1, x2, y2);
+	svg.text(x, y, "Ich male mit snap.svg!");
 	svg.path("M200,250L300,300L400,250");
+
+Für das Galgenmännchen in der Funktion `hangmanMalen` brauchen wir die Befehle `line` und `circle`.
+
+![Hangman SVG](hangman/images/hangman-svg.png)
+
+Bei jedem Fehlversuch malen wir eine weitere Line oder einen Kreis dazu. Die erste Linie ist der Sockel des Galgen. Die Linie beginnt an der Position x=50, y=450 und endet 
+an der Position x=150, y=450. Ersetze die Platzhalter `// TODO` durch die Linien bzw. den Kreis für die weiteren Fehlversuche.
+
+	// male das Galgenmännchen
+	function hangmanMalen() {
+		switch (anzahlFehlversuche) {
+			case 1:
+				svg.line(50, 450, 150, 450);
+				break;
+			case 2:
+				// TODO
+				break;
+			case 3:
+				// TODO
+				break;
+			case 4:
+				// TODO
+				break;
+			case 5:
+				// TODO
+				break;
+			case 6:
+				// TODO
+				break;
+			case 7:
+				// TODO
+				break;
+			case 8:
+				// TODO
+				break;
+			case 9:
+				// TODO
+				break;
+			case 10:
+				// TODO
+				break;
+		}
+	}
+
+Wenn du Hilfe beim Malen des Galgenmännchen brauchst, findest du den gesamten Code unter <a href="hangman/hangman.html" target="_blank">hangman.html</a>. Du kannst das Spiel dort direkt ausprobieren, 
+oder du siehst der den Source Code mit Hilfe der Developer Tools (F12) an.
