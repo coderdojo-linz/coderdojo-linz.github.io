@@ -12,7 +12,7 @@ Für diese Übung brauchst du [Minecraft](https://minecraft.net/de-de/){:target=
 
 ## Was ist *Redstone*?
 
-![Redstone](erste-schritte-mit-redstone/redstone.png){:right}
+![Redstone](erste-schritte-mit-redstone/redstone.png){: .right}
 [Redstone](http://minecraft-de.gamepedia.com/Redstone){:target="_blank"} ist ein wichtiger Rohstoff in Minecraft. Wie in der echten Welt mit Strom kannst du mit Redstone in Minecraft Schaltkreise (Englisch *Ciruits*) bauen. Egal ob Falle für Monster, Lichtsteuerung oder automatische Türen - für all das verwendest du Redstone.
 
 **Hinweis für Eltern:** Schaltungen mit Redstone sind ein gutes Beispiel dafür, warum Minecraft viel mehr ist als nur ein Unterhaltungsspiel. Kreativität und logisches Denken sind gefragt, wenn man mit Redstone arbeiten möchte.
