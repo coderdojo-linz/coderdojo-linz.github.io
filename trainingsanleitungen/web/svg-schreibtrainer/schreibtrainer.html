@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Schreibtrainer</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="schreibtrainer.css">
+</head>
+
+<body>
+    <h1>Schreibtrainer</h1>
+    <!--<a title="By Original von VivienSC (Datei:QWERTZ-10Finger-Layout.svg) [CC BY-SA 2.0 de (http://creativecommons.org/licenses/by-sa/2.0/de/deed.en) or Copyrighted free use], via Wikimedia Commons"
+        href="https://commons.wikimedia.org/wiki/File%3AQWERTZ-10Finger-Layout.svg">
+        <img width="800" alt="QWERTZ-10Finger-Layout" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/QWERTZ-10Finger-Layout.svg/512px-QWERTZ-10Finger-Layout.svg.png"
+        />
+    </a>-->
+
+    <div>
+        <svg id="svg" width="800" height="500"></svg>
+    </div>
+
+    <p>Anzahl Treffer: <span id="anzahlTreffer" /></p>
+    <p>Anzahl Fehler: <span id="anzahlFehler" /></p>
+    <button onclick="starteSpiel()">Starte Spiel</button>
+    <button onclick="spielAktiv = false">Stoppe Spiel</button>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+    <script type="text/javascript" src="schreibtrainer.js"></script>
+</body>
+
+</html>
