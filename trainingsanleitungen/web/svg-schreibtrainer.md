@@ -8,278 +8,231 @@ description: In dieser Übung baust du ein Spiel das dir hilft, deine Tipp-Gesch
 
 ## Ziel der Übung
 
-Der erste Spieler gibt ein Wort ein, das vom zweiten Spieler erraten werden muss.
+Du baust ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.
 
-Zuerst sieht der zweite Spieler nur ein Sternchen für jeden Buchstaben. Jeder erratene Buchstabe wird aufgedeckt. Für jeden falsch geratenen Buchstaben 
-wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor der Galgen fertig ist.
+Ám oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen. Tippe den Buchstaben, bevor er den unteren 
+Rand des Spielfelds berührt.
 
-![Hangman](hangman/images/hangman.png)
+Auf Wikipedia findest du eine Grafik zum 
+<a href="https://de.wikipedia.org/wiki/Zehnfingersystem#/media/File:QWERTZ-10Finger-Layout.svg" target="_blank">Zehnfingersystem</a>, die erklärt, welche Taste 
+mit welchem Finger gedrückt werden soll.
+
+![Schreibtrainer](svg-schreibtrainer/images/schreibtrainer.png)
 
 ## Grundgerüst der HTML Seite
 
-Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.html. 
+Erstelle als erstes eine neue HTML Seite mit dem Namen schreibtrainer.html.
 
 	<!DOCTYPE html>
 	<html>
 
 	<head>
-		<title>Hangman</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Schreibtrainer</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="schreibtrainer.css">
 	</head>
 
 	<body>
-		<h1>Hangman</h1>
+		<h1>Schreibtrainer</h1>
 
-		<div class="spielBereich">
-			<div class="rateBereich">
-				<div>Tippe einen Buchstaben ein.</div>
-				<div id="wort"></div>
-				<div id="info"></div>
-			</div>
-
-			<div class="hangmanBereich">
-				<svg id="hangman" width="400" height="500"></svg>
-			</div>
+		<!-- SVG Spielbereich -->
+		<div>
+			<svg id="svg" width="800" height="500"></svg>
 		</div>
 
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+		<!-- Ausgaben des Spiels -->
+		<p>Anzahl Treffer: <span id="anzahlTreffer" /></p>
+		<p>Anzahl Fehler: <span id="anzahlFehler" /></p>
 
-		<script type="text/javascript">
-			
-		</script>
+		<!-- Buttons zum Spiel stoppen und starten -->
+		<button onclick="starteSpiel()">Starte Spiel</button>
+		<button onclick="spielAktiv = false">Stoppe Spiel</button>
+
+		<!-- Scripte für snap.svg und eigene Scripte -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+		<script type="text/javascript" src="schreibtrainer.js"></script>
 	</body>
 
 	</html>
 
 ## Styles
 
-Die Styles sind hier nicht direkt im HTML enthalten, sondern es wird auf die externe Datei styles.css verwiesen. Die Datei muss sich im selben Ordner wie hangman.htm befinden. Du kannst die Datei entweder unter <a href="hangman/styles.css">styles.css</a> herunterladen, 
-oder du erstellst eine neue Datei styles.css mit folgendem Inhalt:
+Die Styles sind hier nicht direkt im HTML enthalten, sondern es wird auf die externe Datei schreibtrainer.css verwiesen. Die Datei muss sich im selben Ordner wie schreibtrainer.htm befinden. 
+Du kannst die Datei entweder unter <a href="svg-schreibtrainer/schreibtrainer.css">schreibtrainer.css</a> herunterladen, oder du erstellst eine neue Datei schreibtrainer.css mit folgendem Inhalt:
 
 	body {
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		font-size: 20px;
-		margin: 20px;
+		font-family: Verdana;
+		padding: 20px;
 	}
 
-	h1 {
-		text-transform: uppercase;
+	#svg {
+		background-color: lightblue;
 	}
 
-	div {
-		box-sizing: border-box;
-	}
-
-	.spielBereich {
-		height: 500px;
-		display: flex;
-		align-items: stretch;
-	}
-
-	.rateBereich {
-		width: 50%;
-		padding-right: 20px;
-	}   
-
-	#wort {
-		text-transform: uppercase;
-		font-family: Courier New, Courier, monospace;
-		margin-top: 40px;
-		font-size: 30px;
-		text-align: center;
-		letter-spacing: 0.3em;
-	}
-
-	#info {
-		margin-top: 40px;
-		color: #ff6600;
-		font-weight: bold;
-	}
-
-	.hangmanBereich {
-		width: 50%;
-		background-color: #ddff99;
-	}
-
-	line, circle, ellipse, rect, text, path {
+	circle {
 		stroke: black;
-		fill: none;
+	}
+
+	text {
+		stroke: black;
+		font-size: 30px;
+		line-height: 30px;
 	}
 
 ## Skripte
 
-Damit im Spiel jetzt auch was passiert, müssen wir im `<javascript>` Bereich unsere Skripte einfügen. Als erstes bauen wir das Grundgerüst für unser Programm. 
-Wir brauchen Variablen für die Anzahl der Fehlversuche, einen Indikator, ob das Spiel bereits zu Ende ist, die bereits geratenen Buchstaben. 
-Weiters brauchen wir den SVG Zeichen-Bereich mit dem Namen "hangman".
+Für die Skripte verwenden wir in diesem Spiel eine eigene Datei. Lege dazu eine neue Datei schreibtrainer.js an. Im HTML wird auf diese Datei verwiesen. Wir starten 
+mit folgenden Grundgerüst:
 
-Als nächstes fordern wir mit `prompt` den ersten Spieler auf, ein Wort einzugeben.
+	var svg = Snap("#svg");
+	var buchstaben = "fjdkslaöghärueiwoqptzüvnbmcxy";
+	var level;
+	var treffer;
+	var fehler;
+	var spielAktiv;
 
-Wenn im Dokument eine Taste gedrückt wird (`onkeyup`), müssen wir nachsehen, ob der gedrückte Buchstabe im Wort vorkommt.
+	starteSpiel();
 
-Dann brauchen wir noch die Funktionen wortAzeigen, buchstabePruefen und hangmanMalen.
+	// setzt alle Variablen auf den Ausgangswert und starte dann das Spiel
+	function starteSpiel() {
+		// variablen initialisieren
+		level = 1;
+		treffer = 0;
+		fehler = 0;
+		spielAktiv = true;
+    
+		datenAusgeben();
+		neuerBuchstabe();
+	}
 
-	var anzahlFehlversuche = 0;
-	var gameFinished = false;
-	var gerateneBuchstaben = [];
-	var svg = Snap("#hangman");
-
-	// wähle ein Wort aus und zeige es mit * an
-	var wort = window.prompt("Welches Wort soll erraten werden?").toLowerCase();
-	wortAnzeigen();
-	// window.focus() ist in manchen Browsern notwendig, damit später document.onkeyup reagiert
-    window.focus();
-
-	// reagiere, wenn ein Buchstabe gedrückt wird
-	document.onkeyup = function(event) {
-		// TODO
-	};
-
-	// zeige das Wort mit * für noch nicht erratene Buchstaben an
-	function wortAnzeigen() {
+	// gibt die Anzahl der Treffer und die Anzahl der Fehler aus
+	function datenAusgeben() {
 		// TODO
 	}
 
-	// prüfe, ob ein Buchstabe bereits geraten wurde oder gar nicht im Wort vorkommt
-	function buchstabePruefen(key) {
+	// zeigt einen neuen Buchstaben der getippt werden soll im Spiel an
+	function neuerBuchstabe() {
 		// TODO
 	}
 
-	// male das Galgenmännchen
-	function hangmanMalen() {
-		// TODO
+Wenn du die Seite schreibtrainer.html jetzt aufrufst, siehst du nur das leere Spielfeld. Sonst passiert noch nichts. Als erstes fügen wir den Code 
+für die Funktion datenAusgeben ein. Hier geben wir in den HTML Element `anzahlFehler` und `anzahlTreffer` die aktuellen Werte der Variablen `fehler` und `treffer` aus.
+
+**Code für die Function datenAusgeben()**
+
+	document.getElementById("anzahlFehler").innerText = fehler.toString();
+	document.getElementById("anzahlTreffer").innerText = treffer.toString();
+
+Damit die Buchstaben im Spielfeld angezeigt werden, müssen wir jetzt noch die Function `neuerBuchstabe` implementieren.
+
+**Code für die Function neuerBuchstabe()**
+
+    if (spielAktiv) {
+        // bestimme x und y position und den angezeigten Buchstaben
+        var x = getRandomInt(40, 760);
+        var y = 20;
+        var buchstabe = buchstaben[getRandomInt(0, level)];
+
+        // male mit SVG einen Kreis und den Buchstaben und gruppiere die beiden zu einer Figur
+        var kreis = svg.circle(x, y, 20).attr({ fill: "yellow" });
+        var text = svg.text(x - 5, y + 8, buchstabe);
+        var figur = svg.g(kreis, text);
+
+        // weise der Figur den Buchstaben zu und einen boolean Wert getippt, der true wird
+        // sobald der Buchstabe getippt wurde
+        figur.data("buchstabe", buchstabe);
+        figur.data("getippt", false);
+
+        // bewege die Figur in vier Sekunden zum unteren Ende des SVG Bereichs
+        figur.animate({ transform: "translate(0, 500)" }, 4000, null, function () {
+            // nach Ablauf der Animation entferne die Figur vom Spiel wenn sie noch nicht
+            // getippt wurde und erhöhe die Anzahl der Fehler um eins
+            if (!figur.data("getippt")) {
+                figur.remove();
+                fehler++;
+                datenAusgeben();
+            }
+        });
+
+        // rufe die Funktion neuerBuchstabe in einer Sekunde erneut auf
+        setTimeout(neuerBuchstabe, 1000);
+    }
+
+In der Function `neuerBuchstabe` wird eine weitere Function `getRandomInt` aufgerufen. Sie liefert uns eine Zufallszahl zwischen den beiden übergebenen Zahlen. 
+Diese Funktion müssen wir noch zu unserer JavaScript Datei hinzufügen, damit der Code funktioniert. Füge den nachfolgenden Code am Ende der Datei ein.
+
+**Neue Function getRandomInt**
+
+	// gibt eine Zufallszahl zwischen min (inklusive) und max (inklusive) zurück 
+	function getRandomInt(min, max) {
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
-Wenn du die Seite hangman.html jetzt öffnest, wirst du nach einem Wort gefragt. Dann passiert allerdings nichts mehr, da die Funktionen noch alle leer sind. 
-Als erstes implementieren wir die Funktion wortAzeigen.
+Wenn du die Seite schreibtrainer.html jetzt aufrufst erscheinen bereits die Buchstaben und fallen nach unten.
 
-	// zeige das Wort mit * für noch nicht erratene Buchstaben an
-	function wortAnzeigen() {
-		var verdecktesWort = wort;
+Jetzt müssen wir uns noch darum kümmern, dass wir Tastatureingaben erkennen. Es gibt in Javascript dazu das Event document.onkeyup. Füge dazu den 
+folgenden Code am Ende der Datei ein.
 
-		// prüfe für jeden Buchstaben im Wort, ob er sich bereits in den geratenen Buchstaben befindet
-		for (var i = 0; i < verdecktesWort.length; i++) {
-			if (gerateneBuchstaben.indexOf(verdecktesWort[i]) < 0) {
-				verdecktesWort = verdecktesWort.replace(verdecktesWort[i], "*");
+**Neues Event document.onkeyup**
+
+	// reagiert wenn eine Taste gedrückt wird
+	document.onkeyup = function (event) {
+		// finde alle Figuren im Spiel
+		var figuren = svg.selectAll("g");
+		if (figuren) {
+			// suche in den Figuren jene, deren Buchstabe mit dem gedrückten Buchstaben 
+			// übereinstimmt und die noch nicht getippt wurden
+			var trefferFiguren = figuren.items.filter(function (figur) {
+				return figur.data("buchstabe") == event.key && !figur.data("getippt");
+			});
+
+			// wenn eine Figur gefunden wurde, dann wurde ein richtiger Buchstabe gedrückt,
+			// sonst erhöhe die Anzahl der Fehler
+			if (trefferFiguren.length > 0) {
+				buchstabeGetippt(trefferFiguren[0]);
+			} else {
+				fehler++;
 			}
-		}
 
-		// zeige das verdeckte Wort an
-		document.getElementById("wort").innerText = verdecktesWort;
-
-		// wenn kein * im verdeckten Wort mehr vorkommt, dann wurde das ganze Wort erraten
-		if (verdecktesWort.indexOf("*") < 0) {
-			document.getElementById("info").innerText = "Gratuliere, du hast das Wort erraten!";
-			gameFinished = true;
-		}
-	}
-
-Wenn du die Seite nun aufrufst, wird du zuerst nach einem Wort gefragt, dann wird für jeden Buchstaben im Wort ein Sternchen angezeigt.
-
-![Hangman Wort anzeigen](hangman/images/wort-anzeigen.png)
-
-Als nächstes müssen wir dem zweiten Spieler erlauben, Buchstaben einzugeben. Dazu reagieren wir auf das Event `document.onkeyup`. Solange das Spiel noch nicht vorbei ist, 
-prüfen wir den eingegebenen Buchstaben. In der Funktion `buchstabePruefen` unterscheiden wir dazu drei verschiedene Fälle:
-
-- der Buchstabe wurde bereits geraten
-- der Buchstabe wurde noch nicht geraten, kommt aber nicht im Wort vor 
-- der Buchstabe wurde noch nicht geraten und kommt im Wort vor
-
-Wenn die Anzahl der Fehlerversuche 10 ist, dann ist das Spiel zu Ende.
-
-	// reagiere, wenn ein Buchstabe gedrückt wird
-	document.onkeyup = function(event) {
-		if (!gameFinished) {
-			buchstabePruefen(event.key);
+			datenAusgeben();
 		}
 	};
 
-	// prüfe, ob ein Buchstabe bereits geraten wurde oder gar nicht im Wort vorkommt
-	function buchstabePruefen(key) {
-		if (gerateneBuchstaben.indexOf(key) >= 0) {
-			// der Buchstabe wurde bereits gedrückt
-			document.getElementById("info").innerText = "Du hast den Buchstaben " + key + " bereits geraten.";
-			anzahlFehlversuche++;
-			hangmanMalen();
-		} else if (wort.indexOf(key) < 0) {
-			// der Buchstabe kommt nicht im Wort vor
-			document.getElementById("info").innerText = "Der Buchstabe " + key + " kommt im Wort nicht vor.";
-			gerateneBuchstaben.push(key);
-			anzahlFehlversuche++;
-			hangmanMalen();
-		} else {
-			// es wurde ein Buchstabe erraten
-			document.getElementById("info").innerText = "Super, du hast einen Buchstaben erraten";
-			gerateneBuchstaben.push(key);
-			wortAnzeigen();
-		}
+In dieser Funktion wird eine weitere Funktion `buchstabeGetippt` aufgerufen, die wir ebenfalls noch zu unserer JavaScript Datei hinzufügen müssen.
 
-		// nach 10 Fehlversuchen ist das Spiel zu Ende
-		if (anzahlFehlversuche >= 10) {
-			document.getElementById("info").innerText = "Game over!";
-			gameFinished = true;
+**Neue Function buchstabeGetippt**
+
+	// zeigt an, dass eine richtige Taste gedrückt wurde
+	function buchstabeGetippt(figur) {
+		// ändere den Wert getippt der Figur auf true
+		figur.data("getippt", true);
+
+		// vergrößere den Kreis und ändere die Farbe auf hellgrün über eine halbe Sekunde
+		figur.select("circle").animate({ r: 40, fill: "lightgreen" }, 500, function () {
+			// nach der Animation entferne die Figur vom Spiel
+			figur.remove();
+		});
+
+		// erhöhe die Anzahl der Treffer um eins
+		treffer++;
+
+		// erhöhe das Level alle 5 Treffer
+		if (treffer % 5 == 0) {
+			level++;
 		}
 	}
 
-Du kannst das Spiel jetzt schon spielen. Die richtig erratenen Buchstaben werden angezeigt. Nach 10 Fehlversuchen ist das Spiel zu Ende.
+Das Spiel ist jetzt fertig. Wenn du einen Buchstaben tippst, der gerade im Spielfeld angezeigt wird, wird der Kreis gröer und grün, dann verschwindet 
+der Buchstabe.
 
-![Hangman Wort anzeigen](hangman/images/buchstaben-raten.png)
+## Weitere Ideen
 
-## Galgen malen
+- Ändere das Tempo des Spiels indem die Kreise schneller oder langsamer fallen.
+- Ändere das Tempo des Spiels indem die Kreise schneller oder langsamer entstehen.
+- Ändere die Logik der gewählten Buchstaben so, dass vom Zufallsgenerator abhängig vom Level nur die letzten vier Buchstaben berücksichtig werden.
+- Finde eine bessere Logik zur Auswahl der Buchstaben, so dass neue Buchstaben öfter vorkommen als bereits gelernte.
 
-Jetzt fehlt nur noch der Galgen, damit man auch weiß, wieviele Fehlversuche man schon hatte.
-
-Zum Zeichnen verwenden wir die Bibliothek [snap.svg](http://snapsvg.io/docs/){:target="_blank"}. Du kannst damit ganz einfach Linien, Kreise, Ellipsen, Rechtecke und ähnliches malen.
-
-	// Beispiele
-	svg.circle(x, y, r);
-	svg.ellipse(x, y, rx, ry);
-	svg.rect(x, y, width, height);
-	svg.line(x1, y1, x2, y2);
-	svg.text(x, y, "Ich male mit snap.svg!");
-	svg.path("M200,250L300,300L400,250");
-
-Für das Galgenmännchen in der Funktion `hangmanMalen` brauchen wir die Befehle `line` und `circle`.
-
-![Hangman SVG](hangman/images/hangman-svg.png)
-
-Bei jedem Fehlversuch malen wir eine weitere Line oder einen Kreis dazu. Die erste Linie ist der Sockel des Galgen. Die Linie beginnt an der Position x=50, y=450 und endet 
-an der Position x=150, y=450. Ersetze die Platzhalter `// TODO` durch die Linien bzw. den Kreis für die weiteren Fehlversuche.
-
-	// male das Galgenmännchen
-	function hangmanMalen() {
-		switch (anzahlFehlversuche) {
-			case 1:
-				svg.line(50, 450, 150, 450);
-				break;
-			case 2:
-				// TODO
-				break;
-			case 3:
-				// TODO
-				break;
-			case 4:
-				// TODO
-				break;
-			case 5:
-				// TODO
-				break;
-			case 6:
-				// TODO
-				break;
-			case 7:
-				// TODO
-				break;
-			case 8:
-				// TODO
-				break;
-			case 9:
-				// TODO
-				break;
-			case 10:
-				// TODO
-				break;
-		}
-	}
-
-Wenn du Hilfe beim Malen des Galgenmännchen brauchst, findest du den gesamten Code unter <a href="hangman/hangman.html" target="_blank">hangman.html</a>. Du kannst das Spiel dort direkt ausprobieren, 
-oder du siehst der den Source Code mit Hilfe der Developer Tools (F12) an.
+Du kannst das Spiel unter <a href="http://coderdojo-linz.github.io/trainingsanleitungen/web/svg-schreibtrainer/schreibtrainer.html" target="_blank">http://coderdojo-linz.github.io/trainingsanleitungen/web/svg-schreibtrainer/schreibtrainer.html</a> direkt ausprobieren, 
+oder du kannst dir auch den Source Code mit Hilfe der Developer Tools (F12) ansehen.

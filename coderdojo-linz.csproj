@@ -442,6 +442,10 @@
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\fraktal-baum.png" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\images\snap-svg-figur.png" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum\svg-fraktalbaum.sln" />
+    <Content Include="trainingsanleitungen\web\svg-schreibtrainer\images\schreibtrainer.png" />
+    <Content Include="trainingsanleitungen\web\svg-schreibtrainer\schreibtrainer.css" />
+    <Content Include="trainingsanleitungen\web\svg-schreibtrainer\schreibtrainer.html" />
+    <Content Include="trainingsanleitungen\web\svg-schreibtrainer\schreibtrainer.js" />
     <Content Include="_includes\footer.html" />
     <Content Include="_includes\head.html" />
     <Content Include="_includes\header.html" />
@@ -553,6 +557,7 @@
     <Content Include="trainingsanleitungen\scratch\scratch-snake\SpielZuEnde.sprite2" />
     <Content Include="trainingsanleitungen\web\svg-fraktalbaum.md" />
     <Content Include="trainingsanleitungen\web\hangman.md" />
+    <Content Include="trainingsanleitungen\web\svg-schreibtrainer.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.ts" />

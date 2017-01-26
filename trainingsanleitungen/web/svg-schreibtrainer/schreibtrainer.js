@@ -20,7 +20,7 @@ function starteSpiel() {
 }
 
 // gibt die Anzahl der Treffer und die Anzahl der Fehler aus
-function datenAusgeben(figur) {
+function datenAusgeben() {
     document.getElementById("anzahlFehler").innerText = fehler.toString();
     document.getElementById("anzahlTreffer").innerText = treffer.toString();
 }
@@ -59,21 +59,28 @@ function neuerBuchstabe() {
     }
 }
 
+// gibt eine Zufallszahl zwischen min (inklusive) und max (inklusive) zurück 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 // reagiert wenn eine Taste gedrückt wird
 document.onkeyup = function (event) {
-    // finde alle Figurn im Spiel
-    var figurn = svg.selectAll("g");
-    if (figurn) {
-        // suche in den Figurn jene, deren Buchstabe mit dem gedrückten Buchstaben 
+    // finde alle Figuren im Spiel
+    var figuren = svg.selectAll("g");
+    if (figuren) {
+        // suche in den Figuren jene, deren Buchstabe mit dem gedrückten Buchstaben 
         // übereinstimmt und die noch nicht getippt wurden
-        var trefferFigurn = figurn.items.filter(function (figur) {
+        var trefferFiguren = figuren.items.filter(function (figur) {
             return figur.data("buchstabe") == event.key && !figur.data("getippt");
         });
 
         // wenn eine Figur gefunden wurde, dann wurde ein richtiger Buchstabe gedrückt,
         // sonst erhöhe die Anzahl der Fehler
-        if (trefferFigurn.length > 0) {
-            buchstabeGetippt(trefferFigurn[0]);
+        if (trefferFiguren.length > 0) {
+            buchstabeGetippt(trefferFiguren[0]);
         } else {
             fehler++;
         }
@@ -100,11 +107,4 @@ function buchstabeGetippt(figur) {
     if (treffer % 5 == 0) {
         level++;
     }
-}
-
-// gibt eine Zufallszahl zwischen min (inklusive) und max (inklusive) zurück 
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
