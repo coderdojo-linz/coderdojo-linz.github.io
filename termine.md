@@ -6,77 +6,72 @@ bannerimage: /images/coderdojo-banner-3.jpg
 
 # Termine
 
-<table class="table">
+<table class="table" id="eventsTable">
 	<thead>
 		<tr>
 			<th>Datum</th>
 			<th>Ort</th>
+			<th>Freie Plätze</th>
 			<th>Anmeldung</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr class="subtitle">
-			<td colspan="3">Schuljahr 2016 / 2017</td>
-		</tr>
-		<tr>
-			<td>Freitag, 10. Februar 2017 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026386623" target="_blank">zur Anmeldung</a></td>
-		</tr>
-		<tr>
-			<td>Freitag, 03. März 2017 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026387626" target="_blank">zur Anmeldung</a></td>
-		</tr>
-		<tr>
-			<td>Freitag, 17. März 2017 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026388629" target="_blank">zur Anmeldung</a></td>
-		</tr>
-		<tr>
-			<td>Freitag, 31. März 2017 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026389632" target="_blank">zur Anmeldung</a></td>
-		</tr>
-		<tr>
-			<td>Freitag, 21. April 2017 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026390635" target="_blank">zur Anmeldung</a></td>
-		</tr>
-		<tr>
-			<td>Freitag, 05. Mai 2017 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026391638" target="_blank">zur Anmeldung</a></td>
-		</tr>
-		<tr>
-			<td>Freitag, 19. Mai 2017 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026392641" target="_blank">zur Anmeldung</a></td>
-		</tr>
-		<tr>
-			<td>Freitag, 02. Juni 2017 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026393644" target="_blank">zur Anmeldung</a></td>
-		</tr>
-		<tr>
-			<td>Freitag, 23. Juni 2017 16:00 - 18:00</td>
-			<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>
-			<td><a href="https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-26026394647" target="_blank">zur Anmeldung</a></td>
+			<td colspan="4">Schuljahr 2016 / 2017</td>
 		</tr>
 	</tbody>
 </table>
+
+<p class="loadingText">Die Termine werden geladen ...</p>
+
+<p class="warning">Für unsere regelmäßigen CoderDojo Teilnehmer haben wir auch für ausgebuchte Events Tickets reserviert. Die notwendigen Informationen zur Anmeldung bekommt ihr per Email.</p>
 
 ## Was muss mitgebracht werden?
 
 Grundsätzlich muss jedes Kind einen Laptop mitbringen. Der Laptop muss aber nicht besonders schnell sein. Es ist egal, ob er mit Windows, Mac OS oder Linux betrieben wird. iPads, Android-Tablets oder Smartphones reichen nicht aus.
 
-Falls kein Laptop zur Verfügung steht, nehmen Sie bitte mit uns [Kontakt](http://coderdojo-linz.github.io/kontakt.html) auf. Wir haben eine limitierte Anzahl an Geräten, die wir während der CoderDojos zur Verfügung stellen können.
+Falls kein Laptop zur Verfügung steht, geben Sie bitte bei der Anmeldung an, dass ein Leihgerät benötigt wird. Wir haben eine limitierte Anzahl an Geräten, die wir während der CoderDojos zur Verfügung stellen können.
 
 ## Ort
 
 Das CoderDojo findet üblicherweise im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt.
-Ausnahmen davon sind der 21. Oktober - hier sind wir bei der <a href="https://www.wko.at/Content.Node/service/ooe/Service_Reiter_Startseite_Oberoesterreich..html" target="_blank">WKO Oberösterreich</a> zu Gast - und der 16. Dezember - hier freuen wir uns sehr, dass uns die Firma <a href="http://www.dynatrace.com/de/" target="_blank">Dynatrace</a> für ein Weihnachts-Dojo eingeladen hat.
+Ausnahmen davon sind der 31. März und der 19. Mai. Der Veranstaltungsort für diese beiden Termine wird noch bekanntgegeben.
 
 Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp){:target="_blank"}.
+
+<script language="javascript">
+$.get("https://participants-management-api.azurewebsites.net/api/events/", function(data) {
+	var eventsTable = $("#eventsTable");
+
+	data.forEach(function(event) {
+		var date = moment(event.date);
+		var row = "<tr>";
+		row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
+
+		if (date.unix() == moment.utc("2017-03-31").unix() || date.unix() == moment.utc("2017-05-19").unix()) {
+			row += "<td>Ort wird noch bekanntgegeben</td>";
+		} else {
+			row += "<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>";
+		}
+
+		row += "<td id='availableTickets" + event.eventbriteId + "' class='text-right'></td>";
+		row += "<td><a href='https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-" + event.eventbriteId + "' target='_blank'>zur Anmeldung</a></td>";
+		row += "</tr>";
+		eventsTable.append(row);
+	});
+
+	$(".loadingText").hide();
+
+	$.get("https://participants-management-api.azurewebsites.net/api/events?tcStatus=true&past=false", function(data) {
+		data.forEach(function(event) {
+			if (event.quantitySold >= event.quantityTotal) {
+				$("#availableTickets" + event.eventbriteId).append("<span class='warning'>ausgebucht</span>");
+			} else {
+				$("#availableTickets" + event.eventbriteId).append(event.quantityTotal - event.quantitySold);
+			}
+		});
+	});
+});
+</script>
 
 <iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed/v1/place?q=Wissensturm%20Volkshochschule%20Linz%20Stadtbibliothek%2C%20K%C3%A4rntnerstra%C3%9Fe%2C%20Linz%2C%20Austria&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE" allowfullscreen></iframe>

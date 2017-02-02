@@ -1,6 +1,7 @@
 ﻿body {
 	background-color: #ffffff;
 	padding-top: 61px;
+	padding-bottom: 40px;
 	font-size: 16px;
 }
 
@@ -217,4 +218,9 @@ a, a:hover, a:focus {
 		//font-weight: bold;
 		text-decoration: underline;
 	}
+}
+
+.loadingText {
+	text-align: center;
+    font-size: 20px;
 }
