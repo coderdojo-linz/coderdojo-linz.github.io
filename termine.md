@@ -55,8 +55,7 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 		}
 
 		if (date.unix() == moment.utc("2017-03.03").unix() || date.unix() == moment.utc("2017-03.17").unix() || date.unix() == moment.utc("2017-04.21").unix()) {
-			row += "<div class=\"info\" style=\"padding-top: 20px; padding-bottom: 5px;\">Dieses CoderDojo wird von der Firma <a href=\"https://www.oxaion.de/\" target=\"_blank\">Oxaion</a> gesponsert.</div>";
-			row += "<div style=\"border: solid 1px #ddd; padding: 20px; width: 100%; border-radius: 10px; text-align: center; background-color: #eee;\"><a href=\"https://www.oxaion.de/\" target=\"_blank\"><img src=\"images/oxaion.svg\" style=\"width: 100%; max-width: 150px; margin-bottom: 0;\" /></a></div>";
+			row += "<div class=\"sponsor\"><div>Dieses CoderDojo wird von der Firma <a href=\"https://www.oxaion.de/\" target=\"_blank\">Oxaion</a> gesponsert.</div><a href=\"https://www.oxaion.de/\" target=\"_blank\"><img src=\"images/oxaion.svg\" style=\"width: 100%; max-width: 150px; margin-bottom: 0;\" /></a></div>";
 		}
 
 		row += "</td>";
