@@ -49,10 +49,17 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 		row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
 
 		if (date.unix() == moment.utc("2017-03-31").unix() || date.unix() == moment.utc("2017-05-19").unix()) {
-			row += "<td>Ort wird noch bekanntgegeben</td>";
+			row += "<td>Ort wird noch bekanntgegeben";
 		} else {
-			row += "<td>Wissensturm, Kärtnerstraße 26, 4020 Linz</td>";
+			row += "<td>Wissensturm, Kärtnerstraße 26, 4020 Linz";
 		}
+
+		if (date.unix() == moment.utc("2017-03.03").unix() || date.unix() == moment.utc("2017-03.17").unix() || date.unix() == moment.utc("2017-04.21").unix()) {
+			row += "<div class=\"info\" style=\"padding-top: 20px; padding-bottom: 5px;\">Dieses CoderDojo wird von der Firma <a href=\"https://www.oxaion.de/\" target=\"_blank\">Oxaion</a> gesponsert.</div>";
+			row += "<div style=\"border: solid 1px #ddd; padding: 20px; width: 100%; border-radius: 10px; text-align: center; background-color: #eee;\"><a href=\"https://www.oxaion.de/\" target=\"_blank\"><img src=\"images/oxaion.svg\" style=\"width: 100%; max-width: 150px; margin-bottom: 0;\" /></a></div>";
+		}
+
+		row += "</td>";
 
 		row += "<td id='availableTickets" + event.eventbriteId + "' class='text-right'></td>";
 		row += "<td><a href='https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-" + event.eventbriteId + "' target='_blank'>zur Anmeldung</a></td>";
