@@ -45,16 +45,17 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 
 	data.forEach(function(event) {
 		var date = moment(new Date(event.date)).startOf("day");
+		var formattedDate = date.format("YYYY-MM-DD");
 		var row = "<tr>";
 		row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
 
-		if (date.unix() == moment.utc("2017-03-31").unix() || date.unix() == moment.utc("2017-05-19").unix()) {
+		if (formattedDate == "2017-03-31" || formattedDate == "2017-05-19") {
 			row += "<td>Ort wird noch bekanntgegeben";
 		} else {
 			row += "<td>Wissensturm, Kärtnerstraße 26, 4020 Linz";
 		}
 
-		if (date.format("YYYY-MM-DD") == "2017-03-03" || date.format("YYYY-MM-DD") == "2017-03-17" || date.format("YYYY-MM-DD") == "2017-04-21") {
+		if (formattedDate == "2017-03-03" || formattedDate == "2017-03-17" || formattedDate == "2017-04-21") {
 			row += "<div class=\"sponsor\"><div>Dieses CoderDojo wird von der Firma <a href=\"https://www.oxaion.de/\" target=\"_blank\">Oxaion</a> gesponsert.</div><a href=\"https://www.oxaion.de/\" target=\"_blank\"><img src=\"images/oxaion.svg\" style=\"width: 100%; max-width: 150px; margin-bottom: 0;\" /></a></div>";
 		}
 
