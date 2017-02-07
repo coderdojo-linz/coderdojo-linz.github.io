@@ -19,7 +19,7 @@ Als erste Figur brauchst du das Raumschiff. Es besteht aus zwei Kostümen: dem R
 wenn das Spiel vorbei ist. Zeige den Text "Game Over" an oder male ein passendes Bild
 
 3. ![Laser](scratch-space-shooter/laser.png){: .right}
-Die nächste Figur ist der Laserstrahl, der von der Rakte abgefeuert werden kann.
+Die nächste Figur ist der Laserstrahl, der von der Rakete abgefeuert werden kann.
 
 4. ![Meteroit](scratch-space-shooter/meteroit.png){: .right}
 Und als letzte Figur brauchst du noch einen Meteoriten.
