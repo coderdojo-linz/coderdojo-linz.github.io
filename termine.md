@@ -48,7 +48,6 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 		var row = "<tr>";
 		row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
 
-		console.log(date.format("YYYY-MM-DD hh:mm"));
 		if (date.unix() == moment.utc("2017-03-31").unix() || date.unix() == moment.utc("2017-05-19").unix()) {
 			row += "<td>Ort wird noch bekanntgegeben";
 		} else {
