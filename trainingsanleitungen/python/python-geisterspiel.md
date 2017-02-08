@@ -170,11 +170,11 @@ Eine mögliche Lösung für das Geisterspiel könnte dann so aussehen:
 		tuer = input('1, 2 oder 3? ')
 		tuer_nummer = int(tuer)
 		if tuer_nummer == geistertuer:
-	        print('GEIST!')
+			print('GEIST!')
 			print('Lauf schnell weg!')
 			du_bist_mutig = False
 		else:
-	        print('Kein Geist!')
+			print('Kein Geist!')
 			print('Du bis ein Zimmer weiter.')
 			score = score + 1
 
