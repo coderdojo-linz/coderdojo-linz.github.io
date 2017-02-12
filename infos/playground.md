@@ -32,7 +32,7 @@ Wie auch das CoderDojo findet CoderDojo Playground im [Wissensturm Linz](http://
 
 ## Muss man sich anmelden?
 
-**Ja!**. Momentan bieten wir für CoderDojo Playground keine offene Anmeldung. Alle regelmäßigen Teilnehmer des normalen CoderDojo erhalten eine Einladung mit Anmeldelink per Email.
+**Ja.** Momentan bieten wir für CoderDojo Playground keine offene Anmeldung. Alle regelmäßigen Teilnehmer des normalen CoderDojo erhalten eine Einladung mit Anmeldelink per Email.
 
 Du möchtest kommen, hast aber keine Einladung erhalten? Bitte [kontaktiere uns](/kontakt.html).
 
