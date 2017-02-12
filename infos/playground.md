@@ -22,9 +22,9 @@ Beim **CoderDojo Playground** treffen wir uns, um zu üben. Wer beim normalen Co
 
 Ziel ist es, dass CoderDojo Playground zweiwöchentlich genau gegengleich zum normalen CoderDojo stattfindet. Ihr könnt also eine Woche zum CoderDojo kommen und in der darauffolgenden Woche im Playground üben oder begonnene Projekte fertigstellen.
 
-CoderDojo Playground findet wie das CoderDojo Freitags zwischen 16:00 und 18:00 statt.
+CoderDojo Playground findet wie das CoderDojo Freitags von 16:00 bis 18:00 statt.
 
-CoderDojo Playground startet am **17. Februar 2017**. Der zweite Termine wird der **10. März 2017** sein. Danach wird über euer Feedback und das Feedback des Mentorenteams entschieden, ob Änderungen am Konzept notwendig sind.
+CoderDojo Playground startet am **17. Februar 2017**. Der zweite Termine wird der **10. März 2017** sein. Danach wird durch euer Feedback und das Feedback des Mentorenteams entschieden, ob Änderungen am Konzept notwendig sind.
 
 ## Wo ist CoderDojo Playground?
 
