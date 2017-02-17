@@ -49,10 +49,13 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 		var row = "<tr>";
 		row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
 
-		if (formattedDate == "2017-03-31" || formattedDate == "2017-05-19") {
-			row += "<td>Ort wird noch bekanntgegeben";
+		row += "<td>";
+		if (formattedDate == "2017-03-31") {
+			row += "<a href=\"http://www.aec.at/center/skyloft/\" target=\"_blank\">AEC Sky Loft</a>, Ars-Electronica-Straße 1, 4040 Linz";
+		} else if (formattedDate == "2017-05-19") {
+			row += "Ort wird noch bekanntgegeben";
 		} else {
-			row += "<td>Wissensturm, Kärtnerstraße 26, 4020 Linz";
+			row += "Wissensturm, Kärtnerstraße 26, 4020 Linz";
 		}
 
 		if (formattedDate == "2017-03-03" || formattedDate == "2017-03-17" || formattedDate == "2017-04-21") {

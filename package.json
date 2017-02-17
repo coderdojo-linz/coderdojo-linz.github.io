@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "jekyll serve --force_polling -i"
   },
   "repository": {
     "type": "git",
