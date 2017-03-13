@@ -24,7 +24,11 @@ bannerimage: /images/coderdojo-banner-3.jpg
 
 <p class="loadingText">Die Termine werden geladen ...</p>
 
-<p class="warning">Für unsere regelmäßigen CoderDojo Teilnehmer haben wir auch für ausgebuchte Events Tickets reserviert. Die notwendigen Informationen zur Anmeldung bekommt ihr per Email.</p>
+<p class="warning">* Ausgebucht: Für unsere regelmäßigen CoderDojo Teilnehmer haben wir auch für ausgebuchte Events Tickets reserviert. Die notwendigen Informationen zur Anmeldung bekommt ihr per Email.</p>
+
+<p>* Playground: Wer beim normalen CoderDojo schon etwas Erfahrung gesammelt hat und mit Freunden an seinen Projekten arbeiten möchte, hat beim CoderDojo Playground Gelegenheit dazu. 
+Den Link für die Anmeldung zum CoderDojo Playground erhaltet ihr, nachdem ihr zum ersten Mal an 
+einem normalen Dojo teilgenommen habt.</p>
 
 ## Was muss mitgebracht werden?
 
@@ -42,14 +46,46 @@ Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise u
 <script language="javascript">
 $.get("https://participants-management-api.azurewebsites.net/api/events/", function(data) {
 	var eventsTable = $("#eventsTable");
+	additionalEvents = [
+		{ date: new Date(2017, 2, 24), type: "playground" },
+		{ date: new Date(2017, 3, 7), type: "playground" },
+		{ date: new Date(2017, 3, 22), type: "bootcamp" },
+		{ date: new Date(2017, 3, 28), type: "playground" },
+		{ date: new Date(2017, 4, 12), type: "playground" },
+		{ date: new Date(2017, 5, 9), type: "playground" }
+	].filter(event => event.date >= new Date());
+	
+	data = data.concat(additionalEvents).sort((a, b) => {
+		a = new Date(a.date);
+		b = new Date(b.date);
+		return a > b ? 1 : a < b ? -1 : 0;
+	});
 
 	data.forEach(function(event) {
 		var date = moment(new Date(event.date)).startOf("day");
 		var formattedDate = date.format("YYYY-MM-DD");
-		var row = "<tr>";
+		var row = "<tr";
+		if (event.type == "playground") {
+			row += " class='playground'";
+		} else if (event.type == "bootcamp") {
+			row += " class='bootcamp'";
+		}
+
+		row += ">";
 		row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
 
 		row += "<td>";
+
+		if (event.type == "playground") {
+			row += "Playground*<br/>";
+		} else if (event.type == "bootcamp") {
+			row += "Junior Bootcamp - im Rahmen des <a href='https://coding-club-linz.github.io/global-azure-bootcamp-2017' target='_blank'>Global Azure Bootcamps</a><br/>";
+			row += "für junge Coder ab 13 Jahren<br/>";
+			row += "Details folgen in Kürze<br/>";
+		} else {
+			row += "CoderDojo<br/>";
+		}
+		
 		if (formattedDate == "2017-03-31") {
 			row += "<a href=\"http://www.aec.at/center/skyloft/\" target=\"_blank\">AEC Sky Loft</a>, Ars-Electronica-Straße 1, 4040 Linz";
 		} else if (formattedDate == "2017-05-19") {
@@ -65,7 +101,14 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 		row += "</td>";
 
 		row += "<td id='availableTickets" + event.eventbriteId + "' class='text-right'></td>";
-		row += "<td><a href='https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-" + event.eventbriteId + "' target='_blank'>zur Anmeldung</a></td>";
+		if (event.type == "playground") {
+			row += "<td></td>";
+		} else if (event.type == "bootcamp") {
+			row += "<td></td>";
+		} else {
+			row += "<td><a href='https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-" + event.eventbriteId + "' target='_blank'>zur Anmeldung</a></td>";
+		}
+		
 		row += "</tr>";
 		eventsTable.append(row);
 	});
@@ -75,7 +118,7 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 	$.get("https://participants-management-api.azurewebsites.net/api/events?tcStatus=true&past=false", function(data) {
 		data.forEach(function(event) {
 			if (event.quantitySold >= event.quantityTotal) {
-				$("#availableTickets" + event.eventbriteId).append("<span class='warning'>ausgebucht</span>");
+				$("#availableTickets" + event.eventbriteId).append("<span class='warning'>ausgebucht*</span>");
 			} else {
 				$("#availableTickets" + event.eventbriteId).append(event.quantityTotal - event.quantitySold);
 			}
