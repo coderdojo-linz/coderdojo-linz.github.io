@@ -284,6 +284,8 @@ body.sushi {
         display: none; } }
   body.sushi img.full {
     width: 100%; }
+  body.sushi img.max-full {
+    max-width: 100%; }
   body.sushi img.floatLeft {
     float: left; }
   body.sushi div.cd-alert-large {
