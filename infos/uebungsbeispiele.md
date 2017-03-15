@@ -33,6 +33,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Minesweeper - Finde die Bomben](/trainingsanleitungen/scratch/scratch-minesweeper.html)
 1. [Weihnachtsspiel 2016 - Dekoriere den Weihnachtsbaum](/trainingsanleitungen/scratch/scratch-weihnachten-2016.html)
 1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/scratch/scratch-labyrinth.html)
+1. [Chess - Programmiere einen Computerspieler für Schach](/trainingsanleitungen/scratch/scratch-chess.html)
 
 ## TouchDevelop
 
