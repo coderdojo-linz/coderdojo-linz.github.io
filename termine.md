@@ -79,7 +79,7 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 		if (event.type == "playground") {
 			row += "Playground*<br/>";
 		} else if (event.type == "bootcamp") {
-			row += "Junior Bootcamp - im Rahmen des <a href='https://coding-club-linz.github.io/global-azure-bootcamp-2017' target='_blank'>Global Azure Bootcamps</a><br/>";
+			row += "Junior Bootcamp - im Rahmen des <a href='https://coding-club-linz.github.io/global-azure-bootcamp-2017/junior-bootcamp.html' target='_blank'>Global Azure Bootcamps</a><br/>";
 			row += "für junge Coder ab 13 Jahren<br/>";
 			row += "Details folgen in Kürze<br/>";
 		} else {
@@ -104,7 +104,7 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 		if (event.type == "playground") {
 			row += "<td></td>";
 		} else if (event.type == "bootcamp") {
-			row += "<td></td>";
+			row += "<td><a href='https://www.eventbrite.de/e/global-azure-bootcamp-austria-2017-tickets-31460449050' target='_blank'>zur Anmeldung</a></td>";
 		} else {
 			row += "<td><a href='https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-" + event.eventbriteId + "' target='_blank'>zur Anmeldung</a></td>";
 		}
