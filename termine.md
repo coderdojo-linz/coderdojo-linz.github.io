@@ -81,7 +81,6 @@ $.get("https://participants-management-api.azurewebsites.net/api/events/", funct
 		} else if (event.type == "bootcamp") {
 			row += "Junior Bootcamp - im Rahmen des <a href='https://coding-club-linz.github.io/global-azure-bootcamp-2017/junior-bootcamp.html' target='_blank'>Global Azure Bootcamps</a><br/>";
 			row += "für junge Coder ab 13 Jahren<br/>";
-			row += "Details folgen in Kürze<br/>";
 		} else {
 			row += "CoderDojo<br/>";
 		}
