@@ -88,7 +88,7 @@ $.get("https://participants-management-service.azurewebsites.net/api/events/", f
 		if (formattedDate == "2017-03-31") {
 			row += "<a href=\"http://www.aec.at/center/skyloft/\" target=\"_blank\">AEC Sky Loft</a>, Ars-Electronica-Straße 1, 4040 Linz";
 		} else if (formattedDate == "2017-05-19") {
-			row += "Ort wird noch bekanntgegeben";
+			row += "<a href=\"https://www.grz.at/eBusiness/01_template1/1077528498541834366-1079162600655747802_1079162937542245764-1079162937542245764-NA-42-NA.html\" target=\"_blank\">GRZ IT Center GmbH</a>, Goethestr. 80, 4042 Linz";
 		} else {
 			row += "Wissensturm, Kärtnerstraße 26, 4020 Linz";
 		}
