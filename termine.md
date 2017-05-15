@@ -55,7 +55,11 @@ Ausnahmen davon sind der 31. März und der 19. Mai. Der Veranstaltungsort für d
 Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp){:target="_blank"}.
 
 <script language="javascript">
-$.get("https://participants-management-service.azurewebsites.net/api/events/", function(data) {
+// https://participants-management-service.azurewebsites.net/api/events/
+$.get("https://www.eventbriteapi.com/v3/series/17195536312/events/?token=W5WBA7HC7GDQFUDCP4TE&time_filter=current_future", function(data) {
+	data = data.events.map(function(event) {
+		return { "date": event.start.local };
+	});
 	var eventsTable = $("#eventsTable");
 	additionalEvents = [
 		{ date: new Date(2017, 2, 24), type: "playground" },
