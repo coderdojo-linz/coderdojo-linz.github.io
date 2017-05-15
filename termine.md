@@ -58,7 +58,7 @@ Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise u
 // https://participants-management-service.azurewebsites.net/api/events/
 $.get("https://www.eventbriteapi.com/v3/series/17195536312/events/?token=W5WBA7HC7GDQFUDCP4TE&time_filter=current_future", function(data) {
 	data = data.events.map(function(event) {
-		return { "date": event.start.local };
+		return { "date": event.start.local, "eventbriteId": event.id };
 	});
 	var eventsTable = $("#eventsTable");
 	additionalEvents = [
