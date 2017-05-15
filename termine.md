@@ -37,7 +37,7 @@ Schicke uns bitte eine Email an [info@coderdojo-linz.at](mailto:info@coderdojo-l
 - Vorname
 - Nachname
 - Alter
-- Vorkenntnisse im Programmieren wenn vorhanden
+- Vorkenntnisse im Programmieren (wenn vorhanden)
 
 Wir setzen dich auch unsere Warteliste und melden uns bei dir, sobald wieder Plätze verfügbar sind.
 
