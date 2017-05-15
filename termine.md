@@ -32,14 +32,14 @@ einem normalen Dojo teilgenommen habt.</p>
 
 ## Keine Tickets mehr verfügbar?
 
-Schicke uns bitte eine Email an [info@coderdojo-linz.at] mit folgenden Daten:
+Schicke uns bitte eine Email an [info@coderdojo-linz.at](mailto:info@coderdojo-linz.at) mit folgenden Daten:
 
 - Vorname
 - Nachname
 - Alter
 - Vorkenntnisse im Programmieren wenn vorhanden
 
-Wir setzen dich auch unsere Warteliste und melden uns bei dir, sobald Plätze verfügbar sind.
+Wir setzen dich auch unsere Warteliste und melden uns bei dir, sobald wieder Plätze verfügbar sind.
 
 ## Was muss mitgebracht werden?
 
