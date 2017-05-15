@@ -88,7 +88,9 @@ $.get("https://participants-management-service.azurewebsites.net/api/events/", f
 		if (formattedDate == "2017-03-31") {
 			row += "<a href=\"http://www.aec.at/center/skyloft/\" target=\"_blank\">AEC Sky Loft</a>, Ars-Electronica-Straße 1, 4040 Linz";
 		} else if (formattedDate == "2017-05-19") {
-			row += "<a href=\"https://www.grz.at/eBusiness/01_template1/1077528498541834366-1079162600655747802_1079162937542245764-1079162937542245764-NA-42-NA.html\" target=\"_blank\">GRZ IT Center GmbH</a>, Goethestr. 80, 4042 Linz";
+			row += "<a href=\"https://www.grz.at/eBusiness/01_template1/1077528498541834366-1079162600655747802_1079162937542245764-1079162937542245764-NA-42-NA.html\" target=\"_blank\">GRZ IT Center GmbH</a>, Goethestr. 80, 4020 Linz";
+		} else if (formattedDate == "2017-07-21" || formattedDate == "2017-08-04") {
+			row += "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6930\" target=\"_blank\">Johannes Kepler Universität Linz, Keplergebäude, Raum K 033C</a>, Altenberger Straße 69, 4040 Linz";
 		} else {
 			row += "Wissensturm, Kärtnerstraße 26, 4020 Linz";
 		}
