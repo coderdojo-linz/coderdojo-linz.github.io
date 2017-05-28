@@ -50,7 +50,7 @@ Falls kein Laptop zur Verfügung steht, geben Sie bitte bei der Anmeldung an, da
 ## Ort
 
 Das CoderDojo findet üblicherweise im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt.
-Ausnahmen davon sind der 31. März und der 19. Mai. Der Veranstaltungsort für diese beiden Termine wird noch bekanntgegeben.
+Ausnahmen davon sind der **21. Juli** und der **04. August**. An diesen Terminen findet das CoderDojo an der Johannes Kepler Universität Linz statt.
 
 Auf der Webseite des Wissensturms findet ihr noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp){:target="_blank"}.
 
@@ -106,8 +106,8 @@ $.get("https://participants-management-service.azurewebsites.net/api/events/?tcS
 			row += "Wissensturm, Kärtnerstraße 26, 4020 Linz";
 		}
 
-		if (formattedDate == "2017-03-03" || formattedDate == "2017-03-17" || formattedDate == "2017-04-21") {
-			row += "<div class=\"sponsor\"><div>Dieses CoderDojo wird von der Firma <a href=\"https://www.oxaion.de/\" target=\"_blank\">Oxaion</a> gesponsert.</div><a href=\"https://www.oxaion.de/\" target=\"_blank\"><img src=\"images/oxaion.svg\" style=\"width: 100%; max-width: 150px; margin-bottom: 0;\" /></a></div>";
+		if (formattedDate == "2017-06-02") {
+			row += "<div class=\"sponsor\"><div>Der Robotics Workshop bei diesem CoderDojo wird von <a href=\"http://www.sparxsystems.at\" target=\"_blank\">Sparx Systems</a>, <a href=\"https://www.microsoft.com/de-at\" target=\"_blank\">Microsoft</a>, <a href=\"https://www.aec.at/\" target=\"_blank\">Ars Electronica</a> und <a href=\"http://www.voesi.or.at/\" target=\"_blank\">VÖSI</a> gesponsert.</div><img src=\"images/sponsors_20170602.jpg\" style=\"width: 100%; margin-top: 5px; margin-bottom: 0;\" /></div>";
 		}
 
 		row += "</td>";
