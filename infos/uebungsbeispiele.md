@@ -57,6 +57,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/web/labyrinth-mit-svg.html)
 1. [Schreibtrainer mit SVG](/trainingsanleitungen/web/svg-schreibtrainer.html)
 1. [Erste Schritte mit Hugo](/trainingsanleitungen/web/erste-schritte-mit-hugo.html)
+1. [Snake mit Node.js](/trainingsanleitungen/web/snake-mit-nodejs.html)
 
 ## Minecraft
 
