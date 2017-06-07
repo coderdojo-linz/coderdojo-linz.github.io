@@ -66,9 +66,9 @@ $.get("https://participants-management-service.azurewebsites.net/api/events/?tcS
 		{ date: new Date(2017, 5, 9), type: "playground" },
 		{ date: new Date(2017, 5, 30), type: "playground" },
 		{ date: new Date(2017, 6, 14), type: "playground" }
-	].filter(event => event.date >= new Date());
+	].filter(function(event) { return event.date >= new Date(); });
 	
-	data = data.concat(additionalEvents).sort((a, b) => {
+	data = data.concat(additionalEvents).sort(function(a, b) {
 		a = new Date(a.date);
 		b = new Date(b.date);
 		return a > b ? 1 : a < b ? -1 : 0;
