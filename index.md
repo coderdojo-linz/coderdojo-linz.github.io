@@ -36,7 +36,7 @@ bannerimage: /images/coderdojo-banner-1.jpg
 		<p>Wir treffen uns jeden zweiten Freitag von 16:00 bis 18:00. <a href="/termine.html">Nächste Termine&nbsp;...</a></p>
 		<p>Wenn du Spaß und Interesse an Technik hast, dann komm zum CoderDojo in Linz!</p>
 
-		<p class="text-center"><a class="btn btn-material-light-blue-600" href="/termine.html">Zur Anmeldung</a></p>
+		<p class="text-center"><a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung</a></p>
 	</div>
 	<div class="col-md-4">
 		<div class="fb-page" data-href="https://www.facebook.com/coderdojolinz" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true">
