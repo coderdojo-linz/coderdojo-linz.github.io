@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Number guessing</title>
+</head>
+<body>
+<h2>Number guessing</h2>
+
+<p>Try to guess the number between 0 and 100!</p>
+
+<div style="height: 120px">
+	<label>Your tip:</label>
+	<input type="number" id="inputGuess" style="width:100px"/>
+	<button>Check</button>
+
+	<p id="outputResult"></p>
+	<p id="outputCount"></p>
+</div>
+</body>
+
+<script type="text/javascript">
+    var inputGuess = document.getElementById("inputGuess");
+    var outputResult = document.getElementById("outputResult");
+    var outputCount = document.getElementById("outputCount");
+
+    var number, count;
+    number = Math.floor(Math.random() * 100);
+</script>
+</html>
