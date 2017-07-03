@@ -6,17 +6,15 @@ bannerimage: /images/coderdojo-banner-3.jpg
 
 # Termine
 
-Wenn du noch keinen CoderDojo Mitgliedsausweis hast, musst du dich für die Teilnahme an deinem ersten Termin anmelden. Wenn es dir gefällt und du wiederkommen möchtest, erhälst du beim ersten Termin deinen Mitgliedsausweis.
+**Wenn du noch keinen CoderDojo Mitgliedsausweis hast, musst du dich für die Teilnahme an deinem ersten Termin anmelden. Wenn es dir gefällt und du wiederkommen möchtest, erhältst du beim ersten Termin deinen Mitgliedsausweis. Mit Mitgliedsausweis kannst du ohne weitere Anmeldung zu allen Terminen kommen.**
 
 <p class="text-center"><a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung</a></p>
 
-Als regelmäßiger Teilnehmer mit Mitgliedsausweis kannst du ohne Anmeldung zu allen Terminen kommen.
-
 Es gibt zwei verschiedene Veranstaltungen:
 
-- <span class="type-coderdojo">CoderDojo</span>: Beim CoderDojo helfen dir Mentoren von deinen ersten Schritten im Programmieren bis zu kniffligen technischen Problemen.
+- <span class="type-coderdojo">CoderDojo</span>: Das ist unsere Hauptveranstaltung. Beim CoderDojo helfen dir Mentoren von deinen ersten Schritten im Programmieren bis zu kniffligen technischen Problemen. Zu diesen Veranstaltungen kommen üblicherweise 35 bis 65 junge Coder.
 
-- <span class="type-playground">Playground</span>: Beim Playground hast du Gelegenheit im Umfeld von anderen jungen Codern selbständig an deinen Projekten zu arbeiten. Mentoren stehen hier nicht zur Verfügung.
+- <span class="type-playground">Playground</span>: Beim Playground hast du Gelegenheit, im Umfeld von anderen jungen Codern selbständig an deinen Projekten zu arbeiten und zu üben. Mentorinnen und Mentoren stehen hier weniger zur Verfügung. Zu diesen Veranstaltungen kommen üblicherweise 15 bis 25 junge Coder. [Mehr über Playgrounds&nbsp;...](/infos/playground.html)
 
 <table class="table" id="eventsTable">
 	<thead>

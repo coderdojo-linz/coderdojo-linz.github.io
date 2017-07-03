@@ -42,7 +42,8 @@ Die Arbeit mit sozialen Netzwerken wie Facebook oder Twitter ist erlaubt, damit 
 
 ## Wie funktionieren CoderDojos? ##
 
-**Die Treffen finden in der Regel alle zwei Wochen statt. Die Kinder und Jugendlichen treffen sich mit freiwilligen, technisch versierten Mentoren, um zusammen zu programmieren und unter Anleitung ihre Fähigkeiten zu entwickeln und auszubauen.**
+**Die Treffen finden in der Regel wöchentlich statt. Die Kinder und Jugendlichen treffen sich mit freiwilligen, technisch versierten Mentoren, um zusammen zu programmieren und unter Anleitung ihre Fähigkeiten zu entwickeln und auszubauen.**<br/>
+<a class="btn btn-material-light-blue-700" href="/termine.html">Nächste Termine&nbsp;...</a>
 
 Die Kinder und Jugendlichen sollen zum selbständigen Entdecken und Kreativsein angeregt werden. Die oberste Regel lautet, dass die Arbeit an den Projekten Spaß machen und cool sein muss.
 
@@ -66,7 +67,8 @@ Grundsätzlich ist es aber nicht notwendig Hard- oder Software für Ihr Kind zu 
 
 Es ist natürlich einfacher, wenn Ihr Kind schon einmal einen Computer bedient hat. Wenn nicht, können wir das aber rasch nachholen. Es ist ausdrücklich nicht Voraussetzung, dass Ihr Kind schon programmieren kann. Gerade das soll es ja im CoderDojo lernen.
 
-Es ist schwer im Vorhinein herauszufinden, ob ein Kind Spaß beim CoderDojo haben wird. Am einfachsten ist es, einfach vorbeizuschauen und es auszuprobieren. Wenn es Spaß macht, freuen wir uns über eine regelmäßige Teilnahme.
+Es ist schwer im Vorhinein herauszufinden, ob ein Kind Spaß beim CoderDojo haben wird. Am einfachsten ist es, einfach vorbeizuschauen und es auszuprobieren. Wenn es Spaß macht, freuen wir uns über eine regelmäßige Teilnahme.<br/>
+<a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung&nbsp;...</a>
 
 
 ## Mein Kind kann schon programmieren, darf es trotzdem kommen? ##
@@ -89,15 +91,18 @@ Als Programmierclub möchten wir natürlich auch moderne Wege zur Kommunikation 
 
 **Jederzeit.**
 
-Es sind immer mehrere Mentoren anwesend, so können wir sowohl auf Anfänger als auch auf Fortgeschrittene eingehen.
+Es sind immer mehrere Mentoren anwesend, so können wir sowohl auf Anfänger als auch auf Fortgeschrittene eingehen. Für den ersten Besuch ist eine Anmeldung notwendig. Nach Erhalt eines Mitgliedsausweis ist keine Anmeldung mehr nötig.<br/>
+<a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung&nbsp;...</a>
 
 
-## Braucht mein Kind einen Laptop? ##
+## <a name="Laptop" />Braucht mein Kind einen Laptop? ##
 
 **Grundsätzlich schon. Der Laptop muss aber nicht besonders schnell sein. Es ist egal, ob er mit Windows, Mac OS oder Linux betrieben wird. iPads, Android-Tablets oder Smartphones reichen nicht aus.**
 
-Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, nehmen Sie bitte mit uns [Kontakt](http://coderdojo-linz.github.io/kontakt.html) auf. Wir haben eine limitierte Anzahl an Geräten, die wir in Ausnahmefällen während der CoderDojos zur Verfügung stellen können.
+Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, nehmen Sie bitte mit uns [Kontakt](http://coderdojo-linz.github.io/kontakt.html) auf. Wir haben eine limitierte Anzahl an Geräten, die wir während der CoderDojos zur Verfügung stellen können.
+
 
 ## Neugierig geworden?
 
-Dann [melden Sie Ihr Kind zu einem der nächsten Termine an](/termine.html) und kommen Sie bei uns vorbei!
+Falls ja, [melden Sie Ihr Kind zum ersten Besuch beim CoderDojo Linz an](/anmeldung.html) und kommen Sie bei uns vorbei.<br/>
+<a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung&nbsp;...</a>
