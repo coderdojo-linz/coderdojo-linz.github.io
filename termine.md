@@ -32,17 +32,6 @@ Es gibt zwei verschiedene Veranstaltungen:
 
 <p class="loadingText">Die Termine werden geladen ...</p>
 
-## Keine Tickets mehr verfügbar?
-
-Schicke uns bitte eine Email an [info@coderdojo-linz.at](mailto:info@coderdojo-linz.at) mit folgenden Daten:
-
-- Vorname
-- Nachname
-- Alter
-- Vorkenntnisse im Programmieren (wenn vorhanden)
-
-Wir setzen dich auch unsere Warteliste und melden uns bei dir, sobald wieder Plätze verfügbar sind.
-
 <script language="javascript">
 
 	var eventsTable = $("#eventsTable");
@@ -52,7 +41,7 @@ Wir setzen dich auch unsere Warteliste und melden uns bei dir, sobald wieder Pl�
 		{ date: new Date(2017, 6, 7) },
 		{ date: new Date(2017, 8, 1), title: "Sommerferien 2017", type: "header" },
 		{ date: new Date(2017, 6, 14), type: "playground" },
-		{ date: new Date(2017, 6, 21, location: "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6930\" target=\"_blank\">Johannes Kepler Universität Linz, Keplergebäude, Raum K 033C</a>, Altenberger Straße 69, 4040 Linz") },
+		{ date: new Date(2017, 6, 21), location: "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6930\" target=\"_blank\">Johannes Kepler Universität Linz, Keplergebäude, Raum K 033C</a>, Altenberger Straße 69, 4040 Linz" },
 		{ date: new Date(2017, 7, 4), location: "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6930\" target=\"_blank\">Johannes Kepler Universität Linz, Keplergebäude, Raum K 033C</a>, Altenberger Straße 69, 4040 Linz" },
 		{ date: new Date(2017, 7, 18) },
 		{ date: new Date(2017, 8, 1) },
@@ -66,7 +55,7 @@ Wir setzen dich auch unsere Warteliste und melden uns bei dir, sobald wieder Pl�
 		{ date: new Date(2017, 11, 15) },
 		{ date: new Date(2018, 0, 12) },
 		{ date: new Date(2018, 0, 26) },
-		{ date: new Date(2018, 1, 9) },
+		{ date: new Date(2018, 1, 9) }
 	].filter(function(event) { return event.date >= new Date(); });
 	
 	/*data = data.concat(additionalEvents).sort(function(a, b) {
