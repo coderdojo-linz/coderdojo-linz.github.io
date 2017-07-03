@@ -27,17 +27,25 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
 ## <a name="form" />Anmeldung
 
 <div class="row registration-form">
-  <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+  <div class="col-sm-10 col-md-8 col-lg-6">
     <div class="card card-block">
-        <form>
-            <h3>Ich möchte zum ersten Mal zum CoderDojo Linz kommen</h3>
+        <div class="registration-finished hide">
+            <h3>Anmeldung abgeschlossen</h3>
+            <p>Danke für deine Anmeldung, wir freuen uns schon auf dich!</p>
+        </div>
+        <div class="registration-error hide">
+            <h3>Fehler bei der Anmeldung</h3>
+            <p>Die Anmeldung ist leider fehlgeschlagen. Bitte kontaktiere uns unter <a href="mailto:info@coderdojo-linz.org">info@coderdojo-linz.org</a>.</p>
+        </div>
+        <form class="registration" id="registration-form">
+            <h3>Ich möchte zum ersten Mal zum CoderDojo kommen</h3>
             <div class="form-group">
                 <label for="event">Termin</label>
                 <select id="event" class="form-control">
-                    <option value="2017-07-07">07. Juli 2017</option>
-                    <option value="2017-07-21">21. Juli 2017</option>
-                    <option value="2017-08-04">04. August 2017</option>
-                    <option value="2017-08-1807">18. August 2017</option>
+                    <option value="5919f5569f2c1ef8394502f5">07. Juli 2017</option>
+                    <option value="5919f5589f2c1ef8394502f6">21. Juli 2017</option>
+                    <option value="5919f55a9f2c1ef8394502f7">04. August 2017</option>
+                    <option value="5919f55c9f2c1ef8394502f8">18. August 2017</option>
                 </select>
             </div>
             <div class="form-group">
@@ -63,10 +71,6 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
                 </select>
             </div>
             <div class="form-group">
-                <label for="knowledge">Gibt es Vorkenntnisse?</label>
-                <textarea rows="3" class="form-control" id="knowledge" placeholder="Hast du schon erste Erfahrungen im Programmieren gesammelt? Wenn ja, welche?"></textarea>
-            </div>
-            <div class="form-group">
                 <label for="email">Email Adresse</label>
                 <input type="email" class="form-control" id="email" placeholder="Email Adresse für Rückfragen und Infos" required="required"
                     oninvalid="this.setCustomValidity('Gib uns bitte eine Email-Adresse, unter dir wir dich bei Fragen oder Termin-Änderungen erreichen können.')" oninput="setCustomValidity('')">
@@ -88,3 +92,33 @@ Ausnahmen davon sind soweit jetzt schon bekannt der **21. Juli**, der **04. Augu
 Auf der Webseite des Wissensturms findest du noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp){:target="_blank"}.
 
 <iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed/v1/place?q=Wissensturm%20Volkshochschule%20Linz%20Stadtbibliothek%2C%20K%C3%A4rntnerstra%C3%9Fe%2C%20Linz%2C%20Austria&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE" allowfullscreen></iframe>
+
+<script language="javascript">
+
+$("#registration-form").submit(function () {
+    var url = "https://prod-26.northeurope.logic.azure.com:443/workflows/b6064052cfbc4d7995dfcd32ce28899a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=rFRMP5l-GmN8t0k0h2YHd98T5zMZp3DitjsQDmnkTos";
+
+    var eventId = $("#event").val();
+
+    var registration = {
+        "eventId": eventId,
+        "participants": {
+            "givenName": $("#givenName").val(),
+            "familyName": $("#familyName").val(),
+            "yearOfBirth": $("#yearOfBirth").val()
+        },
+        "needsComputer": $("#rentalNotebook").val() == "yes" ? true : false
+    };
+
+    $.post(url, registration, function(data) {
+        $(".registration-finished").removeClass("hide");
+        $(".registration").addClass("hide");
+    }).fail(function() {
+        $(".registration-error").removeClass("hide");
+        $(".registration").addClass("hide");
+    });
+
+    return false;
+});
+
+</script>

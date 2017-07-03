@@ -189,8 +189,46 @@ a, a:hover, a:focus {
   color: #F57C00;
   font-weight: bold; }
 
+/* registration */
+.hide {
+  display: none; }
+
 .registration-form .card {
   padding: 30px; }
+
+/* cards */
+.card {
+  background-color: #eee;
+  box-shadow: none; }
+  .card form h3 {
+    font-size: 20px; }
+
+/* contact */
+.card.vorstand {
+  margin-bottom: 20px;
+  text-align: center; }
+  .card.vorstand .card-title {
+    font-size: 20px; }
+  .card.vorstand .card-text {
+    padding-bottom: 30px;
+    color: #0277bd;
+    font-size: 14px; }
+  .card.vorstand .card-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-top: 50%;
+    position: relative; }
+    .card.vorstand .card-img img {
+      border-radius: 50%;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 25%;
+      bottom: 0;
+      right: 0;
+      object-fit: cover; }
 
 body.sushi {
   /*.row {
