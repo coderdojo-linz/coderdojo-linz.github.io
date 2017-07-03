@@ -110,7 +110,7 @@ $("#registration-form").submit(function () {
         "needsComputer": $("#rentalNotebook").val() == "yes" ? true : false
     };
 
-    $.post(url, registration, function(data) {
+    $.post(url, JSON.stringify(registration), function(data) {
         $(".registration-finished").removeClass("hide");
         $(".registration").addClass("hide");
     }).fail(function() {
