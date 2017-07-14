@@ -31,6 +31,11 @@ Es gibt zwei verschiedene Veranstaltungen:
 <p class="loadingText">Die Termine werden geladen ...</p>
 
 <script language="javascript">
+	Date.prototype.addDays = function(days) {
+		var dat = new Date(this.valueOf());
+		dat.setDate(dat.getDate() + days);
+		return dat;
+	}
 
 	var eventsTable = $("#eventsTable");
 	data = [
@@ -39,8 +44,8 @@ Es gibt zwei verschiedene Veranstaltungen:
 		{ date: new Date(2017, 6, 7) },
 		{ date: new Date(2017, 8, 1), title: "Sommerferien 2017", type: "header" },
 		{ date: new Date(2017, 6, 14), type: "playground" },
-		{ date: new Date(2017, 6, 21), location: "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6930\" target=\"_blank\">Johannes Kepler Universität Linz, Keplergebäude, Raum K 033C</a>, Altenberger Straße 69, 4040 Linz" },
-		{ date: new Date(2017, 7, 4), location: "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6930\" target=\"_blank\">Johannes Kepler Universität Linz, Keplergebäude, Raum K 033C</a>, Altenberger Straße 69, 4040 Linz" },
+		{ date: new Date(2017, 6, 21), location: "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6926\" target=\"_blank\">Johannes Kepler Universität Linz, Hochschulfondsgebäude , Raum HF 9901</a>, Altenberger Straße 69, 4040 Linz" },
+		{ date: new Date(2017, 7, 4), location: "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6926\" target=\"_blank\">Johannes Kepler Universität Linz, Hochschulfondsgebäude , Raum HF 9901</a>, Altenberger Straße 69, 4040 Linz" },
 		{ date: new Date(2017, 7, 18) },
 		{ date: new Date(2017, 8, 1) },
 		{ date: new Date(2018, 1, 9), title: "Wintersemester 2017 / 2018", type: "header" },
@@ -54,7 +59,7 @@ Es gibt zwei verschiedene Veranstaltungen:
 		{ date: new Date(2018, 0, 12) },
 		{ date: new Date(2018, 0, 26) },
 		{ date: new Date(2018, 1, 9) }
-	].filter(function(event) { return event.date >= new Date(); });
+	].filter(function(event) { return event.date >= new Date().addDays(-1); });
 	
 	/*data = data.concat(additionalEvents).sort(function(a, b) {
 		a = new Date(a.date);
