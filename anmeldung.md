@@ -102,6 +102,7 @@ $("#registration-form").submit(function () {
 
     var registration = {
         "eventId": eventId,
+        "eventDate": $("#event option:selected").text(),
         "participants": {
             "email": $("#email").val(),
             "givenName": $("#givenName").val(),
