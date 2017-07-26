@@ -69,7 +69,7 @@ Unser Projekt verwendet eine Reihe von Node.js Modulen. Diese müssen mit *npm*,
         
         C:\temp\shooter>
 
-2. Jetzt installieren wir die notwendigen Node.js Module. Für den Server brauchen wir *express*, für das Game am Client verwenden wir die Game-Engine [Phaser.io](http://phaser.io/){:target="_blank"}. Installiere die beiden Module mit Hilfe der Kommandozeile `npm install express phaser --save`. Schau danach in deine *package.json* Datei. Dort müssten die beiden Module vermerkt sein.
+1. Jetzt installieren wir die notwendigen Node.js Module. Für den Server brauchen wir *express*, für das Game am Client verwenden wir die Game-Engine [Phaser.io](http://phaser.io/){:target="_blank"}. Installiere die beiden Module mit Hilfe der Kommandozeile `npm install express phaser --save`. Schau danach in deine *package.json* Datei. Dort müssten die beiden Module vermerkt sein.
 
 ## Gulp und TypeScript einrichten
 
@@ -81,58 +81,49 @@ Um das Umwandeln von TypeScript in JavaScript (dieser Schritt wird als *TypeScri
 
 1. Installiere *Gulp* auf deinem Computer mit der Kommandozeile `npm install --global gulp`.
 
-2. Installiere *TypeScript* auf deinem Computer mit der Kommandozeile `npm install -g typescript`. Falls du *Visual Studio* verwendest, kannst du alternativ auch den TypeScript Installer [herunterladen und installieren](http://www.typescriptlang.org/){:target="_blank"}.
+1. Installiere *TypeScript* auf deinem Computer mit der Kommandozeile `npm install -g typescript`. Falls du *Visual Studio* verwendest, kannst du alternativ auch den TypeScript Installer [herunterladen und installieren](http://www.typescriptlang.org/){:target="_blank"}.
 
-3. Installiere das Tool *TSD* auf deinem Computer mit der Kommandozeile `npm install -g tsd`. Wir werden es in einem der nächsten Schritte brauchen.
+1. Installiere in dein Projekt alle *Gulp*-Plugins, die wir brauchen. Das machst du mit der Kommandozeile `npm install del gulp gulp-changed gulp-concat gulp-debug gulp-newer gulp-sourcemaps gulp-typescript gulp-uglify typescript --save-dev`. Schau danach in deine *package.json* Datei. Dort müssten die neuen Module vermerkt sein.
 
-3. Installiere in dein Projekt alle *Gulp*-Plugins, die wir brauchen. Das machst du mit der Kommandozeile `npm install del gulp gulp-changed gulp-concat gulp-debug gulp-newer gulp-sourcemaps gulp-typescript gulp-uglify tsd typescript --save-dev`. Schau danach in deine *package.json* Datei. Dort müssten die neuen Module vermerkt sein.
+1. Für TypeScript brauchen wir *Type Definitions*. Das sind Dateien, die Informationen darüber enthalten, was die verschiedenen Module wie *express* oder *phaser* können. TypeScript verwendet diese Informationen, um dich z.B. darauf hinzuweisen, falls du dich bei einem Methodennamen vertippst. Die Type Definitions für unsere Module installierst du mit folgenden Kommandozeilen.
 
-4. Für TypeScript brauchen wir *Type Definitions*. Das sind Dateien, die Informationen darüber enthalten, was die verschiedenen Module wie *express* oder *phaser* können. TypeScript verwendet diese Informationen, um dich z.B. darauf hinzuweisen, falls du dich bei einem Methodennamen vertippst. Die Type Definitions für unsere Module installierst du mit folgenden Kommandozeilen.
+        npm install @types/node @types/express @types/serve-static @types/mime --save-dev
 
-        tsd init
-        tsd install node express serve-static mime --save
-
-5. Mach dich mit den entstandenen Dateien und Verzeichnissen vertraut. Frage deinen CoderDojo Mentor, wenn dir etwas nicht klar ist. Dein Projekt sollte jetzt in etwa so aussehen:
+1. Mach dich mit den entstandenen Dateien und Verzeichnissen vertraut. Frage deinen CoderDojo Mentor, wenn dir etwas nicht klar ist. Dein Projekt sollte jetzt in etwa so aussehen:
 
         C:\temp\shooter>dir
         ...         
-        14.08.2015  10:29    <DIR>          .
-        14.08.2015  10:29    <DIR>          ..
-        14.08.2015  10:24    <DIR>          node_modules
-        14.08.2015  10:25               657 package.json
-        14.08.2015  10:30               538 tsd.json
-        14.08.2015  10:30    <DIR>          typings
+        25.07.2017  15:28    <DIR>          .
+        25.07.2017  15:28    <DIR>          ..
+        25.07.2017  15:28    <DIR>          node_modules
+        25.07.2017  15:28            65 134 package-lock.json
+        25.07.2017  15:28               733 package.json
         ...         
 
         C:\temp\shooter>dir node_modules
         ...         
-        14.08.2015  10:24    <DIR>          .
-        14.08.2015  10:24    <DIR>          ..
-        14.08.2015  10:25    <DIR>          .bin
-        14.08.2015  10:24    <DIR>          del
-        14.08.2015  10:10    <DIR>          express
-        14.08.2015  10:24    <DIR>          gulp
-        14.08.2015  10:24    <DIR>          gulp-changed
-        14.08.2015  10:24    <DIR>          gulp-concat
-        14.08.2015  10:24    <DIR>          gulp-debug
-        14.08.2015  10:24    <DIR>          gulp-newer
-        14.08.2015  10:24    <DIR>          gulp-sourcemaps
-        14.08.2015  10:25    <DIR>          gulp-typescript
-        14.08.2015  10:24    <DIR>          gulp-uglify
-        14.08.2015  10:10    <DIR>          phaser
-        14.08.2015  10:24    <DIR>          tsd
-        14.08.2015  10:25    <DIR>          typescript
+        25.07.2017  15:28    <DIR>          .
+        25.07.2017  15:28    <DIR>          ..
+        25.07.2017  15:28    <DIR>          .bin
+        25.07.2017  15:28    <DIR>          @gulp-sourcemaps
+        25.07.2017  15:28    <DIR>          @types
+        25.07.2017  15:28    <DIR>          acorn
+        25.07.2017  15:28    <DIR>          amdefine
+        25.07.2017  15:28    <DIR>          ansi-regex
+        25.07.2017  15:28    <DIR>          ansi-styles
+        25.07.2017  15:28    <DIR>          archy
+        25.07.2017  15:28    <DIR>          ..........
         ...         
 
         C:\temp\shooter>dir typings
         ...         
-        14.08.2015  10:30    <DIR>          .
-        14.08.2015  10:30    <DIR>          ..
-        14.08.2015  10:30    <DIR>          express
-        14.08.2015  10:30    <DIR>          mime
-        14.08.2015  10:30    <DIR>          node
-        14.08.2015  10:30    <DIR>          serve-static
-        14.08.2015  10:30               183 tsd.d.ts
+        25.07.2017  15:28    <DIR>          .
+        25.07.2017  15:28    <DIR>          ..
+        25.07.2017  15:28    <DIR>          express
+        25.07.2017  15:28    <DIR>          express-serve-static-core
+        25.07.2017  15:28    <DIR>          mime
+        25.07.2017  15:28    <DIR>          node
+        25.07.2017  15:28    <DIR>          serve-static
 
 # Gulpfile anlegen
 
@@ -154,7 +145,7 @@ Wie erwähnt verwenden wir Gulp, um unseren TypeScript-Code in JavaScript zu kom
         
         // Helper arrays holding file and folder names for later use in this gruntfile
         // External script dependencies
-        var dependencyScripts = ["node_modules/phaser/dist/phaser.js"];
+        var dependencyScripts = ["node_modules/phaser/build/phaser.js"];
         // TypeScript sources
         var typescriptFiles = ["./client/**/*.ts"];
         
@@ -205,7 +196,7 @@ Wie erwähnt verwenden wir Gulp, um unseren TypeScript-Code in JavaScript zu kom
         // Set a default tasks
         gulp.task("default", ["clean", "typescript", "dependencyScriptsAndStyles"], function () { });
 
-2. **Sprich mit deinem Mentor, wenn du Fragen zum Code hast**.
+1. **Sprich mit deinem Mentor, wenn du Fragen zum Code hast**.
 
 # Webserver anlegen
 
@@ -213,7 +204,6 @@ Wie im Beispiel [Ein Webserver mit Node.js](http://coderdojo-linz.github.io/trai
 
 1. Erstelle die Datei *server.ts* mit [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} und füge folgenden Code ein. **Achte beim Programmieren darauf, wie dich der Editor dabei unterstützt, indem er dir Vorschläge für z.B. Methodennamen anbietet.** Das ist der große Vorteil von TypeScript.
 
-        /// <reference path="typings/tsd.d.ts" />
         
         // express und http Module importieren. Sie sind dazu da, die HTML-Dateien
         // aus dem Ordner "public" zu veröffentlichen.
@@ -232,20 +222,20 @@ Wie im Beispiel [Ein Webserver mit Node.js](http://coderdojo-linz.github.io/trai
         // im Ordner "public" zu finden sind.
         app.use(express.static(__dirname + '/client'));
 
-2. **Sprich mit deinem Mentor, wenn du Fragen zum Code hast**.
+1. **Sprich mit deinem Mentor, wenn du Fragen zum Code hast**.
 
-2. Jetzt kannst du zum ersten Mal *Gulp* verwenden, um die gerade angelegte Datei *server.ts* in JavaScript zu übersetzen. Gib einfach in der Kommandozeile `gulp` ein. Danach müsstest du eine Datei *server.js* haben.
+1. Jetzt kannst du zum ersten Mal *Gulp* verwenden, um die gerade angelegte Datei *server.ts* in JavaScript zu übersetzen. Gib einfach in der Kommandozeile `gulp` ein. Danach müsstest du eine Datei *server.js* haben.
 
         C:\temp\shooter>gulp
-        [10:40:07] Using gulpfile C:\temp\shooter\Gulpfile.js
-        [10:40:07] Starting 'clean'...
-        [10:40:07] Finished 'clean' after 4.25 ms
-        [10:40:07] Starting 'typescript'...
-        [10:40:08] Starting 'dependencyScriptsAndStyles'...
-        [10:40:08] Finished 'dependencyScriptsAndStyles' after 2.74 ms
-        [10:40:08] Finished 'typescript' after 28 ms
-        [10:40:08] Starting 'default'...
-        [10:40:08] Finished 'default' after 3.8 µs
+        [15:39:23] Using gulpfile C:\temp\shooter\gulpfile.js
+        [15:39:23] Starting 'clean'...
+        [15:39:23] Finished 'clean' after 5.37 ms
+        [15:39:23] Starting 'typescript'...
+        [15:39:24] Starting 'dependencyScriptsAndStyles'...
+        [15:39:24] Finished 'dependencyScriptsAndStyles' after 1.21 ms
+        [15:39:24] Finished 'typescript' after 243 ms
+        [15:39:24] Starting 'default'...
+        [15:39:24] Finished 'default' after 28 μs
         
         C:\temp\shooter>
 
@@ -255,7 +245,7 @@ Jetzt haben wir den Server, also legen wir mit dem Client und dem Game los.
 
 1. Erstelle einen Ordner `client` falls er noch nicht existiert (er sollte durch *Gulp* schon angelegt worden sein).
 
-2. Erstelle die Datei *default.html* **im Ordner `client`** mit [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} und füge folgenden Code ein. Wie du siehst ist die HTML-Datei praktisch leer. Das ist OK so.
+1. Erstelle die Datei *default.html* **im Ordner `client`** mit [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} und füge folgenden Code ein. Wie du siehst ist die HTML-Datei praktisch leer. Das ist OK so.
 
         <!DOCTYPE html>
         
@@ -276,9 +266,8 @@ Jetzt programmieren wir das Space Shooter Game.
 
 1. Erstelle die Datei *app.ts* **im Ordner `client`** mit [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"}.
 
-2. Hier ist der Code unseres Games. **Achte auf die Kommentare im Quellcode. Versuch den Quellcode zu verstehen. Lies dazu bei den angegebenen URLs nach und sprich mit deinem Mentor über den Code.**
+1. Hier ist der Code unseres Games. **Achte auf die Kommentare im Quellcode. Versuch den Quellcode zu verstehen. Lies dazu bei den angegebenen URLs nach und sprich mit deinem Mentor über den Code.**
 
-        /// <reference path="../typings/tsd.d.ts" />
         /// <reference path="../node_modules/phaser/typescript/phaser.d.ts" />
         
         var game = new Phaser.Game(
@@ -465,11 +454,11 @@ Jetzt programmieren wir das Space Shooter Game.
             return group;
         }
 
-3. In der Funktion `preload` werden einige Bilddateien referenziert. Du kannst diese von [Github](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/web/space-shooter){:target="_blank"} herunterladen. **Speichere sie in dem Ordner `client/images`**.
+1. In der Funktion `preload` werden einige Bilddateien referenziert. Du kannst diese von [Github](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/web/space-shooter){:target="_blank"} herunterladen. **Speichere sie in dem Ordner `client/images`**.
 
-2. Verwende wieder *Gulp*, um die gerade angelegte Datei *app.ts* in JavaScript zu übersetzen. Gib einfach in der Kommandozeile im Wurzelverzeichnis deines Projekts `gulp` ein.
+1. Verwende wieder *Gulp*, um die gerade angelegte Datei *app.ts* in JavaScript zu übersetzen. Gib einfach in der Kommandozeile im Wurzelverzeichnis deines Projekts `gulp` ein.
 
-3. Bessere eventuelle Fehler aus. Falls du dabei Probleme hast, wende dich an deinen Mentor.
+1. Bessere eventuelle Fehler aus. Falls du dabei Probleme hast, wende dich an deinen Mentor.
 
 ## Spielen :-)
 
@@ -477,7 +466,7 @@ Wenn *Gulp* fehlerlos durchläuft, sollte dein Projekt bereit zum Spielen sein.
 
 1. Starte den Node.js Webserver mit der Kommandozeile `node server.js`. Du solltest die Statusmeldung `Webserver läuft und hört auf Port 3000` bekommen.
 
-2. Öffne einen Webbrowser und navigiere zu *http://localhost:3000/default.html*.
+1. Öffne einen Webbrowser und navigiere zu *http://localhost:3000/default.html*.
 
 Siehst du dein Spiel? **Viel Spaß beim Spielen!**
 
