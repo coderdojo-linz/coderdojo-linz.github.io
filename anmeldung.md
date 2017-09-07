@@ -42,8 +42,6 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
             <div class="form-group">
                 <label for="event">Termin</label>
                 <select id="event" class="form-control">
-                    <option value="595d2769eed375ed536c8220">01. September 2017</option>
-                    <option value="595d2789eed375ed536c8222">15. September 2017</option>
                 </select>
                 <div style="padding-top: 15px"><small><small>Der Ort kann sich in seltenen Fällen ändern. Bitte überprüfe einige Tage vor der Veranstaltung unter <a href="termine.html" target="_blank">Termine</a>, ob der Veranstaltungsort geändert wurde.</small></small></div>
             </div>
