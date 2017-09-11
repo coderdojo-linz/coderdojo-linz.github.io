@@ -95,7 +95,7 @@ Auf der Webseite des Wissensturms findest du noch weitere Hinweise zu [Anreise u
 <script language="javascript">
 
 $.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function(data) {
-    data.slice(0, 3).forEach(function(item) {
+    data.slice(1, 3).forEach(function(item) {
          $("#event").append("<option value=\"" + item._id + "\">" + (new moment(item.date)).format("DD. MMMM YYYY") + " - " + (item.location ? item.location : "Wissensturm") + "</option>");
     });
 });
