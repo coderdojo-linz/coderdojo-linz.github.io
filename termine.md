@@ -6,7 +6,7 @@ bannerimage: /images/coderdojo-banner-3.jpg
 
 # Termine
 
-**Wenn du noch keinen CoderDojo Mitgliedsausweis hast, musst du dich für die Teilnahme an deinem ersten Termin anmelden. Wenn es dir gefällt und du wiederkommen möchtest, erhältst du beim ersten Termin deinen Mitgliedsausweis. Mit Mitgliedsausweis kannst du ohne weitere Anmeldung zu allen Terminen kommen.**
+**Hast du noch nie beim CoderDojo teilgenommnen, musst du dich für die Teilnahme an deinem ersten Termin anmelden. Wenn es dir gefällt und du wiederkommen möchtest, kannst du ohne weitere Anmeldung zu allen Terminen kommen.**
 
 <p class="text-center"><a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung</a></p>
 
