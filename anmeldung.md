@@ -136,12 +136,24 @@ $("#registration-form").submit(function () {
         "needsComputer": $("#rentalNotebook").val() == "yes" ? true : false
     };
 
-    $.post(url, JSON.stringify(registration), function(data) {
-        $(".registration-finished").removeClass("hide");
-        $(".registration").addClass("hide");
-    }).fail(function() {
-        $(".registration-error").removeClass("hide");
-        $(".registration").addClass("hide");
+    $.ajax({ 
+        url: url, 
+        type: "POST",
+        data: JSON.stringify(registration), 
+        contentType:"application/json; charset=utf-8",
+        dataType: "json",
+        success: function(data) {
+            $(".registration-finished").removeClass("hide");
+            $(".registration").addClass("hide");
+        }
+    }).fail(function(jqXHR, textStatus) {
+        if (textStatus == "parsererror") {
+            $(".registration-finished").removeClass("hide");
+            $(".registration").addClass("hide");
+        } else {
+            $(".registration-error").removeClass("hide");
+            $(".registration").addClass("hide");
+        }
     });
 
     return false;
