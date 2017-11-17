@@ -283,16 +283,17 @@ Damit nicht jeder einfach in deinem Chat mitlesen kann, kannst du die Applikatio
 
 Jetzt kannst du den Code in server.js um folgende Zeilen erweitern:
 
-  // Mit diesem Kommando starten wir den Webserver.
-  var port = process.env.PORT || 3000;
-  app.use(require('express-basic-auth')({
-    users: { 'admin': 'password' }, // vergib hier deine gewünschten Benutzernamen und Passwörter
-    challenge: true
-  }));
-  server.listen(port, function () {
-    // Wir geben einen Hinweis aus, dass der Webserer läuft.
-    console.log('Webserver läuft und hört auf Port %d', port);
-  });
+
+        // Mit diesem Kommando starten wir den Webserver.
+        var port = process.env.PORT || 3000;
+        app.use(require('express-basic-auth')({
+          users: { 'admin': 'password' }, // vergib hier deine gewünschten Benutzernamen und Passwörter
+          challenge: true
+        }));
+        server.listen(port, function () {
+          // Wir geben einen Hinweis aus, dass der Webserer läuft.
+          console.log('Webserver läuft und hört auf Port %d', port);
+        });
 
 Wenn du den Webserver jetzt wieder mit `node server.js` startest und dann deine Seite `localhost:3000/index.html` öffnest, bekommst zu einen Dialog zum Eingeben deines Usernamen und deines Passworts angezeigt.
 
