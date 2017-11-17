@@ -41,7 +41,7 @@ Die Lösung ist eine Technologie namens [Web Sockets](https://de.wikipedia.org/w
         var io = require('socket.io')(server);
         
         // Mit diesem Kommando starten wir den Webserver.
-        var port = 3000;
+        var port = process.env.PORT || 3000;
         server.listen(port, function () {
         	// Wir geben einen Hinweis aus, dass der Webserer läuft.
         	console.log('Webserver läuft und hört auf Port %d', port);
@@ -140,7 +140,7 @@ Die Lösung ist eine Technologie namens [Web Sockets](https://de.wikipedia.org/w
         
           <!-- Programmcode auf der Client-Seite -->
           <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-          <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+          <script src="/socket.io/socket.io.js"></script>
           <script src="/main.js"></script>
         </body>
         </html>
@@ -276,6 +276,27 @@ Die Lösung ist eine Technologie namens [Web Sockets](https://de.wikipedia.org/w
 
 6. Jetzt kannst du ausprobieren, ob sich die Benutzer gegenseitig Nachrichten schicken können. Viel Spaß!<br/>
 ![Leere Anmeldeseite](nodejs-socketio-chat/chatting.png)
+
+## Chat mit Passwort sichern
+
+Damit nicht jeder einfach in deinem Chat mitlesen kann, kannst du die Applikation mit einem Passwort sichern. Installiere dazu in der Kommandozeile das Paket express-basic-auth mit dem Befehl `npm install express-basic-auth --save' (*Achtung:* Bevor du ihn ausführst, stelle sicher, dass du im Verzeichnis *C:\Code\Chat* bist). 
+
+Jetzt kannst du den Code in server.js um folgende Zeilen erweitern:
+
+  // Mit diesem Kommando starten wir den Webserver.
+  var port = process.env.PORT || 3000;
+  app.use(require('express-basic-auth')({
+    users: { 'admin': 'password' }, // vergib hier deine gewünschten Benutzernamen und Passwörter
+    challenge: true
+  }));
+  server.listen(port, function () {
+    // Wir geben einen Hinweis aus, dass der Webserer läuft.
+    console.log('Webserver läuft und hört auf Port %d', port);
+  });
+
+Wenn du den Webserver jetzt wieder mit `node server.js` startest und dann deine Seite `localhost:3000/index.html` öffnest, bekommst zu einen Dialog zum Eingeben deines Usernamen und deines Passworts angezeigt.
+
+![Authentifizierung](nodejs-socketio-chat/basic-authentication.png)
 
 ## Was als nächstes?
 
