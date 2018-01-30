@@ -117,7 +117,11 @@ Es gibt zwei verschiedene Veranstaltungen:
 				if (event.location) {
 					row += event.location;
 				} else {
-					row += "<a href=\"http://www.linz.at/wissensturm/anreise.asp\" target=\"_blank\">Wissensturm</a>, Kärtnerstraße 26, 4020 Linz";
+					if (event.type == "playground") {
+						row += "<a href=\"http://www.linz.at/wissensturm/anreise.asp\" target=\"_blank\">Wissensturm</a>, Raum 10.02, Kärtnerstraße 26, 4020 Linz";
+					} else {
+						row += "<a href=\"http://www.linz.at/wissensturm/anreise.asp\" target=\"_blank\">Wissensturm</a>, Veranstaltungssaal E09, Kärtnerstraße 26, 4020 Linz";
+					}
 				}
 
 				if (formattedDate == "2017-06-02") {
