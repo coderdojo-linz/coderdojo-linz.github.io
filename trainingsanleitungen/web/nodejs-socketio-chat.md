@@ -279,7 +279,7 @@ Die Lösung ist eine Technologie namens [Web Sockets](https://de.wikipedia.org/w
 
 ## Chat mit Passwort sichern
 
-Damit nicht jeder einfach in deinem Chat mitlesen kann, kannst du die Applikation mit einem Passwort sichern. Installiere dazu in der Kommandozeile das Paket express-basic-auth mit dem Befehl `npm install express-basic-auth --save' (*Achtung:* Bevor du ihn ausführst, stelle sicher, dass du im Verzeichnis *C:\Code\Chat* bist). 
+Damit nicht jeder einfach in deinem Chat mitlesen kann, kannst du die Applikation mit einem Passwort sichern. Installiere dazu in der Kommandozeile das Paket express-basic-auth mit dem Befehl `npm install express-basic-auth --save` (*Achtung:* Bevor du ihn ausführst, stelle sicher, dass du im Verzeichnis *C:\Code\Chat* bist). 
 
 Jetzt kannst du den Code in server.js um folgende Zeilen erweitern:
 
