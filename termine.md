@@ -70,6 +70,16 @@ Es gibt zwei verschiedene Veranstaltungen:
 					row += " class='coderdojo'";
 				}*/
 
+				if (date.unix() == moment(new Date(2018, 4, 4)).startOf("day").unix()) {
+					console.log("test");
+					row += "<tr>";
+					row += "<td>" + moment(new Date(2018, 3, 21)).startOf("day").format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
+					row += "<td class='type-bootcamp'>Bootcamp</td>";
+					row += "<td>Junior Bootcamp - im Rahmen des <a href='https://coding-club-linz.github.io/global-azure-bootcamp-2018/junior-bootcamp.html' target='_blank'>Global Azure Bootcamps</a><br/>für junge Coder ab 13 Jahren<br/>";
+					row += "<a href=\"http://www.linz.at/wissensturm/anreise.asp\" target=\"_blank\">Wissensturm</a>, Kärtnerstraße 26, 4020 Linz</td>";
+					row += "</tr>";
+				}
+
 				row += "<tr>";
 				row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
 

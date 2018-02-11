@@ -189,6 +189,10 @@ a, a:hover, a:focus {
   color: #F57C00;
   font-weight: bold; }
 
+.type-bootcamp {
+  color: #0277bd;
+  font-weight: bold; }
+
 /* registration */
 .hide {
   display: none; }
