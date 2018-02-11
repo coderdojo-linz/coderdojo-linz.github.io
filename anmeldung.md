@@ -97,13 +97,19 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
 ## <a name="Wissensturm" />Ort
 
 Das CoderDojo findet üblicherweise im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt.
-Ausnahmen davon sind soweit jetzt schon bekannt der **15. Dezember 2017** und der **18. Mai 2018**. Unter [Termine](termine.html) findest du die aktuellen Termine mit jeweiligem Verstaltungsort.
+Ausnahmen davon sind soweit jetzt schon bekannt der **18. Mai 2018**. Unter [Termine](termine.html) findest du die aktuellen Termine mit jeweiligem Verstaltungsort.
 
 Der Ort kann sich in seltenen Fällen ändern. Bitte überprüfe einige Tage vor der Veranstaltung unter <a href="termine.html" target="_blank">Termine</a>, ob der Veranstaltungsort geändert wurde.
 
 Auf der Webseite des Wissensturms findest du noch weitere Hinweise zu [Anreise und Parken](http://www.linz.at/wissensturm/anreise.asp){:target="_blank"}.
 
 <iframe frameborder="0" style="border: 0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed/v1/place?q=Wissensturm%20Volkshochschule%20Linz%20Stadtbibliothek%2C%20K%C3%A4rntnerstra%C3%9Fe%2C%20Linz%2C%20Austria&key=AIzaSyAAgaQBWJByXn9NNkGVGGRFRxGXUWXxBXE" allowfullscreen></iframe>
+
+## Wissensturm Linz
+
+Vielen Dank an unseren Partner [Wissensturm Linz](http://www.linz.at/wissensturm/){:target="_blank"} für die großartigen Räumlichkeiten, die wir zur Verfügung gestellt bekommen!
+
+<p><a href="http://www.linz.at/wissensturm/" target="_blank"><img src="images/logo-vhs.jpg" /></a></p>
 
 <script language="javascript">
 

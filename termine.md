@@ -38,28 +38,7 @@ Es gibt zwei verschiedene Veranstaltungen:
 	}
 
 	var eventsTable = $("#eventsTable");
-	/*data = [
-		{ date: new Date(2017, 6, 7), title: "Sommersemester 2017", type: "header" },
-		{ date: new Date(2017, 5, 30), type: "playground" },
-		{ date: new Date(2017, 6, 7) },
-		{ date: new Date(2017, 8, 1), title: "Sommerferien 2017", type: "header" },
-		{ date: new Date(2017, 6, 14), type: "playground" },
-		{ date: new Date(2017, 6, 21), location: "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6926\" target=\"_blank\">Johannes Kepler Universität Linz, Hochschulfondsgebäude , Raum HF 9901</a>, Altenberger Straße 69, 4040 Linz" },
-		{ date: new Date(2017, 7, 4), location: "<a href=\"http://www.jku.at/content/e213/e161/e6998/e6926\" target=\"_blank\">Johannes Kepler Universität Linz, Hochschulfondsgebäude , Raum HF 9901</a>, Altenberger Straße 69, 4040 Linz" },
-		{ date: new Date(2017, 7, 18) },
-		{ date: new Date(2017, 8, 1) },
-		{ date: new Date(2018, 1, 9), title: "Wintersemester 2017 / 2018", type: "header" },
-		{ date: new Date(2017, 8, 15), location: "<a href=\"https://www.wko.at/service/ooe/bezirksstellen/linz.html\" target=\"_blank\">WKO Linz-Stadt</a>, Hessenplatz 3, 4020 Linz" },
-		{ date: new Date(2017, 9, 6) },
-		{ date: new Date(2017, 9, 20) },
-		{ date: new Date(2017, 10, 3) },
-		{ date: new Date(2017, 10, 17) },
-		{ date: new Date(2017, 11, 1) },
-		{ date: new Date(2017, 11, 15) },
-		{ date: new Date(2018, 0, 12) },
-		{ date: new Date(2018, 0, 26) },
-		{ date: new Date(2018, 1, 9) }
-	].filter(function(event) { return event.date >= new Date(); });*/
+
 	$.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function(data) {
 		var additionalEvents = [
 			{ date: new Date(2017, 6, 7), title: "Sommerferien 2017", type: "header" },
@@ -136,15 +115,7 @@ Es gibt zwei verschiedene Veranstaltungen:
 
 				row += "</td>";
 
-				/*row += "<td id='availableTickets" + event.eventbriteId + "' class='text-right'></td>";
-				if (event.type == "playground") {
-					row += "<td></td>";
-				} else if (event.type == "bootcamp") {
-					row += "<td><a href='https://www.eventbrite.de/e/global-azure-bootcamp-austria-2017-tickets-31460449050' target='_blank'>zur Anmeldung</a></td>";
-				} else {
-					row += "<td><a href='https://www.eventbrite.de/e/coderdojo-linz-wissensturm-tickets-" + event.eventbriteId + "' target='_blank'>zur Anmeldung</a></td>";
-				}*/
-				
+			
 				row += "</tr>";
 			}
 
@@ -153,12 +124,4 @@ Es gibt zwei verschiedene Veranstaltungen:
 
 		$(".loadingText").hide();
 	});
-
-	/*data.forEach(function(event) {
-		if (event.quantitySold >= event.quantityTotal) {
-			$("#availableTickets" + event.eventbriteId).append("<span class='warning'>ausgebucht*</span>");
-		} else {
-			$("#availableTickets" + event.eventbriteId).append(event.quantityTotal - event.quantitySold);
-		}
-	});*/
 </script>
