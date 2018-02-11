@@ -2,7 +2,7 @@
 layout:
 title: Bernhard Großschartner
 description: 
-image: /mentoren/images/empty-image.jpg
+image: /mentoren/images/bernhard-grossschartner.jpg
 page-category: guest-mentor
 ---
 
