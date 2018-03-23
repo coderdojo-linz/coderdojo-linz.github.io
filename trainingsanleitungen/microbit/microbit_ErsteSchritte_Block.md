@@ -4,6 +4,8 @@ title: Deine ersten Schritte mit micro:bit - Blockprogrammierung
 description: Baue einen elektronischen Würfel mit micro:bit
 ---
 
+# Deine ersten Schritte mit micro:bit - Blockprogrammierung
+
 Der BBC micro:bit ist ein kleiner anprogrammierbarer Computer mit Bewegungssensoren und Kompass. Weitere Informationen und einer ausführerlichen Anleitung zu den ersten Schritten gibt es [hier](http://microbit.org/de/guide/).
 
 ### Ausstattung
