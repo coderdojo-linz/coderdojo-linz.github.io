@@ -92,7 +92,7 @@ Wir brauchen für unsere Figur noch weitere Variablen. Lege die Variablen an, di
 `MOMMOOBMOOOMOOOM`<br/>
 `MMMMMMMMMMMMBBBB`
 
-1. Das folgende Bild zeigt den neuen Block *Baue Spielfeld*, den du anlegen musst, damit aus der Liste *Spielfeld*, die du im letzten Schritt angelegt hast, das Spielfeld gebaut wird.<br/>
+1. Das folgende Bild zeigt den neuen Block *Baue Spielfeld*, den du anlegen musst, damit aus der Liste *Spielfeld*, die du im letzten Schritt angelegt hast, das Spielfeld gebaut wird. **Wichtig: Achte darauf, dass du die Option "Ohne Bildschirmaktualisierung laufen lassen" aktivierst wenn du den neuen Block erstellst!** Ansonsten braucht dein Spiel sehr lange zum starten.<br/>
 ![Baue Spielfeld](scratch-labyrinth/baue-spielfeld.png)
 
 1. Im vorigen Block erstellen wir Klone. Diese Klone müssen wir an die richtige Position bringen wenn sie entstehen. Das machen wir mit diesem Block.<br/>
