@@ -114,7 +114,7 @@ Vielen Dank an unseren Partner [Wissensturm Linz](http://www.linz.at/wissensturm
 <script language="javascript">
 
 $.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function(data) {
-    data.filter(item => item.type != "playground").slice(1, 4).forEach(function(item) {
+    data.filter(item => item.type != "playground").slice(0, 4).forEach(function(item) {
          $("#event").append("<option value=\"" + item._id + "\">" + (new moment(item.date)).format("DD. MMMM YYYY") + " - " + (item.location ? item.location : "Wissensturm") + "</option>");
     });
 
