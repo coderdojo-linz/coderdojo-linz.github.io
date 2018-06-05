@@ -231,18 +231,19 @@ a, a:hover, a:focus {
 
 .sponsor {
 	margin-top: 5px;
-	border: solid 1px #ddd; 
 	padding: 8px; 
 	width: 100%; 
-	border-radius: 10px;
-	background-color: #FFF9C4;
 	margin-left: -8px;
     margin-right: -8px;
 	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #fffcdd;
 
 	> a {
 		text-align: center;
 		margin-top: 10px;
+		text-transform: initial;
 	}
 }
 
