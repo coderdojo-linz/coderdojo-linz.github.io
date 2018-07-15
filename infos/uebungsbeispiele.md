@@ -75,6 +75,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Scriptcraft am Minecraft-Server installieren](/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker.html)
 1. [Programmieren mit Scriptcraft - Grundlagen](/trainingsanleitungen/minecraft-plugins/08_scriptcraft_basics.html)
 1. [Erste Schritte mit Redstone](/trainingsanleitungen/minecraft-plugins/erste-schritte-mit-redstone.html)
+1. [Teleporter](https://github.com/weidingerhp/coderdojo_minecraft_teleporter/blob/master/doc/readme.md){:target="_blank"}
 
 ## Python
 
@@ -98,6 +99,13 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 ## BBC micro:bit
 
 1. [Erste Schritte mit micro:bit - Blockprogrammierung](/trainingsanleitungen/microbit/microbit_ErsteSchritte_Block.html)
+1. [Hello World](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Hello_World){:target="_blank"}
+1. [Missile Shooter](https://github.com/coderdojo-wien/exercises/tree/master/microbit/MissileShooter){:target="_blank"}
+1. [Beschleunigungssensor](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Beschleunigung){:target="_blank"}
+1. [Hot Wire - der heiße Draht](https://github.com/coderdojo-wien/exercises/tree/master/microbit/HotWire){:target="_blank"}
+1. [Fan Controller](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Fan_Controller){:target="_blank"}
+1. [Stein, Schere, Papier](https://github.com/coderdojo-wien/exercises/tree/master/microbit/RockPaperScissors){:target="_blank"}
+1. [Spielwürfel](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Spielwuerfel){:target="_blank"}
 
 ## Änderungen und Ergänzungen
 
