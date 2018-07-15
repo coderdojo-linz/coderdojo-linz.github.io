@@ -81,7 +81,11 @@ Es gibt zwei verschiedene Veranstaltungen:
 				}
 
 				row += "<tr>";
-				row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
+				if (formattedDate == "2018-07-20") {
+					row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - open end</td>";
+				} else {
+					row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
+				}
 
 				if (event.type == "playground") {
 					row += "<td class='type-playground'>Playground";
