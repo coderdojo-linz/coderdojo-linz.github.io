@@ -10,7 +10,7 @@ description: In diesem Spiel landest du auf dem Mond
 	<div class="col-sm-6"><img alt="Breakout" src="scratch-moonhack/in-flight.png" /></div>
 	<div class="col-sm-6">
 		<p>In diesem Spiel musst du mit dem <em>Lunar Module</em> auf dem Mond landen. Aber Vorsicht, die Landung muss sanft sein und du hast nur eine begrenzte Menge an Raktentreibstoff.</p>
-		<p>Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/72990950" target="_blank">https://scratch.mit.edu/projects/72990950</a> auch gleich ausprobieren.</p>
+		<p>Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/236734138/" target="_blank">https://scratch.mit.edu/projects/236734138/</a> auch gleich ausprobieren.</p>
 		<table class="table sushi-stats">
 			<tbody>
 				<tr>
@@ -109,7 +109,7 @@ Gratulation, Level 2 ist erledigt. Probiere, ob du erfolgreich am Mond landen ka
 
 ## Treibstoff
 
-Es wäre schön, wenn wir immer beliebig viel Treibstoff verfügbar hätten. Unsere Mondlandefähre hat das - genauso wie Neil Armstrong - aber natürlich nicht. Machen wir unseren Mondladesimulator realistischer, indem wir die Menge an Treibstoff limitieren.
+Es wäre schön, wenn wir immer beliebig viel Treibstoff verfügbar hätten. Unsere Mondlandefähre hat das - genauso wie Neil Armstrong - natürlich nicht. Machen wir unseren Mondladesimulator realistischer, indem wir die Menge an Treibstoff limitieren.
 
 ![Treibstoff](scratch-moonhack/treibstoff.png){: .right}
 
