@@ -34,6 +34,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Weihnachtsspiel 2016 - Dekoriere den Weihnachtsbaum](/trainingsanleitungen/scratch/scratch-weihnachten-2016.html)
 1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/scratch/scratch-labyrinth.html)
 1. [Chess - Programmiere einen Computerspieler für Schach](/trainingsanleitungen/scratch/scratch-chess.html)
+1. [Moonhack - Lande auf dem Mond](/trainingsanleitungen/scratch/scratch-moonhack.html)
 
 Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) findest die ausprogrammierten Übungsbeispiele, und kannst sie gleich einmal ausprobieren. Und du kannst deine eigenen Projekte zum Studio hinzufügen - egal ob nachprogrammiert oder Eigenkreation! Melde dich dazu bei Scratch an, und schreibe eine kurze Info mit Link auf dein Projekt in die [CoderDojo Linz Scratch Studio Kommentare](https://scratch.mit.edu/studios/4562124/comments/). Oder gib einfach einem Mentor im CoderDojo Bescheid. Dann wird dein Programm Teil des Studios, und alle Scratcher in Linz und weltweit können es sehen und verwenden. Dein Projekt muss öffentlich sein - klicke dazu im Projekt auf "Veröffentlichen". Um Mitglied im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) zu werden, musst du im Studio nur auf den blauen "Folgen" Button klicken.
 
