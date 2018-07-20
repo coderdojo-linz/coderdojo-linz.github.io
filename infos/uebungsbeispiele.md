@@ -108,6 +108,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Fan Controller](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Fan_Controller){:target="_blank"}
 1. [Stein, Schere, Papier](https://github.com/coderdojo-wien/exercises/tree/master/microbit/RockPaperScissors){:target="_blank"}
 1. [Spielwürfel](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Spielwuerfel){:target="_blank"}
+1. [Moonhack 2018](/trainingsanleitungen/microbit/microbit_Moonhack_2018.html)
 
 ## Änderungen und Ergänzungen
 
