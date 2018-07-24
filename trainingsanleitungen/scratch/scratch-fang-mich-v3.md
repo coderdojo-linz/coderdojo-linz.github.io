@@ -26,9 +26,6 @@ Damit der kleine Fisch auch kleiner ist als der große Haifisch, müssen wir den
 5. ![Fisch verkleinern](scratch-fang-mich-v3/05-resize.png){: .right}
 Nun kannst du den Fisch verkleinern, indem du ihn an den Ecken kleiner ziehst. *Tipp:* Wenn du den Fisch nur kleiner machen möchstest ohne ihn zu viel zu verändern, halte die Shift-Taste gedrückt, während du in kleiner ziehst.
 
-6. ![Drehpunkt setzen](scratch-fang-mich-v3/06-fish-center.png){: .right}
-Damit der kleine Fisch sich auch um den richtigen Punkt dreht, wenn er umdreht, musst du den Drehpunkt des Kostüms anpassen. Wähle dazu den Fisch bei den Figuren aus, sodass er blau umrandet ist. Klicke anschließend auf den Tab *Kostüme*, wähle den Fisch aus und klicke auf das Kreuz-Bildchen im rechten oberen Eck. Das angezeigte Kreuz soll genau über der Mitte des Fisches sein.
-
 7. ![Figuren benennen](scratch-fang-mich-v3/07-rename.png){: .right}
 Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Hai* und *Fisch*. Du kannst den Namen von Figuren ändern, indem du unter der weißen Leinwand rechts neben dem Wort Figur auf das Namensfeld klickst und den neuen Namen eingibst.
 
