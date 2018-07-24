@@ -25,7 +25,7 @@ Und als letzte Figur brauchst du noch einen Meteoriten. Diesen kannst du dir sel
 ## Daten
 
 1. ![Daten](scratch-space-shooter-v3/05-data.png){: .right}
-Wir brauchen für den Space Shooter einige Daten: die Anzahl der Treffer, die Enstehungszeit von Meteoriten, deren Geschwindigkeit und einen Indikator, ob ein Meteroit getroffen wurde. ACHTUNG: die Variable getroffen gilt nur für die Figur "Meteroit", alle anderen Variablen gelten für alle Figuren.
+Wir brauchen für den Space Shooter einige Daten: die Anzahl der Treffer, die Enstehungszeit von Meteoriten, deren Geschwindigkeit und einen Indikator, ob ein Meteroit getroffen wurde. **Achtung**: die Variable getroffen gilt nur für die Figur "Meteroit", alle anderen Variablen gelten für alle Figuren.
 
 ## Skripte für das Raumschiff
 
@@ -62,5 +62,5 @@ Jedesmal wenn die Leertaste gedrückt wird, muss ein neuer Laserstrahl erzeugt u
 
 ## Weitere Ideen
 
-* Füge Klänge für das Abfeuern eines Laserstrahls, für das Treffen eines Metoriten und das Zerstören des Raumschiffes hinzu.
+* Füge Klänge für das Treffen eines Metoriten und das Zerstören des Raumschiffes hinzu.
 * Verwende Variablen um die Geschwindigkeit der Meteoriten und die Anzahl der erzeugten Meteoriten mit der Zeit zu erhöhen.
