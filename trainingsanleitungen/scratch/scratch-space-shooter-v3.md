@@ -31,13 +31,9 @@ Wir brauchen für den Space Shooter einige Daten: die Anzahl der Treffer, die En
 
 Das Raumschiff hat drei Aufgaben:
 
-<div class="plainOrderedList">
-    <ol>
-        <li>Es muss erkennen, wann es von einem Meteoriten getroffen wurde und dann das Spiel beenden.</li>
-        <li>Mit den Pfeiltasten kann es nach links und rechts bewegt werden.</li>
-        <li>Mit den Tasten a und d kann es nach links und rechts gedreht werden.</li>
-    </ol>
-</div>
+* Es muss erkennen, wann es von einem Meteoriten getroffen wurde und dann das Spiel beenden.
+* Mit den Pfeiltasten kann es nach links und rechts bewegt werden.</li>
+* Mit den Tasten a und d kann es nach links und rechts gedreht werden.</li>
 
 ![Skripte für das Raumschiff](scratch-space-shooter-v3/06-spaceship.png)
 ![](scratch-space-shooter-v3/07-spaceship.png)
