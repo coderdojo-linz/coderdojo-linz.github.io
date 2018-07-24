@@ -17,7 +17,7 @@ Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst 
 Als nächstes lösche die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der rechten Maustaste darauf klickst. 
 Im angezeigten Menü kannst du Scratchy löschen.
 
-3. ![Figuren hinzufügen](scratch-fang-mich/03-fish.png){: .right}
+3. ![Figuren hinzufügen](scratch-fang-mich-v3/03-fish.png){: .right}
 Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke dazu auf *Figur wählen* und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonläuft oder eine Person die dem Löwen davon läuft.
 
 4. ![Fisch gruppieren](scratch-fang-mich-v3/04-to-group.png){: .right}
