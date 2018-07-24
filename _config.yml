@@ -12,3 +12,6 @@ github_username:  CoderDojo-Linz
 markdown: kramdown
 
 exclude: ["bin", "bower_components", "jekyll", "node_modules", "obj", "styles/sass/*.*", "typings", "coderdojo-linz.*", "*.json", "app.*", "Gulpfile.js"]
+
+#paginate: 3
+#paginate_path: "blog/page:num"

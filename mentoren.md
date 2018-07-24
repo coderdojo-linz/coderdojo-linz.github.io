@@ -1,6 +1,9 @@
 ---
 layout: mentoren
 title: Mentoren
+banner: images/coderdojo-banner-1.jpg
+banner-title: Unsere Mentoren
+banner-subtitle: Teile dein Wissen
 ---
 
 ## Möchtest du Mentor werden? ##

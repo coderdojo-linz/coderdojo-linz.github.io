@@ -1,32 +1,62 @@
+--- 
+layout: default 
 ---
-layout: default
----
 
-<h1>Unsere Mentorinnen und Mentoren</h1>
+<div class="full" style="background: #f5f5f5">
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="mod modSectionHeader ">
+				<div class="special-title centered-text">
+					<h2>St&auml;ndige Mentorinnen und Mentoren</h2>
+				</div>
+			</div>
+		</div>
+		
+		{% for page in site.pages %} {% if page.page-category == "mentor" %}
+		<div class='small-12 medium-6 large-4 columns'>
+			<div class='mod modBlogPost'>
+				<img src="{{ page.image }}" class="avatar" />
+				<div class='content'>
+					<h4>
+						<a name="{{ page.title }}">{{ page.title }}</a>
+					</h4>
+					<p>{{ page.content }}</p>
+				</div>
+			</div>
+		</div>
+		{% endif %} {% endfor %}
 
-<h2>St&auml;ndige Mentorinnen und Mentoren</h2>
-{% for page in site.pages %}
-	{% if page.page-category == "mentor" %}
-<div class="clearfix">
-	<img src="{{ page.image }}" class="mentor-image pull-left" />
-	<h3><a name="{{ page.title }}">{{ page.title }}</a></h3>
-	{{ page.content }}
+	</div>
 </div>
-	{% endif %}
-{% endfor %}
 
-<h2>Gastmentorinnen und -mentoren</h2>
-{% for page in site.pages %}
-	{% if page.page-category == "guest-mentor" %}
-<div class="clearfix">
-	<img src="{{ page.image }}" class="mentor-image pull-left" />
-	<h3><a name="{{ page.title }}">{{ page.title }}</a></h3>
-	{{ page.content }}
+<div class="full" style="background: #f5f5f5">
+	<div class="row">
+		<div class="mod modSectionHeader ">
+			<div class="special-title centered-text">
+				<h2>Gastmentorinnen und -mentoren</h2>
+			</div>
+		</div>
+	</div>
 </div>
-	{% endif %}
-{% endfor %}
 
-<!--<div class="row">
+<div class="full" style="background: #f5f5f5">
+	<div class="row">
+		{% for page in site.pages %} {% if page.page-category == "guest-mentor" %}
+		<div class="clearfix">
+			<img src="{{ page.image }}" class="mentor-image pull-left" />
+			<h4>
+				<a name="{{ page.title }}">{{ page.title }}</a>
+			</h4>
+			{{ page.content }}
+		</div>
+		{% endif %} {% endfor %}
+
+	</div>
+</div>
+
+
+
+		<!--<div class="row">
 	<div class="col-md-2 col-xs-4  mentor-image-container">
 		<img src="{{ page.image }}" class="mentor-image" />
 	</div>
@@ -36,4 +66,8 @@ layout: default
 	</div>
 </div>-->
 
-{{ content }}
+		{{ content }}
+
+		<div class="three spacing"></div>
+	</div>
+</div>

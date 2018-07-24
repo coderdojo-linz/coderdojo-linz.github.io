@@ -1,0 +1,28 @@
+- name: Home
+  path: 
+  section_id: home
+- name: Termine
+  path: termine.html
+  section_id: termine
+- name: Infos
+  path: kinder.html
+  section_id: infos
+  children:
+    - name: Kinder
+      path: infos/kinder.html
+    - name: Eltern
+      path: infos/eltern.html
+    - name: Mentoren
+      path: infos/mentoren.html
+- name: Übungsbeispiele
+  path: infos/uebungsbeispiele.html
+  section_id: uebungsbeispiele
+- name: Mentoren
+  path: mentoren.html
+  section_id: mentoren
+- name: Sponsoring
+  path: sponsoring.html
+  section_id: sponsoring
+- name: Kontakt
+  path: kontakt.html
+  section_id: kontakt
