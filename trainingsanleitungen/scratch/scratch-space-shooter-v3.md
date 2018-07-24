@@ -57,12 +57,12 @@ Jedesmal wenn die Leertaste gedrückt wird, muss ein neuer Laserstrahl erzeugt u
 
 ## Skripte für den Meteoriten
 
-![Skripte für den Meteoriten](scratch-space-shooterv-v3/11-meteorit.png)
-![](scratch-space-shooterv-v3/11-meteorit.png)
-![](scratch-space-shooterv-v3/11-meteorit.png)
-![](scratch-space-shooterv-v3/11-meteorit.png)
-![](scratch-space-shooterv-v3/11-meteorit.png)
-![](scratch-space-shooterv-v3/11-meteorit.png)
+![Skripte für den Meteoriten](scratch-space-shooter-v3/11-meteorit.png)
+![](scratch-space-shooter-v3/12-meteorit.png)
+![](scratch-space-shooter-v3/13-meteorit.png)
+![](scratch-space-shooter-v3/14-meteorit.png)
+![](scratch-space-shooter-v3/15-meteorit.png)
+![](scratch-space-shooter-v3/16-meteorit.png)
 
 ## Weitere Ideen
 
