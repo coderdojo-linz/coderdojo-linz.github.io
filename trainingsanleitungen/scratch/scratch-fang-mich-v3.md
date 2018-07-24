@@ -30,7 +30,7 @@ Nun kannst du den Fisch verkleinern, indem du ihn an den Ecken kleiner ziehst. *
 Damit der kleine Fisch sich auch um den richtigen Punkt dreht, wenn er umdreht, musst du den Drehpunkt des Kostüms anpassen. Wähle dazu den Fisch bei den Figuren aus, sodass er blau umrandet ist. Klicke anschließend auf den Tab *Kostüme*, wähle den Fisch aus und klicke auf das Kreuz-Bildchen im rechten oberen Eck. Das angezeigte Kreuz soll genau über der Mitte des Fisches sein.
 
 7. ![Figuren benennen](scratch-fang-mich-v3/07-rename.png){: .right}
-Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Haifisch* und *Fisch*. Du kannst die Eigenschaften von Figuren ändern, indem du auf das blaue *i* links über der Figur klickst.
+Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Hai* und *Fisch*. Du kannst den Namen von Figuren ändern, indem du unter der weißen Leinwand rechts neben dem Wort Figur auf das Namensfeld klickst und den neuen Namen eingibst.
 
 ## Fisch bewegen
 
