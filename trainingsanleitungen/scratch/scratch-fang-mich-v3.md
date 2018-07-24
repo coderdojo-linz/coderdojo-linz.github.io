@@ -27,20 +27,23 @@ Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Hai
 
 1. ![Fisch bewegen](scratch-fang-mich-v3/08-move-fish.png){: .right}
 Damit du den Fisch bewegen kannst, musst er nach links und rechts sowie oben und unten bewegt werden können.
+
   * Wähle zuerst den Fisch aus, damit er blau umrandet ist.
   * Im Tab *Code* kannst du deinen Fisch nun bewegen. Verwende das Ereignis *Wenn Taste ... gedrückt* unter *Ereignisse*.
   * Verknüpfe es jeweils mit einer Drehung *setze Richtung auf ...* unter *Bewegung*, damit der Fisch in die richtige Richtung schaut.
   * Außerdem brauchen wir *gehe ...er Schritt*, um den Fisch zu bewegen.
-Für *Pfeil nach oben* gedrückt: Richtung 0 Grad, gehe 10er-Schritte.
-Für *Pfeil nach unten* gedrückt: Richtung 180 Grad, gehe 10er-Schritte.
-Für *Pfeil nach rechts* gedrückt: Richtung 90 Grad, gehe 10er-Schritte.
-Für *Pfeil nach links* gedrückt: Richtung -90 Grad, gehe 10er-Schritte.
+    * Für *Pfeil nach oben* gedrückt: Richtung 0 Grad, gehe 10er-Schritte.
+    * Für *Pfeil nach unten* gedrückt: Richtung 180 Grad, gehe 10er-Schritte.
+    * Für *Pfeil nach rechts* gedrückt: Richtung 90 Grad, gehe 10er-Schritte.
+    * Für *Pfeil nach links* gedrückt: Richtung -90 Grad, gehe 10er-Schritte.
+
 Je größer die Schrittanzahl, desto schneller ist dein Fisch.
 
 ## Haifisch bewegen
 
 1. ![Haifisch bewegen](scratch-fang-mich-v3/09-move-shark.png){: .right}
-Jetzt soll der Haifisch im Aquarium herumschwimmen. 
+Jetzt soll der Haifisch im Aquarium herumschwimmen.
+
   * Wähle dazu den Haifisch aus, damit er blau umrandet ist.
   * Im Tab *Code* kannst du den Haifisch nun bewegen.
   * Unter *Ereignisse* wähle *Wenn ... angeklickt*.
@@ -51,7 +54,8 @@ Jetzt soll der Haifisch im Aquarium herumschwimmen.
 ## Fisch fangen
 
 1. ![Fisch wird berührt](scratch-fang-mich-v3/10-touch-fish.png){: .right}
-Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt werden. 
+Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt werden.
+
   * Wähle dazu den Fisch aus, damit er blau umrandet ist.
   * Im Tab *Code* kannst du den Fisch verschwinden lassen, sobald er den Haifisch berührt.
   * Unter *Ereignisse* wähle *Wenn ... angeklickt*.
@@ -59,7 +63,8 @@ Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins 
   * Falls jetzt der Hai berührt wird (*Steuerung* *falls ... dann*), dann *sende "berührt" an alle*, *verstecke dich*, *warte 5 Sekunden*, *zeige dich*, und gehe wieder ins linke obere Eck mit *gehe zu x: -230, y: 170*. Anschließend sage *Willkommen zurück* für 2 Sekunden.
 
 2. ![Hai wird berührt](scratch-fang-mich-v3/11-touch-shark.png){: .right}
-Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel "Game Over" sein. 
+Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel "Game Over" sein.
+
   * Wähle dazu den Haifisch aus, damit er blau umrandet ist.
   * Im Tab *Code* kannst du den Haifisch "Game Over" sagen lassen.
   * Unter *Ereignisse* wähle *Wenn ich ... empfange*, der Hai reagiert somit auf die vom Fisch ausgelöste Nachricht.
@@ -70,5 +75,5 @@ Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel "G
 ## Weitere Ideen
 
 * Mach das Spiel schwieriger, indem du einen zweiten, langsameren Haifisch dazu gibst.
-* Baue eine Uhr ein um zu sehen, wie lange du dem Haifisch entkommen kannst.
+* Baue eine Uhr ein, um zu sehen, wie lange du dem Haifisch entkommen kannst.
 * Steuere den Fisch mit der Maus anstatt der Tastatur.
