@@ -24,10 +24,10 @@ Jetzt brauchen wir einen Ball und einen Schläger. Links neben dem Bühnenbild f
 4. ![Figur zeichnen](scratch-paddle-game-v3/figur-malen.png){: .right}
 Als nächstes ist der Schläger dran. Diesen malen wir selbst. Dafür führst du deine Maus zuerst auf das Feld *Figur wählen*, darüber siehst du nun neue Felder. Klicke auf das Feld *Malen* und du bekommst links eine Zeichenfläche.
 
-5. ![Schläger zeichnen](scratch-paddle-game-v3/how-to-draw.png)
+5. ![Schläger zeichnen](scratch-paddle-game-v3/how-to-draw.png){: .right}
 Male einen einfaches Rechteck, dass den Ball daran hindern wird, am Boden aufzuschlagen. Du brauchst dazu das Werkzeug um Rechtecke zu malen. Wenn du das Rechteck gemalt hast, wähle noch eine schöne Füllfarbe aus. Danach kannst du es im rechten Bereich auf der Bühne verschieben. Verschiebe es in den unteren Bereich der Bühne, aber nicht ganz nach unten. Hier brauchen wir noch ein wenig Platz für den Bereich, in dem der Ball im *Out* ist.
 
-6. ![Out](scratch-paddle-game-v3/out.png){: .right}
+6. ![Out](scratch-paddle-game-v3/how-it-should-look.png){: .right}
 Jetzt brauchst du noch den *Out* Bereich. Dafür malst du eine weitere Figur - ein Rechteck in einer andere Farbe. Das Rechteck muss so breit wie der ganze Zeichenbereich sein. Das Rechteck schiebst du dann auf der Bühne ganz nach unten.
 
 7. ![Figuren benennen](scratch-paddle-game-v3/name.png){: .right}
