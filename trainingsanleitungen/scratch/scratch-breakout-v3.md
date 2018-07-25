@@ -6,7 +6,7 @@ description: In diesem Spiel pulverisierst du bunte Mauersteine
 
 # Scratch Breakout
 
-![Scratchy löschen](scratch-breakout-v3/breakout.png){: .right}
+![Breakout](scratch-breakout-v3/breakout.png){: .right}
 
 In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläger einen Ball darauf schleuderst. Wenn alle Mauersteine zerstört sind, kommst du in den nächsten Level, wo dein Ball dann noch schneller fliegt.
 
