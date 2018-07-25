@@ -11,33 +11,26 @@ In dieser Übung baust du ein kleines Spiel, in dem du versuchst, einen Ball mit
 ## Bühne und Figuren anlegen
 
 1. ![Bühnenbild und Figuren anlegen](scratch-paddle-game-v3/background.png){: .right}
-Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen die Bühne, hier der Strand, einen Ball, einen Schläger und einen Bereich der markiert, wo der Ball im *Out* ist.<br/><br/>
-Wenn du ein neues Projekt startest, siehst du eine weiße Bühne mit Scratchy, der Katze. 
-Wähle als erstes links unten ein Bühnenbild aus. Den Strand findest du im Thema *Sport*. Du kannst aber auch ein anderes Bühnenbild verwenden.
+Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen die Bühne, hier der Strand, einen Ball, einen Schläger und einen Bereich der markiert, wo der Ball im *Out* ist. Wenn du ein neues Projekt startest, siehst du eine weiße Bühne mit Scratchy, der Katze. Wähle als erstes rechts unten ein Bühnenbild aus.
 ![Bühnenbild und Figuren anlegen](scratch-paddle-game-v3/bühne-wählen.png)
 
 2. ![Figur löschen](scratch-paddle-game-v3/löschen.png){: .right}
-Als nächstes lösche die Figur Scratchy mit dem Namen *Sprite1* indem du mit der rechten Maustaste darauf klickst. 
-Im angezeigten Menü kannst du Scratchy löschen.
+Als nächstes lösche die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
 
 3. ![Figur hinzufügen](scratch-paddle-game-v3/neue-figur.png){: .right}
-Jetzt brauchen wir einen Ball und einen Schläger. Rechts neben dem Bühnenbild findest du einen Menüpunkt, mit dem 
-du neue Figuren hinzufügen kannst. Bei Thema *Sport* findest du verschiedene Bälle. Wähle einen davon aus.
+Jetzt brauchen wir einen Ball und einen Schläger. Links neben dem Bühnenbild findest du einen Menüpunkt, mit dem du neue Figuren hinzufügen kannst. Bei Thema *Sport* findest du verschiedene Bälle. Wähle einen davon aus.
 
 4. ![Figur zeichnen](scratch-paddle-game-v3/figur-malen.png){: .right}
-Als nächstes ist der Schläger dran. Diesen malen wir selbst. Dafür gibt es rechts neben dem Punkt *Figur hinzufügen* 
-einen weiteren Punkt *Figur zeichnen*. Wählen ihn aus und du bekommst rechts eine Zeichenfläche.
+Als nächstes ist der Schläger dran. Diesen malen wir selbst. Dafür führst du deine Maus zuerst auf das Feld *Figur wählen*, darüber siehst du nun neue Felder. Klicke auf das Feld *Malen* und du bekommst links eine Zeichenfläche.
 
-5. Male einen einfaches Rechteck, dass
- den Ball daran hindern wird, am Boden aufzuschlagen. Du brauchst dazu das Werkzeug um Rechtecke zu malen und das Werkzeug um Flächen auszufüllen.
-Wenn du das Rechteck gemalt hast, kannst du es im linke Bereich auf der Bühne verschieben. Verschiebe es in den unteren Bereich der Bühne, aber nicht ganz nach unten. Hier brauchen wir noch ein wenig Platz für den Bereich, in dem der Ball im *Out* ist.
-![Schläger zeichnen](scratch-paddle-game-v3/how-to-draw.png)
+5. ![Schläger zeichnen](scratch-paddle-game-v3/how-to-draw.png)
+Male einen einfaches Rechteck, dass den Ball daran hindern wird, am Boden aufzuschlagen. Du brauchst dazu das Werkzeug um Rechtecke zu malen. Wenn du das Rechteck gemalt hast, wähle noch eine schöne Füllfarbe aus. Danach kannst du es im rechten Bereich auf der Bühne verschieben. Verschiebe es in den unteren Bereich der Bühne, aber nicht ganz nach unten. Hier brauchen wir noch ein wenig Platz für den Bereich, in dem der Ball im *Out* ist.
 
 6. ![Out](scratch-paddle-game-v3/out.png){: .right}
 Jetzt brauchst du noch den *Out* Bereich. Dafür malst du eine weitere Figur - ein Rechteck in einer andere Farbe. Das Rechteck muss so breit wie der ganze Zeichenbereich sein. Das Rechteck schiebst du dann auf der Bühne ganz nach unten.
 
 7. ![Figuren benennen](scratch-paddle-game-v3/name.png){: .right}
-Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Schlaeger* und *Out* anstelle von *Sprite 1* und *Sprite 2*. Du kannst die Eigenschaften von Figuren ändern, indem du auf das blaue *i* links über der Figur klickst.
+Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Schläger* und *Out* anstelle von *Sprite 1* und *Sprite 2*. Du kannst den Namen unter der Bühne neben dem Wort Figur im Namensfeld ändern.
 
 ## Schläger nach links und rechts bewegen
 
