@@ -6,50 +6,16 @@ description: In diesem Spiel pulverisierst du bunte Mauersteine
 
 # Scratch Breakout
 
-<div class="row sushi-intro">
-	<div class="col-sm-6"><img alt="Breakout" src="scratch-breakout-v3/breakout.png" /></div>
-	<div class="col-sm-6">
-		<p>In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläger einen Ball darauf schleuderst. Wenn alle Mauersteine zerstört sind, kommst du in den nächsten Level, wo dein Ball dann noch schneller fliegt.</p>
-		<p>Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/72990950" target="_blank">https://scratch.mit.edu/projects/72990950</a> auch gleich ausprobieren.</p>
-		<table class="table sushi-stats">
-			<tbody>
-				<tr>
-					<td>Figuren</td>
-					<td>3</td>
-				</tr>
-				<tr>
-					<td>Skripte</td>
-					<td>8</td>
-				</tr>
-				<tr>
-					<td>Daten</td>
-					<td>4 / 4 / 7 / 6</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
+![Scratchy löschen](scratch-breakout-v3/breakout.png){: .right}
+
+In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläger einen Ball darauf schleuderst. Wenn alle Mauersteine zerstört sind, kommst du in den nächsten Level, wo dein Ball dann noch schneller fliegt.
+Du kannst das fertige Spiel unter
 
 ## Downloads
 
-<table class="table sushi-overview">
-	<tr class="subtitle">
-		<td>Figur</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>Ball</td>
-		<td><a href="scratch-breakout/Ball.sprite2">Figur downloaden</a></td>
-	</tr>
-	<tr>
-		<td>Block</td>
-		<td><a href="scratch-breakout/Block.sprite2">Figur downloaden</a></td>
-	</tr>
-	<tr>
-		<td>Schläger</td>
-		<td><a href="scratch-breakout/Schlaeger.sprite2">Figur downloaden</a></td>
-	</tr>
-</table>
+Ball [Figur downloaden](https://scratch-breakout/Ball.sprite2/){:target="_blank"}
+Block [Figur downloaden](https://scratch-breakout/Block.sprite2/){:target="_blank"}
+Schläger [Figur downloaden](https://scratch-breakout/Schlaeger.sprite2/){:target="_blank"}
 
 ## Bühne und Figuren anlegen
 
