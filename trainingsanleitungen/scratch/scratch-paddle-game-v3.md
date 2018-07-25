@@ -12,6 +12,7 @@ In dieser Übung baust du ein kleines Spiel, in dem du versuchst, einen Ball mit
 
 1. ![Bühnenbild und Figuren anlegen](scratch-paddle-game-v3/background.png){: .right}
 Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen die Bühne, hier der Strand, einen Ball, einen Schläger und einen Bereich der markiert, wo der Ball im *Out* ist. Wenn du ein neues Projekt startest, siehst du eine weiße Bühne mit Scratchy, der Katze. Wähle als erstes rechts unten ein Bühnenbild aus.
+
 ![Bühnenbild und Figuren anlegen](scratch-paddle-game-v3/bühne-wählen.png)
 
 2. ![Figur löschen](scratch-paddle-game-v3/löschen.png){: .right}
