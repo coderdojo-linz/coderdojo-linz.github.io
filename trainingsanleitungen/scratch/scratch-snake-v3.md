@@ -7,7 +7,7 @@ description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Ran
 # Scratch Snake
 
 ![Endgame](scratch-snake-v3/endgame.png){: .right}
-Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auch, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
+Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auf, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
 Das Spiel besteht aus 3 Figuren und 14 Skripten.
 
 ## Bühne & Figuren
