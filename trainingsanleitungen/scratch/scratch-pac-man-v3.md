@@ -12,7 +12,7 @@ Pac-Man muß alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu lau
 
 ## Vorbereitungen
 
-Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. kannst du sie auch unter [http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man/pac-man.zip](https://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man/pac-man.zip){:target="_blank"} herunterladen. 
+Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. kannst du sie auch unter [http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man/pac-man.zip](https://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man/pac-man.zip){:target="_blank"} herunterladen.
 Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMan, Ghost und Pill.
 
 ![Figuren](scratch-pac-man-v3/figuren.png)
@@ -33,7 +33,7 @@ In das Bühnenbild lädst du bitte die Grafik *Stage.png* und den Klang *PacMan.
 
 ![Daten](scratch-pac-man-v3/daten-stage.png)
 
-Weiters beinhaltet die Bühne Skripte für den Spielstart und das Abspielen der Hintergrundmusik:
+Weiters beinhaltet die Bühne Codeblöcke für den Spielstart und das Abspielen der Hintergrundmusik:
 
 ![Code Bühne](scratch-pac-man-v3/code-bühne-1.png)
 
@@ -125,7 +125,7 @@ Die PacMan Codeblöcke sind relativ umfangreich. Hier die benötigten Variablen,
 
 ![Daten Pac Man](scratch-pac-man-v3/daten-pac-man.png){: .floatLeft}
 
-Wir verwenden wieder lila Blöcke zur Wiederverwendung von Code. Bitte achte darauf daß du dabei immer die Option *Ohne Bildschirmaktualisierung laufen lassen* selektierst, sonst könnte es sein, daß dein Programm zu langsam ist.
+Wir verwenden wieder rosa Blöcke zur Wiederverwendung von Code. Bitte achte darauf daß du dabei immer die Option *Ohne Bildschirmaktualisierung laufen lassen* selektierst, sonst könnte es sein, daß dein Programm zu langsam ist.
 
 Hier läuft ein sogenannter Timer, damit PacMan nach zehn Sekunden seine Superkräfte auch wieder verliert. Der *Reset*-Block dient dem Zurücksetzen auf den Ursprungszustand von PacMan. Die Tastatursteuerung ist hier ebenfalls implementiert.
 
@@ -133,10 +133,10 @@ Hier läuft ein sogenannter Timer, damit PacMan nach zehn Sekunden seine Superkr
 
 ![Code Pac-man](scratch-pac-man-v3/code-pac-man-2.png)
 
-Das PacMan-Hauptprogramm läuft in einer Schleife bis alle Leben verbraucht sind. Wird ein Geist berührt, verliert man ein Leben und PacMan’s Aussehen ändert sich.
+Das PacMan-Hauptprogramm läuft in einer Schleife bis alle Leben verbraucht sind. Wird ein Geist berührt, verliert man ein Leben und PacMans Aussehen ändert sich.
 
-Weiters wird die Bewegungsrichtung abgefragt, und PacMan bewegt sich im Grid entsprechend weiter. Jeder Schritt entspricht drei Bildschirmpixeln, und nach drei Schritten (also neun Pixeln) ist das nächste Grid-Feld erreicht. Wenn PacMan an einer Wand ansteht, stoppt die Bewegung. 
-Und wenn wir den Tunnel erreicht haben, wird der Block „HandlePortal“ aufgerufen. 
+Weiters wird die Bewegungsrichtung abgefragt, und PacMan bewegt sich im Grid entsprechend weiter. Jeder Schritt entspricht drei Bildschirmpixeln, und nach drei Schritten (also neun Pixeln) ist das nächste Grid-Feld erreicht. Wenn PacMan an einer Wand ansteht, stoppt die Bewegung.
+Und wenn wir den Tunnel erreicht haben, wird der Block *HandlePortal* aufgerufen.
 
 Am Schluß ändern wir noch die Bewegungsrichtung, falls in der Zwischenzeit eine Taste gedrückt wurde, und wenn wir abbiegen können. Das erlaubt dem Spieler schon vorzeitig Tasten zu drücken (noch bevor eine Abzweigung erreicht ist), und dadurch kann man PacMan sehr schnell lenken.
 
