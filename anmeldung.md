@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: content
 title: Anmeldung
+section_id: anmeldung
+banner: images/coderdojo-banner-3.jpg
+banner-title: Anmeldung
+banner-subtitle: Dein erster Besuch beim CoderDojo
 ---
-
-# Dein erster Besuch beim CoderDojo Linz
 
 **Eine Anmeldung ist nur erforderlich, wenn du noch nie beim CoderDojo warst. Hast du bereits einmal teilgenommen, kannst du ohne Anmeldung zu allen <a href="termine.html">Terminen</a> kommen.**
 
@@ -113,53 +115,53 @@ Vielen Dank an unseren Partner [Wissensturm Linz](http://www.linz.at/wissensturm
 
 <script language="javascript">
 
-$.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function(data) {
+jQuery.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function(data) {
     //  && (new moment(item.date)).format("YYYY-MM-DD") != "2018-06-08"
     data.filter(item => item.type != "playground").slice(0, 4).forEach(function(item) {
-         $("#event").append("<option value=\"" + item._id + "\">" + (new moment(item.date)).format("DD. MMMM YYYY") + " - " + (item.location ? item.location : "Wissensturm") + "</option>");
+         jQuery("#event").append("<option value=\"" + item._id + "\">" + (new moment(item.date)).format("DD. MMMM YYYY") + " - " + (item.location ? item.location : "Wissensturm") + "</option>");
     });
 
     var currentYear = new moment().year();
     for (var i = currentYear - 6; i >= currentYear - 18; i--) {
-        $("#yearOfBirth").append("<option value=\"" + i.toString() + "\">" + i.toString() + "</option>");
+        jQuery("#yearOfBirth").append("<option value=\"" + i.toString() + "\">" + i.toString() + "</option>");
     }
 });
 
-$("#registration-form").submit(function () {
+jQuery("#registration-form").submit(function () {
     var url = "https://prod-26.northeurope.logic.azure.com:443/workflows/b6064052cfbc4d7995dfcd32ce28899a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=rFRMP5l-GmN8t0k0h2YHd98T5zMZp3DitjsQDmnkTos";
 
-    var eventId = $("#event").val();
+    var eventId = jQuery("#event").val();
 
     var registration = {
         "eventId": eventId,
-        "eventDate": $("#event option:selected").text(),
+        "eventDate": jQuery("#event option:selected").text(),
         "participants": {
-            "email": $("#email").val(),
-            "givenName": $("#givenName").val(),
-            "familyName": $("#familyName").val(),
-            "gender": $("#gender").val(),
-            "yearOfBirth": $("#yearOfBirth").val()
+            "email": jQuery("#email").val(),
+            "givenName": jQuery("#givenName").val(),
+            "familyName": jQuery("#familyName").val(),
+            "gender": jQuery("#gender").val(),
+            "yearOfBirth": jQuery("#yearOfBirth").val()
         },
-        "needsComputer": $("#rentalNotebook").val() == "yes" ? true : false
+        "needsComputer": jQuery("#rentalNotebook").val() == "yes" ? true : false
     };
 
-    $.ajax({ 
+    jQuery.ajax({ 
         url: url, 
         type: "POST",
         data: JSON.stringify(registration), 
         contentType:"application/json; charset=utf-8",
         dataType: "json",
         success: function(data) {
-            $(".registration-finished").removeClass("hide");
-            $(".registration").addClass("hide");
+            jQuery(".registration-finished").removeClass("hide");
+            jQuery(".registration").addClass("hide");
         }
     }).fail(function(jqXHR, textStatus) {
         if (textStatus == "parsererror") {
-            $(".registration-finished").removeClass("hide");
-            $(".registration").addClass("hide");
+            jQuery(".registration-finished").removeClass("hide");
+            jQuery(".registration").addClass("hide");
         } else {
-            $(".registration-error").removeClass("hide");
-            $(".registration").addClass("hide");
+            jQuery(".registration-error").removeClass("hide");
+            jQuery(".registration").addClass("hide");
         }
     });
 

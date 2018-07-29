@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="sushi">
+
+	{% include header.html %}
+
+	<div id='main' role='main'>
+		<div class='full sushi-header'>
+			<div class='row'>
+				<div class='columns'>
+					<div class="mod modSectionHeader ">
+						<div class="special-title centered-text">
+							<h2>{{ page.title }}</h2>
+						</div>
+					</div>
+					<div class="spacing"></div>
+				</div>
+
+				<div class='small-12 medium-8 large-8 columns'>
+					<div class="mod modBoxedSlider">
+						<div class="slides">
+							{% for image in page.scratch-images %}
+							<div class="slide" index="0">
+								<img alt="" src="{{ image }}">
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+
+				<div class='small-12 medium-4 large-4 columns'>
+					<p>{{ page.description }}</p>
+					<p>
+						<ul class="info">
+							<li>
+								<strong>Figuren:</strong> {{ page.scratch-sprites }}
+							</li>
+							<li>
+								<strong>Skripte:</strong> {{ page.scratch-scripts }}
+							</li>
+							<li>
+								<strong>Daten:</strong> {{ page.scratch-data }}
+							</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="full">
+			<div class="row">
+				<div class="columns">
+					{{ content }}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% include footer.html %}
+
+</body>
+
+</html>

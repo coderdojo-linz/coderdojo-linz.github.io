@@ -1,14 +1,17 @@
 ---
-layout: default
+layout: content
 title: Termine
-bannerimage: /images/coderdojo-banner-3.jpg
+section_id: termine
+banner: images/coderdojo-banner-3.jpg
+banner-title: Termine
+banner-subtitle: Alle zwei Wochen Gelegenheit Programmieren zu üben
 ---
-
-# Termine
 
 **Hast du noch nie beim CoderDojo teilgenommnen, musst du dich für die Teilnahme an deinem ersten Termin anmelden. Wenn es dir gefällt und du wiederkommen möchtest, kannst du ohne weitere Anmeldung zu allen Terminen kommen.**
 
-<p class="text-center"><a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung</a></p>
+<p class="text-center">
+	<input class="button" type="button" onclick="document.location.href='/anmeldung.html'" value="Zur Anmeldung" />
+</p>
 
 Es gibt zwei verschiedene Veranstaltungen:
 
@@ -37,9 +40,9 @@ Es gibt zwei verschiedene Veranstaltungen:
 		return dat;
 	}
 
-	var eventsTable = $("#eventsTable");
+	var eventsTable = jQuery("#eventsTable");
 
-	$.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function(data) {
+	jQuery.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function(data) {
 		var additionalEvents = [
 			{ date: new Date(2017, 6, 7), title: "Sommerferien 2017", type: "header" },
 			{ date: new Date(2017, 6, 13), title: "Sommerferien 2017", type: "header" },
@@ -136,6 +139,6 @@ Es gibt zwei verschiedene Veranstaltungen:
 			eventsTable.append(row);
 		});
 
-		$(".loadingText").hide();
+		jQuery(".loadingText").hide();
 	});
 </script>

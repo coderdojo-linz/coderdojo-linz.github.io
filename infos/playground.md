@@ -1,7 +1,11 @@
 ---
-layout: default
+layout: content
 title: CoderDojo Playground
 description: CoderDojo Playground - Übung macht den Meister
+section_id: infos
+banner: images/coderdojo-banner-3.jpg
+banner-title: CoderDojo Playground
+banner-subtitle: Übung macht dein Meister
 ---
 
 # CoderDojo Playground

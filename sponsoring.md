@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: content
 title: Sponsoring
+section_id: sponsoring
+banner: images/coderdojo-banner-3.jpg
+banner-title: Sponsoring
+banner-subtitle: Untersütze das CoderDojo mit Geld- oder Sachleistungen
 ---
-
-# Sponsoring
 
 ## Wer sind wir?
 In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.

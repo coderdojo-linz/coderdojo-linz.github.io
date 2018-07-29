@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: content
 title: Kontakt
+section_id: kontakt
+banner: images/coderdojo-banner-3.jpg
+banner-title: Kontakt
+banner-subtitle: Schicke uns eine E-Mail
 ---
-
-# Kontakt
 
 Bei Fragen oder Anregungen schickt uns eine Mail an [info@coderdojo-linz.org](mailto:info@coderdojo-linz.org).
 

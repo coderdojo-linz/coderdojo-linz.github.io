@@ -783,9 +783,9 @@ ul.shortcode-list i {
   border: 2px solid #03A9F4;
 }
 
-.button:hover {
+/* .button:hover {
   background-color: rgba(249, 206, 6, 0.8);
-}
+} */
 
 .button.boxed {
   color: #fff;

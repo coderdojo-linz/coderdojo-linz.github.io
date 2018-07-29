@@ -1,6 +1,19 @@
 ---
 ---
 
+/* header */
+.title-area .name {
+    a {
+        font-size: 1rem !important;
+    }
+
+    img {
+        width: auto !important;
+        padding-right: 5px;
+    }
+}
+
+/* mentors */
 .modBlogPost.mentor {
     height: 700px;
     overflow-y: auto;

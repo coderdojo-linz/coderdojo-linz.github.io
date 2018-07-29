@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: content
 title: Mentoren
+section_id: infos
+banner: images/coderdojo-banner-3.jpg
+banner-title: Infos für Mentoren
+banner-subtitle: Teile deine Begeisterung für Technik und Softwareentwicklung
 ---
-
-# Wir suchen Mentoren!
 
 **Du kannst gut programmieren oder bist ein Elektronik-Crack? Dann brauchen wir dich als Mentor.**
 

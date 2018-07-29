@@ -5,7 +5,7 @@
   path: termine.html
   section_id: termine
 - name: Infos
-  path: kinder.html
+  path: infos/kinder.html
   section_id: infos
   children:
     - name: Kinder
@@ -14,7 +14,7 @@
       path: infos/eltern.html
     - name: Mentoren
       path: infos/mentoren.html
-- name: Übungsbeispiele
+- name: Übungen
   path: infos/uebungsbeispiele.html
   section_id: uebungsbeispiele
 - name: Mentoren

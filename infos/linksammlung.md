@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: content
 title: Wichtige Links
 description: Wichtige Links für Teilnehmer, Eltern und Mentoren
+banner: images/coderdojo-banner-3.jpg
+banner-title: Links
+banner-subtitle: Infos und Software Downloads
 ---
 
 # Wichtige Links für Teilnehmer, Eltern und Mentoren #

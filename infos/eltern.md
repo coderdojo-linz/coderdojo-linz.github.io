@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: content
 title: Für Eltern
 description: Häufige Fragen von Eltern zum CoderDojo
+section_id: infos
+banner: images/coderdojo-banner-3.jpg
+banner-title: Infos für Eltern
+banner-subtitle: Was ist ein CoderDojo?
 ---
-
-# Informationen für Eltern #
-
 
 ## Was ist ein CoderDojo? ##
 

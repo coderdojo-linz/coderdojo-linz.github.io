@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: content
 title: Übungsbeispiele
 description: Eine Sammlung von Trainingsanleitungen
+section_id: uebungsbeispiele
+banner: images/coderdojo-banner-3.jpg
+banner-title: Übungsbeispiele
+banner-subtitle: Erste Schritte im Programmieren
 ---
-
-# Übungsbeispiele
-
-Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 
 ## Scratch
 

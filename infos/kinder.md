@@ -1,10 +1,12 @@
 ---
-layout: default
+layout: content
 title: Für Kinder und Jugendliche
 description: Informationen für Kinder und Jugendliche zum CoderDojo
+section_id: infos
+banner: images/coderdojo-banner-3.jpg
+banner-title: Infos für Kinder
+banner-subtitle: Dein erstes Computerspiel, eine eigene Webseite, ...
 ---
-
-# Neugierig auf Technik und Programmieren?
 
 Wolltest du immer schon wissen, wie Computer, iPad oder Smartphone funktionieren? Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren? Reicht es dir nicht, deinen Status auf Facebook zu posten? Du möchtest lieber deine ganz eigene Webseite? 
 

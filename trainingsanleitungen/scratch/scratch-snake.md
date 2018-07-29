@@ -1,35 +1,18 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Snake
 description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Rand und verwickle dich nicht, wenn die Schlange länger wird.
+scratch-images:
+- scratch-snake/snake-game.png
+- scratch-snake/skript-schlange-1.png
+scratch-sprites: 3
+scratch-scripts: 14
+scratch-data: 2
 ---
 
-# Scratch Snake
+Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auch, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
 
-<div class="row sushi-intro">
-	<div class="col-sm-6"><img alt="Snake Game" src="scratch-snake/snake-game.png" /></div>
-	<div class="col-sm-6">
-		<p>Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auch, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.</p>
-		<p>Das Spiel besteht aus 3 Figuren und 14 Skripten. In der folgenden Anleitung findest du einige Fragezeichen in den Skripten. Hier bist du gefordert, die richtige Lösung zu finden!</p>
-		<p>Wenn du noch keine Idee hast, welche Bausteine hier fehlen könnten, findest du am Ende der Anleitung die vollständigen Skripte.</p>
-		<table class="table sushi-stats">
-			<tbody>
-				<tr>
-					<td>Figuren</td>
-					<td>3</td>
-				</tr>
-				<tr>
-					<td>Skripte</td>
-					<td>14</td>
-				</tr>
-				<tr>
-					<td>Daten</td>
-					<td>2</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
+In der folgenden Anleitung findest du einige Fragezeichen in den Skripten. Hier bist du gefordert, die richtige Lösung zu finden! Wenn du noch keine Idee hast, welche Bausteine hier fehlen könnten, findest du am Ende der Anleitung die vollständigen Skripte.
 
 ## Bühne & Figuren
 
@@ -117,63 +100,66 @@ Lege dafür zwei Variablen mit den Namen "DauerProPosition" und "Länge" an, die
 ## Skripte für die Schlange
 
 <div class="row sushi-scripts">
-	<div class="col-sm-4">
-		<div class="sushi-numbering">1</div>
-		<p>Zeige als erstes den Kopf der Schlange in der Mitte der Bühne an und lass sie nach rechts schauen.</p>
-		<p>Dann setze die Werte für die Daten Länge auf 5 und für DauerProPosition auf 0.2.</p>
-		<p>Dann lass die Schlange fortlaufend 20iger Schritte gehen, warte für DauerProPosition Sekunden und erzeuge dann einen Klon. Der Klon wird später der Körper der Schlange.</p>
-	</div>
-	<div class="col-sm-8">
-		<img src="scratch-snake/skript-schlange-1.png" title="Bewege die Schlange" />
-	</div>
-	<div class="col-sm-12"><hr /></div>
+	<div class='columns'>
+		<div class="small-4">
+			<div class="sushi-numbering">1</div>
+			<p>Zeige als erstes den Kopf der Schlange in der Mitte der Bühne an und lass sie nach rechts schauen.</p>
+			<p>Dann setze die Werte für die Daten Länge auf 5 und für DauerProPosition auf 0.2.</p>
+			<p>Dann lass die Schlange fortlaufend 20iger Schritte gehen, warte für DauerProPosition Sekunden und erzeuge dann einen Klon. Der Klon wird später der Körper der Schlange.</p>
+		</div>
+		<div class="small-8">
+			<img src="scratch-snake/skript-schlange-1.png" title="Bewege die Schlange" />
+		</div>
 
-	<div class="col-sm-4">
-		<div class="sushi-numbering">2</div>
-		<p>Mache den Klon zum Körper der Schlange indem du das Kostüm auf Körper wechselst</p>
-		<p>Zeige Klon für jede Position im Körper für die LängeProPosition an.</p>
-		<p>Wenn die Schlange eine Länge von 3 hat, dann wird der Klon für 3 * 0.2 Sekunden = 0.6 Sekunden angezeigt. Wenn die Schlange schon eine Länge von 10 hat,
-dann wird der Klon für 10 * 0.2 Sekunden = 2 Sekunden angezeigt.</p>
-		<p>Lösche dann den Klon.</p>
-	</div>
-	<div class="col-sm-8">
-		<img src="scratch-snake/skript-schlange-2.png" title="Mache den Klon zum Körper der Schlange" />
-	</div>
-	<div class="col-sm-12"><hr /></div>
+		<div class="small-12"><hr /></div>
 
-	<div class="col-sm-4">
-		<div class="sushi-numbering">3</div>
-		<p>Ändere mit den Pfeiltasten die Richtung der Schlange.</p>
-	</div>
-	<div class="col-sm-8">
-		<img src="scratch-snake/skript-schlange-3.png" title="Ändere die Richtung der Schlange" />
-	</div>
-	<div class="col-sm-12"><hr /></div>
+		<div class="small-4">
+			<div class="sushi-numbering">2</div>
+			<p>Mache den Klon zum Körper der Schlange indem du das Kostüm auf Körper wechselst</p>
+			<p>Zeige Klon für jede Position im Körper für die LängeProPosition an.</p>
+			<p>Wenn die Schlange eine Länge von 3 hat, dann wird der Klon für 3 * 0.2 Sekunden = 0.6 Sekunden angezeigt. Wenn die Schlange schon eine Länge von 10 hat,
+	dann wird der Klon für 10 * 0.2 Sekunden = 2 Sekunden angezeigt.</p>
+			<p>Lösche dann den Klon.</p>
+		</div>
+		<div class="small-8">
+			<img src="scratch-snake/skript-schlange-2.png" title="Mache den Klon zum Körper der Schlange" />
+		</div>
+		<div class="small-12"><hr /></div>
 
-	<div class="col-sm-4">
-		<div class="sushi-numbering">4</div>
-		<p>Mach die DauerProPosition alle 10 Sekunden um 0.02 kleiner. Wenn die Schlange weniger lang an einer Position verweilt wird sie schneller.</p>
-	</div>
-	<div class="col-sm-8">
-		<img src="scratch-snake/skript-schlange-4.png" title="Erhöhe die Geschwindigkeit" />
-	</div>
-	<div class="col-sm-12"><hr /></div>
+		<div class="small-4">
+			<div class="sushi-numbering">3</div>
+			<p>Ändere mit den Pfeiltasten die Richtung der Schlange.</p>
+		</div>
+		<div class="small-8">
+			<img src="scratch-snake/skript-schlange-3.png" title="Ändere die Richtung der Schlange" />
+		</div>
+		<div class="small-12"><hr /></div>
 
-	<div class="col-sm-4">
-		<div class="sushi-numbering">5</div>
-		<p>Das Spiel ist vorbei wenn die Schlange entweder den Rand berührt oder wenn die Zunge der Schlange (rot) ihren Körper (grün) berührt. Sende dann die Nachricht "Verloren".</p>
-	</div>
-	<div class="col-sm-8">
-		<img src="scratch-snake/skript-schlange-5.png" title="Erkenne wann das Spiel vorbei ist" />
-	</div>
-	<div class="col-sm-12"><hr /></div>
+		<div class="small-4">
+			<div class="sushi-numbering">4</div>
+			<p>Mach die DauerProPosition alle 10 Sekunden um 0.02 kleiner. Wenn die Schlange weniger lang an einer Position verweilt wird sie schneller.</p>
+		</div>
+		<div class="small-8">
+			<img src="scratch-snake/skript-schlange-4.png" title="Erhöhe die Geschwindigkeit" />
+		</div>
+		<div class="small-12"><hr /></div>
 
-	<div class="col-sm-4">
-		<div class="sushi-numbering">6</div>
-		<p>Wenn die Nachricht "Verloren" versandt wurde, stoppe alle Skripte und setzte die Schlange wieder auf die Anfangsposition.</p>
-	</div>
-	<div class="col-sm-8">
-		<img src="scratch-snake/skript-schlange-6.png" title="Stoppe alle Skripte" />
+		<div class="small-4">
+			<div class="sushi-numbering">5</div>
+			<p>Das Spiel ist vorbei wenn die Schlange entweder den Rand berührt oder wenn die Zunge der Schlange (rot) ihren Körper (grün) berührt. Sende dann die Nachricht "Verloren".</p>
+		</div>
+		<div class="small-8">
+			<img src="scratch-snake/skript-schlange-5.png" title="Erkenne wann das Spiel vorbei ist" />
+		</div>
+		<div class="small-12"><hr /></div>
+
+		<div class="small-4">
+			<div class="sushi-numbering">6</div>
+			<p>Wenn die Nachricht "Verloren" versandt wurde, stoppe alle Skripte und setzte die Schlange wieder auf die Anfangsposition.</p>
+		</div>
+		<div class="small-8">
+			<img src="scratch-snake/skript-schlange-6.png" title="Stoppe alle Skripte" />
+		</div>
 	</div>
 </div>
 
@@ -181,7 +167,7 @@ dann wird der Klon für 10 * 0.2 Sekunden = 2 Sekunden angezeigt.</p>
 ## Skripte für den Apfel
 
 <div class="row sushi-scripts">
-	<div class="col-sm-4">
+	<div class="small-4 columns">
 		<div class="sushi-numbering">1</div>
 		<p>Der Apfel muss zwei Aufgaben erfüllen: er muss eine Position finden, an der sich die Schlange gerade nicht befindet und er muss erkennen, wenn er von der Schlange berührt wird.</p>
 		<p>
@@ -200,7 +186,7 @@ dann wird der Klon für 10 * 0.2 Sekunden = 2 Sekunden angezeigt.</p>
 			</ul>
 		</p>
 	</div>
-	<div class="col-sm-8">
+	<div class="small-8" columns>
 		<img src="scratch-snake/skript-apfel-1.png" title="Skripte Apfel" />
 	</div>
 </div>
@@ -208,18 +194,20 @@ dann wird der Klon für 10 * 0.2 Sekunden = 2 Sekunden angezeigt.</p>
 ## Skripte für SpielZuEnde
 
 <div class="row sushi-scripts">
-	<div class="col-sm-4">
-		<div class="sushi-numbering">1</div>
-		<p>Die Figur SpielZuEnde wird erst angezeigt, wenn du mit der Schlange entweder den Rand oder die Schlange selbst berührst.</p>
-		<p>
-			<ul>
-				<li>Beim Start des Spiels verstecke die Figur SpielZuEnde und setzte sie in die Mitte der Bühne.</li>
-				<li>Wenn du die Nachricht "Verloren" empfängst, zeige die Figur an und spiele einen Klang. Nach drei Sekunden kannst du die Figur wieder verstecken und alle Skripte stoppten.</li>
-			</ul>
-		</p>
-	</div>
-	<div class="col-sm-8">
-		<img src="scratch-snake/skript-game-over-1.png" title="Game Over" />
+	<div class='columns'>
+		<div class="small-4">
+			<div class="sushi-numbering">1</div>
+			<p>Die Figur SpielZuEnde wird erst angezeigt, wenn du mit der Schlange entweder den Rand oder die Schlange selbst berührst.</p>
+			<p>
+				<ul>
+					<li>Beim Start des Spiels verstecke die Figur SpielZuEnde und setzte sie in die Mitte der Bühne.</li>
+					<li>Wenn du die Nachricht "Verloren" empfängst, zeige die Figur an und spiele einen Klang. Nach drei Sekunden kannst du die Figur wieder verstecken und alle Skripte stoppten.</li>
+				</ul>
+			</p>
+		</div>
+		<div class="small-8">
+			<img src="scratch-snake/skript-game-over-1.png" title="Game Over" />
+		</div>
 	</div>
 </div>
 
