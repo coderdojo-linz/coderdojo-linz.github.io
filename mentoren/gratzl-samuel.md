@@ -4,6 +4,7 @@ title: Samuel Gratzl
 description: 
 image: /mentoren/images/samuel-gratzl.jpg
 page-category: mentor
+active: false
 ---
 
 Samuel hat an der JKU Informatik studiert und ist in den Endzügen seines Doktoratsstudium. Er mit Mitgründer und Hauptentwickler von 

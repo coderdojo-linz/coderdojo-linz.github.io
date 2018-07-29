@@ -4,6 +4,7 @@ title: Hans-Peter Weidinger
 description: 
 image: /mentoren/images/hans-peter-weidinger.png
 page-category: mentor
+active: true
 ---
 
 Hans-Peter ist Senior Software Engeneer bei Dynatrace. Mit „Programmieren“ (wenn man das in Basic so nennen darf) kam er das erste mal in Berührung als in der Familie ein C64 angeschafft wurde.

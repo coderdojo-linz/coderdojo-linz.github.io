@@ -11,10 +11,14 @@ layout: default
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
 		
-		{% for page in site.pages %} {% if page.page-category == "mentor" %}
+<div class="full" style="background: #f5f5f5">
+	<div class="row">
+		{% for page in site.pages %} {% if page.page-category == "mentor" and page.active == true %}
 		<div class='small-12 medium-6 large-4 columns'>
-			<div class='mod modBlogPost'>
+			<div class='mod modBlogPost mentor'>
 				<img src="{{ page.image }}" class="avatar" />
 				<div class='content'>
 					<h4>
@@ -42,12 +46,16 @@ layout: default
 <div class="full" style="background: #f5f5f5">
 	<div class="row">
 		{% for page in site.pages %} {% if page.page-category == "guest-mentor" %}
-		<div class="clearfix">
-			<img src="{{ page.image }}" class="mentor-image pull-left" />
-			<h4>
-				<a name="{{ page.title }}">{{ page.title }}</a>
-			</h4>
-			{{ page.content }}
+		<div class='small-12 medium-6 large-4 columns'>
+			<div class='mod modBlogPost mentor'>
+				<img src="{{ page.image }}" class="avatar" />
+				<div class='content'>
+					<h4>
+						<a name="{{ page.title }}">{{ page.title }}</a>
+					</h4>
+					<p>{{ page.content }}</p>
+				</div>
+			</div>
 		</div>
 		{% endif %} {% endfor %}
 

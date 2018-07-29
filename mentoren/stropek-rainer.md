@@ -4,6 +4,7 @@ title: Rainer Stropek
 description: 
 image: /mentoren/images/rainer-stropek.jpg
 page-category: mentor
+active: true
 ---
 
 Rainer Stropek ist seit über 20 Jahren als Unternehmer in der IT-Industrie tätig. Er gründete und führte in dieser Zeit mehrere IT-Dienstleistungsunternehmen und entwickelt im Augenblick in seiner Firma "software architects" mit seinem Team die preisgekrönte Software "time cockpit".

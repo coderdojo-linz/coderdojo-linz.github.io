@@ -4,6 +4,7 @@ title: Alexander Rosemann
 description: 
 image: /mentoren/images/alexander-rosemann.jpg
 page-category: mentor
+active: true
 ---
 
 Alexander Rosemann ist Geschäftsführer der scintillation e.U. Als Berater, Architekt und Entwickler beschäftigt er sich vorwiegend mit komplexen Geschäftsanwendungen im Java Umfeld. 

@@ -4,6 +4,7 @@ title: Andrea Emmersberger
 description: 
 image: /mentoren/images/andrea-emmersberger.jpg
 page-category: mentor
+active: false
 ---
 
 Andrea Emmersberger studiert seit 8 Semestern Lehramt für die Fächer Informatik und Deutsch an der Universität Wien, wo sie gerade mit ihrer Diplomarbeit im Bereich Fachdidaktik Informatik beginnt. 

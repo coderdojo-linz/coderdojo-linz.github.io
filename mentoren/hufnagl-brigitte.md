@@ -4,6 +4,7 @@ title: Brigitte Hufnagl
 description: 
 image: /mentoren/images/brigitte-hufnagl.jpg
 page-category: mentor
+active: false
 ---
 
 Brigitte hat an der FH-Hagenberg Software Engineering für Medizin studiert, im Zuge dessen sie ein Semester an der Universität von 
