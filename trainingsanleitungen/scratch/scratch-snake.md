@@ -5,6 +5,7 @@ description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Ran
 scratch-images:
 - scratch-snake/snake-game.png
 - scratch-snake/skript-schlange-1.png
+scratch-level: 3
 scratch-sprites: 3
 scratch-scripts: 14
 scratch-data: 2
