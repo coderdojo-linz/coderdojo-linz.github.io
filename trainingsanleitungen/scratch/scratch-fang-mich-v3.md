@@ -6,6 +6,8 @@ description: In diesem Spiel musst du versuchen, dem Haifisch zu entkommen.
 
 # Scratch Fang-Mich
 
+![Endgame](scratch-fang-mich-v3/endgame.png)
+
 In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?
 
 ## Bühne und Figuren anlegen
