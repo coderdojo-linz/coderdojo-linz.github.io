@@ -67,35 +67,20 @@ Bitte achte genau darauf, dass du die richtige Auswahl zwischen *Für alle Figur
 |Variable|Figur|
 |---|---|
 |ClickAngle|Dragon|
-|||
 |ClickControlled|Dragon|
-|||
 |DeltaX|Dragon|
-|||
 |DeltaY|Dragon|
-|||
 |FirstSprite|Dragon|
-|||
 |FireBallDirX|Fireball|
-|||
 |FireBallDirY|Fireball|
-|||
 |Frozen|Knight|
-|||
 |KnightX|Knight|
-|||
 |KnightY|Knight|
-|||
 |DirectionX|Für alle Figuren|
-|||
 |DirectionY|Für alle Figuren|
-|||
 |PrevDirectionX|Für alle Figuren|
-|||
 |PrevDirectionY|Für alle Figuren|
-|||
 |Score|Für alle Figuren|
-|||
 |ShootActive|Für alle Figuren|
 
 Für die Figur des Drachen sollten die Variablen danach so aussehen:
