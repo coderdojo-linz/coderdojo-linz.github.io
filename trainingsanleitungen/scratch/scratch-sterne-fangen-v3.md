@@ -62,3 +62,7 @@ Wenn die Nachricht "SpielVorbei" gesendet wird, stoppe alle Skripte und lösche 
 * Füge eine Highscore Liste ein.
 * Baue mehrere Levels.
 * Baue einen Hintergrund, der zufällig generiert wird.
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [sterne-fangen.sb3](scratch-sterne-fangen-v3/Sterne-fangen.sb3) herunterladen.

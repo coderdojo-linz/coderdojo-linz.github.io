@@ -152,3 +152,7 @@ Hier kannst du nachsehen, wenn du bei einem Skript nicht weiterkommst oder deine
 * Manchmal wird die Landschaft zu hoch, so dass man nicht darüber schießen kann. Versuche das zu verhindern.
 * Denk dir andere Zaubersprüche aus! Wie wäre es z.B. mit einem Spruch, der den getroffenen Spieler zittern lässt und so das Zielen schwieriger macht?
 * Lass den Computer einen der beiden Spieler steuern, damit du auch alleine spielen kannst. Falls du dafür Hilfe brauchst, wende dich an die Mentoren.
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [zauberlehrlinge.sb3](scratch-zauberlehrlinge-v3/die-zauberlehrlinge.sb3) herunterladen.
