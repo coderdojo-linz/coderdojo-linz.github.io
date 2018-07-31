@@ -17,12 +17,12 @@ body {
     }
 
     div.contain-to-grid, nav.top-bar, nav.top-bar li a {
-        background-color: #222!important;
+        background-color: #444!important;
         color: #eee!important;
     }
 
     nav.top-bar li.active a, nav.top-bar li a:hover {
-        background-color: #444 !important;
+        background-color: #666 !important;
         color: #fff !important;
     }
 }
@@ -70,6 +70,10 @@ body {
         margin-right: 20px;
         margin-top: 20px;
     }
+}
+
+#footer {
+    background-color: #444;
 }
 
 .footer-logo {
