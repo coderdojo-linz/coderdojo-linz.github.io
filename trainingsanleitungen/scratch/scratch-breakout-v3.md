@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Breakout
 description: In diesem Spiel pulverisierst du bunte Mauersteine
+scratch-images:
+- scratch-breakout-v3/breakout.png
+- scratch-breakout-v3/schläger-code.png
+scratch-level: 2
+scratch-sprites: 3
+scratch-scripts: 9
+scratch-data: 7
 ---
 
 # Scratch Breakout

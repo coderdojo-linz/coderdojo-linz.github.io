@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Minesweeper
 description: Finde die Bomben
+scratch-images:
+- scratch-minesweeper-v3/endgame.png
+- scratch-minesweeper-v3/code-zelle-1.png
+scratch-level: 3
+scratch-sprites: 2
+scratch-scripts: 15
+scratch-data: 6
 ---
 
 # Scratch Minesweeper
@@ -49,7 +56,7 @@ In diesem Spiel werden eine ganze Menge an Daten benötigt. Sie werden später i
 
 Wenn du alle Variablen und Listen richtig angelegt hast, solltest du bei den Figuren *Zelle* und *Nachrichten* folgende Daten sehen:
 
-![Karten anordnen](scratch-minesweeper-v3/daten.png)
+![Karten anordnen](scratch-minesweeper-v3/daten-zelle.png)
 
 ## Code für die Nachrichten
 
@@ -59,7 +66,7 @@ die von der Figur *Zelle* geschickt werden und zeigt dem Benutzer die entspreche
 
 ## Code für die Zelle
 
-1. ![Spiel initialisieren](scratch-minesweeper-v3/code-zelle1.png){: .right}
+1. ![Spiel initialisieren](scratch-minesweeper-v3/code-zelle-1.png){: .right}
 Als erstes müssen wir das Spielfeld initialisieren. Dazu schicken wir zuerst einmal eine Nachricht an die Figur *Nachrichten*, dass die Meldung *Spielfeld laden* angezeigt werden soll. Dann werden die Daten auf einen passenden Wert gesetzt. Als nächstes erstellen wir das Spielfeld, platzieren die Bomben und ermitteln für jedes Feld die Anzahl der umliegenden Bomben. Dazu verwenden wir eigene, neue Blöcke. Der Inhalt dazu kommt später. Am Schluss schicken wir nochmal eine Nachricht, dass das Spielfeld jetzt fertig geladen ist.
 
 1. ![Spielfeld erstellen](scratch-minesweeper-v3/code-zelle-2.png){: .right}

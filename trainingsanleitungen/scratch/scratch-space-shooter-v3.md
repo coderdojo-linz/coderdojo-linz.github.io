@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Space Shooter
 description: In dieser Übung schießt du mit deinem Raumschiff herabfallende Meteoriten ab bevor sie dein Raumschiff zerstören.
+scratch-images:
+- scratch-space-shooter-v3/endgame.png
+- scratch-space-shooter-v3/code-space-shooter-1.png
+scratch-level: 2
+scratch-sprites: 3
+scratch-scripts: 13
+scratch-data: 2
 ---
 
 # Scratch Space Shooter
