@@ -34,6 +34,7 @@ Wir brauchen für das Spiel verschiedene Variablen:
 | *t* | die vergangene Zeit während des Wurfs |
 | *x0* | die x-Position der Banane am Beginn des Wurfs |
 | *y0* | die y-Position der Banane am Beginn des Wurfs |
+
 Alle Variablen gelten für alle Figuren.
 
 ## Skripte für das Gummiband
