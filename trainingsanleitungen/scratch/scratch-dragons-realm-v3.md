@@ -64,39 +64,39 @@ Bei den Drachenkostümen ist auch zu beachten, dass deren Drehpunkt immer an der
 Beginnen wir mit der Liste von Variablen, die angelegt werden müssen.
 Bitte achte genau darauf, dass du die richtige Auswahl zwischen *Für alle Figuren* und *Nur für diese Figur* triffst:
 
-|Variable       |Figur           |
-|---------------|----------------|
-|ClickAngle     |Dragon          |
-|               |                |
-|ClickControlled|Dragon          |
-|               |                |
-|DeltaX         |Dragon          |
-|               |                |
-|DeltaY         |Dragon          |
-|               |                |
-|FirstSprite    |Dragon          |
-|               |                |
-|FireBallDirX   |Fireball        |
-|               |                |
-|FireBallDirY   |Fireball        |
-|               |                |
-|Frozen         |Knight          |
-|               |                |
-|KnightX        |Knight          |
-|               |                |
-|KnightY        |Knight          |
-|               |                |
-|DirectionX     |Für alle Figuren|
-|               |                |
-|DirectionY     |Für alle Figuren|
-|               |                |
-|PrevDirectionX |Für alle Figuren|
-|               |                |
-|PrevDirectionY |Für alle Figuren|
-|               |                |
-|Score          |Für alle Figuren|
-|               |                |
-|ShootActive    |Für alle Figuren|
+|Variable|Figur|
+|---|---|
+|ClickAngle|Dragon|
+|||
+|ClickControlled|Dragon|
+|||
+|DeltaX|Dragon|
+|||
+|DeltaY|Dragon|
+|||
+|FirstSprite|Dragon|
+|||
+|FireBallDirX|Fireball|
+|||
+|FireBallDirY|Fireball|
+|||
+|Frozen|Knight|
+|||
+|KnightX|Knight|
+|||
+|KnightY|Knight|
+|||
+|DirectionX|Für alle Figuren|
+|||
+|DirectionY|Für alle Figuren|
+|||
+|PrevDirectionX|Für alle Figuren|
+|||
+|PrevDirectionY|Für alle Figuren|
+|||
+|Score|Für alle Figuren|
+|||
+|ShootActive|Für alle Figuren|
 
 Für die Figur des Drachen sollten die Variablen danach so aussehen:
 
