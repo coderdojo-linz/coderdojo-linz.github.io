@@ -55,3 +55,7 @@ Als letztes musst du noch erkennen, wann der Ball den Out-Bereich berührt. Dann
 * Lass den Ball nicht fix 10 Schritte gehen, sondern erhöhe die Anzahl der Schritte mit der Zeit, so dass das Spiel immer schwieriger wird.
 * Steuere den Schläger mit der Maus statt mit der Tastatur.
 * Bringe nach einiger Zeit einen weiteren Ball ins Spiel.
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [paddle-game.sb3](scratch-paddle-game-v3/paddle-game-new.sb3)
