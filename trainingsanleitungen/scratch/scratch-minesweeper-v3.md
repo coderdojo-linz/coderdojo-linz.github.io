@@ -63,13 +63,13 @@ die von der Figur *Zelle* geschickt werden und zeigt dem Benutzer die entspreche
 Als erstes müssen wir das Spielfeld initialisieren. Dazu schicken wir zuerst einmal eine Nachricht an die Figur *Nachrichten*, dass die Meldung *Spielfeld laden* angezeigt werden soll. Dann werden die Daten auf einen passenden Wert gesetzt. Als nächstes erstellen wir das Spielfeld, platzieren die Bomben und ermitteln für jedes Feld die Anzahl der umliegenden Bomben. Dazu verwenden wir eigene, neue Blöcke. Der Inhalt dazu kommt später. Am Schluss schicken wir nochmal eine Nachricht, dass das Spielfeld jetzt fertig geladen ist.
 
 1. ![Spielfeld erstellen](scratch-minesweeper-v3/code-zelle-2.png){: .right}
-Zum Erstellen des Spielfelds füllen wir die Listen *zellen* und *zellenStatus* mit Initialwerten. Die Liste *zellen* enthält für jede der 100 Positionen (10 x 10) auf dem Spielfeld eine der folgenden Informationen: - = nicht definiert, b = Bombe, 1 = 1 Bombe in den umliegenden Zellen, 2 = 2 Bomben in den umliegenden Zellen, usw. Zum Initialisieren setzen wir den Wert *-* für nicht definiert.Die Liste *zellenStatus* enthält für jede Zelle nur die Information, ob sie aufgedeckt sein soll (0 = nicht aufgedeckt, 1 = aufgedeckt). Das brauchen wir erst später, um bei Klick auf eine Zelle ohne umliegende Bomben automatisch auch die umliegenden Zellen aufzudecken. Außerdem erzeugen wir für jedes Feld einen Klon der Zelle. Diese wird dann im nächsten Skript an der richtigen Position im Spielfeld platziert.
+Zum Erstellen des Spielfelds füllen wir die Listen *zellen* und *zellenStatus* mit Initialwerten. Die Liste *zellen* enthält für jede der 100 Positionen (10 x 10) auf dem Spielfeld eine der folgenden Informationen: - = nicht definiert, b = Bombe, 1 = 1 Bombe in den umliegenden Zellen, 2 = 2 Bomben in den umliegenden Zellen, usw. Zum Initialisieren setzen wir den Wert *-* für nicht definiert. Die Liste *zellenStatus* enthält für jede Zelle nur die Information, ob sie aufgedeckt sein soll (0 = nicht aufgedeckt, 1 = aufgedeckt). Das brauchen wir erst später, um bei Klick auf eine Zelle ohne umliegende Bomben automatisch auch die umliegenden Zellen aufzudecken. Außerdem erzeugen wir für jedes Feld einen Klon der Zelle. Diese wird dann im nächsten Skript an der richtigen Position im Spielfeld platziert.
 
 1. ![Zelle platzieren](scratch-minesweeper-v3/code-zelle-3.png){: .right}
 Sobald ein Klon einer Zelle ensteht, wechseln wir das Kostüm auf *unknown* und zeigen den Kon an.
 Die Position werden auf folgende Werte gesetzt:
-x = -150 + (((cloneIndex - 1) mod 10) * 32)
-y = 150 - ((abrunden von ((cloneIndex - 1) / 10)) * 32)
+`x = -150 + (((cloneIndex - 1) mod 10) * 32)`
+`y = 150 - ((abrunden von ((cloneIndex - 1) / 10)) * 32)`
 Wenn du das Spiel jetzt laufen lässt, müsste schon das Spielfeld aufgebaut werden.
 
 1. ![Bomben platzieren](scratch-minesweeper-v3/code-zelle-4.png){: .right}
