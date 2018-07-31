@@ -1,7 +1,14 @@
 ---
 layout: sushi
 title: Scratch Dragons Realm
-description: Springe hoch, um die herumfliegenden Sterne zu fangen.
+description: Verteidige als Drache dein Territorium gegen die Eindringlinge.
+scratch-images:
+- scratch-dragons-realm-v3/endgame.png
+- scratch-dragons-realm-v3/code-drache-1.png
+scratch-level: 3
+scratch-sprites: 6
+scratch-scripts: 19
+scratch-data: 11
 ---
 
 # Dragons Realm
