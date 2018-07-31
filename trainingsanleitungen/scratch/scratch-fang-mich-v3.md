@@ -6,6 +6,8 @@ description: In diesem Spiel musst du versuchen, dem Haifisch zu entkommen.
 
 # Scratch Fang-Mich
 
+![Endgame](scratch-fang-mich-v3/endgame.png)
+
 In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?
 
 ## Bühne und Figuren anlegen
@@ -77,3 +79,7 @@ Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel "G
 * Mach das Spiel schwieriger, indem du einen zweiten, langsameren Haifisch dazu gibst.
 * Baue eine Uhr ein, um zu sehen, wie lange du dem Haifisch entkommen kannst.
 * Steuere den Fisch mit der Maus anstatt der Tastatur.
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [fang.mich.sb3](scratch-fang-mich-v3/fang-mich.sb3) herunterladen.

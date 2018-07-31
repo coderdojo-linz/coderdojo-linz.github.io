@@ -163,3 +163,7 @@ Das fragen wir mittels einer *wird Tiles berührt* Kondition ab. Danach wandert 
 Berührt der Ritter den Feuerball, so erstarrt er (die Variable *Frozen* wird auf 1 gesetzt, und er wird zu Stein und bewegt sich nicht mehr).
 
 ![Figur löschen](scratch-dragons-realm-v3/code-knight-1.png)
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [dragonrealm.sb3](scratch-dragons-realm-v3/Dragonrealm.sb3) herunterladen.

@@ -90,3 +90,7 @@ Wenn du das Skript *UmliegendeZellenAufdecken* implementierst, wird das Spiel no
 
 1. ![Zellen aktualisieren](scratch-minesweeper-v3/code-zelle-9.png){: .right}
 Wenn die Nachricht *zellenAktualiseren* dann von jedem einzelnen Klon empfangen wird, prüft dieser, ob seine Position in der Liste *zellenStatus* schon mit 1 markiert ist. Wenn ja, wird die Zelle aufgedeckt.
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [minesweeper.sb3](scratch-minesweeper-v3/minesweeper.sb3) herunterladen.
