@@ -24,13 +24,16 @@ Lege oder male ein Bühnenbild und die Figuren für die Steinschleuder, die Bana
 
 1. ![Daten](scratch-slingshot-v3/daten.png){: .right}
 Wir brauchen für das Spiel verschiedene Variablen:
-**Geschwindigkeit**: sie gibt an, wie schnell die Banane abgeschossen wird und damit auch wie weit sie fliegt
-**MaxGeschwindigkeit**: sie gibt an, wie weit die Steinschleuder maximal geladen werden kann
-**Winkel**: der Winkel, in dem die Banane geworfen wird, wird verwenden hier 45°
-**bereit**: gibt an, ob die Steinschleuder gerade bereit für einen Wurf ist
-**t**: die vergangene Zeit während des Wurfs
-**x0**: die x-Position der Banane am Beginn des Wurfs
-**y0**: die y-Position der Banane am Beginn des Wurfs
+
+| Variable | Erklärung |
+|----|----|
+| *Geschwindigkeit* | gibt an, wie schnell die Banane abgeschossen wird und damit auch wie weit sie fliegt |
+| *MaxGeschwindigkeit* | sie gibt an, wie weit die Steinschleuder maximal geladen werden kann |
+| *Winkel* | der Winkel, in dem die Banane geworfen wird, wird verwenden hier 45° |
+| *bereit* | gibt an, ob die Steinschleuder gerade bereit für einen Wurf ist |
+| *t* | die vergangene Zeit während des Wurfs |
+| *x0* | die x-Position der Banane am Beginn des Wurfs |
+| *y0* | die y-Position der Banane am Beginn des Wurfs |
 Alle Variablen gelten für alle Figuren.
 
 ## Skripte für das Gummiband
