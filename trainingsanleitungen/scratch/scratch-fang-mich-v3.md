@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Fang-Mich
 description: In diesem Spiel musst du versuchen, dem Haifisch zu entkommen.
+scratch-images:
+- scratch-fang-mich-v3/endgame.png
+- scratch-fang-mich-v3/10-touch-fish.png
+scratch-level: 1
+scratch-sprites: 2
+scratch-scripts: 8
+scratch-data: 0
 ---
 
 # Scratch Fang-Mich

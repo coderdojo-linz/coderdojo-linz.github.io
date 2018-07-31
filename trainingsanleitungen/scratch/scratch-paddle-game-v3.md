@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Paddle Game
 description: In dieser Übung baust du ein kleines Spiel, in dem du versuchst, einen Ball mit einem Schläger in der Luft zu halten.
+scratch-images:
+- scratch-paddle-game-v3/background.png
+- scratch-paddle-game-v3/ball-code-1.png
+scratch-level: 1
+scratch-sprites: 3
+scratch-scripts: 9
+scratch-data: 2
 ---
 
 # Scratch Paddle Game

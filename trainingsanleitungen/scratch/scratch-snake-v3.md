@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Snake
 description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Rand und verwickle dich nicht, wenn die Schlange länger wird.
+scratch-images:
+- scratch-snake-v3/endgamegame.png
+- scratch-snak-v3/Code-Schlange-1.png
+scratch-level: 2
+scratch-sprites: 3
+scratch-scripts: 13
+scratch-data: 2
 ---
 
 # Scratch Snake

@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Affe füttern
 description: Wirf dem Affen mit der Steinschleuder Bananen zu
+scratch-images:
+- scratch-slingshot-v3/endgamegame.png
+- scratch-slingshot-v3/code-banane-1.png
+scratch-level: 2
+scratch-sprites: 4
+scratch-scripts: 7
+scratch-data: 7
 ---
 
 # Scratch Affe füttern
