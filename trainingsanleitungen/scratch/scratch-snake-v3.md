@@ -89,3 +89,7 @@ Damit sich die Schlange bewegen kann müssen wir zwei Informationen speichern: d
 ## Weitere Ideen
 
 * Zähle mit, wie viele Äpfel du erwischst, bevor die Schlange zu lange wird.
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [snake.sb3](scratch-snake-v3/snake.sb3) herunterladen.

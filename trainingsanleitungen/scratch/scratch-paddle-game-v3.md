@@ -58,4 +58,4 @@ Als letztes musst du noch erkennen, wann der Ball den Out-Bereich berührt. Dann
 
 ## Herunterladen
 
-Du kannst das fertige Projekt unter [paddle-game.sb3](scratch-paddle-game-v3/paddle-game-new.sb3)
+Du kannst das fertige Projekt unter [paddle-game.sb3](scratch-paddle-game-v3/paddle-game-new.sb3) herunterladen.

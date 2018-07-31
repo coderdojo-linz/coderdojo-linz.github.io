@@ -77,3 +77,7 @@ Sicher hast du noch eine Menge Ideen, um das Breakout-Spiel zu verbessern. Ein p
 * In jedem Level sollen sich Anzahl, Farbe und Position der Blöcke verändern.
 * Die Blöcke können sich bewegen, damit sie schwerer zu treffen sind.
 * Wenn der Ball am unteren Bildschirmrand verschwindet, sollte der Schläger explodieren - zum Beispiel indem man mehrere Explosions-Kostüme hintereinander anzeigt, und einen passenden Klang dazu abspielt.
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [breakout.sb3](scratch-breakout-v3/breakout.sb3) herunterladen.

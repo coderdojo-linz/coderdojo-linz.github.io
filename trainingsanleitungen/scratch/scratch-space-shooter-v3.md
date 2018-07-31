@@ -60,3 +60,7 @@ Jedesmal wenn die Leertaste gedrückt wird, muss ein neuer Laserstrahl erzeugt u
 
 * Füge Klänge für das Treffen eines Metoriten und das Zerstören des Raumschiffes hinzu.
 * Verwende Variablen um die Geschwindigkeit der Meteoriten und die Anzahl der erzeugten Meteoriten mit der Zeit zu erhöhen.
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [space-shooter.sb3](scratch-space-shooter-v3/space-shooter.sb3) herunterladen.
