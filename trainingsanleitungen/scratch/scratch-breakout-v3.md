@@ -50,9 +50,9 @@ Schließlich benötigen wir noch Klänge. Klänge werden ebenfalls Figuren zugeo
 ## Der Schläger
 
 ![Schäger Code](scratch-breakout-v3/schläger-code.png){: .right}
-Der Schläger hat nur ein Skript und das ist ganz einfach. Gesteuert wird der Schläger mit der Maus. Du kannst hier auch gleich die vier globalen Variablen des Spiels anlegen. Globale Variable gelten für alle Figuren. Klicke dazu auf den Knopf *Neue Variable*, und lege folgende Variablen an: *BlockAnzahl*, *Leben*, *Level* und *Punkte*. Beachte dass im Dialog der Auswahlknopf *Für alle Figuren* selektiert sein muss. Alle diese Variablen außer *BlockAnzahl* wollen wir auch am Spielfeld anzeigen. Klicke dazu den Auswahlknopf links vom Variablennamen.
+Der Schläger hat nur ein Skript und das ist ganz einfach. Gesteuert wird der Schläger mit der Maus. Du kannst hier auch gleich die vier globalen Variablen des Spiels anlegen. Globale Variable gelten für alle Figuren. Klicke dazu auf den Knopf *Neue Variable*, und lege folgende Variablen an: *BlockAnzahl*, *Leben*, *Level* und *Punkte*. Beachte, dass im Dialog der Auswahlknopf *Für alle Figuren* selektiert sein muss. Alle diese Variablen außer *BlockAnzahl* wollen wir auch am Spielfeld anzeigen. Klicke dazu den Auswahlknopf links vom Variablennamen.
 
-* Ab Programmstart wird fortlaufend die X-Koordinate des Mauszeigers abgefragt, und der Schläger entsprechend positioniert. Außerdem müssen wir aufpassen, dass der Schläger nicht verschwindet wenn die Maus über die Spielfeldgrenze hinaus bewegt wird (x-Position < -240 oder x-Position > 240).
+* Ab Programmstart wird fortlaufend die X-Koordinate des Mauszeigers abgefragt, und der Schläger entsprechend positioniert. Außerdem müssen wir aufpassen, dass der Schläger nicht verschwindet, wenn die Maus über die Spielfeldgrenze hinaus bewegt wird (x-Position < -240 oder x-Position > 240).
 
 ## Der Ball
 
@@ -65,17 +65,17 @@ Der Ball ist schon ein bisschen komplizierter. So hat der Ball zusätzliche Vari
 * Bei Programmstart versteckt sich der Ball. Erst wenn er Nachrichten empfängt, tut er etwas.
 * Wenn die Nachricht *Start* ankommt, zeigt sich der Ball oberhalb des Schlägers, und beginnt nach oben zu fliegen. Seine Geschwindigkeit ergibt sich aus dem Level - je höher der Level, desto schneller. Nach jedem Schritt überprüft der Ball, ob er den Schläger berührt oder unten am Schläger vorbeigefallen ist. Bei Schläger-Berührung ändert er seine Flugbahn abhängig vom Abprall-Punkt (dazu benötigt man die spannende mathematische Funktion *asin*, die einen Wert zwischen -1 und +1 in einen Winkel umwandelt) - das macht das Spiel interessanter, weil die Spieler die Flugbahn beeinflussen kann. Außerdem muss der Ball ständig abfragen, ob er nicht vielleicht vom Rand abprallen muss. Zum Schluss versteckt er sich wieder, und prüft noch ob weitere Bälle (*Leben*) vorhanden sind.
 * Die Kollisionsabfrage mit den Blöcken macht der Ball nicht selbst, weil er nicht alle Blöcke kennt. Stattdessen erhält der von den Blöcken die Nachricht *BlockTreffer*. Dann zählt er einen Punkt dazu und ändert seine Richtung um 180 Grad.
-* Manchmal muss man den Ball auch stoppen. Erhält er die Nachricht *Stop*, setzt er die Variable *BallAktiv* auf 0 (was so viel wie falsch bedeutet, also der Ball ist dann nicht aktiv). BallAktiv = 0 ist ein Abbruchkriterium für die Hautpschleife, er versteckt sich dann wieder und führt keine Aktionen mehr aus.
+* Der Ball gehört aber manchmal gestoppt. Erhält er die Nachricht *Stop*, setzt er die Variable *BallAktiv* auf 0 (was so viel wie falsch bedeutet, also der Ball ist dann nicht aktiv). BallAktiv = 0 ist ein Abbruchkriterium für die Hautpschleife, er versteckt sich dann wieder und führt keine Aktionen mehr aus.
 
 ## Der Block
 
 ![Block Code](scratch-breakout-v3/block-code.png){: .right}
 ![](scratch-breakout-v3/block-code-2.png){: .right}
-Zuguterletzt der Block. Oder vielmehr die Blöcke, denn wir wollen ja viele Mauersteine abschießen. Die große Zahl unterschiedlicher Blöcke erzeugen wir, indem wir Klone mit verschiedenen Kostümen anlegen. Der Block braucht zwei neue Variablen: *Spalte* und *Zeile*. Bitte beachte: Die Variablen gelten wieder *Nur für diese Figur*.
+Zum Schluss der Block oder vielmehr die Blöcke, denn wir wollen ja viele Mauersteine abschießen. Die große Zahl unterschiedlicher Blöcke erzeugen wir, indem wir Klone mit verschiedenen Kostümen anlegen. Der Block braucht zwei neue Variablen: *Spalte* und *Zeile*. Bitte beachte: Die Variablen gelten wieder *Nur für diese Figur*.
 
 * Zu Beginn schickt der Block die Nachricht *NeuerLevel*, auf die er selbst reagiert.
 * Wenn der Block als Klon entstanden ist, wartet er eigentlich nur darauf von einem Ball getroffen zu werden. Ist das der Fall, spielt er noch einen Klang, fragt ab ob er der letzte Block war und startet dann einen neuen Level, und löscht sich schließlich selbst.
-* Interessant ist wie die Blöcke vervielfältigt werden. Das passiert bei der Nachricht *NeuerLevel*. Da heißt es erstmal *Stop* für alle, v.a. für den Ball, der während des Aufbaus des neuen Levels nicht stören soll. Darauf folgt eine geschachtelte Schleife für 5 Zeilen zu je 8 Blöcken. Jeder Block wird neu geklont, und erbt die Position des Ursprungs-Blocks, den wir jeweils weiterverschieben. Nach jeder Zeile von Blöcken ändern wir außerdem das Kostüm und damit die Farbe. Super, du hast es geschafft. Viel Spaß beim Spielen!
+* Interessant ist, wie die Blöcke vervielfältigt werden. Das passiert bei der Nachricht *NeuerLevel*. Da heißt es erstmal *Stop* für alle, v.a. für den Ball, der während des Aufbaus des neuen Levels nicht stören soll. Darauf folgt eine geschachtelte Schleife für 5 Zeilen zu je 8 Blöcken. Jeder Block wird neu geklont, und erbt die Position des Ursprungs-Blocks, den wir jeweils weiterverschieben. Nach jeder Zeile von Blöcken ändern wir außerdem das Kostüm und damit die Farbe. Super, du hast es geschafft. Viel Spaß beim Spielen!
 
 ## Erweiterungen
 

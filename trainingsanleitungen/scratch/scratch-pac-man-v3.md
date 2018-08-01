@@ -15,7 +15,7 @@ scratch-data: 28
 
 ![Endgame](scratch-pac-man-v3/endgame.png)
 Pac-Man ist ein klassisches Computerspiel. Es erschien erstmals 1980 in Japan.
-Pac-Man muß alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu laufen. Die blauen Pillen verleihen ihm für kurze Zeit Superkräfte, und er kann Geister einfrieren.
+Pac-Man muss alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu laufen. Die blauen Pillen verleihen ihm für kurze Zeit Superkräfte, und er kann Geister einfrieren.
 
 ## Vorbereitungen
 
@@ -56,7 +56,7 @@ Die Grid-Daten stehen in der Liste *GridDef*. Jeder Listen-Eintrag beinhaltet ei
 
 4 = Tunnel
 
-Damit du das nicht alles einzeln abtippen mußt, hier nochmal die Daten in Textform; wenn du diese Seite im Internet unter [http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man.html](http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man.html){:target="_blank"} aufrufst, kannst du Zeile für Zeile in die Zwischenablage kopieren und in dein Skript einfügen.
+Damit du das nicht alles einzeln abtippen musst, hier nochmal die Daten in Textform; wenn du diese Seite im Internet unter [http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man.html](http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man.html){:target="_blank"} aufrufst, kannst du Zeile für Zeile in die Zwischenablage kopieren und in dein Skript einfügen.
 
 ```
 0000000000000000000000000000000000000000000000000000
@@ -98,13 +98,13 @@ Damit du das nicht alles einzeln abtippen mußt, hier nochmal die Daten in Textf
 
 PacMan besteht aus acht Kostümen, für jeweils jede Richtung und einmal mit geschlossenem, einmal mit offenem Mund. Lade dazu einfach die *PacMan.png* Grafiken in die Figur.
 
-Die PacMan Codeblöcke sind relativ umfangreich. Hier die benötigten Variablen, bitte denke daran daß du sie als *Nur für diese Figur* definierst (außer PosX, PosY, Level, Life und Points, die wir ja schon global in der Bühne definiert haben):
+Die PacMan Codeblöcke sind relativ umfangreich. Hier die benötigten Variablen, bitte denke daran dass du sie als *Nur für diese Figur* definierst (außer PosX, PosY, Level, Life und Points, die wir ja schon global in der Bühne definiert haben):
 
 ![Kostüme Pac Man](scratch-pac-man-v3/pac-man.png){: .floatLeft}
 
 ![Daten Pac Man](scratch-pac-man-v3/daten-pac-man.png){: .floatLeft}
 
-Wir verwenden wieder rosa Blöcke zur Wiederverwendung von Code. Bitte achte darauf daß du dabei immer die Option *Ohne Bildschirmaktualisierung laufen lassen* selektierst, sonst könnte es sein, daß dein Programm zu langsam ist.
+Wir verwenden wieder rosa Blöcke zur Wiederverwendung von Code. Bitte achte darauf dass du dabei immer die Option *Ohne Bildschirmaktualisierung laufen lassen* selektierst, sonst könnte es sein, dass dein Programm zu langsam ist.
 
 Hier läuft ein sogenannter Timer, damit PacMan nach zehn Sekunden seine Superkräfte auch wieder verliert. Der *Reset*-Block dient dem Zurücksetzen auf den Ursprungszustand von PacMan. Die Tastatursteuerung ist hier ebenfalls implementiert.
 
@@ -117,7 +117,7 @@ Das PacMan-Hauptprogramm läuft in einer Schleife bis alle Leben verbraucht sind
 Weiters wird die Bewegungsrichtung abgefragt, und PacMan bewegt sich im Grid entsprechend weiter. Jeder Schritt entspricht drei Bildschirmpixeln, und nach drei Schritten (also neun Pixeln) ist das nächste Grid-Feld erreicht. Wenn PacMan an einer Wand ansteht, stoppt die Bewegung.
 Und wenn wir den Tunnel erreicht haben, wird der Block *HandlePortal* aufgerufen.
 
-Am Schluß ändern wir noch die Bewegungsrichtung, falls in der Zwischenzeit eine Taste gedrückt wurde, und wenn wir abbiegen können. Das erlaubt dem Spieler schon vorzeitig Tasten zu drücken (noch bevor eine Abzweigung erreicht ist), und dadurch kann man PacMan sehr schnell lenken.
+Am Schluss ändern wir noch die Bewegungsrichtung, falls in der Zwischenzeit eine Taste gedrückt wurde, und wenn wir abbiegen können. Das erlaubt dem Spieler schon vorzeitig Tasten zu drücken (noch bevor eine Abzweigung erreicht ist), und dadurch kann man PacMan sehr schnell lenken.
 
 ![Code Pac-man](scratch-pac-man-v3/code-pac-man-3.png)
 
@@ -147,7 +147,7 @@ In der Ghost-Hauptschleife bewegen wir den Geist ähnlich durch das Grid wie zuv
 
 ![Code Ghost](scratch-pac-man-v3/code-ghost-2.png)
 
-Im Block *CalcNextDir* versucht der Geist möglichst rasch an PacMan heranzukommen. Dazu berechnen wir in welcher Richtung und wie weit entfernt PacMan steht. Ergibt sich eine Möglichkeit eine Abzweigung zu nehmen um die Distanz zu verkürzen, machen wir das durch Richtungswechsel; einem kleinen Zufallsfaktor folgend tun wir das aber nicht immer, dadurch vermeiden wir ein *Hängenbleiben* hinter Ecken, und auch daß sich zwei Geister nebeneinander immer gleich bewegen. Wenn keine eindeutige Strategie möglich ist, wählen wir die nächste Richtung zufällig. Mit den *GridDef > 0*-Abfragen prüfen wir, ob der Geist das nächste Feld betreten kann.
+Im Block *CalcNextDir* versucht der Geist möglichst rasch an PacMan heranzukommen. Dazu berechnen wir in welcher Richtung und wie weit entfernt PacMan steht. Ergibt sich eine Möglichkeit eine Abzweigung zu nehmen um die Distanz zu verkürzen, machen wir das durch Richtungswechsel; einem kleinen Zufallsfaktor folgend tun wir das aber nicht immer, dadurch vermeiden wir ein *Hängenbleiben* hinter Ecken, und auch dass sich zwei Geister nebeneinander immer gleich bewegen. Wenn keine eindeutige Strategie möglich ist, wählen wir die nächste Richtung zufällig. Mit den *GridDef > 0*-Abfragen prüfen wir, ob der Geist das nächste Feld betreten kann.
 
 ![Code Ghost](scratch-pac-man-v3/code-ghost-3.png)
 

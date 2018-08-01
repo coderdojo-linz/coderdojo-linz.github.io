@@ -82,8 +82,8 @@ Zum Erstellen des Spielfelds füllen wir die Listen "zellen" und "zellenStatus" 
 <br/><br/>Außerdem erzeugen wir für jedes Feld einen Klon der Zelle. Diese wird dann im nächsten Skript an der richtigen Position im Spielfeld platziert.
 
 1. ![Zelle platzieren](scratch-minesweeper/zelle-platzieren.png){: .right}
-Sobald ein Klon einer Zelle ensteht, wechseln wir das Kostüm auf "unknown" und zeigen den Kon an. 
-Die Position werden auf folgende Werte gesetzt: 
+Sobald ein Klon einer Zelle entsteht, wechseln wir das Kostüm auf "unknown" und zeigen den Klon an.
+Die Positionen werden auf folgende Werte gesetzt:
 <br/><br/>x = -150 + (((cloneIndex - 1) mod 10) * 32)
 <br/><br/>y = 150 - ((abrunden von ((cloneIndex - 1) / 10)) * 32)
 <br/><br/>Wenn du das Spiel jetzt laufen lässt, müsste schon das Spielfeld aufgebaut werden.
@@ -93,10 +93,10 @@ Jetzt werden auf dem Spielfeld die Bomben platziert. Mittels Zufallszahl wird di
 der Bomben ermittelt und in der Liste "zellen" mit einem "b" gekennzeichnet.
 
 1. ![Anzahl Bomben ermitteln](scratch-minesweeper/anzahl-bomben-ermitteln.png){: .right}
-Jetzt kommt der wirklich schwierige Teil - wir müssen für jede Zelle am Spielfeld ermitteln, wieviele Bomben an sie angrenzen. 
+Jetzt kommt der wirklich schwierige Teil - wir müssen für jede Zelle am Spielfeld ermitteln, wie viele Bomben an sie angrenzen.
 Das sind im besten Fall 0 und im schlechtesten Fall 8, wenn alle umliegenden Zellen Bomben enthalten.
-<br/><br/>Je nachdem, ob die Zelle im Eck, am Rand, oder in der Mitte liegt, hat sie mehr oder weniger umliegende Zellen. 
-Das prüfen wir in diesem Script und für jede der Zellen sehen wir nach, ob sie eine Bombe enthält.
+<br/><br/>Je nachdem, ob die Zelle im Eck, am Rand, oder in der Mitte liegt, hat sie mehr oder weniger umliegende Zellen.
+Das prüfen wir in diesem Skript und für jede der Zellen sehen wir nach, ob sie eine Bombe enthält.
 <br/><br/>Am Ende tragen wir die ermittelte Zahl der Bomben in die Liste "zellen" ein.
 
 1. ![Klick auf Zelle](scratch-minesweeper/klick-auf-zelle.png){: .right}

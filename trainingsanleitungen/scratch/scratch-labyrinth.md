@@ -15,7 +15,7 @@ scratch-data: 6
 
 ## Ziel der Übung
 
-In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
+In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, dass, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
 
 ## Spielbeschreibung
 
@@ -24,7 +24,7 @@ In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danac
 	<div class="col-sm-6">
 		<p>Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit "X" markierte Ziel zu erreichen.</p>
 		<p>Die schwarzen und roten Felder sind Hindernisse. Schwarze Felder kannst du zerstören, indem du Anlauf nimmst. Rote kannst du nicht zerstören.</p>
-		<p>Ziel ist es, mit möglichst wenigen Bewegungen das Ziel zu erreichen. Damit du deine Versuche vergleichen kannst, soll bei Erreichen des Ziel ausgegeben werden, wie viele Bewegungen du gebraucht hast.</p>
+		<p>Ziel ist es, mit möglichst wenigen Bewegungen das Ziel zu erreichen. Damit du deine Versuche vergleichen kannst, soll beim Erreichen des Ziels ausgegeben werden, wie viele Bewegungen du gebraucht hast.</p>
 		<table class="table sushi-stats">
 			<tbody>
 				<tr>
@@ -102,11 +102,11 @@ Wir brauchen für unsere Figur noch weitere Variablen. Lege die Variablen an, di
 1. Das folgende Bild zeigt den neuen Block *Baue Spielfeld*, den du anlegen musst, damit aus der Liste *Spielfeld*, die du im letzten Schritt angelegt hast, das Spielfeld gebaut wird. **Wichtig: Achte darauf, dass du die Option "Ohne Bildschirmaktualisierung laufen lassen" aktivierst wenn du den neuen Block erstellst!** Ansonsten braucht dein Spiel sehr lange zum starten.<br/>
 ![Baue Spielfeld](scratch-labyrinth/baue-spielfeld.png)
 
-1. Im vorigen Block erstellen wir Klone. Diese Klone müssen wir an die richtige Position bringen wenn sie entstehen. Das machen wir mit diesem Block.<br/>
+1. Im vorigen Block erstellen wir Klone. Diese Klone müssen wir an die richtige Position bringen, wenn sie entstehen. Das machen wir mit diesem Block.<br/>
 ![Klon positionieren](scratch-labyrinth/mauer-klon.png)
 
 1. ![Hauptprogramm für Labyrinth-Element](scratch-labyrinth/mauer-hauptprogramm.png){: .right}
-Jetzt müssen wir nur noch dafür sorgen, dass unsere neuen Blöcke aufgerufen werden wenn das Programm startet.<br/>
+Jetzt müssen wir nur noch dafür sorgen, dass unsere neuen Blöcke aufgerufen werden, wenn das Programm startet.<br/>
 
 1. So, jetzt kannst du dein Programm ausprobieren. Das Labyrinth müsste am Bildschirm erscheinen. Klappt es?
 
@@ -134,7 +134,7 @@ Wir brauchen für unsere Spieler-Figur noch weitere Variablen. Lege die Variable
 ![Spielstart für den Spieler](scratch-labyrinth/spieler-spielstart.png)
 
 1. ![Hauptprogramm für Spieler](scratch-labyrinth/spieler-hauptprogramm.png){: .right}
-Jetzt müssen wir nur noch dafür sorgen, dass unsere neuen Blöcke aufgerufen werden wenn das Programm startet.<br/>
+Jetzt müssen wir nur noch dafür sorgen, dass unsere neuen Blöcke aufgerufen werden, wenn das Programm startet.<br/>
 
 1. So, jetzt kannst du dein Programm ausprobieren. Du müsstest jetzt den Spieler steuern können. Klappt alles?
 

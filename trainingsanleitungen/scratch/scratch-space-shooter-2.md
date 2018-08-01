@@ -53,7 +53,7 @@ Füge die Hexe als **Figur** hinzu. Füge der neuen Figur den Zauberer **als zwe
 
 ![Bewegung des Raumschiffs](scratch-space-shooter-2/04-spaceship-move.png)
 
-Um das Spiel schwieriger zu machen, bewegt sich das Raumschiff nicht einfach nach oben und unten. Es gewegt sich entlang einer Kurve. Das Bild oben zeigt verschiedene Positionen des Raumschiffs auf der Kurve.
+Um das Spiel schwieriger zu machen, bewegt sich das Raumschiff nicht einfach nach oben und unten. Es bewegt sich entlang einer Kurve. Das Bild oben zeigt verschiedene Positionen des Raumschiffs auf der Kurve.
 
 1. Wenn man die *Pfeil nach links* Taste drückt, soll sich das Raumschiff von ihm aus gesehen nach links, also im Bild nach oben entlang der Kurve bewegen.
 

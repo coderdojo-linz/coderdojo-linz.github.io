@@ -13,7 +13,7 @@ scratch-data: 20
 
 # The Game of Life
 
-Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“  (schwarz). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
+Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“ (schwarz). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
 
 * Eine tote Zelle mit genau drei lebenden Nachbarn wird neu geboren
 * Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben an Einsamkeit

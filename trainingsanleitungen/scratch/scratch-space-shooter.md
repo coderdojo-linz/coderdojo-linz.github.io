@@ -64,7 +64,7 @@ Jedesmal wenn die Leertaste gedrückt wird, muss ein neuer Laserstrahl erzeugt u
 
 ## Weitere Ideen
 
-* Füge Klänge für das Abfeuern eines Laserstrahls, für das Treffen eines Metoriten und das Zerstören des Raumschiffes hinzu.
+* Füge Klänge für das Abfeuern eines Laserstrahls, für das Treffen eines Meteoriten und das Zerstören des Raumschiffes hinzu.
 * Verwende Variablen um die Geschwindigkeit der Meteoriten und die Anzahl der erzeugten Meteoriten mit der Zeit zu erhöhen.
 
 ## Ausprobieren

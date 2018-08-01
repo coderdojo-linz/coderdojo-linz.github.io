@@ -23,11 +23,11 @@ In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Scha
 Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst das Aquarium, in dem die Fische schwimmen. Wähle als erstes rechts unten unter *Bühnenbild wählen* ein Bühnenbild aus, zum Beispiel ein Aquarium.
 
 2. ![Figur löschen](scratch-fang-mich-v3/02-delete-scratchy.png){: .right}
-Als nächstes lösche die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der rechten Maustaste darauf klickst. 
+Als nächstes lösche die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der rechten Maustaste darauf klickst.
 Im angezeigten Menü kannst du Scratchy löschen.
 
 3. ![Figuren hinzufügen](scratch-fang-mich-v3/03-fish.png){: .right}
-Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke dazu auf *Figur wählen* und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonfliegt oder eine Person die dem Löwen davonläuft.
+Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke dazu auf *Figur wählen* und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonfliegt oder eine Person, die dem Löwen davonläuft.
 
 7. ![Figuren benennen](scratch-fang-mich-v3/07-rename.png){: .right}
 Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Hai* und *Fisch*. Du kannst den Namen von Figuren ändern, indem du unter der weißen Leinwand rechts neben dem Wort Figur auf das Namensfeld klickst und den neuen Namen eingibst.
@@ -63,7 +63,7 @@ Jetzt soll der Haifisch im Aquarium herumschwimmen.
 ## Fisch fangen
 
 1. ![Fisch wird berührt](scratch-fang-mich-v3/10-touch-fish.png){: .right}
-Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt werden.
+Wenn der Haifisch den Fisch berührt, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt werden.
 
   * Wähle dazu den Fisch aus, damit er blau umrandet ist.
   * Im Tab *Code* kannst du den Fisch verschwinden lassen, sobald er den Haifisch berührt.

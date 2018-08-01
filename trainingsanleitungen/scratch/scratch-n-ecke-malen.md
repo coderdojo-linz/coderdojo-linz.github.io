@@ -23,7 +23,7 @@ Wische alle bereits vorhandenen Malspuren weg, schalte den Stift ein und wähle 
 ## Lass Scratchy fragen, wie viele Ecken sie malen soll
 
 1. ![Anzahl der Ecken abfragen](scratch-n-ecke-malen/anzahl-ecken-abfragen.png){: .right}
-Lass Scratchy fragen *Wie viel Ecken soll die Figur haben, die ich malen soll?* Du bekommst unten ein Eingabefeld, in dem du angeben musst, wieviel Ecken die Figur haben soll.
+Lass Scratchy fragen *Wie viel Ecken soll die Figur haben, die ich malen soll?* Du bekommst unten ein Eingabefeld, indem du angeben musst, wieviel Ecken die Figur haben soll.
 
 2. So sieht es aus, wenn Scratchy um die Anzahl an Ecken fragt:<br/>
 ![Anzahl der Ecken abfragen](scratch-n-ecke-malen/input.png)

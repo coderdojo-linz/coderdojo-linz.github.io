@@ -216,7 +216,7 @@ Der Drache sollte sich jetzt eigentlich schon steuern lassen und mit den Flügel
 ## Skripte der Figur Background
 
 Die Figur „Background“ enthält das Gras, über das der Drache fliegt. 
-Dennoch ist das kein Bühnenbild – denn wir wollen dass sich die Landschaft bewegt. 
+Dennoch ist das kein Bühnenbild – denn wir wollen, dass sich die Landschaft bewegt. 
 Wir verwenden hier erstmals einen selbst definierten Block namens „ScrollThrough“. 
 Blöcke dienen der Wiederverwendung von Code. Du erkennst sie an der dunkelvioletten Farbe. 
 Sie werden unter „Weitere Blöcke“ / „Neuer Block“ angelegt.
@@ -231,7 +231,7 @@ So legt man den Block „ScrollThrough“ an:
 
 ![Figur löschen](scratch-dragons-realm/block-scroll-through.png)
 
-Wenn man genau schaut, bemerkt man dass der „ScrollThrough“-Block eigentlich nur einmal aufgerufen wird. 
+Wenn man genau schaut, bemerkt man, dass der „ScrollThrough“-Block eigentlich nur einmal aufgerufen wird. 
 So gesehen wäre er nicht unbedingt nötig um Code-Duplikate zu vermeiden. 
 In einer ersten Implementierung von Dragons Realm war das Kostüm „Grass“ Teil der Figur „Tiles“, 
 wo der Block noch einmal existiert, und von dort stammt der Block auch jetzt noch. 
@@ -249,10 +249,10 @@ benötigen wir diesen zusätzlichen Randbereich. Andernfalls würde das Spiel zu
 
 ## Skripte der Figur Fireball
 
-Der Feuerball wird abgeschossen wenn er die Nachricht „Shoot“ erhält. 
-Da wir immer wieder Feuerbälle brauchen, wird er als Klon angelegt. 
+Der Feuerball wird abgeschossen, wenn er die Nachricht „Shoot“ erhält.
+Da wir immer wieder Feuerbälle brauchen, wird er als Klon angelegt.
 Im Hauptskript wird das passende Kostüm gewählt, danach bewegt sich der Feuerball rasch in der Richtung, 
-in die der Drache zu dem Zeitpunkt blickt. 
+in die der Drache zu dem Zeitpunkt blickt.
 
 ![Figur löschen](scratch-dragons-realm/skripte-fireball-1.png)
 
