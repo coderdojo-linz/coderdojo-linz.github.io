@@ -15,7 +15,7 @@ scratch-data: 6
 
 ## Ziel der Übung
 
-In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, dass, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
+In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
 
 ## Spielbeschreibung
 
