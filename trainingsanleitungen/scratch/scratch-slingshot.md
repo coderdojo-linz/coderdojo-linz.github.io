@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Affe füttern
 description: Wirf dem Affen mit der Steinschleuder Bananen zu
+scratch-images:
+- scratch-slingshot/slingshot-affe-fuettern.png
+- scratch-slingshot/skripte-banane-1.png
+scratch-level: 2
+scratch-sprites: 3
+scratch-scripts: 9
+scratch-data: 7
 ---
 
 # Scratch Affe füttern
@@ -51,14 +58,14 @@ weiter wird die Banane zurückgezogen. So fliegt sie dann weiter.
 
 ![Skripte Stern](scratch-slingshot/skripte-banane-1.png)
 
-Wenn man die Leertaste loslässt, wird die Banane abgefeuert. Hier kommt jetzt die wirklich spannenden Teil. Du 
+Wenn man die Leertaste loslässt, wird die Banane abgefeuert. Hier kommt jetzt der wirklich spannenden Teil. Du 
 musst die Flugbahn der Banane berechnen.
 
 ![Skripte Stern](scratch-slingshot/skripte-banane-2.png)
 	
 ## Weitere Ideen
 
-* Mach den Winkel mit den Pfeiltaste veränderbar.
+* Mach den Winkel mit den Pfeiltasten veränderbar.
 * Mache die Steinschleuder mit der Maus steuerbar. Unter [https://scratch.mit.edu/projects/89442992/](https://scratch.mit.edu/projects/89442992/){:target="_blank"} findest 
 du ein Beispiel, wie das funktionieren könnte.
 

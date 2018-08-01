@@ -60,7 +60,7 @@ Damit sich die Schlange bewegen kann müssen wir zwei Informationen speichern: d
 
 ![Erhöhe die Geschwindigkeit](scratch-snake-v3/Code-Schlange-4.png)
 
-5. Das Spiel ist vorbei wenn die Schlange entweder den Rand berührt oder wenn die Zunge der Schlange (rot) ihren Körper (grün) berührt. Sende dann die Nachricht *Verloren*.
+5. Das Spiel ist vorbei, wenn die Schlange entweder den Rand berührt oder wenn die Zunge der Schlange (rot) ihren Körper (grün) berührt. Sende dann die Nachricht *Verloren*.
 
 ![Erkenne wann das Spiel vorbei ist](scratch-snake-v3/Code-Schlange-5.png)
 

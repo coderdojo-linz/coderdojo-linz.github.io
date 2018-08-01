@@ -2,6 +2,13 @@
 layout: sushi
 title: Mit Scratch eine Geschichte erzählen
 description: In dieser Übung lernst du, wie man mit Scratch eine kurze Geschichte erzählen kann.
+scratch-images:
+- scratch-geschichte-katze-und-ente/scratch-pojekt-erstellen.png
+- scratch-geschichte-katze-und-ente/scratchy-sagt-miau.png
+scratch-level: 1
+scratch-sprites: 2
+scratch-scripts: 3
+scratch-data: 0
 ---
 
 # Mit Scratch eine Geschichte erzählen
@@ -19,13 +26,13 @@ Mit Scratch kannst du Geschichten erzählen. Du kannst Figuren erscheinen lassen
 ![Scratchy ganz nach links schieben](scratch-geschichte-katze-und-ente/scratchy-ganz-links.png)
 
 2. ![Startposition setzen](scratch-geschichte-katze-und-ente/scratchy-startposition.png){: .right}
-Wir möchten, dass Scratchy immer dort links außen ist, wenn wir die Geschichte starten. Deshalb setzen wir ihn auf diese Position wenn die grüne Flagge angeklickt wird. Dazu reagiert unser Programm auf ein *Ereignis". Wenn es eintritt, verwenden wir den *gehe* Block, um Scratchy an die gewünschte Stelle zu positionieren. 
+Wir möchten, dass Scratchy immer dort links außen ist, wenn wir die Geschichte starten. Deshalb setzen wir ihn auf diese Position, wenn die grüne Flagge angeklickt wird. Dazu reagiert unser Programm auf ein *Ereignis". Wenn es eintritt, verwenden wir den *gehe* Block, um Scratchy an die gewünschte Stelle zu positionieren.
 
 3. Schiebe Scratchy jetzt etwas weiter in die Mitte wie du es am Bild siehst.<br/>
 ![Zielposition setzen](scratch-geschichte-katze-und-ente/scratchy-in-der-mitte.png)
 
 4.  ![Scratchy gleiten lassen](scratch-geschichte-katze-und-ente/scratchy-gleiten.png){: .right}
-Wir möchten, dass Scratchy nicht zu dieser Position springt sondern dort langsam hingleitet. Es soll aussehen, als ob er die Bühne langsam betritt. Das machen wir mit dem *gleite* Block.
+Wir möchten, dass Scratchy nicht zu dieser Position springt, sondern dort langsam hingleitet. Es soll aussehen, als ob er die Bühne langsam betritt. Das machen wir mit dem *gleite* Block.
 
 5. ![Mit grüner Flagge starten](scratch-geschichte-katze-und-ente/scratchy-starten.png){: .right}
 Klicke auf die grüne Flagge und sieh dir an, wie Scratchy die Bühne betritt.

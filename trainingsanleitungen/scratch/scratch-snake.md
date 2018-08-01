@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Snake
 description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Rand und verwickle dich nicht, wenn die Schlange länger wird.
+scratch-images:
+- scratch-snake/snake-game.png
+- scratch-snake/skript-schlange-1.png
+scratch-level: 2
+scratch-sprites: 3
+scratch-scripts: 9
+scratch-data: 7
 ---
 
 # Scratch Snake
@@ -161,7 +168,7 @@ dann wird der Klon für 10 * 0.2 Sekunden = 2 Sekunden angezeigt.</p>
 
 	<div class="col-sm-4">
 		<div class="sushi-numbering">5</div>
-		<p>Das Spiel ist vorbei wenn die Schlange entweder den Rand berührt oder wenn die Zunge der Schlange (rot) ihren Körper (grün) berührt. Sende dann die Nachricht "Verloren".</p>
+		<p>Das Spiel ist vorbei, wenn die Schlange entweder den Rand berührt oder wenn die Zunge der Schlange (rot) ihren Körper (grün) berührt. Sende dann die Nachricht "Verloren".</p>
 	</div>
 	<div class="col-sm-8">
 		<img src="scratch-snake/skript-schlange-5.png" title="Erkenne wann das Spiel vorbei ist" />

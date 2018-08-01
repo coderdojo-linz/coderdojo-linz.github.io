@@ -2,6 +2,13 @@
 layout: sushi
 title: Die Zauberlehrlinge
 description: Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen.
+scratch-images:
+- scratch-zauberlehrlinge/01-fertig.png
+- scratch-zauberlehrlinge/07-tim-skripte.png
+scratch-level: 2
+scratch-sprites: 4
+scratch-scripts: 13
+scratch-data: 3
 ---
 
 # Die Zauberlehrlinge
@@ -107,11 +114,11 @@ Folgendes muss dabei passieren:
   * Falls ja:
     * Sende eine Nachricht (z.B. "getroffen") an alle.
 	* Verstecke den Blitz.
-	* Stoppe das Script.
+	* Stoppe das Skript.
   * Falls nein:
 	* Überprüfe, ob der Blitz den Rand oder die Landschaft (Farbe) berührt.
 	* Falls ja:
-		* Sorge dafür, dass der andere Spieler dran kommt, indem du den Wert der Variable "Spieler" änderst.
+		* Sorge dafür, dass der andere Spieler an die Reihe kommt, indem du den Wert der Variable "Spieler" änderst.
 		* Verstecke den Blitz.
 		* Stoppe das Skript.
 

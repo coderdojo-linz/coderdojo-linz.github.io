@@ -2,6 +2,13 @@
 layout: sushi
 title: Erste Schritte in Scratch
 description: In dieser Übung legst du ein neues Projekt an und lässt Scratchy, die Katze, am Bildschirm herumlaufen.
+scratch-images:
+- scratch-erste-schritte/scratchy-geht-im-kreis.png
+- scratch-erste-schritte/wische-malspuren-weg.png
+scratch-level: 1
+scratch-sprites: 1
+scratch-scripts: 2
+scratch-data: 0
 ---
 
 # Erste Schritte mit Scratch

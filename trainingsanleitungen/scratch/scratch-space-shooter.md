@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Space Shooter
 description: In dieser Übung schießt du mit deinem Raumschiff herabfallende Meteoriten ab bevor sie dein Raumschiff zerstören.
+scratch-images:
+- scratch-space-shooter/space-shooter.png
+- scratch-space-shooter/skripte-laser.png
+scratch-level: 2
+scratch-sprites: 3
+scratch-scripts: 13
+scratch-data: 4
 ---
 
 # Scratch Space Shooter
@@ -57,7 +64,7 @@ Jedesmal wenn die Leertaste gedrückt wird, muss ein neuer Laserstrahl erzeugt u
 
 ## Weitere Ideen
 
-* Füge Klänge für das Abfeuern eines Laserstrahls, für das Treffen eines Metoriten und das Zerstören des Raumschiffes hinzu.
+* Füge Klänge für das Abfeuern eines Laserstrahls, für das Treffen eines Meteoriten und das Zerstören des Raumschiffes hinzu.
 * Verwende Variablen um die Geschwindigkeit der Meteoriten und die Anzahl der erzeugten Meteoriten mit der Zeit zu erhöhen.
 
 ## Ausprobieren

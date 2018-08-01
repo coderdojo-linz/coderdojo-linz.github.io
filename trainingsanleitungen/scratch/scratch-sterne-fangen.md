@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Sterne fangen
 description: Springe hoch, um die herumfliegenden Sterne zu fangen.
+scratch-images:
+- scratch-sterne-fangen/sterne-fangen.png
+- scratch-sterne-fangen/skript-pico-1.png
+scratch-level: 2
+scratch-sprites: 3
+scratch-scripts: 7
+scratch-data: 3
 ---
 
 # Scratch Sterne fangen

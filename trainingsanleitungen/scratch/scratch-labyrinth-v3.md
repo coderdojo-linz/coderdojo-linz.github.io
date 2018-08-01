@@ -21,7 +21,7 @@ In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danac
 
 ![Endgame](scratch-labyrinth-v3/endgame.png){: .right}
 
-Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit *X* markierte Ziel zu erreichen.Die schwarzen und roten Felder sind Hindernisse. Schwarze Felder kannst du zerstören, indem du Anlauf nimmst. Rote kannst du nicht zerstören. Ziel ist es, mit möglichst wenigen Bewegungen das Ziel zu erreichen. Damit du deine Versuche vergleichen kannst, soll bei Erreichen des Ziel ausgegeben werden, wie viele Bewegungen du gebraucht hast.
+Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit *X* markierte Ziel zu erreichen. Die schwarzen und roten Felder sind Hindernisse. Schwarze Felder kannst du zerstören, indem du Anlauf nimmst. Rote kannst du nicht zerstören. Ziel ist es, mit möglichst wenigen Bewegungen das Ziel zu erreichen. Damit du deine Versuche vergleichen kannst, soll beim Erreichen des Ziels ausgegeben werden, wie viele Bewegungen du gebraucht hast.
 
 ### Figuren
 
@@ -83,12 +83,12 @@ MMMMMMMMMMMMBBBB
 
 ![Baue Spielfeld](scratch-labyrinth-v3/code-laby-2.png)
 
-1. Im vorigen Block erstellen wir Klone. Diese Klone müssen wir an die richtige Position bringen wenn sie entstehen. Das machen wir mit diesem Block.
+1. Im vorigen Block erstellen wir Klone. Diese Klone müssen wir an die richtige Position bringen, wenn sie entstehen. Das machen wir mit diesem Block.
 
 ![Klon positionieren](scratch-labyrinth-v3/code-laby-3.png)
 
 1. ![Hauptprogramm für Labyrinth-Element](scratch-labyrinth-v3/code-laby-4.png){: .right}
-Jetzt müssen wir nur noch dafür sorgen, dass unsere neuen Blöcke aufgerufen werden wenn das Programm startet.
+Jetzt müssen wir nur noch dafür sorgen, dass unsere neuen Blöcke aufgerufen werden, wenn das Programm startet.
 
 1. So, jetzt kannst du dein Programm ausprobieren. Das Labyrinth müsste am Bildschirm erscheinen. Klappt es?
 
@@ -120,7 +120,7 @@ Wir brauchen für unsere Spieler-Figur noch weitere Variablen. Lege die Variable
 ![Spielstart für den Spieler](scratch-labyrinth-v3/code-spieler-5.png)
 
 1. ![Hauptprogramm für Spieler](scratch-labyrinth-v3/code-spieler-6.png){: .right}
-Jetzt müssen wir nur noch dafür sorgen, dass unsere neuen Blöcke aufgerufen werden wenn das Programm startet.
+Jetzt müssen wir nur noch dafür sorgen, dass unsere neuen Blöcke aufgerufen werden, wenn das Programm startet.
 
 1. So, jetzt kannst du dein Programm ausprobieren. Du müsstest jetzt den Spieler steuern können. Klappt alles?
 

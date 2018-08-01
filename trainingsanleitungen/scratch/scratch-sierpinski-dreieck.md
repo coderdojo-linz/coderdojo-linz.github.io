@@ -2,13 +2,18 @@
 layout: sushi
 title: Scratch Sierpinski Dreieck
 description: Male mit Scratch ein Sierpinski Dreieick.
+scratch-images:
+- scratch-sierpinski-dreieck/dreieck-mit-farben.png
+- scratch-sierpinski-dreieck/erstes-dreieck.png
+scratch-level: 1
+scratch-sprites: 1
+scratch-scripts: 2
+scratch-data: 1
 ---
 
 # Scratch Sierpinski Dreieck
 
-Ein Fraktal ist ein Objekt, dass oft aus mehreren verkleinerten Kopien seiner selbst besteht. Hier siehst du ein großes Dreieck, 
-das aus mehreren kleineren Dreiecken zusammengesetzt ist, die wiederum aus noch kleineren Dreiecken bestehen. Man nennt dieses 
-Fraktal Sierpinski Dreick.
+Ein Fraktal ist ein Objekt, dass oft aus mehreren verkleinerten Kopien seiner selbst besteht. Hier siehst du ein großes Dreieck, das aus mehreren kleineren Dreiecken zusammengesetzt ist, die wiederum aus noch kleineren Dreiecken bestehen. Man nennt dieses Fraktal Sierpinski Dreieck.
 
 <p class="center"><img alt="Sierpinski Dreieck " src="scratch-sierpinski-dreieck/sierpinski-dreieck.png" /></p>
 
@@ -17,26 +22,24 @@ Die Übung besteht aus 1 Figur und 2 Skripten.
 ## Figuren anlegen
 
 1. ![Figur löschen](scratch-sierpinski-dreieck/figur.png){: .right}
-Um im Scratch zu malen, brauchen wir zwar eine Figur, es muss am Bildschirm aber nichts angezeigt werden. Du kannst also eine Figur mit einem leeren Kostüm anlegen. 
+Um im Scratch zu malen, brauchen wir zwar eine Figur, es muss am Bildschirm aber nichts angezeigt werden. Du kannst also eine Figur mit einem leeren Kostüm anlegen.
 Die Skripte werden für diese leere Figur erstellt.
 
 ## Daten
 
 1. ![Daten](scratch-sierpinski-dreieck/daten.png){: .right}
-Für das Sierpinski Dreieck zeichnen wir Dreiecke mit verschiedenen Seitenlängen. Wir legen daher eine Variable "Seitenlaenge" an. Wir werden später mit Klonen 
-arbeiten, um Dreiecke mit verschiedenen Seitenlängen zu arbeiten, darum darf die Variable nur für eine Figur gelten.
+Für das Sierpinski Dreieck zeichnen wir Dreiecke mit verschiedenen Seitenlängen. Wir legen daher eine Variable "Seitenlaenge" an. Wir werden später mit Klonen arbeiten, um Dreiecke mit verschiedenen Seitenlängen zu arbeiten, darum darf die Variable nur für eine Figur gelten.
 
 **ACHTUNG: Achte darauf, dass die Variable "Nur für diese Figur" gilt.**
-
 
 ## Skripte zum Malen der Dreiecke
 
 1. ![Malfäche initialisieren](scratch-sierpinski-dreieck/start-position.png){: .right}
 Lege als erstes für die leere Figur ein Skript an, dass beim Klick auf die grüne Flagge die Malfläche initialisiert. Dazu gehören folgende Schritte:
- * Starte das Script mit der grünen Flagge
+ * Starte das Skript mit der grünen Flagge
  * Wische alle Malspuren weg
  * Wähle eine Stiftfarbe
- * Setzte die Variable "Seitenlaenge" auf 200 - wir malen als erstes das größte Dreieck in der Mitte, das eine Seitelänge von 200 Schritten haben soll
+ * Setzte die Variable "Seitenlaenge" auf 200 - wir malen als erstes das größte Dreieck in der Mitte, das eine Seitenlänge von 200 Schritten haben soll
  * Gehe zur Position x: 0, y: -170 - das grüne Sternchen im Bild kennzeichnet diese Startposition
  * Erzeuge einen Klon deiner Figur
 

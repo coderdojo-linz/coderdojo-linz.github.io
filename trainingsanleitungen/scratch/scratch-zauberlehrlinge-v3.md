@@ -110,11 +110,11 @@ Folgendes muss dabei passieren:
   * Falls ja:
     * Sende eine Nachricht (z.B. "getroffen") an alle.
 	* Verstecke den Blitz.
-	* Stoppe das Script.
+	* Stoppe das Skript.
   * Falls nein:
 	* Überprüfe, ob der Blitz den Rand oder die Landschaft (Farbe) berührt.
 	* Falls ja:
-		* Sorge dafür, dass der andere Spieler dran kommt, indem du den Wert der Variable *Spieler* änderst.
+		* Sorge dafür, dass der andere Spieler an die Reihe kommt , indem du den Wert der Variable *Spieler* änderst.
 		* Verstecke den Blitz.
 		* Stoppe das Skript.
 

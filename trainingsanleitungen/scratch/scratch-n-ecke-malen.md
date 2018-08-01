@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch n-Ecke malen
 description: In dieser Übung lässt du Scratchy Figuren mit beliebig vielen Ecken malen, wie zum Beispiel ein Dreieck oder ein Viereck.
+scratch-images:
+- scratch-n-ecke-malen/kreis.png
+- scratch-n-ecke-malen/anzahl-ecken-abfragen.png
+scratch-level: 2
+scratch-sprites: 3
+scratch-scripts: 9
+scratch-data: 7
 ---
 
 # n-Ecke malen
@@ -16,7 +23,7 @@ Wische alle bereits vorhandenen Malspuren weg, schalte den Stift ein und wähle 
 ## Lass Scratchy fragen, wie viele Ecken sie malen soll
 
 1. ![Anzahl der Ecken abfragen](scratch-n-ecke-malen/anzahl-ecken-abfragen.png){: .right}
-Lass Scratchy fragen *Wie viel Ecken soll die Figur haben, die ich malen soll?* Du bekommst unten ein Eingabefeld, in dem du angeben musst, wieviel Ecken die Figur haben soll.
+Lass Scratchy fragen *Wie viel Ecken soll die Figur haben, die ich malen soll?* Du bekommst unten ein Eingabefeld, indem du angeben musst, wieviel Ecken die Figur haben soll.
 
 2. So sieht es aus, wenn Scratchy um die Anzahl an Ecken fragt:<br/>
 ![Anzahl der Ecken abfragen](scratch-n-ecke-malen/input.png)

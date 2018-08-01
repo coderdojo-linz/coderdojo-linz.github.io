@@ -58,13 +58,13 @@ Die Banane wird beim Drücken der Leertaste in der Steinschleuder eingespannt. J
 
 ![Code](scratch-slingshot-v3/code-banane-2.png)
 
-Wenn man die Leertaste loslässt, wird die Banane abgefeuert. Hier kommt jetzt die wirklich spannenden Teil. Du musst die Flugbahn der Banane berechnen.
+Wenn man die Leertaste loslässt, wird die Banane abgefeuert. Hier kommt jetzt der wirklich spannenden Teil. Du musst die Flugbahn der Banane berechnen.
 
 ![Code](scratch-slingshot-v3/code-banane-3.png)
 
 ## Weitere Ideen
 
-* Mach den Winkel mit den Pfeiltaste veränderbar.
+* Mach den Winkel mit den Pfeiltasten veränderbar.
 
 ## Herunterladen
 

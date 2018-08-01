@@ -113,7 +113,7 @@ Der Drache sollte sich jetzt eigentlich schon steuern lassen und mit den Flügel
 ## Code der Figur Background
 
 Die Figur *Background* enthält das Gras, über das der Drache fliegt.
-Dennoch ist das kein Bühnenbild, denn wir wollen dass sich die Landschaft bewegt.
+Dennoch ist das kein Bühnenbild, denn wir wollen, dass sich die Landschaft bewegt.
 Wir verwenden hier erstmals einen selbst definierten Block namens *ScrollThrough*.
 Blöcke dienen der Wiederverwendung von Code. Du erkennst sie an der rosernen Farbe.
 Sie werden unter *Meine Blöcke* / *Neuer Block* angelegt.
@@ -128,7 +128,7 @@ So legt man den Block *ScrollThrough* an:
 
 ![Figur löschen](scratch-dragons-realm-v3/block.png)
 
-Wenn man genau schaut, bemerkt man dass der *ScrollThrough*-Block eigentlich nur einmal aufgerufen wird.
+Wenn man genau schaut, bemerkt man, dass der *ScrollThrough*-Block eigentlich nur einmal aufgerufen wird.
 So gesehen wäre er nicht unbedingt nötig um Code-Duplikate zu vermeiden.
 In einer ersten Implementierung von Dragons Realm war das Kostüm *Grass* Teil der Figur *Tiles*, wo der Block noch einmal existiert, und von dort stammt der Block auch jetzt noch. Leider erlaubt Scratch die Wiederverwendung von Blöcken nur innerhalb einer Figur, nicht über mehrere Figuren hinweg.
 
@@ -143,7 +143,7 @@ Da Scratch Figuren nur eine beschränkte Anzahl von Pixeln hinter dem Spielrand 
 
 ## Code der Figur Fireball
 
-Der Feuerball wird abgeschossen wenn er die Nachricht *Shoot* erhält.
+Der Feuerball wird abgeschossen, wenn er die Nachricht *Shoot* erhält.
 Da wir immer wieder Feuerbälle brauchen, wird er als Klon angelegt.
 Im Hauptskript wird das passende Kostüm gewählt, danach bewegt sich der Feuerball rasch in der Richtung, in die der Drache zu dem Zeitpunkt blickt.
 
