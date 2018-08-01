@@ -2,8 +2,14 @@
 layout: sushi
 title: Scratch Weihnachtsspiel
 description: Wie viele Geschenke kannst du in einer Minute liefern?
+scratch-images:
+- scratch-weihnachten/weihnachtsmann-position.png
+- scratch-weihnachten/hintergrund-skript.png
+scratch-level: 1
+scratch-sprites: 4
+scratch-scripts: 9
+scratch-data: 1
 ---
-
 
 # Scratch Weihnachtsspiel
 Bald ist Weihnachten - und der Weihnachtsmann hat alle Hände voll zu tun, um die Geschenke rechtzeitig in die Häuser zu bringen. Wie viel schaffst du in einer Minute?
@@ -12,9 +18,8 @@ Das Spiel besteht aus 4 Figuren und 9 Skripten!
 
 ## Bilder downloaden
 
-Wir haben einige Bilder vorbereitet, die du für dieses Spiel benötigst. Lade dir die folgende Datei herunter: 
+Wir haben einige Bilder vorbereitet, die du für dieses Spiel benötigst. Lade dir die folgende Datei herunter:
 [weihnachtsspiel.zip](scratch-weihnachten/Weihnachtsspiel.zip)
-
 
 ## Winterlandschaft
 

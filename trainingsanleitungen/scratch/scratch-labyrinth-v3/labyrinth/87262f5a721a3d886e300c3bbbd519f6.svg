@@ -1,0 +1,19 @@
+<svg:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="28.82320785522461" height="28.82318115234375" viewBox="0.5883965492248535 0.5885009765625 28.82320785522461 28.82318115234375" id="svg2" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="goal.svg" xml:space="preserve">
+  <svg:defs id="defs4"/>
+  <g>
+    <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="12.630923" inkscape:cx="-2.2577796" inkscape:cy="11.304224" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" units="px" inkscape:window-width="1536" inkscape:window-height="801" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"/>
+    <svg:metadata id="metadata7">
+      <rdf:RDF>
+        <cc:Work rdf:about="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+          <dc:title/>
+        </cc:Work>
+      </rdf:RDF>
+    </svg:metadata>
+    <svg:g inkscape:label="Ebene 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-1022.3621)">
+      <svg:path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.16499627;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 0.58839656,1051.7738 29.411603,1022.9506" id="path5780" inkscape:connector-curvature="0"/>
+      <svg:path inkscape:connector-curvature="0" id="path5782" d="M 29.411603,1051.7738 0.58839656,1022.9506" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.16499627;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
+    </svg:g>
+  </g>
+</svg:svg>

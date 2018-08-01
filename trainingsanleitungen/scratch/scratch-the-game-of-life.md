@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch The Game of Life
 description: Erwecke Zellen zum Leben.
+scratch-images:
+- scratch-the-game-of-life/the-game-of-life.png
+- scratch-the-game-of-life/funktion-insert-pattern.png
+scratch-level: 3
+scratch-sprites: 2
+scratch-scripts: 21
+scratch-data: 20
 ---
 
 # The Game of Life
@@ -21,7 +28,6 @@ Du kannst das fertige Spiel unter [https://scratch.mit.edu/projects/96326891](ht
 
 Das Spiel besteht aus 2 Figuren und 21 Skripten.
 
-
 ## Die Figuren und Skripte
 
 Wir benötigen nur zwei Figuren namens „Selection“ und „Grid“. Selection dient der Anzeige eines einfachen Befehlsmenüs im unteren Bereich. Grid ist unser Spielfeld, das sich fortlaufend selbst neu zeichnet.
@@ -37,7 +43,6 @@ Für die Figur Selection benötigen wir sechs Kostüme für die sechs Kommandos,
 Die Skripte von Selection sind relativ einfach. Sie dienen dazu die Menükommandos zu zeichnen, und bei Mausklick entsprechende Nachrichten an das Grid zu senden:
 
 ![Skripte Selection](scratch-the-game-of-life/skripte-selection.png)
-
 
 ## Die Figur Grid
 

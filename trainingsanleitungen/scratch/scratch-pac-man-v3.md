@@ -6,9 +6,9 @@ scratch-images:
 - scratch-pac-man-v3/endgame.png
 - scratch-pac-man-v3/code-bühne-1.png
 scratch-level: 3
-scratch-sprites: 
-scratch-scripts: 
-scratch-data: 
+scratch-sprites: 3
+scratch-scripts: 19
+scratch-data: 28
 ---
 
 # Scratch Pac Man

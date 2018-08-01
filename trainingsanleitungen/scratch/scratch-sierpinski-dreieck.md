@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Sierpinski Dreieck
 description: Male mit Scratch ein Sierpinski Dreieick.
+scratch-images:
+- scratch-sierpinski-dreieck/dreieck-mit-farben.png
+- scratch-sierpinski-dreieck/erstes-dreieck.png
+scratch-level: 1
+scratch-sprites: 1
+scratch-scripts: 2
+scratch-data: 1
 ---
 
 # Scratch Sierpinski Dreieck

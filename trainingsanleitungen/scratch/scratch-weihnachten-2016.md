@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Weihnachtsspiel 2016
 description: Es ist Weihnachten. Zeit, den Baum zu dekorieren.
+scratch-images:
+- scratch-weihnachten-2016/christmas-game.png
+- scratch-weihnachten-2016/zerspringen.png
+scratch-level: 1
+scratch-sprites: 2
+scratch-scripts: 7
+scratch-data: 4
 ---
 
 # Scratch Weihnachtsspiel 2016

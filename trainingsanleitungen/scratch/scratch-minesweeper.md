@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Minesweeper
 description: Finde die Bomben
+scratch-images:
+- scratch-minesweeper/minesweeper-game.png
+- scratch-minesweeper/klick-auf-zelle.png
+scratch-level: 3
+scratch-sprites: 2
+scratch-scripts: 15
+scratch-data: 6
 ---
 
 # Scratch Minesweeper

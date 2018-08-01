@@ -2,6 +2,13 @@
 layout: sushi
 title: Mit Scratch eine Geschichte erzählen
 description: In dieser Übung lernst du, wie man mit Scratch eine kurze Geschichte erzählen kann.
+scratch-images:
+- scratch-geschichte-katze-und-ente/scratch-pojekt-erstellen.png
+- scratch-geschichte-katze-und-ente/scratchy-sagt-miau.png
+scratch-level: 1
+scratch-sprites: 2
+scratch-scripts: 3
+scratch-data: 0
 ---
 
 # Mit Scratch eine Geschichte erzählen

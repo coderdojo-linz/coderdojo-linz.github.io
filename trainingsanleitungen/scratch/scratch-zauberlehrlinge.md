@@ -2,6 +2,13 @@
 layout: sushi
 title: Die Zauberlehrlinge
 description: Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen.
+scratch-images:
+- scratch-zauberlehrlinge/01-fertig.png
+- scratch-zauberlehrlinge/07-tim-skripte.png
+scratch-level: 2
+scratch-sprites: 4
+scratch-scripts: 13
+scratch-data: 3
 ---
 
 # Die Zauberlehrlinge

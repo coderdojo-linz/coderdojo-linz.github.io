@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Dragons Realm
 description: Springe hoch, um die herumfliegenden Sterne zu fangen.
+scratch-images:
+- scratch-dragons-realm/dragons-realm.png
+- scratch-dragons-realm/skripte-border.png
+scratch-level: 3
+scratch-sprites: 6
+scratch-scripts: 19
+scratch-data: 11
 ---
 
 # Dragons Realm

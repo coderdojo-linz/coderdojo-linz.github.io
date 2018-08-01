@@ -5,7 +5,7 @@ description: In dieser Übung baust du ein kleines Spiel, in dem du versuchst, e
 scratch-images:
 - scratch-paddle-game-v3/background.png
 - scratch-paddle-game-v3/ball-code-1.png
-scratch-level: 1
+scratch-level: 2
 scratch-sprites: 3
 scratch-scripts: 9
 scratch-data: 2

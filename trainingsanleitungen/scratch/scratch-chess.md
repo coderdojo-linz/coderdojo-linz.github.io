@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Chess
 description: In diesem Beispiel wollen wir die beiden wichtigsten Funktionen eines Schachprogramms implementieren - das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.
+scratch-images:
+- scratch-chess/chess-game.png
+- scratch-chess/evaluate-board.png
+scratch-level: 3
+scratch-sprites: 4
+scratch-scripts: 35
+scratch-data: 70
 ---
 
 # Scratch Chess

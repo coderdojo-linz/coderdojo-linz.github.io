@@ -2,6 +2,13 @@
 layout: sushi
 title: Labyrinth-Spiel mit Scratch und JavaScript
 description: In dieser Übung programmierst du ein Spiel mit Scratch und übersetzt es dann in JavaScript
+scratch-images:
+- scratch-labyrinth/labyrinth.png
+- scratch-labyrinth/aktualisiere-spielerposition.png
+scratch-level: 3
+scratch-sprites: 3
+scratch-scripts: 13
+scratch-data: 6
 ---
 
 # Labyrinth-Spiel mit Scratch und JavaScript

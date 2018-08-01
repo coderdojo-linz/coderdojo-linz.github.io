@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Moonhack
 description: In diesem Spiel landest du auf dem Mond
+scratch-images:
+- scratch-moonhack/in-flight.png
+- scratch-moonhack/gravitation.png
+scratch-level: 1
+scratch-sprites: 1
+scratch-scripts: 8
+scratch-data: 2
 ---
 
 # Scratch Moonhack

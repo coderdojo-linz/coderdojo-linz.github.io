@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Space Shooter II
 description: Hast du den Space Shooter schon geschafft? Dann probiere diese Herausforderung.
+scratch-images:
+- scratch-space-shooter-2/01-space-shooter-final.png
+- scratch-space-shooter-2/03-wizard-witch.png
+scratch-level: 2
+scratch-sprites: 4
+scratch-scripts: 6
+scratch-data: 2
 ---
 
 # Scratch Space Shooter II

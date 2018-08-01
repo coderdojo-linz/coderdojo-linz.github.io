@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Pac Man
 description: Friss dich durch's Labyrinth.
+scratch-images:
+- scratch-pac-man/pac-man.png
+- scratch-pac-man/skripte-pac-man-4.png
+scratch-level: 3
+scratch-sprites: 3
+scratch-scripts: 19
+scratch-data: 28
 ---
 
 # Scratch Pac Man

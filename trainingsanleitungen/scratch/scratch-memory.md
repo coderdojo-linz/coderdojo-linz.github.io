@@ -2,6 +2,13 @@
 layout: sushi
 title: Scratch Memory
 description: Drehe zwei Karten um und finde zusammenpassende Paare.
+scratch-images:
+- scratch-memory/memory-game.png
+- scratch-memory/bild-anzeigen.png
+scratch-level: 2
+scratch-sprites: 2
+scratch-scripts: 10
+scratch-data: 11
 ---
 
 # Scratch Memory
