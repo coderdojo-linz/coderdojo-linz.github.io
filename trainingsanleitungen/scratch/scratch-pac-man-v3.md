@@ -98,13 +98,13 @@ Damit du das nicht alles einzeln abtippen musst, hier nochmal die Daten in Textf
 
 PacMan besteht aus acht Kostümen, für jeweils jede Richtung und einmal mit geschlossenem, einmal mit offenem Mund. Lade dazu einfach die *PacMan.png* Grafiken in die Figur.
 
-Die PacMan Codeblöcke sind relativ umfangreich. Hier die benötigten Variablen, bitte denke daran dass du sie als *Nur für diese Figur* definierst (außer PosX, PosY, Level, Life und Points, die wir ja schon global in der Bühne definiert haben):
+Die PacMan Codeblöcke sind relativ umfangreich. Hier die benötigten Variablen, bitte denke daran, dass du sie als *Nur für diese Figur* definierst (außer PosX, PosY, Level, Life und Points, die wir ja schon global in der Bühne definiert haben):
 
 ![Kostüme Pac Man](scratch-pac-man-v3/pac-man.png){: .floatLeft}
 
 ![Daten Pac Man](scratch-pac-man-v3/daten-pac-man.png){: .floatLeft}
 
-Wir verwenden wieder rosa Blöcke zur Wiederverwendung von Code. Bitte achte darauf dass du dabei immer die Option *Ohne Bildschirmaktualisierung laufen lassen* selektierst, sonst könnte es sein, dass dein Programm zu langsam ist.
+Wir verwenden wieder rosa Blöcke zur Wiederverwendung von Code. Bitte achte darauf, dass du dabei immer die Option *Ohne Bildschirmaktualisierung laufen lassen* selektierst, sonst könnte es sein, dass dein Programm zu langsam ist.
 
 Hier läuft ein sogenannter Timer, damit PacMan nach zehn Sekunden seine Superkräfte auch wieder verliert. Der *Reset*-Block dient dem Zurücksetzen auf den Ursprungszustand von PacMan. Die Tastatursteuerung ist hier ebenfalls implementiert.
 
@@ -147,7 +147,7 @@ In der Ghost-Hauptschleife bewegen wir den Geist ähnlich durch das Grid wie zuv
 
 ![Code Ghost](scratch-pac-man-v3/code-ghost-2.png)
 
-Im Block *CalcNextDir* versucht der Geist möglichst rasch an PacMan heranzukommen. Dazu berechnen wir in welcher Richtung und wie weit entfernt PacMan steht. Ergibt sich eine Möglichkeit eine Abzweigung zu nehmen um die Distanz zu verkürzen, machen wir das durch Richtungswechsel; einem kleinen Zufallsfaktor folgend tun wir das aber nicht immer, dadurch vermeiden wir ein *Hängenbleiben* hinter Ecken, und auch dass sich zwei Geister nebeneinander immer gleich bewegen. Wenn keine eindeutige Strategie möglich ist, wählen wir die nächste Richtung zufällig. Mit den *GridDef > 0*-Abfragen prüfen wir, ob der Geist das nächste Feld betreten kann.
+Im Block *CalcNextDir* versucht der Geist möglichst rasch an PacMan heranzukommen. Dazu berechnen wir in welcher Richtung und wie weit entfernt PacMan steht. Ergibt sich eine Möglichkeit eine Abzweigung zu nehmen um die Distanz zu verkürzen, machen wir das durch Richtungswechsel; einem kleinen Zufallsfaktor folgend tun wir das aber nicht immer, dadurch vermeiden wir ein *Hängenbleiben* hinter Ecken, und auch, dass sich zwei Geister nebeneinander immer gleich bewegen. Wenn keine eindeutige Strategie möglich ist, wählen wir die nächste Richtung zufällig. Mit den *GridDef > 0*-Abfragen prüfen wir, ob der Geist das nächste Feld betreten kann.
 
 ![Code Ghost](scratch-pac-man-v3/code-ghost-3.png)
 
