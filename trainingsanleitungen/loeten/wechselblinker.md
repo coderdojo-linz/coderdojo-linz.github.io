@@ -69,13 +69,13 @@ Hier siehst du, wie du die Schaltung am Steckboard zusammenstellen kannst. Wir h
 
 <img src="wechselblinker/steckboard-oben.jpg" width="75%" />
 
-![Schaltung](wechselblinker/steckboard-rechts-vorne.jpg)
+<img src="wechselblinker/steckboard-rechts-vorne.jpg" width="75%" />
 
-![Schaltung](wechselblinker/steckboard-rechts-hinten.jpg)
+<img src="wechselblinker/steckboard-rechts-hinten.jpg" width="75%" />
 
-![Schaltung](wechselblinker/steckboard-links-vorne.jpg)
+<img src="wechselblinker/steckboard-links-vorne.jpg" width="75%" />
 
-![Schaltung](wechselblinker/steckboard-links-hinten.jpg)
+<img src="wechselblinker/steckboard-links-hinten.jpg" width="75%" />
 
 ### Achtung! Besondere Bauteile
 
@@ -85,13 +85,13 @@ Bei manchen Bauteilen (z.B. bei den Widerständen) ist es egal, in welcher Richt
 
 Die Leuchtdioden haben *ein langes und ein kurzes Bein*. Das lange Bein heißt *Anode*, das kurze *Kathode*. **Verbinde das lange Bein mit dem Plus-Pol**.
 
-![Leuchtdiode](wechselblinker/leuchtdiode.jpg)
+<img src="wechselblinker/leuchtdiode.jpg" width="75%" />
 
 #### Elektrolyt-Kondensator
 
 Elektrolyt-Kondensator haben auch eine Polung. Die *Kathode* (Minus-Pol) ist markiert. **Achte darauf, dass der Kondensator wie im Schaltplan angegeben eingebaut wird** (Plus-Pol mit *Anode* verbunden).
 
-![Kondensator](wechselblinker/kondensator.jpg)
+<img src="wechselblinker/kondensator.jpg" width="75%" />
 
 #### Transistor
 
