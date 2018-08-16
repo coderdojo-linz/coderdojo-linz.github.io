@@ -44,22 +44,22 @@ Falls du den Schaltplan noch nicht verstehst, keine Angst. Das CoderDojo-Mentori
 
 Um den Wechselblinker nachzubauen, brauchst du folgende Bauteile:
 
-1. Ein [Steckboard](https://de.wikipedia.org/wiki/Steckplatine) mit Verbindungskabeln (auch als *Jumper*-Kabel bekannt)
-1. Eine [9V Batterie](https://de.wikipedia.org/wiki/9-Volt-Block)
-1. Ein Batterieanschlusskabel (auch als *Battierclip* bekannt)
-1. Zwei [Widerstände](https://de.wikipedia.org/wiki/Widerstand_(Bauelement)) (470 Ohm, 1/4 Watt)
-1. Zwei Widerstände (4.7k Ohm, 1/4 Watt)
-1. Zwei [Elektrolyt-Kondensatoren](https://de.wikipedia.org/wiki/Elektrolytkondensator) (470 µF, 16 V)
-1. Zwei [Transistoren](https://de.wikipedia.org/wiki/Transistor) (BC337)
-1. Zwei [Leuchtdioden](https://de.wikipedia.org/wiki/Leuchtdiode)
+* Ein [Steckboard](https://de.wikipedia.org/wiki/Steckplatine) mit Verbindungskabeln (auch als *Jumper*-Kabel bekannt)
+* Eine [9V Batterie](https://de.wikipedia.org/wiki/9-Volt-Block)
+* Ein Batterieanschlusskabel (auch als *Battierclip* bekannt)
+* Zwei [Widerstände](https://de.wikipedia.org/wiki/Widerstand_(Bauelement)) (470 Ohm, 1/4 Watt)
+* Zwei Widerstände (4.7k Ohm, 1/4 Watt)
+* Zwei [Elektrolyt-Kondensatoren](https://de.wikipedia.org/wiki/Elektrolytkondensator) (470 µF, 16 V)
+* Zwei [Transistoren](https://de.wikipedia.org/wiki/Transistor) (BC337)
+* Zwei [Leuchtdioden](https://de.wikipedia.org/wiki/Leuchtdiode)
 
 Werkzeug brauchst du nicht unbedingt. Hilfreich sind aber eine kleine *Schnabelzange* und ein kleiner *Seitenschneider*.
 
 Wenn du die Schaltung nicht nur stecken, sondern löten willst, brauchst du zusätzlich folgendes:
 
-1. Ein [Stripboard](https://en.wikipedia.org/wiki/Stripboard)
-1. Lötkolben (am besten ein Set mit Zubehör)
-1. Lötdraht
+* Ein [Stripboard](https://en.wikipedia.org/wiki/Stripboard)
+* Lötkolben (am besten ein Set mit Zubehör)
+* Lötdraht
 
 Im CoderDojo haben wir alles was du brauchst schon vorbereitet. Ansonsten bekommst du die oben genannten Teile im Elektronikfachhandel oder online bei diversen Elektronik-Händlern.
 
@@ -67,7 +67,7 @@ Im CoderDojo haben wir alles was du brauchst schon vorbereitet. Ansonsten bekomm
 
 Hier siehst du, wie du die Schaltung am Steckboard zusammenstellen kannst. Wir haben sie aus mehreren Richtungen fotografiert, damit du gut siehst, wie die Bauteile verbunden sind.
 
-![Schaltung](wechselblinker/steckboard-oben.jpg)
+<img src="wechselblinker/steckboard-oben.jpg" width="75%" />
 
 ![Schaltung](wechselblinker/steckboard-rechts-vorne.jpg)
 
