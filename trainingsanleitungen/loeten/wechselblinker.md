@@ -24,11 +24,13 @@ Am oberen und unteren Ende des Steckboards sind die Anschlüsse alle *horizontal
 
 ![Steckboard Stromversorgung](wechselblinker/steckboard-stromversorgung.png)
 
-Die Anschlüsse in der Mitte (im Bild oben als *a* bis *j*) bezeichnet sind *vertikal* miteinander verbunden. Das bedeutet, dass *a* bis *e* und *f* bis *j* verbunden sind. Die folgende Schaltung zeigt, wie man das verwendet. Sie verbindet den Plus-Pol der Stromversorgung mit einem Schalter. Wenn man ihn drückt, fließt Strom durch einen [*Vorwiderstand*](https://www.elektronik-kompendium.de/sites/grd/1006011.htm) (in diesem Fall 470 Ohm) in ein LED-Lämpchen und bringt es zum Leuchten. Auf der anderen Seite ist es mit dem Minus-Pol der Stromversorgung verbunden und der Stromkreis wird dadurch geschlossen.
+Die Anschlüsse in der Mitte (im Bild oben als *a* bis *j*) bezeichnet sind *vertikal* miteinander verbunden. Das bedeutet, dass *a* bis *e* und *f* bis *j* verbunden sind. Die folgende Schaltung zeigt, wie man das verwendet. Sie verbindet den Plus-Pol der Stromversorgung mit einem [*Vorwiderstand*](https://www.elektronik-kompendium.de/sites/grd/1006011.htm) (in diesem Fall 470 Ohm). Aus dem Widerstand fließt der Strom in ein LED-Lämpchen und bringt es zum Leuchten. Auf der anderen Seite ist es mit dem Minus-Pol der Stromversorgung verbunden und der Stromkreis wird dadurch geschlossen.
 
 ![Steckboard Verbindungen](wechselblinker/steckboard-verbindungen.png)
 
 Wenn du ein Steckboard und die oben genannten Bauteile zur Verfügung hast, probiere aus, diese Schaltung zusammenzustecken. Falls nicht, kannst du das auch am Computer simulieren. [*Tinkercad Circuits*](https://www.tinkercad.com/circuits) ist eine Webseite, auf der du im Web-Browser kostenlos auf einem virtuellen Steckboard experimentieren kannst.
+
+**Im CoderDojo kannst du probieren, diese Schaltung zu löten.**
 
 ## Der Wechselblinker
 
@@ -114,3 +116,7 @@ Wir verwenden einen sogenannten *NPN Transistor*. Das Schaltsymbol ist dabei so 
 Schließe jetzt die Batterie an. Blinken die LEDs?
 
 **Bevor du die Schaltung anschließt, lasse sie auf jeden Fall von einem CoderDojo-Mentor, einer CoderDojo-Mentorin oder einem anderen Erwachsenen durchsehen. Falls sie nicht nicht wie erwartet funktioniert, stecke die Batterie sofort wieder ab!**
+
+### Löten
+
+**Im CoderDojo kannst du jetzt versuchen, diese Schaltung zu löten.**
