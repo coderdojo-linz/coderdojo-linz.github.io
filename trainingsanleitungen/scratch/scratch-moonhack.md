@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Moonhack
 description: In diesem Spiel landest du auf dem Mond
 ---

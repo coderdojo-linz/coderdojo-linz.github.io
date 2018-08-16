@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Christoph Strobl
 description: 
 image: /mentoren/images/christoph-strobl.png

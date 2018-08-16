@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Oliver Lintner
 description: 
 image: /mentoren/images/oliver-lintner.jpg

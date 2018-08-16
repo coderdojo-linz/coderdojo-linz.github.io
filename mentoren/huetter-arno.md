@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Arno Hütter
 description: 
 image: /mentoren/images/arno-huetter.jpg

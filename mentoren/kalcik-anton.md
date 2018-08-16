@@ -1,5 +1,5 @@
 ---
-layout:
+layout:mentor
 title: Anton Kalcik
 description: 
 image: /mentoren/images/anton-kalcik.jpg

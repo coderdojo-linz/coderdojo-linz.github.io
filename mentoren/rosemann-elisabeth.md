@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Elisabeth Rosemann
 description: 
 image: /mentoren/images/elisabeth-rosemann.jpg

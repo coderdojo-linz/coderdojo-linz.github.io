@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Die Zauberlehrlinge
 description: Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen.
 ---

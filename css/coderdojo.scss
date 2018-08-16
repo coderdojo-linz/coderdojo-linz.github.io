@@ -55,6 +55,26 @@ body {
 }
 
 /* mentors */
+.modTeamMember {
+    width: 100%;
+    padding-top: 120%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+
+    .member {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
 .modBlogPost.mentor {
     height: 700px;
     overflow-y: auto;
@@ -74,6 +94,10 @@ body {
 
 #footer {
     background-color: #444;
+
+    ul {
+        padding-left: 0;
+    }
 }
 
 .footer-logo {

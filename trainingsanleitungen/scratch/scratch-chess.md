@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Chess
 description: In diesem Beispiel wollen wir die beiden wichtigsten Funktionen eines Schachprogramms implementieren - das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.
 ---

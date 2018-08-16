@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Space Shooter II
 description: Hast du den Space Shooter schon geschafft? Dann probiere diese Herausforderung.
 ---

@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Raphael Schwarz
 description: 
 image: /mentoren/images/raphael-schwarz.png

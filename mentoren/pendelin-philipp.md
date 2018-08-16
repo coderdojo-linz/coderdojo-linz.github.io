@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Philipp Pendelin
 description: 
 image: /mentoren/images/philipp-pendelin.jpg

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Fang-Mich
 description: In diesem Spiel musst du versuchen, dem Haifisch zu entkommen.
 ---

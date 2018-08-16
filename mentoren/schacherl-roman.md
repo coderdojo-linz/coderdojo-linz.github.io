@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Roman Schacherl
 description: 
 image: /mentoren/images/roman-schacherl.jpg

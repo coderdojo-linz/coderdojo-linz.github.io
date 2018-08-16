@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Bernhard Großschartner
 description: 
 image: /mentoren/images/bernhard-grossschartner.jpg

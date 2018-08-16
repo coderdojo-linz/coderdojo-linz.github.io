@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Dragons Realm
 description: Springe hoch, um die herumfliegenden Sterne zu fangen.
 ---

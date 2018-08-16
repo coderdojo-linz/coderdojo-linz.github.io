@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Rainer Stropek
 description: 
 image: /mentoren/images/rainer-stropek.jpg

@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Alexander Rosemann
 description: 
 image: /mentoren/images/alexander-rosemann.jpg

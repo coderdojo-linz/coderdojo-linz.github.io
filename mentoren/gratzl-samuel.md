@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Samuel Gratzl
 description: 
 image: /mentoren/images/samuel-gratzl.jpg

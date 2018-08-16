@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Sierpinski Dreieck
 description: Male mit Scratch ein Sierpinski Dreieick.
 ---

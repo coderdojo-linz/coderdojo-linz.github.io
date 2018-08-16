@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Johannes Renner
 description: 
 image: /mentoren/images/johannes-renner.jpg

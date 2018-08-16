@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Pia Gerhofer
 description: 
 image: /mentoren/images/pia-gerhofer.jpg

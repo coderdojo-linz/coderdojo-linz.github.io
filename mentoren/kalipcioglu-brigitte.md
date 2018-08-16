@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Brigitte Kalipcioglu
 description: 
 image: /mentoren/images/brigitte-kalipcioglu.jpg

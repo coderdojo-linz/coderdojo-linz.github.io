@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Labyrinth-Spiel mit Scratch und JavaScript
 description: In dieser Übung programmierst du ein Spiel mit Scratch und übersetzt es dann in JavaScript
 ---

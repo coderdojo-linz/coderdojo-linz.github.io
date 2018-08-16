@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Thomas Kotzmann
 description: 
 image: /mentoren/images/thomas-kotzmann.jpg

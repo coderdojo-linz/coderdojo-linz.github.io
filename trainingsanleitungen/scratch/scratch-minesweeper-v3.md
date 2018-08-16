@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Minesweeper
 description: Finde die Bomben
 scratch-images:

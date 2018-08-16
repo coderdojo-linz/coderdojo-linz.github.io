@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Rina Ahmed
 description: 
 image: /mentoren/images/rina-ahmed.jpg

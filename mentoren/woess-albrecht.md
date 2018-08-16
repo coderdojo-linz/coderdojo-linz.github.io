@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Albrecht Wöß
 description: 
 image: /mentoren/images/albrecht-woess.jpg

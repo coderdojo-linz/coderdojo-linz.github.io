@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Daniel Sklenitzka
 description: 
 image: /mentoren/images/daniel-sklenitzka.jpg

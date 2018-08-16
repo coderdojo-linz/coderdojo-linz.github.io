@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Pac Man
 description: Friss dich durch's Labyrinth.
 scratch-images:

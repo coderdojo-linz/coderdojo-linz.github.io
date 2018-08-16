@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Mit Scratch eine Geschichte erzählen
 description: In dieser Übung lernst du, wie man mit Scratch eine kurze Geschichte erzählen kann.
 ---

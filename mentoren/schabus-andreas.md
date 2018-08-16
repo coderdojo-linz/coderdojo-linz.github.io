@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Andreas Schabus
 description: 
 image: /mentoren/images/andreas-schabus.png

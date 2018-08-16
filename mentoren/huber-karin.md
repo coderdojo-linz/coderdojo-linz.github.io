@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Karin Huber
 description: 
 image: /mentoren/images/karin-huber.jpg

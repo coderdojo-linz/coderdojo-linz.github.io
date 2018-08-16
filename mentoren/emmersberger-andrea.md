@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Andrea Emmersberger
 description: 
 image: /mentoren/images/andrea-emmersberger.jpg

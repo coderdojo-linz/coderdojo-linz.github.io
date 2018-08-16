@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Brigitte Hufnagl
 description: 
 image: /mentoren/images/brigitte-hufnagl.jpg

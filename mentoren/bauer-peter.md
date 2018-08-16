@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Peter Bauer
 description: 
 image: /mentoren/images/peter-bauer.jpg

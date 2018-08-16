@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Günther Ehrenberger
 description: 
 image: /mentoren/images/guenther-ehrenberger.jpg

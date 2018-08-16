@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Gurpreet Juttla
 description: 
 image: /mentoren/images/gurpreet-juttla.jpg

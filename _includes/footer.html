@@ -10,28 +10,28 @@
           </span>
         </a>
       </h4>
-      <p>©2018 Coding Club Linz</p>
+      <p>© 2018 Coding Club Linz</p>
       <div class='spacing'></div>
       <div class='spacing'></div>
     </div>
     <div class='large-3 medium-3 columns'>
       <div class='links'>
-        <h4>Some pages</h4>
+        <h4>Infos</h4>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="{{site.baseurl}}/index.html">Home</a>
           </li>
           <li>
-            <a href="portfolio.html">View some works here</a>
+            <a href="{{site.baseurl}}/termine.html">Termine</a>
           </li>
           <li>
-            <a href="blog.html">Follow our blog</a>
+            <a href="{{site.baseurl}}/infos/kinder.html">Infos für Kinder</a>
           </li>
           <li>
-            <a href="contact.html">Contact us</a>
+            <a href="{{site.baseurl}}/infos/eltern.html">Infos für Eltern</a>
           </li>
           <li>
-            <a href="services.html">Our services</a>
+            <a href="{{site.baseurl}}/infos/mentoren.html">Infos für Mentoren</a>
           </li>
         </ul>
       </div>
@@ -39,13 +39,20 @@
     </div>
     <div class='large-3 medium-3 columns'>
       <div class='links'>
-        <h4>Recent posts</h4>
+        <h4>Übungen</h4>
         <ul>
-          {% for post in site.posts %}
           <li>
-            <a href="{{post.url}}">{{post.title}}</a>
+            <a href="{{site.baseurl}}/infos/uebungsbeispiele.html#scratch">Scratch</a>
           </li>
-          {% endfor %}
+          <li>
+            <a href="{{site.baseurl}}/infos/uebungsbeispiele.html#webentwicklung-html-javascript--co">Webentwicklung</a>
+          </li>
+          <li>
+            <a href="{{site.baseurl}}/infos/uebungsbeispiele.html#minecraft">Minecraft</a>
+          </li>
+          <li>
+            <a href="{{site.baseurl}}/infos/uebungsbeispiele.html#bbc-microbit">Micro:Bit</a>
+          </li>
         </ul>
       </div>
       <div class='spacing'></div>

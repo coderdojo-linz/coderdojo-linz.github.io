@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch The Game of Life
 description: Erwecke Zellen zum Leben.
 ---

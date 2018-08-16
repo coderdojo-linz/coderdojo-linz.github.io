@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Thomas Roithmeier
 description: 
 image: /mentoren/images/thomas-roithmeier.jpg

@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Hans-Peter Weidinger
 description: 
 image: /mentoren/images/hans-peter-weidinger.png

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Konto anlegen und starten
 description: In dieser Übung legst du dir dein eigenes Konto für Scratch an und startest Scratch zum ersten Mal.
 ---

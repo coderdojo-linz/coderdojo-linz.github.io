@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Florian Zolda
 description: 
 image: /mentoren/images/florian-zolda.jpg

@@ -1,5 +1,5 @@
 ---
-layout:
+layout: mentor
 title: Matthias Ableidinger
 description: 
 image: /mentoren/images/matthias-ableidinger.jpg

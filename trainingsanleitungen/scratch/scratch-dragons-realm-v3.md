@@ -1,5 +1,5 @@
 ---
-layout: sushi
+layout: sushi-scratch
 title: Scratch Dragons Realm
 description: Verteidige als Drache dein Territorium gegen die Eindringlinge.
 scratch-images:
