@@ -1,6 +1,3 @@
-- name: Home
-  path: 
-  section_id: home
 - name: Termine
   path: termine.html
   section_id: termine

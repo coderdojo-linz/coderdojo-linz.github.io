@@ -1,11 +1,15 @@
 ---
-layout: content
+layout: default
 title: Anmeldung
 section_id: anmeldung
 banner: images/coderdojo-banner-3.jpg
 banner-title: Anmeldung
 banner-subtitle: Dein erster Besuch beim CoderDojo
 ---
+
+<div class="full">
+	<div class="row">
+		<div class="columns" markdown="1">
 
 **Eine Anmeldung ist nur erforderlich, wenn du noch nie beim CoderDojo warst. Hast du bereits einmal teilgenommen, kannst du ohne Anmeldung zu allen <a href="termine.html">Terminen</a> kommen.**
 
@@ -26,9 +30,17 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
 
 1. Eine Mentorin oder ein Mentor vom CoderDojo Linz zeigt dir, wie das CoderDojo funktioniert und gibt dir Tipps, womit und wie du starten könntest.
 
+</div>
+</div>
+</div>
+
+<div class="full highlighted-content">
+	<div class="row">
+		<div class="columns" markdown="1">
+
 ## <a name="form" />Anmeldung
 
-<div class="row registration-form">
+<div class="registration-form">
   <div class="col-sm-10 col-md-8 col-lg-6">
     <div class="card card-block">
         <div class="registration-finished hide">
@@ -45,7 +57,7 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
                 <label for="event">Termin</label>
                 <select id="event" class="form-control">
                 </select>
-                <div style="padding-top: 15px"><small><small>Der Ort kann sich in seltenen Fällen ändern. Bitte überprüfe einige Tage vor der Veranstaltung unter <a href="termine.html" target="_blank">Termine</a>, ob der Veranstaltungsort geändert wurde.</small></small></div>
+                <div style="padding-bottom: 15px"><i>Der Ort kann sich in seltenen Fällen ändern. Bitte überprüfe einige Tage vor der Veranstaltung unter <a href="termine.html" target="_blank">Termine</a>, ob der Veranstaltungsort geändert wurde.</i></div>
             </div>
             <div class="form-group">
                 <label for="givenName">Vorname</label>
@@ -87,7 +99,7 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
                 <input type="email" class="form-control" id="email" required="required"
                     oninvalid="this.setCustomValidity('Gib uns bitte eine Email-Adresse, unter dir wir dich bei Fragen oder Termin-Änderungen erreichen können.')" oninput="setCustomValidity('')">
             </div>
-            <div class="pull-right">
+            <div class="">
                 <button type="submit" class="btn btn-material-light-blue-700">Anmelden</button>
             </div>
         </form>
@@ -95,6 +107,13 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
   </div>
 </div>
 
+</div>
+</div>
+</div>
+
+<div class="full">
+	<div class="row">
+		<div class="columns" markdown="1">
 
 ## <a name="Wissensturm" />Ort
 
@@ -112,6 +131,10 @@ Auf der Webseite des Wissensturms findest du noch weitere Hinweise zu [Anreise u
 Vielen Dank an unseren Partner [Wissensturm Linz](http://www.linz.at/wissensturm/){:target="_blank"} für die großartigen Räumlichkeiten, die wir zur Verfügung gestellt bekommen!
 
 <p><a href="http://www.linz.at/wissensturm/" target="_blank"><img src="images/logo-vhs.jpg" /></a></p>
+
+</div>
+</div>
+</div>
 
 <script language="javascript">
 

@@ -1,5 +1,8 @@
 ---
 ---
+.top-bar.expanded .title-area {
+    background-color: #444;
+}
 
 .top-bar-section {
     li.active:not(.has-form) a:not(.button) {
@@ -12,8 +15,24 @@
 }
 
 body {
+    div.sticky:not(.fixed) .title-area {
+        img {
+            width: 30px!important;
+            padding-right: 7px!important;
+        }
+
+        a {
+            font-size: 1.25em!important;
+        }
+    }
+
     .title-area a {
         background-color: transparent!important;
+    }
+
+    .parallax {
+        border-top: 40px solid #444;
+        margin-top: -40px;
     }
 
     div.contain-to-grid, nav.top-bar, nav.top-bar li a {
@@ -73,6 +92,10 @@ body {
             object-fit: cover;
         }
     }
+}
+
+.highlighted-content {
+    background-color: #e7e7e7;
 }
 
 .modBlogPost.mentor {
