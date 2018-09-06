@@ -2,6 +2,13 @@
 layout: sushi-scratch
 title: Scratch Fang-Mich
 description: In diesem Spiel musst du versuchen, dem Haifisch zu entkommen.
+scratch-images:
+- scratch-fang-mich/01-background.png
+- scratch-fang-mich/08-move-shark.png
+scratch-level: 1
+scratch-sprites: 2
+scratch-scripts: 8
+scratch-data: 0
 ---
 
 # Scratch Fang-Mich
@@ -18,7 +25,7 @@ Als nächstes lösche die Figur Scratchy mit dem Namen *Sprite1* indem du mit de
 Im angezeigten Menü kannst du Scratchy löschen.
 
 3. ![Figuren hinzufügen](scratch-fang-mich/03-fish.png){: .right}
-Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke dazu auf *Figur aus der Bibliothek wählen* und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonläuft oder eine Person die dem Löwen davon läuft.
+Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke dazu auf *Figur aus der Bibliothek wählen* und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonläuft oder eine Person, die dem Löwen davon läuft.
 
 4. ![Fisch verkleinern](scratch-fang-mich/04-resize.png){: .right}
 Damit der kleine Fisch auch kleiner ist als der große Haifisch, müssen wir den Fisch verkleinern. Wähle dazu den Fisch bei den Figuren aus, sodass er blau umrandet ist. Klicke anschließend auf den Tab *Kostüme*, wähle den Fisch aus und verkleinere ihn, indem du ihn an den Ecken kleiner ziehst.
@@ -55,11 +62,10 @@ Jetzt soll der Haifisch im Aquarium herumschwimmen.<br/><br/>
   • Bewege den Haifisch mit *gehe 10er-Schritt*, *warte 0,1 Sek.", *pralle vom Rand ab* und *drehe dich um ... Grad*<br/>
   • Um etwas mehr Zufall reinzubringen, nimm im Menü *Operatoren* den Block *Zufallszahl von 1 bis 10* und ziehe ihn an die Stelle der 15 Grad.
 
-  
 ## Fisch fangen
 
 1. ![Fisch wird berührt](scratch-fang-mich/09-touch-fish.png){: .right}
-Wenn der Haifisch den Fisch berüht, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt werden.<br/><br/> 
+Wenn der Haifisch den Fisch berührt, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt werden.<br/><br/>
   • Wähle dazu den Fisch aus, damit er blau umrandet ist.<br/>
   • Im Tab *Skripte* kannst du den Fisch verschwinden lassen, sobald er den Haifisch berührt.<br/>
   • Unter *Ereignisse* wähle *Wenn ... angeklickt*.<br/>

@@ -2,6 +2,13 @@
 layout: sushi-scratch
 title: Scratch Zahlenraten
 description: In diesem Spiel musst du eine Zahl erraten, die sich der Computer ausgedacht hat. Schaffst du es in weniger als 9 Versuchen?
+scratch-images:
+- scratch-zahlenraten/10-liste.PNG
+- scratch-zahlenraten/08-falls.PNG
+scratch-level: 1
+scratch-sprites: 1
+scratch-scripts: 1
+scratch-data: 2
 ---
 
 # Scratch Zahlenraten

@@ -2,6 +2,13 @@
 layout: sushi-scratch
 title: Scratch Moonhack
 description: In diesem Spiel landest du auf dem Mond
+scratch-images:
+- scratch-moonhack/in-flight.png
+- scratch-moonhack/gravitation.png
+scratch-level: 1
+scratch-sprites: 1
+scratch-scripts: 8
+scratch-data: 2
 ---
 
 # Scratch Moonhack
@@ -85,7 +92,7 @@ Die Geschwindigkeit, mit der die Mondlandefähre nach unten gleitet, ist nicht i
 
 ![Gravitation](scratch-moonhack/gravitation.png){: .right}
 
-Wir verwenden eine *Schleife* um etwas zu wiederholen, bis die Mondlandefähre den unteren Rand des Bünenbildes erreicht hat.<br/>
+Wir verwenden eine *Schleife* um etwas zu wiederholen, bis die Mondlandefähre den unteren Rand des Bühnenbildes erreicht hat.<br/>
 
 Als nächstes fügen wir Code hinzu, der die Geschwindigkeit simuliert, mit der die Mondlandefähre in Richtung Mond fällt. Wusstest du, dass die Gravitation auf dem Mond nur 0.16-mal so stark ist wie auf der Erde?
 

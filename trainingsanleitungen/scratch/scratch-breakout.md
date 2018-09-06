@@ -2,6 +2,13 @@
 layout: sushi-scratch
 title: Scratch Breakout
 description: In diesem Spiel pulverisierst du bunte Mauersteine
+scratch-images:
+- scratch-breakout/11-done.png
+- scratch-breakout/08-paddle-scripts.png
+scratch-level: 2
+scratch-sprites: 3
+scratch-scripts: 9
+scratch-data: 7
 ---
 
 # Scratch Breakout
@@ -83,7 +90,7 @@ Unsere Figuren sind fertig, jetzt geht's ans Programmieren der Skripte.
 
 ![Schäger Skripte](scratch-breakout/08-paddle-scripts.png){: .right}
 
-Der Schläger hat nur ein Skript und das ist ganz einfach. Gesteuert wird der Schläger mit der Maus. Du kannst hier auch gleich die vier globalen Variablen des Spiels anlegen. Globale Variable gelten für alle Figuren. Klicke dazu auf den Knopf "Neue Variable", und lege folgende Variablen an: "BlockAnzahl", "Leben", "Level" und "Punkte". Beachte dass im Dialog der Auswahlknopf "Für alle Figuren" selektiert sein muss. Alle diese Variablen außer "BlockAnzahl" wollen wir auch am Spielfeld anzeigen. Klicke dazu den Auswahlknopf links vom Variablennamen.<br/>
+Der Schläger hat nur ein Skript und das ist ganz einfach. Gesteuert wird der Schläger mit der Maus. Du kannst hier auch gleich die vier globalen Variablen des Spiels anlegen. Globale Variable gelten für alle Figuren. Klicke dazu auf den Knopf "Neue Variable", und lege folgende Variablen an: "BlockAnzahl", "Leben", "Level" und "Punkte". Beachte, dass im Dialog der Auswahlknopf "Für alle Figuren" selektiert sein muss. Alle diese Variablen außer "BlockAnzahl" wollen wir auch am Spielfeld anzeigen. Klicke dazu den Auswahlknopf links von dem Namen der Variable. <br/>
 
 * Ab Programmstart wird fortlaufend die X-Koordinate des Mauszeigers abgefragt, und der Schläger entsprechend positioniert. Außerdem müssen wir aufpassen, dass der Schläger nicht verschwindet wenn die Maus über die Spielfeldgrenze hinaus bewegt wird (x-Position < -240 oder x-Position > 240).<br/>
 

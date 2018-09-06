@@ -2,6 +2,13 @@
 layout: sushi-scratch
 title: Scratch Chess
 description: In diesem Beispiel wollen wir die beiden wichtigsten Funktionen eines Schachprogramms implementieren - das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.
+scratch-images:
+- scratch-chess/chess-game.png
+- scratch-chess/evaluate-board.png
+scratch-level: 3
+scratch-sprites: 4
+scratch-scripts: 35
+scratch-data: 70
 ---
 
 # Scratch Chess
@@ -10,7 +17,7 @@ description: In diesem Beispiel wollen wir die beiden wichtigsten Funktionen ein
 	<div class="col-sm-6"><img alt="Snake Game" src="scratch-chess/chess-game.png" /></div>
 	<div class="col-sm-6">
 		<p>In diesem Beispiel wollen wir die beiden wichtigsten Funktionen eines Schachprogramms implementieren: Das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.</p>
-		<p>Das gesamte Spiel nachzuprogrammieren wäre sehr aufwändig und würde den Rahmen eines zweistündigen CoderDojos sprengen. Du kannst es aber auch gleich einmal unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> ausprobieren.</p>
+		<p>Das gesamte Spiel zu programmieren wäre sehr aufwändig und würde den Rahmen eines zweistündigen CoderDojos sprengen. Du kannst es aber auch gleich einmal unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> ausprobieren.</p>
 		<table class="table sushi-stats">
 			<tbody>
 				<tr>
@@ -77,7 +84,7 @@ In der Grafik gibt es jeweils zwei mögliche Züge, bei Schach sind dies deutlic
 
 Wir können auch hier etwas unternehmen, nämlich das Gleiche was der Mensch intuitiv beim Schachspielen macht: Aussichtslose Zugmöglichkeiten sofort ausblenden. Züge die schlechter sind als der bisher garantierte Bestwert braucht man gar nicht weiter zu betrachten. Und beim Gegner ist es auch so - wenn er eine bessere Zugmöglichkeit hat, muss man sich eine schlechtere nicht mehr weiter ansehen. Man nennt das auch Alpha/Beta-Suche - Alpha und Beta sind die bisher besten/schlechtesten Bewertungen aus Sicht der schwarzen Figuren.
 
-Wir programmieren das alles in einem Funktionsblock, der sich selbst aufruft. Man nennt das eine rekursive Funktion. Wir führen einen Zug aus, und rufen die aktuelle Funktion nochmal auf, damit der darauffolgende Zug ausgeführt wird. Irgendwann müssen wir natürlich die Funktion beenden - und zwar dann wenn wir eine Zugtiefe von MaxDepth erreicht haben (je nach Schwierigkeitsgrad sind das zwei, drei oder vier Züge). Dann wird das Brett bewertet. Unsere Zwischendaten (Min, Max, Alpha, Beta, Züge) werden alle in Listen gespeichert. Das ist in Scratch bei Rekursionen nötig, weil es keine lokalen Variablen gibt und Funktions-Parameter nicht verändert werden können. Figuren-Variablen reichen dafür nicht, da wir sonst die Variablenwerte in kaskadierten Aufrufen überschreiben würden. In diesen Listen gibt es für jede Zugtiefe einen Eintrag, also zum Beispiel für den gerade berechneten Zug. Eine Alternative wäre die Variablen von 1 bis N durchzunummerieren, und den ganzen Funktionsblock für jede Zugtiefe zu duplizieren. Aber das möchten wir eher nicht.
+Wir programmieren das alles in einem Funktionsblock, der sich selbst aufruft. Man nennt das eine rekursive Funktion. Wir führen einen Zug aus, und rufen die aktuelle Funktion nochmal auf, damit der darauffolgende Zug ausgeführt wird. Irgendwann müssen wir natürlich die Funktion beenden - und zwar dann, wenn wir eine Zugtiefe von MaxDepth erreicht haben (je nach Schwierigkeitsgrad sind das zwei, drei oder vier Züge). Dann wird das Brett bewertet. Unsere Zwischendaten (Min, Max, Alpha, Beta, Züge) werden alle in Listen gespeichert. Das ist in Scratch bei Rekursionen nötig, weil es keine lokalen Variablen gibt und Funktions-Parameter nicht verändert werden können. Figuren-Variablen reichen dafür nicht, da wir sonst die Variablenwerte in kaskadierten Aufrufen überschreiben würden. In diesen Listen gibt es für jede Zugtiefe einen Eintrag, also zum Beispiel für den gerade berechneten Zug. Eine Alternative wäre die Variablen von 1 bis N durchzunummerieren, und den ganzen Funktionsblock für jede Zugtiefe zu duplizieren. Aber das möchten wir eher nicht.
 Die einfachste MiniMax/Alpha-Beta Implementierung ergibt sich daraus wie folgt: 
 
 <p><img src="scratch-chess/alpha-beta-min-max-impl.png" class="max-full" /></p>

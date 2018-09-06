@@ -5,10 +5,10 @@ description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Ran
 scratch-images:
 - scratch-snake/snake-game.png
 - scratch-snake/skript-schlange-1.png
-scratch-level: 3
+scratch-level: 2
 scratch-sprites: 3
-scratch-scripts: 14
-scratch-data: 2
+scratch-scripts: 9
+scratch-data: 7
 ---
 
 Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auch, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
@@ -147,7 +147,7 @@ Lege dafür zwei Variablen mit den Namen "DauerProPosition" und "Länge" an, die
 
 		<div class="small-4">
 			<div class="sushi-numbering">5</div>
-			<p>Das Spiel ist vorbei wenn die Schlange entweder den Rand berührt oder wenn die Zunge der Schlange (rot) ihren Körper (grün) berührt. Sende dann die Nachricht "Verloren".</p>
+		<p>Das Spiel ist vorbei, wenn die Schlange entweder den Rand berührt oder wenn die Zunge der Schlange (rot) ihren Körper (grün) berührt. Sende dann die Nachricht "Verloren".</p>
 		</div>
 		<div class="small-8">
 			<img src="scratch-snake/skript-schlange-5.png" title="Erkenne wann das Spiel vorbei ist" />

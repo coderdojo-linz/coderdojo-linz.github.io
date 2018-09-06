@@ -2,11 +2,18 @@
 layout: sushi-scratch
 title: Scratch The Game of Life
 description: Erwecke Zellen zum Leben.
+scratch-images:
+- scratch-the-game-of-life/the-game-of-life.png
+- scratch-the-game-of-life/funktion-insert-pattern.png
+scratch-level: 3
+scratch-sprites: 2
+scratch-scripts: 21
+scratch-data: 20
 ---
 
 # The Game of Life
 
-Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“  (schwarz). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
+Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“ (schwarz). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
 
 * Eine tote Zelle mit genau drei lebenden Nachbarn wird neu geboren
 * Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben an Einsamkeit
@@ -20,7 +27,6 @@ Durch diese einfachen Regeln können aus bestimmten Anfangsmustern komplexe Stru
 Du kannst das fertige Spiel unter [https://scratch.mit.edu/projects/96326891](https://scratch.mit.edu/projects/96326891){:target="_blank"} auch gleich ausprobieren.
 
 Das Spiel besteht aus 2 Figuren und 21 Skripten.
-
 
 ## Die Figuren und Skripte
 
@@ -37,7 +43,6 @@ Für die Figur Selection benötigen wir sechs Kostüme für die sechs Kommandos,
 Die Skripte von Selection sind relativ einfach. Sie dienen dazu die Menükommandos zu zeichnen, und bei Mausklick entsprechende Nachrichten an das Grid zu senden:
 
 ![Skripte Selection](scratch-the-game-of-life/skripte-selection.png)
-
 
 ## Die Figur Grid
 

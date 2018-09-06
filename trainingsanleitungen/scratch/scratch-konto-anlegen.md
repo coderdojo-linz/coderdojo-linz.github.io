@@ -6,7 +6,7 @@ description: In dieser Übung legst du dir dein eigenes Konto für Scratch an un
 
 # Scratch Konto anlegen und starten #
 
-Um deine Projekte in Scratch speichern und teilen zu können, brauchst du ein Konto. Die folgende Schritte zeigen dir, wie du ein neues Konto anlegst. Anschließend starten wir Scratch zum ersten Mal.
+Um deine Projekte in Scratch speichern und teilen zu können, brauchst du ein Konto. Die folgenden Schritte zeigen dir, wie du ein neues Konto anlegst. Anschließend starten wir Scratch zum ersten Mal.
 
 ## Scratch Webseite öffnen
 

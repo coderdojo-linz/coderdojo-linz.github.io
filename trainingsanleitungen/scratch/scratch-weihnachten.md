@@ -2,8 +2,14 @@
 layout: sushi-scratch
 title: Scratch Weihnachtsspiel
 description: Wie viele Geschenke kannst du in einer Minute liefern?
+scratch-images:
+- scratch-weihnachten/weihnachtsmann-position.png
+- scratch-weihnachten/hintergrund-skript.png
+scratch-level: 1
+scratch-sprites: 4
+scratch-scripts: 9
+scratch-data: 1
 ---
-
 
 # Scratch Weihnachtsspiel
 Bald ist Weihnachten - und der Weihnachtsmann hat alle Hände voll zu tun, um die Geschenke rechtzeitig in die Häuser zu bringen. Wie viel schaffst du in einer Minute?
@@ -12,14 +18,13 @@ Das Spiel besteht aus 4 Figuren und 9 Skripten!
 
 ## Bilder downloaden
 
-Wir haben einige Bilder vorbereitet, die du für dieses Spiel benötigst. Lade dir die folgende Datei herunter: 
+Wir haben einige Bilder vorbereitet, die du für dieses Spiel benötigst. Lade dir die folgende Datei herunter:
 [weihnachtsspiel.zip](scratch-weihnachten/Weihnachtsspiel.zip)
-
 
 ## Winterlandschaft
 
 Es soll so aussehen, dass der Weihnachtsmann sich von links nach rechts bewegt. Dabei darf er aber natürlich nicht aus dem Bild rausfliegen. Deshalb verwenden wir einen Trick: Wir bewegen nicht den Weihnachtsmann nach rechts, sondern den Hintergrund nach links. Der Weihnachtsmann bleibt immer an der gleichen Position – wie wenn du ihn mit einer Kamera filmen würdest.
-Erstelle eine neue Figur mit dem Bild aus der heruntergeladenen Vorlage und erstelle ein Script, dass sie nach links schiebt:
+Erstelle eine neue Figur mit dem Bild aus der heruntergeladenen Vorlage und erstelle ein Skript, dass sie nach links schiebt:
 
 ![Hintergrund-Position](scratch-weihnachten/hintergrund-position.PNG){: .right}
 
@@ -27,7 +32,7 @@ Wenn du jetzt auf die grüne Fahne klickst, siehst du, dass der Hintergrund nach
 
 ![Erklärung Verschiebung](scratch-weihnachten/Hintergrund-Skizze.png){: .right}
 
-Wir erstellen also im bestehenden Skript zusätzlich das zweite Bild ("erzeuge einen Klon von mir selbst") und lassen diesen Klong genauso durchs Bild ziehen - allerdings mit einer anderen Startposition.
+Wir erstellen also im bestehenden Skript zusätzlich das zweite Bild ("erzeuge einen Klon von mir selbst") und lassen diesen Klon genauso durchs Bild ziehen - allerdings mit einer anderen Startposition.
 
 ![Script für Hintergrund](scratch-weihnachten/hintergrund-script.png){: .right}
 

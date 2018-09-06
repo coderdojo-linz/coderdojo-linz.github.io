@@ -73,18 +73,17 @@ Als erstes müssen wir das Spielfeld initialisieren. Dazu schicken wir zuerst ei
 Zum Erstellen des Spielfelds füllen wir die Listen *zellen* und *zellenStatus* mit Initialwerten. Die Liste *zellen* enthält für jede der 100 Positionen (10 x 10) auf dem Spielfeld eine der folgenden Informationen: - = nicht definiert, b = Bombe, 1 = 1 Bombe in den umliegenden Zellen, 2 = 2 Bomben in den umliegenden Zellen, usw. Zum Initialisieren setzen wir den Wert *-* für nicht definiert. Die Liste *zellenStatus* enthält für jede Zelle nur die Information, ob sie aufgedeckt sein soll (0 = nicht aufgedeckt, 1 = aufgedeckt). Das brauchen wir erst später, um bei Klick auf eine Zelle ohne umliegende Bomben automatisch auch die umliegenden Zellen aufzudecken. Außerdem erzeugen wir für jedes Feld einen Klon der Zelle. Diese wird dann im nächsten Skript an der richtigen Position im Spielfeld platziert.
 
 1. ![Zelle platzieren](scratch-minesweeper-v3/code-zelle-3.png){: .right}
-Sobald ein Klon einer Zelle ensteht, wechseln wir das Kostüm auf *unknown* und zeigen den Kon an.
-Die Position werden auf folgende Werte gesetzt:
+Sobald ein Klon einer Zelle entsteht, wechseln wir das Kostüm auf *unknown* und zeigen den Klon an.
+Die Positionen werden auf folgende Werte gesetzt:
 `x = -150 + (((cloneIndex - 1) mod 10) * 32)`
 `y = 150 - ((abrunden von ((cloneIndex - 1) / 10)) * 32)`
 Wenn du das Spiel jetzt laufen lässt, müsste schon das Spielfeld aufgebaut werden.
 
 1. ![Bomben platzieren](scratch-minesweeper-v3/code-zelle-4.png){: .right}
-Jetzt werden auf dem Spielfeld die Bomben platziert. Mittels Zufallszahl wird die Position 
-der Bomben ermittelt und in der Liste *zellen* mit einem *b* gekennzeichnet.
+Jetzt werden auf dem Spielfeld die Bomben platziert. Mittels Zufallszahl wird die Position der Bomben ermittelt und in der Liste *zellen* mit einem *b* gekennzeichnet.
 
 1. ![Anzahl Bomben ermitteln](scratch-minesweeper-v3/code-zelle-5.png){: .right}
-Jetzt kommt der wirklich schwierige Teil - wir müssen für jede Zelle am Spielfeld ermitteln, wieviele Bomben an sie angrenzen. Das sind im besten Fall 0 und im schlechtesten Fall 8, wenn alle umliegenden Zellen Bomben enthalten. Je nachdem, ob die Zelle im Eck, am Rand, oder in der Mitte liegt, hat sie mehr oder weniger umliegende Zellen. Das prüfen wir in diesem Script und für jede der Zellen sehen wir nach, ob sie eine Bombe enthält. Am Ende tragen wir die ermittelte Zahl der Bomben in die Liste *zellen* ein.
+Jetzt kommt der wirklich schwierige Teil - wir müssen für jede Zelle am Spielfeld ermitteln, wie viele Bomben an sie angrenzen. Das sind im besten Fall 0 und im schlechtesten Fall 8, wenn alle umliegenden Zellen Bomben enthalten. Je nachdem, ob die Zelle im Eck, am Rand, oder in der Mitte liegt, hat sie mehr oder weniger umliegende Zellen. Das prüfen wir in diesem Skript und für jede der Zellen sehen wir nach, ob sie eine Bombe enthält. Am Ende tragen wir die ermittelte Zahl der Bomben in die Liste *zellen* ein.
 
 1. ![Klick auf Zelle](scratch-minesweeper-v3/code-zelle-6.png){: .right}
 Nun können wir mit dem Spiel starten, der Spieler kann die erste Zelle anklicken. Mit der linken Maustaste wird eine Zelle aufgedeckt. Wird gleichzeitig die Leertaste gedrückt, wird eine Fahne gesetzt oder wieder entfernt. Falls eine Fahne zum Markieren einer Bombe gesetzt wird, müssen wir nachher überprüfen, ob schon alle Bomben gefunden wurden. Wird eine Zelle zum Aufdecken angeklickt, müssen wir dann das Kostüm ändern.
