@@ -15,14 +15,11 @@ banner-subtitle: Dein erster Besuch beim CoderDojo
 
 So läuft dein erster Besuch beim CoderDojo Linz ab:
 
-1. Lies die Informationen durch, die wir für dich zusammengestellt haben.<br/>
-   <a class="btn btn-material-light-blue-700" href="/infos/kinder.html" target="_blank">Infos für Coder&nbsp;...</a>&nbsp;
+1. Lies die Informationen durch, die wir für dich zusammengestellt haben: <a class="btn btn-material-light-blue-700" href="/infos/kinder.html" target="_blank">Infos für Coder</a>&nbsp;
 
-1. Lies gemeinsam mit deinen Eltern die Informationen durch, die wir für sie zusammengestellt haben.<br/>
-   <a class="btn btn-material-light-blue-700" href="/infos/kinder.html" target="_blank">Infos für Eltern&nbsp;...</a>&nbsp;
+1. Lies gemeinsam mit deinen Eltern die Informationen durch, die wir für sie zusammengestellt haben: <a class="btn btn-material-light-blue-700" href="/infos/kinder.html" target="_blank">Infos für Eltern</a>&nbsp;
 
-1. Du füllst das <a href="#form">Anmeldeformular</a> unten aus.<br/>
-   <a class="btn btn-material-light-blue-700" href="#form">Anmeldung&nbsp;...</a>&nbsp;
+1. Du füllst das <a href="#form">Anmeldeformular</a> unten aus: <a class="btn btn-material-light-blue-700" href="#form">Anmeldung</a>&nbsp;
 
 1. Wir schicken dir eine Email und bestätigen den Termin.
 
@@ -117,8 +114,7 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
 
 ## <a name="Wissensturm" />Ort
 
-Das CoderDojo findet üblicherweise im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt.
-Ausnahmen davon sind soweit jetzt schon bekannt der **18. Mai 2018**. Unter [Termine](termine.html) findest du die aktuellen Termine mit jeweiligem Verstaltungsort.
+Das CoderDojo findet meistens im [Wissensturm](http://www.linz.at/wissensturm/){:target="_blank"} in der Kärtnerstraße 26, 4020 Linz statt. Unter [Termine](termine.html) findest du die aktuellen Termine mit jeweiligem Verstaltungsort.
 
 Der Ort kann sich in seltenen Fällen ändern. Bitte überprüfe einige Tage vor der Veranstaltung unter <a href="termine.html" target="_blank">Termine</a>, ob der Veranstaltungsort geändert wurde.
 
