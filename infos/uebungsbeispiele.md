@@ -100,18 +100,38 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 
 ## BBC micro:bit
 
+1. [Schnell-Start Anleitung](/trainingsanleitungen/microbit/MicroBit Start Tutorial de.pdf){:target="_blank"}
+1. [Sicherheitshinweise](/trainingsanleitungen/microbit/Sicherheitshinweise de.pdf){:target="_blank"}
 1. [Erste Schritte mit micro:bit - Blockprogrammierung](/trainingsanleitungen/microbit/microbit_ErsteSchritte_Block.html)
-1. [Hello World](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Hello_World){:target="_blank"}
-1. [Missile Shooter](https://github.com/coderdojo-wien/exercises/tree/master/microbit/MissileShooter){:target="_blank"}
+1. [Grundlagen](/trainingsanleitungen/microbit/Grundlagen.pdf){:target="_blank"}
+1. [Grundlagen Bauelemente](/trainingsanleitungen/microbit/Grundlagen Bauelemente.pdf){:target="_blank"}
+1. [BBC Microbit Poster](/trainingsanleitungen/microbit/bbc_microbit_poster_a4.pdf){:target="_blank"}
+1. [Hello World](/trainingsanleitungen/microbit/Hello World.pdf){:target="_blank"}
+1. [Missile Shooter](/trainingsanleitungen/microbit/Missile Shooter.pdf){:target="_blank"}
 1. [Beschleunigungssensor](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Beschleunigung){:target="_blank"}
-1. [Hot Wire - der heiße Draht](https://github.com/coderdojo-wien/exercises/tree/master/microbit/HotWire){:target="_blank"}
+1. [Hot Wire - der heiße Draht](/trainingsanleitungen/microbit/Heisser-Draht.pdf){:target="_blank"}
 1. [Fan Controller](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Fan_Controller){:target="_blank"}
-1. [Stein, Schere, Papier](https://github.com/coderdojo-wien/exercises/tree/master/microbit/RockPaperScissors){:target="_blank"}
-1. [Spielwürfel](https://github.com/coderdojo-wien/exercises/tree/master/microbit/Spielwuerfel){:target="_blank"}
+1. [Stein, Schere, Papier](/trainingsanleitungen/microbit/Schere-Stein-Papier.pdf){:target="_blank"}
+1. [Spielwürfel](/trainingsanleitungen/microbit/Wuerfel.pdf){:target="_blank"}
 1. [Moonhack 2018](/trainingsanleitungen/microbit/microbit_Moonhack_2018.html)
+1. [Fang den Punkt](/trainingsanleitungen/microbit/Fang-den-Punkt.pdf){:target="_blank"}
+1. [Kompass](/trainingsanleitungen/microbit/Kompass.pdf){:target="_blank"}
+1. [Stoppuhr](/trainingsanleitungen/microbit/StopUhr.pdf){:target="_blank"}
+1. [Grove Inventor Kit for micro:bit Project Guid](/trainingsanleitungen/microbit/Grove inventor kit for microbit user manual.pdf){:target="_blank"}
+1. [PIMORONI Inventor's Kit](/trainingsanleitungen/microbit/Kitronik-KIT_5603_Web.pdf){:target="_blank"}
+1. [BME280 - Sensor für Luftdruck, Temperatur und Luftfeuche](/trainingsanleitungen/microbit/BME280.pdf){:target="_blank"}
+1. [I2C-Bus](/trainingsanleitungen/microbit/I2C-Bus.pdf){:target="_blank"}
+1. [LCD 16x02 i2c](/trainingsanleitungen/microbit/LCD-16x02.pdf){:target="_blank"}
+1. [OLED 128x64 i2c 0,96 Zoll](/trainingsanleitungen/microbit/OLED-128x64.pdf){:target="_blank"}
+
+## Arduino
+
+1. [Einführung in Arduino](/trainingsanleitungen/arduino/Arduino-Uno-Start.pdf){:target="_blank"}
 
 ## Löten
 
+1. [Löttechnik - Das sollte man wissen](https://www.reichelt.de/magazin/how-to/loettechnik-das-sollte-man-wissen/){:target="blank"}
+1. [Lötfibel](https://www.wetec.de/files/wetec_dl_datenblatt_technik-0002-file-loetfibel_rev_2012_deu.pdf){:target="blank"}
 1. [Deine erste Elektronik-Schaltung](/trainingsanleitungen/loeten/wechselblinker.html)
 
 ## Änderungen und Ergänzungen
