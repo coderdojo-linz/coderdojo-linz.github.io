@@ -13,7 +13,7 @@ So läuft dein erster Besuch beim CoderDojo Linz ab:
    <a class="btn btn-material-light-blue-700" href="/infos/kinder.html" target="_blank">Infos für Coder&nbsp;...</a>&nbsp;
 
 1. Lies gemeinsam mit deinen Eltern die Informationen durch, die wir für sie zusammengestellt haben.<br/>
-   <a class="btn btn-material-light-blue-700" href="/infos/kinder.html" target="_blank">Infos für Eltern&nbsp;...</a>&nbsp;
+   <a class="btn btn-material-light-blue-700" href="/infos/eltern.html" target="_blank">Infos für Eltern&nbsp;...</a>&nbsp;
 
 1. Du füllst das <a href="#form">Anmeldeformular</a> unten aus.<br/>
    <a class="btn btn-material-light-blue-700" href="#form">Anmeldung&nbsp;...</a>&nbsp;
