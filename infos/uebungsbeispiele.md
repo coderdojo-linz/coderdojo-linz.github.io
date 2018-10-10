@@ -130,6 +130,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 
 ## Löten
 
+1. [Grundlagen Löten](/trainingsanleitungen/loeten/Grundlagen Loeten.pdf){:target="blank"}
 1. [Löttechnik - Das sollte man wissen](https://www.reichelt.de/magazin/how-to/loettechnik-das-sollte-man-wissen/){:target="blank"}
 1. [Lötfibel](https://www.wetec.de/files/wetec_dl_datenblatt_technik-0002-file-loetfibel_rev_2012_deu.pdf){:target="blank"}
 1. [Deine erste Elektronik-Schaltung](/trainingsanleitungen/loeten/wechselblinker.html)
