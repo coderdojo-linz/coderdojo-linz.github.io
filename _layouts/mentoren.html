@@ -4,108 +4,41 @@ layout: default
 
 <div class="full">
 	<div class="row">
-		<div class="small-12 columns">
+		<div class="columns">
 			<h2>St&auml;ndige Mentorinnen und Mentoren</h2>
-		</div>
-		{% for page in site.pages %} {% if page.page-category == "mentor" and page.active == true %}
-		<div class="small-6 medium-3 large-3 columns">
-			<div class="mod modTeamMember">
-				<div class="member">
-					<img class="avatar" alt="" src="{{ page.image }}">
-					<div class="overlay">
-						<div class="intro">
-							<h3>{{ page.title }}</h3>
-							<input class="button" type="button" onclick="document.location.href='{{site.baseurl}}/{{page.url}}.html'" value="Infos" />
-							<!-- <ul class="socials">
-								<li>
-									<a href="http://twitter.com">
-										<i class="fa fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="http://facebook.com">
-										<i class="fa fa-facebook"></i>
-									</a>
-								</li>
-
-							</ul> -->
-						</div>
+		
+			{% for page in site.pages %} {% if page.page-category == "mentor" and page.active == true %}
+				<div class="clearfix">
+					<img src="{{ page.image }}" class="mentor-image pull-left" />
+					<div class="mentor-content">
+						<a class="mentor-anchor" name="{{ page.title }}"></a>
+						<h3>{{ page.title }}</h3>
+						{{ page.content }}
 					</div>
 				</div>
-			</div>
+			{% endif %} {% endfor %}
 		</div>
-
-		{% endif %} {% endfor %}
 	</div>
 </div>
 
 <div class="full">
 	<div class="row">
-		<div class="small-12 columns">
+		<div class="columns">
 			<h2>Gastmentorinnen und -mentoren</h2>
-		</div>
-		{% for page in site.pages %} {% if page.page-category == "guest-mentor" %}
-		<div class="small-6 medium-3 large-3 columns">
-			<div class="mod modTeamMember">
-				<div class="member">
-					<img class="avatar" alt="" src="{{ page.image }}">
-					<div class="overlay">
-						<div class="intro">
-							<h3>{{ page.title }}</h3>
-							<input class="button" type="button" onclick="document.location.href='{{site.baseurl}}/{{page.url}}.html'" value="Infos" />
-							<!-- <ul class="socials">
-								<li>
-									<a href="http://twitter.com">
-										<i class="fa fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="http://facebook.com">
-										<i class="fa fa-facebook"></i>
-									</a>
-								</li>
-
-							</ul> -->
-						</div>
+		
+			{% for page in site.pages %} {% if page.page-category == "guest-mentor" %}
+				<div class="clearfix">
+					<img src="{{ page.image }}" class="mentor-image pull-left" />
+					<div class="mentor-content">
+						<h3><a name="{{ page.title }}">{{ page.title }}</a></h3>
+						{{ page.content }}
 					</div>
 				</div>
-			</div>
-		</div>
 
-		{% endif %} {% endfor %}
+			{% endif %} {% endfor %}
+		</div>
 	</div>
 </div>
-
-<!-- <div class="full" style="background: #f5f5f5">
-	<div class="row">
-		{% for page in site.pages %} {% if page.page-category == "guest-mentor" %}
-		<div class='small-12 medium-6 large-4 columns'>
-			<div class='mod modBlogPost mentor'>
-				<img src="{{ page.image }}" class="avatar" />
-				<div class='content'>
-					<h4>
-						<a name="{{ page.title }}">{{ page.title }}</a>
-					</h4>
-					<p>{{ page.content }}</p>
-				</div>
-			</div>
-		</div>
-		{% endif %} {% endfor %}
-
-	</div>
-</div> -->
-
-
-
-<!--<div class="row">
-	<div class="col-md-2 col-xs-4  mentor-image-container">
-		<img src="{{ page.image }}" class="mentor-image" />
-	</div>
-	<div class="col-md-10 col-xs-8">
-		<h3>{{ page.title }}</h3>
-		{{ page.content }}
-	</div>
-</div>-->
 
 <div class="full">
 	<div class="row">
@@ -114,6 +47,5 @@ layout: default
 		</div>
 	</div>
 </div>
-
 
 <div class="spacing"></div>

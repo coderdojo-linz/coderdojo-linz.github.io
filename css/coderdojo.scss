@@ -9,8 +9,15 @@
         background-color: #eee;
     }
 
-    .has-dropdown > a:after {
-        border-top-color: #eee!important;
+    @media only screen and (max-width: 60em) {
+        .has-dropdown > a:after {
+            margin-top: -10px;
+            width: 0;
+            height: 0;
+            border-bottom: solid 5px transparent;
+            border-top: solid 5px transparent!important;
+            border-left: solid 7px rgba(153, 153, 153, 0.4);
+        }
     }
 }
 
@@ -46,6 +53,10 @@ body {
     }
 }
 
+.f-topbar-fixed.shrink .top-bar .title-area li.menu-icon {
+    margin-top: -30px;
+}
+
 // .f-topbar-fixed.shrink {
 //     div.contain-to-grid, nav.top-bar, nav.top-bar li a {
 //         opacity: 0.9;
@@ -74,24 +85,16 @@ body {
 }
 
 /* mentors */
-.modTeamMember {
-    width: 100%;
-    padding-top: 120%; /* 1:1 Aspect Ratio */
-    position: relative; /* If you want text inside of it */
+.mentor-image {
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	width: 200px;
+	max-width: 33%;
+}
 
-    .member {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+.mentor-content {
+    margin-top: 20px;
 }
 
 .highlighted-content {
