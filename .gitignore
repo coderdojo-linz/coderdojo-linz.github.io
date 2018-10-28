@@ -203,3 +203,6 @@ ModelManifest.xml
 /trainingsanleitungen/minecraft-plugins/05_welcome-Listener/Welcome/nbproject/private/
 /trainingsanleitungen/minecraft-plugins/05_welcome-Listener/Welcome/dist/
 /scratch-extensions/
+
+# Visual Studio Code
+/.vs/coderdojo-linz
