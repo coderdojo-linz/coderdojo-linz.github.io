@@ -11,12 +11,12 @@ Dazu müssen wir die Creeper und/oder Zombies einfach in einen Gang locken. Eign
 
 <!--more-->
 ## Vorbereitung
-Was wir dafür benötigen ist in erster linie Cobblestone (Bruchstein), 2-3 Pisons (Kolben), einen Schalter, eine Pressureplate (Druckplatte) und etwas Redstone. 
+Was wir dafür benötigen ist in erster linie Cobblestone (Bruchstein), 2-3 Pistons (Kolben), einen Schalter, eine Pressure Plate (Druckplatte) und etwas Redstone. 
 
 ![Mindestbestand Inventar](01_redstone-trap/01_inventory-begin.png)
 
 ## Unterbau
-Damit wir die Pistons ordentlich platzieren können, heben wir eine 2 Block tiefe grube und plazieren die Pistons. Anschließend noch Repeater an die Pistons anschließen (bitte auf die Richtung achten - müssen zum Piston hin zeigen). Dann noch alles mit Redstone verbinden und irgendwo weiter weg an die Oberfläche leiten. Am Eingang platzieren wir eine Pressure-Plate damit die Falle ausglöst werden kann.
+Damit wir die Pistons ordentlich platzieren können, heben wir eine 2 Block tiefe Grube und platzieren die Pistons. Anschließend noch Repeater an die Pistons anschließen (bitte auf die Richtung achten - müssen zum Piston hin zeigen). Dann noch alles mit Redstone verbinden und irgendwo weiter weg an die Oberfläche leiten. Am Eingang platzieren wir eine Pressure-Plate damit die Falle ausglöst werden kann.
 
 ![Rohbau der Falle](01_redstone-trap/02_build-1.png)
 
@@ -24,7 +24,7 @@ Danach können wir alles schön mit Cobblestone zumachen damit man nicht gleich 
 
 ![Unterbau zumachen](01_redstone-trap/03_build-2.png)
 
-Wenn der Gang mit der Versteckten _"Überraschung"_ dann fertig ist, sieht es ungefähr so aus:
+Wenn der Gang mit der versteckten _"Überraschung"_ dann fertig ist, sieht es ungefähr so aus:
 
 ![Fertiger Gang](01_redstone-trap/04_trap_ready.png)
 
@@ -32,7 +32,7 @@ Gut - die Falle selbst wäre jetzt fertig - unglücklicherweise kann man sie noc
 
 ## Steuerung der Falle
 
-Als ersten versuch verbinden wir die Pressure-Plate einfach mittels Redstone-Leitung mit den Pistons. Damit wird die Falle sofort ausgläst sobald irgendetwas die Platte betritt.
+Als ersten Versuch verbinden wir die Pressure-Plate einfach mittels Redstone-Leitung mit den Pistons. Damit wird die Falle sofort ausgelöst sobald irgendetwas die Platte betritt.
 
 ![Direkte Verbindung der Falle](01_redstone-trap/05_redstone_leitung_1.png)
 
@@ -44,6 +44,6 @@ Besser wäre es die Falle ein wenig zu verzögern. Das geht mit Redstone-Repeate
 
 <img src="attention_small.png" alt="Achtung" style="vertical-align: text-top; "/> die Repeater müssen in die richtige Richtung zeigen, sonst funktioniert es nicht.
 
-Durch rechtsklick auf die Repeater kann man eine Verzögerung in 3 Stufen einstellen. Damit hat der Creeper dann genug Zeit um in die Falle hineinzugehen, bevor sie zuschnappt. Probiert es einfach aus.
+Durch Rechtsklick auf die Repeater kann man eine Verzögerung in 3 Stufen einstellen. Damit hat der Creeper dann genug Zeit um in die Falle hineinzugehen, bevor sie zuschnappt. Probiert es einfach aus.
 
 
