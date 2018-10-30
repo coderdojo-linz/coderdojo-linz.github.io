@@ -65,6 +65,8 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 
 ## Minecraft
 
+### Plugins
+
 1. [Vorbedingungen - Installationen](/trainingsanleitungen/minecraft-plugins/01_installationen.html)
 1. [Kurzanleitung NetBeans Projektsetup](/trainingsanleitungen/minecraft-plugins/netbeans_cheatsheet.html)
 1. [Plugin 1: Erstes Minecraft-Plugin](/trainingsanleitungen/minecraft-plugins/02_first-plugin.html)
@@ -78,6 +80,9 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Programmieren mit Scriptcraft - Grundlagen](/trainingsanleitungen/minecraft-plugins/08_scriptcraft_basics.html)
 1. [Erste Schritte mit Redstone](/trainingsanleitungen/minecraft-plugins/erste-schritte-mit-redstone.html)
 1. [Teleporter](/trainingsanleitungen/minecraft-plugins/09_teleporter.html)
+
+### Redstone
+1. [Redstone - Einen einfache Falle](/trainingsanleitungen/minecraft/01_redstone-trap.html)
 
 ## Python
 
