@@ -79,6 +79,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Scriptcraft am Minecraft-Server installieren](/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker.html)
 1. [Programmieren mit Scriptcraft - Grundlagen](/trainingsanleitungen/minecraft-plugins/08_scriptcraft_basics.html)
 1. [Erste Schritte mit Redstone](/trainingsanleitungen/minecraft-plugins/erste-schritte-mit-redstone.html)
+1. [Teleporter](https://github.com/weidingerhp/coderdojo_minecraft_teleporter/blob/master/doc/readme.md){:target="_blank"}
 
 ### Redstone
 1. [Redstone - Einen einfache Falle](/trainingsanleitungen/minecraft/01_redstone-trap.html)
