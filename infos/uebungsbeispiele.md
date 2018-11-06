@@ -128,6 +128,9 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [I2C-Bus](/trainingsanleitungen/microbit/I2C-Bus.pdf){:target="_blank"}
 1. [LCD 16x02 i2c](/trainingsanleitungen/microbit/LCD-16x02.pdf){:target="_blank"}
 1. [OLED 128x64 i2c 0,96 Zoll](/trainingsanleitungen/microbit/OLED-128x64.pdf){:target="_blank"}
+1. [Adafruit NeoPixel Guide](/trainingsanleitungen/microbit/adafruit-neopixel-uberguide.pdf){:target="_blank"}
+1. [Led Array mit Adafruit NeoPixel](/trainingsanleitungen/microbit/LED-Array.pdf){:target="_blank"}
+1. [:MOVE mini robot for BBC micro:bit](/trainingsanleitungen/microbit/Micro-Bit_move-mini-instruction.pdf){:target="_blank"}
 
 ## Arduino
 
@@ -139,6 +142,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Löttechnik - Das sollte man wissen](https://www.reichelt.de/magazin/how-to/loettechnik-das-sollte-man-wissen/){:target="blank"}
 1. [Lötfibel](https://www.wetec.de/files/wetec_dl_datenblatt_technik-0002-file-loetfibel_rev_2012_deu.pdf){:target="blank"}
 1. [Deine erste Elektronik-Schaltung](/trainingsanleitungen/loeten/wechselblinker.html)
+1. [BlinkenRocket V2 Anleitung](/trainingsanleitungen/loeten/BlinkenRocket-manual.pdf){:target="blank"}
 
 ## Änderungen und Ergänzungen
 
