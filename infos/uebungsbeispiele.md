@@ -65,6 +65,8 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 
 ## Minecraft
 
+### Plugins
+
 1. [Vorbedingungen - Installationen](/trainingsanleitungen/minecraft-plugins/01_installationen.html)
 1. [Kurzanleitung NetBeans Projektsetup](/trainingsanleitungen/minecraft-plugins/netbeans_cheatsheet.html)
 1. [Plugin 1: Erstes Minecraft-Plugin](/trainingsanleitungen/minecraft-plugins/02_first-plugin.html)
@@ -78,6 +80,9 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Programmieren mit Scriptcraft - Grundlagen](/trainingsanleitungen/minecraft-plugins/08_scriptcraft_basics.html)
 1. [Erste Schritte mit Redstone](/trainingsanleitungen/minecraft-plugins/erste-schritte-mit-redstone.html)
 1. [Teleporter](/trainingsanleitungen/minecraft-plugins/09_teleporter.html)
+
+### Redstone
+1. [Redstone - Einen einfache Falle](/trainingsanleitungen/minecraft/01_redstone-trap.html)
 
 ## Python
 
@@ -123,6 +128,9 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [I2C-Bus](/trainingsanleitungen/microbit/I2C-Bus.pdf){:target="_blank"}
 1. [LCD 16x02 i2c](/trainingsanleitungen/microbit/LCD-16x02.pdf){:target="_blank"}
 1. [OLED 128x64 i2c 0,96 Zoll](/trainingsanleitungen/microbit/OLED-128x64.pdf){:target="_blank"}
+1. [Adafruit NeoPixel Guide](/trainingsanleitungen/microbit/adafruit-neopixel-uberguide.pdf){:target="_blank"}
+1. [Led Array mit Adafruit NeoPixel](/trainingsanleitungen/microbit/LED-Array.pdf){:target="_blank"}
+1. [:MOVE mini robot for BBC micro:bit](/trainingsanleitungen/microbit/Micro-Bit_move-mini-instruction.pdf){:target="_blank"}
 
 ## Arduino
 
@@ -134,6 +142,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Löttechnik - Das sollte man wissen](https://www.reichelt.de/magazin/how-to/loettechnik-das-sollte-man-wissen/){:target="blank"}
 1. [Lötfibel](https://www.wetec.de/files/wetec_dl_datenblatt_technik-0002-file-loetfibel_rev_2012_deu.pdf){:target="blank"}
 1. [Deine erste Elektronik-Schaltung](/trainingsanleitungen/loeten/wechselblinker.html)
+1. [BlinkenRocket V2 Anleitung](/trainingsanleitungen/loeten/BlinkenRocket-manual.pdf){:target="blank"}
 
 ## Änderungen und Ergänzungen
 
