@@ -82,7 +82,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Teleporter](https://github.com/weidingerhp/coderdojo_minecraft_teleporter/blob/master/doc/readme.md){:target="_blank"}
 
 ### Redstone
-1. [Redstone - Einen einfache Falle](/trainingsanleitungen/minecraft/01_redstone-trap.html)
+1. [Redstone - Eine einfache Falle](/trainingsanleitungen/minecraft/01_redstone-trap.html)
 
 ## Python
 
