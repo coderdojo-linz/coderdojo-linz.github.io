@@ -89,6 +89,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Erste Schritte mit Python](/trainingsanleitungen/python/python-erste-schritte.html)
 1. [Geisterspiel](/trainingsanleitungen/python/python-geisterspiel.html)
 1. [Unsinnige Sätze](/trainingsanleitungen/python/python-unsinnige-saetze.html)
+1. [Zahlen raten](/trainingsanleitungen/python/python-zahlenraten.html)
 
 ## C# (C Sharp)
 
