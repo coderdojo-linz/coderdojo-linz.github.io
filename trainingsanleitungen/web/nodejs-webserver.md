@@ -48,6 +48,8 @@ Der Server muss die HTML-Dateien an die verbundenen Browser schicken. Für Node.
 *  [express](https://www.npmjs.com/package/express){:target="_blank"}
 *  [http](https://nodejs.org/api/http.html){:target="_blank"}
 
+Um eventuellen Fehlermeldungen vorzubeugen ist es ratsam im Verzeichnis *C:\Code\Chat* zuerst den Befehl `npm init` auszuführen. Die nachfolgenden Fragen einfach mit `<Enter>` bestätigen.
+
 Das *http* Modul ist in Node.js immer vorhanden. *express* müssen wir installieren. Das geschieht in der Kommandozeile mit dem Befehl `npm install express` (*Achtung:* Bevor du ihn ausführst, stelle sicher, dass du im Verzeichnis *C:\Code\Chat* bist).
 
 *npm* steht für *Node.js Package Manager*, also ein Programm zum Verwalten von Node.js Paketen. Mehr über NPM kannst du [hier](https://docs.npmjs.com/ "NPM Dokumentation"){:target="_blank"} erfahren. Du brauchst aber für dieses Beispiel kein Detailwissen über NPM. Das kannst du auch gerne später nachlesen.
