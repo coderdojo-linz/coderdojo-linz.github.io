@@ -69,7 +69,9 @@ Unser Projekt verwendet eine Reihe von Node.js Modulen. Diese müssen mit *npm*,
         
         C:\temp\shooter>
 
-1. Jetzt installieren wir die notwendigen Node.js Module. Für den Server brauchen wir *express*, für das Game am Client verwenden wir die Game-Engine [Phaser.io](http://phaser.io/){:target="_blank"}. Installiere die beiden Module mit Hilfe der Kommandozeile `npm install express phaser --save`. Schau danach in deine *package.json* Datei. Dort müssten die beiden Module vermerkt sein.
+1. Jetzt installieren wir die notwendigen Node.js Module. Für den Server brauchen wir *express*, für das Game am Client verwenden wir die Game-Engine [Phaser.io](http://phaser.io/){:target="_blank"}. Installiere die beiden Module mit Hilfe der Kommandozeile `npm install express phaser-ce --save`. Schau danach in deine *package.json* Datei. Dort müssten die beiden Module vermerkt sein.
+
+__Anmerkung__: Die Bibliothek *phaser* in der Version 2 wurde auf *"phaser-ce"* umbenannt.
 
 ## Gulp und TypeScript einrichten
 
@@ -85,7 +87,7 @@ Um das Umwandeln von TypeScript in JavaScript (dieser Schritt wird als *TypeScri
 
 1. Installiere in dein Projekt alle *Gulp*-Plugins, die wir brauchen. Das machst du mit der Kommandozeile `npm install del gulp gulp-changed gulp-concat gulp-debug gulp-newer gulp-sourcemaps gulp-typescript gulp-uglify typescript --save-dev`. Schau danach in deine *package.json* Datei. Dort müssten die neuen Module vermerkt sein.
 
-1. Für TypeScript brauchen wir *Type Definitions*. Das sind Dateien, die Informationen darüber enthalten, was die verschiedenen Module wie *express* oder *phaser* können. TypeScript verwendet diese Informationen, um dich z.B. darauf hinzuweisen, falls du dich bei einem Methodennamen vertippst. Die Type Definitions für unsere Module installierst du mit folgenden Kommandozeilen.
+1. Für TypeScript brauchen wir *Type Definitions*. Das sind Dateien, die Informationen darüber enthalten, was die verschiedenen Module wie *express* oder *phaser-ce* können. TypeScript verwendet diese Informationen, um dich z.B. darauf hinzuweisen, falls du dich bei einem Methodennamen vertippst. Die Type Definitions für unsere Module installierst du mit folgenden Kommandozeilen.
 
         npm install @types/node @types/express @types/serve-static @types/mime --save-dev
 
@@ -145,7 +147,7 @@ Wie erwähnt verwenden wir Gulp, um unseren TypeScript-Code in JavaScript zu kom
         
         // Helper arrays holding file and folder names for later use in this gruntfile
         // External script dependencies
-        var dependencyScripts = ["node_modules/phaser/build/phaser.js"];
+        var dependencyScripts = ["node_modules/phaser-ce/build/phaser.js"];
         // TypeScript sources
         var typescriptFiles = ["./client/**/*.ts"];
         
@@ -204,23 +206,24 @@ Wie im Beispiel [Ein Webserver mit Node.js](http://coderdojo-linz.github.io/trai
 
 1. Erstelle die Datei *server.ts* mit [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} und füge folgenden Code ein. **Achte beim Programmieren darauf, wie dich der Editor dabei unterstützt, indem er dir Vorschläge für z.B. Methodennamen anbietet.** Das ist der große Vorteil von TypeScript.
 
-        
-        // express und http Module importieren. Sie sind dazu da, die HTML-Dateien
-        // aus dem Ordner "public" zu veröffentlichen.
-        var express = require('express');
-        var app = express();
-        var server = require('http').createServer(app);
-        var port = 3000;
-            
-         // Mit diesem Kommando starten wir den Webserver.
-        server.listen(port, function () {
-        	// Wir geben einen Hinweis aus, dass der Webserer läuft.
-        	console.log('Webserver läuft und hört auf Port %d', port);
-        });
-            
-        // Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
-        // im Ordner "public" zu finden sind.
-        app.use(express.static(__dirname + '/client'));
+```javascript        
+// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
+// aus dem Ordner "public" zu veröffentlichen.
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+var port = 3000;
+    
+    // Mit diesem Kommando starten wir den Webserver.
+server.listen(port, function () {
+    // Wir geben einen Hinweis aus, dass der Webserer läuft.
+    console.log('Webserver läuft und hört auf Port %d', port);
+});
+    
+// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
+// im Ordner "public" zu finden sind.
+app.use(express.static(__dirname + '/client'));
+```
 
 1. **Sprich mit deinem Mentor, wenn du Fragen zum Code hast**.
 
@@ -247,18 +250,20 @@ Jetzt haben wir den Server, also legen wir mit dem Client und dem Game los.
 
 1. Erstelle die Datei *default.html* **im Ordner `client`** mit [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} und füge folgenden Code ein. Wie du siehst ist die HTML-Datei praktisch leer. Das ist OK so.
 
-        <!DOCTYPE html>
-        
-        <html lang="en">
-        <head>
-            <meta charset="utf-8" />
-            <title>TypeScript HTML App</title>
-            <script src="scripts/dependencies.js"></script>
-            <script src="scripts/app.js"></script>
-        </head>
-        <body>
-        </body>
-        </html>
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <script src="scripts/dependencies.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+</body>
+</html>
+```
 
 # Das Game
 
@@ -268,191 +273,193 @@ Jetzt programmieren wir das Space Shooter Game.
 
 1. Hier ist der Code unseres Games. **Achte auf die Kommentare im Quellcode. Versuch den Quellcode zu verstehen. Lies dazu bei den angegebenen URLs nach und sprich mit deinem Mentor über den Code.**
 
-        /// <reference path="../node_modules/phaser/typescript/phaser.d.ts" />
-        
-        var game = new Phaser.Game(
-            512,                // Game width 
-            512,                // Game height
-            Phaser.CANVAS,      // Use HTML5 canvas for rendering (see also http://www.w3schools.com/html/html5_canvas.asp)
-            '',                 // No parent 
-            // Set methods for initializing, creating, and updating our game
-            { preload: preload, create: create, update: update });
-        
-        function preload() {
-            // Preload images so that we can use them in our game
-            game.load.image('space', 'images/deep-space.jpg');
-            game.load.image('bullet', 'images/scratch-laser.png');
-            game.load.image('ship', 'images/scratch-spaceship.png');
-            game.load.image('meteor', 'images/scratch-meteor.png')
+```javascript
+/// <reference path="../node_modules/phaser-ce/typescript/phaser.d.ts" />
+
+var game = new Phaser.Game(
+    512,                // Game width 
+    512,                // Game height
+    Phaser.CANVAS,      // Use HTML5 canvas for rendering (see also http://www.w3schools.com/html/html5_canvas.asp)
+    '',                 // No parent 
+    // Set methods for initializing, creating, and updating our game
+    { preload: preload, create: create, update: update });
+
+function preload() {
+    // Preload images so that we can use them in our game
+    game.load.image('space', 'images/deep-space.jpg');
+    game.load.image('bullet', 'images/scratch-laser.png');
+    game.load.image('ship', 'images/scratch-spaceship.png');
+    game.load.image('meteor', 'images/scratch-meteor.png')
+}
+
+// Declare variables for spaceship, bullets, and meteors
+var spaceShip: Phaser.Sprite;
+var spaceShipBody: Phaser.Physics.Arcade.Body;
+
+var bullets: Phaser.Group;
+var bulletTime = 0;     // Helper storing the time when next bullet can be fired
+
+var meteors: Phaser.Group;
+var nextMeteorTime = 0; // Helper storing the time when next meteor should appear
+
+var cursors: Phaser.CursorKeys; // Cursor keys to control space ship
+var gameIsOver = false; // Indicating whether the game is over (ship hit by meteor)
+
+function create() {
+    // We have a filling background image -> disable clearBeforeRender to make game run faster. 
+    // (see http://phaser.io/docs/2.4.2/PIXI.CanvasRenderer.html#clearBeforeRender for details)
+    game.renderer.clearBeforeRender = false;
+
+    //  We want arcade physics.
+    // (see http://phaser.io/docs#arcadephysics for details)
+    game.physics.startSystem(Phaser.Physics.ARCADE);
+
+    //  Add a background
+    game.add.tileSprite(0, 0, game.width, game.height, 'space');
+
+    // Create bullets and meteors
+    bullets = createSpriteGroup("bullet");
+    meteors = createSpriteGroup("meteor");
+
+    // Add the sprite for our space ship.
+    spaceShip = game.add.sprite(
+        game.world.centerX,         // Center ship horizontally           
+        game.world.height * 0.9,    // Put ship in the lower part of the world 
+        'ship');
+    spaceShip.anchor.set(0.5);      // Set origin to middle of the sprite
+    
+    // Enable physics for our space ship and store ship body for later use
+    // (see http://phaser.io/docs#physics for details)
+    game.physics.enable(spaceShip, Phaser.Physics.ARCADE);
+    spaceShipBody = spaceShip.body;
+
+    // Setup game input handling
+    cursors = game.input.keyboard.createCursorKeys();
+    game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
+}
+
+function update() {
+    // Do nothing if game is already over
+    if (gameIsOver) {
+        return;
+    }
+    
+    // Move ship if cursor keys are pressed
+    if (cursors.left.isDown) {
+        spaceShipBody.x -= 5;
+    }
+    else if (cursors.right.isDown) {
+        spaceShipBody.x += 5;
+    }
+
+    // Fire if spacebar is pressed
+    if (game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
+        fireBullet();
+    }
+
+    // Launch new meteors if necessary
+    handleMeteors();
+    
+    // Handle screen wraps
+    screenWrap();
+
+    // Check for overlappings of spaceship and meteors. If there
+    // is an overlap, spacewhip was hit -> game over
+    game.physics.arcade.overlap(spaceShip, meteors, gameOver);
+    
+    // Check for overlappings of bullets and meteors. If there
+    // is an overlap, meteor was hit by a bullet -> remove meteor
+    game.physics.arcade.overlap(bullets, meteors,
+        (bullet, meteor: Phaser.Sprite) => meteor.kill());
+}
+
+function gameOver() {
+    // Set game over indicator
+    gameIsOver = true;
+    
+    // Kill all sprites
+    bullets.forEachExists((b: Phaser.Sprite) => b.kill(), this);
+    meteors.forEachExists((m: Phaser.Sprite) => m.kill(), this);
+    spaceShip.kill();
+
+    // Display "game over" text
+    var text = game.add.text(game.world.centerX, game.world.centerY, "Game Over :-(", { font: "65px Arial", fill: "#ff0044", align: "center" });
+    text.anchor.setTo(0.5, 0.5);
+}
+
+function handleMeteors() {
+    // Check if it is time to launch a new meteor.
+    if (game.time.now > nextMeteorTime) {
+        // Find first meteor that is currently not used
+        var meteor = <Phaser.Sprite>meteors.getFirstExists(false);
+        if (meteor) {
+            // Display meteor at the top of the screen
+            meteor.reset(game.width * Math.random(), meteor.height / 2 * (-1));
+            
+            // Set velocity so that meteor is falling downwards
+            meteor.body.velocity.y = 150 + 150 * Math.random();
+            
+            // Calculate random time for next monitor
+            nextMeteorTime = game.time.now + 500 + 1000 * Math.random();
         }
-        
-        // Declare variables for spaceship, bullets, and meteors
-        var spaceShip: Phaser.Sprite;
-        var spaceShipBody: Phaser.Physics.Arcade.Body;
-        
-        var bullets: Phaser.Group;
-        var bulletTime = 0;     // Helper storing the time when next bullet can be fired
-        
-        var meteors: Phaser.Group;
-        var nextMeteorTime = 0; // Helper storing the time when next meteor should appear
-        
-        var cursors: Phaser.CursorKeys; // Cursor keys to control space ship
-        var gameIsOver = false; // Indicating whether the game is over (ship hit by meteor)
-        
-        function create() {
-            // We have a filling background image -> disable clearBeforeRender to make game run faster. 
-            // (see http://phaser.io/docs/2.4.2/PIXI.CanvasRenderer.html#clearBeforeRender for details)
-            game.renderer.clearBeforeRender = false;
-        
-            //  We want arcade physics.
-            // (see http://phaser.io/docs#arcadephysics for details)
-            game.physics.startSystem(Phaser.Physics.ARCADE);
-        
-            //  Add a background
-            game.add.tileSprite(0, 0, game.width, game.height, 'space');
-        
-            // Create bullets and meteors
-            bullets = createSpriteGroup("bullet");
-            meteors = createSpriteGroup("meteor");
-        
-            // Add the sprite for our space ship.
-            spaceShip = game.add.sprite(
-                game.world.centerX,         // Center ship horizontally           
-                game.world.height * 0.9,    // Put ship in the lower part of the world 
-                'ship');
-            spaceShip.anchor.set(0.5);      // Set origin to middle of the sprite
+    }
+}
+
+function fireBullet() {
+    // Check if it is time to launch a new bullet.
+    if (game.time.now > bulletTime) {
+        // Find the first unused (=unfired) bullet
+        var bullet = <Phaser.Sprite>bullets.getFirstExists(false);
+        if (bullet) {
+            // Display bullet at the current place of the space ship
+            bullet.reset(spaceShip.x, spaceShip.y);
             
-            // Enable physics for our space ship and store ship body for later use
-            // (see http://phaser.io/docs#physics for details)
-            game.physics.enable(spaceShip, Phaser.Physics.ARCADE);
-            spaceShipBody = spaceShip.body;
-        
-            // Setup game input handling
-            cursors = game.input.keyboard.createCursorKeys();
-            game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
+            // Set velocity so that meteor is flying upwards
+            bullet.body.velocity.y = -400;
+            
+            // Set next time when a new bullet can be fired
+            bulletTime = game.time.now + 50;
         }
-        
-        function update() {
-            // Do nothing if game is already over
-            if (gameIsOver) {
-                return;
-            }
-            
-            // Move ship if cursor keys are pressed
-            if (cursors.left.isDown) {
-                spaceShipBody.x -= 5;
-            }
-            else if (cursors.right.isDown) {
-                spaceShipBody.x += 5;
-            }
-        
-            // Fire if spacebar is pressed
-            if (game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
-                fireBullet();
-            }
-        
-            // Launch new meteors if necessary
-            handleMeteors();
-            
-            // Handle screen wraps
-            screenWrap();
-        
-            // Check for overlappings of spaceship and meteors. If there
-            // is an overlap, spacewhip was hit -> game over
-            game.physics.arcade.overlap(spaceShip, meteors, gameOver);
-            
-            // Check for overlappings of bullets and meteors. If there
-            // is an overlap, meteor was hit by a bullet -> remove meteor
-            game.physics.arcade.overlap(bullets, meteors,
-                (bullet, meteor: Phaser.Sprite) => meteor.kill());
-        }
-        
-        function gameOver() {
-            // Set game over indicator
-            gameIsOver = true;
-            
-            // Kill all sprites
-            bullets.forEachExists((b: Phaser.Sprite) => b.kill(), this);
-            meteors.forEachExists((m: Phaser.Sprite) => m.kill(), this);
-            spaceShip.kill();
-        
-            // Display "game over" text
-            var text = game.add.text(game.world.centerX, game.world.centerY, "Game Over :-(", { font: "65px Arial", fill: "#ff0044", align: "center" });
-            text.anchor.setTo(0.5, 0.5);
-        }
-        
-        function handleMeteors() {
-            // Check if it is time to launch a new meteor.
-            if (game.time.now > nextMeteorTime) {
-                // Find first meteor that is currently not used
-                var meteor = <Phaser.Sprite>meteors.getFirstExists(false);
-                if (meteor) {
-                    // Display meteor at the top of the screen
-                    meteor.reset(game.width * Math.random(), meteor.height / 2 * (-1));
-                    
-                    // Set velocity so that meteor is falling downwards
-                    meteor.body.velocity.y = 150 + 150 * Math.random();
-                    
-                    // Calculate random time for next monitor
-                    nextMeteorTime = game.time.now + 500 + 1000 * Math.random();
-                }
-            }
-        }
-        
-        function fireBullet() {
-            // Check if it is time to launch a new bullet.
-            if (game.time.now > bulletTime) {
-                // Find the first unused (=unfired) bullet
-                var bullet = <Phaser.Sprite>bullets.getFirstExists(false);
-                if (bullet) {
-                    // Display bullet at the current place of the space ship
-                    bullet.reset(spaceShip.x, spaceShip.y);
-                    
-                    // Set velocity so that meteor is flying upwards
-                    bullet.body.velocity.y = -400;
-                    
-                    // Set next time when a new bullet can be fired
-                    bulletTime = game.time.now + 50;
-                }
-            }
-        
-        }
-        
-        function screenWrap() {
-            // Check if spaceship would move out of left world bounds
-            if ((spaceShip.x - spaceShip.width / 2) < 0) {
-                spaceShip.x = spaceShip.width / 2;
-            }
-            // Check if spaceship would move out of right world bounds
-            else if (spaceShip.x > (game.world.width - spaceShip.width / 2)) {
-                spaceShip.x = game.world.width - spaceShip.width / 2;
-            }
-            
-            // Kill bullets and meteors that are out of the world's bound
-            bullets.forEachExists(b => { if ((b.y - b.height / 2) < 0) { b.kill(); } }, this);
-            meteors.forEachExists(m => { if ((m.y - m.height / 2) > game.height) { m.kill(); } }, this);
-        }
-        
-        function createSpriteGroup(imageName: string): Phaser.Group {
-            // Create bullets and meteors in a group.  
-            // (see http://phaser.io/docs/2.4.2/Phaser.GameObjectFactory.html#group for details)
-            var group = game.add.group();
-            
-            // Enable body and physics
-            group.enableBody = true;
-            group.physicsBodyType = Phaser.Physics.ARCADE;
-            
-            // Note that we are creating 40 items on stock so that we do not have to create
-            // items while the game loop is running. This enhances performance of our game. 
-            // Items are going to be displayed when needed.
-            group.createMultiple(40, imageName);
-            
-            // Set origin to middle of the sprite (50% width, 50% height)
-            group.setAll('anchor.x', 0.5);
-            group.setAll('anchor.y', 0.5);
-        
-            return group;
-        }
+    }
+
+}
+
+function screenWrap() {
+    // Check if spaceship would move out of left world bounds
+    if ((spaceShip.x - spaceShip.width / 2) < 0) {
+        spaceShip.x = spaceShip.width / 2;
+    }
+    // Check if spaceship would move out of right world bounds
+    else if (spaceShip.x > (game.world.width - spaceShip.width / 2)) {
+        spaceShip.x = game.world.width - spaceShip.width / 2;
+    }
+    
+    // Kill bullets and meteors that are out of the world's bound
+    bullets.forEachExists(b => { if ((b.y - b.height / 2) < 0) { b.kill(); } }, this);
+    meteors.forEachExists(m => { if ((m.y - m.height / 2) > game.height) { m.kill(); } }, this);
+}
+
+function createSpriteGroup(imageName: string): Phaser.Group {
+    // Create bullets and meteors in a group.  
+    // (see http://phaser.io/docs/2.4.2/Phaser.GameObjectFactory.html#group for details)
+    var group = game.add.group();
+    
+    // Enable body and physics
+    group.enableBody = true;
+    group.physicsBodyType = Phaser.Physics.ARCADE;
+    
+    // Note that we are creating 40 items on stock so that we do not have to create
+    // items while the game loop is running. This enhances performance of our game. 
+    // Items are going to be displayed when needed.
+    group.createMultiple(40, imageName);
+    
+    // Set origin to middle of the sprite (50% width, 50% height)
+    group.setAll('anchor.x', 0.5);
+    group.setAll('anchor.y', 0.5);
+
+    return group;
+}
+```
 
 1. In der Funktion `preload` werden einige Bilddateien referenziert. Du kannst diese von [Github](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/web/space-shooter){:target="_blank"} herunterladen. **Speichere sie in dem Ordner `client/images`**.
 
