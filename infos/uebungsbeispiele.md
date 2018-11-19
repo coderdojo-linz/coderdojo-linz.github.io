@@ -90,6 +90,8 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Geisterspiel](/trainingsanleitungen/python/python-geisterspiel.html)
 1. [Unsinnige Sätze](/trainingsanleitungen/python/python-unsinnige-saetze.html)
 1. [Zahlen raten](/trainingsanleitungen/python/python-zahlenraten.html)
+1. [Zahlen raten - Teil 2](/trainingsanleitungen/python/python-zahlenraten-2.html)
+1. [Schriftliches Multiplizieren](/trainingsanleitungen/python/python-schriftlich-multiplizieren.html)
 
 ## C# (C Sharp)
 
