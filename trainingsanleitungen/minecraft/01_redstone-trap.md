@@ -6,12 +6,12 @@ excerpt_separator: "<!--more-->"
 ---
 
 # Eine einfache Falle mit Redstone
-In diesem Besipiel werden wir eine hinterhältige Falle bauen die Minecraft-Monster einfach zerquetscht.
+In diesem Beispiel werden wir eine hinterhältige Falle bauen die Minecraft-Monster einfach zerquetscht.
 Dazu müssen wir die Creeper und/oder Zombies einfach in einen Gang locken. Eignet sich auch zum [looten](https://www.zos-gaming.de/looten/)
 
 <!--more-->
 ## Vorbereitung
-Was wir dafür benötigen ist in erster linie Cobblestone (Bruchstein), 2-3 Pistons (Kolben), einen Schalter, eine Pressure Plate (Druckplatte) und etwas Redstone. 
+Was wir dafür benötigen ist in erster linie Cobblestone (Bruchstein), 2-3 Pistons (Kolben), einen Schalter, eine Pressure Plate (Druckplatte) und etwas Redstone.
 
 ![Mindestbestand Inventar](01_redstone-trap/01_inventory-begin.png)
 
@@ -45,5 +45,3 @@ Besser wäre es die Falle ein wenig zu verzögern. Das geht mit Redstone-Repeate
 <img src="attention_small.png" alt="Achtung" style="vertical-align: text-top; "/> die Repeater müssen in die richtige Richtung zeigen, sonst funktioniert es nicht.
 
 Durch Rechtsklick auf die Repeater kann man eine Verzögerung in 3 Stufen einstellen. Damit hat der Creeper dann genug Zeit um in die Falle hineinzugehen, bevor sie zuschnappt. Probiert es einfach aus.
-
-
