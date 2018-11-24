@@ -50,7 +50,7 @@ mit `type(zahlMax_text)` bzw.
 anzeigen lässt, erhält man folgende Ausgabe:
 
 ```
-  &lt;class 'str'>
+  <class 'str'>
 ```
 
 In Python 3 sind alle vordefinierten Typen als Klassen implementiert, das heißt sie unterscheiden sich in der Verwendung nicht
@@ -67,7 +67,7 @@ Wenn man sich den Typ einer ganzen Zahl z.B. mit
 anzeigen lässt, erhält man folgende Ausgabe:
 
 ```
-  &lt;class 'int'>
+  <class 'int'>
 ```
 
 Die Funktion zum Umwandeln in eine ganze Zahl heißt auch `int`:
@@ -80,7 +80,7 @@ Wenn wir uns jetzt die Variable `zahlMax` nach einer Eingabe von z.B. `30` zusam
 erhalten wir 
 
 ```
-30 &lt;class 'int'>
+30 <class 'int'>
 ```
 
 
