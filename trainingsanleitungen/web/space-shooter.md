@@ -133,70 +133,72 @@ Wie erwähnt verwenden wir Gulp, um unseren TypeScript-Code in JavaScript zu kom
 
 1. Erstelle die Datei *Gulpfile.js* mit [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} und füge folgenden Code ein.
 
-        /// <binding ProjectOpened='sass:watch, typescript:watch' />
-        	// Include all the necessary plugins
-        var gulp = require("gulp");
-        var concat = require("gulp-concat");
-        var uglify = require("gulp-uglify");
-        var del = require("del");
-        var ts = require("gulp-typescript");
-        var sourcemaps = require("gulp-sourcemaps");
-        var changed = require("gulp-changed");
-        var newer = require('gulp-newer');
-        var debug = require("gulp-debug");
+```javascript
+/// <binding ProjectOpened='sass:watch, typescript:watch' />
+    // Include all the necessary plugins
+var gulp = require("gulp");
+var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
+var del = require("del");
+var ts = require("gulp-typescript");
+var sourcemaps = require("gulp-sourcemaps");
+var changed = require("gulp-changed");
+var newer = require('gulp-newer');
+var debug = require("gulp-debug");
+
+// Helper arrays holding file and folder names for later use in this gruntfile
+// External script dependencies
+var dependencyScripts = ["node_modules/phaser-ce/build/phaser.js"];
+// TypeScript sources
+var typescriptFiles = ["./client/**/*.ts"];
+
+// Delete build targets to clean up
+gulp.task("clean", function () {
+    del.sync(["./client/**/*.js", "./server.js"]);
+});
+
+// Combine all external scripts (don't minify as this is for learning purposes)
+gulp.task("dependencyScriptsAndStyles", [], function () {
+    // External scripts
+    gulp.src(dependencyScripts)
+        .pipe(newer("client/scripts/dependencies.js"))
+        .pipe(concat("dependencies.js"))
+        .pipe(gulp.dest("client/scripts/"));
+});
+
+// Process TypeScript files
+gulp.task("typescript", [], function () {
+    gulp.src("./*.ts")
+        .pipe(newer("server.js"))
+        .pipe(sourcemaps.init())
+        .pipe(ts({
+            out: "server.js",
+            target: "ES5",
+            
+        }))
+        .pipe(sourcemaps.write("./"))
+        .pipe(gulp.dest("./"));
         
-        // Helper arrays holding file and folder names for later use in this gruntfile
-        // External script dependencies
-        var dependencyScripts = ["node_modules/phaser-ce/build/phaser.js"];
-        // TypeScript sources
-        var typescriptFiles = ["./client/**/*.ts"];
-        
-        // Delete build targets to clean up
-        gulp.task("clean", function () {
-        	del.sync(["./client/**/*.js", "./server.js"]);
-        });
-        
-        // Combine all external scripts (don't minify as this is for learning purposes)
-        gulp.task("dependencyScriptsAndStyles", [], function () {
-        	// External scripts
-        	gulp.src(dependencyScripts)
-        		.pipe(newer("client/scripts/dependencies.js"))
-        		.pipe(concat("dependencies.js"))
-        		.pipe(gulp.dest("client/scripts/"));
-        });
-        
-        // Process TypeScript files
-        gulp.task("typescript", [], function () {
-        	gulp.src("./*.ts")
-        		.pipe(newer("server.js"))
-        		.pipe(sourcemaps.init())
-        		.pipe(ts({
-        			out: "server.js",
-        			target: "ES5",
-        			
-        		}))
-        		.pipe(sourcemaps.write("./"))
-        		.pipe(gulp.dest("./"));
-        		
-        	return gulp.src(typescriptFiles)
-        		.pipe(newer("client/scripts/app.js"))
-        		.pipe(sourcemaps.init())
-        		.pipe(ts({
-        			out: "app.js",
-        			target: "ES5",
-        			
-        		}))
-        		.pipe(sourcemaps.write("./"))
-        		.pipe(gulp.dest("client/scripts"));
-        });
-        
-        // Watch tasks for TypeScript sources
-        gulp.task("typescript:watch", function () {
-        	gulp.watch(["./*.ts", "./client/**/*.ts"], ["typescript"]);
-        });
-        
-        // Set a default tasks
-        gulp.task("default", ["clean", "typescript", "dependencyScriptsAndStyles"], function () { });
+    return gulp.src(typescriptFiles)
+        .pipe(newer("client/scripts/app.js"))
+        .pipe(sourcemaps.init())
+        .pipe(ts({
+            out: "app.js",
+            target: "ES5",
+            
+        }))
+        .pipe(sourcemaps.write("./"))
+        .pipe(gulp.dest("client/scripts"));
+});
+
+// Watch tasks for TypeScript sources
+gulp.task("typescript:watch", function () {
+    gulp.watch(["./*.ts", "./client/**/*.ts"], ["typescript"]);
+});
+
+// Set a default tasks
+gulp.task("default", ["clean", "typescript", "dependencyScriptsAndStyles"], function () { });
+```
 
 1. **Sprich mit deinem Mentor, wenn du Fragen zum Code hast**.
 
