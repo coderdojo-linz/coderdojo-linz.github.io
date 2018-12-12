@@ -3,7 +3,8 @@ layout: sushi
 title: Scratch Pakete Fangen
 description: Fange die Weihnachts-Pakete bevor sie auf den Boden fallen
 scratch-images:
-- 
+- scratch-pakete-fangen/spiel.png
+- scratch-pakete-fangen/script_1_3.png
 scratch-level: 1
 scratch-sprites: 4
 scratch-scripts: 4
