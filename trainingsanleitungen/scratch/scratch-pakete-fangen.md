@@ -37,6 +37,12 @@ ich habe ein rotes X und einen Stern dafür genommen. Du findest sie auch in der
 Danach können wir auch schon mit den Skripten beginnen.
 ## Steuerung der Pakete
 
+![](scratch-pakete-fangen/daten_1.png){:style="float:right;"}
+Wir benötigen ein paar Variablen, um
+* zu zählen wie viele Pakete wir schon gefangen haben
+* uns zu merken wie viele Pakete bereits zerbrochen sind
+* eine Möglichkeit zu haben die Geschwindigkeit und damit die Schwierigkeit einzustellen
+
 ![](scratch-pakete-fangen/script_1_1.png){:style="float:right;"}
 Als erstes Stellen wir die Basiseinstellungen ein und werden alle 0,5 - 3 Sekunden ein neues Paket erzeugen. Dieses Paket wird dann dem Förderband entlang gleiten.
 
