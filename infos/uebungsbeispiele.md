@@ -148,6 +148,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Lötfibel](https://www.wetec.de/files/wetec_dl_datenblatt_technik-0002-file-loetfibel_rev_2012_deu.pdf){:target="blank"}
 1. [Deine erste Elektronik-Schaltung](/trainingsanleitungen/loeten/wechselblinker.html)
 1. [BlinkenRocket V2 Anleitung](/trainingsanleitungen/loeten/BlinkenRocket-manual.pdf){:target="blank"}
+1. [Aufbauanleitung für Kartonbausatz](http://www.electronicum.at/service/aufbauanleitung_karton.pdf){:target="blank"}
 
 ## Änderungen und Ergänzungen
 
