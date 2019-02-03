@@ -114,6 +114,10 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 
 1. [Deine erste Elektronik-Schaltung](/trainingsanleitungen/loeten/wechselblinker.html)
 
+## C
+
+1. [Space Shooter](/trainingsanleitungen/exercises/tree/master/c/space-shooter.md)
+
 ## Änderungen und Ergänzungen
 
 Möchtet ihr an den Beispielen etwas ändern? Habt ihr einen Fehler entdeckt? Möchtet ihr eigene Beispiele hinzufügen? Diese Webseite steht vollständig im Quelltext auf Github unter [https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen){:target="_blank"} zur Verfügung. Unsere regelmäßigen Mentoren können jederzeit Schreibzugriff haben. Alle anderen bitten wir bei Änderungswünschen um [Pull-Requests](https://help.github.com/articles/using-pull-requests/){:target="_blank"}.
