@@ -48,6 +48,8 @@ Der Server muss die HTML-Dateien an die verbundenen Browser schicken. Für Node.
 *  [express](https://www.npmjs.com/package/express){:target="_blank"}
 *  [http](https://nodejs.org/api/http.html){:target="_blank"}
 
+Um eventuellen Fehlermeldungen vorzubeugen ist es ratsam im Verzeichnis *C:\Code\Chat* zuerst den Befehl `npm init` auszuführen. Die nachfolgenden Fragen einfach mit `<Enter>` bestätigen.
+
 Das *http* Modul ist in Node.js immer vorhanden. *express* müssen wir installieren. Das geschieht in der Kommandozeile mit dem Befehl `npm install express` (*Achtung:* Bevor du ihn ausführst, stelle sicher, dass du im Verzeichnis *C:\Code\Chat* bist).
 
 *npm* steht für *Node.js Package Manager*, also ein Programm zum Verwalten von Node.js Paketen. Mehr über NPM kannst du [hier](https://docs.npmjs.com/ "NPM Dokumentation"){:target="_blank"} erfahren. Du brauchst aber für dieses Beispiel kein Detailwissen über NPM. Das kannst du auch gerne später nachlesen.
@@ -64,39 +66,43 @@ Wenn du den *npm* Befehl ausgeführt hast, müsste deine Verzeichnisstruktur so 
 
 3. Einen Webserver zu programmieren ist mit Node.js nicht schwierig. Es reichen ein paar Zeilen Code. Hier sind sie. Schreibe sie in deine *server.js* Datei und achte besonders auf die enthaltenen Kommentarzeilen:
 
-        // express und http Module importieren. Sie sind dazu da, die HTML-Dateien
-        // aus dem Ordner "public" zu veröffentlichen.
-        var express = require('express');
-        var app = express();
-        var server = require('http').createServer(app);
-        var port = 3000;
-        
-        // Mit diesem Kommando starten wir den Webserver.
-        server.listen(port, function () {
-        	// Wir geben einen Hinweis aus, dass der Webserer läuft.
-        	console.log('Webserver läuft und hört auf Port %d', port);
-        });
-        
-        // Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
-        // im Ordner "public" zu finden sind.
-        app.use(express.static(__dirname + '/public'));
-        
-        // Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
+```javascript
+// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
+// aus dem Ordner "public" zu veröffentlichen.
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+var port = 3000;
+
+// Mit diesem Kommando starten wir den Webserver.
+server.listen(port, function () {
+    // Wir geben einen Hinweis aus, dass der Webserer läuft.
+    console.log('Webserver läuft und hört auf Port %d', port);
+});
+
+// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
+// im Ordner "public" zu finden sind.
+app.use(express.static(__dirname + '/public'));
+
+// Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
+```
 
 ## Den Clientcode erstellen
 
 Noch können wir nichts ausprobieren, da unser *public* Verzeichnis leer ist. Erstelle daher im *public* Verzeichnis eine Datei namens *chat.html* und füge zum Testen folgenden Inhalt ein. Wie du siehst enthält die Datei nur eine Begrüßung, sonst nichts.
 
-        <!doctype html>
-        <html lang="de">
-        <head>
-            <meta charset="UTF-8">
-            <title>CoderDojo Linz | Chat Beispiel</title>
-        </head>
-        <body>
-            <h1>Hallo Chat!</h1>
-        </body>
-        </html>
+```html
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>CoderDojo Linz | Chat Beispiel</title>
+</head>
+<body>
+    <h1>Hallo Chat!</h1>
+</body>
+</html>
+```
 
 ## Ausprobieren
 

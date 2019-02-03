@@ -31,234 +31,240 @@ Die Lösung ist eine Technologie namens [Web Sockets](https://de.wikipedia.org/w
  
 3. Hier ist der Code für unseren Chat-Server. Schreibe ihn in deine *server.js* Datei und achte besonders auf die enthaltenen Kommentarzeilen. Wenn du den Code abtippst, musst du die Kommentarzeilen nicht unbedingt mit eingeben.
 
-        // express und http Module importieren. Sie sind dazu da, die HTML-Dateien
-        // aus dem Ordner "public" zu veröffentlichen.
-        var express = require('express');
-        var app = express();
-        var server = require('http').createServer(app);
-        
-        // Mit dieser zusätzlichen Zeile bringen wir Socket.io in unseren Server.
-        var io = require('socket.io')(server);
-        
-        // Mit diesem Kommando starten wir den Webserver.
-        var port = process.env.PORT || 3000;
-        server.listen(port, function () {
-        	// Wir geben einen Hinweis aus, dass der Webserer läuft.
-        	console.log('Webserver läuft und hört auf Port %d', port);
-        });
-        
-        // Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
-        // im Ordner "public" zu finden sind.
-        app.use(express.static(__dirname + '/public'));
-        
-        // === Ab hier folgt der Code für den Chat-Server
-        
-        // Hier sagen wir Socket.io, dass wir informiert werden wollen,
-        // wenn sich etwas bei den Verbindungen ("connections") zu 
-        // den Browsern tut. 
-        io.on('connection', function (socket) {
-          // Die variable "socket" repräsentiert die aktuelle Web Sockets
-          // Verbindung zu jeweiligen Browser client.
-          
-          // Kennzeichen, ob der Benutzer sich angemeldet hat 
-          var addedUser = false;
-        
-          // Funktion, die darauf reagiert, wenn sich der Benutzer anmeldet
-          socket.on('add user', function (username) {
-            // Benutzername wird in der aktuellen Socket-Verbindung gespeichert
-            socket.username = username;
-            addedUser = true;
-            
-            // Dem Client wird die "login"-Nachricht geschickt, damit er weiß,
-            // dass er erfolgreich angemeldet wurde.
-            socket.emit('login');
-            
-            // Alle Clients informieren, dass ein neuer Benutzer da ist.
-            socket.broadcast.emit('user joined', socket.username);
-          });
-        
-          // Funktion, die darauf reagiert, wenn ein Benutzer eine Nachricht schickt
-          socket.on('new message', function (data) {
-            // Sende die Nachricht an alle Clients
-            socket.broadcast.emit('new message', {
-              username: socket.username,
-              message: data
-            });
-          });
-        
-          // Funktion, die darauf reagiert, wenn sich ein Benutzer abmeldet.
-          // Benutzer müssen sich nicht explizit abmelden. "disconnect"
-          // tritt auch auf wenn der Benutzer den Client einfach schließt.
-          socket.on('disconnect', function () {
-            if (addedUser) {
-              // Alle über den Abgang des Benutzers informieren
-              socket.broadcast.emit('user left', socket.username);
-            }
-          });
-        });
+```javascript
+// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
+// aus dem Ordner "public" zu veröffentlichen.
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+
+// Mit dieser zusätzlichen Zeile bringen wir Socket.io in unseren Server.
+var io = require('socket.io')(server);
+
+// Mit diesem Kommando starten wir den Webserver.
+var port = process.env.PORT || 3000;
+server.listen(port, function () {
+  // Wir geben einen Hinweis aus, dass der Webserer läuft.
+  console.log('Webserver läuft und hört auf Port %d', port);
+});
+
+// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
+// im Ordner "public" zu finden sind.
+app.use(express.static(__dirname + '/public'));
+
+// === Ab hier folgt der Code für den Chat-Server
+
+// Hier sagen wir Socket.io, dass wir informiert werden wollen,
+// wenn sich etwas bei den Verbindungen ("connections") zu 
+// den Browsern tut. 
+io.on('connection', function (socket) {
+  // Die variable "socket" repräsentiert die aktuelle Web Sockets
+  // Verbindung zu jeweiligen Browser client.
+  
+  // Kennzeichen, ob der Benutzer sich angemeldet hat 
+  var addedUser = false;
+
+  // Funktion, die darauf reagiert, wenn sich der Benutzer anmeldet
+  socket.on('add user', function (username) {
+    // Benutzername wird in der aktuellen Socket-Verbindung gespeichert
+    socket.username = username;
+    addedUser = true;
+    
+    // Dem Client wird die "login"-Nachricht geschickt, damit er weiß,
+    // dass er erfolgreich angemeldet wurde.
+    socket.emit('login');
+    
+    // Alle Clients informieren, dass ein neuer Benutzer da ist.
+    socket.broadcast.emit('user joined', socket.username);
+  });
+
+  // Funktion, die darauf reagiert, wenn ein Benutzer eine Nachricht schickt
+  socket.on('new message', function (data) {
+    // Sende die Nachricht an alle Clients
+    socket.broadcast.emit('new message', {
+      username: socket.username,
+      message: data
+    });
+  });
+
+  // Funktion, die darauf reagiert, wenn sich ein Benutzer abmeldet.
+  // Benutzer müssen sich nicht explizit abmelden. "disconnect"
+  // tritt auch auf wenn der Benutzer den Client einfach schließt.
+  socket.on('disconnect', function () {
+    if (addedUser) {
+      // Alle über den Abgang des Benutzers informieren
+      socket.broadcast.emit('user left', socket.username);
+    }
+  });
+});
+```
 
 ## Den Clientcode programmieren
 
 1. Der Client besteht aus einer HTML-Datei und einer JavaScript-Datei. Beginnen wir mit dem HTML. Hier ist der Code, den du in *public/chat.html* schreiben musst. Achte besonders auf die Kommentare. 
 
-        <!doctype html>
-        <html lang="de">
-        <head>
-        	<meta charset="UTF-8">
-        	<title>CoderDojo Linz | Chat Beispiel</title>
-          <style>
-            /* Globale Schriftart setzen (weniger "schnörkelig") */
-            body {
-              font-family: sans-serif;
-            }
-            
-            /* Chat-Seite initial ausblenden */
-            .chat.page {
-              display: none;
-            }
-            
-            /* Format für Benutzernamen bei der Ausgabe einer Chat-Nachricht */
-            .username {
-              font-weight: bold;
-              margin-right: 5px;
-            }
-          </style>
-        </head>
-        <body>
-          <!-- Login-Seite -->
-          <div class="login page">
-            <h3 class="title">Wie ist dein Name?</h3>
-            <input class="usernameInput" type="text" maxlength="14" />
-          </div>
-        
-          <!-- Chat-Seite (initial ausgeblendet) -->
-          <div class="chat page">
-            <h3 class="title">Was möchtest du allen anderen mitteilen?</h3>
-            <input class="inputMessage" placeholder="Type here..."/>
-            <ul class="messages"></ul>
-          </div>
-        
-          <!-- Programmcode auf der Client-Seite -->
-          <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-          <script src="/socket.io/socket.io.js"></script>
-          <script src="/main.js"></script>
-        </body>
-        </html>
+```html
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>CoderDojo Linz | Chat Beispiel</title>
+  <style>
+    /* Globale Schriftart setzen (weniger "schnörkelig") */
+    body {
+      font-family: sans-serif;
+    }
+    
+    /* Chat-Seite initial ausblenden */
+    .chat.page {
+      display: none;
+    }
+    
+    /* Format für Benutzernamen bei der Ausgabe einer Chat-Nachricht */
+    .username {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Login-Seite -->
+  <div class="login page">
+    <h3 class="title">Wie ist dein Name?</h3>
+    <input class="usernameInput" type="text" maxlength="14" />
+  </div>
+
+  <!-- Chat-Seite (initial ausgeblendet) -->
+  <div class="chat page">
+    <h3 class="title">Was möchtest du allen anderen mitteilen?</h3>
+    <input class="inputMessage" placeholder="Type here..."/>
+    <ul class="messages"></ul>
+  </div>
+
+  <!-- Programmcode auf der Client-Seite -->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
+```
 
 2. Ganz am Ende wird auf die JavaScript-Datei *main.js* verwiesen. Die musst du als nächstes erstellen. Hier ist der Code. Wie immer gilt: Gehe die enthaltenen Kommentare Schritt für Schritt durch.
 
-        $(function () {
-          // Hilfsvariablen für HTML-Elemente werden mit Hilfe von JQuery gesetzt.
-          var $window = $(window);
-          var $usernameInput = $('.usernameInput'); // Eingabefeld für Benutzername
-          var $messages = $('.messages');           // Liste mit Chat-Nachrichten
-          var $inputMessage = $('.inputMessage');   // Eingabefeld für Chat-Nachricht
-          var $loginPage = $('.login.page');        // Login-Seite
-          var $chatPage = $('.chat.page');          // Chat-Seite
-        
-          var username;                             // Aktueller Benutzername
-          var connected = false;                    // Kennzeichen ob angemeldet
-          
-          // Eingabefeld für Benutzername erhält den Fokus
-          var $currentInput = $usernameInput.focus();
-          
-          // Socket.io Objekt anlegen
-          var socket = io();
-        
-          // ==== Code für Benutzerschnittstelle
-        
-          // Tastendruck behandeln
-          $window.keydown(function (event) {
-            // Die Return-Taste (Ascii 13) behandeln wir speziell
-            if (event.which === 13) {
-              if (username) {
-                // Wenn der Benutzername schon gesetzt ist, handelt es sich
-                // um eine Chat-Nachricht.
-                sendMessage();
-              } else {
-                // Wenn der Benutzername noch nicht gesetzt ist, hat sich
-                // der Benutzer gerade angemeldet.
-                setUsername();
-              }
-            }
-          });
-        
-          // Benutzername wird gesetzt
-          function setUsername() {
-            // Benutzername aus Eingabefeld holen (ohne Leerzeichen am Anfang oder Ende).
-            username = $usernameInput.val().trim();
-        
-            // Prüfen, ob der Benutzername nicht leer ist
-            if (username) {
-              // Loginmaske ausblenden und Chat-Seite einblenden
-              $loginPage.fadeOut();
-              $chatPage.show();
-        
-              // Chat-Nachricht wird neues, aktuelles Eingabefeld
-              $currentInput = $inputMessage.focus();
-        
-              // Server mit Socket.io über den neuen Benutzer informieren. Wenn die
-              // Anmeldung klappt wird der Server die "login"-Nachricht zurückschicken.
-              socket.emit('add user', username);
-            }
-          }
-        
-          // Chat-Nachricht versenden
-          function sendMessage() {
-            // Nachricht aus Eingabefeld holen (ohne Leerzeichen am Anfang oder Ende).
-            var message = $inputMessage.val().trim();
-        
-            // Prüfen, ob die Nachricht nicht leer ist und wir verbunden sind.
-            if (message && connected) {
-              // Eingabefeld auf leer setzen
-              $inputMessage.val('');
-        
-              // Chat-Nachricht zum Chatprotokoll hinzufügen
-              addChatMessage({ username: username, message: message });
-              
-              // Server über neue Nachricht informieren. Der Server wird die Nachricht
-              // an alle anderen Clients verteilen.
-              socket.emit('new message', message);
-            }
-          }
-        
-          // Protokollnachricht zum Chat-Protokoll anfügen
-          function log(message) {
-            var $el = $('<li>').addClass('log').text(message);
-            $messages.append($el);
-          }
-        
-          // Chat-Nachricht zum Chat-Protokoll anfügen
-          function addChatMessage(data) {
-            var $usernameDiv = $('<span class="username"/>').text(data.username);
-            var $messageBodyDiv = $('<span class="messageBody">').text(data.message);
-            var $messageDiv = $('<li class="message"/>').append($usernameDiv, $messageBodyDiv);
-            $messages.append($messageDiv);
-          }
-        
-          // ==== Code für Socket.io Events
-        
-          // Server schickt "login": Anmeldung war erfolgreich
-          socket.on('login', function (data) {
-            connected = true;
-            log("Willkommen beim Chat!");
-          });
-        
-          // Server schickt "new message": Neue Nachricht zum Chat-Protokoll hinzufügen
-          socket.on('new message', function (data) {
-            addChatMessage(data);
-          });
-        
-          // Server schickt "user joined": Neuen Benutzer im Chat-Protokoll anzeigen
-          socket.on('user joined', function (data) {
-            log(data + ' joined');
-          });
-        
-          // Server schickt "user left": Benutzer, der gegangen ist, im Chat-Protokoll anzeigen
-          socket.on('user left', function (data) {
-            log(data + ' left');
-          });
-        });
+```javascript
+$(function () {
+  // Hilfsvariablen für HTML-Elemente werden mit Hilfe von JQuery gesetzt.
+  var $window = $(window);
+  var $usernameInput = $('.usernameInput'); // Eingabefeld für Benutzername
+  var $messages = $('.messages');           // Liste mit Chat-Nachrichten
+  var $inputMessage = $('.inputMessage');   // Eingabefeld für Chat-Nachricht
+  var $loginPage = $('.login.page');        // Login-Seite
+  var $chatPage = $('.chat.page');          // Chat-Seite
+
+  var username;                             // Aktueller Benutzername
+  var connected = false;                    // Kennzeichen ob angemeldet
+  
+  // Eingabefeld für Benutzername erhält den Fokus
+  var $currentInput = $usernameInput.focus();
+  
+  // Socket.io Objekt anlegen
+  var socket = io();
+
+  // ==== Code für Benutzerschnittstelle
+
+  // Tastendruck behandeln
+  $window.keydown(function (event) {
+    // Die Return-Taste (Ascii 13) behandeln wir speziell
+    if (event.which === 13) {
+      if (username) {
+        // Wenn der Benutzername schon gesetzt ist, handelt es sich
+        // um eine Chat-Nachricht.
+        sendMessage();
+      } else {
+        // Wenn der Benutzername noch nicht gesetzt ist, hat sich
+        // der Benutzer gerade angemeldet.
+        setUsername();
+      }
+    }
+  });
+
+  // Benutzername wird gesetzt
+  function setUsername() {
+    // Benutzername aus Eingabefeld holen (ohne Leerzeichen am Anfang oder Ende).
+    username = $usernameInput.val().trim();
+
+    // Prüfen, ob der Benutzername nicht leer ist
+    if (username) {
+      // Loginmaske ausblenden und Chat-Seite einblenden
+      $loginPage.fadeOut();
+      $chatPage.show();
+
+      // Chat-Nachricht wird neues, aktuelles Eingabefeld
+      $currentInput = $inputMessage.focus();
+
+      // Server mit Socket.io über den neuen Benutzer informieren. Wenn die
+      // Anmeldung klappt wird der Server die "login"-Nachricht zurückschicken.
+      socket.emit('add user', username);
+    }
+  }
+
+  // Chat-Nachricht versenden
+  function sendMessage() {
+    // Nachricht aus Eingabefeld holen (ohne Leerzeichen am Anfang oder Ende).
+    var message = $inputMessage.val().trim();
+
+    // Prüfen, ob die Nachricht nicht leer ist und wir verbunden sind.
+    if (message && connected) {
+      // Eingabefeld auf leer setzen
+      $inputMessage.val('');
+
+      // Chat-Nachricht zum Chatprotokoll hinzufügen
+      addChatMessage({ username: username, message: message });
+      
+      // Server über neue Nachricht informieren. Der Server wird die Nachricht
+      // an alle anderen Clients verteilen.
+      socket.emit('new message', message);
+    }
+  }
+
+  // Protokollnachricht zum Chat-Protokoll anfügen
+  function log(message) {
+    var $el = $('<li>').addClass('log').text(message);
+    $messages.append($el);
+  }
+
+  // Chat-Nachricht zum Chat-Protokoll anfügen
+  function addChatMessage(data) {
+    var $usernameDiv = $('<span class="username"/>').text(data.username);
+    var $messageBodyDiv = $('<span class="messageBody">').text(data.message);
+    var $messageDiv = $('<li class="message"/>').append($usernameDiv, $messageBodyDiv);
+    $messages.append($messageDiv);
+  }
+
+  // ==== Code für Socket.io Events
+
+  // Server schickt "login": Anmeldung war erfolgreich
+  socket.on('login', function (data) {
+    connected = true;
+    log("Willkommen beim Chat!");
+  });
+
+  // Server schickt "new message": Neue Nachricht zum Chat-Protokoll hinzufügen
+  socket.on('new message', function (data) {
+    addChatMessage(data);
+  });
+
+  // Server schickt "user joined": Neuen Benutzer im Chat-Protokoll anzeigen
+  socket.on('user joined', function (data) {
+    log(data + ' joined');
+  });
+
+  // Server schickt "user left": Benutzer, der gegangen ist, im Chat-Protokoll anzeigen
+  socket.on('user left', function (data) {
+    log(data + ' left');
+  });
+});
+```
 
 ## Ausprobieren
 
@@ -283,17 +289,18 @@ Damit nicht jeder einfach in deinem Chat mitlesen kann, kannst du die Applikatio
 
 Jetzt kannst du den Code in server.js um folgende Zeilen erweitern:
 
-
-        // Mit diesem Kommando starten wir den Webserver.
-        var port = process.env.PORT || 3000;
-        app.use(require('express-basic-auth')({
-          users: { 'admin': 'password' }, // vergib hier deine gewünschten Benutzernamen und Passwörter
-          challenge: true
-        }));
-        server.listen(port, function () {
-          // Wir geben einen Hinweis aus, dass der Webserer läuft.
-          console.log('Webserver läuft und hört auf Port %d', port);
-        });
+```javascript
+// Mit diesem Kommando starten wir den Webserver.
+var port = process.env.PORT || 3000;
+app.use(require('express-basic-auth')({
+  users: { 'admin': 'password' }, // vergib hier deine gewünschten Benutzernamen und Passwörter
+  challenge: true
+}));
+server.listen(port, function () {
+  // Wir geben einen Hinweis aus, dass der Webserer läuft.
+  console.log('Webserver läuft und hört auf Port %d', port);
+});
+```
 
 Wenn du den Webserver jetzt wieder mit `node server.js` startest und dann deine Seite `localhost:3000/index.html` öffnest, bekommst zu einen Dialog zum Eingeben deines Usernamen und deines Passworts angezeigt.
 
