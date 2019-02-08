@@ -11,7 +11,7 @@ scratch-scripts: 7
 scratch-data: 7
 ---
 
-# Scratch Affe füttern
+# Scratch Affe füttern <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-slingshot.html" class="change-scratch-version">Scratch 2.0</a>
 
 Drücke die Leertaste, um die Steinschleuder zu laden. Je länger du drückst, desto mehr wird die Steinschleuder gespannt und desto weiter wirfst du.
 
@@ -21,10 +21,10 @@ Das Spiel besteht aus 4 Figuren und 7 Codeblöcken.
 
 ## Figuren anlegen
 
-1. ![Figur löschen](scratch-slingshot-v3/löschen.png){: .right}
+1. ![Figur löschen](scratch-slingshot-v3/loeschen.png){: .right}
 Lösche als erstes die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
 
-1. ![Bühnenbild anlegen](scratch-slingshot-v3/bühne.png){: .right}
+1. ![Bühnenbild anlegen](scratch-slingshot-v3/buehne.png){: .right}
 Lege oder male ein Bühnenbild und die Figuren für die Steinschleuder, die Bananen, den Affen und das Gummiband an. Lege das Gummiband mit dem Pinsel an. Wir brauchen hier keine Figur auszuwählen, da wir das Gummiband später mit Hilfe eines Codeblockes zeichnen werden.
 
 ## Daten

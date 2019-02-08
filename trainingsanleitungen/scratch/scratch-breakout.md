@@ -11,7 +11,7 @@ scratch-scripts: 9
 scratch-data: 7
 ---
 
-# Scratch Breakout
+# Scratch Breakout <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-breakout-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 <div class="row sushi-intro">
 	<div class="col-sm-6"><img alt="Breakout" src="scratch-breakout/11-done.png" /></div>

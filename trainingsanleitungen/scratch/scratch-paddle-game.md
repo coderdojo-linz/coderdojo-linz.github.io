@@ -11,7 +11,7 @@ scratch-scripts: 9
 scratch-data: 2
 ---
 
-# Scratch Paddle Game
+# Scratch Paddle Game <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-paddle-game-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 In dieser Übung baust du ein kleines Spiel, indem du versuchst, einen Ball mit einem Schläger in der Luft zu halten.
 

@@ -11,7 +11,7 @@ scratch-scripts: 13
 scratch-data: 3
 ---
 
-# Die Zauberlehrlinge
+# Die Zauberlehrlinge <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-zauberlehrlinge.html" class="change-scratch-version">Scratch 2.0</a>
 
 Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen. Ihr seid dabei immer abwechselnd an der Reihe einen Zauberspruch zu verschießen. Doch es ist gar nicht so leicht, den anderen zu treffen, man muss genau in die richtige Richtung zielen!
 
@@ -86,7 +86,7 @@ Auch die Skripte von Melley findest du am Ende der Anleitung nochmal, falls du H
 
 So sollte dein Spiel jetzt aussehen, wenn du auf die grüne Fahne klickst. Mit den Pfeiltasten solltest sich die Figur, die gerade dran ist, drehen lassen.
 
-![Die Figuren werden richtig platziert](scratch-zauberlehrlinge-v3/bühne-fertig.png){: .right}
+![Die Figuren werden richtig platziert](scratch-zauberlehrlinge-v3/buehne-fertig.png){: .right}
 
 ## Das Zaubern
 

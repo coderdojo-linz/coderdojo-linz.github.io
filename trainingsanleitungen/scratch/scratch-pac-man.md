@@ -11,7 +11,7 @@ scratch-scripts: 19
 scratch-data: 28
 ---
 
-# Scratch Pac Man
+# Scratch Pac Man <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-pac-man-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 <div class="row sushi-intro">
 	<div class="col-sm-6"><img alt="Pac Man" src="scratch-pac-man/pac-man.png" /></div>

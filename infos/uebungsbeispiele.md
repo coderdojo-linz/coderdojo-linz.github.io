@@ -13,27 +13,27 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Grafisches Programmieren mit Programmierspielen von *Hour of Code* lernen](/trainingsanleitungen/scratch/hour-of-code.html)
 1. [Lege dein eigenes Konto an für Scratch](/trainingsanleitungen/scratch/scratch-konto-anlegen.html)
 1. [Erste Schritte - Lass Scratchy, die Katze, herumlaufen](/trainingsanleitungen/scratch/scratch-erste-schritte.html)
+1. [Fang mich - Kannst du dem Haifisch entkommen?](/trainingsanleitungen/scratch/scratch-fang-mich-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Erzähle eine kurze Geschichte mit Scratch](/trainingsanleitungen/scratch/scratch-geschichte-katze-und-ente.html)
 1. [Male Formen mit verschieden vielen Ecken wie Dreiecke, Vierecke oder Siebenecke](/trainingsanleitungen/scratch/scratch-n-ecke-malen.html)
-1. [Paddle Game - Lass den Ball nicht auf den Boden fallen](/trainingsanleitungen/scratch/scratch-paddle-game.html)
-1. [Space Shooter - Zerstöre die Meteoriten bevor sie dein Raumschiff zerstören](/trainingsanleitungen/scratch/scratch-space-shooter.html)
+1. [Paddle Game - Lass den Ball nicht auf den Boden fallen](/trainingsanleitungen/scratch/scratch-paddle-game-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
+1. [Space Shooter - Zerstöre die Meteoriten bevor sie dein Raumschiff zerstören](/trainingsanleitungen/scratch/scratch-space-shooter-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Space Shooter II - Duell im Weltraum](/trainingsanleitungen/scratch/scratch-space-shooter-2.html)
 1. [Zahlen raten - Wie viele Tipps brauchst du?](/trainingsanleitungen/scratch/scratch-zahlenraten.html)
-1. [Fang mich - Kannst du dem Haifisch entkommen?](/trainingsanleitungen/scratch/scratch-fang-mich.html)
-1. [Breakout - Pulverisiere bunte Mauersteine](/trainingsanleitungen/scratch/scratch-breakout.html)
-1. [Snake - Lass die Schlange die Äpfel aufsammeln](/trainingsanleitungen/scratch/scratch-snake.html)
+1. [Breakout - Pulverisiere bunte Mauersteine](/trainingsanleitungen/scratch/scratch-breakout-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
+1. [Snake - Lass die Schlange die Äpfel aufsammeln](/trainingsanleitungen/scratch/scratch-snake-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Memory - Finde die Paare](/trainingsanleitungen/scratch/scratch-memory.html)
-1. [Die Zauberlehrlinge - Dieses Spiel kannst du gemeinsam mit einem Freund oder einer Freundin spielen](/trainingsanleitungen/scratch/scratch-zauberlehrlinge.html)
-1. [Sterne fangen - Springe hoch, um möglichst viele Sterne zu fangen](/trainingsanleitungen/scratch/scratch-sterne-fangen.html)
-1. [Dragons Realm - Verteidige dein Reich mit Feuerbällen](/trainingsanleitungen/scratch/scratch-dragons-realm.html)
-1. [Steinschleuder - Füttere den Affen mit Bananen](/trainingsanleitungen/scratch/scratch-slingshot.html)
+1. [Die Zauberlehrlinge - Dieses Spiel kannst du gemeinsam mit einem Freund oder einer Freundin spielen](/trainingsanleitungen/scratch/scratch-zauberlehrlinge-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
+1. [Sterne fangen - Springe hoch, um möglichst viele Sterne zu fangen](/trainingsanleitungen/scratch/scratch-sterne-fangen-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
+1. [Dragons Realm - Verteidige dein Reich mit Feuerbällen](/trainingsanleitungen/scratch/scratch-dragons-realm-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
+1. [Steinschleuder - Füttere den Affen mit Bananen](/trainingsanleitungen/scratch/scratch-slingshot-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Weihnachtsspiel - Wie viele Geschenke schaffst du in 60 Sekunden?](/trainingsanleitungen/scratch/scratch-weihnachten.html)
 1. [Sierpinski Dreieck - Male ein Fraktal](/trainingsanleitungen/scratch/scratch-sierpinski-dreieck.html)
-1. [Pac Man - Friss dich durch's Labyrinth](/trainingsanleitungen/scratch/scratch-pac-man.html)
+1. [Pac Man - Friss dich durch's Labyrinth](/trainingsanleitungen/scratch/scratch-pac-man-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [The Game of Life - Erwecke Zellen zum Leben](/trainingsanleitungen/scratch/scratch-the-game-of-life.html)
-1. [Minesweeper - Finde die Bomben](/trainingsanleitungen/scratch/scratch-minesweeper.html)
+1. [Minesweeper - Finde die Bomben](/trainingsanleitungen/scratch/scratch-minesweeper-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Weihnachtsspiel 2016 - Dekoriere den Weihnachtsbaum](/trainingsanleitungen/scratch/scratch-weihnachten-2016.html)
-1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/scratch/scratch-labyrinth.html)
+1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/scratch/scratch-labyrinth-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Chess - Programmiere einen Computerspieler für Schach](/trainingsanleitungen/scratch/scratch-chess.html)
 1. [Moonhack - Lande auf dem Mond](/trainingsanleitungen/scratch/scratch-moonhack.html)
 1. [Pakete fangen - Fange die Geschenke für Weihnachten](/trainingsanleitungen/scratch/scratch-pakete-fangen.html)
@@ -127,19 +127,33 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Fang den Punkt](/trainingsanleitungen/microbit/Fang-den-Punkt.pdf){:target="_blank"}
 1. [Kompass](/trainingsanleitungen/microbit/Kompass.pdf){:target="_blank"}
 1. [Stoppuhr](/trainingsanleitungen/microbit/StopUhr.pdf){:target="_blank"}
-1. [Grove Inventor Kit for micro:bit Project Guid](/trainingsanleitungen/microbit/Grove inventor kit for microbit user manual.pdf){:target="_blank"}
-1. [PIMORONI Inventor's Kit](/trainingsanleitungen/microbit/Kitronik-KIT_5603_Web.pdf){:target="_blank"}
 1. [BME280 - Sensor für Luftdruck, Temperatur und Luftfeuche](/trainingsanleitungen/microbit/BME280.pdf){:target="_blank"}
 1. [I2C-Bus](/trainingsanleitungen/microbit/I2C-Bus.pdf){:target="_blank"}
 1. [LCD 16x02 i2c](/trainingsanleitungen/microbit/LCD-16x02.pdf){:target="_blank"}
 1. [OLED 128x64 i2c 0,96 Zoll](/trainingsanleitungen/microbit/OLED-128x64.pdf){:target="_blank"}
 1. [Adafruit NeoPixel Guide](/trainingsanleitungen/microbit/adafruit-neopixel-uberguide.pdf){:target="_blank"}
 1. [Led Array mit Adafruit NeoPixel](/trainingsanleitungen/microbit/LED-Array.pdf){:target="_blank"}
-1. [:MOVE mini robot for BBC micro:bit](/trainingsanleitungen/microbit/Micro-Bit_move-mini-instruction.pdf){:target="_blank"}
+
+## BBC micro:bit Erweiterungen
+
+1. [Computational Thinking mit BBC micro:bit](https://microbit.eeducation.at/images/f/f2/Buch-microbit_20180729.pdf){:target="_blank"}
+1. [PIMORONI Inventor's Kit](/trainingsanleitungen/microbit-erweiterungen/Kitronik-KIT_5603_Web.pdf){:target="_blank"}
+1. [Grove Inventor Kit for micro:bit Project Guide](https://www.robotshop.com/media/files/pdf2/grove_inventor_kit_for_microbit_user_manual.pdf){:target="_blank"}
+1. [micro-bit Node Kit User Manual](/trainingsanleitungen/microbit-erweiterungen/MicroBit Node-Farnell.pdf){:target="_blank"}
+1. [:MOVE mini robot for BBC micro:bit](/trainingsanleitungen/microbit-erweiterungen/Micro-Bit_move-mini-instruction.pdf){:target="_blank"}
+1. [micro:bit with Arduino](/trainingsanleitungen/microbit-erweiterungen/use-micro-bit-with-arduino.pdf){:target="_blank"}
+1. [MAKERbuino Build Guide](/trainingsanleitungen/microbit-erweiterungen/MakerBuino Guide4.pdf){:target="_blank"}
+1. [EDU days 2018 - micro:bit Temeraturmessung](/trainingsanleitungen/microbit-erweiterungen/edudays18_microbit-2.pdf){:target="_blank"}
 
 ## Arduino
 
+1. [Arduino Nano V3 Tutorial](/trainingsanleitungen/arduino/Arduino-NanoV3-Start.pdf){:target="_blank"}
 1. [Einführung in Arduino](/trainingsanleitungen/arduino/Arduino-Uno-Start.pdf){:target="_blank"}
+1. [Arduino Retro-Spielkonsole](/trainingsanleitungen/arduino/Arduino-UNO-Spielkonsole.pdf){:target="_blank"}
+1. [Introduction to Grove](/trainingsanleitungen/arduino/Introduction to Grove.pdf){:target="_blank"}
+1. [Arduino Nano Pinout Diagramm](/trainingsanleitungen/arduino/Arduino-NanoV3-PinOut.pdf){:target="_blank"}
+1. [Arduino UNO Pinout Diagramm](/trainingsanleitungen/arduino/Arduino-UNO-Pin.png){:target="_blank"}
+1. [Grove Starter Kit](/trainingsanleitungen/arduino/Grove Starter Kit.pdf){:target="_blank"}
 
 ## Löten
 
