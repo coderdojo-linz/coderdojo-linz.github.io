@@ -61,7 +61,7 @@ sudo apt-get update
 
 ```
 # Installieren der Systemvoraussetzungen von mscs
-sudo apt-get -y install default-jre perl libjson-perl python make wget rdiff-backup rsync socat iptables git vim
+sudo apt-get -y install openjdk-8-jre-headless perl libjson-perl libwww-perl python make wget rdiff-backup rsync socat iptables git
 ```
 
 Mit `apt-get install` installiert man Softwarepakete. Hier werden in einer Zeile viele Pakete installiert. Sie sind alle notwendig, damit *mscs* funktioniert. Du fragst dich, woher wir wissen, was *mscs* braucht? Das kann man in der [*mscs* Dokumentation](https://github.com/MinecraftServerControl/mscs) nachlesen.
@@ -106,14 +106,13 @@ An dieser Stelle können wir noch nicht zu spielen beginnen. Wir müssen erst di
 cd /opt/mscs/worlds/myflatworld
 
 # Öffnen wir die Datei eula.txt in einem Editor
-sudo vim eula.txt
+sudo nano eula.txt
 ```
 
-In dem Script oben kommt der Editor *vim* vor. *vim* ist ein grundlegender Editor, der bei Bedarf auf jeden System installiert werden kann. Mache dich gemeinsam mit dem Mentorenteam vom CoderDojo mit *vim* vertraut.
-   * Bei Bedarf findest du eine gute [Einführung in *vim*](https://wiki.ubuntuusers.de/VIM/) im Internet
-   * Nützlich ist auch ein [Cheat Sheet](http://vim.rtorr.com/)
+In dem Script oben kommt der Editor *nano* vor. *nano* ist ein grundlegender Editor, der bei Bedarf auf jeden System installiert werden kann. Mache dich gemeinsam mit dem Mentorenteam vom CoderDojo mit *nano* vertraut.
+   * Bei Bedarf findest du eine gute [Einführung in *nano*](https://wiki.ubuntuusers.de/Nano/) im Internet
 
-Ändere mit *vim* `eula=false` auf `eula=true` und speichere die Datei mit vim-Kommando `:x` ab.
+Ändere mit *nano* `eula=false` auf `eula=true` und speichere die Datei indem du die Datei mit dem Shortcut *Strg+O* und *Enter* speicherst und dann den Editor mit *Strg+X* beendest
 
 ```
 # Starte die Welt erneut
