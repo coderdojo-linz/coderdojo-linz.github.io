@@ -10,5 +10,6 @@ github_username:  CoderDojo-Linz
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 
 exclude: ["bin", "bower_components", "jekyll", "node_modules", "obj", "styles/sass/*.*", "typings", "coderdojo-linz.*", "*.json", "app.*", "Gulpfile.js"]

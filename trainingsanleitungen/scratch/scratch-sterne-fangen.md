@@ -11,7 +11,7 @@ scratch-scripts: 7
 scratch-data: 3
 ---
 
-# Scratch Sterne fangen
+# Scratch Sterne fangen <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-sterne-fangen-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 Verwende die Pfeiltasten nach links und rechts um am Boden zu laufen und die Pfeiltaste nach oben um hochzuspringen. 
 Fange so viele Sterne wie möglich.

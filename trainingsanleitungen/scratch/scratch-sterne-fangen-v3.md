@@ -11,7 +11,7 @@ scratch-scripts: 7
 scratch-data: 3
 ---
 
-# Scratch Sterne fangen
+# Scratch Sterne fangen <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-sterne-fangen.html" class="change-scratch-version">Scratch 2.0</a>
 
 Verwende die Pfeiltasten nach links und rechts um am Boden zu laufen und die Pfeiltaste nach oben um hochzuspringen. Fange so viele Sterne wie möglich.
 
@@ -21,7 +21,7 @@ Das Spiel besteht aus 3 Figuren und 7 Skripten. Es basiert auf dem Spiel [Gravit
 
 ## Figuren anlegen
 
-1. ![Figur löschen](scratch-sterne-fangen-v3/löschen.png){: .right}
+1. ![Figur löschen](scratch-sterne-fangen-v3/loeschen.png){: .right}
 Lösche als erstes die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
 
 1. ![Bühnenbild anlegen](scratch-sterne-fangen-v3/hintergrund.png){: .right}

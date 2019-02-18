@@ -11,7 +11,7 @@ scratch-scripts: 19
 scratch-data: 28
 ---
 
-# Scratch Pac Man
+# Scratch Pac Man <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-pac-man.html" class="change-scratch-version">Scratch 2.0</a>
 
 ![Endgame](scratch-pac-man-v3/endgame.png)
 Pac-Man ist ein klassisches Computerspiel. Es erschien erstmals 1980 in Japan.
@@ -42,7 +42,7 @@ In das Bühnenbild lädst du bitte die Grafik *Stage.png* und den Klang *PacMan.
 
 Weiters beinhaltet die Bühne Codeblöcke für den Spielstart und das Abspielen der Hintergrundmusik:
 
-![Code Bühne](scratch-pac-man-v3/code-bühne-1.png)
+![Code Bühne](scratch-pac-man-v3/code-buehne-1.png)
 
 Die Grid-Daten stehen in der Liste *GridDef*. Jeder Listen-Eintrag beinhaltet eine Ziffernkette. Die Ziffern bestimmen wie das jeweilige Gridfeld aussieht, und zwar nach folgendem Schema:
 
@@ -92,7 +92,7 @@ Damit du das nicht alles einzeln abtippen musst, hier nochmal die Daten in Textf
 0000000000000000000000000000000000000000000000000000
 ```
 
-![Daten GridDef](scratch-pac-man-v3/code-bühne-2.png)
+![Daten GridDef](scratch-pac-man-v3/code-buehne-2.png)
 
 ## Die Figur *Pac-Man*
 

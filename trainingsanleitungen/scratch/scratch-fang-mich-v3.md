@@ -11,7 +11,7 @@ scratch-scripts: 8
 scratch-data: 0
 ---
 
-# Scratch Fang-Mich
+# Scratch Fang-Mich <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-fang-mich.html" class="change-scratch-version">Scratch 2.0</a>
 
 ![Endgame](scratch-fang-mich-v3/endgame.png)
 

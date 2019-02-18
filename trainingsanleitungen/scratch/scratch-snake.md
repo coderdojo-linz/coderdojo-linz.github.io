@@ -11,7 +11,7 @@ scratch-scripts: 9
 scratch-data: 7
 ---
 
-# Scratch Snake
+# Scratch Snake <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-snake-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 <div class="row sushi-intro">
 	<div class="col-sm-6"><img alt="Snake Game" src="scratch-snake/snake-game.png" /></div>

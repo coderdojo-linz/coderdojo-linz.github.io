@@ -11,7 +11,7 @@ scratch-scripts: 9
 scratch-data: 7
 ---
 
-# Scratch Breakout
+# Scratch Breakout <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-breakout.html" class="change-scratch-version">Scratch 2.0</a>
 
 ![Breakout](scratch-breakout-v3/breakout.png){: .right}
 
@@ -25,10 +25,10 @@ Schläger [Figur downloaden](https://scratch-breakout/Schlaeger.sprite2/){:targe
 
 ## Bühne und Figuren anlegen
 
-1. ![Bühnenbild auswählen](scratch-breakout-v3/bühne-wählen.png){: .right}
+1. ![Bühnenbild auswählen](scratch-breakout-v3/buehne-waehlen.png){: .right}
 Zuerst suchen wir uns ein cooles Bühnenbild aus. Klicke auf *Bühnenbild wählen*. Das Bild *Stars* passt recht gut, aber du kannst dir aussuchen, was du möchtest.
 
-2. ![Scratchy löschen](scratch-breakout-v3/löschen.png){: .right}
+2. ![Scratchy löschen](scratch-breakout-v3/loeschen.png){: .right}
 Als nächstes lösche die Figur *Scratchy* mit dem Namen *Sprite 1*, indem du mit der rechten Maustaste darauf klickst und *Löschen* auswählst.
 
 3. ![Figuren hinzufügen](scratch-breakout-v3/hochladen.png){: .right}

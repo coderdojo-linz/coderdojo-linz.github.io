@@ -11,7 +11,7 @@ scratch-scripts: 13
 scratch-data: 2
 ---
 
-# Scratch Space Shooter
+# Scratch Space Shooter <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-space-shooter.html" class="change-scratch-version">Scratch 2.0</a>
 
 In dieser Übung schießt du mit deinem Raumschiff herabfallende Meteoriten ab bevor sie dein Raumschiff zerstören.
 

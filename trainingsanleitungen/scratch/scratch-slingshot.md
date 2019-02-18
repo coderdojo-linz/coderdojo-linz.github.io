@@ -11,7 +11,7 @@ scratch-scripts: 9
 scratch-data: 7
 ---
 
-# Scratch Affe füttern
+# Scratch Affe füttern <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-slingshot-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 Drücke die Leertaste, um die Steinschleuder zu laden. Je länger du drückst, desto mehr wird die Steinschleuder 
 gespannt und desto weiter wirfst du.

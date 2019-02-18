@@ -11,7 +11,7 @@ scratch-scripts: 15
 scratch-data: 6
 ---
 
-# Scratch Minesweeper
+# Scratch Minesweeper <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-minesweeper.html" class="change-scratch-version">Scratch 2.0</a>
 
 In diesem Spiel musst du die Bomben im Spielfeld finden. Klicke auf eine Zelle um sie umzudrehen. Wenn du gleichzeitig die Leertaste drückst, markierst du eine Zelle als Bombe.
 
@@ -23,7 +23,7 @@ Das Spiel besteht aus 2 Figuren und 15 Codeblöcken.
 
 Das Spiel besteht aus nur zwei Figuren: einer Zelle für das Spielfeld und verschiedenen Nachrichten, die dem Spieler angezeigt werden können.
 
-1. ![Figur löschen](scratch-minesweeper-v3/löschen.png){: .right}
+1. ![Figur löschen](scratch-minesweeper-v3/loeschen.png){: .right}
 Lösche als erstes die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
 
 2. ![Karte hinzufügen](scratch-minesweeper-v3/hochladen.png){: .right}

@@ -167,13 +167,16 @@ a, a:hover, a:focus {
   margin-top: 5px;
   padding: 8px;
   width: 100%;
-  background-color: #FFF9C4;
   margin-left: -8px;
   margin-right: -8px;
-  display: block; }
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #fffcdd; }
   .sponsor > a {
     text-align: center;
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-transform: initial; }
 
 .loadingText {
   text-align: center;
@@ -231,6 +234,35 @@ a, a:hover, a:focus {
       bottom: 0;
       right: 0;
       object-fit: cover; }
+
+/* Uebungsbeispiele */
+h1 span.badge-scratch3, h1 span.badge-scratch2 {
+  font-size: 16px;
+  padding: 5px 20px;
+  margin-left: 20px;
+  top: -5px;
+  position: relative; }
+
+span.badge-scratch3 {
+  background-color: #28a745; }
+
+span.badge-scratch2 {
+  background-color: #ffc107; }
+
+a.change-scratch-version {
+  font-size: 14px;
+  margin-left: 10px;
+  vertical-align: middle; }
+  a.change-scratch-version:hover {
+    text-decoration: underline; }
+
+li span.badge-scratch3 {
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 2px 8px;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-left: 10px; }
 
 body.sushi {
   /*.row {

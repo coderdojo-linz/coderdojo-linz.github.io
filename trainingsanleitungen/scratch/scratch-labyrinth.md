@@ -11,7 +11,7 @@ scratch-scripts: 13
 scratch-data: 6
 ---
 
-# Labyrinth-Spiel mit Scratch und JavaScript
+# Labyrinth-Spiel mit Scratch und JavaScript <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-labyrinth-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 ## Ziel der Übung
 

@@ -11,7 +11,7 @@ scratch-scripts: 19
 scratch-data: 11
 ---
 
-# Dragons Realm
+# Dragons Realm <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-dragons-realm-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 <div class="row sushi-intro">
 	<div class="col-sm-6"><img alt="Dragons Realm" src="scratch-dragons-realm/dragons-realm.png" /></div>

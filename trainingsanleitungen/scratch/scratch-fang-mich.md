@@ -11,7 +11,7 @@ scratch-scripts: 8
 scratch-data: 0
 ---
 
-# Scratch Fang-Mich
+# Scratch Fang-Mich <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-fang-mich-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?
 

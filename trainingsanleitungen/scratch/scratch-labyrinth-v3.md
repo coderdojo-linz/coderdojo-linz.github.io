@@ -11,7 +11,7 @@ scratch-scripts: 13
 scratch-data: 6
 ---
 
-# Labyrinth-Spiel mit Scratch und JavaScript
+# Labyrinth-Spiel mit Scratch und JavaScript <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-labyrinth.html" class="change-scratch-version">Scratch 2.0</a>
 
 ## Ziel der Übung
 
@@ -25,7 +25,7 @@ Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mi
 
 ### Figuren
 
-1. ![Lösche Scratchy](scratch-labyrinth-v3/löschen.png){: .right}
+1. ![Lösche Scratchy](scratch-labyrinth-v3/loeschen.png){: .right}
 Lösche *Scratchy*. Wir brauchen für unser Spiel andere Figuren.
 
 1. ![Zeichne Figur](scratch-labyrinth-v3/malen.png){: .right}

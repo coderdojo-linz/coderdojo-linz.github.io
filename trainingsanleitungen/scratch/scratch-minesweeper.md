@@ -11,7 +11,7 @@ scratch-scripts: 15
 scratch-data: 6
 ---
 
-# Scratch Minesweeper
+# Scratch Minesweeper <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-minesweeper-v3.html" class="change-scratch-version">Scratch 3.0</a>
 
 In diesem Spiel musst du die Bomben im Spielfeld finden. Klicke auf eine Zelle um sie umzudrehen. Wenn du gleichzeitig die Leertaste drückst, markierst du eine Zelle als Bombe.
 

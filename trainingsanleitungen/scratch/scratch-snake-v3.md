@@ -11,7 +11,7 @@ scratch-scripts: 13
 scratch-data: 2
 ---
 
-# Scratch Snake
+# Scratch Snake <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-snake.html" class="change-scratch-version">Scratch 2.0</a>
 
 ![Endgame](scratch-snake-v3/endgame.png){: .right}
 Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auf, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
@@ -19,7 +19,7 @@ Das Spiel besteht aus 3 Figuren und 14 Skripten.
 
 ## Bühne & Figuren
 
-![](scratch-snake-v3/bühne.png)
+![](scratch-snake-v3/buehne.png)
 Das Spiel besteht aus drei Figuren: der Schlange, dem Apfel und einer Nachricht, wenn das Spiel zu Ende ist. Für dieses Spiel brauchen wir kein Bühnenbild. Du kannst es einfach weiß lassen. Die Schlange besteht aus zwei Kostümen: Kopf und Körper. Der Kopf und der Körper der Schlange dürfen nicht größer als 20 sein. Nur die Zunge beim Kopf darf das überschreiten. Am besten, du malst zuerst den Körper mit einer Größe von 20, kopierst diesen dann für den Kopf und fügst Augen und eine Zunge hinzu. Beachte auch, dass der Körper eine andere Farbe als der Kopf haben muss.
 
 Schlange [Figur downloaden](https://scratch-snake-v3/Schlange.sprite2/){:target="_blank"}
