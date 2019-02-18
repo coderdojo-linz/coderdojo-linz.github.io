@@ -205,4 +205,8 @@ ModelManifest.xml
 /scratch-extensions/
 
 # Visual Studio Code
+<<<<<<< HEAD
+/.vs/coderdojo-linz
+=======
 /.vs
+>>>>>>> 9020c421031240405ab590bfe842062a47492df5
