@@ -66,7 +66,26 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 
 ## Minecraft
 
+### Redstone
+
+1. [Erste Schritte mit Redstone](/trainingsanleitungen/minecraft-plugins/erste-schritte-mit-redstone.html)
+1. [Redstone - Eine einfache Falle](/trainingsanleitungen/minecraft/01_redstone-trap.html)
+
+### Server
+
+1. [Dein erster, eigener Minecraft-Server](/trainingsanleitungen/minecraft-plugins/minecraft-server.html)
+1. [Scriptcraft am Minecraft-Server installieren](/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker.html)
+
 ### Plugins
+
+**Achtung!** Plugin-programmierung erfordert Programmierkenntnisse! Wenn du noch nicht Javascript oder Java programmieren kannst wende dich bitte an einen Mentor.
+
+#### Javascript
+
+1. [Minecraft-Server mit Scriptcraft installieren](/trainingsanleitungen/minecraft-plugins/lokaler-minecraft-server.html)
+1. [Programmieren mit Scriptcraft - Grundlagen](/trainingsanleitungen/minecraft-plugins/08_scriptcraft_basics.html)
+
+#### Java
 
 1. [Vorbedingungen - Installationen](/trainingsanleitungen/minecraft-plugins/01_installationen.html)
 1. [Kurzanleitung NetBeans Projektsetup](/trainingsanleitungen/minecraft-plugins/netbeans_cheatsheet.html)
@@ -75,17 +94,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Plugin 2: Teil 2 - Miraculix (argument handling)](/trainingsanleitungen/minecraft-plugins/04_getafix-Arguments.html)
 1. [Plugin 3: Begrüßen und Verabschieden (listener)](/trainingsanleitungen/minecraft-plugins/05_welcome-Listener.html)
 1. [Plugin 2: Teil 3 - Miraculix (event handling)](/trainingsanleitungen/minecraft-plugins/06_getafix-MagicPotion.html)
-1. [Minecraft-Server mit Scriptcraft installieren](/trainingsanleitungen/minecraft-plugins/lokaler-minecraft-server.html)
-1. [Dein erster, eigener Minecraft-Server](/trainingsanleitungen/minecraft-plugins/minecraft-server.html)
-1. [Scriptcraft am Minecraft-Server installieren](/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker.html)
-1. [Programmieren mit Scriptcraft - Grundlagen](/trainingsanleitungen/minecraft-plugins/08_scriptcraft_basics.html)
-1. [Erste Schritte mit Redstone](/trainingsanleitungen/minecraft-plugins/erste-schritte-mit-redstone.html)
 1. [Teleporter](/trainingsanleitungen/minecraft-plugins/09_teleporter.html)
-
-### Redstone
-
-1. [Erste Schritte mit Redstone](/trainingsanleitungen/minecraft-plugins/erste-schritte-mit-redstone.html)
-1. [Redstone - Eine einfache Falle](/trainingsanleitungen/minecraft/01_redstone-trap.html)
 
 ## Python
 
