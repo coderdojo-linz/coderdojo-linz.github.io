@@ -77,7 +77,9 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Scriptcraft am Minecraft-Server installieren](/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker.html)
 
 ### Plugins
+
 **Achtung!** Plugin-programmierung erfordert Programmierkenntnisse! Wenn du noch nicht Javascript oder Java programmieren kannst wende dich bitte an einen Mentor.
+
 #### Javascript
 
 1. [Minecraft-Server mit Scriptcraft installieren](/trainingsanleitungen/minecraft-plugins/lokaler-minecraft-server.html)
@@ -92,8 +94,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Plugin 2: Teil 2 - Miraculix (argument handling)](/trainingsanleitungen/minecraft-plugins/04_getafix-Arguments.html)
 1. [Plugin 3: Begrüßen und Verabschieden (listener)](/trainingsanleitungen/minecraft-plugins/05_welcome-Listener.html)
 1. [Plugin 2: Teil 3 - Miraculix (event handling)](/trainingsanleitungen/minecraft-plugins/06_getafix-MagicPotion.html)
-1. [Teleporter](https://github.com/weidingerhp/coderdojo_minecraft_teleporter/blob/master/doc/readme.md){:target="_blank"}
-
+1. [Teleporter](/trainingsanleitungen/minecraft-plugins/09_teleporter.html)
 
 ## Python
 
@@ -172,6 +173,10 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Deine erste Elektronik-Schaltung](/trainingsanleitungen/loeten/wechselblinker.html)
 1. [BlinkenRocket V2 Anleitung](/trainingsanleitungen/loeten/BlinkenRocket-manual.pdf){:target="blank"}
 1. [Aufbauanleitung für Kartonbausatz](http://www.electronicum.at/service/aufbauanleitung_karton.pdf){:target="blank"}
+
+## C
+
+1. [Space Shooter](/trainingsanleitungen/exercises/tree/master/c/space-shooter.md)
 
 ## Änderungen und Ergänzungen
 
