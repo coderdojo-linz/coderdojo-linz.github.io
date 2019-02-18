@@ -176,7 +176,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 
 ## C
 
-1. [Space Shooter](/trainingsanleitungen/exercises/tree/master/c/space-shooter.md)
+1. [Space Shooter](/trainingsanleitungen/c/space-shooter.html)
 
 ## Änderungen und Ergänzungen
 
