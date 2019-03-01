@@ -19,20 +19,20 @@ Pac-Man muss alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu lau
 
 ## Vorbereitungen
 
-Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. kannst du sie auch unter [http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man/pac-man.zip](https://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man/pac-man.zip){:target="_blank"} herunterladen.
+Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. kannst du sie auch unter [scratch-pac-man-v3/pac-man.zip](scratch-pac-man-v3/pac-man.zip){:target="_blank"} herunterladen.
 Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMan, Ghost und Pill.
 
 ![Figuren](scratch-pac-man-v3/figuren.png)
 
 ## Downloads
 
-[Stage](scratch-pac-man/Stage.png){:target="_blank"}
+[Stage](scratch-pac-man-v3/Stage.png){:target="_blank"}
 
-[PacMan](scratch-pac-man/PacMan.sprite2){:target="_blank"}
+[PacMan](scratch-pac-man-v3/PacMan.sprite2){:target="_blank"}
 
-[Ghost](scratch-pac-man/Ghost.sprite2){:target="_blank"}
+[Ghost](scratch-pac-man-v3/Ghost.sprite2){:target="_blank"}
 
-[Pill](scratch-pac-man/Pill.sprite2){:target="_blank"}
+[Pill](scratch-pac-man-v3/Pill.sprite2){:target="_blank"}
 
 ## Die Bühne *Stage*
 

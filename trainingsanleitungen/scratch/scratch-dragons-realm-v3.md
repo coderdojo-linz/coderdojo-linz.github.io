@@ -19,23 +19,23 @@ Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindring
 Mit den Pfeiltasten lenkst du den Drachen (du kannst auch zwei Tasten gleichzeitig drücken mit ↑ und → fliegt man zum Beispiel nach rechts oben). Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen.
 Damit das Spiel auch auf Tablets und Handys funktioniert, wurde nachträglich eine Maus/Touch-Steuerung eingebaut. Generell ist das Spielerlebnis mit der Tastatur aber besser.
 
-Dragons Realm beinhaltet viele Grafiken. Du bekommst die Grafiken auf Anfrage von deinen Mentoren, oder kannst sie gesammelt hier herunterladen: [scratch-dragons-realm/dragons.zip](scratch-dragons-realm/dragons.zip)
+Dragons Realm beinhaltet viele Grafiken. Du bekommst die Grafiken auf Anfrage von deinen Mentoren, oder kannst sie gesammelt hier herunterladen: [scratch-dragons-realm-v3/dragons.zip](scratch-dragons-realm-v3/dragons.zip)
 
 Das Spiel besteht aus 6 Figuren und 19 Codeblöcken.
 
 ## Downloads
 
-[Background](scratch-dragons-realm/Background.sprite2)
+[Background](scratch-dragons-realm-v3/Background.sprite2)
 
-[Border](scratch-dragons-realm/Border.sprite2)
+[Border](scratch-dragons-realm-v3/Border.sprite2)
 
-[Dragon](scratch-dragons-realm/Dragon.sprite2)
+[Dragon](scratch-dragons-realm-v3/Dragon.sprite2)
 
-[Fireball](scratch-dragons-realm/Fireball.sprite2)
+[Fireball](scratch-dragons-realm-v3/Fireball.sprite2)
 
-[Tiles](scratch-dragons-realm/Tiles.sprite2)
+[Tiles](scratch-dragons-realm-v3/Tiles.sprite2)
 
-[Knight](scratch-dragons-realm/Knight.sprite2)
+[Knight](scratch-dragons-realm-v3/Knight.sprite2)
 
 ## Die Figuren
 
