@@ -44,6 +44,7 @@ Bei Gast-CoderDojos kann grundsätzlich alles gemacht werden, was wir auch im no
 * Idealerweise WLAN mit Internetzugang (wir haben zur Not auch mobiles Internet)
 * Nach Vereinbarung des Inhalts stellen wir Angaben für Übungsbeispiele zur Verfügung, die von der Schule entsprechend der Anzahl an teilnehmenden Personen ausgedruckt werden müssen
 * Kinder und Jugendliche können natürlich eigene Laptops im CoderDojo verwenden
+* Bei einer größeren Anzahl an Kindern und Jugendlichen ist ein Beamer hilfreich, über den erste Schritte gezeigt werden können
 
 ### Welche Tage und Uhrzeiten sind möglich?
 
