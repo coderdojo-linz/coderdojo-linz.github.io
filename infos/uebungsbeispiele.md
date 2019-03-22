@@ -104,11 +104,13 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Zahlen raten](/trainingsanleitungen/python/python-zahlenraten.html)
 1. [Zahlen raten - Teil 2](/trainingsanleitungen/python/python-zahlenraten-2.html)
 1. [Schriftliches Multiplizieren](/trainingsanleitungen/python/python-schriftlich-multiplizieren.html)
+1. [Python - Mondlandung](http://steyrerbrains.at/CoDoSteyr/Python_Mondlandung.md.html){:target="_blank"}
 
 ## C# (C Sharp)
 
 1. [AntMe! Wie schlau ist deine Ameise?](/trainingsanleitungen/csharp/ant-me.html)
 1. [Türme von Hanoi](/trainingsanleitungen/csharp/towers-of-hanoi.html)
+1. [Geisterspiel in C#](/trainingsanleitungen/csharp/geisterspiel.html)
 
 ## Unity (Spieleentwicklungsplattform)
 
