@@ -9,7 +9,7 @@ title: Mentoren
 
 Um möglichst vielen Kindern den Einstieg in das Programmieren zu ermöglichen, bieten wir Gast-CoderDojos an Schulen an. Wir bringen die gesamte Infrastruktur inkl. mobilem Internetzugang und Leihlaptops mit.
 
-CoderDojo ist ein ehrenamtlichen Mentorinnen und Mentoren getragener Programmierclubs. Alle Personen in unserem Mentoringteam sind berufstätig. Sie investieren ihre Freizeit, um im CoderDojo mitzuhelfen. Aus diesem Grund bitten wir um Verständnis, dass wir nicht alle Einladungen an Schulen annehmen können. Bitte verstehen Sie das nicht als mangelndes Interesse, ganz im Gegenteil. Wir bemühen uns, so vielen Anfragen wie möglich nachzukommen. Manchmal fehlt es uns aber an Ressourcen.
+CoderDojo ist ein von ehrenamtlichen Mentorinnen und Mentoren getragener Programmierclubs. Alle Personen in unserem Mentoringteam sind berufstätig. Sie investieren ihre Freizeit, um im CoderDojo mitzuhelfen. Aus diesem Grund bitten wir um Verständnis, dass wir nicht alle Einladungen an Schulen annehmen können. Bitte verstehen Sie das nicht als mangelndes Interesse, ganz im Gegenteil. Wir bemühen uns, so vielen Anfragen wie möglich nachzukommen. Manchmal fehlt es uns aber an Ressourcen.
 
 ## Häufige Fragen
 
