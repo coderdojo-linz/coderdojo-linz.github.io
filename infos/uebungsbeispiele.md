@@ -22,7 +22,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Zahlen raten - Wie viele Tipps brauchst du?](/trainingsanleitungen/scratch/scratch-zahlenraten.html)<span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Breakout - Pulverisiere bunte Mauersteine](/trainingsanleitungen/scratch/scratch-breakout-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Snake - Lass die Schlange die Äpfel aufsammeln](/trainingsanleitungen/scratch/scratch-snake-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
-1. [Memory - Finde die Paare](/trainingsanleitungen/scratch/scratch-memory.html)
+1. [Memory - Finde die Paare](/trainingsanleitungen/scratch/scratch-memory.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Die Zauberlehrlinge - Dieses Spiel kannst du gemeinsam mit einem Freund oder einer Freundin spielen](/trainingsanleitungen/scratch/scratch-zauberlehrlinge-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Sterne fangen - Springe hoch, um möglichst viele Sterne zu fangen](/trainingsanleitungen/scratch/scratch-sterne-fangen-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Dragons Realm - Verteidige dein Reich mit Feuerbällen](/trainingsanleitungen/scratch/scratch-dragons-realm-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
