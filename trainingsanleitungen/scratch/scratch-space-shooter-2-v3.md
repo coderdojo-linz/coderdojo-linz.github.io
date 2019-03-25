@@ -3,18 +3,18 @@ layout: sushi
 title: Scratch Space Shooter II
 description: Hast du den Space Shooter schon geschafft? Dann probiere diese Herausforderung.
 scratch-images:
-- scratch-space-shooter-2/01-space-shooter-final.png
-- scratch-space-shooter-2/03-wizard-witch.png
+- scratch-space-shooter-2-v3/01-space-shooter-final.png
+- scratch-space-shooter-2-v3/03-wizard-witch.png
 scratch-level: 2
 scratch-sprites: 4
 scratch-scripts: 6
 scratch-data: 2
 ---
 
-# Scratch Space Shooter II <span class="badge badge-scratch2">Scratch 2.0</span> <a href="scratch-space-shooter-2-v3.html" class="change-scratch-version">Scratch 3.0</a>
+# Scratch Space Shooter II <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-space-shooter-2.html" class="change-scratch-version">Scratch 2.0</a>
 
 <div class="row sushi-intro">
-	<div class="col-sm-6"><img alt="Breakout" src="scratch-space-shooter-2/01-space-shooter-final.png" /></div>
+	<div class="col-sm-6"><img alt="Breakout" src="scratch-space-shooter-2-v3/01-space-shooter-final.png" /></div>
 	<div class="col-sm-6">
 		<p>Hast du die <a href="scratch-space-shooter.html">Space Shooter Scratch Übung</a> schon geschafft? Dann bist du genau richtig hier. Deine Aufgabe ist es, einen modifizierten Space Shooter zu bauen - diesmal aber ohne kompletter Anleitung.</p>
 		<p>Falls du Hilfe brauchst, kannst du dir Anregungen beim fertigen Spiel unter <a href="https://scratch.mit.edu/projects/236866631/" target="_blank">https://scratch.mit.edu/projects/236866631/</a> holen.</p>
@@ -43,15 +43,15 @@ scratch-data: 2
 
 1. Füge das Raumschiff als **Figur** hinzu. Mache es so groß oder klein wie du möchtest.
 
-1. ![Laser](scratch-space-shooter-2/02-laser.png){: .right}
+1. ![Laser](scratch-space-shooter-2-v3/02-laser.png){: .right}
 Füge den Blitz **zwei Mal** als **Figur** hinzu. Einmal soll er gelb sein (Laser, den dein Raumschiff schießt) und einmal rot (Laser, den deine Gegner schießen). Drehe den Laser im **Kostümeditor**, damit er nach rechts zeigt.
 
-1. ![Hexe und Zauberer](scratch-space-shooter-2/03-wizard-witch.png){: .right}
+1. ![Hexe und Zauberer](scratch-space-shooter-2-v3/03-wizard-witch.png){: .right}
 Füge die Hexe als **Figur** hinzu. Füge der neuen Figur den Zauberer **als zweites Kostüm** hinzu.
 
 ## Bewegen des Raumschiffs
 
-![Bewegung des Raumschiffs](scratch-space-shooter-2/04-spaceship-move.png)
+![Bewegung des Raumschiffs](scratch-space-shooter-2-v3/04-spaceship-move.png)
 
 Um das Spiel schwieriger zu machen, bewegt sich das Raumschiff nicht einfach nach oben und unten. Es bewegt sich entlang einer Kurve. Das Bild oben zeigt verschiedene Positionen des Raumschiffs auf der Kurve.
 
@@ -61,19 +61,19 @@ Um das Spiel schwieriger zu machen, bewegt sich das Raumschiff nicht einfach nac
 
 Hier eine Animation, die die Bewegung zeigt:
 
-![Bewegung des Raumschiffs](scratch-space-shooter-2/05-spaceship-move.gif)
+![Bewegung des Raumschiffs](scratch-space-shooter-2-v3/05-spaceship-move.gif)
 
 Wenn du nicht sicher bist, wie die Bewegung aussehen soll, probiere das Spiel unter [https://scratch.mit.edu/projects/236866631/](https://scratch.mit.edu/projects/236866631/) aus. Aber nicht schummeln und in die Scripts schauen! Probiere erst, selbst auf die Lösung zu kommen.
 
 ## Schießen
 
-![Schießen](scratch-space-shooter-2/06-spaceship-shooting.png)
+![Schießen](scratch-space-shooter-2-v3/06-spaceship-shooting.png)
 
 Wenn man auf die Leertaste drückt, soll das Raumschiff einen Schuss abgeben. Verwende den gelben Pfeil als "Laser-Impuls". Man kann durch mehrmaliges Drücken der Leertaste viele Schüsse kurz hintereinander abgeben. Das Bild oben zeigt, wie das dann aussieht.
 
 ## Gegner tauchen auf
 
-![Gegner](scratch-space-shooter-2/07-enemy.png)
+![Gegner](scratch-space-shooter-2-v3/07-enemy.png)
 
 Die Gegner fliegen von rechts nach links ins Spielfeld.
 
@@ -120,16 +120,16 @@ Ziel dieser Übung ist es, dass du selbst ohne Schritt-für-Schritt-Anleitung da
 
 ### Raumschiff
 
-![Spaceship Lösung](scratch-space-shooter-2/08-spaceship-solution.png)
+![Spaceship Lösung](scratch-space-shooter-2-v3/08-spaceship-solution.png)
 
 ### Gegner
 
-![Gegner Lösung](scratch-space-shooter-2/09-enemy-solution.png)
+![Gegner Lösung](scratch-space-shooter-2-v3/09-enemy-solution.png)
 
 ### Gelber Laser (vom Raumschiff)
 
-![Gelber Laser](scratch-space-shooter-2/10-friendly-laser.png)
+![Gelber Laser](scratch-space-shooter-2-v3/10-friendly-laser.png)
 
 ### Roter Laser (vom Gegner)
 
-![Roter Laser](scratch-space-shooter-2/11-enemy-laser.png)
+![Roter Laser](scratch-space-shooter-2-v3/11-enemy-laser.png)
