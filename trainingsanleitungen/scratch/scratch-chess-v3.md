@@ -18,7 +18,7 @@ scratch-data: 70
 	<div class="col-sm-6">
 		<p></p>
 		<p>In diesem Beispiel wollen wir die beiden wichtigsten Funktionen eines Schachprogramms implementieren: Das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.</p>
-		<p>Das gesamte Spiel zu programmieren wäre sehr aufwändig und würde den Rahmen eines zweistündigen CoderDojos sprengen. Du kannst es aber auch gleich einmal unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> ausprobieren.</p>
+		<p>Du kannst das fertige Project auch gleich einmal unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> ausprobieren.</p>
 		<table class="table sushi-stats">
 			<tbody>
 				<tr>
@@ -38,7 +38,7 @@ scratch-data: 70
 	</div>
 </div>
 
-Schachprogramme versuchen den besten Zug zu finden, und müssen dabei möglichst viele Züge im Voraus berechnen. Die Anzahl der zu untersuchenden Brettbilder wächst dadurch enorm an (exponentielles Wachstum), sodass sogar moderne Computer an ihre Rechengrenzen stoßen. Unser Schachprogramm muss daher schnell und schlau sein. Schlau heißt, dass nicht jede Zugkombination nachverfolgt wird, sondern schlechte Züge gleich verworfen werden. Wenn das Programm einige Züge hintereinander berechnet hat, bewertet es das entstandene Brettbild.
+Schachprogramme versuchen den nächsten besten Zug zu finden, und müssen dabei möglichst viele Züge im Voraus berechnen. Die Anzahl der zu untersuchenden Brettbilder wächst dadurch enorm an (exponentielles Wachstum), sodass sogar moderne Computer an ihre Rechengrenzen stoßen. Unser Schachprogramm muss daher schnell und schlau sein. Schlau heißt, dass nicht jede Zugkombination nachverfolgt wird, sondern schlechte Züge gleich verworfen werden. Wenn das Programm einige Züge hintereinander berechnet hat, bewertet es das entstandene Brettbild.
 
 ## Vorbereitung
 
