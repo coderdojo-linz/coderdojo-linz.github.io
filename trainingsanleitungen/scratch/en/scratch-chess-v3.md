@@ -13,7 +13,7 @@ scratch-data: 70
 # Scratch Chess
 
 <div class="row sushi-intro">
-	<div class="col-sm-6"><img alt="Chess" src="scratch-chess/chess-game.png" /></div>
+	<div class="col-sm-6"><img alt="Chess" src="scratch-chess-v3/chess-game.png" /></div>
 	<div class="col-sm-6">
 		<p></p>
 		<p>In this example, we want to build a chess engine, and above all, the two most important functions - the application of different move combinations, and the evaluation of the resulting boards.</p>
@@ -44,7 +44,7 @@ Log in to Scratch with your user. If you do not have a scratch user yet, a mento
 
 We would like to implement these two missing function blocks. You can find them in the upper left corner sprite of the "Board" script:
 
-<p><img src="scratch-chess-v3/chess-blocks.png" class="max-full" /></p>
+<p><img src="scratch-chess-v3/chess-blocks-en.png" class="max-full" /></p>
 
 Our program will play with the black pieces, the user plays white.
 
@@ -60,7 +60,7 @@ The second evaluation aspect is piece position. A queen in the middle of the boa
 
 In order to automatically evaluate piece positions, there are lists like "KingPieceSquare", "QueenPieceSquare", etc. Those contain 64 entries, the value a piece's position is assigned to. Because our program play black, white piece position values must be negated. For the black pieces we have to mirror the position on the board. This is done by accessing list index "65 - Idx". The entire custom block looks like this:
 
-<p><img src="scratch-chess-v3/chess-eval-code.png" class="max-full" /></p>
+<p><img src="scratch-chess-v3/chess-eval-code-en.png" class="max-full" /></p>
 
 ## Move Selection - AlphaBetaMinMaxImpl()
 
@@ -70,7 +70,7 @@ When calculating the opponent's moves, we can assume that the opponent chooses t
 
 The runtime performance of Scratch only allows to look ahead a few moves. Thereafter, the resulting board is evaluated and compared with previous boards. This results in a decision tree as below, with the nodes representing the boards and their evaluation, and the arrows  representing the respective moves in between. The best guaranteed evaluation in this example is 5. Even if a board with an evaluation of 10 seems possible, the opponent can prevent this by a skillful countermove, which then results in a worse rating (namely 2). We therefore choose the move that ensures an evaluation of 5, no matter which move the opponent will play.
 
-<p><img src="scratch-chess-v3/chess-minimax.png" class="max-full" /></p>
+<p><img src="scratch-chess-v3/chess-minimax-en.png" class="max-full" /></p>
 
 In this decision tree example, there are only a few moves per round. For chess, there are a lot more. With 4 consecutive moves and 30 moves for each turn, there are 30^4 = 810,000 resulting boards, each of which must be evaluation, resulting in 51,840,000 assignments (unless we provide a smarter, incremental approach by working with evaluation deltas per move). Java or C++ programs might still handle that (although it would be better to use computing power for grater search depth). But in Scratch this would simply be much too slow.
 
@@ -80,7 +80,7 @@ Our script is a custom block that keeps calling itself. This is known as a recur
 
 Our intermediate values (Min, Max, Alpha, Beta, Moves) are all stored in lists. This is necessary for recursions because there are no local variables in Scratch (and function parameters cannot be changed). Scratch variables are not sufficient for this, otherwise we would overwrite them in cascaded AlphaBetaMinMaxImpl() calls. These lists contain an entry for every possible call depth. An alternative would be to label the variables from 1 to N and to duplicate the whole custom block for each draft depth. But we really do not want to go that path (the full project would require 15 duplicate variables and custom blocks). The resulting MiniMax / Alpha-Beta Pruning implementation looks like this
 
-<p><img src="scratch-chess-v3/chess-minimax-code.png" class="max-full" /></p>
+<p><img src="scratch-chess-v3/chess-minimax-code-en.png" class="max-full" /></p>
 
 Great, you're done! Please go ahead and start the program now. Once you have made your move, the engine starts to calculate, running the two custom blocks you just programmed.
 
