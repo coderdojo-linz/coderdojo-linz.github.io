@@ -1,7 +1,7 @@
 ---
 layout: sushi
 title: Scratch Chess
-description: In this example, we want to build a chess engine, and above all, the two most important functions - the application of different move combinations, and the evaluation of the resulting boards.
+description: In this example, we want to build a chess engine, and above all, the two most important functions - the application of different move combinations, and the evaluation of resulting boards.
 scratch-images:
 - scratch-chess-v3/chess-game.png
 scratch-level: 3
@@ -16,7 +16,7 @@ scratch-data: 70
 	<div class="col-sm-6"><img alt="Chess" src="scratch-chess-v3/chess-game.png" /></div>
 	<div class="col-sm-6">
 		<p></p>
-		<p>In this example, we want to build a chess engine, and above all, the two most important functions - the application of different move combinations, and the evaluation of the resulting boards.</p>
+		<p>In this example, we want to build a chess engine, and above all, the two most important functions - the application of different move combinations, and the evaluation of resulting boards.</p>
 		<p>You can also try the finished project at <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a></p>
 		<table class="table sushi-stats">
 			<tbody>
@@ -37,7 +37,7 @@ scratch-data: 70
 	</div>
 </div>
 
-Chess programs try to find the optimal move and calculate as many moves in advance as possible. As a result, the number of resulting boards to be examined grows exponentially, so that even modern computers reach their computing limits. Our chess program must therefore be quick and smart. Smart means that not every move combination is calculated, by discarding bad moves immediately. Once the program has calculated a sequence of moves, it will evaluate the resulting board and compare that to previous results.
+Chess programs try to find the optimal move by calculating as many moves in advance as possible. As a result, the number of resulting boards to be examined grows exponentially, so that even modern computers reach their computing limits. Our chess program must therefore be quick and smart. Smart means that not every move combination is calculated, by discarding bad moves immediately. Once the program has calculated a sequence of moves, it will evaluate the resulting board and compare it to previous results.
 ## Preparation
 
 Log in to Scratch with your user. If you do not have a scratch user yet, a mentor will be happy to help. Prerequisite for creating a Scratch user is an existing e-mail address. You need to be logged in to Scratch so you can remix the project template, thus obtain a working copy. Open the project [https://scratch.mit.edu/projects/150304452/](https://scratch.mit.edu/projects/150304452/){:target="_blank"}, and click on "Remix". Now you have a project copy that you can continue working on.
