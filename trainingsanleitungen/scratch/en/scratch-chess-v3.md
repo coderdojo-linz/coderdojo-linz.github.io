@@ -1,7 +1,7 @@
 ---
 layout: sushi
 title: Scratch Chess
-description: In this example, we want to build a game of chess, and above all, the two most important functions - the application of different move combinations, and the evaluation of the resulting board.
+description: In this example, we want to build a chess engine, and above all, the two most important functions - the application of different move combinations, and the evaluation of the resulting board.
 scratch-images:
 - scratch-chess-v3/chess-game.png
 scratch-level: 3
@@ -16,8 +16,8 @@ scratch-data: 70
 	<div class="col-sm-6"><img alt="Chess" src="scratch-chess/chess-game.png" /></div>
 	<div class="col-sm-6">
 		<p></p>
-		<p>In this example, we want to build a game of chess, and above all, the two most important functions - the application of different move combinations, and the evaluation of the resulting board.</p>
-		<p>You can also try the finished project at <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> ausprobieren.</p>
+		<p>In this example, we want to build a chess engine, and above all, the two most important functions - the application of different move combinations, and the evaluation of the resulting board.</p>
+		<p>You can also try the finished project at <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a></p>
 		<table class="table sushi-stats">
 			<tbody>
 				<tr>
@@ -48,7 +48,7 @@ We would like to implement these two function blocks. You can find them in the u
 
 Our program will play with the black pieces, the user plays white.
 
-## Board Evluation
+## Board Evluation - EvaluateBoard()
 
 The board evluation is implemented by the custom block "EvaluateBoard". It is important that we select option "Run without screen refresh" (right-click on the custom block header, then "Edit"). Otherwise our program would be too slow.
 
@@ -62,13 +62,13 @@ In order to be able to automatically evaluate piece positions, there are lists l
 
 <p><img src="scratch-chess-v3/chess-eval-code.png" class="max-full" /></p>
 
-## Zugauswahl - AlphaBetaMinMaxImpl
+## Move Selection - AlphaBetaMinMaxImpl()
 
-Nachdem wir nun ein Brett bewerten können, müssen wir nun noch die möglichen zukünftigen Brettstellungen berechnen. Dazu simulieren wir alle möglichen Züge, die nacheinander ausgeführt werden können, beginnend mit dem nächsten schwarzen Zug - dann Weiß, dann wieder Schwarz, usw.
+Now that we can evluate a board, we have to calculate the the boards that result from playing move sequences we want to look into. For this, we first calculate a list of possible moves. We then loop over those moves, and apply the current move. We then inoke AlphaBetaMinMaxImpl() again, so it can calculate the opponent's followup-move and so on.
 
-Bei der Berechnung der Zwischenzüge des Gegners können wir davon ausgehen, dass der Gegner einen für uns schlechten Zug wählt. Das heißt während wir bei unseren Zügen den besten aussuchen (Max), ist es beim Gegner der für uns schlechteste (Min).
+When calculating the opponent's moves, we can assume that the opponent chooses the best move available (Min evaluation for white) - and so so we (Max evaluation for black).
 
-Die Geschwindigkeit von Scratch erlaubt es uns nur wenige Züge in die Zukunft zu sehen. Im Falle von vier Zügen ist das Schwarz - Weiß - Schwarz - Weiß. Danach wird das resultierende Brett bewertet, und mit bisherigen Bewertungen verglichen. Daraus entsteht ein Entscheidungsbaum wie unten, wobei die Knoten die Bretter mit Bewertung darstellen, und die Pfeile die jeweiligen Züge dazwischen. Die beste garantiert erreichbare Bewertung in diesem Beispiel ist 5. Auch wenn ein Brett mit der Bewertung 10 möglich ist, kann der Gegner dies durch einen geschickten Gegenzug verhindern, was dann in einer schlechteren Bewertung (nämlich 2) resultiert. Wir wählen daher den Zug, der eine Bewertung von 5 sicherstellt, egal welchen Zug der Gegner wählt.
+The runtime performance of Scratch onl allows to look ahead a few  moves. Thereafter, the resulting board is evaluated and compared with previous scores. This results in a decision tree as below, with the nodes representing the boards and their evaluation, with the arrows  representing the respective moves in between. The best guaranteed evaluation in this example is 5. Even if a board with an evaluation f 10 seems possible, the opponent can prevent this by a skillful countermove, which then results in a worse rating (namely 2). We therefore choose the move that ensures an evaluation of 5, no matter which move the opponent chooses.
 
 <p><img src="scratch-chess-v3/chess-minimax.png" class="max-full" /></p>
 
