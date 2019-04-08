@@ -70,7 +70,7 @@ When calculating the opponent's moves, we can assume that the opponent chooses t
 
 The runtime performance of Scratch only allows to look ahead a few moves. Thereafter, the resulting board is evaluated and compared with previous boards. This results in a decision tree as below, with the nodes representing the boards and their evaluation, and the arrows  representing the respective moves in between. The best guaranteed evaluation in this example is 5. Even if a board with an evaluation of 10 seems possible, the opponent can prevent this by a skillful countermove, which then results in a worse rating (namely 2). We therefore choose the move that ensures an evaluation of 5, no matter which move the opponent will play.
 
-<p><img src="scratch-chess-v3/chess-minimax-en.png" class="max-full" /></p>
+<p><img src="scratch-chess-v3/chess-minimax.png" class="max-full" /></p>
 
 In this decision tree example, there are only a few moves per round. For chess, there are a lot more. With 4 consecutive moves and 30 moves for each turn, there are 30^4 = 810,000 resulting boards, each of which must be evaluation, resulting in 51,840,000 assignments (unless we provide a smarter, incremental approach by working with evaluation deltas per move). Java or C++ programs might still handle that (although it would be better to use computing power for grater search depth). But in Scratch this would simply be much too slow.
 
