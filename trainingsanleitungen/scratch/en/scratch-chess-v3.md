@@ -37,7 +37,7 @@ scratch-data: 70
 	</div>
 </div>
 
-Chess programs try to find the optimal move by calculating as many moves in advance as possible. As a result, the number of resulting boards to be examined grows exponentially, so that even modern computers reach their computing limits. Our chess program must therefore be quick and smart. Smart means that not every move combination is calculated, by discarding bad moves immediately. Once the program has calculated a sequence of moves, it will evaluate the resulting board and compare it to previous results.
+Chess programs try to find the optimal move by calculating as many moves in advance as possible. The number of resulting boards grows exponentially with each additional move, so that even modern computers reach their computing limits. Our chess program must therefore be quick and smart. Smart means that not every move combination is calculated, by discarding bad moves immediately. Once the program has calculated a sequence of moves, it will evaluate the resulting board and compare it to previous results.
 ## Preparation
 
 Log in to Scratch with your user. If you do not have a scratch user yet, a mentor will be happy to help. Prerequisite for creating a Scratch user is an existing e-mail address. You need to be logged in to Scratch so you can remix the project template, thus obtain a working copy. Open the project [https://scratch.mit.edu/projects/150304452/](https://scratch.mit.edu/projects/150304452/){:target="_blank"}, and click on "Remix". Now you have a project copy that you can continue working on.
