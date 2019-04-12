@@ -34,7 +34,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Minesweeper - Finde die Bomben](/trainingsanleitungen/scratch/scratch-minesweeper-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Weihnachtsspiel 2016 - Dekoriere den Weihnachtsbaum](/trainingsanleitungen/scratch/scratch-weihnachten-2016.html)
 1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/scratch/scratch-labyrinth-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
-1. [Chess - Programmiere einen Computerspieler für Schach](/trainingsanleitungen/scratch/scratch-chess-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
+1. [Chess - Programmiere einen Computerspieler für Schach](/trainingsanleitungen/scratch/scratch-chess-v3.html) | [Chess - English Version](/trainingsanleitungen/scratch/en/scratch-chess-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Moonhack - Lande auf dem Mond](/trainingsanleitungen/scratch/scratch-moonhack.html)
 1. [Pakete fangen - Fange die Geschenke für Weihnachten](/trainingsanleitungen/scratch/scratch-pakete-fangen.html)
 
