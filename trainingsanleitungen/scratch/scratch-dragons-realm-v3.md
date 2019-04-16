@@ -19,7 +19,7 @@ Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindring
 Mit den Pfeiltasten lenkst du den Drachen um den Pfeilen der Ritter auszuweichen (du kannst auch zwei Tasten gleichzeitig drücken; mit ↑ und → fliegt man zum Beispiel nach rechts oben). Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen.
 Damit das Spiel auch auf Tablets und Handys funktioniert, wurde nachträglich eine Maus/Touch-Steuerung eingebaut. Generell ist das Spielerlebnis mit der Tastatur aber besser. Hier kannst du das fertige Projekt schon einmal ausprobieren: [https://scratch.mit.edu/projects/81928816](https://scratch.mit.edu/projects/81928816)
 
-Dragons Realm beinhaltet viele Grafiken. Du kannst die vorgefertigten Figuren mit allen Kostümen (aber ohne Skripte) hier herunterladen. Auch die Hintergrundmusik findest du hier als .wav-Datei.
+Dragons Realm beinhaltet viele Grafiken. Du kannst die vorgefertigten Figuren mit allen Kostümen (aber ohne Skripte) vorab herunterladen. Auch die Hintergrundmusik findest du hier als .wav-Datei.
 
 ## Downloads
 
@@ -39,7 +39,7 @@ Dragons Realm beinhaltet viele Grafiken. Du kannst die vorgefertigten Figuren mi
 
 ## Die Figuren
 
-Nun da du die Figuren heruntergeladen hast, können wie sie in dein neuen Projekt importieren. Lege dazu ein Scratch Projekt an. Bewege dann die Maus im Figuren-Panel über das "Figur wählen" Symbol. Ein blaues Menü erscheint. Klicke dort "Figur hochladen", und wähle "Dragon.sprite3" aus dem lokalen Dateisystemen aus. Wiederhole diesen Schritt für alle anderen Figuren.
+Nun können wir die Figuren in dein neues Projekt importieren. Lege dazu ein Scratch Projekt an. Bewege dann die Maus im Figuren-Panel über das "Figur wählen" Symbol. Klicke dort "Figur hochladen", und wähle "Dragon.sprite3" aus dem lokalen Dateisystemen aus. Wiederhole diesen Schritt für alle weiteren Figuren.
 
 ![SpriteUpload](scratch-dragons-realm-v3/sprite-upload.png)
 
@@ -92,7 +92,7 @@ Bitte achte genau darauf, dass du die richtige Auswahl zwischen *Für alle Figur
 |ShootSpearX|Für alle Figuren|
 |ShootSpearY|Für alle Figuren|
 
-Die Bühne sollte danach folgende Variable beinhalten (das sind jene die als "Für alle Figuren" definiert wurden). Du kannst sie auch direkt in der Bühne anlegen:
+Die Bühne sollte danach folgende Variable beinhalten (das sind jene die "Für alle Figuren" definiert wurden). Du kannst diese Variablen auch direkt in der Bühne anlegen:
 
 ![DragonVars](scratch-dragons-realm-v3/stage-vars.png)
 
