@@ -16,10 +16,10 @@ scratch-data: 11
 ![Dragons](scratch-dragons-realm-v3/dragons.png)
 
 Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindringende Raubritter verteidigt.
-Mit den Pfeiltasten lenkst du den Drachen um den Pfeilen der Ritter ausweichen zu können (du kannst auch zwei Tasten gleichzeitig drücken; mit ↑ und → fliegt man zum Beispiel nach rechts oben). Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen.
+Mit den Pfeiltasten lenkst du den Drachen um den Pfeilen der Ritter auszuweichen (du kannst auch zwei Tasten gleichzeitig drücken; mit ↑ und → fliegt man zum Beispiel nach rechts oben). Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen.
 Damit das Spiel auch auf Tablets und Handys funktioniert, wurde nachträglich eine Maus/Touch-Steuerung eingebaut. Generell ist das Spielerlebnis mit der Tastatur aber besser. Hier kannst du das fertige Projekt schon einmal ausprobieren: [https://scratch.mit.edu/projects/81928816](https://scratch.mit.edu/projects/81928816)
 
-Dragons Realm beinhaltet viele Grafiken. Du kannst die vorgefertigten Figuren mit allen Kostümen (bar ohne Skripte) hier herunterladen. Auch die Hintergrundmusik findest du hier als wav-Datei.
+Dragons Realm beinhaltet viele Grafiken. Du kannst die vorgefertigten Figuren mit allen Kostümen (aber ohne Skripte) hier herunterladen. Auch die Hintergrundmusik findest du hier als .wav-Datei.
 
 ## Downloads
 
@@ -39,17 +39,17 @@ Dragons Realm beinhaltet viele Grafiken. Du kannst die vorgefertigten Figuren mi
 
 ## Die Figuren
 
-Nun da du die Figuren heruntergeladen hast, können wie sie in dein neuen Projekt importieren. Lege dazu ein neues Scratch Projekt an. Bewege dann die Maus im Figuren-Panel über das "Figur wählen" Symbol. Ein blaues Menü erscheint. Klicke dort "Figur hochladen", und wähle "Dragon.sprite3" aus dem lokalen Dateisystemen aus. Wiederhole diesen Schritt für alle Figuren.
+Nun da du die Figuren heruntergeladen hast, können wie sie in dein neuen Projekt importieren. Lege dazu ein Scratch Projekt an. Bewege dann die Maus im Figuren-Panel über das "Figur wählen" Symbol. Ein blaues Menü erscheint. Klicke dort "Figur hochladen", und wähle "Dragon.sprite3" aus dem lokalen Dateisystemen aus. Wiederhole diesen Schritt für alle anderen Figuren.
 
 ![SpriteUpload](scratch-dragons-realm-v3/sprite-upload.png)
 
 ## Die Bühne
 
-Die Bühne benötigen wir für den Startbildschirm und die Game Over Anzeige, um die gesammelten Punkte und die verbleibenden Drachenleben anzuzeigen, und um die Hintergrundmusik abzuspielen. Klicke im Panel "Bühne" auf "Wähle ein Bühnenbild" / "Malen" oder "Nühnenbild hochladen", und erstelle zwei Bühnenbilder - eines namens "StartScreen", und eines namens "GameOver". Lade außerdem unter "Klänge" die Hintergrundmusik "Medieval.wav" hoch. Klicke dazu auf *Klänge* / *Klang wählen* / *Klang hochladen*.
+Die Bühne benötigen wir für den Startbildschirm und die Game-Over Anzeige, um die gesammelten Punkte und die verbleibenden Drachenleben darzustellen, und um die Hintergrundmusik abzuspielen. Klicke im Panel "Bühne" auf "Wähle ein Bühnenbild" / "Malen" oder "Nühnenbild hochladen", und erstelle zwei Bühnenbilder - eines namens "StartScreen", und eines namens "GameOver". Lade außerdem unter "Klänge" die Hintergrundmusik "Medieval.wav" hoch. Klicke dazu auf *Klänge* / *Klang wählen* / *Klang hochladen*.
 
 ## Die Codeblöcke
 
-Beginnen wir mit den Variablen, die wir global bzw. je Figur anlegen müssen. 
+Jetzt schreiben wir den Code von Dragons. Beginnen wir mit den Variablen, die wir global bzw. je Figur anlegen müssen. 
 Bitte achte genau darauf, dass du die richtige Auswahl zwischen *Für alle Figuren* und *Nur für diese Figur* triffst:
 
 |Variable|Figur|
@@ -98,10 +98,9 @@ Die Bühne sollte danach folgende Variable beinhalten (das sind jene die als "F�
 
 ## Code der Figur Dragon
 
-Wir wollen den Drachen lenken und Feuerbälle abfeuern.
+Wir wollen den Drachen steuern und Feuerbälle abfeuern.
 Gleichzeitig müssen wir dafür sorgen, dass der Drache immer die Flügel bewegt.
-Das nennt man eine Animation.
-In dem *StartAnimation* Codeblock werden laufend Kostüme ausgetauscht, um für die Flügelbewegung zu sorgen.
+Im *StartAnimation* Nachrichten-Codeblock werden laufend Kostüme ausgetauscht, um für die Flügelbewegung zu sorgen.
 Im Skript *StartControl* ist die Tastatur- und Maus-Steuerung des Drachen implementiert.
 
 ![DragonCode1](scratch-dragons-realm-v3/dragon-code1.png)
@@ -115,12 +114,12 @@ Der Drache sollte sich jetzt eigentlich schon steuern lassen und mit den Flügel
 ## Code der Figur Background
 
 Die Figur *Background* enthält das Gras, über das der Drache fliegt.
-Dennoch ist das kein Bühnenbild, denn wir wollen, dass sich die Landschaft bewegt. Wir zeichnen daher die Figur "Grass" mehrmals um ein paar Pixel versetzt, um einen Scrolling-Effekt zu erzielen und den gesamten Bildschirm damit auszufüllen
+Dennoch ist das kein Bühnenbild, denn wir wollen, dass sich die Landschaft bewegt. Wir zeichnen daher die das Kostüm "Grass" mehrmals um ein paar Pixel versetzt, um einen Scrolling-Effekt zu erzielen und den gesamten Bildschirm damit auszufüllen.
 
 ## Code der Figur Fireball
 
 Der Feuerball wird abgeschossen, wenn er die Nachricht *Shoot* erhält.
-Da wir immer wieder Feuerbälle brauchen, wird er als Klon angelegt.
+Da wir immer wieder Feuerbälle brauchen, wird er als Klon angelegt. Damit könnte man dann auch mit etwas anderem Code mehrere Feuerbälle gleichzeitig abfeuern.
 Im Hauptskript wird das passende Kostüm gewählt, danach bewegt sich der Feuerball rasch in der Richtung, in die der Drache zu dem Zeitpunkt blickt.
 
 ![FireballCode](scratch-dragons-realm-v3/fireball-code.png)
@@ -140,18 +139,18 @@ Dabei ist die Reihenfolge der Klone wichtig, damit weiter vorne liegende Objekt 
 
 ## Code der Figur Knight
 
-Unser letztes Figuren-Skript ist für den Ritter.
+Unser letztes Figuren-Skript ist jenes für den Ritter.
 Ritter erscheinen zufällig, und müssen zuerst an einer freien Position platziert werden.
 Das fragen wir mittels einer *wird Tiles berührt* Kondition ab. Danach wandert der Ritter weiter, bis er auf ein Hindernis trifft, woraufhin er seine Richtung wieder ändert.
 
 Berührt der Ritter den Feuerball, so erstarrt er (die Variable *Frozen* wird auf 1 gesetzt, und er wird zu Stein und bewegt sich nicht mehr).
 
-![KnightCode](scratch-dragons-realm-v3/knight-code-1.png)
+![KnightCode](scratch-dragons-realm-v3/knight-code1.png)
 
-![KnightCode](scratch-dragons-realm-v3/knight-code-2.png)
+![KnightCode](scratch-dragons-realm-v3/knight-code2.png)
 
-![KnightCode](scratch-dragons-realm-v3/knight-code-3.png)
+![KnightCode](scratch-dragons-realm-v3/knight-code3.png)
 
-## Ausprobieren
+## Probier es aus!
 
 Funktioniert dein Projekt? Wenn etwas noch nicht ganz klappt, kannst du deinen Code auch mit der Musterlösung unter [https://scratch.mit.edu/projects/81928816](https://scratch.mit.edu/projects/81928816) vergleichen.
