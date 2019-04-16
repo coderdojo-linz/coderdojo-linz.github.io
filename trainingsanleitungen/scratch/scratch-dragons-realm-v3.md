@@ -120,6 +120,8 @@ Der Drache sollte sich jetzt eigentlich schon steuern lassen und mit den Flügel
 Die Figur *Background* enthält das Gras, über das der Drache fliegt.
 Dennoch ist das kein Bühnenbild, denn wir wollen, dass sich die Landschaft bewegt. Wir zeichnen daher die das Kostüm "Grass" mehrmals um ein paar Pixel versetzt, um einen Scrolling-Effekt zu erzielen und den gesamten Bildschirm damit auszufüllen.
 
+![BackgroundCode](scratch-dragons-realm-v3/background-code.png)
+
 ## Code der Figur Fireball
 
 Der Feuerball wird abgeschossen, wenn er die Nachricht *Shoot* erhält.
