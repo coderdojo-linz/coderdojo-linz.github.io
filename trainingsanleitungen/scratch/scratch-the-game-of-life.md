@@ -13,7 +13,7 @@ scratch-data: 20
 
 # The Game of Life
 
-Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“ (schwarz). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
+Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“ (farbig). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
 
 * Eine tote Zelle mit genau drei lebenden Nachbarn wird neu geboren
 * Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben an Einsamkeit
@@ -38,7 +38,9 @@ Wir benötigen nur zwei Figuren namens „Selection“ und „Grid“. Selection
 
 ![Kostüme Selection](scratch-the-game-of-life/kostueme-selection.png)
 
-Für die Figur Selection benötigen wir sechs Kostüme für die sechs Kommandos, die man via Mausklick ausführen kann. Verwende dazu das Textwerkzeug, und schreibe die Namen der Kommandos wie oben angegeben in das Zeichenfeld. Setze den Drehpunkt der Kostüme jeweils in das linke untere Eck des Textbereichs. Wähle den Textbereich nicht zu groß, damit die Befehle nebeneinander Platz haben. Eine Höhe von 18 Pixeln geht sich gut aus. Du kannst das Textfeld auch nachträglich kleiner machen.
+Für die Figur Selection benötigen wir sechs Kostüme für die sechs Kommandos, die man via Mausklick ausführen kann. Verwende dazu das Textwerkzeug, und schreibe die Namen der Kommandos wie oben angegeben in das Zeichenfeld. Setze den Drehpunkt der Kostüme jeweils in das linke untere Eck des Textbereichs. Wähle den Textbereich nicht zu groß, damit die Befehle nebeneinander Platz haben. Eine Höhe von etwa 20 Pixeln geht sich gut aus. Alternativ kannst du die Figur ohne Skripte auch hier herunterladen und in dein Projekt importieren:
+
+[Selection.sprite2](scratch-the-game-of-life/Selection.sprite2)
 
 Die Skripte von Selection sind relativ einfach. Sie dienen dazu die Menükommandos zu zeichnen, und bei Mausklick entsprechende Nachrichten an das Grid zu senden:
 
@@ -110,3 +112,7 @@ Pulsar:<br/>
 ## Ausprobieren
 
 Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/96326891](https://scratch.mit.edu/projects/96326891){:target="_blank"} ausprobieren.
+
+Diese Variante wurde weiter verbessert, und berechnet bzw. zeichnet ein Grid mit hundertfacher Zellenanzahl in zehnfacher Geschwindigkeit (Gesamt-Speedup = 1000). Das wird erreicht, indem das Programm sich merkt welche Zellen zuletzt verändert wurden, und welche Nachbarzellen neu berechnet werden müssen. Weiters werden 65536 Zellengruppen-Veränderungen zu Beginn einmal vorberechnet, und müssen dann nicht jedesmal neu kalkuliert werden. Und das Grid wird nicht als Zeichenkette gespeichert, sondern als Liste von Zahlen, wobei eine Zahl gleich mehrere Zellen beinhaltet.
+
+Die Skripte werden dadurch allerdings auch etwas komplizierter. Solche Geschwindigkeitsverbesserungen sind eine wichtige Aufgabe in der Software-Entwicklung. 
