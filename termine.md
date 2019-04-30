@@ -81,8 +81,8 @@ Es gibt zwei verschiedene Veranstaltungen:
 				}
 
 				row += "<tr>";
-				if (formattedDate == "2018-07-20") {
-					row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - open end</td>";
+				if (formattedDate == "2019-05-24") {
+					row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 15:30 - 17:30</td>";
 				} else {
 					row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
 				}
