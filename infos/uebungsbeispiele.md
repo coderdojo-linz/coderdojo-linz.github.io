@@ -30,7 +30,7 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Weihnachtsspiel - Wie viele Geschenke schaffst du in 60 Sekunden?](/trainingsanleitungen/scratch/scratch-weihnachten.html)
 1. [Sierpinski Dreieck - Male ein Fraktal](/trainingsanleitungen/scratch/scratch-sierpinski-dreieck.html)
 1. [Pac Man - Friss dich durch's Labyrinth](/trainingsanleitungen/scratch/scratch-pac-man-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
-1. [The Game of Life - Erwecke Zellen zum Leben](/trainingsanleitungen/scratch/scratch-the-game-of-life.html)
+1. [The Game of Life - Erwecke Zellen zum Leben](/trainingsanleitungen/scratch/scratch-the-game-of-life-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Minesweeper - Finde die Bomben](/trainingsanleitungen/scratch/scratch-minesweeper-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Weihnachtsspiel 2016 - Dekoriere den Weihnachtsbaum](/trainingsanleitungen/scratch/scratch-weihnachten-2016.html)
 1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/scratch/scratch-labyrinth-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
