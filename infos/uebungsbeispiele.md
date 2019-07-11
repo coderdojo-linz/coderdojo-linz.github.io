@@ -30,13 +30,14 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 1. [Weihnachtsspiel - Wie viele Geschenke schaffst du in 60 Sekunden?](/trainingsanleitungen/scratch/scratch-weihnachten.html)
 1. [Sierpinski Dreieck - Male ein Fraktal](/trainingsanleitungen/scratch/scratch-sierpinski-dreieck.html)
 1. [Pac Man - Friss dich durch's Labyrinth](/trainingsanleitungen/scratch/scratch-pac-man-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
-1. [The Game of Life - Erwecke Zellen zum Leben](/trainingsanleitungen/scratch/scratch-the-game-of-life.html)
+1. [The Game of Life - Erwecke Zellen zum Leben](/trainingsanleitungen/scratch/scratch-the-game-of-life-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Minesweeper - Finde die Bomben](/trainingsanleitungen/scratch/scratch-minesweeper-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Weihnachtsspiel 2016 - Dekoriere den Weihnachtsbaum](/trainingsanleitungen/scratch/scratch-weihnachten-2016.html)
 1. [Finde den Weg aus dem Labyrinth (Scratch/JavaScript)](/trainingsanleitungen/scratch/scratch-labyrinth-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Chess - Programmiere einen Computerspieler für Schach](/trainingsanleitungen/scratch/scratch-chess-v3.html) \| [Chess - English Version](/trainingsanleitungen/scratch/en/scratch-chess-v3.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 1. [Moonhack - Lande auf dem Mond](/trainingsanleitungen/scratch/scratch-moonhack.html)
 1. [Pakete fangen - Fange die Geschenke für Weihnachten](/trainingsanleitungen/scratch/scratch-pakete-fangen.html)
+1. [Whack a Gopher - Verjage die Gopher mit dem Besen](/trainingsanleitungen/scratch/scratch-whack-a-gopher.html) <span class="badge badge-scratch3">Scratch 3.0</span>
 
 Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) findest die ausprogrammierten Übungsbeispiele, und kannst sie gleich einmal ausprobieren. Und du kannst deine eigenen Projekte zum Studio hinzufügen - egal ob nachprogrammiert oder Eigenkreation! Melde dich dazu bei Scratch an, und schreibe eine kurze Info mit Link auf dein Projekt in die [CoderDojo Linz Scratch Studio Kommentare](https://scratch.mit.edu/studios/4562124/comments/). Oder gib einfach einem Mentor im CoderDojo Bescheid. Dann wird dein Programm Teil des Studios, und alle Scratcher in Linz und weltweit können es sehen und verwenden. Dein Projekt muss öffentlich sein - klicke dazu im Projekt auf "Veröffentlichen". Um Mitglied im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) zu werden, musst du im Studio nur auf den blauen "Folgen" Button klicken.
 

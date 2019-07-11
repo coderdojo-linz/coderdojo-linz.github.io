@@ -94,11 +94,7 @@ Bitte achte genau darauf, dass du die richtige Auswahl zwischen *Für alle Figur
 
 Die Bühne sollte danach folgende Variable beinhalten (das sind jene die "Für alle Figuren" definiert wurden). Du kannst diese Variablen auch direkt in der Bühne anlegen:
 
-![DragonVars](scratch-dragons-realm-v3/stage-vars.png)
-
-## Code der Bühne
-
-![StageCode](scratch-dragons-realm-v3/dragon-code1.png)
+![StageVars](scratch-dragons-realm-v3/stage-vars.png)
 
 ## Code der Figur Dragon
 
