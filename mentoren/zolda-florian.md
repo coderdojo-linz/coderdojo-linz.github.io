@@ -6,5 +6,6 @@ image: /mentoren/images/florian-zolda.jpg
 page-category: mentor
 ---
 
-Florian Zolda studiert seit 2012 in Hagenberg und hat dort bereits sein Bachelorstudium in "Kommunikation, Wissen und Medien" abgeschlossen. Derzeit befindet er sich im Masterstudium "Interactive Media", ebenfalls in Hagenberg, in dem er sich auf Web- und Gamedevelopment spezialisiert. 
-Außerhalb des Studiums beschäftigt sich Florian gerne mit Scriptsprachen wie Python in denen man kleine Ideen schnell und einfach umsetzen kann.
+Florian Zolda hat "Kommunikation, Wissen, Medien" in Hagenberg studiert und ist bereits seit seiner frühen Jugend von Technik begeistert. Aktuell ist er als Software Entwickler und Projekt Manager tätig, was ihn jeden Tag vor neue interessante Herausforderungen stellt.
+
+Außerhalb der Arbeit beschäftigt sich Florian gerne mit Scriptsprachen wie Python in denen man kleine Ideen schnell und einfach umsetzen kann.
