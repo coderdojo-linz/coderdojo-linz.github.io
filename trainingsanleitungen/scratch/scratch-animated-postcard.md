@@ -1,4 +1,15 @@
-# Animierte Ansichtskarte <div class="scratch_label">Scratch 3.0</div>
+---
+layout: sushi
+title: Animierte Ansichtskarte
+description: Die gute alte Ansichtskarte mit Briefmarke war Gestern - heute bauen wir uns unsere eigene animierte Karte und verschicken sie an unsere Freunde.
+scratch-images:
+- scratch-animated-postcard/projekt_veröffentlichen_beschreibung.jpg
+scratch-level: 3
+scratch-sprites: 2
+scratch-scripts: 5
+---
+
+# Animierte Ansichtskarte <span class="badge badge-scratch3">Scratch 3.0</span>
 
 Die gute alte Ansichtskarte mit Briefmarke war Gestern - heute bauen wir uns unsere eigene animierte Karte und verschicken sie an unsere Freunde. 
 
