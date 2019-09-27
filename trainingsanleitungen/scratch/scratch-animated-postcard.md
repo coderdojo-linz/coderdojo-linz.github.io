@@ -111,9 +111,9 @@ Falls Du die Ansichtskarte als Einladung zu deiner Feier verschickst, dann beden
 Deine Ansichtskarte veröffentlichst du wie folgt:
 
 1. Klick auf den Knopf **Veröffentlichen**.  
-![Projekt veröffentlichen](scratch-animated-postcard/projekt_veröffentlichen.jpg)  
+![Projekt veröffentlichen](scratch-animated-postcard/projekt_veroeffentlichen.jpg)  
 2. Damit sich die Empfänger Deiner Karte auskennen, was zu tun ist, kannst du ihnen im Textfeld **Anleitung** eine kurze Anleitung hinterlassen.  
-![Anleitung hinzufügen](scratch-animated-postcard/projekt_veröffentlichen_beschreibung.jpg)  
+![Anleitung hinzufügen](scratch-animated-postcard/projekt_veroeffentlichen_beschreibung.jpg)  
 
 ## Schritt 7: Deine Ansichtskarte verschicken
 
