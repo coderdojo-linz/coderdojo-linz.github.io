@@ -159,25 +159,6 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [MAKERbuino Build Guide](/trainingsanleitungen/microbit-erweiterungen/MakerBuino Guide4.pdf){:target="_blank"}
 1. [EDU days 2018 - micro:bit Temeraturmessung](/trainingsanleitungen/microbit-erweiterungen/edudays18_microbit-2.pdf){:target="_blank"}
 
-## Arduino
-
-1. [Arduino Nano V3 Tutorial](/trainingsanleitungen/arduino/Arduino-NanoV3-Start.pdf){:target="_blank"}
-1. [Einführung in Arduino](/trainingsanleitungen/arduino/Arduino-Uno-Start.pdf){:target="_blank"}
-1. [Arduino Retro-Spielkonsole](/trainingsanleitungen/arduino/Arduino-UNO-Spielkonsole.pdf){:target="_blank"}
-1. [Introduction to Grove](/trainingsanleitungen/arduino/Introduction to Grove.pdf){:target="_blank"}
-1. [Arduino Nano Pinout Diagramm](/trainingsanleitungen/arduino/Arduino-NanoV3-PinOut.pdf){:target="_blank"}
-1. [Arduino UNO Pinout Diagramm](/trainingsanleitungen/arduino/Arduino-UNO-Pin.png){:target="_blank"}
-1. [Grove Starter Kit](/trainingsanleitungen/arduino/Grove Starter Kit.pdf){:target="_blank"}
-
-## Löten
-
-1. [Grundlagen Löten](/trainingsanleitungen/loeten/Grundlagen Loeten.pdf){:target="blank"}
-1. [Löttechnik - Das sollte man wissen](https://www.reichelt.de/magazin/how-to/loettechnik-das-sollte-man-wissen/){:target="blank"}
-1. [Lötfibel](https://www.wetec.de/files/wetec_dl_datenblatt_technik-0002-file-loetfibel_rev_2012_deu.pdf){:target="blank"}
-1. [Deine erste Elektronik-Schaltung](/trainingsanleitungen/loeten/wechselblinker.html)
-1. [BlinkenRocket V2 Anleitung](/trainingsanleitungen/loeten/BlinkenRocket-manual.pdf){:target="blank"}
-1. [Aufbauanleitung für Kartonbausatz](http://www.electronicum.at/service/aufbauanleitung_karton.pdf){:target="blank"}
-
 ## C
 
 1. [Space Shooter](/trainingsanleitungen/c/space-shooter.html)

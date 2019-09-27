@@ -84,6 +84,8 @@ Außerdem sollen Kinder und Jugendliche im CoderDojo gemeinsam Dinge ausprobiere
 
 Begleitpersonen sind natürlich herzlich eingeladen, als Mentoren oder anderweitige Helfer mitzuwirken. Bei einem CoderDojo gibt es auch viele Dinge abseits von Programmieren, die zu tun sind. Je mehr helfende Hände da sind, desto mehr können sich die Mentoren auf die Arbeit mit den Kindern und Jugendlichen konzentrieren.
 
+Beim Löten im Speziellen ist es von Vorteil, wenn die Begleitpersonen die Kinder unterstützen und darauf achten, dass sie mit dem Werkzeug richtig umgehen. Darüber hinaus haben die Kinder eventuell mehr Spaß daran, wenn mit den Eltern gemeinsam ein Projekt umgesetzt wird.
+
 Als Programmierclub möchten wir natürlich auch moderne Wege zur Kommunikation mit Teilnehmern, Eltern, Mentoren und Medien nutzen (z.B. Blogs, Facebook, Twitter). Sollten Sie keine Fotos Ihres Kindes wünschen, bitten wir Sie um einen entsprechenden Hinweis persönlich beim CoderDojo oder per Email ([Kontaktinformationen](http://coderdojo-linz.github.io/kontakt.html)). 
 
 
