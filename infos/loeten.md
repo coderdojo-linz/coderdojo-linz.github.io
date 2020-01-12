@@ -53,14 +53,14 @@ Teilnehmen können Kinder und Jugendliche im Alter von 8 bis 17 Jahren. Es sind 
 
 ## Arduino
 
-1. [Arduino Nano Pinout Diagramm](/trainingsanleitungen/arduino/Arduino-NanoV3-PinOut.gif){:target="blank"}
-1. [Arduino Nano V3 Tutorial](/trainingsanleitungen/arduino/Arduino-NanoV3-Start.gif){:target="blank"}
+1. [Arduino Nano Pinout Diagramm](/trainingsanleitungen/arduino/Arduino-NanoV3-PinOut.pdf){:target="blank"}
+1. [Arduino Nano V3 Tutorial](/trainingsanleitungen/arduino/Arduino-NanoV3-Start.pdf){:target="blank"}
 1. [Arduino UNO Pinout Diagramm](/trainingsanleitungen/arduino/Arduino-UNO-Pin.png){:target="blank"}
-1. [Arduino UNO V3 Tutorial](/trainingsanleitungen/arduino/Arduino-Uno-Start.gif){:target="blank"}
-1. [Grove Einführung](/trainingsanleitungen/arduino/Grove Introduction .gif){:target="blank"}
-1. [Grove Starter Kit](/trainingsanleitungen/arduino/Grove Starter Kit.gif){:target="blank"}
-1. [PS2 Joystick Shield](/trainingsanleitungen/arduino/Ps2GamePad.gif){:target="blank"}
-1. [PS2 Joystick Shield (alt)](/trainingsanleitungen/arduino/Ps2GamePad-old.gif){:target="blank"}
+1. [Arduino UNO V3 Tutorial](/trainingsanleitungen/arduino/Arduino-Uno-Start.pdf){:target="blank"}
+1. [Grove Einführung](/trainingsanleitungen/arduino/Grove Introduction.pdf){:target="blank"}
+1. [Grove Starter Kit](/trainingsanleitungen/arduino/Grove Starter Kit.pdf){:target="blank"}
+1. [PS2 Joystick Shield](/trainingsanleitungen/arduino/Ps2GamePad.pdf){:target="blank"}
+1. [PS2 Joystick Shield (alt)](/trainingsanleitungen/arduino/Ps2GamePad-old.pdf){:target="blank"}
 
 ## NodeMCU-ESP
 
