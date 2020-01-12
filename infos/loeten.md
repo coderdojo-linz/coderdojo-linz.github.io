@@ -32,10 +32,17 @@ Teilnehmen können Kinder und Jugendliche im Alter von 8 bis 17 Jahren. Es sind 
 1. [Grundlagen Löten](/trainingsanleitungen/loeten/grundlagen/Grundlagen Loeten.pdf){:target="blank"}
 1. [Löten ist einfach](/trainingsanleitungen/loeten/grundlagen/Loeten-ist-einfach.pdf){:target="blank"}
 1. [Kurzanleitung Kartonbausatz](/trainingsanleitungen/loeten/grundlagen/Kurzanleitung-Kartonbausatz.pdf){:target="blank"}
+
+## Übungen Löten
+
 1. [Lötübung Ars Electronica Festival 2019](/trainingsanleitungen/loeten/grundlagen/Loetuebung-Ars-Electroika-Festival-2019.pdf){:target="blank"}
 1. [LED Bilder](/trainingsanleitungen/loeten/grundlagen/LED-Bilder.pdf){:target="blank"}
 1. [Clown](/trainingsanleitungen/loeten/grundlagen/Clown-AP.pdf){:target="blank"}
 1. [BlinkenRocket Manual](/trainingsanleitungen/loeten/grundlagen/BlinkenRocket-manual.pdf){:target="blank"}
+1. [Lötübung Messung](/trainingsanleitungen/loeten/uebungen/Loetuebung-Messung.pdf){:target="blank"}
+1. [Elektronik Übung 1](/trainingsanleitungen/loeten/uebungen/Elektronik Uebung1.pdf){:target="blank"}
+1. [Elektronik Übung 2](/trainingsanleitungen/loeten/uebungen/Elektronik Uebung2.pdf){:target="blank"}
+1. [Elektronik Übung 3](/trainingsanleitungen/loeten/uebungen/Elektronik Uebung3.pdf){:target="blank"}
 
 ## Bauteile - Sensoren - Daten
 
