@@ -240,6 +240,14 @@ Attribute der Linie wie z.B. die Linienfarbe oder Liniendicke ändern. Als Ausga
 		strokeWidth: maxEbene - ebene
 	});
 
+Damit die Farbe auch sichtbar wird müssen wir noch `stroke: black;` aus dem `<style>`-Block von oben entfernen. Es bleibt also nur das `fill: none;` übrig.
+
+		<style>
+			line, circle, ellipse, rect, text, path {
+				fill: none;
+			}
+		</style>
+
 ![Fraktal Baum 4](svg-fraktalbaum/images/fraktal-baum-4.png)
 
 Damit der Baum noch besser aussieht, kannst du mehr Ebenen malen lassen. Erhöhe dazu die Variable `maxEbene`. Sei aber vorsichtig beim Auswählen des Wertes, denn in jeder Ebene 
