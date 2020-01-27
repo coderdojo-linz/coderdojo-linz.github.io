@@ -16,6 +16,8 @@ Es gibt zwei verschiedene Veranstaltungen:
 
 - <span class="type-playground">Playground</span>: Beim Playground hast du Gelegenheit, im Umfeld von anderen jungen Codern selbständig an deinen Projekten zu arbeiten und zu üben. Mentorinnen und Mentoren stehen hier weniger zur Verfügung. Zu diesen Veranstaltungen kommen üblicherweise 15 bis 25 junge Coder. [Mehr über Playgrounds&nbsp;...](/infos/playground.html)
 
+- <span class="type-classroom">Classroom</span>: CoderDojo Classroom besteht aus mehreren Terminen, die aufeinander aufbauen. Wenn du dich zum CoderDojo Classroom anmeldest, solltest du dann bei allen Terminen dabei sein.
+
 <table class="table" id="eventsTable">
 	<thead>
 		<tr>
@@ -81,22 +83,39 @@ Es gibt zwei verschiedene Veranstaltungen:
 				}
 
 				row += "<tr>";
-				if (formattedDate == "2019-05-24") {
-					row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 15:30 - 17:30</td>";
+				if (event.type == "classroom") {
+					row += "<td>";
+                    for (var i = 0; i < event.dates.length; i++) {
+                        var classroomDate = moment(new Date(event.dates[i])).startOf("day");
+                        row += "<span class='nowrap'>" + classroomDate.format("dddd, DD. MMMM YYYY") + "</span>" + "<br/>16:00 - 18:00<br/>";
+                    }
+                    row += "</td>";
 				} else {
-					row += "<td>" + date.format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
+					row += "<td><span class='nowrap'>" + date.format("dddd, DD. MMMM YYYY") + "</span><br/>16:00 - 18:00</td>";
 				}
 
 				if (event.type == "playground") {
 					row += "<td class='type-playground'>Playground";
 				} else if (event.type == "bootcamp") {
 					row += "<td class='type-bootcamp'>Bootcamp";
+                } else if (event.type == "classroom") {
+					row += "<td class='type-classroom'>Classroom";
 				} else {
 					row += "<td class='type-coderdojo'>CoderDojo";
 				}
 				row += "</td>";
 
 				row += "<td>";
+
+                if (event.type == "classroom") {
+                    row += "<b>CoderDojo Classroom - " + event.title + "</b>";
+                    row += "<br/><br/>";
+                    row += event.description;
+                    row += "<br/><br/>";
+                    var mailBody = "Hallo CoderDojo Team,%0D%0A%0D%0Aich möchte mich zum Kurs CoderDojo Classroom - " + event.title + " anmelden.%0D%0A%0D%0AVorname: %0D%0ANachname: %0D%0AAlter: %0D%0A";
+                    row += "<b>Anmeldung unter <a href='mailto:info@coderdojo-linz.org?subject=Anmeldung zu CoderDojo Classroom - " + event.title + "&body=" + mailBody + "'>info@coderdojo-linz.org</a></b>";
+                    row += "<br/><br/>";
+                }
 
 				/*if (event.type == "playground") {
 					row += "Playground<br/>";
@@ -117,11 +136,6 @@ Es gibt zwei verschiedene Veranstaltungen:
 					}
 				}
 
-				if (formattedDate == "2017-06-02") {
-					row += "<div class=\"sponsor\"><div>Der Robotics Workshop bei diesem CoderDojo wird von <a href=\"http://www.sparxsystems.at\" target=\"_blank\">Sparx Systems</a>, <a href=\"https://www.microsoft.com/de-at\" target=\"_blank\">Microsoft</a>, <a href=\"https://www.aec.at/\" target=\"_blank\">Ars Electronica</a> und <a href=\"http://www.voesi.or.at/\" target=\"_blank\">VÖSI</a> gesponsert.</div><img src=\"images/sponsors_20170602.jpg\" style=\"width: 100%; margin-top: 5px; margin-bottom: 0;\" /></div>";
-				} else if (formattedDate == "2017-06-23") {
-					row += "<div class=\"sponsor\"><div>Wir feiern den 2. Geburtstag vom CoderDojo Linz! Die Linzer Firma <a href=\"https://www.insite-it.net/en/start-en\" target=\"_blank\">INSITE IT</a> sponsert zu diesem Anlass Kuchen für alle :-). Vielen Dank!</div><a href=\"https://www.insite-it.net/en/start-en\" target=\"_blank\"><img src=\"images/insite-it-logo.png\" style=\"width: 100%; max-width: 250px; margin-top: 5px; margin-bottom: 0;\" /></a></div>";
-				}
 
 				if (event.sponsor) {
 					row += "<br/><span class=\"sponsor\">Sponsored by " + event.sponsor + "</a>";

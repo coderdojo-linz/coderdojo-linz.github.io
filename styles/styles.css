@@ -194,6 +194,14 @@ a, a:hover, a:focus {
   color: #0277bd;
   font-weight: bold; }
 
+.type-classroom {
+    color: #AB33A3;
+    font-weight: bold; }
+
+.nowrap {
+    white-space: nowrap;
+}
+
 /* registration */
 .hide {
   display: none; }
