@@ -87,9 +87,16 @@ Es gibt zwei verschiedene Veranstaltungen:
 					row += "<td>";
                     for (var i = 0; i < event.dates.length; i++) {
                         var classroomDate = moment(new Date(event.dates[i])).startOf("day");
-                        row += "<span class='nowrap'>" + classroomDate.format("dddd, DD. MMMM YYYY") + "</span>" + "<br/>16:00 - 18:00<br/>";
+                        row += "<span class='nowrap'>" + classroomDate.format("dddd, DD. MMMM YYYY") + "</span>" + "<br/>";
+						if (event.title == "Elektronik") {
+							row += "15:00 - 17:30<br/>";
+						} else {
+							row += "16:00 - 18:00<br/>";
+						}
                     }
                     row += "</td>";
+				} else if (event.type == "bootcamp") {
+					row += "<td><span class='nowrap'>" + date.format("dddd, DD. MMMM YYYY") + "</span><br/>13:30 - 18:30</td>";
 				} else {
 					row += "<td><span class='nowrap'>" + date.format("dddd, DD. MMMM YYYY") + "</span><br/>16:00 - 18:00</td>";
 				}
@@ -115,7 +122,14 @@ Es gibt zwei verschiedene Veranstaltungen:
                     var mailBody = "Hallo CoderDojo Team,%0D%0A%0D%0Aich möchte mich zum Kurs CoderDojo Classroom - " + event.title + " anmelden.%0D%0A%0D%0AVorname: %0D%0ANachname: %0D%0AAlter: %0D%0A";
                     row += "<b>Anmeldung unter <a href='mailto:info@coderdojo-linz.org?subject=Anmeldung zu CoderDojo Classroom - " + event.title + "&body=" + mailBody + "'>info@coderdojo-linz.org</a></b>";
                     row += "<br/><br/>";
-                }
+                } else if (event.type == "bootcamp") {
+					row += "<b>" + event.title + "</b>";
+                    row += "<br/><br/>";
+                    row += event.description;
+                    row += "<br/><br/>";
+					row += "<b><a href=\"https://www.globalazurebootcamp.at/junior-bootcamp/\" target=\"_blank\">Weitere Infos ...</a> | <a href=\"https://www.eventbrite.de/e/global-azure-bootcamp-austria-2020-tickets-90274179501\" target=\"_blank\">Zur Anmeldung ...</a></b>";
+					row += "<br/><br/>";
+				}
 
 				/*if (event.type == "playground") {
 					row += "Playground<br/>";
@@ -136,14 +150,12 @@ Es gibt zwei verschiedene Veranstaltungen:
 					}
 				}
 
-
 				if (event.sponsor) {
 					row += "<br/><span class=\"sponsor\">Sponsored by " + event.sponsor + "</a>";
 				}
 
 				row += "</td>";
-
-			
+		
 				row += "</tr>";
 			}
 
