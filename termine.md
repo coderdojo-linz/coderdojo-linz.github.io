@@ -54,6 +54,26 @@ Es gibt zwei verschiedene Veranstaltungen:
 			return a > b ? 1 : a < b ? -1 : 0;
 		});
 
+		var row = "<tr>";
+		row += "<td>Freitag, 20. März 2020</td>";
+		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
+		row += "<td>";
+
+		row += "<p><b>16:00 - 18:00 Elektronik Classroom</b>: Günther vom CoderDojo Linz trifft sich online mit den Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom. Alle, die angemeldet sind, erhalten von Günther direkt die Anleitung, wie man teilnehmen kann.</p>";
+		
+		row += "<p><b>14:00 bis 16:00 C# Web-Programmierworkshop</b>: Hast du schon ein wenig Erfahrung mit C#? Dann könnte dir der C# Web-Programmierworkshop mit Daniel vom CoderDojo Wien Spaß machen.<br/>Link zum Teilnehmen: <a href='http://bit.ly/20-03-19-cd-aspnet' target='_blank'>http://bit.ly/20-03-19-cd-aspnet</a></p>";
+
+		row += "<p><b>14:00 - 16:00 Browser Game mit JavaScript</b>: Hast du schon ein wenig Erfahrung mit HTML und JavaScript? In diesem Fall kannst du mit Rainer vom CoderDojo Linz ein Browser Game mit JavaScript programmieren.<br/>Link zum Teilnehmen: <a href='http://bit.ly/20-03-19-cd-js' target='_blank'>http://bit.ly/20-03-19-cd-js</a></p>";
+
+		row += "<p><b>16:00 - 18:00 Scratch Anfängerworkshop</b>: Peter und Silke laden alle, die noch keine oder wenig Erfahrung beim Programmieren haben, zum Scratch Anfängerworkshop.<br/>Link zum Teilnehmen: <a href='http://bit.ly/20-03-19-cd-scratch' target='_blank'>http://bit.ly/20-03-19-cd-scratch</a></p>";
+
+		row += "<p><b>16:00 - 18:00 Java-Grundlagen</b>: Mit Java kann man so viele interessante Sachen machen. Möchtest du die Grundlagen von Java kennenlernen? Dann passt der Workshop mit Thomas vom CoderDojo Neusiedl am See zum Thema Java-Grundlagen für dich.<br/>Link zum Teilnehmen: <a href='http://bit.ly/20-03-19-cd-java' target='_blank'>http://bit.ly/20-03-19-cd-java</a></p>";
+
+		row += "</td>";
+		row += "</tr>";
+
+		eventsTable.append(row);
+
 		data.forEach(function(event) {
 			var row = "";
 
