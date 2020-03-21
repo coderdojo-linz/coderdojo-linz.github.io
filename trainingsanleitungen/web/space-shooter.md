@@ -32,12 +32,14 @@ Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alle verwendeten T
 
 Unser Projekt verwendet eine Reihe von Node.js Modulen. Diese müssen mit *npm*, den *Node Package Manager* installiert werden.
 
-1. Lade den Code, den du zum Starten brauchst, [von GitHub herunter](https://github.com/rstropek/ts-space-shooter-starter/tree/master){:target="_blank"}
+1. Lade den Code, den du zum Starten brauchst, [von GitHub herunter](https://github.com/rstropek/ts-space-shooter-starter/tree/master){:target="_blank"}:
    ![Download GitHub](space-shooter/GitDownload.png)
+
+1. Pro Tipp: Weißt du schon, was *Git* ist? Natürlich kannst du dann das GitHub Repository auch *klonen*. Es macht nichts, wenn du noch nicht weißt, was das bedeutet.
 
 1. Kopiere den Inhalt der ZIP-Datei, die du heruntergeladen hast, in ein *neues, leeres Verzeichnis*. In dieser Anleitung gehe ich davon aus, dass du das Verzeichnis *c:\temp\shooter* genannt hast.
 
-1. Öffne das *shooter* Verzeichnis in *Visual Studio Code*.
+1. Öffne das *shooter* Verzeichnis in *Visual Studio Code*:
    ![Open Folder VSCode](space-shooter/VSCodeOpenFolder.png)
 
 1. Öffne das *Terminal* in VSCode (*Strg+ö*).
@@ -238,6 +240,10 @@ new Game(config);
 ```
 
 Wechsle zurück zum Browser und probiere, ob du mit den Cursortasten das Spaceship bewegen kannst. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.
+
+**Idee für eigene Erweiterung:**
+
+1. Schaffst du es, den Code so zu ändern, dass man das Raumschiff auch nach oben mit den entsprechenden Cursortasten bewegen kann?
 
 ## Spaceship in eigene Dateien
 
