@@ -970,7 +970,7 @@ Wechsle zurück zum Browser und kontrolliere, ob *Game Over* erscheint, wenn das
 
 **Ideen für eigene Erweiterungen:**
 
-1. *Schwierigkeitsstufe 1*: Zähle mit, wie viele Meteoriten schon getroffen wurden und zeige am *Game Over*-Bildschirm die erreichte Anzahl an.
+1. *Schwierigkeitsstufe 1*: Zähle mit, wie viele Meteoriten schon getroffen wurden und zeige am *Game Over*-Bildschirm die erreichte Anzahl an. Für diese Zusatzaufgabe haben wir im Branch *09-points* eine Musterlösung ausgearbeitet. [Notendige Änderungen...](https://github.com/rstropek/ts-space-shooter-starter/commit/70414ec4a6301ac98c59c12580699ec635533f95)
 
 1. *Schwierigkeitsstufe 2*: Zeige den aktuellen Punktestand laufend am Spielfeldrand an.
 
