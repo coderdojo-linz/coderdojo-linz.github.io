@@ -55,26 +55,24 @@ Es gibt zwei verschiedene Veranstaltungen:
 		});
 
 		var row = "<tr>";
-		row += "<td>Freitag, 20. März 2020</td>";
+		row += "<td>Freitag, 27. März 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
-		row += "<p><b>16:00 - 18:00 Elektronik Classroom</b>: Günther vom CoderDojo Linz trifft sich online mit den Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom. Alle, die angemeldet sind, erhalten von Günther direkt die Anleitung, wie man teilnehmen kann.</p>";
-		
-		row += "<p><b>14:00 bis 16:00 C# Web-Programmierworkshop</b>: Hast du schon ein wenig Erfahrung mit C#? Dann könnte dir der C# Web-Programmierworkshop mit Daniel vom CoderDojo Wien Spaß machen.<br/>Link zum Teilnehmen: <a href='http://bit.ly/20-03-19-cd-aspnet' target='_blank'>http://bit.ly/20-03-19-cd-aspnet</a></p>";
+		row += "<p><b>14:00 - 16:00 Browser Game mit JavaScript</b>: Letzte Woche haben wir schon mit dem Workshop  Browser Game mit JavaScript begonnen. Wir werden die Gruppe aufteilen. Die, die letztes Mal schon dabei waren, machen mit Rainer weiter und stellen das Spiel fertig. Neueinsteiger können in einer eigenen Gruppe mit Matthias und Martina das Workshopbeispiel von vorne beginnen.<br/>Link zum Teilnehmen: <a href='https://bluejeans.com/129412082' target='_blank'>https://bluejeans.com/129412082</a></p>";
 
-		row += "<p><b>14:00 - 16:00 Browser Game mit JavaScript</b>: Hast du schon ein wenig Erfahrung mit HTML und JavaScript? In diesem Fall kannst du mit Rainer vom CoderDojo Linz ein Browser Game mit JavaScript programmieren.<br/>Link zum Teilnehmen: <a href='http://bit.ly/20-03-19-cd-js' target='_blank'>http://bit.ly/20-03-19-cd-js</a></p>";
+		row += "<p><b>16:00 - 18:00 Elektronik Classroom</b>: Günther und Michael treffen sich online mit den Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom. Alle, die angemeldet sind, erhalten von Günther direkt die Anleitung, wie man teilnehmen kann.</p>";
 
-		row += "<p><b>16:00 - 18:00 Scratch Anfängerworkshop</b>: Peter und Silke laden alle, die noch keine oder wenig Erfahrung beim Programmieren haben, zum Scratch Anfängerworkshop.<br/>Link zum Teilnehmen: <a href='http://bit.ly/20-03-19-cd-scratch' target='_blank'>http://bit.ly/20-03-19-cd-scratch</a></p>";
+		row += "<p><b>16:00 - 18:00 Scratch</b>: Natürlich darf Scratch im CoderDojo nicht fehlen. Wir werden die Gruppe aufteilen. Anfängerinnen und Anfänger, die noch nie mit Scratch programmiert haben sind genauso willkommen wie Kids, die schon Scratch-Erfahrung haben.<br/>Link zum Teilnehmen: <a href='https://bluejeans.com/697384178' target='_blank'>https://bluejeans.com/697384178</a></p>";
 
-		row += "<p><b>16:00 - 18:00 Java-Grundlagen</b>: Mit Java kann man so viele interessante Sachen machen. Möchtest du die Grundlagen von Java kennenlernen? Dann passt der Workshop mit Thomas vom CoderDojo Neusiedl am See zum Thema Java-Grundlagen für dich.<br/>Link zum Teilnehmen: <a href='http://bit.ly/20-03-19-cd-java' target='_blank'>http://bit.ly/20-03-19-cd-java</a></p>";
+		row += "<p><b>16:00 - 18:00 Java-Grundlagen</b>: Letzte Woche haben wir schon mit dem Java Workshop begonnen. Diese Woche geht es weiter. Auch bei diesem Workshop können Neueinsteigerinnen und -Einsteiger genauso mitmachen wie Personen, die letzte Woche schon dabei waren.<br/>Link zum Teilnehmen: <a href='https://bluejeans.com/919286147' target='_blank'>https://bluejeans.com/919286147</a></p>";
 
 		row += "</td>";
 		row += "</tr>";
 
 		eventsTable.append(row);
 
-		data.forEach(function(event) {
+		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-03-27'; }).forEach(function(event) {
 			var row = "";
 
 			if (event.type == "header") {
