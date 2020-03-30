@@ -42,11 +42,6 @@ Hier findest du verschiedene Übungsbeispiele für Scratch und HTML.
 
 Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) findest die ausprogrammierten Übungsbeispiele, und kannst sie gleich einmal ausprobieren. Und du kannst deine eigenen Projekte zum Studio hinzufügen - egal ob nachprogrammiert oder Eigenkreation! Melde dich dazu bei Scratch an, und schreibe eine kurze Info mit Link auf dein Projekt in die [CoderDojo Linz Scratch Studio Kommentare](https://scratch.mit.edu/studios/4562124/comments/). Oder gib einfach einem Mentor im CoderDojo Bescheid. Dann wird dein Programm Teil des Studios, und alle Scratcher in Linz und weltweit können es sehen und verwenden. Dein Projekt muss öffentlich sein - klicke dazu im Projekt auf "Veröffentlichen". Um Mitglied im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) zu werden, musst du im Studio nur auf den blauen "Folgen" Button klicken.
 
-## TouchDevelop
-
-1. [Erste Schritte - Lerne die Arbeitsumgebung von TouchDevelop kennen](/trainingsanleitungen/touch-develop/erste-schritte.html)
-2. [Seifenblasen Spiel - Lass Seifenblasen zerplatzen](/trainingsanleitungen/touch-develop/seifenblasen-spiel.html)
-
 ## Webentwicklung (HTML, JavaScript & Co.)
 
 1. [Baue deine erste Webseite](/trainingsanleitungen/web/html-meine-erste-webseite.html)
