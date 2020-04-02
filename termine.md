@@ -10,13 +10,17 @@ bannerimage: /images/coderdojo-banner-3.jpg
 
 <p class="text-center"><a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung</a></p>
 
-Es gibt zwei verschiedene Veranstaltungen:
+Es gibt drei verschiedene Veranstaltungen:
 
 - <span class="type-coderdojo">CoderDojo</span>: Das ist unsere Hauptveranstaltung. Beim CoderDojo helfen dir Mentoren von deinen ersten Schritten im Programmieren bis zu kniffligen technischen Problemen. Zu diesen Veranstaltungen kommen üblicherweise 35 bis 65 junge Coder.
 
 - <span class="type-playground">Playground</span>: Beim Playground hast du Gelegenheit, im Umfeld von anderen jungen Codern selbständig an deinen Projekten zu arbeiten und zu üben. Mentorinnen und Mentoren stehen hier weniger zur Verfügung. Zu diesen Veranstaltungen kommen üblicherweise 15 bis 25 junge Coder. [Mehr über Playgrounds&nbsp;...](/infos/playground.html)
 
 - <span class="type-classroom">Classroom</span>: CoderDojo Classroom besteht aus mehreren Terminen, die aufeinander aufbauen. Wenn du dich zum CoderDojo Classroom anmeldest, solltest du dann bei allen Terminen dabei sein.
+
+<div class="corona-info">
+<h3>COVID-19 - CoderDojo Online</h3>
+Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres online statt. Bitte installiere dir zum Teilnehmen die <a href="https://www.bluejeans.com/downloads" target="_blank">BlueJeans App</a>. Es gibt sie kostenlos für alle erdenklichen Plattformen. Danach klicke zum Teilnehmen einfach auf den Teilnahmelink des jeweiligen Workshops.</div>
 
 <table class="table" id="eventsTable">
 	<thead>
@@ -55,24 +59,71 @@ Es gibt zwei verschiedene Veranstaltungen:
 		});
 
 		var row = "<tr>";
-		row += "<td>Freitag, 27. März 2020</td>";
+		row += "<td>Freitag, 04. April 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
-		row += "<p><b>14:00 - 16:00 Browser Game mit JavaScript</b>: Letzte Woche haben wir schon mit dem Workshop  Browser Game mit JavaScript begonnen. Wir werden die Gruppe aufteilen. Die, die letztes Mal schon dabei waren, machen mit Rainer weiter und stellen das Spiel fertig. Neueinsteiger können in einer eigenen Gruppe mit Matthias und Martina das Workshopbeispiel von vorne beginnen.<br/>Link zum Teilnehmen: <a href='https://bluejeans.com/129412082' target='_blank'>https://bluejeans.com/129412082</a></p>";
+		var workshops = [];
+		
+		workshops.push({
+			title: "14:00 - 16:00 Virtuelle Elektronik",
+			description: "Bei Günther und Michael könnt ihr virtuell Elektronik basteln mit <a href=\"https://www.tinkercad.com/\" target=\"_blank\">Tinkercad</a>. Ihr werdet Schaltungen bauen und braucht dafür weder Lötkolben noch Bauteile. Dieser Workshop ist offen für alle, nicht nur für Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom.",
+			prerequisites: "<ul><li>Legt euch ein Konto (Personal Account) bei TinkerCAD an: <a href=\"https://www.tinkercad.com/join\" target=\"_blank\">https://www.tinkercad.com/join</a></li></ul>",
+			link: "https://bluejeans.com/925481189"
+		});
 
-		row += "<p><b>16:00 - 18:00 Elektronik Classroom</b>: Günther und Michael treffen sich online mit den Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom. Alle, die angemeldet sind, erhalten von Günther direkt die Anleitung, wie man teilnehmen kann.</p>";
+		workshops.push({
+			title: "14:00 - 16:00 Browser Game mit JavaScript",
+			description: "Letzte Woche hat Matthias mit euch im JavaScript-Workshop ein Browser Game mit JavaScript begonnen. Alle, die letzte Woche dabei waren, können das Spiel diese Woche mit Matthias fertig machen.",
+			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li>Node.js (LTS-Version): <a href=\"https://nodejs.org/en/\" target=\"_blank\">https://nodejs.org/en/</a></li></ul>",
+			link: "https://bluejeans.com/294267547"
+		});
 
-		row += "<p><b>16:00 - 18:00 Scratch</b>: Natürlich darf Scratch im CoderDojo nicht fehlen. Wir werden die Gruppe aufteilen. Anfängerinnen und Anfänger, die noch nie mit Scratch programmiert haben sind genauso willkommen wie Kids, die schon Scratch-Erfahrung haben.<br/>Link zum Teilnehmen: <a href='https://bluejeans.com/697384178' target='_blank'>https://bluejeans.com/697384178</a></p>";
+		workshops.push({
+			title: "14:00 - 16:00 Programmieren von Web Apps und Webseiten",
+			description: "Möchtet ihr mehr über das Programmieren von Web Apps und Webseiten lernen? Dann ist der Workshop über HTML und CSS mit Rainer, Karin und Cornelia der richtige. Anfänger*innen lernen die Basics und erfahrenere Coder lernen viele Tricks rund ums Web.",
+			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li>Node.js (LTS-Version): <a href=\"https://nodejs.org/en/\" target=\"_blank\">https://nodejs.org/en/</a></li></ul>",
+			link: "https://bluejeans.com/726759318"
+		});
 
-		row += "<p><b>16:00 - 18:00 Java-Grundlagen</b>: Letzte Woche haben wir schon mit dem Java Workshop begonnen. Diese Woche geht es weiter. Auch bei diesem Workshop können Neueinsteigerinnen und -Einsteiger genauso mitmachen wie Personen, die letzte Woche schon dabei waren.<br/>Link zum Teilnehmen: <a href='https://bluejeans.com/919286147' target='_blank'>https://bluejeans.com/919286147</a></p>";
+		workshops.push({
+			title: "14:00 - 16:00 Java mit Greenfoot",
+			description: "Greenfoot ist eine super Plattform zum spielerischen Lernen von Java. Ihr könnt mit Markus einen Blick auf <a href=\"https://www.greenfoot.org/\" target=\"_blank\">Greenfoot</a> werfen und dabei in Java einsteigen oder euer Java-Wissen vertiefen.",
+			prerequisites: "<ul><li>Greenfoot: <a href=\"https://www.greenfoot.org/\" target=\"_blank\">https://www.greenfoot.org/</a></li></ul>",
+			link: "https://bluejeans.com/622647341"
+		});
+
+		workshops.push({
+			title: "16:00 - 18:00 Grundlagen der Spieleentwicklung mit Java",
+			description: "Thomas macht mit seinem Java Workshop weiter. Diesmal dreht sich alles um Spielemechanik. Ihr lernt die Grundlagen der Spieleentwicklung mit Java besser kennen.",
+			prerequisites: "<ul><li>JDK der Java SE14: <a href=\"https://www.oracle.com/java/technologies/javase-downloads.html\" target=\"_blank\">https://www.oracle.com/java/technologies/javase-downloads.html</a></li><li>IntelliJ IDEA (Community Edition): <a href=\"https://www.jetbrains.com/de-de/idea/download/#section=windows\" target=\"_blank\">https://www.jetbrains.com/de-de/idea/download/#section=windows</a></li></ul>",
+			link: "https://bluejeans.com/222168253"
+		});
+
+		workshops.push({
+			title: "16:00 - 18:00 Scratch Anfängerworkshop",
+			description: "Natürlich darf ein Workshop für Anfänger*innen mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop mit Silke, Lotte und Gerlinde euer erstes Computerspiel programmieren!",
+			prerequisites: "<ul><li>Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li></ul>",
+			link: "https://bluejeans.com/183964824"
+		});
+
+		workshops.push({
+			title: "16:00 - 18:00 Scratch Space Shooter",
+			description: "Habt ihr schon ein wenig Scratch-Erfahrung? Dann möchtet ihr vielleicht ein etwas spannenderes Scratch-Beispiel mit Hans-Peter machen. Er wird mit euch einen Space Shooter bauen.",
+			prerequisites: "<ul><li>Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li></ul>",
+			link: "https://bluejeans.com/499993405"
+		});
+
+		workshops.forEach(function(w) {
+			row += "<p><span class=\"workshop-title\">" + w.title + "</span></p><p>" + w.description + "</p><p><b>Voraussetzungen</b></p><p>" + w.prerequisites + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
+		});
 
 		row += "</td>";
 		row += "</tr>";
 
 		eventsTable.append(row);
 
-		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-03-27'; }).forEach(function(event) {
+		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-04-03'; }).forEach(function(event) {
 			var row = "";
 
 			if (event.type == "header") {
@@ -89,16 +140,6 @@ Es gibt zwei verschiedene Veranstaltungen:
 				} else {
 					row += " class='coderdojo'";
 				}*/
-
-				if (date.unix() == moment(new Date(2018, 4, 4)).startOf("day").unix()) {
-					console.log("test");
-					row += "<tr>";
-					row += "<td>" + moment(new Date(2018, 3, 21)).startOf("day").format("dddd, DD. MMMM YYYY") + " 16:00 - 18:00</td>";
-					row += "<td class='type-bootcamp'>Bootcamp</td>";
-					row += "<td>Junior Bootcamp - im Rahmen des <a href='https://coding-club-linz.github.io/global-azure-bootcamp-2018/junior-bootcamp.html' target='_blank'>Global Azure Bootcamps</a><br/>für junge Coder ab 13 Jahren<br/>";
-					row += "<a href=\"http://www.linz.at/wissensturm/anreise.asp\" target=\"_blank\">Wissensturm</a>, Kärtnerstraße 26, 4020 Linz</td>";
-					row += "</tr>";
-				}
 
 				row += "<tr>";
 				if (event.type == "classroom") {
@@ -145,7 +186,7 @@ Es gibt zwei verschiedene Veranstaltungen:
                     row += "<br/><br/>";
                     row += event.description;
                     row += "<br/><br/>";
-					row += "<b><a href=\"https://www.globalazurebootcamp.at/junior-bootcamp/\" target=\"_blank\">Weitere Infos ...</a> | <a href=\"https://www.eventbrite.de/e/global-azure-bootcamp-austria-2020-tickets-90274179501\" target=\"_blank\">Zur Anmeldung ...</a></b>";
+					row += "<b><a href=\"https://www.globalazurebootcamp.at/junior-bootcamp/\" target=\"_blank\">Weitere Infos ...</a></b>";
 					row += "<br/><br/>";
 				}
 
