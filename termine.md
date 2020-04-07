@@ -59,63 +59,68 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		});
 
 		var row = "<tr>";
-		row += "<td>Freitag, 03. April 2020</td>";
+		row += "<td>Freitag, 10. April 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
 		var workshops = [];
 		
 		workshops.push({
-			title: "14:00 - 16:00 Virtuelle Elektronik",
-			description: "Bei Günther und Michael könnt ihr virtuell Elektronik basteln mit <a href=\"https://www.tinkercad.com/\" target=\"_blank\">Tinkercad</a>. Ihr werdet Schaltungen bauen und braucht dafür weder Lötkolben noch Bauteile. Dieser Workshop ist offen für alle, nicht nur für Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom.",
-			prerequisites: "<ul><li>Legt euch ein Konto (Personal Account) bei TinkerCAD an: <a href=\"https://www.tinkercad.com/join\" target=\"_blank\">https://www.tinkercad.com/join</a></li></ul>",
-			link: "https://bluejeans.com/925481189"
+			time: "13:45 - 15:45",
+			title: "Virtuelles Elektronikbasteln",
+			description: "In diesem Workshop könnt ihr virtuell Elektronik basteln mit <a href=\"https://www.tinkercad.com/\" target=\"_blank\">Tinkercad</a>. Ihr werdet Schaltungen bauen und braucht dafür weder Lötkolben noch Bauteile. Dieser Workshop ist offen für alle, nicht nur für Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom.",
+			prerequisites: "TBD<!--<ul><li>Legt euch ein Konto (Personal Account) bei TinkerCAD an: <a href=\"https://www.tinkercad.com/join\" target=\"_blank\">https://www.tinkercad.com/join</a></li></ul>-->",
+			mentors: ["Günther", "Michael"],
+			link: "TBD"
 		});
 
 		workshops.push({
-			title: "14:00 - 16:00 Browser Game mit JavaScript",
-			description: "Letzte Woche hat Matthias mit euch im JavaScript-Workshop ein Browser Game mit JavaScript begonnen. Alle, die letzte Woche dabei waren, können das Spiel diese Woche mit Matthias fertig machen.",
-			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li>Node.js (LTS-Version): <a href=\"https://nodejs.org/en/\" target=\"_blank\">https://nodejs.org/en/</a></li></ul>",
-			link: "https://bluejeans.com/294267547"
+			time: "13:45 - 15:45",
+			title: "Pimp Your Website mit CSS",
+			description: "Letzte Woche haben wir uns im Detail mit HTML beschäftigt. Diesmal wollen wir unsere Webseiten hübsch gestalten und mit coolen Animationen versehen. Voraussetzung für diesen Workshop ist, dass ihr die Grundlagen von HTML beherrscht.",
+			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li>mit folgende Plugins:<ul><li><a href=\"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer\" target=\"_blank\">Live Server</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare\" target=\"_blank\">Live Share</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer\" target=\"_blank\">Autoprefixer</a></li></ul></li></ul>",
+			mentors: ["Karin", "Rainer", "Cornelia", "Gerlinde"],
+			link: "https://zoom.us/j/384514141"
 		});
 
 		workshops.push({
-			title: "14:00 - 16:00 Programmieren von Web Apps und Webseiten",
-			description: "Möchtet ihr mehr über das Programmieren von Web Apps und Webseiten lernen? Dann ist der Workshop über HTML und CSS mit Rainer, Karin und Cornelia der richtige. Anfänger*innen lernen die Basics und erfahrenere Coder lernen viele Tricks rund ums Web.",
-			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li>Node.js (LTS-Version): <a href=\"https://nodejs.org/en/\" target=\"_blank\">https://nodejs.org/en/</a></li></ul>",
-			link: "https://bluejeans.com/726759318"
+			time: "13:45 - 15:45",
+			title: "Java",
+			description: "Wir werden unserem Spiel beibringen auf Benutzereingaben zu reagieren und Kollisionen zu erkennen.",
+			prerequisites: "<ul><li><a href=\"https://www.jetbrains.com/de-de/idea/download/#section=windows\" target=\"_blank\">IntelliJ IDEA (Community Edition)</a></li><li><a href=\"https://git-scm.com/download/win\" target=\"_blank\">Git</a></li></ul>",
+			mentors: ["Thomas"],
+			link: "TBD"
 		});
 
 		workshops.push({
-			title: "14:00 - 16:00 Java mit Greenfoot",
-			description: "Greenfoot ist eine super Plattform zum spielerischen Lernen von Java. Ihr könnt mit Markus einen Blick auf <a href=\"https://www.greenfoot.org/\" target=\"_blank\">Greenfoot</a> werfen und dabei in Java einsteigen oder euer Java-Wissen vertiefen.",
-			prerequisites: "<ul><li>Greenfoot: <a href=\"https://www.greenfoot.org/\" target=\"_blank\">https://www.greenfoot.org/</a></li></ul>",
-			link: "https://bluejeans.com/622647341"
+			time: "16:00 - 18:00",
+			title: "Minecraft Redstone",
+			description: "Wenn du schon immer Redstone Schaltungen selber entwerfen wolltest oder verstehen willst wie die Schaltungen funktionieren die du von Youtube kopierst ;) dann bist du hier genau richtig! Wir werden einen Einsteigerkurs in Redstone machen mit:<ul><li>Grundlagen: Was ist redstone, welche Bauteile gibt es dafür, ...</li><li>Erste logische Schaltungen: Was sind Und/Oder/Nicht Schaltungen und warum brauch ich sie.</li><li>Erste kompliziertere Schaltungungen, wie baue ich eine versteckte Tür mit Pistons.</li></ul>",
+			prerequisites: "Du brauchst einen offiziellen Minecraft Account und Minecraft in der Version 1.15.2 installiert und spielbereit. Es muss ein offizieller Account sein, weil wir auf einem gemeinsamen Server unsere Übungen machen werden.",
+			mentors: ["Matthias", "Jan"],
+			link: "TBD"
 		});
 
 		workshops.push({
-			title: "16:00 - 18:00 Grundlagen der Spieleentwicklung mit Java",
-			description: "Thomas macht mit seinem Java Workshop weiter. Diesmal dreht sich alles um Spielemechanik. Ihr lernt die Grundlagen der Spieleentwicklung mit Java besser kennen.",
-			prerequisites: "<ul><li>JDK der Java SE14: <a href=\"https://www.oracle.com/java/technologies/javase-downloads.html\" target=\"_blank\">https://www.oracle.com/java/technologies/javase-downloads.html</a></li><li>IntelliJ IDEA (Community Edition): <a href=\"https://www.jetbrains.com/de-de/idea/download/#section=windows\" target=\"_blank\">https://www.jetbrains.com/de-de/idea/download/#section=windows</a></li></ul>",
-			link: "https://bluejeans.com/222168253"
+			time: "16:00 - 18:00",
+			title: "Scratch Anfängerworkshop",
+			description: "Natürlich darf ein Workshop für Anfängerinnen und Anfänger mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop euer erstes Computerspiel programmieren.",
+			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
+			mentors: ["Gerlinde", "Sonja", "Walter"],
+			link: "TBD"
 		});
 
 		workshops.push({
-			title: "16:00 - 18:00 Scratch Anfängerworkshop",
-			description: "Natürlich darf ein Workshop für Anfänger*innen mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop mit Silke, Lotte und Gerlinde euer erstes Computerspiel programmieren!",
-			prerequisites: "<ul><li>Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li></ul>",
-			link: "https://bluejeans.com/183964824"
-		});
-
-		workshops.push({
-			title: "16:00 - 18:00 Scratch Space Shooter",
-			description: "Habt ihr schon ein wenig Scratch-Erfahrung? Dann möchtet ihr vielleicht ein etwas spannenderes Scratch-Beispiel mit Hans-Peter machen. Er wird mit euch einen Space Shooter bauen.",
-			prerequisites: "<ul><li>Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li></ul>",
-			link: "https://bluejeans.com/499993405"
+			time: "16:00 - 18:00",
+			title: "Pimp Your Scratch Space Shooter",
+			description: "Habt ihr unseren Scratch Spaceshooter schon mal gebaut? Wir werden diesmal bei der Version vom Freitag, 3.4. weitermachen. Wenn ihr da nicht dabei wart ist das kein Problem. Die Version könnt ihr unter CoderDojo-Spaceshooter V1 einfach öffnen und herunterladen. Von dort aus werden wir den Spaceshooter erweitern und neue Funktionen hinzufügen. Freut euch auf:<ul><li>Hintergrund mit bewegten Sternen</li><li>ein Spiel mit mehr als nur einem Leben</li><li>gefährliche Meteoritenbruchstücke</li></ul>",
+			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
+			mentors: ["Hans-Peter"],
+			link: "https://dynatrace.zoom.us/j/839746804"
 		});
 
 		workshops.forEach(function(w) {
-			row += "<p><span class=\"workshop-title\">" + w.title + "</span></p><p>" + w.description + "</p><p><b>Voraussetzungen</b></p><p>" + w.prerequisites + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
+			row += "<p><span class=\"workshop-title\">" + w.time + " " + w.title + "</span></p><p>" + w.description + "</p><p><b>Voraussetzungen</b></p><p>" + w.prerequisites + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
 		});
 
 		row += "</td>";
