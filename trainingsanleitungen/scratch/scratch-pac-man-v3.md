@@ -28,11 +28,11 @@ Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMa
 
 [Stage](scratch-pac-man-v3/Stage.png){:target="_blank"}
 
-[PacMan](scratch-pac-man-v3/PacMan.sprite2){:target="_blank"}
+[PacMan](scratch-pac-man-v3/PacMan.sprite3){:target="_blank"}
 
-[Ghost](scratch-pac-man-v3/Ghost.sprite2){:target="_blank"}
+[Ghost](scratch-pac-man-v3/Ghost.sprite3){:target="_blank"}
 
-[Pill](scratch-pac-man-v3/Pill.sprite2){:target="_blank"}
+[Pill](scratch-pac-man-v3/Pill.sprite3){:target="_blank"}
 
 ## Die Bühne *Stage*
 
