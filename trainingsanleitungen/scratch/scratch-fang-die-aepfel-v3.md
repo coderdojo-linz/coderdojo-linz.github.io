@@ -1,4 +1,16 @@
-# Fang die Äpfel <div class="scratch_label">Scratch 3.0</div>
+---
+layout: sushi
+title: Scratch Fang die Äpfel
+description: In diesem Spiel fallen Äpfel vom Himmel, die du mit deiner Schüssel fangen solltest.
+scratch-images:
+- scratch-fang-die-aepfel-v3/buehne_waehrend_spiel_scaled.jpg
+scratch-level: 1
+scratch-sprites: 3
+scratch-scripts: 18
+scratch-data: 2
+---
+
+# Fang die Äpfel <span class="badge badge-scratch3">Scratch 3.0</span>
 
 In diesem Spiel fallen Äpfel vom Himmel, die du mit deiner Schüssel fangen solltest. Jeder gefangene Apfel bringt dir einen Punkt, jeder zu Boden gefallener Apfel kostet dir ein Leben. Versuch möglichst viele Äpfel mit den 10 Leben zu fangen.
 
@@ -57,7 +69,8 @@ Jetzt ist dein Spiel bereit gespielt zu werden!
 ## Zusatzaufgaben
 
 Dieses Spiel bietet viel Raum für eigene Ideen. Du könnest zum Beispiel ...
-* den Apfel immer schneller werden lassen
-* der Apfel nicht mehr gerade sondern in einem Bogen herunterfallen lassen
-* auch andere Früchte vom Himmel fallen lassen
-* den Spielstand am Ende mit einer Animation anzeigen
+
+- den Apfel immer schneller werden lassen
+- der Apfel nicht mehr gerade sondern in einem Bogen herunterfallen lassen
+- auch andere Früchte vom Himmel fallen lassen
+- den Spielstand am Ende mit einer Animation anzeigen
