@@ -68,10 +68,10 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		workshops.push({
 			time: "13:45 - 15:45",
 			title: "Virtuelles Elektronikbasteln",
-			description: "In diesem Workshop könnt ihr virtuell Elektronik basteln mit <a href=\"https://www.tinkercad.com/\" target=\"_blank\">Tinkercad</a>. Ihr werdet Schaltungen bauen und braucht dafür weder Lötkolben noch Bauteile. Dieser Workshop ist offen für alle, nicht nur für Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom.",
-			prerequisites: "TBD<!--<ul><li>Legt euch ein Konto (Personal Account) bei TinkerCAD an: <a href=\"https://www.tinkercad.com/join\" target=\"_blank\">https://www.tinkercad.com/join</a></li></ul>-->",
+			description: "In diesem Workshop könnt ihr virtuell Elektronik basteln mit <a href=\"https://www.tinkercad.com/\" target=\"_blank\">Tinkercad</a>. Ihr werdet Schaltungen bauen und braucht dafür weder Lötkolben noch Bauteile. Dieser Workshop ist offen für alle, nicht nur für Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom.<p>Wir werden die Strom und Spannungsmessung in Tinkercad anschauen und es werden die Grundlagen Strom, Spannung und Widerstand anhand eines einfachen Beispiels erklärt, dass jeder zu Hause im Nachgang nachbauen kann. Mit Alufolie, einem Bleistift, einer 12V Lampe aus dem Auto und eine 9V Batterie bauen wir eine Helligkeitsregelung.</p><p>Im zweiten Teil werden wir den Elternalarm mit dem Arduino und ein paar virtuellen Bauteilen auf Tinkercad bauen. Wer möchte nicht wissen wenn sich die Eltern oder Geschwister dem Zimmer nähern. Mit der Schaltung und dem Programm könnte ihr dann dieses Projekt später in die Realität überführen.</p>",
+			prerequisites: "Computer mit Internetzugang, Begeisterung und etwas Zeit. Es wird wieder eine Tinkercad Classroom geben, wo ihr in den erste 10 Min mit euren Nickname Zugang bekommt. Und dann geht es auch schon los!",
 			mentors: ["Günther", "Michael"],
-			link: "TBD"
+			link: "https://zoom.us/j/190881403"
 		});
 
 		workshops.push({
@@ -89,7 +89,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Wir werden unserem Spiel beibringen auf Benutzereingaben zu reagieren und Kollisionen zu erkennen.",
 			prerequisites: "<ul><li><a href=\"https://www.jetbrains.com/de-de/idea/download/#section=windows\" target=\"_blank\">IntelliJ IDEA (Community Edition)</a></li><li><a href=\"https://git-scm.com/download/win\" target=\"_blank\">Git</a></li></ul>",
 			mentors: ["Thomas"],
-			link: "TBD"
+			link: "https://zoom.us/j/218047339"
 		});
 
 		workshops.push({
@@ -98,7 +98,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Wenn du schon immer Redstone Schaltungen selber entwerfen wolltest oder verstehen willst wie die Schaltungen funktionieren die du von Youtube kopierst ;) dann bist du hier genau richtig! Wir werden einen Einsteigerkurs in Redstone machen mit:<ul><li>Grundlagen: Was ist redstone, welche Bauteile gibt es dafür, ...</li><li>Erste logische Schaltungen: Was sind Und/Oder/Nicht Schaltungen und warum brauch ich sie.</li><li>Erste kompliziertere Schaltungungen, wie baue ich eine versteckte Tür mit Pistons.</li></ul>",
 			prerequisites: "Du brauchst einen offiziellen Minecraft Account und Minecraft in der Version 1.15.2 installiert und spielbereit. Es muss ein offizieller Account sein, weil wir auf einem gemeinsamen Server unsere Übungen machen werden.",
 			mentors: ["Matthias", "Jan"],
-			link: "TBD"
+			link: "https://zoom.us/j/973893563"
 		});
 
 		workshops.push({
@@ -107,20 +107,20 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Natürlich darf ein Workshop für Anfängerinnen und Anfänger mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop euer erstes Computerspiel programmieren.",
 			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
 			mentors: ["Gerlinde", "Sonja", "Walter"],
-			link: "TBD"
+			link: "https://zoom.us/j/976771003"
 		});
 
 		workshops.push({
 			time: "16:00 - 18:00",
 			title: "Pimp Your Scratch Space Shooter",
-			description: "Habt ihr unseren Scratch Spaceshooter schon mal gebaut? Wir werden diesmal bei der Version vom Freitag, 3.4. weitermachen. Wenn ihr da nicht dabei wart ist das kein Problem. Die Version könnt ihr unter CoderDojo-Spaceshooter V1 einfach öffnen und herunterladen. Von dort aus werden wir den Spaceshooter erweitern und neue Funktionen hinzufügen. Freut euch auf:<ul><li>Hintergrund mit bewegten Sternen</li><li>ein Spiel mit mehr als nur einem Leben</li><li>gefährliche Meteoritenbruchstücke</li></ul>",
+			description: "Habt ihr unseren Scratch Spaceshooter schon mal gebaut? Wir werden diesmal bei der Version vom Freitag, 3.4. weitermachen. Wenn ihr da nicht dabei wart ist das kein Problem. Die Version könnt ihr unter <a href=\"https://scratch.mit.edu/projects/382856553\" target=\"_blank\">CoderDojo-Spaceshooter V1</a> einfach öffnen und herunterladen. Von dort aus werden wir den Spaceshooter erweitern und neue Funktionen hinzufügen. Freut euch auf:<ul><li>Hintergrund mit bewegten Sternen</li><li>ein Spiel mit mehr als nur einem Leben</li><li>gefährliche Meteoritenbruchstücke</li></ul>",
 			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
 			mentors: ["Hans-Peter"],
 			link: "https://dynatrace.zoom.us/j/839746804"
 		});
 
 		workshops.forEach(function(w) {
-			row += "<p><span class=\"workshop-title\">" + w.time + " " + w.title + "</span></p><p>" + w.description + "</p><p><b>Voraussetzungen</b></p><p>" + w.prerequisites + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
+			row += "<p><span class=\"workshop-title\">" + w.time + " " + w.title + "</span></p><p>" + w.description + "</p><p><b>Voraussetzungen</b></p><p>" + w.prerequisites + "</p><p><b>Mentoren:</b> " + w.mentors.join(", ") + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
 		});
 
 		row += "</td>";
