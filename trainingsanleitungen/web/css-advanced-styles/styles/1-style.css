@@ -7,6 +7,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: lightblue;
     font-size: 18px;
+    background-image: url('/images/underwater-treasures.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: auto;
+    padding: 0 60px;
+    background-position: center;
 }
 
 h2 {
@@ -43,7 +50,7 @@ img {
     max-width: 900px;
     padding: 60px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 60px auto;
 }
 
