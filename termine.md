@@ -96,7 +96,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			time: "16:00 - 18:00",
 			title: "Minecraft Redstone",
 			description: "Wenn du schon immer Redstone Schaltungen selber entwerfen wolltest oder verstehen willst wie die Schaltungen funktionieren die du von Youtube kopierst ;) dann bist du hier genau richtig! Wir werden einen Einsteigerkurs in Redstone machen mit:<ul><li>Grundlagen: Was ist redstone, welche Bauteile gibt es dafür, ...</li><li>Erste logische Schaltungen: Was sind Und/Oder/Nicht Schaltungen und warum brauch ich sie.</li><li>Erste kompliziertere Schaltungungen, wie baue ich eine versteckte Tür mit Pistons.</li></ul>",
-			prerequisites: "Du brauchst einen offiziellen Minecraft Account und Minecraft in der Version 1.15.2 installiert und spielbereit. Es muss ein offizieller Account sein, weil wir auf einem gemeinsamen Server unsere Übungen machen werden.",
+			prerequisites: "Du brauchst einen offiziellen Minecraft Account und <a href=\"https://www.minecraft.net/en-us/article/minecraft-java-edition-1-15-2\" target=\"_blank\">Minecraft Java Edition</a> in der Version 1.15.2 installiert und spielbereit. Es muss ein offizieller Account sein, weil wir auf einem gemeinsamen Server unsere Übungen machen werden.",
 			mentors: ["Matthias", "Jan"],
 			link: "https://zoom.us/j/973893563"
 		});
