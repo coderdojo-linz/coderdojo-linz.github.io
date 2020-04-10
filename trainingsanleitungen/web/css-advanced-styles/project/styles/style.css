@@ -32,7 +32,7 @@ h1 .version {
     color: #fff;
     border-radius: 5px;
     padding: 2px 10px;
-    /* why? */
+    /* necessary for vertical alignment within h1 */
     vertical-align: 0.5em;
 }
 
@@ -42,6 +42,7 @@ h2 {
     background-color: var(--highlight-color-1);
     display: inline-block;
     padding: 2px 10px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 8px 8px 0 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -54,6 +55,7 @@ img {
     margin-block-end: 1em;
     max-width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.3);
+    /* center images */
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -64,6 +66,7 @@ img {
 
 img:hover {
     transform: scale(1.01);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -76,6 +79,7 @@ img:hover {
     border-radius: var(--border-radius);
     background-color: rgba(255, 255, 255, 0.9);
     margin: 60px auto;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -107,6 +111,7 @@ img:hover {
     width: 540px;
     height: 407px;
     max-width: 100%;
+    /* center flip box */
     margin-left: auto;
     margin-right: auto;
     /* Remove this if you don't want the 3D effect */

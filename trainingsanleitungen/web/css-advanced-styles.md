@@ -360,6 +360,8 @@ Im Stylesheet müssen wir jetzt folgende Styles hinzufügen:
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
