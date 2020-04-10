@@ -20,7 +20,7 @@ Es gibt drei verschiedene Veranstaltungen:
 
 <div class="corona-info">
 <h3>COVID-19 Info</h3>
-Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres online statt. Bitte installiere dir zum Teilnehmen die <a href="https://www.bluejeans.com/downloads" target="_blank">BlueJeans App</a>. Es gibt sie kostenlos für alle erdenklichen Plattformen. Danach klicke zum Teilnehmen einfach auf den Teilnahmelink des jeweiligen Workshops.</div>
+Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres online statt. Bitte installiere dir zum Teilnehmen den <a href="https://zoom.us/download" target="_blank">Zoom Client</a>. Es gibt ihn kostenlos für alle erdenklichen Plattformen. Danach klicke zum Teilnehmen einfach auf den Teilnahmelink des jeweiligen Workshops.</div>
 
 <table class="table" id="eventsTable">
 	<thead>
