@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch - Fang mich</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Scratch Fang-Mich <span class="version">Scratch 3.0</span></h1>
+
+        <div class="intro">
+            <!-- <img src="images/endgame.png" alt="Endgame"> -->
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="images/endgame.png" alt="Endgame">
+                    </div>
+                    <div class="flip-box-back">
+                        <h3>Scratch Fang-Mich</h3>
+                        <p>Figuren: 2<br />Scripte: 8</p>
+                    </div>
+                </div>
+            </div>
+            <p>In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?</p>
+        </div>
+
+        <h2 id="buehne-und-figuren-anlegen">Bühne und Figuren anlegen</h2>
+
+        <ol>
+            <li>
+                Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst das Aquarium, in dem die
+                Fische schwimmen. Wähle als erstes rechts unten unter <em>Bühnenbild wählen</em> ein Bühnenbild aus, zum
+                Beispiel ein Aquarium.
+                <img src="images/01-background.png" alt="Bühnenbild auswählen">
+            </li>
+            <li>
+                Als nächstes lösche die Figur Scratchy mit dem Namen <em>Sprite 1</em> indem du mit der rechten
+                Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
+                <img src="images/02-delete-scratchy.png" alt="Figur löschen">
+            </li>
+            <li>
+                Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke
+                dazu auf <em>Figur wählen</em> und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch
+                andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonfliegt oder eine Person, die dem Löwen
+                davonläuft.
+                <img src="images/03-fish.png" alt="Figuren hinzufügen">
+            </li>
+            <li>
+                Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie <em>Hai</em> und
+                <em>Fisch</em>. Du kannst den Namen von Figuren ändern, indem du unter der weißen Leinwand rechts neben
+                dem Wort Figur auf das Namensfeld klickst und den neuen Namen eingibst.
+                <img src="images/07-rename.png" alt="Figuren benennen">
+            </li>
+        </ol>
+
+        <h2 id="fisch-bewegen">Fisch bewegen</h2>
+
+        <p>Damit du den Fisch bewegen kannst, musst er nach links und rechts sowie oben und unten bewegt werden
+            können.</p>
+
+        <ol>
+            <li>Wähle zuerst den Fisch aus, damit er blau umrandet ist.</li>
+            <li>Im Tab <em>Code</em> kannst du deinen Fisch nun bewegen. Verwende das Ereignis <em>Wenn Taste …
+                    gedrückt</em> unter <em>Ereignisse</em>.</li>
+            <li>Verknüpfe es jeweils mit einer Drehung <em>setze Richtung auf …</em> unter <em>Bewegung</em>, damit
+                der
+                Fisch in die richtige Richtung schaut.</li>
+            <li>Außerdem brauchen wir <em>gehe …er Schritt</em>, um den Fisch zu bewegen.
+                <ul>
+                    <li>Für <em>Pfeil nach oben</em> gedrückt: Richtung 0 Grad, gehe 10er-Schritte.</li>
+                    <li>Für <em>Pfeil nach unten</em> gedrückt: Richtung 180 Grad, gehe 10er-Schritte.</li>
+                    <li>Für <em>Pfeil nach rechts</em> gedrückt: Richtung 90 Grad, gehe 10er-Schritte.</li>
+                    <li>Für <em>Pfeil nach links</em> gedrückt: Richtung -90 Grad, gehe 10er-Schritte.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <img src="images/08-move-fish.png" alt="Fisch bewegen">
+
+        <p>Je größer die Schrittanzahl, desto schneller ist dein Fisch.</p>
+
+        <h2 id="haifisch-bewegen">Haifisch bewegen</h2>
+
+        <p>Jetzt soll der Haifisch im Aquarium herumschwimmen.</p>
+
+        <ol>
+            <li>Wähle dazu den Haifisch aus, damit er blau umrandet ist.</li>
+            <li>Im Tab <em>Code</em> kannst du den Haifisch nun bewegen.</li>
+            <li>Unter <em>Ereignisse</em> wähle <em>Wenn … angeklickt</em>.</li>
+            <li>Anschließend wähle <em>wiederhole fortlaufend</em> bei <em>Steuerung</em> aus.</li>
+            <li>Bewege den Haifisch mit <em>gehe 10er-Schritt</em>, <em>warte 0.1 Sek.” *Hinweis: Scratch akzeptiert nur
+                    einen Punkt als Kommazeichen</em>, <em>pralle vom Rand ab</em> und <em>drehe dich um … Grad</em>
+            </li>
+            <li>Um etwas mehr Zufall reinzubringen, nimm im Menü <em>Operatoren</em> den Block <em>Zufallszahl von 1 bis
+                    10</em> und ziehe ihn an die Stelle der 15 Grad.</li>
+        </ol>
+
+        <img src="images/09-move-shark.png" alt="Haifisch bewegen">
+
+        <h2 id="fisch-fangen">Fisch fangen</h2>
+
+        <p>
+            Wenn der Haifisch den Fisch berührt, soll der Fisch ausgeblendet und wieder ins linke obere Eck gesetzt
+            werden.
+        </p>
+
+        <ol>
+            <li>Wähle dazu den Fisch aus, damit er blau umrandet ist.</li>
+            <li>Im Tab <em>Code</em> kannst du den Fisch verschwinden lassen, sobald er den Haifisch berührt.</li>
+            <li>Unter <em>Ereignisse</em> wähle <em>Wenn … angeklickt</em>.</li>
+            <li>Setze den Fisch an Position -230 und 170 mittels <em>gehe zu x: -230, y: 170</em>, um den Fisch ins
+                linke obere Eck zu setzen, und <em>zeige dich</em>.</li>
+            <li>Falls jetzt der Hai berührt wird (<em>Steuerung</em> <em>falls … dann</em>), dann <em>sende “berührt” an
+                    alle</em>, <em>verstecke dich</em>, <em>warte 5 Sekunden</em>, <em>zeige dich</em>, und
+                gehe wieder ins linke obere Eck mit <em>gehe zu x: -230, y: 170</em>. Anschließend sage <em>Willkommen
+                    zurück</em> für 2 Sekunden.</li>
+        </ol>
+
+        <img src="images/10-touch-fish.png" alt="Fisch wird berührt">
+
+        <p>Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel “Game Over” sein.</p>
+
+        <ol>
+            <li>Wähle dazu den Haifisch aus, damit er blau umrandet ist.</li>
+            <li>Im Tab <em>Code</em> kannst du den Haifisch “Game Over” sagen lassen.</li>
+            <li>Unter <em>Ereignisse</em> wähle <em>Wenn ich … empfange</em>, der Hai reagiert somit auf die vom
+                Fisch ausgelöste Nachricht.</li>
+            <li>Anschließend wähle <em>wiederhole 2 mal</em> bei <em>Steuerung</em> aus.</li>
+            <li>Um den Haifisch schnappen zu lassen, gibt es unter <em>Aussehen</em> verschiedene Varianten des
+                Hais. Füge folgende Blöcke in den Wiederhol-Block: <em>wechsle zu Kostüm b</em>, <em>warte 0,3
+                    Sek.</em>, <em>wechsel zu Kostüm a</em>, <em>warte 0,3 Sek.</em></li>
+            <li>Und um den Haifisch “Game over” sagen zu lassen, füge einen neuen <em>Wenn ich … empfange</em> Block
+                hinzu und <em>sage “Game Over!” für 4.5 Sekunden</em>.</li>
+        </ol>
+
+        <img src="images/11-touch-shark.png" alt="Hai wird berührt">
+
+        <h2 id="weitere-ideen">Weitere Ideen</h2>
+
+        <ul>
+            <li>Mach das Spiel schwieriger, indem du einen zweiten, langsameren Haifisch dazu gibst.</li>
+            <li>Baue eine Uhr ein, um zu sehen, wie lange du dem Haifisch entkommen kannst.</li>
+            <li>Steuere den Fisch mit der Maus anstatt der Tastatur.</li>
+        </ul>
+
+        <h2 id="herunterladen">Herunterladen</h2>
+
+        <p>Du kannst das fertige Projekt unter <a
+                href="https://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-fang-mich-v3/fang-mich.sb3">fang.mich.sb3</a>
+            herunterladen.</p>
+    </div>
+</body>
+
+</html>

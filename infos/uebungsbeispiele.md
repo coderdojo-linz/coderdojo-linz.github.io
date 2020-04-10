@@ -61,6 +61,7 @@ Im [CoderDojo Linz Scratch Studio](https://scratch.mit.edu/studios/4562124/) fin
 1. [Schreibtrainer mit SVG](/trainingsanleitungen/web/svg-schreibtrainer.html)
 1. [Erste Schritte mit Hugo](/trainingsanleitungen/web/erste-schritte-mit-hugo.html)
 1. [Snake mit Node.js](/trainingsanleitungen/web/snake-mit-nodejs.html)
+1. [CSS Advanced Styles](/trainingsanleitungen/web/css-advanced-styles.html)
 
 ## Minecraft
 
