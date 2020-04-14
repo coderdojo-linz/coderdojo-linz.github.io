@@ -44,7 +44,7 @@ Die Fledermaus zählt beim Quiz auch mit, wie viele Fragen richtig bzw. falsch b
 Die Fledermaus beginnt nun die Fragen zu stellen. Die erst Frage könnte lauten: *Was macht die Fledermaus in der kalten Jahreszeit?*. Falls die Antwort richtig ist, nämlich Winterschlaf, dann wird die Variable *richtig* um 1 erhöht und die Fledermaus sagt, dass die Antwort richtig ist. Falls die Antwort falsch ist, wird die Variable *falsch* um 1 erhöht und die Fledermaus sagt *falsch*. Du kannst dazu auch passende Klänge abspielen. Wähle unter Klänge die beiden Klänge *Magic Spell* und *Oops* aus.
 
 1. ![Fledermausspiel](scratch-fledermaus-v3/fledermaus-04.png){: .right}
-Da die Fledermaus mehrere Fragen stellt, ist es langweilig jedes Mal diesen Code in Scratch zu bauen. Wir definieren daher einen eigenen Block dafür. Gehe dazu links im Menü zu „Meine Blöcke“ und clicke auf „Neuer Block“. Den Block nennen wir „Frage stellen“. Da wir aber nicht immer die gleiche Frage und Antwort haben wollen, geben wir zwei Eingabefelder für Text hinzu. Das erste Eingabefeld nennen wir „Frage“ und das zweite „Antwort“.
+Da die Fledermaus mehrere Fragen stellt, ist es langweilig jedes Mal diesen Code in Scratch zu bauen. Wir definieren daher einen eigenen Block dafür. Gehe dazu links im Menü zu *Meine Blöcke* und clicke auf *Neuer Block*. Den Block nennen wir *Frage stellen*. Da wir aber nicht immer die gleiche Frage und Antwort haben wollen, geben wir zwei Eingabefelder für Text hinzu. Das erste Eingabefeld nennen wir *Frage* und das zweite *Antwort*.
 
 1. ![Fledermausspiel](scratch-fledermaus-v3/fledermaus-05.png){: .right}
 Zu diesem Block geben wir die zuvor programmierte Fragestellung und setzen die Eingabefelder passend ein.
@@ -53,8 +53,8 @@ Zu diesem Block geben wir die zuvor programmierte Fragestellung und setzen die E
 Jetzt kannst du beliebige Fragen zum Thema Fledermaus stellen, indem du diesen Block verwendest.
 
 1. ![Fledermausspiel](scratch-fledermaus-v3/fledermaus-07.png){: .right}
-Wenn du alle Fragen gestallt hast, wird die Punkteanzahl ausgewertet. Wenn mehr als 4 (von 6 Fragen) richtig beantwortet wurden, dann wird der Klang „Cheer“ gespielt.
-Diesen Klang musst du wieder unter Klänge hinzufügen. Damit der Pokal jetzt erscheinen kann, senden wir eine Nachricht „gewonnen“ an alle Figuren aus. Die Fledermaus gratuliert dem Sieger oder muntert den Spieler auf, wenn es nicht ganz geklappt hat.
+Wenn du alle Fragen gestallt hast, wird die Punkteanzahl ausgewertet. Wenn mehr als 4 (von 6 Fragen) richtig beantwortet wurden, dann wird der Klang *Cheer* gespielt.
+Diesen Klang musst du wieder unter Klänge hinzufügen. Damit der Pokal jetzt erscheinen kann, senden wir eine Nachricht *gewonnen* an alle Figuren aus. Die Fledermaus gratuliert dem Sieger oder muntert den Spieler auf, wenn es nicht ganz geklappt hat.
 
 1. ![Fledermausspiel](scratch-fledermaus-v3/fledermaus-08.png){: .right}
 Zum Schluss lassen wir die Fledermaus noch in die Höhle fliegen. Dazu dreht sich die Fledermaus zuerst um 180 Grad. Die Fledermaus hat 4 verschiedene Kostüme, wenn wir sie mit etwas Pause zwischen diesen Kostümen wechseln lassen und bewegen, dann sieht es auch, als ob sie fliegt. Wir lassen sie dabei auch immer ein Stück kleiner werden und verstecken sie, wenn sie bei der Höhle ist.
@@ -66,3 +66,13 @@ Zu Beginn ist der Pokal noch nicht sichtbar.
 
 1. ![Fledermausspiel](scratch-fledermaus-v3/pokal-02.png){: .right}
 Wenn der Spieler das Spiel gewonnen hat, dann kann sich der Pokal zeigen. Wir müssen nur noch eine passende Stelle dafür angeben.
+
+## Weitere Ideen
+
+* Erweitere das Spiel um zusätzliche Fragen.
+
+* Baue das gleiche Spiel zur Übung nochmal, aber diesmal mit einem anderen Quiz-Thema.
+
+## Herunterladen
+
+Du kannst das fertige Projekt unter [Fledermaus-Quiz.sb3](scratch-fledermaus-v3/Fledermaus-Quiz.sb3) herunterladen.
