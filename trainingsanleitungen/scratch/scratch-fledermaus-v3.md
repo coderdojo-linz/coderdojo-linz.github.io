@@ -30,7 +30,7 @@ Das Spiel besteht aus zwei Figuren: der Fledermaus und dem Pokal.
 
 1. Füge die Figur Bat hinzu und ändere den Namen auf *Fledermaus*
  
-1. Lade von https://de.clipartlogo.com/download/father-day-icon_235246 das Bild für den Pokal herunter und speichere auf deinem Computer. Lade dann dieses Bild als neue Figur in Scratch hoch. Ändere den Namen auf *Pokal* und die Größe auf 200.
+1. Lade von [https://de.clipartlogo.com/download/father-day-icon_235246](https://de.clipartlogo.com/download/father-day-icon_235246) das Bild für den Pokal herunter und speichere auf deinem Computer. Lade dann dieses Bild als neue Figur in Scratch hoch. Ändere den Namen auf *Pokal* und die Größe auf 200.
 
 ## Skripte für die Fledermaus
 
