@@ -59,7 +59,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		});
 
 		var row = "<tr>";
-		row += "<td>Freitag, 10. April 2020</td>";
+		row += "<td>Freitag, 17. April 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
@@ -68,55 +68,55 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		workshops.push({
 			time: "13:45 - 15:45",
 			title: "Virtuelles Elektronikbasteln",
-			description: "In diesem Workshop könnt ihr virtuell Elektronik basteln mit <a href=\"https://www.tinkercad.com/\" target=\"_blank\">Tinkercad</a>. Ihr werdet Schaltungen bauen und braucht dafür weder Lötkolben noch Bauteile. Dieser Workshop ist offen für alle, nicht nur für Teilnehmerinnen und Teilnehmern vom CoderDojo Elektronik Classroom.<p>Wir werden die Strom und Spannungsmessung in Tinkercad anschauen und es werden die Grundlagen Strom, Spannung und Widerstand anhand eines einfachen Beispiels erklärt, dass jeder zu Hause im Nachgang nachbauen kann. Mit Alufolie, einem Bleistift, einer 12V Lampe aus dem Auto und eine 9V Batterie bauen wir eine Helligkeitsregelung.</p><p>Im zweiten Teil werden wir den Elternalarm mit dem Arduino und ein paar virtuellen Bauteilen auf Tinkercad bauen. Wer möchte nicht wissen wenn sich die Eltern oder Geschwister dem Zimmer nähern. Mit der Schaltung und dem Programm könnte ihr dann dieses Projekt später in die Realität überführen.</p>",
-			prerequisites: "Computer mit Internetzugang, Begeisterung und etwas Zeit. Es wird wieder eine Tinkercad Classroom geben, wo ihr in den erste 10 Min mit euren Nickname Zugang bekommt. Und dann geht es auch schon los!",
+			description: "Alle die schon mal im Classroom waren können die Zugänge wieder benutzen, alle die noch nie etwas mit Tinkercad gemacht haben bitte gleich am Anfang melden, dann erhaltet ihr eine 10 Min Einführung in Tinkercad. Ihr könnt euch auf dieser Seite schon einmal vorab informieren: <a href=\"https://www.smarthome-tricks.de/esp8266-einfuehrung/arduino-schaltung-mit-tinkercad-simulieren/\" target=\"_blank\">Tinkercad Kurzanleitung.</a><br/><br/>Wir basteln wieder mit Tinkercad. Wir werden bei der Strom- und Spannungsmessung weiter machen. Dieses Mal werfen wir einen Blick auf die Versorgungsspannung der Batterie und die Spannungsabfälle an den Verbrauchern, sowie die Ströme, die durch die Bauteile und Verbraucher fliessen. Wir werfen nochmals einen Blick auf das Ohmsche Gesetz und überprüfen unsere Beobachtungen<br/><br/>Mit den Arduino werden wir eine Temperaturmessung bauen. Dazu nutzen wir den Analogeingang des Arduinos. Wir werden auch ein paar Themen rund um den Arduino besprechen.</p>",
+			prerequisites: "PC oder Laptop, Internetzugang, eventuell einen Taschenrechner (es geht auch der am PC)",
 			mentors: ["Günther", "Michael"],
-			link: "https://zoom.us/j/190881403"
+			link: "https://zoom.us/j/98789138621"
 		});
 
 		workshops.push({
 			time: "13:45 - 15:45",
-			title: "Pimp Your Website mit CSS",
-			description: "Letzte Woche haben wir uns im Detail mit HTML beschäftigt. Diesmal wollen wir unsere Webseiten hübsch gestalten und mit coolen Animationen versehen. Voraussetzung für diesen Workshop ist, dass ihr die Grundlagen von HTML beherrscht.",
-			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li>mit folgende Plugins:<ul><li><a href=\"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer\" target=\"_blank\">Live Server</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare\" target=\"_blank\">Live Share</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer\" target=\"_blank\">Autoprefixer</a></li></ul></li></ul>",
-			mentors: ["Karin", "Rainer", "Cornelia", "Gerlinde"],
-			link: "https://zoom.us/j/384514141"
+			title: "Typescript",
+			description: "In diesem Workshop setzen wir uns im Detail mit Basiskonzepten von Programmiersprachen wie Variablen, Datentypen, Funktionen, Klassen, Ablauflogik etc. am Beispiel von TypeScript auseinander. Auch wenn du andere Programmiersprachen verwendest, kannst du das Wissen aus diesem Workshop dort sicher auch anwenden. Du bist hier richtig, wenn du mehr über die Hintergründe von Coding erfahren möchtest und Verständnis dafür gewinnen möchtest, was so manche Codezeilen, die du bisher aus unseren Beispielangaben kopiert hast, wirklich bedeuten.",
+			prerequisites: "<ul><li>Programmiererfahrung (zumindest eine Menge Scratch, noch besser ein wenig HTML/CSS/JavaScript, Java, Python oder Ähnliches)</li><li>Mikrofon und idealerweise Webcam, da wir viel über Coding-Konzepte reden werden</li><li><a href=\"https://nodejs.org/\" target=\"_blank\">Node.js</a></li><li><a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li></ul>",
+			mentors: ["Rainer"],
+			link: "https://zoom.us/j/92198752576"
 		});
 
 		workshops.push({
 			time: "13:45 - 15:45",
+			title: "Scratch Anfängerworkshop",
+			description: "Natürlich darf ein Workshop für Anfängerinnen und Anfänger mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop euer erstes Computerspiel programmieren.",
+			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
+			mentors: ["Sonja", "Gerlinde"],
+			link: "https://zoom.us/j/99339025558"
+		});
+
+		workshops.push({
+			time: "16:00 - 18:00",
 			title: "Java",
-			description: "Wir werden unserem Spiel beibringen auf Benutzereingaben zu reagieren und Kollisionen zu erkennen.",
+			description: "Wir werden unserem Spiel beibringen Kollisionen zu erkennen.",
 			prerequisites: "<ul><li><a href=\"https://www.jetbrains.com/de-de/idea/download/#section=windows\" target=\"_blank\">IntelliJ IDEA (Community Edition)</a></li><li><a href=\"https://git-scm.com/download/win\" target=\"_blank\">Git</a></li></ul>",
 			mentors: ["Thomas"],
-			link: "https://zoom.us/j/218047339"
+			link: "https://zoom.us/j/92032918488"
 		});
 
 		workshops.push({
 			time: "16:00 - 18:00",
 			title: "Minecraft Redstone",
-			description: "Wenn du schon immer Redstone Schaltungen selber entwerfen wolltest oder verstehen willst wie die Schaltungen funktionieren die du von Youtube kopierst ;) dann bist du hier genau richtig! Wir werden einen Einsteigerkurs in Redstone machen mit:<ul><li>Grundlagen: Was ist redstone, welche Bauteile gibt es dafür, ...</li><li>Erste logische Schaltungen: Was sind Und/Oder/Nicht Schaltungen und warum brauch ich sie.</li><li>Erste kompliziertere Schaltungungen, wie baue ich eine versteckte Tür mit Pistons.</li></ul>",
-			prerequisites: "Du brauchst einen offiziellen Minecraft Account und <a href=\"https://www.minecraft.net/en-us/article/minecraft-java-edition-1-15-2\" target=\"_blank\">Minecraft Java Edition</a> in der Version 1.15.2 installiert und spielbereit. Es muss ein offizieller Account sein, weil wir auf einem gemeinsamen Server unsere Übungen machen werden.",
+			description: "Wenn du schon immer Redstone Schaltungen selber entwerfen wolltest oder verstehen willst wie die Schaltungen funktionieren die du von Youtube kopierst ;) dann bist du hier genau richtig! Wir werden unseren Kurs fortsetzen, diesesmal mit:<br/><br/><ul><li>Speicherzellen, wie kann ich Zustände in meinen Schaltungen abbilden</li><li>Taktgeber, wie kann ich regelmäßig meine Schaltung aktivieren</li><li>Impulsgeber, wie kann ich Signale auf Impulse umwandeln</li></ul>",
+			prerequisites: "Ihr braucht einen offiziellen Minecraft Account und die Java-Minecraft Version 1.15.2 installiert. Wir werden auf einem gemeinsamen Server unsere Übungen machen.",
 			mentors: ["Matthias", "Jan"],
-			link: "https://zoom.us/j/973893563"
+			link: "https://zoom.us/j/99966757401"
 		});
 
 		workshops.push({
 			time: "16:00 - 18:00",
-			title: "Scratch Anfängerworkshop",
-			description: "Natürlich darf ein Workshop für Anfängerinnen und Anfänger mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop euer erstes Computerspiel programmieren.",
-			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
-			mentors: ["Gerlinde", "Sonja", "Walter"],
-			link: "https://zoom.us/j/976771003"
-		});
-
-		workshops.push({
-			time: "16:00 - 18:00",
-			title: "Pimp Your Scratch Space Shooter",
-			description: "Habt ihr unseren Scratch Spaceshooter schon mal gebaut? Wir werden diesmal bei der Version vom Freitag, 3.4. weitermachen. Wenn ihr da nicht dabei wart ist das kein Problem. Die Version könnt ihr unter <a href=\"https://scratch.mit.edu/projects/382856553\" target=\"_blank\">CoderDojo-Spaceshooter V1</a> einfach öffnen und herunterladen. Von dort aus werden wir den Spaceshooter erweitern und neue Funktionen hinzufügen. Freut euch auf:<ul><li>Hintergrund mit bewegten Sternen</li><li>ein Spiel mit mehr als nur einem Leben</li><li>gefährliche Meteoritenbruchstücke</li></ul>",
-			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
-			mentors: ["Hans-Peter"],
-			link: "https://dynatrace.zoom.us/j/839746804"
+			title: "Bootstrap",
+			description: "Letzte Woche haben wir eine Webseite mit CSS hübscher gestaltet und mit einigen Animationen versehen. Diese Woche starten wir mit der selben Webseite wie beim letzten Mal, verwenden aber <a href=\"https://getbootstrap.com/\" target=\"_blank\">Bootstrap</a> um die Webseite zu gestalten. Wir verwenden das Grid System, um das Layout auf für mobile Devices anzupassen, und wir werden einige Komponenten wie z.B. das Karussell zum Durchblättern von Bildern einbauen.",
+			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li>mit folgende Plugins:<ul><li><a href=\"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer\" target=\"_blank\">Live Server</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare\" target=\"_blank\">Live Share</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer\" target=\"_blank\">Autoprefixer</a></li></ul></li></ul>",
+			mentors: ["Karin", "Rainer"],
+			link: "https://zoom.us/j/99506376161"
 		});
 
 		workshops.forEach(function(w) {
@@ -128,7 +128,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 
 		eventsTable.append(row);
 
-		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-04-03'; }).forEach(function(event) {
+		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-04-17'; }).forEach(function(event) {
 			var row = "";
 
 			if (event.type == "header") {
