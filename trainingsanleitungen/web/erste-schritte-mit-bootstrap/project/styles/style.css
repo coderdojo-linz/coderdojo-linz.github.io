@@ -1,0 +1,43 @@
+h1,
+h2 {
+    text-transform: uppercase;
+    margin-block-start: 2rem;
+    margin-block-end: 1rem;
+    color: rgb(0, 129, 228);
+}
+
+img {
+    max-width: 100%;
+}
+
+.navigation {
+    height: 100vh;
+    background-color: #343a40;
+    padding: 20px;
+    overflow: auto;
+}
+
+.content {
+    height: 100vh;
+    overflow: auto;
+}
+
+.navbar-brand {
+    width: 100%;
+}
+
+#introCarousel .carousel-caption {
+    background-color: rgba(0, 66, 117, 0.7);
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#introCarousel .carousel-caption h5 {
+    margin-block-end: 1rem;
+}
+
+#introCarousel ol.carousel-indicators {
+    margin-bottom: 5px;
+}
+
