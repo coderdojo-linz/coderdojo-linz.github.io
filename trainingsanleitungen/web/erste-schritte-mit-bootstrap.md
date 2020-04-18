@@ -37,9 +37,9 @@ Wenn ihr die Webseite index.html darin öffnet, sieht das dann so aus:
 
 ## Bootstrap hinzufügen
 
-In der Übung [CSS Advanced Styles](css-advanced-styles.html) haben wir gelernt, wie wir selbst CSS Styles schreiben, um das HTML hübscher zu gestalten.
+In der Übung [CSS Advanced Styles](css-advanced-styles.html){:target="_blank"} haben wir gelernt, wie wir selbst CSS Styles schreiben, um das HTML hübscher zu gestalten.
 
-In dieser Übung schreiben wir die Styles nicht selbst, sondern verwenden dazu das [Bootstrap](https://getbootstrap.com/) Framework in der Version 4.4. Unter **Get started** findet ihr alle Anweisungen, wie ihr Bootstrap in eure Webseite einbauen könnt.
+In dieser Übung schreiben wir die Styles nicht selbst, sondern verwenden dazu das [Bootstrap](https://getbootstrap.com/){:target="_blank"} Framework in der Version 4.4. Unter **Get started** findet ihr alle Anweisungen, wie ihr Bootstrap in eure Webseite einbauen könnt.
 
 * Kopiert dazu die Zeile aus dem CSS Block in den `<head>` Bereich eures HTMLs:
 
@@ -81,7 +81,7 @@ Wenn du das Ergebnis mit vorher vergleichst siehst du, dass sich die Schriftart,
 
 ## Content
 
-Im ersten Schritt kümmern wir uns darum, dass der Inhalt nicht mehr am Rand klebt. Bootstrap stellt dafür die [Container](https://getbootstrap.com/docs/4.4/layout/overview/#containers) zur Verfügung. Probiere verschiedene Container in deinem HTML aus. Füge folgenden Code dazu direkt unter das öffnende `<body>` Tag ein:
+Im ersten Schritt kümmern wir uns darum, dass der Inhalt nicht mehr am Rand klebt. Bootstrap stellt dafür die [Container](https://getbootstrap.com/docs/4.4/layout/overview/#containers){:target="_blank"} zur Verfügung. Probiere verschiedene Container in deinem HTML aus. Füge folgenden Code dazu direkt unter das öffnende `<body>` Tag ein:
 
 ```
 <div class="container" style="background-color: red; height: 20px;"></div>
@@ -115,7 +115,7 @@ Jetzt wird der Inhalt in der Mitte dargestellt, nur wenn das Fenster kleiner ist
 
 ## Jumbotron
 
-Als nächstes wollen wir den Einleitungsbereich hervorheben. In Bootstrap gibt's dafür den [Jumbotron](https://getbootstrap.com/docs/4.4/components/jumbotron/). Wir nehmen dazu die Elemente `<h1>` und `<div class="intro">` aus dem vorher angelegten Container raus und fügen stattdessen darüber einen Jumbotron mit den beiden Elementen ein:
+Als nächstes wollen wir den Einleitungsbereich hervorheben. In Bootstrap gibt's dafür den [Jumbotron](https://getbootstrap.com/docs/4.4/components/jumbotron/){:target="_blank"}. Wir nehmen dazu die Elemente `<h1>` und `<div class="intro">` aus dem vorher angelegten Container raus und fügen stattdessen darüber einen Jumbotron mit den beiden Elementen ein:
 
 ```
 <body>
@@ -214,7 +214,7 @@ Die Überschriften `<h1>` und `<h2>` werden dadurch in blauen Großbuchstaben mi
 
 ## Grid Layout
 
-Als nächstes sehen wir uns das [Grid Layout](https://getbootstrap.com/docs/4.4/layout/grid/) von Bootstrap an. Um das Grid zu verwenden brauchen wir ein `<div class="row">`. Innerhalt der Row können mit `<div class="col">` Spalten angelegt werden. Der Inhalt wird gleichmäßig auf alle Spalten in einer Zeile aufgeteilt.
+Als nächstes sehen wir uns das [Grid Layout](https://getbootstrap.com/docs/4.4/layout/grid/){:target="_blank"} von Bootstrap an. Um das Grid zu verwenden brauchen wir ein `<div class="row">`. Innerhalt der Row können mit `<div class="col">` Spalten angelegt werden. Der Inhalt wird gleichmäßig auf alle Spalten in einer Zeile aufgeteilt.
 
 Bei sehr kleinen Browserfenstern macht die Darstellung von Spalten aber oft keinen Sinn. Man kann daher angeben, wann in Spalten aufgeteilt werden soll. Mit `<div class="col-md">` gibt man an, dass man nur bei Fenstern >= medium (768px) Spalten haben möchte. Sonst werden die Inhalte untereinander dargestellt.
 
@@ -496,7 +496,7 @@ Du kannst rows und cols genauso innerhalb von Aufzählungen anwenden. Beginne da
 
 ## Carousel
 
-Das [Carousel](https://getbootstrap.com/docs/4.4/components/carousel/) in Bootstrap kann Bilder in einer Slideshow darstellen. Wir ersetzten jetzt das Bild im Jumbotron durch drei Bilder, die automatisch abwechselnd angezeigt werden. In der einfachsten Form ersetzt du die Zeile `<img src="images/endgame.png" alt="Endgame">` durch die folgenden:
+Das [Carousel](https://getbootstrap.com/docs/4.4/components/carousel/){:target="_blank"} in Bootstrap kann Bilder in einer Slideshow darstellen. Wir ersetzten jetzt das Bild im Jumbotron durch drei Bilder, die automatisch abwechselnd angezeigt werden. In der einfachsten Form ersetzt du die Zeile `<img src="images/endgame.png" alt="Endgame">` durch die folgenden:
 
 ```
 <div id="introCarousel" class="carousel slide" data-ride="carousel">
@@ -602,7 +602,7 @@ Nun können wir auch noch eine Beschriftung zu den Bildern geben:
 
 ## Scrollspy
 
-Als letzes fügen wir noch ein Menü zu Navigation ein. Wir verwenden dafür den [Scrollspy](https://getbootstrap.com/docs/4.4/components/scrollspy/). Wenn wir durch den Inhalten scrollen, werden automatisch die gerade aktiven Menüelemente hervorgehoben.
+Als letzes fügen wir noch ein Menü zu Navigation ein. Wir verwenden dafür den [Scrollspy](https://getbootstrap.com/docs/4.4/components/scrollspy/){:target="_blank"}. Wenn wir durch den Inhalten scrollen, werden automatisch die gerade aktiven Menüelemente hervorgehoben.
 
 Wir brauchen auf unserer Seite dafür zwei Bereich:
 
@@ -690,3 +690,7 @@ Damit beim Scrollen die Menüelemente hervorgehoben werden, müssen wir jetzt no
 ```
 
 ![Grid System](erste-schritte-mit-bootstrap/website-with-scrollspy.png)
+
+## Fertiges Beispiel
+
+Das fertige Beispiel findet ihr auf GitHub unter [https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/web/erste-schritte-mit-bootstrap/project](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/web/erste-schritte-mit-bootstrap/project){:target="_blank"}.
