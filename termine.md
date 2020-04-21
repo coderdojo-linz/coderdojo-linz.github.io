@@ -59,31 +59,51 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		});
 
 		var row = "<tr>";
-		row += "<td>Freitag, 17. April 2020</td>";
+		row += "<td>Freitag, 24. April 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
 		var workshops = [];
-		
+
 		workshops.push({
 			time: "13:45 - 15:45",
 			title: "Virtuelles Elektronikbasteln",
-			description: "Alle die schon mal im Classroom waren können die Zugänge wieder benutzen, alle die noch nie etwas mit Tinkercad gemacht haben bitte gleich am Anfang melden, dann erhaltet ihr eine 10 Min Einführung in Tinkercad. Ihr könnt euch auf dieser Seite schon einmal vorab informieren: <a href=\"https://www.smarthome-tricks.de/esp8266-einfuehrung/arduino-schaltung-mit-tinkercad-simulieren/\" target=\"_blank\">Tinkercad Kurzanleitung.</a><br/><br/>Wir basteln wieder mit Tinkercad. Wir werden bei der Strom- und Spannungsmessung weiter machen. Dieses Mal werfen wir einen Blick auf die Versorgungsspannung der Batterie und die Spannungsabfälle an den Verbrauchern, sowie die Ströme, die durch die Bauteile und Verbraucher fliessen. Wir werfen nochmals einen Blick auf das Ohmsche Gesetz und überprüfen unsere Beobachtungen<br/><br/>Mit den Arduino werden wir eine Temperaturmessung bauen. Dazu nutzen wir den Analogeingang des Arduinos. Wir werden auch ein paar Themen rund um den Arduino besprechen.</p>",
-			prerequisites: "PC oder Laptop, Internetzugang, eventuell einen Taschenrechner (es geht auch der am PC)",
+			description: "Wir Basteln und mit ein paar 5 Cent Münzen, Alufolie, Essig eine Batterie und bringen damit ein LED zum leuchten, danach werden wir das was wir gebaut haben in Tinkercad nachbauen, Rechnen, Simulieren und Messen. Anschliessend machen wir mit dem Arduion ein Messgerät für Spannungen von 0-5V und zeigen da auf einem Display an.",
+			prerequisites: "Ein Computer mit <a href=\"https://www.tinkercad.com\" target=\"_blank\">Tinkercad</a> Zugang.",
 			mentors: ["Günther", "Michael"],
-			link: "https://zoom.us/j/98789138621"
+			link: "TBD"
+		});
+		
+		workshops.push({
+			time: "14:00 - 14:45",
+			title: "Programmieren wie ein Pirat - Erste Schritte mit R und yarrr",
+			description: "In diesen 25 min werden wir erste Schritte in der Programmiersprache \"R\" und dem Paket \"yarrr\" machen. Du brauchst dazu keinerlei Vorkenntnisse. Als Beispiel dient uns eine Liste von Piraten:<ul><li>(Piraten-)Daten erkunden</li><li>Statistik (ohne uns dabei weh zu tun)</li><li>Malen nach Zahlen</li><li>Ein Blick in die Glaskugel</li></ul><br/>Wenn du dir die Beispiele vorher schon ansehen möchtest, kannst du das unter dem folgenden Link (in Englisch) tun: <a href=\"https://bookdown.org/ndphillips/YaRrr/\" target=\"_blank\">https://bookdown.org/ndphillips/YaRrr/</a>.<br/><br/><a href=\"https://www.globalazurebootcamp.at/sessions/#187103\" target=\"_blank\">Mehr Infos ...</a>",
+			prerequisites: "-",
+			mentors: ["Markus Ehrenmüller-Jensen"],
+			link: "https://www.globalazurebootcamp.at/sessions/programmieren-wie-ein-pirat-mit-r-und-yarrr/"
 		});
 
 		workshops.push({
-			time: "13:45 - 15:45",
-			title: "Typescript",
-			description: "In diesem Workshop setzen wir uns im Detail mit Basiskonzepten von Programmiersprachen wie Variablen, Datentypen, Funktionen, Klassen, Ablauflogik etc. am Beispiel von TypeScript auseinander. Auch wenn du andere Programmiersprachen verwendest, kannst du das Wissen aus diesem Workshop dort sicher auch anwenden. Du bist hier richtig, wenn du mehr über die Hintergründe von Coding erfahren möchtest und Verständnis dafür gewinnen möchtest, was so manche Codezeilen, die du bisher aus unseren Beispielangaben kopiert hast, wirklich bedeuten.",
-			prerequisites: "<ul><li>Programmiererfahrung (zumindest eine Menge Scratch, noch besser ein wenig HTML/CSS/JavaScript, Java, Python oder Ähnliches)</li><li>Mikrofon und idealerweise Webcam, da wir viel über Coding-Konzepte reden werden</li><li><a href=\"https://nodejs.org/\" target=\"_blank\">Node.js</a></li><li><a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li></ul>",
-			mentors: ["Rainer"],
-			link: "https://zoom.us/j/92198752576"
+			time: "15:00 - 15:45",
+			title: "Amateurfunk als Hobby",
+			description: "Als Amateurfunker hat man viele Möglichkeiten wie weltweite Kommunikation, Notfunk, Hamnet, Morsen, Satellitenfunk, Amateurfunkfernsehen, Basteln ... und ist es perfektes Hobby für Technikinteressierte.<br/><br/><a href=\"https://www.globalazurebootcamp.at/sessions/#185213\" target=\"_blank\">Mehr Infos ...</a>",
+			prerequisites: "-",
+			mentors: ["Simon Dorrer"],
+			link: "https://www.globalazurebootcamp.at/sessions/amateurfunk-als-hobby/"
 		});
 
 		workshops.push({
+			time: "16:00 - 16:45",
+			title: "Wie kommt man sicher durch die Firewall?",
+			description: "Ihr möchtet bei euch zu Hause einen Minecraft-Server betreiben und eure Freundinnen und Freunde übers Internet zum gemeinsamen Spielen einladen? Ihr habt eine Webseite programmiert, auf die aber nur eure Schulklasse zugreifen können soll? Mit Hilfe eures Raspberry Pi möchtet ihr Fotos übers Internet sicher mit der ganzen Familie teilen? In dieser Session zeigt euch Rainer die Tools WireGuard und Tailscale, die euch helfen können, solche Probleme zu lösen.<br/><br/><a href=\"https://www.globalazurebootcamp.at/sessions/#185215\" target=\"_blank\">Mehr Infos ...</a>",
+			prerequisites: "-",
+			mentors: ["Rainer Stropek"],
+			link: "https://www.globalazurebootcamp.at/sessions/wie-kommt-man-sicher-durch-die-firewall/"
+		});
+		
+	
+
+		/*workshops.push({
 			time: "13:45 - 15:45",
 			title: "Scratch Anfängerworkshop",
 			description: "Natürlich darf ein Workshop für Anfängerinnen und Anfänger mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop euer erstes Computerspiel programmieren.",
@@ -117,7 +137,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li>mit folgende Plugins:<ul><li><a href=\"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer\" target=\"_blank\">Live Server</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare\" target=\"_blank\">Live Share</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer\" target=\"_blank\">Autoprefixer</a></li></ul></li></ul>",
 			mentors: ["Karin", "Rainer"],
 			link: "https://zoom.us/j/99506376161"
-		});
+		});*/
 
 		workshops.forEach(function(w) {
 			row += "<p><span class=\"workshop-title\">" + w.time + " " + w.title + "</span></p><p>" + w.description + "</p><p><b>Voraussetzungen</b></p><p>" + w.prerequisites + "</p><p><b>Mentoren:</b> " + w.mentors.join(", ") + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
@@ -128,7 +148,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 
 		eventsTable.append(row);
 
-		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-04-17'; }).forEach(function(event) {
+		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-04-24'; }).forEach(function(event) {
 			var row = "";
 
 			if (event.type == "header") {
