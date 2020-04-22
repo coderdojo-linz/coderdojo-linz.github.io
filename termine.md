@@ -67,6 +67,15 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 
 		workshops.push({
 			time: "13:45 - 15:45",
+			title: "Scratch",
+			description: "Natürlich darf ein Workshop für Anfänger*Innen und/oder Fortgeschrittene mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop euer erstes Computerspiel programmieren. Wenn ihr schon Erfahrung habt, dann sehen wir uns ein schwierigeres Beispiel an.",
+			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
+			mentors: ["Daniel", "Walter"],
+			link: "TBD"
+		});
+
+		workshops.push({
+			time: "13:45 - 15:45",
 			title: "Virtuelles Elektronikbasteln",
 			description: "Wir Basteln und mit ein paar 5 Cent Münzen, Alufolie, Essig eine Batterie und bringen damit ein LED zum leuchten, danach werden wir das was wir gebaut haben in Tinkercad nachbauen, Rechnen, Simulieren und Messen. Anschliessend machen wir mit dem Arduion ein Messgerät für Spannungen von 0-5V und zeigen da auf einem Display an.",
 			prerequisites: "Ein Computer mit <a href=\"https://www.tinkercad.com\" target=\"_blank\">Tinkercad</a> Zugang.",
@@ -101,16 +110,17 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			link: "https://www.globalazurebootcamp.at/sessions/wie-kommt-man-sicher-durch-die-firewall/"
 		});
 		
-	
-
-		/*workshops.push({
-			time: "13:45 - 15:45",
-			title: "Scratch Anfängerworkshop",
-			description: "Natürlich darf ein Workshop für Anfängerinnen und Anfänger mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop euer erstes Computerspiel programmieren.",
-			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
-			mentors: ["Sonja", "Gerlinde"],
-			link: "https://zoom.us/j/99339025558"
+		workshops.push({
+			time: "17:00 - 19:00",
+			title: "Minecraft Redstone",
+			description: "Diese Woche werden wir uns 3x3 Türen widmen. Wir werden uns verschiedene Designs ansehen, verstehen und gemeinsam bauen.",
+			prerequisites: "Ihr braucht einen offiziellen Minecraft Account und die Java-Minecraft Version 1.15.2 installiert. Wir werden auf einem gemeinsamen Server unsere Übungen machen.",
+			mentors: ["Matthias", "Hans-Peter", "Jan"],
+			link: "TBD"
 		});
+
+
+		/*
 
 		workshops.push({
 			time: "16:00 - 18:00",
@@ -121,14 +131,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			link: "https://zoom.us/j/92032918488"
 		});
 
-		workshops.push({
-			time: "16:00 - 18:00",
-			title: "Minecraft Redstone",
-			description: "Wenn du schon immer Redstone Schaltungen selber entwerfen wolltest oder verstehen willst wie die Schaltungen funktionieren die du von Youtube kopierst ;) dann bist du hier genau richtig! Wir werden unseren Kurs fortsetzen, diesesmal mit:<br/><br/><ul><li>Speicherzellen, wie kann ich Zustände in meinen Schaltungen abbilden</li><li>Taktgeber, wie kann ich regelmäßig meine Schaltung aktivieren</li><li>Impulsgeber, wie kann ich Signale auf Impulse umwandeln</li></ul>",
-			prerequisites: "Ihr braucht einen offiziellen Minecraft Account und die Java-Minecraft Version 1.15.2 installiert. Wir werden auf einem gemeinsamen Server unsere Übungen machen.",
-			mentors: ["Matthias", "Jan"],
-			link: "https://zoom.us/j/99966757401"
-		});
+		
 
 		workshops.push({
 			time: "16:00 - 18:00",
