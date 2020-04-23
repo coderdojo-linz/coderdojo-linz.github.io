@@ -71,7 +71,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Natürlich darf ein Workshop für Anfänger*Innen und/oder Fortgeschrittene mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop euer erstes Computerspiel programmieren. Wenn ihr schon Erfahrung habt, dann sehen wir uns ein schwierigeres Beispiel an.",
 			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
 			mentors: ["Daniel", "Walter"],
-			link: "TBD"
+			link: "https://zoom.us/j/93092383676?pwd=b2JtTTF2YlNjMnVUNm1DSGpuNHlkZz09"
 		});
 
 		workshops.push({
@@ -80,7 +80,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Wir Basteln und mit ein paar 5 Cent Münzen, Alufolie, Essig eine Batterie und bringen damit ein LED zum leuchten, danach werden wir das was wir gebaut haben in Tinkercad nachbauen, Rechnen, Simulieren und Messen. Anschliessend machen wir mit dem Arduion ein Messgerät für Spannungen von 0-5V und zeigen da auf einem Display an.",
 			prerequisites: "Ein Computer mit <a href=\"https://www.tinkercad.com\" target=\"_blank\">Tinkercad</a> Zugang.",
 			mentors: ["Günther", "Michael"],
-			link: "TBD"
+			link: "https://zoom.us/j/92539730609?pwd=ZFUrUzhVeUIrazB3alRaNk5yN3gydz09"
 		});
 		
 		workshops.push({
@@ -116,7 +116,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Diese Woche werden wir uns 3x3 Türen widmen. Wir werden uns verschiedene Designs ansehen, verstehen und gemeinsam bauen.",
 			prerequisites: "Ihr braucht einen offiziellen Minecraft Account und die Java-Minecraft Version 1.15.2 installiert. Wir werden auf einem gemeinsamen Server unsere Übungen machen.",
 			mentors: ["Matthias", "Hans-Peter", "Jan"],
-			link: "TBD"
+			link: "https://zoom.us/j/99742116537?pwd=V3VwR3ZLMFBzcXJPNW8vMkJiaGo4QT09"
 		});
 
 
