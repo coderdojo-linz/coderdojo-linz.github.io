@@ -59,7 +59,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		});
 
 		var row = "<tr>";
-		row += "<td>Freitag, 24. April 2020</td>";
+		row += "<td>Freitag, 01. Mai 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
@@ -67,56 +67,38 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 
 		workshops.push({
 			time: "13:45 - 15:45",
-			title: "Scratch",
-			description: "Natürlich darf ein Workshop für Anfänger*Innen und/oder Fortgeschrittene mit Scratch im CoderDojo nicht fehlen. Wenn ihr noch nie mit Scratch gearbeitet habt, dann könnt ihr in diesem Workshop euer erstes Computerspiel programmieren. Wenn ihr schon Erfahrung habt, dann sehen wir uns ein schwierigeres Beispiel an.",
+			title: "Scratch Hacking mit Node.js und TypeScript",
+			description: "Die letzten Wochen haben wir uns Details rund um TypeScript angesehen. Diesmal wenden wir das gelernte an, um Scratch zu hacken. Wir wollen mit Node.js und TypeScript computergenerierte Scratch-Spiele erzeugen und dabei etwas über den Umgang mit Dateien, JSON, Serialisierung von Daten etc. zu lernen. Scratch ist eine hervorragende, in TypeScript geschriebene Anwendung und wir möchten durch den Blick hinter die Kulissen von den Profis lernen, die Scratch entwickelt haben.",
+			prerequisites: "<ul><li>Ein wenig Programmiererfahrung mit JavaScript, TypeScript, Java, C# oder einer ähnlichen Programmiersprache</li><li>Mikrofon und idealerweise Webcam, da wir viel über Coding-Konzepte reden werden</li><li><a href=\"https://nodejs.org/\" target=\"_blank\">Node.js</a></li><li><a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li></ul>",
+			mentors: ["Rainer"],
+			link: "https://us02web.zoom.us/j/89069840267?pwd=M3BTT2JuTUdRa2NTOVM5T2VUOEFyUT09"
+		});
+		
+		workshops.push({
+			time: "16:00 - 18:00",
+			title: "Scratch Open Space",
+			description: "Wir treffen uns zum Scratchen. Ihr könnt selbständig an Scratch-Projekten arbeiten und wir helfen euch bei Problemen. Keine Idee, welches Scratch-Projekt das richtige für dich ist? Wir suchen gerne mit dir ein für deine Erfahrung passendes aus unseren Übungsanleitungen. Falls Anfängerinnen und Anfänger dabei sind, die noch nie mit Scratch programmiert haben, helfen wir gerne bei den ersten Schritten.",
 			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
-			mentors: ["Daniel", "Walter"],
-			link: "https://zoom.us/j/93092383676?pwd=b2JtTTF2YlNjMnVUNm1DSGpuNHlkZz09"
+			mentors: ["Rainer", "Karin"],
+			link: "https://us02web.zoom.us/j/83951225879?pwd=MHNjcVlGRXMwY1RWeC84RFEwc21nUT09"
 		});
 
 		workshops.push({
-			time: "13:45 - 15:45",
-			title: "Virtuelles Elektronikbasteln",
-			description: "Wir Basteln und mit ein paar 5 Cent Münzen, Alufolie, Essig eine Batterie und bringen damit ein LED zum leuchten, danach werden wir das was wir gebaut haben in Tinkercad nachbauen, Rechnen, Simulieren und Messen. Anschliessend machen wir mit dem Arduion ein Messgerät für Spannungen von 0-5V und zeigen da auf einem Display an.",
-			prerequisites: "Ein Computer mit <a href=\"https://www.tinkercad.com\" target=\"_blank\">Tinkercad</a> Zugang.",
-			mentors: ["Günther", "Michael"],
-			link: "https://zoom.us/j/92539730609?pwd=ZFUrUzhVeUIrazB3alRaNk5yN3gydz09"
+			time: "16:00 - 18:00",
+			title: "Dynamische Webseite mit Node.js",
+			description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.<br/><br/>Wir werden uns den Unterschied zu statischen Webseiten erarbeiten und gemeinsam eine einfache dynamische Webseite mit Node.js bauen.",
+			prerequisites: "<p>Grundlegende Kenntnisse:</p><ul><li>beim Programmieren (z.B. mit JavaScript, Java, C#, C++, ...)</li><li>HTML</li></ul><p>Software:</p><ul><li>einen Texteditor wie z.B. <a href=\"https://notepad-plus-plus.org/\" target=\"_blank\">Notepad++</a>, <a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li><li><a href=\"https://nodejs.org/en/download/\" target=\"_blank\">Node.js</a></li></ul>",
+			mentors: ["Thomas"],
+			link: "https://us02web.zoom.us/j/83443070804?pwd=dDFlb3lGRXZ6Yk5zZUFVVkdhQkNlQT09"
 		});
 		
 		workshops.push({
-			time: "14:00 - 14:45",
-			title: "Programmieren wie ein Pirat - Erste Schritte mit R und yarrr",
-			description: "In diesen 25 min werden wir erste Schritte in der Programmiersprache \"R\" und dem Paket \"yarrr\" machen. Du brauchst dazu keinerlei Vorkenntnisse. Als Beispiel dient uns eine Liste von Piraten:<ul><li>(Piraten-)Daten erkunden</li><li>Statistik (ohne uns dabei weh zu tun)</li><li>Malen nach Zahlen</li><li>Ein Blick in die Glaskugel</li></ul><br/>Wenn du dir die Beispiele vorher schon ansehen möchtest, kannst du das unter dem folgenden Link (in Englisch) tun: <a href=\"https://bookdown.org/ndphillips/YaRrr/\" target=\"_blank\">https://bookdown.org/ndphillips/YaRrr/</a>.<br/><br/><a href=\"https://www.globalazurebootcamp.at/sessions/#187103\" target=\"_blank\">Mehr Infos ...</a>",
-			prerequisites: "-",
-			mentors: ["Markus Ehrenmüller-Jensen"],
-			link: "https://www.globalazurebootcamp.at/sessions/programmieren-wie-ein-pirat-mit-r-und-yarrr/"
-		});
-
-		workshops.push({
-			time: "15:00 - 15:45",
-			title: "Amateurfunk als Hobby",
-			description: "Als Amateurfunker hat man viele Möglichkeiten wie weltweite Kommunikation, Notfunk, Hamnet, Morsen, Satellitenfunk, Amateurfunkfernsehen, Basteln ... und ist es perfektes Hobby für Technikinteressierte.<br/><br/><a href=\"https://www.globalazurebootcamp.at/sessions/#185213\" target=\"_blank\">Mehr Infos ...</a>",
-			prerequisites: "-",
-			mentors: ["Simon Dorrer"],
-			link: "https://www.globalazurebootcamp.at/sessions/amateurfunk-als-hobby/"
-		});
-
-		workshops.push({
-			time: "16:00 - 16:45",
-			title: "Wie kommt man sicher durch die Firewall?",
-			description: "Ihr möchtet bei euch zu Hause einen Minecraft-Server betreiben und eure Freundinnen und Freunde übers Internet zum gemeinsamen Spielen einladen? Ihr habt eine Webseite programmiert, auf die aber nur eure Schulklasse zugreifen können soll? Mit Hilfe eures Raspberry Pi möchtet ihr Fotos übers Internet sicher mit der ganzen Familie teilen? In dieser Session zeigt euch Rainer die Tools WireGuard und Tailscale, die euch helfen können, solche Probleme zu lösen.<br/><br/><a href=\"https://www.globalazurebootcamp.at/sessions/#185215\" target=\"_blank\">Mehr Infos ...</a>",
-			prerequisites: "-",
-			mentors: ["Rainer Stropek"],
-			link: "https://www.globalazurebootcamp.at/sessions/wie-kommt-man-sicher-durch-die-firewall/"
-		});
-		
-		workshops.push({
-			time: "17:00 - 19:00",
+			time: "16:00 - 18:00",
 			title: "Minecraft Redstone",
-			description: "Diese Woche werden wir uns 3x3 Türen widmen. Wir werden uns verschiedene Designs ansehen, verstehen und gemeinsam bauen.",
+			description: "Diese Woche beschäftigen wir uns mit versteckten Zugängen.<br/><ul><li>Lifte, Stiegen, Türen</li><li>Wie kann ich Türöffner/Schlüssel gut verstecken</li></ul>",
 			prerequisites: "Ihr braucht einen offiziellen Minecraft Account und die Java-Minecraft Version 1.15.2 installiert. Wir werden auf einem gemeinsamen Server unsere Übungen machen.",
-			mentors: ["Matthias", "Hans-Peter", "Jan"],
-			link: "https://zoom.us/j/99742116537?pwd=V3VwR3ZLMFBzcXJPNW8vMkJiaGo4QT09"
+			mentors: ["Matthias", "Jan"],
+			link: "https://us02web.zoom.us/j/82701702618?pwd=cjRUYnlkeEp2aFRJR2hVYis2b0kwUT09"
 		});
 
 
@@ -151,7 +133,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 
 		eventsTable.append(row);
 
-		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-04-24'; }).forEach(function(event) {
+		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-05-01'; }).forEach(function(event) {
 			var row = "";
 
 			if (event.type == "header") {
