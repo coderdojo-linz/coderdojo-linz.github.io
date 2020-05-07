@@ -59,7 +59,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		});
 
 		var row = "<tr>";
-		row += "<td>Freitag, 01. Mai 2020</td>";
+		row += "<td>Freitag, 08. Mai 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
@@ -68,37 +68,46 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		workshops.push({
 			time: "13:45 - 15:45",
 			title: "Scratch Hacking mit Node.js und TypeScript",
-			description: "Die letzten Wochen haben wir uns Details rund um TypeScript angesehen. Diesmal wenden wir das gelernte an, um Scratch zu hacken. Wir wollen mit Node.js und TypeScript computergenerierte Scratch-Spiele erzeugen und dabei etwas über den Umgang mit Dateien, JSON, Serialisierung von Daten etc. zu lernen. Scratch ist eine hervorragende, in TypeScript geschriebene Anwendung und wir möchten durch den Blick hinter die Kulissen von den Profis lernen, die Scratch entwickelt haben.",
+			description: "Letzte Woche haben wir das Dateiformat von Scratch zerlegt und dabei etwas über ZIP-Archive und JSON gelernt. Anschließend haben wir das Grundgerüst unseres Node.js-Programms zum Generieren eines Scratch-Spiels mit Code gebaut. Diese Woche machen wir mit dem eigentlichen, automatischen Bauen des Scratch-Spiels weiter. Alle Coder von letzter Woche sind eingeladen, wieder mitzumachen. Quereinsteigen ist aber auf jeden Fall auch möglich.",
 			prerequisites: "<ul><li>Ein wenig Programmiererfahrung mit JavaScript, TypeScript, Java, C# oder einer ähnlichen Programmiersprache</li><li>Mikrofon und idealerweise Webcam, da wir viel über Coding-Konzepte reden werden</li><li><a href=\"https://nodejs.org/\" target=\"_blank\">Node.js</a></li><li><a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li></ul>",
-			mentors: ["Rainer"],
-			link: "https://us02web.zoom.us/j/89069840267?pwd=M3BTT2JuTUdRa2NTOVM5T2VUOEFyUT09"
+			mentors: ["Rainer", "Karin"],
+			link: "https://us02web.zoom.us/j/84300080892?pwd=MjlReDBKL2p4N0xxNW9paERxSENSQT09"
+		});
+
+		workshops.push({
+			time: "13:45 - 15:45",
+			title: "Virtuelles Elektronikbasteln",
+			description: "Wir messen wieder Strom und Spannung an einem Spannungsteiler. Danach basteln wir an einem LED Lauflicht mit dem Arduino. Wir stellen den Blockcode einen Textcode gegenüber und werden den Textcode optimieren.",
+			prerequisites: "Ein Computer mit <a href=\"https://www.tinkercad.com\" target=\"_blank\">Tinkercad</a> Zugang.",
+			mentors: ["Günther", "Michael"],
+			link: "https://us02web.zoom.us/j/85413750768?pwd=OGNOZUdPVzRYemRmWEUwRURFNGYyQT09"
 		});
 		
 		workshops.push({
 			time: "16:00 - 18:00",
-			title: "Scratch Open Space",
-			description: "Wir treffen uns zum Scratchen. Ihr könnt selbständig an Scratch-Projekten arbeiten und wir helfen euch bei Problemen. Keine Idee, welches Scratch-Projekt das richtige für dich ist? Wir suchen gerne mit dir ein für deine Erfahrung passendes aus unseren Übungsanleitungen. Falls Anfängerinnen und Anfänger dabei sind, die noch nie mit Scratch programmiert haben, helfen wir gerne bei den ersten Schritten.",
-			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li></ul>",
-			mentors: ["Rainer", "Karin"],
-			link: "https://us02web.zoom.us/j/83951225879?pwd=MHNjcVlGRXMwY1RWeC84RFEwc21nUT09"
+			title: "Von Scratch zu Python",
+			description: "Viele von euch haben schon Erfahrung mit Scratch und sind neugierig, wie \"richtiges\", textuelles Programmieren funktioniert. Sonja zeigt euch in diesem Workshop erste Schritte in Python. Ihr baut ein kleines Programm in Scratch und anschließend übersetzt ihr es in Python. So lernt ihr, wie Scratch-Programmierbausteine in Python-Kommandos aussehen.",
+			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li><li>Aktuelle Version von <a href=\"https://www.python.org/downloads/\" target=\"_blank\">Python</a></li></ul>",
+			mentors: ["Sonja"],
+			link: "https://us02web.zoom.us/j/82665569429?pwd=SlVsVjFEY3BFVWlBU1NpUEFzVHQwdz09"
 		});
 
 		workshops.push({
 			time: "16:00 - 18:00",
 			title: "Dynamische Webseite mit Node.js",
-			description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.<br/><br/>Wir werden uns den Unterschied zu statischen Webseiten erarbeiten und gemeinsam eine einfache dynamische Webseite mit Node.js bauen.",
+			description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.<br/><br/>Wir werden an unserer ChatApp weiterarbeiten.",
 			prerequisites: "<p>Grundlegende Kenntnisse:</p><ul><li>beim Programmieren (z.B. mit JavaScript, Java, C#, C++, ...)</li><li>HTML</li></ul><p>Software:</p><ul><li>einen Texteditor wie z.B. <a href=\"https://notepad-plus-plus.org/\" target=\"_blank\">Notepad++</a>, <a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li><li><a href=\"https://nodejs.org/en/download/\" target=\"_blank\">Node.js</a></li></ul>",
 			mentors: ["Thomas"],
-			link: "https://us02web.zoom.us/j/83443070804?pwd=dDFlb3lGRXZ6Yk5zZUFVVkdhQkNlQT09"
+			link: "	https://us02web.zoom.us/j/88940936374?pwd=K2hLZWJRSXVyanRSTmJPaVNXVDg2QT09"
 		});
 		
 		workshops.push({
 			time: "16:00 - 18:00",
 			title: "Minecraft Redstone",
-			description: "Diese Woche beschäftigen wir uns mit versteckten Zugängen.<br/><ul><li>Lifte, Stiegen, Türen</li><li>Wie kann ich Türöffner/Schlüssel gut verstecken</li></ul>",
+			description: "Diese Woche werden wir einen Blick auf automatisierte Farmen werfen. Natürlich nur solche die auch einen Haufen Redstone beinhalten ;)",
 			prerequisites: "Ihr braucht einen offiziellen Minecraft Account und die Java-Minecraft Version 1.15.2 installiert. Wir werden auf einem gemeinsamen Server unsere Übungen machen.",
 			mentors: ["Matthias", "Jan"],
-			link: "https://us02web.zoom.us/j/82701702618?pwd=cjRUYnlkeEp2aFRJR2hVYis2b0kwUT09"
+			link: "https://us02web.zoom.us/j/85327277265?pwd=MXo1S0lUZEpJVW04T1hZbC9hT3Y4dz09"
 		});
 
 
@@ -133,7 +142,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 
 		eventsTable.append(row);
 
-		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-05-01'; }).forEach(function(event) {
+		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-05-08'; }).forEach(function(event) {
 			var row = "";
 
 			if (event.type == "header") {
