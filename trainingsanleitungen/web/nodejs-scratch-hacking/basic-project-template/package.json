@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-scratch-hacking",
+  "version": "0.0.1",
+  "description": "Sample from CoderDojo Linz to learn about Node.js",
+  "main": "./dist/app.js",
+  "scripts": {
+  },
+  "author": "Rainer Stropek",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "jszip": "^3.4.0"
+  }
+}
