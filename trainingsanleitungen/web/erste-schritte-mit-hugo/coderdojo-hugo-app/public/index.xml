@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CoderDojo Linz on My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content in CoderDojo Linz on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 May 2020 16:28:12 +0200</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Space Shooter</title>
+      <link>http://example.org/scratch/space-shooter/</link>
+      <pubDate>Mon, 11 May 2020 16:56:51 +0200</pubDate>
+      
+      <guid>http://example.org/scratch/space-shooter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paddle Game</title>
+      <link>http://example.org/scratch/paddle-game/</link>
+      <pubDate>Mon, 11 May 2020 16:56:44 +0200</pubDate>
+      
+      <guid>http://example.org/scratch/paddle-game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fische Fangen</title>
+      <link>http://example.org/scratch/fische-fangen/</link>
+      <pubDate>Mon, 11 May 2020 16:07:08 +0200</pubDate>
+      
+      <guid>http://example.org/scratch/fische-fangen/</guid>
+      <description>Fische fangen In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?
+Bühne und Figuren anlegen   {: .right} Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst das Aquarium, in dem die Fische schwimmen. Wähle als erstes rechts unten unter Bühnenbild wählen ein Bühnenbild aus, zum Beispiel ein Aquarium.
+  {: .right} Als nächstes lösche die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Mon, 11 May 2020 16:02:08 +0200</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>CoderDojo Linz Magna amet sit excepteur veniam amet in aliquip occaecat id ipsum mollit. Dolor adipisicing irure officia do exercitation ut magna laboris cillum commodo sint sit occaecat. Culpa culpa pariatur laboris labore id quis.</description>
+    </item>
+    
+  </channel>
+</rss>
