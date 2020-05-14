@@ -59,11 +59,47 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		});
 
 		var row = "<tr>";
-		row += "<td>Freitag, 08. Mai 2020</td>";
+		row += "<td>Freitag, 15. Mai 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
 		var workshops = [];
+
+		workshops.push({
+			time: "13:45 - 15:45",
+			title: "Dynamische Webseite mit Node.js",
+			description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat. Wir werden an unserer ChatApp weiterarbeiten.",
+			prerequisites: "<p>Grundlegende Kenntnisse:</p><ul><li>beim Programmieren (z.B. mit JavaScript, Java, C#, C++, ...)</li><li>HTML</li></ul><p>Software:</p><ul><li>einen Texteditor wie z.B. <a href=\"https://notepad-plus-plus.org/\" target=\"_blank\">Notepad++</a>, <a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li><li><a href=\"https://nodejs.org/en/download/\" target=\"_blank\">Node.js</a></li></ul>",
+			mentors: ["Thomas"],
+			link: "https://us02web.zoom.us/j/81407411826?pwd=SVlNWlJuTmIvaitEaHhjT3hDenljZz09"
+		});
+
+		workshops.push({
+			time: "13:45 - 15:45",
+			title: "Virtuelles Elektronikbasteln",
+			description: "Wir werden werden mit vier Widerständen einen sogenannte Messbrücke aufbauen und die Spannung und den Strom messen und die Effekte besprechen. Mit dem Arduino machen wir diesesmal einen Rauchmelder mit einem Gassensor und vergleichen den Blockcode mit den Textcode.",
+			prerequisites: "Ein Computer mit <a href=\"https://www.tinkercad.com\" target=\"_blank\">Tinkercad</a> Zugang.",
+			mentors: ["Günther", "Michael"],
+			link: "https://us02web.zoom.us/j/88265661736?pwd=aFUrUHRFQ3U5OFRPQ2Q3aWd2UWdLUT09"
+		});
+
+		workshops.push({
+			time: "13:45 - 15:45",
+			title: "Microbit Einsteiger",
+			description: "Auf einem virtuellen oder wenn bei euch vorhanden echten Micro:bit werden wir ein Einsteiger gerechtes Projekt gemeinsam umsetzen und wenn Zeit bleibt einfach weiter dran tüfteln.",
+			prerequisites: "<ul><li>Installiertes <a href=\"https://www.microsoft.com/de-at/p/makecode-for-micro-bit/9pjc7sv48lcx?rtc=1#activetab=pivot:overviewtab\" target=\"_blank\">MakeCode for micro:bit</a></li><li>oder <a href=\"https://makecode.microbit.org/\" target=\"_blank\">Onlinevariante von MakeCode for micro:bit</a></li></ul>",
+			mentors: ["Daniel"],
+			link: "https://us02web.zoom.us/j/84399293341?pwd=dkV1VGErU1F4TjAyTXJUdFMwRit4dz09"
+		});
+
+		workshops.push({
+			time: "13:45 - 15:45",
+			title: "Minecraft Redstone",
+			description: "Diese Woche wird es wieder technischer! Wir werden uns verschiedene Kombinationsschlösser ansehen, die schnell sehr kompliziert werden können :)",
+			prerequisites: "Ihr braucht einen offiziellen Minecraft Account und die Java-Minecraft Version 1.15.2 installiert. Wir werden auf einem gemeinsamen Server unsere Übungen machen.",
+			mentors: ["Matthias", "Jan"],
+			link: "https://us02web.zoom.us/j/84022879780?pwd=RiszWmpPM1oyL1h4Nmh5ZDN4c21QUT09"
+		});
 
 		workshops.push({
 			time: "13:45 - 15:45",
@@ -75,42 +111,32 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		});
 
 		workshops.push({
-			time: "13:45 - 15:45",
-			title: "Virtuelles Elektronikbasteln",
-			description: "Wir messen wieder Strom und Spannung an einem Spannungsteiler. Danach basteln wir an einem LED Lauflicht mit dem Arduino. Wir stellen den Blockcode einen Textcode gegenüber und werden den Textcode optimieren.",
-			prerequisites: "Ein Computer mit <a href=\"https://www.tinkercad.com\" target=\"_blank\">Tinkercad</a> Zugang.",
-			mentors: ["Günther", "Michael"],
-			link: "https://us02web.zoom.us/j/85413750768?pwd=OGNOZUdPVzRYemRmWEUwRURFNGYyQT09"
-		});
-		
-		workshops.push({
 			time: "16:00 - 18:00",
-			title: "Von Scratch zu Python",
-			description: "Viele von euch haben schon Erfahrung mit Scratch und sind neugierig, wie \"richtiges\", textuelles Programmieren funktioniert. Sonja zeigt euch in diesem Workshop erste Schritte in Python. Ihr baut ein kleines Programm in Scratch und anschließend übersetzt ihr es in Python. So lernt ihr, wie Scratch-Programmierbausteine in Python-Kommandos aussehen.",
-			prerequisites: "<ul><li>Installiert Scratch: <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">https://scratch.mit.edu/download</a></li><li>oder verwendet die Onlineversion von Scratch: <a href=\"https://scratch.mit.edu/\" target=\"_blank\">https://scratch.mit.edu/</a></li><li>Aktuelle Version von <a href=\"https://www.python.org/downloads/\" target=\"_blank\">Python</a></li></ul>",
+			title: "Python für AnfängerInnen",
+			description: "Nachdem wir letzte Woche erste Schritte in Python gemacht haben, werden wir dieses Mal mit Tkinter einen Alien zeichnen und programmieren.",
+			prerequisites: "<ul><li>Aktuelle Version von <a href=\"https://www.python.org/downloads/\" target=\"_blank\">Python</a></li></ul>",
 			mentors: ["Sonja"],
-			link: "https://us02web.zoom.us/j/82665569429?pwd=SlVsVjFEY3BFVWlBU1NpUEFzVHQwdz09"
+			link: "https://us02web.zoom.us/j/82206885442?pwd=UTBZT2s5bXhxamZwSG1EMjBndXR5UT09"
 		});
 
 		workshops.push({
 			time: "16:00 - 18:00",
-			title: "Dynamische Webseite mit Node.js",
-			description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.<br/><br/>Wir werden an unserer ChatApp weiterarbeiten.",
-			prerequisites: "<p>Grundlegende Kenntnisse:</p><ul><li>beim Programmieren (z.B. mit JavaScript, Java, C#, C++, ...)</li><li>HTML</li></ul><p>Software:</p><ul><li>einen Texteditor wie z.B. <a href=\"https://notepad-plus-plus.org/\" target=\"_blank\">Notepad++</a>, <a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li><li><a href=\"https://nodejs.org/en/download/\" target=\"_blank\">Node.js</a></li></ul>",
-			mentors: ["Thomas"],
-			link: "	https://us02web.zoom.us/j/88940936374?pwd=K2hLZWJRSXVyanRSTmJPaVNXVDg2QT09"
+			title: "Scratch Packman",
+			description: "Du hast schon deine ersten Projekte mit Scratch hinter dir? Wir werden diesmal den Klassiker Pacman in Scratch realisieren.",
+			prerequisites: "<ul><li>Installiertes <a href=\"https://scratch.mit.edu/download\" target=\"_blank\">Scratch</a></li><li>oder <a href=\"https://scratch.mit.edu/\" target=\"_blank\">Onlinevariante von Scratch</a></li></ul>",
+			mentors: ["Sonja"],
+			link: "https://us02web.zoom.us/j/84433172231?pwd=aWh2b2plQmNqSWhYYllNbWNVdU1hQT09"
+		});
+
+		workshops.push({
+			time: "16:00 - 18:00",
+			title: "Web-Entwicklung mit Hugo",
+			description: "Wenn du schon etwas Ahnung von HTML und CSS hast, kannst du mit Karin in diesem Workshop lernen, wie man hübsche und vor allem schnelle Webseiten erstellen kann. Karin zeigt, wie der Open-Source Webseiten-Generator Hugo funktioniert und man damit seine Homepage wie ein echter Profi aufbaut.",
+			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li><a href=\"https://github.com/gohugoio/hugo/releases/tag/v0.70.0\" target=\"_blank\">Hugo herunterladen</a></li></ul>",
+			mentors: ["Karin", "Rainer"],
+			link: "https://us02web.zoom.us/j/81510541132?pwd=UnU3aTNiRlgvOUtzZ0ZvZWxjRThodz09"
 		});
 		
-		workshops.push({
-			time: "16:00 - 18:00",
-			title: "Minecraft Redstone",
-			description: "Diese Woche werden wir einen Blick auf automatisierte Farmen werfen. Natürlich nur solche die auch einen Haufen Redstone beinhalten ;)",
-			prerequisites: "Ihr braucht einen offiziellen Minecraft Account und die Java-Minecraft Version 1.15.2 installiert. Wir werden auf einem gemeinsamen Server unsere Übungen machen.",
-			mentors: ["Matthias", "Jan"],
-			link: "https://us02web.zoom.us/j/85327277265?pwd=MXo1S0lUZEpJVW04T1hZbC9hT3Y4dz09"
-		});
-
-
 		/*
 
 		workshops.push({
@@ -122,16 +148,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			link: "https://zoom.us/j/92032918488"
 		});
 
-		
-
-		workshops.push({
-			time: "16:00 - 18:00",
-			title: "Bootstrap",
-			description: "Letzte Woche haben wir eine Webseite mit CSS hübscher gestaltet und mit einigen Animationen versehen. Diese Woche starten wir mit der selben Webseite wie beim letzten Mal, verwenden aber <a href=\"https://getbootstrap.com/\" target=\"_blank\">Bootstrap</a> um die Webseite zu gestalten. Wir verwenden das Grid System, um das Layout auf für mobile Devices anzupassen, und wir werden einige Komponenten wie z.B. das Karussell zum Durchblättern von Bildern einbauen.",
-			prerequisites: "<ul><li>Visual Studio Code: <a href=\"https://code.visualstudio.com/\" target=\"_blank\">https://code.visualstudio.com/</a></li><li>mit folgende Plugins:<ul><li><a href=\"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer\" target=\"_blank\">Live Server</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare\" target=\"_blank\">Live Share</a></li><li><a href=\"https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-autoprefixer\" target=\"_blank\">Autoprefixer</a></li></ul></li></ul>",
-			mentors: ["Karin", "Rainer"],
-			link: "https://zoom.us/j/99506376161"
-		});*/
+		*/
 
 		workshops.forEach(function(w) {
 			row += "<p><span class=\"workshop-title\">" + w.time + " " + w.title + "</span></p><p>" + w.description + "</p><p><b>Voraussetzungen</b></p><p>" + w.prerequisites + "</p><p><b>Mentoren:</b> " + w.mentors.join(", ") + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
@@ -142,7 +159,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 
 		eventsTable.append(row);
 
-		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-05-08'; }).forEach(function(event) {
+		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-05-15'; }).forEach(function(event) {
 			var row = "";
 
 			if (event.type == "header") {
