@@ -4,5 +4,6 @@ description: "Scratch ist die ideale Programmiersprache für Anfänger, die noch
 date: 2020-05-11T17:04:18+02:00
 level: 1
 draft: false
+img: scratch.png
 ---
 

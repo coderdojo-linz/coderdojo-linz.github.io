@@ -4,5 +4,6 @@ description: "Die Web Übungsanleitungen eignen sich für alle, die von einer bl
 date: 2020-05-14T16:39:35+02:00
 level: 2
 draft: false
+img: "html5.png"
 ---
 
