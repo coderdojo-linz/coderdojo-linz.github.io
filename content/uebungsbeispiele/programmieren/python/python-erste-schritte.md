@@ -8,7 +8,7 @@ description: Diese Übung gibt eine erste Einführung in das Programmieren mit P
 # Erste Schritte mit Python
 
 Diese Übung gibt eine erste Einführung in das Programmieren mit Python.
-Die Inhalte sind zum größten Teil aus dem Buch [Programmieren super*easy*](http://www.amazon.de/Programmieren-supereasy-Einfacher-Einstieg-SCRATCH/dp/3831027005/ref=sr_1_1?ie=UTF8&qid=1452990098&sr=8-1&keywords=programmieren+f%C3%BCr+kinder){:target="_blank"}
+Die Inhalte sind zum größten Teil aus dem Buch [Programmieren super*easy*](http://www.amazon.de/Programmieren-supereasy-Einfacher-Einstieg-SCRATCH/dp/3831027005/ref=sr_1_1?ie=UTF8&qid=1452990098&sr=8-1&keywords=programmieren+f%C3%BCr+kinder)
 
 
 ## Was ist Python?
@@ -21,7 +21,7 @@ Zur Vorbereitung werden wir nun zuerst Python installieren und uns dann mit der 
 
 Lade Python nun herunter und installiere es auf deinem Computer. Python 3 ist kostenlos, einfach zu installieren und funktioniert mit den Betriebssystemen Windows, Mac-OS und mit Linux-Systemen wie Ubuntu.
 
-1. Gehe zur Python-Webseite [www.python.org](http://www.python.org){:target="_blank"}.
+1. Gehe zur Python-Webseite [www.python.org](http://www.python.org).
 2. Unter *Downloads* wähle die entsprechende Version (z.B. Python 3.5.1 für Windows (64-bit)).
 3. Nach dem Herunterladen der Installationsdatei (z.B. python-3.5.1.exe), führe die Installation aus.
 4. Starte nun die Programmierumgebung **IDLE** (**I**ntegrated **D**eve**L**opment **E**nvironment).
@@ -144,8 +144,8 @@ Dazu öffnen wir nun ein neues Fenster, das sogenannte *Code-Fenster*. Klicke da
 Zum Abschluss noch ein Tipp: Falls du mal nicht weiter weißt, bietet die IDLE schon eine direkt integrierte Hilfe-Funktion (drücke F1 oder Menü `Help` und `Python Docs`). Dort findest du viele hilfreiche Informationen, z.B. alle Befehle, die die *Turtle* versteht. Die Hilfe ist (natürlich) auf Englisch, wie so vieles gerade im IT-Bereich.
 Wer trotzdem lieben auf Deutsch über Python nachschlagen will, der kann z.B. folgende Links versuchen:
 
-* [Das Python-Tutorial](https://py-tutorial-de.readthedocs.org/de/python-3.3/){:target="_blank"}
-* [Python 3 Tutorial](http://www.python-kurs.eu/python3_kurs.php){:target="_blank"}
+* [Das Python-Tutorial](https://py-tutorial-de.readthedocs.org/de/python-3.3/)
+* [Python 3 Tutorial](http://www.python-kurs.eu/python3_kurs.php)
 
 
 <div class="alert alert-info cd-alert-large">Viel Spaß beim Ausprobieren!</div>

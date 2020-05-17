@@ -16,7 +16,7 @@ Falls du noch überhaupt keine Erfahrung mit HTML hast, wende dich an eine Coder
 
 ## Entwicklungsumgebung
 
-JavaScript kann man wie HTML mit jedem beliebigen Texteditor programmieren. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. In der [Übungsanleitung zu den Grundlagen von HTML](/trainingsanleitungen/web/html-meine-erste-webseite.html){:target="_blank"} findest du am Beginn eine Liste von solchen Editoren, die du unter Windows, Linux oder MacOS verwenden kannst. Falls du noch keinen hast, schau dir die Liste an und such dir einen aus.
+JavaScript kann man wie HTML mit jedem beliebigen Texteditor programmieren. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. In der [Übungsanleitung zu den Grundlagen von HTML](/trainingsanleitungen/web/html-meine-erste-webseite.html) findest du am Beginn eine Liste von solchen Editoren, die du unter Windows, Linux oder MacOS verwenden kannst. Falls du noch keinen hast, schau dir die Liste an und such dir einen aus.
 
 ## HTML Seite herunterladen
 
@@ -85,7 +85,7 @@ Wenn du jetzt eine Zahl eingibst und auf "Überprüfen" klickst, passiert noch n
     		outputCount.innerHTML = "Du hast bisher " + count + " Versuche gebraucht.";
         }
 
-4. Schau dir den Code ganz genau an und versuche herauszufinden, wozu die Variable `outputCount` dient. Siehst du, wie mit Hilfe der JavaScript-Standardfunktion [`getElementById`](http://www.w3schools.com/jsref/met_doc_getelementbyid.asp){:target="_blank"} das zugehörige `p`-Tag gesucht wird? Falls du Fragen dazu hast, sprich darüber mit einem CoderDojo Mentor.<br/>
+4. Schau dir den Code ganz genau an und versuche herauszufinden, wozu die Variable `outputCount` dient. Siehst du, wie mit Hilfe der JavaScript-Standardfunktion [`getElementById`](http://www.w3schools.com/jsref/met_doc_getelementbyid.asp) das zugehörige `p`-Tag gesucht wird? Falls du Fragen dazu hast, sprich darüber mit einem CoderDojo Mentor.<br/>
 ![Funktionsweise von getElementById](javascript-zahlen-raten/getElementById.png)
 
 5. Speichere deine Änderungen, lade die Seite im Browser neu (z.B. durch Drücken der Taste F5) und klicke nochmal auf "Überprüfen". Nach jedem Klick wird jetzt die Anzahl der Versuche erhöht und anschließend angezeigt.
@@ -131,11 +131,11 @@ Wenn du das Spiel neu starten willst, musst du die Seite neu laden. Lass uns das
             outputCount.innerHTML = "";
         }
 	
-4. Schau dir die Codezeilen genau durch. Entdeckst du die Funktionen, die mit `Math.` beginnen? Das sind mathematische Funktionen von JavaScript. [Hier](http://www.w3schools.com/jsref/jsref_obj_math.asp){:target="_blank"} findest du eine Beschreibung aller dieser Funktionen. Such die Beschreibung von `Math.floor` und `Math.random` heraus und lies nach, was die beiden Funktionen machen.
+4. Schau dir die Codezeilen genau durch. Entdeckst du die Funktionen, die mit `Math.` beginnen? Das sind mathematische Funktionen von JavaScript. [Hier](http://www.w3schools.com/jsref/jsref_obj_math.asp) findest du eine Beschreibung aller dieser Funktionen. Such die Beschreibung von `Math.floor` und `Math.random` heraus und lies nach, was die beiden Funktionen machen.
 
 5. Speichere deine Änderungen, lade die Seite im Browser neu (z.B. durch Drücken der Taste F5). Jetzt kannst du das Spiel jederzeit neu starten.
 
-Die fertige Datei kannst du [hier](javascript-zahlen-raten/zahlen-raten-final.html){:target="_blank"} herunterladen.
+Die fertige Datei kannst du [hier](javascript-zahlen-raten/zahlen-raten-final.html) herunterladen.
 
 ## Wie geht's weiter?
 
@@ -147,7 +147,7 @@ Wenn du noch weiterprogrammieren willst, hier noch ein paar Ideen:
 
 3. Wähle (zufallsbasiert) zwischen verschiedenen gleichbedeutenden Antworten: "Dein Tipp war zu hoch.", "Nein, das ist zu hoch.", "Du musst niedriger tippen."
 
-4. Wenn du schon etwas Erfahrung mit JavaScript gesammelt hast, kannst du das [JavaScript Quiz auf w3schools](http://www.w3schools.com/js/js_quiz.asp){:target="_blank"} probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein HTML-Wissen noch zu erweitern.
+4. Wenn du schon etwas Erfahrung mit JavaScript gesammelt hast, kannst du das [JavaScript Quiz auf w3schools](http://www.w3schools.com/js/js_quiz.asp) probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein HTML-Wissen noch zu erweitern.
 
 4. Möchtest du deine Webseite etwas schöner gestalten? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/erste-schritte-mit-css.html).
 

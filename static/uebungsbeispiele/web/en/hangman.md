@@ -239,7 +239,7 @@ If you guess wrong 10 times the game is over.
 
 Now only the hangman is missing in order to keep track of your number of wrong guesses. 
 
-For drawing we will use a library [snap.svg](http://snapsvg.io/docs/){:target="_blank"}. 
+For drawing we will use a library [snap.svg](http://snapsvg.io/docs/). 
 With this library it is easy to draw lines, circles, ellipses, rectangulars and similar things.
 This library is loaded in our file with the line `<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>`.
 

@@ -136,4 +136,4 @@ Sicher hast du noch eine Menge Ideen, um das Breakout-Spiel zu verbessern. Ein p
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/236734138/](https://scratch.mit.edu/projects/236734138/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/236734138/](https://scratch.mit.edu/projects/236734138/) ausprobieren.

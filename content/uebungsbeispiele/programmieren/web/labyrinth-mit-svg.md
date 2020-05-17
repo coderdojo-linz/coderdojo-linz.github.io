@@ -27,7 +27,7 @@ In dieser Übung programmierst du ein Labyrinth-Spiel [erst mit Scratch](../scra
 
 ### Entwicklungsumgebung
 
-1. Öffne einen beliebigen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Wir empfehlen [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}. Dieser Editor ist kostenlos und funktioniert unter Windows, MacOS und Linux).
+1. Öffne einen beliebigen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Wir empfehlen [Visual Studio Code](https://code.visualstudio.com/). Dieser Editor ist kostenlos und funktioniert unter Windows, MacOS und Linux).
 
 1. Erstelle eine neue Textdatei. In *Visual Studio Code* geht das so: <br/>![Neue Datei in Visual Studio Code erstellen](html-meine-erste-webseite/code-neue-datei.png)
 
@@ -95,7 +95,7 @@ In dieser Übung programmierst du ein Labyrinth-Spiel [erst mit Scratch](../scra
             // <<<--- HIER PROGRAMMIERST DU IM NÄCHSTEN SCHRITT WEITER
         };
 
-1. Achte besonders auf die Zeile `svg = Snap("#svg"),`. Hier verwenden wir die Bibliothek [*Snap.svg*](http://snapsvg.io/){:target="_blank"}. *Snap.svg* erleichtert die Arbeit mit SVG in JavaScript ganz gewaltig. Möchtes du mehr über SVG und Snap.svg lernen? Wir haben [eigene Übungen dazu im Bereich *Web*](http://coderdojo-linz.github.io/infos/uebungsbeispiele.html).
+1. Achte besonders auf die Zeile `svg = Snap("#svg"),`. Hier verwenden wir die Bibliothek [*Snap.svg*](http://snapsvg.io/). *Snap.svg* erleichtert die Arbeit mit SVG in JavaScript ganz gewaltig. Möchtes du mehr über SVG und Snap.svg lernen? Wir haben [eigene Übungen dazu im Bereich *Web*](http://coderdojo-linz.github.io/infos/uebungsbeispiele.html).
 
 1. Achte auf den Hinweis `// <<<--- HIER PROGRAMMIERST DU IM NÄCHSTEN SCHRITT WEITER`. Die Funktionen, die in Folge beschrieben sind, musst du eine nach der anderen an dieser Stelle einfügen.
 
@@ -385,4 +385,4 @@ Fertig! Versuche mit dem Spieler das Ziel zu erreichen. Wie viele Bewegungen bra
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://plnkr.co/edit/eyPtep9Erl3eFVCfqzcY](https://plnkr.co/edit/eyPtep9Erl3eFVCfqzcY){:target="_blank"} ausprobieren. Dort findest du auch den kompletten Quellcode des Beispiels.
+Du kannst das fertige Projekt unter [https://plnkr.co/edit/eyPtep9Erl3eFVCfqzcY](https://plnkr.co/edit/eyPtep9Erl3eFVCfqzcY) ausprobieren. Dort findest du auch den kompletten Quellcode des Beispiels.

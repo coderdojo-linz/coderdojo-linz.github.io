@@ -22,18 +22,18 @@ Das Spiel besteht aus 3 Figuren und 14 Skripten.
 ![](scratch-snake-v3/buehne.png)
 Das Spiel besteht aus drei Figuren: der Schlange, dem Apfel und einer Nachricht, wenn das Spiel zu Ende ist. Für dieses Spiel brauchen wir kein Bühnenbild. Du kannst es einfach weiß lassen. Die Schlange besteht aus zwei Kostümen: Kopf und Körper. Der Kopf und der Körper der Schlange dürfen nicht größer als 20 sein. Nur die Zunge beim Kopf darf das überschreiten. Am besten, du malst zuerst den Körper mit einer Größe von 20, kopierst diesen dann für den Kopf und fügst Augen und eine Zunge hinzu. Beachte auch, dass der Körper eine andere Farbe als der Kopf haben muss.
 
-Schlange [Figur downloaden](scratch-snake-v3/Schlange.sprite2){:target="_blank"}
+Schlange [Figur downloaden](scratch-snake-v3/Schlange.sprite2)
 ![](scratch-snake-v3/schlange.png)
 
 Der Apfel braucht nur ein Kostüm. Damit er von der Schlange nur erwischt wird, wenn diese sich genau über den Apfel befindet, darf auch der Apfel nicht größer als 20 sein.
 Du kannst den Apfel selber malen, oder du verwendet den Apfel aus der Scratch Figurenbibliothek.
 
-Apfel [Figur downloaden](scratch-snake-v3/Apfel.sprite2){:target="_blank"}
+Apfel [Figur downloaden](scratch-snake-v3/Apfel.sprite2)
 ![](scratch-snake-v3/apfel.png)
 
 Dann brauchst du noch eine Figur für die *Game Over* Meldung (Englisch für *das Spiel aus aus*), die angezeigt wird, wenn der Spieler verloren hat.
 
-SpielZuEnde [Figur downloaden](scratch-snake-v3/SpielZuEnde.sprite2){:target="_blank"}
+SpielZuEnde [Figur downloaden](scratch-snake-v3/SpielZuEnde.sprite2)
 ![](scratch-snake-v3/gameover.png)
 
 ## Daten

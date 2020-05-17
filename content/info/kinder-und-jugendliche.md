@@ -13,7 +13,7 @@ Wolltest du immer schon wissen, wie Computer, iPad oder Smartphone funktionieren
 
 **In Japan trifft man sich in einem Dojo, um Kampfsportarten wie Judo oder Karate zu üben. Beim CoderDojo treffen wir uns, um zu "coden", also zu programmieren.**
 
-Die oberste Regel im CoderDojo lautet: **Unsere Projekte sind cool!** Das CoderDojo ist keine Schule oder Nachhilfestunde. Junge [Hacker](http://ulm.ccc.de/old/chaos-seminar/hacker/hacker.pdf "Erklärung, was ein Hacker ist"){:target="_blank"} und solche, die es werden wollen, treffen sich, um gemeinsam an spannenden Projekten zu arbeiten.
+Die oberste Regel im CoderDojo lautet: **Unsere Projekte sind cool!** Das CoderDojo ist keine Schule oder Nachhilfestunde. Junge [Hacker](http://ulm.ccc.de/old/chaos-seminar/hacker/hacker.pdf "Erklärung, was ein Hacker ist") und solche, die es werden wollen, treffen sich, um gemeinsam an spannenden Projekten zu arbeiten.
 
 Im CoderDojo habt ihr Hilfe von erwachsenen Mentoren, die viel technische Erfahrung und technisches Wissen haben. Sie begleiten euch bei den ersten Schritten. Sie liefern Ideen für eure ersten Programme. Sie sind für euch da, wenn Ihr schon erfahrener seid und eigene Projekte umsetzen möchtet.
 
@@ -37,9 +37,9 @@ Grundsätzlich gilt: eure Ideen stehen im Mittelpunkt. Wenn ihr eine Idee für e
 
 Falls ihr erst am Anfang steht oder neue Technologien kennenlernen möchtet, machen euch die Mentoren Vorschläge für erste Schritte. Hier einige Beispiele:
 
-### Für Anfänger: [Scratch](https://scratch.mit.edu/ "Homepage von Scratch"){:target="_blank"}
+### Für Anfänger: [Scratch](https://scratch.mit.edu/ "Homepage von Scratch")
 
-Wenn du noch nie programmiert hast, lernst du als erstes [Scratch](https://scratch.mit.edu/ "Homepage von Scratch"){:target="_blank"} kennen. Man lernt damit die Grundlagen von Programmierung auf ganz einfache, grafische Art. Du kannst deine Projekte mit anderen teilen oder auf Projekten anderer aufbauen.
+Wenn du noch nie programmiert hast, lernst du als erstes [Scratch](https://scratch.mit.edu/ "Homepage von Scratch") kennen. Man lernt damit die Grundlagen von Programmierung auf ganz einfache, grafische Art. Du kannst deine Projekte mit anderen teilen oder auf Projekten anderer aufbauen.
 
 Scratch ist aber nicht nur auf einfache Programme beschränkt. Wenn ihr mehr Erfahrung habt, könnt ihr sogar Spiele entwickeln und diese im Internet eurer Familie oder euren Freunden zum Ausprobieren geben.
 
@@ -51,7 +51,7 @@ Eure Mentoren helfen euch, HTML, CSS und JavaScript zu erkunden. Wir haben einig
 
 ### Für Fortgeschrittene
 
-Im CoderDojo könnt ihr natürlich auch professionelle Programmiersprachen wie Python, C#, Java oder C++ lernen. Das ist natürlich erst etwas für die Erfahreneren unter euch. Solche Programmiersprachen öffnen eine ganz neue Welt für euch. [Minecraft](https://minecraft.net/ "Homepage des Spiels Minecraft"){:target="_blank"} Mods, Elektronikprojekte mit [Raspberry Pi](https://www.raspberrypi.org/ "Homepage von Raspberry Pi"){:target="_blank"} und vieles mehr warten dann auf euch.
+Im CoderDojo könnt ihr natürlich auch professionelle Programmiersprachen wie Python, C#, Java oder C++ lernen. Das ist natürlich erst etwas für die Erfahreneren unter euch. Solche Programmiersprachen öffnen eine ganz neue Welt für euch. [Minecraft](https://minecraft.net/ "Homepage des Spiels Minecraft") Mods, Elektronikprojekte mit [Raspberry Pi](https://www.raspberrypi.org/ "Homepage von Raspberry Pi") und vieles mehr warten dann auf euch.
 
 ### Thementage
 

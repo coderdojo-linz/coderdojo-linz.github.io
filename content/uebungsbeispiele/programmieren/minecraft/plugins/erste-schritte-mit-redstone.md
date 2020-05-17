@@ -8,12 +8,12 @@ description: In dieser Übung lernst du Redstone in Minecraft kennen
 
 ## Voraussetzung
 
-Für diese Übung brauchst du [Minecraft](https://minecraft.net/de-de/){:target="_blank"}. Du solltest mit den Grundfunktionen wie Steuerung des Spielers, verwenden von grundlegenden Blöcken etc. vertraut sein.
+Für diese Übung brauchst du [Minecraft](https://minecraft.net/de-de/). Du solltest mit den Grundfunktionen wie Steuerung des Spielers, verwenden von grundlegenden Blöcken etc. vertraut sein.
 
 ## Was ist *Redstone*?
 
 ![Redstone](erste-schritte-mit-redstone/redstone.png)<br/>
-[Redstone](http://minecraft-de.gamepedia.com/Redstone){:target="_blank"} ist ein wichtiger Rohstoff in Minecraft. Wie in der echten Welt mit Strom kannst du mit Redstone in Minecraft Schaltkreise (Englisch *Ciruits*) bauen. Egal ob Falle für Monster, Lichtsteuerung oder automatische Türen - für all das verwendest du Redstone.
+[Redstone](http://minecraft-de.gamepedia.com/Redstone) ist ein wichtiger Rohstoff in Minecraft. Wie in der echten Welt mit Strom kannst du mit Redstone in Minecraft Schaltkreise (Englisch *Ciruits*) bauen. Egal ob Falle für Monster, Lichtsteuerung oder automatische Türen - für all das verwendest du Redstone.
 
 **Hinweis für Eltern:** Schaltungen mit Redstone sind ein gutes Beispiel dafür, warum Minecraft viel mehr ist als nur ein Unterhaltungsspiel. Kreativität und logisches Denken sind gefragt, wenn man mit Redstone arbeiten möchte.
 
@@ -35,19 +35,19 @@ Die Gegenstände, die mit Redstone zu tun haben, findest du im Inventar:
 
 ![Erste Schaltung](erste-schritte-mit-redstone/erste-schaltung.png)
 
-1. Setze einen [Redstone-Block](http://minecraft-de.gamepedia.com/Redstone-Block){:target="_blank"}. Er ist die **Energiequelle** für deine Schaltung.
+1. Setze einen [Redstone-Block](http://minecraft-de.gamepedia.com/Redstone-Block). Er ist die **Energiequelle** für deine Schaltung.
 
-1. Ein paar Felder daneben setzt du eine [Redstone-Lampe](http://minecraft-de.gamepedia.com/Redstone-Lampe){:target="_blank"}. Sie **leuchtet**, wenn sie mit Energie versorgt wird.
+1. Ein paar Felder daneben setzt du eine [Redstone-Lampe](http://minecraft-de.gamepedia.com/Redstone-Lampe). Sie **leuchtet**, wenn sie mit Energie versorgt wird.
 
-1. Anschließend verbinde die beiden Blöcke mit [Redstone](http://minecraft-de.gamepedia.com/Redstone){:target="_blank"}. Jetzt fließt Energie und die Lampe leuchtet.
+1. Anschließend verbinde die beiden Blöcke mit [Redstone](http://minecraft-de.gamepedia.com/Redstone). Jetzt fließt Energie und die Lampe leuchtet.
 
 ## Schalter
 
 ![Erste Schaltung](erste-schritte-mit-redstone/schalter.png)
 
-1. Ersetze den Redstone-Block durch einen normalen Block. Ich verwende hier **blaue [Wolle](http://minecraft-de.gamepedia.com/Wolle){:target="_blank"}**. **Tipp:** Es ist üblich, dass Schaltkreise auf eingefärbter Wolle gelegt werden. Dadurch erkennt man leichter, wie eine Schaltung funktioniert.
+1. Ersetze den Redstone-Block durch einen normalen Block. Ich verwende hier **blaue [Wolle](http://minecraft-de.gamepedia.com/Wolle)**. **Tipp:** Es ist üblich, dass Schaltkreise auf eingefärbter Wolle gelegt werden. Dadurch erkennt man leichter, wie eine Schaltung funktioniert.
 
-1. Bringe einen **[Schalter](http://minecraft-de.gamepedia.com/Schalter_(Begriffskl%C3%A4rung)){:target="_blank"}** an dem normalen Block an. Er ist eine **Energiequelle**, die du ein- und ausschalten kannst.
+1. Bringe einen **[Schalter](http://minecraft-de.gamepedia.com/Schalter_(Begriffskl%C3%A4rung))** an dem normalen Block an. Er ist eine **Energiequelle**, die du ein- und ausschalten kannst.
 
 1. Schalte jetzt die Redstone-Lampe ein und wieder aus.
 
@@ -57,7 +57,7 @@ Die Gegenstände, die mit Redstone zu tun haben, findest du im Inventar:
 
 ![Erste Schaltung](erste-schritte-mit-redstone/kolben.png)
 
-1. Setze einen **klebrigen [Kolben](http://minecraft-de.gamepedia.com/Kolben){:target="_blank"}**. **Tipp:** Wenn der Kolben nach oben ausfahren soll, muss du in den Flugmodus wechseln (2 x schnell hintereinander die Leertaste drücken) und ihn von oben setzen.
+1. Setze einen **klebrigen [Kolben](http://minecraft-de.gamepedia.com/Kolben)**. **Tipp:** Wenn der Kolben nach oben ausfahren soll, muss du in den Flugmodus wechseln (2 x schnell hintereinander die Leertaste drücken) und ihn von oben setzen.
 
 1. Setze einen beliebigen Block auf den Kolben. Ich verwende einen Gold-Block.
 
@@ -71,7 +71,7 @@ Die Gegenstände, die mit Redstone zu tun haben, findest du im Inventar:
 
 ![Redstone Fackel](erste-schritte-mit-redstone/fackel.png)
 
-1. Setze eine [Redstone-Fackel](http://minecraft-de.gamepedia.com/Redstone-Fackel){:target="_blank"} wie oben gezeigt. Die Fackel ist eine **Energiequelle**.
+1. Setze eine [Redstone-Fackel](http://minecraft-de.gamepedia.com/Redstone-Fackel) wie oben gezeigt. Die Fackel ist eine **Energiequelle**.
 
 1. Achte im Beispiel oben darauf, wie Redstone über Stufen nach oben fließen kann. Dadurch fängt die Lampe zu Leuchten an.
 
@@ -89,7 +89,7 @@ Baue ein Haus mit Licht an der Decke. Es soll innen einen Schalter haben, mit de
 
 ![Erste Schaltung](erste-schritte-mit-redstone/haus-mit-licht-schalter.png)
 
-**Tipp 2**: Redstone überträgt Energie maximal 15 Blöcke weit. Die Energiestärke nimmt dabei ab. Um das Signal nach einer langen Leitung zu verstärken, setze einen **[Verstärker](http://minecraft-de.gamepedia.com/Redstone-Verst%C3%A4rker){:target="_blank"}** ein.
+**Tipp 2**: Redstone überträgt Energie maximal 15 Blöcke weit. Die Energiestärke nimmt dabei ab. Um das Signal nach einer langen Leitung zu verstärken, setze einen **[Verstärker](http://minecraft-de.gamepedia.com/Redstone-Verst%C3%A4rker)** ein.
 
 ![Erste Schaltung](erste-schritte-mit-redstone/haus-mit-licht-dach.png)
 

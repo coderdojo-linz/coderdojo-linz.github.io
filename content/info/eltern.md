@@ -11,10 +11,10 @@ description: Häufige Fragen von Eltern zum CoderDojo
 
 **In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.**
 
-Gemeinsames Entdecken, Teamarbeit, [Mentoring](http://de.wikipedia.org/wiki/Mentoring "Mentoring auf Wikipedia"){:target="_blank"} sowie selbstorganisiertes Lernen und Experimentieren stehen im CoderDojo im Vordergrund. Offenheit, gegenseitiges Helfen und das Weitergeben von erworbenem Wissen sind wichtige Grundprinzipien. An oberster Stelle steht aber die Förderung von Kreativität und Spaß an Technologie. Softwareentwicklung in einer Gemeinschaft soll Spaß machen, cool sein und den Kindern neue Perspektiven in einer Welt eröffnen, die immer mehr von Technologie, Computern und Software geprägt ist.
+Gemeinsames Entdecken, Teamarbeit, [Mentoring](http://de.wikipedia.org/wiki/Mentoring "Mentoring auf Wikipedia") sowie selbstorganisiertes Lernen und Experimentieren stehen im CoderDojo im Vordergrund. Offenheit, gegenseitiges Helfen und das Weitergeben von erworbenem Wissen sind wichtige Grundprinzipien. An oberster Stelle steht aber die Förderung von Kreativität und Spaß an Technologie. Softwareentwicklung in einer Gemeinschaft soll Spaß machen, cool sein und den Kindern neue Perspektiven in einer Welt eröffnen, die immer mehr von Technologie, Computern und Software geprägt ist.
 
-* [Internationale CoderDojo-Gemeinschaft (Englisch)](http://www.coderdojo.com "Internationale CoderDojo Webseite"){:target="_blank"}
-* [Was ist ein Dōjō (道場)?](http://de.wikipedia.org/wiki/D%C5%8Dj%C5%8D "Dojo auf Wikipedia"){:target="_blank"}
+* [Internationale CoderDojo-Gemeinschaft (Englisch)](http://www.coderdojo.com "Internationale CoderDojo Webseite")
+* [Was ist ein Dōjō (道場)?](http://de.wikipedia.org/wiki/D%C5%8Dj%C5%8D "Dojo auf Wikipedia")
 
 
 ## Ist Programmieren wichtig für mein Kind? ##
@@ -56,7 +56,7 @@ Für Anfänger haben wir einige spannende Projekte, die wir vorschlagen können.
 
 Alle Mentoren und Helfer, die bei den CoderDojos mitmachen, sind Freiwillige und bekommen für ihre Tätigkeiten kein Geld. Alle eventuellen Ausgaben für die Organisation und Durchführung der CoderDojos werden mit Hilfe von Spenden und Förderungen gedeckt.
 
-Falls Ihr Kind Projekte machen möchte, für die spezielle Hardware (z.B. [Lego Mindstorms](http://mindstorms.lego.com/ "Homepage von Lego Mindstorms"){:target="_blank"}, [TinkerForge](http://www.tinkerforge.com/de/ "Homepage von TinkerForge"){:target="_blank"}) oder Software (z.B. [Minecraft](https://minecraft.net/ "Homagepage von Minecraft"){:target="_blank"}) notwendig sind und sollten Sie damit einverstanden sein, sind die Kosten für Hard- und Software von Ihnen zu tragen. Parallel dazu werden wir versuchen, kleinere Anschaffungen als Grundlage für interessante Projekte mit Hilfe von Sponsoren abzuwickeln, damit Ihnen möglichst wenig Kosten entstehen.
+Falls Ihr Kind Projekte machen möchte, für die spezielle Hardware (z.B. [Lego Mindstorms](http://mindstorms.lego.com/ "Homepage von Lego Mindstorms"), [TinkerForge](http://www.tinkerforge.com/de/ "Homepage von TinkerForge")) oder Software (z.B. [Minecraft](https://minecraft.net/ "Homagepage von Minecraft")) notwendig sind und sollten Sie damit einverstanden sein, sind die Kosten für Hard- und Software von Ihnen zu tragen. Parallel dazu werden wir versuchen, kleinere Anschaffungen als Grundlage für interessante Projekte mit Hilfe von Sponsoren abzuwickeln, damit Ihnen möglichst wenig Kosten entstehen.
 
 Grundsätzlich ist es aber nicht notwendig Hard- oder Software für Ihr Kind zu kaufen. Wir werden dafür sorgen, dass in unserem Programm immer kostenfreie Alternativen angeboten werden.
 

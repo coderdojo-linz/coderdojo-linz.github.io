@@ -28,7 +28,7 @@ Lösche als erstes die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der 
 
 2. ![Karte hinzufügen](scratch-minesweeper-v3/hochladen.png){: .right}
 Die Figur *Zelle* besteht aus mehreren Kostümen; einer nicht aufgedeckten Zelle, einer Bombe, einer leeren Zelle, einer Fahne und den Ziffern 1 bis 8. Damit du nicht alle Figuren selbst zeichnen musst, kannst du die Figur unter
-[https://scratch-minesweeper/Zelle.sprite2/](https://scratch-minesweeper/Zelle.sprite2/){:target="_blank"} downloaden.
+[https://scratch-minesweeper/Zelle.sprite2/](https://scratch-minesweeper/Zelle.sprite2/) downloaden.
 
 3. ![Karte hinzufügen](scratch-minesweeper-v3/nachricht.png){: .right}
 Die zweite Figur *Nachrichten* besteht aus drei Kostümen: den Nachrichten *Spielfeld laden*, *Gewonnen* und *Verloren*. Diese kannst du nach deinen Vorstellungen gestalten.

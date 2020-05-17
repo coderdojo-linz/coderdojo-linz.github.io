@@ -17,7 +17,7 @@ Verwende die Pfeiltasten nach links und rechts um am Boden zu laufen und die Pfe
 
 ![Endgame](scratch-sterne-fangen-v3/endgame.png){: .right}
 
-Das Spiel besteht aus 3 Figuren und 7 Skripten. Es basiert auf dem Spiel [Gravity!! von gilnz21](https://scratch.mit.edu/projects/63121636/){:target="_blank"}.
+Das Spiel besteht aus 3 Figuren und 7 Skripten. Es basiert auf dem Spiel [Gravity!! von gilnz21](https://scratch.mit.edu/projects/63121636/).
 
 ## Figuren anlegen
 

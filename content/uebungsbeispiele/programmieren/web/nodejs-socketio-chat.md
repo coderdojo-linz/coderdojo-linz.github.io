@@ -8,15 +8,15 @@ description: In dieser Übung programmieren wir einen Chat mit Node.js und Socke
 
 ## Ziel der Übung
 
-In dieser Übung lernst du, wie du eine Chat-Anwendung mit [Server- und Clientteil](https://de.wikipedia.org/wiki/Client-Server-Modell "Client-Server-Modell auf Wikipedia nachlesen"){:target="_blank"} baust. Mehrere Benutzer können sich im Chat anmelden. Wenn jemand etwas sendet sollen alle anderen Benutzer das sofort sehen. 
+In dieser Übung lernst du, wie du eine Chat-Anwendung mit [Server- und Clientteil](https://de.wikipedia.org/wiki/Client-Server-Modell "Client-Server-Modell auf Wikipedia nachlesen") baust. Mehrere Benutzer können sich im Chat anmelden. Wenn jemand etwas sendet sollen alle anderen Benutzer das sofort sehen. 
 
-**Wichtig: Diese Übung geht davon aus, dass du die Übung [Einen Node.js Webserver programmieren](nodejs-webserver.html){:target="_blank"} gemacht hast und diese bei dir auf deinem Computer funktioniert.** Mache hier erst weiter, wenn du die vorbereitende Übung erfolgreich abgeschlossen hast.
+**Wichtig: Diese Übung geht davon aus, dass du die Übung [Einen Node.js Webserver programmieren](nodejs-webserver.html) gemacht hast und diese bei dir auf deinem Computer funktioniert.** Mache hier erst weiter, wenn du die vorbereitende Übung erfolgreich abgeschlossen hast.
 
 ## Web Sockets
 
-Das besondere an diesem Beispiel ist, dass sich Client und Server in beide Richtungen unterhalten können. In [HTTP](https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol "HTTP in Wikipedia nachschlagen"){:target="_blank"} fragt normalerweise der Browser den Server um Dateien (z.B. HTML, CSS, JavaScript). Der Server schickt den Inhalt der Dateien an den Browser. Der Server kann aber normalerweise nicht von sich aus dem Browser eine Nachricht schicken. Genau das brauchen wir aber. Schließlich muss der Server alle Browser informieren, wenn ein Benutzer eine Nachricht eingegeben hat.
+Das besondere an diesem Beispiel ist, dass sich Client und Server in beide Richtungen unterhalten können. In [HTTP](https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol "HTTP in Wikipedia nachschlagen") fragt normalerweise der Browser den Server um Dateien (z.B. HTML, CSS, JavaScript). Der Server schickt den Inhalt der Dateien an den Browser. Der Server kann aber normalerweise nicht von sich aus dem Browser eine Nachricht schicken. Genau das brauchen wir aber. Schließlich muss der Server alle Browser informieren, wenn ein Benutzer eine Nachricht eingegeben hat.
 
-Die Lösung ist eine Technologie namens [Web Sockets](https://de.wikipedia.org/wiki/WebSocket "Web Sockets auf Wikipedia nachschlagen"){:target="_blank"}. In Node.js gibt es ein spezielles Modul für Web Sockets: [socket.io](http://socket.io/){:target="_blank"}.
+Die Lösung ist eine Technologie namens [Web Sockets](https://de.wikipedia.org/wiki/WebSocket "Web Sockets auf Wikipedia nachschlagen"). In Node.js gibt es ein spezielles Modul für Web Sockets: [socket.io](http://socket.io/).
 
 ## Socket.io installieren
 
@@ -311,7 +311,7 @@ Wenn du den Webserver jetzt wieder mit `node server.js` startest und dann deine 
 Hier noch einige Ideen, die du dir erarbeiten oder mit deinen Mentoren durchgehen kannst:
 
 * Debugging des JavaScripts am Client.<br/>
-[Hier](https://developer.chrome.com/devtools/docs/javascript-debugging){:target="_blank"} findest du eine Anleitung, wie das im Chrome-Browser funktioniert.
+[Hier](https://developer.chrome.com/devtools/docs/javascript-debugging) findest du eine Anleitung, wie das im Chrome-Browser funktioniert.
 
 * Veröffentlichen der Anwendung im Internet (siehe auch [Linksammlung](/infos/linksammlung.html)).
 

@@ -98,4 +98,4 @@ Als letztes fehlt jetzt noch der Programmteil, der zählt, wie oft eine Kugel ka
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/133877597/](https://scratch.mit.edu/projects/133877597/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/133877597/](https://scratch.mit.edu/projects/133877597/) ausprobieren.

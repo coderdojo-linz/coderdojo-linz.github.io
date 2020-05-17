@@ -53,7 +53,7 @@ Erstelle als erstes eine neue HTML Seite mit dem Namen fraktal-baum.html.
 	</body>
 	</html>
 
-Zum Zeichnen verwenden wir die Bibliothek [snap.svg](http://snapsvg.io/docs/){:target="_blank"}. Du kannst damit ganz einfach Linien, Kreise, Ellipsen, Rechtecke und ähnliches malen.
+Zum Zeichnen verwenden wir die Bibliothek [snap.svg](http://snapsvg.io/docs/). Du kannst damit ganz einfach Linien, Kreise, Ellipsen, Rechtecke und ähnliches malen.
 
 Versuche es, indem du unter den Kommentar `// Hier kannst du zeichnen` folgenden Code einfügst:
 

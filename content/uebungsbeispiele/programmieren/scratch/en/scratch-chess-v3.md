@@ -41,7 +41,7 @@ Chess programs try to find the optimal move by calculating as many moves in adva
 
 ## Preparation
 
-Log in to Scratch with your Scratch user. If you do not have a Scratch user yet, a mentor will be happy to help creating one. Prerequisite is an existing e-mail address. You need to be logged in to Scratch so you can remix the project template, thus obtain a working copy. Open the project [https://scratch.mit.edu/projects/150304452/](https://scratch.mit.edu/projects/150304452/){:target="_blank"}, and click on "Remix". Now you have a project copy that you can continue working on.
+Log in to Scratch with your Scratch user. If you do not have a Scratch user yet, a mentor will be happy to help creating one. Prerequisite is an existing e-mail address. You need to be logged in to Scratch so you can remix the project template, thus obtain a working copy. Open the project [https://scratch.mit.edu/projects/150304452/](https://scratch.mit.edu/projects/150304452/), and click on "Remix". Now you have a project copy that you can continue working on.
 
 We would like to implement these two missing function blocks. You can find them in the upper left corner of the "Board" sprite's script:
 
@@ -85,6 +85,6 @@ Our intermediate values (Min, Max, Alpha, Beta, Moves) are all stored in lists. 
 
 Great, you're done! Please go ahead and start the program now. Once you have made your move, the engine starts to calculate, running the two custom blocks you just programmed.
 
-Further information about our chess project can be found in the Scratch discussion forum at [https://scratch.mit.edu/discuss/post/2967632/](https://scratch.mit.edu/discuss/post/2967632/){:target="_blank"}. Chess programming in general is discussed in more detail in this presentation: [https://www.slideshare.net/ArnoHuetter/chess-engine-programming](https://www.slideshare.net/ArnoHuetter/chess-engine-programming){:target="_blank"}
+Further information about our chess project can be found in the Scratch discussion forum at [https://scratch.mit.edu/discuss/post/2967632/](https://scratch.mit.edu/discuss/post/2967632/). Chess programming in general is discussed in more detail in this presentation: [https://www.slideshare.net/ArnoHuetter/chess-engine-programming](https://www.slideshare.net/ArnoHuetter/chess-engine-programming)
 
-We hope you enjoy playing against your own little chess engine. Are you winning at level Difficult? How could you still improve it - perhaps by increasing search depth on some selected moves, even if it takes a little longer? The original program at [https://scratch.mit.edu/projects/148769358/](https://scratch.mit.edu/projects/148769358/){:target="_blank"} can look ahead up to 15 moves, making it the most powerful chess program on Scratch. The best chess programs in the world go as far as 35 subsequent moves.
+We hope you enjoy playing against your own little chess engine. Are you winning at level Difficult? How could you still improve it - perhaps by increasing search depth on some selected moves, even if it takes a little longer? The original program at [https://scratch.mit.edu/projects/148769358/](https://scratch.mit.edu/projects/148769358/) can look ahead up to 15 moves, making it the most powerful chess program on Scratch. The best chess programs in the world go as far as 35 subsequent moves.

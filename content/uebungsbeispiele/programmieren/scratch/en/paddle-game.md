@@ -72,4 +72,4 @@ Last but not least you have to detect the ball touching the out area. In that ca
 
 ## try it
 
-You can download and try an already completed version of this game [here](scratch-paddle-game/scratch-paddle-game.sb2){:target="_blank"}.
+You can download and try an already completed version of this game [here](scratch-paddle-game/scratch-paddle-game.sb2).

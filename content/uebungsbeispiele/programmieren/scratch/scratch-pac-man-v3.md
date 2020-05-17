@@ -16,20 +16,20 @@ Pac-Man muss alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu lau
 
 ## Vorbereitungen
 
-Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. kannst du sie auch unter [scratch-pac-man-v3/pac-man.zip](scratch-pac-man-v3/pac-man.zip){:target="_blank"} herunterladen.
+Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. kannst du sie auch unter [scratch-pac-man-v3/pac-man.zip](scratch-pac-man-v3/pac-man.zip) herunterladen.
 Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMan, Ghost und Pill.
 
 ![Figuren](scratch-pac-man-v3/figuren.png)
 
 ## Downloads
 
-[Stage](scratch-pac-man-v3/Stage.png){:target="_blank"}
+[Stage](scratch-pac-man-v3/Stage.png)
 
-[PacMan](scratch-pac-man-v3/PacMan.sprite3){:target="_blank"}
+[PacMan](scratch-pac-man-v3/PacMan.sprite3)
 
-[Ghost](scratch-pac-man-v3/Ghost.sprite3){:target="_blank"}
+[Ghost](scratch-pac-man-v3/Ghost.sprite3)
 
-[Pill](scratch-pac-man-v3/Pill.sprite3){:target="_blank"}
+[Pill](scratch-pac-man-v3/Pill.sprite3)
 
 ## Die Bühne *Stage*
 
@@ -53,7 +53,7 @@ Die Grid-Daten stehen in der Liste *GridDef*. Jeder Listen-Eintrag beinhaltet ei
 
 4 = Tunnel
 
-Damit du das nicht alles einzeln abtippen musst, hier nochmal die Daten in Textform; wenn du diese Seite im Internet unter [http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man.html](http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man.html){:target="_blank"} aufrufst, kannst du Zeile für Zeile in die Zwischenablage kopieren und in dein Skript einfügen.
+Damit du das nicht alles einzeln abtippen musst, hier nochmal die Daten in Textform; wenn du diese Seite im Internet unter [http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man.html](http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-pac-man.html) aufrufst, kannst du Zeile für Zeile in die Zwischenablage kopieren und in dein Skript einfügen.
 
 ```
 0000000000000000000000000000000000000000000000000000

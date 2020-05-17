@@ -24,7 +24,7 @@ Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück
 
 Durch diese einfachen Regeln können aus bestimmten Anfangsmustern komplexe Strukturen entstehen. Es gibt stabile Muster, oszillierende Objekte wie Pulsare oder sogar Raumschiffe. Wer weiß, vielleicht entsteht auf deinem Raster irgendwann eine neue künstliche Lebensform? Durch Klick in das Grid wird das vorausgewählte Muster angelegt.
 
-Du kannst das fertige Spiel unter [https://scratch.mit.edu/projects/303836690/](https://scratch.mit.edu/projects/303836690/){:target="_blank"} auch gleich ausprobieren.
+Du kannst das fertige Spiel unter [https://scratch.mit.edu/projects/303836690/](https://scratch.mit.edu/projects/303836690/) auch gleich ausprobieren.
 
 Das Spiel besteht aus 2 Figuren und 21 Skripten.
 
@@ -108,8 +108,8 @@ Pulsar:<br/>
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/303836690/](https://scratch.mit.edu/projects/303836690/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/303836690/](https://scratch.mit.edu/projects/303836690/) ausprobieren.
 
-Eine andere Variante unter [https://scratch.mit.edu/projects/96326891](https://scratch.mit.edu/projects/96326891){:target="_blank"} wurde weiter verbessert, und berechnet bzw. zeichnet ein Grid mit hundertfacher Zellenanzahl in zehnfacher Geschwindigkeit (Gesamt-Speedup = 1000). Das wird erreicht, indem das Programm sich merkt welche Zellen zuletzt verändert wurden, und welche Nachbarzellen neu berechnet werden müssen. Weiters werden 65536 Zellengruppen-Veränderungen zu Beginn einmal vorberechnet, und müssen dann nicht jedesmal neu kalkuliert werden. Und das Grid wird nicht als Zeichenkette gespeichert, sondern als Liste von Zahlen, wobei eine Zahl gleich mehrere Zellen beinhaltet.
+Eine andere Variante unter [https://scratch.mit.edu/projects/96326891](https://scratch.mit.edu/projects/96326891) wurde weiter verbessert, und berechnet bzw. zeichnet ein Grid mit hundertfacher Zellenanzahl in zehnfacher Geschwindigkeit (Gesamt-Speedup = 1000). Das wird erreicht, indem das Programm sich merkt welche Zellen zuletzt verändert wurden, und welche Nachbarzellen neu berechnet werden müssen. Weiters werden 65536 Zellengruppen-Veränderungen zu Beginn einmal vorberechnet, und müssen dann nicht jedesmal neu kalkuliert werden. Und das Grid wird nicht als Zeichenkette gespeichert, sondern als Liste von Zahlen, wobei eine Zahl gleich mehrere Zellen beinhaltet.
 
 Die Skripte werden dadurch allerdings auch etwas komplizierter. Solche Geschwindigkeitsverbesserungen sind eine wichtige Aufgabe in der Software-Entwicklung. 

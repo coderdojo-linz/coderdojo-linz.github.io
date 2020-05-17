@@ -228,7 +228,7 @@ Du kannst das Spiel jetzt schon spielen. Die richtig erratenen Buchstaben werden
 
 Jetzt fehlt nur noch der Galgen, damit man auch weiß, wieviele Fehlversuche man schon hatte.
 
-Zum Zeichnen verwenden wir die Bibliothek [snap.svg](http://snapsvg.io/docs/){:target="_blank"}. Du kannst damit ganz einfach Linien, Kreise, Ellipsen, Rechtecke und ähnliches malen.
+Zum Zeichnen verwenden wir die Bibliothek [snap.svg](http://snapsvg.io/docs/). Du kannst damit ganz einfach Linien, Kreise, Ellipsen, Rechtecke und ähnliches malen.
 
 	// Beispiele
 	svg.circle(x, y, r);

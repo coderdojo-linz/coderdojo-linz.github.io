@@ -49,4 +49,4 @@ Du findest diese Auslöser im Bereich *Ereignisse*. Im Beispiel rechts siehst du
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/68975126/](https://scratch.mit.edu/projects/68975126/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/68975126/](https://scratch.mit.edu/projects/68975126/) ausprobieren.

@@ -19,9 +19,9 @@ In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläge
 
 ## Downloads
 
-Ball [Figur downloaden](scratch-breakout-v3/Ball.sprite2/){:target="_blank"}
-Block [Figur downloaden](scratch-breakout-v3/Block.sprite2/){:target="_blank"}
-Schläger [Figur downloaden](scratch-breakout-v3/Schlaeger.sprite2/){:target="_blank"}
+Ball [Figur downloaden](scratch-breakout-v3/Ball.sprite2/)
+Block [Figur downloaden](scratch-breakout-v3/Block.sprite2/)
+Schläger [Figur downloaden](scratch-breakout-v3/Schlaeger.sprite2/)
 
 ## Bühne und Figuren anlegen
 

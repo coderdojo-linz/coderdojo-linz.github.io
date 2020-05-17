@@ -103,7 +103,7 @@ Wenn die Meldung "PaarGefunden" kommt, kann das Bild gelöscht werden.
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/75528668/](https://scratch.mit.edu/projects/75528668/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/75528668/](https://scratch.mit.edu/projects/75528668/) ausprobieren.
 
 <h2 class="page-break-before">Gesamte Skripte je Figur</h2>
 

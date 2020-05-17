@@ -8,11 +8,11 @@ description: In dieser Übung lernst du, wie du mit Hugo eine statische Webseite
 
 ## Was ist Hugo
 
-[Hugo](https://gohugo.io/){:target="_blank"} ist ein statischer Webseitengenerator. Man definiert Layoutmuster und Inhalte für die einzelnen Seiten und Hugo baut daraus  HTML Seiten.
+[Hugo](https://gohugo.io/) ist ein statischer Webseitengenerator. Man definiert Layoutmuster und Inhalte für die einzelnen Seiten und Hugo baut daraus  HTML Seiten.
 
 ## Installation
 
-* Lade als erstes unter [https://github.com/spf13/hugo/releases](https://github.com/spf13/hugo/releases){:target="_blank"} die aktuellste Version von Hugo 
+* Lade als erstes unter [https://github.com/spf13/hugo/releases](https://github.com/spf13/hugo/releases) die aktuellste Version von Hugo 
 für dein Betriebssystem runter. 
 * Kopiere dann den Inhalt der .zip Datei in einen neuen Ordner (z.B: `C:\Hugo\`).
 * Benenne die Datei `hugo_0.19_windows_amd64.exe` in `hugo.exe` um.
@@ -51,11 +51,11 @@ Im Explorer auf der linken Seite siehst du ebenfalls die Ordnersturktur, die von
 
 ![seite1.md in Hugo](erste-schritte-mit-hugo/seite1.png){: .max-full}
 
-Der obere Bereich enhält den sogenannten [Front Matter](http://gohugo.io/content/front-matter/){:target="_blank"} Bereich mit Metadaten für die Seite.
+Der obere Bereich enhält den sogenannten [Front Matter](http://gohugo.io/content/front-matter/) Bereich mit Metadaten für die Seite.
 
 * Ändere den Wert für `draft` im oberen Bereich der Seite auf `false`.
 
-Unterhalb wird der Inhalt der Seite erfasst. Du kannst an dieser Stelle einfach HTML einfügen. Oder du kannst auch [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet){:target="_blank"} verwenden.
+Unterhalb wird der Inhalt der Seite erfasst. Du kannst an dieser Stelle einfach HTML einfügen. Oder du kannst auch [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) verwenden.
 
 ## Layout definieren
 

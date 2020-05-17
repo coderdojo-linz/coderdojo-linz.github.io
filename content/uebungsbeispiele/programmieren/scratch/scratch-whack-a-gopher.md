@@ -86,4 +86,4 @@ Jetzt ist das Spiel fertig und du kannst Treffer sammeln, indem du die Gopher mi
 * Den Gopher im Flash Kostüm kannst du schneller machen, sodass er schwerer zu erwischen ist. 
 * Lass mehrere Gopher gleichzeitig erscheinen mit der "Klone erzeugen" funktionalität
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/308852736/](https://scratch.mit.edu/projects/308852736/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/308852736/](https://scratch.mit.edu/projects/308852736/) ausprobieren.

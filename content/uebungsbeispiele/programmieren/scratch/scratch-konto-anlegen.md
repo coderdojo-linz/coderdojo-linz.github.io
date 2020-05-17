@@ -12,7 +12,7 @@ Um deine Projekte in Scratch speichern und teilen zu können, brauchst du ein Ko
 ## Scratch Webseite öffnen
 
 1. ![Scratch Webseite öffnen](scratch-konto-anlegen/scratch-webseite-starten.png){: .right}
-Öffne einen Webbrowser, gib in der Adresszeile die Adresse [scratch.mit.edu](https://scratch.mit.edu){:target="_blank"} ein und drücke *Enter*. Das *https://* vor der Scratch-Adresse musst du nicht unbedingt eingeben. Es wird automatisch erscheinen, nachdem du auf *Enter* gedrückt hast.
+Öffne einen Webbrowser, gib in der Adresszeile die Adresse [scratch.mit.edu](https://scratch.mit.edu) ein und drücke *Enter*. Das *https://* vor der Scratch-Adresse musst du nicht unbedingt eingeben. Es wird automatisch erscheinen, nachdem du auf *Enter* gedrückt hast.
 
 2. ![Scratch Webseite auf Deutsch umschalten](scratch-konto-anlegen/scratch-webseite-deutsch.png){: .right}
 Falls die Scratch-Seite nicht in Deutsch angezeigt wird, scrolle ganz nach unten und wähle aus der Liste der Sprachen *Deutsch* aus.

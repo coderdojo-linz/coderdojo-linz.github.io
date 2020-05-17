@@ -7,18 +7,18 @@ description: In dieser Übung erstellst Du deine erste Webseite.
 
 # Meine erste Webseite
 
-In dieser Übung lernst du die [Hypertext Markup Language](https://de.wikipedia.org/wiki/Hypertext_Markup_Language){:target="_blank"} (kurz HTML) kennen. Unser Ziel ist es, Schritt für Schritt eine HTML-Seite zu erstellen und dabei die wichtigsten Grundbegriffe von HTML zu entdecken. Wenn du nach dieser Übung mehr über HTML lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf [die HTML Einführung auf w3schools.com](http://www.w3schools.com/html/default.asp){:target="_blank"} werfen.
+In dieser Übung lernst du die [Hypertext Markup Language](https://de.wikipedia.org/wiki/Hypertext_Markup_Language) (kurz HTML) kennen. Unser Ziel ist es, Schritt für Schritt eine HTML-Seite zu erstellen und dabei die wichtigsten Grundbegriffe von HTML zu entdecken. Wenn du nach dieser Übung mehr über HTML lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf [die HTML Einführung auf w3schools.com](http://www.w3schools.com/html/default.asp) werfen.
 
 
 ## Das Grundgerüst einer HTML-Seite
 
 1. Öffne einen beliebigen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Hier einige Links zu kostenlosen Editoren, mit denen du HTML gut schreiben kannst. Falls du nicht sicher bist, welchen du nehmen sollst, nimm gleich den ersten. Im Lauf der Zeit kannst du mit verschiedenen experimentieren und dich für den entscheiden, der dir am besten gefällt.
 
-	* [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"} (Windows, MacOS, Linux)
-	* [Notepad++](https://notepad-plus-plus.org/download/v6.8.2.html){:target="_blank"} (Windows)
-	* [Sublime Text](http://www.sublimetext.com/2){:target="_blank"} (Windows, MacOS, Linux)
-	* [Brackets](http://brackets.io/){:target="_blank"} (Windows, MacOS, Linux)
-	* [Atom](https://atom.io/){:target="_blank"} (Windows, MacOS, Linux)
+	* [Visual Studio Code](https://code.visualstudio.com/) (Windows, MacOS, Linux)
+	* [Notepad++](https://notepad-plus-plus.org/download/v6.8.2.html) (Windows)
+	* [Sublime Text](http://www.sublimetext.com/2) (Windows, MacOS, Linux)
+	* [Brackets](http://brackets.io/) (Windows, MacOS, Linux)
+	* [Atom](https://atom.io/) (Windows, MacOS, Linux)
 
 2. Erstelle eine neue Textdatei. In *Visual Studio Code* geht das so: <br/>![Neue Datei in Visual Studio Code erstellen](html-meine-erste-webseite/code-neue-datei.png)
 
@@ -170,7 +170,7 @@ Zeichen&nbsp; | in Worten              | Html Code
 Ö             | o Umlaut               | &amp;Ouml;
 &             | *und* Zeichen          | &amp;amp;
 
-Eine gute Auflistung ist [hier](http://wiki.selfhtml.org/wiki/Referenz:HTML/Zeichenreferenz){:target="_blank"} zu finden
+Eine gute Auflistung ist [hier](http://wiki.selfhtml.org/wiki/Referenz:HTML/Zeichenreferenz) zu finden
 
 1. Ändere im HTML-Code `<li>Musik hören</li>` auf `<li>Musik h&ouml;ren</li>`. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
@@ -222,11 +222,11 @@ Der `a` Tag kommt vom englischen *to anchor* dies kann übersetzt werden mit *ve
 
 ## Musterlösung
 
-Wir haben Dir die fertige HTML-Datei zusammengestellt. Du kannst sie [hier](html-meine-erste-webseite/meine-erste-webseite.html){:target="_blank"} ansehen.
+Wir haben Dir die fertige HTML-Datei zusammengestellt. Du kannst sie [hier](html-meine-erste-webseite/meine-erste-webseite.html) ansehen.
 
 ## Weitere Übungen
 
-1. Wenn du schon etwas Erfahrung mit HTML gesammelt hast, kannst du das [HTML Quiz auf w3schools](http://www.w3schools.com/html/html_quiz.asp){:target="_blank"} probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein HTML-Wissen noch zu erweitern.
+1. Wenn du schon etwas Erfahrung mit HTML gesammelt hast, kannst du das [HTML Quiz auf w3schools](http://www.w3schools.com/html/html_quiz.asp) probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein HTML-Wissen noch zu erweitern.
 
 2. Möchtest du deine Webseite etwas schöner gestalten? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/erste-schritte-mit-css.html).
 

@@ -15,10 +15,10 @@ In dieser Übung lernst du ein einfaches Verschlüsselungsverfahren kennen.
 Technisch lernst du einige Dinge über JavaScript und Node.js:
 
 * Wie programmiert man ein Kommandozeilenprogramm mit JavaScript?
-* Was sind [ASCII](https://de.wikipedia.org/wiki/ASCII){:target="_blank"} Codes?
+* Was sind [ASCII](https://de.wikipedia.org/wiki/ASCII) Codes?
 * Wie arbeitet man in JavaScript mit Zeichenketten?
 
-**Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!** Falls JavaScript, Node.js und [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsbeispiele zu empfehlen:
+**Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!** Falls JavaScript, Node.js und [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code") für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsbeispiele zu empfehlen:
 
 * JavaScript Grundlagen: [Zahlen raten](http://coderdojo-linz.github.io/trainingsanleitungen/web/javascript-zahlen-raten.html)
 * Node.js Grundlagen: [Ein Webserver mit Node.js](http://coderdojo-linz.github.io/trainingsanleitungen/web/nodejs-webserver.html)
@@ -31,7 +31,7 @@ Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alle verwendeten T
 
 ## Die Verschlüsselung
 
-Bevor wir zu programmieren beginnen können, müssen wir uns überlegen, wie wir verschlüsseln möchten. Dafür nehmen wir uns ein Beispiel an einer berühmten Person, dem römischen Feldherrn [Gaius Julius Caesar](https://de.wikipedia.org/wiki/Julius_Caesar){:target="_blank"}. Er hat die nach ihm benannte [Caesar Verschlüsselung](https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung){:target="_blank"} erfunden.
+Bevor wir zu programmieren beginnen können, müssen wir uns überlegen, wie wir verschlüsseln möchten. Dafür nehmen wir uns ein Beispiel an einer berühmten Person, dem römischen Feldherrn [Gaius Julius Caesar](https://de.wikipedia.org/wiki/Julius_Caesar). Er hat die nach ihm benannte [Caesar Verschlüsselung](https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung) erfunden.
 
 Bei dieser Verschlüsselung wird jeder Buchstabe der zu verschlüsselnden Nachricht (*Klartext* genannt) um eine bestimmte Anzahl an Buchstaben im Alphabet "nach rechts" verschoben. Hier ein Beispiel: Nehmen wir an, ihr möchtet den Text *GEHEIM* verschlüsseln. Ihr einigt euch mit dem Empfänger der verschlüsselten Nachricht auf den Schlüssel *2*. Daher müssen wir jeden Buchstaben um zwei Stellen im Alphabet verschieben, um zu verschlüsseln: 
 
@@ -44,7 +44,7 @@ Bei dieser Verschlüsselung wird jeder Buchstabe der zu verschlüsselnden Nachri
 
 Zum Entschlüsseln verschiebt der Empfänger einfach um zwei Stellen nach links. Jemand, der lauschen möchte, erfährt nur *IGJGKO* und kann damit nichts anfangen.
 
-Aufpassen muss man, wenn man durch die Verschiebung über das Ende des Alphabets hinaus kommt. Will man zum Beispiel *X* um drei Stellen verschieben, gehen einem die Buchstaben aus. Die Lösung ist, dass man einfach wieder bei *A* beginnt. Aus *X* wird also *A*. Hier siehst du das Prinzip grafisch dargestellt (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung){:target="_blank"}):
+Aufpassen muss man, wenn man durch die Verschiebung über das Ende des Alphabets hinaus kommt. Will man zum Beispiel *X* um drei Stellen verschieben, gehen einem die Buchstaben aus. Die Lösung ist, dass man einfach wieder bei *A* beginnt. Aus *X* wird also *A*. Hier siehst du das Prinzip grafisch dargestellt (Quelle: [Wikipedia](https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung)):
 
 ![Caesar Verschlüsselung](caesar-verschluesseln/caesar-wikipedia.png)
 
@@ -70,7 +70,7 @@ Bevor wir programmieren, probieren wir die Verschlüsselung manuell aus.
 
 Genug Theorie, lasst uns verschlüsseln.
 
-1. Starte [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} oder deinen Lieblingseditor für JavaScript.
+1. Starte [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code") oder deinen Lieblingseditor für JavaScript.
 
 2. Lege dir eine neue Programmdatei namens `caesar.js` an.
 
@@ -106,7 +106,7 @@ Genug Theorie, lasst uns verschlüsseln.
 
 ## Verschlüsseln
 
-Damit du das Programm zum Verschlüsseln programmieren kannst, musst du verstehen, was der [ASCII Standard](https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange){:target="_blank"} ist. Er ordnet jedem Zeichen (z.B. Buchstaben, Ziffern, Sonderzeichen etc.) eine Zahl zwischen 0 und 255 zu. In [Wikipedia](https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange#ASCII-Tabelle){:target="_blank"} findest du eine Tabelle mit allen Zeichen und den zugehörigen Zahlen.
+Damit du das Programm zum Verschlüsseln programmieren kannst, musst du verstehen, was der [ASCII Standard](https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange) ist. Er ordnet jedem Zeichen (z.B. Buchstaben, Ziffern, Sonderzeichen etc.) eine Zahl zwischen 0 und 255 zu. In [Wikipedia](https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange#ASCII-Tabelle) findest du eine Tabelle mit allen Zeichen und den zugehörigen Zahlen.
 
 ## Verschlüsseln
 
@@ -204,7 +204,7 @@ Jetzt können wir verschlüsseln.
 
 ## Kompletter Code
 
-Den kompletten Code dieser Übung kannst du dir [hier](caesar-verschluesseln/caesarSimple.js){:target="_blank"} ansehen.
+Den kompletten Code dieser Übung kannst du dir [hier](caesar-verschluesseln/caesarSimple.js) ansehen.
 
 ## Weitere Übungen
 
@@ -214,4 +214,4 @@ Den kompletten Code dieser Übung kannst du dir [hier](caesar-verschluesseln/cae
   * Lies den Ausgangstext aus einer Datei und schreibe den verschlüsselten Text in eine Datei. Tipp: Verwende zum Zugriff auf Dateien das NPM Modul `fs`.
   * Lass die Dateinamen als Parameter über die Kommandozeile übergeben. Tipp: Verwende zum Verarbeiten der Kommandozeilenparameter das NPM Modul `minimist`. 
   * Gib bei falschen Kommandozeilenparameter einen Hilfetext aus. Tipp: Verwende zum Ausgeben von färbigem Text das NPM Modul `chalk`.
-  * Eine Musterlösung für diese erweiterte Variante des Beispiels findest du [hier](caesar-verschluesseln/caesar.js){:target="_blank"}.
+  * Eine Musterlösung für diese erweiterte Variante des Beispiels findest du [hier](caesar-verschluesseln/caesar.js).

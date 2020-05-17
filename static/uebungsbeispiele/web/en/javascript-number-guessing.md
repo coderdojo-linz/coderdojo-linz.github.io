@@ -88,7 +88,7 @@ Moreover we create the previously mentioned function `checkNumber`. For now the 
         }
 
 4. Take a good look and try to find out what the variable `outputCount` is used for. 
-Can you see how the dedicated `p` tag is looked up with the JavaScript function [`getElementById`](http://www.w3schools.com/jsref/met_doc_getelementbyid.asp){:target="_blank"}?
+Can you see how the dedicated `p` tag is looked up with the JavaScript function [`getElementById`](http://www.w3schools.com/jsref/met_doc_getelementbyid.asp)?
 In case you have any questions feel free to ask one of the mentors.<br/>
 ![how getElementById works](javascript-number-guessing/getElementById.png)
 
@@ -140,12 +140,12 @@ that is called when the button is clicked. To do so add the following lines of c
         }
 	
 4. Take a close look at those lines. Can you see the functions starting with `Math.`? Those are mathematical function from JavaScript. 
-[Here](http://www.w3schools.com/jsref/jsref_obj_math.asp){:target="_blank"} you can find a description of all those functions. 
+[Here](http://www.w3schools.com/jsref/jsref_obj_math.asp) you can find a description of all those functions. 
 Look for the descriptions of `Math.floor` and `Math.random` and try to find out what functionality those functions have.
 
 5. Save your changes and reload the page in the browser (e.g. via pressing F5). Now you can restart the game anytime with a button click.
 
-You can download the finished game [here](javascript-number-guessing/zahlen-raten-final.html){:target="_blank"}.
+You can download the finished game [here](javascript-number-guessing/zahlen-raten-final.html).
 
 ## some ideas
 
@@ -157,5 +157,5 @@ In case you want to extend the game, here are some more ideas:
 
 3. Choose (randomly) between messages with the same meaning: "Your guess was too high.", "No, too high.", "Try lower."
 
-4. When you've collected some experience with JavaScript, you can try the [JavaScript quiz on w3schools](http://www.w3schools.com/js/js_quiz.asp){:target="_blank"}. 
+4. When you've collected some experience with JavaScript, you can try the [JavaScript quiz on w3schools](http://www.w3schools.com/js/js_quiz.asp). 
 How many questions can you answer? You can read in the documentation to increase your HTML and JavaScript knowledge. 

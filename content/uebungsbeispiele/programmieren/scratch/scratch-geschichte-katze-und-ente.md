@@ -73,4 +73,4 @@ Die Krabbe soll am Anfang unsichtbar sein. Sie soll erst sichtbar werden, wenn d
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/69122768/](https://scratch.mit.edu/projects/69122768){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/69122768/](https://scratch.mit.edu/projects/69122768) ausprobieren.

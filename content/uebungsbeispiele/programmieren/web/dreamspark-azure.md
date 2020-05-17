@@ -8,15 +8,15 @@ description: In dieser Übung veröffentlichst du deine erste Webseite im Intern
 
 ## Ziel der Übung
 
-Auf der [CoderDojo Linz Webseite](/infos/uebungsbeispiele.html){:target="_blank"} findest du viele Beispiele, die dir zeigen, wie du deine erste Webseite baust. So richtig Spaß macht das aber erst, wenn man das Ergebnis auch tatsächlich ins Internet stellen kann, oder? Genau das machen wir in dieser Übung. 
+Auf der [CoderDojo Linz Webseite](/infos/uebungsbeispiele.html) findest du viele Beispiele, die dir zeigen, wie du deine erste Webseite baust. So richtig Spaß macht das aber erst, wenn man das Ergebnis auch tatsächlich ins Internet stellen kann, oder? Genau das machen wir in dieser Übung. 
 
 ## Microsoft DreamSpark und Azure 
 
-Für eine Webseite im Internet braucht man einen Server. Einen Server selbst zu betreiben ist aufwendig und teuer. Aus diesem Grund verwendet man heute häufig sogenanntes [Cloud Computing](https://de.wikipedia.org/wiki/Cloud_Computing){:target="_blank"}. Man sagt, man lässt seine Programme "*in der Cloud* laufen".
+Für eine Webseite im Internet braucht man einen Server. Einen Server selbst zu betreiben ist aufwendig und teuer. Aus diesem Grund verwendet man heute häufig sogenanntes [Cloud Computing](https://de.wikipedia.org/wiki/Cloud_Computing). Man sagt, man lässt seine Programme "*in der Cloud* laufen".
 
 Die *Cloud* sind in Wirklichkeit riesige Rechenzentren mit teilweise hundertausenden an Servern. Microsoft ist einer der größten Anbieter von *Cloud Computing* der Welt. Weitere Großfirmen in diesem Bereich sind zum Beispiel Amazon und Google.
 
-Microsoft bietet mit unter dem Namen [DreamSpark](https://www.dreamspark.com/){:target="_blank"} für Schüler und Studenten kostenlose Software an. Außerdem bekommt ihr durch DreamSpark auch kostenlosen Zugang zur Cloud von Microsoft namens *Microsoft Azure*.
+Microsoft bietet mit unter dem Namen [DreamSpark](https://www.dreamspark.com/) für Schüler und Studenten kostenlose Software an. Außerdem bekommt ihr durch DreamSpark auch kostenlosen Zugang zur Cloud von Microsoft namens *Microsoft Azure*.
 
 In dieser Übung machen wir folgende Schritte:
 
@@ -32,7 +32,7 @@ Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alles was du brauc
 
 Als erstes registrierst du dich bei DreamSpark.
 
-1. Öffne die Webseite [https://www.dreamspark.com](https://www.dreamspark.com){:target="_blank"}.
+1. Öffne die Webseite [https://www.dreamspark.com](https://www.dreamspark.com).
 
 2. Gehe in den Bereich für Schüler und Studenten<br/>
 ![Link zu Schüler und Studenten](dreamspark-azure/01-link-schueler-studenten.png)
@@ -58,7 +58,7 @@ Als erstes registrierst du dich bei DreamSpark.
 7. Du musst jetzt nachweisen, dass du Schüler bist. Wähle dazu *Ich habe einen DreamSpark-Verifizierungscode*<br/>
 ![Verifizierung mit Code](dreamspark-azure/06-bestaetigungscode-eingeben.png)
 
-8. Gib den Code ein, den du von deinem CoderDojo Mentor bekommst. Wenn du diese Übung machen möchtest aber kein Mentor in der Nähe ist, nimm mit uns [Kontakt auf](/kontakt.html){:target="_blank"}.<br/>
+8. Gib den Code ein, den du von deinem CoderDojo Mentor bekommst. Wenn du diese Übung machen möchtest aber kein Mentor in der Nähe ist, nimm mit uns [Kontakt auf](/kontakt.html).<br/>
 ![Code eingeben](dreamspark-azure/07-bestaetigungscode-eingeben.png)
 
 9. Gratuliere, du bist jetzt Mitglied bei DreamSpark und hast Zugang zu allen damit verbundenen, kostenlosen Vorteilen.<br/>
@@ -93,7 +93,7 @@ Jetzt, wo du DreamSpark-Mitglied bist, kannst du dein kostenloses Cloud-Computin
 
 Jetzt können wir eine erste Webseite in Azure veröffentlichen.
 
-1. Öffne das [Azure-Portal](https://portal.azure.com){:target="_blank"}<br/>
+1. Öffne das [Azure-Portal](https://portal.azure.com)<br/>
 ![Azure-Portal](dreamspark-azure/16-azure-portal.png)
 
 2. Lege eine neue *Web App* an wie im folgenden Bild gezeigt (achte auf die rot umrandeten Menüpunkte)<br/>
@@ -120,10 +120,10 @@ Jetzt können wir eine erste Webseite in Azure veröffentlichen.
 9. Nachdem du die Erweiterung installiert hast, siehst du *Visual Studio Online* in der Liste der Erweiterungen. Klicke auf *Durchsuchen*, um den Editor zu starten.<br/>
 ![Visual Studio Online Erweiterung](dreamspark-azure/23-vso-starten.png)
 
-10. Falls du die anderen Übungen schon gemacht hast, kennst du vielleicht den Editor [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"} schon. Der Editor von Visual Studio Online funktioniert fast genau gleich. Wir legen eine neue Datei namens *index.html* an:<br/>
+10. Falls du die anderen Übungen schon gemacht hast, kennst du vielleicht den Editor [Visual Studio Code](https://code.visualstudio.com/) schon. Der Editor von Visual Studio Online funktioniert fast genau gleich. Wir legen eine neue Datei namens *index.html* an:<br/>
 ![Neue Datei anlegen](dreamspark-azure/24-neue-datei.png)
 
-11. Gib den gewünschten HTML-Code ein. Wenn du nicht so viel tippen möchtest, verwende einfach den Beispielcode aus unserem Beispiel [Meine erste Webseite](/trainingsanleitungen/web/html-meine-erste-webseite.html){:target="_blank"}.<br/>
+11. Gib den gewünschten HTML-Code ein. Wenn du nicht so viel tippen möchtest, verwende einfach den Beispielcode aus unserem Beispiel [Meine erste Webseite](/trainingsanleitungen/web/html-meine-erste-webseite.html).<br/>
 <br/>
 **Tipp:** Visual Studio Online speichert automatisch alle paar Sekunden. Du braust nicht manuell auf Speichern klicken.<br/>
 <br/>

@@ -67,4 +67,4 @@ Gratuliere - dein Sierpinski Dreieck ist nun fertig! Du kannst die Farben für j
   
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/92837701/](https://scratch.mit.edu/projects/92837701/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/92837701/](https://scratch.mit.edu/projects/92837701/) ausprobieren.

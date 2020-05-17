@@ -87,6 +87,6 @@ Möchtest du deine Lösung mit einer Musterlösung vergleichen oder brauchst du 
 
 C# gefällt dir? Du möchtest mehr wissen?
 
-1. Wenn du Lust hast kannst du einen kostenlosen [Online-Videokurs über C#](https://mva.microsoft.com/de-de/training-courses/programmieren-f-r-beginner-mit-c--10140?l=JqnuG5A6_9704984382){:target="_blank"} machen. Dabei lernst du die Programmiersprache von Grund auf Schritt für Schritt kennen.
+1. Wenn du Lust hast kannst du einen kostenlosen [Online-Videokurs über C#](https://mva.microsoft.com/de-de/training-courses/programmieren-f-r-beginner-mit-c--10140?l=JqnuG5A6_9704984382) machen. Dabei lernst du die Programmiersprache von Grund auf Schritt für Schritt kennen.
 
 2. Wenn du im CoderDojo bist, löchere deine Mentoren mit Fragen. In Linz haben wir bei paar echte C# Profis dabei, die in diesem Bereich weit über die Grenzen von Österreich hinaus bekannt sind.

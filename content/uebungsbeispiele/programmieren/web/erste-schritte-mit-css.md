@@ -8,15 +8,15 @@ description: In dieser Übung lernst du Cascading Style Sheets (CSS) kennen.
 
 ## Ziel der Übung
 
-In dieser Übung lernst du *Cascading Style Sheets* (kurz CSS) kennen. Unser Ziel ist es, eine HTML-Seite mit CSS zu formatieren und hübsch zu gestalten. Wenn du nach dieser Übung mehr über CSS lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf [die CSS Einführung auf w3schools.com](http://www.w3schools.com/css/css_intro.asp){:target="_blank"} werfen.
+In dieser Übung lernst du *Cascading Style Sheets* (kurz CSS) kennen. Unser Ziel ist es, eine HTML-Seite mit CSS zu formatieren und hübsch zu gestalten. Wenn du nach dieser Übung mehr über CSS lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf [die CSS Einführung auf w3schools.com](http://www.w3schools.com/css/css_intro.asp) werfen.
 
 Falls du noch überhaupt keine Erfahrung mit HTML hast, wende dich an eine CoderDojo Mentorin oder einen Mentor. Sie werden dir die HTML-Basics erklären oder dir eine Übung für HTML-Grundlagen zeigen.
 
 ## Entwicklungsumgebung öffnen
 
-Besonders einfach ist es mit HTML und CSS zu experimentieren, indem man die Webseite [https://jsfiddle.net/](https://jsfiddle.net/){:target="_blank"} verwendet.
+Besonders einfach ist es mit HTML und CSS zu experimentieren, indem man die Webseite [https://jsfiddle.net/](https://jsfiddle.net/) verwendet.
 
-1. Öffne einen Webbrowser deiner Wahl und navigiere zu [https://jsfiddle.net/](https://jsfiddle.net/){:target="_blank"}.
+1. Öffne einen Webbrowser deiner Wahl und navigiere zu [https://jsfiddle.net/](https://jsfiddle.net/).
 
 2. Klicke rechts oben auf *Login/Sign up*, und lege dir einen Benutzer an. Die Anmeldung ist wichtig, damit du deine Arbeitsergebnisse speichern kannst.
 
@@ -28,7 +28,7 @@ Zum Experimentiere mit Styles brauchen wir Inhalt, den wir gestalten können. De
 
 1. Erstelle eine Überschrift erster Ordnung: `<h1>CoderDojo &Uuml;bung</h1>`.
 
-2. Als nächstes möchten wir etwas Fließtext. Dazu müssen wir etwas Text generieren. Sehr einfach geht das mit *Lorem Ipsum Generatoren*. Sie erzeugen sinnlosen Text, der für Entwürfe als Platzhalter dient. Einen solchen Generator findest du unter [http://www.loremipsum.de/](http://www.loremipsum.de/){:target="_blank"}. Öffne diese Seite, generiere 50 Wörter und kopiere sie in die Zwischenablage. Anschließend füge den kopierten Text in einen HTML-Absatz ein: `<p>Lorem ipsum dolor sit amet ...</p>`.
+2. Als nächstes möchten wir etwas Fließtext. Dazu müssen wir etwas Text generieren. Sehr einfach geht das mit *Lorem Ipsum Generatoren*. Sie erzeugen sinnlosen Text, der für Entwürfe als Platzhalter dient. Einen solchen Generator findest du unter [http://www.loremipsum.de/](http://www.loremipsum.de/). Öffne diese Seite, generiere 50 Wörter und kopiere sie in die Zwischenablage. Anschließend füge den kopierten Text in einen HTML-Absatz ein: `<p>Lorem ipsum dolor sit amet ...</p>`.
 
 3. Erstelle darunter eine Überschrift zweiter Ordnung: `<h2>Einleitung</h2>`.
 
@@ -82,7 +82,7 @@ Unser Ziel ist folgendes Layout. Wir möchten es nur mit Hilfe von CSS erreichen
             padding-left: 60px;
         }
 
-4. Spiele mit verschiedenen Farben (siehe auch [HTML Color Picker](http://www.w3schools.com/tags/ref_colorpicker.asp){:target="_blank"}), Schriftgrößen und Abständen, indem du die CSS Elemente veränderst. Lies dazu auf [w3schools](http://www.w3schools.com/css/css_text.asp){:target="_blank"} nach, um mehr über Textformatierung, Schriftarten, Ränder etc. zu erfahren.
+4. Spiele mit verschiedenen Farben (siehe auch [HTML Color Picker](http://www.w3schools.com/tags/ref_colorpicker.asp)), Schriftgrößen und Abständen, indem du die CSS Elemente veränderst. Lies dazu auf [w3schools](http://www.w3schools.com/css/css_text.asp) nach, um mehr über Textformatierung, Schriftarten, Ränder etc. zu erfahren.
 
 ## Klassen und IDs selektieren
 
@@ -133,7 +133,7 @@ In der nächsten Übung möchten wir Hyperlinks im Fließtext schöner formatier
             border-bottom: 1px red dotted;
         }
 
-4. Wenn der Hyperlink schon einmal angeklickt wurde (`visited`), soll er eine leicht andere Farbe haben. Verwende dazu folgenden Stil und probiere ihn aus. `visited` ist eine sogenannte *pseudo-Klasse*. Mehr dazu findest du auf [w3school](http://www.w3schools.com/css/css_pseudo_classes.asp){:target="_blank"}.
+4. Wenn der Hyperlink schon einmal angeklickt wurde (`visited`), soll er eine leicht andere Farbe haben. Verwende dazu folgenden Stil und probiere ihn aus. `visited` ist eine sogenannte *pseudo-Klasse*. Mehr dazu findest du auf [w3school](http://www.w3schools.com/css/css_pseudo_classes.asp).
 
         p a:visited {
             color: #b20000;
@@ -166,7 +166,7 @@ Unser Ziel ist es, einen Kasten mit einem wichtigen Hinweis rechts neben die Ein
 
 Bisher haben wir CSS nur in JSFIDDLE ausprobiert. Zum Abschluss werden wir den erstellten CSS-Code in einer echten HTML-Webseite ausprobieren.
 
-1. Öffne einen beliebigen Texteditor. Es wäre ideal, wenn du einen Editor hast, der HTML und CSS besonders unterstützt. Eine kostenloses Produkt, das diese Funktionen bietet, ist [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}. Es funktioniert auf Windows, MacOS und Linux. Falls du keinen solchen Editor hast oder installieren kannst, kannst du die folgenden Schritte auch mit jedem anderer, bei dir eingebauten Editor machen (unter Windows z.B. *Notepad*).
+1. Öffne einen beliebigen Texteditor. Es wäre ideal, wenn du einen Editor hast, der HTML und CSS besonders unterstützt. Eine kostenloses Produkt, das diese Funktionen bietet, ist [Visual Studio Code](https://code.visualstudio.com/). Es funktioniert auf Windows, MacOS und Linux. Falls du keinen solchen Editor hast oder installieren kannst, kannst du die folgenden Schritte auch mit jedem anderer, bei dir eingebauten Editor machen (unter Windows z.B. *Notepad*).
 
 2. Lege einen leeren Ordner an.
 
@@ -230,9 +230,9 @@ Bisher haben wir CSS nur in JSFIDDLE ausprobiert. Zum Abschluss werden wir den e
 
 ## Weitere Übungen
 
-1. Wir haben ein *internes Stylesheet* erstellt. Lies den Artikel unter [http://www.w3schools.com/css/css_howto.asp](http://www.w3schools.com/css/css_howto.asp){:target="_blank"} und versuche, unser Beispiel auf ein *externes Stylesheet* umzustellen.
+1. Wir haben ein *internes Stylesheet* erstellt. Lies den Artikel unter [http://www.w3schools.com/css/css_howto.asp](http://www.w3schools.com/css/css_howto.asp) und versuche, unser Beispiel auf ein *externes Stylesheet* umzustellen.
 
-2. Wenn du schon etwas Erfahrung mit CSS gesammelt hast, kannst du das [CSS Quiz auf w3schools](http://www.w3schools.com/css/css_quiz.asp){:target="_blank"} probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein CSS-Wissen noch zu erweitern.
+2. Wenn du schon etwas Erfahrung mit CSS gesammelt hast, kannst du das [CSS Quiz auf w3schools](http://www.w3schools.com/css/css_quiz.asp) probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein CSS-Wissen noch zu erweitern.
 
 3. Baue dir einen Webserver mit Node.JS (eine Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/nodejs-webserver.html)) und liefere damit den in dieser Übung erstellten HTML- und CSS-Code aus.
 

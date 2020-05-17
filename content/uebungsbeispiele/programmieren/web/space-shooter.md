@@ -8,11 +8,11 @@ description: In dieser Übung programmierst du einen Space Shooter mit TypeScrip
 
 ## Ziel der Übung
 
-In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den [Space Shooter](http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-space-shooter.html){:target="_blank"} erstellt. Falls nicht, wirf bitte vor diesem Beispiel einen Blick auf die Space Shooter Scratch Übung und [probiere die Scratch-Implementierung aus](https://scratch.mit.edu/projects/70593136/){:target="_blank"}. Unser Ziel ist es, diesen Space Shooter mit Web-Technologien für den Browser zu entwickeln.
+In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den [Space Shooter](http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-space-shooter.html) erstellt. Falls nicht, wirf bitte vor diesem Beispiel einen Blick auf die Space Shooter Scratch Übung und [probiere die Scratch-Implementierung aus](https://scratch.mit.edu/projects/70593136/). Unser Ziel ist es, diesen Space Shooter mit Web-Technologien für den Browser zu entwickeln.
 
 ![Space Shooter](space-shooter/phaser-space-shooter.png)
 
-**Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!** Falls HTML, JavaScript, Node.js und [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsbeispiele zu empfehlen:
+**Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!** Falls HTML, JavaScript, Node.js und [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code") für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsbeispiele zu empfehlen:
 
 * HTML Grundlagen: [Baue deine erste Webseite](http://coderdojo-linz.github.io/trainingsanleitungen/web/html-meine-erste-webseite.html)
 * JavaScript Grundlagen: [Zahlen raten](http://coderdojo-linz.github.io/trainingsanleitungen/web/javascript-zahlen-raten.html)
@@ -22,9 +22,9 @@ In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den [Spac
 
 Du brauchst für diese Übung folgende Tools:
 
-* [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code"){:target="_blank"} (kurz *VSCode*)
-* [ESLint-Erweiterung für VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint){:target="_blank"}
-* [Node.js](https://nodejs.org){:target="_blank"}
+* [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code") (kurz *VSCode*)
+* [ESLint-Erweiterung für VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Node.js](https://nodejs.org)
 
 Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alle verwendeten Tools sind plattformunabhängig.
 
@@ -32,7 +32,7 @@ Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alle verwendeten T
 
 Unser Projekt verwendet eine Reihe von Node.js Modulen. Diese müssen mit *npm*, den *Node Package Manager* installiert werden.
 
-1. Lade den Code, den du zum Starten brauchst, [von GitHub herunter](https://github.com/rstropek/ts-space-shooter-starter/tree/master){:target="_blank"}:
+1. Lade den Code, den du zum Starten brauchst, [von GitHub herunter](https://github.com/rstropek/ts-space-shooter-starter/tree/master):
    ![Download GitHub](space-shooter/GitDownload.png)
 
 1. Pro Tipp: Weißt du schon, was *Git* ist? Natürlich kannst du dann das GitHub Repository auch *klonen*. Es macht nichts, wenn du noch nicht weißt, was das bedeutet.
@@ -55,13 +55,13 @@ Unser Projekt verwendet eine Reihe von Node.js Modulen. Diese müssen mit *npm*,
 
 ## Mentoring-Tipp
 
-Hinweis für Mentorinnen und Mentoren: Alle Schritte dieses Spiels findest du als [*Branches* auf GitHub](https://github.com/rstropek/ts-space-shooter-starter/branches/all){:target="_blank"}.
+Hinweis für Mentorinnen und Mentoren: Alle Schritte dieses Spiels findest du als [*Branches* auf GitHub](https://github.com/rstropek/ts-space-shooter-starter/branches/all).
 
 ## Spiel Starten und Hintergrund zeichnen
 
 Öffne die Datei *src/index.ts* in VSCode.
 
-Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/f91df134e08104aab4ebebc051051a96ec97411b){:target="_blank"} durch. Danach sollte die *index.ts*-Datei so aussehen:
+Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/f91df134e08104aab4ebebc051051a96ec97411b) durch. Danach sollte die *index.ts*-Datei so aussehen:
 
 ```ts
 import { Scene, CANVAS, Game } from 'phaser';
@@ -105,7 +105,7 @@ Wechsle zurück zum Browser und schau, ob du das Spielfeld mit dem Hintergrundbi
 
 Öffne die Datei *src/index.ts* in VSCode.
 
-Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/5c1fa52b81bb533c5622bf773a2aab786cf6a63f){:target="_blank"} durch. Danach sollte die *index.ts*-Datei so aussehen:
+Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/5c1fa52b81bb533c5622bf773a2aab786cf6a63f) durch. Danach sollte die *index.ts*-Datei so aussehen:
 
 ```ts
 import { Scene, CANVAS, Game, GameObjects } from 'phaser';
@@ -159,7 +159,7 @@ Wechsle zurück zum Browser und schau, ob jetzt auch das Spaceship angezeigt wir
 
 Öffne die Datei *src/index.ts* in VSCode.
 
-Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/7fe124e0b58011b9bccced8ac68b6a1a58a7f171){:target="_blank"} durch. Danach sollte die *index.ts*-Datei so aussehen:
+Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/7fe124e0b58011b9bccced8ac68b6a1a58a7f171) durch. Danach sollte die *index.ts*-Datei so aussehen:
 
 ```ts
 import { Scene, Types, CANVAS, Game, GameObjects } from 'phaser';
@@ -253,7 +253,7 @@ Unser Code in *index.ts* wird langsam zu lang und unübersichtlich. Wir wollen j
 
 Öffne die Datei *src/index.ts* in VSCode.
 
-Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/59653738be2aec95c17659156f58852e2504debf){:target="_blank"} durch. Danach sollte die *index.ts*-Datei so aussehen:
+Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/59653738be2aec95c17659156f58852e2504debf) durch. Danach sollte die *index.ts*-Datei so aussehen:
 
 ```ts
 import { Scene, Types, CANVAS, Game } from 'phaser';
@@ -392,7 +392,7 @@ Wechsle zurück zum Browser und probiere, ob du mit den Cursortasten das Spacesh
 
 ## Laser feuern
 
-Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/7fe124e0b58011b9bccced8ac68b6a1a58a7f171){:target="_blank"} durch. Sie bestehen aus folgenden Schritten:
+Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/7fe124e0b58011b9bccced8ac68b6a1a58a7f171) durch. Sie bestehen aus folgenden Schritten:
 
 Füge die Datei *src/bullet.ts* hinzu:
 
@@ -534,7 +534,7 @@ Wechsle zurück zum Browser und probiere, ob du mit der Leertaste Laserschüsse 
 
 ## Meteoriten
 
-Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/659db3bc6ac1badd024b76dce29c7e82a242b1b8){:target="_blank"} durch. Sie bestehen aus folgenden Schritten:
+Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/659db3bc6ac1badd024b76dce29c7e82a242b1b8) durch. Sie bestehen aus folgenden Schritten:
 
 Füge die Datei *src/meteor.ts* hinzu:
 
@@ -697,7 +697,7 @@ Wechsle zurück zum Browser und kontrolliere, ob jetzt von oben Meteoriten herun
 
 ## Laser zerstören Meteoriten
 
-Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/801259915bcf12e90fd5eda6d2b1707d097bb92b){:target="_blank"} an *src/index.ts* durch. Danach sollte die Datei so aussehen:
+Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/801259915bcf12e90fd5eda6d2b1707d097bb92b) an *src/index.ts* durch. Danach sollte die Datei so aussehen:
 
 ```ts
 import { Scene, Types, CANVAS, Game, Physics, Input } from 'phaser';
@@ -823,11 +823,11 @@ Wechsle zurück zum Browser und kontrolliere, ob die Laser jetzt Meteoriten zers
 
 1. *Schwierigkeitsstufe 1*: Wenn ein Laser einen Meteoriten trifft, soll er nicht verschwinden, sondern weiterfliegen. Damit kann man mehrere Meteoriten mit einem Schuss zerstören.
 
-2. *Schwierigkeitsstufe 2*: Verändere die Größe der Meteoriten zufällig. Versuche, aus [diesem Beispiel](https://phaser.io/examples/v3/view/transform/scalexy){:target="_blank"} herauszufinden, wie das geht.
+2. *Schwierigkeitsstufe 2*: Verändere die Größe der Meteoriten zufällig. Versuche, aus [diesem Beispiel](https://phaser.io/examples/v3/view/transform/scalexy) herauszufinden, wie das geht.
 
 ## Game Over
 
-Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/0dc23d40bf5cacc5e571ae4c1e2728280b8e0f01){:target="_blank"} an *src/index.ts* durch. Danach sollte die Datei so aussehen:
+Führe [diese Änderungen](https://github.com/rstropek/ts-space-shooter-starter/commit/0dc23d40bf5cacc5e571ae4c1e2728280b8e0f01) an *src/index.ts* durch. Danach sollte die Datei so aussehen:
 
 ```ts
 import { Scene, Types, CANVAS, Game, Physics, Input } from 'phaser';

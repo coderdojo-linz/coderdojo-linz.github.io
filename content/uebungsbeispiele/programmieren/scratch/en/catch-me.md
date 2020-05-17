@@ -81,4 +81,4 @@ When the shark catches the fish, he should snap twice and the game is over.<br/>
 
 ## try it
 
-You can download and try an already completed version of this game [here](scratch-catch-me/scratch-catch-me.sb2){:target="_blank"}.
+You can download and try an already completed version of this game [here](scratch-catch-me/scratch-catch-me.sb2).

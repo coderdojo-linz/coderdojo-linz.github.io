@@ -54,4 +54,4 @@ Je mehr Ecken du Scratchy malen lässt, desto ähnlicher wird die Figur einem Kr
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/69094342/](https://scratch.mit.edu/projects/69094342/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/69094342/](https://scratch.mit.edu/projects/69094342/) ausprobieren.

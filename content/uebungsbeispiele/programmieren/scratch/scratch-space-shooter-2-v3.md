@@ -110,7 +110,7 @@ Hier noch ein paar Ideen für Verbesserungen des Spiels:
 
 ## Ausprobieren
 
-Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/236866631/](https://scratch.mit.edu/projects/236866631/){:target="_blank"} ausprobieren.
+Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/236866631/](https://scratch.mit.edu/projects/236866631/) ausprobieren.
 
 ## Lösung
 
