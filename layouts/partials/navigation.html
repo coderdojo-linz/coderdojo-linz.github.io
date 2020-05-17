@@ -14,7 +14,7 @@
                 <li class="nav-item {{ cond (eq .File.Dir "termine\\") "active" "" }}">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown {{ cond (eq .File.Dir "info\\") "active" "" }}">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Infos
                     </a>
@@ -28,10 +28,10 @@
                 <li class="nav-item {{ cond (eq .File.Dir "mentoren\\") "active" "" }}">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item {{ cond (eq .Page.File.Path "\\sponsoring.md") "active" "" }}">
+                <li class="nav-item {{ cond (eq .File.Path "sponsoring.md") "active" "" }}">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item {{ cond (eq .File.Dir "uebungsbeispiele\\") "active" "" }}">
+                <li class="nav-item {{ cond (hasPrefix .Page.File.Path "uebungsbeispiele") "active" "" }}">
                     <a class="nav-link" href="/uebungsbeispiele">Übungsbeispiele</a>
                 </li>
             </ul>
