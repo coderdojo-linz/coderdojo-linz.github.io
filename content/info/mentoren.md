@@ -6,12 +6,12 @@ title: "Informationen für Mentoren"
 
 **Du kannst gut programmieren oder bist ein Elektronik-Crack? Dann brauchen wir dich als Mentor.**
 
-Als Mentoren begleiten wir in [CoderDojos](http://www.coderdojo.com "Internationale CoderDojo Webseite"){:target="_blank"} Kinder beim spielerischen Entdecken ihrer Begeisterung für Technik und Softwareentwicklung. Unsere Aufgaben sind:
+Als Mentoren begleiten wir in [CoderDojos](http://www.coderdojo.com "Internationale CoderDojo Webseite") Kinder beim spielerischen Entdecken ihrer Begeisterung für Technik und Softwareentwicklung. Unsere Aufgaben sind:
 
 * Vermitteln der Grundlagen für Anfänger.
 * Den Kindern helfen, falls sie an Grenzen stoßen.
 * "Coole" Projektideen vorschlagen, falls die Kinder einmal keine eigenen Ideen mitbringen.
-* Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen (z.B. [Dojo Sushi Cards](http://kata.coderdojo.com/wiki/Sushi "Beschreibung von Dojo Sushi im CoderDojo Wiki"){:target="_blank"}).
+* Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen (z.B. [Dojo Sushi Cards](http://kata.coderdojo.com/wiki/Sushi "Beschreibung von Dojo Sushi im CoderDojo Wiki")).
 * Und das wichtigste: Kinder für Technik und Programmieren begeistern.
 
 
@@ -23,13 +23,13 @@ Als Mentoren begleiten wir in [CoderDojos](http://www.coderdojo.com "Internation
 
 Natürlich freuen wir uns, wenn Mentoren regelmäßig kommen. Das hilft sowohl bei der Planung der CoderDojos als auch in der Beziehung zu den Kindern und Jugendlichen, die besonders interessiert sind und daher regelmäßig kommen.
 
-Du bist aber auch willkommen, wenn du nur hin und wieder Zeit hast. Neben den laufenden Themen wie [Scratch](https://scratch.mit.edu/ "Homepage von Scratch"){:target="_blank"} oder Grundlagen der Web-Entwicklung organisieren wir auch spezielle Thementage, bei denen Gastmentoren ein spezielles Thema (z.B. etwas in Richtung Elektronik) vorstellen und Beispielprojekte vorschlagen.
+Du bist aber auch willkommen, wenn du nur hin und wieder Zeit hast. Neben den laufenden Themen wie [Scratch](https://scratch.mit.edu/ "Homepage von Scratch") oder Grundlagen der Web-Entwicklung organisieren wir auch spezielle Thementage, bei denen Gastmentoren ein spezielles Thema (z.B. etwas in Richtung Elektronik) vorstellen und Beispielprojekte vorschlagen.
 
 ### Wann sind die CoderDojos in Linz?
 
 **In der Regel Freitag am Nachmittag.**
 
-[Liste der nächsten, bereits fixierten Termine](/termine.html)
+[Liste der nächsten, bereits fixierten Termine](/termine)
 
 
 ### Woher weiß ich, ob ich als Mentor geeignet bin?
