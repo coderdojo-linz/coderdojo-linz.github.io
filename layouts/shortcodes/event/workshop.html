@@ -1,0 +1,6 @@
+<div class="workshop">
+    <h2>{{ .Get "title" }}</h2>
+    {{ .Inner | markdownify }}
+    <p>Mentoren: {{ .Get "mentors" }}</p>
+    <p>Link zum Teilnehmen: <a href="{{ .Get "link" }}" target="_blank">{{ .Get "link" }}</a></p>
+</div>

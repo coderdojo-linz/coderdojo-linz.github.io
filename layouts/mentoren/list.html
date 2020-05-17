@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section id="mentors" class="mentors">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>CoderDojo Linz Mentoren</h1>
+            </div>
+        </div>
+
+        {{ range $index, $element := (.Page.Pages.ByParam "title") }}
+        <!-- <div class="row">
+            <div class="col">
+                <h2 class="text-center text-sm-left">{{ .Title }}</h2>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-12">
+                {{ if ne $index 0 }}
+                <hr class="full">
+                {{ end }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col order-last order-sm-first">
+                <p>{{ .Content | safeHTML}}</p>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-4 col-xl-4 mentor">
+                <div class="img-box">
+                    <img src="/images/mentoren/{{ .Params.image }}" />
+                </div>
+                <h4>{{ .Title }}</h4>
+                <h5>{{ .Params.company }}</h5>
+            </div>
+        </div>
+        {{ end }}
+
+        <div class="row">
+            <div class="col">
+                {{ .Content | safeHTML}}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

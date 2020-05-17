@@ -1,0 +1,31 @@
+{{ if .Site.Params.cta.enable }}
+    {{"<!-- Call To Action Section -->" | safeHTML}}
+    <section class="call-to-action" style='background-image: url("{{ with .Site.Params.cta.bg }}{{.}}{{ end }}")' >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow text-center">
+                    <div class="block">
+                        {{ with .Site.Params.cta.title }}
+                            <h2>{{ . }}</h2>
+                        {{ end }}
+                        {{ with .Site.Params.cta.subtitle }}
+                            <p>{{ . }}</p>
+                        {{ end }}
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="input-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder='{{ i18n "yourEmailAddressHere" }}'
+                                >
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default btn-subscription" type="button">{{ i18n "subscribe" }}</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

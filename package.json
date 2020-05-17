@@ -1,31 +1,16 @@
 {
-  "name": "coderdojo-linz",
+  "name": "coderdojo-linz-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "jekyll serve --force_polling -i"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/coderdojo-linz/coderdojo-linz.github.io.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "hugo server --baseURL http://127.0.0.1"
   },
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/coderdojo-linz/coderdojo-linz.github.io/issues"
-  },
-  "homepage": "https://coderdojo-linz.github.io",
-  "devDependencies": {
-    "del": "^1.1.1",
-    "gulp": "^3.9.1",
-    "gulp-changed": "~1.2.1",
-    "gulp-concat": "^2.5.2",
-    "gulp-minify-css": "~1.1.1",
-    "gulp-newer": "~0.5.0",
-    "gulp-sass": "4.0.1",
-    "gulp-sourcemaps": "~1.5.2",
-    "gulp-typescript": "~2.7.4",
-    "gulp-uglify": "^1.2.0"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootstrap": "^4.4.1"
   }
 }

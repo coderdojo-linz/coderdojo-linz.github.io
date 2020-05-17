@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<section id="events" class="events">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>{{ .Content }}</p>
+                <div class="alert alert-warning" role="alert">
+                    Aufgrund der aktuellen COVID-19 Lage finden alle CoderDojos bis auf weiteres online statt.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2>Nächste Termine</h2>
+                <table class="table">
+                    <!-- <tr>
+                        <th>Datum</th>
+                        <th>Beschreibung</th>
+                    </tr> -->
+                    {{ range((.Page.Pages.ByParam "begintime")) }}
+                    <tr>
+                        <td class="text-nowrap text-center">
+                            <span class="badge badge-primary event-type event-type-{{ replace (lower (.Params.eventType)) " " "-" }}">{{ .Params.eventType }}</span><br />{{ dateFormat "02.01.2006" .Params.begintime }}<br />{{ dateFormat "15:04" .Params.begintime }} - {{ dateFormat "15:04" .Params.endtime }}</td>
+                        <td>{{ .Content }}</td>
+                    </tr>
+
+                    {{ end }}
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

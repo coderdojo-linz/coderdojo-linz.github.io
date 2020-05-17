@@ -1,0 +1,40 @@
+{{ "<!-- NAVIGATION -->" | safeHTML }}
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light {{ cond (eq .Page.File.Path "") "hero-navbar" "" }}">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="/images/logo.jpg" height="100%"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item {{ cond (eq .Page.File.Path "") "active" "" }}">
+                    <a class="nav-link" href="/#">Home</a>
+                </li>
+                <li class="nav-item {{ cond (eq .File.Dir "termine\\") "active" "" }}">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Infos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/info/kinder-und-jugendliche">Für Kinder und Jugendliche</a>
+                        <a class="dropdown-item" href="/info/eltern">Für Eltern</a>
+                        <a class="dropdown-item" href="/info/mentoren">Für Mentoren</a>
+                        <a class="dropdown-item" href="/info/schulen">Für Schulen</a>
+                    </div>
+                </li>
+                <li class="nav-item {{ cond (eq .File.Dir "mentoren\\") "active" "" }}">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item {{ cond (eq .Page.File.Path "\\sponsoring.md") "active" "" }}">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item {{ cond (eq .File.Dir "uebungsbeispiele\\") "active" "" }}">
+                    <a class="nav-link" href="/uebungsbeispiele">Übungsbeispiele</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
