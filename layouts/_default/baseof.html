@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ hugo.Generator }}
     {{"<!-- Fonts -->" | safeHTML }}
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet' type='text/css'>
 
     {{ "<!-- Stylesheets -->" | safeHTML }}
     {{ $options := (dict "targetPath" "vendor.css" "outputStyle" "compressed" "enableSourceMap" true ) }}
@@ -17,11 +17,6 @@
     {{ $style := resources.Get $sass | resources.ToCSS $options | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <link rel="stylesheet" href="{{ `css/animate.css` | absURL }}">
-
-    <!-- TODO: remove styles -->
-    <link rel="stylesheet" href="{{ `css/style.css` | absURL }}">
-    {{"<!-- Responsive Stylesheet -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ `css/responsive.css` | absURL }}">
 
     <!-- main.css -->
     {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true ) }}
@@ -61,12 +56,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- <script src="{{`js/vendor/modernizr-2.6.2.min.js` | absURL}}"></script> -->
-    <!-- <script src="{{`js/jquery.lwtCountdown-1.0.js` | absURL}}"></script> -->
-    <!-- <script src="{{`js/owl.carousel.min.js` | absURL}}"></script> -->
-    <!-- <script src="{{`js/jquery.validate.min.js` | absURL}}"></script>
-    <script src="{{`js/jquery.form.js` | absURL}}"></script>
-    <script src="{{`js/jquery.nav.js` | absURL}}"></script> -->
     <script src="{{`js/wow.min.js` | absURL}}"></script>
     <script src="{{`js/main.js` | absURL}}"></script>
 

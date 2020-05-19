@@ -65,6 +65,10 @@ pre {
     padding: 10px 20px;
 }
 
+.btn {
+    padding: .375rem 2rem;
+}
+
 /* sections */
 section {
 
@@ -111,7 +115,6 @@ section.primary {
     font-size: 14px;
     box-shadow: 2px 2px 10px 5px rgba($primary-color, 0.1);
     border-bottom: 1px solid transparent;
-    transition: all 0.5s;
     border-bottom: 1px solid $primary-color;
 
     .dropdown-item {
@@ -136,20 +139,29 @@ section.primary {
         background-color: transparent;
     }
 
-    &.hero-navbar.navbar-scroll-top {
+    &.hero-navbar {
         background-color: transparent !important;
         box-shadow: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid transparent;
+        transition: all 0.5s;
 
         .nav-item a.nav-link {
-            color: $primary-color;
-            // color: #fff;
+            color: #fff;
+        }
+    }
+
+    &.hero-navbar.navbar-scroll {
+        background-color: #fff !important;
+        box-shadow: 2px 2px 10px 5px rgba($primary-color, 0.1);
+        border-bottom: 1px solid transparent;
+
+        .nav-item a.nav-link {
+            color: #333;
         }
     }
 }
 
 /* footer */
-
 footer {
     text-align: center;
     background: $dark-background;
@@ -194,11 +206,40 @@ nav.breadcrumb-nav+h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.9),
+    background: linear-gradient(rgba(255, 255, 255, 0.0),
             rgba(255, 255, 255, 0.0)), url(img/hero-image.png);
     background-position: bottom center;
     background-size: cover;
     background-attachment: fixed;
+    //color: #fff;
+
+    h1 {
+        font-size: 1.6rem;
+
+        &::after {
+            border: none;
+        }
+    }
+
+    p {
+        //color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .hero-area-text {
+        border-radius: 1rem;
+        background-color: transparentize($color: #2f1e38, $amount: 0.3);
+        background-color: transparentize($color: #fff, $amount: 0.15);
+        padding: 20px 40px;
+    }
+
+    .get-started {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 1.5rem;
+    }
 }
 
 /* events */
