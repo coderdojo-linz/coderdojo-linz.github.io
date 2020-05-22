@@ -80,7 +80,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Habt ihr Fragen zu HTML, CSS & JavaScript? Sucht ihr Übungen, die ihr Zuhause machen könnt, oder steht ihr in euren eigenen Projekten vor Problemen, bei denen wir euch helfen können? Schaut einfach zwischen 12:30 und 13:30 vorbei.",
 			prerequisites: "-",
 			mentors: ["Karin"],
-			link: "https://us02web.zoom.us/j/81944109337?pwd=T1NMaW9RSlN0YVBHVlNodGlkZzBPQT09"
+			link: "https://us02web.zoom.us/j/88241974823?pwd=NlVjK2dHRVhSMnRNUWhkTW9lcFJYQT09"
 		});
 
 		workshops.push({
