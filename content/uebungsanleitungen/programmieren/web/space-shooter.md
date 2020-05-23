@@ -12,7 +12,7 @@ In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den [Spac
 
 ![Space Shooter](space-shooter/phaser-space-shooter.png)
 
-**Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!** Falls HTML, JavaScript, Node.js und [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code") für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsbeispiele zu empfehlen:
+**Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!** Falls HTML, JavaScript, Node.js und [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code") für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsanleitungen zu empfehlen:
 
 * HTML Grundlagen: [Baue deine erste Webseite](http://coderdojo-linz.github.io/trainingsanleitungen/web/html-meine-erste-webseite.html)
 * JavaScript Grundlagen: [Zahlen raten](http://coderdojo-linz.github.io/trainingsanleitungen/web/javascript-zahlen-raten.html)

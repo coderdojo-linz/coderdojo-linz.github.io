@@ -8,7 +8,7 @@ description: In dieser Übung lernst du, wie du mit Node.js einen einfachen Webs
 
 ## Ziel der Übung
 
-In dieser Übung lernst du, wie du eine Anwendung für das Web mit [Server- und Clientteil](https://de.wikipedia.org/wiki/Client-Server-Modell "Client-Server-Modell auf Wikipedia nachlesen") baust. Du solltest mit HTML und JavaScript schon etwas vertraut sein. Falls das ganz neu für dich ist, frage erst einen Mentor um Übungsbeispiele, bei denen du die Grundlagen von HTML und JavaScript lernst.
+In dieser Übung lernst du, wie du eine Anwendung für das Web mit [Server- und Clientteil](https://de.wikipedia.org/wiki/Client-Server-Modell "Client-Server-Modell auf Wikipedia nachlesen") baust. Du solltest mit HTML und JavaScript schon etwas vertraut sein. Falls das ganz neu für dich ist, frage erst einen Mentor um Übungsanleitungen, bei denen du die Grundlagen von HTML und JavaScript lernst.
 
 ## Visual Studio Code Editor installieren
 

@@ -1,16 +1,31 @@
 {{ define "main" }}
 
-<section id="events" class="events">
+<section id="events-description" class="events">
     <div class="container">
         <div class="row">
             <div class="col">
                 <p>{{ .Content }}</p>
-                <div class="alert alert-warning" role="alert">
-                    Aufgrund der aktuellen COVID-19 Lage finden alle CoderDojos bis auf weiteres online statt.
-                </div>
             </div>
         </div>
+    </div>
+</section>
 
+<section id="events-corona" class="primary">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>COVID-19</h2>
+                <p>Aufgrund der aktuellen COVID-19 Lage finden alle CoderDojos bis auf weiteres online statt. Eine Anmeldung ist nicht erforderlich.</p>
+
+                <h4>Voraussetzungen</h4>
+                <p>Bitte installiere für die Teilnahme an den online Workshops die <a href="https://github.us11.list-manage.com/track/click?u=94e838cb11a385c5eae673b11&id=8c2e905afb&e=9e195db8c6" target="_blank">Zoom App</a>. Es gibt sie kostenlos für alle erdenklichen Plattformen. Danach klicke zum Teilnehmen einfach auf den Teilnahmelink des jeweiligen Workshops.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="events" class="events">
+    <div class="container">
         <div class="row">
             <div class="col">
                 <h2>Nächste Termine</h2>
@@ -21,9 +36,17 @@
                     </tr> -->
                     {{ range((.Page.Pages.ByParam "begintime")) }}
                     <tr>
-                        <td class="text-nowrap text-center">
-                            <span class="badge badge-primary event-type event-type-{{ replace (lower (.Params.eventType)) " " "-" }}">{{ .Params.eventType }}</span><br />{{ dateFormat "02.01.2006" .Params.begintime }}<br />{{ dateFormat "15:04" .Params.begintime }} - {{ dateFormat "15:04" .Params.endtime }}</td>
-                        <td>{{ .Content }}</td>
+                        <td class="text-nowrap text-center d-none d-sm-block">
+                            <div class="event-time">
+                                <span class="badge badge-primary event-type event-type-{{ replace (lower (.Params.eventType)) " " "-" }}">{{ .Params.eventType }}</span><br />{{ dateFormat "02.01.2006" .Params.begintime }}<br />{{ dateFormat "15:04" .Params.begintime }} - {{ dateFormat "15:04" .Params.endtime }}
+                            </div>
+                        </td>
+                        <td class="event">
+                            <div class="d-block d-sm-none event-time event-time-xs">
+                                <span class="badge badge-primary event-type event-type-{{ replace (lower (.Params.eventType)) " " "-" }}">{{ .Params.eventType }}</span> {{ dateFormat "02.01.2006" .Params.begintime }} {{ dateFormat "15:04" .Params.begintime }} - {{ dateFormat "15:04" .Params.endtime }}
+                            </div>
+                            {{ .Content }}
+                        </td>
                     </tr>
 
                     {{ end }}

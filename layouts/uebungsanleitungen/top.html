@@ -13,7 +13,7 @@
             <div class="col mb-6">
                 <div class="card h-100">
                     {{ if isset .Params "img" }}
-                    <img src="/img/uebungsbeispiele/{{.Params.img}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: cover; height: 150px;">
+                    <img src="/img/uebungsanleitungen/{{.Params.img}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: cover; height: 150px;">
                     {{ end }}
                     <div class="card-body">
                         <h5 class="card-title">{{.Title}}</h5>
@@ -21,7 +21,7 @@
 
                         <p class="card-text">{{.Content}}</p>
                     </div>
-                    <div class="card-footer"><a href="{{.Permalink}}" class="card-link">Zu den Übungsbeispielen</a></div>
+                    <div class="card-footer"><a href="{{.Permalink}}" class="card-link">Zu den Übungsanleitungen</a></div>
                 </div>
             </div>
             {{ end }}
