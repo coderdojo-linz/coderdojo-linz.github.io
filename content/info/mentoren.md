@@ -14,12 +14,11 @@ Als Mentoren begleiten wir in [CoderDojos](http://www.coderdojo.com "Internation
 * Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen (z.B. [Dojo Sushi Cards](http://kata.coderdojo.com/wiki/Sushi "Beschreibung von Dojo Sushi im CoderDojo Wiki")).
 * Und das wichtigste: Kinder für Technik und Programmieren begeistern.
 
-
 ## Häufige Fragen
 
 ### Ist das eine dauerhafte Verpflichtung?
 
-**Nicht unbedingt, auch punktuelles Mitmachen ist möglich.**
+**Nein, auch punktuelles Mitmachen ist möglich.**
 
 Natürlich freuen wir uns, wenn Mentoren regelmäßig kommen. Das hilft sowohl bei der Planung der CoderDojos als auch in der Beziehung zu den Kindern und Jugendlichen, die besonders interessiert sind und daher regelmäßig kommen.
 
@@ -30,7 +29,6 @@ Du bist aber auch willkommen, wenn du nur hin und wieder Zeit hast. Neben den la
 **In der Regel Freitag am Nachmittag.**
 
 [Liste der nächsten, bereits fixierten Termine](/termine)
-
 
 ### Woher weiß ich, ob ich als Mentor geeignet bin?
 

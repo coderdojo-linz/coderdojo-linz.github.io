@@ -10,6 +10,14 @@ function updateNavbarScrollState() {
     }
 }
 
+function scrollDown() {
+    window.scroll({
+        top: window.innerHeight - 50,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
 $(document).ready(function () {
     new WOW().init();
 
