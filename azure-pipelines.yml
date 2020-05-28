@@ -32,6 +32,7 @@ steps:
   displayName: 'Run npm install'
 
 - script: |
+    sed -i -e 's/linz.coderdojo.net/linz-preview.coderdojo.net/g' config.toml
     hugo
   workingDirectory: $(Agent.BuildDirectory)/src
   displayName: 'Build'
