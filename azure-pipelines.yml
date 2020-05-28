@@ -58,11 +58,13 @@ steps:
   displayName: 'Copy build result to destination'
   
 - script: |
-    echo -e preview-linz.coderdojo.net'\n' > CNAME
+    echo -e linz-preview.coderdojo.net'\n' > CNAME
   workingDirectory: $(Agent.BuildDirectory)/dest
   displayName: 'Create CNAME file for GitHub Pages'
 
 - script: |
+    pwd
+    ls -la
     git add --all .
     git commit -m 'Update website'
     git push origin master
