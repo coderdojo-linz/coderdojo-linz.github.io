@@ -63,12 +63,17 @@ steps:
   displayName: 'Create CNAME file for GitHub Pages'
 
 - script: |
+    azcopy
+  displayName: 'AzCopy'
+
+- script: |
     git clone https://$(GitHubPAT)@github.com/coderdojo-linz/preview-coderdojo-linz.github.io.git
     cd preview-coderdojo-linz.github.io
     echo -e linz-preview.coderdojo.net'\n' > CNAME
     git add --all .
     git commit -m 'Update website'
     git push https://$(GitHubPAT)@github.com/coderdojo-linz/preview-coderdojo-linz.github.io.git
+  condition: False
   workingDirectory: $(Agent.BuildDirectory)
   displayName: 'Git push '
 
