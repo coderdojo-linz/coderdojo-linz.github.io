@@ -34,7 +34,7 @@ steps:
   displayName: 'Git Settings'
 
 - script: |
-    wget https://github.com/gohugoio/hugo/releases/download/v$(hugo_version)/hugo_$(hugo_version)_Linux-64bit.deb \
+    wget https://github.com/gohugoio/hugo/releases/download/v$(hugo_version)/hugo_extended_$(hugo_version)_Linux-64bit.deb \
         -O '$(Pipeline.Workspace)/hugo_$(hugo_version)_Linux-64bit.deb'
     sudo dpkg -i $(Pipeline.Workspace)/hugo*.deb
   displayName: 'Install Hugo'
