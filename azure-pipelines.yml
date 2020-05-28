@@ -52,7 +52,19 @@ steps:
 - task: CopyFiles@2
   inputs:
     sourceFolder: $(Agent.BuildDirectory)/src/public
-    targetFolder: $(Agent.TempDirectory)/public
+    targetFolder: $(Agent.BuildDirectory)/dest
     cleanTargetFolder: true
     overWrite: true
-  displayName: 'Copy build result to temp'
+  displayName: 'Copy build result to destination'
+  
+- script: |
+    echo -e preview-linz.coderdojo.net'\n' > CNAME
+  workingDirectory: $(Agent.BuildDirectory)/dest
+  displayName: 'Create CNAME file for GitHub Pages'
+
+- script: |
+    git add --all .
+    git commit -m 'Update website'
+    git push origin master
+  workingDirectory: $(Agent.BuildDirectory)/dest
+  displayName: 'Git push '
