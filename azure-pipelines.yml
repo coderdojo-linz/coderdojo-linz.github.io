@@ -1,5 +1,5 @@
 trigger:
-- feat/hugo-build
+- feat/*
 
 pool:
   vmImage: 'ubuntu-latest'
