@@ -63,10 +63,21 @@ steps:
   displayName: 'Create CNAME file for GitHub Pages'
 
 - script: |
+    git clone git@github.com:coderdojo-linz/preview-coderdojo-linz.github.io.git
+    cd preview-coderdojo-linz
+    echo -e linz-preview.coderdojo.net'\n' > CNAME
+    git add --all .
+    git commit -m 'Update website'
+    git push origin master
+  workingDirectory: $(Agent.BuildDirectory)
+  displayName: 'Git push '
+
+- script: |
     pwd
     ls -la
     git add --all .
     git commit -m 'Update website'
     git push origin master
+  condition: False
   workingDirectory: $(Agent.BuildDirectory)/dest
   displayName: 'Git push '
