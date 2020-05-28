@@ -157,6 +157,8 @@ Verwende im folgenden Beispiel Variablen mit den Namen bg-color-light, bg-color-
 
 ### Calc
 
+<script async src="//jsfiddle.net/karin112358/gu17pn24/24/embed/result/dark/"></script>
+
 ### Flexbox
 
 ### Grid
