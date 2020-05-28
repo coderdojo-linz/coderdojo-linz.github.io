@@ -40,6 +40,11 @@ steps:
   displayName: 'Install Hugo'
 
 - script: |
+    npm install
+  workingDirectory: $(Agent.BuildDirectory)/src
+  displayName: 'Run npm install'
+
+- script: |
     hugo
   workingDirectory: $(Agent.BuildDirectory)/src
   displayName: 'Build'
