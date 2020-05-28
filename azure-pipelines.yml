@@ -1,0 +1,45 @@
+trigger:
+- feat/hugo
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  hugo_version: '0.71.1'
+  target_repository: 'https://github.com/coderdojo-linz/preview-coderdojo-linz.github.io.git'
+
+steps:
+- checkout: self
+  persistCredentials: true
+  clean: true
+  displayName: 'Checkout'
+
+- script: |
+    git config --global user.email "rainer@software-architects.at"
+    git config --global user.name "Rainer"
+  displayName: 'Git Settings'
+
+- script: |
+    wget https://github.com/gohugoio/hugo/releases/download/v$(hugo_version)/hugo_$(hugo_version)_Linux-64bit.deb \
+        -O '$(Pipeline.Workspace)/hugo_$(hugo_version)_Linux-64bit.deb'
+    sudo dpkg -i $(Pipeline.Workspace)/hugo*.deb
+  displayName: 'Install Hugo'
+
+- script: |
+    hugo
+  displayName: 'Build'
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: public
+    targetFolder: $(Agent.TempDirectory)/public
+    cleanTargetFolder: true
+    overWrite: true
+  displayName: 'Copy build result to temp'
+
+- checkout: git@github.com:coderdojo-linz/preview-coderdojo-linz.github.io.git
+
+- script:
+    pwd
+    ls -la
+  displayName: Directory list
