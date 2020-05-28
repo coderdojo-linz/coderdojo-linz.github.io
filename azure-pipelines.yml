@@ -38,6 +38,7 @@ steps:
     ls -la
     ls ./src -la
     ls ./dest -la
+  workingDirectory: $(Agent.BuildDirectory)
   displayName: Directory list
 
 - script: |
