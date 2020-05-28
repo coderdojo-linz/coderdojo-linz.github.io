@@ -1,19 +1,12 @@
 trigger:
 - feat/hugo-build
 
-resources:
-  repositories:
-  - repository: NewHugoWebsite
-    type: github
-    endpoint: coderdojo-linz
-    name: coderdojo-linz/preview-coderdojo-linz.github.io
-
 pool:
   vmImage: 'ubuntu-latest'
 
 variables:
   hugo_version: '0.71.1'
-  target_repository: 'https://github.com/coderdojo-linz/preview-coderdojo-linz.github.io.git'
+  target_repository: 'preview-coderdojo-linz'
 
 steps:
 - checkout: self
@@ -21,12 +14,6 @@ steps:
   clean: true
   path: src
   displayName: 'Checkout source'
-
-- checkout: NewHugoWebsite
-  persistCredentials: true
-  clean: true
-  path: dest
-  displayName: 'Checkout destination'
 
 - script: |
     git config --global user.email "rainer@software-architects.at"
@@ -49,35 +36,24 @@ steps:
   workingDirectory: $(Agent.BuildDirectory)/src
   displayName: 'Build'
 
+- script: git clone https://$(GitHubPAT)@github.com/coderdojo-linz/$(target_repository).github.io.git dest
+  workingDirectory: $(Agent.BuildDirectory)
+  displayName: 'Clone destination repo'
+
 - task: CopyFiles@2
   inputs:
     sourceFolder: $(Agent.BuildDirectory)/src/public
     targetFolder: $(Agent.BuildDirectory)/dest
-    cleanTargetFolder: true
     overWrite: true
   displayName: 'Copy build result to destination'
   
-- script: |
-    echo -e linz-preview.coderdojo.net'\n' > CNAME
+- script: echo -e linz-preview.coderdojo.net'\n' > CNAME
   workingDirectory: $(Agent.BuildDirectory)/dest
   displayName: 'Create CNAME file for GitHub Pages'
 
 - script: |
-    git clone https://$(GitHubPAT)@github.com/coderdojo-linz/preview-coderdojo-linz.github.io.git
-    cd preview-coderdojo-linz.github.io
-    echo -e linz-preview.coderdojo.net'\n' > CNAME
     git add --all .
     git commit -m 'Update website'
-    git push https://$(GitHubPAT)@github.com/coderdojo-linz/preview-coderdojo-linz.github.io.git
-  workingDirectory: $(Agent.BuildDirectory)
-  displayName: 'Git push '
-
-- script: |
-    pwd
-    ls -la
-    git add --all .
-    git commit -m 'Update website'
-    git push origin master
-  condition: False
+    git push https://$(GitHubPAT)@github.com/coderdojo-linz/$(target_repository).github.io.git
   workingDirectory: $(Agent.BuildDirectory)/dest
-  displayName: 'Git push '
+  displayName: 'Git push to destination repo'
