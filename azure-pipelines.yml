@@ -19,7 +19,14 @@ steps:
 - checkout: self
   persistCredentials: true
   clean: true
-  displayName: 'Checkout'
+  path: src
+  displayName: 'Checkout source'
+
+- checkout: NewHugoWebsite
+  persistCredentials: true
+  clean: true
+  path: dest
+  displayName: 'Checkout destination'
 
 - script: |
     git config --global user.email "rainer@software-architects.at"
@@ -33,20 +40,21 @@ steps:
   displayName: 'Install Hugo'
 
 - script: |
+    cd ./src
     hugo
   displayName: 'Build'
 
 - task: CopyFiles@2
   inputs:
-    sourceFolder: public
+    sourceFolder: src/public
     targetFolder: $(Agent.TempDirectory)/public
     cleanTargetFolder: true
     overWrite: true
   displayName: 'Copy build result to temp'
 
-- checkout: NewHugoWebsite
-
 - script:
     pwd
     ls -la
+    ls ./src -la
+    ls ./dest -la
   displayName: Directory list
