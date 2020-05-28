@@ -1,5 +1,12 @@
 trigger:
-- feat/hugo
+- feat/hugo-build
+
+resources:
+  repositories:
+  - repository: NewHugoWebsite
+    type: github
+    endpoint: coderdojo-linz-github
+    name: coderdojo-linz/coderdojo-linz.github.io
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -37,7 +44,7 @@ steps:
     overWrite: true
   displayName: 'Copy build result to temp'
 
-- checkout: git@github.com:preview-coderdojo-linz
+- checkout: NewHugoWebsite
 
 - script:
     pwd
