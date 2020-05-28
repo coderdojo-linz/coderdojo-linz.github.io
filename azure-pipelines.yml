@@ -5,7 +5,7 @@ resources:
   repositories:
   - repository: NewHugoWebsite
     type: github
-    endpoint: coderdojo-linz-github
+    endpoint: coderdojo-linz
     name: coderdojo-linz/coderdojo-linz.github.io
 
 pool:
