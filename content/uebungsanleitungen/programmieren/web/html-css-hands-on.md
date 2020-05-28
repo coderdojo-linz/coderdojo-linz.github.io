@@ -29,6 +29,8 @@ In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch H
 
 ### Zitate, Abkürzungen, Adressen
 
+Hebe Zitate, Abkürzungen und Adressen hervor.
+
 [Startprojekt](https://jsfiddle.net/karin112358/ue4jn8wx/#fork)
 
 <script async src="//jsfiddle.net/karin112358/kh2m3djs/embed/result/dark/"></script>
@@ -36,8 +38,6 @@ In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch H
 ### Links
 
 ### Tabellen
-
-### Block & Inline
 
 ### Iframe
 
@@ -63,9 +63,43 @@ In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch H
 
 ### Selektoren
 
+Mit den Selektoren bestimmt man, welche Elemente aus dem HTML gestylt werden sollen. Wir wollen in diesem Beispiel folgende Styles:
+
+- section1: gelber Hintergrund
+- alle Überschriften: rote Schrift
+- alle Absätze: blaue Schrift
+- alle Elemente mit der Klasse `important`: fett
+- alle Absätze in `section2`: Schriftart Courier New
+- jeder erste Absatz pro Section: alles in Großbuchstaben
+- jedes `span` das direkt in einem Absatz vorkommen (nur 1. Ebene): unterstrichen
+
+[Startprojekt](https://jsfiddle.net/karin112358/cr6aqeagr8f7x3eh/#fork)
+
+<script async src="//jsfiddle.net/karin112358/pf9r36tm/embed/result/dark/"></script>
+
 ### Units
 
-### Border, Outline, Margin, Padding
+Füge im CSS die Styles für Breite und Höhe der `div` Elemente hinzu.
+
+[Startprojekt](https://jsfiddle.net/karin112358/k1f3vj9h/#fork)
+
+<script async src="//jsfiddle.net/karin112358/c70xeLav/27/embed/result/dark/"></script>
+
+### Display
+
+Das `display` Property steuert das Anzeigeverhalten von Elementen. Verwende jeweils das korrekte `display` Property und ergänze wo nötig noch Höhe und Breite der Elemente im CSS.
+
+[Startprojekt](https://jsfiddle.net/karin112358/cr6ax3eh/#fork)
+
+<script async src="//jsfiddle.net/karin112358/rto63s01/77/embed/result/dark/"></script>
+
+### Box Model
+
+Ändere den Rahmen, Innen- und Außenabstand und den Umriss der `div` Elemente.
+
+[Startprojekt](https://jsfiddle.net/karin112358/vp4Lyswo/#fork)
+
+<script async src="//jsfiddle.net/karin112358/wfvt0y96/embed/result/dark/"></script>
 
 ### Text
 
@@ -73,15 +107,39 @@ In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch H
 
 ### Display / Visibility
 
-### Size (Box-Sizing)
-
 ### Position
+
+Setzte die Styles für die `div` Elemente so, dass sie sich wie in der angegebenen Lösung verhalten.
+
+[Startprojekt](https://jsfiddle.net/karin112358/vgux50ck/#fork)
+
+<script async src="//jsfiddle.net/karin112358/nbmgLo64/embed/result/dark/"></script>
+
+<!-- zindex -->
 
 ### Overflow
 
+Ändere das `overflow` verhalten der drei `div` Elemente.
+
+[Startprojekt](https://jsfiddle.net/karin112358/dwyzogmh/#fork)
+
+<script async src="//jsfiddle.net/karin112358/m9aosgrd/29/embed/result/dark/"></script>
+
 ### Float
 
+Lass den Text um die `div` Elemente fließen.
+
+[Startprojekt](https://jsfiddle.net/karin112358/24b3wayu/#fork)
+
+<script async src="//jsfiddle.net/karin112358/seqzc182/embed/result/dark/"></script>
+
 ### Alignment
+
+Versuche das gewünschte Alignment auf verschiedene Arten zu erreichen.
+
+[Startprojekt](https://jsfiddle.net/karin112358/s8Lwahnm/#fork)
+
+<script async src="//jsfiddle.net/karin112358/us6bk1xj/embed/result/dark/"></script>
 
 ### Farben
 
@@ -91,6 +149,12 @@ In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch H
 
 ### Variables
 
+Verwende im folgenden Beispiel Variablen mit den Namen bg-color-light, bg-color-dark, font-size-small und font-size-large, um den `div` Elementen die richtigen Farben und Größen zuzuweisen.
+
+[Startprojekt](https://jsfiddle.net/karin112358/f04j835o/#fork)
+
+<script async src="//jsfiddle.net/karin112358/jf4ecnsy/embed/result/dark/"></script>
+
 ### Calc
 
 ### Flexbox
@@ -98,3 +162,29 @@ In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch H
 ### Grid
 
 ### Media Queries
+
+Das folgende Bespiel besteht aus einem Header, einem Menu, dem Contentbereich und einem Footer. Folgende Styles sollen abhängig von Größe und Medientyp gesetzt werden:
+
+**default**
+
+- Die Überschriften sind blau.
+- Header und Footer sind grau hinterlegt.
+- Die Position von Header und Footer ist oben bzw. unten fixiert und somit immer sichtbar.
+- Das Menu wird mit 25% und der Content mit 75% der verfügbaren Breite angezeigt.
+
+**max-height 500px**
+
+- Die Position von Header und Footer ist nicht mehr fixiert sondern statisch (default Verhalten).
+
+**max-width 500px**
+
+- Menu und Content werden je mit 100% Breite untereinander angezeigt.
+
+**print**
+
+- Die Überschriften werden schwarz dargestellt.
+- Header, Footer und Menu werden nicht angezeigt.
+
+[Startprojekt](https://jsfiddle.net/karin112358/cq57zo0s/#fork)
+
+<script async src="//jsfiddle.net/karin112358/g3d4bjs2/96/embed/result/dark/"></script>
