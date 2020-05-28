@@ -33,32 +33,21 @@ steps:
     git config --global user.name "Rainer"
   displayName: 'Git Settings'
 
-- script:
-    pwd
-    ls -la
-    ls ./src -la
-    ls ./dest -la
-  workingDirectory: $(Agent.BuildDirectory)
-  displayName: Directory list
-
 - script: |
     wget https://github.com/gohugoio/hugo/releases/download/v$(hugo_version)/hugo_$(hugo_version)_Linux-64bit.deb \
         -O '$(Pipeline.Workspace)/hugo_$(hugo_version)_Linux-64bit.deb'
     sudo dpkg -i $(Pipeline.Workspace)/hugo*.deb
-  condition: False
   displayName: 'Install Hugo'
 
 - script: |
-    cd ./src
     hugo
-  condition: False
+  workingDirectory: $(Agent.BuildDirectory)/src
   displayName: 'Build'
 
 - task: CopyFiles@2
   inputs:
-    sourceFolder: src/public
+    sourceFolder: $(Agent.BuildDirectory)/src/public
     targetFolder: $(Agent.TempDirectory)/public
     cleanTargetFolder: true
     overWrite: true
-  condition: False
   displayName: 'Copy build result to temp'
