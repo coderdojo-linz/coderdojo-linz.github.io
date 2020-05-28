@@ -6,7 +6,7 @@ resources:
   - repository: NewHugoWebsite
     type: github
     endpoint: coderdojo-linz
-    name: coderdojo-linz/coderdojo-linz.github.io
+    name: coderdojo-linz/preview-coderdojo-linz.github.io
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -33,15 +33,24 @@ steps:
     git config --global user.name "Rainer"
   displayName: 'Git Settings'
 
+- script:
+    pwd
+    ls -la
+    ls ./src -la
+    ls ./dest -la
+  displayName: Directory list
+
 - script: |
     wget https://github.com/gohugoio/hugo/releases/download/v$(hugo_version)/hugo_$(hugo_version)_Linux-64bit.deb \
         -O '$(Pipeline.Workspace)/hugo_$(hugo_version)_Linux-64bit.deb'
     sudo dpkg -i $(Pipeline.Workspace)/hugo*.deb
+  condition: False
   displayName: 'Install Hugo'
 
 - script: |
     cd ./src
     hugo
+  condition: False
   displayName: 'Build'
 
 - task: CopyFiles@2
@@ -50,11 +59,5 @@ steps:
     targetFolder: $(Agent.TempDirectory)/public
     cleanTargetFolder: true
     overWrite: true
+  condition: False
   displayName: 'Copy build result to temp'
-
-- script:
-    pwd
-    ls -la
-    ls ./src -la
-    ls ./dest -la
-  displayName: Directory list
