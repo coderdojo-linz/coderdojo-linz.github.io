@@ -37,7 +37,7 @@ steps:
     overWrite: true
   displayName: 'Copy build result to temp'
 
-- checkout: git@github.com:coderdojo-linz/preview-coderdojo-linz.github.io.git
+- checkout: git@github.com:preview-coderdojo-linz
 
 - script:
     pwd
