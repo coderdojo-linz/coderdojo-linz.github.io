@@ -64,7 +64,7 @@ steps:
 
 - script: |
     git clone git@github.com:coderdojo-linz/preview-coderdojo-linz.github.io.git
-    cd preview-coderdojo-linz
+    cd preview-coderdojo-linz.github.io
     echo -e linz-preview.coderdojo.net'\n' > CNAME
     git add --all .
     git commit -m 'Update website'
