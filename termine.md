@@ -123,7 +123,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			time: "16:00 - 18:00",
 			title: "Unity Moonhack",
 			description: "Das Spiel Moonhack kennt ihr vielleicht schon vom Beispiel Scratch Moonhack. Diesmal werden wir versuchen das gleiche Spiel mit Unity zu realisieren.",
-			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://store.unity.com/\" target=\"_blank\">Unity 2019.3</a> (oder eine aktuellere - du wirst dafür einen Account bei Unity anlegen müssen - nimm bitte die Induvidual/Personal Version)</li><li>oder <a href=\"https://visualstudio.microsoft.com/de/vs/unity-tools/\" target=\"_blank\">Visual Studio 2019 Community</a></li></ul>",
+			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://store.unity.com/\" target=\"_blank\">Unity 2019.3</a> (oder eine aktuellere - du wirst dafür einen Account bei Unity anlegen müssen - nimm bitte die Induvidual/Personal Version)</li><li>und <a href=\"https://visualstudio.microsoft.com/de/vs/unity-tools/\" target=\"_blank\">Visual Studio 2019 Community</a></li></ul>",
 			mentors: ["Hans-Peter"],
 			link: "https://us02web.zoom.us/j/85099735480?pwd=MmN1dUd5WDBBdzJIcy9SRS9MQUNVQT09"
 		});
