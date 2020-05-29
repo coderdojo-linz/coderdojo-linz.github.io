@@ -43,11 +43,17 @@ Hebe Zitate, Abkürzungen und Adressen hervor.
 
 ### Head
 
-### Layout Techniken
-
 ### Responsive
 
 ### Code
+
+Füge die richtigen HTML Tags ein um Code, Variablen und den Ergebnisbereich zu kennzeichnen.
+
+Du kannst auch noch CSS Styles für die entsprechenden Tags hinzufügen, um das Ergebnis wie unten darzustellen.  
+
+[Startprojekt](https://jsfiddle.net/karin112358/aLj93b70/#fork)
+
+<script async src="//jsfiddle.net/karin112358/pzk7oyx0/embed/result/dark/"></script>
 
 ### Semantics
 
@@ -58,6 +64,10 @@ Hebe Zitate, Abkürzungen und Adressen hervor.
 ### Media
 
 ### Inline Styles
+
+### Weitere Übungen für HTML
+
+- [https://www.w3schools.com/html/exercise.asp](https://www.w3schools.com/html/exercise.asp)
 
 ## CSS
 
@@ -157,11 +167,11 @@ Verwende im folgenden Beispiel Variablen mit den Namen bg-color-light, bg-color-
 
 ### Calc
 
+Im folgenden Projekt sollen Header und Footer je 50px hoch sein, das Menu soll 20% der gesamten Bildschirmhöhe einnehmen und der Content-Bereich bekommt den Rest.
+
+[Startprojekt](https://jsfiddle.net/karin112358/zrob7ad1/#fork)
+
 <script async src="//jsfiddle.net/karin112358/gu17pn24/24/embed/result/dark/"></script>
-
-### Flexbox
-
-### Grid
 
 ### Media Queries
 
@@ -190,3 +200,23 @@ Das folgende Bespiel besteht aus einem Header, einem Menu, dem Contentbereich un
 [Startprojekt](https://jsfiddle.net/karin112358/cq57zo0s/#fork)
 
 <script async src="//jsfiddle.net/karin112358/g3d4bjs2/96/embed/result/dark/"></script>
+
+### Flexbox
+
+### Grid
+
+Verwende das CSS Grid um die Elemente anzuordnen, indem du für die einzelnen Items die Position angibst.
+
+[Startprojekt](https://jsfiddle.net/karin112358/czdykj3r/#fork)
+
+<script async src="//jsfiddle.net/karin112358/8p9ajow1/embed/result/dark/"></script>
+
+Verwende nun benannte Areas im CSS Grid, um die Elemente anzuordnen.
+
+[Startprojekt](https://jsfiddle.net/karin112358/se8torvd/#fork)
+
+<script async src="//jsfiddle.net/karin112358/vu5y9L71/embed/result/dark/"></script>
+
+### Weitere Übungen für CSS
+
+- [https://www.w3schools.com/css/exercise.asp](https://www.w3schools.com/css/exercise.asp)

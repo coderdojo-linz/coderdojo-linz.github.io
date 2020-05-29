@@ -125,11 +125,11 @@ nav.breadcrumb-nav {
     background-color: #fff !important;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    box-shadow: 2px 2px 15px 15px rgba($primary-color, 0.2);
-    border-bottom: 1px solid rgba($primary-color, 0.4);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 5px 5px 15px 15px rgba(#000, 0.1);
+    border-bottom: 1px solid rgba(#000, 0.15);
 
     @media(max-width: 991.98px) {
         .container {
@@ -172,8 +172,8 @@ nav.breadcrumb-nav {
 
     &.hero-navbar.navbar-scroll {
         background-color: #fff !important;
-        box-shadow: 2px 2px 15px 15px rgba($primary-color, 0.2);
-        border-bottom: 1px solid rgba($primary-color, 0.4);
+        box-shadow: 5px 5px 15px 15px rgba(#000, 0.1);
+        border-bottom: 1px solid rgba(#000, 0.15);
 
         .nav-item a.nav-link {
             color: #333;
@@ -439,5 +439,6 @@ section.mentors {
 /* Sushis */
 iframe[src*="jsfiddle"] {
     border: 1px solid #000 !important;
-    max-height: 400px;
+    height: 400px;
+    resize: both;
 }
