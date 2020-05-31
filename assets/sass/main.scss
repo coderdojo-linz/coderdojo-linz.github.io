@@ -128,8 +128,8 @@ nav.breadcrumb-nav {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
-    box-shadow: 5px 5px 15px 15px rgba(#000, 0.1);
-    border-bottom: 1px solid rgba(#000, 0.15);
+    box-shadow: 0 1px 10px 5px rgba(#000, 0.1);
+    //border-bottom: 1px solid rgba(#000, 0.15);
 
     @media(max-width: 991.98px) {
         .container {
@@ -172,8 +172,8 @@ nav.breadcrumb-nav {
 
     &.hero-navbar.navbar-scroll {
         background-color: #fff !important;
-        box-shadow: 5px 5px 15px 15px rgba(#000, 0.1);
-        border-bottom: 1px solid rgba(#000, 0.15);
+        box-shadow: 0 1px 10px 5px rgba(#000, 0.1);
+        //border-bottom: 1px solid rgba(#000, 0.15);
 
         .nav-item a.nav-link {
             color: #333;
@@ -437,6 +437,29 @@ section.mentors {
 }
 
 /* Sushis */
+.card {
+    box-shadow: 0 1px 10px 5px rgba(#000, 0.1);
+    border: none;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+    .card-title {
+        margin-block-start: 0;
+    }
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    .card-header {
+        border-bottom: none;
+    }
+
+    .card-footer {
+        border-top: none;
+    }
+}
+
 iframe[src*="jsfiddle"] {
     border: 1px solid #000 !important;
     height: 400px;
