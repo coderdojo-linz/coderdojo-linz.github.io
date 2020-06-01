@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Hangman
 description: In this exercise you will program the hangman game
 ---

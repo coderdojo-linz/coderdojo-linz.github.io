@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Einfaches Teleporter Plugin
 description: In dieser Anleitung machst du ein einfaches Teleport-Plugin mit IntelliJ IDEA. 
 ---

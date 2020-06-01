@@ -1,12 +1,14 @@
 {{ define "main" }}
 
-<section>
+<section id="sushi">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 {{ partial "breadcrumb.html" . }}
-                
-                {{ .Content }}
+
+                <div class="sushi-content">
+                    {{ .Content }}
+                </div>
             </div>
         </div>
     </div>

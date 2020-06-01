@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Snake
 description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Rand und verwickle dich nicht, wenn die Schlange länger wird.
 scratch-images:

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Weihnachtsspiel 2016
 description: Es ist Weihnachten. Zeit, den Baum zu dekorieren.
 scratch-images:

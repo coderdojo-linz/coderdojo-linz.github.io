@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Deine ersten Schritte mit micro:bit - Blockprogrammierung
 description: Baue einen elektronischen Würfel mit micro:bit
 ---

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Erste Schritte mit SVG
 description: In dieser Übung lernst du Scalable Vector Graphics (SVG) kennen.
 ---

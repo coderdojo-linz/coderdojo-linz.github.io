@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<section id="exercises" class="exercises">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                {{ partial "breadcrumb.html" . }}
+                <h1>{{ .Title }}</h1>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3">
+            {{ range (.Pages.ByParam "Title").ByParam "Level" }}
+            <div class="col mb-5">
+                <div class="card h-100" onclick="location.href='{{.Permalink}}'">
+                    <div class="card-header" style="padding: 0;">{{ if isset .Params "images" }}
+                        <img src="{{.RelPermalink}}{{(index .Params.images 0)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: cover; height: 200px;">{{ end }}
+                    </div>
+                    
+                    <div class="card-body">
+                        <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right;">
+                            Level {{ .Params.Level }}
+                        </span>
+                        <h5 class="card-title">{{.Title}}</h5>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6> -->
+                        <p class="card-text mt-4">{{.Description}}</p>
+                    </div>
+                    <div class="card-footer">
+                        {{ if gt (len .Pages) 1}}
+                        <a href="{{.Permalink}}" class="card-link">Zu den Übungsanleitungen</a>
+                        {{ else }}
+                        <a href="{{.Permalink}}" class="card-link">Zur Anleitung</a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

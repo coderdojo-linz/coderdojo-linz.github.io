@@ -1,8 +1,8 @@
 ---
-layout: sushi
-title: Scratch Fang-Mich
+
+title: Fang-Mich
 description: In diesem Spiel musst du versuchen, dem Haifisch zu entkommen.
-scratch-images:
+images:
 - endgame.png
 - 10-touch-fish.png
 level: 1
@@ -11,7 +11,7 @@ scratch-scripts: 8
 scratch-data: 0
 ---
 
-# Scratch Fang-Mich <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-fang-mich.html" class="change-scratch-version">Scratch 2.0</a>
+# Scratch Fang-Mich
 
 ![Endgame](endgame.png)
 
@@ -19,22 +19,22 @@ In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Scha
 
 ## Bühne und Figuren anlegen
 
-1. ![Bühnenbild auswählen](01-background.png){: .right}
-Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst das Aquarium, in dem die Fische schwimmen. Wähle als erstes rechts unten unter *Bühnenbild wählen* ein Bühnenbild aus, zum Beispiel ein Aquarium.
+1. Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst das Aquarium, in dem die Fische schwimmen. Wähle als erstes rechts unten unter *Bühnenbild wählen* ein Bühnenbild aus, zum Beispiel ein Aquarium.
+![Bühnenbild auswählen](01-background.png)
 
-2. ![Figur löschen](02-delete-scratchy.png){: .right}
-Als nächstes lösche die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der rechten Maustaste darauf klickst.
+2. Als nächstes lösche die Figur Scratchy mit dem Namen *Sprite 1* indem du mit der rechten Maustaste darauf klickst.
 Im angezeigten Menü kannst du Scratchy löschen.
+![Figur löschen](02-delete-scratchy.png)
 
-3. ![Figuren hinzufügen](03-fish.png){: .right}
-Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke dazu auf *Figur wählen* und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonfliegt oder eine Person, die dem Löwen davonläuft.
+3. Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch entkommen wollen. Klicke dazu auf *Figur wählen* und füge einen Fisch sowie einen Haifisch dazu. Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem Vogel davonfliegt oder eine Person, die dem Löwen davonläuft.
+![Figuren hinzufügen](03-fish.png)
 
-7. ![Figuren benennen](07-rename.png){: .right}
-Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Hai* und *Fisch*. Du kannst den Namen von Figuren ändern, indem du unter der weißen Leinwand rechts neben dem Wort Figur auf das Namensfeld klickst und den neuen Namen eingibst.
+7. Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Hai* und *Fisch*. Du kannst den Namen von Figuren ändern, indem du unter der weißen Leinwand rechts neben dem Wort Figur auf das Namensfeld klickst und den neuen Namen eingibst.
+![Figuren benennen](07-rename.png)
 
 ## Fisch bewegen
 
-1. ![Fisch bewegen](08-move-fish.png){: .right}
+1. ![Fisch bewegen](08-move-fish.png)
 Damit du den Fisch bewegen kannst, musst er nach links und rechts sowie oben und unten bewegt werden können.
 
   * Wähle zuerst den Fisch aus, damit er blau umrandet ist.

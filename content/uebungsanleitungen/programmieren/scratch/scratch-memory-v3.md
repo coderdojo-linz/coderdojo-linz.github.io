@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Memory
 description: Drehe zwei Karten um und finde zusammenpassende Paare.
 scratch-images:

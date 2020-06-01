@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: C# Kennenlernen
 description: Lerne C# kennen, indem du damit eine Ameise in einem Spiel steuerst 
 ---

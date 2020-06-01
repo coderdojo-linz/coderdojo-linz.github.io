@@ -208,7 +208,26 @@ footer p a:hover {
     text-decoration: none;
 }
 
+@media print {
+    footer {
+        display: none;
+    }
+}
+
 /* breadcrumb */
+.breadcrumb-nav {
+    position: fixed;
+    top: 30px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    z-index: 100;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 ol.breadcrumb {
     background-color: transparent;
     padding: 0;
@@ -218,6 +237,12 @@ ol.breadcrumb {
 
 nav.breadcrumb-nav+h1 {
     margin-block-start: 0rem;
+}
+
+@media print {
+    .breadcrumb-nav {
+        display: none;
+    }
 }
 
 /* hero area */
@@ -436,7 +461,7 @@ section.mentors {
     // }
 }
 
-/* Sushis */
+/* Sushi Overview */
 .card {
     box-shadow: 0 1px 10px 5px rgba(#000, 0.1);
     border: none;
@@ -460,8 +485,22 @@ section.mentors {
     }
 }
 
+/* Sushis */
 iframe[src*="jsfiddle"] {
     border: 1px solid #000 !important;
     height: 400px;
     resize: both;
+}
+
+.sushi-content {
+    img {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+
+    ul,
+    ol {
+        padding-left: 1em;
+    }
 }

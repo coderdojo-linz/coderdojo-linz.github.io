@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Wechselblinker löten
 description: Baue eine Schaltung, die zwei LEDs abwechselnd blinken lässt
 ---

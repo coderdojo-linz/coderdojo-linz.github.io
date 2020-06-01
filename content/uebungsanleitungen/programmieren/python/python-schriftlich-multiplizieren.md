@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Schriftlich Multiplizieren mit Python
 description: Formattierte Textausgabe mit Python
 author: Stöcher Wolfgang, Steyr

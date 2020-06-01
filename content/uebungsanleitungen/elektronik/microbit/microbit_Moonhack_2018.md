@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: micro:bit Moonhack 2018
 description: In diesem Spiel landest du auf dem Mond
 ---

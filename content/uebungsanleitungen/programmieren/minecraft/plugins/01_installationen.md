@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Installationen
 description: In dieser Übung wirst du die zum Minecraft-Plugin-Programmieren und -Testen nötige Software installieren.
 ---

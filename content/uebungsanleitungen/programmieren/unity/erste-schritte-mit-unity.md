@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Erste Schritte mit Unity
 description: In dieser Übung lernst du Unity kennen.
 ---

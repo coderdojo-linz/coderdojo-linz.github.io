@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Erste Schritte mit Redstone
 description: In dieser Übung lernst du Redstone in Minecraft kennen
 ---

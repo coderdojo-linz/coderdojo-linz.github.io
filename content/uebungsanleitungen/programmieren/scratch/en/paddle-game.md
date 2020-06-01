@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Paddle Game
 description: In this exercise you build a little game where you try to prevent a ball from falling down with a paddle you can move from left to right.
 ---

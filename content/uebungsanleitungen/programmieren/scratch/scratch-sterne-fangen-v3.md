@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Sterne fangen
 description: Springe hoch, um die herumfliegenden Sterne zu fangen.
 scratch-images:

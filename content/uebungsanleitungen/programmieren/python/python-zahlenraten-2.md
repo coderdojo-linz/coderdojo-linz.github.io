@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Zahlen raten mit Python - Teil 2
 description: Jetzt wollen wir die Rollen tauschen und den Computer eine vom Menschen gedachte Zahl erraten lassen.
 author: Stöcher Wolfgang, Steyr

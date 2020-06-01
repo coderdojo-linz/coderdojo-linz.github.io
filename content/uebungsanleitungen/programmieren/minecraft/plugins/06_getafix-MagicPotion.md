@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Getafix Magic Potion
 description: In dieser Episode wirst du noch mehr über Events lernen und außerdem lernen, wie du eine Reihe von Dingen abspeicherst
 ---

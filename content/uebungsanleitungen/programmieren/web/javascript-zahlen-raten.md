@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: JavaScript Zahlen raten
 description: In dieser Übung programmierst du ein einfaches "Zahlen raten" Spiel und siehst, wie man mit JavaScript Ein- und Ausgaben machen kann.
 ---

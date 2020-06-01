@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Breakout
 description: In diesem Spiel pulverisierst du bunte Mauersteine
 scratch-images:

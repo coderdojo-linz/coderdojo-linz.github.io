@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: SVG Schreibtrainer
 description: In dieser Übung baust du ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.
 ---

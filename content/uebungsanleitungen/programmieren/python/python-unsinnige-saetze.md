@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Python baut unsinnige Sätze
 description: In dieser Übunge erstellen wir ein kleines Python-Programm, das unsinnige Sätze zusammenbaut.
 ---

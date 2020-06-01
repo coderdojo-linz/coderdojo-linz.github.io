@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Welcome Listener
 description: In dieser Episode wirst du erste Listener programmieren 
 ---

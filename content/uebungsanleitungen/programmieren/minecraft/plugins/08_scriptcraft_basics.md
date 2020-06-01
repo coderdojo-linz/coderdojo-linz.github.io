@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Grundlagen von Minecraft Mods mit JavaScript
 description: In dieser Anleitung lernst du erste Grundlagen, wie man Minecraft Mods mit JavaScript entwickelt. 
 ---

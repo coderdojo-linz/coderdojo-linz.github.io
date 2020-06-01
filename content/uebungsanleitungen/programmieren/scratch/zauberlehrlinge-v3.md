@@ -1,10 +1,10 @@
 ---
-layout: sushi
+
 title: Die Zauberlehrlinge
 description: Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen.
-scratch-images:
-- scratch-zauberlehrlinge-v3/endgame.png
-- scratch-zauberlehrlinge-v3/code-boy-1.png
+images:
+- endgame.png
+- code-boy-1.png
 level: 2
 scratch-sprites: 4
 scratch-scripts: 13
@@ -15,7 +15,7 @@ scratch-data: 3
 
 Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen. Ihr seid dabei immer abwechselnd an der Reihe einen Zauberspruch zu verschießen. Doch es ist gar nicht so leicht, den anderen zu treffen, man muss genau in die richtige Richtung zielen!
 
-![Fertiges Spiel](scratch-zauberlehrlinge-v3/endgame.png){: .right}
+![Fertiges Spiel](endgame.png){: .right}
 
 Damit es nicht langweilig wird, wollen wir die Landschaft im Hintergrund jedes mal ein bisschen anders zeichnen. Damit fangen wir an.
 
@@ -30,7 +30,7 @@ Hier noch ein paar Hinweise:
 
 So in etwa sollte die Landschaft aussehen, wenn du fertig bist:
 
-![Die Landschaft](scratch-zauberlehrlinge-v3/landschaft.png){: .right}
+![Die Landschaft](landschaft.png){: .right}
 
 Damit wir die Figuren an den richtigen Positionen zeichnen können, müssen wir uns merken, welche Höhe (y-Position) die Landschaft am linken und rechten Bildrand hat.
 
@@ -43,7 +43,7 @@ Zwei Dinge brauchen wir noch, wenn die Landschaft fertig gezeichnet ist: Wir mü
 
 Hier siehst du eine Möglichkeit, wie man das Skript bauen kann. Hast du es anders gelöst? Super! Beim Programmieren gibt es immer viele verschiedene Wege, um zum Ziel zu kommen.
 
-![Der Code zum der Landschaft](scratch-zauberlehrlinge-v3/code-landschaft-1.png){: .right}
+![Der Code zum der Landschaft](code-landschaft-1.png){: .right}
   
 ## Der Zauberlehrling Tim
   
@@ -52,7 +52,7 @@ Als nächstes erstellen wir die zwei Zauberlehrlinge. Beginne zunächst mit eine
 * Die Figur braucht zwei Kostüme, einmal das normale und ein zweites als Frosch (wenn die Figur getroffen wird).
 * Die Bilder sind etwas zu groß, verkleinere sie (oder zeichne gleich deine eigenen).
 
-![Das Kostüm](scratch-zauberlehrlinge-v3/boy.png){: .right}
+![Das Kostüm](boy.png){: .right}
 
 Jetzt brauchen wir noch den Code für die Figur:
 
@@ -71,7 +71,7 @@ Wenn du Hilfe brauchst, findest du am Ende der Anleitung die Skripte, aber wie g
 ## Der Zauberlehrling Melley
 
 Für Melley brauchen wir eigentlich genau das gleiche wie für Tim. Erstelle eine neue Figur mit zwei Kostümen. Einen kleinen Unterschied gibt es aber: Melley soll in die andere Richtung sehen. Damit das nachher richtig funktioniert, müssen wir ihr Kostüm auf dem Kopf stehen lassen! Danach klicke rechts oben auf das Symbol *Horizontal spiegeln*.
-![Das Kostüm](scratch-zauberlehrlinge-v3/girl.png){: .right}
+![Das Kostüm](girl.png){: .right}
 
 Vergiss auch nicht, den Frosch ebenfalls auf dem Kopf stehen zu lassen.
 
@@ -86,7 +86,7 @@ Auch die Skripte von Melley findest du am Ende der Anleitung nochmal, falls du H
 
 So sollte dein Spiel jetzt aussehen, wenn du auf die grüne Fahne klickst. Mit den Pfeiltasten solltest sich die Figur, die gerade dran ist, drehen lassen.
 
-![Die Figuren werden richtig platziert](scratch-zauberlehrlinge-v3/buehne-fertig.png){: .right}
+![Die Figuren werden richtig platziert](buehne-fertig.png){: .right}
 
 ## Das Zaubern
 
@@ -94,7 +94,7 @@ Ein wichtiger Teil fehlt uns jetzt noch für das Spiel: Das Zaubern!
 
 Dafür brauchen wir noch eine weitere Figur: den Blitz, der den Zauberspruch darstellt. Drehe das Kostüm so, dass der Blitz nach rechts zeigt und passe die Größe an.
 
-![Der Blitz](scratch-zauberlehrlinge-v3/blitz.png){: .right}
+![Der Blitz](blitz.png){: .right}
 
 Erstelle zwei Codeblöcke für den Blitz. Das erste ist ganz einfach: Wenn die grüne Fahne angeklickt wird, soll der Blitz sich verstecken.
 Das zweite Skript soll dafür sorgen, dass der Spieler, der gerade dran ist, einen Blitz abschießt, wenn die Leertaste gedrückt wird.
@@ -134,23 +134,23 @@ Hier kannst du nachsehen, wenn du bei einem Skript nicht weiterkommst oder deine
 
 ### Tim
 
-![Der Code für Tim](scratch-zauberlehrlinge-v3/code-boy-1.png){: .right}
+![Der Code für Tim](code-boy-1.png){: .right}
 
 ### Melley
 
-![Der Code für Melley](scratch-zauberlehrlinge-v3/code-girl-1.png){: .right}
+![Der Code für Melley](code-girl-1.png){: .right}
 
 ### Blitz
 
-![Der Code für den Blitz](scratch-zauberlehrlinge-v3/code-blitz.png){: .right}
+![Der Code für den Blitz](code-blitz.png){: .right}
 
 ### Tim wurde getroffen
 
-![Der Code, wenn getroffen wurde](scratch-zauberlehrlinge-v3/code-boy-2.png){: .right}
+![Der Code, wenn getroffen wurde](code-boy-2.png){: .right}
 
 ### Melley wurde getroffen
 
-![Der Code, wenn getroffen wurde](scratch-zauberlehrlinge-v3/code-girl-2.png){: .right}
+![Der Code, wenn getroffen wurde](code-girl-2.png){: .right}
 
 ## Weitere Ideen
 
@@ -162,4 +162,4 @@ Hier kannst du nachsehen, wenn du bei einem Skript nicht weiterkommst oder deine
 
 ## Herunterladen
 
-Du kannst das fertige Projekt unter [zauberlehrlinge.sb3](scratch-zauberlehrlinge-v3/die-zauberlehrlinge.sb3) herunterladen.
+Du kannst das fertige Projekt unter [zauberlehrlinge.sb3](die-zauberlehrlinge.sb3) herunterladen.

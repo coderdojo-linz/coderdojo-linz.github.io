@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Geisterspiel in C# 
 description: Einfache Console-Anwendung in C# 
 ---

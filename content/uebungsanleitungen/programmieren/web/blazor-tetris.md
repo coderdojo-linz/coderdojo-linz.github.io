@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Tetris mit Blazor
 description: In dieser Übung programmierst du Tetris mit CSharp und Blazor
 ---

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: NetBeans Projektsetup
 description: Eine Kurzanleitung für das Anlegen eines neuen NetBeans Projekts
 ---

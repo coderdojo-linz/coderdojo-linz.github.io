@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Hangman
 description: In dieser Übung programmierst du das Spiel Hangman.
 ---

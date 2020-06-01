@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Geisterspiel mit Python
 description: In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python.
 ---

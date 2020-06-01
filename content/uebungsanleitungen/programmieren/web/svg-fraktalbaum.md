@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Fraktal Baum mit snap.svg
 description: In dieser Übung malst du einen Baum mit SVG.
 ---

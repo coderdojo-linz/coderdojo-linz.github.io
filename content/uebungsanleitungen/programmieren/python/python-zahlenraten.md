@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Zahlen raten mit Python
 description: Wollen wir ein Programm für das Spiel "Zahlen raten" schreiben?
 author: Stöcher Wolfgang, Steyr

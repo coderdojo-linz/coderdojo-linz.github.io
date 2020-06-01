@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Erste Schritte mit CSS
 description: In dieser Übung lernst du Cascading Style Sheets (CSS) kennen.
 ---

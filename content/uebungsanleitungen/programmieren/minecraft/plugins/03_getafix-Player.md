@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Getafix Player
 description: In dieser Episode wirst du dich selbst heilen lernen
 ---

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Erste Schritte mit Hugo
 description: In dieser Übung lernst du, wie du mit Hugo eine statische Webseite erstellen kannst
 ---

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Chat mit Node.js und Socket.io
 description: In dieser Übung programmieren wir einen Chat mit Node.js und Socket.io
 ---

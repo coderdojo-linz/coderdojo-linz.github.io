@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: HTML Meine erste Webseite
 description: In dieser Übung erstellst Du deine erste Webseite.
 ---

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Chess
 description: In diesem Beispiel wollen wir ein Schachspiel bauen, und dabei vor allem die beiden wichtigsten Funktionen - das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.
 scratch-images:

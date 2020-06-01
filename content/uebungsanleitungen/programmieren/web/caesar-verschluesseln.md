@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Verschlüsseln mit JavaScript
 description: In dieser Übung programmierst du deine eigene Verschlüsselung 
 ---

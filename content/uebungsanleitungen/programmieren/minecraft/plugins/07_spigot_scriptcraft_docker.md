@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Minecraft Server für ScriptCraft
 description: In dieser Anleitung lernst du, wie du einen Minecraft Server für ScriptCraft aufsetzt. 
 ---

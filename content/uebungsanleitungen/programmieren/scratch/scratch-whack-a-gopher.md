@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Whack a Gopher
 description: Ein Spiel basierend auf der Idee von "Whack a mole"
 scratch-images:

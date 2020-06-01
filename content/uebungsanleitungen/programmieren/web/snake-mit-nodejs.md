@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Snake mit Node.js
 description: In dieser Übung programmierst du das Spiel Snake mit Node.js
 ---

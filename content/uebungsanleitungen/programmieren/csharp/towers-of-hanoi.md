@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Türme von Hanoi
 description: Knoble eine Lösung für das Problem der Türme von Hanoi aus
 ---

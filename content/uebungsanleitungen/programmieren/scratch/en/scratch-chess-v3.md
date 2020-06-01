@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Chess
 description: In this example, we want to build a chess engine, and above all, the two most important functions - the calculation and application of different move combinations, and the evaluation of resulting boards.
 scratch-images:

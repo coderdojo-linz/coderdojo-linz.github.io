@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: JavaScript Number guessing
 description: In this exercise you'll code a simple *Number Guessing* game and learn, how to handle inputs and outputs with JavaScript.
 ---

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Präsentationen mit HTML statt PowerPoint
 description: In dieser Übung lernst du Reveal.js für Präsentationen kennen 
 ---

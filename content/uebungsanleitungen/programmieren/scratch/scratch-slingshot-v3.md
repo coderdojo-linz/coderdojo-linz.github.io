@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Affe füttern
 description: Wirf dem Affen mit der Steinschleuder Bananen zu
 scratch-images:

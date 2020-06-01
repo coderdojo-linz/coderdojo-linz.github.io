@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Dein erstes Plugin
 description: In dieser Übung wirst du dein erstes Minecraft-Plugin erstellen, das dich auf Kommando begrüßt
 ---

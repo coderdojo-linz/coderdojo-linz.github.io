@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Installation eines Minecraft Servers
 description: In dieser Übung lernst du, einen Minecraft Server auf Linux zu installieren
 ---

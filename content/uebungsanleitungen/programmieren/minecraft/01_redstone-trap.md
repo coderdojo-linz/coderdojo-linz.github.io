@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Die Redstone-Falle
 description: Eine hinterhältige Falle für Zombies oder Mitspieler
 excerpt_separator: "<!--more-->"

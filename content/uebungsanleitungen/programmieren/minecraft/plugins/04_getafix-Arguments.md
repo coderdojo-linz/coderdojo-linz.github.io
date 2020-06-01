@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Getafix Arguments
 description: In dieser Episode wirst du andere heilen lernen
 ---

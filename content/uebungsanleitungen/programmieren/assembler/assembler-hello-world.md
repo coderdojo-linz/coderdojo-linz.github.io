@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Back to Basics - Assembler Hello World
 description: Lerne, wie ein Computer auf unterster Ebene funktioniert
 ---

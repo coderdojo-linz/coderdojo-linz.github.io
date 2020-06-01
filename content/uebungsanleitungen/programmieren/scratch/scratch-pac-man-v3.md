@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Pac Man
 description: Friss dich durch's Labyrinth.
 level: 3

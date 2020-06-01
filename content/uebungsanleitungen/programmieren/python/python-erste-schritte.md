@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Erste Schritte mit Python
 description: Diese Übung gibt eine erste Einführung in das Programmieren mit Python.
 ---

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Deine erste Webseite veröffentlichen
 description: In dieser Übung veröffentlichst du deine erste Webseite im Internet 
 ---

@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Node.js Webserver
 description: In dieser Übung lernst du, wie du mit Node.js einen einfachen Webserver programmierst.
 ---

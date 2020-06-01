@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Scratch Catch Me
 description: In this game you try to escape the shark.
 ---

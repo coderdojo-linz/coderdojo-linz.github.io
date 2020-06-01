@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Space Shooter
 description: Entwickle einen Retro Space-Shooter in C
 ---

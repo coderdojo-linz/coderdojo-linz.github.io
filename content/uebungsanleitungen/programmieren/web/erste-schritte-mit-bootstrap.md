@@ -1,5 +1,5 @@
 ---
-layout: sushi
+
 title: Erste Schritte mit Bootstrap
 description: In dieser Übung lernst du, wie du mit Bootstrap Webseiten stylen kannst.
 ---
