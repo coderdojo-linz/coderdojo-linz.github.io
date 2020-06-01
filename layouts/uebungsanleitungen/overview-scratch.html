@@ -1,19 +1,19 @@
 {{ define "main" }}
 
 <section id="exercises" class="exercises">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col">
                 {{ partial "breadcrumb.html" . }}
                 <h1>{{ .Title }}</h1>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
             {{ range (.Pages.ByParam "Title").ByParam "Level" }}
             <div class="col mb-5">
                 <div class="card h-100" onclick="location.href='{{.Permalink}}'">
                     <div class="card-header" style="padding: 0;">{{ if isset .Params "images" }}
-                        <img src="{{.RelPermalink}}{{(index .Params.images 0)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: contain; height: 200px; padding: 10px;">{{ end }}
+                        <img src="{{.RelPermalink}}{{(index .Params.images 0)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: cover; height: 200px;">{{ end }}
                     </div>
                     
                     <div class="card-body">
