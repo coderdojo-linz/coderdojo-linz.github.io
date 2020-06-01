@@ -1,5 +1,4 @@
 ---
-layout:
 title: Arno Hütter
 description: 
 image: arno-huetter.jpg

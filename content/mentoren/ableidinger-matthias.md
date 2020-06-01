@@ -1,5 +1,4 @@
 ---
-layout:
 title: Matthias Ableidinger
 description: 
 image: matthias-ableidinger.jpg

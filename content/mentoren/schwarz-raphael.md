@@ -1,5 +1,4 @@
 ---
-layout:
 title: Raphael Schwarz
 description: 
 image: raphael-schwarz.png

@@ -1,5 +1,4 @@
 ---
-layout:
 title: Elisabeth Rosemann
 description: 
 image: elisabeth-rosemann.jpg

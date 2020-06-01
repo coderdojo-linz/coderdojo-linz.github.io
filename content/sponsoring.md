@@ -1,6 +1,5 @@
 ---
 title: Sponsoring
-layout: single
 ---
 
 # Sponsoring

@@ -1,5 +1,4 @@
 ---
-layout:
 title: Peter Bauer
 description: 
 image: peter-bauer.jpg

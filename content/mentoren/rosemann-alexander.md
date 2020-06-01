@@ -1,5 +1,4 @@
 ---
-layout:
 title: Alexander Rosemann
 description: 
 image: alexander-rosemann.jpg

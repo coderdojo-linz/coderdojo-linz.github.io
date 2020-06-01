@@ -1,5 +1,5 @@
 ---
 title: "Übungsanleitungen"
-layout: top
+layout: "top"
 ---
 

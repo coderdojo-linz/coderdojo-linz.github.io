@@ -1,7 +1,6 @@
 ---
 title: "Mentoren"
 type: mentoren
-layout: list
 ---
 
 ## Möchtest du Mentor werden?

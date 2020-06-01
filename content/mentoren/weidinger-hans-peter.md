@@ -1,5 +1,4 @@
 ---
-layout:
 title: Hans-Peter Weidinger
 description: 
 image: hans-peter-weidinger.png

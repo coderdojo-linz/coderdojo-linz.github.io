@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Für Eltern
 description: Häufige Fragen von Eltern zum CoderDojo
 ---

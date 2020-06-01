@@ -1,5 +1,4 @@
 ---
-layout:
 title: Pia Gerhofer
 description: 
 image: pia-gerhofer.jpg

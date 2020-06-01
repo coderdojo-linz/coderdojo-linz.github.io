@@ -1,7 +1,6 @@
 ---
 title: "Termine"
 type: termine
-layout: list
 ---
 
 # Termine

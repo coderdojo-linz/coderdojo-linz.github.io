@@ -1,11 +1,12 @@
 ---
-layout: sushi
-title: Hour of Code
-description: Lerne Programmieren mit Hour of Code
-level: 1
+title: "Hour of Code"
+date: 2020-06-01T05:28:34+02:00
+draft: false
 ---
 
 # Programmieren lernen mit *Hour of Code*
+
+[https://hourofcode.com/de/learn](https://hourofcode.com/de/learn)
 
 ## Anfänger: Programmieren mit Blöcken
 

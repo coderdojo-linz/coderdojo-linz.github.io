@@ -20,9 +20,11 @@
                         <h5 class="card-title">{{.Title}}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6>
 
-                        <p class="card-text">{{.Content}}</p>
+                        <p class="card-text mt-4">{{.Content}}</p>
                     </div>
-                    <div class="card-footer"><a href="{{.Permalink}}" class="card-link">Zu den Übungsanleitungen</a></div>
+                    <div class="card-footer">
+                        <a href="{{.Permalink}}" class="card-link">Zu den Übungsanleitungen</a>
+                    </div>
                 </div>
             </div>
             {{ end }}

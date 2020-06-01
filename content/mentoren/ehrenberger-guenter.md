@@ -1,5 +1,4 @@
 ---
-layout:
 title: Günther Ehrenberger
 description: 
 image: guenther-ehrenberger.jpg
