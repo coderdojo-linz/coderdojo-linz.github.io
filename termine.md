@@ -19,8 +19,8 @@ Es gibt drei verschiedene Veranstaltungen:
 - <span class="type-classroom">Classroom</span>: CoderDojo Classroom besteht aus mehreren Terminen, die aufeinander aufbauen. Wenn du dich zum CoderDojo Classroom anmeldest, solltest du dann bei allen Terminen dabei sein.
 
 <div class="corona-info">
-<h3>COVID-19 Info</h3>
-Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres online statt. Bitte installiere dir zum Teilnehmen den <a href="https://zoom.us/download" target="_blank">Zoom Client</a>. Es gibt ihn kostenlos für alle erdenklichen Plattformen. Danach klicke zum Teilnehmen einfach auf den Teilnahmelink des jeweiligen Workshops.</div>
+<h3>Online CoderDojos</h3>
+Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres online statt. Eine Anleitung, wie du an den Onlinemeetings teilnimmst, findest du unter <a href="online-coderdojo-tipps.html"><em>Tipps für Online CoderDojos</em></a>.</div>
 
 <table class="table" id="eventsTable">
 	<thead>
