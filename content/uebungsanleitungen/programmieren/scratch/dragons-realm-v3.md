@@ -1,10 +1,10 @@
 ---
 
-title: Scratch Dragons Realm
+title: Dragons Realm
 description: Verteidige als Drache dein Territorium gegen die Eindringlinge.
-scratch-images:
-- scratch-dragons-realm-v3/endgame.png
-- scratch-dragons-realm-v3/code-drache-1.png
+images:
+- endgame.png
+- code-drache-1.png
 level: 3
 scratch-sprites: 6
 scratch-scripts: 19
@@ -13,7 +13,7 @@ scratch-data: 11
 
 # Dragons Realm <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-dragons-realm.html" class="change-scratch-version">Scratch 2.0</a>
 
-![Dragons](scratch-dragons-realm-v3/dragons.png)
+![Dragons](dragons.png)
 
 Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindringende Raubritter verteidigt.
 Mit den Pfeiltasten lenkst du den Drachen um den Pfeilen der Ritter auszuweichen (du kannst auch zwei Tasten gleichzeitig drücken; mit ↑ und → fliegt man zum Beispiel nach rechts oben). Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen.
@@ -23,31 +23,31 @@ Dragons Realm beinhaltet viele Grafiken. Du kannst die vorgefertigten Figuren mi
 
 ## Downloads
 
-[Background.sprite3](scratch-dragons-realm-v3/Background.sprite3)
+[Background.sprite3](Background.sprite3)
 
-[Dragon.sprite3](scratch-dragons-realm-v3/Dragon.sprite3)
+[Dragon.sprite3](Dragon.sprite3)
 
-[Fireball.sprite3](scratch-dragons-realm-v3/Fireball.sprite3)
+[Fireball.sprite3](Fireball.sprite3)
 
-[Tiles.sprite3](scratch-dragons-realm-v3/Tiles.sprite3)
+[Tiles.sprite3](Tiles.sprite3)
 
-[Knight.sprite3](scratch-dragons-realm-v3/Knight.sprite3)
+[Knight.sprite3](Knight.sprite3)
 
-[Spear.sprite3](scratch-dragons-realm-v3/Spear.sprite3)
+[Spear.sprite3](Spear.sprite3)
 
-[Medieval.wav](scratch-dragons-realm-v3/Medieval.wav)
+[Medieval.wav](Medieval.wav)
 
 ## Die Figuren
 
 Nun können wir die Figuren in dein neues Projekt importieren. Lege dazu ein Scratch Projekt an. Bewege dann die Maus im Figuren-Panel über das "Figur wählen" Symbol. Klicke dort "Figur hochladen", und wähle "Dragon.sprite3" aus dem lokalen Dateisystemen aus. Wiederhole diesen Schritt für alle weiteren Figuren.
 
-![SpriteUpload](scratch-dragons-realm-v3/sprite-upload.png)
+![SpriteUpload](sprite-upload.png)
 
 ## Die Bühne
 
 Die Bühne benötigen wir für den Startbildschirm und die Game-Over Anzeige, um die gesammelten Punkte und die verbleibenden Drachenleben darzustellen, und um die Hintergrundmusik abzuspielen. Klicke im Panel "Bühne" auf "Wähle ein Bühnenbild" / "Malen" oder "Bühnenbild hochladen", und erstelle zwei Bühnenbilder - eines namens "StartScreen", und eines namens "GameOver". 
 
-![StageCreate](scratch-dragons-realm-v3/stage-create.png)
+![StageCreate](stage-create.png)
 
 Lade außerdem unter "Klänge" die Hintergrundmusik "Medieval.wav" hoch. Klicke dazu auf *Klänge* / *Klang wählen* / *Klang hochladen*.
 
@@ -94,7 +94,7 @@ Bitte achte genau darauf, dass du die richtige Auswahl zwischen *Für alle Figur
 
 Die Bühne sollte danach folgende Variable beinhalten (das sind jene die "Für alle Figuren" definiert wurden). Du kannst diese Variablen auch direkt in der Bühne anlegen:
 
-![StageVars](scratch-dragons-realm-v3/stage-vars.png)
+![StageVars](stage-vars.png)
 
 ## Code der Figur Dragon
 
@@ -103,11 +103,11 @@ Gleichzeitig müssen wir dafür sorgen, dass der Drache immer die Flügel bewegt
 Im *StartAnimation* Nachrichten-Codeblock werden laufend Kostüme ausgetauscht, um für die Flügelbewegung zu sorgen.
 Im Skript *StartControl* ist die Tastatur- und Maus-Steuerung des Drachen implementiert.
 
-![DragonCode1](scratch-dragons-realm-v3/dragon-code1.png)
+![DragonCode1](dragon-code1.png)
 
-![DragonCode2](scratch-dragons-realm-v3/dragon-code2.png)
+![DragonCode2](dragon-code2.png)
 
-![DragonCode3](scratch-dragons-realm-v3/dragon-code3.png)
+![DragonCode3](dragon-code3.png)
 
 Der Drache sollte sich jetzt eigentlich schon steuern lassen und mit den Flügeln flattern. Probiere es einmal aus!
   
@@ -116,7 +116,7 @@ Der Drache sollte sich jetzt eigentlich schon steuern lassen und mit den Flügel
 Die Figur *Background* enthält das Gras, über das der Drache fliegt.
 Dennoch ist das kein Bühnenbild, denn wir wollen, dass sich die Landschaft bewegt. Wir zeichnen daher die das Kostüm "Grass" mehrmals um ein paar Pixel versetzt, um einen Scrolling-Effekt zu erzielen und den gesamten Bildschirm damit auszufüllen.
 
-![BackgroundCode](scratch-dragons-realm-v3/background-code.png)
+![BackgroundCode](background-code.png)
 
 ## Code der Figur Fireball
 
@@ -124,7 +124,7 @@ Der Feuerball wird abgeschossen, wenn er die Nachricht *Shoot* erhält.
 Da wir immer wieder Feuerbälle brauchen, wird er als Klon angelegt. Damit könnte man dann auch mit etwas anderem Code mehrere Feuerbälle gleichzeitig abfeuern.
 Im Hauptskript wird das passende Kostüm gewählt, danach bewegt sich der Feuerball rasch in der Richtung, in die der Drache zu dem Zeitpunkt blickt.
 
-![FireballCode](scratch-dragons-realm-v3/fireball-code.png)
+![FireballCode](fireball-code.png)
 
 ## Code der Figur Tiles
 
@@ -133,11 +133,11 @@ Dabei ist die Reihenfolge der Klone wichtig, damit weiter vorne liegende Objekt 
 
 Ähnlich wie das Gras müssen auch Bäume und Felsen unter dem Drachen durchscrollen.
 
-![TilesCode](scratch-dragons-realm-v3/tiles-code.png)
+![TilesCode](tiles-code.png)
 
 ## Code der Figur Spear
 
-![TilesCode](scratch-dragons-realm-v3/spear-code.png)
+![TilesCode](spear-code.png)
 
 ## Code der Figur Knight
 
@@ -147,11 +147,11 @@ Das fragen wir mittels einer *wird Tiles berührt* Kondition ab. Danach wandert 
 
 Berührt der Ritter den Feuerball, so erstarrt er (die Variable *Frozen* wird auf 1 gesetzt, und er wird zu Stein und bewegt sich nicht mehr).
 
-![KnightCode](scratch-dragons-realm-v3/knight-code1.png)
+![KnightCode](knight-code1.png)
 
-![KnightCode](scratch-dragons-realm-v3/knight-code2.png)
+![KnightCode](knight-code2.png)
 
-![KnightCode](scratch-dragons-realm-v3/knight-code3.png)
+![KnightCode](knight-code3.png)
 
 ## Probier es aus!
 

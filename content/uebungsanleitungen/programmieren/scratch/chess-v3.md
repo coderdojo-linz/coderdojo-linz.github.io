@@ -1,9 +1,9 @@
 ---
 
-title: Scratch Chess
+title: Chess
 description: In diesem Beispiel wollen wir ein Schachspiel bauen, und dabei vor allem die beiden wichtigsten Funktionen - das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.
-scratch-images:
-- scratch-chess-v3/chess-game.png
+images:
+- chess-game.png
 level: 3
 scratch-sprites: 4
 scratch-scripts: 35
@@ -13,7 +13,7 @@ scratch-data: 70
 # Scratch Chess
 
 <div class="row sushi-intro">
-	<div class="col-sm-6"><img alt="Chess" src="scratch-chess/chess-game.png" /></div>
+	<div class="col-sm-6"><img alt="Chess" src="chess-game.png" /></div>
 	<div class="col-sm-6">
 		<p></p>
 		<p>In diesem Beispiel wollen wir ein Schachspiel bauen, und dabei vor allem die beiden wichtigsten Funktionen - das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.</p>
@@ -45,7 +45,7 @@ Melde dich bei Scratch mit deinem Benutzer an. Wenn du noch keinen Scratch-Benut
 
 Diese beiden zu Beginn noch leeren Funktionsblöcke möchten wir implementieren. Du findest sie links oben im Skript der Figur „Board“:
 
-<p><img src="scratch-chess-v3/chess-blocks.png" class="max-full" /></p>
+<p><img src="chess-blocks.png" class="max-full" /></p>
 
 Unser Programm wird mit den schwarzen Figuren spielen, der Benutzer hat Weiß.
 
@@ -62,7 +62,7 @@ Der zweite Aspekt ist die Position der Figuren. Eine Dame in der Mitte des Felds
 Um die Position der Figuren automatisch bewerten zu können, gibt es vorgefertigte Listen namens „KingPieceSquare“, „QueenPieceSquare“, usw. Die Listen haben ebenfalls 64 Elemente. Weil unser Programm die schwarzen Figuren hat, müssen die Werte der weißen Figuren mit einem Minus versehen werden. Für die schwarzen Figuren hingegen müssen wir die Position am Feld spiegeln, weil sie ja auf der anderen Seite stehen. Das geht einfach indem man Position „65 - Idx“ verwendet.
 Der gesamte Funktionsblock sieht dann so aus:
 
-<p><img src="scratch-chess-v3/chess-eval-code.png" class="max-full" /></p>
+<p><img src="chess-eval-code.png" class="max-full" /></p>
 
 ## Zugauswahl - AlphaBetaMinMaxImpl
 
@@ -72,7 +72,7 @@ Bei der Berechnung der Zwischenzüge des Gegners können wir davon ausgehen, das
 
 Die Geschwindigkeit von Scratch erlaubt es uns nur wenige Züge in die Zukunft zu sehen. Danach wird das resultierende Brett bewertet, und mit bisherigen Bewertungen verglichen. Daraus entsteht ein Entscheidungsbaum wie unten, wobei die Knoten die Bretter mit Bewertung darstellen, und die Pfeile die jeweiligen Züge dazwischen. Die beste garantiert erreichbare Bewertung in diesem Beispiel ist 5. Auch wenn ein Brett mit der Bewertung 10 möglich ist, kann der Gegner dies durch einen geschickten Gegenzug verhindern, was dann in einer schlechteren Bewertung (nämlich 2) resultiert. Wir wählen daher den Zug, der eine Bewertung von 5 sicherstellt, egal welchen Zug der Gegner wählt.
 
-<p><img src="scratch-chess-v3/chess-minimax.png" class="max-full" /></p>
+<p><img src="chess-minimax.png" class="max-full" /></p>
 
 In diesem Entscheidungsbaum-Beispiel gibt es jeweils nur wenige Zugmöglichkeiten, bei Schach sind dies deutlich mehr. Bei vier aufeinanderfolgenden Zügen und 30 Zugmöglichkeiten ergeben sich 30 hoch 4 mögliche Bretter, also 810.000. Für jedes Brett ist dann eine Bewertung nötig, bei 64-fachem Schleifendurchlauf sind das 51.840.000 Feldprüfungen. Das ist in Java oder C++ Programmen noch möglich (wenngleich nicht gut, besser wäre es die Rechenleistung für größere Zugtiefen zu verwenden; dort wird nicht eine Schleife 64-mal durchlaufen, sondern das ganze Brett steht in je einer 64bit-Zahl pro Figur), in Scratch geht das dann aber gar nicht mehr.
 
@@ -81,7 +81,7 @@ Wir können auch hier etwas unternehmen, nämlich das Gleiche was der Mensch int
 Wir programmieren das alles in einem Funktionsblock, der sich immer wieder selbst aufruft. Man nennt das eine rekursive Funktion. Wir führen einen Zug aus, und rufen die aktuelle Funktion nochmal auf, damit der darauffolgende Zug ausgeführt wird. Irgendwann müssen wir das natürlich beenden - und zwar dann, wenn wir eine Zugtiefe von MaxDepth erreicht haben (je nach Schwierigkeitsgrad sind das zwei, drei oder vier Züge). Dann wird das Brett bewertet. Unsere Zwischendaten (Min, Max, Alpha, Beta, Züge) werden alle in Listen gespeichert. Das ist in Scratch bei Rekursionen nötig, weil es keine lokalen Variablen gibt und Funktions-Parameter nicht verändert werden können. Figuren-Variablen reichen dafür nicht, da wir sonst die Variablenwerte in kaskadierten Aufrufen überschreiben würden. In diesen Listen gibt es für jede Zugtiefe einen Eintrag, also zum Beispiel für den gerade berechneten Zug. Eine Alternative wäre die Variablen von 1 bis N durchzunummerieren, und den ganzen Funktionsblock für jede Zugtiefe zu duplizieren. Aber das möchten wir eigentlich nicht.
 Die einfachste MiniMax/Alpha-Beta Implementierung ergibt sich daraus wie folgt: 
 
-<p><img src="scratch-chess-v3/chess-minimax-code.png" class="max-full" /></p>
+<p><img src="chess-minimax-code.png" class="max-full" /></p>
 
 Super, du bist fertig! Starte jetzt das Programm. Du bist am Zug, danach beginnt der Computer zu rechnen, und zwar genau mit den beiden Funktionsblöcken, die du gerade programmiert hast.
 

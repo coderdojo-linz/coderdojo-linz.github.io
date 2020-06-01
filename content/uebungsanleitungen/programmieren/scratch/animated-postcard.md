@@ -2,14 +2,14 @@
 
 title: Animierte Ansichtskarte
 description: Die gute alte Ansichtskarte mit Briefmarke war Gestern - heute bauen wir uns unsere eigene animierte Karte und verschicken sie an unsere Freunde.
-scratch-images:
-- scratch-animated-postcard/projekt_veröffentlichen_beschreibung.jpg
+images:
+- projekt_veroeffentlichen_beschreibung.jpg
 scratch-sprites: 2
 scratch-scripts: 5
 level: 3
 ---
 
-# Animierte Ansichtskarte <span class="badge badge-scratch3">Scratch 3.0</span>
+# Animierte Ansichtskarte
 
 Die gute alte Ansichtskarte mit Briefmarke war Gestern - heute bauen wir uns unsere eigene animierte Karte und verschicken sie an unsere Freunde. 
 
@@ -23,53 +23,53 @@ Damit du deinen Freunden die Ansichtskarte schicken kannst, musst du dich bei Sc
 
 1. Starte deinen Browser (z.B. Firefox) und öffne die Adresse [https://scratch.mit.edu]().
 2. Klicke auf den Knopf **Scratcher werden**.  
-![Scratcher werden](scratch-animated-postcard/scratcher_werden_1.jpg)
+![Scratcher werden](scratcher_werden_1.jpg)
 3. Folge den Menüs von Scratch und fülle die Felder aus. Verwende einen Benutzernamen, bei dem andere nicht folgern können, dass du das bist.  
-![Scratcher werden](scratch-animated-postcard/scratcher_werden_2.jpg)
+![Scratcher werden](scratcher_werden_2.jpg)
 4. Sobald du die Registrierung abgeschlossen hast, kannst du dich mit deinem Benutzernamen und Passwort bei Scratch anmelden. Dazu klicke einfach auf den **Anmelden** Knopf und gib deinen Benutzernamen und Passwort ein.  
-![Anmelden](scratch-animated-postcard/anmelden.jpg)
+![Anmelden](anmelden.jpg)
 5. Bei einer erfolgreichen Anmeldung siehst du deinen Benutzernamen rechts oben im Fenster (hier z.B. "et_nd").  
-![Anmelden](scratch-animated-postcard/angemeldet.jpg)
+![Anmelden](angemeldet.jpg)
 6. Klicke auf **Entwickeln** um mit dem Erstellen deiner Ansichtskarte fortzufahren.  
-![Entwickeln](scratch-animated-postcard/entwickeln.jpg)
+![Entwickeln](entwickeln.jpg)
 
 ## Schritt 2: Deinem Projekt einen Namen geben
 
 Damit du dein Projekt später leicht wiederfinden kannst, solltest du ihm einen entsprechenden Namen geben.
 
-![Projektname vergeben](scratch-animated-postcard/projektname_vergeben.jpg)
+![Projektname vergeben](projektname_vergeben.jpg)
 
 ## Schritt 3: Einen Hintergrund (Bühnenbild) verwenden
 
 Um deiner Ansichtskarte eine persönliche Note zu verleihen, verpasse ihr einfach dein eigenes Hintergrundbild das in Scratch Bühnenbild genannt wird.
 
 1. Klicke auf **Bühnenbild hochladen**.  
-![Buehnenbild hochladen](scratch-animated-postcard/buehnenbild_hochladen.jpg)
+![Buehnenbild hochladen](buehnenbild_hochladen.jpg)
 2. Wähle im erschienen Auswahlfenster ein Foto für deinen Hintergrund aus.  
-![Buehnenbild auswählen](scratch-animated-postcard/buehnenbild_auswaehlen.jpg)
+![Buehnenbild auswählen](buehnenbild_auswaehlen.jpg)
 
 ## Schritt 4: Eigene Figuren einbauen und animieren
 
 In diesem bringst du etwas Leben in deine Ansichtskarte.
 
 1. Entferne Scratchy (die Katzenfigur) indem du ihn mit der linken Maustaste anklickst und dann auf das weiße **x** im blauen Kreis klickst.  
-![Scratchy entfernen](scratch-animated-postcard/scratchy_entfernen.jpg)
+![Scratchy entfernen](scratchy_entfernen.jpg)
 2. Klicke auf **Figur hochladen** und suche das Bild aus, das du für deine Figur verwenden möchtest.  
-![Figur hochladen](scratch-animated-postcard/figur_hochladen.jpg)
+![Figur hochladen](figur_hochladen.jpg)
 3. Damit der Hintergrund deiner Figur nicht sichtbar ist, musst du ihn wegradieren. Klicke mit der linken Maustaste auf die Figur und öffne danach die Registerkarte (Englisch: tab) *Kostüme*. Im Zeicheneditor kannst du den Radierer auswählen und damit all jene Bereiche im Bild entfernen, die durchsichtig sein sollen.  
-![Hintergrund von Figur entfernen](scratch-animated-postcard/radierer_auswaehlen.jpg)  
+![Hintergrund von Figur entfernen](radierer_auswaehlen.jpg)  
 Nach dem Radieren sollte der durchsichtige Bereich das Schachbrettmuster enthalten.  
-![Figur ohne Hintergrund](scratch-animated-postcard/segelboot_ohne_hintergrund.jpg)  
+![Figur ohne Hintergrund](segelboot_ohne_hintergrund.jpg)  
 4. Damit die Figur gut in die Szene passt, kannst du die Größe der Figur anpassen indem du im Feld **Größe** den Wert änderst. Je größer der Wert desto größer ist die Figur.  
-![Größe der Figur einstellen](scratch-animated-postcard/groesse_einstellen.jpg)  
+![Größe der Figur einstellen](groesse_einstellen.jpg)  
 5. Im nächsten Schritt leg die folgenden Variablen an.  
-![Variablen anlegen](scratch-animated-postcard/variablen.jpg)  
+![Variablen anlegen](variablen.jpg)  
 6. Da sich die Figur bewegen soll, musst du ihr das noch beibringen. Erstell für deine Figur folgende Scripts:   
-![Block aendereBootsRichtung](scratch-animated-postcard/block_aendereBootsRichtung.jpg)  
-![Block begrenzeBootsRichtung](scratch-animated-postcard/block_begrenzeBootsRichtung.jpg)  
-![Boot main](scratch-animated-postcard/boot_main.jpg)  
+![Block aendereBootsRichtung](block_aendereBootsRichtung.jpg)  
+![Block begrenzeBootsRichtung](block_begrenzeBootsRichtung.jpg)  
+![Boot main](boot_main.jpg)  
 7. Wenn du jetzt auf die **grüne Flagge** klickst, sollte sich das Boot im Wasser zufällig bewegen.  
-![Boot testen](scratch-animated-postcard/bewegung_des_boots_testen.jpg)  
+![Boot testen](bewegung_des_boots_testen.jpg)  
 
 ## Schritt 4: Ein paar Möwen zur Szene hinzufügen
 
@@ -77,13 +77,13 @@ Damit noch mehr Leben in die Karte kommt, kannst du eine Möwe hinzufügen. Da s
 
 Scripts für die Möwen:
 
-![Größe der Figur einstellen](scratch-animated-postcard/moewe_main.jpg)  
+![Größe der Figur einstellen](moewe_main.jpg)  
 
-![Größe der Figur einstellen](scratch-animated-postcard/moewe_wenn_klon_entstehe.jpg)  
+![Größe der Figur einstellen](moewe_wenn_klon_entstehe.jpg)  
 
 Deine Szene sollte jetzt in etwa so aussehen ...
 
-![Karte mit Boote und Möwe](scratch-animated-postcard/karte_mit_segelboot_und_moewe.jpg)  
+![Karte mit Boote und Möwe](karte_mit_segelboot_und_moewe.jpg)  
 
 Jetzt wäre wieder ein guter Zeitpunkt deine Karte zu testen. Klick auf die **grüne Fahne** um die Animation zu starten. Es sollte sich das Boot bewegen und Möwen hin und wieder auftauchen und durchs Bild fliegen.
 
@@ -92,9 +92,9 @@ Jetzt wäre wieder ein guter Zeitpunkt deine Karte zu testen. Klick auf die **gr
 Jetzt fehlt bei deiner Ansichtskarte nur noch ein kurzer Gruß. 
 
 1. Lege eine neue Figur an indem du auf **Malen** klickst.   
-![Gruß Figur malen](scratch-animated-postcard/gruss_malen.jpg)  
+![Gruß Figur malen](gruss_malen.jpg)  
 2. Schreibe deine Gruß und ziehe ihn an die Position, an der du in haben möchtest.  
-![Gruß erstellen](scratch-animated-postcard/gruss_erstellen.jpg)  
+![Gruß erstellen](gruss_erstellen.jpg)  
 
 ## Schritt 6: Deine Ansichtskarte für Andere freischalten/veröffentlichen
 
@@ -111,13 +111,13 @@ Falls Du die Ansichtskarte als Einladung zu deiner Feier verschickst, dann beden
 Deine Ansichtskarte veröffentlichst du wie folgt:
 
 1. Klick auf den Knopf **Veröffentlichen**.  
-![Projekt veröffentlichen](scratch-animated-postcard/projekt_veroeffentlichen.jpg)  
+![Projekt veröffentlichen](projekt_veroeffentlichen.jpg)  
 2. Damit sich die Empfänger Deiner Karte auskennen, was zu tun ist, kannst du ihnen im Textfeld **Anleitung** eine kurze Anleitung hinterlassen.  
-![Anleitung hinzufügen](scratch-animated-postcard/projekt_veroeffentlichen_beschreibung.jpg)  
+![Anleitung hinzufügen](projekt_veroeffentlichen_beschreibung.jpg)  
 
 ## Schritt 7: Deine Ansichtskarte verschicken
 
 Jetzt hast du es fast geschafft. Klick auf den Knopf **Link kopieren** (siehe voriges Bild rechts unten). Es erscheint ein Fenster in dem du unter **Link** die Adresse (URL) deiner Ansichtskarte findest. Diese Adresse kannst du jetzt zum Beispiel per E-Mail verschicken.  
-![Projekt Link kopieren](scratch-animated-postcard/projekt_link.jpg)  
+![Projekt Link kopieren](projekt_link.jpg)  
 
-Zum Herunterladen gibt es das Projekt [hier](scratch-animated-postcard/animated_postcard.sb3).
+Zum Herunterladen gibt es das Projekt [hier](animated_postcard.sb3).
