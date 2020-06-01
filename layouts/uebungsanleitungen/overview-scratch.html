@@ -1,14 +1,14 @@
 {{ define "main" }}
 
 <section id="exercises" class="exercises">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col">
                 {{ partial "breadcrumb.html" . }}
                 <h1>{{ .Title }}</h1>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
             {{ range (.Pages.ByParam "Title").ByParam "Level" }}
             <div class="col mb-5">
                 <div class="card h-100" onclick="location.href='{{.Permalink}}'">
