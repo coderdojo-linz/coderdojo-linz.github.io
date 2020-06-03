@@ -59,28 +59,37 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		});
 
 		var row = "<tr>";
-		row += "<td>Freitag, 29. Mai 2020</td>";
+		row += "<td>Freitag, 05. Juni 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
 		var workshops = [];
 
+		// workshops.push({
+		// 	time: "13:45 - 15:45",
+		// 	title: "Micro:bit Workshop",
+		// 	description: "Wir basteln gemeinsam an einer Micro:bit Wetterstation. Das richtige Projekt für die von euch, die schon etwas Erfahrung mit Programmieren mit Scratch oder Mirco:bit haben.",
+		// 	prerequisites: "<ul><li>Installiertes <a href=\"https://www.microsoft.com/de-at/p/makecode-for-micro-bit/9pjc7sv48lcx?rtc=1#activetab=pivot:overviewtab\" target=\"_blank\">MakeCode for micro:bit</a></li><li>oder <a href=\"https://makecode.microbit.org/\" target=\"_blank\">Onlinevariante von MakeCode for micro:bit</a></li><li>zwei \"echte\" Micro:bit oder der in MakeCode eingebaute Emulator</li></ul>",
+		// 	mentors: ["Daniel"],
+		// 	link: "https://us02web.zoom.us/j/82813503653?pwd=WHNpVkMwRjE1YW5tMXNTWCtaSWQrZz09"
+		// });
+
 		workshops.push({
 			time: "13:45 - 15:45",
-			title: "Micro:bit Workshop",
-			description: "Wir basteln gemeinsam an einer Micro:bit Wetterstation. Das richtige Projekt für die von euch, die schon etwas Erfahrung mit Programmieren mit Scratch oder Mirco:bit haben.",
-			prerequisites: "<ul><li>Installiertes <a href=\"https://www.microsoft.com/de-at/p/makecode-for-micro-bit/9pjc7sv48lcx?rtc=1#activetab=pivot:overviewtab\" target=\"_blank\">MakeCode for micro:bit</a></li><li>oder <a href=\"https://makecode.microbit.org/\" target=\"_blank\">Onlinevariante von MakeCode for micro:bit</a></li><li>zwei \"echte\" Micro:bit oder der in MakeCode eingebaute Emulator</li></ul>",
-			mentors: ["Daniel"],
-			link: "https://us02web.zoom.us/j/82813503653?pwd=WHNpVkMwRjE1YW5tMXNTWCtaSWQrZz09"
+			title: "Mein erstes Computerspiel mit Scratch",
+			description: "Du hast noch nie programmiert, bist aber neugierig wie das geht? In diesem Workshop programmierst du gemeinsam mit unserem Mentor Rainer dein erstes Computerspiel mit Scratch. Wenn du jünger als 10 Jahre alt bist, solltest du eine erwachsene Begleitperson bitten, dir beim Webmeeting zu helfen. Tastatur und Maus gehören aber dir! Die Erwachsenen helfen nur, wenn du gerade mal überhaupt nicht weiter weißt. Falls du schon recht vertraut mit dem Umgang mit Computer und Internet bist, kannst du gerne auch alleine am Workshop teilnehmen.",
+			prerequisites: "<ul><li><b>ab 8 Jahren</b>, Lesekenntnisse erforderlich</li><li><b>keine</b> Vorkenntnisse über Programmieren notwendig</li><li>Software für die Teilnahme an Online CoderDojos (<a href=\"https://linz.coderdojo.net/online-coderdojo-tipps.html\" target=\"_blank\">Anleitung</a>)</li><li>Installierte Version von Scratch (<a href=\"https://scratch.mit.edu/download\" target=\"_blank\">Download</a>)</li><li>oder Online-Version von Scratch - dafür brauchst du nur einen Browser und öffnest <a href=\"https://scratch.mit.edu/create/\" target=\"_blank\">https://scratch.mit.edu/create/</a></li></ul>",
+			mentors: ["Rainer", "Karin"],
+			link: "TBD"
 		});
 
 		workshops.push({
 			time: "13:45 - 15:45",
 			title: "Virtuelles Elektronikbasteln",
-			description: "Wir machen in der ersten halben Stunden Grundlagen mit einer Batterie, Widerständen, Ampere und Voltmeter und schauen mal was da so alles passiert. Dann werden wir eine Arduionschaltung, die wir schon mal gemacht haben wiederholen und erweitern.",
+			description: "Diesen Freitag starten wir mit der Lösung von Serien- und Parallelschaltung von Widerständen. Wir bauen die Schaltung im TinkerCAD nach und überprüfen die berechneten Ergebnisse mit dem Multimeter. Das Ohmsche Gesetz kommt auch wieder vor. Diese Übung ist auch für Anfänger geeignet. Vorbereiten kannst Du Dich auf unserer Hompage unter dem Menüpunkt Löten mit den Elektronikübungen 1/2/3.<br/><br/>Im zweiten Teil werden wir wieder mit dem Arduino eine Schaltung bauen. Dieses Mal steuern wir eine bunte Led-Reihe von Neopixel an. Wir starten mit der Block Programmierung und schalten danach auf den Programmtext um. Dieses Beispiel eignet sich super für eigene LED Projekte. Viel Spaß",
 			prerequisites: "Ein Computer mit <a href=\"https://www.tinkercad.com\" target=\"_blank\">Tinkercad</a> Zugang.",
-			mentors: ["Günther", "Michael"],
-			link: "https://us02web.zoom.us/j/82377686889?pwd=VERMbURKTnRHRDQvNVpWRy83TWlMdz09"
+			mentors: ["Günther"],
+			link: "https://us02web.zoom.us/j/84139135484?pwd=WGRWbEZ0cjY0Rit2SVVxSWFuUmhyUT09"
 		});
 
 		// workshops.push({
@@ -92,41 +101,50 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		// 	link: "https://us02web.zoom.us/j/81971337266?pwd=U1YrdDdZR1hyRCtFdmNiUmdhMlVBUT09"
 		// });
 
+		// workshops.push({
+		// 	time: "13:45 - 15:45",
+		// 	title: "HTML & CSS Hands-On",
+		// 	description: "In diesem Workshop werden wir ausführlich die Basics von HTML und CSS üben:<br/><ul><li>welche HTML Elemente gibt es</li><li>wie kann ich sie positionieren</li><li>welche CSS Selektoren gibt es</li><li>wie kann ich die Darstellung für verschiedene Display-Größen anpassen</li><li>Variablen in CSS</li><li>wie kann ich in CSS rechnen</li><li>...</li></ul>",
+		// 	prerequisites: "<ul><li>ein wenig Erfahrung mit HTML & CSS</li></ul>",
+		// 	mentors: ["Karin"],
+		// 	link: "https://us02web.zoom.us/j/89640081964?pwd=RDFtMjBrdWxzeXpkSEpqYlNMZWdZdz09"
+		// });
+
 		workshops.push({
 			time: "13:45 - 15:45",
-			title: "HTML & CSS Hands-On",
-			description: "In diesem Workshop werden wir ausführlich die Basics von HTML und CSS üben:<br/><ul><li>welche HTML Elemente gibt es</li><li>wie kann ich sie positionieren</li><li>welche CSS Selektoren gibt es</li><li>wie kann ich die Darstellung für verschiedene Display-Größen anpassen</li><li>Variablen in CSS</li><li>wie kann ich in CSS rechnen</li><li>...</li></ul>",
-			prerequisites: "<ul><li>ein wenig Erfahrung mit HTML & CSS</li></ul>",
-			mentors: ["Karin"],
-			link: "https://us02web.zoom.us/j/89640081964?pwd=RDFtMjBrdWxzeXpkSEpqYlNMZWdZdz09"
+			title: "Dynamische Webseite mit Node.js",
+			description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.<br/><br/>Dieses Mal implementieren wir die beiden noch fehlenden CRUD-Operationen (create, read, update, delete) um Einträge in der FeuerwehrApp ändern und löschen zu können. Weiters sehen wir uns an, wie man die empfangenen Daten mit Javascript als Tabelle darstellt und diese mit einer Filterfunktion versieht. Falls noch Zeit bleibt, können wir beginnen die ChatApp und die FeuerwehrApp in einem gemeinsame App zu integrieren.",
+			prerequisites: "<p>Grundlegende Kenntnisse:</p><ul><li>beim Programmieren (z.B. mit JavaScript, Java, C#, C++, ...)</li><li>HTML</li></ul><p>Software:</p><ul><li>einen Texteditor wie z.B. <a href=\"https://notepad-plus-plus.org/\" target=\"_blank\">Notepad++</a>, <a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li><li><a href=\"https://nodejs.org/en/download/\" target=\"_blank\">Node.js</a></li><li><a href=\"https://git-scm.com/download/win\" target=\"_blank\">Git</a></li></ul><p>Installationsanleitung:</p><p>Wenn Du möchtest, kannst Du schon vorab unser Projekt bei Dir installieren. So haben wir beim Workshop mehr Zeit für's Programmieren und brauchen nicht so lange warten bis alle mit der Installation fertig sind. Eine Anleitung dazu findest Du auf <a href=\"https://github.com/coderdojo-neusiedl/dynamic-webpage/tree/workshop-20200522\" target=\"_blank\">Github</a>.</p>",
+			mentors: ["Thomas"],
+			link: "TBD"
 		});
-
-		// workshops.push({
-		// 	time: "16:00 - 18:00",
-		// 	title: "Dynamische Webseite mit Node.js",
-		// 	description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat. Dieses Mal sehen wir uns an, wie man am Server eine Datenbank benutzt und deren Daten am Client anzeigt.",
-		// 	prerequisites: "<p>Grundlegende Kenntnisse:</p><ul><li>beim Programmieren (z.B. mit JavaScript, Java, C#, C++, ...)</li><li>HTML</li></ul><p>Software:</p><ul><li>einen Texteditor wie z.B. <a href=\"https://notepad-plus-plus.org/\" target=\"_blank\">Notepad++</a>, <a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li><li><a href=\"https://nodejs.org/en/download/\" target=\"_blank\">Node.js</a></li><li><a href=\"https://git-scm.com/download/win\" target=\"_blank\">Git</a></li></ul><p>Installationsanleitung:</p><p>Wenn Du möchtest, kannst Du schon vorab unser Projekt bei Dir installieren. So haben wir beim Workshop mehr Zeit für's Programmieren und brauchen nicht so lange warten bis alle mit der Installation fertig sind. Eine Anleitung dazu findest Du auf <a href=\"https://github.com/coderdojo-neusiedl/dynamic-webpage/tree/workshop-20200522\" target=\"_blank\">Github</a>.</p>",
-		// 	mentors: ["Thomas"],
-		// 	link: "https://us02web.zoom.us/j/81130037599?pwd=eXNVZnlvb25qNXNOWm9LL2dORTk4Zz09"
-		// });
 
 		workshops.push({
 			time: "16:00 - 18:00",
 			title: "Python für AnfängerInnen",
-			description: "Wir starten mit dem Spiel \"Bubble Blaster\". Dazu programmieren wir mit Tkinter in Python ein U-Boot, mit dem man so viele Blasen wie möglich zum Platzen bringen soll.",
+			description: "Wir haben letztes Mal mit dem Spiel \"Bubble Blaster\" begonnen und gelernt wie man ein U-Boot mit Pfeiltasten steuern kann. Dieses Mal erzeugen wir Bubbles, die über den Bildschirm wandern. Ziel des Spiel ist es, möglichst viele Bubbles mit dem U-Boot zu treffen. Neueinsteiger sind auch herzlich willkommen. Ihr bekommt den Code vom letzten Mal und wir wiederholen die wichtigsten Schritte.",
 			prerequisites: "<ul><li>Aktuelle Version von <a href=\"https://www.python.org/downloads/\" target=\"_blank\">Python</a></li></ul>",
 			mentors: ["Sonja"],
-			link: "https://us02web.zoom.us/j/84882434331?pwd=a1JIaC9QbmErNzUyanM0Y3pjVVJHdz09"
+			link: "TBD"
 		});
 
 		workshops.push({
 			time: "16:00 - 18:00",
-			title: "Unity Moonhack",
-			description: "Das Spiel Moonhack kennt ihr vielleicht schon vom Beispiel Scratch Moonhack. Diesmal werden wir versuchen das gleiche Spiel mit Unity zu realisieren.",
-			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://store.unity.com/\" target=\"_blank\">Unity 2019.3</a> (oder eine aktuellere - du wirst dafür einen Account bei Unity anlegen müssen - nimm bitte die Individual/Personal Version)</li><li><b>und</b> <a href=\"https://visualstudio.microsoft.com/de/vs/unity-tools/\" target=\"_blank\">Visual Studio 2019 Community</a></li></ul>",
-			mentors: ["Hans-Peter"],
-			link: "https://us02web.zoom.us/j/85099735480?pwd=MmN1dUd5WDBBdzJIcy9SRS9MQUNVQT09"
+			title: "Discord Bot mit C#",
+			description: "TBD",
+			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://visualstudio.microsoft.com/vs/community/\" target=\"_blank\">Visual Studio 2019 Community</a></li><li><b>und</b> <a href=\"https://dotnet.microsoft.com/download/dotnet-core/3.1\" target=\"_blank\">.NET Core</a></li></ul>",
+			mentors: ["Jonas"],
+			link: "https://us02web.zoom.us/j/85874187975?pwd=Vm85ZTB2T0owa1RKVE5NMkxLdGN5dz09"
 		});
+
+		// workshops.push({
+		// 	time: "16:00 - 18:00",
+		// 	title: "Unity Moonhack",
+		// 	description: "Das Spiel Moonhack kennt ihr vielleicht schon vom Beispiel Scratch Moonhack. Diesmal werden wir versuchen das gleiche Spiel mit Unity zu realisieren.",
+		// 	prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://store.unity.com/\" target=\"_blank\">Unity 2019.3</a> (oder eine aktuellere - du wirst dafür einen Account bei Unity anlegen müssen - nimm bitte die Individual/Personal Version)</li><li><b>und</b> <a href=\"https://visualstudio.microsoft.com/de/vs/unity-tools/\" target=\"_blank\">Visual Studio 2019 Community</a></li></ul>",
+		// 	mentors: ["Hans-Peter"],
+		// 	link: "https://us02web.zoom.us/j/85099735480?pwd=MmN1dUd5WDBBdzJIcy9SRS9MQUNVQT09"
+		// });
 
 		// workshops.push({
 		// 	time: "16:00 - 18:00",
@@ -159,7 +177,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 
 		eventsTable.append(row);
 
-		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-05-29'; }).forEach(function(event) {
+		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-06-05'; }).forEach(function(event) {
 			var row = "";
 
 			if (event.type == "header") {
