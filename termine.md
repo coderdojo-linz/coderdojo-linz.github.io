@@ -80,7 +80,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Du hast noch nie programmiert, bist aber neugierig wie das geht? In diesem Workshop programmierst du gemeinsam mit unserem Mentor Rainer dein erstes Computerspiel mit Scratch. Wenn du jünger als 10 Jahre alt bist, solltest du eine erwachsene Begleitperson bitten, dir beim Webmeeting zu helfen. Tastatur und Maus gehören aber dir! Die Erwachsenen helfen nur, wenn du gerade mal überhaupt nicht weiter weißt. Falls du schon recht vertraut mit dem Umgang mit Computer und Internet bist, kannst du gerne auch alleine am Workshop teilnehmen.",
 			prerequisites: "<ul><li><b>ab 8 Jahren</b>, Lesekenntnisse erforderlich</li><li><b>keine</b> Vorkenntnisse über Programmieren notwendig</li><li>Software für die Teilnahme an Online CoderDojos (<a href=\"https://linz.coderdojo.net/online-coderdojo-tipps.html\" target=\"_blank\">Anleitung</a>)</li><li>Installierte Version von Scratch (<a href=\"https://scratch.mit.edu/download\" target=\"_blank\">Download</a>)</li><li>oder Online-Version von Scratch - dafür brauchst du nur einen Browser und öffnest <a href=\"https://scratch.mit.edu/create/\" target=\"_blank\">https://scratch.mit.edu/create/</a></li></ul>",
 			mentors: ["Rainer", "Karin"],
-			link: "TBD"
+			link: "https://us02web.zoom.us/j/83084810683?pwd=MTJYbmgya1hXSjBwdHRIWFk3QlZQZz09"
 		});
 
 		workshops.push({
@@ -116,7 +116,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.<br/><br/>Dieses Mal implementieren wir die beiden noch fehlenden CRUD-Operationen (create, read, update, delete) um Einträge in der FeuerwehrApp ändern und löschen zu können. Weiters sehen wir uns an, wie man die empfangenen Daten mit Javascript als Tabelle darstellt und diese mit einer Filterfunktion versieht. Falls noch Zeit bleibt, können wir beginnen die ChatApp und die FeuerwehrApp in einem gemeinsame App zu integrieren.",
 			prerequisites: "<p>Grundlegende Kenntnisse:</p><ul><li>beim Programmieren (z.B. mit JavaScript, Java, C#, C++, ...)</li><li>HTML</li></ul><p>Software:</p><ul><li>einen Texteditor wie z.B. <a href=\"https://notepad-plus-plus.org/\" target=\"_blank\">Notepad++</a>, <a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li><li><a href=\"https://nodejs.org/en/download/\" target=\"_blank\">Node.js</a></li><li><a href=\"https://git-scm.com/download/win\" target=\"_blank\">Git</a></li></ul><p>Installationsanleitung:</p><p>Wenn Du möchtest, kannst Du schon vorab unser Projekt bei Dir installieren. So haben wir beim Workshop mehr Zeit für's Programmieren und brauchen nicht so lange warten bis alle mit der Installation fertig sind. Eine Anleitung dazu findest Du auf <a href=\"https://github.com/coderdojo-neusiedl/dynamic-webpage/tree/workshop-20200522\" target=\"_blank\">Github</a>.</p>",
 			mentors: ["Thomas"],
-			link: "TBD"
+			link: "https://us02web.zoom.us/j/81648902295?pwd=UWRkVEZiRC8xM2dGQ0pBTENzdTFzdz09"
 		});
 
 		workshops.push({
@@ -125,7 +125,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			description: "Wir haben letztes Mal mit dem Spiel \"Bubble Blaster\" begonnen und gelernt wie man ein U-Boot mit Pfeiltasten steuern kann. Dieses Mal erzeugen wir Bubbles, die über den Bildschirm wandern. Ziel des Spiel ist es, möglichst viele Bubbles mit dem U-Boot zu treffen. Neueinsteiger sind auch herzlich willkommen. Ihr bekommt den Code vom letzten Mal und wir wiederholen die wichtigsten Schritte.",
 			prerequisites: "<ul><li>Aktuelle Version von <a href=\"https://www.python.org/downloads/\" target=\"_blank\">Python</a></li></ul>",
 			mentors: ["Sonja"],
-			link: "TBD"
+			link: "https://us02web.zoom.us/j/89358979222?pwd=TWRnMzBlVzJzNngvWEUyZlhPQytSdz09"
 		});
 
 		workshops.push({
