@@ -132,7 +132,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 			time: "16:00 - 18:00",
 			title: "Discord Bot mit C#",
 			description: "Du wolltest schon immer mal deinen eigenen Discord Bot machen? Dann ist das genau der richtige Workshop für dich! In unserer ersten Session werden wir einen Bot programmieren, der uns auf Kommando süße Katzenbilder zusendet oder uns mit lustigen Witzen unterhält! Ideen und Vorschläge könnt ihr gerne vor oder während des Workshops bei mir ( @El'Capitano#5113 ) abgeben :)",
-			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://visualstudio.microsoft.com/vs/community/\" target=\"_blank\">Visual Studio 2019 Community</a></li><li><b>und</b> <a href=\"https://dotnet.microsoft.com/download/dotnet-core/3.1\" target=\"_blank\">.NET Core</a></li></ul>",
+			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://visualstudio.microsoft.com/vs/community/\" target=\"_blank\">Visual Studio 2019 Community</a></li><li><b>und</b> <a href=\"https://dotnet.microsoft.com/download/dotnet-core/3.1\" target=\"_blank\">.NET Core</a></li></ul><br/>Nice to Haves/Know (Optional):<br(><ul><li><a href=\"https://www.postman.com/downloads/\" target=\"_blank\">Postman</a></li><li><a href=\"Quicktype\" target=\"_blank\">https://app.quicktype.io/</a></li></ul>",
 			mentors: ["Jonas"],
 			link: "https://us02web.zoom.us/j/85874187975?pwd=Vm85ZTB2T0owa1RKVE5NMkxLdGN5dz09"
 		});
