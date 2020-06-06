@@ -1,14 +1,12 @@
 ---
-
-title: Affe füttern
-description: Wirf dem Affen mit der Steinschleuder Bananen zu
-images:
-- endgame.png
-- code-banane-1.png
+title: "Affe füttern"
+description: "Wirf dem Affen mit der Steinschleuder Bananen zu."
+img: "endgame.png"
+imgposition: "center bottom"
 level: 2
-scratch-sprites: 4
-scratch-scripts: 7
-scratch-data: 7
+sprites: 4
+scripts: 7
+data: 7
 ---
 
 # Scratch Affe füttern <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-slingshot.html" class="change-scratch-version">Scratch 2.0</a>

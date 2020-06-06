@@ -7,4 +7,4 @@ date: 2020-05-17T08:13:15+02:00
 draft: false
 ---
 
-Beim Programmieren gibt's Anleitungen für Anfänger bis Fortgeschrittene. Da ist für jedes Alter was dabei.
+Von Scratch über JavaScript bis zu Minecraft ist für jedes Alter und jeden Schwierigkeitsgrad was dabei.

@@ -1,14 +1,12 @@
 ---
-
-title: The Game of Life
-description: Erwecke Zellen zum Leben.
-images:
-- the-game-of-life.png
-- funktion-insert-pattern.png
+title: "The Game of Life"
+description: "Erwecke Zellen zum Leben."
+img: "the-game-of-life.png"
+imgposition: "center bottom"
 level: 3
-scratch-sprites: 2
-scratch-scripts: 21
-scratch-data: 20
+sprites: 2
+scripts: 21
+data: 20
 ---
 
 # The Game of Life <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-the-game-of-life.html" class="change-scratch-version">Scratch 2.0</a>

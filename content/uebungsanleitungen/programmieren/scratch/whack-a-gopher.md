@@ -1,13 +1,12 @@
 ---
-
-title: Whack a Gopher
-description: Ein Spiel basierend auf der Idee von "Whack a mole"
-images:
-- main.png
+title: "Whack a Gopher"
+description: "Ein Spiel basierend auf der Idee von 'Whack a mole'."
+img: "endgame.png"
+imgposition: "center bottom"
 level: 2
-scratch-sprites: 3
-scratch-scripts: 7
-scratch-data: 4
+sprites: 3
+scripts: 7
+data: 4
 ---
 
 # Scratch Whack a Gopher

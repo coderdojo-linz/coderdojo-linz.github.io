@@ -1,14 +1,12 @@
 ---
-
-title: Sterne fangen
-description: Springe hoch, um die herumfliegenden Sterne zu fangen.
-images:
-- endgame.png
-- code-pico-1.png
+title: "Sterne fangen"
+description: "Springe hoch, um die herumfliegenden Sterne zu fangen."
+img: "endgame.png"
+imgposition: "center top"
 level: 2
-scratch-sprites: 3
-scratch-scripts: 7
-scratch-data: 3
+sprites: 3
+scripts: 7
+data: 3
 ---
 
 # Scratch Sterne fangen <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-sterne-fangen.html" class="change-scratch-version">Scratch 2.0</a>

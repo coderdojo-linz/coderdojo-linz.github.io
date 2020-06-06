@@ -468,6 +468,15 @@ section.mentors {
     transition: transform 0.3s;
     cursor: pointer;
 
+    h5 {
+        //font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    h6.card-subtitle {
+        font-size: 0.9rem;
+    }
+
     .card-title {
         margin-block-start: 0;
     }
@@ -478,6 +487,7 @@ section.mentors {
 
     .card-header {
         border-bottom: none;
+        box-sizing: border-box;
     }
 
     .card-footer {

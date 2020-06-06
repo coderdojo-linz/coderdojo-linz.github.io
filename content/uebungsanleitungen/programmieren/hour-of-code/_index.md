@@ -7,5 +7,5 @@ date: 2020-05-17T08:12:48+02:00
 draft: false
 ---
 
-Die Kinder erstellen Computerprogramme und lernen dabei, mit anderen zusammen zu arbeiten, Fähigkeiten zur Problemlösung zu entwickeln und bei schwierigen Aufgaben beharrlich zu bleiben.
+Hour of Code bietet einen einfachen Einstieg ins Programmieren für Kinder die noch nicht oder erst wenig lesen können.
 

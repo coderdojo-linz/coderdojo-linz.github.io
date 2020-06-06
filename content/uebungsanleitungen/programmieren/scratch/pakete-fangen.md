@@ -1,13 +1,12 @@
 ---
 title: "Pakete Fangen"
 description: "Fange die Weihnachts-Pakete bevor sie auf den Boden fallen"
-images:
-- spiel.png
-- script_1_3.png
+img: "endgame.png"
+imgposition: "center top"
 level: 1
-scratch-sprites: 4
-scratch-scripts: 4
-scratch-data: 3
+sprites: 4
+scripts: 4
+data: 3
 ---
 
 # Weihnachtspakete fangen

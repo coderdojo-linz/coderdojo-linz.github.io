@@ -1,13 +1,12 @@
 ---
-title: Memory
-description: Drehe zwei Karten um und finde zusammenpassende Paare.
-images:
-- memory-game.png
-- bild-anzeigen.png
+title: "Memory"
+description: "Drehe zwei Karten um und finde zusammenpassende Paare."
+img: "endgame.png"
+imgposition: "center bottom"
 level: 2
-scratch-sprites: 2
-scratch-scripts: 10
-scratch-data: 11
+sprites: 2
+scripts: 10
+data: 11
 ---
 
 # Scratch Memory <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-memory.html" class="change-scratch-version">Scratch 2.0</a>

@@ -1,3 +1,8 @@
+---
+title: "ANTLR Hello World"
+description: "..."
+---
+
 # ANTLR Hello World
 
 ## Installation
@@ -9,14 +14,14 @@
 * Ein neues Projekt mit *New Project* - *Empty Project* starten. In dieser Anleitung gehen wir davon aus, dass das Projekt *antlr-hello-world* heißt.
 
 * *Settings*-Dialog mit *Strg+Alt+S* öffnen, nach dem *antlr* Plugin suchen und installieren<br/>
-  ![ANTLR Plugin](antlr-hello-world/install-antlr.png)
+  ![ANTLR Plugin](install-antlr.png)
 
 * IntelliJ neu starten und das zuvor angelegte Projekt wieder laden
 
 ## Erste Grammatik anlegen
 
 * Neue Datei *Hello.g4* anlegen<br/>
-  ![Neue Datei](antlr-hello-world/new-file.png)
+  ![Neue Datei](new-file.png)
 
 * Folgende Grammatik in die neue Datei einfügen:
 
@@ -28,10 +33,10 @@ WS        : [ \t\r\n]+ -> skip ; // Leerzeichen, Tab, Leerzeilen ignorieren
 ```
 
 * Rechte Maustaste auf die Regel `greet` und *Test Rule greet* anklicken<br/>
-  ![Regel testen](antlr-hello-world/test-rule.png)
+  ![Regel testen](test-rule.png)
 
 * *hello world* eingeben und ansehen, wie ANTLR den Text nach der angegebenen Grammatik zerlegt<br/>
-  ![Regel testen](antlr-hello-world/test-rule-2.png)
+  ![Regel testen](test-rule-2.png)
 
 * Experimentiere mit folgenden Eingaben (beachte die Fehler, die angezeigt werden)
   * *hello*
@@ -95,12 +100,12 @@ mention             : '@' WORD ;
   * *john SHOUTS: hello @michael :-)*
 
 * Antlr Generator konfigurieren<br/>
-  ![Konfigurieren](antlr-hello-world/configure-antlr.png)<br/>
-  ![Konfigurieren](antlr-hello-world/configure-antlr-2.png)
+  ![Konfigurieren](configure-antlr.png)<br/>
+  ![Konfigurieren](configure-antlr-2.png)
 
 * Lexer/Parser generieren<br/>
-  ![Generieren](antlr-hello-world/lexer-parser-generate.png)<br/>
-  ![Generieren](antlr-hello-world/lexer-parser-generate-2.png)
+  ![Generieren](lexer-parser-generate.png)<br/>
+  ![Generieren](lexer-parser-generate-2.png)
 
 ## Compiler
 

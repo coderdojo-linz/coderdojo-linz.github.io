@@ -1,14 +1,12 @@
 ---
-
-title: Minesweeper
-description: Finde die Bomben
-images:
-- endgame.png
-- code-zelle-1.png
+title: "Minesweeper"
+description: "Finde die Bomben."
+img: "endgame-1.png"
+imgcover: false
 level: 3
-scratch-sprites: 2
-scratch-scripts: 15
-scratch-data: 6
+sprites: 2
+scripts: 15
+data: 6
 ---
 
 # Scratch Minesweeper <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-minesweeper.html" class="change-scratch-version">Scratch 2.0</a>

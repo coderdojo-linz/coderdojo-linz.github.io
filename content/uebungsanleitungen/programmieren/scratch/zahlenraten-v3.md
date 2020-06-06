@@ -1,18 +1,15 @@
 ---
-
-title: Zahlenraten
-description: In diesem Spiel musst du eine Zahl erraten, die sich der Computer ausgedacht hat. Schaffst du es in weniger als 9 Versuchen?
-images:
-- 10-liste.PNG
-- 08-falls.PNG
+title: "Zahlenraten"
+description: "In diesem Spiel musst du eine Zahl erraten, die sich der Computer ausgedacht hat. Schaffst du es in weniger als 9 Versuchen?"
+img: "10-liste.PNG"
+imgposition: "center top"
 level: 1
-scratch-sprites: 1
-scratch-scripts: 1
-scratch-data: 2
+sprites: 1
+scripts: 1
+data: 2
 ---
 
 # Die Zahlenraten <span class="badge badge-scratch3">Scratch 2.0</span> <a href="scratch-zahlenraten-v3.html" class="change-scratch-version">Scratch 3.0</a>
-
 
 In diesem Spiel musst du eine Zahl erraten, die sich der Computer ausgedacht hat. Schaffst du es in weniger als 9 Versuchen?
 

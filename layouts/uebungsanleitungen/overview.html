@@ -8,14 +8,18 @@
                 <h1>{{ .Title }}</h1>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
             {{ range (.Pages.ByParam "Title").ByParam "Level" }}
             <div class="col mb-5">
+                {{ $link := (index .Pages 0).Permalink}}
+                {{ $linkText := "Zur Anleitung" }}
+
                 {{ if gt (len .Pages) 1}}
-                <div class="card h-100" onclick="location.href='{{.Permalink}}'">
-                {{ else }}
-                <div class="card h-100" onclick="location.href='{{ (index .Pages 0).Permalink}}'">
+                    {{ $link = .Permalink }}
+                    {{ $linkText = "Zu den Anleitungen" }}
                 {{ end }}
+
+                <div class="card h-100" onclick="location.href='{{ $link }}'">
                     <div class="card-header">{{ if isset .Params "img" }}
                         <img src="/img/uebungsanleitungen/{{.Params.img}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: contain; height: 100px; padding: 10px 40px;">{{ end }}
                     </div>
@@ -29,11 +33,7 @@
                         <p class="card-text mt-4">{{.Content}}</p>
                     </div>
                     <div class="card-footer">
-                        {{ if gt (len .Pages) 1}}
-                        <a href="{{.Permalink}}" class="card-link">Zu den Übungsanleitungen</a>
-                        {{ else }}
-                        <a href="{{ (index .Pages 0).Permalink}}" class="card-link">Zur Anleitung</a>
-                        {{ end }}
+                        <a href="{{ $link }}" class="card-link">{{ $linkText }}</a>
                     </div>
                 </div>
             </div>

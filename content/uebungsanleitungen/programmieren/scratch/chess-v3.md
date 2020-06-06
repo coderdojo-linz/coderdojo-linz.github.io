@@ -1,13 +1,12 @@
 ---
-
-title: Chess
-description: In diesem Beispiel wollen wir ein Schachspiel bauen, und dabei vor allem die beiden wichtigsten Funktionen - das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.
-images:
-- chess-game.png
+title: "Chess"
+description: "In diesem Beispiel wollen wir ein Schachspiel bauen, und dabei vor allem die beiden wichtigsten Funktionen - das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds."
+img: "chess-game.png"
+imgposition: "center top"
 level: 3
-scratch-sprites: 4
-scratch-scripts: 35
-scratch-data: 70
+sprites: 4
+scripts: 35
+data: 70
 ---
 
 # Scratch Chess

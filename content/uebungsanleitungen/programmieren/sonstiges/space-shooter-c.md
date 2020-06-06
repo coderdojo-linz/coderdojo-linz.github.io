@@ -1,10 +1,9 @@
 ---
-
-title: Space Shooter
+title: Space Shooter in C
 description: Entwickle einen Retro Space-Shooter in C
 ---
 
-# Space Shooter
+# Space Shooter in C
 
 In dieser Übung werden wir ein relativ fortgeschrittenes Computerspiel in C entwickeln, welches im Terminalemulator -- unter Windows standardmäßig, CMD -- läuft. Wir werden im Terminal mithilfe von speziellen control codes (Ketten von escape charactern) das gesamte Spiel zeichnen und durch Tastendrücke auf dem Keyboard kontrollieren.
 

@@ -1,14 +1,12 @@
 ---
-
-title: Moonhack
-description: In diesem Spiel landest du auf dem Mond
-images:
-- in-flight.png
-- gravitation.png
+title: "Moonhack"
+description: "In diesem Spiel landest du auf dem Mond."
+img: "endgame.png"
+imgposition: "center top"
 level: 1
-scratch-sprites: 1
-scratch-scripts: 8
-scratch-data: 2
+sprites: 1
+scripts: 8
+data: 2
 ---
 
 # Scratch Moonhack

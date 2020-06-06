@@ -1,14 +1,13 @@
 ---
 
-title: Weihnachtsspiel
-description: Wie viele Geschenke kannst du in einer Minute liefern?
-images:
-- weihnachtsmann-position.png
-- hintergrund-skript.png
+title: "Weihnachtsspiel"
+description: "Wie viele Geschenke kannst du in einer Minute liefern?"
+img: "weihnachtsmann-position.png"
+imgposition: "center top"
 level: 1
-scratch-sprites: 4
-scratch-scripts: 9
-scratch-data: 1
+sprites: 4
+scripts: 9
+data: 1
 ---
 
 # Scratch Weihnachtsspiel

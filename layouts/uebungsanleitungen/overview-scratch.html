@@ -11,25 +11,45 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
             {{ range (.Pages.ByParam "Title").ByParam "Level" }}
             <div class="col mb-5">
-                <div class="card h-100" onclick="location.href='{{.Permalink}}'">
-                    <div class="card-header" style="padding: 0;">{{ if isset .Params "images" }}
-                        <img src="{{.RelPermalink}}{{(index .Params.images 0)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: cover; height: 200px;">{{ end }}
+                {{ $link := .Permalink}}
+                {{ $linkText := "Zur Anleitung" }}
+                {{ $objectFit := "cover" }}
+                {{ $objectPosition := "center center" }}
+                {{ $padding := "0" }}
+
+                {{ if gt (len .Pages) 1}}
+                    {{ $link := (index .Pages 0).Permalink}}
+                {{ else if gt (len .Pages) 1}}
+                    {{ $link = .Permalink }}
+                    {{ $linkText = "Zu den Anleitungen" }}
+                {{ end }}
+
+                {{ if isset .Params "imgcover" }}
+                    {{ if eq .Params.imgcover false }}
+                        {{ $objectFit = "contain" }}
+                        {{ $padding = "12px 20px" }}
+                    {{ end }}
+                {{ end }}
+
+                {{ if isset .Params "imgposition" }}
+                    {{ $objectPosition = .Params.imgposition }}
+                {{ end }}
+
+                <div class="card h-100" onclick="location.href='{{ $link }}'">
+                    <div class="card-header" style="padding: {{ $padding }}; height: 200px;">{{ if isset .Params "img" }}
+                        <img src="{{.RelPermalink}}{{(index .Params.img)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: {{$objectFit}}; object-position: {{$objectPosition}}; height: 100%;">{{ end }}
                     </div>
                     
                     <div class="card-body">
-                        <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right;">
-                            Level {{ .Params.Level }}
+                        <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" (cond (eq .Params.Level 3) "badge-danger" ""))) }}" style="float: right;">
+                            {{ if lt .Params.Level 4 }}Level {{ .Params.Level }}{{ end }}
                         </span>
                         <h5 class="card-title">{{.Title}}</h5>
                         <!-- <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6> -->
                         <p class="card-text mt-4">{{.Description}}</p>
                     </div>
                     <div class="card-footer">
-                        {{ if gt (len .Pages) 1}}
-                        <a href="{{.Permalink}}" class="card-link">Zu den Übungsanleitungen</a>
-                        {{ else }}
-                        <a href="{{.Permalink}}" class="card-link">Zur Anleitung</a>
-                        {{ end }}
+                        <a href="{{ $link }}" class="card-link">{{ $linkText }}</a>
                     </div>
                 </div>
             </div>

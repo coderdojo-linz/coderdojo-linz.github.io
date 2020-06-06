@@ -1,14 +1,12 @@
 ---
-
-title: Space Shooter
-description: In dieser Übung schießt du mit deinem Raumschiff herabfallende Meteoriten ab bevor sie dein Raumschiff zerstören.
-images:
-- endgame.png
-- code-space-shooter-1.png
+title: "Space Shooter"
+description: "In dieser Übung schießt du mit deinem Raumschiff herabfallende Meteoriten ab bevor sie dein Raumschiff zerstören."
+img: "endgame.png"
+imgposition: "center bottom"
 level: 2
-scratch-sprites: 3
-scratch-scripts: 13
-scratch-data: 2
+sprites: 3
+scripts: 13
+data: 2
 ---
 
 # Scratch Space Shooter <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-space-shooter.html" class="change-scratch-version">Scratch 2.0</a>

@@ -1,14 +1,13 @@
 ---
 
-title: Weihnachtsspiel 2016
-description: Es ist Weihnachten. Zeit, den Baum zu dekorieren.
-images:
-- christmas-game.png
-- zerspringen.png
+title: "Weihnachtsspiel 2016"
+description: "Es ist Weihnachten. Zeit, den Baum zu dekorieren."
+img: "endgame.png"
+imgposition: "center top"
 level: 1
-scratch-sprites: 2
-scratch-scripts: 7
-scratch-data: 4
+sprites: 2
+scripts: 7
+data: 4
 ---
 
 # Scratch Weihnachtsspiel 2016

@@ -1,14 +1,12 @@
 ---
-
-title: n-Ecke malen
-description: In dieser Übung lässt du Scratchy Figuren mit beliebig vielen Ecken malen, wie zum Beispiel ein Dreieck oder ein Viereck.
-images:
-- kreis.png
-- anzahl-ecken-abfragen.png
+title: "n-Ecke malen"
+description: "In dieser Übung lässt du Scratchy Figuren mit beliebig vielen Ecken malen, wie zum Beispiel ein Dreieck oder ein Viereck."
+img: "endgame.png"
+imgcover: false
 level: 2
-scratch-sprites: 3
-scratch-scripts: 9
-scratch-data: 7
+sprites: 3
+scripts: 9
+data: 7
 ---
 
 # n-Ecke malen

@@ -1,14 +1,13 @@
 ---
 
-title: Fang-Mich
-description: In diesem Spiel musst du versuchen, dem Haifisch zu entkommen.
-images:
-- endgame.png
-- 10-touch-fish.png
+title: "Fang Mich"
+description: "In diesem Spiel musst du versuchen, dem Haifisch zu entkommen."
+img: "endgame.png"
+imgposition: "center bottom"
 level: 1
-scratch-sprites: 2
-scratch-scripts: 8
-scratch-data: 0
+sprites: 2
+scripts: 8
+data: 0
 ---
 
 # Scratch Fang-Mich

@@ -1,14 +1,12 @@
 ---
-
-title: Sierpinski Dreieck
-description: Male mit Scratch ein Sierpinski Dreieick.
-images:
-- dreieck-mit-farben.png
-- erstes-dreieck.png
+title: "Sierpinski Dreieck"
+description: "Male mit Scratch ein Sierpinski Dreieick."
+img: "endgame.png"
+imgcover: false
 level: 2
-scratch-sprites: 1
-scratch-scripts: 2
-scratch-data: 1
+sprites: 1
+scripts: 2
+data: 1
 ---
 
 # Scratch Sierpinski Dreieck

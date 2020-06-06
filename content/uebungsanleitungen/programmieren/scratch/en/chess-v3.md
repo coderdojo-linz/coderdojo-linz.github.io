@@ -1,13 +1,12 @@
 ---
-
-title: Scratch Chess
-description: In this example, we want to build a chess engine, and above all, the two most important functions - the calculation and application of different move combinations, and the evaluation of resulting boards.
-images:
-- chess-game.png
+title: "Scratch Chess"
+description: "In this example, we want to build a chess engine, and above all, the two most important functions - the calculation and application of different move combinations, and the evaluation of resulting boards."
+img: "chess-game.png"
+imgposition: "center top"
 level: 3
-scratch-sprites: 4
-scratch-scripts: 35
-scratch-data: 70
+sprites: 4
+scripts: 35
+data: 70
 ---
 
 # Scratch Chess

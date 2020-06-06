@@ -1,14 +1,12 @@
 ---
-
-title: Labyrinth-Spiel mit Scratch und JavaScript
-description: In dieser Übung programmierst du ein Spiel mit Scratch und übersetzt es dann in JavaScript
-images:
-- endgame.png
-- code-laby-1.png
+title: "Labyrinth-Spiel mit Scratch und JavaScript"
+description: "In dieser Übung programmierst du ein Spiel mit Scratch und übersetzt es dann in JavaScript."
+img: "endgame.png"
+imgposition: "center top"
 level: 3
-scratch-sprites: 3
-scratch-scripts: 13
-scratch-data: 6
+sprites: 3
+scripts: 13
+data: 6
 ---
 
 # Labyrinth-Spiel mit Scratch und JavaScript <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-labyrinth.html" class="change-scratch-version">Scratch 2.0</a>

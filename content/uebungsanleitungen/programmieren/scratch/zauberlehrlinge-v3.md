@@ -1,14 +1,13 @@
 ---
 
-title: Die Zauberlehrlinge
-description: Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen.
-images:
-- endgame.png
-- code-boy-1.png
+title: "Die Zauberlehrlinge"
+description: "Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln."
+img: "endgame.png"
+imgposition: "center bottom"
 level: 2
-scratch-sprites: 4
-scratch-scripts: 13
-scratch-data: 3
+sprites: 4
+scripts: 13
+data: 3
 ---
 
 # Die Zauberlehrlinge <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-zauberlehrlinge.html" class="change-scratch-version">Scratch 2.0</a>

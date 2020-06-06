@@ -1,14 +1,12 @@
 ---
-
-title: Space Shooter II
-description: Hast du den Space Shooter schon geschafft? Dann probiere diese Herausforderung.
-images:
-- 01-space-shooter-final.png
-- 03-wizard-witch.png
+title: "Space Shooter II"
+description: "Hast du den Space Shooter schon geschafft? Dann probiere diese Herausforderung."
+img: "01-space-shooter-final.png"
+imgposition: "center bottom"
 level: 2
-scratch-sprites: 4
-scratch-scripts: 6
-scratch-data: 2
+sprites: 4
+scripts: 6
+data: 2
 ---
 
 # Scratch Space Shooter II <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-space-shooter-2.html" class="change-scratch-version">Scratch 2.0</a>

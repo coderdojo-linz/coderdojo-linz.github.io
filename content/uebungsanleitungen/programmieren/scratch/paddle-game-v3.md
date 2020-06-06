@@ -2,11 +2,11 @@
 title: "Paddle Game"
 description: "In dieser Übung baust du ein kleines Spiel, indem du versuchst, einen Ball mit einem Schläger in der Luft zu halten."
 level: 2
-images:
-- endgame.png
-scratch-sprites: 3
-scratch-scripts: 9
-scratch-data: 2
+img: "endgame.png"
+imgposition: "center bottom"
+sprites: 3
+scripts: 9
+data: 2
 ---
 
 # Scratch Paddle Game

@@ -1,14 +1,12 @@
 ---
-
-title: Dragons Realm
-description: Verteidige als Drache dein Territorium gegen die Eindringlinge.
-images:
-- endgame.png
-- code-drache-1.png
+title: "Dragons Realm"
+description: "Verteidige als Drache dein Territorium gegen die Eindringlinge."
+img: "dragons.png"
+imgposition: "center bottom"
 level: 3
-scratch-sprites: 6
-scratch-scripts: 19
-scratch-data: 11
+sprites: 6
+scripts: 19
+data: 11
 ---
 
 # Dragons Realm <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-dragons-realm.html" class="change-scratch-version">Scratch 2.0</a>

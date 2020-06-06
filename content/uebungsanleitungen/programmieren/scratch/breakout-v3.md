@@ -1,14 +1,13 @@
 ---
 
-title: Breakout
-description: In diesem Spiel pulverisierst du bunte Mauersteine
-images:
-- endgame.png
-- schläger-code.png
+title: "Breakout"
+description: "In diesem Spiel pulverisierst du bunte Mauersteine."
+img: "endgame.png"
+imgposition: "center bottom"
 level: 2
-scratch-sprites: 3
-scratch-scripts: 9
-scratch-data: 7
+sprites: 3
+scripts: 9
+data: 7
 ---
 
 # Scratch Breakout <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-breakout.html" class="change-scratch-version">Scratch 2.0</a>

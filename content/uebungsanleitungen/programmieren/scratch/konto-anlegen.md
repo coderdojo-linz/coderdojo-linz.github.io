@@ -1,8 +1,8 @@
 ---
-title: Konto anlegen und starten
-description: In dieser Übung legst du dir dein eigenes Konto für Scratch an und startest Scratch zum ersten Mal.
-images:
-- scratcher-werden-schritt-1.png
+title: "Konto anlegen"
+description: "In dieser Übung legst du dir dein eigenes Konto für Scratch an und startest Scratch zum ersten Mal."
+img: "scratcher-werden-schritt-1.png"
+imgcover: false
 level: 1
 ---
 

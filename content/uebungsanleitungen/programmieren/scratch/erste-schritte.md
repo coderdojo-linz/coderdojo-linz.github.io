@@ -1,13 +1,12 @@
 ---
-title: Erste Schritte in Scratch
-description: In dieser Übung legst du ein neues Projekt an und lässt Scratchy, die Katze, am Bildschirm herumlaufen.
-images:
-- scratchy-geht-im-kreis.png
-- wische-malspuren-weg.png
+title: "Erste Schritte in Scratch"
+description: "In dieser Übung legst du ein neues Projekt an und lässt Scratchy, die Katze, am Bildschirm herumlaufen."
+img: "scratchy.png"
+imgcover: false
 level: 1
-scratch-sprites: 1
-scratch-scripts: 2
-scratch-data: 0
+sprites: 1
+scripts: 2
+data: 0
 ---
 
 # Erste Schritte mit Scratch

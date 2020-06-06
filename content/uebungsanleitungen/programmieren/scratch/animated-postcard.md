@@ -1,12 +1,12 @@
 ---
-
-title: Animierte Ansichtskarte
-description: Die gute alte Ansichtskarte mit Briefmarke war Gestern - heute bauen wir uns unsere eigene animierte Karte und verschicken sie an unsere Freunde.
-images:
-- projekt_veroeffentlichen_beschreibung.jpg
-scratch-sprites: 2
-scratch-scripts: 5
+title: "Animierte Ansichtskarte"
+description: "Die gute alte Ansichtskarte mit Briefmarke war Gestern - heute bauen wir uns unsere eigene animierte Karte und verschicken sie an unsere Freunde."
+img: "endgame.png"
+imgposition: "center bottom"
 level: 3
+sprites: 2
+scripts: 5
+data: 0
 ---
 
 # Animierte Ansichtskarte

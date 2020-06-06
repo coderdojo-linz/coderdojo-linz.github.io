@@ -1,10 +1,9 @@
 ---
-
-title: Pac Man
-description: Friss dich durch's Labyrinth.
+title: "Pac Man"
+description: "Friss dich durch's Labyrinth."
+img: "endgame.png"
+imgposition: "center bottom"
 level: 3
-images:
-- endgame.png
 scratch-sprites: 3
 scratch-scripts: 19
 scratch-data: 28

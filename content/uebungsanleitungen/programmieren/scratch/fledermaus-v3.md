@@ -1,13 +1,12 @@
 ---
-
-title: Fledermaus-Spiel
-description: In diesem Spiel musst du beweisen, was du alles über Fledermäuse weißt
-images:
-- fertiges-spiel.png
+title: "Fledermaus-Spiel"
+description: "In diesem Spiel musst du beweisen, was du alles über Fledermäuse weißt."
+img: "fertiges-spiel.png"
+imgposition: "center top"
 level: 1
-scratch-sprites: 2
-scratch-scripts: 10
-scratch-data: 0
+sprites: 2
+scripts: 10
+data: 0
 ---
 
 # Scratch Fledermaus-Spiel <span class="badge badge-scratch3">Scratch 3.0</span>

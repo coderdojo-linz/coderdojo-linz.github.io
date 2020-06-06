@@ -1,12 +1,12 @@
 ---
-title: Fang die Äpfel
-description: In diesem Spiel fallen Äpfel vom Himmel, die du mit deiner Schüssel fangen solltest.
-images:
-- buehne_waehrend_spiel_scaled.jpg
+title: "Fang die Äpfel"
+description: "In diesem Spiel fallen Äpfel vom Himmel, die du mit deiner Schüssel fangen solltest."
+img: "titelbild.jpg"
+imgposition: "center top"
 level: 1
-scratch-sprites: 3
-scratch-scripts: 18
-scratch-data: 2
+sprites: 3
+scripts: 18
+data: 2
 ---
 
 # Fang die Äpfel

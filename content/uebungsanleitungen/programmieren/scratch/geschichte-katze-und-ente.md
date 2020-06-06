@@ -1,12 +1,12 @@
 ---
-title: Mit Scratch eine Geschichte erzählen
-description: In dieser Übung lernst du, wie man mit Scratch eine kurze Geschichte erzählen kann.
-images:
-- scratchy-sagt-miau.png
+title: "Mit Scratch eine Geschichte erzählen"
+description: "In dieser Übung lernst du, wie man mit Scratch eine kurze Geschichte erzählen kann."
+img: "krabbe-auswaehlen.png"
+imgcover: false
 level: 1
-scratch-sprites: 2
-scratch-scripts: 3
-scratch-data: 0
+sprites: 2
+scripts: 3
+data: 0
 ---
 
 # Mit Scratch eine Geschichte erzählen

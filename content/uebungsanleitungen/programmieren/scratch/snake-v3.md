@@ -1,14 +1,12 @@
 ---
-
-title: Snake
-description: Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Rand und verwickle dich nicht, wenn die Schlange länger wird.
-images:
-- endgame.png
-- scratch-snak-v3/Code-Schlange-1.png
+title: "Snake"
+description: "Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Rand und verwickle dich nicht, wenn die Schlange länger wird."
+img: "snake.png"
+imgcover: false
 level: 2
-scratch-sprites: 3
-scratch-scripts: 13
-scratch-data: 2
+sprites: 3
+scripts: 13
+data: 2
 ---
 
 # Scratch Snake <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-snake.html" class="change-scratch-version">Scratch 2.0</a>

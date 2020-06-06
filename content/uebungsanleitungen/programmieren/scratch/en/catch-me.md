@@ -1,10 +1,8 @@
 ---
-
-title: Scratch Catch Me
-description: In this game you try to escape the shark.
+title: "Scratch Catch Me"
+description: "In this game you try to escape the shark."
+img: "endgame.png"
 level: 1
-images: 
-- 01-background.png
 ---
 
 # Scratch Catch Me
