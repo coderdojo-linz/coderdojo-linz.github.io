@@ -8,7 +8,9 @@
                     <h1>{{ .Title }}</h1>
                 </div>
                 <div class="col-12 col-md-6 mb-5">
+                    {{ if isset .Params "img" }}
                     <img src="{{.RelPermalink}}{{(index .Params.img)}}" alt="{{.Title}}">
+                    {{ end }}
                 </div>
                 <div class="col-12 col-md-6 mb-5">
                     <p class="mb-4">{{ .Description }}</p>
