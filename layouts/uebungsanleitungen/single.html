@@ -1,17 +1,42 @@
-{{ define "main" }}
+{{ define "main" }} <section id="sushi">
+    {{ partial "breadcrumb.html" . }}
 
-<section id="sushi">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                {{ partial "breadcrumb.html" . }}
-
-                <div class="sushi-content">
-                    {{ .Content }}
+    <div class="container-fluid hero-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>{{ .Title }}</h1>
+                </div>
+                <div class="col-12 col-md-6 mb-5">
+                    <img src="{{.RelPermalink}}{{(index .Params.img)}}" alt="{{.Title}}">
+                </div>
+                <div class="col-12 col-md-6 mb-5">
+                    <p class="mb-4">{{ .Description }}</p>
+                    <table class="table">
+                        <tr>
+                            <td>Figuren</td>
+                            <td>{{ .Params.sprites }}</td>
+                        </tr>
+                        <tr>
+                            <td>Skripte</td>
+                            <td>{{ .Params.scripts }}</td>
+                        </tr>
+                        <tr>
+                            <td>Variablen</td>
+                            <td>{{ .Params.data }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-{{ end }}
+    <div class="container">
+        <div class="row">
+            <div class="sushi-content"> {{ .Content }} </div>
+        </div>
+    </div>
+</section> {{ end }}

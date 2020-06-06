@@ -9,8 +9,6 @@ scripts: 18
 data: 2
 ---
 
-# Fang die Äpfel
-
 In diesem Spiel fallen Äpfel vom Himmel, die du mit deiner Schüssel fangen solltest. Jeder gefangene Apfel bringt dir einen Punkt, jeder zu Boden gefallener Apfel kostet dir ein Leben. Versuch möglichst viele Äpfel mit den 10 Leben zu fangen.
 
 ## Schritt 1: Die drei Bühnenbilder anlegen

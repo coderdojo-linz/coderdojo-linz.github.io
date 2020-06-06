@@ -1,10 +1,11 @@
 {{ define "main" }}
 
 <section id="exercises" class="exercises">
+    {{ partial "breadcrumb.html" . }}
+
     <div class="container">
         <div class="row">
             <div class="col">
-                {{ partial "breadcrumb.html" . }}
                 <h1>{{ .Title }}</h1>
             </div>
         </div>

@@ -9,31 +9,9 @@ scripts: 8
 data: 2
 ---
 
-# Scratch Moonhack
+In diesem Spiel musst du mit dem <em>Lunar Module</em> auf dem Mond landen. Aber Vorsicht, die Landung muss sanft sein und du hast nur eine begrenzte Menge an Raktentreibstoff.
 
-<div class="row sushi-intro">
-	<div class="col-sm-6"><img alt="Breakout" src="in-flight.png" /></div>
-	<div class="col-sm-6">
-		<p>In diesem Spiel musst du mit dem <em>Lunar Module</em> auf dem Mond landen. Aber Vorsicht, die Landung muss sanft sein und du hast nur eine begrenzte Menge an Raktentreibstoff.</p>
-		<p>Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/236734138/" target="_blank">https://scratch.mit.edu/projects/236734138/</a> auch gleich ausprobieren.</p>
-		<table class="table sushi-stats">
-			<tbody>
-				<tr>
-					<td>Figuren</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>Skripte</td>
-					<td>8</td>
-				</tr>
-				<tr>
-					<td>Daten</td>
-					<td>2 Variablen</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
+Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/236734138/" target="_blank">https://scratch.mit.edu/projects/236734138/</a> auch gleich ausprobieren.
 
 ## Downloads
 

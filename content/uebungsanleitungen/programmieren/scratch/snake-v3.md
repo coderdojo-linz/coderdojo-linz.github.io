@@ -9,11 +9,7 @@ scripts: 13
 data: 2
 ---
 
-# Scratch Snake <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-snake.html" class="change-scratch-version">Scratch 2.0</a>
-
-![Endgame](endgame.png){: .right}
 Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auf, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
-Das Spiel besteht aus 3 Figuren und 14 Skripten.
 
 ## Bühne & Figuren
 

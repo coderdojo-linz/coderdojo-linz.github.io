@@ -1,7 +1,7 @@
 ---
 
 title: "Weihnachtsspiel 2016"
-description: "Es ist Weihnachten. Zeit, den Baum zu dekorieren."
+description: "In diesem Spiel musst du möglichst viele, bunte Kugeln an den Weihnachtsbaum hängen. Wie viele Punkte schaffst du?"
 img: "endgame.png"
 imgposition: "center top"
 level: 1
@@ -9,12 +9,6 @@ sprites: 2
 scripts: 7
 data: 4
 ---
-
-# Scratch Weihnachtsspiel 2016
-
-In diesem Spiel musst du möglichst viele, bunte Kugeln an den Weihnachtsbaum hängen. Wie viele Punkte schaffst du?
-
-!["Weihnachtsspiel"](christmas-game.png)
 
 ## Spielregeln
 

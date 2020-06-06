@@ -6,10 +6,6 @@ imgposition: "center bottom"
 level: 2
 ---
 
-# Paddle Game
-
-In this exercise you build a little game where you try to prevent a ball from falling down with a paddle you can move from left to right.
-
 ## Creating Stage and Sprites
 
 1. ![creating stage and sprites](buehne-und-figuren.png){: .right}

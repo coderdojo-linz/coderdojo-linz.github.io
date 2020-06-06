@@ -1,20 +1,15 @@
 ---
 
 title: "Fang Mich"
-description: "In diesem Spiel musst du versuchen, dem Haifisch zu entkommen."
+description: "In diesem Spiel musst du versuchen, dem Haifisch zu entkommen. Schaffst du es?"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 1
+weight: 4
 sprites: 2
 scripts: 8
 data: 0
 ---
-
-# Scratch Fang-Mich
-
-![Endgame](endgame.png)
-
-In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?
 
 ## Bühne und Figuren anlegen
 

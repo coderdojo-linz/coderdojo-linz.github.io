@@ -9,8 +9,6 @@ scripts: 13
 data: 6
 ---
 
-# Labyrinth-Spiel mit Scratch und JavaScript <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-labyrinth.html" class="change-scratch-version">Scratch 2.0</a>
-
 ## Ziel der Übung
 
 In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.

@@ -1,6 +1,6 @@
 ---
 title: "Affe füttern"
-description: "Wirf dem Affen mit der Steinschleuder Bananen zu."
+description: "Wirf dem Affen mit der Steinschleuder Bananen zu. Drücke die Leertaste, um die Steinschleuder zu laden. Je länger du drückst, desto mehr wird die Steinschleuder gespannt und desto weiter wirfst du."
 img: "endgame.png"
 imgposition: "center bottom"
 level: 2
@@ -8,14 +8,6 @@ sprites: 4
 scripts: 7
 data: 7
 ---
-
-# Scratch Affe füttern <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-slingshot.html" class="change-scratch-version">Scratch 2.0</a>
-
-Drücke die Leertaste, um die Steinschleuder zu laden. Je länger du drückst, desto mehr wird die Steinschleuder gespannt und desto weiter wirfst du.
-
-![Endgame](endgame.png){: .right}
-
-Das Spiel besteht aus 4 Figuren und 7 Codeblöcken.
 
 ## Figuren anlegen
 

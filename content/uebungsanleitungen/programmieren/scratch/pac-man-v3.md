@@ -9,10 +9,8 @@ scratch-scripts: 19
 scratch-data: 28
 ---
 
-# Scratch Pac Man <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-pac-man.html" class="change-scratch-version">Scratch 2.0</a>
-
-![Endgame](endgame.png)
 Pac-Man ist ein klassisches Computerspiel. Es erschien erstmals 1980 in Japan.
+
 Pac-Man muss alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu laufen. Die blauen Pillen verleihen ihm für kurze Zeit Superkräfte, und er kann Geister einfrieren.
 
 ## Vorbereitungen

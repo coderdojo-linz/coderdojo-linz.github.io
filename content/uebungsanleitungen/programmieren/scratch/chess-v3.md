@@ -9,32 +9,7 @@ scripts: 35
 data: 70
 ---
 
-# Scratch Chess
-
-<div class="row sushi-intro">
-	<div class="col-sm-6"><img alt="Chess" src="chess-game.png" /></div>
-	<div class="col-sm-6">
-		<p></p>
-		<p>In diesem Beispiel wollen wir ein Schachspiel bauen, und dabei vor allem die beiden wichtigsten Funktionen - das Ausführen von verschiedenen Zugkombinationen, und die Bewertung des daraus resultierenden Brettbilds.</p>
-		<p>Du kannst das fertige Project auch gleich einmal unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> ausprobieren.</p>
-		<table class="table sushi-stats">
-			<tbody>
-				<tr>
-					<td>Figuren</td>
-					<td>4</td>
-				</tr>
-				<tr>
-					<td>Skripte</td>
-					<td>35</td>
-				</tr>
-				<tr>
-					<td>Daten</td>
-					<td>70</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
+Du kannst das fertige Project unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> ausprobieren.
 
 Schachprogramme versuchen den jeweils besten Zug zu finden, und müssen dabei möglichst viele Züge im Voraus berechnen. Die Anzahl der zu untersuchenden Brettbilder wächst dadurch enorm an (exponentielles Wachstum), sodass sogar moderne Computer an ihre Rechengrenzen stoßen. Unser Schachprogramm muss daher schnell und schlau sein. Schlau heißt, dass nicht jede Zugkombination nachverfolgt wird, sondern schlechte Züge gleich wieder verworfen werden. Wenn das Programm einige Züge hintereinander berechnet hat, bewertet es das entstandene Brettbild.
 

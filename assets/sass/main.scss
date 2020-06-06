@@ -215,17 +215,13 @@ footer p a:hover {
 }
 
 /* breadcrumb */
-.breadcrumb-nav {
+.breadcrumb-container {
     position: fixed;
     top: 30px;
     background-color: white;
     display: block;
     width: 100%;
     z-index: 100;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 ol.breadcrumb {
@@ -502,7 +498,17 @@ iframe[src*="jsfiddle"] {
     resize: both;
 }
 
+#sushi {
+    .hero-banner {
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+}
+
 .sushi-content {
+    p:first-child {
+        margin-block-start: 2em;
+    }
+
     img {
         display: block;
         margin-block-start: 1em;

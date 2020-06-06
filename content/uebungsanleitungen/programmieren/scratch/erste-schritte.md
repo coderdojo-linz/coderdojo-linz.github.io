@@ -4,14 +4,11 @@ description: "In dieser Übung legst du ein neues Projekt an und lässt Scratchy
 img: "scratchy.png"
 imgcover: false
 level: 1
+weight: 1
 sprites: 1
 scripts: 2
 data: 0
 ---
-
-# Erste Schritte mit Scratch
-
-In dieser Übung legst du ein neues Projekt an und lässt Scratchy, die Katze, am Bildschirm herumlaufen.
 
 ## Neues Projekt erstellen
 

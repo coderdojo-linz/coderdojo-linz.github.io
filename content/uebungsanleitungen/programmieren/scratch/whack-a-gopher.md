@@ -1,19 +1,13 @@
 ---
 title: "Whack a Gopher"
-description: "Ein Spiel basierend auf der Idee von 'Whack a mole'."
+description: "Ein Spiel basierend auf der Idee von 'Whack a mole'. In diesem Spiel musst du möglichst viele Gopher mit dem Besen verjagen. Wie viele Punkte schaffst du?"
 img: "endgame.png"
 imgposition: "center bottom"
-level: 2
+level: 1
 sprites: 3
 scripts: 7
 data: 4
 ---
-
-# Scratch Whack a Gopher
-
-In diesem Spiel musst du möglichst viele Gopher mit dem Besen verjagen. Wie viele Punkte schaffst du?
-
-!["Whack-a-gopher"](main.png){: .max-full}
 
 Die Katze brauchen wir in diesem Spiel nicht. Wir können sie löschen in dem wir die Katze wählen und auf das kleine blaue X drücken.
 

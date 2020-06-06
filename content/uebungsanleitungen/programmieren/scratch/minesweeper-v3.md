@@ -1,6 +1,6 @@
 ---
 title: "Minesweeper"
-description: "Finde die Bomben."
+description: "In diesem Spiel musst du die Bomben im Spielfeld finden. Klicke auf eine Zelle um sie umzudrehen. Wenn du gleichzeitig die Leertaste drückst, markierst du eine Zelle als Bombe."
 img: "endgame-1.png"
 imgcover: false
 level: 3
@@ -8,14 +8,6 @@ sprites: 2
 scripts: 15
 data: 6
 ---
-
-# Scratch Minesweeper <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-minesweeper.html" class="change-scratch-version">Scratch 2.0</a>
-
-In diesem Spiel musst du die Bomben im Spielfeld finden. Klicke auf eine Zelle um sie umzudrehen. Wenn du gleichzeitig die Leertaste drückst, markierst du eine Zelle als Bombe.
-
-![Endgame](endgame.png){: .right}
-
-Das Spiel besteht aus 2 Figuren und 15 Codeblöcken.
 
 ## Figuren anlegen
 

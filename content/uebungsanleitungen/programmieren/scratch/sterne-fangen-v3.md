@@ -9,13 +9,9 @@ scripts: 7
 data: 3
 ---
 
-# Scratch Sterne fangen <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-sterne-fangen.html" class="change-scratch-version">Scratch 2.0</a>
-
 Verwende die Pfeiltasten nach links und rechts um am Boden zu laufen und die Pfeiltaste nach oben um hochzuspringen. Fange so viele Sterne wie möglich.
 
-![Endgame](endgame.png){: .right}
-
-Das Spiel besteht aus 3 Figuren und 7 Skripten. Es basiert auf dem Spiel [Gravity!! von gilnz21](https://scratch.mit.edu/projects/63121636/).
+Das Spiel basiert auf dem Spiel [Gravity!! von gilnz21](https://scratch.mit.edu/projects/63121636/).
 
 ## Figuren anlegen
 

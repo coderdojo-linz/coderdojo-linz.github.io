@@ -1,13 +1,9 @@
 ---
-title: "Scratch Catch Me"
-description: "In this game you try to escape the shark."
+title: "Catch Me"
+description: "In this game you are a little fish and you try to escape the big dangerous shark. Can you do it?"
 img: "endgame.png"
 level: 1
 ---
-
-# Scratch Catch Me
-
-In this game you are a little fish and you try to escape the big dangerous shark. Can you do it?
 
 ## Creating Stage and Sprites
 

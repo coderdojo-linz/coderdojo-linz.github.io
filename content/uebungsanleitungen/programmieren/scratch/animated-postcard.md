@@ -3,17 +3,14 @@ title: "Animierte Ansichtskarte"
 description: "Die gute alte Ansichtskarte mit Briefmarke war Gestern - heute bauen wir uns unsere eigene animierte Karte und verschicken sie an unsere Freunde."
 img: "endgame.png"
 imgposition: "center bottom"
-level: 3
+level: 2
 sprites: 2
 scripts: 5
 data: 0
 ---
 
-# Animierte Ansichtskarte
-
-Die gute alte Ansichtskarte mit Briefmarke war Gestern - heute bauen wir uns unsere eigene animierte Karte und verschicken sie an unsere Freunde. 
-
 Eine solche Karte kannst du zum Beispiel verwenden:
+
 * als Ansichtskarte vom Urlaub
 * als Grußkarte zum Geburtstag
 

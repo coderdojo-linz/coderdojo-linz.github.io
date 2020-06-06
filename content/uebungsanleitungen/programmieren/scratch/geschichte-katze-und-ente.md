@@ -9,8 +9,6 @@ scripts: 3
 data: 0
 ---
 
-# Mit Scratch eine Geschichte erzählen
-
 Mit Scratch kannst du Geschichten erzählen. Du kannst Figuren erscheinen lassen, sie bewegen, den Hintergrund austauschen und vieles mehr.
 
 ## Neues Projekt erstellen

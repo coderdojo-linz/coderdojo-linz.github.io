@@ -9,31 +9,9 @@ scripts: 6
 data: 2
 ---
 
-# Scratch Space Shooter II <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-space-shooter-2.html" class="change-scratch-version">Scratch 2.0</a>
+Hast du die <a href="scratch-space-shooter.html">Space Shooter Scratch Übung</a> schon geschafft? Dann bist du genau richtig hier. Deine Aufgabe ist es, einen modifizierten Space Shooter zu bauen - diesmal aber ohne kompletter Anleitung.
 
-<div class="row sushi-intro">
-	<div class="col-sm-6"><img alt="Breakout" src="01-space-shooter-final.png" /></div>
-	<div class="col-sm-6">
-		<p>Hast du die <a href="scratch-space-shooter.html">Space Shooter Scratch Übung</a> schon geschafft? Dann bist du genau richtig hier. Deine Aufgabe ist es, einen modifizierten Space Shooter zu bauen - diesmal aber ohne kompletter Anleitung.</p>
-		<p>Falls du Hilfe brauchst, kannst du dir Anregungen beim fertigen Spiel unter <a href="https://scratch.mit.edu/projects/236866631/" target="_blank">https://scratch.mit.edu/projects/236866631/</a> holen.</p>
-		<table class="table sushi-stats">
-			<tbody>
-				<tr>
-					<td>Figuren</td>
-					<td>4</td>
-				</tr>
-				<tr>
-					<td>Skripte</td>
-					<td>6</td>
-				</tr>
-				<tr>
-					<td>Daten</td>
-					<td>2 Variablen</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
+Falls du Hilfe brauchst, kannst du dir Anregungen beim fertigen Spiel unter <a href="https://scratch.mit.edu/projects/236866631/" target="_blank">https://scratch.mit.edu/projects/236866631/</a> holen.
 
 ## Bühne und Figuren anlegen
 

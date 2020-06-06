@@ -1,19 +1,13 @@
 ---
-
 title: "Weihnachtsspiel"
-description: "Wie viele Geschenke kannst du in einer Minute liefern?"
+description: "Bald ist Weihnachten - und der Weihnachtsmann hat alle Hände voll zu tun, um die Geschenke rechtzeitig in die Häuser zu bringen. Wie viel schaffst du in einer Minute?"
 img: "weihnachtsmann-position.png"
 imgposition: "center top"
-level: 1
+level: 2
 sprites: 4
 scripts: 9
 data: 1
 ---
-
-# Scratch Weihnachtsspiel
-Bald ist Weihnachten - und der Weihnachtsmann hat alle Hände voll zu tun, um die Geschenke rechtzeitig in die Häuser zu bringen. Wie viel schaffst du in einer Minute?
-
-Das Spiel besteht aus 4 Figuren und 9 Skripten!
 
 ## Bilder downloaden
 

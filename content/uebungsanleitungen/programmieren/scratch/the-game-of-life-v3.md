@@ -9,8 +9,6 @@ scripts: 21
 data: 20
 ---
 
-# The Game of Life <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-the-game-of-life.html" class="change-scratch-version">Scratch 2.0</a>
-
 Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“ (farbig). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
 
 * Eine tote Zelle mit genau drei lebenden Nachbarn wird neu geboren

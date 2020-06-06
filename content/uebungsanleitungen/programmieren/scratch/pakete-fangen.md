@@ -1,6 +1,7 @@
 ---
 title: "Pakete Fangen"
-description: "Fange die Weihnachts-Pakete bevor sie auf den Boden fallen"
+description: "Leider ist das Förderband in der Werkstatt des Weihnachtsmanns kaputt. Kannst du die Pakete auffangen, bevor sie auf den Boden fallen
+und kaputt gehen."
 img: "endgame.png"
 imgposition: "center top"
 level: 1
@@ -8,13 +9,6 @@ sprites: 4
 scripts: 4
 data: 3
 ---
-
-# Weihnachtspakete fangen
-
-Leider ist das Förderband in der Werkstatt des Weihnachtsmanns kaputt. Kannst du die Pakete auffangen, bevor sie auf den Boden fallen
-und kaputt gehen.
-
-![Packerl fangen Spiel](spiel.png){: .right}
 
 ## Vorbereitung
 

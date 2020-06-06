@@ -1,6 +1,6 @@
 ---
 title: "Memory"
-description: "Drehe zwei Karten um und finde zusammenpassende Paare."
+description: "In diesem Spiel musst du zusammenpassende Paare finden. Du darfst immer nur zwei Karten gleichzeitig umdrehen. Wie viele Versuche brauchst du, bis du alle Paare gefunden hast?"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 2
@@ -8,14 +8,6 @@ sprites: 2
 scripts: 10
 data: 11
 ---
-
-# Scratch Memory <span class="badge badge-scratch3">Scratch 3.0</span> <a href="scratch-memory.html" class="change-scratch-version">Scratch 2.0</a>
-
-In diesem Spiel musst du zusammenpassende Paare finden. Du darfst immer nur zwei Karten gleichzeitig umdrehen. Wie viele Versuche brauchst du, bis du alle Paare gefunden hast?
-
-<p class="center"><img alt="Snake Game" src="memory-game.png" /></p>
-
-Das Spiel besteht aus 2 Figuren und 10 Skripten.
 
 ## Figuren anlegen
 

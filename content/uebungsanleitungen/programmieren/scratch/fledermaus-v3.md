@@ -1,6 +1,6 @@
 ---
 title: "Fledermaus-Spiel"
-description: "In diesem Spiel musst du beweisen, was du alles über Fledermäuse weißt."
+description: "In diesem Spiel musst du beweisen, was du alles über Fledermäuse weißt. Nach einer Idee von Verena Straßer."
 img: "fertiges-spiel.png"
 imgposition: "center top"
 level: 1
@@ -8,12 +8,6 @@ sprites: 2
 scripts: 10
 data: 0
 ---
-
-# Scratch Fledermaus-Spiel <span class="badge badge-scratch3">Scratch 3.0</span>
-
-(nach einer Idee von Verena Straßer)
-
-![Endgame](fertiges-spiel.png)
 
 Hier erstellst du ein Quiz zum Thema *Fledermaus*. Wenn du viele Fragen richtig beantworten kannst, erhältst du einen Pokal.
 

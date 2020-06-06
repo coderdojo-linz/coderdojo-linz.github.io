@@ -9,13 +9,7 @@ scripts: 2
 data: 1
 ---
 
-# Scratch Sierpinski Dreieck
-
 Ein Fraktal ist ein Objekt, dass oft aus mehreren verkleinerten Kopien seiner selbst besteht. Hier siehst du ein großes Dreieck, das aus mehreren kleineren Dreiecken zusammengesetzt ist, die wiederum aus noch kleineren Dreiecken bestehen. Man nennt dieses Fraktal Sierpinski Dreieck.
-
-<p class="center"><img alt="Sierpinski Dreieck " src="sierpinski-dreieck.png" /></p>
-
-Die Übung besteht aus 1 Figur und 2 Skripten.
 
 ## Figuren anlegen
 
