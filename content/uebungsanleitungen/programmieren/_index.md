@@ -7,4 +7,6 @@ date: 2020-05-17T08:13:15+02:00
 draft: false
 ---
 
-Von Scratch über JavaScript bis zu Minecraft ist für jedes Alter und jeden Schwierigkeitsgrad was dabei.
+Lerne, wie man Spiele, Webseiten, Minecraft-Mods und vieles mehr programmiert.
+
+Egal, ob du noch nie programmiert oder schon etwas Erfahrung hast. Hier ist für jedes Alter und jeden Schwierigkeitsgrad etwas dabei.
