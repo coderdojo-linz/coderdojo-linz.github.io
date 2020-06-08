@@ -1,0 +1,33 @@
+[
+    {
+        "begintime": "2020-06-12T13:45:00",
+        "endtime": "2020-06-12T18:00:00",
+        "eventtype": "CoderDojo Virtual",
+        "workshops": [
+            {
+                "begintime": "2020-06-12T13:45:00",
+                "endtime": "2020-06-12T18:00:00",
+                "title": "Virtuelles Elektronikbasteln",
+                "description": "TBD",
+                "prerequisites": "Ein Computer mit Tinkercad Zugang.",
+                "mentors": ["Günther", "Michael"]
+            },
+            {
+                "begintime": "2020-06-12T13:45:00",
+                "endtime": "2020-06-12T15:45:00",
+                "title": "Scratch für AnfängerInnen",
+                "description": "Letzte Woche hatten wir wieder mal eine Scratch-Übung für Kids, die noch nie programmiert haben. Diese Woche machen wir mit einem zweiten Spiel weiter, das schon etwas anspruchsvoller ist, sich aber immer noch gut für Anfängerinnen und Anfänger eignet. Wenn du also die Grundbegriffe von Scratch kennst und mehr lernen möchtest, bist du in diesem Workshop richtig.\n\nWenn du mitmachen möchtest, aber noch nie etwas in Scratch gemacht hast, baue einfach zur Vorbereitung selbständig oder mit Hilfe einer erwachsenen Person unser Einsteigerbeispiel Fang mich nach. Du wirst sehen, das ist überhaupt nicht schwer.",
+                "prerequisites": "- Nur grundlegendste Vorkenntnisse über Programmieren notwendig\n- Software für die Teilnahme an Online CoderDojos (Anleitung)\n- Installierte Version von Scratch (Download)\n- Online-Version von Scratch - dafür brauchst du nur einen Browser und öffnest https://scratch.mit.edu/create/",
+                "mentors": ["Pia"]
+            },
+            {
+                "begintime": "2020-06-12T16:00:00",
+                "endtime": "2020-06-12T18:00:00",
+                "title": "HTML & CSS Hands-On",
+                "description": "Diese Woche werden wir uns auf das Flexbox und Grid Layout von CSS konzentrieren und nebenbei auf die Basic CSS Features von erstem Workshop wiederholen.",
+                "prerequisites": "Ein wenig Erfahrung mit HTML & CSS.",
+                "mentors": ["Karin", "Rainer"]
+            }
+        ]
+    }
+]

@@ -67,7 +67,7 @@ h2 {
         content: '';
         margin: 1rem auto 0 auto;
         margin-block-end: 2rem;
-        border-bottom: 2px solid $font-color;
+        border-bottom: 2px solid $primary-color;
     }
 }
 
@@ -133,6 +133,10 @@ section {
             }
         }
     }
+}
+
+section.secondary {
+    background-color: rgba(0,0,0,.05);;
 }
 
 section.primary {
@@ -281,13 +285,11 @@ ol.breadcrumb {
     padding: 0;
     line-height: 40px;
     margin-bottom: 10px;
-    // margin-block-start: 2rem;
-    // margin-block-end: 1rem;
 }
 
-nav.breadcrumb-nav+h1 {
-    margin-block-start: 0rem;
-}
+// nav.breadcrumb-nav+h1 {
+//     margin-block-start: 0rem;
+// }
 
 @media print {
     .breadcrumb-nav {
@@ -413,8 +415,8 @@ nav.breadcrumb-nav+h1 {
 
         p {
             color: #fff;
-            font-size: 1.2rem;
-            font-weight: 300;
+            font-weight: 600;
+            margin-bottom: 0;
         }
     }
 }
@@ -426,6 +428,10 @@ nav.breadcrumb-nav+h1 {
 }
 
 /* events */
+#events-corona {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('/img/hero/corona.jpg');
+}
+
 section.events {
     .event-type {
         margin-right: 10px;
@@ -452,7 +458,7 @@ section.events {
     }
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         font-weight: 700;
 
         .time {

@@ -1,9 +1,8 @@
 ---
 title: "Termine"
-type: termine
 ---
 
-# Termine
+## Termin-Typen
 
 Es gibt vier verschiedene Veranstaltungen:
 
@@ -16,7 +15,7 @@ Diese CoderDojos finden online statt. Bitte installiere dir zum Teilnehmen den [
 {{< /event/type >}}
 
 {{< event/type "Playground" >}}
-Beim Playground hast du Gelegenheit, im Umfeld von anderen jungen Codern selbständig an deinen Projekten zu arbeiten und zu üben. Mentorinnen und Mentoren stehen hier weniger zur Verfügung. [Mehr über Playgrounds …](/info/playgrounds)
+Beim Playground hast du Gelegenheit, im Umfeld von anderen jungen Codern selbständig an deinen Projekten zu arbeiten und zu üben. Mentorinnen und Mentoren stehen hier weniger zur Verfügung. [Mehr über Playgrounds …](/termine/playgrounds)
 {{< /event/type >}}
 
 {{< event/type "Classroom" >}}
