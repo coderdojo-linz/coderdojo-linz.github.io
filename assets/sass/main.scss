@@ -243,118 +243,87 @@ nav.breadcrumb-nav+h1 {
 
 /* hero area */
 .hero-area {
-    height: 100vh;
+    height: 75vh;
     width: 100%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // background: linear-gradient(rgba(255, 255, 255, 0.0),
-    //         rgba(255, 255, 255, 0.0)), url(img/hero-image.png);
-    // background-position: bottom center;
-    // background-size: cover;
-    // background-attachment: fixed;
-    //color: #fff;
-    transform: translate3d(0, 0, 0);
     position: relative;
 
     .hero {
         position: absolute;
         top: 0;
         left: 0;
-        height: calc(100% - 250px);
+        height: 100%;
         width: 100%;
+
+        background: linear-gradient(rgba(#000000, 0.3),
+                rgba(#000000, 0.8)), url(img/hero/hero-2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+
+        > .container > .row {
+            height: 75vh;
+            padding-bottom: 60px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            &::after {
+                content: '';
+                margin: 0;
+                margin-block-end: 0;
+                border-bottom: none;
+            }
+        }
+
+        h1 + p {
+            font-size: 1.6em;
+        }
+
+        .header, p {
+            color: #fff;
+        }
+
+        .events {
+            margin-top: 100px;
+            height: calc(75vh - 200px);
+            background-color: rgba(#fff, 0.66);
+            border-radius: 10px;
+        }
+
+        // >div {
+        //     position: absolute;
+        //     bottom: 0;
+        //     width: 100%;
+        //     height: 25%;
+        //     background-color: #333;
+
+
+        //     >div {
+        //         width: 25vw;
+        //         float: left;
+
+        //         position: absolute;
+        //         bottom: 0;
+        //         left: 0;
+        //         width: 100%;
+        //         color: #fff;
+        //         padding: 20px;
+
+        //         p {
+        //             color: #fff;
+        //         }
+        //     }
+        // }
     }
 
-    .description {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 250px;
-        width: 100%;
-        background-color: $primary-color;
-        color: #fff;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+    @media(max-width: 991.98px) {
         h1 {
-            font-size: 3rem;
-            font-family: 'Indie Flower', cursive;
-            line-height: 1em;
-            margin-block-start: 0 !important;
-            margin-top: 0;
-            margin-block-end: 0;
-            margin-bottom: 0;
-            font-weight: 600;
-            letter-spacing: 2px;
-
-            &::after {
-                content: '';
-                border: none;
-                margin: 0;
-            }
+            font-size: 1.6rem;
         }
 
-        h2 {
-            margin-block-start: 0.5rem !important;
-            font-size: 1.3rem;
-            margin-block-end: 2rem;
-
-            &::after {
-                content: '';
-                border: none;
-                margin: 0;
-            }
-        }
-
-        @media(max-width: 991.98px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1rem;
-            }
-        }
-    }
-
-    @each $index,
-    $speed,
-    $height in (1, 1000s, 100vh),
-    (2, 600s, 100vh),
-    (3, 500s, 120vh),
-    (4, 300s, 80vh),
-    (5, 150s, 60vh) {
-        .layer-#{$index} {
-            background: url('/img/hero/layer#{$index}.png') 0 100% repeat-x;
-            z-index: 1;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: auto $height;
-            overflow-x: hidden;
-        }
-    }
-
-    @each $index,
-    $speed,
-    $height in (4, 1000s, 80vh),
-    (5, 400s, 60vh) {
-        .layer-#{$index} {
-            animation: parallax_fg linear $speed infinite both;
-        }
-    }
-
-    @keyframes parallax_fg {
-        0% {
-            background-position: 2765px 100%;
-        }
-
-        100% {
-            background-position: 550px 100%;
+       .hero h1 + p {
+            font-size: 1rem;
         }
     }
 }
