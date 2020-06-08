@@ -13,9 +13,11 @@
         {{ end }}
 
         {{ if not .p1.IsHome }}
+        {{ if ne .p1 .p2 }}
         <li class="breadcrumb-item{{ if eq .p1 .p2 }} active {{ end }}">
             <a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a>
         </li>
+        {{ end }}
         {{ end }}
         {{ end }}
         </nav>

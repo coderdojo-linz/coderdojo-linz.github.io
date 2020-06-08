@@ -1,10 +1,11 @@
 ---
-title: Für Eltern
-description: Häufige Fragen von Eltern zum CoderDojo
+title: "Für Eltern"
+heroImage: "hero-3.jpg"
+heroImagePosition: "50% 50%" 
+heroDescription: "Programmier-Anfänger bei der Arbeit"
 ---
 
 # Informationen für Eltern #
-
 
 ## Was ist ein CoderDojo? ##
 

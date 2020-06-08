@@ -1,31 +1,14 @@
-{{ define "main" }}
-<!-- <section id="mentors-hero" class="mentors hero-area">
-    <div class="hero">
-        <div class="container-fluid">
-            <div class="row align-items-end">
-                <div class="col hero-description">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-md-8 offset-md-2 text-center">
-                                <div class="header">
-                                    <p>Werde Mitglied der CoderDojo Linz Mentoren!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
+{{ define "main" }} 
 
 <section id="mentors" class="mentors">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>CoderDojo Linz Mentoren</h1>
+                <h1>Unsere Mentoren</h1>
             </div>
-        </div> {{ range $index, $element := (.Page.Pages.ByParam "title") }}
+        </div> 
+        
+        {{ range $index, $element := (.Page.Pages.ByParam "title") }}
         <!-- <div class="row">
             <div class="col">
                 <h2 class="text-center text-sm-left">{{ .Title }}</h2>

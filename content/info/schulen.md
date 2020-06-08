@@ -1,5 +1,8 @@
 ---
 title: "Infos für Schulen"
+heroImage: "schule.jpg"
+heroImagePosition: "40% 30%" 
+heroDescription: "Wir kommen auch gerne zu euch in die Schule"
 ---
 
 # CoderDojo an Schulen

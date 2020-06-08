@@ -1,5 +1,8 @@
 ---
 title: "Informationen für Mentoren"
+heroImage: "hero-5.jpg"
+heroImagePosition: "50% 60%" 
+heroDescription: "CoderDojo Mentoren helfen den Kindern und Jugendlichen"
 ---
 
 # Wir suchen Mentoren!

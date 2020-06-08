@@ -1,5 +1,8 @@
 ---
 title: "Informationen für Kinder und Jugendliche"
+heroImage: "hero-1.jpg"
+heroImagePosition: "50% 30%" 
+heroDescription: "Erfahrene CoderDojo Teilnehmer arbeiten an ihren Projekten"
 ---
 
 # Neugierig auf Technik und Programmieren?

@@ -1,6 +1,7 @@
 ---
-title: "Mentoren"
-type: mentoren
+title: "CoderDojo Linz Mentoren"
+heroImage: "mentoren.jpg"
+heroDescription: "Weihnachtsfeier der Mentoren im NIU"
 ---
 
 ## Möchtest du Mentor werden?
