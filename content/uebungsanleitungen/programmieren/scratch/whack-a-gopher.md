@@ -1,6 +1,7 @@
 ---
 title: "Whack a Gopher"
 description: "Ein Spiel basierend auf der Idee von 'Whack a mole'. In diesem Spiel musst du möglichst viele Gopher mit dem Besen verjagen. Wie viele Punkte schaffst du?"
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 1

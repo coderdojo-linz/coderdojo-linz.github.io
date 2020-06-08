@@ -1,6 +1,7 @@
 ---
 title: "Sierpinski Dreieck"
 description: "Male mit Scratch ein Sierpinski Dreieick."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgcover: false
 level: 2

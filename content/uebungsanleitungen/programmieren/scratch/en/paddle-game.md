@@ -1,6 +1,7 @@
 ---
 title: "Paddle Game"
 description: "In this exercise you build a little game where you try to prevent a ball from falling down with a paddle you can move from left to right."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "buehne-und-figuren.png"
 imgposition: "center bottom"
 level: 2

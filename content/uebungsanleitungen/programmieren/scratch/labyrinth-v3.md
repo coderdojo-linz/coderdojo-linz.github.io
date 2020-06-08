@@ -1,6 +1,7 @@
 ---
 title: "Labyrinth-Spiel mit Scratch und JavaScript"
 description: "In dieser Übung programmierst du ein Spiel mit Scratch und übersetzt es dann in JavaScript."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center top"
 level: 3

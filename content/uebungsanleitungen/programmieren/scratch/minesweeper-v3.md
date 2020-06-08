@@ -1,6 +1,7 @@
 ---
 title: "Minesweeper"
 description: "In diesem Spiel musst du die Bomben im Spielfeld finden. Klicke auf eine Zelle um sie umzudrehen. Wenn du gleichzeitig die Leertaste drückst, markierst du eine Zelle als Bombe."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame-1.png"
 imgcover: false
 level: 3

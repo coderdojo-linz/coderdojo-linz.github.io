@@ -2,6 +2,7 @@
 title: "Pakete Fangen"
 description: "Leider ist das Förderband in der Werkstatt des Weihnachtsmanns kaputt. Kannst du die Pakete auffangen, bevor sie auf den Boden fallen
 und kaputt gehen."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center top"
 level: 1

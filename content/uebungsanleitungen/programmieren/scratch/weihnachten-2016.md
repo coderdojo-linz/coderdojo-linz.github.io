@@ -2,6 +2,7 @@
 
 title: "Weihnachtsspiel 2016"
 description: "In diesem Spiel musst du möglichst viele, bunte Kugeln an den Weihnachtsbaum hängen. Wie viele Punkte schaffst du?"
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center top"
 level: 1

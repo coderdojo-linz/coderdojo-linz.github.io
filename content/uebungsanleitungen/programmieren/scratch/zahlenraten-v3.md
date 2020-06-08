@@ -1,6 +1,7 @@
 ---
 title: "Zahlenraten"
 description: "In diesem Spiel musst du eine Zahl erraten, die sich der Computer ausgedacht hat. Schaffst du es in weniger als 9 Versuchen?"
+type: "uebungsanleitungen/programmieren/scratch"
 img: "10-liste.PNG"
 imgposition: "center top"
 level: 1

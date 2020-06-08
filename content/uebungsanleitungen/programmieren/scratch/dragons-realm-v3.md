@@ -1,6 +1,7 @@
 ---
 title: "Dragons Realm"
 description: "Verteidige als Drache dein Territorium gegen die Eindringlinge."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "dragons.png"
 imgposition: "center bottom"
 level: 3

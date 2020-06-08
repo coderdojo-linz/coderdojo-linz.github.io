@@ -1,6 +1,7 @@
 ---
 title: "Snake"
 description: "Lass die Schlange die Äpfel aufsammeln aber berühre nicht den Rand und verwickle dich nicht, wenn die Schlange länger wird."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "snake.png"
 imgcover: false
 level: 2

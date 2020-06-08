@@ -1,6 +1,7 @@
 ---
 title: "Pac Man"
 description: "Friss dich durch's Labyrinth."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 3

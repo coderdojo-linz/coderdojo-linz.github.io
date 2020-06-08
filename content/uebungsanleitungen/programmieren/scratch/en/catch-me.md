@@ -1,6 +1,7 @@
 ---
 title: "Catch Me"
 description: "In this game you are a little fish and you try to escape the big dangerous shark. Can you do it?"
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 level: 1
 ---

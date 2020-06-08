@@ -1,6 +1,7 @@
 ---
 title: "Space Shooter II"
 description: "Hast du den Space Shooter schon geschafft? Dann probiere diese Herausforderung."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "01-space-shooter-final.png"
 imgposition: "center bottom"
 level: 2

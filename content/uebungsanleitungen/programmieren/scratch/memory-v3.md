@@ -1,6 +1,7 @@
 ---
 title: "Memory"
 description: "In diesem Spiel musst du zusammenpassende Paare finden. Du darfst immer nur zwei Karten gleichzeitig umdrehen. Wie viele Versuche brauchst du, bis du alle Paare gefunden hast?"
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 2

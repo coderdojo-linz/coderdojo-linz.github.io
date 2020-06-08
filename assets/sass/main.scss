@@ -265,18 +265,24 @@ footer p a:hover {
 /* breadcrumb */
 .breadcrumb-container {
     position: fixed;
-    top: 30px;
-    background-color: white;
+    top: 50px;
+    background-color: transparent;
     display: block;
     width: 100%;
     z-index: 100;
+
+    &.navbar-scroll {
+        background-color: white;
+    }
 }
 
 ol.breadcrumb {
     background-color: transparent;
     padding: 0;
-    margin-block-start: 2rem;
-    margin-block-end: 1rem;
+    line-height: 40px;
+    margin-bottom: 10px;
+    // margin-block-start: 2rem;
+    // margin-block-end: 1rem;
 }
 
 nav.breadcrumb-nav+h1 {
@@ -558,16 +564,17 @@ iframe[src*="jsfiddle"] {
     resize: both;
 }
 
-#sushi {
-    .hero-banner {
-        background-color: rgba(0, 0, 0, 0.03);
-    }
+#sushi-overview {
+    background-color: rgba(0, 0, 0, 0.05);
+    // > .container-fluid {
+    //     background-color: rgba(0, 0, 0, 0.10);
+    // }
 }
 
 .sushi-content {
-    p:first-child {
-        margin-block-start: 2em;
-    }
+    // p:first-child {
+    //     margin-block-start: 2em;
+    // }
 
     img {
         display: block;

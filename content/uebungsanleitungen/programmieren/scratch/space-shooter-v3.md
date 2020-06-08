@@ -1,6 +1,7 @@
 ---
 title: "Space Shooter"
 description: "In dieser Übung schießt du mit deinem Raumschiff herabfallende Meteoriten ab bevor sie dein Raumschiff zerstören."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 2

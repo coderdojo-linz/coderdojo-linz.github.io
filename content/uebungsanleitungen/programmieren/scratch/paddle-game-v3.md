@@ -1,6 +1,7 @@
 ---
 title: "Paddle Game"
 description: "In dieser Übung baust du ein kleines Spiel, indem du versuchst, einen Ball mit einem Schläger in der Luft zu halten."
+type: "uebungsanleitungen/programmieren/scratch"
 level: 1
 img: "endgame.png"
 imgposition: "center bottom"

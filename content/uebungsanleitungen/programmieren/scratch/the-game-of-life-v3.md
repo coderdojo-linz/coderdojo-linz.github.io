@@ -1,6 +1,7 @@
 ---
 title: "The Game of Life"
 description: "Erwecke Zellen zum Leben."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "the-game-of-life.png"
 imgposition: "center bottom"
 level: 3

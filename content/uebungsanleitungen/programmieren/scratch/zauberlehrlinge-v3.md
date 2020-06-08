@@ -2,6 +2,7 @@
 
 title: "Die Zauberlehrlinge"
 description: "Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 2

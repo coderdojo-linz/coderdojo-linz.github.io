@@ -1,6 +1,7 @@
 ---
 title: "Fang die Äpfel"
 description: "In diesem Spiel fallen Äpfel vom Himmel, die du mit deiner Schüssel fangen solltest."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "titelbild.jpg"
 imgposition: "center top"
 level: 1

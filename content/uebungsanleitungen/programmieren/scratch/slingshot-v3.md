@@ -1,6 +1,7 @@
 ---
 title: "Affe füttern"
 description: "Wirf dem Affen mit der Steinschleuder Bananen zu. Drücke die Leertaste, um die Steinschleuder zu laden. Je länger du drückst, desto mehr wird die Steinschleuder gespannt und desto weiter wirfst du."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 2

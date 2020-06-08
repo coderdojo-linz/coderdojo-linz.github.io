@@ -1,6 +1,7 @@
 ---
 title: "Fledermaus-Spiel"
 description: "In diesem Spiel musst du beweisen, was du alles über Fledermäuse weißt. Nach einer Idee von Verena Straßer."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "fertiges-spiel.png"
 imgposition: "center top"
 level: 1

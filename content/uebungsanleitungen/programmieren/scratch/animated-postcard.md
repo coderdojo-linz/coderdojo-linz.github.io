@@ -1,6 +1,7 @@
 ---
 title: "Animierte Ansichtskarte"
 description: "Die gute alte Ansichtskarte mit Briefmarke war Gestern - heute bauen wir uns unsere eigene animierte Karte und verschicken sie an unsere Freunde."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 2

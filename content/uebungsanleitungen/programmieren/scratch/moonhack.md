@@ -1,6 +1,7 @@
 ---
 title: "Moonhack"
 description: "In diesem Spiel landest du auf dem Mond."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center top"
 level: 1

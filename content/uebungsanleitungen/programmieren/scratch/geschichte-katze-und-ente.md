@@ -1,6 +1,7 @@
 ---
 title: "Mit Scratch eine Geschichte erzählen"
 description: "In dieser Übung lernst du, wie man mit Scratch eine kurze Geschichte erzählen kann."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "krabbe-auswaehlen.png"
 imgcover: false
 level: 1

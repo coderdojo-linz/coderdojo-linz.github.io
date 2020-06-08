@@ -3,10 +3,10 @@ function updateNavbarScrollState() {
 
     if (scroll > 100) {
         //console.log('a');
-        $(".navbar").addClass("navbar-scroll");
+        $(".navbar,.breadcrumb-container").addClass("navbar-scroll");
     } else {
         //console.log('a');
-        $(".navbar").removeClass("navbar-scroll");
+        $(".navbar,.breadcrumb-container").removeClass("navbar-scroll");
     }
 }
 

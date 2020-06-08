@@ -1,6 +1,7 @@
 ---
 title: "Sterne fangen"
 description: "Springe hoch, um die herumfliegenden Sterne zu fangen."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center top"
 level: 2

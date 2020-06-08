@@ -1,6 +1,7 @@
 ---
 title: "Weihnachtsspiel"
 description: "Bald ist Weihnachten - und der Weihnachtsmann hat alle Hände voll zu tun, um die Geschenke rechtzeitig in die Häuser zu bringen. Wie viel schaffst du in einer Minute?"
+type: "uebungsanleitungen/programmieren/scratch"
 img: "weihnachtsmann-position.png"
 imgposition: "center top"
 level: 2

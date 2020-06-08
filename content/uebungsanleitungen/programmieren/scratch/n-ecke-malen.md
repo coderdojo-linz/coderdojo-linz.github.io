@@ -1,6 +1,7 @@
 ---
 title: "n-Ecke malen"
 description: "In dieser Übung lässt du Scratchy Figuren mit beliebig vielen Ecken malen, wie zum Beispiel ein Dreieck oder ein Viereck."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgcover: false
 level: 1

@@ -2,6 +2,7 @@
 
 title: "Breakout"
 description: "In diesem Spiel pulverisierst du bunte Mauersteine."
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 2

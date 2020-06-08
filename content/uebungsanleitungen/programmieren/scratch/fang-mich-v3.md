@@ -2,6 +2,7 @@
 
 title: "Fang Mich"
 description: "In diesem Spiel musst du versuchen, dem Haifisch zu entkommen. Schaffst du es?"
+type: "uebungsanleitungen/programmieren/scratch"
 img: "endgame.png"
 imgposition: "center bottom"
 level: 1
