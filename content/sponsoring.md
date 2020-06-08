@@ -2,7 +2,7 @@
 title: "Sponsoring"
 heroImage: "hardware.jpg"
 heroImagePosition: "50% 75%" 
-heroDescription: "Unser Hardware-Stapel wächst jedes Jahr."
+heroDescription: "Unser Hardware-Stapel wächst dank der Sponsoren jedes Jahr"
 ---
 
 # Sponsoring

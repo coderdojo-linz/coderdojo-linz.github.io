@@ -1,5 +1,9 @@
 ---
-title: "Für Eltern"
+title: "Infos für Eltern"
+description: "In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt."
+weight: 2
+img: "eltern.jpg"
+imgposition: "50% 30%"
 heroImage: "hero-3.jpg"
 heroImagePosition: "50% 50%" 
 heroDescription: "Programmier-Anfänger bei der Arbeit"

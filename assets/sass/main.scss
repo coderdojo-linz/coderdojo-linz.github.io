@@ -136,7 +136,8 @@ section {
 }
 
 section.secondary {
-    background-color: rgba(0,0,0,.05);;
+    background-color: rgba(0, 0, 0, .05);
+    ;
 }
 
 section.primary {
@@ -178,9 +179,26 @@ nav.breadcrumb-nav {
     letter-spacing: 1px;
     box-shadow: 0 1px 10px 5px rgba(#000, 0.1);
 
+    .navbar-toggler {
+        border: none;
+    }
+
     @media(max-width: 991.98px) {
         .container {
             margin-top: -5px;
+        }
+
+        .navbar-collapse {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            margin-left: -16px;
+            margin-right: -16px;
+    
+            .nav-item {
+                // border-top: 1px solid rgba(#000, 0.1);
+                a {
+                    color: #333 !important;
+                }
+            }
         }
     }
 
@@ -196,6 +214,10 @@ nav.breadcrumb-nav {
 
     .nav-item.active a.nav-link {
         color: $primary-color;
+    }
+
+    .nav-item a.nav-link:hover {
+        color: darken($primary-color, 20%) !important;
     }
 
     .navbar-toggler {
@@ -216,6 +238,15 @@ nav.breadcrumb-nav {
         .nav-item a.nav-link {
             //color: $font-color;
             color: #fff;
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            background-color: rgba(#fff, 0.66)!important;
+
+            .nav-item a.nav-link {
+                color: $font-color;
+            }
         }
     }
 
@@ -429,7 +460,7 @@ ol.breadcrumb {
 
 /* events */
 #events-corona {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('/img/hero/corona.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/img/hero/corona.jpg');
 }
 
 section.events {

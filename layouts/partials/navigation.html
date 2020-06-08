@@ -15,16 +15,8 @@
                 <li class="nav-item {{ cond (eq .File.Dir "termine\\") "active" "" }}">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item dropdown {{ cond (eq .File.Dir "info\\") "active" "" }}">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Infos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/info/kinder-und-jugendliche">Für Kinder und Jugendliche</a>
-                        <a class="dropdown-item" href="/info/eltern">Für Eltern</a>
-                        <a class="dropdown-item" href="/info/mentoren">Für Mentoren</a>
-                        <a class="dropdown-item" href="/info/schulen">Für Schulen</a>
-                    </div>
+                <li class="nav-item {{ cond (eq .File.Dir "info\\") "active" "" }}">
+                    <a class="nav-link" href="/info">Infos</a>
                 </li>
                 <li class="nav-item {{ cond (eq .File.Dir "mentoren\\") "active" "" }}">
                     <a class="nav-link" href="/mentoren">Mentoren</a>

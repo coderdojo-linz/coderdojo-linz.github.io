@@ -1,5 +1,9 @@
 ---
-title: "Informationen für Mentoren"
+title: "Infos für Mentoren"
+description: "Du kannst gut programmieren oder bist ein Elektronik-Crack? Dann brauchen wir dich als Mentor."
+weight: 3
+img: "mentor.jpg"
+imgposition: "50% 50%"
 heroImage: "hero-5.jpg"
 heroImagePosition: "50% 60%" 
 heroDescription: "CoderDojo Mentoren helfen den Kindern und Jugendlichen"

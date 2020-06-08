@@ -1,5 +1,9 @@
 ---
 title: "Infos für Schulen"
+description: "Wir kommen gerne zu euch in die Schule."
+img: "schule.jpg"
+imgposition: "50% 20%"
+weight: 4
 heroImage: "schule.jpg"
 heroImagePosition: "40% 30%" 
 heroDescription: "Wir kommen auch gerne zu euch in die Schule"

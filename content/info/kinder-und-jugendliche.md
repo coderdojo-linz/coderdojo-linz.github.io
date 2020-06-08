@@ -1,5 +1,9 @@
 ---
-title: "Informationen für Kinder und Jugendliche"
+title: "Infos für Kinder und Jugendliche"
+description: "Wolltest du immer schon wissen, wie Computer, iPad oder Smartphone funktionieren? Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren?"
+weight: 1
+img: "kinder.jpg"
+imgposition: "50% 60%"
 heroImage: "hero-1.jpg"
 heroImagePosition: "50% 30%" 
 heroDescription: "Erfahrene CoderDojo Teilnehmer arbeiten an ihren Projekten"
