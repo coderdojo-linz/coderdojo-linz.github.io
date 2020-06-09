@@ -1,7 +1,8 @@
 ---
-
 title: Back to Basics - Assembler Hello World
 description: Lerne, wie ein Computer auf unterster Ebene funktioniert
+aliases:
+        - /trainingsanleitungen/fundamentals/assembler-hello-world.html
 ---
 
 # Erste Schritte mit Assembler-Programmierung
@@ -13,7 +14,6 @@ Normalerweise programmieren wir im CoderDojo mit sogenannten [höheren Programmi
 In dieser Übung probieren wir, ein Programm direkt in Maschinensprache zu programmieren. Dazu verwenden wir eine [Assemblersprache](https://de.wikipedia.org/wiki/Assemblersprache). Auch wenn du später selten Assembler programmieren wirst, hilft dir diese Übung, besser zu verstehen, was im Hintergrund passiert.
 
 In dieser grundlegenden Übung stehen die einfachsten Grundlagen von Assembler sowie die Tools, die du dafür brauchst, im Mittelpunkt. Später werden wir uns mit mehr Assembler-Kommandos beschäftigen.
-
 
 ## Systemvoraussetzungen
 
@@ -69,7 +69,6 @@ Das gesamte Installationsscript findest du in [install-dev-tools.sh](https://git
 * Im Ordner [create-ubuntu-scripts](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/fundamentals/create-ubuntu-scripts) findet ihr ein *ARM-Template* mit zugehörigem PowerShell-Script zum automatischen Anlegen von vorkonfigurierten VMs in Azure.
 * Es gibt auch ein [Dockerfile](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/Dockerfile), mit dem ihr ein Docker image erstellen könnt, das die oben genannten Tools enthält (`docker build -t nasm .`). Dazu noch ein Hinweis: Wenn ihr die Übung von unten in einem Docker Container durchführen wollt, braucht ihr folgendes *run* Statement: `docker run -it --rm --security-opt seccomp=unconfined nasm /bin/bash`. Beachtet die Option `--security-opt seccomp=unconfined`. Sie ist nur für `gdb` notwendig.
 
-
 ## Zum Unbuntu Linux Server verbinden
 
 1. Starte [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
@@ -82,7 +81,6 @@ Das gesamte Installationsscript findest du in [install-dev-tools.sh](https://git
 1. Probiere, ob du den Assembler starten kannst, indem du das Kommando `nasm -v` ausführst. Du müsstest die Version von NASM angezeigt bekommen.
 
 Klappt alles? Dann können wir anfangen zu hacken.
-
 
 ## Erste Übung: *Hello World*
 
@@ -98,7 +96,7 @@ Als erstes möchten wir das typische Kennenlernprogramm schreiben, das man in je
 
 1. Gib das [Beispiel-Assemblerprogramm](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-world/hello.asm) in die Datei `hello.asm` ein.
 
-```
+```shell
         SECTION .data       ; DATEN
 msg:    db "Hello World",10 ; Diesen Text wollen wir ausgeben
                             ; Die 10 am Ende bedeutet "naechste Zeile".
@@ -146,7 +144,7 @@ Während des CoderDojos kannst du das Programm mit dem Mentorenteam diskutieren.
 
 1. Im [diesem Programm](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm) sind bewusst keine Kommentare enthalten. Versuche herauszufinden was es macht indem du den Code untersuchst.
 
-```
+```shell
         SECTION .bss
 buffer: resb 64
 
@@ -208,7 +206,6 @@ Ein Debugger ist ein Tool, mit dem du Fehler in einem Programm suchen kannst. Er
 
 1. Lass das Programm mit `c` (*continue*) weiterlaufen. Es müsste *Hacked!!!* ausgeben :-) Geklappt?
 
-
 ## Schleifen
 
 Lass uns noch einen Schritt weiter gehen. In höheren Programmiersprachen wie C#, Java, Python etc. hast du schon Schleifen kennengelernt. Der Prozessor kennt auf unterster Ebene keine solchen Schleifen. Man muss durch Sprünge (*Jump*) Schleifen nachbilden. Das wollen wir an einem Beispiel ausprobieren.
@@ -228,7 +225,6 @@ Unsere Aufgabe ist es, ein Programm zu schreiben, bei dem ...
 1. Führe das Programm aus und kontrolliere, ob der Text richtig umgedreht wird.
 
 1. Schaue dir jetzt Zeile für Zeile den Code an und versuche, den Algorithmus zu verstehen. Bei Fragen wende dich an das CoderDojo Mentorenteam.
-
 
 ## Weitere Übungen
 
