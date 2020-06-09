@@ -1,0 +1,33 @@
+{{"<!-- Contact Section -->" | safeHTML}} <section id="events-overview" class="dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 offset-md-2">
+                <h2>Nächste Termine</h2>
+                <p class="text-center">Hast du Lust bekommen, beim CoderDojo mitzumachen? Hier findest du die nächsten Termine.</p>
+                <table class="table"> 
+                    {{ range first 3 $.Site.Data.events }}
+                    {{ $description := .location }}
+                    
+                    {{ if eq .eventtype "CoderDojo Virtual" }}
+                        {{ $description = "Online Event" }}
+                    {{ end }}
+                    <tr>
+                        <td>
+                            <span class="badge badge-primary event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span>
+                        </td>
+                        <td> {{ dateFormat "02.01.2006" .begintime }} </td>
+                        <td>
+                            {{ $description }}
+                        </td>
+                        <td>
+                            <a href="/termine#{{ dateFormat "20060102" .begintime }}">mehr Infos</a>
+                        </td>
+                    </tr> 
+                    {{ end }} 
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

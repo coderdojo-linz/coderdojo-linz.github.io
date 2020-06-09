@@ -8,7 +8,7 @@
                 <p>Aufgrund der aktuellen COVID-19 Lage finden alle CoderDojos bis auf weiteres online statt. Eine Anleitung, wie du an den Onlinemeetings teilnimmst, findest du unter <a href="/termine/online-coderdojo-tipps">Tipps für Online CoderDojos</a>.</p>
 
                 <h4>Voraussetzungen</h4>
-                <p>Bitte installiere für die Teilnahme an den online Workshops die <a href="https://github.us11.list-manage.com/track/click?u=94e838cb11a385c5eae673b11&id=8c2e905afb&e=9e195db8c6" target="_blank">Zoom App</a>. Es gibt sie kostenlos für alle erdenklichen Plattformen. Danach klicke zum Teilnehmen einfach auf den Teilnahmelink des jeweiligen Workshops.</p>
+                <p>Bitte installiere für die Teilnahme an den online Workshops die <a href="https://zoom.us/download" target="_blank">Zoom App</a>. Es gibt sie kostenlos für alle erdenklichen Plattformen. Danach klicke zum Teilnehmen einfach auf den Teilnahmelink des jeweiligen Workshops.</p>
             </div>
         </div>
     </div>
@@ -28,6 +28,7 @@
                     <tr>
                         <td class="text-nowrap text-center d-none d-sm-block">
                             <div class="event-time">
+                                <a id="{{ dateFormat "20060102" .begintime }}"></a>
                                 <span class="badge badge-primary event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span><br />{{ dateFormat "02.01.2006" .begintime }}<br />{{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}
                             </div>
                         </td>
@@ -50,6 +51,10 @@
                                 <p><strong>Mentoren:</strong> {{ delimit .mentors ", " }}
                                 </p>
                             </div>
+                            {{ end }}
+
+                            {{ if eq (len .workshops) 0 }}
+                                <div class="workshop"><p>Workshops werden noch bekannt gegeben</p></div>
                             {{ end }}
                         </td>
                     </tr>

@@ -91,6 +91,13 @@ pre {
     padding: 10px 20px;
 }
 
+a[id]:empty {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+}
+
 .btn {
     padding: .375rem 2rem;
 }
@@ -142,6 +149,13 @@ section.secondary {
 
 section.primary {
     background-color: $primary-color;
+}
+
+section.dark {
+    background-color: $dark-background;
+}
+
+section.primary, section.dark {
     color: #fff;
 
     h1,
@@ -151,7 +165,7 @@ section.primary {
         }
     }
 
-    p {
+    p, td {
         color: #fff;
     }
 

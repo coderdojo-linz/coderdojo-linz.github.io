@@ -1,6 +1,7 @@
 ---
 title: "Elektronik"
 description: "Löten, Microbit, Arduino und mehr"
+layout: "overview"
 img: "circuit-board.jpg"
 date: 2020-05-17T08:04:09+02:00
 draft: false

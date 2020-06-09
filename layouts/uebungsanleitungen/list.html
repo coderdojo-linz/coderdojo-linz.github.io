@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-3">
-            {{ range (.Pages.ByParam "Title").ByParam "Level" }}
+            {{ range ((.Pages.ByParam "Title").ByWeight).ByParam "Level" }}
             <div class="col mb-5">
                 <div class="card h-100" onclick="location.href='{{.Permalink}}'">
                     <div class="card-header">{{ if isset .Params "img" }}
