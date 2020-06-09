@@ -1,11 +1,11 @@
 ---
-
 title: Türme von Hanoi
 description: Knoble eine Lösung für das Problem der Türme von Hanoi aus
+aliases:
+  - /trainingsanleitungen/csharp/towers-of-hanoi.html
 ---
 
 # Türme von Hanoi
-
 
 ## Einleitung
 
@@ -21,20 +21,19 @@ Das folgende Bild, das von [Wikipedia](https://de.wikipedia.org/wiki/T%C3%BCrme_
 
 ![Türme von Hanoi](https://upload.wikimedia.org/wikipedia/commons/6/60/Tower_of_Hanoi_4.gif)<br/>
 
-
 ## Ziel der Übung
 
 Deine Aufgabe ist es, ein Programm zu schreiben, das für jede beliebige Anzahl an Spielsteinen die notwendigen Züge ausgibt. Der Einfachheit halber numerieren wir die Spielsteine durch. Der kleinste hat die Nummer 1, der zweitkleinste die Nummer 2 und so weiter.
 
 Bei *einem Spielstein* ist die Lösung trivial: 
 
-```
+```shell
 Schiebe 1 von L nach M
 ```
 
 Bei *zwei Spielsteinen* brauchen wir drei Schritte:
 
-```
+```shell
 Schiebe 1 von L nach R
 Schiebe 2 von L nach M
 Schiebe 1 von R nach M
@@ -42,7 +41,7 @@ Schiebe 1 von R nach M
 
 Für *drei Spielsteine* brauchst du schon sieben Schritte:
 
-```
+```shell
 Schiebe 1 von L nach M
 Schiebe 2 von L nach R
 Schiebe 1 von M nach R
@@ -57,7 +56,6 @@ Hier eine Grafik, die die Lösung mit drei Spielsteinen veranschaulicht ([Bildqu
 ![Türme von Hanoi](http://www.scalingbits.com/sites/default/files/4hanoi.png)
 
 Und so weiter.
-
 
 ## Programmieren
 
@@ -76,7 +74,6 @@ In dieser Übung sollst du selbst versuchen, das Programm zu schreiben, ohne vor
 1. Öffne den Ordner in deinem Editor. Falls du [Visual Studio Code](http://code.visualstudio.com) verwendest, gib einfach im Kommandozeilenfenster `code .` ein (`.` steht für das aktuelle Verzeichnis).
 
 Jetzt kannst du loslegen. Viel Spaß beim Tüfteln ;-)
-
 
 ## Lösung
 

@@ -1,12 +1,13 @@
 ---
-
 title: C# Kennenlernen
 description: Lerne C# kennen, indem du damit eine Ameise in einem Spiel steuerst 
+aliases:
+    - /trainingsanleitungen/csharp/ant-me.html
 ---
 
 # AntMe! Wie schlau ist deine Ameise?
 
-![AntMe!](ant-me/antme-screenshot.png)
+![AntMe!](img/antme-screenshot.png)
 
 ## Ziel der Übung
 
@@ -47,7 +48,7 @@ Hast du kein Windows sondern einen Mac oder Linux? Sag einem Mentor beim CoderDo
 ## Kreativ sein und andere Coder herausfordern
 
 1. Nach den Übungen kannst du beginnen, die Strategie deiner Ameisen weiter zu verbessern. Du kannst deinen Computerspieler gegen verschiedene Beispiel-Spieler antreten lassen, die AntMe! mitbringt. Wie schlagen sich deine Ameisen im Vergleich zu ihnen?<br/>
-![Mehrere Computerspieler gleichzeitig](ant-me/mehrere-spieler-vergleichen.png)
+![Mehrere Computerspieler gleichzeitig](img/mehrere-spieler-vergleichen.png)
 
 2. Wenn mehrere Coder im Dojo AntMe! programmieren, könnt ihr eure eigenen Computerspieler gegeneinander spielen lassen. Wessen Ameisen schneiden am besten ab?
 
