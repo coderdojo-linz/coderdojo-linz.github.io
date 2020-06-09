@@ -7,6 +7,8 @@ imgposition: "50% 50%"
 heroImage: "hero-mentoren.jpg"
 heroImagePosition: "50% 60%" 
 heroDescription: "CoderDojo Mentoren helfen den Kindern und Jugendlichen"
+aliases:
+    - /infos/mentoren.html
 ---
 
 # Wir suchen Mentoren!

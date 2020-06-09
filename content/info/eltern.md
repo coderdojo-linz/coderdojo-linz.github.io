@@ -7,6 +7,8 @@ imgposition: "50% 30%"
 heroImage: "hero-eltern.jpg"
 heroImagePosition: "50% 50%" 
 heroDescription: "Programmier-Anfänger bei der Arbeit"
+aliases:
+    - /infos/eltern.html
 ---
 
 # Informationen für Eltern #

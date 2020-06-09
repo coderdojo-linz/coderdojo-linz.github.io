@@ -1,5 +1,8 @@
 ---
 title: "Termine"
+aliases: 
+    - /termine.html
+    - /anmeldung.html
 ---
 
 ## Termin-Typen

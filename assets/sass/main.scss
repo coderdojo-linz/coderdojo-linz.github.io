@@ -59,6 +59,7 @@ h6 {
 h1,
 h2 {
     text-align: center;
+    break-after: avoid-page;
 
     &::after {
         display: block;
@@ -67,7 +68,7 @@ h2 {
         content: '';
         margin: 1rem auto 0 auto;
         margin-block-end: 2rem;
-        border-bottom: 2px solid $primary-color;
+        border-top: 2px solid $primary-color;
     }
 }
 
@@ -152,13 +153,14 @@ a[id]:empty {
 /* sections */
 section {
 
-    h1, h2 {
+    h1,
+    h2 {
         &:first-of-type {
             margin-block-start: 0;
         }
     }
 
-    h1 + h2 {
+    h1+h2 {
         margin-block-start: 3rem !important;
     }
 
@@ -343,6 +345,10 @@ footer p a:hover {
 }
 
 @media print {
+    section:first-of-type {
+        padding-top: 0;
+    }
+
     footer {
         display: none;
     }
@@ -352,6 +358,7 @@ footer p a:hover {
 .breadcrumb-container {
     position: fixed;
     top: 50px;
+    height: 40px;
     background-color: transparent;
     display: block;
     width: 100%;
@@ -374,7 +381,7 @@ ol.breadcrumb {
 // }
 
 @media print {
-    .breadcrumb-nav {
+    .breadcrumb-container {
         display: none;
     }
 }
@@ -540,7 +547,7 @@ section.events {
     .event-time-xs {
         margin: -.75rem;
         padding: .75rem;
-        border-bottom: 1px solid $border-color;
+        border-bottom: 1px solid $primary-color;
         background-color: $light-background;
         margin-block-end: 1rem;
     }
@@ -643,15 +650,43 @@ iframe[src*="jsfiddle"] {
 
 #sushi-overview {
     background-color: $light-background;
-    // > .container-fluid {
-    //     background-color: rgba(0, 0, 0, 0.10);
-    // }
+}
+
+@media print {
+    #sushi-overview {
+        background-color: #fff;
+        padding-bottom: 0;
+
+        // &::after {
+        //     display: block;
+        //     width: 250px;
+        //     text-align: center;
+        //     content: '';
+        //     margin: 1rem auto 0 auto;
+        //     margin-block-start: 70px;
+        //     border-top: 2px solid $primary-color;
+        // }
+    }
 }
 
 .sushi-content {
+
     // p:first-child {
     //     margin-block-start: 2em;
     // }
+    div.row {
+        page-break-inside: avoid;
+    }
+
+    div[class^="col"] {
+        img {
+            margin-block-start: 0;
+        }
+    }
+
+    li div[class="row"] {
+        margin-block-start: 2rem;
+    }
 
     img {
         display: block;
@@ -662,5 +697,23 @@ iframe[src*="jsfiddle"] {
     ul,
     ol {
         padding-left: 1em;
+    }
+
+    p+h2 {
+        margin-block-start: 3rem;
+    }
+
+    @media print {
+
+        h1,
+        h2 {
+            break-inside: avoid;
+        }
+
+        h1::after,
+        h2::after {
+            height: 400px;
+            margin-bottom: -398px
+        }
     }
 }

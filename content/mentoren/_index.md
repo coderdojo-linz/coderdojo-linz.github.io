@@ -2,6 +2,8 @@
 title: "CoderDojo Linz Mentoren"
 heroImage: "mentoren.jpg"
 heroDescription: "Weihnachtsfeier der Mentoren im NIU"
+aliases:
+    - /mentoren.html
 ---
 
 ## Möchtest du Mentor werden?

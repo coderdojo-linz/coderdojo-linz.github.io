@@ -18,4 +18,6 @@ slides:
         title: "Ars Electronica Festival"
         description: "Beim Ars Electronica Festival wird am CoderDojo Stand im U19 Bereich programmiert und gelötet."
         img: "ars-electronica-festival.jpg"
+aliases:
+    - /kontakt.html
 ---

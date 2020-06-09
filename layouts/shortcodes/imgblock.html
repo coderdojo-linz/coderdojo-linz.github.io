@@ -1,0 +1,15 @@
+{{ $imageResource := $.Page.Resources.GetMatch ( .Get 0) }} 
+{{ $cols := default 6 (.Get 2) }}
+
+{{ if eq .Inner "" }}
+{{ $cols = default 12 (.Get 2) }}
+{{ end }}
+
+<div class="row">
+    <div class="col">
+        <p>{{ .Inner | markdownify }}</p>
+    </div>
+    <div class="col-12 col-md-{{ $cols }}">
+        <img src="{{ $imageResource.RelPermalink }}" alt="(.Get 1)" class="mx-xl-auto" style="margin-left: auto; margin-right: 0; display: block;" />
+    </div>
+</div>

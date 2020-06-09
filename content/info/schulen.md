@@ -7,6 +7,8 @@ weight: 4
 heroImage: "hero-schule.jpg"
 heroImagePosition: "40% 30%" 
 heroDescription: "Wir kommen auch gerne zu euch in die Schule"
+aliases:
+    - /infos/schulen.html
 ---
 
 # CoderDojo an Schulen

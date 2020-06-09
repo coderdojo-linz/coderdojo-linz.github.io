@@ -7,6 +7,8 @@ imgposition: "50% 60%"
 heroImage: "hero-kinder.jpg"
 heroImagePosition: "50% 30%" 
 heroDescription: "Erfahrene CoderDojo Teilnehmer arbeiten an ihren Projekten"
+aliases:
+    - /infos/kinder.html
 ---
 
 # Neugierig auf Technik und Programmieren?
