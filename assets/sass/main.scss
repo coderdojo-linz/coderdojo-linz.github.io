@@ -101,7 +101,7 @@ a[id]:empty {
 
 .table {
     td {
-        border-color: $primary-color;
+        border-color: rgba($primary-color, 0.5);
     }
 
     tr:last-of-type td {

@@ -1,7 +1,8 @@
 ---
-
 title: Geisterspiel in C# 
 description: Einfache Console-Anwendung in C# 
+aliases:
+    - /trainingsanleitungen/csharp/geisterspiel.html
 ---
 
 # Geisterspiel - C#
@@ -19,7 +20,7 @@ versteckten Geist weitergehen. Das Programm soll also auch mitzählen, wie oft d
 eine Tür geht, ohne dabei auf den Geist zu stoßen.  
 Ein möglicher Spielablauf könnte dann im Konsolen-Fenster so aussehen:
 
-```
+```shell
 Geisterspiel
 Hinter einer Tür verbirgt sich ein Geist.
 Welche Tür wählst du? 1, 2 oder 3?
@@ -87,11 +88,11 @@ Ein Beispiel für eine if Anweisung:
 int tuer = 0;
 if(tuer == 1)
 {
-Console.WriteLine("gefunden");
+    Console.WriteLine("gefunden");
 }
 else
 {
-Console.WriteLine("leider nicht gefunden");
+    Console.WriteLine("leider nicht gefunden");
 }
 ```
 
@@ -100,6 +101,7 @@ Um Dinge zu beschreiben die sich immer auf die gleiche Art wiederholen sollen, s
 Bedingung erfüllt ist, gibt es sogenannte Schleifen, z.B die while-Schleife. Sie beginnt mit dem
 Befehl while gefolgt - wie bei der if-Anweisung - mit einer Bedingung und angefangen wird ebenfalls wieder mit einer geschwungenen Klammer.
 Beispiel:
+
 ```csharp
 int punkte = 0;
 while(punkte < 5)
