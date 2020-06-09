@@ -18,6 +18,11 @@ function scrollDown() {
     });
 }
 
+function sendContactForm() {
+    var form = document.getElementById('contact-form');
+    form.classList.add('was-validated');
+}
+
 $(document).ready(function () {
     new WOW().init();
 

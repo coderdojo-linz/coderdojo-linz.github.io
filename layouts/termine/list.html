@@ -26,23 +26,20 @@
                     </tr> -->
                     {{ range($.Site.Data.events) }}
                     <tr>
-                        <td class="text-nowrap text-center d-none d-sm-block">
+                        <td class="text-nowrap text-center d-none d-sm-table-cell">
+                            <a id="{{ dateFormat "20060102" .begintime }}"></a>
                             <div class="event-time">
-                                <a id="{{ dateFormat "20060102" .begintime }}"></a>
                                 <span class="badge badge-primary event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span><br />{{ dateFormat "02.01.2006" .begintime }}<br />{{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}
                             </div>
                         </td>
                         <td class="event">
-                            {{ range(.workshops) }}
                             <div class="d-block d-sm-none event-time event-time-xs">
-                                <span class="badge badge-primary event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span> {{ dateFormat "02.01.2006" .begintime }} {{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}
+                                <span class="badge badge-primary event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span><br/><b>{{ dateFormat "02.01.2006" .begintime }} {{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}</b>
                             </div>
 
+                            {{ range(.workshops) }}
                             <div class="workshop">
-                                <!-- <div class="d-block d-sm-none event-time event-time-xs">
-                                    <span class="badge badge-primary event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span> {{ dateFormat "02.01.2006" .begintime }} {{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}
-                                </div> -->
-                                <h3>{{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }} {{ .title }}</h3>
+                                <h3><small><span class="d-inline d-sm-none">{{ dateFormat "02.01.2006" .begintime }}</span> {{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}</small><br/>{{ .title }}</h3>
                                 <p>{{ .description | markdownify  }}</p>
 
                                 <p><strong>Voraussetzungen</strong></p>

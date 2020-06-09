@@ -98,6 +98,34 @@ a[id]:empty {
     visibility: hidden;
 }
 
+.table {
+    td {
+        border-color: $primary-color;
+    }
+
+    tr:last-of-type td {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+}
+
+.form-control {
+    border-radius: 0;
+
+    &:focus {
+        border-color: $primary-color;
+        box-shadow: none;
+    }
+
+    &.was-validated {
+
+        &:invalid,
+        &.is-invalid {
+            border-color: $danger-color;
+        }
+    }
+}
+
 .btn {
     padding: .375rem 2rem;
 }
@@ -143,8 +171,7 @@ section {
 }
 
 section.secondary {
-    background-color: rgba(0, 0, 0, .05);
-    ;
+    background-color: $light-background;
 }
 
 section.primary {
@@ -155,7 +182,8 @@ section.dark {
     background-color: $dark-background;
 }
 
-section.primary, section.dark {
+section.primary,
+section.dark {
     color: #fff;
 
     h1,
@@ -165,13 +193,18 @@ section.primary, section.dark {
         }
     }
 
-    p, td {
+    p,
+    td {
         color: #fff;
     }
 
     a {
         color: #fff;
         text-decoration: underline;
+    }
+
+    .table td {
+        border-color: #fff;
     }
 }
 
@@ -206,8 +239,9 @@ nav.breadcrumb-nav {
             background-color: rgba(255, 255, 255, 0.9) !important;
             margin-left: -16px;
             margin-right: -16px;
-    
+
             .nav-item {
+
                 // border-top: 1px solid rgba(#000, 0.1);
                 a {
                     color: #333 !important;
@@ -256,7 +290,7 @@ nav.breadcrumb-nav {
         }
 
         &:hover {
-            background-color: rgba(#fff, 0.66)!important;
+            background-color: rgba(#fff, 0.66) !important;
 
             .nav-item a.nav-link {
                 color: $font-color;
@@ -498,12 +532,26 @@ section.events {
         background-color: $coderdojo-classroom-color;
     }
 
-    .event .workshop:nth-child(2) h3 {
-        margin-block-start: 0;
+    .event {
+        .workshop:nth-child(2) h3 {
+            margin-block-start: 0;
+        }
+
+        .workshop::after {
+            content: '';
+            width: 100%;
+            height: 1rem;
+            border-bottom: 1px solid $primary-color;
+            display: block;
+        }
+
+        .workshop:last-of-type::after {
+            display: none;
+        }
     }
 
     h3 {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         font-weight: 700;
 
         .time {
@@ -513,9 +561,10 @@ section.events {
     }
 
     .event-time-xs {
-        margin: -15px;
-        padding: 15px;
-        background-color: #ddd;
+        margin: -.75rem;
+        padding: .75rem;
+        border-bottom: 1px solid $border-color;
+        background-color: $light-background;
         margin-block-end: 1rem;
     }
 }
@@ -562,7 +611,7 @@ section.mentors {
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
-        box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, 0.05);
+        box-shadow: 2px 2px 15px 7px $shadow-color;
     }
 
     // img {
@@ -570,7 +619,7 @@ section.mentors {
     //     max-width: 160px;
     //     border-radius: 50%;
     //     margin-top: 20px;
-    //     box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, 0.05);
+    //     box-shadow: 2px 2px 15px 7px $shadow-color;
     // }
 }
 
@@ -616,7 +665,7 @@ iframe[src*="jsfiddle"] {
 }
 
 #sushi-overview {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: $light-background;
     // > .container-fluid {
     //     background-color: rgba(0, 0, 0, 0.10);
     // }
