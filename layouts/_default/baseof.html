@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
+{{ $.Scratch.Add "images" ((.Site.GetPage "section" "images").Resources) }}
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,28 +32,31 @@
     {{ partial "navigation.html" . }}
 
     {{ if isset .Params "heroimage" }}
+        {{ $heroImagePosition := "50% 50%" }}
+        {{ if isset .Page.Params "heroimageposition" }}
+            {{ $heroImagePosition = .Page.Params.HeroImagePosition }}
+        {{ end }}
 
-    {{ $heroImagePosition := "50% 50%" }}
-    {{ if isset .Page.Params "heroimageposition" }}
-        {{ $heroImagePosition = .Page.Params.HeroImagePosition }}
-    {{ end }}
-    <section class="hero-area">
-        <div class="hero" style="background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.5)), url('/img/hero/{{ .Page.Params.HeroImage}}'); background-position: {{ $heroImagePosition }};">
-            <div class="container-fluid">
-                <div class="row align-items-end">
-                    <div class="col hero-description">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-md-8 offset-md-2 text-center">
-                                    <p>{{ .Page.Params.HeroDescription }}</p>
+        {{ $imageResource := ($.Scratch.Get "images").GetMatch .Page.Params.HeroImage }}
+        {{ $resized := $imageResource.Fit "1920x1200" }}
+        <section class="hero-area">
+            <div class="hero" style="background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.5)), url('{{ $resized.RelPermalink }}'); background-position: {{ $heroImagePosition }};">
+                <div class="container-fluid">
+                    <div class="row align-items-end">
+                        <div class="col hero-description">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-8 offset-md-2 text-center">
+                                        <p>{{ .Page.Params.HeroDescription }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
     {{ end }}
 
     {{ block "jumbotron" . }}

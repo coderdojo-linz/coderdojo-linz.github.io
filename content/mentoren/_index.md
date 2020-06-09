@@ -6,6 +6,4 @@ heroDescription: "Weihnachtsfeier der Mentoren im NIU"
 
 ## Möchtest du Mentor werden?
 
-Wir haben dir einige Informationen für Mentoren zusammengestellt.
-
-Wenn du mitmachen möchtest, nimm bitte [per Email](mailto:info@linz.coderdojo.net) Kontakt mit uns auf.
+Wenn du technikbegeistert bist und dein Wissen gerne weitergibst, solltest du es probieren! Schreib uns, bei welchem der [nächsten CoderDojos](/termine) zum Schnuppern vorbeikommen willst. Wir freuen uns auf dich!

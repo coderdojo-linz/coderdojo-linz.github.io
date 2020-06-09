@@ -152,11 +152,14 @@ a[id]:empty {
 /* sections */
 section {
 
-    h1,
-    h2 {
+    h1, h2 {
         &:first-of-type {
             margin-block-start: 0;
         }
+    }
+
+    h1 + h2 {
+        margin-block-start: 3rem !important;
     }
 
     &:first-of-type {
@@ -396,29 +399,9 @@ ol.breadcrumb {
                 height: 100%;
                 background-size: cover;
                 background-repeat: no-repeat;
+                // fixed does not work with background-position
                 // background-attachment: fixed;
                 background-position: 50% 50%;
-            }
-
-            .carousel-item:nth-of-type(4n+1) {
-                background-image: url('img/hero/hero-2.jpg');
-                background-image: linear-gradient(rgba(#ffffff, 0.0), rgba(#ffffff, 0.0)), url(img/hero/hero-2.jpg);
-            }
-
-            .carousel-item:nth-of-type(4n+2) {
-                background-image: url('img/hero/loeten.jpg');
-                background-image: linear-gradient(rgba(#ffffff, 0.0), rgba(#ffffff, 0.0)), url(img/hero/loeten.jpg);
-                background-position: 50% 100%;
-            }
-
-            .carousel-item:nth-of-type(4n+3) {
-                background-image: url('img/hero/roboter.jpg');
-                background-image: linear-gradient(rgba(#ffffff, 0.0), rgba(#ffffff, 0.0)), url(img/hero/roboter.jpg);
-            }
-
-            .carousel-item:nth-of-type(4n+4) {
-                background-image: url('img/hero/roboter.jpg');
-                background-image: linear-gradient(rgba(#ffffff, 0.0), rgba(#ffffff, 0.0)), url(img/hero/ars-electronica-festival.jpg);
             }
 
             h5 {
@@ -445,7 +428,6 @@ ol.breadcrumb {
 
                 >div {
                     background-color: rgba(#000, 0.25);
-                    //background-color: rgba(#fff, 0.66);
                     position: absolute;
                     width: 1110px;
                     left: calc((100vw - 1110px) / 2);
@@ -454,11 +436,6 @@ ol.breadcrumb {
 
                     width: 100%;
                     left: 0;
-
-                    // width: 350px;
-                    // padding: 0 45px;
-                    // bottom: 50px;
-                    // right: 45px;
                 }
             }
         }
@@ -507,10 +484,6 @@ ol.breadcrumb {
 }
 
 /* events */
-#events-corona {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/img/hero/corona.jpg');
-}
-
 section.events {
     .event-type {
         margin-right: 10px;
@@ -533,6 +506,10 @@ section.events {
     }
 
     .event {
+        .workshop h3 {
+            margin-block-start: 1.5rem;
+        }
+
         .workshop:nth-child(2) h3 {
             margin-block-start: 0;
         }

@@ -32,10 +32,15 @@
         </div> {{ end }}
     </div>
 </section>
-<section id="mentors-contact" class="primary">
+
+<section id="mentors-call-to-action" class="dark">
     <div class="container">
         <div class="row">
             <div class="col"> {{ .Content | safeHTML}} </div>
         </div>
     </div>
-</section> {{ end }}
+</section> 
+
+{{ partial "contact.html" (dict "context" . "title" "Schnuppertermin" "text" "Schreib uns, wann du zum Schnuppern vorbeikommen willst.") }}
+
+{{ end }}

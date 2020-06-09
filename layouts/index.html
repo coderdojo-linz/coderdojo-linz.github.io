@@ -10,7 +10,7 @@
 
 {{ partial "events-overview.html" . }}
 
-{{ partial "contact.html" . }}
+{{ partial "contact.html" (dict "context" . "title" "Kontakt" "text" "Hast du Fragen oder Anregungen?") }}
 
 <!-- {{ partial "newsletter.html" . }} -->
 

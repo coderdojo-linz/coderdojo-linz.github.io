@@ -17,10 +17,13 @@
             {{ if isset .Params "imgposition" }}
                 {{ $objectPosition = .Params.imgposition }}
             {{ end }}
+
+            {{ $imageResource := ($.Scratch.Get "images").GetMatch .Params.img }}
+            {{ $resized := $imageResource.Fit "600x400" }}
             <div class="col mb-5">
                 <div class="card h-100" onclick="location.href='{{.Permalink}}'">
                     <div class="card-header" style="padding: 0; height: 150px;">{{ if isset .Params "img" }}
-                        <img src="/img/info/{{.Params.img}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: cover; object-position: {{$objectPosition}}; height: 100%; padding: 0;">{{ end }}
+                        <img src="{{$resized.RelPermalink}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: cover; object-position: {{$objectPosition}}; height: 100%; padding: 0;">{{ end }}
                     </div>
                     
                     <div class="card-body">
