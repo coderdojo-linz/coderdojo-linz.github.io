@@ -673,6 +673,15 @@ iframe[src*="jsfiddle"] {
 
 #sushi-overview {
     background-color: $light-background;
+
+    i {
+        width: 30px;
+        color: #555;
+        vertical-align: middle;
+        line-height: 1rem;
+        position: relative;
+        top: -2px;
+    }
 }
 
 @media print {

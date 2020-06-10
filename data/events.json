@@ -78,8 +78,8 @@
                 "begintime": "2020-06-12T17:00:00",
                 "endtime": "2020-06-12T19:00:00",
                 "title": "Unity",
-                "description": "TBD",
-                "prerequisites": "Bitte installier dir schon vor dem Coderdojo folgende Dinge:\n\n- [Unity 2019.3](https://store.unity.com/) (oder eine aktuellere - du wirst dafür einen Account bei Unity anlegen müssen - nimm bitte die Individual/Personal Version)\n- und [Visual Studio 2019 Community](https://visualstudio.microsoft.com/de/vs/unity-tools/)",
+                "description": "Diesmal möchten wir uns dem Spielfeld in 3D, einem einfachen NavMesh und der Sichtbarkeit von Gegnern widmen.",
+                "prerequisites": "Bitte installier dir schon vor dem Coderdojo folgende Dinge:\n\n- Installierter Unity-Hub mit Unity 2019.3 (andere Version geht auch)\n- und [Visual Studio 2019](https://visualstudio.microsoft.com/de/vs/unity-tools/) (Community edition is ausreichend) mit installiertem \"Game-Development with Unity\" - Package",
                 "mentors": [
                     "Hans-Peter"
                 ]
