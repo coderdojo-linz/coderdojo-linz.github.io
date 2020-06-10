@@ -34,7 +34,7 @@ Hebe Zitate, Abkürzungen und Adressen hervor.
 
 <script async src="//jsfiddle.net/karin112358/kh2m3djs/embed/result/dark/"></script>
 
-### Links
+<!-- ### Links
 
 ### Tabellen
 
@@ -42,7 +42,7 @@ Hebe Zitate, Abkürzungen und Adressen hervor.
 
 ### Head
 
-### Responsive
+### Responsive -->
 
 ### Code
 
@@ -54,7 +54,7 @@ Du kannst auch noch CSS Styles für die entsprechenden Tags hinzufügen, um das 
 
 <script async src="//jsfiddle.net/karin112358/pzk7oyx0/embed/result/dark/"></script>
 
-### Semantics
+<!-- ### Semantics
 
 ### Character Entities, Symbols and Emojis
 
@@ -62,7 +62,7 @@ Du kannst auch noch CSS Styles für die entsprechenden Tags hinzufügen, um das 
 
 ### Media
 
-### Inline Styles
+### Inline Styles -->
 
 ### Weitere Übungen für HTML
 
@@ -110,11 +110,11 @@ Das `display` Property steuert das Anzeigeverhalten von Elementen. Verwende jewe
 
 <script async src="//jsfiddle.net/karin112358/wfvt0y96/embed/result/dark/"></script>
 
-### Text
+<!-- ### Text
 
 ### Links
 
-### Display / Visibility
+### Display / Visibility -->
 
 ### Position
 
@@ -150,9 +150,9 @@ Versuche das gewünschte Alignment auf verschiedene Arten zu erreichen.
 
 <script async src="//jsfiddle.net/karin112358/us6bk1xj/embed/result/dark/"></script>
 
-### Farben
+<!-- ### Farben
 
-### Backgrounds
+### Backgrounds -->
 
 ### Columns
 
