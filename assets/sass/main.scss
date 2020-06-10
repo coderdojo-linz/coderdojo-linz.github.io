@@ -34,6 +34,16 @@ h6 {
     margin-bottom: 0;
     margin-block-start: 3rem;
     margin-block-end: 1rem;
+    pointer-events: none;
+
+    &[id]::before {
+        content: '';
+        display: block;
+        height: 100px;
+        margin: -100px 0 0;
+        width: 1px;
+        pointer-events: none;
+    }
 }
 
 h1 {
