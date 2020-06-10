@@ -11,7 +11,7 @@ Für diese Übung solltest du bereits einfache Programmierkentnisse haben, die K
 
 ## Spielablauf
 
-![Screenshot während des pausierten Spiels](https://i.imgur.com/KmkZkqf.png)
+{{< imgblock "img/spaceshooter.png" "Screenshot während des pausierten Spiels" >}}{{< /imgblock >}}
 
 Gegner, hier 4x4 Rechtecke, fliegen von oben nach unten und müssen vom Spieler abgeschossen werden. Wie im Luftkampf zwischen kleineren Fliegern üblich, reicht ein einziger Treffer um die feindlichen Rechtecke auszuschalten. Das Spiel läuft endlos, bis eines der gegnerischen Objekte das untere Ende des Bildschirms erreicht, wobei jeder Abschuss einen Punkt bringt -- das Ziel ist die Anhäufung möglichst vieler Punkte.
 
@@ -610,7 +610,7 @@ Bis `num_projectiles` einmal `PROJECTILES_MAX` erreicht hat, passiert hier nicht
 
 Das könnte man so verdeutlichen:
 
-```
+```shell
 ...
 
 num_projectiles = 15
