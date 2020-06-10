@@ -1,7 +1,7 @@
 function updateNavbarScrollState() {
     var scroll = $(window).scrollTop();
 
-    if (scroll > 100) {
+    if (scroll > 50) {
         //console.log('a');
         $(".navbar,.breadcrumb-container").addClass("navbar-scroll");
     } else {

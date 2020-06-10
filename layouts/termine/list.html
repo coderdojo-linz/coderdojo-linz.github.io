@@ -2,7 +2,7 @@
 
 {{ $imageResource := ($.Scratch.Get "images").GetMatch "corona.jpg" }}
 {{ $resized := $imageResource.Fit "1920x1200" }}
-<section id="events-corona" class="primary" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('{{ $resized.RelPermalink }}')">
+<section id="events-corona" class="primary" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('{{ $resized.RelPermalink }}'); background-attachment: fixed;">
     <div class="container">
         <div class="row">
             <div class="col">

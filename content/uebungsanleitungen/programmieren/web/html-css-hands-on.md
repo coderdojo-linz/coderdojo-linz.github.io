@@ -14,7 +14,7 @@ Die folgenden Übungen kannst du direkt online in [JSFiddle](https://jsfiddle.ne
 
 Im ersten Beispiel werden die am häufigsten verwendeten HTML Element verwendet.
 
-[Startprojekt](https://jsfiddle.net/karin112358/qmgvrodt/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/qmgvrodt/#fork)
 
 <script async src="//jsfiddle.net/karin112358/noLwuvk4/embed/result/dark/"></script>
 
@@ -22,7 +22,7 @@ Im ersten Beispiel werden die am häufigsten verwendeten HTML Element verwendet.
 
 In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch HTML Elemente zu formatieren.
 
-[Startprojekt](https://jsfiddle.net/karin112358/5L7junw3/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/5L7junw3/#fork)
 
 <script async src="//jsfiddle.net/karin112358/ephz38gc/embed/result/dark/"></script>
 
@@ -30,7 +30,7 @@ In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch H
 
 Hebe Zitate, Abkürzungen und Adressen hervor.
 
-[Startprojekt](https://jsfiddle.net/karin112358/ue4jn8wx/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/ue4jn8wx/#fork)
 
 <script async src="//jsfiddle.net/karin112358/kh2m3djs/embed/result/dark/"></script>
 
@@ -50,7 +50,7 @@ Füge die richtigen HTML Tags ein um Code, Variablen und den Ergebnisbereich zu 
 
 Du kannst auch noch CSS Styles für die entsprechenden Tags hinzufügen, um das Ergebnis wie unten darzustellen.  
 
-[Startprojekt](https://jsfiddle.net/karin112358/aLj93b70/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/aLj93b70/#fork)
 
 <script async src="//jsfiddle.net/karin112358/pzk7oyx0/embed/result/dark/"></script>
 
@@ -82,7 +82,7 @@ Mit den Selektoren bestimmt man, welche Elemente aus dem HTML gestylt werden sol
 - jeder erste Absatz pro Section: alles in Großbuchstaben
 - jedes `span` das direkt in einem Absatz vorkommen (nur 1. Ebene): unterstrichen
 
-[Startprojekt](https://jsfiddle.net/karin112358/cr6aqeagr8f7x3eh/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/cr6aqeagr8f7x3eh/#fork)
 
 <script async src="//jsfiddle.net/karin112358/pf9r36tm/embed/result/dark/"></script>
 
@@ -90,7 +90,7 @@ Mit den Selektoren bestimmt man, welche Elemente aus dem HTML gestylt werden sol
 
 Füge im CSS die Styles für Breite und Höhe der `div` Elemente hinzu.
 
-[Startprojekt](https://jsfiddle.net/karin112358/k1f3vj9h/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/k1f3vj9h/#fork)
 
 <script async src="//jsfiddle.net/karin112358/c70xeLav/27/embed/result/dark/"></script>
 
@@ -98,7 +98,7 @@ Füge im CSS die Styles für Breite und Höhe der `div` Elemente hinzu.
 
 Das `display` Property steuert das Anzeigeverhalten von Elementen. Verwende jeweils das korrekte `display` Property und ergänze wo nötig noch Höhe und Breite der Elemente im CSS.
 
-[Startprojekt](https://jsfiddle.net/karin112358/cr6ax3eh/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/cr6ax3eh/#fork)
 
 <script async src="//jsfiddle.net/karin112358/rto63s01/77/embed/result/dark/"></script>
 
@@ -106,7 +106,7 @@ Das `display` Property steuert das Anzeigeverhalten von Elementen. Verwende jewe
 
 Ändere den Rahmen, Innen- und Außenabstand und den Umriss der `div` Elemente.
 
-[Startprojekt](https://jsfiddle.net/karin112358/vp4Lyswo/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/vp4Lyswo/#fork)
 
 <script async src="//jsfiddle.net/karin112358/wfvt0y96/embed/result/dark/"></script>
 
@@ -120,7 +120,7 @@ Das `display` Property steuert das Anzeigeverhalten von Elementen. Verwende jewe
 
 Setzte die Styles für die `div` Elemente so, dass sie sich wie in der angegebenen Lösung verhalten.
 
-[Startprojekt](https://jsfiddle.net/karin112358/vgux50ck/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/vgux50ck/#fork)
 
 <script async src="//jsfiddle.net/karin112358/nbmgLo64/embed/result/dark/"></script>
 
@@ -130,7 +130,7 @@ Setzte die Styles für die `div` Elemente so, dass sie sich wie in der angegeben
 
 Ändere das `overflow` verhalten der drei `div` Elemente.
 
-[Startprojekt](https://jsfiddle.net/karin112358/dwyzogmh/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/dwyzogmh/#fork)
 
 <script async src="//jsfiddle.net/karin112358/m9aosgrd/29/embed/result/dark/"></script>
 
@@ -138,7 +138,7 @@ Setzte die Styles für die `div` Elemente so, dass sie sich wie in der angegeben
 
 Lass den Text um die `div` Elemente fließen.
 
-[Startprojekt](https://jsfiddle.net/karin112358/24b3wayu/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/24b3wayu/#fork)
 
 <script async src="//jsfiddle.net/karin112358/seqzc182/embed/result/dark/"></script>
 
@@ -146,7 +146,7 @@ Lass den Text um die `div` Elemente fließen.
 
 Versuche das gewünschte Alignment auf verschiedene Arten zu erreichen.
 
-[Startprojekt](https://jsfiddle.net/karin112358/s8Lwahnm/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/s8Lwahnm/#fork)
 
 <script async src="//jsfiddle.net/karin112358/us6bk1xj/embed/result/dark/"></script>
 
@@ -156,11 +156,17 @@ Versuche das gewünschte Alignment auf verschiedene Arten zu erreichen.
 
 ### Columns
 
+Verwende im folgenden Beispiel die CSS Multi-Column Properties um ein drei-spaltiges Layout zu erreichen.
+
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/xc570ojk/#fork)
+
+<script async src="//jsfiddle.net/karin112358/7vom0gpf/embed/result/dark/"></script>
+
 ### Variables
 
 Verwende im folgenden Beispiel Variablen mit den Namen bg-color-light, bg-color-dark, font-size-small und font-size-large, um den `div` Elementen die richtigen Farben und Größen zuzuweisen.
 
-[Startprojekt](https://jsfiddle.net/karin112358/f04j835o/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/f04j835o/#fork)
 
 <script async src="//jsfiddle.net/karin112358/jf4ecnsy/embed/result/dark/"></script>
 
@@ -168,7 +174,7 @@ Verwende im folgenden Beispiel Variablen mit den Namen bg-color-light, bg-color-
 
 Im folgenden Projekt sollen Header und Footer je 50px hoch sein, das Menu soll 20% der gesamten Bildschirmhöhe einnehmen und der Content-Bereich bekommt den Rest.
 
-[Startprojekt](https://jsfiddle.net/karin112358/zrob7ad1/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/zrob7ad1/#fork)
 
 <script async src="//jsfiddle.net/karin112358/gu17pn24/24/embed/result/dark/"></script>
 
@@ -196,23 +202,29 @@ Das folgende Bespiel besteht aus einem Header, einem Menu, dem Contentbereich un
 - Die Überschriften werden schwarz dargestellt.
 - Header, Footer und Menu werden nicht angezeigt.
 
-[Startprojekt](https://jsfiddle.net/karin112358/cq57zo0s/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/cq57zo0s/#fork)
 
 <script async src="//jsfiddle.net/karin112358/g3d4bjs2/96/embed/result/dark/"></script>
 
 ### Flexbox
 
+
+
 ### Grid
+
+#### Positionierung mit Zeilen und Spalten
 
 Verwende das CSS Grid um die Elemente anzuordnen, indem du für die einzelnen Items die Position angibst.
 
-[Startprojekt](https://jsfiddle.net/karin112358/czdykj3r/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/czdykj3r/#fork)
 
 <script async src="//jsfiddle.net/karin112358/8p9ajow1/embed/result/dark/"></script>
 
+#### Benannte Areas
+
 Verwende nun benannte Areas im CSS Grid, um die Elemente anzuordnen.
 
-[Startprojekt](https://jsfiddle.net/karin112358/se8torvd/#fork)
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/se8torvd/#fork)
 
 <script async src="//jsfiddle.net/karin112358/vu5y9L71/embed/result/dark/"></script>
 

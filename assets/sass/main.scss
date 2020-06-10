@@ -430,6 +430,12 @@ ol.breadcrumb {
     }
 }
 
+@media (max-width: 575px) {
+    .breadcrumb-container {
+        display: none;
+    }
+}
+
 /* hero area */
 .hero-area-home {
     height: 66vh;
