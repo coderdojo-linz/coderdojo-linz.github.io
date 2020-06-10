@@ -135,6 +135,10 @@ a[id]:empty {
     padding: .375rem 2rem;
 }
 
+.badge {
+    font-weight: 600;
+}
+
 @media (max-width: 575px) {
     section {
         padding-top: 50px;
@@ -716,7 +720,7 @@ iframe[src*="jsfiddle"] {
     td {
         border-top: 2px solid $light-background;
         border-bottom: 2px solid $light-background;
-        background-color: rgba(#fff, 1);
+        background-color: rgba(#000, 0.08);
         padding: 10px 12px;
     }
 }
