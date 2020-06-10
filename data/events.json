@@ -87,14 +87,20 @@
         ]
     },
     {
-        "begintime": "2020-06-19T13:45:00",
-        "endtime": "2020-06-19T18:00:00",
+        "begintime": "2020-06-19T14:45:00",
+        "endtime": "2020-06-19T19:00:00",
         "eventtype": "CoderDojo Virtual",
         "workshops": []
     },
     {
-        "begintime": "2020-06-26T13:45:00",
-        "endtime": "2020-06-26T18:00:00",
+        "begintime": "2020-06-26T14:45:00",
+        "endtime": "2020-06-26T19:00:00",
+        "eventtype": "CoderDojo Virtual",
+        "workshops": []
+    },
+    {
+        "begintime": "2020-07-03T14:45:00",
+        "endtime": "2020-07-03T19:00:00",
         "eventtype": "CoderDojo Virtual",
         "workshops": []
     }
