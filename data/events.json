@@ -1,39 +1,87 @@
 [
     {
-        "begintime": "2020-06-12T13:45:00",
-        "endtime": "2020-06-12T18:00:00",
+        "begintime": "2020-06-11T13:45:00",
+        "endtime": "2020-06-11T18:00:00",
         "eventtype": "CoderDojo Virtual",
         "workshops": [
             {
-                "begintime": "2020-06-12T13:45:00",
-                "endtime": "2020-06-12T15:45:00",
-                "title": "Virtuelles Elektronikbasteln",
-                "description": "TBD",
-                "prerequisites": "Ein Computer mit Tinkercad Zugang.",
-                "mentors": [
-                    "Günther",
-                    "Michael"
-                ]
-            },
-            {
-                "begintime": "2020-06-12T13:45:00",
-                "endtime": "2020-06-12T15:45:00",
-                "title": "Scratch für AnfängerInnen",
-                "description": "Letzte Woche hatten wir wieder mal eine Scratch-Übung für Kids, die noch nie programmiert haben. Diese Woche machen wir mit einem zweiten Spiel weiter, das schon etwas anspruchsvoller ist, sich aber immer noch gut für Anfängerinnen und Anfänger eignet. Wenn du also die Grundbegriffe von Scratch kennst und mehr lernen möchtest, bist du in diesem Workshop richtig.\n\nWenn du mitmachen möchtest, aber noch nie etwas in Scratch gemacht hast, baue einfach zur Vorbereitung selbständig oder mit Hilfe einer erwachsenen Person unser Einsteigerbeispiel Fang mich nach. Du wirst sehen, das ist überhaupt nicht schwer.",
-                "prerequisites": "- Nur grundlegendste Vorkenntnisse über Programmieren notwendig\n- Software für die Teilnahme an Online CoderDojos (Anleitung)\n- Installierte Version von Scratch (Download)\n- Online-Version von Scratch - dafür brauchst du nur einen Browser und öffnest https://scratch.mit.edu/create/",
-                "mentors": [
-                    "Pia"
-                ]
-            },
-            {
-                "begintime": "2020-06-12T16:00:00",
-                "endtime": "2020-06-12T18:00:00",
+                "begintime": "2020-06-11T13:45:00",
+                "endtime": "2020-06-11T15:45:00",
                 "title": "HTML & CSS Hands-On",
                 "description": "Diese Woche werden wir uns auf das Flexbox und Grid Layout von CSS konzentrieren und nebenbei auf die Basic CSS Features von erstem Workshop wiederholen.",
                 "prerequisites": "Ein wenig Erfahrung mit HTML & CSS.",
                 "mentors": [
                     "Karin",
                     "Rainer"
+                ]
+            },
+            {
+                "begintime": "2020-06-11T16:00:00",
+                "endtime": "2020-06-11T18:00:00",
+                "title": "Discord Bot mit C#",
+                "description": "Dieses mal werden wir gemeinsam das Katzenbild Kommando in unseren Bot um weitere Funktionen erweitert (Issue). Ausserdem wartet ein neues Minecraft-Feature darauf, von uns Implementiert zu werden :)\n\nLetztens haben wir uns Überlegt, über [Github](https://github.com/coderdojo-linz/DiscordBot-DotNet) einen gemeinsamen Bot zu schreiben. Damit auch jeder mithelfen kann, werden wir nochmals in die wundervolle Welt des git's eintauchen :)\n\n**Kann ich mich irgendwie auf den Workshop vorbereiten?**\n\nJa! Du kannst dir, wenn du möchtest schonmal einen Einblick im tollen Text-Tutorial der Bot-Autoren verschaffen! (Keine Angst, wir werden das auch im Workshop nochmal durchgehen ;) ) [Discord.Net Einsteiger Tutorial](https://discord.foxbot.me/latest/guides/getting_started/installing.html)",
+                "prerequisites": "- Visual Studio Community\n- .NET Core\n-Github Account\n- [Postman](https://www.postman.com/downloads/)",
+                "mentors": [
+                    "Jonas"
+                ]
+            }
+        ]
+    },
+    {
+        "begintime": "2020-06-12T14:45:00",
+        "endtime": "2020-06-12T19:00:00",
+        "eventtype": "CoderDojo Virtual",
+        "workshops": [
+            {
+                "begintime": "2020-06-12T14:45:00",
+                "endtime": "2020-06-12T16:45:00",
+                "title": "Scratch für AnfängerInnen",
+                "description": "Letzte Woche hatten wir wieder mal eine Scratch-Übung für Kids, die noch nie programmiert haben. Diese Woche machen wir mit einem zweiten Spiel weiter, das schon etwas anspruchsvoller ist, sich aber immer noch gut für Anfängerinnen und Anfänger eignet. Wenn du also die Grundbegriffe von Scratch kennst und mehr lernen möchtest, bist du in diesem Workshop richtig.\n\nWenn du mitmachen möchtest, aber noch nie etwas in Scratch gemacht hast, baue einfach zur Vorbereitung selbständig oder mit Hilfe einer erwachsenen Person unser Einsteigerbeispiel [Fang mich](/trainingsanleitungen/scratch/scratch-fang-mich-v3.html) nach. Du wirst sehen, das ist überhaupt nicht schwer.",
+                "prerequisites": "- Nur grundlegendste Vorkenntnisse über Programmieren notwendig\n- Software für die Teilnahme an Online CoderDojos (Anleitung)\n- Installierte Version von Scratch (Download)\n- Online-Version von Scratch - dafür brauchst du nur einen Browser und öffnest https://scratch.mit.edu/create/",
+                "mentors": [
+                    "Pia",
+                    "Karin"
+                ]
+            },
+            {
+                "begintime": "2020-06-12T14:45:00",
+                "endtime": "2020-06-12T16:45:00",
+                "title": "Virtuelles Elektronikbasteln",
+                "description": "Wir starten mit der Berechnung der Grundschaltung von LED und Vorwiderstand in mehreren Varianten. Wir bauen die Schaltung im TinkerCAD nach und überprüfen die berechneten Ergebnisse mit dem Multimeter. Das Ohmsche Gesetz kommt auch wieder vor. Diese Übung ist auch für Anfänger geeignet. Vorbereiten kannst Du Dich auf unserer Hompage unter dem Menüpunkt Löten mit den Elektronik Übungen 1/2/3.\n\nIm zweiten Teil werden wir wieder mit dem Arduino eine Schaltung bauen. Wir erweitern die die LED-Neopixel Schaltung vom letzten Mal. Es ist auch Zeit zum Fragenstellen.",
+                "prerequisites": "Ein Computer mit [Tinkercad](https://www.tinkercad.com/) Zugang.",
+                "mentors": [
+                    "Günther",
+                    "Michael"
+                ]
+            },
+            {
+                "begintime": "2020-06-12T14:45:00",
+                "endtime": "2020-06-12T16:45:00",
+                "title": "Discord Bot mit C#",
+                "description": "Dieses mal werden wir gemeinsam das Katzenbild Kommando in unseren Bot um weitere Funktionen erweitert (Issue). Ausserdem wartet ein neues Minecraft-Feature darauf, von uns Implementiert zu werden :)\n\nLetztens haben wir uns Überlegt, über [Github](https://github.com/coderdojo-linz/DiscordBot-DotNet) einen gemeinsamen Bot zu schreiben. Damit auch jeder mithelfen kann, werden wir nochmals in die wundervolle Welt des git's eintauchen :)\n\n**Kann ich mich irgendwie auf den Workshop vorbereiten?**\n\nJa! Du kannst dir, wenn du möchtest schonmal einen Einblick im tollen Text-Tutorial der Bot-Autoren verschaffen! (Keine Angst, wir werden das auch im Workshop nochmal durchgehen ;) ) [Discord.Net Einsteiger Tutorial](https://discord.foxbot.me/latest/guides/getting_started/installing.html)",
+                "prerequisites": "- Visual Studio Community\n- .NET Core\n-Github Account\n- [Postman](https://www.postman.com/downloads/)",
+                "mentors": [
+                    "Jonas"
+                ]
+            },
+            {
+                "begintime": "2020-06-12T17:00:00",
+                "endtime": "2020-06-12T19:00:00",
+                "title": "Dynamische Webseite mit Node.js",
+                "description": "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.\n\nDieses Mal implementieren wir die noch fehlende CRUD-Operation (create, read, update, delete) um Einträge in der FeuerwehrApp löschen zu können. Weiters sehen wir uns an, wie man mit Javascript einen Filter für die empfangenen Daten einbaut. Falls noch Zeit bleibt, können wir beginnen die ChatApp und die FeuerwehrApp in einem gemeinsame App zu integrieren.",
+                "prerequisites": "- einen Texteditor wie z.B. [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/)\n- [Node.js](https://nodejs.org/en/download/)\n- [Git](https://git-scm.com/download/win)\n\n**Installationsanleitung**\n\nWenn Du möchtest, kannst Du schon vorab unser Projekt bei Dir installieren. So haben wir beim Workshop mehr Zeit für's Programmieren und brauchen nicht so lange warten bis alle mit der Installation fertig sind. Eine Anleitung dazu findest Du auf [Github](https://github.com/coderdojo-neusiedl/dynamic-webpage/tree/workshop-20200612).",
+                "mentors": [
+                    "Thomas"
+                ]
+            },
+            {
+                "begintime": "2020-06-12T17:00:00",
+                "endtime": "2020-06-12T19:00:00",
+                "title": "Unity",
+                "description": "TBD",
+                "prerequisites": "Bitte installier dir schon vor dem Coderdojo folgende Dinge:\n\n- [Unity 2019.3](https://store.unity.com/) (oder eine aktuellere - du wirst dafür einen Account bei Unity anlegen müssen - nimm bitte die Individual/Personal Version)\n- und [Visual Studio 2019 Community](https://visualstudio.microsoft.com/de/vs/unity-tools/)",
+                "mentors": [
+                    "Hans-Peter"
                 ]
             }
         ]
