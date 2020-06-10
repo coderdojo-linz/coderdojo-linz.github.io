@@ -13,9 +13,11 @@
             {{ range ((.Pages.ByParam "Title").ByWeight).ByParam "Level" }}
             <div class="col mb-5">
                 <div class="card h-100" onclick="location.href='{{.Permalink}}'">
+                    {{ if isset .Params "img" }}
                     <div class="card-header">{{ if isset .Params "img" }}
                         <img src="/img/uebungsanleitungen/{{.Params.img}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: contain; height: 100px; padding: 10px 40px;">{{ end }}
                     </div>
+                    {{ end }}
                     
                     <div class="card-body">
                         <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right;">
@@ -25,13 +27,13 @@
                         <!-- <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6> -->
                         <p class="card-text mt-4">{{.Description}}</p>
                     </div>
-                    <div class="card-footer">
+                    <!-- <div class="card-footer">
                         {{ if gt (len .Pages) 1}}
                         <a href="{{.Permalink}}" class="card-link">Zu den Übungsanleitungen</a>
                         {{ else }}
                         <a href="{{.Permalink}}" class="card-link">Zur Anleitung</a>
                         {{ end }}
-                    </div>
+                    </div> -->
                 </div>
             </div>
             {{ end }}
