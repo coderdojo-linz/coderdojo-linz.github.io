@@ -77,7 +77,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		});
 
 		workshops.push({
-			time: "14:45 - 16:45",
+			time: "16:00 - 18:00",
 			title: "Discord Bot mit C#",
 			description: "Dieses mal werden wir gemeinsam das Katzenbild Kommando in unseren Bot um weitere Funktionen erweitert (Issue). Ausserdem wartet ein neues Minecraft-Feature darauf, von uns Implementiert zu werden :)<br/><br/>Letztens haben wir uns Überlegt, über Github einen gemeinsamen Bot zu schreiben. Damit auch jeder mithelfen kann, werden wir nochmals in die wundervolle Welt des git's eintauchen :)",
 			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://visualstudio.microsoft.com/vs/community/\" target=\"_blank\">Visual Studio 2019 Community</a></li><li><b>und</b> <a href=\"https://dotnet.microsoft.com/download/dotnet-core/3.1\" target=\"_blank\">.NET Core</a></li><li>Github Account</li><li><a href=\"https://www.postman.com/downloads/\" target=\"_blank\">Postman</a></li></ul><br/><p><b>Kann ich mich irgendwie auf den Workshop vorbereiten?</b></p><p>Ja! Du kannst dir, wenn du möchtest schonmal einen Einblick im tollen Text-Tutorial der Bot-Autoren verschaffen! Keine Angst, wir werden das auch im Workshop nochmal durchgehen ;): <a href=\"Ja! Du kannst dir, wenn du möchtest schonmal einen Einblick im tollen Text-Tutorial der Bot-Autoren verschaffen! (Keine Angst, wir werden das auch im Workshop nochmal durchgehen ;) ) Discord.Net Einsteiger Tutorial\" target=\"_blank\">Discord.Net Einsteiger Tutorial</a></p>",
