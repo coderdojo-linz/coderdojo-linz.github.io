@@ -2,7 +2,7 @@
 title: "Erste Schritte in Scratch"
 description: "In dieser Übung legst du ein neues Projekt an und lässt Scratchy, die Katze, am Bildschirm herumlaufen."
 type: "uebungsanleitungen/programmieren/scratch"
-img: "scratchy.png"
+img: "img/scratchy.png"
 imgcover: false
 aliases:
     - /trainingsanleitungen/scratch/scratch-erste-schritte.html

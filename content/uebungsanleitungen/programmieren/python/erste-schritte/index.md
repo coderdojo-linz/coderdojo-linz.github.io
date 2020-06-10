@@ -1,19 +1,20 @@
 ---
-
 title: Erste Schritte mit Python
 description: Diese Übung gibt eine erste Einführung in das Programmieren mit Python.
+aliases: 
+   - /trainingsanleitungen/python/python-erste-schritte.html
 ---
-
 
 # Erste Schritte mit Python
 
 Diese Übung gibt eine erste Einführung in das Programmieren mit Python.
-Die Inhalte sind zum größten Teil aus dem Buch [Programmieren super*easy*](http://www.amazon.de/Programmieren-supereasy-Einfacher-Einstieg-SCRATCH/dp/3831027005/ref=sr_1_1?ie=UTF8&qid=1452990098&sr=8-1&keywords=programmieren+f%C3%BCr+kinder)
+Die Inhalte sind zum größten Teil aus dem Buch [Programmieren super*easy*](http://www.amazon.de/Programmieren-supereasy-Einfacher-Einstieg-SCRATCH/dp/3831027005/ref=sr_1_1?ie=UTF8&qid=1452990098&sr=8-1&keywords=programmieren+f%C3%BCr+kinder).
 
 
 ## Was ist Python?
 
 Python ist eine Programmiersprache, die mit englischen Textbefehlen arbeitet. Sie ist etwas schwieriger als Scratch, dafür gibt es allerdings viel mehr Verwendungsmöglichkeiten.
+
 Zur Vorbereitung werden wir nun zuerst Python installieren und uns dann mit der Oberfläche vertraut machen.
 
 
@@ -27,8 +28,7 @@ Lade Python nun herunter und installiere es auf deinem Computer. Python 3 ist ko
 4. Starte nun die Programmierumgebung **IDLE** (**I**ntegrated **D**eve**L**opment **E**nvironment).
 5. Nun sollest du (unter Windows) folgendes Fenster sehen:
 
-![](python-erste-schritte/IDLE-Windows.png)
-
+{{< imgblock "img/IDLE-Windows.png" "" >}}{{< /imgblock >}}
 
 ## Das Shell-Fenster
 
@@ -36,7 +36,7 @@ Dieses Fenster nennt man das "Shell-Fenster". Wenn du hinter den 3 spitzen Klamm
 
 6. Lass uns das gleich ausprobieren. Gib nun folendes ein:   
    `print('Hello Python!')` und drücke die ENTER-Taste
-
+   
    In der nächsten Zeile wird nun "**Hello Python!**" ausgegeben und darunter erscheinen sofort wieder die 3 spitzen Klammern und warten auf deine nächste Eingabe.
 
 7. Als nächstes wollen wir testen, ob Python auch rechnen kann. Gibt dazu eine Rechnung ein, z.B. `3 + 2` und drücke ENTER.
@@ -60,71 +60,74 @@ Dieses Fenster nennt man das "Shell-Fenster". Wenn du hinter den 3 spitzen Klamm
 
 ## Zeichnen mit der Schildkröte
 
-10. Zum Abschluss noch ein kleiner Vorgeschmack darauf, was Python alles kann, zum Beispiel **Zeichnen**. Dazu benutzt Python eine Schildkröte (engl. *turtle*). Gib foldendes ein:
-    1. `from turtle import *` ENTER
-    2. `forward(100)` ENTER  
-       Jetzt erscheint ein neues Fenster in dem die *Turtle* eine gerade, schwarze Linie von links nach rechts zieht.
-    3. `right(120)` ENTER
-    4. `forward(200)` ENTER
-    5. `left(120)` ENTER
-    6. `forward(100)` ENTER
-    7. `penup()` ENTER
-    8. `left(90)` ENTER
-    9. `forward(80)` ENTER
-    10. `right(90)` ENTER
-    11. `backward(20)` ENTER
-    12. `pendown()` ENTER
-    13. `backward(60)` ENTER
-    14. `penup()` ENTER
-    15. `forward(200)` ENTER
+Zum Abschluss noch ein kleiner Vorgeschmack darauf, was Python alles kann, zum Beispiel **Zeichnen**. Dazu benutzt Python eine Schildkröte (engl. *turtle*). Gib foldendes ein:
 
-    Nun haben wir ein schönes Z gezeichnet und die *Turtle* steht rechts daneben.
+1. `from turtle import *` ENTER
+2. `forward(100)` ENTER  
+   Jetzt erscheint ein neues Fenster in dem die *Turtle* eine gerade, schwarze Linie von links nach rechts zieht.
+3. `right(120)` ENTER
+4. `forward(200)` ENTER
+5. `left(120)` ENTER
+6. `forward(100)` ENTER
+7. `penup()` ENTER
+8. `left(90)` ENTER
+9. `forward(80)` ENTER
+10. `right(90)` ENTER
+11. `backward(20)` ENTER
+12. `pendown()` ENTER
+13. `backward(60)` ENTER
+14. `penup()` ENTER
+15. `forward(200)` ENTER
 
-	Mit `clear()` können wir unsere Zeichnung wieder löschen.
+Nun haben wir ein schönes Z gezeichnet und die *Turtle* steht rechts daneben.
+
+Mit `clear()` können wir unsere Zeichnung wieder löschen.
 
 Das ist schon ein richtiges kleines Programm und es ist schade, dass wir daran keine Änderungen mehr vornehmen können, weil es sofort ausgeführt wurde und wir es nicht in einer Datei gespeichert haben. Aber keine Angst, genau das können wir mit Python natürlich auch machen.
 
 
 ## Das Code-Fenster
 
+{{< imgblock "img/IDLE-NewFile.png" "Neue Datei öffnen" 3 >}}
 Dazu öffnen wir nun ein neues Fenster, das sogenannte *Code-Fenster*. Klicke dazu mit der Maus im "Shell-Fenster" auf das Menü `File` und dort wiederum auf `New File`.
-
-![](python-erste-schritte/IDLE-NewFile.png)
+{{< /imgblock >}}
 
 11. Schreibe nun die Befehle von vorhin noch einmal in das neue Fenster:
 
-		from turtle import *
+```python
+from turtle import *
 
-		clear()
-		forward(100)
-		right(120) 
-		forward(200)
-		left(120)
-		forward(100)
-		penup()  
-		left(90)
-		forward(80)
-		right(90)
-		backward(20)
-		pendown()
-		backward(60)
-		penup()
-		forward(200)
+clear()
+forward(100)
+right(120) 
+forward(200)
+left(120)
+forward(100)
+penup()  
+left(90)
+forward(80)
+right(90)
+backward(20)
+pendown()
+backward(60)
+penup()
+forward(200)
+```
 
-12. Jetzt speichern wir unser erstes Python-Programm aber sofort ab. Klicke dazu im Menü `File` auf `Save` (oder drücke STRG+S).
-
-    ![](python-erste-schritte/IDLE-Save.png)
-
-    Als Dateinamen geben wir z.B. "TurtleZ.py" an (Python-Programmdateien sollte die Dateiendung ".py" haben).
+12. {{< imgblock "img/IDLE-Save.png" "Datei speichern" 3 >}}
+Jetzt speichern wir unser erstes Python-Programm aber sofort ab. Klicke dazu im Menü `File` auf `Save` (oder drücke STRG+S).
+{{< /imgblock >}}
 
 13. Starten können wir unser Programm, indem wir einfach F5 drücken (oder Menü `Run` und dort `Run Module` im Code-Fenster).
     Nun wir unser Z ganz von alleine in einem Zug gezeichnet. Cool!
 
 14. Jetzt können wir unser Programm auch noch verändern, indem wir z.B. folgende Zeilen zwischen `clear()` und `forward(100)` (im Code-Fenster) einfügen:
 
-		speed(1)
-		pencolor('blue')
-		pensize(8)
+```python
+speed(1)
+pencolor('blue')
+pensize(8)
+```
 	
 	Im Code-Fenster speichern wir wieder mit STRG-S und starten das Programm mit F5.
 
@@ -148,4 +151,4 @@ Wer trotzdem lieben auf Deutsch über Python nachschlagen will, der kann z.B. fo
 * [Python 3 Tutorial](http://www.python-kurs.eu/python3_kurs.php)
 
 
-<div class="alert alert-info cd-alert-large">Viel Spaß beim Ausprobieren!</div>
+Viel Spaß beim Ausprobieren!

@@ -2,7 +2,7 @@
 title: "Konto anlegen"
 description: "In dieser Übung legst du dir dein eigenes Konto für Scratch an und startest Scratch zum ersten Mal."
 type: "uebungsanleitungen/programmieren/scratch"
-img: "scratcher-werden-schritt-1.png"
+img: "img/scratcher-werden-schritt-1.png"
 imgcover: false
 aliases: 
     - /trainingsanleitungen/scratch/scratch-konto-anlegen.html

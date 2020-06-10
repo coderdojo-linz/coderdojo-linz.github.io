@@ -1,7 +1,8 @@
 ---
-
-title: Geisterspiel mit Python
-description: In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python.
+title: "Geisterspiel mit Python"
+description: "In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python."
+aliases:
+  - /trainingsanleitungen/python/python-geisterspiel.html
 ---
 
 
@@ -22,24 +23,26 @@ Das Programm soll also auch mitzählen, wie oft der Spieler durch eine Tür geht
 
 Ein möglicher Spielablauf könnte dann im Shell-Fenster so aussehen:
 
-	Geisterspiel
-	============
- 
-	Vor dir sind drei Türen.
-	Hinter einer ist ein Geist.
-	Welche Tür öffnest du?
-	1, 2 oder 3? 2
-	Kein Geist!
-	Du bis ein Zimmer weiter.
- 
-	Vor dir sind drei Türen.
-	Hinter einer ist ein Geist.
-	Welche Tür öffnest du?
-	1, 2 oder 3? 2
-	GEIST!
-	Lauf schnell weg!
+```shell
+Geisterspiel
+============
 
-	Game over! Deine Punkte:  1
+Vor dir sind drei Türen.
+Hinter einer ist ein Geist.
+Welche Tür öffnest du?
+1, 2 oder 3? 2
+Kein Geist!
+Du bis ein Zimmer weiter.
+
+Vor dir sind drei Türen.
+Hinter einer ist ein Geist.
+Welche Tür öffnest du?
+1, 2 oder 3? 2
+GEIST!
+Lauf schnell weg!
+
+Game over! Deine Punkte:  1
+```
 
 
 ## Bestandteile des Programms
@@ -62,11 +65,15 @@ Zusätzlich können wir noch folgende Dinge brauchen:
 
 Um eine Zufallszahl zwischen 1 und 3 erzeugen zu können, muss man die Funktion `randint` aus der Bibliothek `random` importieren:
 
-	from random import randint
+```python
+from random import randint
+```
 
 und damit dann eine Tür für den Geist auswählen:
 
-	tuer = randint(1, 3)
+```python
+tuer = randint(1, 3)
+```
 
 ### Wertetypen für Variablen
 
@@ -74,18 +81,22 @@ Wir können in Variablen aber nicht nur Zahlen, sondern auch Text oder Wahrheits
 
 * Text:
 	
-		begruessung = 'Hallo'
-		name = input('Wie heißt du? ')
-		begruessung = begruessung + ' ' + name + '!'
-		print(begruessung)
+```python
+begruessung = 'Hallo'
+name = input('Wie heißt du? ')
+begruessung = begruessung + ' ' + name + '!'
+print(begruessung)
+```
 
 	Wie du siehst, kann man mit Text auch "rechnen" (Zeile 3) und Werte von Variablen ausgeben (Zeile 4).
 	Außerdem zeigt die Zeile 2, wie man dem Benutzer Fragen stellt und die Antwort gleich in einer Variablen speichert.
 
 * Wahrheitswerte:
 
-		geist_gefunden = False
-		du_bist_mutig = True
+```python
+geist_gefunden = False
+du_bist_mutig = True
+```
 
 * Wertetyp ändern:
 
@@ -95,8 +106,7 @@ Wir können in Variablen aber nicht nur Zahlen, sondern auch Text oder Wahrheits
 
 ### Steuerung des Programmablaufs
 
-
-#### **Bedingungen**
+#### Bedingungen
 
 Um eine Bedingung zu prüfen, gibt es den Befehl `if`, gefolgt von der Bedingung, die geprüft werden soll, und einem Doppelpunkt am Ende.
 	
@@ -109,23 +119,24 @@ Um eine Bedingung zu prüfen, gibt es den Befehl `if`, gefolgt von der Bedingung
 * **Logische Operatoren**: Um eine Bedingung formulieren zu können, brauchen wir sogenannte logische Operatoren, die 2 Werte vergleichen und als Ergebnis den Wahrheitswert *WAHR* oder *FALSCH* liefern.
 	In Python gibt es die folgenden logischen Operatoren: 
 		
-	* `a == b` ... a ist gleich b
-	* `a != b` ... a is ungleich b
-	* `a < b` ... a ist kleiner als b
-	* `a > b` ... a ist größer als b
-	* `a <= b` ... a ist kleiner als oder gleich b
-	* `a >= b` ... a ist größer als oder gleich b
+	`a == b` ... a ist gleich b  
+	`a != b` ... a is ungleich b  
+	`a < b` ... a ist kleiner als b  
+	`a > b` ... a ist größer als b  
+	`a <= b` ... a ist kleiner als oder gleich b  
+	`a >= b` ... a ist größer als oder gleich b  
 
 * Ein Beispiel für eine if-Anweisung:
 		
-		tuer = 0
-		if tuer == 3:
-			print('Gefunden.')
-		else:
-			print('Leider nicht.')
+```python
+tuer = 0
+if tuer == 3:
+	print('Gefunden.')
+else:
+	print('Leider nicht.')
+```
 
-
-#### **Schleifen**
+#### Schleifen
 	
 * Um Dinge zu beschreiben, die sich immer auf die gleich Art wiederholen sollen, solange eine Bedingung erfüllt ist, gibt es sogenannte Schleifen, z.B. die **while**-Schleife.
 	Sie beginnt mit dem Befehl `while` gefolgt - wie bei der if-Anweisung - mit der Bedingung und abgeschlossen wird die Zeile auch wieder mit einem Doppelpunkt.
@@ -133,51 +144,49 @@ Um eine Bedingung zu prüfen, gibt es den Befehl `if`, gefolgt von der Bedingung
 
 * Ein Beispiel für eine while-Schleife:
 
-		punkte = 0
-		while punkte < 5:
-			print('Gehe weiter.')
-			punkte = punkte + 1
-
-
+```python
+punkte = 0
+while punkte < 5:
+	print('Gehe weiter.')
+	punkte = punkte + 1
+```
 
 ## Eine Lösung
 
-<div class="alert alert-info cd-alert-medium">
-    Versuche zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!<br/>
-    <a class="btn btn-success" href="#solution">Lösung anzeigen</a>
-</div>
-<div class="empty-page"></div>
+{{< alertblock >}}
+Versuche zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!
+{{< /alertblock >}}
+
 Eine mögliche Lösung für das Geisterspiel könnte dann so aussehen:
 
-<a id="solution"></a>
+```python
+# CoderDojo Linz - Geisterspiel
 
-	# CoderDojo Linz - Geisterspiel
+from random import randint
 
-	from random import randint
+print('Geisterspiel')
+print('============')
 
-	print('Geisterspiel')
-	print('============')
+du_bist_mutig = True
+score = 0
 
-	du_bist_mutig = True
-	score = 0
-
-	while du_bist_mutig:
-		geistertuer = randint(1, 3)
-		print(' ')
-		print('Vor dir sind drei Türen.')
-		print('Hinter einer ist ein Geist.')
-		print('Welche Tür öffnest du?')
-		tuer = input('1, 2 oder 3? ')
-		tuer_nummer = int(tuer)
-		if tuer_nummer == geistertuer:
-			print('GEIST!')
-			print('Lauf schnell weg!')
-			du_bist_mutig = False
-		else:
-			print('Kein Geist!')
-			print('Du bis ein Zimmer weiter.')
-			score = score + 1
-
+while du_bist_mutig:
+	geistertuer = randint(1, 3)
 	print(' ')
-	print('Game over! Deine Punkte: ', score)
- 
+	print('Vor dir sind drei Türen.')
+	print('Hinter einer ist ein Geist.')
+	print('Welche Tür öffnest du?')
+	tuer = input('1, 2 oder 3? ')
+	tuer_nummer = int(tuer)
+	if tuer_nummer == geistertuer:
+		print('GEIST!')
+		print('Lauf schnell weg!')
+		du_bist_mutig = False
+	else:
+		print('Kein Geist!')
+		print('Du bis ein Zimmer weiter.')
+		score = score + 1
+
+print(' ')
+print('Game over! Deine Punkte: ', score)
+ ```

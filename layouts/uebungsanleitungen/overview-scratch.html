@@ -49,8 +49,17 @@
                         <!-- <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6> -->
                         <p class="card-text mt-4">{{.Description}}</p>
                     </div>
-                    <div class="card-footer">
-                        <a href="{{ $link }}" class="card-link">{{ $linkText }}</a>
+                    <div class="card-footer scratch-card-footer">
+                        <!-- <a href="{{ $link }}" class="card-link">{{ $linkText }}</a> -->
+                        {{ if isset .Params "sprites" }}
+                        <span title="Figuren"><i class="fas fa-dragon"></i> {{ .Params.Sprites }}</span>
+                        {{ end }}
+                        {{ if isset .Params "scripts" }}
+                        <span title="Skripte"><i class="fas fa-code"></i> {{ .Params.Scripts }}</span>
+                        {{ end }}
+                        {{ if isset .Params "data" }}
+                        <span title="Variablen"><i class="fas fa-clipboard-list"></i> {{ .Params.Data }}</span>
+                        {{ end }}
                     </div>
                 </div>
             </div>

@@ -1,7 +1,8 @@
 ---
-
-title: Erste Schritte mit Unity
-description: In dieser Übung lernst du Unity kennen.
+title: "Erste Schritte mit Unity"
+description: "In dieser Übung lernst du Unity kennen."
+aliases:
+  - /trainingsanleitungen/unity/erste-schritte-mit-unity.html
 ---
 
 # Unity Racing Game
@@ -21,7 +22,7 @@ Beim Start nach der Installation müsst ihr euch registrieren und ein Unity Kont
  
 In der Mitte des Fensters befindet sich der *3D Editor*, auf der linken Seite die Elemente in der aktuellen Szene, rechts können die Eigenschaften der aktuellen Auswahl eingesehen werden und unten erlangt ihr Zugriff auf verfügbare Assets sowie dem Asset Store und die Console auf welcher Debug Ausgaben ausgegeben werden können. Schon jetzt könnt Ihr mit einem Klick auf den Play Button oben in der Mitte das Spiel sofort starten. Außer einem Horizont am Hintergrund gibt es jedoch nichts zu sehen, daher stoppen wir die Ausführung wieder. Bevor wir richtig mit der Programmierung starten noch ein paar Details zum 3D Editor.
 
-![Bildschirmaufbau bei Unity](erste-schritte-mit-unity/bildschirmaufbau-unity.png)
+{{< imgblock "img/bildschirmaufbau-unity.png" "Bildschirmaufbau bei Unity" >}}{{< /imgblock >}}
 
 ## Der 3D Editor
 
@@ -62,21 +63,23 @@ Wer von euch nun [Visual Studio Community Edition](https://www.visualstudio.com/
 
 Um Visual Studio zu verwenden, geht auf *Edit => Preferences => External Tools*. Die Einstellung *external Script Editor* befindet sich ganz oben, Mono Develop ist hier ausgewählt. Wechselt einfach zu *Microsoft Visual Studio 2013* und schließt dieses Fenster wieder.
 
-![Unity mit Visual Studio verbinden](erste-schritte-mit-unity/unity-mit-visual-studio-verbinden.png)
+{{< imgblock "img/unity-mit-visual-studio-verbinden.png" "Unity mit Visual Studio verbinden" >}}{{< /imgblock >}}
 
 Wählt als nächstes wieder den Würfel aus, dem wir zuvor das Script hinzugefügt haben. Klickt das Script mit der rechten Maustaste an und wählt *Edit Script*. Nun wird der Code Editor gestartet (dies kann eine Weile dauern). 
 Wenn der Ladevorgang fertig ist, befinden wir uns in Visual Studio und können das Script sofort bearbeiten. Zu Beginn sieht es noch folgendermaßen aus: 
 
-![Script in Visual Studio](erste-schritte-mit-unity/script-in-visual-studio.png)
+{{< imgblock "img/script-in-visual-studio.png" "Script in Visual Studio" >}}{{< /imgblock >}}
 
 Das Script enthält zu Beginn nur 2 Methoden: *Start* und *Update*. Diese verhalten sich natürlich auch ganz ihrem Namen nach: Die Start-Methode wird hinzugefügt, sobald das Spiel gestartet wird (bzw. wenn ein GameObject initialisiert wird, das erst im späteren Spielverlauf hinzukommt). Die Update-Methode wird jedoch für jeden [Frame](https://de.wikipedia.org/wiki/Einzelbild_(Film)) (sprich um ein flüssiges Spiel zu erhalten mindestens 25x pro Sekunde) aufgerufen. Wenn wir komplexe Vorgänge in unsere Scripts einbauen, müssen wir natürlich auch darauf achten, in der Update Methode nicht zu viel Zeit zu verlieren. 
 
 Wir wollen nun die Update Methode so anpassen, dass sich der Würfel ein wenig wie ein Fahrzeug verhält, also fügen wir unserer Scriptklasse ein paar Variablen hinzu um dies zu ermöglichen:
 
-        private readonly Vector3 _direction = Vector3.forward;
-        private float _speed = 0f;
-        private const float Velocity = 1f;
-        private float _wheelangle = 0;
+```csharp
+private readonly Vector3 _direction = Vector3.forward;
+private float _speed = 0f;
+private const float Velocity = 1f;
+private float _wheelangle = 0;
+```
 
 Zuerst einen [Vektor](https://de.wikipedia.org/wiki/Vektor) für die Richtung, in welche sich unser Würfel bewegt (mit dem Wert *Vector3.forward*, damit sich der Würfel in die von ihm aus gesehen Richtung gerade nach vorne bewegt). Bewegungen im 3dimensionalen Raum werden mit Vektoren beschrieben. Um hierbei fit zu sein, empfiehlt es sich, gut im Mathematikunterricht aufzupassen und/oder sich die Grundlagen durch Recherche in Büchern oder im Internet zu ereignen (z.B. [http://www.frustfrei-lernen.de/mathematik/vektor-vektorrechnung-mathematik.html](http://www.frustfrei-lernen.de/mathematik/vektor-vektorrechnung-mathematik.html)).
 
@@ -84,32 +87,36 @@ Zusätzlich zur Bewegungsrichtung legen wir auch Variablen für die Geschwindigk
  
 Dem Inhalt der Update Methode fügen wir nun folgenden Code hinzu:
 
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            _speed += Velocity;
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            _speed -= Velocity;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            _wheelangle -= 2f;
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            _wheelangle += 2f;
-        }
+```csharp
+if (Input.GetKey(KeyCode.UpArrow))
+{
+    _speed += Velocity;
+}
+if (Input.GetKey(KeyCode.DownArrow))
+{
+    _speed -= Velocity;
+}
+if (Input.GetKey(KeyCode.LeftArrow))
+{
+    _wheelangle -= 2f;
+}
+if (Input.GetKey(KeyCode.RightArrow))
+{
+    _wheelangle += 2f;
+}
+```
 
 Wir benutzen für unsere Steuerung die Pfeiltasten. Mit *Input.GetKey(KeyCode c)* können wir abfragen, ob eine bestimmte Taste gerade gedrückt ist. Wenn dem so ist, verändern wir einfach die Werte unserer Variablen je nach gedrückter Taste. 
 
 Zu guter Letzt müssen wir die Änderungen auf das Objekt anwenden:
 
-        _wheelangle /= 2;
-        Debug.Log(_speed);
-           this.transform.Translate(_direction*_speed * Time.deltaTime);
-        
-        this.transform.Rotate(Vector3.up, _wheelangle);
+```csharp
+_wheelangle /= 2;
+Debug.Log(_speed);
+    this.transform.Translate(_direction*_speed * Time.deltaTime);
+
+this.transform.Rotate(Vector3.up, _wheelangle);
+```
 
 Wir teilen in jedem Durchlauf den Lenkrad Winkel durch 2 um zu simulieren, dass sich das Lenkrad nach Loslassen der Taste langsam wieder in die Mittelposition bewegt. Anschließend geben wir (auch um die Console zu zeigen) die aktuelle Geschwindigkeit aus.
  
@@ -137,7 +144,7 @@ Wenn wir das Spiel nun starten, fällt das Fahrzeug auf die Plane und wir könne
  
 Zu guter Letzt wollen wir das Spiel natürlich auch noch ohne Unity spielen, und dazu müssen wir es bauen: *File => Build & Run*. Wir können nun die Plattform für den Build wählen. Da wir auf unserem lokalen Rechner spielen wollen, nehmen wir *Windows (x86)*. Nach erfolgreichem Build können wir uns noch die Grafikeigenschaften für das Spiel auswählen und los geht’s!
 
-![Unser fertiges Spiel](erste-schritte-mit-unity/fertiges-spiel.png)
+{{< imgblock "img/fertiges-spiel.png" "Unser fertiges Spiel" >}}{{< /imgblock >}}
 
 Viel Spaß!
 

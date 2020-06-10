@@ -5,9 +5,9 @@ type: "uebungsanleitungen/programmieren/scratch"
 img: "chess-game.png"
 imgposition: "center top"
 level: 3
-sprites: 4
+sprites: 9
 scripts: 35
-data: 70
+data: 42
 ---
 
 Du kannst das fertige Project unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> ausprobieren.

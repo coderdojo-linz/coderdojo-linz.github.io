@@ -7,7 +7,7 @@ imgcover: false
 level: 1
 sprites: 3
 scripts: 9
-data: 7
+data: 0
 ---
 
 ## Lösche vorhandene Malspuren und schalte den Stift ein

@@ -26,6 +26,7 @@
     {{ $sass := resources.Get "sass/main.scss" }}
     {{ $style := resources.Get $sass | resources.ToCSS $options | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
