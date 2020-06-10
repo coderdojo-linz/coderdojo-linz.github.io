@@ -1,7 +1,7 @@
 ---
-
-title: Snake mit Node.js
-description: In dieser Übung programmierst du das Spiel Snake mit Node.js
+title: "Snake mit Node.js"
+description: "In dieser Übung programmierst du das Spiel Snake mit Node.js"
+level: 2
 ---
 
 # Snake mit Node.js

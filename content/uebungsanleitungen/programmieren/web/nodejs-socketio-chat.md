@@ -1,7 +1,7 @@
 ---
-
-title: Chat mit Node.js und Socket.io
-description: In dieser Übung programmieren wir einen Chat mit Node.js und Socket.io
+title: "Chat mit Node.js und Socket.io"
+description: "In dieser Übung programmieren wir einen Chat mit Node.js und Socket.io."
+level: 2
 ---
 
 # Chat mit Node.js und Socket.io

@@ -1,8 +1,7 @@
 ---
 title: "HTML & CSS Hands On"
 description: "In dieser Übung werden wir ausführlich die Basics von HTML und CSS üben."
-date: 2020-05-27T13:11:02+02:00
-draft: false
+level: 2
 ---
 
 # HTML & CSS Hands On

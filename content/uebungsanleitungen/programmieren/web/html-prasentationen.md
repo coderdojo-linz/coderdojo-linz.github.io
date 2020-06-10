@@ -1,7 +1,7 @@
 ---
-
-title: Präsentationen mit HTML statt PowerPoint
-description: In dieser Übung lernst du Reveal.js für Präsentationen kennen 
+title: "Präsentationen mit HTML statt PowerPoint"
+description: "In dieser Übung lernst du Reveal.js für Präsentationen kennen."
+level: 2
 ---
 
 # Präsentationen mit HTML statt PowerPoint

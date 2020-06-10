@@ -1,7 +1,8 @@
 ---
-
-title: Deine erste Webseite veröffentlichen
-description: In dieser Übung veröffentlichst du deine erste Webseite im Internet 
+title: "Deine erste Webseite veröffentlichen"
+description: "In dieser Übung veröffentlichst du deine erste Webseite im Internet "
+level: 1
+weight: 3
 ---
 
 # Deine erste Webseite veröffentlichen

@@ -1,7 +1,7 @@
 ---
-
-title: Verschlüsseln mit JavaScript
-description: In dieser Übung programmierst du deine eigene Verschlüsselung 
+title: "Verschlüsseln mit JavaScript"
+description: "In dieser Übung programmierst du deine eigene Verschlüsselung "
+level: 1
 ---
 
 # Verschlüsseln mit JavaScript

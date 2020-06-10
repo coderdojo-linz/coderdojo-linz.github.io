@@ -1,7 +1,7 @@
 ---
-
-title: Node.js Webserver
-description: In dieser Übung lernst du, wie du mit Node.js einen einfachen Webserver programmierst.
+title: "Node.js Webserver"
+description: "In dieser Übung lernst du, wie du mit Node.js einen einfachen Webserver programmierst."
+level: 2
 ---
 
 # Ein Webserver mit Node.js

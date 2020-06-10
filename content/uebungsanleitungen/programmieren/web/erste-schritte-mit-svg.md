@@ -1,7 +1,7 @@
 ---
-
-title: Erste Schritte mit SVG
-description: In dieser Übung lernst du Scalable Vector Graphics (SVG) kennen.
+title: "Erste Schritte mit SVG"
+description: "In dieser Übung lernst du Scalable Vector Graphics (SVG) kennen."
+level: 2
 ---
 
 # Erste Schritte mit SVG

@@ -1,7 +1,7 @@
 ---
-
-title: Erste Schritte mit Bootstrap
-description: In dieser Übung lernst du, wie du mit Bootstrap Webseiten stylen kannst.
+title: "Erste Schritte mit Bootstrap"
+description: "In dieser Übung lernst du, wie du mit Bootstrap Webseiten stylen kannst."
+level: 2
 ---
 
 # Erste Schritte mit Bootstrap

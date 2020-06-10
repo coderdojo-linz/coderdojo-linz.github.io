@@ -1,7 +1,7 @@
 ---
-
-title: Space Shooter mit Phaser.io
-description: In dieser Übung programmierst du einen Space Shooter mit TypeScript und Phaser.io
+title: "Space Shooter mit Phaser.io"
+description: "In dieser Übung programmierst du einen Space Shooter mit TypeScript und Phaser.io"
+level: 3
 ---
 
 # Space Shooter mit Phaser.io

@@ -1,7 +1,7 @@
 ---
-
-title: Tetris mit Blazor
-description: In dieser Übung programmierst du Tetris mit CSharp und Blazor
+title: "Tetris mit Blazor"
+description: "In dieser Übung programmierst du Tetris mit CSharp und Blazor"
+level: 3
 ---
 
 # Tetris mit Blazor

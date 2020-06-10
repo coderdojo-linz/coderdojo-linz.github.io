@@ -1,7 +1,8 @@
 ---
-
-title: Erste Schritte mit CSS
-description: In dieser Übung lernst du Cascading Style Sheets (CSS) kennen.
+title: "Erste Schritte mit CSS"
+description: "In dieser Übung lernst du Cascading Style Sheets (CSS) kennen."
+level: 1
+weight: 2
 ---
 
 # Erste Schritte mit CSS

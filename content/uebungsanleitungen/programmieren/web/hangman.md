@@ -1,7 +1,7 @@
 ---
-
-title: Hangman
-description: In dieser Übung programmierst du das Spiel Hangman.
+title: "Hangman"
+description: "In dieser Übung programmierst du das Spiel Hangman."
+level: 2
 ---
 
 # Hangman

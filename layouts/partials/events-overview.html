@@ -15,17 +15,18 @@
                     {{ end }}
                     <tr>
                         <td>
-                            <span class="badge badge-primary event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span>
+                            <span class="badge badge-primary badge-pill event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span>
                             <span class="d-block d-sm-none">{{ dateFormat "02.01.2006" .begintime }}</span>
                         </td>
                         <td class="d-none d-sm-table-cell">{{ dateFormat "02.01.2006" .begintime }}</td>
                         <td class="d-none d-sm-table-cell">{{ $description }}</td>
-                        <td>
-                            <a href="/termine#{{ dateFormat "20060102" .begintime }}">mehr Infos</a>
-                        </td>
                     </tr> 
                     {{ end }} 
                 </table>
+            </div>
+
+            <div class="col-12 mt-4">
+                <p class="text-center"><a class="btn btn-primary" href="/termine">Details zu den Terminen</a></p>
             </div>
         </div>
     </div>

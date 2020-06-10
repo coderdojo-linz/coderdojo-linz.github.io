@@ -1,7 +1,7 @@
 ---
-
-title: Fraktal Baum mit snap.svg
-description: In dieser Übung malst du einen Baum mit SVG.
+title: "Fraktal Baum mit snap.svg"
+description: "In dieser Übung malst du einen Baum mit SVG."
+level: 2
 ---
 
 # Zeichne einen Fraktal Baum mit snap.svg

@@ -15,6 +15,10 @@ img {
     max-width: 100%;
 }
 
+.btn {
+    border-radius: 0;
+}
+
 section {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -208,6 +212,10 @@ section.dark {
         text-decoration: underline;
     }
 
+    a.btn {
+        text-decoration: none;
+    }
+
     .table td {
         border-color: #fff;
     }
@@ -314,6 +322,28 @@ nav.breadcrumb-nav {
         .nav-item.active a.nav-link {
             color: $primary-color;
         }
+    }
+}
+
+/* about */
+section#about {
+    p.about-icon {
+        text-align: center;
+
+        i {
+            font-size: 3rem;
+            color: $primary-color
+        }
+    }
+}
+
+/* events overview */
+section#events-overview {
+    td {
+        border-top: 2px solid $dark-background;
+        border-bottom: 2px solid $dark-background;
+        background-color: rgba(#fff, 0.08);
+        padding: 10px 12px;
     }
 }
 
@@ -434,7 +464,7 @@ ol.breadcrumb {
                 padding: 0;
 
                 >div {
-                    background-color: rgba(#000, 0.25);
+                    background-color: rgba(#000, 0.5);
                     position: absolute;
                     width: 1110px;
                     left: calc((100vw - 1110px) / 2);
@@ -681,6 +711,13 @@ iframe[src*="jsfiddle"] {
         line-height: 1rem;
         position: relative;
         top: -2px;
+    }
+
+    td {
+        border-top: 2px solid $light-background;
+        border-bottom: 2px solid $light-background;
+        background-color: rgba(#fff, 1);
+        padding: 10px 12px;
     }
 }
 

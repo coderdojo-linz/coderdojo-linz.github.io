@@ -1,7 +1,8 @@
 ---
-
-title: HTML Meine erste Webseite
-description: In dieser Übung erstellst Du deine erste Webseite.
+title: "HTML Meine erste Webseite"
+description: "In dieser Übung erstellst Du deine erste Webseite."
+level: 1
+weight: 1
 ---
 
 

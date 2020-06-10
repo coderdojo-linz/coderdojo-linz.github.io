@@ -31,12 +31,12 @@
                         <td class="text-nowrap text-center d-none d-sm-table-cell">
                             <a id="{{ dateFormat "20060102" .begintime }}"></a>
                             <div class="event-time">
-                                <span class="badge badge-primary event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span><br />{{ dateFormat "02.01.2006" .begintime }}<br />{{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}
+                                <span class="badge badge-primary badge-pill event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span><br />{{ dateFormat "02.01.2006" .begintime }}<br />{{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}
                             </div>
                         </td>
                         <td class="event">
                             <div class="d-block d-sm-none event-time event-time-xs">
-                                <span class="badge badge-primary event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span><br/><b>{{ dateFormat "02.01.2006" .begintime }} {{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}</b>
+                                <span class="badge badge-primary badge-pill event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span><br/><b>{{ dateFormat "02.01.2006" .begintime }} {{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}</b>
                             </div>
 
                             {{ range(.workshops) }}

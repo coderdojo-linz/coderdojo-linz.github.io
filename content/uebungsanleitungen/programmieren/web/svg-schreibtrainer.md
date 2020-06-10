@@ -1,7 +1,7 @@
 ---
-
-title: SVG Schreibtrainer
-description: In dieser Übung baust du ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.
+title: "SVG Schreibtrainer"
+description: "In dieser Übung baust du ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern."
+level: 2
 ---
 
 # SVG Schreibtrainer
@@ -10,7 +10,7 @@ description: In dieser Übung baust du ein Spiel das dir hilft, deine Tipp-Gesch
 
 Du baust ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.
 
-Ám oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen. Tippe den Buchstaben, bevor er den unteren 
+Am oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen. Tippe den Buchstaben, bevor er den unteren 
 Rand des Spielfelds berührt.
 
 Auf Wikipedia findest du eine Grafik zum 

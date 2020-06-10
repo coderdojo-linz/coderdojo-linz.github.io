@@ -1,7 +1,7 @@
 ---
-
-title: Advanced CSS Styles
-description: In dieser Übung lernst du einige kompliziertere Styles in CSS kennen.
+title: "Advanced CSS Styles"
+description: "In dieser Übung lernst du einige kompliziertere Styles in CSS kennen."
+level: 2
 ---
 
 # Advanced CSS Styles

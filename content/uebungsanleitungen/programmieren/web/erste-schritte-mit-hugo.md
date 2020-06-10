@@ -1,7 +1,7 @@
 ---
-
-title: Erste Schritte mit Hugo
-description: In dieser Übung lernst du, wie du mit Hugo eine statische Webseite erstellen kannst
+title: "Erste Schritte mit Hugo"
+description: "In dieser Übung lernst du, wie du mit Hugo eine statische Webseite erstellen kannst"
+level: 2
 ---
 
 # Erste Schritte mit Hugo
