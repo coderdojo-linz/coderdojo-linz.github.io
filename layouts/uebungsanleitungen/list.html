@@ -35,27 +35,31 @@
             {{ if isset .Params "imgposition" }}
                 {{ $objectPosition = .Params.imgposition }}
             {{ end }}
-            
+
             <div class="col mb-5">
-                <div class="card h-100" onclick="location.href='{{.Permalink}}'">
-                    <!-- {{ if isset .Params "img" }}
-                    <div class="card-header">{{ if isset .Params "img" }}
-                        <img src="/img/uebungsanleitungen/{{.Params.img}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: contain; height: 100px; padding: 10px 40px;">{{ end }}
-                    </div>
-                    {{ end }} -->
+                {{ if isset .Params "file" }}
+                {{ $link = print .Permalink .Params.File }}
+                <div class="card h-100" onclick="window.open('{{$link}}')">
+                {{ else }}
+                <div class="card h-100" onclick="location.href='{{$link}}'">
+                {{ end}}
                     {{ if isset .Params "img" }}
                     <div class="card-header" style="padding: {{ $padding }}; height: 200px;">{{ if isset .Params "img" }}
-                        <img src="{{.RelPermalink}}{{(index .Params.img)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: {{$objectFit}}; object-position: {{$objectPosition}}; height: 100%;">{{ end }}
+                        <img src="/img{{.RelPermalink}}../{{(index .Params.img)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: {{$objectFit}}; object-position: {{$objectPosition}}; height: 100%;">{{ end }}
                     </div>
                     {{ end }}
                     
                     <div class="card-body">
+                        {{ if isset .Params "file" }}
+                        <span class="badge badge-pill badge-success" style="float: right; margin-left: 10px;">PDF</span>
+                        {{ else }}
                         <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right; margin-left: 10px;">
                             Level {{ .Params.Level }}
                         </span>
+                        {{ end }}
                         <h5 class="card-title">{{.Title}}</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6> -->
-                        <p class="card-text mt-4">{{.Description}}</p>
+                        <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6>
+                        <p class="card-text mt-4">{{.Content}}</p>
                     </div>
                     <!-- <div class="card-footer">
                         {{ if gt (len .Pages) 1}}

@@ -1,5 +1,5 @@
 ---
-title: "Loeten"
+title: "Löten"
 description: "Lerne Löten mit unseren einfachen Karton-Schaltungen"
 level: 1
 weight: 1
