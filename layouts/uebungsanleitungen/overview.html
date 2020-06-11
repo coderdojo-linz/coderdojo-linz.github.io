@@ -48,7 +48,7 @@
                     {{ end }}
 
                     <div class="card-body">
-                        <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right;">
+                        <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right; margin-left: 10px;">
                             {{ cond (eq .Params.Level 0) "ab 5" (cond (eq .Params.Level 1) "ab 8" (cond (eq .Params.Level 2) (print "ab " (cond (isset .Params "age") .Params.Age "11")) (print "ab " (cond (isset .Params "age") .Params.Age "14")))) }}
                         </span>
                         <h5 class="card-title">{{.Title}}</h5>

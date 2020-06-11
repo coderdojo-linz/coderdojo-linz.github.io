@@ -208,6 +208,111 @@ Das folgende Bespiel besteht aus einem Header, einem Menu, dem Contentbereich un
 
 ### Flexbox
 
+Eine Flexbox besteht aus einem Container und Items im Container. Damit die Items im Container als Flexbox dargestellt werden, muss am Container folgendes CSS Property gesetzt werden:
+
+[`display: flex | inline-flex;`](https://developer.mozilla.org/en-US/docs/Glossary/Flex)
+
+#### CSS Properties für den Container
+
+**Richtung**
+
+- [`flex-direction: row | row-reverse | column | column-reverse;`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)  
+Richtung, in der die Items angeordnet werden (Zeile oder Spalte)
+- [`flex-wrap: nowrap | wrap | wrap-reverse;`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)  
+Zeilen- bzw. Spaltenumbruch
+
+**Abstand (nur Firefox und Safari)**
+
+- [`column-gap: <length> | <percentage>;`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap)  
+Abstand zwischen den Spalten
+- [`row-gap: <length> | <percentage>;`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap)  
+Abstand zwischen den Zeilen
+- [`gap: <'row-gap'> <'column-gap'>?;`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)  
+
+**Ausrichtung**
+
+- [`justify-content: flex-start | flex-end | center | space-between | space-around;`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)  
+Anordnung entlang der Hauptachse
+- [`align-content: flex-start | flex-end | center | space-between | space-around | stretch;`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)  
+Anordnung entlang der Kreuzachse
+- [`place-content: <'alignContent'> <'justify-content'>?;`](https://developer.mozilla.org/en-US/docs/Web/CSS/place-content)  
+- [`justify-items: start | end | center | stretch | ...;`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)  
+setzt das `justify-self` Property für alle Elemente im Container
+- [`align-items: flex-start | flex-end | center | baseline | stretch;`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)  
+setzt das `align-self` Property für alle Elemente im Container (nur bei wrap)
+- [`place-items: <'align-items'> <'justify-items'>?;`](https://developer.mozilla.org/en-US/docs/Web/CSS/place-items)  
+
+#### CSS Properties für die Items
+
+- [`order: <integer>;`](https://developer.mozilla.org/en-US/docs/Web/CSS/order)  
+Reihenfolge des Items
+- [`align-self: flex-start | flex-end | center | baseline | stretch;`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)  
+Alignment entlang der Kreuzachse
+- [`flex-grow: <number>;`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)  
+gibt an, wie viel das Item im Verhältnis zu den anderen Items wachsen darf - Ausgangsbasis ist `width` oder `height` oder `flex-basis`
+- [`flex-shrink: <number>;`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)  
+gibt an, wie viel das Item im Verhältnis zu den anderen Items schrumpfen darf - Ausgangsbasis ist `flex-basis` bzw. `width` oder `height`
+- [`flex-basis: content | <width>;`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)  
+initiale Größe des Elements
+- [`flex: [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'>];`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/zyng4hjb/#fork)
+
+{{< imgblock "img/flexbox-result-1.png" "Flexbox" 3 >}}
+Verteile die Kästchen über die gesamte Breite.
+{{< /imgblock >}}
+
+{{< imgblock "img/flexbox-result-2.png" "Flexbox" 3 >}}
+Die Kästchen sollen jetzt zusätzlich die gesamte Höhe einnehmen.
+{{< /imgblock >}}
+
+{{< imgblock "img/flexbox-result-3.png" "Flexbox" 3 >}}
+Wenn die Kästchen größer sind haben sie in einer Zeile nicht mehr Platz. Sie sollen dann in die nächste Zeile rutschen.
+{{< /imgblock >}}
+
+{{< imgblock "img/flexbox-result-4.png" "Flexbox" 3 >}}
+Jedes dritte Kästchen soll mindestens 60px breit sein. Es darf auch größer werden aber nicht kleiner.
+{{< /imgblock >}}
+
+{{< imgblock "img/flexbox-result-5.png" "Flexbox" 3 >}}
+Jedes dritte Kästchen soll bis zu doppelt so groß sein wie die anderen, um den vorhanden Platz auszufüllen.
+{{< /imgblock >}}
+
+{{< imgblock "img/flexbox-result-6.png" "Flexbox" 3 >}}
+Alle Kästchen sollen 40px breit sein. Jedes dritte darf bis zu drei mal so groß werden, um den vorhandenen Platz auszufüllen.
+{{< /imgblock >}}
+
+{{< imgblock "img/flexbox-result-7.png" "Flexbox" 3 >}}
+Ordne die Kästchen in Spalten an.
+
+Höhe der Kästchen:
+
+- 90px
+- jedes 2. 110px
+- jedes 3. 1140px
+
+Du kannst auch die Reihenfolge ändern.
+
+{{< /imgblock >}}
+
+{{< imgblock "img/flexbox-result-8.png" "Flexbox" 3 >}}
+Jedes dritte Kästchen soll über die gesamte Breite gehen.
+{{< /imgblock >}}
+
+{{< imgblock "img/flexbox-result-9.png" "Flexbox" 3 >}}
+Verteile die 9 Kästchen gleichmäßig.
+{{< /imgblock >}}
+
+[Startprojekt öffnen](https://jsfiddle.net/karin112358/o30nLe1u/#fork)
+
+<script async src="//jsfiddle.net/karin112358/06jbcoxq/embed/result/dark/"></script>
+
+#### Flexbox Playgrounds
+
+- https://demo.agektmr.com/flexbox/
+- https://the-echoplex.net/flexyboxes/
+- http://www.flexboxdefense.com/
+- https://www.flexboxpatterns.com/
 
 
 ### Grid

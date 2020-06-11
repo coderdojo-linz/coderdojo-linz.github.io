@@ -1,8 +1,10 @@
 ---
-title: "HTML Meine erste Webseite"
-description: "In dieser Übung erstellst Du deine erste Webseite."
+title: "Meine erste Webseite"
+description: "In dieser Übung erstellst du deine erste Webseite."
 level: 1
 weight: 1
+aliases:
+  - /trainingsanleitungen/web/html-meine-erste-webseite.html
 ---
 
 
@@ -21,26 +23,30 @@ In dieser Übung lernst du die [Hypertext Markup Language](https://de.wikipedia.
 	* [Brackets](http://brackets.io/) (Windows, MacOS, Linux)
 	* [Atom](https://atom.io/) (Windows, MacOS, Linux)
 
-2. Erstelle eine neue Textdatei. In *Visual Studio Code* geht das so: <br/>![Neue Datei in Visual Studio Code erstellen](html-meine-erste-webseite/code-neue-datei.png)
+2. Erstelle eine neue Textdatei. In *Visual Studio Code* geht das so: 
+
+{{< imgblock "img/code-neue-datei.png" "Neue Datei in Visual Studio Code erstellen" >}}{{< /imgblock >}}
 
 3. Gib folgenden Code in die neue Datei ein:
 
-        <!DOCTYPE html>
-        <html>
+```html
+<!DOCTYPE html>
+<html>
 
-          <head>
-           <title>Beschreibung der Seite (erscheint in der Titelzeile des Browsers)</title>
-          </head>
+  <head>
+    <title>Beschreibung der Seite (erscheint in der Titelzeile des Browsers)</title>
+  </head>
 
-          <body>
-            <p>Dieser Text wird im Browserfenster angezeigt.</p>
-          </body>
+  <body>
+    <p>Dieser Text wird im Browserfenster angezeigt.</p>
+  </body>
 
-        </html>
+</html>
+```
 
 3. Speichere die Datei in einem Ordner unter dem Namen `default.html` ab. Merke dir den Ordner, in dem du sie speicherst. Du wirst ihn gleich brauchen.
 
-4. Suche die gespeicherte Datei im Dateiexplorer (Windows) bzw. Finder (MacOS). Öffne sie durch Doppelklick. Ein Webbrowser sollte sich öffnen und deine erste Webseite anzeigen.<br/>![HTML-Datei im Webbrowser](html-meine-erste-webseite/erste-html-datei.png)
+4. Suche die gespeicherte Datei im Dateiexplorer (Windows) bzw. Finder (MacOS). Öffne sie durch Doppelklick. Ein Webbrowser sollte sich öffnen und deine erste Webseite anzeigen.<br/>{{< imgblock "img/erste-html-datei.png" "HTML-Datei im Webbrowser" >}}{{< /imgblock >}}
 
 3. Mache dich mit dem HTML-Code vertraut. Es folgen einige Erklärungen. Falls du Fragen hast, wende dich an einen CoderDojo Mentor. 
 
@@ -56,7 +62,7 @@ In dieser Übung lernst du die [Hypertext Markup Language](https://de.wikipedia.
 
 Jede HTML-Datei muss einen Titel erhalten. Dieser Titel dient in der Praxis mehreren Zwecken, aber solange du die Seiten nur zum Lernen und Ausprobieren auf deinem eigenen Computer entwickelst und testest, wird für dich erstmal wichtig sein, dass der Titel im Browser in der Titelzeile des Anzeigefensters bzw. Karteireiters (*Tab*) angezeigt wird. So könnte dies beispielsweise beim Dojo so aussehen.
 
-![Tab mit Titel](html-meine-erste-webseite/html-BrowserTitle.png)
+{{< imgblock "img/html-BrowserTitle.png" "Tab mit Titel" >}}{{< /imgblock >}}
 
 Später, wenn Deine HTML-Datei aus dem Internet erreichbar sein wird, bekommt der Titel einer HTML-Seite sogar noch größere Bedeutung:
 
@@ -65,13 +71,15 @@ Später, wenn Deine HTML-Datei aus dem Internet erreichbar sein wird, bekommt de
 * Der Titel der Datei dient im Web vielen automatischen Suchprogrammen als wichtige Informationsquelle, sodass deine HTML-Seiten leichter von Interessenten mit einer Suchmaschine wie z.B. Google gefunden werden können, wenn du sinnvolle Titel für deine HTML-Seiten vergeben hast.
 * Wenn die Datei zu den Suchtreffern einer Suche gehört, bieten viele Suchmaschinen den Titel der Datei als anklickbaren Verweis an. 
 
-![Titel in Google](html-meine-erste-webseite/html-BrowserTitleGoogle.png)
+{{< imgblock "img/html-BrowserTitleGoogle.png" "Titel in Google" >}}{{< /imgblock >}}
 
 1. Für unser CoderDojo wäre folgender Titel passend. Ersetze den Titel in deiner HTML-Datei durch diesen Code. Vergiss nicht, die HTML-Datei abzuspeichern! 
 
-        <title>CoderDojo Linz | Meine erste Webseite</title>
+```html
+<title>CoderDojo Linz | Meine erste Webseite</title>
+```
 
-2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Titel ändert.<br/>![Neuer Titel](html-meine-erste-webseite/neuer-title.png)
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Titel ändert.<br/>{{< imgblock "img/neuer-title.png" "Neuer Titel" >}}{{< /imgblock >}}
 
 
 ## Nach dem Kopf folgt der Körper
@@ -80,28 +88,32 @@ Wie schon erwähnt, kommt der eigentliche Inhalt der Webseite in das `body`-Elem
 
 1. Nehmen wir als erstes Beispiel eine schöne große Überschrift. Überschrift heißt auf Englisch *heading*. Es gibt verschiedene Überschriftenebenen, die einfach mit eins beginnend nummeriert werden (*h1, h2, h3, ...*). Man fängt mit `h1` an; das ist die größte. Wenn man dann das, was auf diese Überschrift folgt, nochmals unterteilen will, nimmt man die nächste: `h2`. Und so weiter, und so fort.<br/>Füge vor dem `<p>` Absatz eine Überschrift mit `<h1>` ein. Vergiss nicht, die HTML-Datei danach abzuspeichern! 
 
-        ...
-        <body>
-          <h1>Meine erste Webseite</h1>
-          <p>Dieser Text wird im Browserfenster angezeigt.</p>
-        </body>
-        ...
+```html
+...
+<body>
+  <h1>Meine erste Webseite</h1>
+  <p>Dieser Text wird im Browserfenster angezeigt.</p>
+</body>
+...
+```
 
-2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![HTML Seite mit Überschrift](html-meine-erste-webseite/html-seite-mit-titel.png)
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>{{< imgblock "img/html-seite-mit-titel.png" "HTML Seite mit Überschrift" >}}{{< /imgblock >}}
 
 3. Du willst sicher ein paar Worte über dich oder ein Thema, das dir wichtig ist, schreiben. Ein normalen Text wird in Absätze gegliedert. Das englische Wort für *Absatz* ist *paragraph*, und daraus ergeben sich dann die Tags `<p>` (Absatzanfang) und `</p>` (Absatzende).<br/>Füge ein paar Absätze in deine HTML-Datei ein wie unten gezeigt. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
-        ...        
-        <body>
-          <h1>Meine erste Webseite</h1>
-          <p>Diese Webseite soll zeigen, wie HTML funktioniert. Hier lernen wir gerade, 
-             wie man mit dem p-Element umgeht.</p>
-          <p>Das ist ein zweiter Absatz. Um zu sehen, was die Auswirkung ist, geben 
-             wir hier etwas sinnlosen Beispieltext ein. Bla bla bla ...</p>
-        </body>
-        ...        
+```html
+...        
+<body>
+  <h1>Meine erste Webseite</h1>
+  <p>Diese Webseite soll zeigen, wie HTML funktioniert. Hier lernen wir gerade, 
+      wie man mit dem p-Element umgeht.</p>
+  <p>Das ist ein zweiter Absatz. Um zu sehen, was die Auswirkung ist, geben 
+      wir hier etwas sinnlosen Beispieltext ein. Bla bla bla ...</p>
+</body>
+...        
+```
 
-2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![HTML Seite mit mehreren Absätzen](html-meine-erste-webseite/html-seite-mit-mehreren-absaetzen.png)
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>{{< imgblock "img/html-seite-mit-mehreren-absaetzen.png" "HTML Seite mit mehreren Absätzen" >}}{{< /imgblock >}}
 
 ## Ungeordnete Listen, Aufzählungen
 
@@ -111,50 +123,54 @@ Eine geordnete Liste (*ordered list*) wird bei HTML zwischen `<ol></ol>` notiert
 
 1. Erweitere den Code deiner HTML-Datei wie unten gezeigt. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
-        ...        
-        <body>
-          <h1>Meine erste Webseite</h1>
-        
-          <h2>Einleitung</h2>
-          <p>Diese Webseite soll zeigen, wie HTML funktioniert. Hier lernen wir gerade, 
-             wie man mit dem p-Element umgeht.</p>
-          <p>Das ist ein zweiter Absatz. Um zu sehen, was die Auswirkung ist, geben 
-             wir hier etwas sinnlosen Beispieltext ein. Bla bla bla ...</p>
-        
-          <h2>Meine Hobbies</h2>
-          <ul>
-            <li>radfahren</li>
-            <li>Musik hören</li>
-            <li>mit Freunden spielen</li>
-            <li>vor dem Rechner sitzen</li>
-          </ul>
-        
-        </body>
-        ...        
+```html
+...        
+<body>
+  <h1>Meine erste Webseite</h1>
 
-2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert. Fällt dir auf, dass die HTML-Seite das Zeichen *ö* falsch darstellt? Das kommt daher, dass HTML mit deutschen Sonderzeichen nicht richtig umgehen kann. Sie brauchen eine besondere Schreibweise, auf die wir unten noch eingehen werden.<br/>![HTML Seite mit Liste](html-meine-erste-webseite/unordered-list.png)
+  <h2>Einleitung</h2>
+  <p>Diese Webseite soll zeigen, wie HTML funktioniert. Hier lernen wir gerade, 
+      wie man mit dem p-Element umgeht.</p>
+  <p>Das ist ein zweiter Absatz. Um zu sehen, was die Auswirkung ist, geben 
+      wir hier etwas sinnlosen Beispieltext ein. Bla bla bla ...</p>
+
+  <h2>Meine Hobbies</h2>
+  <ul>
+    <li>radfahren</li>
+    <li>Musik hören</li>
+    <li>mit Freunden spielen</li>
+    <li>vor dem Rechner sitzen</li>
+  </ul>
+
+</body>
+...        
+```
+
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert. Fällt dir auf, dass die HTML-Seite das Zeichen *ö* falsch darstellt? Das kommt daher, dass HTML mit deutschen Sonderzeichen nicht richtig umgehen kann. Sie brauchen eine besondere Schreibweise, auf die wir unten noch eingehen werden.<br/>{{< imgblock "img/unordered-list.png" "HTML Seite mit Liste" >}}{{< /imgblock >}}
 
 3. Ändere die ungeordnete Liste auf eine geordnete List, indem du `ul` auf `ol` änderst. Schau dir den Unterschied im Webbrowser an.
 
 4. Man kann Listen auch verschachteln. Ändere den HTML-Code deiner Liste wie folgt. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
-        ...
-        <h2>Meine Hobbies</h2>
-        <ul>
-          <li>radfahren</li>
-          <li>Musik hören
-            <ul>
-              <li>Jazz</li>
-              <li>Rock</li>
-              <li>Pop</li>
-            </ul>
-          </li>
-          <li>mit Freunden spielen</li>
-          <li>vor dem Rechner sitzen</li>
-        </ul>
-        ...
+```html
+...
+<h2>Meine Hobbies</h2>
+<ul>
+  <li>radfahren</li>
+  <li>Musik hören
+    <ul>
+      <li>Jazz</li>
+      <li>Rock</li>
+      <li>Pop</li>
+    </ul>
+  </li>
+  <li>mit Freunden spielen</li>
+  <li>vor dem Rechner sitzen</li>
+</ul>
+...
+```
 
-2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![Verschachtelte Liste](html-meine-erste-webseite/verschachtelte-liste.png)
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>{{< imgblock "img/verschachtelte-liste.png" "Verschachtelte Liste" >}}{{< /imgblock >}}
 
 ## Wichtige Sonderzeichen
 
@@ -181,28 +197,30 @@ Eine gute Auflistung ist [hier](http://wiki.selfhtml.org/wiki/Referenz:HTML/Zeic
 
 Das Bild-Element kommt wie alle anderen Elemente auch aus dem Englischen. Bild heißt auf Englisch *Image*. Da Entwickler gerne Zeichen sparen, wurde es einfach auf `img` verkürzt. Jedes Bild braucht auch einen Verweis wo die Bild-Datei zu finden ist. Dies wird als Quelle bezeichnet und lautet im englishen Source also für Entwickler kurz `src`.
 
-1. Mach ein Foto oder suche eine Bilddatei aus dem Internet, die dir gefällt.<br/>**Wenn du Bilder aus dem Internet kopierst, achte immer darauf, ob du das lizenzrechtlich darfst. Verwende keine Bilder, bei denen du nicht sicher bist!** Die Google-Bildersuche ermöglicht es, nach Bildern zu suchen, die man wiederverwenden darf:<br/>![Google Bildersuche](html-meine-erste-webseite/creative-commons-bildersuche.png)
+1. Mach ein Foto oder suche eine Bilddatei aus dem Internet, die dir gefällt.<br/>**Wenn du Bilder aus dem Internet kopierst, achte immer darauf, ob du das lizenzrechtlich darfst. Verwende keine Bilder, bei denen du nicht sicher bist!** Die Google-Bildersuche ermöglicht es, nach Bildern zu suchen, die man wiederverwenden darf:<br/>{{< imgblock "img/creative-commons-bildersuche.png" "Google Bildersuche" >}}{{< /imgblock >}}
 
-2. Speichere die Bilddatei aus dem Internet in den Ordner, in dem auch deine HTML-Datei liegt. In unserem Beispiel haben wir uns das Bild eines Apfels ausgesucht und speichern es unter dem Namen `apfel.jpg`.<br/>![Bild speichern](html-meine-erste-webseite/save-image.png)
+2. Speichere die Bilddatei aus dem Internet in den Ordner, in dem auch deine HTML-Datei liegt. In unserem Beispiel haben wir uns das Bild eines Apfels ausgesucht und speichern es unter dem Namen `apfel.jpg`.<br/>{{< imgblock "img/save-image.png" "Bild speichern" >}}{{< /imgblock >}}
 
 3. Füge ein `img` Tag zu deinem HTML-Code hinzu, um das Bild in deiner Webseite anzuzeigen. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
-        ...
-        <body>
-          <h1>Meine erste Webseite</h1>
-        
-          <h2>Einleitung</h2>
-          ...
-        
-          <h2>Meine Hobbies</h2>
-          ...
-        
-          <h2>Ein sch&ouml;nes Bild</h2>
-          <img src="apfel.jpg" width="300" />
-        </body>
-        ...
+```html
+...
+<body>
+  <h1>Meine erste Webseite</h1>
 
-2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![HTML-Seite mit Bild](html-meine-erste-webseite/html-mit-bild.png)
+  <h2>Einleitung</h2>
+  ...
+
+  <h2>Meine Hobbies</h2>
+  ...
+
+  <h2>Ein sch&ouml;nes Bild</h2>
+  <img src="apfel.jpg" width="300" />
+</body>
+...
+```
+
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>{{< imgblock "img/html-mit-bild.png" "HTML-Seite mit Bild" >}}{{< /imgblock >}}
 
 ## Verlinkungen, Verweise
 
@@ -210,20 +228,22 @@ Der `a` Tag kommt vom englischen *to anchor* dies kann übersetzt werden mit *ve
 
 1. Füge am Beginn der HTML-Seite einen Absatz mit einem Link zur CoderDojo Linz Seite ein. Vergiss nicht, die HTML-Datei danach abzuspeichern!
 
-        ...
-        <body>
-          <h1>Meine erste Webseite</h1>
-        
-          <p>Zur <a href="http://coderdojo-linz.github.io">CoderDojo Linz Webseite</a> gehen ...</p>
-        
-          <h2>Einleitung</h2>
-          ...
+```html
+...
+<body>
+  <h1>Meine erste Webseite</h1>
 
-2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>![HTML-Seite mit Link](html-meine-erste-webseite/html-mit-link.png)
+  <p>Zur <a href="http://coderdojo-linz.github.io">CoderDojo Linz Webseite</a> gehen ...</p>
+
+  <h2>Einleitung</h2>
+  ...
+```
+
+2. Aktualisiere deine HTML-Datei im Webbrowser und achte darauf, wie sich der Inhalt ändert.<br/>{{< imgblock "img/html-mit-link.png" "HTML-Seite mit Link" >}}{{< /imgblock >}}
 
 ## Musterlösung
 
-Wir haben Dir die fertige HTML-Datei zusammengestellt. Du kannst sie [hier](html-meine-erste-webseite/meine-erste-webseite.html) ansehen.
+Wir haben Dir die fertige HTML-Datei zusammengestellt. Du kannst sie [hier](meine-erste-webseite.html) ansehen.
 
 ## Weitere Übungen
 

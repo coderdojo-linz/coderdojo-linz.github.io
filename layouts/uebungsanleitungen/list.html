@@ -50,7 +50,7 @@
                     {{ end }}
                     
                     <div class="card-body">
-                        <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right;">
+                        <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right; margin-left: 10px;">
                             Level {{ .Params.Level }}
                         </span>
                         <h5 class="card-title">{{.Title}}</h5>
