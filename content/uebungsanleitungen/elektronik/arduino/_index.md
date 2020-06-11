@@ -2,6 +2,7 @@
 title: "Arduino"
 description: "Schaltungen bauen und programmieren mit Arduino"
 level: 2
+age: 10
 img: "arduino.png"
 ---
 

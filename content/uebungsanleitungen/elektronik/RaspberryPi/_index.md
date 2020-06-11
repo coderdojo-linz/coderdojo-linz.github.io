@@ -1,7 +1,8 @@
 ---
 title: "Raspberry Pi"
 description: "Schaltungen bauen und programmieren mit dem RaspberryPi"
-level: 2
+level: 3
+age: 12
 img: "raspberry-pi.png"
 ---
 

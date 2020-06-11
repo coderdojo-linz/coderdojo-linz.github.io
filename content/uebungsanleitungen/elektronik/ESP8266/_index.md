@@ -1,7 +1,8 @@
 ---
 title: "ESP8266"
 description: "Schaltungen bauen und programmieren mit ESP8266"
-level: 2
+level: 3
+age: 12
 img: "esp.png"
 ---
 
