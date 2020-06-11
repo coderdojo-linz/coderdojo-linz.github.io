@@ -1,9 +1,9 @@
 ---
 title: "Microbit"
-description: "..."
+description: "Basteln und Programmieren mit dem Einplatinencomputer"
 level: 1
 weight: 2
-date: 2020-05-17T08:04:20+02:00
-draft: false
+img: "microbit.png"
 ---
 
+Der BBC micro:bit ist ein preiswerter Einplatinencomputer mit Ein- und Ausgabeelementen integriert. Die Programmierung erfolgt mit der Blockprogrammierung und ist für Programmier-Einsteiger hervorragend geeignet.

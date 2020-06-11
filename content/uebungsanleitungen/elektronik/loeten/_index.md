@@ -1,9 +1,9 @@
 ---
 title: "Loeten"
-description: "..."
+description: "Lerne Löten mit unseren einfachen Karton-Schaltungen"
 level: 1
 weight: 1
-date: 2020-05-17T08:41:32+02:00
-draft: false
+img: "loetkolben.png"
 ---
 
+Wir haben Karton-Schaltungen mit Widerstand und Leuchtdioden und auch mit Transistor-Schaltungen. Es ist für jeden etwas dabei. Die Bauteile sind kostenfrei. Wir freuen uns über jede Spende.

@@ -11,11 +11,41 @@
         </div>
         <div class="row row-cols-1 row-cols-md-3">
             {{ range ((.Pages.ByParam "Title").ByWeight).ByParam "Level" }}
+
+            {{ $link := .Permalink}}
+            {{ $linkText := "Zur Anleitung" }}
+            {{ $objectFit := "cover" }}
+            {{ $objectPosition := "center center" }}
+            {{ $padding := "0" }}
+
+            {{ if gt (len .Pages) 1}}
+                {{ $link := (index .Pages 0).Permalink}}
+            {{ else if gt (len .Pages) 1}}
+                {{ $link = .Permalink }}
+                {{ $linkText = "Zu den Anleitungen" }}
+            {{ end }}
+
+            {{ if isset .Params "imgcover" }}
+                {{ if eq .Params.imgcover false }}
+                    {{ $objectFit = "contain" }}
+                    {{ $padding = "12px 20px" }}
+                {{ end }}
+            {{ end }}
+
+            {{ if isset .Params "imgposition" }}
+                {{ $objectPosition = .Params.imgposition }}
+            {{ end }}
+            
             <div class="col mb-5">
                 <div class="card h-100" onclick="location.href='{{.Permalink}}'">
-                    {{ if isset .Params "img" }}
+                    <!-- {{ if isset .Params "img" }}
                     <div class="card-header">{{ if isset .Params "img" }}
                         <img src="/img/uebungsanleitungen/{{.Params.img}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: contain; height: 100px; padding: 10px 40px;">{{ end }}
+                    </div>
+                    {{ end }} -->
+                    {{ if isset .Params "img" }}
+                    <div class="card-header" style="padding: {{ $padding }}; height: 200px;">{{ if isset .Params "img" }}
+                        <img src="{{.RelPermalink}}{{(index .Params.img)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: {{$objectFit}}; object-position: {{$objectPosition}}; height: 100%;">{{ end }}
                     </div>
                     {{ end }}
                     

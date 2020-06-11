@@ -1,8 +1,8 @@
 ---
-title: "Raspberrypi"
-description: "..."
+title: "Raspberry Pi"
+description: "Schaltungen bauen und programmieren mit dem RaspberryPi"
 level: 2
-date: 2020-05-17T08:42:10+02:00
-draft: false
+img: "raspberry-pi.png"
 ---
 
+Der RaspberryPi ist ein professioneller Einplatinencomputer mit LINUX Betriebssystem. Mit Sensoren und Aktoren werden die Projekte umgesetzt.
