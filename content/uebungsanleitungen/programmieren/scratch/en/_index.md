@@ -1,7 +1,7 @@
 ---
 title: "Englische Übungsanleitungen"
 description: "Ein paar der Scratch-Anleitungen sind auch auf englisch verfügbar."
-layout: "overview-scratch"
+layout: "list-scratch"
 img: "english.png"
 imgcover: false
 level: 10

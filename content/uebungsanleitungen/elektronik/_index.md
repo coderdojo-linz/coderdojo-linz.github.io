@@ -1,7 +1,7 @@
 ---
 title: "Elektronik"
 description: "Löten, Microbit, Arduino und mehr"
-layout: "overview"
+layout: "list-with-content"
 img: "circuit-board.jpg"
 aliases:
     - /infos/loeten.html

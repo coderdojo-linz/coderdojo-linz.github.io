@@ -13,6 +13,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <p class="mb-4">{{ .Description }}</p>
+                    {{ if isset .Params "sprites" }}
                     <table class="table">
                         <tr>
                             <td><i class="fas fa-dragon"></i>Figuren</td>
@@ -27,6 +28,7 @@
                             <td>{{ .Params.data }}</td>
                         </tr>
                     </table>
+                    {{ end }}
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ description: "Eine Vorlage zum Kartonbausatz"
 level: 1
 weight: 6
 img: "clown.jpg"
+imgcover: true
 file: "Clown-Loetuebung.pdf"
 ---
 

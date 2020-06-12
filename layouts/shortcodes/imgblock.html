@@ -13,11 +13,13 @@
 {{ $cols = default 12 (.Get 2) }}
 {{ end }}
 
+{{ $width := default "auto" (.Get 3) }}
+
 <div class="row">
     <div class="col">
         <p>{{ .Inner | markdownify }}</p>
     </div>
     <div class="col-12 col-md-{{ $cols }}">
-        <img src="{{ $imgUrl }}" alt="(.Get 1)" class="mx-xl-auto" style="margin-left: auto; margin-right: 0; display: block;" />
+    <img src="{{ $imgUrl }}" alt="(.Get 1)" class="mx-xl-auto" style="margin-left: auto; margin-right: 0; display: block; width: {{ $width }}" />
     </div>
 </div>

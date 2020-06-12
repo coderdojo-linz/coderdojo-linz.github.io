@@ -4,6 +4,7 @@ description: "Eine Beschreibung wie ein Kartonbausatz richtig aufgebaut wird."
 level: 1
 weight: 4
 img: "kartonbausatz.jpg"
+imgcover: true
 file: "Kurzanleitung-Kartonbausatz.pdf"
 ---
 

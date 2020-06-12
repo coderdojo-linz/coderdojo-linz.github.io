@@ -2,7 +2,7 @@
 title: "Programmieren"
 description: "Scratch, Web und vieles mehr"
 img: "code.jpg"
-layout: "overview"
+layout: "list-with-content"
 date: 2020-05-17T08:13:15+02:00
 draft: false
 ---

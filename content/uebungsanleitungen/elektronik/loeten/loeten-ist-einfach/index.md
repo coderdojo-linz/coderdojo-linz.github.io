@@ -4,6 +4,7 @@ description: "Und nochmals eine Beschreibung über das Löten"
 level: 1
 weight: 3
 img: "loeten-ist-einfach.jpg"
+imgcover: true
 file: "Loeten-ist-einfach.pdf"
 ---
 

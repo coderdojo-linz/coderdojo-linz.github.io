@@ -1,6 +1,7 @@
 ---
 title: "Löten"
 description: "Lerne Löten mit unseren einfachen Karton-Schaltungen"
+layout: "list-with-content"
 level: 1
 weight: 1
 img: "loetkolben.png"
