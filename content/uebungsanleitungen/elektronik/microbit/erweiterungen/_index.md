@@ -1,10 +1,9 @@
 ---
-title: "Elektronik"
-description: "Löten, BBC micro:bit, Arduino und mehr"
+title: "Erweiterungen"
+description: "BBC micro:bit Grundlagen"
 layout: "list-with-content"
+weight: 3
 img: "circuit-board.jpg"
-aliases:
-    - /infos/loeten.html
 ---
 
  Es werden elektronische Schaltungen hauptsächlich mit LED und Transistoren zusammengelötet.
