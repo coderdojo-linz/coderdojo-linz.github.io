@@ -72,9 +72,7 @@
                     {{ end }}
                     
                     <div class="card-body">
-                        {{ if isset .Params "file" }}
-                        <span class="badge badge-pill badge-success" style="float: right; margin-left: 10px;">PDF</span>
-                        {{ else }}
+                        {{ if isset .Params "level" }}
                         <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right; margin-left: 10px;">
                             Level {{ .Params.Level }}
                         </span>
@@ -87,6 +85,20 @@
                     <div class="card-footer">
                         {{ range sort .Params.Categories }}
                         <span class="badge badge-light badge-category">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ else if or (isset .Params "players") (isset .Params "supplementaryMaterial")}}                    
+                    <div class="card-footer additional-info-footer">
+                        {{ if isset .Params "file" }}
+                        <!-- <span class="badge badge-pill badge-success" style="float: right; margin-left: 10px;">PDF</span> -->
+                        {{ end }}
+
+                        {{ if isset .Params "players" }}
+                        <span title="Anzahl Spieler"><i class="fas fa-user"></i> {{ .Params.Players }}</span>
+                        {{ end }}
+
+                        {{ if and (isset .Params "supplementarymaterial") (eq .Params.SupplementaryMaterial true ) }}
+                        <span title="Zusatzmaterial benötigt"><i class="fas fa-plus-circle"></i> Zusatzmaterial benötigt</span>
                         {{ end }}
                     </div>
                     {{ end }}
