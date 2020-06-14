@@ -1,6 +1,7 @@
 ---
 title: Erste Schritte mit Python
 description: Diese Übung gibt eine erste Einführung in das Programmieren mit Python.
+weight: 1
 aliases: 
  - /trainingsanleitungen/python/python-erste-schritte.html
 ---
