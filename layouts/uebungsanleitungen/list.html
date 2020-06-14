@@ -56,7 +56,11 @@
 
             <div class="col mb-5 category category-alle {{ if isset .Params "categories" }}{{ range sort .Params.Categories }} category-{{lower (replace (replace . "." "-") " " "-")}}{{ end }}{{ end }}">
                 {{ if isset .Params "file" }}
+                {{ if hasPrefix .Params.File "http" }}
+                {{ $link = .Params.File }}
+                {{ else }}
                 {{ $link = print .Permalink .Params.File }}
+                {{ end }}
                 <div class="card h-100" onclick="window.open('{{$link}}')">
                 {{ else }}
                 <div class="card h-100" onclick="location.href='{{$link}}'">

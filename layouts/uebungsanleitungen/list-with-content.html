@@ -42,7 +42,11 @@
             
             <div class="col mb-5">
                 {{ if isset .Params "file" }}
+                {{ if hasPrefix .Params.File "http" }}
+                {{ $link = .Params.File }}
+                {{ else }}
                 {{ $link = print .Permalink .Params.File }}
+                {{ end }}
                 <div class="card h-100" onclick="window.open('{{$link}}')">
                 {{ else }}
                 <div class="card h-100" onclick="location.href='{{$link}}'">
@@ -54,9 +58,7 @@
                     {{ end }}
 
                     <div class="card-body">
-                        {{ if isset .Params "file" }}
-                        <span class="badge badge-pill badge-success" style="float: right; margin-left: 10px;">PDF</span>
-                        {{ else }}
+                        {{ if isset .Params "level" }}
                         <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right; margin-left: 10px;">
                             {{ cond (eq .Params.Level 0) "ab 5" (cond (eq .Params.Level 1) "ab 8" (cond (eq .Params.Level 2) (print "ab " (cond (isset .Params "age") .Params.Age "11")) (print "ab " (cond (isset .Params "age") .Params.Age "14")))) }}
                         </span>
@@ -65,9 +67,15 @@
                         <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6>
                         <p class="card-text mt-4">{{.Content}}</p>
                     </div>
-                    {{ if isset .Params "categories" }}
+                    {{ if or (isset .Params "categories") (isset .Params "file") }}
                     <div class="card-footer">
+                        {{ if isset .Params "categories" }}
                         {{ .Params.Categories }}
+                        {{ end }}
+
+                        {{ if isset .Params "file" }}
+                        <span class="badge badge-pill badge-success" style="float: right; margin-left: 10px;">PDF</span>
+                        {{ end }}
                     </div>
                     {{ end }}
                 </div>

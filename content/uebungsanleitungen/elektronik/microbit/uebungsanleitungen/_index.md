@@ -1,7 +1,6 @@
 ---
 title: "Übungsanleitungen"
 description: "BBC micro:bit Grundlagen"
-layout: "list-with-content"
 weight: 2
 img: "circuit-board.jpg"
 ---
