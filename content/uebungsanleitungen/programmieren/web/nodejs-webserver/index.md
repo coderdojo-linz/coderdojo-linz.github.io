@@ -4,7 +4,9 @@ description: "In dieser Übung lernst du, wie du mit Node.js einen einfachen Web
 level: 2
 weight: 1
 aliases:
-  - /trainingsanleitungen/web/nodejs-webserver.html
+- /trainingsanleitungen/web/nodejs-webserver.html
+categories:
+- Node.js
 ---
 
 # Ein Webserver mit Node.js

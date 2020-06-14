@@ -3,7 +3,10 @@ title: "Erste Schritte mit Hugo"
 description: "In dieser Übung lernst du, wie du mit Hugo eine statische Webseite erstellen kannst"
 level: 3
 aliases:
-  - /trainingsanleitungen/web/erste-schritte-mit-hugo.html
+- /trainingsanleitungen/web/erste-schritte-mit-hugo.html
+categories:
+- HTML
+- Hugo
 ---
 
 # Erste Schritte mit Hugo

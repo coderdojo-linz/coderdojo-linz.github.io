@@ -3,7 +3,7 @@ title: Zahlen raten mit Python - Teil 1
 description: Wollen wir ein Programm für das Spiel "Zahlen raten" schreiben?
 author: Stöcher Wolfgang, Steyr
 aliases: 
-  - /trainingsanleitungen/python/python-zahlenraten.html
+- /trainingsanleitungen/python/python-zahlenraten.html
 ---
 
 # Zahlen raten mit Python

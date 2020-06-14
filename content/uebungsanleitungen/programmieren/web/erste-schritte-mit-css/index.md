@@ -4,7 +4,10 @@ description: "In dieser Übung lernst du Cascading Style Sheets (CSS) kennen."
 level: 1
 weight: 2
 aliases:
-  - /trainingsanleitungen/web/erste-schritte-mit-css.html
+- /trainingsanleitungen/web/erste-schritte-mit-css.html
+categories:
+- HTML
+- CSS
 ---
 
 # Erste Schritte mit CSS

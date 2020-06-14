@@ -4,7 +4,10 @@ description: "In dieser Übung programmierst du ein einfaches 'Zahlen raten' Spi
 level: 1
 weight: 4
 aliases:
-  - /trainingsanleitungen/web/javascript-zahlen-raten.html
+- /trainingsanleitungen/web/javascript-zahlen-raten.html
+categories:
+- HTML
+- JavaScript
 ---
 
 # Zahlen raten

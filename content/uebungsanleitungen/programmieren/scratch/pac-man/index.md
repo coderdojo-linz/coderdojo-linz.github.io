@@ -10,7 +10,7 @@ scratch-sprites: 3
 scratch-scripts: 19
 scratch-data: 28
 aliases:
-  - /trainingsanleitungen/scratch/scratch-pac-man-v3.html
+- /trainingsanleitungen/scratch/scratch-pac-man-v3.html
 ---
 
 Pac-Man ist ein klassisches Computerspiel. Es erschien erstmals 1980 in Japan.

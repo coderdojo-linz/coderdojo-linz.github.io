@@ -10,7 +10,7 @@ sprites: 4
 scripts: 9
 data: 1
 aliases: 
-  - /trainingsanleitungen/scratch/scratch-weihnachten.html
+- /trainingsanleitungen/scratch/scratch-weihnachten.html
 ---
 
 ## Bilder downloaden

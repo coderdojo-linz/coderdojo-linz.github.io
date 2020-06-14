@@ -10,7 +10,7 @@ sprites: 3
 scripts: 9
 data: 2
 aliases:
-  - /trainingsanleitungen/scratch/scratch-paddle-game-v3.html
+- /trainingsanleitungen/scratch/scratch-paddle-game-v3.html
 ---
 
 ## Bühne und Figuren anlegen

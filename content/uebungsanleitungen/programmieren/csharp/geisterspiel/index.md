@@ -2,7 +2,7 @@
 title: Geisterspiel in C# 
 description: Einfache Console-Anwendung in C# 
 aliases:
-    - /trainingsanleitungen/csharp/geisterspiel.html
+  - /trainingsanleitungen/csharp/geisterspiel.html
 ---
 
 # Geisterspiel - C#

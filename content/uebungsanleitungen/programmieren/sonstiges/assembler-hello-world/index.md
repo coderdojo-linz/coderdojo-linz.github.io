@@ -2,7 +2,7 @@
 title: Back to Basics - Assembler Hello World
 description: Lerne, wie ein Computer auf unterster Ebene funktioniert
 aliases:
-        - /trainingsanleitungen/fundamentals/assembler-hello-world.html
+      - /trainingsanleitungen/fundamentals/assembler-hello-world.html
 ---
 
 # Erste Schritte mit Assembler-Programmierung
@@ -74,7 +74,7 @@ Das gesamte Installationsscript findest du in [install-dev-tools.sh](https://git
 1. Starte [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
 1. Im Feld *Host Name (or IP address)* gibst du die IP-Adresse deines Ubuntu Linux Servers ein (im CoderDojo bekommst du die IP-Adresse vom Mentorenteam).<br/>
-![PuTTY](assembler-hello-world/putty-ip-address.png)
+![PuTTY](img/putty-ip-address.png)
 
 1. Melde dich mit Benutzer und Passwort an (im CoderDojo bekommst du Benutzer und Passwort vom Mentorenteam)
 

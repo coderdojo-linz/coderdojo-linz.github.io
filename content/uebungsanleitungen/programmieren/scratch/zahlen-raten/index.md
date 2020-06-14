@@ -6,7 +6,7 @@ img: "img/10-liste.PNG"
 imgposition: "center top"
 version: 3
 aliasis:
-    - /trainingsanleitungen/scratch/scratch-zahlenraten.html
+  - /trainingsanleitungen/scratch/scratch-zahlenraten.html
 level: 1
 weight: 3
 sprites: 1

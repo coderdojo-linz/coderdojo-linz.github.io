@@ -10,7 +10,7 @@ sprites: 2
 scripts: 5
 data: 0
 aliases:
-  - /trainingsanleitungen/scratch/scratch-animated-postcard.html
+- /trainingsanleitungen/scratch/scratch-animated-postcard.html
 ---
 
 Eine solche Karte kannst du zum Beispiel verwenden:

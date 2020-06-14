@@ -10,7 +10,7 @@ sprites: 3
 scripts: 13
 data: 6
 aliases:
-  - /trainingsanleitungen/scratch/scratch-labyrinth-v3.html
+- /trainingsanleitungen/scratch/scratch-labyrinth-v3.html
 ---
 
 ## Ziel der Übung

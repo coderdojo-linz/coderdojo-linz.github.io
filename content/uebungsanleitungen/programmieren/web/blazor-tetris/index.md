@@ -2,6 +2,8 @@
 title: "Tetris mit Blazor"
 description: "In dieser Übung programmierst du Tetris mit CSharp und Blazor"
 level: 3
+categories:
+- Blazor
 ---
 
 # Tetris mit Blazor
@@ -18,19 +20,19 @@ level: 3
 * *File* / *New* / *Project*
 
 * Neues *ASP.NET* Projekt anlegen:<br/>
-  ![Neues Projekt](blazor-tetris/new-project.png)
+  {{< imgblock "img/new-project.png" "Neues Projekt" >}}{{< /imgblock >}}
 
 * *Blazor* Projekttyp auswählen:<br/>
-  ![Blazor](blazor-tetris/new-blazor-project.png)
+  {{< imgblock "img/new-blazor-project.png" "Blazor" >}}{{< /imgblock >}}
 
 * Nach dem Anlegen des Projekt den Startmodus ändern:<br/>
-  ![Startmodus](blazor-tetris/start-as-cmd.png)
+  {{< imgblock "img/start-as-cmd.png" "Startmodus" >}}{{< /imgblock >}}
 
 * Probiere, das Programm mit *F5* oder *Debug* / *Start Debugging* zu starten. Es müsste ein Kommandozeilenfenster und ein Browser aufgehen. Im Browser solltest du folgendes sehen:<br/>
-  ![Hello World](blazor-tetris/hello-world.png)
+  {{< imgblock "img/hello-world.png" "Hello World" >}}{{< /imgblock >}}
 
 * Um den Debugger wieder zu beenden, beende das Kommandozeilenfenster.<br/>
-  ![Debugger beenden](blazor-tetris/close-debugger.png)
+  {{< imgblock "img/close-debugger.png" "Debugger beenden" >}}{{< /imgblock >}}
 
 Gratuliere! Du hast dein erstes Blazor-Programm zum Laufen gebracht.
 
@@ -39,7 +41,7 @@ Gratuliere! Du hast dein erstes Blazor-Programm zum Laufen gebracht.
 Visual Studio hat dir einiges an Code generiert, damit du nicht ganz von vorne starten musst. Einen Teil davon brauchen wir für unser Tetris nicht. Daher müssen wir als erstes im Projekt aufräumen.
 
 * Lösche die in der folgenden Grafik durchgestrichenen Ordner und Dateien aus dem generierten Projekt:<br/>
-  ![Dateien löschen](blazor-tetris/files-to-delete.png)
+  {{< imgblock "img/files-to-delete.png" "Dateien löschen" >}}{{< /imgblock >}}
 
 * Lösche den Inhalt der Datei *css/site.css*. **Achtung!** Die Datei selbst muss erhalten bleiben. Lösche nur den **Inhalt**!
 
@@ -60,7 +62,7 @@ Visual Studio hat dir einiges an Code generiert, damit du nicht ganz von vorne s
 ```
 
 * Probiere, das Programm mit *F5* oder *Debug* / *Start Debugging* zu starten. Es müsste ein Kommandozeilenfenster und ein Browser aufgehen. Im Browser solltest du folgendes sehen:<br/>
-  ![Aufgeräumtes Projekt](blazor-tetris/cleaned-project.png)
+  {{< imgblock "img/cleaned-project.png" "Aufgeräumtes Projekt" >}}{{< /imgblock >}}
 
 * Um den Debugger wieder zu beenden, beende das Kommandozeilenfenster.
 
@@ -71,10 +73,10 @@ Super! Jetzt haben wir ein sauberes Projekt und können beginnen, zu programmier
 Als erstes generieren wir das Spielfeld.
 
 * Füge einen Ordner namens *Logic* zum Projekt hinzu:<br/>
-  ![Add folder](blazor-tetris/new-folder.png)
+  {{< imgblock "img/new-folder.png" "Add folder" >}}{{< /imgblock >}}
 
 * Füge in den Ordner eine Klasse namens *BoardContentExtensions.cs* hinzu:<br/>
-  ![Add class](blazor-tetris/new-class.png)
+  {{< imgblock "img/new-class.png" "Add class" >}}{{< /imgblock >}}
 
 * *BoardContentExtensions.cs* muss folgenden Code enthalten. Es handelt sich um Hilfsfunktionen, mit denen man in Schleifen das Spielfeld durchlaufen (Englisch *iterate*) kann. Lass dir von jemandem aus dem Mentorenteam den Code erklären.
 
@@ -170,7 +172,7 @@ td {
 ```
 
 * Probiere, das Programm mit *F5* oder *Debug* / *Start Debugging* zu starten. Es müsste ein Kommandozeilenfenster und ein Browser aufgehen. Im Browser solltest du folgendes sehen:<br/>
-  ![Leeres Board](blazor-tetris/empty-board.png)
+  {{< imgblock "img/empty-board.png" "Leeres Board" >}}{{< /imgblock >}}
 
 * Um den Debugger wieder zu beenden, beende das Kommandozeilenfenster.
 

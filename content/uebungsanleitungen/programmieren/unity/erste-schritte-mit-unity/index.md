@@ -2,7 +2,7 @@
 title: "Erste Schritte mit Unity"
 description: "In dieser Übung lernst du Unity kennen."
 aliases:
-  - /trainingsanleitungen/unity/erste-schritte-mit-unity.html
+- /trainingsanleitungen/unity/erste-schritte-mit-unity.html
 ---
 
 # Unity Racing Game

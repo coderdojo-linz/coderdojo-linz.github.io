@@ -4,7 +4,10 @@ description: "In dieser Übung programmierst du deine eigene Verschlüsselung "
 level: 2
 weight: 2
 aliases:
-  - /trainingsanleitungen/web/caesar-verschluesseln.html
+- /trainingsanleitungen/web/caesar-verschluesseln.html
+categories:
+- HTML
+- JavaScript
 ---
 
 # Verschlüsseln mit JavaScript

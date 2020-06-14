@@ -10,7 +10,7 @@ sprites: 1
 scripts: 8
 data: 2
 aliases:
-  - /trainingsanleitungen/scratch/scratch-moonhack.html
+- /trainingsanleitungen/scratch/scratch-moonhack.html
 ---
 
 In diesem Spiel musst du mit dem <em>Lunar Module</em> auf dem Mond landen. Aber Vorsicht, die Landung muss sanft sein und du hast nur eine begrenzte Menge an Raktentreibstoff.

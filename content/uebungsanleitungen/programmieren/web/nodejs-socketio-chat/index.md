@@ -4,7 +4,9 @@ description: "In dieser Übung programmieren wir einen Chat mit Node.js und Sock
 level: 2
 weight: 3
 aliases: 
-  - /trainingsanleitungen/web/nodejs-socketio-chat.html
+- /trainingsanleitungen/web/nodejs-socketio-chat.html
+categories:
+- Node.js
 ---
 
 # Chat mit Node.js und Socket.io

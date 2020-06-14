@@ -10,7 +10,7 @@ sprites: 2
 scripts: 21
 data: 20
 aliases:
-  - /trainingsanleitungen/scratch/scratch-the-game-of-life-v3.html
+- /trainingsanleitungen/scratch/scratch-the-game-of-life-v3.html
 ---
 
 {{< imgblock "img/the-game-of-life.png" "The game of life" >}}

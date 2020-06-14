@@ -3,7 +3,7 @@ title: "Hour of Code"
 date: 2020-06-01T05:28:34+02:00
 draft: false
 aliases:
-    - /trainingsanleitungen/scratch/hour-of-code.html
+  - /trainingsanleitungen/scratch/hour-of-code.html
 ---
 
 # Programmieren lernen mit *Hour of Code*

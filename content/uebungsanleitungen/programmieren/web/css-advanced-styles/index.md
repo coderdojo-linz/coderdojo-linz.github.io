@@ -3,7 +3,10 @@ title: "Advanced CSS Styles"
 description: "In dieser Übung lernst du einige kompliziertere Styles in CSS kennen."
 level: 2
 aliases:
-  - /trainingsanleitungen/web/css-advanced-styles.html
+- /trainingsanleitungen/web/css-advanced-styles.html
+categories:
+- HTML
+- CSS
 ---
 
 # Advanced CSS Styles

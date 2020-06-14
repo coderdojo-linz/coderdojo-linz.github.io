@@ -5,7 +5,7 @@ type: "uebungsanleitungen/programmieren/scratch"
 img: "img/scratchy.png"
 imgcover: false
 aliases:
-    - /trainingsanleitungen/scratch/scratch-erste-schritte.html
+  - /trainingsanleitungen/scratch/scratch-erste-schritte.html
 level: 1
 weight: 1
 sprites: 1

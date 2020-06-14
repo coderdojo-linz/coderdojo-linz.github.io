@@ -2,6 +2,11 @@
 title: "Präsentationen mit HTML statt PowerPoint"
 description: "In dieser Übung lernst du Reveal.js für Präsentationen kennen."
 level: 2
+aliases:
+- /trainingsanleitungen/web/html-prasentationen.html
+categories:
+- HTML
+- reveal.js
 ---
 
 # Präsentationen mit HTML statt PowerPoint
@@ -14,8 +19,8 @@ Das muss aber nicht sein. Als Coder mit HTML- und CSS-Kenntnissen kann man beein
 
 **Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!** Falls HTML, CSS und [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code") für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsbeispiele zu empfehlen:
 
-* HTML Grundlagen: [Meine erste Webseite](http://coderdojo-linz.github.io/trainingsanleitungen/web/html-meine-erste-webseite.html)
-* CSS Grundlagen: [Erste Schritte mit CSS](http://coderdojo-linz.github.io/trainingsanleitungen/web/erste-schritte-mit-css.html)
+* HTML Grundlagen: [Meine erste Webseite](/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/)
+* CSS Grundlagen: [Erste Schritte mit CSS](/uebungsanleitungen/programmieren/web/erste-schritte-mit-css/)
 
 
 ## Systemvoraussetzungen
@@ -24,7 +29,7 @@ Du kannst diese Übung unter Windows, Linux oder MacOS machen. Alle verwendeten 
 
 Folgende Software musst du installieren, damit du die Übung machen kannst:
 
-* Ein HTML-Editor deiner Wahl. Falls du noch keinen Favoriten hast, wirf einen Blick auf die Liste der Editoren, die in [Meine erste Webseite](http://coderdojo-linz.github.io/trainingsanleitungen/web/html-meine-erste-webseite.html) erwähnt ist. Im Zweifelsfall empfehlen wir [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code")
+* Ein HTML-Editor deiner Wahl. Falls du noch keinen Favoriten hast, wirf einen Blick auf die Liste der Editoren, die in [Meine erste Webseite](/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/) erwähnt ist. Im Zweifelsfall empfehlen wir [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code")
 
 * Die Quellcode-Versionskontrollsoftware [Git](https://git-scm.com/downloads).
 
@@ -70,7 +75,7 @@ Jetzt sind wir bereit, eine eigene Präsentation zu erstellen.
 3. Öffne die Datei `index.html`, die sich im Ordner `reveal.js` befindet.
 
 4. Suche dir die erste Folie im HTML-Code heraus. Im folgenden Bild ist sie markiert:<br/>
-![Reveal.js Slide in Visual Studio Code](html-praesentationen/reveal-slide-in-visual-studio-code.png)
+{{< imgblock "img/reveal-slide-in-visual-studio-code.png" "Reveal.js Slide in Visual Studio Code" >}}{{< /imgblock >}}
 
 5. Verändere etwas an der Folie. Du könntest einen Absatz hinzufügen (`<p>...</p>`), eine Überschrift ergänzen (`<h3>...</h3>`) oder ein Bild einfügen (`<img.../>`).
 

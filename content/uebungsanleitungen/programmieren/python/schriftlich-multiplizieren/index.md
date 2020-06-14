@@ -3,7 +3,7 @@ title: Schriftlich Multiplizieren mit Python
 description: Formattierte Textausgabe mit Python
 author: Stöcher Wolfgang, Steyr
 aliases:
-  - /trainingsanleitungen/python/python-schriftlich-multiplizieren.html
+- /trainingsanleitungen/python/python-schriftlich-multiplizieren.html
 ---
 
 # Schriftlich Multiplizieren mit Python

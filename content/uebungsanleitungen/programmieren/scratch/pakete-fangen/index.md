@@ -11,7 +11,7 @@ sprites: 4
 scripts: 4
 data: 3
 aliases:
-  - /trainingsanleitungen/scratch/scratch-pakete-fangen.html
+- /trainingsanleitungen/scratch/scratch-pakete-fangen.html
 ---
 
 ## Vorbereitung

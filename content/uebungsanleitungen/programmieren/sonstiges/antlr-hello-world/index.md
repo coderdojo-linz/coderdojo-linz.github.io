@@ -15,18 +15,18 @@ level: 3
 * Ein neues Projekt mit *New Project* - *Empty Project* starten. In dieser Anleitung gehen wir davon aus, dass das Projekt *antlr-hello-world* heißt.
 
 * *Settings*-Dialog mit *Strg+Alt+S* öffnen, nach dem *antlr* Plugin suchen und installieren<br/>
-  ![ANTLR Plugin](install-antlr.png)
+  {{< imgblock "img/install-antlr.png" "ANTLR Plugin" >}}{{< /imgblock >}}
 
 * IntelliJ neu starten und das zuvor angelegte Projekt wieder laden
 
 ## Erste Grammatik anlegen
 
 * Neue Datei *Hello.g4* anlegen<br/>
-  ![Neue Datei](new-file.png)
+  {{< imgblock "img/new-file.png" "Neue Datei" >}}{{< /imgblock >}}
 
 * Folgende Grammatik in die neue Datei einfügen:
 
-```txt
+```shell
 grammar Hello;
 greet     : 'hello' ID ;         // Schlüsselwort hello gefolgt von einem Identifier
 ID        : [a-z]+ ;             // Identifier in Kleinbuchstaben
@@ -34,10 +34,10 @@ WS        : [ \t\r\n]+ -> skip ; // Leerzeichen, Tab, Leerzeilen ignorieren
 ```
 
 * Rechte Maustaste auf die Regel `greet` und *Test Rule greet* anklicken<br/>
-  ![Regel testen](test-rule.png)
+  {{< imgblock "img/test-rule.png" "Regel testen" >}}{{< /imgblock >}}
 
 * *hello world* eingeben und ansehen, wie ANTLR den Text nach der angegebenen Grammatik zerlegt<br/>
-  ![Regel testen](test-rule-2.png)
+  {{< imgblock "img/test-rule-2.png" "Regel testen" >}}{{< /imgblock >}}
 
 * Experimentiere mit folgenden Eingaben (beachte die Fehler, die angezeigt werden)
   * *hello*
@@ -47,7 +47,7 @@ WS        : [ \t\r\n]+ -> skip ; // Leerzeichen, Tab, Leerzeilen ignorieren
 
 * Neue Datei *Chat.g4* anlegen
 
-```txt
+```shell
 grammar chat;
 
 /*
@@ -101,12 +101,12 @@ mention             : '@' WORD ;
   * *john SHOUTS: hello @michael :-)*
 
 * Antlr Generator konfigurieren<br/>
-  ![Konfigurieren](configure-antlr.png)<br/>
-  ![Konfigurieren](configure-antlr-2.png)
+  {{< imgblock "img/configure-antlr.png" "Konfigurieren" >}}{{< /imgblock >}}<br/>
+  {{< imgblock "img/configure-antlr-2.png" "Konfigurieren" >}}{{< /imgblock >}}
 
 * Lexer/Parser generieren<br/>
-  ![Generieren](lexer-parser-generate.png)<br/>
-  ![Generieren](lexer-parser-generate-2.png)
+  {{< imgblock "img/lexer-parser-generate.png" "Generieren" >}}{{< /imgblock >}}<br/>
+  {{< imgblock "img/lexer-parser-generate-2.png" "Generieren" >}}{{< /imgblock >}}
 
 ## Compiler
 

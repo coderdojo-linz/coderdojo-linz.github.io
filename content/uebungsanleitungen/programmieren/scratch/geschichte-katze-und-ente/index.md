@@ -10,7 +10,7 @@ sprites: 2
 scripts: 3
 data: 0
 aliases:
-    - /trainingsanleitungen/scratch/scratch-geschichte-katze-und-ente.html
+  - /trainingsanleitungen/scratch/scratch-geschichte-katze-und-ente.html
 ---
 
 Mit Scratch kannst du Geschichten erzählen. Du kannst Figuren erscheinen lassen, sie bewegen, den Hintergrund austauschen und vieles mehr.

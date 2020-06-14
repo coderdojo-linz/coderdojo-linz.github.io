@@ -4,7 +4,9 @@ description: "In dieser Übung erstellst du deine erste Webseite."
 level: 1
 weight: 1
 aliases:
-  - /trainingsanleitungen/web/html-meine-erste-webseite.html
+- /trainingsanleitungen/web/html-meine-erste-webseite.html
+categories:
+- HTML
 ---
 
 

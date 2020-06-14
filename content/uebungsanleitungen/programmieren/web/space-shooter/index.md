@@ -2,21 +2,26 @@
 title: "Space Shooter mit Phaser.io"
 description: "In dieser Übung programmierst du einen Space Shooter mit TypeScript und Phaser.io"
 level: 3
+aliases:
+- /trainingsanleitungen/web/space-shooter.html
+categories:
+- Phaser
+- TypeScript
 ---
 
 # Space Shooter mit Phaser.io
 
 ## Ziel der Übung
 
-In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den [Space Shooter](http://coderdojo-linz.github.io/trainingsanleitungen/scratch/scratch-space-shooter.html) erstellt. Falls nicht, wirf bitte vor diesem Beispiel einen Blick auf die Space Shooter Scratch Übung und [probiere die Scratch-Implementierung aus](https://scratch.mit.edu/projects/70593136/). Unser Ziel ist es, diesen Space Shooter mit Web-Technologien für den Browser zu entwickeln.
+In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den [Space Shooter](/uebungsanleitungen/programmieren/scratch/space-shooter/) erstellt. Falls nicht, wirf bitte vor diesem Beispiel einen Blick auf die Space Shooter Scratch Übung und [probiere die Scratch-Implementierung aus](https://scratch.mit.edu/projects/70593136/). Unser Ziel ist es, diesen Space Shooter mit Web-Technologien für den Browser zu entwickeln.
 
-![Space Shooter](space-shooter/phaser-space-shooter.png)
+{{< imgblock "img/phaser-space-shooter.png" "Space Shooter" >}}{{< /imgblock >}}
 
 **Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!** Falls HTML, JavaScript, Node.js und [Visual Studio Code](https://code.visualstudio.com/ "Homepage von Visual Studio Code") für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsanleitungen zu empfehlen:
 
-* HTML Grundlagen: [Baue deine erste Webseite](http://coderdojo-linz.github.io/trainingsanleitungen/web/html-meine-erste-webseite.html)
-* JavaScript Grundlagen: [Zahlen raten](http://coderdojo-linz.github.io/trainingsanleitungen/web/javascript-zahlen-raten.html)
-* Node.js Grundlagen: [Ein Webserver mit Node.js](http://coderdojo-linz.github.io/trainingsanleitungen/web/nodejs-webserver.html)
+* HTML Grundlagen: [Baue deine erste Webseite](/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/)
+* JavaScript Grundlagen: [Zahlen raten](/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/)
+* Node.js Grundlagen: [Ein Webserver mit Node.js](/uebungsanleitungen/programmieren/web/nodejs-webserver/)
 
 ## Systemvoraussetzungen
 
@@ -33,14 +38,14 @@ Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alle verwendeten T
 Unser Projekt verwendet eine Reihe von Node.js Modulen. Diese müssen mit *npm*, den *Node Package Manager* installiert werden.
 
 1. Lade den Code, den du zum Starten brauchst, [von GitHub herunter](https://github.com/rstropek/ts-space-shooter-starter/tree/master):
-   ![Download GitHub](space-shooter/GitDownload.png)
+   {{< imgblock "img/GitDownload.png" "Download GitHub" >}}{{< /imgblock >}}
 
 1. Pro Tipp: Weißt du schon, was *Git* ist? Natürlich kannst du dann das GitHub Repository auch *klonen*. Es macht nichts, wenn du noch nicht weißt, was das bedeutet.
 
 1. Kopiere den Inhalt der ZIP-Datei, die du heruntergeladen hast, in ein *neues, leeres Verzeichnis*. In dieser Anleitung gehe ich davon aus, dass du das Verzeichnis *c:\temp\shooter* genannt hast.
 
 1. Öffne das *shooter* Verzeichnis in *Visual Studio Code*:
-   ![Open Folder VSCode](space-shooter/VSCodeOpenFolder.png)
+   {{< imgblock "img/VSCodeOpenFolder.png" "Open Folder VSCode" >}}{{< /imgblock >}}
 
 1. Öffne das *Terminal* in VSCode (*Strg+ö*).
 
@@ -49,7 +54,7 @@ Unser Projekt verwendet eine Reihe von Node.js Modulen. Diese müssen mit *npm*,
 1. Starte das Programm mit dem Befehl `npm start`.
 
 1. Jetzt müsste ein Browserfenster aufgehen und du müsstest eine Meldung wie diese sehen:
-   ![Starter Code Run](space-shooter/StarterRun.png)
+   {{< imgblock "img/StarterRun.png" "Starter Code Run" >}}{{< /imgblock >}}
 
 **Hinweis:** Im Startcode, den du gerade heruntergeladen hast, stecken eine Menge interessante (aber nicht einfache) Details rund um Webentwicklung. Auf die gehen wir hier nicht ein. Wer aber schon mehr Erfahrung mit Webentwicklung hat, der kann in den vorgefertigten Code reinschauen und versuchen, Teile davon zu verstehen.
 

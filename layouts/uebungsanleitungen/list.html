@@ -9,7 +9,25 @@
                 <h1>{{ .Title }}</h1>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3">
+
+        {{ $categories := slice "Alle" }}
+        {{ range .Pages }}
+            {{ range .Params.categories }}
+                {{ if not (in $categories .)}}
+                    {{ $categories = $categories | append . }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+
+        {{ if gt (len $categories) 1 }}
+        <div class="row-12 mb-4 category-overview">
+        {{range $index, $element := sort $categories }}
+        <a class="badge badge-light badge-category badge-category-index mr-2 category category-{{lower (replace (replace . "." "-") " " "-")}} {{cond (eq $index 0) "selected" ""}}" href="javascript: selectCategory('category-{{lower (replace (replace . "." "-") " " "-")}}');">{{ . }}</a></li>
+        {{end}}
+        </div>
+        {{ end }}
+
+        <div class="row row-cols-1 row-cols-md-3 category-cards">
             {{ range ((.Pages.ByParam "Title").ByWeight).ByParam "Level" }}
 
             {{ $link := .Permalink}}
@@ -36,7 +54,7 @@
                 {{ $objectPosition = .Params.imgposition }}
             {{ end }}
 
-            <div class="col mb-5">
+            <div class="col mb-5 category category-alle {{ if isset .Params "categories" }}{{ range sort .Params.Categories }} category-{{lower (replace (replace . "." "-") " " "-")}}{{ end }}{{ end }}">
                 {{ if isset .Params "file" }}
                 {{ $link = print .Permalink .Params.File }}
                 <div class="card h-100" onclick="window.open('{{$link}}')">
@@ -61,13 +79,13 @@
                         <!-- <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6> -->
                         <p class="card-text mt-4">{{.Description}}</p>
                     </div>
-                    <!-- <div class="card-footer">
-                        {{ if gt (len .Pages) 1}}
-                        <a href="{{.Permalink}}" class="card-link">Zu den Übungsanleitungen</a>
-                        {{ else }}
-                        <a href="{{.Permalink}}" class="card-link">Zur Anleitung</a>
+                    {{ if isset .Params "categories" }}
+                    <div class="card-footer">
+                        {{ range sort .Params.Categories }}
+                        <span class="badge badge-light badge-category">{{ . }}</span>
                         {{ end }}
-                    </div> -->
+                    </div>
+                    {{ end }}
                 </div>
             </div>
             {{ end }}

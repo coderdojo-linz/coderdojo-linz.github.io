@@ -7,7 +7,7 @@ imgposition: "center top"
 level: 1
 version: 3
 aliases:
-    - /trainingsanleitungen/scratch/scratch-fang-die-aepfel-v3.html
+  - /trainingsanleitungen/scratch/scratch-fang-die-aepfel-v3.html
 sprites: 3
 scripts: 18
 data: 2

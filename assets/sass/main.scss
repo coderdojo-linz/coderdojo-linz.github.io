@@ -147,6 +147,16 @@ a[id]:empty {
 
 .badge {
     font-weight: 600;
+
+    &.badge-category {
+        background-color: #eee;
+        padding: 0.25em 0.75em;
+        margin-bottom: 0.5em;
+    }
+
+    &.badge-category-index {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 575px) {
@@ -658,6 +668,17 @@ section.mentors {
 }
 
 /* Sushi Overview */
+.exercises {
+    .category-overview {
+        .selected {
+            color: #fff;
+            background-color: $primary-color !important;
+        }
+    }
+
+    .category-cards {}
+}
+
 .card {
     box-shadow: 0 1px 10px 5px rgba(#000, 0.1);
     border: 1px solid #ddd;
@@ -759,14 +780,14 @@ iframe[src*="jsfiddle"] {
 }
 
 .sushi-toc {
-    nav > ul {
+    nav>ul {
         list-style-position: inside;
         padding-left: 0;
     }
 
     li {
         list-style-type: none;
-        
+
 
         &::before {
             content: '- ';

@@ -10,7 +10,7 @@ sprites: 3
 scripts: 7
 data: 4
 aliases:
-  - /trainingsanleitungen/scratch/scratch-whack-a-gopher.html
+- /trainingsanleitungen/scratch/scratch-whack-a-gopher.html
 ---
 
 Die Katze brauchen wir in diesem Spiel nicht. Wir können sie löschen in dem wir die Katze wählen und auf das kleine blaue X drücken.

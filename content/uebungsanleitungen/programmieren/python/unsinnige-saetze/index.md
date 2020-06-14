@@ -2,7 +2,7 @@
 title: "Python baut unsinnige Sätze"
 description: "In dieser Übunge erstellen wir ein kleines Python-Programm, das unsinnige Sätze zusammenbaut."
 aliases:
-  - /trainingsanleitungen/python/python-unsinnige-saetze.html
+- /trainingsanleitungen/python/python-unsinnige-saetze.html
 ---
 
 # Unsinnige Sätze

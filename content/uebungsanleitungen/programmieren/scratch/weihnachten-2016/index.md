@@ -11,7 +11,7 @@ sprites: 2
 scripts: 7
 data: 4
 aliases:
-  - /trainingsanleitungen/scratch/scratch-weihnachten-2016.html
+- /trainingsanleitungen/scratch/scratch-weihnachten-2016.html
 ---
 
 ## Spielregeln

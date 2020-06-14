@@ -2,6 +2,9 @@
 title: "HTML & CSS Hands On"
 description: "In dieser Übung werden wir ausführlich die Basics von HTML und CSS üben."
 level: 2
+categories:
+- HTML
+- CSS
 ---
 
 # HTML & CSS Hands On

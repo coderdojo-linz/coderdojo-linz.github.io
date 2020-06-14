@@ -10,7 +10,7 @@ sprites: 3
 scripts: 9
 data: 0
 aliases:
-  - /trainingsanleitungen/scratch/scratch-n-ecke-malen.html
+- /trainingsanleitungen/scratch/scratch-n-ecke-malen.html
 ---
 
 ## Lösche vorhandene Malspuren und schalte den Stift ein

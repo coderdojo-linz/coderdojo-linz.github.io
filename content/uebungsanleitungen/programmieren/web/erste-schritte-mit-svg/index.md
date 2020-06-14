@@ -3,7 +3,10 @@ title: "Erste Schritte mit SVG"
 description: "In dieser Übung lernst du Scalable Vector Graphics (SVG) kennen."
 level: 2
 aliases:
- -- /trainingsanleitungen/web/erste-schritte-mit-svg.html
+- /trainingsanleitungen/web/erste-schritte-mit-svg.html
+categories:
+- HTML
+- SVG
 ---
 
 # Erste Schritte mit SVG

@@ -10,7 +10,7 @@ sprites: 2
 scripts: 10
 data: 14
 aliases:
-  - /trainingsanleitungen/scratch/scratch-memory.html
+- /trainingsanleitungen/scratch/scratch-memory.html
 ---
 
 ## Figuren anlegen

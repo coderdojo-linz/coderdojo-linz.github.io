@@ -2,7 +2,7 @@
 title: "Geisterspiel mit Python"
 description: "In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python."
 aliases:
-  - /trainingsanleitungen/python/python-geisterspiel.html
+- /trainingsanleitungen/python/python-geisterspiel.html
 ---
 
 

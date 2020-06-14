@@ -3,7 +3,10 @@ title: "Erste Schritte mit Bootstrap"
 description: "In dieser Übung lernst du, wie du mit Bootstrap Webseiten stylen kannst."
 level: 3
 aliases:
-  - /trainingsanleitungen/web/erste-schritte-mit-bootstrap.html
+- /trainingsanleitungen/web/erste-schritte-mit-bootstrap.html
+categories:
+- HTML
+- Bootstrap
 ---
 
 # Erste Schritte mit Bootstrap

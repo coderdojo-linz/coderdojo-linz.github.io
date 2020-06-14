@@ -2,7 +2,7 @@
 title: Türme von Hanoi
 description: Knoble eine Lösung für das Problem der Türme von Hanoi aus
 aliases:
-  - /trainingsanleitungen/csharp/towers-of-hanoi.html
+- /trainingsanleitungen/csharp/towers-of-hanoi.html
 ---
 
 # Türme von Hanoi

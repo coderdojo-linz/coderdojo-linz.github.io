@@ -5,7 +5,7 @@ type: "uebungsanleitungen/programmieren/scratch"
 img: "img/scratcher-werden-schritt-1.png"
 imgcover: false
 aliases: 
-    - /trainingsanleitungen/scratch/scratch-konto-anlegen.html
+  - /trainingsanleitungen/scratch/scratch-konto-anlegen.html
 level: 1
 weight: 2
 order: 2

@@ -2,11 +2,15 @@
 title: "Snake mit Node.js"
 description: "In dieser Übung programmierst du das Spiel Snake mit Node.js"
 level: 2
+aliases: 
+- /trainingsanleitungen/web/snake-mit-nodejs.html
+categories:
+- Node.js
 ---
 
 # Snake mit Node.js
 
-![Snake](snake-mit-nodejs/snake.png){: .max-full }
+{{< imgblock "img/snake.png" "Snake" >}}{{< /imgblock >}}
 
 ## Ziel der Übung
 
@@ -22,11 +26,11 @@ Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alle verwendeten T
 
 Als erstes brauchen wir einen Ordern, in dem wir das Spiel erstellen können. Lege im Dateiexplorer einen Ordner an und öffne dann diesen Pfad in der Eingabeaufforderung. Dort rufst du den Befehl `npm init` auf. Damit wird in deinem Ordner eine Datei `package.json` erzeugt, in der wir zusätzlich benötigte Pakete speichern können.
 
-![npm init](snake-mit-nodejs/npm-init.png){: .max-full }
+{{< imgblock "img/npm-init.png" "npm init" >}}{{< /imgblock >}}
 
 Wir brauchen für unser Spiel die beiden Pakete `ansi` und `keypress`. Diese können wir durch die folgenden beiden Befehle in der Eingabeaufforderung laden:
 
-```
+```shell
 npm install ansi
 npm install keypress
 ``` 
@@ -77,19 +81,19 @@ function quitGame() {
 
 Du kannst das Programm ausführen, indem du in der Eingabeaufforderung folgendes Kommando eingibst:
 
-```
+```shell
 node game.js
 ```
 
 Wenn du das Spiel nun laufen lässt, werden zuerst drei Leerzeichen mit roten Hintergrund gezeichnet, dann wird der Text "MY GAME" in gelb ausgegeben, und dann kommen wieder drei Leerzeichen mit rotem Hintergrund.
 
-![MY GAME](snake-mit-nodejs/my-game.png){: .max-full }
+{{< imgblock "img/my-game.png" "MY GAME" >}}{{< /imgblock >}}
 
 ## Spielfeld zeichnen
 
 Als nächstes wollen wir ein Spielfeld zeichnen:
 
-![Spielfeld](snake-mit-nodejs/game-area.png){: .max-full }
+{{< imgblock "img/game-area.png" "Spielfeld" >}}{{< /imgblock >}}
 
 Dazu definieren wir global die Größe des Spielfelds mit `var width = 40;`und `var height = 20;`. Den Code im `try` Block ändern wir, um die vier Linien zu zeichnen. Damit wir nicht jeden Punkt der Linie einzeln zeichnen müssen, bauen wir dafür die Funktionen `drawHorizontalLine` und `drawVerticalLine`.
 

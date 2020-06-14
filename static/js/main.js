@@ -23,6 +23,16 @@ function sendContactForm() {
     form.classList.add('was-validated');
 }
 
+function selectCategory(category) {
+    $('.category-overview .category').removeClass('selected');
+    $('.category-overview .' + category).addClass('selected');
+
+    $('.category-cards .category').hide();
+    $('.category-cards .' + category).show();
+
+    return false;
+}
+
 $(document).ready(function () {
     new WOW().init();
 

@@ -10,7 +10,7 @@ sprites: 3
 scripts: 7
 data: 3
 aliases:
-  - /trainingsanleitungen/scratch/scratch-sterne-fangen-v3.html
+- /trainingsanleitungen/scratch/scratch-sterne-fangen-v3.html
 ---
 
 Verwende die Pfeiltasten nach links und rechts um am Boden zu laufen und die Pfeiltaste nach oben um hochzuspringen. Fange so viele Sterne wie möglich.

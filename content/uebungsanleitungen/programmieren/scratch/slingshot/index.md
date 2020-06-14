@@ -10,7 +10,7 @@ sprites: 4
 scripts: 7
 data: 7
 aliases:
-  - /trainingsanleitungen/scratch/scratch-slingshot-v3.html
+- /trainingsanleitungen/scratch/scratch-slingshot-v3.html
 ---
 
 ## Figuren anlegen

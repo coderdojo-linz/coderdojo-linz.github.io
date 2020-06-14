@@ -10,7 +10,7 @@ sprites: 9
 scripts: 35
 data: 42
 aliases:
-  - /trainingsanleitungen/scratch/scratch-chess-v3.html
+- /trainingsanleitungen/scratch/scratch-chess-v3.html
 ---
 
 Du kannst das fertige Project unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> ausprobieren.

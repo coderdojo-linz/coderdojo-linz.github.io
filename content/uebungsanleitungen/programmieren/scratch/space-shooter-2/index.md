@@ -10,7 +10,7 @@ sprites: 4
 scripts: 6
 data: 2
 aliases:
-  - /trainingsanleitungen/scratch/scratch-space-shooter-2.html
+- /trainingsanleitungen/scratch/scratch-space-shooter-2.html
 ---
 
 Hast du die <a href="scratch-space-shooter.html">Space Shooter Scratch Übung</a> schon geschafft? Dann bist du genau richtig hier. Deine Aufgabe ist es, einen modifizierten Space Shooter zu bauen - diesmal aber ohne kompletter Anleitung.

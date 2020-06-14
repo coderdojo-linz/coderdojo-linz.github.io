@@ -65,9 +65,11 @@
                         <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6>
                         <p class="card-text mt-4">{{.Content}}</p>
                     </div>
-                    <!-- <div class="card-footer">
-                        <a href="{{ $link }}" class="card-link">{{ $linkText }}</a>
-                    </div> -->
+                    {{ if isset .Params "categories" }}
+                    <div class="card-footer">
+                        {{ .Params.Categories }}
+                    </div>
+                    {{ end }}
                 </div>
             </div>
             {{ end }}

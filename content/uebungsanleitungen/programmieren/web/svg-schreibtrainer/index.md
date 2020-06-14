@@ -2,6 +2,12 @@
 title: "SVG Schreibtrainer"
 description: "In dieser Übung baust du ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern."
 level: 2
+aliases:
+- /trainingsanleitungen/web/svg-schreibtrainer.html
+categories:
+- HTML
+- CSS
+- SVG
 ---
 
 # SVG Schreibtrainer
@@ -17,13 +23,13 @@ Auf Wikipedia findest du eine Grafik zum
 <a href="https://de.wikipedia.org/wiki/Zehnfingersystem#/media/File:QWERTZ-10Finger-Layout.svg" target="_blank">Zehnfingersystem</a>, die erklärt, welche Taste 
 mit welchem Finger gedrückt werden soll.
 
-![Schreibtrainer](images/schreibtrainer.png)
+{{< imgblock "img/schreibtrainer.png" "Schreibtrainer" >}}{{< /imgblock >}}
 
 ## Grundgerüst der HTML Seite
 
 Erstelle als erstes eine neue HTML Seite mit dem Namen `schreibtrainer.html`.
 
-{{< highlight html >}}
+```html
 <!DOCTYPE html>
 <html>
 
@@ -55,14 +61,14 @@ Erstelle als erstes eine neue HTML Seite mit dem Namen `schreibtrainer.html`.
 </body>
 
 </html>
-{{< / highlight >}}
+```
 
 ## Styles
 
 Die Styles sind hier nicht direkt im HTML enthalten, sondern es wird auf die externe Datei `schreibtrainer.css` verwiesen. Die Datei muss sich im selben Ordner wie schreibtrainer.htm befinden. 
 Du kannst die Datei entweder unter <a href="schreibtrainer.css">schreibtrainer.css</a> herunterladen, oder du erstellst eine neue Datei `schreibtrainer.css` mit folgendem Inhalt:
 
-{{< highlight css >}}
+```css
 body {
 	font-family: Verdana;
 	padding: 20px;
@@ -81,14 +87,14 @@ text {
 	font-size: 30px;
 	line-height: 30px;
 }
-{{< / highlight >}}
+```
 
 ## Skripte
 
 Für die Skripte verwenden wir in diesem Spiel eine eigene Datei. Lege dazu eine neue Datei `schreibtrainer.js` an. Im HTML wird auf diese Datei verwiesen. Wir starten 
 mit folgenden Grundgerüst:
 
-{{< highlight js >}}
+```js
 var svg = Snap("#svg");
 var buchstaben = "fjdkslaöghärueiwoqptzüvnbmcxy";
 var level;
@@ -119,23 +125,23 @@ function datenAusgeben() {
 function neuerBuchstabe() {
 	// TODO
 }
-{{< / highlight >}}
+```
 
 Wenn du die Seite schreibtrainer.html jetzt aufrufst, siehst du nur das leere Spielfeld. Sonst passiert noch nichts. Als erstes fügen wir den Code 
 für die Funktion datenAusgeben ein. Hier geben wir in den HTML Element `anzahlFehler` und `anzahlTreffer` die aktuellen Werte der Variablen `fehler` und `treffer` aus.
 
 **Code für die Function datenAusgeben()**
 
-{{< highlight js >}}
+```js
 document.getElementById("anzahlFehler").innerText = fehler.toString();
 document.getElementById("anzahlTreffer").innerText = treffer.toString();
-{{< / highlight >}}
+```
 
 Damit die Buchstaben im Spielfeld angezeigt werden, müssen wir jetzt noch die Function `neuerBuchstabe` implementieren.
 
 **Code für die Function neuerBuchstabe()**
 
-{{< highlight js >}}
+```js
 if (spielAktiv) {
 	// bestimme x und y position und den angezeigten Buchstaben
 	var x = getRandomInt(40, 760);
@@ -166,21 +172,21 @@ if (spielAktiv) {
 	// rufe die Funktion neuerBuchstabe in einer Sekunde erneut auf
 	setTimeout(neuerBuchstabe, 1000);
 }
-{{< / highlight >}}
+```
 
 In der Function `neuerBuchstabe` wird eine weitere Function `getRandomInt` aufgerufen. Sie liefert uns eine Zufallszahl zwischen den beiden übergebenen Zahlen. 
 Diese Funktion müssen wir noch zu unserer JavaScript Datei hinzufügen, damit der Code funktioniert. Füge den nachfolgenden Code am Ende der Datei ein.
 
 **Neue Function getRandomInt**
 
-{{< highlight js >}}
+```js
 // gibt eine Zufallszahl zwischen min (inklusive) und max (inklusive) zurück 
 function getRandomInt(min, max) {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-{{< / highlight >}}
+```
 
 Wenn du die Seite schreibtrainer.html jetzt aufrufst erscheinen bereits die Buchstaben und fallen nach unten.
 
@@ -189,7 +195,7 @@ folgenden Code am Ende der Datei ein.
 
 **Neues Event document.onkeyup**
 
-{{< highlight js >}}
+```js
 // reagiert wenn eine Taste gedrückt wird
 document.onkeyup = function (event) {
 	// finde alle Figuren im Spiel
@@ -212,13 +218,13 @@ document.onkeyup = function (event) {
 		datenAusgeben();
 	}
 };
-{{< / highlight >}}
+```
 
 In dieser Funktion wird eine weitere Funktion `buchstabeGetippt` aufgerufen, die wir ebenfalls noch zu unserer JavaScript Datei hinzufügen müssen.
 
 **Neue Function buchstabeGetippt**
 
-{{< highlight js >}}
+```js
 // zeigt an, dass eine richtige Taste gedrückt wurde
 function buchstabeGetippt(figur) {
 	// ändere den Wert getippt der Figur auf true
@@ -238,7 +244,7 @@ function buchstabeGetippt(figur) {
 		level++;
 	}
 }
-{{< / highlight >}}
+```
 
 Das Spiel ist jetzt fertig. Wenn du einen Buchstaben tippst, der gerade im Spielfeld angezeigt wird, wird der Kreis gröer und grün, dann verschwindet 
 der Buchstabe.
