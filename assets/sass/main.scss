@@ -314,9 +314,10 @@ nav.breadcrumb-nav {
     }
 
     &.hero-navbar {
+        /*
         //background-color: rgba(#fff, 0.2) !important;
         //background-color: rgba(#000, 0.25) !important;
-        background-color: transparent !important;
+        //background-color: transparent !important;
         box-shadow: none;
         transition: all 0.5s;
 
@@ -333,6 +334,7 @@ nav.breadcrumb-nav {
                 color: $font-color;
             }
         }
+        */
     }
 
     &.hero-navbar.navbar-scroll {
