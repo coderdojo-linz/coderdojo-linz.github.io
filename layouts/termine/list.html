@@ -26,7 +26,9 @@
                         <th>Datum</th>
                         <th>Beschreibung</th>
                     </tr> -->
-                    {{ range($.Site.Data.events) }}
+                    {{ range ($.Site.Data.events) }}
+                    
+                    {{ if (gt (dateFormat "2006-01-02T15:04" .begintime ) (now.Format "2006-01-02T15:04")) }}
                     <tr>
                         <td class="text-nowrap text-center d-none d-sm-table-cell">
                             <a id="{{ dateFormat "20060102" .begintime }}"></a>
@@ -42,12 +44,25 @@
                             {{ range(.workshops) }}
                             <div class="workshop">
                                 <h3><small><span class="d-inline d-sm-none">{{ dateFormat "02.01.2006" .begintime }}</span> {{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}</small><br/>{{ .title }}</h3>
-                                <p>{{ .description | markdownify  }}</p>
+                                <p>
+                                    {{if eq .description ""}}
+                                    Programm wird noch bekanntgegeben
+                                    {{ else }}
+                                    {{ .description | markdownify  }}
+                                    {{ end }}
+                                </p>
 
                                 <p><strong>Voraussetzungen</strong></p>
                                 <p>{{ .prerequisites | markdownify }}</p>
 
-                                <p><strong>Mentoren:</strong> {{ delimit .mentors ", " }}
+                                <p><strong>Mentoren:</strong> {{ delimit .mentors ", " }}</p>
+
+                                <p><strong>Linz zum Teilnehmen:</strong>&nbsp;
+                                    {{if eq .zoom ""}}
+                                    wird noch bekanntgegeben
+                                    {{ else }}
+                                    {{ .zoom }}
+                                    {{ end }}
                                 </p>
                             </div>
                             {{ end }}
@@ -57,7 +72,7 @@
                             {{ end }}
                         </td>
                     </tr>
-
+                    {{ end }}
                     {{ end }}
                 </table>
             </div>

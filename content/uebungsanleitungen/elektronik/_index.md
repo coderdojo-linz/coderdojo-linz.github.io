@@ -2,7 +2,7 @@
 title: "Elektronik"
 description: "Löten, BBC micro:bit, Arduino und mehr"
 layout: "list-with-content"
-img: "circuit-board.jpg"
+img: "loeten.jpg"
 aliases:
     - /infos/loeten.html
 ---

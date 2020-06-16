@@ -90,7 +90,64 @@
         "begintime": "2020-06-19T14:45:00",
         "endtime": "2020-06-19T19:00:00",
         "eventtype": "CoderDojo Virtual",
-        "workshops": []
+        "workshops": [
+            {
+                "begintime": "2020-06-19T14:45:00",
+                "endtime": "2020-06-19T16:45:00",
+                "title": "Scratch für AnfängerInnen",
+                "description": "",
+                "prerequisites": "- Nur grundlegendste Vorkenntnisse über Programmieren notwendig\n- Software für die Teilnahme an Online CoderDojos (Anleitung)\n- Installierte Version von Scratch (Download)\n- Online-Version von Scratch - dafür brauchst du nur einen Browser und öffnest https://scratch.mit.edu/create/",
+                "mentors": [
+                    "Pia",
+                    "Karin"
+                ],
+                "zoom": ""
+            },
+            {
+                "begintime": "2020-06-19T14:45:00",
+                "endtime": "2020-06-19T16:45:00",
+                "title": "Python für AnfängerInnen",
+                "description": "Wir werden dieses Mal das Spiel \"Bubble Blaster\" fertigstellen. Wir bringen die Blasen zum Platzen, wenn sie vom U-Boot getroffen werden und machen eine Anzeige für die Zeit und die erreichten Punkte. Neueinsteiger sind auch herzlich willkommen. Ihr bekommt den Code vom letzten Mal und wir wiederholen die wichtigsten Schritte.",
+                "prerequisites": "- Aktuelle Version von [Python](https://www.python.org/downloads/)",
+                "mentors": [
+                    "Sonja"
+                ],
+                "zoom": ""
+            },
+            {
+                "begintime": "2020-06-19T14:45:00",
+                "endtime": "2020-06-19T16:45:00",
+                "title": "Virtuelles Elektronikbasteln",
+                "description": "",
+                "prerequisites": "- Aktuelle Version von [Python](https://www.python.org/downloads/)",
+                "mentors": [
+                    "Günther, Michael"
+                ],
+                "zoom": ""
+            },
+            {
+                "begintime": "2020-06-19T17:00:00",
+                "endtime": "2020-06-19T19:00:00",
+                "title": "Discord Bot mit C#",
+                "description": "Diese Woche können wir entweder lernen, einen Minecraft Server mit unserem Bot steuern oder eine Auto-Korrektur einbauen. [Zur Abstimmung ...](https://github.com/coderdojo-linz/DiscordBot-DotNet/issues/40)",
+                "prerequisites": "- Visual Studio Community\n- .NET Core\n- Github Account\n- [Postman](https://www.postman.com/downloads/)",
+                "mentors": [
+                    "Jonas"
+                ],
+                "zoom": ""
+            },
+            {
+                "begintime": "2020-06-19T17:00:00",
+                "endtime": "2020-06-19T19:00:00",
+                "title": "Dynamische Webseite mit Node.js",
+                "description": "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.\n\nDieses Mal bauen wir eine Benutzerverwaltung in unsere App ein. Dazu werden wir uns folgende Themenbereiche ansehen und ausprobieren:\n\n- verschlüsseltes Speichern von Passwörtern\n- Transportverschlüsselung\n- Cookies\n- Sicherheit im Internet",
+                "prerequisites": "- einen Texteditor wie z.B. [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/)\n- [Node.js](https://nodejs.org/en/download/)\n- [Git](https://git-scm.com/download/win)\n\n**Installationsanleitung**\n\nWenn Du möchtest, kannst Du schon vorab unser Projekt bei Dir installieren. So haben wir beim Workshop mehr Zeit für's Programmieren und brauchen nicht so lange warten bis alle mit der Installation fertig sind. Eine Anleitung dazu findest Du auf [Github](https://github.com/coderdojo-neusiedl/dynamic-webpage/tree/workshop-20200619).",
+                "mentors": [
+                    "Thomas"
+                ],
+                "zoom": ""
+            }
+        ]
     },
     {
         "begintime": "2020-06-26T14:45:00",
@@ -101,6 +158,30 @@
     {
         "begintime": "2020-07-03T14:45:00",
         "endtime": "2020-07-03T19:00:00",
+        "eventtype": "CoderDojo Virtual",
+        "workshops": []
+    },
+    {
+        "begintime": "2020-07-10T14:45:00",
+        "endtime": "2020-07-10T19:00:00",
+        "eventtype": "CoderDojo Virtual",
+        "workshops": []
+    },
+    {
+        "begintime": "2020-07-17T14:45:00",
+        "endtime": "2020-07-17T19:00:00",
+        "eventtype": "CoderDojo Virtual",
+        "workshops": []
+    },
+    {
+        "begintime": "2020-07-24T14:45:00",
+        "endtime": "2020-07-24T19:00:00",
+        "eventtype": "CoderDojo Virtual",
+        "workshops": []
+    },
+    {
+        "begintime": "2020-07-31T14:45:00",
+        "endtime": "2020-07-31T19:00:00",
         "eventtype": "CoderDojo Virtual",
         "workshops": []
     }
