@@ -2,6 +2,9 @@
 title: Zahlen raten mit Python - Teil 1
 description: Wollen wir ein Programm für das Spiel "Zahlen raten" schreiben?
 author: Stöcher Wolfgang, Steyr
+level: 1
+img: "zahlen-raten-1.png"
+imgposition: "left top"
 aliases: 
 - /trainingsanleitungen/python/python-zahlenraten.html
 ---

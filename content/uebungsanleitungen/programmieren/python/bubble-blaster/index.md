@@ -1,6 +1,8 @@
 ---
 title: "Bubble Blaster"
 description: "Ein U-Boot, das mit Pfeiltasten gesteuert wird, soll in der vorgegebenen Zeit so viel Blasen wie möglich zum Platzen bringen."
+level: 2
+img: "bubble-blaster.png"
 ---
 
 # Bubble Blaster

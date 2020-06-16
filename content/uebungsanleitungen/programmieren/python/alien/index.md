@@ -1,6 +1,8 @@
 ---
 title: "Alien"
 description: "Mit dem Package Tkinter zeichnen wir einen Alien und lassen ihn auf Tastendruck reagieren."
+level: 1
+img: "alien.png"
 ---
 
 # Wir zeichnen einen Alien

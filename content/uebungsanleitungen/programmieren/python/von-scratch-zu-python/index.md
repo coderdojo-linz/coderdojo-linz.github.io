@@ -1,6 +1,8 @@
 ---
 title: "Von Scratch zu Python"
 description: "Du zeichnest eine geometrische Figur in Scratch und dann übersetzt du das Programm in die Programmiersprache Python."
+level: 1
+img: "von-scratch-zu-python.png"
 ---
 
 # Von Scratch zu Python

@@ -1,6 +1,9 @@
 ---
 title: "Geisterspiel mit Python"
 description: "In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python."
+level: 1
+img: "geisterspiel.png"
+imgposition: "left top"
 aliases:
 - /trainingsanleitungen/python/python-geisterspiel.html
 ---
