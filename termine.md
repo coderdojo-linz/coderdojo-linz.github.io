@@ -61,43 +61,15 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		// ***********************************
 
 		var row = "<tr>";
-		row += "<td>Donnerstag, 11. Juni 2020</td>";
+		row += "<td>Donnerstag, 18. Juni 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
 		var workshops = [];
+		var converter = new showdown.Converter()
 
-		workshops.push({
-			time: "13:45 - 15:45",
-			title: "HTML & CSS Hands-On",
-			description: "Diese Woche werden wir uns auf das Flexbox und Grid Layout von CSS konzentrieren und nebenbei auf die Basic CSS Features von erstem Workshop wiederholen.",
-			prerequisites: "<ul><li>ein wenig Erfahrung mit HTML & CSS</li></ul>",
-			mentors: ["Karin", "Rainer"],
-			link: "	https://us02web.zoom.us/j/88339295462?pwd=NkxEd09FMFhIVTQrTUJGOVR4ODQ1dz09"
-		});
-
-		workshops.push({
-			time: "14:45 - 16:45",
-			title: "Discord Bot mit C#",
-			description: "Dieses mal werden wir gemeinsam das Katzenbild Kommando in unseren Bot um weitere Funktionen erweitert (Issue). Ausserdem wartet ein neues Minecraft-Feature darauf, von uns Implementiert zu werden :)<br/><br/>Letztens haben wir uns Überlegt, über Github einen gemeinsamen Bot zu schreiben. Damit auch jeder mithelfen kann, werden wir nochmals in die wundervolle Welt des git's eintauchen :)",
-			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://visualstudio.microsoft.com/vs/community/\" target=\"_blank\">Visual Studio 2019 Community</a></li><li><b>und</b> <a href=\"https://dotnet.microsoft.com/download/dotnet-core/3.1\" target=\"_blank\">.NET Core</a></li><li>Github Account</li><li><a href=\"https://www.postman.com/downloads/\" target=\"_blank\">Postman</a></li></ul><br/><p><b>Kann ich mich irgendwie auf den Workshop vorbereiten?</b></p><p>Ja! Du kannst dir, wenn du möchtest schonmal einen Einblick im tollen Text-Tutorial der Bot-Autoren verschaffen! Keine Angst, wir werden das auch im Workshop nochmal durchgehen ;): <a href=\"Ja! Du kannst dir, wenn du möchtest schonmal einen Einblick im tollen Text-Tutorial der Bot-Autoren verschaffen! (Keine Angst, wir werden das auch im Workshop nochmal durchgehen ;) ) Discord.Net Einsteiger Tutorial\" target=\"_blank\">Discord.Net Einsteiger Tutorial</a></p>",
-			mentors: ["Jonas"],
-			link: "https://us02web.zoom.us/j/81933915635?pwd=Z3Bxa3VyZ1o5SndIbnZLMExyUHpiZz09"
-		});
-
-		workshops.forEach(function(w) {
-			row += "<p><span class=\"workshop-title\">" + w.time + " " + w.title + "</span></p><p>" + w.description + "</p><p><b>Voraussetzungen</b></p><p>" + w.prerequisites + "</p><p><b>Mentoren:</b> " + w.mentors.join(", ") + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
-		});
-
-		row += "</td>";
-		row += "</tr>";
-
-		eventsTable.append(row);
-
-		// ***********************************
-
-		var row = "<tr>";
-		row += "<td>Freitag, 12. Juni 2020</td>";
+				var row = "<tr>";
+		row += "<td>Freitag, 19. Juni 2020</td>";
 		row += "<td class='type-coderdojo'>CoderDojo Online</td>";
 		row += "<td>";
 
@@ -115,17 +87,26 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		workshops.push({
 			time: "14:45 - 16:45",
 			title: "Scratch für AnfängerInnen",
-			description: "Letzte Woche hatten wir wieder mal eine Scratch-Übung für Kids, die noch nie programmiert haben. Diese Woche machen wir mit einem zweiten Spiel weiter, das schon etwas anspruchsvoller ist, sich aber immer noch gut für Anfängerinnen und Anfänger eignet. Wenn du also die Grundbegriffe von Scratch kennst und mehr lernen möchtest, bist du in diesem Workshop richtig.<br/><br/>Wenn du mitmachen möchtest, aber noch nie etwas in Scratch gemacht hast, baue einfach zur Vorbereitung selbständig oder mit Hilfe einer erwachsenen Person unser Einsteigerbeispiel <a href=\"https://linz.coderdojo.net/trainingsanleitungen/scratch/scratch-fang-mich-v3.html\" target=\"_blank\">Fang mich</a> nach. Du wirst sehen, das ist überhaupt nicht schwer.",
-			prerequisites: "<ul><li><b>ab 8 Jahren</b>, Lesekenntnisse erforderlich</li><li>Nur grundlegendste Vorkenntnisse über Programmieren notwendig</li><li>Software für die Teilnahme an Online CoderDojos (<a href=\"https://linz.coderdojo.net/online-coderdojo-tipps.html\" target=\"_blank\">Anleitung</a>)</li><li>Installierte Version von Scratch (<a href=\"https://scratch.mit.edu/download\" target=\"_blank\">Download</a>)</li><li>oder Online-Version von Scratch - dafür brauchst du nur einen Browser und öffnest <a href=\"https://scratch.mit.edu/create/\" target=\"_blank\">https://scratch.mit.edu/create/</a></li></ul>",
+			description: "Programm wird noch bekanntgegeben",
+			prerequisites: "- Nur grundlegendste Vorkenntnisse über Programmieren notwendig\n- Software für die Teilnahme an Online CoderDojos (Anleitung)\n- Installierte Version von Scratch (Download)\n- Online-Version von Scratch - dafür brauchst du nur einen Browser und öffnest https://scratch.mit.edu/create/",
 			mentors: ["Pia", "Karin"],
-			link: "https://us02web.zoom.us/j/87332762398?pwd=cU4vbXdXWWMvZnluWmdBSVNqWGdEQT09"
+			link: "TBD"
+		});
+
+		workshops.push({
+			time: "14:45 - 16:45",
+			title: "Python für AnfängerInnen",
+			description: "Wir werden dieses Mal das Spiel \"Bubble Blaster\" fertigstellen. Wir bringen die Blasen zum Platzen, wenn sie vom U-Boot getroffen werden und machen eine Anzeige für die Zeit und die erreichten Punkte. Neueinsteiger sind auch herzlich willkommen. Ihr bekommt den Code vom letzten Mal und wir wiederholen die wichtigsten Schritte.",
+			prerequisites: "- Aktuelle Version von [Python](https://www.python.org/downloads/)",
+			mentors: ["Sonja"],
+			link: "TBD"
 		});
 
 		workshops.push({
 			time: "14:45 - 16:45",
 			title: "Virtuelles Elektronikbasteln",
-			description: "Wir starten mit der Berechnung der Grundschaltung von LED und Vorwiderstand in mehreren Varianten. Wir bauen die Schaltung im TinkerCAD nach und überprüfen die berechneten Ergebnisse mit dem Multimeter. Das Ohmsche Gesetz kommt auch wieder vor. Diese Übung ist auch für Anfänger geeignet. Vorbereiten kannst Du Dich auf unserer Hompage unter dem Menüpunkt Löten mit den Elektronik Übungen 1/2/3.<br/><br/>Im zweiten Teil werden wir wieder mit dem Arduino eine Schaltung bauen. Wir erweitern die die LED-Neopixel Schaltung vom letzten Mal. Es ist auch Zeit zum Fragenstellen.",
-			prerequisites: "Ein Computer mit <a href=\"https://www.tinkercad.com\" target=\"_blank\">Tinkercad</a> Zugang.",
+			description: "Programm wird noch bekanntgegeben",
+			prerequisites: "TBD",
 			mentors: ["Günther", "Michael"],
 			link: "	https://us02web.zoom.us/j/82199349665?pwd=WStGREZLWE1qWVZPakNpNmxUbHgzdz09"
 		});
@@ -133,10 +114,10 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		workshops.push({
 			time: "14:45 - 16:45",
 			title: "Discord Bot mit C#",
-			description: "Dieses mal werden wir gemeinsam das Katzenbild Kommando in unseren Bot um weitere Funktionen erweitert (Issue). Ausserdem wartet ein neues Minecraft-Feature darauf, von uns Implementiert zu werden :)<br/><br/>Letztens haben wir uns Überlegt, über Github einen gemeinsamen Bot zu schreiben. Damit auch jeder mithelfen kann, werden wir nochmals in die wundervolle Welt des git's eintauchen :)",
-			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li><a href=\"https://visualstudio.microsoft.com/vs/community/\" target=\"_blank\">Visual Studio 2019 Community</a></li><li><b>und</b> <a href=\"https://dotnet.microsoft.com/download/dotnet-core/3.1\" target=\"_blank\">.NET Core</a></li><li>Github Account</li><li><a href=\"https://www.postman.com/downloads/\" target=\"_blank\">Postman</a></li></ul><br/><p><b>Kann ich mich irgendwie auf den Workshop vorbereiten?</b></p><p>Ja! Du kannst dir, wenn du möchtest schonmal einen Einblick im tollen Text-Tutorial der Bot-Autoren verschaffen! Keine Angst, wir werden das auch im Workshop nochmal durchgehen ;): <a href=\"Ja! Du kannst dir, wenn du möchtest schonmal einen Einblick im tollen Text-Tutorial der Bot-Autoren verschaffen! (Keine Angst, wir werden das auch im Workshop nochmal durchgehen ;) ) Discord.Net Einsteiger Tutorial\" target=\"_blank\">Discord.Net Einsteiger Tutorial</a></p>",
+			description: "Diese Woche können wir entweder lernen, einen Minecraft Server mit unserem Bot steuern oder eine Auto-Korrektur einbauen. [Zur Abstimmung ...](https://github.com/coderdojo-linz/DiscordBot-DotNet/issues/40)",
+			prerequisites: "- Visual Studio Community\n- .NET Core\n- Github Account\n- [Postman](https://www.postman.com/downloads/)",
 			mentors: ["Jonas"],
-			link: "https://us02web.zoom.us/j/81563576615?pwd=YWpzTHRyS1I2L1JaOVhnZUF2cjFKdz09"
+			link: "TBD"
 		});
 
 		// workshops.push({
@@ -160,10 +141,10 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		workshops.push({
 			time: "17:00 - 19:00",
 			title: "Dynamische Webseite mit Node.js",
-			description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.<br/><br/>Dieses Mal implementieren wir die noch fehlende CRUD-Operation (create, read, update, delete) um Einträge in der FeuerwehrApp löschen zu können. Weiters sehen wir uns an, wie man mit Javascript einen Filter für die empfangenen Daten einbaut. Falls noch Zeit bleibt, können wir beginnen die ChatApp und die FeuerwehrApp in einem gemeinsame App zu integrieren.",
-			prerequisites: "<p>Grundlegende Kenntnisse:</p><ul><li>beim Programmieren (z.B. mit JavaScript, Java, C#, C++, ...)</li><li>HTML</li></ul><p>Software:</p><ul><li>einen Texteditor wie z.B. <a href=\"https://notepad-plus-plus.org/\" target=\"_blank\">Notepad++</a>, <a href=\"https://code.visualstudio.com/\" target=\"_blank\">Visual Studio Code</a></li><li><a href=\"https://nodejs.org/en/download/\" target=\"_blank\">Node.js</a></li><li><a href=\"https://git-scm.com/download/win\" target=\"_blank\">Git</a></li></ul><p>Installationsanleitung:</p><p>Wenn Du möchtest, kannst Du schon vorab unser Projekt bei Dir installieren. So haben wir beim Workshop mehr Zeit für's Programmieren und brauchen nicht so lange warten bis alle mit der Installation fertig sind. Eine Anleitung dazu findest Du auf <a href=\"https://github.com/coderdojo-neusiedl/dynamic-webpage/tree/workshop-20200612\" target=\"_blank\">Github</a>.</p>",
+			description: "Dynamischen Webseiten sind in der Lage sich Informationen zu merken und diese zu verarbeiten, weil unser Code nicht nur im Browser sondern auch am Webserver selbst ausgeführt wird. Das gibt uns Möglichkeiten, die man mit statischen Webseiten nicht hat.\n\nDieses Mal bauen wir eine Benutzerverwaltung in unsere App ein. Dazu werden wir uns folgende Themenbereiche ansehen und ausprobieren:\n\n- verschlüsseltes Speichern von Passwörtern\n- Transportverschlüsselung\n- Cookies\n- Sicherheit im Internet",
+			prerequisites: "- einen Texteditor wie z.B. [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/)\n- [Node.js](https://nodejs.org/en/download/)\n- [Git](https://git-scm.com/download/win)\n\n**Installationsanleitung**\n\nWenn Du möchtest, kannst Du schon vorab unser Projekt bei Dir installieren. So haben wir beim Workshop mehr Zeit für's Programmieren und brauchen nicht so lange warten bis alle mit der Installation fertig sind. Eine Anleitung dazu findest Du auf [Github](https://github.com/coderdojo-neusiedl/dynamic-webpage/tree/workshop-20200619).",
 			mentors: ["Thomas"],
-			link: "https://us02web.zoom.us/j/83122042872?pwd=RTkzV1EraDlqY1gwR01aWlFjd1RtZz09"
+			link: ""
 		});
 
 		// workshops.push({
@@ -175,14 +156,14 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		// 	link: "TBD"
 		// });
 
-		workshops.push({
-			time: "17:00 - 19:00",
-			title: "Unity",
-			description: "Diesmal möchten wir uns dem Spielfeld in 3D, einem einfachen NavMesh und der Sichtbarkeit von Gegnern widmen.",
-			prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li>Installierter Unity-Hub mit Unity 2019.3 (andere Version geht auch)</li><li><b>und</b> <a href=\"https://visualstudio.microsoft.com/de/vs/unity-tools/\" target=\"_blank\">Visual Studio 2019</a> (Community edition is ausreichend) mit installiertem \"Game-Development with Unity\" - Package</li></ul>",
-			mentors: ["Hans-Peter"],
-			link: "https://us02web.zoom.us/j/83327599008?pwd=Y3lHL0swRjEraUR0Y0FMUVdJSlNwQT09"
-		});
+		// workshops.push({
+		// 	time: "17:00 - 19:00",
+		// 	title: "Unity",
+		// 	description: "Diesmal möchten wir uns dem Spielfeld in 3D, einem einfachen NavMesh und der Sichtbarkeit von Gegnern widmen.",
+		// 	prerequisites: "Bitte installier dir schon vor dem Coderdojo folgende Dinge:<br/><ul><li>Installierter Unity-Hub mit Unity 2019.3 (andere Version geht auch)</li><li><b>und</b> <a href=\"https://visualstudio.microsoft.com/de/vs/unity-tools/\" target=\"_blank\">Visual Studio 2019</a> (Community edition is ausreichend) mit installiertem \"Game-Development with Unity\" - Package</li></ul>",
+		// 	mentors: ["Hans-Peter"],
+		// 	link: "https://us02web.zoom.us/j/83327599008?pwd=Y3lHL0swRjEraUR0Y0FMUVdJSlNwQT09"
+		// });
 
 		// workshops.push({
 		// 	time: "16:00 - 18:00",
@@ -207,7 +188,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 		*/
 
 		workshops.forEach(function(w) {
-			row += "<p><span class=\"workshop-title\">" + w.time + " " + w.title + "</span></p><p>" + w.description + "</p><p><b>Voraussetzungen</b></p><p>" + w.prerequisites + "</p><p><b>Mentoren:</b> " + w.mentors.join(", ") + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
+			row += "<p><span class=\"workshop-title\">" + w.time + " " + w.title + "</span></p><p>" + converter.makeHtml(w.description) + "</p><p><b>Voraussetzungen</b></p><p>" + converter.makeHtml(w.prerequisites) + "</p><p><b>Mentoren:</b> " + w.mentors.join(", ") + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + w.link + "</a></p>";
 		});
 
 		row += "</td>";
@@ -215,7 +196,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 
 		eventsTable.append(row);
 
-		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-06-12'; }).forEach(function(event) {
+		data.filter(function(event) { return moment(new Date(event.date)).startOf("day").format('YYYY-MM-DD') != '2020-06-19'; }).forEach(function(event) {
 			var row = "";
 
 			if (event.type == "header") {
