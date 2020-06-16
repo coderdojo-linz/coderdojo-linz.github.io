@@ -119,7 +119,7 @@
                 "endtime": "2020-06-19T16:45:00",
                 "title": "Virtuelles Elektronikbasteln",
                 "description": "",
-                "prerequisites": "- Aktuelle Version von [Python](https://www.python.org/downloads/)",
+                "prerequisites": "Ein Computer mit [Tinkercad](https://www.tinkercad.com/) Zugang.",
                 "mentors": [
                     "Günther, Michael"
                 ],
