@@ -3,7 +3,8 @@ title: "Grundlagen"
 description: "BBC micro:bit Grundlagen"
 layout: "list"
 weight: 1
-img: "circuit-board.jpg"
+img: "grundlagen.jpg"
+imgcover: true
 ---
 
-...
+Alle Grundlagen zum Beginnen und Nachlesen zum Thema micro:bit.

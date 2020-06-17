@@ -1,11 +1,10 @@
 ---
 title: "Erweiterungen"
-description: "BBC micro:bit Grundlagen"
+description: "Erweiterungen zum BBC micro:bit"
 layout: "list-with-content"
 weight: 3
-img: "circuit-board.jpg"
+img: "erweiterung.jpg"
+imgcover: true
 ---
 
- Es werden elektronische Schaltungen hauptsächlich mit LED und Transistoren zusammengelötet.
- 
- Wer das Programmieren auch gerne mag, kann mit dem BBC micro:bit, Raspberry Pi, Arduino-Nano, Aduino-UNO, ESP8266 usw. viele coole Projekte verwirklichen.
+ Zum micro:bit gibt es viele Erweiterungen zum Anschließen. Hier findest Du Beschreibungen zu den Sets die beim CoderDojo ausprobiert werden können.
