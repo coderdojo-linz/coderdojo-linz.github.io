@@ -92,7 +92,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 					row += "<td class='type-bootcamp'>Bootcamp";
                 } else if (event.type == "classroom") {
 					row += "<td class='type-classroom'>Classroom";
-				} else if (event.type == "online") {
+				} else if (event.type == "CoderDojo Virtual") {
 					row += "<td class='type-coderdojo'>CoderDojo Online";
 				} else {
 					row += "<td class='type-coderdojo'>CoderDojo";
@@ -130,7 +130,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 				if (event.location) {
 					row += event.location;
 				} else {
-					if (event.type == "online") {
+					if (event.type == "CoderDojo Virtual") {
 						if (event.workshops) {
 						event.workshops.forEach(function(w) {
 							var time = "Uhrzeit wird noch festgelegt";
