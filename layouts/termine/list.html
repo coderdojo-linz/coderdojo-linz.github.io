@@ -25,54 +25,6 @@
                 <p class="loadingText">Die Termine werden geladen ...</p>
 
                 <table class="table" id="eventsTable">
-                    <!--{{ range ($.Site.Data.events) }}
-                    
-                    {{ if (gt (dateFormat "2006-01-02T15:04" .begintime ) (now.Format "2006-01-02T15:04")) }}
-                    <tr>
-                        <td class="text-nowrap text-center d-none d-sm-table-cell">
-                            <a id="{{ dateFormat "20060102" .begintime }}"></a>
-                            <div class="event-time">
-                                <span class="badge badge-primary badge-pill event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span><br />{{ dateFormat "02.01.2006" .begintime }}<br />{{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}
-                            </div>
-                        </td>
-                        <td class="event">
-                            <div class="d-block d-sm-none event-time event-time-xs">
-                                <span class="badge badge-primary badge-pill event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span><br/><b>{{ dateFormat "02.01.2006" .begintime }} {{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}</b>
-                            </div>
-
-                            {{ range(.workshops) }}
-                            <div class="workshop">
-                                <h3><small><span class="d-inline d-sm-none">{{ dateFormat "02.01.2006" .begintime }}</span> {{ dateFormat "15:04" .begintime }} - {{ dateFormat "15:04" .endtime }}</small><br/>{{ .title }}</h3>
-                                <p>
-                                    {{if eq .description ""}}
-                                    Programm wird noch bekanntgegeben
-                                    {{ else }}
-                                    {{ .description | markdownify  }}
-                                    {{ end }}
-                                </p>
-
-                                <p><strong>Voraussetzungen</strong></p>
-                                <p>{{ .prerequisites | markdownify }}</p>
-
-                                <p><strong>Mentoren:</strong> {{ delimit .mentors ", " }}</p>
-
-                                <p><strong>Linz zum Teilnehmen:</strong>&nbsp;
-                                    {{if eq .zoom ""}}
-                                    wird noch bekanntgegeben
-                                    {{ else }}
-                                    {{ .zoom }}
-                                    {{ end }}
-                                </p>
-                            </div>
-                            {{ end }}
-
-                            {{ if eq (len .workshops) 0 }}
-                                <div class="workshop"><p>Workshops werden noch bekannt gegeben</p></div>
-                            {{ end }}
-                        </td>
-                    </tr>
-                    {{ end }}
-                    {{ end }}-->
                 </table>
             </div>
         </div>

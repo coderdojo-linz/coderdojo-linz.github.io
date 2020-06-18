@@ -6,22 +6,10 @@
             <div class="col-xs-12 col-sm-12 col-lg-8 offset-lg-2">
                 <h2>Nächste Termine</h2>
                 <p class="text-center">Hast du Lust bekommen, beim CoderDojo mitzumachen? Hier findest du die nächsten Termine.</p>
-                <table class="table"> 
-                    {{ range first 3 $.Site.Data.events }}
-                    {{ $description := .location }}
-                    
-                    {{ if eq .eventtype "CoderDojo Virtual" }}
-                        {{ $description = "Online Event" }}
-                    {{ end }}
-                    <tr>
-                        <td>
-                            <span class="badge badge-primary badge-pill event-type event-type-{{ replace (lower (.eventtype)) " " "-" }}">{{ .eventtype }}</span>
-                            <span class="d-block d-sm-none">{{ dateFormat "02.01.2006" .begintime }}</span>
-                        </td>
-                        <td class="d-none d-sm-table-cell">{{ dateFormat "02.01.2006" .begintime }}</td>
-                        <td class="d-none d-sm-table-cell">{{ $description }}</td>
-                    </tr> 
-                    {{ end }} 
+                
+                <p class="loadingText">Die Termine werden geladen ...</p>
+
+                <table class="table" id="eventsOverviewTable">
                 </table>
             </div>
 

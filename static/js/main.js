@@ -35,6 +35,36 @@ function selectCategory(category) {
     return false;
 }
 
+function loadEventsOverview(eventsTable) {
+    $.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function (data) {
+        var converter = new showdown.Converter();
+
+        data.slice(0, 3).forEach(function (event) {
+            var row = "";
+            var date = moment(new Date(event.date)).startOf("day");
+            var formattedDate = date.format("DD.MM.YYYY");
+            var description = converter.makeHtml(event.location);
+            if (event.type == "CoderDojo Virtual") {
+                description = "Online Event";
+            }
+
+            row += "<tr>";
+            row += "<td>";
+            row += "<span class=\"badge badge-primary badge-pill event-type event-type-" + event.type.toLowerCase().replace(' ', '-') + "\">" + event.type + "</span>";
+            row += "<span class=\"d-block d-sm-none\">" + formattedDate + "</span>";
+            row += "</td>";
+
+            row += "<td class=\"d-none d-sm-table-cell\">" + formattedDate + "</td>";
+            row += "<td class=\"d-none d-sm-table-cell\">" + description + "</td>";
+
+            row += "</tr>";
+            eventsTable.append(row);
+        });
+
+        $(".loadingText").hide();
+    });
+}
+
 function loadEvents(eventsTable) {
     $.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function (data) {
         var converter = new showdown.Converter();
@@ -98,8 +128,9 @@ function loadEvents(eventsTable) {
             row += "</tr>";
 
             eventsTable.append(row);
-            $(".loadingText").hide();
         });
+
+        $(".loadingText").hide();
     });
 }
 
@@ -114,7 +145,12 @@ $(document).ready(function () {
     });
 
     var eventsTable = $("#eventsTable");
-    if (eventsTable) {
+    if (eventsTable && eventsTable.length) {
         loadEvents(eventsTable);
+    }
+
+    var eventsOverviewTable = $("#eventsOverviewTable");
+    if (eventsOverviewTable && eventsOverviewTable.length) {
+        loadEventsOverview(eventsOverviewTable);
     }
 });
