@@ -143,7 +143,7 @@ Aufgrund der aktuellen COVID-19 Lage finden die CoderDojos bis auf weiteres onli
 								zoomLink = w.zoom;
 							}
 
-							row += "<p><span class=\"workshop-title\">" + time + "&nbsp;&nbsp;&nbsp;" + w.title + "</span></p>" + (w.targetAudience ? ("<p><b>Für wen:</b> " + w.targetAudience + "</p>") : "") + "<p><b>Beschreibung</b></p><p>" + converter.makeHtml(w.description ? w.description : "wird noch bekanntgegeben") + "</p><p><b>Voraussetzungen</b></p><p>" + converter.makeHtml(w.prerequisites ? w.prerequisites : "werden noch bekanntgegeben") + "</p><p><b>Mentoren:</b> " + w.mentors.join(", ") + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + w.link + "' target='_blank'>" + zoomLink + "</a></p>";
+							row += "<p><span class=\"workshop-title\">" + time + "&nbsp;&nbsp;&nbsp;" + w.title + "</span></p>" + (w.targetAudience ? ("<p><b>Für wen:</b> " + w.targetAudience + "</p>") : "") + "<p><b>Beschreibung</b></p><p>" + converter.makeHtml(w.description ? w.description : "wird noch bekanntgegeben") + "</p><p><b>Voraussetzungen</b></p><p>" + converter.makeHtml(w.prerequisites ? w.prerequisites : "werden noch bekanntgegeben") + "</p><p><b>Mentoren:</b> " + w.mentors.join(", ") + "</p><p><b>Link zum Teilnehmen:</b> <a href='" + zoomLink + "' target='_blank'>" + zoomLink + "</a></p>";
 						});
 						} else {
 							row += "<p>Workshops werden noch bekanntgegeben</p>";
