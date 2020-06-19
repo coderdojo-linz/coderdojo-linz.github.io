@@ -1,6 +1,6 @@
 ---
 title: "Computational Thinking mit BBC micro:bit"
-description: "..."
+description: "Digitale Bildung in der Sekundarstufe von Alois Bachinger."
 img: "computational-thinking.jpg"
 imgcover: true
 weight: 1

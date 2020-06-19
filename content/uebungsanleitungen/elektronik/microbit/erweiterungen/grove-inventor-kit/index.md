@@ -1,6 +1,6 @@
 ---
 title: "Grove Inventor Kit for micro:bit Project Guide"
-description: "..."
+description: "Die Beschreibung zu unserem Sensor Set von Grove."
 img: "grove-inventor-kit.jpg"
 imgcover: true
 weight: 3

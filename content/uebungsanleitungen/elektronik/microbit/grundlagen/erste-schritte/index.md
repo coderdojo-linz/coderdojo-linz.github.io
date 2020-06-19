@@ -1,6 +1,6 @@
 ---
-title: "Erste Schritte mit micro:bit Blockprogrammierung"
-description: "Baue den erstes Programm für den micro:bit."
+title: "Erste Schritte"
+description: "Baue dein erstes Programm für den micro:bit."
 weight: 3
 img: "erste-schritte.jpg"
 ---
