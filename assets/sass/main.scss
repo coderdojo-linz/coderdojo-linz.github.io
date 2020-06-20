@@ -155,7 +155,7 @@ a[id]:empty {
     }
 
     &.badge-category-index {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -249,7 +249,7 @@ nav.breadcrumb-nav {
     text-transform: uppercase;
     // letter-spacing: 1px;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 13.5px;
 }
 
 /* navigation */
@@ -689,11 +689,12 @@ section.mentors {
 
     h5 {
         //font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     h6.card-subtitle {
         font-size: 0.9rem;
+        line-height: 1.2rem;
     }
 
     .card-title {
@@ -707,6 +708,7 @@ section.mentors {
     .card-header {
         border-bottom: none;
         box-sizing: border-box;
+        background-color: transparent;
     }
 
     .card-footer {
