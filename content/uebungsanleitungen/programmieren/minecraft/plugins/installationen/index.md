@@ -1,20 +1,17 @@
 ---
-
-title: Installationen
-description: In dieser Übung wirst du die zum Minecraft-Plugin-Programmieren und -Testen nötige Software installieren.
+title: "Installationen"
+description: "In dieser Übung wirst du die zum Minecraft-Plugin-Programmieren und -Testen nötige Software installieren."
+level: 1
+weight: 3
+img: "netbeans.png"
+imgposition: "left top"
+categories:
+- Java
 ---
 
 # Installationen
 
-Inhalt:
-
-* [Einleitung](#intro)
-* [Installation Java](#java)
-* [Installation NetBeans](#netbeans)
-* [Installation Craftbukkit Server-Software](#craftbukkit)
-* [Mein eigener Server](#test)
-
-## <a name="intro"></a>Einleitung
+## Einleitung
 Damit du deine Plugins bequem testen kannst, ist es sinnvoll zuerst einen Minecraft-Server auf deinem eigenen Computer zu installieren.
 
 Damit dein Computer ein Minecraft-Server wird, musst du eine bestimmte Software installieren, nämlich den "Minecraft-Server". Das klingt jetzt ein wenig seltsam. Das kommt daher, dass wir Informatiker das Wort "Server" manchmal für einen ganzen Computer benutzen (z. B. "Der Web-Server ist heute wieder mal superschnell"). Aber manchmal verwenden wir das Wort "Server" auch nur für ein Programm, die Server-Software, die einen Computer zu einem Server macht.
@@ -24,20 +21,23 @@ Also, um deinen Computer zu einem Minecraft-Server zu machen, musst du eine Serv
 Zum Testen brauchst du weiters natürlich einen Minecraft-Client und einen gültigen Minecraft-Account. Achte bitte darauf, dass sog. "Cracked-Versions" des Minecraft-Clients nicht funktionieren, weil man sich damit nicht auf einen anderen Server verbinden kann. Nun wären alle wichtigen Fragen geklärt und wir können loslegen.
 
 
-
-## <a name="java"></a>Installation Java
+## Installation Java
 Minecraft ist ein Java-Programm. Um Java-Programme laufen lassen zu können, musst du die Java Virtual Machine (JVM) auf deinem Computer installiert haben. Damit sich die ganze Installiererei auszahlt, ist auch noch NetBeans (das Programm, mit dem wir dann Java Programme schreiben werden) ein Java-Programm.
 
 ### Ist bei mir Java installiert?
 Bevor wir beginnen, wollen wir nachsehen, ob eventuell Java bereits auf deinem Rechner installiert ist. Dazu öffnest du unter Windows die Eingabeaufforderung oder am Mac das Terminal. Dann tippst du folgendes ein:
 
-    java -version
+```shell
+java -version
+```
     
 Wenn du nun eine Antwort bekommst, die so oder zumindest so ähnlich aussieht, dann kannst du sofort zum Punkt [**Download NetBeans**](#netbeans) weiterspringen:
 
-    java version "1.8.0_31"
-    Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
-    Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
+```shell
+java version "1.8.0_31"
+Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)
+```
 
 Wenn das bei dir nicht ao aussieht, dann folge bitte den Anweisungen zur Installation von Java.
 
@@ -45,11 +45,11 @@ Wenn das bei dir nicht ao aussieht, dann folge bitte den Anweisungen zur Install
 
 Zuerst überprüfen wir, ob du ein 32 oder 46 Bit Windows installiert hast. Dazu gehst du in die **Systemsteuerung**, dann wählst du den Punkt **System und Sicherheit** und hier **System**. Im darauffolgenden Fenster kannst du dann ablesen, welche Windows-Architektur du hast.
 
-![Check out Windows architecture](01_installationen/CheckWinArchitectureStep2.png)
+{{< imgblock "img/CheckWinArchitectureStep2.png" "Check out Windows architecture" >}}{{< /imgblock >}}
 
 Nun öffen wir im Browser die Adresse <http://www.oracle.com/technetwork/java/javase/downloads/index.html> und klicken auf Java Download. Jetzt macht es sich bezahlt, wenn du dir gemerkt hast, welche Windows-Architektur du installiert hast, weil du dich hier entscheiden musst. Windows x86, wenn du ein 32-bit Windows hast, Windows x64, wenn du ein 64-bit Windows hast:
 
-![Select your OS](01_installationen/SelectOs.png)
+{{< imgblock "img/SelectOs.png" "Select your OS" >}}{{< /imgblock >}}
 
 Auja, und den Radio-Button mit dem du das License Agreement akzeptierst, darfst du auch nicht vergessen, sonst wirds nix mit dem Download.
 
@@ -59,7 +59,7 @@ Wenn das exe auf deinem Computer heruntergeladen ist, startest du es und folgst 
 
 Du öffnest im Browser die Adresse <http://www.oracle.com/technetwork/java/javase/downloads/index.html> und klickst auf Java Download. Jetzt wählst du aus der Liste der möglichen Systeme Mac OS X x64 aus.
 
-![SelectOs](01_installationen/SelectOs.png)
+{{< imgblock "img/SelectOs.png" "SelectOs" >}}{{< /imgblock >}}
 
 Auja, und den Radio-Button mit dem du das License Agreement akzeptierst, darfst du auch nicht vergessen, sonst wirds nix mit dem Download.
 
@@ -77,7 +77,7 @@ Damit wir unsere Plugins in Java bequem entwickeln können, werden wir NetBeans 
 2. Abschließend musst du wieder das exe starten (Windows) oder das dmg öffnen und den Installer starten (Mac) und den Anweisungen im Programm folgen.
 3. Abschließend kannst du dann NetBeans mal starten. Das müsste dann folgendermaßen aussehen:
 
-![NetBeans Startup Page](01_installationen/NetBeansStartupPage.png)
+{{< imgblock "img/NetBeansStartupPage.png" "NetBeans Startup Page" >}}{{< /imgblock >}}
 
 Gratuliere, damit haben wir bereits den Großteil unserer Vorbereitungsarbeiten geschafft.
 
@@ -92,17 +92,21 @@ Dieses [``craftbukkit.jar``](http://coderdojo-linz.github.io/trainingsanleitunge
 ### Windows
 Erstelle als erstes einen neuen Ordner mit Namen ``bukkitServer`` und bewege ``craftbukkit.jar`` da hinein. Dann starte deinen Lieblings-Texteditor (bitte nicht Word, sonder Notepad oder besser Notepad++) und tippe folgende Zeilen ab:
 
-    java -Xms1024M -Xmx2048M -jar craftbukkit.jar -o true
-    pause
+```shell
+java -Xms1024M -Xmx2048M -jar craftbukkit.jar -o true
+pause
+```
 
 Dann speicherst du die Datei unter dem Namen ``start.bat`` in den Ordner `bukkitServer` gleich neben `craftbukkit.jar` ab. 
 
 ### MacOS
 Erstelle als erstes einen neuen Ordner mit Namen ``bukkitServer`` und bewege ``craftbukkit.jar`` da hinein. Dann starte deinen Lieblings-Texteditor (bitte nicht Word oder Pages, sonder TextEdit oder besser Atom oder TextWrangler) und tippe folgende Zeilen ab:
 
-    #!/bin/bash
-    cd "$( dirname "$0")"
-    java -Xmx1024M -jar craftbukkit.jar -o true
+```shell
+#!/bin/bash
+cd "$( dirname "$0")"
+java -Xmx1024M -jar craftbukkit.jar -o true
+```
 
 Dann speicherst du die Datei unter dem Namen ``start.sh`` in den Ordner `bukkitServer` gleich neben `craftbukkit.jar` ab. 
 
@@ -113,17 +117,21 @@ Dann speicherst du die Datei unter dem Namen ``start.sh`` in den Ordner `bukkitS
 ## <a name="test"></a>Teste deinen Server das erste Mal
 Wenn du diese Datei nun mit einem Doppelklick startest müsste ein Fenster mit dem Cmd-Prompt oder dem Terminal (schwarzes Fenster mit weißem Text unter Windows oder weißes Fenster mit schwarzem Text unter MacOS) erscheinen und nach einer Weile folgende Meldungen darin angezeigt werden.
 
-    [18:22:27 INFO]: Starting minecraft server version 1.7.10
-    [18:22:27 INFO]: Loading properties
-    [18:22:27 INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
-    [18:22:27 INFO]: Stopping server
-    [18:22:27 INFO]: Stopping server
+```shell
+[18:22:27 INFO]: Starting minecraft server version 1.7.10
+[18:22:27 INFO]: Loading properties
+[18:22:27 INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+[18:22:27 INFO]: Stopping server
+[18:22:27 INFO]: Stopping server
+```
     
 Damit sind wir schon fast am Ziel. Wie du oben siehst, will der Server noch, dass wir das EULA akzeptieren. Freundlicherweise schreibt er auch, was wir tun sollen, nämlich ``eula.txt`` für weitere Informationen ansehen. Diese Datei wurde durch das erste Mal starten im Ordner `bukkitServer` erstellt. Wir nehmen also wieder unseren Lieblings-Editor zur Hand und öffnen dieses ``eula.txt``.
 
 In der letzten Zeile dieses Files steht ``eula=false``. Das müssen wir in ``eula=true`` umschreiben und dann probieren wir es noch mal und starten den Server mit einem Doppelklick. Jetzt müsste er sauber starten. Du merkst das, dass nun im Fenster sehr viel mehr Meldungen angezeigt werden und zum Schluss die Zeile
 
-    [18:24:04 INFO]: Done (1.369s)! For help, type "help" or "?"
+```shell
+[18:24:04 INFO]: Done (1.369s)! For help, type "help" or "?"
+```
 
 stehen sollte. Um ganz sicher zu gehen, musst du natürlich jetzt dein Minecraft starten. Um auf deinem Server spielen zu können wählst du am Startscreen die Option **Multiplayer**. Wenn es schnell gehen soll, klickst du auf den Button **Direct Connect** und gibst als Server-Adresse ``localhost`` ein.
 

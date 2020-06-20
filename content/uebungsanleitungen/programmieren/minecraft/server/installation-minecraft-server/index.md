@@ -1,8 +1,10 @@
 ---
-
-title: Installation eines Minecraft Servers
-description: In dieser Übung lernst du, einen Minecraft Server auf Linux zu installieren
+title: "Installation eines Minecraft Servers"
+description: "In dieser Übung installieren wir einen Minecraft Server. Als Grundlage brauchst du dafür einen Computer, auf dem Linux installiert ist. Linux ist eine freie Software, die kostenlos im Internet zu haben ist."
+level: 2
+img: "server-verbinden.png"
 ---
+
 
 # Installation eines Minecraft Servers
 
@@ -26,7 +28,7 @@ Wenn dein Server in der Cloud läuft und du keinen direkten Zugang dazu hast, mu
 
 Unter Windows verwendet man häufig die kostenlose Software [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html), um bequem mit *ssh* auf einen Linux-Server zuzugreifen. Lade die Software herunter und installiere sie. Wenn du sie startest, musst du die [IP-Adresse](https://de.wikipedia.org/wiki/IP-Adresse) deines Servers eingeben. Wenn du nicht sicher bist, wo du die IP-Adresse her bekommst, bitte jemanden vom CoderDojo Mentorenteam um Hilfe.
 
-![PuTTY](minecraft-server/putty-ip-adresse.jpg)
+{{< imgblock "img/putty-ip-adresse.jpg" "PuTTY" >}}{{< /imgblock >}}
 
 Wenn du Linux verwendest, brauchst du *PuTTY* nicht unbedingt. *ssh* ist schon eingebaut. Im [UbuntuUsers Wiki](https://wiki.ubuntuusers.de/SSH/) kannst du nachlesen, wie du *ssh* unter Linux verwendest.
 
@@ -50,7 +52,7 @@ Zur Verwaltung unserer Minecraft-Welten verwenden wir [Minecraft Server Control]
 
 Lass uns als erstes also *mscs* installieren. Das folgende Script zeigt wie es gemacht wird. **Wichtiger Tipp:** Bevor du beginnst, lies die Hinweise nach dem Script, um zu verstehen was es macht.
 
-```
+```shell
 # Aktualisieren der Installationsquellen für unseren Ubuntu-Server
 sudo apt-get update
 ```
@@ -59,14 +61,14 @@ sudo apt-get update
 * Das vorangestellte `sudo` sorgt dafür, dass das Kommando als `root`, also als Superuser mit Administratorrechten ausgeführt wird. [Mehr über *sudo*...](https://wiki.ubuntuusers.de/sudo/)
 * Mit `apt-get` kann man Softwarepakete verwalten. In diesem Fall wird `update` angegeben. Dadurch bringst du das Verzeichnis verfügbarer Softwarepakete auf deinem Server auf den neuesten Stand. [Mehr über *apt-get*...](https://wiki.ubuntuusers.de/apt/apt-get/)
 
-```
+```shell
 # Installieren der Systemvoraussetzungen von mscs
 sudo apt-get -y install openjdk-8-jre-headless perl libjson-perl libwww-perl python make wget rdiff-backup rsync socat iptables git
 ```
 
 Mit `apt-get install` installiert man Softwarepakete. Hier werden in einer Zeile viele Pakete installiert. Sie sind alle notwendig, damit *mscs* funktioniert. Du fragst dich, woher wir wissen, was *mscs* braucht? Das kann man in der [*mscs* Dokumentation](https://github.com/MinecraftServerControl/mscs) nachlesen.
 
-```
+```shell
 # Mscs herunterladen und eigentlichen Installation starten
 cd /tmp
 git clone https://github.com/MinecraftServerControl/mscs.git
@@ -85,7 +87,7 @@ Wenn du das alles gemacht hast, kannst du stolz auf dich sein. Du hast *mscs* in
 
 Lass uns eine neue Welt erzeugen:
 
-```
+```shell
 # Wir legen eine Welt namens myflatworld an
 mscs create myflatworld 25565
 
@@ -101,7 +103,7 @@ mscs start myflatworld
 
 An dieser Stelle können wir noch nicht zu spielen beginnen. Wir müssen erst die [Minecraft Lizenzbedingungen](https://account.mojang.com/documents/minecraft_eula) (in Englisch "End User License Agreement" = *EULA*) akzeptieren. Das machen wir, indem wir eine Zeile in einer Datei unserer Welt ändern. Alle unsere Welten sind im Verzeichnis `/opt/mscs/worlds/` zu finden. In unserem Fall müssen wir also in das Verzeichnis `/opt/mscs/worlds/myflatworld`.
 
-```
+```shell
 # Wechseln wir in das Verzeichnis unserer Welt
 cd /opt/mscs/worlds/myflatworld
 
@@ -114,7 +116,7 @@ In dem Script oben kommt der Editor *nano* vor. *nano* ist ein grundlegender Edi
 
 Ändere mit *nano* `eula=false` auf `eula=true` und speichere die Datei indem du die Datei mit dem Shortcut *Strg+O* und *Enter* speicherst und dann den Editor mit *Strg+X* beendest
 
-```
+```shell
 # Starte die Welt erneut
 mscs start myflatworld
 
@@ -124,7 +126,7 @@ mscs status myflatworld
 
 Jetzt kannst du Minecraft starten und dich zu deinem Server verbinden. Lade deine Freunde ein, damit ihr gemeinsam in einer Welt spielen könnt.
 
-![Minecraft direkt verbinden](minecraft-server/minecraft-direkt-verbinden.png)
+{{< imgblock "img/minecraft-direkt-verbinden.png" "Minecraft direkt verbinden" >}}{{< /imgblock >}}
 
 
 ## Forge
@@ -133,9 +135,9 @@ Für viele Mods braucht man [Minecraft Forge](http://minecraft-de.gamepedia.com/
 
 **Wichtiger Tipp:** Auf der [Forge Webseite](http://files.minecraftforge.net/maven/net/minecraftforge/forge/) findest du eine Liste von Programmversionen. Such dir die *Recommended*-Version (=empfohlene Version) heraus und trage die genaue Versionsnummer (z.B. `1.11.2-13.20.0.2228`) in das Installationsscript unten ein.
 
-![Forge Recommended Version](minecraft-server/forge-recommended.png)
+{{< imgblock "img/forge-recommended.png" "Forge Recommended Version" >}}{{< /imgblock >}}
 
-```
+```shell
 # Speichere die Versionsnummer in einer Variable
 VER="1.11.2-13.20.0.2228"
 
@@ -152,7 +154,7 @@ sudo rm -f forge-$VER-installer.jar*
 
 Jetzt können wir eine Minecraft Welt mit *Forge* erzeugen. **Wichtiger Tipp:** Du musst im folgenden Script die Versionsnummer von Minecraft und den gewünschten Welt-Namen ändern.
 
-```
+```shell
 MINECRAFT_VER="1.11.2"
 WORLD_NAME="forge"
 
@@ -183,7 +185,7 @@ echo "eula=true" | sudo tee -a eula.txt
 
 Jetzt könnten wir die Welt eigentlich starten. Wir wollen uns selbst aber zum Op machen. Das machen wir mit Hilfe der Datei [ops.json](http://minecraft-de.gamepedia.com/Server.properties#ops.json). Du brauchst die UUID und den Namen deines Minecraft-Spielers. Wenn du die UUID nicht kennst, kannst du sie [im Internet herausfinden](https://mcuuid.net/).
 
-```
+```shell
 UUID="5817f013-80f7-4b0c-a3ed-2116702c4a4a"
 NAME="WitchCharlie"
 LEVEL=4
@@ -199,7 +201,7 @@ printf "]\n" | sudo tee -a ops.json
 
 So, los gehts!
 
-```
+```shell
 # Welt starten
 mscs start $WORLD_NAME
 
@@ -209,5 +211,5 @@ mscs start $WORLD_NAME
 
 Viel Spaß!
 
-![Minecraft mit Furniture Mod](minecraft-server/minecraft-mit-furniture-mod.jpg)
+{{< imgblock "img/minecraft-mit-furniture-mod.jpg" "Minecraft mit Furniture Mod" >}}{{< /imgblock >}}
 

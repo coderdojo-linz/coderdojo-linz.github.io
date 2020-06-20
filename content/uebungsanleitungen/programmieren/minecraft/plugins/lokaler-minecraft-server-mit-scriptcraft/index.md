@@ -1,7 +1,12 @@
 ---
 
-title: Lokaler Minecraft-Server mit Scriptcraft
-description: In dieser Übung lernst du, einen Minecraft-Server mit Scriptcraft auf deinem Computer zu installieren
+title: "Lokaler Minecraft-Server mit Scriptcraft"
+description: "In dieser Übung lernst du, einen Minecraft-Server mit Scriptcraft auf deinem Computer zu installieren."
+level: 1
+weight: 1
+img: "scriptcraft.png"
+categories:
+- JavaScript
 ---
 
 # Installation eines Minecraft Servers mit Scriptcraft
@@ -29,7 +34,7 @@ Jetzt können wir mit der Installation loslegen. Wir werden den Minecraft-Server
 1. Lade die [Installationdatei von Spigot](https://hub.spigotmc.org/jenkins/job/BuildTools/lastStableBuild/artifact/target/BuildTools.jar) herunter und speichere sie im Installationsverzeichnis `c:\spigot`.
 
 1. Starte das Programm *git bash*<br/>
-   ![Git Bash starten](lokaler-minecraft-server/git-bash-starten.png)
+   {{< imgblock "img/git-bash-starten.png" "Git Bash starten" >}}{{< /imgblock >}}
 
 1. Wechsle mit dem Kommando `cd /c/spigot` in das Installationsverzeichnis.
 
@@ -58,7 +63,7 @@ Jetzt sind wir soweit, dass wir den Minecraft-Server starten können:
 1. Starte den Minecraft-Server mit dem Kommando `java -jar spigot-1.11.2.jar`.
 
 1. An dieser Stelle können wir noch nicht zu spielen beginnen. Wir müssen erst die [Minecraft Lizenzbedingungen](https://account.mojang.com/documents/minecraft_eula) (in Englisch "End User License Agreement" = *EULA*) akzeptieren. Dazu öffnet man die Datei `eula.txt` und ersetzt `eula=false` durch `eula=true`.<br/>
-  ![EULA akzeptieren](lokaler-minecraft-server/eula-akzeptieren.png)
+  {{< imgblock "img/eula-akzeptieren.png" "EULA akzeptieren" >}}{{< /imgblock >}}
 
 1. Starte den Minecraft-Server nochmal mit dem Kommando `java -jar spigot-1.11.2.jar`. Jetzt müsste es klappen :-)
 
@@ -66,4 +71,4 @@ Jetzt sind wir soweit, dass wir den Minecraft-Server starten können:
 
 Los geht es. Starte Minecraft und verbinde dich zu deinem Server. Der Servername ist `localhost`.
 
-![Minecraft verbinden](minecraft-server/minecraft-direkt-verbinden.png)
+{{< imgblock "img/minecraft-direkt-verbinden.png" "Minecraft verbinden" >}}{{< /imgblock >}}

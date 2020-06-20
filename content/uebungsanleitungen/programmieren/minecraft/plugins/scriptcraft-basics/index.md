@@ -1,7 +1,11 @@
 ---
-
-title: Grundlagen von Minecraft Mods mit JavaScript
-description: In dieser Anleitung lernst du erste Grundlagen, wie man Minecraft Mods mit JavaScript entwickelt. 
+title: "Grundlagen von Minecraft Mods mit JavaScript"
+description: "In dieser Anleitung lernst du erste Grundlagen, wie man Minecraft Mods mit JavaScript entwickelt. "
+level: 1
+img: "scriptcraft-basics.png"
+weight: 2
+categories:
+- JavaScript
 ---
 
 # Grundlagen von Minecraft Mods mit JavaScript
@@ -29,12 +33,12 @@ Um diese Übung ausprobieren zu können, brauchst du das Spiel Minecraft auf dei
 
 1. Starte Minecraft
 
-1. ![Multiplayer Mode](08_scriptcraft_basics/minecraft-multiplayer.png){: .right}
+1. {{< imgblock "img/minecraft-multiplayer.png" "Multiplayer Mode" >}}{{< /imgblock >}}
 Wechsle in den *Multiplayer-Mode*.
 
 1. Verbinde dich mit deinem Minecraft Server
 
-1. ![Interaktives JavaScript](08_scriptcraft_basics/execute-interactive-js.png){: .right}
+1. {{< imgblock "img/execute-interactive-js.png" "Interaktives JavaScript" >}}{{< /imgblock >}}
 Du kannst jetzt interaktiv erste JavaScript-Kommandos als [Minecraft Befehle](http://minecraft-de.gamepedia.com/Befehl) ausführen:
    * Starte z.B. die *Chat-Konsole* mit der Taste `t`.
    * Merke dir: Jedes JavaScript-Kommando startet mit `/js`.
@@ -88,7 +92,7 @@ exports.hochhaus = function (stockwerke) {
 1. Starte den Minecraft-Server neu.
 
 1. Rufe in Minecraft mit `/js hochhaus(3)` deine Funktion auf und beobachte, wie dein Script ein Hochhaus baut.<br/>
-![Hochhaus](08_scriptcraft_basics/hochhaus.png)
+{{< imgblock "img/hochhaus.png" "Hochhaus" >}}{{< /imgblock >}}
 
 1. Ändere etwas an deinem Script (z.B. mehr oder weniger Ebenen aus Glas)
 
@@ -113,11 +117,11 @@ events.playerJoin(function (event) {
 
 1. Lade in Minecraft deine Scripts neu mit `/js refresh()`
 
-1. ![Disconnect](08_scriptcraft_basics/server-disconnect.png){: .right}
+1. {{< imgblock "img/server-disconnect.png" "Disconnect" >}}{{< /imgblock >}}
 Melde dich vom Minecraft Server ab.
 
 1. Melde dich erneut beim Minecraft Server an. Dein Script wird automatisch das Event `playerJoin` empfangen und die Meldung im Script in Minecraft anzeigen.<br/>
-![Ausgabe des Events](08_scriptcraft_basics/welcome-message.png)
+{{< imgblock "img/welcome-message.png" "Ausgabe des Events" >}}{{< /imgblock >}}
 
 1. In Minecraft gibt es hunderte von Events. Du kannst in der [Scriptcraft Dokumentation](https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md) bei Bedarf nachforschen, was es alles für Events gibt.
 
@@ -148,7 +152,7 @@ events.projectileHit(function (event) {
 1. Lade in Minecraft deine Scripts neu mit `/js refresh()`
 
 1. Nimm den Bogen und schieße einen Pfeil ab. Dort wo der Pfeil landet, siehst du eine Explosion und ein kurzes Feuerwerk wird abgeschossen.<br/>
-![Feuerwerk](08_scriptcraft_basics/fireworks.png)
+{{< imgblock "img/fireworks.png" "Feuerwerk" >}}{{< /imgblock >}}
 
 1. Hast du entdeckt, dass in dem Script ein Modul namens `fireworks` verwendet wird? Du kannst in der [Scriptcraft Dokumentation](https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md#fireworks-module) nachlesen, was `fireworks` alles kann.
 

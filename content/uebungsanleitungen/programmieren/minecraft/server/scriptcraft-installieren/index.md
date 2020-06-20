@@ -1,7 +1,8 @@
 ---
-
-title: Minecraft Server für ScriptCraft
-description: In dieser Anleitung lernst du, wie du einen Minecraft Server für ScriptCraft aufsetzt. 
+title: "Lokaler Minecraft-Server mit Scriptcraft"
+description: "In dieser Übung lernst du, einen Minecraft-Server mit Scriptcraft auf deinem Computer zu installieren."
+level: 3
+img: "scriptcraft.png"
 ---
 
 # Minecraft Server für ScriptCraft
@@ -29,7 +30,7 @@ Falls kein passender Rechner lokal zur Verfügung steht, ist die Verwendung eine
 
 ## Basisimage
 
-Als Basis wurde ein [Dockerfile für Spigot mit Scriptcraft](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker/base-image/Dockerfile) erstellt. Es kann lokal wie folgt in ein Docker Image gebaut werden:
+Als Basis wurde ein [Dockerfile für Spigot mit Scriptcraft](base-image/Dockerfile) erstellt. Es kann lokal wie folgt in ein Docker Image gebaut werden:
 
 * Speichern des Dockerfiles in einem leeren Verzeichnis
 * `docker build -t spigotmc .` (kann je nach bereits installierten Images und Internetanbindung etwas dauern)
@@ -57,7 +58,7 @@ Ein Dockerfile für ein Spielsenario kann lokal wie folgt in ein Docker Image ge
 
 Hat man alles richtig gemacht, sieht das so aus:
 
-```
+```shell
 C:\temp\scriptcraft\flat-and-empty-world>docker build -t mc-flat-empty .
 Sending build context to Docker daemon 8.704 kB
 Step 1 : FROM rstropek/spigotmc
@@ -93,7 +94,7 @@ Loading libraries, please wait...
 
 Jetzt kann man sich zum Server in Minecraft verbinden:
 
-![Join Server](07_spigot_scriptcraft_docker/join-server.png)
+{{< imgblock "img/join-server.png" "Join Server" >}}{{< /imgblock >}}
 
 
 ## Ressourcen zum Thema Scriptcraft

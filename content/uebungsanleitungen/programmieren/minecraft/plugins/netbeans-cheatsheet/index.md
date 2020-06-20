@@ -1,7 +1,11 @@
 ---
-
-title: NetBeans Projektsetup
-description: Eine Kurzanleitung für das Anlegen eines neuen NetBeans Projekts
+title: "NetBeans Projektsetup"
+description: "Eine Kurzanleitung für das Anlegen eines neuen NetBeans Projekts"
+level: 1
+weight: 4
+img: "netbeans_structure.jpg"
+categories:
+- Java
 ---
 
 # NetBeans Projektsetup
@@ -36,7 +40,7 @@ Kurzanleitung, wie das Projekt in NetBeans aufgesetzt werden muss, um für deine
 
 ##  Resultat
 Dein Projektsetup sollte jetzt so aussehen:
-![Netbeans screenshot](netbeans_cheatsheet/netbeans_structure.jpg)
+{{< imgblock "img/netbeans_structure.jpg" "Netbeans screenshot" >}}{{< /imgblock >}}
 
 ##  Projekt bauen und deployen
 1. In der Icon Leiste oben auf den Hammer **Build Project (F11)** klicken.
