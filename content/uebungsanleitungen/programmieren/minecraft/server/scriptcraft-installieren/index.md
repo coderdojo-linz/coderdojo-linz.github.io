@@ -3,6 +3,8 @@ title: "Lokaler Minecraft-Server mit Scriptcraft"
 description: "In dieser Übung lernst du, einen Minecraft-Server mit Scriptcraft auf deinem Computer zu installieren."
 level: 3
 img: "scriptcraft.png"
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker.html
 ---
 
 # Minecraft Server für ScriptCraft

@@ -7,6 +7,8 @@ img: "netbeans.png"
 imgposition: "left top"
 categories:
 - Java
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/01_installationen.html
 ---
 
 # Installationen

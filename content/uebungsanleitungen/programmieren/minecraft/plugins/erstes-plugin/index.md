@@ -7,6 +7,8 @@ img: "erstes-plugin.jpg"
 imgposition: "bottom left"
 categories:
 - Java
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/02_first-plugin.html
 ---
 
 # Dein erstes Plugin /sayhello

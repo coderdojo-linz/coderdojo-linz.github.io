@@ -7,6 +7,8 @@ img: "teleporter.jpg"
 imgposition: "bottom left"
 categories:
 - Java
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/09_teleporter.html
 ---
 
 # Minecraft Teleporter

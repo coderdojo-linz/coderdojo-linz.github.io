@@ -3,6 +3,8 @@ title: "Erste Schritte mit Redstone"
 description: "Redstone ist ein wichtiger Rohstoff in Minecraft. Wie in der echten Welt mit Strom kannst du mit Redstone in Minecraft Schaltkreise (Englisch Ciruits) bauen. Egal ob Falle für Monster, Lichtsteuerung oder automatische Türen - für all das verwendest du Redstone."
 level: 1
 img: "erste-schritte.png"
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/erste-schritte-mit-redstone.html
 ---
 
 # Erste Schritte mit Redstone

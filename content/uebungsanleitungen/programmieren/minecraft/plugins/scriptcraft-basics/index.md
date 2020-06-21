@@ -6,6 +6,8 @@ img: "scriptcraft-basics.png"
 weight: 2
 categories:
 - JavaScript
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/08_scriptcraft_basics.html
 ---
 
 # Grundlagen von Minecraft Mods mit JavaScript

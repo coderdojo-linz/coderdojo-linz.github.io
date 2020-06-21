@@ -7,6 +7,8 @@ img: "miraculix-teil-1.jpg"
 imgposition: "top left"
 categories:
 - Java
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/03_getafix-Player.html
 ---
 
 # Miraculix der Druide - Teil 1

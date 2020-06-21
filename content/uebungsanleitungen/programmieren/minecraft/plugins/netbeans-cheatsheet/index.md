@@ -6,6 +6,8 @@ weight: 4
 img: "netbeans-structure.jpg"
 categories:
 - Java
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/netbeans_cheatsheet.html
 ---
 
 # NetBeans Projektsetup

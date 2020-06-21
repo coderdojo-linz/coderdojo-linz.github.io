@@ -7,6 +7,8 @@ img: "welcome-listener.jpg"
 imgposition: "bottom left"
 categories:
 - Java
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/05_welcome-Listener.html
 ---
 
 # Auf Ereignisse reagieren

@@ -1,5 +1,4 @@
 ---
-
 title: "Lokaler Minecraft-Server mit Scriptcraft"
 description: "In dieser Übung lernst du, einen Minecraft-Server mit Scriptcraft auf deinem Computer zu installieren."
 level: 1
@@ -7,6 +6,8 @@ weight: 1
 img: "scriptcraft.png"
 categories:
 - JavaScript
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/lokaler-minecraft-server.html
 ---
 
 # Installation eines Minecraft Servers mit Scriptcraft

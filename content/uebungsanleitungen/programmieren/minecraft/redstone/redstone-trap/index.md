@@ -3,6 +3,8 @@ title: "Eine einfache Falle mit Redstone"
 description: "In diesem Beispiel werden wir eine hinterhältige Falle bauen die Minecraft-Monster einfach zerquetscht. Dazu müssen wir die Creeper und/oder Zombies einfach in einen Gang locken."
 level: 2
 img: "trap.png"
+aliases:
+  - /trainingsanleitungen/minecraft/01_redstone-trap.html
 ---
 
 # Eine einfache Falle mit Redstone

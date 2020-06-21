@@ -3,6 +3,8 @@ title: "Installation eines Minecraft Servers"
 description: "In dieser Übung installieren wir einen Minecraft Server. Als Grundlage brauchst du dafür einen Computer, auf dem Linux installiert ist. Linux ist eine freie Software, die kostenlos im Internet zu haben ist."
 level: 2
 img: "server-verbinden.png"
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/minecraft-server.html
 ---
 
 

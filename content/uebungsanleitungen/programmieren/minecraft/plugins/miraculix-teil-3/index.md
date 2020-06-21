@@ -7,6 +7,8 @@ img: "miraculix-teil-3.jpg"
 imgposition: "bottom left"
 categories:
 - Java
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/06_getafix-MagicPotion.html
 ---
 
 # Miraculix der Druide - Teil 3

@@ -7,6 +7,8 @@ img: "miraculix-teil-2.jpg"
 imgposition: "top left"
 categories:
 - Java
+aliases:
+  - /trainingsanleitungen/minecraft-plugins/04_getafix-Arguments.html
 ---
 
 # Miraculix der Druide – Teil 2
