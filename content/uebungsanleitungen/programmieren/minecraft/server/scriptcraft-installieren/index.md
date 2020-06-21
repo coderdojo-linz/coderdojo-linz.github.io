@@ -40,10 +40,10 @@ In `docker images` müsste jetzt das neue Image `spigotmc` zu sehen sein.
 
 ## Images für Spielszenarien
 
-Aufbauend auf dem Basisimage können jetzt individuelle Images für verschiedene Spielszenarien erstellt werden. Für diese Anleitung haben wir ein [Dockerfile für eine komplett flache Welt](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker/flat-and-empty-world/Dockerfile) erstellt. Hier ein paar Hinweise dazu:
+Aufbauend auf dem Basisimage können jetzt individuelle Images für verschiedene Spielszenarien erstellt werden. Für diese Anleitung haben wir ein [Dockerfile für eine komplett flache Welt](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/uebungsanleitungen/programmieren/minecraft/plugins/07_spigot_scriptcraft_docker/flat-and-empty-world/Dockerfile) erstellt. Hier ein paar Hinweise dazu:
 
-* Das Dockerfile kopiert eine [server.properties](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker/flat-and-empty-world/server.properties)-Datei. Sie kann an die jeweiligen Bedürfnisse des Spielszenarios angepasst werden. Mehr zu *server.properties* findet man [im Minecraft Wiki](http://minecraft-de.gamepedia.com/Server.properties).
-* Das Dockerfile kopiert eine [ops.json](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/minecraft-plugins/07_spigot_scriptcraft_docker/flat-and-empty-world/server.properties)-Datei. Man kann in ihr Benutzer speichern, die von Haus aus *Operators* sein sollen. Mehr dazu findet man [im  Minecraft Wiki](http://minecraft-de.gamepedia.com/Server.properties#ops.json).
+* Das Dockerfile kopiert eine [server.properties](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/uebungsanleitungen/programmieren/minecraft/plugins/07_spigot_scriptcraft_docker/flat-and-empty-world/server.properties)-Datei. Sie kann an die jeweiligen Bedürfnisse des Spielszenarios angepasst werden. Mehr zu *server.properties* findet man [im Minecraft Wiki](http://minecraft-de.gamepedia.com/Server.properties).
+* Das Dockerfile kopiert eine [ops.json](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/uebungsanleitungen/programmieren/minecraft/plugins/07_spigot_scriptcraft_docker/flat-and-empty-world/server.properties)-Datei. Man kann in ihr Benutzer speichern, die von Haus aus *Operators* sein sollen. Mehr dazu findet man [im  Minecraft Wiki](http://minecraft-de.gamepedia.com/Server.properties#ops.json).
 
 Ein Dockerfile für ein Spielsenario kann lokal wie folgt in ein Docker Image gebaut und gestartet werden:
 

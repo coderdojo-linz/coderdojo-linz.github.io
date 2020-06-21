@@ -3,7 +3,7 @@ title: "NetBeans Projektsetup"
 description: "Eine Kurzanleitung für das Anlegen eines neuen NetBeans Projekts"
 level: 1
 weight: 4
-img: "netbeans_structure.jpg"
+img: "netbeans-structure.jpg"
 categories:
 - Java
 ---

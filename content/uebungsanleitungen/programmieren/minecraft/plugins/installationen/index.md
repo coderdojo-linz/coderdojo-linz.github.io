@@ -12,6 +12,7 @@ categories:
 # Installationen
 
 ## Einleitung
+
 Damit du deine Plugins bequem testen kannst, ist es sinnvoll zuerst einen Minecraft-Server auf deinem eigenen Computer zu installieren.
 
 Damit dein Computer ein Minecraft-Server wird, musst du eine bestimmte Software installieren, nämlich den "Minecraft-Server". Das klingt jetzt ein wenig seltsam. Das kommt daher, dass wir Informatiker das Wort "Server" manchmal für einen ganzen Computer benutzen (z. B. "Der Web-Server ist heute wieder mal superschnell"). Aber manchmal verwenden wir das Wort "Server" auch nur für ein Programm, die Server-Software, die einen Computer zu einem Server macht.
@@ -22,9 +23,11 @@ Zum Testen brauchst du weiters natürlich einen Minecraft-Client und einen gült
 
 
 ## Installation Java
+
 Minecraft ist ein Java-Programm. Um Java-Programme laufen lassen zu können, musst du die Java Virtual Machine (JVM) auf deinem Computer installiert haben. Damit sich die ganze Installiererei auszahlt, ist auch noch NetBeans (das Programm, mit dem wir dann Java Programme schreiben werden) ein Java-Programm.
 
 ### Ist bei mir Java installiert?
+
 Bevor wir beginnen, wollen wir nachsehen, ob eventuell Java bereits auf deinem Rechner installiert ist. Dazu öffnest du unter Windows die Eingabeaufforderung oder am Mac das Terminal. Dann tippst du folgendes ein:
 
 ```shell
@@ -85,9 +88,9 @@ Gratuliere, damit haben wir bereits den Großteil unserer Vorbereitungsarbeiten 
 * Eine IDE ist eine Integrierte Entwicklungsumgebung (**I**ntegrated **D**evelopment **E**nvironment). Damit kann man sehr bequem Programme entwickeln. Bekannte Exemplare dieser Gattung sind Visual Studio, Netbeans, Eclipse, XCode, IntelliJ usw.
 
 ## <a name="craftbukkit"></a>Installation Craftbukkit Server-Software
-Es gibt eine Reihe von verschiedenen Servern, die wir installieren können. Die Originalfirma (Mojang) bietet zum Beispiel den Vanilla-Server an. Der hat aber den Nachteil, dass er keine Plugin-Schnittstelle zur Verfügung stellt. Die bekannteste Server-Software mit der man auch Plugins erstellen kann, ist Bukkit, welche wir auch verwenden werden. Du kannst im Internet nach der Server-Software suchen oder einfach auf die Coderdojo Website gehen und die Datei [``craftbukkit.jar``](http://coderdojo-linz.github.io/trainingsanleitungen/minecraft-plugins/craftbukkit.jar) auf deinen Computer herunterladen.
+Es gibt eine Reihe von verschiedenen Servern, die wir installieren können. Die Originalfirma (Mojang) bietet zum Beispiel den Vanilla-Server an. Der hat aber den Nachteil, dass er keine Plugin-Schnittstelle zur Verfügung stellt. Die bekannteste Server-Software mit der man auch Plugins erstellen kann, ist Bukkit, welche wir auch verwenden werden. Du kannst im Internet nach der Server-Software suchen oder einfach auf die Coderdojo Website gehen und die Datei [``craftbukkit.jar``](/uebungsanleitungen/programmieren/minecraft/plugins/craftbukkit.jar) auf deinen Computer herunterladen.
 
-Dieses [``craftbukkit.jar``](http://coderdojo-linz.github.io/trainingsanleitungen/minecraft-plugins/craftbukkit.jar) ist unsere Server-Software, die wir jetzt starten müssen. Damit wir das in gewohnter Weise mit einem Doppelklick machen können, müssen wir noch eine kleine Vorkehrung treffen. Diese unterscheidet sich wieder leicht zwischen Windows und MacOS:
+Dieses [``craftbukkit.jar``](/uebungsanleitungen/programmieren/minecraft/plugins/craftbukkit.jar) ist unsere Server-Software, die wir jetzt starten müssen. Damit wir das in gewohnter Weise mit einem Doppelklick machen können, müssen wir noch eine kleine Vorkehrung treffen. Diese unterscheidet sich wieder leicht zwischen Windows und MacOS:
 
 ### Windows
 Erstelle als erstes einen neuen Ordner mit Namen ``bukkitServer`` und bewege ``craftbukkit.jar`` da hinein. Dann starte deinen Lieblings-Texteditor (bitte nicht Word, sonder Notepad oder besser Notepad++) und tippe folgende Zeilen ab:

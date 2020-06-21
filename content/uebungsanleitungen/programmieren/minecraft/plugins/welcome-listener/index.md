@@ -1,18 +1,17 @@
 ---
-
-title: Welcome Listener
-description: In dieser Episode wirst du erste Listener programmieren 
+title: "Auf Ereignisse reagieren"
+description: "In dieser Episode wirst du erste Listener programmieren."
+level: 2
+weight: 8
+img: "welcome-listener.jpg"
+imgposition: "bottom left"
+categories:
+- Java
 ---
 
 # Auf Ereignisse reagieren
 
-Inhalt:
-
-* [Einleitung](#intro)
-* [Ausführliche Anleitung](#long)
-* [Kurzversion für Profis](#short)
-
-## <a name="intro"></a>Einleitung
+## Einleitung
 
 Bisher haben wir in unseren Plugins immer etwas gemacht, sobald vom Spieler oder auch in der Konsole ein Kommando eingegeben wurde. Das ist ja schon ganz schön, aber manchmal ist es auch notwendig, dass wir auf Ereignisse reagieren. Ein Ereignis ist, wenn irgendetwas im Spiel passiert aber eben kein Kommando eingegeben wurde. Beispiel sind
 
@@ -25,22 +24,24 @@ Bisher haben wir in unseren Plugins immer etwas gemacht, sobald vom Spieler oder
 
 Du kannst unter `org.bukkit.event.*` die Liste aller Events ansehen. Wir fangen nun mit einem einfachen Event an. Wenn ein neuer Spieler deinem Server beitritt wollen wir ihn freundlich begrüßen, wenn er ihn verlässt soll er freundlich verabschiedet werden. Im folgenden Screenshot siehst du die Extrabegrüßung, die dein Server dann darstellen wird.
 
-![How the command looks like](05_welcome-Listener/WelcomeMsg.png)
+{{< imgblock "img/WelcomeMsg.png" "How the command looks like" >}}{{< /imgblock >}}
 
 Außerdem werden wir, wenn die Spieler miteinander chatten, die Nachrichten der ops in einer speziellen Farbe darstellen. Da diese Listender sehr gut zum Thema Begrüßen passt, kannst du sie zu deinem ersten Plugin (das mit dem `/sayhello`) dazugeben oder auch ein neues Projekt beginnen, wie du willst.
 
-## <a name="long"></a>Ausführliche Anleitung
+## Ausführliche Anleitung
 
 ### Die Listener-Klasse
-Wenn du dein erstes Plugin nicht erweitern willst, dann musst du wieder ein neues Projekt erstellen, ein neues Package und darin eine neue Klasse (`com.bajupa.welcome.Welcome`). Die Kurzversion, wie du dein Projekt erstellst, findest du auch [hier](/trainingsanleitungen/minecraft-plugins/netbeans_cheatsheet.html). Gut, jetzt sind wir bereit, unseren ersten Listener einzubauen.
+Wenn du dein erstes Plugin nicht erweitern willst, dann musst du wieder ein neues Projekt erstellen, ein neues Package und darin eine neue Klasse (`com.bajupa.welcome.Welcome`). Die Kurzversion, wie du dein Projekt erstellst, findest du auch [hier](/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html). Gut, jetzt sind wir bereit, unseren ersten Listener einzubauen.
 
 Ein wichtiger Punkt beim Programmieren ist Ordnung zu halten. Das heißt, dass wir unser Programm so ordnen, dass nur zusammengehörige Dinge in einer Klasse sind.  Daher legen wir für den Listener eine neue Klasse an. Das kannst du ja schon gut. Ich schlage vor, dass wir die neue Klasse `JoinAndLeaveListener` nenne, weil wir da auf die beiden Events, wenn ein Spieler unserem Server beitritt und wenn ein Spieler unseren Server verlässt, reagieren wollen.
 
 So ähnlich wie bei der Plugin-Klasse, welche eine Erweiterung von `JavaPlugin` ist, müssen wir einen Listener auch von einer *Basisklasse* ableiten. Das sieht dann folgendermaßen aus
 
-    public class JoinAndLeaveListener implements Listener {
-    
-    }
+```java
+public class JoinAndLeaveListener implements Listener {
+
+}
+```
 
 Wenn du genau hinsiehst, merkst du, dass hier statt `extends` das Wörtchen `implements` steht. Sehr grob 
 
@@ -48,7 +49,7 @@ In Listener-Klassen kannst du nun einen oder mehrere sog. *EventHandler* reinsch
 
 Also wollen wir unseren ersten EventHandler implementieren. Leider haben wir hier keine so tolle Unterstützung von NetBeans, dass wir einfach **Source** und **Insert Code ...** auswählen könne. Diesmal müssen wir das ganze selber machen.
 
-<pre>
+```java
 public class JoinAndLeaveListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
@@ -56,7 +57,7 @@ public class JoinAndLeaveListener implements Listener {
         player.sendMessage("Dear " + player.getName() + ", welcome to our server!");
     }
 }
-</pre>
+```
 
 Als erstes fällt auf, dass vor der Methode die *Annotation* `@EventHandler` steht. Das ist das "Erkennungsmerkmal", dass diese Methode im Falle eines Ereignisses aufgerufen wird. Anschließend kommt die Methode, welche mit `public void` beginnt. `void` heißt, dass Event Handler keinen Wert zurückgeben (vergleiche das mit dem `boolean`, der von der Methode `onCommand` zurückgegeben wird). Daran anschließend kommt der Name der Methode. Bei einem Event Handler kannst du dir den Namen (ähnlich wie bei Variablen und Parameter) aussuchen.
 
@@ -71,11 +72,11 @@ Anders als bei der Methode `onCommand`, die es nur einmal pro Plugin gibt, kann 
 
 Besser ist es, wenn das automatisch geht und dafür werden wir in der Plugin-Klasse eine neue Methode einführen. Dazu holst du dir als erstes im Editor die Klasse Welcome (oder wie auch immer deine Plugin-Klasse heißt) in den Vordergrund, dann setzt du den Cursor in die Klasse und wählst wieder **Source** und dann **Insert Code...**. Genauso wie bei `onCommand` wählen wir jetzt den Punkt **Override Method...** aus. Das darauffolgenden Fenster sieht dann so aus:
 
-![Select onEnable](05_welcome-Listener/InsertOnEnable.png)
+{{< imgblock "img/InsertOnEnable.png" "Select onEnable" >}}{{< /imgblock >}}
 
 Wie in der Abbildung vorgegeben, wählst du **onEnable()** aus und drückst auf **Generate**. Damit sollte deine Klasse ca. so aussehen:
 
-<pre>
+```java
 public class Welcome extends JavaPlugin {
 
     @Override
@@ -88,23 +89,22 @@ public class Welcome extends JavaPlugin {
         sender.sendMessage("Hello " + sender.getName());
         return true;
     }
-    
 }
-</pre>
+```
 
 `onCommand` muss in deiner Klasse nicht da sein, je nachdem, ob du für diese Episode ein neues Projekt angefangen hast oder nicht. Die Methode `onEnable` eines Plugins wird dann aufgerufen, wenn das Plugin geladen wird. Das ist meist nach dem (Neu-)Starten des Servers oder nachdem auf der Konsole das Kommando `reload` eingegeben wurde. Damit ist das der ideale Platz um unseren Listener zu registrieren. Bevor du deinen Code reinschreibst, löscht du am besten den Template-Code mit `super.onEnable(); ...` damit da ordentlich Platz ist.
 
 Der Listener muss beim Server registriert werden und der bequeme Server delegiert das ganze gleich noch an den sog. `PluginManager`, aber alles der Reihe nach. Um auf den Server zuzugreifen, rufst du die Methode `getServer` auf (die gibts praktischerweise direkt im Plugin), dann rufst du vom Server die Methode `getPluginManager` auf und der wiederum hat die Methode `registerEvents`. Du kannst die Aufruffolge im nächsten Bild ansehen.
 
-![Select onEnable](05_welcome-Listener/SelectRegisterEvents.png)
+{{< imgblock "img/SelectRegisterEvents.png" "Select onEnable" >}}{{< /imgblock >}}
 
 Du siehst, dass diese Methode zwei Parameter verlangt, nämlich einen Listener (was wir ja erwartet haben) und aber auch ein Plugin, dem dieser Listener zuzuordnen ist. Also los gehts: Den Listener haben wir ja gerade programmiert, den müssen wir nur noch erzeugen (das passiert mit dem Wörtchen `new`) und das Plugin, das gibt es ja bereits (in dieser Klasse befinden wir uns gerade) und wir müssen nur darauf verweisen (das passiert mit dem Wörtchen `this`). Zum Schluss sollte deine Methode genau so aussehen:
 
-<pre>
+```java
 public void onEnable() {
     getServer().getPluginManager().registerEvents(new JoinAndLeaveListener(), this);
 }
-</pre>
+```
 
 ### Auch eine schöne Verabschiedung
 Damit wir das mit den Event Handlern gleich ein wenig üben, schlage ich vor, dass wir noch einen zweiten Handler zur Verabschiedung, also wenn ein Spieler den Server verlässt, hinzufügen. Der Event heißt `PlayerQuitEvent`. Damit sollte aber genug gesagt sein und den Rest solltest du schon ganz allein hinbekommen. Die Auflösung gibts in der nächsten Episode.
@@ -112,7 +112,7 @@ Damit wir das mit den Event Handlern gleich ein wenig üben, schlage ich vor, da
 ### Chat-Messages der ops hervorheben
 Wenn du die Verabschiedung auch schon fertig hast, probier doch noch folgendes: Wir wollen beim Chatten die ops besonders hervorheben, weil sie ja auch soooo superwichtig sind. Das heißt, dass Chat-Nachrichten normaler Spiele, wie üblich in der Farbe weiß dargestellt werden. Wenn aber ein op eine Nachricht sendet, soll diese in einer anderen Farbe (wie zum Beispiel im folgenden Screenshot) golden dargestellt werden.
 
-![Select onEnable](05_welcome-Listener/OpMessage.png)
+{{< imgblock "img/OpMessage.png" "Select onEnable" >}}{{< /imgblock >}}
 
 Natürlich bekommst du von mir noch ein paar sachdienliche Hinweise. Den Rest bekommst du dann sicherlich schon ganz gut alleine hin. Also, was brauchst du?
 
@@ -133,37 +133,38 @@ So, du hast nun einen großen Schritt gemacht und gelernt, wie du auf Ereignisse
 
 Wenn du aber eigene Ideen hast, probier sie aus, besprich sie mit deinen MentorInnen und bleib hartnäckig dran, dann wird's bestimmt etwas.
 
-## <a name="short"></a>Kurzversion für Profis
-1. Erstelle ein neues Projekt mit dem Namen ``ListenerPlugin``, eine Klasse mit dem Namen ``Welcome``, eine Klasse mit dem Namen ``JoinAndLeaveListener`` sowie das ``plugin.yml`` (siehe auch [hier](/trainingsanleitungen/minecraft-plugins/netbeans_cheatsheet.html)) 
+## Kurzversion für Profis
+
+1. Erstelle ein neues Projekt mit dem Namen ``ListenerPlugin``, eine Klasse mit dem Namen ``Welcome``, eine Klasse mit dem Namen ``JoinAndLeaveListener`` sowie das ``plugin.yml`` (siehe auch [hier](/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html)) 
 1. Implementiere die Klasse ``JoinAndLeaveListener``:
-	<pre>
-	public class JoinAndLeaveListener implements Listener {
-    
-		@EventHandler
-		public void onJoin(PlayerJoinEvent event) {
-				Player player = event.getPlayer();
-				player.sendMessage("Dear " + player.getName() + ", welcome to our server!");
-		}
-		
+```java
+public class JoinAndLeaveListener implements Listener {
+			
+	@EventHandler
+	public void onJoin(PlayerJoinEvent event) {
+			Player player = event.getPlayer();
+			player.sendMessage("Dear " + player.getName() + ", welcome to our server!");
 	}
-	</pre>
+	
+}
+```
 1. Registriere den Listener, indem du die Klasse ``Welcome`` implementierst:
-	<pre>
-	public class Welcome extends JavaPlugin {
+```java
+public class Welcome extends JavaPlugin {
 
-		@Override
-		public void onEnable() {
-			getServer().getPluginManager().registerEvents(new JoinAndLeaveListener(), this);
-		}
-
-		@Override
-		public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-			sender.sendMessage("Hello " + sender.getName());
-			return true;
-		}
-
+	@Override
+	public void onEnable() {
+		getServer().getPluginManager().registerEvents(new JoinAndLeaveListener(), this);
 	}
-	</pre>
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+		sender.sendMessage("Hello " + sender.getName());
+		return true;
+	}
+
+}
+```
 1. Füge einen weiteren ``EventHandler`` zur Klasse ``JoinAndLeaveListener``, und zwar einen ``PlayerQuitEvent`` mit einer dementsprechenden Nachricht.
 1. Füge eine weitere Klasse namens ``ChatListener`` dazu und stelle sicher, dass nach dem Klassennamen ``implements Listener`` steht.
 1. Füge die Methode ``onChatMessageIsSent`` hinzu, mit dem ``event`` Parameter vom Typ ``AsyncPlayerChatEvent``, und gib über die Methode die Annotation ``@EventHandler``.

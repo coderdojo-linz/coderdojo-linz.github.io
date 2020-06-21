@@ -1,7 +1,12 @@
 ---
-
-title: Einfaches Teleporter Plugin
-description: In dieser Anleitung machst du ein einfaches Teleport-Plugin mit IntelliJ IDEA. 
+title: "Einfaches Teleporter Plugin"
+description: "In dieser Anleitung machst du ein einfaches Teleport-Plugin mit IntelliJ IDEA. "
+level: 2
+weight: 10
+img: "teleporter.jpg"
+imgposition: "bottom left"
+categories:
+- Java
 ---
 
 # Minecraft Teleporter
@@ -17,11 +22,11 @@ hierfür die "Community Edition". Wenn das geschehen ist, bitte das Modul für M
 
 Dafür bitte unter "File" -> "Settings" die Einstellungen öffnen und danach "Plugins" klicken.
 
-![](09_teleporter/intellij_install_plugin1.PNG)
+{{< imgblock "img/intellij_install_plugin1.PNG" "" >}}{{< /imgblock >}}
 
 Danach könnt ihr mit "Browse repositories" und dem Suchfeld nach "Minecraft" suchen.
 
-![](09_teleporter/intellij_install_plugin2.PNG)
+{{< imgblock "img/intellij_install_plugin2.PNG" "" >}}{{< /imgblock >}}
 
 Ein Klick auf "Install" startet den Installationsvorgang (die Schaltfläche ist unter dem Titel und auf dem Bild leider nicht zu sehen).
 
@@ -30,28 +35,28 @@ Ein Klick auf "Install" startet den Installationsvorgang (die Schaltfläche ist 
 
 Im Menü "File" -> "New" könnt ihr nun ein neues Minecraft Projekt starten. 
 
-![](09_teleporter/newproject2.png)
+{{< imgblock "img/newproject2.png" "" >}}{{< /imgblock >}}
 
 Bitte hier den passenden Minecraft Server (Bukkit) anhaken und auf "Next" klicken.
 
-![](09_teleporter/newproject3.png)
+{{< imgblock "img/newproject3.png" "" >}}{{< /imgblock >}}
 
 Wir verwenden zum bauen des Plugins das "Gradle" - System. Die Werte für GroupId und ArtifactId sind momentan beliebig.
 Mit "Next" gehts weiter.
 
 Anschließend geben wir dem Plugin noch einen Namen und eine Beschreibung. Main Class Name ist der Name der Java-Klasse in die wir die Funktionen unseres
 Plugins coden werden.  
-![](09_teleporter/newproject4.png)
+{{< imgblock "img/newproject4.png" "" >}}{{< /imgblock >}}
 
 Danach erhält das Projekt noch einen Namen und wir legen fest, wo der Code gespeichert werden soll.
-![](09_teleporter/newproject5.png)
+{{< imgblock "img/newproject5.png" "" >}}{{< /imgblock >}}
 
 Mit einem kurzen Klick auf "Finish" wird unser Projekt angelegt. Bitte kurz Geduld. Der Vorgang kann schon mal 1-2 Minuten dauern.
 
 ## Erstes Command
 
 Wenn alle Schritte oben erfogreich waren, sollte euer Bildschirm nachher in etwa so aussehen:
-![](09_teleporter/coding1.png)
+{{< imgblock "img/coding1.png" "" >}}{{< /imgblock >}}
 
 Die wichtisten Dateien am Anfang sind 
 
@@ -59,25 +64,25 @@ Die wichtisten Dateien am Anfang sind
 2. **Teleporter.java** - Wird im IntellJ nur als "Teleporter" angezeigt. Sie enthält den Code für die Aktionen.
 
 Zuerst werden wir ein neues Kommando implementieren:
-![](09_teleporter/coding2.png)
+{{< imgblock "img/coding2.png" "" >}}{{< /imgblock >}}
 
 Damit wird festegelegt dass dieses Kommando von unserem Plugin behandelt wird. Nun müssen wir noch dafür sorgen, dass es auch behandelt wird:
 Dazu öffnen wir die Klasse Teleporter und fügen "onCommand" ein. (ein druck auf \<strng\> und die Leertaste machen das viel einfacher).
 
-![](09_teleporter/coding3.png)
+{{< imgblock "img/coding3.png" "" >}}{{< /imgblock >}}
 
 Danach sorgen wir dafür, dass auch etwas passiert, wenn jemand "/sayhello" in den Chat tippt.
 
-![](09_teleporter/coding4.png)
+{{< imgblock "img/coding4.png" "" >}}{{< /imgblock >}}
 
 das sieht dann in etwa so aus:
 
-![](09_teleporter/game1.png)
+{{< imgblock "img/game1.png" "" >}}{{< /imgblock >}}
 
 __Kleine hilfe am Rande:__  Damit ihr nicht jedes mal nach dem Bauen das Plugin in den Server hineinkopieren müsst, kann man mit folgendem kleinen
 Zusatz im _build.gradle_ das auch automatisch erledigen lassen.
 
-![](09_teleporter/gradle_deploy.PNG)
+{{< imgblock "img/gradle_deploy.PNG" "" >}}{{< /imgblock >}}
 
 ### Teleportieren
 
@@ -86,7 +91,7 @@ Um erfolgreich teleportiert werden zu können muss man vorher natürlich wissen 
 Deswegen werden wir vorher einen Kommando definieren, bei dem man einen Ort markiert, an den Steve sich teleportieren soll.
 
 __plugin.yml__
-```
+```shell
 name: Teleporter
 version: @version@
 main: at.coderdojo.teleporter.Teleporter

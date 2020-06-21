@@ -1,30 +1,31 @@
 ---
-
-title: Getafix Magic Potion
-description: In dieser Episode wirst du noch mehr über Events lernen und außerdem lernen, wie du eine Reihe von Dingen abspeicherst
+title: "Miraculix der Druide - Teil 3"
+description: "In dieser Episode wirst du noch mehr über Events lernen und außerdem lernen, wie du eine Reihe von Dingen abspeicherst."
+level: 2
+weight: 9
+img: "miraculix-teil-3.jpg"
+imgposition: "bottom left"
+categories:
+- Java
 ---
 
 # Miraculix der Druide - Teil 3
 
-Inhalt:
-
-* [Einleitung](#intro)
-* [Ausführliche Anleitung](#long)
-* [Kurzversion für Profis](#short)
-
-## <a name="intro"></a>Einleitung
+## Einleitung
 
 In der letzten Episode haben wir gelernt, wie man auf Events horchen und reagieren kann. Heute werden wir das anwenden indem wir unser Getafix-Plugin erweitern, sodass man Spielern einen Zaubertrank verabreichen kann.
 
-    /magicpotion WorkUser
+```shell
+/magicpotion WorkUser
+```
 
 Mit diesem Kommando (das natürlich wieder nur von ops verwendet werden darf) ist der Spieler *WorkUser* unbesiegbar, das heißt, er verliert keine Gesundheit mehr. Natürlich soll der Sender des Kommandos eine Rückmeldung bekommen, dass er den Spieler erfolgreich Zaubertrank verabreicht hat und auch der Spieler, der den Trank bekommen hat soll eine Information bekommen.
 
 Außerdem werden wir noch ein Kommando `/listpotiondrinkers` implementieren, in welchem ops alle Spieler auflisten können, welche bereits einen Zaubertrank bekommen haben:
 
-![How the command looks like](06_getafix-MagicPotion/ListPotionDrinkers.png)
+{{< imgblock "img/ListPotionDrinkers.png" "How the command looks like" >}}{{< /imgblock >}}
 
-## <a name="long"></a>Ausführliche Anleitung
+## Ausführliche Anleitung
 
 Wir werden uns, wie bisher auch, schön langsam an das Thema herantasten. Der Fahrplan für diese Unit ist daher so:
 
@@ -47,20 +48,22 @@ Durch unsere Experimente haben wir gesehen, dass der Handler immer aufgerufen wi
 
 Also, wie finden wir heraus, ob der aktuelle Damage-Event sich gerade auf einen Spieler bezieht oder nicht. Als Profi wirst du schon ahnen, dass das irgendwo in unserer Rohrpost, also dem event-Objekt gespeichert ist. Die Methode `getEntityType` liefert dir den Wert zurück, der dir sagt, was gerade beschädigt wurde. Wenn du in der Methode `onPlayerDamage` einmal
 
-    EntityType.
+```java
+EntityType.
+```
 
 eintippst (notfalls wieder mit `Ctrl` + `Space` nachhelfen), dann siehst du, wieviele verschiedene Dinge (Entities) beschädigt werden können. Und wenn du dann bis zum Buchstaben P hinunterscrollst, siehst du auch den `PLAYER`.
 
 Wir handeln jetzt im Beamten-Modus: Wenns uns nix angeht, lass ma gleich die Finger davon. Also: Wenn das betroffene Entity kein `PLAYER` ist, dann verlassen wir die Methode sofort. Auf Gut-Java:
 
-<pre>
+{{< highlight java "hl_lines=2-4" >}}
 public void onDamageEvent(EntityDamageEvent event) {
-    <b>if (event.getEntityType() != EntityType.PLAYER) {
+    if (event.getEntityType() != EntityType.PLAYER) {
             return;
-    }</b>
+    }
     Bukkit.getLogger().info("Outch, someone got damaged");
 }
-</pre>
+{{< /highlight >}}
 
 Das probieren wir jetzt gleich wieder aus. Also bauen und testen. Du solltest jetzt sehen, dass die Meldung nur mehr ausgegeben wird, wenn ein Spieler zu Schaden kommt.
 
@@ -78,27 +81,30 @@ Da müssen wir uns schnell an eine Sache aus der letzten Episode erinnern. Zieml
 Das heißt, dass dein Listener immer **vor** dem eigentlichen Event aufgerufen wird. Das heißt auch, dass du **bevor** der Damage wirklich passiert, deinem Spieler die maximale Gesundheit zukommen lässt. Wenn jetzt ein wirklich schlimmer Schaden passiert, wie z. B. der Fall aus ein er großen Höhe, dann nutzt das alles nix, weil der Spieler dann mehr als 20 Punkte Gesundheit verliert.
 
 Also brauchen wir eine andere Strategie, und die ist, dass wir das Event einfach abbrechen. Ja das geht. Wir können dem Server also sagen, dass er das Event nicht ausführen soll und das geht mit der Methode `setCancelled` des Event-Objekts. Wenn wir `setCancelled` mit `true` aufrufen, dann bekommen zwar alle Plugins das Event noch zugesandt aber der Server selbst führt es nicht mehr aus. Das ganze sieht dann so aus:
-<pre>
+
+{{< highlight java "hl_lines=5,st_lines=6" >}}
 public void onDamageEvent(EntityDamageEvent event) {
     if (event.getEntityType() != EntityType.PLAYER) {
             return;
     }
-    <b>event.setCancelled(true)</b>
-    <span style="text-decoration: line-through; font-weight: bold">Bukkit.getLogger().info("Outch, something got damaged");</span>
+    event.setCancelled(true)
+    // remove line: Bukkit.getLogger().info("Outch, something got damaged");
 }
-</pre>
-Der durchgestrichene Text soll heißen, dass du diese Zeile in deine Code einfach löschen kannst. Probiere dein Plugin jetzt aus. Jetzt sollten alle Spieler auf deinem Server unverwundbar sein.
+{{< /highlight >}}
+
+Der auskommentierte Text `// remove line: ...` soll heißen, dass du diese Zeile in deine Code einfach löschen kannst. Probiere dein Plugin jetzt aus. Jetzt sollten alle Spieler auf deinem Server unverwundbar sein.
 
 Natürlich muss dein ``plugin.yml`` vorhanden sein und der ``DamageListener`` muss im Plugin in der Methode ``onEnable()`` registiert sein.
-<pre>
+
+```java
 @Override
 public void onEnable() {
 	getServer().getPluginManager().registerEvents(new DamageListener(), this);
 }
-</pre>
-
+```
 
 ### Spieler speichern
+
 Jetzt können wir den Event des Damage abfangen. Das passiert aber immer und für alle Spieler. Natürlich willst du, dass nur die Spieler, welche den Zaubertrank bekommen haben, unverwundbar sind. Und das gehen wir jetzt an.
 
 * Einführung von PotionPot
@@ -107,7 +113,8 @@ Jetzt können wir den Event des Damage abfangen. Das passiert aber immer und fü
 Die Spieler werden in einem ``TreeSet`` gespeichert. Dazu fügst du in der Hauptklasse, in der du auch die Kommandos abfragst, eine Variable ``potionDrinkers`` ein, in der die Spielernamen gespeichert werden. Außerdem muss der ``DamageListener`` Zugriff auf das Plugin bekommen, um überprüfen zu können, ob der Spieler unverwundbar ist.
 
 Das sieht dann so aus:
-<pre>
+
+```java
 public class GetafixPlugin extends JavaPlugin {
 
    private TreeSet&lt;String&gt; potionDrinkers = new TreeSet&lt;String&gt;(); 
@@ -134,10 +141,11 @@ public class GetafixPlugin extends JavaPlugin {
     }
 	
 }
-</pre>
+```
 
 Der ``DamageListener`` sieht dann so aus:
-<pre>
+
+```java
 public class DamageListener implements Listener {
     
     private GetafixPlugin plugin;
@@ -158,14 +166,14 @@ public class DamageListener implements Listener {
     }
 
 }
-</pre>
-
+```
 
 ### Die Liste der Leute, die Zaubertrank getrunken haben
+
 Alles was du jetzt machen musst, ist ein weiteres Kommando in der ``plugin.yml`` Datei hinzufügen, dieses Kommando in der ``onCommand()`` Methode abfragen, und die Liste der Potion Drinkers ausgeben.
 
 ``plugin.yml``
-<pre>
+```shell
 ## YAML Template.
 ---
 name: Getafix
@@ -186,10 +194,10 @@ commands:
     listpotiondrinkers:
         description: Lists all current potion holders.
         usage: /listpotiondrinkers 
-</pre>
+```
 
 ``GetafixPlugin.java``
-<pre>
+```java
 public class GetafixPlugin extends JavaPlugin {
 
     private TreeSet&lt;String&gt; potionDrinkers = new TreeSet&lt;String&gt;();
@@ -221,23 +229,23 @@ public class GetafixPlugin extends JavaPlugin {
         return sb.toString();
     }
 }
-</pre>
+```
 
 
-## <a name="short"></a>Kurzversion für Profis
-1. Entweder verwendest du dein altes Projekt ``GetafixPlugin``, oder du erstellst ein neues Projekt (siehe auch [hier](/trainingsanleitungen/minecraft-plugins/netbeans_cheatsheet.html)) 
+## Kurzversion für Profis
+1. Entweder verwendest du dein altes Projekt ``GetafixPlugin``, oder du erstellst ein neues Projekt (siehe auch [hier](/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html)) 
 1. Füge eine neue Klasse namens ``DamageListener`` und  stelle sicher, dass nach dem Klassennamen ``implements Listener`` steht.
 1. Füge eine Methode ``onDamageEvent`` mit der Annotation ``@EventHandler`` hinzu, mit dem ``event`` Parameter vom Typ ``EntityDamageEvent``.
-	<pre>
-	@EventHandler
-	public void onDamageEvent(EntityDamageEvent event) {
-		if (event.getEntityType() != EntityType.PLAYER) {
-				return;
-		}
-		Bukkit.getLogger().info("Outch, someone got damaged");
-		event.setCancelled(true);
-	}
-	</pre>
+```java
+@EventHandler
+public void onDamageEvent(EntityDamageEvent event) {
+    if (event.getEntityType() != EntityType.PLAYER) {
+            return;
+    }
+    Bukkit.getLogger().info("Outch, someone got damaged");
+    event.setCancelled(true);
+}
+```
 1. Speichere die Spieler - siehe oben. 
 1. Liste alle Spieler, die Zaubertränke getrunken haben - siehe oben.
 1. Baue das Paket: In Icon Leiste auf den Hammer **Build Project (F11)** klicken
@@ -246,5 +254,5 @@ public class GetafixPlugin extends JavaPlugin {
 1. Teste das Plugin: wenn du den Server betrittst bzw. verlässt, sollen deine Nachrichten angezeigt werden. Wenn du eine Nachricht als Operator schickst, soll diese golden angezeigt werden.
 
 
-## <a name="ideas"></a>Ideen für weitere Entwicklungen
+## Ideen für weitere Entwicklungen
 1. Der Zaubertrank soll natürlich nicht unendlich lange wirken. Wie kannst du die Dauer des Zaubertranks einschränken?
