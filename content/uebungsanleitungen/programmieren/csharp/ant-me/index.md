@@ -1,6 +1,7 @@
 ---
 title: C# Kennenlernen
 description: Lerne C# kennen, indem du damit eine Ameise in einem Spiel steuerst 
+level: 1
 aliases:
   - /trainingsanleitungen/csharp/ant-me.html
 ---

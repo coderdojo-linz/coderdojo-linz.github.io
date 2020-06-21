@@ -20,6 +20,6 @@
         <p>{{ .Inner | markdownify }}</p>
     </div>
     <div class="col-12 col-md-{{ $cols }}">
-    <img src="{{ $imgUrl }}" alt="(.Get 1)" class="mx-xl-auto" style="margin-left: auto; margin-right: 0; display: block; width: {{ $width }}" />
+    <img src="{{ $imgUrl }}" alt="(.Get 1)" class="mx-auto {{cond (ne $cols 12) "ml-md-auto mr-md-0" ""}}" style="display: block; width: {{ $width }}" />
     </div>
 </div>

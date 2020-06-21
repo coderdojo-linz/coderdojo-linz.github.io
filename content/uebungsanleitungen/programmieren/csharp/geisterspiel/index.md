@@ -1,11 +1,12 @@
 ---
 title: Geisterspiel in C# 
 description: Einfache Console-Anwendung in C# 
+level: 1
 aliases:
   - /trainingsanleitungen/csharp/geisterspiel.html
 ---
 
-# Geisterspiel - C#
+# Geisterspiel
 
 In dieser Übung erstellen wir ein erstes, einfaches Konsolenspiel mit C# (C-Sharp). Das Spiel wird
 textuell gesteuert d.h Ein/-Ausgaben werden auf einer Konsole zu lesen/schreiben sein.

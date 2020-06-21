@@ -1,6 +1,7 @@
 ---
 title: Türme von Hanoi
 description: Knoble eine Lösung für das Problem der Türme von Hanoi aus
+level: 2
 aliases:
 - /trainingsanleitungen/csharp/towers-of-hanoi.html
 ---
@@ -19,7 +20,7 @@ Die *Türme von Hanoi* sind ein klassisches Übungsbeispiel für Programmierer. 
 
 Das folgende Bild, das von [Wikipedia](https://de.wikipedia.org/wiki/T%C3%BCrme_von_Hanoi#/media/File:Tower_of_Hanoi_4.gif) übernommen wurde, veranschaulicht das Prinzip: 
 
-![Türme von Hanoi](https://upload.wikimedia.org/wikipedia/commons/6/60/Tower_of_Hanoi_4.gif)<br/>
+![Türme von Hanoi](https://upload.wikimedia.org/wikipedia/commons/6/60/Tower_of_Hanoi_4.gif)
 
 ## Ziel der Übung
 

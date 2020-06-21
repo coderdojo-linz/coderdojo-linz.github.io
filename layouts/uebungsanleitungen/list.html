@@ -27,7 +27,7 @@
         </div>
         {{ end }}
 
-        <div class="row row-cols-1 row-cols-md-3 category-cards">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 category-cards">
             {{ range ((.Pages.ByParam "Title").ByWeight).ByParam "Level" }}
 
             {{ $link := .Permalink}}
