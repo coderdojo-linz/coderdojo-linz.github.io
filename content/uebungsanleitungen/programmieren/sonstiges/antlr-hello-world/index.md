@@ -1,6 +1,6 @@
 ---
 title: "ANTLR Hello World"
-description: "..."
+description: "Lerne an einem einfachen Beispiel, wie man mit ANTLR eine eigene 'Programmiersprache' baut."
 level: 3
 ---
 
