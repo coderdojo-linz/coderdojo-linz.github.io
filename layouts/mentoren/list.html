@@ -33,7 +33,7 @@
     </div>
 </section>
 
-<section id="mentors-call-to-action" class="dark">
+<section id="mentors-call-to-action" class="secondary">
     <div class="container">
         <div class="row">
             <div class="col"> {{ .Content | safeHTML}} </div>
@@ -41,6 +41,6 @@
     </div>
 </section> 
 
-{{ partial "contact.html" (dict "context" . "title" "Schnuppertermin" "text" "Schreib uns, wann du zum Schnuppern vorbeikommen willst.") }}
+{{ partial "contact.html" (dict "context" . "title" "Kontakt" "text" "Willst du zu einem der nächsten Termine vorbeikommen? Oder hast du andere Fragen?" "type" "CoderDojo Mentoren Anfrage") }}
 
 {{ end }}

@@ -5,10 +5,10 @@ function updateNavbarScrollState() {
 
     if (scroll > 50) {
         //console.log('a');
-        $(".navbar,.breadcrumb-container").addClass("navbar-scroll");
+        $('.navbar,.breadcrumb-container').addClass('navbar-scroll');
     } else {
         //console.log('a');
-        $(".navbar,.breadcrumb-container").removeClass("navbar-scroll");
+        $('.navbar,.breadcrumb-container').removeClass('navbar-scroll');
     }
 }
 
@@ -20,9 +20,24 @@ function scrollDown() {
     });
 }
 
-function sendContactForm() {
+function sendContactForm(type) {
+    $('#contact-success').hide();
+    $('#contact-error').hide();
+
     var form = document.getElementById('contact-form');
     form.classList.add('was-validated');
+    if (form.checkValidity() === true) {
+
+        $.ajax({
+            type: 'POST',
+            url: 'https://prod-168.westeurope.logic.azure.com/workflows/2dd6d3e5e6704ed1afa801d769e4708b/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=r26oUrw9V_-PToMEcu1HhY7w7-LQxyvK5H0M9U8knLc',
+            data: { email: $('#contact-email').val(), text: type + '\n\n' + $('#contact-text').val() }
+        }).done(function() {
+            $('#contact-success').show();
+        }).fail(function() {
+            $('#contact-error').show();
+        });
+    }
 }
 
 function selectCategory(category) {
@@ -36,101 +51,103 @@ function selectCategory(category) {
 }
 
 function loadEventsOverview(eventsTable) {
-    $.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function (data) {
+    $.get('https://participants-management-service.azurewebsites.net/api/events/?past=false', function (data) {
         var converter = new showdown.Converter();
 
         data.slice(0, 3).forEach(function (event) {
-            var row = "";
-            var date = moment(new Date(event.date)).startOf("day");
-            var formattedDate = date.format("DD.MM.YYYY");
+            var row = '';
+            var date = moment(new Date(event.date)).startOf('day');
+            var formattedDate = date.format('DD.MM.YYYY');
             var description = converter.makeHtml(event.location);
-            if (event.type == "CoderDojo Virtual") {
-                description = "Online Event";
+            if (event.type == 'CoderDojo Virtual') {
+                description = 'Online Event';
             }
 
-            row += "<tr>";
-            row += "<td>";
-            row += "<span class=\"badge badge-primary badge-pill event-type event-type-" + event.type.toLowerCase().replace(' ', '-') + "\">" + event.type + "</span>";
-            row += "<span class=\"d-block d-sm-none\">" + formattedDate + "</span>";
-            row += "</td>";
+            row += '<tr>';
+            row += '<td>';
+            row += '<span class=\'badge badge-primary badge-pill event-type event-type-' + event.type.toLowerCase().replace(' ', '-') + '\'>' + event.type + '</span>';
+            row += '<span class=\'d-block d-sm-none\'>' + formattedDate + '</span>';
+            row += '</td>';
 
-            row += "<td class=\"d-none d-sm-table-cell\">" + formattedDate + "</td>";
-            row += "<td class=\"d-none d-sm-table-cell\">" + description + "</td>";
+            row += '<td class=\'d-none d-sm-table-cell\'>' + formattedDate + '</td>';
+            row += '<td class=\'d-none d-sm-table-cell\'>' + description + '</td>';
 
-            row += "</tr>";
+            row += '</tr>';
             eventsTable.append(row);
         });
 
-        $(".loadingText").hide();
+        $('.loadingText').hide();
     });
 }
 
 function loadEvents(eventsTable) {
-    $.get("https://participants-management-service.azurewebsites.net/api/events/?past=false", function (data) {
+    $.get('https://participants-management-service.azurewebsites.net/api/events/?past=false', function (data) {
         var converter = new showdown.Converter();
 
         data.forEach(function (event) {
-            var row = "";
+            var row = '';
 
-            var date = moment(new Date(event.date)).startOf("day");
-            var formattedDate = date.format("DD.MM.YYYY");
+            var date = moment(new Date(event.date)).startOf('day');
+            var formattedDate = date.format('DD.MM.YYYY');
 
-            row += "<tr>";
+            row += '<tr>';
 
             // event time
-            row += "<td class=\"text-nowrap text-center d-none d-sm-table-cell\">";
-            row += "<a id=\"" + formattedDate + "\"></a>";
-            row += "<div class=\"event-time\"><span class=\"badge badge-primary badge-pill event-type event-type-" + event.type.toLowerCase().replace(' ', '-') + "\">" + event.type + "</span><br />" + formattedDate + "<br />14:45 - 19:00</div>";
-            row += "</td>";
+            row += '<td class=\'text-nowrap text-center d-none d-sm-table-cell\'>';
+            row += '<a id=\'' + formattedDate + '\'></a>';
+            row += '<div class=\'event-time\'><span class=\'badge badge-primary badge-pill event-type event-type-' + event.type.toLowerCase().replace(' ', '-') + '\'>' + event.type + '</span><br />' + formattedDate + '<br />14:45 - 19:00</div>';
+            row += '</td>';
 
             // event time xs
-            row += "<td class=\"event\">";
-            row += "<div class=\"d-block d-sm-none event-time event-time-xs\">";
-            row += "<span class=\"badge badge-primary badge-pill event-type event-type-" + event.type.toLowerCase().replace(' ', '-') + "\">" + event.type + "</span><br/><b>" + formattedDate + " 14:45 - 19:00</b>";
-            row += "</div>";
+            row += '<td class=\'event\'>';
+            row += '<div class=\'d-block d-sm-none event-time event-time-xs\'>';
+            row += '<span class=\'badge badge-primary badge-pill event-type event-type-' + event.type.toLowerCase().replace(' ', '-') + '\'>' + event.type + '</span><br/><b>' + formattedDate + ' 14:45 - 19:00</b>';
+            row += '</div>';
 
             // workshops
             if (event.workshops && event.workshops.length) {
                 event.workshops.forEach(workshop => {
-                    row += "<div class=\"workshop\">";
-                    row += "<h3><small><span class=\"d-inline d-sm-none\">" + moment(workshop.begintime).format("DD.MM.YYYY") + "</span> " + moment(workshop.begintime).format("HH:mm") + " - " + moment(workshop.endtime).format("HH:mm") + "</small><br/>" + workshop.title + "</h3>";
+                    row += '<div class=\'workshop\'>';
+                    row += '<h3><small><span class=\'d-inline d-sm-none\'>' + moment(workshop.begintime).format('DD.MM.YYYY') + '</span> ' + moment(workshop.begintime).format('HH:mm') + ' - ' + moment(workshop.endtime).format('HH:mm') + '</small><br/>' + workshop.title + '</h3>';
 
                     if (workshop.targetAudience) {
-                        row += "<p><strong>Für wen:</strong> " + converter.makeHtml(workshop.targetAudience) + "</p>";
+                        row += '<p><strong>Für wen:</strong> ' + converter.makeHtml(workshop.targetAudience) + '</p>';
                     }
 
-                    row += "<p><strong>Programm</strong></p>";
-                    row += "<p>";
+                    row += '<p><strong>Programm</strong></p>';
+                    row += '<p>';
                     if (workshop.description) {
                         row += converter.makeHtml(workshop.description);
                     } else {
-                        row += "wird noch bekanntgegeben";
+                        row += 'wird noch bekanntgegeben';
                     }
-                    row += "</p>";
+                    row += '</p>';
 
-                    row += "<p><strong>Voraussetzungen</strong></p>";
+                    row += '<p><strong>Voraussetzungen</strong></p>';
                     if (workshop.prerequisites) {
                         row += converter.makeHtml(workshop.prerequisites);
                     } else {
-                        row += "werden noch bekanntgegeben";
+                        row += 'werden noch bekanntgegeben';
                     }
 
-                    row += "<p><strong>Link zum Teilnehmen:</strong> " + (workshop.zoom ? "<a href=\"" + workshop.zoom + "\" target=\"_blank\">" + workshop.zoom + "</a>" : "wird noch bekanntgegeben") + "</p>";
+                    row += '<p><strong>Mentoren:</strong> ' + workshop.mentors.join(', ') + '</p>';
 
-                    row += "</div>";
+                    row += '<p><strong>Link zum Teilnehmen:</strong> ' + (workshop.zoom ? '<a href=\'' + workshop.zoom + '\' target=\'_blank\'>' + workshop.zoom + '</a>' : 'wird noch bekanntgegeben') + '</p>';
+
+                    row += '</div>';
                 });
             } else {
-                row += "<p>Workshops werden noch bekanntgegeben</p>";
+                row += '<p>Workshops werden noch bekanntgegeben</p>';
             }
 
-            row += "</td>";
+            row += '</td>';
 
-            row += "</tr>";
+            row += '</tr>';
 
             eventsTable.append(row);
         });
 
-        $(".loadingText").hide();
+        $('.loadingText').hide();
     });
 }
 
@@ -144,12 +161,12 @@ $(document).ready(function () {
         updateNavbarScrollState();
     });
 
-    var eventsTable = $("#eventsTable");
+    var eventsTable = $('#eventsTable');
     if (eventsTable && eventsTable.length) {
         loadEvents(eventsTable);
     }
 
-    var eventsOverviewTable = $("#eventsOverviewTable");
+    var eventsOverviewTable = $('#eventsOverviewTable');
     if (eventsOverviewTable && eventsOverviewTable.length) {
         loadEventsOverview(eventsOverviewTable);
     }

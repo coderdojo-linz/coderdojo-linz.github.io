@@ -24,6 +24,15 @@ section {
     padding-bottom: 70px;
 }
 
+.inner-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+
 h1,
 h2,
 h3,
@@ -160,7 +169,7 @@ a[id]:empty {
 }
 
 @media (max-width: 575px) {
-    section {
+    section, .inner-section {
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -179,7 +188,7 @@ a[id]:empty {
 }
 
 /* sections */
-section {
+section, .inner-section {
 
     h1,
     h2 {
@@ -201,47 +210,47 @@ section {
             }
         }
     }
-}
 
-section.secondary {
-    background-color: $light-background;
-}
+    &.secondary {
+        background-color: $light-background;
+    }
 
-section.primary {
-    background-color: $primary-color;
-}
-
-section.dark {
-    background-color: $dark-background;
-}
-
-section.primary,
-section.dark {
-    color: #fff;
-
-    h1,
-    h2 {
-        &::after {
-            border-top-color: #fff;
+    &.primary {
+        background-color: $primary-color;
+    }
+    
+    &.dark {
+        background-color: $dark-background;
+    }
+    
+    &.primary,
+    &.dark {
+        color: #fff;
+    
+        h1,
+        h2 {
+            &::after {
+                border-top-color: #fff;
+            }
         }
-    }
-
-    p,
-    td {
-        color: #fff;
-    }
-
-    a {
-        color: #fff;
-        text-decoration: underline;
-    }
-
-    a.btn {
-        text-decoration: none;
-    }
-
-    .table td {
-        border-color: #fff;
+    
+        p,
+        td {
+            color: #fff;
+        }
+    
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    
+        a.btn {
+            text-decoration: none;
+        }
+    
+        .table td {
+            border-color: #fff;
+        }
     }
 }
 
@@ -440,6 +449,13 @@ footer p a:hover {
 
     footer {
         display: none;
+    }
+}
+
+/* bankdetails */
+.bankdetails {
+    h4 {
+        margin-block-start: 0;
     }
 }
 
@@ -646,6 +662,11 @@ section.events {
         background-color: $light-background;
         margin-block-end: 1rem;
     }
+}
+
+/* contact*/
+#contact-success, #contact-error {
+    display: none;
 }
 
 /* mentors */

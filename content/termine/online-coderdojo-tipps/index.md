@@ -20,9 +20,9 @@ Falls du noch nie mit Zoom gearbeitet hast, kannst du dir wenn du möchtest ein 
 
 ## Teilnahmelink
 
-Die Links zur Teilnahme an den Online CoderDojos findest du auf unserer [Termine-Seite](https://linz.coderdojo.net/termine.html):
-
-![Teilnahmelink](images/online-teilnehmerlink.png)
+{{< imgblock "img/online-teilnehmerlink.png" "Teilnahmelink" 8 >}}
+Die Links zur Teilnahme an den Online CoderDojos findest du auf unserer [Termine-Seite](/termine.html):
+{{< /imgblock >}}
 
 ## Mehrere Bildschirme
 

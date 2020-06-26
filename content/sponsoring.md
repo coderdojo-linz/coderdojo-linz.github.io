@@ -1,5 +1,6 @@
 ---
 title: "Sponsoring"
+layout: "sponsoring"
 heroImage: "hardware.jpg"
 heroImagePosition: "50% 75%" 
 heroDescription: "Unser Hardware-Stapel wächst dank der Sponsoren jedes Jahr"
@@ -35,15 +36,7 @@ Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucke
 
 Wenn gewünscht, wirst du gerne auf unserer Webseite namentlich erwähnt. Schicke uns dazu bitte eine kurze Info an info@coderdojo-linz.org.
 
-##### Bankverbindung
-
-Raiffeisen Landesbank Oberösterreich  
-IBAN: AT81 3400 0000 0508 7333  
-BIC: RZOOAT2L 	
-
-##### PayPal
-
-{{< paypal >}}
+{{< bankdetails >}}{{< /bankdetails >}}
 
 #### Sponsor a Dojo: ab 100€
 
@@ -87,9 +80,3 @@ Voraussetzung ist natürlich, dass die Geräte funktionieren.
 #### Lizenzspende
 
 Du möchtest den Kindern die Möglichkeit geben, kommerzielle Werkzeuge zu verwenden? Dann freuen wir uns über die Spende von Lizenzen.
-
-## Kontakt
-
-Bei Fragen zu unserem Verein oder zu Sponsoring-Möglichkeiten kontaktiere uns bitte unter info@coderdojo-linz.org. Wir freuen uns auf deine Unterstützung!
-
-Dein CoderDojo Linz - Team
