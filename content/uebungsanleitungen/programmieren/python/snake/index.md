@@ -74,7 +74,7 @@ grid_length= 23
 Bei uns ist die Seitenlänge der Felder auf 23 Pixel gesetzt.
 #### Snake Körperelement laden
 
-Der Körper unserer Schlange besteht aus lauter kleinen Kugeln, die wir aus der Datei [snake_body.png](snake_body.png) in ein Image Objekt aus der PIL Bibliothek laden. Dieses Bild ist nicht exakt 23 x 23 Pixel groß und wir müssen es daher zunächst noch auf diese Größe verkleinern. Der Zusatz Image.ANTIALIAS als Argument der *body_img.resize* Funktion hilft dabei zu verhinder, dass das Bild durch das Verkleinern *schlechter aussieht*.
+Der Körper unserer Schlange besteht aus lauter kleinen Kugeln, die wir aus der Datei [snake_body.png](img/snake_body.png) in ein Image Objekt aus der PIL Bibliothek laden. Dieses Bild ist nicht exakt 23 x 23 Pixel groß und wir müssen es daher zunächst noch auf diese Größe verkleinern. Der Zusatz Image.ANTIALIAS als Argument der *body_img.resize* Funktion hilft dabei zu verhinder, dass das Bild durch das Verkleinern *schlechter aussieht*.
 
 ```python
 # Snake Körperelement laden
@@ -519,7 +519,7 @@ while True:
 Damit sind wir am Ende von Schritt 7 angekommen. Gratulation du solltest jetzt ein *fertiges* Snake Spiel haben! Den Source Code findest du [hier](source/snake_07_punkte.py). Jetzt kannst du versuchen einen High Score aufzustellen, oder weitere Features einbauen. Man könnte z.B.
 
 * Den High Score abspeichern und am Ende eines Spiels immer den aktuellen Score mit dem High Score vergleichen.
-* Der Schlange einen schönen Kopf geben, der nicht einfach ein normales Schlangenelement ist. Es gebe dafür z.B. das Bild [snake_head.png](snake_head.png).
+* Der Schlange einen schönen Kopf geben, der nicht einfach ein normales Schlangenelement ist. Es gebe dafür z.B. das Bild [snake_head.png](img/snake_head.png).
 * Hindernisse einbauen
 * Mehr als einen Apfel gleichzeitig platzieren
 * Die Schlange mit einer künstlichen Intelligenz automatisch steuern lassen
