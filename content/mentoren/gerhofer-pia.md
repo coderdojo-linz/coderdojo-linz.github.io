@@ -1,12 +1,15 @@
 ---
-title: Pia Gerhofer
-description: 
-image: pia-gerhofer.jpg
-page-category: mentor
+title: "Pia Gerhofer"
+description: "Software Engineer bei Tractive"
+image: "pia-gerhofer.jpg"
+links:
+- type: "companywebsite"
+  url: "https://tractive.com/de"
+- type: "instagram"
+  url: "https://www.instagram.com/femalecoderslinz/"
+  title: "Female Coders"
 ---
 
-Nachdem Pia Gerhofer ihr Bachelorstudium an der FH Oberösterreich - Campus Hagenberg in "Bio- und Medizininformatik" abgeschlossen hatte, begann sie das Masterstudium "Software Engineering" ebenfalls in Hagenberg. Im Zuge ihres Bachelorstudiums war sie ein halbes Jahr in einer Bioinformatik-Forschungsgruppe der Universität Basel tätig, wo sie mit PHP, Javascript, Python und Solr die Suchfunktion für eine Webseite entworfen habe.
+Pia Gerhofer is a software developer based in Linz mainly working on business applications implemented with the Spring Framework in Java and Kotlin and web applications implemented with Angular. Furthermore, she is a part-time teacher at a coding Bootcamp located in Linz.
 
-Nebenberuflich ist sie seit Beginn des Masterstudiums als Junior Software Developer bei der Firma Catalysts in Linz tätig. 
-
-Durch die Arbeit bedingt beschäftigt sie sich meist mit Java, Spring, Hibernate und AngularJS, interessiert sich jedoch auch für andere Technologien wie C# und WPF. 
+She is passionate about technology, the environment, enabling women in the IT industry and education and therefore she can often be found at one of Linz' local meetups or mentoring at the CoderDojo. Moreover together with some female colleagues, she started a programming club for women aimed to encourage more women to join the IT industry. 
