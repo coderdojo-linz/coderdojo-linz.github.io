@@ -36,7 +36,7 @@ Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucke
 
 Wenn gewünscht, wirst du gerne auf unserer Webseite namentlich erwähnt. Schicke uns dazu bitte eine kurze Info an info@coderdojo-linz.org.
 
-{{< bankdetails >}}{{< /bankdetails >}}
+{{< bankdetails >}}
 
 #### Sponsor a Dojo: ab 100€
 
