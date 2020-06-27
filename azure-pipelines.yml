@@ -56,8 +56,17 @@ jobs:
     
   - script: |
       git checkout gh-pages
+      git rm -rf .
+      git clean -fxd
     displayName: 'Switch to gh-pages branch'
 
+  - task: CopyFiles@2
+    inputs:
+      sourceFolder: $(Agent.TempDirectory)/dist
+      targetFolder: .
+      overWrite: true
+    displayName: 'Copy build results to gh-pages branch'
+    
   - script: |
       git add --all .
       git commit -m 'Update website'
@@ -65,7 +74,7 @@ jobs:
     displayName: 'Git push gh-pages branch'
 
 - job: BuildPreviewSite
-  displayName: 'Build Production Site'
+  displayName: 'Build Preview Site'
   pool:
     vmImage: 'ubuntu-latest'
 
