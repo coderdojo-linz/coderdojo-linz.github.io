@@ -61,6 +61,14 @@ jobs:
       cleanTargetFolder: false
       overWrite: true
     displayName: 'Copy azure-pipelines to temp'
+
+  - task: CopyFiles@2
+    inputs:
+      contents: readme.md
+      targetFolder: $(Agent.TempDirectory)/dist
+      cleanTargetFolder: false
+      overWrite: true
+    displayName: 'Copy readme.md to temp'
     
   - script: |
       git checkout master
