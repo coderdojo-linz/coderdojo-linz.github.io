@@ -64,6 +64,9 @@ jobs:
     
   - script: |
       git checkout master
+      rm -rf *
+      rm .gitmodules
+      rm .gitignore
       git clean -fxd
     displayName: 'Switch to master branch'
 
