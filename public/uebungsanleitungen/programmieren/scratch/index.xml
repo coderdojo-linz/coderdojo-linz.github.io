@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scratch on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/</link>
+    <description>Recent content in Scratch on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    <lastBuildDate>Sun, 17 May 2020 07:59:43 +0200</lastBuildDate>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Erste Schritte in Scratch</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/erste-schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/erste-schritte/</guid>
+      <description>Neues Projekt erstellen Öffne Scratch und klicke links oben im Menü auf Entwickeln. Im neuen Projekt siehst du Scratchy, die Katze. Noch macht Scratchy nichts, da sie noch kein Programm hat.
+   Die Katze Scratchy läuft herum   Du findest alle Figuren des Projekts im linken unteren Bereich. Im Moment gibt es hier nur Scratchy, die Katze. Wenn du sie auswählst, kannst du bestimmen, was sie machen soll.</description>
+    </item>
+    
+    <item>
+      <title>Konto anlegen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/konto-anlegen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/konto-anlegen/</guid>
+      <description>Um deine Projekte in Scratch speichern und teilen zu können, brauchst du ein Konto. Die folgenden Schritte zeigen dir, wie du ein neues Konto anlegst. Anschließend starten wir Scratch zum ersten Mal.
+Scratch Webseite öffnen   Öffne einen Webbrowser, gib in der Adresszeile die Adresse scratch.mit.edu ein und drücke Enter. Das https:// vor der Scratch-Adresse musst du nicht unbedingt eingeben. Es wird automatisch erscheinen, nachdem du auf Enter gedrückt hast.</description>
+    </item>
+    
+    <item>
+      <title>Zahlenraten</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/zahlen-raten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/zahlen-raten/</guid>
+      <description>Variablen anlegen   Wir Menschen merken uns Dinge im Gehirn. Wenn sich der Computer etwas merken soll, dann braucht er dafür Variablen. In unserem Spiel soll sich der Computer eine Zufallszahl ausdenken, sie uns aber nicht verraten. Wir legen dafür unter &amp;ldquo;Daten&amp;rdquo; eine &amp;ldquo;Neue Variable&amp;rdquo; an und nennen sie &amp;ldquo;zufallszahl&amp;rdquo;.
+     Sobald das Programm gestartet wird, soll sich der Computer die Zufallszahl ausdenken und das Ergebnis in unserer neuen Variable speichern.</description>
+    </item>
+    
+    <item>
+      <title>Fang Mich</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fang-mich/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fang-mich/</guid>
+      <description>Bühne und Figuren anlegen   Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst das Aquarium, in dem die Fische schwimmen. Wähle als erstes rechts unten unter Bühnenbild wählen ein Bühnenbild aus, zum Beispiel ein Aquarium.
+     Als nächstes lösche die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.</description>
+    </item>
+    
+    <item>
+      <title>Affe füttern</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/slingshot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/slingshot/</guid>
+      <description>Figuren anlegen   Lösche als erstes die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
+     Lege oder male ein Bühnenbild und die Figuren für die Steinschleuder, die Bananen, den Affen und das Gummiband an. Lege das Gummiband mit dem Pinsel an. Wir brauchen hier keine Figur auszuwählen, da wir das Gummiband später mit Hilfe eines Codeblockes zeichnen werden.</description>
+    </item>
+    
+    <item>
+      <title>Animierte Ansichtskarte</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/animated-postcard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/animated-postcard/</guid>
+      <description>Eine solche Karte kannst du zum Beispiel verwenden:
+ als Ansichtskarte vom Urlaub als Grußkarte zum Geburtstag  Schritt 1: Scratcher werden Damit du deinen Freunden die Ansichtskarte schicken kannst, musst du dich bei Scratch registrieren. Die Registrierung ist kostenlos und du benötigst dafür nur einen Benutzernamen und eine E-Mail-Adresse. Wenn du dich in Zukunft vor dem Arbeiten mit Scratch anmeldest, dann werden deine Projekte automatisch gespeichert und du kannst von überall auf sie zugreifen, egal von welchem Computer!</description>
+    </item>
+    
+    <item>
+      <title>Breakout</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/breakout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/breakout/</guid>
+      <description>In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläger einen Ball darauf schleuderst. Wenn alle Mauersteine zerstört sind, kommst du in den nächsten Level, wo dein Ball dann noch schneller fliegt.
+Downloads    Figur      Ball Figur downloaden   Block Figur downloaden   Schläger Figur downloaden    Bühne und Figuren anlegen   Zuerst suchen wir uns ein cooles Bühnenbild aus.</description>
+    </item>
+    
+    <item>
+      <title>Chess</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/chess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/chess/</guid>
+      <description>Du kannst das fertige Project unter https://scratch.mit.edu/projects/148769358/ ausprobieren.
+Schachprogramme versuchen den jeweils besten Zug zu finden, und müssen dabei möglichst viele Züge im Voraus berechnen. Die Anzahl der zu untersuchenden Brettbilder wächst dadurch enorm an (exponentielles Wachstum), sodass sogar moderne Computer an ihre Rechengrenzen stoßen. Unser Schachprogramm muss daher schnell und schlau sein. Schlau heißt, dass nicht jede Zugkombination nachverfolgt wird, sondern schlechte Züge gleich wieder verworfen werden. Wenn das Programm einige Züge hintereinander berechnet hat, bewertet es das entstandene Brettbild.</description>
+    </item>
+    
+    <item>
+      <title>Die Zauberlehrlinge</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/zauberlehrlinge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/zauberlehrlinge/</guid>
+      <description>Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen. Ihr seid dabei immer abwechselnd an der Reihe einen Zauberspruch zu verschießen. Doch es ist gar nicht so leicht, den anderen zu treffen, man muss genau in die richtige Richtung zielen!
+Damit es nicht langweilig wird, wollen wir die Landschaft im Hintergrund jedes mal ein bisschen anders zeichnen.</description>
+    </item>
+    
+    <item>
+      <title>Dragons Realm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/dragons-realm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/dragons-realm/</guid>
+      <description>Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindringende Raubritter verteidigt. Mit den Pfeiltasten lenkst du den Drachen um den Pfeilen der Ritter auszuweichen (du kannst auch zwei Tasten gleichzeitig drücken; mit ↑ und → fliegt man zum Beispiel nach rechts oben). Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen. Damit das Spiel auch auf Tablets und Handys funktioniert, wurde nachträglich eine Maus/Touch-Steuerung eingebaut.</description>
+    </item>
+    
+    <item>
+      <title>Fang die Äpfel</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fang-die-aepfel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fang-die-aepfel/</guid>
+      <description>In diesem Spiel fallen Äpfel vom Himmel, die du mit deiner Schüssel fangen solltest. Jeder gefangene Apfel bringt dir einen Punkt, jeder zu Boden gefallener Apfel kostet dir ein Leben. Versuch möglichst viele Äpfel mit den 10 Leben zu fangen.
+Schritt 1: Die drei Bühnenbilder anlegen Dieses Spiel verwendet drei verschiedene Hintergundbilder (Bühnenbilder). Eines vor Spielstart, eines während des Spiels und ein drittes sobald das Spiel zu Ende ist.</description>
+    </item>
+    
+    <item>
+      <title>Fledermaus-Spiel</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fledermaus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fledermaus/</guid>
+      <description>Hier erstellst du ein Quiz zum Thema Fledermaus. Wenn du viele Fragen richtig beantworten kannst, erhältst du einen Pokal.
+Bühnenbild auswählen Als erstes legst du fest, wie dein Hintergrund aussehen sollte. Wähle für dieses Quiz das Bühnenbild Mountain aus.
+Figuren anlegen Das Spiel besteht aus zwei Figuren: der Fledermaus und dem Pokal.
+ Lösche die Figur Scratchy (Figur1)
+ Füge die Figur Bat hinzu und ändere den Namen auf Fledermaus</description>
+    </item>
+    
+    <item>
+      <title>Labyrinth-Spiel mit Scratch und JavaScript</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/labyrinth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/labyrinth/</guid>
+      <description>Ziel der Übung In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
+Spielbeschreibung Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit X markierte Ziel zu erreichen. Die schwarzen und roten Felder sind Hindernisse. Schwarze Felder kannst du zerstören, indem du Anlauf nimmst.</description>
+    </item>
+    
+    <item>
+      <title>Memory</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/memory/</guid>
+      <description>Figuren anlegen Das Spiel besteht aus nur zwei Figuren: der Karte mit einer Vorder- und einer Rückseite und der Bilder, die auf den Karten angezeigt werden sollen. Alle Bilder werden als Kostüme in einer Figur zusammengefasst.
+  Lösche als erstes die Figur Scratchy mit dem Namen Sprite1 indem du auf das blaue X klickst oder mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.</description>
+    </item>
+    
+    <item>
+      <title>Minesweeper</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/minesweeper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/minesweeper/</guid>
+      <description>Figuren anlegen Das Spiel besteht aus nur zwei Figuren: einer Zelle für das Spielfeld und verschiedenen Nachrichten, die dem Spieler angezeigt werden können.
+  Lösche als erstes die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
+     Die Figur Zelle besteht aus mehreren Kostümen; einer nicht aufgedeckten Zelle, einer Bombe, einer leeren Zelle, einer Fahne und den Ziffern 1 bis 8.</description>
+    </item>
+    
+    <item>
+      <title>Mit Scratch eine Geschichte erzählen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/geschichte-katze-und-ente/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/geschichte-katze-und-ente/</guid>
+      <description>Mit Scratch kannst du Geschichten erzählen. Du kannst Figuren erscheinen lassen, sie bewegen, den Hintergrund austauschen und vieles mehr.
+Neues Projekt erstellen   Öffne Scratch und klicke links oben im Menü auf Entwickeln. Im neuen Projekt siehst du Scratchy, die Katze. Noch macht Scratchy nichts, da sie noch kein Programm hat.
+     Scratchy auftreten lassen   Schiebe Scratchy ganz nach links. Man darf nur ein kleines Stück von ihr sehen.</description>
+    </item>
+    
+    <item>
+      <title>Moonhack</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/moonhack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/moonhack/</guid>
+      <description>In diesem Spiel musst du mit dem Lunar Module auf dem Mond landen. Aber Vorsicht, die Landung muss sanft sein und du hast nur eine begrenzte Menge an Raktentreibstoff.
+Du kannst das fertige Spiel unter https://scratch.mit.edu/projects/236734138/ auch gleich ausprobieren.
+Downloads Figur    Hintergrund Hintergrund downloaden   Lunar Module Figur downloaden   Einleitung Am 20. Juli 1969 erreichten die ersten Menschen mit der Mondlandefähre (Englisch Lunar Module) den Mond.</description>
+    </item>
+    
+    <item>
+      <title>n-Ecke malen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/n-ecke-malen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/n-ecke-malen/</guid>
+      <description>Lösche vorhandene Malspuren und schalte den Stift ein   Wische alle bereits vorhandenen Malspuren weg, schalte den Stift ein und wähle eine Farbe und Dicke für den Stift.
+     Lass Scratchy fragen, wie viele Ecken sie malen soll   Lass Scratchy fragen Wie viel Ecken soll die Figur haben, die ich malen soll? Du bekommst unten ein Eingabefeld, indem du angeben musst, wieviel Ecken die Figur haben soll.</description>
+    </item>
+    
+    <item>
+      <title>Pac Man</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/pac-man/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/pac-man/</guid>
+      <description>Pac-Man ist ein klassisches Computerspiel. Es erschien erstmals 1980 in Japan.
+Pac-Man muss alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu laufen. Die blauen Pillen verleihen ihm für kurze Zeit Superkräfte, und er kann Geister einfrieren.
+Vorbereitungen Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. kannst du sie auch unter pac-man.zip herunterladen. Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMan, Ghost und Pill.</description>
+    </item>
+    
+    <item>
+      <title>Paddle Game</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/paddle-game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/paddle-game/</guid>
+      <description>Bühne und Figuren anlegen   Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen die Bühne, hier der Strand, einen Ball, einen Schläger und einen Bereich, der markiert, wo der Ball im Out ist. Wenn du ein neues Projekt startest, siehst du eine weiße Bühne mit Scratchy, der Katze. Wähle als erstes rechts unten ein Bühnenbild aus.
+     
+     Als nächstes lösche die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst.</description>
+    </item>
+    
+    <item>
+      <title>Pakete Fangen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/pakete-fangen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/pakete-fangen/</guid>
+      <description>Vorbereitung Lade dir zuerst die Zip Datei herunter.
+Du brauchst als erstes 4 Figuren:
+ die Geschenkspakete (aus der Scratch Bibliothek) das Förderband (du findest es in der ZIP-Datei) den Weihnachtssack (du findest ihn in der ZIP-Datei) die Mitteilung, dass du zu viele Pakete fallen gelassen hast (bitte selbst erstellen)  In der Figur &amp;ldquo;Paket&amp;rdquo; müssen wir zuerst noch 2 Kostüme hinzufügen, die anzeigen, ob das Paket am Boden zerbrochen ist, oder erfolgreich gefangen wurde.</description>
+    </item>
+    
+    <item>
+      <title>Sierpinski Dreieck</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/sierpinski-dreieck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/sierpinski-dreieck/</guid>
+      <description>Ein Fraktal ist ein Objekt, dass oft aus mehreren verkleinerten Kopien seiner selbst besteht. Hier siehst du ein großes Dreieck, das aus mehreren kleineren Dreiecken zusammengesetzt ist, die wiederum aus noch kleineren Dreiecken bestehen. Man nennt dieses Fraktal Sierpinski Dreieck.
+Figuren anlegen   Um im Scratch zu malen, brauchen wir zwar eine Figur, es muss am Bildschirm aber nichts angezeigt werden. Du kannst also eine Figur mit einem leeren Kostüm anlegen.</description>
+    </item>
+    
+    <item>
+      <title>Snake</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/snake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/snake/</guid>
+      <description>Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auf, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
+Bühne &amp;amp; Figuren Das Spiel besteht aus drei Figuren: der Schlange, dem Apfel und einer Nachricht, wenn das Spiel zu Ende ist. Für dieses Spiel brauchen wir kein Bühnenbild. Du kannst es einfach weiß lassen. Die Schlange besteht aus zwei Kostümen: Kopf und Körper.</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter/</guid>
+      <description>Bühne und Figuren anlegen   Als erstes legst du fest, wie deine Bühne aussehen soll. Für dieses Spiel brauchst du das Weltall als Hintergrund. Wähle ein passendes Bild aus oder male selbst eines.
+     Als erste Figur brauchst du das Raumschiff. Es besteht aus zwei Kostümen: dem Raumschiff selbst und einem weiteren Kostüm das angezeigt wird, wenn das Spiel vorbei ist. Zeige den Text &amp;ldquo;Game Over&amp;rdquo; an oder male ein passendes Bild</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter II</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter-2/</guid>
+      <description>Hast du die Space Shooter Scratch Übung schon geschafft? Dann bist du genau richtig hier. Deine Aufgabe ist es, einen modifizierten Space Shooter zu bauen - diesmal aber ohne kompletter Anleitung.
+Falls du Hilfe brauchst, kannst du dir Anregungen beim fertigen Spiel unter https://scratch.mit.edu/projects/236866631/ holen.
+Bühne und Figuren anlegen  Verwende einen Sternenhimmel als Bühnenbild für dein Spiel.
+ Füge das Raumschiff als Figur hinzu. Mache es so groß oder klein wie du möchtest.</description>
+    </item>
+    
+    <item>
+      <title>Sterne fangen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/sterne-fangen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/sterne-fangen/</guid>
+      <description>Verwende die Pfeiltasten nach links und rechts um am Boden zu laufen und die Pfeiltaste nach oben um hochzuspringen. Fange so viele Sterne wie möglich.
+Das Spiel basiert auf dem Spiel Gravity!! von gilnz21.
+Figuren anlegen   Lösche als erstes die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
+     Suche dir ein Bühnenbild für dein Spiel aus.</description>
+    </item>
+    
+    <item>
+      <title>The Game of Life</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/the-game-of-life/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/the-game-of-life/</guid>
+      <description>Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“ (farbig). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
+ Eine tote Zelle mit genau drei lebenden Nachbarn wird neu geboren Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben an Einsamkeit Lebende Zellen mit zwei oder drei lebenden Nachbarn bleiben am Leben Lebende Zellen mit mehr als drei lebenden Nachbarn sterben an Überbevölkerung  Durch diese einfachen Regeln können aus bestimmten Anfangsmustern komplexe Strukturen entstehen.</description>
+    </item>
+    
+    <item>
+      <title>Weihnachtsspiel 2015</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/weihnachten-2015/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/weihnachten-2015/</guid>
+      <description>Bilder downloaden Wir haben einige Bilder vorbereitet, die du für dieses Spiel benötigst. Lade dir die folgende Datei herunter: weihnachtsspiel.zip
+Winterlandschaft Es soll so aussehen, dass der Weihnachtsmann sich von links nach rechts bewegt. Dabei darf er aber natürlich nicht aus dem Bild rausfliegen. Deshalb verwenden wir einen Trick: Wir bewegen nicht den Weihnachtsmann nach rechts, sondern den Hintergrund nach links. Der Weihnachtsmann bleibt immer an der gleichen Position – wie wenn du ihn mit einer Kamera filmen würdest.</description>
+    </item>
+    
+    <item>
+      <title>Weihnachtsspiel 2016</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/weihnachten-2016/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/weihnachten-2016/</guid>
+      <description>Spielregeln  Die Kugeln fallen von oben nach unten und bleiben mit der schwarzen Befestigung an den grünen Zweigen des Baums hängen.
+ Die Geschwindigkeit der Kugeln steigert sich alle 10 Sekunden.
+ Für jede erfolgreich an den Baum gehängte Kugel gibt es einen Punkt.
+ Wenn eine Kugel eine andere berührt oder auf den Boden fällt, zerspringt die berührte Kugel. Ein Punkt wird abgezogen.
+ Das Spiel ist vorbei, wenn du 10 Kugeln kaputt gemacht hast.</description>
+    </item>
+    
+    <item>
+      <title>Whack a Gopher</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/whack-a-gopher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/whack-a-gopher/</guid>
+      <description>Die Katze brauchen wir in diesem Spiel nicht. Wir können sie löschen in dem wir die Katze wählen und auf das kleine blaue X drücken.
+Löcher erstellen Wir beginnen mit der Figur, welche die Löcher im Boden darstellen sollte aus denen unsere Figuren erscheinen können. Wir erstellen die Figur mit dem Pinsel und malen einen schwarzes ovales Loch. Wichtig ist dabei, dass die Figur im Kostüm-Tab zentriert ist. Du kannst der Figur und dem Kostüm einen sprechenderen Namen geben und ganz einfach die Größe ändern:</description>
+    </item>
+    
+  </channel>
+</rss>

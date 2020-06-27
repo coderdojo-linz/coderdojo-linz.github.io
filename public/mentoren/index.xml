@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CoderDojo Linz Mentoren on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/mentoren/</link>
+    <description>Recent content in CoderDojo Linz Mentoren on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/mentoren/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alexander Rosemann</title>
+      <link>https://linz.coderdojo.net/mentoren/rosemann-alexander/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/rosemann-alexander/</guid>
+      <description>Alexander Rosemann ist Geschäftsführer der scintillation e.U. Als Berater, Architekt und Entwickler beschäftigt er sich vorwiegend mit komplexen Geschäftsanwendungen im Java Umfeld.
+Statistische Analysen großer Datenbestände mit R und die Verarbeitung von unstrukturierten Daten mit Apache Solr/Lucene runden sein Profil ab.
+Als Mitbegründer des Technologieplauscherls ist er als Organisator und Moderator des in Linz monatlich stattfindenden Entwicklertreffens in seiner Freizeit tätig.</description>
+    </item>
+    
+    <item>
+      <title>Arno Hütter</title>
+      <link>https://linz.coderdojo.net/mentoren/huetter-arno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/huetter-arno/</guid>
+      <description>Arno Hütter hat seine ersten Codezeilen mit zwölf Jahren auf einem Sinclair ZX80 8bit Homecomputer geschrieben. Er studierte Wirtschaftsinformatik und Informatik an der Universität Linz, und ist seit 1995 beruflich in der Software-Entwicklung tätig.
+Im Laufe der Zeit programmierte er Software-Systeme für Banken, Mobiltelefonie, Krankenhäuser, die öffentliche Verwaltung und für Application Performance Management in C++, Java und C#. Performance-Tuning, zum Beispiel von Datenbanken, macht ihm besonders Spaß.
+Heute arbeitet er als Produkt-Entwicklungsleiter bei Dynatrace, einem international erfolgreichen APM Vendor.</description>
+    </item>
+    
+    <item>
+      <title>Elisabeth Rosemann</title>
+      <link>https://linz.coderdojo.net/mentoren/rosemann-elisabeth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/rosemann-elisabeth/</guid>
+      <description>In der Java Enterprise Entwicklung tätig, spezialisiert Elisabeth sich auf die Verarbeitung von unstrukturierten Daten mit Apache Solr und Lucene. Dabei ist sie zusätzlich zur Software Entwicklung auch als Projektmanagerin und Beraterin für Java Webanwendungen tätig.
+Ihre Interessen reichen von Prototyping mit Python bis hin zu statistischen Analysen großer Datenbestände mit R.
+In ihrer Freizeit ist sie außerdem Mitglied des Organisationsteams des Technologieplauscherls Linz.</description>
+    </item>
+    
+    <item>
+      <title>Günther Ehrenberger</title>
+      <link>https://linz.coderdojo.net/mentoren/ehrenberger-guenter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/ehrenberger-guenter/</guid>
+      <description>Günther Ehrenberger ist als Mechatroniker beruflich im Anlagenbau tätig.
+Elektronische Schaltungen und Microprozessoren wie Raspberry, micro:Bit, Pic und Co sind sein Freizeitvergnügen.
+Um sich die Elektronik Untertan zu machen werden Scratch, Python, HTML, CSS, JavaScript, C usw. verwendet. Nach dem Motto &amp;ldquo;Aller Anfang ist leicht&amp;rdquo; beschäftigen wir uns im CoderDojo mit dem BBC micro:bit.</description>
+    </item>
+    
+    <item>
+      <title>Hans-Peter Weidinger</title>
+      <link>https://linz.coderdojo.net/mentoren/weidinger-hans-peter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/weidinger-hans-peter/</guid>
+      <description>Hans-Peter ist Senior Software Engeneer bei Dynatrace. Mit „Programmieren“ (wenn man das in Basic so nennen darf) kam er das erste mal in Berührung als in der Familie ein C64 angeschafft wurde.
+Der Besuch der HTL (Elektronik/Informatik) und das Studium Softwae Engeneering an der FH Hagenberg waren dann mehr oder weniger schon &amp;ldquo;vorprogrammiert&amp;rdquo;. Seither war er in Produkt- und Projektentwicklung tätig. Unter anderem für einen österreichischen Mobilfunkbetreiber, wo er an der Entwicklung von SMS und MMS Lösungen sowie deren Anbindungen mitarbeitete.</description>
+    </item>
+    
+    <item>
+      <title>Karin Huber</title>
+      <link>https://linz.coderdojo.net/mentoren/huber-karin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/huber-karin/</guid>
+      <description>Karin Huber ist Mitgründerin und Geschäftsführerin der Firma software architechts gmbh und ist seit mehr als 15 Jahren in der Softwareentwicklung tätig.
+Ihre Schwerpunkte liegen im Bereich WPF und Silverlight, sowie in der Webentwicklung mit HTML5, CSS3 und AngularJS. Außerdem ist sie Mitautorin der beiden Bücher &amp;ldquo;XAML. schnell + kompakt&amp;rdquo; und &amp;ldquo;WPF und XAML Programmierhandbuch&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Matthias Ableidinger</title>
+      <link>https://linz.coderdojo.net/mentoren/ableidinger-matthias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/ableidinger-matthias/</guid>
+      <description>Von klein auf fasziniert von Computern ist es keine Überraschung, dass Matthias nun seit über 3 Jahre Hauptberuflich als Softwareentwickler bei der Linzer Firma Catalysts unterwegs ist. Während er dort großteils Webanwendungen in Java programmiert und betreibt, beschäftigt er sich privat mit Rätsel, Smarthome, neuen Technologien und anderen Spielereien.
+Wenn er nicht vorm Computer sitzt, kocht und liest er gerne, und er hat nach jahrelanger Müdigkeit noch immer nicht gelernt rechtzeitig ins Bett zu gehn.</description>
+    </item>
+    
+    <item>
+      <title>Michael Wagner</title>
+      <link>https://linz.coderdojo.net/mentoren/michael-wagner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/michael-wagner/</guid>
+      <description>IT Leiter, Technikfreak, Bastler, Elektroniker und Amateurfunker</description>
+    </item>
+    
+    <item>
+      <title>Peter Bauer</title>
+      <link>https://linz.coderdojo.net/mentoren/bauer-peter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/bauer-peter/</guid>
+      <description>Peter Bauer hat schon so manches quer durch den Gemüsegarten programmiert. Angefangen von Datenbankanwendungen aus den späten 80er-Jahren (Achtung Dinosaurier-Alarm!!) über ganz viel C und C++ Programmen zur Bild- und Signalanalyse bis hin zu Software für Mobiltelefone.
+In letzter Zeit gesellte sich auch das eine oder andere Web-Projekt dazu.
+Peter unterrichtet Programmieren, Technische und Theoretische Informatik und Projektentwicklung an der HTL Leonding.
+Privat ist er verheiratet und Vater zweier Söhne im Alter von 13 und 16 Jahren.</description>
+    </item>
+    
+    <item>
+      <title>Pia Gerhofer</title>
+      <link>https://linz.coderdojo.net/mentoren/gerhofer-pia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/gerhofer-pia/</guid>
+      <description>Pia Gerhofer is a software developer based in Linz mainly working on business applications implemented with the Spring Framework in Java and Kotlin and web applications implemented with Angular. Furthermore, she is a part-time teacher at a coding Bootcamp located in Linz.
+She is passionate about technology, the environment, enabling women in the IT industry and education and therefore she can often be found at one of Linz&amp;rsquo; local meetups or mentoring at the CoderDojo.</description>
+    </item>
+    
+    <item>
+      <title>Rainer Stropek</title>
+      <link>https://linz.coderdojo.net/mentoren/stropek-rainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/stropek-rainer/</guid>
+      <description>Rainer Stropek ist seit über 20 Jahren als Unternehmer in der IT-Industrie tätig. Er gründete und führte in dieser Zeit mehrere IT-Dienstleistungsunternehmen und entwickelt im Augenblick in seiner Firma &amp;ldquo;software architects&amp;rdquo; mit seinem Team die preisgekrönte Software &amp;ldquo;time cockpit&amp;rdquo;.
+Rainer hat Abschlüsse an der Höheren Technischen Schule für MIS, Leonding (AT) sowie der University of Derby (UK). Er ist Autor mehrerer Fachbücher und Artikel in Magazinen im Umfeld von Microsoft .</description>
+    </item>
+    
+    <item>
+      <title>Raphael Schwarz</title>
+      <link>https://linz.coderdojo.net/mentoren/schwarz-raphael/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/schwarz-raphael/</guid>
+      <description>Raphael Schwarz ist Gründer und Geschäftsführer der codeworx gmbh in Wels und seit vielen Jahren in der Softwarenentwicklung tätig.
+Sein Kernaufgabengebiet liegt in der Architekturberatung und im Coaching von größeren Softwareprojekten mit .NET bzw. Web Technologien.</description>
+    </item>
+    
+  </channel>
+</rss>

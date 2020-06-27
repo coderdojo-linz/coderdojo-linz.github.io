@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.js on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/categories/node.js/</link>
+    <description>Recent content in Node.js on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/categories/node.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Node.js Webserver</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-webserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-webserver/</guid>
+      <description>Ein Webserver mit Node.js Ziel der Übung In dieser Übung lernst du, wie du eine Anwendung für das Web mit Server- und Clientteil baust. Du solltest mit HTML und JavaScript schon etwas vertraut sein. Falls das ganz neu für dich ist, frage erst einen Mentor um Übungsanleitungen, bei denen du die Grundlagen von HTML und JavaScript lernst.
+Visual Studio Code Editor installieren Ganz einfache HTML und JavaScript Programme kann man in einfachen Editoren wie Notepad erstellen.</description>
+    </item>
+    
+    <item>
+      <title>Chat mit Node.js und Socket.io</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-socketio-chat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-socketio-chat/</guid>
+      <description>Chat mit Node.js und Socket.io Ziel der Übung In dieser Übung lernst du, wie du eine Chat-Anwendung mit Server- und Clientteil baust. Mehrere Benutzer können sich im Chat anmelden. Wenn jemand etwas sendet sollen alle anderen Benutzer das sofort sehen.
+Wichtig: Diese Übung geht davon aus, dass du die Übung Einen Node.js Webserver programmieren gemacht hast und diese bei dir auf deinem Computer funktioniert. Mache hier erst weiter, wenn du die vorbereitende Übung erfolgreich abgeschlossen hast.</description>
+    </item>
+    
+    <item>
+      <title>Snake mit Node.js</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-nodejs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-nodejs/</guid>
+      <description>Snake mit Node.js 
+   Ziel der Übung In dieser Übung lernst du, wie du mit Node.js einfache Spiele programmieren kannst.
+Systemvoraussetzungen Du brauchst für diese Übung die gleichen Tools (Visual Studio Code, Node.js, npm), die schon in der Übung Ein Webserver mit Node.js erwähnt sind. Falls du die Übung schon gemacht hast, hast du schon alle notwendigen Tools. Falls nicht, schau dort bitte nach.
+Du kannst das Beispiel unter Windows, Linux oder MacOS bauen.</description>
+    </item>
+    
+  </channel>
+</rss>

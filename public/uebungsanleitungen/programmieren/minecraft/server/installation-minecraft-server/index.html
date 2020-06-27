@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Installation eines Minecraft Servers </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/">Minecraft</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/">Server</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#installation-eines-minecraft-servers">Installation eines Minecraft Servers</a>
+<ul>
+<li><a href="#voraussetzungen">Voraussetzungen</a></li>
+<li><a href="#zugriff-auf-deinen-ubuntu-server">Zugriff auf deinen Ubuntu-Server</a>
+<ul>
+<li><a href="#lokales-terminal">Lokales Terminal</a></li>
+<li><a href="#secure-shell-ssh">Secure Shell (SSH)</a></li>
+<li><a href="#filezilla">FileZilla</a></li>
+<li><a href="#firewall">Firewall</a></li>
+</ul></li>
+<li><a href="#minecraft-server-control-mscs">Minecraft Server Control (<em>mscs</em>)</a></li>
+<li><a href="#welt-erzeugen-und-spielen">Welt erzeugen und spielen</a></li>
+<li><a href="#forge">Forge</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="installation-eines-minecraft-servers">Installation eines Minecraft Servers</h1>
+
+<h2 id="voraussetzungen">Voraussetzungen</h2>
+
+<p>In dieser Übung installieren wir einen Minecraft Server. Als Grundlage brauchst du dafür einen Computer, auf dem <a href="https://de.wikipedia.org/wiki/Linux" target="_blank">Linux</a> installiert ist. Linux ist eine freie Software, die kostenlos im Internet zu haben ist.</p>
+
+<p>Falls du nicht sicher bist, welches Linux du verwenden sollst, empfehlen wir für diese Übung <a href="https://www.ubuntu.com/" target="_blank">Ubuntu</a>. Du bekommst den <em>Ubuntu Server</em> zur Installation <a href="https://www.ubuntu.com/download/server" target="_blank">kostenlos im Internet</a>. Eine deutsche Anleitung zur Installation von Ubuntu findest du z.B. im <a href="https://wiki.ubuntuusers.de/Server_Installation/" target="_blank">ubuntuusers Wiki</a>.</p>
+
+<p>Falls du keinen eigenen Server hast, sprich mit dem Mentorenteam vom CoderDojo Linz. Wir können eine limitierte Anzahl von Ubuntu-Servern, die in der <a href="https://azure.microsoft.com" target="_blank">Microsoft Azure</a> <a href="https://de.wikipedia.org/wiki/Cloud_Computing" target="_blank">Cloud</a> laufen, zur Verfügung stellen.</p>
+
+<h2 id="zugriff-auf-deinen-ubuntu-server">Zugriff auf deinen Ubuntu-Server</h2>
+
+<h3 id="lokales-terminal">Lokales Terminal</h3>
+
+<p>Falls du direkten Zugriff auf den Ubuntu-Server hast, kannst du die in dieser Übung enthaltenen Schritte in einem <a href="https://wiki.ubuntuusers.de/Terminal/" target="_blank">lokalen Terminal</a> durchführen.</p>
+
+<h3 id="secure-shell-ssh">Secure Shell (SSH)</h3>
+
+<p>Wenn dein Server in der Cloud läuft und du keinen direkten Zugang dazu hast, musst du aus der Ferne zugreifen. Dafür verwendet man eine <a href="https://de.wikipedia.org/wiki/Secure_Shell" target="_blank">Secure Shell</a>. Üblicherweise bezeichnet sie kurz als <strong>ssh</strong>. Mit ihr kannst du aus der Ferne deinen Server administrieren, Dateien rauf und runter kopieren (<a href="https://de.wikipedia.org/wiki/Secure_Copy" target="_blank">Secure Copy</a> oder kurz <em>scp</em>) und vieles mehr.</p>
+
+<p>Unter Windows verwendet man häufig die kostenlose Software <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">PuTTY</a>, um bequem mit <em>ssh</em> auf einen Linux-Server zuzugreifen. Lade die Software herunter und installiere sie. Wenn du sie startest, musst du die <a href="https://de.wikipedia.org/wiki/IP-Adresse" target="_blank">IP-Adresse</a> deines Servers eingeben. Wenn du nicht sicher bist, wo du die IP-Adresse her bekommst, bitte jemanden vom CoderDojo Mentorenteam um Hilfe.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/installation-minecraft-server/img/putty-ip-adresse.jpg" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Wenn du Linux verwendest, brauchst du <em>PuTTY</em> nicht unbedingt. <em>ssh</em> ist schon eingebaut. Im <a href="https://wiki.ubuntuusers.de/SSH/" target="_blank">UbuntuUsers Wiki</a> kannst du nachlesen, wie du <em>ssh</em> unter Linux verwendest.</p>
+
+<h3 id="filezilla">FileZilla</h3>
+
+<p>Es kommt oft vor, dass man Dateien von seinem lokalen Computer auf seinen Server in der <a href="https://de.wikipedia.org/wiki/Cloud_Computing" target="_blank">Cloud</a> kopieren will. Das geht sehr gut mit der kostenlosen Software <a href="https://filezilla-project.org/" target="_blank">FileZilla</a>. <a href="https://wiki.filezilla-project.org/Client_Installation" target="_blank">Zur Installationsanleitung&hellip;</a></p>
+
+<h3 id="firewall">Firewall</h3>
+
+<p><strong>Wichtig:</strong> Damit der Zugriff auf den Server funktioniert, musst du möglicherweise die <a href="https://de.wikipedia.org/wiki/Firewall" target="_blank">Firewall</a> konfigurieren. Bitte einen CoderDojo Mentor um Hilfe, wenn du nicht weißt, wie das geht.</p>
+
+<h2 id="minecraft-server-control-mscs">Minecraft Server Control (<em>mscs</em>)</h2>
+
+<p>Zur Verwaltung unserer Minecraft-Welten verwenden wir <a href="https://github.com/MinecraftServerControl/mscs" target="_blank">Minecraft Server Control</a>, kurz <em>mscs</em>. Mit <em>mscs</em> kannst du unter anderem ganz einfach:</p>
+
+<ul>
+<li>neue Minecraft-Server und -Welten erstellen.</li>
+<li>Welten starten und stoppen.</li>
+<li>Sicherheitskopien deiner Welten erstellen.</li>
+</ul>
+
+<p><strong>Wichtiger Tipp:</strong> Wenn du wissen möchtest was <em>mscs</em> alles kann, lies unbedingt <a href="https://github.com/MinecraftServerControl/mscs#overview" target="_blank">die Dokumentation</a>. Das ist außerdem eine super Gelegenheit, um Englisch zu üben.</p>
+
+<p>Lass uns als erstes also <em>mscs</em> installieren. Das folgende Script zeigt wie es gemacht wird. <strong>Wichtiger Tipp:</strong> Bevor du beginnst, lies die Hinweise nach dem Script, um zu verstehen was es macht.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Aktualisieren der Installationsquellen für unseren Ubuntu-Server</span>
+sudo apt-get update</code></pre></div>
+<ul>
+<li>Zeilen, die mit <code>#</code> beginnen, sind Kommentare. Sie dienen nur zur Erklärung von Scriptcode und haben keine Funktion.</li>
+<li>Das vorangestellte <code>sudo</code> sorgt dafür, dass das Kommando als <code>root</code>, also als Superuser mit Administratorrechten ausgeführt wird. <a href="https://wiki.ubuntuusers.de/sudo/" target="_blank">Mehr über <em>sudo</em>&hellip;</a></li>
+
+<li><p>Mit <code>apt-get</code> kann man Softwarepakete verwalten. In diesem Fall wird <code>update</code> angegeben. Dadurch bringst du das Verzeichnis verfügbarer Softwarepakete auf deinem Server auf den neuesten Stand. <a href="https://wiki.ubuntuusers.de/apt/apt-get/" target="_blank">Mehr über <em>apt-get</em>&hellip;</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Installieren der Systemvoraussetzungen von mscs</span>
+sudo apt-get -y install openjdk-8-jre-headless perl libjson-perl libwww-perl python make wget rdiff-backup rsync socat iptables git</code></pre></div></li>
+</ul>
+
+<p>Mit <code>apt-get install</code> installiert man Softwarepakete. Hier werden in einer Zeile viele Pakete installiert. Sie sind alle notwendig, damit <em>mscs</em> funktioniert. Du fragst dich, woher wir wissen, was <em>mscs</em> braucht? Das kann man in der <a href="https://github.com/MinecraftServerControl/mscs" target="_blank"><em>mscs</em> Dokumentation</a> nachlesen.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Mscs herunterladen und eigentlichen Installation starten</span>
+cd /tmp
+git clone https://github.com/MinecraftServerControl/mscs.git
+cd mscs
+sudo make install</code></pre></div>
+<ul>
+<li><code>cd</code> steht für <em>Change Directory</em>. Du wechselst in diesem Fall in das temporäre Verzeichnis deines Linux-Servers. Dort kannst du Dateien &ldquo;zwischenlagern&rdquo;.</li>
+<li>Mit <code>git clone https://github.com/...</code> lädt man Software aus <a href="https://github.com/" target="_blank">GitHub</a>. <em>mscs</em> ist dort zu finden.</li>
+<li>Weil das <code>git clone</code>-Kommendo mit <code>mscs.git</code> endet, wird die Software in das Verzeichnis <code>mscs</code> kopiert. Daher müssen wir in dieses Verzeichnis wechseln.</li>
+<li>Mit <code>make install</code> starten wir die eigentliche Installation. Dieser Schritt ist in der <a href="https://github.com/MinecraftServerControl/mscs" target="_blank"><em>mscs</em> Dokumentation</a> beschrieben.</li>
+</ul>
+
+<p>Wenn du das alles gemacht hast, kannst du stolz auf dich sein. Du hast <em>mscs</em> installiert und kannst jetzt Minecraft-Server damit verwalten!</p>
+
+<h2 id="welt-erzeugen-und-spielen">Welt erzeugen und spielen</h2>
+
+<p>Lass uns eine neue Welt erzeugen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Wir legen eine Welt namens myflatworld an</span>
+mscs create myflatworld <span style="color:#ae81ff">25565</span>
+
+<span style="color:#75715e"># Die neue Welt taucht in der Liste an Welten auf</span>
+mscs list
+
+<span style="color:#75715e"># Wir können uns den Status der Welt ansehen</span>
+mscs status myflatworld
+
+<span style="color:#75715e"># Nachdem die neue Welt noch nicht gestartet wurde, starten wir sie</span>
+mscs start myflatworld</code></pre></div>
+<p>An dieser Stelle können wir noch nicht zu spielen beginnen. Wir müssen erst die <a href="https://account.mojang.com/documents/minecraft_eula" target="_blank">Minecraft Lizenzbedingungen</a> (in Englisch &ldquo;End User License Agreement&rdquo; = <em>EULA</em>) akzeptieren. Das machen wir, indem wir eine Zeile in einer Datei unserer Welt ändern. Alle unsere Welten sind im Verzeichnis <code>/opt/mscs/worlds/</code> zu finden. In unserem Fall müssen wir also in das Verzeichnis <code>/opt/mscs/worlds/myflatworld</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Wechseln wir in das Verzeichnis unserer Welt</span>
+cd /opt/mscs/worlds/myflatworld
+
+<span style="color:#75715e"># Öffnen wir die Datei eula.txt in einem Editor</span>
+sudo nano eula.txt</code></pre></div>
+<p>In dem Script oben kommt der Editor <em>nano</em> vor. <em>nano</em> ist ein grundlegender Editor, der bei Bedarf auf jeden System installiert werden kann. Mache dich gemeinsam mit dem Mentorenteam vom CoderDojo mit <em>nano</em> vertraut.
+   * Bei Bedarf findest du eine gute <a href="https://wiki.ubuntuusers.de/Nano/" target="_blank">Einführung in <em>nano</em></a> im Internet</p>
+
+<p>Ändere mit <em>nano</em> <code>eula=false</code> auf <code>eula=true</code> und speichere die Datei indem du die Datei mit dem Shortcut <em>Strg+O</em> und <em>Enter</em> speicherst und dann den Editor mit <em>Strg+X</em> beendest</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Starte die Welt erneut</span>
+mscs start myflatworld
+
+<span style="color:#75715e"># Prüfe nochmals den Status, jetzt muss die Welt gestartet sein</span>
+mscs status myflatworld</code></pre></div>
+<p>Jetzt kannst du Minecraft starten und dich zu deinem Server verbinden. Lade deine Freunde ein, damit ihr gemeinsam in einer Welt spielen könnt.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/installation-minecraft-server/img/minecraft-direkt-verbinden.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="forge">Forge</h2>
+
+<p>Für viele Mods braucht man <a href="http://minecraft-de.gamepedia.com/Mod/Minecraft_Forge" target="_blank">Minecraft Forge</a>. <em>Mscs</em> unterstützt <em>Forge</em>. Lass uns <em>Forge</em> daher installieren.</p>
+
+<p><strong>Wichtiger Tipp:</strong> Auf der <a href="http://files.minecraftforge.net/maven/net/minecraftforge/forge/" target="_blank">Forge Webseite</a> findest du eine Liste von Programmversionen. Such dir die <em>Recommended</em>-Version (=empfohlene Version) heraus und trage die genaue Versionsnummer (z.B. <code>1.11.2-13.20.0.2228</code>) in das Installationsscript unten ein.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/installation-minecraft-server/img/forge-recommended.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Speichere die Versionsnummer in einer Variable</span>
+VER<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.11.2-13.20.0.2228&#34;</span>
+
+<span style="color:#75715e"># Forge Installationsprogramm laden</span>
+cd /opt/mscs <span style="color:#f92672">&amp;&amp;</span> sudo mkdir server <span style="color:#f92672">&amp;&amp;</span> cd server
+sudo wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/$VER/forge-$VER-installer.jar
+
+<span style="color:#75715e"># Installationsprogramm starten</span>
+sudo java -jar forge-$VER-installer.jar --installServer
+
+<span style="color:#75715e"># Installationsprogramm löschen, es wird nicht mehr benötigt</span>
+sudo rm -f forge-$VER-installer.jar*</code></pre></div>
+<p>Jetzt können wir eine Minecraft Welt mit <em>Forge</em> erzeugen. <strong>Wichtiger Tipp:</strong> Du musst im folgenden Script die Versionsnummer von Minecraft und den gewünschten Welt-Namen ändern.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">MINECRAFT_VER<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.11.2&#34;</span>
+WORLD_NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;forge&#34;</span>
+
+<span style="color:#75715e"># Minecraft-Welt anlegen</span>
+mscs create $WORLD_NAME <span style="color:#ae81ff">25565</span>
+cd /opt/mscs/worlds/$WORLD_NAME
+
+<span style="color:#75715e"># Einstellungen für die Verwendung von Forge ändern</span>
+echo <span style="color:#e6db74">&#34;mscs-client-version=</span>$MINECRAFT_VER<span style="color:#e6db74">&#34;</span> | sudo tee -a mscs.properties
+echo <span style="color:#e6db74">&#34;mscs-server-version=</span>$MINECRAFT_VER<span style="color:#e6db74">&#34;</span> | sudo tee -a mscs.properties
+echo <span style="color:#e6db74">&#34;mscs-server-jar=forge-</span>$VER<span style="color:#e6db74">-universal.jar&#34;</span> | sudo tee -a mscs.properties
+echo <span style="color:#e6db74">&#34;mscs-server-url=&#34;</span> | sudo tee -a mscs.properties
+
+<span style="color:#75715e"># Zu Testzwecken einen Forge Mod (Furniture) in der Welt installieren</span>
+sudo mkdir mods <span style="color:#f92672">&amp;&amp;</span> cd mods
+sudo wget https://mrcrayfish.com/files/mods/cfm/cfm-4.1.2-mc1.11.2.jar
+cd ..
+
+<span style="color:#75715e"># Spieleinstellungen auf kreativ und flache Welt setzen</span>
+echo <span style="color:#e6db74">&#34;gamemode=1&#34;</span> | sudo tee -a server.properties
+echo <span style="color:#e6db74">&#34;level-type=FLAT&#34;</span> | sudo tee -a server.properties
+
+<span style="color:#75715e"># Lizenzbedingungen akzeptieren</span>
+echo <span style="color:#e6db74">&#34;#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).&#34;</span> | sudo tee eula.txt
+echo <span style="color:#e6db74">&#34;#</span><span style="color:#66d9ef">$(</span>date<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> | sudo tee -a eula.txt
+echo <span style="color:#e6db74">&#34;eula=true&#34;</span> | sudo tee -a eula.txt</code></pre></div>
+<p>Jetzt könnten wir die Welt eigentlich starten. Wir wollen uns selbst aber zum Op machen. Das machen wir mit Hilfe der Datei <a href="http://minecraft-de.gamepedia.com/Server.properties#ops.json" target="_blank">ops.json</a>. Du brauchst die UUID und den Namen deines Minecraft-Spielers. Wenn du die UUID nicht kennst, kannst du sie <a href="https://mcuuid.net/" target="_blank">im Internet herausfinden</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">UUID<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5817f013-80f7-4b0c-a3ed-2116702c4a4a&#34;</span>
+NAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;WitchCharlie&#34;</span>
+LEVEL<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>
+
+printf <span style="color:#e6db74">&#34;[\n&#34;</span> | sudo tee ops.json
+printf <span style="color:#e6db74">&#34;\t{\n&#34;</span> | sudo tee -a ops.json
+printf <span style="color:#e6db74">&#34;\t\t\&#34;uuid\&#34;: \&#34;</span>$UUID<span style="color:#e6db74">\&#34;,\n&#34;</span> | sudo tee -a ops.json
+printf <span style="color:#e6db74">&#34;\t\t\&#34;name\&#34;: \&#34;</span>$NAME<span style="color:#e6db74">\&#34;,\n&#34;</span> | sudo tee -a ops.json
+printf <span style="color:#e6db74">&#34;\t\t\&#34;level\&#34;: </span>$LEVEL<span style="color:#e6db74">\n&#34;</span> | sudo tee -a ops.json
+printf <span style="color:#e6db74">&#34;\t}\n&#34;</span> | sudo tee -a ops.json
+printf <span style="color:#e6db74">&#34;]\n&#34;</span> | sudo tee -a ops.json</code></pre></div>
+<p>So, los gehts!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Welt starten</span>
+mscs start $WORLD_NAME
+
+<span style="color:#75715e"># Bei Bedarf Ausgabe von Forge ansehen</span>
+<span style="color:#75715e"># mscs console $WORLD_NAME</span></code></pre></div>
+<p>Viel Spaß!</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/installation-minecraft-server/img/minecraft-mit-furniture-mod.jpg" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Erste Schritte mit Python </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/">Python</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#erste-schritte-mit-python">Erste Schritte mit Python</a>
+<ul>
+<li><a href="#was-ist-python">Was ist Python?</a></li>
+<li><a href="#python-installieren">Python installieren</a></li>
+<li><a href="#das-shell-fenster">Das Shell-Fenster</a></li>
+<li><a href="#zeichnen-mit-der-schildkröte">Zeichnen mit der Schildkröte</a></li>
+<li><a href="#das-code-fenster">Das Code-Fenster</a></li>
+<li><a href="#welches-fenster-verwendest-du-wofür">Welches Fenster verwendest du wofür?</a></li>
+<li><a href="#hilfe">Hilfe</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="erste-schritte-mit-python">Erste Schritte mit Python</h1>
+
+<p>Diese Übung gibt eine erste Einführung in das Programmieren mit Python.
+Die Inhalte sind zum größten Teil aus dem Buch <a href="http://www.amazon.de/Programmieren-supereasy-Einfacher-Einstieg-SCRATCH/dp/3831027005/ref=sr_1_1?ie=UTF8&amp;qid=1452990098&amp;sr=8-1&amp;keywords=programmieren+f%C3%BCr+kinder" target="_blank">Programmieren super<em>easy</em></a>.</p>
+
+<h2 id="was-ist-python">Was ist Python?</h2>
+
+<p>Python ist eine Programmiersprache, die mit englischen Textbefehlen arbeitet. Sie ist etwas schwieriger als Scratch, dafür gibt es allerdings viel mehr Verwendungsmöglichkeiten.</p>
+
+<p>Zur Vorbereitung werden wir nun zuerst Python installieren und uns dann mit der Oberfläche vertraut machen.</p>
+
+<h2 id="python-installieren">Python installieren</h2>
+
+<p>Lade Python nun herunter und installiere es auf deinem Computer. Python 3 ist kostenlos, einfach zu installieren und funktioniert mit den Betriebssystemen Windows, Mac-OS und mit Linux-Systemen wie Ubuntu.</p>
+
+<ol>
+<li>Gehe zur Python-Webseite <a href="http://www.python.org" target="_blank">www.python.org</a>.</li>
+<li>Unter <em>Downloads</em> wähle die entsprechende Version (z.B. Python 3.5.1 für Windows (64-bit)).</li>
+<li>Nach dem Herunterladen der Installationsdatei (z.B. python-3.5.1.exe), führe die Installation aus.</li>
+<li>Starte nun die Programmierumgebung <strong>IDLE</strong> (<strong>I</strong>ntegrated <strong>D</strong>eve<strong>L</strong>opment <strong>E</strong>nvironment).</li>
+<li>Nun sollest du (unter Windows) folgendes Fenster sehen:</li>
+</ol>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/python/erste-schritte/img/IDLE-Windows.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="das-shell-fenster">Das Shell-Fenster</h2>
+
+<p>Dieses Fenster nennt man das &ldquo;Shell-Fenster&rdquo;. Wenn du hinter den 3 spitzen Klammern (&gt; &gt; &gt;) Code einfügst und mit der ENTER-Taste bestätigtst, wird dieser Code sofort ausgeführt.</p>
+
+<ol>
+<li>Lass uns das gleich ausprobieren. Gib nun folendes ein:<br />
+<code>print('Hello Python!')</code> und drücke die ENTER-Taste
+<br /></li>
+</ol>
+
+<p>In der nächsten Zeile wird nun &ldquo;<strong>Hello Python!</strong>&rdquo; ausgegeben und darunter erscheinen sofort wieder die 3 spitzen Klammern und warten auf deine nächste Eingabe.</p>
+
+<ol>
+<li>Als nächstes wollen wir testen, ob Python auch rechnen kann. Gibt dazu eine Rechnung ein, z.B. <code>3 + 2</code> und drücke ENTER.</li>
+</ol>
+
+<p>Tatsächlich denkt Python mit und liefert sofort das Ergebnis &ldquo;<strong>5</strong>&rdquo;. Das funktioniert natürlich auch mit allen anderen Grundrechnungsarten (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>) und den Klammern(<code>(</code>, <code>)</code>). Probier es aus.</p>
+
+<ol>
+<li>Wie Scratch, kann sich Python auch Werte in Variablen merken und dann mit diesen arbeiten. Gib folendes ein:
+
+<ol>
+<li><code>a = 4</code> ENTER</li>
+<li><code>b = 2</code> ENTER</li>
+<li><code>a * b</code> ENTER</li>
+<li><code>a + a - b</code> ENTER</li>
+</ol></li>
+</ol>
+
+<p>Nun sollte Python zuerst &ldquo;8&rdquo; ausgeben, weil es 4 * 2 gerechnet hat, und anschließend &ldquo;6&rdquo; (für 4 + 4 - 2).</p>
+
+<ol>
+<li>Du kannst den Inhalt einer Variablen auch ändern. Gib foldendes ein:
+
+<ol>
+<li><code>b = 10</code> ENTER</li>
+<li><code>a + b</code> ENTER</li>
+</ol></li>
+</ol>
+
+<p>Nun sollte die Ausgabe &ldquo;14&rdquo; lauten (4 + 10).</p>
+
+<h2 id="zeichnen-mit-der-schildkröte">Zeichnen mit der Schildkröte</h2>
+
+<p>Zum Abschluss noch ein kleiner Vorgeschmack darauf, was Python alles kann, zum Beispiel <strong>Zeichnen</strong>. Dazu benutzt Python eine Schildkröte (engl. <em>turtle</em>). Gib foldendes ein:</p>
+
+<ol>
+<li><code>from turtle import *</code> ENTER</li>
+<li><code>forward(100)</code> ENTER<br />
+Jetzt erscheint ein neues Fenster in dem die <em>Turtle</em> eine gerade, schwarze Linie von links nach rechts zieht.</li>
+<li><code>right(120)</code> ENTER</li>
+<li><code>forward(200)</code> ENTER</li>
+<li><code>left(120)</code> ENTER</li>
+<li><code>forward(100)</code> ENTER</li>
+<li><code>penup()</code> ENTER</li>
+<li><code>left(90)</code> ENTER</li>
+<li><code>forward(80)</code> ENTER</li>
+<li><code>right(90)</code> ENTER</li>
+<li><code>backward(20)</code> ENTER</li>
+<li><code>pendown()</code> ENTER</li>
+<li><code>backward(60)</code> ENTER</li>
+<li><code>penup()</code> ENTER</li>
+<li><code>forward(200)</code> ENTER</li>
+</ol>
+
+<p>Nun haben wir ein schönes Z gezeichnet und die <em>Turtle</em> steht rechts daneben.</p>
+
+<p>Mit <code>clear()</code> können wir unsere Zeichnung wieder löschen.</p>
+
+<p>Das ist schon ein richtiges kleines Programm und es ist schade, dass wir daran keine Änderungen mehr vornehmen können, weil es sofort ausgeführt wurde und wir es nicht in einer Datei gespeichert haben. Aber keine Angst, genau das können wir mit Python natürlich auch machen.</p>
+
+<h2 id="das-code-fenster">Das Code-Fenster</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Dazu öffnen wir nun ein neues Fenster, das sogenannte <em>Code-Fenster</em>. Klicke dazu mit der Maus im &ldquo;Shell-Fenster&rdquo; auf das Menü <code>File</code> und dort wiederum auf <code>New File</code>.</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/python/erste-schritte/img/IDLE-NewFile.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<ol>
+<li><p>Schreibe nun die Befehle von vorhin noch einmal in das neue Fenster:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> turtle <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+clear()
+forward(<span style="color:#ae81ff">100</span>)
+right(<span style="color:#ae81ff">120</span>) 
+forward(<span style="color:#ae81ff">200</span>)
+left(<span style="color:#ae81ff">120</span>)
+forward(<span style="color:#ae81ff">100</span>)
+penup()  
+left(<span style="color:#ae81ff">90</span>)
+forward(<span style="color:#ae81ff">80</span>)
+right(<span style="color:#ae81ff">90</span>)
+backward(<span style="color:#ae81ff">20</span>)
+pendown()
+backward(<span style="color:#ae81ff">60</span>)
+penup()
+forward(<span style="color:#ae81ff">200</span>)</code></pre></div></li>
+
+<li>
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Jetzt speichern wir unser erstes Python-Programm aber sofort ab. Klicke dazu im Menü <code>File</code> auf <code>Save</code> (oder drücke STRG+S).</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/python/erste-schritte/img/IDLE-Save.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+</li>
+
+<li><p>Starten können wir unser Programm, indem wir einfach F5 drücken (oder Menü <code>Run</code> und dort <code>Run Module</code> im Code-Fenster).
+Nun wir unser Z ganz von alleine in einem Zug gezeichnet. Cool!</p></li>
+
+<li><p>Jetzt können wir unser Programm auch noch verändern, indem wir z.B. folgende Zeilen zwischen <code>clear()</code> und <code>forward(100)</code> (im Code-Fenster) einfügen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">speed(<span style="color:#ae81ff">1</span>)
+pencolor(<span style="color:#e6db74">&#39;blue&#39;</span>)
+pensize(<span style="color:#ae81ff">8</span>)</code></pre></div>
+<p>Im Code-Fenster speichern wir wieder mit STRG-S und starten das Programm mit F5.</p></li>
+</ol>
+
+<h2 id="welches-fenster-verwendest-du-wofür">Welches Fenster verwendest du wofür?</h2>
+
+<ul>
+<li><p><strong>Code-Fenster</strong>:
+Das Code-Fenster eigent sich gut für längere Programme, weil du sie speichern und bearbeiten kannst. Das ist leichter als immer wieder von vorne anzufangen, sobald du Abschnitte wiederholen oder ändern willst.</p></li>
+
+<li><p><strong>Shell-Fenster</strong>:
+Das Shell-Fenster eignet sich gut für schnelle Experimente, wen du z.B. wissen willst, was ein Befehl bewirkt. Außerdem ist es ein praktischer &ldquo;Taschenrechner&rdquo;.<br />
+Die Befehle werde aber nicht gespeichert, sodass du Dinge, die du öfter brauchst, doch lieber im Code-Fenster bearbeiten solltest.</p></li>
+</ul>
+
+<h2 id="hilfe">Hilfe</h2>
+
+<p>Zum Abschluss noch ein Tipp: Falls du mal nicht weiter weißt, bietet die IDLE schon eine direkt integrierte Hilfe-Funktion (drücke F1 oder Menü <code>Help</code> und <code>Python Docs</code>). Dort findest du viele hilfreiche Informationen, z.B. alle Befehle, die die <em>Turtle</em> versteht. Die Hilfe ist (natürlich) auf Englisch, wie so vieles gerade im IT-Bereich.
+Wer trotzdem lieben auf Deutsch über Python nachschlagen will, der kann z.B. folgende Links versuchen:</p>
+
+<ul>
+<li><a href="https://py-tutorial-de.readthedocs.org/de/python-3.3/" target="_blank">Das Python-Tutorial</a></li>
+<li><a href="http://www.python-kurs.eu/python3_kurs.php" target="_blank">Python 3 Tutorial</a></li>
+</ul>
+
+<p>Viel Spaß beim Ausprobieren!</p>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

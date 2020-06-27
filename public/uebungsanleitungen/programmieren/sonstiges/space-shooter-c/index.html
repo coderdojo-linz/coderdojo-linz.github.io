@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Space Shooter in C </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/">Sonstiges</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#space-shooter-in-c">Space Shooter in C</a>
+<ul>
+<li><a href="#spielablauf">Spielablauf</a></li>
+<li><a href="#vorwissen">Vorwissen</a></li>
+<li><a href="#projektsetup">Projektsetup</a></li>
+<li><a href="#entwicklungsschritte">Entwicklungsschritte</a></li>
+<li><a href="#das-terminal-fenster">Das Terminal-Fenster</a>
+<ul>
+<li><a href="#höhe-und-breite">Höhe und Breite</a></li>
+<li><a href="#vt100-codes-und-asynchroner-input">VT100 Codes und asynchroner Input</a></li>
+<li><a href="#fazit">Fazit</a></li>
+</ul></li>
+<li><a href="#das-raumschiff">Das Raumschiff</a>
+<ul>
+<li><a href="#zeichnen">Zeichnen</a></li>
+<li><a href="#bewegen">Bewegen</a></li>
+<li><a href="#fazit-1">Fazit</a></li>
+</ul></li>
+<li><a href="#projektile-und-schießen">Projektile und Schießen</a>
+<ul>
+<li><a href="#zeichnen-1">Zeichnen</a></li>
+<li><a href="#abfeuern">Abfeuern</a></li>
+<li><a href="#fazit-2">Fazit</a></li>
+</ul></li>
+<li><a href="#gegner-und-eliminierungen">Gegner und Eliminierungen</a>
+<ul>
+<li><a href="#zeichnen-2">Zeichnen</a></li>
+<li><a href="#erscheinen-spawnen">Erscheinen (&ldquo;Spawnen&rdquo;)</a></li>
+<li><a href="#abschüsse">Abschüsse</a></li>
+<li><a href="#fazit-3">Fazit</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="space-shooter-in-c">Space Shooter in C</h1>
+
+<p>In dieser Übung werden wir ein relativ fortgeschrittenes Computerspiel in C entwickeln, welches im Terminalemulator &ndash; unter Windows standardmäßig, CMD &ndash; läuft. Wir werden im Terminal mithilfe von speziellen control codes (Ketten von escape charactern) das gesamte Spiel zeichnen und durch Tastendrücke auf dem Keyboard kontrollieren.</p>
+
+<p>Für diese Übung solltest du bereits einfache Programmierkentnisse haben, die Konzepte von Schleifen, Bedingungen und Assignments bzw. Variablen sollten nichts neues sein. Im Grunde genommen ist die Programmiersprache C eine sehr einfache, und viele andere Sprachen (z.B. JavaScript, Java, C#, &hellip;) sind ihr oberflächlich ähnlich bzw. nachempfunden. Im folgenden werden daher keine näheren Details zu C gegeben &ndash; sollte dir etwas unklar sein, zögere nicht dich selbst im Internet schlau zu machen, oder eine/n Mentor/in um Hilfe zu bitten.</p>
+
+<h2 id="spielablauf">Spielablauf</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/sonstiges/space-shooter-c/img/spaceshooter.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Gegner, hier 4x4 Rechtecke, fliegen von oben nach unten und müssen vom Spieler abgeschossen werden. Wie im Luftkampf zwischen kleineren Fliegern üblich, reicht ein einziger Treffer um die feindlichen Rechtecke auszuschalten. Das Spiel läuft endlos, bis eines der gegnerischen Objekte das untere Ende des Bildschirms erreicht, wobei jeder Abschuss einen Punkt bringt &ndash; das Ziel ist die Anhäufung möglichst vieler Punkte.</p>
+
+<p>Der Spieler kontrolliert sein Raumschiff vertikal und horizontal (also von links nach rechts, und von oben nach unten) wie in Computerspielen üblich mit den WASD Tasten, und kann mit drücken der Space-Taste Geschosse aubfeuern.</p>
+
+<p>Wenn du möchtest, kannst du dir das ausprogrammierte Spiel <a href="https://github.com/LW2904/vt-space/releases" target="_blank">hier</a> herunterladen, um den Spielablauf genauer zu sehen.</p>
+
+<h2 id="vorwissen">Vorwissen</h2>
+
+<p><strong>VT100 Terminal Control Escape Sequences</strong> (kurz: VT100 codes) erlauben uns innerhalb eines Terminals bzw. Terminalemulators z.B. die Curserposition zu ändern, oder den Bildschirm zu löschen.</p>
+
+<p>Escape sequences werden, wie escape character, zwar abgesendet (z.B. via <code>printf</code> in C oder <code>process.stdout.send</code> in NodeJS) aber vom Terminal nicht genau so ausgegeben. Der escape character <code>\n</code> gibt beispielsweise an, dass ein Text von einer Zeile in die nächste übergehen soll. Eine escape sequence ist ganz einfach eine Kette von Zeichen welche interpretiert, also nicht als solche ausgegeben, werden &ndash; so löscht <code>\e[2J</code> z.B. den sichtbaren Bildschirm.</p>
+
+<p>Eine Liste nützlicher escape sequences ist <a href="http://www.termsys.demon.co.uk/vtansi.htm" target="_blank">hier</a> zu finden, weiter unten werden die jeweils wichtigen codes jedoch noch einmal aufgeführt.</p>
+
+<p>Das folgende Beispiel demonstriert die Verwendung einer VT100 escape sequence (bzw. eines VT100 codes).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+	setvbuf(stdout, NULL, _IONBF, <span style="color:#ae81ff">0</span>);
+
+	printf(<span style="color:#e6db74">&#34;\e[2J&#34;</span>);
+}</code></pre></div>
+<p>Im oberen Beispiel wichtig ist der call zu <code>setvbuf</code>, mit dem wir das standard output buffering ausschalten, in dem wir den buffer auf <code>NULL</code> setzen. Sonst würde alles, was wir zu stdout senden gebuffert (also zwischengespeichert) werden, und erst nach einem Zeilenumbruch (<code>\n</code>) abgesendet werden. Wir müssten also immer ein <code>\n</code> an unsere vt100 codes hängen, was nicht sehr praktikabel ist &ndash; hiermit umgehen wir dieses Problem.</p>
+
+<p>Hier sind jedoch sind zwei &ldquo;bad-practises&rdquo; enthalten, also schlechter Code-Stil:
+- <code>printf(&quot;\e[2J&quot;)</code> ist &ldquo;Magie&rdquo; &ndash; es ist nicht direkt ersichtlich was dieses Stück code macht
+- <code>\e</code> ist nicht standardisiert (also nicht garantiert das, was wir erwarten)</p>
+
+<p>Eine schönere Lösung wäre daher</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">/* 0x1B is the ASCII &#34;escape&#34; character. */</span>
+<span style="color:#75715e">#define ESC 0x1B
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">clear_screen</span>();
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+	setbuf(stdout, NULL);
+
+	clear_screen();
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">clear_screen</span>()
+{
+	printf(<span style="color:#e6db74">&#34;%c[2J&#34;</span>, ESC);
+}</code></pre></div>
+<p>Die Methode <code>clear_screen</code> abstrahiert in diesem Fall den &ldquo;magischen&rdquo; Teil, und ihre Funktion ist klar. Solche Abstraktionen sind im wesentlichen Vereinfachungen &ndash; sie &ldquo;verstecken&rdquo; kompliziertere Aufgaben und Abläufe unter einem schnell verständlichen und lesbaren Namen, in diesem Fall <code>clear_screen</code>.</p>
+
+<p>Zusätzlich wurde <code>\e</code> durch den Buchstaben mit dem code <code>0x1B</code> ersetzt, welcher für <code>ESC</code> steht. In vielen Systemen ist <code>\e</code> ein gültiger escape code für <code>0x1B</code>, jedoch ist er nicht (wie beispielsweise <code>\n</code>) standardisiert. Durch die verwendung des tatsächlichen codes können wir garantieren, dass unser Spiel in jedem Standardkonformen Terminal läuft.</p>
+
+<p>Verstanden zu haben wie escape characters und sequences, und damit vt100 codes, zu verwenden sind, ist der Schlüssel zu dieser Übung. Wenn dir hier etwas unklar ist, solltest du dich noch ein wenig mit der obenstehenden Sektion beschäftigen, oder eine/n Mentor/in danach fragen.</p>
+
+<h2 id="projektsetup">Projektsetup</h2>
+
+<p>TODO: Projektsetup Beschreibung &ndash; MinGW oder VS? <code>conio.h</code> muss verfügbar sein!</p>
+
+<p>TODO: Projektstruktur (build script? <code>make</code>?)</p>
+
+<h2 id="entwicklungsschritte">Entwicklungsschritte</h2>
+
+<p>Bei größeren Projekten ist es immer hilfreich, die Entwicklung auf kleinere Schritte herunterzubrechen. In diesem Fall könnte das in etwa wie folgend aussehen:</p>
+
+<ul>
+<li>Die Höhe und Breite des Terminal-Fensters in Zeilen und Spalten (nicht pixel) ist bekannt</li>
+<li>Der Terminalemulator unterstützt VT100 Codes und asynchronen Input</li>
+<li>Das Raumschiff kann&hellip;
+
+<ul>
+<li>in verschiedenen Positionen gezeichnet werden</li>
+<li>durch die WASD-Tasten bewegt werden, &hellip;
+
+<ul>
+<li>allerdings nur innerhalb des Terminal-Fensters</li>
+<li>mithilfe verschiedener Präzisionsstufen (z.B. WASD: 8er Intervall, Shift+WASD: 2er Intervall)</li>
+</ul></li>
+</ul></li>
+<li>Projektile können&hellip;
+
+<ul>
+<li>in verschiedenen Positionen gezeichnet werden</li>
+<li>vom Raumschiff aus durch Drücken der Space-Taste &ldquo;abgefeuert&rdquo; werden, dabei&hellip;
+
+<ul>
+<li>fliegen sie immer &ldquo;aus&rdquo; der Schnauze des Raumschiffes heraus, und</li>
+<li>behalten sie eine konstante, angebrachte Geschwindigkeit bei</li>
+</ul></li>
+<li>eine gewisse Maximalanzahl nicht überschreiten</li>
+</ul></li>
+<li>Gegner&hellip;
+
+<ul>
+<li>können in verschiedenen Positionen gezeichnet werden</li>
+<li>fliegen vom oberen Fensterrand zum unteren, und&hellip;
+
+<ul>
+<li>behalten eine konstante, angebrachte Geschwindigkeit bei</li>
+</ul></li>
+<li>erscheinen in einem langsam höher werdenen Intervall</li>
+<li>verschwinden, wenn sie von einem Projektil &ldquo;getroffen&rdquo; werden</li>
+<li>verursachen ein &ldquo;Game Over&rdquo; wenn sie den unteren Bildschirmrand erreichen</li>
+</ul></li>
+</ul>
+
+<p>Diese Schritte können von oben nach unten durchgearbeitet werden, in den folgenden Abschnitten wird immer jeweils eine kurze Erläuterung der Probleme und Schwierigkeiten, sowie eine <em>potentielle</em> Lösung gegeben sein. Versuche zuerst die Schritte ohne der &ldquo;Lösung&rdquo; zu bearbeiten, und verwende auch andere Ressourcen wie das Internet. Wichtig ist hierbei, dass das gegebene Codebeispiel auf keinen Fall das einzig richtige sein muss, es sollte nur als Hilfestellung dienen.</p>
+
+<h2 id="das-terminal-fenster">Das Terminal-Fenster</h2>
+
+<h3 id="höhe-und-breite">Höhe und Breite</h3>
+
+<p>Unser erster Schritt wird das Ermitteln der Höhe und Breite des Terminal-Fensters sein. Wir benötigen diese um
+- sicherzustellen, dass sich unser Raumschiff nicht aus dem Fenster bewegt
+- Projektile nach erreichen des oberen Endes verschwinden zu lassen
+- festzustellen, ob ein Gegner das untere Ende erreicht hat
+- Gegner entlang des oberen Endes erscheinen zu lassen</p>
+
+<p>Informationen über die relevanten Methoden der Windows-API sind in den <a href="https://docs.microsoft.com/en-us/windows/console/window-and-screen-buffer-size" target="_blank">Microsoft Docs unter &ldquo;Window and Screen Buffer Size&rdquo;</a> zu finden &ndash; wichtig ist insbesondere die <code>GetConsoleScreenBufferInfo()</code> Methode, welche einen <code>HANDLE</code> zur Konsole erwartet.</p>
+
+<p>Eine mögliche Lösung könnte wie folgt aussehen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">get_terminal_dimensions</span>(<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>columns, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>lines)
+{
+	HANDLE console <span style="color:#f92672">=</span> GetStdHandle(STD_OUTPUT_HANDLE);
+	<span style="color:#66d9ef">if</span> (console <span style="color:#f92672">==</span> INVALID_HANDLE_VALUE)
+		<span style="color:#66d9ef">return</span> GetLastError();
+
+	CONSOLE_SCREEN_BUFFER_INFO screen;
+	<span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>GetConsoleScreenBufferInfo(console, <span style="color:#f92672">&amp;</span>screen))
+		<span style="color:#66d9ef">return</span> GetLastError();
+
+	<span style="color:#f92672">*</span>lines <span style="color:#f92672">=</span> screen.srWindow.Bottom <span style="color:#f92672">-</span> screen.srWindow.Top <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+	<span style="color:#f92672">*</span>columns <span style="color:#f92672">=</span> screen.srWindow.Right <span style="color:#f92672">-</span> screen.srWindow.Left <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+
+	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}</code></pre></div>
+<h3 id="vt100-codes-und-asynchroner-input">VT100 Codes und asynchroner Input</h3>
+
+<p>Wir benötigen Unterstützung für VT100 primär um
+- den cursor zu bewegen, und damit zu zeichnen
+- den Bildschirm zu löschen</p>
+
+<p>Letzteres ist hierbei ein vitaler Punkt: wir werden den Bildschirm mehrmals in der Sekunde löschen und die &ldquo;Szene&rdquo; neu zeichnen. Bei jeden Übergang von einer &ldquo;Szene&rdquo; (in diesem Kontext auch &ldquo;Frame&rdquo; genannt) in die nächste werden Änderungen wie zum Beispiel eine Bewegung des Raumschiffs oder eines Projektils sichtbar werden.</p>
+
+<p>Hier wichtig sind die <a href="https://docs.microsoft.com/en-us/windows/console/getconsolemode" target="_blank"><code>GetConsoleMode()</code></a> und <a href="https://docs.microsoft.com/en-us/windows/console/setconsolemode" target="_blank"><code>SetConsoleMode()</code></a> Methoden der Windows-API. Mehr Informationen und Beispielcode können im Artikel <a href="https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences#example-of-enabling-virtual-terminal-processing" target="_blank">&ldquo;Console Virtual Terminal Sequences&rdquo;</a> der Microsoft Docs gefunden werden.</p>
+
+<p>Wenn du im oben verlinkten Artikel den Abschnitt &ldquo;Example of Enabling Virtual Terminal Processing&rdquo; gelesen hast, wirst du sehen, dass sich die folgende Lösung deutlich von dem dort gegebenen Beispiel unterscheidet. Auch deshalb sei hier nochmals angemerkt, dass diese Lösungen bei weitem nicht die einzig richtigen (oder perfekt) sind &ndash; hier wurde bewusst ein anderer Weg genommen, um dies zu verdeutlichen.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">setup_terminal</span>()
+{
+	DWORD access <span style="color:#f92672">=</span> GENERIC_READ <span style="color:#f92672">|</span> GENERIC_WRITE;
+	DWORD mode <span style="color:#f92672">=</span> FILE_SHARE_READ <span style="color:#f92672">|</span> FILE_SHARE_WRITE;
+	HANDLE console <span style="color:#f92672">=</span> CreateFileW(<span style="color:#e6db74">L</span><span style="color:#e6db74">&#34;CONOUT$&#34;</span>, access, mode, NULL,
+		OPEN_EXISTING, <span style="color:#ae81ff">0</span>, NULL);
+
+	<span style="color:#75715e">/* Fetch original console mode */</span>
+	<span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>GetConsoleMode(console, <span style="color:#f92672">&amp;</span>mode)) {
+		<span style="color:#66d9ef">return</span> GetLastError();
+	}
+
+	<span style="color:#75715e">/* Amend the mode to enable VT codes */</span>
+	mode <span style="color:#f92672">|=</span> ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+
+	<span style="color:#75715e">/* Apply the changes */</span>
+	<span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>SetConsoleMode(console, mode)) {
+		<span style="color:#66d9ef">return</span> GetLastError();
+	}
+
+	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}</code></pre></div>
+<p>Ebenso wichtig wie VT100-Unterstützung ist asynchroner input &ndash; also input, auf den nicht gewartet wird. Üblicherweise wird der Programmablauf nach einem Aufruf von z.B. <code>getchar()</code> pausiert, bis der Benutzer einen Buchstaben sendet. Diese Art des Benutzerinputs wird auch &ldquo;blocking input&rdquo;, oder &ldquo;synchroner input&rdquo; genannts. Asynchroner input ist am besten mit &ldquo;non-blocking&rdquo;, also &ldquo;nicht blockierender&rdquo;, input beschrieben.</p>
+
+<p>Implementationen eines solchen sind von OS zu OS sehr unterschiedlich, unter Windows werden die Funktionen <a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/getch-getwch?view=vs-2017" target="_blank"><code>_getch</code></a> und <a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/kbhit?view=vs-2017" target="_blank"><code>_kbhit</code></a> des <code>conio.h</code> headers hilfreich sein.</p>
+
+<p>Mithilfe dieser zwei Funktionen kann eine sehr einfache implementation in etwa so aussehen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">char</span> <span style="color:#a6e22e">getchar_nonblock</span>()
+{
+	<span style="color:#75715e">/* If a key was pressed just now... */</span>
+	<span style="color:#66d9ef">if</span> (_kbhit())
+		<span style="color:#75715e">/* ...return it */</span>
+		<span style="color:#66d9ef">return</span> _getch();
+	
+	<span style="color:#66d9ef">return</span> EOF;
+}</code></pre></div>
+<p>Die oben stehende Funktion wird immer <code>EOF</code> (eine in der standard library definierte Konstante, meistens <code>-1</code>) zurückgeben, ausser wenn der Benutzer <em>gerade eben</em> eine Taste gedrückt hat &ndash; in diesem Fall gibt sie den gedrückten Buchstaben zurück.</p>
+
+<p>Um also jede gedrückte Taste &ldquo;echoen&rdquo; zu lassen, also sie wieder auszugeben, könnte man die folgende Methode verwenden:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">echo_input</span>()
+{
+	<span style="color:#66d9ef">while</span> ((<span style="color:#66d9ef">char</span> c <span style="color:#f92672">=</span> getchar_nonblock()))
+		<span style="color:#66d9ef">if</span> (c <span style="color:#f92672">!=</span> EOF)
+			putchar(c);
+}</code></pre></div>
+<p>Verständnisfrage: Wie könnte man mithilfe von <code>_kbhit()</code> und <code>_getch()</code> die C Standard Library Funktion <code>getchar()</code> implementieren?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">char</span> <span style="color:#a6e22e">custom_getchar</span>()
+{
+	<span style="color:#66d9ef">while</span> (<span style="color:#f92672">!</span>(_kbhit()))
+		;
+
+	<span style="color:#66d9ef">return</span> _getch();
+}</code></pre></div>
+<h3 id="fazit">Fazit</h3>
+
+<p>Damit ist alles rund um den Terminalemulator (bzw. das Fenster ebenjenes) getan. Eine Implementation der bis jetzt eingeführten Methoden ist in <a href="https://github.com/LW2904/vt-space/tree/master/tutorial/1-terminal" target="_blank">vt-space/tutorial/1-terminal zu finden</a>. Es wäre grundsätzlich nützlich den Beispielcode kurz zu überfliegen, vielleicht kann er dich auch in Hinsicht auf Programmstruktur inspirieren.</p>
+
+<h2 id="das-raumschiff">Das Raumschiff</h2>
+
+<h3 id="zeichnen">Zeichnen</h3>
+
+<p>Zum zeichnen des Raumschiffs werden wir eine <code>draw_ship</code> Methode entwickeln, welche nur wissen muss wo sie das Schiff zeichnen soll. Optional könnte man benutzerdefinierte Raumschiff-Dimensionen implementieren, aber dafür gibt es in diesem Fall wenig Verwendung.</p>
+
+<p>Alle gezeichneten Objekte bestehen auf dem niedrigsten Level aus einzelnen Punkten. Um einen Punkt auf einer position P zu zeichnen, muss</p>
+
+<ul>
+<li>der Cursor auf die Position P bewegt werden, und</li>
+<li>ein möglichst deckender Buchstabe (wie <code>#</code>) ausgegeben werden</li>
+</ul>
+
+<p>Um den Cursor zu bewegen gibt es die VT100 Sequence <code>&lt;ESC&gt; [&lt;line&gt;;&lt;column&gt; H</code> (whitespace wird beim parsen der Sequenzen ignoriert). Neu ist bei diesem Code, dass wir Parameter, separiert durch Strichpunkte, übergeben.</p>
+
+<p>Das schreit nach einer Abstraktion, zum Beispiel wie folgend:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">move_cursor</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y)
+{
+	<span style="color:#75715e">/* Note the argument order since this expects line, column (ergo y, x)
+</span><span style="color:#75715e">	   instead of the more common x, y. */</span>
+	printf(<span style="color:#e6db74">&#34;%c[%d;%dH&#34;</span>, ESC, y, x);
+}</code></pre></div>
+<p>Jetzt wo <code>move_cursor</code> implementiert ist, können wir uns an die <code>draw_dot</code> Methode machen. Ihre Funktionsweise wurde oben bereits erläutert, hier eine mögliche Implementation</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#define DRAW_CHAR &#39;#&#39;
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw_dot</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y)
+{
+	move_cursor(x, y);
+
+	putchar(DRAW_CHAR);
+}</code></pre></div>
+<p>Damit ist die <code>draw_ship</code> Methode quasi schon fertig, das Design des Fliegers ist dir überlassen. Wie immer folgt natürlich ein Beispiel, bei dem auch gleich eine <code>draw_rectangle</code> Methode implementiert wurde.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw_ship</span>(<span style="color:#66d9ef">struct</span> ship s)
+{
+	<span style="color:#75715e">/* Main body */</span>
+	draw_rectangle(s.x, s.y, s.width, s.height);
+
+	<span style="color:#75715e">/* Snout */</span>
+	draw_dot(s.x <span style="color:#f92672">+</span> (s.width <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>), s.y <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);
+
+	<span style="color:#75715e">/* Left wing */</span>
+	draw_dot(s.x <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, s.y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
+	draw_dot(s.x <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>, s.y <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>);
+
+	draw_dot(s.x <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>, s.y <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>);
+	draw_dot(s.x <span style="color:#f92672">-</span> <span style="color:#ae81ff">3</span>, s.y <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>);
+
+	<span style="color:#75715e">/* Right wing */</span>
+	draw_dot(s.x <span style="color:#f92672">+</span> s.width, s.y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
+	draw_dot(s.x <span style="color:#f92672">+</span> s.width, s.y <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>);
+
+	draw_dot(s.x <span style="color:#f92672">+</span> s.width <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, s.y <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>);
+	draw_dot(s.x <span style="color:#f92672">+</span> s.width <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>, s.y <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>);
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw_rectangle</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y, <span style="color:#66d9ef">int</span> width, <span style="color:#66d9ef">int</span> height)
+{
+	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> rx <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; rx <span style="color:#f92672">&lt;</span> width; rx<span style="color:#f92672">++</span>)
+		<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> ry <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; ry <span style="color:#f92672">&lt;</span> height; ry<span style="color:#f92672">++</span>)
+			draw_dot(x <span style="color:#f92672">+</span> rx, y <span style="color:#f92672">+</span> ry);
+}</code></pre></div>
+<p>In der <code>draw_ship</code> Methode verbirgt sich noch ein Detail: sie nimmt ein <code>struct ship</code> als Parameter. Dieses ist wie folgt deklariert:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">struct</span> ship {
+	<span style="color:#66d9ef">int</span> x;
+	<span style="color:#66d9ef">int</span> y;
+	<span style="color:#66d9ef">int</span> width;
+	<span style="color:#66d9ef">int</span> height;
+};</code></pre></div>
+<h3 id="bewegen">Bewegen</h3>
+
+<p>Wie bereits weiter oben erwähnt, werden wir das Terminal-Fenster mehrmals in der Sekunde löschen und neu zeichnen. Das heißt wir werden keine <code>move_ship_left</code> oder <code>move_ship_up</code> Methoden haben, sondern nur <code>run_frame</code>. (Wir erinnern uns: &ldquo;Frame&rdquo; beudeutet in diesem Kontext das Selbe wie &ldquo;Szene&rdquo;.)</p>
+
+<p>&ldquo;Run&rdquo; und nicht &ldquo;draw&rdquo;, weil diese Methode mehr machen muss als nur Zeichen-Methoden (also <code>draw_*</code> Methoden) zu kontrollieren &ndash; unter anderem muss sie auch feststellen, ob der Benutzer eine Taste (genauer, WASD oder Space) gedrückt hat. Tatsächlich wird später die gesamte Logik des Spieles durch diese Methode kontrolliert werden.</p>
+
+<p>Aber nun zur Bewegung des Schiffes. <code>run_frame</code> muss vorerst&hellip;</p>
+
+<ul>
+<li>asynchron Input abfragen, &hellip;
+
+<ul>
+<li>&hellip;und basierend darauf die Position des Raumschiffs anpassen</li>
+</ul></li>
+<li>das Raumschiff in der angepassten Position zeichnen</li>
+</ul>
+
+<p>Du solltest bis jetzt alle Bausteine die für die Implementation dieser Methode benötigt werden bereits ausprogrammiert haben &ndash; der folgende Beispielcode ist entsprechend einfach, da die meiste Logik in bereits implementierte Methoden ausgelagert wird.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#define MOVEMENT_INTERVAL_LARGE 8
+</span><span style="color:#75715e">#define MOVEMENT_INTERVAL_DEFAULT 2
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> term_w, term_h;
+
+<span style="color:#66d9ef">struct</span> ship player;
+
+<span style="color:#75715e">/* Fetch term_w and term_h, initialise player to sensible defaults. */</span>
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run_frame</span>()
+{
+	clear_terminal();
+
+	<span style="color:#66d9ef">char</span> c <span style="color:#f92672">=</span> getchar_nonblock();
+
+	handle_player(c);
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">handle_player</span>(<span style="color:#66d9ef">char</span> c)
+{
+	<span style="color:#75715e">/* If it&#39;s uppercase (ergo shift was held), use the small interval,
+</span><span style="color:#75715e">	   else use default. */</span>
+	<span style="color:#66d9ef">int</span> interval <span style="color:#f92672">=</span> c <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">64</span> <span style="color:#f92672">&amp;&amp;</span> c <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">91</span> <span style="color:#f92672">?</span> MOVEMENT_INTERVAL_DEFAULT :
+		MOVEMENT_INTERVAL_LARGE;
+
+	<span style="color:#75715e">/* Intervals are normalized (in this case halved) for vertical movement,
+</span><span style="color:#75715e">	   since monospace characters are usually around half as wide as they
+</span><span style="color:#75715e">	   are tall. */</span>
+	<span style="color:#66d9ef">switch</span> (c) {
+	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;w&#39;</span><span style="color:#f92672">:</span>
+	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;W&#39;</span><span style="color:#f92672">:</span> player.y <span style="color:#f92672">-=</span> interval <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+		<span style="color:#66d9ef">break</span>;
+	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">:</span>
+	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">:</span> player.x <span style="color:#f92672">-=</span> interval;
+		<span style="color:#66d9ef">break</span>;
+	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;s&#39;</span><span style="color:#f92672">:</span>
+	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;S&#39;</span><span style="color:#f92672">:</span> player.y <span style="color:#f92672">+=</span> interval <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+		<span style="color:#66d9ef">break</span>;
+	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;d&#39;</span><span style="color:#f92672">:</span>
+	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;D&#39;</span><span style="color:#f92672">:</span> player.x <span style="color:#f92672">+=</span> interval;
+		<span style="color:#66d9ef">break</span>;
+	}
+
+	draw_ship(player);
+}</code></pre></div>
+<p>Ein wichtiges Detail ist hierbei die Auslagerung aller Raumschiff-spezifischen Logik in eine <code>handle_player</code> Methode, welche (falls vorhanden) den gedrückten Buchstaben als Parameter bekommt. Dies wird später hilfreich werden, wenn andere Spielelemente in <code>run_frame</code> ausgeführt und kontrolliert werden müssen.</p>
+
+<p>Diese Version der <code>handle_player</code> Methode erwartet, dass die globalen Variablen <code>player</code>, <code>term_w</code>, und <code>term_h</code> existieren und <strong>intialisiert sind</strong>. Die Verwendung der Methode könnte daher in etwa so aussehen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#define FRAME_INTERVAL 75
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define PLAYER_WIDTH 3
+</span><span style="color:#75715e">#define PLAYER_HEIGHT 4
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define MOVEMENT_INTERVAL_LARGE 8
+</span><span style="color:#75715e">#define MOVEMENT_INTERVAL_DEFAULT 2
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> term_w, term_h;
+
+<span style="color:#66d9ef">struct</span> ship player;
+
+<span style="color:#75715e">/* Function declarations... */</span>
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+	<span style="color:#75715e">/* ... */</span>
+
+	<span style="color:#66d9ef">int</span> err;
+
+	<span style="color:#66d9ef">if</span> ((err <span style="color:#f92672">=</span> setup_terminal())) {
+		printf(<span style="color:#e6db74">&#34;setup_terminal error: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, err);
+		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+	}
+
+	<span style="color:#66d9ef">if</span> ((err <span style="color:#f92672">=</span> get_terminal_dimensions(<span style="color:#f92672">&amp;</span>term_w, <span style="color:#f92672">&amp;</span>term_h))) {
+		printf(<span style="color:#e6db74">&#34;get_terminal_dimensions error: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, err);
+		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+	}
+
+	hide_cursor();
+	clear_terminal();
+
+	<span style="color:#75715e">/* Start in the center and near the bottom of the screen */</span>
+	player <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> ship){ term_w <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.5</span>, term_h <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.8</span>,
+		PLAYER_WIDTH, PLAYER_HEIGHT };
+
+	<span style="color:#66d9ef">while</span> (<span style="color:#ae81ff">1</span>) {
+		run_frame();
+
+		Sleep(FRAME_INTERVAL);
+	}
+
+	<span style="color:#66d9ef">return</span> EXIT_SUCCESS;
+}
+
+<span style="color:#75715e">/* Function definitions... */</span></code></pre></div>
+<p>Die Implementierung der <code>hide_cursor</code> und <code>clear_terminal</code> Methoden ist dir überlassen.</p>
+
+<p>Ein wichtiges Detail welches in der <code>handle_player</code> Methode noch nicht implementiert wurde, ist die Einschränkung der Bewegung in das Terminal-Fenster. Dies kann auf verschiedenste Wege gelöst werden, im folgenden Beispiel wird eine <code>wrap_around</code> Methode verwendet um das Schiff aus dem jeweilig gegenüberliegendem Rand &ldquo;hereinfliegen&rdquo; zu lassen, sollte ein Rand überschritten werden.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">handle_player</span>(<span style="color:#66d9ef">char</span> c)
+{
+	<span style="color:#75715e">/* ... */</span>
+
+	<span style="color:#75715e">/* Allow infinite movement by looping the player back around if they
+</span><span style="color:#75715e">	   move over one of the edges. */</span>
+	player.x <span style="color:#f92672">=</span> wrap_around(player.x, <span style="color:#ae81ff">0</span>, term_w);
+	player.y <span style="color:#f92672">=</span> wrap_around(player.y, <span style="color:#ae81ff">0</span>, term_h);
+
+	draw_ship(player);
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">wrap_around</span>(<span style="color:#66d9ef">int</span> actual, <span style="color:#66d9ef">int</span> min, <span style="color:#66d9ef">int</span> max)
+{
+	<span style="color:#66d9ef">if</span> (actual <span style="color:#f92672">&lt;</span> min)
+		<span style="color:#66d9ef">return</span> (min <span style="color:#f92672">-</span> actual) <span style="color:#f92672">-</span> max;
+	<span style="color:#66d9ef">if</span> (actual <span style="color:#f92672">&gt;</span> max)
+		<span style="color:#66d9ef">return</span> (actual <span style="color:#f92672">-</span> max) <span style="color:#f92672">+</span> min;
+	
+	<span style="color:#66d9ef">return</span> actual;
+}</code></pre></div>
+<p>Wer die Lücken gefüllt hat, und jetzt ein laufendes Programm vor sich hat, wird merken, dass ein Detail übersehen wurde. Und zwar verstecken wir in der <code>main</code> Methode zwar den cursor, lassen ihn aber nicht wieder erscheinen.</p>
+
+<p>Eine solche <code>show_cursor</code> Methode nun aber einfach nach den game loop zu setzten würde das Problem auch nicht lösen &ndash; üblicherweise wird das Spiel durch <code>Ctrl+C</code> beendet werden, welches durch ein <code>SIGINT</code> den Programmablauf stoppt. Eine solche Methode würde also nie erreicht werden.</p>
+
+<p>Die Lösung hierfür ist eine relativ einfache &ndash; es empfiehlt sich die Dokumentation der <code>signal</code> Methode der C standard library zu lesen. Hier dennoch ein Beispiel.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+	<span style="color:#75715e">/* ... */</span>
+
+	<span style="color:#75715e">/* Catch Ctrl + C */</span>
+	signal(SIGINT, handle_exit);
+
+	<span style="color:#75715e">/* ... */</span>
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">handle_exit</span>()
+{
+	show_cursor();
+	clear_terminal();
+
+	exit(EXIT_SUCCESS);
+}</code></pre></div>
+<h3 id="fazit-1">Fazit</h3>
+
+<p>Damit ist die Bewegung des Raumschiffes vollständig implementiert. Wir werden noch viel mit der <code>run_frame</code> Methode arbeiten, aber der Rahmen und wohl wichtigste Teil des Spieles, steht.</p>
+
+<p>Wie auch schon zuvor, ist eine Implementation der neuen Methoden im <a href="https://github.com/LW2904/vt-space/tree/master/tutorial/2-spaceship" target="_blank">tutorial/2-spaceship</a> Ordner zu finden.</p>
+
+<h2 id="projektile-und-schießen">Projektile und Schießen</h2>
+
+<h3 id="zeichnen-1">Zeichnen</h3>
+
+<p>Unsere Geschosse werden einfache Linien sein, in etwa wie kurze Lasersalven. Nachdem wir ja bereits eine <code>draw_rectangle</code> Methode entwickelt haben, ist die Implementation einer <code>draw_projectile</code> Methode eine einfache Aufgabe.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw_projectile</span>(<span style="color:#66d9ef">struct</span> projectile p)
+{
+	draw_rectangle(p.x, p.y, p.width, p.height);
+}</code></pre></div>
+<p><code>struct projectile</code> ist in diesem Beispiel so deklariert:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">struct</span> projectile {
+	<span style="color:#66d9ef">int</span> x;
+	<span style="color:#66d9ef">int</span> y;
+	<span style="color:#66d9ef">int</span> speed;
+	<span style="color:#66d9ef">int</span> width;
+	<span style="color:#66d9ef">int</span> height;
+};</code></pre></div>
+<h3 id="abfeuern">Abfeuern</h3>
+
+<p>Um Projektile abfeuern zu können müssen wir</p>
+
+<ul>
+<li>wissen ob gerade Space gedrückt wurde, um festzustellen ob ein neues Projektil hinzugefügt werden soll</li>
+<li>alle Projektile die gerade im Flug sind kennen, insbesondere&hellip;
+
+<ul>
+<li>ihre Geschwindigkeit</li>
+<li>ihre Position um sie&hellip;
+
+<ul>
+<li>nach oben &ldquo;fliegen&rdquo; zu lassen</li>
+<li>zu entfernen, sobald sie den oberen Rand erreicht haben</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>Die Geschwindigkeit wird sich während des Fluges nicht ändern, und wir werden sie als &ldquo;Zeilen/Frame&rdquo; definieren. Ein Projektil mit einer Geschwindigkeit von 3 wird pro Frame drei Zeilen nach oben fliegen, also um drei Zeilen nach oben bewegt werden.</p>
+
+<p>Wie zuvor mit <code>handle_player</code> werden wir auch hier eine <code>handle_projectiles</code> Methode implementieren, die für jedes Frame aufgerufen wird.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#define PROJECTILES_MAX 16
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define PROJECTILE_SPEED 3
+</span><span style="color:#75715e">#define PROJECTILE_WIDTH 1
+</span><span style="color:#75715e">#define PROJECTILE_HEIGHT 4
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> num_projectiles <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">struct</span> projectiles projectiles[PROJECTILES_MAX];
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">handle_projectiles</span>(<span style="color:#66d9ef">char</span> c)
+{
+	<span style="color:#66d9ef">if</span> (c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>) {
+		projectiles[num_projectiles<span style="color:#f92672">++</span>] <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> projectile){
+			player.x <span style="color:#f92672">+</span> player.width <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, player.y <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>,
+			PROJECTILE_SPEED, PROJECTILE_WIDTH, PROJECTILE_HEIGHT
+		};
+	}
+
+	<span style="color:#75715e">/* Remove oldest projectile(s) if there are too many */</span>
+	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;=</span> num_projectiles <span style="color:#f92672">-</span> PROJECTILES_MAX; i<span style="color:#f92672">++</span>)
+		remove_projectile(i);
+
+	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> num_projectiles; i<span style="color:#f92672">++</span>)
+		handle_projectile(i);
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">handle_projectile</span>(<span style="color:#66d9ef">int</span> index)
+{
+	<span style="color:#66d9ef">struct</span> projectile <span style="color:#f92672">*</span>p <span style="color:#f92672">=</span> projectiles <span style="color:#f92672">+</span> index;
+
+	p<span style="color:#f92672">-&gt;</span>y <span style="color:#f92672">-=</span> p<span style="color:#f92672">-&gt;</span>speed;
+
+	<span style="color:#66d9ef">if</span> (p<span style="color:#f92672">-&gt;</span>y <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">-</span> p<span style="color:#f92672">-&gt;</span>height) {
+		remove_projectile(index);
+
+		<span style="color:#66d9ef">return</span>;
+	}
+
+	draw_projectile(<span style="color:#f92672">*</span>p);
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">remove_projectile</span>(<span style="color:#66d9ef">int</span> index)
+{
+	num_projectiles <span style="color:#f92672">=</span> remove_array_item(projectiles, index, num_projectiles,
+		<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">struct</span> projectile));
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">remove_array_item</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>array, <span style="color:#66d9ef">int</span> index, <span style="color:#66d9ef">int</span> length, size_t item_size)
+{
+	size_t byte_offset <span style="color:#f92672">=</span> item_size <span style="color:#f92672">*</span> index;
+	size_t new_size <span style="color:#f92672">=</span> item_size <span style="color:#f92672">*</span> (length <span style="color:#f92672">-</span> index <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);
+
+	<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>arr <span style="color:#f92672">=</span> (<span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>)array;
+
+	memmove(arr <span style="color:#f92672">+</span> byte_offset, arr <span style="color:#f92672">+</span> byte_offset <span style="color:#f92672">+</span> item_size, new_size);
+
+	<span style="color:#66d9ef">return</span> length <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
+}</code></pre></div>
+<p>Der obige Beispielcode ist relativ komplex, weshalb wir ihn hier noch einmal Schritt für Schritt durchgehen.</p>
+
+<p><code>void handle_projectiles(char c)</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">if</span> (c <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39; &#39;</span>) {
+	projectiles[num_projectiles<span style="color:#f92672">++</span>] <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> projectile){
+		player.x <span style="color:#f92672">+</span> player.width <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, player.y <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>,
+		PROJECTILE_SPEED, PROJECTILE_WIDTH, PROJECTILE_HEIGHT
+	};
+}</code></pre></div>
+<p>Wenn die gedrückte Taste (ergo <code>c</code>) gleich <code>' '</code> ist, also die Leertase war, füge an der Stelle <code>num_projectiles</code> ein neues <code>struct projectile</code> (ergo ein Projektil) hinzu, und erhöhe <code>num_projectiles</code> um eins. Das funktioniert, weil <code>num_projectiles</code>, also die Länge des <code>projectiles</code> Array, am Anfang <code>0</code> ist. Der erste Index auf den wir schreiben ist also <code>0</code>, und nachdem wir das neue Projektil hinzugefügt haben ist er <code>num_projectiles + 1</code> -&gt; <code>0 + 1</code> -&gt; <code>1</code>. Beim nächsten feuern, wird <code>num_projectiles</code> eins sein, also werden wir auf den Index <code>1</code> schreiben, und danach <code>num_projectiles</code> auf <code>2</code> erhöhen, und so weiter.</p>
+
+<p>Das geht aber nur so lange gut, bis wir die maximale Länge erreicht haben &ndash; in diesem Fall <code>PROJECTILES_MAX</code>, also 16. Würde diese Überschritten werden, würden wir in Speicherregionen schreiben die uns nicht gehören was zu sehr schwer findbaren Bugs führen würde. Die folgende Schleife soll dies verhindern.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">/* Remove oldest projectile(s) if there are too many */</span>
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;=</span> num_projectiles <span style="color:#f92672">-</span> PROJECTILES_MAX; i<span style="color:#f92672">++</span>)
+	remove_projectile(i);</code></pre></div>
+<p>Bis <code>num_projectiles</code> einmal <code>PROJECTILES_MAX</code> erreicht hat, passiert hier nichts &ndash; es gibt ja auch keinen Handlungsbedarf, genug Platz ist vorhanden. Erreicht <code>num_projectiles</code> nun aber <code>PROJECTILES_MAX</code> (oder überschreitet es gar), werden die ältesten (niedrigsten) Projektile entfernt, um Platz für das nächste zu machen.</p>
+
+<p>Das könnte man so verdeutlichen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">...
+
+num_projectiles <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>
+-&gt; Schleife läuft nicht, <span style="color:#e6db74">`</span>i<span style="color:#e6db74">`</span> <span style="color:#f92672">(</span>welches bei null anfängt<span style="color:#f92672">)</span> ist nicht kleiner oder gleich <span style="color:#ae81ff">15</span> - 16, also -1
+
+&lt;projectil wird hinzugefügt, num_projectiles wird um eins erhöht&gt;
+
+num_projectiles <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>
+-&gt; Schleife läuft einmal da <span style="color:#e6db74">`</span><span style="color:#ae81ff">16</span> - 16 <span style="color:#f92672">==</span> 0<span style="color:#e6db74">`</span>, und <span style="color:#e6db74">`</span><span style="color:#ae81ff">0</span> &lt;<span style="color:#f92672">=</span> 0<span style="color:#e6db74">`</span>
+--&gt; Projektil an der Stelle null <span style="color:#f92672">(</span>also das Älteste<span style="color:#f92672">)</span> wird entfernt, num_projectiles ist nun wieder <span style="color:#ae81ff">15</span>
+
+&lt;projectil wird hinzugefügt, num_projectiles wird um eins erhöht&gt;
+
+num_projectiles <span style="color:#f92672">=</span> <span style="color:#ae81ff">16</span>
+-&gt; Schleife läuft einmal da...
+--&gt; ...
+
+...</code></pre></div>
+<p>Man könnte die obenstehende <code>for</code> Schleife als</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">if</span> (num_projectiles <span style="color:#f92672">==</span> PROJECTILES_MAX)
+	remove_projectile(num_projectiles <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>);</code></pre></div>
+<p>vereinfachen, würde dabei allerdings nur eine von (theorethisch) vielen Möglichkeiten abdecken. Praktisch wird <code>num_projectiles</code> wahrscheinlich nie höher als 16 sein &ndash; sollte dies aber aus welchem Grund auch immer doch so sein, wird die Schleifen-Implementation noch immer in der Lage sein wie erwartet zu funktionieren.</p>
+
+<h3 id="fazit-2">Fazit</h3>
+
+<p>Damit ist das abfeuern (und damit das zeichnen und die bewegung von) Projektilen vollständig implementiert.</p>
+
+<p>Beispielcode ist wie immer unter <a href="https://github.com/LW2904/vt-space/tree/master/tutorial/3-projectile" target="_blank">tutorial/3-projectile</a> zu finden.</p>
+
+<h2 id="gegner-und-eliminierungen">Gegner und Eliminierungen</h2>
+
+<h3 id="zeichnen-2">Zeichnen</h3>
+
+<p>Der Einfachheit halber werden unsere Gegner einfache Rechtecke sein. Das hat den Vorteil, dass wir diese mit unserer <code>draw_rectangle</code> Methode sehr einfach zeichnen können, aber es erleichtert zusätzlich auch die hit-detection, also die Feststellung von Treffern.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">draw_enemy</span>(<span style="color:#66d9ef">struct</span> enemy e)
+{
+	draw_rectangle(e.x, e.y, e.width, e.height);
+}</code></pre></div>
+<p>Wie schon bei den Projektilen deklarieren wir für Gegner ein <code>struct enemy</code>, das wie folgt aussieht.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">struct</span> enemy {
+	<span style="color:#66d9ef">int</span> x;
+	<span style="color:#66d9ef">int</span> y;
+	<span style="color:#66d9ef">int</span> speed;
+	<span style="color:#66d9ef">int</span> width;
+	<span style="color:#66d9ef">int</span> height;
+};</code></pre></div>
+<h3 id="erscheinen-spawnen">Erscheinen (&ldquo;Spawnen&rdquo;)</h3>
+
+<p>Gegner sollen in einem langsam höher werdendem Intervall von &ldquo;oben&rdquo; nach &ldquo;unten&rdquo; fliegen. Erreichen sie das untere Ende des Terminals soll das spiel beendet werden &ndash; das sollte hier also immer eintreten nachdem wir uns erst später mit dem abschiessen von Gegnern befassen werden.</p>
+
+<p>&ldquo;Bewegung&rdquo; schreit nach einer <code>handle_*</code> Methode wie wir sie bereits für das Raumschiff und die Projektile implementiert haben. Das könnte in etwa wie folgt aussehen.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">#define STATUS_FAIL -1
+</span><span style="color:#75715e">#define STATUS_CONTINUE 0
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define ENEMIES_MAX 32
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define ENEMY_SPEED 1
+</span><span style="color:#75715e">#define ENEMY_WIDTH 4
+</span><span style="color:#75715e">#define ENEMY_HEIGHT 4
+</span><span style="color:#75715e">#define ENEMY_FREQUENCY 40
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> num_enemies <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">int</span> enemy_freq <span style="color:#f92672">=</span> ENEMY_FREQUENCY;
+<span style="color:#66d9ef">struct</span> enemy enemies[ENEMIES_MAX];
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">handle_enemies</span>()
+{
+	<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> spawn_counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+	<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> increase_counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+	<span style="color:#66d9ef">if</span> (<span style="color:#f92672">++</span>spawn_counter <span style="color:#f92672">&gt;</span> enemy_freq) {
+		spawn_counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+		<span style="color:#75715e">/* Range in terminal X: [10%, 90%] */</span>
+		<span style="color:#66d9ef">int</span> x <span style="color:#f92672">=</span> (rand() <span style="color:#f92672">%</span> term_w <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.8</span>) <span style="color:#f92672">+</span> term_w <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.1</span>;
+		<span style="color:#75715e">/* Start just outside the terminal Y */</span>
+		<span style="color:#66d9ef">int</span> y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">-</span> ENEMY_WIDTH;
+
+		enemies[num_enemies<span style="color:#f92672">++</span>] <span style="color:#f92672">=</span> (<span style="color:#66d9ef">struct</span> enemy){ x, y, ENEMY_SPEED,
+			ENEMY_WIDTH, ENEMY_HEIGHT };
+	}
+
+	<span style="color:#66d9ef">if</span> (<span style="color:#f92672">++</span>increase_counter <span style="color:#f92672">&gt;</span> enemy_freq <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>) {
+		increase_counter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+		enemy_freq<span style="color:#f92672">--</span>;
+	}
+
+	<span style="color:#75715e">/* Remove oldest enemies if there are too many, this should never
+</span><span style="color:#75715e">	   realistically happen */</span>
+	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;=</span> num_enemies <span style="color:#f92672">-</span> ENEMIES_MAX; i<span style="color:#f92672">++</span>)
+		remove_enemy(i);
+	
+	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> num_enemies; i<span style="color:#f92672">++</span>) {
+		<span style="color:#66d9ef">struct</span> enemy <span style="color:#f92672">*</span>e <span style="color:#f92672">=</span> enemies <span style="color:#f92672">+</span> i;
+
+		e<span style="color:#f92672">-&gt;</span>y <span style="color:#f92672">+=</span> e<span style="color:#f92672">-&gt;</span>speed;
+
+		<span style="color:#75715e">/* If an enemy reached the bottom of the terminal, notify our
+</span><span style="color:#75715e">		   caller */</span>
+		<span style="color:#66d9ef">if</span> (e<span style="color:#f92672">-&gt;</span>y <span style="color:#f92672">&gt;=</span> term_h)
+			<span style="color:#66d9ef">return</span> STATUS_FAIL;
+		
+		draw_enemy(<span style="color:#f92672">*</span>e);
+	}
+
+	<span style="color:#66d9ef">return</span> STATUS_CONTINUE;
+}
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">remove_enemy</span>(<span style="color:#66d9ef">int</span> index)
+{
+	num_enemies <span style="color:#f92672">=</span> remove_array_item(enemies, index, num_enemies,
+		<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">struct</span> enemy));
+}</code></pre></div>
+<p>Hier passieren viele Dinge, also wieder Schritt für Schritt:</p>
+
+<p>Die erste Hälfte der Methode befasst sich mit dem spawning (also dem hinzufügen) von neuen Gegnern. Erreicht der <code>spawn_counter</code>, welcher mit jedem call um eins erhöht wird, die <code>enemy_freq</code> (also &ldquo;enemy frequency&rdquo;, zu Deutsch &ldquo;Gegnerhäufigkeit&rdquo;) wird ein neuer <code>enemy</code> hinzugefügt. Die anfängliche Y Position aller Gegner ist immer gleich &ndash; sie erscheinen knapp ausserhalb des Terminal-Fensters. Die X Position jedoch ist zufällig aus einem Bereich von 10% zu 90% der Breite des Terminal-Fensters gewählt.</p>
+
+<p>Damit haben wir jetzt also ein regelmässiges Erscheinen von Gegnern, aber die Frequenz, und damit die Schwierigkeit, bleibt konstant. Aus diesem Grunde wird der <code>increase_counter</code> neben dem <code>spawn_counter</code> erhöht, und sorgt für regelmässige Schwierigkeitserhöhungen durch eine Verringerung der Pause zwischen den spawns.</p>
+
+<p>Der nächste <code>for</code>-loop ist von <code>handle_projectiles</code> bereits bekannt, hier ist er jedoch eher der Vollständigkeit halber inkludiert. Es ist sehr unwahrscheinlich, dass jemals mehr als <code>ENEMIES_MAX</code> Gegner auf dem Bildschirm sein werden &ndash; das würde entweder eine unrealistisch hohe Spawnfrequenz oder ein sehr großes Terminal-Fenster voraussetzen.</p>
+
+<p>Im darauf folgenden <code>for</code>-loop ist eine ähnliche Logik wie in der <code>handle_projetile</code> Methode zu finden, hier lohnt sich das Auslagern allerdings nicht wirklich.</p>
+
+<p>Wichtig bei dieser Methode ist der return type, in diesem Fall <code>int</code>. <code>handle_enemies</code> gibt einen Status zurück der angibt ob das Spiel weitergehen, oder beendet werden soll. Überschreitet nun ein Gegner das untere Ende des Terminals gibt die Methode <code>STATUS_FAIL</code> zurück, und erwartet, dass die aufrufende Methode (in userem Fall wird das <code>run_frame</code> sein) auf den Status reagiert.</p>
+
+<p>Das kann dann in etwa so implementiert werden.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+	<span style="color:#75715e">/* ... */</span>
+
+	<span style="color:#66d9ef">while</span> (<span style="color:#ae81ff">1</span>) {
+		<span style="color:#66d9ef">if</span> (run_frame() <span style="color:#f92672">!=</span> STATUS_CONTINUE)
+			<span style="color:#66d9ef">break</span>;
+
+		Sleep(FRAME_INTERVAL);
+	}
+
+	<span style="color:#75715e">/* ... */</span>
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">run_frame</span>()
+{
+	<span style="color:#75715e">/* ... */</span>
+
+	<span style="color:#75715e">/* On failure, move status up the chain */</span>
+	<span style="color:#66d9ef">if</span> (handle_enemies() <span style="color:#f92672">==</span> STATUS_FAIL)
+		<span style="color:#66d9ef">return</span> STATUS_FAIL;
+
+	<span style="color:#66d9ef">return</span> STATUS_CONTINUE;
+}</code></pre></div>
+<p>Damit ist die oben definierte Funktionalität vollständig implementiert. Das einzige verbleibende kritische Feature ist nun das eliminieren von Gegnern.</p>
+
+<h3 id="abschüsse">Abschüsse</h3>
+
+<p>Nachdem das Abschiessen von Gegnern eher zu den <code>projectile</code> Handlern passt, werden wir die relevante Logik auch in der <code>handle_projectile</code> Methode implementieren &ndash; spätestens jetzt wird klar werden, warum wir das in eine eigene Methode ausgelagert haben.</p>
+
+<p>Um nun in <code>handle_projectile</code> einen Abschuss festzustellen müssen wir nur beobachten ob das jeweilige Projektil &ldquo;in&rdquo; einem Gegner ist. Das könnte man so implementieren:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">int</span> eliminations <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">handle_projectile</span>(<span style="color:#66d9ef">int</span> index)
+{
+	<span style="color:#75715e">/* ... */</span>
+
+	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> num_enemies; i<span style="color:#f92672">++</span>) {
+		<span style="color:#66d9ef">struct</span> enemy <span style="color:#f92672">*</span>e <span style="color:#f92672">=</span> enemies <span style="color:#f92672">+</span> i;
+
+		<span style="color:#75715e">/* If the projectile is &#34;inside&#34; of any enemy... */</span>
+		<span style="color:#66d9ef">if</span> (pos_inside(p<span style="color:#f92672">-&gt;</span>x, p<span style="color:#f92672">-&gt;</span>y, e<span style="color:#f92672">-&gt;</span>x, e<span style="color:#f92672">-&gt;</span>y, e<span style="color:#f92672">-&gt;</span>width, e<span style="color:#f92672">-&gt;</span>height)) {
+			remove_enemy(i);
+			remove_projectile(index);
+
+			eliminations<span style="color:#f92672">++</span>;
+		}
+	}
+
+	draw_projectile(<span style="color:#f92672">*</span>p);
+}</code></pre></div>
+<h3 id="fazit-3">Fazit</h3>
+
+<p>Damit ist die Grundfunktion des Spiels fertig implementiert. Es gibt noch viele Möglichkeiten die Funktionalität auszubauen, vielleicht kannst du Inspiration von dem Originalprojekt unter <a href="https://github.com/LW2904/vt-space/tree/master/original" target="_blank">vt-space/original</a> bekommen. Unter <a href="https://github.com/LW2904/vt-space/tree/master/tutorial/4-enemies" target="_blank">vt-space/tutorial/4-enemies</a> ist wie immer eine vollständige Implementation der erwähnten Methoden gegeben, die nun das Funktionsfähige Spiel bilden.</p>
+
+<p>Noch ausstehende und im Original implementierte Features wären beispielsweise</p>
+
+<ul>
+<li>Linux support</li>
+<li>&ldquo;Game Over&rdquo;-Screen mit Eliminierungen und Möglichkeit zum restart</li>
+<li>Möglichkeit das Spiel zu pausieren</li>
+<li>&ldquo;Help&rdquo;-Screen mit Keybinds und Spielstart bei Tastendruck</li>
+</ul>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

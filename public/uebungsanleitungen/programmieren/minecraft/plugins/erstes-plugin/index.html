@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Dein erstes Plugin </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/">Minecraft</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/">Plugins</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#dein-erstes-plugin-sayhello">Dein erstes Plugin /sayhello</a>
+<ul>
+<li><a href="#einleitung">Einleitung</a></li>
+<li><a href="#ein-neues-netbeans-projekt-anlegen">Ein neues NetBeans-Projekt anlegen</a>
+<ul>
+<li><a href="#großeltern-imponier-wissen">Großeltern-Imponier-Wissen</a></li>
+</ul></li>
+<li><a href="#ausführliche-anleitung">Ausführliche Anleitung</a>
+<ul>
+<li><a href="#ein-package-und-die-plugin-klasse-anlegen">Ein Package und die Plugin-Klasse anlegen</a></li>
+<li><a href="#die-klasse-programmieren">Die Klasse programmieren</a></li>
+<li><a href="#das-plugin-yml-anlegen-das-projekt-bauen-und-testen">Das <code>plugin.yml</code> anlegen, das Projekt bauen und testen</a></li>
+<li><a href="#eine-erweiterung">Eine Erweiterung</a></li>
+<li><a href="#großeltern-imponier-wissen-1">Großeltern-Imponier-Wissen</a></li>
+<li><a href="#zusammenfassung">Zusammenfassung</a></li>
+</ul></li>
+<li><a href="#kurzversion-für-profis">Kurzversion für Profis</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="dein-erstes-plugin-sayhello">Dein erstes Plugin /sayhello</h1>
+
+<h2 id="einleitung">Einleitung</h2>
+
+<p>Nach den Vorbereitungsarbeiten können wir nun endlich unser erstes Plugin entwickeln. Wenn wir mit dieser Episode fertig sind, wirst du in Minecraft den Befehl <code>/sayhello</code> eingeben können und du wirst eine Antwort erhalten und er wird dich sogar mit deinem Minecraft-Namen ansprechen.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/Command.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Dieses wird vielleicht noch nicht das absolute Killer-Plugin auf <em>Curse</em> sein aber eine Reise beginnt immer mit ihrem ersten Schritt. Also, los gehts:</p>
+
+<h2 id="ein-neues-netbeans-projekt-anlegen">Ein neues NetBeans-Projekt anlegen</h2>
+
+<p>Als erstes starten wir natürlich NetBeans. Die StartPage brauchen wir nicht und du kannst sie gleich wegklicken. Jetzt gehst du ins Menü <strong>File</strong> und findest als ersten Menüpunkt <strong>New Project …</strong> Wenn du den auswählst, siehst du folgendes Fenster:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/ChooseProject.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Du wählst die Kategorie <strong>Java</strong> und von den Projekten <strong>Java Class Library</strong>, anschließend klickst du auf <strong>Next &gt;</strong>. Damit siehst du sofort ein weiteres Fenster, das folgendermaßen aussieht:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/NameAndLocateProject.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Hier vergibst du einen sinnvollen Projektnamen. Da es unser erstes Plugin ist, tut es auch ein etwas einfallsloses <strong>FirstPlugin</strong>, besser verständlich ist natürlich ein Name wie <strong>GreetMe</strong>. Für die <strong>Project Location</strong> suchst du dir einen Platz auf deiner Festplatte, wo du das Plugin auch wiederfindest. <strong>Project Folder</strong> lässt sich nicht ändern. Dieses Feld zeigt dir nur, wo dein Projekt und alle seine Files gespeichert werden. Damit bist du fertig und kannst auf den Button <strong>Finish</strong> drücken. Damit verschwindet das Fenster und du hast einen ersten Blick auf dein gesamtes Projekt.</p>
+
+<p>So nun wollen wir uns mal ein wenig orientieren.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/NetBeansOverview.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Der Arbeitsbereich in NetBeans gliedert sich grundsätzlich in 5 Teile. Wir gehen diese nummernweise durch:</p>
+
+<ol>
+<li>Im <em>Project Explorer</em> hast du einen Überblick über dein Projekt. Alle Dateien, die du dazu brauchst sind hier aufgelistet und können relative schnell gefunden werden. Die wichtigsten Files wirst du unter <strong>Source Packages</strong> finden.</li>
+<li>Im <em>Navigator</em> wirst du, nachdem wir das erste File editieren, einen Überblick über das geöffnete File haben. Wenn das File ein wenig größer wird, wirst du sehen, dass es sehr bequem ist, wenn man schnell zu bestimmten Punkten im File springen kann.</li>
+<li>Im <em>Information Panel</em> bekommst du Informationen, die beim Arbeiten wichtig sind. Beispielsweise kannst du hier sehen, ob du dein Projekt erfolgreich &ldquo;baut&rdquo;, das heißt für den Einsatz in Minecraft übersetzt werden kann.</li>
+<li>Das ist der <em>Editor</em>. Hier werden wir dann Java-Code reinschreiben</li>
+<li>Das ist die <em>Toolbar</em>. Manche Befehle (z. B. um das Projekt zu bauen) können wir hier schnell erreichen.</li>
+</ol>
+
+<p>Bevor wir jetzt endlich mit dem Programmieren beginnen, müssen wir noch die Datei <code>craftbukkit.jar</code> zu unserem Projekt hinzufügen. Ja du liest richtig, es ist genau dieselbe Datei, die wir bereits verwendet haben, um unseren Server zu starten. Am besten legst du dir eine Kopie an und legst sie im Ordner neben deinem FirstPlugin ab. Nun klickst du im <strong>Project Explorer</strong> mit der rechten Maustaste auf den Ordner <strong>Libraries</strong> und wählst den Punkt <strong>Add JAR/Folder…</strong> aus:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddJarStep1.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Nun siehst du folgendes Fenster in welchem du zum File <code>craftbukkit.jar</code> navigieren kannst. Wähle es aus und klicke auf <strong>Choose</strong>.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddJarStep2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Jetzt siehst du im <strong>Project Explorer</strong> im Ordner <strong>Libraries</strong> die Datei <code>craftbukkit.jar</code>. So jetzt können wir mit dem Programmieren beginnen.</p>
+
+<h3 id="großeltern-imponier-wissen">Großeltern-Imponier-Wissen</h3>
+
+<ul>
+<li>Java-Programme müssen, bevor sie ausgeführt werden können, <em>gebaut</em> werden. Das heißt, dass man den Java-Code (also das, was du schreibst) in einen Maschinen-Code (also das, was ein Computer ausführen kann) umwandeln muss. Manchmal sagt man auch, dass das Programm <em>compiliert</em> werden muss.</li>
+<li>Wenn du ein Minecraft-Plugin schreibst, brauchst du Informationen vom Server (z. B. den Namen des Spielers) oder willst auch das Verhalten des Servers teilweise verändern (z. B. soll er auf das Kommando <code>/sayhello</code> reagieren, was er ja sonst mal so nicht täte). Damit das möglich ist, gibt es das sogenannte <em>API</em> (<strong>A</strong>pplication <strong>P</strong>rogrammer <strong>I</strong>nterface), das sind alle &ldquo;Funktionen&rdquo;, die der Server für dich zum Programmieren zur Verfügung stellt. Damit wir das API zur Verfügung haben, fügen wir die Datei <code>craftbukkit.jar</code> zu unserem Projekt dazu.</li>
+</ul>
+
+<h2 id="ausführliche-anleitung">Ausführliche Anleitung</h2>
+
+<h3 id="ein-package-und-die-plugin-klasse-anlegen">Ein Package und die Plugin-Klasse anlegen</h3>
+
+<p>Du speicherst Java-Dateien in <em>Packages</em> ab. Wenn du im <strong>Project Explorer</strong> den Ordner <strong>Source Packages</strong> öffnest, siehst du das Package <strong>&lt;default package&gt;</strong>. Damit Package-Namen aber sicherlich eindeutig sind, legst du besser ein neues Package an, mit <code>io.coderdojo-linz.&lt;dein-name&gt;.firstplugin</code> (dabei ersetzt du <code>&lt;dein-name&gt;</code> durch deinen Namen). Wenn du eine eigene Domain über die du im Netz erreichbar bist hast, dann kannst du auch die verwenden.</p>
+
+<p>Also klickst du mit der rechten Maustaste auf <strong>Source Packages</strong> und wählst aus dem Kontextmenü <strong>New</strong> und dann <strong>Java Package &hellip;</strong> aus.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/NewPackageStep1.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Im nun folgenden Fenster gibst du den Namen deines Packages, wie wir oben beschrieben haben, ein und klickst auf den Button <strong>Finish</strong>.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/NewPackageStep2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Jetzt ist das Package <strong>&lt;default package&gt;</strong> verschwunden. Das macht nichts, weil wir es derzeit echt nicht brauchen. Und nun musst du noch die Klasse anlegen, in der wir dieses Plugin programmieren. Dazu (Überraschung!!) klickst du mit der rechten Maustaste auf das neu erstellte Package und wählst dann <strong>New</strong> und <strong>Java Class&hellip;</strong> aus</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/NewClassStep1.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Im darauffolgenden Fenster gibst du der neuen Klasse einen Namen und klickst auf <strong>Finish</strong>.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/NewClassStep2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Jetzt solltest du in NetBeans ziemlich genau dieses Bild vor dir haben:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/NewClassStep3.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Die grauen Zeilen am Anfang des Files sehen wahrscheinlich ein wenig anders aus. Das macht aber nix, weil das ist ein Kommentar und Kommentare werden vom Compiler ignoriert. Man verwendet Kommentare, um etwas in sein Programm reinzuschreiben, das für Menschen wichtig ist, aber nicht für Computer. Du kannst das ausprobieren und in einer Zeile <em>außerhalb</em> eines Kommentars folgende Zeilen dazuschreiben:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/*
+</span><span style="color:#75715e">Ich kann so schreiben wie ich bin. Du darfst.
+</span><span style="color:#75715e">*/</span></code></pre></div>
+<p>Wenn du jetzt aber die Zeichen <code>/*</code> und <code>*/</code> wegnimmst, dann wirst du sehen, dass der Text, den du geschrieben hast, rot unterstrichen ist und das bedeutet, dass der Compiler in deinem Java-Programm einen Fehler entdeckt hat. Also schließen wir daraus, dass mit <code>/*</code> ein Kommentar beginnt und so lange ist, bis die Zeichen <code>*/</code> vorkommen.</p>
+
+<h3 id="die-klasse-programmieren">Die Klasse programmieren</h3>
+
+<p>Nun musst du dieser Klasse als erstes mal mitteilen, dass sie ein Plugin werden soll. Das machst du indem du in der Zeile mit <code>public class FirstPlugin {</code> folgendes dazuschreibst:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/ExtendJavaPlugin.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Du siehst nun, dass das Wort <code>JavaPlugin</code> rot unterstrichen ist und am Beginn der Zeile einen Hinweis bekommen hast. Das bedeutet, dass der Compiler einen Fehler gefunden hat (rot unterstrichen) und aber einen oder mehrere Lösungsvorschläge für dich hat (gelbe Glühbirne am Beginn der Zeile). Wenn du auf die Glühbirne klickst, bekommst du die Option angeboten, <strong>Add import org.bukkit.plugin.java.JavaPlugin</strong> und genau das wählst du aus. Damit sollte die Fehlermeldung verschwunden sein und ein paar Zeilen über der Zeile, die du gerade geschrieben hast, die Codezeile <code>import org.bukkit.plugin.java.JavaPlugin;</code> stehen.</p>
+
+<p>Somit hätten wir ein fast lauffähiges Plugin, das genau gar nix macht. Da das genau niemand braucht, werden wir dem Ding mal sagen, dass es bei Aufruf <code>Hello stranger</code> ausgeben soll. Dazu müssen wir eine <em>Methode</em> anlegen und das geht so: Als erstes klickst du in die Klasse <code>FirstPlugin</code>, das heißt, du platzierst den Cursor in die Zeile zwischen der geschwungenen Klammer auf und wieder zu.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FirstPlugin</span> <span style="color:#66d9ef">extends</span> JavaPlugin <span style="color:#f92672">{</span>
+    <span style="color:#75715e">// your cursor must be here
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span></code></pre></div>
+<p>Also du klickst genau in die leere Zeile. Dann gehst du auf das Menü <strong>Source</strong> und wählst <strong>Insert Code&hellip;</strong> aus.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddOnCommandStep1.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Damit bekommst du ein kleines Fensterchen, in welchem du <strong>Override Method&hellip;</strong> auswählst.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddOnCommandStep2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Und weils grad so lustig ist, kommt gleich noch ein Fenster, in welchem wir die Zeile mit <strong>onCommand(CommandSender sender, &hellip;)</strong> auswählen.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddOnCommandStep3.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Wenn du dann auf <strong>Generate</strong> klickst, siehst du in deiner Klasse eine erste <em>Methode</em>. In einer Methode legst du fest, was das Plugin machen soll. Dazu löschst du als erstes die Zeile mit <code>return super.onCommand(sender, command, label, args)</code> und schreibst stattdessen folgendes rein:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello stranger&#34;</span><span style="color:#f92672">);</span>
+<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span></code></pre></div>
+<p>Am Ende sollte deine Klasse genau so aussehen:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddOnCommandStep4.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Wenn du dich ein wenig umsiehst, wirst du merken, dass zum Import von <code>org.bukkit.plugin.java.JavaPlugin</code> noch ein paar weitere Imports dazugekommen sind und dann eben die <em>Methode</em> <code>onCommand</code>. Wenn du das noch nicht verstehst, mach dir keine Sorgen. Wir kommen darauf zurück.</p>
+
+<p>Jetzt wollen wir aber so schnell wie möglich durch und unser Plugin zum Laufen bekommen. Was uns noch fehlt ist, dass wir für Minecraft erkenntlich machen, wie das Plugin heißt und auf welches Kommando es reagiert. Das machen wir im <code>plugin.yml</code>.</p>
+
+<h3 id="das-plugin-yml-anlegen-das-projekt-bauen-und-testen">Das <code>plugin.yml</code> anlegen, das Projekt bauen und testen</h3>
+
+<p>Im <code>plugin.yml</code> schreiben wir alles das rein, das Minecraft braucht, um unser Plugin zu erkennen und im richtigen Moment auch aufrufen zu können. Dazu legen wir das File zuerst einmal an. Überraschenderweise klickst du wieder mit der rechten Maustaste auf das <strong>Source Package</strong> und wählst <strong>New</strong> und <strong>YAML File&hellip;</strong> aus. Falls du diesen Eintrag nicht findest, wählst du im Menü ganz unten <strong>Other&hellip;</strong> aus und wählst aus der Kategorie <strong>Other</strong> den Punkt <strong>YAML File</strong> aus.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddYamlStep1.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Inzwischen kennst du den zweiten Schritt wahrscheinlich auch schon: Wir müssen das File benennen. Achte darauf, dass,</p>
+
+<ol>
+<li>das File wirklich <code>plugin</code> heißt und</li>
+<li>wie beim Java-File auch, du nicht die Dateierweiterung <code>.yml</code> dazuschreibst. Es reicht der Name <code>plugin</code>, im Feld <strong>Created File</strong> siehst du, dass das <code>yml</code> automatisch angehängt wird:</li>
+</ol>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddYamlStep2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Und wenn du jetzt in den Project Explorer schaust, dann entdeckst du, dass unser geliebtes <code>&lt;default package&gt;</code> wiederauferstanden ist. Das ist auch richtig so, da Minecraft das <code>plugin.yml</code> genau an dieser Stelle sucht.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddYamlStep3.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Jetzt haben wir wieder ein leeres File und dürfen hier die notwendigen Informationen eintragen:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/AddYamlStep4.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Bevor du beginnst, das abzuschreiben, lies dir die folgenden Punkte bitte durch: Als erstes achte bitte darauf, dass nach den Doppelpunkten immer unbedingt ein Leerzeichen kommen muss.</p>
+
+<ol>
+<li><strong>name</strong> ist eben der Name und kann beliebig gewählt werden. Sinnvollerweise nennen wir unser Plugin so, wie wir auch das Projekt genannt haben.</li>
+<li>In <strong>main</strong> legen wir fest, in welcher Klasse das Plugin implementiert ist. Und zwar müssen wir das inklusive dem Package-Namen angeben. Vergleiche die Zeile mit <code>main</code> mit der Darstellung des Packages und der Klasse im Bild darüber. Du siehst, dass das übereinstimmt (bis auf <code>.java</code>).</li>
+<li><strong>version</strong> ist eben die Verion. Das darfst du dir aussuchen.</li>
+<li><strong>authors</strong> ist eine Liste der Authoren, die untereinander stehen und mit einem Minus (-) anfangen. Hier musst du darauf achten, dass die Zeilen mit den Listeneinträgen ein paar Leerzeichen (<strong>Achtung: keine Tabs</strong>) eingerückt sind.</li>
+<li><strong>description</strong> beschreibt das Plugin. Hier kannst du deiner Fantasie wieder freien Lauf lassen.</li>
+<li><strong>commands</strong> listet alle Kommandos, auf die das Plugin reagiert auf und gibt eine kurze Beschreibung und einen Benutzungshinweis an. Wir wollen, dass unser Plugin auf das Kommando <code>/sayhello</code> reagiert. Daher haben wir genau dieses Kommando angegeben. Auch hier achte wieder auf die Einrückungen. Diesmal sind es sogar zwei bei description und usage.</li>
+</ol>
+
+<p>Damit bist du jetzt wirklich fertig und kannst das gesamte Projekt bauen. Dazu klickst du auf den Hammer in der <strong>Toolbar</strong>:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/Toolbar.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Daraufhin sollte im <strong>Information Panel</strong> im Tab <strong>Output</strong> ca. folgende Information stehen:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/img/BuildOutput.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Der wichtigste Punkt ist die letzte Zeile, in der auf jeden Fall <code>BUILD SUCCESSFULL</code> stehen muss. Damit ist nämlich klar, dass dein Projekt korrekt ist und vom Compiler übersetzt werden kann.</p>
+
+<p>Um dein Plugin auszuprobieren musst du im File-Explorer (Windows) oder Finder (Mac) in dein NetBeans Projekt-Directory reinsehen. Dort sollte sich nun ein weiteres Directory <code>dist</code> befinden, in dem sich wiederum ein File <code>FirstPlugin.jar</code> befinden sollte. Dieses nimmst du nun und bewegst es in das Directory <code>plugins</code> des Server-Directories, das du noch aus unserer ersten Episode kennst.</p>
+
+<p>Nun kannst du den Server starten. Als erstes überprüfen wir, ob das Plugin korrekt geladen wurde. Das sehen wir im Log des Servers, wenn er hochstartet:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Loading libraries, please wait...
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Starting minecraft server version 1.8.7
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Loading properties
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Default game type: SURVIVAL
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: This server is running CraftBukkit version git-Spigot-6d16e64-b105298 <span style="color:#f92672">(</span>MC: 1.8.7<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>Implementing API version 1.8.7-R0.1-SNAPSHOT<span style="color:#f92672">)</span>
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Debug logging is disabled
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Server Ping Player Sample Count: <span style="color:#ae81ff">12</span>
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Using <span style="color:#ae81ff">4</span> threads <span style="color:#66d9ef">for</span> Netty based IO
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Generating keypair
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Starting Minecraft server on *:25565
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Using default channel type
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Set PluginClassLoader as parallel capable
+<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>FirstPlugin<span style="color:#f92672">]</span> Loading FirstPlugin v0.1.0
+...</code></pre></div>
+<p>Innerhalb der ersten 15 bis 20 Zeilen solltest du die Zeile <code>[FirstPlugin] Loading FirstPlugin v0.1.0</code> sehen, dann wurde dein Plugin korrekt geladen. Lass dich nicht verwirren, da steht noch sehr viel mehr in der Console, also musst du ein Stück weit nach oben scrollen, damit du das siehst.</p>
+
+<p>Abschließend kannst du testen, indem du das Kommando <code>sayhello</code> in der Konsole eingibst. Der Server sollte mit <code>Hello stranger</code> antworten. Auch kannst du noch ins Spiel gehen und dort den Befehl mit Slash <code>/sayhello</code> eingeben. Auch hier sollte der Server mit einem freundlichen <code>Hello stranger</code> antworten.</p>
+
+<h3 id="eine-erweiterung">Eine Erweiterung</h3>
+
+<p>Apropos freundlich. Jemanden mit &ldquo;Stranger&rdquo; zu begrüßen ist in Bezug auf Freundlichkeit sicherlich noch ausbaufähig. Da das Bukkit-API uns die Möglichkeit gibt, den Namen des Spielers (also den Minecraft-Namen natürlich) rauszufinden, werden wir das benutzen um den Spieler wirklich freundlich mit Namen zu begrüßen.</p>
+
+<p>Dazu gehen wir wieder ins NetBeans und zur Methode <code>onCommand</code> unseres Plugins. Weil grad Zeit ist, sehen wir uns den Code der Methode ein wenig genauer an.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello stranger&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Also der Reihe nach:</p>
+
+<ul>
+<li>In der ersten Zeile fällt in der Mitte eben der Name <code>onCommand</code> auf. <strong>Wir merken uns</strong>: Jede Methode hat einen Namen.</li>
+<li>Nach dem Namen ist eine Klammer auf, die kurz vor Ende der Zeile auch wieder zu geht. <strong>Wir merken uns</strong>: Jede Methode hat gleich nach dem Namen eine Klammer auf und auch wieder eine Klammer zu.</li>
+<li>Das zwischen diesen Klammern nennt man <em>Parameter</em>. Mit diesen kann man einer Methode Informationen geben, die sie für ihre Arbeit braucht. Du siehst bei der Methode <code>onCommand</code> oben, dass sie einen Parameter <code>sender</code> hat. Damit ist der &ldquo;Absender&rdquo; des Kommandos, also die Spielerin, die <code>/sayhello</code> eingetippt hat, gemeint.</li>
+<li>Am Ende der Zeile ist eine geschwungene Klammer auf (<code>{</code>), die drei Zeilen später auch wieder geschlossen wird. Zwischen diesen Klammern steht drinnen, was die Methode jetzt wirklich macht. Das sind in unserem Fall zwei Dinge und da sehen wir uns grad mal die erste Zeile an: <code>sender.sendMessage(&quot;Hello stranger&quot;);</code>: Wir wissen schon von oben: <code>sender</code> ist der Absender des Kommandos. Nach dem Punkt kannst du alle die Methoden hinschreiben, die ein Sender &ldquo;versteht&rdquo;. <code>sendMessage</code> ist offensichtlich eine Methode, die einen Text ausgibt. Diese Methode hat ebenfalls einen Parameter, nämlich den Text, den wir gerne ausgegeben hätten.</li>
+</ul>
+
+<p>Gut, mit diesem Wissen können wir uns sammeln und kurz überlegen, was wir brauchen, damit wir den Sender mit seinem Minecraft-Namen begrüßen können.</p>
+
+<ol>
+<li>Wir brauchen eine Möglichkeit den Namen rauszufinden. Das geht mit der Methode <code>sender.getName()</code>. Du siehst, diese Methode braucht keine Parameter. Daher kommt nach der Klammer auf, sofort wieder eine Klammer zu.</li>
+<li>Damit wären wir bei <code>sender.sendMessage(sender.getName())</code>. Aber was ist mit dem &ldquo;Hello&rdquo;, damit unsere Begrüßung auch wirklich freundlich wird?</li>
+<li>Daher brauchen wir eine Möglickeit zwei Texte (also &ldquo;Hello&rdquo; und den Minecraft-Namen der Spielerin) zusammenzukleben. Das geht in Java mit dem Zeichen +. Also ergibt zum Beispiel <code>&quot;Ich &quot; + &quot;programmiere &quot; + &quot;Java&quot;</code> den Text <code>&quot;Ich programmiere Java&quot;</code>.</li>
+<li>Also müssen wir die Zeile noch folgendermaßen erweitern: <code>sender.sendMessage(&quot;Hello &quot; + sender.getName());</code>.</li>
+</ol>
+
+<p>Zum Schluss sollte deine Methode so aussehen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Nun sind wir schon wieder fertig. Wie oben musst du das Projekt wieder bauen (weißt schon, der Hammer in der Toolbar) und dann legst du am besten in deinem Verzeichnis <code>plugins</code> im Verzeichnis<code>bukkitServer</code> ein weiteres Verzeichnis mit Namen <code>update</code> an. Dorthinein kopierst du jetzt das jar-File. Abschließend gehst du in die Console, in der du den Server gestartet hast und tippst einfach <code>reload</code>. Dann sollte das Plugin neu geladen sein und du kannst es ausprobieren.</p>
+
+<p>Zum Abschluss möchte ich dir noch eine Kleinigkeit zeigen: Es wird immer wieder notwendig sein, dass wir auf die Konsole des Servers etwas rausschreiben und daher wollen wir das gleich mal üben. Bisher kam die Antwort des Servers ja nur auf die Konsole, wenn du das Kommando direkt in der Konsole eingetippt hast. Wir wollen aber, dass, sobald irgendwer das Kommando <code>/sayhello</code> eintippt, in der Konsole vermerkt wird, dass dieses Kommando aufgerufen wurde.</p>
+
+<p>Du kannst über <code>Bukkit.getLogger()</code> immer auf die Konsole zugreifen und der <code>Logger</code> hat eine Methode <code>info</code> mit der du Informationen in die Konsole schreiben kannst. Zusammengefasst sieht das ganze dann so aus:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
+    Bukkit<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">().</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;A player was greeted&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Der Logger hat verschiedene <em>Levels</em>, die das Filtern des Logs erlauben. Die wichtigsten sind</p>
+
+<ul>
+<li><strong>Info</strong>: das sind einfache Informationen. Diese werden mit der Methode <code>info</code> ausgegeben.</li>
+<li><strong>Warning</strong>: das sind Meldungen, die von einem Server-Administrator beachtet werden sollten. Diese werden mit der Methode <code>warning</code>ausgegeben.</li>
+<li><strong>Severe</strong>: das sind kritische Meldungen, denen 100%ig auf den Grund gegangen werden muss. Diese werden mit der Methode <code>severe</code> ausgegeben.</li>
+</ul>
+
+<p>Da die Information, dass ein Spieler begrüßt wurde, nicht wirklich kritisch ist, belassen wir es bei einer einfachen Info-Message im Log.</p>
+
+<h3 id="großeltern-imponier-wissen-1">Großeltern-Imponier-Wissen</h3>
+
+<ul>
+<li>Texte nennt man in der Informatik Zeichenketten oder auf Englisch: Strings</li>
+<li>Ein <em>Log</em> ist so etwas wie ein Tagebuch. Vielleicht kennst du das aus Star Treck: &ldquo;Logbuch der Enterprise, Sternzeit &hellip;&rdquo;</li>
+</ul>
+
+<h3 id="zusammenfassung">Zusammenfassung</h3>
+
+<p>Wenn du das Gefühl hast, dass das alles ganz schön viel ist und ein wenig verwirrend, dann lass dich nicht einschüchtern. Am Besten probierst du es gleich nochmal von vorne und legst nochmals ein neues Plugin-Projekt an. Am Anfang wirst du vielleicht noch öfter nachsehen müssen, dann reicht vielleicht eine Liste der Dinge, die gemacht werden müssen. So eine siehst du hier am Ende dieser Episode. Und nach einer Weile wird dir das ganz geläufig sein. Wie fast immer: Übung macht die Meisterin (und auch den Meister).</p>
+
+<h2 id="kurzversion-für-profis">Kurzversion für Profis</h2>
+
+<ol>
+<li>Neues Projekt anlegen: Menüpunkt <strong>File</strong> &gt; <strong>New Project</strong>, in Choose Project: <strong>Java</strong> &gt; <strong>Java Class Library</strong> mit Projektnamen <code>FirstPlugin</code></li>
+<li><code>craftbukkit.jar</code> zu den Libraries dazufügen: Rechte Maus-Klick auf <strong>Libraries</strong> &gt; <strong>Add JAR/Folder</strong></li>
+<li>Package anlegen: Rechte Maus-Klick auf <strong>Source Packages</strong>, Auswahl von <strong>New</strong> &gt; <strong>Java Package</strong> mit Package Name z.B. <code>io.coderdojo.&lt;dein-name&gt;.firstplugin</code></li>
+<li>Klasse anlegen: Rechte Maus-Klick auf das eben erstellte Package, Auswahl von <strong>New</strong> &gt; <strong>Java Class</strong> mit Class Name z.B. <code>FirstPlugin</code></li>
+<li><code>extends JavaPlugin</code> nach dem Klassennamen dazuschreiben</li>
+<li>Methode <code>onCommand</code> generieren: Rechte Maus-Klick im Editor zwischen den geschwungenen Klammern &gt; <strong>Inserter Code</strong> &gt; <strong>Override Method</strong> &gt; Auswahl von <code>onCommand</code> &gt; <strong>Generate</strong></li>
+
+<li><p>Die Methode ausprogrammieren, also reinschreiben, was geschehen soll, wenn das Command aufgerufen wird:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
+Bukkit<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">().</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;A player was greeted.&#34;</span><span style="color:#f92672">);</span>
+<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div></li>
+
+<li><p><code>plugin.yml</code> zum Projekt hinzufügen: Rechte Maus-Klick auf <strong>Source Packages</strong> &gt; <strong>New</strong> auswählen &gt; <strong>YAML File</strong> mit File Name <code>plugin</code></p></li>
+
+<li><p>Die Details im <code>plugin.yml</code> eingeben, wobei du die Details in den eckigen Klammern [] durch deine Werte ersetzt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">## YAML Template.</span>
+---
+name: <span style="color:#f92672">[</span>Project Name<span style="color:#f92672">]</span>
+main: <span style="color:#f92672">[</span>Package Name<span style="color:#f92672">]</span>.<span style="color:#f92672">[</span>Class Name<span style="color:#f92672">]</span>
+version: 1.0.0
+author: <span style="color:#f92672">[</span>dein Name<span style="color:#f92672">]</span>
+description: <span style="color:#f92672">[</span>deine Beschreibung des Plugins<span style="color:#f92672">]</span>
+commands:
+<span style="color:#f92672">[</span>Command Name<span style="color:#f92672">]</span>:
+description: <span style="color:#f92672">[</span>deine Beschreibung des Kommandos<span style="color:#f92672">]</span>
+usage: /<span style="color:#f92672">[</span>Command Name<span style="color:#f92672">]</span></code></pre></div></li>
+
+<li><p>Baue das Paket: In Icon Leiste auf den Hammer <strong>Build Project (F11)</strong> klicken</p></li>
+
+<li><p>Kopiere bzw. ersetze das fertige jar File aus <code>dist</code> (siehe Pfad im <strong>Output</strong>) in das Minecraft Server Plugin-Verzeichnis.</p></li>
+
+<li><p>Starte den Server  oder gib <code>reload</code> in die Server Konsole ein.</p></li>
+
+<li><p>Teste das Plugin indem du in Minecraft dein Kommando mit dem Namen, den du im <code>plugin.yml</code> unter <code>[Command Name]</code> vergeben hast, aufrufst.</p></li>
+</ol>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

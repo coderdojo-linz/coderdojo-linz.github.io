@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Löten &amp; Elektronik on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/</link>
+    <description>Recent content in Löten &amp; Elektronik on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

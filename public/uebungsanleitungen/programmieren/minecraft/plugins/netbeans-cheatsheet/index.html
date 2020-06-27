@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> NetBeans Projektsetup </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/">Minecraft</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/">Plugins</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#netbeans-projektsetup">NetBeans Projektsetup</a>
+<ul>
+<li><a href="#projekt-erstellen">Projekt erstellen</a></li>
+<li><a href="#craftbukkit-bibliothek-hinzufügen">Craftbukkit Bibliothek hinzufügen</a></li>
+<li><a href="#package-hinzufügen">Package hinzufügen</a></li>
+<li><a href="#hauptklasse-hinzufügen">Hauptklasse hinzufügen</a></li>
+<li><a href="#plugin-yml-hinzufügen">plugin.yml hinzufügen</a></li>
+<li><a href="#resultat">Resultat</a></li>
+<li><a href="#projekt-bauen-und-deployen">Projekt bauen und deployen</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="netbeans-projektsetup">NetBeans Projektsetup</h1>
+
+<p>Kurzanleitung, wie das Projekt in NetBeans aufgesetzt werden muss, um für deine Minecraft Plugins vorbereitet zu sein.</p>
+
+<h2 id="projekt-erstellen">Projekt erstellen</h2>
+
+<ol>
+<li>NetBeans starten</li>
+<li>Menü <strong>File</strong> &gt; Menüpunkt <strong>New Project &hellip;</strong></li>
+<li>Auswahl: Categories <strong>Java</strong>, Projects <strong>Java Class Library</strong> &gt; Klick auf <strong>Next</strong></li>
+<li>Vergabe des Projektnamens unter <strong>Project Name</strong> (z.B. FirstPlugin) &gt; Klick auf <strong>Finish</strong></li>
+</ol>
+
+<h2 id="craftbukkit-bibliothek-hinzufügen">Craftbukkit Bibliothek hinzufügen</h2>
+
+<ol>
+<li>Auf der linken Seite (Tab <strong>Projects</strong>) auf <strong>Libraries</strong> mit der rechten Maustaste klicken &gt; <strong>Add JAR/Folder</strong> auswählen.</li>
+<li>Die Datei <strong>craftbukkit.jar</strong> auswählen &gt; Klick auf <strong>Open</strong></li>
+</ol>
+
+<h2 id="package-hinzufügen">Package hinzufügen</h2>
+
+<ol>
+<li>Auf der linken Seite (Tab <strong>Projects</strong>) auf <strong>Source Packages</strong> mit der rechten Maustaste klicken &gt; <strong>New</strong> auswählen &gt; <strong>Java Package</strong> auswählen.</li>
+<li>Als <strong>Package Name</strong> folgendes vergeben: io.coderdojo.<deinName>.minecraft.<pluginName> (wobei <deinName> sowie <pluginName> in Kleinschreibung ersetzt wird, z.B. durch &ldquo;lisi&rdquo; und &ldquo;firstplugin&rdquo;) &gt; Klick auf <strong>Finish</strong></li>
+</ol>
+
+<h2 id="hauptklasse-hinzufügen">Hauptklasse hinzufügen</h2>
+
+<ol>
+<li>Auf der linken Seite (Tab <strong>Projects</strong>) in <strong>Source Packages</strong> auf dein neu erstelltes Package mit der rechten Maustaste klicken &gt; <strong>New</strong> auswählen &gt; <strong>Java Class</strong> auswählen.</li>
+<li>Als <strong>Class Name</strong> dein Plugin benennen, z.B. FirstPlugin &gt; Klick auf <strong>Finish</strong></li>
+<li>Sicherstellen dass nach dem Klassennamen <code>extends JavaPlugin</code> steht.</li>
+</ol>
+
+<h2 id="plugin-yml-hinzufügen">plugin.yml hinzufügen</h2>
+
+<ol>
+<li>Auf der linken Seite (Tab <strong>Projects</strong>) auf <strong>Source Packages</strong> mit der rechten Maustaste klicken &gt; <strong>New</strong> auswählen &gt; <strong>YAML File</strong> auswählen.</li>
+<li>Als <strong>File Name</strong> den Namen <code>plugin</code> eingeben &gt; Klick auf <strong>Finish</strong></li>
+</ol>
+
+<h2 id="resultat">Resultat</h2>
+
+<p>Dein Projektsetup sollte jetzt so aussehen:
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/netbeans-cheatsheet/img/netbeans_structure.jpg" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p>
+
+<h2 id="projekt-bauen-und-deployen">Projekt bauen und deployen</h2>
+
+<ol>
+<li>In der Icon Leiste oben auf den Hammer <strong>Build Project (F11)</strong> klicken.</li>
+<li>Im Fenster <strong>Output</strong> (wenn nicht vorhanden, über Menüpunkt <strong>Window</strong> &gt; <strong>Output (Strg+4)</strong> anzeigen lassen) den Pfad zum *.jar kopieren (endet auf <code>dist/</code>).</li>
+<li>Im Explorer die <code>*.jar</code> Datei aus <code>dist/</code> in den Server Plugins Ordner (<code>craftbukkit/plugins/</code>) kopieren.</li>
+<li>In der Server Konsole das Kommando <code>reload</code> eingeben.</li>
+</ol>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

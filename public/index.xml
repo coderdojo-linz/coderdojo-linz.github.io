@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/</link>
+    <description>Recent content on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    <lastBuildDate>Mon, 01 Jun 2020 05:28:34 +0200</lastBuildDate>
+    
+	<atom:link href="https://linz.coderdojo.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CoderDojo Bastel Programm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/coder-dojo-bastel-programm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/coder-dojo-bastel-programm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computational Thinking mit BBC micro:bit</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/computational-thinking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/computational-thinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elektronik Programm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/elektronik-programm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/elektronik-programm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte in Scratch</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/erste-schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/erste-schritte/</guid>
+      <description>Neues Projekt erstellen Öffne Scratch und klicke links oben im Menü auf Entwickeln. Im neuen Projekt siehst du Scratchy, die Katze. Noch macht Scratchy nichts, da sie noch kein Programm hat.
+   Die Katze Scratchy läuft herum   Du findest alle Figuren des Projekts im linken unteren Bereich. Im Moment gibt es hier nur Scratchy, die Katze. Wenn du sie auswählst, kannst du bestimmen, was sie machen soll.</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/erste-schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/erste-schritte/</guid>
+      <description>Erste Schritte mit Python Diese Übung gibt eine erste Einführung in das Programmieren mit Python. Die Inhalte sind zum größten Teil aus dem Buch Programmieren supereasy.
+Was ist Python? Python ist eine Programmiersprache, die mit englischen Textbefehlen arbeitet. Sie ist etwas schwieriger als Scratch, dafür gibt es allerdings viel mehr Verwendungsmöglichkeiten.
+Zur Vorbereitung werden wir nun zuerst Python installieren und uns dann mit der Oberfläche vertraut machen.
+Python installieren Lade Python nun herunter und installiere es auf deinem Computer.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/hello-world/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infos für Kinder und Jugendliche</title>
+      <link>https://linz.coderdojo.net/info/kinder-und-jugendliche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/info/kinder-und-jugendliche/</guid>
+      <description>Neugierig auf Technik und Programmieren? Wolltest du immer schon wissen, wie Computer, iPad oder Smartphone funktionieren? Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren? Reicht es dir nicht, deinen Status auf Facebook zu posten? Du möchtest lieber deine ganz eigene Webseite?
+Dann bist du richtig beim CoderDojo!
+Was sind CoderDojos? In Japan trifft man sich in einem Dojo, um Kampfsportarten wie Judo oder Karate zu üben. Beim CoderDojo treffen wir uns, um zu &amp;ldquo;coden&amp;rdquo;, also zu programmieren.</description>
+    </item>
+    
+    <item>
+      <title>Lokaler Minecraft-Server mit Scriptcraft</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/lokaler-minecraft-server-mit-scriptcraft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/lokaler-minecraft-server-mit-scriptcraft/</guid>
+      <description>Installation eines Minecraft Servers mit Scriptcraft Voraussetzungen In dieser Übung installieren wir einen Minecraft Server mit Scriptcraft auf deinem Windows-Computer.
+Systemvoraussetzungen Bevor du den Minecraft-Server installieren kannst, musst du folgende Software installieren:
+ Java SE Development Kit (kurz JDK) Lade die Windows-Version von der Download-Seite herunter und installiere sie.
+ Git Lade die Windows-Version von der Download-Seite herunter und installiere sie. Installiere alle verfügbaren Teile von Git, die im Installationsprogramm auswählbar sind.</description>
+    </item>
+    
+    <item>
+      <title>Meine erste Webseite</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/</guid>
+      <description>Meine erste Webseite In dieser Übung lernst du die Hypertext Markup Language (kurz HTML) kennen. Unser Ziel ist es, Schritt für Schritt eine HTML-Seite zu erstellen und dabei die wichtigsten Grundbegriffe von HTML zu entdecken. Wenn du nach dieser Übung mehr über HTML lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die HTML Einführung auf w3schools.com werfen.
+Das Grundgerüst einer HTML-Seite  Öffne einen beliebigen Texteditor.</description>
+    </item>
+    
+    <item>
+      <title>MicroComputer Start</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/microcomputer-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/microcomputer-start/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js Webserver</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-webserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-webserver/</guid>
+      <description>Ein Webserver mit Node.js Ziel der Übung In dieser Übung lernst du, wie du eine Anwendung für das Web mit Server- und Clientteil baust. Du solltest mit HTML und JavaScript schon etwas vertraut sein. Falls das ganz neu für dich ist, frage erst einen Mentor um Übungsanleitungen, bei denen du die Grundlagen von HTML und JavaScript lernst.
+Visual Studio Code Editor installieren Ganz einfache HTML und JavaScript Programme kann man in einfachen Editoren wie Notepad erstellen.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Start</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/start/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Schnellstart-Anleitung</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/schnell-start-anleitung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/schnell-start-anleitung/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Arduino Sprach-Referenz</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/sprach-referenz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/sprach-referenz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Der Raspberry Pi Computer</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/raspberry-pi-computer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/raspberry-pi-computer/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit CSS</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-css/</guid>
+      <description>Erste Schritte mit CSS Ziel der Übung In dieser Übung lernst du Cascading Style Sheets (kurz CSS) kennen. Unser Ziel ist es, eine HTML-Seite mit CSS zu formatieren und hübsch zu gestalten. Wenn du nach dieser Übung mehr über CSS lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die CSS Einführung auf w3schools.com werfen.
+Falls du noch überhaupt keine Erfahrung mit HTML hast, wende dich an eine CoderDojo Mentorin oder einen Mentor.</description>
+    </item>
+    
+    <item>
+      <title>Grundlagen Löten</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/grundlagen-loeten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/grundlagen-loeten/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grundlagen von Minecraft Mods mit JavaScript</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/scriptcraft-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/scriptcraft-basics/</guid>
+      <description>Grundlagen von Minecraft Mods mit JavaScript Systemvoraussetzungen Du brauchst für diese Übungen einen Minecraft Server mit Scriptcraft. Wenn du keine Erfahrung bzgl. Konfiguration von Computern, Java etc. hast, komm ins CoderDojo und bitte eine Mentorin, dir einen solchen Server zur Verfügung zu stellen. Ansonsten hast du folgende Möglichkeiten:
+ Folge der Anleitung auf unserer Homepage Installiere Scriptcraft lokal auf deinem Computer (Installationsanleitung in Englisch)  Zum Programmieren von JavaScript brauchst du einen Texteditor.</description>
+    </item>
+    
+    <item>
+      <title>Infos für Eltern</title>
+      <link>https://linz.coderdojo.net/info/eltern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/info/eltern/</guid>
+      <description>Informationen für Eltern Was ist ein CoderDojo? In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.
+Gemeinsames Entdecken, Teamarbeit, Mentoring sowie selbstorganisiertes Lernen und Experimentieren stehen im CoderDojo im Vordergrund. Offenheit, gegenseitiges Helfen und das Weitergeben von erworbenem Wissen sind wichtige Grundprinzipien.</description>
+    </item>
+    
+    <item>
+      <title>Konto anlegen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/konto-anlegen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/konto-anlegen/</guid>
+      <description>Um deine Projekte in Scratch speichern und teilen zu können, brauchst du ein Konto. Die folgenden Schritte zeigen dir, wie du ein neues Konto anlegst. Anschließend starten wir Scratch zum ersten Mal.
+Scratch Webseite öffnen   Öffne einen Webbrowser, gib in der Adresszeile die Adresse scratch.mit.edu ein und drücke Enter. Das https:// vor der Scratch-Adresse musst du nicht unbedingt eingeben. Es wird automatisch erscheinen, nachdem du auf Enter gedrückt hast.</description>
+    </item>
+    
+    <item>
+      <title>Pimoroni Inventor&#39;s Kit for the BBC micro:bit</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/pimoroni-inventors-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/pimoroni-inventors-kit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sicherheitshinweise</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/sicherheitshinweise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/sicherheitshinweise/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Verschlüsseln mit JavaScript</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/</guid>
+      <description>Verschlüsseln mit JavaScript 
+   Ziel der Übung In dieser Übung lernst du ein einfaches Verschlüsselungsverfahren kennen.
+Technisch lernst du einige Dinge über JavaScript und Node.js:
+ Wie programmiert man ein Kommandozeilenprogramm mit JavaScript? Was sind ASCII Codes? Wie arbeitet man in JavaScript mit Zeichenketten?  Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist! Falls JavaScript, Node.js und Visual Studio Code für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut.</description>
+    </item>
+    
+    <item>
+      <title>Übung 1</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebung-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebung-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino UNO V3 Tutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-start/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chat mit Node.js und Socket.io</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-socketio-chat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-socketio-chat/</guid>
+      <description>Chat mit Node.js und Socket.io Ziel der Übung In dieser Übung lernst du, wie du eine Chat-Anwendung mit Server- und Clientteil baust. Mehrere Benutzer können sich im Chat anmelden. Wenn jemand etwas sendet sollen alle anderen Benutzer das sofort sehen.
+Wichtig: Diese Übung geht davon aus, dass du die Übung Einen Node.js Webserver programmieren gemacht hast und diese bei dir auf deinem Computer funktioniert. Mache hier erst weiter, wenn du die vorbereitende Übung erfolgreich abgeschlossen hast.</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/erste-schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/erste-schritte/</guid>
+      <description>Deine ersten Schritte mit micro:bit - Blockprogrammierung Der BBC micro:bit ist ein kleiner anprogrammierbarer Computer mit Bewegungssensoren und Kompass. Weitere Informationen und einer ausführerlichen Anleitung zu den ersten Schritten gibt es hier.
+Ausstattung 
+   In der Mitte befinden sich 25 LED-Lämpchen in einem 5x5 Raster. Links hast du den A-Knopf (Button) und rechts den B-Knopf. Auf der Rückseite befinden sich die Anschlüsse für das Batteriefach und ein Micro-USB-Kabel.</description>
+    </item>
+    
+    <item>
+      <title>Grove Inventor Kit for micro:bit Project Guide</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/grove-inventor-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/grove-inventor-kit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infos für Mentoren</title>
+      <link>https://linz.coderdojo.net/info/mentoren/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/info/mentoren/</guid>
+      <description>Wir suchen Mentoren! Du kannst gut programmieren oder bist ein Elektronik-Crack? Dann brauchen wir dich als Mentor.
+Als Mentoren begleiten wir in CoderDojos Kinder beim spielerischen Entdecken ihrer Begeisterung für Technik und Softwareentwicklung. Unsere Aufgaben sind:
+ Vermitteln der Grundlagen für Anfänger. Den Kindern helfen, falls sie an Grenzen stoßen. &amp;ldquo;Coole&amp;rdquo; Projektideen vorschlagen, falls die Kinder einmal keine eigenen Ideen mitbringen. Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen (z.</description>
+    </item>
+    
+    <item>
+      <title>Installationen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/installationen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/installationen/</guid>
+      <description>Installationen Einleitung Damit du deine Plugins bequem testen kannst, ist es sinnvoll zuerst einen Minecraft-Server auf deinem eigenen Computer zu installieren.
+Damit dein Computer ein Minecraft-Server wird, musst du eine bestimmte Software installieren, nämlich den &amp;ldquo;Minecraft-Server&amp;rdquo;. Das klingt jetzt ein wenig seltsam. Das kommt daher, dass wir Informatiker das Wort &amp;ldquo;Server&amp;rdquo; manchmal für einen ganzen Computer benutzen (z. B. &amp;ldquo;Der Web-Server ist heute wieder mal superschnell&amp;rdquo;). Aber manchmal verwenden wir das Wort &amp;ldquo;Server&amp;rdquo; auch nur für ein Programm, die Server-Software, die einen Computer zu einem Server macht.</description>
+    </item>
+    
+    <item>
+      <title>Löten ist einfach</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/loeten-ist-einfach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/loeten-ist-einfach/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RaspberryPi B&#43; Header</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/raspberry-pi-b&#43;-j8-header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/raspberry-pi-b&#43;-j8-header/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Zahlenraten</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/zahlen-raten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/zahlen-raten/</guid>
+      <description>Variablen anlegen   Wir Menschen merken uns Dinge im Gehirn. Wenn sich der Computer etwas merken soll, dann braucht er dafür Variablen. In unserem Spiel soll sich der Computer eine Zufallszahl ausdenken, sie uns aber nicht verraten. Wir legen dafür unter &amp;ldquo;Daten&amp;rdquo; eine &amp;ldquo;Neue Variable&amp;rdquo; an und nennen sie &amp;ldquo;zufallszahl&amp;rdquo;.
+     Sobald das Programm gestartet wird, soll sich der Computer die Zufallszahl ausdenken und das Ergebnis in unserer neuen Variable speichern.</description>
+    </item>
+    
+    <item>
+      <title>Übung 2</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebung-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebung-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino UNO Pinout Diagramm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-pinout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-pinout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fang Mich</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fang-mich/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fang-mich/</guid>
+      <description>Bühne und Figuren anlegen   Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst das Aquarium, in dem die Fische schwimmen. Wähle als erstes rechts unten unter Bühnenbild wählen ein Bühnenbild aus, zum Beispiel ein Aquarium.
+     Als nächstes lösche die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.</description>
+    </item>
+    
+    <item>
+      <title>Grundlagen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/grundlagen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/grundlagen/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Infos für Schulen</title>
+      <link>https://linz.coderdojo.net/info/schulen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/info/schulen/</guid>
+      <description>CoderDojo an Schulen Einleitung Um möglichst vielen Kindern den Einstieg in das Programmieren zu ermöglichen, bieten wir Gast-CoderDojos an Schulen an. Wir bringen die gesamte Infrastruktur inkl. mobilem Internetzugang und Leihlaptops mit.
+CoderDojo ist ein von ehrenamtlichen Mentorinnen und Mentoren getragener Programmierclubs. Alle Personen in unserem Mentoringteam sind berufstätig. Sie investieren ihre Freizeit, um im CoderDojo mitzuhelfen. Aus diesem Grund bitten wir um Verständnis, dass wir nicht alle Einladungen an Schulen annehmen können.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Zahlen raten</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/</guid>
+      <description>Zahlen raten Ziel der Übung In dieser Übung programmierst du ein einfaches &amp;ldquo;Zahlen raten&amp;rdquo; Spiel und siehst, wie man mit JavaScript Ein- und Ausgaben machen kann.
+Das Spiel soll folgendermaßen funktionieren: Der Computer denkt sich eine Zahl zwischen 0 und 100 aus und der Spieler muss versuchen, diese Zahl mit möglichst wenigen Versuchen zu erraten. Dazu kann er einen Tipp eingeben. Der Computer sagt dann Niedriger oder Höher, und der Spieler kann einen neuen Tipp eingeben, bis er die richtige Zahl erraten hat.</description>
+    </item>
+    
+    <item>
+      <title>Kurzanleitung Kartonbausatz</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/kurzanleitung-kartonbausatz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/kurzanleitung-kartonbausatz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mi:Node Kit User Manual</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/mi-node-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/mi-node-kit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NetBeans Projektsetup</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/netbeans-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/netbeans-cheatsheet/</guid>
+      <description>NetBeans Projektsetup Kurzanleitung, wie das Projekt in NetBeans aufgesetzt werden muss, um für deine Minecraft Plugins vorbereitet zu sein.
+Projekt erstellen  NetBeans starten Menü File &amp;gt; Menüpunkt New Project &amp;hellip; Auswahl: Categories Java, Projects Java Class Library &amp;gt; Klick auf Next Vergabe des Projektnamens unter Project Name (z.B. FirstPlugin) &amp;gt; Klick auf Finish  Craftbukkit Bibliothek hinzufügen  Auf der linken Seite (Tab Projects) auf Libraries mit der rechten Maustaste klicken &amp;gt; Add JAR/Folder auswählen.</description>
+    </item>
+    
+    <item>
+      <title>RaspberryPi Befehle</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/befehle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/befehle/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Übung 3</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebung-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebung-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>:MOVE mini robot for BBC micro:bit</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/move-mini-robot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/move-mini-robot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino Nano V3 Tutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-start/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dein erstes Plugin</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/</guid>
+      <description>Dein erstes Plugin /sayhello Einleitung Nach den Vorbereitungsarbeiten können wir nun endlich unser erstes Plugin entwickeln. Wenn wir mit dieser Episode fertig sind, wirst du in Minecraft den Befehl /sayhello eingeben können und du wirst eine Antwort erhalten und er wird dich sogar mit deinem Minecraft-Namen ansprechen.
+
+   Dieses wird vielleicht noch nicht das absolute Killer-Plugin auf Curse sein aber eine Reise beginnt immer mit ihrem ersten Schritt.</description>
+    </item>
+    
+    <item>
+      <title>Grundlagen Bauelemente</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/grundlagen-bauelemente/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/grundlagen-bauelemente/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Lösungen zu Übungen 1, 2 &amp; 3</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/loesungen-uebung-1-2-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/loesungen-uebung-1-2-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lötübung CoderDojo Logo</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/coderdojo-logo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/coderdojo-logo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RaspberryPi AZ-Delivery</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/az-delivery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/az-delivery/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Arduino Nano Pinout Diagramm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-pinout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-pinout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BBC micro:bit Poster</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/poster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/poster/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>micro:bit with Arduino</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-with-arduino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-with-arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Miraculix der Druide - Teil 1</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/miraculix-teil-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/miraculix-teil-1/</guid>
+      <description>Miraculix der Druide - Teil 1 Einleitung Vielleicht hast du schon einmal Asterix und Obelix gelesen oder einen der Filme angesehen. Dann wirst du dich sicherlich an den Druiden Miraculix erinnern, das ist der, der den Zaubertrank zubereiten kann. Wir werden in dieser und einigen weiteren Episoden ein Plugin programmieren, mit dem du Miraculix spielen kannst. Wir fangen damit an, dass du dich und andere Spieler sofort heilen kannst. Auch kannst du deine Gesundheit oder die Gesundheit anderer Spieler anzeigen.</description>
+    </item>
+    
+    <item>
+      <title>Themenheft  zum RaspberryPi</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/themenhefte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/themenhefte/</guid>
+      <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Übungsbeispiele</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebungsbeispiele/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebungsbeispiele/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino Portabel installieren</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-portable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-portable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grundlagen der Elektronik</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen-der-elektronik/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen-der-elektronik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MAKERbuino Build Guide</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/makerbuino-build-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/makerbuino-build-guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Miraculix der Druide - Teil 2</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/miraculix-teil-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/miraculix-teil-2/</guid>
+      <description>Miraculix der Druide – Teil 2 Einleitung In der letzten Episode haben wir begonnen, ein Plugin für die Befehle gethealth und heal zu implementieren. Ich habe dir ja versprochen, dass wir am Ende nicht nur uns selbst, sondern auch andere Spieler auf dem Server heilen werden können. Also sollen die folgenden Befehle nun wirklich funktionieren:
+/gethealth me /gethealth OidaZocktYT /heal me /heal OidaZocktYT 
+   Ausführliche Anleitung Am Anfang ein wenig Zusammenräumen Ich habe dir ja in der letzten Episode die Lösung für das /heal Kommando versprochen.</description>
+    </item>
+    
+    <item>
+      <title>Auf Ereignisse reagieren</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/welcome-listener/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/welcome-listener/</guid>
+      <description>Auf Ereignisse reagieren Einleitung Bisher haben wir in unseren Plugins immer etwas gemacht, sobald vom Spieler oder auch in der Konsole ein Kommando eingegeben wurde. Das ist ja schon ganz schön, aber manchmal ist es auch notwendig, dass wir auf Ereignisse reagieren. Ein Ereignis ist, wenn irgendetwas im Spiel passiert aber eben kein Kommando eingegeben wurde. Beispiel sind
+ Der Spieler tritt einem Server bei Es werden Chat-Nachrichten versendet Es wird irgendetwas zerstört Es explodiert gerade ein Block Wenn ein Sign geändert wird &amp;hellip;  Du kannst unter org.</description>
+    </item>
+    
+    <item>
+      <title>EDU days 2018 - micro:bit Temeraturmessung</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-temperaturmessung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-temperaturmessung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elektronikbasteln für Anfänger</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/elektronik-basteln-fuer-anfaenger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/elektronik-basteln-fuer-anfaenger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grove Starter Kit</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/grove-starter-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/grove-starter-kit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conrad Beschreibungen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/conrad-beschreibungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/conrad-beschreibungen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conrad Downloads</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/conrad-downloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/conrad-downloads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grove Einführung</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/grove-einfuehrung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/grove-einfuehrung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Miraculix der Druide - Teil 3</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/miraculix-teil-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/miraculix-teil-3/</guid>
+      <description>Miraculix der Druide - Teil 3 Einleitung In der letzten Episode haben wir gelernt, wie man auf Events horchen und reagieren kann. Heute werden wir das anwenden indem wir unser Getafix-Plugin erweitern, sodass man Spielern einen Zaubertrank verabreichen kann.
+/magicpotion WorkUser Mit diesem Kommando (das natürlich wieder nur von ops verwendet werden darf) ist der Spieler WorkUser unbesiegbar, das heißt, er verliert keine Gesundheit mehr. Natürlich soll der Sender des Kommandos eine Rückmeldung bekommen, dass er den Spieler erfolgreich Zaubertrank verabreicht hat und auch der Spieler, der den Trank bekommen hat soll eine Information bekommen.</description>
+    </item>
+    
+    <item>
+      <title>Einfaches Teleporter Plugin</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/teleporter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/teleporter/</guid>
+      <description>Minecraft Teleporter Dieses plugin wurde mit der Entwicklungsumgebung IntelliJ der Firma JetBrains geschrieben. IntelliJ unterstützt die Entwicklung von Minecraft Plugins sehr gut.
+Vorbereitungen Zuerst ist es notwending die Entwicklungsumgebung herunterzuladen und zu installieren. Verwendet hierfür die &amp;ldquo;Community Edition&amp;rdquo;. Wenn das geschehen ist, bitte das Modul für Minecraft hinzufügen.
+Dafür bitte unter &amp;ldquo;File&amp;rdquo; -&amp;gt; &amp;ldquo;Settings&amp;rdquo; die Einstellungen öffnen und danach &amp;ldquo;Plugins&amp;rdquo; klicken.
+
+   Danach könnt ihr mit &amp;ldquo;Browse repositories&amp;rdquo; und dem Suchfeld nach &amp;ldquo;Minecraft&amp;rdquo; suchen.</description>
+    </item>
+    
+    <item>
+      <title>PS2 Joystick Shield</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PS2 Joystick Shield (alt)</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield-alt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield-alt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hour of Code</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/hour-of-code/</link>
+      <pubDate>Mon, 01 Jun 2020 05:28:34 +0200</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/hour-of-code/</guid>
+      <description>Programmieren lernen mit Hour of Code Anfänger: Programmieren mit Blöcken   Kennst du das Spiel Angry Birds von Smartphone oder Tablet? In Hour of Code kannst du die ersten Schritte des Programmierens mit den Angry Birds erlernen. Programmierspiel unter https://studio.code.org/hoc/1 starten&amp;hellip;
+     Bist du ein Fan von Anna und Elsa? In Hour of Code kannst du ihre Bewegungen programmieren und damit schöne Muster aufs Eis zeichnen.</description>
+    </item>
+    
+    <item>
+      <title>Adafruit NeoPixel Guide</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/adafruit-neopixel-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/adafruit-neopixel-guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Advanced CSS Styles</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/css-advanced-styles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/css-advanced-styles/</guid>
+      <description>Advanced CSS Styles Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Scratch - Fang mich&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;content&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Scratch Fang-Mich &amp;lt;span class=&amp;#34;version&amp;#34;&amp;gt;Scratch 3.0&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;div class=&amp;#34;intro&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;images/endgame.png&amp;#34; alt=&amp;#34;Endgame&amp;#34;&amp;gt; &amp;lt;p&amp;gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ... Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: Startprojekt</description>
+    </item>
+    
+    <item>
+      <title>Affe füttern</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/slingshot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/slingshot/</guid>
+      <description>Figuren anlegen   Lösche als erstes die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
+     Lege oder male ein Bühnenbild und die Figuren für die Steinschleuder, die Bananen, den Affen und das Gummiband an. Lege das Gummiband mit dem Pinsel an. Wir brauchen hier keine Figur auszuwählen, da wir das Gummiband später mit Hilfe eines Codeblockes zeichnen werden.</description>
+    </item>
+    
+    <item>
+      <title>Alexander Rosemann</title>
+      <link>https://linz.coderdojo.net/mentoren/rosemann-alexander/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/rosemann-alexander/</guid>
+      <description>Alexander Rosemann ist Geschäftsführer der scintillation e.U. Als Berater, Architekt und Entwickler beschäftigt er sich vorwiegend mit komplexen Geschäftsanwendungen im Java Umfeld.
+Statistische Analysen großer Datenbestände mit R und die Verarbeitung von unstrukturierten Daten mit Apache Solr/Lucene runden sein Profil ab.
+Als Mitbegründer des Technologieplauscherls ist er als Organisator und Moderator des in Linz monatlich stattfindenden Entwicklertreffens in seiner Freizeit tätig.</description>
+    </item>
+    
+    <item>
+      <title>Alien</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/alien/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/alien/</guid>
+      <description>Wir zeichnen einen Alien Mit dem Package Tkinter zeichnen wir einen Alien und lassen ihn auf Tastendruck reagieren. Die Beschreibung erfolgt in Anlehnung an Beispiele aus dem Buch Programmieren supereasy.
+
+   Voraussetzungen Übungsbeispiele Erste Schritte in Python und Von Scratch zu Python.
+Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (File -&amp;gt; New File) und speichere die Datei als Dateityp auf deinem Computer (File -&amp;gt; Save A).</description>
+    </item>
+    
+    <item>
+      <title>Animierte Ansichtskarte</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/animated-postcard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/animated-postcard/</guid>
+      <description>Eine solche Karte kannst du zum Beispiel verwenden:
+ als Ansichtskarte vom Urlaub als Grußkarte zum Geburtstag  Schritt 1: Scratcher werden Damit du deinen Freunden die Ansichtskarte schicken kannst, musst du dich bei Scratch registrieren. Die Registrierung ist kostenlos und du benötigst dafür nur einen Benutzernamen und eine E-Mail-Adresse. Wenn du dich in Zukunft vor dem Arbeiten mit Scratch anmeldest, dann werden deine Projekte automatisch gespeichert und du kannst von überall auf sie zugreifen, egal von welchem Computer!</description>
+    </item>
+    
+    <item>
+      <title>ANTLR Hello World</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/</guid>
+      <description>ANTLR Hello World Installation  Installieren von [IntelliJ Community Edition](https://www.jetbrains.com/idea/download/#section=windows) (kostenlos)
+ IntelliJ starten
+ Ein neues Projekt mit New Project - Empty Project starten. In dieser Anleitung gehen wir davon aus, dass das Projekt antlr-hello-world heißt.
+ Settings-Dialog mit Strg+Alt+S öffnen, nach dem antlr Plugin suchen und installieren 
+    IntelliJ neu starten und das zuvor angelegte Projekt wieder laden
+  Erste Grammatik anlegen  Neue Datei Hello.</description>
+    </item>
+    
+    <item>
+      <title>Arno Hütter</title>
+      <link>https://linz.coderdojo.net/mentoren/huetter-arno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/huetter-arno/</guid>
+      <description>Arno Hütter hat seine ersten Codezeilen mit zwölf Jahren auf einem Sinclair ZX80 8bit Homecomputer geschrieben. Er studierte Wirtschaftsinformatik und Informatik an der Universität Linz, und ist seit 1995 beruflich in der Software-Entwicklung tätig.
+Im Laufe der Zeit programmierte er Software-Systeme für Banken, Mobiltelefonie, Krankenhäuser, die öffentliche Verwaltung und für Application Performance Management in C++, Java und C#. Performance-Tuning, zum Beispiel von Datenbanken, macht ihm besonders Spaß.
+Heute arbeitet er als Produkt-Entwicklungsleiter bei Dynatrace, einem international erfolgreichen APM Vendor.</description>
+    </item>
+    
+    <item>
+      <title>Back to Basics - Assembler Hello World</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/assembler-hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/assembler-hello-world/</guid>
+      <description>Erste Schritte mit Assembler-Programmierung Ziel der Übung Normalerweise programmieren wir im CoderDojo mit sogenannten höheren Programmiersprachen wie C#, Java, Python oder JavaScript. Auf unterster Ebene versteht ein Computer diese Sprachen aber nicht. Er kann nur mit Maschinensprache umgehen. Diese Befehle kann der Prozessor deines Computers direkt ausführen.
+In dieser Übung probieren wir, ein Programm direkt in Maschinensprache zu programmieren. Dazu verwenden wir eine Assemblersprache. Auch wenn du später selten Assembler programmieren wirst, hilft dir diese Übung, besser zu verstehen, was im Hintergrund passiert.</description>
+    </item>
+    
+    <item>
+      <title>Beschleunigungssensor</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/beschleunigungssensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/beschleunigungssensor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BME280</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/bme280/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/bme280/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Breakout</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/breakout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/breakout/</guid>
+      <description>In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläger einen Ball darauf schleuderst. Wenn alle Mauersteine zerstört sind, kommst du in den nächsten Level, wo dein Ball dann noch schneller fliegt.
+Downloads    Figur      Ball Figur downloaden   Block Figur downloaden   Schläger Figur downloaden    Bühne und Figuren anlegen   Zuerst suchen wir uns ein cooles Bühnenbild aus.</description>
+    </item>
+    
+    <item>
+      <title>Bubble Blaster</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/bubble-blaster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/bubble-blaster/</guid>
+      <description>Bubble Blaster Mit dem Package Tkinter programmieren wir ein erstes Spiel in Python. Ein U-Boot, das mit Pfeiltasten gesteuert wird, soll in der vorgegebenen Zeit so viel Blasen wie möglich zum Platzen bringen. (Die Beschreibung erfolgt in Anlehnung an Beispiele aus dem Buch Programmieren supereasy).
+
+   Voraussetzungen Übungsbeispiel „Alien“
+Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (File -&amp;gt; New File) und speichere die Datei als Dateityp auf deinem Computer (File -&amp;gt; Save As).</description>
+    </item>
+    
+    <item>
+      <title>C# Kennenlernen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/ant-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/ant-me/</guid>
+      <description>AntMe! Wie schlau ist deine Ameise? Ziel der Übung C# (Englisch &amp;ldquo;C Sharp&amp;rdquo;) ist eine der meist verwendeten Programmiersprachen der Welt. Sie ist Open Source und plattformunabhängig. Mit C# werden verschiedenste Programme geschrieben: Spiele, wirtschaftliche Software, Webseiten und vieles mehr.
+Ein Ziel dieser Übung ist es, dass du C# auf eine Weise kennenlernst, die Spaß macht. Dein Ziel wird es sein, in C# einen Computerspieler zu programmieren, der die Ameisen einer Ameisenkolonie steuert.</description>
+    </item>
+    
+    <item>
+      <title>Catch Me</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/catch-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/catch-me/</guid>
+      <description>Creating Stage and Sprites   You need to decide what your stage should look like. First of all we need to build our underwater world where our fishes live. Click on Select backdrop from library on the bottom left and choose your background image, for example the underwater1.
+     The next step is to delete the Scratchy sprite with the name Sprite1, by right-clicking on it and selecting delete.</description>
+    </item>
+    
+    <item>
+      <title>Chess</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/chess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/chess/</guid>
+      <description>Du kannst das fertige Project unter https://scratch.mit.edu/projects/148769358/ ausprobieren.
+Schachprogramme versuchen den jeweils besten Zug zu finden, und müssen dabei möglichst viele Züge im Voraus berechnen. Die Anzahl der zu untersuchenden Brettbilder wächst dadurch enorm an (exponentielles Wachstum), sodass sogar moderne Computer an ihre Rechengrenzen stoßen. Unser Schachprogramm muss daher schnell und schlau sein. Schlau heißt, dass nicht jede Zugkombination nachverfolgt wird, sondern schlechte Züge gleich wieder verworfen werden. Wenn das Programm einige Züge hintereinander berechnet hat, bewertet es das entstandene Brettbild.</description>
+    </item>
+    
+    <item>
+      <title>Chess</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/chess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/chess/</guid>
+      <description>You can try the finished project at https://scratch.mit.edu/projects/148769358/
+Chess programs try to find the optimal move by calculating as many moves in advance as possible. The number of resulting boards grows exponentially with each additional move, so that even modern computers reach their computing limits. Our chess program must therefore be quick and smart. Smart means that not every move combination is calculated, which can be achieved by discarding bad moves immediately.</description>
+    </item>
+    
+    <item>
+      <title>CoderDojo Playground</title>
+      <link>https://linz.coderdojo.net/termine/playgrounds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/termine/playgrounds/</guid>
+      <description>CoderDojo Playground Was ist CoderDojo Playground? Beim CoderDojo Playground treffen wir uns, um zu üben. Wer beim normalen CoderDojo schon etwas Erfahrung gesammelt hat und mit Freunden an seinen Projekten arbeiten möchte, hat hier Gelegenheit dazu.
+Was ist der Unterschied zum normalen CoderDojo?  Es sind nur wenige Mentorinnen und Mentoren anwesend. Ihr arbeitet eigenständig oder mit anderen, jungen Codern. Wir können beim CoderDojo Playground weniger Leihgeräte zur Verfügung stellen.</description>
+    </item>
+    
+    <item>
+      <title>Die Zauberlehrlinge</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/zauberlehrlinge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/zauberlehrlinge/</guid>
+      <description>Die Zauberlehrlinge Tim und Melley haben wieder mal gestritten und versuchen sich jetzt gegenseitig in Frösche zu verwandeln. Dieses Spiel kannst du später gemeinsam mit einem Freund oder einer Freundin spielen. Ihr seid dabei immer abwechselnd an der Reihe einen Zauberspruch zu verschießen. Doch es ist gar nicht so leicht, den anderen zu treffen, man muss genau in die richtige Richtung zielen!
+Damit es nicht langweilig wird, wollen wir die Landschaft im Hintergrund jedes mal ein bisschen anders zeichnen.</description>
+    </item>
+    
+    <item>
+      <title>Dragons Realm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/dragons-realm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/dragons-realm/</guid>
+      <description>Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindringende Raubritter verteidigt. Mit den Pfeiltasten lenkst du den Drachen um den Pfeilen der Ritter auszuweichen (du kannst auch zwei Tasten gleichzeitig drücken; mit ↑ und → fliegt man zum Beispiel nach rechts oben). Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen. Damit das Spiel auch auf Tablets und Handys funktioniert, wurde nachträglich eine Maus/Touch-Steuerung eingebaut.</description>
+    </item>
+    
+    <item>
+      <title>Eine einfache Falle mit Redstone</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/redstone-trap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/redstone-trap/</guid>
+      <description>&lt;h1 id=&#34;eine-einfache-falle-mit-redstone&#34;&gt;Eine einfache Falle mit Redstone&lt;/h1&gt;
+
+&lt;p&gt;In diesem Beispiel werden wir eine hinterhältige Falle bauen die Minecraft-Monster einfach zerquetscht.
+Dazu müssen wir die Creeper und/oder Zombies einfach in einen Gang locken. Eignet sich auch zum &lt;a href=&#34;https://www.zos-gaming.de/looten/&#34; target=&#34;_blank&#34;&gt;looten&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Elisabeth Rosemann</title>
+      <link>https://linz.coderdojo.net/mentoren/rosemann-elisabeth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/rosemann-elisabeth/</guid>
+      <description>In der Java Enterprise Entwicklung tätig, spezialisiert Elisabeth sich auf die Verarbeitung von unstrukturierten Daten mit Apache Solr und Lucene. Dabei ist sie zusätzlich zur Software Entwicklung auch als Projektmanagerin und Beraterin für Java Webanwendungen tätig.
+Ihre Interessen reichen von Prototyping mit Python bis hin zu statistischen Analysen großer Datenbestände mit R.
+In ihrer Freizeit ist sie außerdem Mitglied des Organisationsteams des Technologieplauscherls Linz.</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit Bootstrap</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-bootstrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-bootstrap/</guid>
+      <description>Erste Schritte mit Bootstrap Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Scratch - Fang mich&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;content&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Scratch Fang-Mich &amp;lt;span class=&amp;#34;version&amp;#34;&amp;gt;Scratch 3.0&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;div class=&amp;#34;intro&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;images/endgame.png&amp;#34; alt=&amp;#34;Endgame&amp;#34;&amp;gt; &amp;lt;p&amp;gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ... Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: Startprojekt</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit Hugo</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-hugo/</guid>
+      <description>Erste Schritte mit Hugo Was ist Hugo Hugo ist ein statischer Webseitengenerator, der auf der Sprache Go basiert.
+Was ist ein statischer Website Generator Dynamische Webseiten werden erst beim Abruf vom Server generiert (z.B. PHP, ASP.NET). Statische Webseiten bestehen nur aus HTML, JavaScript, CSS und weiteren Resourcen wie Bildern oder Fonts.
+Static Site Generators generieren statische Webseiten und ermöglichen damit die Trennung von Layout und Content. Mehr Infos dazu findest du unter https://www.</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit Redstone</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/erste-schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/erste-schritte/</guid>
+      <description>Erste Schritte mit Redstone Voraussetzung Für diese Übung brauchst du Minecraft. Du solltest mit den Grundfunktionen wie Steuerung des Spielers, verwenden von grundlegenden Blöcken etc. vertraut sein.
+Was ist Redstone? 
+   Redstone ist ein wichtiger Rohstoff in Minecraft. Wie in der echten Welt mit Strom kannst du mit Redstone in Minecraft Schaltkreise (Englisch Ciruits) bauen. Egal ob Falle für Monster, Lichtsteuerung oder automatische Türen - für all das verwendest du Redstone.</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit SVG</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/</guid>
+      <description>Erste Schritte mit SVG Ziel der Übung In dieser Übung lernst du Scalable Vector Graphics (kurz SVG) kennen. Unser Ziel sind:
+ Wir wollen verstehen, was SVG ist und wofür es eingesetzt wird. Wir wollen Grafiken mit SVG in eine HTML-Seite einbauen. Wir wollen SVG mit JavaScript programmgesteuert erzeugen. Wir möchten SVG verwenden, um ein mathematisches Prinzip, die Cardanischen Kreise veranschaulichen.  Wenn du nach dieser Übung mehr über SVG lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die SVG Einführung auf w3schools.</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit Unity</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/unity/erste-schritte-mit-unity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/unity/erste-schritte-mit-unity/</guid>
+      <description>Unity Racing Game Ganz ehrlich – wer gerne Programmiert hat fast immer schon einmal davon geträumt ein eigenes Computerspiel auf die Beine zu stellen. Kein Wunder, immerhin faszinieren Computerspiele den Menschen schon fast 50 Jahre und sie haben einen großen Anteil an der vormals rasanten Entwicklung im Hardwarebereich. Während die älteren Semester hierbei oft an komplizierte Matrizenberechnungen und native OpenGL Programmierung denken fällt das Entwickeln von Spielen heute so leicht wie nie zu vor.</description>
+    </item>
+    
+    <item>
+      <title>Fan Controller</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/fan-controller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/fan-controller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fang den Punkt</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/fang-den-punkt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/fang-den-punkt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fang die Äpfel</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fang-die-aepfel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fang-die-aepfel/</guid>
+      <description>In diesem Spiel fallen Äpfel vom Himmel, die du mit deiner Schüssel fangen solltest. Jeder gefangene Apfel bringt dir einen Punkt, jeder zu Boden gefallener Apfel kostet dir ein Leben. Versuch möglichst viele Äpfel mit den 10 Leben zu fangen.
+Schritt 1: Die drei Bühnenbilder anlegen Dieses Spiel verwendet drei verschiedene Hintergundbilder (Bühnenbilder). Eines vor Spielstart, eines während des Spiels und ein drittes sobald das Spiel zu Ende ist.</description>
+    </item>
+    
+    <item>
+      <title>Fledermaus-Spiel</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fledermaus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fledermaus/</guid>
+      <description>Hier erstellst du ein Quiz zum Thema Fledermaus. Wenn du viele Fragen richtig beantworten kannst, erhältst du einen Pokal.
+Bühnenbild auswählen Als erstes legst du fest, wie dein Hintergrund aussehen sollte. Wähle für dieses Quiz das Bühnenbild Mountain aus.
+Figuren anlegen Das Spiel besteht aus zwei Figuren: der Fledermaus und dem Pokal.
+ Lösche die Figur Scratchy (Figur1)
+ Füge die Figur Bat hinzu und ändere den Namen auf Fledermaus</description>
+    </item>
+    
+    <item>
+      <title>Fraktal Baum mit snap.svg</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-fraktalbaum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-fraktalbaum/</guid>
+      <description>Zeichne einen Fraktal Baum mit snap.svg Ziel der Übung Zeichne einen Baum in SVG. Starte dazu mit einer vertikalen Linie als Stamm.
+Am oberen Ende der Linie zeichne zwei weitere Linien - eine etwas nach links und eine etwas nach rechts geneigt. Die neuen beiden Linien sind etwas kürzer als die erste Linie für den Stamm. In dieser zweiten Ebene erhältst du so zwei Zweige.
+Am jeweils oberen Ende der beiden neuen Linie zweichne wieder jeweils zwei neue nach links und rechts geneigte Linien die etwas kürzer als die vorige Linie sind.</description>
+    </item>
+    
+    <item>
+      <title>Geisterspiel in C#</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/geisterspiel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/geisterspiel/</guid>
+      <description>Geisterspiel In dieser Übung erstellen wir ein erstes, einfaches Konsolenspiel mit C# (C-Sharp). Das Spiel wird textuell gesteuert d.h Ein/-Ausgaben werden auf einer Konsole zu lesen/schreiben sein.
+Die Aufgabe Der Geist versteckt sich zufällig hinter einer von 3 Türen. Du entscheidest, welche Türe du öffnen möchtest. Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste. Unser Programm soll nun prüfen, ob der Geist sich hinter der Tür befindet und eine entsprechende Meldung ausgeben; also entweder ‘Geist gefunden’ und damit das Spiel verloren oder ‘Kein Geist’ und der Spieler darf zur nächsten Station mit wieder 3 Türen und einem zufällig versteckten Geist weitergehen.</description>
+    </item>
+    
+    <item>
+      <title>Geisterspiel mit Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/geisterspiel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/geisterspiel/</guid>
+      <description>Geisterspiel In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python. Es wird nur ein text-basiertes UI (= User Interface; deutsch: Benutzerschnittstelle) haben, d.h. wir werden Text auf dem Bildschirm lesen und Zeichen mit der Tastatur eingeben, um das Spiel zu steuern.
+Die Aufgabe Der Geist versteckt sich zufällig hinter einer von 3 Türen. Du entscheidest, welche Türe du öffnen möchtest. Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste.</description>
+    </item>
+    
+    <item>
+      <title>Günther Ehrenberger</title>
+      <link>https://linz.coderdojo.net/mentoren/ehrenberger-guenter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/ehrenberger-guenter/</guid>
+      <description>Günther Ehrenberger ist als Mechatroniker beruflich im Anlagenbau tätig.
+Elektronische Schaltungen und Microprozessoren wie Raspberry, micro:Bit, Pic und Co sind sein Freizeitvergnügen.
+Um sich die Elektronik Untertan zu machen werden Scratch, Python, HTML, CSS, JavaScript, C usw. verwendet. Nach dem Motto &amp;ldquo;Aller Anfang ist leicht&amp;rdquo; beschäftigen wir uns im CoderDojo mit dem BBC micro:bit.</description>
+    </item>
+    
+    <item>
+      <title>Hangman</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</guid>
+      <description>Hangman Ziel der Übung Der erste Spieler gibt ein Wort ein, das vom zweiten Spieler erraten werden muss.
+Zuerst sieht der zweite Spieler nur ein Sternchen für jeden Buchstaben. Jeder erratene Buchstabe wird aufgedeckt. Für jeden falsch geratenen Buchstaben wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor der Galgen fertig ist.
+
+   Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.</description>
+    </item>
+    
+    <item>
+      <title>Hans-Peter Weidinger</title>
+      <link>https://linz.coderdojo.net/mentoren/weidinger-hans-peter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/weidinger-hans-peter/</guid>
+      <description>Hans-Peter ist Senior Software Engeneer bei Dynatrace. Mit „Programmieren“ (wenn man das in Basic so nennen darf) kam er das erste mal in Berührung als in der Familie ein C64 angeschafft wurde.
+Der Besuch der HTL (Elektronik/Informatik) und das Studium Softwae Engeneering an der FH Hagenberg waren dann mehr oder weniger schon &amp;ldquo;vorprogrammiert&amp;rdquo;. Seither war er in Produkt- und Projektentwicklung tätig. Unter anderem für einen österreichischen Mobilfunkbetreiber, wo er an der Entwicklung von SMS und MMS Lösungen sowie deren Anbindungen mitarbeitete.</description>
+    </item>
+    
+    <item>
+      <title>Hot Wire - der heiße Draht</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/hot-wire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/hot-wire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML &amp; CSS Hands On</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-css-hands-on/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-css-hands-on/</guid>
+      <description>HTML &amp;amp; CSS Hands On Die folgenden Übungen kannst du direkt online in JSFiddle machen. Du brauchst dafür kein installiertes Tool. Für jede Übung wird das gewünschte Ergebnis dargestellt und du findest jeweils einen Link zur Ausgangsbasis für das Beispiel.
+HTML Basic Tags Im ersten Beispiel werden die am häufigsten verwendeten HTML Element verwendet.
+Startprojekt öffnen
+ Formatierung mit Tags In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch HTML Elemente zu formatieren.</description>
+    </item>
+    
+    <item>
+      <title>i2c-Bus</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/i2c-bus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/i2c-bus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Installation eines Minecraft Servers</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/installation-minecraft-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/installation-minecraft-server/</guid>
+      <description>Installation eines Minecraft Servers Voraussetzungen In dieser Übung installieren wir einen Minecraft Server. Als Grundlage brauchst du dafür einen Computer, auf dem Linux installiert ist. Linux ist eine freie Software, die kostenlos im Internet zu haben ist.
+Falls du nicht sicher bist, welches Linux du verwenden sollst, empfehlen wir für diese Übung Ubuntu. Du bekommst den Ubuntu Server zur Installation kostenlos im Internet. Eine deutsche Anleitung zur Installation von Ubuntu findest du z.</description>
+    </item>
+    
+    <item>
+      <title>Karin Huber</title>
+      <link>https://linz.coderdojo.net/mentoren/huber-karin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/huber-karin/</guid>
+      <description>Karin Huber ist Mitgründerin und Geschäftsführerin der Firma software architechts gmbh und ist seit mehr als 15 Jahren in der Softwareentwicklung tätig.
+Ihre Schwerpunkte liegen im Bereich WPF und Silverlight, sowie in der Webentwicklung mit HTML5, CSS3 und AngularJS. Außerdem ist sie Mitautorin der beiden Bücher &amp;ldquo;XAML. schnell + kompakt&amp;rdquo; und &amp;ldquo;WPF und XAML Programmierhandbuch&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Kompass</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/kompass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/kompass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Labyrinth-Spiel mit Scratch und JavaScript</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/labyrinth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/labyrinth/</guid>
+      <description>Ziel der Übung In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
+Spielbeschreibung Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit X markierte Ziel zu erreichen. Die schwarzen und roten Felder sind Hindernisse. Schwarze Felder kannst du zerstören, indem du Anlauf nimmst.</description>
+    </item>
+    
+    <item>
+      <title>Labyrinth-Spiel mit Scratch und JavaScript</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</guid>
+      <description>Labyrinth-Spiel mit Scratch und JavaScript Ziel der Übung In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
+Es ist wichtig, dass du vor dieser Übung die Scratch-Variante dieses Spiels genau angesehen oder noch besser selbst programmiert hast.
+Spielbeschreibung Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit &amp;ldquo;X&amp;rdquo; markierte Ziel zu erreichen.</description>
+    </item>
+    
+    <item>
+      <title>LCD</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/lcd-16-02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/lcd-16-02/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Led-Array</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/led-array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/led-array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lokaler Minecraft-Server mit Scriptcraft</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/scriptcraft-installieren/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/scriptcraft-installieren/</guid>
+      <description>Minecraft Server für ScriptCraft Wichtiger Hinweis: Diese Anleitung ist für erfahrene Coder, Mentorinnen und Mentoren. Wenn du im generellen Umgang mit Linux-Servern, Docker, JRE etc. noch unerfahren bist, bitte eine Mentorin aus dem CoderDojo, den Minecraft-Server für dich herzurichten. Später kannst du dich selbst am Installieren eines MineCraft-Servers wie hier beschrieben heran wagen.
+Einleitung Ziel dieser Anleitung ist das Betreiben eines Minecraft Servers auf Basis von Spigot mit installiertem Scriptcraft Mod zum Programmieren von Minecraft mit JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Lötübung Clown</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/clown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/clown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lötübung Konstantstromquelle für LED</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/konstantstromquelle-fuer-led/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/konstantstromquelle-fuer-led/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lötübung Solar LED</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/solar-led/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/solar-led/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matthias Ableidinger</title>
+      <link>https://linz.coderdojo.net/mentoren/ableidinger-matthias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/ableidinger-matthias/</guid>
+      <description>Von klein auf fasziniert von Computern ist es keine Überraschung, dass Matthias nun seit über 3 Jahre Hauptberuflich als Softwareentwickler bei der Linzer Firma Catalysts unterwegs ist. Während er dort großteils Webanwendungen in Java programmiert und betreibt, beschäftigt er sich privat mit Rätsel, Smarthome, neuen Technologien und anderen Spielereien.
+Wenn er nicht vorm Computer sitzt, kocht und liest er gerne, und er hat nach jahrelanger Müdigkeit noch immer nicht gelernt rechtzeitig ins Bett zu gehn.</description>
+    </item>
+    
+    <item>
+      <title>Memory</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/memory/</guid>
+      <description>Figuren anlegen Das Spiel besteht aus nur zwei Figuren: der Karte mit einer Vorder- und einer Rückseite und der Bilder, die auf den Karten angezeigt werden sollen. Alle Bilder werden als Kostüme in einer Figur zusammengefasst.
+  Lösche als erstes die Figur Scratchy mit dem Namen Sprite1 indem du auf das blaue X klickst oder mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.</description>
+    </item>
+    
+    <item>
+      <title>Michael Wagner</title>
+      <link>https://linz.coderdojo.net/mentoren/michael-wagner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/michael-wagner/</guid>
+      <description>IT Leiter, Technikfreak, Bastler, Elektroniker und Amateurfunker</description>
+    </item>
+    
+    <item>
+      <title>Minesweeper</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/minesweeper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/minesweeper/</guid>
+      <description>Figuren anlegen Das Spiel besteht aus nur zwei Figuren: einer Zelle für das Spielfeld und verschiedenen Nachrichten, die dem Spieler angezeigt werden können.
+  Lösche als erstes die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
+     Die Figur Zelle besteht aus mehreren Kostümen; einer nicht aufgedeckten Zelle, einer Bombe, einer leeren Zelle, einer Fahne und den Ziffern 1 bis 8.</description>
+    </item>
+    
+    <item>
+      <title>Missile Shooter</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/missile-shooter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/missile-shooter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mit Scratch eine Geschichte erzählen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/geschichte-katze-und-ente/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/geschichte-katze-und-ente/</guid>
+      <description>Mit Scratch kannst du Geschichten erzählen. Du kannst Figuren erscheinen lassen, sie bewegen, den Hintergrund austauschen und vieles mehr.
+Neues Projekt erstellen   Öffne Scratch und klicke links oben im Menü auf Entwickeln. Im neuen Projekt siehst du Scratchy, die Katze. Noch macht Scratchy nichts, da sie noch kein Programm hat.
+     Scratchy auftreten lassen   Schiebe Scratchy ganz nach links. Man darf nur ein kleines Stück von ihr sehen.</description>
+    </item>
+    
+    <item>
+      <title>Moonhack</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/moonhack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/moonhack/</guid>
+      <description>In diesem Spiel musst du mit dem Lunar Module auf dem Mond landen. Aber Vorsicht, die Landung muss sanft sein und du hast nur eine begrenzte Menge an Raktentreibstoff.
+Du kannst das fertige Spiel unter https://scratch.mit.edu/projects/236734138/ auch gleich ausprobieren.
+Downloads Figur    Hintergrund Hintergrund downloaden   Lunar Module Figur downloaden   Einleitung Am 20. Juli 1969 erreichten die ersten Menschen mit der Mondlandefähre (Englisch Lunar Module) den Mond.</description>
+    </item>
+    
+    <item>
+      <title>Moonhack 2018</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/moonhack-2018/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/moonhack-2018/</guid>
+      <description>micro:bit Moonhack 2018 Einleitung Am 20. Juli 1969 erreichten die ersten Menschen mit der Mondlandefähre (Englisch Lunar Module) den Mond, aber das Raumschiff am richtigen Ort zu landen war nicht einfach. Der Pilot, Neil Armstrong, musste das Raumschiff präzise zu dem Landepunkt steuern um dort landen zu können und in diesem Spiel werden wir versuchen die Landeansteuerung nachzubauen.
+Wenn du keinen physischen micro:bit hast kannst du das Spiel in dem Online-Editor coden.</description>
+    </item>
+    
+    <item>
+      <title>n-Ecke malen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/n-ecke-malen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/n-ecke-malen/</guid>
+      <description>Lösche vorhandene Malspuren und schalte den Stift ein   Wische alle bereits vorhandenen Malspuren weg, schalte den Stift ein und wähle eine Farbe und Dicke für den Stift.
+     Lass Scratchy fragen, wie viele Ecken sie malen soll   Lass Scratchy fragen Wie viel Ecken soll die Figur haben, die ich malen soll? Du bekommst unten ein Eingabefeld, indem du angeben musst, wieviel Ecken die Figur haben soll.</description>
+    </item>
+    
+    <item>
+      <title>OLED</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/oled-128-64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/oled-128-64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pac Man</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/pac-man/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/pac-man/</guid>
+      <description>Pac-Man ist ein klassisches Computerspiel. Es erschien erstmals 1980 in Japan.
+Pac-Man muss alle bunten Pillen einsammeln, ohne den Geistern in die Arme zu laufen. Die blauen Pillen verleihen ihm für kurze Zeit Superkräfte, und er kann Geister einfrieren.
+Vorbereitungen Grafiken und Musik stellen dir deine Mentoren gerne via Memorystick zur Verfügung, bzw. kannst du sie auch unter pac-man.zip herunterladen. Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMan, Ghost und Pill.</description>
+    </item>
+    
+    <item>
+      <title>Paddle Game</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/paddle-game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/paddle-game/</guid>
+      <description>Creating Stage and Sprites   You begin by defining what your stage should look like. For this Game we need the beach backdrop, a ball, a paddle a sprite that defines the out area. Select the backdrop from the library with the button on the bottom left.
+     
+     The next step is to delete the Scratchy sprite with the name Sprite1, by right-clicking on it and selecting delete.</description>
+    </item>
+    
+    <item>
+      <title>Paddle Game</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/paddle-game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/paddle-game/</guid>
+      <description>Bühne und Figuren anlegen   Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen die Bühne, hier der Strand, einen Ball, einen Schläger und einen Bereich, der markiert, wo der Ball im Out ist. Wenn du ein neues Projekt startest, siehst du eine weiße Bühne mit Scratchy, der Katze. Wähle als erstes rechts unten ein Bühnenbild aus.
+     
+     Als nächstes lösche die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst.</description>
+    </item>
+    
+    <item>
+      <title>Pakete Fangen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/pakete-fangen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/pakete-fangen/</guid>
+      <description>Vorbereitung Lade dir zuerst die Zip Datei herunter.
+Du brauchst als erstes 4 Figuren:
+ die Geschenkspakete (aus der Scratch Bibliothek) das Förderband (du findest es in der ZIP-Datei) den Weihnachtssack (du findest ihn in der ZIP-Datei) die Mitteilung, dass du zu viele Pakete fallen gelassen hast (bitte selbst erstellen)  In der Figur &amp;ldquo;Paket&amp;rdquo; müssen wir zuerst noch 2 Kostüme hinzufügen, die anzeigen, ob das Paket am Boden zerbrochen ist, oder erfolgreich gefangen wurde.</description>
+    </item>
+    
+    <item>
+      <title>Peter Bauer</title>
+      <link>https://linz.coderdojo.net/mentoren/bauer-peter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/bauer-peter/</guid>
+      <description>Peter Bauer hat schon so manches quer durch den Gemüsegarten programmiert. Angefangen von Datenbankanwendungen aus den späten 80er-Jahren (Achtung Dinosaurier-Alarm!!) über ganz viel C und C++ Programmen zur Bild- und Signalanalyse bis hin zu Software für Mobiltelefone.
+In letzter Zeit gesellte sich auch das eine oder andere Web-Projekt dazu.
+Peter unterrichtet Programmieren, Technische und Theoretische Informatik und Projektentwicklung an der HTL Leonding.
+Privat ist er verheiratet und Vater zweier Söhne im Alter von 13 und 16 Jahren.</description>
+    </item>
+    
+    <item>
+      <title>Pia Gerhofer</title>
+      <link>https://linz.coderdojo.net/mentoren/gerhofer-pia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/gerhofer-pia/</guid>
+      <description>Pia Gerhofer is a software developer based in Linz mainly working on business applications implemented with the Spring Framework in Java and Kotlin and web applications implemented with Angular. Furthermore, she is a part-time teacher at a coding Bootcamp located in Linz.
+She is passionate about technology, the environment, enabling women in the IT industry and education and therefore she can often be found at one of Linz&amp;rsquo; local meetups or mentoring at the CoderDojo.</description>
+    </item>
+    
+    <item>
+      <title>Präsentationen mit HTML statt PowerPoint</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-praesentationen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-praesentationen/</guid>
+      <description>Präsentationen mit HTML statt PowerPoint Ziel der Übung Egal ob in der Schule, auf der Uni oder später im Beruf - es kommt immer wieder vor, dass man Präsentationen erstellen muss. Die meisten greifen dabei zu Microsoft PowerPoint.
+Das muss aber nicht sein. Als Coder mit HTML- und CSS-Kenntnissen kann man beeindruckende Präsentationen für den Browser erstellen. In dieser Übung lernst du Reveal.js kennen. Mit Grundkenntnissen in HTML und CSS kannst du mit Reveal deine nächste Präsentation ganz ohne PowerPoint erledigen.</description>
+    </item>
+    
+    <item>
+      <title>Python baut unsinnige Sätze</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/unsinnige-saetze/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/unsinnige-saetze/</guid>
+      <description>Unsinnige Sätze In dieser Übunge erstellen wir ein kleines Python-Programm, das unsinnige Sätze zusammenbaut.
+Die Aufgabe Unser Programm soll aus drei verschiedenen Wortgruppen (Subjekt, Verb, Objekt) willkürlich Sätze zusammenstellen. Es wählt zufällig je ein Wort aus einer Gruppe aus und dabei können natürlich auch lustige und unsinnige Sätze herauskommen.
+Ein möglicher Ablauf könnte dann im Shell-Fenster so aussehen:
+Unsinnige Sätze =============== Drücke einfach ENTER, um einen neuen Satz zu erzeugen.</description>
+    </item>
+    
+    <item>
+      <title>Rainer Stropek</title>
+      <link>https://linz.coderdojo.net/mentoren/stropek-rainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/stropek-rainer/</guid>
+      <description>Rainer Stropek ist seit über 20 Jahren als Unternehmer in der IT-Industrie tätig. Er gründete und führte in dieser Zeit mehrere IT-Dienstleistungsunternehmen und entwickelt im Augenblick in seiner Firma &amp;ldquo;software architects&amp;rdquo; mit seinem Team die preisgekrönte Software &amp;ldquo;time cockpit&amp;rdquo;.
+Rainer hat Abschlüsse an der Höheren Technischen Schule für MIS, Leonding (AT) sowie der University of Derby (UK). Er ist Autor mehrerer Fachbücher und Artikel in Magazinen im Umfeld von Microsoft .</description>
+    </item>
+    
+    <item>
+      <title>Raphael Schwarz</title>
+      <link>https://linz.coderdojo.net/mentoren/schwarz-raphael/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/mentoren/schwarz-raphael/</guid>
+      <description>Raphael Schwarz ist Gründer und Geschäftsführer der codeworx gmbh in Wels und seit vielen Jahren in der Softwarenentwicklung tätig.
+Sein Kernaufgabengebiet liegt in der Architekturberatung und im Coaching von größeren Softwareprojekten mit .NET bzw. Web Technologien.</description>
+    </item>
+    
+    <item>
+      <title>Schere-Stein-Papier</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/schere-stein-papier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/schere-stein-papier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Schriftlich Multiplizieren mit Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/schriftlich-multiplizieren/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/schriftlich-multiplizieren/</guid>
+      <description>Schriftlich Multiplizieren mit Python Es wäre doch nett, wenn ein Programm das schriftliche Multiplizieren mit allen Zwischenschritten vorführen könnte? Für die Faktoen 345 und 789 soll das Programm z.B. folgendes ausgeben:
+345 x 789 --------- 2415 2760 3105 ------ 272205 Allgemeines zur Programmiersprache Python Wir verwenden für die Programmierung die Programmiersprache Python (siehe die Python Homepage www.python.org), genauer gesagt Python 3, also eine Version von Python, deren Bezeichnung mit 3 beginnt, z.</description>
+    </item>
+    
+    <item>
+      <title>Sierpinski Dreieck</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/sierpinski-dreieck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/sierpinski-dreieck/</guid>
+      <description>Ein Fraktal ist ein Objekt, dass oft aus mehreren verkleinerten Kopien seiner selbst besteht. Hier siehst du ein großes Dreieck, das aus mehreren kleineren Dreiecken zusammengesetzt ist, die wiederum aus noch kleineren Dreiecken bestehen. Man nennt dieses Fraktal Sierpinski Dreieck.
+Figuren anlegen   Um im Scratch zu malen, brauchen wir zwar eine Figur, es muss am Bildschirm aber nichts angezeigt werden. Du kannst also eine Figur mit einem leeren Kostüm anlegen.</description>
+    </item>
+    
+    <item>
+      <title>Snake</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/snake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/snake/</guid>
+      <description>Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auf, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.
+Bühne &amp;amp; Figuren Das Spiel besteht aus drei Figuren: der Schlange, dem Apfel und einer Nachricht, wenn das Spiel zu Ende ist. Für dieses Spiel brauchen wir kein Bühnenbild. Du kannst es einfach weiß lassen. Die Schlange besteht aus zwei Kostümen: Kopf und Körper.</description>
+    </item>
+    
+    <item>
+      <title>Snake mit Node.js</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-nodejs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-nodejs/</guid>
+      <description>Snake mit Node.js 
+   Ziel der Übung In dieser Übung lernst du, wie du mit Node.js einfache Spiele programmieren kannst.
+Systemvoraussetzungen Du brauchst für diese Übung die gleichen Tools (Visual Studio Code, Node.js, npm), die schon in der Übung Ein Webserver mit Node.js erwähnt sind. Falls du die Übung schon gemacht hast, hast du schon alle notwendigen Tools. Falls nicht, schau dort bitte nach.
+Du kannst das Beispiel unter Windows, Linux oder MacOS bauen.</description>
+    </item>
+    
+    <item>
+      <title>Snake mit Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/snake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/snake/</guid>
+      <description>Python Snake In dieser Übung erstellen wir das Computerspiel Snake mit Python. So wie für das Bubble Blaster Spiel werden wir auch hier auf das Package Tkinter zurückgreifen, um die Spielelemente (Kugeln aus denen die Schlage besteht, Apfel) auf den Bildschirm zu malen.
+Voraussetzungen Es wäre ideal, wenn du das Bubble Blaster Spiel davor schon programmiert hast, um dich so mit Tkinter vertraut zu machen.
+8 Schritte zum fertigen Snake Spiel Es ist oft eine gute Strategie ein Programm nicht in einem einzelnen Wurf zu entwickeln, sondern es in kleine Unterschritte zu unterteilen, die für sich gesehen bewältigbarer sind.</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter/</guid>
+      <description>Bühne und Figuren anlegen   Als erstes legst du fest, wie deine Bühne aussehen soll. Für dieses Spiel brauchst du das Weltall als Hintergrund. Wähle ein passendes Bild aus oder male selbst eines.
+     Als erste Figur brauchst du das Raumschiff. Es besteht aus zwei Kostümen: dem Raumschiff selbst und einem weiteren Kostüm das angezeigt wird, wenn das Spiel vorbei ist. Zeige den Text &amp;ldquo;Game Over&amp;rdquo; an oder male ein passendes Bild</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter II</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter-2/</guid>
+      <description>Hast du die Space Shooter Scratch Übung schon geschafft? Dann bist du genau richtig hier. Deine Aufgabe ist es, einen modifizierten Space Shooter zu bauen - diesmal aber ohne kompletter Anleitung.
+Falls du Hilfe brauchst, kannst du dir Anregungen beim fertigen Spiel unter https://scratch.mit.edu/projects/236866631/ holen.
+Bühne und Figuren anlegen  Verwende einen Sternenhimmel als Bühnenbild für dein Spiel.
+ Füge das Raumschiff als Figur hinzu. Mache es so groß oder klein wie du möchtest.</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter in C</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/space-shooter-c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/space-shooter-c/</guid>
+      <description>Space Shooter in C In dieser Übung werden wir ein relativ fortgeschrittenes Computerspiel in C entwickeln, welches im Terminalemulator &amp;ndash; unter Windows standardmäßig, CMD &amp;ndash; läuft. Wir werden im Terminal mithilfe von speziellen control codes (Ketten von escape charactern) das gesamte Spiel zeichnen und durch Tastendrücke auf dem Keyboard kontrollieren.
+Für diese Übung solltest du bereits einfache Programmierkentnisse haben, die Konzepte von Schleifen, Bedingungen und Assignments bzw. Variablen sollten nichts neues sein.</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter mit Phaser.io</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter/</guid>
+      <description>Space Shooter mit Phaser.io Ziel der Übung In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den Space Shooter erstellt. Falls nicht, wirf bitte vor diesem Beispiel einen Blick auf die Space Shooter Scratch Übung und probiere die Scratch-Implementierung aus. Unser Ziel ist es, diesen Space Shooter mit Web-Technologien für den Browser zu entwickeln.
+
+   Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist! Falls HTML, JavaScript, Node.</description>
+    </item>
+    
+    <item>
+      <title>Spielwürfel</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/spielwuerfel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/spielwuerfel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sponsoring</title>
+      <link>https://linz.coderdojo.net/sponsoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/sponsoring/</guid>
+      <description>Sponsoring Wer sind wir? In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.
+Hier in Linz sind wir ein gemeinnütziger Verein, an dessen oberster Stelle das gemeinsame Entdecken, Teamarbeit und Mentoring zur Vermittlung von Technologien und Programmierung an Kinder steht.</description>
+    </item>
+    
+    <item>
+      <title>Sterne fangen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/sterne-fangen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/sterne-fangen/</guid>
+      <description>Verwende die Pfeiltasten nach links und rechts um am Boden zu laufen und die Pfeiltaste nach oben um hochzuspringen. Fange so viele Sterne wie möglich.
+Das Spiel basiert auf dem Spiel Gravity!! von gilnz21.
+Figuren anlegen   Lösche als erstes die Figur Scratchy mit dem Namen Sprite 1 indem du mit der rechten Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
+     Suche dir ein Bühnenbild für dein Spiel aus.</description>
+    </item>
+    
+    <item>
+      <title>Stoppuhr</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/stoppuhr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/stoppuhr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SVG Schreibtrainer</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-schreibtrainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-schreibtrainer/</guid>
+      <description>SVG Schreibtrainer Ziel der Übung Du baust ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.
+Am oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen. Tippe den Buchstaben, bevor er den unteren Rand des Spielfelds berührt.
+Auf Wikipedia findest du eine Grafik zum Zehnfingersystem, die erklärt, welche Taste mit welchem Finger gedrückt werden soll.
+
+   Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen schreibtrainer.</description>
+    </item>
+    
+    <item>
+      <title>Tetris mit Blazor</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/blazor-tetris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/blazor-tetris/</guid>
+      <description>Tetris mit Blazor Kostenlose Voraussetzungen  Neueste Version von Visual Studio 2017 Community Edition mit ASP.NET and web development ASP.NET Core Blazor Language Services  Projekt anlegen  Visual Studio starten
+ File / New / Project
+ Neues ASP.NET Projekt anlegen: 
+    Blazor Projekttyp auswählen: 
+    Nach dem Anlegen des Projekt den Startmodus ändern: 
+    Probiere, das Programm mit F5 oder Debug / Start Debugging zu starten.</description>
+    </item>
+    
+    <item>
+      <title>The Game of Life</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/the-game-of-life/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/the-game-of-life/</guid>
+      <description>Die Idee zu „The Game Of Life“ geht auf den Mathematiker John Conway zurück. Das Spielfeld besteht aus einem großen Raster von Zellen, die zwei Zustände haben können: „tot“ (weiß) oder „lebendig“ (farbig). Basierend auf dem Zustand des Rasters wird die nächste Generation von Zellen berechnet, und zwar nach folgenden Regeln:
+ Eine tote Zelle mit genau drei lebenden Nachbarn wird neu geboren Lebende Zellen mit weniger als zwei lebenden Nachbarn sterben an Einsamkeit Lebende Zellen mit zwei oder drei lebenden Nachbarn bleiben am Leben Lebende Zellen mit mehr als drei lebenden Nachbarn sterben an Überbevölkerung  Durch diese einfachen Regeln können aus bestimmten Anfangsmustern komplexe Strukturen entstehen.</description>
+    </item>
+    
+    <item>
+      <title>Tipps für Online CoderDojos</title>
+      <link>https://linz.coderdojo.net/termine/online-coderdojo-tipps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/termine/online-coderdojo-tipps/</guid>
+      <description>Tipps für Online CoderDojos Hier bekommt ihr hilfreiche Tipps zur Teilnahme bei Online CoderDojos.
+Dieser Artikel ist für Kinder und Jugendliche, die schon etwas Erfahrung mit dem Umgang mit dem Computer haben, oder für erwachsene Begleitpersonen von jüngeren Kindern, die noch nicht so viel mit dem Computer gemacht haben.
+Notwendige Software Wir verwenden für Online CoderDojos die Webmeeting-Plattform Zoom. Installiere dir den Zoom Client auf allen Geräten, mit denen du am Online CoderDojo teilnehmen willst.</description>
+    </item>
+    
+    <item>
+      <title>Türme von Hanoi</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/towers-of-hanoi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/towers-of-hanoi/</guid>
+      <description>Türme von Hanoi Einleitung Die Türme von Hanoi sind ein klassisches Übungsbeispiel für Programmierer. Für Kinder gibt es das Rätsel auch als Holzspielzeug zu kaufen. Die Regeln sind einfach:
+ Man hat ein Spielbrett mit drei Stangen. Nennen wir sie L for Links, M für Mitte und R für Rechts. Auf der Stange A ist ein Turm von Spielsteinen aufgetürmt. Jeder Spielstein ist etwas kleiner als der darunter. Die Aufgabe ist es, den Turm von Stange L auf Stange M zu übersiedeln.</description>
+    </item>
+    
+    <item>
+      <title>Von Scratch zu Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/von-scratch-zu-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/von-scratch-zu-python/</guid>
+      <description>Von Scratch zu Python Du zeichnest eine geometrische Figur in Scratch und dann übersetzt du das Programm in die Programmiersprache Python.
+
+   Voraussetzungen Übungsbeispiel: Erste Schritte in Python
+Scratch Laden des Malstifts Um in Scratch zu zeichnen, muss man zuerst die Erweiterung „Malstift“ laden. Klicke dazu auf das Symbol in der linken unteren Ecke und wähle dann den Malstift aus. Damit bekommst du einen neuen Eintrag „Malstift“ im Menü am linken Bildschirmrand und eine Menge neuer Blöcke, die du zum Zeichnen verwenden kannst.</description>
+    </item>
+    
+    <item>
+      <title>Weihnachtsspiel 2015</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/weihnachten-2015/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/weihnachten-2015/</guid>
+      <description>Bilder downloaden Wir haben einige Bilder vorbereitet, die du für dieses Spiel benötigst. Lade dir die folgende Datei herunter: weihnachtsspiel.zip
+Winterlandschaft Es soll so aussehen, dass der Weihnachtsmann sich von links nach rechts bewegt. Dabei darf er aber natürlich nicht aus dem Bild rausfliegen. Deshalb verwenden wir einen Trick: Wir bewegen nicht den Weihnachtsmann nach rechts, sondern den Hintergrund nach links. Der Weihnachtsmann bleibt immer an der gleichen Position – wie wenn du ihn mit einer Kamera filmen würdest.</description>
+    </item>
+    
+    <item>
+      <title>Weihnachtsspiel 2016</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/weihnachten-2016/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/weihnachten-2016/</guid>
+      <description>Spielregeln  Die Kugeln fallen von oben nach unten und bleiben mit der schwarzen Befestigung an den grünen Zweigen des Baums hängen.
+ Die Geschwindigkeit der Kugeln steigert sich alle 10 Sekunden.
+ Für jede erfolgreich an den Baum gehängte Kugel gibt es einen Punkt.
+ Wenn eine Kugel eine andere berührt oder auf den Boden fällt, zerspringt die berührte Kugel. Ein Punkt wird abgezogen.
+ Das Spiel ist vorbei, wenn du 10 Kugeln kaputt gemacht hast.</description>
+    </item>
+    
+    <item>
+      <title>Whack a Gopher</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/whack-a-gopher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/whack-a-gopher/</guid>
+      <description>Die Katze brauchen wir in diesem Spiel nicht. Wir können sie löschen in dem wir die Katze wählen und auf das kleine blaue X drücken.
+Löcher erstellen Wir beginnen mit der Figur, welche die Löcher im Boden darstellen sollte aus denen unsere Figuren erscheinen können. Wir erstellen die Figur mit dem Pinsel und malen einen schwarzes ovales Loch. Wichtig ist dabei, dass die Figur im Kostüm-Tab zentriert ist. Du kannst der Figur und dem Kostüm einen sprechenderen Namen geben und ganz einfach die Größe ändern:</description>
+    </item>
+    
+    <item>
+      <title>Zahlen raten mit Python - Teil 1</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten/</guid>
+      <description>Zahlen raten mit Python Wollen wir ein Programm für das Spiel &amp;ldquo;Zahlen raten&amp;rdquo; schreiben? Der Computer denkt sich eine Zahl im Bereich von 1 - 100 und der Spieler soll diese erraten. Nach jedem Versuch gibt das Programm aus, ob die eingegebene Zahl zu klein, zu groß oder richtig war.
+Allgemeines zur Programmiersprache Python Wir verwenden für die Programmierung die Programmiersprache Python (siehe die Python Homepage www.python.org), genauer gesagt Python 3, also eine Version von Python, deren Bezeichnung mit 3 beginnt, z.</description>
+    </item>
+    
+    <item>
+      <title>Zahlen raten mit Python - Teil 2</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten-2/</guid>
+      <description>Zahlen raten mit Python Teil 2 Kennst du den ersten Teil, wo wir ein Programm entwickelt haben, das sich eine Zahl ausdenkt und den Spieler erraten lässt? Jetzt wollen wir die Rollen tauschen und den Computer eine vom Menschen gedachte Zahl erraten lassen. Der Computer fragt zuerst, wie groß die gedachte Zahl höchstens sein kann, und beginnt dann mit dem Raten. Der Spieler gibt nach jedem Versuch an, ob die vom Computer ausgespuckte Zahl zu klein, zu groß oder richtig war.</description>
+    </item>
+    
+  </channel>
+</rss>

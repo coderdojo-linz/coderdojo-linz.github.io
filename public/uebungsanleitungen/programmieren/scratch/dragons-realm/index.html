@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Dragons Realm </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/">Scratch</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi-overview">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Dragons Realm</h1>
+                </div>
+                <div class="col-12 col-md-6">  <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/dragons.png" alt="Dragons Realm"> 
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="mb-4">Verteidige als Drache dein Territorium gegen die Eindringlinge.</p>
+                    
+                    <table class="table">
+                        <tr>
+                            <td><i class="fas fa-dragon"></i>Figuren</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-code"></i>Skripte</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-clipboard-list"></i>Variablen</td>
+                            <td>11</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            
+            <div class="col-12 sushi-content"> 
+
+<p>Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindringende Raubritter verteidigt.
+Mit den Pfeiltasten lenkst du den Drachen um den Pfeilen der Ritter auszuweichen (du kannst auch zwei Tasten gleichzeitig drücken; mit ↑ und → fliegt man zum Beispiel nach rechts oben). Mit der Leertaste spuckt der Drache Feuer, und kann Ritter zu Stein erstarren lassen.
+Damit das Spiel auch auf Tablets und Handys funktioniert, wurde nachträglich eine Maus/Touch-Steuerung eingebaut. Generell ist das Spielerlebnis mit der Tastatur aber besser. Hier kannst du das fertige Projekt schon einmal ausprobieren: <a href="https://scratch.mit.edu/projects/81928816" target="_blank">https://scratch.mit.edu/projects/81928816</a></p>
+
+<p>Dragons Realm beinhaltet viele Grafiken. Du kannst die vorgefertigten Figuren mit allen Kostümen (aber ohne Skripte) vorab herunterladen. Auch die Hintergrundmusik findest du hier als .wav-Datei.</p>
+
+<h2 id="downloads">Downloads</h2>
+
+<p><a href="Background.sprite3" target="_blank">Background.sprite3</a></p>
+
+<p><a href="Dragon.sprite3" target="_blank">Dragon.sprite3</a></p>
+
+<p><a href="Fireball.sprite3" target="_blank">Fireball.sprite3</a></p>
+
+<p><a href="Tiles.sprite3" target="_blank">Tiles.sprite3</a></p>
+
+<p><a href="Knight.sprite3" target="_blank">Knight.sprite3</a></p>
+
+<p><a href="Spear.sprite3" target="_blank">Spear.sprite3</a></p>
+
+<p><a href="Medieval.wav" target="_blank">Medieval.wav</a></p>
+
+<h2 id="die-figuren">Die Figuren</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Nun können wir die Figuren in dein neues Projekt importieren. Lege dazu ein Scratch Projekt an. Bewege dann die Maus im Figuren-Panel über das &ldquo;Figur wählen&rdquo; Symbol. Klicke dort &ldquo;Figur hochladen&rdquo;, und wähle &ldquo;Dragon.sprite3&rdquo; aus dem lokalen Dateisystemen aus. Wiederhole diesen Schritt für alle weiteren Figuren.</p>
+    </div>
+    <div class="col-12 col-md-6">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/sprite-upload.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="die-bühne">Die Bühne</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Die Bühne benötigen wir für den Startbildschirm und die Game-Over Anzeige, um die gesammelten Punkte und die verbleibenden Drachenleben darzustellen, und um die Hintergrundmusik abzuspielen. Klicke im Panel &ldquo;Bühne&rdquo; auf &ldquo;Wähle ein Bühnenbild&rdquo; / &ldquo;Malen&rdquo; oder &ldquo;Bühnenbild hochladen&rdquo;, und erstelle zwei Bühnenbilder - eines namens &ldquo;StartScreen&rdquo;, und eines namens &ldquo;GameOver&rdquo;.</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/stage-create.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Lade außerdem unter &ldquo;Klänge&rdquo; die Hintergrundmusik &ldquo;Medieval.wav&rdquo; hoch. Klicke dazu auf <em>Klänge</em> / <em>Klang wählen</em> / <em>Klang hochladen</em>.</p>
+
+<h2 id="die-codeblöcke">Die Codeblöcke</h2>
+
+<p>Jetzt schreiben wir den Code von Dragons. Beginnen wir mit den Variablen, die wir global bzw. je Figur anlegen müssen.
+Bitte achte genau darauf, dass du die richtige Auswahl zwischen <em>Für alle Figuren</em> und <em>Nur für diese Figur</em> triffst:</p>
+
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Figur</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ClickAngle</td>
+<td>Dragon</td>
+</tr>
+
+<tr>
+<td>ClickControlled</td>
+<td>Dragon</td>
+</tr>
+
+<tr>
+<td>DeltaX</td>
+<td>Dragon</td>
+</tr>
+
+<tr>
+<td>DeltaY</td>
+<td>Dragon</td>
+</tr>
+
+<tr>
+<td>FirstSprite</td>
+<td>Dragon</td>
+</tr>
+
+<tr>
+<td>FireBallDirX</td>
+<td>Fireball</td>
+</tr>
+
+<tr>
+<td>FireBallDirY</td>
+<td>Fireball</td>
+</tr>
+
+<tr>
+<td>IsClone</td>
+<td>Fireball</td>
+</tr>
+
+<tr>
+<td>IsClone</td>
+<td>Tiles</td>
+</tr>
+
+<tr>
+<td>DeltaRandX</td>
+<td>Tiles</td>
+</tr>
+
+<tr>
+<td>DeltaRandY</td>
+<td>Tiles</td>
+</tr>
+
+<tr>
+<td>Frozen</td>
+<td>Knight</td>
+</tr>
+
+<tr>
+<td>KnightX</td>
+<td>Knight</td>
+</tr>
+
+<tr>
+<td>KnightY</td>
+<td>Knight</td>
+</tr>
+
+<tr>
+<td>IsClone</td>
+<td>Spear</td>
+</tr>
+
+<tr>
+<td>ShootSpearStepCount</td>
+<td>Spear</td>
+</tr>
+
+<tr>
+<td>DirectionX</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>DirectionY</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>GameOver</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>Lives</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>LivesLbl</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>PrevDirectionX</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>PrevDirectionY</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>Score</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>ScoreLbl</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>ScrollDirectionX</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>ScrollDirectionY</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>ShootActive</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>ShootSpearActive</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>ShootSpearDirX</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>ShootSpearDirY</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>ShootSpearX</td>
+<td>Für alle Figuren</td>
+</tr>
+
+<tr>
+<td>ShootSpearY</td>
+<td>Für alle Figuren</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Die Bühne sollte danach folgende Variable beinhalten (das sind jene die &ldquo;Für alle Figuren&rdquo; definiert wurden). Du kannst diese Variablen auch direkt in der Bühne anlegen:</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/stage-vars.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="code-der-figur-dragon">Code der Figur Dragon</h2>
+
+<p>Wir wollen den Drachen steuern und Feuerbälle abfeuern.
+Gleichzeitig müssen wir dafür sorgen, dass der Drache immer die Flügel bewegt.
+Im <em>StartAnimation</em> Nachrichten-Codeblock werden laufend Kostüme ausgetauscht, um für die Flügelbewegung zu sorgen.
+Im Skript <em>StartControl</em> ist die Tastatur- und Maus-Steuerung des Drachen implementiert.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/dragon-code1.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/dragon-code2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/dragon-code3.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Der Drache sollte sich jetzt eigentlich schon steuern lassen und mit den Flügeln flattern. Probiere es einmal aus!</p>
+
+<h2 id="code-der-figur-background">Code der Figur Background</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Die Figur <em>Background</em> enthält das Gras, über das der Drache fliegt.
+Dennoch ist das kein Bühnenbild, denn wir wollen, dass sich die Landschaft bewegt. Wir zeichnen daher die das Kostüm &ldquo;Grass&rdquo; mehrmals um ein paar Pixel versetzt, um einen Scrolling-Effekt zu erzielen und den gesamten Bildschirm damit auszufüllen.</p>
+    </div>
+    <div class="col-12 col-md-6">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/background-code.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="code-der-figur-fireball">Code der Figur Fireball</h2>
+
+<p>Der Feuerball wird abgeschossen, wenn er die Nachricht <em>Shoot</em> erhält.
+Da wir immer wieder Feuerbälle brauchen, wird er als Klon angelegt. Damit könnte man dann auch mit etwas anderem Code mehrere Feuerbälle gleichzeitig abfeuern.
+Im Hauptskript wird das passende Kostüm gewählt, danach bewegt sich der Feuerball rasch in der Richtung, in die der Drache zu dem Zeitpunkt blickt.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/fireball-code.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="code-der-figur-tiles">Code der Figur Tiles</h2>
+
+<p>Bäume und Felsen werden zu Spielstart an zufälliger Position angelegt.
+Dabei ist die Reihenfolge der Klone wichtig, damit weiter vorne liegende Objekt vor dahinterliegenden Objekten erscheinen und diese verdecken. Daher starten wir bei einer Y-Position von 180 und arbeiten uns bis -180 durch.</p>
+
+<p>Ähnlich wie das Gras müssen auch Bäume und Felsen unter dem Drachen durchscrollen.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/tiles-code.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="code-der-figur-spear">Code der Figur Spear</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/spear-code.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="code-der-figur-knight">Code der Figur Knight</h2>
+
+<p>Unser letztes Figuren-Skript ist jenes für den Ritter.
+Ritter erscheinen zufällig, und müssen zuerst an einer freien Position platziert werden.
+Das fragen wir mittels einer <em>wird Tiles berührt</em> Kondition ab. Danach wandert der Ritter weiter, bis er auf ein Hindernis trifft, woraufhin er seine Richtung wieder ändert.</p>
+
+<p>Berührt der Ritter den Feuerball, so erstarrt er (die Variable <em>Frozen</em> wird auf 1 gesetzt, und er wird zu Stein und bewegt sich nicht mehr).</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/knight-code1.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/knight-code2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/scratch/dragons-realm/img/knight-code3.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="probier-es-aus">Probier es aus!</h2>
+
+<p>Funktioniert dein Projekt? Wenn etwas noch nicht ganz klappt, kannst du deinen Code auch mit der Musterlösung unter <a href="https://scratch.mit.edu/projects/81928816" target="_blank">https://scratch.mit.edu/projects/81928816</a> vergleichen.</p>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

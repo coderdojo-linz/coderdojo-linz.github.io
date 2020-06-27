@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/</link>
+    <description>Recent content in Arduino on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MicroComputer Start</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/microcomputer-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/microcomputer-start/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino Sprach-Referenz</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/sprach-referenz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/sprach-referenz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino UNO V3 Tutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-start/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino UNO Pinout Diagramm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-pinout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-pinout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino Nano V3 Tutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-start/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino Nano Pinout Diagramm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-pinout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-pinout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino Portabel installieren</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-portable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-portable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grove Starter Kit</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/grove-starter-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/grove-starter-kit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grove Einführung</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/grove-einfuehrung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/grove-einfuehrung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PS2 Joystick Shield</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PS2 Joystick Shield (alt)</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield-alt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield-alt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

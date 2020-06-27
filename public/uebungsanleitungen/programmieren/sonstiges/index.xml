@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sonstiges on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/</link>
+    <description>Recent content in Sonstiges on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    <lastBuildDate>Sun, 17 May 2020 08:03:54 +0200</lastBuildDate>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ANTLR Hello World</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/</guid>
+      <description>ANTLR Hello World Installation  Installieren von [IntelliJ Community Edition](https://www.jetbrains.com/idea/download/#section=windows) (kostenlos)
+ IntelliJ starten
+ Ein neues Projekt mit New Project - Empty Project starten. In dieser Anleitung gehen wir davon aus, dass das Projekt antlr-hello-world heißt.
+ Settings-Dialog mit Strg+Alt+S öffnen, nach dem antlr Plugin suchen und installieren 
+    IntelliJ neu starten und das zuvor angelegte Projekt wieder laden
+  Erste Grammatik anlegen  Neue Datei Hello.</description>
+    </item>
+    
+    <item>
+      <title>Back to Basics - Assembler Hello World</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/assembler-hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/assembler-hello-world/</guid>
+      <description>Erste Schritte mit Assembler-Programmierung Ziel der Übung Normalerweise programmieren wir im CoderDojo mit sogenannten höheren Programmiersprachen wie C#, Java, Python oder JavaScript. Auf unterster Ebene versteht ein Computer diese Sprachen aber nicht. Er kann nur mit Maschinensprache umgehen. Diese Befehle kann der Prozessor deines Computers direkt ausführen.
+In dieser Übung probieren wir, ein Programm direkt in Maschinensprache zu programmieren. Dazu verwenden wir eine Assemblersprache. Auch wenn du später selten Assembler programmieren wirst, hilft dir diese Übung, besser zu verstehen, was im Hintergrund passiert.</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter in C</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/space-shooter-c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/space-shooter-c/</guid>
+      <description>Space Shooter in C In dieser Übung werden wir ein relativ fortgeschrittenes Computerspiel in C entwickeln, welches im Terminalemulator &amp;ndash; unter Windows standardmäßig, CMD &amp;ndash; läuft. Wir werden im Terminal mithilfe von speziellen control codes (Ketten von escape charactern) das gesamte Spiel zeichnen und durch Tastendrücke auf dem Keyboard kontrollieren.
+Für diese Übung solltest du bereits einfache Programmierkentnisse haben, die Konzepte von Schleifen, Bedingungen und Assignments bzw. Variablen sollten nichts neues sein.</description>
+    </item>
+    
+  </channel>
+</rss>

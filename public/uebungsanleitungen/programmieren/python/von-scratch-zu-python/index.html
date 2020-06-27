@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Von Scratch zu Python </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/">Python</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#von-scratch-zu-python">Von Scratch zu Python</a>
+<ul>
+<li><a href="#voraussetzungen">Voraussetzungen</a></li>
+<li><a href="#scratch">Scratch</a>
+<ul>
+<li><a href="#laden-des-malstifts">Laden des Malstifts</a></li>
+<li><a href="#neuer-block-zum-zeichnen-von-vielecken">Neuer Block zum Zeichnen von Vielecken</a></li>
+<li><a href="#festlegen-von-variablen">Festlegen von Variablen</a></li>
+<li><a href="#mit-vielen-vielecken-ein-buntes-muster-zeichnen">Mit vielen Vielecken ein buntes Muster zeichnen</a></li>
+</ul></li>
+<li><a href="#python">Python</a>
+<ul>
+<li><a href="#laden-von-packages">Laden von Packages</a></li>
+<li><a href="#neue-funktion-zum-zeichnen-von-vielecken">Neue Funktion zum Zeichnen von Vielecken</a></li>
+<li><a href="#festlegen-von-variablen-1">Festlegen von Variablen</a></li>
+<li><a href="#mit-vielen-vielecken-ein-buntes-muster-zeichnen-1">Mit vielen Vielecken ein buntes Muster zeichnen</a></li>
+</ul></li>
+<li><a href="#erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="von-scratch-zu-python">Von Scratch zu Python</h1>
+
+<p>Du zeichnest eine geometrische Figur in Scratch und dann übersetzt du das Programm in die Programmiersprache Python.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/python/von-scratch-zu-python/img/von-scratch-zu-python.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="voraussetzungen">Voraussetzungen</h2>
+
+<p>Übungsbeispiel: <a href="../erste-schritte">Erste Schritte in Python</a></p>
+
+<h2 id="scratch">Scratch</h2>
+
+<h3 id="laden-des-malstifts">Laden des Malstifts</h3>
+
+<p>Um in Scratch zu zeichnen, muss man zuerst die Erweiterung „Malstift“ laden. Klicke dazu auf das Symbol in der linken unteren Ecke und wähle dann den Malstift aus. Damit bekommst du einen neuen Eintrag „Malstift“ im Menü am linken Bildschirmrand und eine Menge neuer Blöcke, die du zum Zeichnen verwenden kannst.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/python/von-scratch-zu-python/img/scratch-malstift.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h3 id="neuer-block-zum-zeichnen-von-vielecken">Neuer Block zum Zeichnen von Vielecken</h3>
+
+<p>Um ein beliebiges Vieleck (Fünfeck, Achteck, Siebzehneck, …) zu zeichnen, definieren wir einen eigenen Block, wo wir uns aussuchen können, wie viele Ecken und welche Seitenlänge es haben soll.</p>
+
+<p>Gehe dazu unter dem Menüpunkt „Meine Blöcke“ auf „Neuer Block“. Nenne den Block Vieleck und füge zwei Eingabefelder für Zahl hinzu und nenne die Eingabefelder n (für die Anzahl der Ecken und a (für die Seitenlänge des Vielecks).</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/python/von-scratch-zu-python/img/scratch-meine-bloecke.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Um ein n-Eck zu zeichnen müssen wir einen Schritt mit der Seitenlänge a gehen, dann eine Drehung um 360/n machen und das Ganze n-Mal wieder wiederholen. (Für ein regelmäßiges Viereck, also ein Quadrat, wären das n Wiederholungen und dazwischen eine Drehung um 90 Grad.) Die roten Felder mit den Variablen n und a, die du hier brauchst, holst du einfach aus dem ersten Block „Definiere Vieleck“, indem du die gewünschte Variable einfach mit der Maus nach unten ziehst.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/python/von-scratch-zu-python/img/scratch-block-vieleck.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h3 id="festlegen-von-variablen">Festlegen von Variablen</h3>
+
+<p>Wir definieren nun zwei Variablen Anzahl (für die Anzahl der Vielecke) und n (für die Anzahl der Ecken im Vieleck). Gehe dazu unter „Variablen“ auf „Neue Variable“ und gib die passenden Namen ein. Wenn du mit der rechen Maustaste auf die angezeigte Variable klickst, kannst du auch einen verstellbaren Schieberegler daraus machen.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/python/von-scratch-zu-python/img/scratch-schieberegler.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h3 id="mit-vielen-vielecken-ein-buntes-muster-zeichnen">Mit vielen Vielecken ein buntes Muster zeichnen</h3>
+
+<p>Mit dem selbst definierten Block zum Zeichnen von Vielecken können wir nun ein buntes geometrisches Muster mit vielen Vielecken zeichnen.</p>
+
+<p>Wenn das Spiel gestartet wird, dann führen wir folgende Schritte durch:</p>
+
+<ul>
+<li>Wir verstecken unsere Figur (Katze), da wir nur unsere Zeichnung haben wollen.</li>
+<li>Wir löschen alles, um immer wieder mit einem leeren Fenster zu starten.</li>
+<li>Wir schalten den Malstift ein.</li>
+<li>Die Stiftdicke setzten wir auf 2.</li>
+<li>Dann zeichnen wir so viele Vielecke, wie wir bei Anzahl ausgewählt haben. Dazu verwenden wir eine Schleife mit „Wiederhole Anzahl mal“,</li>
+<li>Die Farbe ändern wir bei jedem Vieleck zufällig.</li>
+<li>Zum Zeichnen des Vielecks verwenden wir unseren definierten Block, wobei wir als n die erstellte Variable verwenden und als Seitenlänge a = 50.</li>
+<li>Nachdem ein Vieleck gezeichnet wurde, drehen wir uns um 360/Anzahl Grad, um dann das nächste Vieleck zu zeichnen.</li>
+</ul>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/python/von-scratch-zu-python/img/zeichne-vielecke.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>So kannst du zum Beispiel 30 verschiedenfärbige 9-Ecke zeichnen.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/python/von-scratch-zu-python/img/zeichne-vielecke-ergebnis.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="python">Python</h2>
+
+<p>Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (<code>File -&gt; New File</code>) und speichere die Datei auf deinem Computer (<code>File -&gt; Save As</code>).</p>
+
+<h3 id="laden-von-packages">Laden von Packages</h3>
+
+<p>So wie du auch in Scratch eine eigene Erweiterung für den Malstift geladen hast, musst du auch in Python eine Erweiterung (Package) für das Zeichnen mit der Schildkröte (<code>turtle</code>) laden.</p>
+
+<p>Auch für das Zufallszahlen (die wir dann für die zufällige Auswahl der Farben brauchen) ist es notwendig eine Funktion aus dem Package <code>random</code> zu laden.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> turtle <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+<span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> random</code></pre></div>
+<p>Da wir aus dem Package turtle mehrere Funktionen benötigen, laden wir hier alle Funktionen (mit dem Symbol *). Aus dem Package <code>random</code> laden wir nur die Funktion <code>random</code>.</p>
+
+<h3 id="neue-funktion-zum-zeichnen-von-vielecken">Neue Funktion zum Zeichnen von Vielecken</h3>
+
+<p>So wie wir in Scratch einen eigenen Block zum Zeichnen von Vielecken erstellt haben, definieren wir hier in Python eine eigene Funktion <code>vieleck</code> ebenfalls mit den Eingabewerten <code>n</code> und <code>a</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">vieleck</span>(n, a):
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+        forward(a)
+        right(<span style="color:#ae81ff">360</span><span style="color:#f92672">/</span>n)</code></pre></div>
+<p>Das n-malige Wiederholen geschieht mit einer <code>for</code>-Schleife, wobei die Variable <code>i</code> mitzählt.</p>
+
+<p>Achtung: In Python beginnt man mit 0 beim Zählen und nicht bei 1 und die Zahl, die in range angegeben ist, zählt nicht mehr dazu. Also, wenn n = 10 ist, dann zählt i in range(n)von 0, 1, 2, … bis 9. Das sind aber dann trotzdem 10 Zahlen, du kannst gerne nachzählen.</p>
+
+<p>Alles was in zu dieser <code>for</code>-Schleife gehört muss um vier Leerzeichen eingerückt werden (so wie du in Scratch die Blöcke in den Wiederholen-Block hineinpackst). <code>forward(a)</code> lässt die Turtle um a Schritte vorwärts gehen, <code>right(360/n)</code> machte eine Rechtsdrehung um 360/n Grad.</p>
+
+<h3 id="festlegen-von-variablen-1">Festlegen von Variablen</h3>
+
+<p>Wir definieren, so wie Scratch, Variablen für die Anzahl der Vielecke und die Anzahl der Ecken eines Vielecks. Auch die Seitenlänge des Vielecks legen wir gleich fest. Um deinen Python-Code auch später noch gut zu verstehen, ist es hilfreich, wenn du Kommentare einfügst. Alles was du hinter einem # schreibst, dient als Erklärung für dich, hat aber keinen Einfluss auf das Programm selbst.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">anzahl <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span> <span style="color:#75715e"># Anzahl der Vielecke</span>
+n <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>       <span style="color:#75715e"># Anzahl der Ecken des Vielecks</span>
+a <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>      <span style="color:#75715e"># Seitenlänge des Vielecks</span></code></pre></div>
+<h3 id="mit-vielen-vielecken-ein-buntes-muster-zeichnen-1">Mit vielen Vielecken ein buntes Muster zeichnen</h3>
+
+<p>Nun können wir mit dem eigentlichen Programm beginnen:</p>
+
+<ul>
+<li>Wir löschen das Fenster zu Beginn.</li>
+<li>Dann schalten wir den Turbo unserer Turtle ein und erhöhen die Geschwindigkeit auf 100.</li>
+<li>Die Stiftdicke setzen wir auf 3.</li>
+<li>In einer Schleife machen wir wieder so viele Wiederholungen, wie wir als anzahl vorgegeben haben.</li>
+<li>Die Stiftfarbe wählen wir zufällig. Eine Zufallszahl bekommst du mit dem Befehl random(). Eine Farbe kann man über ihren Rot-, Grün- und Blau-Anteil festlegen, daher verwenden wir hier 3 Zufallszahlen.</li>
+<li>Das Vieleck zeichnen wir mit der zuvor definierten Funktion.</li>
+
+<li><p>Nach jedem Vieleck machen wir eine Drehung um 360/anzahl Grad.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">clear()
+speed(<span style="color:#ae81ff">1000</span>)
+pensize(<span style="color:#ae81ff">3</span>)
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(anzahl):
+pencolor(random(), random(), random())
+vieleck(n, a)
+left(<span style="color:#ae81ff">360</span><span style="color:#f92672">/</span>anzahl)</code></pre></div></li>
+</ul>
+
+<p>Wenn du diesen Code fertig geschrieben hast, speichere die Datei nochmals mit <code>File -&gt; Save</code> (oder drücke STRG+S). Um dann das Programm zu starten kannst du im Menü <code>Run -&gt; Run Module</code> auswählen oder schneller einfach F5 drücken.</p>
+
+<p>Du erhältst dann das Bild, das zu Beginn dieser Anleitung zu sehen ist (vermutlich mit etwas anderen Farben).</p>
+
+<h2 id="erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</h2>
+
+<ul>
+<li>Wie könntest du (zumindest annähernd) Kreise zeichnen?</li>
+<li>Du könntest im Programm abfragen, wie viele Ecken das n-Eck haben soll, wie viele Vielecke gezeichnet werden sollen oder wie groß sie sein sollen. (Sieh dir dazu die Übungsanleitung „Zahlen raten mit Python“ an.)</li>
+</ul>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

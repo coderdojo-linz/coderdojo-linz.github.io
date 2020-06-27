@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bootstrap on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/categories/bootstrap/</link>
+    <description>Recent content in Bootstrap on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/categories/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Erste Schritte mit Bootstrap</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-bootstrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-bootstrap/</guid>
+      <description>Erste Schritte mit Bootstrap Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Scratch - Fang mich&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;content&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Scratch Fang-Mich &amp;lt;span class=&amp;#34;version&amp;#34;&amp;gt;Scratch 3.0&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;div class=&amp;#34;intro&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;images/endgame.png&amp;#34; alt=&amp;#34;Endgame&amp;#34;&amp;gt; &amp;lt;p&amp;gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ... Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: Startprojekt</description>
+    </item>
+    
+  </channel>
+</rss>

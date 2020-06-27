@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/</link>
+    <description>Recent content in C# on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    <lastBuildDate>Sun, 17 May 2020 08:03:59 +0200</lastBuildDate>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C# Kennenlernen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/ant-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/ant-me/</guid>
+      <description>AntMe! Wie schlau ist deine Ameise? Ziel der Übung C# (Englisch &amp;ldquo;C Sharp&amp;rdquo;) ist eine der meist verwendeten Programmiersprachen der Welt. Sie ist Open Source und plattformunabhängig. Mit C# werden verschiedenste Programme geschrieben: Spiele, wirtschaftliche Software, Webseiten und vieles mehr.
+Ein Ziel dieser Übung ist es, dass du C# auf eine Weise kennenlernst, die Spaß macht. Dein Ziel wird es sein, in C# einen Computerspieler zu programmieren, der die Ameisen einer Ameisenkolonie steuert.</description>
+    </item>
+    
+    <item>
+      <title>Geisterspiel in C#</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/geisterspiel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/geisterspiel/</guid>
+      <description>Geisterspiel In dieser Übung erstellen wir ein erstes, einfaches Konsolenspiel mit C# (C-Sharp). Das Spiel wird textuell gesteuert d.h Ein/-Ausgaben werden auf einer Konsole zu lesen/schreiben sein.
+Die Aufgabe Der Geist versteckt sich zufällig hinter einer von 3 Türen. Du entscheidest, welche Türe du öffnen möchtest. Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste. Unser Programm soll nun prüfen, ob der Geist sich hinter der Tür befindet und eine entsprechende Meldung ausgeben; also entweder ‘Geist gefunden’ und damit das Spiel verloren oder ‘Kein Geist’ und der Spieler darf zur nächsten Station mit wieder 3 Türen und einem zufällig versteckten Geist weitergehen.</description>
+    </item>
+    
+    <item>
+      <title>Türme von Hanoi</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/towers-of-hanoi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/towers-of-hanoi/</guid>
+      <description>Türme von Hanoi Einleitung Die Türme von Hanoi sind ein klassisches Übungsbeispiel für Programmierer. Für Kinder gibt es das Rätsel auch als Holzspielzeug zu kaufen. Die Regeln sind einfach:
+ Man hat ein Spielbrett mit drei Stangen. Nennen wir sie L for Links, M für Mitte und R für Rechts. Auf der Stange A ist ein Turm von Spielsteinen aufgetürmt. Jeder Spielstein ist etwas kleiner als der darunter. Die Aufgabe ist es, den Turm von Stange L auf Stange M zu übersiedeln.</description>
+    </item>
+    
+  </channel>
+</rss>

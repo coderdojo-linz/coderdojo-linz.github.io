@@ -1,0 +1,53 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.gameArea {
+    height: 500px;
+    display: flex;
+    align-items: stretch;
+}
+
+.guessingArea {
+    width: 50%;
+    padding-right: 20px;
+}   
+
+#word {
+    text-transform: uppercase;
+    font-family: Courier New, Courier, monospace;
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+#info {
+    margin-top: 40px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.hangmanArea {
+    width: 50%;
+    background-color: #ddff99;
+}
+
+line, circle, ellipse, rect, text, path {
+    stroke: black;
+    fill: none;
+}
+
+line.helperLine {
+	stroke: #cccccc;
+}

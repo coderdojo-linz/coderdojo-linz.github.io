@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> JavaScript Zahlen raten </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/">Web</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#zahlen-raten">Zahlen raten</a>
+<ul>
+<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+<li><a href="#entwicklungsumgebung">Entwicklungsumgebung</a></li>
+<li><a href="#html-seite-herunterladen">HTML Seite herunterladen</a></li>
+<li><a href="#das-spiel">Das Spiel</a></li>
+<li><a href="#höher-oder-niedriger">Höher oder niedriger?</a></li>
+<li><a href="#spiel-neu-starten">Spiel neu starten</a></li>
+<li><a href="#wie-geht-s-weiter">Wie geht&rsquo;s weiter?</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="zahlen-raten">Zahlen raten</h1>
+
+<h2 id="ziel-der-übung">Ziel der Übung</h2>
+
+<p>In dieser Übung programmierst du ein einfaches &ldquo;Zahlen raten&rdquo; Spiel und siehst, wie man mit JavaScript Ein- und Ausgaben machen kann.</p>
+
+<p>Das Spiel soll folgendermaßen funktionieren: Der Computer denkt sich eine Zahl zwischen 0 und 100 aus und der Spieler muss versuchen, diese Zahl mit möglichst wenigen Versuchen zu erraten. Dazu kann er einen Tipp eingeben. Der Computer sagt dann <em>Niedriger</em> oder <em>Höher</em>, und der Spieler kann einen neuen Tipp eingeben, bis er die richtige Zahl erraten hat.</p>
+
+<p>Falls du noch überhaupt keine Erfahrung mit HTML hast, wende dich an eine CoderDojo Mentorin oder einen Mentor. Sie werden dir die HTML-Basics erklären oder dir eine Übung für HTML-Grundlagen zeigen.</p>
+
+<h2 id="entwicklungsumgebung">Entwicklungsumgebung</h2>
+
+<p>JavaScript kann man wie HTML mit jedem beliebigen Texteditor programmieren. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. In der <a href="/trainingsanleitungen/web/html-meine-erste-webseite.html">Übungsanleitung zu den Grundlagen von HTML</a> findest du am Beginn eine Liste von solchen Editoren, die du unter Windows, Linux oder MacOS verwenden kannst. Falls du noch keinen hast, schau dir die Liste an und such dir einen aus.</p>
+
+<h2 id="html-seite-herunterladen">HTML Seite herunterladen</h2>
+
+<p>Damit du bei der Übung nicht von Null beginnen must, bekommst du hier ein Grundgerüst zum Starten.</p>
+
+<ol>
+<li><p>Öffne den Texteditor, für den du dich entschieden hast.</p></li>
+
+<li><p>Erstelle eine neue Textdatei. In <em>Visual Studio Code</em> geht das so: <br/>
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/img/code-neue-datei.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p></li>
+
+<li><p>Gib folgenden Code in die neue Datei ein:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+	&lt;<span style="color:#f92672">head</span>&gt;
+		&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+		&lt;<span style="color:#f92672">title</span>&gt;Zahlen raten&lt;/<span style="color:#f92672">title</span>&gt;
+	&lt;/<span style="color:#f92672">head</span>&gt;
+	&lt;<span style="color:#f92672">body</span>&gt;
+		&lt;<span style="color:#f92672">h2</span>&gt;Zahlen raten&lt;/<span style="color:#f92672">h2</span>&gt;
+		
+		&lt;<span style="color:#f92672">p</span>&gt;Versuche, die Zahl zwischen 0 und 100 zu erraten!&lt;/<span style="color:#f92672">p</span>&gt;
+		
+		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;height: 120px&#34;</span>&gt;
+			&lt;<span style="color:#f92672">label</span>&gt;Dein Tipp:&lt;/<span style="color:#f92672">label</span>&gt;
+			&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inputGuess&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:100px&#34;</span>/&gt;
+			&lt;<span style="color:#f92672">button</span>&gt;Überprüfen&lt;/<span style="color:#f92672">button</span>&gt;
+			
+			&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;outputResult&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+			&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;outputCount&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+		&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;/<span style="color:#f92672">body</span>&gt;
+	
+	&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">inputGuess</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;inputGuess&#34;</span>);
+		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">outputResult</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;outputResult&#34;</span>);
+		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">outputCount</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;outputCount&#34;</span>);
+		
+		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">number</span>, <span style="color:#a6e22e">count</span>;
+		<span style="color:#a6e22e">number</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>);
+	&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></li>
+
+<li><p>Speichere die Datei unter dem Namen <code>zahlen-raten.html</code> ab. Öffne sie anschließend mit Doppelklick in einem Webbrowser. Du solltest folgende Seite sehen:</p></li>
+</ol>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/img/html-seite.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<ol>
+<li>Falls du die folgende Warnung siehst, klicke auf <em>Geblockte Inhalte zulassen</em>. Wenn man Scripts oder Programme aus dem Internet herunterlädt, muss man immer vorsichtig sein, wenn man nicht genau weiß, was sie machen. In diesem Fall wissen wir aber, dass die Datei nicht gefährlich ist.</li>
+</ol>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/img/script-warnung.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="das-spiel">Das Spiel</h2>
+
+<p>Wenn du jetzt eine Zahl eingibst und auf &ldquo;Überprüfen&rdquo; klickst, passiert noch nichts. Das werden wir jetzt ändern.</p>
+
+<ol>
+<li>Wechsle zurück zur HTML-Datei im Texteditor. Achte darauf, dass sie aus zwei Bereichen besteht: Einen für den HTML-Code (rot) und einen für den JavaScript-Code (blau).</li>
+</ol>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/img/html-javascript.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<ol>
+<li><p>Wir wollen darauf reagieren, wenn der Spieler auf <em>Überprüfen</em> klickt. Erweitere dazu den <code>button</code>-Tag im HTML-Bereich um folgenden Code. Er sorgt dafür, dass bei Klick auf den Button die Funktion <code>checkNumber</code> aufgerufen wird. Die Funktion gibt es noch nicht, wir werden sie in Kürze schreiben.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkNumber()&#34;</span>&gt;Überprüfen&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div></li>
+
+<li><p>Ergänze außerdem den JavaScript-Bereich nach der Zeile <code>number = ...</code> um folgenden Code. Hier wird eine <em>Variable</em> namens <code>count</code> deklariert. Außerdem wird die oben erwähnte Funktion <code>checkNumber</code> angelegt. Sie erhöht den Wert des Zählers <code>count</code> und gibt den aktuellen Stand aus.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkNumber</span>() {
+	<span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">count</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+	<span style="color:#a6e22e">outputCount</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Du hast bisher &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">count</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; Versuche gebraucht.&#34;</span>;
+}
+</code></pre></div></li>
+
+<li><p>Schau dir den Code ganz genau an und versuche herauszufinden, wozu die Variable <code>outputCount</code> dient. Siehst du, wie mit Hilfe der JavaScript-Standardfunktion <a href="http://www.w3schools.com/jsref/met_doc_getelementbyid.asp" target="_blank"><code>getElementById</code></a> das zugehörige <code>p</code>-Tag gesucht wird? Falls du Fragen dazu hast, sprich darüber mit einem CoderDojo Mentor.<br/>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/img/getElementById.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p></li>
+
+<li><p>Speichere deine Änderungen, lade die Seite im Browser neu (z.B. durch Drücken der Taste F5) und klicke nochmal auf &ldquo;Überprüfen&rdquo;. Nach jedem Klick wird jetzt die Anzahl der Versuche erhöht und anschließend angezeigt.</p></li>
+</ol>
+
+<p>Natürlich fehlt jetzt noch der wichtigste Teil des Spiels: Die Überprüfung, ob die Zahl stimmt und der Hinweis, ob man zu hoch oder zu niedrig getippt hat. Dafür brauchen wir noch etwas mehr JavaScript Code.</p>
+
+<h2 id="höher-oder-niedriger">Höher oder niedriger?</h2>
+
+<p>Jetzt können wir die eingegebene Zahl mit der Zahl des Computers vergleichen.</p>
+
+<ol>
+<li><p>Wechsle zurück zur HTML-Datei im Texteditor.</p></li>
+
+<li><p>Füge den folgenden Code am Beginn der Funktion <code>checkNumber</code> ein, also vor <code>count = count + 1;</code>. Achte darauf, das beim dritten Vergleich wirklich zwei Ist-Gleich-Zeichen hintereinander stehen!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">guess</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">inputGuess</span>.<span style="color:#a6e22e">value</span>);			
+<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">guess</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">number</span>)
+	<span style="color:#a6e22e">outputResult</span>.<span style="color:#a6e22e">innerHTML</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dein Tipp war zu niedrig.&#34;</span>;
+<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">guess</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">number</span>)
+	<span style="color:#a6e22e">outputResult</span>.<span style="color:#a6e22e">innerHTML</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dein Tipp war zu hoch.&#34;</span>;
+<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">guess</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">number</span>)
+	<span style="color:#a6e22e">outputResult</span>.<span style="color:#a6e22e">innerHTML</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Richtig!&#34;</span>;		
+</code></pre></div></li>
+
+<li><p>Speichere deine Änderungen, lade die Seite im Browser neu (z.B. durch Drücken der Taste F5). Jetzt kannst du dein Spiel schon einmal bis zum Ende spielen! Wie viele Versuche brauchst du, bis du die Zahl erraten hast? Schaffst du es unter 10?</p></li>
+</ol>
+
+<h2 id="spiel-neu-starten">Spiel neu starten</h2>
+
+<p>Wenn du das Spiel neu starten willst, musst du die Seite neu laden. Lass uns das im letzten Schritt noch einfacher machen.</p>
+
+<ol>
+<li><p>Wechsle zurück zur HTML-Datei im Texteditor.</p></li>
+
+<li><p>Im HTML-Code legen wir einen eigenen Button für den Neustart des Spiels an. Ergänze dazu im HTML-Bereich folgende Code-Zeile:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newGame()&#34;</span>&gt;Neu beginnen&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div></li>
+
+<li><p>Damit hast du einen Button, aber es passiert noch nichts wenn du darauf klickst. Dafür müssen wir erst die beim Button angegebene Funktion <code>newGame</code> anlegen. Erweitere dazu den JavaScript-Bereich um folgende Codezeilen.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">newGame</span>() {
+	<span style="color:#a6e22e">number</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>);
+	<span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+	<span style="color:#a6e22e">inputGuess</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+	<span style="color:#a6e22e">outputResult</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+	<span style="color:#a6e22e">outputCount</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+}
+</code></pre></div></li>
+
+<li><p>Schau dir die Codezeilen genau durch. Entdeckst du die Funktionen, die mit <code>Math.</code> beginnen? Das sind mathematische Funktionen von JavaScript. <a href="http://www.w3schools.com/jsref/jsref_obj_math.asp" target="_blank">Hier</a> findest du eine Beschreibung aller dieser Funktionen. Such die Beschreibung von <code>Math.floor</code> und <code>Math.random</code> heraus und lies nach, was die beiden Funktionen machen.</p></li>
+
+<li><p>Speichere deine Änderungen, lade die Seite im Browser neu (z.B. durch Drücken der Taste F5). Jetzt kannst du das Spiel jederzeit neu starten.</p></li>
+</ol>
+
+<p>Die fertige Datei kannst du <a href="zahlen-raten-final.html" target="_blank">hier</a> herunterladen.</p>
+
+<h2 id="wie-geht-s-weiter">Wie geht&rsquo;s weiter?</h2>
+
+<p>Wenn du noch weiterprogrammieren willst, hier noch ein paar Ideen:</p>
+
+<ol>
+<li><p>Nach dem ersten Versuch ist der angezeigte Text noch etwas unschön: &ldquo;Du hast bisher 1 Versuche gebraucht.&rdquo; Besser wäre &ldquo;Du hast bisher 1 Versuch gebraucht.&rdquo; (Einzahl)</p></li>
+
+<li><p>Lass den Computer genauere Hinweise geben: &ldquo;Dein Tipp war viel zu hoch.&rdquo; oder &ldquo;Fast! Dein Tipp war ein bisschen zu niedrig.&rdquo;</p></li>
+
+<li><p>Wähle (zufallsbasiert) zwischen verschiedenen gleichbedeutenden Antworten: &ldquo;Dein Tipp war zu hoch.&rdquo;, &ldquo;Nein, das ist zu hoch.&rdquo;, &ldquo;Du musst niedriger tippen.&rdquo;</p></li>
+
+<li><p>Wenn du schon etwas Erfahrung mit JavaScript gesammelt hast, kannst du das <a href="http://www.w3schools.com/js/js_quiz.asp" target="_blank">JavaScript Quiz auf w3schools</a> probieren. Wie viele Fragen kannst du richtig beantworten? Lies nach, um dein HTML-Wissen noch zu erweitern.</p></li>
+
+<li><p>Möchtest du deine Webseite etwas schöner gestalten? Ein Übungsbeispiel dafür findest du <a href="/trainingsanleitungen/web/erste-schritte-mit-css.html">hier</a>.</p></li>
+</ol>
+
+<!-- 4. Möchtest du deine Webseite im Internet veröffentlichen? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/dreamspark-azure.html). -->
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

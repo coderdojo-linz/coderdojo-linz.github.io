@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hour of Code on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/</link>
+    <description>Recent content in Hour of Code on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    <lastBuildDate>Sun, 17 May 2020 08:12:48 +0200</lastBuildDate>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hour of Code</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/hour-of-code/</link>
+      <pubDate>Mon, 01 Jun 2020 05:28:34 +0200</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/hour-of-code/</guid>
+      <description>Programmieren lernen mit Hour of Code Anfänger: Programmieren mit Blöcken   Kennst du das Spiel Angry Birds von Smartphone oder Tablet? In Hour of Code kannst du die ersten Schritte des Programmierens mit den Angry Birds erlernen. Programmierspiel unter https://studio.code.org/hoc/1 starten&amp;hellip;
+     Bist du ein Fan von Anna und Elsa? In Hour of Code kannst du ihre Bewegungen programmieren und damit schöne Muster aufs Eis zeichnen.</description>
+    </item>
+    
+  </channel>
+</rss>
