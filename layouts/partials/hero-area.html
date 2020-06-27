@@ -1,0 +1,26 @@
+{{"<!-- Hero Area Section -->" | safeHTML}} 
+<section id="home" class="hero-area-home">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {{ range $index, $element := .Page.Params.slides }}
+                <li data-target="#heroCarousel" data-slide-to="{{ $index }}" class="{{ cond (eq $index 0) "active" ""}}"></li>
+            {{ end }}
+        </ol>
+        <div class="carousel-inner">
+            {{ $page := .Page }}
+            {{ range $index, $element := .Page.Params.slides }}
+                {{ $imageResource := ($.Scratch.Get "images").GetMatch .slide.img }}
+                {{ $resized := $imageResource.Fit "1920x1200" }}
+                <div class="carousel-item {{ cond (eq $index 0) "active" ""}}" 
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('{{ $resized.RelPermalink }}');">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div>
+                            <h5>{{ .slide.title }}</h5>
+                            <p>{{ .slide.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

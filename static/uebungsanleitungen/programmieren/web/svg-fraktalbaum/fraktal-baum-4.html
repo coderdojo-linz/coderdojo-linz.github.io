@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Fraktalbaum</title>
+	<meta charset="utf-8" />
+
+	<style>
+		line {
+		}
+	</style>
+</head>
+<body>
+	<h1>Fraktalbaum</h1>
+	<p>
+		Winkel: <input type="number" id="aenderungsWinkel" value="20" />
+	</p>
+	<p>
+		Änderung Astlänge [%]: <input type="number" id="aenderungAstlaenge" value="77" />
+	</p>
+	<p>
+		<button onclick="baumZeichnen()">Baum zeichnen</button>
+	</p>
+	<div>
+		<svg id="baum" width="600" height="500"></svg>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js"></script>
+
+	<script type="text/javascript">
+		var svg = Snap("#baum");
+		
+		// Hier kannst du zeichnen
+		// globale Variablen
+		var aenderungswinkel;
+		var aenderungAstlaenge;
+		var zufallAenderungswinkel = 15;
+		var zufallAstlaenge = 10;
+		var maxEbene = 11;
+		baumZeichnen()
+
+		function baumZeichnen() {
+			var ebene = 0;
+			var winkel = -90;
+			var astLaenge = 100;
+
+			// Benutzereingaben auslesen
+			aenderungswinkel = parseInt(document.getElementById("aenderungsWinkel").value);
+			aenderungAstlaenge = parseInt(document.getElementById("aenderungAstlaenge").value) / 100;
+
+			svg.clear();
+			astZeichnen(300, 500, winkel, astLaenge, ebene);
+		}
+
+		function astZeichnen(x1, y1, winkel, astLaenge, ebene) {
+			if (ebene < maxEbene) {
+				// Endkoordinaten berrechnen
+				var x2 = x1 + (Math.cos(winkel * Math.PI / 180) * astLaenge);
+				var y2 = y1 + (Math.sin(winkel * Math.PI / 180) * astLaenge);
+
+				// Linie zeichnen
+				var ast = svg.line(x1, y1, x2, y2);
+				var color = tinycolor("#001100");
+				ast.attr({
+					stroke: color.lighten(ebene * 3).toString(),
+					strokeWidth: maxEbene - ebene
+				});
+
+				// zwei weitere Äste mit verändertem Winkel malen
+				astZeichnen(
+					x2,
+					y2,
+					winkel - aenderungswinkel + (Math.random() - 0.5) * zufallAenderungswinkel,
+					astLaenge * aenderungAstlaenge + (Math.random() - 0.5) * zufallAstlaenge, ebene + 1);
+				astZeichnen(
+					x2,
+					y2,
+					winkel + aenderungswinkel + (Math.random() - 0.5) * zufallAenderungswinkel,
+					astLaenge * aenderungAstlaenge + (Math.random() - 0.5) * zufallAstlaenge, ebene + 1);
+			}
+		}
+	</script>
+</body>
+</html>

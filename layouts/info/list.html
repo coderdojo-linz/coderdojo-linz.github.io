@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<section id="exercises" class="exercises">
+    {{ partial "breadcrumb.html" . }}
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{ .Title }}</h1>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            {{ range .Pages.ByWeight }}
+
+            {{ $objectPosition := "center center" }}
+            {{ if isset .Params "imgposition" }}
+                {{ $objectPosition = .Params.imgposition }}
+            {{ end }}
+
+            {{ $imageResource := ($.Scratch.Get "images").GetMatch .Params.img }}
+            {{ $resized := $imageResource.Fit "600x400" }}
+            <div class="col mb-5">
+                <div class="card h-100" onclick="location.href='{{.Permalink}}'">
+                    <div class="card-header" style="padding: 0; height: 150px;">{{ if isset .Params "img" }}
+                        <img src="{{$resized.RelPermalink}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: cover; object-position: {{$objectPosition}}; height: 100%; padding: 0;">{{ end }}
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">{{.Title}}</h5>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6> -->
+                        <p class="card-text mt-4">{{.Description}}</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                        <a href="{{.Permalink}}" class="card-link">Zu den Infos</a>
+                    </div> -->
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}

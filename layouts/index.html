@@ -1,0 +1,19 @@
+{{ define "jumbotron" }}
+
+{{ partial "hero-area.html" . }}
+
+{{ end }}
+
+{{ define "main" }}
+
+{{ partial "about.html" . }}
+
+{{ partial "events-overview.html" . }}
+
+{{ partial "contact.html" (dict "context" . "title" "Kontakt" "text" "Hast du Fragen oder Anregungen?" "type" "CoderDojo Anfrage") }}
+
+{{ partial "coderdojos-austria.html" . }}
+
+<!-- {{ partial "newsletter.html" . }} -->
+
+{{ end }}

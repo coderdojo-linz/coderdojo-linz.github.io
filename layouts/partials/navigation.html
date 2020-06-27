@@ -1,0 +1,33 @@
+{{ "<!-- NAVIGATION -->" | safeHTML }}
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light {{ cond (eq .Page.File.Path "_index.md") "hero-navbar" "" }}">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item {{ cond (eq .Page.File.Path "_index.md") "active" "" }}">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item {{ cond (eq .File.Dir "termine\\") "active" "" }}">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item {{ cond (eq .File.Dir "info\\") "active" "" }}">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item {{ cond (eq .File.Dir "mentoren\\") "active" "" }}">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item {{ cond (eq .File.File.Path "sponsoring.md") "active" "" }}">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item {{ cond (hasPrefix .Page.File.Path "uebungsanleitungen") "active" "" }}">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

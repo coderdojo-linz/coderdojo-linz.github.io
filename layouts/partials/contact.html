@@ -1,0 +1,32 @@
+{{"<!-- Contact Section -->" | safeHTML}} 
+<section id="contact" class="{{ cond (ne .style "") .style "" }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-8 offset-lg-2">
+                <h2>{{ .title }}</h2>
+                <p class="text-center">{{ .text }}</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-8 offset-lg-2">
+                <form id="contact-form" novalidate class="mb-4">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Emailadresse" name="email" id="contact-email" required>
+                        <div class="invalid-feedback">Gib bitte eine gültige Emailadresse an, damit wir dich kontaktieren können.</div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Nachricht" rows="5" name="message" id="contact-text" required></textarea>
+                        <div class="invalid-feedback">Gib bitte eine Nachricht ein.</div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary" onclick="sendContactForm({{ .type }}); return false;">Nachricht senden</button>
+                    </div>
+                </form>
+                <div id="contact-success" class="alert alert-success">
+                    <p>Die Abfrage wurde erfolgreich abgeschickt. Wir werden uns sobald als möglich bei dir melden.</p>
+                </div>
+                <div id="contact-error" class="alert alert-danger">
+                    <p>Die Abfrage konnte gerade nicht abgeschickt wird. Bitte versuche es etwas später nocheinmal oder schick uns eine Mail an <a href="mailto:linz.coderdojo.net">info@linz.coderdojo.net</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+baseURL = "https://linz.coderdojo.net"
+languageCode = "de-AT"
+title = "CoderDojo Linz"
+
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackFriday]
+		hrefTargetBlank = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+[params]

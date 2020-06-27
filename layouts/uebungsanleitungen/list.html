@@ -1,0 +1,112 @@
+{{ define "main" }}
+
+<section id="exercises" class="exercises">
+    {{ partial "breadcrumb.html" . }}
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>{{ .Title }}</h1>
+            </div>
+        </div>
+
+        {{ $categories := slice "Alle" }}
+        {{ range .Pages }}
+            {{ range .Params.categories }}
+                {{ if not (in $categories .)}}
+                    {{ $categories = $categories | append . }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+
+        {{ if gt (len $categories) 1 }}
+        <div class="row-12 mb-4 category-overview">
+        {{range $index, $element := sort $categories }}
+        <a class="badge badge-light badge-category badge-category-index mr-2 category category-{{lower (replace (replace . "." "-") " " "-")}} {{cond (eq $index 0) "selected" ""}}" href="javascript: selectCategory('category-{{lower (replace (replace . "." "-") " " "-")}}');">{{ . }}</a></li>
+        {{end}}
+        </div>
+        {{ end }}
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 category-cards">
+            {{ range ((.Pages.ByParam "Title").ByWeight).ByParam "Level" }}
+
+            {{ $link := .Permalink}}
+            {{ $linkText := "Zur Anleitung" }}
+            {{ $objectFit := "cover" }}
+            {{ $objectPosition := "center center" }}
+            {{ $padding := "0" }}
+
+            {{ if gt (len .Pages) 1}}
+                {{ $link := (index .Pages 0).Permalink}}
+            {{ else if gt (len .Pages) 1}}
+                {{ $link = .Permalink }}
+                {{ $linkText = "Zu den Anleitungen" }}
+            {{ end }}
+
+            {{ if isset .Params "imgcover" }}
+                {{ if eq .Params.imgcover false }}
+                    {{ $objectFit = "contain" }}
+                    {{ $padding = "12px 20px" }}
+                {{ end }}
+            {{ end }}
+
+            {{ if isset .Params "imgposition" }}
+                {{ $objectPosition = .Params.imgposition }}
+            {{ end }}
+
+            <div class="col mb-5 category category-alle {{ if isset .Params "categories" }}{{ range sort .Params.Categories }} category-{{lower (replace (replace . "." "-") " " "-")}}{{ end }}{{ end }}">
+                {{ if isset .Params "file" }}
+                {{ if hasPrefix .Params.File "http" }}
+                {{ $link = .Params.File }}
+                {{ else }}
+                {{ $link = print .Permalink .Params.File }}
+                {{ end }}
+                <div class="card h-100" onclick="window.open('{{$link}}')">
+                {{ else }}
+                <div class="card h-100" onclick="location.href='{{$link}}'">
+                {{ end}}
+                    {{ if isset .Params "img" }}
+                    <div class="card-header" style="padding: {{ $padding }}; height: 200px;">{{ if isset .Params "img" }}
+                        <img src="/img{{.RelPermalink}}../{{(index .Params.img)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: {{$objectFit}}; object-position: {{$objectPosition}}; height: 100%;">{{ end }}
+                    </div>
+                    {{ end }}
+                    
+                    <div class="card-body">
+                        {{ if isset .Params "level" }}
+                        <span class="badge badge-pill {{ cond (eq .Params.Level 0) "badge-info" (cond (eq .Params.Level 1) "badge-primary" (cond (eq .Params.Level 2) "badge-success" "badge-danger")) }}" style="float: right; margin-left: 10px;">
+                            Level {{ .Params.Level }}
+                        </span>
+                        {{ end }}
+                        <h5 class="card-title">{{.Title}}</h5>
+                        <!-- <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6> -->
+                        <p class="card-text mt-4">{{.Description}}</p>
+                    </div>
+                    {{ if isset .Params "categories" }}
+                    <div class="card-footer">
+                        {{ range sort .Params.Categories }}
+                        <span class="badge badge-light badge-category">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ else if or (isset .Params "players") (isset .Params "supplementaryMaterial")}}                    
+                    <div class="card-footer additional-info-footer">
+                        {{ if isset .Params "file" }}
+                        <!-- <span class="badge badge-pill badge-success" style="float: right; margin-left: 10px;">PDF</span> -->
+                        {{ end }}
+
+                        {{ if isset .Params "players" }}
+                        <span title="Anzahl Spieler"><i class="fas fa-user"></i> {{ .Params.Players }}</span>
+                        {{ end }}
+
+                        {{ if and (isset .Params "supplementarymaterial") (eq .Params.SupplementaryMaterial true ) }}
+                        <span title="Zusatzmaterial benötigt"><i class="fas fa-plus-circle"></i> Zusatzmaterial benötigt</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}
