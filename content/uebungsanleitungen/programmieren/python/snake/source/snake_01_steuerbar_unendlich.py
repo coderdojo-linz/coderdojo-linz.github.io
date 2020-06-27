@@ -13,10 +13,8 @@ c.pack()
 grid_length= 23
 
 # Snake Körper zeichnen
-body_width = grid_length
-body_height = grid_length
 body_img = Image.open("imgs/snake_body.png")
-body_img = body_img.resize((body_width, body_height), Image.ANTIALIAS)
+body_img = body_img.resize((grid_length, grid_length), Image.ANTIALIAS)
 body_img = ImageTk.PhotoImage(body_img)
 
 richtung = (1,0)

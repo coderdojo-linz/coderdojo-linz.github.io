@@ -1,7 +1,6 @@
 from tkinter import *
 from time import sleep
 from PIL import Image, ImageTk
-from queue import Queue
 
 # Leinwand erstellen
 H = 500
@@ -20,7 +19,8 @@ y_up = 20
 x_right = x_left + n_board_fields * grid_length
 y_down = y_up + n_board_fields * grid_length
 
-start_pos= [x_left+ grid_length*0.5+ n_board_fields//2*grid_length, y_up + grid_length*0.5 + n_board_fields//2*grid_length]
+start_pos= [x_left+ grid_length*0.5+ n_board_fields//2*grid_length,
+            y_up + grid_length*0.5 + n_board_fields//2*grid_length]
 
 # Board zeichnen
 line_width = 5
@@ -30,10 +30,8 @@ c.create_line(x_left, y_up, x_right, y_up, width=line_width)
 c.create_line(x_left, y_down, x_right, y_down, width=line_width)
 
 # Snake Körper Element vorbereiten
-body_width = grid_length
-body_height = grid_length
 body_img = Image.open("imgs/snake_body.png")
-body_img = body_img.resize((body_width, body_height), Image.ANTIALIAS)
+body_img = body_img.resize((grid_length, grid_length), Image.ANTIALIAS)
 body_img = ImageTk.PhotoImage(body_img)
 
 bodies = []

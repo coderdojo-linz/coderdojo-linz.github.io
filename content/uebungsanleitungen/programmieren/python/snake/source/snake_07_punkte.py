@@ -32,21 +32,16 @@ c.create_line(x_left, y_up, x_right, y_up, width=line_width)
 
 c.create_line(x_left, y_down, x_right, y_down, width=line_width)
 
+# Snake Körper Element vorbereiten
+body_img = Image.open("imgs/snake_body.png")
+body_img = body_img.resize((grid_length, grid_length), Image.ANTIALIAS)
+body_img = ImageTk.PhotoImage(body_img)
 
 # Apfel Element vorbereiten
-apple_width = grid_length
-apple_height = grid_length
 apple_img = Image.open("imgs/apple.png")
-apple_img = apple_img.resize((apple_width, apple_height), Image.ANTIALIAS)
+apple_img = apple_img.resize((grid_length, grid_length), Image.ANTIALIAS)
 apple_img = ImageTk.PhotoImage(apple_img)
 apple = None
-
-# Snake Körper Element vorbereiten
-body_width = grid_length
-body_height = grid_length
-body_img = Image.open("imgs/snake_body.png")
-body_img = body_img.resize((body_width, body_height), Image.ANTIALIAS)
-body_img = ImageTk.PhotoImage(body_img)
 
 bodies = []
 
