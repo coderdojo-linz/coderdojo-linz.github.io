@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Snake mit Node.js </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/">Web</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#snake-mit-node-js">Snake mit Node.js</a>
+<ul>
+<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+<li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
+<li><a href="#grundgerüst-der-applikation-erstellen">Grundgerüst der Applikation erstellen</a></li>
+<li><a href="#spielfeld-zeichnen">Spielfeld zeichnen</a></li>
+<li><a href="#schlange-zeichnen-und-bewegen">Schlange zeichnen und bewegen</a></li>
+<li><a href="#auf-eingabe-des-benutzers-reagieren">Auf Eingabe des Benutzers reagieren</a></li>
+<li><a href="#apfel-fressen">Apfel fressen</a></li>
+<li><a href="#punkte-zählen-und-geschwindigkeit-erhöhen">Punkte zählen und Geschwindigkeit erhöhen</a></li>
+<li><a href="#gesamter-code">Gesamter Code</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="snake-mit-node-js">Snake mit Node.js</h1>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/snake-mit-nodejs/img/snake.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="ziel-der-übung">Ziel der Übung</h2>
+
+<p>In dieser Übung lernst du, wie du mit Node.js einfache Spiele programmieren kannst.</p>
+
+<h2 id="systemvoraussetzungen">Systemvoraussetzungen</h2>
+
+<p>Du brauchst für diese Übung die gleichen Tools (Visual Studio Code, Node.js, npm), die schon in der Übung <a href="http://coderdojo-linz.github.io/trainingsanleitungen/web/nodejs-webserver.html" target="_blank">Ein Webserver mit Node.js</a> erwähnt sind. Falls du die Übung schon gemacht hast, hast du schon alle notwendigen Tools. Falls nicht, schau dort bitte nach.</p>
+
+<p>Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alle verwendeten Tools sind plattformunabhängig.</p>
+
+<h2 id="grundgerüst-der-applikation-erstellen">Grundgerüst der Applikation erstellen</h2>
+
+<p>Als erstes brauchen wir einen Ordern, in dem wir das Spiel erstellen können. Lege im Dateiexplorer einen Ordner an und öffne dann diesen Pfad in der Eingabeaufforderung. Dort rufst du den Befehl <code>npm init</code> auf. Damit wird in deinem Ordner eine Datei <code>package.json</code> erzeugt, in der wir zusätzlich benötigte Pakete speichern können.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/snake-mit-nodejs/img/npm-init.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Wir brauchen für unser Spiel die beiden Pakete <code>ansi</code> und <code>keypress</code>. Diese können wir durch die folgenden beiden Befehle in der Eingabeaufforderung laden:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm install ansi
+npm install keypress</code></pre></div>
+<p>Nachdem du die beiden Pakete installiert hast, kannst du in deinem Ordner eine neue Datei für dein Spiel anlegen (z.B. game.js). Zum Starten geben wir den Text &ldquo;MY GAME&rdquo; aus und malen ein paar farbige Punkte:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*jslint node: true, for: true */</span>
+<span style="color:#e6db74">&#39;use strict&#39;</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ansi</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;ansi&#39;</span>);
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cursor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ansi</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>);
+
+<span style="color:#66d9ef">try</span> {
+    <span style="color:#75715e">// cursor.bg.... setzt die Hintergrundfarbe, so können wir mit dem Leerzeichen farbige Flächen malen
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">red</span>();
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    <span style="color:#75715e">// mit reset setzt du die Hintergrundfarbe wieder zurück
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+
+    <span style="color:#75715e">// cursor..... setzt die Textfarbe
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">yellow</span>();
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;MY GAME&#39;</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">reset</span>();
+
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">red</span>();
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">17</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">19</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">ex</span>) {
+    <span style="color:#75715e">// hier werden Fehler erkannt und ausgegeben
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ex</span>.<span style="color:#a6e22e">toString</span>());
+} <span style="color:#66d9ef">finally</span> {
+    <span style="color:#75715e">// zum Schluss müssen wir das Spiel beenden
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">quitGame</span>();
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">quitGame</span>() {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">reset</span>();
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>);
+    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">exit</span>();
+}
+</code></pre></div>
+<p>Du kannst das Programm ausführen, indem du in der Eingabeaufforderung folgendes Kommando eingibst:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">node game.js</code></pre></div>
+<p>Wenn du das Spiel nun laufen lässt, werden zuerst drei Leerzeichen mit roten Hintergrund gezeichnet, dann wird der Text &ldquo;MY GAME&rdquo; in gelb ausgegeben, und dann kommen wieder drei Leerzeichen mit rotem Hintergrund.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/snake-mit-nodejs/img/my-game.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="spielfeld-zeichnen">Spielfeld zeichnen</h2>
+
+<p>Als nächstes wollen wir ein Spielfeld zeichnen:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/snake-mit-nodejs/img/game-area.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Dazu definieren wir global die Größe des Spielfelds mit <code>var width = 40;</code>und <code>var height = 20;</code>. Den Code im <code>try</code> Block ändern wir, um die vier Linien zu zeichnen. Damit wir nicht jeden Punkt der Linie einzeln zeichnen müssen, bauen wir dafür die Funktionen <code>drawHorizontalLine</code> und <code>drawVerticalLine</code>.</p>
+
+<p>In den neuen Funktionen verwenden wir sogeannten Schleifen (<code>for</code>) um einen Befehl mehrmals zu wiederholen. Zu Beginn der for-Schleife wird der Wert i auf 0 gesetzt. Bei jedem Schleifendurchlauf wird geprüft, ob i &lt; length erfüllt wird. Wenn nicht wird die Schleife abgebrochen, sonst wird der Code ausgeführt. Zum Schluss wird noch <code>i++</code> ausgeführt - also i um 1 erhöht.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*jslint node: true, for: true */</span>
+<span style="color:#e6db74">&#39;use strict&#39;</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ansi</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;ansi&#39;</span>);
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cursor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ansi</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+
+<span style="color:#66d9ef">try</span> {
+    <span style="color:#75715e">// draw game area
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">grey</span>();
+    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">width</span>);
+    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>, <span style="color:#a6e22e">width</span>);
+    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
+    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">width</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">ex</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ex</span>.<span style="color:#a6e22e">toString</span>());
+} <span style="color:#66d9ef">finally</span> {
+    <span style="color:#a6e22e">quitGame</span>();
+}
+
+...
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    }
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    }
+}
+</code></pre></div>
+<h2 id="schlange-zeichnen-und-bewegen">Schlange zeichnen und bewegen</h2>
+
+<p>Die Schlange stellen wir als grünen Punkt dar. Dazu erweitern wir die globalen Variablen zu Beginn des Codes um <code>posX</code> und <code>posY</code> für die aktuelle Position der Schlange und um <code>dirX</code> und <code>dirY</code> für die Richtung der Schlange.</p>
+
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Wert</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>posX</code></td>
+<td>-1</td>
+<td>nach links bewegen</td>
+</tr>
+
+<tr>
+<td><code>posX</code></td>
+<td>0</td>
+<td>Bewegung nach oben oder unten durch <code>posY</code></td>
+</tr>
+
+<tr>
+<td><code>posX</code></td>
+<td>1</td>
+<td>nach rechts bewegen</td>
+</tr>
+
+<tr>
+<td><code>posY</code></td>
+<td>-1</td>
+<td>nach oben bewegen</td>
+</tr>
+
+<tr>
+<td><code>posY</code></td>
+<td>0</td>
+<td>Bewegung nach links oder rechts durch <code>posX</code></td>
+</tr>
+
+<tr>
+<td><code>posY</code></td>
+<td>1</td>
+<td>nach unten bewegen</td>
+</tr>
+</tbody>
+</table>
+
+<p>Zu Beginn des <code>try</code> Blocks ist noch Code enthalten, der den Cursor im Spiel ausblendet. Dieser muss in <code>quitGame</code> wieder eingeblendet werden.</p>
+
+<p>Nach dem Malen des Spielfelds wird die initiale Position der Schlange gesetzt und dann wird die Game Loop gestartet. Das heißt, die Funktion <code>gameLoop</code> wird immer wieder aufgerufen, bis die Schlange den Rand berührt.</p>
+
+<p>Achtung: hier brauchen wir das Spiel nicht im Block <code>finally</code> zu beenden, da das Spiel mit der Game Loop solange weiter laufen soll, bis die Schlange den Rand berührt.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*jslint node: true, for: true */</span>
+<span style="color:#e6db74">&#39;use strict&#39;</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ansi</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;ansi&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">keypress</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;keypress&#39;</span>);
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cursor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ansi</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+<span style="color:#66d9ef">try</span> {
+    <span style="color:#75715e">// clear output
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1Bc&#39;</span>);
+    <span style="color:#75715e">// hide cursor
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stderr</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1B[?25l&#39;</span>);
+
+    <span style="color:#75715e">// draw game area
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">grey</span>();
+    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">width</span>);
+    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>, <span style="color:#a6e22e">width</span>);
+    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
+    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">width</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+
+    <span style="color:#75715e">// set initial position of snake
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+
+    <span style="color:#75715e">// start game loop
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gameLoop</span>();
+} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">ex</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ex</span>.<span style="color:#a6e22e">toString</span>());
+    <span style="color:#a6e22e">quitGame</span>();
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">gameLoop</span>() {
+    <span style="color:#75715e">// remove snake at old position
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">removeSnake</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
+
+    <span style="color:#75715e">// set new position
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dirX</span>;
+    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dirY</span>;
+
+    <span style="color:#75715e">// check new position
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">height</span>) {
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">red</span>();
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">white</span>();
+        <span style="color:#a6e22e">setText</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">6</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;  GAME OVER  &#34;</span>);
+        <span style="color:#a6e22e">quitGame</span>();
+    }
+
+    <span style="color:#75715e">// draw snake at new position
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawSnake</span>();
+
+    <span style="color:#75715e">// call gameLoop
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">gameLoop</span>, <span style="color:#ae81ff">500</span>);
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">quitGame</span>() {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">reset</span>();
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stderr</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1B[?25h&#39;</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>);
+    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">exit</span>();
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">removeSnake</span>() {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">black</span>();
+    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawSnake</span>() {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">green</span>();
+    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#66d9ef">char</span>) {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    }
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    }
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setText</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">text</span>) {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">text</span>);
+}
+</code></pre></div>
+<h2 id="auf-eingabe-des-benutzers-reagieren">Auf Eingabe des Benutzers reagieren</h2>
+
+<p>Damit wir die Schlange mit den Cursortasten steuern können müssen wir auf das Event <code>keypress</code> reagieren. Dazu fügen wir vor dem initalen Setzen der Position der Schlange eine neue Zeile ein.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">        <span style="color:#75715e">// handle key press events
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;keypress&#39;</span>, <span style="color:#a6e22e">handleInput</span>);
+
+    <span style="color:#75715e">// set initial position of snake
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+</code></pre></div>
+<p>Dann müssen wir auch die Funktion <code>handleInput</code> definieren:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handleInput</span>(<span style="color:#a6e22e">chunk</span>, <span style="color:#a6e22e">key</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;q&#39;</span>) {
+        <span style="color:#a6e22e">quitGame</span>();
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;right&#39;</span>) {
+        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;left&#39;</span>) {
+        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;up&#39;</span>) {
+        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;down&#39;</span>) {
+        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+    }
+}
+</code></pre></div>
+<p>Zusätzlich zu den Cursortasten behandeln wir auch die Taste <code>q</code>. Sie führt dazu, dass das Spiel abgebrochen wird.</p>
+
+<h2 id="apfel-fressen">Apfel fressen</h2>
+
+<p>Nun brauchen wir noch den Apfel, der von der Schlange gefressen werden soll. Dazu brauchen wir noch einige Erweiterungen.</p>
+
+<p>Bei den globalen Variablen brauchen wir die aktuelle Position des Apfels.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">applePosY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</code></pre></div>
+<p>Vor dem Start der Game Loop muss der erste Apfel gezeichnet werden:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// draw first apple
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawApple</span>();
+
+    <span style="color:#75715e">// start game loop
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gameLoop</span>();
+</code></pre></div>
+<p>Die Funktion <code>drawApple</code> sieht so aus:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawApple</span>() {
+    <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">width</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+    <span style="color:#a6e22e">applePosY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">height</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">red</span>();
+    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">applePosX</span>, <span style="color:#a6e22e">applePosY</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+}
+</code></pre></div>
+<p>Bevor wir in der Game Loop die Schlange neu zeichnen, müssen wir überprüfen, ob der Apfel berührt wurde. Wenn ja, muss ein neuer Apfel gezeichnet werden.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// check if apple is touched
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosY</span>) {
+        <span style="color:#75715e">// draw new apple
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">drawApple</span>();
+    }
+
+    <span style="color:#75715e">// draw snake at new position
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawSnake</span>();
+</code></pre></div>
+<h2 id="punkte-zählen-und-geschwindigkeit-erhöhen">Punkte zählen und Geschwindigkeit erhöhen</h2>
+
+<p>Damit wir die Anzahl der gefressenen Äpfel ausgeben können und die Geschwindigkeit mit jedem Apfel erhöhen können, fügen wir zwei weitere globale Variablen hinzu:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">points</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">speed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>; <span style="color:#75715e">// moves per second
+</span></code></pre></div>
+<p>Diese verwenden wir als erstes in der Game Loop an der Stelle, an der wir prüfen, ob der Apfel berührt wird. Wenn ja, erhöhen wir die <code>points</code> und die <code>speed</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// check if apple is touched
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosY</span>) {
+        <span style="color:#75715e">// increase points
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">points</span><span style="color:#f92672">++</span>;
+
+        <span style="color:#75715e">// increase speed
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">speed</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span>) {
+            <span style="color:#a6e22e">speed</span><span style="color:#f92672">++</span>;
+        }
+
+        <span style="color:#75715e">// draw new apple
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">drawApple</span>();
+    }
+</code></pre></div>
+<p>Am Ende der Game Loop wird diese erneut aufgerufen. Hier ändern wir die Wartezeit, indem wir 1000 (Millisekunden) / durch die <code>speed</code> dividieren. Bei <code>speed</code> = 4 warten wir z.B. 250 ms bis zum nächsten Aufruf der Game Loop.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// call gameLoop
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">gameLoop</span>, <span style="color:#ae81ff">1000</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">speed</span>);
+</code></pre></div>
+<p>Außerdem fügen wir in der Funktion <code>drawApple</code> am Ende noch folgende Zeilen zum Ausgeben von <code>points</code> und <code>speed</code> ein:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#a6e22e">setText</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;Points: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">points</span>.<span style="color:#a6e22e">toString</span>());
+    <span style="color:#a6e22e">setText</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;Speed: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">speed</span>.<span style="color:#a6e22e">toString</span>());
+</code></pre></div>
+<h2 id="gesamter-code">Gesamter Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*jslint node: true, for: true */</span>
+<span style="color:#e6db74">&#39;use strict&#39;</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ansi</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;ansi&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">keypress</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;keypress&#39;</span>);
+
+<span style="color:#a6e22e">keypress</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>);
+<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>.<span style="color:#a6e22e">setRawMode</span>(<span style="color:#66d9ef">true</span>);
+<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>.<span style="color:#a6e22e">resume</span>();
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cursor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ansi</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">applePosY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">points</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">speed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+
+<span style="color:#66d9ef">try</span> {
+    <span style="color:#75715e">// clear output
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1Bc&#39;</span>);
+    <span style="color:#75715e">// hide cursor
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stderr</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1B[?25l&#39;</span>);
+
+    <span style="color:#75715e">// draw game area
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">grey</span>();
+    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">width</span>);
+    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>, <span style="color:#a6e22e">width</span>);
+    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
+    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">width</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+
+    <span style="color:#75715e">// handle key press events
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;keypress&#39;</span>, <span style="color:#a6e22e">handleInput</span>);
+
+    <span style="color:#75715e">// set initial position of snake
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+
+    <span style="color:#75715e">// draw first apple
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawApple</span>();
+
+    <span style="color:#75715e">// start game loop
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gameLoop</span>();
+} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">ex</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ex</span>.<span style="color:#a6e22e">toString</span>());
+    <span style="color:#a6e22e">quitGame</span>();
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">gameLoop</span>() {
+    <span style="color:#75715e">// remove snake at old position
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">removeSnake</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
+
+    <span style="color:#75715e">// set new position
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dirX</span>;
+    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dirY</span>;
+
+    <span style="color:#75715e">// check new position
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">height</span>) {
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">red</span>();
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">white</span>();
+        <span style="color:#a6e22e">setText</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">6</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;  GAME OVER  &#34;</span>);
+        <span style="color:#a6e22e">quitGame</span>();
+    }
+
+    <span style="color:#75715e">// check if apple is touched
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosY</span>) {
+        <span style="color:#75715e">// increase points
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">points</span><span style="color:#f92672">++</span>;
+
+        <span style="color:#75715e">// increase speed
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">speed</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span>) {
+            <span style="color:#a6e22e">speed</span><span style="color:#f92672">++</span>;
+        }
+
+        <span style="color:#75715e">// draw new apple
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">drawApple</span>();
+    }
+
+    <span style="color:#75715e">// draw snake at new position
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawSnake</span>();
+
+    <span style="color:#75715e">// call gameLoop
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">gameLoop</span>, <span style="color:#ae81ff">1000</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">speed</span>);
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">quitGame</span>() {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">reset</span>();
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stderr</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1B[?25h&#39;</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>);
+    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">exit</span>();
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handleInput</span>(<span style="color:#a6e22e">chunk</span>, <span style="color:#a6e22e">key</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;q&#39;</span>) {
+        <span style="color:#a6e22e">quitGame</span>();
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;right&#39;</span>) {
+        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;left&#39;</span>) {
+        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;up&#39;</span>) {
+        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;down&#39;</span>) {
+        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+    }
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawApple</span>() {
+    <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">width</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+    <span style="color:#a6e22e">applePosY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">height</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">red</span>();
+    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">applePosX</span>, <span style="color:#a6e22e">applePosY</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+
+    <span style="color:#a6e22e">setText</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;Points: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">points</span>.<span style="color:#a6e22e">toString</span>());
+    <span style="color:#a6e22e">setText</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;Speed: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">speed</span>.<span style="color:#a6e22e">toString</span>());
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">removeSnake</span>() {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">black</span>();
+    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawSnake</span>() {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">green</span>();
+    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#66d9ef">char</span>) {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    }
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+    }
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setText</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">text</span>) {
+    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">text</span>);
+}
+</code></pre></div> </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Geisterspiel in C# </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/">C#</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#geisterspiel">Geisterspiel</a>
+<ul>
+<li><a href="#die-aufgabe">Die Aufgabe</a></li>
+<li><a href="#bestandteile-des-programms">Bestandteile des Programms</a></li>
+<li><a href="#was-wird-benötigt">Was wird benötigt?</a></li>
+<li><a href="#steuerung-des-progammablaufs">Steuerung des Progammablaufs</a></li>
+<li><a href="#eine-lösung">Eine Lösung</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="geisterspiel">Geisterspiel</h1>
+
+<p>In dieser Übung erstellen wir ein erstes, einfaches Konsolenspiel mit C# (C-Sharp). Das Spiel wird
+textuell gesteuert d.h Ein/-Ausgaben werden auf einer Konsole zu lesen/schreiben sein.</p>
+
+<h2 id="die-aufgabe">Die Aufgabe</h2>
+
+<p>Der Geist versteckt sich zufällig hinter einer von 3 Türen. Du entscheidest, welche Türe du öffnen
+möchtest. Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste.
+Unser Programm soll nun prüfen, ob der Geist sich hinter der Tür befindet und eine
+entsprechende Meldung ausgeben; also entweder ‘Geist gefunden’ und damit das Spiel verloren
+oder ‘Kein Geist’ und der Spieler darf zur nächsten Station mit wieder 3 Türen und einem zufällig
+versteckten Geist weitergehen. Das Programm soll also auch mitzählen, wie oft der Spieler durch
+eine Tür geht, ohne dabei auf den Geist zu stoßen.<br />
+Ein möglicher Spielablauf könnte dann im Konsolen-Fenster so aussehen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Geisterspiel
+Hinter einer Tür verbirgt sich ein Geist.
+Welche Tür wählst du? 1, <span style="color:#ae81ff">2</span> oder 3?
+<span style="color:#ae81ff">1</span>
+Kein Geist gefunden!
+Hinter einer Tür verbirgt sich ein Geist.
+Welche Tür wählst du? 1, <span style="color:#ae81ff">2</span> oder 3?
+<span style="color:#ae81ff">1</span>
+Game over! Hier ist ein Geist!
+Deine Punkte: <span style="color:#ae81ff">1</span></code></pre></div>
+<h2 id="bestandteile-des-programms">Bestandteile des Programms</h2>
+
+<p>Zunächst öffnen wir Visual Studio IDE (Download auf <a href="https://visualstudio.microsoft.com" target="_blank">https://visualstudio.microsoft.com</a>) ODER
+verwenden die Inoffizielle Online Version welche für Konsolenanwendungen wunderbar
+funktioniert. (<a href="https://dotnetfiddle.net" target="_blank">https://dotnetfiddle.net</a>)</p>
+
+<h2 id="was-wird-benötigt">Was wird benötigt?</h2>
+
+<p><strong>AUS/-EINGABE IN DER KONSOLE</strong><br />
+Text ausgeben können wir in C# mit der Funktion <code>Console.WriteLine(...);</code>
+Text einlesen (den Spieler auffordern etwas einzugeben) mit der Funktion <code>Console.ReadLine();</code>
+Eingabe in einer String-Variable speichern <code>String eingabe = Console.ReadLine();</code>
+String bedeutet das die Variable mit dem Namen “eingabe” eine beliebige Zeichenkette enthalten kann.<br />
+Da es in C# klare Definitionen gibt welche Variable welchen Wert annehmen kann müssen wir einen Wert konvertieren um ihn zu ändern. Als Beispiel liefer <code>Console.Readline();</code> einen <code>String</code> zurück (die Eingabe vom Spieler) aber wir wollen die Zahl welche eingegeben wurde in einen <code>int</code> umwandeln das geht wie folgt:
+<code>Convert.ToInt32(Console.ReadLine());</code></p>
+
+<p><strong>Weitere Variablen und Rechenoperationen</strong><br />
+Weiters benötigen wir den Datentyp “Integer” in C# kurz mit <code>int</code> erkennbar. Solch eine Variable anlegen können wir einfach mit <code>int zahl = 2122;</code><br />
+Wollen wir rechnen können wir eine neue Variable erstellen oder eine bereits vorhandene überschreiben.</p>
+
+<p>Neu: <code>int addition = zahl1 + zahl2;</code><br />
+“zahl1” überschreiben: <code>zahl1 = zahl1 + zahl2;</code><br />
+Das gleiche gilt für Multiplizieren, Subtrahieren und Dividieren mit * - oder /</p>
+
+<p><strong>ZUFALLSZAHLEN</strong><br />
+Um eine Zufallszahl zwischen 1 und 3 erzeugen zu können, muss man zunächst die Random-Klasse erstellen.<br />
+<code>Random zufall = new Random();</code><br />
+Danach kann man mit<br />
+<code>zufall.Next(1,4);</code><br />
+Eine Zufallszahl zwischen 1 und 3 generieren. (4 da die Zahl ausgeschlossen ist und wir bis 3 Werte erhalten möchten)</p>
+
+<p><strong>WAHRHEITSWERTE (BOOLEAN)</strong><br />
+In variablen könne wir aber auch true oder false speichern mit <code>bool variablenName = false;</code></p>
+
+<h2 id="steuerung-des-progammablaufs">Steuerung des Progammablaufs</h2>
+
+<p><strong>BEDINGUNGEN</strong></p>
+
+<p>Um eine Bedingung zu prüfen gibt es den Befehl if, gefolgt von der Bedingung, die geprüft werden soll.
+- Was passieren soll wenn die Bedingung erfüllt ist bestimmen wir in der nächsten Zeile nach
+dem wir einen Code-Block geöffnet haben mit einer geschwungen Klammer { aber wir dürfen
+nicht vergessen diese auch wieder zu schließen }. Dazwischen kommt unser Code was
+passieren soll wenn die Bedingung erfüllt wurde.
+- Wollen wir auch sagen was passieren soll wenn die Bedingung nicht erfüllt wurde benutzen wir
+den Befehl else am ende des if Code-Blocks.
+- Logische Operatoren: Um eine Bedingung formulieren zu können, brauchen wir sogenannte logische Operatoren, die 2 Werte vergleichen und als Ergebnis den Wahrheitswert TRUE oder FALSE liefern. In C# gibt es folgende Operatoren:
+    - A == b &hellip; a ist gleich b
+    - A != b &hellip; a ist ungleich b
+    - A &lt; b &hellip; a ist kleiner als b
+    - A &gt; b &hellip; a ist größer als b
+    - A &lt;= b &hellip; a ist kleiner oder gleich b
+    - A &gt;= b &hellip; a ist größer oder gleich b</p>
+
+<p>Ein Beispiel für eine if Anweisung:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">int</span> tuer = <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">if</span>(tuer == <span style="color:#ae81ff">1</span>)
+{
+    Console.WriteLine(<span style="color:#e6db74">&#34;gefunden&#34;</span>);
+}
+<span style="color:#66d9ef">else</span>
+{
+    Console.WriteLine(<span style="color:#e6db74">&#34;leider nicht gefunden&#34;</span>);
+}
+</code></pre></div>
+<p><strong>SCHLEIFEN</strong><br />
+Um Dinge zu beschreiben die sich immer auf die gleiche Art wiederholen sollen, solange eine
+Bedingung erfüllt ist, gibt es sogenannte Schleifen, z.B die while-Schleife. Sie beginnt mit dem
+Befehl while gefolgt - wie bei der if-Anweisung - mit einer Bedingung und angefangen wird ebenfalls wieder mit einer geschwungenen Klammer.
+Beispiel:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">int</span> punkte = <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">while</span>(punkte &lt; <span style="color:#ae81ff">5</span>)
+{
+Console.WriteLine(<span style="color:#e6db74">&#34;gehe weiter&#34;</span>);
+punkte = punkte + <span style="color:#ae81ff">1</span>;
+}
+</code></pre></div>
+<h2 id="eine-lösung">Eine Lösung</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> System;
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Main()
+    {
+        Console.WriteLine(<span style="color:#e6db74">&#34;Geisterspiel&#34;</span>);
+        <span style="color:#66d9ef">int</span> punkte = <span style="color:#ae81ff">0</span>;
+        <span style="color:#66d9ef">bool</span> gameover = <span style="color:#66d9ef">false</span>;
+        Random random = <span style="color:#66d9ef">new</span> Random();
+        <span style="color:#66d9ef">while</span> (gameover == <span style="color:#66d9ef">false</span>)
+        {
+            Console.WriteLine(<span style="color:#e6db74">&#34;Hinter einer Tür verbirgt sich ein Geist.\nWelche Tür wählst du? 1, 2 oder 3?&#34;</span>);
+            <span style="color:#66d9ef">int</span> tuer = Convert.ToInt32(Console.ReadLine());
+            <span style="color:#66d9ef">int</span> geisterTuer = random.Next(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>);
+            <span style="color:#66d9ef">if</span> (tuer == geisterTuer)
+            {
+                Console.WriteLine(<span style="color:#e6db74">&#34;Game over! Hier ist ein Geist!&#34;</span>);
+                Console.WriteLine(<span style="color:#e6db74">&#34;Deine Punkte: {0}&#34;</span>, punkte);
+                gameover = <span style="color:#66d9ef">true</span>;
+            }
+            <span style="color:#66d9ef">else</span>
+            {
+                Console.WriteLine(<span style="color:#e6db74">&#34;Kein Geist gefunden!&#34;</span>);
+                punkte = punkte + <span style="color:#ae81ff">1</span>;
+            }
+        }
+    }
+}
+</code></pre></div> </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

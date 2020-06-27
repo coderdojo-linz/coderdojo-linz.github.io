@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Back to Basics - Assembler Hello World </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/">Sonstiges</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#erste-schritte-mit-assembler-programmierung">Erste Schritte mit Assembler-Programmierung</a>
+<ul>
+<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+<li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a>
+<ul>
+<li><a href="#systemabhängigkeit">Systemabhängigkeit</a></li>
+<li><a href="#entwicklungsumgebung-im-coderdojo">Entwicklungsumgebung im CoderDojo</a></li>
+<li><a href="#eigene-entwicklungsumgebung">Eigene Entwicklungsumgebung</a></li>
+</ul></li>
+<li><a href="#zum-unbuntu-linux-server-verbinden">Zum Unbuntu Linux Server verbinden</a></li>
+<li><a href="#erste-übung-hello-world">Erste Übung: <em>Hello World</em></a></li>
+<li><a href="#challenge-was-macht-dieses-programm">Challenge: Was macht dieses Programm?</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#schleifen">Schleifen</a></li>
+<li><a href="#weitere-übungen">Weitere Übungen</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="erste-schritte-mit-assembler-programmierung">Erste Schritte mit Assembler-Programmierung</h1>
+
+<h2 id="ziel-der-übung">Ziel der Übung</h2>
+
+<p>Normalerweise programmieren wir im CoderDojo mit sogenannten <a href="https://de.wikipedia.org/wiki/H%C3%B6here_Programmiersprache" target="_blank">höheren Programmiersprachen</a> wie C#, Java, Python oder JavaScript. Auf unterster Ebene versteht ein Computer diese Sprachen aber nicht. Er kann nur mit <a href="https://de.wikipedia.org/wiki/Maschinensprache" target="_blank">Maschinensprache</a> umgehen. Diese Befehle kann der Prozessor deines Computers direkt ausführen.</p>
+
+<p>In dieser Übung probieren wir, ein Programm direkt in Maschinensprache zu programmieren. Dazu verwenden wir eine <a href="https://de.wikipedia.org/wiki/Assemblersprache" target="_blank">Assemblersprache</a>. Auch wenn du später selten Assembler programmieren wirst, hilft dir diese Übung, besser zu verstehen, was im Hintergrund passiert.</p>
+
+<p>In dieser grundlegenden Übung stehen die einfachsten Grundlagen von Assembler sowie die Tools, die du dafür brauchst, im Mittelpunkt. Später werden wir uns mit mehr Assembler-Kommandos beschäftigen.</p>
+
+<h2 id="systemvoraussetzungen">Systemvoraussetzungen</h2>
+
+<h3 id="systemabhängigkeit">Systemabhängigkeit</h3>
+
+<p>In Assembler schreibt man Programme für einen bestimmten Prozessor und ein bestimmtes Betriebssystem. Ein Assemblerprogramm, das man z.B. für einen Windows-Computer mit <a href="https://de.wikipedia.org/wiki/Intel" target="_blank">Intel</a>-Prozessor schreibt, kann man nicht ohne weiteres unter Linux auf einem <a href="https://de.wikipedia.org/wiki/ARM-Architektur" target="_blank">ARM</a>-Prozessor ausführen.</p>
+
+<p><strong>Diese Übung setzt einen Intel-Prozessor und Linux (z.B. <a href="http://www.ubuntu.com/" target="_blank">Ubuntu</a>) voraus.</strong></p>
+
+<h3 id="entwicklungsumgebung-im-coderdojo">Entwicklungsumgebung im CoderDojo</h3>
+
+<p>Im CoderDojo wird dir ein Mentor einen Zugang zu einer fertigen Linux-Maschine geben. Zum Zugriff brauchst du <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">PuTTY</a>. Lade die Software herunter, installiere sie und frage deinen CoderDojo-Mentor um die Zugangsdaten.</p>
+
+<h3 id="eigene-entwicklungsumgebung">Eigene Entwicklungsumgebung</h3>
+
+<p><strong>Wenn du von einem Mentor die Zugangsdaten zu einer fertigen Entwicklungsumgebung bekommen hast, kannst du dieses Kapitel überspringen.</strong></p>
+
+<p>Möchtest du die Entwicklungsumgebung auf deinem Computer haben? Das ist natürlich möglich. Die gesamte, verwendete Software ist Open Source und kostenlos.</p>
+
+<p>Damit Linux bei dir läuft, hast du folgende Möglichkeiten (falls du nicht sicher bist, frag einen CoderDojo Mentor um Hilfe):</p>
+
+<ul>
+<li>Du hast einen Computer, der sowieso <strong><a href="http://www.ubuntu.com/" target="_blank">Ubuntu</a></strong> verwendet? Dann kannst du sofort loslegen.</li>
+<li>Du hast einen <strong>Windows-Computer</strong>, auf dem <strong>Hyper-V</strong> installiert ist bzw. installiert werden kann?
+
+<ul>
+<li>Lade <a href="http://www.ubuntu.com/download/server" target="_blank">Ubuntu Server</a> aus dem Internet herunter. Du bekommst eine <em>.iso</em>-Datei</li>
+<li>Installiere eine neue, virtuelle Maschine in <em>Hyper-V</em> mit <em>Ubuntu Server</em>. Falls du dabei Hilfe brauchst, frag einen CoderDojo Mentor (<a href="http://www.ubuntu.com/download/desktop/install-ubuntu-desktop" target="_blank">Schritt-für-Schritt-Anleitung</a>)</li>
+</ul></li>
+<li>Du hast einen <strong>Windows- oder Mac-Computer</strong>, auf dem <em>Hyper-V</em> <strong>nicht</strong> funktioniert?
+
+<ul>
+<li>Installiere <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a> auf deinem Computer.</li>
+<li>Lade <a href="http://www.ubuntu.com/download/server" target="_blank">Ubuntu Server</a> aus dem Internet herunter. Du bekommst eine <em>.iso</em>-Datei</li>
+<li>Installiere eine neue, virtuelle Maschine in <em>Hyper-V</em> mit <em>Ubuntu Server</em>. Falls du dabei Hilfe brauchst, frag einen CoderDojo Mentor (<a href="http://www.ubuntu.com/download/desktop/install-ubuntu-desktop" target="_blank">Schritt-für-Schritt-Anleitung</a>)</li>
+</ul></li>
+<li>Du kannst oder möchtest <em>Ubuntu</em> Linux nicht auf deinem Computer installieren? Du kannst eine virtuelle Maschine in der <strong>Azure Cloud</strong> verwenden (<a href="https://azure.microsoft.com/de-de/documentation/articles/virtual-machines-linux-quick-create-portal/" target="_blank">Schritt-for-Schritt-Anleitung</a>).
+
+<ul>
+<li><strong>Achtung!</strong> Virtuelle Maschinen in der Cloud sind <strong>kostenpflichtig</strong>. Du brauchst die Hilfe deiner Eltern, um mit einer Kreditkarte den Zugang freizuschalten.</li>
+</ul></li>
+</ul>
+
+<p>Wenn du deinen <em>Ubuntu</em> Linux Server installiert hast, musst du die für die Übung notwendige Software einrichten. Folgendes müssen wir installeren:</p>
+
+<ul>
+<li><a href="http://www.nasm.us/index.php" target="_blank">NASM - The Netwide Assembler</a>
+
+<ul>
+<li><a href="http://www.nasm.us/xdoc/2.12.02/html/nasmdoc1.html#section-1.3" target="_blank">Installationsanleitung</a></li>
+<li><a href="http://www.nasm.us/pub/nasm/releasebuilds/?C=M;O=D" target="_blank">Download</a></li>
+<li><a href="http://www.nasm.us/xdoc/2.12.02/html/nasmdoc0.html" target="_blank">Dokumentation</a></li>
+</ul></li>
+<li><a href="https://gcc.gnu.org/" target="_blank">GCC - The GNU Compiler Collection</a>
+
+<ul>
+<li>GCC wird unter Ubuntu Linux im Paket <a href="https://packages.debian.org/de/sid/build-essential" target="_blank">build-essentials</a> installiert. Starte daher <code>sudo apt-get install build-essential</code></li>
+<li><a href="http://www.delorie.com/gnu/docs/gcc/gcc_toc.html" target="_blank">Dokumentation</a></li>
+</ul></li>
+<li><a href="https://www.gnu.org/software/gdb/" target="_blank">GDB - The GNU Project Debugger</a>
+
+<ul>
+<li>GDB wird unter Ubuntu Linux im Paket <code>gdb</code> installiert. Start daher <code>sudo apt-get install gdb</code></li>
+<li><a href="http://www.delorie.com/gnu/docs/gdb/gdb_toc.html" target="_blank">Dokumentation</a></li>
+</ul></li>
+<li>Optional kann man <a href="https://de.wikipedia.org/wiki/Syntaxhervorhebung" target="_blank">Syntax Highlighting</a> für
+Assemblercode in <em>vim</em>, dem Editor, den wir verwenden werden, installieren.
+
+<ul>
+<li><a href="https://github.com/Shirk/vim-gas" target="_blank">vim-gas</a></li>
+</ul></li>
+</ul>
+
+<p>Das gesamte Installationsscript findest du in <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/create-ubuntu-scripts/install-dev-tools.sh" target="_blank">install-dev-tools.sh</a>.</p>
+
+<p><em>Hinweise für das Mentorenteam bzw. Coder mit umfangreichem Basiswissen:</em></p>
+
+<ul>
+<li>Im Ordner <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/fundamentals/create-ubuntu-scripts" target="_blank">create-ubuntu-scripts</a> findet ihr ein <em>ARM-Template</em> mit zugehörigem PowerShell-Script zum automatischen Anlegen von vorkonfigurierten VMs in Azure.</li>
+<li>Es gibt auch ein <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/Dockerfile" target="_blank">Dockerfile</a>, mit dem ihr ein Docker image erstellen könnt, das die oben genannten Tools enthält (<code>docker build -t nasm .</code>). Dazu noch ein Hinweis: Wenn ihr die Übung von unten in einem Docker Container durchführen wollt, braucht ihr folgendes <em>run</em> Statement: <code>docker run -it --rm --security-opt seccomp=unconfined nasm /bin/bash</code>. Beachtet die Option <code>--security-opt seccomp=unconfined</code>. Sie ist nur für <code>gdb</code> notwendig.</li>
+</ul>
+
+<h2 id="zum-unbuntu-linux-server-verbinden">Zum Unbuntu Linux Server verbinden</h2>
+
+<ol>
+<li><p>Starte <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">PuTTY</a></p></li>
+
+<li><p>Im Feld <em>Host Name (or IP address)</em> gibst du die IP-Adresse deines Ubuntu Linux Servers ein (im CoderDojo bekommst du die IP-Adresse vom Mentorenteam).<br/>
+<img src="img/putty-ip-address.png" alt="PuTTY" /></p></li>
+
+<li><p>Melde dich mit Benutzer und Passwort an (im CoderDojo bekommst du Benutzer und Passwort vom Mentorenteam)</p></li>
+
+<li><p>Probiere, ob du den Assembler starten kannst, indem du das Kommando <code>nasm -v</code> ausführst. Du müsstest die Version von NASM angezeigt bekommen.</p></li>
+</ol>
+
+<p>Klappt alles? Dann können wir anfangen zu hacken.</p>
+
+<h2 id="erste-übung-hello-world">Erste Übung: <em>Hello World</em></h2>
+
+<p>Als erstes möchten wir das typische Kennenlernprogramm schreiben, das man in jeder Programmiersprache programmiert: <em>Hello World</em>.</p>
+
+<ol>
+<li><p>Starte den Editor <em>vim</em> mit dem Kommando <code>vim</code>. <em>vim</em> ist ein grundlegender Editor, der bei Bedarf auf jeden System installiert werden kann.</p></li>
+
+<li><p>Mache dich gemeinsam mit dem Mentorenteam vom CoderDojo mit <em>vim</em> vertraut.</p>
+
+<ul>
+<li>Bei Bedarf findest du eine gute <a href="https://wiki.ubuntuusers.de/VIM/" target="_blank">Einführung in <em>vim</em></a> im Internet</li>
+<li>Nützlich ist auch ein <a href="http://vim.rtorr.com/" target="_blank">Cheat Sheet</a></li>
+</ul></li>
+
+<li><p>Erstelle mit <em>vim</em> die Datei <code>hello.asm</code>, indem du das Kommando <code>vim hello.asm</code> eingibst.</p></li>
+
+<li><p>Gib das <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-world/hello.asm" target="_blank">Beispiel-Assemblerprogramm</a> in die Datei <code>hello.asm</code> ein.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    SECTION .data       ; DATEN
+msg:    db <span style="color:#e6db74">&#34;Hello World&#34;</span>,10 ; Diesen Text wollen wir ausgeben
+                        ; Die <span style="color:#ae81ff">10</span> am Ende bedeutet <span style="color:#e6db74">&#34;naechste Zeile&#34;</span>.
+                        ; Es handelt sich um einen ASCII-Code <span style="color:#f92672">(</span>Details
+                        ; siehe http://www.asciitable.com/<span style="color:#f92672">)</span>
+len:    equ $-msg           ; Wir berechnen die Laenge des Text, indem
+                        ; wir die Speicheradresse von msg von der
+                        ; aktuelle Speicheradresse <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;</span>$<span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span> subtrahieren
+
+    SECTION .text       ; PROGRAMMCODE
+    global main         ; Das Programm startet bei <span style="color:#e6db74">&#34;main&#34;</span>
+main:
+    mov edx, len        ; In edx tragen wir die Laenge ein.
+                        ; edx ist ein sogenanntes <span style="color:#e6db74">&#34;Register&#34;</span> <span style="color:#f92672">(</span>Details siehe
+                        ; https://de.wikipedia.org/wiki/Register_<span style="color:#f92672">(</span>Computer<span style="color:#f92672">))</span>
+    mov ecx, msg        ; In ecx die Adresse des Textes
+    mov ebx, <span style="color:#ae81ff">1</span>          ; <span style="color:#ae81ff">1</span> steht fuer <span style="color:#e6db74">&#34;stdout&#34;</span> <span style="color:#f92672">=</span> Bildschirm
+    mov eax, <span style="color:#ae81ff">4</span>          ; <span style="color:#ae81ff">4</span> steht fuer <span style="color:#e6db74">&#34;Ausgabe&#34;</span>
+    int 0x80            ; Mit Interrupt <span style="color:#ae81ff">80</span> hex rufen wir den 
+                        ; Linux Kernel auf
+
+    mov ebx, <span style="color:#ae81ff">0</span>          ; <span style="color:#ae81ff">0</span> steht fuer <span style="color:#e6db74">&#34;normal beendet&#34;</span>
+    mov eax, <span style="color:#ae81ff">1</span>          ; <span style="color:#ae81ff">1</span> steht fuer <span style="color:#e6db74">&#34;programm beenden&#34;</span>
+    int 0x80</code></pre></div></li>
+
+<li><p><a href="https://de.wikipedia.org/wiki/Compiler" target="_blank">Kompiliere</a> das Programm mit <code>nasm -f elf hello.asm</code>. Als Ergebnis bekommst du eine Datei <code>hello.o</code>.</p></li>
+
+<li><p><a href="https://de.wikipedia.org/wiki/Linker_(Computerprogramm)" target="_blank">Linke</a> das Programm mit <code>gcc -m32 -o hello hello.o</code>. Als Ergebnis bekommst du die ausführbare Datei <code>hello</code>. Faszinierend, wie klein die Datei ist, oder?</p></li>
+
+<li><p>Führe dein Programm mit <code>./hello</code> aus. Wenn *Hello World&rdquo; ausgegeben wird, hast du dein erstes Assembler-Programm geschrieben :-)</p></li>
+</ol>
+
+<p>Hier in paar wichtige Links, die dir helfen, das Programm besser zu verstehen:</p>
+
+<ul>
+<li><a href="http://www.asciitable.com/" target="_blank">ASCII-Tabelle</a></li>
+<li><a href="http://asm.sourceforge.net/" target="_blank">Seite mit Links zu Lernmaterial</a></li>
+<li><a href="http://www.lxhp.in-berlin.de/lhpsyscal.html" target="_blank">Linux System Calls</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_descriptor" target="_blank">Linux File Descriptors</a></li>
+<li><a href="http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html" target="_blank">Intel 64 and IA-32 Architectures Software Developer’s Manuals</a></li>
+</ul>
+
+<p>Während des CoderDojos kannst du das Programm mit dem Mentorenteam diskutieren.</p>
+
+<h2 id="challenge-was-macht-dieses-programm">Challenge: Was macht dieses Programm?</h2>
+
+<ol>
+<li><p>Im <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm" target="_blank">diesem Programm</a> sind bewusst keine Kommentare enthalten. Versuche herauszufinden was es macht indem du den Code untersuchst.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    SECTION .bss
+buffer: resb <span style="color:#ae81ff">64</span>
+
+    SECTION .text
+    global main
+main:
+part1:
+    mov edx, <span style="color:#ae81ff">64</span>
+    mov ecx, buffer
+    mov eax, <span style="color:#ae81ff">3</span>
+    mov ebx, <span style="color:#ae81ff">0</span>
+    int 0x80
+
+part2:
+    mov edx, eax
+    mov eax, <span style="color:#ae81ff">4</span>
+    mov ebx, <span style="color:#ae81ff">1</span>
+    int 0x80
+
+quit:
+    mov eax, <span style="color:#ae81ff">1</span>
+    int 0x80</code></pre></div></li>
+
+<li><p>Gib <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm" target="_blank">diesen Code</a> in die Datei <code>challenge.asm</code> ein, kompiliere und linke es wie im vorigen Beispiel gezeigt.</p></li>
+
+<li><p>Führe dein Programm mit <code>./challenge</code> aus. Macht es was du vermutet hast?</p></li>
+</ol>
+
+<h2 id="debugging">Debugging</h2>
+
+<p>Ein Debugger ist ein Tool, mit dem du Fehler in einem Programm suchen kannst. Er erlaubt dir, das Programm an jeder beliebigen Stelle anzuhalten und Variablen, Register, etc. anzusehen. Probieren wir den Debugger mit unserem Programm <em>challenge</em> aus.</p>
+
+<ol>
+<li><p>Kompiliere das Programm aus der vorigen Challenge mit <code>nasm -f elf -F dwarf -g challenge.asm</code>. Als Ergebnis bekommst du eine Datei <code>challenge.o</code>. Achte auf die neue Optionen <code>-F dwarf -g</code>. Dadurch fügst du der Zieldatei Daten zum leichteren Debuggen (=Fehlersuchen) hinzu. Näheres zum DWARF Format findest du auf <a href="https://en.wikipedia.org/wiki/DWARF" target="_blank">Wikipedia</a>.</p></li>
+
+<li><p>Linke das Programm mit <code>gcc -m32 -g -o challenge challenge.o</code>. Als Ergebnis bekommst du die ausführbare Datei <code>challenge</code>. Achte auf die neue Option <code>-g</code>. Sie sorgt dafür, dass die Debug-Informationen in der ausführbaren Datei erhalten bleiben.</p></li>
+
+<li><p>Starte den <em>GNU Debugger</em> mit <code>gdb challenge</code>.</p></li>
+
+<li><p>Gib das Kommando <code>list main</code> ein. Du siehst, dass der Debugger dir dein Programm anzeigen kann, obwohl er nur die ausführbare Datei kennt. <code>list</code> funktioniert auch wenn du den Quellcode in der <code>challenge.asm</code> Datei nicht hättest.</p></li>
+
+<li><p>Gib das Kommando <code>set disassembly-flavor intel</code> und anschließend das Kommando <code>disassemble main</code> ein. Wieder siehst den den Quellcode deines Programms. <code>disassemble</code> kannst du immer verwenden, auch wenn das Programm ohne Debuginformationen kompiliert wurde.</p></li>
+
+<li><p>Jetzt wollen wir zwei <em>Breakpoints</em> setzen. Breakpoints sind stellen, an denen der Debugger die Programmausführung unterbrechen soll, damit wir einen Blick auf z.B. Variablenwerte werfen können. Gib die Kommandos <code>break part1</code> und <code>break part2</code> ein. Der Debugger soll also bei <code>part1</code> und <code>part2</code> stehenbleiben.</p></li>
+
+<li><p>Lass dein Programm jetzt mit <code>run</code> laufen. Der Debugger müsste sofort bei <code>part1</code> stehenbleiben.</p></li>
+
+<li><p>Schauen wir uns die Variable <code>buffer</code> an. Mit <code>print &amp;buffer</code> geben wir die Speicheradresse von <code>buffer</code> aus. Mit <code>x /64x &amp;buffer</code> sehen wir uns 64 Bytes im Speicher als <a href="https://de.wikipedia.org/wiki/Hexadezimalsystem" target="_blank">Hexadezimalwerte</a> an, die sich an der Adresse von <code>buffer</code> befinden. Mit <code>x /64s &amp;buffer</code> wird jedes Byte in ein ASCII-Zeichen umgewandelt. Näheres zu <em>x</em> (für <em>examine</em>) findest du <a href="http://www.delorie.com/gnu/docs/gdb/gdb_56.html" target="_blank">hier</a>. In unserem Fall ist der Speicher, auf den <code>buffer</code> verweist, leer, also mit lauter Null-Werten gefüllt.</p></li>
+
+<li><p>Lassen wir das Programm jetzt mit <code>c</code> für <code>continue</code> weiterlaufen. Das Programm erwartet eine Eingabe. Gib einen beliebigen Text ein (z.B. <em>CoderDojo</em>) und drücke die Enter-Taste.</p></li>
+
+<li><p>Der Debugger bleibt beim zweiten Breakpoint (<code>part2</code>) stehen. Probiere nochmals die <code>x</code>-Kommandos von oben aus. Wie du siehst steht jetzt der eingegebene Text im Speicher an der Adresse, auf die <code>buffer</code> verweist. Noch ein Tipp dazu: Wenn du einen Text im Speicher ausgeben möchtest, kannst du auch das <code>printf</code>-Kommando probieren: <code>printf &quot;%s&quot;, &amp;buffer</code> (<a href="https://sourceware.org/gdb/onlinedocs/gdb/Output.html" target="_blank">mehr dazu</a>).</p></li>
+
+<li><p>Mit dem <code>info</code>-Kommando kannst du dir neben vielen anderen Sachen auch die Registerwerte ansehen. Probiere <code>info registers</code> und <code>info registers eax</code>.</p></li>
+
+<li><p>Würden wir das Programm mit <code>c</code> jetzt weiterlaufen lassen, würde der eingegebene Text (z.B. <em>CoderDojo</em>) am Bildschirm ausgegeben. Wir wollen aber manuell im Debugger den Text im Speicher ändern. Gib dazu das Kommando <code>p strcpy(&amp;buffer, &quot;Hacked!!!\n&quot;)</code> ein. <code>strcpy</code> steht für <em>string copy</em>, also für <em>Text kopieren</em>. Wir kopieren dementsprechend den Text <em>Hacked!!!</em> an den Speicher, auf den die Variable <code>buffer</code> zeigt.</p></li>
+
+<li><p>Überprüfe mit dem uns schon bekannten Kommando <code>x /10s &amp;buffer</code> ob das Überschreiben den Textes im Speicher geklappt hat.</p></li>
+
+<li><p>Lass das Programm mit <code>c</code> (<em>continue</em>) weiterlaufen. Es müsste <em>Hacked!!!</em> ausgeben :-) Geklappt?</p></li>
+</ol>
+
+<h2 id="schleifen">Schleifen</h2>
+
+<p>Lass uns noch einen Schritt weiter gehen. In höheren Programmiersprachen wie C#, Java, Python etc. hast du schon Schleifen kennengelernt. Der Prozessor kennt auf unterster Ebene keine solchen Schleifen. Man muss durch Sprünge (<em>Jump</em>) Schleifen nachbilden. Das wollen wir an einem Beispiel ausprobieren.</p>
+
+<p>Unsere Aufgabe ist es, ein Programm zu schreiben, bei dem &hellip;</p>
+
+<ul>
+<li>&hellip;der Benutzer einen Text eingeben kann,</li>
+<li>&hellip;der eingegebene Text im Speicher umgedreht wird (aus <em>ab</em> wird <em>ba</em>, aus <em>asdf</em> wird <em>fdsa</em>, <em>a</em> bleibt <em>a</em>)</li>
+<li>&hellip;das Ergebnis, also der umgedrehte Text, am Bildschirm ausgegeben wird.</li>
+</ul>
+
+<ol>
+<li><p>Überlege dir, wie der Algorithmus aussehen könnte. Diskutiert das am besten mit eurem Mentorenteam beim CoderDojo bevor ihr die Musterlösung im nächsten Schritt anseht.</p></li>
+
+<li><p>Wir haben dir eine <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/reverse-string/reverse.asm" target="_blank">Musterlösung</a> zusammengestellt. Gib sie ein. Du musst nicht von vorne beginnen. Wenn du das Beispiel <em>challenge.asm</em> von oben noch hast (<a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm" target="_blank">download</a>), brauchst du dieses nur erweitern. Anfang (Texteingabe) und Ende (Textausgabe) sind bei beiden Beispielen gleich.</p></li>
+
+<li><p>Kompiliere (<code>nasm -f elf -F dwarf -g reverse.asm</code>) und linke (<code>gcc -m32 -g -o reverse reverse.o</code>) das Programm. Falls Fehler erscheinen, frag deinen CoderDojo-Mentor oder deine Mentorin um Hilfe.</p></li>
+
+<li><p>Führe das Programm aus und kontrolliere, ob der Text richtig umgedreht wird.</p></li>
+
+<li><p>Schaue dir jetzt Zeile für Zeile den Code an und versuche, den Algorithmus zu verstehen. Bei Fragen wende dich an das CoderDojo Mentorenteam.</p></li>
+</ol>
+
+<h2 id="weitere-übungen">Weitere Übungen</h2>
+
+<p>Wir haben nur an der Oberfläche dessen gekratzt, was Assember alles kann. Hier Vorschläge für nächste, selbständige Übungen:</p>
+
+<ul>
+<li><p>Schreibe ein Programm, bei dem der Benutzer zwei Texte eingeben muss. Anschließend finde heraus, ob die Texte gleich sind und gib eine entsprechende Meldung aus.</p></li>
+
+<li><p>Ändere das letzte Beispiel von oben so, dass statt einem umgedrehten Text ein Text herauskommt, bei dem alle Kleinbuchstaben in Großbuchstaben umgewandelt werden.</p></li>
+</ul>
+
+<p>Viel Spaß beim Hacken!</p>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

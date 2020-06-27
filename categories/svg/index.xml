@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SVG on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/categories/svg/</link>
+    <description>Recent content in SVG on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/categories/svg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Erste Schritte mit SVG</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/</guid>
+      <description>Erste Schritte mit SVG Ziel der Übung In dieser Übung lernst du Scalable Vector Graphics (kurz SVG) kennen. Unser Ziel sind:
+ Wir wollen verstehen, was SVG ist und wofür es eingesetzt wird. Wir wollen Grafiken mit SVG in eine HTML-Seite einbauen. Wir wollen SVG mit JavaScript programmgesteuert erzeugen. Wir möchten SVG verwenden, um ein mathematisches Prinzip, die Cardanischen Kreise veranschaulichen.  Wenn du nach dieser Übung mehr über SVG lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die SVG Einführung auf w3schools.</description>
+    </item>
+    
+    <item>
+      <title>Fraktal Baum mit snap.svg</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-fraktalbaum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-fraktalbaum/</guid>
+      <description>Zeichne einen Fraktal Baum mit snap.svg Ziel der Übung Zeichne einen Baum in SVG. Starte dazu mit einer vertikalen Linie als Stamm.
+Am oberen Ende der Linie zeichne zwei weitere Linien - eine etwas nach links und eine etwas nach rechts geneigt. Die neuen beiden Linien sind etwas kürzer als die erste Linie für den Stamm. In dieser zweiten Ebene erhältst du so zwei Zweige.
+Am jeweils oberen Ende der beiden neuen Linie zweichne wieder jeweils zwei neue nach links und rechts geneigte Linien die etwas kürzer als die vorige Linie sind.</description>
+    </item>
+    
+    <item>
+      <title>Hangman</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</guid>
+      <description>Hangman Ziel der Übung Der erste Spieler gibt ein Wort ein, das vom zweiten Spieler erraten werden muss.
+Zuerst sieht der zweite Spieler nur ein Sternchen für jeden Buchstaben. Jeder erratene Buchstabe wird aufgedeckt. Für jeden falsch geratenen Buchstaben wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor der Galgen fertig ist.
+
+   Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.</description>
+    </item>
+    
+    <item>
+      <title>Labyrinth-Spiel mit Scratch und JavaScript</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</guid>
+      <description>Labyrinth-Spiel mit Scratch und JavaScript Ziel der Übung In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
+Es ist wichtig, dass du vor dieser Übung die Scratch-Variante dieses Spiels genau angesehen oder noch besser selbst programmiert hast.
+Spielbeschreibung Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit &amp;ldquo;X&amp;rdquo; markierte Ziel zu erreichen.</description>
+    </item>
+    
+    <item>
+      <title>SVG Schreibtrainer</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-schreibtrainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-schreibtrainer/</guid>
+      <description>SVG Schreibtrainer Ziel der Übung Du baust ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.
+Am oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen. Tippe den Buchstaben, bevor er den unteren Rand des Spielfelds berührt.
+Auf Wikipedia findest du eine Grafik zum Zehnfingersystem, die erklärt, welche Taste mit welchem Finger gedrückt werden soll.
+
+   Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen schreibtrainer.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Auf Ereignisse reagieren </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/">Minecraft</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/">Plugins</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#auf-ereignisse-reagieren">Auf Ereignisse reagieren</a>
+<ul>
+<li><a href="#einleitung">Einleitung</a></li>
+<li><a href="#ausführliche-anleitung">Ausführliche Anleitung</a>
+<ul>
+<li><a href="#die-listener-klasse">Die Listener-Klasse</a></li>
+<li><a href="#den-listener-registrieren">Den Listener registrieren</a></li>
+<li><a href="#auch-eine-schöne-verabschiedung">Auch eine schöne Verabschiedung</a></li>
+<li><a href="#chat-messages-der-ops-hervorheben">Chat-Messages der ops hervorheben</a></li>
+</ul></li>
+<li><a href="#kurzversion-für-profis">Kurzversion für Profis</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="auf-ereignisse-reagieren">Auf Ereignisse reagieren</h1>
+
+<h2 id="einleitung">Einleitung</h2>
+
+<p>Bisher haben wir in unseren Plugins immer etwas gemacht, sobald vom Spieler oder auch in der Konsole ein Kommando eingegeben wurde. Das ist ja schon ganz schön, aber manchmal ist es auch notwendig, dass wir auf Ereignisse reagieren. Ein Ereignis ist, wenn irgendetwas im Spiel passiert aber eben kein Kommando eingegeben wurde. Beispiel sind</p>
+
+<ul>
+<li>Der Spieler tritt einem Server bei</li>
+<li>Es werden Chat-Nachrichten versendet</li>
+<li>Es wird irgendetwas zerstört</li>
+<li>Es explodiert gerade ein Block</li>
+<li>Wenn ein Sign geändert wird</li>
+<li>&hellip;</li>
+</ul>
+
+<p>Du kannst unter <code>org.bukkit.event.*</code> die Liste aller Events ansehen. Wir fangen nun mit einem einfachen Event an. Wenn ein neuer Spieler deinem Server beitritt wollen wir ihn freundlich begrüßen, wenn er ihn verlässt soll er freundlich verabschiedet werden. Im folgenden Screenshot siehst du die Extrabegrüßung, die dein Server dann darstellen wird.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/welcome-listener/img/WelcomeMsg.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Außerdem werden wir, wenn die Spieler miteinander chatten, die Nachrichten der ops in einer speziellen Farbe darstellen. Da diese Listender sehr gut zum Thema Begrüßen passt, kannst du sie zu deinem ersten Plugin (das mit dem <code>/sayhello</code>) dazugeben oder auch ein neues Projekt beginnen, wie du willst.</p>
+
+<h2 id="ausführliche-anleitung">Ausführliche Anleitung</h2>
+
+<h3 id="die-listener-klasse">Die Listener-Klasse</h3>
+
+<p>Wenn du dein erstes Plugin nicht erweitern willst, dann musst du wieder ein neues Projekt erstellen, ein neues Package und darin eine neue Klasse (<code>com.bajupa.welcome.Welcome</code>). Die Kurzversion, wie du dein Projekt erstellst, findest du auch <a href="/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html">hier</a>. Gut, jetzt sind wir bereit, unseren ersten Listener einzubauen.</p>
+
+<p>Ein wichtiger Punkt beim Programmieren ist Ordnung zu halten. Das heißt, dass wir unser Programm so ordnen, dass nur zusammengehörige Dinge in einer Klasse sind.  Daher legen wir für den Listener eine neue Klasse an. Das kannst du ja schon gut. Ich schlage vor, dass wir die neue Klasse <code>JoinAndLeaveListener</code> nenne, weil wir da auf die beiden Events, wenn ein Spieler unserem Server beitritt und wenn ein Spieler unseren Server verlässt, reagieren wollen.</p>
+
+<p>So ähnlich wie bei der Plugin-Klasse, welche eine Erweiterung von <code>JavaPlugin</code> ist, müssen wir einen Listener auch von einer <em>Basisklasse</em> ableiten. Das sieht dann folgendermaßen aus</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JoinAndLeaveListener</span> <span style="color:#66d9ef">implements</span> Listener <span style="color:#f92672">{</span>
+
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Wenn du genau hinsiehst, merkst du, dass hier statt <code>extends</code> das Wörtchen <code>implements</code> steht. Sehr grob</p>
+
+<p>In Listener-Klassen kannst du nun einen oder mehrere sog. <em>EventHandler</em> reinschreiben. Diese EventHandler sind eigentlich ganz normale Methoden, die halt nicht nach Eintippen eines Kommandos aufgerufen, sondern sobald ein Ereignis (auf Englisch eben Event) eintritt.</p>
+
+<p>Also wollen wir unseren ersten EventHandler implementieren. Leider haben wir hier keine so tolle Unterstützung von NetBeans, dass wir einfach <strong>Source</strong> und <strong>Insert Code &hellip;</strong> auswählen könne. Diesmal müssen wir das ganze selber machen.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JoinAndLeaveListener</span> <span style="color:#66d9ef">implements</span> Listener <span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@EventHandler</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onJoin</span><span style="color:#f92672">(</span>PlayerJoinEvent event<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Player player <span style="color:#f92672">=</span> event<span style="color:#f92672">.</span><span style="color:#a6e22e">getPlayer</span><span style="color:#f92672">();</span>
+        player<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Dear &#34;</span> <span style="color:#f92672">+</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, welcome to our server!&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Als erstes fällt auf, dass vor der Methode die <em>Annotation</em> <code>@EventHandler</code> steht. Das ist das &ldquo;Erkennungsmerkmal&rdquo;, dass diese Methode im Falle eines Ereignisses aufgerufen wird. Anschließend kommt die Methode, welche mit <code>public void</code> beginnt. <code>void</code> heißt, dass Event Handler keinen Wert zurückgeben (vergleiche das mit dem <code>boolean</code>, der von der Methode <code>onCommand</code> zurückgegeben wird). Daran anschließend kommt der Name der Methode. Bei einem Event Handler kannst du dir den Namen (ähnlich wie bei Variablen und Parameter) aussuchen.</p>
+
+<p>Nun kommen die Parameter und hier wird es wieder spannend. Wie du siehst, hat ein Event Handler nur einen Parameter und der ist dafür verantwortlich, dass der Event Handler beim richtigen Event aufgerufen wird. Für den Fall, dass ein Spieler einem Server beitritt gibt es den <code>PlayerJoinEvent</code> und daher wählen wir genau diesen Typ für den Parameter aus. Den Namen des Parameters darfst du dir dafür wieder selber aussuchen.</p>
+
+<p>Zwischen den geschwungenen Klammern schreibst du jetzt rein, was zu passieren hat. In der ersten Zeile holen wir uns den Spieler, der gerade dem Server beitritt. Der wird sozusagen im Event mitgeliefert. Du kannst dir das so vorstellen: Wenn ein Ereignis auf dem Server eintritt, baut der Server ein Event-Objekt (also eine Variable mit dem Datentyp, der zu dem Event passt) zusammen und schickt dieses Objekt auf die Reise (so ähnlich wie eine Rohrpost, in der alle möglichen Informationen reingesteckt sind). Alle Event Handler, die den dazu passenden Parameter deklariert haben, bekommen diese Rohrpost und können die darin enthaltenen Informationen auslesen.</p>
+
+<p>Also mit der Methode <code>getPlayer</code> des <code>PlayerJoinEvent</code>s kannst du den Spieler, der gerade beitritt auslesen. Wir speichern uns den Spieler in eine Variable <code>player</code> und dann holen wir uns in der nächsten Zeile von <code>player</code> den Namen mit der Methode <code>getName</code>. Das kennst du aber schon aus dem ersten Plugin.</p>
+
+<h3 id="den-listener-registrieren">Den Listener registrieren</h3>
+
+<p>Anders als bei der Methode <code>onCommand</code>, die es nur einmal pro Plugin gibt, kann es mehrere Listener zu verschiedenen oder auch gleichen Events geben und das ganze noch dazu in verschiedenen Plugins. Daher müssen wir Listener beim Server anmelden (registrieren), damit sie dann im Fall der Fälle auch wirklich aufgerufen werden. Dieses Anmelden machen wir in der Plugin-Klasse. Die Methode <code>onCommand</code> wäre natürlich ein möglicher Platz, das zu machen. Damit müssten wir aber ein Kommando einführen, dass irgendjemand aufrufen muss, um deine Listener zu registrieren. Das wäre aber ein wenig unbequem, wenn der Server-Administrator immer nach dem Starten per Hand die ganzen Listener aller Plugins registrieren müsste.</p>
+
+<p>Besser ist es, wenn das automatisch geht und dafür werden wir in der Plugin-Klasse eine neue Methode einführen. Dazu holst du dir als erstes im Editor die Klasse Welcome (oder wie auch immer deine Plugin-Klasse heißt) in den Vordergrund, dann setzt du den Cursor in die Klasse und wählst wieder <strong>Source</strong> und dann <strong>Insert Code&hellip;</strong>. Genauso wie bei <code>onCommand</code> wählen wir jetzt den Punkt <strong>Override Method&hellip;</strong> aus. Das darauffolgenden Fenster sieht dann so aus:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/welcome-listener/img/InsertOnEnable.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Wie in der Abbildung vorgegeben, wählst du <strong>onEnable()</strong> aus und drückst auf <strong>Generate</strong>. Damit sollte deine Klasse ca. so aussehen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Welcome</span> <span style="color:#66d9ef">extends</span> JavaPlugin <span style="color:#f92672">{</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onEnable</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onEnable</span><span style="color:#f92672">();</span> <span style="color:#75715e">//To change body of generated methods, choose Tools | Templates.
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+    
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p><code>onCommand</code> muss in deiner Klasse nicht da sein, je nachdem, ob du für diese Episode ein neues Projekt angefangen hast oder nicht. Die Methode <code>onEnable</code> eines Plugins wird dann aufgerufen, wenn das Plugin geladen wird. Das ist meist nach dem (Neu-)Starten des Servers oder nachdem auf der Konsole das Kommando <code>reload</code> eingegeben wurde. Damit ist das der ideale Platz um unseren Listener zu registrieren. Bevor du deinen Code reinschreibst, löscht du am besten den Template-Code mit <code>super.onEnable(); ...</code> damit da ordentlich Platz ist.</p>
+
+<p>Der Listener muss beim Server registriert werden und der bequeme Server delegiert das ganze gleich noch an den sog. <code>PluginManager</code>, aber alles der Reihe nach. Um auf den Server zuzugreifen, rufst du die Methode <code>getServer</code> auf (die gibts praktischerweise direkt im Plugin), dann rufst du vom Server die Methode <code>getPluginManager</code> auf und der wiederum hat die Methode <code>registerEvents</code>. Du kannst die Aufruffolge im nächsten Bild ansehen.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/welcome-listener/img/SelectRegisterEvents.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Du siehst, dass diese Methode zwei Parameter verlangt, nämlich einen Listener (was wir ja erwartet haben) und aber auch ein Plugin, dem dieser Listener zuzuordnen ist. Also los gehts: Den Listener haben wir ja gerade programmiert, den müssen wir nur noch erzeugen (das passiert mit dem Wörtchen <code>new</code>) und das Plugin, das gibt es ja bereits (in dieser Klasse befinden wir uns gerade) und wir müssen nur darauf verweisen (das passiert mit dem Wörtchen <code>this</code>). Zum Schluss sollte deine Methode genau so aussehen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onEnable</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    getServer<span style="color:#f92672">().</span><span style="color:#a6e22e">getPluginManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">registerEvents</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> JoinAndLeaveListener<span style="color:#f92672">(),</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<h3 id="auch-eine-schöne-verabschiedung">Auch eine schöne Verabschiedung</h3>
+
+<p>Damit wir das mit den Event Handlern gleich ein wenig üben, schlage ich vor, dass wir noch einen zweiten Handler zur Verabschiedung, also wenn ein Spieler den Server verlässt, hinzufügen. Der Event heißt <code>PlayerQuitEvent</code>. Damit sollte aber genug gesagt sein und den Rest solltest du schon ganz allein hinbekommen. Die Auflösung gibts in der nächsten Episode.</p>
+
+<h3 id="chat-messages-der-ops-hervorheben">Chat-Messages der ops hervorheben</h3>
+
+<p>Wenn du die Verabschiedung auch schon fertig hast, probier doch noch folgendes: Wir wollen beim Chatten die ops besonders hervorheben, weil sie ja auch soooo superwichtig sind. Das heißt, dass Chat-Nachrichten normaler Spiele, wie üblich in der Farbe weiß dargestellt werden. Wenn aber ein op eine Nachricht sendet, soll diese in einer anderen Farbe (wie zum Beispiel im folgenden Screenshot) golden dargestellt werden.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/welcome-listener/img/OpMessage.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Natürlich bekommst du von mir noch ein paar sachdienliche Hinweise. Den Rest bekommst du dann sicherlich schon ganz gut alleine hin. Also, was brauchst du?</p>
+
+<ol>
+<li>Die Klasse: Da dieser Handler nichts mehr mit den Begrüßungen zu tun hat, find ich es gut, den Handler in eine neue Klasse zu geben. Ich schlage vor, du legst eine neue Klasse namens <code>ChatListener</code> an. Den Event Handler nennen wir <code>onChatMessageIsSent</code> würde ich vorschlagen.</li>
+<li>Der Datentyp für den Parameter des Event Handlers: <code>AsyncPlayerChatEvent</code></li>
+<li>Die Nachricht, die der Spieler eingegeben hat, auslesen: <code>AsyncPlayerChatEvent</code> hat dazu die Methode <code>getMessage</code></li>
+<li>Die Nachricht golden einfärben: Dazu gibts den Typ <code>ChatColor</code>. Der stellt verschiedene Farbwerte und Schriftveränderungen zur Verfügung, die man einfach vor einen String kleben kann. Damit veränderst du die Darstellung des Strings. Beispiel: <code>ChatColor.GOLD + &quot;Hui&quot;</code> stellt &ldquo;Hui&rdquo; in goldener Farbe dar. <code>ChatColor.GOLD + &quot;&quot; + ChatColor.BOLD + &quot;Hui&quot;</code> stellt &ldquo;Hui&rdquo; fett und in der Farbe Gold dar. Beachte dabei, dass die &ldquo;echte Farbe&rdquo; zuerst kommen muss und dann erst die sonstigen Dekorationen wie <strong>bold</strong> order <em>italic</em>. Weiters musst du aufpassen, dass zwischen den <code>ChatColor</code>-Angaben immer ein leerer String (also <code>&quot;&quot;</code>) stehen muss. Sieh dir die verschiedenen Farben, die <code>ChatColor</code> zur Verfügung stellt, an und such dir eine aus.</li>
+<li>Die Nachricht dann setzen: Achtung, die veränderte Nachricht &ldquo;händisch&rdquo; via sendMessage zu versenden würde nix bringen, da das ja nur an einen Spieler geht. Du müsstest dir ja alle Spieler vom Server holen und jedem einzelnen via <code>sendMessage</code> die Nachricht schicken. Das geht aber einfacher: Das Event hat auch eine Methode <code>setMessage</code>, mit der du die &ldquo;Originalnachricht&rdquo; durch die golden eingefärbte Nachricht ersetzen kannst und das Versenden der Message überlässt du wieder dem Server, der das ja sowieso machen wollte.</li>
+<li>Da wir diesen Handler in eine eigene Listener-Klasse gegeben haben, musst du den im <code>onEnable</code> registrieren: <code>getServer().getPluginManager().registerEvents(new ChatListener(), this);</code></li>
+</ol>
+
+<p>Eine Sache find ich noch wichtig, dass du dir überlegst und du verstehst. Wenn ein Ereignis eintritt, macht der Bukkit-Server folgendes:</p>
+
+<ol>
+<li>Er baut ein Event-Objekt (die Rohrpost), das den Event beschreibt</li>
+<li>Er schickt die Rohrpost an alle Plugins, diese können das Event-Objekt auslesen, verändern und was weiß ich noch alles machen</li>
+<li>Sobald das letzte Plugin das Event-Objekt gehabt hat, führt der Server das Event endlich aus. Dazu nimmt er aber das von den Plugins veränderte Event-Objekt her.</li>
+</ol>
+
+<p>So, du hast nun einen großen Schritt gemacht und gelernt, wie du auf Ereignisse reagieren kannst. Damit stehen dir schon viele Möglichkeiten für deine eigenen Plugin-Ideen offen. In der nächsten Episode zeige ich dir noch eine Anwendung eines Listeners, indem wir unser Getafix-Plugin um einen Zaubertrank erweitern, der die Spielerin, die ihn getrunken hat, unbesiegbar macht.</p>
+
+<p>Wenn du aber eigene Ideen hast, probier sie aus, besprich sie mit deinen MentorInnen und bleib hartnäckig dran, dann wird&rsquo;s bestimmt etwas.</p>
+
+<h2 id="kurzversion-für-profis">Kurzversion für Profis</h2>
+
+<ol>
+<li>Erstelle ein neues Projekt mit dem Namen <code>ListenerPlugin</code>, eine Klasse mit dem Namen <code>Welcome</code>, eine Klasse mit dem Namen <code>JoinAndLeaveListener</code> sowie das <code>plugin.yml</code> (siehe auch <a href="/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html">hier</a>)</li>
+
+<li><p>Implementiere die Klasse <code>JoinAndLeaveListener</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JoinAndLeaveListener</span> <span style="color:#66d9ef">implements</span> Listener <span style="color:#f92672">{</span>
+			
+	<span style="color:#a6e22e">@EventHandler</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onJoin</span><span style="color:#f92672">(</span>PlayerJoinEvent event<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			Player player <span style="color:#f92672">=</span> event<span style="color:#f92672">.</span><span style="color:#a6e22e">getPlayer</span><span style="color:#f92672">();</span>
+			player<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Dear &#34;</span> <span style="color:#f92672">+</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, welcome to our server!&#34;</span><span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+	
+<span style="color:#f92672">}</span></code></pre></div></li>
+
+<li><p>Registriere den Listener, indem du die Klasse <code>Welcome</code> implementierst:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Welcome</span> <span style="color:#66d9ef">extends</span> JavaPlugin <span style="color:#f92672">{</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onEnable</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		getServer<span style="color:#f92672">().</span><span style="color:#a6e22e">getPluginManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">registerEvents</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> JoinAndLeaveListener<span style="color:#f92672">(),</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></li>
+
+<li><p>Füge einen weiteren <code>EventHandler</code> zur Klasse <code>JoinAndLeaveListener</code>, und zwar einen <code>PlayerQuitEvent</code> mit einer dementsprechenden Nachricht.</p></li>
+
+<li><p>Füge eine weitere Klasse namens <code>ChatListener</code> dazu und stelle sicher, dass nach dem Klassennamen <code>implements Listener</code> steht.</p></li>
+
+<li><p>Füge die Methode <code>onChatMessageIsSent</code> hinzu, mit dem <code>event</code> Parameter vom Typ <code>AsyncPlayerChatEvent</code>, und gib über die Methode die Annotation <code>@EventHandler</code>.</p></li>
+
+<li><p>Lese die Nachricht, die der Spieler eingegeben hat, <code>AsyncPlayerChatEvent</code> hat dazu die Methode <code>getMessage</code></p></li>
+
+<li><p>Färbe die Nachricht golden ein (<code>ChatColor.GOLD + &quot;&quot; + event.getMessage()</code>) und schicke sie mit <code>sendMessage()</code> wieder an den Spieler zurück.</p></li>
+
+<li><p>Da wir diesen Handler in eine eigene Listener-Klasse gegeben haben, musst du den im <code>onEnable</code> in der Klasse <code>Welcome</code> registrieren: <code>getServer().getPluginManager().registerEvents(new ChatListener(), this);</code></p></li>
+
+<li><p>Baue das Paket: In Icon Leiste auf den Hammer <strong>Build Project (F11)</strong> klicken</p></li>
+
+<li><p>Kopiere bzw. ersetze das fertige jar File aus <code>dist</code> (siehe Pfad im <strong>Output</strong>) in das Minecraft Server Plugin-Verzeichnis.</p></li>
+
+<li><p>Starte den Server  oder gib <code>reload</code> in die Server Konsole ein.</p></li>
+
+<li><p>Teste das Plugin: wenn du den Server betrittst bzw. verlässt, sollen deine Nachrichten angezeigt werden. Wenn du eine Nachricht als Operator schickst, soll diese golden angezeigt werden.</p></li>
+</ol>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Lokaler Minecraft-Server mit Scriptcraft </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/">Minecraft</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/">Server</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#minecraft-server-für-scriptcraft">Minecraft Server für ScriptCraft</a>
+<ul>
+<li><a href="#einleitung">Einleitung</a></li>
+<li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
+<li><a href="#basisimage">Basisimage</a></li>
+<li><a href="#images-für-spielszenarien">Images für Spielszenarien</a></li>
+<li><a href="#ressourcen-zum-thema-scriptcraft">Ressourcen zum Thema Scriptcraft</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="minecraft-server-für-scriptcraft">Minecraft Server für ScriptCraft</h1>
+
+<p><strong>Wichtiger Hinweis: Diese Anleitung ist für erfahrene Coder, Mentorinnen und Mentoren.</strong> Wenn du im generellen Umgang mit Linux-Servern, Docker, JRE etc. noch unerfahren bist, bitte eine Mentorin aus dem CoderDojo, den Minecraft-Server für dich herzurichten. Später kannst du dich selbst am Installieren eines MineCraft-Servers wie hier beschrieben heran wagen.</p>
+
+<h2 id="einleitung">Einleitung</h2>
+
+<p>Ziel dieser Anleitung ist das Betreiben eines Minecraft Servers auf Basis von <a href="https://www.spigotmc.org/wiki/about-spigot/" target="_blank">Spigot</a> mit installiertem <a href="http://scriptcraftjs.org/" target="_blank">Scriptcraft</a> Mod zum Programmieren von <a href="https://minecraft.net/de/" target="_blank">Minecraft</a> mit JavaScript.</p>
+
+<p>Um möglichst wenig installieren zu müssen und mit wenig Ressourcen viele Server für ein CoderDojo betreiben zu können, verwenden wir <a href="https://www.docker.com/" target="_blank">Docker</a> zum Isolieren der Serverinstanzen.</p>
+
+<h2 id="systemvoraussetzungen">Systemvoraussetzungen</h2>
+
+<p>Man braucht <a href="https://www.docker.com/" target="_blank">Docker</a> für diese Anleitung:</p>
+
+<ul>
+<li>Unter Windows kann <a href="https://docs.docker.com/engine/installation/windows/#/docker-for-windows" target="_blank">Docker for Windows</a> verwendet werden.</li>
+<li>Unter MacOS kann <a href="https://docs.docker.com/engine/installation/mac/#/docker-for-mac" target="_blank">Docker for Mac</a> verwendet werden.</li>
+<li>Unter Linux kann Docker direkt verwendet werden (z.B. <a href="https://docs.docker.com/engine/installation/linux/ubuntulinux/" target="_blank">Ubuntu</a>)</li>
+</ul>
+
+<p>Falls kein passender Rechner lokal zur Verfügung steht, ist die Verwendung eines Docker-Servers in der Cloud (z.B. <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/docker-simple-on-ubuntu" target="_blank">Docker auf Azure</a>) empfehlenswert.</p>
+
+<h2 id="basisimage">Basisimage</h2>
+
+<p>Als Basis wurde ein <a href="base-image/Dockerfile" target="_blank">Dockerfile für Spigot mit Scriptcraft</a> erstellt. Es kann lokal wie folgt in ein Docker Image gebaut werden:</p>
+
+<ul>
+<li>Speichern des Dockerfiles in einem leeren Verzeichnis</li>
+<li><code>docker build -t spigotmc .</code> (kann je nach bereits installierten Images und Internetanbindung etwas dauern)</li>
+</ul>
+
+<p>In <code>docker images</code> müsste jetzt das neue Image <code>spigotmc</code> zu sehen sein.</p>
+
+<h2 id="images-für-spielszenarien">Images für Spielszenarien</h2>
+
+<p>Aufbauend auf dem Basisimage können jetzt individuelle Images für verschiedene Spielszenarien erstellt werden. Für diese Anleitung haben wir ein <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/uebungsanleitungen/programmieren/minecraft/plugins/07_spigot_scriptcraft_docker/flat-and-empty-world/Dockerfile" target="_blank">Dockerfile für eine komplett flache Welt</a> erstellt. Hier ein paar Hinweise dazu:</p>
+
+<ul>
+<li>Das Dockerfile kopiert eine <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/uebungsanleitungen/programmieren/minecraft/plugins/07_spigot_scriptcraft_docker/flat-and-empty-world/server.properties" target="_blank">server.properties</a>-Datei. Sie kann an die jeweiligen Bedürfnisse des Spielszenarios angepasst werden. Mehr zu <em>server.properties</em> findet man <a href="http://minecraft-de.gamepedia.com/Server.properties" target="_blank">im Minecraft Wiki</a>.</li>
+<li>Das Dockerfile kopiert eine <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/uebungsanleitungen/programmieren/minecraft/plugins/07_spigot_scriptcraft_docker/flat-and-empty-world/server.properties" target="_blank">ops.json</a>-Datei. Man kann in ihr Benutzer speichern, die von Haus aus <em>Operators</em> sein sollen. Mehr dazu findet man <a href="http://minecraft-de.gamepedia.com/Server.properties#ops.json" target="_blank">im  Minecraft Wiki</a>.</li>
+</ul>
+
+<p>Ein Dockerfile für ein Spielsenario kann lokal wie folgt in ein Docker Image gebaut und gestartet werden:</p>
+
+<ul>
+<li>Speichern des Dockerfiles mit <em>server.properties</em> und <em>ops.json</em> in einem leeren Verzeichnis</li>
+<li>Image bauen: <code>docker build -t mc-flat-empty .</code> (geht sehr schnell)</li>
+<li>Container starten: <code>docker run -it --rm -p 25565:25565 --name mc-flat-empty -v C:\scriptcraft\flat-and-empty-world\plugins:/bin/spigotmc/scriptcraft/plugins/rainer mc-flat-empty</code>
+
+<ul>
+<li><code>-it --rm</code> sorgt dafür, dass der Container interaktiv gestartet wird (Console kann beobachtet werden) und beim Beenden des Servers automatisch gelöscht wird.</li>
+<li><code>p 25565:25565</code> gibt den Minecraft Standardport am Docker Host frei. Will man mehrere Minecraft Server betreiben, kann man den Port z.B. mit <code>-p 25566:25565</code> auf <em>25566</em> ändern.</li>
+<li><code>--name ...</code> vergibt einen Namen für den Container.</li>
+<li><code>-v &lt;local-dir&gt;:/bin/spigotmc/scriptcraft/plugins/&lt;some-folder-name&gt;</code> mapped ein lokales Verzeichnis mit in JavaScript geschriebenen Mods in den Minecraft Container.</li>
+<li><code>mc-flat-empty</code> ist der Name des oben erstellten Docker Image für das Spielsenario.</li>
+</ul></li>
+</ul>
+
+<p>Hat man alles richtig gemacht, sieht das so aus:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">C:<span style="color:#ae81ff">\t</span>emp<span style="color:#ae81ff">\s</span>criptcraft<span style="color:#ae81ff">\f</span>lat-and-empty-world&gt;docker build -t mc-flat-empty .
+Sending build context to Docker daemon 8.704 kB
+Step <span style="color:#ae81ff">1</span> : FROM rstropek/spigotmc
+ ---&gt; 4a6020e36757
+Step <span style="color:#ae81ff">2</span> : COPY server.properties /bin/spigotmc
+ ---&gt; Using cache
+ ---&gt; 925c920abd91
+Step <span style="color:#ae81ff">3</span> : COPY ops.json /bin/spigotmc
+ ---&gt; Using cache
+ ---&gt; 414acf0ebf53
+Step <span style="color:#ae81ff">4</span> : CMD /bin/spigotmc/start.sh
+ ---&gt; Using cache
+ ---&gt; f4d15115f8fe
+Successfully built f4d15115f8fe
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have <span style="color:#e6db74">&#39;-rwxr-xr-x&#39;</span> permissions. It is recommended to double check and reset permissions <span style="color:#66d9ef">for</span> sensitive files and directories.
+
+C:<span style="color:#ae81ff">\t</span>emp<span style="color:#ae81ff">\s</span>criptcraft<span style="color:#ae81ff">\f</span>lat-and-empty-world&gt;docker run -it --rm -p 25565:25565 --name mc-flat-empty -v C:<span style="color:#ae81ff">\s</span>criptcraft<span style="color:#ae81ff">\f</span>lat-and-empty-world<span style="color:#ae81ff">\p</span>lugins:/bin/spigotmc/scriptcraft/plugins/rainer mc-flat-empty
+Loading libraries, please wait...
+<span style="color:#f92672">[</span>07:42:49 INFO<span style="color:#f92672">]</span>: Starting minecraft server version 1.10.2
+<span style="color:#f92672">[</span>07:42:49 INFO<span style="color:#f92672">]</span>: Loading properties
+<span style="color:#f92672">[</span>07:42:49 INFO<span style="color:#f92672">]</span>: Default game type: CREATIVE
+<span style="color:#f92672">[</span>07:42:49 INFO<span style="color:#f92672">]</span>: This server is running CraftBukkit version git-Spigot-72c2605-709783c <span style="color:#f92672">(</span>MC: 1.10.2<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>Implementing API version 1.10.2-R0.1-SNAPSHOT<span style="color:#f92672">)</span>
+...
+<span style="color:#f92672">[</span>07:42:57 INFO<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> Unzipping /bin/spigotmc/scriptcraft/modules/watcher.js <span style="color:#f92672">(</span>NE<span style="color:#f92672">)</span>
+<span style="color:#f92672">[</span>07:42:58 WARN<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> cow-clicker minigame is not yet supported in CanaryMod and Craftbukkit
+<span style="color:#f92672">[</span>07:42:59 WARN<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> Legacy ScriptCraft directory /bin/spigotmc/plugins/scriptcraft was found. This directory is no longer used.
+<span style="color:#f92672">[</span>07:42:59 WARN<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> Please put plugins in the /bin/spigotmc/scriptcraft/plugins directory
+<span style="color:#f92672">[</span>07:42:59 INFO<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> Please note that the working directory <span style="color:#66d9ef">for</span> scriptcraft v3.2.0-2016-03-19 is /bin/spigotmc/scriptcraft
+<span style="color:#f92672">[</span>07:42:59 INFO<span style="color:#f92672">]</span>: Done <span style="color:#f92672">(</span>9.687s<span style="color:#f92672">)</span>! For help, type <span style="color:#e6db74">&#34;help&#34;</span> or <span style="color:#e6db74">&#34;?&#34;</span>
+<span style="color:#f92672">[</span>07:42:59 INFO<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> js-patch setTimeout<span style="color:#f92672">()</span> test complete
+&gt;</code></pre></div>
+<p>Jetzt kann man sich zum Server in Minecraft verbinden:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/scriptcraft-installieren/img/join-server.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="ressourcen-zum-thema-scriptcraft">Ressourcen zum Thema Scriptcraft</h2>
+
+<ul>
+<li><a href="http://scriptcraftjs.org/" target="_blank">Scriptcraft Homepage</a></li>
+<li><a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/YoungPersonsGuideToProgrammingMinecraft.md" target="_blank">Scriptcraft Guide</a></li>
+<li><a href="https://github.com/walterhiggins/Writing-Minecraft-Plugins" target="_blank">Beispiele aus dem Scriptcraft Buch</a></li>
+<li><a href="https://github.com/walterhiggins/ScriptCraft" target="_blank">Scriptcraft Source auf GitHub</a></li>
+</ul>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

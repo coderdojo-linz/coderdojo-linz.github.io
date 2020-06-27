@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Verschlüsseln mit JavaScript </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/">Web</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#verschlüsseln-mit-javascript">Verschlüsseln mit JavaScript</a>
+<ul>
+<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+<li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
+<li><a href="#die-verschlüsselung">Die Verschlüsselung</a></li>
+<li><a href="#übung-auf-papier">Übung auf Papier</a></li>
+<li><a href="#grundgerüst-für-das-programm">Grundgerüst für das Programm</a></li>
+<li><a href="#verschlüsseln">Verschlüsseln</a></li>
+<li><a href="#verschlüsseln-1">Verschlüsseln</a></li>
+<li><a href="#kompletter-code">Kompletter Code</a></li>
+<li><a href="#weitere-übungen">Weitere Übungen</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="verschlüsseln-mit-javascript">Verschlüsseln mit JavaScript</h1>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/caesar-verschluesseln/img/ergebnis-ausgabe.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="ziel-der-übung">Ziel der Übung</h2>
+
+<p>In dieser Übung lernst du ein einfaches Verschlüsselungsverfahren kennen.</p>
+
+<p>Technisch lernst du einige Dinge über JavaScript und Node.js:</p>
+
+<ul>
+<li>Wie programmiert man ein Kommandozeilenprogramm mit JavaScript?</li>
+<li>Was sind <a href="https://de.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a> Codes?</li>
+<li>Wie arbeitet man in JavaScript mit Zeichenketten?</li>
+</ul>
+
+<p><strong>Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!</strong> Falls JavaScript, Node.js und <a href="https://code.visualstudio.com/" title="Homepage von Visual Studio Code" target="_blank">Visual Studio Code</a> für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsbeispiele zu empfehlen:</p>
+
+<ul>
+<li>JavaScript Grundlagen: <a href="/trainingsanleitungen/web/javascript-zahlen-raten.html">Zahlen raten</a></li>
+<li>Node.js Grundlagen: <a href="/trainingsanleitungen/web/nodejs-webserver.html">Ein Webserver mit Node.js</a></li>
+</ul>
+
+<h2 id="systemvoraussetzungen">Systemvoraussetzungen</h2>
+
+<p>Du brauchst für diese Übung die gleichen Tools, die schon in der oben genannten Übung <a href="/trainingsanleitungen/web/nodejs-webserver.html">Ein Webserver mit Node.js</a> erwähnt sind. Falls du die Übung schon gemacht hast, hast du schon alle notwendigen Tools. Falls nicht, schau dort bitte nach.</p>
+
+<p>Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alle verwendeten Tools sind plattformunabhängig.</p>
+
+<h2 id="die-verschlüsselung">Die Verschlüsselung</h2>
+
+<p>Bevor wir zu programmieren beginnen können, müssen wir uns überlegen, wie wir verschlüsseln möchten. Dafür nehmen wir uns ein Beispiel an einer berühmten Person, dem römischen Feldherrn <a href="https://de.wikipedia.org/wiki/Julius_Caesar" target="_blank">Gaius Julius Caesar</a>. Er hat die nach ihm benannte <a href="https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung" target="_blank">Caesar Verschlüsselung</a> erfunden.</p>
+
+<p>Bei dieser Verschlüsselung wird jeder Buchstabe der zu verschlüsselnden Nachricht (<em>Klartext</em> genannt) um eine bestimmte Anzahl an Buchstaben im Alphabet &ldquo;nach rechts&rdquo; verschoben. Hier ein Beispiel: Nehmen wir an, ihr möchtet den Text <em>GEHEIM</em> verschlüsseln. Ihr einigt euch mit dem Empfänger der verschlüsselten Nachricht auf den Schlüssel <em>2</em>. Daher müssen wir jeden Buchstaben um zwei Stellen im Alphabet verschieben, um zu verschlüsseln:</p>
+
+<ul>
+<li>Aus <em>G</em> wird <em>I</em></li>
+<li>Aus <em>E</em> wird <em>G</em></li>
+<li>Aus <em>H</em> wird <em>J</em></li>
+<li>Aus <em>E</em> wird <em>G</em></li>
+<li>Aus <em>I</em> wird <em>K</em></li>
+<li>Aus <em>M</em> wird <em>O</em></li>
+</ul>
+
+<p>Zum Entschlüsseln verschiebt der Empfänger einfach um zwei Stellen nach links. Jemand, der lauschen möchte, erfährt nur <em>IGJGKO</em> und kann damit nichts anfangen.</p>
+
+<p>Aufpassen muss man, wenn man durch die Verschiebung über das Ende des Alphabets hinaus kommt. Will man zum Beispiel <em>X</em> um drei Stellen verschieben, gehen einem die Buchstaben aus. Die Lösung ist, dass man einfach wieder bei <em>A</em> beginnt. Aus <em>X</em> wird also <em>A</em>. Hier siehst du das Prinzip grafisch dargestellt (Quelle: <a href="https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung" target="_blank">Wikipedia</a>):</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/caesar-verschluesseln/img/caesar-wikipedia.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="übung-auf-papier">Übung auf Papier</h2>
+
+<p>Bevor wir programmieren, probieren wir die Verschlüsselung manuell aus.</p>
+
+<ol>
+<li><p>Suche dir jemanden, der die Übung mit dir macht. Im CoderDojo findest du sicher andere Coder, die mit dir diese Übung machen werden. Falls nicht hilft eine Mentorin oder ein Mentor gerne weiter.</p></li>
+
+<li><p>Nimm dir Stift und Papier.</p></li>
+
+<li><p>Denk dir ein Wort aus, das du verschlüsseln möchtest. Es könnte z.B. <em>AKTEX</em> sein. Du kannst aber auch ein eigenes Wort nehmen. Schreibe dieses Ausgangswort auf ein Blatt Papier.</p></li>
+
+<li><p>Unser Schlüssel ist 5. Gehe daher dein Ausgangswort (hier <em>AKTEX</em>) durch und verschlüssle Zeichen für Zeichen, indem du jedes Zeichen um <em>fünf Stellen nach rechts</em> verschiebst. Schreibe das Ergebnis auf ein zweites Blatt.</p></li>
+
+<li><p>Gib das Blatt mit dem verschlüsselten Wort deinem Übungspartner.</p></li>
+
+<li><p>Als Übungspartner musst du die Verschlüsselung rückgängig machen. Dazu gehst du das verschlüsselte Wort Zeichen für Zeichen durch und verschiebst jeweils <em>nach links</em>.</p></li>
+
+<li><p>Überprüft, ob am Ende wieder das Ausgangswort herausgekommen ist.</p></li>
+</ol>
+
+<h2 id="grundgerüst-für-das-programm">Grundgerüst für das Programm</h2>
+
+<p>Genug Theorie, lasst uns verschlüsseln.</p>
+
+<ol>
+<li><p>Starte <a href="https://code.visualstudio.com/" title="Homepage von Visual Studio Code" target="_blank">Visual Studio Code</a> oder deinen Lieblingseditor für JavaScript.</p></li>
+
+<li><p>Lege dir eine neue Programmdatei namens <code>caesar.js</code> an.</p></li>
+
+<li><p>Füge das folgende Grundgerüst in die neue Programmdatei ein. Achte auf die im Code enthaltenen Kommentarzeilen. Mache dich mit dem Code vertraut. Bei Unklarheiten wende dich an eine CoderDojo Mentorin oder einen Mentor.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Den folgenden Text wollen wir verschluesseln.
+</span><span style="color:#75715e">// Der Ausgangstext wird &#34;Klartext&#34; oder auf englisch &#34;plain text&#34; genannt.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">plainText</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Wir treffen uns nach der Schule im Park&#34;</span>;
+
+<span style="color:#75715e">// Um diese Anzahl wollen wir die Zeichen im Alphabet verschieben.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">verschiebung</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+
+<span style="color:#75715e">// In dieser Variable speichern wir den verschluesselten Text.
+</span><span style="color:#75715e">// Der verschluesselte Text wird auf englisch &#34;cipher text&#34; genannt.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cipherText</span>;
+
+<span style="color:#75715e">// HIER FOLGT UNSER VERSCHLUESSELUNGSMECHANISMUS
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// Zur Kontrolle geben wir den verschluesselten Text aus.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Aus &#39;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">plainText</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39; wird &#39;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">cipherText</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;.&#34;</span>);
+
+<span style="color:#75715e">// HIER FOLGT UNSER ENTSCHLUESSELUNGSMECHANISMUS
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// Zur Kontrolle geben wir den entschluesselten Text aus.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Aus &#39;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">cipherText</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39; wird &#39;&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">plainText</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39;.&#34;</span>);
+</code></pre></div></li>
+
+<li><p>Probiere das Programm aus. Dazu startest du ein Kommandozeilenfenster und wechselst mit dem Kommando <code>cd</code> (<em>Change Directory</em>) in das Verzeichnis, in dem du deine Programmdatei gespeichert hast. Falls du noch nicht weißt, wie das geht, sprich eine CoderDojo Mentorin oder einen Mentor an.</p></li>
+
+<li><p>Starte dein Programm mit <code>node caesar.js</code>. Die Ausgabe sollte so aussehen. Lass dich von dem Wort <em>undefined</em> nicht abschrecken. Das verschwindet sobald wir die eigentliche Verschlüsselung eingefügt haben.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Aus <span style="color:#e6db74">&#39;Wir treffen uns nach der Schule im Park&#39;</span> wird <span style="color:#e6db74">&#39;undefined&#39;</span>.
+Aus <span style="color:#e6db74">&#39;undefined&#39;</span> wird <span style="color:#e6db74">&#39;Wir treffen uns nach der Schule im Park&#39;</span>.</code></pre></div></li>
+</ol>
+
+<h2 id="verschlüsseln">Verschlüsseln</h2>
+
+<p>Damit du das Programm zum Verschlüsseln programmieren kannst, musst du verstehen, was der <a href="https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange" target="_blank">ASCII Standard</a> ist. Er ordnet jedem Zeichen (z.B. Buchstaben, Ziffern, Sonderzeichen etc.) eine Zahl zwischen 0 und 255 zu. In <a href="https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange#ASCII-Tabelle" target="_blank">Wikipedia</a> findest du eine Tabelle mit allen Zeichen und den zugehörigen Zahlen.</p>
+
+<h2 id="verschlüsseln-1">Verschlüsseln</h2>
+
+<p>Jetzt können wir verschlüsseln.</p>
+
+<ol>
+<li><p>Suche im zuvor erstellten Programmgrundgerüst die Zeile <code>// HIER FOLGT UNSER VERSCHLUESSELUNGSMECHANISMUS</code>.</p></li>
+
+<li><p>Füge die folgenden Zeilen an dieser Stelle ein. Nicht erschrecken, der Großteil der Zeilen sind Kommentare, die dir beim Verständnis des Codes helfen sollen. Mache dich mit dem Code vertraut. Bei Unklarheiten wende dich an eine CoderDojo Mentorin oder einen Mentor.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Hier Hilfsvariablen mit den ASCII Codes von a, z, A und Z.
+</span><span style="color:#75715e">// Die werden wir spaeter gleich brauchen
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">charCodeKleinA</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span>.<span style="color:#a6e22e">charCodeAt</span>(<span style="color:#ae81ff">0</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">charCodeKleinZ</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;z&#34;</span>.<span style="color:#a6e22e">charCodeAt</span>(<span style="color:#ae81ff">0</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">charCodeGrossA</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;A&#34;</span>.<span style="color:#a6e22e">charCodeAt</span>(<span style="color:#ae81ff">0</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">charCodeGrossZ</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Z&#34;</span>.<span style="color:#a6e22e">charCodeAt</span>(<span style="color:#ae81ff">0</span>);
+
+<span style="color:#75715e">// Hier machen wir die eigentliche Transformation eines Zeichens.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">zeichenTransformieren</span>(<span style="color:#a6e22e">charCode</span>, <span style="color:#a6e22e">startAsciiCode</span>) {
+    <span style="color:#75715e">// charCode: Enthält den ASCII Code des Ausgangszeichens, das
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//           wir transformieren wollen
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// startAsciiCode: ASCII Code des ersten Zeichens des 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//                 Alphabets (97 fuer &#34;a&#34; oder 65 fuer &#34;A&#34;)
+</span><span style="color:#75715e"></span>        
+    <span style="color:#75715e">// Als erstes berechnen wir, an welcher Stelle im Alphabet das
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// Ausgangszeichen steht. Achte darauf, dass dieser Wert mit
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 0 (Null) zu zählen beginnt, nicht mit 1. 0 steht also für 
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// a bzw. A, 1 für b bzw. B, ...
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">indexImAlphabet</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">charCode</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">startAsciiCode</span>;
+        
+    <span style="color:#75715e">// Jetzt verschieben wir.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">transformiertCode</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">indexImAlphabet</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">verschiebung</span>;
+        
+    <span style="color:#75715e">// Wenn wir ueber Z hinaus kommen, fangen wir am Anfang wieder an.
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// Das machen wir, indem wir die Anzahl der Buchstaben des deutschen
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// Alphabets (26) abziehen. 
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">transformiertCode</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">25</span>) { <span style="color:#a6e22e">transformiertCode</span> <span style="color:#f92672">-=</span> <span style="color:#ae81ff">26</span>; }
+        
+    <span style="color:#75715e">// Beim Verschieben nach Links können wir vor dem A landen. In diesem
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// Fall muessen wir zur Korrektur die Anzahl an Buchstaben im deutschen
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// Alphabets (26) addieren.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">transformiertCode</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>) { <span style="color:#a6e22e">transformiertCode</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">26</span>; }
+        
+    <span style="color:#75715e">// Jetzt können wir den Index im Alphabet wieder in ASCII umwandeln,
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// indem wir 97 fuer &#34;a&#34; oder 65 fuer &#34;A&#34; addieren.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">startAsciiCode</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">transformiertCode</span>;
+}
+
+<span style="color:#75715e">// Hier machen wir die eigentliche Transformation des Textes
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">textTransformieren</span>(<span style="color:#a6e22e">ausgangstext</span>) {
+    <span style="color:#75715e">// In dieser Variable bauen wir unser Ergebnis. Wir starten
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// mit einem leeren Text.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ergebnis</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+
+    <span style="color:#75715e">// Wir starten mit einer Schleife ueber alle Zeichen des Textes. 
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">ausgangstext</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+            <span style="color:#75715e">// Wir holen uns den ASCII Code des aktuellen Zeichens
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">charCode</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ausgangstext</span>.<span style="color:#a6e22e">charCodeAt</span>(<span style="color:#a6e22e">i</span>);
+        
+            <span style="color:#75715e">// Ist es ein Buchstabe zwischen A und Z?
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">charCode</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">charCodeGrossA</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">charCode</span> <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">charCodeGrossZ</span>) {
+                    <span style="color:#75715e">// Verschluesseln ausgehend von &#34;A&#34;
+</span><span style="color:#75715e"></span>                    <span style="color:#a6e22e">charCode</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">zeichenTransformieren</span>(<span style="color:#a6e22e">charCode</span>, <span style="color:#a6e22e">charCodeGrossA</span>);
+            }
+            <span style="color:#75715e">// Ist es ein Buchstabe zwischen a und z?
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">charCode</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">charCodeKleinA</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">charCode</span> <span style="color:#f92672">&lt;=</span> <span style="color:#a6e22e">charCodeKleinZ</span>) {
+                    <span style="color:#75715e">// Verschluesseln ausgehend von &#34;a&#34;
+</span><span style="color:#75715e"></span>                    <span style="color:#a6e22e">charCode</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">zeichenTransformieren</span>(<span style="color:#a6e22e">charCode</span>, <span style="color:#a6e22e">charCodeKleinA</span>);
+            }
+
+            <span style="color:#75715e">// Wenn es kein Buchstabe sondern z.B. ein Sonderzeichen ist, 
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// lassen wir das Zeichen unverändert.
+</span><span style="color:#75715e"></span>        
+    <span style="color:#75715e">// Wir haengen das transformierte Zeichen an das Ergebnis 
+</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">ergebnis</span> <span style="color:#f92672">+=</span> String.<span style="color:#a6e22e">fromCharCode</span>(<span style="color:#a6e22e">charCode</span>);
+    }
+        
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">ergebnis</span>;
+}
+
+<span style="color:#75715e">// Verschlüsseln
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">cipherText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">textTransformieren</span>(<span style="color:#a6e22e">plainText</span>);
+</code></pre></div></li>
+
+<li><p>Suche im zuvor erstellten Programmgrundgerüst die Zeile <code>// HIER FOLGT UNSER ENTSCHLUESSELUNGSMECHANISMUS</code>.</p></li>
+
+<li><p>Füge die folgenden Zeilen an dieser Stelle ein. Mache dich mit dem Code vertraut. Bei Unklarheiten wende dich an eine CoderDojo Mentorin oder einen Mentor.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Entschlüsseln
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">verschiebung</span> <span style="color:#f92672">*=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+<span style="color:#a6e22e">plainText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">textTransformieren</span>(<span style="color:#a6e22e">cipherText</span>);
+</code></pre></div></li>
+
+<li><p>Geschafft! Probiere das Programm aus. Wie schon zuvor startest du dazu dein Programm mit <code>node caesar.js</code>. Der Text am Anfang und am Ende müssen übereinstimmen.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Aus <span style="color:#e6db74">&#39;Wir treffen uns nach der Schule im Park&#39;</span> wird <span style="color:#e6db74">&#39;Xjs usfggfo vot obdi efs Tdivmf jn Qbsl&#39;</span>.
+Aus <span style="color:#e6db74">&#39;Xjs usfggfo vot obdi efs Tdivmf jn Qbsl&#39;</span> wird <span style="color:#e6db74">&#39;Wir treffen uns nach der Schule im Park&#39;</span>.</code></pre></div></li>
+</ol>
+
+<h2 id="kompletter-code">Kompletter Code</h2>
+
+<p>Den kompletten Code dieser Übung kannst du dir <a href="caesarSimple.js" target="_blank">hier</a> ansehen.</p>
+
+<h2 id="weitere-übungen">Weitere Übungen</h2>
+
+<ol>
+<li><p>Finde heraus, welche Schwächen diese Verschlüsselung hat. Könntest du verschlüsselten Text knacken, ohne den Schlüssel zu kennen? Wie würdest du vorgehen? Diskutiere deine Ideen mit einer CoderDojo Mentorin oder einem Mentor.</p></li>
+
+<li><p>Du bist schon so richtig erfahren mit JavaScript und Node.js? Dann könntest du das Beispiel um folgende Anforderungen erweitern:</p>
+
+<ul>
+<li>Lies den Ausgangstext aus einer Datei und schreibe den verschlüsselten Text in eine Datei. Tipp: Verwende zum Zugriff auf Dateien das NPM Modul <code>fs</code>.</li>
+<li>Lass die Dateinamen als Parameter über die Kommandozeile übergeben. Tipp: Verwende zum Verarbeiten der Kommandozeilenparameter das NPM Modul <code>minimist</code>.</li>
+<li>Gib bei falschen Kommandozeilenparameter einen Hilfetext aus. Tipp: Verwende zum Ausgeben von färbigem Text das NPM Modul <code>chalk</code>.</li>
+<li>Eine Musterlösung für diese erweiterte Variante des Beispiels findest du <a href="caesar.js" target="_blank">hier</a>.</li>
+</ul></li>
+</ol>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

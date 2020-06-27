@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redstone on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/</link>
+    <description>Recent content in Redstone on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Eine einfache Falle mit Redstone</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/redstone-trap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/redstone-trap/</guid>
+      <description>&lt;h1 id=&#34;eine-einfache-falle-mit-redstone&#34;&gt;Eine einfache Falle mit Redstone&lt;/h1&gt;
+
+&lt;p&gt;In diesem Beispiel werden wir eine hinterhältige Falle bauen die Minecraft-Monster einfach zerquetscht.
+Dazu müssen wir die Creeper und/oder Zombies einfach in einen Gang locken. Eignet sich auch zum &lt;a href=&#34;https://www.zos-gaming.de/looten/&#34; target=&#34;_blank&#34;&gt;looten&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit Redstone</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/erste-schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/redstone/erste-schritte/</guid>
+      <description>Erste Schritte mit Redstone Voraussetzung Für diese Übung brauchst du Minecraft. Du solltest mit den Grundfunktionen wie Steuerung des Spielers, verwenden von grundlegenden Blöcken etc. vertraut sein.
+Was ist Redstone? 
+   Redstone ist ein wichtiger Rohstoff in Minecraft. Wie in der echten Welt mit Strom kannst du mit Redstone in Minecraft Schaltkreise (Englisch Ciruits) bauen. Egal ob Falle für Monster, Lichtsteuerung oder automatische Türen - für all das verwendest du Redstone.</description>
+    </item>
+    
+  </channel>
+</rss>

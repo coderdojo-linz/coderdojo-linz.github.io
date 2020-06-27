@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Node.js Webserver </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/">Web</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#ein-webserver-mit-node-js">Ein Webserver mit Node.js</a>
+<ul>
+<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+<li><a href="#visual-studio-code-editor-installieren">Visual Studio Code Editor installieren</a></li>
+<li><a href="#node-js-installieren">Node.js installieren</a></li>
+<li><a href="#den-server-vorbereiten">Den Server vorbereiten</a></li>
+<li><a href="#den-servercode-programmieren">Den Servercode programmieren</a></li>
+<li><a href="#den-clientcode-erstellen">Den Clientcode erstellen</a></li>
+<li><a href="#ausprobieren">Ausprobieren</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="ein-webserver-mit-node-js">Ein Webserver mit Node.js</h1>
+
+<h2 id="ziel-der-übung">Ziel der Übung</h2>
+
+<p>In dieser Übung lernst du, wie du eine Anwendung für das Web mit <a href="https://de.wikipedia.org/wiki/Client-Server-Modell" title="Client-Server-Modell auf Wikipedia nachlesen" target="_blank">Server- und Clientteil</a> baust. Du solltest mit HTML und JavaScript schon etwas vertraut sein. Falls das ganz neu für dich ist, frage erst einen Mentor um Übungsanleitungen, bei denen du die Grundlagen von HTML und JavaScript lernst.</p>
+
+<h2 id="visual-studio-code-editor-installieren">Visual Studio Code Editor installieren</h2>
+
+<p>Ganz einfache HTML und JavaScript Programme kann man in einfachen Editoren wie <em>Notepad</em> erstellen. Wenn es aber etwas umfangreicher wird, braucht man etwas besseres. Es gibt viele verschiedene Editoren für Programmieren mit JavaScript. Manche davon sind kostenlos und manche kostenpflichtig. In dieser Übung verwenden wir <a href="https://code.visualstudio.com/" title="Homepage von Visual Studio Code" target="_blank">Visual Studio Code</a>. Das Programm ist kostenlos und funktioniert auf Windows, Linux und MacOS.</p>
+
+<ol>
+<li><p>Falls du <em>Visual Studio Code</em> bei dir noch nicht installiert hast, lade es von <a href="https://code.visualstudio.com/" title="Homepage von Visual Studio Code" target="_blank">hier</a> herunter und führe die Installation durch.</p></li>
+
+<li><p>Erstelle einen neuen Ordner auf deiner lokalen Festplatte. Dort werden wir unseren Programmcode speichern. In dieser Anleitung gehen wir davon aus, dass der Ordner <em>C:\Code\Chat</em> heißt. Du kannst ihn aber auch anders nennen.</p></li>
+
+<li><p>Starte Visual Studio Code.</p></li>
+
+<li><p>Öffne den Ordner <em>C:\Code\Chat</em> in Visual Studio Code.<br/>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/nodejs-webserver/img/vscode-ordner-oeffnen.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p></li>
+</ol>
+
+<p>Jetzt sind wir bereit, unseren Code zu schreiben. Bevor wir das tun, müssen wir aber noch weitere Vorbereitungsarbeiten durchführen.</p>
+
+<h2 id="node-js-installieren">Node.js installieren</h2>
+
+<p>Unser Programm braucht einen Server und einen Client. Auf beiden Seiten wollen wir JavaScript programmieren. Am Client führt der Browser JavaScript aus. Am Server gibt es dafür <a href="https://nodejs.org/" title="Node.js Homepage" target="_blank">Node.js</a>. Um während der Entwicklung den Server lokal auf unserem Computer ausführen zu können, müssen wir Node.js installieren.</p>
+
+<ol>
+<li><p>Node.js installieren:<br/>
+Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://nodejs.org/" title="Node.js Homepage" target="_blank">Homepage von Node.js</a> klicken. Unter Linux verwendest du einen <a href="https://de.wikipedia.org/wiki/Paketverwaltung" title="Mehr über Paketverwaltung auf Wikipedia nachlesen" target="_blank">Package Manager</a> zur Installation. Anleitungen für verschiedene Arten von Linux findest du <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager" target="_blank">hier</a>.</p></li>
+
+<li><p>Öffne eine Kommandozeile (<a href="http://praxistipps.chip.de/windows-konsole-oeffnen-so-gehts_1320" target="_blank">Anleitung für Windows</a>) bzw. eine Konsolenfenster (<a href="http://www.pcwelt.de/ratgeber/Die_10_wichtigsten_Linux-Befehle_fuer_Einsteiger-Kommandozeile_alias_Terminal-8858519.html" target="_blank">Anleitung für Linux</a>).</p></li>
+
+<li><p>Wechsle in das von dir angelegte Verzeichnis mit dem <em>cd</em> Befehl (<em>Change Directory</em>): <code>cd /Code/Chat</code>.</p></li>
+
+<li><p>Prüfe, ob Node.js funktioniert. Dazu verwendest du die beiden Befehle <code>node -v</code> und <code>npm -v</code>. Falls ein Fehler auftritt, bitte einen Mentor dir zu helfen.<br/>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/nodejs-webserver/img/nodejs-pruefen.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p></li>
+</ol>
+
+<p>Jetzt sind wir bereit, loszulegen.</p>
+
+<h2 id="den-server-vorbereiten">Den Server vorbereiten</h2>
+
+<p>Der Server muss die HTML-Dateien an die verbundenen Browser schicken. Für Node.js gibt es für solche Basisfunktionen sogenannte <a href="https://nodejs.org/api/modules.html" title="Mehr über Node.js Module erfahren" target="_blank">Module</a>. Für dieses Beispiel musst du nicht im Detail wissen, was Node.js Module sind und wie sie intern funktionieren. Das wird ein Thema für später. Wir werden hier einfach zwei fertige Module verwenden. Diese sind:</p>
+
+<ul>
+<li><a href="https://www.npmjs.com/package/express" target="_blank">express</a></li>
+<li><a href="https://nodejs.org/api/http.html" target="_blank">http</a></li>
+</ul>
+
+<p>Um eventuellen Fehlermeldungen vorzubeugen ist es ratsam im Verzeichnis <em>C:\Code\Chat</em> zuerst den Befehl <code>npm init</code> auszuführen. Die nachfolgenden Fragen einfach mit <code>&lt;Enter&gt;</code> bestätigen.</p>
+
+<p>Das <em>http</em> Modul ist in Node.js immer vorhanden. <em>express</em> müssen wir installieren. Das geschieht in der Kommandozeile mit dem Befehl <code>npm install express</code> (<em>Achtung:</em> Bevor du ihn ausführst, stelle sicher, dass du im Verzeichnis <em>C:\Code\Chat</em> bist).</p>
+
+<p><em>npm</em> steht für <em>Node.js Package Manager</em>, also ein Programm zum Verwalten von Node.js Paketen. Mehr über NPM kannst du <a href="https://docs.npmjs.com/" title="NPM Dokumentation" target="_blank">hier</a> erfahren. Du brauchst aber für dieses Beispiel kein Detailwissen über NPM. Das kannst du auch gerne später nachlesen.</p>
+
+<p>Wenn du den <em>npm</em> Befehl ausgeführt hast, müsste deine Verzeichnisstruktur so aussehen:<br/>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/nodejs-webserver/img/nodejs-module.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p>
+
+<h2 id="den-servercode-programmieren">Den Servercode programmieren</h2>
+
+<ol>
+<li><p>Erstelle eine neue Datei in Visual Studio Code. Nenne sie <em>server.js</em>.<br/>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/nodejs-webserver/img/vscode-neue-datei.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p></li>
+
+<li><p>Direkt neben dem Symbol für <em>Neue Datei</em> findest du das Kommando für <em>Neues Verzeichnis</em>. Lege ein Verzeichnis namens <em>public</em> an. Es wird die öffentlich sichtbaren HTML-Dateien enthalten, daher der Name <em>public</em>.</p></li>
+
+<li><p>Einen Webserver zu programmieren ist mit Node.js nicht schwierig. Es reichen ein paar Zeilen Code. Hier sind sie. Schreibe sie in deine <em>server.js</em> Datei und achte besonders auf die enthaltenen Kommentarzeilen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
+</span><span style="color:#75715e">// aus dem Ordner &#34;public&#34; zu veröffentlichen.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">server</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;http&#39;</span>).<span style="color:#a6e22e">createServer</span>(<span style="color:#a6e22e">app</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3000</span>;
+
+<span style="color:#75715e">// Mit diesem Kommando starten wir den Webserver.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>, <span style="color:#66d9ef">function</span> () {
+<span style="color:#75715e">// Wir geben einen Hinweis aus, dass der Webserer läuft.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Webserver läuft und hört auf Port %d&#39;</span>, <span style="color:#a6e22e">port</span>);
+});
+
+<span style="color:#75715e">// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
+</span><span style="color:#75715e">// im Ordner &#34;public&#34; zu finden sind.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#a6e22e">__dirname</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/public&#39;</span>));
+
+<span style="color:#75715e">// Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
+</span></code></pre></div></li>
+</ol>
+
+<h2 id="den-clientcode-erstellen">Den Clientcode erstellen</h2>
+
+<p>Noch können wir nichts ausprobieren, da unser <em>public</em> Verzeichnis leer ist. Erstelle daher im <em>public</em> Verzeichnis eine Datei namens <em>chat.html</em> und füge zum Testen folgenden Inhalt ein. Wie du siehst enthält die Datei nur eine Begrüßung, sonst nichts.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!doctype html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;de&#34;</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;CoderDojo Linz | Chat Beispiel&lt;/<span style="color:#f92672">title</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">h1</span>&gt;Hallo Chat!&lt;/<span style="color:#f92672">h1</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<h2 id="ausprobieren">Ausprobieren</h2>
+
+<ol>
+<li><p>Geschafft, jetzt können wir unseren Webserver ausprobieren. Starte dazu das Kommando <code>node server.js</code> in der Kommandozeile. Es müsste die Meldung erscheinen <code>Webserver läuft und hört auf Port 3000</code>.<br/>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/nodejs-webserver/img/nodejs-starten.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p></li>
+
+<li><p>Starte einen Webbrowser und öffne die URL <code>http://localhost:3000/chat.html</code>. Siehst du deine HTML Seite? Falls ein Fehler auftritt, bitte einen Mentor um Hilfe.</p></li>
+</ol>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

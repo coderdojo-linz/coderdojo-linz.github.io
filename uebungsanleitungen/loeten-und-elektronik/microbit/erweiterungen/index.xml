@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Erweiterungen on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/</link>
+    <description>Recent content in Erweiterungen on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computational Thinking mit BBC micro:bit</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/computational-thinking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/computational-thinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pimoroni Inventor&#39;s Kit for the BBC micro:bit</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/pimoroni-inventors-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/pimoroni-inventors-kit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grove Inventor Kit for micro:bit Project Guide</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/grove-inventor-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/grove-inventor-kit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mi:Node Kit User Manual</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/mi-node-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/mi-node-kit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>:MOVE mini robot for BBC micro:bit</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/move-mini-robot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/move-mini-robot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>micro:bit with Arduino</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-with-arduino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-with-arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MAKERbuino Build Guide</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/makerbuino-build-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/makerbuino-build-guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EDU days 2018 - micro:bit Temeraturmessung</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-temperaturmessung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-temperaturmessung/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

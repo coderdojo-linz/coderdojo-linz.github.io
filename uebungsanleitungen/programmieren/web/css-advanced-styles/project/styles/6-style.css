@@ -1,0 +1,134 @@
+/* List items */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: lightblue;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* background image */
+    background-image: url('/images/underwater-treasures.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 60px;
+    max-width: 900px;
+    /* center content area */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* ********************************** */
+/* headers */
+/* ********************************** */
+h1 {
+    text-transform: uppercase;
+    color: #0081e4;
+}
+
+h1 .version {
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #2b992b;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 10px;
+    /* necessary for vertical alignment within h1 */
+    vertical-align: 0.5em;
+}
+
+h2 {
+    background-color: #2b992b;
+    color: #fff;
+    display: inline-block;
+    margin-block-start: 2em;
+    padding: 2px 10px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 8px 8px 0 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ********************************** */
+/* images */
+/* ********************************** */
+img {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    max-width: 100%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* center images */
+    margin-left: auto;
+    margin-right: auto;
+    /* animation */
+    transition: all 0.5s;
+}
+
+img:hover {
+    /* changes when mouse moves over image */
+    transform: scale(1.01);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ********************************** */
+/* intro */
+/* ********************************** */
+.intro p {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.intro>img {
+    transform: rotateY(0deg);
+    transition: transform 1s;
+}
+
+.intro>img:hover {
+    transform: rotateY(180deg);
+    box-shadow: none;
+}
+
+/* ********************************** */
+/* list items */
+/* ********************************** */
+ol {
+    list-style: none;
+    counter-reset: my-counter;
+    padding-inline-start: 0;
+}
+
+ol>li {
+    counter-increment: my-counter;
+    padding-left: 50px;
+    padding-top: 5px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+ol>li:before {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    content: counter(my-counter) ".";
+    background-color: #2b992b;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -5px;
+}

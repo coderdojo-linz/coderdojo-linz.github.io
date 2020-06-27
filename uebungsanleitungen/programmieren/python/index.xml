@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/</link>
+    <description>Recent content in Python on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    <lastBuildDate>Sun, 17 May 2020 08:00:19 +0200</lastBuildDate>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Erste Schritte mit Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/erste-schritte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/erste-schritte/</guid>
+      <description>Erste Schritte mit Python Diese Übung gibt eine erste Einführung in das Programmieren mit Python. Die Inhalte sind zum größten Teil aus dem Buch Programmieren supereasy.
+Was ist Python? Python ist eine Programmiersprache, die mit englischen Textbefehlen arbeitet. Sie ist etwas schwieriger als Scratch, dafür gibt es allerdings viel mehr Verwendungsmöglichkeiten.
+Zur Vorbereitung werden wir nun zuerst Python installieren und uns dann mit der Oberfläche vertraut machen.
+Python installieren Lade Python nun herunter und installiere es auf deinem Computer.</description>
+    </item>
+    
+    <item>
+      <title>Alien</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/alien/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/alien/</guid>
+      <description>Wir zeichnen einen Alien Mit dem Package Tkinter zeichnen wir einen Alien und lassen ihn auf Tastendruck reagieren. Die Beschreibung erfolgt in Anlehnung an Beispiele aus dem Buch Programmieren supereasy.
+
+   Voraussetzungen Übungsbeispiele Erste Schritte in Python und Von Scratch zu Python.
+Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (File -&amp;gt; New File) und speichere die Datei als Dateityp auf deinem Computer (File -&amp;gt; Save A).</description>
+    </item>
+    
+    <item>
+      <title>Bubble Blaster</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/bubble-blaster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/bubble-blaster/</guid>
+      <description>Bubble Blaster Mit dem Package Tkinter programmieren wir ein erstes Spiel in Python. Ein U-Boot, das mit Pfeiltasten gesteuert wird, soll in der vorgegebenen Zeit so viel Blasen wie möglich zum Platzen bringen. (Die Beschreibung erfolgt in Anlehnung an Beispiele aus dem Buch Programmieren supereasy).
+
+   Voraussetzungen Übungsbeispiel „Alien“
+Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (File -&amp;gt; New File) und speichere die Datei als Dateityp auf deinem Computer (File -&amp;gt; Save As).</description>
+    </item>
+    
+    <item>
+      <title>Geisterspiel mit Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/geisterspiel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/geisterspiel/</guid>
+      <description>Geisterspiel In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python. Es wird nur ein text-basiertes UI (= User Interface; deutsch: Benutzerschnittstelle) haben, d.h. wir werden Text auf dem Bildschirm lesen und Zeichen mit der Tastatur eingeben, um das Spiel zu steuern.
+Die Aufgabe Der Geist versteckt sich zufällig hinter einer von 3 Türen. Du entscheidest, welche Türe du öffnen möchtest. Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste.</description>
+    </item>
+    
+    <item>
+      <title>Python baut unsinnige Sätze</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/unsinnige-saetze/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/unsinnige-saetze/</guid>
+      <description>Unsinnige Sätze In dieser Übunge erstellen wir ein kleines Python-Programm, das unsinnige Sätze zusammenbaut.
+Die Aufgabe Unser Programm soll aus drei verschiedenen Wortgruppen (Subjekt, Verb, Objekt) willkürlich Sätze zusammenstellen. Es wählt zufällig je ein Wort aus einer Gruppe aus und dabei können natürlich auch lustige und unsinnige Sätze herauskommen.
+Ein möglicher Ablauf könnte dann im Shell-Fenster so aussehen:
+Unsinnige Sätze =============== Drücke einfach ENTER, um einen neuen Satz zu erzeugen.</description>
+    </item>
+    
+    <item>
+      <title>Schriftlich Multiplizieren mit Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/schriftlich-multiplizieren/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/schriftlich-multiplizieren/</guid>
+      <description>Schriftlich Multiplizieren mit Python Es wäre doch nett, wenn ein Programm das schriftliche Multiplizieren mit allen Zwischenschritten vorführen könnte? Für die Faktoen 345 und 789 soll das Programm z.B. folgendes ausgeben:
+345 x 789 --------- 2415 2760 3105 ------ 272205 Allgemeines zur Programmiersprache Python Wir verwenden für die Programmierung die Programmiersprache Python (siehe die Python Homepage www.python.org), genauer gesagt Python 3, also eine Version von Python, deren Bezeichnung mit 3 beginnt, z.</description>
+    </item>
+    
+    <item>
+      <title>Snake mit Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/snake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/snake/</guid>
+      <description>Python Snake In dieser Übung erstellen wir das Computerspiel Snake mit Python. So wie für das Bubble Blaster Spiel werden wir auch hier auf das Package Tkinter zurückgreifen, um die Spielelemente (Kugeln aus denen die Schlage besteht, Apfel) auf den Bildschirm zu malen.
+Voraussetzungen Es wäre ideal, wenn du das Bubble Blaster Spiel davor schon programmiert hast, um dich so mit Tkinter vertraut zu machen.
+8 Schritte zum fertigen Snake Spiel Es ist oft eine gute Strategie ein Programm nicht in einem einzelnen Wurf zu entwickeln, sondern es in kleine Unterschritte zu unterteilen, die für sich gesehen bewältigbarer sind.</description>
+    </item>
+    
+    <item>
+      <title>Von Scratch zu Python</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/von-scratch-zu-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/von-scratch-zu-python/</guid>
+      <description>Von Scratch zu Python Du zeichnest eine geometrische Figur in Scratch und dann übersetzt du das Programm in die Programmiersprache Python.
+
+   Voraussetzungen Übungsbeispiel: Erste Schritte in Python
+Scratch Laden des Malstifts Um in Scratch zu zeichnen, muss man zuerst die Erweiterung „Malstift“ laden. Klicke dazu auf das Symbol in der linken unteren Ecke und wähle dann den Malstift aus. Damit bekommst du einen neuen Eintrag „Malstift“ im Menü am linken Bildschirmrand und eine Menge neuer Blöcke, die du zum Zeichnen verwenden kannst.</description>
+    </item>
+    
+    <item>
+      <title>Zahlen raten mit Python - Teil 1</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten/</guid>
+      <description>Zahlen raten mit Python Wollen wir ein Programm für das Spiel &amp;ldquo;Zahlen raten&amp;rdquo; schreiben? Der Computer denkt sich eine Zahl im Bereich von 1 - 100 und der Spieler soll diese erraten. Nach jedem Versuch gibt das Programm aus, ob die eingegebene Zahl zu klein, zu groß oder richtig war.
+Allgemeines zur Programmiersprache Python Wir verwenden für die Programmierung die Programmiersprache Python (siehe die Python Homepage www.python.org), genauer gesagt Python 3, also eine Version von Python, deren Bezeichnung mit 3 beginnt, z.</description>
+    </item>
+    
+    <item>
+      <title>Zahlen raten mit Python - Teil 2</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten-2/</guid>
+      <description>Zahlen raten mit Python Teil 2 Kennst du den ersten Teil, wo wir ein Programm entwickelt haben, das sich eine Zahl ausdenkt und den Spieler erraten lässt? Jetzt wollen wir die Rollen tauschen und den Computer eine vom Menschen gedachte Zahl erraten lassen. Der Computer fragt zuerst, wie groß die gedachte Zahl höchstens sein kann, und beginnt dann mit dem Raten. Der Spieler gibt nach jedem Versuch an, ob die vom Computer ausgespuckte Zahl zu klein, zu groß oder richtig war.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Termine on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/termine/</link>
+    <description>Recent content in Termine on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/termine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CoderDojo Playground</title>
+      <link>https://linz.coderdojo.net/termine/playgrounds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/termine/playgrounds/</guid>
+      <description>CoderDojo Playground Was ist CoderDojo Playground? Beim CoderDojo Playground treffen wir uns, um zu üben. Wer beim normalen CoderDojo schon etwas Erfahrung gesammelt hat und mit Freunden an seinen Projekten arbeiten möchte, hat hier Gelegenheit dazu.
+Was ist der Unterschied zum normalen CoderDojo?  Es sind nur wenige Mentorinnen und Mentoren anwesend. Ihr arbeitet eigenständig oder mit anderen, jungen Codern. Wir können beim CoderDojo Playground weniger Leihgeräte zur Verfügung stellen.</description>
+    </item>
+    
+    <item>
+      <title>Tipps für Online CoderDojos</title>
+      <link>https://linz.coderdojo.net/termine/online-coderdojo-tipps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/termine/online-coderdojo-tipps/</guid>
+      <description>Tipps für Online CoderDojos Hier bekommt ihr hilfreiche Tipps zur Teilnahme bei Online CoderDojos.
+Dieser Artikel ist für Kinder und Jugendliche, die schon etwas Erfahrung mit dem Umgang mit dem Computer haben, oder für erwachsene Begleitpersonen von jüngeren Kindern, die noch nicht so viel mit dem Computer gemacht haben.
+Notwendige Software Wir verwenden für Online CoderDojos die Webmeeting-Plattform Zoom. Installiere dir den Zoom Client auf allen Geräten, mit denen du am Online CoderDojo teilnehmen willst.</description>
+    </item>
+    
+  </channel>
+</rss>

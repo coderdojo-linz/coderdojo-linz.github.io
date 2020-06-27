@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> C# Kennenlernen </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/">C#</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#antme-wie-schlau-ist-deine-ameise">AntMe! Wie schlau ist deine Ameise?</a>
+<ul>
+<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+<li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
+<li><a href="#antme-installieren">AntMe! installieren</a></li>
+<li><a href="#deine-erste-ameise-programmieren">Deine erste Ameise programmieren</a></li>
+<li><a href="#kreativ-sein-und-andere-coder-herausfordern">Kreativ sein und andere Coder herausfordern</a></li>
+<li><a href="#wie-gehts-weiter">Wie gehts weiter?</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="antme-wie-schlau-ist-deine-ameise">AntMe! Wie schlau ist deine Ameise?</h1>
+
+<p><img src="img/antme-screenshot.png" alt="AntMe!" /></p>
+
+<h2 id="ziel-der-übung">Ziel der Übung</h2>
+
+<p>C# (Englisch &ldquo;C Sharp&rdquo;) ist eine der meist verwendeten Programmiersprachen der Welt. Sie ist Open Source und plattformunabhängig. Mit C# werden verschiedenste Programme geschrieben: Spiele, wirtschaftliche Software, Webseiten und vieles mehr.</p>
+
+<p>Ein Ziel dieser Übung ist es, dass du C# auf eine Weise kennenlernst, die Spaß macht. Dein Ziel wird es sein, in C# einen Computerspieler zu programmieren, der die Ameisen einer Ameisenkolonie steuert. Du lernst dabei nicht nur die Programmiersprache C# kennen, du musst dir auch einen schlauen Algorithmus für deine Ameisen überlegen.</p>
+
+<p>In dieser Übung verwenden wir das Spiel <a href="http://www.antme.net/de/" target="_blank">AntMe!</a>.</p>
+
+<p><img src="http://www.antme.net/wp-content/themes/antme/img/logo.png" alt="AntMe! Logo" /></p>
+
+<h2 id="systemvoraussetzungen">Systemvoraussetzungen</h2>
+
+<p>Zum Programmieren mit C# und AntMe! brauchst du <em>Visual Studio</em> von <em>Microsoft</em>. Die Software gibt es als <em>Community Edition</em> zum <a href="http://www.visualstudio.com/de-de/downloads/download-visual-studio-vs.aspx" target="_blank">kostenlosen Download</a>. Brauchst du Hilfe beim Installieren von Visual Studio? Sag einer Mentorin oder einem Mentor Bescheid, sie helfen dir weiter.</p>
+
+<p>Hast du kein Windows sondern einen Mac oder Linux? Sag einem Mentor beim CoderDojo bescheid. Sie können dir helfen, damit du auch dort AntMe! programmieren kannst.</p>
+
+<h2 id="antme-installieren">AntMe! installieren</h2>
+
+<ol>
+<li><p>Öffne als erstes die <a href="http://www.antme.net/de/" target="_blank">Homepage von AntMe!</a> und schau dir das Video an. Dort lernst du die Grundidee von AntMe! kennen.</p></li>
+
+<li><p>Lade dir die AntMe! Software herunter. Alle Links findest du im <a href="http://wiki.antme.net/de/Lektion1" target="_blank">AntMe! Wiki</a>.</p></li>
+
+<li><p>Installiere AntMe! Das <a href="http://wiki.antme.net/de/Lektion2" target="_blank">AntMe! Wiki</a> enthält auch dafür eine Anleitung.</p></li>
+
+<li><p>Starte AntMe! Eine Beschreibung findest du im <a href="http://wiki.antme.net/de/Lektion3" target="_blank">AntMe! Wiki</a>.</p></li>
+</ol>
+
+<h2 id="deine-erste-ameise-programmieren">Deine erste Ameise programmieren</h2>
+
+<ol>
+<li><p>Geh die <a href="http://wiki.antme.net/de/Lektion4" target="_blank">erste Programmierübung von AntMe!</a> durch. Du erfährst darin die Grundlagen der &ldquo;Ameisen-Programmierung&rdquo;.</p></li>
+
+<li><p>Ameisen müssen auch kämpfen, um zu überleben. Käfer sind hinter ihnen her. In der <a href="http://wiki.antme.net/de/Lektion5" target="_blank">zweiten Übung von AntMe!</a> lernst du, wie du deinen Ameisen beibringen kannst, zu überleben.</p></li>
+
+<li><p>Deine Ameisen sind nicht auf sich alleine gestellt. Sie können mit anderen Ameisen über Duftstoffe kommunizieren. Wie das geht lernst du in der <a href="http://wiki.antme.net/de/Lektion6" target="_blank">dritten AntMe! Übung</a>.</p></li>
+
+<li><p>Möchtest du, dass deine Ameisen schneller oder stärker sind? Du kannst das beeinflussen. Wie, das findest du in <a href="http://wiki.antme.net/de/Lektion7" target="_blank">Übung vier von AntMe!</a> heraus.</p></li>
+</ol>
+
+<h2 id="kreativ-sein-und-andere-coder-herausfordern">Kreativ sein und andere Coder herausfordern</h2>
+
+<ol>
+<li><p>Nach den Übungen kannst du beginnen, die Strategie deiner Ameisen weiter zu verbessern. Du kannst deinen Computerspieler gegen verschiedene Beispiel-Spieler antreten lassen, die AntMe! mitbringt. Wie schlagen sich deine Ameisen im Vergleich zu ihnen?<br/>
+<img src="img/mehrere-spieler-vergleichen.png" alt="Mehrere Computerspieler gleichzeitig" /></p></li>
+
+<li><p>Wenn mehrere Coder im Dojo AntMe! programmieren, könnt ihr eure eigenen Computerspieler gegeneinander spielen lassen. Wessen Ameisen schneiden am besten ab?</p></li>
+</ol>
+
+<h2 id="wie-gehts-weiter">Wie gehts weiter?</h2>
+
+<p>C# gefällt dir? Du möchtest mehr wissen?</p>
+
+<ol>
+<li><p>Wenn du Lust hast kannst du einen kostenlosen <a href="https://mva.microsoft.com/de-de/training-courses/programmieren-f-r-beginner-mit-c--10140?l=JqnuG5A6_9704984382" target="_blank">Online-Videokurs über C#</a> machen. Dabei lernst du die Programmiersprache von Grund auf Schritt für Schritt kennen.</p></li>
+
+<li><p>Wenn du im CoderDojo bist, löchere deine Mentoren mit Fragen. In Linz haben wir bei paar echte C# Profis dabei, die in diesem Bereich weit über die Grenzen von Österreich hinaus bekannt sind.</p></li>
+</ol>
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

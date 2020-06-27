@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Erste Schritte mit SVG </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.1b9c230a2f66f97f2552e09c6b72c8faae703335708079af48049b975a8c480e.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body"> <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/">Web</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#erste-schritte-mit-svg">Erste Schritte mit SVG</a>
+<ul>
+<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+<li><a href="#was-sind-vektorgrafiken">Was sind <em>Vektorgrafiken</em>?</a></li>
+<li><a href="#entwicklungsumgebung-öffnen">Entwicklungsumgebung öffnen</a></li>
+<li><a href="#unser-erstes-svg">Unser erstes SVG</a></li>
+<li><a href="#svg-mit-javascript-zeichnen">SVG mit JavaScript zeichnen</a></li>
+<li><a href="#svg-mit-animation-bei-mausklick">SVG mit Animation bei Mausklick</a></li>
+<li><a href="#svg-in-der-praxis">SVG in der Praxis</a></li>
+<li><a href="#verbesserte-programmversion">Verbesserte Programmversion</a></li>
+<li><a href="#weitere-übungen">Weitere Übungen</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="erste-schritte-mit-svg">Erste Schritte mit SVG</h1>
+
+<h2 id="ziel-der-übung">Ziel der Übung</h2>
+
+<p>In dieser Übung lernst du <a href="https://de.wikipedia.org/wiki/Scalable_Vector_Graphics" target="_blank"><em>Scalable Vector Graphics</em></a> (kurz <em>SVG</em>) kennen. Unser Ziel sind:</p>
+
+<ul>
+<li>Wir wollen verstehen, was SVG ist und wofür es eingesetzt wird.</li>
+<li>Wir wollen Grafiken mit SVG in eine HTML-Seite einbauen.</li>
+<li>Wir wollen SVG mit JavaScript programmgesteuert erzeugen.</li>
+<li>Wir möchten SVG verwenden, um ein mathematisches Prinzip, die <a href="https://de.wikipedia.org/wiki/Cardanische_Kreise" target="_blank">Cardanischen Kreise</a> veranschaulichen.</li>
+</ul>
+
+<p>Wenn du nach dieser Übung mehr über SVG lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf <a href="http://www.w3schools.com/svg/" target="_blank">die SVG Einführung auf w3schools.com</a> werfen.</p>
+
+<p>Falls du noch überhaupt keine Erfahrung mit HTML und JavaScript hast, wende dich an eine CoderDojo Mentorin oder einen Mentor. Sie werden dir die HTML-Basics erklären oder dir eine Übung für HTML-Grundlagen zeigen.</p>
+
+<h2 id="was-sind-vektorgrafiken">Was sind <em>Vektorgrafiken</em>?</h2>
+
+<p>Das <em>V</em> in <em>SVG</em> steht für <em>Vector</em>. Sinn von SVG ist es also, <a href="https://de.wikipedia.org/wiki/Vektorgrafik" target="_blank">Vektorgrafiken</a> zu definieren. Diese lassen sich dann problemlos in HTML-Webseiten eingetten (dazu später mehr).</p>
+
+<p>Im Gegensatz zu <a href="https://de.wikipedia.org/wiki/Rastergrafik" target="_blank">Rastergrafiken</a> werden Vektorgrafiken nicht als einzelne Pixel sondern als <em>Bildbeschreibung</em> gespeichert. Dadurch lassen sie sich wunderbar vergrößern und verkleinern. Hier ein Beispiel: Das folgende Bild ist eine Rastergrafik, die auf eine Auflösung von 300x300 Pixel vergrößert wurde:</p>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Zeichen_224_20px.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: 300px" />
+    </div>
+</div>
+
+
+<p>Hier nun das gleiche, vergrößerte Bild als SVG-Vektorgrafik. Siehst du, wie gestochen scharf es bleibt?</p>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Zeichen_224.svg" alt="(.Get 1)" class="mx-auto " style="display: block; width: 300px" />
+    </div>
+</div>
+
+
+<p>Jetzt wollen wir die oben gezeigte Vektorgrafik in SVG schreiben und in eine Webseite einbauen.</p>
+
+<h2 id="entwicklungsumgebung-öffnen">Entwicklungsumgebung öffnen</h2>
+
+<p>In dieser Übung lernst du eine neue Webseite kennen, mit der du rasch HTML-, JavaScript- und CSS-Code ausprobieren kannst. Sie heißt <a href="https://plnkr.co" target="_blank">Plunker</a>.</p>
+
+<ol>
+<li><p>Öffne einen Webbrowser deiner Wahl und navigiere zu <a href="https://plnkr.co" target="_blank">https://plnkr.co</a>.</p></li>
+
+<li><p>Rechts oben siehst du den Buttton <em>Sign in with Github</em>. <a href="https://github.com/" target="_blank">Github</a> ist eine sehr wichtige Seite für Coder. Man kann dort den Quellcode seiner Programme online speichern. Auf Github gibt es unzählige Projekte von Hobby-Codern und Profis. Falls du noch kein Github-Konto hast, klicke auf den Link und lege dir einen Benutzer an.</p></li>
+
+<li><p>Du müsstest am Ende wieder bei Plunker landen und rechts oben deinen Github-Benutzer sehen.<br/>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/img/plunker-login.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p></li>
+
+<li><p>Starte als nächstes den Plunker Editor.<br/>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/img/start-plunker-editor.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p></li>
+
+<li><p>Der Bildschirmaufbau des Plunker Editor ist recht einfach. Die folgende Grafik zeigt die wichtigsten Teile. Experimentiere ein wenig, indem du den HTML- und JavaScript-Code des generierten Beispiels veränderst und laufen lässt.<br/>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/img/plunker-ui.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p></li>
+</ol>
+
+<p>Jetzt legen wir los. Vergiss bitte nicht, während der Arbeit hin und wieder eine Dateien zu speichern.</p>
+
+<h2 id="unser-erstes-svg">Unser erstes SVG</h2>
+
+<p>Ändere den von Plunker generierten HTML Code wie folgt (<a href="https://embed.plnkr.co/bW70b0/" target="_blank">auf Plunker ausprobieren</a>).</p>
+
+<p><strong>Tipp:</strong> Drücke gleich am Anfang auf <em>Run</em>, dann siehst du laufend das Ergebnis des von dir bereits eingegebenen Codes.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+
+  &lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">h1</span>&gt;Hallo SVG!&lt;/<span style="color:#f92672">h1</span>&gt;
+    
+    &lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;svg&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">viewBox</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0 0 74 74&#34;</span>&gt;
+      &lt;<span style="color:#f92672">circle</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#F0CA00&#34;</span> <span style="color:#a6e22e">cx</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;37&#34;</span> <span style="color:#a6e22e">cy</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;37&#34;</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;37&#34;</span>/&gt; 
+      &lt;<span style="color:#f92672">circle</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#008754&#34;</span> <span style="color:#a6e22e">cx</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;37&#34;</span> <span style="color:#a6e22e">cy</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;37&#34;</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;35&#34;</span>/&gt; 
+      &lt;<span style="color:#f92672">circle</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#F0CA00&#34;</span> <span style="color:#a6e22e">cx</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;37&#34;</span> <span style="color:#a6e22e">cy</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;37&#34;</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;25&#34;</span>/&gt; 
+      &lt;<span style="color:#f92672">path</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#008754&#34;</span> <span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;m 44.5,34 -15,0 0,-16 -6,0 0,38 6,0 0,-17 15,0 0,17 6,0 0,-38 -6,0 z&#34;</span>/&gt;
+    &lt;/<span style="color:#f92672">svg</span>&gt;
+    
+    &lt;<span style="color:#f92672">p</span>&gt;
+      Hier kann weiterer Text folgen
+    &lt;/<span style="color:#f92672">p</span>&gt;
+  &lt;/<span style="color:#f92672">body</span>&gt;
+
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<ol>
+<li><p>Achte auf das <code>&lt;svg...&gt;</code> Tag. Es umschließt die SVG Grafikbeschreibung.</p>
+
+<ul>
+<li>Mit den Attributen <code>width</code> und <code>height</code> legst du die Anzeigegröße fest. Experimentiere mit anderen Werten.</li>
+<li>Mit dem Attribut <code>viewBox</code> kannst du einen Ausschnitt der Grafik anzeigen. Probiere einmal <code>0 0 50 50</code> aus. Siehst du, wie ein Teil der Grafik weggeschnitten ist?</li>
+<li>Möchtest du ganz, ganz genau wissen, was alles beim <code>svg</code> Tag möglich ist. Die Profi-Doku findest du <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute" target="_blank">bei Mozilla</a>.</li>
+</ul></li>
+
+<li><p>Mit dem <code>circle</code> Tag kann man Kreise malen.</p>
+
+<ul>
+<li><code>cx</code> legt den Mittelpunkt des Kreises auf der X-Achse fest.</li>
+<li><code>cy</code> legt den Mittelpunkt des Kreises auf der Y-Achse fest. <strong>Achtung:</strong> Bei Computergrafik sind Punkte weiter <strong>unten</strong> je <strong>größer</strong> die Koordinaten werden. Der Koordinatenursprung ist also <strong>links oben</strong>.</li>
+<li><code>r</code> legt den Radius fest.</li>
+<li><code>fill</code> legt die Füllfarbe fest. Wenn du ein Farbe auswählen möchtest, kannst du einen <em>Color Picker</em> wie z.B. den von <a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">w3schools</a> verwenden.</li>
+</ul></li>
+
+<li><p>Das <code>path</code> Tag ist besonders interessant. Man kann damit Figuren zeichnen, die sich aus einer Folge von Linien und Kreisbogensegmenten zusammensetzen.</p>
+
+<ul>
+<li>In <code>d</code> legt man das Aussehen der Figur fest.</li>
+<li><code>m</code> steht für <code>move</code> und setzt den Zeichencursor an eine Position.</li>
+<li>Nach dem <code>m</code> folgen durch Leerzeichen getrennte x/y Koordinatenpaare wie z.B. <code>44.5,34</code>. Durch das Zeichen <code>z</code> wird die Figur geschlossen. Schwierig? Frage eine CoderDojo Mentorin um Hilfe. Sie wird dir Schritt für Schritt erklären, wie <code>path</code> funktioniert.</li>
+<li>Möchtest du ganz, ganz genau wissen, was alles bei <code>d</code> möglich ist. Die Profi-Doku findest du <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d" target="_blank">bei Mozilla</a>.<br /></li>
+</ul></li>
+
+<li><p>Wenn du möchtest, kannst du weitere Formen ausprobieren. Auf <a href="http://www.w3schools.com/svg/svg_examples.asp" target="_blank">w3schools</a> findest du jede Menge Beispiele mit Linien, Rechtecken, Ellipsen, Polygonen etc.</p></li>
+</ol>
+
+<h2 id="svg-mit-javascript-zeichnen">SVG mit JavaScript zeichnen</h2>
+
+<p>Man kann SVG nicht nur direkt im HTML Code einbetten sondern es auch in JavaScript generieren. Das wollen wir jetzt probieren. Unser Ziel ist es, das gleiche Beispiel wie zuvor mit JavaScript zu zeichnen.</p>
+
+<p>Erstelle ein neues <em>Plunk</em>. Ändere den von Plunker generierten HTML Code wie folgt (<a href="https://embed.plnkr.co/YVS3vdrWjHlQuXA08o6l/" target="_blank">auf Plunker ausprobieren</a>). <strong>Nicht vergessen:</strong> Drücke gleich am Anfang auf <em>Run</em>, dann siehst du laufend das Ergebnis des von dir bereits eingegebenen Codes.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+
+  &lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+  &lt;/<span style="color:#f92672">head</span>&gt;
+
+  &lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">h1</span>&gt;Hallo SVG!&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;svg&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">viewBox</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0 0 74 74&#34;</span>&gt;&lt;/<span style="color:#f92672">svg</span>&gt;
+    &lt;<span style="color:#f92672">p</span>&gt;
+      Hier kann weiterer Text folgen
+    &lt;/<span style="color:#f92672">p</span>&gt;
+
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;script.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+  &lt;/<span style="color:#f92672">body</span>&gt;
+
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<p>Den von Plunker generierten JavaScript Code in <code>script.js</code> musst du wie folgt ändern:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Snap</span>(<span style="color:#e6db74">&#34;#svg&#34;</span>);
+
+<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">37</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;fill&#34;</span>, <span style="color:#e6db74">&#34;#F0CA00&#34;</span>);
+<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">35</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;fill&#34;</span>, <span style="color:#e6db74">&#34;#008754&#34;</span>);
+<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">25</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;fill&#34;</span>, <span style="color:#e6db74">&#34;#F0CA00&#34;</span>);
+<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">path</span>(<span style="color:#e6db74">&#34;m 44.5,34 -15,0 0,-16 -6,0 0,38 6,0 0,-17 15,0 0,17 6,0 0,-38 -6,0 z&#34;</span>)
+  .<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;fill&#34;</span>, <span style="color:#e6db74">&#34;#008754&#34;</span>);
+</code></pre></div>
+<ol>
+<li><p>Achte darauf, wie im <code>head</code> Tag vom HTML die Bibliothek <a href="http://snapsvg.io/" target="_blank"><em>Snap.svg</em></a> referenziert wird. <em>Snap.svg</em> erleichtert die Arbeit mit SVG in JavaScript ganz gewaltig.</p></li>
+
+<li><p>Achte darauf, dass im HTML das <code>svg</code> Tag leer ist.</p></li>
+
+<li><p>Vergleiche den JavaScript Code mit dem SVG HTML Code aus der letzten Übung. Siehst du die Ähnlichkeiten.</p></li>
+</ol>
+
+<p>Warum sollte man SVG mit JavaScript statt mit HTML erzeugen wollen? Es gibt dafür unter anderen zwei wichtige Gründe:</p>
+
+<ul>
+<li><p>Manchmal ist es leichter, eine Grafik mit Code zu generieren statt sie in HTML vollständig zu beschreiben. Stell dir ein Schachbrettmuster vor. In JavaScript kein Problem. Einfach zwei Schleifen und schon ist es erledigt. In HTML wäre das viel SVG Code, den man mühsam schreiben muss.</p></li>
+
+<li><p>SVG muss nicht statisch sein. Mit JavaScript kann man das Bild laufend ändern und so Animationen erzeugen, man kann auf Benutzeraktionen wie Mausklicks reagieren etc. Im nächsten Beispiel probieren wir das aus.</p></li>
+</ul>
+
+<p><strong>Tipp:</strong> Im <a href="http://svg.dabbles.info/" target="_blank"><em>Snap.svg Tutorial</em></a> findest du jede Menge Beispiele zum Arbeiten mit SVG über JavaScript. Du kannst die Beispiele dort direkt ändern, starten und dadurch experimentieren.<br/></p>
+
+<h2 id="svg-mit-animation-bei-mausklick">SVG mit Animation bei Mausklick</h2>
+
+<p>Wir möchten unsere Beispielgrafik um Interaktionsmöglichkeiten erweitern. Ändere dafür den JavaScript-Code wie folgt (<a href="https://embed.plnkr.co/B1hPGdwHarcwi7BIMbmq/" target="_blank">auf Plunker ausprobieren</a>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Snap</span>(<span style="color:#e6db74">&#34;#svg&#34;</span>);
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">37</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;fill&#34;</span>, <span style="color:#e6db74">&#34;#F0CA00&#34;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">35</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;fill&#34;</span>, <span style="color:#e6db74">&#34;#008754&#34;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c3</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">37</span>, <span style="color:#ae81ff">25</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;fill&#34;</span>, <span style="color:#e6db74">&#34;#F0CA00&#34;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">g</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">group</span>(<span style="color:#a6e22e">c1</span>, <span style="color:#a6e22e">c2</span>, <span style="color:#a6e22e">c3</span>);
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">path</span>(<span style="color:#e6db74">&#34;m 44.5,34 -15,0 0,-16 -6,0 0,38 6,0 0,-17 15,0 0,17 6,0 0,-38 -6,0 z&#34;</span>)
+  .<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;fill&#34;</span>, <span style="color:#e6db74">&#34;#008754&#34;</span>);
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">direction</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">360</span>;
+<span style="color:#a6e22e">g</span>.<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>() {
+  <span style="color:#a6e22e">g</span>.<span style="color:#a6e22e">animate</span>({ <span style="color:#a6e22e">opacity</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">direction</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">?</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> }, <span style="color:#ae81ff">1000</span>);
+  <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">animate</span>({ <span style="color:#a6e22e">transform</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;R&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">direction</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;, 37, 37&#39;</span> }, <span style="color:#ae81ff">1000</span>);
+  <span style="color:#a6e22e">direction</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">direction</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">?</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">360</span>;
+});
+</code></pre></div>
+<ol>
+<li><p>Achte auf den Aufruf der Funktion <code>group</code>. Dadurch kann man mehrere Elemente der Grafik in eine Gruppe zusammenfassen. Auf die Gruppe kann man dann Operationen wie Klonen, Bewegen etc. anwenden.</p></li>
+
+<li><p>Mit der <code>click</code> Funktion können wir auf einen Mausklick reagieren.</p></li>
+
+<li><p>Durch <code>animate</code> kann man Eigenschaften des Grafikelements animieren.</p>
+
+<ul>
+<li>Unsere erste Animation ändert die <code>opacity</code> (=Lichtundurchlässigkeit) der Gruppe, sodass beim ersten Klick die Gruppe langsam verschwindet (dieser Effekt wird <em>fade out</em> genannt). Beim zweiten Klick erscheint sie langsam wieder (<em>fade in</em>).</li>
+<li>Die zweite Animation rotiert (<code>R</code>) den Pfad, der unser <em>H</em> darstellt beim ersten Klick um 360°. Beim zweiten Klick rotiert das <em>H</em> wieder auf 0° zurück.</li>
+</ul></li>
+</ol>
+
+<p>Probiere den Effekt aus und klick mehrfach auf die Grafik. Experimentiere mit unterschiedlichen Animationen. <strong>Tipp:</strong> Im <a href="http://svg.dabbles.info/snaptut-animategroup" target="_blank"><em>Snap.svg Tutorial</em></a> findest du eine Menge zusätzlicher Beispiele mit Animationen.</p>
+
+<h2 id="svg-in-der-praxis">SVG in der Praxis</h2>
+
+<p>Stell dir vor, du erstellst für ein Referat in Mathematik oder Physik eine Webseite. Du möchtest mit einer Grafik etwas visualisieren. Genau dafür ist SVG ausgezeichnet geeignet.</p>
+
+<p>In diesem Beispiel veranschaulichen wir die <a href="https://de.wikipedia.org/wiki/Cardanische_Kreise" target="_blank">Cardanischen Kreise</a>. Man hat zwei Kreise, einen größeren und einen kleineren. Der kleinere hat genau den halben Durchmesser des größeren. Der kleinere rollt im Inneren des großen an dessen Außenseite. Das faszinierende ist, dass sich eine gerade Linie ergibt, wenn man einen Punkt am Rand des kleineren Kreises betrachtet. Alles klar? Eine solche Beschreibung als Text ist schwierig zu verstehen. Wäre es nicht besser, wenn man das ganze als animierte Grafik sehen könnte? Das wollen wir mit SVG erreichen.</p>
+
+<p>Die folgende Grafik aus Wikipedia ist ein Beispiel. So ähnlich soll unser SVG aussehen:<br/>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/TusiCouple.gif" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+</p>
+
+<p><strong>Tipp:</strong> In Englisch findet man die Caradnischen Kreise unter dem Titel <em>Tusi Couple</em> bzw. <em>Tusi Motion</em>. Wenn du im Internet nach Beispielen suchst, probiere die Englische Bezeichnung aus. Du findest dann mehr Ergebnisse.</p>
+
+<p>Um die Formeln im folgenden Code zu verstehen, musst du mit dem <a href="https://de.wikipedia.org/wiki/Satz_des_Pythagoras" target="_blank">Satz des Phytagoras</a> und <a href="https://de.wikipedia.org/wiki/Trigonometrische_Funktion" target="_blank">Winkelfunktionen</a> vertraut sein. Im CoderDojo werden wir die Formeln erarbeiten. Wenn du die Übung selbst machst und verstehen möchtest, wie die Formeln zustande kommen, sprich mit deiner Mathematik- oder Informatiklehrerin.</p>
+
+<p>Erstelle ein neues <em>Plunk</em>. Ändere den von Plunker generierten HTML Code wie folgt (<a href="https://embed.plnkr.co/GbWM3hoy0wY656NaQudo/" target="_blank">auf Plunker ausprobieren</a>). <strong>Nicht vergessen:</strong> Drücke gleich am Anfang auf <em>Run</em>, dann siehst du laufend das Ergebnis des von dir bereits eingegebenen Codes.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+
+  &lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+  &lt;/<span style="color:#f92672">head</span>&gt;
+
+  &lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;svg&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600px&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600px&#34;</span>&gt;&lt;/<span style="color:#f92672">svg</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;script.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+  &lt;/<span style="color:#f92672">body</span>&gt;
+  
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<p>Den von Plunker generierten JavaScript Code in <code>script.js</code> musst du wie folgt ändern:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Snap</span>(<span style="color:#e6db74">&#34;#svg&#34;</span>);
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">padding</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;   <span style="color:#75715e">// left/top padding
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">r</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">280</span>;        <span style="color:#75715e">// radius of big circle
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">rotation</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;   <span style="color:#75715e">// current rotation (radiants)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">step</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">animSpeed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+
+<span style="color:#75715e">// big circle
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bigCircle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">r</span>);
+<span style="color:#a6e22e">bigCircle</span>.<span style="color:#a6e22e">attr</span>({ 
+  <span style="color:#a6e22e">fill</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;white&#39;</span>, 
+  <span style="color:#a6e22e">stroke</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;black&#39;</span>, 
+  <span style="color:#a6e22e">strokeWidth</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> 
+});
+
+<span style="color:#75715e">// small, rotating circle with radius = r/2
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">smallCircle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>);
+<span style="color:#a6e22e">smallCircle</span>.<span style="color:#a6e22e">attr</span>({ 
+  <span style="color:#a6e22e">fill</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;white&#39;</span>, 
+  <span style="color:#a6e22e">stroke</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;gray&#39;</span>, 
+  <span style="color:#a6e22e">strokeWidth</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, 
+});
+
+<span style="color:#75715e">// dot rotating with small circle
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dot</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span>, <span style="color:#ae81ff">5</span>);
+<span style="color:#a6e22e">dot</span>.<span style="color:#a6e22e">attr</span>({ 
+  <span style="color:#a6e22e">fill</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span> 
+});
+
+<span style="color:#75715e">// line on which the dot moves
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">line</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">line</span>(<span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span>, <span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">r</span>);
+<span style="color:#a6e22e">line</span>.<span style="color:#a6e22e">attr</span>({ 
+  <span style="color:#a6e22e">stroke</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;lightgray&#39;</span>, 
+  <span style="color:#a6e22e">strokeWidth</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+  <span style="color:#e6db74">&#39;stroke-dasharray&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;5,5&#39;</span>
+});
+
+<span style="color:#75715e">// timer function 
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">timerFunc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+  <span style="color:#75715e">// increment rotation
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">rotation</span> <span style="color:#f92672">+=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">step</span>;
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">rotation</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span>) {
+    <span style="color:#a6e22e">rotation</span> <span style="color:#f92672">-=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span>;
+  }
+  
+  <span style="color:#75715e">// calculate translation of small circle
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">cos</span>(Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">rotation</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> Math.<span style="color:#a6e22e">sin</span>(Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">rotation</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
+
+  <span style="color:#75715e">// calculate translation of dot
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ry</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">r</span> <span style="color:#f92672">-</span> (Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">rotation</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+
+  <span style="color:#75715e">// transform circle and dot
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">smallCircle</span>.<span style="color:#a6e22e">transform</span>(<span style="color:#e6db74">&#39;T&#39;</span> <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">round</span>(<span style="color:#a6e22e">x</span>) <span style="color:#f92672">+</span><span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">round</span>(<span style="color:#a6e22e">y</span>));
+  <span style="color:#a6e22e">dot</span>.<span style="color:#a6e22e">transform</span>(<span style="color:#e6db74">&#39;T0,&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">ry</span>);
+
+  <span style="color:#75715e">// schedule next animation step
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">timerFunc</span>, <span style="color:#a6e22e">animSpeed</span>);
+};
+
+<span style="color:#75715e">// schedule first animation step
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">timerFunc</span>, <span style="color:#a6e22e">animSpeed</span>);
+</code></pre></div>
+<ol>
+<li><p>Gehe den JavaScript-Code mit einem CoderDojo Mentor durch.</p></li>
+
+<li><p>Achte besonders auf die <code>timerFunc</code>. Sie wird regelmäßig (alle <code>animSpeed</code> Millisekunden) aufgerufen.</p>
+
+<ul>
+<li>Als erstes berechnet sie die Schrittweise Rotation des kleineren Kreises. <code>rotation</code> enthält den Rotationswinkel in <a href="https://de.wikipedia.org/wiki/Radiant_(Einheit)" target="_blank">Radiant</a>.</li>
+<li>Als nächstes berechnet sie ausgehend von der aktuellen Rotation die Position des kleinen Kreises und des roten Punktes. Wie gesagt, wenn du Winkelfunktionen schon beherrschst, gehe die Mathematik dahinter mit einem CoderDojo Mentor oder deiner Lehrerin durch.</li>
+<li>Mit <code>transform</code> werden kleiner Kreis und roter Punkt auf die neue Position gesetzt.</li>
+<li>Abschließend wird festgelegt, dass die <code>timerFunc</code> erneut aufgerufen werden soll.</li>
+</ul></li>
+
+<li><p>Experimentieren mit anderen Linienstärken, Farben, Animationsgeschwindigkeiten etc.</p></li>
+</ol>
+
+<h2 id="verbesserte-programmversion">Verbesserte Programmversion</h2>
+
+<p>Das oben gezeigte Programm funktioniert, ist aber nicht optimal. Die Animation wird durch viele, schnell hintereinander angezeigte <a href="https://de.wikipedia.org/wiki/Einzelbild_(Film)" target="_blank">Einzelbilder</a> erreicht. Dadurch ruckelt die Animation ein wenig (abhängig vom Wert von <code>animSpeed</code>). Darüber hinaus ist es unschön, dass wir manuell die Position des roten Punktes berechnen müssen.</p>
+
+<p>Was können wir verbessern?</p>
+
+<ul>
+<li>Wir können die Animationsfunktion, die in SVG eingebaut ist, verwenden. Die Animation sollte dadurch &ldquo;butterweich&rdquo; werden.</li>
+<li>Wir können die Rotationsfunktion von SVG nutzen anstatt selbst die Position des roten Punktes zu errechnen.</li>
+</ul>
+
+<p>Ändere den JavaScript-Code aus dem vorherigen Beispiel wie folgt (<a href="https://embed.plnkr.co/3NR9j60QE1rRJQhLGNDB/" target="_blank">auf Plunker ausprobieren</a>). <strong>Nicht vergessen:</strong> Drücke gleich am Anfang auf <em>Run</em>, dann siehst du laufend das Ergebnis des von dir bereits eingegebenen Codes.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Snap</span>(<span style="color:#e6db74">&#34;#svg&#34;</span>);
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">padding</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;   <span style="color:#75715e">// left/top padding
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">r</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">280</span>;        <span style="color:#75715e">// radius of big circle
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">rotation</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;   <span style="color:#75715e">// current rotation (radiants)
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">step</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">animSpeed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+
+<span style="color:#75715e">// big circle
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">bigCircle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">r</span>);
+<span style="color:#a6e22e">bigCircle</span>.<span style="color:#a6e22e">attr</span>({ 
+  <span style="color:#a6e22e">fill</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;white&#39;</span>, 
+  <span style="color:#a6e22e">stroke</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;black&#39;</span>, 
+  <span style="color:#a6e22e">strokeWidth</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> 
+});
+
+<span style="color:#75715e">// bounding circle for smooth animation
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">smallCircleBounding</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">8</span>);
+<span style="color:#a6e22e">smallCircleBounding</span>.<span style="color:#a6e22e">attr</span>({ <span style="color:#a6e22e">fill</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;none&#39;</span>, <span style="color:#a6e22e">stroke</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;none&#39;</span> });
+
+<span style="color:#75715e">// small, rotating circle with radius = r/2
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">smallCircle</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>);
+<span style="color:#a6e22e">smallCircle</span>.<span style="color:#a6e22e">attr</span>({ 
+  <span style="color:#a6e22e">fill</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;white&#39;</span>, 
+  <span style="color:#a6e22e">stroke</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;gray&#39;</span>, 
+  <span style="color:#a6e22e">strokeWidth</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, 
+});
+
+<span style="color:#75715e">// dot rotating with small circle
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dot</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span>, <span style="color:#ae81ff">4</span>);
+<span style="color:#a6e22e">dot</span>.<span style="color:#a6e22e">attr</span>({ 
+  <span style="color:#a6e22e">fill</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span> 
+});
+
+<span style="color:#75715e">// group rotating circles
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">group</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">group</span>(<span style="color:#a6e22e">smallCircleBounding</span>, <span style="color:#a6e22e">smallCircle</span>, <span style="color:#a6e22e">dot</span>);
+
+<span style="color:#75715e">// line on which the dot moves
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">line</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">line</span>(<span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span>, <span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">padding</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">r</span>);
+<span style="color:#a6e22e">line</span>.<span style="color:#a6e22e">attr</span>({ 
+  <span style="color:#a6e22e">stroke</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;lightgray&#39;</span>, 
+  <span style="color:#a6e22e">strokeWidth</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+  <span style="color:#e6db74">&#39;stroke-dasharray&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;5,5&#39;</span>
+});
+
+<span style="color:#75715e">// timer function 
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">timerFunc</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+  <span style="color:#75715e">// increment rotation
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">rotation</span> <span style="color:#f92672">+=</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">step</span>;
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">rotation</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span>) {
+    <span style="color:#a6e22e">rotation</span> <span style="color:#f92672">-=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span>;
+  }
+  
+  <span style="color:#75715e">// calculate translation of small circle
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">cos</span>(Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">rotation</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> Math.<span style="color:#a6e22e">sin</span>(Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">rotation</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>;
+
+  <span style="color:#75715e">// transform circle and dot
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">group</span>.<span style="color:#a6e22e">animate</span>(
+    { <span style="color:#a6e22e">transform</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;T&#39;</span> <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">round</span>(<span style="color:#a6e22e">x</span>) <span style="color:#f92672">+</span><span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">round</span>(<span style="color:#a6e22e">y</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;R&#39;</span> <span style="color:#f92672">+</span> (<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">rotation</span> <span style="color:#f92672">/</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">360</span> }, 
+    <span style="color:#a6e22e">animSpeed</span>,
+    <span style="color:#a6e22e">timerFunc</span>);
+};
+
+<span style="color:#75715e">// schedule first animation step
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">timerFunc</span>();
+</code></pre></div>
+<ol>
+<li><p>Beachte, dass der rote Punkt nicht mehr bewegt wird. Stattdessen wird mit der Funktion <code>group</code> der kleine Kreis mit dem roten Punkt in eine Gruppe zusammengefasst. Im <code>animate</code> wird mit <code>R</code> die Gruppe rotiert. Dadurch rotiert der rote Punkt automatisch.</p></li>
+
+<li><p>Achte außerdem darauf, dass hier kein <code>setTimeout</code> mehr verwendet wird. Stattdessen verwendet das Beispiel die Funktion <code>animate</code> und lässt SVG den Kreis bewegen.</p></li>
+
+<li><p>Setze den Wert für <code>step</code> einmal auf <code>5</code> und den von <code>animSpeed</code> auf <code>1000</code>. Siehst du, wie der kleine Kreis jetzt &ldquo;hüpft&rdquo;? Überlege, warum es zu diesem Effekt kommt?</p></li>
+</ol>
+
+<h2 id="weitere-übungen">Weitere Übungen</h2>
+
+<ol>
+<li><p>Probiere, mit JavaScript ein Schachbrettmuster mit <em>Snap.svg</em> zu erzeugen.</p></li>
+
+<li><p>Es gibt eine kostenlose Open-Source Software, mit der du SVG-Dateien erstellen und bearbeiten kannst: <a href="https://inkscape.org/de/" target="_blank">Inkscape</a>. Es wird auch von Profis verwendet. Installiere Inkscape, erstelle eine SVG-Datei und sieh dir anschließend den von Inkscape generierten SVG-Code an.</p></li>
+
+<li><p>Wenn man mehrere Cardanische Kreise kombiniert, entsteht eine faszinierende, optische Illusion. Schau dir z.B. die <a href="http://www.michaelbach.de/ot/mot-Tusi/index.html" target="_blank"><em>Tusi Motion</em> von Michael Bach</a> an.</p></li>
+</ol>
+
+<!-- 1. Möchtest du deine Webseite im Internet veröffentlichen? Ein Übungsbeispiel dafür findest du [hier](/trainingsanleitungen/web/dreamspark-azure.html). -->
+ </div>
+        </div>
+    </div>
+</section>  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
+                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Englische Übungsanleitungen on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/</link>
+    <description>Recent content in Englische Übungsanleitungen on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    <lastBuildDate>Sun, 17 May 2020 07:59:43 +0200</lastBuildDate>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Catch Me</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/catch-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/catch-me/</guid>
+      <description>Creating Stage and Sprites   You need to decide what your stage should look like. First of all we need to build our underwater world where our fishes live. Click on Select backdrop from library on the bottom left and choose your background image, for example the underwater1.
+     The next step is to delete the Scratchy sprite with the name Sprite1, by right-clicking on it and selecting delete.</description>
+    </item>
+    
+    <item>
+      <title>Chess</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/chess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/chess/</guid>
+      <description>You can try the finished project at https://scratch.mit.edu/projects/148769358/
+Chess programs try to find the optimal move by calculating as many moves in advance as possible. The number of resulting boards grows exponentially with each additional move, so that even modern computers reach their computing limits. Our chess program must therefore be quick and smart. Smart means that not every move combination is calculated, which can be achieved by discarding bad moves immediately.</description>
+    </item>
+    
+    <item>
+      <title>Paddle Game</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/paddle-game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/paddle-game/</guid>
+      <description>Creating Stage and Sprites   You begin by defining what your stage should look like. For this Game we need the beach backdrop, a ball, a paddle a sprite that defines the out area. Select the backdrop from the library with the button on the bottom left.
+     
+     The next step is to delete the Scratchy sprite with the name Sprite1, by right-clicking on it and selecting delete.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/</link>
+    <description>Recent content in Web on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Meine erste Webseite</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/</guid>
+      <description>Meine erste Webseite In dieser Übung lernst du die Hypertext Markup Language (kurz HTML) kennen. Unser Ziel ist es, Schritt für Schritt eine HTML-Seite zu erstellen und dabei die wichtigsten Grundbegriffe von HTML zu entdecken. Wenn du nach dieser Übung mehr über HTML lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die HTML Einführung auf w3schools.com werfen.
+Das Grundgerüst einer HTML-Seite  Öffne einen beliebigen Texteditor.</description>
+    </item>
+    
+    <item>
+      <title>Node.js Webserver</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-webserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-webserver/</guid>
+      <description>Ein Webserver mit Node.js Ziel der Übung In dieser Übung lernst du, wie du eine Anwendung für das Web mit Server- und Clientteil baust. Du solltest mit HTML und JavaScript schon etwas vertraut sein. Falls das ganz neu für dich ist, frage erst einen Mentor um Übungsanleitungen, bei denen du die Grundlagen von HTML und JavaScript lernst.
+Visual Studio Code Editor installieren Ganz einfache HTML und JavaScript Programme kann man in einfachen Editoren wie Notepad erstellen.</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit CSS</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-css/</guid>
+      <description>Erste Schritte mit CSS Ziel der Übung In dieser Übung lernst du Cascading Style Sheets (kurz CSS) kennen. Unser Ziel ist es, eine HTML-Seite mit CSS zu formatieren und hübsch zu gestalten. Wenn du nach dieser Übung mehr über CSS lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die CSS Einführung auf w3schools.com werfen.
+Falls du noch überhaupt keine Erfahrung mit HTML hast, wende dich an eine CoderDojo Mentorin oder einen Mentor.</description>
+    </item>
+    
+    <item>
+      <title>Verschlüsseln mit JavaScript</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/</guid>
+      <description>Verschlüsseln mit JavaScript 
+   Ziel der Übung In dieser Übung lernst du ein einfaches Verschlüsselungsverfahren kennen.
+Technisch lernst du einige Dinge über JavaScript und Node.js:
+ Wie programmiert man ein Kommandozeilenprogramm mit JavaScript? Was sind ASCII Codes? Wie arbeitet man in JavaScript mit Zeichenketten?  Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist! Falls JavaScript, Node.js und Visual Studio Code für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut.</description>
+    </item>
+    
+    <item>
+      <title>Chat mit Node.js und Socket.io</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-socketio-chat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-socketio-chat/</guid>
+      <description>Chat mit Node.js und Socket.io Ziel der Übung In dieser Übung lernst du, wie du eine Chat-Anwendung mit Server- und Clientteil baust. Mehrere Benutzer können sich im Chat anmelden. Wenn jemand etwas sendet sollen alle anderen Benutzer das sofort sehen.
+Wichtig: Diese Übung geht davon aus, dass du die Übung Einen Node.js Webserver programmieren gemacht hast und diese bei dir auf deinem Computer funktioniert. Mache hier erst weiter, wenn du die vorbereitende Übung erfolgreich abgeschlossen hast.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Zahlen raten</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/</guid>
+      <description>Zahlen raten Ziel der Übung In dieser Übung programmierst du ein einfaches &amp;ldquo;Zahlen raten&amp;rdquo; Spiel und siehst, wie man mit JavaScript Ein- und Ausgaben machen kann.
+Das Spiel soll folgendermaßen funktionieren: Der Computer denkt sich eine Zahl zwischen 0 und 100 aus und der Spieler muss versuchen, diese Zahl mit möglichst wenigen Versuchen zu erraten. Dazu kann er einen Tipp eingeben. Der Computer sagt dann Niedriger oder Höher, und der Spieler kann einen neuen Tipp eingeben, bis er die richtige Zahl erraten hat.</description>
+    </item>
+    
+    <item>
+      <title>Advanced CSS Styles</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/css-advanced-styles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/css-advanced-styles/</guid>
+      <description>Advanced CSS Styles Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Scratch - Fang mich&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;content&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Scratch Fang-Mich &amp;lt;span class=&amp;#34;version&amp;#34;&amp;gt;Scratch 3.0&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;div class=&amp;#34;intro&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;images/endgame.png&amp;#34; alt=&amp;#34;Endgame&amp;#34;&amp;gt; &amp;lt;p&amp;gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ... Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: Startprojekt</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit Bootstrap</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-bootstrap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-bootstrap/</guid>
+      <description>Erste Schritte mit Bootstrap Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Scratch - Fang mich&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;content&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Scratch Fang-Mich &amp;lt;span class=&amp;#34;version&amp;#34;&amp;gt;Scratch 3.0&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;div class=&amp;#34;intro&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;images/endgame.png&amp;#34; alt=&amp;#34;Endgame&amp;#34;&amp;gt; &amp;lt;p&amp;gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ... Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: Startprojekt</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit Hugo</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-hugo/</guid>
+      <description>Erste Schritte mit Hugo Was ist Hugo Hugo ist ein statischer Webseitengenerator, der auf der Sprache Go basiert.
+Was ist ein statischer Website Generator Dynamische Webseiten werden erst beim Abruf vom Server generiert (z.B. PHP, ASP.NET). Statische Webseiten bestehen nur aus HTML, JavaScript, CSS und weiteren Resourcen wie Bildern oder Fonts.
+Static Site Generators generieren statische Webseiten und ermöglichen damit die Trennung von Layout und Content. Mehr Infos dazu findest du unter https://www.</description>
+    </item>
+    
+    <item>
+      <title>Erste Schritte mit SVG</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/</guid>
+      <description>Erste Schritte mit SVG Ziel der Übung In dieser Übung lernst du Scalable Vector Graphics (kurz SVG) kennen. Unser Ziel sind:
+ Wir wollen verstehen, was SVG ist und wofür es eingesetzt wird. Wir wollen Grafiken mit SVG in eine HTML-Seite einbauen. Wir wollen SVG mit JavaScript programmgesteuert erzeugen. Wir möchten SVG verwenden, um ein mathematisches Prinzip, die Cardanischen Kreise veranschaulichen.  Wenn du nach dieser Übung mehr über SVG lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die SVG Einführung auf w3schools.</description>
+    </item>
+    
+    <item>
+      <title>Fraktal Baum mit snap.svg</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-fraktalbaum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-fraktalbaum/</guid>
+      <description>Zeichne einen Fraktal Baum mit snap.svg Ziel der Übung Zeichne einen Baum in SVG. Starte dazu mit einer vertikalen Linie als Stamm.
+Am oberen Ende der Linie zeichne zwei weitere Linien - eine etwas nach links und eine etwas nach rechts geneigt. Die neuen beiden Linien sind etwas kürzer als die erste Linie für den Stamm. In dieser zweiten Ebene erhältst du so zwei Zweige.
+Am jeweils oberen Ende der beiden neuen Linie zweichne wieder jeweils zwei neue nach links und rechts geneigte Linien die etwas kürzer als die vorige Linie sind.</description>
+    </item>
+    
+    <item>
+      <title>Hangman</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</guid>
+      <description>Hangman Ziel der Übung Der erste Spieler gibt ein Wort ein, das vom zweiten Spieler erraten werden muss.
+Zuerst sieht der zweite Spieler nur ein Sternchen für jeden Buchstaben. Jeder erratene Buchstabe wird aufgedeckt. Für jeden falsch geratenen Buchstaben wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor der Galgen fertig ist.
+
+   Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.</description>
+    </item>
+    
+    <item>
+      <title>HTML &amp; CSS Hands On</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-css-hands-on/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-css-hands-on/</guid>
+      <description>HTML &amp;amp; CSS Hands On Die folgenden Übungen kannst du direkt online in JSFiddle machen. Du brauchst dafür kein installiertes Tool. Für jede Übung wird das gewünschte Ergebnis dargestellt und du findest jeweils einen Link zur Ausgangsbasis für das Beispiel.
+HTML Basic Tags Im ersten Beispiel werden die am häufigsten verwendeten HTML Element verwendet.
+Startprojekt öffnen
+ Formatierung mit Tags In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch HTML Elemente zu formatieren.</description>
+    </item>
+    
+    <item>
+      <title>Labyrinth-Spiel mit Scratch und JavaScript</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</guid>
+      <description>Labyrinth-Spiel mit Scratch und JavaScript Ziel der Übung In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
+Es ist wichtig, dass du vor dieser Übung die Scratch-Variante dieses Spiels genau angesehen oder noch besser selbst programmiert hast.
+Spielbeschreibung Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit &amp;ldquo;X&amp;rdquo; markierte Ziel zu erreichen.</description>
+    </item>
+    
+    <item>
+      <title>Präsentationen mit HTML statt PowerPoint</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-praesentationen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-praesentationen/</guid>
+      <description>Präsentationen mit HTML statt PowerPoint Ziel der Übung Egal ob in der Schule, auf der Uni oder später im Beruf - es kommt immer wieder vor, dass man Präsentationen erstellen muss. Die meisten greifen dabei zu Microsoft PowerPoint.
+Das muss aber nicht sein. Als Coder mit HTML- und CSS-Kenntnissen kann man beeindruckende Präsentationen für den Browser erstellen. In dieser Übung lernst du Reveal.js kennen. Mit Grundkenntnissen in HTML und CSS kannst du mit Reveal deine nächste Präsentation ganz ohne PowerPoint erledigen.</description>
+    </item>
+    
+    <item>
+      <title>Snake mit Node.js</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-nodejs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-nodejs/</guid>
+      <description>Snake mit Node.js 
+   Ziel der Übung In dieser Übung lernst du, wie du mit Node.js einfache Spiele programmieren kannst.
+Systemvoraussetzungen Du brauchst für diese Übung die gleichen Tools (Visual Studio Code, Node.js, npm), die schon in der Übung Ein Webserver mit Node.js erwähnt sind. Falls du die Übung schon gemacht hast, hast du schon alle notwendigen Tools. Falls nicht, schau dort bitte nach.
+Du kannst das Beispiel unter Windows, Linux oder MacOS bauen.</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter mit Phaser.io</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter/</guid>
+      <description>Space Shooter mit Phaser.io Ziel der Übung In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den Space Shooter erstellt. Falls nicht, wirf bitte vor diesem Beispiel einen Blick auf die Space Shooter Scratch Übung und probiere die Scratch-Implementierung aus. Unser Ziel ist es, diesen Space Shooter mit Web-Technologien für den Browser zu entwickeln.
+
+   Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist! Falls HTML, JavaScript, Node.</description>
+    </item>
+    
+    <item>
+      <title>SVG Schreibtrainer</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-schreibtrainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-schreibtrainer/</guid>
+      <description>SVG Schreibtrainer Ziel der Übung Du baust ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.
+Am oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen. Tippe den Buchstaben, bevor er den unteren Rand des Spielfelds berührt.
+Auf Wikipedia findest du eine Grafik zum Zehnfingersystem, die erklärt, welche Taste mit welchem Finger gedrückt werden soll.
+
+   Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen schreibtrainer.</description>
+    </item>
+    
+    <item>
+      <title>Tetris mit Blazor</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/blazor-tetris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/blazor-tetris/</guid>
+      <description>Tetris mit Blazor Kostenlose Voraussetzungen  Neueste Version von Visual Studio 2017 Community Edition mit ASP.NET and web development ASP.NET Core Blazor Language Services  Projekt anlegen  Visual Studio starten
+ File / New / Project
+ Neues ASP.NET Projekt anlegen: 
+    Blazor Projekttyp auswählen: 
+    Nach dem Anlegen des Projekt den Startmodus ändern: 
+    Probiere, das Programm mit F5 oder Debug / Start Debugging zu starten.</description>
+    </item>
+    
+  </channel>
+</rss>
