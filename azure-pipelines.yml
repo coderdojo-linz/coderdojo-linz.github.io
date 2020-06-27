@@ -1,60 +1,125 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
+jobs:
+- job: BuildProductionSite
+  displayName: 'Build Production Site'
+  pool:
+    vmImage: 'ubuntu-latest'
 
-variables:
-  hugo_version: '0.71.1'
-  target_repository: 'preview-coderdojo-linz'
+  variables:
+    hugo_version: '0.73.0'
 
-steps:
-- checkout: self
-  persistCredentials: true
-  clean: true
-  path: src
-  displayName: 'Checkout source'
+  steps:
+  - checkout: self
+    persistCredentials: 'true'
+    clean: 'true'
+    path: src
+    displayName: 'Checkout source'
 
-- script: |
-    git config --global user.email "rainer@software-architects.at"
-    git config --global user.name "Rainer"
-  displayName: 'Git Settings'
+  - script: |
+      git config --global user.email "rainer@software-architects.at"
+      git config --global user.name "Rainer"
+    displayName: 'Git Settings'
 
-- script: |
-    wget https://github.com/gohugoio/hugo/releases/download/v$(hugo_version)/hugo_extended_$(hugo_version)_Linux-64bit.deb \
-        -O '$(Pipeline.Workspace)/hugo_$(hugo_version)_Linux-64bit.deb'
-    sudo dpkg -i $(Pipeline.Workspace)/hugo*.deb
-  displayName: 'Install Hugo'
+  - script: |
+      wget https://github.com/gohugoio/hugo/releases/download/v$(hugo_version)/hugo_extended_$(hugo_version)_Linux-64bit.deb \
+          -O '$(Pipeline.Workspace)/hugo_$(hugo_version)_Linux-64bit.deb'
+      sudo dpkg -i $(Pipeline.Workspace)/hugo*.deb
+    displayName: 'Install Hugo'
 
-- script: |
-    npm install
-  workingDirectory: $(Agent.BuildDirectory)/src
-  displayName: 'Run npm install'
+  - script: |
+      npm install
+    workingDirectory: $(Agent.BuildDirectory)/src
+    displayName: 'Run npm install'
 
-- script: |
-    sed -i -e 's/linz.coderdojo.net/linz-preview.coderdojo.net/g' config.toml
-    hugo
-  workingDirectory: $(Agent.BuildDirectory)/src
-  displayName: 'Build'
+  - script: |
+      hugo
+    workingDirectory: $(Agent.BuildDirectory)/src
+    displayName: 'Build prod site'
 
-- script: git clone https://$(GitHubPAT)@github.com/coderdojo-linz/$(target_repository).github.io.git dest
-  workingDirectory: $(Agent.BuildDirectory)
-  displayName: 'Clone destination repo'
+  - task: CopyFiles@2
+    inputs:
+      sourceFolder: $(Agent.BuildDirectory)/src/public
+      targetFolder: $(Agent.TempDirectory)/dist
+      cleanTargetFolder: true
+      overWrite: true
+    displayName: 'Copy build result to temp'
 
-- task: CopyFiles@2
-  inputs:
-    sourceFolder: $(Agent.BuildDirectory)/src/public
-    targetFolder: $(Agent.BuildDirectory)/dest
-    overWrite: true
-  displayName: 'Copy build result to destination'
-  
-- script: echo -e linz-preview.coderdojo.net'\n' > CNAME
-  workingDirectory: $(Agent.BuildDirectory)/dest
-  displayName: 'Create CNAME file for GitHub Pages'
+  - task: CopyFiles@2
+    inputs:
+      contents: .gitignore
+      targetFolder: $(Agent.TempDirectory)/dist
+      cleanTargetFolder: false
+      overWrite: true
+    displayName: 'Copy .gitignore to temp'
+    
+  - script: |
+      git checkout gh-pages
+    displayName: 'Switch to gh-pages branch'
 
-- script: |
-    git add --all .
-    git commit -m 'Update website'
-    git push https://$(GitHubPAT)@github.com/coderdojo-linz/$(target_repository).github.io.git
-  workingDirectory: $(Agent.BuildDirectory)/dest
-  displayName: 'Git push to destination repo'
+  - script: |
+      git add --all .
+      git commit -m 'Update website'
+      git push origin gh-pages
+    displayName: 'Git push gh-pages branch'
+
+- job: BuildPreviewSite
+  displayName: 'Build Production Site'
+  pool:
+    vmImage: 'ubuntu-latest'
+
+  variables:
+    hugo_version: '0.73.0'
+    target_repository: 'preview-coderdojo-linz'
+
+  steps:
+  - checkout: self
+    persistCredentials: true
+    clean: true
+    path: src
+    displayName: 'Checkout source'
+
+  - script: |
+      git config --global user.email "rainer@software-architects.at"
+      git config --global user.name "Rainer"
+    displayName: 'Git Settings'
+
+  - script: |
+      wget https://github.com/gohugoio/hugo/releases/download/v$(hugo_version)/hugo_extended_$(hugo_version)_Linux-64bit.deb \
+          -O '$(Pipeline.Workspace)/hugo_$(hugo_version)_Linux-64bit.deb'
+      sudo dpkg -i $(Pipeline.Workspace)/hugo*.deb
+    displayName: 'Install Hugo'
+
+  - script: |
+      npm install
+    workingDirectory: $(Agent.BuildDirectory)/src
+    displayName: 'Run npm install'
+
+  - script: |
+      sed -i -e 's/linz.coderdojo.net/linz-preview.coderdojo.net/g' config.toml
+      hugo -D
+    workingDirectory: $(Agent.BuildDirectory)/src
+    displayName: 'Build preview site'
+
+  - script: git clone https://$(GitHubPAT)@github.com/coderdojo-linz/$(target_repository).github.io.git dest
+    workingDirectory: $(Agent.BuildDirectory)
+    displayName: 'Clone destination preview repo'
+
+  - task: CopyFiles@2
+    inputs:
+      sourceFolder: $(Agent.BuildDirectory)/src/public
+      targetFolder: $(Agent.BuildDirectory)/dest
+      overWrite: true
+    displayName: 'Copy preview build result to destination'
+    
+  - script: echo -e linz-preview.coderdojo.net'\n' > CNAME
+    workingDirectory: $(Agent.BuildDirectory)/dest
+    displayName: 'Create preview CNAME file for GitHub Pages'
+
+  - script: |
+      git add --all .
+      git commit -m 'Update website'
+      git push https://$(GitHubPAT)@github.com/coderdojo-linz/$(target_repository).github.io.git
+    workingDirectory: $(Agent.BuildDirectory)/dest
+    displayName: 'Git push preview to destination repo'
