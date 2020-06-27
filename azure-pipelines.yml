@@ -1,5 +1,5 @@
 trigger:
-- master
+- develop
 
 jobs:
 - job: BuildProductionSite
@@ -48,30 +48,37 @@ jobs:
 
   - task: CopyFiles@2
     inputs:
-      contents: .gitignore
+      contents: .nojekyll
       targetFolder: $(Agent.TempDirectory)/dist
       cleanTargetFolder: false
       overWrite: true
-    displayName: 'Copy .gitignore to temp'
+    displayName: 'Copy .nojekyll to temp'
+
+  - task: CopyFiles@2
+    inputs:
+      contents: azure-pipelines.yml
+      targetFolder: $(Agent.TempDirectory)/dist
+      cleanTargetFolder: false
+      overWrite: true
+    displayName: 'Copy azure-pipelines to temp'
     
   - script: |
-      git checkout gh-pages
-      git rm -rf .
+      git checkout master
       git clean -fxd
-    displayName: 'Switch to gh-pages branch'
+    displayName: 'Switch to master branch'
 
   - task: CopyFiles@2
     inputs:
       sourceFolder: $(Agent.TempDirectory)/dist
       targetFolder: .
       overWrite: true
-    displayName: 'Copy build results to gh-pages branch'
+    displayName: 'Copy build results to master branch'
     
   - script: |
       git add --all .
       git commit -m 'Update website'
-      git push origin gh-pages
-    displayName: 'Git push gh-pages branch'
+      git push origin master
+    displayName: 'Git push master branch'
 
 - job: BuildPreviewSite
   displayName: 'Build Preview Site'
