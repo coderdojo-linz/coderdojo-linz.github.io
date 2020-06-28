@@ -265,6 +265,15 @@ Wichtig: Diese Übung geht davon aus, dass du die Übung Einen Node.js Webserver
     </item>
     
     <item>
+      <title>Clown</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/clown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/clown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Erste Schritte</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/erste-schritte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -321,6 +330,15 @@ Damit dein Computer ein Minecraft-Server wird, musst du eine bestimmte Software 
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/raspberry-pi-b&#43;-j8-header/</guid>
       <description>&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Temperatur und Luftfeuchtigkeit Webserver</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/temperatur-webserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/temperatur-webserver/</guid>
+      <description></description>
     </item>
     
     <item>

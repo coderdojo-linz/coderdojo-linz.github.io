@@ -10,5 +10,23 @@
 	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Clown</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/clown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/clown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Temperatur und Luftfeuchtigkeit Webserver</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/temperatur-webserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/temperatur-webserver/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
