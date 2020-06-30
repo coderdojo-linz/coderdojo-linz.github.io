@@ -14,6 +14,10 @@ In dieser Übung erstellen wir das Computerspiel Snake mit Python. So wie für d
 
 Es wäre ideal, wenn du das *Bubble Blaster* Spiel davor schon programmiert hast, um dich so mit Tkinter vertraut zu machen.
 
+## Code Stand nach der ersten Übungseinheit
+
+Den Source Code Stand nach der ersten Übungseinheit am 26.6.2020, von dem aus wir in der zweiten Einheit am 3.7.2020 weitergearbeitet haben, steht [hier](source/20200626_snake.py) zum Download bereit.
+
 ## 8 Schritte zum *fertigen* Snake Spiel
 
 Es ist oft eine gute Strategie ein Programm nicht in einem einzelnen Wurf zu entwickeln, sondern es in kleine Unterschritte zu unterteilen, die für sich gesehen bewältigbarer sind. Snake werden wir in diesem Sinne in 8 Schritten entwicklen, wobei wir nach jedem Schritt ein ausführbares Programm bekommen, das wir gleich testen können.
@@ -65,6 +69,7 @@ c.pack()
 ```
     
 #### Definition der Gittergröße
+
 Snake spielen wir auf einem Schachbrett, wo die Felder Quadrate mit der Seitenlänge grid_length sind.
 
 ```python
@@ -72,16 +77,15 @@ grid_length= 23
 ```
 
 Bei uns ist die Seitenlänge der Felder auf 23 Pixel gesetzt.
+
 #### Snake Körperelement laden
 
 Der Körper unserer Schlange besteht aus lauter kleinen Kugeln, die wir aus der Datei [snake_body.png](img/snake_body.png) in ein Image Objekt aus der PIL Bibliothek laden. Dieses Bild ist nicht exakt 23 x 23 Pixel groß und wir müssen es daher zunächst noch auf diese Größe verkleinern. Der Zusatz Image.ANTIALIAS als Argument der *body_img.resize* Funktion hilft dabei zu verhinder, dass das Bild durch das Verkleinern *schlechter aussieht*.
 
 ```python
 # Snake Körperelement laden
-body_width = grid_length
-body_height = grid_length
 body_img = Image.open("snake_body.png")
-body_img = body_img.resize((body_width, body_height), Image.ANTIALIAS)
+body_img = body_img.resize((grid_length, grid_length), Image.ANTIALIAS)
 body_img = ImageTk.PhotoImage(body_img)
 ```
 
@@ -397,11 +401,12 @@ def gen_apple_pos():
 Die Funktion *gen_apple_pos()* gibt eine zufällig gewählte neue Position für den Apfel zurück. Es ist wichtig, dass wir den Apfel nicht auf ein Feld setzen, das durch ein Schlangenelement besetzt ist. Deswegen überprüfen wir nach Wahl eines möglichen Kanditaten für die Apfelposition, ob dieses auch durch die Schlange besetzt ist. Wenn ja, dann wird noch einmal eine zufällige Position für den Apfel gewürfelt, bis wir irgendwann eine gültige Position bekommen.
 
 ```python
-def head_eats_apple():
-    return head_pos[0] == apple_pos[0] and head_pos[1] == apple_pos[1]
+apple_img = Image.open("apple.png")
+apple_img = apple_img.resize((grid_length,grid_length))
+apple_img = ImageTk.PhotoImage(apple_img)
 ```
 
-mit dieser Funktion können wir prüfen, ob der Kopf gerade am selben Feld wie der Apfel ist und ihn daher essen kann.
+Um den Apfel zeichnen zu können müssen wir ihn zu Beginn des Programms aus dem Bild [apple.png](img/apple.png) mit Hilfe PIL laden, verkleinern und ein *ImageTk.PhotoImage* Objekt daraus machen. Das haben wir für den Körper der Schlange in Schritt 0 genau gleich gemacht.
 
 ```python
 def redraw_apple():
@@ -417,13 +422,20 @@ Mit der *redraw_apple()* Funktion wird der Apfel auf der tkinter canvas gelösch
 apple = None
 ```
 
-Die *apple* Variable speichert die Referenz auf das gezeichnete apple Objekt auf der tkinter Leinwand, damit wir das alte Apfelbild löschen können, wenn der Apfel eine neue Position bekommnt
+Die *apple* Variable speichert die Referenz auf das gezeichnete Apfel Objekt auf der tkinter Leinwand, damit wir das alte Apfelbild löschen können, wenn der Apfel eine neue Position bekommt
 
 ```python
 n_bodies0 = 10
 ```
 
 Nachdem die Schlangenlänge jetzt nicht mehr fix ist, gibt es eine Variable n_bodies0, mit welcher n_bodies zu Beginn eines Spiels initialisiert wird.
+
+```python
+def head_eats_apple():
+    return head_pos[0] == apple_pos[0] and head_pos[1] == apple_pos[1]
+```
+
+mit dieser Funktion können wir prüfen, ob der Kopf gerade am selben Feld wie der Apfel ist und ihn daher essen kann.
 
 ```python
 sleep_seconds = 0.2
@@ -453,7 +465,7 @@ while True:
         sleep(sleep_seconds)
 ```
 
-In der neuen Hauptschleife prüfen wir jetzt ob der Kopf den Apfel isst und vergrößern in dem Fall auch die Länge der Schlage. Zusätzlich muss der Apfel eine neue Position bekommen und neugezeichnet werden. Auch zu Beginn eines Spiels erzeugen wir eine neue Apfel Version, mit der er frisch auf die Leinwand gezeichnet wird.
+In der neuen Hauptschleife prüfen wir jetzt ob der Kopf den Apfel isst und vergrößern in dem Fall auch die Länge der Schlage. Zusätzlich muss der Apfel eine neue Position bekommen und neugezeichnet werden. Auch zu Beginn eines Spiels erzeugen wir eine neue Apfel Position, mit der er frisch auf die Leinwand gezeichnet wird.
 
 Damit kann unsere Schlange jetzt durch das Essen von Äpfeln über sich hinaus wachsen. Den Source Code findest du [hier](source/snake_06_apfel.py).
 
