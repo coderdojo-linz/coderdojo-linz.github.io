@@ -16,7 +16,9 @@
                     <div class="carousel-caption d-none d-md-block">
                         <div>
                             <h5>{{ .slide.title }}</h5>
-                            <p>{{ .slide.description }}</p>
+                            <div class="container">
+                                <p>{{ .slide.description | markdownify }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>

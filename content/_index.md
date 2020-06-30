@@ -2,6 +2,10 @@
 title: "CoderDojo Linz"
 slides:
     - slide:
+        title: "Wir feiern Geburtstag!"
+        description: "Vor fünf Jahren fand das erste CoderDojo in Linz statt.Seitdem wird alle zwei Wochen programmiert und gelötet.  \nEin großes Dankeschön an alle Mentoren, die das möglich machen!  \n❤❤❤"
+        img: "hero-erstes-coderdojo.jpg"
+    - slide:
         title: "Zu Gast auf der Uni Linz"
         description: "In den Sommerferien durften wir das CoderDojo im Science Park der Uni Linz abhalten."
         img: "uni-linz.jpg"
