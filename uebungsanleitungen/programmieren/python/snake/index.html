@@ -136,6 +136,7 @@
 <li><a href="#python-snake">Python Snake</a>
 <ul>
 <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+<li><a href="#code-stand-nach-der-ersten-übungseinheit">Code Stand nach der ersten Übungseinheit</a></li>
 <li><a href="#8-schritte-zum-fertigen-snake-spiel">8 Schritte zum <em>fertigen</em> Snake Spiel</a>
 <ul>
 <li><a href="#schritt-0-eine-unendliche-schlange-die-sich-geradeaus-bewegt">Schritt 0 - Eine unendliche Schlange die sich geradeaus bewegt</a>
@@ -172,6 +173,10 @@
 <h2 id="voraussetzungen">Voraussetzungen</h2>
 
 <p>Es wäre ideal, wenn du das <em>Bubble Blaster</em> Spiel davor schon programmiert hast, um dich so mit Tkinter vertraut zu machen.</p>
+
+<h2 id="code-stand-nach-der-ersten-übungseinheit">Code Stand nach der ersten Übungseinheit</h2>
+
+<p>Den Source Code Stand nach der ersten Übungseinheit am 26.6.2020, von dem aus wir in der zweiten Einheit am 3.7.2020 weitergearbeitet haben, steht <a href="source/20200626_snake.py" target="_blank">hier</a> zum Download bereit.</p>
 
 <h2 id="8-schritte-zum-fertigen-snake-spiel">8 Schritte zum <em>fertigen</em> Snake Spiel</h2>
 
@@ -269,10 +274,8 @@ c<span style="color:#f92672">.</span>pack()</code></pre></div>
 
 <p>Der Körper unserer Schlange besteht aus lauter kleinen Kugeln, die wir aus der Datei <a href="img/snake_body.png" target="_blank">snake_body.png</a> in ein Image Objekt aus der PIL Bibliothek laden. Dieses Bild ist nicht exakt 23 x 23 Pixel groß und wir müssen es daher zunächst noch auf diese Größe verkleinern. Der Zusatz Image.ANTIALIAS als Argument der <em>body_img.resize</em> Funktion hilft dabei zu verhinder, dass das Bild durch das Verkleinern <em>schlechter aussieht</em>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Snake Körperelement laden</span>
-body_width <span style="color:#f92672">=</span> grid_length
-body_height <span style="color:#f92672">=</span> grid_length
 body_img <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#34;snake_body.png&#34;</span>)
-body_img <span style="color:#f92672">=</span> body_img<span style="color:#f92672">.</span>resize((body_width, body_height), Image<span style="color:#f92672">.</span>ANTIALIAS)
+body_img <span style="color:#f92672">=</span> body_img<span style="color:#f92672">.</span>resize((grid_length, grid_length), Image<span style="color:#f92672">.</span>ANTIALIAS)
 body_img <span style="color:#f92672">=</span> ImageTk<span style="color:#f92672">.</span>PhotoImage(body_img)</code></pre></div>
 <p>Wir haben das Körperelement bisher noch nicht auf die Leinwand gemalen, aber dazu kommen wir bald.</p>
 
@@ -607,9 +610,10 @@ c<span style="color:#f92672">.</span>create_line(x_left, y_down, x_right, y_down
         <span style="color:#66d9ef">if</span> candidate_valid:
             <span style="color:#66d9ef">return</span> candidate</code></pre></div>
 <p>Die Funktion <em>gen_apple_pos()</em> gibt eine zufällig gewählte neue Position für den Apfel zurück. Es ist wichtig, dass wir den Apfel nicht auf ein Feld setzen, das durch ein Schlangenelement besetzt ist. Deswegen überprüfen wir nach Wahl eines möglichen Kanditaten für die Apfelposition, ob dieses auch durch die Schlange besetzt ist. Wenn ja, dann wird noch einmal eine zufällige Position für den Apfel gewürfelt, bis wir irgendwann eine gültige Position bekommen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">head_eats_apple</span>():
-    <span style="color:#66d9ef">return</span> head_pos[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> apple_pos[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">and</span> head_pos[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> apple_pos[<span style="color:#ae81ff">1</span>]</code></pre></div>
-<p>mit dieser Funktion können wir prüfen, ob der Kopf gerade am selben Feld wie der Apfel ist und ihn daher essen kann.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">apple_img <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#34;apple.png&#34;</span>)
+apple_img <span style="color:#f92672">=</span> apple_img<span style="color:#f92672">.</span>resize((grid_length,grid_length))
+apple_img <span style="color:#f92672">=</span> ImageTk<span style="color:#f92672">.</span>PhotoImage(apple_img)</code></pre></div>
+<p>Um den Apfel zeichnen zu können müssen wir ihn zu Beginn des Programms aus dem Bild <a href="img/apple.png" target="_blank">apple.png</a> mit Hilfe PIL laden, verkleinern und ein <em>ImageTk.PhotoImage</em> Objekt daraus machen. Das haben wir für den Körper der Schlange in Schritt 0 genau gleich gemacht.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">redraw_apple</span>():
     <span style="color:#66d9ef">global</span> apple
     <span style="color:#66d9ef">if</span> apple <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
@@ -617,9 +621,12 @@ c<span style="color:#f92672">.</span>create_line(x_left, y_down, x_right, y_down
     apple <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_image(apple_pos[<span style="color:#ae81ff">0</span>], apple_pos[<span style="color:#ae81ff">1</span>], image<span style="color:#f92672">=</span>apple_img)</code></pre></div>
 <p>Mit der <em>redraw_apple()</em> Funktion wird der Apfel auf der tkinter canvas gelöscht und an seiner neuen Position neu gezeichnet. Die Variable apple ist eine globale Variable, welche zu Beginn auf <em>None</em> gesetzt ist.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">apple <span style="color:#f92672">=</span> None</code></pre></div>
-<p>Die <em>apple</em> Variable speichert die Referenz auf das gezeichnete apple Objekt auf der tkinter Leinwand, damit wir das alte Apfelbild löschen können, wenn der Apfel eine neue Position bekommnt</p>
+<p>Die <em>apple</em> Variable speichert die Referenz auf das gezeichnete Apfel Objekt auf der tkinter Leinwand, damit wir das alte Apfelbild löschen können, wenn der Apfel eine neue Position bekommt</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">n_bodies0 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span></code></pre></div>
 <p>Nachdem die Schlangenlänge jetzt nicht mehr fix ist, gibt es eine Variable n_bodies0, mit welcher n_bodies zu Beginn eines Spiels initialisiert wird.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">head_eats_apple</span>():
+    <span style="color:#66d9ef">return</span> head_pos[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> apple_pos[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">and</span> head_pos[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> apple_pos[<span style="color:#ae81ff">1</span>]</code></pre></div>
+<p>mit dieser Funktion können wir prüfen, ob der Kopf gerade am selben Feld wie der Apfel ist und ihn daher essen kann.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sleep_seconds <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>
 <span style="color:#66d9ef">while</span> True:
     n_bodies <span style="color:#f92672">=</span> n_bodies0
@@ -645,7 +652,7 @@ c<span style="color:#f92672">.</span>create_line(x_left, y_down, x_right, y_down
             <span style="color:#66d9ef">break</span>
         window<span style="color:#f92672">.</span>update()
         sleep(sleep_seconds)</code></pre></div>
-<p>In der neuen Hauptschleife prüfen wir jetzt ob der Kopf den Apfel isst und vergrößern in dem Fall auch die Länge der Schlage. Zusätzlich muss der Apfel eine neue Position bekommen und neugezeichnet werden. Auch zu Beginn eines Spiels erzeugen wir eine neue Apfel Version, mit der er frisch auf die Leinwand gezeichnet wird.</p>
+<p>In der neuen Hauptschleife prüfen wir jetzt ob der Kopf den Apfel isst und vergrößern in dem Fall auch die Länge der Schlage. Zusätzlich muss der Apfel eine neue Position bekommen und neugezeichnet werden. Auch zu Beginn eines Spiels erzeugen wir eine neue Apfel Position, mit der er frisch auf die Leinwand gezeichnet wird.</p>
 
 <p>Damit kann unsere Schlange jetzt durch das Essen von Äpfeln über sich hinaus wachsen. Den Source Code findest du <a href="source/snake_06_apfel.py" target="_blank">hier</a>.</p>
 

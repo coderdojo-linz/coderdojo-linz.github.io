@@ -87,7 +87,7 @@ Unsinnige Sätze =============== Drücke einfach ENTER, um einen neuen Satz zu e
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/snake/</guid>
       <description>Python Snake In dieser Übung erstellen wir das Computerspiel Snake mit Python. So wie für das Bubble Blaster Spiel werden wir auch hier auf das Package Tkinter zurückgreifen, um die Spielelemente (Kugeln aus denen die Schlage besteht, Apfel) auf den Bildschirm zu malen.
 Voraussetzungen Es wäre ideal, wenn du das Bubble Blaster Spiel davor schon programmiert hast, um dich so mit Tkinter vertraut zu machen.
-8 Schritte zum fertigen Snake Spiel Es ist oft eine gute Strategie ein Programm nicht in einem einzelnen Wurf zu entwickeln, sondern es in kleine Unterschritte zu unterteilen, die für sich gesehen bewältigbarer sind.</description>
+Code Stand nach der ersten Übungseinheit Den Source Code Stand nach der ersten Übungseinheit am 26.</description>
     </item>
     
     <item>
