@@ -2,8 +2,8 @@
 title: "CoderDojo Linz"
 slides:
     - slide:
-        title: "Das CoderDojo Linz wird 5!"
-        description: "Anfang Juli 2015 fand das erste CoderDojo in Linz statt.Seitdem wird alle zwei Wochen programmiert und gelötet.  \nEin großes Dankeschön an alle Mentoren, die das möglich machen!  \n❤❤❤"
+        title: "CoderDojo Linz wird 5!"
+        description: "Im Juli 2015 fand das erste CoderDojo in Linz statt.Seitdem wird alle zwei Wochen programmiert und gelötet.  \nEin großes Dankeschön an alle Mentoren, die das möglich machen!  \n❤❤❤"
         img: "hero-erstes-coderdojo.jpg"
     - slide:
         title: "Zu Gast auf der Uni Linz"
