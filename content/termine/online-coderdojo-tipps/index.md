@@ -1,5 +1,7 @@
 ---
 title: "Tipps für Online CoderDojos"
+aliases:
+- /online-coderdojo-tipps.html
 ---
 
 # Tipps für Online CoderDojos
