@@ -19,7 +19,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1"> {{ hugo.Generator }} {{"<!-- Fonts -->" | safeHTML }}
     
-    {{ if lt (len .Page.Params.Aliases) 2 }}
+    {{ if (not (isset .Page.Params "aliases")) }}
+    <link rel="canonical" href="https://linz.coderdojo.net{{.Page.RelPermalink}}" />
+    {{ else if (lt (len .Page.Params.Aliases) 2) }}
     <link rel="canonical" href="https://linz.coderdojo.net{{.Page.RelPermalink}}" />
     {{ end }}
 
