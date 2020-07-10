@@ -1,9 +1,8 @@
 ---
 title: "Clown"
-description: "Bringe den Clown zum Jonglieren."
+description: "Wir bauen Bild mit den Neopixel Leuchtdioden und programmieren einen WLAN Access-Point um mit dem Handy die Leuchtdionen steuern zu können."
 img: "clown.jpg"
-imgcover: true
-imgposition: "center top"
-weight: 3
+imgcover: false
+weight: 103
 file: "Clown-AP.pdf"
 ---

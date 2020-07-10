@@ -78,7 +78,7 @@ Jetzt kannst du loslegen. Viel Spaß beim Tüfteln ;-)
 
 ## Lösung
 
-Möchtest du deine Lösung mit einer Musterlösung vergleichen oder brauchst du Inspiration? [Hier findest du eine Musterlösung in C#](https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/csharp/towers-of-hanoi/Program.cs).
+Möchtest du deine Lösung mit einer Musterlösung vergleichen oder brauchst du Inspiration? [Hier findest du eine Musterlösung in C#](source/Program.cs).
 
 
 ## Wie gehts weiter?
