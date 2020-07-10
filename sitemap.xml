@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-breakout/</loc>
+  </url>
+  
+  <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/coder-dojo-bastel-programm/</loc>
   </url>
   
@@ -60,6 +64,10 @@
   
   <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/schnell-start-anleitung/</loc>
+  </url>
+  
+  <url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start/</loc>
   </url>
   
   <url>
@@ -123,10 +131,6 @@
   </url>
   
   <url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/clown/</loc>
-  </url>
-  
-  <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/erste-schritte/</loc>
   </url>
   
@@ -152,10 +156,6 @@
   
   <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/raspberry-pi-b&#43;-j8-header/</loc>
-  </url>
-  
-  <url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/temperatur-webserver/</loc>
   </url>
   
   <url>
@@ -316,6 +316,18 @@
   
   <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield-alt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/stromversorgung/</loc>
+  </url>
+  
+  <url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/temperatur-webserver/</loc>
+  </url>
+  
+  <url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/clown/</loc>
   </url>
   
   <url>
