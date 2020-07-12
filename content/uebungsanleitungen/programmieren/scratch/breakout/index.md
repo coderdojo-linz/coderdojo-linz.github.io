@@ -18,11 +18,11 @@ In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläge
 
 ## Downloads
 
-| Figur    |                                         |
-| ---      | ---                                     |
-| Ball     | [Figur downloaden](Ball.sprite2/)       |
-| Block    | [Figur downloaden](Block.sprite2/)      | 
-| Schläger | [Figur downloaden](Schlaeger.sprite2/)  |
+| Figur    |                                        |
+| ---      | ---                                    |
+| Ball     | [Figur downloaden](Ball.sprite2)       |
+| Block    | [Figur downloaden](Block.sprite2)      | 
+| Schläger | [Figur downloaden](Schlaeger.sprite2)  |
 
 ## Bühne und Figuren anlegen
 
