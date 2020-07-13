@@ -154,5 +154,6 @@ Wer trotzdem lieben auf Deutsch über Python nachschlagen will, der kann z.B. fo
 * [Das Python-Tutorial](https://py-tutorial-de.readthedocs.org/de/python-3.3/)
 * [Python 3 Tutorial](http://www.python-kurs.eu/python3_kurs.php)
 
+Hier kannst du den gesamten [Sourcecode downloaden](source/TurtleZ.py).
 
 Viel Spaß beim Ausprobieren!

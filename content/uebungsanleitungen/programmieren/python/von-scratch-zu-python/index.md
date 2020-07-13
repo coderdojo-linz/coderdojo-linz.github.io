@@ -136,3 +136,5 @@ Du erhältst dann das Bild, das zu Beginn dieser Anleitung zu sehen ist (vermutl
 ## Erweiterungsmöglichkeiten
 - Wie könntest du (zumindest annähernd) Kreise zeichnen?
 - Du könntest im Programm abfragen, wie viele Ecken das n-Eck haben soll, wie viele Vielecke gezeichnet werden sollen oder wie groß sie sein sollen. (Sieh dir dazu die Übungsanleitung „Zahlen raten mit Python“ an.)
+
+Hier kannst du den gesamten [Python Sourcecode downloaden](source/Von Scratch zu Python.pyw). Und hier findest du das [Scratch Project](source/Von Scratch zu Python.sb3).
