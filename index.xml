@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Adafruit HUZZAH ESP8266 Breakout</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-breakout/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-breakout/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>CoderDojo Bastel Programm</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/coder-dojo-bastel-programm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -158,6 +149,15 @@ Visual Studio Code Editor installieren Ganz einfache HTML und JavaScript Program
     </item>
     
     <item>
+      <title>Adafruit HUZZAH ESP8266 Breakout</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-breakout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-breakout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Arduino Sprach-Referenz</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/sprach-referenz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -264,6 +264,15 @@ Technisch lernst du einige Dinge über JavaScript und Node.js:
     </item>
     
     <item>
+      <title>Adafruit HUZZAH ESP8266 MicroPython</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-micropython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-micropython/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Arduino UNO V3 Tutorial</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -357,6 +366,15 @@ Damit dein Computer ein Minecraft-Server wird, musst du eine bestimmte Software 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebung-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adafruit HUZZAH ESP8266 Remote Control</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-remote-control/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-remote-control/</guid>
       <description></description>
     </item>
     
@@ -473,6 +491,15 @@ Projekt erstellen  NetBeans starten Menü File &amp;gt; Menüpunkt New Project &
     </item>
     
     <item>
+      <title>D1 Mini Datenblatt</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini-datenblatt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini-datenblatt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Dein erstes Plugin</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -538,6 +565,15 @@ Projekt erstellen  NetBeans starten Menü File &amp;gt; Menüpunkt New Project &
     </item>
     
     <item>
+      <title>D1 Mini Startertutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini-startertutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini-startertutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>micro:bit with Arduino</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-with-arduino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -583,6 +619,15 @@ Projekt erstellen  NetBeans starten Menü File &amp;gt; Menüpunkt New Project &
     </item>
     
     <item>
+      <title>D1 Mini Pinout Diagramm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini-pinout-diagramm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini-pinout-diagramm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Grundlagen der Elektronik</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen-der-elektronik/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -619,6 +664,15 @@ Projekt erstellen  NetBeans starten Menü File &amp;gt; Menüpunkt New Project &
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/welcome-listener/</guid>
       <description>Auf Ereignisse reagieren Einleitung Bisher haben wir in unseren Plugins immer etwas gemacht, sobald vom Spieler oder auch in der Konsole ein Kommando eingegeben wurde. Das ist ja schon ganz schön, aber manchmal ist es auch notwendig, dass wir auf Ereignisse reagieren. Ein Ereignis ist, wenn irgendetwas im Spiel passiert aber eben kein Kommando eingegeben wurde. Beispiel sind
  Der Spieler tritt einem Server bei Es werden Chat-Nachrichten versendet Es wird irgendetwas zerstört Es explodiert gerade ein Block Wenn ein Sign geändert wird &amp;hellip;  Du kannst unter org.</description>
+    </item>
+    
+    <item>
+      <title>D1 Mini ESP12E Modul</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini-esp12e-modul/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini-esp12e-modul/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -667,6 +721,15 @@ Projekt erstellen  NetBeans starten Menü File &amp;gt; Menüpunkt New Project &
     </item>
     
     <item>
+      <title>Esp8266 Startertutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp8266-startertutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp8266-startertutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Grove Einführung</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/grove-einfuehrung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -699,6 +762,24 @@ Dafür bitte unter &amp;ldquo;File&amp;rdquo; -&amp;gt; &amp;ldquo;Settings&amp;
     </item>
     
     <item>
+      <title>Esp8266 Pinout Diagramm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp8266-pinout-diagramm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp8266-pinout-diagramm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Esp8266 Datenblatt</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp8266-datenblatt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp8266-datenblatt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>PS2 Joystick Shield</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -713,6 +794,33 @@ Dafür bitte unter &amp;ldquo;File&amp;rdquo; -&amp;gt; &amp;ldquo;Settings&amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield-alt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NodeMCU LUA Amica V2 Datenblatt</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2-datenblatt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2-datenblatt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NodeMCU LUA Amica V2 Startertutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2-startertutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2-startertutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NodeMCU LUA Amica V2 Pinout Diagramm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2-pinout-diagramm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2-pinout-diagramm/</guid>
       <description></description>
     </item>
     
