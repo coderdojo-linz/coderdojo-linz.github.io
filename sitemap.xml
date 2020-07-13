@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/</loc>
+    <lastmod>2020-05-17T08:00:19+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/coder-dojo-bastel-programm/</loc>
   </url>
   
@@ -115,11 +120,20 @@
   </url>
   
   <url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/</loc>
+  </url>
+  
+  <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebung-1/</loc>
   </url>
   
   <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/</loc>
+  </url>
+  
+  <url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/</loc>
+    <lastmod>2020-05-17T08:03:59+02:00</lastmod>
   </url>
   
   <url>
@@ -168,6 +182,11 @@
   
   <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebung-2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/</loc>
+    <lastmod>2020-05-17T08:00:35+02:00</lastmod>
   </url>
   
   <url>
@@ -409,23 +428,8 @@
   </url>
   
   <url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/</loc>
-    <lastmod>2020-05-17T08:03:59+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/</loc>
     <lastmod>2020-05-17T08:03:54+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/</loc>
-    <lastmod>2020-05-17T08:00:35+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/</loc>
-    <lastmod>2020-05-17T08:00:19+02:00</lastmod>
   </url>
   
   <url>
@@ -904,10 +908,6 @@
   
   <url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/von-scratch-zu-python/</loc>
-  </url>
-  
-  <url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/</loc>
   </url>
   
   <url>
