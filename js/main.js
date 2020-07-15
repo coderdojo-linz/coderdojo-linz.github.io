@@ -96,18 +96,28 @@ function loadEvents(eventsTable) {
             var date = moment(new Date(event.date)).startOf('day');
             var formattedDate = date.format('DD.MM.YYYY');
 
+            var formattedBeginTime = moment(event.workshops
+                .map(function(w) {return w.begintime;})
+                .reduce(function(min, val) { return min && min < val ? min : val;  }, null))
+                .format('HH:mm');
+
+            var formattedEndTime = moment(event.workshops
+                .map(function(w) {return w.endtime;})
+                .reduce(function(max, val) { return max && max > val ? max : val;  }, null))
+                .format('HH:mm');
+
             row += '<tr>';
 
             // event time
             row += '<td class=\'text-nowrap text-center d-none d-sm-table-cell\'>';
             row += '<a id=\'' + formattedDate + '\'></a>';
-            row += '<div class=\'event-time\'><span class=\'badge badge-primary badge-pill event-type event-type-' + event.type.toLowerCase().replace(' ', '-') + '\'>' + event.type + '</span><br />' + formattedDate + '<br />14:45 - 19:00</div>';
+            row += '<div class=\'event-time\'><span class=\'badge badge-primary badge-pill event-type event-type-' + event.type.toLowerCase().replace(' ', '-') + '\'>' + event.type + '</span><br />' + formattedDate + '<br />' + formattedBeginTime +  ' - ' + formattedEndTime + '</div>';
             row += '</td>';
 
             // event time xs
             row += '<td class=\'event\'>';
             row += '<div class=\'d-block d-sm-none event-time event-time-xs\'>';
-            row += '<span class=\'badge badge-primary badge-pill event-type event-type-' + event.type.toLowerCase().replace(' ', '-') + '\'>' + event.type + '</span><br/><b>' + formattedDate + ' 14:45 - 19:00</b>';
+            row += '<span class=\'badge badge-primary badge-pill event-type event-type-' + event.type.toLowerCase().replace(' ', '-') + '\'>' + event.type + '</span><br/><b>' + formattedDate + ' ' + formattedBeginTime + ' - ' + formattedEndTime + '</b>';
             row += '</div>';
 
             // workshops
