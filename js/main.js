@@ -99,7 +99,7 @@ function loadEvents(eventsTable) {
             var formattedBeginTime = '13:45';
             var formattedEndTime = '18:00';
 
-            if (event.workshops) {
+            if (event && event.workshops.length) {
                 formattedBeginTime = moment(event.workshops
                     .map(function (w) { return w.begintime; })
                     .reduce(function (min, val) { return min && min < val ? min : val; }, null))
