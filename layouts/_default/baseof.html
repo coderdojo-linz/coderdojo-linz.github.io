@@ -12,13 +12,13 @@
 
         gtag('config', 'UA-63326882-1');
     </script>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> {{ .Title }} </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1"> {{ hugo.Generator }} {{"<!-- Fonts -->" | safeHTML }}
-    
+
     {{ if (not (isset .Page.Params "aliases")) }}
     <link rel="canonical" href="https://linz.coderdojo.net{{.Page.RelPermalink}}" />
     {{ else if (lt (len .Page.Params.Aliases) 2) }}
@@ -38,7 +38,7 @@
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="body"> 
+<body id="body">
     {{ partial "navigation.html" . }} {{ if isset .Params "heroimage" }} {{ $heroImagePosition := "50% 50%" }}
     {{ if isset .Page.Params "heroimageposition" }} {{ $heroImagePosition = .Page.Params.HeroImagePosition }} {{ end }}
     {{ $imageResource := ($.Scratch.Get "images").GetMatch .Page.Params.HeroImage }} {{ $resized := $imageResource.Fit "1920x1200" }} <section
@@ -62,10 +62,15 @@
     </section> {{ end }} {{ block "jumbotron" . }} {{ end }} {{ block "main" . }} {{ end }} <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <p> Coding Club Linz, Birkenweg 16, 4060 Leonding <br />
-                        <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
-                    </p>
+                <div class="col">
+                    <div>
+                        <div>
+<img src="/img/logo-coding-club-linz-white.svg">
+                        </div>
+                        <div>Coding Club Linz<br />Birkenweg 16, 4060 Leonding <br />
+                            <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

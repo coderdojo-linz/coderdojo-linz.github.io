@@ -169,7 +169,9 @@ a[id]:empty {
 }
 
 @media (max-width: 575px) {
-    section, .inner-section {
+
+    section,
+    .inner-section {
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -188,7 +190,8 @@ a[id]:empty {
 }
 
 /* sections */
-section, .inner-section {
+section,
+.inner-section {
 
     h1,
     h2 {
@@ -218,36 +221,36 @@ section, .inner-section {
     &.primary {
         background-color: $primary-color;
     }
-    
+
     &.dark {
         background-color: $dark-background;
     }
-    
+
     &.primary,
     &.dark {
         color: #fff;
-    
+
         h1,
         h2 {
             &::after {
                 border-top-color: #fff;
             }
         }
-    
+
         p,
         td {
             color: #fff;
         }
-    
+
         a {
             color: #fff;
             text-decoration: underline;
         }
-    
+
         a.btn {
             text-decoration: none;
         }
-    
+
         .table td {
             border-color: #fff;
         }
@@ -417,30 +420,53 @@ section#coderdojos-austria {
 
 /* footer */
 footer {
-    text-align: center;
     background: $dark-background;
     padding: 2rem 0;
     position: absolute;
     width: 100%;
     bottom: 0;
-    height: 120px;
-}
-
-footer p {
+    
+    line-height: 1.4em;
     font-weight: 300;
     font-size: 12px;
     color: #fff;
     letter-spacing: 2px;
+
+    div.col {
+        text-align: center;
+
+        >div {
+            width: auto;
+            display: inline-block;
+            white-space: nowrap;
+            vertical-align: top;
+
+            > div {
+                vertical-align: middle;
+                text-align: left;
+                display: inline-block;
+
+                &:first-of-type {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+
+    img {
+        height: 70px;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
-footer p a {
-    color: #fff;
-}
-
-footer p a:hover {
-    color: #fff;
-    text-decoration: none;
-}
 
 @media print {
     section:first-of-type {
@@ -665,7 +691,8 @@ section.events {
 }
 
 /* contact*/
-#contact-success, #contact-error {
+#contact-success,
+#contact-error {
     display: none;
 }
 
