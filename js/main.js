@@ -155,6 +155,8 @@ function loadEvents(eventsTable) {
 
                     row += '<p><strong>Link zum Teilnehmen:</strong> ' + (workshop.zoom ? '<a href=\'' + workshop.zoom + '\' target=\'_blank\'>' + workshop.zoom + '</a>' : 'wird noch bekanntgegeben') + '</p>';
 
+                    row += '<p><strong>Zoom User für Mentoren:</strong> ' + (workshop.zoomUser ? workshop.zoomUser.replace(/@linz.coderdojo.net/, '') : '') + '</p>';
+
                     row += '</div>';
                 });
             } else {
