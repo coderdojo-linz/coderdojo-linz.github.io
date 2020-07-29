@@ -151,7 +151,7 @@ function loadEvents(eventsTable) {
                         row += 'werden noch bekanntgegeben';
                     }
 
-                    row += '<p><strong>Mentoren:</strong> ' + (workshop.mentors && workshop.mentors.length) ? workshop.mentors.join(', ') : 'werden noch bekanntgegeben' + '</p>';
+                    row += '<p><strong>Mentoren:</strong> ' + ((workshop.mentors && workshop.mentors.length) ? workshop.mentors.join(', ') : 'werden noch bekanntgegeben') + '</p>';
 
                     row += '<p><strong>Link zum Teilnehmen:</strong> ' + (workshop.zoom ? '<a href=\'' + workshop.zoom + '\' target=\'_blank\'>' + workshop.zoom + '</a>' : 'wird noch bekanntgegeben') + '</p>';
 
