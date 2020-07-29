@@ -57,7 +57,7 @@ function selectCategory(category) {
 }
 
 function loadEventsOverview(eventsTable) {
-    $.get('https://participants-management-service.azurewebsites.net/api/events/?past=false', function (data) {
+    $.get('https://cdw-planner.azurewebsites.net/api/events?past=false', function (data) {
         var converter = new showdown.Converter();
 
         data.slice(0, 3).forEach(function (event) {
@@ -87,7 +87,7 @@ function loadEventsOverview(eventsTable) {
 }
 
 function loadEvents(eventsTable) {
-    $.get('https://participants-management-service.azurewebsites.net/api/events/?past=false', function (data) {
+    $.get('https://cdw-planner.azurewebsites.net/api/events?past=false', function (data) {
         var converter = new showdown.Converter();
 
         data.forEach(function (event) {
@@ -151,7 +151,7 @@ function loadEvents(eventsTable) {
                         row += 'werden noch bekanntgegeben';
                     }
 
-                    row += '<p><strong>Mentoren:</strong> ' + workshop.mentors.join(', ') + '</p>';
+                    row += '<p><strong>Mentoren:</strong> ' + (workshop.mentors && workshop.mentors.length) ? workshop.mentors.join(', ') : 'werden noch bekanntgegeben' + '</p>';
 
                     row += '<p><strong>Link zum Teilnehmen:</strong> ' + (workshop.zoom ? '<a href=\'' + workshop.zoom + '\' target=\'_blank\'>' + workshop.zoom + '</a>' : 'wird noch bekanntgegeben') + '</p>';
 
