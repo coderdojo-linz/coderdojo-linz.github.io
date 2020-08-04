@@ -67,7 +67,7 @@ window.title("Snake")
 c = Canvas(window, width=B, height = H)
 c.pack()
 ```
-    
+
 #### Definition der Gittergröße
 
 Snake spielen wir auf einem Schachbrett, wo die Felder Quadrate mit der Seitenlänge grid_length sind.
@@ -109,7 +109,7 @@ Das ist jetzt auch ein guter Zeitpunkt um zu erklären, wie man Objekte auf der 
 Die Richtung in die sich die Schlange bewegt haben wir zu Beginn mit (1,0) gesetzt, das heißt die Schlange wandert zu Beginn nach rechts. In der Skizze sind in Grün auch die anderen 3 Richtungen eingezeichnet. Würde die Schlange nach unten wandern, wäre die Richtung z.B. (0,1).
 
 #### Bewegen vom Schlangenkopf
-    
+
 ```python
 # Snake Head bewegen
 def move_head():
@@ -167,11 +167,11 @@ def richtung_aendern(event):
 
 c.bind_all("<Key>", richtung_aendern)
 ```
-    
+
 Das ist auch schon alles, das wir machen müssen, um die Schlange steuerbar zu machen. Den Source Code findest du [hier](source/snake_01_steuerbar_unendlich.py). 
 
 {{< imgblock "img/snapshot_1.PNG" "" >}}{{< /imgblock >}} 
- 
+
 Dieser Schritt war zum Glück viel kürzer als Schritt 0. Wir werden jetzt versuchen die Schritte eher kurz zu halten, denn mit kleinen Schritten lässt sich leichter der Überblick bewahren und es ist auch motivierender, wenn man die Änderungen im Code schnell sehen kann. Im Schritt 0 mussten wir aber zunächst einmal das Grundgerüst schaffen und das hat uns etwas mehr Mühe gekostet.
 
 ### Schritt 2 - Die Schlange wird endlich
@@ -187,7 +187,7 @@ Weiters definieren wir die Variable bodies, die wir zu Beginn auf eine leere Lis
 ```python
 bodies = []
 ```
-    
+
 Wenn wir ein neues Schlangenelement erstellen, dann speichern wir es in der bodies Liste, damit wir das Element später wieder löschen können. Die *new_body()* Funktion wird daher geändert
 
 ```python
@@ -195,7 +195,7 @@ Wenn wir ein neues Schlangenelement erstellen, dann speichern wir es in der bodi
 def new_body():
     bodies.append(c.create_image(head_pos[0], head_pos[1], image=body_img))
 ```
-        
+
 Jetzt wird das neue Element nicht nur erstellt, sondern auch eine Referenz darauf in die bodies Liste gespeichert. Mit dieser Referenz können wir ein Element wieder löschen. Das machen wir in der *delete_old_body()* Funktion, wenn die Länge der Schlange größer als n_bodies ist. 
     
 ```python
@@ -241,7 +241,7 @@ Das Tupel (x_left, y_up) gibt die linke obere Ecke des Spielbretts an
 x_left = 20
 y_up = 20
 ```
-    
+
 Die rechte untere Ecke liegt dann bei (x_right, y_down) und kann wie folgt berechnet werden
 
 ```python
@@ -397,7 +397,7 @@ def gen_apple_pos():
         if candidate_valid:
             return candidate
 ```
-                
+
 Die Funktion *gen_apple_pos()* gibt eine zufällig gewählte neue Position für den Apfel zurück. Es ist wichtig, dass wir den Apfel nicht auf ein Feld setzen, das durch ein Schlangenelement besetzt ist. Deswegen überprüfen wir nach Wahl eines möglichen Kanditaten für die Apfelposition, ob dieses auch durch die Schlange besetzt ist. Wenn ja, dann wird noch einmal eine zufällige Position für den Apfel gewürfelt, bis wir irgendwann eine gültige Position bekommen.
 
 ```python
@@ -531,7 +531,7 @@ while True:
 Damit sind wir am Ende von Schritt 7 angekommen. Gratulation du solltest jetzt ein *fertiges* Snake Spiel haben! Den Source Code findest du [hier](source/snake_07_punkte.py). Jetzt kannst du versuchen einen High Score aufzustellen, oder weitere Features einbauen. Man könnte z.B.
 
 * Den High Score abspeichern und am Ende eines Spiels immer den aktuellen Score mit dem High Score vergleichen.
-* Der Schlange einen schönen Kopf geben, der nicht einfach ein normales Schlangenelement ist. Es gebe dafür z.B. das Bild [snake_head.png](img/snake_head.png).
+* Der Schlange einen schönen Kopf geben, der nicht einfach ein normales Schlangenelement ist. Es gäbe dafür z.B. das Bild [snake_head.png](img/snake_head.png).
 * Hindernisse einbauen
 * Mehr als einen Apfel gleichzeitig platzieren
 * Die Schlange mit einer künstlichen Intelligenz automatisch steuern lassen
