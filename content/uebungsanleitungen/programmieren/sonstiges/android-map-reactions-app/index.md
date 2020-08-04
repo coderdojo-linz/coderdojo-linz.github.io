@@ -41,7 +41,7 @@ Um die App auf deinem Handy auszuführen, musst du zuerst die Entwickler Optione
 4. Gehe zurück zu den Einstellungen und klick auf `Entwickler Optionen`
 5. Aktiviere `USB-Debugging`
 
-Falls du es noch nicht getan hast, solltest du jetzt dein HSmartphoneandy mithilfe eines USB-Kabels mit deinem Computer verbinden. Dann sollte ein Dialog mit dem Titel `USB-Debugging zulassen` am Smartphone erscheinen. Bestätige diesen mit `Erlauben`.
+Falls du es noch nicht getan hast, solltest du jetzt dein Smartphone mithilfe eines USB-Kabels mit deinem Computer verbinden. Dann sollte ein Dialog mit dem Titel `USB-Debugging zulassen` am Smartphone erscheinen. Bestätige diesen mit `Erlauben`.
 
 Jetzt kannst du wieder zurück zu Android Studio wechseln und die App ausführen. Wähle dazu dein Smartphone aus (falls es nicht schon automatisch ausgewählt wurde) und klicke dann auf den grünen `Play` Button neben dem Dropdown. Jetzt sollte die App auf deinem Smartphone ausgeführt werden. 
 
@@ -76,10 +76,62 @@ Enthält die `AndroidManifest.xml` Datei
   - `values` 
     Hier werden XML Dateien die einfache Werte enthalten abgelegt. Das sind zum Beispiel Farben oder Texte
 
-
 Ganz unten sieht man noch den Abschnitt `Gradle Scripts`. Dieser beinhaltet alles rund um das Build Management-Tool Gradle. Dieses kümmert sich um die Kompilierung des Quellcodes und die Resourcen der App und generiert anschließend eine APK (Android Application Package) Datei, die dann auf einem Smartphone installiert werden kann. Hier sind vor allem die zwei `build.gradle` Dateien wichtig. Die `build.gradle` Datei auf Projektebene (erkennt man am `(Project: Anleitung)` hinter dem Dateinamen) gibt die Build-Anweisungen für das gesamte Projekt vor, ist im Rahmen dieser Anleitung aber nicht so wichtig. Für uns ist die `build.gradle (Module: app)`  viel wichtiger. Sie enthält die Build-Anweisungen und die Bibliotheken (libraries), welche in der App eingebunden sind.
 
 ![](./img/android_app_basics.png)  
+
+## Alles muss raus
+
+Jetzt ist es an der Zeit, alles zu entfernen was wir nicht mehr brauchen. Später soll man, wenn man die App öffnet, zuerst ein Eingabefeld sehen, in dem man einen Satz eingeben kann. Gibt man diesen ein und klickt auf "Los" soll eine Karte mit der zum Satz passenden Route angezeigt werden. Wenn wir uns jetzt die App, die Android Studio generiert hat ansehen, wird schnell klar auf welche Teile dazu verzichtet werden kann.
+
+![](./img/basic_activity.png) 
+
+Wenn du dir die App ansiehst, wirst du merken dass die Toolbar (ganz oben am Bildschirm) und der Floating Action Button (der türkise Button rechts unten) immer da sind, egal welcher Inhalt sonst noch angezeigt wird. Daraus kannst du schließen, dass diese 2 Komponenten Teile der `MainActivity` sind, während die Buttons (`NEXT` & `PREVIOUS`) und das Textfeld (`Hello first fragment`) im `FirstFragment` und im `SecondFragment` enthalten sind. 
+
+Mit den folgenden Schritten kannst du die Toolbar und den Floating Action Button entfernen.
+
+1. Öffne die `MainActivity.java`
+2. Lösche die Methoden die Methoden `onCreateOptionsMenu(Menu menu)` und `onOptionsItemSelected(MenuItem item)`. Diese verwalten das Menü mit den drei Punkten rechts oben, das benötigen wir aber nicht.
+3. Um alle Teile des Menüs zu löschen, lösche auch den Ordner `menu` im `res` Ordner
+4. Lösche den folgenden Code. Dieser setzt die Toolbar als Action Bar in der App und konfiguriert den Floating Action Button. Da wir beide nicht brauchen, können wir das einfach löschen. Somit haben wir die Logik der Komponenten entfernt. 
+```java
+Toolbar toolbar = findViewById(R.id.toolbar);
+setSupportActionBar(toolbar);
+
+FloatingActionButton fab = findViewById(R.id.fab);
+	fab.setOnClickListener(new View.OnClickListener() {
+		@Override
+		public void onClick(View view) {
+			Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+				.setAction("Action", null).show();
+	}
+   });
+```
+5. Öffne nun die Datei `res/layout/activity_main.xml` und wähle ganz rechts oben `Design` aus (im Bild unten in Orange gekennzeichnet)
+6. Klicke im `Component Tree` (im Bild unten in Grün gekennzeichnet) mit der rechten Maustaste auf das `AppBarLayout` (das enthält die Toolbar) und klicke auf `Delete`
+7. Wiederhole das gleiche für den `fab`, den Floating Action Button
+
+![](./img/android_studio_layout_editor.png) 
+
+Jetzt hast du alle unnötigen Komponenten aus der MainActivity entfernt und können mit den folgenden Schritten in den Fragments weiter machen.
+
+1. Öffne das Layout `fragment_first.xml` 
+
+2. Lösche die `textview_first`, der `button_first` bleibt aber. Das wird später der "Los" Button
+
+3. Öffne das Layout `fragment_second.xml` und lösche den `button_second`, hier behalten wir die `textview_second`
+
+4. Öffne das `SecondFragment.java` und lösche diesen Code
+
+   ```java
+   view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {
+   	@Override
+       public void onClick(View view) {
+       	NavHostFragment.findNavController(SecondFragment.this)
+           		.navigate(R.id.action_SecondFragment_to_FirstFragment);
+   	}
+   });
+   ```
 
 ## Phrase/Satz eingeben
 
@@ -110,3 +162,6 @@ Ganz unten sieht man noch den Abschnitt `Gradle Scripts`. Dieser beinhaltet alle
 ### UI
 
 ### Lambda warmup
+   ```
+
+   ```
