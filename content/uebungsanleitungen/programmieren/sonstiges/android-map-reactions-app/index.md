@@ -192,16 +192,56 @@ Als erstes passt du das `FirstFragment` so an, dass der Benutzer einen Satz eing
 17. Um ihn nun direkt unter dem `EditText` und an der rechten Bildschirmkante zu positionieren, lösche den linken und den unteren Constraint.
 
 18. Lege im Constraint Widget die folgenden Rahmen fest: 
-    - Rechts: 16
-    - Oben: 32
+   - Rechts: 16
+   - Oben: 32
 
 Das wars auch schon mit dem Layout zum eingeben eines Satzes. Dein Layout sollte nun so aussehen
 
 {{< imgblock "img/layout_phrase_input.png" >}}{{< /imgblock >}}
 
-### Input einlesen
+### Input einlesen und dem nächsten Fragment übergeben
 
-### Zum nächsten Fragment wechseln & input/phrase übergeben
+Da das Layout nun fertig ist, ist der nächste Schritt den Input des Benutzers im `FirstFragment.java` einzulesen und dem nächsten Fragment zu übergeben, wenn "LOS" gedrückt wird. Das bedeutet du musst einen `OnClickListener` hinzufügen dessen `onClick(View view)` Methode immer ausgeführt wird, der Benutzer auf "LOS" klickt. In dieser Methode liest du zuerst den Text aus dem `EditText` ein, bevor du zum nächsten Fragment navigierst. 
+
+Ein Teil des Codes den du dazu benötigst ist schon vorhanden. Und zwar gibt es schon einen `OnClickListener` der ausgelöst wird, wenn der Button geklickt wird. Auch die Navigation zum `SecondFragment.java` funktioniert schon. Deshalb sind nur noch die folgenden Schritte nötig.
+
+1. Den `Navigation Graph` vorbereiten, damit du den eingegebenen Satz als Argument übergeben kannst.
+   1. Öffne zuerst die Datei `res/navigation/nav_graph.xml`. 
+   2. Klicke in der linken Spalte unter `GRAPH` auf `SecondFragment`.
+   3. Klicke rechts in der Attributliste auf das `+` rechts von `Arguments`.
+   4. Gib "phrase" als Name und "String" als Type ein. Alles andere kannst du leer lassen.
+   5. Klicke auf "Add"
+   
+   
+2. Den Satz tatsächlich einlesen und an das `SecondFragment` übergeben, wenn die `onClick()` Methode aufgerufen wird.
+  1. Öffne wieder das `FirstFragment.java`
+  2. Ersetze den Inhalt der `onViewCreated()` Methode mit dem folgenden Code.
+
+```java
+super.onViewCreated(view, savedInstanceState);
+
+// Bindet das EditText, dass du im Layout erstellt hast an diese Variable
+final EditText editText = view.findViewById(R.id.edittext_phrase);
+
+view.findViewById(R.id.button_go).setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View view) {
+
+		// Liest den Text aus dem EditText ein und speichert ihn in die Variable phrase
+		String phrase = editText.getText().toString();
+
+		// Erstellt ein Bundle das die Argumente enthält, die ans SecondFragment übergeben werden
+		Bundle arguments = new Bundle();
+		// Fügt den Text, der oben eingelesen wurde, zum Bundle mit den Argumenten hinzu
+		arguments.putString("phrase", phrase);
+
+		// Navigiert zum 2. Fragment und übergibt die oben erstellten Argumente
+		NavHostFragment
+			.findNavController(FirstFragment.this)
+			.navigate(R.id.action_FirstFragment_to_SecondFragment, arguments);
+	}
+});
+```
 
 ## Karte anzeigen
 
