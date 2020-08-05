@@ -105,18 +105,19 @@ Mit den folgenden Schritten kannst du die Toolbar und den Floating Action Button
 3. Um alle Teile des Menüs zu löschen, lösche auch den Ordner `res/menu`.
 
 4. Lösche den folgenden Code. Dieser setzt die Toolbar als Action Bar in der App und konfiguriert den Floating Action Button. Da wir beide nicht brauchen, können wir das einfach löschen. Somit haben wir die Logik der Komponenten entfernt. 
-	```java
+
+```java
 Toolbar toolbar = findViewById(R.id.toolbar);
 setSupportActionBar(toolbar);
 
 FloatingActionButton fab = findViewById(R.id.fab);
-	fab.setOnClickListener(new View.OnClickListener() {
-		@Override
-		public void onClick(View view) {
-			Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-				.setAction("Action", null).show();
+fab.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View view) {
+		Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+			.setAction("Action", null).show();
 	}
-   });
+});
 ```
 
 5. Öffne nun die Datei `res/layout/activity_main.xml` und wähle ganz rechts oben `Design` aus (im Bild unten in Orange gekennzeichnet).
@@ -137,13 +138,13 @@ Jetzt hast du alle unnötigen Komponenten aus der MainActivity entfernt und kann
 
 4. Öffne das `SecondFragment.java` und lösche den unten stehenden Code.
 ```java
-   view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {
-   	@Override
-       public void onClick(View view) {
-       	NavHostFragment.findNavController(SecondFragment.this)
-           		.navigate(R.id.action_SecondFragment_to_FirstFragment);
-   	}
-   });
+view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View view) {
+		NavHostFragment.findNavController(SecondFragment.this)
+			.navigate(R.id.action_SecondFragment_to_FirstFragment);
+	}
+});
 ```
 
 ## Einen Satz eingeben
@@ -156,8 +157,8 @@ Als erstes passt du das `FirstFragment` so an, dass der Benutzer einen Satz eing
 
 2. Füge die folgenden Strings hinzu.
 ```xml
-   <string name="enter_a_phrase">Gib einen Satz ein</string>
-   <string name="go">Los</string>
+<string name="enter_a_phrase">Gib einen Satz ein</string>
+<string name="go">Los</string>
 ```
 
 3. Öffne nun das Layout `fragment_first.xml` und wähle den Button mit einem Klick aus.
@@ -211,7 +212,6 @@ Ein Teil des Codes den du dazu benötigst ist schon vorhanden. Und zwar gibt es 
    3. Klicke rechts in der Attributliste auf das `+` rechts von `Arguments`.
    4. Gib "phrase" als Name und "String" als Type ein. Alles andere kannst du leer lassen.
    5. Klicke auf "Add"
-   
    
 2. Den Satz tatsächlich einlesen und an das `SecondFragment` übergeben, wenn die `onClick()` Methode aufgerufen wird.
   1. Öffne wieder das `FirstFragment.java`
