@@ -154,6 +154,7 @@
 <li><a href="#todo-list-service">Todo List Service</a></li>
 <li><a href="#einfügen-von-items">Einfügen von Items</a></li>
 <li><a href="#done-items-anzeigen">Done Items anzeigen</a></li>
+<li><a href="#dashboard">Dashboard</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -454,12 +455,11 @@ ng g component dashboard</code></pre></div>
     }
   }
 
-  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">updateTodoById</span>(<span style="color:#a6e22e">id</span>: <span style="color:#66d9ef">number</span>, <span style="color:#a6e22e">todo</span>: <span style="color:#66d9ef">Todo</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">updateTodoById</span>(<span style="color:#a6e22e">id</span>: <span style="color:#66d9ef">number</span>, <span style="color:#a6e22e">description</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">dueDate</span>: <span style="color:#66d9ef">Date</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
     <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">index</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todos</span>.<span style="color:#a6e22e">findIndex</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">id</span>);
     <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">index</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>) {
-      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todos</span>[<span style="color:#a6e22e">index</span>].<span style="color:#a6e22e">description</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">todo</span>.<span style="color:#a6e22e">description</span>;
-      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todos</span>[<span style="color:#a6e22e">index</span>].<span style="color:#a6e22e">dueDate</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">todo</span>.<span style="color:#a6e22e">dueDate</span>;
-      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todos</span>[<span style="color:#a6e22e">index</span>].<span style="color:#a6e22e">doneDate</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">todo</span>.<span style="color:#a6e22e">doneDate</span>;
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todos</span>[<span style="color:#a6e22e">index</span>].<span style="color:#a6e22e">description</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">description</span>;
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todos</span>[<span style="color:#a6e22e">index</span>].<span style="color:#a6e22e">dueDate</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">dueDate</span>;
     }
   }
 
@@ -505,7 +505,7 @@ ng g component dashboard</code></pre></div>
 })
 <span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AppModule</span> { }
 </code></pre></div>
-<p>In der <code>todo-list.component.ts</code> fügen wir jetzt ein Property <code>newTodo</code> ein. Dieses verwenden wir im HTML dann zum Data Binding. In der neuen Methode <code>addTodo</code> fügen wir das Item im Service dann ein.</p>
+<p>In der <code>todo-list.component.ts</code> fügen wir jetzt Properties für die <code>description</code> und das <code>dueDate</code> ein. Diese verwenden wir im HTML dann zum Data Binding. In der neuen Methode <code>addTodo</code> fügen wir das Item im Service dann ein.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Component</span>, <span style="color:#a6e22e">OnInit</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
 
 <span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">TodoListService</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../shared/todo-list.service&#39;</span>;
@@ -517,7 +517,9 @@ ng g component dashboard</code></pre></div>
   <span style="color:#a6e22e">styleUrls</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./todo-list.component.scss&#39;</span>]
 })
 <span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TodoListComponent</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">OnInit</span> {
-  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">newTodo</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">description</span>: <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">dueDate</span>: <span style="color:#66d9ef">string</span> } <span style="color:#f92672">=</span> { <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#a6e22e">dueDate</span>: <span style="color:#66d9ef">formatDate</span>(<span style="color:#66d9ef">new</span> Date(), <span style="color:#e6db74">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#e6db74">&#39;en&#39;</span>) };
+  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">todoDescription</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
+  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">todoDueDate</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatDate</span>(<span style="color:#66d9ef">new</span> Date(), <span style="color:#e6db74">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#e6db74">&#39;en&#39;</span>);
+  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">showDone</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
 
   <span style="color:#66d9ef">constructor</span>(<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">todoListService</span>: <span style="color:#66d9ef">TodoListService</span>) { }
 
@@ -525,9 +527,10 @@ ng g component dashboard</code></pre></div>
   }
 
   <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">addTodo</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
-    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">newTodo</span>.<span style="color:#a6e22e">description</span>) {
-      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoListService</span>.<span style="color:#a6e22e">addTodo</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">newTodo</span>.<span style="color:#a6e22e">description</span>, <span style="color:#66d9ef">new</span> Date(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">newTodo</span>.<span style="color:#a6e22e">dueDate</span>));
-      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">newTodo</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">description</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>, <span style="color:#a6e22e">dueDate</span>: <span style="color:#66d9ef">formatDate</span>(<span style="color:#66d9ef">new</span> Date(), <span style="color:#e6db74">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#e6db74">&#39;en&#39;</span>) };
+    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoDescription</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoDueDate</span>) {
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoListService</span>.<span style="color:#a6e22e">addTodo</span>(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoDescription</span>, <span style="color:#66d9ef">new</span> Date(<span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoDueDate</span>));
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoDescription</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
+      <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoDueDate</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">formatDate</span>(<span style="color:#66d9ef">new</span> Date(), <span style="color:#e6db74">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#e6db74">&#39;en&#39;</span>);
     }
   }
 }
@@ -536,7 +539,7 @@ ng g component dashboard</code></pre></div>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h2</span>&gt;Todos&lt;/<span style="color:#f92672">h2</span>&gt;
 
 &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;addItem&#34;</span>&gt;
-    Neues Todo: &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#960050;background-color:#1e0010">[(</span><span style="color:#a6e22e">ngModel</span><span style="color:#960050;background-color:#1e0010">)]=&#34;</span><span style="color:#a6e22e">newTodo</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">description</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt; &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;date&#34;</span> <span style="color:#960050;background-color:#1e0010">[(</span><span style="color:#a6e22e">ngModel</span><span style="color:#960050;background-color:#1e0010">)]=&#34;</span><span style="color:#a6e22e">newTodo</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">dueDate</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt; &lt;<span style="color:#f92672">button</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">click</span><span style="color:#960050;background-color:#1e0010">)=&#34;</span><span style="color:#a6e22e">addTodo</span><span style="color:#960050;background-color:#1e0010">()&#34;</span>&gt;Hinzufügen&lt;/<span style="color:#f92672">button</span>&gt;
+    Neues Todo: &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#960050;background-color:#1e0010">[(</span><span style="color:#a6e22e">ngModel</span><span style="color:#960050;background-color:#1e0010">)]=&#34;</span><span style="color:#a6e22e">todoDescription</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt; &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;date&#34;</span> <span style="color:#960050;background-color:#1e0010">[(</span><span style="color:#a6e22e">ngModel</span><span style="color:#960050;background-color:#1e0010">)]=&#34;</span><span style="color:#a6e22e">todoDueDate</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt; &lt;<span style="color:#f92672">button</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">click</span><span style="color:#960050;background-color:#1e0010">)=&#34;</span><span style="color:#a6e22e">addTodo</span><span style="color:#960050;background-color:#1e0010">()&#34;</span>&gt;Hinzufügen&lt;/<span style="color:#f92672">button</span>&gt;
 &lt;/<span style="color:#f92672">div</span>&gt;
 
 &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">*</span><span style="color:#a6e22e">ngFor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;let item of todoListService.getTodos(false)&#34;</span>&gt;
@@ -553,7 +556,7 @@ ng g component dashboard</code></pre></div>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h2</span>&gt;Todos&lt;/<span style="color:#f92672">h2</span>&gt;
 
 &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;addItem&#34;</span>&gt;
-    Neues Todo: &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#960050;background-color:#1e0010">[(</span><span style="color:#a6e22e">ngModel</span><span style="color:#960050;background-color:#1e0010">)]=&#34;</span><span style="color:#a6e22e">newTodo</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">description</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt; &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;date&#34;</span> <span style="color:#960050;background-color:#1e0010">[(</span><span style="color:#a6e22e">ngModel</span><span style="color:#960050;background-color:#1e0010">)]=&#34;</span><span style="color:#a6e22e">newTodo</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">dueDate</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt; &lt;<span style="color:#f92672">button</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">click</span><span style="color:#960050;background-color:#1e0010">)=&#34;</span><span style="color:#a6e22e">addTodo</span><span style="color:#960050;background-color:#1e0010">()&#34;</span>&gt;Hinzufügen&lt;/<span style="color:#f92672">button</span>&gt;
+    Neues Todo: &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#960050;background-color:#1e0010">[(</span><span style="color:#a6e22e">ngModel</span><span style="color:#960050;background-color:#1e0010">)]=&#34;</span><span style="color:#a6e22e">todoDescription</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt; &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;date&#34;</span> <span style="color:#960050;background-color:#1e0010">[(</span><span style="color:#a6e22e">ngModel</span><span style="color:#960050;background-color:#1e0010">)]=&#34;</span><span style="color:#a6e22e">todoDueDate</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt; &lt;<span style="color:#f92672">button</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">click</span><span style="color:#960050;background-color:#1e0010">)=&#34;</span><span style="color:#a6e22e">addTodo</span><span style="color:#960050;background-color:#1e0010">()&#34;</span>&gt;Hinzufügen&lt;/<span style="color:#f92672">button</span>&gt;
 &lt;/<span style="color:#f92672">div</span>&gt;
 
 &lt;<span style="color:#f92672">p</span>&gt;Done anzeigen: &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span> <span style="color:#960050;background-color:#1e0010">[(</span><span style="color:#a6e22e">ngModel</span><span style="color:#960050;background-color:#1e0010">)]=&#34;</span><span style="color:#a6e22e">showDone</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
@@ -586,6 +589,95 @@ ng g component dashboard</code></pre></div>
     </div>
     <div class="col-12 col-md-12">
     <img src="/uebungsanleitungen/programmieren/web/angular-todo-list/img/todo-list-with-done.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="dashboard">Dashboard</h2>
+
+<p>Im Dashboard wollen wir jetzt zwei Balken anzeigen für die noch offenen und die bereits erledigten Todos. In <code>dashboard.component.ts</code> fügen wir dazu zwei Methoden ein, die uns die jeweiligen Prozentsätze ausrechnen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Component</span>, <span style="color:#a6e22e">OnInit</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
+
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">TodoListService</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../shared/todo-list.service&#39;</span>;
+
+<span style="color:#66d9ef">@Component</span>({
+  <span style="color:#a6e22e">selector</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;app-dashboard&#39;</span>,
+  <span style="color:#a6e22e">templateUrl</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;./dashboard.component.html&#39;</span>,
+  <span style="color:#a6e22e">styleUrls</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./dashboard.component.scss&#39;</span>]
+})
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DashboardComponent</span> <span style="color:#66d9ef">implements</span> <span style="color:#a6e22e">OnInit</span> {
+
+  <span style="color:#66d9ef">constructor</span>(<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">todoListService</span>: <span style="color:#66d9ef">TodoListService</span>) { }
+
+  <span style="color:#a6e22e">ngOnInit</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+  }
+
+  <span style="color:#a6e22e">getTodoPercentage</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">number</span> {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">allTodos</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoListService</span>.<span style="color:#a6e22e">getTodos</span>();
+
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">allTodos</span>.<span style="color:#a6e22e">length</span>) {
+      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoListService</span>.<span style="color:#a6e22e">getTodos</span>(<span style="color:#66d9ef">false</span>).<span style="color:#a6e22e">length</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">allTodos</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>;
+    } <span style="color:#66d9ef">else</span> {
+      <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+    }
+  }
+
+  <span style="color:#a6e22e">getDonePercentage</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">number</span> {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">allTodos</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoListService</span>.<span style="color:#a6e22e">getTodos</span>();
+
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">allTodos</span>.<span style="color:#a6e22e">length</span>) {
+      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">todoListService</span>.<span style="color:#a6e22e">getTodos</span>(<span style="color:#66d9ef">true</span>).<span style="color:#a6e22e">length</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">allTodos</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>;
+    } <span style="color:#66d9ef">else</span> {
+      <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+    }
+  }
+}
+</code></pre></div>
+<p>Dann fügen wir im HTML zwei divs ein, deren Breite über Data Binding im <code>[ngStyle]</code> gesteuert wird. Hier verwenden wir die berrechneten Prozentsätze:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h2</span>&gt;Dashboard&lt;/<span style="color:#f92672">h2</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bar-chart&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">ngStyle</span><span style="color:#960050;background-color:#1e0010">]=&#34;{</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">width</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">:</span> <span style="color:#a6e22e">getTodoPercentage</span><span style="color:#960050;background-color:#1e0010">().</span><span style="color:#a6e22e">toString</span><span style="color:#960050;background-color:#1e0010">()</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#39;%&#39;</span> <span style="color:#960050;background-color:#1e0010">}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todo-bar&#34;</span>&gt;Todo: {{ getTodoPercentage() | number:&#39;1.0-0&#39; }} %&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">ngStyle</span><span style="color:#960050;background-color:#1e0010">]=&#34;{</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">width</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">:</span> <span style="color:#a6e22e">getDonePercentage</span><span style="color:#960050;background-color:#1e0010">().</span><span style="color:#a6e22e">toString</span><span style="color:#960050;background-color:#1e0010">()</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#39;%&#39;</span> <span style="color:#960050;background-color:#1e0010">}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;done-bar&#34;</span>&gt;Done: {{ getDonePercentage() | number:&#39;1.0-0&#39; }} %&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<p>Im Stylesheet müssen wir noch die Höhe und Farben der Balken festlegen:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#a6e22e">.bar-chart</span> {
+    <span style="color:#f92672">&gt;</span><span style="color:#f92672">div</span> {
+        <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">40px</span>;
+        <span style="color:#f92672">margin-bottom</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">10px</span>;
+        <span style="color:#f92672">white-space</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">nowrap</span>;
+    }
+
+    <span style="color:#a6e22e">.todo-bar</span> {
+        <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> #03a9f4;
+        <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">40px</span>;
+    }
+
+    <span style="color:#a6e22e">.done-bar</span> {
+        <span style="color:#f92672">background-color</span><span style="color:#a6e22e">:</span> #4caf50;
+        <span style="color:#f92672">height</span><span style="color:#a6e22e">:</span> <span style="color:#f92672">40px</span>;
+    }
+}</code></pre></div>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/angular-todo-list/img/dashboard.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
     </div>
 </div>
 
