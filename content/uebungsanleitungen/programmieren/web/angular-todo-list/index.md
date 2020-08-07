@@ -245,12 +245,11 @@ export class TodoListService {
     }
   }
 
-  public updateTodoById(id: number, todo: Todo): void {
+  public updateTodoById(id: number, description: string, dueDate: Date): void {
     const index = this.todos.findIndex(t => t.id === id);
     if (index >= 0) {
-      this.todos[index].description = todo.description;
-      this.todos[index].dueDate = todo.dueDate;
-      this.todos[index].doneDate = todo.doneDate;
+      this.todos[index].description = description;
+      this.todos[index].dueDate = dueDate;
     }
   }
 
@@ -307,7 +306,7 @@ import { FormsModule } from '@angular/forms';
 export class AppModule { }
 ```
 
-In der `todo-list.component.ts` fügen wir jetzt ein Property `newTodo` ein. Dieses verwenden wir im HTML dann zum Data Binding. In der neuen Methode `addTodo` fügen wir das Item im Service dann ein.
+In der `todo-list.component.ts` fügen wir jetzt Properties für die `description` und das `dueDate` ein. Diese verwenden wir im HTML dann zum Data Binding. In der neuen Methode `addTodo` fügen wir das Item im Service dann ein.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
@@ -321,7 +320,9 @@ import { formatDate } from '@angular/common';
   styleUrls: ['./todo-list.component.scss']
 })
 export class TodoListComponent implements OnInit {
-  public newTodo: { description: string, dueDate: string } = { description: '', dueDate: formatDate(new Date(), 'yyyy-MM-dd', 'en') };
+  public todoDescription = '';
+  public todoDueDate = formatDate(new Date(), 'yyyy-MM-dd', 'en');
+  public showDone = false;
 
   constructor(public todoListService: TodoListService) { }
 
@@ -329,9 +330,10 @@ export class TodoListComponent implements OnInit {
   }
 
   public addTodo(): void {
-    if (this.newTodo.description) {
-      this.todoListService.addTodo(this.newTodo.description, new Date(this.newTodo.dueDate));
-      this.newTodo = { description: '', dueDate: formatDate(new Date(), 'yyyy-MM-dd', 'en') };
+    if (this.todoDescription && this.todoDueDate) {
+      this.todoListService.addTodo(this.todoDescription, new Date(this.todoDueDate));
+      this.todoDescription = '';
+      this.todoDueDate = formatDate(new Date(), 'yyyy-MM-dd', 'en');
     }
   }
 }
@@ -343,7 +345,7 @@ Jetzt müssen wir noch im HTML eine Möglichkeit bieten, neue Todos zu erfassen 
 <h2>Todos</h2>
 
 <div class="addItem">
-    Neues Todo: <input type="text" [(ngModel)]="newTodo.description"> <input type="date" [(ngModel)]="newTodo.dueDate"> <button (click)="addTodo()">Hinzufügen</button>
+    Neues Todo: <input type="text" [(ngModel)]="todoDescription"> <input type="date" [(ngModel)]="todoDueDate"> <button (click)="addTodo()">Hinzufügen</button>
 </div>
 
 <div *ngFor="let item of todoListService.getTodos(false)">
@@ -367,7 +369,7 @@ Im HTML können wir jetzt das Häckchen hinzufügen und im `*ngFor` dann den ric
 <h2>Todos</h2>
 
 <div class="addItem">
-    Neues Todo: <input type="text" [(ngModel)]="newTodo.description"> <input type="date" [(ngModel)]="newTodo.dueDate"> <button (click)="addTodo()">Hinzufügen</button>
+    Neues Todo: <input type="text" [(ngModel)]="todoDescription"> <input type="date" [(ngModel)]="todoDueDate"> <button (click)="addTodo()">Hinzufügen</button>
 </div>
 
 <p>Done anzeigen: <input type="checkbox" [(ngModel)]="showDone"></p>
@@ -381,4 +383,81 @@ Im HTML können wir jetzt das Häckchen hinzufügen und im `*ngFor` dann den ric
 <p>Todo: {{ todoListService.getTodos(false).length }}<br/>Done: {{ todoListService.getTodos(true).length }}</p>
 ```
 
-{{< imgblock "img/todo-list-with-done.png" "Menu" >}}{{< /imgblock >}}
+{{< imgblock "img/todo-list-with-done.png" "Todo Liste" >}}{{< /imgblock >}}
+
+## Dashboard
+
+Im Dashboard wollen wir jetzt zwei Balken anzeigen für die noch offenen und die bereits erledigten Todos. In `dashboard.component.ts` fügen wir dazu zwei Methoden ein, die uns die jeweiligen Prozentsätze ausrechnen:
+
+```ts
+import { Component, OnInit } from '@angular/core';
+
+import { TodoListService } from '../shared/todo-list.service';
+
+@Component({
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.scss']
+})
+export class DashboardComponent implements OnInit {
+
+  constructor(public todoListService: TodoListService) { }
+
+  ngOnInit(): void {
+  }
+
+  getTodoPercentage(): number {
+    const allTodos = this.todoListService.getTodos();
+
+    if (allTodos.length) {
+      return this.todoListService.getTodos(false).length / allTodos.length * 100;
+    } else {
+      return 0;
+    }
+  }
+
+  getDonePercentage(): number {
+    const allTodos = this.todoListService.getTodos();
+
+    if (allTodos.length) {
+      return this.todoListService.getTodos(true).length / allTodos.length * 100;
+    } else {
+      return 0;
+    }
+  }
+}
+```
+
+Dann fügen wir im HTML zwei divs ein, deren Breite über Data Binding im `[ngStyle]` gesteuert wird. Hier verwenden wir die berrechneten Prozentsätze:
+
+```html
+<h2>Dashboard</h2>
+<div class="bar-chart">
+    <div [ngStyle]="{ 'width': getTodoPercentage().toString() + '%' }" class="todo-bar">Todo: {{ getTodoPercentage() | number:'1.0-0' }} %</div>
+    <div [ngStyle]="{ 'width': getDonePercentage().toString() + '%' }" class="done-bar">Done: {{ getDonePercentage() | number:'1.0-0' }} %</div>
+</div>
+```
+
+Im Stylesheet müssen wir noch die Höhe und Farben der Balken festlegen:
+
+```scss
+.bar-chart {
+    >div {
+        height: 40px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+
+    .todo-bar {
+        background-color: #03a9f4;
+        height: 40px;
+    }
+
+    .done-bar {
+        background-color: #4caf50;
+        height: 40px;
+    }
+}
+```
+
+{{< imgblock "img/dashboard.png" "Dashboard" >}}{{< /imgblock >}}
