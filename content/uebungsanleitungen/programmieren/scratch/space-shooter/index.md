@@ -11,6 +11,7 @@ scripts: 13
 data: 2
 aliases:
 - /trainingsanleitungen/scratch/scratch-space-shooter-v3.html
+- /trainingsanleitungen/scratch/scratch-space-shooter.html
 ---
 
 ## Bühne und Figuren anlegen

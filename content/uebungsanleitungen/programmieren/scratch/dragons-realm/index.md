@@ -11,6 +11,7 @@ scripts: 19
 data: 11
 aliases:
 - /trainingsanleitungen/scratch/scratch-dragons-realm-v3.html
+- /trainingsanleitungen/scratch/scratch-dragons-realm.html
 ---
 
 Bei Dragons Realm steuerst du einen Drachen, der sein Territorium gegen eindringende Raubritter verteidigt.

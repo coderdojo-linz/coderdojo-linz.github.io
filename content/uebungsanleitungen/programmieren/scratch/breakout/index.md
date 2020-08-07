@@ -12,6 +12,7 @@ scripts: 9
 data: 7
 aliases:
 - /trainingsanleitungen/scratch/scratch-breakout-v3.html
+- /trainingsanleitungen/scratch/scratch-breakout.html
 ---
 
 In diesem Spiel pulverisierst du bunte Mauersteine, indem du mit deinem Schläger einen Ball darauf schleuderst. Wenn alle Mauersteine zerstört sind, kommst du in den nächsten Level, wo dein Ball dann noch schneller fliegt.

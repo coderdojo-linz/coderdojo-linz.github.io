@@ -11,6 +11,7 @@ scripts: 13
 data: 2
 aliases:
 - /trainingsanleitungen/scratch/scratch-snake-v3.html
+- /trainingsanleitungen/scratch/scratch-snake.html
 ---
 
 Steuere die Schlange, um die Äpfel aufzusammeln. Aber pass auf, dass du nicht den Rand berührst und auch keinen Knoten in die Schlange machst, wenn sie länger wird.

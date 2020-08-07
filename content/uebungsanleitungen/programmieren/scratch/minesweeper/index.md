@@ -11,6 +11,7 @@ scripts: 15
 data: 6
 aliases: 
 - /trainingsanleitungen/scratch/scratch-minesweeper-v3.html
+- /trainingsanleitungen/scratch/scratch-minesweeper.html
 ---
 
 ## Figuren anlegen

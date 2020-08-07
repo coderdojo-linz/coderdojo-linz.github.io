@@ -21,7 +21,7 @@
                 <li class="nav-item {{ cond (eq .File.Dir "mentoren\\") "active" "" }}">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item {{ cond (eq .File.File.Path "sponsoring.md") "active" "" }}">
+                <li class="nav-item {{ cond (eq .Page.File.Path "sponsoring.md") "active" "" }}">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
                 <li class="nav-item {{ cond (hasPrefix .Page.File.Path "uebungsanleitungen") "active" "" }}">

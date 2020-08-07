@@ -8,6 +8,7 @@ level: 1
 version: 3
 aliases:
   - /trainingsanleitungen/scratch/scratch-fledermaus-v3.html
+  - /trainingsanleitungen/scratch/scratch-fledermaus.html
 sprites: 2
 scripts: 10
 data: 0

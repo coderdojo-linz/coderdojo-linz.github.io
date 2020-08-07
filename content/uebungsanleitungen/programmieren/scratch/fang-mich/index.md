@@ -7,6 +7,7 @@ img: "endgame.png"
 imgposition: "center bottom"
 aliases:
 - /trainingsanleitungen/scratch/scratch-fang-mich-v3.html
+- /trainingsanleitungen/scratch/scratch-fang-mich.html
 level: 1
 weight: 4
 sprites: 2

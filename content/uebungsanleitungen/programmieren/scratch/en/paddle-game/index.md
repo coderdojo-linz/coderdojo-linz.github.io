@@ -9,6 +9,9 @@ version: 2
 sprites: 3
 scripts: 9
 data: 2
+aliases:
+- /trainingsanleitungen/scratch/en/scratch-paddle-game-v3.html
+- /trainingsanleitungen/scratch/en/scratch-paddle-game.html
 ---
 
 ## Creating Stage and Sprites
