@@ -183,7 +183,7 @@ Als erstes passt du das `FirstFragment` so an, dass der Benutzer einen Satz eing
 
 13. Jetzt hast du sogenannte `Constraints` gesetzt, um das `EditText` in der Mitte des Bildschirms auszurichten.
 
-14. Nun soll das `EditText` die ganze Breite des Bildschirms einnehmen. Gehe dazu wieder rechts zur Attributliste und wähle `0dp (match constraints)` als `layout_width` aus. 
+14. Nun soll das `EditText` die ganze Breite des Bildschirms einnehmen. Gehe dazu wieder rechts zur Attributliste und wähle `0dp (match constraint)` als `layout_width` aus. 
 
 15. Damit es nicht ganz so am Rand "festklebt", fügst du jetzt links und rechts einen Rand hinzu. Diesen kannst du im `Constraint Widget` unter der Attributliste setzen (siehe Bild). Leg hier links und rechts einen Rahmen von jeweils 16 fest.
 {{< imgblock "img/constraint_widget.png" >}}{{< /imgblock >}}
@@ -213,14 +213,14 @@ Ein Teil des Codes den du dazu benötigst ist schon vorhanden. Und zwar gibt es 
    4. Gib "phrase" als Name und "String" als Type ein. Alles andere kannst du leer lassen.
    5. Klicke auf "Add"
    
-2. Den Satz tatsächlich einlesen und an das `SecondFragment` übergeben, wenn die `onClick()` Methode aufgerufen wird.
+2. Den Satz einlesen und an das `SecondFragment` übergeben, wenn die `onClick()` Methode aufgerufen wird.
   1. Öffne wieder das `FirstFragment.java`
   2. Ersetze den Inhalt der `onViewCreated()` Methode mit dem folgenden Code.
 
 ```java
 super.onViewCreated(view, savedInstanceState);
 
-// Bindet das EditText, dass du im Layout erstellt hast an diese Variable
+// Bindet das EditText, das du im Layout erstellt hast, an diese Variable
 final EditText editText = view.findViewById(R.id.edittext_phrase);
 
 view.findViewById(R.id.button_go).setOnClickListener(new View.OnClickListener() {
@@ -243,19 +243,214 @@ view.findViewById(R.id.button_go).setOnClickListener(new View.OnClickListener() 
 });
 ```
 
+## Route herunterladen und parsen
+
+Nachdem du das erste Fragment fertig gestellt hast, ist es an der Zeit, die Route im `SecondFragment` zu laden und anschließend auch in einer Liste zu speichern, die du später gut verarbeiten kannst. In diesem Schritt wirst du den Satz, den das `FirstFragment` ans `SecondFragment` übergibt auslesen, die dazugehörige Route laden und diese anschließend parsen und in einer einfachen `TextView` anzeigen.
+
+### Einfaches Layout zum Testen erstellen
+
+In diesem Schritt benötigst du nur eine `TextView` in der du die Route anzeigst. Diese ist im Layout `fragment_second.xml` bereits vorhanden, passe sie aber mit den folgenden Schritten an. Die einzelnen Schritte sind nicht mehr so genau erklärt, da du das alles auch im `fragment_first.xml` schon gemacht hast. Solltest du also nicht weiter kommen, sieh dir einfach die Schritte oben nochmal genauer an. 
+
+1. Gib der `TextView` die id `textview_info`.
+
+2. Ziehe alle 4 Constraints zu den Rändern um die `TextView` zu zentrieren.
+
+
+### Satz auslesen
+
+In diesem Schritt liest du den Satz aus, denn du im `FirstFragment` übergeben hast und zeigst ihn in der `TextView`, die du soeben angepasst hast, an. Befolge dazu diese Schritte.
+
+1. Öffne das `SecondFragment.java`.
+
+2. Erstelle die folgenden zwei Member-Variablen direkt unter `public class SecondFragment extends Fragment {`.
+```java
+private TextView textViewInfo;
+private String phrase;
+```
+3. Ersetze die `onViewCreated()` Methode mit dem folgendne Code.
+```java
+public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+	super.onViewCreated(view, savedInstanceState);
+
+        // Bindet die TextView, die du im Layout erstellt hast, an diese Variable
+	textViewInfo = view.findViewById(R.id.textview_info);
+
+	// Holt die "phrase" aus dem Bundle mit den Argumenten
+	phrase = getArguments().getString("phrase");
+	// Zeigt die phrase in der TextView an
+	textViewInfo.setText(phrase);
+}
+```
+
+Wenn du die App jetzt ausführst, kannst du im ersten Fragment einen Satz eingeben und siehst diesen dann, nachdem du auf "LOS" geklickt hast, im zweiten Fragment.
+
+### Route herunterladen
+
+Um die Route zu laden, verwendest du einen Service, der im Internet angeboten wird. Dort kannst du einen Satz hinschicken und bekommst eine Liste mit Orten, die jeweils aus Name und Position (latitude und longitude) bestehen, zurück. Dieser Service ist unter https://api.map-reactions.ksick.dev/v0-1 verfügbar und so definiert:
+
+```shell
+# REQUEST
+GET /route
+parameter:
+    - phrase: String
+
+# ANTWORT
+- 200 OK: Gibt eine Liste von Orten zurück, die sich so ähnlich anhören, wie die übergebene Phrase
+- 400 Bad Request: Die übergebene Phrase ist ungültig oder nicht vorhanden
+- 404 Not Found: Es konnte keine Route für die übergebene Phrase gefunden werden
+```
+
+Aus dieser Definition kannst du die folgenden Dinge lesen:
+
+- Du musst einen `HTTP GET request` zu `/route` von diesem Endpunkt absetzen.
+- Du musst den eingegebenen Satz in dem parameter `phrase` übergeben. 
+- Du bekommst einen Statuscode zurück, der `200` ist wenn alles gut gegangen ist und die Antwort die Route enthält. 
+- Wenn etwas nicht passt oder ein Fehler passiert bekommst du einen anderen Statuscode als `200` in der Antwort.
+
+Mit diesen Informationen kannst du den Request absetzen. Da du den Request ins Internet schickst, muss der Benutzer der App dies schon vor dem Download sehen können. Deshalb musst du die Berechtiung dafür im `AndroidManifest.xml` eintragen. Füge dazu die folgenden Zeile über dem `<application` tag ein.
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+Um den HTTP Request abzusetzen, kannst du [Volley](https://developer.android.com/training/volley) verwenden. Das ist eine HTTP Library (Bibliothek), die von Google entwickelt wurde, um die Kommunikation mit dem Internet zu vereinfachen. Mit den folgenden Schritten kannst du die Bibliothek zu deinem Projekt hinzufügen und den HTTP Request absetzen.
+
+1. Öffne die Datei `build.gradle (Module: app)`.
+
+2. Füge die `dependency` für Volley  im Block `dependencies` ein.
+```xml
+dependencies {
+	// andere dependencies, die bereits vorhanden sind
+	implementation 'com.android.volley:volley:1.1.1'
+}
+```
+3. Klicke rechts oben in der Leiste auf "Sync Now".
+
+4.   Öffne nun das `SecondFragment.java`. 
+
+5. Füge die folgende Methode unter der Methode `onViewCreated()` ein.
+```java
+public void loadRoute() {
+	// Erstellt eine Queue, die alle Requests ausführt, die zu ihr hinzugefügt werden
+	RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+
+	// Die URL für den Request. Diese wird aus den folgenden Teilen zusammengesetzt:
+	//   - Die Base URL https://api.map-reactions.ksick.dev/v0-1
+	//   - Der Endpunkt: /route
+	//   - Der Paremeter phrase: ?phrase=<der eingegebene satz>
+	// Der Satz, der vom Benutzer eingegeben wurde, muss kodiert werden, damit die gesamte URL gültig ist
+	// Sollte dabei etwas schief laufen, wird eine Exception geworfen, und ein Fehler angezeigt
+	String url = null;
+	try {
+		url = "https://api.map-reactions.ksick.dev/v0-1/route?phrase=" + URLEncoder.encode(phrase, "UTF-8");
+	} catch (UnsupportedEncodingException e) {
+		// Zeigt einen Fehler in der Info-TextView an und führe diese Methode nicht weiter aus
+		textViewInfo.setText(e.getMessage());
+		return;
+	}
+
+	// Erstellt den Request, der später abgesetzt werden soll
+	StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+		new Response.Listener<String>() {
+			@Override
+			public void onResponse(String response) {
+				// Der Code in dieser Methode wird ausgeführt, wenn der Request erfolgreich war.
+			}
+		},
+		new Response.ErrorListener() {
+			@Override
+			public void onErrorResponse(VolleyError error) {
+				// Der Code in dieser Methode wird ausgeführt, wenn ein Fehler passiert ist.
+			}
+		});
+
+	// Fügt den Request zur RequestQueue hinzu um ihn abzusetzen
+	requestQueue.add(stringRequest);
+}
+```
+
+6. Mit dem oben stehenden Code, hast du den Request abgesetzt, das Ergebnis wird aber noch ignoriert. Um diesen Abschnitt abzuschließen, genügt es das Ergebnis in der Info-`TextView` anzuzeigen. Füge dazu ganz einfach die Zeilen `textViewInfo.setText(response);` und `textViewInfo.setText(error.getMessage());` in den `onResponse()` beziehungsweise in den `onErrorResponse` Block ein. 
+7. Als letztes muss die soeben erstellte `loadRoute()` Methode noch ausgeführt werden. Rufe sie daher in der letzten Zeile der `onViewCreated()` Methode mit `loadRoute()` auf. 
+
+Nun hast du es geschafft, die Route aus dem Internet herunterzuladen und das Ergebnis in einer `TextView` anzuzeigen. Wenn du die App ausführst und einen Satz eingibst, sollte das Ergebnis in etwa so aussehen (natürlich mit einem anderen Text):
+
+>  *INFO: Es kann sein, dass der erste Request sehr lange dauert oder sogar fehl schlägt. Geh einfach nochmal zurück zum Start und probier es nochmal. Die Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#lambda-warmup) beschrieben.*
+
+{{< imgblock "img/load_route_result.jpg" >}}{{< /imgblock >}}
+
+### Route parsen
+
+Die Route wird als sogenanntes JSON zurückgegeben. Dieses JSON wandelst du in diesem Schritt in etwas um, mit dem du auch gut arbeiten kannst, zwar eine Liste von Objekten. Diese Umwandlung von JSON zu einem Objekt oder umgekehrt nennt man "parsen". Dabei kannst du dir wieder von einer Bibliothek helfen lassen. Nämlich von [Gson](https://github.com/google/gson). Dazu brauchst du die dependency `implementation 'com.google.code.gson:gson:2.8.6'`, füge diese in der Datei `build.gradle (Module: app)` hinzu (das funktioniert genauso wie oben bei Volley). 
+
+Nun definierst du zu welchem Objekt Gson das JSON parsen soll. Wenn du dir das JSON ansiehst, das der Server zurückgibt, siehst du, dass die einzelnen Orte jeweils aus "name", "latitude" und "longitude" bestehen. 
+
+```json
+[
+	{
+		"name": "Hy",
+		"latitude": 36.57534,
+		"longitude": -91.45792
+	},
+	{
+		"name": "Wye",
+		"latitude": 38.44936,
+		"longitude": -122.73138
+	},
+	{
+		"name": "Getz",
+		"latitude": 35.20472,
+		"longitude": -114.02023
+	}
+]
+```
+
+Befolge deshalb die folgenden Schritte um die Klasse `Place.Java` zu erstellen. 
+
+1. Klicke mit der rechten Maustaste auf das Package in dem die `MainActivity.java` enthalten ist und gehe auf `New` -> `Java Class`.
+{{< imgblock "img/new_java_class.png" >}}{{< /imgblock >}}
+
+2. Gib "Place" als Name ein und drück auf "Enter". 
+
+3. Initialisiere die Klasse mit den folgenden Variablen. 
+```java
+public class Place {
+	private String name;
+	private Double latitude;
+	private Double longitude;
+}
+```
+4. Um die Getter und Setter automatisch zu generieren, klicke mit der rechten Maustaste auf `Place` und wähle dann `Generate` -> `Getter and Setter` aus. 
+
+5. Wähle mit der Tastenkombination `Strg` + `A` alle Variablen aus und klick auf "OK".
+
+6. Wiederhole das gleiche aber wähle `toString()` statt `Getter and Setter` aus um die `toString()` Methode zu generieren.
+
+Somit hast du das Java Objekt erstellt, das verwendet wird um das JSON zu parsen. Jetzt verwendest du Gson um das JSON zu einer Liste von `Place` Objekten zu parsen. Öffne dazu wieder das `SecondFragment.java` und gehe zum `onResponse()` Listener. Ersetze dort die Zeile `textViewInfo.setText(response);` mit dem folgenden Code.
+```java
+// Parsed das JSON in der Variable response zu einer Liste von Place Objekten
+List<Place> route = new Gson().fromJson(response, new TypeToken<List<Place>>(){}.getType());
+// Zeigt den ersten Place in der Liste in der Info-TextView an
+textViewInfo.setText(route.get(0).toString());
+```
+
+Die App sollte nun so aussehen. 
+{{< imgblock "img/parse_route_result.jpg" >}}{{< /imgblock >}}
+
 ## Karte anzeigen
 
-### Basic TextView Layout
+Nachdem du die Route im letzten Abschnitt erfolgreich heruntergeladen und geparsed hast, geht es in diesem Abschnitt darum die Karte inklusive Marker und Route auch tatsächlich anzuzeigen. Um die Karte anzuzeigen, verwendest du [osmdroid](https://github.com/osmdroid/osmdroid). Füge dazu die dependency `'org.osmdroid:osmdroid-android:6.1.8'` zur `build.gradle (Module: app)` hinzu.
 
-### input argument holen und route fetchen
+### Layout anpassen
 
-### route parsen
+### Karte anzeigen
 
-### karte mit markern anzeigen
+### Marker hinzufügen
 
-### route anzeigen
+### Route hinzufügen
 
 ## Bonus: Verbesserungen
+
+### naming der files
 
 ### navgraph anpassen
 
