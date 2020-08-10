@@ -10,6 +10,7 @@ img: "map_reactions_app.png"
 In dieser Übung programmierst du eine Android App in Java. In dieser App kann man einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem [Comic Strip](https://xkcd.com/2260/). Während der Entwicklung der App wirst du lernen, wie man eine einfache Android App inklusive Navigation zwischen Screens schreibt. Außerdem wirst du über sogenannte REST Calls mit einem Server über das Internet kommunizieren, um den eingegebenen Satz in eine Route zu verwandeln. Zu guter letzt wird diese Route dann mithilfe von [Open Street Map](https://www.openstreetmap.org/) auf einer Karte angezeigt.
 
 {{< imgblock "https://imgs.xkcd.com/comics/reaction_maps.png" "XKCD's Reaction Maps comic strip" >}}{{< /imgblock >}}
+![](https://imgs.xkcd.com/comics/reaction_maps.png)
 
 ## Voraussetzungen
 
@@ -54,6 +55,7 @@ Falls du es noch nicht getan hast, solltest du dein Smartphone jetzt mithilfe ei
 Jetzt kannst du wieder zurück zu Android Studio wechseln und die App ausführen. Wähle dazu dein Smartphone aus (falls es nicht schon automatisch ausgewählt wurde) und klicke dann auf den grünen `Play` Button neben dem Dropdown. Jetzt sollte die App auf deinem Smartphone ausgeführt werden. 
 
 {{< imgblock "img/android_studio_run.png" >}}{{< /imgblock >}}
+![](img/android_studio_run.png)
 
 ### Was beinhaltet diese App?
 
@@ -91,6 +93,7 @@ Ganz unten sieht man noch den Abschnitt `Gradle Scripts`. Dieser beinhaltet alle
 Jetzt ist es an der Zeit, alles zu entfernen was du nicht mehr brauchst. Später soll man, wenn man die App öffnet, zuerst ein Eingabefeld sehen, in dem man einen Satz eingeben kann. Gibt man einen Satz ein und klickt auf "Los" soll eine Karte mit der zum Satz passenden Route angezeigt werden.
 
 {{< imgblock "img/basic_activity.png" >}}{{< /imgblock >}}
+![](img/basic_activity.png)
 
 Wenn du dir die App ansiehst, wirst du merken dass die `Toolbar` (ganz oben am Bildschirm) und der `Floating Action Button` (der türkise Button rechts unten) immer da sind, egal welcher Inhalt sonst noch angezeigt wird. Daraus kannst du schließen, dass diese 2 Komponenten Teile der `MainActivity` sind, während die Buttons ("NEXT" & "PREVIOUS") und das Textfeld ("Hello first fragment") im `FirstFragment` und im `SecondFragment` enthalten sind. 
 
@@ -125,6 +128,7 @@ fab.setOnClickListener(new View.OnClickListener() {
 7. Wiederhole das gleiche für den `fab`, den Floating Action Button.
 
 {{< imgblock "img/android_studio_layout_editor.png" >}}{{< /imgblock >}}
+![](android_studio_layout_editor.png)
 
 Jetzt hast du alle unnötigen Komponenten aus der MainActivity entfernt und kannst mit den folgenden Schritten in den Fragments weiter machen.
 
@@ -185,6 +189,7 @@ Nachdem du im vorigen Schritt alle unnötigen Komponenten entfernt hast, ist es 
 
 15. Damit es nicht ganz so am Rand "festklebt", fügst du jetzt links und rechts einen Rand hinzu. Diesen kannst du im `Constraint Widget` unter der Attributliste setzen (siehe Bild). Leg hier links und rechts einen Rahmen von jeweils 16 fest.
 {{< imgblock "img/constraint_widget.png" >}}{{< /imgblock >}}
+![](img/constraint_widget.png)
 
 16. Jetzt musst du nur noch den `Button` positionieren. Dieser soll rechts unterhalb des `EditText` sein. Wähle ihn dazu mit einem Klick aus und ziehe den Punkt an der oberen Kante zur Unterkante des `EditText`
 
@@ -197,6 +202,7 @@ Nachdem du im vorigen Schritt alle unnötigen Komponenten entfernt hast, ist es 
 Das wars auch schon mit dem Layout zum eingeben eines Satzes. Dein Layout sollte nun so aussehen
 
 {{< imgblock "img/layout_phrase_input.png" >}}{{< /imgblock >}}
+![](img/layout_phrase_input.png)
 
 ### Input einlesen und dem nächsten Fragment übergeben
 
@@ -374,6 +380,7 @@ Nun hast du es geschafft, die Route aus dem Internet herunterzuladen und das Erg
 >  *INFO: Es kann sein, dass der erste Request sehr lange dauert oder sogar fehl schlägt. Geh einfach nochmal zurück zum Start und probier es nochmal. Die Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#lambda-warmup) beschrieben.*
 
 {{< imgblock "img/load_route_result.jpg" >}}{{< /imgblock >}}
+![](img/load_route_result.jpg)
 
 ### Route parsen
 
@@ -405,6 +412,7 @@ Befolge deshalb die folgenden Schritte um die Klasse `Place.java` zu erstellen.
 
 1. Klicke mit der rechten Maustaste auf das Package in dem die `MainActivity.java` enthalten ist und gehe auf `New` -> `Java Class`.
 {{< imgblock "img/new_java_class.png" >}}{{< /imgblock >}}
+![](img/new_java_class.png)
 
 2. Gib "Place" als Name ein und drück auf "Enter". 
 
@@ -432,6 +440,7 @@ textViewInfo.setText(route.get(0).toString());
 
 Die App sollte nun so aussehen. 
 {{< imgblock "img/parse_route_result.jpg" >}}{{< /imgblock >}}
+![](img/parse_route_result.jpg)
 
 ## Karte anzeigen
 
@@ -544,6 +553,7 @@ Wenn du die App jetzt ausführst, einen Satz eingibst und wartest bis der HTTP R
 >  *ACHTUNG: Es kann sein, dass der erste Request sehr lange dauert oder sogar fehl schlägt. Geh einfach nochmal zurück zum Start und probier es nochmal. Die Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#lambda-warmup) beschrieben.*
 
 {{< imgblock "img/request_permission.jpg" >}}{{< /imgblock >}}
+![](img/request_permission.jpg)
 
 Befolge die nächsten Schritte um eine Karte anzuzeigen.
 
@@ -558,7 +568,7 @@ private MapView mapView;
 ```java 
 mapView = view.findViewById(R.id.mapview);
 ```
-	
+
 3. Befülle nun die `showMap()` Methode mit dem folgenden Code.
 ```java
 // Lädt oder initiliasiert die osmdroid Konfiguration
@@ -575,6 +585,7 @@ mapView.getController().zoomTo(6.0);
 Nun hast du es geschafft eine Karte anzuzeigen. Sie sollte in etwa so wie im unteren Bild aussehen. Wenn sie nicht lädt, geh einfach nochmal zurück klicke erneut auf "Los", beim ersten Request zur API, über die die Route geladen wird, ist diese immer etwas langsam. Eine Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#lambda-warmup) beschrieben. 
 
 {{< imgblock "img/map.jpg" >}}{{< /imgblock >}}
+![](img/map.jpg)
 
 ### Marker hinzufügen
 
@@ -584,7 +595,7 @@ Nun ist es an der Zeit, die Orte, die in der Route enthalten sind, auf der Karte
 ```java
 private List<Place> route;
 ```
-   
+
 2. Gehe zur `onResponse()` Methode und ersetze die Zeile
 ```java
 List<Place> route = new Gson().fromJson(response, new      TypeToken<List<Place>>() {}.getType());
@@ -696,6 +707,7 @@ mapView.invalidate();
 Gratuliere! Nun hast du den Basisteil der Anleitung geschafft und solltest eine Karte mit deiner Route sehen. 
 
 {{< imgblock "img/basic_app_done.png" >}}{{< /imgblock >}}
+![](img/basic_app_done.png)
 
 ## Bonus: Verbesserungen
 
