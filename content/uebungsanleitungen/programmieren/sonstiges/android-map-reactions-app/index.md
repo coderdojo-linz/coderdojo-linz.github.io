@@ -10,7 +10,6 @@ img: "map_reactions_app.png"
 In dieser Übung programmierst du eine Android App in Java. In dieser App kann man einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem [Comic Strip](https://xkcd.com/2260/). Während der Entwicklung der App wirst du lernen, wie man eine einfache Android App inklusive Navigation zwischen Screens schreibt. Außerdem wirst du über sogenannte REST Calls mit einem Server über das Internet kommunizieren, um den eingegebenen Satz in eine Route zu verwandeln. Zu guter letzt wird diese Route dann mithilfe von [Open Street Map](https://www.openstreetmap.org/) auf einer Karte angezeigt.
 
 {{< imgblock "https://imgs.xkcd.com/comics/reaction_maps.png" "XKCD's Reaction Maps comic strip" >}}{{< /imgblock >}}
-![](https://imgs.xkcd.com/comics/reaction_maps.png)
 
 ## Voraussetzungen
 
@@ -33,7 +32,7 @@ Befolge diese Schritte um die App zu erstellen:
 	- `Name`: Der Name deiner App - ich nenne meine zum Beispiel `Map Reactions`.
 	- `Package name`: Ein eindeutiger Name um deine App im Google Play Store zu identifizieren. Für die Anleitung ist es ganz egal welchen Namen du verwendest.
 	- `Save location`: Der Ordner in dem du das Projekt speichern möchtest.
-	- `Language`: Native Android Apps kann man in Java oder Kotlin programmieren. In dieser Anleitung werde ich Java verwenden, du kannst aber gerne auch Kotlin ausprobieren.
+	- `Language`: Native Android Apps kann man in Java oder [Kotlin](https://kotlinlang.org/) programmieren. In dieser Anleitung werde ich Java verwenden, du kannst aber gerne auch Kotlin ausprobieren.
 	- `Minimum SDK`: Die niedrigste Android Version die von der App unterstützt wird. Wähle hier `API 21: Android 5.0 (Lollipop)` aus.
 
 5. Klicke auf `Finish`.
@@ -55,7 +54,6 @@ Falls du es noch nicht getan hast, solltest du dein Smartphone jetzt mithilfe ei
 Jetzt kannst du wieder zurück zu Android Studio wechseln und die App ausführen. Wähle dazu dein Smartphone aus (falls es nicht schon automatisch ausgewählt wurde) und klicke dann auf den grünen `Play` Button neben dem Dropdown. Jetzt sollte die App auf deinem Smartphone ausgeführt werden. 
 
 {{< imgblock "img/android_studio_run.png" >}}{{< /imgblock >}}
-![](img/android_studio_run.png)
 
 ### Was beinhaltet diese App?
 
@@ -68,7 +66,7 @@ Enthält die `AndroidManifest.xml` Datei.
 - `java`
   Enthält alle Java Dateien und Tests.
   - `MainActivity.java`
-	Eine Activity ist repräsentiert im Prinzip eine Bildschirmseite (einen Screen) in einer App. Sie kann Elemente wie Buttons, Text- & Eingabefelder, aber auch Fragments  (siehe nächster Punkt) beinhalten. Beim Erstellen einer App generiert Android automatisch die `MainActivity.java`, welche auch gleich ins `AndroidManifest.xml` eingetragen wird.
+	Eine Activity repräsentiert im Prinzip eine Bildschirmseite (einen Screen) in einer App. Sie kann Elemente wie Buttons, Text- & Eingabefelder, aber auch Fragments  (siehe nächster Punkt) beinhalten. Beim Erstellen einer App generiert Android automatisch die `MainActivity.java`, welche auch gleich ins `AndroidManifest.xml` eingetragen wird.
   - `FirstFragment.java` & `SecondFragment.java` 
 	 Ein Fragment ist ein wiederverwendbares Element einer Activity. So kann man beispielweise auf einem Tablet zwei Fragments nebeneinander anzeigen, während man auf einem Smartphone immer nur eines anzeigt. Das `FirstFragment` ist in diesem Fall das erste Fragment, das man sieht wenn man die App öffnet. Klickt man auf den `NEXT` Button wird das `SecondFragment` angezeigt.
 - `res`
@@ -93,7 +91,6 @@ Ganz unten sieht man noch den Abschnitt `Gradle Scripts`. Dieser beinhaltet alle
 Jetzt ist es an der Zeit, alles zu entfernen was du nicht mehr brauchst. Später soll man, wenn man die App öffnet, zuerst ein Eingabefeld sehen, in dem man einen Satz eingeben kann. Gibt man einen Satz ein und klickt auf "Los" soll eine Karte mit der zum Satz passenden Route angezeigt werden.
 
 {{< imgblock "img/basic_activity.png" >}}{{< /imgblock >}}
-![](img/basic_activity.png)
 
 Wenn du dir die App ansiehst, wirst du merken dass die `Toolbar` (ganz oben am Bildschirm) und der `Floating Action Button` (der türkise Button rechts unten) immer da sind, egal welcher Inhalt sonst noch angezeigt wird. Daraus kannst du schließen, dass diese 2 Komponenten Teile der `MainActivity` sind, während die Buttons ("NEXT" & "PREVIOUS") und das Textfeld ("Hello first fragment") im `FirstFragment` und im `SecondFragment` enthalten sind. 
 
@@ -128,7 +125,6 @@ fab.setOnClickListener(new View.OnClickListener() {
 7. Wiederhole das gleiche für den `fab`, den Floating Action Button.
 
 {{< imgblock "img/android_studio_layout_editor.png" >}}{{< /imgblock >}}
-![](android_studio_layout_editor.png)
 
 Jetzt hast du alle unnötigen Komponenten aus der MainActivity entfernt und kannst mit den folgenden Schritten in den Fragments weiter machen.
 
@@ -164,37 +160,21 @@ Nachdem du im vorigen Schritt alle unnötigen Komponenten entfernt hast, ist es 
 ```
 
 3. Öffne nun das Layout `fragment_first.xml` und wähle den Button mit einem Klick aus.
-
 4. Suche in der List der Attribute auf der rechten Seite nach `id` und gib dem Button die id `button_go`.
-
 5. Wähle im Dialog der erscheint "Don't ask again during this session" und "Yes" aus.
-
 6. Suche in der Attributliste nach "text" und schreib `@string/go` hinein. Somit verlinkst du den String den du vorher erstellt hast mit dem Text des Buttons.
-
 7. Klicke nun einmal auf den weißen Hintergrund deines Layouts, um die Auswahl des Buttons aufzuheben.
-
 8. Über dem `Component Tree`, den du vorher schon verwendet hast, findest du die `Palette`. Mithilfe der `Palette` kannst du neue Komponenten hinzufügen. Nutze die Lupe um nach `EditText` zu suchen.
-
 9. Wähle `Plain Text` aus und ziehe es irgendwo in die weiße Fläche deines Layouts.
-
 10. Gib dem `EditText` die id `edittext_phrase` und lösche den Text "Name", der automatisch gesetzt wurde.
-
 11. Nutze die Lupe rechts von "Attributes" um nach "hint" zu suchen. Leg `@string/enter_a_phrase` als `hint` fest.
-
 12. Wenn du das eben erstellte `EditText` auswählst, siehst du 4 Punkte an den Rändern. Es befindet sich an jeder Seite einer. Ziehe den linken Punkt an den ganz linken Rand der weißen Hintergrundfläche. Dann wiederhole das für alle Punkte, zieh also den rechten Punkt zum rechten Rand, den oberen zum oberen Rand und den unteren Punkt zum unteren Rand der Fläche. Pass auf, dass der untere Punkt wirklich am Hintergrund andockt und nicht am Button.
-
 13. Jetzt hast du sogenannte `Constraints` gesetzt, um das `EditText` in der Mitte des Bildschirms auszurichten.
-
 14. Nun soll das `EditText` die ganze Breite des Bildschirms einnehmen. Gehe dazu wieder rechts zur Attributliste und wähle `0dp (match constraint)` als `layout_width` aus. 
-
 15. Damit es nicht ganz so am Rand "festklebt", fügst du jetzt links und rechts einen Rand hinzu. Diesen kannst du im `Constraint Widget` unter der Attributliste setzen (siehe Bild). Leg hier links und rechts einen Rahmen von jeweils 16 fest.
 {{< imgblock "img/constraint_widget.png" >}}{{< /imgblock >}}
-![](img/constraint_widget.png)
-
 16. Jetzt musst du nur noch den `Button` positionieren. Dieser soll rechts unterhalb des `EditText` sein. Wähle ihn dazu mit einem Klick aus und ziehe den Punkt an der oberen Kante zur Unterkante des `EditText`
-
 17. Um den `Button` nun direkt unter dem `EditText` und an der rechten Bildschirmkante zu positionieren, lösche den linken und den unteren Constraint indem du sie mit einem Klick auswählst und dann auf der Tastatur auf `Entf` klickst.
-
 18. Lege im Constraint Widget die folgenden Rahmen fest: 
    - Rechts: 16
    - Oben: 32
@@ -202,11 +182,10 @@ Nachdem du im vorigen Schritt alle unnötigen Komponenten entfernt hast, ist es 
 Das wars auch schon mit dem Layout zum eingeben eines Satzes. Dein Layout sollte nun so aussehen
 
 {{< imgblock "img/layout_phrase_input.png" >}}{{< /imgblock >}}
-![](img/layout_phrase_input.png)
 
-### Input einlesen und dem nächsten Fragment übergeben
+### Input einlesen und an das nächste Fragment übergeben
 
-Da das Layout nun fertig ist, ist der nächste Schritt den Input des Benutzers im `FirstFragment.java` einzulesen und dem nächsten Fragment zu übergeben, wenn auf "LOS" gedrückt wird. Das bedeutet du musst einen `OnClickListener` hinzufügen dessen `onClick(View view)` Methode immer ausgeführt wird, der Benutzer auf "LOS" klickt. In dieser Methode liest du zuerst den Text aus dem `EditText` ein, bevor du zum nächsten Fragment navigierst. 
+Da das Layout nun fertig ist, ist der nächste Schritt den Input des Benutzers im `FirstFragment.java` einzulesen und an das nächste Fragment zu übergeben, wenn auf "LOS" gedrückt wird. Das bedeutet du musst einen `OnClickListener` hinzufügen dessen `onClick(View view)` Methode immer ausgeführt wird, wenn der Benutzer auf "LOS" klickt. In dieser Methode liest du zuerst den Text aus dem `EditText` ein, bevor du zum nächsten Fragment navigierst. 
 
 Ein Teil des Codes, den du dazu benötigst, ist schon vorhanden. Und zwar gibt es schon einen `OnClickListener` der ausgelöst wird, wenn der Button geklickt wird. Auch die Navigation zum `SecondFragment.java` funktioniert schon. Deshalb sind nur noch die folgenden Schritte nötig.
 
@@ -288,7 +267,7 @@ Wenn du die App jetzt ausführst, kannst du im ersten Fragment einen Satz eingeb
 
 ### Route herunterladen
 
-Um die Route zu laden, verwendest du einen Service der im Internet angeboten wird. Dort kannst du einen Satz hinschicken und bekommst eine Liste mit Orten, die jeweils aus Name und Position (latitude und longitude) bestehen, zurück. Dieser Service ist unter https://api.map-reactions.ksick.dev/v0-1 verfügbar und so definiert:
+Um die Route zu laden, verwendest du einen Service der im Internet angeboten wird. Dort kannst du einen Satz hinschicken und bekommst eine Liste mit Orten, die jeweils aus Name und Position (Längen- und Breitengrad) bestehen, zurück. Dieser Service ist unter https://api.map-reactions.ksick.dev/v0-1 verfügbar und so definiert:
 
 ```shell
 # REQUEST
@@ -327,7 +306,7 @@ dependencies {
 	implementation 'com.android.volley:volley:1.1.1'
 }
 ```
-3. Klicke rechts oben in der Leiste auf "Sync Now".
+3. Klicke rechts oben in der Leiste auf "Sync Now". Damit werden alle Dependencies geladen.
 
 4. Öffne nun das `SecondFragment.java`. 
 
@@ -372,19 +351,18 @@ private void loadRoute() {
 }
 ```
 
-6. Mit dem oben stehenden Code, hast du den Request abgesetzt, das Ergebnis wird aber noch ignoriert. Um diesen Abschnitt abzuschließen, genügt es das Ergebnis in der Info-`TextView` anzuzeigen. Füge dazu ganz einfach die Zeilen `textViewInfo.setText(response);` und `textViewInfo.setText(error.getMessage());` in den `onResponse()` beziehungsweise in den `onErrorResponse` Block ein. 
+6. Mit dem oben stehenden Code, hast du den Request abgesetzt, das Ergebnis wird aber noch ignoriert. Um diesen Abschnitt abzuschließen, genügt es das Ergebnis in der Info-`TextView` anzuzeigen. Füge dazu ganz einfach die Zeilen `textViewInfo.setText(response);` und `textViewInfo.setText(error.toString());` in den `onResponse()` beziehungsweise in den `onErrorResponse` Block ein. 
 7. Als letztes muss die soeben erstellte `loadRoute()` Methode noch ausgeführt werden. Rufe sie daher in der letzten Zeile der `onViewCreated()` Methode mit `loadRoute()` auf. 
 
 Nun hast du es geschafft, die Route aus dem Internet herunterzuladen und das Ergebnis in einer `TextView` anzuzeigen. Wenn du die App ausführst und einen Satz eingibst, sollte das Ergebnis in etwa so aussehen (natürlich mit einem anderen Text):
 
->  *INFO: Es kann sein, dass der erste Request sehr lange dauert oder sogar fehl schlägt. Geh einfach nochmal zurück zum Start und probier es nochmal. Die Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#lambda-warmup) beschrieben.*
+>  *INFO: Es kann sein, dass der erste Request sehr lange dauert oder sogar fehl schlägt. Geh einfach nochmal zurück zum Start und probier es nochmal. Die Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#timeout-und-serverless-function-warmup) beschrieben.*
 
 {{< imgblock "img/load_route_result.jpg" >}}{{< /imgblock >}}
-![](img/load_route_result.jpg)
 
 ### Route parsen
 
-Die Route wird als sogenanntes JSON zurückgegeben. Dieses JSON wandelst du in diesem Schritt in etwas um, mit dem du auch gut arbeiten kannst, zwar eine Liste von Objekten. Diese Umwandlung von JSON zu einem Objekt oder umgekehrt nennt man "parsen". Dabei kannst du dir wieder von einer Bibliothek helfen lassen. Nämlich von [Gson](https://github.com/google/gson). Dazu brauchst du die dependency `implementation 'com.google.code.gson:gson:2.8.6'`, füge diese in der Datei `build.gradle (Module: app)` hinzu (das funktioniert genauso wie oben bei Volley). 
+Die Route wird als sogenanntes [JSON](https://www.json.org/json-de.html) zurückgegeben. Dieses JSON wandelst du in diesem Schritt in etwas um, mit dem du auch gut arbeiten kannst, zwar eine Liste von Objekten. Diese Umwandlung von JSON zu einem Objekt oder umgekehrt nennt man "parsen". Dabei kannst du dir wieder von einer Bibliothek helfen lassen. Nämlich von [Gson](https://github.com/google/gson). Dazu brauchst du die dependency `implementation 'com.google.code.gson:gson:2.8.6'`, füge diese in der Datei `build.gradle (Module: app)` hinzu (das funktioniert genauso wie oben bei Volley). 
 
 Nun definierst du zu welchem Objekt Gson das JSON parsen soll. Wenn du dir das JSON ansiehst, das der Server zurückgibt, siehst du, dass die einzelnen Orte jeweils aus "name", "latitude" und "longitude" bestehen. 
 
@@ -412,7 +390,6 @@ Befolge deshalb die folgenden Schritte um die Klasse `Place.java` zu erstellen.
 
 1. Klicke mit der rechten Maustaste auf das Package in dem die `MainActivity.java` enthalten ist und gehe auf `New` -> `Java Class`.
 {{< imgblock "img/new_java_class.png" >}}{{< /imgblock >}}
-![](img/new_java_class.png)
 
 2. Gib "Place" als Name ein und drück auf "Enter". 
 
@@ -440,7 +417,6 @@ textViewInfo.setText(route.get(0).toString());
 
 Die App sollte nun so aussehen. 
 {{< imgblock "img/parse_route_result.jpg" >}}{{< /imgblock >}}
-![](img/parse_route_result.jpg)
 
 ## Karte anzeigen
 
@@ -509,7 +485,7 @@ private boolean isStoragePermissionGranted() {
 }
 ```
 
-6. Definiere als Vorbereitung eine neue finale Member-Variable. Füge dazu die folgende Zeile ganz oben in deiner Klasse unter `public class SecondFragment extends Fragment {`  ein.
+6. Definiere als Vorbereitung eine neue Konstante. Füge dazu die folgende Zeile ganz oben in deiner Klasse unter `public class SecondFragment extends Fragment {`  ein.
 ```java
 private final int PERMISSION_REQUEST_CODE = 123;
 ```
@@ -550,10 +526,9 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
 
 Wenn du die App jetzt ausführst, einen Satz eingibst und wartest bis der HTTP Request erfolgreich war, solltest du nun so einen Dialog sehen. Klickst du auf "Ablehnen" wird die App einfach geschlossen und beim nächsten mal wenn du zu diesem Punkt kommst, wird der Dialog wieder angezeigt. Klickst du auf "Zulassen" passiert derweil noch nichts, weil deine `showMap()` Methode noch leer ist. Wenn du nun die App schließen würdest und diese Schritte wiederholen würdest, würde der Dialog nicht mehr erscheinen, weil Android sich merkt, dass du dieser App erlaubt hast auf den Speicher zuzugreifen.
 
->  *ACHTUNG: Es kann sein, dass der erste Request sehr lange dauert oder sogar fehl schlägt. Geh einfach nochmal zurück zum Start und probier es nochmal. Die Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#lambda-warmup) beschrieben.*
+>  *ACHTUNG: Es kann sein, dass der erste Request sehr lange dauert oder sogar fehl schlägt. Geh einfach nochmal zurück zum Start und probier es nochmal. Die Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#timeout-und-serverless-function-warmup) beschrieben.*
 
 {{< imgblock "img/request_permission.jpg" >}}{{< /imgblock >}}
-![](img/request_permission.jpg)
 
 Befolge die nächsten Schritte um eine Karte anzuzeigen.
 
@@ -582,10 +557,9 @@ mapView.setMultiTouchControls(true);
 mapView.getController().zoomTo(6.0);
 ```
 
-Nun hast du es geschafft eine Karte anzuzeigen. Sie sollte in etwa so wie im unteren Bild aussehen. Wenn sie nicht lädt, geh einfach nochmal zurück klicke erneut auf "Los", beim ersten Request zur API, über die die Route geladen wird, ist diese immer etwas langsam. Eine Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#lambda-warmup) beschrieben. 
+Nun hast du es geschafft eine Karte anzuzeigen. Sie sollte in etwa so wie im unteren Bild aussehen. Wenn sie nicht lädt, geh einfach nochmal zurück klicke erneut auf "Los", beim ersten Request zur API, über die die Route geladen wird, ist diese immer etwas langsam. Eine Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#timeout-und-serverless-function-warmup) beschrieben. 
 
 {{< imgblock "img/map.jpg" >}}{{< /imgblock >}}
-![](img/map.jpg)
 
 ### Marker hinzufügen
 
@@ -707,30 +681,119 @@ mapView.invalidate();
 Gratuliere! Nun hast du den Basisteil der Anleitung geschafft und solltest eine Karte mit deiner Route sehen. 
 
 {{< imgblock "img/basic_app_done.png" >}}{{< /imgblock >}}
-![](img/basic_app_done.png)
 
 ## Bonus: Verbesserungen
 
-### aktuellen status in der textview
+In diesem Abschnitt werden einige Verbesserungen beschrieben, die du noch machen kannst, wenn du möchtest. Diese beinhalten unter anderem das Styling der App, ein paar Verbesserungen des Codes selbst und die App sollte auch etwas schneller werden.
 
-### naming der files
+### Die App aufräumen und umstrukturieren
 
-### navgraph anpassen
+Der erste Schritt um die App zu verbessern, ist sie erstmal aufzuräumen. Dabei wirst du die Benennung der Dateien verbessern und Teile, die nicht mehr benötigt werden, löschen. Befolge dazu die unten stehenden Schritte.
 
-### Input validation
+1. Benenne als erstes die beiden Fragments so um, dass ihre Namen verraten, welche Funktion sie haben. Wenn euer Projekt größer wird, ist es so einfacher zu verstehen, was sich wo befindet. 
 
-### Network on main thread
+   1. Klicke mit der rechten Maustaste auf das `FirstFragment` und wähle "Refactor" -> "Rename..." aus.
+   2. Ersetze den Namen "FirstFragment" mit "PhraseInputFragment". 
+   3. Klicke auf "Refactor".
+   4. Klicke nun auf das Layout `fragment_first.xml` und klicke wieder auf "Refactor" -> "Rename..." um es in "fragment_phrase_input.xml" umzubenennen.
+   5. Verwende die gleichen Schritte um das `SecondFragment` in "MapFragment" umzubenennen. Benenne auch das Layout "fragment_second.xml" in "fragment_map.xml" um.
+   
+2. Öffne die Datei `res/values/strings.xml` und lösche alle Strings außer die Strings `app_name`, `enter_a_phrase` und `go`.
 
-### UI
+3. Füge die folgenden zwei Strings hinzu.
+```xml
+<string name="phrase_input_fragment_label">PhraseInputFragment</string>
+<string name="map_fragment_label">MapFragment</string>
+```
+4. Öffne die Datei `res/navigation/nav_graph.xml`.
 
-### Lambda warmup
+5. Klicke auf das `FirstFragment` und ändere das "label" rechts in der Attributliste auf `@string/phrase_input_fragment_label`.
 
-### app icon
+6. Ändere das "label" des `SecondFragment` auf `@string/map_fragment_label`.
 
-## Ideen zum weiterentwickeln
+7. Ändere auch die "id" der beiden Fragments auf "PhraseInputFragment" beziehungsweise "MapFragment".
 
-Übersetzen in eine andere Sprache
+8. Da du keine Navigation vom `MapFragment` zum `PhraseInputFragment` benötigst, kannst du den Pfeil vom `MapFragment` zum `PhraseInputFragment` löschen.
 
+9. Klicke auf den Pfeil vom `PhraseInputFragment` zum `MapFragment` und ändere die "id" zu "action_PhraseInputFragment_to_MapFragment".
+
+10. Klicke mit der rechten Maustaste auf das Package in dem die `MainActivity.java` enthalten ist und gehe auf `New` -> `Package`.
+
+11. Nenne das neue Package "model". Lass dazu den Teil, der schon im Eingabefeld steht, einfach stehen und schreibe "model" dahinter. Drücke dann auf "Enter".
+
+12. Ziehe nun die Klasse `Place.java` in das neu erstellte Package und klicke auf "Refactor".
+
+### Aktuellen Status in der Info-TextView anzeigen
+
+Derzeit wird die Info-`TextView` zum Anzeigen der Phrase verwendet. Die `TextView` soll nun den Text "Laden..." anzeigen während die Route geladen wird. Außerdem soll überprüft werden, ob überhaupt eine Route geladen wurde, bevor die Karte angezeigt wird. Falls nicht soll ein Fehler angezeigt werden. Wenn du möchtest, ist das eine gute Aufgabe, die du allein probieren kannst. Lies also hier nicht weiter und versuche das Problem selbst zu lösen. Meine Lösung ist in den folgenden Schritten beschrieben.
+
+1. Öffne die Datei `res/values/strings.xml` und füge die beiden folgenden Strings hinzu
+```xml
+<string name="loading">Wird geladen…</string>
+<string name="load_route_error">Route konnte nicht geladen werden</string>
+```
+2. Öffne das `MapFragment.java`. 
+3. Lösche die Zeile `textViewInfo.setText(phrase);` in der Methode `onViewCreated()`.
+4. Gehe zur `loadRoute()` Methode und füge die Zeile `textViewInfo.setText(R.string.loading);` über der Zeile, in der du den StringRequest erstellt hast, ein.
+5. Gehe zum `onResponse()` Callback und füge den folgenden Code direkt nach der Zeile, in der die Route geparst wird, ein.
+```java
+// Überprüft ob die Route geparst werden konnte und Elemente enthält
+if (route == null || route.isEmpty()) {
+	// Wenn nicht, wird ein Fehler angezeigt und die Karte wird nicht angezeigt
+	textViewInfo.setText(getString(R.string.load_route_error));
+	return;
+}
+
+// Zeigt den eingegebenen Satz in der Info TextView an, da die Route erfolgreich geladen werden konnte
+textViewInfo.setText(phrase);
 ```
 
+### Input Validierung
+
+Wenn man im `PhraseInputFragment` auf "LOS" klickt, wird derzeit nicht überprüft, ob überhaupt ein Satz eingegeben wurde. Das Ziel dieser Verbesserung ist es, einen Fehler anzuzeigen, wenn nichts eingegeben wurde. Auch bei dieser Aufgabe würde ich dir empfehlen, sie zuerst selbst zu probieren. Im folgenden ist meine Lösung beschrieben.
+
+1. Füge den String `<string name="please_enter_a_phrase">Bitte gib einen Satz ein</string>` zu den Strings hinzu.
+
+2. Öffne das `PhraseInputFragment.java`.
+
+3. Füge den folgenden Code unter der Zeile `String phrase = editText.getText().toString();` ein.
+```java
+// Überprüft ob ein Satz eingegeben wurde
+if (StringUtils.isBlank(phrase)) {
+	// Wenn nicht wird ein Fehler angezeigt und die Methode wird nicht weiter ausgeführt
+	editText.setError(getString(R.string.please_enter_a_phrase));
+	return;
+}
 ```
+
+### Asynchrone HTTP Requests
+
+
+
+### Timeout und Serverless Function Warmup
+Der Endpunkt, von dem die Route abgefragt wird, ist einer sogenannten "Serverless Function" gehosted. Das bedeutet, dass der Cloud-Anbieter, der für die Funktion verantwortlich ist, die benötigten Ressourcen dynamisch verwaltet. Werden keine Anfragen zum Endpunkt gemacht, wird der Code auch nicht ausageführt. Deshalb muss das System erst "hochgefahren" werden bevor ein Request bearbeitet werden kann. Das bezeichnet man als "cold start". Wird kurz danach ein zweiter Request geschickt, sind die Ressourcen noch vorhanden und der Request kann deutlich schneller verarbeitet werden. Das ist der Grund, warum der erste Request um die Route abzufragen momentan noch oft fehlschlägt. 
+
+Um das Problem zu lösen kannst du das sogenannte "Timeout" bei `Volley` (die Bibliothek mit der der Request abgesetzt wird) erhöhen. Das Timeout definiert wieviel Zeit vergehen darf, bevor man davon ausgeht, dass keine Antwort mehr kommt und der Request abgebrochen wird. Standardmäßig liegt das Timeout bei `Volley` bei 5 Sekunden. Füge den folgenden Code im `MapFragment.java` hinzu, bevor der `stringRequest` zur `requestQueue` hinzugefügt wird.
+```java
+// Erhöht das Timeout für den Request auf 15 Sekunden
+stringRequest.setRetryPolicy(new DefaultRetryPolicy(
+	15000, // Das Timeout in Millisekunden
+	1, // Wie oft der Request wiederholt werden soll, wenn er fehlschlägt
+	1 // Mit dieser Zahl wird das Timeout bei jedem neuen Versuch multipliziert
+));
+```
+Um dem oben beschriebenen "cold start" vorzubeugen, kann man zum Beispiel schon beim Start der App einen leeren Request an die Function schicken um sie zu starten. Das ist wieder ein Task, den du allein probieren kannst, wenn du möchtest. Setze dazu im `PhraseInputFragment` einen Request zum Server ab, bei dem du das Ergebnis ignorierst. Im folgenden ist beschrieben, wie ich es gelöst habe.
+
+1. Öffne das `PhraseInputFragment.java`.
+2. 
+
+### Styling der App
+
+### Mehrsprachige App
+
+## Ressourcen
+
+[Die App vor dem Abschnitt "Bonus: Verbesserungen"](https://github.com/KatharinaSick/coderdojo-anleitung-map-reactions-app)
+
+[Die App inklusive der Verbesserungen](https://github.com/KatharinaSick/coderdojo-anleitung-map-reactions-app/tree/bonus)
+
