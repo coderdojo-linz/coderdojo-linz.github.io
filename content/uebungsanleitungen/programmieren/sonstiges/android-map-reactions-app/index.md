@@ -5,8 +5,6 @@ level: 3
 img: "map_reactions_app.png"
 ---
 
-# TODO: image sizes 
-
 # Android Map Reactions App
 
 In dieser Übung programmierst du eine Android App in Java. In dieser App kann man einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem [Comic Strip](https://xkcd.com/2260/). Während der Entwicklung der App wirst du lernen, wie man eine einfache Android App inklusive Navigation zwischen Screens schreibt. Außerdem wirst du über sogenannte REST Calls mit einem Server über das Internet kommunizieren, um den eingegebenen Satz in eine Route zu verwandeln. Zu guter letzt wird diese Route dann mithilfe von [Open Street Map](https://www.openstreetmap.org/) auf einer Karte angezeigt.
@@ -43,15 +41,15 @@ Um die App auf deinem Handy auszuführen, musst du zuerst die Entwickler Optione
 
 1. Öffne die Einstellungen auf deinem Android Smartphone.
 
-2. Klick auf `Telefoninfo`.
+2. Klicke auf `Telefoninfo`.
 
-3. Klick 7 mal auf `Build-Nummer` um die Entwickler Optionen zu aktivieren.
+3. Klicke 7 mal auf `Build-Nummer` um die Entwickler Optionen zu aktivieren.
 
-4. Gehe zurück zu den Einstellungen und klick auf `Entwickler Optionen`.
+4. Gehe zurück zu den Einstellungen und klicke auf `Entwickler Optionen`.
 
 5. Aktiviere `USB-Debugging`.
 
-Falls du es noch nicht getan hast, solltest du jetzt dein Smartphone mithilfe eines USB-Kabels mit deinem Computer verbinden. Dann sollte ein Dialog mit dem Titel `USB-Debugging zulassen` am Smartphone erscheinen. Bestätige diesen mit `Erlauben`.
+Falls du es noch nicht getan hast, solltest du dein Smartphone jetzt mithilfe eines USB-Kabels mit deinem Computer verbinden. Dann sollte ein Dialog mit dem Titel `USB-Debugging zulassen` auf deinem Smartphone erscheinen. Bestätige diesen mit `Erlauben`.
 
 Jetzt kannst du wieder zurück zu Android Studio wechseln und die App ausführen. Wähle dazu dein Smartphone aus (falls es nicht schon automatisch ausgewählt wurde) und klicke dann auf den grünen `Play` Button neben dem Dropdown. Jetzt sollte die App auf deinem Smartphone ausgeführt werden. 
 
@@ -59,12 +57,12 @@ Jetzt kannst du wieder zurück zu Android Studio wechseln und die App ausführen
 
 ### Was beinhaltet diese App?
 
-Im oben beschriebenen Schritt hat uns Android Studio eine App mit einer `Basic Activity` generiert. Sehen wir uns mal an, was diese beinhaltet.
+Im oben beschriebenen Schritt hat dir Android Studio eine App mit einer `Basic Activity` generiert. Sehen wir uns mal an, was diese beinhaltet.
 
 - `manifests`
 Enthält die `AndroidManifest.xml` Datei.
 	- `AndroidManifest.xml`
-	Diese Datei muss in jeder Android App vorhanden sein. Sie enthält Informationen über die App, wie zum Beispiel Name, Activities (sind im nächsten Punkt beschrieben) oder Permissions (Rechte, die die App anfragen muss). Jede Activity der App muss hier beschrieben sein. Interessant ist auch der `intent-filter` in der `MainActivity`. Dieser ist dafür verantwortlich, dass das Betriebssytem weiss, welche Activity beim Starten der App angezeigt werden soll.
+	Diese Datei muss in jeder Android App vorhanden sein. Sie enthält Informationen über die App, wie zum Beispiel Name, Activities (sind im nächsten Punkt beschrieben) oder Permissions (Rechte, die die App anfragen muss). Jede Activity der App muss hier beschrieben sein. Interessant ist auch der `intent-filter` in der `MainActivity`. Dieser ist dafür verantwortlich, dass das Betriebssytem weiß, welche Activity beim Starten der App angezeigt werden soll.
 - `java`
   Enthält alle Java Dateien und Tests.
   - `MainActivity.java`
@@ -82,29 +80,29 @@ Enthält die `AndroidManifest.xml` Datei.
   - `mipmap`
     Dieser Ordner beinhaltet das Launcher Icon (App Icon).
   - `navigation`
-    Enthält den Navigation graph, welcher alle Informationen über die Navigation in der App beschreibt .
+    Enthält den Navigation graph, welcher alle Informationen über die Navigation in der App enthält .
   - `values` 
-    Hier werden XML Dateien die einfache Werte enthalten abgelegt. Das sind zum Beispiel Farben oder Texte.
+    Hier werden XML Dateien, die einfache Werte enthalten, abgelegt. Das sind zum Beispiel Farben oder Texte.
 
-Ganz unten sieht man noch den Abschnitt `Gradle Scripts`. Dieser beinhaltet alles rund um das Build Management-Tool Gradle. Dieses kümmert sich um die Kompilierung des Quellcodes und die Resourcen der App und generiert anschließend eine APK (Android Application Package) Datei, die dann auf einem Smartphone installiert werden kann. Hier sind vor allem die zwei `build.gradle` Dateien wichtig. Die `build.gradle` Datei auf Projektebene (erkennt man am `(Project: Anleitung)` hinter dem Dateinamen) gibt die Build-Anweisungen für das gesamte Projekt vor, ist im Rahmen dieser Anleitung aber nicht so wichtig. Für uns ist die `build.gradle (Module: app)`  viel wichtiger. Sie enthält die Build-Anweisungen und die Bibliotheken (libraries), welche in der App eingebunden sind.  
+Ganz unten sieht man noch den Abschnitt `Gradle Scripts`. Dieser beinhaltet alles rund um das Build Management-Tool Gradle. Dieses kümmert sich um die Kompilierung des Quellcodes und die Ressourcen der App und generiert anschließend eine APK (Android Application Package) Datei, die dann auf einem Smartphone installiert werden kann. Hier sind vor allem die zwei `build.gradle` Dateien wichtig. Die `build.gradle` Datei auf Projektebene (erkennt man am `(Project: <DEIN_PROJEKT_NAME>)` hinter dem Dateinamen) gibt die Build-Anweisungen für das gesamte Projekt vor, ist im Rahmen dieser Anleitung aber nicht so wichtig. Für uns ist die `build.gradle (Module: app)`  viel wichtiger. Sie enthält die Build-Anweisungen und die Bibliotheken (libraries), welche in der App eingebunden sind.  
 
 ## Alles muss raus
 
-Jetzt ist es an der Zeit, alles zu entfernen was wir nicht mehr brauchen. Später soll man, wenn man die App öffnet, zuerst ein Eingabefeld sehen, in dem man einen Satz eingeben kann. Gibt man diesen ein und klickt auf "Los" soll eine Karte mit der zum Satz passenden Route angezeigt werden.
+Jetzt ist es an der Zeit, alles zu entfernen was du nicht mehr brauchst. Später soll man, wenn man die App öffnet, zuerst ein Eingabefeld sehen, in dem man einen Satz eingeben kann. Gibt man einen Satz ein und klickt auf "Los" soll eine Karte mit der zum Satz passenden Route angezeigt werden.
 
 {{< imgblock "img/basic_activity.png" >}}{{< /imgblock >}}
 
-Wenn du dir die App ansiehst, wirst du merken dass die Toolbar (ganz oben am Bildschirm) und der Floating Action Button (der türkise Button rechts unten) immer da sind, egal welcher Inhalt sonst noch angezeigt wird. Daraus kannst du schließen, dass diese 2 Komponenten Teile der `MainActivity` sind, während die Buttons ("NEXT" & "PREVIOUS") und das Textfeld ("Hello first fragment") im `FirstFragment` und im `SecondFragment` enthalten sind. 
+Wenn du dir die App ansiehst, wirst du merken dass die `Toolbar` (ganz oben am Bildschirm) und der `Floating Action Button` (der türkise Button rechts unten) immer da sind, egal welcher Inhalt sonst noch angezeigt wird. Daraus kannst du schließen, dass diese 2 Komponenten Teile der `MainActivity` sind, während die Buttons ("NEXT" & "PREVIOUS") und das Textfeld ("Hello first fragment") im `FirstFragment` und im `SecondFragment` enthalten sind. 
 
 Mit den folgenden Schritten kannst du die Toolbar und den Floating Action Button entfernen.
 
 1. Öffne die `MainActivity.java`.
 
-2. Lösche die Methoden `onCreateOptionsMenu(Menu menu)` und `onOptionsItemSelected(MenuItem item)`. Diese verwalten das Menü mit den drei Punkten rechts oben, das benötigen wir aber nicht.
+2. Lösche die Methoden `onCreateOptionsMenu(Menu menu)` und `onOptionsItemSelected(MenuItem item)`. Diese verwalten das Menü mit den drei Punkten rechts oben, das benötigst du aber nicht.
 
 3. Um alle Teile des Menüs zu löschen, lösche auch den Ordner `res/menu`.
 
-4. Lösche den folgenden Code. Dieser setzt die Toolbar als Action Bar in der App und konfiguriert den Floating Action Button. Da wir beide nicht brauchen, können wir das einfach löschen. Somit haben wir die Logik der Komponenten entfernt. 
+4. Lösche den folgenden Code, welcher die Toolbar als Action Bar in der App setzt und den Floating Action Button konfiguriert. 
 
 ```java
 Toolbar toolbar = findViewById(R.id.toolbar);
@@ -120,7 +118,7 @@ fab.setOnClickListener(new View.OnClickListener() {
 });
 ```
 
-5. Öffne nun die Datei `res/layout/activity_main.xml` und wähle ganz rechts oben `Design` aus (im Bild unten in Orange gekennzeichnet).
+5. Im vorigen Schritt hast du die Logik der beiden Komponenten entfernt. Lösche sie nun auch aus dem Layout. Öffne dazu die Datei `res/layout/activity_main.xml` und wähle ganz rechts oben `Design` aus (im Bild unten in Orange gekennzeichnet).
 
 6. Klicke im `Component Tree` (im Bild unten in Grün gekennzeichnet) mit der rechten Maustaste auf das `AppBarLayout` (das enthält die Toolbar) und klicke auf `Delete`.
 
@@ -132,9 +130,9 @@ Jetzt hast du alle unnötigen Komponenten aus der MainActivity entfernt und kann
 
 1. Öffne das Layout `fragment_first.xml`.
 
-2. Lösche die `textview_first`, der `button_first` bleibt aber. Das wird später der "Los" Button.
+2. Lösche die `textview_first`, aber nicht den `button_first`. Das wird später der "Los" Button.
 
-3. Öffne das Layout `fragment_second.xml` und lösche den `button_second`, hier behalten wir die `textview_second`.
+3. Öffne das Layout `fragment_second.xml` und lösche den `button_second`, hier behältst du die `textview_second`.
 
 4. Öffne das `SecondFragment.java` und lösche den unten stehenden Code.
 ```java
@@ -149,7 +147,7 @@ view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListene
 
 ## Einen Satz eingeben
 
-Als erstes passt du das `FirstFragment` so an, dass der Benutzer einen Satz eingeben und auf "Los" klicken kann. Wenn er auf "Los" klickt soll sich das 2. Fragment öffnen und der eingegebene Satz an dieses übergeben werden.
+Nachdem du im vorigen Schritt alle unnötigen Komponenten entfernt hast, ist es nun an der Zeit mit der eigentlichen Entwicklung der App zu beginnen. Der erste Schritt dazu ist das `FirstFragment` so anzupassen, dass der Benutzer einen Satz eingeben und auf "Los" klicken kann. Wenn er auf "Los" klickt soll sich das 2. Fragment öffnen und der eingegebene Satz an dieses übergeben werden.
 
 ### Layout erstellen
 
@@ -163,11 +161,11 @@ Als erstes passt du das `FirstFragment` so an, dass der Benutzer einen Satz eing
 
 3. Öffne nun das Layout `fragment_first.xml` und wähle den Button mit einem Klick aus.
 
-4. Suche in der List der Attribute auf der rechten Seite nach `id`. Gib dem Button die id `button_go`.
+4. Suche in der List der Attribute auf der rechten Seite nach `id` und gib dem Button die id `button_go`.
 
 5. Wähle im Dialog der erscheint "Don't ask again during this session" und "Yes" aus.
 
-6. Suche in der Attributliste nach `text` und schreib `@string/go` hinein. Somit verlinkst du den String den du vorher erstellt hast mit dem Button.
+6. Suche in der Attributliste nach "text" und schreib `@string/go` hinein. Somit verlinkst du den String den du vorher erstellt hast mit dem Text des Buttons.
 
 7. Klicke nun einmal auf den weißen Hintergrund deines Layouts, um die Auswahl des Buttons aufzuheben.
 
@@ -177,9 +175,9 @@ Als erstes passt du das `FirstFragment` so an, dass der Benutzer einen Satz eing
 
 10. Gib dem `EditText` die id `edittext_phrase` und lösche den Text "Name", der automatisch gesetzt wurde.
 
-11. Nutze die Lupe rechts von `Attributes` um nach `hint` zu suchen. Leg `@string/enter_a_phrase` als `hint` fest.
+11. Nutze die Lupe rechts von "Attributes" um nach "hint" zu suchen. Leg `@string/enter_a_phrase` als `hint` fest.
 
-12. Wenn du das eben erstellte `EditText` auswählst, siehst du 4 Punkte an den Rändern. Es befindet sich auch jeder Seite einer. Ziehe den linken Punkt an den ganz linken Rand der weißen Hintergrundfläche. Dann wiederhole das für alle Punkte, zieh also den rechten Punkt zum rechten Rand, den oberen zum oberen Rand und den unteren Punkt zum unteren Rand der Fläche. Pass auf, dass der untere Punkt wirklich am Hintergrund andockt und nicht am Button.
+12. Wenn du das eben erstellte `EditText` auswählst, siehst du 4 Punkte an den Rändern. Es befindet sich an jeder Seite einer. Ziehe den linken Punkt an den ganz linken Rand der weißen Hintergrundfläche. Dann wiederhole das für alle Punkte, zieh also den rechten Punkt zum rechten Rand, den oberen zum oberen Rand und den unteren Punkt zum unteren Rand der Fläche. Pass auf, dass der untere Punkt wirklich am Hintergrund andockt und nicht am Button.
 
 13. Jetzt hast du sogenannte `Constraints` gesetzt, um das `EditText` in der Mitte des Bildschirms auszurichten.
 
@@ -190,7 +188,7 @@ Als erstes passt du das `FirstFragment` so an, dass der Benutzer einen Satz eing
 
 16. Jetzt musst du nur noch den `Button` positionieren. Dieser soll rechts unterhalb des `EditText` sein. Wähle ihn dazu mit einem Klick aus und ziehe den Punkt an der oberen Kante zur Unterkante des `EditText`
 
-17. Um ihn nun direkt unter dem `EditText` und an der rechten Bildschirmkante zu positionieren, lösche den linken und den unteren Constraint.
+17. Um den `Button` nun direkt unter dem `EditText` und an der rechten Bildschirmkante zu positionieren, lösche den linken und den unteren Constraint indem du sie mit einem Klick auswählst und dann auf der Tastatur auf `Entf` klickst.
 
 18. Lege im Constraint Widget die folgenden Rahmen fest: 
    - Rechts: 16
@@ -202,21 +200,20 @@ Das wars auch schon mit dem Layout zum eingeben eines Satzes. Dein Layout sollte
 
 ### Input einlesen und dem nächsten Fragment übergeben
 
-Da das Layout nun fertig ist, ist der nächste Schritt den Input des Benutzers im `FirstFragment.java` einzulesen und dem nächsten Fragment zu übergeben, wenn "LOS" gedrückt wird. Das bedeutet du musst einen `OnClickListener` hinzufügen dessen `onClick(View view)` Methode immer ausgeführt wird, der Benutzer auf "LOS" klickt. In dieser Methode liest du zuerst den Text aus dem `EditText` ein, bevor du zum nächsten Fragment navigierst. 
+Da das Layout nun fertig ist, ist der nächste Schritt den Input des Benutzers im `FirstFragment.java` einzulesen und dem nächsten Fragment zu übergeben, wenn auf "LOS" gedrückt wird. Das bedeutet du musst einen `OnClickListener` hinzufügen dessen `onClick(View view)` Methode immer ausgeführt wird, der Benutzer auf "LOS" klickt. In dieser Methode liest du zuerst den Text aus dem `EditText` ein, bevor du zum nächsten Fragment navigierst. 
 
-Ein Teil des Codes den du dazu benötigst ist schon vorhanden. Und zwar gibt es schon einen `OnClickListener` der ausgelöst wird, wenn der Button geklickt wird. Auch die Navigation zum `SecondFragment.java` funktioniert schon. Deshalb sind nur noch die folgenden Schritte nötig.
+Ein Teil des Codes, den du dazu benötigst, ist schon vorhanden. Und zwar gibt es schon einen `OnClickListener` der ausgelöst wird, wenn der Button geklickt wird. Auch die Navigation zum `SecondFragment.java` funktioniert schon. Deshalb sind nur noch die folgenden Schritte nötig.
 
-1. Den `Navigation Graph` vorbereiten, damit du den eingegebenen Satz als Argument übergeben kannst.
+1. Bereite den `Navigation Graph` vor, damit du den eingegebenen Satz als Argument übergeben kannst.
    1. Öffne zuerst die Datei `res/navigation/nav_graph.xml`. 
    2. Klicke in der linken Spalte unter `GRAPH` auf `SecondFragment`.
    3. Klicke rechts in der Attributliste auf das `+` rechts von `Arguments`.
    4. Gib "phrase" als Name und "String" als Type ein. Alles andere kannst du leer lassen.
-   5. Klicke auf "Add"
+   5. Klicke auf "Add".
    
-2. Den Satz einlesen und an das `SecondFragment` übergeben, wenn die `onClick()` Methode aufgerufen wird.
-  1. Öffne wieder das `FirstFragment.java`
+2. Lies den Satz ein und übergib ihn an das `SecondFragment`, wenn die `onClick()` Methode aufgerufen wird.
+  1. Öffne  das `FirstFragment.java`.
   2. Ersetze den Inhalt der `onViewCreated()` Methode mit dem folgenden Code.
-
 ```java
 super.onViewCreated(view, savedInstanceState);
 
@@ -249,16 +246,15 @@ Nachdem du das erste Fragment fertig gestellt hast, ist es an der Zeit, die Rout
 
 ### Einfaches Layout zum Testen erstellen
 
-In diesem Schritt benötigst du nur eine `TextView` in der du die Route anzeigst. Diese ist im Layout `fragment_second.xml` bereits vorhanden, passe sie aber mit den folgenden Schritten an. Die einzelnen Schritte sind nicht mehr so genau erklärt, da du das alles auch im `fragment_first.xml` schon gemacht hast. Solltest du also nicht weiter kommen, sieh dir einfach die Schritte oben nochmal genauer an. 
+In diesem Schritt benötigst du nur eine `TextView`, in der du die Route anzeigst. Diese ist im Layout `fragment_second.xml` bereits vorhanden, passe sie aber mit den folgenden Schritten an. Die einzelnen Schritte sind nicht mehr so genau erklärt, da du das alles auch im `fragment_first.xml` schon gemacht hast. Solltest du also nicht weiter kommen, sieh dir einfach die Schritte oben nochmal genauer an. 
 
 1. Gib der `TextView` die id `textview_info`.
 
-2. Ziehe alle 4 Constraints zu den Rändern um die `TextView` zu zentrieren.
-
+2. Ziehe alle 4 Constraints zu den Rändern des Bildschirms um die `TextView` zu zentrieren.
 
 ### Satz auslesen
 
-In diesem Schritt liest du den Satz aus, denn du im `FirstFragment` übergeben hast und zeigst ihn in der `TextView`, die du soeben angepasst hast, an. Befolge dazu diese Schritte.
+In diesem Schritt liest du den Satz, den du im `FirstFragment` übergeben hast, aus und zeigst ihn in der `TextView`, die du soeben angepasst hast, an. Befolge dazu diese Schritte.
 
 1. Öffne das `SecondFragment.java`.
 
@@ -267,12 +263,12 @@ In diesem Schritt liest du den Satz aus, denn du im `FirstFragment` übergeben h
 private TextView textViewInfo;
 private String phrase;
 ```
-3. Ersetze die `onViewCreated()` Methode mit dem folgendne Code.
+3. Ersetze die `onViewCreated()` Methode mit dem folgenden Code.
 ```java
 public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
 	super.onViewCreated(view, savedInstanceState);
 
-        // Bindet die TextView, die du im Layout erstellt hast, an diese Variable
+	// Bindet die TextView, die du im Layout erstellt hast, an diese Variable
 	textViewInfo = view.findViewById(R.id.textview_info);
 
 	// Holt die "phrase" aus dem Bundle mit den Argumenten
@@ -286,7 +282,7 @@ Wenn du die App jetzt ausführst, kannst du im ersten Fragment einen Satz eingeb
 
 ### Route herunterladen
 
-Um die Route zu laden, verwendest du einen Service, der im Internet angeboten wird. Dort kannst du einen Satz hinschicken und bekommst eine Liste mit Orten, die jeweils aus Name und Position (latitude und longitude) bestehen, zurück. Dieser Service ist unter https://api.map-reactions.ksick.dev/v0-1 verfügbar und so definiert:
+Um die Route zu laden, verwendest du einen Service der im Internet angeboten wird. Dort kannst du einen Satz hinschicken und bekommst eine Liste mit Orten, die jeweils aus Name und Position (latitude und longitude) bestehen, zurück. Dieser Service ist unter https://api.map-reactions.ksick.dev/v0-1 verfügbar und so definiert:
 
 ```shell
 # REQUEST
@@ -302,10 +298,10 @@ parameter:
 
 Aus dieser Definition kannst du die folgenden Dinge lesen:
 
-- Du musst einen `HTTP GET request` zu `/route` von diesem Endpunkt absetzen.
-- Du musst den eingegebenen Satz in dem parameter `phrase` übergeben. 
-- Du bekommst einen Statuscode zurück, der `200` ist wenn alles gut gegangen ist und die Antwort die Route enthält. 
-- Wenn etwas nicht passt oder ein Fehler passiert bekommst du einen anderen Statuscode als `200` in der Antwort.
+- Du musst einen `HTTP GET request` zum Endpunkt `/route` dieser URL absetzen.
+- Du musst den eingegebenen Satz in dem Parameter `phrase` übergeben. 
+- Du bekommst einen Statuscode zurück, der `200` ist wenn alles gut gegangen ist und die Route in der Antwort enthalten ist.
+- Wenn etwas nicht passt oder ein Fehler passiert ist bekommst du einen anderen Statuscode als `200` als Antwort zurück.
 
 Mit diesen Informationen kannst du den Request absetzen. Da du den Request ins Internet schickst, muss der Benutzer der App dies schon vor dem Download sehen können. Deshalb musst du die Berechtiung dafür im `AndroidManifest.xml` eintragen. Füge dazu die folgenden Zeile über dem `<application` tag ein.
 
@@ -320,22 +316,23 @@ Um den HTTP Request abzusetzen, kannst du [Volley](https://developer.android.com
 2. Füge die `dependency` für Volley  im Block `dependencies` ein.
 ```xml
 dependencies {
-	// andere dependencies, die bereits vorhanden sind
+	...
+	
 	implementation 'com.android.volley:volley:1.1.1'
 }
 ```
 3. Klicke rechts oben in der Leiste auf "Sync Now".
 
-4.   Öffne nun das `SecondFragment.java`. 
+4. Öffne nun das `SecondFragment.java`. 
 
 5. Füge die folgende Methode unter der Methode `onViewCreated()` ein.
 ```java
-public void loadRoute() {
+private void loadRoute() {
 	// Erstellt eine Queue, die alle Requests ausführt, die zu ihr hinzugefügt werden
 	RequestQueue requestQueue = Volley.newRequestQueue(getContext());
 
 	// Die URL für den Request. Diese wird aus den folgenden Teilen zusammengesetzt:
-	//   - Die Base URL https://api.map-reactions.ksick.dev/v0-1
+	//   - Die URL https://api.map-reactions.ksick.dev/v0-1
 	//   - Der Endpunkt: /route
 	//   - Der Paremeter phrase: ?phrase=<der eingegebene satz>
 	// Der Satz, der vom Benutzer eingegeben wurde, muss kodiert werden, damit die gesamte URL gültig ist
@@ -404,7 +401,7 @@ Nun definierst du zu welchem Objekt Gson das JSON parsen soll. Wenn du dir das J
 ]
 ```
 
-Befolge deshalb die folgenden Schritte um die Klasse `Place.Java` zu erstellen. 
+Befolge deshalb die folgenden Schritte um die Klasse `Place.java` zu erstellen. 
 
 1. Klicke mit der rechten Maustaste auf das Package in dem die `MainActivity.java` enthalten ist und gehe auf `New` -> `Java Class`.
 {{< imgblock "img/new_java_class.png" >}}{{< /imgblock >}}
@@ -421,7 +418,7 @@ public class Place {
 ```
 4. Um die Getter und Setter automatisch zu generieren, klicke mit der rechten Maustaste auf `Place` und wähle dann `Generate` -> `Getter and Setter` aus. 
 
-5. Wähle mit der Tastenkombination `Strg` + `A` alle Variablen aus und klick auf "OK".
+5. Wähle mit der Tastenkombination `Strg` + `A` alle Variablen aus und klicke auf "OK".
 
 6. Wiederhole das gleiche aber wähle `toString()` statt `Getter and Setter` aus um die `toString()` Methode zu generieren.
 
@@ -438,17 +435,271 @@ Die App sollte nun so aussehen.
 
 ## Karte anzeigen
 
-Nachdem du die Route im letzten Abschnitt erfolgreich heruntergeladen und geparsed hast, geht es in diesem Abschnitt darum die Karte inklusive Marker und Route auch tatsächlich anzuzeigen. Um die Karte anzuzeigen, verwendest du [osmdroid](https://github.com/osmdroid/osmdroid). Füge dazu die dependency `'org.osmdroid:osmdroid-android:6.1.8'` zur `build.gradle (Module: app)` hinzu.
+Nachdem du die Route im letzten Abschnitt erfolgreich heruntergeladen und geparst hast, geht es in diesem Abschnitt darum die Karte inklusive Marker und Route anzuzeigen. Um die Karte anzuzeigen, kannst du [osmdroid](https://github.com/osmdroid/osmdroid) verwenden. Füge dazu die dependency `'org.osmdroid:osmdroid-android:6.1.8'` zur `build.gradle (Module: app)` hinzu.
 
 ### Layout anpassen
 
+Die `MapView` von osmdroid kann leider nicht im Design Editor ins Layout eingefügt werden. Das ist aber kein großes Problem, da Android Studio alles was im Design Editor eingegeben wird in eine XML Datei übersetzt. Deshalb kannst du auch einfach die XML Datei bearbeiten, um die `MapView` hinzuzufügen. Das ist in den folgenden Schritten beschrieben. 
+
+1. Öffne das Layout `fragment_second.xml`.
+
+2. Wechsle ganz rechts oben im Editor von "Design" zu "Split". 
+
+3. Benutze den folgenden Code um die `MapView` über der bereits vorhandenen `TextView` einzufügen. Dabei wird Android Studio zuerst einen Fehler anzeigen, den kannst du aber ignorieren. Dieses Problem wirst du gleich lösen.
+```xml
+<org.osmdroid.views.MapView
+	android:layout_width="0dp"
+	android:layout_height="0dp" />
+```
+
+4. Wechsle rechts oben wieder zu "Design".
+
+5. Wähle die `textview_info` im `Component Tree` aus. 
+
+6. Lösche den oberen Constraint um die `TextView` am unteren Bildschirmrand auszurichten. 
+
+7. Gib der TextView die Breite (`layout_width`) `0dp (match constraint)` um sie über die ganze Breite anzuzeigen.
+
+8. Such in der Attributliste nach "padding" und vergib ein `padding` von `16dp`.
+
+9. Wähle die `MapView` im `Component Tree` aus. 
+
+10. Du siehst nun ganz links oben den rechten und unteren Constraint Punkt der `MapView`. Ziehe den rechten zum rechten Bildschirmrand.
+
+11. Jetzt ist die `MapView` durch den Constraint nach ganz rechts oben gerutscht, ziehe nun den linken Punkt zum linken Bildschirmrand und den unteren zum oberen Punkt der `TextView`.
+
+12. Nun siehst du auch den oberen Punkt der `MapView`. Ziehe diesen ganz nach oben, damit die `MapView` den gesamten Bildschirm über der `TextView` einnimmt.
+
+13. Gib der `MapView` die id `mapview`.
+
 ### Karte anzeigen
+
+osmdroid speichert Teile der Karte auf dem Telefon des Benutzers. Deshalb musst du, bevor du die Karte laden kannst, die Berechtigung dafür einholen. Du kennst das sicher von Instagram, Facebook, WhatsApp oder anderen Apps, dass du der App erlauben musst auf deine Kamera zuzugreifen, bevor du ein Foto machen kannst. Genau das gleiche muss jetzt Speicherzugriff gemacht werden, damit die App auf den Speicher zugreifen darf. Glücklicherweise bietet Android hier gute Unterstützung an und du kannst die Berechtigung mit den folgenden Schritten abfragen.
+
+1.  Öffne das `AndroidManifest.xml`.
+
+2. Füge die folgende Zeile unter `<uses-permission android:name="android.permission.INTERNET" />` ein.
+```xml
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
+3. Öffne das `SecondFragment.java`.
+
+4. Erstelle eine neue Methode, die wie folgt definiert ist und fürs Erste leer bleibt. 
+```java
+private void showMap() {}
+```
+
+5. Nun brauchst du eine Methode, die überprüft ob der Benutzer der App schon erlaubt hat auf den Speicher zuzugreifen. Verwende dazu diese Methode.
+```java
+private boolean isStoragePermissionGranted() {
+	// Holt den Status der Berechtigung, also ob sie zugelassen (granted) oder abgelehnt (denied) wurde.
+	int permissionStatus = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
+	// Gibt true zurück, wenn die Berechtigung zugelassen wurde. Sonst wird false zurückgegeben.
+	return permissionStatus == PackageManager.PERMISSION_GRANTED;
+}
+```
+
+6. Definiere als Vorbereitung eine neue finale Member-Variable. Füge dazu die folgende Zeile ganz oben in deiner Klasse unter `public class SecondFragment extends Fragment {`  ein.
+```java
+private final int PERMISSION_REQUEST_CODE = 123;
+```
+
+7. Gehe nun zum `onResponse()` Block in der `loadRoute()` Methode. Das ist die Stelle wo die neue `showMap()` Methode zum Anzeigen der Karte aufgerufen werden soll. Ersetze deshalb die Zeile `textViewInfo.setText(route.get(0).toString());` mit diesem Code.
+```java 
+// Überprüft ob der Benutzer der App erlaubt hat auf den Speicher zuzugreifen
+if (isStoragePermissionGranted()) {
+	// Wenn Ja wird showMap() aufgerufen
+	showMap();
+} else {
+	// Wenn Nein wird ein Dialog angezeigt, in dem der Benutzer um die Berechtigung gefragt wird
+	requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_CODE);
+}
+```
+
+8. Die Antwort auf `requestPermissions()` kommt asynchron über einen Callback. Das bedeutet, dass sobald der Benutzer im Dialog eine Antwort auswählt, die Methode `onRequestPermissionsResult()` ausgeführt wird. Diese gibt es bereits in der Klasse `Fragment`, von der das  `SecondFragment` abgeleitet ist. Deshalb musst du diese überschreiben. Füge dazu die folgende Methode zum `SecondFragment` hinzu.
+```java
+@Override
+public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+	// Führt die Implementierung dieser Methode in der Fragment.java Klasse aus
+	super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+   
+	// Überprüft ob der request code mit dem übereinstimmt, der vorher abgesetzt wurde. 
+	// Falls er nicht übereinstimmt, ist es nicht das Ergebnis auf deinen Request und du musst nichts machen.
+	if (requestCode == PERMISSION_REQUEST_CODE) {
+		// Überprüft ob der Benutzer der App erlaubt hat auf den Speicher zuzugreifen
+		if (isStoragePermissionGranted()) {
+			// Wenn Ja wird showMap() aufgerufen
+			showMap();	
+		} else {
+			// Wenn Nein wird die App geschlossen
+			getActivity().finish();
+		}
+	}
+}
+```
+
+Wenn du die App jetzt ausführst, einen Satz eingibst und wartest bis der HTTP Request erfolgreich war, solltest du nun so einen Dialog sehen. Klickst du auf "Ablehnen" wird die App einfach geschlossen und beim nächsten mal wenn du zu diesem Punkt kommst, wird der Dialog wieder angezeigt. Klickst du auf "Zulassen" passiert derweil noch nichts, weil deine `showMap()` Methode noch leer ist. Wenn du nun die App schließen würdest und diese Schritte wiederholen würdest, würde der Dialog nicht mehr erscheinen, weil Android sich merkt, dass du dieser App erlaubt hast auf den Speicher zuzugreifen.
+
+>  *ACHTUNG: Es kann sein, dass der erste Request sehr lange dauert oder sogar fehl schlägt. Geh einfach nochmal zurück zum Start und probier es nochmal. Die Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#lambda-warmup) beschrieben.*
+
+{{< imgblock "img/request_permission.jpg" >}}{{< /imgblock >}}
+
+Befolge die nächsten Schritte um eine Karte anzuzeigen.
+
+1. Öffne das `SecondFragment.java`.
+
+2. Erstelle die folgende Member-Variable.
+```java
+private MapView mapView;
+```
+
+2. Gehe zur `onViewCreated()` Methode und binde darin die `MapView` mit dem folgenden Code an die soeben erstellte Variable.
+```java 
+mapView = view.findViewById(R.id.mapview);
+```
+	
+3. Befülle nun die `showMap()` Methode mit dem folgenden Code.
+```java
+// Lädt oder initiliasiert die osmdroid Konfiguration
+Configuration.getInstance().load(getContext(), PreferenceManager.getDefaultSharedPreferences(getContext()));
+   
+// Definiert wie die Karte aussehen soll, MAPNIK ist quasi die Standard Open Street Map Karte
+mapView.setTileSource(TileSourceFactory.MAPNIK);
+// Braucht man, damit man mit zwei Fingern zoomen kann
+mapView.setMultiTouchControls(true);
+// Zoomt auf das Zoom Level 6
+mapView.getController().zoomTo(6.0);
+```
+
+Nun hast du es geschafft eine Karte anzuzeigen. Sie sollte in etwa so wie im unteren Bild aussehen. Wenn sie nicht lädt, geh einfach nochmal zurück klicke erneut auf "Los", beim ersten Request zur API, über die die Route geladen wird, ist diese immer etwas langsam. Eine Lösung für dieses Problem ist im Abschnitt [Bonus: Verbesserungen](#lambda-warmup) beschrieben. 
+
+{{< imgblock "img/map.jpg" >}}{{< /imgblock >}}
 
 ### Marker hinzufügen
 
+Nun ist es an der Zeit, die Orte, die in der Route enthalten sind, auf der Karte anzuzeigen. Der erste Schritt hierfür ist, eine Member-Variable für die Route zu erstellen, damit sie auch außerhalb des `onResponse()` Callbacks verwendet werden kann. Danach verwendest du die Klasse `SpeechBalloonOverlay`, die in osmdroid enthalten ist, um die Marker zu erstellen und zur Route hinzuzufügen. Befolge dazu diese Schritte.
+
+1. Erstelle mit der folgenden Zeile eine Member-Variable für die Route. Füge diese unter `private MapView mapView;` ein.
+```java
+private List<Place> route;
+```
+   
+2. Gehe zur `onResponse()` Methode und ersetze die Zeile
+```java
+List<Place> route = new Gson().fromJson(response, new      TypeToken<List<Place>>() {}.getType());
+```
+mit der folgenden.
+```java
+route = new Gson().fromJson(response, new TypeToken<List<Place>>() {}.getType());
+```
+Nun wird die Route nicht mehr in einer lokalen Variable gespeichert, sondern in einer Member-Variable, die in der ganzen Klasse verfügbar ist.
+
+3. Füge nun den folgenden Code zur Methode `showMap()` hinzu, um die Marker anzuzeigen.
+
+```java
+// Iteriert über alle Places, die in der Route enthalten sind
+for  (int i = 0; i < route.size(); i++) {
+	// Speichert den aktuellen Place in die Variable place
+	Place place = route.get(i);
+	// Erstellt einen GeoPoint mit den Koordinaten des aktuellen Place
+	GeoPoint geoPoint = new GeoPoint(place.getLatitude(), place.getLongitude());
+   
+	// Erstellt das Overlay (= Marker) der später angezeigt wird
+	SpeechBalloonOverlay textOverlay = new SpeechBalloonOverlay();
+	// Positioniert das Overlay
+	textOverlay.setGeoPoint(geoPoint);
+	// Definiert den Titel/Text des Overlays. Dieser sieht später zum Biespiel so aus: "1 - Ortsname"
+	textOverlay.setTitle((i + 1) + " - " + place.getName());
+   
+	// Definiert wie die Schrift aussehen soll, also weiß und in der Schriftgröße 48
+	Paint textPaint = new Paint();
+	textPaint.setColor(Color.WHITE);
+	textPaint.setTextSize(48);
+   
+	// Definiert die Hintergrundfarbe, in diesem Fall schwarz
+	Paint backgroundPaint = new Paint();
+	backgroundPaint.setColor(Color.BLACK);
+   
+	// Übergibt die soeben erstellten Paints für Text und Hintergrund an das Overlay, damit diese verwendet werden
+	textOverlay.setForeground(textPaint);
+	textOverlay.setBackground(backgroundPaint);
+   
+	// Legt einen Rahmen fest, damit die Marker ein bisschen besser aussehen
+	textOverlay.setMargin(16);
+   
+	// Fügt das Overlay zur Karte hinzu
+	mapView.getOverlays().add(textOverlay);
+}
+```
+
+Wenn du nun einen Satz eingibst und dann auf der Karte nach Amerika navigierst, solltest du die Marker für deine Route sehen.   
+
 ### Route hinzufügen
 
+Um eine Route auf einer OpenStreetMap Karte anzuzeigen, kannst du das [OSMBonusPack](https://github.com/MKergall/osmbonuspack) verwenden. Die Dependency dafür ist aber auf einem anderen Server (repository) gespeichert als die bisherigen. Öffne deshalb zuerst die `build.gradle (Project: <DEIN_PROJEKT_NAME>)` und füge das repository `maven { url "https://jitpack.io" }` im folgenden Block ein und klicke auf "Sync Now".
+
+```xml
+allprojects {
+	repositories { 
+    	...
+    	maven { url "https://jitpack.io" }
+	}
+}
+```
+
+Nun kannst du die Dependency `'com.github.MKergall:osmbonuspack:6.6.0'` wie gewohnt zur `build gradle (Module: app)` hinzufügen. Befolge danach die unten stehenden Schritte um die Route zwischen den Markern anzuzeigen.
+
+1. Der `RoadManager`, der später verwendet wird um eine Route zu laden, setzt einen HTTP Request ins Internet ab. Das funktioniert ähnlich, wie du es vorher gemacht hast um die Liste von `Place` Objekten zu laden. Der `RoadManager` schickt diesen Request aber nicht, wie du vorher, an einen Endpunkt der mit HTTPS abgesichert ist, sondern an einen unsicheren HTTP Endpunkt. Das ist in Android nur erlaubt, wenn man im `AndroidManifest.xml` angibt, dass man Requests zu HTTP Endpunkten schickt. Öffne deshalb das `AndroidManifest.xml` und füge die folgende Zeile im `<application>` tag ein.
+```xml
+<application
+	...
+	android:usesCleartextTraffic="true" >
+	<activity ...>
+		...
+	</activity>
+</application>
+```
+
+2. Um eine Route erstellen zu können, benötigst du eine Liste von `GeoPoint` Objekten. Füge deshalb über der `for`-Schleife, die du oben erstellt hast die folgende Zeile ein.
+```java
+ArrayList<GeoPoint> geoPoints = new ArrayList<>();
+```
+
+3. Nachdem du Liste erstellt hast, muss sie auch befüllt werden. Du erstellst ja in der `for`-Schleife mit `GeoPoint geoPoint = new GeoPoint(place.getLatitude(), place.getLongitude());` einen GeoPoint, der die Position des Markers bestimmt. Füge diesen in der nächsten Zeile mit `geoPoints.add(geoPoint);` zur Liste hinzu.
+
+4. Füge den folgenden Code unter der `for`-Schleife ein um die Route zu laden.
+```java
+// Die folgenden zwei Zeilen werden benötigt um HTTP Requests am Main Thread abzusetzen.
+// Mehr dazu und wie man es besser macht im Abschnitt "Bonus: Verbesserungen" der Anleitung.
+StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+StrictMode.setThreadPolicy(policy);
+   
+// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
+RoadManager roadManager = new OSRMRoadManager(getContext());
+// Lädt eine Route, die alle GeoPoints beinhaltet, die oben zur Liste hinzugefügt wurden.
+// Diese methode macht im Hintergrund einen HTTP Request am Main Thread.
+Road road = roadManager.getRoad(geoPoints);
+// Erstellt die Linie, die dann auf der Karte angezeigt wird.
+Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);
+// Zeigt die Linie auf der Karte an.
+mapView.getOverlays().add(roadOverlay);
+   
+// Erlaubt der Karte nicht weiter als auf dieses Level zu zoomen
+mapView.setMaxZoomLevel(5.0);
+// Zentriert die Karte über der Route
+mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150, 6.0, 100L);
+// Aktualisiert die MapView, damit die Overlays richtig angezeigt werden.
+mapView.invalidate();
+```
+
+Gratuliere! Nun hast du den Basisteil der Anleitung geschafft und solltest eine Karte mit deiner Route sehen. 
+
+{{< imgblock "img/basic_app_done.png" >}}{{< /imgblock >}}
+
 ## Bonus: Verbesserungen
+
+### aktuellen status in der textview
 
 ### naming der files
 
@@ -462,6 +713,12 @@ Nachdem du die Route im letzten Abschnitt erfolgreich heruntergeladen und gepars
 
 ### Lambda warmup
 
+### app icon
+
 ## Ideen zum weiterentwickeln
 
-Englische Strings
+Übersetzen in eine andere Sprache
+
+```
+
+```
