@@ -663,7 +663,7 @@ StrictMode.setThreadPolicy(policy);
 // Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
 RoadManager roadManager = new OSRMRoadManager(getContext());
 // Lädt eine Route, die alle GeoPoints beinhaltet, die oben zur Liste hinzugefügt wurden.
-// Diese methode macht im Hintergrund einen HTTP Request am Main Thread.
+// Diese methode macht einen HTTP Request am Main Thread.
 Road road = roadManager.getRoad(geoPoints);
 // Erstellt die Linie, die dann auf der Karte angezeigt wird.
 Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);
@@ -768,10 +768,109 @@ if (StringUtils.isBlank(phrase)) {
 
 ### Asynchrone HTTP Requests
 
+Wie bereits weiter oben beschrieben, setzt die Methode `roadManager.getRoad(wayPoints);` eine HTTP Request am Main Thread ab. Das bedeutet, dass diese Methode den Main Thread sehr lange blockieren kann, falls es Probleme beim Request geben sollte. Deshalb waren auch die folgenden beiden Zeilen nötig.
+```java
+StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+StrictMode.setThreadPolicy(policy);
+```
 
+Diese Zeilen werden am Ende dieses Abschnitts nicht mehr nötig sein, da du den Request in einem anderen Thread absetzen und das Ergebnis in einem Callback zurückgeben wirst. Befolge die folgenden Schritte, um dieses Ziel zu erreichen.
+
+1. Erstelle ein neues Package `util`.
+
+2. Erstelle in diesem Package eine neue Klasse mit dem Namen `GetRoadRunnable` und ein neues Interface ("New" -> "Java Class" -> mit den Pfeiltasten "Interface auswählen") mit dem Namen `GetRoadResponseListener`.
+
+3. Öffne den `GetRoadResponseListener` und füge die Methode `void onResponse(Road road);` ein. Diese Methode wird dann ausgeführt, sobald die Route/Straße geladen wurde. Das Interface sollte dann so aussehen.
+```java 
+public interface GetRoadResponseListener {
+	// Wird aufgerufen, wenn die Route geladen wurde
+	void onResponse(Road road);
+}
+```
+4. Füge den folgenden Code in das `GetRoadRunnable` ein.
+```java
+public class GetRoadRunnable implements Runnable {
+
+	// Die Activity, in der das Runnable erstellt wurde
+	private Activity activity;
+	// Die Wegpunkte, die enthalten sein sollen
+	private ArrayList<GeoPoint> wayPoints;
+	// Der ResponseListener, dessen "onResponse" aufgerufen wird, sobald eine Antwort verfügbar ist
+	private GetRoadResponseListener responseListener;
+
+	// Konstruktor - Erstellt eine neue Instanz des GetRoadRunnable
+	public GetRoadRunnable(Activity activity, ArrayList<GeoPoint> wayPoints, GetRoadResponseListener responseListener) {
+		this.activity = activity;
+		this.wayPoints = wayPoints;
+		this.responseListener = responseListener;
+	}
+
+	@Override
+	public void run() {
+		// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
+		RoadManager roadManager = new OSRMRoadManager(activity);
+		// Lädt eine Route, die alle GeoPoints beinhaltet, die oben übergeben wurden.
+		final Road road = roadManager.getRoad(wayPoints);
+
+		// Führt den Code innerhalb des run() {} Blocks am UI Thread aus. 
+		// UI Elemente können nur auf diesem Thread manipuliert werden.
+		activity.runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				// Ruft die onResponse() des ResponseListeners auf
+				responseListener.onResponse(road);
+			}
+		});
+	}
+}
+```
+5. Öffne das `MapFragment`.
+
+6. Lösche die folgenden Zeilen.
+```java
+// Die folgenden zwei Zeilen werden benötigt um HTTP Requests am Main Thread abzusetzen.
+// Mehr dazu und wie man es besser macht im Abschnitt "Bonus: Verbesserungen" der Anleitung.
+StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+StrictMode.setThreadPolicy(policy);
+
+// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
+RoadManager roadManager = new OSRMRoadManager(getContext());
+// Lädt eine Route, die alle GeoPoints beinhaltet, die oben zur Liste hinzugefügt wurden.
+// Diese methode macht im Hintergrund einen HTTP Request am Main Thread.
+Road road = roadManager.getRoad(geoPoints);
+```
+7. Lösche außerdem die Zeile `mapView.getController().zoomTo(6.0);` weiter oben in der Methode.
+
+8. Füge den folgenden Code nach der `for`-Schleife ein.
+```java
+// Erstellt ein neues GetRoadRunnable
+Runnable getRoadRunnable = new GetRoadRunnable(getActivity(), geoPoints, new GetRoadResponseListener() {
+	@Override
+	public void onResponse(Road road) {
+		// Dieser Code wird ausgeführt, sobald eine Antwort verfügbar ist.
+	}
+});
+        
+// Erstellt einen neuen Thread mit dem oben erstellten Runnable und führt diesen aus.
+new Thread(getRoadRunnable).start();
+```
+9. Kopiere alle Zeilen unter diesem Code (siehe Codeblock unten) in die `onResponse()` Methode.
+```java
+// Erstellt die Linie, die dann auf der Karte angezeigt wird.
+Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);
+// Zeigt die Linie auf der Karte an.
+mapView.getOverlays().add(roadOverlay);
+
+// Erlaubt der Karte nicht weiter als auf dieses Level zu zoomen
+mapView.setMaxZoomLevel(5.0);
+// Zentriert die Karte über der Route
+mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150);
+// Aktualisiert die MapView, damit die Overlays richtig angezeigt werden.
+mapView.invalidate();
+```
 
 ### Timeout und Serverless Function Warmup
-Der Endpunkt, von dem die Route abgefragt wird, ist einer sogenannten "Serverless Function" gehosted. Das bedeutet, dass der Cloud-Anbieter, der für die Funktion verantwortlich ist, die benötigten Ressourcen dynamisch verwaltet. Werden keine Anfragen zum Endpunkt gemacht, wird der Code auch nicht ausageführt. Deshalb muss das System erst "hochgefahren" werden bevor ein Request bearbeitet werden kann. Das bezeichnet man als "cold start". Wird kurz danach ein zweiter Request geschickt, sind die Ressourcen noch vorhanden und der Request kann deutlich schneller verarbeitet werden. Das ist der Grund, warum der erste Request um die Route abzufragen momentan noch oft fehlschlägt. 
+Der Endpunkt, von dem die Route abgefragt wird, ist einer sogenannten "Serverless Function" gehosted. Das bedeutet, dass der Cloud-Anbieter, der für die Funktion verantwortlich ist, die benötigten Ressourcen dynamisch verwaltet. Werden keine Anfragen zum Endpunkt gemacht, wird der Code auch nicht ausgeführt. Deshalb muss das System erst "hochgefahren" werden bevor ein Request bearbeitet werden kann. Das bezeichnet man als "cold start". Wird kurz danach ein zweiter Request geschickt, sind die Ressourcen noch vorhanden und der Request kann deutlich schneller verarbeitet werden. Das ist der Grund, warum der erste Request um die Route abzufragen momentan noch oft fehlschlägt. 
 
 Um das Problem zu lösen kannst du das sogenannte "Timeout" bei `Volley` (die Bibliothek mit der der Request abgesetzt wird) erhöhen. Das Timeout definiert wieviel Zeit vergehen darf, bevor man davon ausgeht, dass keine Antwort mehr kommt und der Request abgebrochen wird. Standardmäßig liegt das Timeout bei `Volley` bei 5 Sekunden. Füge den folgenden Code im `MapFragment.java` hinzu, bevor der `stringRequest` zur `requestQueue` hinzugefügt wird.
 ```java
@@ -782,14 +881,55 @@ stringRequest.setRetryPolicy(new DefaultRetryPolicy(
 	1 // Mit dieser Zahl wird das Timeout bei jedem neuen Versuch multipliziert
 ));
 ```
-Um dem oben beschriebenen "cold start" vorzubeugen, kann man zum Beispiel schon beim Start der App einen leeren Request an die Function schicken um sie zu starten. Das ist wieder ein Task, den du allein probieren kannst, wenn du möchtest. Setze dazu im `PhraseInputFragment` einen Request zum Server ab, bei dem du das Ergebnis ignorierst. Im folgenden ist beschrieben, wie ich es gelöst habe.
+Um dem oben beschriebenen "cold start" vorzubeugen, kann man zum Beispiel schon beim Start der App einen leeren Request an die Serverless Function schicken um sie zu starten. Das ist wieder ein Task, den du allein probieren kannst, wenn du möchtest. Setze dazu im `PhraseInputFragment` einen Request zum Server ab, bei dem du das Ergebnis ignorierst. Im folgenden ist beschrieben, wie ich es gelöst habe.
 
 1. Öffne das `PhraseInputFragment.java`.
-2. 
+
+2. Erstelle mit dem folgenden Code eine neue Methode.
+```java
+private void warmUpServerlessFunction() {
+	// Erstellt eine Queue, die alle Requests ausführt, die zu ihr hinzugefügt werden
+	RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+	// Die URL für den Request. Diese beinhaltet keine phrase, da die Function nur gestartet werden soll;
+	String url = "https://api.map-reactions.ksick.dev/v0-1/route?phrase=wakeup";
+
+	// Erstellt den Request, der später abgesetzt werden soll
+	StringRequest blankRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+		@Override
+		public void onResponse(String response) {
+			// Das Ergebnis wird ignoriert
+		}
+	}, null);
+
+	// Fügt den Request zur RequestQueue hinzu um ihn abzusetzen
+	requestQueue.add(blankRequest);
+}
+```
+3. Rufe die neue Methode ganz unten in der `onViewCreated()` auf.
+
+### Mehrsprachige App
+
+Wenn du während der Implementierung der App einen Text benötigt hast, hast du diesen immer in die Datei `res/values/strings.xml` eingetragen. Das ist dir wahrscheinlich etwas unpraktisch vorgekommen, aber jetzt wirst du den großen Vorteil dieser Methode sehen. Und zwar kannst du die App jetzt ganz einfach in mehrere Sprachen übersetzen. In diesem Schritt wirst du Englisch als Standardsprache festlegen und Deutsch als zweite Sprache hinzufügen. Das bedeutet, dass die Texte der App in Deutsch sein werden, wenn das Smartphone auf Deutsch eingestellt ist. In allen anderen Fällen werden die Texte in Englisch dargestellt. Befolge dazu die folgenden Schritte.
+
+1. Öffne die Datei `res/values/strings.xml`.
+
+2. Klicke mit der rechten Maustaste irgendwo in den leeren Bereich der Datei und klicke dann auf "Show Context Actions" -> "Open editor".
+
+3. Klicke links oben im Editor auf die Weltkugel mit dem grünen Plus (im Bild unten in Orange gekennzeichnet).
+
+4. Suche nach "German" und wähle "German (de)" aus.
+
+5. Kopiere nun alle Texte der Spalte "Default Value" nach "German (de)".
+
+6. Übersetze nun die Texte in der Spalte "Default Value" in Englisch. Du kannst diese einfach vom folgenden Screenshot abschreiben. 
+
+{{< imgblock "img/android_studio_translations_editor.png" >}}{{< /imgblock >}}
+
+Wenn du die Sprache deines Telefons nun auf Englisch (oder eine andere Sprache außer Deutsch) umstellst, ist auch die App in Englisch. Stellst du die Telefonsprache zurück auf Deutsch, sind die Texte in der App wieder auf Deutsch.
 
 ### Styling der App
 
-### Mehrsprachige App
+
 
 ## Ressourcen
 
