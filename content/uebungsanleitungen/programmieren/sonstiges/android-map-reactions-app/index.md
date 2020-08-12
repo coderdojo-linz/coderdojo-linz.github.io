@@ -929,6 +929,326 @@ Wenn du die Sprache deines Telefons nun auf Englisch (oder eine andere Sprache a
 
 ### Styling der App
 
+Die App erfüllt nun alle Ansprüche an die Funktionalität, das Design lässt aber noch zu wünschen übrig. Dieses wirst du in diesem Abschnitt verbessern. Und zwar soll die App am Ende so wie im Bild unten aussehen. Wie du das erreichst, ist in den folgenden Abschnitten beschrieben.
+
+{{< imgblock "img/map_reactions_app.png" >}}{{< /imgblock >}}
+
+Beim betrachten der App, wird schnell klar, das Blau die Hauptfarbe ist. Wenn du die Datei `res/values/colors.xml` öffnest, siehst du, dass es dort drei Farben gibt. Und zwar einmal die `colorPrimary`, die Hauptfarbe der App. Zusätzlich gibt es noch die `colorPrimaryDark`, welche etwas dunkler als die `colorPrimary` sein sollte, diese wird zum Beispiel für die Hintergrundfarbe der Notification Bar verwendet. Zusätzlich gibt es noch die `colorAccent`, welche einen Kontrast zur `colorPrimary` darstellen soll und zum Beispiel für wichtige Elemente wie den `Floating Action Button` verwendet wird. Passe die Farben mit den folgenden Schritten an.
+
+1. In dieser App brauchst du die `colorAccent` nicht, deshalb kannst du sie löschen.
+
+2.   Setze für die anderen beiden Farben die folgenden Werte.
+```xml
+<color name="colorPrimary">#0c27ba</color>
+<color name="colorPrimaryDark">#071872</color>
+```
+3. Öffne die Datei `res/values/styles.xml` und lösche die Zeile `<item name="colorAccent">@color/colorAccent</item>`.
+
+#### Styling des `PhraseInputFragment`
+
+##### Hintergrund
+
+Der Hintergrund des `PhraseInputFragment` besteht aus zwei Teilen. Zum einen enthält er ein Bild mit einer Karte und zum anderen einen blauen Farbverlauf, der nach rechts unten hin immer heller und transparenter wird, damit man mehr von der Karte sieht. Befolge diese Schritte um den Hintergrund so zu gestalten.
+
+1. Das Hintergrundbild ist [hier](https://unsplash.com/photos/4Zk45jNyQS4) auf [Unsplash](https://unsplash.com/) verfügbar. Ich habe das Bild bereits heruntergeladen, zugeschnitten und an verschiedene Auflösungen angepasst. In Android kann man Bilder und Grafiken nämlich in verschiedenen Größen zur Verfügung stellen und das Smartphone wählt dann das richtige Bild aus. Lade dir die [zip Datei](https://coderdojo-map-reactions.s3.eu-central-1.amazonaws.com/phrase_input_background.zip) herunter und extrahiere sie in deinem Projektordner unter `res`.
+
+2. Öffne das Layout `fragment_phrase_input.xml` und wähle im `Component Tree` das `ConstraintLayout` aus. 
+
+3. Suche rechts in der Attributliste nach "background" und gib dort "@drawable/phrase_input_background" ein, um das soeben heruntergeladene Bild als Hintergrund zu verwenden.
+
+4. Für den Verlauf, benötigst du eine weitere Farbe. Nämlich das halb transparente blau, das rechts unten im Verlauf zu sehen ist. Öffne deshalb die Datei `res/values/colors.xml` und füge die Farbe `<color name="colorPrimaryTransparent">#cd0c27ba</color>` hinzu.
+
+5. Klicke, um die Datei für den Verlauf zu erstellen, mit der rechten Maustaste auf den `drawable` Ordner und klicke dann auf "New" -> "Drawable Resource File". Gib ihm den Namen "background_gradient" ein und klicke auf "OK".
+
+6. Öffne die Datei und klicke rechts oben bei "Design" auf "Code".
+
+7. Füge den folgenden Code ein. Dieser erstellt einen linearen Verlauf im -45° Winkel von der Farbe `colorPrimary` zur `colorPrimaryTransparent`. 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape>
+			<gradient
+				android:angle="-45"
+				android:startColor="@color/colorPrimaryDark"
+				android:endColor="@color/colorPrimaryTransparent"
+				android:type="linear" />
+		</shape>
+	</item>
+</selector>
+```
+8. Wechsle wieder zum `fragment_phrase_input.xml` und suche in der `Palette` nach "View".
+
+9. Ziehe die `View` Komponente, die im Suchergebnis erscheint, irgendwo auf das Layout.
+
+10. Ziehe die Constraints der `View` wieder zu allen 4 Bildschirmrändern, um sie übern den ganzen Bildschirm gehen zu lassen. 
+
+11. Suche in der Attributliste wieder nach "background" und setze den Wert "@drawable/background_gradient".
+
+12. Ziehe die `view` im `Component Tree` über den `button_go`,  damit sie in den Hintergrund rückt.
+
+##### UI Elemente
+
+Jetzt ist der Hintergrund soweit fertig. Da das `EditText` zum Eingeben des Satzes aber sehr dunkel ist, sieht man es fast nicht. Also kümmerst du dich als Nächstes um das Styling des `EditTexts` und auch des `Buttons`, da er momentan noch nicht sehr schön aussieht. Außerdem ist in den folgenden Anweisungen beschrieben, wie du das Icon oben in der Mitte herunterladen und hinzufügen kannst.
+
+1. In dem Bild oben siehst, du dass das `EditText` einen weißen Hintergrund mit runden Ecken hat. Wenn du ganz genau hinsiehst, erkennst du auch, dass es einen ganz dünnen blauen Rahmen hat. Erstelle ein neues `Drawable Resource File` namens "edittext_background". 
+
+2. Füge den folgenden Code ein um ein weißes Rechteck mit runden Ecken und einem blauen Rahmen zu erstellen.
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Definiert die Form, also ein Rechteck -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+	<!-- Definiert die Farbe, in diesem Fall weiß -->
+	<solid android:color="@android:color/white" />
+	<!-- Definiert den Rahmen in der Farbe colorPrimaryDark und mit der Stärke 1dp -->
+	<stroke
+		android:width="1dp"
+		android:color="@color/colorPrimaryDark" />
+	<!-- Legt den Radius der Ecken fest -->
+	<corners
+		android:bottomLeftRadius="32dp"
+		android:bottomRightRadius="32dp"
+		android:topLeftRadius="32dp"
+		android:topRightRadius="32dp" />
+</shape>
+```
+3.  Button soll genau gleich aussehen, nur mit umgekehrten Farben. Erstelle deshalb gleich ein zweites `Drawable Resource File` mit dem Namen `button_background` und dem folgenden Inhalt.
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Definiert die Form, also ein Rechteck -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+	<!-- Definiert die Farbe, in diesem Fall colorPrimaryDark -->
+	<solid android:color="@color/colorPrimaryDark" />
+	<!-- Definiert den Rahmen in der Farbe Weiß und mit der Stärke 1dp -->
+	<stroke
+		android:width="1dp"
+		android:color="@android:color/white" />
+	<!-- Legt den Radius der Ecken fest -->
+	<corners
+		android:bottomLeftRadius="32dp"
+		android:bottomRightRadius="32dp"
+		android:topLeftRadius="32dp"
+		android:topRightRadius="32dp" />
+</shape>
+```
+4. Öffne nun das `fragment_phrase_input` und wähle das `EditText` aus. 
+
+5. Suche in der Attributliste nach "background" und lege "@drawable/edittext_background" als Hintergrund fest.
+
+6. Suche nun in der Attributliste nach "padding" und vergib für die Felder "paddingStart" und "paddingStart" einen Wert von "24dp" und für "paddingTop" und "paddingBottom" "12dp".
+
+7. Wähle nun den `Button` aus und gib ihm den Hintergrund "@drawable/button_background".
+
+8. Lege zusätzlich "@android:color/white" als "textColor" fest.
+
+9. Ziehe den unteren Constraint zum unteren Bildschirmrand und lösche den oberen Constraint, um den Button rechts unten auszurichten.
+
+10. Lege im `Constraint Widget` unten einen Rahmen von 24 fest.
+
+11. Lade dir [diesen Icon](https://www.flaticon.com/free-icon/placeholder_2942933?term=map&page=1&position=41) von [flaticon](https://ww.flaticon.com) als "PNG" herunter und kopiere dir den "Attribution Link", in diesem Fall "<div>Icons made by <a href="https://www.flaticon.com/free-icon/placeholder_2942933?term=map&page=1&position=41" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>" in eine Text-Datei. Diese Information wirst du am Ende der Anleitung noch in die App einbauen.
+
+> *ACHTUNG: Solltest du die App irgendwo veröffentlichen, musst du unbedingt die Information, von wo die Icons sind in den Credits der App und in der Info des Playstores anzeigen!* 
+
+12. Gehe auf die Seite https://romannurik.github.io/AndroidAssetStudio/ und klicke auf "Generic Icon Generator".
+
+13. Klicke links bei "Source" auf "Image" und lade den soeben heruntergeladenen Icon hoch.
+
+14. Wähle die folgendne Werte aus und klicke dann rechts oben auf "Download".
+	- Trim whitespace: Trim
+	- Padding: 0%
+	- Asset size: 128dp
+	- Asset padding: 0%
+	- Color: Weiß
+	- Name: "ic_map"
+
+15. Extrahiere die zip-Datei, die du heruntergeladen hast, im `main` Ordner deines Projektes.
+
+16. Öffne das Layout `fragment_phrase_input.xml` und ziehe die `ImageView` von der `Palette` in dein Layout.
+
+17. Wähle das drawable `ic_map` aus und klicke auf "OK".
+
+18. Zentriere die `ImageView` in dem Teil des Bildschirms, der sich über dem `EditText` befindet. Ziehe dazu den linken, oberen  und rechten Constraint der `ImageView` zum jeweiligen Bildschirmrand und den unteren Constraint zur Oberkante des `EditText`.
+
+Nun hast du das `PhraseInputFragment` (wie ich finde) schon um einiges verschönert. Eine kleine Verbesserung ist allerdings noch offen. Dir wird schon aufgefallen sein, dass der `Button` immer verdeckt wird, wenn sich die Tastatur öffnet. Gehe deshalb zum `AndroidManifest.xml` und füge in dem `<activity>` Tag der `MainActivity` das folgende Attribut hinzu.
+```xml
+android:windowSoftInputMode="stateHidden|adjustResize"
+```
+
+##### Schriftart
+
+Auch die Schrift ist ein wichtiger Punkt, um das Design einer App zu verbessern. Ich habe für die App eine Kombination aus den Schriften [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) und [Cabin](https://fonts.google.com/specimen/Cabin) verwendet. Natürlich kannst du auch jede andere Schriftart mit den folgenden Schritten verwenden.
+
+1. Öffne das Layout `fragment_phrase_input.xml` und klicke auf das `EditText` um es auszuwählen.
+
+2. Suche in der Attributliste nach "font".
+
+3. Klicke auf den Pfeil rechts neben "fontFamily" und klicke ganz unten auf "More Fonts..."
+
+4. Suche nach "Cabin" und wähle diese Schrift mit einem Klick aus und klicke auf "OK".
+
+5. Wähle nun den `Button` aus, suche wieder nach "fontFamily" und klicke auf "More Fonts...".
+
+6. Suche nun nach "Roboto" und wähle rechts bei "Preview" die Schrift namens "Condensed Bold" aus. Klicke dann wieder auf "OK". 
+
+#### Styling des `MapFragment`
+
+Nun hast du das Styling des `PhraseInputFragment` abgeschlossen und es ist an der Zeit, das `MapFragment` zu verschönern. 
+
+##### Styling der Info-Box
+
+Die erste Verbesserung, die du hier machen kannst, ist es die Info-`TextView` durch eine ganze Info-Box zu ersetzen, die mehr Informationen zur Route, aber auch einen "Neu starten" -`Button` enthält. Befolge dazu die unten stehenden Schritte.
+
+1. Öffne das Layout `fragment_map.xml`.
+
+2. Suche in der `Palette` nach "CardView" und positioniere die `CardView` ganz unten im `Component Tree`.
+
+3. Suche in der  `Palette` nach "Constraint" und ziehe das `ConstraintLayout` im `Component Tree` in die `CardView` hinein.
+
+4. Ziehe nun die `TextView` im `Component Tree` in das `ConstraintLayout` hinein.
+
+5. Da der untere Constraint der `MapView` am oberen Punkt der `TextView` angeheftet war, muss dieser nun neu gesetzt werden. Wähle die `MapView` dazu aus und ziehe den Punkt, der am oberen Bildschirmrand erscheint, nach ganz unten, um die `MapView` über den gesamten Bildschirm zu erstrecken.
+
+6. Wähle nun die `CardView` im `Component Tree` aus und ziehe die seitlichen und den unteren Constraint zu den jeweiligen Bildschirmrändern, um sie unten am Screen auszurichten.
+
+7. Lege einen Rahmen von "16" auf diesen 3 Seiten fest.
+
+8. Setze den "@drawable/background_gradient" als Hintergrund ("background").
+
+9. Suche nach dem Attribut "cornerRadius" und setze es auf "32dp".
+
+10. Ziehe einen `Button` und eine `TextView` aus der `Palette` in das `ConstraintLayout` in der `CardView` und gib ihnen die ids "button_try_again" und "textview_route". Lösche zusätzlich bei der neuen `TextView` den Wert im Feld "text". 
+
+11. Nun müssen diese 3 `View`s im `ConstraintLayout` ausgerichtet werden. Der `Button` soll ganz unten sein, ziehe deshalb seine beiden seitlichen und den unterent Constraint zu den zugehörigen Rändern der `CardView`. 
+
+12. Darüber soll die `textview_info` angezeigt werden. Wähle sie im `Component Tree` aus und ziehe die seitlichen Constraints zu den Rändern der `CardView` und den unteren Constraints zur Oberkante des `Button`s.
+
+13. Ziehe die seitlichen und den oberen Constraint der `textview_route` ebenfalls zu den Rändern der `CardView`. Ziehe den unteren Constraint zur Oberkante der `textview_info`.
+
+14. Lösche das Padding der `textview_info`.
+
+15. Setze die folgenden Rahmen im `Constraint Widget`.
+	- `button_try_again`:
+		- Unten: 16
+		- Links: 16
+		- Rechts: 16
+	- `textview_info`:
+		- Unten: 16
+		- Links: 16
+		- Rechts: 16
+	- `textview_route`:
+		- Oben: 16
+		- Links: 16
+		- Rechts: 16
+
+16. Setze die Breite ("layout_width") der `textview_route` auf "0dp (match constraint)".
+
+17. Die `textview_info` soll im Vordergund stehen. Gib ihr deshalb die folgenden Attribute.
+	- textColor: @android:color/white
+	- fontFamily: @font/roboto_condensed_bold
+	- textSize: 20sp
+	- textAlignment: center
+
+18. Gib der `textview_route` die folgenden Attribute.
+	- textColor: @android:color/white
+	- fontFamily: @font/cabin
+	- textSize: 16sp
+	- textAlignment: center
+
+19. Lade dir [diesen Icon](https://www.flaticon.com/free-icon/reply_481675?term=back&page=1&position=43) als PNG herunter, kopiere und speichere den "Attribution Link" und lade das Icon dann wieder in den [Generic Icon Generator](https://romannurik.github.io/AndroidAssetStudio/icons-generic.html) hoch.
+
+20. Wähle die folgenden Werte aus und klicke dann rechts oben auf "Download".
+	- Trim whitespace: Trim
+	- Padding: 0%
+	- Asset size: 24dp
+	- Asset padding: 0dp
+	- Color: Weiß
+	- Name: "ic_try_again"
+
+21. Extrahiere die zip-Datei, die du heruntergeladen hast, im `main` Ordner deines Projektes.
+
+22. Erstelle einen neuen String in der Datei `res/values/strings.xml` mit der id "try_again" und dem Text "Neu starten" in Deutsch und "Try again" in Englisch.
+
+22. Gib dem Button die folgenden Attribute.
+ 	- textColor: @android:color/white
+	- fontFamily: @font/cabin
+	- textSize: 16sp
+	- background: @android:color/transparent
+	- drawableTop: @drawable/ic_try_again
+	- text: @string/try_again
+	- textAllCaps: false
+
+Nun ist das Layout für die Info-Box fertig. Die `textview_route` muss allerdings noch mit Text befüllt werden und der `button_try_again` reagiert noch nicht auf Klicks. Diese beiden Dinge kannst du mit den folgenden Schritten lösen.
+
+1. Öffne das `MapFragment.java`.
+
+2. Erstelle die folgenden 2 Member-Variablen unter `private TextView textViewInfo;`.
+```java
+private TextView textViewRoute;
+private Button buttonTryAgain;
+```
+
+3. Binde die UI Komponenten an die Variablen. Füge dazu die folgenden Zeilen zur `onViewCreated()` Methode hinzu.
+```java
+textViewRoute = view.findViewById(R.id.textview_route);
+buttonTryAgain = view.findViewById(R.id.button_try_again);
+```
+4. In der `textview_route` sollen die Orte der Route im Format "[Ort 1, Ort 2, Ort 3, ...]" angezeigt werden. Erstelle dazu eine neue Methode `showRouteSummary()` mit dem folgenden Inhalt.
+```java
+private void showRouteSummary() {
+	// Zeigt den eingegebenen Satz in der Info-TextView an
+	// Durch das String.format(...) werden vor und nach dem Satz Anführungszeichen (") angezeigt
+	textViewInfo.setText(String.format("\"%s\"", phrase));
+
+	// Erstellt einen neuen StringBuilder um die Route im Format [Ort 1, Ort 2, ...] zusammenzusetzen
+	StringBuilder routeStringBuilder = new StringBuilder("[");
+
+	// Iteriert über alle Orte in der Route
+	for (Place place : route) {
+		// Überprüft ob die Länge des StringBuilders größer als 1 (also mindestens 2) ist
+		if (routeStringBuilder.length() > 1) {
+			// Wenn ja, werde ein Beistrich und ein Leerzeichen vor dem nächsten Ort hinzugefügt
+			routeStringBuilder.append(", ");
+            }
+		// Hängt den Namen des Ortes an den StringBuilder an
+		routeStringBuilder.append(place.getName());
+	}
+
+	// Hängt die schließende Klammer an den StringBuilder an
+	routeStringBuilder.append("]");
+	// Setzt den String des StringBuilders als Text in die TextView, die die Route anzeigt
+	textViewRoute.setText(routeStringBuilder.toString());
+}
+```
+5. Rufe die neu erstellte Methode im `onResponse()` Block der `loadRoute()` Methode auf. Ersetze dazu die Zeile `textViewInfo.setText(phrase);` mit `showRouteSummary();`.
+
+6. Wenn der `button_try_again` geklickt wird, soll die App einen Schritt zurück zum `PhraseInputFragment` navigieren. Füge dazu den folgenden Code in die `onViewCreated()` Methode unter die Zeile `buttonTryAgain = view.findViewById(R.id.button_try_again);` ein.
+```java
+// Setzt einen Klick Listener auf den Button, um über Klicks informiert zu werden
+buttonTryAgain.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View view) {
+		// Dieser code wird ausgeführt, wenn der Benutzer auf den Button klickt
+		// Simuliert einen Klick auf die Zurück-Taste
+		getActivity().onBackPressed();
+	}
+});
+```
+
+##### Styling der Karte
+
+ 
+
+#### Credits
+
+
+<span>Photo by <a href="https://unsplash.com/@timowielink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Timo Wielink</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+<div>Icons made by <a href="https://www.flaticon.com/free-icon/placeholder_2942933?term=map&page=1&position=41" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+<div>Icons made by <a href="https://www.flaticon.com/free-icon/reply_481675?term=back&page=1&position=43" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 
 ## Ressourcen
@@ -936,4 +1256,6 @@ Wenn du die Sprache deines Telefons nun auf Englisch (oder eine andere Sprache a
 [Die App vor dem Abschnitt "Bonus: Verbesserungen"](https://github.com/KatharinaSick/coderdojo-anleitung-map-reactions-app)
 
 [Die App inklusive der Verbesserungen](https://github.com/KatharinaSick/coderdojo-anleitung-map-reactions-app/tree/bonus)
+
+TODO link zu app icons!!
 
