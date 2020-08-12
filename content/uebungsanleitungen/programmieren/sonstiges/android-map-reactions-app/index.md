@@ -13,9 +13,9 @@ In dieser Übung programmierst du eine Android App in Java. In dieser App kann m
 
 ## Voraussetzungen
 
-- Etwas Programmiererfahrung.
-- Ein Smartphone mit Android 5.0 oder höher ([So findest du die Android Version deines Smartphones](https://support.google.com/android/answer/7680439?hl=de)). Alternativ kannst du auch einen [Emulator](https://developer.android.com/studio/run/emulator) verwenden.
-- Ein Kabel um dein Smartphone mit dem Computer zu verbinden (falls du dein Smartphone verwendest).
+- Etwas Programmiererfahrung
+- Ein Smartphone mit Android 5.0 oder höher ([So findest du die Android Version deines Smartphones](https://support.google.com/android/answer/7680439?hl=de)). Alternativ kannst du auch einen [Emulator](https://developer.android.com/studio/run/emulator) verwenden
+- Ein Kabel um dein Smartphone mit dem Computer zu verbinden (falls du dein Smartphone verwendest)
 - [Android Studio](https://developer.android.com/studio/install)
 
 ## App erstellen und ausführen
@@ -678,10 +678,10 @@ mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150, 6.0, 100L);
 mapView.invalidate();
 ```
 
-Gratuliere! Nun hast du den ersten der Anleitung geschafft und solltest eine Karte mit deiner Route sehen. Wenn du deine App noch weiter verbessern möchtest, sieh dir doch den [zweiten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/) an. Dieser beinhaltet unter anderem das Styling der App, ein paar Performance Verbesserungen und noch ein paar Punkte, die man einfach besser machen kann.
+Gratuliere! Nun hast du den ersten der Anleitung geschafft und solltest eine Karte mit deiner Route sehen. Wenn du deine App noch weiter verbessern möchtest, sieh dir doch den [zweiten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/) an. Dieser beinhaltet unter anderem das Styling der App, ein paar Verbesserungen zur Stabilität der App und noch ein paar Punkte, die man einfach besser machen kann.
 
 {{< imgblock "img/basic_map_reactions_app.png" >}}{{< /imgblock >}}
 
 ## Ressourcen
 
-[Der vollständige Code für diese App](https://github.com/KatharinaSick/coderdojo-anleitung-map-reactions-app)
+[Der vollständige Code für diese App](https://github.com/KatharinaSick/coderdojo-anleitung-map-reactions-app/tree/teil1)

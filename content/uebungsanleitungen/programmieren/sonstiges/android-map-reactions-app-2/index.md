@@ -1,13 +1,13 @@
 ---
 title: "Android Map Reactions App, Teil 2"
-description: "In dieser Übung programmierst du eine Android App in der man einen Satz eingeben kann, der dann als Route auf einer Karte angezeigt wird."
+description: "In dieser Übung verbesserst du die Map Reactions App unter anderem in den folgenden Punkten: Design, Stabilität und Interaktion mit dem Benutzer."
 level: 3
 img: "map_reactions_app.png"
 ---
 
 # Android Map Reactions App, Teil 2
 
-Im ersten Teil der Anleitung hast du eine Android App in Java programmiert. In dieser App kann man bereits einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem [Comic Strip](https://xkcd.com/2260/). In diesem Teil werden einige Verbesserungen beschrieben, die du noch machen kannst. Diese beinhalten unter anderem das Styling der App, ein paar Verbesserungen des Codes selbst und die App sollte auch etwas schneller werden.
+Im [ersten Teil dieser Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/) hast du eine Android App in Java programmiert. In dieser App kann man bereits einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem [Comic Strip](https://xkcd.com/2260/). In diesem Teil werden einige Verbesserungen beschrieben, die du noch machen kannst. Diese beinhalten unter anderem das Styling der App, ein paar Verbesserungen des Codes selbst und die App sollte auch etwas stabiler werden.
 
 {{< imgblock "https://imgs.xkcd.com/comics/reaction_maps.png" "XKCD's Reaction Maps comic strip" >}}{{< /imgblock >}}
 
@@ -22,7 +22,7 @@ Im ersten Teil der Anleitung hast du eine Android App in Java programmiert. In d
 
 Der erste Schritt um die App zu verbessern, ist sie erstmal aufzuräumen. Dabei wirst du die Namen der Dateien verbessern und Teile, die nicht mehr benötigt werden, löschen. Befolge dazu die unten stehenden Schritte.
 
-1. Benenne als erstes die beiden Fragments so um, dass ihre Namen verraten, welche Funktion sie haben. Wenn euer Projekt größer wird, ist es so einfacher zu verstehen, was sich wo befindet. 
+1. Benenne als erstes die beiden Fragments so um, dass ihre Namen verraten, welche Funktion sie haben. Wenn ein Projekt größer wird, ist es so einfacher zu verstehen, was sich wo befindet. 
 
    1. Klicke mit der rechten Maustaste auf das `FirstFragment` und wähle "Refactor" -> "Rename..." aus.
    2. Ersetze den Namen "FirstFragment" mit "PhraseInputFragment". 
@@ -57,7 +57,7 @@ Der erste Schritt um die App zu verbessern, ist sie erstmal aufzuräumen. Dabei 
 
 ## Aktuellen Status in der Info-TextView anzeigen
 
-Derzeit wird die Info-`TextView` zum Anzeigen der Phrase verwendet. Die `TextView` soll nun den Text "Wird geladen..." anzeigen während die Route geladen wird. Außerdem soll überprüft werden, ob überhaupt eine Route geladen wurde bevor die Karte angezeigt wird. Falls nicht soll ein Fehler angezeigt werden. Wenn du möchtest, ist das eine gute Aufgabe, die du allein probieren kannst. Lies also hier nicht weiter und versuche das Problem selbst zu lösen. Meine Lösung ist in den folgenden Schritten beschrieben.
+Derzeit wird die Info-`TextView` zum Anzeigen der Phrase verwendet. Die `TextView` soll nun den Text "Wird geladen..." anzeigen, während die Route geladen wird. Außerdem soll überprüft werden, ob überhaupt eine Route geladen wurde bevor die Karte angezeigt wird. Falls nicht soll ein Fehler angezeigt werden. Wenn du möchtest, ist das eine gute Aufgabe, die du allein probieren kannst. Lies also hier nicht weiter und versuche das Problem selbst zu lösen. Meine Lösung ist in den folgenden Schritten beschrieben.
 
 1. Öffne die Datei `res/values/strings.xml` und füge die beiden folgenden Strings hinzu
 ```xml
@@ -100,13 +100,13 @@ if (StringUtils.isBlank(phrase)) {
 
 ## Asynchroner HTTP Request
 
-Wie bereits [im ersten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/), setzt die Methode `roadManager.getRoad(wayPoints);` einen HTTP Request am Main Thread ab. Das bedeutet, dass diese Methode den Main Thread sehr lange blockieren kann, falls es Probleme beim Request geben sollte. Deshalb waren auch die folgenden beiden Zeilen nötig.
+Wie bereits [im ersten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/) beschrieben, setzt die Methode `roadManager.getRoad(wayPoints);` einen HTTP Request am Main Thread ab. Das bedeutet, dass diese Methode den Main Thread, und somit die gesamte App, blockieren kann, falls es Probleme beim Request geben sollte. Deshalb waren auch die folgenden beiden Zeilen nötig.
 ```java
 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 StrictMode.setThreadPolicy(policy);
 ```
 
-Diese Zeilen werden am Ende dieses Abschnitts nicht mehr nötig sein, da du den Request in einem anderen Thread absetzen und das Ergebnis mithilfe eines Callbacks zurückgeben wirst. Befolge die folgenden Schritte, um dieses Ziel zu erreichen.
+Diese Zeilen werden am Ende dieses Abschnitts nicht mehr nötig sein, da du den Request in einem anderen Thread absetzen und das Ergebnis mithilfe eines Callbacks zurückgeben wirst. Befolge die nächsten Schritte, um dieses Ziel zu erreichen.
 
 1. Erstelle ein neues Package `util`.
 
@@ -214,7 +214,7 @@ stringRequest.setRetryPolicy(new DefaultRetryPolicy(
 	1 // Mit dieser Zahl wird das Timeout bei jedem neuen Versuch multipliziert
 ));
 ```
-Um dem oben beschriebenen "cold start" vorzubeugen, kann man zum Beispiel schon beim Start der App einen leeren Request an die Serverless Function schicken um sie zu starten. Das ist wieder ein Task, den du allein probieren kannst, wenn du möchtest. Setze dazu im `PhraseInputFragment` einen Request zum Server ab, bei dem du das Ergebnis ignorierst. Im folgenden ist beschrieben, wie ich es gelöst habe.
+Um dem oben beschriebenen "cold start" vorzubeugen, kann man zum Beispiel schon beim Start der App einen leeren Request an die Serverless Function schicken um sie zu starten. Das ist wieder eine Aufgabe, den du allein probieren kannst, wenn du möchtest. Setze dazu im `PhraseInputFragment` einen Request zum Server ab, bei dem du das Ergebnis ignorierst. Im folgenden ist beschrieben, wie ich es gelöst habe.
 
 1. Öffne das `PhraseInputFragment.java`.
 
@@ -266,7 +266,7 @@ Die App erfüllt nun alle Ansprüche an die Funktionalität, das Design lässt a
 
 {{< imgblock "img/map_reactions_app.png" >}}{{< /imgblock >}}
 
-Beim betrachten der App, wird schnell klar, das Blau die Hauptfarbe ist. Wenn du die Datei `res/values/colors.xml` öffnest, siehst du, dass es dort drei Farben gibt. Und zwar einmal die `colorPrimary`, die Hauptfarbe der App. Zusätzlich gibt es noch die `colorPrimaryDark`, welche etwas dunkler als die `colorPrimary` sein sollte, diese wird zum Beispiel für die Hintergrundfarbe der Notification Bar verwendet. Zusätzlich gibt es noch die `colorAccent`, welche einen Kontrast zur `colorPrimary` darstellen soll und zum Beispiel für wichtige Elemente wie den `Floating Action Button` verwendet wird. Passe die Farben mit den folgenden Schritten an.
+Beim betrachten der App, wird schnell klar, das Blau die Hauptfarbe ist. Wenn du die Datei `res/values/colors.xml` öffnest, siehst du, dass es dort drei Farben gibt. Und zwar einmal die `colorPrimary`, die Hauptfarbe der App. Zusätzlich gibt es noch die `colorPrimaryDark`, welche etwas dunkler als die `colorPrimary` sein sollte, diese wird zum Beispiel für die Hintergrundfarbe der Notification Bar verwendet. Zusätzlich gibt es noch die `colorAccent`, welche einen Kontrast zur `colorPrimary` darstellen soll und zum Beispiel für wichtige Elemente wie einen `Floating Action Button` verwendet wird. Passe die Farben mit den folgenden Schritten an.
 
 1. In dieser App brauchst du die `colorAccent` nicht, deshalb kannst du sie löschen.
 
@@ -281,9 +281,9 @@ Beim betrachten der App, wird schnell klar, das Blau die Hauptfarbe ist. Wenn du
 
 #### Hintergrund
 
-Der Hintergrund des `PhraseInputFragment` besteht aus zwei Teilen. Zum einen enthält er ein Bild mit einer Karte und zum anderen einen blauen Farbverlauf, der nach rechts unten hin immer heller und transparenter wird, damit man mehr von der Karte sieht. Befolge diese Schritte um den Hintergrund so zu gestalten.
+Der Hintergrund des `PhraseInputFragment` besteht aus zwei Teilen. Zum einen enthält er ein Bild mit einer Karte und zum anderen einen blauen Farbverlauf, der nach rechts unten hin immer heller und transparenter wird, damit man mehr vom Hintergrundbild sieht. Befolge diese Schritte um den Hintergrund so zu gestalten.
 
-1. Das Hintergrundbild ist [hier](https://unsplash.com/photos/4Zk45jNyQS4) auf [Unsplash](https://unsplash.com/) verfügbar. Ich habe das Bild bereits heruntergeladen, zugeschnitten und an verschiedene Auflösungen angepasst. In Android kann man Bilder und Grafiken nämlich in verschiedenen Größen zur Verfügung stellen und das Smartphone wählt dann das richtige Bild aus. Lade dir die [zip Datei](https://coderdojo-map-reactions.s3.eu-central-1.amazonaws.com/phrase_input_background.zip) herunter und extrahiere sie in deinem Projektordner unter `res`.
+1. Das Hintergrundbild ist [hier](https://unsplash.com/photos/4Zk45jNyQS4) auf [Unsplash](https://unsplash.com/) verfügbar. Ich habe das Bild bereits heruntergeladen, zugeschnitten und an verschiedene Auflösungen angepasst. In Android kann man Bilder und Grafiken nämlich in verschiedenen Größen zur Verfügung stellen und das Smartphone wählt dann das richtige Bild aus. Lade dir die [zip Datei](https://coderdojo-map-reactions.s3.eu-central-1.amazonaws.com/phrase_input_background.zip) herunter und extrahiere sie in deinem Projektordner unter `main/res`.
 
 2. Öffne das Layout `fragment_phrase_input.xml` und wähle im `Component Tree` das `ConstraintLayout` aus. 
 
@@ -318,7 +318,7 @@ Der Hintergrund des `PhraseInputFragment` besteht aus zwei Teilen. Zum einen ent
 
 11. Suche in der Attributliste wieder nach "background" und setze den Wert "@drawable/background_gradient".
 
-12. Ziehe die `view` im `Component Tree` über den `button_go`,  damit sie in den Hintergrund rückt.
+12. Ziehe die `View` im `Component Tree` über den `button_go`,  damit sie in den Hintergrund rückt.
 
 #### UI Elemente
 
@@ -347,7 +347,7 @@ Jetzt ist der Hintergrund soweit fertig. Da das `EditText` zum Eingeben des Satz
 		android:topRightRadius="32dp" />
 </shape>
 ```
-3.  Button soll genau gleich aussehen, nur mit umgekehrten Farben. Erstelle deshalb gleich ein zweites `Drawable Resource File` mit dem Namen `button_background` und dem folgenden Inhalt.
+3. Der Hintergrund des `Button`s soll genau gleich aussehen, nur mit umgekehrten Farben. Erstelle deshalb gleich ein zweites `Drawable Resource File` mit dem Namen `button_background` und dem folgenden Inhalt.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Definiert die Form, also ein Rechteck -->
@@ -381,19 +381,19 @@ Jetzt ist der Hintergrund soweit fertig. Da das `EditText` zum Eingeben des Satz
 
 10. Lege im `Constraint Widget` unten einen Rahmen von 24 fest.
 
-11. Lade dir [diesen Icon](https://www.flaticon.com/free-icon/placeholder_2942933?term=map&page=1&position=41) von [flaticon](https://ww.flaticon.com) als "PNG" herunter und kopiere dir den "Attribution Link", in diesem Fall "<div>Icons made by <a href="https://www.flaticon.com/free-icon/placeholder_2942933?term=map&page=1&position=41" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>" in eine Text-Datei. Diese Information wirst du am Ende der Anleitung noch in die App einbauen.
+11. Lade dir [diesen Icon](https://www.flaticon.com/free-icon/placeholder_2942933?term=map&page=1&position=41) von [flaticon](https://ww.flaticon.com) als "PNG" herunter und kopiere dir den "Attribution Link", in diesem Fall `<div>Icons made by <a href="https://www.flaticon.com/free-icon/placeholder_2942933?term=map&page=1&position=41" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>`, in eine Text-Datei. 
 
-> *ACHTUNG: Solltest du die App irgendwo veröffentlichen, musst du unbedingt die Information, von wo die Icons sind in den Credits der App und in der Info des Playstores anzeigen!* 
+	> *ACHTUNG: Solltest du die App veröffentlichen, musst du unbedingt die Information, von wo die Icons sind, in den Credits der App und in der Beschreibung der App im PlayStore anzeigen!* 
 
 12. Gehe auf die Seite https://romannurik.github.io/AndroidAssetStudio/ und klicke auf "Generic Icon Generator".
 
 13. Klicke links bei "Source" auf "Image" und lade den soeben heruntergeladenen Icon hoch.
 
-14. Wähle die folgendne Werte aus und klicke dann rechts oben auf "Download".
+14. Wähle die folgenden Werte aus und klicke dann rechts oben auf "Download".
 	- Trim whitespace: Trim
 	- Padding: 0%
 	- Asset size: 128dp
-	- Asset padding: 0%
+	- Asset padding: 0dp
 	- Color: Weiß
 	- Name: "ic_map"
 
@@ -420,7 +420,7 @@ Auch die Schrift ist ein wichtiger Punkt, um das Design einer App zu verbessern.
 
 3. Klicke auf den Pfeil rechts neben "fontFamily" und klicke ganz unten auf "More Fonts..."
 
-4. Suche nach "Cabin" und wähle diese Schrift mit einem Klick aus und klicke auf "OK".
+4. Suche nach "Cabin", wähle diese Schrift mit einem Klick aus und klicke auf "OK".
 
 5. Wähle nun den `Button` aus, suche wieder nach "fontFamily" und klicke auf "More Fonts...".
 
@@ -432,7 +432,7 @@ Nun hast du das Styling des `PhraseInputFragment` abgeschlossen und es ist an de
 
 #### Info-Box
 
-Die erste Verbesserung, die du hier machen kannst, ist es die Info-`TextView` durch eine ganze Info-Box zu ersetzen, die mehr Informationen zur Route, aber auch einen "Neu starten" -`Button` enthält. Befolge dazu die unten stehenden Schritte.
+Die erste Verbesserung, die du hier machen kannst, ist  die Info-`TextView` durch eine ganze Info-Box zu ersetzen, die mehr Informationen zur Route, aber auch einen "Neu starten" -`Button` enthält. Befolge dazu die unten stehenden Schritte.
 
 1. Öffne das Layout `fragment_map.xml`.
 
@@ -571,11 +571,42 @@ buttonTryAgain.setOnClickListener(new View.OnClickListener() {
 ```
 
 #### Karte
+Als letzten Schritt Kannst du noch das Design der Marker und der Route auf der Karte verbessern. Öffne dazu das `MapFragment.java` und befolge die folgenden Schritte. 
 
- 
+1. Suche die Zeile `Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);` und ersetze `Color.BLACK` mit `getResources().getColor(R.color.colorPrimary);` um die Route in der Hauptfarbe der App darzustellen. Setze außerdem die Breite der Linie (also den nächsten Parameter, derzeit  `6`) auf `8`, um die Route etwas breiter darzustellen.
 
-### "Attribution Links" für die Icons und das Hintergrundbild anzeigen
+2. Nun sieht man besonders gut, dass die Route über den Markern gezeichnet wird. Befolge die unten stehenden Schritte, um die Marker über der Route zu zeichnen.
 
+	1. Füge die folgende Zeile unter der Zeile `ArrayList<GeoPoint> geoPoints = new ArrayList<>();` und über der `for`-Schleife ein.
+
+```java
+// Erstellt eine Liste mit SpeechBalloonOverlay Objekten. Diese wird später mit den Markern befüllt.
+final List<SpeechBalloonOverlay> markers = new ArrayList<>();
+```
+	2. Ersetze die Zeile `mapView.getOverlays().add(textOverlay);` mit der folgenden Zeile.
+```java
+// Fügt das Overlay zur Liste der Marker hinzu
+markers.add(textOverlay);
+```
+	3. Füge den folgenden Code unter der Zeile ` mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150);` ein, um die Marker erst nach der Route/Straße zu zeichnen.
+```java
+// Zeigt die Marker auf der Karte an
+mapView.getOverlays().addAll(markers);
+```
+3. Ändere nun die Hintergrundfarbe der Marker, indem du in der  `for`-Schleife in der Zeile `backgroundPaint.setColor(Color.BLACK)` den Parameter `Color.BLACK` auf `getResources().getColor(R.color.colorPrimary)` änderst.
+
+4. Ändere mit der folgenden Zeile die Schriftart des Textes.
+```java
+textPaint.setTypeface(ResourcesCompat.getFont(getContext(), R.font.cabin));
+```
+
+Gratuliere! Nun hast du auch diese Anleitung abgeschlossen und deine App sollte nun in etwa so aussehen. Du kannst natürlich noch selbst versuchen die App weiterzuentwickeln. Dabei kannst du neue Funktionen hinzufügen, die Farben der App ändern, sie in verschiedene Sprachen übersetzen, oder was dir sonst noch so einfällt. Deiner Kreativität sind hier keine Grenzen gesetzt ;-).
+
+{{< imgblock "img/map_reactions_app.png" >}}{{< /imgblock >}}
+
+## "Attribution Links" für die Icons und das Hintergrundbild
+
+Solltest du die App veröffentlichen, musst du unbedingt die Information, von wo die Icons und das Hintergrundbild sind, in den Credits der App und in der Beschreibung der App im PlayStore anzeigen! Unten sind noch einmal die "Attribution Links", also die Links, die angezeigt werden müssen, aufgelistet.
 
 <span>Photo by <a href="https://unsplash.com/@timowielink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Timo Wielink</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
@@ -583,9 +614,6 @@ buttonTryAgain.setOnClickListener(new View.OnClickListener() {
 
 <div>Icons made by <a href="https://www.flaticon.com/free-icon/reply_481675?term=back&page=1&position=43" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
-
 ## Ressourcen
 
-[Der vollständige Code für diese App](https://github.com/KatharinaSick/coderdojo-anleitung-map-reactions-app/tree/bonus)
-
-TODO link zu app icons!!
+[Der vollständige Code für diese App](https://github.com/KatharinaSick/coderdojo-anleitung-map-reactions-app)
