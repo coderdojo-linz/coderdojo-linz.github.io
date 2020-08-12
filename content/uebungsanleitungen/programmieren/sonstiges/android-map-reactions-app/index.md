@@ -26,14 +26,14 @@ Befolge diese Schritte um die App zu erstellen:
 
 2. Erstelle mit `File` -> `New` -> `New Project` ein neues Projekt.
 
-3. Wähle eine `Basic Activity` als `Project Template` aus.
+3. Wähle eine "Basic Activity" als "Project Template" aus.
 
 4. Gib die folgenden Dinge ein
-	- `Name`: Der Name deiner App - ich nenne meine zum Beispiel `Map Reactions`.
-	- `Package name`: Ein eindeutiger Name um deine App im Google Play Store zu identifizieren. Für die Anleitung ist es ganz egal welchen Namen du verwendest.
-	- `Save location`: Der Ordner in dem du das Projekt speichern möchtest.
-	- `Language`: Native Android Apps kann man in Java oder [Kotlin](https://kotlinlang.org/) programmieren. In dieser Anleitung werde ich Java verwenden, du kannst aber gerne auch Kotlin ausprobieren.
-	- `Minimum SDK`: Die niedrigste Android Version die von der App unterstützt wird. Wähle hier `API 21: Android 5.0 (Lollipop)` aus.
+	- "Name": Der Name deiner App - ich nenne meine zum Beispiel `Map Reactions`.
+	- "Package name": Ein eindeutiger Name um deine App im Google Play Store zu identifizieren. Für die Anleitung ist es ganz egal welchen Namen du verwendest.
+	- "Save location": Der Ordner in dem du das Projekt speichern möchtest.
+	- "Language": Native Android Apps kann man in Java oder [Kotlin](https://kotlinlang.org/) programmieren. In dieser Anleitung werde ich Java verwenden, du kannst aber gerne auch Kotlin ausprobieren.
+	- "Minimum SDK": Die niedrigste Android Version die von der App unterstützt wird. Wähle hier `API 21: Android 5.0 (Lollipop)` aus.
 
 5. Klicke auf `Finish`.
 
@@ -41,23 +41,23 @@ Um die App auf deinem Handy auszuführen, musst du zuerst die Entwickler Optione
 
 1. Öffne die Einstellungen auf deinem Android Smartphone.
 
-2. Klicke auf `Telefoninfo`.
+2. Klicke auf "Telefoninfo".
 
-3. Klicke 7 mal auf `Build-Nummer` um die Entwickler Optionen zu aktivieren.
+3. Klicke 7 mal auf "Build-Nummer" um die Entwickler Optionen zu aktivieren.
 
-4. Gehe zurück zu den Einstellungen und klicke auf `Entwickler Optionen`.
+4. Gehe zurück zu den Einstellungen und klicke auf "Entwickler Optionen".
 
-5. Aktiviere `USB-Debugging`.
+5. Aktiviere "USB-Debugging".
 
-Falls du es noch nicht getan hast, solltest du dein Smartphone jetzt mithilfe eines USB-Kabels mit deinem Computer verbinden. Dann sollte ein Dialog mit dem Titel `USB-Debugging zulassen` auf deinem Smartphone erscheinen. Bestätige diesen mit `Erlauben`.
+Falls du es noch nicht getan hast, solltest du dein Smartphone jetzt mithilfe eines USB-Kabels mit deinem Computer verbinden. Dann sollte ein Dialog mit dem Titel "USB-Debugging zulassen" auf deinem Smartphone erscheinen. Bestätige diesen mit "Erlauben".
 
-Jetzt kannst du wieder zurück zu Android Studio wechseln und die App ausführen. Wähle dazu dein Smartphone aus (falls es nicht schon automatisch ausgewählt wurde) und klicke dann auf den grünen `Play` Button neben dem Dropdown. Jetzt sollte die App auf deinem Smartphone ausgeführt werden. 
+Jetzt kannst du wieder zurück zu Android Studio wechseln und die App ausführen. Wähle dazu dein Smartphone aus (falls es nicht schon automatisch ausgewählt wurde) und klicke dann auf den grünen "Play" Button neben dem Dropdown. Jetzt sollte die App auf deinem Smartphone ausgeführt werden. 
 
 {{< imgblock "img/android_studio_run.png" >}}{{< /imgblock >}}
 
 ### Was beinhaltet diese App?
 
-Im oben beschriebenen Schritt hat dir Android Studio eine App mit einer `Basic Activity` generiert. Sehen wir uns mal an, was diese beinhaltet.
+Im oben beschriebenen Schritt hat dir Android Studio eine App mit einer "Basic Activity" generiert. Sehen wir uns mal an, was diese beinhaltet.
 
 - `manifests`
 Enthält die `AndroidManifest.xml` Datei.
@@ -94,7 +94,7 @@ Jetzt ist es an der Zeit, alles zu entfernen was du nicht mehr brauchst. Später
 
 Wenn du dir die App ansiehst, wirst du merken dass die `Toolbar` (ganz oben am Bildschirm) und der `Floating Action Button` (der türkise Button rechts unten) immer da sind, egal welcher Inhalt sonst noch angezeigt wird. Daraus kannst du schließen, dass diese 2 Komponenten Teile der `MainActivity` sind, während die Buttons ("NEXT" & "PREVIOUS") und das Textfeld ("Hello first fragment") im `FirstFragment` und im `SecondFragment` enthalten sind. 
 
-Mit den folgenden Schritten kannst du die Toolbar und den Floating Action Button entfernen.
+Mit den folgenden Schritten kannst du die `Toolbar` und den `FloatingActionButton` entfernen.
 
 1. Öffne die `MainActivity.java`.
 
@@ -102,7 +102,7 @@ Mit den folgenden Schritten kannst du die Toolbar und den Floating Action Button
 
 3. Um alle Teile des Menüs zu löschen, lösche auch den Ordner `res/menu`.
 
-4. Lösche den folgenden Code, welcher die Toolbar als Action Bar in der App setzt und den Floating Action Button konfiguriert. 
+4. Lösche den folgenden Code, welcher die `Toolbar` als `ActionBar` in der App setzt und den `FloatingActionButton` konfiguriert. 
 
 ```java
 Toolbar toolbar = findViewById(R.id.toolbar);
@@ -118,15 +118,15 @@ fab.setOnClickListener(new View.OnClickListener() {
 });
 ```
 
-5. Im vorigen Schritt hast du die Logik der beiden Komponenten entfernt. Lösche sie nun auch aus dem Layout. Öffne dazu die Datei `res/layout/activity_main.xml` und wähle ganz rechts oben `Design` aus (im Bild unten in Orange gekennzeichnet).
+5. Im vorigen Schritt hast du die Logik der beiden Komponenten entfernt. Lösche sie nun auch aus dem Layout. Öffne dazu die Datei `res/layout/activity_main.xml` und wähle ganz rechts oben "Design" aus (im Bild unten in Orange gekennzeichnet).
 
-6. Klicke im `Component Tree` (im Bild unten in Grün gekennzeichnet) mit der rechten Maustaste auf das `AppBarLayout` (das enthält die Toolbar) und klicke auf `Delete`.
+6. Klicke im `Component Tree` (im Bild unten in Grün gekennzeichnet) mit der rechten Maustaste auf das `AppBarLayout` (das enthält die `Toolbar`) und klicke auf "Delete".
 
-7. Wiederhole das gleiche für den `fab`, den Floating Action Button.
+7. Wiederhole das gleiche für den `fab`, den `FloatingActionButton`.
 
 {{< imgblock "img/android_studio_layout_editor.png" >}}{{< /imgblock >}}
 
-Jetzt hast du alle unnötigen Komponenten aus der MainActivity entfernt und kannst mit den folgenden Schritten in den Fragments weiter machen.
+Jetzt hast du alle unnötigen Komponenten aus der `MainActivity` entfernt und kannst mit den folgenden Schritten in den Fragments weiter machen.
 
 1. Öffne das Layout `fragment_first.xml`.
 
@@ -147,7 +147,7 @@ view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListene
 
 ## Einen Satz eingeben
 
-Nachdem du im vorigen Schritt alle unnötigen Komponenten entfernt hast, ist es nun an der Zeit mit der eigentlichen Entwicklung der App zu beginnen. Der erste Schritt dazu ist das `FirstFragment` so anzupassen, dass der Benutzer einen Satz eingeben und auf "Los" klicken kann. Wenn er auf "Los" klickt soll sich das 2. Fragment öffnen und der eingegebene Satz an dieses übergeben werden.
+Nachdem du im vorigen Schritt alle unnötigen Komponenten entfernt hast, ist es nun an der Zeit mit der eigentlichen Implementierung der App zu beginnen. Der erste Schritt dazu ist das `FirstFragment` so anzupassen, dass der Benutzer einen Satz eingeben und auf "Los" klicken kann. Wenn er auf "Los" klickt soll sich das 2. Fragment öffnen und der eingegebene Satz an dieses übergeben werden.
 
 ### Layout erstellen
 
@@ -159,23 +159,23 @@ Nachdem du im vorigen Schritt alle unnötigen Komponenten entfernt hast, ist es 
 <string name="go">Los</string>
 ```
 
-3. Öffne nun das Layout `fragment_first.xml` und wähle den Button mit einem Klick aus.
-4. Suche in der List der Attribute auf der rechten Seite nach `id` und gib dem Button die id `button_go`.
+3. Öffne nun das Layout `fragment_first.xml` und wähle den `Button` mit einem Klick aus.
+4. Suche in der List der Attribute auf der rechten Seite nach `id` und gib dem `Button` die id `button_go`.
 5. Wähle im Dialog der erscheint "Don't ask again during this session" und "Yes" aus.
-6. Suche in der Attributliste nach "text" und schreib `@string/go` hinein. Somit verlinkst du den String den du vorher erstellt hast mit dem Text des Buttons.
-7. Klicke nun einmal auf den weißen Hintergrund deines Layouts, um die Auswahl des Buttons aufzuheben.
-8. Über dem `Component Tree`, den du vorher schon verwendet hast, findest du die `Palette`. Mithilfe der `Palette` kannst du neue Komponenten hinzufügen. Nutze die Lupe um nach `EditText` zu suchen.
+6. Suche in der Attributliste nach "text" und schreib "@string/go" hinein. Somit verlinkst du den String, den du vorher erstellt hast, mit dem Text des Buttons.
+7. Klicke nun einmal auf den weißen Hintergrund deines Layouts, um die Auswahl des `Button` aufzuheben.
+8. Über dem `Component Tree`, den du vorher schon verwendet hast, findest du die `Palette`. Mithilfe der `Palette` kannst du neue Komponenten hinzufügen. Nutze die Lupe um nach "EditText" zu suchen.
 9. Wähle `Plain Text` aus und ziehe es irgendwo in die weiße Fläche deines Layouts.
-10. Gib dem `EditText` die id `edittext_phrase` und lösche den Text "Name", der automatisch gesetzt wurde.
-11. Nutze die Lupe rechts von "Attributes" um nach "hint" zu suchen. Leg `@string/enter_a_phrase` als `hint` fest.
+10. Gib dem `EditText` die id "edittext_phrase" und lösche den Text "Name", der automatisch gesetzt wurde.
+11. Nutze die Lupe rechts von `Attributes` um nach "hint" zu suchen. Leg "@string/enter_a_phrase" als `hint` fest.
 12. Wenn du das eben erstellte `EditText` auswählst, siehst du 4 Punkte an den Rändern. Es befindet sich an jeder Seite einer. Ziehe den linken Punkt an den ganz linken Rand der weißen Hintergrundfläche. Dann wiederhole das für alle Punkte, zieh also den rechten Punkt zum rechten Rand, den oberen zum oberen Rand und den unteren Punkt zum unteren Rand der Fläche. Pass auf, dass der untere Punkt wirklich am Hintergrund andockt und nicht am Button.
 13. Jetzt hast du sogenannte `Constraints` gesetzt, um das `EditText` in der Mitte des Bildschirms auszurichten.
-14. Nun soll das `EditText` die ganze Breite des Bildschirms einnehmen. Gehe dazu wieder rechts zur Attributliste und wähle `0dp (match constraint)` als `layout_width` aus. 
-15. Damit es nicht ganz so am Rand "festklebt", fügst du jetzt links und rechts einen Rand hinzu. Diesen kannst du im `Constraint Widget` unter der Attributliste setzen (siehe Bild). Leg hier links und rechts einen Rahmen von jeweils 16 fest.
+14. Nun soll das `EditText` die ganze Breite des Bildschirms einnehmen. Gehe dazu wieder rechts zur `Attributes` und wähle "0dp (match constraint)" als `layout_width` aus. 
+15. Damit es nicht ganz so am Rand "festklebt", fügst du jetzt links und rechts einen Rand hinzu. Diesen kannst du im `Constraint Widget` unter der Attributliste setzen (siehe Bild). Lege hier links und rechts einen Rahmen von jeweils 16 fest.
 {{< imgblock "img/constraint_widget.png" >}}{{< /imgblock >}}
 16. Jetzt musst du nur noch den `Button` positionieren. Dieser soll rechts unterhalb des `EditText` sein. Wähle ihn dazu mit einem Klick aus und ziehe den Punkt an der oberen Kante zur Unterkante des `EditText`
-17. Um den `Button` nun direkt unter dem `EditText` und an der rechten Bildschirmkante zu positionieren, lösche den linken und den unteren Constraint indem du sie mit einem Klick auswählst und dann auf der Tastatur auf `Entf` klickst.
-18. Lege im Constraint Widget die folgenden Rahmen fest: 
+17. Um den `Button` nun direkt unter dem `EditText` und an der rechten Bildschirmkante zu positionieren, lösche den linken und den unteren `Constraint` indem du sie mit einem Klick auswählst und dann auf der Tastatur auf `Entf` klickst.
+18. Lege im `Constraint Widget` die folgenden Rahmen fest: 
    - Rechts: 16
    - Oben: 32
 
@@ -185,9 +185,9 @@ Das wars auch schon mit dem Layout zum eingeben eines Satzes. Dein Layout sollte
 
 ### Input einlesen und an das nächste Fragment übergeben
 
-Da das Layout nun fertig ist, ist der nächste Schritt den Input des Benutzers im `FirstFragment.java` einzulesen und an das nächste Fragment zu übergeben, wenn auf "LOS" gedrückt wird. Das bedeutet du musst einen `OnClickListener` hinzufügen dessen `onClick(View view)` Methode immer ausgeführt wird, wenn der Benutzer auf "LOS" klickt. In dieser Methode liest du zuerst den Text aus dem `EditText` ein, bevor du zum nächsten Fragment navigierst. 
+Da das Layout nun fertig ist, ist der nächste Schritt den Input des Benutzers im `FirstFragment` einzulesen und an das nächste Fragment zu übergeben, wenn auf "LOS" gedrückt wird. Das bedeutet du musst einen `OnClickListener` hinzufügen dessen `onClick(View view)` Methode immer ausgeführt wird, wenn der Benutzer auf "LOS" klickt. In dieser Methode liest du zuerst den Text aus dem `EditText` ein, bevor du zum nächsten Fragment navigierst. 
 
-Ein Teil des Codes, den du dazu benötigst, ist schon vorhanden. Und zwar gibt es schon einen `OnClickListener` der ausgelöst wird, wenn der Button geklickt wird. Auch die Navigation zum `SecondFragment.java` funktioniert schon. Deshalb sind nur noch die folgenden Schritte nötig.
+Ein Teil des Codes, den du dazu benötigst, ist schon vorhanden. Und zwar gibt es schon einen `OnClickListener` der ausgelöst wird, wenn der Button geklickt wird. Auch die Navigation zum `SecondFragment` funktioniert schon. Deshalb sind nur noch die folgenden Schritte nötig.
 
 1. Bereite den `Navigation Graph` vor, damit du den eingegebenen Satz als Argument übergeben kannst.
    1. Öffne zuerst die Datei `res/navigation/nav_graph.xml`. 
@@ -197,7 +197,7 @@ Ein Teil des Codes, den du dazu benötigst, ist schon vorhanden. Und zwar gibt e
    5. Klicke auf "Add".
    
 2. Lies den Satz ein und übergib ihn an das `SecondFragment`, wenn die `onClick()` Methode aufgerufen wird.
-  1. Öffne  das `FirstFragment.java`.
+  1. Öffne  das `FirstFragment`.
   2. Ersetze den Inhalt der `onViewCreated()` Methode mit dem folgenden Code.
 ```java
 super.onViewCreated(view, savedInstanceState);
@@ -241,7 +241,7 @@ In diesem Schritt benötigst du nur eine `TextView`, in der du die Route anzeigs
 
 In diesem Schritt liest du den Satz, den du im `FirstFragment` übergeben hast, aus und zeigst ihn in der `TextView`, die du soeben angepasst hast, an. Befolge dazu diese Schritte.
 
-1. Öffne das `SecondFragment.java`.
+1. Öffne das `SecondFragment`.
 
 2. Erstelle die folgenden zwei Member-Variablen direkt unter `public class SecondFragment extends Fragment {`.
 ```java
@@ -298,7 +298,7 @@ Um den HTTP Request abzusetzen, kannst du [Volley](https://developer.android.com
 
 1. Öffne die Datei `build.gradle (Module: app)`.
 
-2. Füge die `dependency` für Volley  im Block `dependencies` ein.
+2. Füge die `Dependency` für Volley  im Block `dependencies` ein.
 ```xml
 dependencies {
 	...
@@ -308,7 +308,7 @@ dependencies {
 ```
 3. Klicke rechts oben in der Leiste auf "Sync Now". Damit werden alle Dependencies geladen.
 
-4. Öffne nun das `SecondFragment.java`. 
+4. Öffne nun das `SecondFragment`. 
 
 5. Füge die folgende Methode unter der Methode `onViewCreated()` ein.
 ```java
@@ -351,7 +351,7 @@ private void loadRoute() {
 }
 ```
 
-6. Mit dem oben stehenden Code, hast du den Request abgesetzt, das Ergebnis wird aber noch ignoriert. Um diesen Abschnitt abzuschließen, genügt es das Ergebnis in der Info-`TextView` anzuzeigen. Füge dazu ganz einfach die Zeilen `textViewInfo.setText(response);` und `textViewInfo.setText(error.toString());` in den `onResponse()` beziehungsweise in den `onErrorResponse` Block ein. 
+6. Mit dem oben stehenden Code, hast du den Request abgesetzt, das Ergebnis wird aber noch ignoriert. Um diesen Abschnitt abzuschließen, genügt es das Ergebnis in der Info-`TextView` anzuzeigen. Füge dazu ganz einfach die Zeilen `textViewInfo.setText(response);` und `textViewInfo.setText(error.toString());` in den `onResponse()` beziehungsweise in den `onErrorResponse()` Block ein. 
 7. Als letztes muss die soeben erstellte `loadRoute()` Methode noch ausgeführt werden. Rufe sie daher in der letzten Zeile der `onViewCreated()` Methode mit `loadRoute()` auf. 
 
 Nun hast du es geschafft, die Route aus dem Internet herunterzuladen und das Ergebnis in einer `TextView` anzuzeigen. Wenn du die App ausführst und einen Satz eingibst, sollte das Ergebnis in etwa so aussehen (natürlich mit einem anderen Text):
@@ -362,7 +362,7 @@ Nun hast du es geschafft, die Route aus dem Internet herunterzuladen und das Erg
 
 ### Route parsen
 
-Die Route wird als sogenanntes [JSON](https://www.json.org/json-de.html) zurückgegeben. Dieses JSON wandelst du in diesem Schritt in etwas um, mit dem du auch gut arbeiten kannst, zwar eine Liste von Objekten. Diese Umwandlung von JSON zu einem Objekt oder umgekehrt nennt man "parsen". Dabei kannst du dir wieder von einer Bibliothek helfen lassen. Nämlich von [Gson](https://github.com/google/gson). Dazu brauchst du die dependency `implementation 'com.google.code.gson:gson:2.8.6'`, füge diese in der Datei `build.gradle (Module: app)` hinzu (das funktioniert genauso wie oben bei Volley). 
+Die Route wird als sogenanntes [JSON](https://www.json.org/json-de.html) zurückgegeben. Dieses JSON wandelst du in diesem Schritt in etwas um, mit dem du auch gut arbeiten kannst, zwar  eine Liste von Objekten. Diese Umwandlung von JSON zu einem Objekt oder umgekehrt nennt man "parsen". Dabei kannst du dir wieder von einer Bibliothek helfen lassen. Nämlich von [Gson](https://github.com/google/gson). Dazu brauchst du die Dependency `implementation 'com.google.code.gson:gson:2.8.6'`, füge diese in der Datei `build.gradle (Module: app)` hinzu (das funktioniert genauso wie oben bei Volley). 
 
 Nun definierst du zu welchem Objekt Gson das JSON parsen soll. Wenn du dir das JSON ansiehst, das der Server zurückgibt, siehst du, dass die einzelnen Orte jeweils aus "name", "latitude" und "longitude" bestehen. 
 
@@ -388,7 +388,7 @@ Nun definierst du zu welchem Objekt Gson das JSON parsen soll. Wenn du dir das J
 
 Befolge deshalb die folgenden Schritte um die Klasse `Place.java` zu erstellen. 
 
-1. Klicke mit der rechten Maustaste auf das Package in dem die `MainActivity.java` enthalten ist und gehe auf `New` -> `Java Class`.
+1. Klicke mit der rechten Maustaste auf das Package in dem die `MainActivity` enthalten ist und gehe auf `New` -> `Java Class`.
 {{< imgblock "img/new_java_class.png" >}}{{< /imgblock >}}
 
 2. Gib "Place" als Name ein und drück auf "Enter". 
@@ -407,7 +407,7 @@ public class Place {
 
 6. Wiederhole das gleiche aber wähle `toString()` statt `Getter and Setter` aus um die `toString()` Methode zu generieren.
 
-Somit hast du das Java Objekt erstellt, das verwendet wird um das JSON zu parsen. Jetzt verwendest du Gson um das JSON zu einer Liste von `Place` Objekten zu parsen. Öffne dazu wieder das `SecondFragment.java` und gehe zum `onResponse()` Listener. Ersetze dort die Zeile `textViewInfo.setText(response);` mit dem folgenden Code.
+Somit hast du das Java Objekt erstellt, das verwendet wird um das JSON zu parsen. Jetzt verwendest du Gson um das JSON zu einer Liste von `Place` Objekten zu parsen. Öffne dazu wieder das `SecondFragment` und gehe zum `onResponse()` Listener. Ersetze dort die Zeile `textViewInfo.setText(response);` mit dem folgenden Code.
 ```java
 // Parsed das JSON in der Variable response zu einer Liste von Place Objekten
 List<Place> route = new Gson().fromJson(response, new TypeToken<List<Place>>(){}.getType());
@@ -420,7 +420,7 @@ Die App sollte nun so aussehen.
 
 ## Karte anzeigen
 
-Nachdem du die Route im letzten Abschnitt erfolgreich heruntergeladen und geparst hast, geht es in diesem Abschnitt darum die Karte inklusive Marker und Route anzuzeigen. Um die Karte anzuzeigen, kannst du [osmdroid](https://github.com/osmdroid/osmdroid) verwenden. Füge dazu die dependency `'org.osmdroid:osmdroid-android:6.1.8'` zur `build.gradle (Module: app)` hinzu.
+Nachdem du die Route im letzten Abschnitt erfolgreich heruntergeladen und geparst hast, geht es in diesem Abschnitt darum die Karte inklusive Marker und Route anzuzeigen. Um die Karte anzuzeigen, kannst du [osmdroid](https://github.com/osmdroid/osmdroid) verwenden. Füge dazu die Dependency `'org.osmdroid:osmdroid-android:6.1.8'` zur `build.gradle (Module: app)` hinzu.
 
 ### Layout anpassen
 
@@ -441,25 +441,25 @@ Die `MapView` von osmdroid kann leider nicht im Design Editor ins Layout eingef�
 
 5. Wähle die `textview_info` im `Component Tree` aus. 
 
-6. Lösche den oberen Constraint um die `TextView` am unteren Bildschirmrand auszurichten. 
+6. Lösche den oberen `Constraint` um die `TextView` am unteren Bildschirmrand auszurichten. 
 
-7. Gib der TextView die Breite (`layout_width`) `0dp (match constraint)` um sie über die ganze Breite anzuzeigen.
+7. Gib der TextView die Breite (`layout_width`) "0dp (match constraint)" um sie über die ganze Breite anzuzeigen.
 
-8. Such in der Attributliste nach "padding" und vergib ein `padding` von `16dp`.
+8. Such in der Attributliste nach "padding" und vergib ein `padding` von "16dp".
 
 9. Wähle die `MapView` im `Component Tree` aus. 
 
-10. Du siehst nun ganz links oben den rechten und unteren Constraint Punkt der `MapView`. Ziehe den rechten zum rechten Bildschirmrand.
+10. Du siehst nun ganz links oben den rechten und unteren `Constraint` Punkt der `MapView`. Ziehe den rechten zum rechten Bildschirmrand.
 
-11. Jetzt ist die `MapView` durch den Constraint nach ganz rechts oben gerutscht, ziehe nun den linken Punkt zum linken Bildschirmrand und den unteren zum oberen Punkt der `TextView`.
+11. Jetzt ist die `MapView` durch den `Constraint` nach ganz rechts oben gerutscht, ziehe nun den linken Punkt zum linken Bildschirmrand und den unteren zum oberen Punkt der `TextView`.
 
 12. Nun siehst du auch den oberen Punkt der `MapView`. Ziehe diesen ganz nach oben, damit die `MapView` den gesamten Bildschirm über der `TextView` einnimmt.
 
-13. Gib der `MapView` die id `mapview`.
+13. Gib der `MapView` die `id` "mapview".
 
 ### Karte anzeigen
 
-osmdroid speichert Teile der Karte auf dem Telefon des Benutzers. Deshalb musst du, bevor du die Karte laden kannst, die Berechtigung dafür einholen. Du kennst das sicher von Instagram, Facebook, WhatsApp oder anderen Apps, dass du der App erlauben musst auf deine Kamera zuzugreifen, bevor du ein Foto machen kannst. Genau das gleiche muss jetzt Speicherzugriff gemacht werden, damit die App auf den Speicher zugreifen darf. Glücklicherweise bietet Android hier gute Unterstützung an und du kannst die Berechtigung mit den folgenden Schritten abfragen.
+Osmdroid speichert Teile der Karte auf dem Telefon des Benutzers. Deshalb musst du, bevor du die Karte laden kannst, die Berechtigung dafür einholen. Du kennst das sicher von Instagram, Facebook, WhatsApp oder anderen Apps, dass du der App erlauben musst auf deine Kamera zuzugreifen, bevor du ein Foto machen kannst. Genau das gleiche muss jetzt Speicherzugriff gemacht werden, damit die App auf den Speicher zugreifen darf. Glücklicherweise bietet Android hier gute Unterstützung an und du kannst die Berechtigung mit den folgenden Schritten abfragen.
 
 1.  Öffne das `AndroidManifest.xml`.
 
@@ -468,7 +468,7 @@ osmdroid speichert Teile der Karte auf dem Telefon des Benutzers. Deshalb musst 
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
 
-3. Öffne das `SecondFragment.java`.
+3. Öffne das `SecondFragment`.
 
 4. Erstelle eine neue Methode, die wie folgt definiert ist und fürs Erste leer bleibt. 
 ```java
@@ -532,7 +532,7 @@ Wenn du die App jetzt ausführst, einen Satz eingibst und wartest bis der HTTP R
 
 Befolge die nächsten Schritte um eine Karte anzuzeigen.
 
-1. Öffne das `SecondFragment.java`.
+1. Öffne das `SecondFragment`.
 
 2. Erstelle die folgende Member-Variable.
 ```java
@@ -622,7 +622,7 @@ Wenn du nun einen Satz eingibst und dann auf der Karte nach Amerika navigierst, 
 
 ### Route hinzufügen
 
-Um eine Route auf einer OpenStreetMap Karte anzuzeigen, kannst du das [OSMBonusPack](https://github.com/MKergall/osmbonuspack) verwenden. Die Dependency dafür ist aber auf einem anderen Server (repository) gespeichert als die bisherigen. Öffne deshalb zuerst die `build.gradle (Project: <DEIN_PROJEKT_NAME>)` und füge das repository `maven { url "https://jitpack.io" }` im folgenden Block ein und klicke auf "Sync Now".
+Um eine Route auf einer OpenStreetMap Karte anzuzeigen, kannst du das [OSMBonusPack](https://github.com/MKergall/osmbonuspack) verwenden. Die Dependency dafür ist aber auf einem anderen Server (Repository) gespeichert als die bisherigen. Öffne deshalb zuerst die `build.gradle (Project: <DEIN_PROJEKT_NAME>)` und füge das Repository `maven { url "https://jitpack.io" }` im folgenden Block ein und klicke auf "Sync Now".
 
 ```xml
 allprojects {
@@ -635,7 +635,7 @@ allprojects {
 
 Nun kannst du die Dependency `'com.github.MKergall:osmbonuspack:6.6.0'` wie gewohnt zur `build gradle (Module: app)` hinzufügen. Befolge danach die unten stehenden Schritte um die Route zwischen den Markern anzuzeigen.
 
-1. Der `RoadManager`, der später verwendet wird um eine Route zu laden, setzt einen HTTP Request ins Internet ab. Das funktioniert ähnlich, wie du es vorher gemacht hast um die Liste von `Place` Objekten zu laden. Der `RoadManager` schickt diesen Request aber nicht, wie du vorher, an einen Endpunkt der mit HTTPS abgesichert ist, sondern an einen unsicheren HTTP Endpunkt. Das ist in Android nur erlaubt, wenn man im `AndroidManifest.xml` angibt, dass man Requests zu HTTP Endpunkten schickt. Öffne deshalb das `AndroidManifest.xml` und füge die folgende Zeile im `<application>` tag ein.
+1. Der `RoadManager`, der später verwendet wird um eine Route zu laden, setzt einen HTTP Request ins Internet ab. Das funktioniert ähnlich, wie du es vorher gemacht hast, um die Liste von `Place` Objekten zu laden. Der `RoadManager` schickt diesen Request aber nicht, wie du vorher, an einen Endpunkt der mit HTTPS abgesichert ist, sondern an einen unsicheren HTTP Endpunkt. Das ist in Android nur erlaubt, wenn man im `AndroidManifest.xml` angibt, dass man Requests zu HTTP Endpunkten schickt. Öffne deshalb das `AndroidManifest.xml` und füge die folgende Zeile im `<application>` tag ein.
 ```xml
 <application
 	...
@@ -678,7 +678,7 @@ mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150, 6.0, 100L);
 mapView.invalidate();
 ```
 
-Gratuliere! Nun hast du den ersten der Anleitung geschafft und solltest eine Karte mit deiner Route sehen. Wenn du deine App noch weiter verbessern möchtest, sieh dir doch den [zweiten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/) an. Dieser beinhaltet unter anderem das Styling der App, ein paar Verbesserungen zur Stabilität der App und noch ein paar Punkte, die man einfach besser machen kann.
+Gratuliere! Nun hast du den ersten Teil der Anleitung geschafft und solltest eine Karte mit deiner Route sehen. Wenn du deine App noch weiter verbessern möchtest, sieh dir doch den [zweiten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/) an. Dieser beinhaltet unter anderem das Styling der App, ein paar Verbesserungen zur Stabilität und noch ein paar Punkte, die man einfach besser machen kann.
 
 {{< imgblock "img/basic_map_reactions_app.png" >}}{{< /imgblock >}}
 

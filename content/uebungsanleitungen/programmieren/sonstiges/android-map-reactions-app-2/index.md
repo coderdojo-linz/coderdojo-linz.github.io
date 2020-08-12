@@ -28,7 +28,7 @@ Der erste Schritt um die App zu verbessern, ist sie erstmal aufzuräumen. Dabei 
    2. Ersetze den Namen "FirstFragment" mit "PhraseInputFragment". 
    3. Klicke auf "Refactor".
    4. Klicke nun auf das Layout `fragment_first.xml` und klicke wieder auf "Refactor" -> "Rename..." um es in "fragment_phrase_input.xml" umzubenennen.
-   5. Verwende die gleichen Schritte um das `SecondFragment` in "MapFragment" umzubenennen. Benenne auch das Layout "fragment_second.xml" in "fragment_map.xml" um.
+   5. Verwende die gleichen Schritte um das `SecondFragment` in "MapFragment" umzubenennen. Benenne auch das Layout `fragment_second.xml` in "fragment_map.xml" um.
    
 2. Öffne die Datei `res/values/strings.xml` und lösche alle Strings außer die Strings `app_name`, `enter_a_phrase` und `go`.
 
@@ -39,17 +39,17 @@ Der erste Schritt um die App zu verbessern, ist sie erstmal aufzuräumen. Dabei 
 ```
 4. Öffne die Datei `res/navigation/nav_graph.xml`.
 
-5. Klicke auf das `FirstFragment` und ändere das "label" rechts in der Attributliste auf `@string/phrase_input_fragment_label`.
+5. Klicke auf das `FirstFragment` und ändere das `label` rechts in der Attributliste auf "@string/phrase_input_fragment_label".
 
-6. Ändere das "label" des `SecondFragment` auf `@string/map_fragment_label`.
+6. Ändere das `label` des `SecondFragment` auf "@string/map_fragment_label".
 
-7. Ändere auch die "id" der beiden Fragments auf "PhraseInputFragment" beziehungsweise "MapFragment".
+7. Ändere auch die `id` der beiden Fragments auf "PhraseInputFragment" beziehungsweise "MapFragment".
 
 8. Da du keine Navigation vom `MapFragment` zum `PhraseInputFragment` benötigst, kannst du den Pfeil vom `MapFragment` zum `PhraseInputFragment` löschen.
 
-9. Klicke auf den Pfeil vom `PhraseInputFragment` zum `MapFragment` und ändere die "id" zu "action_PhraseInputFragment_to_MapFragment".
+9. Klicke auf den Pfeil vom `PhraseInputFragment` zum `MapFragment` und ändere die `id` auf "action_PhraseInputFragment_to_MapFragment".
 
-10. Klicke mit der rechten Maustaste auf das Package in dem die `MainActivity.java` enthalten ist und gehe auf `New` -> `Package`.
+10. Klicke mit der rechten Maustaste auf das Package in dem die `MainActivity` enthalten ist und klicke auf `New` -> `Package`.
 
 11. Nenne das neue Package "model". Lass dazu den Teil, der schon im Eingabefeld steht, einfach stehen und schreibe "model" dahinter. Drücke dann auf "Enter".
 
@@ -86,12 +86,12 @@ Wenn man im `PhraseInputFragment` auf "LOS" klickt, wird derzeit nicht überprü
 
 1. Füge den String `<string name="please_enter_a_phrase">Bitte gib einen Satz ein</string>` zu den Strings hinzu.
 
-2. Öffne das `PhraseInputFragment.java`.
+2. Öffne das `PhraseInputFragment`.
 
 3. Füge den folgenden Code unter der Zeile `String phrase = editText.getText().toString();` ein.
 ```java
-// Überprüft ob ein Satz eingegeben wurde
-if (StringUtils.isBlank(phrase)) {
+// Überprüft ob ein Satz eingegeben wurde und ob dieser nur aus Buchstaben und Leerzeichen besteht
+if (StringUtils.isBlank(phrase) || !StringUtils.isAlphaSpace(phrase)) {
 	// Wenn nicht wird ein Fehler angezeigt und die Methode wird nicht weiter ausgeführt
 	editText.setError(getString(R.string.please_enter_a_phrase));
 	return;
@@ -100,7 +100,7 @@ if (StringUtils.isBlank(phrase)) {
 
 ## Asynchroner HTTP Request
 
-Wie bereits [im ersten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/) beschrieben, setzt die Methode `roadManager.getRoad(wayPoints);` einen HTTP Request am Main Thread ab. Das bedeutet, dass diese Methode den Main Thread, und somit die gesamte App, blockieren kann, falls es Probleme beim Request geben sollte. Deshalb waren auch die folgenden beiden Zeilen nötig.
+Wie bereits [im ersten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/) beschrieben, setzt die Methode `roadManager.getRoad(wayPoints);` einen HTTP Request am Main Thread ab. Das bedeutet, dass diese Methode den Main Thread, und somit die gesamte App, blockiert bis der Request abgeschlossen ist. Deshalb waren auch die folgenden beiden Zeilen nötig.
 ```java
 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 StrictMode.setThreadPolicy(policy);
@@ -108,7 +108,7 @@ StrictMode.setThreadPolicy(policy);
 
 Diese Zeilen werden am Ende dieses Abschnitts nicht mehr nötig sein, da du den Request in einem anderen Thread absetzen und das Ergebnis mithilfe eines Callbacks zurückgeben wirst. Befolge die nächsten Schritte, um dieses Ziel zu erreichen.
 
-1. Erstelle ein neues Package `util`.
+1. Erstelle ein neues Package namens "util".
 
 2. Erstelle in diesem Package eine neue Klasse mit dem Namen `GetRoadRunnable` und ein neues Interface ("New" -> "Java Class" -> mit den Pfeiltasten "Interface auswählen") mit dem Namen `GetRoadResponseListener`.
 
@@ -205,7 +205,7 @@ mapView.invalidate();
 
 Der Endpunkt, von dem die Route abgefragt wird, ist einer sogenannten "Serverless Function" gehosted. Das bedeutet, dass der Cloud-Anbieter, der für die Funktion verantwortlich ist, die benötigten Ressourcen dynamisch verwaltet. Werden keine Anfragen zum Endpunkt gemacht, wird der Code auch nicht ausgeführt. Deshalb muss das System erst "hochgefahren" werden bevor ein Request bearbeitet werden kann. Das bezeichnet man als "cold start". Wird kurz danach ein zweiter Request geschickt, sind die Ressourcen noch vorhanden und der Request kann deutlich schneller verarbeitet werden. Das ist der Grund, warum der erste Request um die Route abzufragen momentan noch oft fehlschlägt. 
 
-Um das Problem zu lösen kannst du das sogenannte "Timeout" bei `Volley` (die Bibliothek mit der der Request abgesetzt wird) erhöhen. Das Timeout definiert wieviel Zeit vergehen darf, bevor man davon ausgeht, dass keine Antwort mehr kommt und der Request abgebrochen wird. Standardmäßig liegt das Timeout bei `Volley` bei 5 Sekunden. Füge den folgenden Code im `MapFragment.java` hinzu, bevor der `stringRequest` zur `requestQueue` hinzugefügt wird.
+Um das Problem zu lösen kannst du das sogenannte "Timeout" bei `Volley` (die Bibliothek mit der der Request abgesetzt wird) erhöhen. Das Timeout definiert wieviel Zeit vergehen darf, bevor man davon ausgeht, dass keine Antwort mehr kommt und der Request abgebrochen wird. Standardmäßig liegt das Timeout bei `Volley` bei 5 Sekunden. Füge den folgenden Code im `MapFragment` hinzu, bevor der `stringRequest` zur `requestQueue` hinzugefügt wird.
 ```java
 // Erhöht das Timeout für den Request auf 15 Sekunden
 stringRequest.setRetryPolicy(new DefaultRetryPolicy(
@@ -314,7 +314,7 @@ Der Hintergrund des `PhraseInputFragment` besteht aus zwei Teilen. Zum einen ent
 
 9. Ziehe die `View` Komponente, die im Suchergebnis erscheint, irgendwo auf das Layout.
 
-10. Ziehe die Constraints der `View` wieder zu allen 4 Bildschirmrändern, um sie übern den ganzen Bildschirm gehen zu lassen. 
+10. Ziehe die Constraints der `View` wieder zu allen 4 Bildschirmrändern, um sie über den ganzen Bildschirm gehen zu lassen. 
 
 11. Suche in der Attributliste wieder nach "background" und setze den Wert "@drawable/background_gradient".
 
@@ -324,7 +324,7 @@ Der Hintergrund des `PhraseInputFragment` besteht aus zwei Teilen. Zum einen ent
 
 Jetzt ist der Hintergrund soweit fertig. Da das `EditText` zum Eingeben des Satzes aber sehr dunkel ist, sieht man es fast nicht. Also kümmerst du dich als Nächstes um das Styling des `EditTexts` und auch des `Buttons`, da er momentan noch nicht sehr schön aussieht. Außerdem ist in den folgenden Anweisungen beschrieben, wie du das Icon oben in der Mitte herunterladen und hinzufügen kannst.
 
-1. In dem Bild oben siehst, du dass das `EditText` einen weißen Hintergrund mit runden Ecken hat. Wenn du ganz genau hinsiehst, erkennst du auch, dass es einen ganz dünnen blauen Rahmen hat. Erstelle ein neues `Drawable Resource File` namens "edittext_background". 
+1. In dem Bild oben siehst du, dass das `EditText` einen weißen Hintergrund mit runden Ecken hat. Wenn du ganz genau hinsiehst, erkennst du auch, dass es einen ganz dünnen blauen Rahmen hat. Erstelle ein neues `Drawable Resource File` namens "edittext_background". 
 
 2. Füge den folgenden Code ein um ein weißes Rechteck mit runden Ecken und einem blauen Rahmen zu erstellen.
 ```xml
@@ -347,7 +347,7 @@ Jetzt ist der Hintergrund soweit fertig. Da das `EditText` zum Eingeben des Satz
 		android:topRightRadius="32dp" />
 </shape>
 ```
-3. Der Hintergrund des `Button`s soll genau gleich aussehen, nur mit umgekehrten Farben. Erstelle deshalb gleich ein zweites `Drawable Resource File` mit dem Namen `button_background` und dem folgenden Inhalt.
+3. Der Hintergrund des `Button` soll genau gleich aussehen, nur mit umgekehrten Farben. Erstelle deshalb gleich ein zweites `Drawable Resource File` mit dem Namen `button_background` und dem folgenden Inhalt.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Definiert die Form, also ein Rechteck -->
@@ -371,13 +371,13 @@ Jetzt ist der Hintergrund soweit fertig. Da das `EditText` zum Eingeben des Satz
 
 5. Suche in der Attributliste nach "background" und lege "@drawable/edittext_background" als Hintergrund fest.
 
-6. Suche nun in der Attributliste nach "padding" und vergib für die Felder "paddingStart" und "paddingStart" einen Wert von "24dp" und für "paddingTop" und "paddingBottom" "12dp".
+6. Suche nun in der Attributliste nach "padding" und vergib für die Felder `paddingStart` und `paddingEnd` einen Wert von "24dp" und für `paddingTop` und `paddingBottom` "12dp".
 
 7. Wähle nun den `Button` aus und gib ihm den Hintergrund "@drawable/button_background".
 
-8. Lege zusätzlich "@android:color/white" als "textColor" fest.
+8. Lege zusätzlich "@android:color/white" als `textColor` fest.
 
-9. Ziehe den unteren Constraint zum unteren Bildschirmrand und lösche den oberen Constraint, um den Button rechts unten auszurichten.
+9. Ziehe den unteren `Constraint` zum unteren Bildschirmrand und lösche den oberen `Constraint`, um den Button rechts unten auszurichten.
 
 10. Lege im `Constraint Widget` unten einen Rahmen von 24 fest.
 
@@ -403,7 +403,7 @@ Jetzt ist der Hintergrund soweit fertig. Da das `EditText` zum Eingeben des Satz
 
 17. Wähle das drawable `ic_map` aus und klicke auf "OK".
 
-18. Zentriere die `ImageView` in dem Teil des Bildschirms, der sich über dem `EditText` befindet. Ziehe dazu den linken, oberen  und rechten Constraint der `ImageView` zum jeweiligen Bildschirmrand und den unteren Constraint zur Oberkante des `EditText`.
+18. Zentriere die `ImageView` in dem Teil des Bildschirms, der sich über dem `EditText` befindet. Ziehe dazu den linken, oberen und rechten `Constraint` der `ImageView` zum jeweiligen Bildschirmrand und den unteren `Constraint` zur Oberkante des `EditText`.
 
 Nun hast du das `PhraseInputFragment` (wie ich finde) schon um einiges verschönert. Eine kleine Verbesserung ist allerdings noch offen. Dir wird schon aufgefallen sein, dass der `Button` immer verdeckt wird, wenn sich die Tastatur öffnet. Gehe deshalb zum `AndroidManifest.xml` und füge in dem `<activity>` Tag der `MainActivity` das folgende Attribut hinzu.
 ```xml
@@ -418,7 +418,7 @@ Auch die Schrift ist ein wichtiger Punkt, um das Design einer App zu verbessern.
 
 2. Suche in der Attributliste nach "font".
 
-3. Klicke auf den Pfeil rechts neben "fontFamily" und klicke ganz unten auf "More Fonts..."
+3. Klicke auf den Pfeil rechts neben `fontFamily` und klicke ganz unten auf "More Fonts..."
 
 4. Suche nach "Cabin", wähle diese Schrift mit einem Klick aus und klicke auf "OK".
 
@@ -430,9 +430,9 @@ Auch die Schrift ist ein wichtiger Punkt, um das Design einer App zu verbessern.
 
 Nun hast du das Styling des `PhraseInputFragment` abgeschlossen und es ist an der Zeit, das `MapFragment` zu verschönern. 
 
-#### Info-Box
+#### Infobox
 
-Die erste Verbesserung, die du hier machen kannst, ist  die Info-`TextView` durch eine ganze Info-Box zu ersetzen, die mehr Informationen zur Route, aber auch einen "Neu starten" -`Button` enthält. Befolge dazu die unten stehenden Schritte.
+Die erste Verbesserung, die du hier machen kannst, ist  die Info-`TextView` durch eine ganze Infobox zu ersetzen, die mehr Informationen zur Route, aber auch einen "Neu starten" -`Button` enthält. Befolge dazu die unten stehenden Schritte.
 
 1. Öffne das Layout `fragment_map.xml`.
 
@@ -442,25 +442,25 @@ Die erste Verbesserung, die du hier machen kannst, ist  die Info-`TextView` durc
 
 4. Ziehe nun die `TextView` im `Component Tree` in das `ConstraintLayout` hinein.
 
-5. Da der untere Constraint der `MapView` am oberen Punkt der `TextView` angeheftet war, muss dieser nun neu gesetzt werden. Wähle die `MapView` dazu aus und ziehe den Punkt, der am oberen Bildschirmrand erscheint, nach ganz unten, um die `MapView` über den gesamten Bildschirm zu erstrecken.
+5. Da der untere `Constraint` der `MapView` am oberen Punkt der `TextView` angeheftet war, muss dieser nun neu gesetzt werden. Wähle die `MapView` dazu aus und ziehe den Punkt, der am oberen Bildschirmrand erscheint, nach ganz unten, um die `MapView` über den gesamten Bildschirm zu erstrecken.
 
-6. Wähle nun die `CardView` im `Component Tree` aus und ziehe die seitlichen und den unteren Constraint zu den jeweiligen Bildschirmrändern, um sie unten am Screen auszurichten.
+6. Wähle nun die `CardView` im `Component Tree` aus und ziehe die seitlichen und den unteren `Constraint` zu den jeweiligen Bildschirmrändern, um sie unten am Screen auszurichten.
 
 7. Lege einen Rahmen von "16" auf diesen 3 Seiten fest.
 
-8. Setze den "@drawable/background_gradient" als Hintergrund ("background").
+8. Setze den "@drawable/background_gradient" als Hintergrund (`background`).
 
-9. Suche nach dem Attribut "cornerRadius" und setze es auf "32dp".
+9. Setze das Attribut `cornerRadius` auf "32dp".
 
-10. Ziehe einen `Button` und eine `TextView` aus der `Palette` in das `ConstraintLayout` in der `CardView` und gib ihnen die ids "button_try_again" und "textview_route". Lösche zusätzlich bei der neuen `TextView` den Wert im Feld "text". 
+10. Ziehe einen `Button` und eine `TextView` aus der `Palette` in das `ConstraintLayout` in der `CardView` und gib ihnen die `id` "button_try_again" beziehungsweise "textview_route". Lösche zusätzlich bei der neuen `TextView` den Wert im Feld `text`. 
 
-11. Nun müssen diese 3 `View`s im `ConstraintLayout` ausgerichtet werden. Der `Button` soll ganz unten sein, ziehe deshalb seine beiden seitlichen und den unterent Constraint zu den zugehörigen Rändern der `CardView`. 
+11. Nun müssen diese 3 Elemente im `ConstraintLayout` ausgerichtet werden. Der `Button` soll ganz unten sein, ziehe deshalb seine beiden seitlichen und den unteren `Constraint` zu den zugehörigen Rändern der `CardView`. 
 
-12. Darüber soll die `textview_info` angezeigt werden. Wähle sie im `Component Tree` aus und ziehe die seitlichen Constraints zu den Rändern der `CardView` und den unteren Constraints zur Oberkante des `Button`s.
+12. Darüber soll die `textview_info` angezeigt werden. Wähle sie im `Component Tree` aus und ziehe die seitlichen `Constraint`s zu den Rändern der `CardView` und den unteren `Constraint` zur Oberkante des `Button`.
 
-13. Ziehe die seitlichen und den oberen Constraint der `textview_route` ebenfalls zu den Rändern der `CardView`. Ziehe den unteren Constraint zur Oberkante der `textview_info`.
+13. Ziehe die seitlichen und den oberen `Constraint` der `textview_route` ebenfalls zu den Rändern der `CardView`. Ziehe den unteren `Constraint` zur Oberkante der `textview_info`.
 
-14. Lösche das Padding der `textview_info`.
+14. Lösche das `padding` der `textview_info`.
 
 15. Setze die folgenden Rahmen im `Constraint Widget`.
 	- `button_try_again`:
@@ -476,19 +476,19 @@ Die erste Verbesserung, die du hier machen kannst, ist  die Info-`TextView` durc
 		- Links: 16
 		- Rechts: 16
 
-16. Setze die Breite ("layout_width") der `textview_route` auf "0dp (match constraint)".
+16. Setze die Breite (`layout_width`) der `textview_route` auf "0dp (match constraint)".
 
 17. Die `textview_info` soll im Vordergund stehen. Gib ihr deshalb die folgenden Attribute.
-	- textColor: @android:color/white
-	- fontFamily: @font/roboto_condensed_bold
-	- textSize: 20sp
-	- textAlignment: center
+	- `textColor`: "@android:color/white"
+	- `fontFamily`: "@font/roboto_condensed_bold"
+	- `textSize`: "20sp"
+	- `textAlignment`: "center"
 
 18. Gib der `textview_route` die folgenden Attribute.
-	- textColor: @android:color/white
-	- fontFamily: @font/cabin
-	- textSize: 16sp
-	- textAlignment: center
+	- `textColor`: "@android:color/white"
+	- `fontFamily`: "@font/cabin"
+	- `textSize`: "16sp"
+	- `textAlignment`: "center"
 
 19. Lade dir [diesen Icon](https://www.flaticon.com/free-icon/reply_481675?term=back&page=1&position=43) als PNG herunter, kopiere und speichere den "Attribution Link" und lade das Icon dann wieder in den [Generic Icon Generator](https://romannurik.github.io/AndroidAssetStudio/icons-generic.html) hoch.
 
@@ -505,17 +505,17 @@ Die erste Verbesserung, die du hier machen kannst, ist  die Info-`TextView` durc
 22. Erstelle einen neuen String in der Datei `res/values/strings.xml` mit der id "try_again" und dem Text "Neu starten" in Deutsch und "Try again" in Englisch.
 
 22. Gib dem Button die folgenden Attribute.
- 	- textColor: @android:color/white
-	- fontFamily: @font/cabin
-	- textSize: 16sp
-	- background: @android:color/transparent
-	- drawableTop: @drawable/ic_try_again
-	- text: @string/try_again
-	- textAllCaps: false
+  - `textColor`: "@android:color/white"
+- `fontFamily`: "@font/cabin"
+- `textSize`: "16sp"
+- `background`: "@android:color/transparent"
+- `drawableTop`: "@drawable/ic_try_again"
+- `text`: "@string/try_again"
+- `textAllCaps`: "false"
 
-Nun ist das Layout für die Info-Box fertig. Die `textview_route` muss allerdings noch mit Text befüllt werden und der `button_try_again` reagiert noch nicht auf Klicks. Diese beiden Dinge kannst du mit den folgenden Schritten lösen.
+Nun ist das Layout für die Infobox fertig. Die `textview_route` muss allerdings noch mit Text befüllt werden und der `button_try_again` reagiert noch nicht auf Klicks. Diese beiden Dinge kannst du mit den folgenden Schritten lösen.
 
-1. Öffne das `MapFragment.java`.
+1. Öffne das `MapFragment`.
 
 2. Erstelle die folgenden 2 Member-Variablen unter `private TextView textViewInfo;`.
 ```java
@@ -523,7 +523,7 @@ private TextView textViewRoute;
 private Button buttonTryAgain;
 ```
 
-3. Binde die UI Komponenten an die Variablen. Füge dazu die folgenden Zeilen zur `onViewCreated()` Methode hinzu.
+3. Binde die beiden Komponenten an die Variablen. Füge dazu die folgenden Zeilen zur `onViewCreated()` Methode hinzu.
 ```java
 textViewRoute = view.findViewById(R.id.textview_route);
 buttonTryAgain = view.findViewById(R.id.button_try_again);
@@ -571,7 +571,7 @@ buttonTryAgain.setOnClickListener(new View.OnClickListener() {
 ```
 
 #### Karte
-Als letzten Schritt Kannst du noch das Design der Marker und der Route auf der Karte verbessern. Öffne dazu das `MapFragment.java` und befolge die folgenden Schritte. 
+Als letzten Schritt Kannst du noch das Design der Marker und der Route auf der Karte verbessern. Öffne dazu das `MapFragment` und befolge die folgenden Schritte. 
 
 1. Suche die Zeile `Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);` und ersetze `Color.BLACK` mit `getResources().getColor(R.color.colorPrimary);` um die Route in der Hauptfarbe der App darzustellen. Setze außerdem die Breite der Linie (also den nächsten Parameter, derzeit  `6`) auf `8`, um die Route etwas breiter darzustellen.
 
@@ -588,7 +588,7 @@ final List<SpeechBalloonOverlay> markers = new ArrayList<>();
 // Fügt das Overlay zur Liste der Marker hinzu
 markers.add(textOverlay);
 ```
-	3. Füge den folgenden Code unter der Zeile ` mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150);` ein, um die Marker erst nach der Route/Straße zu zeichnen.
+	3. Füge den folgenden Code unter der Zeile `mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150);` ein, um die Marker erst nach der Route/Straße zu zeichnen.
 ```java
 // Zeigt die Marker auf der Karte an
 mapView.getOverlays().addAll(markers);
