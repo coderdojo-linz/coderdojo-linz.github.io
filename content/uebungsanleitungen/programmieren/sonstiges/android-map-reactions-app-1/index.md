@@ -1,5 +1,5 @@
 ---
-title: "Android Map Reactions App"
+title: "Android Map Reactions App, Teil 1"
 description: "In dieser Übung programmierst du eine Android App in der man einen Satz eingeben kann, der dann als Route auf einer Karte angezeigt wird."
 level: 3
 img: "basic_map_reactions_app.png"
