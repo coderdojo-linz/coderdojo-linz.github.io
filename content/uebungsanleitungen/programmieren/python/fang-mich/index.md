@@ -1,6 +1,6 @@
 ---
 title: "Fang mich"
-description: "Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kann, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird."
+description: "Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kannst, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird."
 level: 1
 img: "fang-mich.png"
 imgposition: "left top"
@@ -8,7 +8,7 @@ imgposition: "left top"
 
 # Fang mich
 
-Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kann, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird.
+Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kannst, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird.
 
 {{< imgblock "img/fang-mich.png" "" >}}{{< /imgblock >}}
 
