@@ -914,6 +914,24 @@ Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Date
     </item>
     
     <item>
+      <title>Android Map Reactions App</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/</guid>
+      <description>Android Map Reactions App In dieser Übung programmierst du eine Android App in Java. In dieser App kann man einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem Comic Strip. Während der Entwicklung der App wirst du lernen, wie man eine einfache Android App inklusive Navigation zwischen Screens schreibt. Außerdem wirst du über sogenannte REST Calls mit einem Server über das Internet kommunizieren, um den eingegebenen Satz in eine Route zu verwandeln.</description>
+    </item>
+    
+    <item>
+      <title>Android Map Reactions App, Teil 2</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/</guid>
+      <description>Android Map Reactions App, Teil 2 Im ersten Teil dieser Anleitung hast du eine Android App in Java programmiert. In dieser App kann man bereits einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem Comic Strip. In diesem Teil werden einige Verbesserungen beschrieben, die du noch machen kannst. Diese beinhalten unter anderem das Styling der App, ein paar Verbesserungen des Codes selbst und die App sollte auch etwas stabiler werden.</description>
+    </item>
+    
+    <item>
       <title>Animierte Ansichtskarte</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/animated-postcard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1175,7 +1193,7 @@ Schritt 1: Die drei Bühnenbilder anlegen Dieses Spiel verwendet drei verschiede
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/fang-mich/</guid>
-      <description>Fang mich Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kann, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird.
+      <description>Fang mich Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kannst, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird.
 
    Voraussetzungen Übungsbeispiel Alien, um schon erste Erfahrungen mit Python und Tkinter gesammelt zu haben.
 Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (File -&amp;gt; New File) und speichere die Datei als Dateityp auf deinem Computer (File -&amp;gt; Save As).</description>

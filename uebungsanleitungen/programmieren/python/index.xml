@@ -53,7 +53,7 @@ Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Date
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/fang-mich/</guid>
-      <description>Fang mich Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kann, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird.
+      <description>Fang mich Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kannst, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird.
 
    Voraussetzungen Übungsbeispiel Alien, um schon erste Erfahrungen mit Python und Tkinter gesammelt zu haben.
 Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (File -&amp;gt; New File) und speichere die Datei als Dateityp auf deinem Computer (File -&amp;gt; Save As).</description>
