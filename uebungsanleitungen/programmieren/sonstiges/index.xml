@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Android Map Reactions App</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/</link>
+      <title>Android Map Reactions App, Teil 1</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/</guid>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-1/</guid>
       <description>Android Map Reactions App In dieser Übung programmierst du eine Android App in Java. In dieser App kann man einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem Comic Strip. Während der Entwicklung der App wirst du lernen, wie man eine einfache Android App inklusive Navigation zwischen Screens schreibt. Außerdem wirst du über sogenannte REST Calls mit einem Server über das Internet kommunizieren, um den eingegebenen Satz in eine Route zu verwandeln.</description>
     </item>
     
