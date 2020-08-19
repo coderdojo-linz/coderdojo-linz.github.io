@@ -1493,6 +1493,18 @@ Wenn du keinen physischen micro:bit hast kannst du das Spiel in dem Online-Edito
     </item>
     
     <item>
+      <title>Music Player</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/music-player/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/music-player/</guid>
+      <description>Music Player Wir programmieren einen Musicplayer in Python, mit dem du deine mp3-Dateien abspielen kannst. Für das Interface verwenden wir das Package Tkinter und für die Steuerung der Musik benötigen wir pygame.
+
+   Voraussetzungen Übungsbeispiel Alien, um schon erste Erfahrungen mit Python und Tkinter gesammelt zu haben.
+Installieren von Packages Wenn du das erste Mal pygame verwendest, dann musst du dieses Package einmal über die Kommmandozeile installieren.</description>
+    </item>
+    
+    <item>
       <title>n-Ecke malen</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/n-ecke-malen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
