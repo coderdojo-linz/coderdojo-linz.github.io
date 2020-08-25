@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -223,36 +223,36 @@
 </ul>
 
 <p>Hat man alles richtig gemacht, sieht das so aus:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">C:<span style="color:#ae81ff">\t</span>emp<span style="color:#ae81ff">\s</span>criptcraft<span style="color:#ae81ff">\f</span>lat-and-empty-world&gt;docker build -t mc-flat-empty .
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">C:<span style="color:#a31515">\t</span>emp<span style="color:#a31515">\s</span>criptcraft<span style="color:#a31515">\f</span>lat-and-empty-world&gt;docker build -t mc-flat-empty .
 Sending build context to Docker daemon 8.704 kB
-Step <span style="color:#ae81ff">1</span> : FROM rstropek/spigotmc
+Step 1 : FROM rstropek/spigotmc
  ---&gt; 4a6020e36757
-Step <span style="color:#ae81ff">2</span> : COPY server.properties /bin/spigotmc
+Step 2 : COPY server.properties /bin/spigotmc
  ---&gt; Using cache
  ---&gt; 925c920abd91
-Step <span style="color:#ae81ff">3</span> : COPY ops.json /bin/spigotmc
+Step 3 : COPY ops.json /bin/spigotmc
  ---&gt; Using cache
  ---&gt; 414acf0ebf53
-Step <span style="color:#ae81ff">4</span> : CMD /bin/spigotmc/start.sh
+Step 4 : CMD /bin/spigotmc/start.sh
  ---&gt; Using cache
  ---&gt; f4d15115f8fe
 Successfully built f4d15115f8fe
-SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have <span style="color:#e6db74">&#39;-rwxr-xr-x&#39;</span> permissions. It is recommended to double check and reset permissions <span style="color:#66d9ef">for</span> sensitive files and directories.
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have <span style="color:#a31515">&#39;-rwxr-xr-x&#39;</span> permissions. It is recommended to double check and reset permissions <span style="color:#00f">for</span> sensitive files and directories.
 
-C:<span style="color:#ae81ff">\t</span>emp<span style="color:#ae81ff">\s</span>criptcraft<span style="color:#ae81ff">\f</span>lat-and-empty-world&gt;docker run -it --rm -p 25565:25565 --name mc-flat-empty -v C:<span style="color:#ae81ff">\s</span>criptcraft<span style="color:#ae81ff">\f</span>lat-and-empty-world<span style="color:#ae81ff">\p</span>lugins:/bin/spigotmc/scriptcraft/plugins/rainer mc-flat-empty
+C:<span style="color:#a31515">\t</span>emp<span style="color:#a31515">\s</span>criptcraft<span style="color:#a31515">\f</span>lat-and-empty-world&gt;docker run -it --rm -p 25565:25565 --name mc-flat-empty -v C:<span style="color:#a31515">\s</span>criptcraft<span style="color:#a31515">\f</span>lat-and-empty-world<span style="color:#a31515">\p</span>lugins:/bin/spigotmc/scriptcraft/plugins/rainer mc-flat-empty
 Loading libraries, please wait...
-<span style="color:#f92672">[</span>07:42:49 INFO<span style="color:#f92672">]</span>: Starting minecraft server version 1.10.2
-<span style="color:#f92672">[</span>07:42:49 INFO<span style="color:#f92672">]</span>: Loading properties
-<span style="color:#f92672">[</span>07:42:49 INFO<span style="color:#f92672">]</span>: Default game type: CREATIVE
-<span style="color:#f92672">[</span>07:42:49 INFO<span style="color:#f92672">]</span>: This server is running CraftBukkit version git-Spigot-72c2605-709783c <span style="color:#f92672">(</span>MC: 1.10.2<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>Implementing API version 1.10.2-R0.1-SNAPSHOT<span style="color:#f92672">)</span>
+[07:42:49 INFO]: Starting minecraft server version 1.10.2
+[07:42:49 INFO]: Loading properties
+[07:42:49 INFO]: Default game type: CREATIVE
+[07:42:49 INFO]: This server is running CraftBukkit version git-Spigot-72c2605-709783c (MC: 1.10.2) (Implementing API version 1.10.2-R0.1-SNAPSHOT)
 ...
-<span style="color:#f92672">[</span>07:42:57 INFO<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> Unzipping /bin/spigotmc/scriptcraft/modules/watcher.js <span style="color:#f92672">(</span>NE<span style="color:#f92672">)</span>
-<span style="color:#f92672">[</span>07:42:58 WARN<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> cow-clicker minigame is not yet supported in CanaryMod and Craftbukkit
-<span style="color:#f92672">[</span>07:42:59 WARN<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> Legacy ScriptCraft directory /bin/spigotmc/plugins/scriptcraft was found. This directory is no longer used.
-<span style="color:#f92672">[</span>07:42:59 WARN<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> Please put plugins in the /bin/spigotmc/scriptcraft/plugins directory
-<span style="color:#f92672">[</span>07:42:59 INFO<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> Please note that the working directory <span style="color:#66d9ef">for</span> scriptcraft v3.2.0-2016-03-19 is /bin/spigotmc/scriptcraft
-<span style="color:#f92672">[</span>07:42:59 INFO<span style="color:#f92672">]</span>: Done <span style="color:#f92672">(</span>9.687s<span style="color:#f92672">)</span>! For help, type <span style="color:#e6db74">&#34;help&#34;</span> or <span style="color:#e6db74">&#34;?&#34;</span>
-<span style="color:#f92672">[</span>07:42:59 INFO<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>scriptcraft<span style="color:#f92672">]</span> js-patch setTimeout<span style="color:#f92672">()</span> test complete
+[07:42:57 INFO]: [scriptcraft] Unzipping /bin/spigotmc/scriptcraft/modules/watcher.js (NE)
+[07:42:58 WARN]: [scriptcraft] cow-clicker minigame is not yet supported in CanaryMod and Craftbukkit
+[07:42:59 WARN]: [scriptcraft] Legacy ScriptCraft directory /bin/spigotmc/plugins/scriptcraft was found. This directory is no longer used.
+[07:42:59 WARN]: [scriptcraft] Please put plugins in the /bin/spigotmc/scriptcraft/plugins directory
+[07:42:59 INFO]: [scriptcraft] Please note that the working directory <span style="color:#00f">for</span> scriptcraft v3.2.0-2016-03-19 is /bin/spigotmc/scriptcraft
+[07:42:59 INFO]: Done (9.687s)! For help, type <span style="color:#a31515">&#34;help&#34;</span> or <span style="color:#a31515">&#34;?&#34;</span>
+[07:42:59 INFO]: [scriptcraft] js-patch setTimeout() test complete
 &gt;</code></pre></div>
 <p>Jetzt kann man sich zum Server in Minecraft verbinden:</p>
 

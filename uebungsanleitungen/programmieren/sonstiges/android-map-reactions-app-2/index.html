@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -226,8 +226,8 @@
 <li><p>Öffne die Datei <code>res/values/strings.xml</code> und lösche alle Strings außer die Strings <code>app_name</code>, <code>enter_a_phrase</code> und <code>go</code>.</p></li>
 
 <li><p>Füge die folgenden zwei Strings hinzu.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;string</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;phrase_input_fragment_label&#34;</span><span style="color:#f92672">&gt;</span>PhraseInputFragment<span style="color:#f92672">&lt;/string&gt;</span>
-<span style="color:#f92672">&lt;string</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;map_fragment_label&#34;</span><span style="color:#f92672">&gt;</span>MapFragment<span style="color:#f92672">&lt;/string&gt;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;string name=<span style="color:#a31515">&#34;phrase_input_fragment_label&#34;</span>&gt;PhraseInputFragment&lt;/string&gt;
+&lt;string name=<span style="color:#a31515">&#34;map_fragment_label&#34;</span>&gt;MapFragment&lt;/string&gt;</code></pre></div></li>
 
 <li><p>Öffne die Datei <code>res/navigation/nav_graph.xml</code>.</p></li>
 
@@ -254,8 +254,8 @@
 
 <ol>
 <li><p>Öffne die Datei <code>res/values/strings.xml</code> und füge die beiden folgenden Strings hinzu</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;string</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;loading&#34;</span><span style="color:#f92672">&gt;</span>Wird geladen…<span style="color:#f92672">&lt;/string&gt;</span>
-<span style="color:#f92672">&lt;string</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;load_route_error&#34;</span><span style="color:#f92672">&gt;</span>Route konnte nicht geladen werden<span style="color:#f92672">&lt;/string&gt;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;string name=<span style="color:#a31515">&#34;loading&#34;</span>&gt;Wird geladen…&lt;/string&gt;
+&lt;string name=<span style="color:#a31515">&#34;load_route_error&#34;</span>&gt;Route konnte nicht geladen werden&lt;/string&gt;</code></pre></div></li>
 
 <li><p>Öffne das <code>MapFragment.java</code>.</p></li>
 
@@ -264,15 +264,15 @@
 <li><p>Gehe zur <code>loadRoute()</code> Methode und füge die Zeile <code>textViewInfo.setText(R.string.loading);</code> über der Zeile, in der du den StringRequest erstellt hast, ein.</p></li>
 
 <li><p>Gehe zum <code>onResponse()</code> Callback und füge den folgenden Code direkt nach der Zeile, in der die Route geparst wird, ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Überprüft ob die Route geparst werden konnte und Elemente enthält
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>route <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">||</span> route<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Wenn nicht, wird ein Fehler angezeigt und die Karte wird nicht angezeigt
-</span><span style="color:#75715e"></span>	textViewInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">setText</span><span style="color:#f92672">(</span>getString<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">load_route_error</span><span style="color:#f92672">));</span>
-	<span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Überprüft ob die Route geparst werden konnte und Elemente enthält
+</span><span style="color:#008000"></span><span style="color:#00f">if</span> (route == <span style="color:#00f">null</span> || route.isEmpty()) {
+	<span style="color:#008000">// Wenn nicht, wird ein Fehler angezeigt und die Karte wird nicht angezeigt
+</span><span style="color:#008000"></span>	textViewInfo.setText(getString(R.string.load_route_error));
+	<span style="color:#00f">return</span>;
+}
 
-<span style="color:#75715e">// Zeigt den eingegebenen Satz in der Info TextView an, da die Route erfolgreich geladen werden konnte
-</span><span style="color:#75715e"></span>textViewInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">setText</span><span style="color:#f92672">(</span>phrase<span style="color:#f92672">);</span></code></pre></div></li>
+<span style="color:#008000">// Zeigt den eingegebenen Satz in der Info TextView an, da die Route erfolgreich geladen werden konnte
+</span><span style="color:#008000"></span>textViewInfo.setText(phrase);</code></pre></div></li>
 </ol>
 
 <h2 id="input-validierung">Input Validierung</h2>
@@ -285,19 +285,19 @@
 <li><p>Öffne das <code>PhraseInputFragment</code>.</p></li>
 
 <li><p>Füge den folgenden Code unter der Zeile <code>String phrase = editText.getText().toString();</code> ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Überprüft ob ein Satz eingegeben wurde und ob dieser nur aus Buchstaben und Leerzeichen besteht
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">isBlank</span><span style="color:#f92672">(</span>phrase<span style="color:#f92672">)</span> <span style="color:#f92672">||</span> <span style="color:#f92672">!</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">isAlphaSpace</span><span style="color:#f92672">(</span>phrase<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Wenn nicht wird ein Fehler angezeigt und die Methode wird nicht weiter ausgeführt
-</span><span style="color:#75715e"></span>	editText<span style="color:#f92672">.</span><span style="color:#a6e22e">setError</span><span style="color:#f92672">(</span>getString<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">string</span><span style="color:#f92672">.</span><span style="color:#a6e22e">please_enter_a_phrase</span><span style="color:#f92672">));</span>
-	<span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Überprüft ob ein Satz eingegeben wurde und ob dieser nur aus Buchstaben und Leerzeichen besteht
+</span><span style="color:#008000"></span><span style="color:#00f">if</span> (StringUtils.isBlank(phrase) || !StringUtils.isAlphaSpace(phrase)) {
+	<span style="color:#008000">// Wenn nicht wird ein Fehler angezeigt und die Methode wird nicht weiter ausgeführt
+</span><span style="color:#008000"></span>	editText.setError(getString(R.string.please_enter_a_phrase));
+	<span style="color:#00f">return</span>;
+}</code></pre></div></li>
 </ol>
 
 <h2 id="asynchroner-http-request">Asynchroner HTTP Request</h2>
 
 <p>Wie bereits <a href="/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/">im ersten Teil der Anleitung</a> beschrieben, setzt die Methode <code>roadManager.getRoad(wayPoints);</code> einen HTTP Request am Main Thread ab. Das bedeutet, dass diese Methode den Main Thread, und somit die gesamte App, blockiert bis der Request abgeschlossen ist. Deshalb waren auch die folgenden beiden Zeilen nötig.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">ThreadPolicy</span> policy <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">ThreadPolicy</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">permitAll</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
-StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThreadPolicy</span><span style="color:#f92672">(</span>policy<span style="color:#f92672">);</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">StrictMode.ThreadPolicy policy = <span style="color:#00f">new</span> StrictMode.ThreadPolicy.Builder().permitAll().build();
+StrictMode.setThreadPolicy(policy);</code></pre></div>
 <p>Diese Zeilen werden am Ende dieses Abschnitts nicht mehr nötig sein, da du den Request in einem anderen Thread absetzen und das Ergebnis mithilfe eines Callbacks zurückgeben wirst. Befolge die nächsten Schritte, um dieses Ziel zu erreichen.</p>
 
 <ol>
@@ -306,87 +306,87 @@ StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThr
 <li><p>Erstelle in diesem Package eine neue Klasse mit dem Namen <code>GetRoadRunnable</code> und ein neues Interface (&ldquo;New&rdquo; -&gt; &ldquo;Java Class&rdquo; -&gt; mit den Pfeiltasten &ldquo;Interface auswählen&rdquo;) mit dem Namen <code>GetRoadResponseListener</code>.</p></li>
 
 <li><p>Öffne den <code>GetRoadResponseListener</code> und füge die Methode <code>void onResponse(Road road);</code> ein. Diese Methode wird dann ausgeführt, sobald die Route/Straße geladen wurde. Das Interface sollte dann so aussehen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">GetRoadResponseListener</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Wird aufgerufen, wenn die Route geladen wurde
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onResponse</span><span style="color:#f92672">(</span>Road road<span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">interface</span> <span style="color:#2b91af">GetRoadResponseListener</span> {
+	<span style="color:#008000">// Wird aufgerufen, wenn die Route geladen wurde
+</span><span style="color:#008000"></span>	<span style="color:#2b91af">void</span> onResponse(Road road);
+}</code></pre></div></li>
 
 <li><p>Füge den folgenden Code in das <code>GetRoadRunnable</code> ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetRoadRunnable</span> <span style="color:#66d9ef">implements</span> Runnable <span style="color:#f92672">{</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">GetRoadRunnable</span> <span style="color:#00f">implements</span> Runnable {
 
-	<span style="color:#75715e">// Die Activity, in der das Runnable erstellt wurde
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">private</span> Activity activity<span style="color:#f92672">;</span>
-	<span style="color:#75715e">// Die Wegpunkte, die enthalten sein sollen
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">private</span> ArrayList<span style="color:#f92672">&lt;</span>GeoPoint<span style="color:#f92672">&gt;</span> wayPoints<span style="color:#f92672">;</span>
-	<span style="color:#75715e">// Der ResponseListener, dessen &#34;onResponse&#34; aufgerufen wird, sobald eine Antwort verfügbar ist
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">private</span> GetRoadResponseListener responseListener<span style="color:#f92672">;</span>
+	<span style="color:#008000">// Die Activity, in der das Runnable erstellt wurde
+</span><span style="color:#008000"></span>	<span style="color:#00f">private</span> Activity activity;
+	<span style="color:#008000">// Die Wegpunkte, die enthalten sein sollen
+</span><span style="color:#008000"></span>	<span style="color:#00f">private</span> ArrayList&lt;GeoPoint&gt; wayPoints;
+	<span style="color:#008000">// Der ResponseListener, dessen &#34;onResponse&#34; aufgerufen wird, sobald eine Antwort verfügbar ist
+</span><span style="color:#008000"></span>	<span style="color:#00f">private</span> GetRoadResponseListener responseListener;
 
-	<span style="color:#75715e">// Konstruktor - Erstellt eine neue Instanz des GetRoadRunnable
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">GetRoadRunnable</span><span style="color:#f92672">(</span>Activity activity<span style="color:#f92672">,</span> ArrayList<span style="color:#f92672">&lt;</span>GeoPoint<span style="color:#f92672">&gt;</span> wayPoints<span style="color:#f92672">,</span> GetRoadResponseListener responseListener<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">activity</span> <span style="color:#f92672">=</span> activity<span style="color:#f92672">;</span>
-		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">wayPoints</span> <span style="color:#f92672">=</span> wayPoints<span style="color:#f92672">;</span>
-		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">responseListener</span> <span style="color:#f92672">=</span> responseListener<span style="color:#f92672">;</span>
-	<span style="color:#f92672">}</span>
+	<span style="color:#008000">// Konstruktor - Erstellt eine neue Instanz des GetRoadRunnable
+</span><span style="color:#008000"></span>	<span style="color:#00f">public</span> GetRoadRunnable(Activity activity, ArrayList&lt;GeoPoint&gt; wayPoints, GetRoadResponseListener responseListener) {
+		<span style="color:#00f">this</span>.activity = activity;
+		<span style="color:#00f">this</span>.wayPoints = wayPoints;
+		<span style="color:#00f">this</span>.responseListener = responseListener;
+	}
 
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-		<span style="color:#75715e">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
-</span><span style="color:#75715e"></span>		RoadManager roadManager <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> OSRMRoadManager<span style="color:#f92672">(</span>activity<span style="color:#f92672">);</span>
-		<span style="color:#75715e">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben übergeben wurden.
-</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">final</span> Road road <span style="color:#f92672">=</span> roadManager<span style="color:#f92672">.</span><span style="color:#a6e22e">getRoad</span><span style="color:#f92672">(</span>wayPoints<span style="color:#f92672">);</span>
+	@Override
+	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> run() {
+		<span style="color:#008000">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
+</span><span style="color:#008000"></span>		RoadManager roadManager = <span style="color:#00f">new</span> OSRMRoadManager(activity);
+		<span style="color:#008000">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben übergeben wurden.
+</span><span style="color:#008000"></span>		<span style="color:#00f">final</span> Road road = roadManager.getRoad(wayPoints);
 
-		<span style="color:#75715e">// Führt den Code innerhalb des run() {} Blocks am UI Thread aus. 
-</span><span style="color:#75715e"></span>		<span style="color:#75715e">// UI Elemente können nur auf diesem Thread manipuliert werden.
-</span><span style="color:#75715e"></span>		activity<span style="color:#f92672">.</span><span style="color:#a6e22e">runOnUiThread</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Runnable<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-			<span style="color:#a6e22e">@Override</span>
-			<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-				<span style="color:#75715e">// Ruft die onResponse() des ResponseListeners auf
-</span><span style="color:#75715e"></span>				responseListener<span style="color:#f92672">.</span><span style="color:#a6e22e">onResponse</span><span style="color:#f92672">(</span>road<span style="color:#f92672">);</span>
-			<span style="color:#f92672">}</span>
-		<span style="color:#f92672">});</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+		<span style="color:#008000">// Führt den Code innerhalb des run() {} Blocks am UI Thread aus. 
+</span><span style="color:#008000"></span>		<span style="color:#008000">// UI Elemente können nur auf diesem Thread manipuliert werden.
+</span><span style="color:#008000"></span>		activity.runOnUiThread(<span style="color:#00f">new</span> Runnable() {
+			@Override
+			<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> run() {
+				<span style="color:#008000">// Ruft die onResponse() des ResponseListeners auf
+</span><span style="color:#008000"></span>				responseListener.onResponse(road);
+			}
+		});
+	}
+}</code></pre></div></li>
 
 <li><p>Öffne das <code>MapFragment</code>.</p></li>
 
 <li><p>Lösche die folgenden Zeilen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Die folgenden zwei Zeilen werden benötigt um HTTP Requests am Main Thread abzusetzen.
-</span><span style="color:#75715e">// Mehr dazu und wie man es besser macht im Abschnitt &#34;Bonus: Verbesserungen&#34; der Anleitung.
-</span><span style="color:#75715e"></span>StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">ThreadPolicy</span> policy <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">ThreadPolicy</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">permitAll</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
-StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThreadPolicy</span><span style="color:#f92672">(</span>policy<span style="color:#f92672">);</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Die folgenden zwei Zeilen werden benötigt um HTTP Requests am Main Thread abzusetzen.
+</span><span style="color:#008000">// Mehr dazu und wie man es besser macht im Abschnitt &#34;Bonus: Verbesserungen&#34; der Anleitung.
+</span><span style="color:#008000"></span>StrictMode.ThreadPolicy policy = <span style="color:#00f">new</span> StrictMode.ThreadPolicy.Builder().permitAll().build();
+StrictMode.setThreadPolicy(policy);
 
-<span style="color:#75715e">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
-</span><span style="color:#75715e"></span>RoadManager roadManager <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> OSRMRoadManager<span style="color:#f92672">(</span>getContext<span style="color:#f92672">());</span>
-<span style="color:#75715e">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben zur Liste hinzugefügt wurden.
-</span><span style="color:#75715e">// Diese methode macht im Hintergrund einen HTTP Request am Main Thread.
-</span><span style="color:#75715e"></span>Road road <span style="color:#f92672">=</span> roadManager<span style="color:#f92672">.</span><span style="color:#a6e22e">getRoad</span><span style="color:#f92672">(</span>geoPoints<span style="color:#f92672">);</span></code></pre></div></li>
+<span style="color:#008000">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
+</span><span style="color:#008000"></span>RoadManager roadManager = <span style="color:#00f">new</span> OSRMRoadManager(getContext());
+<span style="color:#008000">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben zur Liste hinzugefügt wurden.
+</span><span style="color:#008000">// Diese methode macht im Hintergrund einen HTTP Request am Main Thread.
+</span><span style="color:#008000"></span>Road road = roadManager.getRoad(geoPoints);</code></pre></div></li>
 
 <li><p>Lösche außerdem die Zeile <code>mapView.getController().zoomTo(6.0);</code> weiter oben in der Methode.</p></li>
 
 <li><p>Füge den folgenden Code nach der <code>for</code>-Schleife ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Erstellt ein neues GetRoadRunnable
-</span><span style="color:#75715e"></span>Runnable getRoadRunnable <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> GetRoadRunnable<span style="color:#f92672">(</span>getActivity<span style="color:#f92672">(),</span> geoPoints<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> GetRoadResponseListener<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onResponse</span><span style="color:#f92672">(</span>Road road<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#75715e">// Dieser Code wird ausgeführt, sobald eine Antwort verfügbar ist.
-</span><span style="color:#75715e"></span>	<span style="color:#f92672">}</span>
-<span style="color:#f92672">});</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Erstellt ein neues GetRoadRunnable
+</span><span style="color:#008000"></span>Runnable getRoadRunnable = <span style="color:#00f">new</span> GetRoadRunnable(getActivity(), geoPoints, <span style="color:#00f">new</span> GetRoadResponseListener() {
+	@Override
+	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onResponse(Road road) {
+		<span style="color:#008000">// Dieser Code wird ausgeführt, sobald eine Antwort verfügbar ist.
+</span><span style="color:#008000"></span>	}
+});
         
-<span style="color:#75715e">// Erstellt einen neuen Thread mit dem oben erstellten Runnable und führt diesen aus.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">new</span> Thread<span style="color:#f92672">(</span>getRoadRunnable<span style="color:#f92672">).</span><span style="color:#a6e22e">start</span><span style="color:#f92672">();</span></code></pre></div></li>
+<span style="color:#008000">// Erstellt einen neuen Thread mit dem oben erstellten Runnable und führt diesen aus.
+</span><span style="color:#008000"></span><span style="color:#00f">new</span> Thread(getRoadRunnable).start();</code></pre></div></li>
 
 <li><p>Kopiere alle Zeilen unter diesem Code (siehe Codeblock unten) in die <code>onResponse()</code> Methode.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Erstellt die Linie, die dann auf der Karte angezeigt wird.
-</span><span style="color:#75715e"></span>Polyline roadOverlay <span style="color:#f92672">=</span> RoadManager<span style="color:#f92672">.</span><span style="color:#a6e22e">buildRoadOverlay</span><span style="color:#f92672">(</span>road<span style="color:#f92672">,</span> Color<span style="color:#f92672">.</span><span style="color:#a6e22e">BLACK</span><span style="color:#f92672">,</span> 6<span style="color:#f92672">);</span>
-<span style="color:#75715e">// Zeigt die Linie auf der Karte an.
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">getOverlays</span><span style="color:#f92672">().</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>roadOverlay<span style="color:#f92672">);</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Erstellt die Linie, die dann auf der Karte angezeigt wird.
+</span><span style="color:#008000"></span>Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);
+<span style="color:#008000">// Zeigt die Linie auf der Karte an.
+</span><span style="color:#008000"></span>mapView.getOverlays().add(roadOverlay);
 
-<span style="color:#75715e">// Erlaubt der Karte nicht weiter als auf dieses Level zu zoomen
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">setMaxZoomLevel</span><span style="color:#f92672">(</span>5<span style="color:#f92672">.</span><span style="color:#a6e22e">0</span><span style="color:#f92672">);</span>
-<span style="color:#75715e">// Zentriert die Karte über der Route
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">zoomToBoundingBox</span><span style="color:#f92672">(</span>roadOverlay<span style="color:#f92672">.</span><span style="color:#a6e22e">getBounds</span><span style="color:#f92672">(),</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> 150<span style="color:#f92672">);</span>
-<span style="color:#75715e">// Aktualisiert die MapView, damit die Overlays richtig angezeigt werden.
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">invalidate</span><span style="color:#f92672">();</span></code></pre></div></li>
+<span style="color:#008000">// Erlaubt der Karte nicht weiter als auf dieses Level zu zoomen
+</span><span style="color:#008000"></span>mapView.setMaxZoomLevel(5.0);
+<span style="color:#008000">// Zentriert die Karte über der Route
+</span><span style="color:#008000"></span>mapView.zoomToBoundingBox(roadOverlay.getBounds(), <span style="color:#00f">true</span>, 150);
+<span style="color:#008000">// Aktualisiert die MapView, damit die Overlays richtig angezeigt werden.
+</span><span style="color:#008000"></span>mapView.invalidate();</code></pre></div></li>
 </ol>
 
 <h2 id="timeout-und-serverless-function-warmup">Timeout und Serverless Function Warmup</h2>
@@ -394,35 +394,35 @@ StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThr
 <p>Der Endpunkt, von dem die Route abgefragt wird, ist einer sogenannten &ldquo;Serverless Function&rdquo; gehosted. Das bedeutet, dass der Cloud-Anbieter, der für die Funktion verantwortlich ist, die benötigten Ressourcen dynamisch verwaltet. Werden keine Anfragen zum Endpunkt gemacht, wird der Code auch nicht ausgeführt. Deshalb muss das System erst &ldquo;hochgefahren&rdquo; werden bevor ein Request bearbeitet werden kann. Das bezeichnet man als &ldquo;cold start&rdquo;. Wird kurz danach ein zweiter Request geschickt, sind die Ressourcen noch vorhanden und der Request kann deutlich schneller verarbeitet werden. Das ist der Grund, warum der erste Request um die Route abzufragen momentan noch oft fehlschlägt.</p>
 
 <p>Um das Problem zu lösen kannst du das sogenannte &ldquo;Timeout&rdquo; bei <code>Volley</code> (die Bibliothek mit der der Request abgesetzt wird) erhöhen. Das Timeout definiert wieviel Zeit vergehen darf, bevor man davon ausgeht, dass keine Antwort mehr kommt und der Request abgebrochen wird. Standardmäßig liegt das Timeout bei <code>Volley</code> bei 5 Sekunden. Füge den folgenden Code im <code>MapFragment</code> hinzu, bevor der <code>stringRequest</code> zur <code>requestQueue</code> hinzugefügt wird.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Erhöht das Timeout für den Request auf 15 Sekunden
-</span><span style="color:#75715e"></span>stringRequest<span style="color:#f92672">.</span><span style="color:#a6e22e">setRetryPolicy</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> DefaultRetryPolicy<span style="color:#f92672">(</span>
-	15000<span style="color:#f92672">,</span> <span style="color:#75715e">// Das Timeout in Millisekunden
-</span><span style="color:#75715e"></span>	1<span style="color:#f92672">,</span> <span style="color:#75715e">// Wie oft der Request wiederholt werden soll, wenn er fehlschlägt
-</span><span style="color:#75715e"></span>	1 <span style="color:#75715e">// Mit dieser Zahl wird das Timeout bei jedem neuen Versuch multipliziert
-</span><span style="color:#75715e"></span><span style="color:#f92672">));</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Erhöht das Timeout für den Request auf 15 Sekunden
+</span><span style="color:#008000"></span>stringRequest.setRetryPolicy(<span style="color:#00f">new</span> DefaultRetryPolicy(
+	15000, <span style="color:#008000">// Das Timeout in Millisekunden
+</span><span style="color:#008000"></span>	1, <span style="color:#008000">// Wie oft der Request wiederholt werden soll, wenn er fehlschlägt
+</span><span style="color:#008000"></span>	1 <span style="color:#008000">// Mit dieser Zahl wird das Timeout bei jedem neuen Versuch multipliziert
+</span><span style="color:#008000"></span>));</code></pre></div>
 <p>Um dem oben beschriebenen &ldquo;cold start&rdquo; vorzubeugen, kann man zum Beispiel schon beim Start der App einen leeren Request an die Serverless Function schicken um sie zu starten. Das ist wieder eine Aufgabe, den du allein probieren kannst, wenn du möchtest. Setze dazu im <code>PhraseInputFragment</code> einen Request zum Server ab, bei dem du das Ergebnis ignorierst. Im folgenden ist beschrieben, wie ich es gelöst habe.</p>
 
 <ol>
 <li><p>Öffne das <code>PhraseInputFragment.java</code>.</p></li>
 
 <li><p>Erstelle mit dem folgenden Code eine neue Methode.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">warmUpServerlessFunction</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Erstellt eine Queue, die alle Requests ausführt, die zu ihr hinzugefügt werden
-</span><span style="color:#75715e"></span>	RequestQueue requestQueue <span style="color:#f92672">=</span> Volley<span style="color:#f92672">.</span><span style="color:#a6e22e">newRequestQueue</span><span style="color:#f92672">(</span>getContext<span style="color:#f92672">());</span>
-	<span style="color:#75715e">// Die URL für den Request. Diese beinhaltet keine phrase, da die Function nur gestartet werden soll;
-</span><span style="color:#75715e"></span>	String url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.map-reactions.ksick.dev/v0-1/route?phrase=wakeup&#34;</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> <span style="color:#2b91af">void</span> warmUpServerlessFunction() {
+	<span style="color:#008000">// Erstellt eine Queue, die alle Requests ausführt, die zu ihr hinzugefügt werden
+</span><span style="color:#008000"></span>	RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+	<span style="color:#008000">// Die URL für den Request. Diese beinhaltet keine phrase, da die Function nur gestartet werden soll;
+</span><span style="color:#008000"></span>	String url = <span style="color:#a31515">&#34;https://api.map-reactions.ksick.dev/v0-1/route?phrase=wakeup&#34;</span>;
 
-	<span style="color:#75715e">// Erstellt den Request, der später abgesetzt werden soll
-</span><span style="color:#75715e"></span>	StringRequest blankRequest <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringRequest<span style="color:#f92672">(</span>Request<span style="color:#f92672">.</span><span style="color:#a6e22e">Method</span><span style="color:#f92672">.</span><span style="color:#a6e22e">GET</span><span style="color:#f92672">,</span> url<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> Response<span style="color:#f92672">.</span><span style="color:#a6e22e">Listener</span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;()</span> <span style="color:#f92672">{</span>
-		<span style="color:#a6e22e">@Override</span>
-		<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onResponse</span><span style="color:#f92672">(</span>String response<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-			<span style="color:#75715e">// Das Ergebnis wird ignoriert
-</span><span style="color:#75715e"></span>		<span style="color:#f92672">}</span>
-	<span style="color:#f92672">},</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">);</span>
+	<span style="color:#008000">// Erstellt den Request, der später abgesetzt werden soll
+</span><span style="color:#008000"></span>	StringRequest blankRequest = <span style="color:#00f">new</span> StringRequest(Request.Method.GET, url, <span style="color:#00f">new</span> Response.Listener&lt;String&gt;() {
+		@Override
+		<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onResponse(String response) {
+			<span style="color:#008000">// Das Ergebnis wird ignoriert
+</span><span style="color:#008000"></span>		}
+	}, <span style="color:#00f">null</span>);
 
-	<span style="color:#75715e">// Fügt den Request zur RequestQueue hinzu um ihn abzusetzen
-</span><span style="color:#75715e"></span>	requestQueue<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>blankRequest<span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+	<span style="color:#008000">// Fügt den Request zur RequestQueue hinzu um ihn abzusetzen
+</span><span style="color:#008000"></span>	requestQueue.add(blankRequest);
+}</code></pre></div></li>
 
 <li><p>Rufe die neue Methode ganz unten in der <code>onViewCreated()</code> auf.</p></li>
 </ol>
@@ -507,8 +507,8 @@ StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThr
 <li><p>In dieser App brauchst du die <code>colorAccent</code> nicht, deshalb kannst du sie löschen.</p></li>
 
 <li><p>Setze für die anderen beiden Farben die folgenden Werte.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;color</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;colorPrimary&#34;</span><span style="color:#f92672">&gt;</span>#0c27ba<span style="color:#f92672">&lt;/color&gt;</span>
-<span style="color:#f92672">&lt;color</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;colorPrimaryDark&#34;</span><span style="color:#f92672">&gt;</span>#071872<span style="color:#f92672">&lt;/color&gt;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;color name=<span style="color:#a31515">&#34;colorPrimary&#34;</span>&gt;#0c27ba&lt;/color&gt;
+&lt;color name=<span style="color:#a31515">&#34;colorPrimaryDark&#34;</span>&gt;#071872&lt;/color&gt;</code></pre></div></li>
 
 <li><p>Öffne die Datei <code>res/values/styles.xml</code> und lösche die Zeile <code>&lt;item name=&quot;colorAccent&quot;&gt;@color/colorAccent&lt;/item&gt;</code>.</p></li>
 </ol>
@@ -533,18 +533,18 @@ StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThr
 <li><p>Öffne die Datei und klicke rechts oben bei &ldquo;Design&rdquo; auf &ldquo;Code&rdquo;.</p></li>
 
 <li><p>Füge den folgenden Code ein. Dieser erstellt einen linearen Verlauf im -45° Winkel von der Farbe <code>colorPrimary</code> zur <code>colorPrimaryTransparent</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#f92672">&lt;selector</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span><span style="color:#f92672">&gt;</span>
-	<span style="color:#f92672">&lt;item&gt;</span>
-		<span style="color:#f92672">&lt;shape&gt;</span>
-			<span style="color:#f92672">&lt;gradient</span>
-				<span style="color:#a6e22e">android:angle=</span><span style="color:#e6db74">&#34;-45&#34;</span>
-				<span style="color:#a6e22e">android:startColor=</span><span style="color:#e6db74">&#34;@color/colorPrimaryDark&#34;</span>
-				<span style="color:#a6e22e">android:endColor=</span><span style="color:#e6db74">&#34;@color/colorPrimaryTransparent&#34;</span>
-				<span style="color:#a6e22e">android:type=</span><span style="color:#e6db74">&#34;linear&#34;</span> <span style="color:#f92672">/&gt;</span>
-		<span style="color:#f92672">&lt;/shape&gt;</span>
-	<span style="color:#f92672">&lt;/item&gt;</span>
-<span style="color:#f92672">&lt;/selector&gt;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+&lt;selector xmlns:android=<span style="color:#a31515">&#34;http://schemas.android.com/apk/res/android&#34;</span>&gt;
+	&lt;item&gt;
+		&lt;shape&gt;
+			&lt;gradient
+				android:angle=<span style="color:#a31515">&#34;-45&#34;</span>
+				android:startColor=<span style="color:#a31515">&#34;@color/colorPrimaryDark&#34;</span>
+				android:endColor=<span style="color:#a31515">&#34;@color/colorPrimaryTransparent&#34;</span>
+				android:type=<span style="color:#a31515">&#34;linear&#34;</span> /&gt;
+		&lt;/shape&gt;
+	&lt;/item&gt;
+&lt;/selector&gt;</code></pre></div></li>
 
 <li><p>Wechsle wieder zum <code>fragment_phrase_input.xml</code> und suche in der <code>Palette</code> nach &ldquo;View&rdquo;.</p></li>
 
@@ -565,43 +565,43 @@ StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThr
 <li><p>In dem Bild oben siehst du, dass das <code>EditText</code> einen weißen Hintergrund mit runden Ecken hat. Wenn du ganz genau hinsiehst, erkennst du auch, dass es einen ganz dünnen blauen Rahmen hat. Erstelle ein neues <code>Drawable Resource File</code> namens &ldquo;edittext_background&rdquo;.</p></li>
 
 <li><p>Füge den folgenden Code ein um ein weißes Rechteck mit runden Ecken und einem blauen Rahmen zu erstellen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#75715e">&lt;!-- Definiert die Form, also ein Rechteck --&gt;</span>
-<span style="color:#f92672">&lt;shape</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-	<span style="color:#a6e22e">android:shape=</span><span style="color:#e6db74">&#34;rectangle&#34;</span><span style="color:#f92672">&gt;</span>
-	<span style="color:#75715e">&lt;!-- Definiert die Farbe, in diesem Fall weiß --&gt;</span>
-	<span style="color:#f92672">&lt;solid</span> <span style="color:#a6e22e">android:color=</span><span style="color:#e6db74">&#34;@android:color/white&#34;</span> <span style="color:#f92672">/&gt;</span>
-	<span style="color:#75715e">&lt;!-- Definiert den Rahmen in der Farbe colorPrimaryDark und mit der Stärke 1dp --&gt;</span>
-	<span style="color:#f92672">&lt;stroke</span>
-		<span style="color:#a6e22e">android:width=</span><span style="color:#e6db74">&#34;1dp&#34;</span>
-		<span style="color:#a6e22e">android:color=</span><span style="color:#e6db74">&#34;@color/colorPrimaryDark&#34;</span> <span style="color:#f92672">/&gt;</span>
-	<span style="color:#75715e">&lt;!-- Legt den Radius der Ecken fest --&gt;</span>
-	<span style="color:#f92672">&lt;corners</span>
-		<span style="color:#a6e22e">android:bottomLeftRadius=</span><span style="color:#e6db74">&#34;32dp&#34;</span>
-		<span style="color:#a6e22e">android:bottomRightRadius=</span><span style="color:#e6db74">&#34;32dp&#34;</span>
-		<span style="color:#a6e22e">android:topLeftRadius=</span><span style="color:#e6db74">&#34;32dp&#34;</span>
-		<span style="color:#a6e22e">android:topRightRadius=</span><span style="color:#e6db74">&#34;32dp&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/shape&gt;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#008000">&lt;!-- Definiert die Form, also ein Rechteck --&gt;</span>
+&lt;shape xmlns:android=<span style="color:#a31515">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+	android:shape=<span style="color:#a31515">&#34;rectangle&#34;</span>&gt;
+	<span style="color:#008000">&lt;!-- Definiert die Farbe, in diesem Fall weiß --&gt;</span>
+	&lt;solid android:color=<span style="color:#a31515">&#34;@android:color/white&#34;</span> /&gt;
+	<span style="color:#008000">&lt;!-- Definiert den Rahmen in der Farbe colorPrimaryDark und mit der Stärke 1dp --&gt;</span>
+	&lt;stroke
+		android:width=<span style="color:#a31515">&#34;1dp&#34;</span>
+		android:color=<span style="color:#a31515">&#34;@color/colorPrimaryDark&#34;</span> /&gt;
+	<span style="color:#008000">&lt;!-- Legt den Radius der Ecken fest --&gt;</span>
+	&lt;corners
+		android:bottomLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+		android:bottomRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+		android:topLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+		android:topRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span> /&gt;
+&lt;/shape&gt;</code></pre></div></li>
 
 <li><p>Der Hintergrund des <code>Button</code> soll genau gleich aussehen, nur mit umgekehrten Farben. Erstelle deshalb gleich ein zweites <code>Drawable Resource File</code> mit dem Namen <code>button_background</code> und dem folgenden Inhalt.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#75715e">&lt;!-- Definiert die Form, also ein Rechteck --&gt;</span>
-<span style="color:#f92672">&lt;shape</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-	<span style="color:#a6e22e">android:shape=</span><span style="color:#e6db74">&#34;rectangle&#34;</span><span style="color:#f92672">&gt;</span>
-	<span style="color:#75715e">&lt;!-- Definiert die Farbe, in diesem Fall colorPrimaryDark --&gt;</span>
-	<span style="color:#f92672">&lt;solid</span> <span style="color:#a6e22e">android:color=</span><span style="color:#e6db74">&#34;@color/colorPrimaryDark&#34;</span> <span style="color:#f92672">/&gt;</span>
-	<span style="color:#75715e">&lt;!-- Definiert den Rahmen in der Farbe Weiß und mit der Stärke 1dp --&gt;</span>
-	<span style="color:#f92672">&lt;stroke</span>
-		<span style="color:#a6e22e">android:width=</span><span style="color:#e6db74">&#34;1dp&#34;</span>
-		<span style="color:#a6e22e">android:color=</span><span style="color:#e6db74">&#34;@android:color/white&#34;</span> <span style="color:#f92672">/&gt;</span>
-	<span style="color:#75715e">&lt;!-- Legt den Radius der Ecken fest --&gt;</span>
-	<span style="color:#f92672">&lt;corners</span>
-		<span style="color:#a6e22e">android:bottomLeftRadius=</span><span style="color:#e6db74">&#34;32dp&#34;</span>
-		<span style="color:#a6e22e">android:bottomRightRadius=</span><span style="color:#e6db74">&#34;32dp&#34;</span>
-		<span style="color:#a6e22e">android:topLeftRadius=</span><span style="color:#e6db74">&#34;32dp&#34;</span>
-		<span style="color:#a6e22e">android:topRightRadius=</span><span style="color:#e6db74">&#34;32dp&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/shape&gt;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#008000">&lt;!-- Definiert die Form, also ein Rechteck --&gt;</span>
+&lt;shape xmlns:android=<span style="color:#a31515">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+	android:shape=<span style="color:#a31515">&#34;rectangle&#34;</span>&gt;
+	<span style="color:#008000">&lt;!-- Definiert die Farbe, in diesem Fall colorPrimaryDark --&gt;</span>
+	&lt;solid android:color=<span style="color:#a31515">&#34;@color/colorPrimaryDark&#34;</span> /&gt;
+	<span style="color:#008000">&lt;!-- Definiert den Rahmen in der Farbe Weiß und mit der Stärke 1dp --&gt;</span>
+	&lt;stroke
+		android:width=<span style="color:#a31515">&#34;1dp&#34;</span>
+		android:color=<span style="color:#a31515">&#34;@android:color/white&#34;</span> /&gt;
+	<span style="color:#008000">&lt;!-- Legt den Radius der Ecken fest --&gt;</span>
+	&lt;corners
+		android:bottomLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+		android:bottomRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+		android:topLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+		android:topRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span> /&gt;
+&lt;/shape&gt;</code></pre></div></li>
 
 <li><p>Öffne nun das <code>fragment_phrase_input</code> und wähle das <code>EditText</code> aus.</p></li>
 
@@ -648,7 +648,7 @@ StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThr
 </ol>
 
 <p>Nun hast du das <code>PhraseInputFragment</code> (wie ich finde) schon um einiges verschönert. Eine kleine Verbesserung ist allerdings noch offen. Dir wird schon aufgefallen sein, dass der <code>Button</code> immer verdeckt wird, wenn sich die Tastatur öffnet. Gehe deshalb zum <code>AndroidManifest.xml</code> und füge in dem <code>&lt;activity&gt;</code> Tag der <code>MainActivity</code> das folgende Attribut hinzu.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">android:windowSoftInputMode=&#34;stateHidden|adjustResize&#34;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">android:windowSoftInputMode=&#34;stateHidden|adjustResize&#34;</code></pre></div>
 <h4 id="schriftart">Schriftart</h4>
 
 <p>Auch die Schrift ist ein wichtiger Punkt, um das Design einer App zu verbessern. Ich habe für die App eine Kombination aus den Schriften <a href="https://fonts.google.com/specimen/Roboto+Condensed" target="_blank">Roboto Condensed</a> und <a href="https://fonts.google.com/specimen/Cabin" target="_blank">Cabin</a> verwendet. Natürlich kannst du auch jede andere Schriftart mit den folgenden Schritten verwenden.</p>
@@ -792,51 +792,51 @@ StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThr
 <li><p>Öffne das <code>MapFragment</code>.</p></li>
 
 <li><p>Erstelle die folgenden 2 Member-Variablen unter <code>private TextView textViewInfo;</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> TextView textViewRoute<span style="color:#f92672">;</span>
-<span style="color:#66d9ef">private</span> Button buttonTryAgain<span style="color:#f92672">;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> TextView textViewRoute;
+<span style="color:#00f">private</span> Button buttonTryAgain;</code></pre></div></li>
 
 <li><p>Binde die beiden Komponenten an die Variablen. Füge dazu die folgenden Zeilen zur <code>onViewCreated()</code> Methode hinzu.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">textViewRoute <span style="color:#f92672">=</span> view<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">textview_route</span><span style="color:#f92672">);</span>
-buttonTryAgain <span style="color:#f92672">=</span> view<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">button_try_again</span><span style="color:#f92672">);</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">textViewRoute = view.findViewById(R.id.textview_route);
+buttonTryAgain = view.findViewById(R.id.button_try_again);</code></pre></div></li>
 
 <li><p>In der <code>textview_route</code> sollen die Orte der Route im Format &ldquo;[Ort 1, Ort 2, Ort 3, &hellip;]&rdquo; angezeigt werden. Erstelle dazu eine neue Methode <code>showRouteSummary()</code> mit dem folgenden Inhalt.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">showRouteSummary</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Zeigt den eingegebenen Satz in der Info-TextView an
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">// Durch das String.format(...) werden vor und nach dem Satz Anführungszeichen (&#34;) angezeigt
-</span><span style="color:#75715e"></span>	textViewInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">setText</span><span style="color:#f92672">(</span>String<span style="color:#f92672">.</span><span style="color:#a6e22e">format</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;\&#34;%s\&#34;&#34;</span><span style="color:#f92672">,</span> phrase<span style="color:#f92672">));</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> <span style="color:#2b91af">void</span> showRouteSummary() {
+	<span style="color:#008000">// Zeigt den eingegebenen Satz in der Info-TextView an
+</span><span style="color:#008000"></span>	<span style="color:#008000">// Durch das String.format(...) werden vor und nach dem Satz Anführungszeichen (&#34;) angezeigt
+</span><span style="color:#008000"></span>	textViewInfo.setText(String.format(<span style="color:#a31515">&#34;\&#34;%s\&#34;&#34;</span>, phrase));
 
-	<span style="color:#75715e">// Erstellt einen neuen StringBuilder um die Route im Format [Ort 1, Ort 2, ...] zusammenzusetzen
-</span><span style="color:#75715e"></span>	StringBuilder routeStringBuilder <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuilder<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;[&#34;</span><span style="color:#f92672">);</span>
+	<span style="color:#008000">// Erstellt einen neuen StringBuilder um die Route im Format [Ort 1, Ort 2, ...] zusammenzusetzen
+</span><span style="color:#008000"></span>	StringBuilder routeStringBuilder = <span style="color:#00f">new</span> StringBuilder(<span style="color:#a31515">&#34;[&#34;</span>);
 
-	<span style="color:#75715e">// Iteriert über alle Orte in der Route
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Place place <span style="color:#f92672">:</span> route<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#75715e">// Überprüft ob die Länge des StringBuilders größer als 1 (also mindestens 2) ist
-</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>routeStringBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-			<span style="color:#75715e">// Wenn ja, werde ein Beistrich und ein Leerzeichen vor dem nächsten Ort hinzugefügt
-</span><span style="color:#75715e"></span>			routeStringBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;, &#34;</span><span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-		<span style="color:#75715e">// Hängt den Namen des Ortes an den StringBuilder an
-</span><span style="color:#75715e"></span>		routeStringBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>place<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
-	<span style="color:#f92672">}</span>
+	<span style="color:#008000">// Iteriert über alle Orte in der Route
+</span><span style="color:#008000"></span>	<span style="color:#00f">for</span> (Place place : route) {
+		<span style="color:#008000">// Überprüft ob die Länge des StringBuilders größer als 1 (also mindestens 2) ist
+</span><span style="color:#008000"></span>		<span style="color:#00f">if</span> (routeStringBuilder.length() &gt; 1) {
+			<span style="color:#008000">// Wenn ja, werde ein Beistrich und ein Leerzeichen vor dem nächsten Ort hinzugefügt
+</span><span style="color:#008000"></span>			routeStringBuilder.append(<span style="color:#a31515">&#34;, &#34;</span>);
+        }
+		<span style="color:#008000">// Hängt den Namen des Ortes an den StringBuilder an
+</span><span style="color:#008000"></span>		routeStringBuilder.append(place.getName());
+	}
 
-	<span style="color:#75715e">// Hängt die schließende Klammer an den StringBuilder an
-</span><span style="color:#75715e"></span>	routeStringBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;]&#34;</span><span style="color:#f92672">);</span>
-	<span style="color:#75715e">// Setzt den String des StringBuilders als Text in die TextView, die die Route anzeigt
-</span><span style="color:#75715e"></span>	textViewRoute<span style="color:#f92672">.</span><span style="color:#a6e22e">setText</span><span style="color:#f92672">(</span>routeStringBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+	<span style="color:#008000">// Hängt die schließende Klammer an den StringBuilder an
+</span><span style="color:#008000"></span>	routeStringBuilder.append(<span style="color:#a31515">&#34;]&#34;</span>);
+	<span style="color:#008000">// Setzt den String des StringBuilders als Text in die TextView, die die Route anzeigt
+</span><span style="color:#008000"></span>	textViewRoute.setText(routeStringBuilder.toString());
+}</code></pre></div></li>
 
 <li><p>Rufe die neu erstellte Methode im <code>onResponse()</code> Block der <code>loadRoute()</code> Methode auf. Ersetze dazu die Zeile <code>textViewInfo.setText(phrase);</code> mit <code>showRouteSummary();</code>.</p></li>
 
 <li><p>Wenn der <code>button_try_again</code> geklickt wird, soll die App einen Schritt zurück zum <code>PhraseInputFragment</code> navigieren. Füge dazu den folgenden Code in die <code>onViewCreated()</code> Methode unter die Zeile <code>buttonTryAgain = view.findViewById(R.id.button_try_again);</code> ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Setzt einen Klick Listener auf den Button, um über Klicks informiert zu werden
-</span><span style="color:#75715e"></span>buttonTryAgain<span style="color:#f92672">.</span><span style="color:#a6e22e">setOnClickListener</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> View<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>View view<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#75715e">// Dieser code wird ausgeführt, wenn der Benutzer auf den Button klickt
-</span><span style="color:#75715e"></span>		<span style="color:#75715e">// Simuliert einen Klick auf die Zurück-Taste
-</span><span style="color:#75715e"></span>		getActivity<span style="color:#f92672">().</span><span style="color:#a6e22e">onBackPressed</span><span style="color:#f92672">();</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">});</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Setzt einen Klick Listener auf den Button, um über Klicks informiert zu werden
+</span><span style="color:#008000"></span>buttonTryAgain.setOnClickListener(<span style="color:#00f">new</span> View.OnClickListener() {
+	@Override
+	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onClick(View view) {
+		<span style="color:#008000">// Dieser code wird ausgeführt, wenn der Benutzer auf den Button klickt
+</span><span style="color:#008000"></span>		<span style="color:#008000">// Simuliert einen Klick auf die Zurück-Taste
+</span><span style="color:#008000"></span>		getActivity().onBackPressed();
+	}
+});</code></pre></div></li>
 </ol>
 
 <h4 id="karte">Karte</h4>
@@ -850,22 +850,22 @@ buttonTryAgain <span style="color:#f92672">=</span> view<span style="color:#f926
 
 <ol>
 <li><p>Füge die folgende Zeile unter der Zeile <code>ArrayList&lt;GeoPoint&gt; geoPoints = new ArrayList&lt;&gt;();</code> und über der <code>for</code>-Schleife ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Erstellt eine Liste mit SpeechBalloonOverlay Objekten. Diese wird später mit den Markern befüllt.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">final</span> List<span style="color:#f92672">&lt;</span>SpeechBalloonOverlay<span style="color:#f92672">&gt;</span> markers <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Erstellt eine Liste mit SpeechBalloonOverlay Objekten. Diese wird später mit den Markern befüllt.
+</span><span style="color:#008000"></span><span style="color:#00f">final</span> List&lt;SpeechBalloonOverlay&gt; markers = <span style="color:#00f">new</span> ArrayList&lt;&gt;();</code></pre></div></li>
 
 <li><p>Ersetze die Zeile <code>mapView.getOverlays().add(textOverlay);</code> mit der folgenden Zeile.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Fügt das Overlay zur Liste der Marker hinzu
-</span><span style="color:#75715e"></span>markers<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>textOverlay<span style="color:#f92672">);</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Fügt das Overlay zur Liste der Marker hinzu
+</span><span style="color:#008000"></span>markers.add(textOverlay);</code></pre></div></li>
 
 <li><p>Füge den folgenden Code unter der Zeile <code>mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150);</code> ein, um die Marker erst nach der Route/Straße zu zeichnen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Zeigt die Marker auf der Karte an
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">getOverlays</span><span style="color:#f92672">().</span><span style="color:#a6e22e">addAll</span><span style="color:#f92672">(</span>markers<span style="color:#f92672">);</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Zeigt die Marker auf der Karte an
+</span><span style="color:#008000"></span>mapView.getOverlays().addAll(markers);</code></pre></div></li>
 </ol></li>
 
 <li><p>Ändere nun die Hintergrundfarbe der Marker, indem du in der  <code>for</code>-Schleife in der Zeile <code>backgroundPaint.setColor(Color.BLACK)</code> den Parameter <code>Color.BLACK</code> auf <code>getResources().getColor(R.color.colorPrimary)</code> änderst.</p></li>
 
 <li><p>Ändere mit der folgenden Zeile die Schriftart des Textes.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">textPaint<span style="color:#f92672">.</span><span style="color:#a6e22e">setTypeface</span><span style="color:#f92672">(</span>ResourcesCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">getFont</span><span style="color:#f92672">(</span>getContext<span style="color:#f92672">(),</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">font</span><span style="color:#f92672">.</span><span style="color:#a6e22e">cabin</span><span style="color:#f92672">));</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">textPaint.setTypeface(ResourcesCompat.getFont(getContext(), R.font.cabin));</code></pre></div></li>
 </ol>
 
 <p>Gratuliere! Nun hast du auch diese Anleitung abgeschlossen und deine App sollte nun in etwa so aussehen. Du kannst natürlich noch selbst versuchen die App weiterzuentwickeln. Dabei kannst du neue Funktionen hinzufügen, die Farben der App ändern, sie in verschiedene Sprachen übersetzen, oder was dir sonst noch so einfällt. Deiner Kreativität sind hier keine Grenzen gesetzt ;-).</p>

@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -507,9 +507,9 @@
 
 
 <p>Die grauen Zeilen am Anfang des Files sehen wahrscheinlich ein wenig anders aus. Das macht aber nix, weil das ist ein Kommentar und Kommentare werden vom Compiler ignoriert. Man verwendet Kommentare, um etwas in sein Programm reinzuschreiben, das für Menschen wichtig ist, aber nicht für Computer. Du kannst das ausprobieren und in einer Zeile <em>außerhalb</em> eines Kommentars folgende Zeilen dazuschreiben:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">/*
-</span><span style="color:#75715e">Ich kann so schreiben wie ich bin. Du darfst.
-</span><span style="color:#75715e">*/</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">/*
+</span><span style="color:#008000">Ich kann so schreiben wie ich bin. Du darfst.
+</span><span style="color:#008000">*/</span></code></pre></div>
 <p>Wenn du jetzt aber die Zeichen <code>/*</code> und <code>*/</code> wegnimmst, dann wirst du sehen, dass der Text, den du geschrieben hast, rot unterstrichen ist und das bedeutet, dass der Compiler in deinem Java-Programm einen Fehler entdeckt hat. Also schließen wir daraus, dass mit <code>/*</code> ein Kommentar beginnt und so lange ist, bis die Zeichen <code>*/</code> vorkommen.</p>
 
 <h3 id="die-klasse-programmieren">Die Klasse programmieren</h3>
@@ -544,9 +544,9 @@
 <p>Du siehst nun, dass das Wort <code>JavaPlugin</code> rot unterstrichen ist und am Beginn der Zeile einen Hinweis bekommen hast. Das bedeutet, dass der Compiler einen Fehler gefunden hat (rot unterstrichen) und aber einen oder mehrere Lösungsvorschläge für dich hat (gelbe Glühbirne am Beginn der Zeile). Wenn du auf die Glühbirne klickst, bekommst du die Option angeboten, <strong>Add import org.bukkit.plugin.java.JavaPlugin</strong> und genau das wählst du aus. Damit sollte die Fehlermeldung verschwunden sein und ein paar Zeilen über der Zeile, die du gerade geschrieben hast, die Codezeile <code>import org.bukkit.plugin.java.JavaPlugin;</code> stehen.</p>
 
 <p>Somit hätten wir ein fast lauffähiges Plugin, das genau gar nix macht. Da das genau niemand braucht, werden wir dem Ding mal sagen, dass es bei Aufruf <code>Hello stranger</code> ausgeben soll. Dazu müssen wir eine <em>Methode</em> anlegen und das geht so: Als erstes klickst du in die Klasse <code>FirstPlugin</code>, das heißt, du platzierst den Cursor in die Zeile zwischen der geschwungenen Klammer auf und wieder zu.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FirstPlugin</span> <span style="color:#66d9ef">extends</span> JavaPlugin <span style="color:#f92672">{</span>
-    <span style="color:#75715e">// your cursor must be here
-</span><span style="color:#75715e"></span><span style="color:#f92672">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">FirstPlugin</span> <span style="color:#00f">extends</span> JavaPlugin {
+    <span style="color:#008000">// your cursor must be here
+</span><span style="color:#008000"></span>}</code></pre></div>
 <p>Also du klickst genau in die leere Zeile. Dann gehst du auf das Menü <strong>Source</strong> und wählst <strong>Insert Code&hellip;</strong> aus.</p>
 
 
@@ -629,8 +629,8 @@
 
 
 <p>Wenn du dann auf <strong>Generate</strong> klickst, siehst du in deiner Klasse eine erste <em>Methode</em>. In einer Methode legst du fest, was das Plugin machen soll. Dazu löschst du als erstes die Zeile mit <code>return super.onCommand(sender, command, label, args)</code> und schreibst stattdessen folgendes rein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello stranger&#34;</span><span style="color:#f92672">);</span>
-<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">sender.sendMessage(<span style="color:#a31515">&#34;Hello stranger&#34;</span>);
+<span style="color:#00f">return</span> <span style="color:#00f">true</span>;</code></pre></div>
 <p>Am Ende sollte deine Klasse genau so aussehen:</p>
 
 
@@ -847,19 +847,19 @@
 <p>Um dein Plugin auszuprobieren musst du im File-Explorer (Windows) oder Finder (Mac) in dein NetBeans Projekt-Directory reinsehen. Dort sollte sich nun ein weiteres Directory <code>dist</code> befinden, in dem sich wiederum ein File <code>FirstPlugin.jar</code> befinden sollte. Dieses nimmst du nun und bewegst es in das Directory <code>plugins</code> des Server-Directories, das du noch aus unserer ersten Episode kennst.</p>
 
 <p>Nun kannst du den Server starten. Als erstes überprüfen wir, ob das Plugin korrekt geladen wurde. Das sehen wir im Log des Servers, wenn er hochstartet:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Loading libraries, please wait...
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Starting minecraft server version 1.8.7
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Loading properties
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Default game type: SURVIVAL
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: This server is running CraftBukkit version git-Spigot-6d16e64-b105298 <span style="color:#f92672">(</span>MC: 1.8.7<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>Implementing API version 1.8.7-R0.1-SNAPSHOT<span style="color:#f92672">)</span>
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Debug logging is disabled
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Server Ping Player Sample Count: <span style="color:#ae81ff">12</span>
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Using <span style="color:#ae81ff">4</span> threads <span style="color:#66d9ef">for</span> Netty based IO
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Generating keypair
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Starting Minecraft server on *:25565
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Using default channel type
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: Set PluginClassLoader as parallel capable
-<span style="color:#f92672">[</span>20:49:34 INFO<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>FirstPlugin<span style="color:#f92672">]</span> Loading FirstPlugin v0.1.0
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Loading libraries, please wait...
+[20:49:34 INFO]: Starting minecraft server version 1.8.7
+[20:49:34 INFO]: Loading properties
+[20:49:34 INFO]: Default game type: SURVIVAL
+[20:49:34 INFO]: This server is running CraftBukkit version git-Spigot-6d16e64-b105298 (MC: 1.8.7) (Implementing API version 1.8.7-R0.1-SNAPSHOT)
+[20:49:34 INFO]: Debug logging is disabled
+[20:49:34 INFO]: Server Ping Player Sample Count: 12
+[20:49:34 INFO]: Using 4 threads <span style="color:#00f">for</span> Netty based IO
+[20:49:34 INFO]: Generating keypair
+[20:49:34 INFO]: Starting Minecraft server on *:25565
+[20:49:34 INFO]: Using default channel type
+[20:49:34 INFO]: Set PluginClassLoader as parallel capable
+[20:49:34 INFO]: [FirstPlugin] Loading FirstPlugin v0.1.0
 ...</code></pre></div>
 <p>Innerhalb der ersten 15 bis 20 Zeilen solltest du die Zeile <code>[FirstPlugin] Loading FirstPlugin v0.1.0</code> sehen, dann wurde dein Plugin korrekt geladen. Lass dich nicht verwirren, da steht noch sehr viel mehr in der Console, also musst du ein Stück weit nach oben scrollen, damit du das siehst.</p>
 
@@ -870,10 +870,10 @@
 <p>Apropos freundlich. Jemanden mit &ldquo;Stranger&rdquo; zu begrüßen ist in Bezug auf Freundlichkeit sicherlich noch ausbaufähig. Da das Bukkit-API uns die Möglichkeit gibt, den Namen des Spielers (also den Minecraft-Namen natürlich) rauszufinden, werden wir das benutzen um den Spieler wirklich freundlich mit Namen zu begrüßen.</p>
 
 <p>Dazu gehen wir wieder ins NetBeans und zur Methode <code>onCommand</code> unseres Plugins. Weil grad Zeit ist, sehen wir uns den Code der Methode ein wenig genauer an.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello stranger&#34;</span><span style="color:#f92672">);</span>
-    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+    sender.sendMessage(<span style="color:#a31515">&#34;Hello stranger&#34;</span>);
+    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
+}</code></pre></div>
 <p>Also der Reihe nach:</p>
 
 <ul>
@@ -893,20 +893,20 @@
 </ol>
 
 <p>Zum Schluss sollte deine Methode so aussehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
-    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+    sender.sendMessage(<span style="color:#a31515">&#34;Hello &#34;</span> + sender.getName());
+    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
+}</code></pre></div>
 <p>Nun sind wir schon wieder fertig. Wie oben musst du das Projekt wieder bauen (weißt schon, der Hammer in der Toolbar) und dann legst du am besten in deinem Verzeichnis <code>plugins</code> im Verzeichnis<code>bukkitServer</code> ein weiteres Verzeichnis mit Namen <code>update</code> an. Dorthinein kopierst du jetzt das jar-File. Abschließend gehst du in die Console, in der du den Server gestartet hast und tippst einfach <code>reload</code>. Dann sollte das Plugin neu geladen sein und du kannst es ausprobieren.</p>
 
 <p>Zum Abschluss möchte ich dir noch eine Kleinigkeit zeigen: Es wird immer wieder notwendig sein, dass wir auf die Konsole des Servers etwas rausschreiben und daher wollen wir das gleich mal üben. Bisher kam die Antwort des Servers ja nur auf die Konsole, wenn du das Kommando direkt in der Konsole eingetippt hast. Wir wollen aber, dass, sobald irgendwer das Kommando <code>/sayhello</code> eintippt, in der Konsole vermerkt wird, dass dieses Kommando aufgerufen wurde.</p>
 
 <p>Du kannst über <code>Bukkit.getLogger()</code> immer auf die Konsole zugreifen und der <code>Logger</code> hat eine Methode <code>info</code> mit der du Informationen in die Konsole schreiben kannst. Zusammengefasst sieht das ganze dann so aus:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
-    Bukkit<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">().</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;A player was greeted&#34;</span><span style="color:#f92672">);</span>
-    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+    sender.sendMessage(<span style="color:#a31515">&#34;Hello &#34;</span> + sender.getName());
+    Bukkit.getLogger().info(<span style="color:#a31515">&#34;A player was greeted&#34;</span>);
+    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
+}</code></pre></div>
 <p>Der Logger hat verschiedene <em>Levels</em>, die das Filtern des Logs erlauben. Die wichtigsten sind</p>
 
 <ul>
@@ -939,26 +939,26 @@
 <li>Methode <code>onCommand</code> generieren: Rechte Maus-Klick im Editor zwischen den geschwungenen Klammern &gt; <strong>Inserter Code</strong> &gt; <strong>Override Method</strong> &gt; Auswahl von <code>onCommand</code> &gt; <strong>Generate</strong></li>
 
 <li><p>Die Methode ausprogrammieren, also reinschreiben, was geschehen soll, wenn das Command aufgerufen wird:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
-Bukkit<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">().</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;A player was greeted.&#34;</span><span style="color:#f92672">);</span>
-<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+sender.sendMessage(<span style="color:#a31515">&#34;Hello &#34;</span> + sender.getName());
+Bukkit.getLogger().info(<span style="color:#a31515">&#34;A player was greeted.&#34;</span>);
+<span style="color:#00f">return</span> <span style="color:#00f">true</span>;
+}</code></pre></div></li>
 
 <li><p><code>plugin.yml</code> zum Projekt hinzufügen: Rechte Maus-Klick auf <strong>Source Packages</strong> &gt; <strong>New</strong> auswählen &gt; <strong>YAML File</strong> mit File Name <code>plugin</code></p></li>
 
 <li><p>Die Details im <code>plugin.yml</code> eingeben, wobei du die Details in den eckigen Klammern [] durch deine Werte ersetzt:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">## YAML Template.</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#008000">## YAML Template.</span>
 ---
-name: <span style="color:#f92672">[</span>Project Name<span style="color:#f92672">]</span>
-main: <span style="color:#f92672">[</span>Package Name<span style="color:#f92672">]</span>.<span style="color:#f92672">[</span>Class Name<span style="color:#f92672">]</span>
+name: [Project Name]
+main: [Package Name].[Class Name]
 version: 1.0.0
-author: <span style="color:#f92672">[</span>dein Name<span style="color:#f92672">]</span>
-description: <span style="color:#f92672">[</span>deine Beschreibung des Plugins<span style="color:#f92672">]</span>
+author: [dein Name]
+description: [deine Beschreibung des Plugins]
 commands:
-<span style="color:#f92672">[</span>Command Name<span style="color:#f92672">]</span>:
-description: <span style="color:#f92672">[</span>deine Beschreibung des Kommandos<span style="color:#f92672">]</span>
-usage: /<span style="color:#f92672">[</span>Command Name<span style="color:#f92672">]</span></code></pre></div></li>
+[Command Name]:
+description: [deine Beschreibung des Kommandos]
+usage: /[Command Name]</code></pre></div></li>
 
 <li><p>Baue das Paket: In Icon Leiste auf den Hammer <strong>Build Project (F11)</strong> klicken</p></li>
 

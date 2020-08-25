@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -283,29 +283,29 @@ Assemblercode in <em>vim</em>, dem Editor, den wir verwenden werden, installiere
 <li><p>Erstelle mit <em>vim</em> die Datei <code>hello.asm</code>, indem du das Kommando <code>vim hello.asm</code> eingibst.</p></li>
 
 <li><p>Gib das <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-world/hello.asm" target="_blank">Beispiel-Assemblerprogramm</a> in die Datei <code>hello.asm</code> ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    SECTION .data       ; DATEN
-msg:    db <span style="color:#e6db74">&#34;Hello World&#34;</span>,10 ; Diesen Text wollen wir ausgeben
-                        ; Die <span style="color:#ae81ff">10</span> am Ende bedeutet <span style="color:#e6db74">&#34;naechste Zeile&#34;</span>.
-                        ; Es handelt sich um einen ASCII-Code <span style="color:#f92672">(</span>Details
-                        ; siehe http://www.asciitable.com/<span style="color:#f92672">)</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    SECTION .data       ; DATEN
+msg:    db <span style="color:#a31515">&#34;Hello World&#34;</span>,10 ; Diesen Text wollen wir ausgeben
+                        ; Die 10 am Ende bedeutet <span style="color:#a31515">&#34;naechste Zeile&#34;</span>.
+                        ; Es handelt sich um einen ASCII-Code (Details
+                        ; siehe http://www.asciitable.com/)
 len:    equ $-msg           ; Wir berechnen die Laenge des Text, indem
                         ; wir die Speicheradresse von msg von der
-                        ; aktuelle Speicheradresse <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;</span>$<span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span> subtrahieren
+                        ; aktuelle Speicheradresse (<span style="color:#a31515">&#34;</span>$<span style="color:#a31515">&#34;</span>) subtrahieren
 
     SECTION .text       ; PROGRAMMCODE
-    global main         ; Das Programm startet bei <span style="color:#e6db74">&#34;main&#34;</span>
+    global main         ; Das Programm startet bei <span style="color:#a31515">&#34;main&#34;</span>
 main:
     mov edx, len        ; In edx tragen wir die Laenge ein.
-                        ; edx ist ein sogenanntes <span style="color:#e6db74">&#34;Register&#34;</span> <span style="color:#f92672">(</span>Details siehe
-                        ; https://de.wikipedia.org/wiki/Register_<span style="color:#f92672">(</span>Computer<span style="color:#f92672">))</span>
+                        ; edx ist ein sogenanntes <span style="color:#a31515">&#34;Register&#34;</span> (Details siehe
+                        ; https://de.wikipedia.org/wiki/Register_(Computer))
     mov ecx, msg        ; In ecx die Adresse des Textes
-    mov ebx, <span style="color:#ae81ff">1</span>          ; <span style="color:#ae81ff">1</span> steht fuer <span style="color:#e6db74">&#34;stdout&#34;</span> <span style="color:#f92672">=</span> Bildschirm
-    mov eax, <span style="color:#ae81ff">4</span>          ; <span style="color:#ae81ff">4</span> steht fuer <span style="color:#e6db74">&#34;Ausgabe&#34;</span>
-    int 0x80            ; Mit Interrupt <span style="color:#ae81ff">80</span> hex rufen wir den 
+    mov ebx, 1          ; 1 steht fuer <span style="color:#a31515">&#34;stdout&#34;</span> = Bildschirm
+    mov eax, 4          ; 4 steht fuer <span style="color:#a31515">&#34;Ausgabe&#34;</span>
+    int 0x80            ; Mit Interrupt 80 hex rufen wir den 
                         ; Linux Kernel auf
 
-    mov ebx, <span style="color:#ae81ff">0</span>          ; <span style="color:#ae81ff">0</span> steht fuer <span style="color:#e6db74">&#34;normal beendet&#34;</span>
-    mov eax, <span style="color:#ae81ff">1</span>          ; <span style="color:#ae81ff">1</span> steht fuer <span style="color:#e6db74">&#34;programm beenden&#34;</span>
+    mov ebx, 0          ; 0 steht fuer <span style="color:#a31515">&#34;normal beendet&#34;</span>
+    mov eax, 1          ; 1 steht fuer <span style="color:#a31515">&#34;programm beenden&#34;</span>
     int 0x80</code></pre></div></li>
 
 <li><p><a href="https://de.wikipedia.org/wiki/Compiler" target="_blank">Kompiliere</a> das Programm mit <code>nasm -f elf hello.asm</code>. Als Ergebnis bekommst du eine Datei <code>hello.o</code>.</p></li>
@@ -331,27 +331,27 @@ main:
 
 <ol>
 <li><p>Im <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm" target="_blank">diesem Programm</a> sind bewusst keine Kommentare enthalten. Versuche herauszufinden was es macht indem du den Code untersuchst.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    SECTION .bss
-buffer: resb <span style="color:#ae81ff">64</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    SECTION .bss
+buffer: resb 64
 
     SECTION .text
     global main
 main:
 part1:
-    mov edx, <span style="color:#ae81ff">64</span>
+    mov edx, 64
     mov ecx, buffer
-    mov eax, <span style="color:#ae81ff">3</span>
-    mov ebx, <span style="color:#ae81ff">0</span>
+    mov eax, 3
+    mov ebx, 0
     int 0x80
 
 part2:
     mov edx, eax
-    mov eax, <span style="color:#ae81ff">4</span>
-    mov ebx, <span style="color:#ae81ff">1</span>
+    mov eax, 4
+    mov ebx, 1
     int 0x80
 
 quit:
-    mov eax, <span style="color:#ae81ff">1</span>
+    mov eax, 1
     int 0x80</code></pre></div></li>
 
 <li><p>Gib <a href="https://github.com/coderdojo-linz/coderdojo-linz.github.io/blob/master/trainingsanleitungen/fundamentals/assembler-hello-world/hello-challenge/challenge.asm" target="_blank">diesen Code</a> in die Datei <code>challenge.asm</code> ein, kompiliere und linke es wie im vorigen Beispiel gezeigt.</p></li>

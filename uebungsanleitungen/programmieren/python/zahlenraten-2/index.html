@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -168,38 +168,38 @@ oder richtig war.</p>
 <p>Wir wollen annehmen, dass der Bereich, in dem die gedachte Zahl liegt, immer bei <code>1</code> beginnt.
 Jetzt muss das Programm noch die höchste erlaubte Zahl abfragen.
 Dazu verwenden wir die Funktion <code>input</code>, die eine Zeile Text einliest:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlMax_text <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlMax_text = input(<span style="color:#a31515">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)</code></pre></div>
 <p>Wenn man z.B. hier die Zahl <code>30</code> eingibt und sich gleich wieder ausgeben lässt,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(zahlMax_text)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">print</span>(zahlMax_text)</code></pre></div>
 <p>erhält man</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#e6db74">&#39;30&#39;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#a31515">&#39;30&#39;</span></code></pre></div>
 <p>Die Hochkommas rund um die eingegebene Zahl zeigen an, dass das Programm die Eingabe noch nicht als Zahl
 sondern als Zeichenkette (englisch: &ldquo;string&rdquo;) interpretiert.
 Python verwendet dafür das Kürzel <code>str</code>. Wenn man sich den Typ der Variable <code>zahlMax_text</code>
 mit <code>type(zahlMax_text)</code> bzw.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(type(zahlMax_text))</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">print</span>(type(zahlMax_text))</code></pre></div>
 <p>anzeigen lässt, erhält man folgende Ausgabe:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&lt;class <span style="color:#e6db74">&#39;str&#39;</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&lt;class <span style="color:#a31515">&#39;str&#39;</span>&gt;</code></pre></div>
 <p>In Python 3 sind alle vordefinierten Typen als Klassen implementiert, das heißt sie unterscheiden sich in der Verwendung nicht
 von selbst definierten Klassen.</p>
 
 <p>Den Text müssen wir in eine Zahl umwandeln.
 Ganze Zahlen haben in Python den Typ <code>int</code> (ein Kürzel für die englische Bezeichnung &ldquo;integer&rdquo;).
 Wenn man sich den Typ einer ganzen Zahl z.B. mit</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(type(<span style="color:#ae81ff">1</span>))</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">print</span>(type(1))</code></pre></div>
 <p>anzeigen lässt, erhält man folgende Ausgabe:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&lt;class <span style="color:#e6db74">&#39;int&#39;</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&lt;class <span style="color:#a31515">&#39;int&#39;</span>&gt;</code></pre></div>
 <p>Die Funktion zum Umwandeln in eine ganze Zahl heißt auch <code>int</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlMax <span style="color:#f92672">=</span> int(zahlMax_text)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlMax = int(zahlMax_text)</code></pre></div>
 <p>Wenn wir uns jetzt die Variable <code>zahlMax</code> nach einer Eingabe von z.B. <code>30</code> zusammen mit ihrem Typ anzeigen lassen (<code>print(zahlMax, type(zahlMax)</code>),
 erhalten wir</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ae81ff">30</span> &lt;class <span style="color:#e6db74">&#39;int&#39;</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">30 &lt;class <span style="color:#a31515">&#39;int&#39;</span>&gt;</code></pre></div>
 <h1 id="ausnahmebehandlung">Ausnahmebehandlung</h1>
 
 <p>Bevor wir mit dem Raten fortsetzen, wollen wir uns noch kurz mit unerwarteten Eingaben beschäftigen.
 Was passiert mit unserem bisherigen Programm</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlMax_text <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)
-zahlMax <span style="color:#f92672">=</span> int(zahlMax_text)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlMax_text = input(<span style="color:#a31515">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)
+zahlMax = int(zahlMax_text)</code></pre></div>
 <p>wenn das Programm als Eingabe gar keine Zahl erhält, sondern z.B. einen Text wie <code>egal</code> oder gar eine leere Eingabe?
 In so einem Fall würde unser bisheriges Programm (abgespeichert in einer Datei namens <code>Zahlenraten2.py</code>) mit einer Fahlermeldung abbrechen:</p>
 <pre><code>Traceback (most recent call last):
@@ -208,22 +208,22 @@ In so einem Fall würde unser bisheriges Programm (abgespeichert in einer Datei 
 ValueError: invalid literal for int() with base 10: &#39;egal&#39;</code></pre>
 <p>Die Umwandlungsfunktion <code>int</code> bricht mit einem <code>ValueError</code> ab, da das Argument <code>'egal'</code> nicht in eine Zahl umgewandelt werden kann.
 Diese Ausnahmesituation (englisch: &ldquo;exception&rdquo;) möchten wir abfangen. Dafür gibt es in Python die <code>try</code>-<code>except</code>-Kombination:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">try</span>:
-  zahlMax_text <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)
-  zahlMax <span style="color:#f92672">=</span> int(zahlMax_text)
-<span style="color:#66d9ef">except</span>:
-  <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Ungültige Eingabe: &#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39; ist keine Zahl&#34;</span> <span style="color:#f92672">%</span> zahlMax_text)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">try</span>:
+  zahlMax_text = input(<span style="color:#a31515">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)
+  zahlMax = int(zahlMax_text)
+<span style="color:#00f">except</span>:
+  <span style="color:#00f">print</span>(<span style="color:#a31515">&#34;Ungültige Eingabe: &#39;</span><span style="color:#a31515">%s</span><span style="color:#a31515">&#39; ist keine Zahl&#34;</span> % zahlMax_text)</code></pre></div>
 <p>Die letzte Zeile mit der Fehlerausgabe wird nur ausgeführt, wenn die Umwandlung fehlschlägt.
 Um dem Spieler im Fehlerfall eine erneute Eingabe zu ermöglichen, stülpen wir noch eine Schleife über die Eingabe.
 Dass der Computer noch keine gültige obere Grenze kennt, wollen wir mit der Pythonkonstante <code>None</code> (was soviel bedeutet wie &ldquo;kein Wert&rdquo;) anzeigen.
 Unser Programmstart sieht dann so aus:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlMax <span style="color:#f92672">=</span> None
-<span style="color:#66d9ef">while</span> zahlMax <span style="color:#f92672">==</span> None:
-  <span style="color:#66d9ef">try</span>:
-    zahlMax_text <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)
-    zahlMax <span style="color:#f92672">=</span> int(zahlMax_text)
-  <span style="color:#66d9ef">except</span>:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Ungültige Eingabe: &#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39; ist keine Zahl&#34;</span> <span style="color:#f92672">%</span> zahlMax_text)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlMax = None
+<span style="color:#00f">while</span> zahlMax == None:
+  <span style="color:#00f">try</span>:
+    zahlMax_text = input(<span style="color:#a31515">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)
+    zahlMax = int(zahlMax_text)
+  <span style="color:#00f">except</span>:
+    <span style="color:#00f">print</span>(<span style="color:#a31515">&#34;Ungültige Eingabe: &#39;</span><span style="color:#a31515">%s</span><span style="color:#a31515">&#39; ist keine Zahl&#34;</span> % zahlMax_text)</code></pre></div>
 <p>Solange die Umwandlung der Eingabe in eine ganze Zahl fehlschlägt, kann die Zuweisung zur Variable <code>zahlMax</code> nicht ausgeführt werden und sie bleibt
 auf dem Initialwert <code>None</code>. Beachte, dass für die Abfrage auf Gleichheit der Operator <code>==</code> verwendet wird, im Gegensatz zum Operator <code>=</code> für die Zuweisung von Werten an Variablen.</p>
 
@@ -237,46 +237,46 @@ die Funktion <code>randint</code> aus dem Modul <code>random</code>.</p>
 
 <p>Da unser Programm vom Spieler Hinweise bekommen soll, die den übrig gebliebenen Zahlenbereich auch von unten einschränken,
 wollen wir gleich eine untere erlaubte Schranke <code>zahlMin</code> einführen, die zu Beginn auf <code>1</code> gesetzt wird:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> randint
-zahlMin <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-versuch <span style="color:#f92672">=</span> randint(zahlMin, zahlMax)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
+zahlMin = 1
+versuch = randint(zahlMin, zahlMax)</code></pre></div>
 <h1 id="den-hinweis-abfragen-und-auswerten">Den Hinweis abfragen und auswerten</h1>
 
 <p>Als nächstes müssen wir den Spieler fragen, wo unser Versuch im Vergleich zu seiner gedachten Zahl liegt.
 Als mögliche Eingabe wollen wir eine der Zahlen 1-3 vorsehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">frage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hast du dir </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> gedacht?&#34;</span> <span style="color:#f92672">%</span> versuch
-anleitung <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Gib einen Hinweis (1 .. erraten, 2 .. zu klein, 3 .. zu groß): &#34;</span>
-hinweis <span style="color:#f92672">=</span> input(frage <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> anleitung)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">frage = <span style="color:#a31515">&#34;Hast du dir </span><span style="color:#a31515">%d</span><span style="color:#a31515"> gedacht?&#34;</span> % versuch
+anleitung = <span style="color:#a31515">&#34;Gib einen Hinweis (1 .. erraten, 2 .. zu klein, 3 .. zu groß): &#34;</span>
+hinweis = input(frage + <span style="color:#a31515">&#34; &#34;</span> + anleitung)</code></pre></div>
 <p>Bevor wir den Hinweis verarbeiten, wollen wir sicherstellen, dass die Eingabe gültig ist,
 also <code>1</code>, <code>2</code> oder <code>3</code> war. Dazu verwenden wir eine Liste an gültigen Hinweisen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">erlaubteHinweise <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;3&#39;</span>]</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">erlaubteHinweise = [<span style="color:#a31515">&#39;1&#39;</span>, <span style="color:#a31515">&#39;2&#39;</span>, <span style="color:#a31515">&#39;3&#39;</span>]</code></pre></div>
 <p>Ob ein Hinweis in dieser Liste vorkommt, kann man so abfragen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">hinweisGueltig <span style="color:#f92672">=</span> hinweis <span style="color:#f92672">in</span> erlaubteHinweise</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">hinweisGueltig = hinweis <span style="color:#00f">in</span> erlaubteHinweise</code></pre></div>
 <p>Der Operator <code>in</code> prüft, ob ein Wert in einer Liste vorkommt.
 Die Variable <code>hinweisGueltig</code> enthält dann einen Wahrheitswert, nämlich <code>True</code> oder <code>False</code>.
 Wenn wir wieder eine Schleife über die Eingabe stülpen, um so lange nachzufragen, bis
 der Hinweis gültig ist, und außerdem eine Fehlermeldung ausgeben, wenn der Hinweis ungültig ist,
 kann das so aussehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">hinweisGueltig <span style="color:#f92672">=</span> False
-<span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> hinweisGueltig:
-  frage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hast du dir </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> gedacht?&#34;</span> <span style="color:#f92672">%</span> versuch
-  hinweis <span style="color:#f92672">=</span> input(frage <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> anleitung)
-  hinweisGueltig <span style="color:#f92672">=</span> hinweis <span style="color:#f92672">in</span> erlaubteHinweise
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> hinweisGueltig:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Ungültiger Hinweis &#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;; 1, 2 oder 3 erwartet!&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">hinweisGueltig = False
+<span style="color:#00f">while</span> <span style="color:#00f">not</span> hinweisGueltig:
+  frage = <span style="color:#a31515">&#34;Hast du dir </span><span style="color:#a31515">%d</span><span style="color:#a31515"> gedacht?&#34;</span> % versuch
+  hinweis = input(frage + <span style="color:#a31515">&#34; &#34;</span> + anleitung)
+  hinweisGueltig = hinweis <span style="color:#00f">in</span> erlaubteHinweise
+<span style="color:#00f">if</span> <span style="color:#00f">not</span> hinweisGueltig:
+    <span style="color:#00f">print</span>(<span style="color:#a31515">&#34;Ungültiger Hinweis &#39;</span><span style="color:#a31515">%s</span><span style="color:#a31515">&#39;; 1, 2 oder 3 erwartet!&#34;</span>)</code></pre></div>
 <p>Das Befüllen der Variable <code>anleitung</code> kommt hier nicht mehr vor, da der Wert fix ist und die Zuweisung nur einmal - am Beginn des Programms - zu erfolgen braucht.</p>
 
 <p>Um den Code lesbarer zu machen, wollen wir die Abfrage des Hinweises in eine Funktion packen.
 Dazu kann man die Schleife wie folgt umschreiben:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">frageNachHinweis</span>(versuch):
-  <span style="color:#66d9ef">while</span> True:
-    frage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hast du dir </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> gedacht?&#34;</span> <span style="color:#f92672">%</span> versuch
-    hinweis <span style="color:#f92672">=</span> input(frage <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> anleitung)
-    <span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">in</span> erlaubteHinweise:
-      <span style="color:#66d9ef">return</span> hinweis
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Ungültiger Hinweis &#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;; 1, 2 oder 3 erwartet!&#34;</span> <span style="color:#f92672">%</span> hinweis)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> frageNachHinweis(versuch):
+  <span style="color:#00f">while</span> True:
+    frage = <span style="color:#a31515">&#34;Hast du dir </span><span style="color:#a31515">%d</span><span style="color:#a31515"> gedacht?&#34;</span> % versuch
+    hinweis = input(frage + <span style="color:#a31515">&#34; &#34;</span> + anleitung)
+    <span style="color:#00f">if</span> hinweis <span style="color:#00f">in</span> erlaubteHinweise:
+      <span style="color:#00f">return</span> hinweis
+    <span style="color:#00f">print</span>(<span style="color:#a31515">&#34;Ungültiger Hinweis &#39;</span><span style="color:#a31515">%s</span><span style="color:#a31515">&#39;; 1, 2 oder 3 erwartet!&#34;</span> % hinweis)</code></pre></div>
 <p>Diese Funktion kann dann so genutzt werden:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">hinweis <span style="color:#f92672">=</span> frageNachHinweis(versuch)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">hinweis = frageNachHinweis(versuch)</code></pre></div>
 <p>Nun müssen wir die 3 gülltigen Fälle behandeln:
 * Wenn der Spieler <code>1</code> eingegeben hat, sind wir fertig.
 * Wenn der Spieler <code>2</code> eingegeben hat, war unser Versuch zu klein und wir können <code>zahlMin</code> hinaufsetzen. (Auf welchen Wert)?
@@ -285,25 +285,25 @@ Dazu kann man die Schleife wie folgt umschreiben:</p>
 <p>Denke über die Fälle nach, bevor du dir den folgenden Code-Teil ansiehst.</p>
 
 <p><em>Beachte, dass der abgefragte Hinweis ein Text, also vom Typ <code>str</code>, ist.</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;1&#39;</span>:
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Juhuu!&#39;</span>)
-<span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;2&#39;</span>:
-  zahlMin <span style="color:#f92672">=</span> versuch <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;3&#39;</span>:
-  zahlMax <span style="color:#f92672">=</span> versuch <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">if</span> hinweis == <span style="color:#a31515">&#39;1&#39;</span>:
+<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Juhuu!&#39;</span>)
+<span style="color:#00f">if</span> hinweis == <span style="color:#a31515">&#39;2&#39;</span>:
+  zahlMin = versuch + 1
+<span style="color:#00f">if</span> hinweis == <span style="color:#a31515">&#39;3&#39;</span>:
+  zahlMax = versuch - 1</code></pre></div>
 <h1 id="die-spielschleife">Die Spielschleife</h1>
 
 <p>Jetzt wollen wir wieder eine Schleife über die Abfrage stülpen, bis ein gültiger Hinweis eingegeben wurde.
 Das sieht dann insgesamt so aus:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">while</span> True:
-  hinweis <span style="color:#f92672">=</span> frageNachHinweis(versuch)
-  <span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;1&#39;</span>:
-  <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Juhuu!&#39;</span>)
-  <span style="color:#66d9ef">break</span>
-  <span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;2&#39;</span>:
-    zahlMin <span style="color:#f92672">=</span> versuch <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-  <span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;3&#39;</span>:
-    zahlMax <span style="color:#f92672">=</span> versuch <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">while</span> True:
+  hinweis = frageNachHinweis(versuch)
+  <span style="color:#00f">if</span> hinweis == <span style="color:#a31515">&#39;1&#39;</span>:
+  <span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Juhuu!&#39;</span>)
+  <span style="color:#00f">break</span>
+  <span style="color:#00f">if</span> hinweis == <span style="color:#a31515">&#39;2&#39;</span>:
+    zahlMin = versuch + 1
+  <span style="color:#00f">if</span> hinweis == <span style="color:#a31515">&#39;3&#39;</span>:
+    zahlMax = versuch - 1</code></pre></div>
 <h1 id="das-gesamte-programm">Das gesamte Programm</h1>
 
 <p>Wenn wir das gesamte Programm zusammenstellen, wollen wir noch folgende übliche Abfolge von Codeteilen beachten:</p>
@@ -315,38 +315,38 @@ Das sieht dann insgesamt so aus:</p>
 <li>Initialisierungen</li>
 
 <li><p>restliche Logik</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> randint
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
 
-anleitung <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Gib einen Hinweis (1 .. erraten, 2 .. zu klein, 3 .. zu groß): &#34;</span>
-erlaubteHinweise <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;3&#39;</span>]
+anleitung = <span style="color:#a31515">&#34;Gib einen Hinweis (1 .. erraten, 2 .. zu klein, 3 .. zu groß): &#34;</span>
+erlaubteHinweise = [<span style="color:#a31515">&#39;1&#39;</span>, <span style="color:#a31515">&#39;2&#39;</span>, <span style="color:#a31515">&#39;3&#39;</span>]
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">frageNachHinweis</span>(versuch):
-<span style="color:#66d9ef">while</span> True:
-frage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hast du dir </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> gedacht?&#34;</span> <span style="color:#f92672">%</span> versuch
-hinweis <span style="color:#f92672">=</span> input(frage <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> anleitung)
-<span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">in</span> erlaubteHinweise:
-  <span style="color:#66d9ef">return</span> hinweis
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Ungültiger Hinweis &#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;; 1, 2 oder 3 erwartet!&#34;</span> <span style="color:#f92672">%</span> hinweis)
+<span style="color:#00f">def</span> frageNachHinweis(versuch):
+<span style="color:#00f">while</span> True:
+frage = <span style="color:#a31515">&#34;Hast du dir </span><span style="color:#a31515">%d</span><span style="color:#a31515"> gedacht?&#34;</span> % versuch
+hinweis = input(frage + <span style="color:#a31515">&#34; &#34;</span> + anleitung)
+<span style="color:#00f">if</span> hinweis <span style="color:#00f">in</span> erlaubteHinweise:
+  <span style="color:#00f">return</span> hinweis
+<span style="color:#00f">print</span>(<span style="color:#a31515">&#34;Ungültiger Hinweis &#39;</span><span style="color:#a31515">%s</span><span style="color:#a31515">&#39;; 1, 2 oder 3 erwartet!&#34;</span> % hinweis)
 
-zahlMin <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-zahlMax <span style="color:#f92672">=</span> None
-<span style="color:#66d9ef">while</span> zahlMax <span style="color:#f92672">==</span> None:
-<span style="color:#66d9ef">try</span>:
-zahlMax_text <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)
-zahlMax <span style="color:#f92672">=</span> int(zahlMax_text)
-<span style="color:#66d9ef">except</span>:
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Ungültige Eingabe: &#39;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39; ist keine Zahl&#34;</span> <span style="color:#f92672">%</span> zahlMax_text)
+zahlMin = 1
+zahlMax = None
+<span style="color:#00f">while</span> zahlMax == None:
+<span style="color:#00f">try</span>:
+zahlMax_text = input(<span style="color:#a31515">&#39;Wie groß kann die gedachte Zahl höchstens sein? &#39;</span>)
+zahlMax = int(zahlMax_text)
+<span style="color:#00f">except</span>:
+<span style="color:#00f">print</span>(<span style="color:#a31515">&#34;Ungültige Eingabe: &#39;</span><span style="color:#a31515">%s</span><span style="color:#a31515">&#39; ist keine Zahl&#34;</span> % zahlMax_text)
 
-<span style="color:#66d9ef">while</span> True:
-versuch <span style="color:#f92672">=</span> randint(zahlMin, zahlMax)
-hinweis <span style="color:#f92672">=</span> frageNachHinweis(versuch)
-<span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;1&#39;</span>:
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Juhuu!&#39;</span>)
-<span style="color:#66d9ef">break</span>
-<span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;2&#39;</span>:
-zahlMin <span style="color:#f92672">=</span> versuch <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">if</span> hinweis <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;3&#39;</span>:
-zahlMax <span style="color:#f92672">=</span> versuch <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span></code></pre></div></li>
+<span style="color:#00f">while</span> True:
+versuch = randint(zahlMin, zahlMax)
+hinweis = frageNachHinweis(versuch)
+<span style="color:#00f">if</span> hinweis == <span style="color:#a31515">&#39;1&#39;</span>:
+<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Juhuu!&#39;</span>)
+<span style="color:#00f">break</span>
+<span style="color:#00f">if</span> hinweis == <span style="color:#a31515">&#39;2&#39;</span>:
+zahlMin = versuch + 1
+<span style="color:#00f">if</span> hinweis == <span style="color:#a31515">&#39;3&#39;</span>:
+zahlMax = versuch - 1</code></pre></div></li>
 </ul>
 
 <p>Ein Spielverlauf könnte dann so aussehen:</p>

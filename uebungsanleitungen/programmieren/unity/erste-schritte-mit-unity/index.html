@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -297,41 +297,41 @@ Wenn der Ladevorgang fertig ist, befinden wir uns in Visual Studio und können d
 <p>Das Script enthält zu Beginn nur 2 Methoden: <em>Start</em> und <em>Update</em>. Diese verhalten sich natürlich auch ganz ihrem Namen nach: Die Start-Methode wird hinzugefügt, sobald das Spiel gestartet wird (bzw. wenn ein GameObject initialisiert wird, das erst im späteren Spielverlauf hinzukommt). Die Update-Methode wird jedoch für jeden <a href="https://de.wikipedia.org/wiki/Einzelbild_(Film)" target="_blank">Frame</a> (sprich um ein flüssiges Spiel zu erhalten mindestens 25x pro Sekunde) aufgerufen. Wenn wir komplexe Vorgänge in unsere Scripts einbauen, müssen wir natürlich auch darauf achten, in der Update Methode nicht zu viel Zeit zu verlieren.</p>
 
 <p>Wir wollen nun die Update Methode so anpassen, dass sich der Würfel ein wenig wie ein Fahrzeug verhält, also fügen wir unserer Scriptklasse ein paar Variablen hinzu um dies zu ermöglichen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">readonly</span> Vector3 _direction = Vector3.forward;
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">float</span> _speed = <span style="color:#ae81ff">0f</span>;
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">float</span> Velocity = <span style="color:#ae81ff">1f</span>;
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">float</span> _wheelangle = <span style="color:#ae81ff">0</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#00f">private</span> <span style="color:#00f">readonly</span> Vector3 _direction = Vector3.forward;
+<span style="color:#00f">private</span> <span style="color:#2b91af">float</span> _speed = 0f;
+<span style="color:#00f">private</span> <span style="color:#00f">const</span> <span style="color:#2b91af">float</span> Velocity = 1f;
+<span style="color:#00f">private</span> <span style="color:#2b91af">float</span> _wheelangle = 0;
 </code></pre></div>
 <p>Zuerst einen <a href="https://de.wikipedia.org/wiki/Vektor" target="_blank">Vektor</a> für die Richtung, in welche sich unser Würfel bewegt (mit dem Wert <em>Vector3.forward</em>, damit sich der Würfel in die von ihm aus gesehen Richtung gerade nach vorne bewegt). Bewegungen im 3dimensionalen Raum werden mit Vektoren beschrieben. Um hierbei fit zu sein, empfiehlt es sich, gut im Mathematikunterricht aufzupassen und/oder sich die Grundlagen durch Recherche in Büchern oder im Internet zu ereignen (z.B. <a href="http://www.frustfrei-lernen.de/mathematik/vektor-vektorrechnung-mathematik.html" target="_blank">http://www.frustfrei-lernen.de/mathematik/vektor-vektorrechnung-mathematik.html</a>).</p>
 
 <p>Zusätzlich zur Bewegungsrichtung legen wir auch Variablen für die Geschwindigkeit (<em>_speed</em>), die Beschleunigung (<em>Velocity</em>) und den Lenkradwinkel (<em>_wheelangle</em>) an.</p>
 
 <p>Dem Inhalt der Update Methode fügen wir nun folgenden Code hinzu:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">if</span> (Input.GetKey(KeyCode.UpArrow))
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#00f">if</span> (Input.GetKey(KeyCode.UpArrow))
 {
     _speed += Velocity;
 }
-<span style="color:#66d9ef">if</span> (Input.GetKey(KeyCode.DownArrow))
+<span style="color:#00f">if</span> (Input.GetKey(KeyCode.DownArrow))
 {
     _speed -= Velocity;
 }
-<span style="color:#66d9ef">if</span> (Input.GetKey(KeyCode.LeftArrow))
+<span style="color:#00f">if</span> (Input.GetKey(KeyCode.LeftArrow))
 {
-    _wheelangle -= <span style="color:#ae81ff">2f</span>;
+    _wheelangle -= 2f;
 }
-<span style="color:#66d9ef">if</span> (Input.GetKey(KeyCode.RightArrow))
+<span style="color:#00f">if</span> (Input.GetKey(KeyCode.RightArrow))
 {
-    _wheelangle += <span style="color:#ae81ff">2f</span>;
+    _wheelangle += 2f;
 }
 </code></pre></div>
 <p>Wir benutzen für unsere Steuerung die Pfeiltasten. Mit <em>Input.GetKey(KeyCode c)</em> können wir abfragen, ob eine bestimmte Taste gerade gedrückt ist. Wenn dem so ist, verändern wir einfach die Werte unserer Variablen je nach gedrückter Taste.</p>
 
 <p>Zu guter Letzt müssen wir die Änderungen auf das Objekt anwenden:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">_wheelangle /= <span style="color:#ae81ff">2</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">_wheelangle /= 2;
 Debug.Log(_speed);
-    <span style="color:#66d9ef">this</span>.transform.Translate(_direction*_speed * Time.deltaTime);
+    <span style="color:#00f">this</span>.transform.Translate(_direction*_speed * Time.deltaTime);
 
-<span style="color:#66d9ef">this</span>.transform.Rotate(Vector3.up, _wheelangle);
+<span style="color:#00f">this</span>.transform.Rotate(Vector3.up, _wheelangle);
 </code></pre></div>
 <p>Wir teilen in jedem Durchlauf den Lenkrad Winkel durch 2 um zu simulieren, dass sich das Lenkrad nach Loslassen der Taste langsam wieder in die Mittelposition bewegt. Anschließend geben wir (auch um die Console zu zeigen) die aktuelle Geschwindigkeit aus.</p>
 

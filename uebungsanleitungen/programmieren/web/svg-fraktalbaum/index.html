@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -195,44 +195,44 @@ In dieser dritten Ebene erhältst du so jetzt vier Zweige.</p>
 <h2 id="grundgerüst-der-html-seite">Grundgerüst der HTML Seite</h2>
 
 <p>Erstelle als erstes eine neue HTML Seite mit dem Namen fraktal-baum.html.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-	&lt;<span style="color:#f92672">title</span>&gt;Fraktalbaum&lt;/<span style="color:#f92672">title</span>&gt;
-	&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Fraktalbaum&lt;/title&gt;
+	&lt;meta charset=<span style="color:#a31515">&#34;utf-8&#34;</span> /&gt;
 
-	&lt;<span style="color:#f92672">style</span>&gt;
-		<span style="color:#f92672">line</span><span style="color:#f92672">,</span> <span style="color:#f92672">circle</span><span style="color:#f92672">,</span> <span style="color:#f92672">ellipse</span><span style="color:#f92672">,</span> <span style="color:#f92672">rect</span><span style="color:#f92672">,</span> <span style="color:#f92672">text</span><span style="color:#f92672">,</span> <span style="color:#f92672">path</span> {
-			stroke: <span style="color:#66d9ef">black</span>;
-			fill: <span style="color:#66d9ef">none</span>;
+	&lt;style&gt;
+		line, circle, ellipse, rect, text, path {
+			stroke: <span style="color:#00f">black</span>;
+			fill: <span style="color:#00f">none</span>;
 		}
-	&lt;/<span style="color:#f92672">style</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-	&lt;<span style="color:#f92672">h1</span>&gt;Fraktalbaum&lt;/<span style="color:#f92672">h1</span>&gt;
-	&lt;<span style="color:#f92672">div</span>&gt;
-		&lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;baum&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;500&#34;</span>&gt;&lt;/<span style="color:#f92672">svg</span>&gt;
-	&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Fraktalbaum&lt;/h1&gt;
+	&lt;div&gt;
+		&lt;svg id=<span style="color:#a31515">&#34;baum&#34;</span> width=<span style="color:#a31515">&#34;600&#34;</span> height=<span style="color:#a31515">&#34;500&#34;</span>&gt;&lt;/svg&gt;
+	&lt;/div&gt;
 
-	&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span> src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&#34;</span>&gt;&lt;/script&gt;
 
-	&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
-		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">svg</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Snap</span>(<span style="color:#e6db74">&#34;#baum&#34;</span>);
+	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span>&gt;
+		<span style="color:#00f">var</span> svg = Snap(<span style="color:#a31515">&#34;#baum&#34;</span>);
 
-		<span style="color:#75715e">// Hier kannst du zeichnen
-</span><span style="color:#75715e"></span>	&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+		<span style="color:#008000">// Hier kannst du zeichnen
+</span><span style="color:#008000"></span>	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
 <p>Zum Zeichnen verwenden wir die Bibliothek <a href="http://snapsvg.io/docs/" target="_blank">snap.svg</a>. Du kannst damit ganz einfach Linien, Kreise, Ellipsen, Rechtecke und ähnliches malen.</p>
 
 <p>Versuche es, indem du unter den Kommentar <code>// Hier kannst du zeichnen</code> folgenden Code einfügst:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Hier kannst du zeichnen
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">circle</span>(<span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">200</span>);
-<span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">ellipse</span>(<span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">100</span>);
-<span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">rect</span>(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">400</span>);
-<span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">line</span>(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">250</span>);
-<span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">text</span>(<span style="color:#ae81ff">230</span>, <span style="color:#ae81ff">240</span>, <span style="color:#e6db74">&#34;Ich male mit snap.svg!&#34;</span>);
-<span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">path</span>(<span style="color:#e6db74">&#34;M200,250L300,300L400,250&#34;</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// Hier kannst du zeichnen
+</span><span style="color:#008000"></span>svg.circle(300, 250, 200);
+svg.ellipse(300, 250, 200, 100);
+svg.rect(100, 50, 400, 400);
+svg.line(100, 250, 500, 250);
+svg.text(230, 240, <span style="color:#a31515">&#34;Ich male mit snap.svg!&#34;</span>);
+svg.path(<span style="color:#a31515">&#34;M200,250L300,300L400,250&#34;</span>);
 </code></pre></div>
 <p>Du zeichnest damit folgende Figur:</p>
 
@@ -264,24 +264,24 @@ In dieser dritten Ebene erhältst du so jetzt vier Zweige.</p>
 <h2 id="baum-malen">Baum malen</h2>
 
 <p>Lösche die Figur unter den Kommentar <code>// Hier kannst du zeichnen</code> und ersetzte sie durch folgenden Code:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Hier kannst du zeichnen
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ebene</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">winkel</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">90</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">astLaenge</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
-<span style="color:#a6e22e">astZeichnen</span>(<span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">500</span>, <span style="color:#a6e22e">winkel</span>, <span style="color:#a6e22e">astLaenge</span>, <span style="color:#a6e22e">ebene</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// Hier kannst du zeichnen
+</span><span style="color:#008000"></span><span style="color:#00f">var</span> ebene = 0;
+<span style="color:#00f">var</span> winkel = -90;
+<span style="color:#00f">var</span> astLaenge = 100;
+astZeichnen(300, 500, winkel, astLaenge, ebene);
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">astZeichnen</span>(<span style="color:#a6e22e">x1</span>, <span style="color:#a6e22e">y1</span>, <span style="color:#a6e22e">winkel</span>, <span style="color:#a6e22e">astLaenge</span>, <span style="color:#a6e22e">ebene</span>) {
-	<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">ebene</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">11</span>) {
-		<span style="color:#75715e">// Endkoordinaten berechnen
-</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">x1</span> <span style="color:#f92672">+</span> (Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">winkel</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">180</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">astLaenge</span>);
-		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">y2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">y1</span> <span style="color:#f92672">+</span> (Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">winkel</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">180</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">astLaenge</span>);
+<span style="color:#00f">function</span> astZeichnen(x1, y1, winkel, astLaenge, ebene) {
+	<span style="color:#00f">if</span> (ebene &lt; 11) {
+		<span style="color:#008000">// Endkoordinaten berechnen
+</span><span style="color:#008000"></span>		<span style="color:#00f">var</span> x2 = x1 + (Math.cos(winkel * Math.PI / 180) * astLaenge);
+		<span style="color:#00f">var</span> y2 = y1 + (Math.sin(winkel * Math.PI / 180) * astLaenge);
 
-		<span style="color:#75715e">// Linie zeichnen
-</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">line</span>(<span style="color:#a6e22e">x1</span>, <span style="color:#a6e22e">y1</span>, <span style="color:#a6e22e">x2</span>, <span style="color:#a6e22e">y2</span>);
+		<span style="color:#008000">// Linie zeichnen
+</span><span style="color:#008000"></span>		svg.line(x1, y1, x2, y2);
 
-		<span style="color:#75715e">// zwei weitere Äste mit verändertem Winkel malen
-</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">astZeichnen</span>(<span style="color:#a6e22e">x2</span>, <span style="color:#a6e22e">y2</span>, <span style="color:#a6e22e">winkel</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span>, <span style="color:#a6e22e">astLaenge</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.8</span>, <span style="color:#a6e22e">ebene</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
-		<span style="color:#a6e22e">astZeichnen</span>(<span style="color:#a6e22e">x2</span>, <span style="color:#a6e22e">y2</span>, <span style="color:#a6e22e">winkel</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">20</span>, <span style="color:#a6e22e">astLaenge</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">0.8</span>, <span style="color:#a6e22e">ebene</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
+		<span style="color:#008000">// zwei weitere Äste mit verändertem Winkel malen
+</span><span style="color:#008000"></span>		astZeichnen(x2, y2, winkel - 20, astLaenge * 0.8, ebene + 1);
+		astZeichnen(x2, y2, winkel + 20, astLaenge * 0.8, ebene + 1);
 	}
 }
 </code></pre></div>
@@ -328,51 +328,51 @@ zu haben, da der Code sonst ewig weiterläuft. In unserem Beispiel ist das die B
 
 <p>Damit du das Aussehen des Baums einfach ändern kannst, fügen wir im HTML jetzt zwei Eingabefelder hinzu, mit denen du den Winkel und die Länge der Äste bestimmen kannst. Füge dazu zwischen
 der Überschrift <code>&lt;h1&gt;</code> und dem <code>&lt;div&gt;</code> mit dem <code>&lt;svg&gt;</code> folgenden Code ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span>&gt;Fraktalbaum&lt;/<span style="color:#f92672">h1</span>&gt;
-&lt;<span style="color:#f92672">p</span>&gt;
-	Winkel: &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;aenderungsWinkel&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;20&#34;</span> /&gt;
-&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;<span style="color:#f92672">p</span>&gt;
-	Änderung Astlänge [%]: &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;aenderungAstlaenge&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;80&#34;</span> /&gt;
-&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;<span style="color:#f92672">p</span>&gt;
-	&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;baumZeichnen()&#34;</span>&gt;Baum zeichnen&lt;/<span style="color:#f92672">button</span>&gt;
-&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;<span style="color:#f92672">div</span>&gt;
-	&lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;baum&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;500&#34;</span>&gt;&lt;/<span style="color:#f92672">svg</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h1&gt;Fraktalbaum&lt;/h1&gt;
+&lt;p&gt;
+	Winkel: &lt;input type=<span style="color:#a31515">&#34;number&#34;</span> id=<span style="color:#a31515">&#34;aenderungsWinkel&#34;</span> value=<span style="color:#a31515">&#34;20&#34;</span> /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	Änderung Astlänge [%]: &lt;input type=<span style="color:#a31515">&#34;number&#34;</span> id=<span style="color:#a31515">&#34;aenderungAstlaenge&#34;</span> value=<span style="color:#a31515">&#34;80&#34;</span> /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;button onclick=<span style="color:#a31515">&#34;baumZeichnen()&#34;</span>&gt;Baum zeichnen&lt;/button&gt;
+&lt;/p&gt;
+&lt;div&gt;
+	&lt;svg id=<span style="color:#a31515">&#34;baum&#34;</span> width=<span style="color:#a31515">&#34;600&#34;</span> height=<span style="color:#a31515">&#34;500&#34;</span>&gt;&lt;/svg&gt;
+&lt;/div&gt;</code></pre></div>
 <p>Den Code zum Malen des Baums musst du folgendermaßen ändern:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Hier kannst du zeichnen
-</span><span style="color:#75715e">// globale Variablen
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">aenderungswinkel</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">aenderungAstlaenge</span>;
-<span style="color:#a6e22e">baumZeichnen</span>();
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// Hier kannst du zeichnen
+</span><span style="color:#008000">// globale Variablen
+</span><span style="color:#008000"></span><span style="color:#00f">var</span> aenderungswinkel;
+<span style="color:#00f">var</span> aenderungAstlaenge;
+baumZeichnen();
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">baumZeichnen</span>() {
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ebene</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">winkel</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">90</span>;
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">astLaenge</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+<span style="color:#00f">function</span> baumZeichnen() {
+	<span style="color:#00f">var</span> ebene = 0;
+	<span style="color:#00f">var</span> winkel = -90;
+	<span style="color:#00f">var</span> astLaenge = 100;
 
-	<span style="color:#75715e">// Benutzereingaben auslesen
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">aenderungswinkel</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;aenderungsWinkel&#34;</span>).<span style="color:#a6e22e">value</span>);
-	<span style="color:#a6e22e">aenderungAstlaenge</span> <span style="color:#f92672">=</span> parseInt(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;aenderungAstlaenge&#34;</span>).<span style="color:#a6e22e">value</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">100</span>;
+	<span style="color:#008000">// Benutzereingaben auslesen
+</span><span style="color:#008000"></span>	aenderungswinkel = parseInt(document.getElementById(<span style="color:#a31515">&#34;aenderungsWinkel&#34;</span>).value);
+	aenderungAstlaenge = parseInt(document.getElementById(<span style="color:#a31515">&#34;aenderungAstlaenge&#34;</span>).value) / 100;
 
-	<span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">clear</span>();
-	<span style="color:#a6e22e">astZeichnen</span>(<span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">500</span>, <span style="color:#a6e22e">winkel</span>, <span style="color:#a6e22e">astLaenge</span>, <span style="color:#a6e22e">ebene</span>);
+	svg.clear();
+	astZeichnen(300, 500, winkel, astLaenge, ebene);
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">astZeichnen</span>(<span style="color:#a6e22e">x1</span>, <span style="color:#a6e22e">y1</span>, <span style="color:#a6e22e">winkel</span>, <span style="color:#a6e22e">astLaenge</span>, <span style="color:#a6e22e">ebene</span>) {
-	<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">ebene</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">11</span>) {
-		<span style="color:#75715e">// Endkoordinaten berrechnen
-</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">x1</span> <span style="color:#f92672">+</span> (Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">winkel</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">180</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">astLaenge</span>);
-		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">y2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">y1</span> <span style="color:#f92672">+</span> (Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">winkel</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">180</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">astLaenge</span>);
+<span style="color:#00f">function</span> astZeichnen(x1, y1, winkel, astLaenge, ebene) {
+	<span style="color:#00f">if</span> (ebene &lt; 11) {
+		<span style="color:#008000">// Endkoordinaten berrechnen
+</span><span style="color:#008000"></span>		<span style="color:#00f">var</span> x2 = x1 + (Math.cos(winkel * Math.PI / 180) * astLaenge);
+		<span style="color:#00f">var</span> y2 = y1 + (Math.sin(winkel * Math.PI / 180) * astLaenge);
 
-		<span style="color:#75715e">// Linie zeichnen
-</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">line</span>(<span style="color:#a6e22e">x1</span>, <span style="color:#a6e22e">y1</span>, <span style="color:#a6e22e">x2</span>, <span style="color:#a6e22e">y2</span>);
+		<span style="color:#008000">// Linie zeichnen
+</span><span style="color:#008000"></span>		svg.line(x1, y1, x2, y2);
 
-		<span style="color:#75715e">// zwei weitere Äste mit verändertem Winkel malen
-</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">astZeichnen</span>(<span style="color:#a6e22e">x2</span>, <span style="color:#a6e22e">y2</span>, <span style="color:#a6e22e">winkel</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">aenderungswinkel</span>, <span style="color:#a6e22e">astLaenge</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">aenderungAstlaenge</span>, <span style="color:#a6e22e">ebene</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
-		<span style="color:#a6e22e">astZeichnen</span>(<span style="color:#a6e22e">x2</span>, <span style="color:#a6e22e">y2</span>, <span style="color:#a6e22e">winkel</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">aenderungswinkel</span>, <span style="color:#a6e22e">astLaenge</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">aenderungAstlaenge</span>, <span style="color:#a6e22e">ebene</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
+		<span style="color:#008000">// zwei weitere Äste mit verändertem Winkel malen
+</span><span style="color:#008000"></span>		astZeichnen(x2, y2, winkel - aenderungswinkel, astLaenge * aenderungAstlaenge, ebene + 1);
+		astZeichnen(x2, y2, winkel + aenderungswinkel, astLaenge * aenderungAstlaenge, ebene + 1);
 	}
 }
 </code></pre></div>
@@ -412,27 +412,27 @@ die das Auslesen der Benutzereingaben übernimmt. Diese Funktion <code>baumZeich
 Multiplikation mit einer Zufallszahl leicht verändern.</p>
 
 <p>Ergänze dazu die globalen Variablen durch die beiden neuen Variablen <code>zufallAenderungswinkel</code> und <code>zufallAstlaenge</code>. Diesen weisen wir gleich Werte zu.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// globale Variablen
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">aenderungswinkel</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">aenderungAstlaenge</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">zufallAenderungswinkel</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">zufallAstlaenge</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
-<span style="color:#a6e22e">baumZeichnen</span>()
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// globale Variablen
+</span><span style="color:#008000"></span><span style="color:#00f">var</span> aenderungswinkel;
+<span style="color:#00f">var</span> aenderungAstlaenge;
+<span style="color:#00f">var</span> zufallAenderungswinkel = 15;
+<span style="color:#00f">var</span> zufallAstlaenge = 10;
+baumZeichnen()
 </code></pre></div>
 <p>Zusätzlich müssen wir noch die Aufrufe <code>astZeichnen</code> innerhalb der Funktion <code>astZeichnen</code> verändern, so dass beim Winkel und bei der Astlänge eine Zufallszahl eingebaut wird.
 Die Funktion <code>Math.random()</code> liefert eine Gleitkommazahl zwischen 0 (inklusive) und 1 (exklusive). Wir subtrahieren 0.5 von dieser generierten Zufallszahl damit wir positive und negative
 Änderungen erhalten und multiplizieren diese dann mit unserer Variable <code>zufallAenderungswinkel</code> bzw. <code>zufallAstlaenge</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// zwei weitere Äste mit verändertem Winkel malen
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">astZeichnen</span>(
-	<span style="color:#a6e22e">x2</span>,
-	<span style="color:#a6e22e">y2</span>,
-	<span style="color:#a6e22e">winkel</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">aenderungswinkel</span> <span style="color:#f92672">+</span> (Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">-</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">zufallAenderungswinkel</span>,
-	<span style="color:#a6e22e">astLaenge</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">aenderungAstlaenge</span> <span style="color:#f92672">+</span> (Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">-</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">zufallAstlaenge</span>, <span style="color:#a6e22e">ebene</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
-<span style="color:#a6e22e">astZeichnen</span>(
-	<span style="color:#a6e22e">x2</span>,
-	<span style="color:#a6e22e">y2</span>,
-	<span style="color:#a6e22e">winkel</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">aenderungswinkel</span> <span style="color:#f92672">+</span> (Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">-</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">zufallAenderungswinkel</span>,
-	<span style="color:#a6e22e">astLaenge</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">aenderungAstlaenge</span> <span style="color:#f92672">+</span> (Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">-</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">zufallAstlaenge</span>, <span style="color:#a6e22e">ebene</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// zwei weitere Äste mit verändertem Winkel malen
+</span><span style="color:#008000"></span>astZeichnen(
+	x2,
+	y2,
+	winkel - aenderungswinkel + (Math.random() - 0.5) * zufallAenderungswinkel,
+	astLaenge * aenderungAstlaenge + (Math.random() - 0.5) * zufallAstlaenge, ebene + 1);
+astZeichnen(
+	x2,
+	y2,
+	winkel + aenderungswinkel + (Math.random() - 0.5) * zufallAenderungswinkel,
+	astLaenge * aenderungAstlaenge + (Math.random() - 0.5) * zufallAstlaenge, ebene + 1);
 </code></pre></div>
 <p>Der Baum sieht jetzt etwas natürlicher aus. Probiere auch andere Werte für die beiden Variablen <code>zufallAenderungswinkel</code> und <code>zufallAstlaenge</code> aus.</p>
 
@@ -465,37 +465,37 @@ Die Funktion <code>Math.random()</code> liefert eine Gleitkommazahl zwischen 0 (
 
 <p>Um den Baum in Farbe zeichnen zu können, brauchen wir als erstes eine Bibliothek, die uns ermöglicht, Farbänderungen berechnen zu können. Wir verwenden dazu <a href="https://bgrins.github.io/TinyColor/" target="_blank">TinyColor</a>{:target=_blank}.
 Füge einen Verweis darauf unter den Verweis auf snap.svg ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span> src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&#34;</span>&gt;&lt;/script&gt;
+&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span> src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js&#34;</span>&gt;&lt;/script&gt;</code></pre></div>
 <p>Als nächstes fügen wir eine weitere globale Variable <code>maxEbene</code> hinzu:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// globale Variablen
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">aenderungswinkel</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">aenderungAstlaenge</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">zufallAenderungswinkel</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">zufallAstlaenge</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">maxEbene</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>;
-<span style="color:#a6e22e">baumZeichnen</span>()
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// globale Variablen
+</span><span style="color:#008000"></span><span style="color:#00f">var</span> aenderungswinkel;
+<span style="color:#00f">var</span> aenderungAstlaenge;
+<span style="color:#00f">var</span> zufallAenderungswinkel = 15;
+<span style="color:#00f">var</span> zufallAstlaenge = 10;
+<span style="color:#00f">var</span> maxEbene = 11;
+baumZeichnen()
 </code></pre></div>
 <p>Ändere in der Funktion <code>astZeichnen</code> die Bedingung in der ersten Zeile auf <code>if (ebene &lt; maxEbene)</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">astZeichnen</span>(<span style="color:#a6e22e">x1</span>, <span style="color:#a6e22e">y1</span>, <span style="color:#a6e22e">winkel</span>, <span style="color:#a6e22e">astLaenge</span>, <span style="color:#a6e22e">ebene</span>) {
-	<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">ebene</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">maxEbene</span>) {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> astZeichnen(x1, y1, winkel, astLaenge, ebene) {
+	<span style="color:#00f">if</span> (ebene &lt; maxEbene) {
 </code></pre></div>
 <p>Nun müssen wir noch das Zeichnen der Linie anpassen. Wir weisen dazu das Ergebnis des Funktionsaufrufes <code>svg.line</code> der Variable ast zu. Mit <code>ast.attr</code> können wir dann die
 Attribute der Linie wie z.B. die Linienfarbe oder Liniendicke ändern. Als Ausgangsfarbe wählen wir ein sehr dunkles Grün für den Stamm (#001100), das für jede Ebene heller gemacht wird.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Linie zeichnen
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ast</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">svg</span>.<span style="color:#a6e22e">line</span>(<span style="color:#a6e22e">x1</span>, <span style="color:#a6e22e">y1</span>, <span style="color:#a6e22e">x2</span>, <span style="color:#a6e22e">y2</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">tinycolor</span>(<span style="color:#e6db74">&#34;#001100&#34;</span>);
-<span style="color:#a6e22e">ast</span>.<span style="color:#a6e22e">attr</span>({
-	<span style="color:#a6e22e">stroke</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">color</span>.<span style="color:#a6e22e">lighten</span>(<span style="color:#a6e22e">ebene</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>).<span style="color:#a6e22e">toString</span>(),
-	<span style="color:#a6e22e">strokeWidth</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">maxEbene</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">ebene</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// Linie zeichnen
+</span><span style="color:#008000"></span><span style="color:#00f">var</span> ast = svg.line(x1, y1, x2, y2);
+<span style="color:#00f">var</span> color = tinycolor(<span style="color:#a31515">&#34;#001100&#34;</span>);
+ast.attr({
+	stroke: color.lighten(ebene * 3).toString(),
+	strokeWidth: maxEbene - ebene
 });
 </code></pre></div>
 <p>Damit die Farbe auch sichtbar wird müssen wir noch <code>stroke: black;</code> aus dem <code>&lt;style&gt;</code>-Block von oben entfernen. Es bleibt also nur das <code>fill: none;</code> übrig.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">style</span>&gt;
-	<span style="color:#f92672">line</span><span style="color:#f92672">,</span> <span style="color:#f92672">circle</span><span style="color:#f92672">,</span> <span style="color:#f92672">ellipse</span><span style="color:#f92672">,</span> <span style="color:#f92672">rect</span><span style="color:#f92672">,</span> <span style="color:#f92672">text</span><span style="color:#f92672">,</span> <span style="color:#f92672">path</span> {
-		fill: <span style="color:#66d9ef">none</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;style&gt;
+	line, circle, ellipse, rect, text, path {
+		fill: <span style="color:#00f">none</span>;
 	}
-&lt;/<span style="color:#f92672">style</span>&gt;</code></pre></div>
+&lt;/style&gt;</code></pre></div>
 
 
 

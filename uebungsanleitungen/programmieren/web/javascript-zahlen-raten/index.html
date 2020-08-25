@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -201,36 +201,36 @@
 </p></li>
 
 <li><p>Gib folgenden Code in die neue Datei ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-	&lt;<span style="color:#f92672">head</span>&gt;
-		&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
-		&lt;<span style="color:#f92672">title</span>&gt;Zahlen raten&lt;/<span style="color:#f92672">title</span>&gt;
-	&lt;/<span style="color:#f92672">head</span>&gt;
-	&lt;<span style="color:#f92672">body</span>&gt;
-		&lt;<span style="color:#f92672">h2</span>&gt;Zahlen raten&lt;/<span style="color:#f92672">h2</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;meta charset=<span style="color:#a31515">&#34;utf-8&#34;</span>&gt;
+		&lt;title&gt;Zahlen raten&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h2&gt;Zahlen raten&lt;/h2&gt;
 		
-		&lt;<span style="color:#f92672">p</span>&gt;Versuche, die Zahl zwischen 0 und 100 zu erraten!&lt;/<span style="color:#f92672">p</span>&gt;
+		&lt;p&gt;Versuche, die Zahl zwischen 0 und 100 zu erraten!&lt;/p&gt;
 		
-		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;height: 120px&#34;</span>&gt;
-			&lt;<span style="color:#f92672">label</span>&gt;Dein Tipp:&lt;/<span style="color:#f92672">label</span>&gt;
-			&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;inputGuess&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width:100px&#34;</span>/&gt;
-			&lt;<span style="color:#f92672">button</span>&gt;Überprüfen&lt;/<span style="color:#f92672">button</span>&gt;
+		&lt;div style=<span style="color:#a31515">&#34;height: 120px&#34;</span>&gt;
+			&lt;label&gt;Dein Tipp:&lt;/label&gt;
+			&lt;input type=<span style="color:#a31515">&#34;number&#34;</span> id=<span style="color:#a31515">&#34;inputGuess&#34;</span> style=<span style="color:#a31515">&#34;width:100px&#34;</span>/&gt;
+			&lt;button&gt;Überprüfen&lt;/button&gt;
 			
-			&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;outputResult&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
-			&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;outputCount&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
-		&lt;/<span style="color:#f92672">div</span>&gt;
-	&lt;/<span style="color:#f92672">body</span>&gt;
+			&lt;p id=<span style="color:#a31515">&#34;outputResult&#34;</span>&gt;&lt;/p&gt;
+			&lt;p id=<span style="color:#a31515">&#34;outputCount&#34;</span>&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/body&gt;
 	
-	&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
-		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">inputGuess</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;inputGuess&#34;</span>);
-		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">outputResult</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;outputResult&#34;</span>);
-		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">outputCount</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;outputCount&#34;</span>);
+	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span>&gt;
+		<span style="color:#00f">var</span> inputGuess = document.getElementById(<span style="color:#a31515">&#34;inputGuess&#34;</span>);
+		<span style="color:#00f">var</span> outputResult = document.getElementById(<span style="color:#a31515">&#34;outputResult&#34;</span>);
+		<span style="color:#00f">var</span> outputCount = document.getElementById(<span style="color:#a31515">&#34;outputCount&#34;</span>);
 		
-		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">number</span>, <span style="color:#a6e22e">count</span>;
-		<span style="color:#a6e22e">number</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>);
-	&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></li>
+		<span style="color:#00f">var</span> number, count;
+		number = Math.floor(Math.random() * 100);
+	&lt;/script&gt;
+&lt;/html&gt;</code></pre></div></li>
 
 <li><p>Speichere die Datei unter dem Namen <code>zahlen-raten.html</code> ab. Öffne sie anschließend mit Doppelklick in einem Webbrowser. Du solltest folgende Seite sehen:</p></li>
 </ol>
@@ -324,14 +324,14 @@
 
 <ol>
 <li><p>Wir wollen darauf reagieren, wenn der Spieler auf <em>Überprüfen</em> klickt. Erweitere dazu den <code>button</code>-Tag im HTML-Bereich um folgenden Code. Er sorgt dafür, dass bei Klick auf den Button die Funktion <code>checkNumber</code> aufgerufen wird. Die Funktion gibt es noch nicht, wir werden sie in Kürze schreiben.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkNumber()&#34;</span>&gt;Überprüfen&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;button onclick=<span style="color:#a31515">&#34;checkNumber()&#34;</span>&gt;Überprüfen&lt;/button&gt;</code></pre></div></li>
 
 <li><p>Ergänze außerdem den JavaScript-Bereich nach der Zeile <code>number = ...</code> um folgenden Code. Hier wird eine <em>Variable</em> namens <code>count</code> deklariert. Außerdem wird die oben erwähnte Funktion <code>checkNumber</code> angelegt. Sie erhöht den Wert des Zählers <code>count</code> und gibt den aktuellen Stand aus.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">count = 0;
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">checkNumber</span>() {
-	<span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">count</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
-	<span style="color:#a6e22e">outputCount</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Du hast bisher &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">count</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; Versuche gebraucht.&#34;</span>;
+<span style="color:#00f">function</span> checkNumber() {
+	count = count + 1;
+	outputCount.innerHTML = <span style="color:#a31515">&#34;Du hast bisher &#34;</span> + count + <span style="color:#a31515">&#34; Versuche gebraucht.&#34;</span>;
 }
 </code></pre></div></li>
 
@@ -374,13 +374,13 @@
 <li><p>Wechsle zurück zur HTML-Datei im Texteditor.</p></li>
 
 <li><p>Füge den folgenden Code am Beginn der Funktion <code>checkNumber</code> ein, also vor <code>count = count + 1;</code>. Achte darauf, das beim dritten Vergleich wirklich zwei Ist-Gleich-Zeichen hintereinander stehen!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">guess</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">inputGuess</span>.<span style="color:#a6e22e">value</span>);			
-<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">guess</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">number</span>)
-	<span style="color:#a6e22e">outputResult</span>.<span style="color:#a6e22e">innerHTML</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dein Tipp war zu niedrig.&#34;</span>;
-<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">guess</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">number</span>)
-	<span style="color:#a6e22e">outputResult</span>.<span style="color:#a6e22e">innerHTML</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dein Tipp war zu hoch.&#34;</span>;
-<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">guess</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">number</span>)
-	<span style="color:#a6e22e">outputResult</span>.<span style="color:#a6e22e">innerHTML</span>  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Richtig!&#34;</span>;		
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">var</span> guess = parseInt(inputGuess.value);			
+<span style="color:#00f">if</span> (guess &lt; number)
+	outputResult.innerHTML  = <span style="color:#a31515">&#34;Dein Tipp war zu niedrig.&#34;</span>;
+<span style="color:#00f">else</span> <span style="color:#00f">if</span> (guess &gt; number)
+	outputResult.innerHTML  = <span style="color:#a31515">&#34;Dein Tipp war zu hoch.&#34;</span>;
+<span style="color:#00f">else</span> <span style="color:#00f">if</span> (guess == number)
+	outputResult.innerHTML  = <span style="color:#a31515">&#34;Richtig!&#34;</span>;		
 </code></pre></div></li>
 
 <li><p>Speichere deine Änderungen, lade die Seite im Browser neu (z.B. durch Drücken der Taste F5). Jetzt kannst du dein Spiel schon einmal bis zum Ende spielen! Wie viele Versuche brauchst du, bis du die Zahl erraten hast? Schaffst du es unter 10?</p></li>
@@ -394,16 +394,16 @@
 <li><p>Wechsle zurück zur HTML-Datei im Texteditor.</p></li>
 
 <li><p>Im HTML-Code legen wir einen eigenen Button für den Neustart des Spiels an. Ergänze dazu im HTML-Bereich folgende Code-Zeile:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newGame()&#34;</span>&gt;Neu beginnen&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;button onclick=<span style="color:#a31515">&#34;newGame()&#34;</span>&gt;Neu beginnen&lt;/button&gt;</code></pre></div></li>
 
 <li><p>Damit hast du einen Button, aber es passiert noch nichts wenn du darauf klickst. Dafür müssen wir erst die beim Button angegebene Funktion <code>newGame</code> anlegen. Erweitere dazu den JavaScript-Bereich um folgende Codezeilen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">newGame</span>() {
-	<span style="color:#a6e22e">number</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>);
-	<span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> newGame() {
+	number = Math.floor(Math.random() * 100);
+	count = 0;
 
-	<span style="color:#a6e22e">inputGuess</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
-	<span style="color:#a6e22e">outputResult</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
-	<span style="color:#a6e22e">outputCount</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+	inputGuess.value = <span style="color:#a31515">&#34;&#34;</span>;
+	outputResult.innerHTML = <span style="color:#a31515">&#34;&#34;</span>;
+	outputCount.innerHTML = <span style="color:#a31515">&#34;&#34;</span>;
 }
 </code></pre></div></li>
 

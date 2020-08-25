@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -197,15 +197,15 @@
 <h2 id="laden-von-packages">Laden von Packages</h2>
 
 <p>Für dieses Beispiel verwenden wir das Package <code>tkinter</code>. Damit kann man Fenster und Schaltflächen für eine grafische Benutzeroberfläche erstellen, aber auch Formen zeichnen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> tkinter <span style="color:#00f">import</span> *</code></pre></div>
 <h2 id="ein-fenster-mit-einer-leinwand-erstellen">Ein Fenster mit einer Leinwand erstellen</h2>
 
 <p>Zuerst erzeugen wir ein neues Fenster, das wir <code>window</code> nennen. Diesem Fenster kann man auch einen Namen geben (z. B. „Alien“). Dieses Fenster erscheint, wenn man das Programm mit F5 laufen lässt. Damit dieses Fenster immer gleich im Vordergrund ist, kann man das bei den Attributen einstellen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">window <span style="color:#f92672">=</span> Tk()
-window<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Alien&#34;</span>)
-window<span style="color:#f92672">.</span>attributes(<span style="color:#e6db74">&#34;-topmost&#34;</span>, <span style="color:#ae81ff">1</span>)
-c <span style="color:#f92672">=</span> Canvas(window, height<span style="color:#f92672">=</span><span style="color:#ae81ff">400</span>, width<span style="color:#f92672">=</span><span style="color:#ae81ff">400</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yellow&#34;</span>)
-c<span style="color:#f92672">.</span>pack()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">window = Tk()
+window.title(<span style="color:#a31515">&#34;Alien&#34;</span>)
+window.attributes(<span style="color:#a31515">&#34;-topmost&#34;</span>, 1)
+c = Canvas(window, height=400, width=400, bg=<span style="color:#a31515">&#34;yellow&#34;</span>)
+c.pack()</code></pre></div>
 <p>Um auch etwas zeichnen zu können, benötigen wir eine Leinwand (auf Englisch <code>Canvas</code>). Diese Leinwand kommt in unser Fenster, wir legen die Höhe (<code>height</code>), die Breite (<code>width</code>) und die Farbe des Hintergrunds (<code>bg</code> für background) fest. Die Leinwand nennen wir kurz <code>c</code> und packen sie in unser Fenster.</p>
 
 <h2 id="das-koordinatensystem-in-tkinter">Das Koordinatensystem in Tkinter</h2>
@@ -280,13 +280,13 @@ c<span style="color:#f92672">.</span>pack()</code></pre></div>
 
 <li><p>Der Hut ist ein blau gefülltes Dreieck, das durch drei Eckpunkte beschrieben wird:<br />
 A(160, 75), B(240, 75), C(200, 20).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Wir zeichnen einen Alien</span>
-körper <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_oval(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">250</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;green&#34;</span>)
-auge <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_oval(<span style="color:#ae81ff">170</span>, <span style="color:#ae81ff">70</span>, <span style="color:#ae81ff">230</span>, <span style="color:#ae81ff">130</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;white&#34;</span>)
-pupille <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_oval(<span style="color:#ae81ff">190</span>, <span style="color:#ae81ff">90</span>, <span style="color:#ae81ff">210</span>, <span style="color:#ae81ff">110</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>)
-mund <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_oval(<span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">220</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">240</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>)
-hals <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_line(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">130</span>, width<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
-hut <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_polygon(<span style="color:#ae81ff">160</span>, <span style="color:#ae81ff">75</span>, <span style="color:#ae81ff">240</span>, <span style="color:#ae81ff">75</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">20</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;blue&#34;</span>)</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Wir zeichnen einen Alien</span>
+körper = c.create_oval(100, 150, 300, 250, fill=<span style="color:#a31515">&#34;green&#34;</span>)
+auge = c.create_oval(170, 70, 230, 130, fill=<span style="color:#a31515">&#34;white&#34;</span>)
+pupille = c.create_oval(190, 90, 210, 110, fill=<span style="color:#a31515">&#34;black&#34;</span>)
+mund = c.create_oval(150, 220, 250, 240, fill=<span style="color:#a31515">&#34;red&#34;</span>)
+hals = c.create_line(200, 150, 200, 130, width=10)
+hut = c.create_polygon(160, 75, 240, 75, 200, 20, fill=<span style="color:#a31515">&#34;blue&#34;</span>)</code></pre></div></li>
 </ul>
 
 <h2 id="den-mund-und-die-augen-animieren">Den Mund und die Augen animieren</h2>
@@ -298,41 +298,41 @@ hut <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>cr
 <li>Wenn das Auge geschlossen ist, dann ist es grün, so wie der Körper und die Pupille verstecken wir.</li>
 
 <li><p>Wenn das Auge offen ist, wird es wieder weiß und die Pupille ist sichtbar.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Mund auf und zu</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mund_auf</span>(event):
-c<span style="color:#f92672">.</span>itemconfig(mund, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Mund auf und zu</span>
+<span style="color:#00f">def</span> mund_auf(event):
+c.itemconfig(mund, fill=<span style="color:#a31515">&#34;black&#34;</span>)
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mund_zu</span>(event):
-c<span style="color:#f92672">.</span>itemconfig(mund, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>)
+<span style="color:#00f">def</span> mund_zu(event):
+c.itemconfig(mund, fill=<span style="color:#a31515">&#34;red&#34;</span>)
 
-<span style="color:#75715e"># Auge zu und auf</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">auge_zu</span>(event):
-c<span style="color:#f92672">.</span>itemconfig(auge, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;green&#34;</span>)
-c<span style="color:#f92672">.</span>itemconfig(pupille, state<span style="color:#f92672">=</span>HIDDEN)
+<span style="color:#008000"># Auge zu und auf</span>
+<span style="color:#00f">def</span> auge_zu(event):
+c.itemconfig(auge, fill=<span style="color:#a31515">&#34;green&#34;</span>)
+c.itemconfig(pupille, state=HIDDEN)
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">auge_auf</span>(event):
-c<span style="color:#f92672">.</span>itemconfig(auge, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;white&#34;</span>)
-c<span style="color:#f92672">.</span>itemconfig(pupille, state<span style="color:#f92672">=</span>NORMAL)</code></pre></div></li>
+<span style="color:#00f">def</span> auge_auf(event):
+c.itemconfig(auge, fill=<span style="color:#a31515">&#34;white&#34;</span>)
+c.itemconfig(pupille, state=NORMAL)</code></pre></div></li>
 </ul>
 
 <p>Diese Funktionen kombinieren wir nun mit dem Drücken von bestimmten Tasten:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c<span style="color:#f92672">.</span>bind_all(<span style="color:#e6db74">&#34;&lt;KeyPress-a&gt;&#34;</span>, auge_auf)
-c<span style="color:#f92672">.</span>bind_all(<span style="color:#e6db74">&#34;&lt;KeyPress-z&gt;&#34;</span>, auge_zu)
-c<span style="color:#f92672">.</span>bind_all(<span style="color:#e6db74">&#34;&lt;KeyPress-b&gt;&#34;</span>, mund_zu)
-c<span style="color:#f92672">.</span>bind_all(<span style="color:#e6db74">&#34;&lt;KeyPress-o&gt;&#34;</span>, mund_auf)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c.bind_all(<span style="color:#a31515">&#34;&lt;KeyPress-a&gt;&#34;</span>, auge_auf)
+c.bind_all(<span style="color:#a31515">&#34;&lt;KeyPress-z&gt;&#34;</span>, auge_zu)
+c.bind_all(<span style="color:#a31515">&#34;&lt;KeyPress-b&gt;&#34;</span>, mund_zu)
+c.bind_all(<span style="color:#a31515">&#34;&lt;KeyPress-o&gt;&#34;</span>, mund_auf)</code></pre></div>
 <h2 id="text-hinzufügen">Text hinzufügen</h2>
 
 <p>Wir schreiben noch einen erklärenden Text in das Fenster. Hier geben die beiden Zahlen wieder die x und y Koordinaten der Textposition an. Mit dem Symbol \ kann man einen Zeilenumbruch im Code machen, wenn dieser zu lang für eine Zeile wird.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Text</span>
-text1 <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_text(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">280</span>, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Drücke a und z </span><span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span><span style="color:#e6db74">um meine Augen auf und zu zu machen.&#34;</span>)
-text2 <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_text(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">300</span>, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Drücke b und o, </span><span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span><span style="color:#e6db74">um meinen Mund auf und zu zu machen.&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Text</span>
+text1 = c.create_text(200, 280, text = <span style="color:#a31515">&#34;Drücke a und z </span><span style="color:#a31515">\
+</span><span style="color:#a31515"></span><span style="color:#a31515">um meine Augen auf und zu zu machen.&#34;</span>)
+text2 = c.create_text(200, 300, text = <span style="color:#a31515">&#34;Drücke b und o, </span><span style="color:#a31515">\
+</span><span style="color:#a31515"></span><span style="color:#a31515">um meinen Mund auf und zu zu machen.&#34;</span>)</code></pre></div>
 <h2 id="aktivierung-des-fensters">Aktivierung des Fensters</h2>
 
 <p>Zu guter Letzt gibt es noch einen Befehl, um das Fenster zu aktivieren:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Aktivierung des Fensters</span>
-window<span style="color:#f92672">.</span>mainloop()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Aktivierung des Fensters</span>
+window.mainloop()</code></pre></div>
 <p>Wenn du nun das Programm speicherst (STRG + S), kannst du es ausführen (F5). Probiere, ob dein Alien auf die Tastendrücke richtig reagiert!</p>
 
 <h2 id="erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</h2>

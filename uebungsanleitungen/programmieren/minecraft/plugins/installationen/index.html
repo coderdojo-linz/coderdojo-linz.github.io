@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -200,11 +200,11 @@
 <h3 id="ist-bei-mir-java-installiert">Ist bei mir Java installiert?</h3>
 
 <p>Bevor wir beginnen, wollen wir nachsehen, ob eventuell Java bereits auf deinem Rechner installiert ist. Dazu öffnest du unter Windows die Eingabeaufforderung oder am Mac das Terminal. Dann tippst du folgendes ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">java -version</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">java -version</code></pre></div>
 <p>Wenn du nun eine Antwort bekommst, die so oder zumindest so ähnlich aussieht, dann kannst du sofort zum Punkt <a href="#netbeans"><strong>Download NetBeans</strong></a> weiterspringen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">java version <span style="color:#e6db74">&#34;1.8.0_31&#34;</span>
-Java<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> SE Runtime Environment <span style="color:#f92672">(</span>build 1.8.0_31-b13<span style="color:#f92672">)</span>
-Java HotSpot<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> 64-Bit Server VM <span style="color:#f92672">(</span>build 25.31-b07, mixed mode<span style="color:#f92672">)</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">java version <span style="color:#a31515">&#34;1.8.0_31&#34;</span>
+Java(TM) SE Runtime Environment (build 1.8.0_31-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.31-b07, mixed mode)</code></pre></div>
 <p>Wenn das bei dir nicht ao aussieht, dann folge bitte den Anweisungen zur Installation von Java.</p>
 
 <h3 id="unter-windows">Unter Windows</h3>
@@ -359,15 +359,15 @@ Java HotSpot<span style="color:#f92672">(</span>TM<span style="color:#f92672">)<
 <h3 id="windows">Windows</h3>
 
 <p>Erstelle als erstes einen neuen Ordner mit Namen <code>bukkitServer</code> und bewege <code>craftbukkit.jar</code> da hinein. Dann starte deinen Lieblings-Texteditor (bitte nicht Word, sonder Notepad oder besser Notepad++) und tippe folgende Zeilen ab:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">java -Xms1024M -Xmx2048M -jar craftbukkit.jar -o true
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">java -Xms1024M -Xmx2048M -jar craftbukkit.jar -o true
 pause</code></pre></div>
 <p>Dann speicherst du die Datei unter dem Namen <code>start.bat</code> in den Ordner <code>bukkitServer</code> gleich neben <code>craftbukkit.jar</code> ab.</p>
 
 <h3 id="macos">MacOS</h3>
 
 <p>Erstelle als erstes einen neuen Ordner mit Namen <code>bukkitServer</code> und bewege <code>craftbukkit.jar</code> da hinein. Dann starte deinen Lieblings-Texteditor (bitte nicht Word oder Pages, sonder TextEdit oder besser Atom oder TextWrangler) und tippe folgende Zeilen ab:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>cd <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span> dirname <span style="color:#e6db74">&#34;</span>$0<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#00f">#!/bin/bash
+</span><span style="color:#00f"></span>cd <span style="color:#a31515">&#34;</span><span style="color:#00f">$(</span> dirname <span style="color:#a31515">&#34;</span>$0<span style="color:#a31515">&#34;</span><span style="color:#00f">)</span><span style="color:#a31515">&#34;</span>
 java -Xmx1024M -jar craftbukkit.jar -o true</code></pre></div>
 <p>Dann speicherst du die Datei unter dem Namen <code>start.sh</code> in den Ordner <code>bukkitServer</code> gleich neben <code>craftbukkit.jar</code> ab.</p>
 
@@ -381,15 +381,15 @@ java -Xmx1024M -jar craftbukkit.jar -o true</code></pre></div>
 <h2 id="a-name-test-a-teste-deinen-server-das-erste-mal"><a name="test"></a>Teste deinen Server das erste Mal</h2>
 
 <p>Wenn du diese Datei nun mit einem Doppelklick startest müsste ein Fenster mit dem Cmd-Prompt oder dem Terminal (schwarzes Fenster mit weißem Text unter Windows oder weißes Fenster mit schwarzem Text unter MacOS) erscheinen und nach einer Weile folgende Meldungen darin angezeigt werden.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>18:22:27 INFO<span style="color:#f92672">]</span>: Starting minecraft server version 1.7.10
-<span style="color:#f92672">[</span>18:22:27 INFO<span style="color:#f92672">]</span>: Loading properties
-<span style="color:#f92672">[</span>18:22:27 INFO<span style="color:#f92672">]</span>: You need to agree to the EULA in order to run the server. Go to eula.txt <span style="color:#66d9ef">for</span> more info.
-<span style="color:#f92672">[</span>18:22:27 INFO<span style="color:#f92672">]</span>: Stopping server
-<span style="color:#f92672">[</span>18:22:27 INFO<span style="color:#f92672">]</span>: Stopping server</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">[18:22:27 INFO]: Starting minecraft server version 1.7.10
+[18:22:27 INFO]: Loading properties
+[18:22:27 INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt <span style="color:#00f">for</span> more info.
+[18:22:27 INFO]: Stopping server
+[18:22:27 INFO]: Stopping server</code></pre></div>
 <p>Damit sind wir schon fast am Ziel. Wie du oben siehst, will der Server noch, dass wir das EULA akzeptieren. Freundlicherweise schreibt er auch, was wir tun sollen, nämlich <code>eula.txt</code> für weitere Informationen ansehen. Diese Datei wurde durch das erste Mal starten im Ordner <code>bukkitServer</code> erstellt. Wir nehmen also wieder unseren Lieblings-Editor zur Hand und öffnen dieses <code>eula.txt</code>.</p>
 
 <p>In der letzten Zeile dieses Files steht <code>eula=false</code>. Das müssen wir in <code>eula=true</code> umschreiben und dann probieren wir es noch mal und starten den Server mit einem Doppelklick. Jetzt müsste er sauber starten. Du merkst das, dass nun im Fenster sehr viel mehr Meldungen angezeigt werden und zum Schluss die Zeile</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>18:24:04 INFO<span style="color:#f92672">]</span>: Done <span style="color:#f92672">(</span>1.369s<span style="color:#f92672">)</span>! For help, type <span style="color:#e6db74">&#34;help&#34;</span> or <span style="color:#e6db74">&#34;?&#34;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">[18:24:04 INFO]: Done (1.369s)! For help, type <span style="color:#a31515">&#34;help&#34;</span> or <span style="color:#a31515">&#34;?&#34;</span></code></pre></div>
 <p>stehen sollte. Um ganz sicher zu gehen, musst du natürlich jetzt dein Minecraft starten. Um auf deinem Server spielen zu können wählst du am Startscreen die Option <strong>Multiplayer</strong>. Wenn es schnell gehen soll, klickst du auf den Button <strong>Direct Connect</strong> und gibst als Server-Adresse <code>localhost</code> ein.</p>
 
 <p>Da wir den Server aber sicherlich öfter brauchen werden, zahlt es sich wahrscheinlich aus, dass du ihn zur Liste deiner Server hinzufügst. Dazu wählst du den Button <strong>Add Server</strong>. Dann kannst du deinem Server einen Namen geben, sodass du ihn schnell wiedererkennst und als Adresse gibst du wieder <code>localhost</code> an.</p>

@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -325,26 +325,26 @@ für dein Betriebssystem runter. Verwende wenn möglich eine Version, die mit &l
 <p>Unterhalb wird der Inhalt der Seite erfasst. Dazu verwenden wir <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown</a>. Aus dem Markdown wird später von Hugo HTML generiert.</p>
 
 <p>Du kannst zum Beispiel folgenden Inhalt in deine erste Seite einfügen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">---
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">---
 title: &#34;CoderDojo Webseite&#34;
 date: 2020-05-15T10:32:00+02:00
 draft: false
 ---
 
-# Lerne programmieren im CoderDojo Linz
-
+<span style="font-weight:bold"># Lerne programmieren im CoderDojo Linz
+</span><span style="font-weight:bold"></span>
 Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren? Dann bist du richtig beim CoderDojo!
 
-<span style="color:#75715e">## Was ist ein CoderDojo?
-</span><span style="color:#75715e"></span>
+<span style="font-weight:bold">## Was ist ein CoderDojo?
+</span><span style="font-weight:bold"></span>
 Das CoderDojo ist ein Club für Kinder und Jugendliche, die programmieren lernen und Spaß haben wollen. In regelmäßigen Treffen wird gelernt wie man Code schreibt, Webseiten entwickelt oder Apps und Spiele programmiert.
 
-<span style="color:#75715e">## Für wen?
-</span><span style="color:#75715e"></span>
+<span style="font-weight:bold">## Für wen?
+</span><span style="font-weight:bold"></span>
 Teilnehmen können Kinder und Jugendliche im Alter von 8 bis 17 Jahren. Es sind keine Vorkenntnisse notwendig und die Teilnahme ist kostenfrei. Kinder unter 13 Jahren müssen von einem Erwachsenen begleitet werden.
 
-<span style="color:#75715e">## Wann?
-</span><span style="color:#75715e"></span>
+<span style="font-weight:bold">## Wann?
+</span><span style="font-weight:bold"></span>
 Wir treffen uns jeden zweiten Freitag von 16:00 bis 18:00. Für den ersten Besuch ist eine Anmeldung notwendig.</code></pre></div>
 <h2 id="layout-definieren">Layout definieren</h2>
 
@@ -420,7 +420,7 @@ Wir treffen uns jeden zweiten Freitag von 16:00 bis 18:00. Für den ersten Besuc
 <p>Nun kannst du im Browser wie im Command Prompt angegeben die URL <a href="http://localhost:1313/" target="_blank">http://localhost:1313/</a> öffnen. Die Teile aus dem Layout index.html und aus dem Content _index.md werden nun zusammengefügt.</p>
 
 <p>Falls dein Browser die URL nicht öffnen kann, weil er versucht die https Version der Seite zu laden (z.B. in Chrome), kannst du den Server stattdessen mit folgendem Command starten:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo server --baseURL http://127.0.0.1</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo server --baseURL http://127.0.0.1</code></pre></div>
 <p>Du kannst im Browser jetzt folgende URL öffnen: <a href="http://127.0.0.1:1313/" target="_blank">http://127.0.0.1:1313/</a></p>
 
 <p>Solange der Hugo Server läuft, werden Änderungen die du in den Dateien machst, sofort im Browser angezeigt.</p>
@@ -552,19 +552,19 @@ Wir treffen uns jeden zweiten Freitag von 16:00 bis 18:00. Für den ersten Besuc
 <p>Wir haben jetzt in <code>layouts\index.html</code> und in <code>layouts\_default\single.html</code> das selbe HTML eingeben müssen. Änderungen müssten wir jetzt in zwei Dateien warten. Um dieses Problem zu umgehen, können wir im Ordner <code>layouts\_default</code> eine weitere Datei <code>baseof.html</code> anlegen.</p>
 
 <p>Kopiere erneut den Content von <code>single.html</code> in <code>baseof.html</code>. Ersetze darin aber <code>{% raw %}{{ .Content }}{% endraw %}</code> durch <code>{% raw %}{{ block &quot;main&quot; . }} {{ end }}{% endraw %}</code>. <code>main</code> ist jetzt ein Platzhalter für Content. <code>baseof.html</code> sollte jetzt so aussehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-    &lt;<span style="color:#f92672">title</span>&gt;CoderDojo&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+&lt;html lang=<span style="color:#a31515">&#34;en&#34;</span>&gt;
+&lt;head&gt;
+    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+    &lt;meta name=<span style="color:#a31515">&#34;viewport&#34;</span> content=<span style="color:#a31515">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;title&gt;CoderDojo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
     {% raw %}{{ block &#34;main&#34; . }} {{ end }}{% endraw %}
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
 <p><code>single.html</code> und <code>index.html</code> kannst du jetzt vereinfachen. Du brauchst nur noch im Bereich <code>main</code> den Content einfügen. Du kannst den Inhalt beider Dateien durch folgende drei Zeilen ersetzen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}{% endraw %}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}{% endraw %}
 {% raw %}{{ .Content }}{% endraw %}
 {% raw %}{{ end }}{% endraw %}</code></pre></div>
 <p>Das File <code>baseof.html</code> dient als Basis für alle anderen Layouts und du musst jetzt nur noch den <code>main</code> Bereich definieren. Du kannst natürlich auch noch weitere Platzhalter einfügen.</p>
@@ -572,60 +572,60 @@ Wir treffen uns jeden zweiten Freitag von 16:00 bis 18:00. Für den ersten Besuc
 <h2 id="bootstrap-einfügen">Bootstrap einfügen</h2>
 
 <p>Wenn wir jetzt z.B. das <a href="https://getbootstrap.com/" target="_blank">Bootstrap Framework</a> für alle Seiten einfügen möchten, dann brauchen wir das nur noch in der Datei <code>baseof.html</code> zu machen. Kopiere dazu wie im Quickstart Tutorial von Bootstrap beschrieben die Referenzen für CSS und JavaScript in den <code>head</code> bzw. <code>body</code> Bereich von <code>baseof.html</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+&lt;html lang=<span style="color:#a31515">&#34;en&#34;</span>&gt;
 
-&lt;<span style="color:#f92672">head</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-    &lt;<span style="color:#f92672">title</span>&gt;CoderDojo&lt;/<span style="color:#f92672">title</span>&gt;
-    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;head&gt;
+    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+    &lt;meta name=<span style="color:#a31515">&#34;viewport&#34;</span> content=<span style="color:#a31515">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;title&gt;CoderDojo&lt;/title&gt;
+    &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> href=<span style="color:#a31515">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&#34;</span> integrity=<span style="color:#a31515">&#34;sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk&#34;</span> crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>&gt;
+&lt;/head&gt;
 
-&lt;<span style="color:#f92672">body</span>&gt;
+&lt;body&gt;
     {% raw %}{{ block &#34;main&#34; . }} {{ end }}{% endraw %}
 
-    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://code.jquery.com/jquery-3.5.1.slim.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
+    &lt;script src=<span style="color:#a31515">&#34;https://code.jquery.com/jquery-3.5.1.slim.min.js&#34;</span> integrity=<span style="color:#a31515">&#34;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&#34;</span> crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>&gt;&lt;/script&gt;
+    &lt;script src=<span style="color:#a31515">&#34;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&#34;</span> integrity=<span style="color:#a31515">&#34;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&#34;</span> crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>&gt;&lt;/script&gt;
+    &lt;script src=<span style="color:#a31515">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js&#34;</span> integrity=<span style="color:#a31515">&#34;sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI&#34;</span> crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>&gt;&lt;/script&gt;
+&lt;/body&gt;
 
-&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+&lt;/html&gt;</code></pre></div>
 <p>Die Datei <code>single.html</code> ändern wir folgendemaßen, um den Content wie in Bootstrap üblich im mittleren Bereich des Browsers darzustellen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}{% endraw %}
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mt-5&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}{% endraw %}
+&lt;div class=<span style="color:#a31515">&#34;mt-5&#34;</span>&gt;&lt;/div&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
+&lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
             {% raw %}{{ .Content }}{% endraw %}
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 {% raw %}{{ end }}{% endraw %}</code></pre></div>
 <p>Für die Hauptseite mit dem Layout <code>index.html</code> fügen wir zusätzlich noch einen <a href="https://getbootstrap.com/docs/4.5/components/jumbotron/" target="_blank">Bootstrap Jumbotron</a> hinzu:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}{% endraw %}
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jumbotron&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-                &lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display-4&#34;</span>&gt;CoderDojo Linz&lt;/<span style="color:#f92672">h1</span>&gt;
-                &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lead&#34;</span>&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/<span style="color:#f92672">p</span>&gt;
-                &lt;<span style="color:#f92672">hr</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;my-4&#34;</span>&gt;
-                &lt;<span style="color:#f92672">p</span>&gt;It uses utility classes for typography and spacing to space content out within the larger container.&lt;/<span style="color:#f92672">p</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary btn-lg&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span>&gt;Learn more&lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}{% endraw %}
+&lt;div class=<span style="color:#a31515">&#34;jumbotron&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+                &lt;h1 class=<span style="color:#a31515">&#34;display-4&#34;</span>&gt;CoderDojo Linz&lt;/h1&gt;
+                &lt;p class=<span style="color:#a31515">&#34;lead&#34;</span>&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+                &lt;hr class=<span style="color:#a31515">&#34;my-4&#34;</span>&gt;
+                &lt;p&gt;It uses utility classes for typography and spacing to space content out within the larger container.&lt;/p&gt;
+                &lt;a class=<span style="color:#a31515">&#34;btn btn-primary btn-lg&#34;</span> href=<span style="color:#a31515">&#34;#&#34;</span> role=<span style="color:#a31515">&#34;button&#34;</span>&gt;Learn more&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
+&lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
             {% raw %}{{ .Content }}{% endraw %}
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 {% raw %}{{ end }}{% endraw %}</code></pre></div>
 <p>Die Startseite sollte jetzt so aussehen:</p>
 
@@ -663,28 +663,28 @@ Wir treffen uns jeden zweiten Freitag von 16:00 bis 18:00. Für den ersten Besuc
 <li>Lege im neuen Ordner <code>partials</code> die Datei <code>nav.html</code> an.</li>
 
 <li><p>Füge folgendes HTML in <code>nav.html</code> ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar navbar-expand-lg navbar-dark bg-dark&#34;</span>&gt;
-{% raw %}&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
-    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-brand&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;CoderDojo Linz&lt;/<span style="color:#f92672">a</span>&gt;
-    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-toggler&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">data-toggle</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;collapse&#34;</span> <span style="color:#a6e22e">data-target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#navbarSupportedContent&#34;</span> <span style="color:#a6e22e">aria-controls</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbarSupportedContent&#34;</span> <span style="color:#a6e22e">aria-expanded</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Toggle navigation&#34;</span>&gt;
-        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-toggler-icon&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
-    &lt;/<span style="color:#f92672">button</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;nav class=<span style="color:#a31515">&#34;navbar navbar-expand-lg navbar-dark bg-dark&#34;</span>&gt;
+{% raw %}&lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+    &lt;a class=<span style="color:#a31515">&#34;navbar-brand&#34;</span> href=<span style="color:#a31515">&#34;/&#34;</span>&gt;CoderDojo Linz&lt;/a&gt;
+    &lt;button class=<span style="color:#a31515">&#34;navbar-toggler&#34;</span> type=<span style="color:#a31515">&#34;button&#34;</span> data-toggle=<span style="color:#a31515">&#34;collapse&#34;</span> data-target=<span style="color:#a31515">&#34;#navbarSupportedContent&#34;</span> aria-controls=<span style="color:#a31515">&#34;navbarSupportedContent&#34;</span> aria-expanded=<span style="color:#a31515">&#34;false&#34;</span> aria-label=<span style="color:#a31515">&#34;Toggle navigation&#34;</span>&gt;
+        &lt;span class=<span style="color:#a31515">&#34;navbar-toggler-icon&#34;</span>&gt;&lt;/span&gt;
+    &lt;/button&gt;
 
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;collapse navbar-collapse&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbarSupportedContent&#34;</span>&gt;
-        &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-nav mr-auto&#34;</span>&gt;
-            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item {{ cond (eq .Page.File.Path &#34;</span><span style="color:#960050;background-color:#1e0010">\\</span><span style="color:#a6e22e">_index</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">md</span><span style="color:#960050;background-color:#1e0010">&#34;)</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">active</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">&#34;&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item&#34;</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link {{ cond (eq .Page.File.Path &#34;</span><span style="color:#960050;background-color:#1e0010">\\</span><span style="color:#a6e22e">about</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">md</span><span style="color:#960050;background-color:#1e0010">&#34;)</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">active</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">&#34;&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/about&#34;</span>&gt;About&lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item&#34;</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link {{ cond (eq .Page.File.Path &#34;</span><span style="color:#960050;background-color:#1e0010">\\</span><span style="color:#a6e22e">termine</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">md</span><span style="color:#960050;background-color:#1e0010">&#34;)</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">active</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">&#34;&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/termine&#34;</span>&gt;Termine&lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;/<span style="color:#f92672">ul</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;{% endraw %}
-&lt;/<span style="color:#f92672">nav</span>&gt;</code></pre></div></li>
+    &lt;div class=<span style="color:#a31515">&#34;collapse navbar-collapse&#34;</span> id=<span style="color:#a31515">&#34;navbarSupportedContent&#34;</span>&gt;
+        &lt;ul class=<span style="color:#a31515">&#34;navbar-nav mr-auto&#34;</span>&gt;
+            &lt;li class=<span style="color:#a31515">&#34;nav-item {{ cond (eq .Page.File.Path &#34;</span><span style="">\\</span>_index<span style="">.</span>md<span style="">&#34;)</span> <span style="">&#34;</span>active<span style="">&#34;</span> <span style="">&#34;&#34;</span> <span style="">}}&#34;</span>&gt;
+                &lt;a class=<span style="color:#a31515">&#34;nav-link&#34;</span> href=<span style="color:#a31515">&#34;/&#34;</span>&gt;Home&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=<span style="color:#a31515">&#34;nav-item&#34;</span>&gt;
+                &lt;a class=<span style="color:#a31515">&#34;nav-link {{ cond (eq .Page.File.Path &#34;</span><span style="">\\</span>about<span style="">.</span>md<span style="">&#34;)</span> <span style="">&#34;</span>active<span style="">&#34;</span> <span style="">&#34;&#34;</span> <span style="">}}&#34;</span> href=<span style="color:#a31515">&#34;/about&#34;</span>&gt;About&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=<span style="color:#a31515">&#34;nav-item&#34;</span>&gt;
+                &lt;a class=<span style="color:#a31515">&#34;nav-link {{ cond (eq .Page.File.Path &#34;</span><span style="">\\</span>termine<span style="">.</span>md<span style="">&#34;)</span> <span style="">&#34;</span>active<span style="">&#34;</span> <span style="">&#34;&#34;</span> <span style="">}}&#34;</span> href=<span style="color:#a31515">&#34;/termine&#34;</span>&gt;Termine&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;{% endraw %}
+&lt;/nav&gt;</code></pre></div></li>
 </ul>
 
 <p>Damit die aktive Seite hervorgehoben werden kann, kann man die <code>class</code> <code>avtive</code> setzen. Mit Hugo können wir abfragen, welchen Pfad die aktuelle Seite hat: <code>{% raw %}{{ cond (eq .Page.File.Path &quot;\\about.md&quot;) &quot;active&quot; &quot;&quot; }}{% endraw %}</code>.</p>
@@ -721,7 +721,7 @@ Wir treffen uns jeden zweiten Freitag von 16:00 bis 18:00. Für den ersten Besuc
 <h2 id="listen">Listen</h2>
 
 <p>In Hugo können nicht nur einzelne Seiten sondern auch Listen aus den Inhalten vom <code>content</code> Ordner erzeugt werden. Legen wir dazu ein paar neue Seiten mit Übungsbeispielen für das CoderDojo an. Damit das einfacher wird, legen wir zuerst aber ein Muster für ein Übungsbeispiel an. Lege dazu im Ordner <code>archetypes</code> eine neue Datei <code>uebungsbeispiele.md</code> an. Diese bekommt folgenden Inhalt:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}---
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}---
 title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
 description: &#34;...&#34;
 date: {{ .Date }}
@@ -735,7 +735,7 @@ draft: false
 <p>Damit können wir die Parameter vorbelegen. Wir führen hier auch die zwei neuen Parameter <code>description</code> und <code>level</code> ein, die wir später in unseren Layouttemplates verwenden können.</p>
 
 <p>Jetzt legen wir die neuen Dateien an:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new uebungsbeispiele/python/erste-schritte.md
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">hugo new uebungsbeispiele/python/erste-schritte.md
 hugo new uebungsbeispiele/python/geisterspiel.md
 hugo new uebungsbeispiele/python/_index.md
 hugo new uebungsbeispiele/scratch/fische-fangen.md
@@ -754,36 +754,36 @@ hugo new uebungsbeispiele/_index.md</code></pre></div>
 <p>Damit wir auch eine Liste aller Anleitungen anzeigen können, brauchen wir ein weiteres Layout. Füge dazu im Ordner <code>layouts</code> einen neuen Ordner <code>uebungsbeispiele</code> ein. Darin brauchen wir eine neue Datei <code>list.html</code>.</p>
 
 <p>Die Datei soll folgenden Inhalt haben:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mt-5&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}
+&lt;div class=<span style="color:#a31515">&#34;mt-5&#34;</span>&gt;&lt;/div&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-            &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}
+&lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+            &lt;h1&gt;{{ .Title }}
                 {{ if isset .Params &#34;img&#34; }}
-                &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/img/uebungsbeispiele/{{.Params.img}}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.Title}}&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;object-fit: contain; max-height: 40px; vertical-align: baseline; margin-left: 10px;&#34;</span>&gt;
+                &lt;img src=<span style="color:#a31515">&#34;/img/uebungsbeispiele/{{.Params.img}}&#34;</span> alt=<span style="color:#a31515">&#34;{{.Title}}&#34;</span> style=<span style="color:#a31515">&#34;object-fit: contain; max-height: 40px; vertical-align: baseline; margin-left: 10px;&#34;</span>&gt;
                 {{ end }}
-            &lt;/<span style="color:#f92672">h1</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mt-5&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row row-cols-1 row-cols-md-3&#34;</span>&gt;
+            &lt;/h1&gt;
+            &lt;div class=<span style="color:#a31515">&#34;mt-5&#34;</span>&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=<span style="color:#a31515">&#34;row row-cols-1 row-cols-md-3&#34;</span>&gt;
         {{ range (.Pages.ByParam &#34;Title&#34;).ByParam &#34;Level&#34; }}
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col mb-4&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card h-100&#34;</span>&gt;
-                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-header&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;badge badge-pill {{ cond (eq .Params.Level 1) &#34;</span><span style="color:#a6e22e">badge-primary</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">cond</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">eq</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Params</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Level</span> <span style="color:#a6e22e">2</span><span style="color:#960050;background-color:#1e0010">)</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">badge-success</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">badge-danger</span><span style="color:#960050;background-color:#1e0010">&#34;)</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;Level {{.Params.Level}}&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-body&#34;</span>&gt;
-                    &lt;<span style="color:#f92672">h5</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-title&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#f92672">h5</span>&gt;
-                    &lt;<span style="color:#f92672">h6</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-subtitle mb-2 text-muted&#34;</span>&gt;{{.Date.Format &#34;02.01.2006&#34;}}&lt;/<span style="color:#f92672">h6</span>&gt;
-                    &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-text&#34;</span>&gt;{{.Description}}&lt;/<span style="color:#f92672">p</span>&gt;
-                &lt;/<span style="color:#f92672">div</span>&gt;
-                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-footer&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.Permalink}}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-link&#34;</span>&gt;Zur Anleitung&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;col mb-4&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;card h-100&#34;</span>&gt;
+                &lt;div class=<span style="color:#a31515">&#34;card-header&#34;</span>&gt;&lt;span class=<span style="color:#a31515">&#34;badge badge-pill {{ cond (eq .Params.Level 1) &#34;</span>badge-primary<span style="">&#34;</span> <span style="">(</span>cond <span style="">(</span>eq <span style="">.</span>Params<span style="">.</span>Level 2<span style="">)</span> <span style="">&#34;</span>badge-success<span style="">&#34;</span> <span style="">&#34;</span>badge-danger<span style="">&#34;)</span> <span style="">}}&#34;</span>&gt;Level {{.Params.Level}}&lt;/span&gt;&lt;/div&gt;
+                &lt;div class=<span style="color:#a31515">&#34;card-body&#34;</span>&gt;
+                    &lt;h5 class=<span style="color:#a31515">&#34;card-title&#34;</span>&gt;{{.Title}}&lt;/h5&gt;
+                    &lt;h6 class=<span style="color:#a31515">&#34;card-subtitle mb-2 text-muted&#34;</span>&gt;{{.Date.Format &#34;02.01.2006&#34;}}&lt;/h6&gt;
+                    &lt;p class=<span style="color:#a31515">&#34;card-text&#34;</span>&gt;{{.Description}}&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=<span style="color:#a31515">&#34;card-footer&#34;</span>&gt;&lt;a href=<span style="color:#a31515">&#34;{{.Permalink}}&#34;</span> class=<span style="color:#a31515">&#34;card-link&#34;</span>&gt;Zur Anleitung&lt;/a&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
         {{ end }}
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 {{ end }}{% endraw %}</code></pre></div>
 <p>Im Template werden die einzelnen Pages aus diesem Ordner als <a href="https://getbootstrap.com/docs/4.5/components/card/" target="_blank">Bootstrap Cards</a> dargestellt. Wenn du jetzt die URL <code>http://127.0.0.1:1313/uebungsbeispiele/scratch/</code> eintippst, werden alle Seiten in diesem Ordner als Cards dargestellt:</p>
 
@@ -813,20 +813,20 @@ hugo new uebungsbeispiele/_index.md</code></pre></div>
 
 
 <p>Du kannst die neuen Seiten auch in die Navbar in der Datei <code>nav.html</code> einfügen. Füge dazu folgendes Element in das Menü ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}&lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item dropdown {{ cond (hasPrefix .Page.File.Path &#34;</span><span style="color:#a6e22e">uebungsbeispiele</span><span style="color:#960050;background-color:#1e0010">&#34;)</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">active</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">&#34;&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;
-    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link dropdown-toggle&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbarDropdown&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">data-toggle</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dropdown&#34;</span> <span style="color:#a6e22e">aria-haspopup</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">aria-expanded</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;false&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}&lt;li class=<span style="color:#a31515">&#34;nav-item dropdown {{ cond (hasPrefix .Page.File.Path &#34;</span>uebungsbeispiele<span style="">&#34;)</span> <span style="">&#34;</span>active<span style="">&#34;</span> <span style="">&#34;&#34;</span> <span style="">}}&#34;</span>&gt;
+    &lt;a class=<span style="color:#a31515">&#34;nav-link dropdown-toggle&#34;</span> href=<span style="color:#a31515">&#34;#&#34;</span> id=<span style="color:#a31515">&#34;navbarDropdown&#34;</span> role=<span style="color:#a31515">&#34;button&#34;</span> data-toggle=<span style="color:#a31515">&#34;dropdown&#34;</span> aria-haspopup=<span style="color:#a31515">&#34;true&#34;</span> aria-expanded=<span style="color:#a31515">&#34;false&#34;</span>&gt;
         Übungsbeispiele
-    &lt;/<span style="color:#f92672">a</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dropdown-menu&#34;</span> <span style="color:#a6e22e">aria-labelledby</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbarDropdown&#34;</span>&gt;
-        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dropdown-item&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/uebungsbeispiele&#34;</span>&gt;Übersicht&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dropdown-divider&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/a&gt;
+    &lt;div class=<span style="color:#a31515">&#34;dropdown-menu&#34;</span> aria-labelledby=<span style="color:#a31515">&#34;navbarDropdown&#34;</span>&gt;
+        &lt;a class=<span style="color:#a31515">&#34;dropdown-item&#34;</span> href=<span style="color:#a31515">&#34;/uebungsbeispiele&#34;</span>&gt;Übersicht&lt;/a&gt;
+        &lt;div class=<span style="color:#a31515">&#34;dropdown-divider&#34;</span>&gt;&lt;/div&gt;
         {{ with .Site.GetPage &#34;/uebungsbeispiele&#34; }}
         {{ range sort .Pages &#34;Params.Level&#34; &#34;asc&#34; }}
-        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dropdown-item&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.Permalink}}&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#f92672">a</span>&gt;
+        &lt;a class=<span style="color:#a31515">&#34;dropdown-item&#34;</span> href=<span style="color:#a31515">&#34;{{.Permalink}}&#34;</span>&gt;{{.Title}}&lt;/a&gt;
         {{ end }}
         {{ end }}
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">li</span>&gt;{% endraw %}</code></pre></div>
+    &lt;/div&gt;
+&lt;/li&gt;{% endraw %}</code></pre></div>
 
 
 
@@ -855,29 +855,29 @@ hugo new uebungsbeispiele/_index.md</code></pre></div>
 <h2 id="alternative-list-layouts">Alternative List Layouts</h2>
 
 <p>Wenn du für manche Listen (z.B. für die erste Ebene der Übungsanleitungen) an anderes List Layout verwenden möchtest, kannst du einen Parameter mit dem Layout angeben. Lege dazu zuerst ein neues Layout <code>topics-list.html</code> im Ordner <code>layouts/uebungsanleitungen</code> an. Der Inhalt des neuen Layouts sollte so aussehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mt-5&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}
+&lt;div class=<span style="color:#a31515">&#34;mt-5&#34;</span>&gt;&lt;/div&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row row-cols-1 row-cols-md-3&#34;</span>&gt;
+&lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;row row-cols-1 row-cols-md-3&#34;</span>&gt;
         {{ range sort .Pages &#34;Params.Level&#34; &#34;asc&#34; }}
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col mb-4&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card h-100&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;col mb-4&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;card h-100&#34;</span>&gt;
                 {{ if isset .Params &#34;img&#34; }}
-                &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/img/uebungsbeispiele/{{.Params.img}}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-img-top mx-auto&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.Title}}&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;object-fit: contain; max-height: 100px; text-align: center;margin-top: 20px;&#34;</span>&gt;
+                &lt;img src=<span style="color:#a31515">&#34;/img/uebungsbeispiele/{{.Params.img}}&#34;</span> class=<span style="color:#a31515">&#34;card-img-top mx-auto&#34;</span> alt=<span style="color:#a31515">&#34;{{.Title}}&#34;</span> style=<span style="color:#a31515">&#34;object-fit: contain; max-height: 100px; text-align: center;margin-top: 20px;&#34;</span>&gt;
                 {{ end }}
 
-                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-body&#34;</span>&gt;
-                    &lt;<span style="color:#f92672">h5</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-title&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#f92672">h5</span>&gt;
-                    &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-text&#34;</span>&gt;{{.Description}}&lt;/<span style="color:#f92672">p</span>&gt;
-                &lt;/<span style="color:#f92672">div</span>&gt;
+                &lt;div class=<span style="color:#a31515">&#34;card-body&#34;</span>&gt;
+                    &lt;h5 class=<span style="color:#a31515">&#34;card-title&#34;</span>&gt;{{.Title}}&lt;/h5&gt;
+                    &lt;p class=<span style="color:#a31515">&#34;card-text&#34;</span>&gt;{{.Description}}&lt;/p&gt;
+                &lt;/div&gt;
                 
-                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-footer&#34;</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.Permalink}}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;card-link&#34;</span>&gt;Zu den Anleitungen&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
+                &lt;div class=<span style="color:#a31515">&#34;card-footer&#34;</span>&gt;&lt;a href=<span style="color:#a31515">&#34;{{.Permalink}}&#34;</span> class=<span style="color:#a31515">&#34;card-link&#34;</span>&gt;Zu den Anleitungen&lt;/a&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
         {{ end }}
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 {{ end }}{% endraw %}</code></pre></div>
 <p>Hier wird kein Level angezeigt, dafür wird ein Image in den Carsds angezeigt. Images werden in Hugo in Ordner <code>static</code> gespeichert. Lege in diesem Ordner einen neuen Ordner <code>img</code> und darin <code>uebungsbeispiele</code> an. Kopiere die folgenden drei Dateien in diesen Ordner:</p>
 
@@ -919,48 +919,48 @@ hugo new uebungsbeispiele/_index.md</code></pre></div>
 <p>Für die CoderDojo Termine in Linz gibt es ein Service unter der URL <a href="https://participants-management-service.azurewebsites.net/api/events/?past=false" target="_blank">https://participants-management-service.azurewebsites.net/api/events/?past=false</a></p>
 
 <p>Wir legen für die Termine ein neues Layout im Ordner <code>layouts/_default</code> mit dem Namen <code>termine.html</code> an. Es soll folgenden Inhalt haben:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mt-5&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{% raw %}{{ define &#34;main&#34; }}
+&lt;div class=<span style="color:#a31515">&#34;mt-5&#34;</span>&gt;&lt;/div&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
+&lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
             {{ .Content }}
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 
     {{ $termine := getJSON &#34;https://participants-management-service.azurewebsites.net/api/events/?past=false&#34; }}
 
-    &lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;table&#34;</span>&gt;
-        &lt;<span style="color:#f92672">tr</span>&gt;
-            &lt;<span style="color:#f92672">th</span>&gt;Datum&lt;/<span style="color:#f92672">th</span>&gt;
-            &lt;<span style="color:#f92672">th</span>&gt;Beschreibung&lt;/<span style="color:#f92672">th</span>&gt;
-        &lt;/<span style="color:#f92672">tr</span>&gt;
+    &lt;table class=<span style="color:#a31515">&#34;table&#34;</span>&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Datum&lt;/th&gt;
+            &lt;th&gt;Beschreibung&lt;/th&gt;
+        &lt;/tr&gt;
         {{ range $termine }}
-        &lt;<span style="color:#f92672">tr</span>&gt;
-            &lt;<span style="color:#f92672">td</span>&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
                 {{ dateFormat &#34;02. Jan 2006&#34; .date }}
-            &lt;/<span style="color:#f92672">td</span>&gt;
-            &lt;<span style="color:#f92672">td</span>&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
                 {{ .location }}
-            &lt;/<span style="color:#f92672">td</span>&gt;
-        &lt;/<span style="color:#f92672">tr</span>&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
         {{ end }}
-    &lt;/<span style="color:#f92672">table</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
 {{ end }}{% endraw %}</code></pre></div>
 <p>Der obere Bereich sieht aus, wie in den anderen Layouts - hier wird der Content aus dem Markdown dargestellt. Dann werden die Termine aus dem Service geladen uns in einer Tabelle dargestellt.</p>
 
 <p>Jetzt müssen wir noch die Datei <code>termine.md</code> anpassen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">---
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">---
 title: &#34;Termine&#34;
 date: 2020-05-15T11:03:58+02:00
 layout: termine
 draft: false
 ---
 
-# Termine
-
+<span style="font-weight:bold"># Termine
+</span><span style="font-weight:bold"></span>
 Hier findest du die nächsten CoderDojo Termine.</code></pre></div>
 
 

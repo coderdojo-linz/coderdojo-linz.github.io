@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -167,16 +167,16 @@ oder ‘Kein Geist’ und der Spieler darf zur nächsten Station mit wieder 3 T�
 versteckten Geist weitergehen. Das Programm soll also auch mitzählen, wie oft der Spieler durch
 eine Tür geht, ohne dabei auf den Geist zu stoßen.<br />
 Ein möglicher Spielablauf könnte dann im Konsolen-Fenster so aussehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Geisterspiel
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Geisterspiel
 Hinter einer Tür verbirgt sich ein Geist.
-Welche Tür wählst du? 1, <span style="color:#ae81ff">2</span> oder 3?
-<span style="color:#ae81ff">1</span>
+Welche Tür wählst du? 1, 2 oder 3?
+1
 Kein Geist gefunden!
 Hinter einer Tür verbirgt sich ein Geist.
-Welche Tür wählst du? 1, <span style="color:#ae81ff">2</span> oder 3?
-<span style="color:#ae81ff">1</span>
+Welche Tür wählst du? 1, 2 oder 3?
+1
 Game over! Hier ist ein Geist!
-Deine Punkte: <span style="color:#ae81ff">1</span></code></pre></div>
+Deine Punkte: 1</code></pre></div>
 <h2 id="bestandteile-des-programms">Bestandteile des Programms</h2>
 
 <p>Zunächst öffnen wir Visual Studio IDE (Download auf <a href="https://visualstudio.microsoft.com" target="_blank">https://visualstudio.microsoft.com</a>) ODER
@@ -231,14 +231,14 @@ den Befehl else am ende des if Code-Blocks.
     - A &gt;= b &hellip; a ist größer oder gleich b</p>
 
 <p>Ein Beispiel für eine if Anweisung:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">int</span> tuer = <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">if</span>(tuer == <span style="color:#ae81ff">1</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#2b91af">int</span> tuer = 0;
+<span style="color:#00f">if</span>(tuer == 1)
 {
-    Console.WriteLine(<span style="color:#e6db74">&#34;gefunden&#34;</span>);
+    Console.WriteLine(<span style="color:#a31515">&#34;gefunden&#34;</span>);
 }
-<span style="color:#66d9ef">else</span>
+<span style="color:#00f">else</span>
 {
-    Console.WriteLine(<span style="color:#e6db74">&#34;leider nicht gefunden&#34;</span>);
+    Console.WriteLine(<span style="color:#a31515">&#34;leider nicht gefunden&#34;</span>);
 }
 </code></pre></div>
 <p><strong>SCHLEIFEN</strong><br />
@@ -246,38 +246,38 @@ Um Dinge zu beschreiben die sich immer auf die gleiche Art wiederholen sollen, s
 Bedingung erfüllt ist, gibt es sogenannte Schleifen, z.B die while-Schleife. Sie beginnt mit dem
 Befehl while gefolgt - wie bei der if-Anweisung - mit einer Bedingung und angefangen wird ebenfalls wieder mit einer geschwungenen Klammer.
 Beispiel:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">int</span> punkte = <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">while</span>(punkte &lt; <span style="color:#ae81ff">5</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#2b91af">int</span> punkte = 0;
+<span style="color:#00f">while</span>(punkte &lt; 5)
 {
-Console.WriteLine(<span style="color:#e6db74">&#34;gehe weiter&#34;</span>);
-punkte = punkte + <span style="color:#ae81ff">1</span>;
+Console.WriteLine(<span style="color:#a31515">&#34;gehe weiter&#34;</span>);
+punkte = punkte + 1;
 }
 </code></pre></div>
 <h2 id="eine-lösung">Eine Lösung</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> System;
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#00f">using</span> System;
+<span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Program</span>
 {
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Main()
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">void</span> Main()
     {
-        Console.WriteLine(<span style="color:#e6db74">&#34;Geisterspiel&#34;</span>);
-        <span style="color:#66d9ef">int</span> punkte = <span style="color:#ae81ff">0</span>;
-        <span style="color:#66d9ef">bool</span> gameover = <span style="color:#66d9ef">false</span>;
-        Random random = <span style="color:#66d9ef">new</span> Random();
-        <span style="color:#66d9ef">while</span> (gameover == <span style="color:#66d9ef">false</span>)
+        Console.WriteLine(<span style="color:#a31515">&#34;Geisterspiel&#34;</span>);
+        <span style="color:#2b91af">int</span> punkte = 0;
+        <span style="color:#2b91af">bool</span> gameover = <span style="color:#00f">false</span>;
+        Random random = <span style="color:#00f">new</span> Random();
+        <span style="color:#00f">while</span> (gameover == <span style="color:#00f">false</span>)
         {
-            Console.WriteLine(<span style="color:#e6db74">&#34;Hinter einer Tür verbirgt sich ein Geist.\nWelche Tür wählst du? 1, 2 oder 3?&#34;</span>);
-            <span style="color:#66d9ef">int</span> tuer = Convert.ToInt32(Console.ReadLine());
-            <span style="color:#66d9ef">int</span> geisterTuer = random.Next(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>);
-            <span style="color:#66d9ef">if</span> (tuer == geisterTuer)
+            Console.WriteLine(<span style="color:#a31515">&#34;Hinter einer Tür verbirgt sich ein Geist.\nWelche Tür wählst du? 1, 2 oder 3?&#34;</span>);
+            <span style="color:#2b91af">int</span> tuer = Convert.ToInt32(Console.ReadLine());
+            <span style="color:#2b91af">int</span> geisterTuer = random.Next(1, 4);
+            <span style="color:#00f">if</span> (tuer == geisterTuer)
             {
-                Console.WriteLine(<span style="color:#e6db74">&#34;Game over! Hier ist ein Geist!&#34;</span>);
-                Console.WriteLine(<span style="color:#e6db74">&#34;Deine Punkte: {0}&#34;</span>, punkte);
-                gameover = <span style="color:#66d9ef">true</span>;
+                Console.WriteLine(<span style="color:#a31515">&#34;Game over! Hier ist ein Geist!&#34;</span>);
+                Console.WriteLine(<span style="color:#a31515">&#34;Deine Punkte: {0}&#34;</span>, punkte);
+                gameover = <span style="color:#00f">true</span>;
             }
-            <span style="color:#66d9ef">else</span>
+            <span style="color:#00f">else</span>
             {
-                Console.WriteLine(<span style="color:#e6db74">&#34;Kein Geist gefunden!&#34;</span>);
-                punkte = punkte + <span style="color:#ae81ff">1</span>;
+                Console.WriteLine(<span style="color:#a31515">&#34;Kein Geist gefunden!&#34;</span>);
+                punkte = punkte + 1;
             }
         }
     }

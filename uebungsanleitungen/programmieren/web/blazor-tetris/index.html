@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -335,13 +335,13 @@
 <li><p>Lösche den Inhalt der Datei <em>css/site.css</em>. <strong>Achtung!</strong> Die Datei selbst muss erhalten bleiben. Lösche nur den <strong>Inhalt</strong>!</p></li>
 
 <li><p>In <em>Pages/index.cshtml</em> muss folgender Code stehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs">@page <span style="color:#e6db74">&#34;/&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs">@page <span style="color:#a31515">&#34;/&#34;</span>
 
 &lt;h1&gt;Tetris&lt;/h1&gt;
 </code></pre></div></li>
 
 <li><p>In <em>Shared/MainLayout.cshtml</em> muss folgender Code stehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs">@inherits BlazorLayoutComponent
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs">@inherits BlazorLayoutComponent
 
 @Body
 </code></pre></div></li>
@@ -435,49 +435,49 @@
 </p></li>
 
 <li><p><em>BoardContentExtensions.cs</em> muss folgenden Code enthalten. Es handelt sich um Hilfsfunktionen, mit denen man in Schleifen das Spielfeld durchlaufen (Englisch <em>iterate</em>) kann. Lass dir von jemandem aus dem Mentorenteam den Code erklären.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs"><span style="color:#66d9ef">namespace</span> BlazorTetris.Logic
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs"><span style="color:#00f">namespace</span> BlazorTetris.Logic
 {
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">delegate</span> <span style="color:#66d9ef">bool</span> CancelableIterator(<span style="color:#66d9ef">int</span> row, <span style="color:#66d9ef">int</span> col);
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">delegate</span> <span style="color:#66d9ef">void</span> Iterator(<span style="color:#66d9ef">int</span> row, <span style="color:#66d9ef">int</span> col);
+<span style="color:#00f">public</span> <span style="color:#00f">delegate</span> <span style="color:#2b91af">bool</span> CancelableIterator(<span style="color:#2b91af">int</span> row, <span style="color:#2b91af">int</span> col);
+<span style="color:#00f">public</span> <span style="color:#00f">delegate</span> <span style="color:#00f">void</span> Iterator(<span style="color:#2b91af">int</span> row, <span style="color:#2b91af">int</span> col);
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BoardContentExtensions</span>
+<span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">class</span> <span style="color:#2b91af">BoardContentExtensions</span>
 {
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> Iterate(<span style="color:#66d9ef">this</span> <span style="color:#66d9ef">string</span>[,] matrix, CancelableIterator iterator)
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#2b91af">bool</span> Iterate(<span style="color:#00f">this</span> <span style="color:#2b91af">string</span>[,] matrix, CancelableIterator iterator)
     {
-        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> row = <span style="color:#ae81ff">0</span>; row &lt; matrix.GetLength(<span style="color:#ae81ff">0</span>); row++)
+        <span style="color:#00f">for</span> (<span style="color:#2b91af">var</span> row = 0; row &lt; matrix.GetLength(0); row++)
         {
-            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> col = <span style="color:#ae81ff">0</span>; col &lt; matrix.GetLength(<span style="color:#ae81ff">1</span>); col++)
+            <span style="color:#00f">for</span> (<span style="color:#2b91af">var</span> col = 0; col &lt; matrix.GetLength(1); col++)
             {
-                <span style="color:#66d9ef">if</span> (!iterator(row, col))
+                <span style="color:#00f">if</span> (!iterator(row, col))
                 {
-                    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+                    <span style="color:#00f">return</span> <span style="color:#00f">false</span>;
                 }
             }
         }
 
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+        <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
     }
 
 
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Iterate(<span style="color:#66d9ef">this</span> <span style="color:#66d9ef">string</span>[,] matrix, Iterator iterator) =&gt;
-        Iterate(matrix, (row, col) =&gt; { iterator(row, col); <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>; });
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">void</span> Iterate(<span style="color:#00f">this</span> <span style="color:#2b91af">string</span>[,] matrix, Iterator iterator) =&gt;
+        Iterate(matrix, (row, col) =&gt; { iterator(row, col); <span style="color:#00f">return</span> <span style="color:#00f">true</span>; });
 }
 }
 </code></pre></div></li>
 
 <li><p>Ändere den Code in <em>Pages/Index.cshtml</em> wie folgt:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs">@page <span style="color:#e6db74">&#34;/&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs">@page <span style="color:#a31515">&#34;/&#34;</span>
 @using BlazorTetris.Logic
 
 &lt;h1&gt;Tetris&lt;/h1&gt;
 
 &lt;table&gt;
-@for (<span style="color:#66d9ef">var</span> row = <span style="color:#ae81ff">0</span>; row &lt; ROWS; row++)
+@for (<span style="color:#2b91af">var</span> row = 0; row &lt; ROWS; row++)
 {
     &lt;tr&gt;
-        @for (<span style="color:#66d9ef">var</span> col = <span style="color:#ae81ff">0</span>; col &lt; COLUMNS; col++)
+        @for (<span style="color:#2b91af">var</span> col = 0; col &lt; COLUMNS; col++)
         {
-            &lt;td class=<span style="color:#e6db74">&#34;@board[row, col]&#34;</span>&gt;&lt;/td&gt;
+            &lt;td class=<span style="color:#a31515">&#34;@board[row, col]&#34;</span>&gt;&lt;/td&gt;
         }
     &lt;/tr&gt;
 }
@@ -489,35 +489,35 @@
 }
 
 @functions {
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> ROWS = <span style="color:#ae81ff">16</span>;
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> COLUMNS = <span style="color:#ae81ff">10</span>;
+<span style="color:#00f">private</span> <span style="color:#00f">const</span> <span style="color:#2b91af">int</span> ROWS = 16;
+<span style="color:#00f">private</span> <span style="color:#00f">const</span> <span style="color:#2b91af">int</span> COLUMNS = 10;
 
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">string</span>[,] board;
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">bool</span> lost = <span style="color:#66d9ef">false</span>;
+<span style="color:#00f">private</span> <span style="color:#2b91af">string</span>[,] board;
+<span style="color:#00f">private</span> <span style="color:#2b91af">bool</span> lost = <span style="color:#00f">false</span>;
 
-<span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">void</span> OnInit()
+<span style="color:#00f">protected</span> <span style="color:#00f">override</span> <span style="color:#00f">void</span> OnInit()
 {
     InitializeBoard();
 }
 
-<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> InitializeBoard()
+<span style="color:#00f">private</span> <span style="color:#00f">void</span> InitializeBoard()
 {
-    board = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">string</span>[ROWS, COLUMNS];
-    board.Iterate((row, col) =&gt; board[row, col] = <span style="color:#66d9ef">string</span>.Empty);
+    board = <span style="color:#00f">new</span> <span style="color:#2b91af">string</span>[ROWS, COLUMNS];
+    board.Iterate((row, col) =&gt; board[row, col] = <span style="color:#2b91af">string</span>.Empty);
 }
 }
 </code></pre></div></li>
 
 <li><p>Ändere den Code in <em>wwwroot/css/site.css</em> wie folgt:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">table</span> {
-<span style="color:#66d9ef">border-collapse</span>: <span style="color:#66d9ef">collapse</span>;
-<span style="color:#66d9ef">border-spacing</span>: <span style="color:#ae81ff">0</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">table {
+<span style="color:#00f">border-collapse</span>: <span style="color:#00f">collapse</span>;
+<span style="color:#00f">border-spacing</span>: 0;
 }
 
-<span style="color:#f92672">td</span> {
-<span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-<span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-<span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+td {
+<span style="color:#00f">width</span>: 25<span style="color:#2b91af">px</span>;
+<span style="color:#00f">height</span>: 25<span style="color:#2b91af">px</span>;
+<span style="color:#00f">border</span>: 1<span style="color:#2b91af">px</span> <span style="color:#00f">solid</span> <span style="color:#00f">black</span>;
 }</code></pre></div></li>
 
 <li><p>Probiere, das Programm mit <em>F5</em> oder <em>Debug</em> / <em>Start Debugging</em> zu starten. Es müsste ein Kommandozeilenfenster und ein Browser aufgehen. Im Browser solltest du folgendes sehen:<br/>
@@ -559,44 +559,44 @@
 <li><p>Eine Liste von Farbnamen, die der Browser kennt, findest du unter <a href="https://en.wikipedia.org/wiki/Web_colors" target="_blank">https://en.wikipedia.org/wiki/Web_colors</a></p></li>
 
 <li><p>Erstelle eine neue Klasse <em>Logic/Pieces.cs</em> und füge folgenden Code ein. Lass dir von jemandem aus dem Mentorenteam den Code erklären.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs"><span style="color:#66d9ef">using</span> System;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs"><span style="color:#00f">using</span> System;
 
-<span style="color:#66d9ef">namespace</span> BlazorTetris.Logic
+<span style="color:#00f">namespace</span> BlazorTetris.Logic
 {
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Pieces</span>
+<span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Pieces</span>
 {
-    <span style="color:#75715e">// Color of Tetris pieces: https://en.wikipedia.org/wiki/Tetris#Tetromino_colors
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// Web color names: https://en.wikipedia.org/wiki/Web_colors
-</span><span style="color:#75715e"></span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">string</span> __ = <span style="color:#66d9ef">string</span>.Empty;
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">string</span> IC = <span style="color:#e6db74">&#34;I&#34;</span>;
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">string</span> JC = <span style="color:#e6db74">&#34;J&#34;</span>;
+    <span style="color:#008000">// Color of Tetris pieces: https://en.wikipedia.org/wiki/Tetris#Tetromino_colors
+</span><span style="color:#008000"></span>    <span style="color:#008000">// Web color names: https://en.wikipedia.org/wiki/Web_colors
+</span><span style="color:#008000"></span>
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">readonly</span> <span style="color:#2b91af">string</span> __ = <span style="color:#2b91af">string</span>.Empty;
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">readonly</span> <span style="color:#2b91af">string</span> IC = <span style="color:#a31515">&#34;I&#34;</span>;
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">readonly</span> <span style="color:#2b91af">string</span> JC = <span style="color:#a31515">&#34;J&#34;</span>;
 
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">string</span>[,] IH = {
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">readonly</span> <span style="color:#2b91af">string</span>[,] IH = {
         { IC, IC, IC, IC }
     };
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">string</span>[,] IV = {
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">readonly</span> <span style="color:#2b91af">string</span>[,] IV = {
         { IC },
         { IC },
         { IC },
         { IC }
     };
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">string</span>[,] JH = {
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">readonly</span> <span style="color:#2b91af">string</span>[,] JH = {
         { JC, JC, JC, JC },
         { __, __, __, JC }
     };
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">string</span>[,] JV = {
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">readonly</span> <span style="color:#2b91af">string</span>[,] JV = {
         { __, JC },
         { __, JC },
         { __, JC },
         { JC, JC }
     };
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">readonly</span> <span style="color:#66d9ef">string</span>[][,] AvailablePieces = <span style="color:#66d9ef">new</span>[] { IV, IH, JV, JH };
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">readonly</span> <span style="color:#2b91af">string</span>[][,] AvailablePieces = <span style="color:#00f">new</span>[] { IV, IH, JV, JH };
 
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">string</span>[,] GetRandomPiece()
+    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#2b91af">string</span>[,] GetRandomPiece()
     {
-        <span style="color:#66d9ef">var</span> random = <span style="color:#66d9ef">new</span> Random();
-        <span style="color:#66d9ef">return</span> (<span style="color:#66d9ef">string</span>[,])AvailablePieces[random.Next(<span style="color:#ae81ff">0</span>, AvailablePieces.Length)].Clone();
+        <span style="color:#2b91af">var</span> random = <span style="color:#00f">new</span> Random();
+        <span style="color:#00f">return</span> (<span style="color:#2b91af">string</span>[,])AvailablePieces[random.Next(0, AvailablePieces.Length)].Clone();
     }
 }
 }

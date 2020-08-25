@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -165,23 +165,23 @@
 <h1 id="erste-schritte-mit-bootstrap">Erste Schritte mit Bootstrap</h1>
 
 <p>Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+&lt;html lang=<span style="color:#a31515">&#34;en&#34;</span>&gt;
 
-&lt;<span style="color:#f92672">head</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-    &lt;<span style="color:#f92672">title</span>&gt;Scratch - Fang mich&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;head&gt;
+    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+    &lt;meta name=<span style="color:#a31515">&#34;viewport&#34;</span> content=<span style="color:#a31515">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;title&gt;Scratch - Fang mich&lt;/title&gt;
+&lt;/head&gt;
 
-&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
-        &lt;<span style="color:#f92672">h1</span>&gt;Scratch Fang-Mich &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+&lt;body&gt;
+    &lt;div class=<span style="color:#a31515">&#34;content&#34;</span>&gt;
+        &lt;h1&gt;Scratch Fang-Mich &lt;span class=<span style="color:#a31515">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/span&gt;&lt;/h1&gt;
 
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;intro&#34;</span>&gt;
-            &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/endgame.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Endgame&#34;</span>&gt;
-            &lt;<span style="color:#f92672">p</span>&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/<span style="color:#f92672">p</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;intro&#34;</span>&gt;
+            &lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;
+            &lt;p&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/p&gt;
+        &lt;/div&gt;
         ...</code></pre></div>
 <p>Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: <a href="initial-project.zip" target="_blank">Startprojekt</a></p>
 
@@ -220,34 +220,34 @@
 
 <ul>
 <li><p>Kopiert dazu die Zeile aus dem CSS Block in den <code>&lt;head&gt;</code> Bereich eures HTMLs:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+&lt;html lang=<span style="color:#a31515">&#34;en&#34;</span>&gt;
 
-&lt;<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-&lt;<span style="color:#f92672">title</span>&gt;Scratch - Fang mich&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css&#34;</span>
-    <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;head&gt;
+&lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+&lt;meta name=<span style="color:#a31515">&#34;viewport&#34;</span> content=<span style="color:#a31515">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+&lt;title&gt;Scratch - Fang mich&lt;/title&gt;
+&lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> href=<span style="color:#a31515">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css&#34;</span>
+    integrity=<span style="color:#a31515">&#34;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&#34;</span> crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>&gt;
+&lt;/head&gt;
 
 ...</code></pre></div></li>
 
 <li><p>Die Zeilen aus dem JS (JavaScript) Block kommen ans Ende des HTMLs direkt vor das schließende <code>&lt;/body&gt;</code>Tag:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">...
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">...
 
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://code.jquery.com/jquery-3.4.1.slim.min.js&#34;</span>
-    <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n&#34;</span>
-    <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&#34;</span>
-    <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&#34;</span>
-    <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js&#34;</span>
-    <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6&#34;</span>
-    <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;script src=<span style="color:#a31515">&#34;https://code.jquery.com/jquery-3.4.1.slim.min.js&#34;</span>
+    integrity=<span style="color:#a31515">&#34;sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n&#34;</span>
+    crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>&gt;&lt;/script&gt;
+&lt;script src=<span style="color:#a31515">&#34;https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js&#34;</span>
+    integrity=<span style="color:#a31515">&#34;sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo&#34;</span>
+    crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>&gt;&lt;/script&gt;
+&lt;script src=<span style="color:#a31515">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js&#34;</span>
+    integrity=<span style="color:#a31515">&#34;sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6&#34;</span>
+    crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>&gt;&lt;/script&gt;
+&lt;/body&gt;
 
-&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></li>
+&lt;/html&gt;</code></pre></div></li>
 </ul>
 
 <p>Wenn du das Ergebnis mit vorher vergleichst siehst du, dass sich die Schriftart, die Schriftgrößen und Abstände geändert haben. Sonst sieht alles noch wie vorher aus.</p>
@@ -255,12 +255,12 @@
 <h2 id="content">Content</h2>
 
 <p>Im ersten Schritt kümmern wir uns darum, dass der Inhalt nicht mehr am Rand klebt. Bootstrap stellt dafür die <a href="https://getbootstrap.com/docs/4.4/layout/overview/#containers" target="_blank">Container</a> zur Verfügung. Probiere verschiedene Container in deinem HTML aus. Füge folgenden Code dazu direkt unter das öffnende <code>&lt;body&gt;</code> Tag ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: red; height: 20px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-sm&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: green; height: 20px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-md&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: blue; height: 20px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-lg&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: yellow; height: 20px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-xl&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: orange; height: 20px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-fluid&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background-color: violet; height: 20px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div class=<span style="color:#a31515">&#34;container&#34;</span> style=<span style="color:#a31515">&#34;background-color: red; height: 20px;&#34;</span>&gt;&lt;/div&gt;
+&lt;div class=<span style="color:#a31515">&#34;container-sm&#34;</span> style=<span style="color:#a31515">&#34;background-color: green; height: 20px;&#34;</span>&gt;&lt;/div&gt;
+&lt;div class=<span style="color:#a31515">&#34;container-md&#34;</span> style=<span style="color:#a31515">&#34;background-color: blue; height: 20px;&#34;</span>&gt;&lt;/div&gt;
+&lt;div class=<span style="color:#a31515">&#34;container-lg&#34;</span> style=<span style="color:#a31515">&#34;background-color: yellow; height: 20px;&#34;</span>&gt;&lt;/div&gt;
+&lt;div class=<span style="color:#a31515">&#34;container-xl&#34;</span> style=<span style="color:#a31515">&#34;background-color: orange; height: 20px;&#34;</span>&gt;&lt;/div&gt;
+&lt;div class=<span style="color:#a31515">&#34;container-fluid&#34;</span> style=<span style="color:#a31515">&#34;background-color: violet; height: 20px;&#34;</span>&gt;&lt;/div&gt;</code></pre></div>
 <p>Wenn du dir das Ergebnis im Browser ansiehst und das Browserfenster vergrößerst und verkleinerst, wirst du sehen, dass manche Container je nach Größe des Fensters über die gesamte Breite gehen oder zentriert dargestellt werden:</p>
 
 
@@ -289,14 +289,14 @@
 
 
 <p>Wir wollen in unserem Projekt den <code>container-md</code> verwenden. Lösche dazu die Test-Zeilen von vorher wieder und füge stattdessen unter <code>&lt;div class=&quot;content&quot;&gt;</code> den Container ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-md&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;body&gt;
+    &lt;div class=<span style="color:#a31515">&#34;content&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;container-md&#34;</span>&gt;
         ...
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
     ...
-&lt;/<span style="color:#f92672">body</span>&gt;</code></pre></div>
+&lt;/body&gt;</code></pre></div>
 <p>Jetzt wird der Inhalt in der Mitte dargestellt, nur wenn das Fenster kleiner ist, wird die gesamte Breite genutzt:</p>
 
 
@@ -327,34 +327,34 @@
 <h2 id="jumbotron">Jumbotron</h2>
 
 <p>Als nächstes wollen wir den Einleitungsbereich hervorheben. In Bootstrap gibt&rsquo;s dafür den <a href="https://getbootstrap.com/docs/4.4/components/jumbotron/" target="_blank">Jumbotron</a>. Wir nehmen dazu die Elemente <code>&lt;h1&gt;</code> und <code>&lt;div class=&quot;intro&quot;&gt;</code> aus dem vorher angelegten Container raus und fügen stattdessen darüber einen Jumbotron mit den beiden Elementen ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jumbotron&#34;</span>&gt;
-            &lt;<span style="color:#f92672">h1</span>&gt;Scratch Fang-Mich &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;body&gt;
+    &lt;div class=<span style="color:#a31515">&#34;content&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;jumbotron&#34;</span>&gt;
+            &lt;h1&gt;Scratch Fang-Mich &lt;span class=<span style="color:#a31515">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/span&gt;&lt;/h1&gt;
 
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;intro&#34;</span>&gt;
-                &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/endgame.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Endgame&#34;</span>&gt;
-                &lt;<span style="color:#f92672">p</span>&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/<span style="color:#f92672">p</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;intro&#34;</span>&gt;
+                &lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;
+                &lt;p&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
 
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-md&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;container-md&#34;</span>&gt;
             ...</code></pre></div>
 <p>Das funktionert schon gut, dieser Bereich wird jetzt grau hinterlegt. Allerdings wird der Inhalt nicht wie im Container zentriert. Dazu können wir auch in den Jumbotron wieder einen Container einfügen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jumbotron&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-md&#34;</span>&gt;
-                &lt;<span style="color:#f92672">h1</span>&gt;Scratch Fang-Mich &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;body&gt;
+    &lt;div class=<span style="color:#a31515">&#34;content&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;jumbotron&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;container-md&#34;</span>&gt;
+                &lt;h1&gt;Scratch Fang-Mich &lt;span class=<span style="color:#a31515">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/span&gt;&lt;/h1&gt;
 
-                &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;intro&#34;</span>&gt;
-                    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/endgame.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Endgame&#34;</span>&gt;
-                    &lt;<span style="color:#f92672">p</span>&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/<span style="color:#f92672">p</span>&gt;
-                &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
+                &lt;div class=<span style="color:#a31515">&#34;intro&#34;</span>&gt;
+                    &lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;
+                    &lt;p&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
 
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-md&#34;</span>&gt;</code></pre></div>
+        &lt;div class=<span style="color:#a31515">&#34;container-md&#34;</span>&gt;</code></pre></div>
 <p>Um das Ergebnis noch weiter zu verbessern, fügen wir noch weitere Bootstrap Klassen hinzu:</p>
 
 <ul>
@@ -362,18 +362,18 @@
 <li>Die Version in der Überschrift soll kleiner und heller dargestellt werden. Wir ändern dazu das <code>&lt;span class=&quot;version&quot;&gt;</code> auf <code>&lt;small class=&quot;version text-muted&quot;&gt;</code>. Das Element <code>&lt;small&gt;</code> Tag steht in HTML generell zur Verfügung um Texte kleiner zu machen. Die Klasse <code>text-muted</code> kommt wieder von Bootstrap.</li>
 
 <li><p>Im <code>&lt;p&gt;</code> Tag fügen wir noch die Klasse <code>lead</code> von Bootstrap hinzu, um den Text hervorzuheben.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">body</span>&gt;
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jumbotron&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-md text-center&#34;</span>&gt;
-            &lt;<span style="color:#f92672">h1</span>&gt;Scratch Fang-Mich &lt;<span style="color:#f92672">small</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;version text-muted&#34;</span>&gt;Scratch 3.0&lt;/<span style="color:#f92672">small</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;body&gt;
+&lt;div class=<span style="color:#a31515">&#34;content&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;jumbotron&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;container-md text-center&#34;</span>&gt;
+            &lt;h1&gt;Scratch Fang-Mich &lt;small class=<span style="color:#a31515">&#34;version text-muted&#34;</span>&gt;Scratch 3.0&lt;/small&gt;&lt;/h1&gt;
 
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;intro&#34;</span>&gt;
-                &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/endgame.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Endgame&#34;</span>&gt;
-                &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lead&#34;</span>&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/<span style="color:#f92672">p</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div></li>
+            &lt;div class=<span style="color:#a31515">&#34;intro&#34;</span>&gt;
+                &lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;
+                &lt;p class=<span style="color:#a31515">&#34;lead&#34;</span>&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre></div></li>
 </ul>
 
 <p>Hier unser Ergebnis mit Jumbotron:</p>
@@ -408,25 +408,25 @@
 <p>Auch wenn wir Bootstrap verwenden, können wir eigene Styles zu unserem Projekt hinzufügen. Damit wir die Styles für die Webseite in einem eigenen File verwalten können, legen wir zuerst einen Ordner <em>styles</em> in unserem Projekt an, und in diesem Ordner brauchen wir ein neues File <em>style.css</em>.</p>
 
 <p>Im <code>head</code> unsere Webseite müssen wir einen Verweis auf das File einfügen. Wichtig ist, dass unsere eigenen Styles nach den Bootstrap Styles eingefügt werden. Nur so können wir die Bootstrap Styles gegebenenfalls überschreiben.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">head</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-    &lt;<span style="color:#f92672">title</span>&gt;Scratch - Fang mich&lt;/<span style="color:#f92672">title</span>&gt;
-    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css&#34;</span>
-        <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;
-    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;styles/style.css&#34;</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;head&gt;
+    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+    &lt;meta name=<span style="color:#a31515">&#34;viewport&#34;</span> content=<span style="color:#a31515">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+    &lt;title&gt;Scratch - Fang mich&lt;/title&gt;
+    &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> href=<span style="color:#a31515">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css&#34;</span>
+        integrity=<span style="color:#a31515">&#34;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&#34;</span> crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>&gt;
+    &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> href=<span style="color:#a31515">&#34;styles/style.css&#34;</span>&gt;
+&lt;/head&gt;</code></pre></div>
 <p>Legen wir gleich noch ein paar eigene Styles im File style.css an:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">h1</span><span style="color:#f92672">,</span>
-<span style="color:#f92672">h2</span> {
-    <span style="color:#66d9ef">text-transform</span>: <span style="color:#66d9ef">uppercase</span>;
-    margin-block-start: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">rem</span>;
-    margin-block-end: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">rem</span>;
-    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#0081e4</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">h1,
+h2 {
+    <span style="color:#00f">text-transform</span>: <span style="color:#00f">uppercase</span>;
+    margin-block-start: 2<span style="color:#2b91af">rem</span>;
+    margin-block-end: 1<span style="color:#2b91af">rem</span>;
+    <span style="color:#00f">color</span>: #0081e4;
 }
 
-<span style="color:#f92672">img</span> {
-    <span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+img {
+    <span style="color:#00f">max-width</span>: 100<span style="color:#2b91af">%</span>;
 }</code></pre></div>
 <p>Die Überschriften <code>&lt;h1&gt;</code> und <code>&lt;h2&gt;</code> werden dadurch in blauen Großbuchstaben mit etwas mehr Abstand als in Bootstrap dargestellt. Die <code>max-width</code> bei Bildern verhindert, dass diese bei kleineren Fenstern über den rechten Rand hinausgehen. Man könnte das in Bootstrap zwar auch mit der Klasse <code>img-fluid</code> lösen, diese müsste man aber zu jedem einzelnen Bild hinzufügen.</p>
 
@@ -441,51 +441,51 @@
 <p>Man kann die Angabe der Breite auch mit der Angabe des Displays kombinieren: <code>&lt;div class=&quot;col-md-8&quot;&gt;</code> = <sup>2</sup>&frasl;<sub>3</sub> der Breite aber nur nur bei Fenstern &gt;= medium (768px). Und es ist auch möglich mehrere dieser Angaben zu kombinieren: <code>&lt;div class=&quot;col-sm-8 col-md-6&quot;&gt;</code> = <sup>2</sup>&frasl;<sub>3</sub> der Breite bei Fenstern &gt;= small (576px) aber nur <sup>1</sup>&frasl;<sub>2</sub> der Breite bei Fenstern &gt;= medium (768px).</p>
 
 <p>Füge zum Testen folgenden Container am Beginn deines HTMLs ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;body&gt;
+    &lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
                 eine von drei Spalten
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
                 eine von drei Spalten
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
                 eine von drei Spalten
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">hr</span>/&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md&#34;</span>&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr/&gt;
+        &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col-md&#34;</span>&gt;
                 eine von drei Spalten wenn &gt;= medium
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md&#34;</span>&gt;
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col-md&#34;</span>&gt;
                 eine von drei Spalten wenn &gt;= medium
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md&#34;</span>&gt;
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col-md&#34;</span>&gt;
                 eine von drei Spalten wenn &gt;= medium
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">hr</span>/&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-8&#34;</span>&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr/&gt;
+        &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col-8&#34;</span>&gt;
                 große Spalte
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
                 kleine Spalte
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">hr</span>/&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-8&#34;</span>&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr/&gt;
+        &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col-md-8&#34;</span>&gt;
                 große Spalte wenn &gt;= medium
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
                 kleine Spalte wenn &gt;= medium
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">hr</span>/&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;hr/&gt;
+    &lt;/div&gt;
 
     ...</code></pre></div>
 <p>Je nach Größe des Fensters werden die Inhalte der zweiten und vierten Zeile entweder nebeneinander oder untereinander dargestellt:</p>
@@ -522,39 +522,39 @@
 <h3 id="grid-layout-anwenden">Grid Layout anwenden</h3>
 
 <p>In unserem Beispiel wenden wir das Grid Layout jetzt für die Überschriften <strong>Fisch bewegen</strong>, <strong>Haifisch bewegen</strong> und <strong>Fisch fangen</strong> an. Wir beginnen damit, nach der Überschrift eine Zeile einzufügen. In diese Zeile kommen zwei Spalten: eine für den gesamten Text und eine für das Bild. Bei Fenstergrößen von small und kleiner soll der Inhalt wie bisher untereinander dargestellt werden. Bei medium wollen wir 6 von 12 Spalten für den Text und bei large und größer nehmen wir 8 Spalten. Die restlichen der 12 Spalten werden für das Bild verwendet.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fisch-bewegen&#34;</span>&gt;Fisch bewegen&lt;/<span style="color:#f92672">h2</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2 id=<span style="color:#a31515">&#34;fisch-bewegen&#34;</span>&gt;Fisch bewegen&lt;/h2&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-6 col-lg-8&#34;</span>&gt;
-        &lt;<span style="color:#f92672">p</span>&gt;Damit du den Fisch bewegen kannst, musst er nach links und rechts sowie oben und unten bewegt
+&lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col-md-6 col-lg-8&#34;</span>&gt;
+        &lt;p&gt;Damit du den Fisch bewegen kannst, musst er nach links und rechts sowie oben und unten bewegt
             werden
-            können.&lt;/<span style="color:#f92672">p</span>&gt;
+            können.&lt;/p&gt;
 
-        &lt;<span style="color:#f92672">ol</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Wähle zuerst den Fisch aus, damit er blau umrandet ist.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Im Tab &lt;<span style="color:#f92672">em</span>&gt;Code&lt;/<span style="color:#f92672">em</span>&gt; kannst du deinen Fisch nun bewegen. Verwende das Ereignis &lt;<span style="color:#f92672">em</span>&gt;Wenn
+        &lt;ol&gt;
+            &lt;li&gt;Wähle zuerst den Fisch aus, damit er blau umrandet ist.&lt;/li&gt;
+            &lt;li&gt;Im Tab &lt;em&gt;Code&lt;/em&gt; kannst du deinen Fisch nun bewegen. Verwende das Ereignis &lt;em&gt;Wenn
                     Taste …
-                    gedrückt&lt;/<span style="color:#f92672">em</span>&gt; unter &lt;<span style="color:#f92672">em</span>&gt;Ereignisse&lt;/<span style="color:#f92672">em</span>&gt;.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Verknüpfe es jeweils mit einer Drehung &lt;<span style="color:#f92672">em</span>&gt;setze Richtung auf …&lt;/<span style="color:#f92672">em</span>&gt; unter
-                &lt;<span style="color:#f92672">em</span>&gt;Bewegung&lt;/<span style="color:#f92672">em</span>&gt;, damit
+                    gedrückt&lt;/em&gt; unter &lt;em&gt;Ereignisse&lt;/em&gt;.&lt;/li&gt;
+            &lt;li&gt;Verknüpfe es jeweils mit einer Drehung &lt;em&gt;setze Richtung auf …&lt;/em&gt; unter
+                &lt;em&gt;Bewegung&lt;/em&gt;, damit
                 der
-                Fisch in die richtige Richtung schaut.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Außerdem brauchen wir &lt;<span style="color:#f92672">em</span>&gt;gehe …er Schritt&lt;/<span style="color:#f92672">em</span>&gt;, um den Fisch zu bewegen.
-                &lt;<span style="color:#f92672">ul</span>&gt;
-                    &lt;<span style="color:#f92672">li</span>&gt;Für &lt;<span style="color:#f92672">em</span>&gt;Pfeil nach oben&lt;/<span style="color:#f92672">em</span>&gt; gedrückt: Richtung 0 Grad, gehe 10er-Schritte.&lt;/<span style="color:#f92672">li</span>&gt;
-                    &lt;<span style="color:#f92672">li</span>&gt;Für &lt;<span style="color:#f92672">em</span>&gt;Pfeil nach unten&lt;/<span style="color:#f92672">em</span>&gt; gedrückt: Richtung 180 Grad, gehe 10er-Schritte.&lt;/<span style="color:#f92672">li</span>&gt;
-                    &lt;<span style="color:#f92672">li</span>&gt;Für &lt;<span style="color:#f92672">em</span>&gt;Pfeil nach rechts&lt;/<span style="color:#f92672">em</span>&gt; gedrückt: Richtung 90 Grad, gehe 10er-Schritte.&lt;/<span style="color:#f92672">li</span>&gt;
-                    &lt;<span style="color:#f92672">li</span>&gt;Für &lt;<span style="color:#f92672">em</span>&gt;Pfeil nach links&lt;/<span style="color:#f92672">em</span>&gt; gedrückt: Richtung -90 Grad, gehe 10er-Schritte.&lt;/<span style="color:#f92672">li</span>&gt;
-                &lt;/<span style="color:#f92672">ul</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;/<span style="color:#f92672">ol</span>&gt;
+                Fisch in die richtige Richtung schaut.&lt;/li&gt;
+            &lt;li&gt;Außerdem brauchen wir &lt;em&gt;gehe …er Schritt&lt;/em&gt;, um den Fisch zu bewegen.
+                &lt;ul&gt;
+                    &lt;li&gt;Für &lt;em&gt;Pfeil nach oben&lt;/em&gt; gedrückt: Richtung 0 Grad, gehe 10er-Schritte.&lt;/li&gt;
+                    &lt;li&gt;Für &lt;em&gt;Pfeil nach unten&lt;/em&gt; gedrückt: Richtung 180 Grad, gehe 10er-Schritte.&lt;/li&gt;
+                    &lt;li&gt;Für &lt;em&gt;Pfeil nach rechts&lt;/em&gt; gedrückt: Richtung 90 Grad, gehe 10er-Schritte.&lt;/li&gt;
+                    &lt;li&gt;Für &lt;em&gt;Pfeil nach links&lt;/em&gt; gedrückt: Richtung -90 Grad, gehe 10er-Schritte.&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
 
-        &lt;<span style="color:#f92672">p</span>&gt;Je größer die Schrittanzahl, desto schneller ist dein Fisch.&lt;/<span style="color:#f92672">p</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/08-move-fish.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Fisch bewegen&#34;</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+        &lt;p&gt;Je größer die Schrittanzahl, desto schneller ist dein Fisch.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+        &lt;img src=<span style="color:#a31515">&#34;images/08-move-fish.png&#34;</span> alt=<span style="color:#a31515">&#34;Fisch bewegen&#34;</span>&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
 <p>Das ist das Ergebnis:</p>
 
 
@@ -583,245 +583,245 @@
 
 
 <p>Füge auch im Bereich <strong>Haifisch bewegen</strong> eine Row mit zwei Spalten ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;haifisch-bewegen&#34;</span>&gt;Haifisch bewegen&lt;/<span style="color:#f92672">h2</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2 id=<span style="color:#a31515">&#34;haifisch-bewegen&#34;</span>&gt;Haifisch bewegen&lt;/h2&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-6 col-lg-8&#34;</span>&gt;
-        &lt;<span style="color:#f92672">p</span>&gt;Jetzt soll der Haifisch im Aquarium herumschwimmen.&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col-md-6 col-lg-8&#34;</span>&gt;
+        &lt;p&gt;Jetzt soll der Haifisch im Aquarium herumschwimmen.&lt;/p&gt;
 
-        &lt;<span style="color:#f92672">ol</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Wähle dazu den Haifisch aus, damit er blau umrandet ist.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Im Tab &lt;<span style="color:#f92672">em</span>&gt;Code&lt;/<span style="color:#f92672">em</span>&gt; kannst du den Haifisch nun bewegen.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Unter &lt;<span style="color:#f92672">em</span>&gt;Ereignisse&lt;/<span style="color:#f92672">em</span>&gt; wähle &lt;<span style="color:#f92672">em</span>&gt;Wenn … angeklickt&lt;/<span style="color:#f92672">em</span>&gt;.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Anschließend wähle &lt;<span style="color:#f92672">em</span>&gt;wiederhole fortlaufend&lt;/<span style="color:#f92672">em</span>&gt; bei &lt;<span style="color:#f92672">em</span>&gt;Steuerung&lt;/<span style="color:#f92672">em</span>&gt; aus.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Bewege den Haifisch mit &lt;<span style="color:#f92672">em</span>&gt;gehe 10er-Schritt&lt;/<span style="color:#f92672">em</span>&gt;, &lt;<span style="color:#f92672">em</span>&gt;warte 0.1 Sek.” *Hinweis: Scratch
+        &lt;ol&gt;
+            &lt;li&gt;Wähle dazu den Haifisch aus, damit er blau umrandet ist.&lt;/li&gt;
+            &lt;li&gt;Im Tab &lt;em&gt;Code&lt;/em&gt; kannst du den Haifisch nun bewegen.&lt;/li&gt;
+            &lt;li&gt;Unter &lt;em&gt;Ereignisse&lt;/em&gt; wähle &lt;em&gt;Wenn … angeklickt&lt;/em&gt;.&lt;/li&gt;
+            &lt;li&gt;Anschließend wähle &lt;em&gt;wiederhole fortlaufend&lt;/em&gt; bei &lt;em&gt;Steuerung&lt;/em&gt; aus.&lt;/li&gt;
+            &lt;li&gt;Bewege den Haifisch mit &lt;em&gt;gehe 10er-Schritt&lt;/em&gt;, &lt;em&gt;warte 0.1 Sek.” *Hinweis: Scratch
                     akzeptiert
                     nur
-                    einen Punkt als Kommazeichen&lt;/<span style="color:#f92672">em</span>&gt;, &lt;<span style="color:#f92672">em</span>&gt;pralle vom Rand ab&lt;/<span style="color:#f92672">em</span>&gt; und &lt;<span style="color:#f92672">em</span>&gt;drehe dich um …
-                    Grad&lt;/<span style="color:#f92672">em</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Um etwas mehr Zufall reinzubringen, nimm im Menü &lt;<span style="color:#f92672">em</span>&gt;Operatoren&lt;/<span style="color:#f92672">em</span>&gt; den Block
-                &lt;<span style="color:#f92672">em</span>&gt;Zufallszahl
+                    einen Punkt als Kommazeichen&lt;/em&gt;, &lt;em&gt;pralle vom Rand ab&lt;/em&gt; und &lt;em&gt;drehe dich um …
+                    Grad&lt;/em&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Um etwas mehr Zufall reinzubringen, nimm im Menü &lt;em&gt;Operatoren&lt;/em&gt; den Block
+                &lt;em&gt;Zufallszahl
                     von 1
                     bis
-                    10&lt;/<span style="color:#f92672">em</span>&gt; und ziehe ihn an die Stelle der 15 Grad.&lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;/<span style="color:#f92672">ol</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/09-move-shark.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Haifisch bewegen&#34;</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+                    10&lt;/em&gt; und ziehe ihn an die Stelle der 15 Grad.&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+        &lt;img src=<span style="color:#a31515">&#34;images/09-move-shark.png&#34;</span> alt=<span style="color:#a31515">&#34;Haifisch bewegen&#34;</span>&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
 <p>Bei <strong>Fisch fangen</strong> brauchst du sogar zwei Rows, da es hier zwei beschreibende Texte mit jeweils einem Bild gibt. Um etwas Abstand zwischen den beiden Bereichen zu bekommen, kannst du noch <code>&lt;div class=&quot;my-4&quot;&gt;&lt;/div&gt;</code> einfügen. <code>my-4</code> steht für margin in y Richung, 4 ist die Größe (0 - 5 ist möglich).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fisch-fangen&#34;</span>&gt;Fisch fangen&lt;/<span style="color:#f92672">h2</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2 id=<span style="color:#a31515">&#34;fisch-fangen&#34;</span>&gt;Fisch fangen&lt;/h2&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-8&#34;</span>&gt;
-        &lt;<span style="color:#f92672">p</span>&gt;
+&lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col-md-8&#34;</span>&gt;
+        &lt;p&gt;
             Wenn der Haifisch den Fisch berührt, soll der Fisch ausgeblendet und wieder ins linke obere Eck
             gesetzt
             werden.
-        &lt;/<span style="color:#f92672">p</span>&gt;
+        &lt;/p&gt;
 
-        &lt;<span style="color:#f92672">ol</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Wähle dazu den Fisch aus, damit er blau umrandet ist.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Im Tab &lt;<span style="color:#f92672">em</span>&gt;Code&lt;/<span style="color:#f92672">em</span>&gt; kannst du den Fisch verschwinden lassen, sobald er den Haifisch
+        &lt;ol&gt;
+            &lt;li&gt;Wähle dazu den Fisch aus, damit er blau umrandet ist.&lt;/li&gt;
+            &lt;li&gt;Im Tab &lt;em&gt;Code&lt;/em&gt; kannst du den Fisch verschwinden lassen, sobald er den Haifisch
                 berührt.
-            &lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Unter &lt;<span style="color:#f92672">em</span>&gt;Ereignisse&lt;/<span style="color:#f92672">em</span>&gt; wähle &lt;<span style="color:#f92672">em</span>&gt;Wenn … angeklickt&lt;/<span style="color:#f92672">em</span>&gt;.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Setze den Fisch an Position -230 und 170 mittels &lt;<span style="color:#f92672">em</span>&gt;gehe zu x: -230, y: 170&lt;/<span style="color:#f92672">em</span>&gt;, um den
+            &lt;/li&gt;
+            &lt;li&gt;Unter &lt;em&gt;Ereignisse&lt;/em&gt; wähle &lt;em&gt;Wenn … angeklickt&lt;/em&gt;.&lt;/li&gt;
+            &lt;li&gt;Setze den Fisch an Position -230 und 170 mittels &lt;em&gt;gehe zu x: -230, y: 170&lt;/em&gt;, um den
                 Fisch
                 ins
-                linke obere Eck zu setzen, und &lt;<span style="color:#f92672">em</span>&gt;zeige dich&lt;/<span style="color:#f92672">em</span>&gt;.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Falls jetzt der Hai berührt wird (&lt;<span style="color:#f92672">em</span>&gt;Steuerung&lt;/<span style="color:#f92672">em</span>&gt; &lt;<span style="color:#f92672">em</span>&gt;falls … dann&lt;/<span style="color:#f92672">em</span>&gt;), dann &lt;<span style="color:#f92672">em</span>&gt;sende
+                linke obere Eck zu setzen, und &lt;em&gt;zeige dich&lt;/em&gt;.&lt;/li&gt;
+            &lt;li&gt;Falls jetzt der Hai berührt wird (&lt;em&gt;Steuerung&lt;/em&gt; &lt;em&gt;falls … dann&lt;/em&gt;), dann &lt;em&gt;sende
                     “berührt” an
-                    alle&lt;/<span style="color:#f92672">em</span>&gt;, &lt;<span style="color:#f92672">em</span>&gt;verstecke dich&lt;/<span style="color:#f92672">em</span>&gt;, &lt;<span style="color:#f92672">em</span>&gt;warte 5 Sekunden&lt;/<span style="color:#f92672">em</span>&gt;, &lt;<span style="color:#f92672">em</span>&gt;zeige dich&lt;/<span style="color:#f92672">em</span>&gt;, und
-                gehe wieder ins linke obere Eck mit &lt;<span style="color:#f92672">em</span>&gt;gehe zu x: -230, y: 170&lt;/<span style="color:#f92672">em</span>&gt;. Anschließend sage
-                &lt;<span style="color:#f92672">em</span>&gt;Willkommen
-                    zurück&lt;/<span style="color:#f92672">em</span>&gt; für 2 Sekunden.&lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;/<span style="color:#f92672">ol</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/10-touch-fish.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Fisch wird berührt&#34;</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+                    alle&lt;/em&gt;, &lt;em&gt;verstecke dich&lt;/em&gt;, &lt;em&gt;warte 5 Sekunden&lt;/em&gt;, &lt;em&gt;zeige dich&lt;/em&gt;, und
+                gehe wieder ins linke obere Eck mit &lt;em&gt;gehe zu x: -230, y: 170&lt;/em&gt;. Anschließend sage
+                &lt;em&gt;Willkommen
+                    zurück&lt;/em&gt; für 2 Sekunden.&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+        &lt;img src=<span style="color:#a31515">&#34;images/10-touch-fish.png&#34;</span> alt=<span style="color:#a31515">&#34;Fisch wird berührt&#34;</span>&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;my-4&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;div class=<span style="color:#a31515">&#34;my-4&#34;</span>&gt;&lt;/div&gt;
 
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-6&#34;</span>&gt;
-        &lt;<span style="color:#f92672">p</span>&gt;Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel “Game Over” sein.
-        &lt;/<span style="color:#f92672">p</span>&gt;
+&lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col-md-6&#34;</span>&gt;
+        &lt;p&gt;Wenn der Haifisch den Fisch berüht, soll er zwei mal schnappen und das Spiel “Game Over” sein.
+        &lt;/p&gt;
 
-        &lt;<span style="color:#f92672">ol</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Wähle dazu den Haifisch aus, damit er blau umrandet ist.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Im Tab &lt;<span style="color:#f92672">em</span>&gt;Code&lt;/<span style="color:#f92672">em</span>&gt; kannst du den Haifisch “Game Over” sagen lassen.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Unter &lt;<span style="color:#f92672">em</span>&gt;Ereignisse&lt;/<span style="color:#f92672">em</span>&gt; wähle &lt;<span style="color:#f92672">em</span>&gt;Wenn ich … empfange&lt;/<span style="color:#f92672">em</span>&gt;, der Hai reagiert somit auf die
+        &lt;ol&gt;
+            &lt;li&gt;Wähle dazu den Haifisch aus, damit er blau umrandet ist.&lt;/li&gt;
+            &lt;li&gt;Im Tab &lt;em&gt;Code&lt;/em&gt; kannst du den Haifisch “Game Over” sagen lassen.&lt;/li&gt;
+            &lt;li&gt;Unter &lt;em&gt;Ereignisse&lt;/em&gt; wähle &lt;em&gt;Wenn ich … empfange&lt;/em&gt;, der Hai reagiert somit auf die
                 vom
-                Fisch ausgelöste Nachricht.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Anschließend wähle &lt;<span style="color:#f92672">em</span>&gt;wiederhole 2 mal&lt;/<span style="color:#f92672">em</span>&gt; bei &lt;<span style="color:#f92672">em</span>&gt;Steuerung&lt;/<span style="color:#f92672">em</span>&gt; aus.&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Um den Haifisch schnappen zu lassen, gibt es unter &lt;<span style="color:#f92672">em</span>&gt;Aussehen&lt;/<span style="color:#f92672">em</span>&gt; verschiedene Varianten
+                Fisch ausgelöste Nachricht.&lt;/li&gt;
+            &lt;li&gt;Anschließend wähle &lt;em&gt;wiederhole 2 mal&lt;/em&gt; bei &lt;em&gt;Steuerung&lt;/em&gt; aus.&lt;/li&gt;
+            &lt;li&gt;Um den Haifisch schnappen zu lassen, gibt es unter &lt;em&gt;Aussehen&lt;/em&gt; verschiedene Varianten
                 des
-                Hais. Füge folgende Blöcke in den Wiederhol-Block: &lt;<span style="color:#f92672">em</span>&gt;wechsle zu Kostüm b&lt;/<span style="color:#f92672">em</span>&gt;, &lt;<span style="color:#f92672">em</span>&gt;warte
+                Hais. Füge folgende Blöcke in den Wiederhol-Block: &lt;em&gt;wechsle zu Kostüm b&lt;/em&gt;, &lt;em&gt;warte
                     0,3
-                    Sek.&lt;/<span style="color:#f92672">em</span>&gt;, &lt;<span style="color:#f92672">em</span>&gt;wechsel zu Kostüm a&lt;/<span style="color:#f92672">em</span>&gt;, &lt;<span style="color:#f92672">em</span>&gt;warte 0,3 Sek.&lt;/<span style="color:#f92672">em</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span>&gt;Und um den Haifisch “Game over” sagen zu lassen, füge einen neuen &lt;<span style="color:#f92672">em</span>&gt;Wenn ich …
-                    empfange&lt;/<span style="color:#f92672">em</span>&gt;
+                    Sek.&lt;/em&gt;, &lt;em&gt;wechsel zu Kostüm a&lt;/em&gt;, &lt;em&gt;warte 0,3 Sek.&lt;/em&gt;&lt;/li&gt;
+            &lt;li&gt;Und um den Haifisch “Game over” sagen zu lassen, füge einen neuen &lt;em&gt;Wenn ich …
+                    empfange&lt;/em&gt;
                 Block
-                hinzu und &lt;<span style="color:#f92672">em</span>&gt;sage “Game Over!” für 4.5 Sekunden&lt;/<span style="color:#f92672">em</span>&gt;.&lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;/<span style="color:#f92672">ol</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/11-touch-shark.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Hai wird berührt&#34;</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+                hinzu und &lt;em&gt;sage “Game Over!” für 4.5 Sekunden&lt;/em&gt;.&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+        &lt;img src=<span style="color:#a31515">&#34;images/11-touch-shark.png&#34;</span> alt=<span style="color:#a31515">&#34;Hai wird berührt&#34;</span>&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
 <p>Probiere selbst aus, in welcher Größe die Bilder bei welcher Fenstergöße am besten aussehen.</p>
 
 <h3 id="grid-layout-in-aufzählungen">Grid Layout in Aufzählungen</h3>
 
 <p>Du kannst rows und cols genauso innerhalb von Aufzählungen anwenden. Beginne dazu die row innerhalb von <code>li</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;buehne-und-figuren-anlegen&#34;</span>&gt;Bühne und Figuren anlegen&lt;/<span style="color:#f92672">h2</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2 id=<span style="color:#a31515">&#34;buehne-und-figuren-anlegen&#34;</span>&gt;Bühne und Figuren anlegen&lt;/h2&gt;
 
-&lt;<span style="color:#f92672">ol</span>&gt;
-    &lt;<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-6 col-xl-8&#34;</span>&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+        &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col-md-6 col-xl-8&#34;</span>&gt;
                 Als erstes legst du fest, wie dein Spielfeld aussehen soll. Wir brauchen zuerst das
                 Aquarium, in dem die Fische schwimmen. Wähle als erstes rechts unten unter
-                &lt;<span style="color:#f92672">em</span>&gt;Bühnenbild wählen&lt;/<span style="color:#f92672">em</span>&gt; ein
+                &lt;em&gt;Bühnenbild wählen&lt;/em&gt; ein
                 Bühnenbild aus, zum Beispiel ein Aquarium.
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-                &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/01-background.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Bühnenbild auswählen&#34;</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;my-4&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">li</span>&gt;
-    &lt;<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-6 col-xl-8&#34;</span>&gt;
-                Als nächstes lösche die Figur Scratchy mit dem Namen &lt;<span style="color:#f92672">em</span>&gt;Sprite 1&lt;/<span style="color:#f92672">em</span>&gt; indem du
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+                &lt;img src=<span style="color:#a31515">&#34;images/01-background.png&#34;</span> alt=<span style="color:#a31515">&#34;Bühnenbild auswählen&#34;</span>&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;my-4&#34;</span>&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col-md-6 col-xl-8&#34;</span>&gt;
+                Als nächstes lösche die Figur Scratchy mit dem Namen &lt;em&gt;Sprite 1&lt;/em&gt; indem du
                 mit der rechten
                 Maustaste darauf klickst. Im angezeigten Menü kannst du Scratchy löschen.
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/02-delete-scratchy.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Figur löschen&#34;</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;my-4&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">li</span>&gt;
-    &lt;<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-6 col-xl-8&#34;</span>&gt;
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;&lt;img src=<span style="color:#a31515">&#34;images/02-delete-scratchy.png&#34;</span> alt=<span style="color:#a31515">&#34;Figur löschen&#34;</span>&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;my-4&#34;</span>&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col-md-6 col-xl-8&#34;</span>&gt;
                 Jetzt brauchen wir einen Haifisch sowie einen Fisch, mit dem wir dem Haifisch
-                entkommen wollen. Klicke dazu auf &lt;<span style="color:#f92672">em</span>&gt;Figur wählen&lt;/<span style="color:#f92672">em</span>&gt; und füge einen Fisch
+                entkommen wollen. Klicke dazu auf &lt;em&gt;Figur wählen&lt;/em&gt; und füge einen Fisch
                 sowie einen Haifisch dazu.
                 Natürlich können es auch andere Figuren sein, zum Beispiel ein Käfer, der dem
                 Vogel davonfliegt oder eine Person, die dem
                 Löwen davonläuft.
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-                &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/03-fish.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Figuren hinzufügen&#34;</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;my-4&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">li</span>&gt;
-    &lt;<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-6 col-xl-8&#34;</span>&gt;
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+                &lt;img src=<span style="color:#a31515">&#34;images/03-fish.png&#34;</span> alt=<span style="color:#a31515">&#34;Figuren hinzufügen&#34;</span>&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;my-4&#34;</span>&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;div class=<span style="color:#a31515">&#34;row&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col-md-6 col-xl-8&#34;</span>&gt;
                 Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie
-                &lt;<span style="color:#f92672">em</span>&gt;Hai&lt;/<span style="color:#f92672">em</span>&gt; und &lt;<span style="color:#f92672">em</span>&gt;Fisch&lt;/<span style="color:#f92672">em</span>&gt;. Du kannst den Namen von Figuren ändern, indem
+                &lt;em&gt;Hai&lt;/em&gt; und &lt;em&gt;Fisch&lt;/em&gt;. Du kannst den Namen von Figuren ändern, indem
                 du unter der weißen Leinwand rechts neben dem Wort Figur auf das Namensfeld
                 klickst und den neuen Namen eingibst.
-            &lt;/<span style="color:#f92672">div</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-                &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/07-rename.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Figuren benennen&#34;</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">li</span>&gt;
-&lt;/<span style="color:#f92672">ol</span>&gt;</code></pre></div>
+            &lt;/div&gt;
+            &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+                &lt;img src=<span style="color:#a31515">&#34;images/07-rename.png&#34;</span> alt=<span style="color:#a31515">&#34;Figuren benennen&#34;</span>&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;</code></pre></div>
 <h2 id="carousel">Carousel</h2>
 
 <p>Das <a href="https://getbootstrap.com/docs/4.4/components/carousel/" target="_blank">Carousel</a> in Bootstrap kann Bilder in einer Slideshow darstellen. Wir ersetzten jetzt das Bild im Jumbotron durch drei Bilder, die automatisch abwechselnd angezeigt werden. In der einfachsten Form ersetzt du die Zeile <code>&lt;img src=&quot;images/endgame.png&quot; alt=&quot;Endgame&quot;&gt;</code> durch die folgenden:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;introCarousel&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel slide&#34;</span> <span style="color:#a6e22e">data-ride</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-inner&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-item active&#34;</span>&gt;
-            &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/carousel-1.png&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;d-block w-100&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Start&#34;</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-item&#34;</span>&gt;
-            &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/carousel-2.png&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;d-block w-100&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Game over&#34;</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-item&#34;</span>&gt;
-            &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/carousel-3.png&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;d-block w-100&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Restart&#34;</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div id=<span style="color:#a31515">&#34;introCarousel&#34;</span> class=<span style="color:#a31515">&#34;carousel slide&#34;</span> data-ride=<span style="color:#a31515">&#34;carousel&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;carousel-inner&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;carousel-item active&#34;</span>&gt;
+            &lt;img src=<span style="color:#a31515">&#34;images/carousel-1.png&#34;</span> class=<span style="color:#a31515">&#34;d-block w-100&#34;</span> alt=<span style="color:#a31515">&#34;Start&#34;</span>&gt;
+        &lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;carousel-item&#34;</span>&gt;
+            &lt;img src=<span style="color:#a31515">&#34;images/carousel-2.png&#34;</span> class=<span style="color:#a31515">&#34;d-block w-100&#34;</span> alt=<span style="color:#a31515">&#34;Game over&#34;</span>&gt;
+        &lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;carousel-item&#34;</span>&gt;
+            &lt;img src=<span style="color:#a31515">&#34;images/carousel-3.png&#34;</span> class=<span style="color:#a31515">&#34;d-block w-100&#34;</span> alt=<span style="color:#a31515">&#34;Restart&#34;</span>&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
 <p>Bei der <code>id</code> in der ersten Zeile verwenden wir <code>introCarousel</code>. Das brauchen wir später noch.</p>
 
 <p>Das Carousel funktioniert damit schon, aber die Bilder werden über den gesamten Bereich ausgedehnt. Um auch hier wieder die Größe je nach Fenstergröße angeben zu können, packen wir den gesamten <code>&lt;div class=&quot;intro&quot;&gt;</code> Bereich noch in eine row und col:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row justify-content-lg-center&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-lg-6&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;introCarousel&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel slide&#34;</span> <span style="color:#a6e22e">data-ride</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div class=<span style="color:#a31515">&#34;row justify-content-lg-center&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col-lg-6&#34;</span>&gt;
+        &lt;div id=<span style="color:#a31515">&#34;introCarousel&#34;</span> class=<span style="color:#a31515">&#34;carousel slide&#34;</span> data-ride=<span style="color:#a31515">&#34;carousel&#34;</span>&gt;
             ...
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
 <p>Bei Fenstergröße large und größer wird jetzt nur die Hälfte des Platzes verwendet. Durch <code>justify-content-lg-center</code> wird angegeben, dass nicht die ersten 6 Spalten verwendet werden, sonder dass der Inhalt in der Mitte platziert wird.</p>
 
 <h3 id="buttons-zum-vor-und-zurückblättern">Buttons zum Vor- und Zurückblättern</h3>
 
 <p>Füge im Carousel am Ende die folgenden beiden Buttons ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;introCarousel&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel slide&#34;</span> <span style="color:#a6e22e">data-ride</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div id=<span style="color:#a31515">&#34;introCarousel&#34;</span> class=<span style="color:#a31515">&#34;carousel slide&#34;</span> data-ride=<span style="color:#a31515">&#34;carousel&#34;</span>&gt;
     ...
 
-    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-control-prev&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#introCarousel&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">data-slide</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;prev&#34;</span>&gt;
-        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-control-prev-icon&#34;</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
-        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sr-only&#34;</span>&gt;Previous&lt;/<span style="color:#f92672">span</span>&gt;
-    &lt;/<span style="color:#f92672">a</span>&gt;
-    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-control-next&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#introCarousel&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">data-slide</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;next&#34;</span>&gt;
-        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-control-next-icon&#34;</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;
-        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sr-only&#34;</span>&gt;Next&lt;/<span style="color:#f92672">span</span>&gt;
-    &lt;/<span style="color:#f92672">a</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+    &lt;a class=<span style="color:#a31515">&#34;carousel-control-prev&#34;</span> href=<span style="color:#a31515">&#34;#introCarousel&#34;</span> role=<span style="color:#a31515">&#34;button&#34;</span> data-slide=<span style="color:#a31515">&#34;prev&#34;</span>&gt;
+        &lt;span class=<span style="color:#a31515">&#34;carousel-control-prev-icon&#34;</span> aria-hidden=<span style="color:#a31515">&#34;true&#34;</span>&gt;&lt;/span&gt;
+        &lt;span class=<span style="color:#a31515">&#34;sr-only&#34;</span>&gt;Previous&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class=<span style="color:#a31515">&#34;carousel-control-next&#34;</span> href=<span style="color:#a31515">&#34;#introCarousel&#34;</span> role=<span style="color:#a31515">&#34;button&#34;</span> data-slide=<span style="color:#a31515">&#34;next&#34;</span>&gt;
+        &lt;span class=<span style="color:#a31515">&#34;carousel-control-next-icon&#34;</span> aria-hidden=<span style="color:#a31515">&#34;true&#34;</span>&gt;&lt;/span&gt;
+        &lt;span class=<span style="color:#a31515">&#34;sr-only&#34;</span>&gt;Next&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre></div>
 <p>Unter <code>href</code> muss hier der Name, den wir vorher unter <code>id</code> vergeben haben, angegeben werden.</p>
 
 <p>Wir können auch unten im Carousel für jedes Bild eine Schaltfläche zum Umschalten einblenden. Füge dazu am Anfang des Carousels folgendes ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;introCarousel&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel slide&#34;</span> <span style="color:#a6e22e">data-ride</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel&#34;</span>&gt;
-    &lt;<span style="color:#f92672">ol</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-indicators&#34;</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">data-target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#introCarousel&#34;</span> <span style="color:#a6e22e">data-slide-to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;active&#34;</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">data-target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#introCarousel&#34;</span> <span style="color:#a6e22e">data-slide-to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">data-target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#introCarousel&#34;</span> <span style="color:#a6e22e">data-slide-to</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
-    &lt;/<span style="color:#f92672">ol</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div id=<span style="color:#a31515">&#34;introCarousel&#34;</span> class=<span style="color:#a31515">&#34;carousel slide&#34;</span> data-ride=<span style="color:#a31515">&#34;carousel&#34;</span>&gt;
+    &lt;ol class=<span style="color:#a31515">&#34;carousel-indicators&#34;</span>&gt;
+        &lt;li data-target=<span style="color:#a31515">&#34;#introCarousel&#34;</span> data-slide-to=<span style="color:#a31515">&#34;0&#34;</span> class=<span style="color:#a31515">&#34;active&#34;</span>&gt;&lt;/li&gt;
+        &lt;li data-target=<span style="color:#a31515">&#34;#introCarousel&#34;</span> data-slide-to=<span style="color:#a31515">&#34;1&#34;</span>&gt;&lt;/li&gt;
+        &lt;li data-target=<span style="color:#a31515">&#34;#introCarousel&#34;</span> data-slide-to=<span style="color:#a31515">&#34;2&#34;</span>&gt;&lt;/li&gt;
+    &lt;/ol&gt;
     
     ...
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+&lt;/div&gt;</code></pre></div>
 <p>Auch hier muss bei <code>data-target</code> wieder die richtige <code>id</code> angegeben werden.</p>
 
 <p>Nun können wir auch noch eine Beschriftung zu den Bildern geben:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;introCarousel&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel slide&#34;</span> <span style="color:#a6e22e">data-ride</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel&#34;</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div id=<span style="color:#a31515">&#34;introCarousel&#34;</span> class=<span style="color:#a31515">&#34;carousel slide&#34;</span> data-ride=<span style="color:#a31515">&#34;carousel&#34;</span>&gt;
     ...
 
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-inner&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-item active&#34;</span>&gt;
-            &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/carousel-1.png&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;d-block w-100&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Start&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-caption d-none d-md-block&#34;</span>&gt;
-                &lt;<span style="color:#f92672">h5</span>&gt;Mein erstes Scratch Spiel&lt;/<span style="color:#f92672">h5</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-item&#34;</span>&gt;
-            &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/carousel-2.png&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;d-block w-100&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Game over&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-caption d-none d-md-block&#34;</span>&gt;
-                &lt;<span style="color:#f92672">h5</span>&gt;Game Over&lt;/<span style="color:#f92672">h5</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-item&#34;</span>&gt;
-            &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/carousel-3.png&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;d-block w-100&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Restart&#34;</span>&gt;
-            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;carousel-caption d-none d-md-block&#34;</span>&gt;
-                &lt;<span style="color:#f92672">h5</span>&gt;Spiel beginnt neu&lt;/<span style="color:#f92672">h5</span>&gt;
-            &lt;/<span style="color:#f92672">div</span>&gt;
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;carousel-inner&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;carousel-item active&#34;</span>&gt;
+            &lt;img src=<span style="color:#a31515">&#34;images/carousel-1.png&#34;</span> class=<span style="color:#a31515">&#34;d-block w-100&#34;</span> alt=<span style="color:#a31515">&#34;Start&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;carousel-caption d-none d-md-block&#34;</span>&gt;
+                &lt;h5&gt;Mein erstes Scratch Spiel&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;carousel-item&#34;</span>&gt;
+            &lt;img src=<span style="color:#a31515">&#34;images/carousel-2.png&#34;</span> class=<span style="color:#a31515">&#34;d-block w-100&#34;</span> alt=<span style="color:#a31515">&#34;Game over&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;carousel-caption d-none d-md-block&#34;</span>&gt;
+                &lt;h5&gt;Game Over&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=<span style="color:#a31515">&#34;carousel-item&#34;</span>&gt;
+            &lt;img src=<span style="color:#a31515">&#34;images/carousel-3.png&#34;</span> class=<span style="color:#a31515">&#34;d-block w-100&#34;</span> alt=<span style="color:#a31515">&#34;Restart&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;carousel-caption d-none d-md-block&#34;</span>&gt;
+                &lt;h5&gt;Spiel beginnt neu&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 
     ...
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+&lt;/div&gt;</code></pre></div>
 
 
 
@@ -857,69 +857,69 @@
 <li>links wird das Menü dargestellt</li>
 
 <li><p>rechts wird der bisherige Inhalt dargestellt</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">body</span>&gt;
-&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row no-gutters&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;d-none d-md-block col-md-4 col-lg-3&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navigation&#34;</span>&gt;
-            <span style="color:#75715e">&lt;!-- Navigation --&gt;</span>
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;body&gt;
+&lt;div class=<span style="color:#a31515">&#34;row no-gutters&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;d-none d-md-block col-md-4 col-lg-3&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;navigation&#34;</span>&gt;
+            <span style="color:#008000">&lt;!-- Navigation --&gt;</span>
+        &lt;/div&gt;
+    &lt;/div&gt;
 
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col&#34;</span>&gt;
-        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;col&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;content&#34;</span>&gt;
             ...
-        &lt;/<span style="color:#f92672">div</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-<span style="color:#75715e">&lt;!-- scripts --&gt;</span>
+<span style="color:#008000">&lt;!-- scripts --&gt;</span>
 ...
-&lt;/<span style="color:#f92672">body</span>&gt;</code></pre></div></li>
+&lt;/body&gt;</code></pre></div></li>
 </ul>
 
 <p>Für die beiden neuen Bereiche <code>navigation</code> brauchen wir folgendes Styles:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">navigation</span> {
-    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">vh</span>;
-    <span style="color:#66d9ef">background-color</span>: <span style="color:#ae81ff">#343a40</span>;
-    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">auto</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">navigation</span> {
+    <span style="color:#00f">height</span>: 100<span style="color:#2b91af">vh</span>;
+    <span style="color:#00f">background-color</span>: #343a40;
+    <span style="color:#00f">padding</span>: 20<span style="color:#2b91af">px</span>;
+    <span style="color:#00f">overflow</span>: <span style="color:#00f">auto</span>;
 }
 
-.<span style="color:#a6e22e">content</span> {
-    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">vh</span>;
-    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">auto</span>;
+.<span style="color:#2b91af">content</span> {
+    <span style="color:#00f">height</span>: 100<span style="color:#2b91af">vh</span>;
+    <span style="color:#00f">overflow</span>: <span style="color:#00f">auto</span>;
 }</code></pre></div>
 <p>Wir legen dadurch die Höhe jeweils auf die Fensterhöhe fest. Durch <code>overflow: auto</code> erscheinen Scrollbalken, wenn der Inhalt zu lang wird. Im Unterscheid zu vorher kann jetzt aber in den beiden Bereichen getrennt gescrollt werden.</p>
 
 <p>Nun müssen wir noch die den Navigationsbereich befüllen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navigation&#34;</span>&gt;
-    &lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fische-navbar&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar navbar-dark bg-dark&#34;</span>&gt;
-        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-brand&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#top&#34;</span>&gt;Fische fangen&lt;/<span style="color:#f92672">a</span>&gt;
-        &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-nav mr-auto mt-2 mt-lg-0&#34;</span>&gt;
-            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item&#34;</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#buehne-und-figuren-anlegen&#34;</span>&gt;Bühne und Figuren&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item&#34;</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#fisch-bewegen&#34;</span>&gt;Fisch bewegen&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item&#34;</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#haifisch-bewegen&#34;</span>&gt;Haifisch bewegen&lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item&#34;</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#fisch-fangen&#34;</span>&gt;Fisch fangen&lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-item&#34;</span>&gt;
-                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nav-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#weitere-ideen&#34;</span>&gt;Weitere Ideen&lt;/<span style="color:#f92672">a</span>&gt;
-            &lt;/<span style="color:#f92672">li</span>&gt;
-        &lt;/<span style="color:#f92672">ul</span>&gt;
-    &lt;/<span style="color:#f92672">nav</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> &lt;div class=<span style="color:#a31515">&#34;navigation&#34;</span>&gt;
+    &lt;nav id=<span style="color:#a31515">&#34;fische-navbar&#34;</span> class=<span style="color:#a31515">&#34;navbar navbar-dark bg-dark&#34;</span>&gt;
+        &lt;a class=<span style="color:#a31515">&#34;navbar-brand&#34;</span> href=<span style="color:#a31515">&#34;#top&#34;</span>&gt;Fische fangen&lt;/a&gt;
+        &lt;ul class=<span style="color:#a31515">&#34;navbar-nav mr-auto mt-2 mt-lg-0&#34;</span>&gt;
+            &lt;li class=<span style="color:#a31515">&#34;nav-item&#34;</span>&gt;
+                &lt;a class=<span style="color:#a31515">&#34;nav-link&#34;</span> href=<span style="color:#a31515">&#34;#buehne-und-figuren-anlegen&#34;</span>&gt;Bühne und Figuren&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=<span style="color:#a31515">&#34;nav-item&#34;</span>&gt;
+                &lt;a class=<span style="color:#a31515">&#34;nav-link&#34;</span> href=<span style="color:#a31515">&#34;#fisch-bewegen&#34;</span>&gt;Fisch bewegen&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=<span style="color:#a31515">&#34;nav-item&#34;</span>&gt;
+                &lt;a class=<span style="color:#a31515">&#34;nav-link&#34;</span> href=<span style="color:#a31515">&#34;#haifisch-bewegen&#34;</span>&gt;Haifisch bewegen&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=<span style="color:#a31515">&#34;nav-item&#34;</span>&gt;
+                &lt;a class=<span style="color:#a31515">&#34;nav-link&#34;</span> href=<span style="color:#a31515">&#34;#fisch-fangen&#34;</span>&gt;Fisch fangen&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=<span style="color:#a31515">&#34;nav-item&#34;</span>&gt;
+                &lt;a class=<span style="color:#a31515">&#34;nav-link&#34;</span> href=<span style="color:#a31515">&#34;#weitere-ideen&#34;</span>&gt;Weitere Ideen&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;</code></pre></div>
 <p>Damit das Menü verschwindet, wenn das Fenster zu klein wird, müssen wir zum <code>&lt;div class=&quot;navigation&quot;&gt;</code> noch folgende Klassen hinzufügen: <code>d-none d-md-block</code>. <code>d</code> steht für display. <code>d-none</code> heißt, ein Element wird nicht dargestellt. <code>d-md-block</code> heißt, wenn das Fenster &gt;= medium ist, soll das Element dargestellt werden.</p>
 
 <p>Der erste Link verweist auf <code>href=&quot;#top&quot;</code>, es gibt aber noch kein Element mit <code>id=&quot;top&quot;</code>. Wir fügen daher direkt über dem Jumbotron folgendes ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;top&#34;</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;a id=<span style="color:#a31515">&#34;top&#34;</span>&gt;&lt;/a&gt;</code></pre></div>
 <p>Damit beim Scrollen die Menüelemente hervorgehoben werden, müssen wir jetzt noch unserem <code>&lt;div class=&quot;content&quot;&gt;</code> beibringen, dass es mit der <code>fische-navbar</code> verbunden ist:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span> <span style="color:#a6e22e">data-spy</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scroll&#34;</span> <span style="color:#a6e22e">data-target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#fische-navbar&#34;</span> <span style="color:#a6e22e">data-offset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div class=<span style="color:#a31515">&#34;content&#34;</span> data-spy=<span style="color:#a31515">&#34;scroll&#34;</span> data-target=<span style="color:#a31515">&#34;#fische-navbar&#34;</span> data-offset=<span style="color:#a31515">&#34;0&#34;</span>&gt;</code></pre></div>
 
 
 

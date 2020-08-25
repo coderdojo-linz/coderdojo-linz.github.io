@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -392,17 +392,17 @@
 <p>So wie du auch in Scratch eine eigene Erweiterung für den Malstift geladen hast, musst du auch in Python eine Erweiterung (Package) für das Zeichnen mit der Schildkröte (<code>turtle</code>) laden.</p>
 
 <p>Auch für das Zufallszahlen (die wir dann für die zufällige Auswahl der Farben brauchen) ist es notwendig eine Funktion aus dem Package <code>random</code> zu laden.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> turtle <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> random</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> turtle <span style="color:#00f">import</span> *
+<span style="color:#00f">from</span> random <span style="color:#00f">import</span> random</code></pre></div>
 <p>Da wir aus dem Package turtle mehrere Funktionen benötigen, laden wir hier alle Funktionen (mit dem Symbol *). Aus dem Package <code>random</code> laden wir nur die Funktion <code>random</code>.</p>
 
 <h3 id="neue-funktion-zum-zeichnen-von-vielecken">Neue Funktion zum Zeichnen von Vielecken</h3>
 
 <p>So wie wir in Scratch einen eigenen Block zum Zeichnen von Vielecken erstellt haben, definieren wir hier in Python eine eigene Funktion <code>vieleck</code> ebenfalls mit den Eingabewerten <code>n</code> und <code>a</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">vieleck</span>(n, a):
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> vieleck(n, a):
+    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(n):
         forward(a)
-        right(<span style="color:#ae81ff">360</span><span style="color:#f92672">/</span>n)</code></pre></div>
+        right(360/n)</code></pre></div>
 <p>Das n-malige Wiederholen geschieht mit einer <code>for</code>-Schleife, wobei die Variable <code>i</code> mitzählt.</p>
 
 <p>Achtung: In Python beginnt man mit 0 beim Zählen und nicht bei 1 und die Zahl, die in range angegeben ist, zählt nicht mehr dazu. Also, wenn n = 10 ist, dann zählt i in range(n)von 0, 1, 2, … bis 9. Das sind aber dann trotzdem 10 Zahlen, du kannst gerne nachzählen.</p>
@@ -412,9 +412,9 @@
 <h3 id="festlegen-von-variablen-1">Festlegen von Variablen</h3>
 
 <p>Wir definieren, so wie Scratch, Variablen für die Anzahl der Vielecke und die Anzahl der Ecken eines Vielecks. Auch die Seitenlänge des Vielecks legen wir gleich fest. Um deinen Python-Code auch später noch gut zu verstehen, ist es hilfreich, wenn du Kommentare einfügst. Alles was du hinter einem # schreibst, dient als Erklärung für dich, hat aber keinen Einfluss auf das Programm selbst.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">anzahl <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span> <span style="color:#75715e"># Anzahl der Vielecke</span>
-n <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>       <span style="color:#75715e"># Anzahl der Ecken des Vielecks</span>
-a <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>      <span style="color:#75715e"># Seitenlänge des Vielecks</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">anzahl = 30 <span style="color:#008000"># Anzahl der Vielecke</span>
+n = 9       <span style="color:#008000"># Anzahl der Ecken des Vielecks</span>
+a = 50      <span style="color:#008000"># Seitenlänge des Vielecks</span></code></pre></div>
 <h3 id="mit-vielen-vielecken-ein-buntes-muster-zeichnen-1">Mit vielen Vielecken ein buntes Muster zeichnen</h3>
 
 <p>Nun können wir mit dem eigentlichen Programm beginnen:</p>
@@ -428,14 +428,14 @@ a <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>    
 <li>Das Vieleck zeichnen wir mit der zuvor definierten Funktion.</li>
 
 <li><p>Nach jedem Vieleck machen wir eine Drehung um 360/anzahl Grad.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">clear()
-speed(<span style="color:#ae81ff">1000</span>)
-pensize(<span style="color:#ae81ff">3</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">clear()
+speed(1000)
+pensize(3)
 
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(anzahl):
+<span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(anzahl):
 pencolor(random(), random(), random())
 vieleck(n, a)
-left(<span style="color:#ae81ff">360</span><span style="color:#f92672">/</span>anzahl)</code></pre></div></li>
+left(360/anzahl)</code></pre></div></li>
 </ul>
 
 <p>Wenn du diesen Code fertig geschrieben hast, speichere die Datei nochmals mit <code>File -&gt; Save</code> (oder drücke STRG+S). Um dann das Programm zu starten kannst du im Menü <code>Run -&gt; Run Module</code> auswählen oder schneller einfach F5 drücken.</p>

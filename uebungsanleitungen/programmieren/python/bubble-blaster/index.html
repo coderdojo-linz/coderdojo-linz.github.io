@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -203,26 +203,26 @@
 <h2 id="laden-von-packages">Laden von Packages</h2>
 
 <p>Für dieses Beispiel verwenden wir das Package <code>tkinter</code>. Um Zufallszahlen zu genierieren, brauchen wir auch das Package <code>random</code>. Für die Anzeige der Zeit und kurzen Pausen zwischen den Bewegungen der Bubbles brauchen wir die Funktionen <code>sleep</code> und <code>time</code> aus dem Package time.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> sleep, time</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> tkinter <span style="color:#00f">import</span> *
+<span style="color:#00f">from</span> random <span style="color:#00f">import</span> *
+<span style="color:#00f">from</span> time <span style="color:#00f">import</span> sleep, time</code></pre></div>
 <h2 id="ein-fenster-mit-einer-leinwand-erstellen">Ein Fenster mit einer Leinwand erstellen</h2>
 
 <p>Zuerst erzeugen wir ein neues Fenster, das wir <code>window</code> nennen. Als Titel wählen wir „Bubble Blaster“). Die Leinwand wird 500 Pixel hoch und 800 Pixel breit, der Hintergrund ist dunkelblau.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Leinwand erstellen</span>
-H <span style="color:#f92672">=</span> <span style="color:#ae81ff">500</span>
-B <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>
-window <span style="color:#f92672">=</span> Tk()
-window<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Bubble Blaster&#34;</span>)
-c <span style="color:#f92672">=</span> Canvas(window, width<span style="color:#f92672">=</span>B, height <span style="color:#f92672">=</span> H, bg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;darkblue&#34;</span>)
-c<span style="color:#f92672">.</span>pack()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Leinwand erstellen</span>
+H = 500
+B = 800
+window = Tk()
+window.title(<span style="color:#a31515">&#34;Bubble Blaster&#34;</span>)
+c = Canvas(window, width=B, height = H, bg = <span style="color:#a31515">&#34;darkblue&#34;</span>)
+c.pack()</code></pre></div>
 <h2 id="das-u-boot-laden">Das U-Boot laden</h2>
 
 <p>Für das U-Boot laden wir ein Bild, das du <a href="img/uboot.png" target="_blank">hier</a> herunterladen kannst. Speichere dieses Bild in das gleiche Verzeichnis wie dein Python-Programm. Das geladene Bild positionieren wir dann in der Mitte der Leinwand (als x = B/2 und y = H/2). Den U-Boot Radius brauchen wir dann etwas später.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># U-Boot zeichnen</span>
-img <span style="color:#f92672">=</span> PhotoImage(file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;uboot.png&#34;</span>)
-uboot <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_image(B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, image<span style="color:#f92672">=</span>img)
-UBOOT_R <span style="color:#f92672">=</span> <span style="color:#ae81ff">45</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># U-Boot zeichnen</span>
+img = PhotoImage(file=<span style="color:#a31515">&#34;uboot.png&#34;</span>)
+uboot = c.create_image(B/2, H/2, image=img)
+UBOOT_R = 45</code></pre></div>
 <h2 id="das-u-boot-steuern">Das U-Boot steuern</h2>
 
 <p>Das U-Boot soll mit den Pfeiltasten bewegt werden. Bei jedem Tastendruck ändert sich die Position des U-Bootes um die U-Boot Geschwindigkeit, die wir hier mit 10 festlegen.</p>
@@ -232,23 +232,23 @@ UBOOT_R <span style="color:#f92672">=</span> <span style="color:#ae81ff">45</spa
 <li>Bei Pfeiltaste „unten“ wird die y-Koordinate größer, bei „oben“ wird die y-Koordinate kleiner. (Der Koordinatenursprung ist links oben!) die x-Koordinate bleibt gleich.</li>
 
 <li><p>Damit das U-Boot sich nicht über den Rand der Leinwand hinausbewegen kann, fragen wir zuerst die Koordinaten x, y des U-Boots ab. Die Bewegung des U-Boots wird nur dann durchgeführt, wenn das U-Boot auch nach der Bewegung innerhalb der Leinwand bleibt.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># U-Boot steuern</span>
-UBOOT_GESCHW <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">uboot_bewegen</span>(event):
-x, y <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(uboot)
-<span style="color:#66d9ef">if</span> event<span style="color:#f92672">.</span>keysym <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Up&#34;</span>:
-    <span style="color:#66d9ef">if</span> y <span style="color:#f92672">&gt;=</span> UBOOT_GESCHW:
-        c<span style="color:#f92672">.</span>move(uboot, <span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span>UBOOT_GESCHW)
-<span style="color:#66d9ef">elif</span> event<span style="color:#f92672">.</span>keysym <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Down&#34;</span>:
-    <span style="color:#66d9ef">if</span> y <span style="color:#f92672">&lt;=</span> H <span style="color:#f92672">-</span> UBOOT_GESCHW:
-        c<span style="color:#f92672">.</span>move(uboot, <span style="color:#ae81ff">0</span>, UBOOT_GESCHW)
-<span style="color:#66d9ef">elif</span> event<span style="color:#f92672">.</span>keysym <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Left&#34;</span>:
-    <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;=</span> UBOOT_GESCHW:
-        c<span style="color:#f92672">.</span>move(uboot, <span style="color:#f92672">-</span>UBOOT_GESCHW, <span style="color:#ae81ff">0</span>)
-<span style="color:#66d9ef">elif</span> event<span style="color:#f92672">.</span>keysym <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Right&#34;</span>:
-    <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&lt;=</span> B <span style="color:#f92672">-</span> UBOOT_GESCHW:
-        c<span style="color:#f92672">.</span>move(uboot, UBOOT_GESCHW, <span style="color:#ae81ff">0</span>)
-c<span style="color:#f92672">.</span>bind_all(<span style="color:#e6db74">&#34;&lt;Key&gt;&#34;</span>, uboot_bewegen)</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># U-Boot steuern</span>
+UBOOT_GESCHW = 10
+<span style="color:#00f">def</span> uboot_bewegen(event):
+x, y = c.coords(uboot)
+<span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
+    <span style="color:#00f">if</span> y &gt;= UBOOT_GESCHW:
+        c.move(uboot, 0, -UBOOT_GESCHW)
+<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
+    <span style="color:#00f">if</span> y &lt;= H - UBOOT_GESCHW:
+        c.move(uboot, 0, UBOOT_GESCHW)
+<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
+    <span style="color:#00f">if</span> x &gt;= UBOOT_GESCHW:
+        c.move(uboot, -UBOOT_GESCHW, 0)
+<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
+    <span style="color:#00f">if</span> x &lt;= B - UBOOT_GESCHW:
+        c.move(uboot, UBOOT_GESCHW, 0)
+c.bind_all(<span style="color:#a31515">&#34;&lt;Key&gt;&#34;</span>, uboot_bewegen)</code></pre></div></li>
 </ul>
 
 <h2 id="bubbles-erzeugen">Bubbles erzeugen</h2>
@@ -265,143 +265,143 @@ c<span style="color:#f92672">.</span>bind_all(<span style="color:#e6db74">&#34;&
 <p>Nun schreiben wir uns eine Funktion, die genau eine Bubble erzeugt. Die Bubble entsteht rechts etwas außerhalb unseres Fensters. Die x-Koordinate setzen wir auf die Fensterbreite plus unseren definierten GAP. Die y-Koordinate soll eine Zufallszahl zwischen 0 und H sein (dafür verwenden wir den Befehl <code>randint</code>) und auch die Geschwindigkeit v wählen wir zufällig zwischen 1 und der maximal möglichen Geschwindigkeit.</p>
 
 <p>Nun erzeugen wir die Bubble und hängen die ID (id_num) an unsere ID-Liste an und die Geschwindigkeit hängen wir an unsere Geschwindigkeits-Liste an (mit der Methode <code>append</code>).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Bubbles erzeugen</span>
-bubble_img <span style="color:#f92672">=</span> PhotoImage(file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bubble.png&#34;</span>)
-BUB_R <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>
-bub_id <span style="color:#f92672">=</span> []
-bub_geschw <span style="color:#f92672">=</span> []
-MAX_BUB_GESCHW <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-GAP <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Bubbles erzeugen</span>
+bubble_img = PhotoImage(file=<span style="color:#a31515">&#34;bubble.png&#34;</span>)
+BUB_R = 25
+bub_id = []
+bub_geschw = []
+MAX_BUB_GESCHW = 10
+GAP = 100
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">erzeuge_bubble</span>():
-    x <span style="color:#f92672">=</span> B <span style="color:#f92672">+</span> GAP
-    y <span style="color:#f92672">=</span> randint(<span style="color:#ae81ff">0</span>, H)
-    v <span style="color:#f92672">=</span> randint(<span style="color:#ae81ff">1</span>, MAX_BUB_GESCHW)
-    id_num <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_image(x, y, image <span style="color:#f92672">=</span> bubble_img)
-    bub_id<span style="color:#f92672">.</span>append(id_num)
-    bub_geschw<span style="color:#f92672">.</span>append(v)</code></pre></div>
+<span style="color:#00f">def</span> erzeuge_bubble():
+    x = B + GAP
+    y = randint(0, H)
+    v = randint(1, MAX_BUB_GESCHW)
+    id_num = c.create_image(x, y, image = bubble_img)
+    bub_id.append(id_num)
+    bub_geschw.append(v)</code></pre></div>
 <h2 id="bubbles-bewegen">Bubbles bewegen</h2>
 
 <p>Für die Bewegung der Bubbles über den Bildschirm verwenden wir auch eine Funktion. Diese Funktion geht jede Bubble der Reihe nach durch. Die Anzahl der aktuell vorhandenen Bubbles bekommen wir über die Länge unserer ID-Liste: <code>len(bub_id)</code>. Bei jeder Bubble wird die x-Koordinate um ihre Geschwindigkeit verringert und die y-Koordinate gleich gelassen. Damit wandern die Bubbles horizontal nach links.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Bubbles bewegen</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bewege_bubbles</span>():
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(bub_id)):
-        c<span style="color:#f92672">.</span>move(bub_id[i], <span style="color:#f92672">-</span>bub_geschw[i], <span style="color:#ae81ff">0</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Bubbles bewegen</span>
+<span style="color:#00f">def</span> bewege_bubbles():
+    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(len(bub_id)):
+        c.move(bub_id[i], -bub_geschw[i], 0)</code></pre></div>
 <h2 id="hauptschleife-1-test">Hauptschleife – 1. Test</h2>
 
 <p>Nun ist es an der Zeit die, bis jetzt geschriebenen, Funktionen zu testen. In einer ersten Version unserer Hauptschleife verwenden wir eine Endlosschleife <code>(while True)</code>, in der wir laufend Blasen erzeugen, die Bubbles bewegen, das Fenster aktualisieren und dann kurz warten.</p>
 
 <p>Damit nicht zu viele Blasen erzeugt werden, sondern nur durchschnittlich in einem Zehntel der Zeitschritte, erzeugen wir eine Zufallszahl zwischen 1 und 10. Nur wenn diese Zufallszahl 1 ist, dann erzeugen wir eine Bubble und sonst nicht.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># HAUPTSCHLEIFE</span>
-<span style="color:#66d9ef">while</span> true:
-  <span style="color:#66d9ef">if</span> randint(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># HAUPTSCHLEIFE</span>
+<span style="color:#00f">while</span> true:
+  <span style="color:#00f">if</span> randint(1, 10) == 1:
     erzeuge_bubble()
   bewege_bubbles()
-  window<span style="color:#f92672">.</span>update()
-  sleep(<span style="color:#ae81ff">0.01</span>)</code></pre></div>
+  window.update()
+  sleep(0.01)</code></pre></div>
 <h2 id="bubbles-entfernen">Bubbles entfernen</h2>
 
 <p>Jetzt beschäftigen wir uns mit dem Entfernen der Bubbles. Bubbles verschwinden, wenn sie komplett über den Bildschirm gewandert sind und auch wenn das U-Boot die Bubble zum Platzen gebracht hat. Für beides brauchen wir eine Funktion, die eine Bubble löschen kann.</p>
 
 <p>Mit der Methode <code>delete</code> können wir das Bild einer Bubble entfernen, indem wir die ID angeben. Wir müssen aber auch unsere beiden Listen aktuell halten und dort die entsprechenden Einträge löschen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Bubble löschen</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lösche_bubble</span>(i):
-    c<span style="color:#f92672">.</span>delete(bub_id[i])
-    <span style="color:#66d9ef">del</span> bub_id[i]
-    <span style="color:#66d9ef">del</span> bub_geschw[i]</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Bubble löschen</span>
+<span style="color:#00f">def</span> lösche_bubble(i):
+    c.delete(bub_id[i])
+    <span style="color:#00f">del</span> bub_id[i]
+    <span style="color:#00f">del</span> bub_geschw[i]</code></pre></div>
 <p>Für das Entfernen der Bubbles, wenn sie über den linken Bildschirmrand hinausgewandert sind, verwenden wir folgende Funktion:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Bubbles entfernen (wenn sie über den Bildschirm gewandert sind)</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">entferne_bubbles</span>():
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(bub_id)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
-        x, y <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(bub_id[i])
-        <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&lt;</span> <span style="color:#f92672">-</span>GAP:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Bubbles entfernen (wenn sie über den Bildschirm gewandert sind)</span>
+<span style="color:#00f">def</span> entferne_bubbles():
+    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(len(bub_id)-1, -1, -1):
+        x, y = c.coords(bub_id[i])
+        <span style="color:#00f">if</span> x &lt; -GAP:
             lösche_bubble(i)</code></pre></div>
 <p>Auch hier gehen wir wieder jede Bubble durch, holen und die aktuellen Koordinaten mit der Methode <code>coords</code> und löschen die Bubble, wenn die x-Koordinate mehr als unser GAP hinter dem linken Fensterrand liegt. Aber Achtung: Hier müssen wir die Liste unserer Bubbles von hinten durcharbeiten, sonst kommt unserer Nummerierung der Bubbles durcheinander. Würden wir z. B. die zweite Bubble löschen, dann wäre Bubble Nr. 3 plötzlich Bubble Nr. 2. Wir beginnen also bei der letzten Bubble (diese hat die Nr. <code>len(bub_id)</code>-1, weil ja Python bei 0 zu zählen beginnt). Dann ändern wir die Nummer immer um -1 und lassen den <code>range</code> bis -1 laufen, da das <code>range</code>-Objekt den letzten Eintrag nicht mehr dazu nimmt, also ist 0 der letzte Wert, den wir für i bekommen.</p>
 
 <h2 id="hauptschleife-2-test">Hauptschleife – 2. Test</h2>
 
 <p>Das Entfernen der Bubbles können wir gleich in unsere Hauptschleife einbauen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># HAUPTSCHLEIFE</span>
-<span style="color:#66d9ef">while</span> true:
-  <span style="color:#66d9ef">if</span> randint(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># HAUPTSCHLEIFE</span>
+<span style="color:#00f">while</span> true:
+  <span style="color:#00f">if</span> randint(1, 10) == 1:
     erzeuge_bubble()
   bewege_bubbles()
   entferne_bubbles()
-  window<span style="color:#f92672">.</span>update()
-  sleep(<span style="color:#ae81ff">0.01</span>)</code></pre></div>
+  window.update()
+  sleep(0.01)</code></pre></div>
 <h2 id="bubbles-platzen-lassen">Bubbles platzen lassen</h2>
 
 <p>Wenn eine Bubble vom U-Boot getroffen wird, soll sie platzen und vom Bildschirm verschwinden. Um feststellen zu können, ob das U-Boot eine Bubble trifft, brauchen wir eine Funktion, die den Abstand zwischen dem U-Boot und einer Bubble berechnen kann. Dazu holen wir uns die aktuellen Koordinaten von U-Boot und Bubble und wenden den Satz von Pythagoras an. Die dazu notwendige Wurzelfunktion (<code>sqrt</code>) importieren wir aus dem <code>math</code>-Package. Der Abstand a wird als Wert der Funktion ausgegeben.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Entfernung zwischen Punkten</span>
-<span style="color:#f92672">from</span> math <span style="color:#f92672">import</span> sqrt
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">abstand</span>(uboot, id_bubble):
-    x1, y1 <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(uboot)
-    x2, y2 <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(id_bubble)
-    a <span style="color:#f92672">=</span> sqrt((x2<span style="color:#f92672">-</span>x1)<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> (y2<span style="color:#f92672">-</span>y1)<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
-    <span style="color:#66d9ef">return</span> a</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Entfernung zwischen Punkten</span>
+<span style="color:#00f">from</span> math <span style="color:#00f">import</span> sqrt
+<span style="color:#00f">def</span> abstand(uboot, id_bubble):
+    x1, y1 = c.coords(uboot)
+    x2, y2 = c.coords(id_bubble)
+    a = sqrt((x2-x1)**2 + (y2-y1)**2)
+    <span style="color:#00f">return</span> a</code></pre></div>
 <p>In einer Schleife gehen wir die Liste der Bubbles wieder von hinten durch. Wenn der Abstand zwischen U-Boot und Bubble kleiner ist als die Summe von U-Boot-Radius und Bubble-Radius, dann hat das U-Boot die Bubble getroffen. Wir erhöhen die Punkteanzahl, die wir zu Beginn auf 0 gesetzt haben um den Bubble-Radius + Bubble-Geschwindigkeit. Damit erreichen wir mehr Punkte, wenn die Bubble schneller ist. Die getroffene Bubble wird gelöscht und die erreichte Punkteanzahl wird ausgegeben.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Bubbles platzen lassen (wenn sie vom U-Boot getroffen werden)</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">treffer</span>():
-    punkte <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(bub_id)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
-        <span style="color:#66d9ef">if</span> abstand(uboot, bub_id[i]) <span style="color:#f92672">&lt;</span> (UBOOT_R <span style="color:#f92672">+</span> BUB_R):
-            punkte <span style="color:#f92672">+=</span> (BUB_R <span style="color:#f92672">+</span> bub_geschw[i])
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Bubbles platzen lassen (wenn sie vom U-Boot getroffen werden)</span>
+<span style="color:#00f">def</span> treffer():
+    punkte = 0
+    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(len(bub_id)-1, -1, -1):
+        <span style="color:#00f">if</span> abstand(uboot, bub_id[i]) &lt; (UBOOT_R + BUB_R):
+            punkte += (BUB_R + bub_geschw[i])
             lösche_bubble(i)
-    <span style="color:#66d9ef">return</span> punkte</code></pre></div>
+    <span style="color:#00f">return</span> punkte</code></pre></div>
 <h2 id="hauptschleife-3-test">Hauptschleife – 3. Test</h2>
 
 <p>Um diese Funktion zu testen, bauen wir eine Variable score, die die Gesamtpunkteanzahl abspeichert, in die Hauptschleife ein. Zu Beginn ist die Punkteanzahl 0 und in jedem Zeitschritt wird die Punkteanzahl um die erreichten Treffer erhöht. Um die Punkteanzahl mitzuverfolgen, lassen wir sie im Shell-Fenster ausgeben.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># HAUPTSCHLEIFE</span>
-score <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">while</span> true:
-  <span style="color:#66d9ef">if</span> randint(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># HAUPTSCHLEIFE</span>
+score = 0
+<span style="color:#00f">while</span> true:
+  <span style="color:#00f">if</span> randint(1, 10) == 1:
     erzeuge_bubble()
   bewege_bubbles()
   entferne_bubbles()
-  score <span style="color:#f92672">+=</span> treffer()
-  <span style="color:#66d9ef">print</span> (score)
-  window<span style="color:#f92672">.</span>update()
-  sleep(<span style="color:#ae81ff">0.01</span>)</code></pre></div>
+  score += treffer()
+  <span style="color:#00f">print</span> (score)
+  window.update()
+  sleep(0.01)</code></pre></div>
 <h2 id="zeit-und-punkte-anzeigen">Zeit und Punkte anzeigen</h2>
 
 <p>In der Endversion des Spiels soll die Zeit und die Punktanzahl in unserem Fenster angezeigt werden. Wir schreiben dazu <code>create_text</code> einen passenden Text in die linke obere Ecke unserer Leinwand. Die beiden Zahlen geben die x und y Koordinaten an, mit der Option <code>fill</code> wird die Textfarbe festgelegt. Für die Anzeige der aktuellen Zeit und Punkteanzahl erzeugen wir die Objekte <code>time_text</code> und <code>score_text</code>. Mit den Funktionen <code>zeige_punkte</code> und <code>zeige_zeit</code>, ändern wir diese Objekte so, dass immer der aktuelle Stand zu sehen ist. Achtung: Der Text muss immer vom Datentyp string sein. Da die Zeit und die Punkte Zahlen sind, müssen wir sie mit der Funktion <code>str</code> in einen string umwandeln.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Zeit und Punkte anzeigen</span>
-c<span style="color:#f92672">.</span>create_text(<span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">30</span>, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ZEIT&#34;</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;white&#34;</span>)
-c<span style="color:#f92672">.</span>create_text(<span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">30</span>, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;PUNKTE&#34;</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;white&#34;</span>)
-time_text <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_text(<span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">50</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;white&#34;</span>)
-score_text <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_text(<span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">50</span>, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;white&#34;</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">zeige_punkte</span>(score):
-    c<span style="color:#f92672">.</span>itemconfig(score_text, text <span style="color:#f92672">=</span> str(score))
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">zeige_zeit</span>(time_left):
-    c<span style="color:#f92672">.</span>itemconfig(time_text, text<span style="color:#f92672">=</span>str(time_left))</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Zeit und Punkte anzeigen</span>
+c.create_text(50, 30, text = <span style="color:#a31515">&#34;ZEIT&#34;</span>, fill=<span style="color:#a31515">&#34;white&#34;</span>)
+c.create_text(150, 30, text = <span style="color:#a31515">&#34;PUNKTE&#34;</span>, fill=<span style="color:#a31515">&#34;white&#34;</span>)
+time_text = c.create_text(50, 50, fill=<span style="color:#a31515">&#34;white&#34;</span>)
+score_text = c.create_text(150, 50, fill=<span style="color:#a31515">&#34;white&#34;</span>)
+<span style="color:#00f">def</span> zeige_punkte(score):
+    c.itemconfig(score_text, text = str(score))
+<span style="color:#00f">def</span> zeige_zeit(time_left):
+    c.itemconfig(time_text, text=str(time_left))</code></pre></div>
 <p>Hauptschleife - komplett
 Nun können wir die Hauptschleife fertigstellen. Wir geben ein Zeitlimit von 30 Sekunden für das Spiel vor. In der Variable <code>ende</code> speichern wir den Endzeitpunkt des Spiels. Das ist die aktuelle Zeit, wenn das Spiel gestartet wird plus unser Zeitlimit. Die aktuelle Zeit bekommen wir mit dem Befehl <code>time()</code>. Anstelle der Endlosschleife überprüfen wir, ob unsere Spielzeit noch nicht abgelaufen ist. In der Schleife ergänzen wir die Anzeige der aktuellen Zeit und der Punkte.</p>
 
 <p>Ist das Spiel aus, zeigen wir den Text „GAME OVER“ und die erreichte Punkteanzahl an.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># HAUPTSCHLEIFE</span>
-score <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-TIME_LIMIT <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
-ende <span style="color:#f92672">=</span> time() <span style="color:#f92672">+</span> TIME_LIMIT
-<span style="color:#66d9ef">while</span> time() <span style="color:#f92672">&lt;</span> ende:
-    <span style="color:#66d9ef">if</span> randint(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># HAUPTSCHLEIFE</span>
+score = 0
+TIME_LIMIT = 30
+ende = time() + TIME_LIMIT
+<span style="color:#00f">while</span> time() &lt; ende:
+    <span style="color:#00f">if</span> randint(1, 10) == 1:
         erzeuge_bubble()
     bewege_bubbles()
     entferne_bubbles()
-    score <span style="color:#f92672">+=</span> treffer()
+    score += treffer()
     zeige_punkte(score)
-    zeige_zeit(int(ende<span style="color:#f92672">-</span>time()))
-    window<span style="color:#f92672">.</span>update()
-    sleep(<span style="color:#ae81ff">0.01</span>)
+    zeige_zeit(int(ende-time()))
+    window.update()
+    sleep(0.01)
 
-c<span style="color:#f92672">.</span>create_text(B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;GAME OVER&#34;</span>, \
-              fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>, font<span style="color:#f92672">=</span>(<span style="color:#e6db74">&#34;Helvetica&#34;</span>, <span style="color:#ae81ff">30</span>))
-c<span style="color:#f92672">.</span>create_text(B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">30</span>, \
-              text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Punkte: &#34;</span> <span style="color:#f92672">+</span> str(score), fill <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>)</code></pre></div>
+c.create_text(B/2, H/2, text = <span style="color:#a31515">&#34;GAME OVER&#34;</span>, \
+              fill = <span style="color:#a31515">&#34;white&#34;</span>, font=(<span style="color:#a31515">&#34;Helvetica&#34;</span>, 30))
+c.create_text(B/2, H/2 + 30, \
+              text = <span style="color:#a31515">&#34;Punkte: &#34;</span> + str(score), fill = <span style="color:#a31515">&#34;white&#34;</span>)</code></pre></div>
 <h2 id="aktivierung-des-fensters">Aktivierung des Fensters</h2>
 
 <p>Zu guter Letzt gibt es noch einen Befehl, um das Fenster zu aktivieren:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Aktivierung des Fensters</span>
-window<span style="color:#f92672">.</span>mainloop()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Aktivierung des Fensters</span>
+window.mainloop()</code></pre></div>
 <p>Wenn du nun das Programm speicherst (STRG + S), kannst du es ausführen (F5). Wie viele Punkte kannst du erreichen?</p>
 
 <h2 id="erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</h2>

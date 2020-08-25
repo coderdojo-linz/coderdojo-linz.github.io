@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -360,17 +360,17 @@ Hier werden XML Dateien, die einfache Werte enthalten, abgelegt. Das sind zum Be
 <li><p>Um alle Teile des Menüs zu löschen, lösche auch den Ordner <code>res/menu</code>.</p></li>
 
 <li><p>Lösche den folgenden Code, welcher die <code>Toolbar</code> als <code>ActionBar</code> in der App setzt und den <code>FloatingActionButton</code> konfiguriert.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Toolbar toolbar <span style="color:#f92672">=</span> findViewById<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">toolbar</span><span style="color:#f92672">);</span>
-setSupportActionBar<span style="color:#f92672">(</span>toolbar<span style="color:#f92672">);</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Toolbar toolbar = findViewById(R.id.toolbar);
+setSupportActionBar(toolbar);
 
-FloatingActionButton fab <span style="color:#f92672">=</span> findViewById<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">fab</span><span style="color:#f92672">);</span>
-fab<span style="color:#f92672">.</span><span style="color:#a6e22e">setOnClickListener</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> View<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>View view<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		Snackbar<span style="color:#f92672">.</span><span style="color:#a6e22e">make</span><span style="color:#f92672">(</span>view<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Replace with your own action&#34;</span><span style="color:#f92672">,</span> Snackbar<span style="color:#f92672">.</span><span style="color:#a6e22e">LENGTH_LONG</span><span style="color:#f92672">)</span>
-			<span style="color:#f92672">.</span><span style="color:#a6e22e">setAction</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">).</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">});</span></code></pre></div></li>
+FloatingActionButton fab = findViewById(R.id.fab);
+fab.setOnClickListener(<span style="color:#00f">new</span> View.OnClickListener() {
+	@Override
+	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onClick(View view) {
+		Snackbar.make(view, <span style="color:#a31515">&#34;Replace with your own action&#34;</span>, Snackbar.LENGTH_LONG)
+			.setAction(<span style="color:#a31515">&#34;Action&#34;</span>, <span style="color:#00f">null</span>).show();
+	}
+});</code></pre></div></li>
 
 <li><p>Im vorigen Schritt hast du die Logik der beiden Komponenten entfernt. Lösche sie nun auch aus dem Layout. Öffne dazu die Datei <code>res/layout/activity_main.xml</code> und wähle ganz rechts oben &ldquo;Design&rdquo; aus (im Bild unten in Orange gekennzeichnet).</p></li>
 
@@ -414,13 +414,13 @@ fab<span style="color:#f92672">.</span><span style="color:#a6e22e">setOnClickLis
 <li><p>Öffne das Layout <code>fragment_second.xml</code> und lösche den <code>button_second</code>, hier behältst du die <code>textview_second</code>.</p></li>
 
 <li><p>Öffne das <code>SecondFragment.java</code> und lösche den unten stehenden Code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">view<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">button_second</span><span style="color:#f92672">).</span><span style="color:#a6e22e">setOnClickListener</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> View<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>View view<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		NavHostFragment<span style="color:#f92672">.</span><span style="color:#a6e22e">findNavController</span><span style="color:#f92672">(</span>SecondFragment<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">)</span>
-			<span style="color:#f92672">.</span><span style="color:#a6e22e">navigate</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">action_SecondFragment_to_FirstFragment</span><span style="color:#f92672">);</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">});</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">view.findViewById(R.id.button_second).setOnClickListener(<span style="color:#00f">new</span> View.OnClickListener() {
+	@Override
+	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onClick(View view) {
+		NavHostFragment.findNavController(SecondFragment.this)
+			.navigate(R.id.action_SecondFragment_to_FirstFragment);
+	}
+});</code></pre></div></li>
 </ol>
 
 <h2 id="einen-satz-eingeben">Einen Satz eingeben</h2>
@@ -433,8 +433,8 @@ fab<span style="color:#f92672">.</span><span style="color:#a6e22e">setOnClickLis
 <li><p>Öffne die Datei <code>res/values/strings.xml</code>. Hier werden alle Texte der App abgelegt.</p></li>
 
 <li><p>Füge die folgenden Strings hinzu.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;string</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;enter_a_phrase&#34;</span><span style="color:#f92672">&gt;</span>Gib einen Satz ein<span style="color:#f92672">&lt;/string&gt;</span>
-<span style="color:#f92672">&lt;string</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;go&#34;</span><span style="color:#f92672">&gt;</span>Los<span style="color:#f92672">&lt;/string&gt;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;string name=<span style="color:#a31515">&#34;enter_a_phrase&#34;</span>&gt;Gib einen Satz ein&lt;/string&gt;
+&lt;string name=<span style="color:#a31515">&#34;go&#34;</span>&gt;Los&lt;/string&gt;</code></pre></div></li>
 
 <li><p>Öffne nun das Layout <code>fragment_first.xml</code> und wähle den <code>Button</code> mit einem Klick aus.</p></li>
 
@@ -549,29 +549,29 @@ fab<span style="color:#f92672">.</span><span style="color:#a6e22e">setOnClickLis
 <li>Öffne  das <code>FirstFragment</code>.</li>
 
 <li><p>Ersetze den Inhalt der <code>onViewCreated()</code> Methode mit dem folgenden Code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onViewCreated</span><span style="color:#f92672">(</span>view<span style="color:#f92672">,</span> savedInstanceState<span style="color:#f92672">);</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">super</span>.onViewCreated(view, savedInstanceState);
 
-<span style="color:#75715e">// Bindet das EditText, das du im Layout erstellt hast, an diese Variable
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">final</span> EditText editText <span style="color:#f92672">=</span> view<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">edittext_phrase</span><span style="color:#f92672">);</span>
+<span style="color:#008000">// Bindet das EditText, das du im Layout erstellt hast, an diese Variable
+</span><span style="color:#008000"></span><span style="color:#00f">final</span> EditText editText = view.findViewById(R.id.edittext_phrase);
 
-view<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">button_go</span><span style="color:#f92672">).</span><span style="color:#a6e22e">setOnClickListener</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> View<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	<span style="color:#a6e22e">@Override</span>
-	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>View view<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+view.findViewById(R.id.button_go).setOnClickListener(<span style="color:#00f">new</span> View.OnClickListener() {
+	@Override
+	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onClick(View view) {
 
-		<span style="color:#75715e">// Liest den Text aus dem EditText ein und speichert ihn in die Variable phrase
-</span><span style="color:#75715e"></span>		String phrase <span style="color:#f92672">=</span> editText<span style="color:#f92672">.</span><span style="color:#a6e22e">getText</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+		<span style="color:#008000">// Liest den Text aus dem EditText ein und speichert ihn in die Variable phrase
+</span><span style="color:#008000"></span>		String phrase = editText.getText().toString();
 
-		<span style="color:#75715e">// Erstellt ein Bundle das die Argumente enthält, die ans SecondFragment übergeben werden
-</span><span style="color:#75715e"></span>		Bundle arguments <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Bundle<span style="color:#f92672">();</span>
-		<span style="color:#75715e">// Fügt den Text, der oben eingelesen wurde, zum Bundle mit den Argumenten hinzu
-</span><span style="color:#75715e"></span>		arguments<span style="color:#f92672">.</span><span style="color:#a6e22e">putString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;phrase&#34;</span><span style="color:#f92672">,</span> phrase<span style="color:#f92672">);</span>
+		<span style="color:#008000">// Erstellt ein Bundle das die Argumente enthält, die ans SecondFragment übergeben werden
+</span><span style="color:#008000"></span>		Bundle arguments = <span style="color:#00f">new</span> Bundle();
+		<span style="color:#008000">// Fügt den Text, der oben eingelesen wurde, zum Bundle mit den Argumenten hinzu
+</span><span style="color:#008000"></span>		arguments.putString(<span style="color:#a31515">&#34;phrase&#34;</span>, phrase);
 
-		<span style="color:#75715e">// Navigiert zum 2. Fragment und übergibt die oben erstellten Argumente
-</span><span style="color:#75715e"></span>		NavHostFragment
-			<span style="color:#f92672">.</span><span style="color:#a6e22e">findNavController</span><span style="color:#f92672">(</span>FirstFragment<span style="color:#f92672">.</span><span style="color:#a6e22e">this</span><span style="color:#f92672">)</span>
-			<span style="color:#f92672">.</span><span style="color:#a6e22e">navigate</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">action_FirstFragment_to_SecondFragment</span><span style="color:#f92672">,</span> arguments<span style="color:#f92672">);</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">});</span></code></pre></div></li>
+		<span style="color:#008000">// Navigiert zum 2. Fragment und übergibt die oben erstellten Argumente
+</span><span style="color:#008000"></span>		NavHostFragment
+			.findNavController(FirstFragment.this)
+			.navigate(R.id.action_FirstFragment_to_SecondFragment, arguments);
+	}
+});</code></pre></div></li>
 </ol></li>
 </ol>
 
@@ -597,21 +597,21 @@ view<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById
 <li><p>Öffne das <code>SecondFragment</code>.</p></li>
 
 <li><p>Erstelle die folgenden zwei Member-Variablen direkt unter <code>public class SecondFragment extends Fragment {</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> TextView textViewInfo<span style="color:#f92672">;</span>
-<span style="color:#66d9ef">private</span> String phrase<span style="color:#f92672">;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> TextView textViewInfo;
+<span style="color:#00f">private</span> String phrase;</code></pre></div></li>
 
 <li><p>Ersetze die <code>onViewCreated()</code> Methode mit dem folgenden Code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onViewCreated</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@NonNull</span> View view<span style="color:#f92672">,</span> Bundle savedInstanceState<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-	<span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onViewCreated</span><span style="color:#f92672">(</span>view<span style="color:#f92672">,</span> savedInstanceState<span style="color:#f92672">);</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+	<span style="color:#00f">super</span>.onViewCreated(view, savedInstanceState);
 
-	<span style="color:#75715e">// Bindet die TextView, die du im Layout erstellt hast, an diese Variable
-</span><span style="color:#75715e"></span>	textViewInfo <span style="color:#f92672">=</span> view<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">textview_info</span><span style="color:#f92672">);</span>
+	<span style="color:#008000">// Bindet die TextView, die du im Layout erstellt hast, an diese Variable
+</span><span style="color:#008000"></span>	textViewInfo = view.findViewById(R.id.textview_info);
 
-	<span style="color:#75715e">// Holt die &#34;phrase&#34; aus dem Bundle mit den Argumenten
-</span><span style="color:#75715e"></span>	phrase <span style="color:#f92672">=</span> getArguments<span style="color:#f92672">().</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;phrase&#34;</span><span style="color:#f92672">);</span>
-	<span style="color:#75715e">// Zeigt die phrase in der TextView an
-</span><span style="color:#75715e"></span>	textViewInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">setText</span><span style="color:#f92672">(</span>phrase<span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+	<span style="color:#008000">// Holt die &#34;phrase&#34; aus dem Bundle mit den Argumenten
+</span><span style="color:#008000"></span>	phrase = getArguments().getString(<span style="color:#a31515">&#34;phrase&#34;</span>);
+	<span style="color:#008000">// Zeigt die phrase in der TextView an
+</span><span style="color:#008000"></span>	textViewInfo.setText(phrase);
+}</code></pre></div></li>
 </ol>
 
 <p>Wenn du die App jetzt ausführst, kannst du im ersten Fragment einen Satz eingeben und siehst diesen dann, nachdem du auf &ldquo;LOS&rdquo; geklickt hast, im zweiten Fragment.</p>
@@ -619,15 +619,15 @@ view<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById
 <h3 id="route-herunterladen">Route herunterladen</h3>
 
 <p>Um die Route zu laden, verwendest du einen Service der im Internet angeboten wird. Dort kannst du einen Satz hinschicken und bekommst eine Liste mit Orten, die jeweils aus Name und Position (Längen- und Breitengrad) bestehen, zurück. Dieser Service ist unter <a href="https://api.map-reactions.ksick.dev/v0-1" target="_blank">https://api.map-reactions.ksick.dev/v0-1</a> verfügbar und so definiert:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># REQUEST</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#008000"># REQUEST</span>
 GET /route
 parameter:
     - phrase: String
 
-<span style="color:#75715e"># ANTWORT</span>
-- <span style="color:#ae81ff">200</span> OK: Gibt eine Liste von Orten zurück, die sich so ähnlich anhören, wie die übergebene Phrase
-- <span style="color:#ae81ff">400</span> Bad Request: Die übergebene Phrase ist ungültig oder nicht vorhanden
-- <span style="color:#ae81ff">404</span> Not Found: Es konnte keine Route für die übergebene Phrase gefunden werden</code></pre></div>
+<span style="color:#008000"># ANTWORT</span>
+- 200 OK: Gibt eine Liste von Orten zurück, die sich so ähnlich anhören, wie die übergebene Phrase
+- 400 Bad Request: Die übergebene Phrase ist ungültig oder nicht vorhanden
+- 404 Not Found: Es konnte keine Route für die übergebene Phrase gefunden werden</code></pre></div>
 <p>Aus dieser Definition kannst du die folgenden Dinge lesen:</p>
 
 <ul>
@@ -638,14 +638,14 @@ parameter:
 </ul>
 
 <p>Mit diesen Informationen kannst du den Request absetzen. Da du den Request ins Internet schickst, muss der Benutzer der App dies schon vor dem Download sehen können. Deshalb musst du die Berechtiung dafür im <code>AndroidManifest.xml</code> eintragen. Füge dazu die folgenden Zeile über dem <code>&lt;application</code> tag ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.INTERNET&#34;</span> <span style="color:#f92672">/&gt;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;uses-permission android:name=<span style="color:#a31515">&#34;android.permission.INTERNET&#34;</span> /&gt;</code></pre></div>
 <p>Um den HTTP Request abzusetzen, kannst du <a href="https://developer.android.com/training/volley" target="_blank">Volley</a> verwenden. Das ist eine HTTP Library (Bibliothek), die von Google entwickelt wurde, um die Kommunikation mit dem Internet zu vereinfachen. Mit den folgenden Schritten kannst du die Bibliothek zu deinem Projekt hinzufügen und den HTTP Request absetzen.</p>
 
 <ol>
 <li><p>Öffne die Datei <code>build.gradle (Module: app)</code>.</p></li>
 
 <li><p>Füge die <code>Dependency</code> für Volley  im Block <code>dependencies</code> ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">dependencies {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">dependencies {
 	...
 	
 	implementation &#39;com.android.volley:volley:1.1.1&#39;
@@ -656,43 +656,43 @@ parameter:
 <li><p>Öffne nun das <code>SecondFragment</code>.</p></li>
 
 <li><p>Füge die folgende Methode unter der Methode <code>onViewCreated()</code> ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loadRoute</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Erstellt eine Queue, die alle Requests ausführt, die zu ihr hinzugefügt werden
-</span><span style="color:#75715e"></span>	RequestQueue requestQueue <span style="color:#f92672">=</span> Volley<span style="color:#f92672">.</span><span style="color:#a6e22e">newRequestQueue</span><span style="color:#f92672">(</span>getContext<span style="color:#f92672">());</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> <span style="color:#2b91af">void</span> loadRoute() {
+	<span style="color:#008000">// Erstellt eine Queue, die alle Requests ausführt, die zu ihr hinzugefügt werden
+</span><span style="color:#008000"></span>	RequestQueue requestQueue = Volley.newRequestQueue(getContext());
 
-	<span style="color:#75715e">// Die URL für den Request. Diese wird aus den folgenden Teilen zusammengesetzt:
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">//   - Die URL https://api.map-reactions.ksick.dev/v0-1
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">//   - Der Endpunkt: /route
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">//   - Der Paremeter phrase: ?phrase=&lt;der eingegebene satz&gt;
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">// Der Satz, der vom Benutzer eingegeben wurde, muss kodiert werden, damit die gesamte URL gültig ist
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">// Sollte dabei etwas schief laufen, wird eine Exception geworfen, und ein Fehler angezeigt
-</span><span style="color:#75715e"></span>	String url <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-	<span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-		url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://api.map-reactions.ksick.dev/v0-1/route?phrase=&#34;</span> <span style="color:#f92672">+</span> URLEncoder<span style="color:#f92672">.</span><span style="color:#a6e22e">encode</span><span style="color:#f92672">(</span>phrase<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;UTF-8&#34;</span><span style="color:#f92672">);</span>
-	<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>UnsupportedEncodingException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#75715e">// Zeigt einen Fehler in der Info-TextView an und führe diese Methode nicht weiter aus
-</span><span style="color:#75715e"></span>		textViewInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">setText</span><span style="color:#f92672">(</span>e<span style="color:#f92672">.</span><span style="color:#a6e22e">getMessage</span><span style="color:#f92672">());</span>
-		<span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
-	<span style="color:#f92672">}</span>
+	<span style="color:#008000">// Die URL für den Request. Diese wird aus den folgenden Teilen zusammengesetzt:
+</span><span style="color:#008000"></span>	<span style="color:#008000">//   - Die URL https://api.map-reactions.ksick.dev/v0-1
+</span><span style="color:#008000"></span>	<span style="color:#008000">//   - Der Endpunkt: /route
+</span><span style="color:#008000"></span>	<span style="color:#008000">//   - Der Paremeter phrase: ?phrase=&lt;der eingegebene satz&gt;
+</span><span style="color:#008000"></span>	<span style="color:#008000">// Der Satz, der vom Benutzer eingegeben wurde, muss kodiert werden, damit die gesamte URL gültig ist
+</span><span style="color:#008000"></span>	<span style="color:#008000">// Sollte dabei etwas schief laufen, wird eine Exception geworfen, und ein Fehler angezeigt
+</span><span style="color:#008000"></span>	String url = <span style="color:#00f">null</span>;
+	<span style="color:#00f">try</span> {
+		url = <span style="color:#a31515">&#34;https://api.map-reactions.ksick.dev/v0-1/route?phrase=&#34;</span> + URLEncoder.encode(phrase, <span style="color:#a31515">&#34;UTF-8&#34;</span>);
+	} <span style="color:#00f">catch</span> (UnsupportedEncodingException e) {
+		<span style="color:#008000">// Zeigt einen Fehler in der Info-TextView an und führe diese Methode nicht weiter aus
+</span><span style="color:#008000"></span>		textViewInfo.setText(e.getMessage());
+		<span style="color:#00f">return</span>;
+	}
 
-	<span style="color:#75715e">// Erstellt den Request, der später abgesetzt werden soll
-</span><span style="color:#75715e"></span>	StringRequest stringRequest <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringRequest<span style="color:#f92672">(</span>Request<span style="color:#f92672">.</span><span style="color:#a6e22e">Method</span><span style="color:#f92672">.</span><span style="color:#a6e22e">GET</span><span style="color:#f92672">,</span> url<span style="color:#f92672">,</span>
-		<span style="color:#66d9ef">new</span> Response<span style="color:#f92672">.</span><span style="color:#a6e22e">Listener</span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;()</span> <span style="color:#f92672">{</span>
-			<span style="color:#a6e22e">@Override</span>
-			<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onResponse</span><span style="color:#f92672">(</span>String response<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-				<span style="color:#75715e">// Der Code in dieser Methode wird ausgeführt, wenn der Request erfolgreich war.
-</span><span style="color:#75715e"></span>			<span style="color:#f92672">}</span>
-		<span style="color:#f92672">},</span>
-		<span style="color:#66d9ef">new</span> Response<span style="color:#f92672">.</span><span style="color:#a6e22e">ErrorListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-			<span style="color:#a6e22e">@Override</span>
-			<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onErrorResponse</span><span style="color:#f92672">(</span>VolleyError error<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-				<span style="color:#75715e">// Der Code in dieser Methode wird ausgeführt, wenn ein Fehler passiert ist.
-</span><span style="color:#75715e"></span>			<span style="color:#f92672">}</span>
-		<span style="color:#f92672">});</span>
+	<span style="color:#008000">// Erstellt den Request, der später abgesetzt werden soll
+</span><span style="color:#008000"></span>	StringRequest stringRequest = <span style="color:#00f">new</span> StringRequest(Request.Method.GET, url,
+		<span style="color:#00f">new</span> Response.Listener&lt;String&gt;() {
+			@Override
+			<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onResponse(String response) {
+				<span style="color:#008000">// Der Code in dieser Methode wird ausgeführt, wenn der Request erfolgreich war.
+</span><span style="color:#008000"></span>			}
+		},
+		<span style="color:#00f">new</span> Response.ErrorListener() {
+			@Override
+			<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onErrorResponse(VolleyError error) {
+				<span style="color:#008000">// Der Code in dieser Methode wird ausgeführt, wenn ein Fehler passiert ist.
+</span><span style="color:#008000"></span>			}
+		});
 
-	<span style="color:#75715e">// Fügt den Request zur RequestQueue hinzu um ihn abzusetzen
-</span><span style="color:#75715e"></span>	requestQueue<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>stringRequest<span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+	<span style="color:#008000">// Fügt den Request zur RequestQueue hinzu um ihn abzusetzen
+</span><span style="color:#008000"></span>	requestQueue.add(stringRequest);
+}</code></pre></div></li>
 
 <li><p>Mit dem oben stehenden Code, hast du den Request abgesetzt, das Ergebnis wird aber noch ignoriert. Um diesen Abschnitt abzuschließen, genügt es das Ergebnis in der Info-<code>TextView</code> anzuzeigen. Füge dazu ganz einfach die Zeilen <code>textViewInfo.setText(response);</code> und <code>textViewInfo.setText(error.toString());</code> in den <code>onResponse()</code> beziehungsweise in den <code>onErrorResponse()</code> Block ein.</p></li>
 
@@ -735,21 +735,21 @@ parameter:
 <p>Die Route wird als sogenanntes <a href="https://www.json.org/json-de.html" target="_blank">JSON</a> zurückgegeben. Dieses JSON wandelst du in diesem Schritt in etwas um, mit dem du auch gut arbeiten kannst, zwar  eine Liste von Objekten. Diese Umwandlung von JSON zu einem Objekt oder umgekehrt nennt man &ldquo;parsen&rdquo;. Dabei kannst du dir wieder von einer Bibliothek helfen lassen. Nämlich von <a href="https://github.com/google/gson" target="_blank">Gson</a>. Dazu brauchst du die Dependency <code>implementation 'com.google.code.gson:gson:2.8.6'</code>, füge diese in der Datei <code>build.gradle (Module: app)</code> hinzu (das funktioniert genauso wie oben bei Volley).</p>
 
 <p>Nun definierst du zu welchem Objekt Gson das JSON parsen soll. Wenn du dir das JSON ansiehst, das der Server zurückgibt, siehst du, dass die einzelnen Orte jeweils aus &ldquo;name&rdquo;, &ldquo;latitude&rdquo; und &ldquo;longitude&rdquo; bestehen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">[
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">[
 	{
-		<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Hy&#34;</span>,
-		<span style="color:#f92672">&#34;latitude&#34;</span>: <span style="color:#ae81ff">36.57534</span>,
-		<span style="color:#f92672">&#34;longitude&#34;</span>: <span style="color:#ae81ff">-91.45792</span>
+		&#34;name&#34;: <span style="color:#a31515">&#34;Hy&#34;</span>,
+		&#34;latitude&#34;: 36.57534,
+		&#34;longitude&#34;: -91.45792
 	},
 	{
-		<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Wye&#34;</span>,
-		<span style="color:#f92672">&#34;latitude&#34;</span>: <span style="color:#ae81ff">38.44936</span>,
-		<span style="color:#f92672">&#34;longitude&#34;</span>: <span style="color:#ae81ff">-122.73138</span>
+		&#34;name&#34;: <span style="color:#a31515">&#34;Wye&#34;</span>,
+		&#34;latitude&#34;: 38.44936,
+		&#34;longitude&#34;: -122.73138
 	},
 	{
-		<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Getz&#34;</span>,
-		<span style="color:#f92672">&#34;latitude&#34;</span>: <span style="color:#ae81ff">35.20472</span>,
-		<span style="color:#f92672">&#34;longitude&#34;</span>: <span style="color:#ae81ff">-114.02023</span>
+		&#34;name&#34;: <span style="color:#a31515">&#34;Getz&#34;</span>,
+		&#34;latitude&#34;: 35.20472,
+		&#34;longitude&#34;: -114.02023
 	}
 ]</code></pre></div>
 <p>Befolge deshalb die folgenden Schritte um die Klasse <code>Place.java</code> zu erstellen.</p>
@@ -784,11 +784,11 @@ parameter:
 <li><p>Gib &ldquo;Place&rdquo; als Name ein und drück auf &ldquo;Enter&rdquo;.</p></li>
 
 <li><p>Initialisiere die Klasse mit den folgenden Variablen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Place</span> <span style="color:#f92672">{</span>
-	<span style="color:#66d9ef">private</span> String name<span style="color:#f92672">;</span>
-	<span style="color:#66d9ef">private</span> Double latitude<span style="color:#f92672">;</span>
-	<span style="color:#66d9ef">private</span> Double longitude<span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Place</span> {
+	<span style="color:#00f">private</span> String name;
+	<span style="color:#00f">private</span> Double latitude;
+	<span style="color:#00f">private</span> Double longitude;
+}</code></pre></div></li>
 
 <li><p>Um die Getter und Setter automatisch zu generieren, klicke mit der rechten Maustaste auf <code>Place</code> und wähle dann <code>Generate</code> -&gt; <code>Getter and Setter</code> aus.</p></li>
 
@@ -798,10 +798,10 @@ parameter:
 </ol>
 
 <p>Somit hast du das Java Objekt erstellt, das verwendet wird um das JSON zu parsen. Jetzt verwendest du Gson um das JSON zu einer Liste von <code>Place</code> Objekten zu parsen. Öffne dazu wieder das <code>SecondFragment</code> und gehe zum <code>onResponse()</code> Listener. Ersetze dort die Zeile <code>textViewInfo.setText(response);</code> mit dem folgenden Code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Parsed das JSON in der Variable response zu einer Liste von Place Objekten
-</span><span style="color:#75715e"></span>List<span style="color:#f92672">&lt;</span>Place<span style="color:#f92672">&gt;</span> route <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Gson<span style="color:#f92672">().</span><span style="color:#a6e22e">fromJson</span><span style="color:#f92672">(</span>response<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> TypeToken<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>Place<span style="color:#f92672">&gt;&gt;(){}.</span><span style="color:#a6e22e">getType</span><span style="color:#f92672">());</span>
-<span style="color:#75715e">// Zeigt den ersten Place in der Liste in der Info-TextView an
-</span><span style="color:#75715e"></span>textViewInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">setText</span><span style="color:#f92672">(</span>route<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>0<span style="color:#f92672">).</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Parsed das JSON in der Variable response zu einer Liste von Place Objekten
+</span><span style="color:#008000"></span>List&lt;Place&gt; route = <span style="color:#00f">new</span> Gson().fromJson(response, <span style="color:#00f">new</span> TypeToken&lt;List&lt;Place&gt;&gt;(){}.getType());
+<span style="color:#008000">// Zeigt den ersten Place in der Liste in der Info-TextView an
+</span><span style="color:#008000"></span>textViewInfo.setText(route.get(0).toString());</code></pre></div>
 <p>Die App sollte nun so aussehen.
 
 
@@ -842,9 +842,9 @@ parameter:
 <li><p>Wechsle ganz rechts oben im Editor von &ldquo;Design&rdquo; zu &ldquo;Split&rdquo;.</p></li>
 
 <li><p>Benutze den folgenden Code um die <code>MapView</code> über der bereits vorhandenen <code>TextView</code> einzufügen. Dabei wird Android Studio zuerst einen Fehler anzeigen, den kannst du aber ignorieren. Dieses Problem wirst du gleich lösen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;org.osmdroid.views.MapView</span>
-	<span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;0dp&#34;</span>
-	<span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;0dp&#34;</span> <span style="color:#f92672">/&gt;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;org.osmdroid.views.MapView
+	android:layout_width=<span style="color:#a31515">&#34;0dp&#34;</span>
+	android:layout_height=<span style="color:#a31515">&#34;0dp&#34;</span> /&gt;</code></pre></div></li>
 
 <li><p>Wechsle rechts oben wieder zu &ldquo;Design&rdquo;.</p></li>
 
@@ -875,53 +875,53 @@ parameter:
 <li><p>Öffne das <code>AndroidManifest.xml</code>.</p></li>
 
 <li><p>Füge die folgende Zeile unter <code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;</code> ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.WRITE_EXTERNAL_STORAGE&#34;</span> <span style="color:#f92672">/&gt;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;uses-permission android:name=<span style="color:#a31515">&#34;android.permission.WRITE_EXTERNAL_STORAGE&#34;</span> /&gt;</code></pre></div></li>
 
 <li><p>Öffne das <code>SecondFragment</code>.</p></li>
 
 <li><p>Erstelle eine neue Methode, die wie folgt definiert ist und fürs Erste leer bleibt.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">showMap</span><span style="color:#f92672">()</span> <span style="color:#f92672">{}</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> <span style="color:#2b91af">void</span> showMap() {}</code></pre></div></li>
 
 <li><p>Nun brauchst du eine Methode, die überprüft ob der Benutzer der App schon erlaubt hat auf den Speicher zuzugreifen. Verwende dazu diese Methode.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isStoragePermissionGranted</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Holt den Status der Berechtigung, also ob sie zugelassen (granted) oder abgelehnt (denied) wurde.
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">int</span> permissionStatus <span style="color:#f92672">=</span> ContextCompat<span style="color:#f92672">.</span><span style="color:#a6e22e">checkSelfPermission</span><span style="color:#f92672">(</span>getContext<span style="color:#f92672">(),</span> Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">WRITE_EXTERNAL_STORAGE</span><span style="color:#f92672">);</span>
-	<span style="color:#75715e">// Gibt true zurück, wenn die Berechtigung zugelassen wurde. Sonst wird false zurückgegeben.
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">return</span> permissionStatus <span style="color:#f92672">==</span> PackageManager<span style="color:#f92672">.</span><span style="color:#a6e22e">PERMISSION_GRANTED</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> <span style="color:#2b91af">boolean</span> isStoragePermissionGranted() {
+	<span style="color:#008000">// Holt den Status der Berechtigung, also ob sie zugelassen (granted) oder abgelehnt (denied) wurde.
+</span><span style="color:#008000"></span>	<span style="color:#2b91af">int</span> permissionStatus = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
+	<span style="color:#008000">// Gibt true zurück, wenn die Berechtigung zugelassen wurde. Sonst wird false zurückgegeben.
+</span><span style="color:#008000"></span>	<span style="color:#00f">return</span> permissionStatus == PackageManager.PERMISSION_GRANTED;
+}</code></pre></div></li>
 
 <li><p>Definiere als Vorbereitung eine neue Konstante. Füge dazu die folgende Zeile ganz oben in deiner Klasse unter <code>public class SecondFragment extends Fragment {</code>  ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> PERMISSION_REQUEST_CODE <span style="color:#f92672">=</span> 123<span style="color:#f92672">;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> <span style="color:#00f">final</span> <span style="color:#2b91af">int</span> PERMISSION_REQUEST_CODE = 123;</code></pre></div></li>
 
 <li><p>Gehe nun zum <code>onResponse()</code> Block in der <code>loadRoute()</code> Methode. Das ist die Stelle wo die neue <code>showMap()</code> Methode zum Anzeigen der Karte aufgerufen werden soll. Ersetze deshalb die Zeile <code>textViewInfo.setText(route.get(0).toString());</code> mit diesem Code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Überprüft ob der Benutzer der App erlaubt hat auf den Speicher zuzugreifen
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>isStoragePermissionGranted<span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Wenn Ja wird showMap() aufgerufen
-</span><span style="color:#75715e"></span>	showMap<span style="color:#f92672">();</span>
-<span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Wenn Nein wird ein Dialog angezeigt, in dem der Benutzer um die Berechtigung gefragt wird
-</span><span style="color:#75715e"></span>	requestPermissions<span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]{</span>Manifest<span style="color:#f92672">.</span><span style="color:#a6e22e">permission</span><span style="color:#f92672">.</span><span style="color:#a6e22e">WRITE_EXTERNAL_STORAGE</span><span style="color:#f92672">},</span> PERMISSION_REQUEST_CODE<span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Überprüft ob der Benutzer der App erlaubt hat auf den Speicher zuzugreifen
+</span><span style="color:#008000"></span><span style="color:#00f">if</span> (isStoragePermissionGranted()) {
+	<span style="color:#008000">// Wenn Ja wird showMap() aufgerufen
+</span><span style="color:#008000"></span>	showMap();
+} <span style="color:#00f">else</span> {
+	<span style="color:#008000">// Wenn Nein wird ein Dialog angezeigt, in dem der Benutzer um die Berechtigung gefragt wird
+</span><span style="color:#008000"></span>	requestPermissions(<span style="color:#00f">new</span> String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_CODE);
+}</code></pre></div></li>
 
 <li><p>Die Antwort auf <code>requestPermissions()</code> kommt asynchron über einen Callback. Das bedeutet, dass sobald der Benutzer im Dialog eine Antwort auswählt, die Methode <code>onRequestPermissionsResult()</code> ausgeführt wird. Diese gibt es bereits in der Klasse <code>Fragment</code>, von der das  <code>SecondFragment</code> abgeleitet ist. Deshalb musst du diese überschreiben. Füge dazu die folgende Methode zum <code>SecondFragment</code> hinzu.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Override</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onRequestPermissionsResult</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> requestCode<span style="color:#f92672">,</span> <span style="color:#a6e22e">@NonNull</span> String<span style="color:#f92672">[]</span> permissions<span style="color:#f92672">,</span> <span style="color:#a6e22e">@NonNull</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> grantResults<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Führt die Implementierung dieser Methode in der Fragment.java Klasse aus
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onRequestPermissionsResult</span><span style="color:#f92672">(</span>requestCode<span style="color:#f92672">,</span> permissions<span style="color:#f92672">,</span> grantResults<span style="color:#f92672">);</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">@Override
+<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onRequestPermissionsResult(<span style="color:#2b91af">int</span> requestCode, @NonNull String[] permissions, @NonNull <span style="color:#2b91af">int</span>[] grantResults) {
+	<span style="color:#008000">// Führt die Implementierung dieser Methode in der Fragment.java Klasse aus
+</span><span style="color:#008000"></span>	<span style="color:#00f">super</span>.onRequestPermissionsResult(requestCode, permissions, grantResults);
    
-	<span style="color:#75715e">// Überprüft ob der request code mit dem übereinstimmt, der vorher abgesetzt wurde. 
-</span><span style="color:#75715e"></span>	<span style="color:#75715e">// Falls er nicht übereinstimmt, ist es nicht das Ergebnis auf deinen Request und du musst nichts machen.
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>requestCode <span style="color:#f92672">==</span> PERMISSION_REQUEST_CODE<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#75715e">// Überprüft ob der Benutzer der App erlaubt hat auf den Speicher zuzugreifen
-</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>isStoragePermissionGranted<span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
-			<span style="color:#75715e">// Wenn Ja wird showMap() aufgerufen
-</span><span style="color:#75715e"></span>			showMap<span style="color:#f92672">();</span>	
-		<span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-			<span style="color:#75715e">// Wenn Nein wird die App geschlossen
-</span><span style="color:#75715e"></span>			getActivity<span style="color:#f92672">().</span><span style="color:#a6e22e">finish</span><span style="color:#f92672">();</span>
-		<span style="color:#f92672">}</span>
-	<span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+	<span style="color:#008000">// Überprüft ob der request code mit dem übereinstimmt, der vorher abgesetzt wurde. 
+</span><span style="color:#008000"></span>	<span style="color:#008000">// Falls er nicht übereinstimmt, ist es nicht das Ergebnis auf deinen Request und du musst nichts machen.
+</span><span style="color:#008000"></span>	<span style="color:#00f">if</span> (requestCode == PERMISSION_REQUEST_CODE) {
+		<span style="color:#008000">// Überprüft ob der Benutzer der App erlaubt hat auf den Speicher zuzugreifen
+</span><span style="color:#008000"></span>		<span style="color:#00f">if</span> (isStoragePermissionGranted()) {
+			<span style="color:#008000">// Wenn Ja wird showMap() aufgerufen
+</span><span style="color:#008000"></span>			showMap();	
+		} <span style="color:#00f">else</span> {
+			<span style="color:#008000">// Wenn Nein wird die App geschlossen
+</span><span style="color:#008000"></span>			getActivity().finish();
+		}
+	}
+}</code></pre></div></li>
 </ol>
 
 <p>Wenn du die App jetzt ausführst, einen Satz eingibst und wartest bis der HTTP Request erfolgreich war, solltest du nun so einen Dialog sehen. Klickst du auf &ldquo;Ablehnen&rdquo; wird die App einfach geschlossen und beim nächsten mal wenn du zu diesem Punkt kommst, wird der Dialog wieder angezeigt. Klickst du auf &ldquo;Zulassen&rdquo; passiert derweil noch nichts, weil deine <code>showMap()</code> Methode noch leer ist. Wenn du nun die App schließen würdest und diese Schritte wiederholen würdest, würde der Dialog nicht mehr erscheinen, weil Android sich merkt, dass du dieser App erlaubt hast auf den Speicher zuzugreifen.</p>
@@ -961,21 +961,21 @@ parameter:
 <li><p>Öffne das <code>SecondFragment</code>.</p></li>
 
 <li><p>Erstelle die folgende Member-Variable.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> MapView mapView<span style="color:#f92672">;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> MapView mapView;</code></pre></div></li>
 
 <li><p>Gehe zur <code>onViewCreated()</code> Methode und binde darin die <code>MapView</code> mit dem folgenden Code an die soeben erstellte Variable.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">mapView <span style="color:#f92672">=</span> view<span style="color:#f92672">.</span><span style="color:#a6e22e">findViewById</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">mapview</span><span style="color:#f92672">);</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">mapView = view.findViewById(R.id.mapview);</code></pre></div></li>
 
 <li><p>Befülle nun die <code>showMap()</code> Methode mit dem folgenden Code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Lädt oder initiliasiert die osmdroid Konfiguration
-</span><span style="color:#75715e"></span>Configuration<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">load</span><span style="color:#f92672">(</span>getContext<span style="color:#f92672">(),</span> PreferenceManager<span style="color:#f92672">.</span><span style="color:#a6e22e">getDefaultSharedPreferences</span><span style="color:#f92672">(</span>getContext<span style="color:#f92672">()));</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Lädt oder initiliasiert die osmdroid Konfiguration
+</span><span style="color:#008000"></span>Configuration.getInstance().load(getContext(), PreferenceManager.getDefaultSharedPreferences(getContext()));
    
-<span style="color:#75715e">// Definiert wie die Karte aussehen soll, MAPNIK ist quasi die Standard Open Street Map Karte
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">setTileSource</span><span style="color:#f92672">(</span>TileSourceFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">MAPNIK</span><span style="color:#f92672">);</span>
-<span style="color:#75715e">// Braucht man, damit man mit zwei Fingern zoomen kann
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">setMultiTouchControls</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
-<span style="color:#75715e">// Zoomt auf das Zoom Level 6
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">getController</span><span style="color:#f92672">().</span><span style="color:#a6e22e">zoomTo</span><span style="color:#f92672">(</span>6<span style="color:#f92672">.</span><span style="color:#a6e22e">0</span><span style="color:#f92672">);</span></code></pre></div></li>
+<span style="color:#008000">// Definiert wie die Karte aussehen soll, MAPNIK ist quasi die Standard Open Street Map Karte
+</span><span style="color:#008000"></span>mapView.setTileSource(TileSourceFactory.MAPNIK);
+<span style="color:#008000">// Braucht man, damit man mit zwei Fingern zoomen kann
+</span><span style="color:#008000"></span>mapView.setMultiTouchControls(<span style="color:#00f">true</span>);
+<span style="color:#008000">// Zoomt auf das Zoom Level 6
+</span><span style="color:#008000"></span>mapView.getController().zoomTo(6.0);</code></pre></div></li>
 </ol>
 
 <p>Nun hast du es geschafft eine Karte anzuzeigen. Sie sollte in etwa so wie im unteren Bild aussehen. Wenn sie nicht lädt, geh einfach nochmal zurück klicke erneut auf &ldquo;Los&rdquo;, beim ersten Request zur API, über die die Route geladen wird, ist diese immer etwas langsam. Eine Lösung für dieses Problem ist im <a href="/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/">zweiten Teil der Anleitung</a> beschrieben.</p>
@@ -1011,48 +1011,48 @@ parameter:
 
 <ol>
 <li><p>Erstelle mit der folgenden Zeile eine Member-Variable für die Route. Füge diese unter <code>private MapView mapView;</code> ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> List<span style="color:#f92672">&lt;</span>Place<span style="color:#f92672">&gt;</span> route<span style="color:#f92672">;</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> List&lt;Place&gt; route;</code></pre></div></li>
 
 <li><p>Gehe zur <code>onResponse()</code> Methode und ersetze die Zeile</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>Place<span style="color:#f92672">&gt;</span> route <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Gson<span style="color:#f92672">().</span><span style="color:#a6e22e">fromJson</span><span style="color:#f92672">(</span>response<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span>      TypeToken<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>Place<span style="color:#f92672">&gt;&gt;()</span> <span style="color:#f92672">{}.</span><span style="color:#a6e22e">getType</span><span style="color:#f92672">());</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List&lt;Place&gt; route = <span style="color:#00f">new</span> Gson().fromJson(response, <span style="color:#00f">new</span>      TypeToken&lt;List&lt;Place&gt;&gt;() {}.getType());</code></pre></div>
 <p>mit der folgenden.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">route <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Gson<span style="color:#f92672">().</span><span style="color:#a6e22e">fromJson</span><span style="color:#f92672">(</span>response<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> TypeToken<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>Place<span style="color:#f92672">&gt;&gt;()</span> <span style="color:#f92672">{}.</span><span style="color:#a6e22e">getType</span><span style="color:#f92672">());</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">route = <span style="color:#00f">new</span> Gson().fromJson(response, <span style="color:#00f">new</span> TypeToken&lt;List&lt;Place&gt;&gt;() {}.getType());</code></pre></div>
 <p>Nun wird die Route nicht mehr in einer lokalen Variable gespeichert, sondern in einer Member-Variable, die in der ganzen Klasse verfügbar ist.</p></li>
 
 <li><p>Füge nun den folgenden Code zur Methode <code>showMap()</code> hinzu, um die Marker anzuzeigen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Iteriert über alle Places, die in der Route enthalten sind
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span>  <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> route<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
-	<span style="color:#75715e">// Speichert den aktuellen Place in die Variable place
-</span><span style="color:#75715e"></span>	Place place <span style="color:#f92672">=</span> route<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>
-	<span style="color:#75715e">// Erstellt einen GeoPoint mit den Koordinaten des aktuellen Place
-</span><span style="color:#75715e"></span>	GeoPoint geoPoint <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> GeoPoint<span style="color:#f92672">(</span>place<span style="color:#f92672">.</span><span style="color:#a6e22e">getLatitude</span><span style="color:#f92672">(),</span> place<span style="color:#f92672">.</span><span style="color:#a6e22e">getLongitude</span><span style="color:#f92672">());</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Iteriert über alle Places, die in der Route enthalten sind
+</span><span style="color:#008000"></span><span style="color:#00f">for</span>  (<span style="color:#2b91af">int</span> i = 0; i &lt; route.size(); i++) {
+	<span style="color:#008000">// Speichert den aktuellen Place in die Variable place
+</span><span style="color:#008000"></span>	Place place = route.get(i);
+	<span style="color:#008000">// Erstellt einen GeoPoint mit den Koordinaten des aktuellen Place
+</span><span style="color:#008000"></span>	GeoPoint geoPoint = <span style="color:#00f">new</span> GeoPoint(place.getLatitude(), place.getLongitude());
    
-	<span style="color:#75715e">// Erstellt das Overlay (= Marker) der später angezeigt wird
-</span><span style="color:#75715e"></span>	SpeechBalloonOverlay textOverlay <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SpeechBalloonOverlay<span style="color:#f92672">();</span>
-	<span style="color:#75715e">// Positioniert das Overlay
-</span><span style="color:#75715e"></span>	textOverlay<span style="color:#f92672">.</span><span style="color:#a6e22e">setGeoPoint</span><span style="color:#f92672">(</span>geoPoint<span style="color:#f92672">);</span>
-	<span style="color:#75715e">// Definiert den Titel/Text des Overlays. Dieser sieht später zum Biespiel so aus: &#34;1 - Ortsname&#34;
-</span><span style="color:#75715e"></span>	textOverlay<span style="color:#f92672">.</span><span style="color:#a6e22e">setTitle</span><span style="color:#f92672">((</span>i <span style="color:#f92672">+</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; - &#34;</span> <span style="color:#f92672">+</span> place<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
+	<span style="color:#008000">// Erstellt das Overlay (= Marker) der später angezeigt wird
+</span><span style="color:#008000"></span>	SpeechBalloonOverlay textOverlay = <span style="color:#00f">new</span> SpeechBalloonOverlay();
+	<span style="color:#008000">// Positioniert das Overlay
+</span><span style="color:#008000"></span>	textOverlay.setGeoPoint(geoPoint);
+	<span style="color:#008000">// Definiert den Titel/Text des Overlays. Dieser sieht später zum Biespiel so aus: &#34;1 - Ortsname&#34;
+</span><span style="color:#008000"></span>	textOverlay.setTitle((i + 1) + <span style="color:#a31515">&#34; - &#34;</span> + place.getName());
    
-	<span style="color:#75715e">// Definiert wie die Schrift aussehen soll, also weiß und in der Schriftgröße 48
-</span><span style="color:#75715e"></span>	Paint textPaint <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Paint<span style="color:#f92672">();</span>
-	textPaint<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>Color<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">);</span>
-	textPaint<span style="color:#f92672">.</span><span style="color:#a6e22e">setTextSize</span><span style="color:#f92672">(</span>48<span style="color:#f92672">);</span>
+	<span style="color:#008000">// Definiert wie die Schrift aussehen soll, also weiß und in der Schriftgröße 48
+</span><span style="color:#008000"></span>	Paint textPaint = <span style="color:#00f">new</span> Paint();
+	textPaint.setColor(Color.WHITE);
+	textPaint.setTextSize(48);
    
-	<span style="color:#75715e">// Definiert die Hintergrundfarbe, in diesem Fall schwarz
-</span><span style="color:#75715e"></span>	Paint backgroundPaint <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Paint<span style="color:#f92672">();</span>
-	backgroundPaint<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>Color<span style="color:#f92672">.</span><span style="color:#a6e22e">BLACK</span><span style="color:#f92672">);</span>
+	<span style="color:#008000">// Definiert die Hintergrundfarbe, in diesem Fall schwarz
+</span><span style="color:#008000"></span>	Paint backgroundPaint = <span style="color:#00f">new</span> Paint();
+	backgroundPaint.setColor(Color.BLACK);
    
-	<span style="color:#75715e">// Übergibt die soeben erstellten Paints für Text und Hintergrund an das Overlay, damit diese verwendet werden
-</span><span style="color:#75715e"></span>	textOverlay<span style="color:#f92672">.</span><span style="color:#a6e22e">setForeground</span><span style="color:#f92672">(</span>textPaint<span style="color:#f92672">);</span>
-	textOverlay<span style="color:#f92672">.</span><span style="color:#a6e22e">setBackground</span><span style="color:#f92672">(</span>backgroundPaint<span style="color:#f92672">);</span>
+	<span style="color:#008000">// Übergibt die soeben erstellten Paints für Text und Hintergrund an das Overlay, damit diese verwendet werden
+</span><span style="color:#008000"></span>	textOverlay.setForeground(textPaint);
+	textOverlay.setBackground(backgroundPaint);
    
-	<span style="color:#75715e">// Legt einen Rahmen fest, damit die Marker ein bisschen besser aussehen
-</span><span style="color:#75715e"></span>	textOverlay<span style="color:#f92672">.</span><span style="color:#a6e22e">setMargin</span><span style="color:#f92672">(</span>16<span style="color:#f92672">);</span>
+	<span style="color:#008000">// Legt einen Rahmen fest, damit die Marker ein bisschen besser aussehen
+</span><span style="color:#008000"></span>	textOverlay.setMargin(16);
    
-	<span style="color:#75715e">// Fügt das Overlay zur Karte hinzu
-</span><span style="color:#75715e"></span>	mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">getOverlays</span><span style="color:#f92672">().</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>textOverlay<span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+	<span style="color:#008000">// Fügt das Overlay zur Karte hinzu
+</span><span style="color:#008000"></span>	mapView.getOverlays().add(textOverlay);
+}</code></pre></div></li>
 </ol>
 
 <p>Wenn du nun einen Satz eingibst und dann auf der Karte nach Amerika navigierst, solltest du die Marker für deine Route sehen.</p>
@@ -1060,7 +1060,7 @@ parameter:
 <h3 id="route-hinzufügen">Route hinzufügen</h3>
 
 <p>Um eine Route auf einer OpenStreetMap Karte anzuzeigen, kannst du das <a href="https://github.com/MKergall/osmbonuspack" target="_blank">OSMBonusPack</a> verwenden. Die Dependency dafür ist aber auf einem anderen Server (Repository) gespeichert als die bisherigen. Öffne deshalb zuerst die <code>build.gradle (Project: &lt;DEIN_PROJEKT_NAME&gt;)</code> und füge das Repository <code>maven { url &quot;https://jitpack.io&quot; }</code> im folgenden Block ein und klicke auf &ldquo;Sync Now&rdquo;.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">allprojects {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">allprojects {
 	repositories { 
     	...
     	maven { url &#34;https://jitpack.io&#34; }
@@ -1070,41 +1070,41 @@ parameter:
 
 <ol>
 <li><p>Der <code>RoadManager</code>, der später verwendet wird um eine Route zu laden, setzt einen HTTP Request ins Internet ab. Das funktioniert ähnlich, wie du es vorher gemacht hast, um die Liste von <code>Place</code> Objekten zu laden. Der <code>RoadManager</code> schickt diesen Request aber nicht, wie du vorher, an einen Endpunkt der mit HTTPS abgesichert ist, sondern an einen unsicheren HTTP Endpunkt. Das ist in Android nur erlaubt, wenn man im <code>AndroidManifest.xml</code> angibt, dass man Requests zu HTTP Endpunkten schickt. Öffne deshalb das <code>AndroidManifest.xml</code> und füge die folgende Zeile im <code>&lt;application&gt;</code> tag ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;application</span>
-	<span style="color:#960050;background-color:#1e0010">...</span>
-	<span style="color:#a6e22e">android:usesCleartextTraffic=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">&gt;</span>
-	<span style="color:#f92672">&lt;activity</span> <span style="color:#960050;background-color:#1e0010">...</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;application
+	<span style="">...</span>
+	android:usesCleartextTraffic=<span style="color:#a31515">&#34;true&#34;</span> &gt;
+	&lt;activity <span style="">...</span>&gt;
 		...
-	<span style="color:#f92672">&lt;/activity&gt;</span>
-<span style="color:#f92672">&lt;/application&gt;</span></code></pre></div></li>
+	&lt;/activity&gt;
+&lt;/application&gt;</code></pre></div></li>
 
 <li><p>Um eine Route erstellen zu können, benötigst du eine Liste von <code>GeoPoint</code> Objekten. Füge deshalb über der <code>for</code>-Schleife, die du oben erstellt hast die folgende Zeile ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ArrayList<span style="color:#f92672">&lt;</span>GeoPoint<span style="color:#f92672">&gt;</span> geoPoints <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ArrayList&lt;GeoPoint&gt; geoPoints = <span style="color:#00f">new</span> ArrayList&lt;&gt;();</code></pre></div></li>
 
 <li><p>Nachdem du Liste erstellt hast, muss sie auch befüllt werden. Du erstellst ja in der <code>for</code>-Schleife mit <code>GeoPoint geoPoint = new GeoPoint(place.getLatitude(), place.getLongitude());</code> einen GeoPoint, der die Position des Markers bestimmt. Füge diesen in der nächsten Zeile mit <code>geoPoints.add(geoPoint);</code> zur Liste hinzu.</p></li>
 
 <li><p>Füge den folgenden Code unter der <code>for</code>-Schleife ein um die Route zu laden.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Die folgenden zwei Zeilen werden benötigt um HTTP Requests am Main Thread abzusetzen.
-</span><span style="color:#75715e">// Mehr dazu und wie man es besser macht im Abschnitt &#34;Bonus: Verbesserungen&#34; der Anleitung.
-</span><span style="color:#75715e"></span>StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">ThreadPolicy</span> policy <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">ThreadPolicy</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">permitAll</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
-StrictMode<span style="color:#f92672">.</span><span style="color:#a6e22e">setThreadPolicy</span><span style="color:#f92672">(</span>policy<span style="color:#f92672">);</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Die folgenden zwei Zeilen werden benötigt um HTTP Requests am Main Thread abzusetzen.
+</span><span style="color:#008000">// Mehr dazu und wie man es besser macht im Abschnitt &#34;Bonus: Verbesserungen&#34; der Anleitung.
+</span><span style="color:#008000"></span>StrictMode.ThreadPolicy policy = <span style="color:#00f">new</span> StrictMode.ThreadPolicy.Builder().permitAll().build();
+StrictMode.setThreadPolicy(policy);
    
-<span style="color:#75715e">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
-</span><span style="color:#75715e"></span>RoadManager roadManager <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> OSRMRoadManager<span style="color:#f92672">(</span>getContext<span style="color:#f92672">());</span>
-<span style="color:#75715e">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben zur Liste hinzugefügt wurden.
-</span><span style="color:#75715e">// Diese methode macht einen HTTP Request am Main Thread.
-</span><span style="color:#75715e"></span>Road road <span style="color:#f92672">=</span> roadManager<span style="color:#f92672">.</span><span style="color:#a6e22e">getRoad</span><span style="color:#f92672">(</span>geoPoints<span style="color:#f92672">);</span>
-<span style="color:#75715e">// Erstellt die Linie, die dann auf der Karte angezeigt wird.
-</span><span style="color:#75715e"></span>Polyline roadOverlay <span style="color:#f92672">=</span> RoadManager<span style="color:#f92672">.</span><span style="color:#a6e22e">buildRoadOverlay</span><span style="color:#f92672">(</span>road<span style="color:#f92672">,</span> Color<span style="color:#f92672">.</span><span style="color:#a6e22e">BLACK</span><span style="color:#f92672">,</span> 6<span style="color:#f92672">);</span>
-<span style="color:#75715e">// Zeigt die Linie auf der Karte an.
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">getOverlays</span><span style="color:#f92672">().</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>roadOverlay<span style="color:#f92672">);</span>
+<span style="color:#008000">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
+</span><span style="color:#008000"></span>RoadManager roadManager = <span style="color:#00f">new</span> OSRMRoadManager(getContext());
+<span style="color:#008000">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben zur Liste hinzugefügt wurden.
+</span><span style="color:#008000">// Diese methode macht einen HTTP Request am Main Thread.
+</span><span style="color:#008000"></span>Road road = roadManager.getRoad(geoPoints);
+<span style="color:#008000">// Erstellt die Linie, die dann auf der Karte angezeigt wird.
+</span><span style="color:#008000"></span>Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);
+<span style="color:#008000">// Zeigt die Linie auf der Karte an.
+</span><span style="color:#008000"></span>mapView.getOverlays().add(roadOverlay);
    
-<span style="color:#75715e">// Erlaubt der Karte nicht weiter als auf dieses Level zu zoomen
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">setMaxZoomLevel</span><span style="color:#f92672">(</span>5<span style="color:#f92672">.</span><span style="color:#a6e22e">0</span><span style="color:#f92672">);</span>
-<span style="color:#75715e">// Zentriert die Karte über der Route
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">zoomToBoundingBox</span><span style="color:#f92672">(</span>roadOverlay<span style="color:#f92672">.</span><span style="color:#a6e22e">getBounds</span><span style="color:#f92672">(),</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> 150<span style="color:#f92672">,</span> 6<span style="color:#f92672">.</span><span style="color:#a6e22e">0</span><span style="color:#f92672">,</span> 100L<span style="color:#f92672">);</span>
-<span style="color:#75715e">// Aktualisiert die MapView, damit die Overlays richtig angezeigt werden.
-</span><span style="color:#75715e"></span>mapView<span style="color:#f92672">.</span><span style="color:#a6e22e">invalidate</span><span style="color:#f92672">();</span></code></pre></div></li>
+<span style="color:#008000">// Erlaubt der Karte nicht weiter als auf dieses Level zu zoomen
+</span><span style="color:#008000"></span>mapView.setMaxZoomLevel(5.0);
+<span style="color:#008000">// Zentriert die Karte über der Route
+</span><span style="color:#008000"></span>mapView.zoomToBoundingBox(roadOverlay.getBounds(), <span style="color:#00f">true</span>, 150, 6.0, 100L);
+<span style="color:#008000">// Aktualisiert die MapView, damit die Overlays richtig angezeigt werden.
+</span><span style="color:#008000"></span>mapView.invalidate();</code></pre></div></li>
 </ol>
 
 <p>Gratuliere! Nun hast du den ersten Teil der Anleitung geschafft und solltest eine Karte mit deiner Route sehen. Wenn du deine App noch weiter verbessern möchtest, sieh dir doch den <a href="/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/">zweiten Teil der Anleitung</a> an. Dieser beinhaltet unter anderem das Styling der App, ein paar Verbesserungen zur Stabilität und noch ein paar Punkte, die man einfach besser machen kann.</p>

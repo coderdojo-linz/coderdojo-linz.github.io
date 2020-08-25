@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -164,11 +164,11 @@
 Es wählt zufällig je ein Wort aus einer Gruppe aus und dabei können natürlich auch lustige und unsinnige Sätze herauskommen.</p>
 
 <p>Ein möglicher Ablauf könnte dann im Shell-Fenster so aussehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Unsinnige Sätze
-<span style="color:#f92672">===============</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Unsinnige Sätze
+===============
 
 Drücke einfach ENTER, um einen neuen Satz zu erzeugen.
-Oder <span style="color:#e6db74">&#34;n&#34;</span> und dann ENTER, um das Programm zu beenden.
+Oder <span style="color:#a31515">&#34;n&#34;</span> und dann ENTER, um das Programm zu beenden.
 
 Die Katze träumt im Feld.
 
@@ -207,29 +207,29 @@ Dort werden wir nun unser Unsinnige-Sätze-Programm schreiben und es unter dem N
 <p>In Python können wir Listen von gleichartigen Werte so definieren und in Variablen speichern.<br />
 Außerdem können wir, wie jede Variable auch Variablen, die Listen enthalten mit <code>print</code> ausgeben.<br />
 Gib dazu folendes im Shell-Fenster ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; listeA <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>1, 2, 3<span style="color:#f92672">]</span>
-&gt;&gt;&gt; print<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;listeA =&#39;</span>, listeA<span style="color:#f92672">)</span>
-listeA <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>1, 2, 3<span style="color:#f92672">]</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; listeA = [1, 2, 3]
+&gt;&gt;&gt; print(<span style="color:#a31515">&#39;listeA =&#39;</span>, listeA)
+listeA = [1, 2, 3]</code></pre></div>
 <p>Wir können dann auch direkt, über einen sogenannten Index, auf jedes Element der Liste zugreifen und es so auslesen oder auf einen neuen Wert setzen.<br />
 Bei Listen hat das erste Element übrigens den Index 0.<br />
 Beispiel im Shell-Fenster:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; listeA<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>
-&gt;&gt;&gt; print<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;listeA =&#39;</span>, listeA, <span style="color:#e6db74">&#39; 3. Element =&#39;</span>, listeA<span style="color:#f92672">[</span>2<span style="color:#f92672">])</span>
-listeA <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>1, 1000, 3<span style="color:#f92672">]</span>  3. Element <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; listeA[1] = 1000
+&gt;&gt;&gt; print(<span style="color:#a31515">&#39;listeA =&#39;</span>, listeA, <span style="color:#a31515">&#39; 3. Element =&#39;</span>, listeA[2])
+listeA = [1, 1000, 3]  3. Element = 3</code></pre></div>
 <p>Wir können auch die Länge einer Liste mit der Funktion <code>len</code> ermitteln:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; len<span style="color:#f92672">(</span>listeA<span style="color:#f92672">)</span>
-<span style="color:#ae81ff">3</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; len(listeA)
+3</code></pre></div>
 <h3 id="funktionen">Funktionen</h3>
 
 <p>So wie die Funktionen <code>print</code> und <code>input</code>, die wir schon kennen, können wir natürlich auch selbst Funktionen definieren.<br />
 Wieder ein Beispiel im Shell-Fenster:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; def add<span style="color:#f92672">(</span>a, b<span style="color:#f92672">)</span>:
-	<span style="color:#66d9ef">return</span> a + b</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; def add(a, b):
+	<span style="color:#00f">return</span> a + b</code></pre></div>
 <p>Hier haben wir die Funktion <code>add</code> definiert, die 2 sogenannte Parameter <code>a</code> und <code>b</code> erhält, mit denen sie dann, wie mit lokalen Variablen arbeiten kann.<br />
 Nun rufen wir die Funktion ein paarmal auf:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; add<span style="color:#f92672">(</span>1, 2<span style="color:#f92672">)</span>
-<span style="color:#ae81ff">3</span>
-&gt;&gt;&gt; add<span style="color:#f92672">(</span>3, -4<span style="color:#f92672">)</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; add(1, 2)
+3
+&gt;&gt;&gt; add(3, -4)
 -1</code></pre></div>
 <h2 id="eine-lösung">Eine Lösung</h2>
 
@@ -240,41 +240,41 @@ Versuche zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!
 
 
 <p>Eine mögliche Lösung für das Unsinnige-Sätze-Programm könnte dann so aussehen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># CoderDojo Linz - Unsinnige Sätze</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># CoderDojo Linz - Unsinnige Sätze</span>
 
-<span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> randint
+<span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
 
-subject <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Lena&#39;</span>, <span style="color:#e6db74">&#39;Tom&#39;</span>, <span style="color:#e6db74">&#39;Die Katze&#39;</span>, <span style="color:#e6db74">&#39;Das Auto&#39;</span>, <span style="color:#e6db74">&#39;Das Känguru&#39;</span> ]
-verb <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;träumt&#39;</span>, <span style="color:#e6db74">&#39;schwimmt&#39;</span>, <span style="color:#e6db74">&#39;springt&#39;</span>, <span style="color:#e6db74">&#39;fährt&#39;</span>, <span style="color:#e6db74">&#39;tanzt&#39;</span> ]
-object <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Meer&#39;</span>, <span style="color:#e6db74">&#39;Feld&#39;</span>, <span style="color:#e6db74">&#39;Weltraum&#39;</span>, <span style="color:#e6db74">&#39;Bett&#39;</span>, <span style="color:#e6db74">&#39;Garten&#39;</span>, <span style="color:#e6db74">&#39;Zirkus&#39;</span> ]
-
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">pick</span>(words):
-	num_words <span style="color:#f92672">=</span> len(words)
-	num_picked <span style="color:#f92672">=</span> randint(<span style="color:#ae81ff">0</span>, num_words <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
-	word_picked <span style="color:#f92672">=</span> words[num_picked]
-	<span style="color:#66d9ef">return</span> word_picked
+subject = [<span style="color:#a31515">&#39;Lena&#39;</span>, <span style="color:#a31515">&#39;Tom&#39;</span>, <span style="color:#a31515">&#39;Die Katze&#39;</span>, <span style="color:#a31515">&#39;Das Auto&#39;</span>, <span style="color:#a31515">&#39;Das Känguru&#39;</span> ]
+verb = [<span style="color:#a31515">&#39;träumt&#39;</span>, <span style="color:#a31515">&#39;schwimmt&#39;</span>, <span style="color:#a31515">&#39;springt&#39;</span>, <span style="color:#a31515">&#39;fährt&#39;</span>, <span style="color:#a31515">&#39;tanzt&#39;</span> ]
+object = [<span style="color:#a31515">&#39;Meer&#39;</span>, <span style="color:#a31515">&#39;Feld&#39;</span>, <span style="color:#a31515">&#39;Weltraum&#39;</span>, <span style="color:#a31515">&#39;Bett&#39;</span>, <span style="color:#a31515">&#39;Garten&#39;</span>, <span style="color:#a31515">&#39;Zirkus&#39;</span> ]
 
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">printSentence</span>():
-	<span style="color:#66d9ef">print</span>(pick(subject), pick(verb), <span style="color:#e6db74">&#39;im&#39;</span>, pick(object), end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;.&#39;</span>)
-	<span style="color:#66d9ef">print</span>()
+<span style="color:#00f">def</span> pick(words):
+	num_words = len(words)
+	num_picked = randint(0, num_words - 1)
+	word_picked = words[num_picked]
+	<span style="color:#00f">return</span> word_picked
 
-<span style="color:#66d9ef">print</span>()
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Unsinnige Sätze&#39;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;===============&#39;</span>)
-<span style="color:#66d9ef">print</span>()
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Drücke einfach ENTER, um einen neuen Satz zu erzeugen.&#39;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Oder &#34;n&#34; und dann ENTER, um das Programm zu beenden.&#39;</span>)
-<span style="color:#66d9ef">print</span>()
+
+<span style="color:#00f">def</span> printSentence():
+	<span style="color:#00f">print</span>(pick(subject), pick(verb), <span style="color:#a31515">&#39;im&#39;</span>, pick(object), end=<span style="color:#a31515">&#39;.&#39;</span>)
+	<span style="color:#00f">print</span>()
+
+<span style="color:#00f">print</span>()
+<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Unsinnige Sätze&#39;</span>)
+<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;===============&#39;</span>)
+<span style="color:#00f">print</span>()
+<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Drücke einfach ENTER, um einen neuen Satz zu erzeugen.&#39;</span>)
+<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Oder &#34;n&#34; und dann ENTER, um das Programm zu beenden.&#39;</span>)
+<span style="color:#00f">print</span>()
 
 printSentence()
-again <span style="color:#f92672">=</span> input()
-<span style="color:#66d9ef">while</span> again <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;n&#39;</span>:
+again = input()
+<span style="color:#00f">while</span> again != <span style="color:#a31515">&#39;n&#39;</span>:
 	printSentence()
-	again <span style="color:#f92672">=</span> input()
+	again = input()
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Servus!&#39;</span>)</code></pre></div> </div>
+<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Servus!&#39;</span>)</code></pre></div> </div>
         </div>
     </div>
 </section>  

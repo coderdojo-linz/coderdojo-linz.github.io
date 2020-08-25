@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -223,51 +223,51 @@
 
 
 <p>Wir brauchen für unser Spiel die beiden Pakete <code>ansi</code> und <code>keypress</code>. Diese können wir durch die folgenden beiden Befehle in der Eingabeaufforderung laden:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm install ansi
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm install ansi
 npm install keypress</code></pre></div>
 <p>Nachdem du die beiden Pakete installiert hast, kannst du in deinem Ordner eine neue Datei für dein Spiel anlegen (z.B. game.js). Zum Starten geben wir den Text &ldquo;MY GAME&rdquo; aus und malen ein paar farbige Punkte:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*jslint node: true, for: true */</span>
-<span style="color:#e6db74">&#39;use strict&#39;</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ansi</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;ansi&#39;</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">/*jslint node: true, for: true */</span>
+<span style="color:#a31515">&#39;use strict&#39;</span>;
+<span style="color:#00f">var</span> ansi = require(<span style="color:#a31515">&#39;ansi&#39;</span>);
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cursor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ansi</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>);
+<span style="color:#00f">var</span> cursor = ansi(process.stdout);
 
-<span style="color:#66d9ef">try</span> {
-    <span style="color:#75715e">// cursor.bg.... setzt die Hintergrundfarbe, so können wir mit dem Leerzeichen farbige Flächen malen
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">red</span>();
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
-    <span style="color:#75715e">// mit reset setzt du die Hintergrundfarbe wieder zurück
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+<span style="color:#00f">try</span> {
+    <span style="color:#008000">// cursor.bg.... setzt die Hintergrundfarbe, so können wir mit dem Leerzeichen farbige Flächen malen
+</span><span style="color:#008000"></span>    cursor.bg.red();
+    cursor.<span style="color:#00f">goto</span>(5, 5).write(<span style="color:#a31515">&#39; &#39;</span>);
+    cursor.<span style="color:#00f">goto</span>(6, 5).write(<span style="color:#a31515">&#39; &#39;</span>);
+    cursor.<span style="color:#00f">goto</span>(7, 5).write(<span style="color:#a31515">&#39; &#39;</span>);
+    <span style="color:#008000">// mit reset setzt du die Hintergrundfarbe wieder zurück
+</span><span style="color:#008000"></span>    cursor.bg.reset();
 
-    <span style="color:#75715e">// cursor..... setzt die Textfarbe
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">yellow</span>();
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;MY GAME&#39;</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">reset</span>();
+    <span style="color:#008000">// cursor..... setzt die Textfarbe
+</span><span style="color:#008000"></span>    cursor.yellow();
+    cursor.<span style="color:#00f">goto</span>(9, 5).write(<span style="color:#a31515">&#39;MY GAME&#39;</span>);
+    cursor.reset();
 
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">red</span>();
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">17</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">19</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
-} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">ex</span>) {
-    <span style="color:#75715e">// hier werden Fehler erkannt und ausgegeben
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ex</span>.<span style="color:#a6e22e">toString</span>());
-} <span style="color:#66d9ef">finally</span> {
-    <span style="color:#75715e">// zum Schluss müssen wir das Spiel beenden
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">quitGame</span>();
+    cursor.bg.red();
+    cursor.<span style="color:#00f">goto</span>(17, 5).write(<span style="color:#a31515">&#39; &#39;</span>);
+    cursor.<span style="color:#00f">goto</span>(18, 5).write(<span style="color:#a31515">&#39; &#39;</span>);
+    cursor.<span style="color:#00f">goto</span>(19, 5).write(<span style="color:#a31515">&#39; &#39;</span>);
+    cursor.bg.reset();
+} <span style="color:#00f">catch</span> (ex) {
+    <span style="color:#008000">// hier werden Fehler erkannt und ausgegeben
+</span><span style="color:#008000"></span>    console.log(ex.toString());
+} <span style="color:#00f">finally</span> {
+    <span style="color:#008000">// zum Schluss müssen wir das Spiel beenden
+</span><span style="color:#008000"></span>    quitGame();
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">quitGame</span>() {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">reset</span>();
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>);
-    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">exit</span>();
+<span style="color:#00f">function</span> quitGame() {
+    cursor.reset();
+    cursor.bg.reset();
+    cursor.<span style="color:#00f">goto</span>(1, 10);
+    process.exit();
 }
 </code></pre></div>
 <p>Du kannst das Programm ausführen, indem du in der Eingabeaufforderung folgendes Kommando eingibst:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">node game.js</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">node game.js</code></pre></div>
 <p>Wenn du das Spiel nun laufen lässt, werden zuerst drei Leerzeichen mit roten Hintergrund gezeichnet, dann wird der Text &ldquo;MY GAME&rdquo; in gelb ausgegeben, und dann kommen wieder drei Leerzeichen mit rotem Hintergrund.</p>
 
 
@@ -327,39 +327,39 @@ npm install keypress</code></pre></div>
 <p>Dazu definieren wir global die Größe des Spielfelds mit <code>var width = 40;</code>und <code>var height = 20;</code>. Den Code im <code>try</code> Block ändern wir, um die vier Linien zu zeichnen. Damit wir nicht jeden Punkt der Linie einzeln zeichnen müssen, bauen wir dafür die Funktionen <code>drawHorizontalLine</code> und <code>drawVerticalLine</code>.</p>
 
 <p>In den neuen Funktionen verwenden wir sogeannten Schleifen (<code>for</code>) um einen Befehl mehrmals zu wiederholen. Zu Beginn der for-Schleife wird der Wert i auf 0 gesetzt. Bei jedem Schleifendurchlauf wird geprüft, ob i &lt; length erfüllt wird. Wenn nicht wird die Schleife abgebrochen, sonst wird der Code ausgeführt. Zum Schluss wird noch <code>i++</code> ausgeführt - also i um 1 erhöht.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*jslint node: true, for: true */</span>
-<span style="color:#e6db74">&#39;use strict&#39;</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ansi</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;ansi&#39;</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">/*jslint node: true, for: true */</span>
+<span style="color:#a31515">&#39;use strict&#39;</span>;
+<span style="color:#00f">var</span> ansi = require(<span style="color:#a31515">&#39;ansi&#39;</span>);
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cursor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ansi</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+<span style="color:#00f">var</span> cursor = ansi(process.stdout);
+<span style="color:#00f">var</span> width = 40;
+<span style="color:#00f">var</span> height = 20;
 
-<span style="color:#66d9ef">try</span> {
-    <span style="color:#75715e">// draw game area
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">grey</span>();
-    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">width</span>);
-    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>, <span style="color:#a6e22e">width</span>);
-    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
-    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">width</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
-} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">ex</span>) {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ex</span>.<span style="color:#a6e22e">toString</span>());
-} <span style="color:#66d9ef">finally</span> {
-    <span style="color:#a6e22e">quitGame</span>();
+<span style="color:#00f">try</span> {
+    <span style="color:#008000">// draw game area
+</span><span style="color:#008000"></span>    cursor.bg.grey();
+    drawHorizontalLine(1, 1, width);
+    drawHorizontalLine(1, height, width);
+    drawVerticalLine(1, 1, height);
+    drawVerticalLine(width, 1, height);
+    cursor.bg.reset();
+} <span style="color:#00f">catch</span> (ex) {
+    console.log(ex.toString());
+} <span style="color:#00f">finally</span> {
+    quitGame();
 }
 
 ...
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
-    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+<span style="color:#00f">function</span> drawHorizontalLine(col, row, length) {
+    <span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; length; i++) {
+        cursor.<span style="color:#00f">goto</span>(col + i, row).write(<span style="color:#a31515">&#39; &#39;</span>);
     }
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
-    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+<span style="color:#00f">function</span> drawVerticalLine(col, row, length) {
+    <span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; length; i++) {
+        cursor.<span style="color:#00f">goto</span>(col, row + i).write(<span style="color:#a31515">&#39; &#39;</span>);
     }
 }
 </code></pre></div>
@@ -420,133 +420,133 @@ npm install keypress</code></pre></div>
 <p>Nach dem Malen des Spielfelds wird die initiale Position der Schlange gesetzt und dann wird die Game Loop gestartet. Das heißt, die Funktion <code>gameLoop</code> wird immer wieder aufgerufen, bis die Schlange den Rand berührt.</p>
 
 <p>Achtung: hier brauchen wir das Spiel nicht im Block <code>finally</code> zu beenden, da das Spiel mit der Game Loop solange weiter laufen soll, bis die Schlange den Rand berührt.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*jslint node: true, for: true */</span>
-<span style="color:#e6db74">&#39;use strict&#39;</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ansi</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;ansi&#39;</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">keypress</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;keypress&#39;</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">/*jslint node: true, for: true */</span>
+<span style="color:#a31515">&#39;use strict&#39;</span>;
+<span style="color:#00f">var</span> ansi = require(<span style="color:#a31515">&#39;ansi&#39;</span>);
+<span style="color:#00f">var</span> keypress = require(<span style="color:#a31515">&#39;keypress&#39;</span>);
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cursor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ansi</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#00f">var</span> cursor = ansi(process.stdout);
+<span style="color:#00f">var</span> width = 40;
+<span style="color:#00f">var</span> height = 20;
+<span style="color:#00f">var</span> posX = 0;
+<span style="color:#00f">var</span> posY = 0;
+<span style="color:#00f">var</span> dirX = 1;
+<span style="color:#00f">var</span> dirY = 0;
 
-<span style="color:#66d9ef">try</span> {
-    <span style="color:#75715e">// clear output
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1Bc&#39;</span>);
-    <span style="color:#75715e">// hide cursor
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stderr</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1B[?25l&#39;</span>);
+<span style="color:#00f">try</span> {
+    <span style="color:#008000">// clear output
+</span><span style="color:#008000"></span>    process.stdout.write(<span style="color:#a31515">&#39;\x1Bc&#39;</span>);
+    <span style="color:#008000">// hide cursor
+</span><span style="color:#008000"></span>    process.stderr.write(<span style="color:#a31515">&#39;\x1B[?25l&#39;</span>);
 
-    <span style="color:#75715e">// draw game area
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">grey</span>();
-    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">width</span>);
-    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>, <span style="color:#a6e22e">width</span>);
-    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
-    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">width</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+    <span style="color:#008000">// draw game area
+</span><span style="color:#008000"></span>    cursor.bg.grey();
+    drawHorizontalLine(1, 1, width);
+    drawHorizontalLine(1, height, width);
+    drawVerticalLine(1, 1, height);
+    drawVerticalLine(width, 1, height);
+    cursor.bg.reset();
 
-    <span style="color:#75715e">// set initial position of snake
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
-    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+    <span style="color:#008000">// set initial position of snake
+</span><span style="color:#008000"></span>    posX = Math.floor(width / 2);
+    posY = Math.floor(height / 2);
 
-    <span style="color:#75715e">// start game loop
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gameLoop</span>();
-} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">ex</span>) {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ex</span>.<span style="color:#a6e22e">toString</span>());
-    <span style="color:#a6e22e">quitGame</span>();
+    <span style="color:#008000">// start game loop
+</span><span style="color:#008000"></span>    gameLoop();
+} <span style="color:#00f">catch</span> (ex) {
+    console.log(ex.toString());
+    quitGame();
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">gameLoop</span>() {
-    <span style="color:#75715e">// remove snake at old position
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">removeSnake</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
+<span style="color:#00f">function</span> gameLoop() {
+    <span style="color:#008000">// remove snake at old position
+</span><span style="color:#008000"></span>    removeSnake(posX, posY);
 
-    <span style="color:#75715e">// set new position
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dirX</span>;
-    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dirY</span>;
+    <span style="color:#008000">// set new position
+</span><span style="color:#008000"></span>    posX = posX + dirX;
+    posY = posY + dirY;
 
-    <span style="color:#75715e">// check new position
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">height</span>) {
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">red</span>();
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">white</span>();
-        <span style="color:#a6e22e">setText</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">6</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;  GAME OVER  &#34;</span>);
-        <span style="color:#a6e22e">quitGame</span>();
+    <span style="color:#008000">// check new position
+</span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (posX == 1 || posX == width || posY == 1 || posY == height) {
+        cursor.red();
+        cursor.bg.white();
+        setText(width / 2 - 6, height / 2, <span style="color:#a31515">&#34;  GAME OVER  &#34;</span>);
+        quitGame();
     }
 
-    <span style="color:#75715e">// draw snake at new position
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawSnake</span>();
+    <span style="color:#008000">// draw snake at new position
+</span><span style="color:#008000"></span>    drawSnake();
 
-    <span style="color:#75715e">// call gameLoop
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">gameLoop</span>, <span style="color:#ae81ff">500</span>);
+    <span style="color:#008000">// call gameLoop
+</span><span style="color:#008000"></span>    setTimeout(gameLoop, 500);
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">quitGame</span>() {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">reset</span>();
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
-    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stderr</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1B[?25h&#39;</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>);
-    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">exit</span>();
+<span style="color:#00f">function</span> quitGame() {
+    cursor.reset();
+    cursor.bg.reset();
+    process.stderr.write(<span style="color:#a31515">&#39;\x1B[?25h&#39;</span>);
+    cursor.<span style="color:#00f">goto</span>(1, height + 4);
+    process.exit();
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">removeSnake</span>() {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">black</span>();
-    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+<span style="color:#00f">function</span> removeSnake() {
+    cursor.bg.black();
+    drawPoint(posX, posY);
+    cursor.bg.reset();
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawSnake</span>() {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">green</span>();
-    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+<span style="color:#00f">function</span> drawSnake() {
+    cursor.bg.green();
+    drawPoint(posX, posY);
+    cursor.bg.reset();
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#66d9ef">char</span>) {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+<span style="color:#00f">function</span> drawPoint(col, row, <span style="color:#00f">char</span>) {
+    cursor.<span style="color:#00f">goto</span>(col, row).write(<span style="color:#a31515">&#39; &#39;</span>);
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
-    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
-    }
-}
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
-    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+<span style="color:#00f">function</span> drawHorizontalLine(col, row, length) {
+    <span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; length; i++) {
+        cursor.<span style="color:#00f">goto</span>(col + i, row).write(<span style="color:#a31515">&#39; &#39;</span>);
     }
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setText</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">text</span>) {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">text</span>);
+<span style="color:#00f">function</span> drawVerticalLine(col, row, length) {
+    <span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; length; i++) {
+        cursor.<span style="color:#00f">goto</span>(col, row + i).write(<span style="color:#a31515">&#39; &#39;</span>);
+    }
+}
+
+<span style="color:#00f">function</span> setText(col, row, text) {
+    cursor.<span style="color:#00f">goto</span>(col, row).write(text);
 }
 </code></pre></div>
 <h2 id="auf-eingabe-des-benutzers-reagieren">Auf Eingabe des Benutzers reagieren</h2>
 
 <p>Damit wir die Schlange mit den Cursortasten steuern können müssen wir auf das Event <code>keypress</code> reagieren. Dazu fügen wir vor dem initalen Setzen der Position der Schlange eine neue Zeile ein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">        <span style="color:#75715e">// handle key press events
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;keypress&#39;</span>, <span style="color:#a6e22e">handleInput</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">        <span style="color:#008000">// handle key press events
+</span><span style="color:#008000"></span>    process.stdin.on(<span style="color:#a31515">&#39;keypress&#39;</span>, handleInput);
 
-    <span style="color:#75715e">// set initial position of snake
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
-    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+    <span style="color:#008000">// set initial position of snake
+</span><span style="color:#008000"></span>    posX = Math.floor(width / 2);
+    posY = Math.floor(height / 2);
 </code></pre></div>
 <p>Dann müssen wir auch die Funktion <code>handleInput</code> definieren:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handleInput</span>(<span style="color:#a6e22e">chunk</span>, <span style="color:#a6e22e">key</span>) {
-    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;q&#39;</span>) {
-        <span style="color:#a6e22e">quitGame</span>();
-    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;right&#39;</span>) {
-        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;left&#39;</span>) {
-        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;up&#39;</span>) {
-        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;down&#39;</span>) {
-        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> handleInput(chunk, key) {
+    <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;q&#39;</span>) {
+        quitGame();
+    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;right&#39;</span>) {
+        dirX = 1;
+        dirY = 0;
+    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;left&#39;</span>) {
+        dirX = -1;
+        dirY = 0;
+    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;up&#39;</span>) {
+        dirX = 0;
+        dirY = -1;
+    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;down&#39;</span>) {
+        dirX = 0;
+        dirY = 1;
     }
 }
 </code></pre></div>
@@ -557,223 +557,223 @@ npm install keypress</code></pre></div>
 <p>Nun brauchen wir noch den Apfel, der von der Schlange gefressen werden soll. Dazu brauchen wir noch einige Erweiterungen.</p>
 
 <p>Bei den globalen Variablen brauchen wir die aktuelle Position des Apfels.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">applePosY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">var</span> applePosX = 0;
+<span style="color:#00f">var</span> applePosY = 0;
 </code></pre></div>
 <p>Vor dem Start der Game Loop muss der erste Apfel gezeichnet werden:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// draw first apple
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawApple</span>();
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#008000">// draw first apple
+</span><span style="color:#008000"></span>    drawApple();
 
-    <span style="color:#75715e">// start game loop
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gameLoop</span>();
+    <span style="color:#008000">// start game loop
+</span><span style="color:#008000"></span>    gameLoop();
 </code></pre></div>
 <p>Die Funktion <code>drawApple</code> sieht so aus:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawApple</span>() {
-    <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">width</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
-    <span style="color:#a6e22e">applePosY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">height</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> drawApple() {
+    applePosX = Math.ceil(Math.random() * (width - 2)) + 1;
+    applePosY = Math.ceil(Math.random() * (height - 2)) + 1;
 
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">red</span>();
-    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">applePosX</span>, <span style="color:#a6e22e">applePosY</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+    cursor.bg.red();
+    drawPoint(applePosX, applePosY);
+    cursor.bg.reset();
 }
 </code></pre></div>
 <p>Bevor wir in der Game Loop die Schlange neu zeichnen, müssen wir überprüfen, ob der Apfel berührt wurde. Wenn ja, muss ein neuer Apfel gezeichnet werden.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// check if apple is touched
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosY</span>) {
-        <span style="color:#75715e">// draw new apple
-</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">drawApple</span>();
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#008000">// check if apple is touched
+</span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (posX == applePosX &amp;&amp; posY == applePosY) {
+        <span style="color:#008000">// draw new apple
+</span><span style="color:#008000"></span>        drawApple();
     }
 
-    <span style="color:#75715e">// draw snake at new position
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawSnake</span>();
+    <span style="color:#008000">// draw snake at new position
+</span><span style="color:#008000"></span>    drawSnake();
 </code></pre></div>
 <h2 id="punkte-zählen-und-geschwindigkeit-erhöhen">Punkte zählen und Geschwindigkeit erhöhen</h2>
 
 <p>Damit wir die Anzahl der gefressenen Äpfel ausgeben können und die Geschwindigkeit mit jedem Apfel erhöhen können, fügen wir zwei weitere globale Variablen hinzu:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">points</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">speed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>; <span style="color:#75715e">// moves per second
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">var</span> points = 0;
+<span style="color:#00f">var</span> speed = 3; <span style="color:#008000">// moves per second
 </span></code></pre></div>
 <p>Diese verwenden wir als erstes in der Game Loop an der Stelle, an der wir prüfen, ob der Apfel berührt wird. Wenn ja, erhöhen wir die <code>points</code> und die <code>speed</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// check if apple is touched
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosY</span>) {
-        <span style="color:#75715e">// increase points
-</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">points</span><span style="color:#f92672">++</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#008000">// check if apple is touched
+</span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (posX == applePosX &amp;&amp; posY == applePosY) {
+        <span style="color:#008000">// increase points
+</span><span style="color:#008000"></span>        points++;
 
-        <span style="color:#75715e">// increase speed
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">speed</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span>) {
-            <span style="color:#a6e22e">speed</span><span style="color:#f92672">++</span>;
+        <span style="color:#008000">// increase speed
+</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (speed &lt; 20) {
+            speed++;
         }
 
-        <span style="color:#75715e">// draw new apple
-</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">drawApple</span>();
+        <span style="color:#008000">// draw new apple
+</span><span style="color:#008000"></span>        drawApple();
     }
 </code></pre></div>
 <p>Am Ende der Game Loop wird diese erneut aufgerufen. Hier ändern wir die Wartezeit, indem wir 1000 (Millisekunden) / durch die <code>speed</code> dividieren. Bei <code>speed</code> = 4 warten wir z.B. 250 ms bis zum nächsten Aufruf der Game Loop.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#75715e">// call gameLoop
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">gameLoop</span>, <span style="color:#ae81ff">1000</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">speed</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#008000">// call gameLoop
+</span><span style="color:#008000"></span>    setTimeout(gameLoop, 1000 / speed);
 </code></pre></div>
 <p>Außerdem fügen wir in der Funktion <code>drawApple</code> am Ende noch folgende Zeilen zum Ausgeben von <code>points</code> und <code>speed</code> ein:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#a6e22e">setText</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;Points: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">points</span>.<span style="color:#a6e22e">toString</span>());
-    <span style="color:#a6e22e">setText</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;Speed: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">speed</span>.<span style="color:#a6e22e">toString</span>());
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    setText(1, height + 2, <span style="color:#a31515">&#34;Points: &#34;</span> + points.toString());
+    setText(1, height + 3, <span style="color:#a31515">&#34;Speed: &#34;</span> + speed.toString());
 </code></pre></div>
 <h2 id="gesamter-code">Gesamter Code</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*jslint node: true, for: true */</span>
-<span style="color:#e6db74">&#39;use strict&#39;</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ansi</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;ansi&#39;</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">keypress</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;keypress&#39;</span>);
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">/*jslint node: true, for: true */</span>
+<span style="color:#a31515">&#39;use strict&#39;</span>;
+<span style="color:#00f">var</span> ansi = require(<span style="color:#a31515">&#39;ansi&#39;</span>);
+<span style="color:#00f">var</span> keypress = require(<span style="color:#a31515">&#39;keypress&#39;</span>);
 
-<span style="color:#a6e22e">keypress</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>);
-<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>.<span style="color:#a6e22e">setRawMode</span>(<span style="color:#66d9ef">true</span>);
-<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>.<span style="color:#a6e22e">resume</span>();
+keypress(process.stdin);
+process.stdin.setRawMode(<span style="color:#00f">true</span>);
+process.stdin.resume();
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cursor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ansi</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">40</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">applePosY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">points</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">speed</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+<span style="color:#00f">var</span> cursor = ansi(process.stdout);
+<span style="color:#00f">var</span> width = 40;
+<span style="color:#00f">var</span> height = 20;
+<span style="color:#00f">var</span> posX = 0;
+<span style="color:#00f">var</span> posY = 0;
+<span style="color:#00f">var</span> applePosX = 0;
+<span style="color:#00f">var</span> applePosY = 0;
+<span style="color:#00f">var</span> dirX = 1;
+<span style="color:#00f">var</span> dirY = 0;
+<span style="color:#00f">var</span> points = 0;
+<span style="color:#00f">var</span> speed = 3;
 
-<span style="color:#66d9ef">try</span> {
-    <span style="color:#75715e">// clear output
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdout</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1Bc&#39;</span>);
-    <span style="color:#75715e">// hide cursor
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stderr</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1B[?25l&#39;</span>);
+<span style="color:#00f">try</span> {
+    <span style="color:#008000">// clear output
+</span><span style="color:#008000"></span>    process.stdout.write(<span style="color:#a31515">&#39;\x1Bc&#39;</span>);
+    <span style="color:#008000">// hide cursor
+</span><span style="color:#008000"></span>    process.stderr.write(<span style="color:#a31515">&#39;\x1B[?25l&#39;</span>);
 
-    <span style="color:#75715e">// draw game area
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">grey</span>();
-    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">width</span>);
-    <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>, <span style="color:#a6e22e">width</span>);
-    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
-    <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">width</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
+    <span style="color:#008000">// draw game area
+</span><span style="color:#008000"></span>    cursor.bg.grey();
+    drawHorizontalLine(1, 1, width);
+    drawHorizontalLine(1, height, width);
+    drawVerticalLine(1, 1, height);
+    drawVerticalLine(width, 1, height);
+    cursor.bg.reset();
 
-    <span style="color:#75715e">// handle key press events
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stdin</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;keypress&#39;</span>, <span style="color:#a6e22e">handleInput</span>);
+    <span style="color:#008000">// handle key press events
+</span><span style="color:#008000"></span>    process.stdin.on(<span style="color:#a31515">&#39;keypress&#39;</span>, handleInput);
 
-    <span style="color:#75715e">// set initial position of snake
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
-    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+    <span style="color:#008000">// set initial position of snake
+</span><span style="color:#008000"></span>    posX = Math.floor(width / 2);
+    posY = Math.floor(height / 2);
 
-    <span style="color:#75715e">// draw first apple
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawApple</span>();
+    <span style="color:#008000">// draw first apple
+</span><span style="color:#008000"></span>    drawApple();
 
-    <span style="color:#75715e">// start game loop
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">gameLoop</span>();
-} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">ex</span>) {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">ex</span>.<span style="color:#a6e22e">toString</span>());
-    <span style="color:#a6e22e">quitGame</span>();
+    <span style="color:#008000">// start game loop
+</span><span style="color:#008000"></span>    gameLoop();
+} <span style="color:#00f">catch</span> (ex) {
+    console.log(ex.toString());
+    quitGame();
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">gameLoop</span>() {
-    <span style="color:#75715e">// remove snake at old position
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">removeSnake</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
+<span style="color:#00f">function</span> gameLoop() {
+    <span style="color:#008000">// remove snake at old position
+</span><span style="color:#008000"></span>    removeSnake(posX, posY);
 
-    <span style="color:#75715e">// set new position
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">posX</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dirX</span>;
-    <span style="color:#a6e22e">posY</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">dirY</span>;
+    <span style="color:#008000">// set new position
+</span><span style="color:#008000"></span>    posX = posX + dirX;
+    posY = posY + dirY;
 
-    <span style="color:#75715e">// check new position
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">width</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">height</span>) {
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">red</span>();
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">white</span>();
-        <span style="color:#a6e22e">setText</span>(<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">6</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;  GAME OVER  &#34;</span>);
-        <span style="color:#a6e22e">quitGame</span>();
+    <span style="color:#008000">// check new position
+</span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (posX == 1 || posX == width || posY == 1 || posY == height) {
+        cursor.red();
+        cursor.bg.white();
+        setText(width / 2 - 6, height / 2, <span style="color:#a31515">&#34;  GAME OVER  &#34;</span>);
+        quitGame();
     }
 
-    <span style="color:#75715e">// check if apple is touched
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">posX</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">posY</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">applePosY</span>) {
-        <span style="color:#75715e">// increase points
-</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">points</span><span style="color:#f92672">++</span>;
+    <span style="color:#008000">// check if apple is touched
+</span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (posX == applePosX &amp;&amp; posY == applePosY) {
+        <span style="color:#008000">// increase points
+</span><span style="color:#008000"></span>        points++;
 
-        <span style="color:#75715e">// increase speed
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">speed</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span>) {
-            <span style="color:#a6e22e">speed</span><span style="color:#f92672">++</span>;
+        <span style="color:#008000">// increase speed
+</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (speed &lt; 20) {
+            speed++;
         }
 
-        <span style="color:#75715e">// draw new apple
-</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">drawApple</span>();
+        <span style="color:#008000">// draw new apple
+</span><span style="color:#008000"></span>        drawApple();
     }
 
-    <span style="color:#75715e">// draw snake at new position
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">drawSnake</span>();
+    <span style="color:#008000">// draw snake at new position
+</span><span style="color:#008000"></span>    drawSnake();
 
-    <span style="color:#75715e">// call gameLoop
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">gameLoop</span>, <span style="color:#ae81ff">1000</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">speed</span>);
+    <span style="color:#008000">// call gameLoop
+</span><span style="color:#008000"></span>    setTimeout(gameLoop, 1000 / speed);
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">quitGame</span>() {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">reset</span>();
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
-    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">stderr</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;\x1B[?25h&#39;</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>);
-    <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">exit</span>();
+<span style="color:#00f">function</span> quitGame() {
+    cursor.reset();
+    cursor.bg.reset();
+    process.stderr.write(<span style="color:#a31515">&#39;\x1B[?25h&#39;</span>);
+    cursor.<span style="color:#00f">goto</span>(1, height + 4);
+    process.exit();
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handleInput</span>(<span style="color:#a6e22e">chunk</span>, <span style="color:#a6e22e">key</span>) {
-    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;q&#39;</span>) {
-        <span style="color:#a6e22e">quitGame</span>();
-    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;right&#39;</span>) {
-        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;left&#39;</span>) {
-        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;up&#39;</span>) {
-        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">key</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;down&#39;</span>) {
-        <span style="color:#a6e22e">dirX</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-        <span style="color:#a6e22e">dirY</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-    }
-}
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawApple</span>() {
-    <span style="color:#a6e22e">applePosX</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">width</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
-    <span style="color:#a6e22e">applePosY</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">ceil</span>(Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">*</span> (<span style="color:#a6e22e">height</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">2</span>)) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
-
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">red</span>();
-    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">applePosX</span>, <span style="color:#a6e22e">applePosY</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
-
-    <span style="color:#a6e22e">setText</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;Points: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">points</span>.<span style="color:#a6e22e">toString</span>());
-    <span style="color:#a6e22e">setText</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">height</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;Speed: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">speed</span>.<span style="color:#a6e22e">toString</span>());
-}
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">removeSnake</span>() {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">black</span>();
-    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
-}
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawSnake</span>() {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">green</span>();
-    <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">posX</span>, <span style="color:#a6e22e">posY</span>);
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#a6e22e">bg</span>.<span style="color:#a6e22e">reset</span>();
-}
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawPoint</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#66d9ef">char</span>) {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
-}
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawHorizontalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
-    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+<span style="color:#00f">function</span> handleInput(chunk, key) {
+    <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;q&#39;</span>) {
+        quitGame();
+    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;right&#39;</span>) {
+        dirX = 1;
+        dirY = 0;
+    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;left&#39;</span>) {
+        dirX = -1;
+        dirY = 0;
+    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;up&#39;</span>) {
+        dirX = 0;
+        dirY = -1;
+    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (key.name == <span style="color:#a31515">&#39;down&#39;</span>) {
+        dirX = 0;
+        dirY = 1;
     }
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">drawVerticalLine</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">length</span>) {
-    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
-        <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>).<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39; &#39;</span>);
+<span style="color:#00f">function</span> drawApple() {
+    applePosX = Math.ceil(Math.random() * (width - 2)) + 1;
+    applePosY = Math.ceil(Math.random() * (height - 2)) + 1;
+
+    cursor.bg.red();
+    drawPoint(applePosX, applePosY);
+    cursor.bg.reset();
+
+    setText(1, height + 2, <span style="color:#a31515">&#34;Points: &#34;</span> + points.toString());
+    setText(1, height + 3, <span style="color:#a31515">&#34;Speed: &#34;</span> + speed.toString());
+}
+
+<span style="color:#00f">function</span> removeSnake() {
+    cursor.bg.black();
+    drawPoint(posX, posY);
+    cursor.bg.reset();
+}
+
+<span style="color:#00f">function</span> drawSnake() {
+    cursor.bg.green();
+    drawPoint(posX, posY);
+    cursor.bg.reset();
+}
+
+<span style="color:#00f">function</span> drawPoint(col, row, <span style="color:#00f">char</span>) {
+    cursor.<span style="color:#00f">goto</span>(col, row).write(<span style="color:#a31515">&#39; &#39;</span>);
+}
+
+<span style="color:#00f">function</span> drawHorizontalLine(col, row, length) {
+    <span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; length; i++) {
+        cursor.<span style="color:#00f">goto</span>(col + i, row).write(<span style="color:#a31515">&#39; &#39;</span>);
     }
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setText</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>, <span style="color:#a6e22e">text</span>) {
-    <span style="color:#a6e22e">cursor</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#a6e22e">col</span>, <span style="color:#a6e22e">row</span>).<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">text</span>);
+<span style="color:#00f">function</span> drawVerticalLine(col, row, length) {
+    <span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; length; i++) {
+        cursor.<span style="color:#00f">goto</span>(col, row + i).write(<span style="color:#a31515">&#39; &#39;</span>);
+    }
+}
+
+<span style="color:#00f">function</span> setText(col, row, text) {
+    cursor.<span style="color:#00f">goto</span>(col, row).write(text);
 }
 </code></pre></div> </div>
         </div>

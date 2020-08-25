@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -175,7 +175,7 @@
 <h2 id="einleitung">Einleitung</h2>
 
 <p>In der letzten Episode haben wir gelernt, wie man auf Events horchen und reagieren kann. Heute werden wir das anwenden indem wir unser Getafix-Plugin erweitern, sodass man Spielern einen Zaubertrank verabreichen kann.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">/magicpotion WorkUser</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">/magicpotion WorkUser</code></pre></div>
 <p>Mit diesem Kommando (das natürlich wieder nur von ops verwendet werden darf) ist der Spieler <em>WorkUser</em> unbesiegbar, das heißt, er verliert keine Gesundheit mehr. Natürlich soll der Sender des Kommandos eine Rückmeldung bekommen, dass er den Spieler erfolgreich Zaubertrank verabreicht hat und auch der Spieler, der den Trank bekommen hat soll eine Information bekommen.</p>
 
 <p>Außerdem werden wir noch ein Kommando <code>/listpotiondrinkers</code> implementieren, in welchem ops alle Spieler auflisten können, welche bereits einen Zaubertrank bekommen haben:</p>
@@ -232,17 +232,17 @@
 <p>Durch unsere Experimente haben wir gesehen, dass der Handler immer aufgerufen wird, sobald irgendetwas kaputt geht. Wir sind aber nur dann an einem Damage interessiert, wenn er einen Spieler betrifft. Beachte, dass es uns jetzt noch egal ist, ob der Spieler einen Zaubertrank getrunken hat oder nicht. Wir bauen sozusagen gerade lauter Obelixe ;-).</p>
 
 <p>Also, wie finden wir heraus, ob der aktuelle Damage-Event sich gerade auf einen Spieler bezieht oder nicht. Als Profi wirst du schon ahnen, dass das irgendwo in unserer Rohrpost, also dem event-Objekt gespeichert ist. Die Methode <code>getEntityType</code> liefert dir den Wert zurück, der dir sagt, was gerade beschädigt wurde. Wenn du in der Methode <code>onPlayerDamage</code> einmal</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">EntityType<span style="color:#f92672">.</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">EntityType.</code></pre></div>
 <p>eintippst (notfalls wieder mit <code>Ctrl</code> + <code>Space</code> nachhelfen), dann siehst du, wieviele verschiedene Dinge (Entities) beschädigt werden können. Und wenn du dann bis zum Buchstaben P hinunterscrollst, siehst du auch den <code>PLAYER</code>.</p>
 
 <p>Wir handeln jetzt im Beamten-Modus: Wenns uns nix angeht, lass ma gleich die Finger davon. Also: Wenn das betroffene Entity kein <code>PLAYER</code> ist, dann verlassen wir die Methode sofort. Auf Gut-Java:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onDamageEvent</span><span style="color:#f92672">(</span>EntityDamageEvent event<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-<span style="display:block;width:100%;background-color:#3c3d38">    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>event<span style="color:#f92672">.</span><span style="color:#a6e22e">getEntityType</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> EntityType<span style="color:#f92672">.</span><span style="color:#a6e22e">PLAYER</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38">            <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
-</span><span style="display:block;width:100%;background-color:#3c3d38">    <span style="color:#f92672">}</span>
-</span>    Bukkit<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">().</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Outch, someone got damaged&#34;</span><span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onDamageEvent(EntityDamageEvent event) {
+<span style="display:block;width:100%;background-color:#e5e5e5">    <span style="color:#00f">if</span> (event.getEntityType() != EntityType.PLAYER) {
+</span><span style="display:block;width:100%;background-color:#e5e5e5">            <span style="color:#00f">return</span>;
+</span><span style="display:block;width:100%;background-color:#e5e5e5">    }
+</span>    Bukkit.getLogger().info(<span style="color:#a31515">&#34;Outch, someone got damaged&#34;</span>);
+}</code></pre></div>
 
 <p>Das probieren wir jetzt gleich wieder aus. Also bauen und testen. Du solltest jetzt sehen, dass die Meldung nur mehr ausgegeben wird, wenn ein Spieler zu Schaden kommt.</p>
 
@@ -264,21 +264,21 @@
 
 <p>Also brauchen wir eine andere Strategie, und die ist, dass wir das Event einfach abbrechen. Ja das geht. Wir können dem Server also sagen, dass er das Event nicht ausführen soll und das geht mit der Methode <code>setCancelled</code> des Event-Objekts. Wenn wir <code>setCancelled</code> mit <code>true</code> aufrufen, dann bekommen zwar alle Plugins das Event noch zugesandt aber der Server selbst führt es nicht mehr aus. Das ganze sieht dann so aus:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onDamageEvent</span><span style="color:#f92672">(</span>EntityDamageEvent event<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>event<span style="color:#f92672">.</span><span style="color:#a6e22e">getEntityType</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> EntityType<span style="color:#f92672">.</span><span style="color:#a6e22e">PLAYER</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
-<span style="display:block;width:100%;background-color:#3c3d38">    event<span style="color:#f92672">.</span><span style="color:#a6e22e">setCancelled</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span>
-</span>    <span style="color:#75715e">// remove line: Bukkit.getLogger().info(&#34;Outch, something got damaged&#34;);
-</span><span style="color:#75715e"></span><span style="color:#f92672">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onDamageEvent(EntityDamageEvent event) {
+    <span style="color:#00f">if</span> (event.getEntityType() != EntityType.PLAYER) {
+            <span style="color:#00f">return</span>;
+    }
+<span style="display:block;width:100%;background-color:#e5e5e5">    event.setCancelled(<span style="color:#00f">true</span>)
+</span>    <span style="color:#008000">// remove line: Bukkit.getLogger().info(&#34;Outch, something got damaged&#34;);
+</span><span style="color:#008000"></span>}</code></pre></div>
 
 <p>Der auskommentierte Text <code>// remove line: ...</code> soll heißen, dass du diese Zeile in deine Code einfach löschen kannst. Probiere dein Plugin jetzt aus. Jetzt sollten alle Spieler auf deinem Server unverwundbar sein.</p>
 
 <p>Natürlich muss dein <code>plugin.yml</code> vorhanden sein und der <code>DamageListener</code> muss im Plugin in der Methode <code>onEnable()</code> registiert sein.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Override</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onEnable</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-	getServer<span style="color:#f92672">().</span><span style="color:#a6e22e">getPluginManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">registerEvents</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> DamageListener<span style="color:#f92672">(),</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">@Override
+<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onEnable() {
+	getServer().getPluginManager().registerEvents(<span style="color:#00f">new</span> DamageListener(), <span style="color:#00f">this</span>);
+}</code></pre></div>
 <h3 id="spieler-speichern">Spieler speichern</h3>
 
 <p>Jetzt können wir den Event des Damage abfangen. Das passiert aber immer und für alle Spieler. Natürlich willst du, dass nur die Spieler, welche den Zaubertrank bekommen haben, unverwundbar sind. Und das gehen wir jetzt an.</p>
@@ -291,59 +291,59 @@
 <p>Die Spieler werden in einem <code>TreeSet</code> gespeichert. Dazu fügst du in der Hauptklasse, in der du auch die Kommandos abfragst, eine Variable <code>potionDrinkers</code> ein, in der die Spielernamen gespeichert werden. Außerdem muss der <code>DamageListener</code> Zugriff auf das Plugin bekommen, um überprüfen zu können, ob der Spieler unverwundbar ist.</p>
 
 <p>Das sieht dann so aus:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetafixPlugin</span> <span style="color:#66d9ef">extends</span> JavaPlugin <span style="color:#f92672">{</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">GetafixPlugin</span> <span style="color:#00f">extends</span> JavaPlugin {
 
-   <span style="color:#66d9ef">private</span> TreeSet<span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span>String<span style="color:#f92672">&amp;</span>gt<span style="color:#f92672">;</span> potionDrinkers <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TreeSet<span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span>String<span style="color:#f92672">&amp;</span>gt<span style="color:#f92672">;();</span> 
+   <span style="color:#00f">private</span> TreeSet&amp;lt;String&amp;gt; potionDrinkers = <span style="color:#00f">new</span> TreeSet&amp;lt;String&amp;gt;(); 
 
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onEnable</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        getServer<span style="color:#f92672">().</span><span style="color:#a6e22e">getPluginManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">registerEvents</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> DamageListener<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">);</span> <span style="color:#75715e">//Übergabe des Plugins an den DamageListener
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+    @Override
+    <span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onEnable() {
+        getServer().getPluginManager().registerEvents(<span style="color:#00f">new</span> DamageListener(<span style="color:#00f">this</span>), <span style="color:#00f">this</span>); <span style="color:#008000">//Übergabe des Plugins an den DamageListener
+</span><span style="color:#008000"></span>    }
 
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-		<span style="color:#f92672">...</span>
-		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>label<span style="color:#f92672">.</span><span style="color:#a6e22e">equalsIgnoreCase</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;magicpotion&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-            Bukkit<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">().</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/magicpotion for &#34;</span> <span style="color:#f92672">+</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: successfully added to list of potion drinkers&#34;</span><span style="color:#f92672">);</span>
-            potionDrinkers<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
-        <span style="color:#f92672">}</span> 
-		<span style="color:#f92672">...</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
+    @Override
+    <span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+		...
+		<span style="color:#00f">if</span> (label.equalsIgnoreCase(<span style="color:#a31515">&#34;magicpotion&#34;</span>)) {
+            Bukkit.getLogger().info(<span style="color:#a31515">&#34;/magicpotion for &#34;</span> + player.getName() + <span style="color:#a31515">&#34;: successfully added to list of potion drinkers&#34;</span>);
+            potionDrinkers.add(player.getName());
+        } 
+		...
+        <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
+    }
 	
-	<span style="color:#75715e">//Überprüfung, ob ein Spieler einen Zaubertrank getrunken hat.
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isPotionDrinkerAllowed</span><span style="color:#f92672">(</span>String playerName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span> potionDrinkers<span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span>playerName<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
+	<span style="color:#008000">//Überprüfung, ob ein Spieler einen Zaubertrank getrunken hat.
+</span><span style="color:#008000"></span>	<span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> isPotionDrinkerAllowed(String playerName) {
+        <span style="color:#00f">return</span> potionDrinkers.contains(playerName);
+    }
 	
-<span style="color:#f92672">}</span></code></pre></div>
+}</code></pre></div>
 <p>Der <code>DamageListener</code> sieht dann so aus:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DamageListener</span> <span style="color:#66d9ef">implements</span> Listener <span style="color:#f92672">{</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">DamageListener</span> <span style="color:#00f">implements</span> Listener {
     
-    <span style="color:#66d9ef">private</span> GetafixPlugin plugin<span style="color:#f92672">;</span>
+    <span style="color:#00f">private</span> GetafixPlugin plugin;
 
-    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">DamageListener</span><span style="color:#f92672">(</span>GetafixPlugin plugin<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">plugin</span> <span style="color:#f92672">=</span> plugin<span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
+    <span style="color:#00f">public</span> DamageListener(GetafixPlugin plugin) {
+        <span style="color:#00f">this</span>.plugin = plugin;
+    }
 
-    <span style="color:#a6e22e">@EventHandler</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onDamageEvent</span><span style="color:#f92672">(</span>EntityDamageEvent event<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>event<span style="color:#f92672">.</span><span style="color:#a6e22e">getEntityType</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> EntityType<span style="color:#f92672">.</span><span style="color:#a6e22e">PLAYER</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
-        <span style="color:#f92672">}</span>
-        Player player <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>Player<span style="color:#f92672">)</span>event<span style="color:#f92672">.</span><span style="color:#a6e22e">getEntity</span><span style="color:#f92672">();</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>plugin<span style="color:#f92672">.</span><span style="color:#a6e22e">isPotionDrinkerAllowed</span><span style="color:#f92672">(</span>player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()))</span> <span style="color:#f92672">{</span>
-            event<span style="color:#f92672">.</span><span style="color:#a6e22e">setCancelled</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
+    @EventHandler
+    <span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onDamageEvent(EntityDamageEvent event) {
+        <span style="color:#00f">if</span> (event.getEntityType() != EntityType.PLAYER) {
+            <span style="color:#00f">return</span>;
+        }
+        Player player = (Player)event.getEntity();
+        <span style="color:#00f">if</span> (plugin.isPotionDrinkerAllowed(player.getName())) {
+            event.setCancelled(<span style="color:#00f">true</span>);
+        }
+    }
 
-<span style="color:#f92672">}</span></code></pre></div>
+}</code></pre></div>
 <h3 id="die-liste-der-leute-die-zaubertrank-getrunken-haben">Die Liste der Leute, die Zaubertrank getrunken haben</h3>
 
 <p>Alles was du jetzt machen musst, ist ein weiteres Kommando in der <code>plugin.yml</code> Datei hinzufügen, dieses Kommando in der <code>onCommand()</code> Methode abfragen, und die Liste der Potion Drinkers ausgeben.</p>
 
 <p><code>plugin.yml</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">## YAML Template.</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#008000">## YAML Template.</span>
 ---
 name: Getafix
 main: io.coderdojo.lisi.minecraft.firstplugin.GetafixPlugin
@@ -364,37 +364,37 @@ commands:
         description: Lists all current potion holders.
         usage: /listpotiondrinkers </code></pre></div>
 <p><code>GetafixPlugin.java</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetafixPlugin</span> <span style="color:#66d9ef">extends</span> JavaPlugin <span style="color:#f92672">{</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">GetafixPlugin</span> <span style="color:#00f">extends</span> JavaPlugin {
 
-    <span style="color:#66d9ef">private</span> TreeSet<span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span>String<span style="color:#f92672">&amp;</span>gt<span style="color:#f92672">;</span> potionDrinkers <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TreeSet<span style="color:#f92672">&amp;</span>lt<span style="color:#f92672">;</span>String<span style="color:#f92672">&amp;</span>gt<span style="color:#f92672">;();</span>
+    <span style="color:#00f">private</span> TreeSet&amp;lt;String&amp;gt; potionDrinkers = <span style="color:#00f">new</span> TreeSet&amp;lt;String&amp;gt;();
 
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onEnable</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        getServer<span style="color:#f92672">().</span><span style="color:#a6e22e">getPluginManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">registerEvents</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> DamageListener<span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">),</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
+    @Override
+    <span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onEnable() {
+        getServer().getPluginManager().registerEvents(<span style="color:#00f">new</span> DamageListener(<span style="color:#00f">this</span>), <span style="color:#00f">this</span>);
+    }
 
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#f92672">...</span>
-		<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>label<span style="color:#f92672">.</span><span style="color:#a6e22e">equalsIgnoreCase</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;listpotiondrinkers&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-            Bukkit<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">().</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/listpotiondrinkers: &#34;</span> <span style="color:#f92672">+</span> potionDrinkers<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; potion drinkers&#34;</span><span style="color:#f92672">);</span>
-            sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span>printCurrentPotionDrinkers<span style="color:#f92672">());</span>
-        <span style="color:#f92672">}</span> 
-		<span style="color:#f92672">...</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
+    @Override
+    <span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+        ...
+		<span style="color:#00f">if</span> (label.equalsIgnoreCase(<span style="color:#a31515">&#34;listpotiondrinkers&#34;</span>)) {
+            Bukkit.getLogger().info(<span style="color:#a31515">&#34;/listpotiondrinkers: &#34;</span> + potionDrinkers.size() + <span style="color:#a31515">&#34; potion drinkers&#34;</span>);
+            sender.sendMessage(printCurrentPotionDrinkers());
+        } 
+		...
+        <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
+    }
 
-    <span style="color:#66d9ef">private</span> String <span style="color:#a6e22e">printCurrentPotionDrinkers</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        StringBuilder sb <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuilder<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;List of potion drinkers: &#34;</span><span style="color:#f92672">);</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>potionDrinkers<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>String playerName <span style="color:#f92672">:</span> potionDrinkers<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                sb<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>playerName<span style="color:#f92672">);</span>
-                sb<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">);</span>
-            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">return</span> sb<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
+    <span style="color:#00f">private</span> String printCurrentPotionDrinkers() {
+        StringBuilder sb = <span style="color:#00f">new</span> StringBuilder(<span style="color:#a31515">&#34;List of potion drinkers: &#34;</span>);
+        <span style="color:#00f">if</span> (potionDrinkers.size() &gt; 0) {
+            <span style="color:#00f">for</span> (String playerName : potionDrinkers) {
+                sb.append(playerName);
+                sb.append(<span style="color:#a31515">&#34; &#34;</span>);
+            }
+        }
+        <span style="color:#00f">return</span> sb.toString();
+    }
+}</code></pre></div>
 <h2 id="kurzversion-für-profis">Kurzversion für Profis</h2>
 
 <ol>
@@ -402,14 +402,14 @@ commands:
 <li>Füge eine neue Klasse namens <code>DamageListener</code> und  stelle sicher, dass nach dem Klassennamen <code>implements Listener</code> steht.</li>
 
 <li><p>Füge eine Methode <code>onDamageEvent</code> mit der Annotation <code>@EventHandler</code> hinzu, mit dem <code>event</code> Parameter vom Typ <code>EntityDamageEvent</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@EventHandler</span>
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onDamageEvent</span><span style="color:#f92672">(</span>EntityDamageEvent event<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>event<span style="color:#f92672">.</span><span style="color:#a6e22e">getEntityType</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> EntityType<span style="color:#f92672">.</span><span style="color:#a6e22e">PLAYER</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-Bukkit<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">().</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Outch, someone got damaged&#34;</span><span style="color:#f92672">);</span>
-event<span style="color:#f92672">.</span><span style="color:#a6e22e">setCancelled</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
-<span style="color:#f92672">}</span></code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">@EventHandler
+<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onDamageEvent(EntityDamageEvent event) {
+<span style="color:#00f">if</span> (event.getEntityType() != EntityType.PLAYER) {
+        <span style="color:#00f">return</span>;
+}
+Bukkit.getLogger().info(<span style="color:#a31515">&#34;Outch, someone got damaged&#34;</span>);
+event.setCancelled(<span style="color:#00f">true</span>);
+}</code></pre></div></li>
 
 <li><p>Speichere die Spieler - siehe oben.</p></li>
 

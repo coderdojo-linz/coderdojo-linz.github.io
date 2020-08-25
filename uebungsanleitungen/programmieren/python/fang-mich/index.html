@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -210,34 +210,34 @@
 <li>Die Funktion <code>sleep</code> aus dem Package <code>time</code> um Pausen zwischen den Bewegungen einzufügen.</li>
 
 <li><p><code>math</code> für ein paar mathematische Funktion, wie z. B. die Wurzelfunktion</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">from</span> PIL <span style="color:#f92672">import</span> ImageTk, Image
-<span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> sleep
-<span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> randint
-<span style="color:#f92672">import</span> math</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> tkinter <span style="color:#00f">import</span> *
+<span style="color:#00f">from</span> PIL <span style="color:#00f">import</span> ImageTk, Image
+<span style="color:#00f">from</span> time <span style="color:#00f">import</span> sleep
+<span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
+<span style="color:#00f">import</span> math</code></pre></div></li>
 </ul>
 
 <h2 id="ein-fenster-mit-einer-leinwand-erstellen">Ein Fenster mit einer Leinwand erstellen</h2>
 
 <p>Zuerst erzeugen wir ein neues Fenster, das wir window nennen. Als Titel wählen wir „Fang mich“. Die Leinwand wird 800 Pixel hoch und 1000 Pixel breit.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Leinwand erstellen</span>
-window <span style="color:#f92672">=</span> Tk()
-window<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Fang mich&#34;</span>)
-H <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>
-B <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>
-c <span style="color:#f92672">=</span> Canvas(window, height <span style="color:#f92672">=</span> H, width <span style="color:#f92672">=</span> B)
-c<span style="color:#f92672">.</span>pack()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Leinwand erstellen</span>
+window = Tk()
+window.title(<span style="color:#a31515">&#34;Fang mich&#34;</span>)
+H = 800
+B = 1000
+c = Canvas(window, height = H, width = B)
+c.pack()</code></pre></div>
 <h2 id="hintergrund-erstellen-und-figuren-laden">Hintergrund erstellen und Figuren laden</h2>
 
 <p>Wir benötigen für dieses Spiel 3 Bilder: <a href="img/Unterwasserwelt.png" target="_blank">Unterwasserwelt.png</a> für den Hintergrund und <a href="img/Fisch.png" target="_blank">Fisch.png</a> und <a href="img/Hai.png" target="_blank">Hai.png</a> für die Figuren. Lade die Bilder herunter und speichere sie in das gleiche Verzeichnis wie dein Python-Programm. Dann laden wir alle Bilder in Python und zeichnen den Hintergrund und den Fisch auf unsere Leinwand. Der Hai kommt etwas später dazu. Er wird zuerst noch gedreht, daher verwenden wir für ihn auch die Funktion <code>Image</code> aus dem Package <code>PIL</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Hintergrund erstellen</span>
-bg_image <span style="color:#f92672">=</span> PhotoImage(file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Unterwasserwelt.png&#34;</span>)
-bg <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_image(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, anchor <span style="color:#f92672">=</span> NW, image<span style="color:#f92672">=</span>bg_image)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Hintergrund erstellen</span>
+bg_image = PhotoImage(file=<span style="color:#a31515">&#34;Unterwasserwelt.png&#34;</span>)
+bg = c.create_image(0, 0, anchor = NW, image=bg_image)
 
-<span style="color:#75715e"># Figuren laden</span>
-fish_image <span style="color:#f92672">=</span> PhotoImage(file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Fisch.png&#34;</span>)
-fish <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_image(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, image<span style="color:#f92672">=</span>fish_image)
-hai_img <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(<span style="color:#e6db74">&#34;Hai.png&#34;</span>)</code></pre></div>
+<span style="color:#008000"># Figuren laden</span>
+fish_image = PhotoImage(file=<span style="color:#a31515">&#34;Fisch.png&#34;</span>)
+fish = c.create_image(0, 0, image=fish_image)
+hai_img = Image.open(<span style="color:#a31515">&#34;Hai.png&#34;</span>)</code></pre></div>
 <h2 id="den-fisch-bewegen">Den Fisch bewegen</h2>
 
 <p>Der Fisch wird mit den Pfeiltasten gesteuert. Bei jedem Tastendruck ändert sich die Position des Fisches um seine Geschwindigkeit, die wir hier mit 100 festlegen.</p>
@@ -247,41 +247,41 @@ hai_img <span style="color:#f92672">=</span> Image<span style="color:#f92672">.<
 <li>Bei Pfeiltaste „unten“ wird die y-Koordinate größer, bei „oben“ wird die y-Koordinate kleiner. (Der Koordinatenursprung ist links oben!) die x-Koordinate bleibt gleich.</li>
 
 <li><p>Damit der Fisch sich nicht über den Rand der Leinwand hinausbewegen kann, fragen wir zuerst seine Koordinaten x und y ab. Der Fisch wird nur bewegt, wenn er auch nach der Bewegung innerhalb der Leinwand bleibt.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Fisch bewegen</span>
-FISH_GESCHW <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
-FISH_R <span style="color:#f92672">=</span> <span style="color:#ae81ff">75</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">move_fish</span>(event):
-x, y <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(fish)
-<span style="color:#66d9ef">if</span> event<span style="color:#f92672">.</span>keysym <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Left&#34;</span>:
-    <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;=</span> FISH_GESCHW:
-        c<span style="color:#f92672">.</span>move(fish, <span style="color:#f92672">-</span>FISH_GESCHW, <span style="color:#ae81ff">0</span>)
-<span style="color:#66d9ef">elif</span> event<span style="color:#f92672">.</span>keysym <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Right&#34;</span>:
-    <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&lt;=</span> B <span style="color:#f92672">-</span> FISH_GESCHW:
-        c<span style="color:#f92672">.</span>move(fish, FISH_GESCHW, <span style="color:#ae81ff">0</span>)
-<span style="color:#66d9ef">elif</span> event<span style="color:#f92672">.</span>keysym <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Up&#34;</span>:
-    <span style="color:#66d9ef">if</span> y <span style="color:#f92672">&gt;=</span> FISH_GESCHW:
-        c<span style="color:#f92672">.</span>move(fish, <span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span>FISH_GESCHW)
-<span style="color:#66d9ef">elif</span> event<span style="color:#f92672">.</span>keysym <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Down&#34;</span>:
-    <span style="color:#66d9ef">if</span> y <span style="color:#f92672">&lt;=</span> H <span style="color:#f92672">-</span> FISH_GESCHW:
-        c<span style="color:#f92672">.</span>move(fish, <span style="color:#ae81ff">0</span>, FISH_GESCHW)
-window<span style="color:#f92672">.</span>bind(<span style="color:#e6db74">&#34;&lt;Key&gt;&#34;</span>, move_fish)</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Fisch bewegen</span>
+FISH_GESCHW = 100
+FISH_R = 75
+<span style="color:#00f">def</span> move_fish(event):
+x, y = c.coords(fish)
+<span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
+    <span style="color:#00f">if</span> x &gt;= FISH_GESCHW:
+        c.move(fish, -FISH_GESCHW, 0)
+<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
+    <span style="color:#00f">if</span> x &lt;= B - FISH_GESCHW:
+        c.move(fish, FISH_GESCHW, 0)
+<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
+    <span style="color:#00f">if</span> y &gt;= FISH_GESCHW:
+        c.move(fish, 0, -FISH_GESCHW)
+<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
+    <span style="color:#00f">if</span> y &lt;= H - FISH_GESCHW:
+        c.move(fish, 0, FISH_GESCHW)
+window.bind(<span style="color:#a31515">&#34;&lt;Key&gt;&#34;</span>, move_fish)</code></pre></div></li>
 </ul>
 
 <h2 id="hauptschleife-1-test">Hauptschleife – 1. Test</h2>
 
 <p>Nun ist es an der Zeit, die Bewegung des Fisches zu Testen und auch den Hai schon einmal auftauchen zu lassen. Den Hai platzieren wir in der Mitte des Fensters und setzen dafür die Koordinaten des Hais (<code>hai_x</code> und <code>hai_y</code>) auf die halbe Breite und halbe Höhe des Fensters. Zu Beginn ist die Richtung des Hais 0, d. h. er schaut nach rechts. In einer Endlosschleife (<code>while True</code>) drehen wir den Hai zufällig in verschiedene Richtungen, aktualisieren das Fenster und warten kurz, damit die Drehungen auch gut sichtbar sind.
 Lasse das Programm einmal laufen (F5) und bewege den Fisch mit den Pfeiltasten. Beobachte die Bewegungen des Hais, aber keine Angst, er wird dich noch nicht fressen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Hauptschleife</span>
-richtung <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-hai_x, hai_y <span style="color:#f92672">=</span> B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Hauptschleife</span>
+richtung = 0
+hai_x, hai_y = B/2, H/2
 
-<span style="color:#66d9ef">while</span> True:
-	richtung <span style="color:#f92672">+=</span> randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>)
-	richtung <span style="color:#f92672">%=</span> <span style="color:#ae81ff">360</span>
-	hai_tkimg <span style="color:#f92672">=</span> ImageTk<span style="color:#f92672">.</span>PhotoImage(hai_img<span style="color:#f92672">.</span>rotate(richtung))
-	hai <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_image(hai_x, hai_y, image<span style="color:#f92672">=</span>hai_tkimg)
-	window<span style="color:#f92672">.</span>update()
-	sleep(<span style="color:#ae81ff">0.1</span>)</code></pre></div>
+<span style="color:#00f">while</span> True:
+	richtung += randint(0, 10)
+	richtung %= 360
+	hai_tkimg = ImageTk.PhotoImage(hai_img.rotate(richtung))
+	hai = c.create_image(hai_x, hai_y, image=hai_tkimg)
+	window.update()
+	sleep(0.1)</code></pre></div>
 <h2 id="haifisch-bewegen">Haifisch bewegen</h2>
 
 <p>Die Bewegung des Haifisches soll automatisiert sein. Er bewegt sich zu Beginn in eine bestimmte Richtung, die wir durch 2 Zahlen beschreiben: <code>step_x</code> und <code>step_y</code>. Da beide zu Beginn auf 50 gesetzt werden, bewegt sich der Hai 50 Pixel nach rechts und 50 Pixel nach unten. Wandert der Hai dabei über unser Fenster hinaus, dann ändern wir die Richtung, indem wir einfach das Vorzeichen von <code>step_x</code> oder <code>step_y</code> umdrehen.</p>
@@ -310,52 +310,52 @@ hai_x, hai_y <span style="color:#f92672">=</span> B<span style="color:#f92672">/
     </div>
 </div>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Haifisch bewegen</span>
-HAI_R <span style="color:#f92672">=</span> <span style="color:#ae81ff">115</span>
-step_x <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
-step_y <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Haifisch bewegen</span>
+HAI_R = 115
+step_x = 50
+step_y = 50
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">move_hai</span>(hai, hai_x, hai_y, step_x, step_y):
-    c<span style="color:#f92672">.</span>move(hai, step_x, step_y)
-    hai_x, hai_y <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(hai)
-    <span style="color:#66d9ef">if</span> hai_y <span style="color:#f92672">&gt;</span> H <span style="color:#f92672">or</span>  hai_y <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
-        step_y <span style="color:#f92672">=</span> step_y <span style="color:#f92672">*</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">if</span> hai_x <span style="color:#f92672">&gt;</span> B <span style="color:#f92672">or</span> hai_x <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
-        step_x <span style="color:#f92672">=</span> step_x <span style="color:#f92672">*</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-    <span style="color:#66d9ef">return</span> hai_x, hai_y, step_x, step_y</code></pre></div>
+<span style="color:#00f">def</span> move_hai(hai, hai_x, hai_y, step_x, step_y):
+    c.move(hai, step_x, step_y)
+    hai_x, hai_y = c.coords(hai)
+    <span style="color:#00f">if</span> hai_y &gt; H <span style="color:#00f">or</span>  hai_y &lt; 0:
+        step_y = step_y * -1
+    <span style="color:#00f">if</span> hai_x &gt; B <span style="color:#00f">or</span> hai_x &lt; 0:
+        step_x = step_x * -1
+    <span style="color:#00f">return</span> hai_x, hai_y, step_x, step_y</code></pre></div>
 <h2 id="hauptschleife-2-test">Hauptschleife – 2. Test</h2>
 
 <p>Die Haibewegung können wir gleich in unsere Hauptschleife einbauen und testen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Hauptschleife</span>
-richtung <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-hai_x, hai_y <span style="color:#f92672">=</span> B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Hauptschleife</span>
+richtung = 0
+hai_x, hai_y = B/2, H/2
 
-<span style="color:#66d9ef">while</span> True:
-	richtung <span style="color:#f92672">+=</span> randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>)
-	richtung <span style="color:#f92672">%=</span> <span style="color:#ae81ff">360</span>
-	hai_tkimg <span style="color:#f92672">=</span> ImageTk<span style="color:#f92672">.</span>PhotoImage(hai_img<span style="color:#f92672">.</span>rotate(richtung))
-	hai <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_image(hai_x, hai_y, image<span style="color:#f92672">=</span>hai_tkimg)
-	hai_x, hai_y, step_x, step_y <span style="color:#f92672">=</span> move_hai(hai, hai_x, hai_y, step_x, step_y)
-	window<span style="color:#f92672">.</span>update()
-	sleep(<span style="color:#ae81ff">0.1</span>)</code></pre></div>
+<span style="color:#00f">while</span> True:
+	richtung += randint(0, 10)
+	richtung %= 360
+	hai_tkimg = ImageTk.PhotoImage(hai_img.rotate(richtung))
+	hai = c.create_image(hai_x, hai_y, image=hai_tkimg)
+	hai_x, hai_y, step_x, step_y = move_hai(hai, hai_x, hai_y, step_x, step_y)
+	window.update()
+	sleep(0.1)</code></pre></div>
 <h2 id="der-fisch-wird-gefangen">Der Fisch wird gefangen</h2>
 
 <p>Wenn der Fisch dem Hai zu nahekommt, wird er gefangen und verschwindet vom Bildschirm. Um feststellen zu können, ob der Hai den Fisch berührt, brauchen wir eine Funktion, die den Abstand zwischen dem Hai und dem Fisch berechnen kann. Dazu holen wir uns die aktuellen Koordinaten von beiden Figuren und wenden den Satz von Pythagoras an. Die dazu notwendige Wurzelfunktion (<code>sqrt</code>) importieren wir aus dem <code>math</code>-Package. Der Abstand <code>a</code> wird als Wert der Funktion ausgegeben.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Abstand zwischen Fisch und Hai</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">abstand</span>(fish, hai):
-    x1, y1 <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(fish)
-    x2, y2 <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(hai)
-    a <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>sqrt((x2<span style="color:#f92672">-</span>x1)<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> (y2<span style="color:#f92672">-</span>y1)<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
-    <span style="color:#66d9ef">return</span> a</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Abstand zwischen Fisch und Hai</span>
+<span style="color:#00f">def</span> abstand(fish, hai):
+    x1, y1 = c.coords(fish)
+    x2, y2 = c.coords(hai)
+    a = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+    <span style="color:#00f">return</span> a</code></pre></div>
 <p>Nun brauchen wir noch eine Funktion, die uns sagt, ob der Fisch gefangen wurde.  Wir überprüfen, wie groß der Abstand zwischen Hai und Fisch ist. Ist dieser kleiner als die Summe von Fisch-Radius und Hai-Radius, dann hat der Hai den Fisch erwischt. Als Rückgabewert nehmen wir dazu eine Variable gefangen, die entweder True (Fisch gefangen) oder False ist (Fisch nicht gefangen). Solche Variablen nennt man beim Programmieren auch Boolesche Variablen.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Fisch gefangen</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fangen</span>(fish, hai):
-    <span style="color:#66d9ef">if</span> abstand(fish, hai) <span style="color:#f92672">&lt;</span> (HAI_R <span style="color:#f92672">+</span> FISH_R):
-        gefangen <span style="color:#f92672">=</span> True
-        c<span style="color:#f92672">.</span>itemconfig(fish, state<span style="color:#f92672">=</span>HIDDEN)
-    <span style="color:#66d9ef">else</span>:
-        gefangen <span style="color:#f92672">=</span> False
-    <span style="color:#66d9ef">return</span> gefangen</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Fisch gefangen</span>
+<span style="color:#00f">def</span> fangen(fish, hai):
+    <span style="color:#00f">if</span> abstand(fish, hai) &lt; (HAI_R + FISH_R):
+        gefangen = True
+        c.itemconfig(fish, state=HIDDEN)
+    <span style="color:#00f">else</span>:
+        gefangen = False
+    <span style="color:#00f">return</span> gefangen</code></pre></div>
 <h2 id="hauptschleife-3-test">Hauptschleife – 3. Test</h2>
 
 <p>Wir bauen nun in unsere Hauptschleife eine Verzweigung ein:</p>
@@ -364,76 +364,76 @@ hai_x, hai_y <span style="color:#f92672">=</span> B<span style="color:#f92672">/
 <li>Solange der Fisch nicht gefangen wurde, bewegt sich der Hai in unserem Fenster. Wir überprüfen nach jeder Bewegung, ob der Fisch gefangen wurde.</li>
 
 <li><p>Falls der Fisch gefangen wurde, lassen wir auch den Hai vom Bild verschwinden und stellen die Ausgangssituation wieder her: Variablen werden wieder auf die ursprünglichen Werte zurückgesetzt und der Fisch erscheint wieder in der linken oberen Ecke. Dazu fragen wir zuerst die aktuellen Koordinaten des Fisches ab und bewegen ihn dann so, dass seine Koordinaten  nach der Bewegung wieder im Koordinatenursprung (0, 0) sind.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">while</span> True:
-<span style="color:#75715e"># Fisch versucht Hai zu entkommen</span>
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> gefangen:
-    richtung <span style="color:#f92672">+=</span> randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>)
-    richtung <span style="color:#f92672">%=</span> <span style="color:#ae81ff">360</span>
-    hai_tkimg <span style="color:#f92672">=</span> ImageTk<span style="color:#f92672">.</span>PhotoImage(hai_img<span style="color:#f92672">.</span>rotate(richtung))
-    hai <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_image(hai_x, hai_y, image<span style="color:#f92672">=</span>hai_tkimg)
-    hai_x, hai_y, step_x, step_y <span style="color:#f92672">=</span> move_hai(hai, hai_x, hai_y, step_x, step_y)
-    gefangen <span style="color:#f92672">=</span> fangen(fish, hai)
-    window<span style="color:#f92672">.</span>update()
-    sleep(<span style="color:#ae81ff">0.1</span>)
-<span style="color:#75715e"># Fisch wurde gefangen</span>
-<span style="color:#66d9ef">else</span>:
-    zeige_text(<span style="color:#e6db74">&#34;Game over&#34;</span>, B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;orangered&#34;</span>, <span style="color:#e6db74">&#34;Helvetica&#34;</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">4</span>)
-    c<span style="color:#f92672">.</span>itemconfig(hai, state <span style="color:#f92672">=</span> HIDDEN)
-    <span style="color:#75715e"># Ausgangssituation wieder herstellen</span>
-    gefangen <span style="color:#f92672">=</span> False
-    richtung <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    hai_x, hai_y <span style="color:#f92672">=</span> B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
-    c<span style="color:#f92672">.</span>itemconfig(fish, state<span style="color:#f92672">=</span>NORMAL)
-    fish_x, fish_y <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(fish)
-    c<span style="color:#f92672">.</span>move(fish, <span style="color:#f92672">-</span>fish_x, <span style="color:#f92672">-</span>fish_y)</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">while</span> True:
+<span style="color:#008000"># Fisch versucht Hai zu entkommen</span>
+<span style="color:#00f">if</span> <span style="color:#00f">not</span> gefangen:
+    richtung += randint(0, 10)
+    richtung %= 360
+    hai_tkimg = ImageTk.PhotoImage(hai_img.rotate(richtung))
+    hai = c.create_image(hai_x, hai_y, image=hai_tkimg)
+    hai_x, hai_y, step_x, step_y = move_hai(hai, hai_x, hai_y, step_x, step_y)
+    gefangen = fangen(fish, hai)
+    window.update()
+    sleep(0.1)
+<span style="color:#008000"># Fisch wurde gefangen</span>
+<span style="color:#00f">else</span>:
+    zeige_text(<span style="color:#a31515">&#34;Game over&#34;</span>, B/2, H/2, <span style="color:#a31515">&#34;orangered&#34;</span>, <span style="color:#a31515">&#34;Helvetica&#34;</span>, 30, 4)
+    c.itemconfig(hai, state = HIDDEN)
+    <span style="color:#008000"># Ausgangssituation wieder herstellen</span>
+    gefangen = False
+    richtung = 0
+    hai_x, hai_y = B/2, H/2
+    c.itemconfig(fish, state=NORMAL)
+    fish_x, fish_y = c.coords(fish)
+    c.move(fish, -fish_x, -fish_y)</code></pre></div></li>
 </ul>
 
 <h2 id="der-letzte-feinschliff">Der letzte Feinschliff</h2>
 
 <p>Wir blenden nun einen Text ein, wenn der Fisch gefangen wurde („Game over“) und wenn der Fisch wieder am Start zurück ist („Willkommen zurück“). Diese Text sollen nur für eine bestimmte Zeit am Bildschirm erscheinen und dazu verwenden wir folgende Funktion:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Anzeige von Text für eine bestimmte Zeit</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">zeige_text</span>(nachricht, x, y, farbe, schrift, größe, zeit):
-    text <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_text(x, y, text<span style="color:#f92672">=</span>nachricht, fill <span style="color:#f92672">=</span> farbe, font <span style="color:#f92672">=</span>(schrift, größe))
-    window<span style="color:#f92672">.</span>update()
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Anzeige von Text für eine bestimmte Zeit</span>
+<span style="color:#00f">def</span> zeige_text(nachricht, x, y, farbe, schrift, größe, zeit):
+    text = c.create_text(x, y, text=nachricht, fill = farbe, font =(schrift, größe))
+    window.update()
     sleep(zeit)
-    c<span style="color:#f92672">.</span>itemconfig(text, state <span style="color:#f92672">=</span> HIDDEN)
-    window<span style="color:#f92672">.</span>update()</code></pre></div>
+    c.itemconfig(text, state = HIDDEN)
+    window.update()</code></pre></div>
 <h2 id="hauptschleife-komplett">Hauptschleife - komplett</h2>
 
 <p>Nun können wir die Anzeige der Texte in die Hauptschleife einbauen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Hauptschleife</span>
-gefangen <span style="color:#f92672">=</span> False
-richtung <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-hai_x, hai_y <span style="color:#f92672">=</span> B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Hauptschleife</span>
+gefangen = False
+richtung = 0
+hai_x, hai_y = B/2, H/2
 
-<span style="color:#66d9ef">while</span> True:
-    <span style="color:#75715e"># Fisch versucht Hai zu entkommen</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> gefangen:
-        richtung <span style="color:#f92672">+=</span> randint(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>)
-        richtung <span style="color:#f92672">%=</span> <span style="color:#ae81ff">360</span>
-        hai_tkimg <span style="color:#f92672">=</span> ImageTk<span style="color:#f92672">.</span>PhotoImage(hai_img<span style="color:#f92672">.</span>rotate(richtung))
-        hai <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>create_image(hai_x, hai_y, image<span style="color:#f92672">=</span>hai_tkimg)
-        hai_x, hai_y, step_x, step_y <span style="color:#f92672">=</span> move_hai(hai, hai_x, hai_y, step_x, step_y)
-        gefangen <span style="color:#f92672">=</span> fangen(fish, hai)
-        window<span style="color:#f92672">.</span>update()
-        sleep(<span style="color:#ae81ff">0.1</span>)
-    <span style="color:#75715e"># Fisch wurde gefangen</span>
-    <span style="color:#66d9ef">else</span>:
-        zeige_text(<span style="color:#e6db74">&#34;Game over&#34;</span>, B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;orangered&#34;</span>, <span style="color:#e6db74">&#34;Helvetica&#34;</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">4</span>)
-        c<span style="color:#f92672">.</span>itemconfig(hai, state <span style="color:#f92672">=</span> HIDDEN)
-        <span style="color:#75715e"># Ausgangssituation wieder herstellen</span>
-        gefangen <span style="color:#f92672">=</span> False
-        richtung <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-        hai_x, hai_y <span style="color:#f92672">=</span> B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, H<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
-        c<span style="color:#f92672">.</span>itemconfig(fish, state<span style="color:#f92672">=</span>NORMAL)
-        fish_x, fish_y <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>coords(fish)
-        c<span style="color:#f92672">.</span>move(fish, <span style="color:#f92672">-</span>fish_x, <span style="color:#f92672">-</span>fish_y)
-        zeige_text(<span style="color:#e6db74">&#34;Willkommen zurück&#34;</span>, B<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">30</span>, <span style="color:#e6db74">&#34;orangered&#34;</span>, <span style="color:#e6db74">&#34;Helvetica&#34;</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">2</span>)</code></pre></div>
+<span style="color:#00f">while</span> True:
+    <span style="color:#008000"># Fisch versucht Hai zu entkommen</span>
+    <span style="color:#00f">if</span> <span style="color:#00f">not</span> gefangen:
+        richtung += randint(0, 10)
+        richtung %= 360
+        hai_tkimg = ImageTk.PhotoImage(hai_img.rotate(richtung))
+        hai = c.create_image(hai_x, hai_y, image=hai_tkimg)
+        hai_x, hai_y, step_x, step_y = move_hai(hai, hai_x, hai_y, step_x, step_y)
+        gefangen = fangen(fish, hai)
+        window.update()
+        sleep(0.1)
+    <span style="color:#008000"># Fisch wurde gefangen</span>
+    <span style="color:#00f">else</span>:
+        zeige_text(<span style="color:#a31515">&#34;Game over&#34;</span>, B/2, H/2, <span style="color:#a31515">&#34;orangered&#34;</span>, <span style="color:#a31515">&#34;Helvetica&#34;</span>, 30, 4)
+        c.itemconfig(hai, state = HIDDEN)
+        <span style="color:#008000"># Ausgangssituation wieder herstellen</span>
+        gefangen = False
+        richtung = 0
+        hai_x, hai_y = B/2, H/2
+        c.itemconfig(fish, state=NORMAL)
+        fish_x, fish_y = c.coords(fish)
+        c.move(fish, -fish_x, -fish_y)
+        zeige_text(<span style="color:#a31515">&#34;Willkommen zurück&#34;</span>, B/2, 30, <span style="color:#a31515">&#34;orangered&#34;</span>, <span style="color:#a31515">&#34;Helvetica&#34;</span>, 30, 2)</code></pre></div>
 <h2 id="aktivierung-des-fensters">Aktivierung des Fensters</h2>
 
 <p>Zu guter Letzt gibt es noch einen Befehl, um das Fenster zu aktivieren:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Aktivierung des Fensters</span>
-window<span style="color:#f92672">.</span>mainloop()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Aktivierung des Fensters</span>
+window.mainloop()</code></pre></div>
 <p>Wenn du nun das Programm speicherst (<code>STRG + S</code>), kannst du es ausführen (<code>F5</code>). Kannst du dem Hai entkommen?</p>
 
 <h2 id="erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</h2>

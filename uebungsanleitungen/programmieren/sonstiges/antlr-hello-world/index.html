@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -221,10 +221,10 @@
 </p></li>
 
 <li><p>Folgende Grammatik in die neue Datei einfügen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">grammar Hello;
-greet     : <span style="color:#e6db74">&#39;hello&#39;</span> ID ;         // Schlüsselwort hello gefolgt von einem Identifier
-ID        : <span style="color:#f92672">[</span>a-z<span style="color:#f92672">]</span>+ ;             // Identifier in Kleinbuchstaben
-WS        : <span style="color:#f92672">[</span> <span style="color:#ae81ff">\t\r\n</span><span style="color:#f92672">]</span>+ -&gt; skip ; // Leerzeichen, Tab, Leerzeilen ignorieren</code></pre></div></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">grammar Hello;
+greet     : <span style="color:#a31515">&#39;hello&#39;</span> ID ;         // Schlüsselwort hello gefolgt von einem Identifier
+ID        : [a-z]+ ;             // Identifier in Kleinbuchstaben
+WS        : [ <span style="color:#a31515">\t\r\n</span>]+ -&gt; skip ; // Leerzeichen, Tab, Leerzeilen ignorieren</code></pre></div></li>
 
 <li><p>Rechte Maustaste auf die Regel <code>greet</code> und <em>Test Rule greet</em> anklicken<br/>
 
@@ -290,32 +290,32 @@ WS        : <span style="color:#f92672">[</span> <span style="color:#ae81ff">\t\
 
 <ul>
 <li><p>Neue Datei <em>Chat.g4</em> anlegen</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">grammar chat;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">grammar chat;
 
 /*
 * Lexer Rules
 */
 
-fragment A          : <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;A&#39;</span>|<span style="color:#e6db74">&#39;a&#39;</span><span style="color:#f92672">)</span> ;
-fragment S          : <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;S&#39;</span>|<span style="color:#e6db74">&#39;s&#39;</span><span style="color:#f92672">)</span> ;
-fragment Y          : <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;Y&#39;</span>|<span style="color:#e6db74">&#39;y&#39;</span><span style="color:#f92672">)</span> ;
-fragment H          : <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;H&#39;</span>|<span style="color:#e6db74">&#39;h&#39;</span><span style="color:#f92672">)</span> ;
-fragment O          : <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;O&#39;</span>|<span style="color:#e6db74">&#39;o&#39;</span><span style="color:#f92672">)</span> ;
-fragment U          : <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;U&#39;</span>|<span style="color:#e6db74">&#39;u&#39;</span><span style="color:#f92672">)</span> ;
-fragment T          : <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;T&#39;</span>|<span style="color:#e6db74">&#39;t&#39;</span><span style="color:#f92672">)</span> ;
+fragment A          : (<span style="color:#a31515">&#39;A&#39;</span>|<span style="color:#a31515">&#39;a&#39;</span>) ;
+fragment S          : (<span style="color:#a31515">&#39;S&#39;</span>|<span style="color:#a31515">&#39;s&#39;</span>) ;
+fragment Y          : (<span style="color:#a31515">&#39;Y&#39;</span>|<span style="color:#a31515">&#39;y&#39;</span>) ;
+fragment H          : (<span style="color:#a31515">&#39;H&#39;</span>|<span style="color:#a31515">&#39;h&#39;</span>) ;
+fragment O          : (<span style="color:#a31515">&#39;O&#39;</span>|<span style="color:#a31515">&#39;o&#39;</span>) ;
+fragment U          : (<span style="color:#a31515">&#39;U&#39;</span>|<span style="color:#a31515">&#39;u&#39;</span>) ;
+fragment T          : (<span style="color:#a31515">&#39;T&#39;</span>|<span style="color:#a31515">&#39;t&#39;</span>) ;
 
-fragment LOWERCASE  : <span style="color:#f92672">[</span>a-z<span style="color:#f92672">]</span> ;
-fragment UPPERCASE  : <span style="color:#f92672">[</span>A-Z<span style="color:#f92672">]</span> ;
+fragment LOWERCASE  : [a-z] ;
+fragment UPPERCASE  : [A-Z] ;
 
 SAYS                : S A Y S ;
 
 SHOUTS              : S H O U T S;
 
-WORD                : <span style="color:#f92672">(</span>LOWERCASE | UPPERCASE | <span style="color:#e6db74">&#39;_&#39;</span><span style="color:#f92672">)</span>+ ;
+WORD                : (LOWERCASE | UPPERCASE | <span style="color:#a31515">&#39;_&#39;</span>)+ ;
 
-WHITESPACE          : <span style="color:#f92672">(</span><span style="color:#e6db74">&#39; &#39;</span> | <span style="color:#e6db74">&#39;\t&#39;</span><span style="color:#f92672">)</span>;
+WHITESPACE          : (<span style="color:#a31515">&#39; &#39;</span> | <span style="color:#a31515">&#39;\t&#39;</span>);
 
-NEWLINE             : <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;\r&#39;</span>? <span style="color:#e6db74">&#39;\n&#39;</span> | <span style="color:#e6db74">&#39;\r&#39;</span><span style="color:#f92672">)</span>+ ;
+NEWLINE             : (<span style="color:#a31515">&#39;\r&#39;</span>? <span style="color:#a31515">&#39;\n&#39;</span> | <span style="color:#a31515">&#39;\r&#39;</span>)+ ;
 
 /*
 * Parser Rules
@@ -325,17 +325,17 @@ chat                : line+ EOF ;
 
 line                : name command message NEWLINE;
 
-message             : <span style="color:#f92672">(</span>emoticon | mention | WORD | WHITESPACE<span style="color:#f92672">)</span>+ ;
+message             : (emoticon | mention | WORD | WHITESPACE)+ ;
 
 name                : WORD WHITESPACE;
 
-command             : <span style="color:#f92672">(</span>SAYS | SHOUTS<span style="color:#f92672">)</span> <span style="color:#e6db74">&#39;:&#39;</span> WHITESPACE ;
+command             : (SAYS | SHOUTS) <span style="color:#a31515">&#39;:&#39;</span> WHITESPACE ;
 
-emoticon            : <span style="color:#e6db74">&#39;:&#39;</span> <span style="color:#e6db74">&#39;-&#39;</span>? <span style="color:#e6db74">&#39;)&#39;</span>
-                | <span style="color:#e6db74">&#39;:&#39;</span> <span style="color:#e6db74">&#39;-&#39;</span>? <span style="color:#e6db74">&#39;(&#39;</span>
+emoticon            : <span style="color:#a31515">&#39;:&#39;</span> <span style="color:#a31515">&#39;-&#39;</span>? <span style="color:#a31515">&#39;)&#39;</span>
+                | <span style="color:#a31515">&#39;:&#39;</span> <span style="color:#a31515">&#39;-&#39;</span>? <span style="color:#a31515">&#39;(&#39;</span>
                 ;
 
-mention             : <span style="color:#e6db74">&#39;@&#39;</span> WORD ;</code></pre></div></li>
+mention             : <span style="color:#a31515">&#39;@&#39;</span> WORD ;</code></pre></div></li>
 
 <li><p>Testsätze:</p>
 
@@ -453,52 +453,52 @@ mention             : <span style="color:#e6db74">&#39;@&#39;</span> WORD ;</cod
 <li><p><code>npm install antlr4</code></p></li>
 
 <li><p><em>app.js</em>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">antlr4</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;antlr4&#39;</span>);
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ChatLexer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./compiler/chatLexer&#39;</span>).<span style="color:#a6e22e">chatLexer</span>;
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ChatParser</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./compiler/chatParser&#39;</span>).<span style="color:#a6e22e">chatParser</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">const</span> antlr4 = require(<span style="color:#a31515">&#39;antlr4&#39;</span>);
+<span style="color:#00f">const</span> ChatLexer = require(<span style="color:#a31515">&#39;./compiler/chatLexer&#39;</span>).chatLexer;
+<span style="color:#00f">const</span> ChatParser = require(<span style="color:#a31515">&#39;./compiler/chatParser&#39;</span>).chatParser;
 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;tim SAYS: hello @world :-)\n&#39;</span>;
+<span style="color:#00f">const</span> input = <span style="color:#a31515">&#39;tim SAYS: hello @world :-)\n&#39;</span>;
 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">chars</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">antlr4</span>.<span style="color:#a6e22e">InputStream</span>(<span style="color:#a6e22e">input</span>);
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">lexer</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ChatLexer</span>(<span style="color:#a6e22e">chars</span>);
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">tokens</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">antlr4</span>.<span style="color:#a6e22e">CommonTokenStream</span>(<span style="color:#a6e22e">lexer</span>);
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">parser</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ChatParser</span>(<span style="color:#a6e22e">tokens</span>);
-<span style="color:#a6e22e">parser</span>.<span style="color:#a6e22e">buildParseTrees</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+<span style="color:#00f">const</span> chars = <span style="color:#00f">new</span> antlr4.InputStream(input);
+<span style="color:#00f">const</span> lexer = <span style="color:#00f">new</span> ChatLexer(chars);
+<span style="color:#00f">const</span> tokens = <span style="color:#00f">new</span> antlr4.CommonTokenStream(lexer);
+<span style="color:#00f">const</span> parser = <span style="color:#00f">new</span> ChatParser(tokens);
+parser.buildParseTrees = <span style="color:#00f">true</span>;
 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">tree</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">parser</span>.<span style="color:#a6e22e">chat</span>();
+<span style="color:#00f">const</span> tree = parser.chat();
 
-<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">line</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">children</span>) {
-<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">line</span>.<span style="color:#a6e22e">constructor</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">ChatParser</span>.<span style="color:#a6e22e">LineContext</span>.<span style="color:#a6e22e">name</span>) {
-    <span style="color:#75715e">// Reached end of program
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">break</span>;
+<span style="color:#00f">for</span>(<span style="color:#00f">const</span> line <span style="color:#00f">of</span> tree.children) {
+<span style="color:#00f">if</span> (line.constructor.name !== ChatParser.LineContext.name) {
+    <span style="color:#008000">// Reached end of program
+</span><span style="color:#008000"></span>    <span style="color:#00f">break</span>;
 }
 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">line</span>.<span style="color:#a6e22e">children</span>[<span style="color:#ae81ff">0</span>];
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Name: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span>.<span style="color:#a6e22e">children</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">getText</span>()<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+<span style="color:#00f">const</span> name = line.children[0];
+console.log(<span style="color:#a31515">`Name: </span><span style="color:#a31515">${</span>name.children[0].getText()<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">command</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">line</span>.<span style="color:#a6e22e">children</span>[<span style="color:#ae81ff">1</span>];
-<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Command: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">lexer</span>.<span style="color:#a6e22e">symbolicNames</span>[<span style="color:#a6e22e">command</span>.<span style="color:#a6e22e">children</span>[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">getSymbol</span>().<span style="color:#a6e22e">type</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+<span style="color:#00f">const</span> command = line.children[1];
+console.log(<span style="color:#a31515">`Command: </span><span style="color:#a31515">${</span>lexer.symbolicNames[command.children[0].getSymbol().type]<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">line</span>.<span style="color:#a6e22e">children</span>[<span style="color:#ae81ff">2</span>];
-<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">msg</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">message</span>.<span style="color:#a6e22e">children</span>) {
-    <span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">constructor</span>.<span style="color:#a6e22e">name</span>) {
-        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;TerminalNodeImpl&#39;</span><span style="color:#f92672">:</span>
-            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">getSymbol</span>().<span style="color:#a6e22e">type</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">ChatLexer</span>.<span style="color:#a6e22e">WORD</span>) {
-                <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Word: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">getText</span>()<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+<span style="color:#00f">const</span> message = line.children[2];
+<span style="color:#00f">for</span>(<span style="color:#00f">var</span> msg <span style="color:#00f">of</span> message.children) {
+    <span style="color:#00f">switch</span> (msg.constructor.name) {
+        <span style="color:#00f">case</span> <span style="color:#a31515">&#39;TerminalNodeImpl&#39;</span>:
+            <span style="color:#00f">if</span> (msg.getSymbol().type === ChatLexer.WORD) {
+                console.log(<span style="color:#a31515">`Word: </span><span style="color:#a31515">${</span>msg.getText()<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
             }
 
-            <span style="color:#66d9ef">break</span>;
-        <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">ChatParser</span>.<span style="color:#a6e22e">MentionContext</span>.<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span>
-            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Mention: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">children</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">getText</span>()<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
-            <span style="color:#66d9ef">break</span>;
-        <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">ChatParser</span>.<span style="color:#a6e22e">EmoticonContext</span>.<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span>
-            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">children</span>[<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">children</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">getText</span>() <span style="color:#f92672">===</span> <span style="color:#e6db74">`)`</span>) {
-                <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Happy&#39;</span>);
-            } <span style="color:#66d9ef">else</span> {
-                <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Sad&#39;</span>);
+            <span style="color:#00f">break</span>;
+        <span style="color:#00f">case</span> ChatParser.MentionContext.name:
+            console.log(<span style="color:#a31515">`Mention: </span><span style="color:#a31515">${</span>msg.children[1].getText()<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
+            <span style="color:#00f">break</span>;
+        <span style="color:#00f">case</span> ChatParser.EmoticonContext.name:
+            <span style="color:#00f">if</span> (msg.children[msg.children.length - 1].getText() === <span style="color:#a31515">`)`</span>) {
+                console.log(<span style="color:#a31515">&#39;Happy&#39;</span>);
+            } <span style="color:#00f">else</span> {
+                console.log(<span style="color:#a31515">&#39;Sad&#39;</span>);
             }
 
-            <span style="color:#66d9ef">break</span>;
+            <span style="color:#00f">break</span>;
     }
 }
 }

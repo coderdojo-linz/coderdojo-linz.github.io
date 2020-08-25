@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -314,40 +314,40 @@ Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://no
 <li><p>Direkt neben dem Symbol für <em>Neue Datei</em> findest du das Kommando für <em>Neues Verzeichnis</em>. Lege ein Verzeichnis namens <em>public</em> an. Es wird die öffentlich sichtbaren HTML-Dateien enthalten, daher der Name <em>public</em>.</p></li>
 
 <li><p>Einen Webserver zu programmieren ist mit Node.js nicht schwierig. Es reichen ein paar Zeilen Code. Hier sind sie. Schreibe sie in deine <em>server.js</em> Datei und achte besonders auf die enthaltenen Kommentarzeilen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
-</span><span style="color:#75715e">// aus dem Ordner &#34;public&#34; zu veröffentlichen.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">server</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;http&#39;</span>).<span style="color:#a6e22e">createServer</span>(<span style="color:#a6e22e">app</span>);
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3000</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#008000">// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
+</span><span style="color:#008000">// aus dem Ordner &#34;public&#34; zu veröffentlichen.
+</span><span style="color:#008000"></span><span style="color:#00f">var</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>);
+<span style="color:#00f">var</span> app = express();
+<span style="color:#00f">var</span> server = require(<span style="color:#a31515">&#39;http&#39;</span>).createServer(app);
+<span style="color:#00f">var</span> port = 3000;
 
-<span style="color:#75715e">// Mit diesem Kommando starten wir den Webserver.
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>, <span style="color:#66d9ef">function</span> () {
-<span style="color:#75715e">// Wir geben einen Hinweis aus, dass der Webserer läuft.
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Webserver läuft und hört auf Port %d&#39;</span>, <span style="color:#a6e22e">port</span>);
+<span style="color:#008000">// Mit diesem Kommando starten wir den Webserver.
+</span><span style="color:#008000"></span>server.listen(port, <span style="color:#00f">function</span> () {
+<span style="color:#008000">// Wir geben einen Hinweis aus, dass der Webserer läuft.
+</span><span style="color:#008000"></span>console.log(<span style="color:#a31515">&#39;Webserver läuft und hört auf Port %d&#39;</span>, port);
 });
 
-<span style="color:#75715e">// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
-</span><span style="color:#75715e">// im Ordner &#34;public&#34; zu finden sind.
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#a6e22e">__dirname</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/public&#39;</span>));
+<span style="color:#008000">// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
+</span><span style="color:#008000">// im Ordner &#34;public&#34; zu finden sind.
+</span><span style="color:#008000"></span>app.use(express.<span style="color:#00f">static</span>(__dirname + <span style="color:#a31515">&#39;/public&#39;</span>));
 
-<span style="color:#75715e">// Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
+<span style="color:#008000">// Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
 </span></code></pre></div></li>
 </ol>
 
 <h2 id="den-clientcode-erstellen">Den Clientcode erstellen</h2>
 
 <p>Noch können wir nichts ausprobieren, da unser <em>public</em> Verzeichnis leer ist. Erstelle daher im <em>public</em> Verzeichnis eine Datei namens <em>chat.html</em> und füge zum Testen folgenden Inhalt ein. Wie du siehst enthält die Datei nur eine Begrüßung, sonst nichts.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!doctype html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;de&#34;</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-    &lt;<span style="color:#f92672">title</span>&gt;CoderDojo Linz | Chat Beispiel&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">h1</span>&gt;Hallo Chat!&lt;/<span style="color:#f92672">h1</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!doctype html&gt;</span>
+&lt;html lang=<span style="color:#a31515">&#34;de&#34;</span>&gt;
+&lt;head&gt;
+    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+    &lt;title&gt;CoderDojo Linz | Chat Beispiel&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hallo Chat!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
 <h2 id="ausprobieren">Ausprobieren</h2>
 
 <ol>

@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -178,19 +178,19 @@
 <p>Deine Aufgabe ist es, ein Programm zu schreiben, das für jede beliebige Anzahl an Spielsteinen die notwendigen Züge ausgibt. Der Einfachheit halber numerieren wir die Spielsteine durch. Der kleinste hat die Nummer 1, der zweitkleinste die Nummer 2 und so weiter.</p>
 
 <p>Bei <em>einem Spielstein</em> ist die Lösung trivial:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Schiebe <span style="color:#ae81ff">1</span> von L nach M</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Schiebe 1 von L nach M</code></pre></div>
 <p>Bei <em>zwei Spielsteinen</em> brauchen wir drei Schritte:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Schiebe <span style="color:#ae81ff">1</span> von L nach R
-Schiebe <span style="color:#ae81ff">2</span> von L nach M
-Schiebe <span style="color:#ae81ff">1</span> von R nach M</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Schiebe 1 von L nach R
+Schiebe 2 von L nach M
+Schiebe 1 von R nach M</code></pre></div>
 <p>Für <em>drei Spielsteine</em> brauchst du schon sieben Schritte:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Schiebe <span style="color:#ae81ff">1</span> von L nach M
-Schiebe <span style="color:#ae81ff">2</span> von L nach R
-Schiebe <span style="color:#ae81ff">1</span> von M nach R
-Schiebe <span style="color:#ae81ff">3</span> von L nach M
-Schiebe <span style="color:#ae81ff">1</span> von R nach L
-Schiebe <span style="color:#ae81ff">2</span> von R nach M
-Schiebe <span style="color:#ae81ff">1</span> von L nach M</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Schiebe 1 von L nach M
+Schiebe 2 von L nach R
+Schiebe 1 von M nach R
+Schiebe 3 von L nach M
+Schiebe 1 von R nach L
+Schiebe 2 von R nach M
+Schiebe 1 von L nach M</code></pre></div>
 <p>Hier eine Grafik, die die Lösung mit drei Spielsteinen veranschaulicht (<a href="http://www.scalingbits.com/java/javakurs1/methoden/rekursion" target="_blank">Bildquelle</a>)</p>
 
 <p><img src="http://www.scalingbits.com/sites/default/files/4hanoi.png" alt="Türme von Hanoi" /></p>

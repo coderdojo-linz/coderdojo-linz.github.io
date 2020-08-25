@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.35aa49f96e03b4c2a97c78f45940017bc7017768e74f0ce20e9ff28467477ef3.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -524,11 +524,11 @@ Zusatz im <em>build.gradle</em> das auch automatisch erledigen lassen.</p>
 <p>Deswegen werden wir vorher einen Kommando definieren, bei dem man einen Ort markiert, an den Steve sich teleportieren soll.</p>
 
 <p><strong>plugin.yml</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">name: Teleporter
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">name: Teleporter
 version: @version@
 main: at.coderdojo.teleporter.Teleporter
 load: STARTUP
-authors: <span style="color:#f92672">[</span>Minecraft, Mastercoders<span style="color:#f92672">]</span>
+authors: [Minecraft, Mastercoders]
 description: Beispielplugin zum Teleportieren
 website: https://coderdojo-linz.github.io/
 commands:
@@ -548,114 +548,114 @@ einfach <em>teleportzu</em>.</p>
 <p>Nun fehlt uns nur noch der Code dazu im <em>Teleporter.java</em>.</p>
 
 <p>Zuerst müssen wir die <code>onCommand</code> Funktion anpassen:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#75715e">//sender.sendMessage(&#34;Hallo &#34; + sender.getName());
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">switch</span> <span style="color:#f92672">(</span>command<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;sayhello&#34;</span><span style="color:#f92672">:</span>
-                sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hallo &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
-                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;teleportziel&#34;</span><span style="color:#f92672">:</span>
-                teleportZielMerken<span style="color:#f92672">(</span>sender<span style="color:#f92672">);</span>
-                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;teleportzu&#34;</span><span style="color:#f92672">:</span>
-                teleportZuZiel<span style="color:#f92672">(</span>sender<span style="color:#f92672">);</span>
-                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
-                sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Leider kann ich das Kommando &#34;</span> <span style="color:#f92672">+</span> command<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; noch nicht.&#34;</span><span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    @Override
+    <span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+        <span style="color:#008000">//sender.sendMessage(&#34;Hallo &#34; + sender.getName());
+</span><span style="color:#008000"></span>        <span style="color:#00f">switch</span> (command.getName()) {
+            <span style="color:#00f">case</span> <span style="color:#a31515">&#34;sayhello&#34;</span>:
+                sender.sendMessage(<span style="color:#a31515">&#34;Hallo &#34;</span> + sender.getName());
+                <span style="color:#00f">break</span>;
+            <span style="color:#00f">case</span> <span style="color:#a31515">&#34;teleportziel&#34;</span>:
+                teleportZielMerken(sender);
+                <span style="color:#00f">break</span>;
+            <span style="color:#00f">case</span> <span style="color:#a31515">&#34;teleportzu&#34;</span>:
+                teleportZuZiel(sender);
+                <span style="color:#00f">break</span>;
+            <span style="color:#00f">default</span>:
+                sender.sendMessage(<span style="color:#a31515">&#34;Leider kann ich das Kommando &#34;</span> + command.getName() + <span style="color:#a31515">&#34; noch nicht.&#34;</span>);
+        }
 
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span></code></pre></div>
+        <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
+    }</code></pre></div>
 <p>Damit kann <code>onCommand</code> zwischen den einzelnen Kommandos unterscheiden. Als nächstes brauche wir noch eine Möglichkeit die
 gemerkten Position für jeden einzelnen Spieler zu merken.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Teleporter</span> <span style="color:#66d9ef">extends</span> JavaPlugin <span style="color:#f92672">{</span>
-    Dictionary<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Location<span style="color:#f92672">&gt;</span> teleportZiele <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Hashtable<span style="color:#f92672">&lt;&gt;();</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">final</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Teleporter</span> <span style="color:#00f">extends</span> JavaPlugin {
+    Dictionary&lt;String, Location&gt; teleportZiele = <span style="color:#00f">new</span> Hashtable&lt;&gt;();
 
-<span style="color:#f92672">....</span></code></pre></div>
+....</code></pre></div>
 <p>Die Funktion, sich den Punkt zu merken sieht dann in etwa so aus:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">teleportZielMerken</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        Player player <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>Player<span style="color:#f92672">)</span> sender<span style="color:#f92672">;</span>
-        teleportZiele<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(),</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getLocation</span><span style="color:#f92672">());</span>
-        player<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Ok, &#34;</span> <span style="color:#f92672">+</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, ich habe mir das gemerkt&#34;</span><span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#00f">private</span> <span style="color:#2b91af">void</span> teleportZielMerken(CommandSender sender) {
+        Player player = (Player) sender;
+        teleportZiele.put(player.getName(), player.getLocation());
+        player.sendMessage(<span style="color:#a31515">&#34;Ok, &#34;</span> + player.getName() + <span style="color:#a31515">&#34;, ich habe mir das gemerkt&#34;</span>);
+    }</code></pre></div>
 <p>und die Funktion die Steve zu dem Ort zurückbringen soll in etwa so:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">teleportZuZiel</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        Player player <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>Player<span style="color:#f92672">)</span> sender<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>teleportZiele<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">())</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            player<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hey, &#34;</span> <span style="color:#f92672">+</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;. Du musst dir zuerst einen Punkt merken&#34;</span><span style="color:#f92672">);</span>
-            <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
-        <span style="color:#f92672">}</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#00f">private</span> <span style="color:#2b91af">void</span> teleportZuZiel(CommandSender sender) {
+        Player player = (Player) sender;
+        <span style="color:#00f">if</span> (teleportZiele.get(player.getName()) == <span style="color:#00f">null</span>) {
+            player.sendMessage(<span style="color:#a31515">&#34;Hey, &#34;</span> + player.getName() + <span style="color:#a31515">&#34;. Du musst dir zuerst einen Punkt merken&#34;</span>);
+            <span style="color:#00f">return</span>;
+        }
 
-        player<span style="color:#f92672">.</span><span style="color:#a6e22e">teleport</span><span style="color:#f92672">(</span>teleportZiele<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()));</span>
-        player<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Ok, &#34;</span> <span style="color:#f92672">+</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, hab dich dorthin geschickt&#34;</span><span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span></code></pre></div>
+        player.teleport(teleportZiele.get(player.getName()));
+        player.sendMessage(<span style="color:#a31515">&#34;Ok, &#34;</span> + player.getName() + <span style="color:#a31515">&#34;, hab dich dorthin geschickt&#34;</span>);
+    }</code></pre></div>
 <p><strong>Info:</strong> das <code>if (teleportZiele.get(player.getName()) == null)</code> dient dazu, zuerst festzustellen ob wir uns schon eine
 Position für diesen Spieler gemerkt haben. Ansonst würde das <code>player.teleport</code> einen Fehler verursachen.</p>
 
 <p>Das gesamte <code>Teleporter.java</code> sieht nach den Änderungen so aus:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> at.coderdojo.teleporter<span style="color:#f92672">;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">package</span> at.coderdojo.teleporter;
 
-<span style="color:#f92672">import</span> org.bukkit.Location<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> org.bukkit.command.Command<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> org.bukkit.command.CommandSender<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> org.bukkit.entity.Player<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> org.bukkit.plugin.java.JavaPlugin<span style="color:#f92672">;</span>
+<span style="color:#00f">import</span> org.bukkit.Location;
+<span style="color:#00f">import</span> org.bukkit.command.Command;
+<span style="color:#00f">import</span> org.bukkit.command.CommandSender;
+<span style="color:#00f">import</span> org.bukkit.entity.Player;
+<span style="color:#00f">import</span> org.bukkit.plugin.java.JavaPlugin;
 
-<span style="color:#f92672">import</span> java.util.Dictionary<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> java.util.Hashtable<span style="color:#f92672">;</span>
+<span style="color:#00f">import</span> java.util.Dictionary;
+<span style="color:#00f">import</span> java.util.Hashtable;
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Teleporter</span> <span style="color:#66d9ef">extends</span> JavaPlugin <span style="color:#f92672">{</span>
-    Dictionary<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Location<span style="color:#f92672">&gt;</span> teleportZiele <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Hashtable<span style="color:#f92672">&lt;&gt;();</span>
+<span style="color:#00f">public</span> <span style="color:#00f">final</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Teleporter</span> <span style="color:#00f">extends</span> JavaPlugin {
+    Dictionary&lt;String, Location&gt; teleportZiele = <span style="color:#00f">new</span> Hashtable&lt;&gt;();
 
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onEnable</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#75715e">// Plugin startup logic
-</span><span style="color:#75715e"></span>
-    <span style="color:#f92672">}</span>
+    @Override
+    <span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onEnable() {
+        <span style="color:#008000">// Plugin startup logic
+</span><span style="color:#008000"></span>
+    }
 
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onDisable</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        <span style="color:#75715e">// Plugin shutdown logic
-</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+    @Override
+    <span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onDisable() {
+        <span style="color:#008000">// Plugin shutdown logic
+</span><span style="color:#008000"></span>    }
 
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">onCommand</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">,</span> Command command<span style="color:#f92672">,</span> String label<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#75715e">//sender.sendMessage(&#34;Hallo &#34; + sender.getName());
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">switch</span> <span style="color:#f92672">(</span>command<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;sayhello&#34;</span><span style="color:#f92672">:</span>
-                sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hallo &#34;</span> <span style="color:#f92672">+</span> sender<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
-                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;teleportziel&#34;</span><span style="color:#f92672">:</span>
-                teleportZielMerken<span style="color:#f92672">(</span>sender<span style="color:#f92672">);</span>
-                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;teleportzu&#34;</span><span style="color:#f92672">:</span>
-                teleportZuZiel<span style="color:#f92672">(</span>sender<span style="color:#f92672">);</span>
-                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
-                sender<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Leider kann ich das Kommando &#34;</span> <span style="color:#f92672">+</span> command<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; noch nicht.&#34;</span><span style="color:#f92672">);</span>
-        <span style="color:#f92672">}</span>
+    @Override
+    <span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+        <span style="color:#008000">//sender.sendMessage(&#34;Hallo &#34; + sender.getName());
+</span><span style="color:#008000"></span>        <span style="color:#00f">switch</span> (command.getName()) {
+            <span style="color:#00f">case</span> <span style="color:#a31515">&#34;sayhello&#34;</span>:
+                sender.sendMessage(<span style="color:#a31515">&#34;Hallo &#34;</span> + sender.getName());
+                <span style="color:#00f">break</span>;
+            <span style="color:#00f">case</span> <span style="color:#a31515">&#34;teleportziel&#34;</span>:
+                teleportZielMerken(sender);
+                <span style="color:#00f">break</span>;
+            <span style="color:#00f">case</span> <span style="color:#a31515">&#34;teleportzu&#34;</span>:
+                teleportZuZiel(sender);
+                <span style="color:#00f">break</span>;
+            <span style="color:#00f">default</span>:
+                sender.sendMessage(<span style="color:#a31515">&#34;Leider kann ich das Kommando &#34;</span> + command.getName() + <span style="color:#a31515">&#34; noch nicht.&#34;</span>);
+        }
 
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
+        <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
+    }
 
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">teleportZielMerken</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        Player player <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>Player<span style="color:#f92672">)</span> sender<span style="color:#f92672">;</span>
-        teleportZiele<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(),</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getLocation</span><span style="color:#f92672">());</span>
-        player<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Ok, &#34;</span> <span style="color:#f92672">+</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, ich habe mir das gemerkt&#34;</span><span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
+    <span style="color:#00f">private</span> <span style="color:#2b91af">void</span> teleportZielMerken(CommandSender sender) {
+        Player player = (Player) sender;
+        teleportZiele.put(player.getName(), player.getLocation());
+        player.sendMessage(<span style="color:#a31515">&#34;Ok, &#34;</span> + player.getName() + <span style="color:#a31515">&#34;, ich habe mir das gemerkt&#34;</span>);
+    }
 
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">teleportZuZiel</span><span style="color:#f92672">(</span>CommandSender sender<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        Player player <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>Player<span style="color:#f92672">)</span> sender<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>teleportZiele<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">())</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            player<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hey, &#34;</span> <span style="color:#f92672">+</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;. Du musst dir zuerst einen Punkt merken&#34;</span><span style="color:#f92672">);</span>
-            <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
-        <span style="color:#f92672">}</span>
+    <span style="color:#00f">private</span> <span style="color:#2b91af">void</span> teleportZuZiel(CommandSender sender) {
+        Player player = (Player) sender;
+        <span style="color:#00f">if</span> (teleportZiele.get(player.getName()) == <span style="color:#00f">null</span>) {
+            player.sendMessage(<span style="color:#a31515">&#34;Hey, &#34;</span> + player.getName() + <span style="color:#a31515">&#34;. Du musst dir zuerst einen Punkt merken&#34;</span>);
+            <span style="color:#00f">return</span>;
+        }
 
-        player<span style="color:#f92672">.</span><span style="color:#a6e22e">teleport</span><span style="color:#f92672">(</span>teleportZiele<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()));</span>
-        player<span style="color:#f92672">.</span><span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Ok, &#34;</span> <span style="color:#f92672">+</span> player<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, hab dich dorthin geschickt&#34;</span><span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div> </div>
+        player.teleport(teleportZiele.get(player.getName()));
+        player.sendMessage(<span style="color:#a31515">&#34;Ok, &#34;</span> + player.getName() + <span style="color:#a31515">&#34;, hab dich dorthin geschickt&#34;</span>);
+    }
+}</code></pre></div> </div>
         </div>
     </div>
 </section>  
