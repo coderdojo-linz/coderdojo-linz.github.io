@@ -11,6 +11,12 @@ body {
     line-height: 1.6rem;
 }
 
+@media print {
+    body {
+        padding-bottom: 0;
+    }
+}
+
 img {
     max-width: 100%;
 }
@@ -52,6 +58,20 @@ h6 {
         margin: -100px 0 0;
         width: 1px;
         pointer-events: none;
+    }
+}
+
+@media print {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        &[id]::before {
+            display: none;
+        }
     }
 }
 
@@ -113,6 +133,14 @@ hr.full {
 
 pre {
     padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: #eee !important;
+}
+
+@media print {
+    pre {
+        background-color: #fff !important;
+    }
 }
 
 a[id]:empty {
@@ -425,7 +453,7 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
-    
+
     line-height: 1.4em;
     font-weight: 300;
     font-size: 12px;
@@ -441,7 +469,7 @@ footer {
             white-space: nowrap;
             vertical-align: top;
 
-            > div {
+            >div {
                 vertical-align: middle;
                 text-align: left;
                 display: inline-block;
@@ -848,6 +876,10 @@ iframe[src*="jsfiddle"] {
 }
 
 @media print {
+    #sushi {
+        padding-bottom: 0;
+    }
+    
     #sushi-overview {
         background-color: #fff;
         padding-bottom: 0;
@@ -887,7 +919,7 @@ iframe[src*="jsfiddle"] {
     //     margin-block-start: 2em;
     // }
     div.row {
-        page-break-inside: avoid;
+        // page-break-inside: avoid;
     }
 
     div[class^="col"] {
@@ -920,12 +952,6 @@ iframe[src*="jsfiddle"] {
         h1,
         h2 {
             break-inside: avoid;
-        }
-
-        h1::after,
-        h2::after {
-            height: 400px;
-            margin-bottom: -398px
         }
     }
 }

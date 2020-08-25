@@ -14,7 +14,7 @@ title = "CoderDojo Linz"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "monokai"
+    style = "vs"
     tabWidth = 4
 
 [params]

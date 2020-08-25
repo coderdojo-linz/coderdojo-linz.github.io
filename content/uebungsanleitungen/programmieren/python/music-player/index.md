@@ -38,7 +38,7 @@ Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (`Fil
 
 ## Bilder und Icon
 
-Lade dir die folgenden Bilder für die Knöpfe deines Music Players und das CoderDojo-Icon hier herunter. Speichere alle diese Dateien in dem Verzeichnis, wo auch dein Python-Programm gespeichert ist, in einem Unterverzeichnis images ab.
+Lade dir die folgenden Bilder für die Knöpfe deines Music Players und das CoderDojo-Icon hier herunter. Speichere alle diese Dateien in dem Verzeichnis, wo auch dein Python-Programm gespeichert ist, in einem Unterverzeichnis `images` ab.
 
 - [coderdojo.ico](img/coderdojo.ico)
 - [pause.png](img/pause.png)
@@ -91,7 +91,7 @@ text.pack()
  
 ## Tasten platzieren
 
-Unter dem Text kommen drei Tasten, mit denen wir das Abspielen der Musik steuern können. Würden wir alle Tasten mit der Methode pack im Fenster platzieren, so würden sie alle untereinander dargestellt werden. Es ist daher besser einen eigenen Rahmen (`Frame`) zu erstellen, in dem wir dann die Tasten  mit `grid` in einer Zeile anordnen können. Die Optionen `padx` und `pady` regeln den Abstand zu den anderen Elementen.
+Unter dem Text kommen drei Tasten, mit denen wir das Abspielen der Musik steuern können. Würden wir alle Tasten mit der Methode `pack` im Fenster platzieren, so würden sie alle untereinander dargestellt werden. Es ist daher besser einen eigenen Rahmen (`Frame`) zu erstellen, in dem wir dann die Tasten  mit `grid` in einer Zeile anordnen können. Die Optionen `padx` und `pady` regeln den Abstand zu den anderen Elementen.
 
 ```python
 # Rahmen für Tasten
@@ -118,11 +118,11 @@ pause_button = Button(frame, image = pause_photo, command = pause_music)
 pause_button.grid(row = 0, column = 2, padx=10)
 ```
  
-Du kannst den Code zwischendurch immer wieder testen, indem du das Programm mit F5 laufen lässt. Du wirst sehen, dass die Tasten vorhanden sind und man auch darauf klicken kann, aber sie führen noch keine Funktion aus. Wie denn auch, wir haben das ja auch noch nicht programmiert. Das kommt etwas später,  zuerst ergänzen wir aber noch unser Interface.
+Du kannst den Code zwischendurch immer wieder testen, indem du das Programm mit `F5` laufen lässt. Du wirst sehen, dass die Tasten vorhanden sind und man auch darauf klicken kann, aber sie führen noch keine Funktion aus. Wie denn auch, wir haben das ja auch noch nicht programmiert. Das kommt etwas später,  zuerst ergänzen wir aber noch unser Interface.
 
 ## Lautstärkeregler
 
-Ein Musicplayer muss natürlich auch in der Lage sein, die Lautstärke zu verändern. Dazu verwenden wir einen Schieberegler, den wir mit Hilfe von Scale bekommen. Den Bereich des Reglers wählen wir von 0 – 100 und setzen unseren Ausgangswert auf 70.  Das alleine reicht aber noch nicht, wir müssen auch unserem Mixer sagen, dass er die Lautstärke anpassen muss. Der Mixer hat einen Bereich von 0 – 1 für die Lautstärke, d.h. unser Wert 70 auf dem Regler entspricht 0.7 für den Mixer.
+Ein Musicplayer muss natürlich auch in der Lage sein, die Lautstärke zu verändern. Dazu verwenden wir einen Schieberegler, den wir mit Hilfe von `Scale` bekommen. Den Bereich des Reglers wählen wir von 0 – 100 und setzen unseren Ausgangswert auf 70.  Das alleine reicht aber noch nicht, wir müssen auch unserem Mixer sagen, dass er die Lautstärke anpassen muss. Der Mixer hat einen Bereich von 0 – 1 für die Lautstärke, d.h. unser Wert 70 auf dem Regler entspricht 0.7 für den Mixer.
 
 ```python
 # Lautstärke
@@ -157,7 +157,7 @@ def stop_music():
     statusbar["text"] = "Music stopped"
 ```
  
-Bei der Pause-Taste müssen wir noch zusätzlich unsere Variable paused auf True setzen. Damit wir den Wert dieser Variable auch außerhalb dieser Funktion kennen, verwenden wir dazu eine globale Variable.
+Bei der Pause-Taste müssen wir noch zusätzlich unsere Variable `paused` auf True setzen. Damit wir den Wert dieser Variable auch außerhalb dieser Funktion kennen, verwenden wir dazu eine globale Variable.
 
 ```python
 def pause_music():
@@ -167,7 +167,7 @@ def pause_music():
     statusbar["text"] = "Music paused"
 ```
  
-Mit der Play-Taste ist es etwas komplexer, weil wir unterscheiden müssen, ob der Song von Beginn weg gespielt wird, oder ob die Wiedergabe nach einer Pause einfach weiterläuft. Für die Wiedergabe verwenden wir unseren Song, der im Verzeichnis music gespeichert ist. (Später werden wir aber eine Möglichkeit einbauen, wie man einen Song aus einem beliebigen Verzeichnis laden kann.) In der Statuszeile zeigen wir den Songtitel an, den wir über den `basename` des Dateipfades bekommen.
+Mit der Play-Taste ist es etwas komplexer, weil wir unterscheiden müssen, ob der Song von Beginn weg gespielt wird, oder ob die Wiedergabe nach einer Pause einfach weiterläuft. Für die Wiedergabe verwenden wir unseren Song, der im Verzeichnis `music` gespeichert ist. (Später werden wir aber eine Möglichkeit einbauen, wie man einen Song aus einem beliebigen Verzeichnis laden kann.) In der Statuszeile zeigen wir den Songtitel an, den wir über den `basename` des Dateipfades bekommen.
 
 ```python
 def play_music():
@@ -182,7 +182,7 @@ def play_music():
         statusbar["text"] = "Playing music: " + os.path.basename(filename)
 ```
  
-Schließlich fehlt noch eine Funktion für unseren Lautstärkeregler. Zu berücksichtigen ist, dass der Schieberegler Werte zwischen 0 und 100 verwendet, im Mixer aber nur ein Bereich von 0 – 1 zur Verfügung steht. Wir rechnen daher vorher den Eingabewert aus dem Regler (value) um.
+Schließlich fehlt noch eine Funktion für unseren Lautstärkeregler. Zu berücksichtigen ist, dass der Schieberegler Werte zwischen 0 und 100 verwendet, im Mixer aber nur ein Bereich von 0 – 1 zur Verfügung steht. Wir rechnen daher vorher den Eingabewert aus dem Regler (`value`) um.
 
 ```python
 def set_volume(value):
@@ -235,7 +235,7 @@ menubar.add_cascade(label = "Help", menu = submenu)
 submenu.add_command(label = "About us", command = about_us)
 ```
  
-Wählt man Exit, wird die Musik gestoppt und das Fenster geschlossen. Über Open sollte die Auswahl einer Musik-Datei möglich sein und im Eintrag Help können wir über die Auswahl von „About us“ eine Information über unseren Musicplayer anzeigen. Die dafür notwendigen Funktionen werden nun definiert und unter den bereits vorhandenen Funktionen platziert:
+Wählt man "Exit", wird die Musik gestoppt und das Fenster geschlossen. Über "Open" sollte die Auswahl einer Musik-Datei möglich sein und im Eintrag "Help" können wir über die Auswahl von „About us“ eine Information über unseren Musicplayer anzeigen. Die dafür notwendigen Funktionen werden nun definiert und unter den bereits vorhandenen Funktionen platziert:
 
 ```python
 def browse_file():
@@ -317,10 +317,10 @@ Führe dann in der Kommandozeile folgenden Befehl aus:
 ```cmd
 py setup.py build
 ```
-Damit wird ein neuer Ordner „build“ erzeugt, in dem du auch eine .exe Datei findest. Damit diese Anwendung auch richtig ausgeführt werden kann, musst du noch deinen gesamten Ordner mit den Bildern in das Verzeichnis der exe-Datei kopieren. Das sieht dann in etwa so aus:
+Damit wird ein neuer Ordner „build“ erzeugt, in dem du auch eine exe-Datei findest. Damit diese Anwendung auch richtig ausgeführt werden kann, musst du noch deinen gesamten Ordner mit den Bildern in das Verzeichnis der exe-Datei kopieren. Das sieht dann in etwa so aus:
 
 {{< imgblock "img/build-folder.png" "" >}}{{< /imgblock >}}
 
-## Installieren von Packates
+Nun hast du einen eigenständigen funktionsfähigen mp3-Player programmiert.
 
 Hier kannst du den gesamten [Sourcecode downloaden](source/Musicplayer.pyw).
