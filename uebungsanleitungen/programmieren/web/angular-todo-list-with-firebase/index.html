@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Todo Liste mit Angular und Firebase </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+
+    
+    <link rel="canonical" href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/" />
+    
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.873c82c7e0696b4161531ab6803c8eedafc8095c6bb74fd706e434c3b56074fa.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/">Web</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#todo-liste-mit-angular">Todo Liste mit Angular</a>
+<ul>
+<li><a href="#voraussetzungen">Voraussetzungen</a></li>
+<li><a href="#projekt-anlegen-und-starten">Projekt anlegen und starten</a></li>
+<li><a href="#navigationsmenü-anlegen">Navigationsmenü anlegen</a>
+<ul>
+<li><a href="#globale-styles">Globale Styles</a></li>
+<li><a href="#html-grundgerüst">HTML Grundgerüst</a></li>
+<li><a href="#navigationsmenü-erstellen">Navigationsmenü erstellen</a></li>
+</ul></li>
+<li><a href="#komponenten-hinzufügen">Komponenten hinzufügen</a></li>
+<li><a href="#firebase">Firebase</a>
+<ul>
+<li><a href="#projekt-anlegen">Projekt anlegen</a></li>
+<li><a href="#app-anlegen">App anlegen</a></li>
+</ul></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#todo-service">Todo Service</a></li>
+<li><a href="#todo-list-component">Todo-List Component</a></li>
+<li><a href="#dashboard">Dashboard</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="todo-liste-mit-angular">Todo Liste mit Angular</h1>
+
+<h2 id="voraussetzungen">Voraussetzungen</h2>
+
+<ul>
+<li>Aktuelle Version von <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+</ul>
+
+<h2 id="projekt-anlegen-und-starten">Projekt anlegen und starten</h2>
+
+<ul>
+<li>Öffne einen Command Prompt und installiere als erstes die Angular CLI: <code>npm install -g @angular/cli</code></li>
+<li>Lege einen Ordner an, in dem dein Projekt liegen soll - z.B. <code>angular-todo-list</code>.</li>
+<li>Führe in diesem Ordner im Command Prompt folgendes Command aus um die neue Angular Applikation anzulegen: <code>ng new todo-list-app --strict</code>
+
+<ul>
+<li>Routing - yes</li>
+<li>Stylesheet format - SCSS</li>
+</ul></li>
+<li>Wenn das Projekt fertig angelegt ist, wechsle in den generierten Ordner <code>todo-list-app</code> und öffne diesen in Visual Studio Code.</li>
+<li>Im Terminal von Visual Studio Code (STRG + ö) kannst du das Projekt mit folgendem Command starten: <code>ng serve</code><br />
+falls die URL bei dir im Chrome nicht geöffnet werden kann, kannst du localhost auch durch 127.0.0.1 ersetzen</li>
+</ul>
+
+<p>Wenn du das Projekt erfolgreich angelegt und gestartet hast, solltest du im Browser folgende Seite sehen:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/img/initial-project.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="navigationsmenü-anlegen">Navigationsmenü anlegen</h2>
+
+<h3 id="globale-styles">Globale Styles</h3>
+
+<p>Styles, die für das gesamte Projekt gelten sollen, findest du unter <code>src/styles.scss</code>. Dort ändern wir als erstes die Schriftart und den Margin für den <code>body</code>:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">body {
+    font-family: <span style="color:#a31515">&#39;Segoe UI&#39;</span>, Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}</code></pre></div>
+<h3 id="html-grundgerüst">HTML Grundgerüst</h3>
+
+<p>Das HTML Grundgerüst deiner App wird im File <code>src/index.html</code> festgelegt. Dort kannst du z.B. externe CSS oder Javascript Libraries wie Bootstrap einbinden. Für unser Beispiel verwenden wir diesmal keine Library und müssen daher im Moment auch nichts ändern im <code>index.html</code>.</p>
+
+<p>Angular Apps bestehen aus mehrere Components und die erste Component wird beim Anlegen des Projekts auch gleich automatisch angelegt - die *AppComponent. Sie besteht aus den folgenden Dateien:</p>
+
+<ul>
+<li><code>src/app/app.component.html</code> - für das HTML der Component</li>
+<li><code>src/app/app.component.scss</code> - für die Styles, die Styles gelten nur für diese Component und können in anderen Components nicht verwendet werden</li>
+<li><code>src/app/app.component.spec.ts</code>- damit kann die Logik von Components getestet werden, wir werden in diesem Beispiel noch keine Tests schreiben</li>
+<li><code>src/app/app.component.ts</code> - in diesem File ist der Typescript Code zur Component enthalten</li>
+</ul>
+
+<p>Wenn du dir den generierten Typescript Code ansiehst, siehst du, dass hier die Urls für das Template (HTML) und die Styles (SCSS) angegeben sind. Außerdem wird mit dem Selector festgelegt, wie die Component verwendet werden kann. <code>app-root</code> heißt, dass die Komponente im HTML mit <code>&lt;app-root&gt;&lt;/app-root&gt;</code> verwendet werden kann.</p>
+
+<p>Wenn du jetzt einen Blick in <code>src/index.html</code> wirfst, dann siehst du, dass genau diese Komponente im <code>&lt;body&gt;</code> verwendet wird.</p>
+
+<h3 id="navigationsmenü-erstellen">Navigationsmenü erstellen</h3>
+
+<p>Lösche dazu den ganzen generierten Content im <code>src/app/app.component.html</code> und ersetze ihn durch folgendes HTML:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Todo Liste&lt;/li&gt;
+    &lt;li&gt;Dashboard&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+  &lt;router-outlet&gt;&lt;/router-outlet&gt;
+  Test
+&lt;/main&gt;</code></pre></div>
+<p>Das Tag <code>&lt;router-outlet&gt;</code> ist ein Platzhalter, in dem dann weitere Komponenten die wir erst erstellen müssen, angezeigt werden können, sobald der User auf einen Menüpunkt klickt.</p>
+
+<p>Für eine hübschere Darstellung fügen wir noch ein paar Styles in <code>src/app/app.component.scss</code> ein:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 40px;
+    width: 100<span style="">%</span>;
+    background-color: #ffeb3b;
+    height: 40px;
+    line-height: 40px;
+}
+
+li {
+    display: inline;
+    margin-right: 40px;
+}
+
+main {
+    margin-top: 40px;
+    padding: 40px;
+}</code></pre></div>
+<p>Deine Seite sollte dann so aussehen:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/img/menu.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="komponenten-hinzufügen">Komponenten hinzufügen</h2>
+
+<p>Wir wollen jetzt für jeden Menüpunkt eine Komponente erstellen. Führe dazu entweder im Command Prompt im Ordner <code>todo-list-app</code> oder in einem neuen Terminal Fenster im Visual Studio Code folgende Commands aus:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ng g component todo-list
+ng g component dashboard</code></pre></div>
+<p>Die beiden Components können jetzt schon mit den generierten Selektoren <code>app-dashboard</code> und <code>app-todo-list</code> verwendet werden. Damit sie auch über eine eigene Url erreichbar sind, müssen wir im <code>src/app/app-routing.module.ts</code> neue Routes dafür einfügen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">const</span> routes: <span style="color:#2b91af">Routes</span> = [
+  { path: <span style="color:#a31515">&#39;dashboard&#39;</span>, component: <span style="color:#2b91af">DashboardComponent</span> },
+  { path: <span style="color:#a31515">&#39;todo-list&#39;</span>, component: <span style="color:#2b91af">TodoListComponent</span> }
+];
+</code></pre></div>
+<p>Über die Urls <code>http://127.0.0.1:4200/todo-list</code> und <code>http://127.0.0.1:4200/dashboard</code> können die beiden Komponenten geladen werden.</p>
+
+<p>Im <code>src/app/app.component.html</code> können wir die Testausgabe löschen. Stattdessen fügen wir in der Navigationsleiste Links zu den beiden neuen Komponenten hinzu.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a routerLink=<span style="color:#a31515">&#34;/todo-list&#34;</span>&gt;Todo Liste&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a routerLink=<span style="color:#a31515">&#34;/dashboard&#34;</span>&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+  &lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;/main&gt;</code></pre></div>
+<p>Das Ergebnis sollte jetzt so aussehen:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/img/menu-with-routes.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="firebase">Firebase</h2>
+
+<h3 id="projekt-anlegen">Projekt anlegen</h3>
+
+<p>Auf der Seite <a href="https://console.firebase.google.com/" target="_blank">https://console.firebase.google.com/</a> legen wir ein neues Firebase Projekt an. Falls du noch keinen Google Account hast, musst du zuerst einen anlegen und dich damit anmelden.</p>
+
+<p>Lege dann ein neues Projekt mit dem Namen todolist-demo an. Google Analytics kannst du deaktivieren.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/img/create-firebase-project.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h3 id="app-anlegen">App anlegen</h3>
+
+<p>Als nächstes kannst du in Firebase in den Settings eine neue App anlegen. Wir brauchen für unser Angular Projekt eine Web App.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/img/add-firebase-app.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Öffne die Datei <code>src/envrionments/environment.ts</code> und füge dort die Firebase Konfiguration, die nach dem Anlegen der App angezeigt wird, ein:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">export</span> <span style="color:#00f">const</span> environment = {
+  production: <span style="color:#2b91af">false</span>,
+  firebase: {
+    apiKey: <span style="color:#a31515">&#39;...&#39;</span>,
+    authDomain: <span style="color:#a31515">&#39;...&#39;</span>,
+    databaseURL: <span style="color:#a31515">&#39;...&#39;</span>,
+    projectId: <span style="color:#a31515">&#39;...&#39;</span>,
+    storageBucket: <span style="color:#a31515">&#39;...&#39;</span>,
+    messagingSenderId: <span style="color:#a31515">&#39;...&#39;</span>,
+    appId: <span style="color:#a31515">&#39;...&#39;</span>
+  }
+};
+</code></pre></div>
+<h2 id="authentication">Authentication</h2>
+
+<p>Um in Angular auf Firebase zugreifen zu können, brauchen wir die Komponenten <code>firebase</code> und <code>@angular/fire</code>:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">npm install firebase @angular/fire --save</code></pre></div>
+<p>Als erstes Fügen wir die Firebase Module in die Imports vom <code>app.module.ts</code> ein:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">...
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, <span style="color:#008000">// imports firebase/firestore, only needed for database features
+</span><span style="color:#008000"></span>    AngularFireAuthModule
+  ],
+...
+</code></pre></div>
+<p>Wir fügen jetzt in <code>app.component.ts</code> eine <code>login</code> und <code>logout</code> Methode ein. Im Konstruktor brauchen wir dafür <code>AngularFireAuth</code> und den <code>Router</code>.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { AngularFireAuth } from <span style="color:#a31515">&#39;@angular/fire/auth&#39;</span>;
+<span style="color:#00f">import</span> { Component } from <span style="color:#a31515">&#39;@angular/core&#39;</span>;
+<span style="color:#00f">import</span> { Router } from <span style="color:#a31515">&#39;@angular/router&#39;</span>;
+<span style="color:#00f">import</span> { auth } from <span style="color:#a31515">&#39;firebase/app&#39;</span>;
+
+<span style="color:#00f">@Component</span>({
+  selector: <span style="color:#a31515">&#39;app-root&#39;</span>,
+  templateUrl: <span style="color:#a31515">&#39;./app.component.html&#39;</span>,
+  styleUrls: [<span style="color:#a31515">&#39;./app.component.scss&#39;</span>]
+})
+<span style="color:#00f">export</span> <span style="color:#00f">class</span> AppComponent {
+  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> afAuth: <span style="color:#2b91af">AngularFireAuth</span>, <span style="color:#00f">public</span> router: <span style="color:#2b91af">Router</span>) {
+  }
+
+  login(): <span style="color:#00f">void</span> {
+    <span style="color:#00f">this</span>.afAuth.signInWithPopup(<span style="color:#00f">new</span> auth.GoogleAuthProvider()).then(() =&gt; {
+      <span style="color:#00f">this</span>.router.navigate([<span style="color:#a31515">&#39;todo-list&#39;</span>]);
+    });
+  }
+
+  logout(): <span style="color:#00f">void</span> {
+    <span style="color:#00f">this</span>.afAuth.signOut().then(() =&gt; {
+      <span style="color:#00f">this</span>.router.navigate([<span style="color:#a31515">&#39;&#39;</span>]);
+    });
+  }
+}
+</code></pre></div>
+<p>Im HTML fügen wir im Menü die Anzeige des aktuellen Users ein. Und wenn noch kein User angemeldet ist, dann soll im <code>main</code> Bereich ein Login Button angezeigt werden.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a routerLink=<span style="color:#a31515">&#34;/todo-list&#34;</span>&gt;Todo Liste&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a routerLink=<span style="color:#a31515">&#34;/dashboard&#34;</span>&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;div <span style="">*</span>ngIf=<span style="color:#a31515">&#34;afAuth.user | async as user&#34;</span> class=<span style="color:#a31515">&#34;user-info&#34;</span>&gt;
+    {{ user.displayName }}
+    &lt;button <span style="">(</span>click<span style="">)=&#34;</span>logout<span style="">()&#34;</span>&gt;Logout&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+  &lt;div <span style="">*</span>ngIf=<span style="color:#a31515">&#34;!(afAuth.user | async)&#34;</span>&gt;
+    &lt;h1&gt;Login&lt;/h1&gt;
+    &lt;button <span style="">(</span>click<span style="">)=&#34;</span>login<span style="">()&#34;</span>&gt;Login&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;/main&gt;</code></pre></div>
+<p>Für die Anzeige des Users brauchen wir noch einen neuen Style in <code>app.component.scss</code>:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#2b91af">.user-info</span> {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  line-height: 40px;
+}</code></pre></div>
+<p>Außerdem müssen wir in <code>app-routing.module.ts</code> noch ergänzen, dass die Routes <code>dashboard</code> und <code>todo-list</code> nur aufgerufen werden dürfen, wenn ein User angemeldet ist. Dazu ergänzen wir in den <code>routes</code> den <code>AngularFireAuthGuard</code>:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">const</span> routes: <span style="color:#2b91af">Routes</span> = [
+  { path: <span style="color:#a31515">&#39;dashboard&#39;</span>, component: <span style="color:#2b91af">DashboardComponent</span>, canActivate: [AngularFireAuthGuard] },
+  { path: <span style="color:#a31515">&#39;todo-list&#39;</span>, component: <span style="color:#2b91af">TodoListComponent</span>, canActivate: [AngularFireAuthGuard] }
+];
+</code></pre></div>
+<h2 id="todo-service">Todo Service</h2>
+
+<p>Als erstes legen wir ein Interface für die Items in unsere Todo Liste an:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ng g interface shared/todo</code></pre></div>
+<p>Im Interface legen wir alle Properties fest, die ein Todo haben muss:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">export</span> <span style="color:#00f">interface</span> Todo {
+  id: <span style="color:#2b91af">string</span>;
+  description: <span style="color:#2b91af">string</span>;
+  dueDate: <span style="color:#2b91af">firestore.Timestamp</span>;
+  doneDate?: <span style="color:#2b91af">firestore.Timestamp</span>;
+}
+</code></pre></div>
+<p>Als nächstes bauen wir ein Service, mit dem wir die Todos aus dem Firestore lesen können und Änderungen zum Firestore schicken können. Lege dazu ein neues Service an:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ng g service shared/todo-list</code></pre></div>
+<p>Der Code vom Service sieht folgendermaßen aus:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { AngularFireAuth } from <span style="color:#a31515">&#39;@angular/fire/auth&#39;</span>;
+<span style="color:#00f">import</span> { AngularFirestore } from <span style="color:#a31515">&#39;@angular/fire/firestore&#39;</span>;
+<span style="color:#00f">import</span> { Injectable } from <span style="color:#a31515">&#39;@angular/core&#39;</span>;
+<span style="color:#00f">import</span> { Subscription } from <span style="color:#a31515">&#39;rxjs&#39;</span>;
+<span style="color:#00f">import</span> { Todo } from <span style="color:#a31515">&#39;./todo&#39;</span>;
+
+<span style="color:#00f">@Injectable</span>({
+  providedIn: <span style="color:#a31515">&#39;root&#39;</span>
+})
+<span style="color:#00f">export</span> <span style="color:#00f">class</span> TodoListService {
+  <span style="color:#00f">public</span> todos: <span style="color:#2b91af">Todo</span>[] = [];
+
+  <span style="color:#00f">private</span> userUid = <span style="color:#a31515">&#39;&#39;</span>;
+  <span style="color:#00f">private</span> todoSubscription: <span style="color:#2b91af">Subscription</span> = Subscription.EMPTY;
+
+  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> firestore: <span style="color:#2b91af">AngularFirestore</span>, <span style="color:#00f">public</span> afAuth: <span style="color:#2b91af">AngularFireAuth</span>) {
+    <span style="color:#00f">this</span>.afAuth.authState.subscribe(state =&gt; {
+      <span style="color:#00f">if</span> (state?.uid) {
+        <span style="color:#00f">this</span>.userUid = state.uid;
+
+        <span style="color:#00f">this</span>.todoSubscription = <span style="color:#00f">this</span>.firestore.collection&lt;any&gt;(
+          <span style="color:#a31515">&#39;todos&#39;</span>, ref =&gt; {
+            <span style="color:#00f">return</span> ref.where(<span style="color:#a31515">&#39;userUid&#39;</span>, <span style="color:#a31515">&#39;==&#39;</span>, state.uid);
+          }).snapshotChanges().subscribe(data =&gt; {
+            <span style="color:#00f">this</span>.todos = data
+              .map(e =&gt; {
+                <span style="color:#00f">return</span> {
+                  id: <span style="color:#2b91af">e.payload.doc.id</span>,
+                  ...e.payload.doc.data()
+                } <span style="color:#00f">as</span> Todo;
+              })
+              .sort((a, b) =&gt; {
+                <span style="color:#00f">return</span> a.dueDate &gt; b.dueDate ? 1 : -1;
+              });
+          });
+      } <span style="color:#00f">else</span> {
+        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todoSubscription) {
+          <span style="color:#00f">this</span>.todoSubscription.unsubscribe();
+        }
+
+        <span style="color:#00f">this</span>.userUid = <span style="color:#a31515">&#39;&#39;</span>;
+        <span style="color:#00f">this</span>.todos = [];
+      }
+    });
+  }
+
+  <span style="color:#00f">public</span> addTodo(description: <span style="color:#2b91af">string</span>, dueDate: <span style="color:#2b91af">Date</span>): <span style="color:#00f">void</span> {
+    <span style="color:#00f">this</span>.firestore.collection(<span style="color:#a31515">&#39;todos&#39;</span>).add({ description: <span style="color:#2b91af">description</span>, dueDate: <span style="color:#2b91af">dueDate</span>, userUid: <span style="color:#2b91af">this.userUid</span> });
+  }
+
+  <span style="color:#00f">public</span> deleteTodoById(id: <span style="color:#2b91af">string</span>): <span style="color:#00f">void</span> {
+    <span style="color:#00f">this</span>.firestore.doc(<span style="color:#a31515">&#39;todos/&#39;</span> + id).<span style="color:#00f">delete</span>();
+  }
+
+  <span style="color:#00f">public</span> updateTodoById(todo: <span style="color:#2b91af">Todo</span>): <span style="color:#00f">void</span> {
+    <span style="color:#00f">this</span>.firestore.doc(<span style="color:#a31515">&#39;todos/&#39;</span> + todo.id).update({ description: <span style="color:#2b91af">todo.description</span>, dueDate: <span style="color:#2b91af">todo.dueDate</span> });
+  }
+
+  <span style="color:#00f">public</span> toggleDoneStateById(todo: <span style="color:#2b91af">Todo</span>): <span style="color:#00f">void</span> {
+    <span style="color:#00f">this</span>.firestore.doc(<span style="color:#a31515">&#39;todos/&#39;</span> + todo.id).update({ doneDate: <span style="color:#2b91af">todo.doneDate</span> ? <span style="color:#00f">null</span> : <span style="color:#00f">new</span> Date() });
+  }
+}
+</code></pre></div>
+<h2 id="todo-list-component">Todo-List Component</h2>
+
+<p>In der <code>todo-list.component.ts</code> können wir jetzt das Service verwenden. Dazu verwenden wir Dependency Injection im Konstruktor. Für <code>addTodo</code> fügen wir eine eigene Methode hinzu:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Component, OnInit } from <span style="color:#a31515">&#39;@angular/core&#39;</span>;
+
+<span style="color:#00f">import</span> { TodoListService } from <span style="color:#a31515">&#39;../shared/todo-list.service&#39;</span>;
+<span style="color:#00f">import</span> { formatDate } from <span style="color:#a31515">&#39;@angular/common&#39;</span>;
+
+<span style="color:#00f">@Component</span>({
+  selector: <span style="color:#a31515">&#39;app-todo-list&#39;</span>,
+  templateUrl: <span style="color:#a31515">&#39;./todo-list.component.html&#39;</span>,
+  styleUrls: [<span style="color:#a31515">&#39;./todo-list.component.scss&#39;</span>]
+})
+<span style="color:#00f">export</span> <span style="color:#00f">class</span> TodoListComponent <span style="color:#00f">implements</span> OnInit {
+  <span style="color:#00f">public</span> todoDescription = <span style="color:#a31515">&#39;&#39;</span>;
+  <span style="color:#00f">public</span> todoDueDate = formatDate(<span style="color:#00f">new</span> Date(), <span style="color:#a31515">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#a31515">&#39;en&#39;</span>);
+  <span style="color:#00f">public</span> showDone = <span style="color:#00f">false</span>;
+
+  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> todoListService: <span style="color:#2b91af">TodoListService</span>) {
+  }
+
+  ngOnInit(): <span style="color:#00f">void</span> {
+  }
+
+  <span style="color:#00f">public</span> addTodo(): <span style="color:#00f">void</span> {
+    <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todoDescription &amp;&amp; <span style="color:#00f">this</span>.todoDueDate) {
+      <span style="color:#00f">this</span>.todoListService.addTodo(<span style="color:#00f">this</span>.todoDescription, <span style="color:#00f">new</span> Date(<span style="color:#00f">this</span>.todoDueDate));
+      <span style="color:#00f">this</span>.todoDescription = <span style="color:#a31515">&#39;&#39;</span>;
+      <span style="color:#00f">this</span>.todoDueDate = formatDate(<span style="color:#00f">new</span> Date(), <span style="color:#a31515">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#a31515">&#39;en&#39;</span>);
+    }
+  }
+}
+</code></pre></div>
+<p>Damit wir im HTML nach abgeschlossenen und noch nicht abgeschlossenen Items filtern können, erstellen wir eine Angular pipe:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ng generate pipe pipes/TodoFilterPipe</code></pre></div>
+<p>Der Code für die Pipe sieht folgendermaßen aus:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Pipe, PipeTransform } from <span style="color:#a31515">&#39;@angular/core&#39;</span>;
+
+<span style="color:#00f">import</span> { Todo } from <span style="color:#a31515">&#39;../shared/todo&#39;</span>;
+
+<span style="color:#00f">@Pipe</span>({
+  name: <span style="color:#a31515">&#39;todoFilterPipe&#39;</span>
+})
+<span style="color:#00f">export</span> <span style="color:#00f">class</span> TodoFilterPipePipe <span style="color:#00f">implements</span> PipeTransform {
+
+  transform(todos: <span style="color:#2b91af">Todo</span>[], done: <span style="color:#2b91af">boolean</span> | <span style="color:#00f">null</span>): Todo[] {
+    <span style="color:#00f">return</span> todos.filter(t =&gt; done === <span style="color:#00f">null</span> || done === <span style="color:#00f">undefined</span> || (done === <span style="color:#00f">true</span> &amp;&amp; t.doneDate) || (done === <span style="color:#00f">false</span> &amp;&amp; !t.doneDate));
+  }
+}
+</code></pre></div>
+<p>Damit wir Form Controls mit Bindings verwenden können, müssen wir im `app.module.ts noch das FormsModule hinzufügen.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">...
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, <span style="color:#008000">// imports firebase/firestore, only needed for database features
+</span><span style="color:#008000"></span>    AngularFireAuthModule
+  ],
+...
+</code></pre></div>
+<p>Im <code>todo-list.component.html</code> können wir die Todos jetzt anzeigen, neue hinzufügen und bestehende als erledigt markieren.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2&gt;Todos&lt;/h2&gt;
+
+&lt;div class=<span style="color:#a31515">&#34;addItem&#34;</span>&gt;
+  Neues Todo: &lt;input type=<span style="color:#a31515">&#34;text&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDescription<span style="">&#34;</span>&gt; &lt;input type=<span style="color:#a31515">&#34;date&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDueDate<span style="">&#34;</span>&gt; &lt;button <span style="">(</span>click<span style="">)=&#34;</span>addTodo<span style="">()&#34;</span>&gt;Hinzufügen&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Done anzeigen: &lt;input type=<span style="color:#a31515">&#34;checkbox&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>showDone<span style="">&#34;</span>&gt;&lt;/p&gt;
+
+<span style="color:#008000">&lt;!-- &lt;div *ngFor=&#34;let item of todoListService.getTodos(showDone ? undefined : false) | async&#34;&gt; --&gt;</span>
+&lt;div <span style="">*</span>ngFor=<span style="color:#a31515">&#34;let item of (todoListService.todos | todoFilterPipe: (showDone ? null : false))&#34;</span>&gt;
+  &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>toggleDoneStateById<span style="">(</span>item<span style="">)&#34;</span>&gt;Done&lt;/button&gt;
+  &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>deleteTodoById<span style="">(</span>item<span style="">.</span>id<span style="">)&#34;</span>&gt;Löschen&lt;/button&gt;
+  &lt;span <span style="">[</span>ngStyle<span style="">]=&#34;{&#39;</span>text-decoration<span style="">&#39;</span>: <span style="">(</span>item<span style="">.</span>doneDate <span style="">?</span> <span style="">&#39;</span>line-through<span style="">&#39;</span> : <span style="">&#39;</span>none<span style="">&#39;)}&#34;</span>&gt;
+    &lt;span class=<span style="color:#a31515">&#34;date&#34;</span>&gt;{{ item.dueDate.seconds * 1000 | date:&#39;EE, dd.MM.&#39; }}&lt;/span&gt;
+    &lt;span class=<span style="color:#a31515">&#34;description&#34;</span>&gt;{{ item.description }}&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+  Todo: {{ (todoListService.todos | todoFilterPipe: false).length }}&lt;br /&gt;
+  Done: {{ todoListService.todos.length }}
+&lt;/p&gt;</code></pre></div>
+<p>Für eine hübschere Darstellung können noch folgende Styles in <code>todo-list.component.styles</code> hinzugefügt werden:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">button {
+  margin-right: 10px;
+}
+
+<span style="color:#2b91af">.date</span> {
+  display: inline-block;
+  width: 100px;
+}</code></pre></div>
+<h2 id="dashboard">Dashboard</h2>
+
+<p>Im Dashboard wollen wir jetzt zwei Balken anzeigen für die noch offenen und die bereits erledigten Todos. In <code>dashboard.component.ts</code> fügen wir dazu zwei Methoden ein, die uns die jeweiligen Prozentsätze ausrechnen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Component, OnInit } from <span style="color:#a31515">&#39;@angular/core&#39;</span>;
+
+<span style="color:#00f">import</span> { Todo } from <span style="color:#a31515">&#39;../shared/todo&#39;</span>;
+<span style="color:#00f">import</span> { TodoListService } from <span style="color:#a31515">&#39;../shared/todo-list.service&#39;</span>;
+
+<span style="color:#00f">@Component</span>({
+  selector: <span style="color:#a31515">&#39;app-dashboard&#39;</span>,
+  templateUrl: <span style="color:#a31515">&#39;./dashboard.component.html&#39;</span>,
+  styleUrls: [<span style="color:#a31515">&#39;./dashboard.component.scss&#39;</span>]
+})
+<span style="color:#00f">export</span> <span style="color:#00f">class</span> DashboardComponent <span style="color:#00f">implements</span> OnInit {
+  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> todoListService: <span style="color:#2b91af">TodoListService</span>) {
+  }
+
+  ngOnInit(): <span style="color:#00f">void</span> {
+  }
+
+  getTodoPercentage(): <span style="color:#2b91af">number</span> {
+    <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todoListService.todos.length) {
+      <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todoListService.todos.filter(t =&gt; !t.doneDate).length / <span style="color:#00f">this</span>.todoListService.todos.length * 100;
+    } <span style="color:#00f">else</span> {
+      <span style="color:#00f">return</span> 0;
+    }
+  }
+
+  getDonePercentage(): <span style="color:#2b91af">number</span> {
+    <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todoListService.todos.length) {
+      <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todoListService.todos.filter(t =&gt; t.doneDate).length / <span style="color:#00f">this</span>.todoListService.todos.length * 100;
+    } <span style="color:#00f">else</span> {
+      <span style="color:#00f">return</span> 0;
+    }
+  }
+}
+</code></pre></div>
+<p>Dann fügen wir im HTML zwei divs ein, deren Breite über Data Binding im <code>[ngStyle]</code> gesteuert wird. Hier verwenden wir die berrechneten Prozentsätze:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2&gt;Dashboard&lt;/h2&gt;
+&lt;div class=<span style="color:#a31515">&#34;bar-chart&#34;</span>&gt;
+    &lt;div <span style="">[</span>ngStyle<span style="">]=&#34;{</span> <span style="">&#39;</span>width<span style="">&#39;</span>: getTodoPercentage<span style="">().</span>toString<span style="">()</span> <span style="">+</span> <span style="">&#39;%&#39;</span> <span style="">}&#34;</span> class=<span style="color:#a31515">&#34;todo-bar&#34;</span>&gt;Todo: {{ getTodoPercentage() | number:&#39;1.0-0&#39; }} %&lt;/div&gt;
+    &lt;div <span style="">[</span>ngStyle<span style="">]=&#34;{</span> <span style="">&#39;</span>width<span style="">&#39;</span>: getDonePercentage<span style="">().</span>toString<span style="">()</span> <span style="">+</span> <span style="">&#39;%&#39;</span> <span style="">}&#34;</span> class=<span style="color:#a31515">&#34;done-bar&#34;</span>&gt;Done: {{ getDonePercentage() | number:&#39;1.0-0&#39; }} %&lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+<p>Im Stylesheet müssen wir noch die Höhe und Farben der Balken festlegen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#2b91af">.bar-chart</span> {
+    &gt;div {
+        height: 40px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+
+    <span style="color:#2b91af">.todo-bar</span> {
+        background-color: #03a9f4;
+        height: 40px;
+    }
+
+    <span style="color:#2b91af">.done-bar</span> {
+        background-color: #4caf50;
+        height: 40px;
+    }
+}</code></pre></div>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/img/dashboard.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+ </div>
+        </div>
+    </div>
+</section>  
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <div>
+                            <img src="/img/logo-coding-club-linz-white.svg">
+                        </div>
+                        <div>Coding Club Linz<br />Birkenweg 16, 4060 Leonding <br />
+                            <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+</body>
+
+</html>

@@ -19,5 +19,14 @@
       <description>Todo Liste mit Angular Voraussetzungen  Aktuelle Version von Visual Studio Code  Projekt anlegen und starten  Öffne einen Command Prompt und installiere als erstes die Angular CLI: npm install -g @angular/cli Lege einen Ordner an, in dem dein Projekt liegen soll - z.B. angular-todo-list. Führe in diesem Ordner im Command Prompt folgendes Command aus um die neue Angular Applikation anzulegen: ng new todo-list-app --strict  Routing - yes Stylesheet format - SCSS  Wenn das Projekt fertig angelegt ist, wechsle in den generierten Ordner todo-list-app und öffne diesen in Visual Studio Code.</description>
     </item>
     
+    <item>
+      <title>Todo Liste mit Angular und Firebase</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/</guid>
+      <description>Todo Liste mit Angular Voraussetzungen  Aktuelle Version von Visual Studio Code  Projekt anlegen und starten  Öffne einen Command Prompt und installiere als erstes die Angular CLI: npm install -g @angular/cli Lege einen Ordner an, in dem dein Projekt liegen soll - z.B. angular-todo-list. Führe in diesem Ordner im Command Prompt folgendes Command aus um die neue Angular Applikation anzulegen: ng new todo-list-app --strict  Routing - yes Stylesheet format - SCSS  Wenn das Projekt fertig angelegt ist, wechsle in den generierten Ordner todo-list-app und öffne diesen in Visual Studio Code.</description>
+    </item>
+    
   </channel>
 </rss>
