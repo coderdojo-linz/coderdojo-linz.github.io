@@ -158,6 +158,7 @@
 <li><a href="#authentication">Authentication</a></li>
 <li><a href="#todo-service">Todo Service</a></li>
 <li><a href="#todo-list-component">Todo-List Component</a></li>
+<li><a href="#berechtigungen">Berechtigungen</a></li>
 <li><a href="#dashboard">Dashboard</a></li>
 </ul></li>
 </ul>
@@ -683,6 +684,18 @@ ng g component dashboard</code></pre></div>
 <span style="color:#2b91af">.date</span> {
   display: inline-block;
   width: 100px;
+}</code></pre></div>
+<h2 id="berechtigungen">Berechtigungen</h2>
+
+<p>Damit User auch wirklich nur ihre Todos abfragen können, müssen wir im Cloud Firestore unter Rules noch festlegen, dass nur angemeldete User Items anlegen dürfen. Und gelesen, geändert und gelöscht dürfen Items nur werden, wenn die <code>userUid</code> übereinstimmt:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">rules_version = &#39;2&#39;;
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /todos/{document=**} {
+      allow read, update, delete: if request.auth != null &amp;&amp; request.auth.uid == resource.data.userUid;
+      allow create: if request.auth != null;
+    }
+  }
 }</code></pre></div>
 <h2 id="dashboard">Dashboard</h2>
 
