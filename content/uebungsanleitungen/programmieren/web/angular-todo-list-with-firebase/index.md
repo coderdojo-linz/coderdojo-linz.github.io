@@ -484,6 +484,22 @@ button {
 }
 ```
 
+## Berechtigungen
+
+Damit User auch wirklich nur ihre Todos abfragen können, müssen wir im Cloud Firestore unter Rules noch festlegen, dass nur angemeldete User Items anlegen dürfen. Und gelesen, geändert und gelöscht dürfen Items nur werden, wenn die `userUid` übereinstimmt:
+
+```cmd
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /todos/{document=**} {
+      allow read, update, delete: if request.auth != null && request.auth.uid == resource.data.userUid;
+      allow create: if request.auth != null;
+    }
+  }
+}
+```
+
 ## Dashboard
 
 Im Dashboard wollen wir jetzt zwei Balken anzeigen für die noch offenen und die bereits erledigten Todos. In `dashboard.component.ts` fügen wir dazu zwei Methoden ein, die uns die jeweiligen Prozentsätze ausrechnen:
