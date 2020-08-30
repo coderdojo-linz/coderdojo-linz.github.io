@@ -913,6 +913,12 @@ iframe[src*="jsfiddle"] {
     }
 }
 
+@media print {
+    .sushi-toc {
+        display: none;
+    }
+}
+
 .sushi-content {
 
     // p:first-child {
