@@ -26,9 +26,7 @@ function sendContactForm(type) {
     console.log('sendContactForm');
 
     grecaptcha.ready(function () {
-        console.log('sendContactForm 1');
         grecaptcha.execute('6LfXNMcZAAAAALYnf3GpUqw5uotVMyjhLNU438i9', { action: 'contactForm' }).then(function (token) {
-            console.log('token', token);
             var form = document.getElementById('contact-form');
             form.classList.add('was-validated');
             if (form.checkValidity() === true) {
