@@ -27,7 +27,7 @@ function sendContactForm(type) {
 
     grecaptcha.ready(function () {
         console.log('sendContactForm 1');
-        grecaptcha.execute('6LfXNMcZAAAAALYnf3GpUqw5uotVMyjhLNU438i9', { action: 'submit' }).then(function (token) {
+        grecaptcha.execute('6LfXNMcZAAAAALYnf3GpUqw5uotVMyjhLNU438i9', { action: 'contactForm' }).then(function (token) {
             console.log('token', token);
             var form = document.getElementById('contact-form');
             form.classList.add('was-validated');
@@ -41,7 +41,8 @@ function sendContactForm(type) {
                     data: JSON.stringify({ 
                         email: $('#contact-email').val(), 
                         text: type + '\n\n' + $('#contact-text').val(),
-                        token: token })
+                        token: token,
+                        action: 'contactForm' })
                 }).done(function () {
                     $('#contact-success').show();
                 }).fail(function (error) {
