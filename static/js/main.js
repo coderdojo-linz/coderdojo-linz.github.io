@@ -46,7 +46,7 @@ function sendContactForm(type) {
                 }).done(function () {
                     $('#contact-success').show();
                 }).fail(function (error) {
-                    if (error.status === 202) {
+                    if (error.status === 200 || error.status === 202) {
                         $('#contact-success').show();
                     } else {
                         $('#contact-error').show();
