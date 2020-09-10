@@ -36,11 +36,12 @@ function sendContactForm(type) {
                     url: 'https://prod-168.westeurope.logic.azure.com/workflows/2dd6d3e5e6704ed1afa801d769e4708b/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=r26oUrw9V_-PToMEcu1HhY7w7-LQxyvK5H0M9U8knLc',
                     contentType: 'application/json; charset=utf-8',
                     dataType: 'json',
-                    data: JSON.stringify({ 
-                        email: $('#contact-email').val(), 
+                    data: JSON.stringify({
+                        email: $('#contact-email').val(),
                         text: type + '\n\n' + $('#contact-text').val(),
                         token: token,
-                        action: 'contactForm' })
+                        action: 'contactForm'
+                    })
                 }).done(function () {
                     $('#contact-success').show();
                 }).fail(function (error) {
@@ -140,7 +141,7 @@ function loadEvents(eventsTable) {
                     row += '<div class=\'workshop\'>';
                     row += '<h3><small><span class=\'d-inline d-sm-none\'>' + moment(workshop.begintime).format('DD.MM.YYYY') + '</span> ' + moment(workshop.begintime).format('HH:mm') + ' - ' + moment(workshop.endtime).format('HH:mm') + '</small><br/>' + workshop.title + '</h3>';
 
-                    if (workshop.targetAudience) {
+                    if (workshop.targetAudience && workshop.targetAudience !== '-') {
                         row += '<p><strong>Für wen:</strong> ' + converter.makeHtml(workshop.targetAudience) + '</p>';
                     }
 
@@ -153,18 +154,26 @@ function loadEvents(eventsTable) {
                     }
                     row += '</p>';
 
-                    row += '<p><strong>Voraussetzungen</strong></p>';
-                    if (workshop.prerequisites) {
-                        row += converter.makeHtml(workshop.prerequisites);
-                    } else {
-                        row += 'werden noch bekanntgegeben';
+                    if (workshop.prerequisites && workshop.prerequisites !== '-') {
+                        row += '<p><strong>Voraussetzungen</strong></p>';
+                        if (workshop.prerequisites) {
+                            row += converter.makeHtml(workshop.prerequisites);
+                        } else {
+                            row += 'werden noch bekanntgegeben';
+                        }
                     }
 
+                    if (workshop.mentors && workshop.mentors.length && workshop.mentors[0] !== '-') {
                     row += '<p><strong>Mentoren:</strong> ' + ((workshop.mentors && workshop.mentors.length) ? workshop.mentors.join(', ') : 'werden noch bekanntgegeben') + '</p>';
+                    }
 
+                    if (workshop.zoom && workshop.zoom !== '-') {
                     row += '<p><strong>Link zum Teilnehmen:</strong> ' + (workshop.zoom ? '<a href=\'' + workshop.zoom + '\' target=\'_blank\'>' + workshop.zoom + '</a>' : 'wird noch bekanntgegeben') + '</p>';
+                    }
 
+                    if (workshop.zoomUser && workshop.zoomUser !== '-') {
                     row += '<p><strong>Zoom User für Mentoren:</strong> ' + (workshop.zoomUser ? workshop.zoomUser.replace(/@linz.coderdojo.net/, '') : '') + '</p>';
+                    }
 
                     row += '</div>';
                 });
