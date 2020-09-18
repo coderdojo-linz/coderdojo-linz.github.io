@@ -66,19 +66,19 @@ Das U-Boot soll mit den Pfeiltasten bewegt werden. Bei jedem Tastendruck ändert
 # U-Boot steuern
 UBOOT_GESCHW = 10
 def uboot_bewegen(event):
-    x, y = c.coords(uboot)
-    if event.keysym == "Up":
-        if y >= UBOOT_GESCHW:
-            c.move(uboot, 0, -UBOOT_GESCHW)
-    elif event.keysym == "Down":
-        if y <= H - UBOOT_GESCHW:
-            c.move(uboot, 0, UBOOT_GESCHW)
-    elif event.keysym == "Left":
-        if x >= UBOOT_GESCHW:
-            c.move(uboot, -UBOOT_GESCHW, 0)
-    elif event.keysym == "Right":
-        if x <= B - UBOOT_GESCHW:
-            c.move(uboot, UBOOT_GESCHW, 0)
+        x, y = c.coords(uboot)
+        if event.keysym == "Up":
+            if y >= UBOOT_GESCHW:
+                c.move(uboot, 0, -UBOOT_GESCHW)
+        elif event.keysym == "Down":
+            if y <= H - UBOOT_GESCHW:
+                c.move(uboot, 0, UBOOT_GESCHW)
+        elif event.keysym == "Left":
+            if x >= UBOOT_GESCHW:
+                c.move(uboot, -UBOOT_GESCHW, 0)
+        elif event.keysym == "Right":
+            if x <= B - UBOOT_GESCHW:
+                c.move(uboot, UBOOT_GESCHW, 0)
 c.bind_all("<Key>", uboot_bewegen)
 ```
  
@@ -133,11 +133,11 @@ Damit nicht zu viele Blasen erzeugt werden, sondern nur durchschnittlich in eine
 ```python
 # HAUPTSCHLEIFE
 while true:
-  if randint(1, 10) == 1:
+    if randint(1, 10) == 1:
     erzeuge_bubble()
-  bewege_bubbles()
-  window.update()
-  sleep(0.01)
+    bewege_bubbles()
+    window.update()
+    sleep(0.01)
 ```
 
 ## Bubbles entfernen
@@ -174,12 +174,12 @@ Das Entfernen der Bubbles können wir gleich in unsere Hauptschleife einbauen:
 ```python
 # HAUPTSCHLEIFE
 while true:
-  if randint(1, 10) == 1:
+    if randint(1, 10) == 1:
     erzeuge_bubble()
-  bewege_bubbles()
-  entferne_bubbles()
-  window.update()
-  sleep(0.01)
+    bewege_bubbles()
+    entferne_bubbles()
+    window.update()
+    sleep(0.01)
 ```
  
 ## Bubbles platzen lassen
@@ -217,14 +217,14 @@ Um diese Funktion zu testen, bauen wir eine Variable score, die die Gesamtpunkte
 # HAUPTSCHLEIFE
 score = 0
 while true:
-  if randint(1, 10) == 1:
+    if randint(1, 10) == 1:
     erzeuge_bubble()
-  bewege_bubbles()
-  entferne_bubbles()
-  score += treffer()
-  print (score)
-  window.update()
-  sleep(0.01)
+    bewege_bubbles()
+    entferne_bubbles()
+    score += treffer()
+    print (score)
+    window.update()
+    sleep(0.01)
 ```
  
 ## Zeit und Punkte anzeigen

@@ -80,19 +80,19 @@ Der Fisch wird mit den Pfeiltasten gesteuert. Bei jedem Tastendruck ändert sich
 FISH_GESCHW = 100
 FISH_R = 75
 def move_fish(event):
-    x, y = c.coords(fish)
-    if event.keysym == "Left":
-        if x >= FISH_GESCHW:
-            c.move(fish, -FISH_GESCHW, 0)
-    elif event.keysym == "Right":
-        if x <= B - FISH_GESCHW:
-            c.move(fish, FISH_GESCHW, 0)
-    elif event.keysym == "Up":
-        if y >= FISH_GESCHW:
-            c.move(fish, 0, -FISH_GESCHW)
-    elif event.keysym == "Down":
-        if y <= H - FISH_GESCHW:
-            c.move(fish, 0, FISH_GESCHW)
+        x, y = c.coords(fish)
+        if event.keysym == "Left":
+            if x >= FISH_GESCHW:
+                c.move(fish, -FISH_GESCHW, 0)
+        elif event.keysym == "Right":
+            if x <= B - FISH_GESCHW:
+                c.move(fish, FISH_GESCHW, 0)
+        elif event.keysym == "Up":
+            if y >= FISH_GESCHW:
+                c.move(fish, 0, -FISH_GESCHW)
+        elif event.keysym == "Down":
+            if y <= H - FISH_GESCHW:
+                c.move(fish, 0, FISH_GESCHW)
 window.bind("<Key>", move_fish)
 ```
  

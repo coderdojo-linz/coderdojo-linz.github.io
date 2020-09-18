@@ -83,19 +83,19 @@ Wir definieren Funktionen, die das Öffnen und Schließen von Mund und Auge simu
 ```python
 # Mund auf und zu
 def mund_auf(event):
-    c.itemconfig(mund, fill="black")
+        c.itemconfig(mund, fill="black")
 
 def mund_zu(event):
-    c.itemconfig(mund, fill="red")
+        c.itemconfig(mund, fill="red")
 
 # Auge zu und auf
 def auge_zu(event):
-    c.itemconfig(auge, fill="green")
-    c.itemconfig(pupille, state=HIDDEN)
+        c.itemconfig(auge, fill="green")
+        c.itemconfig(pupille, state=HIDDEN)
 
 def auge_auf(event):
-    c.itemconfig(auge, fill="white")
-    c.itemconfig(pupille, state=NORMAL)
+        c.itemconfig(auge, fill="white")
+        c.itemconfig(pupille, state=NORMAL)
 ```
  
 Diese Funktionen kombinieren wir nun mit dem Drücken von bestimmten Tasten:
