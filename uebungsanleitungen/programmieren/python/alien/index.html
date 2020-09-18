@@ -300,19 +300,19 @@ hut = c.create_polygon(160, 75, 240, 75, 200, 20, fill=<span style="color:#a3151
 <li><p>Wenn das Auge offen ist, wird es wieder weiß und die Pupille ist sichtbar.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Mund auf und zu</span>
 <span style="color:#00f">def</span> mund_auf(event):
-c.itemconfig(mund, fill=<span style="color:#a31515">&#34;black&#34;</span>)
+    c.itemconfig(mund, fill=<span style="color:#a31515">&#34;black&#34;</span>)
 
 <span style="color:#00f">def</span> mund_zu(event):
-c.itemconfig(mund, fill=<span style="color:#a31515">&#34;red&#34;</span>)
+    c.itemconfig(mund, fill=<span style="color:#a31515">&#34;red&#34;</span>)
 
 <span style="color:#008000"># Auge zu und auf</span>
 <span style="color:#00f">def</span> auge_zu(event):
-c.itemconfig(auge, fill=<span style="color:#a31515">&#34;green&#34;</span>)
-c.itemconfig(pupille, state=HIDDEN)
+    c.itemconfig(auge, fill=<span style="color:#a31515">&#34;green&#34;</span>)
+    c.itemconfig(pupille, state=HIDDEN)
 
 <span style="color:#00f">def</span> auge_auf(event):
-c.itemconfig(auge, fill=<span style="color:#a31515">&#34;white&#34;</span>)
-c.itemconfig(pupille, state=NORMAL)</code></pre></div></li>
+    c.itemconfig(auge, fill=<span style="color:#a31515">&#34;white&#34;</span>)
+    c.itemconfig(pupille, state=NORMAL)</code></pre></div></li>
 </ul>
 
 <p>Diese Funktionen kombinieren wir nun mit dem Drücken von bestimmten Tasten:</p>

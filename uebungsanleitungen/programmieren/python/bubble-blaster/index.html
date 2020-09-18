@@ -235,19 +235,19 @@ UBOOT_R = 45</code></pre></div>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># U-Boot steuern</span>
 UBOOT_GESCHW = 10
 <span style="color:#00f">def</span> uboot_bewegen(event):
-x, y = c.coords(uboot)
-<span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
-    <span style="color:#00f">if</span> y &gt;= UBOOT_GESCHW:
-        c.move(uboot, 0, -UBOOT_GESCHW)
-<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
-    <span style="color:#00f">if</span> y &lt;= H - UBOOT_GESCHW:
-        c.move(uboot, 0, UBOOT_GESCHW)
-<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
-    <span style="color:#00f">if</span> x &gt;= UBOOT_GESCHW:
-        c.move(uboot, -UBOOT_GESCHW, 0)
-<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
-    <span style="color:#00f">if</span> x &lt;= B - UBOOT_GESCHW:
-        c.move(uboot, UBOOT_GESCHW, 0)
+    x, y = c.coords(uboot)
+    <span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
+        <span style="color:#00f">if</span> y &gt;= UBOOT_GESCHW:
+            c.move(uboot, 0, -UBOOT_GESCHW)
+    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
+        <span style="color:#00f">if</span> y &lt;= H - UBOOT_GESCHW:
+            c.move(uboot, 0, UBOOT_GESCHW)
+    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
+        <span style="color:#00f">if</span> x &gt;= UBOOT_GESCHW:
+            c.move(uboot, -UBOOT_GESCHW, 0)
+    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
+        <span style="color:#00f">if</span> x &lt;= B - UBOOT_GESCHW:
+            c.move(uboot, UBOOT_GESCHW, 0)
 c.bind_all(<span style="color:#a31515">&#34;&lt;Key&gt;&#34;</span>, uboot_bewegen)</code></pre></div></li>
 </ul>
 
@@ -294,11 +294,11 @@ GAP = 100
 <p>Damit nicht zu viele Blasen erzeugt werden, sondern nur durchschnittlich in einem Zehntel der Zeitschritte, erzeugen wir eine Zufallszahl zwischen 1 und 10. Nur wenn diese Zufallszahl 1 ist, dann erzeugen wir eine Bubble und sonst nicht.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># HAUPTSCHLEIFE</span>
 <span style="color:#00f">while</span> true:
-  <span style="color:#00f">if</span> randint(1, 10) == 1:
+    <span style="color:#00f">if</span> randint(1, 10) == 1:
     erzeuge_bubble()
-  bewege_bubbles()
-  window.update()
-  sleep(0.01)</code></pre></div>
+    bewege_bubbles()
+    window.update()
+    sleep(0.01)</code></pre></div>
 <h2 id="bubbles-entfernen">Bubbles entfernen</h2>
 
 <p>Jetzt beschäftigen wir uns mit dem Entfernen der Bubbles. Bubbles verschwinden, wenn sie komplett über den Bildschirm gewandert sind und auch wenn das U-Boot die Bubble zum Platzen gebracht hat. Für beides brauchen wir eine Funktion, die eine Bubble löschen kann.</p>
@@ -323,12 +323,12 @@ GAP = 100
 <p>Das Entfernen der Bubbles können wir gleich in unsere Hauptschleife einbauen:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># HAUPTSCHLEIFE</span>
 <span style="color:#00f">while</span> true:
-  <span style="color:#00f">if</span> randint(1, 10) == 1:
+    <span style="color:#00f">if</span> randint(1, 10) == 1:
     erzeuge_bubble()
-  bewege_bubbles()
-  entferne_bubbles()
-  window.update()
-  sleep(0.01)</code></pre></div>
+    bewege_bubbles()
+    entferne_bubbles()
+    window.update()
+    sleep(0.01)</code></pre></div>
 <h2 id="bubbles-platzen-lassen">Bubbles platzen lassen</h2>
 
 <p>Wenn eine Bubble vom U-Boot getroffen wird, soll sie platzen und vom Bildschirm verschwinden. Um feststellen zu können, ob das U-Boot eine Bubble trifft, brauchen wir eine Funktion, die den Abstand zwischen dem U-Boot und einer Bubble berechnen kann. Dazu holen wir uns die aktuellen Koordinaten von U-Boot und Bubble und wenden den Satz von Pythagoras an. Die dazu notwendige Wurzelfunktion (<code>sqrt</code>) importieren wir aus dem <code>math</code>-Package. Der Abstand a wird als Wert der Funktion ausgegeben.</p>
@@ -354,14 +354,14 @@ GAP = 100
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># HAUPTSCHLEIFE</span>
 score = 0
 <span style="color:#00f">while</span> true:
-  <span style="color:#00f">if</span> randint(1, 10) == 1:
+    <span style="color:#00f">if</span> randint(1, 10) == 1:
     erzeuge_bubble()
-  bewege_bubbles()
-  entferne_bubbles()
-  score += treffer()
-  <span style="color:#00f">print</span> (score)
-  window.update()
-  sleep(0.01)</code></pre></div>
+    bewege_bubbles()
+    entferne_bubbles()
+    score += treffer()
+    <span style="color:#00f">print</span> (score)
+    window.update()
+    sleep(0.01)</code></pre></div>
 <h2 id="zeit-und-punkte-anzeigen">Zeit und Punkte anzeigen</h2>
 
 <p>In der Endversion des Spiels soll die Zeit und die Punktanzahl in unserem Fenster angezeigt werden. Wir schreiben dazu <code>create_text</code> einen passenden Text in die linke obere Ecke unserer Leinwand. Die beiden Zahlen geben die x und y Koordinaten an, mit der Option <code>fill</code> wird die Textfarbe festgelegt. Für die Anzeige der aktuellen Zeit und Punkteanzahl erzeugen wir die Objekte <code>time_text</code> und <code>score_text</code>. Mit den Funktionen <code>zeige_punkte</code> und <code>zeige_zeit</code>, ändern wir diese Objekte so, dass immer der aktuelle Stand zu sehen ist. Achtung: Der Text muss immer vom Datentyp string sein. Da die Zeit und die Punkte Zahlen sind, müssen wir sie mit der Funktion <code>str</code> in einen string umwandeln.</p>

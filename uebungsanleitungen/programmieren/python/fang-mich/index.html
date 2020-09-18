@@ -251,19 +251,19 @@ hai_img = Image.open(<span style="color:#a31515">&#34;Hai.png&#34;</span>)</code
 FISH_GESCHW = 100
 FISH_R = 75
 <span style="color:#00f">def</span> move_fish(event):
-x, y = c.coords(fish)
-<span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
-    <span style="color:#00f">if</span> x &gt;= FISH_GESCHW:
-        c.move(fish, -FISH_GESCHW, 0)
-<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
-    <span style="color:#00f">if</span> x &lt;= B - FISH_GESCHW:
-        c.move(fish, FISH_GESCHW, 0)
-<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
-    <span style="color:#00f">if</span> y &gt;= FISH_GESCHW:
-        c.move(fish, 0, -FISH_GESCHW)
-<span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
-    <span style="color:#00f">if</span> y &lt;= H - FISH_GESCHW:
-        c.move(fish, 0, FISH_GESCHW)
+    x, y = c.coords(fish)
+    <span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
+        <span style="color:#00f">if</span> x &gt;= FISH_GESCHW:
+            c.move(fish, -FISH_GESCHW, 0)
+    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
+        <span style="color:#00f">if</span> x &lt;= B - FISH_GESCHW:
+            c.move(fish, FISH_GESCHW, 0)
+    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
+        <span style="color:#00f">if</span> y &gt;= FISH_GESCHW:
+            c.move(fish, 0, -FISH_GESCHW)
+    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
+        <span style="color:#00f">if</span> y &lt;= H - FISH_GESCHW:
+            c.move(fish, 0, FISH_GESCHW)
 window.bind(<span style="color:#a31515">&#34;&lt;Key&gt;&#34;</span>, move_fish)</code></pre></div></li>
 </ul>
 
