@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains the source code for the website of [CoderDojo Linz](https://linz.coderdojo.net). It is built with [Hugo](https://gohugo.io).
+This repository contains the source code for the website of [CoderDojo Linz](https://linz.coderdojo.net), It is built with [Hugo](https://gohugo.io).
 
 ## Branches
 
