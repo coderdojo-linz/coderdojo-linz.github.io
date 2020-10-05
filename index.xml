@@ -862,6 +862,16 @@ Dafür bitte unter &amp;ldquo;File&amp;rdquo; -&amp;gt; &amp;ldquo;Settings&amp;
     </item>
     
     <item>
+      <title></title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</guid>
+      <description>Space Invaders We will follow another amazing Tutorial by Ania Kubów to build our very own Space Invaders game. If you didn&amp;rsquo;t do so yet head to her Youtube channel and subscribe or give her a like because her content is amazing.
+Set up our files As usual we will use codesandbox.io for our implementation. The entrypoint for our website is our index.html file. In this file we need to add a link to our styles.</description>
+    </item>
+    
+    <item>
       <title>Adafruit NeoPixel Guide</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/adafruit-neopixel-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
