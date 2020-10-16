@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>p5.js on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/categories/p5.js/</link>
+    <description>Recent content in p5.js on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/categories/p5.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Regenbogen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/rainbow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/rainbow/</guid>
+      <description>Regenbogen Ziel der Übung Du malst eine Landschaft mit Blumen und Wolken und einem Regenbogen, der erscheint, wenn du die Maus nach rechts bewegst.
+
+   p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
+Öffne zum Starten den p5.js editor.
+Dort wird dir folgender Code angezeigt:</description>
+    </item>
+    
+  </channel>
+</rss>
