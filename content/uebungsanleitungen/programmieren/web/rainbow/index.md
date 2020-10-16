@@ -14,7 +14,7 @@ categories:
 
 Du malst eine Landschaft mit Blumen und Wolken und einem Regenbogen, der erscheint, wenn du die Maus nach rechts bewegst.
 
-{{< imgblock "img/rainbow.png" "Rainbow" >}}{{< /imgblock >}}
+{{< imgblock "img/rainbow.gif" "Rainbow" >}}{{< /imgblock >}}
 
 ## p5.js
 
