@@ -67,7 +67,7 @@ function draw() {
   strokeWeight(10);
   noFill();
   
-  let opacity = mouseX / 200;
+  let opacity = mouseX / 400;
   
   for (let i = 0; i < 6; i++) {
     stroke(360 / 6 * i, 100, 100, opacity);
@@ -94,7 +94,7 @@ function draw() {
   strokeWeight(10);
   noFill();
   
-  let opacity = mouseX / 200;
+  let opacity = mouseX / 400;
   
   for (let i = 0; i < 6; i++) {
     stroke(360 / 6 * i, 100, 100, opacity);
@@ -154,7 +154,7 @@ function draw() {
   strokeWeight(10);
   noFill();
   
-  let opacity = mouseX / 200;
+  let opacity = mouseX / 400;
   
   for (let i = 0; i < 6; i++) {
     stroke(360 / 6 * i, 100, 100, opacity);
@@ -210,7 +210,7 @@ function draw() {
   strokeWeight(10);
   noFill();
   
-  let opacity = mouseX / 200;
+  let opacity = mouseX / 400;
   
   for (let i = 0; i < 6; i++) {
     stroke(360 / 6 * i, 100, 100, opacity);
