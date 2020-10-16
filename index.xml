@@ -862,27 +862,6 @@ Dafür bitte unter &amp;ldquo;File&amp;rdquo; -&amp;gt; &amp;ldquo;Settings&amp;
     </item>
     
     <item>
-      <title></title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</guid>
-      <description>Space Invaders We will follow another amazing Tutorial by Ania Kubów to build our very own Space Invaders game. If you didn&amp;rsquo;t do so yet head to her Youtube channel and subscribe or give her a like because her content is amazing.
-Set up our files As usual we will use codesandbox.io for our implementation. The entrypoint for our website is our index.html file. In this file we need to add a link to our styles.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/tetris/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/tetris/</guid>
-      <description>Tetris In this session we will impelment a version of the TETRIS game based on a video by the amazin Ania Kubów. Check out her youtube channel &amp;ndash;&amp;gt; here &amp;lt;&amp;ndash; .
-Project setup and file linking We will need three files - a index.html that contains the markup of our website, an app.js file that contains our logic and a styles.css for styling.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;app.</description>
-    </item>
-    
-    <item>
       <title>Adafruit NeoPixel Guide</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/adafruit-neopixel-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1737,6 +1716,16 @@ Code Stand nach der ersten Übungseinheit Den Source Code Stand nach der ersten 
     </item>
     
     <item>
+      <title>Space Invaders</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</guid>
+      <description>Space Invaders We will follow another amazing Tutorial by Ania Kubów to build our very own Space Invaders game. If you didn&amp;rsquo;t do so yet head to her Youtube channel and subscribe or give her a like because her content is amazing.
+Set up our files As usual we will use codesandbox.io for our implementation. The entrypoint for our website is our index.html file. In this file we need to add a link to our styles.</description>
+    </item>
+    
+    <item>
       <title>Space Shooter</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1830,6 +1819,17 @@ Am oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen.
 Auf Wikipedia findest du eine Grafik zum Zehnfingersystem, die erklärt, welche Taste mit welchem Finger gedrückt werden soll.
 
    Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen schreibtrainer.</description>
+    </item>
+    
+    <item>
+      <title>Tetris</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/tetris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/tetris/</guid>
+      <description>Tetris In this session we will impelment a version of the TETRIS game based on a video by the amazin Ania Kubów. Check out her youtube channel &amp;ndash;&amp;gt; here &amp;lt;&amp;ndash; .
+Project setup and file linking We will need three files - a index.html that contains the markup of our website, an app.js file that contains our logic and a styles.css for styling.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;app.</description>
     </item>
     
     <item>
