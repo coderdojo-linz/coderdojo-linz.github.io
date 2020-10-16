@@ -2,6 +2,8 @@
 title: "ANTLR Hello World"
 description: "Lerne an einem einfachen Beispiel, wie man mit ANTLR eine eigene 'Programmiersprache' baut."
 level: 3
+img: "antlr.png"
+imgposition: "left top"
 ---
 
 # ANTLR Hello World

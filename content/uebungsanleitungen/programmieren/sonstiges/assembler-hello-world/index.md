@@ -3,6 +3,7 @@ title: Back to Basics - Assembler Hello World
 description: Lerne, wie ein Computer auf unterster Ebene funktioniert
 aliases:
       - /trainingsanleitungen/fundamentals/assembler-hello-world.html
+img: "assembler.png"
 ---
 
 # Erste Schritte mit Assembler-Programmierung

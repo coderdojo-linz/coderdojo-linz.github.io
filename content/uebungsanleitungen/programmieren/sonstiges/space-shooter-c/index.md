@@ -3,6 +3,7 @@ title: "Space Shooter in C"
 description: "Entwickle einen Retro Space-Shooter in C"
 aliases: 
 - /trainingsanleitungen/c/space-shooter.html
+img: "space-shooter.png"
 ---
 
 # Space Shooter in C
