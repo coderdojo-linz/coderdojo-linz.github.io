@@ -1,3 +1,13 @@
+---
+title: "Tetris"
+description: "In this session we will impelment a version of the TETRIS game based on a video by the amazin Ania Kubów."
+level: 2
+categories:
+- HTML
+- JavaScript
+- CSS
+---
+
 # Tetris 
 
 In this session we will impelment a version of the TETRIS game based on a video by the amazin Ania Kubów. Check out her youtube channel [ --> here <-- ](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw). 

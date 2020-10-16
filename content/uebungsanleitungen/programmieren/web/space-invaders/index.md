@@ -1,3 +1,13 @@
+---
+title: "Space Invaders"
+description: "We will follow another amazing Tutorial by Ania Kubów to build our very own Space Invaders game."
+level: 2
+categories:
+- HTML
+- JavaScript
+- CSS
+---
+
 # Space Invaders 
 
 We will follow another amazing Tutorial by [Ania Kubów](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw) to build our very own Space Invaders game. 
