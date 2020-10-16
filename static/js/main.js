@@ -164,15 +164,15 @@ function loadEvents(eventsTable) {
                     }
 
                     if (workshop.mentors && workshop.mentors.length && workshop.mentors[0] !== '-') {
-                    row += '<p><strong>Mentoren:</strong> ' + ((workshop.mentors && workshop.mentors.length) ? workshop.mentors.join(', ') : 'werden noch bekanntgegeben') + '</p>';
+                        row += '<p><strong>Mentoren:</strong> ' + ((workshop.mentors && workshop.mentors.length) ? workshop.mentors.join(', ') : 'werden noch bekanntgegeben') + '</p>';
                     }
 
                     if (workshop.zoom && workshop.zoom !== '-') {
-                    row += '<p><strong>Link zum Teilnehmen:</strong> ' + (workshop.zoom ? '<a href=\'' + workshop.zoom + '\' target=\'_blank\'>' + workshop.zoom + '</a>' : 'wird noch bekanntgegeben') + '</p>';
+                        row += '<p><strong>Link zum Teilnehmen:</strong> ' + (workshop.zoom ? '<a href=\'' + workshop.zoom + '\' target=\'_blank\'>' + workshop.zoom + '</a>' : 'wird noch bekanntgegeben') + '</p>';
                     }
 
                     if (workshop.zoomUser && workshop.zoomUser !== '-') {
-                    row += '<p><strong>Zoom User für Mentoren:</strong> ' + (workshop.zoomUser ? workshop.zoomUser.replace(/@linz.coderdojo.net/, '') : '') + '</p>';
+                        row += '<p><strong>Zoom User für Mentoren:</strong> ' + (workshop.zoomUser ? workshop.zoomUser.replace(/@linz.coderdojo.net/, '') : '') + '</p>';
                     }
 
                     row += '</div>';
@@ -211,4 +211,17 @@ $(document).ready(function () {
     if (eventsOverviewTable && eventsOverviewTable.length) {
         loadEventsOverview(eventsOverviewTable);
     }
+
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+    });
 });

@@ -10,12 +10,12 @@
 
 {{ partial "events-overview.html" . }}
 
-{{ partial "contact.html" (dict "context" . "title" "Kontakt" "text" "Hast du Fragen oder Anregungen?" "type" "CoderDojo Anfrage") }}
+{{ partial "newsletter.html" . }}
 
 {{ partial "coderdojos-austria.html" . }}
 
 {{ partial "coderdojo-international.html" . }}
 
-<!-- {{ partial "newsletter.html" . }} -->
+{{ partial "contact.html" (dict "context" . "title" "Kontakt" "text" "Hast du Fragen oder Anregungen?" "type" "CoderDojo Anfrage" "style" "secondary") }}
 
 {{ end }}

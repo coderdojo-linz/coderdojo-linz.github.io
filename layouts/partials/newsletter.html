@@ -2,27 +2,45 @@
 <section id="newsletter">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-xs-12 col-sm-12 col-lg-8 offset-lg-2">
                 <h2>Newsletter abonnieren</h2>
                 <p class="text-center">Im Newsletter informieren wir euch über alle neuen CoderDojo Veranstaltungen.</p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
-                <div class="form-group">
-                    <form action="#" method="POST">
+            <div class="col-xs-12 col-sm-12 col-lg-8 offset-lg-2">
+                <div id="mc_embed_signup" class="form-group">
+                    <form
+                        action="https://github.us11.list-manage.com/subscribe/post?u=94e838cb11a385c5eae673b11&amp;id=6b8e98ac5d"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                        class="needs-validation mb-4" target="_blank" novalidate>
                         <div class="input-field">
-                            <input type="email" class="form-control" placeholder="Emailadresse" name="email">
+                            <input type="email" value="" name="EMAIL" class="form-control"
+                                placeholder="Emailadresse" id="mce-EMAIL" required>
+                            <div class="invalid-feedback">Gib bitte eine gültige Emailadresse an.</div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Newsletter abonnieren</button>
+                        <div class="text-center mt-4">
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_94e838cb11a385c5eae673b11_6b8e98ac5d" tabindex="-1" value="">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="mc-embedded-subscribe">Newsletter
+                                abonnieren</button>
+                        </div>
                     </form>
 
-                    <div id="success">
-                        <p>{{ i18n "contactMessageSuccess" }}</p>
-                    </div>
-                    <div id="error">
-                        <p>{{ i18n "contactMessageError" }}</p>
+                    <div id="mce-responses" class="clear">
+                        <div id="success">
+                            <p class="responsealert alert-danger" id="mce-error-response" style="display:none"></p>
+                        </div>
+                        <div id="error">
+                            <p class="responsealert alert-success" id="mce-success-response" style="display:none"></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script
+        type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'TYPE'; ftypes[3] = 'dropdown'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 </section>

@@ -403,6 +403,11 @@ section#about {
     }
 }
 
+/* forms */
+p.alert-danger, p.alert-success {
+    padding: 12px 20px
+}
+
 /* events overview */
 section#events-overview {
     td {
