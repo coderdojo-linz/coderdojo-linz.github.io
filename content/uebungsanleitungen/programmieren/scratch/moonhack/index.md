@@ -26,11 +26,11 @@ Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/2367
 	</tr>
 	<tr>
 		<td>Hintergrund</td>
-		<td><a href="backdrop1.png">Hintergrund downloaden</a></td>
+		<td><a href="img/backdrop1.png">Hintergrund downloaden</a></td>
 	</tr>
 	<tr>
 		<td>Lunar Module</td>
-		<td><a href="Lunar_Module.sprite2">Figur downloaden</a></td>
+		<td><a href="img/Lunar_Module.sprite2">Figur downloaden</a></td>
 	</tr>
 </table>
 
