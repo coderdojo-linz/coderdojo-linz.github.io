@@ -91,6 +91,19 @@ Dort wird dir folgender Code angezeigt:</description>
     </item>
     
     <item>
+      <title>Snake mit p5.js</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-p5js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-p5js/</guid>
+      <description>Snake mit p5.js Ziel der Übung Du malst eine Landschaft mit Blumen und Wolken und einem Regenbogen, der erscheint, wenn du die Maus nach rechts bewegst.
+
+   p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
+Öffne zum Starten den p5.js editor.
+Dort wird dir folgender Code angezeigt:</description>
+    </item>
+    
+    <item>
       <title>Space Invaders</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
