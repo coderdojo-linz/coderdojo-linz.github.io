@@ -3,7 +3,6 @@ title: "Regenbogen"
 description: "In dieser Übung zeichnest du einen Regenboen."
 level: 1
 categories:
-- HTML
 - JavaScript
 - p5.js
 ---
