@@ -11,7 +11,7 @@ categories:
 
 ## Ziel der Übung
 
-Du malst eine Landschaft mit Blumen und Wolken und einem Regenbogen, der erscheint, wenn du die Maus nach rechts bewegst.
+In dieser Übung programmierst du das Spiel Snake mit p5.js.
 
 {{< imgblock "img/snake.png" "Snake" >}}{{< /imgblock >}}
 
