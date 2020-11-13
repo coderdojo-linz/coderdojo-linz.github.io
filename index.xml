@@ -1710,11 +1710,12 @@ Du kannst das Beispiel unter Windows, Linux oder MacOS bauen.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-p5js/</guid>
-      <description>Snake mit p5.js Ziel der Übung Du malst eine Landschaft mit Blumen und Wolken und einem Regenbogen, der erscheint, wenn du die Maus nach rechts bewegst.
+      <description>Snake mit p5.js Ziel der Übung In dieser Übung programmierst du das Spiel Snake mit p5.js.
 
    p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
 Öffne zum Starten den p5.js editor.
-Dort wird dir folgender Code angezeigt:</description>
+Dort wird dir folgender Code angezeigt:
+function setup() { createCanvas(400, 400); } function draw() { background(220); }  Variablen Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen.</description>
     </item>
     
     <item>
@@ -1768,6 +1769,19 @@ Bühne und Figuren anlegen  Verwende einen Sternenhimmel als Bühnenbild für de
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/space-shooter-c/</guid>
       <description>Space Shooter in C In dieser Übung werden wir ein relativ fortgeschrittenes Computerspiel in C entwickeln, welches im Terminalemulator &amp;ndash; unter Windows standardmäßig, CMD &amp;ndash; läuft. Wir werden im Terminal mithilfe von speziellen control codes (Ketten von escape charactern) das gesamte Spiel zeichnen und durch Tastendrücke auf dem Keyboard kontrollieren.
 Für diese Übung solltest du bereits einfache Programmierkentnisse haben, die Konzepte von Schleifen, Bedingungen und Assignments bzw. Variablen sollten nichts neues sein.</description>
+    </item>
+    
+    <item>
+      <title>Space Shooter mit p5.js</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/</guid>
+      <description>Space Shooter mit p5.js Ziel der Übung In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt.
+
+   p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
+Öffne zum Starten den p5.js editor.
+Dort wird dir folgender Code angezeigt:</description>
     </item>
     
     <item>
