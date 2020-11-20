@@ -147,7 +147,15 @@
 <li><a href="#variablen">Variablen</a></li>
 <li><a href="#grafiken-laden">Grafiken laden</a></li>
 <li><a href="#spielfeld-vorbereiten">Spielfeld vorbereiten</a></li>
+<li><a href="#spielfeld-updaten">Spielfeld updaten</a></li>
 <li><a href="#raumschiff">Raumschiff</a></li>
+<li><a href="#meteoriten">Meteoriten</a></li>
+<li><a href="#laser">Laser</a></li>
+<li><a href="#kollisionen-erkennen">Kollisionen erkennen</a></li>
+<li><a href="#explosion">Explosion</a></li>
+<li><a href="#sterne">Sterne</a></li>
+<li><a href="#game-over">Game Over</a></li>
+<li><a href="#source-code">Source Code</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -191,9 +199,9 @@
     &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> type=<span style="color:#a31515">&#34;text/css&#34;</span> href=<span style="color:#a31515">&#34;style.css&#34;</span>&gt;
     &lt;meta charset=<span style="color:#a31515">&#34;utf-8&#34;</span> /&gt;
   &lt;/head&gt;
-
+  
   &lt;body&gt;
-<span style="display:block;width:100%;background-color:#e5e5e5">    &lt;script src=<span style="color:#a31515">&#34;http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/transformer.js&#34;</span>&gt;&lt;/script&gt;
+<span style="display:block;width:100%;background-color:#e5e5e5">    &lt;script src=<span style="color:#a31515">&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/transformer.js&#34;</span>&gt;&lt;/script&gt;
 </span>    &lt;script src=<span style="color:#a31515">&#34;sketch.js&#34;</span>&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre></div>
@@ -223,12 +231,12 @@
 
 <p>Direkt darunter und noch über der Funktion <code>setup</code> fügen wir eine neue Funktion <code>preload</code> ein, mit der wir alle Grafiken für das Spiel laden:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> preload() {
-  spaceshipImg = loadImage(<span style="color:#a31515">&#39;http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/spaceship.png&#39;</span>);
-  asteroidImg = loadImage(<span style="color:#a31515">&#39;http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/asteroid.png&#39;</span>);
-  laserImg = loadImage(<span style="color:#a31515">&#39;http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot_0.png&#39;</span>);
+  spaceshipImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/spaceship.png&#39;</span>);
+  asteroidImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/asteroid.png&#39;</span>);
+  laserImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot_0.png&#39;</span>);
   
   <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 1; i &lt;= 10; i++) {
-    explosionImg.push(loadImage(<span style="color:#a31515">&#39;img/shot6_exp&#39;</span> + i.toString() + <span style="color:#a31515">&#39;.png&#39;</span>));
+    explosionImg.push(loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot6_exp&#39;</span> + i.toString() + <span style="color:#a31515">&#39;.png&#39;</span>));
   }
 }
 </code></pre></div>
@@ -241,19 +249,26 @@
 </span>}
 </code></pre></div>
 
+<h2 id="spielfeld-updaten">Spielfeld updaten</h2>
+
+<p>In der Funktion <code>draw</code> wird das Spielfeld regelmäßig upgedated. Dazu setzen wir in jedem Durchlauf die Hintergrundfarbe auf schwarz. Außerdem rufen wir eine neue Funktion zum Zeichnen des Raumschiffs auf, die wir gleich nachher noch anlegen werden.</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
+<span style="display:block;width:100%;background-color:#e5e5e5">  background(<span style="color:#a31515">&#39;black&#39;</span>);
+</span>  
+<span style="display:block;width:100%;background-color:#e5e5e5">  drawSpaceship();
+</span>}
+</code></pre></div>
+
 <h2 id="raumschiff">Raumschiff</h2>
 
-<p>Als erstes fügen wir eine neue Funktion zum Zeichnen und Steuern des Raumschiffs ein. Füge die Funktion am Ende des Codes ein:</p>
+<p>Nun fügen wir die neue Funktion zum Zeichnen und Steuern des Raumschiffs ein. Füge die Funktion am Ende des Codes ein:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> drawSpaceship() {
   <span style="color:#008000">// links und rechts bewegen
-</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (keyIsDown(LEFT_ARROW)) { 
-    <span style="color:#00f">if</span> (spaceshipX &gt;= 2) {
-      spaceshipX -= 2;
-    }
-  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyIsDown(RIGHT_ARROW)) { 
-    <span style="color:#00f">if</span> (spaceshipX &lt;= width - 2) {
-      spaceshipX += 2;
-    }
+</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (keyIsDown(LEFT_ARROW) &amp;&amp; spaceshipX &gt;= 2) {
+    spaceshipX -= 2;
+  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyIsDown(RIGHT_ARROW) &amp;&amp; spaceshipX &lt;= width - 2) {
+    spaceshipX += 2;
   }
   
   <span style="color:#008000">// rotieren
@@ -265,21 +280,292 @@
   
   <span style="color:#008000">// Spaceship zeichnen
 </span><span style="color:#008000"></span>  push();
-  
-  stroke(<span style="color:#a31515">&#39;white&#39;</span>);
-  fill(<span style="color:#a31515">&#39;gray&#39;</span>);
-  
   translate(spaceshipX, spaceshipY);
   rotate(rotation);
-
-  ellipse(0, -30, 40, 60);
-  rect(-20, -30, 40, 60);
-  triangle(-20, 30, -40, 30, -20, 0);
-  triangle(20, 30, 40, 30, 20, 0);
-  
+  image(spaceshipImg, -30, -47, 60, 94);
   pop();
 }
-</code></pre></div> </div>
+</code></pre></div>
+<h2 id="meteoriten">Meteoriten</h2>
+
+<p>Als nächstes lassen wir neue Asteroiden entstehen, die Richtung Raumschiff fallen. Die neue Funktion kannst du am Ende der Datei einfügen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> drawAsteroids() {
+  <span style="color:#008000">// neue Asteroiden generieren
+</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (frameCount % 120 === 0) {
+    asteroids.push({ x: random(0, width), y: 0, size: 10 });
+  }
+  
+  <span style="color:#008000">// Asteroiden zeichnen
+</span><span style="color:#008000"></span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; asteroids.length; i++) {
+    push();
+    translate(asteroids[i].x, asteroids[i].y)
+    image(asteroidImg, asteroids[i].size / -2, asteroids[i].size / -2, asteroids[i].size, asteroids[i].size);
+    pop();
+    
+    asteroids[i].y++;
+    asteroids[i].size += 0.05;
+  }
+}
+</code></pre></div>
+<p>Zusätzlich muss du die neue Funktion auch in der <code>draw</code> Funktion aufrufen:</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
+  background(<span style="color:#a31515">&#39;black&#39;</span>);
+  
+<span style="display:block;width:100%;background-color:#e5e5e5">  drawAsteroids();
+</span>  drawSpaceship();
+}
+</code></pre></div>
+
+<h2 id="laser">Laser</h2>
+
+<p>Als nächstes wollen wir mit der Leertaste Laser abfeuern. Dazu fügen wir die neue Funktion <code>keyPressed</code> ein, um neue Laser entstehen zu lassen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> keyPressed() {
+  <span style="color:#00f">if</span> (keyCode === 32) {
+    lasers.push({ x: spaceshipX, y: spaceshipY, rotation: rotation, age: 0 });
+  }
+}
+</code></pre></div>
+<p>Weiters brauchen wir eine neue Funktion <code>drawLasers</code>, um diese ins Spielfeld zu malen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> drawLasers() {
+  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; lasers.length; i++) {
+    push();
+    translate(lasers[i].x, lasers[i].y);
+    rotate(lasers[i].rotation);
+    <span style="color:#00f">let</span> imgNumber = Math.min(3, Math.floor(lasers[i].age / 3));
+    image(laserImg,  -6,  0,  12,  60);
+    pop();
+     
+    <span style="color:#008000">// neue Position berechnen
+</span><span style="color:#008000"></span>    lasers[i].x += 10 * sin(lasers[i].rotation);
+    lasers[i].y -= 10 * cos(lasers[i].rotation);
+    lasers[i].age++;
+  }
+  
+  <span style="color:#008000">// alte Laser entfernen
+</span><span style="color:#008000"></span>  lasers = lasers.filter(l =&gt; l.x &gt;= 0 &amp;&amp; l.x &lt;= width &amp;&amp; l.y &gt;= 0 &amp;&amp; l.y &lt;= height);
+}
+</code></pre></div>
+<p>Und auch in die <code>draw</code> Funktion müssen wir wieder einen Aufruf, zum Zeichnen der Laser einfügen:</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
+  background(<span style="color:#a31515">&#39;black&#39;</span>);
+  
+  drawAsteroids();
+<span style="display:block;width:100%;background-color:#e5e5e5">  drawLasers();
+</span>  drawSpaceship();
+}
+</code></pre></div>
+
+<h2 id="kollisionen-erkennen">Kollisionen erkennen</h2>
+
+<p>Um zu erkennen, ob ein Laser einen Meteoriten berührt, oder ob ein Meteorit das Raumschiff berührt, brauchen wir die folgenden drei Funktionen:</p>
+<pre><code>function detectCollisions() {
+  // Kollisionen von Asteroiden mit Lasern
+  let asteroidCollisions = [];
+  
+  for (let l = 0; l &lt; lasers.length; l++) {
+    for (let a = 0; a &lt; asteroids.length; a++) {
+      if (collideRectCircle(
+            lasers[l].x - 2, 
+            lasers[l].y - 20, 
+            4, 
+            20, 
+            asteroids[a].x, 
+            asteroids[a].y, 
+            asteroids[a].size)) {
+          asteroidCollisions.push({ laserIndex: l, asteroidIndex: a });
+          explosions.push({ x: lasers[l].x, y: lasers[l].y, duration: 0 });
+      }
+    }
+  }
+  
+  for (let i = 0; i &lt; asteroidCollisions.length; i++) {
+    lasers.splice(asteroidCollisions[i].laserIndex, 1);
+    asteroids.splice(asteroidCollisions[i].asteroidIndex, 1);
+  }
+  
+  // Kollisionen von Asteroiden mit dem Raumschiff
+  let spaceshipPolygon = getSpaceshipPolygon();
+ 
+  for (let i = 0; i &lt; asteroids.length &amp;&amp; !gameOver; i++) {
+    if (collideCirclePoly(
+      asteroids[i].x, 
+      asteroids[i].y, 
+      asteroids[i].size, spaceshipPolygon)) {
+      gameOver = true;
+    }
+  }
+}
+
+function getSpaceshipPolygon() {
+  let spaceshipPolygon = [];
+  addPointToPolygon(spaceshipPolygon, 0, -50);
+  addPointToPolygon(spaceshipPolygon, 20, -30);
+  addPointToPolygon(spaceshipPolygon, 20, 0);
+  addPointToPolygon(spaceshipPolygon, 25, 40);
+  addPointToPolygon(spaceshipPolygon, -25, 40);
+  addPointToPolygon(spaceshipPolygon, -20, 0);
+  addPointToPolygon(spaceshipPolygon, -20, -30);
+  return spaceshipPolygon;
+}
+
+function addPointToPolygon(polygon, x, y) {
+  push();
+  tf = new Transformer();
+  tf.rotate(rotation);
+  tf.translate(x, y);
+  polygon.push(createVector(spaceshipX + tf.x, spaceshipY + tf.y));
+  pop();
+}</code></pre>
+<p>Außerdem brauchen wir in der <code>draw</code> Methode einen Aufruf <code>detectCollisions()</code>:</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
+  background(<span style="color:#a31515">&#39;black&#39;</span>);
+  
+  drawAsteroids();
+  drawLasers();
+  drawSpaceship();
+
+<span style="display:block;width:100%;background-color:#e5e5e5">  detectCollisions();
+</span>}
+</code></pre></div>
+
+<h2 id="explosion">Explosion</h2>
+
+<p>Als nächsters folgt eine Funktion zum Zeichnen aller Explosionen:</p>
+<pre><code>function drawExplosions() {
+  for (let i = 0; i &lt; explosions.length; i++) {
+    push();
+    translate(explosions[i].x, explosions[i].y);
+    scale(2);
+    let imgNumber = Math.min(9, Math.floor(explosions[i].duration / 3));
+    image(explosionImg[imgNumber],  -24,  -24,  48,  48);
+    pop();
+    
+    explosions[i].duration++;
+  }
+  
+  explosions = explosions.filter(e =&gt; e.duration / 3 &lt;= 9);
+}</code></pre>
+<p>Auch diese Funtion wird wieder in der <code>draw</code> Methode aufgerufen:</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
+  background(<span style="color:#a31515">&#39;black&#39;</span>);
+  
+  drawAsteroids();
+  drawLasers();
+<span style="display:block;width:100%;background-color:#e5e5e5">  drawExplosions();
+</span>  drawSpaceship();
+
+  detectCollisions();
+}
+</code></pre></div>
+
+<h2 id="sterne">Sterne</h2>
+
+<p>Die Funktion zum Zeichnen der Sterne sieht so aus:</p>
+<pre><code>function drawStars() {
+  // nach einer Lösung von https://editor.p5js.org/amyxiao/sketches/S1qEhKf2Z
+  // alte Sterne löschen
+  stars = stars.filter(star =&gt; star.z &gt;= 0);
+  
+  // neue Sterne generieren
+  for (let i = 0; i &lt; frameCount / 600; i++) {
+    stars.push({
+      x: random(-width / 2, width / 2),
+      y: random(-height / 2, height / 2),
+      z: random(width)
+    });
+  }
+  
+  // Sterne zeichnen
+  push();
+  translate(width / 2, height / 2);
+  fill(&#39;white&#39;);
+  noStroke();
+  
+  let speed = frameCount / 600 + 1;
+  
+  for (let i = 0; i &lt; stars.length; i++) { 
+    let star = stars[i];
+    star.z = star.z - speed;
+    sx = star.x / star.z * width;
+    sy = star.y / star.z * height;
+    r = map(star.z, width, 0, 0, 8);
+    circle(sx, sy, r);
+  }
+  
+  pop();
+}</code></pre>
+<p>Auch diese Funtion wird wieder in der <code>draw</code> Methode aufgerufen:</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
+  background(<span style="color:#a31515">&#39;black&#39;</span>);
+  
+<span style="display:block;width:100%;background-color:#e5e5e5">  drawStars();
+</span>  drawAsteroids();
+  drawLasers();
+  drawExplosions();
+  drawSpaceship();
+
+  detectCollisions();
+}
+</code></pre></div>
+
+<h2 id="game-over">Game Over</h2>
+
+<p>Zu guter letzt müssen wir in der <code>draw</code> Methode noch erkennen, ob das Spiel schon verloren ist:</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
+  background(<span style="color:#a31515">&#39;black&#39;</span>);
+
+<span style="display:block;width:100%;background-color:#e5e5e5">  <span style="color:#00f">if</span> (gameOver) {
+</span><span style="display:block;width:100%;background-color:#e5e5e5">    textSize(40);
+</span><span style="display:block;width:100%;background-color:#e5e5e5">    textAlign(CENTER, CENTER)
+</span><span style="display:block;width:100%;background-color:#e5e5e5">    fill(<span style="color:#a31515">&#39;white&#39;</span>);
+</span><span style="display:block;width:100%;background-color:#e5e5e5">    text(<span style="color:#a31515">&#39;GAME OVER&#39;</span>, width / 2, height / 2);
+</span><span style="display:block;width:100%;background-color:#e5e5e5">    <span style="color:#00f">return</span>;
+</span><span style="display:block;width:100%;background-color:#e5e5e5">  }
+</span>  
+  drawStars();
+  drawAsteroids();
+  drawLasers();
+  drawExplosions();
+  drawSpaceship();
+
+  detectCollisions();
+}
+</code></pre></div>
+
+<h2 id="source-code">Source Code</h2>
+
+<p>Hier findest du den gesamten Source Code:</p>
+
+<ul>
+<li><a href="source/index.html" target="_blank">index.html</a></li>
+<li><a href="source/sketch.js" target="_blank">sketch.js</a></li>
+<li><a href="source/style.js" target="_blank">style.js</a></li>
+<li><a href="source/transformer.js" target="_blank">transformer.js</a></li>
+<li>img
+
+<ul>
+<li><a href="source/img/asteroid.png" target="_blank">asteroid.png</a></li>
+<li><a href="source/img/shot.png" target="_blank">shot.png</a></li>
+<li><a href="source/img/shot6_exp1.png" target="_blank">shot6_exp1.png</a></li>
+<li><a href="source/img/shot6_exp2.png" target="_blank">shot6_exp2.png</a></li>
+<li><a href="source/img/shot6_exp3.png" target="_blank">shot6_exp3.png</a></li>
+<li><a href="source/img/shot6_exp4.png" target="_blank">shot6_exp4.png</a></li>
+<li><a href="source/img/shot6_exp5.png" target="_blank">shot6_exp5.png</a></li>
+<li><a href="source/img/shot6_exp6.png" target="_blank">shot6_exp6.png</a></li>
+<li><a href="source/img/shot6_exp7.png" target="_blank">shot6_exp7.png</a></li>
+<li><a href="source/img/shot6_exp8.png" target="_blank">shot6_exp8.png</a></li>
+<li><a href="source/img/shot6_exp9.png" target="_blank">shot6_exp9.png</a></li>
+<li><a href="source/img/shot6_exp10.png" target="_blank">shot6_exp10.png</a></li>
+<li><a href="source/img/spaceship.png" target="_blank">spaceship.png</a></li>
+</ul></li>
+</ul>
+ </div>
         </div>
     </div>
 </section>  

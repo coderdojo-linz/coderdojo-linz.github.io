@@ -141,11 +141,11 @@ Project setup and file linking We will need three files - a index.html that cont
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/yeti-xmas/</guid>
-      <description> Yeti Xmas Game mit p5.js Ziel der Übung In dieser Übung programmierst du mit p5.js and Jump &amp;amp; Run Spiel.
-p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
+      <description>Yeti Xmas Game mit p5.js Ziel der Übung In dieser Übung programmierst du mit p5.js and Jump &amp;amp; Run Spiel.
+ p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
 Öffne zum Starten den p5.js editor.
 Dort wird dir folgender Code angezeigt:
-function setup() { createCanvas(400, 400); } function draw() { background(220); } </description>
+function setup() { createCanvas(400, 400); } function draw() { background(220); }  Anleitung Die Anleitung zum Yeti Spiel kommt in den nächsten Wochen &amp;hellip;</description>
     </item>
     
   </channel>
