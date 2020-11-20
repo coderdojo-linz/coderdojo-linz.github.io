@@ -11,9 +11,9 @@ categories:
 
 ## Ziel der Übung
 
-In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt.
+In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt. Mit den Pfeiltasten kannst du das Raumschiff nach links und rechts bewegen. Mit den Tasten `a` und `d` kannst du es drehen. Und mit der Leertaste kannst du Laser abfeuern, um die herunterfallenden Meteoriten zu zerstören.
 
-{{< imgblock "img/space-shooter.png" "Space Shooter" >}}{{< /imgblock >}}
+<iframe src="source/index.html" width="500" height="400" style="max-width: 100%" class="inline-game"></iframe>
 
 ## p5.js
 
@@ -33,9 +33,32 @@ function draw() {
 }
 ```
 
+## HTML
+
+Wähle auf der linke Seite zuerst die Datei `index.html` aus. Dort müssen wir noch die Verweise auf zwei weiter JavaScript Bibliotheken einfügen:
+
+{{< highlight html "hl_lines=6 13" >}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/p5.collide2d"></script>   
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <script src="http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/transformer.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+{{< /highlight >}}
+
 ## Variablen
 
-Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen. Füge die Variablen ganz am Anfang des Codes ein. Zeilen die mit `//` beginnen sind Kommentare, die sind nicht nötig, damit das Programm läuft:
+Wechsle jetzt zurück zur Datei `sketch.js`. Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen. Füge die Variablen ganz am Anfang des Codes ein. Zeilen die mit `//` beginnen sind Kommentare, die sind nicht nötig, damit das Programm läuft:
 
 ```js
 // x Position vom Raumschiff
@@ -57,15 +80,31 @@ const lasers = [];
 this.focus();
 ```
 
-## Spielfeld vorbereiten
+## Grafiken laden
 
-Für das Spielfeld nutzen wir die Funktion `setup`, die einmal beim Starten des Programms aufgerufen wird:
+Direkt darunter und noch über der Funktion `setup` fügen wir eine neue Funktion `preload` ein, mit der wir alle Grafiken für das Spiel laden:
 
 ```js
+function preload() {
+  spaceshipImg = loadImage('http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/spaceship.png');
+  asteroidImg = loadImage('http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/asteroid.png');
+  laserImg = loadImage('http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot_0.png');
+  
+  for (let i = 1; i <= 10; i++) {
+    explosionImg.push(loadImage('img/shot6_exp' + i.toString() + '.png'));
+  }
+}
+```
+
+## Spielfeld vorbereiten
+
+Für das Spielfeld nutzen wir die Funktion `setup`, die einmal beim Starten des Programms aufgerufen wird. Ändere in dieser Funktion die Breite des Spielfelds auf 500:
+
+{{< highlight js "hl_lines=2" >}}
 function setup() {
   createCanvas(500, 400);
 }
-```
+{{< /highlight >}}
 
 ## Raumschiff
 
