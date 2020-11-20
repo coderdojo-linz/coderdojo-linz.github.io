@@ -224,11 +224,8 @@ Set up our files As usual we will use codesandbox.io for our implementation. The
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/</guid>
-      <description>Space Shooter mit p5.js Ziel der Übung In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt.
-
-   p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
-Öffne zum Starten den p5.js editor.
-Dort wird dir folgender Code angezeigt:</description>
+      <description>Space Shooter mit p5.js Ziel der Übung In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt. Mit den Pfeiltasten kannst du das Raumschiff nach links und rechts bewegen. Mit den Tasten a und d kannst du es drehen. Und mit der Leertaste kannst du Laser abfeuern, um die herunterfallenden Meteoriten zu zerstören.
+ p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.</description>
     </item>
     
     <item>
@@ -296,6 +293,19 @@ Project setup and file linking We will need three files - a index.html that cont
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/angular-todo-list-with-firebase/</guid>
       <description>Todo Liste mit Angular Voraussetzungen  Aktuelle Version von Visual Studio Code  Projekt anlegen und starten  Öffne einen Command Prompt und installiere als erstes die Angular CLI: npm install -g @angular/cli Lege einen Ordner an, in dem dein Projekt liegen soll - z.B. angular-todo-list. Führe in diesem Ordner im Command Prompt folgendes Command aus um die neue Angular Applikation anzulegen: ng new todo-list-app --strict  Routing - yes Stylesheet format - SCSS  Wenn das Projekt fertig angelegt ist, wechsle in den generierten Ordner todo-list-app und öffne diesen in Visual Studio Code.</description>
+    </item>
+    
+    <item>
+      <title>Yeti Xmas Game mit p5.js</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/yeti-xmas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/yeti-xmas/</guid>
+      <description> Yeti Xmas Game mit p5.js Ziel der Übung In dieser Übung programmierst du mit p5.js and Jump &amp;amp; Run Spiel.
+p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
+Öffne zum Starten den p5.js editor.
+Dort wird dir folgender Code angezeigt:
+function setup() { createCanvas(400, 400); } function draw() { background(220); } </description>
     </item>
     
   </channel>

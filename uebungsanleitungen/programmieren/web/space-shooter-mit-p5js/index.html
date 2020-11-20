@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.62e770f194076018ad866df99f12b2fbc798a5a29a795561f8082fd4d3997b0e.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.92ecc0ed310c3b8c8955a638ab440b7c0f3bd73398a5e88132b552f6aa5a09e3.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -143,7 +143,9 @@
 <ul>
 <li><a href="#ziel-der-übung">Ziel der Übung</a></li>
 <li><a href="#p5-js">p5.js</a></li>
+<li><a href="#html">HTML</a></li>
 <li><a href="#variablen">Variablen</a></li>
+<li><a href="#grafiken-laden">Grafiken laden</a></li>
 <li><a href="#spielfeld-vorbereiten">Spielfeld vorbereiten</a></li>
 <li><a href="#raumschiff">Raumschiff</a></li>
 </ul></li>
@@ -156,32 +158,9 @@
 
 <h2 id="ziel-der-übung">Ziel der Übung</h2>
 
-<p>In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt.</p>
+<p>In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt. Mit den Pfeiltasten kannst du das Raumschiff nach links und rechts bewegen. Mit den Tasten <code>a</code> und <code>d</code> kannst du es drehen. Und mit der Leertaste kannst du Laser abfeuern, um die herunterfallenden Meteoriten zu zerstören.</p>
 
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/img/space-shooter.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-
+<iframe src="source/index.html" width="500" height="400" style="max-width: 100%" class="inline-game"></iframe>
 
 <h2 id="p5-js">p5.js</h2>
 
@@ -198,9 +177,30 @@
   background(220);
 }
 </code></pre></div>
+<h2 id="html">HTML</h2>
+
+<p>Wähle auf der linke Seite zuerst die Datei <code>index.html</code> aus. Dort müssen wir noch die Verweise auf zwei weiter JavaScript Bibliotheken einfügen:</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+&lt;html lang=<span style="color:#a31515">&#34;en&#34;</span>&gt;
+  &lt;head&gt;
+    &lt;script src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js&#34;</span>&gt;&lt;/script&gt;
+    &lt;script src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js&#34;</span>&gt;&lt;/script&gt;
+<span style="display:block;width:100%;background-color:#e5e5e5">    &lt;script src=<span style="color:#a31515">&#34;https://unpkg.com/p5.collide2d&#34;</span>&gt;&lt;/script&gt;   
+</span>    
+    &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> type=<span style="color:#a31515">&#34;text/css&#34;</span> href=<span style="color:#a31515">&#34;style.css&#34;</span>&gt;
+    &lt;meta charset=<span style="color:#a31515">&#34;utf-8&#34;</span> /&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+<span style="display:block;width:100%;background-color:#e5e5e5">    &lt;script src=<span style="color:#a31515">&#34;http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/transformer.js&#34;</span>&gt;&lt;/script&gt;
+</span>    &lt;script src=<span style="color:#a31515">&#34;sketch.js&#34;</span>&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+
 <h2 id="variablen">Variablen</h2>
 
-<p>Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen. Füge die Variablen ganz am Anfang des Codes ein. Zeilen die mit <code>//</code> beginnen sind Kommentare, die sind nicht nötig, damit das Programm läuft:</p>
+<p>Wechsle jetzt zurück zur Datei <code>sketch.js</code>. Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen. Füge die Variablen ganz am Anfang des Codes ein. Zeilen die mit <code>//</code> beginnen sind Kommentare, die sind nicht nötig, damit das Programm läuft:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// x Position vom Raumschiff
 </span><span style="color:#008000"></span><span style="color:#00f">let</span> spaceshipX = 250;
 <span style="color:#008000">// y Position vom Raumschiff
@@ -219,13 +219,28 @@
 <span style="color:#008000">// setzt den Focus aufs Spielfeld für die Tastatursteuerung
 </span><span style="color:#008000"></span><span style="color:#00f">this</span>.focus();
 </code></pre></div>
-<h2 id="spielfeld-vorbereiten">Spielfeld vorbereiten</h2>
+<h2 id="grafiken-laden">Grafiken laden</h2>
 
-<p>Für das Spielfeld nutzen wir die Funktion <code>setup</code>, die einmal beim Starten des Programms aufgerufen wird:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> setup() {
-  createCanvas(500, 400);
+<p>Direkt darunter und noch über der Funktion <code>setup</code> fügen wir eine neue Funktion <code>preload</code> ein, mit der wir alle Grafiken für das Spiel laden:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> preload() {
+  spaceshipImg = loadImage(<span style="color:#a31515">&#39;http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/spaceship.png&#39;</span>);
+  asteroidImg = loadImage(<span style="color:#a31515">&#39;http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/asteroid.png&#39;</span>);
+  laserImg = loadImage(<span style="color:#a31515">&#39;http://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot_0.png&#39;</span>);
+  
+  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 1; i &lt;= 10; i++) {
+    explosionImg.push(loadImage(<span style="color:#a31515">&#39;img/shot6_exp&#39;</span> + i.toString() + <span style="color:#a31515">&#39;.png&#39;</span>));
+  }
 }
 </code></pre></div>
+<h2 id="spielfeld-vorbereiten">Spielfeld vorbereiten</h2>
+
+<p>Für das Spielfeld nutzen wir die Funktion <code>setup</code>, die einmal beim Starten des Programms aufgerufen wird. Ändere in dieser Funktion die Breite des Spielfelds auf 500:</p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> setup() {
+<span style="display:block;width:100%;background-color:#e5e5e5">  createCanvas(500, 400);
+</span>}
+</code></pre></div>
+
 <h2 id="raumschiff">Raumschiff</h2>
 
 <p>Als erstes fügen wir eine neue Funktion zum Zeichnen und Steuern des Raumschiffs ein. Füge die Funktion am Ende des Codes ein:</p>
