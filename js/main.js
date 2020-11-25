@@ -139,7 +139,7 @@ function loadEvents(eventsTable) {
             if (event.workshops && event.workshops.length) {
                 event.workshops.forEach(workshop => {
                     row += '<div class=\'workshop\'>';
-                    row += '<h3><small><span class=\'d-inline d-sm-none\'>' + moment(workshop.begintime).format('DD.MM.YYYY') + '</span> ' + moment(workshop.begintime).format('HH:mm') + ' - ' + moment(workshop.endtime).format('HH:mm') + '</small><br/>' + workshop.title + '</h3>';
+                    row += '<h3 id="' + workshop.shortCode + '"><small><span class=\'d-inline d-sm-none\'>' + moment(workshop.begintime).format('DD.MM.YYYY') + '</span> ' + moment(workshop.begintime).format('HH:mm') + ' - ' + moment(workshop.endtime).format('HH:mm') + '</small><br/>' + workshop.title + '</h3>';
 
                     if (workshop.targetAudience && workshop.targetAudience !== '-') {
                         row += '<p><strong>Für wen:</strong> ' + converter.makeHtml(workshop.targetAudience) + '</p>';
@@ -189,6 +189,15 @@ function loadEvents(eventsTable) {
         });
 
         $('.loadingText').hide();
+
+        // scroll to hash parameter
+        if (window.location.hash) {
+            var workshop = window.location.hash.substr(1);
+            var selectedWorkshop = document.getElementById(workshop);
+            if (selectedWorkshop) {
+                selectedWorkshop.scrollIntoView();   
+            }
+        }
     });
 }
 
