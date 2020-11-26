@@ -1,8 +1,8 @@
 function setupYeti() {
     // yeti sprite
-    yeti = createSprite(width / 2, 330, 115, 143);
+    yeti = createSprite(width / 2, 300, 115, 143);
     yeti.scale = 0.3;
-    yeti.setCollider('rectangle', 0, 20, 115, 143);
+    yeti.setCollider('rectangle', 0, 0, 115, 280);
 
     // yeti animations
     const walkAnimation = new Animation('assets/yeti-walk-1.png', 'assets/yeti-walk-9.png');
@@ -27,16 +27,38 @@ function setupYeti() {
 function drawYeti() {
     yeti.velocity.y += gravity;
 
+    // stop animation
+    if (sky[0].position.x - skyImage.width / 2 === (config.levels[level - 1].length * 50 - width) * -1) {
+        yeti.changeAnimation('pause');
+        stop();
+    }
+
     // check collisions
-    yeti.collide(ground, _ => {
-        yeti.velocity.y = 0;
-        canJump = true;
+    yeti.collide(ground, (collision) => {
+        if (collision.touching.bottom) {
+            yeti.velocity.y = 0;
+            canJump = true;
+        } else if (collision.touching.top) { 
+            yeti.velocity.y = 0;
+        }
     });
 
     yeti.collide(traps, _ => {
-        yeti.changeAnimation('dead');
-        gameState = state.GAMEOVER;
-        stop();
+        if (gameState === state.RUNNING) {
+            yeti.changeAnimation('dead');
+            gameState = state.GAMEOVER;
+            stop();
+            initializeRestart();
+        }
+    });
+
+    yeti.collide(candy, _ => {
+        if (gameState === state.RUNNING) {
+            candy.remove();
+            gameState = state.FINISHED;
+            yeti.changeAnimation('pause');
+            initializeRestart();
+        }
     });
 
     // move
@@ -58,9 +80,7 @@ function drawYeti() {
 }
 
 function yetiKeyPressed() {
-    if (gameState == state.READY) {
-        start();
-    } else if (gameState == state.RUNNING) {
+    if (gameState == state.RUNNING) {
         if (keyCode === 32 && canJump) {
             yeti.velocity.y = jump;
             canJump = false;
