@@ -1,0 +1,24 @@
+{
+    "levels": [
+        {
+            "title": "Level 1",
+            "length": 20,
+            "traps": [
+                {
+                    "position": 10,
+                    "length": 1
+                },
+                {
+                    "position": 15,
+                    "length": 1
+                }
+            ],
+            "platforms": [
+                {
+                    "position": 14,
+                    "length": 3
+                }
+            ]
+        }
+    ]
+}
