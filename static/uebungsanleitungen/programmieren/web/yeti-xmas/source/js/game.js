@@ -1,14 +1,15 @@
 const state = {
-    READY: 'ready',
-    RUNNING: 'running',
-    GAMEOVER: 'gameover',
-    FINISHED: 'finished',
-    RESTART: 'restart'
+    READY: 'Ready',
+    RUNNING: 'Running',
+    GAMEOVER: 'Game Over',
+    LEVELFINISHED: 'Level Finished',
+    FINISHED: 'Finished',
+    RESTART: 'Restart'
 };
 
 // sprites
 let ground, yeti, sky, btnStart, candy;
-let speed = 1;
+let speed = 1.5;
 let yetiSpeed = 3;
 let gravity = 0.3;
 let jump = -10;
@@ -52,12 +53,7 @@ function setup() {
     btnStart.scale = 0.5;
     btnStart.onMousePressed = () => {
         if (btnStart.visible) {
-            if (gameState == state.RESTART || gameState == state.FINISHED) {
-                gameState = state.READY;
-                restart();
-            } else {
-                start();
-            }
+            start();
         }
     }
 }
@@ -69,7 +65,7 @@ function draw() {
     drawSprites();
 
     fill('white');
-    text('State: ' + gameState.toString(), 10, 20);
+    text('State: ' + gameState.toString() + '   Level: ' + level.toString(), 10, 20);
 
     if (gameState === state.GAMEOVER) {
         fill('red');
@@ -77,6 +73,18 @@ function draw() {
         textStyle(BOLD);
         textAlign(CENTER, CENTER);
         text('GAME OVER', width / 2, height / 2);
+    } else if (gameState === state.LEVELFINISHED) {
+        fill('#a0e302');
+        textSize(60);
+        textStyle(BOLD);
+        textAlign(CENTER, CENTER);
+        text('LEVEL DONE', width / 2, height / 2);
+    } else if (gameState === state.FINISHED) {
+        fill('#a0e302');
+        textSize(60);
+        textStyle(BOLD);
+        textAlign(CENTER, CENTER);
+        text('YOU WON!!!', width / 2, height / 2);
     }
 }
 
@@ -92,10 +100,10 @@ function start() {
     gameState = state.RUNNING;
     btnStart.visible = false;
 
-    sky.forEach(i => i.velocity.x = -1);
-    ground.forEach(i => i.velocity.x = -1);
-    traps.forEach(i => i.velocity.x = -1);
-    candy.velocity.x = -1;
+    sky.forEach(i => i.velocity.x = speed * -1);
+    ground.forEach(i => i.velocity.x = speed * -1);
+    traps.forEach(i => i.velocity.x = speed * -1);
+    candy.velocity.x = speed * -1;
 
     yeti.changeAnimation('walk');
 }
@@ -109,7 +117,12 @@ function stop() {
 
 function initializeRestart() {
     setTimeout(() => {
+        if (gameState === state.LEVELFINISHED) {
+            level++;
+        }
+
         gameState = state.RESTART;
+        restart();
         btnStart.visible = true;
     }, 3000);
 }

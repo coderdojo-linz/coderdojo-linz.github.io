@@ -68,6 +68,10 @@ Hier findest du den gesamten Source Code:
 - css
   - [style.css](source/css/style.css)
 - js
+  - [config.json](source/js/config.json)
+  - [game.js](source/js/game.js)
+  - [ground.js](source/js/ground.js)
   - [p5-play.js](source/js/p5-play.js)
-  - [sketch.js](source/js/sketch.js)
+  - [sky.js](source/js/sky.js)
+  - [yeti.js](source/js/yeti.js)
 

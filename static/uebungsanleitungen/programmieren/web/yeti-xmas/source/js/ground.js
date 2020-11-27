@@ -2,7 +2,7 @@ function setupGround() {
     // ground sprites
     ground = new Group();
 
-    for (let i = 0; i < config.levels[level - 1].length * 50; i += 50) {
+    for (let i = 0; i < config.levels[level - 1].length * 50 + width / 2; i += 50) {
         let item = createSprite(i + 50 / 2, height - 25);
         item.addImage(earthImage);
         item.immovable = true;
