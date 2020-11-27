@@ -4,52 +4,25 @@
             "title": "Level 1",
             "length": 20,
             "traps": [
-                {
-                    "position": 10,
-                    "length": 1
-                },
-                {
-                    "position": 15,
-                    "length": 1
-                }
+                { "position": 10, "length": 1 },
+                { "position": 15, "length": 1 }
             ],
             "platforms": [
-                {
-                    "position": 14,
-                    "length": 3
-                }
+                { "position": 14, "length": 3 }
             ]
         },
         {
             "title": "Level 2",
             "length": 30,
             "traps": [
-                {
-                    "position": 9,
-                    "length": 2
-                },
-                {
-                    "position": 13,
-                    "length": 5
-                },
-                {
-                    "position": 18,
-                    "length": 1
-                },
-                {
-                    "position": 22,
-                    "length": 1
-                }
+                { "position": 9, "length": 2 },
+                { "position": 13, "length": 5 },
+                { "position": 18, "length": 1 },
+                { "position": 22, "length": 1 }
             ],
             "platforms": [
-                {
-                    "position": 14,
-                    "length": 3
-                },
-                {
-                    "position": 28,
-                    "length": 3
-                }
+                { "position": 14, "length": 3 },
+                { "position": 28, "length": 3 }
             ]
         }
     ]
