@@ -46,6 +46,7 @@ Hier findest du den gesamten Source Code:
   - [background.png](source/assets/background.png)
   - [earth.png](source/assets/earth.png)
   - [surface-danger.png](source/assets/surface-danger.png)
+  - [surface-earth.png](source/assets/surface-earth.png)
   - [surface.png](source/assets/surface.png)
   - [yeti-dead-1.png](source/assets/yeti-dead-1.png)
   - [yeti-dead-2.png](source/assets/yeti-dead-2.png)
