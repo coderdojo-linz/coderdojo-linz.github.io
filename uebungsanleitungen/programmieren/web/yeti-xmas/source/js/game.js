@@ -9,7 +9,7 @@ const state = {
 
 // sprites
 let ground, yeti, sky, btnStart, candy;
-let speed = 1.5;
+let speed = 2;
 let yetiSpeed = 3;
 let gravity = 0.3;
 let jump = -10;
@@ -61,12 +61,21 @@ function setup() {
 function draw() {
     clear();
     drawSky();
+
+    // level
+    textSize(12);
+    textStyle(BOLD);
+    noStroke();
+    fill('#02b7e3');
+    rect(0, 0, width, 30);
+    fill('white');
+    text('Level: ' + level.toString() + '     State: ' + gameState.toString(), 10, 20);
+
+    // sprites
     drawYeti();
     drawSprites();
 
-    fill('white');
-    text('State: ' + gameState.toString() + '   Level: ' + level.toString(), 10, 20);
-
+    // game state
     if (gameState === state.GAMEOVER) {
         fill('red');
         textSize(60);
@@ -91,7 +100,7 @@ function draw() {
 function keyPressed() {
     yetiKeyPressed();
 
-    if (gameState == state.READY || gameState == state.RESTART) {
+    if (keyCode === 32 && (gameState == state.READY || gameState == state.RESTART)) {
         start();
     }
 }
@@ -109,31 +118,31 @@ function start() {
 }
 
 function stop() {
+    // stop all sprites
     sky.forEach(i => i.velocity.x = 0);
     ground.forEach(i => i.velocity.x = 0);
     traps.forEach(i => i.velocity.x = 0);
+    yeti.velocity.x = 0;
     candy.velocity.x = 0;
 }
 
-function initializeRestart() {
+function restart() {
     setTimeout(() => {
         if (gameState === state.LEVELFINISHED) {
             level++;
         }
 
         gameState = state.RESTART;
-        restart();
+
+        sky.removeSprites();
+        ground.removeSprites();
+        traps.removeSprites();
+        yeti.remove();
+        candy.remove();
+        btnStart.remove();
+
+        setup();
+
         btnStart.visible = true;
     }, 3000);
-}
-
-function restart() {
-    sky.removeSprites();
-    ground.removeSprites();
-    traps.removeSprites();
-    yeti.remove();
-    candy.remove();
-    btnStart.remove();
-
-    setup();
 }
