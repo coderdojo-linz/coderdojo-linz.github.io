@@ -1,7 +1,7 @@
 function setupYeti() {
     // yeti sprite
     yeti = createSprite(width / 4, 300, 115, 143);
-    yeti.scale = 0.3;
+    yeti.scale = 40 / yeti.height;
     yeti.setCollider('rectangle', 0, 0, 115, 280);
 
     // yeti animations
@@ -13,7 +13,8 @@ function setupYeti() {
     runAnimation.frameDelay = 1;
     yeti.addAnimation('run', runAnimation);
 
-    const pauseAnimation = new Animation('assets/yeti-walk-1.png');
+    const pauseAnimation = new Animation('assets/yeti-idle-1.png', 'assets/yeti-idle-9.png');
+    pauseAnimation.frameDelay = 7;
     yeti.addAnimation('pause', pauseAnimation);
 
     const deadAnimation = new Animation('assets/yeti-dead-1.png', 'assets/yeti-dead-9.png');
@@ -48,7 +49,7 @@ function drawYeti() {
             yeti.changeAnimation('dead');
             gameState = state.GAMEOVER;
             stop();
-            initializeRestart();
+            restart();
         }
     });
 
@@ -62,7 +63,7 @@ function drawYeti() {
                 gameState = state.FINISHED;
             } else {
                 gameState = state.LEVELFINISHED;
-                initializeRestart();
+                restart();
             }
         }
     });
