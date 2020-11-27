@@ -1,6 +1,6 @@
 function setupYeti() {
     // yeti sprite
-    yeti = createSprite(width / 2, 300, 115, 143);
+    yeti = createSprite(width / 4, 300, 115, 143);
     yeti.scale = 0.3;
     yeti.setCollider('rectangle', 0, 0, 115, 280);
 
@@ -28,7 +28,7 @@ function drawYeti() {
     yeti.velocity.y += gravity;
 
     // stop animation
-    if (sky[0].position.x - skyImage.width / 2 === (config.levels[level - 1].length * 50 - width) * -1) {
+    if (sky[0].position.x - width / 2 < (config.levels[level - 1].length * 50 - width) * -1) {
         yeti.changeAnimation('pause');
         stop();
     }
@@ -38,7 +38,7 @@ function drawYeti() {
         if (collision.touching.bottom) {
             yeti.velocity.y = 0;
             canJump = true;
-        } else if (collision.touching.top) { 
+        } else if (collision.touching.top) {
             yeti.velocity.y = 0;
         }
     });
@@ -55,9 +55,15 @@ function drawYeti() {
     yeti.collide(candy, _ => {
         if (gameState === state.RUNNING) {
             candy.remove();
-            gameState = state.FINISHED;
+            stop();
             yeti.changeAnimation('pause');
-            initializeRestart();
+
+            if (level === config.levels.length) {
+                gameState = state.FINISHED;
+            } else {
+                gameState = state.LEVELFINISHED;
+                initializeRestart();
+            }
         }
     });
 
