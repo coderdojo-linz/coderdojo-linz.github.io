@@ -24,3 +24,7 @@ Beim Playground hast du Gelegenheit, im Umfeld von anderen jungen Codern selbst�
 {{< event/type "Classroom" >}}
 CoderDojo Classroom besteht aus mehreren Terminen, die aufeinander aufbauen. Wenn du dich zum CoderDojo Classroom anmeldest, solltest du dann bei allen Terminen dabei sein.
 {{< /event/type >}}
+
+{{< event/type "Advent of Code" >}}
+Advent of Code ist ein Adventkalender mit kleinen Programmierrätseln. Täglich gibt es eine neue Aufgabe zu lösen. Wir werden uns erstmals am 1.Dezember um 18:30 Uhr online treffen, um gemeinsam das erste Rätsel zu lösen.
+{{< /event/type >}}
