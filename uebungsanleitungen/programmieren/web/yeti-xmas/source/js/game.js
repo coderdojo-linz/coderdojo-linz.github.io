@@ -69,7 +69,7 @@ function draw() {
     fill('#02b7e3');
     rect(0, 0, width, 30);
     fill('white');
-    text('Level: ' + level.toString() + '     State: ' + gameState.toString(), 10, 20);
+    text(config.levels[level - 1].title + '     State: ' + gameState.toString(), 10, 20);
 
     // sprites
     drawYeti();
