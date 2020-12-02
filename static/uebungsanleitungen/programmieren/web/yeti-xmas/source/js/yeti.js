@@ -14,7 +14,7 @@ function setupYeti() {
     yeti.addAnimation('run', runAnimation);
 
     const pauseAnimation = new Animation('assets/yeti-idle-1.png', 'assets/yeti-idle-9.png');
-    pauseAnimation.frameDelay = 7;
+    pauseAnimation.frameDelay = 10;
     yeti.addAnimation('pause', pauseAnimation);
 
     const deadAnimation = new Animation('assets/yeti-dead-1.png', 'assets/yeti-dead-9.png');
@@ -61,7 +61,7 @@ function drawYeti() {
 
             if (level === config.levels.length) {
                 gameState = state.FINISHED;
-            } else {
+            } else { 
                 gameState = state.LEVELFINISHED;
                 restart();
             }

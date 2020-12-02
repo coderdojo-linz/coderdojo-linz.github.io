@@ -1,7 +1,7 @@
 {
     "levels": [
         {
-            "title": "Level 1",
+            "title": "Level 1 - Warm Up",
             "length": 20,
             "traps": [
                 { "position": 10, "length": 1 },
@@ -12,7 +12,7 @@
             ]
         },
         {
-            "title": "Level 2",
+            "title": "Level 2 - Still Easy",
             "length": 30,
             "traps": [
                 { "position": 9, "length": 2 },
