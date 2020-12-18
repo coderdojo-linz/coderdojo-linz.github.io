@@ -1,3 +1,12 @@
+let walkAnimation, runAnimation, pauseAnimation, deadAnimation;
+
+function preloadYeti() {
+    walkAnimation = new Animation('assets/yeti-walk-1.png', 'assets/yeti-walk-9.png');
+    runAnimation = new Animation('assets/yeti-walk-1.png', 'assets/yeti-walk-9.png');
+    pauseAnimation = new Animation('assets/yeti-idle-1.png', 'assets/yeti-idle-9.png');
+    deadAnimation = new Animation('assets/yeti-dead-1.png', 'assets/yeti-dead-9.png');
+}
+
 function setupYeti() {
     // yeti sprite
     yeti = createSprite(width / 4, 300, 115, 143);
@@ -5,19 +14,15 @@ function setupYeti() {
     yeti.setCollider('rectangle', 0, 0, 115, 280);
 
     // yeti animations
-    const walkAnimation = new Animation('assets/yeti-walk-1.png', 'assets/yeti-walk-9.png');
     walkAnimation.frameDelay = 5;
     yeti.addAnimation('walk', walkAnimation);
 
-    const runAnimation = new Animation('assets/yeti-walk-1.png', 'assets/yeti-walk-9.png');
     runAnimation.frameDelay = 1;
     yeti.addAnimation('run', runAnimation);
 
-    const pauseAnimation = new Animation('assets/yeti-idle-1.png', 'assets/yeti-idle-9.png');
     pauseAnimation.frameDelay = 10;
     yeti.addAnimation('pause', pauseAnimation);
 
-    const deadAnimation = new Animation('assets/yeti-dead-1.png', 'assets/yeti-dead-9.png');
     deadAnimation.frameDelay = 3;
     deadAnimation.looping = false;
     yeti.addAnimation('dead', deadAnimation);
@@ -44,7 +49,7 @@ function drawYeti() {
         }
     });
 
-    yeti.collide(traps, _ => {
+    yeti.overlap(traps, _ => {
         if (gameState === state.RUNNING) {
             yeti.changeAnimation('dead');
             gameState = state.GAMEOVER;
@@ -53,7 +58,14 @@ function drawYeti() {
         }
     });
 
-    yeti.collide(candy, _ => {
+    yeti.overlap(stars, (spriteA, spriteB) => {
+        if (gameState === state.RUNNING) {
+            spriteB.remove();
+            points++;
+        }
+    });
+
+    yeti.overlap(candy, _ => {
         if (gameState === state.RUNNING) {
             candy.remove();
             stop();
@@ -63,8 +75,9 @@ function drawYeti() {
                 gameState = state.FINISHED;
             } else { 
                 gameState = state.LEVELFINISHED;
-                restart();
             }
+
+            restart();
         }
     });
 

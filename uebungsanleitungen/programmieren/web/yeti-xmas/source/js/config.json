@@ -8,7 +8,8 @@
                 { "position": 15, "length": 1 }
             ],
             "platforms": [
-                { "position": 14, "length": 3 }
+                { "position": 14, "length": 3 },
+                { "position": 20, "length": 2 }
             ]
         },
         {
