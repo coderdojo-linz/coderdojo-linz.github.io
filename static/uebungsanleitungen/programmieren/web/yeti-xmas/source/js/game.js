@@ -20,6 +20,7 @@ let sceneWidth = 1000;
 let gameState = state.READY;
 let config;
 let level = 1;
+let points = 0;
 
 this.focus();
 
@@ -32,6 +33,9 @@ function preload() {
     btnStartImage = loadImage('assets/btn-start.png');
     candyImage = loadImage('assets/candy.png');
 
+    preloadStar();
+    preloadYeti();
+
     config = loadJSON('js/config.json');
 }
 
@@ -40,6 +44,7 @@ function setup() {
 
     setupSky();
     setupGround();
+    setupStar();
     setupYeti();
 
     // candy sprite
@@ -69,9 +74,10 @@ function draw() {
     fill('#02b7e3');
     rect(0, 0, width, 30);
     fill('white');
-    text(config.levels[level - 1].title + '     State: ' + gameState.toString(), 10, 20);
+    text(config.levels[level - 1].title + '     State: ' + gameState.toString() + '     Points: ' + points.toString(), 10, 20);
 
     // sprites
+    drawStar();
     drawYeti();
     drawSprites();
 
@@ -112,6 +118,7 @@ function start() {
     sky.forEach(i => i.velocity.x = speed * -1);
     ground.forEach(i => i.velocity.x = speed * -1);
     traps.forEach(i => i.velocity.x = speed * -1);
+    stars.forEach(i => i.velocity.x = speed * -1);
     candy.velocity.x = speed * -1;
 
     yeti.changeAnimation('walk');
@@ -122,6 +129,7 @@ function stop() {
     sky.forEach(i => i.velocity.x = 0);
     ground.forEach(i => i.velocity.x = 0);
     traps.forEach(i => i.velocity.x = 0);
+    stars.forEach(i => i.velocity.x = 0);
     yeti.velocity.x = 0;
     candy.velocity.x = 0;
 }
@@ -130,6 +138,8 @@ function restart() {
     setTimeout(() => {
         if (gameState === state.LEVELFINISHED) {
             level++;
+        } else if (gameState === state.FINISHED) {
+            level = 1;
         }
 
         gameState = state.RESTART;

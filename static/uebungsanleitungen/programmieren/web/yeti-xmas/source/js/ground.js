@@ -19,10 +19,13 @@ function setupGround() {
         ground.add(item);
     }
 
+    // platform sprites
     for (let i = 0; i < config.levels[level - 1].platforms.length; i++) {
         let platformConfig = config.levels[level - 1].platforms[i];
         for (let y = 0; y < platformConfig.length; y++) {
-            let platform = createSprite(platformConfig.position * 50 - 25 + y * 50, height - 250);
+            let platform = createSprite(
+                platformConfig.position * 50 - 25 + y * 50,
+                height - 250);
             platform.addImage(surfaceImage);
             platform.immovable = true;
             ground.add(platform);
@@ -35,10 +38,12 @@ function setupGround() {
     for (let i = 0; i < config.levels[level - 1].traps.length; i++) {
         let trapConfig = config.levels[level - 1].traps[i];
         for (let y = 0; y < trapConfig.length; y++) {
-            let trap = createSprite(trapConfig.position * 50 - 25 + y * 50, height - 75 - trapImage.height / 2);
+            let trap = createSprite(
+                trapConfig.position * 50 - 25 + y * 50,
+                height - 75 - trapImage.height / 2);
             trap.addImage(trapImage);
             trap.immovable = true;
             traps.add(trap);
         }
-    } 
+    }
 }
