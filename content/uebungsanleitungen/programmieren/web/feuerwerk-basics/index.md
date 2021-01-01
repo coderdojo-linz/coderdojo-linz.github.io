@@ -337,3 +337,5 @@ function draw(p: p5) {
 {{< /highlight >}}
 
 {{< imgblock "img/happy-new-year.png" "Happy New Year" >}}{{< /imgblock >}}
+
+Das fertige Projekt kannst du dir unter [https://stackblitz.com/edit/feuerwerk-basics-ziel?file=index.ts](https://stackblitz.com/edit/feuerwerk-basics-ziel?file=index.ts) ansehen.
