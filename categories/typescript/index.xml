@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Feuerwerk-Simulator</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/feuerwerk-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/feuerwerk-basics/</guid>
+      <description>Feuerwerksimulator (für AnfängerInnen) Ziel der Übung Heute wollen wir gemeinsam einen Feuerwerk-Simulator programmieren. Dabei kannst du das Tippen von Code auf der Tastatur üben und lernst Grundlagen der Programmierung wie Variablen, Schleifen und Funktionen kennen.
+Du solltest für diese Übung schon ein wenig Programmiererfahrung mit einer Blockprogrammiersprache wie Scratch oder Snap! haben. Falls du noch nie Programmcode eingetippt hast, solltest du auch etwas Geduld mitbringen. Es ist am Anfang nicht immer leicht, die vielen Sonderzeichen im Code auf der Tastatur zu finden.</description>
+    </item>
+    
+    <item>
       <title>Space Shooter mit Phaser.io</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
