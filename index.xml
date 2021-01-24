@@ -1930,6 +1930,19 @@ Notwendige Software Wir verwenden für Online CoderDojos die Webmeeting-Plattfor
     </item>
     
     <item>
+      <title>Virus-Buster</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/virus-buster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/virus-buster/</guid>
+      <description>Figuren anlegen Als erstes musst du deine Spielelemente importieren, die du hier herunterladen kannst.
+Du benötigst:
+ das bösartige Virus (bitte Größe auf 20 einstellen) deine Injektionsspritze als Waffe     Solltest du das Spiel noch verfeinern wollen, kannst du auch gleich
+ deine Munition     herunterladen.
+Um dein Spiel auch optisch ansprechend zu gestalten ist ein passender Hintergrund sehr hilfreich. Such dir einfach ein Bühnenbild aus der Bibliothek aus.</description>
+    </item>
+    
+    <item>
       <title>Von Scratch zu Python</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/von-scratch-zu-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
