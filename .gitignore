@@ -3,3 +3,5 @@ public/
 node_modules/
 resources/_gen/
 _site/
+.vscode/
+obj/

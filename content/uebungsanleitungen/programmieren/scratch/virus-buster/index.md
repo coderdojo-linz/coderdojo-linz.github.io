@@ -101,4 +101,4 @@ Bei den Hustentönen muss nicht jedesmal der gleiche Ton verwendet werden. Du ka
 Ausserdem verwenden wir die Figur *"Vaccines"* noch nicht. Kannst du dein Skript so erweitern, dass nur 3 Spritzen verabreicht werden können bevor du z.B. 2 Sekunden warten musst?
 
 ## Ausprobieren
-Wenn du das Spiel ausprobieren möchtest, kannst du es [hier herunterladen](assets/virus_buster_v1.sp3).
+Wenn du das Spiel ausprobieren möchtest, kannst du es [hier herunterladen](assets/virus_buster_v1.sb3).
