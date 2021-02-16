@@ -1,4 +1,4 @@
-{{ define "main" }} 
+{{ define "main" }}
 
 <section id="mentors" class="mentors">
     <div class="container">
@@ -6,8 +6,8 @@
             <div class="col">
                 <h1>Unsere Mentoren</h1>
             </div>
-        </div> 
-        
+        </div>
+
         {{ range $index, $element := (.Page.Pages.ByParam "title") }}
         <!-- <div class="row">
             <div class="col">
@@ -16,7 +16,8 @@
         </div> -->
         <div class="row">
             <div class="col-12"> {{ if ne $index 0 }}
-                <hr class="full"> {{ end }} </div>
+                <hr class="full"> {{ end }}
+            </div>
         </div>
         <div class="row">
             <div class="col order-last order-sm-first">
@@ -39,8 +40,82 @@
             <div class="col"> {{ .Content | safeHTML}} </div>
         </div>
     </div>
-</section> 
+</section>
 
-{{ partial "contact.html" (dict "context" . "title" "Kontakt" "text" "Willst du zu einem der nächsten Termine vorbeikommen? Oder hast du andere Fragen?" "type" "CoderDojo Mentoren Anfrage") }}
+{{ partial "contact.html" (dict "context" . "title" "Kontakt" "text" "Willst du zu einem der nächsten Terminevorbeikommen? Oder hast du andere Fragen?" "type" "CoderDojo Mentoren Anfrage") }}
+
+<section id="board" class="secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-8 offset-lg-2">
+                <h2><a id="board"></a>Vorstand</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card board">
+                        <div class="card-img"><img class="card-img-top" src="/img/mentoren/matthias-ableidinger.jpg" /></div>
+                        <div class="card-title">Matthias Ableidinger</div>
+                        <div class="card-text">Schriftführer</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card board">
+                        <div class="card-img"><img class="card-img-top" src="/img/mentoren/pia-gerhofer.jpg" /></div>
+                        <div class="card-title">Pia Gerhofer</div>
+                        <div class="card-text">Schriftführer Stv.</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card board">
+                        <div class="card-img"><img class="card-img-top" src="/img/mentoren/karin-huber.jpg" /></div>
+                        <div class="card-title">Karin Huber</div>
+                        <div class="card-text">Obmann Stv.</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card board">
+                        <div class="card-img"><img class="card-img-top" src="/img/mentoren/elisabeth-rosemann.jpg" />
+                        </div>
+                        <div class="card-title">Elisabeth Rosemann</div>
+                        <div class="card-text">Kassierin</div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card board">
+                        <div class="card-img"><img class="card-img-top" src="/img/mentoren/raphael-schwarz.png" /></div>
+                        <div class="card-title">Raphael Schwarz</div>
+                        <div class="card-text">Kassaprüfer</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card board">
+                        <div class="card-img"><img class="card-img-top" src="/img/mentoren/daniel-sklenitzka.jpg" />
+                        </div>
+                        <div class="card-title">Daniel Sklenitzka</div>
+                        <div class="card-text">Kassaprüfer</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card board">
+                        <div class="card-img"><img class="card-img-top" src="/img/mentoren/rainer-stropek.jpg" /></div>
+                        <div class="card-title">Rainer Stropek</div>
+                        <div class="card-text">Obmann</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card board">
+                        <div class="card-img"><img class="card-img-top" src="/img/mentoren/sok-kheng-taing.jpg" /></div>
+                        <div class="card-title">Sok-Kheng Taing</div>
+                        <div class="card-text">Kassierin Stv.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {{ end }}

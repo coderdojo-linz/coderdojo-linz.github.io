@@ -783,6 +783,45 @@ section.mentors {
     // }
 }
 
+/* Board */
+section#board {
+    .card.board {
+        margin-bottom: 20px;
+        text-align: center;
+        cursor: default;
+    
+        .card-title {
+            font-size: 20px;
+        }
+    
+        .card-text {
+            padding-bottom: 30px;
+            color: #129ad4;
+            font-size: 14px;
+        }
+    
+        .card-img {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+               padding-top: 50%;
+            position: relative;
+    
+            img {
+                border-radius: 50%;
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 25%;
+                bottom: 0;
+                right: 0;
+                   object-fit: cover;
+            }
+        }
+    }
+}
+
 /* Sushi Overview */
 .exercises {
     .category-overview {
