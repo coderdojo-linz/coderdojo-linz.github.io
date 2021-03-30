@@ -167,9 +167,10 @@ function loadEvents(eventsTable) {
                         row += '<p><strong>Mentoren:</strong> ' + ((workshop.mentors && workshop.mentors.length) ? workshop.mentors.join(', ') : 'werden noch bekanntgegeben') + '</p>';
                     }
 
-                    if (workshop.zoom && workshop.zoom !== '-') {
-                        row += '<p><strong>Link zum Teilnehmen:</strong> ' + (workshop.zoom ? '<a href=\'' + workshop.zoom + '\' target=\'_blank\'>' + workshop.zoom + '</a>' : 'wird noch bekanntgegeben') + '</p>';
-                    }
+                        let zoomLink = workshop?.zoomShort?.shortenedLink ?? workshop.zoom;
+                        if (zoomLink && zoomLink !== '-') {
+                            row += '<p><strong>Link zum Teilnehmen:</strong> ' + (zoomLink ? '<a href=\'' + zoomLink + '\' target=\'_blank\'>' + zoomLink + '</a>' : 'wird noch bekanntgegeben') + '</p>';
+                        }
 
                     if (workshop.zoomUser && workshop.zoomUser !== '-') {
                         row += '<p><strong>Zoom User für Mentoren:</strong> ' + (workshop.zoomUser ? workshop.zoomUser.replace(/@linz.coderdojo.net/, '') : '') + '</p>';
