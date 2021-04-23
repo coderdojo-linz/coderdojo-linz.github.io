@@ -20,11 +20,11 @@
     </item>
     
     <item>
-      <title>Arduino Sprach-Referenz</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/sprach-referenz/</link>
+      <title>TinkerCAD von Autodesk</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/tinkercad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/sprach-referenz/</guid>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/tinkercad/</guid>
       <description></description>
     </item>
     
@@ -61,6 +61,33 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-pinout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino mit LCD-Display</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-lcd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-lcd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino mit OLED Display</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-oled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-oled/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino mit Servo</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-servo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-servo/</guid>
       <description></description>
     </item>
     
@@ -106,6 +133,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield-alt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arduino Sprach-Referenz</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/sprach-referenz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/sprach-referenz/</guid>
       <description></description>
     </item>
     

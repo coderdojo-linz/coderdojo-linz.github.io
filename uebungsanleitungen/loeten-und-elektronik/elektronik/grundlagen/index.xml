@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grundlagen Elektronik on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/</link>
+    <description>Recent content in Grundlagen Elektronik on CoderDojo Linz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-AT</language>
+    
+	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elektronik Programm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/start-elektronik/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/start-elektronik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Start Elektronik</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/elektronik-programm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/elektronik-programm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elektronik-Pass</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/elektronik-pass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/elektronik-pass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grundlagen der Elektronik</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/grundlagen-der-elektronik/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/grundlagen-der-elektronik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elektronikbasteln für Anfänger</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/elektronik-basteln-fuer-anfaenger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/elektronik-basteln-fuer-anfaenger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conrad Downloads</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/conrad-downloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/conrad-downloads/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
