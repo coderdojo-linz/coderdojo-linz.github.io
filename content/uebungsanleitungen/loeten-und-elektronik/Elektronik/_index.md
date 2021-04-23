@@ -2,6 +2,7 @@
 title: "Elektronik"
 description: "Lerne die Grundlagen der Elektronik"
 level: 1
+weight: 2
 img: "electronic-components.png"
 ---
 

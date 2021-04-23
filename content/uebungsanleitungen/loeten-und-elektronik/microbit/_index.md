@@ -3,7 +3,7 @@ title: "BBC micro:bit"
 description: "Basteln und Programmieren mit dem Einplatinencomputer"
 layout: "list-with-content"
 level: 1
-weight: 2
+weight: 3
 img: "microbit.png"
 ---
 
