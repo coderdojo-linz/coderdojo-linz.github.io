@@ -15,7 +15,7 @@ categories:
 
 In dieser Übung lernst du, wie du eine Chat-Anwendung mit [Server- und Clientteil](https://de.wikipedia.org/wiki/Client-Server-Modell "Client-Server-Modell auf Wikipedia nachlesen") baust. Mehrere Benutzer können sich im Chat anmelden. Wenn jemand etwas sendet sollen alle anderen Benutzer das sofort sehen. 
 
-**Wichtig: Diese Übung geht davon aus, dass du die Übung [Einen Node.js Webserver programmieren](nodejs-webserver.html) gemacht hast und diese bei dir auf deinem Computer funktioniert.** Mache hier erst weiter, wenn du die vorbereitende Übung erfolgreich abgeschlossen hast.
+**Wichtig: Diese Übung geht davon aus, dass du die Übung [Einen Node.js Webserver programmieren](../nodejs-webserver) gemacht hast und diese bei dir auf deinem Computer funktioniert.** Mache hier erst weiter, wenn du die vorbereitende Übung erfolgreich abgeschlossen hast.
 
 ## Web Sockets
 
