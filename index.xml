@@ -1642,6 +1642,19 @@ Installieren von Packages Wenn du das erste Mal pygame verwendest, dann musst du
     </item>
     
     <item>
+      <title>Ninja Jump&#39;n&#39;run</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/</guid>
+      <description>Dieses Spiel ist bereits etwas herausfordernder und soll euch Zeigen wie man in einem Spiel mit einem Spielfeld umgeht, das viel größer als der Bildschirm ist.
+Figuren Bitte lade dir folgende Figuren Herunter:
+ Ninja als Spieler Blöcke für das Spielfeld Diamanten zum Sammeln Schlangen als Gegner  Ausserdem werdet ihr noch
+ Level-Datei für das Spielfeld  brauchen.
+Vorbereitung Das Spielfeld selbst ist diesmal nicht wirklich ein Bild sondern eine Beschreibung wo welcher Block Sitzen soll.</description>
+    </item>
+    
+    <item>
       <title>OLED</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/oled-128-64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
