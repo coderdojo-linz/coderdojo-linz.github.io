@@ -132,9 +132,9 @@ Damit nicht zu viele Blasen erzeugt werden, sondern nur durchschnittlich in eine
 
 ```python
 # HAUPTSCHLEIFE
-while true:
+while True:
     if randint(1, 10) == 1:
-    erzeuge_bubble()
+        erzeuge_bubble()
     bewege_bubbles()
     window.update()
     sleep(0.01)
