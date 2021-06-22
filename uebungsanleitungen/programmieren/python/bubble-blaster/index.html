@@ -293,9 +293,9 @@ GAP = 100
 
 <p>Damit nicht zu viele Blasen erzeugt werden, sondern nur durchschnittlich in einem Zehntel der Zeitschritte, erzeugen wir eine Zufallszahl zwischen 1 und 10. Nur wenn diese Zufallszahl 1 ist, dann erzeugen wir eine Bubble und sonst nicht.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># HAUPTSCHLEIFE</span>
-<span style="color:#00f">while</span> true:
+<span style="color:#00f">while</span> True:
     <span style="color:#00f">if</span> randint(1, 10) == 1:
-    erzeuge_bubble()
+        erzeuge_bubble()
     bewege_bubbles()
     window.update()
     sleep(0.01)</code></pre></div>
