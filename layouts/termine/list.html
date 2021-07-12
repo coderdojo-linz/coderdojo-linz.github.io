@@ -2,13 +2,17 @@
 
 {{ $imageResource := ($.Scratch.Get "images").GetMatch "corona.jpg" }}
 {{ $resized := $imageResource.Fit "1920x1200" }}
-<section id="events-corona" class="primary"
-    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('{{ $resized.RelPermalink }}'); background-attachment: fixed;">
+<section id="events-corona" class="dark"
+    >
     <div class="container">
         <div class="row">
             <div class="col">
                 <h2>COVID-19</h2>
-                <h4>Regeln für CoderDojos im Wissensturm</h4>
+                <p>Aufgrund der aktuellen COVID-19 Situation finden die regelmäßigen CoderDojos zur Zeit online statt.
+                </p>
+                <p>Im August werden wir zwei CoderDojos in Linz im Freien unter dem <a href="https://www.lentos.at"
+                        target="_blank">Lentos</a> abhalten. Mehr Infos dazu folgen in Kürze.</p>
+                <!-- <h4>Regeln für CoderDojos im Wissensturm</h4>
                 <p>
                     Damit die Teilnahme am CoderDojo für alle so sicher als möglich ist, sind folgende Regeln für Kinder
                     und Jugendliche, erwachsene Begleitpersonen und Mentoren zu befolgen:
@@ -34,7 +38,7 @@
                 <p>
                     Kinder und Jugendliche, die die oben genannten Sicherheitsmaßnahmen nicht einhalten können oder
                     wollen, können weiterhin auch an virtuelle CoderDojos teilnehmen.
-                </p>
+                </p> -->
 
                 <h4>Voraussetzungen für Online CoderDojos</h4>
                 <p>Bitte installiere für die Teilnahme an den online Workshops die <a href="https://zoom.us/download"
@@ -42,6 +46,12 @@
                     klicke zum Teilnehmen einfach auf den Teilnahmelink des jeweiligen Workshops. Eine Anleitung, wie
                     du an den Onlinemeetings teilnimmst, findest du unter <a
                         href="/termine/online-coderdojo-tipps">Tipps für Online CoderDojos</a>.</p>
+                <p>Eine Anmeldung ist für online CoderDojos nicht notwendig.</p>
+                <p>Du kannst jederzeit bei den online CoderDojos einsteigen, auch wenn du Anfänger bist. Wenn du nicht
+                    sicher bist, welcher Workshop für dich geeignet ist, schreib uns an <a
+                        href="mailto: info@linz.coderdojo.net">info@linz.coderdojo.net</a> wie alt du bist und ob du
+                    schon Programmiererfahrung hast. Wir werden dir dann einen Vorschlag machen, mit welchen Workshop du
+                    beginnen könntest.</a></p>
             </div>
         </div>
     </div>

@@ -135,6 +135,11 @@ function loadEvents(eventsTable) {
             row += '<span class=\'badge badge-primary badge-pill event-type event-type-' + event.type.toLowerCase().replace(' ', '-') + '\'>' + event.type + '</span><br/><b>' + formattedDate + ' ' + formattedBeginTime + ' - ' + formattedEndTime + '</b>';
             row += '</div>';
 
+            // event time xs
+            if (event.location && event.type === 'CoderDojo') {
+                row += '<p><b>Ort:</b> ' + event.location + '</p>';
+            }
+
             // workshops
             if (event.workshops && event.workshops.length) {
                 event.workshops.forEach(workshop => {
@@ -179,7 +184,7 @@ function loadEvents(eventsTable) {
                     row += '</div>';
                 });
             } else {
-                row += '<p>Workshops werden noch bekanntgegeben</p>';
+                row += '<p>Die Workshops werden zwei Tage vor dem Event bekanntgegeben.</p>';
             }
 
             row += '</td>';
