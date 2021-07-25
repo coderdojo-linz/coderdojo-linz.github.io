@@ -5,13 +5,13 @@ heroImagePosition: '100% 100%'
 heroDescription: 'Das CoderDojo kommt aus der virtuellen Welt zurück nach Linz.'
 ---
 
-## Linz Codes 2021
+## Linz Codes!
 
 Wir kehren zurück aus der virtuellen Welt unter das [Lentos in Linz](https://www.lentos.at/).
 
 ### Wann?
 
-Am Freitag den 06. August und den 20. August jeweils von 14:00 - 18:00.
+Am Freitag den 06. August und den 20. August 2021 jeweils von 14:00 - 18:00.
 
 ### Für wen?
 
@@ -61,7 +61,7 @@ Wir werden mit dem D1 Mini ein LED mit den Farben rot, grün und blau ansteuern.
 | 16:40 - 17:20 | Lötübung | JavaScript - Feuerwerk  |            |
 | 17:20 - 18:00 | Lötübung |                         |            |
 
-### Freies Programmieren
+### Freies Programmieren für Fortgeschrittene
 
 - Scratch
 - Web-Entwicklung
@@ -70,6 +70,14 @@ Wir werden mit dem D1 Mini ein LED mit den Farben rot, grün und blau ansteuern.
 - HTL Diplomarbeiten
 - HTL Elternkaffee
 - Robotics?
+
+### Was muss ich mitbringen?
+
+...
+
+### Corona Richtlinien
+
+...
 
 ### Anmeldung
 
