@@ -1068,8 +1068,18 @@ div.timetable + table {
       border-right: none;
     }
 
+    tr:last-of-type td {
+      border-bottom: none;
+    }
+
     tr:nth-of-type(2n + 1) {
       td:nth-of-type(3) {
+        border-bottom: none;
+      }
+    }
+
+    tr:nth-of-type(1) {
+      td:nth-of-type(4) {
         border-bottom: none;
       }
     }
