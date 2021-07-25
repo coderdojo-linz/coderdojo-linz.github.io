@@ -14,9 +14,9 @@ Computerspiele machen euch Spaß und ihr möchtet euer aller erstes Spiel selbst
 
 <div id="sponsored-by"></div>
 
-Sponsored by
+Unterstützt von
 
-![Innovationshauptplatz Linz](/linz-codes/innovationshauptplatz-linz.png 'Innovationshauptplatz Linz') ![Dynatrace](/linz-codes/dynatrace.png 'Dynatrace')
+![Innovationshauptplatz Linz](/linz-codes/innovationshauptplatz-linz.png 'Innovationshauptplatz Linz') ![Dynatrace](/linz-codes/dynatrace.png 'Dynatrace') ![Microsoft](/linz-codes/microsoft.png 'Dynatrace')
 
 ## Wann und wo?
 

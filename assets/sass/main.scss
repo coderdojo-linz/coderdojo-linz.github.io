@@ -1013,7 +1013,6 @@ iframe[src*='jsfiddle'] {
   top: -260px;
   width: 400px;
   height: 100px;
-  //   background-color: rgba(0, 0, 0, 0.25);
   padding: 20px;
   background-image: url('/images/linz-codes-2021.png');
   background-repeat: no-repeat;
@@ -1111,18 +1110,41 @@ div.timetable + table {
   justify-content: space-around;
 
   img {
-    height: 80px;
+    width: 25%;
+    max-width: 180px;
+    object-fit: contain;
+  }
+}
+
+section#linz-codes {
+  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url('/images/lentos3.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+
+  .container {
+    position: relative;
+    padding-top: 150px;
   }
 
-  @media only screen and (max-width: 900px) {
-    img {
-      height: 60px;
-    }
-  }
+  #linz-codes-header {
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 
-  @media only screen and (max-width: 600px) {
-    img {
-      height: 40px;
+    &::after {
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
     }
   }
 }
