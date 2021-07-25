@@ -88,7 +88,9 @@ Folgende Thementische wird es geben:
 
 ## Corona Richtlinien
 
-Wir möchten allen Besucherinnen und Besuchern eine Corona-sichere Teilnahme an *Linz Codes!* ermöglichen. Durch die Außenveranstaltung wird das Ansteckungsrisiko von Haus aus verringert. Zusätzlich gelten **für alle** für die Teilnahme die 3G-Regeln (geimpft, getestet oder genesen).
+Wir möchten allen Besucherinnen und Besuchern eine Corona-sichere Teilnahme an *Linz Codes!* ermöglichen. Durch die Außenveranstaltung wird das Ansteckungsrisiko von Haus aus verringert. Es gilt außerdem **für alle** (auch für Kinder unter 12 Jahren) die **3G-Regel: geimpft, getestet oder genesen**.
+
+Die Stadt Linz bietet in unmittelbarer Nähe zum Lentos mehrere Möglichkeiten für [Selbsttests unter Aufsicht an (neues und altes Rathaus)](https://www.linz.at/selbsttest.php). Zusätzlich steht ein gewisses Kontingent an Antigen-Schnelltests vorort zur Verfügung (solange der Vorrat reicht).
 
 Wir erfassen die Namen und Kontaktdaten aller TeilnehmerInnen, um im Fall des Falles die Kontaktnachverfolgbarkeit sicherzustellen. Diese Daten werden spätestens zwei Wochen nach der jeweiligen Veranstaltung gelöscht bzw. vernichtet.
 
