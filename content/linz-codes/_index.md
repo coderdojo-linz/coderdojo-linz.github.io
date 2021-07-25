@@ -2,22 +2,24 @@
 title: 'Linz Codes'
 heroImage: 'lentos3.jpg'
 heroImagePosition: '100% 100%'
-heroDescription: 'Das CoderDojo kommt aus der virtuellen Welt zurück nach Linz.'
+
 ---
+
+<div id="linz-codes-header"></div>
 
 ## Linz Codes!
 
 Wir kehren zurück aus der virtuellen Welt unter das [Lentos in Linz](https://www.lentos.at/).
 
-### Wann?
+### Am 6. und 20. August
 
 Am Freitag den 06. August und den 20. August 2021 jeweils von 14:00 - 18:00.
 
-### Für wen?
+### Für alle von 8 - 17 Jahre
 
 Alle **Kinder und Jugendlichen von 8 - 17** sind willkommen! Als Programmieranfänger&#183;in kannst du ein erstes eigenes Computerspiel programmieren, oder du lernst, wie man eine eigene Webseite programmiert. Wenn du mehr Spaß an Elektronik hast, kannst du dein erstes Projekt mit Lötkolben umsetzen. Und wenn du schon Programmiererfahrung hast, findest du beim CoderDojo jede Menge Mentor&#183;innen, die dir bei deinen eigenen Projekten weiterhelfen können.
 
-### Wo?
+### Am Freiplatz unter dem Lentos
 
 {{< imgblock "lentos-flaeche2.jpg" "Figuren begennen" 5 >}}
 Wir programmieren im Freien - geschützt vor Sonne und Regen - unter dem [Lentos Kunstmuseum in Linz](https://www.lentos.at/).
@@ -38,7 +40,7 @@ Unte­re Donau­län­de für 0,8 km folgen
 Park­mög­lich­keit in der Museumsgarage
 {{< /imgblock >}}
 
-### Workshops für Anfänger
+### Workshops
 
 **Lötübung**, _ab 8 Jahren_: Wir löten eine einfache Schaltung mit einer blinkenden Leuchtdiode. Für diese Übung brauchst du überhaupt keine Vorkenntnisse.
 

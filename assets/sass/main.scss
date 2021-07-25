@@ -1053,3 +1053,40 @@ iframe[src*='jsfiddle'] {
     display: block;
   }
 }
+
+// linz codes
+#linz-codes-header {
+  position: absolute;
+  right: 0;
+  top: -260px;
+  width: 400px;
+  height: 100px;
+  //   background-color: rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  background-image: url('/images/linz-codes-2021.png');
+  background-repeat: no-repeat;
+
+  &::after {
+    content: '06. und 20. August 2021';
+    color: #62b84d;
+    font-weight: bold;
+    font-size: 24px;
+    top: 80px;
+    right: 0px;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #linz-codes-header {
+    top: -160px;
+    width: 250px;
+    background-size: 250px;
+    right: 20px;
+
+    &::after {
+      font-size: 18px;
+      top: 50px;
+    }
+  }
+}
