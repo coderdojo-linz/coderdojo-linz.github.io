@@ -85,7 +85,9 @@ Falls ihr überlegt, eine Informatik-HTL zu besuchen und es dazu Fragen gibt, st
 | 17:20 - 18:00 | Lötübung |                         |            |
 
 <p>&nbsp;</p>
-<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung&nbsp;...</a></p>
+<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung für den 6. August&nbsp;...</a></p>
+
+<p class="text-center"><i>Die Anmeldung für den 20. August ist ab dem 8. August möglich.</i></p>
 
 ### Freies Programmieren für Fortgeschrittene
 
@@ -100,7 +102,9 @@ Folgende Thementische wird es geben:
 - HTL Diplomarbeiten
 
 <p>&nbsp;</p>
-<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung&nbsp;...</a></p>
+<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung für den 6. August&nbsp;...</a></p>
+
+<p class="text-center"><i>Die Anmeldung für den 20. August ist ab dem 8. August möglich.</i></p>
 
 ## Corona Richtlinien
 
@@ -127,4 +131,6 @@ Bei _Linz Codes!_ werden von den Veranstaltern und von Medienvertretern (z.B. OR
 - **Brauche ich einen Covid-Test?** Beim Event gilt die 3G-Regel **für alle**: Geimpft, genesen oder getestet. Selbsttests unter Aufsicht könnt ihr ganz in der Nähe des Lentos machen ([Selbsttests in Linz](https://www.linz.at/selbsttest.php)).
 
 <p>&nbsp;</p>
-<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung&nbsp;...</a></p>
+<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung für den 6. August&nbsp;...</a></p>
+
+<p class="text-center"><i>Die Anmeldung für den 20. August ist ab dem 8. August möglich.</i></p>
