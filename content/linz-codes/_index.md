@@ -114,4 +114,5 @@ Bei _Linz Codes!_ werden von den Veranstaltern und von Medienvertretern (z.B. OR
 - **Wer ist der Veranstalter?** Organisiert wird die Veranstaltung vom gemeinnützigen Verein _Coding Club Linz e.V._.
 - **Wer finanziert diese Veranstaltung?** Alle Mentorinnen und Mentoren arbeiten ehrenamtlich und unentgeltlich. _Linz Codes!_ wird finanziell und personell unterstützt vom [Innovationshauptplatz Linz](https://innovationshauptplatz.linz.at/de-DE/), [dynatrace](https://www.dynatrace.de/) und [Microsoft Österreich](https://www.microsoft.com/de-at/unternehmen/).
 
+<p>&nbsp;</p>
 <p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung&nbsp;...</a></p>
