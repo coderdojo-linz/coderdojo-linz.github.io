@@ -49,9 +49,13 @@ Falls ihr mit dem Auto kommt, könnt ihr zum Beispiel unter dem Lentos in der Mu
 
 Wir bieten bei _Linz Codes!_ **geführte Workshops und freies Programmieren** an.
 
-Die [**Workshops**](#workshops) haben ein von uns vorbereitetes Programm und sind ideal für Kinder und Jugendliche, die noch keine oder erst wenig Programmier- und Elektronikerfahrung haben. Für die Workshops muss man nichts mitbringen. Leih-Laptops, Lötkolben und Elektronik-Verbrauchsmaterial bekommt ihr kostenlos von uns. Wenn ihr einen fixen Platz bei einem Workshop haben möchtet, sichert euch ein Ticket (Anmeldungslink siehe unten). Für Kurzentschlossene halten wir ein paar Plätze frei.
+Die [**Workshops**](#workshops) haben ein von uns vorbereitetes Programm und sind ideal für Kinder und Jugendliche, die noch keine oder erst wenig Programmier- und Elektronikerfahrung haben. Für die Workshops muss man nichts mitbringen. Leih-Laptops, Lötkolben und Elektronik-Verbrauchsmaterial bekommt ihr kostenlos von uns.
 
 Wer schon Erfahrung hat und bei uns an eigenen Projekten arbeiten möchte, kommt zum [**freien Programmieren**](#freies-programmieren-für-fortgeschrittene). Hier stehen Mentorinnen und Mentoren zur Verfügung, die echte Software- und Elektronikprofis sind. Sie helfen beim Überwinden von Hürden und finden von Ideen. Für das freie Programmieren bringt bitte eure eigenen Laptops und falls notwendig euer eigenes Elektronik-Material mit.
+
+### Tickets
+
+Wenn ihr einen **fixen Platz** bei einem Workshop oder beim freien Programmieren haben möchtet, [**holt euch vor dem Event ein Ticket**](https://www.eventbrite.at/e/linz-codes-tickets-164718185527). Für Kurzentschlossene halten wir ein paar Plätze frei, die nach dem *first come, first serve*-Prinzip vergeben werden.
 
 Falls ihr überlegt, eine Informatik-HTL zu besuchen und es dazu Fragen gibt, steht ein **Informationsstand der HTL Leonding** zur Verfügung.
 
@@ -115,10 +119,12 @@ Bei _Linz Codes!_ werden von den Veranstaltern und von Medienvertretern (z.B. OR
 - **Kann ich auch mehrere Workshops besuchen?** Natürlich! Du kannst so lange bleiben und so viel machen wie du möchtest. Bei Kindern unter 12 Jahren empfehlen wir nicht mehr als zwei Workshops.
 - **Kostet die Teilnehme etwas?** Nein, alle Angebote sind kostenlos.
 - **Brauche ich einen eigenen Laptop?** Für die Workshops nicht, für das freie Programmieren haben wir nur ganz wenige Leih-Laptops und bitten daher, einen eigenen Laptop mitzubringen.
+- **Ich habe kein Ticket gebucht, kann ich trotzdem kommen?** Wer ein Ticket gebucht hat, hat einen fixen Platz. Wer ohne Ticket kommt, kann gerne bei den Workshops mitmachen, solange wir freie Plätze haben.
 - **Ist das Parken kostenlos?** Nein. Kurzparkzone und Parkgaragen in der Nähe sind kostenpflichtig. Die Parkkosten müssen selbst getragen werden.
 - **Wen kontaktiere ich bei Fragen?** Am besten schickt man bei Fragen eine Email an [info@linz.coderdojo.net](mailto:info@linz.coderdojo.net).
 - **Wer ist der Veranstalter?** Organisiert wird die Veranstaltung vom gemeinnützigen Verein _Coding Club Linz e.V._.
 - **Wer finanziert diese Veranstaltung?** Alle Mentorinnen und Mentoren arbeiten ehrenamtlich und unentgeltlich. _Linz Codes!_ wird finanziell und personell unterstützt vom [Innovationshauptplatz Linz](https://innovationshauptplatz.linz.at/de-DE/), [dynatrace](https://www.dynatrace.de/) und [Microsoft Österreich](https://www.microsoft.com/de-at/unternehmen/).
+- **Brauche ich einen Covid-Test?** Beim Event gilt die 3G-Regel **für alle**: Geimpft, genesen oder getestet. Selbsttests unter Aufsicht könnt ihr ganz in der Nähe des Lentos machen ([Selbsttests in Linz](https://www.linz.at/selbsttest.php)).
 
 <p>&nbsp;</p>
 <p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung&nbsp;...</a></p>
