@@ -12,6 +12,12 @@ Vor eineinhalb Jahren wechselten wir mit dem [CoderDojo Linz](/) Corona-bedingt 
 
 Computerspiele machen euch Spaß und ihr möchtet euer aller erstes Spiel selbst programmieren? Ihr fragt euch, was Elektronik ist und möchtet eure erste, elektronische Schaltung löten? Oder habt ihr vielleicht schon Coding- oder Elektronik-Erfahrung und möchtet Gleichgesinnte kennenlernen und unseren Mentorinnen und Mentoren ein Loch in den Bauch fragen? Dann seid ihr bei uns richtig! Unser CoderDojo ist ein **kostenloser Programmierclub für Kinder und Jugendliche**.
 
+<div id="sponsored-by"></div>
+
+Sponsored by
+
+![Innovationshauptplatz Linz](/linz-codes/innovationshauptplatz-linz.png 'Innovationshauptplatz Linz') ![Dynatrace](/linz-codes/dynatrace.png 'Dynatrace')
+
 ## Wann und wo?
 
 ### Am 6. und 20. August

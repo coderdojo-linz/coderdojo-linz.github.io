@@ -1100,3 +1100,17 @@ div.timetable + table {
     }
   }
 }
+
+#sponsored-by + p {
+    text-align: center;
+    font-weight: lighter;
+}
+
+#sponsored-by + p + p {
+    display: flex;
+    justify-content: space-around; 
+
+    img {
+        height: 80px;
+    }
+}
