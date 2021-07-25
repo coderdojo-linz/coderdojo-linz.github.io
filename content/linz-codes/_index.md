@@ -96,7 +96,7 @@ Wir verwenden für die Erfassung der Kontaktdaten der TeilnehmerInnen [eventbrit
 
 ## Film- und Fotoaufnahmen
 
-Bei _Linz Codes!_ werden von den Veranstaltern und von Medienvertretern Fotos gemacht. Diese Fotos werden vom CoderDojo Linz und unterstützenden Organisationen zum Berichten über _Linz Codes!_ sowie für die Bewerbung ähnlicher Veranstaltungen verwendet. Durch die Teilnahme an _Linz Codes!_ erklärt man sich damit einverstanden, dass Fotos gemacht und in der beschriebenen Form veröffentlicht werden.
+Bei _Linz Codes!_ werden von den Veranstaltern und von Medienvertretern (z.B. ORF) Filmaufnahmen und Fotos gemacht. Diese Fotos werden vom CoderDojo Linz, von den anwesenden Medien und von unterstützenden Organisationen (z.B. Sponsoren) zum Berichten über _Linz Codes!_ sowie für die Bewerbung ähnlicher Veranstaltungen verwendet. Durch die Teilnahme an _Linz Codes!_ erklärt man sich damit einverstanden, dass Filmaufnahmen und Fotos gemacht und in der beschriebenen Form veröffentlicht werden.
 
 ### Häufige Fragen
 
