@@ -32,8 +32,8 @@ Im CoderDojo habt ihr Hilfe von erwachsenen Mentoren, die viel technische Erfahr
 **Linzer CoderDojos finden in der Regel wöchentlich statt. Ihr kommt vorbei, wenn ihr Lust und Zeit habt.**
 
 Wenn ihr regelmäßig kommt, freut uns das besonders. Es gibt aber keine Verpflichtung, bei jedem Termin dabeizusein. Für den ersten Besuch ist eine Anmeldung notwendig. Nach Erhalt eines Mitgliedsausweis ist keine Anmeldung mehr nötig. Ihr kommt wenn ihr Zeit und Lust habt.<br/>
-<a class="btn btn-material-light-blue-700" href="/termine.html">Nächste Termine&nbsp;...</a>
-<a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung&nbsp;...</a>&nbsp;
+<p class="text-center"><a class="btn btn-primary" href="/termine.html">Nächste Termine&nbsp;...</a></p>
+<p class="text-center"><a class="btn btn-primary" href="/anmeldung.html">Zur Anmeldung&nbsp;...</a></p>
 
 Bitte schaut mit euren Eltern die [Informationen für Eltern](eltern.html) aufmerksam durch. Falls Ihr jünger als 13 Jahre alt seid, muss eine erwachsene Begleitperson mit euch zum CoderDojo kommen und die ganze Zeit anwesend bleiben.
 
@@ -84,6 +84,6 @@ Jede Gemeinschaft braucht ein paar Regeln, damit sie funktioniert. Hier sind uns
 ## Neugierig geworden?
 
 Na dann, sprich mit deinen Eltern, ob sie einverstanden sind. Falls ja, [melde dich gleich zu deinem erste Besuch beim CoderDojo Linz an](/anmeldung.html) und schau bei uns vorbei.<br/>
-<a class="btn btn-material-light-blue-700" href="/anmeldung.html">Zur Anmeldung&nbsp;...</a>
+<p class="text-center"><a class="btn btn-primary" href="/anmeldung.html">Zur Anmeldung&nbsp;...</a></p>
 
 **Wir freuen uns auf dich!**
