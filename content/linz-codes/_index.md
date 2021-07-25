@@ -24,7 +24,7 @@ Wenn ihr an anderen Freitagen mit uns programmieren oder Elektronikbasteln möch
 
 Alle **Kinder und Jugendlichen zwischen 8 und 17 Jahren** sind willkommen! Programmiererfahrung ist **nicht** notwendig. Falls du allerdings schon Erfahrung hast, stehen dir unsere Mentorinnen und Mentoren für Fragen und Anregungen zur Verfügung. Sie sind alle echte Computerprofis.
 
-Kinder, die **jünger als 13 Jahre** sind, müssen von einer **erwachsenen Begleitperson** zu _Linz Codes!_ begleitet werden, die während des gesamten Besuchs anwesend ist. Bei Kindern unter 10 Jahre sollte die Begleitperson dem Kind bei den Workshops auch helfend zur Seite stehen.
+Kinder, die **jünger als 13 Jahre** sind, müssen von einer **erwachsenen Begleitperson** zu _Linz Codes!_ begleitet werden, die während des gesamten Besuchs anwesend ist. Bei Kindern unter 10 Jahren sollte die Begleitperson dem Kind bei den Workshops auch helfend zur Seite stehen.
 
 ### Am Freiplatz unter dem Lentos
 
@@ -92,7 +92,7 @@ Wir möchten allen Besucherinnen und Besuchern eine Corona-sichere Teilnahme an 
 
 Die Stadt Linz bietet in unmittelbarer Nähe zum Lentos mehrere Möglichkeiten für [Selbsttests unter Aufsicht an (neues und altes Rathaus)](https://www.linz.at/selbsttest.php). Zusätzlich steht ein gewisses Kontingent an Antigen-Schnelltests vorort zur Verfügung (solange der Vorrat reicht).
 
-Wir erfassen die Namen und Kontaktdaten aller TeilnehmerInnen, um im Fall des Falles die Kontaktnachverfolgbarkeit sicherzustellen. Diese Daten werden spätestens zwei Wochen nach der jeweiligen Veranstaltung gelöscht bzw. vernichtet.
+Wir verwenden für die Erfassung der Kontaktdaten der TeilnehmerInnen [eventbrite](https://eventbrite.de) ([Datenschutzrichtlinien von eventbrite](https://www.eventbrite.de/support/articles/de/Troubleshooting/datenschutzrichtlinie-von-eventbrite?lg=de)). Diese Kontaktdaten werden erfasst, um im Fall des Falles die Corona-Kontaktnachverfolgbarkeit sicherzustellen. Wir werden das *Linz Codes!*-Event bei eventbrite spätestens zwei Wochen nach dem Event löschen.
 
 ## Film- und Fotoaufnahmen
 
