@@ -74,6 +74,9 @@ Falls ihr überlegt, eine Informatik-HTL zu besuchen und es dazu Fragen gibt, st
 | 16:40 - 17:20 | Lötübung | JavaScript - Feuerwerk  |            |
 | 17:20 - 18:00 | Lötübung |                         |            |
 
+<p>&nbsp;</p>
+<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung&nbsp;...</a></p>
+
 ### Freies Programmieren für Fortgeschrittene
 
 Bei _Linz Codes!_ gibt es Thementische, auf denen ihr an eigenen Projekten arbeiten könnt. Bei Bedarf unterstützen euch unsere Mentorinnen und Mentoren. Das ist eine ideale Gelegenheit, um mit Freundinnen und Freunden einen Nachmittag am gemeinsamen Projekt zu arbeiten, um als HTL-SchülerIn Fortschritte bei Schulprojekten zu machen oder um mit Hilfe unseres Mentoringteams eine Idee zu entwickeln und mit ihrer Umsetzung zu starten.
@@ -86,13 +89,16 @@ Folgende Thementische wird es geben:
 - Elektronik (Arduino, Raspberry Pi, ESP8266 etc.)
 - HTL Diplomarbeiten
 
+<p>&nbsp;</p>
+<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung&nbsp;...</a></p>
+
 ## Corona Richtlinien
 
 Wir möchten allen Besucherinnen und Besuchern eine Corona-sichere Teilnahme an _Linz Codes!_ ermöglichen. Durch die Außenveranstaltung wird das Ansteckungsrisiko von Haus aus verringert. Es gilt außerdem **für alle** (auch für Kinder unter 12 Jahren) die **3G-Regel: geimpft, getestet oder genesen**.
 
 Die Stadt Linz bietet in unmittelbarer Nähe zum Lentos mehrere Möglichkeiten für [Selbsttests unter Aufsicht an (neues und altes Rathaus)](https://www.linz.at/selbsttest.php). Zusätzlich steht ein gewisses Kontingent an Antigen-Schnelltests vorort zur Verfügung (solange der Vorrat reicht).
 
-Wir verwenden für die Erfassung der Kontaktdaten der TeilnehmerInnen [eventbrite](https://eventbrite.de) ([Datenschutzrichtlinien von eventbrite](https://www.eventbrite.de/support/articles/de/Troubleshooting/datenschutzrichtlinie-von-eventbrite?lg=de)). Diese Kontaktdaten werden erfasst, um im Fall des Falles die Corona-Kontaktnachverfolgbarkeit sicherzustellen. Wir werden das *Linz Codes!*-Event bei eventbrite spätestens zwei Wochen nach dem Event löschen.
+Wir verwenden für die Erfassung der Kontaktdaten der TeilnehmerInnen [eventbrite](https://eventbrite.de) ([Datenschutzrichtlinien von eventbrite](https://www.eventbrite.de/support/articles/de/Troubleshooting/datenschutzrichtlinie-von-eventbrite?lg=de)). Diese Kontaktdaten werden erfasst, um im Fall des Falles die Corona-Kontaktnachverfolgbarkeit sicherzustellen. Wir werden das _Linz Codes!_-Event bei eventbrite spätestens zwei Wochen nach dem Event löschen.
 
 ## Film- und Fotoaufnahmen
 
@@ -108,6 +114,4 @@ Bei _Linz Codes!_ werden von den Veranstaltern und von Medienvertretern (z.B. OR
 - **Wer ist der Veranstalter?** Organisiert wird die Veranstaltung vom gemeinnützigen Verein _Coding Club Linz e.V._.
 - **Wer finanziert diese Veranstaltung?** Alle Mentorinnen und Mentoren arbeiten ehrenamtlich und unentgeltlich. _Linz Codes!_ wird finanziell und personell unterstützt vom [Innovationshauptplatz Linz](https://innovationshauptplatz.linz.at/de-DE/), [dynatrace](https://www.dynatrace.de/) und [Microsoft Österreich](https://www.microsoft.com/de-at/unternehmen/).
 
-### Anmeldung
-
-<p class="text-center"><a class="btn btn-primary" href="/anmeldung.html">Zur Anmeldung&nbsp;...</a></p>
+<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung&nbsp;...</a></p>
