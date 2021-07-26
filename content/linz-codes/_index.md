@@ -10,7 +10,7 @@ heroImagePosition: '100% 100%'
 
 Vor eineinhalb Jahren wechselten wir mit dem [CoderDojo Linz](/) Corona-bedingt in die virtuelle Welt. Jetzt ist es soweit, wir kehren zurück aus der virtuellen Welt! Diesen Sommer sehen wir uns wieder persönlich beim Programmieren am Freiplatz unter dem [Lentos Kunstmuseum](https://www.lentos.at/).
 
-Computerspiele machen euch Spaß und ihr möchtet euer aller erstes Spiel selbst programmieren? Ihr fragt euch, was Elektronik ist und möchtet eure erste, elektronische Schaltung löten? Oder habt ihr vielleicht schon Coding- oder Elektronik-Erfahrung und möchtet Gleichgesinnte kennenlernen und unseren Mentorinnen und Mentoren ein Loch in den Bauch fragen? Dann seid ihr bei uns richtig! Unser CoderDojo ist ein **kostenloser Programmierclub für Kinder und Jugendliche**.
+Computerspiele machen euch Spaß und ihr möchtet euer allererstes Spiel selbst programmieren? Ihr fragt euch, was Elektronik ist und möchtet eure erste, elektronische Schaltung löten? Oder habt ihr vielleicht schon Coding- oder Elektronik-Erfahrung und möchtet Gleichgesinnte kennenlernen und unseren Mentorinnen und Mentoren ein Loch in den Bauch fragen? Dann seid ihr bei uns richtig! Unser CoderDojo ist ein **kostenloser Programmierclub für Kinder und Jugendliche**.
 
 <div id="sponsored-by"></div>
 
