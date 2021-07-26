@@ -1,7 +1,12 @@
 ---
-title: 'Linz Codes'
+title: 'Linz Codes!'
 heroImage: 'lentos3.jpg'
 heroImagePosition: '100% 100%'
+ogImage: '/linz-codes/linz-codes.png'
+ogImageType: 'image/png'
+ogImageWidth: '1200'
+ogImageHeight: '546'
+ogTitle: 'Linz Codes! Programmieren für Kinder und Jugendliche unter dem Lentos am 6. und 20. August'
 ---
 
 <div id="linz-codes-header"></div>

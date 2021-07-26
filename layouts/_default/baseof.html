@@ -19,6 +19,26 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1"> {{ hugo.Generator }} {{"<!-- Fonts -->" | safeHTML }}
 
+    {{ if (isset .Page.Params "ogimage") }}
+        <meta name="og:image" content="{{ .Page.Params.ogImage }}">
+    {{ end }}
+
+    {{ if (isset .Page.Params "ogimagewidth") }}
+        <meta name="og:image:width" content="{{ .Page.Params.ogImageWidth }}">
+    {{ end }}
+
+    {{ if (isset .Page.Params "ogimageheight") }}
+        <meta name="og:image:height" content="{{ .Page.Params.ogImageHeight }}">
+    {{ end }}
+
+    {{ if (isset .Page.Params "ogimagetype") }}
+        <meta name="og:image:type" content="{{ .Page.Params.ogImageType }}">
+    {{ end }}
+
+    {{ if (isset .Page.Params "ogtitle") }}
+        <meta name="og:title" content="{{ .Page.Params.ogTitle }}">
+    {{ end }}
+
     {{ if (not (isset .Page.Params "aliases")) }}
     <link rel="canonical" href="https://linz.coderdojo.net{{.Page.RelPermalink}}" />
     {{ else if (lt (len .Page.Params.Aliases) 2) }}
@@ -59,7 +79,9 @@
                 </div>
             </div>
         </div>
-    </section> {{ end }} {{ block "jumbotron" . }} {{ end }} {{ block "main" . }} {{ end }} 
+    </section> {{ end }} 
+    {{ block "jumbotron" . }} {{ end }}
+    {{ block "main" . }} {{ end }} 
     <footer>
         <div class="container">
             <div class="row">
