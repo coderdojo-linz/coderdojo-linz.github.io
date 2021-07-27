@@ -60,7 +60,7 @@ Wer schon Erfahrung hat und bei uns an eigenen Projekten arbeiten möchte, kommt
 
 ### Tickets
 
-Wenn ihr einen **fixen Platz** bei einem Workshop oder beim freien Programmieren haben möchtet, [**holt euch vor dem Event ein Ticket**](https://www.eventbrite.at/e/linz-codes-tickets-164718185527). Für Kurzentschlossene halten wir ein paar Plätze frei, die nach dem *first come, first serve*-Prinzip vergeben werden.
+Wenn ihr einen **fixen Platz** bei einem Workshop oder beim freien Programmieren haben möchtet, [**holt euch vor dem Event ein Ticket**](https://www.eventbrite.at/e/linz-codes-tickets-164718185527). Für Kurzentschlossene halten wir ein paar Plätze frei, die nach dem *first come, first served*-Prinzip vergeben werden.
 
 Falls ihr überlegt, eine Informatik-HTL zu besuchen und es dazu Fragen gibt, steht ein **Informationsstand der HTL Leonding** zur Verfügung.
 
