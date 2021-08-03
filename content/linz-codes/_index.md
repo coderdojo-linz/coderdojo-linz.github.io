@@ -115,7 +115,7 @@ Folgende Thementische wird es geben:
 
 Wir möchten allen Besucherinnen und Besuchern eine Corona-sichere Teilnahme an _Linz Codes!_ ermöglichen. Durch die Außenveranstaltung wird das Ansteckungsrisiko von Haus aus verringert. Es gilt außerdem **für alle** (auch für Kinder unter 12 Jahren) die **3G-Regel: geimpft, getestet oder genesen**.
 
-Die Stadt Linz bietet in unmittelbarer Nähe zum Lentos mehrere Möglichkeiten für [PCR Tests (mindestens 24h bis zum Ergebnis einplanen) und Schnelltests](https://www.linz.at/coronavirus.php) sowie [Selbsttests unter Aufsicht an](https://www.linz.at/selbsttest.php). Zusätzlich steht ein gewisses Kontingent an Antigen-Schnelltests vorort zur Verfügung (solange der Vorrat reicht).
+Die Stadt Linz bietet in unmittelbarer Nähe zum Lentos mehrere Möglichkeiten für [PCR Tests (mindestens 24h bis zum Ergebnis einplanen) und Schnelltests](https://www.linz.at/coronavirus.php) sowie [Selbsttests unter Aufsicht an](https://www.linz.at/selbsttest.php).
 
 Wir verwenden für die Erfassung der Kontaktdaten der TeilnehmerInnen [eventbrite](https://eventbrite.de) ([Datenschutzrichtlinien von eventbrite](https://www.eventbrite.de/support/articles/de/Troubleshooting/datenschutzrichtlinie-von-eventbrite?lg=de)). Diese Kontaktdaten werden erfasst, um im Fall des Falles die Corona-Kontaktnachverfolgbarkeit sicherzustellen. Wir werden das _Linz Codes!_-Event bei eventbrite spätestens zwei Wochen nach dem Event löschen.
 
