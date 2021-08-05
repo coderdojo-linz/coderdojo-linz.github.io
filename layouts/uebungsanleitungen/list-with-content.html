@@ -65,7 +65,11 @@
                         {{ end }}
                         <h5 class="card-title">{{.Title}}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{.Description}}</h6>
+                        {{ if isset .Params "abstract" }}
+                        <p class="card-text mt-4">{{.Params.Abstract}}</p>
+                        {{ else }}
                         <p class="card-text mt-4">{{.Content}}</p>
+                        {{ end }}
                     </div>
                     {{ if or (isset .Params "categories") (isset .Params "file") }}
                     <div class="card-footer">
