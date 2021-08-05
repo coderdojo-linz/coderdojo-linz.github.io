@@ -997,6 +997,17 @@ Dafür bitte unter &amp;ldquo;File&amp;rdquo; -&amp;gt; &amp;ldquo;Settings&amp;
     </item>
     
     <item>
+      <title>Übungsbuch 1</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/uebungsbuch-1/</link>
+      <pubDate>Sun, 17 May 2020 07:59:43 +0200</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/uebungsbuch-1/</guid>
+      <description>Übungsbuch 1 - Für Programmier-AnfängerInnen ab 8 Jahren
+Im diesem Übungsbuch findest du 3 Scratch Übungen und 1 JavaScript Übung für Programmier-AnfängerInnen. Für die JavaScript Übung solltest du schon ein klein wenig Tippen können.
+Download</description>
+    </item>
+    
+    <item>
       <title>Adafruit NeoPixel Guide</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/adafruit-neopixel-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2138,17 +2149,6 @@ Allgemeines zur Programmiersprache Python Wir verwenden für die Programmierung 
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten-2/</guid>
       <description>Zahlen raten mit Python Teil 2 Kennst du den ersten Teil, wo wir ein Programm entwickelt haben, das sich eine Zahl ausdenkt und den Spieler erraten lässt? Jetzt wollen wir die Rollen tauschen und den Computer eine vom Menschen gedachte Zahl erraten lassen. Der Computer fragt zuerst, wie groß die gedachte Zahl höchstens sein kann, und beginnt dann mit dem Raten. Der Spieler gibt nach jedem Versuch an, ob die vom Computer ausgespuckte Zahl zu klein, zu groß oder richtig war.</description>
-    </item>
-    
-    <item>
-      <title>Übungsbuch 1</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/uebungsbuch-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/uebungsbuch-1/</guid>
-      <description>Übungsbuch 1 - Für Programmier-AnfängerInnen ab 8 Jahren
-Im diesem Übungsbuch findest du 3 Scratch Übungen und 1 JavaScript Übung für Programmier-AnfängerInnen. Für die JavaScript Übung solltest du schon ein klein wenig Tippen können.
-Download</description>
     </item>
     
   </channel>
