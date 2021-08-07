@@ -41,7 +41,7 @@ Kinder, die **jünger als 13 Jahre** sind, müssen von einer **erwachsenen Begle
 
 {{< imgblock "lentos-flaeche2.jpg" "Figuren begennen" 4 >}}
 
-Wir programmieren im Freien, sind aber unter dem [Lentos Kunstmuseum in Linz](https://www.lentos.at/) geschützt vor Sonne und Regen.
+Wir programmieren im Freien, sind aber unter dem [Lentos Kunstmuseum in Linz](https://www.lentos.at/) geschützt vor Sonne und Regen. Es kann unter dem Lentos allerdings etwas windig werden, nehmt euch also vorsichtshalber lieber eine Jacke mit.
 
 Das Lentos Kunstmuseum ist in unmittelbarer Nähe des Linzer Hauptplatzes (ca. 2-3 Gehminuten entfernt, siehe auch [Google Maps](https://goo.gl/maps/biqzqYwoKJ5uhyDN7)).
 
@@ -90,9 +90,7 @@ Falls ihr überlegt, eine Informatik-HTL zu besuchen und es dazu Fragen gibt, st
 | 17:20 - 18:00 | Lötübung |                         |            |
 
 <p>&nbsp;</p>
-<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung für den 6. August&nbsp;...</a></p>
-
-<p class="text-center"><i>Die Anmeldung für den 20. August ist ab dem 8. August möglich.</i></p>
+<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.de/e/linz-codes-tickets-166369464547" target="_blank">Zur Anmeldung für den 20. August&nbsp;...</a></p>
 
 ### Freies Programmieren für Fortgeschrittene
 
@@ -107,9 +105,7 @@ Folgende Thementische wird es geben:
 - HTL Diplomarbeiten
 
 <p>&nbsp;</p>
-<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung für den 6. August&nbsp;...</a></p>
-
-<p class="text-center"><i>Die Anmeldung für den 20. August ist ab dem 8. August möglich.</i></p>
+<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.de/e/linz-codes-tickets-166369464547" target="_blank">Zur Anmeldung für den 20. August&nbsp;...</a></p>
 
 ## Corona Richtlinien
 
@@ -136,6 +132,5 @@ Bei _Linz Codes!_ werden von den Veranstaltern und von Medienvertretern (z.B. OR
 - **Brauche ich einen Covid-Test?** Beim Event gilt die 3G-Regel **für alle**: Geimpft, genesen oder getestet. Selbsttests unter Aufsicht könnt ihr ganz in der Nähe des Lentos machen ([Selbsttests in Linz](https://www.linz.at/selbsttest.php)).
 
 <p>&nbsp;</p>
-<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.at/e/linz-codes-tickets-164718185527" target="_blank">Zur Anmeldung für den 6. August&nbsp;...</a></p>
+<p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.de/e/linz-codes-tickets-166369464547" target="_blank">Zur Anmeldung für den 20. August&nbsp;...</a></p>
 
-<p class="text-center"><i>Die Anmeldung für den 20. August ist ab dem 8. August möglich.</i></p>
