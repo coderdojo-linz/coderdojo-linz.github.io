@@ -60,7 +60,7 @@ Wer schon Erfahrung hat und bei uns an eigenen Projekten arbeiten möchte, kommt
 
 ### Tickets
 
-Wenn ihr einen **fixen Platz** bei einem Workshop oder beim freien Programmieren haben möchtet, [**holt euch vor dem Event ein Ticket**](https://www.eventbrite.at/e/linz-codes-tickets-164718185527). Für Kurzentschlossene halten wir ein paar Plätze frei, die nach dem *first come, first served*-Prinzip vergeben werden.
+Wenn ihr einen **fixen Platz** bei einem Workshop oder beim freien Programmieren haben möchtet, [**holt euch vor dem Event ein Ticket**](https://www.eventbrite.at/e/linz-codes-tickets-164718185527). Für Kurzentschlossene halten wir ein paar Plätze frei, die nach dem _first come, first served_-Prinzip vergeben werden.
 
 Falls ihr überlegt, eine Informatik-HTL zu besuchen und es dazu Fragen gibt, steht ein **Informationsstand der HTL Leonding** zur Verfügung.
 
@@ -68,26 +68,26 @@ Falls ihr überlegt, eine Informatik-HTL zu besuchen und es dazu Fragen gibt, st
 
 [**Scratch - Fische fangen**]({{< ref "/uebungsanleitungen/programmieren/scratch/fang-mich.md" >}}), _ab 8 Jahren, keine Programmiererfahrung notwendig_: Dieser Workshop passt perfekt für euch, wenn ihr schon lesen könnt, aber noch nie programmiert habt. Wir bauen gemeinsam euer erstes, eigenes Computerspiel.
 
-[**Scratch - Paddle Game**]({{< ref "/uebungsanleitungen/programmieren/scratch/paddle-game.md" >}}), _ab 8 Jahren, etwas Scratch-Erfahrung von Vorteil_: Bei diesem Workshop bauen wir ein etwas anspruchsvolleres Computerspiel für Kinder und Jugendliche, die schon einmal in Scratch hineingeschnuppert haben. Ihr lernt, eigene Figuren zu zeichnen und mit Variablen umzugehen.
+[**Scratch - Virus Buster**]({{< ref "/uebungsanleitungen/programmieren/scratch/virus-buster.md" >}}), _ab 8 Jahren, etwas Scratch-Erfahrung von Vorteil_: Bei diesem Workshop bauen wir ein etwas anspruchsvolleres Computerspiel für Kinder und Jugendliche, die schon einmal in Scratch hineingeschnuppert haben. Ihr lernt, eigene Figuren zu zeichnen und mit Variablen umzugehen.
 
-[**JavaScript - Feuerwerk**]({{< ref "/uebungsanleitungen/programmieren/web/feuerwerk-basics.md" >}}), _ab 12 Jahren, Erfahrung im Umgang mit Tastatur und Maus_: Dieser Workshop ist für Jugendliche, die schon Erfahrung mit Blockprogrammierung (z.B. Scratch, Lego Mindstorms) haben und jetzt in textuelle Programmierung einsteigen möchte. Wir bauen eine Webseite mit einem Feuerwerksimulator.
+**JavaScript - Malen nach Zahlen**, _ab 12 Jahren, Erfahrung im Umgang mit Tastatur und Maus_: Dieser Workshop ist für Jugendliche, die schon Erfahrung mit Blockprogrammierung (z.B. Scratch, Lego Mindstorms) haben und jetzt in textuelle Programmierung einsteigen möchte. Wir bauen ein virtuelles Malbuch.
 
 [**Lötübung**](https://youtu.be/1u1LMX0AoWU), _ab 8 Jahren, keine Vorkenntnisse notwendig_: Wir löten eine einfache Schaltung mit Batterie, Widerständen, und einer blinkenden Leuchtdiode. Nach dem Workshop darfst du deine Schaltung mit nach Hause nehmen, damit du herzeigen kannst, was du geschafft hast.
 
-**<a href="/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/led-bild/LED-Bilder Anleitung.pdf" target="_blank">D1 Mini</a>**, _ab 12 Jahren, etwas Erfahrung mit Arduino IDE notwendig_: Der D1 Mini ist ein briefmarkengroßer Mikrocontroller. Er hat viele Schnittstellen, unterstützt eine Vielzahl von Sensoren und ist daher ideal für Bastelprojekte. Der D1 Mini kann mit der Arduino IDE programmiert werden. Wir werden mit dem D1 Mini LEDs ansteuern und verschiedene Sensoren auslesen.
+<!-- **<a href="/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/led-bild/LED-Bilder Anleitung.pdf" target="_blank">D1 Mini</a>**, _ab 12 Jahren, etwas Erfahrung mit Arduino IDE notwendig_: Der D1 Mini ist ein briefmarkengroßer Mikrocontroller. Er hat viele Schnittstellen, unterstützt eine Vielzahl von Sensoren und ist daher ideal für Bastelprojekte. Der D1 Mini kann mit der Arduino IDE programmiert werden. Wir werden mit dem D1 Mini LEDs ansteuern und verschiedene Sensoren auslesen. -->
 
 ##### Workshop-Zeitplan
 
 <div class="timetable"></div>
 
-|               | Löten    | Programmieren           | Elektronik |
-| ------------- | -------- | ----------------------- | ---------- |
-| 14:00 - 14:40 | Lötübung | Scratch - Fische fangen |
-| 14:40 - 15:20 | Lötübung |                         |            |
-| 15:20 - 16:00 | Lötübung | Scratch - Paddle Game   | D1 Mini    |
-| 16:00 - 16:40 | Lötübung |                         |            |
-| 16:40 - 17:20 | Lötübung | JavaScript - Feuerwerk  |            |
-| 17:20 - 18:00 | Lötübung |                         |            |
+|               | Löten    | Programmieren                  |
+| ------------- | -------- | ------------------------------ |
+| 14:00 - 14:40 | Lötübung | Scratch - Fische fangen        |
+| 14:40 - 15:20 | Lötübung |                                |
+| 15:20 - 16:00 | Lötübung | Scratch - Virus Buster         |
+| 16:00 - 16:40 | Lötübung |                                |
+| 16:40 - 17:20 | Lötübung | JavaScript - Malen nach Zahlen |
+| 17:20 - 18:00 | Lötübung |                                |
 
 <p>&nbsp;</p>
 <p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.de/e/linz-codes-tickets-166369464547" target="_blank">Zur Anmeldung für den 20. August&nbsp;...</a></p>
@@ -133,4 +133,3 @@ Bei _Linz Codes!_ werden von den Veranstaltern und von Medienvertretern (z.B. OR
 
 <p>&nbsp;</p>
 <p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.de/e/linz-codes-tickets-166369464547" target="_blank">Zur Anmeldung für den 20. August&nbsp;...</a></p>
-
