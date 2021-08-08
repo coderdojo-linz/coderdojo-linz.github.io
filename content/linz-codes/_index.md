@@ -50,6 +50,12 @@ Am besten kommt ihr mit der Straßenbahn. Die Haltestelle _Hauptplatz_ ist mit a
 Falls ihr mit dem Auto kommt, könnt ihr zum Beispiel unter dem Lentos in der Museumsgarage parken.
 {{< /imgblock >}}
 
+## Eindrücke vom 6. August
+
+<div class="video-container">
+    <iframe class="video" src="https://www.youtube.com/embed/KEAnO48Zo2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Programm
 
 Wir bieten bei _Linz Codes!_ **geführte Workshops und freies Programmieren** an.
