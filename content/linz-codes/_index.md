@@ -80,20 +80,20 @@ Falls ihr überlegt, eine Informatik-HTL zu besuchen und es dazu Fragen gibt, st
 
 [**Lötübung**](https://youtu.be/1u1LMX0AoWU), _ab 8 Jahren, keine Vorkenntnisse notwendig_: Wir löten eine einfache Schaltung mit Batterie, Widerständen, und einer blinkenden Leuchtdiode. Nach dem Workshop darfst du deine Schaltung mit nach Hause nehmen, damit du herzeigen kannst, was du geschafft hast.
 
-<!-- **<a href="/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/led-bild/LED-Bilder Anleitung.pdf" target="_blank">D1 Mini</a>**, _ab 12 Jahren, etwas Erfahrung mit Arduino IDE notwendig_: Der D1 Mini ist ein briefmarkengroßer Mikrocontroller. Er hat viele Schnittstellen, unterstützt eine Vielzahl von Sensoren und ist daher ideal für Bastelprojekte. Der D1 Mini kann mit der Arduino IDE programmiert werden. Wir werden mit dem D1 Mini LEDs ansteuern und verschiedene Sensoren auslesen. -->
+**<a href="/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/led-bild/LED-Bilder Anleitung.pdf" target="_blank">D1 Mini</a>**, _ab 12 Jahren, etwas Erfahrung mit Arduino IDE notwendig_: Der D1 Mini ist ein briefmarkengroßer Mikrocontroller. Er hat viele Schnittstellen, unterstützt eine Vielzahl von Sensoren und ist daher ideal für Bastelprojekte. Der D1 Mini kann mit der Arduino IDE programmiert werden. Wir werden mit dem D1 Mini LEDs ansteuern und verschiedene Sensoren auslesen.
 
 ##### Workshop-Zeitplan
 
 <div class="timetable"></div>
 
-|               | Löten    | Programmieren                  |
-| ------------- | -------- | ------------------------------ |
-| 14:00 - 14:40 | Lötübung | Scratch - Fische fangen        |
-| 14:40 - 15:20 | Lötübung |                                |
-| 15:20 - 16:00 | Lötübung | Scratch - Virus Buster         |
-| 16:00 - 16:40 | Lötübung |                                |
-| 16:40 - 17:20 | Lötübung | JavaScript - Malen nach Zahlen |
-| 17:20 - 18:00 | Lötübung |                                |
+|               | Löten    | Programmieren                  | Elektronik |
+| ------------- | -------- | ------------------------------ | ---------- |
+| 14:00 - 14:40 | Lötübung | Scratch - Fische fangen        |            |
+| 14:40 - 15:20 | Lötübung |                                |            |
+| 15:20 - 16:00 | Lötübung | Scratch - Virus Buster         | D1 Mini    |
+| 16:00 - 16:40 | Lötübung |                                |            |
+| 16:40 - 17:20 | Lötübung | JavaScript - Malen nach Zahlen |            |
+| 17:20 - 18:00 | Lötübung |                                |            |
 
 <p>&nbsp;</p>
 <p class="text-center"><a class="btn btn-primary" href="https://www.eventbrite.de/e/linz-codes-tickets-166369464547" target="_blank">Zur Anmeldung für den 20. August&nbsp;...</a></p>
