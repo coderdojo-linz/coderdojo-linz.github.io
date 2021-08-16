@@ -1541,6 +1541,16 @@ Spielbeschreibung Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Z
     </item>
     
     <item>
+      <title>Lego EV3</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/lego-ev3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/lego-ev3/</guid>
+      <description>Hier lernen wir wie du mit Scratch deinen Lego Mindstorms Roboter mit Scratch steuern kannst! Was du dazu brauchst sind:
+ Einen Lego Mindstorms EV3 Controller Ein Lego-Motor der an diesen EV3 Controller angeschlossen ist Einen Laptop oder Computer der Bluetooth unterstützt  Scratch Link installieren  Damit Scratch mit dem EV3 Brick reden kann brauchen wir ein kleines Tool das Scratch Link heißt. Du kannst das entweder direkt von der Scratch Homepage herunterladen: click</description>
+    </item>
+    
+    <item>
       <title>Lokaler Minecraft-Server mit Scriptcraft</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/scriptcraft-installieren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
