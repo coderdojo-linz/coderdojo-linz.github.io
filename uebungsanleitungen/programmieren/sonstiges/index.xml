@@ -54,6 +54,17 @@ In dieser Übung probieren wir, ein Programm direkt in Maschinensprache zu progr
     </item>
     
     <item>
+      <title>Moonhack - Rust Edition</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/moonhack-rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/moonhack-rust/</guid>
+      <description>Moonhack - Rust Edition In dieser Übung werden wir uns ein klein wenig mit der Programmiersprache &amp;ldquo;Rust&amp;rdquo; auseinandersetzen. Es handelt sich dabei um eine relativ neue Sprache die viel Wert darauf legt, mögliche typische Fehler bereits während dem Programmieren zu finden und zu beseitigen.
+Vorbereitung Du wirst folgende Dinge brauchen um du brauchen:
+ Rust Compiler und Cargo - Anleitung in Deutsch oder die Offizielle Anleitung Eine Programmierumgebung - Visual Studio Code  In VS Code bitte auch die Erweiterung Rust Analyzer installieren.</description>
+    </item>
+    
+    <item>
       <title>Space Shooter in C</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/space-shooter-c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
