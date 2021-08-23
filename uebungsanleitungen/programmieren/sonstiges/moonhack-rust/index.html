@@ -157,10 +157,11 @@
 <li><a href="#anlegen-des-projekts">Anlegen des Projekts</a></li>
 <li><a href="#grafiken-und-sounds-bereitstellen">Grafiken und Sounds bereitstellen</a></li>
 <li><a href="#cargo-toml-bauen-und-bibliotheken">Cargo.toml - Bauen und Bibliotheken</a></li>
+<li><a href="#bevy-framework-starten">Bevy-Framework starten</a></li>
 </ul></li>
-<li><a href="#todo">TODO</a>
+<li><a href="#plugins-hinzufügen">Plugins hinzufügen</a>
 <ul>
-<li><a href="#probleme-beheben">Probleme beheben</a></li>
+<li><a href="#mondlandefähre">Mondlandefähre</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -227,11 +228,309 @@
 
 <p>Wir möchten unser Moonhack zuerst gerne auf unserem Computer Spielen und anschließend das ganze noch im Web für alle anderen zur Verfügung stellen.</p>
 
-<h1 id="todo">TODO</h1>
+<p>Als Spiele-Framework werden wir in unserem Fall das <a href="https://bevyengine.org/" target="_blank"><em>Bevy - Framework</em></a> verwenden. Damit das mit dem Ton Abspielen auch ordentlich funktioniert werden wir zusätzlich auch das <a href="https://docs.rs/kira/0.5.3/kira/" target="_blank"><em>bevy-kira Framework</em></a> hinzufügen. Unser <em>cargo.toml</em> sieht demnach so aus:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[package]
+name = <span style="color:#a31515">&#34;moonhack-rust&#34;</span>
+version = <span style="color:#a31515">&#34;0.1.0&#34;</span>
+authors = [<span style="color:#a31515">&#34;dein name&#34;</span>]
 
-<h2 id="probleme-beheben">Probleme beheben</h2>
+[dependencies]
+bevy_kira_audio = <span style="">{</span>version = <span style="color:#a31515">&#34;0.5.0&#34;</span>, default<span style="">-</span>features = <span style="color:#00f">false</span>, features = [<span style="color:#a31515">&#34;ogg&#34;</span>] <span style="">}</span>
+bevy = <span style="color:#a31515">&#34;0.5.0&#34;</span></code></pre></div>
+<h2 id="bevy-framework-starten">Bevy-Framework starten</h2>
 
-<p>Den Quellcode einer lauffähigen Version des Spiels zum Vergleichen <a href="https://github.com/weidingerhp/moonhack-rust" target="_blank">findest du hier</a>.</p>
+<p>Nun wird es Zeit, unser Programm zu erstellen.</p>
+
+<p>Das Bevy-Framework benutzt
+- sogenannte &ldquo;systems&rdquo; um die Abläufe im Spiel zu koordinieren
+- Resources um den Zugriff auf Spiel-Weite Ressourcen (Wie Grafiken, Sound, &hellip;) zu ermöglichen
+- Bundles um die Spielobjekte zu verwalten</p>
+
+<p>Beim Start werden wir das startup-system verwenden.</p>
+
+<p>main.rs</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#00f">pub</span> <span style="color:#00f">fn</span> main() {
+    <span style="color:#00f">let</span> <span style="color:#00f">mut</span> app = App::build();
+    app.insert_resource(ClearColor(Color::rgb(0.04, 0.04, 0.04)))
+        .insert_resource(WindowDescriptor {
+            title: <span style="color:#a31515">&#34;CoderDojo MoonHack&#34;</span>.to_string(),
+            width: 640.,
+            height: 480.,
+            scale_factor_override: Some(1.5),
+            ..Default::default()
+        })
+        .add_plugins(DefaultPlugins)
+        .add_startup_system(setup.system())
+        .add_startup_stage(<span style="color:#a31515">&#34;background&#34;</span>, SystemStage::single(spawn_background.system()));
+
+        app.run();
+}
+
+<span style="color:#00f">fn</span> setup(
+    <span style="color:#00f">mut</span> commands: <span style="color:#2b91af">Commands</span>,
+    asset_server: <span style="color:#2b91af">Res</span>&lt;AssetServer&gt;,
+    texture_atlases: <span style="color:#2b91af">ResMut</span>&lt;Assets&lt;TextureAtlas&gt;&gt;,
+    materials: <span style="color:#2b91af">ResMut</span>&lt;Assets&lt;ColorMaterial&gt;&gt;
+) {
+    commands.spawn_bundle(OrthographicCameraBundle::new_2d());
+    commands.insert_resource(GameAssets::new(materials, texture_atlases, asset_server));
+}
+
+<span style="color:#00f">fn</span> spawn_background(
+    <span style="color:#00f">mut</span> commands: <span style="color:#2b91af">Commands</span>,
+    game_assets: <span style="color:#2b91af">Res</span>&lt;GameAssets&gt;,
+) {
+    commands.spawn_bundle(SpriteBundle {
+        material: <span style="color:#2b91af">game_assets</span>.background.clone(), 
+        transform: <span style="color:#2b91af">Transform</span> {
+            translation: <span style="color:#2b91af">Vec3</span>::new(0., 0., 1.),
+            scale: <span style="color:#2b91af">Vec3</span>::new(0.7, 0.7, 1.), <span style="color:#008000">// durch Probieren rausgefunden 
+</span><span style="color:#008000"></span>            ..Default::default()
+        },
+        ..Default::default()
+    });
+}
+
+
+<span style="color:#008000">// Game-Assets (Grafiken und Töne) zur späteren Verwendung im Spiel
+</span><span style="color:#008000"></span><span style="color:#00f">struct</span> <span style="color:#2b91af">GameAssets</span> {
+    background: <span style="color:#2b91af">Handle</span>&lt;ColorMaterial&gt;,
+    lunar_module: <span style="color:#2b91af">Handle</span>&lt;TextureAtlas&gt;,
+    sound_thruster: <span style="color:#2b91af">Handle</span>&lt;AudioSource&gt;,
+    sound_landed: <span style="color:#2b91af">Handle</span>&lt;AudioSource&gt;,
+    sound_crashed: <span style="color:#2b91af">Handle</span>&lt;AudioSource&gt;,
+}
+
+<span style="color:#00f">impl</span> GameAssets {
+    <span style="color:#00f">fn</span> new(<span style="color:#00f">mut</span> materials: <span style="color:#2b91af">ResMut</span>&lt;Assets&lt;ColorMaterial&gt;&gt;, <span style="color:#00f">mut</span> texture_atlases: <span style="color:#2b91af">ResMut</span>&lt;Assets&lt;TextureAtlas&gt;&gt;, asset_server: <span style="color:#2b91af">Res</span>&lt;AssetServer&gt;) -&gt; <span style="color:#2b91af">Self</span> { 
+
+        <span style="color:#00f">let</span> lunar_lander_handle = asset_server.load(<span style="color:#a31515">&#34;lunar_module_map.png&#34;</span>);
+        
+        Self { 
+            background: <span style="color:#2b91af">materials</span>.add(asset_server.load(<span style="color:#a31515">&#34;background.png&#34;</span>).into()), 
+            lunar_module: <span style="color:#2b91af">texture_atlases</span>.add(TextureAtlas::from_grid(lunar_lander_handle, Vec2::new(128., 96.), 2, 2)), 
+            sound_thruster: <span style="color:#2b91af">asset_server</span>.load(<span style="color:#a31515">&#34;thrusters.ogg&#34;</span>).into(), 
+            sound_landed: <span style="color:#2b91af">asset_server</span>.load(<span style="color:#a31515">&#34;landed.ogg&#34;</span>).into(), 
+            sound_crashed: <span style="color:#2b91af">asset_server</span>.load(<span style="color:#a31515">&#34;problem.ogg&#34;</span>).into(), 
+        } 
+    }
+}
+</code></pre></div>
+<p>Wenn du das Spiel jetzt startest, siehst du ein Fenster mit dem Hintergrund am Bildschirm.</p>
+
+<h1 id="plugins-hinzufügen">Plugins hinzufügen</h1>
+
+<p>Damit wir später auch Töne ordentlich ausgeben können (Triebwerk und Funk auf unterschiedlichen Kanälen) werden wir noch einige Plugins hinzufügen.
+Das vollständige main.rs sieht dann folgendermaßen aus:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#00f">use</span> bevy_kira_audio::{AudioChannel, AudioPlugin, AudioSource};
+<span style="color:#00f">use</span> bevy;
+<span style="color:#00f">use</span> bevy::math::{Vec2, Vec3};
+<span style="color:#00f">use</span> bevy::prelude::{*};
+<span style="color:#00f">use</span> bevy::sprite::{ColorMaterial, TextureAtlas};
+<span style="color:#00f">use</span> lunar_lander::LunarLander;
+<span style="color:#00f">pub</span> <span style="color:#00f">mod</span> lunar_lander;
+
+<span style="color:#00f">struct</span> <span style="color:#2b91af">GameAssets</span> {
+    background: <span style="color:#2b91af">Handle</span>&lt;ColorMaterial&gt;,
+    lunar_module: <span style="color:#2b91af">Handle</span>&lt;TextureAtlas&gt;,
+    sound_thruster: <span style="color:#2b91af">Handle</span>&lt;AudioSource&gt;,
+    sound_landed: <span style="color:#2b91af">Handle</span>&lt;AudioSource&gt;,
+    sound_crashed: <span style="color:#2b91af">Handle</span>&lt;AudioSource&gt;,
+}
+
+<span style="color:#00f">impl</span> GameAssets {
+    <span style="color:#00f">fn</span> new(<span style="color:#00f">mut</span> materials: <span style="color:#2b91af">ResMut</span>&lt;Assets&lt;ColorMaterial&gt;&gt;, <span style="color:#00f">mut</span> texture_atlases: <span style="color:#2b91af">ResMut</span>&lt;Assets&lt;TextureAtlas&gt;&gt;, asset_server: <span style="color:#2b91af">Res</span>&lt;AssetServer&gt;) -&gt; <span style="color:#2b91af">Self</span> { 
+
+        <span style="color:#00f">let</span> lunar_lander_handle = asset_server.load(<span style="color:#a31515">&#34;lunar_module_map.png&#34;</span>);
+        
+        Self { 
+            background: <span style="color:#2b91af">materials</span>.add(asset_server.load(<span style="color:#a31515">&#34;background.png&#34;</span>).into()), 
+            lunar_module: <span style="color:#2b91af">texture_atlases</span>.add(TextureAtlas::from_grid(lunar_lander_handle, Vec2::new(128., 96.), 2, 2)), 
+            sound_thruster: <span style="color:#2b91af">asset_server</span>.load(<span style="color:#a31515">&#34;thrusters.ogg&#34;</span>).into(), 
+            sound_landed: <span style="color:#2b91af">asset_server</span>.load(<span style="color:#a31515">&#34;landed.ogg&#34;</span>).into(), 
+            sound_crashed: <span style="color:#2b91af">asset_server</span>.load(<span style="color:#a31515">&#34;problem.ogg&#34;</span>).into(), 
+        } 
+    }
+}
+
+<span style="color:#00f">pub</span> <span style="color:#00f">struct</span> <span style="color:#2b91af">AudioChannels</span> {
+    thruster: <span style="color:#2b91af">AudioChannel</span>,
+    radio: <span style="color:#2b91af">AudioChannel</span>,   
+}
+
+<span style="color:#00f">impl</span> AudioChannels {
+    <span style="color:#00f">fn</span> new() -&gt; <span style="color:#2b91af">Self</span> {
+        Self {
+            thruster: <span style="color:#2b91af">AudioChannel</span>::new(<span style="color:#a31515">&#34;thruster&#34;</span>.to_owned()),
+            radio: <span style="color:#2b91af">AudioChannel</span>::new(<span style="color:#a31515">&#34;radio&#34;</span>.to_owned()),
+        }
+    }
+}
+
+<span style="color:#00f">pub</span> <span style="color:#00f">fn</span> main() {
+    <span style="color:#00f">let</span> <span style="color:#00f">mut</span> app = App::build(); <span style="color:#008000">// mut - heisst &#34;mutable&#34; - Veränderbar. &#34;app&#34; wird intern durch die inserts verändert.
+</span><span style="color:#008000"></span>    app.insert_resource(ClearColor(Color::rgb(0.04, 0.04, 0.04)))
+        .insert_resource(WindowDescriptor {
+            title: <span style="color:#a31515">&#34;CoderDojo MoonHack&#34;</span>.to_string(),
+            width: 640.,
+            height: 480.,
+            scale_factor_override: Some(1.5),
+            ..Default::default()
+        })
+        .insert_resource(AudioChannels::new()) <span style="color:#008000">// Audiochannels für kira - werden später noch gebraucht
+</span><span style="color:#008000"></span>        .add_plugins(DefaultPlugins)
+        .add_plugin(AudioPlugin) <span style="color:#008000">// Initialisieren von Kira
+</span><span style="color:#008000"></span>        .add_plugin(LunarLander) <span style="color:#008000">// Hier kommt die Mondlandefähre ins Spiel
+</span><span style="color:#008000"></span>        .add_startup_system(setup.system())
+        .add_startup_stage(<span style="color:#a31515">&#34;background&#34;</span>, SystemStage::single(spawn_background.system()));
+        
+        app.run();
+}
+
+<span style="color:#00f">fn</span> setup(
+    <span style="color:#00f">mut</span> commands: <span style="color:#2b91af">Commands</span>,
+    asset_server: <span style="color:#2b91af">Res</span>&lt;AssetServer&gt;,
+    texture_atlases: <span style="color:#2b91af">ResMut</span>&lt;Assets&lt;TextureAtlas&gt;&gt;,
+    materials: <span style="color:#2b91af">ResMut</span>&lt;Assets&lt;ColorMaterial&gt;&gt;
+) {
+    commands.spawn_bundle(OrthographicCameraBundle::new_2d());
+    commands.insert_resource(GameAssets::new(materials, texture_atlases, asset_server));
+}
+
+<span style="color:#00f">fn</span> spawn_background(
+    <span style="color:#00f">mut</span> commands: <span style="color:#2b91af">Commands</span>,
+    game_assets: <span style="color:#2b91af">Res</span>&lt;GameAssets&gt;,
+) {
+    commands.spawn_bundle(SpriteBundle {
+        material: <span style="color:#2b91af">game_assets</span>.background.clone(), 
+        transform: <span style="color:#2b91af">Transform</span> {
+            translation: <span style="color:#2b91af">Vec3</span>::new(0., 0., 1.),
+            scale: <span style="color:#2b91af">Vec3</span>::new(0.7, 0.7, 1.), <span style="color:#008000">// durch Probieren rausgefunden 
+</span><span style="color:#008000"></span>            ..Default::default()
+        },
+        ..Default::default()
+    });
+}
+</code></pre></div>
+<h2 id="mondlandefähre">Mondlandefähre</h2>
+
+<p>Nun fehlt nur noch der Code für die Mondlandefähre:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#00f">use</span> bevy_kira_audio::Audio;
+<span style="color:#00f">use</span> bevy::prelude::{*};
+<span style="color:#00f">use</span> <span style="color:#00f">crate</span>::{AudioChannels, GameAssets};
+
+<span style="color:#00f">pub</span> <span style="color:#00f">struct</span> <span style="color:#2b91af">LanderStart</span>;
+
+<span style="color:#00f">pub</span> <span style="color:#00f">struct</span> <span style="color:#2b91af">LunarLanderProperties</span> {
+    <span style="color:#00f">pub</span> velocity: <span style="color:#2b91af">f32</span>,
+    <span style="color:#00f">pub</span> fuel: <span style="color:#2b91af">f32</span>,
+    <span style="color:#00f">pub</span> touchdown: <span style="color:#2b91af">bool</span>,
+    <span style="color:#00f">pub</span> thrusting: <span style="color:#2b91af">bool</span>,
+}
+
+<span style="color:#00f">pub</span> <span style="color:#00f">struct</span> <span style="color:#2b91af">LunarLander</span>;
+
+<span style="color:#00f">impl</span> Plugin <span style="color:#00f">for</span> LunarLander {
+    <span style="color:#00f">fn</span> build(&amp;self, app: <span style="color:#00f">&amp;</span><span style="color:#2b91af">mut</span> AppBuilder) {
+        app
+            .add_startup_stage(<span style="color:#a31515">&#34;spawn_lander&#34;</span>, SystemStage::single(spawn_lander.system()))
+            .add_system(lander_input.system())
+            .add_system(lander_run.system());
+    }
+}
+
+<span style="color:#00f">fn</span> spawn_lander(
+    <span style="color:#00f">mut</span> commands: <span style="color:#2b91af">Commands</span>,
+    game_assets: <span style="color:#2b91af">Res</span>&lt;GameAssets&gt;
+) 
+{
+    commands.spawn_bundle(SpriteSheetBundle {
+        texture_atlas: <span style="color:#2b91af">game_assets</span>.lunar_module.clone(),
+        transform: <span style="color:#2b91af">Transform</span> {
+            translation: <span style="color:#2b91af">Vec3</span>::new(0., 150., 5.),
+            scale: <span style="color:#2b91af">Vec3</span>::new(0.5, 0.5, 1.),
+            ..Default::default()
+        },
+
+        ..Default::default()
+    })
+    .insert(LunarLander)
+    .insert(LunarLanderProperties {
+        velocity: 2.,
+        fuel: 100.,
+        touchdown: <span style="color:#2b91af">false</span>,
+        thrusting: <span style="color:#2b91af">false</span>,
+    });
+}
+
+<span style="color:#008000">// aktualisieren des Landers (z.B. Position und Landung)
+</span><span style="color:#008000"></span><span style="color:#00f">fn</span> lander_run(
+    audio: <span style="color:#2b91af">Res</span>&lt;Audio&gt;,
+    audiochannels: <span style="color:#2b91af">Res</span>&lt;AudioChannels&gt;,
+    game_assets: <span style="color:#2b91af">Res</span>&lt;GameAssets&gt;,
+    <span style="color:#00f">mut</span> query: <span style="color:#2b91af">Query</span>&lt;(&amp;<span style="color:#00f">mut</span> LunarLanderProperties, &amp;<span style="color:#00f">mut</span> TextureAtlasSprite, &amp;<span style="color:#00f">mut</span> Transform), With&lt;LunarLander&gt; &gt;    
+) {
+    <span style="color:#00f">if</span> <span style="color:#00f">let</span> Ok((<span style="color:#00f">mut</span> properties, <span style="color:#00f">mut</span> sprite, <span style="color:#00f">mut</span> transform)) = query.single_mut() {
+        <span style="color:#00f">if</span> properties.touchdown {
+            <span style="color:#00f">return</span>;
+        }
+
+        <span style="color:#00f">if</span> (transform.translation.y - properties.velocity) &lt;= -200. {
+            transform.translation.y;
+            properties.touchdown = <span style="color:#00f">true</span>;
+
+            <span style="color:#00f">if</span> properties.velocity &gt; 1. {
+                sprite.index = 2;
+                println!(<span style="color:#a31515">&#34;crashed&#34;</span>);
+                audio.play_in_channel(game_assets.sound_crashed.clone(), &amp;audiochannels.radio);
+            } <span style="color:#00f">else</span> {
+                sprite.index = 0;
+                println!(<span style="color:#a31515">&#34;Landed sucessfully&#34;</span>);
+                audio.play_in_channel(game_assets.sound_landed.clone(), &amp;audiochannels.radio);
+            }
+            <span style="color:#00f">return</span>;
+        }
+
+        transform.translation.y -= properties.velocity;
+
+    }
+}
+
+<span style="color:#008000">// Eingaben verarbeiten die für den Lander relevant sind
+</span><span style="color:#008000"></span><span style="color:#00f">fn</span> lander_input(
+    keyboard: <span style="color:#2b91af">Res</span>&lt;Input&lt;KeyCode&gt;&gt;,
+    mouse_button_input_events: <span style="color:#2b91af">Res</span>&lt;Input&lt;MouseButton&gt;&gt;,
+    audio: <span style="color:#2b91af">Res</span>&lt;Audio&gt;,
+    audiochannels: <span style="color:#2b91af">Res</span>&lt;AudioChannels&gt;,
+    game_assets: <span style="color:#2b91af">Res</span>&lt;GameAssets&gt;,
+    <span style="color:#00f">mut</span> query: <span style="color:#2b91af">Query</span>&lt;(&amp;<span style="color:#00f">mut</span> LunarLanderProperties, &amp;<span style="color:#00f">mut</span> TextureAtlasSprite), With&lt;LunarLander&gt; &gt;    
+) 
+{
+    <span style="color:#00f">if</span> <span style="color:#00f">let</span> Ok((<span style="color:#00f">mut</span> properties, <span style="color:#00f">mut</span> sprite)) = query.single_mut() {
+        <span style="color:#00f">if</span> properties.touchdown {
+            audio.stop_channel(&amp;audiochannels.thruster);
+            <span style="color:#00f">return</span>;
+        }
+        
+        <span style="color:#00f">if</span> (keyboard.pressed(KeyCode::Space) || mouse_button_input_events.pressed(MouseButton::Left)) &amp;&amp; (properties.fuel &gt; 0.) {
+            <span style="color:#00f">if</span> !properties.thrusting {
+                sprite.index = 1;
+                audio.play_looped_in_channel(game_assets.sound_thruster.clone(), &amp;audiochannels.thruster);
+            }
+            properties.velocity -= 0.1;
+            properties.thrusting = <span style="color:#00f">true</span>;
+        } <span style="color:#00f">else</span> {
+            <span style="color:#00f">if</span> properties.thrusting {
+                sprite.index = 0;
+                audio.stop_channel(&amp;audiochannels.thruster);
+            }
+            properties.velocity += 0.03;
+            properties.thrusting = <span style="color:#00f">false</span>;
+        }
+    }
+}
+</code></pre></div>
+<p>Das Vollstädnige Programm das auch als WASM kompilert werden kann <a href="https://github.com/weidingerhp/moonhack-rust" target="_blank">findest du hier</a>.</p>
  </div>
         </div>
     </div>
