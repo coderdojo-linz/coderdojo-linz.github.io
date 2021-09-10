@@ -58,6 +58,16 @@ function setup() { createCanvas(400, 400); } function draw() { background(220); 
     </item>
     
     <item>
+      <title>Spaß mit Bezier-Kurven</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/bezier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/bezier/</guid>
+      <description>Spaß mit Bezier-Kuven Einleitung Kaum jemand von euch wird schon einmal etwas von Bezier-Kurven gehört haben. Unsere Welt ist aber voll davon. Sie werden beim Design von physischen Dingen wie Autos genauso eingesetzt wie bei Computerspielen. Im folgenden Bild siehst du ein Beispiel. Wenn man sich die Form des Autos ansieht, entdeckt man eine Menge Kurven. Diese Kurven sind Bezier-Kurven.
+Im Bild sind bei weitem nicht alle Bezier-Kurven hervorgehoben. Findest du noch weitere?</description>
+    </item>
+    
+    <item>
       <title>Yeti Xmas Game mit p5.js</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/yeti-xmas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
