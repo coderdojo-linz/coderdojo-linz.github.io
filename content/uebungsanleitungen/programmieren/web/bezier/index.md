@@ -66,7 +66,7 @@ Verschiebt das in der Grafik markierte Dreieck. Seht ihr, wie sich die Bezier-Ku
 
 {{< imgblock "img/bezier-html-svg.png" "Bezier in HTML und SVG" 5 >}} In HTML und SVG ist Unterstützung für Bezier-Kurven eingebaut. Das möchten wir jetzt ausprobieren.
 
-Öffne [https://stackblitz.com/edit/svg-bezier-starter](https://stackblitz.com/edit/svg-bezier-starter) im Browser. Der HTML-Code ist unvollständig. Unten siehst du den fertigen Code und in der Grafik siehst du, wie das Endergebnis aussehen soll.
+Öffne [https://stackblitz.com/edit/svg-bezier-starter](https://stackblitz.com/edit/svg-bezier-starter) im Browser. Der HTML-Code ist unvollständig. Unten siehst du den fertigen Code und in der Grafik siehst du, wie das Endergebnis aussehen soll. Ergänze den Code entsprechend der Anleitung unten. Kopiere ihn nicht, sondern tippe ihn ein. So übst du tippen.
 
 Achte im Code auf die `<path ...>`-Elemente. Dort findest du die Befehle `H` für *horizontale Linie*, `Q` für *quadratische Bezier-Kurve* und `C` für *kubische Bezier-Kurve*. Experimente mit den Koordinaten und versuche zu verstehen, wo die Start-, End- und Kontrollpunkte im Code zu finden sind.
 
@@ -126,14 +126,87 @@ Suchst du eine Herausforderung? Versuche ein Herz mit Bezier-Kurven mit SVG zu z
 
 Falls du schon etwas älter bist, Interesse an Mathematik hast und schon gut Englisch verstehst, schau dir die Webseite [https://www.drububu.com/animation/beziercurves/index.html](https://www.drububu.com/animation/beziercurves/index.html) an. Dort wird erklärt, wie man Bezier-Kurven selbst berechnen und mit SVG zeichnen kann.
 
-## Bezier-Kurven in p5js
+## Bezier-Kuven in p5js
 
-{{< imgblock "img/p5js-bezier.png" "Bezier in p5js" 5 >}} Auch die Spieleplattform [p5js](https://p5js.org/) beherrscht Bezier-Kurven. Das möchten wir in der folgenden Übung probieren.
+### Quadratische Bezier-Kurve
 
-Öffne [https://stackblitz.com/edit/p5-bezier-starter](https://stackblitz.com/edit/p5-bezier-starter) im Browser. Der TypeScript-Code ist unvollständig. Unten siehst du den fertigen Code und in der Grafik siehst du, wie das Endergebnis aussehen soll. Die Bezier-Kurve ändert sich je nach Mausposition.
+{{< imgblock "img/qudratic-bezier-p5js.png" "Bezier in p5js" 5 >}} Auch die Spieleplattform [p5js](https://p5js.org/) beherrscht Bezier-Kurven. Das möchten wir in der folgenden Übung probieren.
+
+Öffne [https://stackblitz.com/edit/p5-quadratic-bezier-starter](https://stackblitz.com/edit/p5-quadratic-bezier-starter) im Browser. Der TypeScript-Code ist unvollständig. Unten siehst du den fertigen Code und in der Grafik siehst du, wie das Endergebnis aussehen soll. Ergänze den Code entsprechend der Anleitung unten. Kopiere ihn nicht, sondern tippe ihn ein. So übst du tippen.
+
+Achte auf die Kommentare im Code. Falls du die Übung ohne CoderDojo-Mentorin machst, folgende den Anleitungen in den Kommentaren. In einem Workshop mit Mentor-Unterstützung werden wir den Code genau durchsprechen.
+
+Erkennst du, um welche Art von Bezier-Kurve es sich handelt? Es ist eine quadratische Bezier-Kurve, weil es drei Punkte gibt: Startpunkt, Endpunkt und Kontrollpunkt. Der Kontrollpunkt wird mit der Maus bewegt.
 
 ```typescript
-// Import stylesheets
+import './style.css';
+import p5 = require('p5');
+
+function setup(p: p5) {
+  p.createCanvas(510, 500);
+}
+
+function draw(p: p5) {
+  p.background('white');
+  p.noFill();
+
+  // Startpunkt
+  const startVec = p.createVector(5, 205);
+  // Endpunkt
+  const endVec = p.createVector(505, 205);
+  // Kontrollpunkt (wird durch Maus gesteuert)
+  const mouseVec = p.createVector(p.mouseX, p.mouseY);
+  
+  p.colorMode(p.HSB, 1);
+  p.strokeWeight(1);
+  // Experimentiere mit diesem Wert+ 
+  // Probiere erst 0.5, dann 0.25, |
+  // dann 0.125, etc. Erkennst du, |
+  // was passiert?                 |
+  //                               V
+  for (let i = 0; i <= 1.001; i += 0.05) {
+    p.stroke(i, 255, 255);
+
+    // Teile den Vector vom Startpunkt zum Kontrollpunkt
+    let v1: p5.Vector = <any>p5.Vector.lerp(startVec, mouseVec, i);
+    p.circle(v1.x, v1.y, 3);
+
+    // Teile den Vector vom Kontrollpunkt zum Endpunkt
+    let v2: p5.Vector = <any>p5.Vector.lerp(mouseVec, endVec, i);
+    p.circle(v2.x, v2.y, 3);
+
+    // Verbinde die Ergebnisse der vorherigen Teilungen
+    p.line(v1.x, v1.y, v2.x, v2.y);
+  }
+
+  // Mit dem Code oben haben wir selbst eine quadratische Bezier-Kurve
+  // hergeleitet. p5js kann sie aber auch direkt zeichnen. Dafür verwenden
+  // wir folgenden Code:
+  p.stroke('fuchsia');
+  p.strokeWeight(5);
+  p.beginShape();
+  p.vertex(startVec.x, startVec.y);
+  p.quadraticVertex(mouseVec.x, mouseVec.y, endVec.x, endVec.y);
+  p.endShape();
+}
+
+const p = new p5((p: p5) => {
+  p.setup = () => setup(p);
+  p.draw = () => draw(p);
+  return p;
+});
+```
+{{< /imgblock >}}
+
+Du kannst dir die fertige Lösung unter [https://stackblitz.com/edit/p5-quadratic-bezier](https://stackblitz.com/edit/p5-quadratic-bezier) ansehen.
+
+### Kubische Bezier-Kurven
+
+{{< imgblock "img/p5js-bezier.png" "Bezier in p5js" 5 >}} Jetzt gehen wir den nächsten Schritt und probieren eine kubische Bezier-Kurve in p5js.
+
+Öffne [https://stackblitz.com/edit/p5-bezier-starter](https://stackblitz.com/edit/p5-bezier-starter) im Browser. Der TypeScript-Code ist unvollständig. Unten siehst du den fertigen Code und in der Grafik siehst du, wie das Endergebnis aussehen soll. Die Bezier-Kurve ändert sich je nach Mausposition. Ergänze den Code entsprechend der Anleitung unten. Kopiere ihn nicht, sondern tippe ihn ein. So übst du tippen.
+
+```typescript
 import './style.css';
 import p5 = require('p5');
 
@@ -182,4 +255,8 @@ const p = new p5((p: p5) => {
 
 Du kannst dir die fertige Lösung unter [https://stackblitz.com/edit/p5-bezier](https://stackblitz.com/edit/p5-bezier) ansehen.
 
-Verstehst du Englisch schon recht gut und möchtest du mehr über Bezier-Kurven in p5js lernen? Ein super Video zu dem Thema findest du unter [https://youtu.be/enNfb6p3j_g](https://youtu.be/enNfb6p3j_g).
+## Weitere Übungen für fortgeschrittene Coder
+
+* In der Praxis muss man grafische Objekte z.B. in Spielen oft verschieben und rotieren. Das geht auch mit Bezier-Kurven. Schau dir das Codebeispiel [https://stackblitz.com/edit/p5-quadratic-bezier-move-rotate](https://stackblitz.com/edit/p5-quadratic-bezier-move-rotate) an und experimentiere damit. Fallen dir ähnliche Beispiele ein, mit denen du schöne Muster mit Bezier-Kurven zeichnen kannst?
+
+* Verstehst du Englisch schon recht gut und möchtest du mehr über Bezier-Kurven in p5js lernen? Ein super Video zu dem Thema findest du unter [https://youtu.be/enNfb6p3j_g](https://youtu.be/enNfb6p3j_g).
