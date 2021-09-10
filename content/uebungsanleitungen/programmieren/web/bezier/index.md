@@ -1,7 +1,7 @@
 ---
 title: "Spaß mit Bezier-Kurven"
 description: "Wir schauen uns an, was Bezier-Kurven sind und experimentieren mit ihnen in HTML, p5js und TypeScript"
-level: 3
+level: 2
 categories:
 - HTML
 - SVG
