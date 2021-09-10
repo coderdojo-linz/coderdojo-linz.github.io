@@ -124,6 +124,8 @@ Du kannst dir die fertige Lösung unter [https://stackblitz.com/edit/svg-bezier]
 
 Suchst du eine Herausforderung? Versuche ein Herz mit Bezier-Kurven mit SVG zu zeichnen.
 
+Falls du schon etwas älter bist, Interesse an Mathematik hast und schon gut Englisch verstehst, schau dir die Webseite [https://www.drububu.com/animation/beziercurves/index.html](https://www.drububu.com/animation/beziercurves/index.html) an. Dort wird erklärt, wie man Bezier-Kurven selbst berechnen und mit SVG zeichnen kann.
+
 ## Bezier-Kurven in p5js
 
 {{< imgblock "img/p5js-bezier.png" "Bezier in p5js" 5 >}} Auch die Spieleplattform [p5js](https://p5js.org/) beherrscht Bezier-Kurven. Das möchten wir in der folgenden Übung probieren.
@@ -179,3 +181,5 @@ const p = new p5((p: p5) => {
 {{< /imgblock >}}
 
 Du kannst dir die fertige Lösung unter [https://stackblitz.com/edit/p5-bezier](https://stackblitz.com/edit/p5-bezier) ansehen.
+
+Verstehst du Englisch schon recht gut und möchtest du mehr über Bezier-Kurven in p5js lernen? Ein super Video zu dem Thema findest du unter [https://youtu.be/enNfb6p3j_g](https://youtu.be/enNfb6p3j_g).
