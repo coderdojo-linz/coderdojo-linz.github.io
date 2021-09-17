@@ -150,6 +150,16 @@ Spielbeschreibung Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Z
     </item>
     
     <item>
+      <title>Monster Run</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/monster-run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/monster-run/</guid>
+      <description>Monster Run Einleitung Wisst ihr was ein Jump &amp;lsquo;n&amp;rsquo; Run-Spiel ist? Man steuert als Spielerin oder Spieler eine kleine Figur und läuft mir ihr durch ein Labyrinth. Meistens muss sich dabei gegen verschiedene Gegner behaupten. In diesem Workshop zeigt euch Rainer Grundlagen, die man zum Programmieren eines Jump &amp;lsquo;n&amp;rsquo; Run in p5js braucht. Er baut mich euch einen Monsterspaziergang.
+Grafiken In dieser Übung verwenden wir Grafiken der Plattform craftpix.net. Du findest dort viele Grafiken für Spiele aller Art.</description>
+    </item>
+    
+    <item>
       <title>Präsentationen mit HTML statt PowerPoint</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-praesentationen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
