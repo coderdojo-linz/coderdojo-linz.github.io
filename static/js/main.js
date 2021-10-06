@@ -127,7 +127,7 @@ function loadEvents(eventsTable) {
         var formattedBeginTime = '15:00';
         var formattedEndTime = '19:00';
 
-        if (event.location === 'Stadtbibliothek Schärding') {
+        if (event.location.includes('Stadtbibliothek Schärding')) {
           var formattedBeginTime = '15:00';
           var formattedEndTime = '17:00';
         }
@@ -190,7 +190,7 @@ function loadEvents(eventsTable) {
           '</b>';
         row += '</div>';
 
-        if (event.location === 'Stadtbibliothek Schärding') {
+        if (event.location.includes('Stadtbibliothek Schärding')) {
           row +=
             "<div class='workshop'><h3><small><span class='d-inline d-sm-none'>" +
             formattedDate +
@@ -251,7 +251,7 @@ function loadEvents(eventsTable) {
             if (
               workshop.prerequisites &&
               workshop.prerequisites !== '-' &&
-              event.location !== 'Stadtbibliothek Schärding'
+              !event.location.includes('Stadtbibliothek Schärding')
             ) {
               row += '<p><strong>Voraussetzungen</strong></p>';
               if (workshop.prerequisites) {
@@ -300,7 +300,7 @@ function loadEvents(eventsTable) {
             row += '</div>';
           });
         } else {
-          if (event.location !== 'Stadtbibliothek Schärding') {
+          if (!event.location.includes('Stadtbibliothek Schärding')) {
             row +=
               '<p>Die Workshops werden zwei Tage vor dem Event bekanntgegeben.</p>';
           }
