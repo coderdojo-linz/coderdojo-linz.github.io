@@ -81,7 +81,10 @@ function loadEventsOverview(eventsTable) {
         var row = '';
         var date = moment(new Date(event.date)).startOf('day');
         var formattedDate = date.format('DD.MM.YYYY');
-        var description = converter.makeHtml(event.location).replace(/<p>/, '').replace(/<\/p>/, '');
+        var description = converter
+          .makeHtml(event.location)
+          .replace(/<p>/, '')
+          .replace(/<\/p>/, '');
         if (event.type == 'CoderDojo Virtual') {
           description = 'Online Event';
         }
@@ -124,15 +127,10 @@ function loadEvents(eventsTable) {
         var formattedBeginTime = '15:00';
         var formattedEndTime = '19:00';
 
-        if (
-            moment(event.date).startOf('day').unix() ===
-              moment(new Date(2021, 7, 6)).unix() ||
-            moment(event.date).startOf('day').unix() ===
-              moment(new Date(2021, 7, 20)).unix()
-          ) {
-            var formattedBeginTime = '14:00';
-            var formattedEndTime = '18:00';
-          } 
+        if (event.location === 'Stadtbibliothek Schärding') {
+          var formattedBeginTime = '15:00';
+          var formattedEndTime = '17:00';
+        }
 
         if (event && event.workshops.length) {
           formattedBeginTime = moment(
@@ -192,14 +190,16 @@ function loadEvents(eventsTable) {
           '</b>';
         row += '</div>';
 
-        if (
-          moment(event.date).startOf('day').unix() ===
-            moment(new Date(2021, 7, 6)).unix() ||
-          moment(event.date).startOf('day').unix() ===
-            moment(new Date(2021, 7, 20)).unix()
-        ) {
+        if (event.location === 'Stadtbibliothek Schärding') {
           row +=
-            '<p>Geführte Workshops für Programmier- und Elektronikeinsteiger und freies Programmieren für Fortgeschrittene die an ihren eigenen Projekten arbeiten möchten.</p>';
+            "<div class='workshop'><h3><small><span class='d-inline d-sm-none'>" +
+            formattedDate +
+            '</span> ' +
+            formattedBeginTime +
+            ' - ' +
+            formattedEndTime +
+            '</small><br/>Mein erstes Computer-Spiel 😸💻</h3><p>Du hast noch nie etwas programmiert, bist aber neugierig, wie das funktioniert? Dann ist das der richtige Workshop für dich! Du wirst mit Scratch dein erstes Computerspiel selbst bauen.</p>' +
+            '<p><b>Anmeldung: </b><a href="mailto: pia@linz.coderdojo.net">pia@linz.coderdojo.net</a></div>';
         }
 
         // event time xs
@@ -214,7 +214,8 @@ function loadEvents(eventsTable) {
           moment(event.date).startOf('day').unix() ===
             moment(new Date(2021, 7, 20)).unix()
         ) {
-          row += "<p class=\"text-center\"><a class=\"btn btn-primary\" href='/linz-codes/'>Zum Programm ...</a></p>";
+          row +=
+            '<p class="text-center"><a class="btn btn-primary" href=\'/linz-codes/\'>Zum Programm ...</a></p>';
         } else if (event.workshops && event.workshops.length) {
           event.workshops.forEach((workshop) => {
             row += "<div class='workshop'>";
@@ -247,7 +248,11 @@ function loadEvents(eventsTable) {
             }
             row += '</p>';
 
-            if (workshop.prerequisites && workshop.prerequisites !== '-') {
+            if (
+              workshop.prerequisites &&
+              workshop.prerequisites !== '-' &&
+              event.location !== 'Stadtbibliothek Schärding'
+            ) {
               row += '<p><strong>Voraussetzungen</strong></p>';
               if (workshop.prerequisites) {
                 row += converter.makeHtml(workshop.prerequisites);
@@ -295,8 +300,10 @@ function loadEvents(eventsTable) {
             row += '</div>';
           });
         } else {
-          row +=
-            '<p>Die Workshops werden zwei Tage vor dem Event bekanntgegeben.</p>';
+          if (event.location !== 'Stadtbibliothek Schärding') {
+            row +=
+              '<p>Die Workshops werden zwei Tage vor dem Event bekanntgegeben.</p>';
+          }
         }
 
         row += '</td>';
