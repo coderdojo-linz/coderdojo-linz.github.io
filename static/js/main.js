@@ -198,8 +198,8 @@ function loadEvents(eventsTable) {
             formattedBeginTime +
             ' - ' +
             formattedEndTime +
-            '</small><br/>Mein erstes Computer-Spiel 😸💻</h3><p>Du hast noch nie etwas programmiert, bist aber neugierig, wie das funktioniert? Dann ist das der richtige Workshop für dich! Du wirst mit Scratch dein erstes Computerspiel selbst bauen.</p>' +
-            '<p><b>Anmeldung: </b><a href="mailto: pia@linz.coderdojo.net">pia@linz.coderdojo.net</a></div>';
+            '</small><br/>Mein erstes Computer-Spiel 😸💻</h3><p>Du hast noch nie etwas programmiert, bist aber neugierig, wie das funktioniert? Dann ist das der richtige Workshop für dich! Du wirst mit Scratch dein erstes Computerspiel bauen.</p>' +
+            '<p>Wenn möglich, nimm bitte ein eigenes Notebook zum Workshop mit. Wir werden vor Ort auch einige Leihnotebooks bereithalten. Bitte gib bei der Anmeldung an, ob du ein Leihnotebook benötigst.</p><p><b>Anmeldung: </b><a href="mailto: pia@linz.coderdojo.net">pia@linz.coderdojo.net</a></div>';
         }
 
         // event time xs
