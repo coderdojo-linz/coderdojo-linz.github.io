@@ -65,7 +65,7 @@ sudo apt-get update
 
 ```shell
 # Installieren der Systemvoraussetzungen von mscs
-sudo apt-get -y install openjdk-8-jre-headless perl libjson-perl libwww-perl python make wget rdiff-backup rsync socat iptables git
+sudo apt-get -y install openjdk-16-jre-headless perl libjson-perl libwww-perl python make wget rdiff-backup rsync socat iptables git
 ```
 
 Mit `apt-get install` installiert man Softwarepakete. Hier werden in einer Zeile viele Pakete installiert. Sie sind alle notwendig, damit *mscs* funktioniert. Du fragst dich, woher wir wissen, was *mscs* braucht? Das kann man in der [*mscs* Dokumentation](https://github.com/MinecraftServerControl/mscs) nachlesen.
