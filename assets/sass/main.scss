@@ -1007,14 +1007,14 @@ iframe[src*='jsfiddle'] {
 }
 
 // linz codes
-#linz-codes-header {
+#fireworks-header {
   position: absolute;
   right: 0;
   top: -260px;
   width: 400px;
   height: 100px;
   padding: 20px;
-  background-image: url('/images/linz-codes-2021.png');
+  background-image: url('/img/fireworks.jpg');
   background-repeat: no-repeat;
 
   &::after {
@@ -1029,7 +1029,7 @@ iframe[src*='jsfiddle'] {
 }
 
 @media only screen and (max-width: 600px) {
-  #linz-codes-header {
+  #fireworks-header {
     top: -160px;
     width: 250px;
     background-size: 250px;
@@ -1038,6 +1038,39 @@ iframe[src*='jsfiddle'] {
     &::after {
       font-size: 18px;
       top: 50px;
+    }
+  }
+}
+
+section#fireworks {
+  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url('/img/fireworks.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+
+  .container {
+    position: relative;
+    // padding-top: 150px;
+  }
+
+  #fireworks-header {
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    &::after {
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
     }
   }
 }
@@ -1113,39 +1146,6 @@ div.timetable + table {
     width: 25%;
     max-width: 180px;
     object-fit: contain;
-  }
-}
-
-section#linz-codes {
-  background-color: rgba(0, 0, 0, 0);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url('/images/lentos3.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 100%;
-
-  .container {
-    position: relative;
-    padding-top: 150px;
-  }
-
-  #linz-codes-header {
-    top: 0;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-
-    &::after {
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      text-align: center;
-    }
   }
 }
 
