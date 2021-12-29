@@ -53,7 +53,7 @@ Our program will play with the black pieces, the user plays white.
 
 The board evaluation is implemented by the custom block "EvaluateBoard". It is important to select the option "Run without screen refresh" (right-click on the custom block header, then "Edit"). Otherwise our program would be too slow.
 
-Our evaluation is composed of the material and position values. Each piece has an assigned value; a king is ranked higher than everything else combined (20,000), as a defeated king means loss by checkmate. Next comes the queen (900), then rooks (500), and so on. The opponent's pieces have a negative value so that all numbers can be added up for the board's material balance. Having one pawn and one tower more than the other side results in a board evaluation of 900 + 500 = 1400. Thus, we can search for moves that promise the best board evaluation, and discard others.
+Our evaluation is composed of the material and position values. Each piece has an assigned value; a king is ranked higher than everything else combined (20,000), as a defeated king means loss by checkmate. Next comes the queen (900), then rooks (500), and so on. The opponent's pieces have a negative value so that all numbers can be added up for the board's material balance. Having one pawn and one rook more than the other side results in a board evaluation of 100 + 500 = 600. Thus, we can search for moves that promise the best board evaluation, and discard others.
 
 Piece values are stored in variables named "BlackKing", "WhiteKing", etc. Our current chessboard state is stored in the "Board" list. Board has 64 list entries, one for each square. For calculating the board evaluation, we loop over the list and add up its entries.
 
