@@ -7,8 +7,8 @@ imgposition: "center bottom"
 level: 1
 version: 1
 sprites: 4
-scripts: 30
-data: 24
+scripts: 16
+data: 7
 aliases:
 - /trainingsanleitungen/scratch/strasse-queren.html
 categories:
@@ -47,3 +47,49 @@ Danach malen wir
 * und einen grünen Streifen (Grünstreifen zwischen Strasse und Fluss)
 
 {{< /imgblock >}}
+
+### Steuerung des Spielers
+
+{{< imgblock "img/player_controlling.png" "" 3>}}
+Um die kleine Katze über die Strasse zu bringen werden müssen wir sie irgendwie steuern können. Damit das ganze gut aussieht animieren wir die Kate bei jedem Schritt. Ausserdem erlauben wir nur einen Schritt pro Tastendruck, damit das ganze etwas interessanter wird.
+{{< imgblock "img/player_block_init.png" "" 3>}}
+Am Anfang rufen wir einen kleinen Block auf der unsere Katze an die Anfangsposition bringt, und ihr Aussehen sowie die Größe einstellt. 
+{{< /imgblock >}}
+
+{{< imgblock "img/player_block_animate.png" "" 3>}}
+Danache bauen wir für die für jede der Pfeiltagen einen Programmteil der dafür sorgt, dass
+- die Katze nicht über den Rand hinauslaufen kann,
+- die Katze animiert und bewegt wird
+- die Taste losgelassen werden muss, bevor die nächste Taste gedrückt werden kann
+
+Das Animieren erledigen wir auch in einem Block, damit wir es nicht jedesmal aufs neue programmieren müssen.
+{{< /imgblock >}}
+
+So ... das war ein ordentliches Stück Arbeit, aber wir können die Katze nun über den Bildschirm hüpfen lassen.
+
+Probier es einfach mal aus ... 
+{{< /imgblock >}}
+
+{{< imgblock "img/player_lifecycle.png" "" 4 >}}
+Um drei Sachen müssen wir uns allerdings noch kümmern:
+
+- Wir sollten es auch bemerken wenn wir die Hindernisse erfolgreich überquert haben,
+- die Katze darf keine Autos berühren und 
+- den Fluss kann Sie nur auf einem Treibgut-Stück überqueren.
+
+{{< imgblock "img/player_block_die.png" "" 3>}}
+Sollten wir eine der beiden letzen Punkte erfüllen, so sind wir "gestorben" und müssen nochmal von vorne anfangen.
+
+Auch dafür haben wir einen Block.
+{{< /imgblock >}}
+{{< /imgblock >}}
+
+{{< imgblock "img/player_event_drift.png" "" 3 >}}
+{{< imgblock "img/player_variable_drift.png" "" 2 >}}
+Lege dir eine Variable "für alle Figuren" namens "treiben" an.
+{{< /imgblock >}}
+Damit wir mitgekommen, dass wir auf einem Treibgut stehen, das sich bewegt, lassen wir uns eine Nachricht schicken. 
+{{< /imgblock >}}
+
+
+### Die Autos
