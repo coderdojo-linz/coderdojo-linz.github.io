@@ -183,12 +183,12 @@
             
             <div class="col-12 sushi-content"> 
 
-<p>Dieses Spiel ist bereits etwas herausfordernder und soll euch Zeigen wie man in einem Spiel mit einem Spielfeld umgeht, das
+<p>Dieses Spiel ist bereits etwas herausfordernder und soll euch zeigen, wie man in einem Spiel mit einem Spielfeld umgeht, das
 viel größer als der Bildschirm ist.</p>
 
 <h3 id="figuren">Figuren</h3>
 
-<p>Bitte lade dir folgende Figuren Herunter:</p>
+<p>Bitte lade dir folgende Figuren herunter:</p>
 
 <ul>
 <li><a href="assets/Spieler.sprite3" target="_blank">Ninja als Spieler</a></li>
@@ -197,7 +197,7 @@ viel größer als der Bildschirm ist.</p>
 <li><a href="assets/Schlange.sprite3" target="_blank">Schlangen als Gegner</a></li>
 </ul>
 
-<p>Ausserdem werdet ihr noch</p>
+<p>Außerdem werdet ihr noch</p>
 
 <ul>
 <li><a href="assets/level.txt" target="_blank">Level-Datei für das Spielfeld</a></li>
@@ -222,7 +222,7 @@ viel größer als der Bildschirm ist.</p>
 
 <div class="row">
     <div class="col">
-        <p>Das Spielfeld selbst ist diesmal nicht wirklich ein Bild sondern eine Beschreibung wo welcher Block Sitzen soll. Wir definieren dafür eine Liste namens <code>level</code> im der Sektion <code>Variablen</code> durch klicken auf <code>Neue Liste</code>.</p>
+        <p>Das Spielfeld selbst ist diesmal nicht wirklich ein Bild, sondern eine Beschreibung wo welcher Block sitzen soll. Wir definieren dafür eine Liste namens <code>level</code> in der Sektion <code>Variablen</code> durch Klicken auf <code>Neue Liste</code>.</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/img/new_list_level.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -245,9 +245,9 @@ viel größer als der Bildschirm ist.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Für das Level habe ich hier ein <a href="assets/level.txt" target="_blank">minimales Spielfeld mit 64 blöcken Länge</a> vorbereitet. Bitte runterladen und dann importieren. Dazu einfach auf die liste rechts klicken und <code>importieren</code> auswählen.</p>
+        <p><p>Für das Level habe ich hier ein <a href="assets/level.txt" target="_blank">minimales Spielfeld mit 64 Blöcken Länge</a> vorbereitet. Bitte runterladen und dann importieren. Dazu einfach auf die Liste rechts klicken und <code>importieren</code> auswählen.</p>
 
-<p>Danach könnt ihr das Häckchen neben der <code>level</code> - Liste wieder unsichtbar machen.</p>
+<p>Danach könnt ihr das Häkchen neben der <code>level</code> - Liste wieder unsichtbar machen.</p>
 </p>
     </div>
     <div class="col-12 col-md-4">
@@ -273,7 +273,7 @@ viel größer als der Bildschirm ist.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Bitte lege dir 2 Variablen an die die Größe des Spielfelds festlegen.</p>
+        <p><p>Bitte lege dir 2 Variablen an, welche die Größe des Spielfelds festlegen.</p>
 
 <ol>
 <li>Level Größe X</li>
@@ -302,10 +302,10 @@ viel größer als der Bildschirm ist.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Als erstes werden wir dort die Größe des Spielfelds einstellen (64 x 12 Blöcke) und danach 2 Nachrichten abschicken die</p>
+        <p><p>Als Erstes werden wir dort die Größe des Spielfelds einstellen (64 x 12 Blöcke) und danach 2 Nachrichten abschicken, die</p>
 
 <ol>
-<li>Das Spiel starten (wir müssen in dem Fall warten bis alle Elemente des Spiels fertig sind.)</li>
+<li>Das Spiel starten (wir müssen in dem Fall warten, bis alle Elemente des Spiels fertig sind.)</li>
 <li>Das Spiel laufen lassen</li>
 </ol>
 </p>
@@ -318,19 +318,19 @@ viel größer als der Bildschirm ist.</p>
 
 <h1 id="das-spielfeld">Das Spielfeld</h1>
 
-<p>Das Spielfeld ist der komplizierteste Teil des Spiels da er folgende Aufgaben erfüllen muss:</p>
+<p>Das Spielfeld ist der komplizierteste Teil des Spiels, da er folgende Aufgaben erfüllen muss:</p>
 
 <ul>
-<li>die Ränder (vorne und Hinten) festlegen</li>
+<li>die Ränder (vorne und hinten) festlegen</li>
 <li>die Blöcke für Boden und Plattformen darstellen</li>
 <li>Abhängig von der Kameraposition die richtigen Blöcke an die richtige Position zeichnen</li>
 <li>Bei Änderung der Kameraposition die Blöcke verschieben.</li>
 </ul>
 
-<p>Da Scratch ein Limit von ~301 Klone hat dürfen wir auch nicht alle Blöcke des Spiels einfach als unsichtbare Blöcke behalten sondern müssen
-abhängig von der Kameraposition nur jene Blöcke anzeigen die auch sichtbar sind.</p>
+<p>Da Scratch ein Limit von ~301 Klone hat, dürfen wir auch nicht alle Blöcke des Spiels einfach als unsichtbare Blöcke behalten, sondern müssen
+abhängig von der Kameraposition nur jene Blöcke anzeigen, die auch sichtbar sind.</p>
 
-<p>Falls du das noch nicht erledigt hast, bitte importiere die <a href="assets/game_block.sprite3" target="_blank"><code>game-blocks</code></a> jetzt. Der große violette Block sollte dich nicht wundern. Du wirst ihn später im Spiel nicht mehr sehen. Er dient nur dazu dass wir die Blöcke weit genug aus dem Rand schieben können sodass diese unsichtbar werden.</p>
+<p>Falls du das noch nicht erledigt hast, bitte importiere die <a href="assets/game_block.sprite3" target="_blank"><code>game-blocks</code></a> jetzt. Der große violette Block sollte dich nicht wundern. Du wirst ihn später im Spiel nicht mehr sehen. Er dient nur dazu, dass wir die Blöcke weit genug aus dem Rand schieben können, sodass diese unsichtbar werden.</p>
 
 
 
@@ -347,7 +347,7 @@ abhängig von der Kameraposition nur jene Blöcke anzeigen die auch sichtbar sin
 
 <div class="row">
     <div class="col">
-        <p>Bitte lege auch gleich eine Variable <code>Kamera Pos X</code> <strong>für alle Figuren sichtbar</strong> an. Diese Variable benötigen wir, damit wir rausfinden, welcher Teil des Spielfelds gerade sichbar ist.</p>
+        <p>Bitte lege auch gleich eine Variable <code>Kamera Pos X</code> <strong>für alle Figuren sichtbar</strong> an. Diese Variable benötigen wir, damit wir rausfinden, welcher Teil des Spielfelds gerade sichtbar ist.</p>
     </div>
     <div class="col-12 col-md-2">
     <img src="/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/img/var_camera_pos_x.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -372,13 +372,13 @@ abhängig von der Kameraposition nur jene Blöcke anzeigen die auch sichtbar sin
 
 <div class="row">
     <div class="col">
-        <p><p>Als erstes werden wir uns um einen Benutzerdefinierten Block kümmern, der eines der Herzstücke des Hintergrundaufbaus darstellt. Er wird den korrekten Blocktyp an jeder Position ermitteln und einen Klon an der Stelle erschaffen.</p>
+        <p><p>Als Erstes werden wir uns um einen benutzerdefinierten Block kümmern, der eines der Herzstücke des Hintergrundaufbaus darstellt. Er wird den korrekten Blocktyp an jeder Position ermitteln und einen Klon an der Stelle erschaffen.</p>
 
 <p>Lege dafür auch gleich 2 Variablen <strong>nur für diese Figur</strong> an.</p>
 
 <ul>
-<li><code>xBlockIndex</code> die die aktuelle x-position in der <code>level</code> Liste halten wird.</li>
-<li><code>cellindex</code> die die absolute Position in der <code>level</code> Liste halten wird.</li>
+<li><code>xBlockIndex</code>, die die aktuelle x-position in der <code>level</code> Liste halten wird.</li>
+<li><code>cellindex</code>, die die absolute Position in der <code>level</code> Liste halten wird.</li>
 </ul>
 </p>
     </div>
@@ -408,7 +408,7 @@ abhängig von der Kameraposition nur jene Blöcke anzeigen die auch sichtbar sin
 <ul>
 <li>Jeder Block ist 32x32 Pixel groß -&gt; daher muss x und y durch 32 dividiert und abgerundet werden.</li>
 <li>Der linke Rand bei Scratch is -230 und der untere Rand ist -170 -&gt; das müssen wir auch ausgleichen</li>
-<li>die position in der liste für Y ist jeweils die Y-Position * der Breite des Spielfelds (in unserem Fall 64 Blöcke)
+<li>die Position in der liste für Y ist jeweils die Y-Position * der Breite des Spielfelds (in unserem Fall 64 Blöcke)
 
 <ul>
 <li>1. Zeile fängt bei 0 an</li>
@@ -427,10 +427,10 @@ abhängig von der Kameraposition nur jene Blöcke anzeigen die auch sichtbar sin
 </div>
 
 
-<p>Falls der Block innerhalb des spielfeldes ist X &gt; 0 und X &lt; 64 dann werden wir einen Block zeichnen, sonst machen wir einfach
+<p>Falls der Block innerhalb des Spielfeldes ist X &gt; 0 und X &lt; 64 dann werden wir einen Block zeichnen, sonst machen wir einfach
 einen Stein-Block als Rand.</p>
 
-<p>Als letztes überprüfen wir noch den eintrag in der liste. Falls es ein gültiger Spielfeld eintrag ist dann wechseln wir zu dem Kostüm und
+<p>Als Letztes überprüfen wir noch den Eintrag in der liste. Falls es ein gültiger Spielfeld-Eintrag ist, wechseln wir zu dem Kostüm und
 erzeugen einen Klon.</p>
 
 <h3 id="eine-spalte-von-blöcken-zeichnen">Eine Spalte von Blöcken zeichnen</h3>
@@ -450,9 +450,9 @@ erzeugen einen Klon.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Wir gehen hier einfach davon aus dass wir von unten nach oben an der aktuellen Position Blöcke zeichnen.
+        <p><p>Wir gehen hier einfach davon aus, dass wir von unten nach oben an der aktuellen Position Blöcke zeichnen.
 Dafür werden wir die 12 Blöcke, die das Spielfeld hoch ist, jeweils einen Block zeichnen und dann 32 Punkte nach oben springen.
-Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
+Am Ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <p>An der X-Position müssen wir jetzt auch die Kameraposition berücksichtigen, da wir u.U. nicht mehr am 0-Punkt sind.</p>
 </p>
@@ -465,7 +465,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <h3 id="vorbereiten-der-blöcke-für-die-ränder">Vorbereiten der Blöcke für die Ränder</h3>
 
-<p>Damit wir an den Rändern neue Blöcke erzeugen können (wichtig beim Verschieben) legen wir noch 2 unsichtbare Blöcke am linken und am Rechten Rand an.</p>
+<p>Damit wir an den Rändern neue Blöcke erzeugen können (wichtig beim Verschieben) legen wir noch 2 unsichtbare Blöcke am linken und am rechten Rand an.</p>
 
 
 
@@ -482,7 +482,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p>Damit die Blöcke auch wissen, was ihre Aufgabe ist geben wir ihnen einen Block-Typ als Variable <strong>nur für diese Figur</strong>:</p>
+        <p>Damit die Blöcke auch wissen, was ihre Aufgabe ist, geben wir ihnen einen Block-Typ als Variable <strong>nur für diese Figur</strong>:</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/img/var_next_blocktype.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -512,7 +512,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p>Damit wir dem Block auch mitteilen können welcher Typ er sein soll müssen wir noch einen Variable &ldquo;Nächster Blocktyp&rdquo; <strong>für alle Figuren sichtbar</strong> anlegen.</p>
+        <p>Damit wir dem Block auch mitteilen können welcher Typ er sein soll, müssen wir noch einen Variable &ldquo;Nächster Blocktyp&rdquo; <strong>für alle Figuren sichtbar</strong> anlegen.</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/img/var_blocktype.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -537,15 +537,15 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Beim Spielstart müssen als erstes einmal alle Blöcke angelegt werden die gerade sichtbar sind. Damit das schnell geht, legen wir uns einen Benutzerdefinierten Block &ldquo;Zeichne Hintergrund&rdquo; an der <strong>ohne Bildschirmaktualisierung</strong> läuft.</p>
+        <p><p>Beim Spielstart müssen als Erstes einmal alle Blöcke angelegt werden, die gerade sichtbar sind. Damit das schnell geht, legen wir uns einen benutzerdefinierten Block &ldquo;Zeichne Hintergrund&rdquo; an, der <strong>ohne Bildschirmaktualisierung</strong> läuft.</p>
 
-<p>Damit wir die Blöcke auch aus dem sichtbaren Bereich verschieben können wählen wir zum positionieren immer das Kostüm &ldquo;Huge Block&rdquo;. Ausserdem machen wir unsere Vorlage unsichtbar.</p>
+<p>Damit wir die Blöcke auch aus dem sichtbaren Bereich verschieben können, wählen wir zum Positionieren immer das Kostüm &ldquo;Huge Block&rdquo;. Außerdem machen wir unsere Vorlage unsichtbar.</p>
 
 <p>Danach stellen wir uns auf die linke untere Position für den ersten Block. Dort setzten wir auch gleich den Spezialblock für den Linken Rand (siehe oben).</p>
 
-<p>Danach gehen wir in einer Schleife Spalte für Spalte durch und Benutzen die zuvor erstellte Funktion um die Klone für die Blöcke anzulegen. Als letztes legen wir noch den Spezialblock für den rechten Rand an. Da wir nach jeder Spalte um 32 pixel nach rechts gerutscht sind, müssen wir das vorher bei der rechts-aussen-Spalte rückgängig machen.</p>
+<p>Danach gehen wir in einer Schleife Spalte für Spalte durch und benutzen die zuvor erstellte Funktion, um die Klone für die Blöcke anzulegen. Als Letztes legen wir noch den Spezialblock für den rechten Rand an. Da wir nach jeder Spalte um 32 Pixel nach rechts gerutscht sind, müssen wir das vorher bei der Rechts-Aussen-Spalte rückgängig machen.</p>
 
-<p>Die <strong>&ldquo;Warte 0.001 s&rdquo;</strong> - Blöcke vor dem Wechsel der Block-Typen sind übrigens dafür da, damit der Aktuell zu erstellende Klon genug Zeit hat sich seinen Blocktyp zu merken. Sonst würden wir <code>Nächster Blocktyp</code> umstellen bevor der aktuelle Klon sich die Variable merken konnte.</p>
+<p>Die <strong>&ldquo;Warte 0.001 s&rdquo;</strong> - Blöcke vor dem Wechsel der Block-Typen sind übrigens dafür da, damit der aktuell zu erstellende Klon genug Zeit hat sich seinen Blocktyp zu merken. Sonst würden wir <code>Nächster Blocktyp</code> umstellen bevor der aktuelle Klon sich die Variable merken konnte.</p>
 </p>
     </div>
     <div class="col-12 col-md-4">
@@ -569,7 +569,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p>Zum erfolgreichen Spielstart fehlt jetzt nur noch die Reaktion auf das eingentliche Start-Ereignis.</p>
+        <p>Zum erfolgreichen Spielstart fehlt jetzt nur noch die Reaktion auf das eigentliche Start-Ereignis.</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/img/initialize_background_blocks.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -592,7 +592,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Und eine Endlosschleife damit das Spiel nicht sofort zu Ende ist.</p>
+        <p><p>Und eine Endlosschleife, damit das Spiel nicht sofort zu Ende ist.</p>
 
 <p>Da es sich hierbei um eine Endlosschleife handelt, möchten wir diese nur auf einem Klon laufen lassen (z.B. den mit <code>Block Typ</code> = 0)</p>
 </p>
@@ -605,7 +605,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <h3 id="das-spielfeld-erscheinen-lassen">Das Spielfeld erscheinen lassen</h3>
 
-<p>Wenn du jetzt auf Start drückst läuft das Spiel zwar los aber man sieht noch: <strong>nichts</strong>.</p>
+<p>Wenn du jetzt auf Start drückst, läuft das Spiel zwar los, aber man sieht noch: <strong>nichts</strong>.</p>
 
 
 
@@ -627,11 +627,11 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 <p>Wir müssen noch folgende Dinge machen, wenn neue Klone entstehen:</p>
 
 <ul>
-<li>Blocktyp merken (kopie von <code>Nächster Blocktyp</code> auf <code>Block Typ</code>)</li>
-<li>Block Sichtbar machen, wenn es sich um einen <code>Block Typ</code> handelt, der sichtbar sein soll</li>
+<li>Blocktyp merken (Kopie von <code>Nächster Blocktyp</code> auf <code>Block Typ</code>)</li>
+<li>Block sichtbar machen, wenn es sich um einen <code>Block Typ</code> handelt, der sichtbar sein soll</li>
 </ul>
 
-<p>Wenn du nun noch einmal auf Start drückst, wirst du sehen wie das Spielfeld wie von Zauberhand entsteht.</p>
+<p>Wenn du nun noch einmal auf Start drückst, wirst du sehen, wie das Spielfeld wie von Zauberhand entsteht.</p>
 </p>
     </div>
     <div class="col-12 col-md-4">
@@ -642,7 +642,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <h3 id="das-spielfeld-bewegen">Das Spielfeld bewegen</h3>
 
-<p>Nun da wir das Spielfeld sehen können möchten wir es natürlich auch bewegen können. Immerhin ist es ja das Ziel unsers Spiels, dass wir uns auf der Spielfläche bewegen wollen. Das Ereignis <code>Hintergrundbewegen</code> wird dies erledigen.</p>
+<p>Nun da wir das Spielfeld sehen können, möchten wir es natürlich auch bewegen können. Immerhin ist es ja das Ziel unseres Spiels, dass wir uns auf der Spielfläche bewegen wollen. Das Ereignis <code>Hintergrundbewegen</code> wird dies erledigen.</p>
 
 
 
@@ -659,7 +659,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p>Um festzulegen wie weit sich der Hintergrund bewegt legen wir eine neue Variable <code>Kameraänderung</code> <strong>für alle Figuren sichtbar</strong> an.</p>
+        <p>Um festzulegen, wie weit sich der Hintergrund bewegt legen wir eine neue Variable <code>Kameraänderung</code> <strong>für alle Figuren sichtbar</strong> an.</p>
     </div>
     <div class="col-12 col-md-2">
     <img src="/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/img/var_camera_move.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -682,7 +682,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p>Zunächst schreiben wir die Behandlungsroutine für <code>Hintergrundbewegen</code>. Ausserdem benötigen wir noch einen Variable <code>Kostüm Vorher</code> <strong>nur für diese Figur</strong>.</p>
+        <p>Zunächst schreiben wir die Behandlungsroutine für <code>Hintergrundbewegen</code>. Außerdem benötigen wir noch einen Variable <code>Kostüm Vorher</code> <strong>nur für diese Figur</strong>.</p>
     </div>
     <div class="col-12 col-md-2">
     <img src="/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/img/var_costume_backup.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -707,7 +707,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Um die Scratch limitierung &ldquo;kein block kann sich aus dem Spielfeld bewegen&rdquo; zu überlisten muss der Block sehr groß werden.</p>
+        <p><p>Um die Scratch Limitierung &ldquo;kein block kann sich aus dem Spielfeld bewegen&rdquo; zu überlisten muss der Block sehr groß werden.</p>
 
 <p>Wir gehen wie folgt vor:</p>
 
@@ -718,9 +718,9 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 <li>wechseln auf das Kostüm, das in der Variable <code>Kostüm Vorher</code> gemerkt wurde.</li>
 </ul>
 
-<p>Die Blöcke sind Verschoben. Damit wir nicht zu viele Klone erhalten, werden wir nun sichtbare Blöcke entfernen, die aus dem Bildschirm hinausgeschoben wurden.</p>
+<p>Die Blöcke sind verschoben. Damit wir nicht zu viele Klone erhalten, werden wir nun sichtbare Blöcke entfernen, die aus dem Bildschirm hinausgeschoben wurden.</p>
 
-<p>Eine Sonderbehandlung erhalten die beiden Randblöcke. Damit du das Skript fertig machen kannst musst du noch den Benutzerdefinierten Block <code>Überprüfe Randblock</code> (siehe nächstes Skript) erstellen.</p>
+<p>Eine Sonderbehandlung erhalten die beiden Randblöcke. Damit du das Skript fertig machen kannst, musst du noch den benutzerdefinierten Block <code>Überprüfe Randblock</code> (siehe nächstes Skript) erstellen.</p>
 </p>
     </div>
     <div class="col-12 col-md-5">
@@ -744,9 +744,9 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Zum überprüfen des Randes bitte einen neuen <em>Bentzerdefinierten Block</em> &ldquo;<code>Überprüfe Randblock</code>&rdquo; <strong>ohne Bildschirmaktualsierung</strong> erzeugen. Du kannst den Block dann gleich ins obere Skript <code>Hintegrundbewegen</code> einfügen.</p>
+        <p><p>Zum Überprüfen des Randes bitte einen neuen <em>Benutzerdefinierten Block</em> &ldquo;<code>Überprüfe Randblock</code>&rdquo; <strong>ohne Bildschirmaktualisierung</strong> erzeugen. Du kannst den Block dann gleich ins obere Skript <code>Hintegrundbewegen</code> einfügen.</p>
 
-<p>In dem Skript überprüfen wir die beiden unsichtbaren Randblöcke (Typ 1 und 2) ob sie bereits so weit verschoben wurden, dass sie wider um eine Spalte zurück springen müssen, um noch am Rand zu sein. Sollte die Bewegung <em>nach aussen</em> sein (also z.B. der Rechte Block springt nach Rechts), erzeugen wir an der Zielposition eine neue Spalte mit Spielfeld-Blöcken. Dazu können wir wieder den Block <code>Zeichne Spalte</code> verwenden.</p>
+<p>In dem Skript überprüfen wir die beiden unsichtbaren Randblöcke (Typ 1 und 2), ob sie bereits so weit verschoben wurden, dass sie wider um eine Spalte zurückspringen müssen, um noch am Rand zu sein. Sollte die Bewegung <em>nach außen</em> sein (also z.B. der rechte Block springt nach rechts), erzeugen wir an der Zielposition eine neue Spalte mit Spielfeld-Blöcken. Dazu können wir wieder den Block <code>Zeichne Spalte</code> verwenden.</p>
 
 <p>Um <code>Nächster Blocktyp</code> brauchen wir uns keine Sorgen mehr zu machen, da dieser am Ende des Spielfeld-Erstellens bereit auf 10 (sichtbarer Block) gestellt wurde.</p>
 </p>
@@ -774,7 +774,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Als letztes tauschen wir noch die Endlosschleife <code>Spiel läuft</code> gegen eine Version aus, die <code>Hintergrund bewegen</code> nutzt. In diesem Beispiel habe ich die Tasten <code>m</code> und <code>n</code> dafür ausgewählt, dass ihr euch durch das Spielfeld scrollen könnt.</p>
+        <p><p>Als Letztes tauschen wir noch die Endlosschleife <code>Spiel läuft</code> gegen eine Version aus, die <code>Hintergrund bewegen</code> nutzt. In diesem Beispiel habe ich die Tasten <code>m</code> und <code>n</code> dafür ausgewählt, dass ihr euch durch das Spielfeld scrollen könnt.</p>
 
 <p><strong>Achtung:</strong> Damit das Spiel einwandfrei funktioniert, muss nach jeder <code>Kameraänderung</code> auch die <code>Kamera Pos X</code> angepasst werden.</p>
 </p>
@@ -804,7 +804,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Der Ninja benötigt 3 Variablen die wir später noch brauchen, also legen wir diese <strong>nur für diese Figur</strong> zuerst an:</p>
+        <p><p>Der Ninja benötigt 3 Variablen, die wir später noch brauchen, also legen wir diese <strong>nur für diese Figur</strong> zuerst an:</p>
 
 <ol>
 <li><code>Ninja Fallgeschwindigkeit</code> brauchen wir um im Spiel für Sprünge und Schwerkraft</li>
@@ -870,9 +870,9 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Damit wir unsere Skript nicht zu groß werden lagern wir die Funktion &ldquo;Gehe&rdquo; in einen benutzerdefinierten Block aus, den wir <strong>ohne Bildschirmaktualsierung laufen lassen</strong>.</p>
+        <p><p>Damit wir unser Skript nicht zu groß werden, lagern wir die Funktion &ldquo;Gehe&rdquo; in einen benutzerdefinierten Block aus, den wir <strong>ohne Bildschirmaktualisierung laufen lassen</strong>.</p>
 
-<p>Immerhin ist nach rechts oder nach links gehen nahezu das gleiche.</p>
+<p>Immerhin ist nach rechts oder nach links gehen nahezu das Gleiche.</p>
 
 <p>Wir müssen überdies aufpassen, dass wir nicht durch Blöcke durchlaufen, und wir können hier die Variable &ldquo;Ninja läuft&rdquo; setzen.</p>
 </p>
@@ -903,11 +903,11 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 <ul>
 <li><em>Taste links gedrückt</em>: gehe in Richtung -90°</li>
 <li><em>Taste rechts gedrückt</em>: gehe in Richtung 90°</li>
-<li><em>Leertaste gedrückt</em>: gib dem Spieler eine negative Fallgschwindigkeit (eine Richtung nach oben) - allerdings nur wenn er nicht sowieso gerade springt</li>
-<li><em>Simuliere Schwerkraft</em>: diesen Teil werden wir gleich behandeln. Lege einfach derweil einen Benutzerdefinierten Block mit namen <code>Schwerkraft</code> an.</li>
+<li><em>Leertaste gedrückt</em>: gib dem Spieler eine negative Fallgeschwindigkeit (eine Richtung nach oben) - allerdings, nur wenn er nicht sowieso gerade springt</li>
+<li><em>Simuliere Schwerkraft</em>: Diesen Teil werden wir gleich behandeln. Lege einfach derweil einen benutzerdefinierten Block mit Namen <code>Schwerkraft</code> an.</li>
 </ul>
 
-<p>Am Anfang wird die Variable <code>Ninja läuft</code> überdies auf 0 gestellt. So bleibt sie auch, falls nicht eine Bewegungstaste gedrückt wurde. Das ist wichtig um die richtigen Animationen anzeigen zu können.</p>
+<p>Am Anfang wird die Variable <code>Ninja läuft</code> überdies auf 0 gestellt. So bleibt sie auch, falls nicht eine Bewegungstaste gedrückt wurde. Das ist wichtig, um die richtigen Animationen anzeigen zu können.</p>
 </p>
     </div>
     <div class="col-12 col-md-4">
@@ -931,11 +931,11 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Damit der Ninja auch am Boden bleibt und springen kann simulieren wir noch ein wenig Schwerkraft. Wie wir wissen bewirkt die Schwerkraft eine Beschleunigung der Geschwindigkeit mit der man fällt :).</p>
+        <p><p>Damit der Ninja auch am Boden bleibt und springen kann, simulieren wir noch ein wenig Schwerkraft. Wie wir wissen, bewirkt die Schwerkraft eine Beschleunigung der Geschwindigkeit, mit der man fällt :).</p>
 
-<p>Natürlich nur, wenn wir nicht schon auf dem Boden stehen. Hier könne wir auch gleich überprüfen, ob wir eventuell auf Lava getreten sind. Das erledigt der Benutzerdefinierte Block <code>Überprüfe ob Ninja lebt</code> für uns.</p>
+<p>Natürlich nur, wenn wir nicht schon auf dem Boden stehen. Hier könne wir auch gleich überprüfen, ob wir eventuell auf Lava getreten sind. Das erledigt der benutzerdefinierte Block <code>Überprüfe ob Ninja lebt</code> für uns.</p>
 
-<p>Da dieser Block gleichzeitig auch für das Springen zuständig ist müssen wir überprüfen, ob wir von unten oder von oben an einen block gestoßen sind. Falls beim Springen mit dem Kopf angestoßen sind, setzen wir einfach die <code>Fallgeschwindigkeit</code> auf 0, sodass wir nicht mehr höher fliegen.</p>
+<p>Da dieser Block gleichzeitig auch für das Springen zuständig ist, müssen wir überprüfen, ob wir von unten oder von oben an einen Block gestoßen sind. Falls beim Springen mit dem Kopf angestoßen sind, setzen wir einfach die <code>Fallgeschwindigkeit</code> auf 0, sodass wir nicht mehr höher fliegen.</p>
 
 <p>Senn wir von Oben auf einen Block stoßen, setzen wir den Ninja genau über den Block.</p>
 </p>
@@ -961,7 +961,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Um zu überprüfen ob der Ninja in ein Loch gefallen ist (Y-Position wird zu klein) oder er auf Lava getreten ist (Berührt die Oberflächenfarbe des Lavablocks) verwenden wir den Block <code>Überprüfe ob Ninja lebt</code> den wir als Block <strong>ohne Bildschirmaktualsierung</strong> anlegen.</p>
+        <p><p>Um zu überprüfen, ob der Ninja in ein Loch gefallen ist (Y-Position wird zu klein) oder er auf Lava getreten ist (Berührt die Oberflächenfarbe des Lavablocks) verwenden wir den Block <code>Überprüfe ob Ninja lebt</code> den wir als Block <strong>ohne Bildschirmaktualisierung</strong> anlegen.</p>
 
 <p>Sollte der Ninja in einer tödlichen Situation sein, senden wir die Nachricht <code>Ninja gestorben</code>.</p>
 </p>
@@ -987,15 +987,15 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p><p>Damit der Ninja nicht aussieht als würde er über die Spielfläche schweben, werden wir ihn noch ein wenig animieren - allerdings nur wenn er noch lebt.</p>
+        <p><p>Damit der Ninja nicht aussieht als würde er über die Spielfläche schweben, werden wir ihn noch ein wenig animieren - allerdings nur, wenn er noch lebt.</p>
 
 <ul>
-<li>Wenn er läuft wechseln wir durch alle Kostüme ausser dem &ldquo;Springen&rdquo; Kostüm.</li>
+<li>Wenn er läuft wechseln wir durch alle Kostüme außer dem &ldquo;Springen&rdquo; Kostüm.</li>
 <li>Wenn er springt, wechseln wir auf das &ldquo;Springen&rdquo; Kostüm.</li>
 <li>Ansonst wechseln wir zum Ninja-Standard-Kostüm</li>
 </ul>
 
-<p>Damit es nicht zu zappelig aussieht warten wir nach jedem Durchlauf ganz kurz.</p>
+<p>Damit es nicht zu zappelig aussieht, warten wir nach jedem Durchlauf ganz kurz.</p>
 </p>
     </div>
     <div class="col-12 col-md-4">
@@ -1019,7 +1019,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p>Zu guter letzt - wir prüfen ständig, ob der Ninja sich in einer tödlichen Situation befindet.</p>
+        <p>Zu guter Letzt - wir prüfen ständig, ob der Ninja sich in einer tödlichen Situation befindet.</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/img/script_player_checkhealth.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -1046,7 +1046,7 @@ Am ende der Schleife springen wir wider an die Ausgangsposition.</p>
 
 <div class="row">
     <div class="col">
-        <p>Die initialisierung ist relative einfach. Wir setzten allerdings die &ldquo;X-Position&rdquo; auf -500 damit dieses Element
+        <p>Die Initialisierung ist relative einfach. Wir setzten allerdings die &ldquo;X-Position&rdquo; auf -500, damit dieses Element
 niemals Sichtbar wird. (1. Element)</p>
     </div>
     <div class="col-12 col-md-4">
@@ -1167,7 +1167,7 @@ niemals Sichtbar wird. (1. Element)</p>
 
 <h1 id="gefährliche-hindernisse-schlangen-am-spielfeld">Gefährliche Hindernisse - Schlangen am Spielfeld</h1>
 
-<p>Schlange werden (fast) gleich wie Diamanten behandelt.</p>
+<p>Schlangen werden (fast) gleich wie Diamanten behandelt.</p>
 
 <p>
 
@@ -1184,7 +1184,7 @@ niemals Sichtbar wird. (1. Element)</p>
 
 <div class="row">
     <div class="col">
-        <p>Auch hier setzten die &ldquo;X-Position&rdquo; auf -500 damit dieses Element niemals Sichtbar wird. (1. Element)</p>
+        <p>Auch hier setzten die &ldquo;X-Position&rdquo; auf -500, damit dieses Element niemals sichtbar wird. (1. Element)</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/img/script_snake_init.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
