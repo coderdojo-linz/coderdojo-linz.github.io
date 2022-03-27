@@ -1,6 +1,6 @@
 ---
-title: "Strasse Überqueren"
-description: "Versuche die Strasse und den Fluss heil zu überqueren"
+title: "Straße Überqueren"
+description: "Versuche die Straße und den Fluss heil zu überqueren"
 type: "uebungsanleitungen/programmieren/scratch"
 img: "img/game.png"
 imgposition: "center bottom"
