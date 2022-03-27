@@ -261,6 +261,15 @@ Scratch Webseite öffnen   Öffne einen Webbrowser, gib in der Adresszeile die A
     </item>
     
     <item>
+      <title>Lötübung Turm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/turm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/turm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Pimoroni Inventor&#39;s Kit for the BBC micro:bit</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/pimoroni-inventors-kit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -781,15 +790,6 @@ Projekt erstellen  NetBeans starten Menü File &amp;gt; Menüpunkt New Project &
     </item>
     
     <item>
-      <title>Conrad Beschreibungen</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/conrad-beschreibungen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/conrad-beschreibungen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>MAKERbuino Build Guide</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/makerbuino-build-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -974,6 +974,15 @@ Dafür bitte unter &amp;ldquo;File&amp;rdquo; -&amp;gt; &amp;ldquo;Settings&amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/ps2-joystick-shield-alt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conrad Beschreibungen</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/conrad-beschreibungen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/conrad-beschreibungen/</guid>
       <description></description>
     </item>
     
