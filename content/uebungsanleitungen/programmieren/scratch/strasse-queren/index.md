@@ -4,7 +4,7 @@ description: "Versuche die Strasse und den Fluss heil zu überqueren"
 type: "uebungsanleitungen/programmieren/scratch"
 img: "img/game.png"
 imgposition: "center bottom"
-level: 1
+level: 2
 version: 1
 sprites: 4
 scripts: 16
