@@ -140,7 +140,7 @@ Wenn du das Spiel nun ausprobierst, solltest du bereits den Verkehr auf der Stra
 
 ### Das Treibgut
 
-Die Blöcke des Treibguts sind nahezu die gleichen wie die für die Autos. Du kannst dir hier das Leben einfach machen, und die Blöcke aus "Autos" kopieren. Du musst nur aufpassen, dass du die Position richtig einstellen und die Programmblöcke umbenennen.
+Die Blöcke des Treibguts sind nahezu die gleichen wie die für die Autos. Du kannst dir hier das Leben einfach machen, und die Blöcke aus "Autos" kopieren. Du musst nur aufpassen, dass du die Position richtig einstellst und die Programmblöcke umbenennst.
 
 {{< imgblock "img/drifters_start.png" "" 3 >}}
 Wir erzeugen die Schablonen - achte darauf, dass du die Variablen `spur` und `schablone` anlegst. Außerdem müssen wir uns die aktuelle X-Richtung merken, damit wir dem Spieler später sagen können, wohin der treibt. 
