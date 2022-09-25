@@ -1,7 +1,54 @@
 'use strict';
 
+function register() {
+  let url =
+    'https://prod-26.northeurope.logic.azure.com:443/workflows/b6064052cfbc4d7995dfcd32ce28899a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=rFRMP5l-GmN8t0k0h2YHd98T5zMZp3DitjsQDmnkTos';
+
+  let eventId = $('#event').val();
+
+  const registration = {
+    eventId: eventId,
+    eventDate: $('#event option:selected').text(),
+    participants: {
+      email: $('#email').val(),
+      givenName: $('#givenName').val(),
+      familyName: $('#familyName').val(),
+      //gender: $('#gender').val(),
+      //yearOfBirth: $('#yearOfBirth').val(),
+    },
+    //needsComputer: $('#rentalNotebook').val() == 'yes' ? true : false,
+  };
+
+  $.ajax({
+    url: url,
+    type: 'POST',
+    data: JSON.stringify(registration),
+    contentType: 'application/json; charset=utf-8',
+    dataType: 'json',
+    success: function (data) {
+      $('.registration-finished').removeClass('d-none');
+      $('.registration').addClass('hide');
+    },
+  }).fail(function (jqXHR, textStatus) {
+    if (textStatus == 'parsererror') {
+      $('.registration-finished').removeClass('d-none');
+      $('.registration').addClass('d-none');
+    } else {
+      $('.registration-error').removeClass('d-none');
+      $('.registration').addClass('d-none');
+    }
+  });
+
+  return false;
+}
+
+function addParticipant() {
+  $('.registration-finished').addClass('d-none');
+  $('.registration').removeClass('d-none');
+}
+
 function updateNavbarScrollState() {
-  var scroll = $(window).scrollTop();
+  let scroll = $(window).scrollTop();
 
   if (scroll > 50) {
     //console.log('a');
@@ -31,7 +78,7 @@ function sendContactForm(type) {
         action: 'contactForm',
       })
       .then(function (token) {
-        var form = document.getElementById('contact-form');
+        let form = document.getElementById('contact-form');
         form.classList.add('was-validated');
         if (form.checkValidity() === true) {
           $.ajax({
@@ -75,13 +122,13 @@ function loadEventsOverview(eventsTable) {
   $.get(
     'https://cdw-planner.azurewebsites.net/api/events?past=false',
     function (data) {
-      var converter = new showdown.Converter();
+      let converter = new showdown.Converter();
 
       data.slice(0, 3).forEach(function (event) {
-        var row = '';
-        var date = moment(new Date(event.date)).startOf('day');
-        var formattedDate = date.format('DD.MM.YYYY');
-        var description = converter
+        let row = '';
+        let date = moment(new Date(event.date)).startOf('day');
+        let formattedDate = date.format('DD.MM.YYYY');
+        let description = converter
           .makeHtml(event.location)
           .replace(/<p>/, '')
           .replace(/<\/p>/, '');
@@ -116,20 +163,20 @@ function loadEvents(eventsTable) {
   $.get(
     'https://cdw-planner.azurewebsites.net/api/events?past=false',
     function (data) {
-      var converter = new showdown.Converter();
+      let converter = new showdown.Converter();
 
       data.forEach(function (event) {
-        var row = '';
+        let row = '';
 
-        var date = moment(new Date(event.date)).startOf('day');
-        var formattedDate = date.format('DD.MM.YYYY');
+        let date = moment(new Date(event.date)).startOf('day');
+        let formattedDate = date.format('DD.MM.YYYY');
 
-        var formattedBeginTime = '15:00';
-        var formattedEndTime = '19:00';
+        let formattedBeginTime = '15:00';
+        let formattedEndTime = '19:00';
 
-        if (event.location.includes('Stadtbibliothek Schärding')) {
-          var formattedBeginTime = '15:00';
-          var formattedEndTime = '17:00';
+        if (event.type.toLowerCase() === 'coderdojo') {
+          formattedBeginTime = '16:00';
+          formattedEndTime = '18:00';
         }
 
         if (event && event.workshops.length) {
@@ -190,33 +237,28 @@ function loadEvents(eventsTable) {
           '</b>';
         row += '</div>';
 
-        if (event.location.includes('Stadtbibliothek Schärding')) {
-          row +=
-            "<div class='workshop'><h3><small><span class='d-inline d-sm-none'>" +
-            formattedDate +
-            '</span> ' +
-            formattedBeginTime +
-            ' - ' +
-            formattedEndTime +
-            '</small><br/>Mein erstes Computer-Spiel 😸💻</h3><p>Du hast noch nie etwas programmiert, bist aber neugierig, wie das funktioniert? Dann ist das der richtige Workshop für dich! Du wirst mit Scratch dein erstes Computerspiel bauen.</p>' +
-            '<p>Wenn möglich, nimm bitte ein eigenes Notebook zum Workshop mit. Wir werden vor Ort auch einige Leihnotebooks bereithalten. Bitte gib bei der Anmeldung an, ob du ein Leihnotebook benötigst.</p><p><b>Anmeldung: </b><a href="mailto: pia@linz.coderdojo.net">pia@linz.coderdojo.net</a></div>';
-        }
-
-        // event time xs
+        // event location
         if (event.location && event.type === 'CoderDojo') {
           row += '<p><b>Ort:</b> ' + event.location + '</p>';
+
+          let registrationLink = '';
+          if (formattedDate === '30.09.2022') {
+            registrationLink = 'https://forms.office.com/r/Yj2GYecT2S';
+          }
+
+          if (registrationLink) {
+            row +=
+              '<p><a class="btn btn-primary" target="_blank" href="' +
+              registrationLink +
+              '">Zur Anmeldung</a></p>';
+          } else {
+            row +=
+              '<p>Der Link zur Anmeldung wird 2 Wochen vor dem Event bekannt gegeben.</p>';
+          }
         }
 
         // workshops
-        if (
-          moment(event.date).startOf('day').unix() ===
-            moment(new Date(2021, 7, 6)).unix() ||
-          moment(event.date).startOf('day').unix() ===
-            moment(new Date(2021, 7, 20)).unix()
-        ) {
-          row +=
-            '<p class="text-center"><a class="btn btn-primary" href=\'/linz-codes/\'>Zum Programm ...</a></p>';
-        } else if (event.workshops && event.workshops.length) {
+        if (event.workshops && event.workshops.length) {
           event.workshops.forEach((workshop) => {
             row += "<div class='workshop'>";
             row +=
@@ -248,11 +290,7 @@ function loadEvents(eventsTable) {
             }
             row += '</p>';
 
-            if (
-              workshop.prerequisites &&
-              workshop.prerequisites !== '-' &&
-              !event.location.includes('Stadtbibliothek Schärding')
-            ) {
+            if (workshop.prerequisites && workshop.prerequisites !== '-') {
               row += '<p><strong>Voraussetzungen</strong></p>';
               if (workshop.prerequisites) {
                 row += converter.makeHtml(workshop.prerequisites);
@@ -300,10 +338,16 @@ function loadEvents(eventsTable) {
             row += '</div>';
           });
         } else {
-          if (!event.location.includes('Stadtbibliothek Schärding')) {
+          if (event.type.toLowerCase() === 'coderdojo virtual') {
             row +=
               '<p>Die Workshops werden zwei Tage vor dem Event bekanntgegeben.</p>';
           }
+        }
+
+        // virtual coderdojo tips
+        if (event.type.toLowerCase() === 'coderdojo virtual') {
+          row +=
+            '<p><a href="#virtualCoderDojos">Tipps zu Online CoderDojos</p>';
         }
 
         row += '</td>';
@@ -317,11 +361,66 @@ function loadEvents(eventsTable) {
 
       // scroll to hash parameter
       if (window.location.hash) {
-        var workshop = window.location.hash.substr(1);
-        var selectedWorkshop = document.getElementById(workshop);
+        let workshop = window.location.hash.substr(1);
+        let selectedWorkshop = document.getElementById(workshop);
         if (selectedWorkshop) {
           selectedWorkshop.scrollIntoView();
         }
+      }
+    }
+  );
+}
+
+function toggleShowMore(element, button) {
+  const toggleElement = document.querySelector(element);
+  const toggleButton = document.querySelector(button);
+
+  if (toggleElement) {
+    if (toggleElement.classList.contains('show-more')) {
+      toggleElement.classList.remove('show-more');
+
+      if (toggleButton) {
+        toggleButton.innerText = 'Mehr anzeigen';
+      }
+    } else {
+      toggleElement.classList.add('show-more');
+
+      if (toggleButton) {
+        toggleButton.innerText = 'Weniger anzeigen';
+      }
+    }
+  }
+}
+
+function loadRegistrationEvents() {
+  $.get(
+    'https://cdw-planner.azurewebsites.net/api/events?past=false',
+    function (data) {
+      //  && (new moment(item.date)).format("YYYY-MM-DD") != "2018-06-08"
+      data
+        .filter(
+          (item) =>
+            item.type.toLowerCase() === 'coderdojo' &&
+            new moment(item.date).format('YYYY-MM-DD') != '2019-03-01'
+        )
+        .slice(0, 4)
+        .forEach(function (item) {
+          $('#event').append(
+            '<option value="' +
+              item._id +
+              '">' +
+              new moment(item.date).format('DD. MMMM YYYY') +
+              ' - ' +
+              (item.location ? item.location : 'Wissensturm') +
+              '</option>'
+          );
+        });
+
+      let currentYear = new moment().year();
+      for (let i = currentYear - 6; i >= currentYear - 18; i--) {
+        $('#yearOfBirth').append(
+          '<option value="' + i.toString() + '">' + i.toString() + '</option>'
+        );
       }
     }
   );
@@ -337,20 +436,25 @@ $(document).ready(function () {
     updateNavbarScrollState();
   });
 
-  var eventsTable = $('#eventsTable');
+  let eventsTable = $('#eventsTable');
   if (eventsTable && eventsTable.length) {
     loadEvents(eventsTable);
   }
 
-  var eventsOverviewTable = $('#eventsOverviewTable');
+  let eventsOverviewTable = $('#eventsOverviewTable');
   if (eventsOverviewTable && eventsOverviewTable.length) {
     loadEventsOverview(eventsOverviewTable);
   }
 
+  let registrationForm = $('form#registration-form');
+  if (registrationForm) {
+    loadRegistrationEvents();
+  }
+
   // Get the forms we want to add validation styles to
-  var forms = document.getElementsByClassName('needs-validation');
+  let forms = document.getElementsByClassName('needs-validation');
   // Loop over them and prevent submission
-  var validation = Array.prototype.filter.call(forms, function (form) {
+  let validation = Array.prototype.filter.call(forms, function (form) {
     form.addEventListener(
       'submit',
       function (event) {

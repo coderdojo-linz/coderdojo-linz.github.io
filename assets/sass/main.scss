@@ -655,7 +655,52 @@ ol.breadcrumb {
 }
 
 /* events */
-section.events {
+.corona-rules {
+  border-left: 10px solid $yellow;
+  margin-left: -30px;
+  padding-left: 20px;
+  li {
+    padding-bottom: 10px;
+  }
+}
+
+section.events,
+section#events-overview {
+  .event-list {
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+    margin-bottom: 20px;
+    // border-bottom: 50px;
+    // border-bottom-style: solid;
+    // border-image: linear-gradient(
+    //     90deg,
+    //     rgba(60, 74, 83, 0.9),
+    //     rgba(60, 74, 83, 0)
+    //   )
+    //   1;
+
+    //background-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+
+    &:before {
+      position: absolute;
+      bottom: -10px;
+      height: 40px;
+      width: 100%;
+      content: ' ';
+      background-image: linear-gradient(to bottom, transparent 0%, white 100%);
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      pointer-events: none;
+    }
+
+    &.show-more {
+      max-height: 3000px;
+    }
+  }
+
   .event-type {
     margin-right: 10px;
   }
@@ -674,6 +719,10 @@ section.events {
 
   .event-type-classroom {
     background-color: $coderdojo-classroom-color;
+  }
+
+  .event-type-advent-of-code {
+    background-color: $coderdojo-advent-of-code-color;
   }
 
   .event {
