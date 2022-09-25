@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.ed784b2facba7285b43a9e8e60dee05d83a33e7b36a802c8c33eedf2402c20c7.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.2d254dc216c4060d13406489b4d23b8b85b904a9eecbc040b103ad0eb5057858.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -83,14 +83,76 @@
 
 
 
-<section id="events-corona" class="dark">
+<section id="event-types" class="dark">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>COVID-19</h2>
-                <p>Aufgrund der aktuellen COVID-19 Situation finden die regelmäßigen CoderDojos zur Zeit online statt.
-                </p>
-                
+                <h2>CoderDojo Termine</h2>
+                <p>Wir veranstalten zu Zeit sowohl virtuelle CoderDojos, bei denen man via Zoom Meeting teilnehmen kann
+                    als auch persönliche Treffen in der <a href="https://grandgarage.eu/" target="_blank">Grand
+                        Garage</a>. Für persönliche Treffen ist eine Anmeldung erforderlich. Den Link findest du unten
+                    bei
+                    den <a href="#events">Terminen</a>.</p>
+
+                <div class="corona-rules">
+                    <h3>Corona Regeln für persönliche Treffen</h3>
+                    <p>Corona ist leider noch nicht vorbei. Für manche ist es nur ein harmloser Schnupfen, andere aber
+                        erkranken
+                        schwerer. Damit die Teilnahme für alle mit möglichst geringem Risiko möglich ist, bitten wir
+                        euch
+                        darum, euch an folgende Regeln zu halten:</p>
+
+                    <ul>
+                        <li>Zur Teilnahme ist ein aktueller negativer Corona Test (Kinder und Jugendliche sowie
+                            Begleitpersonen) notwendig (PCR-Test vom Vortag, Antigen-Test vom Veranstaltungstag). Wenn
+                            ihr
+                            keine Tests zur Verfügung habt könnt ihr vor Start des CoderDojos bei uns einen gratis Test
+                            machen.</li>
+                        <li>Bleibt bitte zuhause, wenn ihr euch krank fühlt oder eine Person in eurem Haushalt erkrankt
+                            ist
+                            (auch wenn der Corona Test negativ sein sollte). Es gibt gleichzeitig auch Online
+                            CoderDojos.
+                            Wir freuen uns, wenn ihr uns in diesem Fall über ein virtuelles Zoom Meeting besucht.</li>
+                        <li>Wir werden CO2 Messgeräte aufstellen, damit wir sicherstellen, dass ausreichend gelüftet
+                            wird. Nehmt euch einen Pullover oder eine Jacke mit, damit ihr nicht friert, wenn die
+                            Fenster offen sind.</li>
+                        <li>Wir empfehlen allen, während der Veranstaltung im Innenraum eine FFP2 Maske zu tragen. Wenn
+                            ihr
+                            keine zur Verfügung habt, bekommt ihr gerne eine von uns.</li>
+                    </ul>
+                </div>
+
+                <p>Wenn du die Corona Regeln nicht einhalten kannst oder willst, kannst du gerne zu unseren virtuellen
+                    CoderDojos via Zoom Meeting kommen.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a name="events"></a>
+<section id="events" class="events">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="event-list">
+                    <h2>Nächste Termine</h2>
+                    <p class="loadingText">Die Termine werden geladen ...</p>
+                    <table class="table" id="eventsTable">
+                    </table>
+                </div>
+
+                <p class="text-center"><a class="btn btn-dark" id="toggle-button" href="javascript: toggleShowMore('.event-list', '#toggle-button')">Mehr anzeigen</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a name="virtualCoderDojos"></a>
+<section id="events-corona" class="secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Online CoderDojos</h2>
 
                 <h4>Voraussetzungen für Online CoderDojos</h4>
                 <p>Bitte installiere für die Teilnahme an den online Workshops die <a href="https://zoom.us/download"
@@ -109,22 +171,7 @@
     </div>
 </section>
 
-<section id="events" class="events">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2>Nächste Termine</h2>
-
-                <p class="loadingText">Die Termine werden geladen ...</p>
-
-                <table class="table" id="eventsTable">
-                </table>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="events-description" class="secondary events">
+<section id="events-description" class="events">
     <div class="container">
         <div class="row">
             <div class="col">
