@@ -247,7 +247,7 @@ function loadEvents(eventsTable) {
           }
 
           if (registrationLink) {
-            row +=
+            row += '<p>Für CoderDojos in der Grand Garage ist eine Anmeldung erforderlich.</p>' + 
               '<p><a class="btn btn-primary" target="_blank" href="' +
               registrationLink +
               '">Zur Anmeldung</a></p>';
@@ -340,7 +340,7 @@ function loadEvents(eventsTable) {
         } else {
           if (event.type.toLowerCase() === 'coderdojo virtual') {
             row +=
-              '<p>Die Workshops werden zwei Tage vor dem Event bekanntgegeben.</p>';
+              '<p>Die Workshops werden zwei Tage vor dem Event bekanntgegeben. Keine Anmeldung erforderlich.</p>';
           }
         }
 
