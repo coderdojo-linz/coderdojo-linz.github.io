@@ -14,4 +14,4 @@ ab 8 Jahren
 
 Im diesem Übungsbuch findest du 3 Scratch Übungen und 1 JavaScript Übung für Programmier-AnfängerInnen. Für die JavaScript Übung solltest du schon ein klein wenig Tippen können.
 
-<p class="text-center"><a class="btn btn-primary" href="/uebungsanleitungen/programmieren/Uebungsbuch-fuer-AnfaengerInnen.pdf" target="_blank">Download</a></p> 
+<p class="text-center"><a class="btn btn-primary" href="/uebungsanleitungen/programmieren/Uebungsbuch-fuer-AnfaengerInnen-Auflage-3.pdf" target="_blank">Download</a></p> 

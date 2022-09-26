@@ -124,6 +124,16 @@ function loadEventsOverview(eventsTable) {
     function (data) {
       let converter = new showdown.Converter();
 
+      data.sort((a, b) =>
+        a.date < b.date
+          ? -1
+          : a.date > b.date
+          ? 1
+          : a.type.toLowerCase() === 'coderdojo'
+          ? -1
+          : 1
+      );
+
       data.slice(0, 3).forEach(function (event) {
         let row = '';
         let date = moment(new Date(event.date)).startOf('day');
@@ -164,6 +174,16 @@ function loadEvents(eventsTable) {
     'https://cdw-planner.azurewebsites.net/api/events?past=false',
     function (data) {
       let converter = new showdown.Converter();
+
+      data.sort((a, b) =>
+        a.date < b.date
+          ? -1
+          : a.date > b.date
+          ? 1
+          : a.type.toLowerCase() === 'coderdojo'
+          ? -1
+          : 1
+      );
 
       data.forEach(function (event) {
         let row = '';
@@ -247,7 +267,8 @@ function loadEvents(eventsTable) {
           }
 
           if (registrationLink) {
-            row += '<p>Für CoderDojos in der Grand Garage ist eine Anmeldung erforderlich.</p>' + 
+            row +=
+              '<p>Für CoderDojos in der Grand Garage ist eine Anmeldung erforderlich.</p>' +
               '<p><a class="btn btn-primary" target="_blank" href="' +
               registrationLink +
               '">Zur Anmeldung</a></p>';
