@@ -71,6 +71,7 @@ jobs:
     displayName: 'Copy readme.md to temp'
     
   - script: |
+      git clean -fxd
       git checkout master
       rm -rf *
       rm .gitmodules
