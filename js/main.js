@@ -262,7 +262,7 @@ function loadEvents(eventsTable) {
           row += '<p><b>Ort:</b> ' + event.location + '</p>';
 
           let registrationLink = '';
-          if (formattedDate === '30.09.2022') {
+          if (formattedDate === '21.10.2022') {
             registrationLink = 'https://forms.office.com/r/Yj2GYecT2S';
           }
 
