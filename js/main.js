@@ -263,7 +263,12 @@ function loadEvents(eventsTable) {
 
           let registrationLink = '';
           if (formattedDate === '21.10.2022') {
-            registrationLink = 'https://forms.office.com/r/Yj2GYecT2S';
+            if (event.location.indexOf('Steyr') >= 0) {
+              registrationLink =
+                'https://tic-steyr.at/coderdojo-steyr/registration';
+            } else {
+              registrationLink = 'https://forms.office.com/r/Yj2GYecT2S';
+            }
           }
 
           if (registrationLink) {
