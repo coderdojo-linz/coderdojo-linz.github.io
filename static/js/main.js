@@ -262,18 +262,21 @@ function loadEvents(eventsTable) {
           row += '<p><b>Ort:</b> ' + event.location + '</p>';
 
           let registrationLink = '';
+          let location = '';
           if (formattedDate === '21.10.2022') {
             if (event.location.indexOf('Steyr') >= 0) {
               registrationLink =
                 'https://tic-steyr.at/coderdojo-steyr/registration';
+              location = 'im TIC Steyr';
             } else {
               registrationLink = 'https://forms.office.com/r/Yj2GYecT2S';
+              location = 'in der Grand Garage'
             }
           }
 
           if (registrationLink) {
             row +=
-              '<p>Für CoderDojos in der Grand Garage ist eine Anmeldung erforderlich.</p>' +
+              '<p>Für CoderDojos ' + location + ' ist eine Anmeldung erforderlich.</p>' +
               '<p><a class="btn btn-primary" target="_blank" href="' +
               registrationLink +
               '">Zur Anmeldung</a></p>';
