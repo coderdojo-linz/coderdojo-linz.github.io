@@ -263,7 +263,7 @@ function loadEvents(eventsTable) {
 
           let registrationLink = '';
           let location = '';
-          if (formattedDate === '04.11.2022') {
+          if (formattedDate === '02.12.2022') {
             if (event.location.indexOf('Steyr') >= 0) {
               registrationLink =
                 'https://tic-steyr.at/coderdojo-steyr/registration';
