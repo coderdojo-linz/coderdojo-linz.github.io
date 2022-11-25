@@ -150,7 +150,7 @@ function loadEventsOverview(eventsTable) {
         row += '<td>';
         row +=
           "<span class='badge badge-primary badge-pill event-type event-type-" +
-          event.type.toLowerCase().replace(' ', '-') +
+          event.type.toLowerCase().replace(/\s/g, '-') +
           "'>" +
           event.type +
           '</span>';
@@ -228,7 +228,7 @@ function loadEvents(eventsTable) {
         row += "<a id='" + formattedDate + "'></a>";
         row +=
           "<div class='event-time'><span class='badge badge-primary badge-pill event-type event-type-" +
-          event.type.toLowerCase().replace(' ', '-') +
+          event.type.toLowerCase().replace(/\s/g, '-') +
           "'>" +
           event.type +
           '</span><br />' +
@@ -245,7 +245,7 @@ function loadEvents(eventsTable) {
         row += "<div class='d-block d-sm-none event-time event-time-xs'>";
         row +=
           "<span class='badge badge-primary badge-pill event-type event-type-" +
-          event.type.toLowerCase().replace(' ', '-') +
+          event.type.toLowerCase().replace(/\s/g, '-') +
           "'>" +
           event.type +
           '</span><br/><b>' +
