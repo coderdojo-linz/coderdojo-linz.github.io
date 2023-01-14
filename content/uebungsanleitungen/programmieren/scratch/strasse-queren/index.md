@@ -21,7 +21,7 @@ In diesem Spiel werden wir uns ansehen, wie wir eine größere Menge an Figuren 
 Bitte lade dir folgende Figuren herunter:
 
 * [Unsere Spielfigur](assets/Spieler.sprite3)
-* [Die Autos](assets/Autos.sprite)
+* [Die Autos](assets/Autos.sprite3)
 * [Das Treibgut für den Fluss](assets/Treibgut.sprite3)
 
 Importiere alle diese Figuren in Scratch (Figur -> Figur hochladen).
