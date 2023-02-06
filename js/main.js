@@ -267,10 +267,10 @@ function loadEvents(eventsTable) {
             if (event.location.indexOf('Steyr') >= 0) {
               registrationLink =
                 'https://tic-steyr.at/coderdojo-steyr/registration';
-              location = 'im TIC Steyr';
+              //location = 'im TIC Steyr';
             } else {
               registrationLink = 'https://forms.office.com/r/Yj2GYecT2S';
-              location = 'in der Grand Garage'
+              //location = 'in der Grand Garage'
             }
           }
 
