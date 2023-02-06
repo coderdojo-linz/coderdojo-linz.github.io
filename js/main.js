@@ -276,7 +276,7 @@ function loadEvents(eventsTable) {
 
           if (registrationLink) {
             row +=
-              '<p>Für CoderDojos ' + location + ' ist eine Anmeldung erforderlich.</p>' +
+              '<p>Für dieses CoderDojo ist eine Anmeldung erforderlich.</p>' +
               '<p><a class="btn btn-primary" target="_blank" href="' +
               registrationLink +
               '">Zur Anmeldung</a></p>';
