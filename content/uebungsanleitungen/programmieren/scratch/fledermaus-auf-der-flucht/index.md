@@ -9,8 +9,8 @@ version: 3
 aliases:
   - /trainingsanleitungen/scratch/scratch-fledermaus-auf-der-flucht-v3.html
   - /trainingsanleitungen/scratch/scratch-fledermaus-auf-der-flucht.html
-sprites: 2
-scripts: 10
+sprites: 3
+scripts: 3
 data: 0
 ---
 
