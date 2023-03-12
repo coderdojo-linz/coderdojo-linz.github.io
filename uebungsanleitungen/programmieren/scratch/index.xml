@@ -121,6 +121,18 @@ Schritt 1: Die drei Bühnenbilder anlegen Dieses Spiel verwendet drei verschiede
     </item>
     
     <item>
+      <title>Fledermaus auf der Flucht</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fledermaus-auf-der-flucht/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fledermaus-auf-der-flucht/</guid>
+      <description>In diesem Spiel fliegst du als Fledermaus zwischen Röhren hindurch, jedoch ohne diese zu berühren! Wie lange schaffst du es?
+
+   Bühne &amp;amp; Figuren Zunächst bereiten wir die Bühne und die Figuren &amp;ndash; eine Fledermaus, sowie Röhren durch welche unsere Fledermaus hindurchfliegen soll &amp;ndash; für unser Spiel benötigen vor.
+Als erstes legst du fest, wie dein Hintergrund aussehen sollte. Wähle für dieses Quiz das Bühnenbild Mountain aus.</description>
+    </item>
+    
+    <item>
       <title>Fledermaus-Spiel</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fledermaus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
