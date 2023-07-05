@@ -56,6 +56,14 @@ jobs:
 
   - task: CopyFiles@2
     inputs:
+      contents: CNAME
+      targetFolder: $(Agent.TempDirectory)/dist
+      cleanTargetFolder: false
+      overWrite: true
+    displayName: 'Copy CNAME to temp'
+
+  - task: CopyFiles@2
+    inputs:
       contents: azure-pipelines.yml
       targetFolder: $(Agent.TempDirectory)/dist
       cleanTargetFolder: false
