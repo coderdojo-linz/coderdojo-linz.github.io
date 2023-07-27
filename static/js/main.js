@@ -280,7 +280,7 @@ function loadEvents(eventsTable) {
               '<p><a class="btn btn-primary" target="_blank" href="' +
               registrationLink +
               '">Zur Anmeldung</a></p>';
-          } else if (formattedDate !== '30.06.2023' && formattedDate !== '01.07.2023') {
+          } else if (formattedDate !== '30.06.2023' && formattedDate !== '01.07.2023' && formattedDate !== '28.07.2023') {
             row +=
               '<p>Der Link zur Anmeldung wird 2 Wochen vor dem Event bekannt gegeben.</p>';
           }
