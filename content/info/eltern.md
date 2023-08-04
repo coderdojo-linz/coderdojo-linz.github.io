@@ -92,7 +92,7 @@ Begleitpersonen sind natürlich herzlich eingeladen, als Mentoren oder anderweit
 
 Beim Löten im Speziellen ist es von Vorteil, wenn die Begleitpersonen die Kinder unterstützen und darauf achten, dass sie mit dem Werkzeug richtig umgehen. Darüber hinaus haben die Kinder eventuell mehr Spaß daran, wenn mit den Eltern gemeinsam ein Projekt umgesetzt wird.
 
-Als Programmierclub möchten wir natürlich auch moderne Wege zur Kommunikation mit Teilnehmern, Eltern, Mentoren und Medien nutzen (z.B. Blogs, Facebook, Twitter). Sollten Sie keine Fotos Ihres Kindes wünschen, bitten wir Sie um einen entsprechenden Hinweis persönlich beim CoderDojo oder per Email ([Kontaktinformationen](http://coderdojo-linz.github.io/kontakt.html)). 
+Als Programmierclub möchten wir natürlich auch moderne Wege zur Kommunikation mit Teilnehmern, Eltern, Mentoren und Medien nutzen (z.B. Blogs, Facebook, Twitter). Sollten Sie keine Fotos Ihres Kindes wünschen, bitten wir Sie um einen entsprechenden Hinweis persönlich beim CoderDojo oder per Email ([Kontaktinformationen](/#contact)). 
 
 
 ## Wann kann man einsteigen? ##
@@ -107,7 +107,7 @@ Es sind immer mehrere Mentoren anwesend, so können wir sowohl auf Anfänger als
 
 **Grundsätzlich schon. Der Laptop muss aber nicht besonders schnell sein. Es ist egal, ob er mit Windows, Mac OS oder Linux betrieben wird. iPads, Android-Tablets oder Smartphones reichen nicht aus.**
 
-Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, nehmen Sie bitte mit uns [Kontakt](http://coderdojo-linz.github.io/kontakt.html) auf. Wir haben eine limitierte Anzahl an Geräten, die wir während der CoderDojos zur Verfügung stellen können.
+Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, nehmen Sie bitte mit uns [Kontakt](/#contact) auf. Wir haben eine limitierte Anzahl an Geräten, die wir während der CoderDojos zur Verfügung stellen können.
 
 
 ## Neugierig geworden?

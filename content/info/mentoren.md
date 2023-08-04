@@ -59,6 +59,6 @@ Zumindest die Zeit für das CoderDojo selbst. Wir brauchen aber auch Mentoren, d
 
 ### Wie gehe ich das an?
 
-**Nimm bitte einfach mit uns [Kontakt](http://coderdojo-linz.github.io/kontakt.html) auf.**
+**Nimm bitte einfach mit uns [Kontakt](/#contact) auf.**
 
 Wir tauschen dann unsere Kontaktdaten aus und besprechen, wie und wann du als Mentor einsteigen kannst.

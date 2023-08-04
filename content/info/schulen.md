@@ -23,7 +23,7 @@ CoderDojo ist ein von ehrenamtlichen Mentorinnen und Mentoren getragener Program
 
 ### Wie tritt man mit uns wegen Gast-CoderDojo in Kontakt?
 
-Am besten per Email (siehe [Kontakt-Seite](/kontakt)).
+Am besten per Email (siehe [Kontakt-Seite](/#contact)).
 
 ### Was kostet ein Gast-CoderDojo?
 
