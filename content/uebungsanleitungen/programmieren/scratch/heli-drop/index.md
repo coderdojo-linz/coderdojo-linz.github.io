@@ -7,8 +7,8 @@ imgposition: "center top"
 level: 2
 version: 3
 sprites: 3
-scripts: 13
-data: 6
+scripts: 17
+data: 7
 ---
 
 ## Spielbeschreibung
@@ -38,10 +38,12 @@ Damit wir auch das Ende des Spiels korrekt darstellen, duplizieren wir einfach d
 
 {{< imgblock "img/global-vars.png" "Globale Variablen" 2>}}
 Neben den beiden Spiel-Relevanten Informationen, die auch sichtbar sind:
+
 1. **Punke**
 1. **Zeit**
 
 benötigen wir noch 2 Variablen, die für den Spielablauf wichtig sind:
+
 1. **Aktuelle Kisten** - Wie viele Kisten sind noch am Spielfeld
 1. **HeliHatKiste** - Zeigt uns, ob der Helikopter gerade eine Kiste trägt
 {{< /imgblock >}}
@@ -52,6 +54,7 @@ benötigen wir noch 2 Variablen, die für den Spielablauf wichtig sind:
 Die Steuerung des Helikopters ist relativ einfach. Wir verwenden die Cursortasten, um den Helikopter zu bewegen. Dabei achten wir darauf, dass er nicht aus dem Bildschirm fliegen kann.
 
 Die Steuerung beschleunigt den Heli in die Richtung, die wir auf den Pfeiltasten drücken, indem wir in 2 neuen Variablen:
+
 1. **X-Geschwindigkeit** und
 1. **Y-Geschwindigkeit**
 
@@ -84,9 +87,11 @@ Das Ereignis **&lt;&lt;neue kisten&gt;&gt;** wird gesendet, wenn ein neues Level
 Wir brauchen für das Spiel mehrere Kisten. Also werden wir die eigentliche Figur unsichtbar machen und Klone erzeugen, die wir für das Spiel verwenden.
 
 Das Ereignis **&lt;&lt;neue kisten&gt;&gt;** zeigt, dass ein neues Level gestartet wird. Also wird es Zeit neue Kisten auf dem Bildschirm zu verteilen. Jede Kiste braucht über sich selbst folgende Information die in Variablen **nur für diese Figur** gespeichert werden:
+
 - **Aufgehoben** zeigt uns, dass die aktuelle Kiste gerade am Helikopter hängt
 
 Überdies setzen wir die globalen Variablen:
+
 - **HeliHatKiste** auf 0 um zu zeigen, dass der Helikopter gerade keine Kiste trägt und
 - **AktuelleKisten** auf 0, da wir diese ja erst erzeugen müssen.
 
@@ -95,6 +100,7 @@ In einer Schleife erzeugen wir dann 3x einen Klon der Kiste an einer Zufälligen
 
 {{< imgblock "img/crate-newclone.png" "" 4>}}
 Wie vorhin bereits erwähnt machen wir die Klone sichtbar, sodass wir sie als Spielfiguren verwenden können. Solange der Klon existiert, überprüfen wir, ob er gerade aufgehoben ist. Wenn nein, dann lassen wir ihn einfach fallen. Wenn ja, dann überprüfen wir ständig
+
 - **ob die Leertaste gedrückt wurde** und lassen ihn dann fallen, oder
 - **ob die Kiste an einem Gebäude angestoßen ist** und lassen sie dann auch fallen.
 
@@ -106,8 +112,10 @@ Des weiteren benötigen wir noch die Blöcke. Erwähnenswert ist hier dass der B
 #### Ereignisse der Kisten
 {{< imgblock "img/crate-events.png" "" 4>}}
 Die Kisten müssen eigentlich nur auf 2 Ereignisse reagieren:
+
 1. **Kiste berührt** zeigt an, dass der Heli eine Kiste berührt hat. Jede Kiste muss jetzt überprüfen, ob sie betroffen ist, und ob sie die einzige ist. Wenn ja, sieht sich die Kiste selbst als **Aufgehoben**.
 1. **Heli bewegt sich** informiert die Kiste, dass der Heli sich bewegt. Sollte die Kiste **Aufgehoben** sein, fliegt sie mit.
+
 {{< /imgblock >}}
 {{< imgblock "img/crate-pickupblock.png" "" 4>}}
 {{< /imgblock >}}
