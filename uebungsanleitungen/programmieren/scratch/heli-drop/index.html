@@ -162,11 +162,11 @@
                         </tr>
                         <tr>
                             <td><i class="fas fa-code"></i>Skripte</td>
-                            <td>13</td>
+                            <td>17</td>
                         </tr>
                         <tr>
                             <td><i class="fas fa-clipboard-list"></i>Variablen</td>
-                            <td>6</td>
+                            <td>7</td>
                         </tr>
                     </table>
                     
@@ -244,13 +244,19 @@
 
 <div class="row">
     <div class="col">
-        <p><p>Neben den beiden Spiel-Relevanten Informationen, die auch sichtbar sind:
-1. <strong>Punke</strong>
-1. <strong>Zeit</strong></p>
+        <p><p>Neben den beiden Spiel-Relevanten Informationen, die auch sichtbar sind:</p>
 
-<p>benötigen wir noch 2 Variablen, die für den Spielablauf wichtig sind:
-1. <strong>Aktuelle Kisten</strong> - Wie viele Kisten sind noch am Spielfeld
-1. <strong>HeliHatKiste</strong> - Zeigt uns, ob der Helikopter gerade eine Kiste trägt</p>
+<ol>
+<li><strong>Punke</strong></li>
+<li><strong>Zeit</strong></li>
+</ol>
+
+<p>benötigen wir noch 2 Variablen, die für den Spielablauf wichtig sind:</p>
+
+<ol>
+<li><strong>Aktuelle Kisten</strong> - Wie viele Kisten sind noch am Spielfeld</li>
+<li><strong>HeliHatKiste</strong> - Zeigt uns, ob der Helikopter gerade eine Kiste trägt</li>
+</ol>
 </p>
     </div>
     <div class="col-12 col-md-2">
@@ -278,9 +284,12 @@
     <div class="col">
         <p><p>Die Steuerung des Helikopters ist relativ einfach. Wir verwenden die Cursortasten, um den Helikopter zu bewegen. Dabei achten wir darauf, dass er nicht aus dem Bildschirm fliegen kann.</p>
 
-<p>Die Steuerung beschleunigt den Heli in die Richtung, die wir auf den Pfeiltasten drücken, indem wir in 2 neuen Variablen:
-1. <strong>X-Geschwindigkeit</strong> und
-1. <strong>Y-Geschwindigkeit</strong></p>
+<p>Die Steuerung beschleunigt den Heli in die Richtung, die wir auf den Pfeiltasten drücken, indem wir in 2 neuen Variablen:</p>
+
+<ol>
+<li><strong>X-Geschwindigkeit</strong> und</li>
+<li><strong>Y-Geschwindigkeit</strong></li>
+</ol>
 
 <p>speichern. Später verändern wir dann die Position des Helikopters um diese Werte und überprüfen, ob wir eine Kiste (Crate) erwischt haben, oder evtl. gegen ein Gebäude geflogen sind. (Block &ldquo;<strong>dagegen geflogen</strong>&rdquo;)</p>
 
@@ -371,12 +380,18 @@
     <div class="col">
         <p><p>Wir brauchen für das Spiel mehrere Kisten. Also werden wir die eigentliche Figur unsichtbar machen und Klone erzeugen, die wir für das Spiel verwenden.</p>
 
-<p>Das Ereignis <strong>&lt;&lt;neue kisten&gt;&gt;</strong> zeigt, dass ein neues Level gestartet wird. Also wird es Zeit neue Kisten auf dem Bildschirm zu verteilen. Jede Kiste braucht über sich selbst folgende Information die in Variablen <strong>nur für diese Figur</strong> gespeichert werden:
-- <strong>Aufgehoben</strong> zeigt uns, dass die aktuelle Kiste gerade am Helikopter hängt</p>
+<p>Das Ereignis <strong>&lt;&lt;neue kisten&gt;&gt;</strong> zeigt, dass ein neues Level gestartet wird. Also wird es Zeit neue Kisten auf dem Bildschirm zu verteilen. Jede Kiste braucht über sich selbst folgende Information die in Variablen <strong>nur für diese Figur</strong> gespeichert werden:</p>
 
-<p>Überdies setzen wir die globalen Variablen:
-- <strong>HeliHatKiste</strong> auf 0 um zu zeigen, dass der Helikopter gerade keine Kiste trägt und
-- <strong>AktuelleKisten</strong> auf 0, da wir diese ja erst erzeugen müssen.</p>
+<ul>
+<li><strong>Aufgehoben</strong> zeigt uns, dass die aktuelle Kiste gerade am Helikopter hängt</li>
+</ul>
+
+<p>Überdies setzen wir die globalen Variablen:</p>
+
+<ul>
+<li><strong>HeliHatKiste</strong> auf 0 um zu zeigen, dass der Helikopter gerade keine Kiste trägt und</li>
+<li><strong>AktuelleKisten</strong> auf 0, da wir diese ja erst erzeugen müssen.</li>
+</ul>
 
 <p>In einer Schleife erzeugen wir dann 3x einen Klon der Kiste an einer Zufälligen Stelle und zählen die Anzahl der Aktuellen Kisten hoch.</p>
 </p>
@@ -402,9 +417,12 @@
 
 <div class="row">
     <div class="col">
-        <p><p>Wie vorhin bereits erwähnt machen wir die Klone sichtbar, sodass wir sie als Spielfiguren verwenden können. Solange der Klon existiert, überprüfen wir, ob er gerade aufgehoben ist. Wenn nein, dann lassen wir ihn einfach fallen. Wenn ja, dann überprüfen wir ständig
-- <strong>ob die Leertaste gedrückt wurde</strong> und lassen ihn dann fallen, oder
-- <strong>ob die Kiste an einem Gebäude angestoßen ist</strong> und lassen sie dann auch fallen.</p>
+        <p><p>Wie vorhin bereits erwähnt machen wir die Klone sichtbar, sodass wir sie als Spielfiguren verwenden können. Solange der Klon existiert, überprüfen wir, ob er gerade aufgehoben ist. Wenn nein, dann lassen wir ihn einfach fallen. Wenn ja, dann überprüfen wir ständig</p>
+
+<ul>
+<li><strong>ob die Leertaste gedrückt wurde</strong> und lassen ihn dann fallen, oder</li>
+<li><strong>ob die Kiste an einem Gebäude angestoßen ist</strong> und lassen sie dann auch fallen.</li>
+</ul>
 
 <p>Des weiteren benötigen wir noch die Blöcke. Erwähnenswert ist hier dass der Block <strong>Kiste fällt</strong> auch überprüft, ob die Kiste zu weit nach unten gefallen ist. Dort hat die Stadt keinen Boden und wir können damit die Kista als Punkt zählen und die Verfügbaren kisten um 1 verringern.
 <img src="img/crate-blocks.png" alt="" /></p>
@@ -433,9 +451,13 @@
 
 <div class="row">
     <div class="col">
-        <p>Die Kisten müssen eigentlich nur auf 2 Ereignisse reagieren:
-1. <strong>Kiste berührt</strong> zeigt an, dass der Heli eine Kiste berührt hat. Jede Kiste muss jetzt überprüfen, ob sie betroffen ist, und ob sie die einzige ist. Wenn ja, sieht sich die Kiste selbst als <strong>Aufgehoben</strong>.
-1. <strong>Heli bewegt sich</strong> informiert die Kiste, dass der Heli sich bewegt. Sollte die Kiste <strong>Aufgehoben</strong> sein, fliegt sie mit.</p>
+        <p><p>Die Kisten müssen eigentlich nur auf 2 Ereignisse reagieren:</p>
+
+<ol>
+<li><strong>Kiste berührt</strong> zeigt an, dass der Heli eine Kiste berührt hat. Jede Kiste muss jetzt überprüfen, ob sie betroffen ist, und ob sie die einzige ist. Wenn ja, sieht sich die Kiste selbst als <strong>Aufgehoben</strong>.</li>
+<li><strong>Heli bewegt sich</strong> informiert die Kiste, dass der Heli sich bewegt. Sollte die Kiste <strong>Aufgehoben</strong> sein, fliegt sie mit.</li>
+</ol>
+</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/heli-drop/img/crate-events.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
