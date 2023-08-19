@@ -1462,6 +1462,17 @@ Der Besuch der HTL (Elektronik/Informatik) und das Studium Softwae Engeneering a
     </item>
     
     <item>
+      <title>Heli-Drop</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/heli-drop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/heli-drop/</guid>
+      <description>Spielbeschreibung Steuere deinen Helikopter mit den Cursortasten zu den Kisten, heb sie auf und lass sie dann ganz rechts am Bildschirm mit der &amp;lt;Space&amp;gt;-Taste wieder fallen. Wenn du alle Kisten eingesammelt hast, kommst du ins nächste Level.
+Figuren Leider bietet uns Scratch in der Standardbibliothek keinen Helikopter und auch keine Kisten. Du kannst aber hier die entsprechenden Figuren herunterladen:
+ den Helikopter die Kiste (engl. Crate) die Hindernisse/Gebäude der Stadt (City)  Bitte importiere die Figuren in dein Scratch-Projekt.</description>
+    </item>
+    
+    <item>
       <title>Hot Wire - der heiße Draht</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/hot-wire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
