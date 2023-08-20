@@ -20,7 +20,7 @@ Steuere deinen Helikopter mit den Cursortasten zu den Kisten, heb sie auf und la
 Leider bietet uns Scratch in der Standardbibliothek keinen Helikopter und auch keine Kisten. Du kannst aber hier die entsprechenden Figuren herunterladen:
 
 1. [den Helikopter](assets/helicopter.sprite3)
-1. [die Kiste (engl. Crate)](assets/Crate.sprite3)
+1. [die Kiste (Engl. Crate)](assets/Crate.sprite3)
 1. [die Hindernisse/Gebäude der Stadt (City)](assets/City.sprite3)
 
 Bitte importiere die Figuren in dein Scratch-Projekt.
@@ -30,22 +30,22 @@ Bitte importiere die Figuren in dein Scratch-Projekt.
 {{< imgblock "img/backdrop-gameover.png" "Hintergrund Game Over" 2>}}
 Als Hintergrund eignet sich hier eine City-Skyline sehr gut. Die Scratch-Bibliothek bietet hier einiges. 
 
-Damit wir auch das Ende des Spiels korrekt darstellen, duplizieren wir einfach die das Bühnenbild und schreiben groß "Game Over" drüber.
+Damit wir auch das Ende des Spiels korrekt darstellen, duplizieren wir einfach das Bühnenbild und schreiben groß "Game Over" darüber.
 {{< /imgblock >}}
 
 
 ### Globale Variablen
 
 {{< imgblock "img/global-vars.png" "Globale Variablen" 2>}}
-Neben den beiden Spiel-Relevanten Informationen, die auch sichtbar sind:
+Neben den beiden Spiel-relevanten Informationen, die auch sichtbar sind:
 
 1. **Punke**
 1. **Zeit**
 
 benötigen wir noch 2 Variablen, die für den Spielablauf wichtig sind:
 
-1. **Aktuelle Kisten** - Wie viele Kisten sind noch am Spielfeld
-1. **HeliHatKiste** - Zeigt uns, ob der Helikopter gerade eine Kiste trägt
+1. **Aktuelle Kisten** - wie viele Kisten sind noch am Spielfeld
+1. **HeliHatKiste** - zeigt uns, ob der Helikopter gerade eine Kiste trägt
 {{< /imgblock >}}
 
 ### Steuerung des Helikopters
@@ -64,7 +64,7 @@ Die Nachrichten **&lt;&lt;Heli bewegt sich&gt;&gt;** und **&lt;&lt;kiste berühr
 
 Danach prüfen wir noch, ob wir uns noch im Bildschirmbereich befinden und korrigieren die Position, falls wir uns aus dem Bildschirm bewegt haben. (Block "**Prüfe Flugbereich**")
 
-Als letztes lassen wir den Heli noch in der Luft bremsen, sodass er von alleine langsamer wird und langsam auf den Boden sinken kann. (Block "**Bremsen**")
+Als Letztes lassen wir den Heli noch in der Luft bremsen, sodass er von alleine langsamer wird und langsam auf den Boden sinken kann. (Block "**Bremsen**")
 
 **Hier noch die Blöcke im Detail** (Alle Blöcke "Ohne Bildschirmaktualisierung"):
 
@@ -73,20 +73,20 @@ Als letztes lassen wir den Heli noch in der Luft bremsen, sodass er von alleine 
 
 #### Sonstiges zum Helikopter
 {{< imgblock "img/heli-animation.png" "" 2>}}
-Der Helikopter sollte während des Fluges natürlich die Rotorblätter drehen. Einen einfache Animation lässt es so aussehen.
+Der Helikopter sollte während des Fluges natürlich die Rotorblätter drehen. Eine einfache Animation lässt es so aussehen.
 {{< /imgblock >}}
 
 {{< imgblock "img/heli-events.png" "" 3>}}
 Das Ereignis **&lt;&lt;neue kisten&gt;&gt;** wird gesendet, wenn ein neues Level beginnt. Dazu setzen wir den Helikopter auf seine Startposition am rechten Rand.
 
-**&lt;&lt;gefangen&gt;&gt;** wird gesendet, wenn eine Kiste bemerkt, dass Sie vom Helikopter berührt wird und damit aufgehoben wird. Damit der Heli sie nicht gleich wieder fallen lässt, lassen wir den Helikopter ein bisschen nach oben gehen sodass die Kiste nicht gleich wieder auf dem Boden aufsitzt.
+**&lt;&lt;gefangen&gt;&gt;** wird gesendet, wenn eine Kiste bemerkt, dass Sie vom Helikopter berührt wird und damit aufgehoben wird. Damit der Heli sie nicht gleich wieder fallen lässt, lassen wir den Helikopter ein bisschen nach oben gehen, sodass die Kiste nicht gleich wieder auf dem Boden aufsitzt.
 {{< /imgblock >}}
 
 ### Kisten
 {{< imgblock "img/crate-start.png" "" 4>}}
 Wir brauchen für das Spiel mehrere Kisten. Also werden wir die eigentliche Figur unsichtbar machen und Klone erzeugen, die wir für das Spiel verwenden.
 
-Das Ereignis **&lt;&lt;neue kisten&gt;&gt;** zeigt, dass ein neues Level gestartet wird. Also wird es Zeit neue Kisten auf dem Bildschirm zu verteilen. Jede Kiste braucht über sich selbst folgende Information die in Variablen **nur für diese Figur** gespeichert werden:
+Das Ereignis **&lt;&lt;neue kisten&gt;&gt;** zeigt, dass ein neues Level gestartet wird. Also wird es Zeit, neue Kisten auf dem Bildschirm zu verteilen. Jede Kiste braucht über sich selbst folgende Information, die in Variablen **nur für diese Figur** gespeichert werden:
 
 - **Aufgehoben** zeigt uns, dass die aktuelle Kiste gerade am Helikopter hängt
 
@@ -95,7 +95,7 @@ Das Ereignis **&lt;&lt;neue kisten&gt;&gt;** zeigt, dass ein neues Level gestart
 - **HeliHatKiste** auf 0 um zu zeigen, dass der Helikopter gerade keine Kiste trägt und
 - **AktuelleKisten** auf 0, da wir diese ja erst erzeugen müssen.
 
-In einer Schleife erzeugen wir dann 3x einen Klon der Kiste an einer Zufälligen Stelle und zählen die Anzahl der Aktuellen Kisten hoch.
+In einer Schleife erzeugen wir dann 3x einen Klon der Kiste an einer zufälligen Stelle und zählen die Anzahl der aktuellen Kisten hoch.
 {{< /imgblock >}}
 
 {{< imgblock "img/crate-newclone.png" "" 4>}}
@@ -104,7 +104,7 @@ Wie vorhin bereits erwähnt machen wir die Klone sichtbar, sodass wir sie als Sp
 - **ob die Leertaste gedrückt wurde** und lassen ihn dann fallen, oder
 - **ob die Kiste an einem Gebäude angestoßen ist** und lassen sie dann auch fallen.
 
-Des weiteren benötigen wir noch die Blöcke. Erwähnenswert ist hier dass der Block **Kiste fällt** auch überprüft, ob die Kiste zu weit nach unten gefallen ist. Dort hat die Stadt keinen Boden und wir können damit die Kista als Punkt zählen und die Verfügbaren kisten um 1 verringern.
+Des Weiteren benötigen wir noch die Blöcke. Erwähnenswert ist hier, dass der Block **Kiste fällt** auch überprüft, ob die Kiste zu weit nach unten gefallen ist. Dort hat die Stadt keinen Boden und wir können damit die Kiste als Punkt zählen und die verfügbaren Kisten um 1 verringern.
 ![](img/crate-blocks.png)
 
 {{< /imgblock >}}
@@ -123,14 +123,14 @@ Die Kisten müssen eigentlich nur auf 2 Ereignisse reagieren:
 ### Gebäude (City)
 {{< imgblock "img/city.png" "" 4>}}
 Diese Figur zeigt uns die Gebäude der Stadt. Jedes Kostüm ist ein Level des Spiels. 
-Zuerst wird bei einem neuen Level gewartet bis Kisten im Spielfeld sind. Danach warten wir biss alle eingesammelt wurden. Anschließend schalten wir zum nächsten Level um.
+Zuerst wird bei einem neuen Level gewartet, bis Kisten im Spielfeld sind. Danach warten wir, bis alle eingesammelt wurden. Anschließend schalten wir zum nächsten Level um.
 
-**Anmerkung**: Du kannst die Level sehr einfach erweitern, indem du ein weiteres Kostüm hinzufügst, und deine Gebäude hinein malst. Du musst nur darauf achten, dass es einen Bereich (am besten ganz rechts) gibt, wo die Kisten bis zum unteren Rand fallen können.
+**Anmerkung**: Du kannst die Level sehr einfach erweitern, indem du ein weiteres Kostüm hinzufügst, und deine Gebäude hineinmalst. Du musst nur darauf achten, dass es einen Bereich (am besten ganz rechts) gibt, wo die Kisten bis zum unteren Rand fallen können.
 {{< /imgblock >}}
 
 ### Spielsteuerung (Bühne)
 {{< imgblock "img/stage.png" "" 4>}}
-Dieser Block steuert das Spiel indem es die Zeit herunterzählt und darauf achtet, ob die Zeit abgelaufen ist. Falls die Zeit um ist, wird das Spiel beendet und "Game Over" angezeigt.
+Dieser Block steuert das Spiel, indem es die Zeit herunterzählt und darauf achtet, ob die Zeit abgelaufen ist. Falls die Zeit um ist, wird das Spiel beendet und "Game Over" angezeigt.
 {{< /imgblock >}}
 
 ## Herunterladen
