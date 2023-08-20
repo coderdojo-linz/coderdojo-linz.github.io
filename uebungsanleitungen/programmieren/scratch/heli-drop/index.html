@@ -193,7 +193,7 @@
 
 <ol>
 <li><a href="assets/helicopter.sprite3" target="_blank">den Helikopter</a></li>
-<li><a href="assets/Crate.sprite3" target="_blank">die Kiste (engl. Crate)</a></li>
+<li><a href="assets/Crate.sprite3" target="_blank">die Kiste (Engl. Crate)</a></li>
 <li><a href="assets/City.sprite3" target="_blank">die Hindernisse/Gebäude der Stadt (City)</a></li>
 </ol>
 
@@ -218,7 +218,7 @@
     <div class="col">
         <p><p>Als Hintergrund eignet sich hier eine City-Skyline sehr gut. Die Scratch-Bibliothek bietet hier einiges.</p>
 
-<p>Damit wir auch das Ende des Spiels korrekt darstellen, duplizieren wir einfach die das Bühnenbild und schreiben groß &ldquo;Game Over&rdquo; drüber.</p>
+<p>Damit wir auch das Ende des Spiels korrekt darstellen, duplizieren wir einfach das Bühnenbild und schreiben groß &ldquo;Game Over&rdquo; darüber.</p>
 </p>
     </div>
     <div class="col-12 col-md-2">
@@ -244,7 +244,7 @@
 
 <div class="row">
     <div class="col">
-        <p><p>Neben den beiden Spiel-Relevanten Informationen, die auch sichtbar sind:</p>
+        <p><p>Neben den beiden Spiel-relevanten Informationen, die auch sichtbar sind:</p>
 
 <ol>
 <li><strong>Punke</strong></li>
@@ -254,8 +254,8 @@
 <p>benötigen wir noch 2 Variablen, die für den Spielablauf wichtig sind:</p>
 
 <ol>
-<li><strong>Aktuelle Kisten</strong> - Wie viele Kisten sind noch am Spielfeld</li>
-<li><strong>HeliHatKiste</strong> - Zeigt uns, ob der Helikopter gerade eine Kiste trägt</li>
+<li><strong>Aktuelle Kisten</strong> - wie viele Kisten sind noch am Spielfeld</li>
+<li><strong>HeliHatKiste</strong> - zeigt uns, ob der Helikopter gerade eine Kiste trägt</li>
 </ol>
 </p>
     </div>
@@ -297,7 +297,7 @@
 
 <p>Danach prüfen wir noch, ob wir uns noch im Bildschirmbereich befinden und korrigieren die Position, falls wir uns aus dem Bildschirm bewegt haben. (Block &ldquo;<strong>Prüfe Flugbereich</strong>&rdquo;)</p>
 
-<p>Als letztes lassen wir den Heli noch in der Luft bremsen, sodass er von alleine langsamer wird und langsam auf den Boden sinken kann. (Block &ldquo;<strong>Bremsen</strong>&rdquo;)</p>
+<p>Als Letztes lassen wir den Heli noch in der Luft bremsen, sodass er von alleine langsamer wird und langsam auf den Boden sinken kann. (Block &ldquo;<strong>Bremsen</strong>&rdquo;)</p>
 
 <p><strong>Hier noch die Blöcke im Detail</strong> (Alle Blöcke &ldquo;Ohne Bildschirmaktualisierung&rdquo;):</p>
 
@@ -327,7 +327,7 @@
 
 <div class="row">
     <div class="col">
-        <p>Der Helikopter sollte während des Fluges natürlich die Rotorblätter drehen. Einen einfache Animation lässt es so aussehen.</p>
+        <p>Der Helikopter sollte während des Fluges natürlich die Rotorblätter drehen. Eine einfache Animation lässt es so aussehen.</p>
     </div>
     <div class="col-12 col-md-2">
     <img src="/uebungsanleitungen/programmieren/scratch/heli-drop/img/heli-animation.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -352,7 +352,7 @@
     <div class="col">
         <p><p>Das Ereignis <strong>&lt;&lt;neue kisten&gt;&gt;</strong> wird gesendet, wenn ein neues Level beginnt. Dazu setzen wir den Helikopter auf seine Startposition am rechten Rand.</p>
 
-<p><strong>&lt;&lt;gefangen&gt;&gt;</strong> wird gesendet, wenn eine Kiste bemerkt, dass Sie vom Helikopter berührt wird und damit aufgehoben wird. Damit der Heli sie nicht gleich wieder fallen lässt, lassen wir den Helikopter ein bisschen nach oben gehen sodass die Kiste nicht gleich wieder auf dem Boden aufsitzt.</p>
+<p><strong>&lt;&lt;gefangen&gt;&gt;</strong> wird gesendet, wenn eine Kiste bemerkt, dass Sie vom Helikopter berührt wird und damit aufgehoben wird. Damit der Heli sie nicht gleich wieder fallen lässt, lassen wir den Helikopter ein bisschen nach oben gehen, sodass die Kiste nicht gleich wieder auf dem Boden aufsitzt.</p>
 </p>
     </div>
     <div class="col-12 col-md-3">
@@ -380,7 +380,7 @@
     <div class="col">
         <p><p>Wir brauchen für das Spiel mehrere Kisten. Also werden wir die eigentliche Figur unsichtbar machen und Klone erzeugen, die wir für das Spiel verwenden.</p>
 
-<p>Das Ereignis <strong>&lt;&lt;neue kisten&gt;&gt;</strong> zeigt, dass ein neues Level gestartet wird. Also wird es Zeit neue Kisten auf dem Bildschirm zu verteilen. Jede Kiste braucht über sich selbst folgende Information die in Variablen <strong>nur für diese Figur</strong> gespeichert werden:</p>
+<p>Das Ereignis <strong>&lt;&lt;neue kisten&gt;&gt;</strong> zeigt, dass ein neues Level gestartet wird. Also wird es Zeit, neue Kisten auf dem Bildschirm zu verteilen. Jede Kiste braucht über sich selbst folgende Information, die in Variablen <strong>nur für diese Figur</strong> gespeichert werden:</p>
 
 <ul>
 <li><strong>Aufgehoben</strong> zeigt uns, dass die aktuelle Kiste gerade am Helikopter hängt</li>
@@ -393,7 +393,7 @@
 <li><strong>AktuelleKisten</strong> auf 0, da wir diese ja erst erzeugen müssen.</li>
 </ul>
 
-<p>In einer Schleife erzeugen wir dann 3x einen Klon der Kiste an einer Zufälligen Stelle und zählen die Anzahl der Aktuellen Kisten hoch.</p>
+<p>In einer Schleife erzeugen wir dann 3x einen Klon der Kiste an einer zufälligen Stelle und zählen die Anzahl der aktuellen Kisten hoch.</p>
 </p>
     </div>
     <div class="col-12 col-md-4">
@@ -424,7 +424,7 @@
 <li><strong>ob die Kiste an einem Gebäude angestoßen ist</strong> und lassen sie dann auch fallen.</li>
 </ul>
 
-<p>Des weiteren benötigen wir noch die Blöcke. Erwähnenswert ist hier dass der Block <strong>Kiste fällt</strong> auch überprüft, ob die Kiste zu weit nach unten gefallen ist. Dort hat die Stadt keinen Boden und wir können damit die Kista als Punkt zählen und die Verfügbaren kisten um 1 verringern.
+<p>Des Weiteren benötigen wir noch die Blöcke. Erwähnenswert ist hier, dass der Block <strong>Kiste fällt</strong> auch überprüft, ob die Kiste zu weit nach unten gefallen ist. Dort hat die Stadt keinen Boden und wir können damit die Kiste als Punkt zählen und die verfügbaren Kisten um 1 verringern.
 <img src="img/crate-blocks.png" alt="" /></p>
 </p>
     </div>
@@ -505,9 +505,9 @@
 <div class="row">
     <div class="col">
         <p><p>Diese Figur zeigt uns die Gebäude der Stadt. Jedes Kostüm ist ein Level des Spiels.
-Zuerst wird bei einem neuen Level gewartet bis Kisten im Spielfeld sind. Danach warten wir biss alle eingesammelt wurden. Anschließend schalten wir zum nächsten Level um.</p>
+Zuerst wird bei einem neuen Level gewartet, bis Kisten im Spielfeld sind. Danach warten wir, bis alle eingesammelt wurden. Anschließend schalten wir zum nächsten Level um.</p>
 
-<p><strong>Anmerkung</strong>: Du kannst die Level sehr einfach erweitern, indem du ein weiteres Kostüm hinzufügst, und deine Gebäude hinein malst. Du musst nur darauf achten, dass es einen Bereich (am besten ganz rechts) gibt, wo die Kisten bis zum unteren Rand fallen können.</p>
+<p><strong>Anmerkung</strong>: Du kannst die Level sehr einfach erweitern, indem du ein weiteres Kostüm hinzufügst, und deine Gebäude hineinmalst. Du musst nur darauf achten, dass es einen Bereich (am besten ganz rechts) gibt, wo die Kisten bis zum unteren Rand fallen können.</p>
 </p>
     </div>
     <div class="col-12 col-md-4">
@@ -533,7 +533,7 @@ Zuerst wird bei einem neuen Level gewartet bis Kisten im Spielfeld sind. Danach 
 
 <div class="row">
     <div class="col">
-        <p>Dieser Block steuert das Spiel indem es die Zeit herunterzählt und darauf achtet, ob die Zeit abgelaufen ist. Falls die Zeit um ist, wird das Spiel beendet und &ldquo;Game Over&rdquo; angezeigt.</p>
+        <p>Dieser Block steuert das Spiel, indem es die Zeit herunterzählt und darauf achtet, ob die Zeit abgelaufen ist. Falls die Zeit um ist, wird das Spiel beendet und &ldquo;Game Over&rdquo; angezeigt.</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/heli-drop/img/stage.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
