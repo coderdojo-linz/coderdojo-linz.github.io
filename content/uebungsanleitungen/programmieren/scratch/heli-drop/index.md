@@ -104,7 +104,8 @@ Wie vorhin bereits erwähnt machen wir die Klone sichtbar, sodass wir sie als Sp
 - **ob die Leertaste gedrückt wurde** und lassen ihn dann fallen, oder
 - **ob die Kiste an einem Gebäude angestoßen ist** und lassen sie dann auch fallen.
 
-Des Weiteren benötigen wir noch die Blöcke. Erwähnenswert ist hier, dass der Block **Kiste fällt** auch überprüft, ob die Kiste zu weit nach unten gefallen ist. Dort hat die Stadt keinen Boden und wir können damit die Kiste als Punkt zählen und die verfügbaren Kisten um 1 verringern.
+Des Weiteren benötigen wir noch die Blöcke. Erwähnenswert ist hier, dass der Block **Kiste fällt** auch überprüft, ob die Kiste zu weit nach unten gefallen ist. Dort hat die Stadt keinen Boden und wir können damit die Kiste als Punkt zählen und die verfügbaren Kisten um 1 verringern. Der Block **Kiste fällt** ist übrigens auch der einzige Block der **mit** Bildschirmaktualisierung ausgeführt wird.
+
 ![](img/crate-blocks.png)
 
 {{< /imgblock >}}
