@@ -263,7 +263,7 @@ function loadEvents(eventsTable) {
 
           let registrationLink = '';
           let location = '';
-          if (formattedDate === '26.05.2023') {
+          if (formattedDate === '15.09.2023') {
             if (event.location.indexOf('Steyr') >= 0) {
               registrationLink =
                 'https://tic-steyr.at/coderdojo-steyr/registration';
@@ -280,7 +280,7 @@ function loadEvents(eventsTable) {
               '<p><a class="btn btn-primary" target="_blank" href="' +
               registrationLink +
               '">Zur Anmeldung</a></p>';
-          } else if (formattedDate !== '11.08.2023' && formattedDate !== '01.07.2023' && formattedDate !== '28.07.2023') {
+          } else if (formattedDate !== '06.09.2023' && formattedDate !== '07.09.2023' && formattedDate !== '08.09.2023' && formattedDate !== '09.09.2023' && formattedDate !== '10.09.2023') {
             row +=
               '<p>Der Link zur Anmeldung wird 2 Wochen vor dem Event bekannt gegeben.</p>';
           }
