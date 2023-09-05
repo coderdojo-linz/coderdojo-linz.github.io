@@ -197,6 +197,11 @@ function loadEvents(eventsTable) {
         if (event.type.toLowerCase() === 'coderdojo') {
           formattedBeginTime = '16:00';
           formattedEndTime = '18:00';
+
+          if (formattedDate === '15.09.2023') {
+            formattedBeginTime = '15:00';
+            formattedEndTime = '17:00';
+          }
         }
 
         if (event && event.workshops.length) {
