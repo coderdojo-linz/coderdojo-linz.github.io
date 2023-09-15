@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Mandala </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <link rel="canonical" href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/mandala/" />
+    
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>  
+     
+     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/">Web</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#mandala-mit-code-malen">Mandala mit Code malen</a>
+<ul>
+<li><a href="#was-ist-ein-mandala">Was ist ein Mandala?</a></li>
+<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+<li><a href="#start">Start</a></li>
+<li><a href="#die-ersten-kreise">Die ersten Kreise</a></li>
+<li><a href="#linien">Linien</a></li>
+<li><a href="#kleine-kreise">Kleine Kreise</a></li>
+<li><a href="#farben">Farben</a></li>
+<li><a href="#weiterführende-übungen">Weiterführende Übungen</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="mandala-mit-code-malen">Mandala mit Code malen</h1>
+
+<h2 id="was-ist-ein-mandala">Was ist ein Mandala?</h2>
+
+<p>Stell dir vor, du zeichnest einen Kreis und füllst ihn mit vielen schönen Mustern, Formen und Farben. Es ist wie ein kompliziertes Malbuch, aber alles ist in einem Kreis angeordnet. Dieses Muster kann dir helfen, dich zu entspannen oder über das Leben und die Welt nachzudenken. In manchen Kulturen glauben die Menschen sogar, dass Mandalas ihnen helfen können, sich besser auf ihre Gedanken zu konzentrieren oder sich mit dem Universum zu verbinden.</p>
+
+<p>Viele Menschen finden es auch einfach entspannend, Mandalas zu malen oder auszumalen. Es gibt sogar spezielle Malbücher nur mit Mandalas für Menschen, die sie gerne ausmalen möchten!</p>
+
+<p>Führe am besten eine Bildersuche nach &ldquo;Mandala&rdquo; durch, um dir ein paar Beispiele anzusehen.</p>
+
+<h2 id="ziel-der-übung">Ziel der Übung</h2>
+
+<p>Wir möchten ein einfaches, schwar-weißes Mandala mit Code zeichnen. Dabei verwenden wir die Programmiersprache TypeScript und die Plattform p5js.y. So soll unser Mandala am Ende aussehen. Natürlich erfährst du auch, wie du es farbig ausmalen kannst. Aber dazu später mehr.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/mandala/img/mandala-bw.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="start">Start</h2>
+
+<p>Starte, indem du <a href="https://stackblitz.com/edit/mandala-starter?file=index.ts" target="_blank">https://stackblitz.com/edit/mandala-starter?file=index.ts</a> öffnest. Empfohlen ist es die Übung mit Chrome oder Edge zu machen. Andere Browser sollten aber auch funktionieren.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/mandala/img/start-stackblitz.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Nach Öffnen des Links solltest du ein Fenster sehen, das in etwa so aussieht wie die oben dargestellte Abbildung. Drücke einmal auf <em>Fork</em> (oben durch roten Rahmen hervorgehoben), um eine eigene Kopie des Startercodes herzustellen.</p>
+
+<h2 id="die-ersten-kreise">Die ersten Kreise</h2>
+
+<p>Starten wir mit dem Zeichnen der ersten Kreise. Dafür suchst du dir im Startercode die Zeile <code>p.background('white');</code> in der Methode <code>draw</code> heraus. Sie müsste relativ weit unten im Code zu finden sein.</p>
+
+<p>Unmittelbar nach dieser Zeile (<strong>vor</strong> der geschweiften Klammer zu) fügen wir folgenden Code ein. Die Kommentare (alles nach <code>//</code> musst du <strong>nicht</strong> eintippen. Das sind nur Erklärungen, was der Code macht):</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">p.strokeWeight(1);      <span style="color:#008000">// Linienstärke
+</span><span style="color:#008000"></span>p.stroke(<span style="color:#a31515">&#39;black&#39;</span>);      <span style="color:#008000">// Linienfarbe
+</span><span style="color:#008000"></span>p.angleMode(p.DEGREES); <span style="color:#008000">// Wir arbeiten mit Grad, ändere an dieser Zeile besser nichts
+</span><span style="color:#008000"></span>p.noFill();             <span style="color:#008000">// Wir wollen im Moment keine Füllfarbe
+</span><span style="color:#008000"></span>p.translate(230, 230);  <span style="color:#008000">// Wir verschieben den Mittelpunkt (0/0) unserer Zeichnung in
+</span><span style="color:#008000"></span>                        <span style="color:#008000">// die Mitte unseres Mandalas auf die Koordinaten 230/230.
+</span></code></pre></div>
+<p>Falls du später mit verschiedenen Linienfarben experimentieren möchtest, findest du die englischen Farbnamen unter <a href="https://htmlcolorcodes.com/color-names/" target="_blank">https://htmlcolorcodes.com/color-names/</a>.</p>
+
+<p>Noch hat sich an unserem weißen Bildschirm nichts verändert. Das ändern wir jetzt. Füge folgenden Code ein <strong>unmittelbar nach dem Code ein, den du zuvor geschrieben hast</strong>, um die drei großen Kreise zu zeichnen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">p.push(); <span style="color:#008000">// Ist einfach notwendig, vertrau uns ;-)
+</span><span style="color:#008000"></span>p.circle(0, 0, 450); <span style="color:#008000">// Ganz großer Kreis
+</span><span style="color:#008000"></span>p.circle(0, 0, 390); <span style="color:#008000">// Mittlerer Kreis
+</span><span style="color:#008000"></span>p.circle(0, 0, 225); <span style="color:#008000">// Innerer Kreis
+</span><span style="color:#008000"></span>p.pop(); <span style="color:#008000">// Ist einfach notwendig, vertrau uns ;-)
+</span></code></pre></div>
+<p>So sollte die Grafik jetzt aussehen. Damit du die Parameter beim Aufruf der <code>circle</code>-Methode besser verstehst, ist eingezeichnet, welcher Kreis welchen Durchmesser hat.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/mandala/img/circles.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="linien">Linien</h2>
+
+<p>Jetzt müssen wir die sechs Linien einzeichnen, die durch die Kreise gehen. Damit du besser verstehst, von welchen Linien wir sprechen, hier die Linien in Rot dargestellt:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/mandala/img/lines.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Sechs Linien einzeln zeichnen ist langweilig. Wir verwenden stattdessen eine Schleife. Schleifen kennst du vielleicht schon aus Scratch. Füge folgenden Code ein <strong>unmittelbar nach dem Code ein, den du zuvor geschrieben hast</strong>, um die Linien zu zeichnen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">p.push();
+<span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; 6; i++) { <span style="color:#008000">// Schleife, die sechs mal wiederholt wird
+</span><span style="color:#008000"></span>    p.line(0, -225, 0, 225); <span style="color:#008000">// Zeichne eine Linie
+</span><span style="color:#008000"></span>    p.rotate(30); <span style="color:#008000">// Rotiere die nächste Linie um 30 Grad
+</span><span style="color:#008000"></span>}
+p.pop();
+</code></pre></div>
+<p>Experimentiere mit den verschiedenen Zahlen. Kannst du herausfinden, was sie genau steuern?</p>
+
+<h2 id="kleine-kreise">Kleine Kreise</h2>
+
+<p>Jetzt kommen die sechs kleineren, inneren Kreise. In der folgenden Grafik siehst du, wie ein Kreis nach dem anderen hinzugefügt wird. Ganz links ist nur ein Kreis in der Grafik. In der Mitte sind es zwei, rechts dann drei. So geht das insgesamt sechs Mal, bis das schöne Mandala-Muster entstanden ist.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/mandala/img/small-circles.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Füge folgenden Code ein <strong>unmittelbar nach dem Code ein, den du zuvor geschrieben hast</strong>, um die inneren Kreise zu zeichnen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; 6; i++) { <span style="color:#008000">// Schleife, die sechs mal wiederholt wird
+</span><span style="color:#008000"></span>    p.circle(113, 0, 225); <span style="color:#008000">// Zeichne den Kreis
+</span><span style="color:#008000"></span>    p.rotate(60); <span style="color:#008000">// Rotiere den nächsten Kreis um 60 Grad
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<p>Experimentiere mit den verschiedenen Zahlen. Kannst du herausfinden, was sie genau steuern?</p>
+
+<p><strong>Gratuliere!</strong> Dein Mandala-Muster in Schwarzweiß ist fertig.</p>
+
+<h2 id="farben">Farben</h2>
+
+<p>Jetzt wollen wir das Mandala noch farbig ausmalen. Starten wir mit den großen Kreisen. Suche dir den Code heraus, mit dem wir die großen Kreise gezeichnet haben. Hier fügen wir jetzt Füllfarben ein:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">p.push();
+p.fill(255, 0, 0, 255); <span style="color:#008000">// &lt;&lt;&lt; DIESE ZEILE EINFÜGEN
+</span><span style="color:#008000"></span>p.circle(0, 0, 450);
+p.fill(0, 255, 0, 255); <span style="color:#008000">// &lt;&lt;&lt; DIESE ZEILE EINFÜGEN
+</span><span style="color:#008000"></span>p.circle(0, 0, 390);
+p.fill(0, 0, 255, 255); <span style="color:#008000">// &lt;&lt;&lt; DIESE ZEILE EINFÜGEN
+</span><span style="color:#008000"></span>p.circle(0, 0, 225);
+p.pop();
+</code></pre></div>
+<p>So sieht das dann aus:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/mandala/img/colorful-1.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Du fragst dich sicher, was die Zahlen bei <code>fill</code> in Klammern bedeuten. Die <strong>ersten drei Zahlen</strong> sind der Rot-, der Grün- und der Blau-Anteil der Farbe. 255 ist der höchste Wert, 0 der niedrigste. Woher soll man aber wissen, was man hinschreiben kann? Schau mal auf die Webseite <a href="https://htmlcolorcodes.com/color-picker/" target="_blank">https://htmlcolorcodes.com/color-picker/</a>. Dort kannst du dir einfach eine Farbe mit der Maus aussuchen. Die drei Farbwerte kann du dann ablesen und in deinen Code übernehmen.</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/mandala/img/color-picker.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Die vierte Zahl bei <code>fill</code> in Klammern ist die Deckkraft der Farbe. 255 ist die höchste Deckkraft, 0 die niedrigste. Die Deckkraft ist wichtig, wenn du die inneren Kreis ausmalen möchtest. Das sieht auch schön aus. Hier ein Beispiel:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; 6; i++) {
+    p.fill(255, 255, 0, 75); <span style="color:#008000">// &lt;&lt;&lt; DIESE ZEILE EINFÜGEN
+</span><span style="color:#008000"></span>    p.circle(113, 0, 225);
+    p.rotate(60);
+}
+</code></pre></div>
+<p>Das sieht dann so aus:</p>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/web/mandala/img/final.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p><strong>Experimentiere mit den verschiedenen Zahlen und Farben. Kannst du herausfinden, was sie genau steuern? Welche Gestaltung gefällt dir am besten?</strong></p>
+
+<h2 id="weiterführende-übungen">Weiterführende Übungen</h2>
+
+<ul>
+<li>Experimentiere mit Farben und Linienstärken</li>
+<li>Füge noch weitere Formen hinzu (Linien, Kreise, Rechtecke)</li>
+<li>Gestalte dein eigenes Mandala</li>
+</ul>
+ </div>
+        </div>
+    </div>
+</section>  
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <div>
+                            <img src="/img/logo-coding-club-linz-white.svg">
+                        </div>
+                        <div>Coding Club Linz<br />Birkenweg 16, 4060 Leonding <br />
+                            <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfXNMcZAAAAALYnf3GpUqw5uotVMyjhLNU438i9"></script>
+</body>
+
+</html>
