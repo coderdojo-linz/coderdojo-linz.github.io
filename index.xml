@@ -1032,7 +1032,8 @@ Dafür bitte unter &amp;ldquo;File&amp;rdquo; -&amp;gt; &amp;ldquo;Settings&amp;
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/uebungsbuch-1/</guid>
       <description>Übungsbuch 1 - Für Programmier-AnfängerInnen ab 8 Jahren
-Im diesem Übungsbuch findest du 3 Scratch Übungen und 1 JavaScript Übung für Programmier-AnfängerInnen. Für die JavaScript Übung solltest du schon ein klein wenig Tippen können.
+Im diesem Übungsbuch findest du 6 Scratch Übungen, 3 TypeScript Übung und 3 Python Übungen für Programmier-AnfängerInnen. Für die TypeScript und Python Übung solltest du schon ein klein wenig Tippen können.
+Wenn du sehen möchtest wie die fertigen Spiele aussehen, findest du unter Übungsbuch - Spiele zum Ausprobieren alle Spiele zum direkt online ausprobieren.
 Download</description>
     </item>
     
@@ -2283,6 +2284,17 @@ Allgemeines zur Programmiersprache Python Wir verwenden für die Programmierung 
       
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten-2/</guid>
       <description>Zahlen raten mit Python Teil 2 Kennst du den ersten Teil, wo wir ein Programm entwickelt haben, das sich eine Zahl ausdenkt und den Spieler erraten lässt? Jetzt wollen wir die Rollen tauschen und den Computer eine vom Menschen gedachte Zahl erraten lassen. Der Computer fragt zuerst, wie groß die gedachte Zahl höchstens sein kann, und beginnt dann mit dem Raten. Der Spieler gibt nach jedem Versuch an, ob die vom Computer ausgespuckte Zahl zu klein, zu groß oder richtig war.</description>
+    </item>
+    
+    <item>
+      <title>Übungsbuch Spiele zum Ausprobieren</title>
+      <link>https://linz.coderdojo.net/uebungsbuch-ausprobieren/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsbuch-ausprobieren/</guid>
+      <description>Hier kannst du die Spiele aus dem Übungsbuch (4. Auflage) ausprobieren! Du kannst alle Anleitungen im Übungsbuch als PDF downloaden.
+Der erfahrene CoderDojo-Teilnehmer Benjamin, der bereits erste Erfahrungen als Mentor gesammelt hat, hat uns Lösungen für alle Übungsanleitungen aus dem Buch zur Verfügung gestellt. Dadurch habt ihr die Möglichkeit, alle Beispiele online auszuprobieren.
+Scratch Fang mich - mein erstes Spiel mit Scratch  Tastatur-Rennen – Wer tippt am schnellsten?  Paddle Game  Virus-Buster  Space Shooter  Froggy - die Straße überqueren  Typescript Malen nach Zahlen  Feuerwerk mit TypeScript  Erste Schritte bei 3D-Programmierung Python Von Scratch zu Python   Wir zeichnen einen Alien  Bubble Blaster</description>
     </item>
     
   </channel>
