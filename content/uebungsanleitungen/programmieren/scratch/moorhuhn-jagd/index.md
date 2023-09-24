@@ -74,6 +74,9 @@ Das Fadenkreuz ist ganz einfach. Es soll einfach die ganze Zeit dem Mauszeiger f
 
 1. {{< imgblock "img/09-balloons-scripts-1.png" "Figuren" 7 >}}
 Jetzt wieder zu etwas komplizierterem, dem Script für die Ballons. Ähnlich wie die Hühner fliegen sie herum. Allerdings bewegen sie sich nicht von unten nach oben, sondern von links nach rechts. Sie sollen die Richtung zufällig wählen, also manchmal von links nach rechts und manchmal von rechts nach links fliegen.
+
+Vergiss nicht, für die Ballons eine eigene Variable **hit** zu erstellen. Wie
+bei den Hühnern muss auch diese Variable _nur für diese Figur_ gelten.
 {{< /imgblock >}}
 
 2. {{< imgblock "img/10-balloons-scripts-2.png" "Figuren" 7 >}}
