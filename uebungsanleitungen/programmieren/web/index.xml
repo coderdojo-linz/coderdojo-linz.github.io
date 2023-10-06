@@ -189,6 +189,16 @@ Grafiken In dieser Übung verwenden wir Grafiken der Plattform craftpix.net. Du 
     </item>
     
     <item>
+      <title>Moorhuhn Jagd</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/moorhuhn-jagd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/moorhuhn-jagd/</guid>
+      <description>Moorhuhn Jagd Einleitung In dieser Übung programmierst du das Spiel Moorhuhn Jagd erst mit Scratch und danach mit TypeScript und p5.js. In dieser Anleitung gehen wir davon aus, dass du schon etwas Erfahrung mit TypeScript und p5.js hast.
+   Das Scratch-Spiel Damit du mit dem Spielprinzip vertraut wirst, baue das Spiel zuerst mit Scratch nach. Die Anleitung dazu findest du hier. Dieser Schritt ist wirklich wichtig, nicht auslassen!</description>
+    </item>
+    
+    <item>
       <title>Präsentationen mit HTML statt PowerPoint</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-praesentationen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

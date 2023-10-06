@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Moorhuhn Jagd </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <link rel="canonical" href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/moorhuhn-jagd/" />
+    
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>  
+     
+     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/">Web</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#moorhuhn-jagd">Moorhuhn Jagd</a>
+<ul>
+<li><a href="#einleitung">Einleitung</a></li>
+<li><a href="#das-scratch-spiel">Das Scratch-Spiel</a></li>
+<li><a href="#der-starter-code">Der Starter-Code</a></li>
+<li><a href="#fadenkreuz">Fadenkreuz</a></li>
+<li><a href="#hügel">Hügel</a></li>
+<li><a href="#punkteanzeige">Punkteanzeige</a></li>
+<li><a href="#die-hühner">Die Hühner</a></li>
+<li><a href="#ballon">Ballon</a></li>
+<li><a href="#abschießen">Abschießen</a></li>
+<li><a href="#hühner-schneller-machen">Hühner schneller machen</a></li>
+<li><a href="#game-over">Game Over</a></li>
+<li><a href="#gratulation-geschafft">Gratulation, geschafft!</a></li>
+</ul></li>
+</ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> 
+
+<h1 id="moorhuhn-jagd">Moorhuhn Jagd</h1>
+
+<h2 id="einleitung">Einleitung</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>In dieser Übung programmierst du das Spiel <em>Moorhuhn Jagd</em> <a href="../../scratch/moorhuhn-jagd/">erst mit Scratch</a> und danach mit TypeScript und p5.js. In dieser Anleitung gehen wir davon aus, dass du schon etwas Erfahrung mit TypeScript und p5.js hast.</p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img src="/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/titel.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="das-scratch-spiel">Das Scratch-Spiel</h2>
+
+<p>Damit du mit dem Spielprinzip vertraut wirst, baue das Spiel zuerst mit Scratch nach. Die Anleitung dazu findest du <a href="../../scratch/moorhuhn-jagd/">hier</a>. Dieser Schritt ist wirklich wichtig, nicht auslassen!</p>
+
+<h2 id="der-starter-code">Der Starter-Code</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Öffne als erstes den <a href="https://stackblitz.com/edit/crazy-chicken-part-2-starter" target="_blank">Starter-Code</a>. Er enthält etwas Basiscode, der langweilig zu schreiben wäre. Wir haben ihn für dich vorbereitet. Du baust auf diesem Code auf. Damit du dir deine eigene Kopie des Codes erstellst, drücke auf <em>Fork</em>.</p>
+    </div>
+    <div class="col-12 col-md-6">
+    <img src="/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/fork.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="fadenkreuz">Fadenkreuz</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Als erstes programmieren wir das <em>Fadenkreuz</em>. Es soll immer an der Position der Maus gemalt werden. Das Fadenkreuz besteht aus vier Linien (oben, rechts, unten, link) und zwei Kreisen. Füge als erstes folgende <em>Methode</em> ganz <strong>am Ende</strong> des Programms hinzu.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> drawCrosshairs() {
+  p.push();
+  p.stroke(<span style="color:#a31515">&#39;black&#39;</span>);
+  p.strokeWeight(1);
+  p.line(p.mouseX, p.mouseY - 30, p.mouseX, p.mouseY - 4);
+  p.line(p.mouseX - 30, p.mouseY, p.mouseX - 4, p.mouseY);
+  p.line(p.mouseX, p.mouseY + 4, p.mouseX, p.mouseY + 30);
+  p.line(p.mouseX + 4, p.mouseY, p.mouseX + 30, p.mouseY);
+  p.noFill();
+  p.circle(p.mouseX, p.mouseY, 20);
+  p.circle(p.mouseX, p.mouseY, 40);
+  p.pop();
+}
+</code></pre></div>
+<p>Diese Methode rufen wir innerhalb der <em>draw</em>-Funktion auf, und zwar genau nach dem Kommentar <code>// &lt;&lt;&lt;&lt;&lt; Zeichenfunktionen &gt;&gt;&gt;&gt;&gt;</code>. Füge sowohl den Aufruf von <code>p.pop();</code> als auch den von <code>drawCrosshairs();</code> ein:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+
+  <span style="color:#008000">// &lt;&lt;&lt;&lt;&lt; Zeichenfunktionen &gt;&gt;&gt;&gt;&gt;
+</span><span style="color:#008000"></span>  p.pop();
+  drawCrosshairs();
+
+}
+</code></pre></div>
+<p>Jetzt hast du ein Fadenkreuz, das deinem Mauszeiger folgt.</p>
+</p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img src="/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/crosshairs.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="hügel">Hügel</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Als nächstes zeichnen wir die Hügel. Füge als erstes folgende <em>Methode</em> ganz <strong>am Ende</strong> des Programms hinzu.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> drawHills() {
+  p.push();
+  p.fill(p.color(29, 80, 89));
+  p.noStroke();
+  p.ellipse(-240, 160, 300, 350);
+  p.ellipse(-70, 220, 300, 300);
+  p.ellipse(70, 200, 250, 450);
+  p.ellipse(200, 150, 200, 250);
+  p.pop();
+}
+</code></pre></div>
+<p>Diese Methode rufen wir innerhalb der <em>draw</em>-Funktion auf, und zwar genau vor den Zeilen, die wir im vorigen Schritt geschrieben haben:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+
+  <span style="color:#008000">// &lt;&lt;&lt;&lt;&lt; Zeichenfunktionen &gt;&gt;&gt;&gt;&gt;
+</span><span style="color:#008000"></span>  drawHills();
+  
+  p.pop();
+  drawCrosshairs();
+}
+</code></pre></div></p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img src="/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/hills.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="punkteanzeige">Punkteanzeige</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Jetzt zeigen wir den Punktestand an. Füge als erstes folgende <em>Variable</em> am Beginn des Programms nach dem Kommentar <code>// &lt;&lt;&lt;&lt;&lt; VARIABLEN &gt;&gt;&gt;&gt;&gt;</code> hinzu:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">...
+<span style="color:#008000">// &lt;&lt;&lt;&lt;&lt; VARIABLEN &gt;&gt;&gt;&gt;&gt;
+</span><span style="color:#008000">// Aktuelle Punkte
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> points = 0;
+...
+</code></pre></div>
+<p>Als nächstes füge folgende <em>Methode</em> ganz <strong>am Ende</strong> des Programms hinzu.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> drawPoints() {
+  p.push();
+  p.textAlign(p.LEFT);
+  p.noStroke();
+  p.textFont(font);
+  p.fill(<span style="color:#a31515">&#39;red&#39;</span>);
+  p.textSize(40);
+  p.textFont(font);
+  p.text(<span style="color:#a31515">`Punkte: </span><span style="color:#a31515">${</span>points<span style="color:#a31515">}</span><span style="color:#a31515">`</span>, -220, 160);
+  p.pop();
+}
+</code></pre></div>
+<p>Jetzt müssen wir in der <em>draw</em>-Methode die neue Methode noch aufrufen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+
+  <span style="color:#008000">// &lt;&lt;&lt;&lt;&lt; Zeichenfunktionen &gt;&gt;&gt;&gt;&gt;
+</span><span style="color:#008000"></span>  drawHills();
+  drawPoints();
+
+  p.pop();
+  drawCrosshairs();
+}
+</code></pre></div></p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/points.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="die-hühner">Die Hühner</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Jetzt legen wir so richtig los und lassen die Hühner fliegen. Als erstes brauchen wir eine ganze Menge <em>Variablen</em>. Füge sie unmittelbar nach der zuvor angelegten <code>points</code>-Variable ein:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#008000">// Aktuelle Position des Huhns
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> chickenPosition: <span style="color:#2b91af">Position</span> = { x: <span style="color:#2b91af">0</span>, y: <span style="color:#2b91af">138</span> };
+<span style="color:#008000">// Huhn-Bild, das aktuell vewendet wird (siehe `chickens`-Variable)
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> currentChicken: <span style="color:#2b91af">number</span> = 0;
+<span style="color:#008000">// Aktuelle Geschwindigkeit vom Huh, steigert sich langsam
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> chickenSpeed = 1;
+<span style="color:#008000">// Aktuelle Bewegungsrichtung vom Huhn
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> chickenMovement: <span style="color:#2b91af">number</span> = 0;
+<span style="color:#008000">// Zeigt an, ob ein Huhn getroffen wurde
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> hit = <span style="color:#00f">false</span>;
+<span style="color:#008000">// Anzahl verpasster Hühner
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> missed = 0;
+<span style="color:#008000">// Zeigt an, ob das Spiel zu Ende ist
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> gameOver = <span style="color:#00f">false</span>;
+</code></pre></div></p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/chicken.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Als nächstes brauchen wir zwei <em>Methoden</em>, die die Hühner bewegen bzw. ein neues Huhn starten falls das vorherige gelandet ist oder abgeschossen wurde. Wie immer kommen die Methoden <strong>ganz ans Ende</strong>.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> moveChicken() {
+  <span style="color:#008000">// Huhn bewegen
+</span><span style="color:#008000"></span>  chickenPosition.y += chickenMovement;
+
+  <span style="color:#008000">// Muss Huhn nach dem Flug nach oben umkehren?
+</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (chickenMovement &lt; 0 &amp;&amp; chickenPosition.y &lt; -60) {
+    <span style="color:#008000">// Huhn ist am höchsten Punkt, muss umkehren
+</span><span style="color:#008000"></span>    chickenMovement *= -1;
+  }
+
+  <span style="color:#008000">// Ist Huhn wieder gelandet und wurde nicht getroffen?
+</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (chickenPosition.y &gt; 138 || hit) {
+    newChicken();
+  }
+}
+
+<span style="color:#00f">function</span> newChicken(first: <span style="color:#2b91af">boolean</span> = <span style="color:#00f">false</span>) {
+  <span style="color:#00f">if</span> (!hit &amp;&amp; !first) {
+    <span style="color:#008000">// Huhn wurde nicht getroffen
+</span><span style="color:#008000"></span>    missed++;
+    <span style="color:#00f">if</span> (missed &gt;= 5) {
+      gameOver = <span style="color:#00f">true</span>;
+    }
+  }
+
+  <span style="color:#008000">// Huhnposition zufällig ermitteln
+</span><span style="color:#008000"></span>  chickenPosition.x = Math.floor(p.random(-240, 240));
+  chickenPosition.y = 138;
+  <span style="color:#008000">// Huhnbild zufällig auswählen
+</span><span style="color:#008000"></span>  currentChicken = Math.floor(p.random(chickens.length));
+  <span style="color:#008000">// Anfangsgeschwindigkeit festlegen
+</span><span style="color:#008000"></span>  chickenMovement = chickenSpeed * -1;
+  <span style="color:#008000">// Treffer-Hinweis zurücksetzen
+</span><span style="color:#008000"></span>  hit = <span style="color:#00f">false</span>;
+}
+</code></pre></div>
+<p>Jetzt müssen wir die beiden Methoden noch aufrufen. Die <code>newChicken</code>-Methode müssen wir in <code>setup</code> aufrufen, damit das erste Huhn gleich zu Beginn startet. Füge den Methodenaufruf <strong>ganz am Ende</strong> der <code>setup</code>-Methode hinzu:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> setup() {
+  ...
+  
+  <span style="color:#008000">// Lade Schrift
+</span><span style="color:#008000"></span>  font = p.loadFont(
+    <span style="color:#a31515">&#39;https://cddataexchange.blob.core.windows.net/images/monster-run/fonts/BebasNeue-Regular.ttf&#39;</span>
+  );
+
+  newChicken(<span style="color:#00f">true</span>); <span style="color:#008000">// &lt;&lt;&lt; DAS MUSST DU HINZUFÜGEN
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<p>In der <code>draw</code>-Methode müssen wir jetzt noch das Huhn auf den Bildschirm malen und es bewegen. So muss der Codebereich nach dem <code>// &lt;&lt;&lt;&lt;&lt; Zeichenfunktionen &gt;&gt;&gt;&gt;&gt;</code>-Kommentar aussehen. <strong>Achtung:</strong> Einige Zeilen sind schon da. Du musst nur wenige ergänzen Vergleiche den folgenden Code Zeile für Zeile mit deinem Code und passe ihn an:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+
+  <span style="color:#008000">// &lt;&lt;&lt;&lt;&lt; Zeichenfunktionen &gt;&gt;&gt;&gt;&gt;
+</span><span style="color:#008000"></span>  <span style="color:#008000">// Zeichne das Huhn
+</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (!gameOver) {
+    p.image(
+      chickens[currentChicken],
+      chickenPosition.x,
+      chickenPosition.y,
+      CHICKEN_SIZE,
+      CHICKEN_SIZE
+    );
+  }
+
+  drawHills();
+  drawPoints();
+
+  p.pop();
+  drawCrosshairs();
+
+  moveChicken();
+}
+</code></pre></div>
+<h2 id="ballon">Ballon</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Als nächstes kommen die Ballons dran. Wir starten wieder mit den <em>Variablen</em>. Füge sie unmittelbar nach der zuvor angelegten Variablen ein:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#008000">// Ballonrichtigun (1 oder -1)
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> balloonDirection = 1;
+<span style="color:#008000">// Aktuelle Position des Ballons
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> balloonPosition: <span style="color:#2b91af">Position</span> = { x: <span style="color:#2b91af">0</span>, y: -145 };
+<span style="color:#008000">// Zeigt an, ob aktuell ein Ballon fliegt
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> balloonVisible = <span style="color:#00f">false</span>;
+</code></pre></div></p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/balloon.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Als nächstes brauchen wir zwei <em>Methoden</em>, die die Ballons bewegen bzw. einen neuen Ballon starten. Wie immer kommen die Methoden <strong>ganz ans Ende</strong>.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> drawAndMoveBalloon() {
+  p.image(
+    balloon,
+    balloonPosition.x,
+    balloonPosition.y,
+    BALLOON_SIZE,
+    BALLOON_SIZE
+  );
+
+  balloonPosition.x += balloonDirection;
+  <span style="color:#00f">if</span> (Math.abs(balloonPosition.x) &gt; 210) {
+    newBalloon();
+  }
+}
+
+<span style="color:#00f">function</span> newBalloon() {
+  balloonVisible = <span style="color:#00f">false</span>;
+  <span style="color:#008000">// Warte eine zufällige Zeit zwischen 1 und 2 Sekunden
+</span><span style="color:#008000"></span>  <span style="color:#00f">const</span> waitingTimeInMs = (Math.floor(p.random(5)) + 1) * 1000;
+  setTimeout(() =&gt; {
+    <span style="color:#008000">// Ballonposition zufällig festlegen
+</span><span style="color:#008000"></span>    balloonDirection = Math.floor(p.random(2)) === 0 ? -1 : <span style="color:#2b91af">1</span>;
+    balloonPosition.x = 210 * balloonDirection * -1;
+    <span style="color:#008000">// Ballon aktivieren
+</span><span style="color:#008000"></span>    balloonVisible = <span style="color:#00f">true</span>;
+  }, waitingTimeInMs);
+}
+</code></pre></div>
+<p>Jetzt müssen wir die beiden Methoden noch aufrufen. Die <code>newBalloon</code>-Methode müssen wir in <code>setup</code> aufrufen, damit der erste Ballon gleich zu Beginn startet. Füge den Methodenaufruf <strong>ganz am Ende</strong> der <code>setup</code>-Methode hinzu:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> setup() {
+  ...
+  
+  <span style="color:#008000">// Lade Schrift
+</span><span style="color:#008000"></span>  font = p.loadFont(
+    <span style="color:#a31515">&#39;https://cddataexchange.blob.core.windows.net/images/monster-run/fonts/BebasNeue-Regular.ttf&#39;</span>
+  );
+
+  newChicken(<span style="color:#00f">true</span>);
+  newBalloon(); <span style="color:#008000">// &lt;&lt;&lt; DAS MUSST DU HINZUFÜGEN
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<p>In der <code>draw</code>-Methode müssen wir jetzt noch den Ballon auf den Bildschirm malen und ihn bewegen. So muss der Codebereich nach dem <code>// &lt;&lt;&lt;&lt;&lt; Zeichenfunktionen &gt;&gt;&gt;&gt;&gt;</code>-Kommentar aussehen. <strong>Achtung:</strong> Einige Zeilen sind schon da. Du musst nur wenige ergänzen Vergleiche den folgenden Code Zeile für Zeile mit deinem Code und passe ihn an:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+
+  drawHills();
+  drawPoints();
+
+  <span style="color:#00f">if</span> (balloonVisible) {   <span style="color:#008000">// &lt;&lt;&lt; DAS MUSST DU HINZUFÜGEN
+</span><span style="color:#008000"></span>    drawAndMoveBalloon(); <span style="color:#008000">// &lt;&lt;&lt; DAS MUSST DU HINZUFÜGEN
+</span><span style="color:#008000"></span>  }                       <span style="color:#008000">// &lt;&lt;&lt; DAS MUSST DU HINZUFÜGEN
+</span><span style="color:#008000"></span>
+  p.pop();
+  drawCrosshairs();
+
+  moveChicken();
+}
+</code></pre></div>
+<h2 id="abschießen">Abschießen</h2>
+
+<p>Alles fliegt, jetzt wollen wir abschießen können. Wir machen das so: Wenn der Benutzer irgendwo klickt und er trifft nicht den Himmel (=Blau), nicht die Hügel (=Grün) und nicht die Punkte-Schrift (=Rot), dann hat er ein Huhn oder den Ballon getroffen. Zum Vergleichen der Farben brauchen wir eine Hilfsfunktion. Ihr Inhalt ist etwas technisch und wir beschreiben ihn hier nicht im Detail. Sieh die paar Zeilen einfach als Tippübung.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> isEqualColor(c1: <span style="color:#2b91af">number</span>[], c2: <span style="color:#2b91af">number</span>[]) {
+  <span style="color:#00f">if</span> (c1.length === c2.length) {
+    <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; c1.length; i++) {
+      <span style="color:#00f">if</span> (c1[i] !== c2[i]) {
+        <span style="color:#00f">return</span> <span style="color:#00f">false</span>;
+      }
+    }
+
+    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
+  }
+
+  <span style="color:#00f">return</span> <span style="color:#00f">false</span>;
+}
+</code></pre></div>
+<p>Als nächstes müssen wir die <code>mouseClicked</code>-Methode <strong>ersetzen</strong> (<strong>Achtung:</strong> Sie ist schon im Code enthalten, du musst sie <strong>ändern</strong>).</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> mouseClicked() {
+  <span style="color:#008000">// Ist der Mausklick innerhalb des Spielfelds?
+</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (p.mouseX &gt; 0 &amp;&amp; p.mouseY &gt; 0 &amp;&amp; p.mouseX &lt;= 480 &amp;&amp; p.mouseY &lt;= 360) {
+    <span style="color:#008000">// Wurde eine andere Farbe als Blau (Himmel), Grün (Hügel),
+</span><span style="color:#008000"></span>    <span style="color:#008000">// Schwarz (Fadenkreuz) oder Rot (Punkte-Schrift) angeklickt?
+</span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (
+      !isEqualColor(BLUE, p.get(p.mouseX, p.mouseY)) &amp;&amp;
+      !isEqualColor(GREEN, p.get(p.mouseX, p.mouseY)) &amp;&amp;
+      !isEqualColor(BLACK, p.get(p.mouseX, p.mouseY)) &amp;&amp;
+      !isEqualColor(RED, p.get(p.mouseX, p.mouseY))
+    ) {
+      <span style="color:#008000">// Ballonposition ausrechnen
+</span><span style="color:#008000"></span>      <span style="color:#00f">const</span> balloonX1 = balloonPosition.x + 240 - BALLOON_SIZE / 2;
+      <span style="color:#00f">const</span> balloonY1 = balloonPosition.y + 180 - BALLOON_SIZE / 2;
+      <span style="color:#00f">const</span> balloonX2 = balloonX1 + BALLOON_SIZE;
+      <span style="color:#00f">const</span> balloonY2 = balloonY1 + BALLOON_SIZE;
+      <span style="color:#008000">// Wurde auf den Ballon geklickt?
+</span><span style="color:#008000"></span>      <span style="color:#00f">if</span> (
+        p.mouseX &gt;= balloonX1 &amp;&amp;
+        p.mouseX &lt;= balloonX2 &amp;&amp;
+        p.mouseY &gt;= balloonY1 &amp;&amp;
+        p.mouseY &lt;= balloonY2
+      ) {
+        <span style="color:#008000">// Ballon ist 5 Punkte wert
+</span><span style="color:#008000"></span>        points += 5;
+        newBalloon();
+      } <span style="color:#00f">else</span> {
+        <span style="color:#008000">// Huhn wurde getroffen
+</span><span style="color:#008000"></span>        hit = <span style="color:#00f">true</span>;
+        points += Math.ceil(chickenSpeed);
+      }
+    }
+  }
+}
+</code></pre></div>
+<p>Probiere es! Du kannst schon Hühner und Ballons abschießen. Die Punkte werden auch schon gezählt.</p>
+
+<h2 id="hühner-schneller-machen">Hühner schneller machen</h2>
+
+<p>Unsere Hühner sollen im Lauf der Zeit schneller werden. Das ist einfach. Du musst nur eine Zeile am Ende von <code>setup</code> hinzufügen:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> setup() {
+  ...
+
+  <span style="color:#008000">// Starte neues Huhn und neuen Ballon
+</span><span style="color:#008000"></span>  newChicken(<span style="color:#00f">true</span>);
+  newBalloon();
+
+  <span style="color:#008000">// Hühnergeschwindigkeit muss sich alle 5 Sekunden erhöhen
+</span><span style="color:#008000"></span>  setInterval(() =&gt; (chickenSpeed += 0.5), 5000); <span style="color:#008000">// &lt;&lt;&lt; DAS MUSST DU HINZUFÜGEN
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<h2 id="game-over">Game Over</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Jetzt brauchen wir zum Abschluss noch eine Meldung, wenn das Spiel vorbei ist. Es soll vorbei sein, wenn wir fünf Hühner verpasst haben. Wir brauchen eine Methode, die <em>Game Over</em> auf den Bildschirm schreibt. Füge sie wie immer ganz <strong>am Ende</strong> des Programms hinzu:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> drawGameOver() {
+  p.push();
+  p.fill(<span style="color:#a31515">&#39;red&#39;</span>);
+  p.textFont(font);
+  p.textAlign(p.CENTER);
+  p.textSize(60);
+  p.text(<span style="color:#a31515">&#39;Game Over&#39;</span>, 0, 0);
+  p.pop();
+}
+</code></pre></div></p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/gameover.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>In der <code>draw</code>-Methode müssen wir jetzt die Meldung <em>Game Over</em> ausgeben falls das Spiel zu Ende ist. So muss der Codebereich nach dem <code>// &lt;&lt;&lt;&lt;&lt; Zeichenfunktionen &gt;&gt;&gt;&gt;&gt;</code>-Kommentar aussehen. <strong>Achtung:</strong> Einige Zeilen sind schon da. Du musst nur wenige ergänzen Vergleiche den folgenden Code Zeile für Zeile mit deinem Code und passe ihn an:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+
+  drawHills();
+  drawPoints();
+
+  <span style="color:#00f">if</span> (gameOver) {
+    drawGameOver();
+    <span style="color:#00f">return</span>;
+  }
+
+  <span style="color:#00f">if</span> (balloonVisible) {
+    drawAndMoveBalloon();
+  }
+  ...
+}
+</code></pre></div>
+<h2 id="gratulation-geschafft">Gratulation, geschafft!</h2>
+
+<p><strong>Perfekt gemacht!</strong> Du hast dein eigenes <em>Moorhuhn Jagd</em>-Spiel programmiert!</p>
+ </div>
+        </div>
+    </div>
+</section>  
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <div>
+                            <img src="/img/logo-coding-club-linz-white.svg">
+                        </div>
+                        <div>Coding Club Linz<br />Birkenweg 16, 4060 Leonding <br />
+                            <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfXNMcZAAAAALYnf3GpUqw5uotVMyjhLNU438i9"></script>
+</body>
+
+</html>
