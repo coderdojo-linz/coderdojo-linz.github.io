@@ -268,13 +268,13 @@ function loadEvents(eventsTable) {
 
           let registrationLink = '';
           let location = '';
-          if (formattedDate === '06.10.2023') {
-            if (event.location.indexOf('Steyr') >= 0) {
+          if (formattedDate === '13.10.2023') {
+            if (event.location.indexOf('Leonding') >= 0) {
               registrationLink =
-                'https://tic-steyr.at/coderdojo-steyr/registration';
+                'https://forms.office.com/e/t08HsQ5xQF';
               //location = 'im TIC Steyr';
             } else {
-              registrationLink = 'https://forms.office.com/r/Yj2GYecT2S';
+              registrationLink = 'https://forms.office.com/e/z8JqPy7p0S';
               //location = 'in der Grand Garage'
             }
           }
@@ -285,7 +285,13 @@ function loadEvents(eventsTable) {
               '<p><a class="btn btn-primary" target="_blank" href="' +
               registrationLink +
               '">Zur Anmeldung</a></p>';
-          } else if (formattedDate !== '06.09.2023' && formattedDate !== '07.09.2023' && formattedDate !== '08.09.2023' && formattedDate !== '09.09.2023' && formattedDate !== '10.09.2023') {
+          } else if (
+            formattedDate !== '06.09.2023' &&
+            formattedDate !== '07.09.2023' &&
+            formattedDate !== '08.09.2023' &&
+            formattedDate !== '09.09.2023' &&
+            formattedDate !== '10.09.2023'
+          ) {
             row +=
               '<p>Der Link zur Anmeldung wird 2 Wochen vor dem Event bekannt gegeben.</p>';
           }
