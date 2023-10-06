@@ -75,8 +75,7 @@ Das Fadenkreuz ist ganz einfach. Es soll einfach die ganze Zeit dem Mauszeiger f
 1. {{< imgblock "img/09-balloons-scripts-1.png" "Figuren" 7 >}}
 Jetzt wieder zu etwas komplizierterem, dem Script für die Ballons. Ähnlich wie die Hühner fliegen sie herum. Allerdings bewegen sie sich nicht von unten nach oben, sondern von links nach rechts. Sie sollen die Richtung zufällig wählen, also manchmal von links nach rechts und manchmal von rechts nach links fliegen.
 
-Vergiss nicht, für die Ballons eine eigene Variable **hit** zu erstellen. Wie
-bei den Hühnern muss auch diese Variable _nur für diese Figur_ gelten.
+Vergiss nicht, für die Ballons zwei Variablen zu erstellen. Die erste heißt **direction** und gilt _für alle Figuren_. Die zweite Variable **hit** muss wie bei den Hühnern muss auch diese Variable _nur für diese Figur_ gelten.
 {{< /imgblock >}}
 
 2. {{< imgblock "img/10-balloons-scripts-2.png" "Figuren" 7 >}}
@@ -99,3 +98,5 @@ Hast du noch nicht genug? Hier ein paar Erweiterungsideen:
 
 * Füge weitere, sich bewegende Figuren dazu (z.B. Flugzeuge), die man entweder auch treffen muss oder die man auf keinen Fall abschießen darf.
 * Sorge dafür, dass mehrere Hühner gleichzeitig auftauchen können (Achtung: Ist nicht einfach!)
+
+Möchtest du vielleicht jetzt **das Moorhuhn Jagd-Spiel mal textuell programmieren**? Wir haben eine entsprechende [Anleitung](../..//web/moorhuhn-jagd/) für dich erstellt.
