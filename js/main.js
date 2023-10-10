@@ -198,9 +198,11 @@ function loadEvents(eventsTable) {
           formattedBeginTime = '16:00';
           formattedEndTime = '18:00';
 
-          if (formattedDate === '15.09.2023') {
-            formattedBeginTime = '15:00';
-            formattedEndTime = '17:00';
+          if (formattedDate === '13.10.2023') {
+            if (event.location.indexOf('Leonding') >= 0) {
+              formattedBeginTime = '15:00';
+              formattedEndTime = '17:00';
+            }
           }
         }
 
@@ -270,8 +272,7 @@ function loadEvents(eventsTable) {
           let location = '';
           if (formattedDate === '13.10.2023') {
             if (event.location.indexOf('Leonding') >= 0) {
-              registrationLink =
-                'https://forms.office.com/e/t08HsQ5xQF';
+              registrationLink = 'https://forms.office.com/e/t08HsQ5xQF';
               //location = 'im TIC Steyr';
             } else {
               registrationLink = 'https://forms.office.com/e/z8JqPy7p0S';
