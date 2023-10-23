@@ -270,12 +270,12 @@ function loadEvents(eventsTable) {
 
           let registrationLink = '';
           let location = '';
-          if (formattedDate === '13.10.2023') {
+          if (formattedDate === '03.11.2023') {
             if (event.location.indexOf('Leonding') >= 0) {
               registrationLink = 'https://forms.office.com/e/t08HsQ5xQF';
               //location = 'im TIC Steyr';
             } else {
-              registrationLink = 'https://forms.office.com/e/z8JqPy7p0S';
+              registrationLink = 'https://forms.office.com/e/d6keC6W65H';
               //location = 'in der Grand Garage'
             }
           }
