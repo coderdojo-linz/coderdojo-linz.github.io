@@ -135,6 +135,16 @@ Am jeweils oberen Ende der beiden neuen Linie zweichne wieder jeweils zwei neue 
     </item>
     
     <item>
+      <title>Halloween - Catch the Treat</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/catch-the-treat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/catch-the-treat/</guid>
+      <description>Halloween - Catch the Treats ⚠️ DIESE ÜBUNGSANLEITUNG IST NOCH IN ARBEIT, NICHT FERTIG! Einleitung Willkommen bei unserem Halloween-Spiel. Wir programmieren gemeinsam ein Spiel, bei dem freundliche Monster gruselige &amp;ldquo;Süßigkeiten&amp;rdquo; herumwerfen und du sie erwischen musst. Wenn du sie nicht erwischst, verlierst du ein Leben. Wenn du alle Leben verloren hast, ist das Spiel vorbei. Wer schafft am meisten Punkte?
+Interessante Info: Wir programmieren in dieser Übung mit der Programmiersprache TypeScript.</description>
+    </item>
+    
+    <item>
       <title>Hangman</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
