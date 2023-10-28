@@ -215,8 +215,229 @@ function preload() {
 }
 ```
 
+`targetReached` ist ein sogenannter _Callback_, ein _Rückruf_. Der Code, den wir `targetReached` zuweisen, wird immer dann aufgerufen, wenn das Monster sein aktuelles Ziel erreicht hat.
+
 Und? Spaziert dein Monster jetzt schon fröhlich durch die Halloween-Welt?
 
 ## Süßigkeiten werfen
 
-Immer wenn unser Monster stehen bleibt, soll es Süßigkeiten in die Luft werfen, die wir treffen müssen. Wir haben eine ganze 
+{{< imgblock "img/throwing-treats.gif" "Süßigkeiten werfen" 5 >}} Immer wenn unser Monster stehen bleibt, soll es Süßigkeiten (Englisch _Treats_) in die Luft werfen, die wir treffen müssen. In unserem Programm müssen wir die Süßigkeiten, die gerade herumfliegen, irgendwo verwalten. Was bietet sich da an? Eine _Liste_, genau wie bei unseren Monster. Starten wir, indem wir die List als Variable anlegen. Kannst du dich noch erinnern, wo in unserem Programm die Variablen sind? Ziemlich weit oben im Programmcode.
+{{< /imgblock >}}
+
+```ts
+// vvvv Hier fügen wir die Variablen ein
+const monsters: Monster[] = []; // <<< Diese Zeile gibt es schon
+const items: Items[] = [];      // <<< Diese Zeile musst du neu einfügen
+```
+
+Wir haben eine ganze Reihe an Halloween-Treats vorbereitet, die wir laden müssen, bevor wir sie verwenden können. Kannst du dich noch erinnern, in welcher Methode wir bisher immer Bilder und Sounds geladen haben? Richtig, es war die `preload`-Methode. Der folgende Codeabschnitt zeigt, welche **zwei Zeilen** du wo in `preload` einfügen musst. Die erste lädt die Bilder für die Süßigkeiten und die zweite fügt immer dann, wenn das Monster stehenbleibt, eine neue Süßigkeit in unsere Liste ein (`push`).
+
+```ts
+function preload() {
+  Background.loadImage(3);
+  Items.loadItems();                            // <<< Diese Zeile musst du neu einfügen
+
+  for (let i = 1; i <= 3; i++) {
+    const monster = new Monster(i);
+    monster.loadMonster();
+    
+    monster.targetReached = () => {
+      items.push(new Items(monster.position));  // <<< Diese Zeile musst du neu einfügen
+      monster.walkToRandomPosition();
+    };
+
+    monsters.push(monster);
+  }
+
+  Sounds.loadSounds(1, 40);
+}
+```
+
+Ein Schritt fehlt noch, bis Süßigkeiten fliegen: Wir müssen die gerade aktiven Süßigkeiten in der `draw`-Methode auf den Bildschirm malen. Da mehrere Süßigkeiten gleichzeitig herumfliegen können, müssen wir das in einer Schleife für alle gerade aktiven Süßigkeiten machen.
+
+```ts
+function draw() {
+  Background.draw();
+
+  monsters[0].move();
+  monsters[0].draw();
+
+  // vvv Diese Zeilen musst du einfügen
+  for (let i = 0; i < items.length; i++) {
+    items[i].draw();
+  }
+  // ^^^ Bis hierher
+}
+```
+
+Geschafft! Das Monster wirft mit Süßigkeiten um sich! Aber Moment, wir haben ein Problem. Die Süßigkeiten bleiben am Boden liegen. Das soll nicht so sein. Wenn man beim Programmieren ein Objekt nicht mehr braucht, muss man es entfernen, sonst türmt sich "Müll" (Englisch _Garbage_) auf. Lass uns die `draw`-Methode, die wir gerade geändert haben, noch verbessern. Immer wenn eine Süßigkeit den Boden berührt, spielen wir einen Soundeffekt ab und entfernen sie:
+
+```ts
+function draw() {
+  ...
+
+  for (let i = 0; i < items.length; i++) {
+    // vvv Diese Zeilen musst du einfügen
+    if (items[i].touchesFloor) {
+      Sounds.playDrop();
+      items.splice(i--, 1);
+
+      continue;
+    }
+    // ^^^ Bis hierher
+
+
+    items[i].draw();
+  }
+}
+```
+
+Jetzt passt es super. Die Süßigkeiten verschwinden, wenn sie am Boden laden.
+
+## Süßigkeiten abschießen
+
+### Fadenkreuz
+
+{{< imgblock "img/crosshairs.png" "Fadenkreuz" 3 >}} Hintergrund ist da, Monster läuft herum, Monster wirft mit Süßigkeiten um sich - wir haben schon richtig viel geschafft! Jetzt machen wir uns daran, dass wir Süßigkeiten abschießen können. Als erstes zeichnen wir dafür an der Position der Maus ein Fadenkreuz, damit wir besser zielen können. Das machen wir in der `draw`-Methode. Die neue Zeile sieht so aus (füge sie **ganz am Ende** der `draw()`-Funktion unmittelbar vor der geschweiften Klammer zu `}` ein):
+{{< /imgblock >}}
+
+```ts
+function draw() {
+  ...
+
+  Crosshairs.draw(); // <<< Diese Zeile musst du am Ende der draw-Methode einfügen
+}
+```
+
+### Auf Mausklick reagieren
+
+Als nächstes müssen wir etwas machen, wenn die Spielerin oder der Spieler mit der Maus klicken. Dafür gibt es die Methode `mouseClicked`. Am besten du suchst sie als erstes in deinem Code. Sie ist ganz unten und im Moment noch leer.
+
+Füge den folgenden Code in die `mouseClicked`-Methode ein. **Achtung:** Die Zeilen, die mit `//` beginnen, sollen dir nur erklären, was der Code macht. Du musst sie **nicht** eintippen.
+
+```ts
+function mouseClicked() {
+  // Wir prüfen, ob innerhalb der Spielfläche geklickt wurde.
+  // Klicks außerhalb ignorieren wir.
+  if (Background.isIn(p.mouseX, p.mouseY)) {
+    // Wir gehen alle gerade herumfliegenden Süßigkeiten in
+    // einer Schleife durch und prüfen, ob der Mausklick auf
+    // der jeweiligen Süßigkeit stattgefunden hat. Wenn ja
+    // wurde sie getroffen.
+    for (let i = 0; i < items.length; i++) {
+      const pos = items[i].getBox();
+      if (pos.isIn(p.mouseX, p.mouseY)) {
+        // Getroffen! Wir spielen einen Soundeffekt für den
+        // Treffer ab und entfernen die Süßigkeit.
+        Sounds.playHit();
+        items.splice(i--, 1);
+        // Wir sind fertig.
+        return;
+      }
+    }
+
+    // Wenn wir diese Zeile erreichen, hat der Mausklick
+    // keine Süßigkeit erwischt. Wir spielen daher einen Soundeffekt
+    // ab, der den Fehlschuss hörbar macht.
+    Sounds.playMiss();
+  }
+}
+```
+
+Probiere es aus! Du kannst jetzt Süßigkeiten abschießen.
+
+### Explosion
+
+{{< imgblock "img/explosion.gif" "Explosion" 5 >}} Wäre es nicht cool, wenn eine Süßigkeit explodiert, wenn wir sie erwischen? Lass uns eine Explosion hinzufügen!
+
+Kannst du erraten, was wir für die Explosion als erstes machen müssen? Wir müssen die Bilder der Explosion laden. Und das geschieht in welcher Methode? Richtig, `preload`. Die neue Zeile sieht so aus (füge sie **ganz am Ende** der `preload()`-Funktion unmittelbar vor der geschweiften Klammer zu `}` ein):
+{{< /imgblock >}}
+
+```ts
+function preload() {
+  ...
+  Sounds.loadSounds(1, 40);  // <<< Diese Zeile gibt es schon
+  Explosion.loadExplosion(); // <<< Diese Zeile musst du einfügen
+}
+```
+
+Als nächstes müssen wir die Explosion auslösen, wenn eine Süßigkeit getroffen wurde. Das heißt, wir müssen den Code ändern, den wir im letzten Kapitel gerade geschrieben haben. Er ist in der `mouseClicked`-Methode. Die neue Zeile sieht so aus:
+
+```ts
+function mouseClicked() {
+  if (Background.isIn(p.mouseX, p.mouseY)) {
+    for (let i = 0; i < items.length; i++) {
+      const pos = items[i].getBox();
+      if (pos.isIn(p.mouseX, p.mouseY)) {
+        Sounds.playHit();
+        items.splice(i--, 1);
+        Explosion.explode(pos.middleX, pos.middleY); // <<< Diese Zeile musst du einfügen
+        return;
+      }
+    }
+
+    Sounds.playMiss();
+  }
+}
+```
+
+Wenn du jetzt das Spiel probierst, wirst du sehen, dass immer noch keine Explosion auftaucht. Was fehlt? Wir müssen die Explosion noch auf den Bildschirm malen. "Malen" heißt auf Englisch _to draw_, daher machen wir das in der `draw`-Methode. Die neue Zeile sieht so aus (füge sie **ganz am Ende** der `draw()`-Funktion unmittelbar vor der geschweiften Klammer zu `}` ein):
+
+```ts
+function draw() {
+  ...
+  Crosshairs.draw(); // <<< Diese Zeile gibt es schon
+  Explosion.draw();  // <<< Diese Zeile musst du einfügen
+}
+```
+
+Los gehts, lass Süßigkeiten explodieren 💥!
+
+## Punkte
+
+{{< imgblock "img/points.png" "Punkte" 3 >}} Was wäre ein solches Spiel ohne Punkte, die man sammeln kann. Lass uns einen Punktezähler hinzufügen. Dafür brauchen wir als erstes eine Variable, in der wir die Punkte speichern.
+{{< /imgblock >}}
+
+```ts
+// vvvv Hier fügen wir die Variablen ein
+const monsters: Monster[] = []; // <<< Diese Zeile gibt es schon
+const items: Items[] = [];      // <<< Diese Zeile gibt es auch schon
+let points = 0;                 // <<< Diese Zeile musst du hinzufügen
+```
+
+Zum Darstellen der Punkte brauchen wir eine passende Schriftart. Genau wie Bilder und Sounds müssen wir Schriftarten in der `preload`-Methode laden. Die neue Zeile sieht so aus (füge sie **ganz am Ende** der `preload()`-Funktion unmittelbar vor der geschweiften Klammer zu `}` ein):
+
+```ts
+function preload() {
+  ...
+
+  Explosion.loadExplosion(); // <<< Diese Zeile gibt es schon
+  Fonts.loadFonts();         // <<< Diese Zeile musst du hinzufügen
+}
+```
+
+Wann immer wir eine Süßigkeit treffen, müssen wir den Punktestand erhöhen. Hast du eine Idee, an welcher Stelle im Programm wir das machen sollten? In der `mouseClicked`-Methode, in der wir die Süßigkeit explodieren lassen, wenn sie angeklickt wird. Die neue Zeile sieht so aus:
+
+```ts
+function mouseClicked() {
+  ...
+        Explosion.explode(pos.middleX, pos.middleY); // <<< Diese Zeile gibt es schon
+        points++; // <<< Diese Zeile musst du einfügen
+        return;   // <<< Diese Zeile gibt es auch schon
+  ...
+}
+```
+
+Jetzt müssen wir den Punktestand noch in der `draw`-Methode auf den Bildschirm malen. Die neue Zeile sieht so aus (füge sie **ganz am Ende** der `draw()`-Funktion unmittelbar vor der geschweiften Klammer zu `}` ein):
+
+```ts
+function draw() {
+  ...
+
+  Explosion.draw(); // <<< Diese Zeile gibt es schon
+  Texts.drawPoints(Fonts.Qahiri(), points); // <<< Diese Zeile musst du einfügen
+}
+```
+
+Hurra, wir können Punkte sammeln!
+
