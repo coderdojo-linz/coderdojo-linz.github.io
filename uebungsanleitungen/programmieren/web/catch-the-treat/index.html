@@ -166,6 +166,13 @@
 <li><a href="#hintergrundmusik">Hintergrundmusik</a></li>
 <li><a href="#monster-läuft-herum">Monster läuft herum</a></li>
 <li><a href="#süßigkeiten-werfen">Süßigkeiten werfen</a></li>
+<li><a href="#süßigkeiten-abschießen">Süßigkeiten abschießen</a>
+<ul>
+<li><a href="#fadenkreuz">Fadenkreuz</a></li>
+<li><a href="#auf-mausklick-reagieren">Auf Mausklick reagieren</a></li>
+<li><a href="#explosion">Explosion</a></li>
+</ul></li>
+<li><a href="#punkte">Punkte</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -575,11 +582,273 @@
   Sounds.loadSounds(1, 0.1);
 }
 </code></pre></div>
+<p><code>targetReached</code> ist ein sogenannter <em>Callback</em>, ein <em>Rückruf</em>. Der Code, den wir <code>targetReached</code> zuweisen, wird immer dann aufgerufen, wenn das Monster sein aktuelles Ziel erreicht hat.</p>
+
 <p>Und? Spaziert dein Monster jetzt schon fröhlich durch die Halloween-Welt?</p>
 
 <h2 id="süßigkeiten-werfen">Süßigkeiten werfen</h2>
 
-<p>Immer wenn unser Monster stehen bleibt, soll es Süßigkeiten in die Luft werfen, die wir treffen müssen. Wir haben eine ganze</p>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Immer wenn unser Monster stehen bleibt, soll es Süßigkeiten (Englisch <em>Treats</em>) in die Luft werfen, die wir treffen müssen. In unserem Programm müssen wir die Süßigkeiten, die gerade herumfliegen, irgendwo verwalten. Was bietet sich da an? Eine <em>Liste</em>, genau wie bei unseren Monster. Starten wir, indem wir die List als Variable anlegen. Kannst du dich noch erinnern, wo in unserem Programm die Variablen sind? Ziemlich weit oben im Programmcode.</p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/throwing-treats.gif" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#008000">// vvvv Hier fügen wir die Variablen ein
+</span><span style="color:#008000"></span><span style="color:#00f">const</span> monsters: <span style="color:#2b91af">Monster</span>[] = []; <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es schon
+</span><span style="color:#008000"></span><span style="color:#00f">const</span> items: <span style="color:#2b91af">Items</span>[] = [];      <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du neu einfügen
+</span></code></pre></div>
+<p>Wir haben eine ganze Reihe an Halloween-Treats vorbereitet, die wir laden müssen, bevor wir sie verwenden können. Kannst du dich noch erinnern, in welcher Methode wir bisher immer Bilder und Sounds geladen haben? Richtig, es war die <code>preload</code>-Methode. Der folgende Codeabschnitt zeigt, welche <strong>zwei Zeilen</strong> du wo in <code>preload</code> einfügen musst. Die erste lädt die Bilder für die Süßigkeiten und die zweite fügt immer dann, wenn das Monster stehenbleibt, eine neue Süßigkeit in unsere Liste ein (<code>push</code>).</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> preload() {
+  Background.loadImage(3);
+  Items.loadItems();                            <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du neu einfügen
+</span><span style="color:#008000"></span>
+  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 1; i &lt;= 3; i++) {
+    <span style="color:#00f">const</span> monster = <span style="color:#00f">new</span> Monster(i);
+    monster.loadMonster();
+    
+    monster.targetReached = () =&gt; {
+      items.push(<span style="color:#00f">new</span> Items(monster.position));  <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du neu einfügen
+</span><span style="color:#008000"></span>      monster.walkToRandomPosition();
+    };
+
+    monsters.push(monster);
+  }
+
+  Sounds.loadSounds(1, 40);
+}
+</code></pre></div>
+<p>Ein Schritt fehlt noch, bis Süßigkeiten fliegen: Wir müssen die gerade aktiven Süßigkeiten in der <code>draw</code>-Methode auf den Bildschirm malen. Da mehrere Süßigkeiten gleichzeitig herumfliegen können, müssen wir das in einer Schleife für alle gerade aktiven Süßigkeiten machen.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  Background.draw();
+
+  monsters[0].move();
+  monsters[0].draw();
+
+  <span style="color:#008000">// vvv Diese Zeilen musst du einfügen
+</span><span style="color:#008000"></span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; items.length; i++) {
+    items[i].draw();
+  }
+  <span style="color:#008000">// ^^^ Bis hierher
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<p>Geschafft! Das Monster wirft mit Süßigkeiten um sich! Aber Moment, wir haben ein Problem. Die Süßigkeiten bleiben am Boden liegen. Das soll nicht so sein. Wenn man beim Programmieren ein Objekt nicht mehr braucht, muss man es entfernen, sonst türmt sich &ldquo;Müll&rdquo; (Englisch <em>Garbage</em>) auf. Lass uns die <code>draw</code>-Methode, die wir gerade geändert haben, noch verbessern. Immer wenn eine Süßigkeit den Boden berührt, spielen wir einen Soundeffekt ab und entfernen sie:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+
+  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; items.length; i++) {
+    <span style="color:#008000">// vvv Diese Zeilen musst du einfügen
+</span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (items[i].touchesFloor) {
+      Sounds.playDrop();
+      items.splice(i--, 1);
+
+      <span style="color:#00f">continue</span>;
+    }
+    <span style="color:#008000">// ^^^ Bis hierher
+</span><span style="color:#008000"></span>
+
+    items[i].draw();
+  }
+}
+</code></pre></div>
+<p>Jetzt passt es super. Die Süßigkeiten verschwinden, wenn sie am Boden laden.</p>
+
+<h2 id="süßigkeiten-abschießen">Süßigkeiten abschießen</h2>
+
+<h3 id="fadenkreuz">Fadenkreuz</h3>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Hintergrund ist da, Monster läuft herum, Monster wirft mit Süßigkeiten um sich - wir haben schon richtig viel geschafft! Jetzt machen wir uns daran, dass wir Süßigkeiten abschießen können. Als erstes zeichnen wir dafür an der Position der Maus ein Fadenkreuz, damit wir besser zielen können. Das machen wir in der <code>draw</code>-Methode. Die neue Zeile sieht so aus (füge sie <strong>ganz am Ende</strong> der <code>draw()</code>-Funktion unmittelbar vor der geschweiften Klammer zu <code>}</code> ein):</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/crosshairs.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+
+  Crosshairs.draw(); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du am Ende der draw-Methode einfügen
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<h3 id="auf-mausklick-reagieren">Auf Mausklick reagieren</h3>
+
+<p>Als nächstes müssen wir etwas machen, wenn die Spielerin oder der Spieler mit der Maus klicken. Dafür gibt es die Methode <code>mouseClicked</code>. Am besten du suchst sie als erstes in deinem Code. Sie ist ganz unten und im Moment noch leer.</p>
+
+<p>Füge den folgenden Code in die <code>mouseClicked</code>-Methode ein. <strong>Achtung:</strong> Die Zeilen, die mit <code>//</code> beginnen, sollen dir nur erklären, was der Code macht. Du musst sie <strong>nicht</strong> eintippen.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> mouseClicked() {
+  <span style="color:#008000">// Wir prüfen, ob innerhalb der Spielfläche geklickt wurde.
+</span><span style="color:#008000"></span>  <span style="color:#008000">// Klicks außerhalb ignorieren wir.
+</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (Background.isIn(p.mouseX, p.mouseY)) {
+    <span style="color:#008000">// Wir gehen alle gerade herumfliegenden Süßigkeiten in
+</span><span style="color:#008000"></span>    <span style="color:#008000">// einer Schleife durch und prüfen, ob der Mausklick auf
+</span><span style="color:#008000"></span>    <span style="color:#008000">// der jeweiligen Süßigkeit stattgefunden hat. Wenn ja
+</span><span style="color:#008000"></span>    <span style="color:#008000">// wurde sie getroffen.
+</span><span style="color:#008000"></span>    <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; items.length; i++) {
+      <span style="color:#00f">const</span> pos = items[i].getBox();
+      <span style="color:#00f">if</span> (pos.isIn(p.mouseX, p.mouseY)) {
+        <span style="color:#008000">// Getroffen! Wir spielen einen Soundeffekt für den
+</span><span style="color:#008000"></span>        <span style="color:#008000">// Treffer ab und entfernen die Süßigkeit.
+</span><span style="color:#008000"></span>        Sounds.playHit();
+        items.splice(i--, 1);
+        <span style="color:#008000">// Wir sind fertig.
+</span><span style="color:#008000"></span>        <span style="color:#00f">return</span>;
+      }
+    }
+
+    <span style="color:#008000">// Wenn wir diese Zeile erreichen, hat der Mausklick
+</span><span style="color:#008000"></span>    <span style="color:#008000">// keine Süßigkeit erwischt. Wir spielen daher einen Soundeffekt
+</span><span style="color:#008000"></span>    <span style="color:#008000">// ab, der den Fehlschuss hörbar macht.
+</span><span style="color:#008000"></span>    Sounds.playMiss();
+  }
+}
+</code></pre></div>
+<p>Probiere es aus! Du kannst jetzt Süßigkeiten abschießen.</p>
+
+<h3 id="explosion">Explosion</h3>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Wäre es nicht cool, wenn eine Süßigkeit explodiert, wenn wir sie erwischen? Lass uns eine Explosion hinzufügen!</p>
+
+<p>Kannst du erraten, was wir für die Explosion als erstes machen müssen? Wir müssen die Bilder der Explosion laden. Und das geschieht in welcher Methode? Richtig, <code>preload</code>. Die neue Zeile sieht so aus (füge sie <strong>ganz am Ende</strong> der <code>preload()</code>-Funktion unmittelbar vor der geschweiften Klammer zu <code>}</code> ein):</p>
+</p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/explosion.gif" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> preload() {
+  ...
+  Sounds.loadSounds(1, 40);  <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es schon
+</span><span style="color:#008000"></span>  Explosion.loadExplosion(); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du einfügen
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<p>Als nächstes müssen wir die Explosion auslösen, wenn eine Süßigkeit getroffen wurde. Das heißt, wir müssen den Code ändern, den wir im letzten Kapitel gerade geschrieben haben. Er ist in der <code>mouseClicked</code>-Methode. Die neue Zeile sieht so aus:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> mouseClicked() {
+  <span style="color:#00f">if</span> (Background.isIn(p.mouseX, p.mouseY)) {
+    <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; items.length; i++) {
+      <span style="color:#00f">const</span> pos = items[i].getBox();
+      <span style="color:#00f">if</span> (pos.isIn(p.mouseX, p.mouseY)) {
+        Sounds.playHit();
+        items.splice(i--, 1);
+        Explosion.explode(pos.middleX, pos.middleY); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du einfügen
+</span><span style="color:#008000"></span>        <span style="color:#00f">return</span>;
+      }
+    }
+
+    Sounds.playMiss();
+  }
+}
+</code></pre></div>
+<p>Wenn du jetzt das Spiel probierst, wirst du sehen, dass immer noch keine Explosion auftaucht. Was fehlt? Wir müssen die Explosion noch auf den Bildschirm malen. &ldquo;Malen&rdquo; heißt auf Englisch <em>to draw</em>, daher machen wir das in der <code>draw</code>-Methode. Die neue Zeile sieht so aus (füge sie <strong>ganz am Ende</strong> der <code>draw()</code>-Funktion unmittelbar vor der geschweiften Klammer zu <code>}</code> ein):</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+  Crosshairs.draw(); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es schon
+</span><span style="color:#008000"></span>  Explosion.draw();  <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du einfügen
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<p>Los gehts, lass Süßigkeiten explodieren 💥!</p>
+
+<h2 id="punkte">Punkte</h2>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Was wäre ein solches Spiel ohne Punkte, die man sammeln kann. Lass uns einen Punktezähler hinzufügen. Dafür brauchen wir als erstes eine Variable, in der wir die Punkte speichern.</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/points.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#008000">// vvvv Hier fügen wir die Variablen ein
+</span><span style="color:#008000"></span><span style="color:#00f">const</span> monsters: <span style="color:#2b91af">Monster</span>[] = []; <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es schon
+</span><span style="color:#008000"></span><span style="color:#00f">const</span> items: <span style="color:#2b91af">Items</span>[] = [];      <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es auch schon
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> points = 0;                 <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du hinzufügen
+</span></code></pre></div>
+<p>Zum Darstellen der Punkte brauchen wir eine passende Schriftart. Genau wie Bilder und Sounds müssen wir Schriftarten in der <code>preload</code>-Methode laden. Die neue Zeile sieht so aus (füge sie <strong>ganz am Ende</strong> der <code>preload()</code>-Funktion unmittelbar vor der geschweiften Klammer zu <code>}</code> ein):</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> preload() {
+  ...
+
+  Explosion.loadExplosion(); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es schon
+</span><span style="color:#008000"></span>  Fonts.loadFonts();         <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du hinzufügen
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<p>Wann immer wir eine Süßigkeit treffen, müssen wir den Punktestand erhöhen. Hast du eine Idee, an welcher Stelle im Programm wir das machen sollten? In der <code>mouseClicked</code>-Methode, in der wir die Süßigkeit explodieren lassen, wenn sie angeklickt wird. Die neue Zeile sieht so aus:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> mouseClicked() {
+  ...
+        Explosion.explode(pos.middleX, pos.middleY); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es schon
+</span><span style="color:#008000"></span>        points++; <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du einfügen
+</span><span style="color:#008000"></span>        <span style="color:#00f">return</span>;   <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es auch schon
+</span><span style="color:#008000"></span>  ...
+}
+</code></pre></div>
+<p>Jetzt müssen wir den Punktestand noch in der <code>draw</code>-Methode auf den Bildschirm malen. Die neue Zeile sieht so aus (füge sie <strong>ganz am Ende</strong> der <code>draw()</code>-Funktion unmittelbar vor der geschweiften Klammer zu <code>}</code> ein):</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> draw() {
+  ...
+
+  Explosion.draw(); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es schon
+</span><span style="color:#008000"></span>  Texts.drawPoints(Fonts.Qahiri(), points); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du einfügen
+</span><span style="color:#008000"></span>}
+</code></pre></div>
+<p>Hurra, wir können Punkte sammeln!</p>
  </div>
         </div>
     </div>
