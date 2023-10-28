@@ -157,9 +157,15 @@
 <li><a href="#einleitung">Einleitung</a></li>
 <li><a href="#vorbereitung">Vorbereitung</a></li>
 <li><a href="#hintergrundgrafik">Hintergrundgrafik</a></li>
+<li><a href="#coding-tipps">Coding-Tipps</a>
+<ul>
+<li><a href="#red-squigglies">Red Squigglies</a></li>
+<li><a href="#intellisense">IntelliSense</a></li>
+</ul></li>
 <li><a href="#monster">Monster</a></li>
 <li><a href="#hintergrundmusik">Hintergrundmusik</a></li>
 <li><a href="#monster-läuft-herum">Monster läuft herum</a></li>
+<li><a href="#süßigkeiten-werfen">Süßigkeiten werfen</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -200,6 +206,8 @@
 
 <h2 id="vorbereitung">Vorbereitung</h2>
 
+<p>Damit du anfangen kannst zu programmieren, öffne den Starter-Code unter <a href="https://stackblitz.com/edit/catch-the-sweets-starter" target="_blank">https://stackblitz.com/edit/catch-the-sweets-starter</a>. Ein solches Spiel von Grund auf neu zu programmieren ist etwas zu schwierig für AnfängerInnen. Daher haben wir ein paar Dinge schon vorbereitet. Deshalb brauchst du den Starter-Code.</p>
+
 
 
 
@@ -215,13 +223,38 @@
 
 <div class="row">
     <div class="col">
-        <p><p>Damit du anfangen kannst zu programmieren, öffne den Starter-Code unter <a href="https://stackblitz.com/edit/catch-the-sweets-starter" target="_blank">https://stackblitz.com/edit/catch-the-sweets-starter</a>. Ein solches Spiel von Grund auf neu zu programmieren ist etwas zu schwierig für AnfängerInnen. Daher haben wir ein paar Dinge schon vorbereitet. Deshalb brauchst du den Starter-Code.</p>
-
-<p>Damit du dir deine eigene Kopie des Starter-Codes bekommst, drücke auf <em>Fork</em>.</p>
-</p>
+        <p>Damit du dir deine eigene Kopie des Starter-Codes bekommst, drücke auf <em>Fork</em>.</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/fork.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Nach dem Öffnen des Starter-Codes sollte dein Bildschirm so aussehen. Links ist die <em>Dateiliste</em>. Wir brauchen sie heute nicht, daher kannst du sie mit einem Klick ausblenden.</p>
+
+<p>In der Mitte siehst du den <em>Programmierbereich</em>. Hier schreiben wir unseren Code.</p>
+
+<p>Rechts siehst du die <em>Programmausgabe</em>. Hier wird unser Spiel zu sehen sein. Wenn du die Ausgabe gerade nicht brauchst, kannst du sie mit dem Knopf <em>Close</em> rechts oben ausblenden. Mit <em>Open</em> erscheint sie wieder.</p>
+</p>
+    </div>
+    <div class="col-12 col-md-8">
+    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/stackblitz.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
 
@@ -268,7 +301,7 @@
     <div class="col">
         <p>Gratulation! Der erste Schritt zu unserem Spiel ist geschafft. Du müsstest jetzt den Hintergrund sehen.</p>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-8">
     <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/background.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
@@ -291,24 +324,103 @@
     <div class="col">
         <p>Jetzt kannst du kreativ werden. Du hast vielleicht die Zahl gesehen, die wir in der <code>preload</code>-Funktion an <code>loadImage</code> übergeben haben. Dadurch kannst du steuern, welches Bild als Hintergrund verwendet werden soll. Wir haben acht Bilder für die vorbereitet. Du kannst zwischen ihnen umschalten, indem du die Zahl auf einen Wert zwischen 1 und 8 änderst. Probiere es aus! Suche dir ein Hintergrundbild aus, das dir besonders gut gefällt.</p>
     </div>
-    <div class="col-12 col-md-5">
+    <div class="col-12 col-md-6">
     <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/bg-image.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h2 id="coding-tipps">Coding-Tipps</h2>
+
+<p>Bevor wir weitermachen, ein paar super praktische Coding-Tipps.</p>
+
+<h3 id="red-squigglies">Red Squigglies</h3>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Gerade als AnfängerIn passiert es manchmal, dass Codeteils rot unterwellt dargestellt werden. In English sagt man dazu <em>Red Squigglies</em>. Lustiger Name, oder?</p>
+
+<p>Die Red Squigglies zeigen dir an, dass du einen Fehler im Code hast. Entdeckst du den Fehler im Bild? Der Code enthält das Kommando <code>loadimage</code> statt <code>loadImage</code> (großes &ldquo;I&rdquo;). Diese Kleinigkeit führt schon dazu, dass der Code nicht funktioniert. Du musst also auf die Red Squgglies achten und deinen Tippfehler suchen, wenn sie auftauchen. Solange du Red Squigglies hast, wird dein Spiel mit großer Wahrscheinlichkeit nicht funktionieren.</p>
+</p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/red-squigglies.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<h3 id="intellisense">IntelliSense</h3>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Der Editor versucht dir zu helfen, damit du weniger tippen musst. Wenn du die ersten Buchstaben eines Befehls eingetippt hast (im Bild zum Beispiel <code>lo</code>), dann zeigt dir der Editor gleich passende Kommando an (im Beispiel <code>loadImage</code>). Wenn das passiert, musst du nicht mehr weiter tippen. Klicke die Auswahl einfach an, drücke auf die <em>Enter</em>-Taste oder die <em>Tabulator</em>-Taste und schon ist der Befehl vervollständigt.</p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/intellisense.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
 
 
 <h2 id="monster">Monster</h2>
 
-<p>Jetzt fügen wir unser freundliches Monster zum Spiel hinzu. Zum Spielbeginn haben wir nur ein Monster. Später werden wir aber Levels hinzufügen und in jedem Level taucht ein zusätzliches Monster auf.</p>
 
-<p>Da wir mehrere Monster haben werden, müssen wir alle unsere Monster in einer Variable speichern. Um genau zu sein verwenden wir eine Liste. Vielleicht kennst du Listen schon von Scratch-Projekten, die du programmiert hast. Auf Englisch wird beim Programmieren eine Liste als <em>Array</em> bezeichnet. Lass uns als erstes die Variable anlegen. Die Zeile sieht so aus (füge sie ziemlich am Anfang deines Programms gleich nach den vielen <code>import</code>-Zeilen ein):</p>
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Jetzt fügen wir unser freundliches Monster zum Spiel hinzu. Zum Spielbeginn haben wir nur ein Monster. Später werden wir aber Levels hinzufügen und in jedem Level taucht ein zusätzliches Monster auf.</p>
+
+<p>Da wir mehrere Monster haben werden, müssen wir alle unsere Monster in einer Variable speichern. Um genau zu sein verwenden wir eine <strong>Liste</strong>. Vielleicht kennst du Listen schon von Scratch-Projekten, die du programmiert hast (siehe Abbildung).</p>
+</p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/scratch-arrays.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Auf Englisch wird beim Programmieren eine Liste als <em>Array</em> bezeichnet. Lass uns als erstes die Variable anlegen. Die Zeile sieht so aus (füge sie unter dem Hinweis <code>// vvvv Hier fügen wir die Variablen ein</code> ein, der schon im Starter-Code enthalten ist):</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">...
-<span style="color:#00f">import</span> { HealthHearts } from <span style="color:#a31515">&#39;./health&#39;</span>; <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es schon
+<span style="color:#008000">// vvvv Hier fügen wir die Variablen ein
+</span><span style="color:#008000"></span><span style="color:#00f">const</span> monsters: <span style="color:#2b91af">Monster</span>[] = []; <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du einfügen
 </span><span style="color:#008000"></span>
-<span style="color:#00f">const</span> monsters: <span style="color:#2b91af">Monster</span>[] = []; <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du einfügen
-</span><span style="color:#008000"></span>
-<span style="color:#00f">export</span> <span style="color:#00f">let</span> p: <span style="color:#2b91af">p5</span>; <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile gibt es schon
-</span><span style="color:#008000"></span>...
+...
 </code></pre></div>
 <p>Als nächstes müssen wir unsere Monster laden. Wie beim Hintergrund machen wir das in der <code>preload()</code>-Funktion. Die Zeilen sehen so aus:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> preload() {
@@ -318,13 +430,35 @@
 </span><span style="color:#008000"></span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 1; i &lt;= 3; i++) {
     <span style="color:#00f">const</span> monster = <span style="color:#00f">new</span> Monster(i);
     monster.loadMonster();
-    monster.position.x = 0;
     monsters.push(monster);
   }
   <span style="color:#008000">// ^^^ Bis hierher
 </span><span style="color:#008000"></span>}
 </code></pre></div>
-<p>Mit diesen Zeilen werden drei Monster geladen (daher das <code>&lt;= 3</code> im Code). Nach dem Laden wird das Monster an den linken Bildschirmrand gesetzt (Position 0). Zum Schluss wird das neue Monster zur Liste hinzugefügt (<code>push</code>).</p>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Mit diesen Zeilen werden drei Monster in einer <strong>Schleife</strong> geladen (daher das <code>&lt;= 3</code> im Code). Schleifen kennst du wahrscheinlich schon aus Scratch (siehe Bild). In TypeScript macht man Schleifen unter anderem mit dem <code>for</code>-Kommando, das du gerade getippt hast.</p>
+    </div>
+    <div class="col-12 col-md-4">
+    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/scratch-loop.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+<p>Nach dem Laden wird das Monster an den linken Bildschirmrand gesetzt (Position 0). Zum Schluss wird das neue Monster zur Liste hinzugefügt (<code>push</code>).</p>
 
 <p>Beim Start des Spieles wollen wir die Monster in die Mitte des Bildschirms spazieren lassen. Das machen wir in der <code>setup()</code>-Funktion. Die Zeilen sehen so aus:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> setup() {
@@ -364,7 +498,7 @@
     <div class="col">
         <p><p>Wenn du alles richtig gemacht hast, spaziert ein Monster über den Bildschirm.</p>
 
-<p>Möchtest du sehen, wie die anderen Monster aussehen? In der <code>draw</code>-Funktion siehst du zwei Mal <code>monster[0]</code>. Ändere die <code>0</code> auf eine <code>1</code> oder eine <code>2</code> (in beiden Zeilen). Dann siehst du alle drei Monster.</p>
+<p>Möchtest du sehen, wie die anderen Monster aussehen? In der <code>draw</code>-Funktion siehst du zwei Mal <code>monster[0]</code>. Ändere die <code>0</code> auf eine <code>1</code> oder eine <code>2</code> (in <strong>beiden</strong> Zeilen). Dann siehst du alle drei Monster.</p>
 </p>
     </div>
     <div class="col-12 col-md-5">
@@ -379,7 +513,7 @@
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> preload() {
   ...
   
-  Sounds.loadSounds(1, 0.1); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du einfügen
+  Sounds.loadSounds(1, 40); <span style="color:#008000">// &lt;&lt;&lt; Diese Zeile musst du einfügen
 </span><span style="color:#008000"></span>}
 </code></pre></div>
 <p>Jetzt müssen wir die Musik nur noch starten. Das machen wir in der <code>setup()</code>-Funktion. Die Zeile sieht so aus (füge sie <strong>ganz am Ende</strong> der <code>setup()</code>-Funktion unmittelbar vor der geschweiften Klammer zu <code>}</code> ein):</p>
@@ -391,40 +525,9 @@
 </code></pre></div>
 <p>Du müsstest jetzt Hintergrundmusik hören!</p>
 
+<p>Möchtest du ein anderes Lied? Wir haben drei für dich zur Auswahl vorbereitet. Du steuerst, welches Lied im Hintergrund läuft, mit dem ersten Parameter der <code>loadSound</code>-Funktion in <code>preload</code>. Die drei Lieder haben die Nummern 1, 2 und 3. Probiere sie aus!</p>
 
-
-
-     
-    
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p><p>Möchtest du ein anderes Lied? Wir haben drei für dich zur Auswahl vorbereitet. Du steuerst, welches Lied im Hintergrund läuft, mit dem ersten Parameter der <code>loadSound</code>-Funktion in <code>preload</code>. Die drei Lieder haben die Nummern 1, 2 und 3. Probiere sie aus!</p>
-
-<p>Der zweite Parameter steuert die Lautstärke der Hintergrundmusik. <code>0.1</code> ist ein guter Wert. Wenn dir die Musik zu leise ist, ändere ihn z.B. auf <code>0.2</code>.</p>
-</p>
-    </div>
-    <div class="col-12 col-md-5">
-    <img src="/uebungsanleitungen/programmieren/web/catch-the-treat/img/bg-music.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
-    </div>
-</div>
-
-
-<p>Wenn du lange an dem Spiel programmierst, kannst du die Musik vielleicht irgendwann nicht mehr hören 🤣. In diesem Fall kannst du aus der Zeile in <code>setup</code> einen Kommentar machen, indem du zwei <code>//</code>-Zeichen an den Anfang der Zeile setzt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">function</span> setup() {
-  ...
-  
-  <span style="color:#008000">// Sounds.playBackgroundMusic();
-</span><span style="color:#008000"></span>}
-</code></pre></div>
-<p>Jetzt ignoriert der Computer diese eine Zeile. Wenn du die Musik wieder hören möchtest, entferne einfach die zwei <code>//</code>-Zeichen.</p>
+<p>Der zweite Parameter steuert die Lautstärke der Hintergrundmusik. <code>40</code> ist ein guter Wert. Wenn dir die Musik zu leise ist, ändere ihn z.B. auf <code>60</code>. Wenn du lange an dem Spiel programmierst, kannst du die Musik vielleicht irgendwann nicht mehr hören 🤣. In diesem Fall setze die Lautstärke einfach auf Null ( <code>0</code>).</p>
 
 <h2 id="monster-läuft-herum">Monster läuft herum</h2>
 
@@ -459,13 +562,10 @@
   <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 1; i &lt;= 3; i++) {
     <span style="color:#00f">const</span> monster = <span style="color:#00f">new</span> Monster(i);
     monster.loadMonster();
-    monster.position.x = 0;
 
     <span style="color:#008000">// vvv Diese Zeilen musst du einfügen
 </span><span style="color:#008000"></span>    monster.targetReached = () =&gt; {
-      setTimeout(() =&gt; {
-        monster.<span style="color:#00f">goto</span>(p.random(1920));
-      }, p.random(500, 2000));
+      monster.walkToRandomPosition();
     };
     <span style="color:#008000">// ^^^ Bis hierher
 </span><span style="color:#008000"></span>
@@ -474,7 +574,13 @@
   
   Sounds.loadSounds(1, 0.1);
 }
-</code></pre></div> </div>
+</code></pre></div>
+<p>Und? Spaziert dein Monster jetzt schon fröhlich durch die Halloween-Welt?</p>
+
+<h2 id="süßigkeiten-werfen">Süßigkeiten werfen</h2>
+
+<p>Immer wenn unser Monster stehen bleibt, soll es Süßigkeiten in die Luft werfen, die wir treffen müssen. Wir haben eine ganze</p>
+ </div>
         </div>
     </div>
 </section>  
