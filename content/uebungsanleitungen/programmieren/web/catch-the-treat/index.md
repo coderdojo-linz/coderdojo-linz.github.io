@@ -23,9 +23,16 @@ categories:
 
 ## Vorbereitung
 
-{{< imgblock "img/fork.png" "Fork" 4 >}} Damit du anfangen kannst zu programmieren, öffne den Starter-Code unter [https://stackblitz.com/edit/catch-the-sweets-starter](https://stackblitz.com/edit/catch-the-sweets-starter). Ein solches Spiel von Grund auf neu zu programmieren ist etwas zu schwierig für AnfängerInnen. Daher haben wir ein paar Dinge schon vorbereitet. Deshalb brauchst du den Starter-Code.
+Damit du anfangen kannst zu programmieren, öffne den Starter-Code unter [https://stackblitz.com/edit/catch-the-sweets-starter](https://stackblitz.com/edit/catch-the-sweets-starter). Ein solches Spiel von Grund auf neu zu programmieren ist etwas zu schwierig für AnfängerInnen. Daher haben wir ein paar Dinge schon vorbereitet. Deshalb brauchst du den Starter-Code.
 
-Damit du dir deine eigene Kopie des Starter-Codes bekommst, drücke auf _Fork_.
+{{< imgblock "img/fork.png" "Fork" 4 >}} Damit du dir deine eigene Kopie des Starter-Codes bekommst, drücke auf _Fork_.
+{{< /imgblock >}}
+
+{{< imgblock "img/stackblitz.png" "Stackblitz" 8 >}} Nach dem Öffnen des Starter-Codes sollte dein Bildschirm so aussehen. Links ist die _Dateiliste_. Wir brauchen sie heute nicht, daher kannst du sie mit einem Klick ausblenden.
+
+In der Mitte siehst du den _Programmierbereich_. Hier schreiben wir unseren Code.
+
+Rechts siehst du die _Programmausgabe_. Hier wird unser Spiel zu sehen sein. Wenn du die Ausgabe gerade nicht brauchst, kannst du sie mit dem Knopf _Close_ rechts oben ausblenden. Mit _Open_ erscheint sie wieder.
 {{< /imgblock >}}
 
 ## Hintergrundgrafik
@@ -60,25 +67,42 @@ function draw() {
 }
 ```
 
-{{< imgblock "img/background.png" "Hintergrund" 6 >}} Gratulation! Der erste Schritt zu unserem Spiel ist geschafft. Du müsstest jetzt den Hintergrund sehen.
+{{< imgblock "img/background.png" "Hintergrund" 8 >}} Gratulation! Der erste Schritt zu unserem Spiel ist geschafft. Du müsstest jetzt den Hintergrund sehen.
 {{< /imgblock >}}
 
-{{< imgblock "img/bg-image.png" "Hintergrund" 5 >}} Jetzt kannst du kreativ werden. Du hast vielleicht die Zahl gesehen, die wir in der `preload`-Funktion an `loadImage` übergeben haben. Dadurch kannst du steuern, welches Bild als Hintergrund verwendet werden soll. Wir haben acht Bilder für die vorbereitet. Du kannst zwischen ihnen umschalten, indem du die Zahl auf einen Wert zwischen 1 und 8 änderst. Probiere es aus! Suche dir ein Hintergrundbild aus, das dir besonders gut gefällt.
+{{< imgblock "img/bg-image.png" "Hintergrund" 6 >}} Jetzt kannst du kreativ werden. Du hast vielleicht die Zahl gesehen, die wir in der `preload`-Funktion an `loadImage` übergeben haben. Dadurch kannst du steuern, welches Bild als Hintergrund verwendet werden soll. Wir haben acht Bilder für die vorbereitet. Du kannst zwischen ihnen umschalten, indem du die Zahl auf einen Wert zwischen 1 und 8 änderst. Probiere es aus! Suche dir ein Hintergrundbild aus, das dir besonders gut gefällt.
+{{< /imgblock >}}
+
+## Coding-Tipps
+
+Bevor wir weitermachen, ein paar super praktische Coding-Tipps.
+
+### Red Squigglies
+
+{{< imgblock "img/red-squigglies.png" "Red Squigglies" 5 >}} Gerade als AnfängerIn passiert es manchmal, dass Codeteils rot unterwellt dargestellt werden. In English sagt man dazu _Red Squigglies_. Lustiger Name, oder?
+
+Die Red Squigglies zeigen dir an, dass du einen Fehler im Code hast. Entdeckst du den Fehler im Bild? Der Code enthält das Kommando `loadimage` statt `loadImage` (großes "I"). Diese Kleinigkeit führt schon dazu, dass der Code nicht funktioniert. Du musst also auf die Red Squgglies achten und deinen Tippfehler suchen, wenn sie auftauchen. Solange du Red Squigglies hast, wird dein Spiel mit großer Wahrscheinlichkeit nicht funktionieren.
+{{< /imgblock >}}
+
+### IntelliSense
+
+{{< imgblock "img/intellisense.png" "Hintergrund" 5 >}} Der Editor versucht dir zu helfen, damit du weniger tippen musst. Wenn du die ersten Buchstaben eines Befehls eingetippt hast (im Bild zum Beispiel `lo`), dann zeigt dir der Editor gleich passende Kommando an (im Beispiel `loadImage`). Wenn das passiert, musst du nicht mehr weiter tippen. Klicke die Auswahl einfach an, drücke auf die _Enter_-Taste oder die _Tabulator_-Taste und schon ist der Befehl vervollständigt.
 {{< /imgblock >}}
 
 ## Monster
 
-Jetzt fügen wir unser freundliches Monster zum Spiel hinzu. Zum Spielbeginn haben wir nur ein Monster. Später werden wir aber Levels hinzufügen und in jedem Level taucht ein zusätzliches Monster auf.
+{{< imgblock "img/scratch-arrays.png" "Felder in Scratch" 5 >}} Jetzt fügen wir unser freundliches Monster zum Spiel hinzu. Zum Spielbeginn haben wir nur ein Monster. Später werden wir aber Levels hinzufügen und in jedem Level taucht ein zusätzliches Monster auf.
 
-Da wir mehrere Monster haben werden, müssen wir alle unsere Monster in einer Variable speichern. Um genau zu sein verwenden wir eine Liste. Vielleicht kennst du Listen schon von Scratch-Projekten, die du programmiert hast. Auf Englisch wird beim Programmieren eine Liste als _Array_ bezeichnet. Lass uns als erstes die Variable anlegen. Die Zeile sieht so aus (füge sie ziemlich am Anfang deines Programms gleich nach den vielen `import`-Zeilen ein):
+Da wir mehrere Monster haben werden, müssen wir alle unsere Monster in einer Variable speichern. Um genau zu sein verwenden wir eine **Liste**. Vielleicht kennst du Listen schon von Scratch-Projekten, die du programmiert hast (siehe Abbildung).
+{{< /imgblock >}}
+
+Auf Englisch wird beim Programmieren eine Liste als _Array_ bezeichnet. Lass uns als erstes die Variable anlegen. Die Zeile sieht so aus (füge sie unter dem Hinweis `// vvvv Hier fügen wir die Variablen ein` ein, der schon im Starter-Code enthalten ist):
 
 ```ts
 ...
-import { HealthHearts } from './health'; // <<< Diese Zeile gibt es schon
-
+// vvvv Hier fügen wir die Variablen ein
 const monsters: Monster[] = []; // <<< Diese Zeile musst du einfügen
 
-export let p: p5; // <<< Diese Zeile gibt es schon
 ...
 ```
 
@@ -92,14 +116,16 @@ function preload() {
   for (let i = 1; i <= 3; i++) {
     const monster = new Monster(i);
     monster.loadMonster();
-    monster.position.x = 0;
     monsters.push(monster);
   }
   // ^^^ Bis hierher
 }
 ```
 
-Mit diesen Zeilen werden drei Monster geladen (daher das `<= 3` im Code). Nach dem Laden wird das Monster an den linken Bildschirmrand gesetzt (Position 0). Zum Schluss wird das neue Monster zur Liste hinzugefügt (`push`).
+{{< imgblock "img/scratch-loop.png" "Felder in Scratch" 4 >}} Mit diesen Zeilen werden drei Monster in einer **Schleife** geladen (daher das `<= 3` im Code). Schleifen kennst du wahrscheinlich schon aus Scratch (siehe Bild). In TypeScript macht man Schleifen unter anderem mit dem `for`-Kommando, das du gerade getippt hast.
+{{< /imgblock >}}
+
+Nach dem Laden wird das Monster an den linken Bildschirmrand gesetzt (Position 0). Zum Schluss wird das neue Monster zur Liste hinzugefügt (`push`).
 
 Beim Start des Spieles wollen wir die Monster in die Mitte des Bildschirms spazieren lassen. Das machen wir in der `setup()`-Funktion. Die Zeilen sehen so aus:
 
@@ -130,7 +156,7 @@ function draw() {
 
 {{< imgblock "img/monster-here.png" "Hintergrund" 5 >}} Wenn du alles richtig gemacht hast, spaziert ein Monster über den Bildschirm.
 
-Möchtest du sehen, wie die anderen Monster aussehen? In der `draw`-Funktion siehst du zwei Mal `monster[0]`. Ändere die `0` auf eine `1` oder eine `2` (in beiden Zeilen). Dann siehst du alle drei Monster.
+Möchtest du sehen, wie die anderen Monster aussehen? In der `draw`-Funktion siehst du zwei Mal `monster[0]`. Ändere die `0` auf eine `1` oder eine `2` (in **beiden** Zeilen). Dann siehst du alle drei Monster.
 {{< /imgblock >}}
 
 ## Hintergrundmusik
@@ -141,7 +167,7 @@ Zeit für unsere ersten Sound-Effekte. Wir starten mit Hintergrundmusik. Wie sch
 function preload() {
   ...
   
-  Sounds.loadSounds(1, 0.1); // <<< Diese Zeile musst du einfügen
+  Sounds.loadSounds(1, 40); // <<< Diese Zeile musst du einfügen
 }
 ```
 
@@ -157,22 +183,9 @@ function setup() {
 
 Du müsstest jetzt Hintergrundmusik hören!
 
-{{< imgblock "img/bg-music.png" "Hintergrund" 5 >}} Möchtest du ein anderes Lied? Wir haben drei für dich zur Auswahl vorbereitet. Du steuerst, welches Lied im Hintergrund läuft, mit dem ersten Parameter der `loadSound`-Funktion in `preload`. Die drei Lieder haben die Nummern 1, 2 und 3. Probiere sie aus!
+Möchtest du ein anderes Lied? Wir haben drei für dich zur Auswahl vorbereitet. Du steuerst, welches Lied im Hintergrund läuft, mit dem ersten Parameter der `loadSound`-Funktion in `preload`. Die drei Lieder haben die Nummern 1, 2 und 3. Probiere sie aus!
 
-Der zweite Parameter steuert die Lautstärke der Hintergrundmusik. `0.1` ist ein guter Wert. Wenn dir die Musik zu leise ist, ändere ihn z.B. auf `0.2`.
-{{< /imgblock >}}
-
-Wenn du lange an dem Spiel programmierst, kannst du die Musik vielleicht irgendwann nicht mehr hören 🤣. In diesem Fall kannst du aus der Zeile in `setup` einen Kommentar machen, indem du zwei `//`-Zeichen an den Anfang der Zeile setzt:
-
-```ts
-function setup() {
-  ...
-  
-  // Sounds.playBackgroundMusic();
-}
-```
-
-Jetzt ignoriert der Computer diese eine Zeile. Wenn du die Musik wieder hören möchtest, entferne einfach die zwei `//`-Zeichen.
+Der zweite Parameter steuert die Lautstärke der Hintergrundmusik. `40` ist ein guter Wert. Wenn dir die Musik zu leise ist, ändere ihn z.B. auf `60`. Wenn du lange an dem Spiel programmierst, kannst du die Musik vielleicht irgendwann nicht mehr hören 🤣. In diesem Fall setze die Lautstärke einfach auf Null ( `0`).
 
 ## Monster läuft herum
 
@@ -188,13 +201,10 @@ function preload() {
   for (let i = 1; i <= 3; i++) {
     const monster = new Monster(i);
     monster.loadMonster();
-    monster.position.x = 0;
 
     // vvv Diese Zeilen musst du einfügen
     monster.targetReached = () => {
-      setTimeout(() => {
-        monster.goto(p.random(1920));
-      }, p.random(500, 2000));
+      monster.walkToRandomPosition();
     };
     // ^^^ Bis hierher
 
@@ -204,3 +214,9 @@ function preload() {
   Sounds.loadSounds(1, 0.1);
 }
 ```
+
+Und? Spaziert dein Monster jetzt schon fröhlich durch die Halloween-Welt?
+
+## Süßigkeiten werfen
+
+Immer wenn unser Monster stehen bleibt, soll es Süßigkeiten in die Luft werfen, die wir treffen müssen. Wir haben eine ganze 
