@@ -12,6 +12,10 @@ categories:
 
 # Halloween - Catch the Treats
 
+## Videoanleitung
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f1PBe4D9lCI?si=vtNWPwh9llhhzCia" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  class="inline-game"></iframe>
+
 ## Einleitung
 
 {{< imgblock "img/hero.png" "Hintergrund" 6 >}} Willkommen bei unserem Halloween-Spiel 🎃. Wir programmieren gemeinsam ein Spiel, bei dem freundliche Monster 👻 gruselige "Süßigkeiten" herumwerfen, die du erwischen musst. Wenn du sie nicht erwischst, verlierst du ein Leben. Wenn du alle Leben verloren hast, ist das Spiel vorbei. Wer schafft am meisten Punkte?
