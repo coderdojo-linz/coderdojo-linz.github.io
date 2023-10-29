@@ -310,7 +310,10 @@ function draw() {
 }
 {{< /highlight >}}
 
-Jetzt passt es super. Die Süßigkeiten verschwinden, wenn sie am Boden laden.
+{{< imgblock "img/scratch-if.png" "Scratch wenn/dann" 3 >}} Jetzt passt es super. Die Süßigkeiten verschwinden, wenn sie am Boden laden.
+
+Übrigens, ist dir im Code, den du gerade geschrieben hast, das `if` aufgefallen? Das ist die TypeScript-Variante vom _falls, dann_ oder _falls, dann, sonst_, das du bereits aus Scratch kennst.
+{{< /imgblock >}}
 
 ## Süßigkeiten abschießen
 
@@ -329,7 +332,8 @@ function draw() {
 
 ### Auf Mausklick reagieren
 
-Als nächstes müssen wir etwas machen, wenn die Spielerin oder der Spieler mit der Maus klicken. Dafür gibt es die Methode `mouseClicked`. Am besten du suchst sie als erstes in deinem Code. Sie ist ganz unten und im Moment noch leer.
+{{< imgblock "img/scratch-click.png" "Scratch klick" 4 >}} Als nächstes müssen wir etwas machen, wenn die Spielerin oder der Spieler mit der Maus klicken. Dafür gibt es die Methode `mouseClicked`. Sie ist so etwas ähnliches wie das Scratch-Ereignis _Wenn diese Figur angeklickt wird_. Am besten du suchst sie als erstes in deinem Code. Sie ist ganz unten und im Moment noch leer.
+{{< /imgblock >}}
 
 Füge den folgenden Code in die `mouseClicked`-Funktion ein. Er ist etwas länger, aber mittlerweile bist du ja fast schon ein Profi 👍. **Zur Erinnerung:** Die Zeilen, die mit `//` beginnen, sind _Kommentare_. Sie sollen dir nur erklären, was der Code macht. Du musst sie **nicht** eintippen.
 
