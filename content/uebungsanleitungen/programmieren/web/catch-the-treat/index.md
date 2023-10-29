@@ -441,3 +441,154 @@ function draw() {
 
 Hurra, wir können Punkte sammeln!
 
+## Leben
+
+{{< imgblock "img/health.png" "Punkte" 3 >}} Leben
+{{< /imgblock >}}
+
+```ts
+// vvvv Hier fügen wir die Variablen ein
+const monsters: Monster[] = [];
+const items: Items[] = [];
+let points = 0;
+// vvv Diese Zeilen muss du einfügen
+let health = 5;
+let gameOver = false;
+// ^^^ Bis hierher
+```
+
+```ts
+function preload() {
+  ...
+
+  Fonts.loadFonts();          // <<< Diese Zeile gibt es schon
+  HealthHearts.loadHearts();  // <<< Diese Zeile musst du einfügen
+}
+```
+
+{{< imgblock "img/game-over.png" "Punkte" 5 >}} Game Over
+{{< /imgblock >}}
+
+```ts
+function draw() {
+  Background.draw();
+
+  // vvv Diese Zeilen muss du einfügen
+  if (gameOver) {
+    // Falls Game Over ist, schreiben wir eine Meldung mit den erreichten
+    // Punkten auf den Bildschirm und beenden das Spiel.
+    Texts.drawGameOver(Fonts.Festive(), points);
+    return;
+  }
+  // ^^^ Bis hierher
+
+  monsters[0].move();
+  monsters[0].draw();
+
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].touchesFloor) {
+      Sounds.playDrop();
+      items.splice(i--, 1);
+      // vvv Diese Zeilen muss du einfügen
+      health--;
+      if (health === 0) {
+        // Wenn eine Süßigkeit zu Boden fällt, reduzieren wir
+        // die Lebensenergie um 1. Wenn die Lebensenergie auf 
+        // 0 fällt, ist das Spiel zu Ende.
+        gameOver = true;
+      }
+      // ^^^ Bis hierher
+
+      continue;
+    }
+
+    items[i].draw();
+  }
+
+  Crosshairs.draw();
+  Explosion.draw();
+  Texts.drawPoints(Fonts.Qahiri(), points); // <<< Diese Zeile gibt es schon
+  HealthHearts.drawHealth(health);          // <<< Diese Zeile musst du einfügen
+}
+```
+
+{{< imgblock "img/fong.png" "Punkte" 4 >}} Font
+{{< /imgblock >}}
+
+
+```ts
+function mouseClicked() {
+  // vvv Diese Zeilen muss du einfügen
+  if (gameOver) {
+    return;
+  }
+  // ^^^ Bis hierher
+  
+  ...
+}
+```
+
+## Levels
+
+{{< imgblock "img/level-3.gif" "Punkte" 4 >}} Level 3
+{{< /imgblock >}}
+
+```ts
+// vvvv Hier fügen wir die Variablen ein
+...
+let gameOver = false; // <<< Diese Zeile gibt es schon
+let level = 3;        // <<< Diese Zeile musst du einfügen
+```
+
+```ts
+function draw() {
+  ...
+
+  // vvv Die folgenden zwei Zeilen gibt es schon, du musst sie LÖSCHEN
+  // monsters[0].move();
+  // monsters[0].draw();
+  // ^^^ Bis hierher
+
+  // vvv Diese Zeilen musst du stattdessen einfügen
+  for (let i = 0; i < level; i++) {
+    monsters[i].move();
+    monsters[i].draw();
+  }
+  // ^^^ Bis hierher
+
+  ...
+}
+```
+
+```ts
+function mouseClicked() {
+  ...
+
+  if (Background.isIn(p.mouseX, p.mouseY)) {
+    for (let i = 0; i < items.length; i++) {
+      ...
+      if (pos.isIn(p.mouseX, p.mouseY)) {
+        ...
+        points++; // <<< Diese Zeile gibt es schon
+
+        // vvv Diese Zeilen musst du einfügen
+        if (points === 25) {
+          level = 2;
+        } else if (points === 50) {
+          level = 3;
+        }
+        // ^^^ Bis hierher
+
+        return; // <<< Diese Zeile gibt es schon
+      }
+    }
+
+    ...
+  }
+}
+```
+
+{{< imgblock "img/level-points.png" "Punkte" 4 >}} Level points
+{{< /imgblock >}}
+
+https://stackblitz.com/edit/catch-the-sweets-finished?file=index.ts
