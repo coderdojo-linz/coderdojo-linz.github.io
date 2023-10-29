@@ -662,4 +662,4 @@ function mouseClicked() {
 
 Wow, gratulation, du hast es bis zum Ende geschafft. Du hast ein richtiges Browser-Game programmiert. Wir hoffen, dass es dir Spaß gemacht hat.
 
-Hier zum Schluss noch der Link zum fertigen Spiel: [https://stackblitz.com/edit/catch-the-sweets-finished](https://stackblitz.com/edit/catch-the-sweets-finished?file=index.ts)
+Hier zum Schluss noch der Link zum fertigen Spiel: [https://meet.coderdojo.net/catch-finished](https://meet.coderdojo.net/catch-finished)
