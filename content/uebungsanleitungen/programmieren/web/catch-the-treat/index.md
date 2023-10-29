@@ -662,4 +662,4 @@ function mouseClicked() {
 
 Wow, gratulation, du hast es bis zum Ende geschafft. Du hast ein richtiges Browser-Game programmiert. Wir hoffen, dass es dir Spaß gemacht hat.
 
-Hier zum Schluss noch der Link zum fertigen Spiel: [https://meet.coderdojo.net/catch-finished](https://meet.coderdojo.net/catch-finished)
+Hier zum Schluss noch der Link zum fertigen Spiel: [https://meet.coderdojo.net/catch-finished](https://meet.coderdojo.net/catch-finished). Wenn du das Spiel einfach nur spielen möchtest, hier der passende Link dafür: [https://meet.coderdojo.net/catch-play](https://meet.coderdojo.net/catch-play).
