@@ -1,7 +1,7 @@
 ---
 title: "Halloween - Catch the Treat"
 description: "Wir programmieren ein Halloween-Spiel, bei dem du Süßigkeiten erwischen musst."
-level: 2
+level: 1
 aliases:
 - /trainingsanleitungen/web/feuerwerk-basics.html
 categories:
