@@ -270,7 +270,7 @@ function loadEvents(eventsTable) {
 
           let registrationLink = '';
           let location = '';
-          if (formattedDate === '03.11.2023') {
+          if (formattedDate === '17.11.2023') {
             if (event.location.indexOf('Leonding') >= 0) {
               registrationLink = 'https://forms.office.com/e/t08HsQ5xQF';
               //location = 'im TIC Steyr';
