@@ -275,7 +275,7 @@ function loadEvents(eventsTable) {
               registrationLink = 'https://forms.office.com/e/BkmTrFg3Mr';
               //location = 'im TIC Steyr';
             } else {
-              registrationLink = 'https://forms.office.com/e/d6keC6W65H';
+              registrationLink = 'https://forms.office.com/e/BkmTrFg3Mr';
               //location = 'in der Grand Garage'
             }
           }
