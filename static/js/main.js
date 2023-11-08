@@ -272,7 +272,7 @@ function loadEvents(eventsTable) {
           let location = '';
           if (formattedDate === '17.11.2023') {
             if (event.location.indexOf('Leonding') >= 0) {
-              registrationLink = 'https://forms.office.com/e/t08HsQ5xQF';
+              registrationLink = 'https://forms.office.com/e/BkmTrFg3Mr';
               //location = 'im TIC Steyr';
             } else {
               registrationLink = 'https://forms.office.com/e/d6keC6W65H';
