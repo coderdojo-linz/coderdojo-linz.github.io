@@ -61,9 +61,9 @@
                 {{ else }}
                 {{ $link = print .Permalink .Params.File }}
                 {{ end }}
-                <div class="card h-100" onclick="window.open('{{$link}}')">
+                <a class="card h-100" onclick="window.open('{{$link}}')">
                 {{ else }}
-                <div class="card h-100" onclick="location.href='{{$link}}'">
+                <a class="card h-100" href="{{$link}}">
                 {{ end}}
                     {{ if isset .Params "img" }}
                     <div class="card-header" style="padding: {{ $padding }}; height: 200px;">{{ if isset .Params "img" }}
@@ -102,7 +102,7 @@
                         {{ end }}
                     </div>
                     {{ end }}
-                </div>
+                </a>
             </div>
             {{ end }}
         </div>

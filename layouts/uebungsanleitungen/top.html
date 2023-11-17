@@ -13,7 +13,7 @@
         <div class="row row-cols-1 row-cols-md-2">
             {{ range (.Pages.ByParam "Title").Reverse }}
             <div class="col mb-5">
-                <div class="card h-100" onclick="location.href='{{.Permalink}}'">
+                <a class="card h-100" href="{{.Permalink}}">
                     {{ if isset .Params "img" }}
                     <img src="/img/uebungsanleitungen/{{.Params.img}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: cover; height: 150px;">
                     {{ end }}
@@ -26,7 +26,7 @@
                     <!-- <div class="card-footer">
                         <a href="{{.Permalink}}" class="card-link">Zu den Übungsanleitungen</a>
                     </div> -->
-                </div>
+                </a>
             </div>
             {{ end }}
         </div>

@@ -36,7 +36,7 @@
                     {{ $objectPosition = .Params.imgposition }}
                 {{ end }}
 
-                <div class="card h-100" onclick="location.href='{{ $link }}'">
+                <a class="card h-100" href="{{$link}}">
                     {{ if isset .Params "img" }}
                     <div class="card-header" style="padding: {{ $padding }}; height: 200px;">{{ if isset .Params "img" }}
                         <img src="{{.RelPermalink}}{{(index .Params.img)}}" class="card-img-top mx-auto" alt="{{.Title}}" style="object-fit: {{$objectFit}}; object-position: {{$objectPosition}}; height: 100%;">{{ end }}
@@ -63,7 +63,7 @@
                         <span title="Variablen"><i class="fas fa-clipboard-list"></i> {{ .Params.Data }}</span>
                         {{ end }}
                     </div>
-                </div>
+                </a>
             </div>
             {{ end }}
         </div>
