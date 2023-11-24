@@ -27,7 +27,7 @@ Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMa
 
 ## Downloads
 
-[Stage](Stage.png)
+[Stage](img/Stage.png)
 
 [PacMan](PacMan.sprite3)
 
