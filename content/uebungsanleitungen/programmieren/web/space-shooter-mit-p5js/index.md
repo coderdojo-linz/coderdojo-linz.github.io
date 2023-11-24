@@ -74,10 +74,14 @@ let stars = [];
 // Liste der Asteroiden
 const asteroids = [];
 // Liste der abgefeuerten Laser
-const lasers = [];
+let lasers = [];
+let explosions = [];
 
-// setzt den Focus aufs Spielfeld für die Tastatursteuerung
-this.focus();
+let spaceshipImg;
+let asteroidImg;
+let laserImg;
+const shotImg = [];
+const explosionImg = [];
 ```
 
 ## Grafiken laden
@@ -88,7 +92,7 @@ Direkt darunter und noch über der Funktion `setup` fügen wir eine neue Funktio
 function preload() {
   spaceshipImg = loadImage('https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/spaceship.png');
   asteroidImg = loadImage('https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/asteroid.png');
-  laserImg = loadImage('https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot_0.png');
+  laserImg = loadImage('https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot.png');
   
   for (let i = 1; i <= 10; i++) {
     explosionImg.push(loadImage('https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot6_exp' + i.toString() + '.png'));
