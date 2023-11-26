@@ -234,10 +234,14 @@
 <span style="color:#008000">// Liste der Asteroiden
 </span><span style="color:#008000"></span><span style="color:#00f">const</span> asteroids = [];
 <span style="color:#008000">// Liste der abgefeuerten Laser
-</span><span style="color:#008000"></span><span style="color:#00f">const</span> lasers = [];
+</span><span style="color:#008000"></span><span style="color:#00f">let</span> lasers = [];
+<span style="color:#00f">let</span> explosions = [];
 
-<span style="color:#008000">// setzt den Focus aufs Spielfeld für die Tastatursteuerung
-</span><span style="color:#008000"></span><span style="color:#00f">this</span>.focus();
+<span style="color:#00f">let</span> spaceshipImg;
+<span style="color:#00f">let</span> asteroidImg;
+<span style="color:#00f">let</span> laserImg;
+<span style="color:#00f">const</span> shotImg = [];
+<span style="color:#00f">const</span> explosionImg = [];
 </code></pre></div>
 <h2 id="grafiken-laden">Grafiken laden</h2>
 
@@ -245,7 +249,7 @@
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> preload() {
   spaceshipImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/spaceship.png&#39;</span>);
   asteroidImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/asteroid.png&#39;</span>);
-  laserImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot_0.png&#39;</span>);
+  laserImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot.png&#39;</span>);
   
   <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 1; i &lt;= 10; i++) {
     explosionImg.push(loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot6_exp&#39;</span> + i.toString() + <span style="color:#a31515">&#39;.png&#39;</span>));
