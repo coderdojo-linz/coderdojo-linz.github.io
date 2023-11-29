@@ -29,11 +29,11 @@ Für das Spiel benötigen wir ein Bühnenbild, und insgesamt drei Figuren: PacMa
 
 [Stage](img/Stage.png)
 
-[PacMan](img/PacMan.sprite3)
+[PacMan](PacMan.sprite3)
 
-[Ghost](img/Ghost.sprite3)
+[Ghost](Ghost.sprite3)
 
-[Pill](img/Pill.sprite3)
+[Pill](Pill.sprite3)
 
 ## Die Bühne *Stage*
 
