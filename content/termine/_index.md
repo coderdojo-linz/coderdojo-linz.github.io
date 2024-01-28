@@ -10,7 +10,7 @@ aliases:
 Es gibt vier verschiedene Veranstaltungen:
 
 {{< event/type "CoderDojo" >}}
-Das ist unsere Hauptveranstaltung. Beim CoderDojo helfen dir Mentoren von deinen ersten Schritten im Programmieren bis zu kniffligen technischen Problemen. Hast du noch nie beim CoderDojo teilgenommnen, musst du dich für die Teilnahme an deinem ersten Termin anmelden. Wenn es dir gefällt und du wiederkommen möchtest, kannst du ohne weitere Anmeldung zu allen Terminen kommen.
+Das ist unsere Hauptveranstaltung. Beim CoderDojo helfen dir Mentoren von deinen ersten Schritten im Programmieren bis zu kniffligen technischen Problemen. Für diese Termine ist keine Anmeldung erforderlich.
 {{< /event/type >}}
 
 {{< event/type "CoderDojo Virtual" >}}
