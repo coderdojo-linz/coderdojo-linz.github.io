@@ -294,7 +294,7 @@ function loadEvents(eventsTable) {
             formattedDate !== '10.09.2023'
           ) {
             row +=
-              '<p>Der Link zur Anmeldung wird 2 Wochen vor dem Event bekannt gegeben.</p>';
+              '<p>Keine Anmeldung erforderlich.</p>';
           }
         }
 
@@ -381,7 +381,7 @@ function loadEvents(eventsTable) {
         } else {
           if (event.type.toLowerCase() === 'coderdojo virtual') {
             row +=
-              '<p>Die Workshops werden zwei Tage vor dem Event bekanntgegeben. Keine Anmeldung erforderlich.</p>';
+              '<p>Die Workshops werden zwei Tage vor dem Event bekanntgegeben.<br/>Keine Anmeldung erforderlich.</p>';
           }
         }
 
