@@ -114,8 +114,6 @@ function selectCategory(category) {
 
   $('.category-cards .category').hide();
   $('.category-cards .' + category).show();
-
-  return false;
 }
 
 function loadEventsOverview(eventsTable) {
