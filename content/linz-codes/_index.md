@@ -11,6 +11,8 @@ ogTitle: 'Linz Codes! Programmieren für Kinder und Jugendliche unter dem Lentos
 
 <div id="linz-codes-header"></div>
 
+# Dies ist ein Archivbeitrag
+
 ## Linz Codes!
 
 Vor eineinhalb Jahren wechselten wir mit dem [CoderDojo Linz](/) Corona-bedingt in die virtuelle Welt. Jetzt ist es soweit, wir kehren zurück aus der virtuellen Welt! Diesen Sommer sehen wir uns wieder persönlich beim Programmieren am Freiplatz unter dem [Lentos Kunstmuseum](https://www.lentos.at/).
@@ -82,7 +84,7 @@ Falls ihr überlegt, eine Informatik-HTL zu besuchen und es dazu Fragen gibt, st
 
 **<a href="/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/mini-wetterstation/esp-bme-oled.pdf" target="_blank">D1 Mini</a>**, _ab 12 Jahren, etwas Erfahrung mit Arduino IDE notwendig_: Der D1 Mini ist ein briefmarkengroßer Mikrocontroller. Er hat viele Schnittstellen, unterstützt eine Vielzahl von Sensoren und ist daher ideal für Bastelprojekte. Der D1 Mini kann mit der Arduino IDE programmiert werden. Wir werden mit dem D1 Mini LEDs ansteuern und verschiedene Sensoren auslesen.
 
-##### Workshop-Zeitplan
+#### Workshop-Zeitplan
 
 <div class="timetable"></div>
 
