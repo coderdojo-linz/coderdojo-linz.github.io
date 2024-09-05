@@ -11,8 +11,6 @@ ogTitle: 'Linz Codes! Programmieren für Kinder und Jugendliche unter dem Lentos
 
 <div id="linz-codes-header"></div>
 
-# Dies ist ein Archivbeitrag
-
 ## Linz Codes!
 
 Vor eineinhalb Jahren wechselten wir mit dem [CoderDojo Linz](/) Corona-bedingt in die virtuelle Welt. Jetzt ist es soweit, wir kehren zurück aus der virtuellen Welt! Diesen Sommer sehen wir uns wieder persönlich beim Programmieren am Freiplatz unter dem [Lentos Kunstmuseum](https://www.lentos.at/).
