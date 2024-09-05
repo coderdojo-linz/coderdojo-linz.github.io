@@ -15,7 +15,7 @@ aliases:
 
 ## Was ist ein CoderDojo? ##
 
-**In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Mentoren Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.**
+**In der weltweiten CoderDojo Gemeinschaft bieten freiwillige Mentorinnen und Mentoren en Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.**
 
 Gemeinsames Entdecken, Teamarbeit, [Mentoring](http://de.wikipedia.org/wiki/Mentoring "Mentoring auf Wikipedia") sowie selbstorganisiertes Lernen und Experimentieren stehen im CoderDojo im Vordergrund. Offenheit, gegenseitiges Helfen und das Weitergeben von erworbenem Wissen sind wichtige Grundprinzipien. An oberster Stelle steht aber die Förderung von Kreativität und Spaß an Technologie. Softwareentwicklung in einer Gemeinschaft soll Spaß machen, cool sein und den Kindern neue Perspektiven in einer Welt eröffnen, die immer mehr von Technologie, Computern und Software geprägt ist.
 
