@@ -95,9 +95,9 @@ Es sind immer mehrere Mentoren anwesend, so können wir sowohl auf Anfänger als
 
 ## <a name="Laptop" />Braucht mein Kind einen Laptop? ##
 
-**Ja, grundsätzlich schon. Wenn wir haben einige Leihgeräte. Wenn ihr einen e Der Laptop muss aber nicht besonders schnell sein. Es ist egal, ob er mit Windows, Mac OS oder Linux betrieben wird. iPads, Android-Tablets oder Smartphones reichen nicht aus.**
+**Ja, grundsätzlich schon. Der Laptop muss aber nicht besonders schnell sein. Es ist egal, ob er mit Windows, Mac OS oder Linux betrieben wird. iPads, Android-Tablets oder Smartphones reichen nicht aus.**
 
-Falls ein Kind teilnehmen möchte, das keinen eigenen Laptop mitbringen kann, nehmen Sie bitte mit uns [Kontakt](/#contact) auf. Wir haben eine limitierte Anzahl an Geräten, die wir während der CoderDojos zur Verfügung stellen können.
+Falls Sie keinen Laptop zur verfügung haben, ist das auch kein Problem. Wir haben einige Leihgeräte, die wir während der Veranstaltung gerne zur Verfügung stellen.
 
 ## Neugierig geworden? ##
 
