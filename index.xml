@@ -246,7 +246,7 @@ Falls du noch überhaupt keine Erfahrung mit HTML hast, wende dich an eine Coder
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/info/eltern/</guid>
-      <description>Informationen für Eltern Was ist ein CoderDojo? In der weltweiten CoderDojo Gemeinschaft bieten Freiwillige Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.
+      <description>Informationen für Eltern Was ist ein CoderDojo? In der weltweiten CoderDojo Gemeinschaft bieten freiwillige Mentorinnen und Mentoren Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.
 Gemeinsames Entdecken, Teamarbeit, Mentoring sowie selbstorganisiertes Lernen und Experimentieren stehen im CoderDojo im Vordergrund. Offenheit, gegenseitiges Helfen und das Weitergeben von erworbenem Wissen sind wichtige Grundprinzipien.</description>
     </item>
     
@@ -400,7 +400,7 @@ Ausstattung
       <guid>https://linz.coderdojo.net/info/mentoren/</guid>
       <description>Wir suchen Mentoren! Du kannst gut programmieren oder bist ein Elektronik-Crack? Dann brauchen wir dich als Mentor.
 Als Mentoren begleiten wir in CoderDojos Kinder beim spielerischen Entdecken ihrer Begeisterung für Technik und Softwareentwicklung. Unsere Aufgaben sind:
- Vermitteln der Grundlagen für Anfänger. Den Kindern helfen, falls sie an Grenzen stoßen. &amp;ldquo;Coole&amp;rdquo; Projektideen vorschlagen, falls die Kinder einmal keine eigenen Ideen mitbringen. Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen (z.</description>
+ Vermitteln der Grundlagen für Anfänger. Den Kindern helfen, falls sie an Grenzen stoßen. &amp;ldquo;Coole&amp;rdquo; Projektideen vorschlagen, falls die Kinder einmal keine eigenen Ideen mitbringen. Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen Und das wichtigste: Kinder für Technik und Programmieren begeistern.</description>
     </item>
     
     <item>
@@ -2312,9 +2312,9 @@ Allgemeines zur Programmiersprache Python Wir verwenden für die Programmierung 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://linz.coderdojo.net/uebungsbuch-ausprobieren/</guid>
-      <description>Hier kannst du die Spiele aus dem Übungsbuch (4. Auflage) ausprobieren! Du kannst alle Anleitungen im Übungsbuch als PDF downloaden.
+      <description> Hier kannst du die Spiele aus dem Übungsbuch (4. Auflage) ausprobieren! Du kannst alle Anleitungen im Übungsbuch als PDF downloaden.
 Der erfahrene CoderDojo-Teilnehmer Benjamin, der bereits erste Erfahrungen als Mentor gesammelt hat, hat uns Lösungen für alle Übungsanleitungen aus dem Buch zur Verfügung gestellt. Dadurch habt ihr die Möglichkeit, alle Beispiele online auszuprobieren.
-Scratch Fang mich - mein erstes Spiel mit Scratch  Tastatur-Rennen – Wer tippt am schnellsten?  Paddle Game  Virus-Buster  Space Shooter  Froggy - die Straße überqueren  Typescript Malen nach Zahlen  Feuerwerk mit TypeScript  Erste Schritte bei 3D-Programmierung Python Von Scratch zu Python   Wir zeichnen einen Alien  Bubble Blaster</description>
+Scratch Fang mich - mein erstes Spiel mit Scratch  Tastatur-Rennen – Wer tippt am schnellsten?  Paddle Game  Virus-Buster  Space Shooter  Froggy - die Straße überqueren  Typescript Malen nach Zahlen  Feuerwerk mit TypeScript  Erste Schritte bei 3D-Programmierung  Python Von Scratch zu Python   Wir zeichnen einen Alien  Bubble Blaster  </description>
     </item>
     
   </channel>
