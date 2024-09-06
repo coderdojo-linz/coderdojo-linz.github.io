@@ -20,7 +20,7 @@ Als Mentoren begleiten wir in [CoderDojos](http://www.coderdojo.com "Internation
 * Vermitteln der Grundlagen für Anfänger.
 * Den Kindern helfen, falls sie an Grenzen stoßen.
 * "Coole" Projektideen vorschlagen, falls die Kinder einmal keine eigenen Ideen mitbringen.
-* Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen (z.B. [Dojo Sushi Cards](http://kata.coderdojo.com/wiki/Sushi "Beschreibung von Dojo Sushi im CoderDojo Wiki")).
+* Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen
 * Und das wichtigste: Kinder für Technik und Programmieren begeistern.
 
 ## Häufige Fragen

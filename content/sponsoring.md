@@ -34,7 +34,7 @@ Im Folgenden findest du Vorschläge, wie du das CoderDojo Linz finanziell unters
 
 Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucken der Anleitungen, für Obst während der Veranstaltungen, oder für die Veranstaltung eines CoderDojo Festes für die Kinder.
 
-Wenn gewünscht, wirst du gerne auf unserer Webseite namentlich erwähnt. Schicke uns dazu bitte eine kurze Info an info@coderdojo-linz.org.
+Wenn gewünscht, wirst du gerne auf unserer Webseite namentlich erwähnt. Schicke uns dazu bitte eine kurze Info an [info@linz.coderdojo.net](mailto:info@linz.coderdojo.net).
 
 {{< bankdetails >}}
 
@@ -46,14 +46,14 @@ Verlinkung und Ankündigung der Firma in der Ausschreibung
 Verlinkung und Ankündigung der Firma im Termin auf der Webseite.
 Möglichkeit zur Aufstellung eines Werbebanners.
 
-####  Sponsor 5 Dojos: ab 500€
+#### Sponsor 5 Dojos: ab 500€
 
 Präsentiere dich als Firma und sponsere gleich fünf oder mehr CoderDojos. Die Vorteile:
 
 Wie „Sponsor a Dojo“
 Zusätzlich die Möglichkeit zur Veranstaltung eines firmen-internes Dojo mit unseren Mentoren, zum Beispiel an deinem Tag der offenen Tür.
 
-####  Gönner: monatlich ab 1€
+#### Gönner: monatlich ab 1€
 
 Trete als CoderDojo Gönner auf und spende monatlich einen Betrag deiner Wahl. Das Geld wird ausschließlich für die Kinder verwendet, z.B. für das Ausdrucken der Anleitungen, für Obst während der Veranstaltungen, oder für die Veranstaltung eines CoderDojo Festes für die Kinder. Wenn gewünscht, wirst du außerdem auf unserer Webseite namentlich erwähnt.
 
