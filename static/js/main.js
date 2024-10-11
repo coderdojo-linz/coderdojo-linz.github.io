@@ -190,7 +190,6 @@ function loadEvents(eventsTable) {
 
         let date = moment(new Date(event.date)).startOf('day');
         let formattedDate = date.format('DD.MM.YYYY');
-
         let formattedBeginTime = '15:00';
         let formattedEndTime = '19:00';
 
