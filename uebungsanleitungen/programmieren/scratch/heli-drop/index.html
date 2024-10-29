@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Heli-Drop </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -181,26 +181,17 @@
         <div class="row">
             
             
-            <div class="col-12 sushi-content"> 
-
-<h2 id="spielbeschreibung">Spielbeschreibung</h2>
-
+            <div class="col-12 sushi-content"> <h2 id="spielbeschreibung">Spielbeschreibung</h2>
 <p>Steuere deinen Helikopter mit den Cursortasten zu den Kisten, heb sie auf und lass sie dann ganz rechts am Bildschirm mit der &lt;Space&gt;-Taste wieder fallen. Wenn du alle Kisten eingesammelt hast, kommst du ins nächste Level.</p>
-
 <h3 id="figuren">Figuren</h3>
-
 <p>Leider bietet uns Scratch in der Standardbibliothek keinen Helikopter und auch keine Kisten. Du kannst aber hier die entsprechenden Figuren herunterladen:</p>
-
 <ol>
-<li><a href="assets/helicopter.sprite3" target="_blank">den Helikopter</a></li>
-<li><a href="assets/Crate.sprite3" target="_blank">die Kiste (Engl. Crate)</a></li>
-<li><a href="assets/City.sprite3" target="_blank">die Hindernisse/Gebäude der Stadt (City)</a></li>
+<li><a href="assets/helicopter.sprite3">den Helikopter</a></li>
+<li><a href="assets/Crate.sprite3">die Kiste (Engl. Crate)</a></li>
+<li><a href="assets/City.sprite3">die Hindernisse/Gebäude der Stadt (City)</a></li>
 </ol>
-
 <p>Bitte importiere die Figuren in dein Scratch-Projekt.</p>
-
 <h3 id="hintergrund">Hintergrund</h3>
-
 
 
 
@@ -217,7 +208,6 @@
 <div class="row">
     <div class="col">
         <p><p>Als Hintergrund eignet sich hier eine City-Skyline sehr gut. Die Scratch-Bibliothek bietet hier einiges.</p>
-
 <p>Damit wir auch das Ende des Spiels korrekt darstellen, duplizieren wir einfach das Bühnenbild und schreiben groß &ldquo;Game Over&rdquo; darüber.</p>
 </p>
     </div>
@@ -226,9 +216,7 @@
     </div>
 </div>
 
-
 <h3 id="globale-variablen">Globale Variablen</h3>
-
 
 
 
@@ -245,14 +233,11 @@
 <div class="row">
     <div class="col">
         <p><p>Neben den beiden Spiel-relevanten Informationen, die auch sichtbar sind:</p>
-
 <ol>
 <li><strong>Punke</strong></li>
 <li><strong>Zeit</strong></li>
 </ol>
-
 <p>benötigen wir noch 2 Variablen, die für den Spielablauf wichtig sind:</p>
-
 <ol>
 <li><strong>Aktuelle Kisten</strong> - wie viele Kisten sind noch am Spielfeld</li>
 <li><strong>HeliHatKiste</strong> - zeigt uns, ob der Helikopter gerade eine Kiste trägt</li>
@@ -264,9 +249,7 @@
     </div>
 </div>
 
-
 <h3 id="steuerung-des-helikopters">Steuerung des Helikopters</h3>
-
 
 
 
@@ -283,25 +266,17 @@
 <div class="row">
     <div class="col">
         <p><p>Die Steuerung des Helikopters ist relativ einfach. Wir verwenden die Cursortasten, um den Helikopter zu bewegen. Dabei achten wir darauf, dass er nicht aus dem Bildschirm fliegen kann.</p>
-
 <p>Die Steuerung beschleunigt den Heli in die Richtung, die wir auf den Pfeiltasten drücken, indem wir in 2 neuen Variablen:</p>
-
 <ol>
 <li><strong>X-Geschwindigkeit</strong> und</li>
 <li><strong>Y-Geschwindigkeit</strong></li>
 </ol>
-
 <p>speichern. Später verändern wir dann die Position des Helikopters um diese Werte und überprüfen, ob wir eine Kiste (Crate) erwischt haben, oder evtl. gegen ein Gebäude geflogen sind. (Block &ldquo;<strong>dagegen geflogen</strong>&rdquo;)</p>
-
 <p>Die Nachrichten <strong>&lt;&lt;Heli bewegt sich&gt;&gt;</strong> und <strong>&lt;&lt;kiste berührt&gt;&gt;</strong> schicken wir ab, damit evtl. die Kisten mitbekommen, dass sie sich auch bewegen müssen, um mitzukommen. Aus Gleichzeitigkeitsgründen müssen wir leider warten bis die Nachrichten abgearbeitet sind.</p>
-
 <p>Danach prüfen wir noch, ob wir uns noch im Bildschirmbereich befinden und korrigieren die Position, falls wir uns aus dem Bildschirm bewegt haben. (Block &ldquo;<strong>Prüfe Flugbereich</strong>&rdquo;)</p>
-
 <p>Als Letztes lassen wir den Heli noch in der Luft bremsen, sodass er von alleine langsamer wird und langsam auf den Boden sinken kann. (Block &ldquo;<strong>Bremsen</strong>&rdquo;)</p>
-
 <p><strong>Hier noch die Blöcke im Detail</strong> (Alle Blöcke &ldquo;Ohne Bildschirmaktualisierung&rdquo;):</p>
-
-<p><img src="img/heli-blocks.png" alt="" /></p>
+<p><img src="img/heli-blocks.png" alt=""></p>
 </p>
     </div>
     <div class="col-12 col-md-4">
@@ -309,9 +284,7 @@
     </div>
 </div>
 
-
 <h4 id="sonstiges-zum-helikopter">Sonstiges zum Helikopter</h4>
-
 
 
 
@@ -337,7 +310,6 @@
 
 
 
-
      
     
 
@@ -351,7 +323,6 @@
 <div class="row">
     <div class="col">
         <p><p>Das Ereignis <strong>&lt;&lt;neue kisten&gt;&gt;</strong> wird gesendet, wenn ein neues Level beginnt. Dazu setzen wir den Helikopter auf seine Startposition am rechten Rand.</p>
-
 <p><strong>&lt;&lt;gefangen&gt;&gt;</strong> wird gesendet, wenn eine Kiste bemerkt, dass Sie vom Helikopter berührt wird und damit aufgehoben wird. Damit der Heli sie nicht gleich wieder fallen lässt, lassen wir den Helikopter ein bisschen nach oben gehen, sodass die Kiste nicht gleich wieder auf dem Boden aufsitzt.</p>
 </p>
     </div>
@@ -360,9 +331,7 @@
     </div>
 </div>
 
-
 <h3 id="kisten">Kisten</h3>
-
 
 
 
@@ -379,20 +348,15 @@
 <div class="row">
     <div class="col">
         <p><p>Wir brauchen für das Spiel mehrere Kisten. Also werden wir die eigentliche Figur unsichtbar machen und Klone erzeugen, die wir für das Spiel verwenden.</p>
-
 <p>Das Ereignis <strong>&lt;&lt;neue kisten&gt;&gt;</strong> zeigt, dass ein neues Level gestartet wird. Also wird es Zeit, neue Kisten auf dem Bildschirm zu verteilen. Jede Kiste braucht über sich selbst folgende Information, die in Variablen <strong>nur für diese Figur</strong> gespeichert werden:</p>
-
 <ul>
 <li><strong>Aufgehoben</strong> zeigt uns, dass die aktuelle Kiste gerade am Helikopter hängt</li>
 </ul>
-
 <p>Überdies setzen wir die globalen Variablen:</p>
-
 <ul>
 <li><strong>HeliHatKiste</strong> auf 0 um zu zeigen, dass der Helikopter gerade keine Kiste trägt und</li>
 <li><strong>AktuelleKisten</strong> auf 0, da wir diese ja erst erzeugen müssen.</li>
 </ul>
-
 <p>In einer Schleife erzeugen wir dann 3x einen Klon der Kiste an einer zufälligen Stelle und zählen die Anzahl der aktuellen Kisten hoch.</p>
 </p>
     </div>
@@ -400,7 +364,6 @@
     <img src="/uebungsanleitungen/programmieren/scratch/heli-drop/img/crate-start.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
-
 
 
 
@@ -418,15 +381,12 @@
 <div class="row">
     <div class="col">
         <p><p>Wie vorhin bereits erwähnt machen wir die Klone sichtbar, sodass wir sie als Spielfiguren verwenden können. Solange der Klon existiert, überprüfen wir, ob er gerade aufgehoben ist. Wenn nein, dann lassen wir ihn einfach fallen. Wenn ja, dann überprüfen wir ständig</p>
-
 <ul>
 <li><strong>ob die Leertaste gedrückt wurde</strong> und lassen ihn dann fallen, oder</li>
 <li><strong>ob die Kiste an einem Gebäude angestoßen ist</strong> und lassen sie dann auch fallen.</li>
 </ul>
-
 <p>Des Weiteren benötigen wir noch die Blöcke. Erwähnenswert ist hier, dass der Block <strong>Kiste fällt</strong> auch überprüft, ob die Kiste zu weit nach unten gefallen ist. Dort hat die Stadt keinen Boden und wir können damit die Kiste als Punkt zählen und die verfügbaren Kisten um 1 verringern. Der Block <strong>Kiste fällt</strong> ist übrigens auch der einzige Block der <strong>mit</strong> Bildschirmaktualisierung ausgeführt wird.</p>
-
-<p><img src="img/crate-blocks.png" alt="" /></p>
+<p><img src="img/crate-blocks.png" alt=""></p>
 </p>
     </div>
     <div class="col-12 col-md-4">
@@ -434,9 +394,7 @@
     </div>
 </div>
 
-
 <h4 id="ereignisse-der-kisten">Ereignisse der Kisten</h4>
-
 <p>
 
 
@@ -453,12 +411,10 @@
 <div class="row">
     <div class="col">
         <p><p>Die Kisten müssen eigentlich nur auf 2 Ereignisse reagieren:</p>
-
 <ol>
 <li><strong>Kiste berührt</strong> zeigt an, dass der Heli eine Kiste berührt hat. Jede Kiste muss jetzt überprüfen, ob sie betroffen ist, und ob sie die einzige ist. Wenn ja, sieht sich die Kiste selbst als <strong>Aufgehoben</strong>.</li>
 <li><strong>Heli bewegt sich</strong> informiert die Kiste, dass der Heli sich bewegt. Sollte die Kiste <strong>Aufgehoben</strong> sein, fliegt sie mit.</li>
-</ol>
-</p>
+</ol></p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/heli-drop/img/crate-events.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -487,9 +443,7 @@
     </div>
 </div>
 </p>
-
 <h3 id="gebäude-city">Gebäude (City)</h3>
-
 
 
 
@@ -507,7 +461,6 @@
     <div class="col">
         <p><p>Diese Figur zeigt uns die Gebäude der Stadt. Jedes Kostüm ist ein Level des Spiels.
 Zuerst wird bei einem neuen Level gewartet, bis Kisten im Spielfeld sind. Danach warten wir, bis alle eingesammelt wurden. Anschließend schalten wir zum nächsten Level um.</p>
-
 <p><strong>Anmerkung</strong>: Du kannst die Level sehr einfach erweitern, indem du ein weiteres Kostüm hinzufügst, und deine Gebäude hineinmalst. Du musst nur darauf achten, dass es einen Bereich (am besten ganz rechts) gibt, wo die Kisten bis zum unteren Rand fallen können.</p>
 </p>
     </div>
@@ -516,9 +469,7 @@ Zuerst wird bei einem neuen Level gewartet, bis Kisten im Spielfeld sind. Danach
     </div>
 </div>
 
-
 <h3 id="spielsteuerung-bühne">Spielsteuerung (Bühne)</h3>
-
 
 
 
@@ -541,9 +492,7 @@ Zuerst wird bei einem neuen Level gewartet, bis Kisten im Spielfeld sind. Danach
     </div>
 </div>
 
-
 <h2 id="herunterladen">Herunterladen</h2>
-
 <p>Du kannst das fertige Projekt unter <a href="https://scratch.mit.edu/projects/883155247/" target="_blank">heli-drop auf scratch.mit.edu</a> ausprobieren.</p>
  </div>
         </div>

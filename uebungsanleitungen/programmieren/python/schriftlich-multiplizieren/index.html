@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Schriftlich Multiplizieren mit Python </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -149,144 +149,112 @@
             
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
-                <nav id="TableOfContents">
-<ul>
-<li><a href="#schriftlich-multiplizieren-mit-python">Schriftlich Multiplizieren mit Python</a></li>
-<li><a href="#allgemeines-zur-programmiersprache-python">Allgemeines zur Programmiersprache Python</a></li>
-<li><a href="#einfaches-hantieren-mit-zeichenketten">Einfaches Hantieren mit Zeichenketten</a></li>
-<li><a href="#ausgabe-der-aufgabe">Ausgabe der Aufgabe</a></li>
-<li><a href="#einfaches-hantieren-mit-listen">Einfaches Hantieren mit Listen</a></li>
-<li><a href="#die-zwischenprodukte">Die Zwischenprodukte</a></li>
-<li><a href="#das-ausrichten-der-zeilen">Das Ausrichten der Zeilen</a></li>
-<li><a href="#das-gesamte-programm">Das gesamte Programm</a></li>
-<li><a href="#erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</a></li>
-</ul>
-</nav>
+                <nav id="TableOfContents"></nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="schriftlich-multiplizieren-mit-python">Schriftlich Multiplizieren mit Python</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="schriftlich-multiplizieren-mit-python">Schriftlich Multiplizieren mit Python</h1>
 <p>Es wäre doch nett, wenn ein Programm das schriftliche Multiplizieren
 mit allen Zwischenschritten vorführen könnte?
 Für die Faktoen <code>345</code> und <code>789</code> soll das Programm z.B. folgendes ausgeben:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> 345 x 789
- ---------
-2415
- 2760
-  3105
-------
-272205</code></pre></div>
-<h1 id="allgemeines-zur-programmiersprache-python">Allgemeines zur Programmiersprache Python</h1>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> 345 x 789
+</span></span><span style="display:flex;"><span> ---------
+</span></span><span style="display:flex;"><span>2415
+</span></span><span style="display:flex;"><span> 2760
+</span></span><span style="display:flex;"><span>  3105
+</span></span><span style="display:flex;"><span>------
+</span></span><span style="display:flex;"><span>272205
+</span></span></code></pre></div><h1 id="allgemeines-zur-programmiersprache-python">Allgemeines zur Programmiersprache Python</h1>
 <p>Wir verwenden für die Programmierung die Programmiersprache Python (siehe die Python Homepage <a href="https://www.python.org/" target="_blank">www.python.org</a>),
 genauer gesagt Python 3, also eine Version von Python, deren Bezeichnung mit 3 beginnt, z.B. Python 3.7.1.
 Zu Beginn ist es am einfachsten, wenn du Python-Programme online im Browser (z.B. auf <a href="https://www.onlinegdb.com/online_python_interpreter" target="_blank">www.onlinegdb.com/online_python_interpreter</a>)
 entwickelst und ausführst.</p>
-
 <p>Wenn du Python-Programme lokal auf einem Rechner entwickeln und laufen lassen möchtest, muss Python installiert sein.
 Hilfe dazu findest du auf der <a href="https://www.python.org/about/gettingstarted/" target="_blank">Python Homepage</a> und im Python Wiki (siehe <a href="https://wiki.python.org/moin/BeginnersGuide/Download" target="_blank">wiki.python.org</a>).</p>
-
 <h1 id="einfaches-hantieren-mit-zeichenketten">Einfaches Hantieren mit Zeichenketten</h1>
-
 <p>Um Zahlen und Text formattiert ausgeben zu können, müssen wir uns zuerst mit Zeichenketten (englisch: &ldquo;strings&rdquo;) beschäftigen.
 Starte eine interaktive Python-Umgebung (z.B. IDLE oder online unter <a href="http://brython.info/tests/console.html" target="_blank">http://brython.info/tests/console.html</a>), um die folgenden Beispiele gleich ausprobieren zu können.</p>
-
 <p>Der Datentyp für Zeichenketten wird in Python mit <code>str</code> bezeichnet. Eine konkrete Zeichenkette wird unter Hochkommas geschrieben:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a31515">&#34;Das ist ein Text.&#34;</span></code></pre></div>
-<p>Man kann doppelte, aber auch einfache Hochkommas verwenden:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a31515">&#39;Schon wieder ein Text.&#39;</span></code></pre></div>
-<p>Will man eine Zahl in eine Zeichenkette umwandeln, gibt es mehrere Möglichkeiten.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a31515">&#34;Das ist ein Text.&#34;</span>
+</span></span></code></pre></div><p>Man kann doppelte, aber auch einfache Hochkommas verwenden:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a31515">&#39;Schon wieder ein Text.&#39;</span>
+</span></span></code></pre></div><p>Will man eine Zahl in eine Zeichenkette umwandeln, gibt es mehrere Möglichkeiten.
 Standardmäßig verwendet man in Python zum Umwandeln in den Typ <code>str</code> eine Funktion mit eben diesem Namen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">str(3)</code></pre></div>
-<p>Mit Zeichenketten kann man in Python auch &ldquo;rechnen&rdquo;. Versuche einmal folgende Ausdrücke:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a31515">&#34;Hallo!&#34;</span> + <span style="color:#a31515">&#34;Hallo!&#34;</span>
- 3 * <span style="color:#a31515">&#34;Hallo!&#34;</span></code></pre></div>
-<p>Damit haben wir alles zusammen, was wir für das Zusammenbauen der Ausgabe des schriftlichen Rechnens brauchen.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>str(3)
+</span></span></code></pre></div><p>Mit Zeichenketten kann man in Python auch &ldquo;rechnen&rdquo;. Versuche einmal folgende Ausdrücke:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a31515">&#34;Hallo!&#34;</span> + <span style="color:#a31515">&#34;Hallo!&#34;</span>
+</span></span><span style="display:flex;"><span> 3 * <span style="color:#a31515">&#34;Hallo!&#34;</span>
+</span></span></code></pre></div><p>Damit haben wir alles zusammen, was wir für das Zusammenbauen der Ausgabe des schriftlichen Rechnens brauchen.</p>
 <h1 id="ausgabe-der-aufgabe">Ausgabe der Aufgabe</h1>
-
 <p>Jetzt wollen wir mit der Erstellung des Programms beginnen.
 Die erste Zeile einer schriftlichen Multiplikation zeigt die beiden Faktoren mit <code>x</code> getrennt.
 Das können wir in Python so zusammenbauen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">faktor1 = 345
-faktor2 = 789
-aufgabe = str(faktor1) + <span style="color:#a31515">&#39; x &#39;</span> + str(faktor2)</code></pre></div>
-<p>Zur besseren Lesbarkeit haben wir das Multiplikationszeichen <code>x</code> noch mit Leerzeichen umgeben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>faktor1 = 345
+</span></span><span style="display:flex;"><span>faktor2 = 789
+</span></span><span style="display:flex;"><span>aufgabe = str(faktor1) + <span style="color:#a31515">&#39; x &#39;</span> + str(faktor2)
+</span></span></code></pre></div><p>Zur besseren Lesbarkeit haben wir das Multiplikationszeichen <code>x</code> noch mit Leerzeichen umgeben.</p>
 <p>Zum Unterstreichen bzw. Trennen von den nachfolgenden Zwischenprodukten wollen in der nächsten Zeile soviele Minuszeichen (<code>-</code>) aneinanderhängen,
 wie es Zeichen in der ersten Zeile gibt. Für die gerade angegebenen Faktoren sind das neun Zeichen, also brauchen wir den String</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a31515">&#39;---------&#39;</span></code></pre></div>
-<p>Da sich die Länge mit verschiedenen Faktoren ändern kann, wollen wir das nicht fix in das Programm schreiben,
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a31515">&#39;---------&#39;</span>
+</span></span></code></pre></div><p>Da sich die Länge mit verschiedenen Faktoren ändern kann, wollen wir das nicht fix in das Programm schreiben,
 sondern passend zur Länge des Strings in der Variable <code>aufgabe</code> bestimmen.
 Die Länge einer Zeichenkette kann man in Python mit der Funktion <code>len</code> auslesen.
 Und mit dem Multiplikationsoperator <code>*</code> kann man Strings vervielfältigen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zeileTrennen1 = len(aufgabe) * <span style="color:#a31515">&#39;-&#39;</span></code></pre></div>
-<p>Der String in der Variable <code>zeileTrennen1</code> enthält nun genau so viele Zeichen wie der String in <code>aufgabe</code>.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>zeileTrennen1 = len(aufgabe) * <span style="color:#a31515">&#39;-&#39;</span>
+</span></span></code></pre></div><p>Der String in der Variable <code>zeileTrennen1</code> enthält nun genau so viele Zeichen wie der String in <code>aufgabe</code>.</p>
 <h1 id="einfaches-hantieren-mit-listen">Einfaches Hantieren mit Listen</h1>
-
 <p>Zum Verwalten der Zwischenprodukte brauchen wir noch einen neuen Datentyp: die Liste.
 In Python können Listen ganz einfach angelegt werden:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlenListe = [2, 3, 5, 7, 11]
-wortListe = [<span style="color:#a31515">&#39;Wasser&#39;</span>, <span style="color:#a31515">&#39;Fisch&#39;</span>, <span style="color:#a31515">&#39;Sonne&#39;</span>]
-gemischteListe = [1, <span style="color:#a31515">&#39;zwei&#39;</span>, 3, <span style="color:#a31515">&#39;vier&#39;</span>]</code></pre></div>
-<p>Die leere Liste wird mit <code>[]</code> angegeben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>zahlenListe = [2, 3, 5, 7, 11]
+</span></span><span style="display:flex;"><span>wortListe = [<span style="color:#a31515">&#39;Wasser&#39;</span>, <span style="color:#a31515">&#39;Fisch&#39;</span>, <span style="color:#a31515">&#39;Sonne&#39;</span>]
+</span></span><span style="display:flex;"><span>gemischteListe = [1, <span style="color:#a31515">&#39;zwei&#39;</span>, 3, <span style="color:#a31515">&#39;vier&#39;</span>]
+</span></span></code></pre></div><p>Die leere Liste wird mit <code>[]</code> angegeben.</p>
 <p>Die Elemente einer Liste können über ihren Index angesprochen werden, wobei hier bei <strong>Null</strong> (<code>0</code>) zu zählen begonnen wird.
 Das erste Element einer Liste erhält man daher z.B. so: <code>zahlenListe[0]</code>.</p>
-
 <p>Mit Listen kann man ganz ähnlich &ldquo;rechnen&rdquo; wie mit Zeichenketten. Experimentiere mit diesen Ausdrücken:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[1, 2, 3] + [4, 5, 6]
-3 * [<span style="color:#a31515">&#39;eins&#39;</span>, <span style="color:#a31515">&#39;zwo&#39;</span>]</code></pre></div>
-<p>Um ein Element an eine Liste anzuhängen, kann man die Listenmethode <code>append</code> verwenden:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zahlenListe.append(13)
-wortListe.append(<span style="color:#a31515">&#39;Strand&#39;</span>)</code></pre></div>
-<h1 id="die-zwischenprodukte">Die Zwischenprodukte</h1>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[1, 2, 3] + [4, 5, 6]
+</span></span><span style="display:flex;"><span>3 * [<span style="color:#a31515">&#39;eins&#39;</span>, <span style="color:#a31515">&#39;zwo&#39;</span>]
+</span></span></code></pre></div><p>Um ein Element an eine Liste anzuhängen, kann man die Listenmethode <code>append</code> verwenden:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>zahlenListe.append(13)
+</span></span><span style="display:flex;"><span>wortListe.append(<span style="color:#a31515">&#39;Strand&#39;</span>)
+</span></span></code></pre></div><h1 id="die-zwischenprodukte">Die Zwischenprodukte</h1>
 <p>Beim schriftlichen Multiplizieren wird der erste Faktor mit jeder Ziffer des zweiten Faktors multipliziert.
 Dazu müssen wir den zweiten Faktor in seine Ziffern zerlegen. Das geht am einfachsten, indem wir ihn
 in einen String umwandeln und dann die einzelnen Zeichen auslesen und wieder in eine Zahl zurückwandeln.
 Um die Zeichen in einer Schleife nacheinander abhandeln zu können, lernen wir noch die <code>for</code>-Schleife von Python kennen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ziffern2 = []
-<span style="color:#00f">for</span> zifferZeichen <span style="color:#00f">in</span> str(faktor2):
-  ziffer = int(zifferZeichen)
-  ziffern2.append(ziffer)</code></pre></div>
-<p>Wenn <code>faktor2</code> den Wert <code>789</code> hat, dann durchläuft die Variable <code>zifferZeichen</code> nacheinander die
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ziffern2 = []
+</span></span><span style="display:flex;"><span><span style="color:#00f">for</span> zifferZeichen <span style="color:#00f">in</span> str(faktor2):
+</span></span><span style="display:flex;"><span>  ziffer = int(zifferZeichen)
+</span></span><span style="display:flex;"><span>  ziffern2.append(ziffer)
+</span></span></code></pre></div><p>Wenn <code>faktor2</code> den Wert <code>789</code> hat, dann durchläuft die Variable <code>zifferZeichen</code> nacheinander die
 Zeichen <code>'7'</code>, <code>'8'</code> und <code>'9'</code>. Zurück in eine Zahl verwandelt und nacheinander an die vorerst leere
 Liste in <code>ziffern2</code> angehängt, erhält man zuletzt in der Variable <code>ziffern2</code> die Liste <code>[7, 8, 9]</code>.</p>
-
 <p>Python erlaubt außerdem eine sehr kompakte Schreibweise, um aus den (verarbeiteten) Elementen einer Liste eine neue Liste
 zu generieren. Obige 4 Zeilen lassen sich damit in einer Zeile ausdrücken:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ziffern2 = [int(zifferZeichen) <span style="color:#00f">for</span> zifferZeichen <span style="color:#00f">in</span> str(faktor2)]</code></pre></div>
-<p>Die Zwischenprodukte kann man jetzt ähnlich kompakt erzeugen. Da wir mit den Zwischenprodukten nicht weiterrechnen werden,
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ziffern2 = [int(zifferZeichen) <span style="color:#00f">for</span> zifferZeichen <span style="color:#00f">in</span> str(faktor2)]
+</span></span></code></pre></div><p>Die Zwischenprodukte kann man jetzt ähnlich kompakt erzeugen. Da wir mit den Zwischenprodukten nicht weiterrechnen werden,
 sondern sie nur noch für die Ausgabe brauchen, wollen wir sie gleich auch in Zeichenketten umwandeln:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zwischenProdukte_str = [str(faktor1*ziffer) <span style="color:#00f">for</span> ziffer <span style="color:#00f">in</span> ziffern2]</code></pre></div>
-<p>Für die oben angegebenen Faktoren <code>345</code> und <code>789</code> würde die Variable <code>zwischenProdukte_str</code> jetzt diese Liste enthalten:
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>zwischenProdukte_str = [str(faktor1*ziffer) <span style="color:#00f">for</span> ziffer <span style="color:#00f">in</span> ziffern2]
+</span></span></code></pre></div><p>Für die oben angegebenen Faktoren <code>345</code> und <code>789</code> würde die Variable <code>zwischenProdukte_str</code> jetzt diese Liste enthalten:
 <code>[str(345*7), str(345*8), str(345*9)]</code>, ausgewertet also <code>['2415', '2760', '3105']</code>.</p>
-
 <h1 id="das-ausrichten-der-zeilen">Das Ausrichten der Zeilen</h1>
-
 <p>Bevor wir die ganzen Zeilen ausgeben und vorher noch ausrichten, müssen wir sie noch um das Ergebnis und eine Trennlinie
 davor ergänzen. Die Ausgabezeile für das endgültige Produkt lässt sich sehr einfach bestimmen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">produkt_str = str(faktor1*faktor2)</code></pre></div>
-<p>Die Trennzeile davor soll genauso lang sein, also wieder aus entsprechend vielen Minuszeichen bestehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zeileTrennen2 = len(produkt_str) * <span style="color:#a31515">&#39;-&#39;</span></code></pre></div>
-<p>Jetzt haben wir alle notwendigen Zeichenketten beisammen. Würden wir sie aber in der jetzigen Form nacheinander ausgeben,
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>produkt_str = str(faktor1*faktor2)
+</span></span></code></pre></div><p>Die Trennzeile davor soll genauso lang sein, also wieder aus entsprechend vielen Minuszeichen bestehen:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>zeileTrennen2 = len(produkt_str) * <span style="color:#a31515">&#39;-&#39;</span>
+</span></span></code></pre></div><p>Jetzt haben wir alle notwendigen Zeichenketten beisammen. Würden wir sie aber in der jetzigen Form nacheinander ausgeben,
 würden wir folgendes erhalten:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">345 x 789
----------
-2415
-2760
-3105
-------
-272205</code></pre></div>
-<p>Wir müssen die Zeilen also durch Einfügen von Leerzeichen jeweils am Anfang noch ausrichten. Dazu wollen wir von unten beginnen.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>345 x 789
+</span></span><span style="display:flex;"><span>---------
+</span></span><span style="display:flex;"><span>2415
+</span></span><span style="display:flex;"><span>2760
+</span></span><span style="display:flex;"><span>3105
+</span></span><span style="display:flex;"><span>------
+</span></span><span style="display:flex;"><span>272205
+</span></span></code></pre></div><p>Wir müssen die Zeilen also durch Einfügen von Leerzeichen jeweils am Anfang noch ausrichten. Dazu wollen wir von unten beginnen.
 Das endgültige Produkt und die Trennzeile davor passen schon. Das letzte Zwischenprodukt muss rechts am Ergebnis ausgerichtet werden,
 die zughörige Spalte berechnet sich daher ganz einfach über die Anzahl der Zeichen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">produktAnschlagRechts = len(produkt_str)</code></pre></div>
-<p>Siehe dazu auch diese Grafik zur Veranschaulichung der Anschläge an der rechten Seite und der Einrückungen:</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>produktAnschlagRechts = len(produkt_str)
+</span></span></code></pre></div><p>Siehe dazu auch diese Grafik zur Veranschaulichung der Anschläge an der rechten Seite und der Einrückungen:</p>
 
 
 
@@ -311,60 +279,57 @@ die zughörige Spalte berechnet sich daher ganz einfach über die Anzahl der Zei
     </div>
 </div>
 
-
 <p>Jedes Zwischenprodukt davor muss rechts um ein Zeichen weiter links ausgerichtet werden. Für das erste Zwischenprodukt
 erhalten wir daher diese Anschlagsspalte:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zwischen1AnschlagRechts = produktAnschlagRechts - len(ziffern2) + 1</code></pre></div>
-<p>Der erste Faktor muss rechts an derselben Spalte angeschlagen werden. Seine Einrückung ergibt sich
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>zwischen1AnschlagRechts = produktAnschlagRechts - len(ziffern2) + 1
+</span></span></code></pre></div><p>Der erste Faktor muss rechts an derselben Spalte angeschlagen werden. Seine Einrückung ergibt sich
 nun aus den von seiner Länge noch fehlenden Zeichen, was auch gleichzeitig die Einrückung der ersten Zeile und ihrer Unterstreichung ergibt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">einrueckenFaktor1 = zwischen1AnschlagRechts - len(str(faktor1))
-zeileAufgabe  = einrueckenFaktor1*<span style="color:#a31515">&#39; &#39;</span> + aufgabe
-zeileTrennen1 = einrueckenFaktor1*<span style="color:#a31515">&#39; &#39;</span> + len(aufgabe)*<span style="color:#a31515">&#39;-&#39;</span></code></pre></div>
-<p>Die Zwischenzeilen müssen nun aus den Zwischenprodukten in ähnlicher Weise durch Einrücken erstellt werden:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zwischenZeilen = []
-zwischenAnschlagRechts = zwischen1AnschlagRechts
-<span style="color:#00f">for</span> prod_str <span style="color:#00f">in</span> zwischenProdukte_str:
-    einruecken = zwischenAnschlagRechts - len(prod_str)
-    prodZeile = einruecken*<span style="color:#a31515">&#39; &#39;</span> + prod_str
-    zwischenZeilen.append(prodZeile)
-    zwischenAnschlagRechts += 1</code></pre></div>
-<h1 id="das-gesamte-programm">Das gesamte Programm</h1>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>einrueckenFaktor1 = zwischen1AnschlagRechts - len(str(faktor1))
+</span></span><span style="display:flex;"><span>zeileAufgabe  = einrueckenFaktor1*<span style="color:#a31515">&#39; &#39;</span> + aufgabe
+</span></span><span style="display:flex;"><span>zeileTrennen1 = einrueckenFaktor1*<span style="color:#a31515">&#39; &#39;</span> + len(aufgabe)*<span style="color:#a31515">&#39;-&#39;</span>
+</span></span></code></pre></div><p>Die Zwischenzeilen müssen nun aus den Zwischenprodukten in ähnlicher Weise durch Einrücken erstellt werden:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>zwischenZeilen = []
+</span></span><span style="display:flex;"><span>zwischenAnschlagRechts = zwischen1AnschlagRechts
+</span></span><span style="display:flex;"><span><span style="color:#00f">for</span> prod_str <span style="color:#00f">in</span> zwischenProdukte_str:
+</span></span><span style="display:flex;"><span>    einruecken = zwischenAnschlagRechts - len(prod_str)
+</span></span><span style="display:flex;"><span>    prodZeile = einruecken*<span style="color:#a31515">&#39; &#39;</span> + prod_str
+</span></span><span style="display:flex;"><span>    zwischenZeilen.append(prodZeile)
+</span></span><span style="display:flex;"><span>    zwischenAnschlagRechts += 1
+</span></span></code></pre></div><h1 id="das-gesamte-programm">Das gesamte Programm</h1>
 <p>Das Erzeugen der Ausgabezeilen wollen wir noch in eine Funktion auslagern.
 Wenn wir die obigen Programmteile in eine passende Reihenfolge bringen und eine Schleife zum Anzeigen der Ausgabezeilen hinzufügen, dann sieht unser Code so aus:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> schriftlichMultiplizieren(faktor1, faktor2):
-    ziffern2 = [int(z) <span style="color:#00f">for</span> z <span style="color:#00f">in</span> str(faktor2)]
-    zwischenProdukte_str = [str(faktor1*ziffer) <span style="color:#00f">for</span> ziffer <span style="color:#00f">in</span> ziffern2]
-    produkt_str = str(faktor1*faktor2)
-    
-    produktAnschlagRechts = len(produkt_str)
-    zwischen1AnschlagRechts = produktAnschlagRechts - len(ziffern2) + 1
-    
-    aufgabe = str(faktor1) + <span style="color:#a31515">&#39; x &#39;</span> + str(faktor2)
-    einrueckenFaktor1 = zwischen1AnschlagRechts - len(str(faktor1))
-    zeileAufgabe  = einrueckenFaktor1*<span style="color:#a31515">&#39; &#39;</span> + aufgabe
-    zeileTrennen1 = einrueckenFaktor1*<span style="color:#a31515">&#39; &#39;</span> + len(aufgabe)*<span style="color:#a31515">&#39;-&#39;</span>
-    zwischenZeilen = []
-    zwischenAnschlagRechts = zwischen1AnschlagRechts
-    <span style="color:#00f">for</span> prod_str <span style="color:#00f">in</span> zwischenProdukte_str:
-        einruecken = zwischenAnschlagRechts - len(prod_str)
-        prodZeile = einruecken*<span style="color:#a31515">&#39; &#39;</span> + prod_str
-        zwischenZeilen.append(prodZeile)
-        zwischenAnschlagRechts += 1
-    zeileTrennen2 = len(produkt_str)*<span style="color:#a31515">&#39;-&#39;</span>
-    zeileProdukt = produkt_str
-
-    zeilenOben  = [zeileAufgabe, zeileTrennen1]
-  zeilenUnten = [zeileTrennen2, zeileProdukt]
-    <span style="color:#00f">return</span> zeilenOben + zwischenZeilen + zeilenUnten
-
-faktor1 = 345
-faktor2 = 789
-zeilen = schriftlichMultiplizieren(faktor1, faktor2)
-<span style="color:#00f">for</span> zeile <span style="color:#00f">in</span> zeilen:
-    <span style="color:#00f">print</span>(zeile)</code></pre></div>
-<p>Verschiedene Multiplikationen (lose zusammengestellt) würden dann so aussehen:</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> schriftlichMultiplizieren(faktor1, faktor2):
+</span></span><span style="display:flex;"><span>    ziffern2 = [int(z) <span style="color:#00f">for</span> z <span style="color:#00f">in</span> str(faktor2)]
+</span></span><span style="display:flex;"><span>    zwischenProdukte_str = [str(faktor1*ziffer) <span style="color:#00f">for</span> ziffer <span style="color:#00f">in</span> ziffern2]
+</span></span><span style="display:flex;"><span>    produkt_str = str(faktor1*faktor2)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    produktAnschlagRechts = len(produkt_str)
+</span></span><span style="display:flex;"><span>    zwischen1AnschlagRechts = produktAnschlagRechts - len(ziffern2) + 1
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    aufgabe = str(faktor1) + <span style="color:#a31515">&#39; x &#39;</span> + str(faktor2)
+</span></span><span style="display:flex;"><span>    einrueckenFaktor1 = zwischen1AnschlagRechts - len(str(faktor1))
+</span></span><span style="display:flex;"><span>    zeileAufgabe  = einrueckenFaktor1*<span style="color:#a31515">&#39; &#39;</span> + aufgabe
+</span></span><span style="display:flex;"><span>    zeileTrennen1 = einrueckenFaktor1*<span style="color:#a31515">&#39; &#39;</span> + len(aufgabe)*<span style="color:#a31515">&#39;-&#39;</span>
+</span></span><span style="display:flex;"><span>    zwischenZeilen = []
+</span></span><span style="display:flex;"><span>    zwischenAnschlagRechts = zwischen1AnschlagRechts
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> prod_str <span style="color:#00f">in</span> zwischenProdukte_str:
+</span></span><span style="display:flex;"><span>        einruecken = zwischenAnschlagRechts - len(prod_str)
+</span></span><span style="display:flex;"><span>        prodZeile = einruecken*<span style="color:#a31515">&#39; &#39;</span> + prod_str
+</span></span><span style="display:flex;"><span>        zwischenZeilen.append(prodZeile)
+</span></span><span style="display:flex;"><span>        zwischenAnschlagRechts += 1
+</span></span><span style="display:flex;"><span>    zeileTrennen2 = len(produkt_str)*<span style="color:#a31515">&#39;-&#39;</span>
+</span></span><span style="display:flex;"><span>    zeileProdukt = produkt_str
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    zeilenOben  = [zeileAufgabe, zeileTrennen1]
+</span></span><span style="display:flex;"><span>  zeilenUnten = [zeileTrennen2, zeileProdukt]
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> zeilenOben + zwischenZeilen + zeilenUnten
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>faktor1 = 345
+</span></span><span style="display:flex;"><span>faktor2 = 789
+</span></span><span style="display:flex;"><span>zeilen = schriftlichMultiplizieren(faktor1, faktor2)
+</span></span><span style="display:flex;"><span><span style="color:#00f">for</span> zeile <span style="color:#00f">in</span> zeilen:
+</span></span><span style="display:flex;"><span>    print(zeile)
+</span></span></code></pre></div><p>Verschiedene Multiplikationen (lose zusammengestellt) würden dann so aussehen:</p>
 
 
 
@@ -389,18 +354,14 @@ zeilen = schriftlichMultiplizieren(faktor1, faktor2)
     </div>
 </div>
 
-
 <h1 id="erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</h1>
-
 <p>Willst du das Programm noch ausbauen? Folgende Ideen dazu:</p>
-
 <ul>
 <li>Wenn der zweite Faktor nur eine Stelle hat, gibt es nur ein Zwischenprodukt, das auch gleich als Ergebnis verwendet werden kann.
 Die zweite Trennzeile und das endgültige Ergebnis kann man also weglassen.</li>
 <li>Wenn der zweite Faktor eine Ziffer <code>0</code> enthält, dann ist auch das entsprechende Zwischenprodukt gleich <code>0</code>.
 Dafür braucht man aber keine eigene Zeile. Man kann diese <code>0</code> an das vorige Zwischenergebnis anhängen.</li>
 </ul>
-
 <p><strong>Aufgabe für Fortgeschrittene :</strong> Schreibe ein Programm für die schriftliche Division!</p>
  </div>
         </div>

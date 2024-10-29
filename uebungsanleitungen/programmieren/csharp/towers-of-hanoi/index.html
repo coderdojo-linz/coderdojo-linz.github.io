@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Türme von Hanoi </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,97 +150,83 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#türme-von-hanoi">Türme von Hanoi</a>
-<ul>
-<li><a href="#einleitung">Einleitung</a></li>
-<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
-<li><a href="#programmieren">Programmieren</a></li>
-<li><a href="#lösung">Lösung</a></li>
-<li><a href="#wie-gehts-weiter">Wie gehts weiter?</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#einleitung">Einleitung</a></li>
+    <li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+    <li><a href="#programmieren">Programmieren</a></li>
+    <li><a href="#lösung">Lösung</a></li>
+    <li><a href="#wie-gehts-weiter">Wie gehts weiter?</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="türme-von-hanoi">Türme von Hanoi</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="türme-von-hanoi">Türme von Hanoi</h1>
 <h2 id="einleitung">Einleitung</h2>
-
 <p>Die <em>Türme von Hanoi</em> sind ein klassisches Übungsbeispiel für Programmierer. Für Kinder gibt es das Rätsel auch als Holzspielzeug zu kaufen. Die Regeln sind einfach:</p>
-
 <ul>
 <li>Man hat ein Spielbrett mit drei Stangen. Nennen wir sie <em>L</em> for Links, <em>M</em> für Mitte und <em>R</em> für Rechts.</li>
 <li>Auf der Stange A ist ein Turm von Spielsteinen aufgetürmt. Jeder Spielstein ist etwas kleiner als der darunter.</li>
 <li>Die Aufgabe ist es, den <strong>Turm von Stange L auf Stange M</strong> zu übersiedeln. Allerdings mit folgenden Einschränkungen:
-
 <ul>
 <li>Es darf immer nur ein Spielstein gleichzeitig verschoben werden.</li>
 <li>Es darf nie ein größerer Spielstein auf einen kleineren gelegt werden.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>Das folgende Bild, das von <a href="https://de.wikipedia.org/wiki/T%C3%BCrme_von_Hanoi#/media/File:Tower_of_Hanoi_4.gif" target="_blank">Wikipedia</a> übernommen wurde, veranschaulicht das Prinzip:</p>
-
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Tower_of_Hanoi_4.gif" alt="Türme von Hanoi" /></p>
-
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Tower_of_Hanoi_4.gif" alt="Türme von Hanoi"></p>
 <h2 id="ziel-der-übung">Ziel der Übung</h2>
-
 <p>Deine Aufgabe ist es, ein Programm zu schreiben, das für jede beliebige Anzahl an Spielsteinen die notwendigen Züge ausgibt. Der Einfachheit halber numerieren wir die Spielsteine durch. Der kleinste hat die Nummer 1, der zweitkleinste die Nummer 2 und so weiter.</p>
-
 <p>Bei <em>einem Spielstein</em> ist die Lösung trivial:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Schiebe 1 von L nach M</code></pre></div>
-<p>Bei <em>zwei Spielsteinen</em> brauchen wir drei Schritte:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Schiebe 1 von L nach R
-Schiebe 2 von L nach M
-Schiebe 1 von R nach M</code></pre></div>
-<p>Für <em>drei Spielsteine</em> brauchst du schon sieben Schritte:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Schiebe 1 von L nach M
-Schiebe 2 von L nach R
-Schiebe 1 von M nach R
-Schiebe 3 von L nach M
-Schiebe 1 von R nach L
-Schiebe 2 von R nach M
-Schiebe 1 von L nach M</code></pre></div>
-<p>Hier eine Grafik, die die Lösung mit drei Spielsteinen veranschaulicht (<a href="http://www.scalingbits.com/java/javakurs1/methoden/rekursion" target="_blank">Bildquelle</a>)</p>
-
-<p><img src="http://www.scalingbits.com/sites/default/files/4hanoi.png" alt="Türme von Hanoi" /></p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Schiebe 1 von L nach M
+</span></span></code></pre></div><p>Bei <em>zwei Spielsteinen</em> brauchen wir drei Schritte:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Schiebe 1 von L nach R
+</span></span><span style="display:flex;"><span>Schiebe 2 von L nach M
+</span></span><span style="display:flex;"><span>Schiebe 1 von R nach M
+</span></span></code></pre></div><p>Für <em>drei Spielsteine</em> brauchst du schon sieben Schritte:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Schiebe 1 von L nach M
+</span></span><span style="display:flex;"><span>Schiebe 2 von L nach R
+</span></span><span style="display:flex;"><span>Schiebe 1 von M nach R
+</span></span><span style="display:flex;"><span>Schiebe 3 von L nach M
+</span></span><span style="display:flex;"><span>Schiebe 1 von R nach L
+</span></span><span style="display:flex;"><span>Schiebe 2 von R nach M
+</span></span><span style="display:flex;"><span>Schiebe 1 von L nach M
+</span></span></code></pre></div><p>Hier eine Grafik, die die Lösung mit drei Spielsteinen veranschaulicht (<a href="http://www.scalingbits.com/java/javakurs1/methoden/rekursion" target="_blank">Bildquelle</a>)</p>
+<p><img src="http://www.scalingbits.com/sites/default/files/4hanoi.png" alt="Türme von Hanoi"></p>
 <p>Und so weiter.</p>
-
 <h2 id="programmieren">Programmieren</h2>
-
 <p>In dieser Übung sollst du selbst versuchen, das Programm zu schreiben, ohne vorab eine Lösung zu haben. Du kannst jede beliebige Programmiersprache dafür verwenden, die du schon kennst. Falls du unsicher bist, verwende C#. Hier die wichtigsten Schritte zum Starten:</p>
-
 <ol>
-<li><p>Installiere auf deinem Computer C# falls du es noch nicht installiert hast: <a href="https://www.microsoft.com/net/core#windows" target="_blank">Installationsanleitung</a></p></li>
-
-<li><p>Installiere auf deinem Computer einen Editor wie z.B. <a href="http://code.visualstudio.com" target="_blank">Visual Studio Code</a></p></li>
-
-<li><p>Erstelle dir einen leeren Ordner auf deinem Computer. Nehmen wir an, der Ordner heißt <code>c:\hanoi</code></p></li>
-
-<li><p>Öffne eine Kommandozeile (<em>Command Prompt</em>) und wechsle mit dem <code>cd</code> Kommando in den Ordner (z.B. <code>cd c:\hanoi</code>).</p></li>
-
-<li><p>Erstelle eine leere C# Konsolenanwendung, indem du in dem Kommandozeilenfenster <code>dotnet new</code> eingibst. Starte sie, indem du <code>dotnet run</code> eingibst. Es müsste <code>Hello World</code> ausgegeben werden.</p></li>
-
-<li><p>Öffne den Ordner in deinem Editor. Falls du <a href="http://code.visualstudio.com" target="_blank">Visual Studio Code</a> verwendest, gib einfach im Kommandozeilenfenster <code>code .</code> ein (<code>.</code> steht für das aktuelle Verzeichnis).</p></li>
+<li>
+<p>Installiere auf deinem Computer C# falls du es noch nicht installiert hast: <a href="https://www.microsoft.com/net/core#windows" target="_blank">Installationsanleitung</a></p>
+</li>
+<li>
+<p>Installiere auf deinem Computer einen Editor wie z.B. <a href="http://code.visualstudio.com" target="_blank">Visual Studio Code</a></p>
+</li>
+<li>
+<p>Erstelle dir einen leeren Ordner auf deinem Computer. Nehmen wir an, der Ordner heißt <code>c:\hanoi</code></p>
+</li>
+<li>
+<p>Öffne eine Kommandozeile (<em>Command Prompt</em>) und wechsle mit dem <code>cd</code> Kommando in den Ordner (z.B. <code>cd c:\hanoi</code>).</p>
+</li>
+<li>
+<p>Erstelle eine leere C# Konsolenanwendung, indem du in dem Kommandozeilenfenster <code>dotnet new</code> eingibst. Starte sie, indem du <code>dotnet run</code> eingibst. Es müsste <code>Hello World</code> ausgegeben werden.</p>
+</li>
+<li>
+<p>Öffne den Ordner in deinem Editor. Falls du <a href="http://code.visualstudio.com" target="_blank">Visual Studio Code</a> verwendest, gib einfach im Kommandozeilenfenster <code>code .</code> ein (<code>.</code> steht für das aktuelle Verzeichnis).</p>
+</li>
 </ol>
-
 <p>Jetzt kannst du loslegen. Viel Spaß beim Tüfteln ;-)</p>
-
 <h2 id="lösung">Lösung</h2>
-
-<p>Möchtest du deine Lösung mit einer Musterlösung vergleichen oder brauchst du Inspiration? <a href="source/Program.cs" target="_blank">Hier findest du eine Musterlösung in C#</a>.</p>
-
+<p>Möchtest du deine Lösung mit einer Musterlösung vergleichen oder brauchst du Inspiration? <a href="source/Program.cs">Hier findest du eine Musterlösung in C#</a>.</p>
 <h2 id="wie-gehts-weiter">Wie gehts weiter?</h2>
-
 <p>C# gefällt dir? Du möchtest mehr wissen?</p>
-
 <ol>
-<li><p>Wenn du Lust hast kannst du einen kostenlosen <a href="https://mva.microsoft.com/de-de/training-courses/programmieren-f-r-beginner-mit-c--10140?l=JqnuG5A6_9704984382" target="_blank">Online-Videokurs über C#</a> machen. Dabei lernst du die Programmiersprache von Grund auf Schritt für Schritt kennen.</p></li>
-
-<li><p>Wenn du im CoderDojo bist, löchere deine Mentoren mit Fragen. In Linz haben wir bei paar echte C# Profis dabei, die in diesem Bereich weit über die Grenzen von Österreich hinaus bekannt sind.</p></li>
+<li>
+<p>Wenn du Lust hast kannst du einen kostenlosen <a href="https://mva.microsoft.com/de-de/training-courses/programmieren-f-r-beginner-mit-c--10140?l=JqnuG5A6_9704984382" target="_blank">Online-Videokurs über C#</a> machen. Dabei lernst du die Programmiersprache von Grund auf Schritt für Schritt kennen.</p>
+</li>
+<li>
+<p>Wenn du im CoderDojo bist, löchere deine Mentoren mit Fragen. In Linz haben wir bei paar echte C# Profis dabei, die in diesem Bereich weit über die Grenzen von Österreich hinaus bekannt sind.</p>
+</li>
 </ol>
  </div>
         </div>

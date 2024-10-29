@@ -4,51 +4,36 @@
     <title>TypeScript on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/categories/typescript/</link>
     <description>Recent content in TypeScript on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feuerwerk-Simulator</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/feuerwerk-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/feuerwerk-basics/</guid>
-      <description>Feuerwerksimulator (für AnfängerInnen) Ziel der Übung Heute wollen wir gemeinsam einen Feuerwerk-Simulator programmieren. Dabei kannst du das Tippen von Code auf der Tastatur üben und lernst Grundlagen der Programmierung wie Variablen, Schleifen und Funktionen kennen.
-Du solltest für diese Übung schon ein wenig Programmiererfahrung mit einer Blockprogrammiersprache wie Scratch oder Snap! haben. Falls du noch nie Programmcode eingetippt hast, solltest du auch etwas Geduld mitbringen. Es ist am Anfang nicht immer leicht, die vielen Sonderzeichen im Code auf der Tastatur zu finden.</description>
+      <description>&lt;h1 id=&#34;feuerwerksimulator-für-anfängerinnen&#34;&gt;Feuerwerksimulator (für AnfängerInnen)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Heute wollen wir gemeinsam einen Feuerwerk-Simulator programmieren. Dabei kannst du das Tippen von Code auf der Tastatur üben und lernst Grundlagen der Programmierung wie Variablen, Schleifen und Funktionen kennen.&lt;/p&gt;&#xA;&lt;p&gt;Du solltest für diese Übung schon ein wenig Programmiererfahrung mit einer Blockprogrammiersprache wie &lt;a href=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/&#34;&gt;&lt;em&gt;Scratch&lt;/em&gt;&lt;/a&gt; oder &lt;a href=&#34;https://snap.berkeley.edu/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Snap!&lt;/em&gt;&lt;/a&gt; haben. Falls du noch nie Programmcode eingetippt hast, solltest du auch etwas Geduld mitbringen. Es ist am Anfang nicht immer leicht, die vielen Sonderzeichen im Code auf der Tastatur zu finden. Halte durch, Übung macht den Meister!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Halloween - Catch the Treat</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/catch-the-treat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/catch-the-treat/</guid>
-      <description>Halloween - Catch the Treats Videoanleitung  Einleitung Willkommen bei unserem Halloween-Spiel 🎃. Wir programmieren gemeinsam ein Spiel, bei dem freundliche Monster 👻 gruselige &amp;ldquo;Süßigkeiten&amp;rdquo; herumwerfen, die du erwischen musst. Wenn du sie nicht erwischst, verlierst du ein Leben. Wenn du alle Leben verloren hast, ist das Spiel vorbei. Wer schafft am meisten Punkte?
-Interessante Info am Rande, die für diejenigen interessant sein könnte, die schon etwas mehr Erfahrung haben: Wir programmieren in dieser Übung mit der Programmiersprache TypeScript.</description>
+      <description>&lt;h1 id=&#34;halloween---catch-the-treats&#34;&gt;Halloween - Catch the Treats&lt;/h1&gt;&#xA;&lt;h2 id=&#34;videoanleitung&#34;&gt;Videoanleitung&lt;/h2&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;p&gt;Willkommen bei unserem Halloween-Spiel 🎃. Wir programmieren gemeinsam ein Spiel, bei dem freundliche Monster 👻 gruselige &amp;ldquo;Süßigkeiten&amp;rdquo; herumwerfen, die du erwischen musst. Wenn du sie nicht erwischst, verlierst du ein Leben. Wenn du alle Leben verloren hast, ist das Spiel vorbei. Wer schafft am meisten Punkte?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Interessante Info&lt;/strong&gt; am Rande, die für diejenigen interessant sein könnte, die schon etwas mehr Erfahrung haben: Wir programmieren in dieser Übung mit der Programmiersprache &lt;em&gt;TypeScript&lt;/em&gt;. Unsere Entwicklungsumgebung ist &lt;em&gt;Stackblitz&lt;/em&gt;. Als Grafikbibliothek verwenden wir &lt;em&gt;p5js&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mandala</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/mandala/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/mandala/</guid>
-      <description>Mandala mit Code malen Was ist ein Mandala? Stell dir vor, du zeichnest einen Kreis und füllst ihn mit vielen schönen Mustern, Formen und Farben. Es ist wie ein kompliziertes Malbuch, aber alles ist in einem Kreis angeordnet. Dieses Muster kann dir helfen, dich zu entspannen oder über das Leben und die Welt nachzudenken. In manchen Kulturen glauben die Menschen sogar, dass Mandalas ihnen helfen können, sich besser auf ihre Gedanken zu konzentrieren oder sich mit dem Universum zu verbinden.</description>
+      <description>&lt;h1 id=&#34;mandala-mit-code-malen&#34;&gt;Mandala mit Code malen&lt;/h1&gt;&#xA;&lt;h2 id=&#34;was-ist-ein-mandala&#34;&gt;Was ist ein Mandala?&lt;/h2&gt;&#xA;&lt;p&gt;Stell dir vor, du zeichnest einen Kreis und füllst ihn mit vielen schönen Mustern, Formen und Farben. Es ist wie ein kompliziertes Malbuch, aber alles ist in einem Kreis angeordnet. Dieses Muster kann dir helfen, dich zu entspannen oder über das Leben und die Welt nachzudenken. In manchen Kulturen glauben die Menschen sogar, dass Mandalas ihnen helfen können, sich besser auf ihre Gedanken zu konzentrieren oder sich mit dem Universum zu verbinden.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Space Shooter mit Phaser.io</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter/</guid>
-      <description>Space Shooter mit Phaser.io Ziel der Übung In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den Space Shooter erstellt. Falls nicht, wirf bitte vor diesem Beispiel einen Blick auf die Space Shooter Scratch Übung und probiere die Scratch-Implementierung aus. Unser Ziel ist es, diesen Space Shooter mit Web-Technologien für den Browser zu entwickeln.
-
-   Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist! Falls HTML, JavaScript, Node.</description>
+      <description>&lt;h1 id=&#34;space-shooter-mit-phaserio&#34;&gt;Space Shooter mit Phaser.io&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den &lt;a href=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/space-shooter/&#34;&gt;Space Shooter&lt;/a&gt; erstellt. Falls nicht, wirf bitte vor diesem Beispiel einen Blick auf die Space Shooter Scratch Übung und &lt;a href=&#34;https://scratch.mit.edu/projects/70593136/&#34; target=&#34;_blank&#34;&gt;probiere die Scratch-Implementierung aus&lt;/a&gt;. Unser Ziel ist es, diesen Space Shooter mit Web-Technologien für den Browser zu entwickeln.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter/img/phaser-space-shooter.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!&lt;/strong&gt; Falls HTML, JavaScript, Node.js und &lt;a href=&#34;https://code.visualstudio.com/&#34; title=&#34;Homepage von Visual Studio Code&#34; target=&#34;_blank&#34;&gt;Visual Studio Code&lt;/a&gt; für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsanleitungen zu empfehlen:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

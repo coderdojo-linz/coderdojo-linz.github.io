@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> ANTLR Hello World </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,373 +150,381 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#antlr-hello-world">ANTLR Hello World</a>
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#erste-grammatik-anlegen">Erste Grammatik anlegen</a></li>
-<li><a href="#chat-grammatik">Chat Grammatik</a></li>
-<li><a href="#compiler">Compiler</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#erste-grammatik-anlegen">Erste Grammatik anlegen</a></li>
+    <li><a href="#chat-grammatik">Chat Grammatik</a></li>
+    <li><a href="#compiler">Compiler</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="antlr-hello-world">ANTLR Hello World</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="antlr-hello-world">ANTLR Hello World</h1>
 <h2 id="installation">Installation</h2>
-
 <ul>
-<li><p>Installieren von [IntelliJ Community Edition]<br/>(<a href="https://www.jetbrains.com/idea/download/#section=windows" target="_blank">https://www.jetbrains.com/idea/download/#section=windows</a>) (kostenlos)</p></li>
+<li>
+<p>Installieren von [IntelliJ Community Edition]<!-- raw HTML omitted -->(<a href="https://www.jetbrains.com/idea/download/#section=windows" target="_blank">https://www.jetbrains.com/idea/download/#section=windows</a>) (kostenlos)</p>
+</li>
+<li>
+<p>IntelliJ starten</p>
+</li>
+<li>
+<p>Ein neues Projekt mit <em>New Project</em> - <em>Empty Project</em> starten. In dieser Anleitung gehen wir davon aus, dass das Projekt <em>antlr-hello-world</em> heißt.</p>
+</li>
+<li>
+<p><em>Settings</em>-Dialog mit <em>Strg+Alt+S</em> öffnen, nach dem <em>antlr</em> Plugin suchen und installieren<!-- raw HTML omitted -->
 
-<li><p>IntelliJ starten</p></li>
-
-<li><p>Ein neues Projekt mit <em>New Project</em> - <em>Empty Project</em> starten. In dieser Anleitung gehen wir davon aus, dass das Projekt <em>antlr-hello-world</em> heißt.</p></li>
-
-<li><p><em>Settings</em>-Dialog mit <em>Strg+Alt+S</em> öffnen, nach dem <em>antlr</em> Plugin suchen und installieren<br/>
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/install-antlr.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
-
-<li><p>IntelliJ neu starten und das zuvor angelegte Projekt wieder laden</p></li>
+  
+  
+       
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+      <div class="col">
+          <p></p>
+      </div>
+      <div class="col-12 col-md-12">
+      <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/install-antlr.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+      </div>
+  </div>
+</p>
+</li>
+<li>
+<p>IntelliJ neu starten und das zuvor angelegte Projekt wieder laden</p>
+</li>
 </ul>
-
 <h2 id="erste-grammatik-anlegen">Erste Grammatik anlegen</h2>
-
 <ul>
-<li><p>Neue Datei <em>Hello.g4</em> anlegen<br/>
+<li>
+<p>Neue Datei <em>Hello.g4</em> anlegen<!-- raw HTML omitted -->
 
+  
+  
+       
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+      <div class="col">
+          <p></p>
+      </div>
+      <div class="col-12 col-md-12">
+      <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/new-file.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+      </div>
+  </div>
+</p>
+</li>
+<li>
+<p>Folgende Grammatik in die neue Datei einfügen:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>grammar Hello;
+</span></span><span style="display:flex;"><span>greet     : <span style="color:#a31515">&#39;hello&#39;</span> ID ;         // Schlüsselwort hello gefolgt von einem Identifier
+</span></span><span style="display:flex;"><span>ID        : [a-z]+ ;             // Identifier in Kleinbuchstaben
+</span></span><span style="display:flex;"><span>WS        : [ <span style="color:#a31515">\t\r\n</span>]+ -&gt; skip ; // Leerzeichen, Tab, Leerzeilen ignorieren
+</span></span></code></pre></div><ul>
+<li>
+<p>Rechte Maustaste auf die Regel <code>greet</code> und <em>Test Rule greet</em> anklicken<!-- raw HTML omitted -->
 
+  
+  
+       
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+      <div class="col">
+          <p></p>
+      </div>
+      <div class="col-12 col-md-12">
+      <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/test-rule.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+      </div>
+  </div>
+</p>
+</li>
+<li>
+<p><em>hello world</em> eingeben und ansehen, wie ANTLR den Text nach der angegebenen Grammatik zerlegt<!-- raw HTML omitted -->
 
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/new-file.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
-
-<li><p>Folgende Grammatik in die neue Datei einfügen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">grammar Hello;
-greet     : <span style="color:#a31515">&#39;hello&#39;</span> ID ;         // Schlüsselwort hello gefolgt von einem Identifier
-ID        : [a-z]+ ;             // Identifier in Kleinbuchstaben
-WS        : [ <span style="color:#a31515">\t\r\n</span>]+ -&gt; skip ; // Leerzeichen, Tab, Leerzeilen ignorieren</code></pre></div></li>
-
-<li><p>Rechte Maustaste auf die Regel <code>greet</code> und <em>Test Rule greet</em> anklicken<br/>
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/test-rule.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
-
-<li><p><em>hello world</em> eingeben und ansehen, wie ANTLR den Text nach der angegebenen Grammatik zerlegt<br/>
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/test-rule-2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
-
-<li><p>Experimentiere mit folgenden Eingaben (beachte die Fehler, die angezeigt werden)</p>
-
+  
+  
+       
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+      <div class="col">
+          <p></p>
+      </div>
+      <div class="col-12 col-md-12">
+      <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/test-rule-2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+      </div>
+  </div>
+</p>
+</li>
+<li>
+<p>Experimentiere mit folgenden Eingaben (beachte die Fehler, die angezeigt werden)</p>
 <ul>
 <li><em>hello</em></li>
 <li><em>helo world</em></li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="chat-grammatik">Chat Grammatik</h2>
-
 <ul>
-<li><p>Neue Datei <em>Chat.g4</em> anlegen</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">grammar chat;
-
-/*
-* Lexer Rules
-*/
-
-fragment A          : (<span style="color:#a31515">&#39;A&#39;</span>|<span style="color:#a31515">&#39;a&#39;</span>) ;
-fragment S          : (<span style="color:#a31515">&#39;S&#39;</span>|<span style="color:#a31515">&#39;s&#39;</span>) ;
-fragment Y          : (<span style="color:#a31515">&#39;Y&#39;</span>|<span style="color:#a31515">&#39;y&#39;</span>) ;
-fragment H          : (<span style="color:#a31515">&#39;H&#39;</span>|<span style="color:#a31515">&#39;h&#39;</span>) ;
-fragment O          : (<span style="color:#a31515">&#39;O&#39;</span>|<span style="color:#a31515">&#39;o&#39;</span>) ;
-fragment U          : (<span style="color:#a31515">&#39;U&#39;</span>|<span style="color:#a31515">&#39;u&#39;</span>) ;
-fragment T          : (<span style="color:#a31515">&#39;T&#39;</span>|<span style="color:#a31515">&#39;t&#39;</span>) ;
-
-fragment LOWERCASE  : [a-z] ;
-fragment UPPERCASE  : [A-Z] ;
-
-SAYS                : S A Y S ;
-
-SHOUTS              : S H O U T S;
-
-WORD                : (LOWERCASE | UPPERCASE | <span style="color:#a31515">&#39;_&#39;</span>)+ ;
-
-WHITESPACE          : (<span style="color:#a31515">&#39; &#39;</span> | <span style="color:#a31515">&#39;\t&#39;</span>);
-
-NEWLINE             : (<span style="color:#a31515">&#39;\r&#39;</span>? <span style="color:#a31515">&#39;\n&#39;</span> | <span style="color:#a31515">&#39;\r&#39;</span>)+ ;
-
-/*
-* Parser Rules
-*/
-
-chat                : line+ EOF ;
-
-line                : name command message NEWLINE;
-
-message             : (emoticon | mention | WORD | WHITESPACE)+ ;
-
-name                : WORD WHITESPACE;
-
-command             : (SAYS | SHOUTS) <span style="color:#a31515">&#39;:&#39;</span> WHITESPACE ;
-
-emoticon            : <span style="color:#a31515">&#39;:&#39;</span> <span style="color:#a31515">&#39;-&#39;</span>? <span style="color:#a31515">&#39;)&#39;</span>
-                | <span style="color:#a31515">&#39;:&#39;</span> <span style="color:#a31515">&#39;-&#39;</span>? <span style="color:#a31515">&#39;(&#39;</span>
-                ;
-
-mention             : <span style="color:#a31515">&#39;@&#39;</span> WORD ;</code></pre></div></li>
-
-<li><p>Testsätze:</p>
-
+<li>Neue Datei <em>Chat.g4</em> anlegen</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>grammar chat;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>/*
+</span></span><span style="display:flex;"><span> * Lexer Rules
+</span></span><span style="display:flex;"><span> */
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fragment A          : (<span style="color:#a31515">&#39;A&#39;</span>|<span style="color:#a31515">&#39;a&#39;</span>) ;
+</span></span><span style="display:flex;"><span>fragment S          : (<span style="color:#a31515">&#39;S&#39;</span>|<span style="color:#a31515">&#39;s&#39;</span>) ;
+</span></span><span style="display:flex;"><span>fragment Y          : (<span style="color:#a31515">&#39;Y&#39;</span>|<span style="color:#a31515">&#39;y&#39;</span>) ;
+</span></span><span style="display:flex;"><span>fragment H          : (<span style="color:#a31515">&#39;H&#39;</span>|<span style="color:#a31515">&#39;h&#39;</span>) ;
+</span></span><span style="display:flex;"><span>fragment O          : (<span style="color:#a31515">&#39;O&#39;</span>|<span style="color:#a31515">&#39;o&#39;</span>) ;
+</span></span><span style="display:flex;"><span>fragment U          : (<span style="color:#a31515">&#39;U&#39;</span>|<span style="color:#a31515">&#39;u&#39;</span>) ;
+</span></span><span style="display:flex;"><span>fragment T          : (<span style="color:#a31515">&#39;T&#39;</span>|<span style="color:#a31515">&#39;t&#39;</span>) ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fragment LOWERCASE  : [a-z] ;
+</span></span><span style="display:flex;"><span>fragment UPPERCASE  : [A-Z] ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>SAYS                : S A Y S ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>SHOUTS              : S H O U T S;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>WORD                : (LOWERCASE | UPPERCASE | <span style="color:#a31515">&#39;_&#39;</span>)+ ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>WHITESPACE          : (<span style="color:#a31515">&#39; &#39;</span> | <span style="color:#a31515">&#39;\t&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NEWLINE             : (<span style="color:#a31515">&#39;\r&#39;</span>? <span style="color:#a31515">&#39;\n&#39;</span> | <span style="color:#a31515">&#39;\r&#39;</span>)+ ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>/*
+</span></span><span style="display:flex;"><span> * Parser Rules
+</span></span><span style="display:flex;"><span> */
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>chat                : line+ EOF ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>line                : name command message NEWLINE;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>message             : (emoticon | mention | WORD | WHITESPACE)+ ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>name                : WORD WHITESPACE;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>command             : (SAYS | SHOUTS) <span style="color:#a31515">&#39;:&#39;</span> WHITESPACE ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>emoticon            : <span style="color:#a31515">&#39;:&#39;</span> <span style="color:#a31515">&#39;-&#39;</span>? <span style="color:#a31515">&#39;)&#39;</span>
+</span></span><span style="display:flex;"><span>                    | <span style="color:#a31515">&#39;:&#39;</span> <span style="color:#a31515">&#39;-&#39;</span>? <span style="color:#a31515">&#39;(&#39;</span>
+</span></span><span style="display:flex;"><span>                    ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mention             : <span style="color:#a31515">&#39;@&#39;</span> WORD ;
+</span></span></code></pre></div><ul>
+<li>
+<p>Testsätze:</p>
 <ul>
 <li><em>tim SAYS: hello world</em></li>
 <li><em>john SHOUTS: hello @michael :-)</em></li>
-</ul></li>
-
-<li><p>Antlr Generator konfigurieren<br/>
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/configure-antlr.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-<br/>
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/configure-antlr-2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
-
-<li><p>Lexer/Parser generieren<br/>
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/lexer-parser-generate.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-<br/>
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/lexer-parser-generate-2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
 </ul>
+</li>
+<li>
+<p>Antlr Generator konfigurieren<!-- raw HTML omitted -->
 
+  
+  
+       
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+      <div class="col">
+          <p></p>
+      </div>
+      <div class="col-12 col-md-12">
+      <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/configure-antlr.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+      </div>
+  </div>
+<!-- raw HTML omitted -->
+
+  
+  
+       
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+      <div class="col">
+          <p></p>
+      </div>
+      <div class="col-12 col-md-12">
+      <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/configure-antlr-2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+      </div>
+  </div>
+</p>
+</li>
+<li>
+<p>Lexer/Parser generieren<!-- raw HTML omitted -->
+
+  
+  
+       
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+      <div class="col">
+          <p></p>
+      </div>
+      <div class="col-12 col-md-12">
+      <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/lexer-parser-generate.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+      </div>
+  </div>
+<!-- raw HTML omitted -->
+
+  
+  
+       
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+      <div class="col">
+          <p></p>
+      </div>
+      <div class="col-12 col-md-12">
+      <img src="/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/lexer-parser-generate-2.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+      </div>
+  </div>
+</p>
+</li>
+</ul>
 <h2 id="compiler">Compiler</h2>
-
 <ul>
-<li><p><code>npm init</code></p></li>
-
-<li><p><code>npm install antlr4</code></p></li>
-
-<li><p><em>app.js</em>:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">const</span> antlr4 = require(<span style="color:#a31515">&#39;antlr4&#39;</span>);
-<span style="color:#00f">const</span> ChatLexer = require(<span style="color:#a31515">&#39;./compiler/chatLexer&#39;</span>).chatLexer;
-<span style="color:#00f">const</span> ChatParser = require(<span style="color:#a31515">&#39;./compiler/chatParser&#39;</span>).chatParser;
-
-<span style="color:#00f">const</span> input = <span style="color:#a31515">&#39;tim SAYS: hello @world :-)\n&#39;</span>;
-
-<span style="color:#00f">const</span> chars = <span style="color:#00f">new</span> antlr4.InputStream(input);
-<span style="color:#00f">const</span> lexer = <span style="color:#00f">new</span> ChatLexer(chars);
-<span style="color:#00f">const</span> tokens = <span style="color:#00f">new</span> antlr4.CommonTokenStream(lexer);
-<span style="color:#00f">const</span> parser = <span style="color:#00f">new</span> ChatParser(tokens);
-parser.buildParseTrees = <span style="color:#00f">true</span>;
-
-<span style="color:#00f">const</span> tree = parser.chat();
-
-<span style="color:#00f">for</span>(<span style="color:#00f">const</span> line <span style="color:#00f">of</span> tree.children) {
-<span style="color:#00f">if</span> (line.constructor.name !== ChatParser.LineContext.name) {
-    <span style="color:#008000">// Reached end of program
-</span><span style="color:#008000"></span>    <span style="color:#00f">break</span>;
-}
-
-<span style="color:#00f">const</span> name = line.children[0];
-console.log(<span style="color:#a31515">`Name: </span><span style="color:#a31515">${</span>name.children[0].getText()<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
-
-<span style="color:#00f">const</span> command = line.children[1];
-console.log(<span style="color:#a31515">`Command: </span><span style="color:#a31515">${</span>lexer.symbolicNames[command.children[0].getSymbol().type]<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
-
-<span style="color:#00f">const</span> message = line.children[2];
-<span style="color:#00f">for</span>(<span style="color:#00f">var</span> msg <span style="color:#00f">of</span> message.children) {
-    <span style="color:#00f">switch</span> (msg.constructor.name) {
-        <span style="color:#00f">case</span> <span style="color:#a31515">&#39;TerminalNodeImpl&#39;</span>:
-            <span style="color:#00f">if</span> (msg.getSymbol().type === ChatLexer.WORD) {
-                console.log(<span style="color:#a31515">`Word: </span><span style="color:#a31515">${</span>msg.getText()<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
-            }
-
-            <span style="color:#00f">break</span>;
-        <span style="color:#00f">case</span> ChatParser.MentionContext.name:
-            console.log(<span style="color:#a31515">`Mention: </span><span style="color:#a31515">${</span>msg.children[1].getText()<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
-            <span style="color:#00f">break</span>;
-        <span style="color:#00f">case</span> ChatParser.EmoticonContext.name:
-            <span style="color:#00f">if</span> (msg.children[msg.children.length - 1].getText() === <span style="color:#a31515">`)`</span>) {
-                console.log(<span style="color:#a31515">&#39;Happy&#39;</span>);
-            } <span style="color:#00f">else</span> {
-                console.log(<span style="color:#a31515">&#39;Sad&#39;</span>);
-            }
-
-            <span style="color:#00f">break</span>;
-    }
-}
-}
-</code></pre></div></li>
-
-<li><p><code>node app.js</code></p></li>
+<li>
+<p><code>npm init</code></p>
+</li>
+<li>
+<p><code>npm install antlr4</code></p>
+</li>
+<li>
+<p><em>app.js</em>:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">const</span> antlr4 = require(<span style="color:#a31515">&#39;antlr4&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> ChatLexer = require(<span style="color:#a31515">&#39;./compiler/chatLexer&#39;</span>).chatLexer;
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> ChatParser = require(<span style="color:#a31515">&#39;./compiler/chatParser&#39;</span>).chatParser;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> input = <span style="color:#a31515">&#39;tim SAYS: hello @world :-)\n&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> chars = <span style="color:#00f">new</span> antlr4.InputStream(input);
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> lexer = <span style="color:#00f">new</span> ChatLexer(chars);
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> tokens = <span style="color:#00f">new</span> antlr4.CommonTokenStream(lexer);
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> parser = <span style="color:#00f">new</span> ChatParser(tokens);
+</span></span><span style="display:flex;"><span>parser.buildParseTrees = <span style="color:#00f">true</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> tree = parser.chat();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">for</span>(<span style="color:#00f">const</span> line <span style="color:#00f">of</span> tree.children) {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (line.constructor.name !== ChatParser.LineContext.name) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Reached end of program
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">const</span> name = line.children[0];
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#a31515">`Name: </span><span style="color:#a31515">${</span>name.children[0].getText()<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">const</span> command = line.children[1];
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#a31515">`Command: </span><span style="color:#a31515">${</span>lexer.symbolicNames[command.children[0].getSymbol().type]<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">const</span> message = line.children[2];
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span>(<span style="color:#00f">var</span> msg <span style="color:#00f">of</span> message.children) {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">switch</span> (msg.constructor.name) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">case</span> <span style="color:#a31515">&#39;TerminalNodeImpl&#39;</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">if</span> (msg.getSymbol().type === ChatLexer.WORD) {
+</span></span><span style="display:flex;"><span>                    console.log(<span style="color:#a31515">`Word: </span><span style="color:#a31515">${</span>msg.getText()<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">case</span> ChatParser.MentionContext.name:
+</span></span><span style="display:flex;"><span>                console.log(<span style="color:#a31515">`Mention: </span><span style="color:#a31515">${</span>msg.children[1].getText()<span style="color:#a31515">}</span><span style="color:#a31515">`</span>);
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">case</span> ChatParser.EmoticonContext.name:
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">if</span> (msg.children[msg.children.length - 1].getText() === <span style="color:#a31515">`)`</span>) {
+</span></span><span style="display:flex;"><span>                    console.log(<span style="color:#a31515">&#39;Happy&#39;</span>);
+</span></span><span style="display:flex;"><span>                } <span style="color:#00f">else</span> {
+</span></span><span style="display:flex;"><span>                    console.log(<span style="color:#a31515">&#39;Sad&#39;</span>);
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li><code>node app.js</code></li>
 </ul>
  </div>
         </div>

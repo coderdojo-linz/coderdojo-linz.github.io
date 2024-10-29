@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Node.js Webserver </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,40 +150,34 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#ein-webserver-mit-node-js">Ein Webserver mit Node.js</a>
-<ul>
-<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
-<li><a href="#visual-studio-code-editor-installieren">Visual Studio Code Editor installieren</a></li>
-<li><a href="#node-js-installieren">Node.js installieren</a></li>
-<li><a href="#den-server-vorbereiten">Den Server vorbereiten</a></li>
-<li><a href="#den-servercode-programmieren">Den Servercode programmieren</a></li>
-<li><a href="#den-clientcode-erstellen">Den Clientcode erstellen</a></li>
-<li><a href="#ausprobieren">Ausprobieren</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+    <li><a href="#visual-studio-code-editor-installieren">Visual Studio Code Editor installieren</a></li>
+    <li><a href="#nodejs-installieren">Node.js installieren</a></li>
+    <li><a href="#den-server-vorbereiten">Den Server vorbereiten</a></li>
+    <li><a href="#den-servercode-programmieren">Den Servercode programmieren</a></li>
+    <li><a href="#den-clientcode-erstellen">Den Clientcode erstellen</a></li>
+    <li><a href="#ausprobieren">Ausprobieren</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="ein-webserver-mit-node-js">Ein Webserver mit Node.js</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="ein-webserver-mit-nodejs">Ein Webserver mit Node.js</h1>
 <h2 id="ziel-der-übung">Ziel der Übung</h2>
-
 <p>In dieser Übung lernst du, wie du eine Anwendung für das Web mit <a href="https://de.wikipedia.org/wiki/Client-Server-Modell" title="Client-Server-Modell auf Wikipedia nachlesen" target="_blank">Server- und Clientteil</a> baust. Du solltest mit HTML und JavaScript schon etwas vertraut sein. Falls das ganz neu für dich ist, frage erst einen Mentor um Übungsanleitungen, bei denen du die Grundlagen von HTML und JavaScript lernst.</p>
-
 <h2 id="visual-studio-code-editor-installieren">Visual Studio Code Editor installieren</h2>
-
 <p>Ganz einfache HTML und JavaScript Programme kann man in einfachen Editoren wie <em>Notepad</em> erstellen. Wenn es aber etwas umfangreicher wird, braucht man etwas besseres. Es gibt viele verschiedene Editoren für Programmieren mit JavaScript. Manche davon sind kostenlos und manche kostenpflichtig. In dieser Übung verwenden wir <a href="https://code.visualstudio.com/" title="Homepage von Visual Studio Code" target="_blank">Visual Studio Code</a>. Das Programm ist kostenlos und funktioniert auf Windows, Linux und MacOS.</p>
-
 <ol>
-<li><p>Falls du <em>Visual Studio Code</em> bei dir noch nicht installiert hast, lade es von <a href="https://code.visualstudio.com/" title="Homepage von Visual Studio Code" target="_blank">hier</a> herunter und führe die Installation durch.</p></li>
-
-<li><p>Erstelle einen neuen Ordner auf deiner lokalen Festplatte. Dort werden wir unseren Programmcode speichern. In dieser Anleitung gehen wir davon aus, dass der Ordner <em>C:\Code\Chat</em> heißt. Du kannst ihn aber auch anders nennen.</p></li>
-
-<li><p>Starte Visual Studio Code.</p></li>
-
-<li><p>Öffne den Ordner <em>C:\Code\Chat</em> in Visual Studio Code.<br/>
+<li>
+<p>Falls du <em>Visual Studio Code</em> bei dir noch nicht installiert hast, lade es von <a href="https://code.visualstudio.com/" title="Homepage von Visual Studio Code" target="_blank">hier</a> herunter und führe die Installation durch.</p>
+</li>
+<li>
+<p>Erstelle einen neuen Ordner auf deiner lokalen Festplatte. Dort werden wir unseren Programmcode speichern. In dieser Anleitung gehen wir davon aus, dass der Ordner <em>C:\Code\Chat</em> heißt. Du kannst ihn aber auch anders nennen.</p>
+</li>
+<li>
+<p>Starte Visual Studio Code.</p>
+</li>
+<li>
+<p>Öffne den Ordner <em>C:\Code\Chat</em> in Visual Studio Code.<!-- raw HTML omitted -->
 
 
 
@@ -207,24 +201,25 @@
     <img src="/uebungsanleitungen/programmieren/web/nodejs-webserver/img/vscode-ordner-oeffnen.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
     </div>
 </div>
-</p></li>
+</p>
+</li>
 </ol>
-
 <p>Jetzt sind wir bereit, unseren Code zu schreiben. Bevor wir das tun, müssen wir aber noch weitere Vorbereitungsarbeiten durchführen.</p>
-
-<h2 id="node-js-installieren">Node.js installieren</h2>
-
+<h2 id="nodejs-installieren">Node.js installieren</h2>
 <p>Unser Programm braucht einen Server und einen Client. Auf beiden Seiten wollen wir JavaScript programmieren. Am Client führt der Browser JavaScript aus. Am Server gibt es dafür <a href="https://nodejs.org/" title="Node.js Homepage" target="_blank">Node.js</a>. Um während der Entwicklung den Server lokal auf unserem Computer ausführen zu können, müssen wir Node.js installieren.</p>
-
 <ol>
-<li><p>Node.js installieren:<br/>
-Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://nodejs.org/" title="Node.js Homepage" target="_blank">Homepage von Node.js</a> klicken. Unter Linux verwendest du einen <a href="https://de.wikipedia.org/wiki/Paketverwaltung" title="Mehr über Paketverwaltung auf Wikipedia nachlesen" target="_blank">Package Manager</a> zur Installation. Anleitungen für verschiedene Arten von Linux findest du <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager" target="_blank">hier</a>.</p></li>
-
-<li><p>Öffne eine Kommandozeile (<a href="http://praxistipps.chip.de/windows-konsole-oeffnen-so-gehts_1320" target="_blank">Anleitung für Windows</a>) bzw. eine Konsolenfenster (<a href="http://www.pcwelt.de/ratgeber/Die_10_wichtigsten_Linux-Befehle_fuer_Einsteiger-Kommandozeile_alias_Terminal-8858519.html" target="_blank">Anleitung für Linux</a>).</p></li>
-
-<li><p>Wechsle in das von dir angelegte Verzeichnis mit dem <em>cd</em> Befehl (<em>Change Directory</em>): <code>cd /Code/Chat</code>.</p></li>
-
-<li><p>Prüfe, ob Node.js funktioniert. Dazu verwendest du die beiden Befehle <code>node -v</code> und <code>npm -v</code>. Falls ein Fehler auftritt, bitte einen Mentor dir zu helfen.<br/>
+<li>
+<p>Node.js installieren:<!-- raw HTML omitted -->
+Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://nodejs.org/" title="Node.js Homepage" target="_blank">Homepage von Node.js</a> klicken. Unter Linux verwendest du einen <a href="https://de.wikipedia.org/wiki/Paketverwaltung" title="Mehr über Paketverwaltung auf Wikipedia nachlesen" target="_blank">Package Manager</a> zur Installation. Anleitungen für verschiedene Arten von Linux findest du <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager" target="_blank">hier</a>.</p>
+</li>
+<li>
+<p>Öffne eine Kommandozeile (<a href="http://praxistipps.chip.de/windows-konsole-oeffnen-so-gehts_1320" target="_blank">Anleitung für Windows</a>) bzw. eine Konsolenfenster (<a href="http://www.pcwelt.de/ratgeber/Die_10_wichtigsten_Linux-Befehle_fuer_Einsteiger-Kommandozeile_alias_Terminal-8858519.html" target="_blank">Anleitung für Linux</a>).</p>
+</li>
+<li>
+<p>Wechsle in das von dir angelegte Verzeichnis mit dem <em>cd</em> Befehl (<em>Change Directory</em>): <code>cd /Code/Chat</code>.</p>
+</li>
+<li>
+<p>Prüfe, ob Node.js funktioniert. Dazu verwendest du die beiden Befehle <code>node -v</code> und <code>npm -v</code>. Falls ein Fehler auftritt, bitte einen Mentor dir zu helfen.<!-- raw HTML omitted -->
 
 
 
@@ -248,27 +243,20 @@ Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://no
     <img src="/uebungsanleitungen/programmieren/web/nodejs-webserver/img/nodejs-pruefen.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
     </div>
 </div>
-</p></li>
+</p>
+</li>
 </ol>
-
 <p>Jetzt sind wir bereit, loszulegen.</p>
-
 <h2 id="den-server-vorbereiten">Den Server vorbereiten</h2>
-
 <p>Der Server muss die HTML-Dateien an die verbundenen Browser schicken. Für Node.js gibt es für solche Basisfunktionen sogenannte <a href="https://nodejs.org/api/modules.html" title="Mehr über Node.js Module erfahren" target="_blank">Module</a>. Für dieses Beispiel musst du nicht im Detail wissen, was Node.js Module sind und wie sie intern funktionieren. Das wird ein Thema für später. Wir werden hier einfach zwei fertige Module verwenden. Diese sind:</p>
-
 <ul>
 <li><a href="https://www.npmjs.com/package/express" target="_blank">express</a></li>
 <li><a href="https://nodejs.org/api/http.html" target="_blank">http</a></li>
 </ul>
-
 <p>Um eventuellen Fehlermeldungen vorzubeugen ist es ratsam im Verzeichnis <em>C:\Code\Chat</em> zuerst den Befehl <code>npm init</code> auszuführen. Die nachfolgenden Fragen einfach mit <code>&lt;Enter&gt;</code> bestätigen.</p>
-
 <p>Das <em>http</em> Modul ist in Node.js immer vorhanden. <em>express</em> müssen wir installieren. Das geschieht in der Kommandozeile mit dem Befehl <code>npm install express</code> (<em>Achtung:</em> Bevor du ihn ausführst, stelle sicher, dass du im Verzeichnis <em>C:\Code\Chat</em> bist).</p>
-
 <p><em>npm</em> steht für <em>Node.js Package Manager</em>, also ein Programm zum Verwalten von Node.js Paketen. Mehr über NPM kannst du <a href="https://docs.npmjs.com/" title="NPM Dokumentation" target="_blank">hier</a> erfahren. Du brauchst aber für dieses Beispiel kein Detailwissen über NPM. Das kannst du auch gerne später nachlesen.</p>
-
-<p>Wenn du den <em>npm</em> Befehl ausgeführt hast, müsste deine Verzeichnisstruktur so aussehen:<br/>
+<p>Wenn du den <em>npm</em> Befehl ausgeführt hast, müsste deine Verzeichnisstruktur so aussehen:<!-- raw HTML omitted -->
 
 
 
@@ -293,11 +281,10 @@ Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://no
     </div>
 </div>
 </p>
-
 <h2 id="den-servercode-programmieren">Den Servercode programmieren</h2>
-
 <ol>
-<li><p>Erstelle eine neue Datei in Visual Studio Code. Nenne sie <em>server.js</em>.<br/>
+<li>
+<p>Erstelle eine neue Datei in Visual Studio Code. Nenne sie <em>server.js</em>.<!-- raw HTML omitted -->
 
 
 
@@ -321,49 +308,49 @@ Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://no
     <img src="/uebungsanleitungen/programmieren/web/nodejs-webserver/img/vscode-neue-datei.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
     </div>
 </div>
-</p></li>
-
-<li><p>Direkt neben dem Symbol für <em>Neue Datei</em> findest du das Kommando für <em>Neues Verzeichnis</em>. Lege ein Verzeichnis namens <em>public</em> an. Es wird die öffentlich sichtbaren HTML-Dateien enthalten, daher der Name <em>public</em>.</p></li>
-
-<li><p>Einen Webserver zu programmieren ist mit Node.js nicht schwierig. Es reichen ein paar Zeilen Code. Hier sind sie. Schreibe sie in deine <em>server.js</em> Datei und achte besonders auf die enthaltenen Kommentarzeilen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#008000">// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
-</span><span style="color:#008000">// aus dem Ordner &#34;public&#34; zu veröffentlichen.
-</span><span style="color:#008000"></span><span style="color:#00f">var</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>);
-<span style="color:#00f">var</span> app = express();
-<span style="color:#00f">var</span> server = require(<span style="color:#a31515">&#39;http&#39;</span>).createServer(app);
-<span style="color:#00f">var</span> port = 3000;
-
-<span style="color:#008000">// Mit diesem Kommando starten wir den Webserver.
-</span><span style="color:#008000"></span>server.listen(port, <span style="color:#00f">function</span> () {
-<span style="color:#008000">// Wir geben einen Hinweis aus, dass der Webserer läuft.
-</span><span style="color:#008000"></span>console.log(<span style="color:#a31515">&#39;Webserver läuft und hört auf Port %d&#39;</span>, port);
-});
-
-<span style="color:#008000">// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
-</span><span style="color:#008000">// im Ordner &#34;public&#34; zu finden sind.
-</span><span style="color:#008000"></span>app.use(express.<span style="color:#00f">static</span>(__dirname + <span style="color:#a31515">&#39;/public&#39;</span>));
-
-<span style="color:#008000">// Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
-</span></code></pre></div></li>
+</p>
+</li>
+<li>
+<p>Direkt neben dem Symbol für <em>Neue Datei</em> findest du das Kommando für <em>Neues Verzeichnis</em>. Lege ein Verzeichnis namens <em>public</em> an. Es wird die öffentlich sichtbaren HTML-Dateien enthalten, daher der Name <em>public</em>.</p>
+</li>
+<li>
+<p>Einen Webserver zu programmieren ist mit Node.js nicht schwierig. Es reichen ein paar Zeilen Code. Hier sind sie. Schreibe sie in deine <em>server.js</em> Datei und achte besonders auf die enthaltenen Kommentarzeilen:</p>
+</li>
 </ol>
-
-<h2 id="den-clientcode-erstellen">Den Clientcode erstellen</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#008000">// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
+</span></span></span><span style="display:flex;"><span><span style="color:#008000">// aus dem Ordner &#34;public&#34; zu veröffentlichen.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> app = express();
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> server = require(<span style="color:#a31515">&#39;http&#39;</span>).createServer(app);
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> port = 3000;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Mit diesem Kommando starten wir den Webserver.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>server.listen(port, <span style="color:#00f">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">// Wir geben einen Hinweis aus, dass der Webserer läuft.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    console.log(<span style="color:#a31515">&#39;Webserver läuft und hört auf Port %d&#39;</span>, port);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
+</span></span></span><span style="display:flex;"><span><span style="color:#008000">// im Ordner &#34;public&#34; zu finden sind.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>app.use(express.<span style="color:#00f">static</span>(__dirname + <span style="color:#a31515">&#39;/public&#39;</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
+</span></span></span></code></pre></div><h2 id="den-clientcode-erstellen">Den Clientcode erstellen</h2>
 <p>Noch können wir nichts ausprobieren, da unser <em>public</em> Verzeichnis leer ist. Erstelle daher im <em>public</em> Verzeichnis eine Datei namens <em>chat.html</em> und füge zum Testen folgenden Inhalt ein. Wie du siehst enthält die Datei nur eine Begrüßung, sonst nichts.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!doctype html&gt;</span>
-&lt;html lang=<span style="color:#a31515">&#34;de&#34;</span>&gt;
-&lt;head&gt;
-    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
-    &lt;title&gt;CoderDojo Linz | Chat Beispiel&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Hallo Chat!&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></div>
-<h2 id="ausprobieren">Ausprobieren</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;html lang=<span style="color:#a31515">&#34;de&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;head&gt;
+</span></span><span style="display:flex;"><span>    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;title&gt;CoderDojo Linz | Chat Beispiel&lt;/title&gt;
+</span></span><span style="display:flex;"><span>&lt;/head&gt;
+</span></span><span style="display:flex;"><span>&lt;body&gt;
+</span></span><span style="display:flex;"><span>    &lt;h1&gt;Hallo Chat!&lt;/h1&gt;
+</span></span><span style="display:flex;"><span>&lt;/body&gt;
+</span></span><span style="display:flex;"><span>&lt;/html&gt;
+</span></span></code></pre></div><h2 id="ausprobieren">Ausprobieren</h2>
 <ol>
-<li><p>Geschafft, jetzt können wir unseren Webserver ausprobieren. Starte dazu das Kommando <code>node server.js</code> in der Kommandozeile. Es müsste die Meldung erscheinen <code>Webserver läuft und hört auf Port 3000</code>.<br/>
+<li>
+<p>Geschafft, jetzt können wir unseren Webserver ausprobieren. Starte dazu das Kommando <code>node server.js</code> in der Kommandozeile. Es müsste die Meldung erscheinen <code>Webserver läuft und hört auf Port 3000</code>.<!-- raw HTML omitted -->
 
 
 
@@ -387,9 +374,11 @@ Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://no
     <img src="/uebungsanleitungen/programmieren/web/nodejs-webserver/img/nodejs-starten.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
     </div>
 </div>
-</p></li>
-
-<li><p>Starte einen Webbrowser und öffne die URL <code>http://localhost:3000/chat.html</code>. Siehst du deine HTML Seite? Falls ein Fehler auftritt, bitte einen Mentor um Hilfe.</p></li>
+</p>
+</li>
+<li>
+<p>Starte einen Webbrowser und öffne die URL <code>http://localhost:3000/chat.html</code>. Siehst du deine HTML Seite? Falls ein Fehler auftritt, bitte einen Mentor um Hilfe.</p>
+</li>
 </ol>
  </div>
         </div>

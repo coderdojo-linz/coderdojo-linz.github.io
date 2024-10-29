@@ -4,149 +4,92 @@
     <title>JavaScript on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/categories/javascript/</link>
     <description>Recent content in JavaScript on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lokaler Minecraft-Server mit Scriptcraft</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/lokaler-minecraft-server-mit-scriptcraft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/lokaler-minecraft-server-mit-scriptcraft/</guid>
-      <description>Installation eines Minecraft Servers mit Scriptcraft Voraussetzungen In dieser Übung installieren wir einen Minecraft Server mit Scriptcraft auf deinem Windows-Computer.
-Systemvoraussetzungen Bevor du den Minecraft-Server installieren kannst, musst du folgende Software installieren:
- Java SE Development Kit (kurz JDK) Lade die Windows-Version von der Download-Seite herunter und installiere sie.
- Git Lade die Windows-Version von der Download-Seite herunter und installiere sie. Installiere alle verfügbaren Teile von Git, die im Installationsprogramm auswählbar sind.</description>
+      <description>&lt;h1 id=&#34;installation-eines-minecraft-servers-mit-scriptcraft&#34;&gt;Installation eines Minecraft Servers mit Scriptcraft&lt;/h1&gt;&#xA;&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung installieren wir einen Minecraft Server mit Scriptcraft auf deinem Windows-Computer.&lt;/p&gt;&#xA;&lt;h2 id=&#34;systemvoraussetzungen&#34;&gt;Systemvoraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;Bevor du den Minecraft-Server installieren kannst, musst du folgende Software installieren:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;em&gt;Java SE Development Kit&lt;/em&gt; (kurz &lt;em&gt;JDK&lt;/em&gt;)&lt;!-- raw HTML omitted --&gt;&#xA;Lade die Windows-Version von der &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34; target=&#34;_blank&#34;&gt;Download-Seite&lt;/a&gt; herunter und installiere sie.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;em&gt;Git&lt;/em&gt;&lt;!-- raw HTML omitted --&gt;&#xA;Lade die Windows-Version von der &lt;a href=&#34;https://git-scm.com/download/win&#34; target=&#34;_blank&#34;&gt;Download-Seite&lt;/a&gt; herunter und installiere sie. Installiere alle verfügbaren Teile von Git, die im Installationsprogramm auswählbar sind.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Grundlagen von Minecraft Mods mit JavaScript</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/scriptcraft-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/scriptcraft-basics/</guid>
-      <description>Grundlagen von Minecraft Mods mit JavaScript Systemvoraussetzungen Du brauchst für diese Übungen einen Minecraft Server mit Scriptcraft. Wenn du keine Erfahrung bzgl. Konfiguration von Computern, Java etc. hast, komm ins CoderDojo und bitte eine Mentorin, dir einen solchen Server zur Verfügung zu stellen. Ansonsten hast du folgende Möglichkeiten:
- Folge der Anleitung auf unserer Homepage Installiere Scriptcraft lokal auf deinem Computer (Installationsanleitung in Englisch)  Zum Programmieren von JavaScript brauchst du einen Texteditor.</description>
+      <description>&lt;h1 id=&#34;grundlagen-von-minecraft-mods-mit-javascript&#34;&gt;Grundlagen von Minecraft Mods mit JavaScript&lt;/h1&gt;&#xA;&lt;h2 id=&#34;systemvoraussetzungen&#34;&gt;Systemvoraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;Du brauchst für diese Übungen einen Minecraft Server mit Scriptcraft. &lt;strong&gt;Wenn du keine Erfahrung bzgl. Konfiguration von Computern, Java etc. hast, komm ins CoderDojo und bitte eine Mentorin, dir einen solchen Server zur Verfügung zu stellen.&lt;/strong&gt; Ansonsten hast du folgende Möglichkeiten:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Folge der &lt;a href=&#34;07_spigot_scriptcraft_docker.html&#34;&gt;Anleitung auf unserer Homepage&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Installiere Scriptcraft lokal auf deinem Computer (&lt;a href=&#34;https://github.com/walterhiggins/ScriptCraft/blob/master/README.md&#34; target=&#34;_blank&#34;&gt;Installationsanleitung in Englisch&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Zum Programmieren von JavaScript brauchst du einen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Hier einige Links zu kostenlosen Editoren, mit denen du JavaScript gut schreiben kannst. Falls du nicht sicher bist, welchen du nehmen sollst, nimm gleich den ersten. Im Lauf der Zeit kannst du mit verschiedenen experimentieren und dich für den entscheiden, der dir am besten gefällt.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Verschlüsseln mit JavaScript</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/</guid>
-      <description>Verschlüsseln mit JavaScript 
-   Ziel der Übung In dieser Übung lernst du ein einfaches Verschlüsselungsverfahren kennen.
-Technisch lernst du einige Dinge über JavaScript und Node.js:
- Wie programmiert man ein Kommandozeilenprogramm mit JavaScript? Was sind ASCII Codes? Wie arbeitet man in JavaScript mit Zeichenketten?  Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist! Falls JavaScript, Node.js und Visual Studio Code für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut.</description>
+      <description>&lt;h1 id=&#34;verschlüsseln-mit-javascript&#34;&gt;Verschlüsseln mit JavaScript&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/img/ergebnis-ausgabe.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung lernst du ein einfaches Verschlüsselungsverfahren kennen.&lt;/p&gt;&#xA;&lt;p&gt;Technisch lernst du einige Dinge über JavaScript und Node.js:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Wie programmiert man ein Kommandozeilenprogramm mit JavaScript?&lt;/li&gt;&#xA;&lt;li&gt;Was sind &lt;a href=&#34;https://de.wikipedia.org/wiki/ASCII&#34; target=&#34;_blank&#34;&gt;ASCII&lt;/a&gt; Codes?&lt;/li&gt;&#xA;&lt;li&gt;Wie arbeitet man in JavaScript mit Zeichenketten?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!&lt;/strong&gt; Falls JavaScript, Node.js und &lt;a href=&#34;https://code.visualstudio.com/&#34; title=&#34;Homepage von Visual Studio Code&#34; target=&#34;_blank&#34;&gt;Visual Studio Code&lt;/a&gt; für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsbeispiele zu empfehlen:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>JavaScript Zahlen raten</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/</guid>
-      <description>Zahlen raten Ziel der Übung In dieser Übung programmierst du ein einfaches &amp;ldquo;Zahlen raten&amp;rdquo; Spiel und siehst, wie man mit JavaScript Ein- und Ausgaben machen kann.
-Das Spiel soll folgendermaßen funktionieren: Der Computer denkt sich eine Zahl zwischen 0 und 100 aus und der Spieler muss versuchen, diese Zahl mit möglichst wenigen Versuchen zu erraten. Dazu kann er einen Tipp eingeben. Der Computer sagt dann Niedriger oder Höher, und der Spieler kann einen neuen Tipp eingeben, bis er die richtige Zahl erraten hat.</description>
+      <description>&lt;h1 id=&#34;zahlen-raten&#34;&gt;Zahlen raten&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du ein einfaches &amp;ldquo;Zahlen raten&amp;rdquo; Spiel und siehst, wie man mit JavaScript Ein- und Ausgaben machen kann.&lt;/p&gt;&#xA;&lt;p&gt;Das Spiel soll folgendermaßen funktionieren: Der Computer denkt sich eine Zahl zwischen 0 und 100 aus und der Spieler muss versuchen, diese Zahl mit möglichst wenigen Versuchen zu erraten. Dazu kann er einen Tipp eingeben. Der Computer sagt dann &lt;em&gt;Niedriger&lt;/em&gt; oder &lt;em&gt;Höher&lt;/em&gt;, und der Spieler kann einen neuen Tipp eingeben, bis er die richtige Zahl erraten hat.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hangman</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</guid>
-      <description>Hangman Ziel der Übung Der erste Spieler gibt ein Wort ein, das vom zweiten Spieler erraten werden muss.
-Zuerst sieht der zweite Spieler nur ein Sternchen für jeden Buchstaben. Jeder erratene Buchstabe wird aufgedeckt. Für jeden falsch geratenen Buchstaben wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor der Galgen fertig ist.
-
-   Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.</description>
+      <description>&lt;h1 id=&#34;hangman&#34;&gt;Hangman&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Der erste Spieler gibt ein Wort ein, das vom zweiten Spieler erraten werden muss.&lt;/p&gt;&#xA;&lt;p&gt;Zuerst sieht der zweite Spieler nur ein Sternchen für jeden Buchstaben. Jeder erratene Buchstabe wird aufgedeckt. Für jeden falsch geratenen Buchstaben&#xA;wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor der Galgen fertig ist.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/img/hangman.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;grundgerüst-der-html-seite&#34;&gt;Grundgerüst der HTML Seite&lt;/h2&gt;&#xA;&lt;p&gt;Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.html.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Labyrinth-Spiel mit Scratch und JavaScript</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</guid>
-      <description>Labyrinth-Spiel mit Scratch und JavaScript Ziel der Übung In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
-Es ist wichtig, dass du vor dieser Übung die Scratch-Variante dieses Spiels genau angesehen oder noch besser selbst programmiert hast.
-Spielbeschreibung Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit &amp;ldquo;X&amp;rdquo; markierte Ziel zu erreichen.</description>
+      <description>&lt;h1 id=&#34;labyrinth-spiel-mit-scratch-und-javascript&#34;&gt;Labyrinth-Spiel mit Scratch und JavaScript&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du ein Labyrinth-Spiel &lt;a href=&#34;../../scratch/labyrinth&#34;&gt;erst mit Scratch&lt;/a&gt; und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Es ist wichtig, dass du vor dieser Übung die &lt;a href=&#34;../../scratch/labyrinth&#34;&gt;Scratch-Variante dieses Spiels&lt;/a&gt; genau angesehen oder noch besser selbst programmiert hast.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;spielbeschreibung&#34;&gt;Spielbeschreibung&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;p&gt;Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit &amp;ldquo;X&amp;rdquo; markierte Ziel zu erreichen.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Regenbogen</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/rainbow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/rainbow/</guid>
-      <description>Regenbogen Ziel der Übung Du malst eine Landschaft mit Blumen und Wolken und einem Regenbogen, der erscheint, wenn du die Maus nach rechts bewegst.
-
-   p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
-Öffne zum Starten den p5.js editor.
-Dort wird dir folgender Code angezeigt:</description>
+      <description>&lt;h1 id=&#34;regenbogen&#34;&gt;Regenbogen&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Du malst eine Landschaft mit Blumen und Wolken und einem Regenbogen, der erscheint, wenn du die Maus nach rechts bewegst.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/rainbow/img/rainbow.gif&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;p5js&#34;&gt;p5.js&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden für diese Übung die JavaScript Bibliothek &lt;a href=&#34;https://p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js&lt;/a&gt;. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.&lt;/p&gt;&#xA;&lt;p&gt;Öffne zum Starten den &lt;a href=&#34;https://editor.p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js editor&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Dort wird dir folgender Code angezeigt:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Snake mit p5.js</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-p5js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-p5js/</guid>
-      <description>Snake mit p5.js Ziel der Übung In dieser Übung programmierst du das Spiel Snake mit p5.js.
-
-   p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
-Öffne zum Starten den p5.js editor.
-Dort wird dir folgender Code angezeigt:
-function setup() { createCanvas(400, 400); } function draw() { background(220); }  Variablen Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen.</description>
+      <description>&lt;h1 id=&#34;snake-mit-p5js&#34;&gt;Snake mit p5.js&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du das Spiel Snake mit p5.js.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-p5js/img/snake.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;p5js&#34;&gt;p5.js&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden für diese Übung die JavaScript Bibliothek &lt;a href=&#34;https://p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js&lt;/a&gt;. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.&lt;/p&gt;&#xA;&lt;p&gt;Öffne zum Starten den &lt;a href=&#34;https://editor.p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js editor&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Dort wird dir folgender Code angezeigt:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; setup() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  createCanvas(400, 400);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; draw() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  background(220);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;variablen&#34;&gt;Variablen&lt;/h2&gt;&#xA;&lt;p&gt;Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen. Füge die Variablen ganz am Anfang des Codes ein. Zeilen die mit &lt;code&gt;//&lt;/code&gt; beginnen sind Kommentare, die sind nicht nötig, damit das Programm läuft:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Space Invaders</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</guid>
-      <description>Space Invaders We will follow another amazing Tutorial by Ania Kubów to build our very own Space Invaders game. If you didn&amp;rsquo;t do so yet head to her Youtube channel and subscribe or give her a like because her content is amazing.
-Set up our files As usual we will use codesandbox.io for our implementation. The entrypoint for our website is our index.html file. In this file we need to add a link to our styles.</description>
+      <description>&lt;h1 id=&#34;space-invaders&#34;&gt;Space Invaders&lt;/h1&gt;&#xA;&lt;p&gt;We will follow another amazing Tutorial by &lt;a href=&#34;https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw&#34; target=&#34;_blank&#34;&gt;Ania Kubów&lt;/a&gt; to build our very own Space Invaders game.&#xA;If you didn&amp;rsquo;t do so yet head to her Youtube channel and subscribe or give her a like because her content is amazing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;set-up-our-files&#34;&gt;Set up our files&lt;/h2&gt;&#xA;&lt;p&gt;As usual we will use &lt;a href=&#34;https://codesandbox.io/&#34; target=&#34;_blank&#34;&gt;codesandbox.io&lt;/a&gt; for our implementation. The entrypoint for our website is our &lt;code&gt;index.html&lt;/code&gt; file.&#xA;In this file we need to add a link to our &lt;code&gt;styles.css&lt;/code&gt; and a reference to our &lt;code&gt;app.js&lt;/code&gt;. In order to check that our linking&#xA;works fine I will add some dummy code to show an alert in our JavaScript file &lt;code&gt;alert(&amp;quot;Hey Space Invaders&amp;quot;)&lt;/code&gt; and a &lt;code&gt;body { background-color: hotpink }&lt;/code&gt; to our CSS file.&#xA;Now when we refresh or open our HTML file we should see a pink background a pop up greeting the Space Invaders.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Space Shooter mit p5.js</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/</guid>
-      <description>Space Shooter mit p5.js Ziel der Übung In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt. Mit den Pfeiltasten kannst du das Raumschiff nach links und rechts bewegen. Mit den Tasten a und d kannst du es drehen. Und mit der Leertaste kannst du Laser abfeuern, um die herunterfallenden Meteoriten zu zerstören.
- p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.</description>
+      <description>&lt;h1 id=&#34;space-shooter-mit-p5js&#34;&gt;Space Shooter mit p5.js&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt. Mit den Pfeiltasten kannst du das Raumschiff nach links und rechts bewegen. Mit den Tasten &lt;code&gt;a&lt;/code&gt; und &lt;code&gt;d&lt;/code&gt; kannst du es drehen. Und mit der Leertaste kannst du Laser abfeuern, um die herunterfallenden Meteoriten zu zerstören.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;p5js&#34;&gt;p5.js&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden für diese Übung die JavaScript Bibliothek &lt;a href=&#34;https://p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js&lt;/a&gt;. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tetris</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/tetris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/tetris/</guid>
-      <description>Tetris In this session we will impelment a version of the TETRIS game based on a video by the amazin Ania Kubów. Check out her youtube channel &amp;ndash;&amp;gt; here &amp;lt;&amp;ndash; .
-Project setup and file linking We will need three files - a index.html that contains the markup of our website, an app.js file that contains our logic and a styles.css for styling.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;app.</description>
+      <description>&lt;h1 id=&#34;tetris&#34;&gt;Tetris&lt;/h1&gt;&#xA;&lt;p&gt;In this session we will impelment a version of the TETRIS game based on a video by the amazin Ania Kubów. Check out her youtube channel &lt;a href=&#34;https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw&#34; target=&#34;_blank&#34;&gt; &amp;ndash;&amp;gt; here &amp;lt;&amp;ndash; &lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;project-setup-and-file-linking&#34;&gt;Project setup and file linking&lt;/h2&gt;&#xA;&lt;p&gt;We will need three files - a index.html that contains the markup of our website, an app.js file that contains our logic and a styles.css for styling.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;html&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;head&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;meta charset=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;script src=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;app.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;link rel=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; type=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt; href=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;styles.css&amp;#34;&lt;/span&gt;/&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;title&amp;gt;Tetris&amp;lt;/title&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/head&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;body&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/body&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/html&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In order to verify that our linking works out properly we put an &lt;code&gt;alert(&#39;Hello Tetris&#39;)&lt;/code&gt; to the app.js file and a &lt;code&gt;body { background: hotpink; }&lt;/code&gt; to the styles.css file.&#xA;We should now see a popup containing the text &amp;ldquo;Hello Tetris&amp;rdquo; when we reload the page and the pages background should have a specified color.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Yeti Xmas Game mit p5.js</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/yeti-xmas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/yeti-xmas/</guid>
-      <description>Yeti Xmas Game mit p5.js Ziel der Übung In dieser Übung programmierst du mit p5.js and Jump &amp;amp; Run Spiel.
- p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
-Öffne zum Starten den p5.js editor.
-Dort wird dir folgender Code angezeigt:
-function setup() { createCanvas(400, 400); } function draw() { background(220); }  Anleitung Die Anleitung zum Yeti Spiel kommt in den nächsten Wochen &amp;hellip;</description>
+      <description>&lt;h1 id=&#34;yeti-xmas-game-mit-p5js&#34;&gt;Yeti Xmas Game mit p5.js&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du mit p5.js and Jump &amp;amp; Run Spiel.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;p5js&#34;&gt;p5.js&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden für diese Übung die JavaScript Bibliothek &lt;a href=&#34;https://p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js&lt;/a&gt;. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.&lt;/p&gt;&#xA;&lt;p&gt;Öffne zum Starten den &lt;a href=&#34;https://editor.p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js editor&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Dort wird dir folgender Code angezeigt:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; setup() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  createCanvas(400, 400);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; draw() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  background(220);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;anleitung&#34;&gt;Anleitung&lt;/h2&gt;&#xA;&lt;p&gt;Die Anleitung zum Yeti Spiel kommt in den nächsten Wochen &amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

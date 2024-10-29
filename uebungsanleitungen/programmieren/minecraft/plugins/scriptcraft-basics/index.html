@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Grundlagen von Minecraft Mods mit JavaScript </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -162,34 +162,24 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#grundlagen-von-minecraft-mods-mit-javascript">Grundlagen von Minecraft Mods mit JavaScript</a>
-<ul>
-<li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
-<li><a href="#erste-schritte">Erste Schritte</a></li>
-<li><a href="#entwickeln-von-scripts">Entwickeln von Scripts</a></li>
-<li><a href="#grundlagen-von-events">Grundlagen von Events</a></li>
-<li><a href="#etwas-mehr-über-events">Etwas mehr über Events</a></li>
-<li><a href="#jetzt-bist-du-dran">Jetzt bist du dran</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
+    <li><a href="#erste-schritte">Erste Schritte</a></li>
+    <li><a href="#entwickeln-von-scripts">Entwickeln von Scripts</a></li>
+    <li><a href="#grundlagen-von-events">Grundlagen von Events</a></li>
+    <li><a href="#etwas-mehr-über-events">Etwas mehr über Events</a></li>
+    <li><a href="#jetzt-bist-du-dran">Jetzt bist du dran</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="grundlagen-von-minecraft-mods-mit-javascript">Grundlagen von Minecraft Mods mit JavaScript</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="grundlagen-von-minecraft-mods-mit-javascript">Grundlagen von Minecraft Mods mit JavaScript</h1>
 <h2 id="systemvoraussetzungen">Systemvoraussetzungen</h2>
-
 <p>Du brauchst für diese Übungen einen Minecraft Server mit Scriptcraft. <strong>Wenn du keine Erfahrung bzgl. Konfiguration von Computern, Java etc. hast, komm ins CoderDojo und bitte eine Mentorin, dir einen solchen Server zur Verfügung zu stellen.</strong> Ansonsten hast du folgende Möglichkeiten:</p>
-
 <ul>
-<li>Folge der <a href="07_spigot_scriptcraft_docker.html" target="_blank">Anleitung auf unserer Homepage</a></li>
+<li>Folge der <a href="07_spigot_scriptcraft_docker.html">Anleitung auf unserer Homepage</a></li>
 <li>Installiere Scriptcraft lokal auf deinem Computer (<a href="https://github.com/walterhiggins/ScriptCraft/blob/master/README.md" target="_blank">Installationsanleitung in Englisch</a>)</li>
 </ul>
-
 <p>Zum Programmieren von JavaScript brauchst du einen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Hier einige Links zu kostenlosen Editoren, mit denen du JavaScript gut schreiben kannst. Falls du nicht sicher bist, welchen du nehmen sollst, nimm gleich den ersten. Im Lauf der Zeit kannst du mit verschiedenen experimentieren und dich für den entscheiden, der dir am besten gefällt.</p>
-
 <ul>
 <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (Windows, MacOS, Linux)</li>
 <li><a href="https://notepad-plus-plus.org/download/v6.8.2.html" target="_blank">Notepad++</a> (Windows)</li>
@@ -197,15 +187,14 @@
 <li><a href="http://brackets.io/" target="_blank">Brackets</a> (Windows, MacOS, Linux)</li>
 <li><a href="https://atom.io/" target="_blank">Atom</a> (Windows, MacOS, Linux)</li>
 </ul>
-
 <p>Um diese Übung ausprobieren zu können, brauchst du das Spiel Minecraft auf deinem Computer.</p>
-
 <h2 id="erste-schritte">Erste Schritte</h2>
-
 <ol>
-<li><p>Starte Minecraft</p></li>
-
-<li><p>
+<li>
+<p>Starte Minecraft</p>
+</li>
+<li>
+<p>
 
 
      
@@ -229,11 +218,13 @@
     </div>
 </div>
 
-Wechsle in den <em>Multiplayer-Mode</em>.</p></li>
-
-<li><p>Verbinde dich mit deinem Minecraft Server</p></li>
-
-<li><p>
+Wechsle in den <em>Multiplayer-Mode</em>.</p>
+</li>
+<li>
+<p>Verbinde dich mit deinem Minecraft Server</p>
+</li>
+<li>
+<p>
 
 
      
@@ -258,39 +249,36 @@ Wechsle in den <em>Multiplayer-Mode</em>.</p></li>
 </div>
 
 Du kannst jetzt interaktiv erste JavaScript-Kommandos als <a href="http://minecraft-de.gamepedia.com/Befehl" target="_blank">Minecraft Befehle</a> ausführen:</p>
-
 <ul>
 <li>Starte z.B. die <em>Chat-Konsole</em> mit der Taste <code>t</code>.</li>
 <li>Merke dir: Jedes JavaScript-Kommando startet mit <code>/js</code>.</li>
 <li>Gib ein <code>/js 1+2+3</code> und drücke <em>Enter</em>. Das Ergbnis wird angezeigt, also <code>6.0</code>.</li>
-</ul></li>
-
-<li><p>Probiere jetzt folgende Befehle aus:</p>
-
+</ul>
+</li>
+<li>
+<p>Probiere jetzt folgende Befehle aus:</p>
 <ul>
 <li><code>/js console.log('Hallo Server')</code> zum Ausgeben einer Meldung auf der Konsole des Minecraft Servers</li>
 <li><code>/js var gruesse='Hallo Scriptcraft'</code> legt eine Variable an</li>
 <li><code>/js echo(gruesse)</code> gibt die zuvor angelegte Variable in Minecraft aus</li>
 <li><code>/js echo(self.name)</code> gibt deinen Namen aus. Merke dir, dass du mit <code>self</code> auf alle Daten deines Spielers zugreifen kannst.</li>
-</ul></li>
-
-<li><p>Probiere jetzt Befehle zum Bauen aus:</p>
-
+</ul>
+</li>
+<li>
+<p>Probiere jetzt Befehle zum Bauen aus:</p>
 <ul>
 <li><code>/js box(blocks.oak)</code> erstellt einen Block aus Eiche (<a href="https://github.com/walterhiggins/ScriptCraft/blob/master/src/main/js/modules/blocks.js" target="_blank">Liste aller Materialien</a>)</li>
 <li><code>/js box(blocks.wool.red, 5, 6, 7)</code> erstellt einen großen Block aus roter Wolle mit einer Breite von 5, einer Höhe von 6 und einer Tiefe von 7 Blöcken</li>
 <li><code>/js box(blocks.glass).fwd(2).box(blocks.glass).turn().fwd(2).box(blocks.glass)</code> erstellt Blöcke mit der <em>Drohne</em> (<em>Drone</em>). Wie du siehst, kannst du sie vorwärts bewegen (<em>fwd</em>), drehen (<em>turn</em>) etc.</li>
 <li><code>/js castle()</code> erstellt eine komplette Burg.</li>
 <li>Stöbere durch die <a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md#drone-plugin" target="_blank"><em>Drone</em>-Dokumentation</a> und probiere verschiedene Kommandos zum Bauen aus.</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <p>Ein Tipp am Ende: Wenn du zu einer neuen, leeren Welt zurückkehren möchtest, starte den Minecraft-Server neu.</p>
-
 <h2 id="entwickeln-von-scripts">Entwickeln von Scripts</h2>
-
 <p>Erstelle mit deinem Editor im <em>plugins</em>-Verzeichns eine Datei <em>hochhaus.js</em> mit folgendem Inhalt (falls du nicht weißt wo das <em>plugins</em>-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):</p>
-<pre><code>var utils = require(&#39;utils&#39;);
+<pre tabindex="0"><code>var utils = require(&#39;utils&#39;);
 
 exports.hochhaus = function (stockwerke) {
     // Erstelle eine Drohne an der Position deines Spielers
@@ -311,11 +299,13 @@ exports.hochhaus = function (stockwerke) {
             .up()
             .box(blocks.cobblestone, 25, 1, 25);
     };
-};</code></pre>
-<ol>
-<li><p>Starte den Minecraft-Server neu.</p></li>
-
-<li><p>Rufe in Minecraft mit <code>/js hochhaus(3)</code> deine Funktion auf und beobachte, wie dein Script ein Hochhaus baut.<br/>
+};
+</code></pre><ol>
+<li>
+<p>Starte den Minecraft-Server neu.</p>
+</li>
+<li>
+<p>Rufe in Minecraft mit <code>/js hochhaus(3)</code> deine Funktion auf und beobachte, wie dein Script ein Hochhaus baut.<!-- raw HTML omitted -->
 
 
 
@@ -339,29 +329,33 @@ exports.hochhaus = function (stockwerke) {
     <img src="/uebungsanleitungen/programmieren/minecraft/plugins/scriptcraft-basics/img/hochhaus.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
     </div>
 </div>
-</p></li>
-
-<li><p>Ändere etwas an deinem Script (z.B. mehr oder weniger Ebenen aus Glas)</p></li>
-
-<li><p>Lade in Minecraft deine Scripts neu mit <code>/js refresh()</code></p></li>
-
-<li><p>Rufe deine Funktion nochmals auf und beachte, dass deine Änderung ohne Neustart des Servers wirksam geworden ist.</p></li>
-
-<li><p>Hast du entdeckt, dass in dem Script ein Modul namens <code>utils</code> verwendet wird? Es enthält eine Menge nützlicher Hilfsfunktionen. Du kannst in der <a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md#utilities-module" target="_blank">Scriptcraft Dokumentation</a> nachlesen, was <code>utils</code> alles kann.</p></li>
+</p>
+</li>
+<li>
+<p>Ändere etwas an deinem Script (z.B. mehr oder weniger Ebenen aus Glas)</p>
+</li>
+<li>
+<p>Lade in Minecraft deine Scripts neu mit <code>/js refresh()</code></p>
+</li>
+<li>
+<p>Rufe deine Funktion nochmals auf und beachte, dass deine Änderung ohne Neustart des Servers wirksam geworden ist.</p>
+</li>
+<li>
+<p>Hast du entdeckt, dass in dem Script ein Modul namens <code>utils</code> verwendet wird? Es enthält eine Menge nützlicher Hilfsfunktionen. Du kannst in der <a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md#utilities-module" target="_blank">Scriptcraft Dokumentation</a> nachlesen, was <code>utils</code> alles kann.</p>
+</li>
 </ol>
-
 <h2 id="grundlagen-von-events">Grundlagen von Events</h2>
-
 <p>In Mods musst do häufig auf Ereignisse reagieren (z.B. neuer Spieler meldet sich an, Block wird zerstört etc.).</p>
-
 <p>Erstelle mit deinem Editor im <em>plugins</em>-Verzeichns eine Datei <em>welcome.js</em> mit folgendem Inhalt (falls du nicht weißt wo das <em>plugins</em>-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):</p>
-<pre><code>events.playerJoin(function (event) {
+<pre tabindex="0"><code>events.playerJoin(function (event) {
     echo(event.player, &#34;CoderDojo sagt Willkommen!&#34;);
-});</code></pre>
-<ol>
-<li><p>Lade in Minecraft deine Scripts neu mit <code>/js refresh()</code></p></li>
-
-<li><p>
+});
+</code></pre><ol>
+<li>
+<p>Lade in Minecraft deine Scripts neu mit <code>/js refresh()</code></p>
+</li>
+<li>
+<p>
 
 
      
@@ -385,9 +379,10 @@ exports.hochhaus = function (stockwerke) {
     </div>
 </div>
 
-Melde dich vom Minecraft Server ab.</p></li>
-
-<li><p>Melde dich erneut beim Minecraft Server an. Dein Script wird automatisch das Event <code>playerJoin</code> empfangen und die Meldung im Script in Minecraft anzeigen.<br/>
+Melde dich vom Minecraft Server ab.</p>
+</li>
+<li>
+<p>Melde dich erneut beim Minecraft Server an. Dein Script wird automatisch das Event <code>playerJoin</code> empfangen und die Meldung im Script in Minecraft anzeigen.<!-- raw HTML omitted -->
 
 
 
@@ -411,17 +406,16 @@ Melde dich vom Minecraft Server ab.</p></li>
     <img src="/uebungsanleitungen/programmieren/minecraft/plugins/scriptcraft-basics/img/welcome-message.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
     </div>
 </div>
-</p></li>
-
-<li><p>In Minecraft gibt es hunderte von Events. Du kannst in der <a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md" target="_blank">Scriptcraft Dokumentation</a> bei Bedarf nachforschen, was es alles für Events gibt.</p></li>
+</p>
+</li>
+<li>
+<p>In Minecraft gibt es hunderte von Events. Du kannst in der <a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md" target="_blank">Scriptcraft Dokumentation</a> bei Bedarf nachforschen, was es alles für Events gibt.</p>
+</li>
 </ol>
-
 <h2 id="etwas-mehr-über-events">Etwas mehr über Events</h2>
-
 <p>Jetzt möchten wir darauf reagieren, wenn ein Pfeil ein Objekt trifft.</p>
-
 <p>Erstelle mit deinem Editor im <em>plugins</em>-Verzeichns eine Datei <em>arrowHit.js</em> mit folgendem Inhalt (falls du nicht weißt wo das <em>plugins</em>-Verzeichnis ist, frage eine CoderDojo-Mentorin um Hilfe):</p>
-<pre><code>var fireworks = require(&#39;fireworks&#39;);
+<pre tabindex="0"><code>var fireworks = require(&#39;fireworks&#39;);
 
 events.projectileHit(function (event) {
     var fireworkCount = 5;
@@ -434,11 +428,13 @@ events.projectileHit(function (event) {
     launch();
 
     event.entity.world.createExplosion(event.entity.location, 1.5);
-});</code></pre>
-<ol>
-<li><p>Lade in Minecraft deine Scripts neu mit <code>/js refresh()</code></p></li>
-
-<li><p>Nimm den Bogen und schieße einen Pfeil ab. Dort wo der Pfeil landet, siehst du eine Explosion und ein kurzes Feuerwerk wird abgeschossen.<br/>
+});
+</code></pre><ol>
+<li>
+<p>Lade in Minecraft deine Scripts neu mit <code>/js refresh()</code></p>
+</li>
+<li>
+<p>Nimm den Bogen und schieße einen Pfeil ab. Dort wo der Pfeil landet, siehst du eine Explosion und ein kurzes Feuerwerk wird abgeschossen.<!-- raw HTML omitted -->
 
 
 
@@ -462,17 +458,17 @@ events.projectileHit(function (event) {
     <img src="/uebungsanleitungen/programmieren/minecraft/plugins/scriptcraft-basics/img/fireworks.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
     </div>
 </div>
-</p></li>
-
-<li><p>Hast du entdeckt, dass in dem Script ein Modul namens <code>fireworks</code> verwendet wird? Du kannst in der <a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md#fireworks-module" target="_blank">Scriptcraft Dokumentation</a> nachlesen, was <code>fireworks</code> alles kann.</p></li>
-
-<li><p>Hast du entdeckt, dass in dem Script eine Objekt namens <code>world</code> verwendet wird? Du kannst in der <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.html" target="_blank">Spigot Dokumentation</a> nachlesen, was <code>world</code> sonst noch alles kann.</p></li>
+</p>
+</li>
+<li>
+<p>Hast du entdeckt, dass in dem Script ein Modul namens <code>fireworks</code> verwendet wird? Du kannst in der <a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md#fireworks-module" target="_blank">Scriptcraft Dokumentation</a> nachlesen, was <code>fireworks</code> alles kann.</p>
+</li>
+<li>
+<p>Hast du entdeckt, dass in dem Script eine Objekt namens <code>world</code> verwendet wird? Du kannst in der <a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/World.html" target="_blank">Spigot Dokumentation</a> nachlesen, was <code>world</code> sonst noch alles kann.</p>
+</li>
 </ol>
-
 <h2 id="jetzt-bist-du-dran">Jetzt bist du dran</h2>
-
 <p>Erstelle aus den gelernten JavaScript-Grundlagen deinen eigenen Mod. Vielleicht hast du ein Idee für ein Mini-Game oder eine Quest, die andere dann spielen können.</p>
-
 <p>Viele Spaß!</p>
  </div>
         </div>

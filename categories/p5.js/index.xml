@@ -1,114 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>p5.js on CoderDojo Linz</title>
+    <title>P5.js on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/categories/p5.js/</link>
-    <description>Recent content in p5.js on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in P5.js on CoderDojo Linz</description>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/categories/p5.js/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/categories/p5.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feuerwerk-Simulator</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/feuerwerk-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/feuerwerk-basics/</guid>
-      <description>Feuerwerksimulator (für AnfängerInnen) Ziel der Übung Heute wollen wir gemeinsam einen Feuerwerk-Simulator programmieren. Dabei kannst du das Tippen von Code auf der Tastatur üben und lernst Grundlagen der Programmierung wie Variablen, Schleifen und Funktionen kennen.
-Du solltest für diese Übung schon ein wenig Programmiererfahrung mit einer Blockprogrammiersprache wie Scratch oder Snap! haben. Falls du noch nie Programmcode eingetippt hast, solltest du auch etwas Geduld mitbringen. Es ist am Anfang nicht immer leicht, die vielen Sonderzeichen im Code auf der Tastatur zu finden.</description>
+      <description>&lt;h1 id=&#34;feuerwerksimulator-für-anfängerinnen&#34;&gt;Feuerwerksimulator (für AnfängerInnen)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Heute wollen wir gemeinsam einen Feuerwerk-Simulator programmieren. Dabei kannst du das Tippen von Code auf der Tastatur üben und lernst Grundlagen der Programmierung wie Variablen, Schleifen und Funktionen kennen.&lt;/p&gt;&#xA;&lt;p&gt;Du solltest für diese Übung schon ein wenig Programmiererfahrung mit einer Blockprogrammiersprache wie &lt;a href=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/&#34;&gt;&lt;em&gt;Scratch&lt;/em&gt;&lt;/a&gt; oder &lt;a href=&#34;https://snap.berkeley.edu/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Snap!&lt;/em&gt;&lt;/a&gt; haben. Falls du noch nie Programmcode eingetippt hast, solltest du auch etwas Geduld mitbringen. Es ist am Anfang nicht immer leicht, die vielen Sonderzeichen im Code auf der Tastatur zu finden. Halte durch, Übung macht den Meister!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Halloween - Catch the Treat</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/catch-the-treat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/catch-the-treat/</guid>
-      <description>Halloween - Catch the Treats Videoanleitung  Einleitung Willkommen bei unserem Halloween-Spiel 🎃. Wir programmieren gemeinsam ein Spiel, bei dem freundliche Monster 👻 gruselige &amp;ldquo;Süßigkeiten&amp;rdquo; herumwerfen, die du erwischen musst. Wenn du sie nicht erwischst, verlierst du ein Leben. Wenn du alle Leben verloren hast, ist das Spiel vorbei. Wer schafft am meisten Punkte?
-Interessante Info am Rande, die für diejenigen interessant sein könnte, die schon etwas mehr Erfahrung haben: Wir programmieren in dieser Übung mit der Programmiersprache TypeScript.</description>
+      <description>&lt;h1 id=&#34;halloween---catch-the-treats&#34;&gt;Halloween - Catch the Treats&lt;/h1&gt;&#xA;&lt;h2 id=&#34;videoanleitung&#34;&gt;Videoanleitung&lt;/h2&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;p&gt;Willkommen bei unserem Halloween-Spiel 🎃. Wir programmieren gemeinsam ein Spiel, bei dem freundliche Monster 👻 gruselige &amp;ldquo;Süßigkeiten&amp;rdquo; herumwerfen, die du erwischen musst. Wenn du sie nicht erwischst, verlierst du ein Leben. Wenn du alle Leben verloren hast, ist das Spiel vorbei. Wer schafft am meisten Punkte?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Interessante Info&lt;/strong&gt; am Rande, die für diejenigen interessant sein könnte, die schon etwas mehr Erfahrung haben: Wir programmieren in dieser Übung mit der Programmiersprache &lt;em&gt;TypeScript&lt;/em&gt;. Unsere Entwicklungsumgebung ist &lt;em&gt;Stackblitz&lt;/em&gt;. Als Grafikbibliothek verwenden wir &lt;em&gt;p5js&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monster Run</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/monster-run/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/monster-run/</guid>
-      <description>Monster Run Einleitung Wisst ihr was ein Jump &amp;lsquo;n&amp;rsquo; Run-Spiel ist? Man steuert als Spielerin oder Spieler eine kleine Figur und läuft mir ihr durch ein Labyrinth. Meistens muss sich dabei gegen verschiedene Gegner behaupten. In diesem Workshop zeigt euch Rainer Grundlagen, die man zum Programmieren eines Jump &amp;lsquo;n&amp;rsquo; Run in p5js braucht. Er baut mich euch einen Monsterspaziergang.
-Grafiken In dieser Übung verwenden wir Grafiken der Plattform craftpix.net. Du findest dort viele Grafiken für Spiele aller Art.</description>
+      <description>&lt;h1 id=&#34;monster-run&#34;&gt;Monster Run&lt;/h1&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;p&gt;Wisst ihr was ein Jump &amp;rsquo;n&amp;rsquo; Run-Spiel ist? Man steuert als Spielerin oder Spieler eine kleine Figur und läuft mir ihr durch ein Labyrinth. Meistens muss sich dabei gegen verschiedene Gegner behaupten. In diesem Workshop zeigt euch Rainer Grundlagen, die man zum Programmieren eines Jump &amp;rsquo;n&amp;rsquo; Run in p5js braucht. Er baut mich euch einen &lt;em&gt;Monsterspaziergang&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;grafiken&#34;&gt;Grafiken&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung verwenden wir Grafiken der Plattform &lt;a href=&#34;https://craftpix.net/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;craftpix.net&lt;/em&gt;&lt;/a&gt;. Du findest dort viele Grafiken für Spiele aller Art. Einige der Grafik-Pakete gibt es auch &lt;a href=&#34;https://craftpix.net/freebies/&#34; target=&#34;_blank&#34;&gt;kostenlos&lt;/a&gt;. In diesem Spiel verwenden wir die Bilder aus folgenden, kostenlosen Paketen:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Moorhuhn Jagd</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/moorhuhn-jagd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/moorhuhn-jagd/</guid>
-      <description>Moorhuhn Jagd Einleitung In dieser Übung programmierst du das Spiel Moorhuhn Jagd erst mit Scratch und danach mit TypeScript und p5.js. In dieser Anleitung gehen wir davon aus, dass du schon etwas Erfahrung mit TypeScript und p5.js hast.
-   Das Scratch-Spiel Damit du mit dem Spielprinzip vertraut wirst, baue das Spiel zuerst mit Scratch nach. Die Anleitung dazu findest du hier. Dieser Schritt ist wirklich wichtig, nicht auslassen!</description>
+      <description>&lt;h1 id=&#34;moorhuhn-jagd&#34;&gt;Moorhuhn Jagd&lt;/h1&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;In dieser Übung programmierst du das Spiel &lt;em&gt;Moorhuhn Jagd&lt;/em&gt; &lt;a href=&#34;../../scratch/moorhuhn-jagd/&#34;&gt;erst mit Scratch&lt;/a&gt; und danach mit TypeScript und p5.js. In dieser Anleitung gehen wir davon aus, dass du schon etwas Erfahrung mit TypeScript und p5.js hast.&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-5&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/titel.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto ml-md-auto mr-md-0&#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;das-scratch-spiel&#34;&gt;Das Scratch-Spiel&lt;/h2&gt;&#xA;&lt;p&gt;Damit du mit dem Spielprinzip vertraut wirst, baue das Spiel zuerst mit Scratch nach. Die Anleitung dazu findest du &lt;a href=&#34;../../scratch/moorhuhn-jagd/&#34;&gt;hier&lt;/a&gt;. Dieser Schritt ist wirklich wichtig, nicht auslassen!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Regenbogen</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/rainbow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/rainbow/</guid>
-      <description>Regenbogen Ziel der Übung Du malst eine Landschaft mit Blumen und Wolken und einem Regenbogen, der erscheint, wenn du die Maus nach rechts bewegst.
-
-   p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
-Öffne zum Starten den p5.js editor.
-Dort wird dir folgender Code angezeigt:</description>
+      <description>&lt;h1 id=&#34;regenbogen&#34;&gt;Regenbogen&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Du malst eine Landschaft mit Blumen und Wolken und einem Regenbogen, der erscheint, wenn du die Maus nach rechts bewegst.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/rainbow/img/rainbow.gif&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;p5js&#34;&gt;p5.js&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden für diese Übung die JavaScript Bibliothek &lt;a href=&#34;https://p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js&lt;/a&gt;. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.&lt;/p&gt;&#xA;&lt;p&gt;Öffne zum Starten den &lt;a href=&#34;https://editor.p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js editor&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Dort wird dir folgender Code angezeigt:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Snake mit p5.js</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-p5js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-p5js/</guid>
-      <description>Snake mit p5.js Ziel der Übung In dieser Übung programmierst du das Spiel Snake mit p5.js.
-
-   p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
-Öffne zum Starten den p5.js editor.
-Dort wird dir folgender Code angezeigt:
-function setup() { createCanvas(400, 400); } function draw() { background(220); }  Variablen Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen.</description>
+      <description>&lt;h1 id=&#34;snake-mit-p5js&#34;&gt;Snake mit p5.js&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du das Spiel Snake mit p5.js.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/snake-mit-p5js/img/snake.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;p5js&#34;&gt;p5.js&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden für diese Übung die JavaScript Bibliothek &lt;a href=&#34;https://p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js&lt;/a&gt;. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.&lt;/p&gt;&#xA;&lt;p&gt;Öffne zum Starten den &lt;a href=&#34;https://editor.p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js editor&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Dort wird dir folgender Code angezeigt:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; setup() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  createCanvas(400, 400);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; draw() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  background(220);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;variablen&#34;&gt;Variablen&lt;/h2&gt;&#xA;&lt;p&gt;Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen. Füge die Variablen ganz am Anfang des Codes ein. Zeilen die mit &lt;code&gt;//&lt;/code&gt; beginnen sind Kommentare, die sind nicht nötig, damit das Programm läuft:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Space Shooter mit p5.js</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/</guid>
-      <description>Space Shooter mit p5.js Ziel der Übung In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt. Mit den Pfeiltasten kannst du das Raumschiff nach links und rechts bewegen. Mit den Tasten a und d kannst du es drehen. Und mit der Leertaste kannst du Laser abfeuern, um die herunterfallenden Meteoriten zu zerstören.
- p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.</description>
+      <description>&lt;h1 id=&#34;space-shooter-mit-p5js&#34;&gt;Space Shooter mit p5.js&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du einen Space Shooter mit dem du herunterfallende Meteoriten abschießt. Mit den Pfeiltasten kannst du das Raumschiff nach links und rechts bewegen. Mit den Tasten &lt;code&gt;a&lt;/code&gt; und &lt;code&gt;d&lt;/code&gt; kannst du es drehen. Und mit der Leertaste kannst du Laser abfeuern, um die herunterfallenden Meteoriten zu zerstören.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;p5js&#34;&gt;p5.js&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden für diese Übung die JavaScript Bibliothek &lt;a href=&#34;https://p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js&lt;/a&gt;. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Spaß mit Bezier-Kurven</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/bezier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/bezier/</guid>
-      <description>Spaß mit Bezier-Kuven Einleitung Kaum jemand von euch wird schon einmal etwas von Bezier-Kurven gehört haben. Unsere Welt ist aber voll davon. Sie werden beim Design von physischen Dingen wie Autos genauso eingesetzt wie bei Computerspielen. Im folgenden Bild siehst du ein Beispiel. Wenn man sich die Form des Autos ansieht, entdeckt man eine Menge Kurven. Diese Kurven sind Bezier-Kurven.
-Im Bild sind bei weitem nicht alle Bezier-Kurven hervorgehoben. Findest du noch weitere?</description>
+      <description>&lt;h1 id=&#34;spaß-mit-bezier-kuven&#34;&gt;Spaß mit Bezier-Kuven&lt;/h1&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&lt;p&gt;Kaum jemand von euch wird schon einmal etwas von Bezier-Kurven gehört haben. Unsere Welt ist aber voll davon. Sie werden beim Design von physischen Dingen wie Autos genauso eingesetzt wie bei Computerspielen. Im folgenden Bild siehst du ein Beispiel. Wenn man sich die Form des Autos ansieht, entdeckt man eine Menge Kurven. Diese Kurven sind Bezier-Kurven.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;img/car-with-bezier.png&#34; alt=&#34;Auto mit Bezier-Kurven&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Im Bild sind bei weitem nicht alle Bezier-Kurven hervorgehoben. Findest du noch weitere?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Yeti Xmas Game mit p5.js</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/yeti-xmas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/yeti-xmas/</guid>
-      <description>Yeti Xmas Game mit p5.js Ziel der Übung In dieser Übung programmierst du mit p5.js and Jump &amp;amp; Run Spiel.
- p5.js Wir verwenden für diese Übung die JavaScript Bibliothek p5.js. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.
-Öffne zum Starten den p5.js editor.
-Dort wird dir folgender Code angezeigt:
-function setup() { createCanvas(400, 400); } function draw() { background(220); }  Anleitung Die Anleitung zum Yeti Spiel kommt in den nächsten Wochen &amp;hellip;</description>
+      <description>&lt;h1 id=&#34;yeti-xmas-game-mit-p5js&#34;&gt;Yeti Xmas Game mit p5.js&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du mit p5.js and Jump &amp;amp; Run Spiel.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;p5js&#34;&gt;p5.js&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden für diese Übung die JavaScript Bibliothek &lt;a href=&#34;https://p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js&lt;/a&gt;. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.&lt;/p&gt;&#xA;&lt;p&gt;Öffne zum Starten den &lt;a href=&#34;https://editor.p5js.org/&#34; target=&#34;_blank&#34;&gt;p5.js editor&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Dort wird dir folgender Code angezeigt:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; setup() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  createCanvas(400, 400);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; draw() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  background(220);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;anleitung&#34;&gt;Anleitung&lt;/h2&gt;&#xA;&lt;p&gt;Die Anleitung zum Yeti Spiel kommt in den nächsten Wochen &amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

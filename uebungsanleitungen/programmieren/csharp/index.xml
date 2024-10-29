@@ -4,42 +4,30 @@
     <title>C# on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/</link>
     <description>Recent content in C# on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 17 May 2020 08:03:59 +0200</lastBuildDate>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C# Kennenlernen</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/ant-me/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/ant-me/</guid>
-      <description>AntMe! Wie schlau ist deine Ameise? Ziel der Übung C# (Englisch &amp;ldquo;C Sharp&amp;rdquo;) ist eine der meist verwendeten Programmiersprachen der Welt. Sie ist Open Source und plattformunabhängig. Mit C# werden verschiedenste Programme geschrieben: Spiele, wirtschaftliche Software, Webseiten und vieles mehr.
-Ein Ziel dieser Übung ist es, dass du C# auf eine Weise kennenlernst, die Spaß macht. Dein Ziel wird es sein, in C# einen Computerspieler zu programmieren, der die Ameisen einer Ameisenkolonie steuert.</description>
+      <description>&lt;h1 id=&#34;antme-wie-schlau-ist-deine-ameise&#34;&gt;AntMe! Wie schlau ist deine Ameise?&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;img/antme-screenshot.png&#34; alt=&#34;AntMe!&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;C# (Englisch &amp;ldquo;C Sharp&amp;rdquo;) ist eine der meist verwendeten Programmiersprachen der Welt. Sie ist Open Source und plattformunabhängig. Mit C# werden verschiedenste Programme geschrieben: Spiele, wirtschaftliche Software, Webseiten und vieles mehr.&lt;/p&gt;&#xA;&lt;p&gt;Ein Ziel dieser Übung ist es, dass du C# auf eine Weise kennenlernst, die Spaß macht. Dein Ziel wird es sein, in C# einen Computerspieler zu programmieren, der die Ameisen einer Ameisenkolonie steuert. Du lernst dabei nicht nur die Programmiersprache C# kennen, du musst dir auch einen schlauen Algorithmus für deine Ameisen überlegen.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Geisterspiel in C#</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/geisterspiel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/geisterspiel/</guid>
-      <description>Geisterspiel In dieser Übung erstellen wir ein erstes, einfaches Konsolenspiel mit C# (C-Sharp). Das Spiel wird textuell gesteuert d.h Ein/-Ausgaben werden auf einer Konsole zu lesen/schreiben sein.
-Die Aufgabe Der Geist versteckt sich zufällig hinter einer von 3 Türen. Du entscheidest, welche Türe du öffnen möchtest. Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste. Unser Programm soll nun prüfen, ob der Geist sich hinter der Tür befindet und eine entsprechende Meldung ausgeben; also entweder ‘Geist gefunden’ und damit das Spiel verloren oder ‘Kein Geist’ und der Spieler darf zur nächsten Station mit wieder 3 Türen und einem zufällig versteckten Geist weitergehen.</description>
+      <description>&lt;h1 id=&#34;geisterspiel&#34;&gt;Geisterspiel&lt;/h1&gt;&#xA;&lt;p&gt;In dieser Übung erstellen wir ein erstes, einfaches Konsolenspiel mit C# (C-Sharp). Das Spiel wird&#xA;textuell gesteuert d.h Ein/-Ausgaben werden auf einer Konsole zu lesen/schreiben sein.&lt;/p&gt;&#xA;&lt;h2 id=&#34;die-aufgabe&#34;&gt;Die Aufgabe&lt;/h2&gt;&#xA;&lt;p&gt;Der Geist versteckt sich zufällig hinter einer von 3 Türen. Du entscheidest, welche Türe du öffnen&#xA;möchtest. Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste.&#xA;Unser Programm soll nun prüfen, ob der Geist sich hinter der Tür befindet und eine&#xA;entsprechende Meldung ausgeben; also entweder ‘Geist gefunden’ und damit das Spiel verloren&#xA;oder ‘Kein Geist’ und der Spieler darf zur nächsten Station mit wieder 3 Türen und einem zufällig&#xA;versteckten Geist weitergehen. Das Programm soll also auch mitzählen, wie oft der Spieler durch&#xA;eine Tür geht, ohne dabei auf den Geist zu stoßen.&lt;br&gt;&#xA;Ein möglicher Spielablauf könnte dann im Konsolen-Fenster so aussehen:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Türme von Hanoi</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/towers-of-hanoi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/towers-of-hanoi/</guid>
-      <description>Türme von Hanoi Einleitung Die Türme von Hanoi sind ein klassisches Übungsbeispiel für Programmierer. Für Kinder gibt es das Rätsel auch als Holzspielzeug zu kaufen. Die Regeln sind einfach:
- Man hat ein Spielbrett mit drei Stangen. Nennen wir sie L for Links, M für Mitte und R für Rechts. Auf der Stange A ist ein Turm von Spielsteinen aufgetürmt. Jeder Spielstein ist etwas kleiner als der darunter. Die Aufgabe ist es, den Turm von Stange L auf Stange M zu übersiedeln.</description>
+      <description>&lt;h1 id=&#34;türme-von-hanoi&#34;&gt;Türme von Hanoi&lt;/h1&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&lt;p&gt;Die &lt;em&gt;Türme von Hanoi&lt;/em&gt; sind ein klassisches Übungsbeispiel für Programmierer. Für Kinder gibt es das Rätsel auch als Holzspielzeug zu kaufen. Die Regeln sind einfach:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Man hat ein Spielbrett mit drei Stangen. Nennen wir sie &lt;em&gt;L&lt;/em&gt; for Links, &lt;em&gt;M&lt;/em&gt; für Mitte und &lt;em&gt;R&lt;/em&gt; für Rechts.&lt;/li&gt;&#xA;&lt;li&gt;Auf der Stange A ist ein Turm von Spielsteinen aufgetürmt. Jeder Spielstein ist etwas kleiner als der darunter.&lt;/li&gt;&#xA;&lt;li&gt;Die Aufgabe ist es, den &lt;strong&gt;Turm von Stange L auf Stange M&lt;/strong&gt; zu übersiedeln. Allerdings mit folgenden Einschränkungen:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Es darf immer nur ein Spielstein gleichzeitig verschoben werden.&lt;/li&gt;&#xA;&lt;li&gt;Es darf nie ein größerer Spielstein auf einen kleineren gelegt werden.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Das folgende Bild, das von &lt;a href=&#34;https://de.wikipedia.org/wiki/T%C3%BCrme_von_Hanoi#/media/File:Tower_of_Hanoi_4.gif&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt; übernommen wurde, veranschaulicht das Prinzip:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

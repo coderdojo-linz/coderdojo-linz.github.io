@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Android Map Reactions App, Teil 2 </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,42 +150,27 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#android-map-reactions-app-teil-2">Android Map Reactions App, Teil 2</a>
-<ul>
-<li><a href="#voraussetzungen">Voraussetzungen</a></li>
-<li><a href="#die-app-aufräumen-und-umstrukturieren">Die App aufräumen und umstrukturieren</a></li>
-<li><a href="#aktuellen-status-in-der-info-textview-anzeigen">Aktuellen Status in der Info-TextView anzeigen</a></li>
-<li><a href="#input-validierung">Input Validierung</a></li>
-<li><a href="#asynchroner-http-request">Asynchroner HTTP Request</a></li>
-<li><a href="#timeout-und-serverless-function-warmup">Timeout und Serverless Function Warmup</a></li>
-<li><a href="#mehrsprachige-app">Mehrsprachige App</a></li>
-<li><a href="#styling-der-app">Styling der App</a>
-<ul>
-<li><a href="#styling-des-phraseinputfragment">Styling des <code>PhraseInputFragment</code></a>
-<ul>
-<li><a href="#hintergrund">Hintergrund</a></li>
-<li><a href="#ui-elemente">UI Elemente</a></li>
-<li><a href="#schriftart">Schriftart</a></li>
-</ul></li>
-<li><a href="#styling-des-mapfragment">Styling des <code>MapFragment</code></a>
-<ul>
-<li><a href="#infobox">Infobox</a></li>
-<li><a href="#karte">Karte</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#attribution-links-für-die-icons-und-das-hintergrundbild">&ldquo;Attribution Links&rdquo; für die Icons und das Hintergrundbild</a></li>
-<li><a href="#ressourcen">Ressourcen</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+    <li><a href="#die-app-aufräumen-und-umstrukturieren">Die App aufräumen und umstrukturieren</a></li>
+    <li><a href="#aktuellen-status-in-der-info-textview-anzeigen">Aktuellen Status in der Info-TextView anzeigen</a></li>
+    <li><a href="#input-validierung">Input Validierung</a></li>
+    <li><a href="#asynchroner-http-request">Asynchroner HTTP Request</a></li>
+    <li><a href="#timeout-und-serverless-function-warmup">Timeout und Serverless Function Warmup</a></li>
+    <li><a href="#mehrsprachige-app">Mehrsprachige App</a></li>
+    <li><a href="#styling-der-app">Styling der App</a>
+      <ul>
+        <li><a href="#styling-des-phraseinputfragment">Styling des <code>PhraseInputFragment</code></a></li>
+        <li><a href="#styling-des-mapfragment">Styling des <code>MapFragment</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#attribution-links-für-die-icons-und-das-hintergrundbild">&ldquo;Attribution Links&rdquo; für die Icons und das Hintergrundbild</a></li>
+    <li><a href="#ressourcen">Ressourcen</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="android-map-reactions-app-teil-2">Android Map Reactions App, Teil 2</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="android-map-reactions-app-teil-2">Android Map Reactions App, Teil 2</h1>
 <p>Im <a href="/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/">ersten Teil dieser Anleitung</a> hast du eine Android App in Java programmiert. In dieser App kann man bereits einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem <a href="https://xkcd.com/2260/" target="_blank">Comic Strip</a>. In diesem Teil werden einige Verbesserungen beschrieben, die du noch machen kannst. Diese beinhalten unter anderem das Styling der App, ein paar Verbesserungen des Codes selbst und die App sollte auch etwas stabiler werden.</p>
-
 
 
 
@@ -209,254 +194,272 @@
     </div>
 </div>
 
-
 <h2 id="voraussetzungen">Voraussetzungen</h2>
-
 <ul>
 <li>Du solltest den <a href="/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/">ersten Teil der Anleitung</a> abgeschlossen haben.</li>
 <li>Ein Smartphone mit Android 5.0 oder höher (<a href="https://support.google.com/android/answer/7680439?hl=de" target="_blank">So findest du die Android Version deines Smartphones</a>). Alternativ kannst du auch einen <a href="https://developer.android.com/studio/run/emulator" target="_blank">Emulator</a> verwenden.</li>
 <li>Ein Kabel um dein Smartphone mit dem Computer zu verbinden (falls du dein Smartphone verwendest).</li>
 <li><a href="https://developer.android.com/studio/install" target="_blank">Android Studio</a></li>
 </ul>
-
 <h2 id="die-app-aufräumen-und-umstrukturieren">Die App aufräumen und umstrukturieren</h2>
-
 <p>Der erste Schritt um die App zu verbessern, ist sie erstmal aufzuräumen. Dabei wirst du die Namen der Dateien verbessern und Teile, die nicht mehr benötigt werden, löschen. Befolge dazu die unten stehenden Schritte.</p>
-
 <ol>
-<li><p>Benenne als erstes die beiden Fragments so um, dass ihre Namen verraten, welche Funktion sie haben. Wenn ein Projekt größer wird, ist es so einfacher zu verstehen, was sich wo befindet.</p>
-
+<li>
+<p>Benenne als erstes die beiden Fragments so um, dass ihre Namen verraten, welche Funktion sie haben. Wenn ein Projekt größer wird, ist es so einfacher zu verstehen, was sich wo befindet.</p>
 <ol>
 <li>Klicke mit der rechten Maustaste auf das <code>FirstFragment</code> und wähle &ldquo;Refactor&rdquo; -&gt; &ldquo;Rename&hellip;&rdquo; aus.</li>
 <li>Ersetze den Namen &ldquo;FirstFragment&rdquo; mit &ldquo;PhraseInputFragment&rdquo;.</li>
 <li>Klicke auf &ldquo;Refactor&rdquo;.</li>
 <li>Klicke nun auf das Layout <code>fragment_first.xml</code> und klicke wieder auf &ldquo;Refactor&rdquo; -&gt; &ldquo;Rename&hellip;&rdquo; um es in &ldquo;fragment_phrase_input.xml&rdquo; umzubenennen.</li>
-<li>Verwende die gleichen Schritte um das <code>SecondFragment</code> in &ldquo;MapFragment&rdquo; umzubenennen. Benenne auch das Layout <code>fragment_second.xml</code> in &ldquo;fragment_map.xml&rdquo; um.
-<br /></li>
-</ol></li>
-
-<li><p>Öffne die Datei <code>res/values/strings.xml</code> und lösche alle Strings außer die Strings <code>app_name</code>, <code>enter_a_phrase</code> und <code>go</code>.</p></li>
-
-<li><p>Füge die folgenden zwei Strings hinzu.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;string name=<span style="color:#a31515">&#34;phrase_input_fragment_label&#34;</span>&gt;PhraseInputFragment&lt;/string&gt;
-&lt;string name=<span style="color:#a31515">&#34;map_fragment_label&#34;</span>&gt;MapFragment&lt;/string&gt;</code></pre></div></li>
-
-<li><p>Öffne die Datei <code>res/navigation/nav_graph.xml</code>.</p></li>
-
-<li><p>Klicke auf das <code>FirstFragment</code> und ändere das <code>label</code> rechts in der Attributliste auf &ldquo;@string/phrase_input_fragment_label&rdquo;.</p></li>
-
-<li><p>Ändere das <code>label</code> des <code>SecondFragment</code> auf &ldquo;@string/map_fragment_label&rdquo;.</p></li>
-
-<li><p>Ändere auch die <code>id</code> der beiden Fragments auf &ldquo;PhraseInputFragment&rdquo; beziehungsweise &ldquo;MapFragment&rdquo;.</p></li>
-
-<li><p>Da du keine Navigation vom <code>MapFragment</code> zum <code>PhraseInputFragment</code> benötigst, kannst du den Pfeil vom <code>MapFragment</code> zum <code>PhraseInputFragment</code> löschen.</p></li>
-
-<li><p>Klicke auf den Pfeil vom <code>PhraseInputFragment</code> zum <code>MapFragment</code> und ändere die <code>id</code> auf &ldquo;action_PhraseInputFragment_to_MapFragment&rdquo;.</p></li>
-
-<li><p>Klicke mit der rechten Maustaste auf das Package in dem die <code>MainActivity</code> enthalten ist und klicke auf <code>New</code> -&gt; <code>Package</code>.</p></li>
-
-<li><p>Nenne das neue Package &ldquo;model&rdquo;. Lass dazu den Teil, der schon im Eingabefeld steht, einfach stehen und schreibe &ldquo;model&rdquo; dahinter. Drücke dann auf &ldquo;Enter&rdquo;.</p></li>
-
-<li><p>Ziehe nun die Klasse <code>Place.java</code> in das neu erstellte Package und klicke auf &ldquo;Refactor&rdquo;.</p></li>
+<li>Verwende die gleichen Schritte um das <code>SecondFragment</code> in &ldquo;MapFragment&rdquo; umzubenennen. Benenne auch das Layout <code>fragment_second.xml</code> in &ldquo;fragment_map.xml&rdquo; um.</li>
 </ol>
-
+</li>
+<li>
+<p>Öffne die Datei <code>res/values/strings.xml</code> und lösche alle Strings außer die Strings <code>app_name</code>, <code>enter_a_phrase</code> und <code>go</code>.</p>
+</li>
+<li>
+<p>Füge die folgenden zwei Strings hinzu.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>&lt;string name=<span style="color:#a31515">&#34;phrase_input_fragment_label&#34;</span>&gt;PhraseInputFragment&lt;/string&gt;
+</span></span><span style="display:flex;"><span>&lt;string name=<span style="color:#a31515">&#34;map_fragment_label&#34;</span>&gt;MapFragment&lt;/string&gt;
+</span></span></code></pre></div><ol start="4">
+<li>
+<p>Öffne die Datei <code>res/navigation/nav_graph.xml</code>.</p>
+</li>
+<li>
+<p>Klicke auf das <code>FirstFragment</code> und ändere das <code>label</code> rechts in der Attributliste auf &ldquo;@string/phrase_input_fragment_label&rdquo;.</p>
+</li>
+<li>
+<p>Ändere das <code>label</code> des <code>SecondFragment</code> auf &ldquo;@string/map_fragment_label&rdquo;.</p>
+</li>
+<li>
+<p>Ändere auch die <code>id</code> der beiden Fragments auf &ldquo;PhraseInputFragment&rdquo; beziehungsweise &ldquo;MapFragment&rdquo;.</p>
+</li>
+<li>
+<p>Da du keine Navigation vom <code>MapFragment</code> zum <code>PhraseInputFragment</code> benötigst, kannst du den Pfeil vom <code>MapFragment</code> zum <code>PhraseInputFragment</code> löschen.</p>
+</li>
+<li>
+<p>Klicke auf den Pfeil vom <code>PhraseInputFragment</code> zum <code>MapFragment</code> und ändere die <code>id</code> auf &ldquo;action_PhraseInputFragment_to_MapFragment&rdquo;.</p>
+</li>
+<li>
+<p>Klicke mit der rechten Maustaste auf das Package in dem die <code>MainActivity</code> enthalten ist und klicke auf <code>New</code> -&gt; <code>Package</code>.</p>
+</li>
+<li>
+<p>Nenne das neue Package &ldquo;model&rdquo;. Lass dazu den Teil, der schon im Eingabefeld steht, einfach stehen und schreibe &ldquo;model&rdquo; dahinter. Drücke dann auf &ldquo;Enter&rdquo;.</p>
+</li>
+<li>
+<p>Ziehe nun die Klasse <code>Place.java</code> in das neu erstellte Package und klicke auf &ldquo;Refactor&rdquo;.</p>
+</li>
+</ol>
 <h2 id="aktuellen-status-in-der-info-textview-anzeigen">Aktuellen Status in der Info-TextView anzeigen</h2>
-
 <p>Derzeit wird die Info-<code>TextView</code> zum Anzeigen der Phrase verwendet. Die <code>TextView</code> soll nun den Text &ldquo;Wird geladen&hellip;&rdquo; anzeigen, während die Route geladen wird. Außerdem soll überprüft werden, ob überhaupt eine Route geladen wurde bevor die Karte angezeigt wird. Falls nicht soll ein Fehler angezeigt werden. Wenn du möchtest, ist das eine gute Aufgabe, die du allein probieren kannst. Lies also hier nicht weiter und versuche das Problem selbst zu lösen. Meine Lösung ist in den folgenden Schritten beschrieben.</p>
-
 <ol>
-<li><p>Öffne die Datei <code>res/values/strings.xml</code> und füge die beiden folgenden Strings hinzu</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;string name=<span style="color:#a31515">&#34;loading&#34;</span>&gt;Wird geladen…&lt;/string&gt;
-&lt;string name=<span style="color:#a31515">&#34;load_route_error&#34;</span>&gt;Route konnte nicht geladen werden&lt;/string&gt;</code></pre></div></li>
-
-<li><p>Öffne das <code>MapFragment.java</code>.</p></li>
-
-<li><p>Lösche die Zeile <code>textViewInfo.setText(phrase);</code> in der Methode <code>onViewCreated()</code>.</p></li>
-
-<li><p>Gehe zur <code>loadRoute()</code> Methode und füge die Zeile <code>textViewInfo.setText(R.string.loading);</code> über der Zeile, in der du den StringRequest erstellt hast, ein.</p></li>
-
-<li><p>Gehe zum <code>onResponse()</code> Callback und füge den folgenden Code direkt nach der Zeile, in der die Route geparst wird, ein.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Überprüft ob die Route geparst werden konnte und Elemente enthält
-</span><span style="color:#008000"></span><span style="color:#00f">if</span> (route == <span style="color:#00f">null</span> || route.isEmpty()) {
-	<span style="color:#008000">// Wenn nicht, wird ein Fehler angezeigt und die Karte wird nicht angezeigt
-</span><span style="color:#008000"></span>	textViewInfo.setText(getString(R.string.load_route_error));
-	<span style="color:#00f">return</span>;
-}
-
-<span style="color:#008000">// Zeigt den eingegebenen Satz in der Info TextView an, da die Route erfolgreich geladen werden konnte
-</span><span style="color:#008000"></span>textViewInfo.setText(phrase);</code></pre></div></li>
+<li>Öffne die Datei <code>res/values/strings.xml</code> und füge die beiden folgenden Strings hinzu</li>
 </ol>
-
-<h2 id="input-validierung">Input Validierung</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>&lt;string name=<span style="color:#a31515">&#34;loading&#34;</span>&gt;Wird geladen…&lt;/string&gt;
+</span></span><span style="display:flex;"><span>&lt;string name=<span style="color:#a31515">&#34;load_route_error&#34;</span>&gt;Route konnte nicht geladen werden&lt;/string&gt;
+</span></span></code></pre></div><ol start="2">
+<li>Öffne das <code>MapFragment.java</code>.</li>
+<li>Lösche die Zeile <code>textViewInfo.setText(phrase);</code> in der Methode <code>onViewCreated()</code>.</li>
+<li>Gehe zur <code>loadRoute()</code> Methode und füge die Zeile <code>textViewInfo.setText(R.string.loading);</code> über der Zeile, in der du den StringRequest erstellt hast, ein.</li>
+<li>Gehe zum <code>onResponse()</code> Callback und füge den folgenden Code direkt nach der Zeile, in der die Route geparst wird, ein.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Überprüft ob die Route geparst werden konnte und Elemente enthält</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">if</span> (route == <span style="color:#00f">null</span> || route.isEmpty()) {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Wenn nicht, wird ein Fehler angezeigt und die Karte wird nicht angezeigt</span>
+</span></span><span style="display:flex;"><span>	textViewInfo.setText(getString(R.string.load_route_error));
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">return</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Zeigt den eingegebenen Satz in der Info TextView an, da die Route erfolgreich geladen werden konnte</span>
+</span></span><span style="display:flex;"><span>textViewInfo.setText(phrase);
+</span></span></code></pre></div><h2 id="input-validierung">Input Validierung</h2>
 <p>Wenn man im <code>PhraseInputFragment</code> auf &ldquo;LOS&rdquo; klickt, wird derzeit nicht überprüft, ob überhaupt ein Satz eingegeben wurde. Das Ziel in diesem Abschnitt ist es, einen Fehler anzuzeigen, wenn nichts eingegeben wurde. Auch bei dieser Aufgabe würde ich dir empfehlen, sie zuerst selbst zu probieren. Im Folgenden ist meine Lösung beschrieben.</p>
-
 <ol>
-<li><p>Füge den String <code>&lt;string name=&quot;please_enter_a_phrase&quot;&gt;Bitte gib einen Satz ein&lt;/string&gt;</code> zu den Strings hinzu.</p></li>
-
-<li><p>Öffne das <code>PhraseInputFragment</code>.</p></li>
-
-<li><p>Füge den folgenden Code unter der Zeile <code>String phrase = editText.getText().toString();</code> ein.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Überprüft ob ein Satz eingegeben wurde und ob dieser nur aus Buchstaben und Leerzeichen besteht
-</span><span style="color:#008000"></span><span style="color:#00f">if</span> (StringUtils.isBlank(phrase) || !StringUtils.isAlphaSpace(phrase)) {
-	<span style="color:#008000">// Wenn nicht wird ein Fehler angezeigt und die Methode wird nicht weiter ausgeführt
-</span><span style="color:#008000"></span>	editText.setError(getString(R.string.please_enter_a_phrase));
-	<span style="color:#00f">return</span>;
-}</code></pre></div></li>
+<li>
+<p>Füge den String <code>&lt;string name=&quot;please_enter_a_phrase&quot;&gt;Bitte gib einen Satz ein&lt;/string&gt;</code> zu den Strings hinzu.</p>
+</li>
+<li>
+<p>Öffne das <code>PhraseInputFragment</code>.</p>
+</li>
+<li>
+<p>Füge den folgenden Code unter der Zeile <code>String phrase = editText.getText().toString();</code> ein.</p>
+</li>
 </ol>
-
-<h2 id="asynchroner-http-request">Asynchroner HTTP Request</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Überprüft ob ein Satz eingegeben wurde und ob dieser nur aus Buchstaben und Leerzeichen besteht</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">if</span> (StringUtils.isBlank(phrase) || !StringUtils.isAlphaSpace(phrase)) {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Wenn nicht wird ein Fehler angezeigt und die Methode wird nicht weiter ausgeführt</span>
+</span></span><span style="display:flex;"><span>	editText.setError(getString(R.string.please_enter_a_phrase));
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">return</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="asynchroner-http-request">Asynchroner HTTP Request</h2>
 <p>Wie bereits <a href="/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/">im ersten Teil der Anleitung</a> beschrieben, setzt die Methode <code>roadManager.getRoad(wayPoints);</code> einen HTTP Request am Main Thread ab. Das bedeutet, dass diese Methode den Main Thread, und somit die gesamte App, blockiert bis der Request abgeschlossen ist. Deshalb waren auch die folgenden beiden Zeilen nötig.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">StrictMode.ThreadPolicy policy = <span style="color:#00f">new</span> StrictMode.ThreadPolicy.Builder().permitAll().build();
-StrictMode.setThreadPolicy(policy);</code></pre></div>
-<p>Diese Zeilen werden am Ende dieses Abschnitts nicht mehr nötig sein, da du den Request in einem anderen Thread absetzen und das Ergebnis mithilfe eines Callbacks zurückgeben wirst. Befolge die nächsten Schritte, um dieses Ziel zu erreichen.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>StrictMode.ThreadPolicy policy = <span style="color:#00f">new</span> StrictMode.ThreadPolicy.Builder().permitAll().build();
+</span></span><span style="display:flex;"><span>StrictMode.setThreadPolicy(policy);
+</span></span></code></pre></div><p>Diese Zeilen werden am Ende dieses Abschnitts nicht mehr nötig sein, da du den Request in einem anderen Thread absetzen und das Ergebnis mithilfe eines Callbacks zurückgeben wirst. Befolge die nächsten Schritte, um dieses Ziel zu erreichen.</p>
 <ol>
-<li><p>Erstelle ein neues Package namens &ldquo;util&rdquo;.</p></li>
-
-<li><p>Erstelle in diesem Package eine neue Klasse mit dem Namen <code>GetRoadRunnable</code> und ein neues Interface (&ldquo;New&rdquo; -&gt; &ldquo;Java Class&rdquo; -&gt; mit den Pfeiltasten &ldquo;Interface auswählen&rdquo;) mit dem Namen <code>GetRoadResponseListener</code>.</p></li>
-
-<li><p>Öffne den <code>GetRoadResponseListener</code> und füge die Methode <code>void onResponse(Road road);</code> ein. Diese Methode wird dann ausgeführt, sobald die Route/Straße geladen wurde. Das Interface sollte dann so aussehen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">interface</span> <span style="color:#2b91af">GetRoadResponseListener</span> {
-	<span style="color:#008000">// Wird aufgerufen, wenn die Route geladen wurde
-</span><span style="color:#008000"></span>	<span style="color:#2b91af">void</span> onResponse(Road road);
-}</code></pre></div></li>
-
-<li><p>Füge den folgenden Code in das <code>GetRoadRunnable</code> ein.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">GetRoadRunnable</span> <span style="color:#00f">implements</span> Runnable {
-
-	<span style="color:#008000">// Die Activity, in der das Runnable erstellt wurde
-</span><span style="color:#008000"></span>	<span style="color:#00f">private</span> Activity activity;
-	<span style="color:#008000">// Die Wegpunkte, die enthalten sein sollen
-</span><span style="color:#008000"></span>	<span style="color:#00f">private</span> ArrayList&lt;GeoPoint&gt; wayPoints;
-	<span style="color:#008000">// Der ResponseListener, dessen &#34;onResponse&#34; aufgerufen wird, sobald eine Antwort verfügbar ist
-</span><span style="color:#008000"></span>	<span style="color:#00f">private</span> GetRoadResponseListener responseListener;
-
-	<span style="color:#008000">// Konstruktor - Erstellt eine neue Instanz des GetRoadRunnable
-</span><span style="color:#008000"></span>	<span style="color:#00f">public</span> GetRoadRunnable(Activity activity, ArrayList&lt;GeoPoint&gt; wayPoints, GetRoadResponseListener responseListener) {
-		<span style="color:#00f">this</span>.activity = activity;
-		<span style="color:#00f">this</span>.wayPoints = wayPoints;
-		<span style="color:#00f">this</span>.responseListener = responseListener;
-	}
-
-	@Override
-	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> run() {
-		<span style="color:#008000">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
-</span><span style="color:#008000"></span>		RoadManager roadManager = <span style="color:#00f">new</span> OSRMRoadManager(activity);
-		<span style="color:#008000">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben übergeben wurden.
-</span><span style="color:#008000"></span>		<span style="color:#00f">final</span> Road road = roadManager.getRoad(wayPoints);
-
-		<span style="color:#008000">// Führt den Code innerhalb des run() {} Blocks am UI Thread aus. 
-</span><span style="color:#008000"></span>		<span style="color:#008000">// UI Elemente können nur auf diesem Thread manipuliert werden.
-</span><span style="color:#008000"></span>		activity.runOnUiThread(<span style="color:#00f">new</span> Runnable() {
-			@Override
-			<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> run() {
-				<span style="color:#008000">// Ruft die onResponse() des ResponseListeners auf
-</span><span style="color:#008000"></span>				responseListener.onResponse(road);
-			}
-		});
-	}
-}</code></pre></div></li>
-
-<li><p>Öffne das <code>MapFragment</code>.</p></li>
-
-<li><p>Lösche die folgenden Zeilen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Die folgenden zwei Zeilen werden benötigt um HTTP Requests am Main Thread abzusetzen.
-</span><span style="color:#008000">// Mehr dazu und wie man es besser macht im Abschnitt &#34;Bonus: Verbesserungen&#34; der Anleitung.
-</span><span style="color:#008000"></span>StrictMode.ThreadPolicy policy = <span style="color:#00f">new</span> StrictMode.ThreadPolicy.Builder().permitAll().build();
-StrictMode.setThreadPolicy(policy);
-
-<span style="color:#008000">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert
-</span><span style="color:#008000"></span>RoadManager roadManager = <span style="color:#00f">new</span> OSRMRoadManager(getContext());
-<span style="color:#008000">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben zur Liste hinzugefügt wurden.
-</span><span style="color:#008000">// Diese methode macht im Hintergrund einen HTTP Request am Main Thread.
-</span><span style="color:#008000"></span>Road road = roadManager.getRoad(geoPoints);</code></pre></div></li>
-
-<li><p>Lösche außerdem die Zeile <code>mapView.getController().zoomTo(6.0);</code> weiter oben in der Methode.</p></li>
-
-<li><p>Füge den folgenden Code nach der <code>for</code>-Schleife ein.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Erstellt ein neues GetRoadRunnable
-</span><span style="color:#008000"></span>Runnable getRoadRunnable = <span style="color:#00f">new</span> GetRoadRunnable(getActivity(), geoPoints, <span style="color:#00f">new</span> GetRoadResponseListener() {
-	@Override
-	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onResponse(Road road) {
-		<span style="color:#008000">// Dieser Code wird ausgeführt, sobald eine Antwort verfügbar ist.
-</span><span style="color:#008000"></span>	}
-});
-        
-<span style="color:#008000">// Erstellt einen neuen Thread mit dem oben erstellten Runnable und führt diesen aus.
-</span><span style="color:#008000"></span><span style="color:#00f">new</span> Thread(getRoadRunnable).start();</code></pre></div></li>
-
-<li><p>Kopiere alle Zeilen unter diesem Code (siehe Codeblock unten) in die <code>onResponse()</code> Methode.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Erstellt die Linie, die dann auf der Karte angezeigt wird.
-</span><span style="color:#008000"></span>Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);
-<span style="color:#008000">// Zeigt die Linie auf der Karte an.
-</span><span style="color:#008000"></span>mapView.getOverlays().add(roadOverlay);
-
-<span style="color:#008000">// Erlaubt der Karte nicht weiter als auf dieses Level zu zoomen
-</span><span style="color:#008000"></span>mapView.setMaxZoomLevel(5.0);
-<span style="color:#008000">// Zentriert die Karte über der Route
-</span><span style="color:#008000"></span>mapView.zoomToBoundingBox(roadOverlay.getBounds(), <span style="color:#00f">true</span>, 150);
-<span style="color:#008000">// Aktualisiert die MapView, damit die Overlays richtig angezeigt werden.
-</span><span style="color:#008000"></span>mapView.invalidate();</code></pre></div></li>
+<li>
+<p>Erstelle ein neues Package namens &ldquo;util&rdquo;.</p>
+</li>
+<li>
+<p>Erstelle in diesem Package eine neue Klasse mit dem Namen <code>GetRoadRunnable</code> und ein neues Interface (&ldquo;New&rdquo; -&gt; &ldquo;Java Class&rdquo; -&gt; mit den Pfeiltasten &ldquo;Interface auswählen&rdquo;) mit dem Namen <code>GetRoadResponseListener</code>.</p>
+</li>
+<li>
+<p>Öffne den <code>GetRoadResponseListener</code> und füge die Methode <code>void onResponse(Road road);</code> ein. Diese Methode wird dann ausgeführt, sobald die Route/Straße geladen wurde. Das Interface sollte dann so aussehen.</p>
+</li>
 </ol>
-
-<h2 id="timeout-und-serverless-function-warmup">Timeout und Serverless Function Warmup</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">interface</span> <span style="color:#2b91af">GetRoadResponseListener</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Wird aufgerufen, wenn die Route geladen wurde</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#2b91af">void</span> onResponse(Road road);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="4">
+<li>Füge den folgenden Code in das <code>GetRoadRunnable</code> ein.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">GetRoadRunnable</span> <span style="color:#00f">implements</span> Runnable {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Die Activity, in der das Runnable erstellt wurde</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">private</span> Activity activity;
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Die Wegpunkte, die enthalten sein sollen</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">private</span> ArrayList&lt;GeoPoint&gt; wayPoints;
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Der ResponseListener, dessen &#34;onResponse&#34; aufgerufen wird, sobald eine Antwort verfügbar ist</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">private</span> GetRoadResponseListener responseListener;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Konstruktor - Erstellt eine neue Instanz des GetRoadRunnable</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">public</span> GetRoadRunnable(Activity activity, ArrayList&lt;GeoPoint&gt; wayPoints, GetRoadResponseListener responseListener) {
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">this</span>.activity = activity;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">this</span>.wayPoints = wayPoints;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">this</span>.responseListener = responseListener;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	@Override
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> run() {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert</span>
+</span></span><span style="display:flex;"><span>		RoadManager roadManager = <span style="color:#00f">new</span> OSRMRoadManager(activity);
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben übergeben wurden.</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">final</span> Road road = roadManager.getRoad(wayPoints);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// Führt den Code innerhalb des run() {} Blocks am UI Thread aus. </span>
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// UI Elemente können nur auf diesem Thread manipuliert werden.</span>
+</span></span><span style="display:flex;"><span>		activity.runOnUiThread(<span style="color:#00f">new</span> Runnable() {
+</span></span><span style="display:flex;"><span>			@Override
+</span></span><span style="display:flex;"><span>			<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> run() {
+</span></span><span style="display:flex;"><span>				<span style="color:#008000">// Ruft die onResponse() des ResponseListeners auf</span>
+</span></span><span style="display:flex;"><span>				responseListener.onResponse(road);
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>		});
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="5">
+<li>
+<p>Öffne das <code>MapFragment</code>.</p>
+</li>
+<li>
+<p>Lösche die folgenden Zeilen.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Die folgenden zwei Zeilen werden benötigt um HTTP Requests am Main Thread abzusetzen.</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Mehr dazu und wie man es besser macht im Abschnitt &#34;Bonus: Verbesserungen&#34; der Anleitung.</span>
+</span></span><span style="display:flex;"><span>StrictMode.ThreadPolicy policy = <span style="color:#00f">new</span> StrictMode.ThreadPolicy.Builder().permitAll().build();
+</span></span><span style="display:flex;"><span>StrictMode.setThreadPolicy(policy);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Erstellt einen neuen RoadManager, der sich ums Erstellen der Route kümmert</span>
+</span></span><span style="display:flex;"><span>RoadManager roadManager = <span style="color:#00f">new</span> OSRMRoadManager(getContext());
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Lädt eine Route, die alle GeoPoints beinhaltet, die oben zur Liste hinzugefügt wurden.</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Diese methode macht im Hintergrund einen HTTP Request am Main Thread.</span>
+</span></span><span style="display:flex;"><span>Road road = roadManager.getRoad(geoPoints);
+</span></span></code></pre></div><ol start="7">
+<li>
+<p>Lösche außerdem die Zeile <code>mapView.getController().zoomTo(6.0);</code> weiter oben in der Methode.</p>
+</li>
+<li>
+<p>Füge den folgenden Code nach der <code>for</code>-Schleife ein.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Erstellt ein neues GetRoadRunnable</span>
+</span></span><span style="display:flex;"><span>Runnable getRoadRunnable = <span style="color:#00f">new</span> GetRoadRunnable(getActivity(), geoPoints, <span style="color:#00f">new</span> GetRoadResponseListener() {
+</span></span><span style="display:flex;"><span>	@Override
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onResponse(Road road) {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// Dieser Code wird ausgeführt, sobald eine Antwort verfügbar ist.</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Erstellt einen neuen Thread mit dem oben erstellten Runnable und führt diesen aus.</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">new</span> Thread(getRoadRunnable).start();
+</span></span></code></pre></div><ol start="9">
+<li>Kopiere alle Zeilen unter diesem Code (siehe Codeblock unten) in die <code>onResponse()</code> Methode.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Erstellt die Linie, die dann auf der Karte angezeigt wird.</span>
+</span></span><span style="display:flex;"><span>Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Zeigt die Linie auf der Karte an.</span>
+</span></span><span style="display:flex;"><span>mapView.getOverlays().add(roadOverlay);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Erlaubt der Karte nicht weiter als auf dieses Level zu zoomen</span>
+</span></span><span style="display:flex;"><span>mapView.setMaxZoomLevel(5.0);
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Zentriert die Karte über der Route</span>
+</span></span><span style="display:flex;"><span>mapView.zoomToBoundingBox(roadOverlay.getBounds(), <span style="color:#00f">true</span>, 150);
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Aktualisiert die MapView, damit die Overlays richtig angezeigt werden.</span>
+</span></span><span style="display:flex;"><span>mapView.invalidate();
+</span></span></code></pre></div><h2 id="timeout-und-serverless-function-warmup">Timeout und Serverless Function Warmup</h2>
 <p>Der Endpunkt, von dem die Route abgefragt wird, ist einer sogenannten &ldquo;Serverless Function&rdquo; gehosted. Das bedeutet, dass der Cloud-Anbieter, der für die Funktion verantwortlich ist, die benötigten Ressourcen dynamisch verwaltet. Werden keine Anfragen zum Endpunkt gemacht, wird der Code auch nicht ausgeführt. Deshalb muss das System erst &ldquo;hochgefahren&rdquo; werden bevor ein Request bearbeitet werden kann. Das bezeichnet man als &ldquo;cold start&rdquo;. Wird kurz danach ein zweiter Request geschickt, sind die Ressourcen noch vorhanden und der Request kann deutlich schneller verarbeitet werden. Das ist der Grund, warum der erste Request um die Route abzufragen momentan noch oft fehlschlägt.</p>
-
 <p>Um das Problem zu lösen kannst du das sogenannte &ldquo;Timeout&rdquo; bei <code>Volley</code> (die Bibliothek mit der der Request abgesetzt wird) erhöhen. Das Timeout definiert wieviel Zeit vergehen darf, bevor man davon ausgeht, dass keine Antwort mehr kommt und der Request abgebrochen wird. Standardmäßig liegt das Timeout bei <code>Volley</code> bei 5 Sekunden. Füge den folgenden Code im <code>MapFragment</code> hinzu, bevor der <code>stringRequest</code> zur <code>requestQueue</code> hinzugefügt wird.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Erhöht das Timeout für den Request auf 15 Sekunden
-</span><span style="color:#008000"></span>stringRequest.setRetryPolicy(<span style="color:#00f">new</span> DefaultRetryPolicy(
-	15000, <span style="color:#008000">// Das Timeout in Millisekunden
-</span><span style="color:#008000"></span>	1, <span style="color:#008000">// Wie oft der Request wiederholt werden soll, wenn er fehlschlägt
-</span><span style="color:#008000"></span>	1 <span style="color:#008000">// Mit dieser Zahl wird das Timeout bei jedem neuen Versuch multipliziert
-</span><span style="color:#008000"></span>));</code></pre></div>
-<p>Um dem oben beschriebenen &ldquo;cold start&rdquo; vorzubeugen, kann man zum Beispiel schon beim Start der App einen leeren Request an die Serverless Function schicken um sie zu starten. Das ist wieder eine Aufgabe, den du allein probieren kannst, wenn du möchtest. Setze dazu im <code>PhraseInputFragment</code> einen Request zum Server ab, bei dem du das Ergebnis ignorierst. Im folgenden ist beschrieben, wie ich es gelöst habe.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Erhöht das Timeout für den Request auf 15 Sekunden</span>
+</span></span><span style="display:flex;"><span>stringRequest.setRetryPolicy(<span style="color:#00f">new</span> DefaultRetryPolicy(
+</span></span><span style="display:flex;"><span>	15000, <span style="color:#008000">// Das Timeout in Millisekunden</span>
+</span></span><span style="display:flex;"><span>	1, <span style="color:#008000">// Wie oft der Request wiederholt werden soll, wenn er fehlschlägt</span>
+</span></span><span style="display:flex;"><span>	1 <span style="color:#008000">// Mit dieser Zahl wird das Timeout bei jedem neuen Versuch multipliziert</span>
+</span></span><span style="display:flex;"><span>));
+</span></span></code></pre></div><p>Um dem oben beschriebenen &ldquo;cold start&rdquo; vorzubeugen, kann man zum Beispiel schon beim Start der App einen leeren Request an die Serverless Function schicken um sie zu starten. Das ist wieder eine Aufgabe, den du allein probieren kannst, wenn du möchtest. Setze dazu im <code>PhraseInputFragment</code> einen Request zum Server ab, bei dem du das Ergebnis ignorierst. Im folgenden ist beschrieben, wie ich es gelöst habe.</p>
 <ol>
-<li><p>Öffne das <code>PhraseInputFragment.java</code>.</p></li>
-
-<li><p>Erstelle mit dem folgenden Code eine neue Methode.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> <span style="color:#2b91af">void</span> warmUpServerlessFunction() {
-	<span style="color:#008000">// Erstellt eine Queue, die alle Requests ausführt, die zu ihr hinzugefügt werden
-</span><span style="color:#008000"></span>	RequestQueue requestQueue = Volley.newRequestQueue(getContext());
-	<span style="color:#008000">// Die URL für den Request. Diese beinhaltet keine phrase, da die Function nur gestartet werden soll;
-</span><span style="color:#008000"></span>	String url = <span style="color:#a31515">&#34;https://api.map-reactions.ksick.dev/v0-1/route?phrase=wakeup&#34;</span>;
-
-	<span style="color:#008000">// Erstellt den Request, der später abgesetzt werden soll
-</span><span style="color:#008000"></span>	StringRequest blankRequest = <span style="color:#00f">new</span> StringRequest(Request.Method.GET, url, <span style="color:#00f">new</span> Response.Listener&lt;String&gt;() {
-		@Override
-		<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onResponse(String response) {
-			<span style="color:#008000">// Das Ergebnis wird ignoriert
-</span><span style="color:#008000"></span>		}
-	}, <span style="color:#00f">null</span>);
-
-	<span style="color:#008000">// Fügt den Request zur RequestQueue hinzu um ihn abzusetzen
-</span><span style="color:#008000"></span>	requestQueue.add(blankRequest);
-}</code></pre></div></li>
-
-<li><p>Rufe die neue Methode ganz unten in der <code>onViewCreated()</code> auf.</p></li>
+<li>
+<p>Öffne das <code>PhraseInputFragment.java</code>.</p>
+</li>
+<li>
+<p>Erstelle mit dem folgenden Code eine neue Methode.</p>
+</li>
 </ol>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">private</span> <span style="color:#2b91af">void</span> warmUpServerlessFunction() {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Erstellt eine Queue, die alle Requests ausführt, die zu ihr hinzugefügt werden</span>
+</span></span><span style="display:flex;"><span>	RequestQueue requestQueue = Volley.newRequestQueue(getContext());
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Die URL für den Request. Diese beinhaltet keine phrase, da die Function nur gestartet werden soll;</span>
+</span></span><span style="display:flex;"><span>	String url = <span style="color:#a31515">&#34;https://api.map-reactions.ksick.dev/v0-1/route?phrase=wakeup&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Erstellt den Request, der später abgesetzt werden soll</span>
+</span></span><span style="display:flex;"><span>	StringRequest blankRequest = <span style="color:#00f">new</span> StringRequest(Request.Method.GET, url, <span style="color:#00f">new</span> Response.Listener&lt;String&gt;() {
+</span></span><span style="display:flex;"><span>		@Override
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onResponse(String response) {
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// Das Ergebnis wird ignoriert</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}, <span style="color:#00f">null</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Fügt den Request zur RequestQueue hinzu um ihn abzusetzen</span>
+</span></span><span style="display:flex;"><span>	requestQueue.add(blankRequest);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="3">
+<li>Rufe die neue Methode ganz unten in der <code>onViewCreated()</code> auf.</li>
+</ol>
 <h2 id="mehrsprachige-app">Mehrsprachige App</h2>
-
 <p>Wenn du während der Implementierung der App einen Text benötigt hast, hast du diesen immer in die Datei <code>res/values/strings.xml</code> eingetragen. Das ist dir wahrscheinlich etwas unpraktisch vorgekommen, aber jetzt wirst du den großen Vorteil dieser Methode sehen. Und zwar kannst du die App jetzt ganz einfach in mehrere Sprachen übersetzen. In diesem Schritt wirst du Englisch als Standardsprache festlegen und Deutsch als zweite Sprache hinzufügen. Das bedeutet, dass die Texte der App in Deutsch sein werden, wenn das Smartphone auf Deutsch eingestellt ist. In allen anderen Fällen werden die Texte in Englisch dargestellt. Befolge dazu die folgenden Schritte.</p>
-
 <ol>
-<li><p>Öffne die Datei <code>res/values/strings.xml</code>.</p></li>
-
-<li><p>Klicke mit der rechten Maustaste irgendwo in den leeren Bereich der Datei und klicke dann auf &ldquo;Show Context Actions&rdquo; -&gt; &ldquo;Open editor&rdquo;.</p></li>
-
-<li><p>Klicke links oben im Editor auf die Weltkugel mit dem grünen Plus (im Bild unten in Orange gekennzeichnet).</p></li>
-
-<li><p>Suche nach &ldquo;German&rdquo; und wähle &ldquo;German (de)&rdquo; aus.</p></li>
-
-<li><p>Kopiere nun alle Texte der Spalte &ldquo;Default Value&rdquo; nach &ldquo;German (de)&rdquo;.</p></li>
-
-<li><p>Übersetze nun die Texte in der Spalte &ldquo;Default Value&rdquo; in Englisch. Du kannst diese einfach vom folgenden Screenshot abschreiben.</p></li>
+<li>
+<p>Öffne die Datei <code>res/values/strings.xml</code>.</p>
+</li>
+<li>
+<p>Klicke mit der rechten Maustaste irgendwo in den leeren Bereich der Datei und klicke dann auf &ldquo;Show Context Actions&rdquo; -&gt; &ldquo;Open editor&rdquo;.</p>
+</li>
+<li>
+<p>Klicke links oben im Editor auf die Weltkugel mit dem grünen Plus (im Bild unten in Orange gekennzeichnet).</p>
+</li>
+<li>
+<p>Suche nach &ldquo;German&rdquo; und wähle &ldquo;German (de)&rdquo; aus.</p>
+</li>
+<li>
+<p>Kopiere nun alle Texte der Spalte &ldquo;Default Value&rdquo; nach &ldquo;German (de)&rdquo;.</p>
+</li>
+<li>
+<p>Übersetze nun die Texte in der Spalte &ldquo;Default Value&rdquo; in Englisch. Du kannst diese einfach vom folgenden Screenshot abschreiben.</p>
+</li>
 </ol>
-
 
 
 
@@ -481,13 +484,9 @@ StrictMode.setThreadPolicy(policy);
     </div>
 </div>
 
-
 <p>Wenn du die Sprache deines Telefons nun auf Englisch (oder eine andere Sprache außer Deutsch) umstellst, ist auch die App in Englisch. Stellst du die Telefonsprache zurück auf Deutsch, sind die Texte in der App wieder auf Deutsch.</p>
-
 <h2 id="styling-der-app">Styling der App</h2>
-
 <p>Die App erfüllt nun alle Ansprüche an die Funktionalität, das Design lässt aber noch zu wünschen übrig. Dieses wirst du in diesem Abschnitt verbessern. Und zwar soll die App am Ende so wie im Bild unten aussehen. Wie du das erreichst, ist in den folgenden Abschnitten beschrieben.</p>
-
 
 
 
@@ -512,135 +511,159 @@ StrictMode.setThreadPolicy(policy);
     </div>
 </div>
 
-
 <p>Beim betrachten der App, wird schnell klar, das Blau die Hauptfarbe ist. Wenn du die Datei <code>res/values/colors.xml</code> öffnest, siehst du, dass es dort drei Farben gibt. Und zwar einmal die <code>colorPrimary</code>, die Hauptfarbe der App. Zusätzlich gibt es noch die <code>colorPrimaryDark</code>, welche etwas dunkler als die <code>colorPrimary</code> sein sollte, diese wird zum Beispiel für die Hintergrundfarbe der Notification Bar verwendet. Zusätzlich gibt es noch die <code>colorAccent</code>, welche einen Kontrast zur <code>colorPrimary</code> darstellen soll und zum Beispiel für wichtige Elemente wie einen <code>Floating Action Button</code> verwendet wird. Passe die Farben mit den folgenden Schritten an.</p>
-
 <ol>
-<li><p>In dieser App brauchst du die <code>colorAccent</code> nicht, deshalb kannst du sie löschen.</p></li>
-
-<li><p>Setze für die anderen beiden Farben die folgenden Werte.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">&lt;color name=<span style="color:#a31515">&#34;colorPrimary&#34;</span>&gt;#0c27ba&lt;/color&gt;
-&lt;color name=<span style="color:#a31515">&#34;colorPrimaryDark&#34;</span>&gt;#071872&lt;/color&gt;</code></pre></div></li>
-
-<li><p>Öffne die Datei <code>res/values/styles.xml</code> und lösche die Zeile <code>&lt;item name=&quot;colorAccent&quot;&gt;@color/colorAccent&lt;/item&gt;</code>.</p></li>
+<li>
+<p>In dieser App brauchst du die <code>colorAccent</code> nicht, deshalb kannst du sie löschen.</p>
+</li>
+<li>
+<p>Setze für die anderen beiden Farben die folgenden Werte.</p>
+</li>
 </ol>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>&lt;color name=<span style="color:#a31515">&#34;colorPrimary&#34;</span>&gt;#0c27ba&lt;/color&gt;
+</span></span><span style="display:flex;"><span>&lt;color name=<span style="color:#a31515">&#34;colorPrimaryDark&#34;</span>&gt;#071872&lt;/color&gt;
+</span></span></code></pre></div><ol start="3">
+<li>Öffne die Datei <code>res/values/styles.xml</code> und lösche die Zeile <code>&lt;item name=&quot;colorAccent&quot;&gt;@color/colorAccent&lt;/item&gt;</code>.</li>
+</ol>
 <h3 id="styling-des-phraseinputfragment">Styling des <code>PhraseInputFragment</code></h3>
-
 <h4 id="hintergrund">Hintergrund</h4>
-
 <p>Der Hintergrund des <code>PhraseInputFragment</code> besteht aus zwei Teilen. Zum einen enthält er ein Bild mit einer Karte und zum anderen einen blauen Farbverlauf, der nach rechts unten hin immer heller und transparenter wird, damit man mehr vom Hintergrundbild sieht. Befolge diese Schritte um den Hintergrund so zu gestalten.</p>
-
 <ol>
-<li><p>Das Hintergrundbild ist <a href="https://unsplash.com/photos/4Zk45jNyQS4" target="_blank">hier</a> auf <a href="https://unsplash.com/" target="_blank">Unsplash</a> verfügbar. Ich habe das Bild bereits heruntergeladen, zugeschnitten und an verschiedene Auflösungen angepasst. In Android kann man Bilder und Grafiken nämlich in verschiedenen Größen zur Verfügung stellen und das Smartphone wählt dann das richtige Bild aus. Lade dir die <a href="https://coderdojo-map-reactions.s3.eu-central-1.amazonaws.com/phrase_input_background.zip" target="_blank">zip Datei</a> herunter und extrahiere sie in deinem Projektordner unter <code>main/res</code>.</p></li>
-
-<li><p>Öffne das Layout <code>fragment_phrase_input.xml</code> und wähle im <code>Component Tree</code> das <code>ConstraintLayout</code> aus.</p></li>
-
-<li><p>Suche rechts in der Attributliste nach &ldquo;background&rdquo; und gib dort &ldquo;@drawable/phrase_input_background&rdquo; ein, um das soeben heruntergeladene Bild als Hintergrund zu verwenden.</p></li>
-
-<li><p>Für den Verlauf, benötigst du eine weitere Farbe. Nämlich das halb transparente blau, das rechts unten im Verlauf zu sehen ist. Öffne deshalb die Datei <code>res/values/colors.xml</code> und füge die Farbe <code>&lt;color name=&quot;colorPrimaryTransparent&quot;&gt;#cd0c27ba&lt;/color&gt;</code> hinzu.</p></li>
-
-<li><p>Klicke, um die Datei für den Verlauf zu erstellen, mit der rechten Maustaste auf den <code>drawable</code> Ordner und klicke dann auf &ldquo;New&rdquo; -&gt; &ldquo;Drawable Resource File&rdquo;. Gib ihm den Namen &ldquo;background_gradient&rdquo; ein und klicke auf &ldquo;OK&rdquo;.</p></li>
-
-<li><p>Öffne die Datei und klicke rechts oben bei &ldquo;Design&rdquo; auf &ldquo;Code&rdquo;.</p></li>
-
-<li><p>Füge den folgenden Code ein. Dieser erstellt einen linearen Verlauf im -45° Winkel von der Farbe <code>colorPrimary</code> zur <code>colorPrimaryTransparent</code>.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-&lt;selector xmlns:android=<span style="color:#a31515">&#34;http://schemas.android.com/apk/res/android&#34;</span>&gt;
-	&lt;item&gt;
-		&lt;shape&gt;
-			&lt;gradient
-				android:angle=<span style="color:#a31515">&#34;-45&#34;</span>
-				android:startColor=<span style="color:#a31515">&#34;@color/colorPrimaryDark&#34;</span>
-				android:endColor=<span style="color:#a31515">&#34;@color/colorPrimaryTransparent&#34;</span>
-				android:type=<span style="color:#a31515">&#34;linear&#34;</span> /&gt;
-		&lt;/shape&gt;
-	&lt;/item&gt;
-&lt;/selector&gt;</code></pre></div></li>
-
-<li><p>Wechsle wieder zum <code>fragment_phrase_input.xml</code> und suche in der <code>Palette</code> nach &ldquo;View&rdquo;.</p></li>
-
-<li><p>Ziehe die <code>View</code> Komponente, die im Suchergebnis erscheint, irgendwo auf das Layout.</p></li>
-
-<li><p>Ziehe die Constraints der <code>View</code> wieder zu allen 4 Bildschirmrändern, um sie über den ganzen Bildschirm gehen zu lassen.</p></li>
-
-<li><p>Suche in der Attributliste wieder nach &ldquo;background&rdquo; und setze den Wert &ldquo;@drawable/background_gradient&rdquo;.</p></li>
-
-<li><p>Ziehe die <code>View</code> im <code>Component Tree</code> über den <code>button_go</code>,  damit sie in den Hintergrund rückt.</p></li>
+<li>
+<p>Das Hintergrundbild ist <a href="https://unsplash.com/photos/4Zk45jNyQS4" target="_blank">hier</a> auf <a href="https://unsplash.com/" target="_blank">Unsplash</a> verfügbar. Ich habe das Bild bereits heruntergeladen, zugeschnitten und an verschiedene Auflösungen angepasst. In Android kann man Bilder und Grafiken nämlich in verschiedenen Größen zur Verfügung stellen und das Smartphone wählt dann das richtige Bild aus. Lade dir die <a href="https://coderdojo-map-reactions.s3.eu-central-1.amazonaws.com/phrase_input_background.zip" target="_blank">zip Datei</a> herunter und extrahiere sie in deinem Projektordner unter <code>main/res</code>.</p>
+</li>
+<li>
+<p>Öffne das Layout <code>fragment_phrase_input.xml</code> und wähle im <code>Component Tree</code> das <code>ConstraintLayout</code> aus.</p>
+</li>
+<li>
+<p>Suche rechts in der Attributliste nach &ldquo;background&rdquo; und gib dort &ldquo;@drawable/phrase_input_background&rdquo; ein, um das soeben heruntergeladene Bild als Hintergrund zu verwenden.</p>
+</li>
+<li>
+<p>Für den Verlauf, benötigst du eine weitere Farbe. Nämlich das halb transparente blau, das rechts unten im Verlauf zu sehen ist. Öffne deshalb die Datei <code>res/values/colors.xml</code> und füge die Farbe <code>&lt;color name=&quot;colorPrimaryTransparent&quot;&gt;#cd0c27ba&lt;/color&gt;</code> hinzu.</p>
+</li>
+<li>
+<p>Klicke, um die Datei für den Verlauf zu erstellen, mit der rechten Maustaste auf den <code>drawable</code> Ordner und klicke dann auf &ldquo;New&rdquo; -&gt; &ldquo;Drawable Resource File&rdquo;. Gib ihm den Namen &ldquo;background_gradient&rdquo; ein und klicke auf &ldquo;OK&rdquo;.</p>
+</li>
+<li>
+<p>Öffne die Datei und klicke rechts oben bei &ldquo;Design&rdquo; auf &ldquo;Code&rdquo;.</p>
+</li>
+<li>
+<p>Füge den folgenden Code ein. Dieser erstellt einen linearen Verlauf im -45° Winkel von der Farbe <code>colorPrimary</code> zur <code>colorPrimaryTransparent</code>.</p>
+</li>
 </ol>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;selector xmlns:android=<span style="color:#a31515">&#34;http://schemas.android.com/apk/res/android&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;item&gt;
+</span></span><span style="display:flex;"><span>		&lt;shape&gt;
+</span></span><span style="display:flex;"><span>			&lt;gradient
+</span></span><span style="display:flex;"><span>				android:angle=<span style="color:#a31515">&#34;-45&#34;</span>
+</span></span><span style="display:flex;"><span>				android:startColor=<span style="color:#a31515">&#34;@color/colorPrimaryDark&#34;</span>
+</span></span><span style="display:flex;"><span>				android:endColor=<span style="color:#a31515">&#34;@color/colorPrimaryTransparent&#34;</span>
+</span></span><span style="display:flex;"><span>				android:type=<span style="color:#a31515">&#34;linear&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>		&lt;/shape&gt;
+</span></span><span style="display:flex;"><span>	&lt;/item&gt;
+</span></span><span style="display:flex;"><span>&lt;/selector&gt;
+</span></span></code></pre></div><ol start="8">
+<li>
+<p>Wechsle wieder zum <code>fragment_phrase_input.xml</code> und suche in der <code>Palette</code> nach &ldquo;View&rdquo;.</p>
+</li>
+<li>
+<p>Ziehe die <code>View</code> Komponente, die im Suchergebnis erscheint, irgendwo auf das Layout.</p>
+</li>
+<li>
+<p>Ziehe die Constraints der <code>View</code> wieder zu allen 4 Bildschirmrändern, um sie über den ganzen Bildschirm gehen zu lassen.</p>
+</li>
+<li>
+<p>Suche in der Attributliste wieder nach &ldquo;background&rdquo; und setze den Wert &ldquo;@drawable/background_gradient&rdquo;.</p>
+</li>
+<li>
+<p>Ziehe die <code>View</code> im <code>Component Tree</code> über den <code>button_go</code>,  damit sie in den Hintergrund rückt.</p>
+</li>
+</ol>
 <h4 id="ui-elemente">UI Elemente</h4>
-
 <p>Jetzt ist der Hintergrund soweit fertig. Da das <code>EditText</code> zum Eingeben des Satzes aber sehr dunkel ist, sieht man es fast nicht. Also kümmerst du dich als Nächstes um das Styling des <code>EditTexts</code> und auch des <code>Buttons</code>, da er momentan noch nicht sehr schön aussieht. Außerdem ist in den folgenden Anweisungen beschrieben, wie du das Icon oben in der Mitte herunterladen und hinzufügen kannst.</p>
-
 <ol>
-<li><p>In dem Bild oben siehst du, dass das <code>EditText</code> einen weißen Hintergrund mit runden Ecken hat. Wenn du ganz genau hinsiehst, erkennst du auch, dass es einen ganz dünnen blauen Rahmen hat. Erstelle ein neues <code>Drawable Resource File</code> namens &ldquo;edittext_background&rdquo;.</p></li>
-
-<li><p>Füge den folgenden Code ein um ein weißes Rechteck mit runden Ecken und einem blauen Rahmen zu erstellen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#008000">&lt;!-- Definiert die Form, also ein Rechteck --&gt;</span>
-&lt;shape xmlns:android=<span style="color:#a31515">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-	android:shape=<span style="color:#a31515">&#34;rectangle&#34;</span>&gt;
-	<span style="color:#008000">&lt;!-- Definiert die Farbe, in diesem Fall weiß --&gt;</span>
-	&lt;solid android:color=<span style="color:#a31515">&#34;@android:color/white&#34;</span> /&gt;
-	<span style="color:#008000">&lt;!-- Definiert den Rahmen in der Farbe colorPrimaryDark und mit der Stärke 1dp --&gt;</span>
-	&lt;stroke
-		android:width=<span style="color:#a31515">&#34;1dp&#34;</span>
-		android:color=<span style="color:#a31515">&#34;@color/colorPrimaryDark&#34;</span> /&gt;
-	<span style="color:#008000">&lt;!-- Legt den Radius der Ecken fest --&gt;</span>
-	&lt;corners
-		android:bottomLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
-		android:bottomRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
-		android:topLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
-		android:topRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span> /&gt;
-&lt;/shape&gt;</code></pre></div></li>
-
-<li><p>Der Hintergrund des <code>Button</code> soll genau gleich aussehen, nur mit umgekehrten Farben. Erstelle deshalb gleich ein zweites <code>Drawable Resource File</code> mit dem Namen <code>button_background</code> und dem folgenden Inhalt.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
-<span style="color:#008000">&lt;!-- Definiert die Form, also ein Rechteck --&gt;</span>
-&lt;shape xmlns:android=<span style="color:#a31515">&#34;http://schemas.android.com/apk/res/android&#34;</span>
-	android:shape=<span style="color:#a31515">&#34;rectangle&#34;</span>&gt;
-	<span style="color:#008000">&lt;!-- Definiert die Farbe, in diesem Fall colorPrimaryDark --&gt;</span>
-	&lt;solid android:color=<span style="color:#a31515">&#34;@color/colorPrimaryDark&#34;</span> /&gt;
-	<span style="color:#008000">&lt;!-- Definiert den Rahmen in der Farbe Weiß und mit der Stärke 1dp --&gt;</span>
-	&lt;stroke
-		android:width=<span style="color:#a31515">&#34;1dp&#34;</span>
-		android:color=<span style="color:#a31515">&#34;@android:color/white&#34;</span> /&gt;
-	<span style="color:#008000">&lt;!-- Legt den Radius der Ecken fest --&gt;</span>
-	&lt;corners
-		android:bottomLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
-		android:bottomRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
-		android:topLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
-		android:topRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span> /&gt;
-&lt;/shape&gt;</code></pre></div></li>
-
-<li><p>Öffne nun das <code>fragment_phrase_input</code> und wähle das <code>EditText</code> aus.</p></li>
-
-<li><p>Suche in der Attributliste nach &ldquo;background&rdquo; und lege &ldquo;@drawable/edittext_background&rdquo; als Hintergrund fest.</p></li>
-
-<li><p>Suche nun in der Attributliste nach &ldquo;padding&rdquo; und vergib für die Felder <code>paddingStart</code> und <code>paddingEnd</code> einen Wert von &ldquo;24dp&rdquo; und für <code>paddingTop</code> und <code>paddingBottom</code> &ldquo;12dp&rdquo;.</p></li>
-
-<li><p>Wähle nun den <code>Button</code> aus und gib ihm den Hintergrund &ldquo;@drawable/button_background&rdquo;.</p></li>
-
-<li><p>Lege zusätzlich &ldquo;@android:color/white&rdquo; als <code>textColor</code> fest.</p></li>
-
-<li><p>Ziehe den unteren <code>Constraint</code> zum unteren Bildschirmrand und lösche den oberen <code>Constraint</code>, um den Button rechts unten auszurichten.</p></li>
-
-<li><p>Lege im <code>Constraint Widget</code> unten einen Rahmen von 24 fest.</p></li>
-
-<li><p>Lade dir <a href="https://www.flaticon.com/free-icon/placeholder_2942933?term=map&amp;page=1&amp;position=41" target="_blank">diesen Icon</a> von <a href="https://ww.flaticon.com" target="_blank">flaticon</a> als &ldquo;PNG&rdquo; herunter und kopiere dir den &ldquo;Attribution Link&rdquo;, in diesem Fall <code>&lt;div&gt;Icons made by &lt;a href=&quot;https://www.flaticon.com/free-icon/placeholder_2942933?term=map&amp;page=1&amp;position=41&quot; title=&quot;surang&quot;&gt;surang&lt;/a&gt; from &lt;a href=&quot;https://www.flaticon.com/&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt;&lt;/div&gt;</code>, in eine Text-Datei.</p>
-
+<li>
+<p>In dem Bild oben siehst du, dass das <code>EditText</code> einen weißen Hintergrund mit runden Ecken hat. Wenn du ganz genau hinsiehst, erkennst du auch, dass es einen ganz dünnen blauen Rahmen hat. Erstelle ein neues <code>Drawable Resource File</code> namens &ldquo;edittext_background&rdquo;.</p>
+</li>
+<li>
+<p>Füge den folgenden Code ein um ein weißes Rechteck mit runden Ecken und einem blauen Rahmen zu erstellen.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">&lt;!-- Definiert die Form, also ein Rechteck --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;shape xmlns:android=<span style="color:#a31515">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+</span></span><span style="display:flex;"><span>	android:shape=<span style="color:#a31515">&#34;rectangle&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- Definiert die Farbe, in diesem Fall weiß --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;solid android:color=<span style="color:#a31515">&#34;@android:color/white&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- Definiert den Rahmen in der Farbe colorPrimaryDark und mit der Stärke 1dp --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;stroke
+</span></span><span style="display:flex;"><span>		android:width=<span style="color:#a31515">&#34;1dp&#34;</span>
+</span></span><span style="display:flex;"><span>		android:color=<span style="color:#a31515">&#34;@color/colorPrimaryDark&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- Legt den Radius der Ecken fest --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;corners
+</span></span><span style="display:flex;"><span>		android:bottomLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+</span></span><span style="display:flex;"><span>		android:bottomRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+</span></span><span style="display:flex;"><span>		android:topLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+</span></span><span style="display:flex;"><span>		android:topRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;/shape&gt;
+</span></span></code></pre></div><ol start="3">
+<li>Der Hintergrund des <code>Button</code> soll genau gleich aussehen, nur mit umgekehrten Farben. Erstelle deshalb gleich ein zweites <code>Drawable Resource File</code> mit dem Namen <code>button_background</code> und dem folgenden Inhalt.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">&lt;!-- Definiert die Form, also ein Rechteck --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;shape xmlns:android=<span style="color:#a31515">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+</span></span><span style="display:flex;"><span>	android:shape=<span style="color:#a31515">&#34;rectangle&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- Definiert die Farbe, in diesem Fall colorPrimaryDark --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;solid android:color=<span style="color:#a31515">&#34;@color/colorPrimaryDark&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- Definiert den Rahmen in der Farbe Weiß und mit der Stärke 1dp --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;stroke
+</span></span><span style="display:flex;"><span>		android:width=<span style="color:#a31515">&#34;1dp&#34;</span>
+</span></span><span style="display:flex;"><span>		android:color=<span style="color:#a31515">&#34;@android:color/white&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- Legt den Radius der Ecken fest --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;corners
+</span></span><span style="display:flex;"><span>		android:bottomLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+</span></span><span style="display:flex;"><span>		android:bottomRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+</span></span><span style="display:flex;"><span>		android:topLeftRadius=<span style="color:#a31515">&#34;32dp&#34;</span>
+</span></span><span style="display:flex;"><span>		android:topRightRadius=<span style="color:#a31515">&#34;32dp&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;/shape&gt;
+</span></span></code></pre></div><ol start="4">
+<li>
+<p>Öffne nun das <code>fragment_phrase_input</code> und wähle das <code>EditText</code> aus.</p>
+</li>
+<li>
+<p>Suche in der Attributliste nach &ldquo;background&rdquo; und lege &ldquo;@drawable/edittext_background&rdquo; als Hintergrund fest.</p>
+</li>
+<li>
+<p>Suche nun in der Attributliste nach &ldquo;padding&rdquo; und vergib für die Felder <code>paddingStart</code> und <code>paddingEnd</code> einen Wert von &ldquo;24dp&rdquo; und für <code>paddingTop</code> und <code>paddingBottom</code> &ldquo;12dp&rdquo;.</p>
+</li>
+<li>
+<p>Wähle nun den <code>Button</code> aus und gib ihm den Hintergrund &ldquo;@drawable/button_background&rdquo;.</p>
+</li>
+<li>
+<p>Lege zusätzlich &ldquo;@android:color/white&rdquo; als <code>textColor</code> fest.</p>
+</li>
+<li>
+<p>Ziehe den unteren <code>Constraint</code> zum unteren Bildschirmrand und lösche den oberen <code>Constraint</code>, um den Button rechts unten auszurichten.</p>
+</li>
+<li>
+<p>Lege im <code>Constraint Widget</code> unten einen Rahmen von 24 fest.</p>
+</li>
+<li>
+<p>Lade dir <a href="https://www.flaticon.com/free-icon/placeholder_2942933?term=map&amp;page=1&amp;position=41" target="_blank">diesen Icon</a> von <a href="https://ww.flaticon.com" target="_blank">flaticon</a> als &ldquo;PNG&rdquo; herunter und kopiere dir den &ldquo;Attribution Link&rdquo;, in diesem Fall <code>&lt;div&gt;Icons made by &lt;a href=&quot;https://www.flaticon.com/free-icon/placeholder_2942933?term=map&amp;page=1&amp;position=41&quot; title=&quot;surang&quot;&gt;surang&lt;/a&gt; from &lt;a href=&quot;https://www.flaticon.com/&quot; title=&quot;Flaticon&quot;&gt;www.flaticon.com&lt;/a&gt;&lt;/div&gt;</code>, in eine Text-Datei.</p>
 <blockquote>
 <p><em>ACHTUNG: Solltest du die App veröffentlichen, musst du unbedingt die Information, von wo die Icons sind, in den Credits der App und in der Beschreibung der App im PlayStore anzeigen!</em></p>
-</blockquote></li>
-
-<li><p>Gehe auf die Seite <a href="https://romannurik.github.io/AndroidAssetStudio/" target="_blank">https://romannurik.github.io/AndroidAssetStudio/</a> und klicke auf &ldquo;Generic Icon Generator&rdquo;.</p></li>
-
-<li><p>Klicke links bei &ldquo;Source&rdquo; auf &ldquo;Image&rdquo; und lade den soeben heruntergeladenen Icon hoch.</p></li>
-
-<li><p>Wähle die folgenden Werte aus und klicke dann rechts oben auf &ldquo;Download&rdquo;.</p>
-
+</blockquote>
+</li>
+<li>
+<p>Gehe auf die Seite <a href="https://romannurik.github.io/AndroidAssetStudio/" target="_blank">https://romannurik.github.io/AndroidAssetStudio/</a> und klicke auf &ldquo;Generic Icon Generator&rdquo;.</p>
+</li>
+<li>
+<p>Klicke links bei &ldquo;Source&rdquo; auf &ldquo;Image&rdquo; und lade den soeben heruntergeladenen Icon hoch.</p>
+</li>
+<li>
+<p>Wähle die folgenden Werte aus und klicke dann rechts oben auf &ldquo;Download&rdquo;.</p>
 <ul>
 <li>Trim whitespace: Trim</li>
 <li>Padding: 0%</li>
@@ -648,124 +671,144 @@ StrictMode.setThreadPolicy(policy);
 <li>Asset padding: 0dp</li>
 <li>Color: Weiß</li>
 <li>Name: &ldquo;ic_map&rdquo;</li>
-</ul></li>
-
-<li><p>Extrahiere die zip-Datei, die du heruntergeladen hast, im <code>main</code> Ordner deines Projektes.</p></li>
-
-<li><p>Öffne das Layout <code>fragment_phrase_input.xml</code> und ziehe die <code>ImageView</code> von der <code>Palette</code> in dein Layout.</p></li>
-
-<li><p>Wähle das drawable <code>ic_map</code> aus und klicke auf &ldquo;OK&rdquo;.</p></li>
-
-<li><p>Zentriere die <code>ImageView</code> in dem Teil des Bildschirms, der sich über dem <code>EditText</code> befindet. Ziehe dazu den linken, oberen und rechten <code>Constraint</code> der <code>ImageView</code> zum jeweiligen Bildschirmrand und den unteren <code>Constraint</code> zur Oberkante des <code>EditText</code>.</p></li>
+</ul>
+</li>
+<li>
+<p>Extrahiere die zip-Datei, die du heruntergeladen hast, im <code>main</code> Ordner deines Projektes.</p>
+</li>
+<li>
+<p>Öffne das Layout <code>fragment_phrase_input.xml</code> und ziehe die <code>ImageView</code> von der <code>Palette</code> in dein Layout.</p>
+</li>
+<li>
+<p>Wähle das drawable <code>ic_map</code> aus und klicke auf &ldquo;OK&rdquo;.</p>
+</li>
+<li>
+<p>Zentriere die <code>ImageView</code> in dem Teil des Bildschirms, der sich über dem <code>EditText</code> befindet. Ziehe dazu den linken, oberen und rechten <code>Constraint</code> der <code>ImageView</code> zum jeweiligen Bildschirmrand und den unteren <code>Constraint</code> zur Oberkante des <code>EditText</code>.</p>
+</li>
 </ol>
-
 <p>Nun hast du das <code>PhraseInputFragment</code> (wie ich finde) schon um einiges verschönert. Eine kleine Verbesserung ist allerdings noch offen. Dir wird schon aufgefallen sein, dass der <code>Button</code> immer verdeckt wird, wenn sich die Tastatur öffnet. Gehe deshalb zum <code>AndroidManifest.xml</code> und füge in dem <code>&lt;activity&gt;</code> Tag der <code>MainActivity</code> das folgende Attribut hinzu.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">android:windowSoftInputMode=&#34;stateHidden|adjustResize&#34;</code></pre></div>
-<h4 id="schriftart">Schriftart</h4>
-
-<p>Auch die Schrift ist ein wichtiger Punkt, um das Design einer App zu verbessern. Ich habe für die App eine Kombination aus den Schriften <a href="https://fonts.google.com/specimen/Roboto+Condensed" target="_blank">Roboto Condensed</a> und <a href="https://fonts.google.com/specimen/Cabin" target="_blank">Cabin</a> verwendet. Natürlich kannst du auch jede andere Schriftart mit den folgenden Schritten verwenden.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>android:windowSoftInputMode=&#34;stateHidden|adjustResize&#34;
+</span></span></code></pre></div><h4 id="schriftart">Schriftart</h4>
+<p>Auch die Schrift ist ein wichtiger Punkt, um das Design einer App zu verbessern. Ich habe für die App eine Kombination aus den Schriften <a href="https://fonts.google.com/specimen/Roboto&#43;Condensed" target="_blank">Roboto Condensed</a> und <a href="https://fonts.google.com/specimen/Cabin" target="_blank">Cabin</a> verwendet. Natürlich kannst du auch jede andere Schriftart mit den folgenden Schritten verwenden.</p>
 <ol>
-<li><p>Öffne das Layout <code>fragment_phrase_input.xml</code> und klicke auf das <code>EditText</code> um es auszuwählen.</p></li>
-
-<li><p>Suche in der Attributliste nach &ldquo;font&rdquo;.</p></li>
-
-<li><p>Klicke auf den Pfeil rechts neben <code>fontFamily</code> und klicke ganz unten auf &ldquo;More Fonts&hellip;&rdquo;</p></li>
-
-<li><p>Suche nach &ldquo;Cabin&rdquo;, wähle diese Schrift mit einem Klick aus und klicke auf &ldquo;OK&rdquo;.</p></li>
-
-<li><p>Wähle nun den <code>Button</code> aus, suche wieder nach &ldquo;fontFamily&rdquo; und klicke auf &ldquo;More Fonts&hellip;&rdquo;.</p></li>
-
-<li><p>Suche nun nach &ldquo;Roboto&rdquo; und wähle rechts bei &ldquo;Preview&rdquo; die Schrift namens &ldquo;Condensed Bold&rdquo; aus. Klicke dann wieder auf &ldquo;OK&rdquo;.</p></li>
+<li>
+<p>Öffne das Layout <code>fragment_phrase_input.xml</code> und klicke auf das <code>EditText</code> um es auszuwählen.</p>
+</li>
+<li>
+<p>Suche in der Attributliste nach &ldquo;font&rdquo;.</p>
+</li>
+<li>
+<p>Klicke auf den Pfeil rechts neben <code>fontFamily</code> und klicke ganz unten auf &ldquo;More Fonts&hellip;&rdquo;</p>
+</li>
+<li>
+<p>Suche nach &ldquo;Cabin&rdquo;, wähle diese Schrift mit einem Klick aus und klicke auf &ldquo;OK&rdquo;.</p>
+</li>
+<li>
+<p>Wähle nun den <code>Button</code> aus, suche wieder nach &ldquo;fontFamily&rdquo; und klicke auf &ldquo;More Fonts&hellip;&rdquo;.</p>
+</li>
+<li>
+<p>Suche nun nach &ldquo;Roboto&rdquo; und wähle rechts bei &ldquo;Preview&rdquo; die Schrift namens &ldquo;Condensed Bold&rdquo; aus. Klicke dann wieder auf &ldquo;OK&rdquo;.</p>
+</li>
 </ol>
-
 <h3 id="styling-des-mapfragment">Styling des <code>MapFragment</code></h3>
-
 <p>Nun hast du das Styling des <code>PhraseInputFragment</code> abgeschlossen und es ist an der Zeit, das <code>MapFragment</code> zu verschönern.</p>
-
 <h4 id="infobox">Infobox</h4>
-
 <p>Die erste Verbesserung, die du hier machen kannst, ist  die Info-<code>TextView</code> durch eine ganze Infobox zu ersetzen, die mehr Informationen zur Route, aber auch einen &ldquo;Neu starten&rdquo; -<code>Button</code> enthält. Befolge dazu die unten stehenden Schritte.</p>
-
 <ol>
-<li><p>Öffne das Layout <code>fragment_map.xml</code>.</p></li>
-
-<li><p>Suche in der <code>Palette</code> nach &ldquo;CardView&rdquo; und positioniere die <code>CardView</code> ganz unten im <code>Component Tree</code>.</p></li>
-
-<li><p>Suche in der  <code>Palette</code> nach &ldquo;Constraint&rdquo; und ziehe das <code>ConstraintLayout</code> im <code>Component Tree</code> in die <code>CardView</code> hinein.</p></li>
-
-<li><p>Ziehe nun die <code>TextView</code> im <code>Component Tree</code> in das <code>ConstraintLayout</code> hinein.</p></li>
-
-<li><p>Da der untere <code>Constraint</code> der <code>MapView</code> am oberen Punkt der <code>TextView</code> angeheftet war, muss dieser nun neu gesetzt werden. Wähle die <code>MapView</code> dazu aus und ziehe den Punkt, der am oberen Bildschirmrand erscheint, nach ganz unten, um die <code>MapView</code> über den gesamten Bildschirm zu erstrecken.</p></li>
-
-<li><p>Wähle nun die <code>CardView</code> im <code>Component Tree</code> aus und ziehe die seitlichen und den unteren <code>Constraint</code> zu den jeweiligen Bildschirmrändern, um sie unten am Screen auszurichten.</p></li>
-
-<li><p>Lege einen Rahmen von &ldquo;16&rdquo; auf diesen 3 Seiten fest.</p></li>
-
-<li><p>Setze den &ldquo;@drawable/background_gradient&rdquo; als Hintergrund (<code>background</code>).</p></li>
-
-<li><p>Setze das Attribut <code>cornerRadius</code> auf &ldquo;32dp&rdquo;.</p></li>
-
-<li><p>Ziehe einen <code>Button</code> und eine <code>TextView</code> aus der <code>Palette</code> in das <code>ConstraintLayout</code> in der <code>CardView</code> und gib ihnen die <code>id</code> &ldquo;button_try_again&rdquo; beziehungsweise &ldquo;textview_route&rdquo;. Lösche zusätzlich bei der neuen <code>TextView</code> den Wert im Feld <code>text</code>.</p></li>
-
-<li><p>Nun müssen diese 3 Elemente im <code>ConstraintLayout</code> ausgerichtet werden. Der <code>Button</code> soll ganz unten sein, ziehe deshalb seine beiden seitlichen und den unteren <code>Constraint</code> zu den zugehörigen Rändern der <code>CardView</code>.</p></li>
-
-<li><p>Darüber soll die <code>textview_info</code> angezeigt werden. Wähle sie im <code>Component Tree</code> aus und ziehe die seitlichen <code>Constraint</code>s zu den Rändern der <code>CardView</code> und den unteren <code>Constraint</code> zur Oberkante des <code>Button</code>.</p></li>
-
-<li><p>Ziehe die seitlichen und den oberen <code>Constraint</code> der <code>textview_route</code> ebenfalls zu den Rändern der <code>CardView</code>. Ziehe den unteren <code>Constraint</code> zur Oberkante der <code>textview_info</code>.</p></li>
-
-<li><p>Lösche das <code>padding</code> der <code>textview_info</code>.</p></li>
-
-<li><p>Setze die folgenden Rahmen im <code>Constraint Widget</code>.</p>
-
+<li>
+<p>Öffne das Layout <code>fragment_map.xml</code>.</p>
+</li>
+<li>
+<p>Suche in der <code>Palette</code> nach &ldquo;CardView&rdquo; und positioniere die <code>CardView</code> ganz unten im <code>Component Tree</code>.</p>
+</li>
+<li>
+<p>Suche in der  <code>Palette</code> nach &ldquo;Constraint&rdquo; und ziehe das <code>ConstraintLayout</code> im <code>Component Tree</code> in die <code>CardView</code> hinein.</p>
+</li>
+<li>
+<p>Ziehe nun die <code>TextView</code> im <code>Component Tree</code> in das <code>ConstraintLayout</code> hinein.</p>
+</li>
+<li>
+<p>Da der untere <code>Constraint</code> der <code>MapView</code> am oberen Punkt der <code>TextView</code> angeheftet war, muss dieser nun neu gesetzt werden. Wähle die <code>MapView</code> dazu aus und ziehe den Punkt, der am oberen Bildschirmrand erscheint, nach ganz unten, um die <code>MapView</code> über den gesamten Bildschirm zu erstrecken.</p>
+</li>
+<li>
+<p>Wähle nun die <code>CardView</code> im <code>Component Tree</code> aus und ziehe die seitlichen und den unteren <code>Constraint</code> zu den jeweiligen Bildschirmrändern, um sie unten am Screen auszurichten.</p>
+</li>
+<li>
+<p>Lege einen Rahmen von &ldquo;16&rdquo; auf diesen 3 Seiten fest.</p>
+</li>
+<li>
+<p>Setze den &ldquo;@drawable/background_gradient&rdquo; als Hintergrund (<code>background</code>).</p>
+</li>
+<li>
+<p>Setze das Attribut <code>cornerRadius</code> auf &ldquo;32dp&rdquo;.</p>
+</li>
+<li>
+<p>Ziehe einen <code>Button</code> und eine <code>TextView</code> aus der <code>Palette</code> in das <code>ConstraintLayout</code> in der <code>CardView</code> und gib ihnen die <code>id</code> &ldquo;button_try_again&rdquo; beziehungsweise &ldquo;textview_route&rdquo;. Lösche zusätzlich bei der neuen <code>TextView</code> den Wert im Feld <code>text</code>.</p>
+</li>
+<li>
+<p>Nun müssen diese 3 Elemente im <code>ConstraintLayout</code> ausgerichtet werden. Der <code>Button</code> soll ganz unten sein, ziehe deshalb seine beiden seitlichen und den unteren <code>Constraint</code> zu den zugehörigen Rändern der <code>CardView</code>.</p>
+</li>
+<li>
+<p>Darüber soll die <code>textview_info</code> angezeigt werden. Wähle sie im <code>Component Tree</code> aus und ziehe die seitlichen <code>Constraint</code>s zu den Rändern der <code>CardView</code> und den unteren <code>Constraint</code> zur Oberkante des <code>Button</code>.</p>
+</li>
+<li>
+<p>Ziehe die seitlichen und den oberen <code>Constraint</code> der <code>textview_route</code> ebenfalls zu den Rändern der <code>CardView</code>. Ziehe den unteren <code>Constraint</code> zur Oberkante der <code>textview_info</code>.</p>
+</li>
+<li>
+<p>Lösche das <code>padding</code> der <code>textview_info</code>.</p>
+</li>
+<li>
+<p>Setze die folgenden Rahmen im <code>Constraint Widget</code>.</p>
 <ul>
 <li><code>button_try_again</code>:
-
 <ul>
 <li>Unten: 16</li>
 <li>Links: 16</li>
 <li>Rechts: 16</li>
-</ul></li>
+</ul>
+</li>
 <li><code>textview_info</code>:
-
 <ul>
 <li>Unten: 16</li>
 <li>Links: 16</li>
 <li>Rechts: 16</li>
-</ul></li>
+</ul>
+</li>
 <li><code>textview_route</code>:
-
 <ul>
 <li>Oben: 16</li>
 <li>Links: 16</li>
 <li>Rechts: 16</li>
-</ul></li>
-</ul></li>
-
-<li><p>Setze die Breite (<code>layout_width</code>) der <code>textview_route</code> auf &ldquo;0dp (match constraint)&rdquo;.</p></li>
-
-<li><p>Die <code>textview_info</code> soll im Vordergund stehen. Gib ihr deshalb die folgenden Attribute.</p>
-
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Setze die Breite (<code>layout_width</code>) der <code>textview_route</code> auf &ldquo;0dp (match constraint)&rdquo;.</p>
+</li>
+<li>
+<p>Die <code>textview_info</code> soll im Vordergund stehen. Gib ihr deshalb die folgenden Attribute.</p>
 <ul>
 <li><code>textColor</code>: &ldquo;@android:color/white&rdquo;</li>
 <li><code>fontFamily</code>: &ldquo;@font/roboto_condensed_bold&rdquo;</li>
 <li><code>textSize</code>: &ldquo;20sp&rdquo;</li>
 <li><code>textAlignment</code>: &ldquo;center&rdquo;</li>
-</ul></li>
-
-<li><p>Gib der <code>textview_route</code> die folgenden Attribute.</p>
-
+</ul>
+</li>
+<li>
+<p>Gib der <code>textview_route</code> die folgenden Attribute.</p>
 <ul>
 <li><code>textColor</code>: &ldquo;@android:color/white&rdquo;</li>
 <li><code>fontFamily</code>: &ldquo;@font/cabin&rdquo;</li>
 <li><code>textSize</code>: &ldquo;16sp&rdquo;</li>
 <li><code>textAlignment</code>: &ldquo;center&rdquo;</li>
-</ul></li>
-
-<li><p>Lade dir <a href="https://www.flaticon.com/free-icon/reply_481675?term=back&amp;page=1&amp;position=43" target="_blank">diesen Icon</a> als PNG herunter, kopiere und speichere den &ldquo;Attribution Link&rdquo; und lade das Icon dann wieder in den <a href="https://romannurik.github.io/AndroidAssetStudio/icons-generic.html" target="_blank">Generic Icon Generator</a> hoch.</p></li>
-
-<li><p>Wähle die folgenden Werte aus und klicke dann rechts oben auf &ldquo;Download&rdquo;.</p>
-
+</ul>
+</li>
+<li>
+<p>Lade dir <a href="https://www.flaticon.com/free-icon/reply_481675?term=back&amp;page=1&amp;position=43" target="_blank">diesen Icon</a> als PNG herunter, kopiere und speichere den &ldquo;Attribution Link&rdquo; und lade das Icon dann wieder in den <a href="https://romannurik.github.io/AndroidAssetStudio/icons-generic.html" target="_blank">Generic Icon Generator</a> hoch.</p>
+</li>
+<li>
+<p>Wähle die folgenden Werte aus und klicke dann rechts oben auf &ldquo;Download&rdquo;.</p>
 <ul>
 <li>Trim whitespace: Trim</li>
 <li>Padding: 0%</li>
@@ -773,115 +816,120 @@ StrictMode.setThreadPolicy(policy);
 <li>Asset padding: 0dp</li>
 <li>Color: Weiß</li>
 <li>Name: &ldquo;ic_try_again&rdquo;</li>
-</ul></li>
-
-<li><p>Extrahiere die zip-Datei, die du heruntergeladen hast, im <code>main</code> Ordner deines Projektes.</p></li>
-
-<li><p>Erstelle einen neuen String in der Datei <code>res/values/strings.xml</code> mit der id &ldquo;try_again&rdquo; und dem Text &ldquo;Neu starten&rdquo; in Deutsch und &ldquo;Try again&rdquo; in Englisch.</p></li>
-
-<li><p>Gib dem Button die folgenden Attribute.</p>
-
+</ul>
+</li>
+<li>
+<p>Extrahiere die zip-Datei, die du heruntergeladen hast, im <code>main</code> Ordner deines Projektes.</p>
+</li>
+<li>
+<p>Erstelle einen neuen String in der Datei <code>res/values/strings.xml</code> mit der id &ldquo;try_again&rdquo; und dem Text &ldquo;Neu starten&rdquo; in Deutsch und &ldquo;Try again&rdquo; in Englisch.</p>
+</li>
+<li>
+<p>Gib dem Button die folgenden Attribute.</p>
+</li>
+</ol>
 <ul>
 <li><code>textColor</code>: &ldquo;@android:color/white&rdquo;</li>
-</ul></li>
-
-<li><p><code>fontFamily</code>: &ldquo;@font/cabin&rdquo;</p></li>
-
-<li><p><code>textSize</code>: &ldquo;16sp&rdquo;</p></li>
-
-<li><p><code>background</code>: &ldquo;@android:color/transparent&rdquo;</p></li>
-
-<li><p><code>drawableTop</code>: &ldquo;@drawable/ic_try_again&rdquo;</p></li>
-
-<li><p><code>text</code>: &ldquo;@string/try_again&rdquo;</p></li>
-
-<li><p><code>textAllCaps</code>: &ldquo;false&rdquo;</p></li>
-</ol>
-
+<li><code>fontFamily</code>: &ldquo;@font/cabin&rdquo;</li>
+<li><code>textSize</code>: &ldquo;16sp&rdquo;</li>
+<li><code>background</code>: &ldquo;@android:color/transparent&rdquo;</li>
+<li><code>drawableTop</code>: &ldquo;@drawable/ic_try_again&rdquo;</li>
+<li><code>text</code>: &ldquo;@string/try_again&rdquo;</li>
+<li><code>textAllCaps</code>: &ldquo;false&rdquo;</li>
+</ul>
 <p>Nun ist das Layout für die Infobox fertig. Die <code>textview_route</code> muss allerdings noch mit Text befüllt werden und der <code>button_try_again</code> reagiert noch nicht auf Klicks. Diese beiden Dinge kannst du mit den folgenden Schritten lösen.</p>
-
 <ol>
-<li><p>Öffne das <code>MapFragment</code>.</p></li>
-
-<li><p>Erstelle die folgenden 2 Member-Variablen unter <code>private TextView textViewInfo;</code>.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> TextView textViewRoute;
-<span style="color:#00f">private</span> Button buttonTryAgain;</code></pre></div></li>
-
-<li><p>Binde die beiden Komponenten an die Variablen. Füge dazu die folgenden Zeilen zur <code>onViewCreated()</code> Methode hinzu.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">textViewRoute = view.findViewById(R.id.textview_route);
-buttonTryAgain = view.findViewById(R.id.button_try_again);</code></pre></div></li>
-
-<li><p>In der <code>textview_route</code> sollen die Orte der Route im Format &ldquo;[Ort 1, Ort 2, Ort 3, &hellip;]&rdquo; angezeigt werden. Erstelle dazu eine neue Methode <code>showRouteSummary()</code> mit dem folgenden Inhalt.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#00f">private</span> <span style="color:#2b91af">void</span> showRouteSummary() {
-	<span style="color:#008000">// Zeigt den eingegebenen Satz in der Info-TextView an
-</span><span style="color:#008000"></span>	<span style="color:#008000">// Durch das String.format(...) werden vor und nach dem Satz Anführungszeichen (&#34;) angezeigt
-</span><span style="color:#008000"></span>	textViewInfo.setText(String.format(<span style="color:#a31515">&#34;\&#34;%s\&#34;&#34;</span>, phrase));
-
-	<span style="color:#008000">// Erstellt einen neuen StringBuilder um die Route im Format [Ort 1, Ort 2, ...] zusammenzusetzen
-</span><span style="color:#008000"></span>	StringBuilder routeStringBuilder = <span style="color:#00f">new</span> StringBuilder(<span style="color:#a31515">&#34;[&#34;</span>);
-
-	<span style="color:#008000">// Iteriert über alle Orte in der Route
-</span><span style="color:#008000"></span>	<span style="color:#00f">for</span> (Place place : route) {
-		<span style="color:#008000">// Überprüft ob die Länge des StringBuilders größer als 1 (also mindestens 2) ist
-</span><span style="color:#008000"></span>		<span style="color:#00f">if</span> (routeStringBuilder.length() &gt; 1) {
-			<span style="color:#008000">// Wenn ja, werde ein Beistrich und ein Leerzeichen vor dem nächsten Ort hinzugefügt
-</span><span style="color:#008000"></span>			routeStringBuilder.append(<span style="color:#a31515">&#34;, &#34;</span>);
-        }
-		<span style="color:#008000">// Hängt den Namen des Ortes an den StringBuilder an
-</span><span style="color:#008000"></span>		routeStringBuilder.append(place.getName());
-	}
-
-	<span style="color:#008000">// Hängt die schließende Klammer an den StringBuilder an
-</span><span style="color:#008000"></span>	routeStringBuilder.append(<span style="color:#a31515">&#34;]&#34;</span>);
-	<span style="color:#008000">// Setzt den String des StringBuilders als Text in die TextView, die die Route anzeigt
-</span><span style="color:#008000"></span>	textViewRoute.setText(routeStringBuilder.toString());
-}</code></pre></div></li>
-
-<li><p>Rufe die neu erstellte Methode im <code>onResponse()</code> Block der <code>loadRoute()</code> Methode auf. Ersetze dazu die Zeile <code>textViewInfo.setText(phrase);</code> mit <code>showRouteSummary();</code>.</p></li>
-
-<li><p>Wenn der <code>button_try_again</code> geklickt wird, soll die App einen Schritt zurück zum <code>PhraseInputFragment</code> navigieren. Füge dazu den folgenden Code in die <code>onViewCreated()</code> Methode unter die Zeile <code>buttonTryAgain = view.findViewById(R.id.button_try_again);</code> ein.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Setzt einen Klick Listener auf den Button, um über Klicks informiert zu werden
-</span><span style="color:#008000"></span>buttonTryAgain.setOnClickListener(<span style="color:#00f">new</span> View.OnClickListener() {
-	@Override
-	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onClick(View view) {
-		<span style="color:#008000">// Dieser code wird ausgeführt, wenn der Benutzer auf den Button klickt
-</span><span style="color:#008000"></span>		<span style="color:#008000">// Simuliert einen Klick auf die Zurück-Taste
-</span><span style="color:#008000"></span>		getActivity().onBackPressed();
-	}
-});</code></pre></div></li>
+<li>
+<p>Öffne das <code>MapFragment</code>.</p>
+</li>
+<li>
+<p>Erstelle die folgenden 2 Member-Variablen unter <code>private TextView textViewInfo;</code>.</p>
+</li>
 </ol>
-
-<h4 id="karte">Karte</h4>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">private</span> TextView textViewRoute;
+</span></span><span style="display:flex;"><span><span style="color:#00f">private</span> Button buttonTryAgain;
+</span></span></code></pre></div><ol start="3">
+<li>Binde die beiden Komponenten an die Variablen. Füge dazu die folgenden Zeilen zur <code>onViewCreated()</code> Methode hinzu.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>textViewRoute = view.findViewById(R.id.textview_route);
+</span></span><span style="display:flex;"><span>buttonTryAgain = view.findViewById(R.id.button_try_again);
+</span></span></code></pre></div><ol start="4">
+<li>In der <code>textview_route</code> sollen die Orte der Route im Format &ldquo;[Ort 1, Ort 2, Ort 3, &hellip;]&rdquo; angezeigt werden. Erstelle dazu eine neue Methode <code>showRouteSummary()</code> mit dem folgenden Inhalt.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">private</span> <span style="color:#2b91af">void</span> showRouteSummary() {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Zeigt den eingegebenen Satz in der Info-TextView an</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Durch das String.format(...) werden vor und nach dem Satz Anführungszeichen (&#34;) angezeigt</span>
+</span></span><span style="display:flex;"><span>	textViewInfo.setText(String.format(<span style="color:#a31515">&#34;\&#34;%s\&#34;&#34;</span>, phrase));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Erstellt einen neuen StringBuilder um die Route im Format [Ort 1, Ort 2, ...] zusammenzusetzen</span>
+</span></span><span style="display:flex;"><span>	StringBuilder routeStringBuilder = <span style="color:#00f">new</span> StringBuilder(<span style="color:#a31515">&#34;[&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Iteriert über alle Orte in der Route</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">for</span> (Place place : route) {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// Überprüft ob die Länge des StringBuilders größer als 1 (also mindestens 2) ist</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">if</span> (routeStringBuilder.length() &gt; 1) {
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// Wenn ja, werde ein Beistrich und ein Leerzeichen vor dem nächsten Ort hinzugefügt</span>
+</span></span><span style="display:flex;"><span>			routeStringBuilder.append(<span style="color:#a31515">&#34;, &#34;</span>);
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// Hängt den Namen des Ortes an den StringBuilder an</span>
+</span></span><span style="display:flex;"><span>		routeStringBuilder.append(place.getName());
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Hängt die schließende Klammer an den StringBuilder an</span>
+</span></span><span style="display:flex;"><span>	routeStringBuilder.append(<span style="color:#a31515">&#34;]&#34;</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// Setzt den String des StringBuilders als Text in die TextView, die die Route anzeigt</span>
+</span></span><span style="display:flex;"><span>	textViewRoute.setText(routeStringBuilder.toString());
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ol start="5">
+<li>
+<p>Rufe die neu erstellte Methode im <code>onResponse()</code> Block der <code>loadRoute()</code> Methode auf. Ersetze dazu die Zeile <code>textViewInfo.setText(phrase);</code> mit <code>showRouteSummary();</code>.</p>
+</li>
+<li>
+<p>Wenn der <code>button_try_again</code> geklickt wird, soll die App einen Schritt zurück zum <code>PhraseInputFragment</code> navigieren. Füge dazu den folgenden Code in die <code>onViewCreated()</code> Methode unter die Zeile <code>buttonTryAgain = view.findViewById(R.id.button_try_again);</code> ein.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Setzt einen Klick Listener auf den Button, um über Klicks informiert zu werden</span>
+</span></span><span style="display:flex;"><span>buttonTryAgain.setOnClickListener(<span style="color:#00f">new</span> View.OnClickListener() {
+</span></span><span style="display:flex;"><span>	@Override
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onClick(View view) {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// Dieser code wird ausgeführt, wenn der Benutzer auf den Button klickt</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// Simuliert einen Klick auf die Zurück-Taste</span>
+</span></span><span style="display:flex;"><span>		getActivity().onBackPressed();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h4 id="karte">Karte</h4>
 <p>Als letzten Schritt Kannst du noch das Design der Marker und der Route auf der Karte verbessern. Öffne dazu das <code>MapFragment</code> und befolge die folgenden Schritte.</p>
-
 <ol>
-<li><p>Suche die Zeile <code>Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);</code> und ersetze <code>Color.BLACK</code> mit <code>getResources().getColor(R.color.colorPrimary);</code> um die Route in der Hauptfarbe der App darzustellen. Setze außerdem die Breite der Linie (also den nächsten Parameter, derzeit  <code>6</code>) auf <code>8</code>, um die Route etwas breiter darzustellen.</p></li>
-
-<li><p>Nun sieht man besonders gut, dass die Route über den Markern gezeichnet wird. Befolge die unten stehenden Schritte, um die Marker über der Route zu zeichnen.</p>
-
+<li>
+<p>Suche die Zeile <code>Polyline roadOverlay = RoadManager.buildRoadOverlay(road, Color.BLACK, 6);</code> und ersetze <code>Color.BLACK</code> mit <code>getResources().getColor(R.color.colorPrimary);</code> um die Route in der Hauptfarbe der App darzustellen. Setze außerdem die Breite der Linie (also den nächsten Parameter, derzeit  <code>6</code>) auf <code>8</code>, um die Route etwas breiter darzustellen.</p>
+</li>
+<li>
+<p>Nun sieht man besonders gut, dass die Route über den Markern gezeichnet wird. Befolge die unten stehenden Schritte, um die Marker über der Route zu zeichnen.</p>
 <ol>
-<li><p>Füge die folgende Zeile unter der Zeile <code>ArrayList&lt;GeoPoint&gt; geoPoints = new ArrayList&lt;&gt;();</code> und über der <code>for</code>-Schleife ein.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Erstellt eine Liste mit SpeechBalloonOverlay Objekten. Diese wird später mit den Markern befüllt.
-</span><span style="color:#008000"></span><span style="color:#00f">final</span> List&lt;SpeechBalloonOverlay&gt; markers = <span style="color:#00f">new</span> ArrayList&lt;&gt;();</code></pre></div></li>
-
-<li><p>Ersetze die Zeile <code>mapView.getOverlays().add(textOverlay);</code> mit der folgenden Zeile.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Fügt das Overlay zur Liste der Marker hinzu
-</span><span style="color:#008000"></span>markers.add(textOverlay);</code></pre></div></li>
-
-<li><p>Füge den folgenden Code unter der Zeile <code>mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150);</code> ein, um die Marker erst nach der Route/Straße zu zeichnen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#008000">// Zeigt die Marker auf der Karte an
-</span><span style="color:#008000"></span>mapView.getOverlays().addAll(markers);</code></pre></div></li>
-</ol></li>
-
-<li><p>Ändere nun die Hintergrundfarbe der Marker, indem du in der  <code>for</code>-Schleife in der Zeile <code>backgroundPaint.setColor(Color.BLACK)</code> den Parameter <code>Color.BLACK</code> auf <code>getResources().getColor(R.color.colorPrimary)</code> änderst.</p></li>
-
-<li><p>Ändere mit der folgenden Zeile die Schriftart des Textes.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">textPaint.setTypeface(ResourcesCompat.getFont(getContext(), R.font.cabin));</code></pre></div></li>
+<li>Füge die folgende Zeile unter der Zeile <code>ArrayList&lt;GeoPoint&gt; geoPoints = new ArrayList&lt;&gt;();</code> und über der <code>for</code>-Schleife ein.</li>
 </ol>
-
-<p>Gratuliere! Nun hast du auch diese Anleitung abgeschlossen und deine App sollte nun in etwa so aussehen. Du kannst natürlich noch selbst versuchen die App weiterzuentwickeln. Dabei kannst du neue Funktionen hinzufügen, die Farben der App ändern, sie in verschiedene Sprachen übersetzen, oder was dir sonst noch so einfällt. Deiner Kreativität sind hier keine Grenzen gesetzt ;-).</p>
-
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Erstellt eine Liste mit SpeechBalloonOverlay Objekten. Diese wird später mit den Markern befüllt.</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">final</span> List&lt;SpeechBalloonOverlay&gt; markers = <span style="color:#00f">new</span> ArrayList&lt;&gt;();
+</span></span></code></pre></div><pre><code>2. Ersetze die Zeile `mapView.getOverlays().add(textOverlay);` mit der folgenden Zeile.
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Fügt das Overlay zur Liste der Marker hinzu</span>
+</span></span><span style="display:flex;"><span>markers.add(textOverlay);
+</span></span></code></pre></div><pre><code>3. Füge den folgenden Code unter der Zeile `mapView.zoomToBoundingBox(roadOverlay.getBounds(), true, 150);` ein, um die Marker erst nach der Route/Straße zu zeichnen.
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#008000">// Zeigt die Marker auf der Karte an</span>
+</span></span><span style="display:flex;"><span>mapView.getOverlays().addAll(markers);
+</span></span></code></pre></div><ol start="3">
+<li>
+<p>Ändere nun die Hintergrundfarbe der Marker, indem du in der  <code>for</code>-Schleife in der Zeile <code>backgroundPaint.setColor(Color.BLACK)</code> den Parameter <code>Color.BLACK</code> auf <code>getResources().getColor(R.color.colorPrimary)</code> änderst.</p>
+</li>
+<li>
+<p>Ändere mit der folgenden Zeile die Schriftart des Textes.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>textPaint.setTypeface(ResourcesCompat.getFont(getContext(), R.font.cabin));
+</span></span></code></pre></div><p>Gratuliere! Nun hast du auch diese Anleitung abgeschlossen und deine App sollte nun in etwa so aussehen. Du kannst natürlich noch selbst versuchen die App weiterzuentwickeln. Dabei kannst du neue Funktionen hinzufügen, die Farben der App ändern, sie in verschiedene Sprachen übersetzen, oder was dir sonst noch so einfällt. Deiner Kreativität sind hier keine Grenzen gesetzt ;-).</p>
 
 
 
@@ -906,19 +954,12 @@ buttonTryAgain = view.findViewById(R.id.button_try_again);</code></pre></div></l
     </div>
 </div>
 
-
 <h2 id="attribution-links-für-die-icons-und-das-hintergrundbild">&ldquo;Attribution Links&rdquo; für die Icons und das Hintergrundbild</h2>
-
 <p>Solltest du die App veröffentlichen, musst du unbedingt die Information, von wo die Icons und das Hintergrundbild sind, in den Credits der App und in der Beschreibung der App im PlayStore anzeigen! Unten sind noch einmal die &ldquo;Attribution Links&rdquo;, also die Links, die angezeigt werden müssen, aufgelistet.</p>
-
-<p><span>Photo by <a href="https://unsplash.com/@timowielink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Timo Wielink</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
-
-<div>Icons made by <a href="https://www.flaticon.com/free-icon/placeholder_2942933?term=map&page=1&position=41" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
-<div>Icons made by <a href="https://www.flaticon.com/free-icon/reply_481675?term=back&page=1&position=43" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
+<p><!-- raw HTML omitted -->Photo by <!-- raw HTML omitted -->Timo Wielink<!-- raw HTML omitted --> on <!-- raw HTML omitted -->Unsplash<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="ressourcen">Ressourcen</h2>
-
 <p><a href="https://github.com/KatharinaSick/coderdojo-anleitung-map-reactions-app" target="_blank">Der vollständige Code für diese App</a></p>
  </div>
         </div>

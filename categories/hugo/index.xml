@@ -4,22 +4,15 @@
     <title>Hugo on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/categories/hugo/</link>
     <description>Recent content in Hugo on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Erste Schritte mit Hugo</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-hugo/</guid>
-      <description>Erste Schritte mit Hugo Was ist Hugo Hugo ist ein statischer Webseitengenerator, der auf der Sprache Go basiert.
-Was ist ein statischer Website Generator Dynamische Webseiten werden erst beim Abruf vom Server generiert (z.B. PHP, ASP.NET). Statische Webseiten bestehen nur aus HTML, JavaScript, CSS und weiteren Resourcen wie Bildern oder Fonts.
-Static Site Generators generieren statische Webseiten und ermöglichen damit die Trennung von Layout und Content. Mehr Infos dazu findest du unter https://www.</description>
+      <description>&lt;h1 id=&#34;erste-schritte-mit-hugo&#34;&gt;Erste Schritte mit Hugo&lt;/h1&gt;&#xA;&lt;h2 id=&#34;was-ist-hugo&#34;&gt;Was ist Hugo&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; ist ein statischer Webseitengenerator, der auf der Sprache &lt;a href=&#34;https://de.wikipedia.org/wiki/Go_%28Programmiersprache%29&#34; target=&#34;_blank&#34;&gt;Go&lt;/a&gt; basiert.&lt;/p&gt;&#xA;&lt;h2 id=&#34;was-ist-ein-statischer-website-generator&#34;&gt;Was ist ein statischer Website Generator&lt;/h2&gt;&#xA;&lt;p&gt;Dynamische Webseiten werden erst beim Abruf vom Server generiert (z.B. PHP, ASP.NET). Statische Webseiten bestehen nur aus HTML, JavaScript, CSS und weiteren Resourcen wie Bildern oder Fonts.&lt;/p&gt;&#xA;&lt;p&gt;Static Site Generators generieren statische Webseiten und ermöglichen damit die Trennung von Layout und Content. Mehr Infos dazu findest du unter &lt;a href=&#34;https://www.projectival.de/blog/static-site-generator-statische-webseiten-dynamische-webseiten/&#34; target=&#34;_blank&#34;&gt;https://www.projectival.de/blog/static-site-generator-statische-webseiten-dynamische-webseiten/&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

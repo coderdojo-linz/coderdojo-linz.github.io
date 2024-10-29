@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Geisterspiel mit Python </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,190 +150,175 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#geisterspiel">Geisterspiel</a>
-<ul>
-<li><a href="#die-aufgabe">Die Aufgabe</a></li>
-<li><a href="#bestandteile-des-programms">Bestandteile des Programms</a>
-<ul>
-<li><a href="#zufallszahlen">Zufallszahlen</a></li>
-<li><a href="#wertetypen-für-variablen">Wertetypen für Variablen</a></li>
-<li><a href="#steuerung-des-programmablaufs">Steuerung des Programmablaufs</a>
-<ul>
-<li><a href="#bedingungen">Bedingungen</a></li>
-<li><a href="#schleifen">Schleifen</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#eine-lösung">Eine Lösung</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#die-aufgabe">Die Aufgabe</a></li>
+    <li><a href="#bestandteile-des-programms">Bestandteile des Programms</a>
+      <ul>
+        <li><a href="#zufallszahlen">Zufallszahlen</a></li>
+        <li><a href="#wertetypen-für-variablen">Wertetypen für Variablen</a></li>
+        <li><a href="#steuerung-des-programmablaufs">Steuerung des Programmablaufs</a></li>
+      </ul>
+    </li>
+    <li><a href="#eine-lösung">Eine Lösung</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="geisterspiel">Geisterspiel</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="geisterspiel">Geisterspiel</h1>
 <p>In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python.
 Es wird nur ein text-basiertes UI (= <strong>U</strong>ser <strong>I</strong>nterface; deutsch: Benutzerschnittstelle) haben, d.h. wir werden Text auf dem Bildschirm lesen und Zeichen mit der Tastatur eingeben, um das Spiel zu steuern.</p>
-
 <h2 id="die-aufgabe">Die Aufgabe</h2>
-
 <p>Der Geist versteckt sich zufällig hinter einer von 3 Türen.
 Du entscheidest, welche Türe du öffnen möchtest.
 Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste.</p>
-
 <p>Unser Programm soll nun prüfen, ob der Geist sich hinter der Tür befindet und eine entsprechende Meldung ausgeben; also entweder &lsquo;Geist gefunden&rsquo; und damit das Spiel verloren oder &lsquo;Kein Geist&rsquo; und der Spieler darf zur nächsten Station mit wieder 3 Türen und einem zufällig versteckten Geist weitergehen.
 Das Programm soll also auch mitzählen, wie oft der Spieler durch eine Tür geht, ohne dabei auf den Geist zu stoßen.</p>
-
 <p>Ein möglicher Spielablauf könnte dann im Shell-Fenster so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Geisterspiel
-============
-
-Vor dir sind drei Türen.
-Hinter einer ist ein Geist.
-Welche Tür öffnest du?
-1, 2 oder 3? 2
-Kein Geist!
-Du bis ein Zimmer weiter.
-
-Vor dir sind drei Türen.
-Hinter einer ist ein Geist.
-Welche Tür öffnest du?
-1, 2 oder 3? 2
-GEIST!
-Lauf schnell weg!
-
-Game over! Deine Punkte:  1</code></pre></div>
-<h2 id="bestandteile-des-programms">Bestandteile des Programms</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Geisterspiel
+</span></span><span style="display:flex;"><span>============
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Vor dir sind drei Türen.
+</span></span><span style="display:flex;"><span>Hinter einer ist ein Geist.
+</span></span><span style="display:flex;"><span>Welche Tür öffnest du?
+</span></span><span style="display:flex;"><span>1, 2 oder 3? 2
+</span></span><span style="display:flex;"><span>Kein Geist!
+</span></span><span style="display:flex;"><span>Du bis ein Zimmer weiter.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Vor dir sind drei Türen.
+</span></span><span style="display:flex;"><span>Hinter einer ist ein Geist.
+</span></span><span style="display:flex;"><span>Welche Tür öffnest du?
+</span></span><span style="display:flex;"><span>1, 2 oder 3? 2
+</span></span><span style="display:flex;"><span>GEIST!
+</span></span><span style="display:flex;"><span>Lauf schnell weg!
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Game over! Deine Punkte:  1
+</span></span></code></pre></div><h2 id="bestandteile-des-programms">Bestandteile des Programms</h2>
 <p>Zunächst öffnen wir ein neues Code-Fenster, wie wir es am Ende der Ersten-Schritte-Übung für das Zeichnprogramm gemacht haben.
 Dort werden wir nun unser Geisterspiel-Programm schreiben und es unter dem Namen &ldquo;geisterspiel.py&rdquo; speichern.</p>
-
 <p>Von der ersten Übung her kennen wir auch schon ein paar Dinge, die wir hier wieder benötigen:</p>
-
 <ul>
-<li><p>Textausgabe auf dem Bildschirm mit der Funktion <code>print(...)</code></p></li>
-
-<li><p>Variablen und Zuweisungen von Werten, z.B. <code>a = 1</code></p></li>
-
-<li><p>Rechenoperation (auch mit Variablen), z.B. <code>a = a * 2</code></p></li>
+<li>
+<p>Textausgabe auf dem Bildschirm mit der Funktion <code>print(...)</code></p>
+</li>
+<li>
+<p>Variablen und Zuweisungen von Werten, z.B. <code>a = 1</code></p>
+</li>
+<li>
+<p>Rechenoperation (auch mit Variablen), z.B. <code>a = a * 2</code></p>
+</li>
 </ul>
-
 <p>Zusätzlich können wir noch folgende Dinge brauchen:</p>
-
 <h3 id="zufallszahlen">Zufallszahlen</h3>
-
 <p>Um eine Zufallszahl zwischen 1 und 3 erzeugen zu können, muss man die Funktion <code>randint</code> aus der Bibliothek <code>random</code> importieren:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint</code></pre></div>
-<p>und damit dann eine Tür für den Geist auswählen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tuer = randint(1, 3)</code></pre></div>
-<h3 id="wertetypen-für-variablen">Wertetypen für Variablen</h3>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
+</span></span></code></pre></div><p>und damit dann eine Tür für den Geist auswählen:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tuer = randint(1, 3)
+</span></span></code></pre></div><h3 id="wertetypen-für-variablen">Wertetypen für Variablen</h3>
 <p>Wir können in Variablen aber nicht nur Zahlen, sondern auch Text oder Wahrheitswerte speichern.</p>
-
 <ul>
-<li><p>Text:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">begruessung = <span style="color:#a31515">&#39;Hallo&#39;</span>
-name = input(<span style="color:#a31515">&#39;Wie heißt du? &#39;</span>)
-begruessung = begruessung + <span style="color:#a31515">&#39; &#39;</span> + name + <span style="color:#a31515">&#39;!&#39;</span>
-<span style="color:#00f">print</span>(begruessung)</code></pre></div>
-<p>Wie du siehst, kann man mit Text auch &ldquo;rechnen&rdquo; (Zeile 3) und Werte von Variablen ausgeben (Zeile 4).
-Außerdem zeigt die Zeile 2, wie man dem Benutzer Fragen stellt und die Antwort gleich in einer Variablen speichert.</p></li>
-
-<li><p>Wahrheitswerte:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">geist_gefunden = False
-du_bist_mutig = True</code></pre></div></li>
-
-<li><p>Wertetyp ändern:</p>
-
+<li>Text:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>begruessung = <span style="color:#a31515">&#39;Hallo&#39;</span>
+</span></span><span style="display:flex;"><span>name = input(<span style="color:#a31515">&#39;Wie heißt du? &#39;</span>)
+</span></span><span style="display:flex;"><span>begruessung = begruessung + <span style="color:#a31515">&#39; &#39;</span> + name + <span style="color:#a31515">&#39;!&#39;</span>
+</span></span><span style="display:flex;"><span>print(begruessung)
+</span></span></code></pre></div><pre><code>Wie du siehst, kann man mit Text auch &quot;rechnen&quot; (Zeile 3) und Werte von Variablen ausgeben (Zeile 4).
+Außerdem zeigt die Zeile 2, wie man dem Benutzer Fragen stellt und die Antwort gleich in einer Variablen speichert.
+</code></pre>
+<ul>
+<li>Wahrheitswerte:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>geist_gefunden = <span style="color:#00f">False</span>
+</span></span><span style="display:flex;"><span>du_bist_mutig = <span style="color:#00f">True</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>Wertetyp ändern:</p>
 <p>Es ist auch möglich, den Typ einer Variablen zu andern. Zum Beispiel wollen wir für unser Spiel, die Eingabe der Türnummer für das Programm als Zahl und nicht als Text haben.
-Dazu können wir mit <code>int('3')</code> den Text &ldquo;3&rdquo; in die Zahl 3 umwandeln (<em>int</em> steht für das englische <em>integer</em>, was auf Deutsch &ldquo;ganze Zahl&rdquo; bedeutet).</p></li>
+Dazu können wir mit <code>int('3')</code> den Text &ldquo;3&rdquo; in die Zahl 3 umwandeln (<em>int</em> steht für das englische <em>integer</em>, was auf Deutsch &ldquo;ganze Zahl&rdquo; bedeutet).</p>
+</li>
 </ul>
-
 <h3 id="steuerung-des-programmablaufs">Steuerung des Programmablaufs</h3>
-
 <h4 id="bedingungen">Bedingungen</h4>
-
 <p>Um eine Bedingung zu prüfen, gibt es den Befehl <code>if</code>, gefolgt von der Bedingung, die geprüft werden soll, und einem Doppelpunkt am Ende.</p>
-
 <ul>
-<li><p>Was passieren soll, wenn die Bedingung erfüllt ist, müssen wir in die nächste Zeile schreiben und - in Python ganz streng - auch noch eine Einrückung machen. Am besten mit der Tabulator-Taste (TAB).</p>
-
-<p><em>Hinweis</em>: Die IDLE hilft uns aber dabei und kümmert sich automatisch um die Einrückung, nachdem wir nach dem Doppelpunkt ENTER gedrückt haben.</p></li>
-
-<li><p>Um auch festzulegen, was passieren soll, wenn die Bedingung nicht erfüllt ist, können wir anschließend, wieder in eine neue Zeile und jetzt wieder ohne die Einrückung <code>else:</code> schreiben.
-In die nächste Zeile und wieder eingerückt kommen dann die Anweisungen dazu.</p></li>
-
-<li><p><strong>Logische Operatoren</strong>: Um eine Bedingung formulieren zu können, brauchen wir sogenannte logische Operatoren, die 2 Werte vergleichen und als Ergebnis den Wahrheitswert <em>WAHR</em> oder <em>FALSCH</em> liefern.
+<li>
+<p>Was passieren soll, wenn die Bedingung erfüllt ist, müssen wir in die nächste Zeile schreiben und - in Python ganz streng - auch noch eine Einrückung machen. Am besten mit der Tabulator-Taste (TAB).</p>
+<p><em>Hinweis</em>: Die IDLE hilft uns aber dabei und kümmert sich automatisch um die Einrückung, nachdem wir nach dem Doppelpunkt ENTER gedrückt haben.</p>
+</li>
+<li>
+<p>Um auch festzulegen, was passieren soll, wenn die Bedingung nicht erfüllt ist, können wir anschließend, wieder in eine neue Zeile und jetzt wieder ohne die Einrückung <code>else:</code> schreiben.
+In die nächste Zeile und wieder eingerückt kommen dann die Anweisungen dazu.</p>
+</li>
+<li>
+<p><strong>Logische Operatoren</strong>: Um eine Bedingung formulieren zu können, brauchen wir sogenannte logische Operatoren, die 2 Werte vergleichen und als Ergebnis den Wahrheitswert <em>WAHR</em> oder <em>FALSCH</em> liefern.
 In Python gibt es die folgenden logischen Operatoren:</p>
-
-<p><code>a == b</code> &hellip; a ist gleich b<br />
-<code>a != b</code> &hellip; a is ungleich b<br />
-<code>a &lt; b</code> &hellip; a ist kleiner als b<br />
-<code>a &gt; b</code> &hellip; a ist größer als b<br />
-<code>a &lt;= b</code> &hellip; a ist kleiner als oder gleich b<br />
-<code>a &gt;= b</code> &hellip; a ist größer als oder gleich b</p></li>
-
-<li><p>Ein Beispiel für eine if-Anweisung:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tuer = 0
-<span style="color:#00f">if</span> tuer == 3:
-	<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Gefunden.&#39;</span>)
-<span style="color:#00f">else</span>:
-	<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Leider nicht.&#39;</span>)</code></pre></div></li>
+<p><code>a == b</code> &hellip; a ist gleich b<br>
+<code>a != b</code> &hellip; a is ungleich b<br>
+<code>a &lt; b</code> &hellip; a ist kleiner als b<br>
+<code>a &gt; b</code> &hellip; a ist größer als b<br>
+<code>a &lt;= b</code> &hellip; a ist kleiner als oder gleich b<br>
+<code>a &gt;= b</code> &hellip; a ist größer als oder gleich b</p>
+</li>
+<li>
+<p>Ein Beispiel für eine if-Anweisung:</p>
+</li>
 </ul>
-
-<h4 id="schleifen">Schleifen</h4>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tuer = 0
+</span></span><span style="display:flex;"><span><span style="color:#00f">if</span> tuer == 3:
+</span></span><span style="display:flex;"><span>	print(<span style="color:#a31515">&#39;Gefunden.&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#00f">else</span>:
+</span></span><span style="display:flex;"><span>	print(<span style="color:#a31515">&#39;Leider nicht.&#39;</span>)
+</span></span></code></pre></div><h4 id="schleifen">Schleifen</h4>
 <ul>
-<li><p>Um Dinge zu beschreiben, die sich immer auf die gleich Art wiederholen sollen, solange eine Bedingung erfüllt ist, gibt es sogenannte Schleifen, z.B. die <strong>while</strong>-Schleife.
+<li>
+<p>Um Dinge zu beschreiben, die sich immer auf die gleich Art wiederholen sollen, solange eine Bedingung erfüllt ist, gibt es sogenannte Schleifen, z.B. die <strong>while</strong>-Schleife.
 Sie beginnt mit dem Befehl <code>while</code> gefolgt - wie bei der if-Anweisung - mit der Bedingung und abgeschlossen wird die Zeile auch wieder mit einem Doppelpunkt.
-Dann geht es in der nächsten Zeile, eingerückt mit den Anweisungen weiter, die nun wiederholt werden sollen.</p></li>
-
-<li><p>Ein Beispiel für eine while-Schleife:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">punkte = 0
-<span style="color:#00f">while</span> punkte &lt; 5:
-	<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Gehe weiter.&#39;</span>)
-	punkte = punkte + 1</code></pre></div></li>
+Dann geht es in der nächsten Zeile, eingerückt mit den Anweisungen weiter, die nun wiederholt werden sollen.</p>
+</li>
+<li>
+<p>Ein Beispiel für eine while-Schleife:</p>
+</li>
 </ul>
-
-<h2 id="eine-lösung">Eine Lösung</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>punkte = 0
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span> punkte &lt; 5:
+</span></span><span style="display:flex;"><span>	print(<span style="color:#a31515">&#39;Gehe weiter.&#39;</span>)
+</span></span><span style="display:flex;"><span>	punkte = punkte + 1
+</span></span></code></pre></div><h2 id="eine-lösung">Eine Lösung</h2>
 
 <div class="alert alert-primary">
 Versuche zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!
 </div>
 
-
 <p>Eine mögliche Lösung für das Geisterspiel könnte dann so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># CoderDojo Linz - Geisterspiel</span>
-
-<span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
-
-<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Geisterspiel&#39;</span>)
-<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;============&#39;</span>)
-
-du_bist_mutig = True
-score = 0
-
-<span style="color:#00f">while</span> du_bist_mutig:
-	geistertuer = randint(1, 3)
-	<span style="color:#00f">print</span>(<span style="color:#a31515">&#39; &#39;</span>)
-	<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Vor dir sind drei Türen.&#39;</span>)
-	<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Hinter einer ist ein Geist.&#39;</span>)
-	<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Welche Tür öffnest du?&#39;</span>)
-	tuer = input(<span style="color:#a31515">&#39;1, 2 oder 3? &#39;</span>)
-	tuer_nummer = int(tuer)
-	<span style="color:#00f">if</span> tuer_nummer == geistertuer:
-		<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;GEIST!&#39;</span>)
-		<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Lauf schnell weg!&#39;</span>)
-		du_bist_mutig = False
-	<span style="color:#00f">else</span>:
-		<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Kein Geist!&#39;</span>)
-		<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Du bis ein Zimmer weiter.&#39;</span>)
-		score = score + 1
-
-<span style="color:#00f">print</span>(<span style="color:#a31515">&#39; &#39;</span>)
-<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Game over! Deine Punkte: &#39;</span>, score)</code></pre></div> </div>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># CoderDojo Linz - Geisterspiel</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#a31515">&#39;Geisterspiel&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#a31515">&#39;============&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>du_bist_mutig = <span style="color:#00f">True</span>
+</span></span><span style="display:flex;"><span>score = 0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span> du_bist_mutig:
+</span></span><span style="display:flex;"><span>	geistertuer = randint(1, 3)
+</span></span><span style="display:flex;"><span>	print(<span style="color:#a31515">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span>	print(<span style="color:#a31515">&#39;Vor dir sind drei Türen.&#39;</span>)
+</span></span><span style="display:flex;"><span>	print(<span style="color:#a31515">&#39;Hinter einer ist ein Geist.&#39;</span>)
+</span></span><span style="display:flex;"><span>	print(<span style="color:#a31515">&#39;Welche Tür öffnest du?&#39;</span>)
+</span></span><span style="display:flex;"><span>	tuer = input(<span style="color:#a31515">&#39;1, 2 oder 3? &#39;</span>)
+</span></span><span style="display:flex;"><span>	tuer_nummer = int(tuer)
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">if</span> tuer_nummer == geistertuer:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#a31515">&#39;GEIST!&#39;</span>)
+</span></span><span style="display:flex;"><span>		print(<span style="color:#a31515">&#39;Lauf schnell weg!&#39;</span>)
+</span></span><span style="display:flex;"><span>		du_bist_mutig = <span style="color:#00f">False</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">else</span>:
+</span></span><span style="display:flex;"><span>		print(<span style="color:#a31515">&#39;Kein Geist!&#39;</span>)
+</span></span><span style="display:flex;"><span>		print(<span style="color:#a31515">&#39;Du bis ein Zimmer weiter.&#39;</span>)
+</span></span><span style="display:flex;"><span>		score = score + 1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#a31515">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#a31515">&#39;Game over! Deine Punkte: &#39;</span>, score)
+</span></span></code></pre></div> </div>
         </div>
     </div>
 </section>  

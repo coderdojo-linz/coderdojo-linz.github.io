@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> SVG Schreibtrainer </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,33 +150,23 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#svg-schreibtrainer">SVG Schreibtrainer</a>
-<ul>
-<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
-<li><a href="#grundgerüst-der-html-seite">Grundgerüst der HTML Seite</a></li>
-<li><a href="#styles">Styles</a></li>
-<li><a href="#skripte">Skripte</a></li>
-<li><a href="#weitere-ideen">Weitere Ideen</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+    <li><a href="#grundgerüst-der-html-seite">Grundgerüst der HTML Seite</a></li>
+    <li><a href="#styles">Styles</a></li>
+    <li><a href="#skripte">Skripte</a></li>
+    <li><a href="#weitere-ideen">Weitere Ideen</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="svg-schreibtrainer">SVG Schreibtrainer</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="svg-schreibtrainer">SVG Schreibtrainer</h1>
 <h2 id="ziel-der-übung">Ziel der Übung</h2>
-
 <p>Du baust ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.</p>
-
 <p>Am oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen. Tippe den Buchstaben, bevor er den unteren
 Rand des Spielfelds berührt.</p>
-
 <p>Auf Wikipedia findest du eine Grafik zum
-<a href="https://de.wikipedia.org/wiki/Zehnfingersystem#/media/File:QWERTZ-10Finger-Layout.svg" target="_blank">Zehnfingersystem</a>, die erklärt, welche Taste
+<!-- raw HTML omitted -->Zehnfingersystem<!-- raw HTML omitted -->, die erklärt, welche Taste
 mit welchem Finger gedrückt werden soll.</p>
-
 
 
 
@@ -201,215 +191,196 @@ mit welchem Finger gedrückt werden soll.</p>
     </div>
 </div>
 
-
 <h2 id="grundgerüst-der-html-seite">Grundgerüst der HTML Seite</h2>
-
 <p>Erstelle als erstes eine neue HTML Seite mit dem Namen <code>schreibtrainer.html</code>.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
-&lt;html&gt;
-
-&lt;head&gt;
-	&lt;title&gt;Schreibtrainer&lt;/title&gt;
-	&lt;meta charset=<span style="color:#a31515">&#34;utf-8&#34;</span> /&gt;
-	&lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> type=<span style="color:#a31515">&#34;text/css&#34;</span> href=<span style="color:#a31515">&#34;schreibtrainer.css&#34;</span>&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-	&lt;h1&gt;Schreibtrainer&lt;/h1&gt;
-
-	<span style="color:#008000">&lt;!-- SVG Spielbereich --&gt;</span>
-	&lt;div&gt;
-		&lt;svg id=<span style="color:#a31515">&#34;svg&#34;</span> width=<span style="color:#a31515">&#34;800&#34;</span> height=<span style="color:#a31515">&#34;500&#34;</span>&gt;&lt;/svg&gt;
-	&lt;/div&gt;
-
-	<span style="color:#008000">&lt;!-- Ausgaben des Spiels --&gt;</span>
-	&lt;p&gt;Anzahl Treffer: &lt;span id=<span style="color:#a31515">&#34;anzahlTreffer&#34;</span> /&gt;&lt;/p&gt;
-	&lt;p&gt;Anzahl Fehler: &lt;span id=<span style="color:#a31515">&#34;anzahlFehler&#34;</span> /&gt;&lt;/p&gt;
-
-	<span style="color:#008000">&lt;!-- Buttons zum Spiel stoppen und starten --&gt;</span>
-	&lt;button onclick=<span style="color:#a31515">&#34;starteSpiel()&#34;</span>&gt;Starte Spiel&lt;/button&gt;
-	&lt;button onclick=<span style="color:#a31515">&#34;spielAktiv = false&#34;</span>&gt;Stoppe Spiel&lt;/button&gt;
-
-	<span style="color:#008000">&lt;!-- Scripte für snap.svg und eigene Scripte --&gt;</span>
-	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span> src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&#34;</span>&gt;&lt;/script&gt;
-	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span> src=<span style="color:#a31515">&#34;schreibtrainer.js&#34;</span>&gt;&lt;/script&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;</code></pre></div>
-<h2 id="styles">Styles</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;html&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;head&gt;
+</span></span><span style="display:flex;"><span>	&lt;title&gt;Schreibtrainer&lt;/title&gt;
+</span></span><span style="display:flex;"><span>	&lt;meta charset=<span style="color:#a31515">&#34;utf-8&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>	&lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> type=<span style="color:#a31515">&#34;text/css&#34;</span> href=<span style="color:#a31515">&#34;schreibtrainer.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/head&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;body&gt;
+</span></span><span style="display:flex;"><span>	&lt;h1&gt;Schreibtrainer&lt;/h1&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- SVG Spielbereich --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;div&gt;
+</span></span><span style="display:flex;"><span>		&lt;svg id=<span style="color:#a31515">&#34;svg&#34;</span> width=<span style="color:#a31515">&#34;800&#34;</span> height=<span style="color:#a31515">&#34;500&#34;</span>&gt;&lt;/svg&gt;
+</span></span><span style="display:flex;"><span>	&lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- Ausgaben des Spiels --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;p&gt;Anzahl Treffer: &lt;span id=<span style="color:#a31515">&#34;anzahlTreffer&#34;</span> /&gt;&lt;/p&gt;
+</span></span><span style="display:flex;"><span>	&lt;p&gt;Anzahl Fehler: &lt;span id=<span style="color:#a31515">&#34;anzahlFehler&#34;</span> /&gt;&lt;/p&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- Buttons zum Spiel stoppen und starten --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;button onclick=<span style="color:#a31515">&#34;starteSpiel()&#34;</span>&gt;Starte Spiel&lt;/button&gt;
+</span></span><span style="display:flex;"><span>	&lt;button onclick=<span style="color:#a31515">&#34;spielAktiv = false&#34;</span>&gt;Stoppe Spiel&lt;/button&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">&lt;!-- Scripte für snap.svg und eigene Scripte --&gt;</span>
+</span></span><span style="display:flex;"><span>	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span> src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&#34;</span>&gt;&lt;/script&gt;
+</span></span><span style="display:flex;"><span>	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span> src=<span style="color:#a31515">&#34;schreibtrainer.js&#34;</span>&gt;&lt;/script&gt;
+</span></span><span style="display:flex;"><span>&lt;/body&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/html&gt;
+</span></span></code></pre></div><h2 id="styles">Styles</h2>
 <p>Die Styles sind hier nicht direkt im HTML enthalten, sondern es wird auf die externe Datei <code>schreibtrainer.css</code> verwiesen. Die Datei muss sich im selben Ordner wie schreibtrainer.htm befinden.
-Du kannst die Datei entweder unter <a href="schreibtrainer.css">schreibtrainer.css</a> herunterladen, oder du erstellst eine neue Datei <code>schreibtrainer.css</code> mit folgendem Inhalt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">body {
-	<span style="color:#00f">font-family</span>: Verdana;
-	<span style="color:#00f">padding</span>: 20<span style="color:#2b91af">px</span>;
-}
-
-#svg {
-	<span style="color:#00f">background-color</span>: <span style="color:#00f">lightblue</span>;
-}
-
-circle {
-	stroke: <span style="color:#00f">black</span>;
-}
-
-text {
-	stroke: <span style="color:#00f">black</span>;
-	<span style="color:#00f">font-size</span>: 30<span style="color:#2b91af">px</span>;
-	<span style="color:#00f">line-height</span>: 30<span style="color:#2b91af">px</span>;
-}</code></pre></div>
-<h2 id="skripte">Skripte</h2>
-
+Du kannst die Datei entweder unter <!-- raw HTML omitted -->schreibtrainer.css<!-- raw HTML omitted --> herunterladen, oder du erstellst eine neue Datei <code>schreibtrainer.css</code> mit folgendem Inhalt:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>body {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">font-family</span>: Verdana;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">padding</span>: 20<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>#svg {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">background-color</span>: <span style="color:#00f">lightblue</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>circle {
+</span></span><span style="display:flex;"><span>	stroke: <span style="color:#00f">black</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>text {
+</span></span><span style="display:flex;"><span>	stroke: <span style="color:#00f">black</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">font-size</span>: 30<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">line-height</span>: 30<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="skripte">Skripte</h2>
 <p>Für die Skripte verwenden wir in diesem Spiel eine eigene Datei. Lege dazu eine neue Datei <code>schreibtrainer.js</code> an. Im HTML wird auf diese Datei verwiesen. Wir starten
 mit folgenden Grundgerüst:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">var</span> svg = Snap(<span style="color:#a31515">&#34;#svg&#34;</span>);
-<span style="color:#00f">var</span> buchstaben = <span style="color:#a31515">&#34;fjdkslaöghärueiwoqptzüvnbmcxy&#34;</span>;
-<span style="color:#00f">var</span> level;
-<span style="color:#00f">var</span> treffer;
-<span style="color:#00f">var</span> fehler;
-<span style="color:#00f">var</span> spielAktiv;
-
-starteSpiel();
-
-<span style="color:#008000">// setzt alle Variablen auf den Ausgangswert und starte dann das Spiel
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> starteSpiel() {
-	<span style="color:#008000">// variablen initialisieren
-</span><span style="color:#008000"></span>	level = 1;
-	treffer = 0;
-	fehler = 0;
-	spielAktiv = <span style="color:#00f">true</span>;
-
-	datenAusgeben();
-	neuerBuchstabe();
-}
-
-<span style="color:#008000">// gibt die Anzahl der Treffer und die Anzahl der Fehler aus
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> datenAusgeben() {
-	<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>}
-
-<span style="color:#008000">// zeigt einen neuen Buchstaben der getippt werden soll im Spiel an
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> neuerBuchstabe() {
-	<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>}
-</code></pre></div>
-<p>Wenn du die Seite schreibtrainer.html jetzt aufrufst, siehst du nur das leere Spielfeld. Sonst passiert noch nichts. Als erstes fügen wir den Code
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">var</span> svg = Snap(<span style="color:#a31515">&#34;#svg&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> buchstaben = <span style="color:#a31515">&#34;fjdkslaöghärueiwoqptzüvnbmcxy&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> level;
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> treffer;
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> fehler;
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> spielAktiv;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>starteSpiel();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// setzt alle Variablen auf den Ausgangswert und starte dann das Spiel
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> starteSpiel() {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// variablen initialisieren
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	level = 1;
+</span></span><span style="display:flex;"><span>	treffer = 0;
+</span></span><span style="display:flex;"><span>	fehler = 0;
+</span></span><span style="display:flex;"><span>	spielAktiv = <span style="color:#00f">true</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	datenAusgeben();
+</span></span><span style="display:flex;"><span>	neuerBuchstabe();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// gibt die Anzahl der Treffer und die Anzahl der Fehler aus
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> datenAusgeben() {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// zeigt einen neuen Buchstaben der getippt werden soll im Spiel an
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> neuerBuchstabe() {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>}
+</span></span></code></pre></div><p>Wenn du die Seite schreibtrainer.html jetzt aufrufst, siehst du nur das leere Spielfeld. Sonst passiert noch nichts. Als erstes fügen wir den Code
 für die Funktion datenAusgeben ein. Hier geben wir in den HTML Element <code>anzahlFehler</code> und <code>anzahlTreffer</code> die aktuellen Werte der Variablen <code>fehler</code> und <code>treffer</code> aus.</p>
-
 <p><strong>Code für die Function datenAusgeben()</strong></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">document.getElementById(<span style="color:#a31515">&#34;anzahlFehler&#34;</span>).innerText = fehler.toString();
-document.getElementById(<span style="color:#a31515">&#34;anzahlTreffer&#34;</span>).innerText = treffer.toString();
-</code></pre></div>
-<p>Damit die Buchstaben im Spielfeld angezeigt werden, müssen wir jetzt noch die Function <code>neuerBuchstabe</code> implementieren.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>document.getElementById(<span style="color:#a31515">&#34;anzahlFehler&#34;</span>).innerText = fehler.toString();
+</span></span><span style="display:flex;"><span>document.getElementById(<span style="color:#a31515">&#34;anzahlTreffer&#34;</span>).innerText = treffer.toString();
+</span></span></code></pre></div><p>Damit die Buchstaben im Spielfeld angezeigt werden, müssen wir jetzt noch die Function <code>neuerBuchstabe</code> implementieren.</p>
 <p><strong>Code für die Function neuerBuchstabe()</strong></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">if</span> (spielAktiv) {
-	<span style="color:#008000">// bestimme x und y position und den angezeigten Buchstaben
-</span><span style="color:#008000"></span>	<span style="color:#00f">var</span> x = getRandomInt(40, 760);
-	<span style="color:#00f">var</span> y = 20;
-	<span style="color:#00f">var</span> buchstabe = buchstaben[getRandomInt(0, level)];
-
-	<span style="color:#008000">// male mit SVG einen Kreis und den Buchstaben und gruppiere die beiden zu einer Figur
-</span><span style="color:#008000"></span>	<span style="color:#00f">var</span> kreis = svg.circle(x, y, 20).attr({ fill: <span style="color:#a31515">&#34;yellow&#34;</span> });
-	<span style="color:#00f">var</span> text = svg.text(x - 5, y + 8, buchstabe);
-	<span style="color:#00f">var</span> figur = svg.g(kreis, text);
-
-	<span style="color:#008000">// weise der Figur den Buchstaben zu und einen boolean Wert getippt, der true wird
-</span><span style="color:#008000"></span>	<span style="color:#008000">// sobald der Buchstabe getippt wurde
-</span><span style="color:#008000"></span>	figur.data(<span style="color:#a31515">&#34;buchstabe&#34;</span>, buchstabe);
-	figur.data(<span style="color:#a31515">&#34;getippt&#34;</span>, <span style="color:#00f">false</span>);
-
-	<span style="color:#008000">// bewege die Figur in vier Sekunden zum unteren Ende des SVG Bereichs
-</span><span style="color:#008000"></span>	figur.animate({ transform: <span style="color:#a31515">&#34;translate(0, 500)&#34;</span> }, 4000, <span style="color:#00f">null</span>, <span style="color:#00f">function</span> () {
-		<span style="color:#008000">// nach Ablauf der Animation entferne die Figur vom Spiel wenn sie noch nicht
-</span><span style="color:#008000"></span>		<span style="color:#008000">// getippt wurde und erhöhe die Anzahl der Fehler um eins
-</span><span style="color:#008000"></span>		<span style="color:#00f">if</span> (!figur.data(<span style="color:#a31515">&#34;getippt&#34;</span>)) {
-			figur.remove();
-			fehler++;
-			datenAusgeben();
-		}
-	});
-
-	<span style="color:#008000">// rufe die Funktion neuerBuchstabe in einer Sekunde erneut auf
-</span><span style="color:#008000"></span>	setTimeout(neuerBuchstabe, 1000);
-}
-</code></pre></div>
-<p>In der Function <code>neuerBuchstabe</code> wird eine weitere Function <code>getRandomInt</code> aufgerufen. Sie liefert uns eine Zufallszahl zwischen den beiden übergebenen Zahlen.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">if</span> (spielAktiv) {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// bestimme x und y position und den angezeigten Buchstaben
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	<span style="color:#00f">var</span> x = getRandomInt(40, 760);
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">var</span> y = 20;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">var</span> buchstabe = buchstaben[getRandomInt(0, level)];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// male mit SVG einen Kreis und den Buchstaben und gruppiere die beiden zu einer Figur
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	<span style="color:#00f">var</span> kreis = svg.circle(x, y, 20).attr({ fill: <span style="color:#a31515">&#34;yellow&#34;</span> });
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">var</span> text = svg.text(x - 5, y + 8, buchstabe);
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">var</span> figur = svg.g(kreis, text);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// weise der Figur den Buchstaben zu und einen boolean Wert getippt, der true wird
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	<span style="color:#008000">// sobald der Buchstabe getippt wurde
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	figur.data(<span style="color:#a31515">&#34;buchstabe&#34;</span>, buchstabe);
+</span></span><span style="display:flex;"><span>	figur.data(<span style="color:#a31515">&#34;getippt&#34;</span>, <span style="color:#00f">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// bewege die Figur in vier Sekunden zum unteren Ende des SVG Bereichs
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	figur.animate({ transform: <span style="color:#a31515">&#34;translate(0, 500)&#34;</span> }, 4000, <span style="color:#00f">null</span>, <span style="color:#00f">function</span> () {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// nach Ablauf der Animation entferne die Figur vom Spiel wenn sie noch nicht
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		<span style="color:#008000">// getippt wurde und erhöhe die Anzahl der Fehler um eins
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		<span style="color:#00f">if</span> (!figur.data(<span style="color:#a31515">&#34;getippt&#34;</span>)) {
+</span></span><span style="display:flex;"><span>			figur.remove();
+</span></span><span style="display:flex;"><span>			fehler++;
+</span></span><span style="display:flex;"><span>			datenAusgeben();
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// rufe die Funktion neuerBuchstabe in einer Sekunde erneut auf
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	setTimeout(neuerBuchstabe, 1000);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In der Function <code>neuerBuchstabe</code> wird eine weitere Function <code>getRandomInt</code> aufgerufen. Sie liefert uns eine Zufallszahl zwischen den beiden übergebenen Zahlen.
 Diese Funktion müssen wir noch zu unserer JavaScript Datei hinzufügen, damit der Code funktioniert. Füge den nachfolgenden Code am Ende der Datei ein.</p>
-
 <p><strong>Neue Function getRandomInt</strong></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// gibt eine Zufallszahl zwischen min (inklusive) und max (inklusive) zurück 
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> getRandomInt(min, max) {
-	min = Math.ceil(min);
-	max = Math.floor(max);
-	<span style="color:#00f">return</span> Math.floor(Math.random() * (max - min + 1)) + min;
-}
-</code></pre></div>
-<p>Wenn du die Seite schreibtrainer.html jetzt aufrufst erscheinen bereits die Buchstaben und fallen nach unten.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// gibt eine Zufallszahl zwischen min (inklusive) und max (inklusive) zurück 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> getRandomInt(min, max) {
+</span></span><span style="display:flex;"><span>	min = Math.ceil(min);
+</span></span><span style="display:flex;"><span>	max = Math.floor(max);
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">return</span> Math.floor(Math.random() * (max - min + 1)) + min;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Wenn du die Seite schreibtrainer.html jetzt aufrufst erscheinen bereits die Buchstaben und fallen nach unten.</p>
 <p>Jetzt müssen wir uns noch darum kümmern, dass wir Tastatureingaben erkennen. Es gibt in Javascript dazu das Event document.onkeyup. Füge dazu den
 folgenden Code am Ende der Datei ein.</p>
-
 <p><strong>Neues Event document.onkeyup</strong></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// reagiert wenn eine Taste gedrückt wird
-</span><span style="color:#008000"></span>document.onkeyup = <span style="color:#00f">function</span> (event) {
-	<span style="color:#008000">// finde alle Figuren im Spiel
-</span><span style="color:#008000"></span>	<span style="color:#00f">var</span> figuren = svg.selectAll(<span style="color:#a31515">&#34;g&#34;</span>);
-	<span style="color:#00f">if</span> (figuren) {
-		<span style="color:#008000">// suche in den Figuren jene, deren Buchstabe mit dem gedrückten Buchstaben 
-</span><span style="color:#008000"></span>		<span style="color:#008000">// übereinstimmt und die noch nicht getippt wurden
-</span><span style="color:#008000"></span>		<span style="color:#00f">var</span> trefferFiguren = figuren.items.filter(<span style="color:#00f">function</span> (figur) {
-			<span style="color:#00f">return</span> figur.data(<span style="color:#a31515">&#34;buchstabe&#34;</span>) == event.key &amp;&amp; !figur.data(<span style="color:#a31515">&#34;getippt&#34;</span>);
-		});
-
-		<span style="color:#008000">// wenn eine Figur gefunden wurde, dann wurde ein richtiger Buchstabe gedrückt,
-</span><span style="color:#008000"></span>		<span style="color:#008000">// sonst erhöhe die Anzahl der Fehler
-</span><span style="color:#008000"></span>		<span style="color:#00f">if</span> (trefferFiguren.length &gt; 0) {
-			buchstabeGetippt(trefferFiguren[0]);
-		} <span style="color:#00f">else</span> {
-			fehler++;
-		}
-
-		datenAusgeben();
-	}
-};
-</code></pre></div>
-<p>In dieser Funktion wird eine weitere Funktion <code>buchstabeGetippt</code> aufgerufen, die wir ebenfalls noch zu unserer JavaScript Datei hinzufügen müssen.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// reagiert wenn eine Taste gedrückt wird
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>document.onkeyup = <span style="color:#00f">function</span> (event) {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// finde alle Figuren im Spiel
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	<span style="color:#00f">var</span> figuren = svg.selectAll(<span style="color:#a31515">&#34;g&#34;</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">if</span> (figuren) {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// suche in den Figuren jene, deren Buchstabe mit dem gedrückten Buchstaben 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		<span style="color:#008000">// übereinstimmt und die noch nicht getippt wurden
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		<span style="color:#00f">var</span> trefferFiguren = figuren.items.filter(<span style="color:#00f">function</span> (figur) {
+</span></span><span style="display:flex;"><span>			<span style="color:#00f">return</span> figur.data(<span style="color:#a31515">&#34;buchstabe&#34;</span>) == event.key &amp;&amp; !figur.data(<span style="color:#a31515">&#34;getippt&#34;</span>);
+</span></span><span style="display:flex;"><span>		});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// wenn eine Figur gefunden wurde, dann wurde ein richtiger Buchstabe gedrückt,
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		<span style="color:#008000">// sonst erhöhe die Anzahl der Fehler
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		<span style="color:#00f">if</span> (trefferFiguren.length &gt; 0) {
+</span></span><span style="display:flex;"><span>			buchstabeGetippt(trefferFiguren[0]);
+</span></span><span style="display:flex;"><span>		} <span style="color:#00f">else</span> {
+</span></span><span style="display:flex;"><span>			fehler++;
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		datenAusgeben();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>In dieser Funktion wird eine weitere Funktion <code>buchstabeGetippt</code> aufgerufen, die wir ebenfalls noch zu unserer JavaScript Datei hinzufügen müssen.</p>
 <p><strong>Neue Function buchstabeGetippt</strong></p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// zeigt an, dass eine richtige Taste gedrückt wurde
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> buchstabeGetippt(figur) {
-	<span style="color:#008000">// ändere den Wert getippt der Figur auf true
-</span><span style="color:#008000"></span>	figur.data(<span style="color:#a31515">&#34;getippt&#34;</span>, <span style="color:#00f">true</span>);
-
-	<span style="color:#008000">// vergrößere den Kreis und ändere die Farbe auf hellgrün über eine halbe Sekunde
-</span><span style="color:#008000"></span>	figur.select(<span style="color:#a31515">&#34;circle&#34;</span>).animate({ r: 40, fill: <span style="color:#a31515">&#34;lightgreen&#34;</span> }, 500, <span style="color:#00f">function</span> () {
-		<span style="color:#008000">// nach der Animation entferne die Figur vom Spiel
-</span><span style="color:#008000"></span>		figur.remove();
-	});
-
-	<span style="color:#008000">// erhöhe die Anzahl der Treffer um eins
-</span><span style="color:#008000"></span>	treffer++;
-
-	<span style="color:#008000">// erhöhe das Level alle 5 Treffer
-</span><span style="color:#008000"></span>	<span style="color:#00f">if</span> (treffer % 5 == 0) {
-		level++;
-	}
-}
-</code></pre></div>
-<p>Das Spiel ist jetzt fertig. Wenn du einen Buchstaben tippst, der gerade im Spielfeld angezeigt wird, wird der Kreis gröer und grün, dann verschwindet
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// zeigt an, dass eine richtige Taste gedrückt wurde
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> buchstabeGetippt(figur) {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// ändere den Wert getippt der Figur auf true
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	figur.data(<span style="color:#a31515">&#34;getippt&#34;</span>, <span style="color:#00f">true</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// vergrößere den Kreis und ändere die Farbe auf hellgrün über eine halbe Sekunde
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	figur.select(<span style="color:#a31515">&#34;circle&#34;</span>).animate({ r: 40, fill: <span style="color:#a31515">&#34;lightgreen&#34;</span> }, 500, <span style="color:#00f">function</span> () {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// nach der Animation entferne die Figur vom Spiel
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		figur.remove();
+</span></span><span style="display:flex;"><span>	});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// erhöhe die Anzahl der Treffer um eins
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	treffer++;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// erhöhe das Level alle 5 Treffer
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	<span style="color:#00f">if</span> (treffer % 5 == 0) {
+</span></span><span style="display:flex;"><span>		level++;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Das Spiel ist jetzt fertig. Wenn du einen Buchstaben tippst, der gerade im Spielfeld angezeigt wird, wird der Kreis gröer und grün, dann verschwindet
 der Buchstabe.</p>
-
 <h2 id="weitere-ideen">Weitere Ideen</h2>
-
 <ul>
 <li>Ändere das Tempo des Spiels indem die Kreise schneller oder langsamer fallen.</li>
 <li>Ändere das Tempo des Spiels indem die Kreise schneller oder langsamer entstehen.</li>
 <li>Ändere die Logik der gewählten Buchstaben so, dass vom Zufallsgenerator abhängig vom Level nur die letzten vier Buchstaben berücksichtig werden.</li>
 <li>Finde eine bessere Logik zur Auswahl der Buchstaben, so dass neue Buchstaben öfter vorkommen als bereits gelernte.</li>
 </ul>
-
-<p>Du kannst das Spiel unter <a href="schreibtrainer.html" target="_blank">schreibtrainer.html</a> direkt ausprobieren,
+<p>Du kannst das Spiel unter <!-- raw HTML omitted -->schreibtrainer.html<!-- raw HTML omitted --> direkt ausprobieren,
 oder du kannst dir auch den Source Code mit Hilfe der Developer Tools (F12) ansehen.</p>
  </div>
         </div>

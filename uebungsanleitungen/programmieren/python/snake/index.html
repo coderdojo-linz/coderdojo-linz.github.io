@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Snake mit Python </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,64 +150,37 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#python-snake">Python Snake</a>
-<ul>
-<li><a href="#voraussetzungen">Voraussetzungen</a></li>
-<li><a href="#code-stand-nach-der-ersten-übungseinheit">Code Stand nach der ersten Übungseinheit</a></li>
-<li><a href="#8-schritte-zum-fertigen-snake-spiel">8 Schritte zum <em>fertigen</em> Snake Spiel</a>
-<ul>
-<li><a href="#schritt-0-eine-unendliche-schlange-die-sich-geradeaus-bewegt">Schritt 0 - Eine unendliche Schlange die sich geradeaus bewegt</a>
-<ul>
-<li><a href="#imports">Imports</a></li>
-<li><a href="#leinwand-erzeugen">Leinwand erzeugen</a></li>
-<li><a href="#definition-der-gittergröße">Definition der Gittergröße</a></li>
-<li><a href="#snake-körperelement-laden">Snake Körperelement laden</a></li>
-<li><a href="#zustand-des-schlangenkopfs-definieren">Zustand des Schlangenkopfs definieren</a></li>
-<li><a href="#koordinatensystem-auf-der-canvas-von-tkinter">Koordinatensystem auf der canvas von tkinter</a></li>
-<li><a href="#bewegen-vom-schlangenkopf">Bewegen vom Schlangenkopf</a></li>
-<li><a href="#zeichnen-vom-schlangenkopf">Zeichnen vom Schlangenkopf</a></li>
-<li><a href="#hauptschleife">Hauptschleife</a></li>
-<li><a href="#resultat-für-schritt-0">Resultat für Schritt 0</a></li>
-</ul></li>
-<li><a href="#schritt-1-die-schlange-lässt-sich-steuern">Schritt 1 - Die Schlange lässt sich steuern</a></li>
-<li><a href="#schritt-2-die-schlange-wird-endlich">Schritt 2 - Die Schlange wird endlich</a></li>
-<li><a href="#schritt-3-die-schlange-wird-sterblich">Schritt 3 - Die Schlange wird sterblich</a></li>
-<li><a href="#schritt-4-die-schlange-kann-sich-selbst-beißen">Schritt 4 - Die Schlange kann sich selbst beißen</a></li>
-<li><a href="#schritt-5-umkehr-verbieten">Schritt 5 - Umkehr verbieten</a></li>
-<li><a href="#schritt-6-endlich-kommt-der-apfel-ins-spiel">Schritt 6 - Endlich kommt der Apfel ins Spiel</a></li>
-<li><a href="#schritt-7-punkte-mitzählen-und-anzeigen">Schritt 7 - Punkte mitzählen und anzeigen</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+    <li><a href="#code-stand-nach-der-ersten-übungseinheit">Code Stand nach der ersten Übungseinheit</a></li>
+    <li><a href="#8-schritte-zum-fertigen-snake-spiel">8 Schritte zum <em>fertigen</em> Snake Spiel</a>
+      <ul>
+        <li><a href="#schritt-0---eine-unendliche-schlange-die-sich-geradeaus-bewegt">Schritt 0 - Eine unendliche Schlange die sich geradeaus bewegt</a></li>
+        <li><a href="#schritt-1---die-schlange-lässt-sich-steuern">Schritt 1 - Die Schlange lässt sich steuern</a></li>
+        <li><a href="#schritt-2---die-schlange-wird-endlich">Schritt 2 - Die Schlange wird endlich</a></li>
+        <li><a href="#schritt-3---die-schlange-wird-sterblich">Schritt 3 - Die Schlange wird sterblich</a></li>
+        <li><a href="#schritt-4---die-schlange-kann-sich-selbst-beißen">Schritt 4 - Die Schlange kann sich selbst beißen</a></li>
+        <li><a href="#schritt-5---umkehr-verbieten">Schritt 5 - Umkehr verbieten</a></li>
+        <li><a href="#schritt-6---endlich-kommt-der-apfel-ins-spiel">Schritt 6 - Endlich kommt der Apfel ins Spiel</a></li>
+        <li><a href="#schritt-7---punkte-mitzählen-und-anzeigen">Schritt 7 - Punkte mitzählen und anzeigen</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="python-snake">Python Snake</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="python-snake">Python Snake</h1>
 <p>In dieser Übung erstellen wir das Computerspiel Snake mit Python. So wie für das <em>Bubble Blaster</em> Spiel werden wir auch hier auf das Package Tkinter zurückgreifen, um die Spielelemente (Kugeln aus denen die Schlage besteht, Apfel) auf den Bildschirm zu malen.</p>
-
 <h2 id="voraussetzungen">Voraussetzungen</h2>
-
 <p>Es wäre ideal, wenn du das <em>Bubble Blaster</em> Spiel davor schon programmiert hast, um dich so mit Tkinter vertraut zu machen.</p>
-
 <h2 id="code-stand-nach-der-ersten-übungseinheit">Code Stand nach der ersten Übungseinheit</h2>
-
-<p>Den Source Code Stand nach der ersten Übungseinheit am 26.6.2020, von dem aus wir in der zweiten Einheit am 3.7.2020 weitergearbeitet haben, steht <a href="source/20200626_snake.py" target="_blank">hier</a> zum Download bereit.</p>
-
+<p>Den Source Code Stand nach der ersten Übungseinheit am 26.6.2020, von dem aus wir in der zweiten Einheit am 3.7.2020 weitergearbeitet haben, steht <a href="source/20200626_snake.py">hier</a> zum Download bereit.</p>
 <h2 id="8-schritte-zum-fertigen-snake-spiel">8 Schritte zum <em>fertigen</em> Snake Spiel</h2>
-
 <p>Es ist oft eine gute Strategie ein Programm nicht in einem einzelnen Wurf zu entwickeln, sondern es in kleine Unterschritte zu unterteilen, die für sich gesehen bewältigbarer sind. Snake werden wir in diesem Sinne in 8 Schritten entwicklen, wobei wir nach jedem Schritt ein ausführbares Programm bekommen, das wir gleich testen können.</p>
-
 <blockquote>
 <p>Wie isst man einen Elefanten? Stück für Stück!</p>
 </blockquote>
-
 <p>Am Ende werden wir ein Spiel haben, das der Minimalanforderung eines <em>fertigen</em> Snake Spiels genügen sollte:</p>
-
 <p>Ein Schlange startet in der Mitte des Bildschirms und ist mit den Pfeiltasten steuerbar. Am Bildschirm erscheint ein Apfel an einer zufälligen Position. Wenn die Schlange diesen erwischt, so wird sie um eine Kugel länger. Für jeden Apfel gibt es auch einen Punkt und der Punktestand wird mit einer Zahl links oben am Bildschirm mitgezählt. Bei Berühren der Wand und auch wenn sich die Schlange selbst beißt, ist das Spiel vorbei.</p>
-
 
 
 
@@ -232,13 +205,9 @@
     </div>
 </div>
 
-
 <p>Richtig <em>fertig</em> muss das Spiel aber nach Schritt 7 nicht sein und es wird noch genug Potential geben, das du selbst umsetzen kannst. Wie wäre es z.B. mit einem schöneren Kopf für die Schlange, oder einer künstliche Intelligenz, welche die Schlange als Autopilot steuert?</p>
-
-<h3 id="schritt-0-eine-unendliche-schlange-die-sich-geradeaus-bewegt">Schritt 0 - Eine unendliche Schlange die sich geradeaus bewegt</h3>
-
+<h3 id="schritt-0---eine-unendliche-schlange-die-sich-geradeaus-bewegt">Schritt 0 - Eine unendliche Schlange die sich geradeaus bewegt</h3>
 <p>Zu Beginn wollen wir einfach eine Schlange programmieren, die sich gerade aus bewegt. Wir können die Schlage noch nicht steuern und sie wird auch einfach immer länger. Sie fährt schließlich über den Bildschirmrand hinaus</p>
-
 
 
 
@@ -263,49 +232,39 @@
     </div>
 </div>
 
-
 <h4 id="imports">Imports</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> tkinter <span style="color:#00f">import</span> *
-<span style="color:#00f">from</span> time <span style="color:#00f">import</span> sleep
-<span style="color:#00f">from</span> PIL <span style="color:#00f">import</span> Image, ImageTk</code></pre></div>
-<p>Wir benötigen tkinter, um eine Zeichenebene zu bekommen auf der wir Bilder darstellen können. Wie bei einem Videofilm werden wir in jedem Zeitschritt den Zustand dieser Leinwand etwas verändern. Um zwischen den Zeitschritten eine definiertes Intervall lange warten zu können, benötigen wir die Funktion <em>sleep</em>. Diese Libraries kamen auch schon beim <em>Bubble Blaster</em> Beispiel zum Einsatz. Zusätzlich verwenden wir die PIL library, um das Bild des Schlangenkörpers, das noch nicht die richtige Größe hat, verkleinern zu können.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">from</span> tkinter <span style="color:#00f">import</span> *
+</span></span><span style="display:flex;"><span><span style="color:#00f">from</span> time <span style="color:#00f">import</span> sleep
+</span></span><span style="display:flex;"><span><span style="color:#00f">from</span> PIL <span style="color:#00f">import</span> Image, ImageTk
+</span></span></code></pre></div><p>Wir benötigen tkinter, um eine Zeichenebene zu bekommen auf der wir Bilder darstellen können. Wie bei einem Videofilm werden wir in jedem Zeitschritt den Zustand dieser Leinwand etwas verändern. Um zwischen den Zeitschritten eine definiertes Intervall lange warten zu können, benötigen wir die Funktion <em>sleep</em>. Diese Libraries kamen auch schon beim <em>Bubble Blaster</em> Beispiel zum Einsatz. Zusätzlich verwenden wir die PIL library, um das Bild des Schlangenkörpers, das noch nicht die richtige Größe hat, verkleinern zu können.</p>
 <p>Sollte bei dir die PIL Bibliothek nicht verfügbar sein, solltest du pillow mit Hilfe von pip aus der Kommandozeile installieren</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pip install pillow</code></pre></div>
-<h4 id="leinwand-erzeugen">Leinwand erzeugen</h4>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install pillow
+</span></span></code></pre></div><h4 id="leinwand-erzeugen">Leinwand erzeugen</h4>
 <p>Wir erzeugen die Leinwand für das Spiel.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Leinwand erstellen</span>
-H = 500
-B = 500
-window = Tk()
-window.title(<span style="color:#a31515">&#34;Snake&#34;</span>)
-c = Canvas(window, width=B, height = H)
-c.pack()</code></pre></div>
-<h4 id="definition-der-gittergröße">Definition der Gittergröße</h4>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Leinwand erstellen</span>
+</span></span><span style="display:flex;"><span>H = 500
+</span></span><span style="display:flex;"><span>B = 500
+</span></span><span style="display:flex;"><span>window = Tk()
+</span></span><span style="display:flex;"><span>window.title(<span style="color:#a31515">&#34;Snake&#34;</span>)
+</span></span><span style="display:flex;"><span>c = Canvas(window, width=B, height = H)
+</span></span><span style="display:flex;"><span>c.pack()
+</span></span></code></pre></div><h4 id="definition-der-gittergröße">Definition der Gittergröße</h4>
 <p>Snake spielen wir auf einem Schachbrett, wo die Felder Quadrate mit der Seitenlänge grid_length sind.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">grid_length= 23</code></pre></div>
-<p>Bei uns ist die Seitenlänge der Felder auf 23 Pixel gesetzt.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>grid_length= 23
+</span></span></code></pre></div><p>Bei uns ist die Seitenlänge der Felder auf 23 Pixel gesetzt.</p>
 <h4 id="snake-körperelement-laden">Snake Körperelement laden</h4>
-
-<p>Der Körper unserer Schlange besteht aus lauter kleinen Kugeln, die wir aus der Datei <a href="img/snake_body.png" target="_blank">snake_body.png</a> in ein Image Objekt aus der PIL Bibliothek laden. Dieses Bild ist nicht exakt 23 x 23 Pixel groß und wir müssen es daher zunächst noch auf diese Größe verkleinern. Der Zusatz Image.ANTIALIAS als Argument der <em>body_img.resize</em> Funktion hilft dabei zu verhinder, dass das Bild durch das Verkleinern <em>schlechter aussieht</em>.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Snake Körperelement laden</span>
-body_img = Image.open(<span style="color:#a31515">&#34;snake_body.png&#34;</span>)
-body_img = body_img.resize((grid_length, grid_length), Image.ANTIALIAS)
-body_img = ImageTk.PhotoImage(body_img)</code></pre></div>
-<p>Wir haben das Körperelement bisher noch nicht auf die Leinwand gemalen, aber dazu kommen wir bald.</p>
-
+<p>Der Körper unserer Schlange besteht aus lauter kleinen Kugeln, die wir aus der Datei <a href="img/snake_body.png">snake_body.png</a> in ein Image Objekt aus der PIL Bibliothek laden. Dieses Bild ist nicht exakt 23 x 23 Pixel groß und wir müssen es daher zunächst noch auf diese Größe verkleinern. Der Zusatz Image.ANTIALIAS als Argument der <em>body_img.resize</em> Funktion hilft dabei zu verhinder, dass das Bild durch das Verkleinern <em>schlechter aussieht</em>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Snake Körperelement laden</span>
+</span></span><span style="display:flex;"><span>body_img = Image.open(<span style="color:#a31515">&#34;snake_body.png&#34;</span>)
+</span></span><span style="display:flex;"><span>body_img = body_img.resize((grid_length, grid_length), Image.ANTIALIAS)
+</span></span><span style="display:flex;"><span>body_img = ImageTk.PhotoImage(body_img)
+</span></span></code></pre></div><p>Wir haben das Körperelement bisher noch nicht auf die Leinwand gemalen, aber dazu kommen wir bald.</p>
 <h4 id="zustand-des-schlangenkopfs-definieren">Zustand des Schlangenkopfs definieren</h4>
-
 <p>Wir definieren den Zustand des Schlangenkopfs. Mit head_pos geben wir an, wo er sich befindet und mit richtung geben wir an in welche Richtung er sich bewegt</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">richtung = (1,0)
-head_pos = [B/2, H/2]</code></pre></div>
-<h4 id="koordinatensystem-auf-der-canvas-von-tkinter">Koordinatensystem auf der canvas von tkinter</h4>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>richtung = (1,0)
+</span></span><span style="display:flex;"><span>head_pos = [B/2, H/2]
+</span></span></code></pre></div><h4 id="koordinatensystem-auf-der-canvas-von-tkinter">Koordinatensystem auf der canvas von tkinter</h4>
 <p>Das ist jetzt auch ein guter Zeitpunkt um zu erklären, wie man Objekte auf der canvas (= Leinwand) von tkinter positioniert. Dafür gibt man mit Koordinaten einen Ort auf der Leinwand an. Der Ort links oben im Eck ist dabei der Punkt mit den Koordinaten x=0 und y=0 oder kurz (0,0). Anders wie in dem Koordinatensystem, das du vielleicht aus der Schule kennst, zeigt die y-Achse bei tkinter nicht nach oben, sondern nach unten. Der rechte untere Eckpunkt hat bei uns daher die Koordinate (500,500), da man 500 Pixel nach unten und 500 Pixel nach rechts gehen muss, um von der linken oberen Ecke mit den Koordinaten (0,0) nach rechts unten zu kommen. Im folgenden Bild ist die tkinter canvas Skizziert und die Koordinaten von ein paar Punkten darauf dargestellt (in Blau):</p>
-
 
 
 
@@ -330,55 +289,45 @@ head_pos = [B/2, H/2]</code></pre></div>
     </div>
 </div>
 
-
 <p>Die Richtung in die sich die Schlange bewegt haben wir zu Beginn mit (1,0) gesetzt, das heißt die Schlange wandert zu Beginn nach rechts. In der Skizze sind in Grün auch die anderen 3 Richtungen eingezeichnet. Würde die Schlange nach unten wandern, wäre die Richtung z.B. (0,1).</p>
-
 <h4 id="bewegen-vom-schlangenkopf">Bewegen vom Schlangenkopf</h4>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Snake Head bewegen</span>
-<span style="color:#00f">def</span> move_head():
-    head_pos[0]+= richtung[0]*grid_length
-    head_pos[1]+= richtung[1]*grid_length</code></pre></div>
-<p>Die Schlange bewegt sich, indem wir in jedem Zeitschritt den Zustand der Schlange verändern und so die Elemente aus denen die Schlange besteht (grüne Kugeln) immer an neuen Orten gezeichnet werden. Die <em>move_head()</em> Funktion führt diese Veränderung für die Position des Schlangenkopfs durch. Wir verändern dabei die globale Variable head_pos mit der wir die Position vom Schlangenkopf speichern. Dabei verändern wir den Ort immer gleich um eine ganze Feldlänge. Wenn richtung = (1,0) ist, so ist richtung[0] = 1 und richtung[1] = 0, daher wird nur head_pos[0], also die x Koordinate des Schlangenkopfs verändert und zwar um grid_length = 23 Pixel erhöht. Der Schlangenkopf wandert damit immer weiter nach rechts.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Snake Head bewegen</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> move_head():
+</span></span><span style="display:flex;"><span>    head_pos[0]+= richtung[0]*grid_length
+</span></span><span style="display:flex;"><span>    head_pos[1]+= richtung[1]*grid_length
+</span></span></code></pre></div><p>Die Schlange bewegt sich, indem wir in jedem Zeitschritt den Zustand der Schlange verändern und so die Elemente aus denen die Schlange besteht (grüne Kugeln) immer an neuen Orten gezeichnet werden. Die <em>move_head()</em> Funktion führt diese Veränderung für die Position des Schlangenkopfs durch. Wir verändern dabei die globale Variable head_pos mit der wir die Position vom Schlangenkopf speichern. Dabei verändern wir den Ort immer gleich um eine ganze Feldlänge. Wenn richtung = (1,0) ist, so ist richtung[0] = 1 und richtung[1] = 0, daher wird nur head_pos[0], also die x Koordinate des Schlangenkopfs verändert und zwar um grid_length = 23 Pixel erhöht. Der Schlangenkopf wandert damit immer weiter nach rechts.</p>
 <h4 id="zeichnen-vom-schlangenkopf">Zeichnen vom Schlangenkopf</h4>
-
 <p>Sichtbar wird die Schlange erst, wenn wir ihren Kopf zeichnen. Mit der Funktion <em>new_body()</em> wird in jedem Zeitschritt an die Position des Kopfs ein neues Schlangen Körperelement gezeichnet.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Neues Body Element erstellen</span>
-<span style="color:#00f">def</span> new_body():
-    c.create_image(head_pos[0], head_pos[1], image=body_img)</code></pre></div>
-<h4 id="hauptschleife">Hauptschleife</h4>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Neues Body Element erstellen</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> new_body():
+</span></span><span style="display:flex;"><span>    c.create_image(head_pos[0], head_pos[1], image=body_img)
+</span></span></code></pre></div><h4 id="hauptschleife">Hauptschleife</h4>
 <p>Damit sind wir fast am Ende von Schritt 0 angelangt, es fehlt nur noch die Hauptschleife. In dieser while Schleife, die nie endet, entspricht jeder Schleifendurchlauf einem Zeitschritt in der Schlangenwelt. Am Ende eines Schleifendurchlaufs wird das Programm für die <em>sleep_seconds</em> Sekunden angehalten, damit die Bewegung nicht allzu schnell abläuft. Bei uns ist sleep_seconds so eingestellt, das in einer Sekunde 5 Zeitschritte ablaufen.</p>
-
 <p>In jedem dieser Zeitschritte wird die Position des Kopfs mit der <em>move_head()</em> Funktion angepasst, mit der <em>new_body()</em> Funktion ein neues Schlangen Element beim Kopf gezeichnet und mit window.update() das Fenster aktualisert, damit es die Änderung korrekt darstellt</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sleep_seconds = 0.2
-<span style="color:#00f">while</span> True:
-    move_head()
-    new_body()
-    window.update()
-    sleep(sleep_seconds)</code></pre></div>
-<h4 id="resultat-für-schritt-0">Resultat für Schritt 0</h4>
-
-<p>Damit haben wir die erste lauffähige Version von unserem Spiel erstellt! Versuche den Code selbst zu programmieren und experimentiere mit dem Python Programm. Was passiert z.B. wenn du die richtung änderst? Du kannst den Python Code auch <a href="source/snake_00_gerade_unendlich.py" target="_blank">hier</a> downloaden.</p>
-
-<h3 id="schritt-1-die-schlange-lässt-sich-steuern">Schritt 1 - Die Schlange lässt sich steuern</h3>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sleep_seconds = 0.2
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>    move_head()
+</span></span><span style="display:flex;"><span>    new_body()
+</span></span><span style="display:flex;"><span>    window.update()
+</span></span><span style="display:flex;"><span>    sleep(sleep_seconds)
+</span></span></code></pre></div><h4 id="resultat-für-schritt-0">Resultat für Schritt 0</h4>
+<p>Damit haben wir die erste lauffähige Version von unserem Spiel erstellt! Versuche den Code selbst zu programmieren und experimentiere mit dem Python Programm. Was passiert z.B. wenn du die richtung änderst? Du kannst den Python Code auch <a href="source/snake_00_gerade_unendlich.py">hier</a> downloaden.</p>
+<h3 id="schritt-1---die-schlange-lässt-sich-steuern">Schritt 1 - Die Schlange lässt sich steuern</h3>
 <p>Es wird Zeit, dass wir die Schlange auch steuerbar machen. Wie beim bubble-buster Programm verwenden wir dafür die bind_all Fuktion der tkinter canvas. Dort geben wir eine Funktion an, die aufgerufen wird, wenn vom Spieler eine Taste am Keyboard gedrückt wird (so etwas nennt man einen Callback). Die Funktion, die wir dafür schreiben ist <em>richtung_aendern(event)</em> und sie ändert die Richtung, abhängig von der gedrückten Taste.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Richtung ändern</span>
-<span style="color:#00f">def</span> richtung_aendern(event):
-    <span style="color:#00f">global</span> richtung
-    <span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
-        richtung = (0,-1)
-    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
-        richtung= (0,1)
-    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
-        richtung = (-1,0)
-    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
-        richtung = (1,0)
-
-c.bind_all(<span style="color:#a31515">&#34;&lt;Key&gt;&#34;</span>, richtung_aendern)</code></pre></div>
-<p>Das ist auch schon alles, das wir machen müssen, um die Schlange steuerbar zu machen. Den Source Code findest du <a href="source/snake_01_steuerbar_unendlich.py" target="_blank">hier</a>.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Richtung ändern</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> richtung_aendern(event):
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">global</span> richtung
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
+</span></span><span style="display:flex;"><span>        richtung = (0,-1)
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
+</span></span><span style="display:flex;"><span>        richtung= (0,1)
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
+</span></span><span style="display:flex;"><span>        richtung = (-1,0)
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
+</span></span><span style="display:flex;"><span>        richtung = (1,0)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>c.bind_all(<span style="color:#a31515">&#34;&lt;Key&gt;&#34;</span>, richtung_aendern)
+</span></span></code></pre></div><p>Das ist auch schon alles, das wir machen müssen, um die Schlange steuerbar zu machen. Den Source Code findest du <a href="source/snake_01_steuerbar_unendlich.py">hier</a>.</p>
 
 
 
@@ -403,36 +352,31 @@ c.bind_all(<span style="color:#a31515">&#34;&lt;Key&gt;&#34;</span>, richtung_ae
     </div>
 </div>
 
-
 <p>Dieser Schritt war zum Glück viel kürzer als Schritt 0. Wir werden jetzt versuchen die Schritte eher kurz zu halten, denn mit kleinen Schritten lässt sich leichter der Überblick bewahren und es ist auch motivierender, wenn man die Änderungen im Code schnell sehen kann. Im Schritt 0 mussten wir aber zunächst einmal das Grundgerüst schaffen und das hat uns etwas mehr Mühe gekostet.</p>
-
-<h3 id="schritt-2-die-schlange-wird-endlich">Schritt 2 - Die Schlange wird endlich</h3>
-
+<h3 id="schritt-2---die-schlange-wird-endlich">Schritt 2 - Die Schlange wird endlich</h3>
 <p>Momentan wächst die Schlange noch unendlich lange. Um das zu unterbinden, müssen wir alte Elemente der Schlange löschen, wenn die Schlange eine gewisse Länge überschreiten würde. Für die maximale Schlangenlänge führen wir eine Variable ein</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">n_bodies = 10</code></pre></div>
-<p>Weiters definieren wir die Variable bodies, die wir zu Beginn auf eine leere Liste setzen</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bodies = []</code></pre></div>
-<p>Wenn wir ein neues Schlangenelement erstellen, dann speichern wir es in der bodies Liste, damit wir das Element später wieder löschen können. Die <em>new_body()</em> Funktion wird daher geändert</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Neues Body Element erstellen</span>
-<span style="color:#00f">def</span> new_body():
-    bodies.append(c.create_image(head_pos[0], head_pos[1], image=body_img))</code></pre></div>
-<p>Jetzt wird das neue Element nicht nur erstellt, sondern auch eine Referenz darauf in die bodies Liste gespeichert. Mit dieser Referenz können wir ein Element wieder löschen. Das machen wir in der <em>delete_old_body()</em> Funktion, wenn die Länge der Schlange größer als n_bodies ist.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Hinterstes Body Element löschen, wenn die Schlange schon zu lange ist</span>
-<span style="color:#00f">def</span> delete_old_body():
-    <span style="color:#00f">if</span> len(bodies)&gt;n_bodies:
-        c.delete(bodies.pop(0))</code></pre></div>
-<p>bodies.pop(0) gibt das erste (und daher älteste) Element der Liste zurück und löscht es auch aus der Liste heraus. Mit c.delete wird das Schlangenelement von der tkinter canvas gelöscht.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>n_bodies = 10
+</span></span></code></pre></div><p>Weiters definieren wir die Variable bodies, die wir zu Beginn auf eine leere Liste setzen</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>bodies = []
+</span></span></code></pre></div><p>Wenn wir ein neues Schlangenelement erstellen, dann speichern wir es in der bodies Liste, damit wir das Element später wieder löschen können. Die <em>new_body()</em> Funktion wird daher geändert</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Neues Body Element erstellen</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> new_body():
+</span></span><span style="display:flex;"><span>    bodies.append(c.create_image(head_pos[0], head_pos[1], image=body_img))
+</span></span></code></pre></div><p>Jetzt wird das neue Element nicht nur erstellt, sondern auch eine Referenz darauf in die bodies Liste gespeichert. Mit dieser Referenz können wir ein Element wieder löschen. Das machen wir in der <em>delete_old_body()</em> Funktion, wenn die Länge der Schlange größer als n_bodies ist.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Hinterstes Body Element löschen, wenn die Schlange schon zu lange ist</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> delete_old_body():
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> len(bodies)&gt;n_bodies:
+</span></span><span style="display:flex;"><span>        c.delete(bodies.pop(0))
+</span></span></code></pre></div><p>bodies.pop(0) gibt das erste (und daher älteste) Element der Liste zurück und löscht es auch aus der Liste heraus. Mit c.delete wird das Schlangenelement von der tkinter canvas gelöscht.</p>
 <p>Die <em>delete_old_body()</em> Funktion wird schließlich auch in der Hauptschleife aufgerufen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sleep_seconds = 0.2
-<span style="color:#00f">while</span> True:
-    move_head()
-    new_body()
-    delete_old_body()
-    window.update()
-    sleep(sleep_seconds)</code></pre></div>
-<p>Damit haben wir eine endliche, steuerbare Schlange.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sleep_seconds = 0.2
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>    move_head()
+</span></span><span style="display:flex;"><span>    new_body()
+</span></span><span style="display:flex;"><span>    delete_old_body()
+</span></span><span style="display:flex;"><span>    window.update()
+</span></span><span style="display:flex;"><span>    sleep(sleep_seconds)
+</span></span></code></pre></div><p>Damit haben wir eine endliche, steuerbare Schlange.</p>
 
 
 
@@ -457,23 +401,18 @@ c.bind_all(<span style="color:#a31515">&#34;&lt;Key&gt;&#34;</span>, richtung_ae
     </div>
 </div>
 
-
-<p>Den Source Code kannst du <a href="source/snake_02_steuerbar_endlich.py" target="_blank">hier</a> downloaden.</p>
-
-<h3 id="schritt-3-die-schlange-wird-sterblich">Schritt 3 - Die Schlange wird sterblich</h3>
-
+<p>Den Source Code kannst du <a href="source/snake_02_steuerbar_endlich.py">hier</a> downloaden.</p>
+<h3 id="schritt-3---die-schlange-wird-sterblich">Schritt 3 - Die Schlange wird sterblich</h3>
 <p>Bis jetzt ist es unmöglich das Spiel zu verlieren, die Schlange lebt einfach immer weiter, selbst wenn sie das Fenster verlässt, oder sich selbst beißt. Im nächsten Schritt werden wir ein Spielfeld einführen, an das die Schlange nicht stoßen soll. Tut sie das trotzdem, dann beginnt das Spiel von neu.</p>
-
 <p>Dafür definieren wir zunächst wie das Bord aussieht. Unser Spielbrett soll quadratisch sein und aus n_board_fields x n_board_fields Feldern bestehen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">n_board_fields = 20</code></pre></div>
-<p>Das Tupel (x_left, y_up) gibt die linke obere Ecke des Spielbretts an</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x_left = 20
-y_up = 20</code></pre></div>
-<p>Die rechte untere Ecke liegt dann bei (x_right, y_down) und kann wie folgt berechnet werden</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x_right = x_left + n_board_fields * grid_length
-y_down = y_up +n_board_fields * grid_length</code></pre></div>
-<p>Das Fenster, das Spielfeld und die oben definierten Koordinaten sind auf folgender Skizze noch einmal dargestellt:</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>n_board_fields = 20
+</span></span></code></pre></div><p>Das Tupel (x_left, y_up) gibt die linke obere Ecke des Spielbretts an</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x_left = 20
+</span></span><span style="display:flex;"><span>y_up = 20
+</span></span></code></pre></div><p>Die rechte untere Ecke liegt dann bei (x_right, y_down) und kann wie folgt berechnet werden</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x_right = x_left + n_board_fields * grid_length
+</span></span><span style="display:flex;"><span>y_down = y_up +n_board_fields * grid_length
+</span></span></code></pre></div><p>Das Fenster, das Spielfeld und die oben definierten Koordinaten sind auf folgender Skizze noch einmal dargestellt:</p>
 
 
 
@@ -498,41 +437,37 @@ y_down = y_up +n_board_fields * grid_length</code></pre></div>
     </div>
 </div>
 
-
 <p>Wir definieren die Startposition des Schlangenkopfs als das Feld in der Mitte</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">start_pos= [x_left+ grid_length*0.5+ n_board_fields//2*grid_length, y_up + grid_length*0.5 + n_board_fields//2*grid_length]</code></pre></div>
-<p>Um das Spielbrett auch visuell sichtbar zu machen, zeichnen wir 4 Linien zwischen den 4 Eckpunkten</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Board zeichnen</span>
-line_width = 5
-c.create_line(x_left, y_down, x_left, y_up, width=line_width)
-c.create_line(x_right, y_down, x_right, y_up, width=line_width)
-c.create_line(x_left, y_up, x_right, y_up, width=line_width)
-c.create_line(x_left, y_down, x_right, y_down, width=line_width)</code></pre></div>
-<p>Wir schreiben die Funktion <em>is_outside_board()</em>, welche <em>True</em> zurückgibt, wenn der Kopf außerhalb des Spielfelds ist</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> is_outside_board():
-    <span style="color:#00f">return</span> head_pos[0] &lt; x_left <span style="color:#00f">or</span> head_pos[0] &gt; x_right <span style="color:#00f">or</span> head_pos[1] &gt; y_down <span style="color:#00f">or</span> head_pos[1] &lt; y_up</code></pre></div>
-<p>In der Hauptschleife stellen wir sicher, dass das Spiel neugestartet wird, wenn <em>is_outside_board()</em> True zurückgibt</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sleep_seconds = 0.2
-<span style="color:#00f">while</span> True:
-    richtung = (1, 0)
-    head_pos = list(start_pos)
-    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
-        c.delete(body)
-    bodies = []
-    <span style="color:#00f">while</span> True:
-        move_head()
-        new_body()
-        delete_old_body()
-        <span style="color:#00f">if</span> is_outside_board():
-            <span style="color:#00f">break</span>
-        window.update()
-        sleep(sleep_seconds)</code></pre></div>
-<p>Die Hauptschleife ist damit etwas komplexer geworden. Es gibt jetzt außen herum eine weitere while Schleife. Zu Beginn dieser Schleife wird der Zustand des Spiels neu initialisiert. Insbesondere werden auch alle Schlangenelemente vom vorherigen Spiel von der tkinter canvas gelöscht.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>start_pos= [x_left+ grid_length*0.5+ n_board_fields//2*grid_length, y_up + grid_length*0.5 + n_board_fields//2*grid_length]
+</span></span></code></pre></div><p>Um das Spielbrett auch visuell sichtbar zu machen, zeichnen wir 4 Linien zwischen den 4 Eckpunkten</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Board zeichnen</span>
+</span></span><span style="display:flex;"><span>line_width = 5
+</span></span><span style="display:flex;"><span>c.create_line(x_left, y_down, x_left, y_up, width=line_width)
+</span></span><span style="display:flex;"><span>c.create_line(x_right, y_down, x_right, y_up, width=line_width)
+</span></span><span style="display:flex;"><span>c.create_line(x_left, y_up, x_right, y_up, width=line_width)
+</span></span><span style="display:flex;"><span>c.create_line(x_left, y_down, x_right, y_down, width=line_width)
+</span></span></code></pre></div><p>Wir schreiben die Funktion <em>is_outside_board()</em>, welche <em>True</em> zurückgibt, wenn der Kopf außerhalb des Spielfelds ist</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> is_outside_board():
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> head_pos[0] &lt; x_left <span style="color:#00f">or</span> head_pos[0] &gt; x_right <span style="color:#00f">or</span> head_pos[1] &gt; y_down <span style="color:#00f">or</span> head_pos[1] &lt; y_up
+</span></span></code></pre></div><p>In der Hauptschleife stellen wir sicher, dass das Spiel neugestartet wird, wenn <em>is_outside_board()</em> True zurückgibt</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sleep_seconds = 0.2
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>    richtung = (1, 0)
+</span></span><span style="display:flex;"><span>    head_pos = list(start_pos)
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
+</span></span><span style="display:flex;"><span>        c.delete(body)
+</span></span><span style="display:flex;"><span>    bodies = []
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>        move_head()
+</span></span><span style="display:flex;"><span>        new_body()
+</span></span><span style="display:flex;"><span>        delete_old_body()
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> is_outside_board():
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">break</span>
+</span></span><span style="display:flex;"><span>        window.update()
+</span></span><span style="display:flex;"><span>        sleep(sleep_seconds)
+</span></span></code></pre></div><p>Die Hauptschleife ist damit etwas komplexer geworden. Es gibt jetzt außen herum eine weitere while Schleife. Zu Beginn dieser Schleife wird der Zustand des Spiels neu initialisiert. Insbesondere werden auch alle Schlangenelemente vom vorherigen Spiel von der tkinter canvas gelöscht.</p>
 <p>Die innere while Schleife ist nach wie vor die while Schleife von einem Spiel, welches anders wie vorher aber abbrechen kann. Momentan bricht das Spiel nur ab, wenn wir außerhalb des Spielbretts kommen.</p>
-
 <p>Damit ist unsere Schlange nicht mehr unsterblich</p>
-
 
 
 
@@ -557,177 +492,164 @@ c.create_line(x_left, y_down, x_right, y_down, width=line_width)</code></pre></d
     </div>
 </div>
 
-
-<p>Den Source Code kannst du <a href="source/snake_03_spielfeld.py" target="_blank">hier</a> downloaden.</p>
-
-<h3 id="schritt-4-die-schlange-kann-sich-selbst-beißen">Schritt 4 - Die Schlange kann sich selbst beißen</h3>
-
+<p>Den Source Code kannst du <a href="source/snake_03_spielfeld.py">hier</a> downloaden.</p>
+<h3 id="schritt-4---die-schlange-kann-sich-selbst-beißen">Schritt 4 - Die Schlange kann sich selbst beißen</h3>
 <p>Als nächstes programmieren wir, dass die Schlange auch stirbt, wenn der Kopf in den bereits vorhandenen Körper beißt</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> does_head_bite_body():
-    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
-        x,y = c.coords(body)
-        <span style="color:#00f">if</span> head_pos[0] == x <span style="color:#00f">and</span> head_pos[1] == y:
-            <span style="color:#00f">return</span> True
-    <span style="color:#00f">return</span> False</code></pre></div>
-<p>Die Funktion <em>does_head_bite_body()</em> prüft, ob der Kopf die gleichen Koordinaten wie eine der Schlangenelemente hat. Die Koordinaten eines Schlangenelements bekommen wir mittels</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x,y = c.coords(body)</code></pre></div>
-<p>Wobei body die Referenz auf das entsprechende Schlangenelement ist. <em>does_head_bite_body()</em> sollte dabei aufgerufen werden, bevor der Kopf selbst zum Schlangenelement geworden ist. In der neuen Hauptschleife ist dann nur eine kleine Änderung notwendig:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sleep_seconds = 0.2
-<span style="color:#00f">while</span> True:
-    richtung = (1, 0)
-    head_pos = list(start_pos)
-    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
-        c.delete(body)
-    bodies = []
-    <span style="color:#00f">while</span> True:
-        move_head()
-        <span style="color:#00f">if</span> does_head_bite_body():
-            <span style="color:#00f">break</span>
-        new_body()
-        delete_old_body()
-        <span style="color:#00f">if</span> is_outside_board():
-            <span style="color:#00f">break</span>
-        window.update()
-        sleep(sleep_seconds)</code></pre></div>
-<p>Damit stirbt unsere Schlange jetzt auch, wenn sie sich selbst beißt. Den Source Code kannst du <a href="source/snake_04_selbstbiss.py" target="_blank">hier</a> downloaden.</p>
-
-<h3 id="schritt-5-umkehr-verbieten">Schritt 5 - Umkehr verbieten</h3>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> does_head_bite_body():
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
+</span></span><span style="display:flex;"><span>        x,y = c.coords(body)
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> head_pos[0] == x <span style="color:#00f">and</span> head_pos[1] == y:
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">return</span> <span style="color:#00f">True</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> <span style="color:#00f">False</span>
+</span></span></code></pre></div><p>Die Funktion <em>does_head_bite_body()</em> prüft, ob der Kopf die gleichen Koordinaten wie eine der Schlangenelemente hat. Die Koordinaten eines Schlangenelements bekommen wir mittels</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x,y = c.coords(body)
+</span></span></code></pre></div><p>Wobei body die Referenz auf das entsprechende Schlangenelement ist. <em>does_head_bite_body()</em> sollte dabei aufgerufen werden, bevor der Kopf selbst zum Schlangenelement geworden ist. In der neuen Hauptschleife ist dann nur eine kleine Änderung notwendig:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sleep_seconds = 0.2
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>    richtung = (1, 0)
+</span></span><span style="display:flex;"><span>    head_pos = list(start_pos)
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
+</span></span><span style="display:flex;"><span>        c.delete(body)
+</span></span><span style="display:flex;"><span>    bodies = []
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>        move_head()
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> does_head_bite_body():
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">break</span>
+</span></span><span style="display:flex;"><span>        new_body()
+</span></span><span style="display:flex;"><span>        delete_old_body()
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> is_outside_board():
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">break</span>
+</span></span><span style="display:flex;"><span>        window.update()
+</span></span><span style="display:flex;"><span>        sleep(sleep_seconds)
+</span></span></code></pre></div><p>Damit stirbt unsere Schlange jetzt auch, wenn sie sich selbst beißt. Den Source Code kannst du <a href="source/snake_04_selbstbiss.py">hier</a> downloaden.</p>
+<h3 id="schritt-5---umkehr-verbieten">Schritt 5 - Umkehr verbieten</h3>
 <p>Wenn die Schlange jetzt nach rechts unterwegs ist und wir drücken die linke Pfeiltaste, dann stirbt die Schlange sofort. Das ist nicht besonders benutzerfreundlich und wir möchten in so einem Fall daher lieber die Eingabe der linken Pfeiltaste ignorieren. Das können wir durch Ändern der <em>richtung_aendern</em> Funktion, wie folgt, erreichen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># Richtung ändern</span>
-<span style="color:#00f">def</span> richtung_aendern(event):
-    <span style="color:#00f">global</span> richtung
-    <span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
-        <span style="color:#00f">if</span> richtung != (0, 1):
-            richtung = (0, -1)
-    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
-        <span style="color:#00f">if</span> richtung != (0, -1):
-            richtung = (0, 1)
-    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
-        <span style="color:#00f">if</span> richtung != (1, 0):
-            richtung = (-1, 0)
-    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
-        <span style="color:#00f">if</span> richtung != (-1, 0):
-            richtung = (1, 0)</code></pre></div>
-<p>Den neuen Source Code kansst du <a href="source/snake_05_zurueck_verbieten.py" target="_blank">hier</a> downloaden.</p>
-
-<h3 id="schritt-6-endlich-kommt-der-apfel-ins-spiel">Schritt 6 - Endlich kommt der Apfel ins Spiel</h3>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Richtung ändern</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> richtung_aendern(event):
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">global</span> richtung
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> event.keysym == <span style="color:#a31515">&#34;Up&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> richtung != (0, 1):
+</span></span><span style="display:flex;"><span>            richtung = (0, -1)
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Down&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> richtung != (0, -1):
+</span></span><span style="display:flex;"><span>            richtung = (0, 1)
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Left&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> richtung != (1, 0):
+</span></span><span style="display:flex;"><span>            richtung = (-1, 0)
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">elif</span> event.keysym == <span style="color:#a31515">&#34;Right&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> richtung != (-1, 0):
+</span></span><span style="display:flex;"><span>            richtung = (1, 0)
+</span></span></code></pre></div><p>Den neuen Source Code kansst du <a href="source/snake_05_zurueck_verbieten.py">hier</a> downloaden.</p>
+<h3 id="schritt-6---endlich-kommt-der-apfel-ins-spiel">Schritt 6 - Endlich kommt der Apfel ins Spiel</h3>
 <p>Bisher hat immer noch der Apfel gefehlt. Diesen wollen wir jetzt zufällig am Spielbrett platzieren und essbar machen. Wenn der Apfel gegessen wird, soll die Schlange um ein Element länger werden.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint</code></pre></div>
-<p>Wir importieren die randint Funktion aus der random Bibliothek. Mit <em>randint(0,2)</em> bekommen wir zufällig eine der 3 Zahlen 0, 1 oder 2. Damit können wir eine zufällige Position für den Apfel am Spielfeld wählen</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> gen_apple_pos():
-    <span style="color:#00f">while</span> True:
-        candidate = [x_left + grid_length*0.5 + randint(0, n_board_fields-1) * grid_length,
-                        y_up + grid_length*0.5 + randint(0, n_board_fields-1) * grid_length]
-        candidate_valid = True
-        <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
-            x, y = c.coords(body)
-            <span style="color:#00f">if</span> x == candidate[0] <span style="color:#00f">and</span> y == candidate[1]:
-                candidate_valid = False
-        <span style="color:#00f">if</span> candidate_valid:
-            <span style="color:#00f">return</span> candidate</code></pre></div>
-<p>Die Funktion <em>gen_apple_pos()</em> gibt eine zufällig gewählte neue Position für den Apfel zurück. Es ist wichtig, dass wir den Apfel nicht auf ein Feld setzen, das durch ein Schlangenelement besetzt ist. Deswegen überprüfen wir nach Wahl eines möglichen Kanditaten für die Apfelposition, ob dieses auch durch die Schlange besetzt ist. Wenn ja, dann wird noch einmal eine zufällige Position für den Apfel gewürfelt, bis wir irgendwann eine gültige Position bekommen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">apple_img = Image.open(<span style="color:#a31515">&#34;apple.png&#34;</span>)
-apple_img = apple_img.resize((grid_length,grid_length))
-apple_img = ImageTk.PhotoImage(apple_img)</code></pre></div>
-<p>Um den Apfel zeichnen zu können müssen wir ihn zu Beginn des Programms aus dem Bild <a href="img/apple.png" target="_blank">apple.png</a> mit Hilfe PIL laden, verkleinern und ein <em>ImageTk.PhotoImage</em> Objekt daraus machen. Das haben wir für den Körper der Schlange in Schritt 0 genau gleich gemacht.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> redraw_apple():
-    <span style="color:#00f">global</span> apple
-    <span style="color:#00f">if</span> apple <span style="color:#00f">is</span> <span style="color:#00f">not</span> None:
-        c.delete(apple)
-    apple = c.create_image(apple_pos[0], apple_pos[1], image=apple_img)</code></pre></div>
-<p>Mit der <em>redraw_apple()</em> Funktion wird der Apfel auf der tkinter canvas gelöscht und an seiner neuen Position neu gezeichnet. Die Variable apple ist eine globale Variable, welche zu Beginn auf <em>None</em> gesetzt ist.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">apple = None</code></pre></div>
-<p>Die <em>apple</em> Variable speichert die Referenz auf das gezeichnete Apfel Objekt auf der tkinter Leinwand, damit wir das alte Apfelbild löschen können, wenn der Apfel eine neue Position bekommt</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">n_bodies0 = 10</code></pre></div>
-<p>Nachdem die Schlangenlänge jetzt nicht mehr fix ist, gibt es eine Variable n_bodies0, mit welcher n_bodies zu Beginn eines Spiels initialisiert wird.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">def</span> head_eats_apple():
-    <span style="color:#00f">return</span> head_pos[0] == apple_pos[0] <span style="color:#00f">and</span> head_pos[1] == apple_pos[1]</code></pre></div>
-<p>mit dieser Funktion können wir prüfen, ob der Kopf gerade am selben Feld wie der Apfel ist und ihn daher essen kann.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sleep_seconds = 0.2
-<span style="color:#00f">while</span> True:
-    n_bodies = n_bodies0
-    richtung = (1, 0)
-    head_pos = list(start_pos)
-    apple_pos = gen_apple_pos()
-    redraw_apple()
-    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
-        c.delete(body)
-    bodies = []
-    <span style="color:#00f">while</span> True:
-        move_head()
-        <span style="color:#00f">if</span> does_head_bite_body():
-            <span style="color:#00f">break</span>
-        new_body()
-        delete_old_body()
-        <span style="color:#00f">if</span> head_eats_apple():
-            apple_pos = gen_apple_pos()
-            redraw_apple()
-            n_bodies += 1
-
-        <span style="color:#00f">if</span> is_outside_board():
-            <span style="color:#00f">break</span>
-        window.update()
-        sleep(sleep_seconds)</code></pre></div>
-<p>In der neuen Hauptschleife prüfen wir jetzt ob der Kopf den Apfel isst und vergrößern in dem Fall auch die Länge der Schlage. Zusätzlich muss der Apfel eine neue Position bekommen und neugezeichnet werden. Auch zu Beginn eines Spiels erzeugen wir eine neue Apfel Position, mit der er frisch auf die Leinwand gezeichnet wird.</p>
-
-<p>Damit kann unsere Schlange jetzt durch das Essen von Äpfeln über sich hinaus wachsen. Den Source Code findest du <a href="source/snake_06_apfel.py" target="_blank">hier</a>.</p>
-
-<h3 id="schritt-7-punkte-mitzählen-und-anzeigen">Schritt 7 - Punkte mitzählen und anzeigen</h3>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
+</span></span></code></pre></div><p>Wir importieren die randint Funktion aus der random Bibliothek. Mit <em>randint(0,2)</em> bekommen wir zufällig eine der 3 Zahlen 0, 1 oder 2. Damit können wir eine zufällige Position für den Apfel am Spielfeld wählen</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> gen_apple_pos():
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>        candidate = [x_left + grid_length*0.5 + randint(0, n_board_fields-1) * grid_length,
+</span></span><span style="display:flex;"><span>                        y_up + grid_length*0.5 + randint(0, n_board_fields-1) * grid_length]
+</span></span><span style="display:flex;"><span>        candidate_valid = <span style="color:#00f">True</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
+</span></span><span style="display:flex;"><span>            x, y = c.coords(body)
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> x == candidate[0] <span style="color:#00f">and</span> y == candidate[1]:
+</span></span><span style="display:flex;"><span>                candidate_valid = <span style="color:#00f">False</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> candidate_valid:
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">return</span> candidate
+</span></span></code></pre></div><p>Die Funktion <em>gen_apple_pos()</em> gibt eine zufällig gewählte neue Position für den Apfel zurück. Es ist wichtig, dass wir den Apfel nicht auf ein Feld setzen, das durch ein Schlangenelement besetzt ist. Deswegen überprüfen wir nach Wahl eines möglichen Kanditaten für die Apfelposition, ob dieses auch durch die Schlange besetzt ist. Wenn ja, dann wird noch einmal eine zufällige Position für den Apfel gewürfelt, bis wir irgendwann eine gültige Position bekommen.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>apple_img = Image.open(<span style="color:#a31515">&#34;apple.png&#34;</span>)
+</span></span><span style="display:flex;"><span>apple_img = apple_img.resize((grid_length,grid_length))
+</span></span><span style="display:flex;"><span>apple_img = ImageTk.PhotoImage(apple_img)
+</span></span></code></pre></div><p>Um den Apfel zeichnen zu können müssen wir ihn zu Beginn des Programms aus dem Bild <a href="img/apple.png">apple.png</a> mit Hilfe PIL laden, verkleinern und ein <em>ImageTk.PhotoImage</em> Objekt daraus machen. Das haben wir für den Körper der Schlange in Schritt 0 genau gleich gemacht.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> redraw_apple():
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">global</span> apple
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> apple <span style="color:#00f">is</span> <span style="color:#00f">not</span> <span style="color:#00f">None</span>:
+</span></span><span style="display:flex;"><span>        c.delete(apple)
+</span></span><span style="display:flex;"><span>    apple = c.create_image(apple_pos[0], apple_pos[1], image=apple_img)
+</span></span></code></pre></div><p>Mit der <em>redraw_apple()</em> Funktion wird der Apfel auf der tkinter canvas gelöscht und an seiner neuen Position neu gezeichnet. Die Variable apple ist eine globale Variable, welche zu Beginn auf <em>None</em> gesetzt ist.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>apple = <span style="color:#00f">None</span>
+</span></span></code></pre></div><p>Die <em>apple</em> Variable speichert die Referenz auf das gezeichnete Apfel Objekt auf der tkinter Leinwand, damit wir das alte Apfelbild löschen können, wenn der Apfel eine neue Position bekommt</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>n_bodies0 = 10
+</span></span></code></pre></div><p>Nachdem die Schlangenlänge jetzt nicht mehr fix ist, gibt es eine Variable n_bodies0, mit welcher n_bodies zu Beginn eines Spiels initialisiert wird.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">def</span> head_eats_apple():
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> head_pos[0] == apple_pos[0] <span style="color:#00f">and</span> head_pos[1] == apple_pos[1]
+</span></span></code></pre></div><p>mit dieser Funktion können wir prüfen, ob der Kopf gerade am selben Feld wie der Apfel ist und ihn daher essen kann.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sleep_seconds = 0.2
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>    n_bodies = n_bodies0
+</span></span><span style="display:flex;"><span>    richtung = (1, 0)
+</span></span><span style="display:flex;"><span>    head_pos = list(start_pos)
+</span></span><span style="display:flex;"><span>    apple_pos = gen_apple_pos()
+</span></span><span style="display:flex;"><span>    redraw_apple()
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
+</span></span><span style="display:flex;"><span>        c.delete(body)
+</span></span><span style="display:flex;"><span>    bodies = []
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>        move_head()
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> does_head_bite_body():
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">break</span>
+</span></span><span style="display:flex;"><span>        new_body()
+</span></span><span style="display:flex;"><span>        delete_old_body()
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> head_eats_apple():
+</span></span><span style="display:flex;"><span>            apple_pos = gen_apple_pos()
+</span></span><span style="display:flex;"><span>            redraw_apple()
+</span></span><span style="display:flex;"><span>            n_bodies += 1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> is_outside_board():
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">break</span>
+</span></span><span style="display:flex;"><span>        window.update()
+</span></span><span style="display:flex;"><span>        sleep(sleep_seconds)
+</span></span></code></pre></div><p>In der neuen Hauptschleife prüfen wir jetzt ob der Kopf den Apfel isst und vergrößern in dem Fall auch die Länge der Schlage. Zusätzlich muss der Apfel eine neue Position bekommen und neugezeichnet werden. Auch zu Beginn eines Spiels erzeugen wir eine neue Apfel Position, mit der er frisch auf die Leinwand gezeichnet wird.</p>
+<p>Damit kann unsere Schlange jetzt durch das Essen von Äpfeln über sich hinaus wachsen. Den Source Code findest du <a href="source/snake_06_apfel.py">hier</a>.</p>
+<h3 id="schritt-7---punkte-mitzählen-und-anzeigen">Schritt 7 - Punkte mitzählen und anzeigen</h3>
 <p>Schließlich wollen wir auch mitzählen wieviele Äpfel die Schlange bereits verspeist hat und diesen Punktestand auch anzeigen lassen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">H = 550</code></pre></div>
-<p>Wir machen unser Fenster etwas größer.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x_left = 20
-y_up = 50</code></pre></div>
-<p>Außerdem lassen wir das Spielfeld erst weiter unten beginnen, um Platz für den Punktestand zu lassen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">score_text = c.create_text(30, 20, fill=<span style="color:#a31515">&#34;black&#34;</span>, font=(<span style="color:#a31515">&#34;Helvetica&#34;</span>, 30))
-
-<span style="color:#00f">def</span> show_points():
-    c.itemconfig(score_text, text=str(score))</code></pre></div>
-<p>Wir platzieren ein Textelement auf der canvas und halten dieses mit der <em>show_points()</em> Funktion stets aktuell, indem wir den momentanen score hineinschreiben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>H = 550
+</span></span></code></pre></div><p>Wir machen unser Fenster etwas größer.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x_left = 20
+</span></span><span style="display:flex;"><span>y_up = 50
+</span></span></code></pre></div><p>Außerdem lassen wir das Spielfeld erst weiter unten beginnen, um Platz für den Punktestand zu lassen.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>score_text = c.create_text(30, 20, fill=<span style="color:#a31515">&#34;black&#34;</span>, font=(<span style="color:#a31515">&#34;Helvetica&#34;</span>, 30))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> show_points():
+</span></span><span style="display:flex;"><span>    c.itemconfig(score_text, text=str(score))
+</span></span></code></pre></div><p>Wir platzieren ein Textelement auf der canvas und halten dieses mit der <em>show_points()</em> Funktion stets aktuell, indem wir den momentanen score hineinschreiben.</p>
 <p>Diesen score initialisieren wir in der neuen Hauptschleife bei einem Spielbeginn mit 0 und erhöhen ihn, wenn ein Apfel gegessen wird.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sleep_seconds = 0.2
-<span style="color:#00f">while</span> True:
-    n_bodies = n_bodies0
-    richtung = (1, 0)
-    head_pos = list(start_pos)
-    apple_pos = gen_apple_pos()
-    redraw_apple()
-    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
-        c.delete(body)
-    bodies = []
-    score = 0
-    show_points()
-    <span style="color:#00f">while</span> True:
-        move_head()
-        <span style="color:#00f">if</span> does_head_bite_body():
-            <span style="color:#00f">break</span>
-        new_body()
-        delete_old_body()
-        <span style="color:#00f">if</span> head_eats_apple():
-            apple_pos = gen_apple_pos()
-            redraw_apple()
-            n_bodies += 1
-            score += 1
-            show_points()
-        <span style="color:#00f">if</span> is_outside_board():
-            <span style="color:#00f">break</span>
-        window.update()
-        sleep(sleep_seconds)</code></pre></div>
-<p>Damit sind wir am Ende von Schritt 7 angekommen. Gratulation du solltest jetzt ein <em>fertiges</em> Snake Spiel haben! Den Source Code findest du <a href="source/snake_07_punkte.py" target="_blank">hier</a>. Jetzt kannst du versuchen einen High Score aufzustellen, oder weitere Features einbauen. Man könnte z.B.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sleep_seconds = 0.2
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>    n_bodies = n_bodies0
+</span></span><span style="display:flex;"><span>    richtung = (1, 0)
+</span></span><span style="display:flex;"><span>    head_pos = list(start_pos)
+</span></span><span style="display:flex;"><span>    apple_pos = gen_apple_pos()
+</span></span><span style="display:flex;"><span>    redraw_apple()
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> body <span style="color:#00f">in</span> bodies:
+</span></span><span style="display:flex;"><span>        c.delete(body)
+</span></span><span style="display:flex;"><span>    bodies = []
+</span></span><span style="display:flex;"><span>    score = 0
+</span></span><span style="display:flex;"><span>    show_points()
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">while</span> <span style="color:#00f">True</span>:
+</span></span><span style="display:flex;"><span>        move_head()
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> does_head_bite_body():
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">break</span>
+</span></span><span style="display:flex;"><span>        new_body()
+</span></span><span style="display:flex;"><span>        delete_old_body()
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> head_eats_apple():
+</span></span><span style="display:flex;"><span>            apple_pos = gen_apple_pos()
+</span></span><span style="display:flex;"><span>            redraw_apple()
+</span></span><span style="display:flex;"><span>            n_bodies += 1
+</span></span><span style="display:flex;"><span>            score += 1
+</span></span><span style="display:flex;"><span>            show_points()
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> is_outside_board():
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">break</span>
+</span></span><span style="display:flex;"><span>        window.update()
+</span></span><span style="display:flex;"><span>        sleep(sleep_seconds)
+</span></span></code></pre></div><p>Damit sind wir am Ende von Schritt 7 angekommen. Gratulation du solltest jetzt ein <em>fertiges</em> Snake Spiel haben! Den Source Code findest du <a href="source/snake_07_punkte.py">hier</a>. Jetzt kannst du versuchen einen High Score aufzustellen, oder weitere Features einbauen. Man könnte z.B.</p>
 <ul>
 <li>Den High Score abspeichern und am Ende eines Spiels immer den aktuellen Score mit dem High Score vergleichen.</li>
-<li>Der Schlange einen schönen Kopf geben, der nicht einfach ein normales Schlangenelement ist. Es gäbe dafür z.B. das Bild <a href="img/snake_head.png" target="_blank">snake_head.png</a>.</li>
+<li>Der Schlange einen schönen Kopf geben, der nicht einfach ein normales Schlangenelement ist. Es gäbe dafür z.B. das Bild <a href="img/snake_head.png">snake_head.png</a>.</li>
 <li>Hindernisse einbauen</li>
 <li>Mehr als einen Apfel gleichzeitig platzieren</li>
 <li>Die Schlange mit einer künstlichen Intelligenz automatisch steuern lassen</li>
 <li>etc.</li>
 </ul>
-
 <p>Deiner Fantasie sollen keine Grenzen gesetzt sein :-)</p>
  </div>
         </div>

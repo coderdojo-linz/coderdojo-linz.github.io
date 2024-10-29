@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Space Shooter mit Phaser.io </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,34 +150,26 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#space-shooter-mit-phaser-io">Space Shooter mit Phaser.io</a>
-<ul>
-<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
-<li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
-<li><a href="#node-js-und-npm-einrichten">Node.js und NPM einrichten</a></li>
-<li><a href="#mentoring-tipp">Mentoring-Tipp</a></li>
-<li><a href="#spiel-starten-und-hintergrund-zeichnen">Spiel Starten und Hintergrund zeichnen</a></li>
-<li><a href="#spaceship-hinzufügen">Spaceship hinzufügen</a></li>
-<li><a href="#spaceship-bewegen">Spaceship bewegen</a></li>
-<li><a href="#spaceship-in-eigene-dateien">Spaceship in eigene Dateien</a></li>
-<li><a href="#laser-feuern">Laser feuern</a></li>
-<li><a href="#meteoriten">Meteoriten</a></li>
-<li><a href="#laser-zerstören-meteoriten">Laser zerstören Meteoriten</a></li>
-<li><a href="#game-over">Game Over</a></li>
-<li><a href="#spielen">Spielen :-)</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+    <li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
+    <li><a href="#nodejs-und-npm-einrichten">Node.js und NPM einrichten</a></li>
+    <li><a href="#mentoring-tipp">Mentoring-Tipp</a></li>
+    <li><a href="#spiel-starten-und-hintergrund-zeichnen">Spiel Starten und Hintergrund zeichnen</a></li>
+    <li><a href="#spaceship-hinzufügen">Spaceship hinzufügen</a></li>
+    <li><a href="#spaceship-bewegen">Spaceship bewegen</a></li>
+    <li><a href="#spaceship-in-eigene-dateien">Spaceship in eigene Dateien</a></li>
+    <li><a href="#laser-feuern">Laser feuern</a></li>
+    <li><a href="#meteoriten">Meteoriten</a></li>
+    <li><a href="#laser-zerstören-meteoriten">Laser zerstören Meteoriten</a></li>
+    <li><a href="#game-over">Game Over</a></li>
+    <li><a href="#spielen--">Spielen :-)</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="space-shooter-mit-phaser-io">Space Shooter mit Phaser.io</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="space-shooter-mit-phaserio">Space Shooter mit Phaser.io</h1>
 <h2 id="ziel-der-übung">Ziel der Übung</h2>
-
 <p>In unserem Dojo hast du möglicherweise schon bei den Scratch-Übungen den <a href="/uebungsanleitungen/programmieren/scratch/space-shooter/">Space Shooter</a> erstellt. Falls nicht, wirf bitte vor diesem Beispiel einen Blick auf die Space Shooter Scratch Übung und <a href="https://scratch.mit.edu/projects/70593136/" target="_blank">probiere die Scratch-Implementierung aus</a>. Unser Ziel ist es, diesen Space Shooter mit Web-Technologien für den Browser zu entwickeln.</p>
-
 
 
 
@@ -202,1022 +194,986 @@
     </div>
 </div>
 
-
 <p><strong>Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!</strong> Falls HTML, JavaScript, Node.js und <a href="https://code.visualstudio.com/" title="Homepage von Visual Studio Code" target="_blank">Visual Studio Code</a> für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsanleitungen zu empfehlen:</p>
-
 <ul>
 <li>HTML Grundlagen: <a href="/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/">Baue deine erste Webseite</a></li>
 <li>JavaScript Grundlagen: <a href="/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/">Zahlen raten</a></li>
 <li>Node.js Grundlagen: <a href="/uebungsanleitungen/programmieren/web/nodejs-webserver/">Ein Webserver mit Node.js</a></li>
 </ul>
-
 <h2 id="systemvoraussetzungen">Systemvoraussetzungen</h2>
-
 <p>Du brauchst für diese Übung folgende Tools:</p>
-
 <ul>
 <li><a href="https://code.visualstudio.com/" title="Homepage von Visual Studio Code" target="_blank">Visual Studio Code</a> (kurz <em>VSCode</em>)</li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">ESLint-Erweiterung für VSCode</a></li>
 <li><a href="https://nodejs.org" target="_blank">Node.js</a></li>
 </ul>
-
 <p>Du kannst das Beispiel unter Windows, Linux oder MacOS bauen. Alle verwendeten Tools sind plattformunabhängig.</p>
-
-<h2 id="node-js-und-npm-einrichten">Node.js und NPM einrichten</h2>
-
+<h2 id="nodejs-und-npm-einrichten">Node.js und NPM einrichten</h2>
 <p>Unser Projekt verwendet eine Reihe von Node.js Modulen. Diese müssen mit <em>npm</em>, den <em>Node Package Manager</em> installiert werden.</p>
-
 <ol>
-<li><p>Lade den Code, den du zum Starten brauchst, <a href="https://github.com/rstropek/ts-space-shooter-starter/tree/master" target="_blank">von GitHub herunter</a>:
+<li>
+<p>Lade den Code, den du zum Starten brauchst, <a href="https://github.com/rstropek/ts-space-shooter-starter/tree/master" target="_blank">von GitHub herunter</a>:
 
+   
+   
+        
+       
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <div class="row">
+       <div class="col">
+           <p></p>
+       </div>
+       <div class="col-12 col-md-12">
+       <img src="/uebungsanleitungen/programmieren/web/space-shooter/img/GitDownload.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+       </div>
+   </div>
+</p>
+</li>
+<li>
+<p>Pro Tipp: Weißt du schon, was <em>Git</em> ist? Natürlich kannst du dann das GitHub Repository auch <em>klonen</em>. Es macht nichts, wenn du noch nicht weißt, was das bedeutet.</p>
+</li>
+<li>
+<p>Kopiere den Inhalt der ZIP-Datei, die du heruntergeladen hast, in ein <em>neues, leeres Verzeichnis</em>. In dieser Anleitung gehe ich davon aus, dass du das Verzeichnis <em>c:\temp\shooter</em> genannt hast.</p>
+</li>
+<li>
+<p>Öffne das <em>shooter</em> Verzeichnis in <em>Visual Studio Code</em>:
 
+   
+   
+        
+       
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <div class="row">
+       <div class="col">
+           <p></p>
+       </div>
+       <div class="col-12 col-md-12">
+       <img src="/uebungsanleitungen/programmieren/web/space-shooter/img/VSCodeOpenFolder.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+       </div>
+   </div>
+</p>
+</li>
+<li>
+<p>Öffne das <em>Terminal</em> in VSCode (<em>Strg+ö</em>).</p>
+</li>
+<li>
+<p>Installiere die Node.js Module mit dem Befehl <code>npm install</code>. Das wird einen Moment dauern.</p>
+</li>
+<li>
+<p>Starte das Programm mit dem Befehl <code>npm start</code>.</p>
+</li>
+<li>
+<p>Jetzt müsste ein Browserfenster aufgehen und du müsstest eine Meldung wie diese sehen:
 
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/web/space-shooter/img/GitDownload.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
-
-<li><p>Pro Tipp: Weißt du schon, was <em>Git</em> ist? Natürlich kannst du dann das GitHub Repository auch <em>klonen</em>. Es macht nichts, wenn du noch nicht weißt, was das bedeutet.</p></li>
-
-<li><p>Kopiere den Inhalt der ZIP-Datei, die du heruntergeladen hast, in ein <em>neues, leeres Verzeichnis</em>. In dieser Anleitung gehe ich davon aus, dass du das Verzeichnis <em>c:\temp\shooter</em> genannt hast.</p></li>
-
-<li><p>Öffne das <em>shooter</em> Verzeichnis in <em>Visual Studio Code</em>:
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/web/space-shooter/img/VSCodeOpenFolder.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
-
-<li><p>Öffne das <em>Terminal</em> in VSCode (<em>Strg+ö</em>).</p></li>
-
-<li><p>Installiere die Node.js Module mit dem Befehl <code>npm install</code>. Das wird einen Moment dauern.</p></li>
-
-<li><p>Starte das Programm mit dem Befehl <code>npm start</code>.</p></li>
-
-<li><p>Jetzt müsste ein Browserfenster aufgehen und du müsstest eine Meldung wie diese sehen:
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/web/space-shooter/img/StarterRun.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
+   
+   
+        
+       
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <div class="row">
+       <div class="col">
+           <p></p>
+       </div>
+       <div class="col-12 col-md-12">
+       <img src="/uebungsanleitungen/programmieren/web/space-shooter/img/StarterRun.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+       </div>
+   </div>
+</p>
+</li>
 </ol>
-
 <p><strong>Hinweis:</strong> Im Startcode, den du gerade heruntergeladen hast, stecken eine Menge interessante (aber nicht einfache) Details rund um Webentwicklung. Auf die gehen wir hier nicht ein. Wer aber schon mehr Erfahrung mit Webentwicklung hat, der kann in den vorgefertigten Code reinschauen und versuchen, Teile davon zu verstehen.</p>
-
 <h2 id="mentoring-tipp">Mentoring-Tipp</h2>
-
 <p>Hinweis für Mentorinnen und Mentoren: Alle Schritte dieses Spiels findest du als <a href="https://github.com/rstropek/ts-space-shooter-starter/branches/all" target="_blank"><em>Branches</em> auf GitHub</a>.</p>
-
 <h2 id="spiel-starten-und-hintergrund-zeichnen">Spiel Starten und Hintergrund zeichnen</h2>
-
 <p>Öffne die Datei <em>src/index.ts</em> in VSCode.</p>
-
 <p>Führe <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/f91df134e08104aab4ebebc051051a96ec97411b" target="_blank">diese Änderungen</a> durch. Danach sollte die <em>index.ts</em>-Datei so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Scene, CANVAS, Game } from <span style="color:#a31515">&#39;phaser&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Space shooter scene
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * Learn more about Phaser scenes at 
-</span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
-    preload() {
-        <span style="color:#008000">// Preload images so that we can use them in our game
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
-    }
-
-    create() {
-        <span style="color:#008000">//  Add a background
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
-    }
-}
-
-<span style="color:#00f">const</span> config = {
-    type: <span style="color:#2b91af">CANVAS</span>,
-    width: <span style="color:#2b91af">512</span>,
-    height: <span style="color:#2b91af">512</span>,
-    scene: [ShooterScene],
-    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
-    audio: { noAudio: <span style="color:#2b91af">true</span> }
-};
-
-<span style="color:#00f">new</span> Game(config);
-</code></pre></div>
-<p>Wechsle zurück zum Browser und schau, ob du das Spielfeld mit dem Hintergrundbild siehst. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Scene, CANVAS, Game } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Space shooter scene
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Learn more about Phaser scenes at 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
+</span></span><span style="display:flex;"><span>    preload() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Preload images so that we can use them in our game
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    create() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">//  Add a background
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> config = {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">type</span>: CANVAS,
+</span></span><span style="display:flex;"><span>    width: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    height: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    scene: [ShooterScene],
+</span></span><span style="display:flex;"><span>    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
+</span></span><span style="display:flex;"><span>    audio: { noAudio: <span style="color:#2b91af">true</span> }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">new</span> Game(config);
+</span></span></code></pre></div><p>Wechsle zurück zum Browser und schau, ob du das Spielfeld mit dem Hintergrundbild siehst. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
 <h2 id="spaceship-hinzufügen">Spaceship hinzufügen</h2>
-
 <p>Öffne die Datei <em>src/index.ts</em> in VSCode.</p>
-
 <p>Führe <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/5c1fa52b81bb533c5622bf773a2aab786cf6a63f" target="_blank">diese Änderungen</a> durch. Danach sollte die <em>index.ts</em>-Datei so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Scene, CANVAS, Game, GameObjects } from <span style="color:#a31515">&#39;phaser&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Space shooter scene
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * Learn more about Phaser scenes at 
-</span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
-    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">GameObjects.Image</span>;
-
-    preload() {
-        <span style="color:#008000">// Preload images so that we can use them in our game
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
-    }
-
-    create() {
-        <span style="color:#008000">//  Add a background
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
-
-        <span style="color:#008000">// Add the sprite for our space ship.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">this</span>.add.image(0, 0, <span style="color:#a31515">&#39;ship&#39;</span>);
-        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.spaceShip);
-
-        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
-</span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
-    }
-}
-
-<span style="color:#00f">const</span> config = {
-    type: <span style="color:#2b91af">CANVAS</span>,
-    width: <span style="color:#2b91af">512</span>,
-    height: <span style="color:#2b91af">512</span>,
-    scene: [ShooterScene],
-    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
-    audio: { noAudio: <span style="color:#2b91af">true</span> }
-};
-
-<span style="color:#00f">new</span> Game(config);
-</code></pre></div>
-<p>Wechsle zurück zum Browser und schau, ob jetzt auch das Spaceship angezeigt wird. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Scene, CANVAS, Game, GameObjects } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Space shooter scene
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Learn more about Phaser scenes at 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">GameObjects.Image</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    preload() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Preload images so that we can use them in our game
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    create() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">//  Add a background
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Add the sprite for our space ship.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">this</span>.add.image(0, 0, <span style="color:#a31515">&#39;ship&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.spaceShip);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> config = {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">type</span>: CANVAS,
+</span></span><span style="display:flex;"><span>    width: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    height: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    scene: [ShooterScene],
+</span></span><span style="display:flex;"><span>    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
+</span></span><span style="display:flex;"><span>    audio: { noAudio: <span style="color:#2b91af">true</span> }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">new</span> Game(config);
+</span></span></code></pre></div><p>Wechsle zurück zum Browser und schau, ob jetzt auch das Spaceship angezeigt wird. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
 <h2 id="spaceship-bewegen">Spaceship bewegen</h2>
-
 <p>Öffne die Datei <em>src/index.ts</em> in VSCode.</p>
-
 <p>Führe <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/7fe124e0b58011b9bccced8ac68b6a1a58a7f171" target="_blank">diese Änderungen</a> durch. Danach sollte die <em>index.ts</em>-Datei so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, GameObjects } from <span style="color:#a31515">&#39;phaser&#39;</span>;
-
-<span style="color:#008000">/** Possible movement directions */</span>
-<span style="color:#00f">export</span> <span style="color:#00f">enum</span> Direction {
-    Left = -1, 
-    Right = 1 
-}
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Space shooter scene
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * Learn more about Phaser scenes at 
-</span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
-    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">GameObjects.Image</span>;
-    <span style="color:#00f">private</span> speed: <span style="color:#2b91af">number</span>;
-    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
-
-    preload() {
-        <span style="color:#008000">// Preload images so that we can use them in our game
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
-
-        <span style="color:#00f">this</span>.speed = Phaser.Math.GetSpeed(200, 1);
-    }
-
-    create() {
-        <span style="color:#008000">//  Add a background
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
-
-        <span style="color:#008000">// Add the sprite for our space ship.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">this</span>.add.image(0, 0, <span style="color:#a31515">&#39;ship&#39;</span>);
-        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.spaceShip);
-
-        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
-</span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
-
-        <span style="color:#008000">// Setup game input handling
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
-    }
-    
-    update(_, delta: <span style="color:#2b91af">number</span>) {
-        <span style="color:#008000">// Move ship if cursor keys are pressed
-</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
-            <span style="color:#00f">this</span>.move(delta, Direction.Left);
-        }
-        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
-            <span style="color:#00f">this</span>.move(delta, Direction.Right);
-        }
-    }
-    
-    move(delta: <span style="color:#2b91af">number</span>, direction: <span style="color:#2b91af">Direction</span>) {
-        <span style="color:#008000">// Change position
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.x += <span style="color:#00f">this</span>.speed * delta * direction;
-
-        <span style="color:#008000">// Make sure spaceship cannot leave world boundaries
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.x = Phaser.Math.Clamp(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.width / 2,
-            <span style="color:#00f">this</span>.game.canvas.width - <span style="color:#00f">this</span>.spaceShip.width / 2);
-    }
-}
-
-<span style="color:#00f">const</span> config = {
-    type: <span style="color:#2b91af">CANVAS</span>,
-    width: <span style="color:#2b91af">512</span>,
-    height: <span style="color:#2b91af">512</span>,
-    scene: [ShooterScene],
-    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
-    audio: { noAudio: <span style="color:#2b91af">true</span> }
-};
-
-<span style="color:#00f">new</span> Game(config);
-</code></pre></div>
-<p>Wechsle zurück zum Browser und probiere, ob du mit den Cursortasten das Spaceship bewegen kannst. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, GameObjects } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/** Possible movement directions */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">enum</span> Direction {
+</span></span><span style="display:flex;"><span>    Left = -1, 
+</span></span><span style="display:flex;"><span>    Right = 1 
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Space shooter scene
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Learn more about Phaser scenes at 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">GameObjects.Image</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> speed: <span style="color:#2b91af">number</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    preload() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Preload images so that we can use them in our game
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.speed = Phaser.Math.GetSpeed(200, 1);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    create() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">//  Add a background
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Add the sprite for our space ship.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">this</span>.add.image(0, 0, <span style="color:#a31515">&#39;ship&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.spaceShip);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Setup game input handling
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    update(_, delta: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Move ship if cursor keys are pressed
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.move(delta, Direction.Left);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.move(delta, Direction.Right);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    move(delta: <span style="color:#2b91af">number</span>, direction: <span style="color:#2b91af">Direction</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Change position
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.x += <span style="color:#00f">this</span>.speed * delta * direction;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Make sure spaceship cannot leave world boundaries
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.x = Phaser.Math.Clamp(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.width / 2,
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.game.canvas.width - <span style="color:#00f">this</span>.spaceShip.width / 2);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> config = {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">type</span>: CANVAS,
+</span></span><span style="display:flex;"><span>    width: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    height: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    scene: [ShooterScene],
+</span></span><span style="display:flex;"><span>    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
+</span></span><span style="display:flex;"><span>    audio: { noAudio: <span style="color:#2b91af">true</span> }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">new</span> Game(config);
+</span></span></code></pre></div><p>Wechsle zurück zum Browser und probiere, ob du mit den Cursortasten das Spaceship bewegen kannst. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
 <p><strong>Idee für eigene Erweiterung:</strong></p>
-
 <ol>
 <li>Schaffst du es, den Code so zu ändern, dass man das Raumschiff auch nach oben mit den entsprechenden Cursortasten bewegen kann?</li>
 </ol>
-
 <h2 id="spaceship-in-eigene-dateien">Spaceship in eigene Dateien</h2>
-
 <p>Unser Code in <em>index.ts</em> wird langsam zu lang und unübersichtlich. Wir wollen jetzt den Code in mehrere Dateien und <em>Klassen</em> aufteilen.</p>
-
 <p><em>Mentoring-Tipp:</em> Verwende diesen Schritt, um über Klassen und Vererbung zu sprechen.</p>
-
 <p>Öffne die Datei <em>src/index.ts</em> in VSCode.</p>
-
 <p>Führe <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/59653738be2aec95c17659156f58852e2504debf" target="_blank">diese Änderungen</a> durch. Danach sollte die <em>index.ts</em>-Datei so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game } from <span style="color:#a31515">&#39;phaser&#39;</span>;
-<span style="color:#00f">import</span> { Spaceship, Direction } from <span style="color:#a31515">&#39;./spaceship&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Space shooter scene
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * Learn more about Phaser scenes at 
-</span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
-    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
-    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
-
-    preload() {
-        <span style="color:#008000">// Preload images so that we can use them in our game
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
-    }
-
-    create() {
-        <span style="color:#008000">//  Add a background
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
-
-        <span style="color:#008000">// Add the sprite for our space ship.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
-        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
-
-        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
-</span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
-
-        <span style="color:#008000">// Setup game input handling
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
-    }
-    
-    update(_, delta: <span style="color:#2b91af">number</span>) {
-        <span style="color:#008000">// Move ship if cursor keys are pressed
-</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
-        }
-        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
-        }
-    }
-}
-
-<span style="color:#00f">const</span> config = {
-    type: <span style="color:#2b91af">CANVAS</span>,
-    width: <span style="color:#2b91af">512</span>,
-    height: <span style="color:#2b91af">512</span>,
-    scene: [ShooterScene],
-    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
-    audio: { noAudio: <span style="color:#2b91af">true</span> }
-};
-
-<span style="color:#00f">new</span> Game(config);
-</code></pre></div>
-<p>Füge außerdem die Datei <em>src/shooterImage.ts</em> hinzu:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { GameObjects } from <span style="color:#a31515">&#39;phaser&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000">* ShooterImage is the base class for all images in our space shooter game.
-</span><span style="color:#008000">* 
-</span><span style="color:#008000">* Technically, a shooter image is a Phaser Image. Learn more about images at
-</span><span style="color:#008000">* https://photonstorm.github.io/phaser3-docs/Phaser.GameObjects.Image.html.
-</span><span style="color:#008000">**/</span>
-<span style="color:#00f">export</span> <span style="color:#00f">class</span> ShooterImage <span style="color:#00f">extends</span> GameObjects.Image {
-    <span style="color:#00f">protected</span> speed: <span style="color:#2b91af">number</span>;
-    <span style="color:#00f">protected</span> sceneHeight: <span style="color:#2b91af">number</span>;
-    <span style="color:#00f">protected</span> sceneWidth: <span style="color:#2b91af">number</span>;
-
-    <span style="color:#00f">constructor</span>(scene: <span style="color:#2b91af">Phaser.Scene</span>, texture: <span style="color:#2b91af">string</span>, speedDistance: <span style="color:#2b91af">number</span>) {
-        <span style="color:#008000">// Initialize the Phaser image
-</span><span style="color:#008000"></span>        <span style="color:#00f">super</span>(scene, 0, 0, texture);
-
-        <span style="color:#008000">// Store the size of the scene, we will need it later
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.sceneHeight = scene.game.canvas.height;
-        <span style="color:#00f">this</span>.sceneWidth = scene.game.canvas.width;
-
-        <span style="color:#008000">// Calculate the speed
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.speed = Phaser.Math.GetSpeed(speedDistance, 1);
-    }
-
-    <span style="color:#00f">protected</span> activate() {
-        <span style="color:#00f">this</span>.setActive(<span style="color:#00f">true</span>);
-        <span style="color:#00f">this</span>.setVisible(<span style="color:#00f">true</span>);
-    }
-
-    kill() {
-        <span style="color:#00f">this</span>.setActive(<span style="color:#00f">false</span>);
-        <span style="color:#00f">this</span>.setVisible(<span style="color:#00f">false</span>);
-    }
-}
-</code></pre></div>
-<p>Zum Abschluss brauchst du die Datei <em>src/spaceship.ts</em>:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { ShooterImage } from <span style="color:#a31515">&#39;./shooterImage&#39;</span>;
-
-<span style="color:#008000">/** Possible movement directions */</span>
-<span style="color:#00f">export</span> <span style="color:#00f">enum</span> Direction {
-    Left = -1, 
-    Right = 1 
-}
-
-<span style="color:#008000">/** Spaceship that can move left and right */</span>
-<span style="color:#00f">export</span> <span style="color:#00f">class</span> Spaceship <span style="color:#00f">extends</span> ShooterImage {
-    <span style="color:#00f">constructor</span>(scene: <span style="color:#2b91af">Phaser.Scene</span>) {
-        <span style="color:#00f">super</span>(scene, <span style="color:#a31515">&#39;ship&#39;</span>, 200);
-
-        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
-</span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.setPosition(scene.game.canvas.width / 2, scene.game.canvas.height * 0.9);
-    }
-
-    move(delta: <span style="color:#2b91af">number</span>, direction: <span style="color:#2b91af">Direction</span>) {
-        <span style="color:#008000">// Change position
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.x += <span style="color:#00f">this</span>.speed * delta * direction;
-
-        <span style="color:#008000">// Make sure spaceship cannot leave world boundaries
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.x = Phaser.Math.Clamp(<span style="color:#00f">this</span>.x, <span style="color:#00f">this</span>.width / 2,
-            <span style="color:#00f">this</span>.sceneWidth - <span style="color:#00f">this</span>.width / 2);
-    }
-}
-</code></pre></div>
-<p>Wechsle zurück zum Browser und probiere, ob du mit den Cursortasten das Spaceship immer noch bewegen kannst. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Spaceship, Direction } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./spaceship&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Space shooter scene
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Learn more about Phaser scenes at 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    preload() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Preload images so that we can use them in our game
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    create() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">//  Add a background
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Add the sprite for our space ship.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Setup game input handling
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    update(_, delta: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Move ship if cursor keys are pressed
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> config = {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">type</span>: CANVAS,
+</span></span><span style="display:flex;"><span>    width: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    height: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    scene: [ShooterScene],
+</span></span><span style="display:flex;"><span>    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
+</span></span><span style="display:flex;"><span>    audio: { noAudio: <span style="color:#2b91af">true</span> }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">new</span> Game(config);
+</span></span></code></pre></div><p>Füge außerdem die Datei <em>src/shooterImage.ts</em> hinzu:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { GameObjects } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000">* ShooterImage is the base class for all images in our space shooter game.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000">* 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000">* Technically, a shooter image is a Phaser Image. Learn more about images at
+</span></span></span><span style="display:flex;"><span><span style="color:#008000">* https://photonstorm.github.io/phaser3-docs/Phaser.GameObjects.Image.html.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000">**/</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">class</span> ShooterImage <span style="color:#00f">extends</span> GameObjects.Image {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">protected</span> speed: <span style="color:#2b91af">number</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">protected</span> sceneHeight: <span style="color:#2b91af">number</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">protected</span> sceneWidth: <span style="color:#2b91af">number</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">constructor</span>(scene: <span style="color:#2b91af">Phaser.Scene</span>, texture: <span style="color:#2b91af">string</span>, speedDistance: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Initialize the Phaser image
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">super</span>(scene, 0, 0, texture);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Store the size of the scene, we will need it later
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.sceneHeight = scene.game.canvas.height;
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.sceneWidth = scene.game.canvas.width;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Calculate the speed
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.speed = Phaser.Math.GetSpeed(speedDistance, 1);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">protected</span> activate() {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.setActive(<span style="color:#00f">true</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.setVisible(<span style="color:#00f">true</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    kill() {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.setActive(<span style="color:#00f">false</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.setVisible(<span style="color:#00f">false</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Zum Abschluss brauchst du die Datei <em>src/spaceship.ts</em>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { ShooterImage } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./shooterImage&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/** Possible movement directions */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">enum</span> Direction {
+</span></span><span style="display:flex;"><span>    Left = -1, 
+</span></span><span style="display:flex;"><span>    Right = 1 
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/** Spaceship that can move left and right */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">class</span> Spaceship <span style="color:#00f">extends</span> ShooterImage {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">constructor</span>(scene: <span style="color:#2b91af">Phaser.Scene</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">super</span>(scene, <span style="color:#a31515">&#39;ship&#39;</span>, 200);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.setPosition(scene.game.canvas.width / 2, scene.game.canvas.height * 0.9);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    move(delta: <span style="color:#2b91af">number</span>, direction: <span style="color:#2b91af">Direction</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Change position
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.x += <span style="color:#00f">this</span>.speed * delta * direction;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Make sure spaceship cannot leave world boundaries
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.x = Phaser.Math.Clamp(<span style="color:#00f">this</span>.x, <span style="color:#00f">this</span>.width / 2,
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.sceneWidth - <span style="color:#00f">this</span>.width / 2);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Wechsle zurück zum Browser und probiere, ob du mit den Cursortasten das Spaceship immer noch bewegen kannst. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
 <h2 id="laser-feuern">Laser feuern</h2>
-
 <p>Führe <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/7fe124e0b58011b9bccced8ac68b6a1a58a7f171" target="_blank">diese Änderungen</a> durch. Sie bestehen aus folgenden Schritten:</p>
-
 <p>Füge die Datei <em>src/bullet.ts</em> hinzu:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { ShooterImage } from <span style="color:#a31515">&#39;./shooterImage&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Bullet that the spaceship can fire
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * This class represents a bullet that a spaceship can fire. Bullets are
-</span><span style="color:#008000"> * started by calling the fire method. They fly from bottom to top.
-</span><span style="color:#008000"> * A bullet is killed if it reaches the top border of the world.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">export</span> <span style="color:#00f">class</span> Bullet <span style="color:#00f">extends</span> ShooterImage {
-    <span style="color:#00f">constructor</span>(scene: <span style="color:#2b91af">Phaser.Scene</span>) {
-        <span style="color:#00f">super</span>(scene, <span style="color:#a31515">&#39;bullet&#39;</span>, 400);
-    }
-
-    fire(x: <span style="color:#2b91af">number</span>, y: <span style="color:#2b91af">number</span>) {
-        <span style="color:#008000">// Start a little bit above the given coordinates
-</span><span style="color:#008000"></span>        <span style="color:#008000">// because this will be the coordinates of the spaceship.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.setPosition(x, y - 50);
-        <span style="color:#00f">this</span>.activate();
-    }
-
-    update(_, delta: <span style="color:#2b91af">number</span>) {
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.y &lt; -50) {
-            <span style="color:#008000">// Bullet has left world on the top border. We have to kill it.
-</span><span style="color:#008000"></span>            <span style="color:#00f">this</span>.kill();
-        }
-        
-        <span style="color:#00f">this</span>.y -= <span style="color:#00f">this</span>.speed * delta;
-    }
-}
-</code></pre></div>
-<p>Öffne die Datei <em>src/index.ts</em> in VSCode und ändere sie auf folgenden Inhalt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, Physics, Input } from <span style="color:#a31515">&#39;phaser&#39;</span>;
-<span style="color:#00f">import</span> { Spaceship, Direction } from <span style="color:#a31515">&#39;./spaceship&#39;</span>;
-<span style="color:#00f">import</span> { Bullet } from <span style="color:#a31515">&#39;./bullet&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Space shooter scene
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * Learn more about Phaser scenes at 
-</span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
-    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
-    <span style="color:#00f">private</span> bullets: <span style="color:#2b91af">Physics.Arcade.Group</span>;
-
-    <span style="color:#00f">private</span> bulletTime = 0;
-
-    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
-    <span style="color:#00f">private</span> spaceKey: <span style="color:#2b91af">Input.Keyboard.Key</span>;
-
-    preload() {
-        <span style="color:#008000">// Preload images so that we can use them in our game
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
-    }
-
-    create() {
-        <span style="color:#008000">//  Add a background
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
-
-        <span style="color:#008000">// Create bullets and meteors
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.bullets = <span style="color:#00f">this</span>.physics.add.group({
-            classType: <span style="color:#2b91af">Bullet</span>,
-            maxSize: <span style="color:#2b91af">10</span>,
-            runChildUpdate: <span style="color:#2b91af">true</span>
-        });
-
-        <span style="color:#008000">// Add the sprite for our space ship.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
-        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
-
-        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
-</span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
-
-        <span style="color:#008000">// Setup game input handling
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
-        <span style="color:#00f">this</span>.input.keyboard.addCapture([<span style="color:#a31515">&#39; &#39;</span>]);
-        <span style="color:#00f">this</span>.spaceKey = <span style="color:#00f">this</span>.input.keyboard.addKey(Input.Keyboard.KeyCodes.SPACE);
-    }
-    
-    update(_, delta: <span style="color:#2b91af">number</span>) {
-        <span style="color:#008000">// Move ship if cursor keys are pressed
-</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
-        }
-        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
-        }
-
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.spaceKey.isDown) {
-            <span style="color:#00f">this</span>.fireBullet();
-        }
-    }
-
-    fireBullet() {
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.bulletTime) {
-            <span style="color:#008000">// Find the first unused (=unfired) bullet
-</span><span style="color:#008000"></span>            <span style="color:#00f">const</span> bullet = <span style="color:#00f">this</span>.bullets.get() <span style="color:#00f">as</span> Bullet;
-            <span style="color:#00f">if</span> (bullet) {
-                bullet.fire(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.y);
-                <span style="color:#00f">this</span>.bulletTime = <span style="color:#00f">this</span>.time.now + 100;
-            }
-        }
-    }
-}
-
-<span style="color:#00f">const</span> config = {
-    type: <span style="color:#2b91af">CANVAS</span>,
-    width: <span style="color:#2b91af">512</span>,
-    height: <span style="color:#2b91af">512</span>,
-    scene: [ShooterScene],
-    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
-    audio: { noAudio: <span style="color:#2b91af">true</span> }
-};
-
-<span style="color:#00f">new</span> Game(config);
-</code></pre></div>
-<p>Wechsle zurück zum Browser und probiere, ob du mit der Leertaste Laserschüsse abfeuern kannst. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { ShooterImage } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./shooterImage&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Bullet that the spaceship can fire
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * This class represents a bullet that a spaceship can fire. Bullets are
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * started by calling the fire method. They fly from bottom to top.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * A bullet is killed if it reaches the top border of the world.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">class</span> Bullet <span style="color:#00f">extends</span> ShooterImage {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">constructor</span>(scene: <span style="color:#2b91af">Phaser.Scene</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">super</span>(scene, <span style="color:#a31515">&#39;bullet&#39;</span>, 400);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    fire(x: <span style="color:#2b91af">number</span>, y: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Start a little bit above the given coordinates
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// because this will be the coordinates of the spaceship.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.setPosition(x, y - 50);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.activate();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    update(_, delta: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.y &lt; -50) {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000">// Bullet has left world on the top border. We have to kill it.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">this</span>.kill();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.y -= <span style="color:#00f">this</span>.speed * delta;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Öffne die Datei <em>src/index.ts</em> in VSCode und ändere sie auf folgenden Inhalt:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, Physics, Input } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Spaceship, Direction } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./spaceship&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Bullet } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./bullet&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Space shooter scene
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Learn more about Phaser scenes at 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> bullets: <span style="color:#2b91af">Physics.Arcade.Group</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> bulletTime = 0;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceKey: <span style="color:#2b91af">Input.Keyboard.Key</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    preload() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Preload images so that we can use them in our game
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    create() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">//  Add a background
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Create bullets and meteors
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.bullets = <span style="color:#00f">this</span>.physics.add.group({
+</span></span><span style="display:flex;"><span>            classType: <span style="color:#2b91af">Bullet</span>,
+</span></span><span style="display:flex;"><span>            maxSize: <span style="color:#2b91af">10</span>,
+</span></span><span style="display:flex;"><span>            runChildUpdate: <span style="color:#2b91af">true</span>
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Add the sprite for our space ship.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Setup game input handling
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.input.keyboard.addCapture([<span style="color:#a31515">&#39; &#39;</span>]);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.spaceKey = <span style="color:#00f">this</span>.input.keyboard.addKey(Input.Keyboard.KeyCodes.SPACE);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    update(_, delta: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Move ship if cursor keys are pressed
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.spaceKey.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.fireBullet();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    fireBullet() {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.bulletTime) {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000">// Find the first unused (=unfired) bullet
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">const</span> bullet = <span style="color:#00f">this</span>.bullets.<span style="color:#00f">get</span>() <span style="color:#00f">as</span> Bullet;
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (bullet) {
+</span></span><span style="display:flex;"><span>                bullet.fire(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.y);
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">this</span>.bulletTime = <span style="color:#00f">this</span>.time.now + 100;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> config = {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">type</span>: CANVAS,
+</span></span><span style="display:flex;"><span>    width: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    height: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    scene: [ShooterScene],
+</span></span><span style="display:flex;"><span>    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
+</span></span><span style="display:flex;"><span>    audio: { noAudio: <span style="color:#2b91af">true</span> }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">new</span> Game(config);
+</span></span></code></pre></div><p>Wechsle zurück zum Browser und probiere, ob du mit der Leertaste Laserschüsse abfeuern kannst. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
 <p><strong>Ideen für eigene Erweiterungen:</strong></p>
-
 <ol>
-<li><p><em>Schwierigkeitsstufe 1</em>: Im Code siehst du, wie man auf Tasten reagieren kann. Ändere den Code so, dass du das Spaceship mit den Tasten A und D bewegen kannst, anstatt dafür die Cursortasten zu verwenden.</p></li>
-
-<li><p><em>Schwierigkeitsstufe 2</em>: Man kann nur eine gewisse Anzahl an Laserschüsse pro Sekunde abfeuern. Suche im Code den Teil, der diese Anzahl steuert und probiere, viel mehr und/oder viel weniger Schüsse pro Sekunde zu erlauben.</p></li>
-
-<li><p><em>Schwierigkeitsstufe 3</em>: Limitiere die Anzahl der verfügbaren Schüsse. Wenn man eine gewisse Anzahl an Schüssen abgegeben hat, dann müssen sich die &ldquo;Lasergeneratoren&rdquo; erst wieder aufladen und man kann erst danach wieder feuern.</p></li>
+<li>
+<p><em>Schwierigkeitsstufe 1</em>: Im Code siehst du, wie man auf Tasten reagieren kann. Ändere den Code so, dass du das Spaceship mit den Tasten A und D bewegen kannst, anstatt dafür die Cursortasten zu verwenden.</p>
+</li>
+<li>
+<p><em>Schwierigkeitsstufe 2</em>: Man kann nur eine gewisse Anzahl an Laserschüsse pro Sekunde abfeuern. Suche im Code den Teil, der diese Anzahl steuert und probiere, viel mehr und/oder viel weniger Schüsse pro Sekunde zu erlauben.</p>
+</li>
+<li>
+<p><em>Schwierigkeitsstufe 3</em>: Limitiere die Anzahl der verfügbaren Schüsse. Wenn man eine gewisse Anzahl an Schüssen abgegeben hat, dann müssen sich die &ldquo;Lasergeneratoren&rdquo; erst wieder aufladen und man kann erst danach wieder feuern.</p>
+</li>
 </ol>
-
 <h2 id="meteoriten">Meteoriten</h2>
-
 <p>Führe <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/659db3bc6ac1badd024b76dce29c7e82a242b1b8" target="_blank">diese Änderungen</a> durch. Sie bestehen aus folgenden Schritten:</p>
-
 <p>Füge die Datei <em>src/meteor.ts</em> hinzu:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { ShooterImage } from <span style="color:#a31515">&#39;./shooterImage&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Meteor that falls toward the spaceship
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * This class represents a meteor that falls toward the spaceship. Meteors are
-</span><span style="color:#008000"> * started by calling the fall method. They fly from top to bottom.
-</span><span style="color:#008000"> * A meteor is killed if it reaches the bottom border of the world.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">export</span> <span style="color:#00f">class</span> Meteor <span style="color:#00f">extends</span> ShooterImage {
-    <span style="color:#00f">constructor</span>(scene: <span style="color:#2b91af">Phaser.Scene</span>) {
-        <span style="color:#00f">super</span>(scene, <span style="color:#a31515">&#39;meteor&#39;</span>, 150);
-    }
-
-    fall() {
-        <span style="color:#008000">// Get a random x position
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.setPosition(<span style="color:#00f">this</span>.sceneWidth * Math.random(), <span style="color:#00f">this</span>.sceneHeight / 2 * (-1));
-        <span style="color:#00f">this</span>.activate();
-    }
-
-    update(_, delta: <span style="color:#2b91af">number</span>) {
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.y &gt; <span style="color:#00f">this</span>.sceneHeight) {
-            <span style="color:#008000">// Meteor has left world on the bottom border. We have to kill it.
-</span><span style="color:#008000"></span>            <span style="color:#00f">this</span>.kill();
-        }
-
-        <span style="color:#00f">this</span>.y += <span style="color:#00f">this</span>.speed * delta;
-    }
-}
-</code></pre></div>
-<p>Öffne die Datei <em>src/index.ts</em> in VSCode und ändere sie auf folgenden Inhalt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, Physics, Input } from <span style="color:#a31515">&#39;phaser&#39;</span>;
-<span style="color:#00f">import</span> { Spaceship, Direction } from <span style="color:#a31515">&#39;./spaceship&#39;</span>;
-<span style="color:#00f">import</span> { Bullet } from <span style="color:#a31515">&#39;./bullet&#39;</span>;
-<span style="color:#00f">import</span> { Meteor } from <span style="color:#a31515">&#39;./meteor&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Space shooter scene
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * Learn more about Phaser scenes at 
-</span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
-    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
-    <span style="color:#00f">private</span> meteors: <span style="color:#2b91af">Physics.Arcade.Group</span>;
-    <span style="color:#00f">private</span> bullets: <span style="color:#2b91af">Physics.Arcade.Group</span>;
-
-    <span style="color:#00f">private</span> bulletTime = 0;
-    <span style="color:#00f">private</span> meteorTime = 0;
-
-    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
-    <span style="color:#00f">private</span> spaceKey: <span style="color:#2b91af">Input.Keyboard.Key</span>;
-
-    preload() {
-        <span style="color:#008000">// Preload images so that we can use them in our game
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
-    }
-
-    create() {
-        <span style="color:#008000">//  Add a background
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
-
-        <span style="color:#008000">// Create bullets and meteors
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.bullets = <span style="color:#00f">this</span>.physics.add.group({
-            classType: <span style="color:#2b91af">Bullet</span>,
-            maxSize: <span style="color:#2b91af">10</span>,
-            runChildUpdate: <span style="color:#2b91af">true</span>
-        });
-        <span style="color:#00f">this</span>.meteors = <span style="color:#00f">this</span>.physics.add.group({
-            classType: <span style="color:#2b91af">Meteor</span>,
-            maxSize: <span style="color:#2b91af">20</span>,
-            runChildUpdate: <span style="color:#2b91af">true</span>
-        });
-
-        <span style="color:#008000">// Add the sprite for our space ship.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
-        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
-
-        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
-</span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
-
-        <span style="color:#008000">// Setup game input handling
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
-        <span style="color:#00f">this</span>.input.keyboard.addCapture([<span style="color:#a31515">&#39; &#39;</span>]);
-        <span style="color:#00f">this</span>.spaceKey = <span style="color:#00f">this</span>.input.keyboard.addKey(Input.Keyboard.KeyCodes.SPACE);
-    }
-    
-    update(_, delta: <span style="color:#2b91af">number</span>) {
-        <span style="color:#008000">// Move ship if cursor keys are pressed
-</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
-        }
-        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
-        }
-
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.spaceKey.isDown) {
-            <span style="color:#00f">this</span>.fireBullet();
-        }
-
-        <span style="color:#00f">this</span>.handleMeteors();
-    }
-
-    fireBullet() {
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.bulletTime) {
-            <span style="color:#008000">// Find the first unused (=unfired) bullet
-</span><span style="color:#008000"></span>            <span style="color:#00f">const</span> bullet = <span style="color:#00f">this</span>.bullets.get() <span style="color:#00f">as</span> Bullet;
-            <span style="color:#00f">if</span> (bullet) {
-                bullet.fire(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.y);
-                <span style="color:#00f">this</span>.bulletTime = <span style="color:#00f">this</span>.time.now + 100;
-            }
-        }
-    }
-
-    handleMeteors() {
-        <span style="color:#008000">// Check if it is time to launch a new meteor.
-</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.meteorTime) {
-            <span style="color:#008000">// Find first meteor that is currently not used
-</span><span style="color:#008000"></span>            <span style="color:#00f">const</span> meteor = <span style="color:#00f">this</span>.meteors.get() <span style="color:#00f">as</span> Meteor;
-            <span style="color:#00f">if</span> (meteor) {
-                meteor.fall();
-                <span style="color:#00f">this</span>.meteorTime = <span style="color:#00f">this</span>.time.now + 500 + 1000 * Math.random();
-            }
-        }
-    }
-}
-
-<span style="color:#00f">const</span> config = {
-    type: <span style="color:#2b91af">CANVAS</span>,
-    width: <span style="color:#2b91af">512</span>,
-    height: <span style="color:#2b91af">512</span>,
-    scene: [ShooterScene],
-    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
-    audio: { noAudio: <span style="color:#2b91af">true</span> }
-};
-
-<span style="color:#00f">new</span> Game(config);
-</code></pre></div>
-<p>Wechsle zurück zum Browser und kontrolliere, ob jetzt von oben Meteoriten herunterfallen. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { ShooterImage } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./shooterImage&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Meteor that falls toward the spaceship
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * This class represents a meteor that falls toward the spaceship. Meteors are
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * started by calling the fall method. They fly from top to bottom.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * A meteor is killed if it reaches the bottom border of the world.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">class</span> Meteor <span style="color:#00f">extends</span> ShooterImage {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">constructor</span>(scene: <span style="color:#2b91af">Phaser.Scene</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">super</span>(scene, <span style="color:#a31515">&#39;meteor&#39;</span>, 150);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    fall() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Get a random x position
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.setPosition(<span style="color:#00f">this</span>.sceneWidth * Math.random(), <span style="color:#00f">this</span>.sceneHeight / 2 * (-1));
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.activate();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    update(_, delta: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.y &gt; <span style="color:#00f">this</span>.sceneHeight) {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000">// Meteor has left world on the bottom border. We have to kill it.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">this</span>.kill();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.y += <span style="color:#00f">this</span>.speed * delta;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Öffne die Datei <em>src/index.ts</em> in VSCode und ändere sie auf folgenden Inhalt:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, Physics, Input } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Spaceship, Direction } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./spaceship&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Bullet } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./bullet&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Meteor } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./meteor&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Space shooter scene
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Learn more about Phaser scenes at 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> meteors: <span style="color:#2b91af">Physics.Arcade.Group</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> bullets: <span style="color:#2b91af">Physics.Arcade.Group</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> bulletTime = 0;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> meteorTime = 0;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceKey: <span style="color:#2b91af">Input.Keyboard.Key</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    preload() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Preload images so that we can use them in our game
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    create() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">//  Add a background
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Create bullets and meteors
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.bullets = <span style="color:#00f">this</span>.physics.add.group({
+</span></span><span style="display:flex;"><span>            classType: <span style="color:#2b91af">Bullet</span>,
+</span></span><span style="display:flex;"><span>            maxSize: <span style="color:#2b91af">10</span>,
+</span></span><span style="display:flex;"><span>            runChildUpdate: <span style="color:#2b91af">true</span>
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.meteors = <span style="color:#00f">this</span>.physics.add.group({
+</span></span><span style="display:flex;"><span>            classType: <span style="color:#2b91af">Meteor</span>,
+</span></span><span style="display:flex;"><span>            maxSize: <span style="color:#2b91af">20</span>,
+</span></span><span style="display:flex;"><span>            runChildUpdate: <span style="color:#2b91af">true</span>
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Add the sprite for our space ship.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Setup game input handling
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.input.keyboard.addCapture([<span style="color:#a31515">&#39; &#39;</span>]);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.spaceKey = <span style="color:#00f">this</span>.input.keyboard.addKey(Input.Keyboard.KeyCodes.SPACE);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    update(_, delta: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Move ship if cursor keys are pressed
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.spaceKey.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.fireBullet();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.handleMeteors();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    fireBullet() {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.bulletTime) {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000">// Find the first unused (=unfired) bullet
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">const</span> bullet = <span style="color:#00f">this</span>.bullets.<span style="color:#00f">get</span>() <span style="color:#00f">as</span> Bullet;
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (bullet) {
+</span></span><span style="display:flex;"><span>                bullet.fire(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.y);
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">this</span>.bulletTime = <span style="color:#00f">this</span>.time.now + 100;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    handleMeteors() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Check if it is time to launch a new meteor.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.meteorTime) {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000">// Find first meteor that is currently not used
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">const</span> meteor = <span style="color:#00f">this</span>.meteors.<span style="color:#00f">get</span>() <span style="color:#00f">as</span> Meteor;
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (meteor) {
+</span></span><span style="display:flex;"><span>                meteor.fall();
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">this</span>.meteorTime = <span style="color:#00f">this</span>.time.now + 500 + 1000 * Math.random();
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> config = {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">type</span>: CANVAS,
+</span></span><span style="display:flex;"><span>    width: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    height: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    scene: [ShooterScene],
+</span></span><span style="display:flex;"><span>    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
+</span></span><span style="display:flex;"><span>    audio: { noAudio: <span style="color:#2b91af">true</span> }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">new</span> Game(config);
+</span></span></code></pre></div><p>Wechsle zurück zum Browser und kontrolliere, ob jetzt von oben Meteoriten herunterfallen. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
 <p><strong>Ideen für eigene Erweiterungen:</strong></p>
-
 <ol>
-<li><p><em>Schwierigkeitsstufe 1</em>: Zeichne eine weitere Art von Meteorit (z.B. größer, andere Farbe) und lasse die Meteoritentypen abwechselnd herunterfallen.</p></li>
-
-<li><p><em>Schwierigkeitsstufe 2</em>: Die Meteoriten sollen mit der Zeit immer schneller aufeinander folgen (d.h. Frequenz steigt).</p></li>
-
-<li><p><em>Schwierigkeitsstufe 3</em>: Die Meteoriten sollen mit der Zeit immer schneller herunterfallen (d.h. Geschwindigkeit steigt).</p></li>
+<li>
+<p><em>Schwierigkeitsstufe 1</em>: Zeichne eine weitere Art von Meteorit (z.B. größer, andere Farbe) und lasse die Meteoritentypen abwechselnd herunterfallen.</p>
+</li>
+<li>
+<p><em>Schwierigkeitsstufe 2</em>: Die Meteoriten sollen mit der Zeit immer schneller aufeinander folgen (d.h. Frequenz steigt).</p>
+</li>
+<li>
+<p><em>Schwierigkeitsstufe 3</em>: Die Meteoriten sollen mit der Zeit immer schneller herunterfallen (d.h. Geschwindigkeit steigt).</p>
+</li>
 </ol>
-
 <h2 id="laser-zerstören-meteoriten">Laser zerstören Meteoriten</h2>
-
 <p>Führe <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/801259915bcf12e90fd5eda6d2b1707d097bb92b" target="_blank">diese Änderungen</a> an <em>src/index.ts</em> durch. Danach sollte die Datei so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, Physics, Input } from <span style="color:#a31515">&#39;phaser&#39;</span>;
-<span style="color:#00f">import</span> { Spaceship, Direction } from <span style="color:#a31515">&#39;./spaceship&#39;</span>;
-<span style="color:#00f">import</span> { Bullet } from <span style="color:#a31515">&#39;./bullet&#39;</span>;
-<span style="color:#00f">import</span> { Meteor } from <span style="color:#a31515">&#39;./meteor&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Space shooter scene
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * Learn more about Phaser scenes at 
-</span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
-    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
-    <span style="color:#00f">private</span> meteors: <span style="color:#2b91af">Physics.Arcade.Group</span>;
-    <span style="color:#00f">private</span> bullets: <span style="color:#2b91af">Physics.Arcade.Group</span>;
-
-    <span style="color:#00f">private</span> bulletTime = 0;
-    <span style="color:#00f">private</span> meteorTime = 0;
-
-    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
-    <span style="color:#00f">private</span> spaceKey: <span style="color:#2b91af">Input.Keyboard.Key</span>;
-
-    preload() {
-        <span style="color:#008000">// Preload images so that we can use them in our game
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
-    }
-
-    create() {
-        <span style="color:#008000">//  Add a background
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
-
-        <span style="color:#008000">// Create bullets and meteors
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.bullets = <span style="color:#00f">this</span>.physics.add.group({
-            classType: <span style="color:#2b91af">Bullet</span>,
-            maxSize: <span style="color:#2b91af">10</span>,
-            runChildUpdate: <span style="color:#2b91af">true</span>
-        });
-        <span style="color:#00f">this</span>.meteors = <span style="color:#00f">this</span>.physics.add.group({
-            classType: <span style="color:#2b91af">Meteor</span>,
-            maxSize: <span style="color:#2b91af">20</span>,
-            runChildUpdate: <span style="color:#2b91af">true</span>
-        });
-
-        <span style="color:#008000">// Add the sprite for our space ship.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
-        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
-
-        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
-</span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
-
-        <span style="color:#008000">// Setup game input handling
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
-        <span style="color:#00f">this</span>.input.keyboard.addCapture([<span style="color:#a31515">&#39; &#39;</span>]);
-        <span style="color:#00f">this</span>.spaceKey = <span style="color:#00f">this</span>.input.keyboard.addKey(Input.Keyboard.KeyCodes.SPACE);
-
-        <span style="color:#00f">this</span>.physics.add.collider(<span style="color:#00f">this</span>.bullets, <span style="color:#00f">this</span>.meteors, (bullet: <span style="color:#2b91af">Bullet</span>, meteor: <span style="color:#2b91af">Meteor</span>) =&gt; {
-            meteor.kill();
-            bullet.kill();
-        }, <span style="color:#00f">null</span>, <span style="color:#00f">this</span>);
-    }
-
-    update(_, delta: <span style="color:#2b91af">number</span>) {
-        <span style="color:#008000">// Move ship if cursor keys are pressed
-</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
-        }
-        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
-        }
-
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.spaceKey.isDown) {
-            <span style="color:#00f">this</span>.fireBullet();
-        }
-
-        <span style="color:#00f">this</span>.handleMeteors();
-    }
-
-    fireBullet() {
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.bulletTime) {
-            <span style="color:#008000">// Find the first unused (=unfired) bullet
-</span><span style="color:#008000"></span>            <span style="color:#00f">const</span> bullet = <span style="color:#00f">this</span>.bullets.get() <span style="color:#00f">as</span> Bullet;
-            <span style="color:#00f">if</span> (bullet) {
-                bullet.fire(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.y);
-                <span style="color:#00f">this</span>.bulletTime = <span style="color:#00f">this</span>.time.now + 100;
-            }
-        }
-    }
-
-    handleMeteors() {
-        <span style="color:#008000">// Check if it is time to launch a new meteor.
-</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.meteorTime) {
-            <span style="color:#008000">// Find first meteor that is currently not used
-</span><span style="color:#008000"></span>            <span style="color:#00f">const</span> meteor = <span style="color:#00f">this</span>.meteors.get() <span style="color:#00f">as</span> Meteor;
-            <span style="color:#00f">if</span> (meteor) {
-                meteor.fall();
-                <span style="color:#00f">this</span>.meteorTime = <span style="color:#00f">this</span>.time.now + 500 + 1000 * Math.random();
-            }
-        }
-    }
-}
-
-<span style="color:#00f">const</span> config = {
-    type: <span style="color:#2b91af">CANVAS</span>,
-    width: <span style="color:#2b91af">512</span>,
-    height: <span style="color:#2b91af">512</span>,
-    scene: [ShooterScene],
-    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
-    audio: { noAudio: <span style="color:#2b91af">true</span> }
-};
-
-<span style="color:#00f">new</span> Game(config);
-</code></pre></div>
-<p>Wechsle zurück zum Browser und kontrolliere, ob die Laser jetzt Meteoriten zerstören. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, Physics, Input } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Spaceship, Direction } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./spaceship&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Bullet } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./bullet&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Meteor } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./meteor&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Space shooter scene
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Learn more about Phaser scenes at 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> meteors: <span style="color:#2b91af">Physics.Arcade.Group</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> bullets: <span style="color:#2b91af">Physics.Arcade.Group</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> bulletTime = 0;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> meteorTime = 0;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceKey: <span style="color:#2b91af">Input.Keyboard.Key</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    preload() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Preload images so that we can use them in our game
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    create() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">//  Add a background
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Create bullets and meteors
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.bullets = <span style="color:#00f">this</span>.physics.add.group({
+</span></span><span style="display:flex;"><span>            classType: <span style="color:#2b91af">Bullet</span>,
+</span></span><span style="display:flex;"><span>            maxSize: <span style="color:#2b91af">10</span>,
+</span></span><span style="display:flex;"><span>            runChildUpdate: <span style="color:#2b91af">true</span>
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.meteors = <span style="color:#00f">this</span>.physics.add.group({
+</span></span><span style="display:flex;"><span>            classType: <span style="color:#2b91af">Meteor</span>,
+</span></span><span style="display:flex;"><span>            maxSize: <span style="color:#2b91af">20</span>,
+</span></span><span style="display:flex;"><span>            runChildUpdate: <span style="color:#2b91af">true</span>
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Add the sprite for our space ship.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Setup game input handling
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.input.keyboard.addCapture([<span style="color:#a31515">&#39; &#39;</span>]);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.spaceKey = <span style="color:#00f">this</span>.input.keyboard.addKey(Input.Keyboard.KeyCodes.SPACE);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.collider(<span style="color:#00f">this</span>.bullets, <span style="color:#00f">this</span>.meteors, (bullet: <span style="color:#2b91af">Bullet</span>, meteor: <span style="color:#2b91af">Meteor</span>) =&gt; {
+</span></span><span style="display:flex;"><span>            meteor.kill();
+</span></span><span style="display:flex;"><span>            bullet.kill();
+</span></span><span style="display:flex;"><span>        }, <span style="color:#00f">null</span>, <span style="color:#00f">this</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    update(_, delta: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Move ship if cursor keys are pressed
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.spaceKey.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.fireBullet();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.handleMeteors();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    fireBullet() {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.bulletTime) {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000">// Find the first unused (=unfired) bullet
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">const</span> bullet = <span style="color:#00f">this</span>.bullets.<span style="color:#00f">get</span>() <span style="color:#00f">as</span> Bullet;
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (bullet) {
+</span></span><span style="display:flex;"><span>                bullet.fire(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.y);
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">this</span>.bulletTime = <span style="color:#00f">this</span>.time.now + 100;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    handleMeteors() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Check if it is time to launch a new meteor.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.meteorTime) {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000">// Find first meteor that is currently not used
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">const</span> meteor = <span style="color:#00f">this</span>.meteors.<span style="color:#00f">get</span>() <span style="color:#00f">as</span> Meteor;
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (meteor) {
+</span></span><span style="display:flex;"><span>                meteor.fall();
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">this</span>.meteorTime = <span style="color:#00f">this</span>.time.now + 500 + 1000 * Math.random();
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> config = {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">type</span>: CANVAS,
+</span></span><span style="display:flex;"><span>    width: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    height: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    scene: [ShooterScene],
+</span></span><span style="display:flex;"><span>    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
+</span></span><span style="display:flex;"><span>    audio: { noAudio: <span style="color:#2b91af">true</span> }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">new</span> Game(config);
+</span></span></code></pre></div><p>Wechsle zurück zum Browser und kontrolliere, ob die Laser jetzt Meteoriten zerstören. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
 <p><strong>Ideen für eigene Erweiterungen:</strong></p>
-
 <ol>
-<li><p><em>Schwierigkeitsstufe 1</em>: Wenn ein Laser einen Meteoriten trifft, soll er nicht verschwinden, sondern weiterfliegen. Damit kann man mehrere Meteoriten mit einem Schuss zerstören.</p></li>
-
-<li><p><em>Schwierigkeitsstufe 2</em>: Verändere die Größe der Meteoriten zufällig. Versuche, aus <a href="https://phaser.io/examples/v3/view/transform/scalexy" target="_blank">diesem Beispiel</a> herauszufinden, wie das geht.</p></li>
+<li>
+<p><em>Schwierigkeitsstufe 1</em>: Wenn ein Laser einen Meteoriten trifft, soll er nicht verschwinden, sondern weiterfliegen. Damit kann man mehrere Meteoriten mit einem Schuss zerstören.</p>
+</li>
+<li>
+<p><em>Schwierigkeitsstufe 2</em>: Verändere die Größe der Meteoriten zufällig. Versuche, aus <a href="https://phaser.io/examples/v3/view/transform/scalexy" target="_blank">diesem Beispiel</a> herauszufinden, wie das geht.</p>
+</li>
 </ol>
-
 <h2 id="game-over">Game Over</h2>
-
 <p>Führe <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/0dc23d40bf5cacc5e571ae4c1e2728280b8e0f01" target="_blank">diese Änderungen</a> an <em>src/index.ts</em> durch. Danach sollte die Datei so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, Physics, Input } from <span style="color:#a31515">&#39;phaser&#39;</span>;
-<span style="color:#00f">import</span> { Spaceship, Direction } from <span style="color:#a31515">&#39;./spaceship&#39;</span>;
-<span style="color:#00f">import</span> { Bullet } from <span style="color:#a31515">&#39;./bullet&#39;</span>;
-<span style="color:#00f">import</span> { Meteor } from <span style="color:#a31515">&#39;./meteor&#39;</span>;
-
-<span style="color:#008000">/**
-</span><span style="color:#008000"> * Space shooter scene
-</span><span style="color:#008000"> * 
-</span><span style="color:#008000"> * Learn more about Phaser scenes at 
-</span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
-</span><span style="color:#008000"> */</span>
-<span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
-    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
-    <span style="color:#00f">private</span> meteors: <span style="color:#2b91af">Physics.Arcade.Group</span>;
-    <span style="color:#00f">private</span> bullets: <span style="color:#2b91af">Physics.Arcade.Group</span>;
-
-    <span style="color:#00f">private</span> bulletTime = 0;
-    <span style="color:#00f">private</span> meteorTime = 0;
-
-    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
-    <span style="color:#00f">private</span> spaceKey: <span style="color:#2b91af">Input.Keyboard.Key</span>;
-    <span style="color:#00f">private</span> isGameOver = <span style="color:#00f">false</span>;
-
-    preload() {
-        <span style="color:#008000">// Preload images so that we can use them in our game
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
-        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
-    }
-
-    create() {
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.isGameOver) {
-            <span style="color:#00f">return</span>;
-        }
-        
-        <span style="color:#008000">//  Add a background
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
-
-        <span style="color:#008000">// Create bullets and meteors
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.bullets = <span style="color:#00f">this</span>.physics.add.group({
-            classType: <span style="color:#2b91af">Bullet</span>,
-            maxSize: <span style="color:#2b91af">10</span>,
-            runChildUpdate: <span style="color:#2b91af">true</span>
-        });
-        <span style="color:#00f">this</span>.meteors = <span style="color:#00f">this</span>.physics.add.group({
-            classType: <span style="color:#2b91af">Meteor</span>,
-            maxSize: <span style="color:#2b91af">20</span>,
-            runChildUpdate: <span style="color:#2b91af">true</span>
-        });
-
-        <span style="color:#008000">// Add the sprite for our space ship.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
-        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
-
-        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
-</span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
-
-        <span style="color:#008000">// Setup game input handling
-</span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
-        <span style="color:#00f">this</span>.input.keyboard.addCapture([<span style="color:#a31515">&#39; &#39;</span>]);
-        <span style="color:#00f">this</span>.spaceKey = <span style="color:#00f">this</span>.input.keyboard.addKey(Input.Keyboard.KeyCodes.SPACE);
-
-        <span style="color:#00f">this</span>.physics.add.collider(<span style="color:#00f">this</span>.bullets, <span style="color:#00f">this</span>.meteors, (bullet: <span style="color:#2b91af">Bullet</span>, meteor: <span style="color:#2b91af">Meteor</span>) =&gt; {
-            meteor.kill();
-            bullet.kill();
-        }, <span style="color:#00f">null</span>, <span style="color:#00f">this</span>);
-        <span style="color:#00f">this</span>.physics.add.collider(<span style="color:#00f">this</span>.spaceShip, <span style="color:#00f">this</span>.meteors, <span style="color:#00f">this</span>.gameOver, <span style="color:#00f">null</span>, <span style="color:#00f">this</span>);
-    }
-
-    update(_, delta: <span style="color:#2b91af">number</span>) {
-        <span style="color:#008000">// Move ship if cursor keys are pressed
-</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
-        }
-        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
-            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
-        }
-
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.spaceKey.isDown) {
-            <span style="color:#00f">this</span>.fireBullet();
-        }
-
-        <span style="color:#00f">this</span>.handleMeteors();
-    }
-
-    fireBullet() {
-        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.bulletTime) {
-            <span style="color:#008000">// Find the first unused (=unfired) bullet
-</span><span style="color:#008000"></span>            <span style="color:#00f">const</span> bullet = <span style="color:#00f">this</span>.bullets.get() <span style="color:#00f">as</span> Bullet;
-            <span style="color:#00f">if</span> (bullet) {
-                bullet.fire(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.y);
-                <span style="color:#00f">this</span>.bulletTime = <span style="color:#00f">this</span>.time.now + 100;
-            }
-        }
-    }
-
-    handleMeteors() {
-        <span style="color:#008000">// Check if it is time to launch a new meteor.
-</span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.meteorTime) {
-            <span style="color:#008000">// Find first meteor that is currently not used
-</span><span style="color:#008000"></span>            <span style="color:#00f">const</span> meteor = <span style="color:#00f">this</span>.meteors.get() <span style="color:#00f">as</span> Meteor;
-            <span style="color:#00f">if</span> (meteor) {
-                meteor.fall();
-                <span style="color:#00f">this</span>.meteorTime = <span style="color:#00f">this</span>.time.now + 500 + 1000 * Math.random();
-            }
-        }
-    }
-
-    gameOver() {
-        <span style="color:#00f">this</span>.isGameOver = <span style="color:#00f">true</span>;
-
-        <span style="color:#00f">this</span>.bullets.getChildren().forEach((b: <span style="color:#2b91af">Bullet</span>) =&gt; b.kill());
-        <span style="color:#00f">this</span>.meteors.getChildren().forEach((m: <span style="color:#2b91af">Meteor</span>) =&gt; m.kill());
-        <span style="color:#00f">this</span>.spaceShip.kill();
-
-        <span style="color:#008000">// Display &#34;game over&#34; text
-</span><span style="color:#008000"></span>        <span style="color:#00f">const</span> text = <span style="color:#00f">this</span>.add.text(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height / 2, <span style="color:#a31515">&#34;Game Over :-(&#34;</span>, 
-            { font: <span style="color:#a31515">&#34;65px Arial&#34;</span>, fill: <span style="color:#a31515">&#34;#ff0044&#34;</span>, align: <span style="color:#a31515">&#34;center&#34;</span> });
-        text.setOrigin(0.5, 0.5);
-    }
-}
-
-<span style="color:#00f">const</span> config = {
-    type: <span style="color:#2b91af">CANVAS</span>,
-    width: <span style="color:#2b91af">512</span>,
-    height: <span style="color:#2b91af">512</span>,
-    scene: [ShooterScene],
-    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
-    audio: { noAudio: <span style="color:#2b91af">true</span> }
-};
-
-<span style="color:#00f">new</span> Game(config);
-</code></pre></div>
-<p>Wechsle zurück zum Browser und kontrolliere, ob <em>Game Over</em> erscheint, wenn das Spaceship von einem Meteoriten getroffen wird. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Scene, Types, CANVAS, Game, Physics, Input } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;phaser&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Spaceship, Direction } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./spaceship&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Bullet } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./bullet&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Meteor } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./meteor&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Space shooter scene
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * Learn more about Phaser scenes at 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> * https://photonstorm.github.io/phaser3-docs/Phaser.Scenes.Systems.html.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">class</span> ShooterScene <span style="color:#00f">extends</span> Scene {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceShip: <span style="color:#2b91af">Spaceship</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> meteors: <span style="color:#2b91af">Physics.Arcade.Group</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> bullets: <span style="color:#2b91af">Physics.Arcade.Group</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> bulletTime = 0;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> meteorTime = 0;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> cursors: <span style="color:#2b91af">Types.Input.Keyboard.CursorKeys</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> spaceKey: <span style="color:#2b91af">Input.Keyboard.Key</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> isGameOver = <span style="color:#00f">false</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    preload() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Preload images so that we can use them in our game
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;space&#39;</span>, <span style="color:#a31515">&#39;images/deep-space.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;bullet&#39;</span>, <span style="color:#a31515">&#39;images/scratch-laser.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;ship&#39;</span>, <span style="color:#a31515">&#39;images/scratch-spaceship.png&#39;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.load.image(<span style="color:#a31515">&#39;meteor&#39;</span>, <span style="color:#a31515">&#39;images/scratch-meteor.png&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    create() {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.isGameOver) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">return</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">//  Add a background
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.add.tileSprite(0, 0, <span style="color:#00f">this</span>.game.canvas.width, <span style="color:#00f">this</span>.game.canvas.height, <span style="color:#a31515">&#39;space&#39;</span>).setOrigin(0, 0);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Create bullets and meteors
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.bullets = <span style="color:#00f">this</span>.physics.add.group({
+</span></span><span style="display:flex;"><span>            classType: <span style="color:#2b91af">Bullet</span>,
+</span></span><span style="display:flex;"><span>            maxSize: <span style="color:#2b91af">10</span>,
+</span></span><span style="display:flex;"><span>            runChildUpdate: <span style="color:#2b91af">true</span>
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.meteors = <span style="color:#00f">this</span>.physics.add.group({
+</span></span><span style="display:flex;"><span>            classType: <span style="color:#2b91af">Meteor</span>,
+</span></span><span style="display:flex;"><span>            maxSize: <span style="color:#2b91af">20</span>,
+</span></span><span style="display:flex;"><span>            runChildUpdate: <span style="color:#2b91af">true</span>
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Add the sprite for our space ship.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip = <span style="color:#00f">new</span> Spaceship(<span style="color:#00f">this</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.existing(<span style="color:#00f">this</span>.children.add(<span style="color:#00f">this</span>.spaceShip));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Position the spaceship horizontally in the middle of the screen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// and vertically at the bottom of the screen.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.spaceShip.setPosition(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height * 0.9);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Setup game input handling
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">this</span>.cursors = <span style="color:#00f">this</span>.input.keyboard.createCursorKeys();
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.input.keyboard.addCapture([<span style="color:#a31515">&#39; &#39;</span>]);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.spaceKey = <span style="color:#00f">this</span>.input.keyboard.addKey(Input.Keyboard.KeyCodes.SPACE);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.collider(<span style="color:#00f">this</span>.bullets, <span style="color:#00f">this</span>.meteors, (bullet: <span style="color:#2b91af">Bullet</span>, meteor: <span style="color:#2b91af">Meteor</span>) =&gt; {
+</span></span><span style="display:flex;"><span>            meteor.kill();
+</span></span><span style="display:flex;"><span>            bullet.kill();
+</span></span><span style="display:flex;"><span>        }, <span style="color:#00f">null</span>, <span style="color:#00f">this</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.physics.add.collider(<span style="color:#00f">this</span>.spaceShip, <span style="color:#00f">this</span>.meteors, <span style="color:#00f">this</span>.gameOver, <span style="color:#00f">null</span>, <span style="color:#00f">this</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    update(_, delta: <span style="color:#2b91af">number</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Move ship if cursor keys are pressed
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.left.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Left);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.cursors.right.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.spaceShip.move(delta, Direction.Right);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.spaceKey.isDown) {
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">this</span>.fireBullet();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.handleMeteors();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    fireBullet() {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.bulletTime) {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000">// Find the first unused (=unfired) bullet
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">const</span> bullet = <span style="color:#00f">this</span>.bullets.<span style="color:#00f">get</span>() <span style="color:#00f">as</span> Bullet;
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (bullet) {
+</span></span><span style="display:flex;"><span>                bullet.fire(<span style="color:#00f">this</span>.spaceShip.x, <span style="color:#00f">this</span>.spaceShip.y);
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">this</span>.bulletTime = <span style="color:#00f">this</span>.time.now + 100;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    handleMeteors() {
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Check if it is time to launch a new meteor.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.time.now &gt; <span style="color:#00f">this</span>.meteorTime) {
+</span></span><span style="display:flex;"><span>            <span style="color:#008000">// Find first meteor that is currently not used
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">const</span> meteor = <span style="color:#00f">this</span>.meteors.<span style="color:#00f">get</span>() <span style="color:#00f">as</span> Meteor;
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (meteor) {
+</span></span><span style="display:flex;"><span>                meteor.fall();
+</span></span><span style="display:flex;"><span>                <span style="color:#00f">this</span>.meteorTime = <span style="color:#00f">this</span>.time.now + 500 + 1000 * Math.random();
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    gameOver() {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.isGameOver = <span style="color:#00f">true</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.bullets.getChildren().forEach((b: <span style="color:#2b91af">Bullet</span>) =&gt; b.kill());
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.meteors.getChildren().forEach((m: <span style="color:#2b91af">Meteor</span>) =&gt; m.kill());
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.spaceShip.kill();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000">// Display &#34;game over&#34; text
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">const</span> text = <span style="color:#00f">this</span>.add.text(<span style="color:#00f">this</span>.game.canvas.width / 2, <span style="color:#00f">this</span>.game.canvas.height / 2, <span style="color:#a31515">&#34;Game Over :-(&#34;</span>, 
+</span></span><span style="display:flex;"><span>            { font: <span style="color:#a31515">&#34;65px Arial&#34;</span>, fill: <span style="color:#a31515">&#34;#ff0044&#34;</span>, align: <span style="color:#a31515">&#34;center&#34;</span> });
+</span></span><span style="display:flex;"><span>        text.setOrigin(0.5, 0.5);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> config = {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">type</span>: CANVAS,
+</span></span><span style="display:flex;"><span>    width: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    height: <span style="color:#2b91af">512</span>,
+</span></span><span style="display:flex;"><span>    scene: [ShooterScene],
+</span></span><span style="display:flex;"><span>    physics: { <span style="color:#00f">default</span>: <span style="color:#a31515">&#39;arcade&#39;</span> },
+</span></span><span style="display:flex;"><span>    audio: { noAudio: <span style="color:#2b91af">true</span> }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">new</span> Game(config);
+</span></span></code></pre></div><p>Wechsle zurück zum Browser und kontrolliere, ob <em>Game Over</em> erscheint, wenn das Spaceship von einem Meteoriten getroffen wird. Lies den Code genau durch und versuche ihn zu verstehen. Experimentiere ruhig ein wenig und schau, was deine Codeänderungen für Auswirkungen haben.</p>
 <p><strong>Ideen für eigene Erweiterungen:</strong></p>
-
 <ol>
-<li><p><em>Schwierigkeitsstufe 1</em>: Zähle mit, wie viele Meteoriten schon getroffen wurden und zeige am <em>Game Over</em>-Bildschirm die erreichte Anzahl an. Für diese Zusatzaufgabe haben wir im Branch <em>09-points</em> eine Musterlösung ausgearbeitet. <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/70414ec4a6301ac98c59c12580699ec635533f95" target="_blank">Notendige Änderungen&hellip;</a></p></li>
-
-<li><p><em>Schwierigkeitsstufe 2</em>: Zeige den aktuellen Punktestand laufend am Spielfeldrand an.</p></li>
-
-<li><p><em>Schwierigkeitsstufe 3</em>: Erlaube durch Drücken einer Taste (z.B. X) as Neustarten des Spiels vom <em>Game Over</em> Bildschirm aus.</p></li>
+<li>
+<p><em>Schwierigkeitsstufe 1</em>: Zähle mit, wie viele Meteoriten schon getroffen wurden und zeige am <em>Game Over</em>-Bildschirm die erreichte Anzahl an. Für diese Zusatzaufgabe haben wir im Branch <em>09-points</em> eine Musterlösung ausgearbeitet. <a href="https://github.com/rstropek/ts-space-shooter-starter/commit/70414ec4a6301ac98c59c12580699ec635533f95" target="_blank">Notendige Änderungen&hellip;</a></p>
+</li>
+<li>
+<p><em>Schwierigkeitsstufe 2</em>: Zeige den aktuellen Punktestand laufend am Spielfeldrand an.</p>
+</li>
+<li>
+<p><em>Schwierigkeitsstufe 3</em>: Erlaube durch Drücken einer Taste (z.B. X) as Neustarten des Spiels vom <em>Game Over</em> Bildschirm aus.</p>
+</li>
 </ol>
-
-<h2 id="spielen">Spielen :-)</h2>
-
+<h2 id="spielen--">Spielen :-)</h2>
 <p><strong>Viel Spaß beim Spielen!</strong></p>
  </div>
         </div>

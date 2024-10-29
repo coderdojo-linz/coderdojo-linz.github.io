@@ -4,25 +4,15 @@
     <title>Blazor on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/categories/blazor/</link>
     <description>Recent content in Blazor on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/categories/blazor/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/categories/blazor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tetris mit Blazor</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/blazor-tetris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/blazor-tetris/</guid>
-      <description>Tetris mit Blazor Kostenlose Voraussetzungen  Neueste Version von Visual Studio 2017 Community Edition mit ASP.NET and web development ASP.NET Core Blazor Language Services  Projekt anlegen  Visual Studio starten
- File / New / Project
- Neues ASP.NET Projekt anlegen: 
-    Blazor Projekttyp auswählen: 
-    Nach dem Anlegen des Projekt den Startmodus ändern: 
-    Probiere, das Programm mit F5 oder Debug / Start Debugging zu starten.</description>
+      <description>&lt;h1 id=&#34;tetris-mit-blazor&#34;&gt;Tetris mit Blazor&lt;/h1&gt;&#xA;&lt;h2 id=&#34;kostenlose-voraussetzungen&#34;&gt;Kostenlose Voraussetzungen&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Neueste Version von &lt;a href=&#34;https://visualstudio.microsoft.com/free-developer-offers/&#34; target=&#34;_blank&#34;&gt;Visual Studio 2017 Community Edition&lt;/a&gt; mit &lt;em&gt;ASP.NET and web development&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=aspnet.blazor&#34; target=&#34;_blank&#34;&gt;ASP.NET Core Blazor Language Services&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;projekt-anlegen&#34;&gt;Projekt anlegen&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Visual Studio starten&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;em&gt;File&lt;/em&gt; / &lt;em&gt;New&lt;/em&gt; / &lt;em&gt;Project&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Neues &lt;em&gt;ASP.NET&lt;/em&gt; Projekt anlegen:&lt;!-- raw HTML omitted --&gt;&#xA;&#xA;  &#xA;  &#xA;       &#xA;      &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &lt;div class=&#34;row&#34;&gt;&#xA;      &lt;div class=&#34;col&#34;&gt;&#xA;          &lt;p&gt;&lt;/p&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;      &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/blazor-tetris/img/new-project.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;      &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;em&gt;Blazor&lt;/em&gt; Projekttyp auswählen:&lt;!-- raw HTML omitted --&gt;&#xA;&#xA;  &#xA;  &#xA;       &#xA;      &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &lt;div class=&#34;row&#34;&gt;&#xA;      &lt;div class=&#34;col&#34;&gt;&#xA;          &lt;p&gt;&lt;/p&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;      &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/blazor-tetris/img/new-blazor-project.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;      &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Nach dem Anlegen des Projekt den Startmodus ändern:&lt;!-- raw HTML omitted --&gt;&#xA;&#xA;  &#xA;  &#xA;       &#xA;      &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &lt;div class=&#34;row&#34;&gt;&#xA;      &lt;div class=&#34;col&#34;&gt;&#xA;          &lt;p&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

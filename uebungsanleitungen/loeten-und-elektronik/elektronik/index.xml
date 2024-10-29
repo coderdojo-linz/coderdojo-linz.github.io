@@ -4,11 +4,8 @@
     <title>Elektronik on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/</link>
     <description>Recent content in Elektronik on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

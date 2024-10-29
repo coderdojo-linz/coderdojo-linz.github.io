@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Spaß mit Bezier-Kurven </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,51 +150,40 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#spaß-mit-bezier-kuven">Spaß mit Bezier-Kuven</a>
-<ul>
-<li><a href="#einleitung">Einleitung</a></li>
-<li><a href="#bezier-kurven-in-inkscape-zeichnen">Bezier-Kurven in Inkscape zeichnen</a>
-<ul>
-<li><a href="#inkscape">Inkscape</a></li>
-<li><a href="#eine-linie-in-inkscape-zeichnen">Eine Linie in Inkscape zeichnen</a></li>
-<li><a href="#aus-der-linie-eine-bezier-kurve-machen">Aus der Linie eine Bezier-Kurve machen</a></li>
-<li><a href="#was-inkscape-noch-alles-kann">Was Inkscape noch alles kann.</a></li>
-</ul></li>
-<li><a href="#was-sind-bezier-kurven">Was sind Bezier-Kurven?</a></li>
-<li><a href="#bezier-kurven-in-html-und-svg">Bezier-Kurven in HTML und SVG</a></li>
-<li><a href="#bezier-kuven-in-p5js">Bezier-Kuven in p5js</a>
-<ul>
-<li><a href="#quadratische-bezier-kurve">Quadratische Bezier-Kurve</a></li>
-<li><a href="#kubische-bezier-kurven">Kubische Bezier-Kurven</a></li>
-</ul></li>
-<li><a href="#weitere-übungen-für-fortgeschrittene-coder">Weitere Übungen für fortgeschrittene Coder</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#einleitung">Einleitung</a></li>
+    <li><a href="#bezier-kurven-in-inkscape-zeichnen">Bezier-Kurven in Inkscape zeichnen</a>
+      <ul>
+        <li><a href="#inkscape">Inkscape</a></li>
+        <li><a href="#eine-linie-in-inkscape-zeichnen">Eine Linie in Inkscape zeichnen</a></li>
+        <li><a href="#aus-der-linie-eine-bezier-kurve-machen">Aus der Linie eine Bezier-Kurve machen</a></li>
+        <li><a href="#was-inkscape-noch-alles-kann">Was Inkscape noch alles kann.</a></li>
+      </ul>
+    </li>
+    <li><a href="#was-sind-bezier-kurven">Was sind Bezier-Kurven?</a></li>
+    <li><a href="#bezier-kurven-in-html-und-svg">Bezier-Kurven in HTML und SVG</a></li>
+    <li><a href="#bezier-kuven-in-p5js">Bezier-Kuven in p5js</a>
+      <ul>
+        <li><a href="#quadratische-bezier-kurve">Quadratische Bezier-Kurve</a></li>
+        <li><a href="#kubische-bezier-kurven">Kubische Bezier-Kurven</a></li>
+      </ul>
+    </li>
+    <li><a href="#weitere-übungen-für-fortgeschrittene-coder">Weitere Übungen für fortgeschrittene Coder</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="spaß-mit-bezier-kuven">Spaß mit Bezier-Kuven</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="spaß-mit-bezier-kuven">Spaß mit Bezier-Kuven</h1>
 <h2 id="einleitung">Einleitung</h2>
-
 <p>Kaum jemand von euch wird schon einmal etwas von Bezier-Kurven gehört haben. Unsere Welt ist aber voll davon. Sie werden beim Design von physischen Dingen wie Autos genauso eingesetzt wie bei Computerspielen. Im folgenden Bild siehst du ein Beispiel. Wenn man sich die Form des Autos ansieht, entdeckt man eine Menge Kurven. Diese Kurven sind Bezier-Kurven.</p>
-
-<p><img src="img/car-with-bezier.png" alt="Auto mit Bezier-Kurven" /></p>
-
+<p><img src="img/car-with-bezier.png" alt="Auto mit Bezier-Kurven"></p>
 <p>Im Bild sind bei weitem nicht alle Bezier-Kurven hervorgehoben. Findest du noch weitere?</p>
-
 <h2 id="bezier-kurven-in-inkscape-zeichnen">Bezier-Kurven in Inkscape zeichnen</h2>
-
 <h3 id="inkscape">Inkscape</h3>
-
 <p>Am leichtesten versteht man Bezier-Kurven, wenn man mit ihnen experimentiert. Zu diesem Zweck installiere bitte das Open-Source Zeichenprogramm <a href="https://inkscape.org/de/" target="_blank">Inkscape</a>. Dieses Zeichenprogramm ist sehr beliebt bei Menschen, die im Bereich Grafikdesign und Softwareentwicklung arbeiten.</p>
-
 <h3 id="eine-linie-in-inkscape-zeichnen">Eine Linie in Inkscape zeichnen</h3>
-
 <ul>
 <li>
+
 
 
      
@@ -210,7 +199,6 @@
 <div class="row">
     <div class="col">
         <p><p>Starte Inkscape und wähle das <em>Pen/Bezier</em>-Werkzeug aus. Klicke jetzt im Zeichenbereich an die Stelle, an der die Linie beginnen soll. Bewege die Maus zu der Stelle, wo die Linie enden soll.</p>
-
 <p>Mach für unsere Übung eine möglichst waagrechte Linie. Klicke doppelt auf die Stelle des Linienende, um die Linie zu erstellen.</p>
 </p>
     </div>
@@ -218,9 +206,10 @@
     <img src="/uebungsanleitungen/programmieren/web/bezier/img/inkscape-pen.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
-</li>
 
+</li>
 <li>
+
 
 
      
@@ -241,15 +230,14 @@
     <img src="/uebungsanleitungen/programmieren/web/bezier/img/inkscape-line.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
+
 </li>
 </ul>
-
 <h3 id="aus-der-linie-eine-bezier-kurve-machen">Aus der Linie eine Bezier-Kurve machen</h3>
-
 <p>Die Linie ist nett, aber was ist, wenn wir eigentlich einen Hügel zeichnen möchten? Hier kommt die Bezier-Kurve ins Spiel:</p>
-
 <ul>
 <li>
+
 
 
      
@@ -270,9 +258,10 @@
     <img src="/uebungsanleitungen/programmieren/web/bezier/img/inkscape-path-tool.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
-</li>
 
+</li>
 <li>
+
 
 
      
@@ -293,9 +282,10 @@
     <img src="/uebungsanleitungen/programmieren/web/bezier/img/inkscape-make-bezier.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
-</li>
 
+</li>
 <li>
+
 
 
      
@@ -311,7 +301,6 @@
 <div class="row">
     <div class="col">
         <p><p>Das Besondere an einer Bezier-Kurve sind ihre <em>Kontrollpunkte</em>. Markiere mit dem <em>Pfad verändern</em>-Werkzeug einen Endpunkt deiner Kurve, dann werden die Kontrollpunkte sichtbar. Verändere sie und beobachte, wie sich die Kurve verändert. Die <em>Kontrollpunkte</em> &ldquo;ziehen&rdquo; an der ursprünglichen Linie und verzerren sie so, dass das Ergebnis eine Kurve wird.</p>
-
 <p>Unsere Bezier-Kurve besteht aus vier Punkten: Startpunkt, Endpunkt und zwei Kontrollpunkte. Man bezeichnet eine solche Bezier-Kurve als <em>kubische Bezier-Kurve</em> (in Englisch <em>Cubic Bezier Curve</em>).</p>
 </p>
     </div>
@@ -319,17 +308,13 @@
     <img src="/uebungsanleitungen/programmieren/web/bezier/img/inkscape-control-points.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
+
 </li>
 </ul>
-
 <h3 id="was-inkscape-noch-alles-kann">Was Inkscape noch alles kann.</h3>
-
 <p>Inkscape kann noch viel mehr wenn es um Linien, Linienzüge und Kurven geht. In dieser Übung wollen wir aber jetzt zum Programmieren übergehen und daher Inkscape verlassen. Wer mehr über Zeichnen in Inkscape lernen möchte, dem empfehle ich, nach kostenlosen Anleitungen auf YouTube zu suchen. Wenn ihr zum Beispiel nach <em>Inkscape Bezier Tool</em> sucht, werdet ihr viele Videos mit nützlichen Tipps finden.</p>
-
 <h2 id="was-sind-bezier-kurven">Was sind Bezier-Kurven?</h2>
-
 <p>Bezier-Kurven lassen sich mathematisch beschreiben und geometrisch veranschaulichen. Keine Angst, wir tauchen hier nicht tief in die Mathematik von Bezier-Kurven ein. Wer das möchte und schon gut Englisch spricht, dem empfehle ich das wunderschöne Video <a href="https://youtu.be/aVwxzDHniEw" target="_blank"><em>The Beauty of Bézier Curves</em></a>.</p>
-
 
 
 
@@ -346,7 +331,6 @@
 <div class="row">
     <div class="col">
         <p><p>Wenn ihr noch jünger seid und euch noch Grundlagen im Bereich Mathematik und Englisch fehlen, um das Video zu verstehen, dann könnt ihr euch einmal die Webseite <a href="https://www.geogebra.org/m/ek7RHvuc" target="_blank">https://www.geogebra.org/m/ek7RHvuc</a> ansehen.</p>
-
 <p>Verschiebt das in der Grafik markierte Dreieck. Seht ihr, wie sich die Bezier-Kurve durch die Bewegung von Kontrollpunkten verändert? Sieht spannend aus, nicht wahr?</p>
 </p>
     </div>
@@ -355,9 +339,7 @@
     </div>
 </div>
 
-
 <h2 id="bezier-kurven-in-html-und-svg">Bezier-Kurven in HTML und SVG</h2>
-
 
 
 
@@ -374,73 +356,66 @@
 <div class="row">
     <div class="col">
         <p><p>In HTML und SVG ist Unterstützung für Bezier-Kurven eingebaut. Das möchten wir jetzt ausprobieren.</p>
-
 <p>Öffne <a href="https://stackblitz.com/edit/svg-bezier-starter" target="_blank">https://stackblitz.com/edit/svg-bezier-starter</a> im Browser. Der HTML-Code ist unvollständig. Unten siehst du den fertigen Code und in der Grafik siehst du, wie das Endergebnis aussehen soll. Ergänze den Code entsprechend der Anleitung unten. Kopiere ihn nicht, sondern tippe ihn ein. So übst du tippen.</p>
-
 <p>Achte im Code auf die <code>&lt;path ...&gt;</code>-Elemente. Dort findest du die Befehle <code>H</code> für <em>horizontale Linie</em>, <code>Q</code> für <em>quadratische Bezier-Kurve</em> und <code>C</code> für <em>kubische Bezier-Kurve</em>. Experimente mit den Koordinaten und versuche zu verstehen, wo die Start-, End- und Kontrollpunkte im Code zu finden sind.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
-    &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> type=<span style="color:#a31515">&#34;text/css&#34;</span> href=<span style="color:#a31515">&#34;styles.css&#34;</span>&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Bezier Curves in HTML and SVG&lt;/h1&gt;
-
-    &lt;h2&gt;Line&lt;/h2&gt;
-    &lt;p&gt;
-      A line has two points.
-    &lt;/p&gt;
-    &lt;svg width=<span style="color:#a31515">&#34;510&#34;</span> height=<span style="color:#a31515">&#34;10&#34;</span>&gt;
-      &lt;path d=<span style="color:#a31515">&#34;M5 5 H505&#34;</span> /&gt;
-      &lt;circle cx=<span style="color:#a31515">&#34;5&#34;</span> cy=<span style="color:#a31515">&#34;5&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
-      &lt;circle cx=<span style="color:#a31515">&#34;505&#34;</span> cy=<span style="color:#a31515">&#34;5&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
-    &lt;/svg&gt;
-
-    &lt;h2&gt;Quadratic Bezier&lt;/h2&gt;
-    &lt;p&gt;
-      A quadratic Bezier curve has three points.
-    &lt;/p&gt;
-    &lt;svg width=<span style="color:#a31515">&#34;510&#34;</span> height=<span style="color:#a31515">&#34;210&#34;</span>&gt;
-      &lt;path d=<span style="color:#a31515">&#34;M5 205 Q 255 0, 505 205&#34;</span> /&gt;
-      &lt;circle cx=<span style="color:#a31515">&#34;5&#34;</span> cy=<span style="color:#a31515">&#34;205&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
-      &lt;circle cx=<span style="color:#a31515">&#34;505&#34;</span> cy=<span style="color:#a31515">&#34;205&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
-      &lt;circle cx=<span style="color:#a31515">&#34;255&#34;</span> cy=<span style="color:#a31515">&#34;5&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
-      &lt;line x1=<span style="color:#a31515">&#34;5&#34;</span> y1=<span style="color:#a31515">&#34;205&#34;</span> x2=<span style="color:#a31515">&#34;255&#34;</span> y2=<span style="color:#a31515">&#34;5&#34;</span> /&gt;
-      &lt;line x1=<span style="color:#a31515">&#34;505&#34;</span> y1=<span style="color:#a31515">&#34;205&#34;</span> x2=<span style="color:#a31515">&#34;255&#34;</span> y2=<span style="color:#a31515">&#34;5&#34;</span> /&gt;
-    &lt;/svg&gt;
-
-    &lt;h2&gt;Cubic Bezier&lt;/h2&gt;
-    &lt;p&gt;
-      A cubic Bezier curve has four points.
-    &lt;/p&gt;
-    &lt;svg width=<span style="color:#a31515">&#34;510&#34;</span> height=<span style="color:#a31515">&#34;415&#34;</span>&gt;
-      &lt;path d=<span style="color:#a31515">&#34;M5 205 C 255 0, 255 410, 505 205&#34;</span> /&gt;
-      &lt;circle cx=<span style="color:#a31515">&#34;5&#34;</span> cy=<span style="color:#a31515">&#34;205&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
-      &lt;circle cx=<span style="color:#a31515">&#34;505&#34;</span> cy=<span style="color:#a31515">&#34;205&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
-      &lt;circle cx=<span style="color:#a31515">&#34;255&#34;</span> cy=<span style="color:#a31515">&#34;5&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
-      &lt;circle cx=<span style="color:#a31515">&#34;255&#34;</span> cy=<span style="color:#a31515">&#34;410&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
-      &lt;line x1=<span style="color:#a31515">&#34;5&#34;</span> y1=<span style="color:#a31515">&#34;205&#34;</span> x2=<span style="color:#a31515">&#34;255&#34;</span> y2=<span style="color:#a31515">&#34;5&#34;</span> /&gt;
-      &lt;line x1=<span style="color:#a31515">&#34;505&#34;</span> y1=<span style="color:#a31515">&#34;205&#34;</span> x2=<span style="color:#a31515">&#34;255&#34;</span> y2=<span style="color:#a31515">&#34;410&#34;</span> /&gt;
-    &lt;/svg&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;html&gt;
+</span></span><span style="display:flex;"><span>  &lt;head&gt;
+</span></span><span style="display:flex;"><span>    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> type=<span style="color:#a31515">&#34;text/css&#34;</span> href=<span style="color:#a31515">&#34;styles.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/head&gt;
+</span></span><span style="display:flex;"><span>  &lt;body&gt;
+</span></span><span style="display:flex;"><span>    &lt;h1&gt;Bezier Curves in HTML and SVG&lt;/h1&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;h2&gt;Line&lt;/h2&gt;
+</span></span><span style="display:flex;"><span>    &lt;p&gt;
+</span></span><span style="display:flex;"><span>      A line has two points.
+</span></span><span style="display:flex;"><span>    &lt;/p&gt;
+</span></span><span style="display:flex;"><span>    &lt;svg width=<span style="color:#a31515">&#34;510&#34;</span> height=<span style="color:#a31515">&#34;10&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;path d=<span style="color:#a31515">&#34;M5 5 H505&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;circle cx=<span style="color:#a31515">&#34;5&#34;</span> cy=<span style="color:#a31515">&#34;5&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;circle cx=<span style="color:#a31515">&#34;505&#34;</span> cy=<span style="color:#a31515">&#34;5&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;/svg&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;h2&gt;Quadratic Bezier&lt;/h2&gt;
+</span></span><span style="display:flex;"><span>    &lt;p&gt;
+</span></span><span style="display:flex;"><span>      A quadratic Bezier curve has three points.
+</span></span><span style="display:flex;"><span>    &lt;/p&gt;
+</span></span><span style="display:flex;"><span>    &lt;svg width=<span style="color:#a31515">&#34;510&#34;</span> height=<span style="color:#a31515">&#34;210&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;path d=<span style="color:#a31515">&#34;M5 205 Q 255 0, 505 205&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;circle cx=<span style="color:#a31515">&#34;5&#34;</span> cy=<span style="color:#a31515">&#34;205&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;circle cx=<span style="color:#a31515">&#34;505&#34;</span> cy=<span style="color:#a31515">&#34;205&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;circle cx=<span style="color:#a31515">&#34;255&#34;</span> cy=<span style="color:#a31515">&#34;5&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;line x1=<span style="color:#a31515">&#34;5&#34;</span> y1=<span style="color:#a31515">&#34;205&#34;</span> x2=<span style="color:#a31515">&#34;255&#34;</span> y2=<span style="color:#a31515">&#34;5&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;line x1=<span style="color:#a31515">&#34;505&#34;</span> y1=<span style="color:#a31515">&#34;205&#34;</span> x2=<span style="color:#a31515">&#34;255&#34;</span> y2=<span style="color:#a31515">&#34;5&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;/svg&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;h2&gt;Cubic Bezier&lt;/h2&gt;
+</span></span><span style="display:flex;"><span>    &lt;p&gt;
+</span></span><span style="display:flex;"><span>      A cubic Bezier curve has four points.
+</span></span><span style="display:flex;"><span>    &lt;/p&gt;
+</span></span><span style="display:flex;"><span>    &lt;svg width=<span style="color:#a31515">&#34;510&#34;</span> height=<span style="color:#a31515">&#34;415&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;path d=<span style="color:#a31515">&#34;M5 205 C 255 0, 255 410, 505 205&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;circle cx=<span style="color:#a31515">&#34;5&#34;</span> cy=<span style="color:#a31515">&#34;205&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;circle cx=<span style="color:#a31515">&#34;505&#34;</span> cy=<span style="color:#a31515">&#34;205&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;circle cx=<span style="color:#a31515">&#34;255&#34;</span> cy=<span style="color:#a31515">&#34;5&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;circle cx=<span style="color:#a31515">&#34;255&#34;</span> cy=<span style="color:#a31515">&#34;410&#34;</span> r=<span style="color:#a31515">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;line x1=<span style="color:#a31515">&#34;5&#34;</span> y1=<span style="color:#a31515">&#34;205&#34;</span> x2=<span style="color:#a31515">&#34;255&#34;</span> y2=<span style="color:#a31515">&#34;5&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;line x1=<span style="color:#a31515">&#34;505&#34;</span> y1=<span style="color:#a31515">&#34;205&#34;</span> x2=<span style="color:#a31515">&#34;255&#34;</span> y2=<span style="color:#a31515">&#34;410&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;/svg&gt;
+</span></span><span style="display:flex;"><span>  &lt;/body&gt;
+</span></span><span style="display:flex;"><span>&lt;/html&gt;
+</span></span></code></pre></div></p>
     </div>
     <div class="col-12 col-md-5">
     <img src="/uebungsanleitungen/programmieren/web/bezier/img/bezier-html-svg.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
 
-
 <p>Du kannst dir die fertige Lösung unter <a href="https://stackblitz.com/edit/svg-bezier" target="_blank">https://stackblitz.com/edit/svg-bezier</a> ansehen.</p>
-
 <p>Suchst du eine Herausforderung? Versuche ein Herz mit Bezier-Kurven mit SVG zu zeichnen.</p>
-
 <p>Falls du schon etwas älter bist, Interesse an Mathematik hast und schon gut Englisch verstehst, schau dir die Webseite <a href="https://www.drububu.com/animation/beziercurves/index.html" target="_blank">https://www.drububu.com/animation/beziercurves/index.html</a> an. Dort wird erklärt, wie man Bezier-Kurven selbst berechnen und mit SVG zeichnen kann.</p>
-
 <h2 id="bezier-kuven-in-p5js">Bezier-Kuven in p5js</h2>
-
 <h3 id="quadratische-bezier-kurve">Quadratische Bezier-Kurve</h3>
-
 
 
 
@@ -457,80 +432,74 @@
 <div class="row">
     <div class="col">
         <p><p>Auch die Spieleplattform <a href="https://p5js.org/" target="_blank">p5js</a> beherrscht Bezier-Kurven. Das möchten wir in der folgenden Übung probieren.</p>
-
 <p>Öffne <a href="https://stackblitz.com/edit/p5-quadratic-bezier-starter" target="_blank">https://stackblitz.com/edit/p5-quadratic-bezier-starter</a> im Browser. Der TypeScript-Code ist unvollständig. Unten siehst du den fertigen Code und in der Grafik siehst du, wie das Endergebnis aussehen soll. Ergänze den Code entsprechend der Anleitung unten. Kopiere ihn nicht, sondern tippe ihn ein. So übst du tippen.</p>
-
 <p>Achte auf die Kommentare im Code. Falls du die Übung ohne CoderDojo-Mentorin machst, folgende den Anleitungen in den Kommentaren. In einem Workshop mit Mentor-Unterstützung werden wir den Code genau durchsprechen.</p>
-
 <p>Erkennst du, um welche Art von Bezier-Kurve es sich handelt? Es ist eine quadratische Bezier-Kurve, weil es drei Punkte gibt: Startpunkt, Endpunkt und Kontrollpunkt. Der Kontrollpunkt wird mit der Maus bewegt.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#00f">import</span> <span style="color:#a31515">&#39;./style.css&#39;</span>;
-<span style="color:#00f">import</span> p5 = require(<span style="color:#a31515">&#39;p5&#39;</span>);
-
-<span style="color:#00f">function</span> setup(p: <span style="color:#2b91af">p5</span>) {
-  p.createCanvas(510, 500);
-}
-
-<span style="color:#00f">function</span> draw(p: <span style="color:#2b91af">p5</span>) {
-  p.background(<span style="color:#a31515">&#39;white&#39;</span>);
-  p.noFill();
-
-  <span style="color:#008000">// Startpunkt
-</span><span style="color:#008000"></span>  <span style="color:#00f">const</span> startVec = p.createVector(5, 205);
-  <span style="color:#008000">// Endpunkt
-</span><span style="color:#008000"></span>  <span style="color:#00f">const</span> endVec = p.createVector(505, 205);
-  <span style="color:#008000">// Kontrollpunkt (wird durch Maus gesteuert)
-</span><span style="color:#008000"></span>  <span style="color:#00f">const</span> mouseVec = p.createVector(p.mouseX, p.mouseY);
-  
-  p.colorMode(p.HSB, 1);
-  p.strokeWeight(1);
-  <span style="color:#008000">// Experimentiere mit diesem Wert+ 
-</span><span style="color:#008000"></span>  <span style="color:#008000">// Probiere erst 0.5, dann 0.25, |
-</span><span style="color:#008000"></span>  <span style="color:#008000">// dann 0.125, etc. Erkennst du, |
-</span><span style="color:#008000"></span>  <span style="color:#008000">// was passiert?                 |
-</span><span style="color:#008000"></span>  <span style="color:#008000">//                               V
-</span><span style="color:#008000"></span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt;= 1.001; i += 0.05) {
-    p.stroke(i, 255, 255);
-
-    <span style="color:#008000">// Teile den Vector vom Startpunkt zum Kontrollpunkt
-</span><span style="color:#008000"></span>    <span style="color:#00f">let</span> v1: <span style="color:#2b91af">p5.Vector</span> = &lt;any&gt;p5.Vector.lerp(startVec, mouseVec, i);
-    p.circle(v1.x, v1.y, 3);
-
-    <span style="color:#008000">// Teile den Vector vom Kontrollpunkt zum Endpunkt
-</span><span style="color:#008000"></span>    <span style="color:#00f">let</span> v2: <span style="color:#2b91af">p5.Vector</span> = &lt;any&gt;p5.Vector.lerp(mouseVec, endVec, i);
-    p.circle(v2.x, v2.y, 3);
-
-    <span style="color:#008000">// Verbinde die Ergebnisse der vorherigen Teilungen
-</span><span style="color:#008000"></span>    p.line(v1.x, v1.y, v2.x, v2.y);
-  }
-
-  <span style="color:#008000">// Mit dem Code oben haben wir selbst eine quadratische Bezier-Kurve
-</span><span style="color:#008000"></span>  <span style="color:#008000">// hergeleitet. p5js kann sie aber auch direkt zeichnen. Dafür verwenden
-</span><span style="color:#008000"></span>  <span style="color:#008000">// wir folgenden Code:
-</span><span style="color:#008000"></span>  p.stroke(<span style="color:#a31515">&#39;fuchsia&#39;</span>);
-  p.strokeWeight(5);
-  p.beginShape();
-  p.vertex(startVec.x, startVec.y);
-  p.quadraticVertex(mouseVec.x, mouseVec.y, endVec.x, endVec.y);
-  p.endShape();
-}
-
-<span style="color:#00f">const</span> p = <span style="color:#00f">new</span> p5((p: <span style="color:#2b91af">p5</span>) =&gt; {
-  p.setup = () =&gt; setup(p);
-  p.draw = () =&gt; draw(p);
-  <span style="color:#00f">return</span> p;
-});
-</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#00f">import</span> <span style="color:#a31515">&#39;./style.css&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> p5 = <span style="color:#00f">require</span>(<span style="color:#a31515">&#39;p5&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">function</span> setup(p: <span style="color:#2b91af">p5</span>) {
+</span></span><span style="display:flex;"><span>  p.createCanvas(510, 500);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">function</span> draw(p: <span style="color:#2b91af">p5</span>) {
+</span></span><span style="display:flex;"><span>  p.background(<span style="color:#a31515">&#39;white&#39;</span>);
+</span></span><span style="display:flex;"><span>  p.noFill();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Startpunkt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">const</span> startVec = p.createVector(5, 205);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Endpunkt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">const</span> endVec = p.createVector(505, 205);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Kontrollpunkt (wird durch Maus gesteuert)
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">const</span> mouseVec = p.createVector(p.mouseX, p.mouseY);
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  p.colorMode(p.HSB, 1);
+</span></span><span style="display:flex;"><span>  p.strokeWeight(1);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Experimentiere mit diesem Wert+ 
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">// Probiere erst 0.5, dann 0.25, |
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">// dann 0.125, etc. Erkennst du, |
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">// was passiert?                 |
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">//                               V
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt;= 1.001; i += 0.05) {
+</span></span><span style="display:flex;"><span>    p.stroke(i, 255, 255);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">// Teile den Vector vom Startpunkt zum Kontrollpunkt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">let</span> v1: <span style="color:#2b91af">p5.Vector</span> = &lt;any&gt;p5.Vector.lerp(startVec, mouseVec, i);
+</span></span><span style="display:flex;"><span>    p.circle(v1.x, v1.y, 3);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">// Teile den Vector vom Kontrollpunkt zum Endpunkt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">let</span> v2: <span style="color:#2b91af">p5.Vector</span> = &lt;any&gt;p5.Vector.lerp(mouseVec, endVec, i);
+</span></span><span style="display:flex;"><span>    p.circle(v2.x, v2.y, 3);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">// Verbinde die Ergebnisse der vorherigen Teilungen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    p.line(v1.x, v1.y, v2.x, v2.y);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Mit dem Code oben haben wir selbst eine quadratische Bezier-Kurve
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">// hergeleitet. p5js kann sie aber auch direkt zeichnen. Dafür verwenden
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">// wir folgenden Code:
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  p.stroke(<span style="color:#a31515">&#39;fuchsia&#39;</span>);
+</span></span><span style="display:flex;"><span>  p.strokeWeight(5);
+</span></span><span style="display:flex;"><span>  p.beginShape();
+</span></span><span style="display:flex;"><span>  p.vertex(startVec.x, startVec.y);
+</span></span><span style="display:flex;"><span>  p.quadraticVertex(mouseVec.x, mouseVec.y, endVec.x, endVec.y);
+</span></span><span style="display:flex;"><span>  p.endShape();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> p = <span style="color:#00f">new</span> p5((p: <span style="color:#2b91af">p5</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  p.setup = () =&gt; setup(p);
+</span></span><span style="display:flex;"><span>  p.draw = () =&gt; draw(p);
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">return</span> p;
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div></p>
     </div>
     <div class="col-12 col-md-5">
     <img src="/uebungsanleitungen/programmieren/web/bezier/img/qudratic-bezier-p5js.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
 
-
 <p>Du kannst dir die fertige Lösung unter <a href="https://stackblitz.com/edit/p5-quadratic-bezier" target="_blank">https://stackblitz.com/edit/p5-quadratic-bezier</a> ansehen.</p>
-
 <h3 id="kubische-bezier-kurven">Kubische Bezier-Kurven</h3>
-
 
 
 
@@ -547,67 +516,66 @@
 <div class="row">
     <div class="col">
         <p><p>Jetzt gehen wir den nächsten Schritt und probieren eine kubische Bezier-Kurve in p5js.</p>
-
 <p>Öffne <a href="https://stackblitz.com/edit/p5-bezier-starter" target="_blank">https://stackblitz.com/edit/p5-bezier-starter</a> im Browser. Der TypeScript-Code ist unvollständig. Unten siehst du den fertigen Code und in der Grafik siehst du, wie das Endergebnis aussehen soll. Die Bezier-Kurve ändert sich je nach Mausposition. Ergänze den Code entsprechend der Anleitung unten. Kopiere ihn nicht, sondern tippe ihn ein. So übst du tippen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#00f">import</span> <span style="color:#a31515">&#39;./style.css&#39;</span>;
-<span style="color:#00f">import</span> p5 = require(<span style="color:#a31515">&#39;p5&#39;</span>);
-
-<span style="color:#00f">function</span> setup(p: <span style="color:#2b91af">p5</span>) {
-  p.createCanvas(510, 500);
-}
-
-<span style="color:#00f">function</span> draw(p: <span style="color:#2b91af">p5</span>) {
-  p.background(<span style="color:#a31515">&#39;white&#39;</span>);
-
-  p.noFill();
-
-  <span style="color:#008000">// Bezier-Kurve zeichnen
-</span><span style="color:#008000"></span>  p.stroke(<span style="color:#a31515">&#39;red&#39;</span>);
-  p.strokeWeight(5);
-  p.bezier(
-    <span style="color:#008000">// Startpunkt
-</span><span style="color:#008000"></span>    5, 205,
-    <span style="color:#008000">// Kontrollpunkt 1
-</span><span style="color:#008000"></span>    p.mouseX, 205 - Math.abs(p.mouseY - 205),
-    <span style="color:#008000">// Kontrollpunkt 2
-</span><span style="color:#008000"></span>    p.mouseX, 205 + Math.abs(p.mouseY - 205),
-    <span style="color:#008000">// Endpunkt
-</span><span style="color:#008000"></span>    505, 205);
-
-  <span style="color:#008000">// Kontrollpunkte anzeigen, um genauer zu verstehen,
-</span><span style="color:#008000"></span>  <span style="color:#008000">// wie die Bezier-Kurve entsteht.
-</span><span style="color:#008000"></span>  p.stroke(<span style="color:#a31515">&#39;blue&#39;</span>);
-  p.circle(5, 205, 4);
-  p.circle(505, 205, 4);
-  p.circle(p.mouseX, 205 - Math.abs(p.mouseY - 205), 4);
-  p.circle(p.mouseX, 205 + Math.abs(p.mouseY - 205), 4);
-
-  p.strokeWeight(1);
-  p.line(5, 205, p.mouseX, 205 - Math.abs(p.mouseY - 205))
-  p.line(505, 205, p.mouseX, 205 + Math.abs(p.mouseY - 205))
-}
-
-<span style="color:#00f">const</span> p = <span style="color:#00f">new</span> p5((p: <span style="color:#2b91af">p5</span>) =&gt; {
-  p.setup = () =&gt; setup(p);
-  p.draw = () =&gt; draw(p);
-  <span style="color:#00f">return</span> p;
-});
-</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#00f">import</span> <span style="color:#a31515">&#39;./style.css&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> p5 = <span style="color:#00f">require</span>(<span style="color:#a31515">&#39;p5&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">function</span> setup(p: <span style="color:#2b91af">p5</span>) {
+</span></span><span style="display:flex;"><span>  p.createCanvas(510, 500);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">function</span> draw(p: <span style="color:#2b91af">p5</span>) {
+</span></span><span style="display:flex;"><span>  p.background(<span style="color:#a31515">&#39;white&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  p.noFill();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Bezier-Kurve zeichnen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  p.stroke(<span style="color:#a31515">&#39;red&#39;</span>);
+</span></span><span style="display:flex;"><span>  p.strokeWeight(5);
+</span></span><span style="display:flex;"><span>  p.bezier(
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">// Startpunkt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    5, 205,
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">// Kontrollpunkt 1
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    p.mouseX, 205 - Math.abs(p.mouseY - 205),
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">// Kontrollpunkt 2
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    p.mouseX, 205 + Math.abs(p.mouseY - 205),
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">// Endpunkt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    505, 205);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Kontrollpunkte anzeigen, um genauer zu verstehen,
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">// wie die Bezier-Kurve entsteht.
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  p.stroke(<span style="color:#a31515">&#39;blue&#39;</span>);
+</span></span><span style="display:flex;"><span>  p.circle(5, 205, 4);
+</span></span><span style="display:flex;"><span>  p.circle(505, 205, 4);
+</span></span><span style="display:flex;"><span>  p.circle(p.mouseX, 205 - Math.abs(p.mouseY - 205), 4);
+</span></span><span style="display:flex;"><span>  p.circle(p.mouseX, 205 + Math.abs(p.mouseY - 205), 4);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  p.strokeWeight(1);
+</span></span><span style="display:flex;"><span>  p.line(5, 205, p.mouseX, 205 - Math.abs(p.mouseY - 205))
+</span></span><span style="display:flex;"><span>  p.line(505, 205, p.mouseX, 205 + Math.abs(p.mouseY - 205))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">const</span> p = <span style="color:#00f">new</span> p5((p: <span style="color:#2b91af">p5</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  p.setup = () =&gt; setup(p);
+</span></span><span style="display:flex;"><span>  p.draw = () =&gt; draw(p);
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">return</span> p;
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div></p>
     </div>
     <div class="col-12 col-md-5">
     <img src="/uebungsanleitungen/programmieren/web/bezier/img/p5js-bezier.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
     </div>
 </div>
 
-
 <p>Du kannst dir die fertige Lösung unter <a href="https://stackblitz.com/edit/p5-bezier" target="_blank">https://stackblitz.com/edit/p5-bezier</a> ansehen.</p>
-
 <h2 id="weitere-übungen-für-fortgeschrittene-coder">Weitere Übungen für fortgeschrittene Coder</h2>
-
 <ul>
-<li><p>In der Praxis muss man grafische Objekte z.B. in Spielen oft verschieben und rotieren. Das geht auch mit Bezier-Kurven. Schau dir das Codebeispiel <a href="https://stackblitz.com/edit/p5-quadratic-bezier-move-rotate" target="_blank">https://stackblitz.com/edit/p5-quadratic-bezier-move-rotate</a> an und experimentiere damit. Fallen dir ähnliche Beispiele ein, mit denen du schöne Muster mit Bezier-Kurven zeichnen kannst?</p></li>
-
-<li><p>Verstehst du Englisch schon recht gut und möchtest du mehr über Bezier-Kurven in p5js lernen? Ein super Video zu dem Thema findest du unter <a href="https://youtu.be/enNfb6p3j_g" target="_blank">https://youtu.be/enNfb6p3j_g</a>.</p></li>
+<li>
+<p>In der Praxis muss man grafische Objekte z.B. in Spielen oft verschieben und rotieren. Das geht auch mit Bezier-Kurven. Schau dir das Codebeispiel <a href="https://stackblitz.com/edit/p5-quadratic-bezier-move-rotate" target="_blank">https://stackblitz.com/edit/p5-quadratic-bezier-move-rotate</a> an und experimentiere damit. Fallen dir ähnliche Beispiele ein, mit denen du schöne Muster mit Bezier-Kurven zeichnen kannst?</p>
+</li>
+<li>
+<p>Verstehst du Englisch schon recht gut und möchtest du mehr über Bezier-Kurven in p5js lernen? Ein super Video zu dem Thema findest du unter <a href="https://youtu.be/enNfb6p3j_g" target="_blank">https://youtu.be/enNfb6p3j_g</a>.</p>
+</li>
 </ul>
  </div>
         </div>

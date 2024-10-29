@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> NetBeans Projektsetup </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -162,66 +162,48 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#netbeans-projektsetup">NetBeans Projektsetup</a>
-<ul>
-<li><a href="#projekt-erstellen">Projekt erstellen</a></li>
-<li><a href="#craftbukkit-bibliothek-hinzufügen">Craftbukkit Bibliothek hinzufügen</a></li>
-<li><a href="#package-hinzufügen">Package hinzufügen</a></li>
-<li><a href="#hauptklasse-hinzufügen">Hauptklasse hinzufügen</a></li>
-<li><a href="#plugin-yml-hinzufügen">plugin.yml hinzufügen</a></li>
-<li><a href="#resultat">Resultat</a></li>
-<li><a href="#projekt-bauen-und-deployen">Projekt bauen und deployen</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#projekt-erstellen">Projekt erstellen</a></li>
+    <li><a href="#craftbukkit-bibliothek-hinzufügen">Craftbukkit Bibliothek hinzufügen</a></li>
+    <li><a href="#package-hinzufügen">Package hinzufügen</a></li>
+    <li><a href="#hauptklasse-hinzufügen">Hauptklasse hinzufügen</a></li>
+    <li><a href="#pluginyml-hinzufügen">plugin.yml hinzufügen</a></li>
+    <li><a href="#resultat">Resultat</a></li>
+    <li><a href="#projekt-bauen-und-deployen">Projekt bauen und deployen</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="netbeans-projektsetup">NetBeans Projektsetup</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="netbeans-projektsetup">NetBeans Projektsetup</h1>
 <p>Kurzanleitung, wie das Projekt in NetBeans aufgesetzt werden muss, um für deine Minecraft Plugins vorbereitet zu sein.</p>
-
 <h2 id="projekt-erstellen">Projekt erstellen</h2>
-
 <ol>
 <li>NetBeans starten</li>
 <li>Menü <strong>File</strong> &gt; Menüpunkt <strong>New Project &hellip;</strong></li>
 <li>Auswahl: Categories <strong>Java</strong>, Projects <strong>Java Class Library</strong> &gt; Klick auf <strong>Next</strong></li>
 <li>Vergabe des Projektnamens unter <strong>Project Name</strong> (z.B. FirstPlugin) &gt; Klick auf <strong>Finish</strong></li>
 </ol>
-
 <h2 id="craftbukkit-bibliothek-hinzufügen">Craftbukkit Bibliothek hinzufügen</h2>
-
 <ol>
 <li>Auf der linken Seite (Tab <strong>Projects</strong>) auf <strong>Libraries</strong> mit der rechten Maustaste klicken &gt; <strong>Add JAR/Folder</strong> auswählen.</li>
 <li>Die Datei <strong>craftbukkit.jar</strong> auswählen &gt; Klick auf <strong>Open</strong></li>
 </ol>
-
 <h2 id="package-hinzufügen">Package hinzufügen</h2>
-
 <ol>
 <li>Auf der linken Seite (Tab <strong>Projects</strong>) auf <strong>Source Packages</strong> mit der rechten Maustaste klicken &gt; <strong>New</strong> auswählen &gt; <strong>Java Package</strong> auswählen.</li>
-<li>Als <strong>Package Name</strong> folgendes vergeben: io.coderdojo.<deinName>.minecraft.<pluginName> (wobei <deinName> sowie <pluginName> in Kleinschreibung ersetzt wird, z.B. durch &ldquo;lisi&rdquo; und &ldquo;firstplugin&rdquo;) &gt; Klick auf <strong>Finish</strong></li>
+<li>Als <strong>Package Name</strong> folgendes vergeben: io.coderdojo.<!-- raw HTML omitted -->.minecraft.<!-- raw HTML omitted --> (wobei <!-- raw HTML omitted --> sowie <!-- raw HTML omitted --> in Kleinschreibung ersetzt wird, z.B. durch &ldquo;lisi&rdquo; und &ldquo;firstplugin&rdquo;) &gt; Klick auf <strong>Finish</strong></li>
 </ol>
-
 <h2 id="hauptklasse-hinzufügen">Hauptklasse hinzufügen</h2>
-
 <ol>
 <li>Auf der linken Seite (Tab <strong>Projects</strong>) in <strong>Source Packages</strong> auf dein neu erstelltes Package mit der rechten Maustaste klicken &gt; <strong>New</strong> auswählen &gt; <strong>Java Class</strong> auswählen.</li>
 <li>Als <strong>Class Name</strong> dein Plugin benennen, z.B. FirstPlugin &gt; Klick auf <strong>Finish</strong></li>
 <li>Sicherstellen dass nach dem Klassennamen <code>extends JavaPlugin</code> steht.</li>
 </ol>
-
-<h2 id="plugin-yml-hinzufügen">plugin.yml hinzufügen</h2>
-
+<h2 id="pluginyml-hinzufügen">plugin.yml hinzufügen</h2>
 <ol>
 <li>Auf der linken Seite (Tab <strong>Projects</strong>) auf <strong>Source Packages</strong> mit der rechten Maustaste klicken &gt; <strong>New</strong> auswählen &gt; <strong>YAML File</strong> auswählen.</li>
 <li>Als <strong>File Name</strong> den Namen <code>plugin</code> eingeben &gt; Klick auf <strong>Finish</strong></li>
 </ol>
-
 <h2 id="resultat">Resultat</h2>
-
 <p>Dein Projektsetup sollte jetzt so aussehen:
 
 
@@ -247,9 +229,7 @@
     </div>
 </div>
 </p>
-
 <h2 id="projekt-bauen-und-deployen">Projekt bauen und deployen</h2>
-
 <ol>
 <li>In der Icon Leiste oben auf den Hammer <strong>Build Project (F11)</strong> klicken.</li>
 <li>Im Fenster <strong>Output</strong> (wenn nicht vorhanden, über Menüpunkt <strong>Window</strong> &gt; <strong>Output (Strg+4)</strong> anzeigen lassen) den Pfad zum *.jar kopieren (endet auf <code>dist/</code>).</li>

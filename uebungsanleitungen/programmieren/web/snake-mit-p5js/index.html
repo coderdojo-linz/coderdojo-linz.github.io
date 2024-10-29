@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Snake mit p5.js </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,30 +150,22 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#snake-mit-p5-js">Snake mit p5.js</a>
-<ul>
-<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
-<li><a href="#p5-js">p5.js</a></li>
-<li><a href="#variablen">Variablen</a></li>
-<li><a href="#spielfeld-vorbereiten">Spielfeld vorbereiten</a></li>
-<li><a href="#schlange-malen">Schlange malen</a></li>
-<li><a href="#steuerung-der-schlange">Steuerung der Schlange</a></li>
-<li><a href="#apfel-malen">Apfel malen</a></li>
-<li><a href="#apfel-einsammeln">Apfel einsammeln</a></li>
-<li><a href="#kollisionen-erkennen">Kollisionen erkennen</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+    <li><a href="#p5js">p5.js</a></li>
+    <li><a href="#variablen">Variablen</a></li>
+    <li><a href="#spielfeld-vorbereiten">Spielfeld vorbereiten</a></li>
+    <li><a href="#schlange-malen">Schlange malen</a></li>
+    <li><a href="#steuerung-der-schlange">Steuerung der Schlange</a></li>
+    <li><a href="#apfel-malen">Apfel malen</a></li>
+    <li><a href="#apfel-einsammeln">Apfel einsammeln</a></li>
+    <li><a href="#kollisionen-erkennen">Kollisionen erkennen</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="snake-mit-p5-js">Snake mit p5.js</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="snake-mit-p5js">Snake mit p5.js</h1>
 <h2 id="ziel-der-übung">Ziel der Übung</h2>
-
 <p>In dieser Übung programmierst du das Spiel Snake mit p5.js.</p>
-
 
 
 
@@ -198,221 +190,194 @@
     </div>
 </div>
 
-
-<h2 id="p5-js">p5.js</h2>
-
+<h2 id="p5js">p5.js</h2>
 <p>Wir verwenden für diese Übung die JavaScript Bibliothek <a href="https://p5js.org/" target="_blank">p5.js</a>. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.</p>
-
 <p>Öffne zum Starten den <a href="https://editor.p5js.org/" target="_blank">p5.js editor</a>.</p>
-
 <p>Dort wird dir folgender Code angezeigt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> setup() {
-  createCanvas(400, 400);
-}
-
-<span style="color:#00f">function</span> draw() {
-  background(220);
-}
-</code></pre></div>
-<h2 id="variablen">Variablen</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> setup() {
+</span></span><span style="display:flex;"><span>  createCanvas(400, 400);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+</span></span><span style="display:flex;"><span>  background(220);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="variablen">Variablen</h2>
 <p>Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen. Füge die Variablen ganz am Anfang des Codes ein. Zeilen die mit <code>//</code> beginnen sind Kommentare, die sind nicht nötig, damit das Programm läuft:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// Breite des Spielfelds
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> boardWidth = 20;
-<span style="color:#008000">// Höhe des Spielfels
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> boardHeight = 20;
-<span style="color:#008000">// Breite und Höhe einer Position (Schlangenteil oder Apfel)
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> size = 15;
-<span style="color:#008000">// Array mit allen Positionen der Schlange
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> snakePos = [{ x: 5, y: 5 }];
-<span style="color:#008000">// Länge der Schlange
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> snakeLength = 3;
-<span style="color:#008000">// x Position des Apfels
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> applePosX = 0;
-<span style="color:#008000">// y Position des Apfels
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> applePosY = 0;
-<span style="color:#008000">// Bewegung der Schlange in x Richtung (-1, 0 oder 1)
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> dirX = 1;
-<span style="color:#008000">// Bewegung der Schlange in y Richtung (-1, 0 oder 1)
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> dirY = 0;
-<span style="color:#008000">// gesammelte Punkte
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> points = 0;
-<span style="color:#008000">// Geschwindigkeit der Schlange
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> speed = 3;
-<span style="color:#008000">// Hintergrundfarbe
-</span><span style="color:#008000"></span><span style="color:#00f">let</span> backgroundColor = <span style="color:#a31515">&#39;lightgray&#39;</span>;
-
-<span style="color:#008000">// Fokus wird auf das Spielfeld gesetzt
-</span><span style="color:#008000"></span><span style="color:#00f">this</span>.focus();
-</code></pre></div>
-<h2 id="spielfeld-vorbereiten">Spielfeld vorbereiten</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Breite des Spielfelds
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> boardWidth = 20;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Höhe des Spielfels
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> boardHeight = 20;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Breite und Höhe einer Position (Schlangenteil oder Apfel)
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> size = 15;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Array mit allen Positionen der Schlange
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> snakePos = [{ x: 5, y: 5 }];
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Länge der Schlange
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> snakeLength = 3;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// x Position des Apfels
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> applePosX = 0;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// y Position des Apfels
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> applePosY = 0;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Bewegung der Schlange in x Richtung (-1, 0 oder 1)
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> dirX = 1;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Bewegung der Schlange in y Richtung (-1, 0 oder 1)
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> dirY = 0;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// gesammelte Punkte
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> points = 0;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Geschwindigkeit der Schlange
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> speed = 3;
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Hintergrundfarbe
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> backgroundColor = <span style="color:#a31515">&#39;lightgray&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// Fokus wird auf das Spielfeld gesetzt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">this</span>.focus();
+</span></span></code></pre></div><h2 id="spielfeld-vorbereiten">Spielfeld vorbereiten</h2>
 <p>Jetzt bereiten wir das Spielfeld in der richtigen Größe vor. Die Funktion setup braucht dazu folgenden Code:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> setup() {
-  <span style="color:#008000">// Größe des Spielfelds definieren
-</span><span style="color:#008000"></span>  createCanvas(boardWidth * size, boardHeight * (size + 1));
-  <span style="color:#008000">// Hintergrundfarbe setzen
-</span><span style="color:#008000"></span>  background(backgroundColor);
-  <span style="color:#008000">// bei allen zukünftigen Zeichenoperationen (circle, rect, ...) soll keine Umrandung erfolgen
-</span><span style="color:#008000"></span>  noStroke();
-
-  <span style="color:#008000">// frameRate setzt fest, wie oft die Funktion draw pro Sekunde aufgerufen wird
-</span><span style="color:#008000"></span>  frameRate(speed);
-}
-</code></pre></div>
-<h2 id="schlange-malen">Schlange malen</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> setup() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Größe des Spielfelds definieren
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  createCanvas(boardWidth * size, boardHeight * (size + 1));
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Hintergrundfarbe setzen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  background(backgroundColor);
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// bei allen zukünftigen Zeichenoperationen (circle, rect, ...) soll keine Umrandung erfolgen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  noStroke();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// frameRate setzt fest, wie oft die Funktion draw pro Sekunde aufgerufen wird
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  frameRate(speed);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="schlange-malen">Schlange malen</h2>
 <p>Als nächstes berechnen wir in der Funktion <code>draw</code> die nächste Position der Schlange und malen sie. Lösche dazu den Befehl <code>background(220);</code> aus der Funktion <code>draw</code> und füge stattdessen folgenden Code ein:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
-  <span style="color:#008000">// Schlange von voriger Position entfernen
-</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (snakePos.length &gt;= snakeLength) {
-    fill(backgroundColor);
-    rect(snakePos[0].x * size, snakePos[0].y * size, size, size);
-    snakePos.shift();
-  }
-
-  <span style="color:#008000">// neue Position der Schlange berechnen
-</span><span style="color:#008000"></span>  <span style="color:#00f">let</span> posX = snakePos[snakePos.length - 1].x + dirX;
-  <span style="color:#00f">let</span> posY = snakePos[snakePos.length - 1].y + dirY;
-  
-  <span style="color:#008000">// neue Position der Schlange malen
-</span><span style="color:#008000"></span>  fill(<span style="color:#a31515">&#39;green&#39;</span>);
-  rect(posX * size, posY * size, size, size);
-  snakePos.push({ x: posX, y: posY });
-}
-</code></pre></div>
-<p>Wenn du das Programm jetzt startest, sollte sich die Schlange schon nach rechts bewegen.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Schlange von voriger Position entfernen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (snakePos.length &gt;= snakeLength) {
+</span></span><span style="display:flex;"><span>    fill(backgroundColor);
+</span></span><span style="display:flex;"><span>    rect(snakePos[0].x * size, snakePos[0].y * size, size, size);
+</span></span><span style="display:flex;"><span>    snakePos.shift();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// neue Position der Schlange berechnen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">let</span> posX = snakePos[snakePos.length - 1].x + dirX;
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">let</span> posY = snakePos[snakePos.length - 1].y + dirY;
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// neue Position der Schlange malen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  fill(<span style="color:#a31515">&#39;green&#39;</span>);
+</span></span><span style="display:flex;"><span>  rect(posX * size, posY * size, size, size);
+</span></span><span style="display:flex;"><span>  snakePos.push({ x: posX, y: posY });
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Wenn du das Programm jetzt startest, sollte sich die Schlange schon nach rechts bewegen.</p>
 <h2 id="steuerung-der-schlange">Steuerung der Schlange</h2>
-
 <p>Wir wollen jetzt die Cursortasten (Pfeiltasten) verwenden, um die Schlange zu steuern. Dafür fügen wir ganz unten im Code die neue Funktion <code>keyPressed</code> ein:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> keyPressed() {
-  <span style="color:#008000">// Richtung der Schlange durch Cursortasten ändern
-</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (keyCode === LEFT_ARROW) {
-    dirX = -1;
-    dirY = 0;
-  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyCode === RIGHT_ARROW) {
-    dirX = 1;
-    dirY = 0;
-  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyCode === UP_ARROW) {
-    dirX = 0;
-    dirY = -1;
-  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyCode === DOWN_ARROW) {
-    dirX = 0;
-    dirY = 1;
-  }
-}
-</code></pre></div>
-<p>Du solltest die Schlange jetzt in alle Richtungen bewegen können.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> keyPressed() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Richtung der Schlange durch Cursortasten ändern
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (keyCode === LEFT_ARROW) {
+</span></span><span style="display:flex;"><span>    dirX = -1;
+</span></span><span style="display:flex;"><span>    dirY = 0;
+</span></span><span style="display:flex;"><span>  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyCode === RIGHT_ARROW) {
+</span></span><span style="display:flex;"><span>    dirX = 1;
+</span></span><span style="display:flex;"><span>    dirY = 0;
+</span></span><span style="display:flex;"><span>  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyCode === UP_ARROW) {
+</span></span><span style="display:flex;"><span>    dirX = 0;
+</span></span><span style="display:flex;"><span>    dirY = -1;
+</span></span><span style="display:flex;"><span>  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyCode === DOWN_ARROW) {
+</span></span><span style="display:flex;"><span>    dirX = 0;
+</span></span><span style="display:flex;"><span>    dirY = 1;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Du solltest die Schlange jetzt in alle Richtungen bewegen können.</p>
 <h2 id="apfel-malen">Apfel malen</h2>
-
 <p>Der Apfel soll an einer zufälligen Position im Spielfeld auftauchen. Dafür fügen wir ganz unten im Code eine neue Funktion <code>drawApple</code> hinzu:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> drawApple() {
-  <span style="color:#008000">// zufällige Position für Apfel ermitteln
-</span><span style="color:#008000"></span>  applePosX = Math.round(Math.random() * (boardWidth - 1));
-  applePosY = Math.round(Math.random() * (boardHeight - 1));
-
-  <span style="color:#008000">// Apfel malen
-</span><span style="color:#008000"></span>  fill(<span style="color:#a31515">&#39;red&#39;</span>);
-  ellipse(applePosX * size + size / 2, applePosY * size + size / 2, size);
-  
-  <span style="color:#008000">// Punktestand ausgeben
-</span><span style="color:#008000"></span>  fill(<span style="color:#a31515">&#39;gray&#39;</span>);
-  rect(0, boardHeight * size, boardWidth * size, size + 5);
-  fill(<span style="color:#a31515">&#39;white&#39;</span>);
-  textSize(size - 5);
-  text(<span style="color:#a31515">&#39;Points: &#39;</span> + points.toString(), size, boardHeight * (size + 1) - 5);
-}
-</code></pre></div>
-<p>Jedesmal wenn ein neuer Apfel angezeigt wird, geben wir am unteren Rand des Spielfelds auch den aktuellen Punktestand aus.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> drawApple() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// zufällige Position für Apfel ermitteln
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  applePosX = Math.round(Math.random() * (boardWidth - 1));
+</span></span><span style="display:flex;"><span>  applePosY = Math.round(Math.random() * (boardHeight - 1));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Apfel malen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  fill(<span style="color:#a31515">&#39;red&#39;</span>);
+</span></span><span style="display:flex;"><span>  ellipse(applePosX * size + size / 2, applePosY * size + size / 2, size);
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Punktestand ausgeben
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  fill(<span style="color:#a31515">&#39;gray&#39;</span>);
+</span></span><span style="display:flex;"><span>  rect(0, boardHeight * size, boardWidth * size, size + 5);
+</span></span><span style="display:flex;"><span>  fill(<span style="color:#a31515">&#39;white&#39;</span>);
+</span></span><span style="display:flex;"><span>  textSize(size - 5);
+</span></span><span style="display:flex;"><span>  text(<span style="color:#a31515">&#39;Points: &#39;</span> + points.toString(), size, boardHeight * (size + 1) - 5);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Jedesmal wenn ein neuer Apfel angezeigt wird, geben wir am unteren Rand des Spielfelds auch den aktuellen Punktestand aus.</p>
 <p>In der Funktion <code>setup</code> müssen wir die Funktion <code>drawApple</code> nun auch aufrufen, damit beim Start des Spiels ein Apfel angezeigt wird. Füge dazu als letzte Zeile in der Funktion <code>setup</code> die Zeile <code>drawApple();</code> ein:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> setup() {
-  ...
-  
-  <span style="color:#008000">// ersten Apfel anzeigen
-</span><span style="color:#008000"></span>  drawApple();
-}
-</code></pre></div>
-<h2 id="apfel-einsammeln">Apfel einsammeln</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> setup() {
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// ersten Apfel anzeigen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  drawApple();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="apfel-einsammeln">Apfel einsammeln</h2>
 <p>Wenn die Schlange auf den Apfel trifft, wird die Schlange länger und ein neuer Apfel wird angezeigt. Füge dazu in der Funktion <code>draw</code> befor die neue Position der Schlange gemalt wird folgenden Code ein:</p>
-
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
-  <span style="color:#008000">// Schlange von voriger Position entfernen
-</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (snakePos.length &gt;= snakeLength) {
-    fill(backgroundColor);
-    rect(snakePos[0].x * size, snakePos[0].y * size, size, size);
-    snakePos.shift();
-  }
-
-  <span style="color:#008000">// neue Position der Schlange berechnen
-</span><span style="color:#008000"></span>  <span style="color:#00f">let</span> posX = snakePos[snakePos.length - 1].x + dirX;
-  <span style="color:#00f">let</span> posY = snakePos[snakePos.length - 1].y + dirY;
-  
-<span style="display:block;width:100%;background-color:#e5e5e5">  <span style="color:#008000">// prüfen, ob der Apfel berührt wird
-</span></span><span style="display:block;width:100%;background-color:#e5e5e5"><span style="color:#008000"></span>  <span style="color:#00f">if</span> (posX === applePosX &amp;&amp; posY === applePosY) {
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    <span style="color:#008000">// Punkte erhöhen
-</span></span><span style="display:block;width:100%;background-color:#e5e5e5"><span style="color:#008000"></span>    points++;
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    <span style="color:#008000">// Geschwindigkeit erhöhen
-</span></span><span style="display:block;width:100%;background-color:#e5e5e5"><span style="color:#008000"></span>    <span style="color:#00f">if</span> (speed &lt; 20) {
-</span><span style="display:block;width:100%;background-color:#e5e5e5">      speed++;
-</span><span style="display:block;width:100%;background-color:#e5e5e5">      frameRate(speed);
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    }
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    <span style="color:#008000">// neuen Apfel zeichnen
-</span></span><span style="display:block;width:100%;background-color:#e5e5e5"><span style="color:#008000"></span>    drawApple();
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    <span style="color:#008000">// Länge der Schlange erhöhen
-</span></span><span style="display:block;width:100%;background-color:#e5e5e5"><span style="color:#008000"></span>    snakeLength++;
-</span><span style="display:block;width:100%;background-color:#e5e5e5">  }
-</span>  
-  <span style="color:#008000">// neue Position der Schlange malen
-</span><span style="color:#008000"></span>  fill(<span style="color:#a31515">&#39;green&#39;</span>);
-  rect(posX * size, posY * size, size, size);
-  snakePos.push({ x: posX, y: posY });
-}
-</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Schlange von voriger Position entfernen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (snakePos.length &gt;= snakeLength) {
+</span></span><span style="display:flex;"><span>    fill(backgroundColor);
+</span></span><span style="display:flex;"><span>    rect(snakePos[0].x * size, snakePos[0].y * size, size, size);
+</span></span><span style="display:flex;"><span>    snakePos.shift();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// neue Position der Schlange berechnen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">let</span> posX = snakePos[snakePos.length - 1].x + dirX;
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">let</span> posY = snakePos[snakePos.length - 1].y + dirY;
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>  <span style="color:#008000">// prüfen, ob der Apfel berührt wird
+</span></span></span><span style="display:flex; background-color:#e5e5e5"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (posX === applePosX &amp;&amp; posY === applePosY) {
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    <span style="color:#008000">// Punkte erhöhen
+</span></span></span><span style="display:flex; background-color:#e5e5e5"><span><span style="color:#008000"></span>    points++;
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    <span style="color:#008000">// Geschwindigkeit erhöhen
+</span></span></span><span style="display:flex; background-color:#e5e5e5"><span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (speed &lt; 20) {
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>      speed++;
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>      frameRate(speed);
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    }
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    <span style="color:#008000">// neuen Apfel zeichnen
+</span></span></span><span style="display:flex; background-color:#e5e5e5"><span><span style="color:#008000"></span>    drawApple();
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    <span style="color:#008000">// Länge der Schlange erhöhen
+</span></span></span><span style="display:flex; background-color:#e5e5e5"><span><span style="color:#008000"></span>    snakeLength++;
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// neue Position der Schlange malen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  fill(<span style="color:#a31515">&#39;green&#39;</span>);
+</span></span><span style="display:flex;"><span>  rect(posX * size, posY * size, size, size);
+</span></span><span style="display:flex;"><span>  snakePos.push({ x: posX, y: posY });
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <h2 id="kollisionen-erkennen">Kollisionen erkennen</h2>
-
 <p>Als letztes müssen wir jetzt noch erkennen, wenn die Schlange den Rand berührt oder sich selbst verknotet. Auch diesen Code musst du noch in die Funktion <code>draw</code> direkt unter das Ermitteln der neuen Position einfügen:</p>
-
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> draw() {
-  <span style="color:#008000">// Schlange von voriger Position entfernen
-</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (snakePos.length &gt;= snakeLength) {
-    fill(backgroundColor);
-    rect(snakePos[0].x * size, snakePos[0].y * size, size, size);
-    snakePos.shift();
-  }
-
-  <span style="color:#008000">// neue Position der Schlange berechnen
-</span><span style="color:#008000"></span>  <span style="color:#00f">let</span> posX = snakePos[snakePos.length - 1].x + dirX;
-  <span style="color:#00f">let</span> posY = snakePos[snakePos.length - 1].y + dirY;
-  
-<span style="display:block;width:100%;background-color:#e5e5e5">  <span style="color:#008000">// prüfen, ob die Schlange den Rand berührt
-</span></span><span style="display:block;width:100%;background-color:#e5e5e5"><span style="color:#008000"></span>  <span style="color:#00f">if</span> (posX &lt; 0 || posX &gt;= boardWidth|| posY &lt; 0 || posY &gt;= boardHeight) {
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    background(<span style="color:#a31515">&#39;red&#39;</span>);
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    <span style="color:#00f">return</span>;
-</span><span style="display:block;width:100%;background-color:#e5e5e5">  }
-</span><span style="display:block;width:100%;background-color:#e5e5e5">  
-</span><span style="display:block;width:100%;background-color:#e5e5e5">  <span style="color:#008000">// prüfen, ob die Schlange sich selbst verknotet
-</span></span><span style="display:block;width:100%;background-color:#e5e5e5"><span style="color:#008000"></span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; snakePos.length; i++) {
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    <span style="color:#00f">if</span> (snakePos[i].x === posX &amp;&amp; snakePos[i].y === posY) {
-</span><span style="display:block;width:100%;background-color:#e5e5e5">      background(<span style="color:#a31515">&#39;fuchsia&#39;</span>);
-</span><span style="display:block;width:100%;background-color:#e5e5e5">      <span style="color:#00f">return</span>;
-</span><span style="display:block;width:100%;background-color:#e5e5e5">    }
-</span><span style="display:block;width:100%;background-color:#e5e5e5">  }
-</span>  
-  <span style="color:#008000">// prüfen, ob der Apfel berührt wird
-</span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (posX === applePosX &amp;&amp; posY === applePosY) {
-    <span style="color:#008000">// Punkte erhöhen
-</span><span style="color:#008000"></span>    points++;
-    ...
-}
-</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// Schlange von voriger Position entfernen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (snakePos.length &gt;= snakeLength) {
+</span></span><span style="display:flex;"><span>    fill(backgroundColor);
+</span></span><span style="display:flex;"><span>    rect(snakePos[0].x * size, snakePos[0].y * size, size, size);
+</span></span><span style="display:flex;"><span>    snakePos.shift();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// neue Position der Schlange berechnen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">let</span> posX = snakePos[snakePos.length - 1].x + dirX;
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">let</span> posY = snakePos[snakePos.length - 1].y + dirY;
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>  <span style="color:#008000">// prüfen, ob die Schlange den Rand berührt
+</span></span></span><span style="display:flex; background-color:#e5e5e5"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (posX &lt; 0 || posX &gt;= boardWidth|| posY &lt; 0 || posY &gt;= boardHeight) {
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    background(<span style="color:#a31515">&#39;red&#39;</span>);
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    <span style="color:#00f">return</span>;
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>  }
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>  
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>  <span style="color:#008000">// prüfen, ob die Schlange sich selbst verknotet
+</span></span></span><span style="display:flex; background-color:#e5e5e5"><span><span style="color:#008000"></span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; snakePos.length; i++) {
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    <span style="color:#00f">if</span> (snakePos[i].x === posX &amp;&amp; snakePos[i].y === posY) {
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>      background(<span style="color:#a31515">&#39;fuchsia&#39;</span>);
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>      <span style="color:#00f">return</span>;
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>    }
+</span></span><span style="display:flex; background-color:#e5e5e5"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#008000">// prüfen, ob der Apfel berührt wird
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (posX === applePosX &amp;&amp; posY === applePosY) {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">// Punkte erhöhen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    points++;
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>Du kannst das fertige Spiel unter <a href="https://editor.p5js.org/karin112358/sketches/Vc2YHuXjk" target="_blank">https://editor.p5js.org/karin112358/sketches/Vc2YHuXjk</a> ausprobieren.</p>
  </div>
         </div>

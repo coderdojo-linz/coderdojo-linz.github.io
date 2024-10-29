@@ -4,53 +4,36 @@
     <title>Infos on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/info/</link>
     <description>Recent content in Infos on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/info/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/info/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Infos für Kinder und Jugendliche</title>
       <link>https://linz.coderdojo.net/info/kinder-und-jugendliche/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/info/kinder-und-jugendliche/</guid>
-      <description>Neugierig auf Technik und Programmieren? Wolltest du immer schon wissen, wie Computer, iPad oder Smartphone funktionieren? Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren? Reicht es dir nicht, deinen Status auf Facebook zu posten? Du möchtest lieber deine ganz eigene Webseite?
-Dann bist du richtig beim CoderDojo!
-Was sind CoderDojos? In Japan trifft man sich in einem Dojo, um Kampfsportarten wie Judo oder Karate zu üben. Beim CoderDojo treffen wir uns, um zu &amp;ldquo;coden&amp;rdquo;, also zu programmieren.</description>
+      <description>&lt;h1 id=&#34;neugierig-auf-technik-und-programmieren&#34;&gt;Neugierig auf Technik und Programmieren?&lt;/h1&gt;&#xA;&lt;p&gt;Wolltest du immer schon wissen, wie Computer, iPad oder Smartphone funktionieren? Möchtest du Computerspiele nicht nur spielen sondern selbst programmieren? Reicht es dir nicht, deinen Status auf Facebook zu posten? Du möchtest lieber deine ganz eigene Webseite?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dann bist du richtig beim CoderDojo!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;was-sind-coderdojos&#34;&gt;Was sind CoderDojos?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;In Japan trifft man sich in einem Dojo, um Kampfsportarten wie Judo oder Karate zu üben. Beim CoderDojo treffen wir uns, um zu &amp;ldquo;coden&amp;rdquo;, also zu programmieren.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Infos für Eltern</title>
       <link>https://linz.coderdojo.net/info/eltern/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/info/eltern/</guid>
-      <description>Informationen für Eltern Was ist ein CoderDojo? In der weltweiten CoderDojo Gemeinschaft bieten freiwillige Mentorinnen und Mentoren Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.
-Gemeinsames Entdecken, Teamarbeit, Mentoring sowie selbstorganisiertes Lernen und Experimentieren stehen im CoderDojo im Vordergrund. Offenheit, gegenseitiges Helfen und das Weitergeben von erworbenem Wissen sind wichtige Grundprinzipien.</description>
+      <description>&lt;h1 id=&#34;informationen-für-eltern&#34;&gt;Informationen für Eltern&lt;/h1&gt;&#xA;&lt;h2 id=&#34;was-ist-ein-coderdojo&#34;&gt;Was ist ein CoderDojo?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;In der weltweiten CoderDojo Gemeinschaft bieten freiwillige Mentorinnen und Mentoren Programmierclubs für Kinder und Jugendliche an. Dort wird spielerisch Technologie entdeckt und gelernt wie man Code schreibt, Webseiten entwickelt, Apps und Spiele programmiert und vieles mehr. Technologieinteressierte Kinder treffen Gleichgesinnte und können sich über ihre Projekte austauschen.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Gemeinsames Entdecken, Teamarbeit, &lt;a href=&#34;http://de.wikipedia.org/wiki/Mentoring&#34; title=&#34;Mentoring auf Wikipedia&#34; target=&#34;_blank&#34;&gt;Mentoring&lt;/a&gt; sowie selbstorganisiertes Lernen und Experimentieren stehen im CoderDojo im Vordergrund. Offenheit, gegenseitiges Helfen und das Weitergeben von erworbenem Wissen sind wichtige Grundprinzipien. An oberster Stelle steht aber die Förderung von Kreativität und Spaß an Technologie. Softwareentwicklung in einer Gemeinschaft soll Spaß machen, cool sein und den Kindern neue Perspektiven in einer Welt eröffnen, die immer mehr von Technologie, Computern und Software geprägt ist.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Infos für Mentoren</title>
       <link>https://linz.coderdojo.net/info/mentoren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/info/mentoren/</guid>
-      <description>Wir suchen Mentoren! Du kannst gut programmieren oder bist ein Elektronik-Crack? Dann brauchen wir dich als Mentor.
-Als Mentoren begleiten wir in CoderDojos Kinder beim spielerischen Entdecken ihrer Begeisterung für Technik und Softwareentwicklung. Unsere Aufgaben sind:
- Vermitteln der Grundlagen für Anfänger. Den Kindern helfen, falls sie an Grenzen stoßen. &amp;ldquo;Coole&amp;rdquo; Projektideen vorschlagen, falls die Kinder einmal keine eigenen Ideen mitbringen. Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen Und das wichtigste: Kinder für Technik und Programmieren begeistern.</description>
+      <description>&lt;h1 id=&#34;wir-suchen-mentoren&#34;&gt;Wir suchen Mentoren!&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Du kannst gut programmieren oder bist ein Elektronik-Crack? Dann brauchen wir dich als Mentor.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Als Mentoren begleiten wir in &lt;a href=&#34;http://www.coderdojo.com&#34; title=&#34;Internationale CoderDojo Webseite&#34; target=&#34;_blank&#34;&gt;CoderDojos&lt;/a&gt; Kinder beim spielerischen Entdecken ihrer Begeisterung für Technik und Softwareentwicklung. Unsere Aufgaben sind:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Vermitteln der Grundlagen für Anfänger.&lt;/li&gt;&#xA;&lt;li&gt;Den Kindern helfen, falls sie an Grenzen stoßen.&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;Coole&amp;rdquo; Projektideen vorschlagen, falls die Kinder einmal keine eigenen Ideen mitbringen.&lt;/li&gt;&#xA;&lt;li&gt;Mithelfen bei der Entwicklung von Lern- und Übungsunterlagen&lt;/li&gt;&#xA;&lt;li&gt;Und das wichtigste: Kinder für Technik und Programmieren begeistern.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;häufige-fragen&#34;&gt;Häufige Fragen&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ist-das-eine-dauerhafte-verpflichtung&#34;&gt;Ist das eine dauerhafte Verpflichtung?&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Nein, auch punktuelles Mitmachen ist möglich.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Infos für Schulen</title>
       <link>https://linz.coderdojo.net/info/schulen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/info/schulen/</guid>
-      <description>CoderDojo an Schulen Einleitung Um möglichst vielen Kindern den Einstieg in das Programmieren zu ermöglichen, bieten wir Gast-CoderDojos an Schulen an. Wir bringen die gesamte Infrastruktur inkl. mobilem Internetzugang und Leihlaptops mit.
-CoderDojo ist ein von ehrenamtlichen Mentorinnen und Mentoren getragener Programmierclubs. Alle Personen in unserem Mentoringteam sind berufstätig. Sie investieren ihre Freizeit, um im CoderDojo mitzuhelfen. Aus diesem Grund bitten wir um Verständnis, dass wir nicht alle Einladungen an Schulen annehmen können.</description>
+      <description>&lt;h1 id=&#34;coderdojo-an-schulen&#34;&gt;CoderDojo an Schulen&lt;/h1&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&lt;p&gt;Um möglichst vielen Kindern den Einstieg in das Programmieren zu ermöglichen, bieten wir Gast-CoderDojos an Schulen an. Wir bringen die gesamte Infrastruktur inkl. mobilem Internetzugang und Leihlaptops mit.&lt;/p&gt;&#xA;&lt;p&gt;CoderDojo ist ein von ehrenamtlichen Mentorinnen und Mentoren getragener Programmierclubs. Alle Personen in unserem Mentoringteam sind berufstätig. Sie investieren ihre Freizeit, um im CoderDojo mitzuhelfen. Aus diesem Grund bitten wir um Verständnis, dass wir nicht alle Einladungen an Schulen annehmen können. Bitte verstehen Sie das nicht als mangelndes Interesse, ganz im Gegenteil. Wir bemühen uns, so vielen Anfragen wie möglich nachzukommen. Manchmal fehlt es uns aber an Ressourcen.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

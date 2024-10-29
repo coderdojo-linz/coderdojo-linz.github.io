@@ -4,75 +4,51 @@
     <title>Sonstiges on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/</link>
     <description>Recent content in Sonstiges on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 17 May 2020 08:03:54 +0200</lastBuildDate>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android Map Reactions App, Teil 1</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-1/</guid>
-      <description>Android Map Reactions App In dieser Übung programmierst du eine Android App in Java. In dieser App kann man einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem Comic Strip. Während der Entwicklung der App wirst du lernen, wie man eine einfache Android App inklusive Navigation zwischen Screens schreibt. Außerdem wirst du über sogenannte REST Calls mit einem Server über das Internet kommunizieren, um den eingegebenen Satz in eine Route zu verwandeln.</description>
+      <description>&lt;h1 id=&#34;android-map-reactions-app&#34;&gt;Android Map Reactions App&lt;/h1&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du eine Android App in Java. In dieser App kann man einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem &lt;a href=&#34;https://xkcd.com/2260/&#34; target=&#34;_blank&#34;&gt;Comic Strip&lt;/a&gt;. Während der Entwicklung der App wirst du lernen, wie man eine einfache Android App inklusive Navigation zwischen Screens schreibt. Außerdem wirst du über sogenannte REST Calls mit einem Server über das Internet kommunizieren, um den eingegebenen Satz in eine Route zu verwandeln. Zu guter letzt wird diese Route dann mithilfe von &lt;a href=&#34;https://www.openstreetmap.org/&#34; target=&#34;_blank&#34;&gt;Open Street Map&lt;/a&gt; auf einer Karte angezeigt.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Android Map Reactions App, Teil 2</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-2/</guid>
-      <description>Android Map Reactions App, Teil 2 Im ersten Teil dieser Anleitung hast du eine Android App in Java programmiert. In dieser App kann man bereits einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem Comic Strip. In diesem Teil werden einige Verbesserungen beschrieben, die du noch machen kannst. Diese beinhalten unter anderem das Styling der App, ein paar Verbesserungen des Codes selbst und die App sollte auch etwas stabiler werden.</description>
+      <description>&lt;h1 id=&#34;android-map-reactions-app-teil-2&#34;&gt;Android Map Reactions App, Teil 2&lt;/h1&gt;&#xA;&lt;p&gt;Im &lt;a href=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/&#34;&gt;ersten Teil dieser Anleitung&lt;/a&gt; hast du eine Android App in Java programmiert. In dieser App kann man bereits einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem &lt;a href=&#34;https://xkcd.com/2260/&#34; target=&#34;_blank&#34;&gt;Comic Strip&lt;/a&gt;. In diesem Teil werden einige Verbesserungen beschrieben, die du noch machen kannst. Diese beinhalten unter anderem das Styling der App, ein paar Verbesserungen des Codes selbst und die App sollte auch etwas stabiler werden.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ANTLR Hello World</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/</guid>
-      <description>ANTLR Hello World Installation  Installieren von [IntelliJ Community Edition](https://www.jetbrains.com/idea/download/#section=windows) (kostenlos)
- IntelliJ starten
- Ein neues Projekt mit New Project - Empty Project starten. In dieser Anleitung gehen wir davon aus, dass das Projekt antlr-hello-world heißt.
- Settings-Dialog mit Strg+Alt+S öffnen, nach dem antlr Plugin suchen und installieren 
-    IntelliJ neu starten und das zuvor angelegte Projekt wieder laden
-  Erste Grammatik anlegen  Neue Datei Hello.</description>
+      <description>&lt;h1 id=&#34;antlr-hello-world&#34;&gt;ANTLR Hello World&lt;/h1&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Installieren von [IntelliJ Community Edition]&lt;!-- raw HTML omitted --&gt;(&lt;a href=&#34;https://www.jetbrains.com/idea/download/#section=windows&#34; target=&#34;_blank&#34;&gt;https://www.jetbrains.com/idea/download/#section=windows&lt;/a&gt;) (kostenlos)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;IntelliJ starten&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Ein neues Projekt mit &lt;em&gt;New Project&lt;/em&gt; - &lt;em&gt;Empty Project&lt;/em&gt; starten. In dieser Anleitung gehen wir davon aus, dass das Projekt &lt;em&gt;antlr-hello-world&lt;/em&gt; heißt.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;em&gt;Settings&lt;/em&gt;-Dialog mit &lt;em&gt;Strg+Alt+S&lt;/em&gt; öffnen, nach dem &lt;em&gt;antlr&lt;/em&gt; Plugin suchen und installieren&lt;!-- raw HTML omitted --&gt;&#xA;&#xA;  &#xA;  &#xA;       &#xA;      &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &lt;div class=&#34;row&#34;&gt;&#xA;      &lt;div class=&#34;col&#34;&gt;&#xA;          &lt;p&gt;&lt;/p&gt;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;      &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/antlr-hello-world/img/install-antlr.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;      &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;IntelliJ neu starten und das zuvor angelegte Projekt wieder laden&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Back to Basics - Assembler Hello World</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/assembler-hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/assembler-hello-world/</guid>
-      <description>Erste Schritte mit Assembler-Programmierung Ziel der Übung Normalerweise programmieren wir im CoderDojo mit sogenannten höheren Programmiersprachen wie C#, Java, Python oder JavaScript. Auf unterster Ebene versteht ein Computer diese Sprachen aber nicht. Er kann nur mit Maschinensprache umgehen. Diese Befehle kann der Prozessor deines Computers direkt ausführen.
-In dieser Übung probieren wir, ein Programm direkt in Maschinensprache zu programmieren. Dazu verwenden wir eine Assemblersprache. Auch wenn du später selten Assembler programmieren wirst, hilft dir diese Übung, besser zu verstehen, was im Hintergrund passiert.</description>
+      <description>&lt;h1 id=&#34;erste-schritte-mit-assembler-programmierung&#34;&gt;Erste Schritte mit Assembler-Programmierung&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Normalerweise programmieren wir im CoderDojo mit sogenannten &lt;a href=&#34;https://de.wikipedia.org/wiki/H%C3%B6here_Programmiersprache&#34; target=&#34;_blank&#34;&gt;höheren Programmiersprachen&lt;/a&gt; wie C#, Java, Python oder JavaScript. Auf unterster Ebene versteht ein Computer diese Sprachen aber nicht. Er kann nur mit &lt;a href=&#34;https://de.wikipedia.org/wiki/Maschinensprache&#34; target=&#34;_blank&#34;&gt;Maschinensprache&lt;/a&gt; umgehen. Diese Befehle kann der Prozessor deines Computers direkt ausführen.&lt;/p&gt;&#xA;&lt;p&gt;In dieser Übung probieren wir, ein Programm direkt in Maschinensprache zu programmieren. Dazu verwenden wir eine &lt;a href=&#34;https://de.wikipedia.org/wiki/Assemblersprache&#34; target=&#34;_blank&#34;&gt;Assemblersprache&lt;/a&gt;. Auch wenn du später selten Assembler programmieren wirst, hilft dir diese Übung, besser zu verstehen, was im Hintergrund passiert.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Moonhack - Rust Edition</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/moonhack-rust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/moonhack-rust/</guid>
-      <description>Moonhack - Rust Edition In dieser Übung werden wir uns ein klein wenig mit der Programmiersprache &amp;ldquo;Rust&amp;rdquo; auseinandersetzen. Es handelt sich dabei um eine relativ neue Sprache die viel Wert darauf legt, mögliche typische Fehler bereits während dem Programmieren zu finden und zu beseitigen.
-Vorbereitung Du wirst folgende Dinge brauchen um du brauchen:
- Rust Compiler und Cargo - Anleitung in Deutsch oder die Offizielle Anleitung Eine Programmierumgebung - Visual Studio Code  In VS Code bitte auch die Erweiterung Rust Analyzer installieren.</description>
+      <description>&lt;h1 id=&#34;moonhack---rust-edition&#34;&gt;Moonhack - Rust Edition&lt;/h1&gt;&#xA;&lt;p&gt;In dieser Übung werden wir uns ein klein wenig mit der Programmiersprache &amp;ldquo;Rust&amp;rdquo; auseinandersetzen. Es handelt sich dabei um eine relativ neue Sprache die viel Wert darauf legt, mögliche typische Fehler bereits während dem Programmieren zu finden und zu beseitigen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;vorbereitung&#34;&gt;Vorbereitung&lt;/h2&gt;&#xA;&lt;p&gt;Du wirst folgende Dinge brauchen um du brauchen:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Rust Compiler und Cargo - &lt;a href=&#34;https://panicbit.github.io/rustbook-de/Rust_Installieren.html&#34; target=&#34;_blank&#34;&gt;Anleitung in Deutsch&lt;/a&gt; oder die &lt;a href=&#34;https://www.rust-lang.org/tools/install&#34; target=&#34;_blank&#34;&gt;Offizielle Anleitung&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Eine Programmierumgebung - &lt;a href=&#34;https://code.visualstudio.com/download&#34; target=&#34;_blank&#34;&gt;Visual Studio Code&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In VS Code bitte auch die Erweiterung &lt;strong&gt;Rust Analyzer&lt;/strong&gt; installieren.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;anlegen-des-projekts&#34;&gt;Anlegen des Projekts&lt;/h2&gt;&#xA;&lt;p&gt;Wenn du das alles erledigt hast, werden wir unser erstes Rust Projekt anlegen:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Space Shooter in C</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/space-shooter-c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/space-shooter-c/</guid>
-      <description>Space Shooter in C In dieser Übung werden wir ein relativ fortgeschrittenes Computerspiel in C entwickeln, welches im Terminalemulator &amp;ndash; unter Windows standardmäßig, CMD &amp;ndash; läuft. Wir werden im Terminal mithilfe von speziellen control codes (Ketten von escape charactern) das gesamte Spiel zeichnen und durch Tastendrücke auf dem Keyboard kontrollieren.
-Für diese Übung solltest du bereits einfache Programmierkentnisse haben, die Konzepte von Schleifen, Bedingungen und Assignments bzw. Variablen sollten nichts neues sein.</description>
+      <description>&lt;h1 id=&#34;space-shooter-in-c&#34;&gt;Space Shooter in C&lt;/h1&gt;&#xA;&lt;p&gt;In dieser Übung werden wir ein relativ fortgeschrittenes Computerspiel in C entwickeln, welches im Terminalemulator &amp;ndash; unter Windows standardmäßig, CMD &amp;ndash; läuft. Wir werden im Terminal mithilfe von speziellen control codes (Ketten von escape charactern) das gesamte Spiel zeichnen und durch Tastendrücke auf dem Keyboard kontrollieren.&lt;/p&gt;&#xA;&lt;p&gt;Für diese Übung solltest du bereits einfache Programmierkentnisse haben, die Konzepte von Schleifen, Bedingungen und Assignments bzw. Variablen sollten nichts neues sein. Im Grunde genommen ist die Programmiersprache C eine sehr einfache, und viele andere Sprachen (z.B. JavaScript, Java, C#, &amp;hellip;) sind ihr oberflächlich ähnlich bzw. nachempfunden. Im folgenden werden daher keine näheren Details zu C gegeben &amp;ndash; sollte dir etwas unklar sein, zögere nicht dich selbst im Internet schlau zu machen, oder eine/n Mentor/in um Hilfe zu bitten.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

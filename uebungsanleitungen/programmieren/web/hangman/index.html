@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Hangman </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,29 +150,20 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#hangman">Hangman</a>
-<ul>
-<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
-<li><a href="#grundgerüst-der-html-seite">Grundgerüst der HTML Seite</a></li>
-<li><a href="#styles">Styles</a></li>
-<li><a href="#skripte">Skripte</a></li>
-<li><a href="#galgen-malen">Galgen malen</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+    <li><a href="#grundgerüst-der-html-seite">Grundgerüst der HTML Seite</a></li>
+    <li><a href="#styles">Styles</a></li>
+    <li><a href="#skripte">Skripte</a></li>
+    <li><a href="#galgen-malen">Galgen malen</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="hangman">Hangman</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="hangman">Hangman</h1>
 <h2 id="ziel-der-übung">Ziel der Übung</h2>
-
 <p>Der erste Spieler gibt ein Wort ein, das vom zweiten Spieler erraten werden muss.</p>
-
 <p>Zuerst sieht der zweite Spieler nur ein Sternchen für jeden Buchstaben. Jeder erratene Buchstabe wird aufgedeckt. Für jeden falsch geratenen Buchstaben
 wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor der Galgen fertig ist.</p>
-
 
 
 
@@ -197,161 +188,151 @@ wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor 
     </div>
 </div>
 
-
 <h2 id="grundgerüst-der-html-seite">Grundgerüst der HTML Seite</h2>
-
 <p>Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.html.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
-&lt;html&gt;
-
-&lt;head&gt;
-	&lt;title&gt;Hangman&lt;/title&gt;
-	&lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> type=<span style="color:#a31515">&#34;text/css&#34;</span> href=<span style="color:#a31515">&#34;styles.css&#34;</span>&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-	&lt;h1&gt;Hangman&lt;/h1&gt;
-
-	&lt;div class=<span style="color:#a31515">&#34;spielBereich&#34;</span>&gt;
-		&lt;div class=<span style="color:#a31515">&#34;rateBereich&#34;</span>&gt;
-			&lt;div&gt;Tippe einen Buchstaben ein.&lt;/div&gt;
-			&lt;div id=<span style="color:#a31515">&#34;wort&#34;</span>&gt;&lt;/div&gt;
-			&lt;div id=<span style="color:#a31515">&#34;info&#34;</span>&gt;&lt;/div&gt;
-		&lt;/div&gt;
-
-		&lt;div class=<span style="color:#a31515">&#34;hangmanBereich&#34;</span>&gt;
-			&lt;svg id=<span style="color:#a31515">&#34;hangman&#34;</span> width=<span style="color:#a31515">&#34;400&#34;</span> height=<span style="color:#a31515">&#34;500&#34;</span>&gt;&lt;/svg&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-
-	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span> src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&#34;</span>&gt;&lt;/script&gt;
-
-	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span>&gt;
-		
-	&lt;/script&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;</code></pre></div>
-<h2 id="styles">Styles</h2>
-
-<p>Die Styles sind hier nicht direkt im HTML enthalten, sondern es wird auf die externe Datei styles.css verwiesen. Die Datei muss sich im selben Ordner wie hangman.htm befinden. Du kannst die Datei entweder unter <a href="hangman/styles.css">styles.css</a> herunterladen,
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;html&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;head&gt;
+</span></span><span style="display:flex;"><span>	&lt;title&gt;Hangman&lt;/title&gt;
+</span></span><span style="display:flex;"><span>	&lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> type=<span style="color:#a31515">&#34;text/css&#34;</span> href=<span style="color:#a31515">&#34;styles.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/head&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;body&gt;
+</span></span><span style="display:flex;"><span>	&lt;h1&gt;Hangman&lt;/h1&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;div class=<span style="color:#a31515">&#34;spielBereich&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		&lt;div class=<span style="color:#a31515">&#34;rateBereich&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;div&gt;Tippe einen Buchstaben ein.&lt;/div&gt;
+</span></span><span style="display:flex;"><span>			&lt;div id=<span style="color:#a31515">&#34;wort&#34;</span>&gt;&lt;/div&gt;
+</span></span><span style="display:flex;"><span>			&lt;div id=<span style="color:#a31515">&#34;info&#34;</span>&gt;&lt;/div&gt;
+</span></span><span style="display:flex;"><span>		&lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>		&lt;div class=<span style="color:#a31515">&#34;hangmanBereich&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>			&lt;svg id=<span style="color:#a31515">&#34;hangman&#34;</span> width=<span style="color:#a31515">&#34;400&#34;</span> height=<span style="color:#a31515">&#34;500&#34;</span>&gt;&lt;/svg&gt;
+</span></span><span style="display:flex;"><span>		&lt;/div&gt;
+</span></span><span style="display:flex;"><span>	&lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span> src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js&#34;</span>&gt;&lt;/script&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	&lt;script type=<span style="color:#a31515">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span>	&lt;/script&gt;
+</span></span><span style="display:flex;"><span>&lt;/body&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/html&gt;
+</span></span></code></pre></div><h2 id="styles">Styles</h2>
+<p>Die Styles sind hier nicht direkt im HTML enthalten, sondern es wird auf die externe Datei styles.css verwiesen. Die Datei muss sich im selben Ordner wie hangman.htm befinden. Du kannst die Datei entweder unter <!-- raw HTML omitted -->styles.css<!-- raw HTML omitted --> herunterladen,
 oder du erstellst eine neue Datei styles.css mit folgendem Inhalt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">body {
-	<span style="color:#00f">font-family</span>: Verdana, Geneva, Tahoma, <span style="color:#00f">sans-serif</span>;
-	<span style="color:#00f">font-size</span>: 20<span style="color:#2b91af">px</span>;
-	<span style="color:#00f">margin</span>: 20<span style="color:#2b91af">px</span>;
-}
-
-h1 {
-	<span style="color:#00f">text-transform</span>: <span style="color:#00f">uppercase</span>;
-}
-
-div {
-	<span style="color:#00f">box-sizing</span>: <span style="color:#00f">border-box</span>;
-}
-
-.<span style="color:#2b91af">spielBereich</span> {
-	<span style="color:#00f">height</span>: 500<span style="color:#2b91af">px</span>;
-	<span style="color:#00f">display</span>: <span style="color:#00f">flex</span>;
-	<span style="color:#00f">align-items</span>: <span style="color:#00f">stretch</span>;
-}
-
-.<span style="color:#2b91af">rateBereich</span> {
-	<span style="color:#00f">width</span>: 50<span style="color:#2b91af">%</span>;
-	<span style="color:#00f">padding-right</span>: 20<span style="color:#2b91af">px</span>;
-}   
-
-#wort {
-	<span style="color:#00f">text-transform</span>: <span style="color:#00f">uppercase</span>;
-	<span style="color:#00f">font-family</span>: Courier New, Courier, <span style="color:#00f">monospace</span>;
-	<span style="color:#00f">margin-top</span>: 40<span style="color:#2b91af">px</span>;
-	<span style="color:#00f">font-size</span>: 30<span style="color:#2b91af">px</span>;
-	<span style="color:#00f">text-align</span>: <span style="color:#00f">center</span>;
-	<span style="color:#00f">letter-spacing</span>: 0.3<span style="color:#2b91af">em</span>;
-}
-
-#info {
-	<span style="color:#00f">margin-top</span>: 40<span style="color:#2b91af">px</span>;
-	<span style="color:#00f">color</span>: #ff6600;
-	<span style="color:#00f">font-weight</span>: <span style="color:#00f">bold</span>;
-}
-
-.<span style="color:#2b91af">hangmanBereich</span> {
-	<span style="color:#00f">width</span>: 50<span style="color:#2b91af">%</span>;
-	<span style="color:#00f">background-color</span>: #ddff99;
-}
-
-line, circle, ellipse, rect, text, path {
-	stroke: <span style="color:#00f">black</span>;
-	fill: <span style="color:#00f">none</span>;
-}</code></pre></div>
-<h2 id="skripte">Skripte</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>body {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">font-family</span>: Verdana, Geneva, Tahoma, <span style="color:#00f">sans-serif</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">font-size</span>: 20<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">margin</span>: 20<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>h1 {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">text-transform</span>: <span style="color:#00f">uppercase</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>div {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">box-sizing</span>: <span style="color:#00f">border-box</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">spielBereich</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">height</span>: 500<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">display</span>: <span style="color:#00f">flex</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">align-items</span>: <span style="color:#00f">stretch</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">rateBereich</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">width</span>: 50<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">padding-right</span>: 20<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>#wort {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">text-transform</span>: <span style="color:#00f">uppercase</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">font-family</span>: Courier New, Courier, <span style="color:#00f">monospace</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">margin-top</span>: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">font-size</span>: 30<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">text-align</span>: <span style="color:#00f">center</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">letter-spacing</span>: 0.3<span style="color:#2b91af">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>#info {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">margin-top</span>: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">color</span>: #ff6600;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">font-weight</span>: <span style="color:#00f">bold</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">hangmanBereich</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">width</span>: 50<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">background-color</span>: #ddff99;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>line, circle, ellipse, rect, text, path {
+</span></span><span style="display:flex;"><span>	stroke: <span style="color:#00f">black</span>;
+</span></span><span style="display:flex;"><span>	fill: <span style="color:#00f">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="skripte">Skripte</h2>
 <p>Damit im Spiel jetzt auch was passiert, müssen wir im <code>&lt;javascript&gt;</code> Bereich unsere Skripte einfügen. Als erstes bauen wir das Grundgerüst für unser Programm.
 Wir brauchen Variablen für die Anzahl der Fehlversuche, einen Indikator, ob das Spiel bereits zu Ende ist, die bereits geratenen Buchstaben.
 Weiters brauchen wir den SVG Zeichen-Bereich mit dem Namen &ldquo;hangman&rdquo;.</p>
-
 <p>Als nächstes fordern wir mit <code>prompt</code> den ersten Spieler auf, ein Wort einzugeben.</p>
-
 <p>Wenn im Dokument eine Taste gedrückt wird (<code>onkeyup</code>), müssen wir nachsehen, ob der gedrückte Buchstabe im Wort vorkommt.</p>
-
 <p>Dann brauchen wir noch die Funktionen wortAzeigen, buchstabePruefen und hangmanMalen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">var</span> anzahlFehlversuche = 0;
-<span style="color:#00f">var</span> gameFinished = <span style="color:#00f">false</span>;
-<span style="color:#00f">var</span> gerateneBuchstaben = [];
-<span style="color:#00f">var</span> svg = Snap(<span style="color:#a31515">&#34;#hangman&#34;</span>);
-
-<span style="color:#008000">// wähle ein Wort aus und zeige es mit * an
-</span><span style="color:#008000"></span><span style="color:#00f">var</span> wort = window.prompt(<span style="color:#a31515">&#34;Welches Wort soll erraten werden?&#34;</span>).toLowerCase();
-wortAnzeigen();
-<span style="color:#008000">// window.focus() ist in manchen Browsern notwendig, damit später document.onkeyup reagiert
-</span><span style="color:#008000"></span>			window.focus();
-
-<span style="color:#008000">// reagiere, wenn ein Buchstabe gedrückt wird
-</span><span style="color:#008000"></span>document.onkeyup = <span style="color:#00f">function</span>(event) {
-	<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>};
-
-<span style="color:#008000">// zeige das Wort mit * für noch nicht erratene Buchstaben an
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> wortAnzeigen() {
-	<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>}
-
-<span style="color:#008000">// prüfe, ob ein Buchstabe bereits geraten wurde oder gar nicht im Wort vorkommt
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> buchstabePruefen(key) {
-	<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>}
-
-<span style="color:#008000">// male das Galgenmännchen
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> hangmanMalen() {
-	<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>}
-</code></pre></div>
-<p>Wenn du die Seite hangman.html jetzt öffnest, wirst du nach einem Wort gefragt. Dann passiert allerdings nichts mehr, da die Funktionen noch alle leer sind.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">var</span> anzahlFehlversuche = 0;
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> gameFinished = <span style="color:#00f">false</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> gerateneBuchstaben = [];
+</span></span><span style="display:flex;"><span><span style="color:#00f">var</span> svg = Snap(<span style="color:#a31515">&#34;#hangman&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// wähle ein Wort aus und zeige es mit * an
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> wort = window.prompt(<span style="color:#a31515">&#34;Welches Wort soll erraten werden?&#34;</span>).toLowerCase();
+</span></span><span style="display:flex;"><span>wortAnzeigen();
+</span></span><span style="display:flex;"><span><span style="color:#008000">// window.focus() ist in manchen Browsern notwendig, damit später document.onkeyup reagiert
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			window.focus();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// reagiere, wenn ein Buchstabe gedrückt wird
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>document.onkeyup = <span style="color:#00f">function</span>(event) {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// zeige das Wort mit * für noch nicht erratene Buchstaben an
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> wortAnzeigen() {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// prüfe, ob ein Buchstabe bereits geraten wurde oder gar nicht im Wort vorkommt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> buchstabePruefen(key) {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// male das Galgenmännchen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> hangmanMalen() {
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>}
+</span></span></code></pre></div><p>Wenn du die Seite hangman.html jetzt öffnest, wirst du nach einem Wort gefragt. Dann passiert allerdings nichts mehr, da die Funktionen noch alle leer sind.
 Als erstes implementieren wir die Funktion wortAzeigen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// zeige das Wort mit * für noch nicht erratene Buchstaben an
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> wortAnzeigen() {
-	<span style="color:#00f">var</span> verdecktesWort = wort;
-
-	<span style="color:#008000">// prüfe für jeden Buchstaben im Wort, ob er sich bereits in den geratenen Buchstaben befindet
-</span><span style="color:#008000"></span>	<span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; verdecktesWort.length; i++) {
-		<span style="color:#00f">if</span> (gerateneBuchstaben.indexOf(verdecktesWort[i]) &lt; 0) {
-			verdecktesWort = verdecktesWort.replace(verdecktesWort[i], <span style="color:#a31515">&#34;*&#34;</span>);
-		}
-	}
-
-	<span style="color:#008000">// zeige das verdeckte Wort an
-</span><span style="color:#008000"></span>	document.getElementById(<span style="color:#a31515">&#34;wort&#34;</span>).innerText = verdecktesWort;
-
-	<span style="color:#008000">// wenn kein * im verdeckten Wort mehr vorkommt, dann wurde das ganze Wort erraten
-</span><span style="color:#008000"></span>	<span style="color:#00f">if</span> (verdecktesWort.indexOf(<span style="color:#a31515">&#34;*&#34;</span>) &lt; 0) {
-		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Gratuliere, du hast das Wort erraten!&#34;</span>;
-		gameFinished = <span style="color:#00f">true</span>;
-	}
-}
-</code></pre></div>
-<p>Wenn du die Seite nun aufrufst, wird du zuerst nach einem Wort gefragt, dann wird für jeden Buchstaben im Wort ein Sternchen angezeigt.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// zeige das Wort mit * für noch nicht erratene Buchstaben an
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> wortAnzeigen() {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">var</span> verdecktesWort = wort;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// prüfe für jeden Buchstaben im Wort, ob er sich bereits in den geratenen Buchstaben befindet
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	<span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; verdecktesWort.length; i++) {
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">if</span> (gerateneBuchstaben.indexOf(verdecktesWort[i]) &lt; 0) {
+</span></span><span style="display:flex;"><span>			verdecktesWort = verdecktesWort.replace(verdecktesWort[i], <span style="color:#a31515">&#34;*&#34;</span>);
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// zeige das verdeckte Wort an
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	document.getElementById(<span style="color:#a31515">&#34;wort&#34;</span>).innerText = verdecktesWort;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// wenn kein * im verdeckten Wort mehr vorkommt, dann wurde das ganze Wort erraten
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	<span style="color:#00f">if</span> (verdecktesWort.indexOf(<span style="color:#a31515">&#34;*&#34;</span>) &lt; 0) {
+</span></span><span style="display:flex;"><span>		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Gratuliere, du hast das Wort erraten!&#34;</span>;
+</span></span><span style="display:flex;"><span>		gameFinished = <span style="color:#00f">true</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Wenn du die Seite nun aufrufst, wird du zuerst nach einem Wort gefragt, dann wird für jeden Buchstaben im Wort ein Sternchen angezeigt.</p>
 
 
 
@@ -376,53 +357,48 @@ Als erstes implementieren wir die Funktion wortAzeigen.</p>
     </div>
 </div>
 
-
 <p>Als nächstes müssen wir dem zweiten Spieler erlauben, Buchstaben einzugeben. Dazu reagieren wir auf das Event <code>document.onkeyup</code>. Solange das Spiel noch nicht vorbei ist,
 prüfen wir den eingegebenen Buchstaben. In der Funktion <code>buchstabePruefen</code> unterscheiden wir dazu drei verschiedene Fälle:</p>
-
 <ul>
 <li>der Buchstabe wurde bereits geraten</li>
 <li>der Buchstabe wurde noch nicht geraten, kommt aber nicht im Wort vor</li>
 <li>der Buchstabe wurde noch nicht geraten und kommt im Wort vor</li>
 </ul>
-
 <p>Wenn die Anzahl der Fehlerversuche 10 ist, dann ist das Spiel zu Ende.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// reagiere, wenn ein Buchstabe gedrückt wird
-</span><span style="color:#008000"></span>document.onkeyup = <span style="color:#00f">function</span>(event) {
-	<span style="color:#00f">if</span> (!gameFinished) {
-		buchstabePruefen(event.key);
-	}
-};
-
-<span style="color:#008000">// prüfe, ob ein Buchstabe bereits geraten wurde oder gar nicht im Wort vorkommt
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> buchstabePruefen(key) {
-	<span style="color:#00f">if</span> (gerateneBuchstaben.indexOf(key) &gt;= 0) {
-		<span style="color:#008000">// der Buchstabe wurde bereits gedrückt
-</span><span style="color:#008000"></span>		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Du hast den Buchstaben &#34;</span> + key + <span style="color:#a31515">&#34; bereits geraten.&#34;</span>;
-		anzahlFehlversuche++;
-		hangmanMalen();
-	} <span style="color:#00f">else</span> <span style="color:#00f">if</span> (wort.indexOf(key) &lt; 0) {
-		<span style="color:#008000">// der Buchstabe kommt nicht im Wort vor
-</span><span style="color:#008000"></span>		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Der Buchstabe &#34;</span> + key + <span style="color:#a31515">&#34; kommt im Wort nicht vor.&#34;</span>;
-		gerateneBuchstaben.push(key);
-		anzahlFehlversuche++;
-		hangmanMalen();
-	} <span style="color:#00f">else</span> {
-		<span style="color:#008000">// es wurde ein Buchstabe erraten
-</span><span style="color:#008000"></span>		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Super, du hast einen Buchstaben erraten&#34;</span>;
-		gerateneBuchstaben.push(key);
-		wortAnzeigen();
-	}
-
-	<span style="color:#008000">// nach 10 Fehlversuchen ist das Spiel zu Ende
-</span><span style="color:#008000"></span>	<span style="color:#00f">if</span> (anzahlFehlversuche &gt;= 10) {
-		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Game over!&#34;</span>;
-		gameFinished = <span style="color:#00f">true</span>;
-	}
-}
-</code></pre></div>
-<p>Du kannst das Spiel jetzt schon spielen. Die richtig erratenen Buchstaben werden angezeigt. Nach 10 Fehlversuchen ist das Spiel zu Ende.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// reagiere, wenn ein Buchstabe gedrückt wird
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>document.onkeyup = <span style="color:#00f">function</span>(event) {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">if</span> (!gameFinished) {
+</span></span><span style="display:flex;"><span>		buchstabePruefen(event.key);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">// prüfe, ob ein Buchstabe bereits geraten wurde oder gar nicht im Wort vorkommt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> buchstabePruefen(key) {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">if</span> (gerateneBuchstaben.indexOf(key) &gt;= 0) {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// der Buchstabe wurde bereits gedrückt
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Du hast den Buchstaben &#34;</span> + key + <span style="color:#a31515">&#34; bereits geraten.&#34;</span>;
+</span></span><span style="display:flex;"><span>		anzahlFehlversuche++;
+</span></span><span style="display:flex;"><span>		hangmanMalen();
+</span></span><span style="display:flex;"><span>	} <span style="color:#00f">else</span> <span style="color:#00f">if</span> (wort.indexOf(key) &lt; 0) {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// der Buchstabe kommt nicht im Wort vor
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Der Buchstabe &#34;</span> + key + <span style="color:#a31515">&#34; kommt im Wort nicht vor.&#34;</span>;
+</span></span><span style="display:flex;"><span>		gerateneBuchstaben.push(key);
+</span></span><span style="display:flex;"><span>		anzahlFehlversuche++;
+</span></span><span style="display:flex;"><span>		hangmanMalen();
+</span></span><span style="display:flex;"><span>	} <span style="color:#00f">else</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#008000">// es wurde ein Buchstabe erraten
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Super, du hast einen Buchstaben erraten&#34;</span>;
+</span></span><span style="display:flex;"><span>		gerateneBuchstaben.push(key);
+</span></span><span style="display:flex;"><span>		wortAnzeigen();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#008000">// nach 10 Fehlversuchen ist das Spiel zu Ende
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>	<span style="color:#00f">if</span> (anzahlFehlversuche &gt;= 10) {
+</span></span><span style="display:flex;"><span>		document.getElementById(<span style="color:#a31515">&#34;info&#34;</span>).innerText = <span style="color:#a31515">&#34;Game over!&#34;</span>;
+</span></span><span style="display:flex;"><span>		gameFinished = <span style="color:#00f">true</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Du kannst das Spiel jetzt schon spielen. Die richtig erratenen Buchstaben werden angezeigt. Nach 10 Fehlversuchen ist das Spiel zu Ende.</p>
 
 
 
@@ -447,22 +423,17 @@ prüfen wir den eingegebenen Buchstaben. In der Funktion <code>buchstabePruefen<
     </div>
 </div>
 
-
 <h2 id="galgen-malen">Galgen malen</h2>
-
 <p>Jetzt fehlt nur noch der Galgen, damit man auch weiß, wieviele Fehlversuche man schon hatte.</p>
-
 <p>Zum Zeichnen verwenden wir die Bibliothek <a href="http://snapsvg.io/docs/" target="_blank">snap.svg</a>. Du kannst damit ganz einfach Linien, Kreise, Ellipsen, Rechtecke und ähnliches malen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// Beispiele
-</span><span style="color:#008000"></span>svg.circle(x, y, r);
-svg.ellipse(x, y, rx, ry);
-svg.rect(x, y, width, height);
-svg.line(x1, y1, x2, y2);
-svg.text(x, y, <span style="color:#a31515">&#34;Ich male mit snap.svg!&#34;</span>);
-svg.path(<span style="color:#a31515">&#34;M200,250L300,300L400,250&#34;</span>);
-</code></pre></div>
-<p>Für das Galgenmännchen in der Funktion <code>hangmanMalen</code> brauchen wir die Befehle <code>line</code> und <code>circle</code>.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Beispiele
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>svg.circle(x, y, r);
+</span></span><span style="display:flex;"><span>svg.ellipse(x, y, rx, ry);
+</span></span><span style="display:flex;"><span>svg.rect(x, y, width, height);
+</span></span><span style="display:flex;"><span>svg.line(x1, y1, x2, y2);
+</span></span><span style="display:flex;"><span>svg.text(x, y, <span style="color:#a31515">&#34;Ich male mit snap.svg!&#34;</span>);
+</span></span><span style="display:flex;"><span>svg.path(<span style="color:#a31515">&#34;M200,250L300,300L400,250&#34;</span>);
+</span></span></code></pre></div><p>Für das Galgenmännchen in der Funktion <code>hangmanMalen</code> brauchen wir die Befehle <code>line</code> und <code>circle</code>.</p>
 
 
 
@@ -487,46 +458,44 @@ svg.path(<span style="color:#a31515">&#34;M200,250L300,300L400,250&#34;</span>);
     </div>
 </div>
 
-
 <p>Bei jedem Fehlversuch malen wir eine weitere Line oder einen Kreis dazu. Die erste Linie ist der Sockel des Galgen. Die Linie beginnt an der Position x=50, y=450 und endet
 an der Position x=150, y=450. Ersetze die Platzhalter <code>// TODO</code> durch die Linien bzw. den Kreis für die weiteren Fehlversuche.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#008000">// male das Galgenmännchen
-</span><span style="color:#008000"></span><span style="color:#00f">function</span> hangmanMalen() {
-	<span style="color:#00f">switch</span> (anzahlFehlversuche) {
-		<span style="color:#00f">case</span> 1:
-			svg.line(50, 450, 150, 450);
-			<span style="color:#00f">break</span>;
-		<span style="color:#00f">case</span> 2:
-			<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
-		<span style="color:#00f">case</span> 3:
-			<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
-		<span style="color:#00f">case</span> 4:
-			<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
-		<span style="color:#00f">case</span> 5:
-			<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
-		<span style="color:#00f">case</span> 6:
-			<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
-		<span style="color:#00f">case</span> 7:
-			<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
-		<span style="color:#00f">case</span> 8:
-			<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
-		<span style="color:#00f">case</span> 9:
-			<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
-		<span style="color:#00f">case</span> 10:
-			<span style="color:#008000">// TODO
-</span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
-	}
-}
-</code></pre></div>
-<p>Wenn du Hilfe beim Malen des Galgenmännchen brauchst, findest du den gesamten Code unter <a href="hangman.html" target="_blank">hangman.html</a>. Du kannst das Spiel dort direkt ausprobieren, oder du siehst der den Source Code mit Hilfe der Developer Tools (F12) an.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// male das Galgenmännchen
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> hangmanMalen() {
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">switch</span> (anzahlFehlversuche) {
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 1:
+</span></span><span style="display:flex;"><span>			svg.line(50, 450, 150, 450);
+</span></span><span style="display:flex;"><span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 2:
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 3:
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 4:
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 5:
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 6:
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 7:
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 8:
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 9:
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>		<span style="color:#00f">case</span> 10:
+</span></span><span style="display:flex;"><span>			<span style="color:#008000">// TODO
+</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>			<span style="color:#00f">break</span>;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Wenn du Hilfe beim Malen des Galgenmännchen brauchst, findest du den gesamten Code unter <!-- raw HTML omitted -->hangman.html<!-- raw HTML omitted -->. Du kannst das Spiel dort direkt ausprobieren, oder du siehst der den Source Code mit Hilfe der Developer Tools (F12) an.</p>
  </div>
         </div>
     </div>

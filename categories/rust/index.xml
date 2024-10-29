@@ -4,22 +4,15 @@
     <title>Rust on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/categories/rust/</link>
     <description>Recent content in Rust on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/categories/rust/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/categories/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Moonhack - Rust Edition</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/moonhack-rust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/sonstiges/moonhack-rust/</guid>
-      <description>Moonhack - Rust Edition In dieser Übung werden wir uns ein klein wenig mit der Programmiersprache &amp;ldquo;Rust&amp;rdquo; auseinandersetzen. Es handelt sich dabei um eine relativ neue Sprache die viel Wert darauf legt, mögliche typische Fehler bereits während dem Programmieren zu finden und zu beseitigen.
-Vorbereitung Du wirst folgende Dinge brauchen um du brauchen:
- Rust Compiler und Cargo - Anleitung in Deutsch oder die Offizielle Anleitung Eine Programmierumgebung - Visual Studio Code  In VS Code bitte auch die Erweiterung Rust Analyzer installieren.</description>
+      <description>&lt;h1 id=&#34;moonhack---rust-edition&#34;&gt;Moonhack - Rust Edition&lt;/h1&gt;&#xA;&lt;p&gt;In dieser Übung werden wir uns ein klein wenig mit der Programmiersprache &amp;ldquo;Rust&amp;rdquo; auseinandersetzen. Es handelt sich dabei um eine relativ neue Sprache die viel Wert darauf legt, mögliche typische Fehler bereits während dem Programmieren zu finden und zu beseitigen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;vorbereitung&#34;&gt;Vorbereitung&lt;/h2&gt;&#xA;&lt;p&gt;Du wirst folgende Dinge brauchen um du brauchen:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Rust Compiler und Cargo - &lt;a href=&#34;https://panicbit.github.io/rustbook-de/Rust_Installieren.html&#34; target=&#34;_blank&#34;&gt;Anleitung in Deutsch&lt;/a&gt; oder die &lt;a href=&#34;https://www.rust-lang.org/tools/install&#34; target=&#34;_blank&#34;&gt;Offizielle Anleitung&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Eine Programmierumgebung - &lt;a href=&#34;https://code.visualstudio.com/download&#34; target=&#34;_blank&#34;&gt;Visual Studio Code&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In VS Code bitte auch die Erweiterung &lt;strong&gt;Rust Analyzer&lt;/strong&gt; installieren.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;anlegen-des-projekts&#34;&gt;Anlegen des Projekts&lt;/h2&gt;&#xA;&lt;p&gt;Wenn du das alles erledigt hast, werden wir unser erstes Rust Projekt anlegen:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

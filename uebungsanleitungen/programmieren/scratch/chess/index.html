@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Chess </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -36,18 +36,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,22 +56,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -179,16 +179,10 @@
         <div class="row">
             
             
-            <div class="col-12 sushi-content"> 
-
-<p>Du kannst das fertige Project unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank"><a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a></a> ausprobieren.</p>
-
+            <div class="col-12 sushi-content"> <p>Du kannst das fertige Project unter <!-- raw HTML omitted --><a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a><!-- raw HTML omitted --> ausprobieren.</p>
 <p>Schachprogramme versuchen den jeweils besten Zug zu finden, und müssen dabei möglichst viele Züge im Voraus berechnen. Die Anzahl der zu untersuchenden Brettbilder wächst dadurch enorm an (exponentielles Wachstum), sodass sogar moderne Computer an ihre Rechengrenzen stoßen. Unser Schachprogramm muss daher schnell und schlau sein. Schlau heißt, dass nicht jede Zugkombination nachverfolgt wird, sondern schlechte Züge gleich wieder verworfen werden. Wenn das Programm einige Züge hintereinander berechnet hat, bewertet es das entstandene Brettbild.</p>
-
 <h2 id="vorbereitung">Vorbereitung</h2>
-
 <p>Melde dich bei Scratch mit deinem Benutzer an. Wenn du noch keinen Scratch-Benutzer hast, hilft dir ein Mentor gerne dabei. Voraussetzung dafür ist eine Mailadresse. Den Benutzer brauchst du, damit du die Projektvorlage remixen, also eine Arbeitskopie erstellen kannst. Öffne das Projekt <a href="https://scratch.mit.edu/projects/150304452/" target="_blank">https://scratch.mit.edu/projects/150304452/</a>, und klicke auf „Remixen“. Nun hast du eine Kopie des Projekts, mit der du weiterarbeiten kannst.</p>
-
 
 
 
@@ -205,7 +199,6 @@
 <div class="row">
     <div class="col">
         <p><p>Diese beiden zu Beginn noch leeren Funktionsblöcke möchten wir implementieren. Du findest sie links oben im Skript der Figur „Board“:</p>
-
 <p>Unser Programm wird mit den schwarzen Figuren spielen, der Benutzer hat Weiß.</p>
 </p>
     </div>
@@ -214,9 +207,7 @@
     </div>
 </div>
 
-
-<h2 id="brettbewertung-evaluateboard">Brettbewertung – EvaluateBoard</h2>
-
+<h2 id="brettbewertung--evaluateboard">Brettbewertung – EvaluateBoard</h2>
 
 
 
@@ -233,13 +224,9 @@
 <div class="row">
     <div class="col">
         <p><p>Die Brettbewertung programmieren wir in der Funktion „EvaluateBoard“. Wichtig ist, dass wir dafür ide Option „Ohne Bildschirmaktualisierung laufen lassen“ auswählen (Rechtsklick auf Funktionskopf, dann „Bearbeiten“ - das gilt für alle Blöcke). Das Programm wäre sonst zu langsam.</p>
-
 <p>Die Bewertung setzt sich aus dem Figurenmaterial und der Position der Figuren am Brett zusammen. Jede Figur hat einen Wert, am meisten der König (20000), da ein geschlagener König Schachmatt bedeutet. Dann die Dame (900), die Türme (500), und so weiter. Die Figuren des Gegners sind mit negativem Vorzeichen versehen, damit die Werte addiert werden können. Ein Spieler, der einen Bauern und einen Turm mehr hat als sein Gegner, hat eine Bewertung von 900 + 500 = 1400. Somit können wir den Zug suchen, der in der Zukunft die beste Bewertung verspricht.</p>
-
 <p>Der Wert jeder Figur ist bereits in Variablen namens „BlackKing“, „WhiteKing“ usw. gespeichert. Unser aktuelles Schachbrett selbst steht in der Liste „Board“. Board hat 64 Einträge, einen für jedes Feld. In einer Schleife mit 64 Iterationen zählen wir dann die Werte aller Figuren zusammen.</p>
-
 <p>Der zweite Aspekt ist die Position der Figuren. Eine Dame in der Mitte des Felds ist besser als am Rand oder gar in einer Ecke, weil sie dann mehr Angriffsoptionen hat. Das gilt auch für viele andere Figuren. Für den König ist das jedoch nicht so, zumindest nicht zu Beginn des Spiels. Bauern können im Zentrum aktiv sein, oder am Rand den König beschützen, oder später für einen Damentausch auf die andere Seite bewegt werden. Das alles müssen wir beachten.</p>
-
 <p>Um die Position der Figuren automatisch bewerten zu können, gibt es vorgefertigte Listen namens „KingPieceSquare“, „QueenPieceSquare“, usw. Die Listen haben ebenfalls 64 Elemente. Weil unser Programm die schwarzen Figuren hat, müssen die Werte der weißen Figuren mit einem Minus versehen werden. Für die schwarzen Figuren hingegen müssen wir die Position am Feld spiegeln, weil sie ja auf der anderen Seite stehen. Das geht einfach indem man Position „65 - Idx“ verwendet.</p>
 </p>
     </div>
@@ -248,13 +235,9 @@
     </div>
 </div>
 
-
-<h2 id="zugauswahl-alphabetaminmaximpl">Zugauswahl - AlphaBetaMinMaxImpl</h2>
-
+<h2 id="zugauswahl---alphabetaminmaximpl">Zugauswahl - AlphaBetaMinMaxImpl</h2>
 <p>Nachdem wir nun ein Brett bewerten können, müssen wir nun noch die möglichen zukünftigen Brettstellungen berechnen. Dazu simulieren wir alle möglichen Züge, die nacheinander ausgeführt werden können, beginnend mit dem nächsten schwarzen Zug - dann Weiß, dann wieder Schwarz, usw.</p>
-
 <p>Bei der Berechnung der Zwischenzüge des Gegners können wir davon ausgehen, dass der Gegner einen für uns schlechten Zug wählt. Das heißt während wir bei unseren Zügen den besten aussuchen (Max), ist es beim Gegner der für uns schlechteste (Min).</p>
-
 
 
 
@@ -277,11 +260,8 @@
     </div>
 </div>
 
-
 <p>In diesem Entscheidungsbaum-Beispiel gibt es jeweils nur wenige Zugmöglichkeiten, bei Schach sind dies deutlich mehr. Bei vier aufeinanderfolgenden Zügen und 30 Zugmöglichkeiten ergeben sich 30 hoch 4 mögliche Bretter, also 810.000. Für jedes Brett ist dann eine Bewertung nötig, bei 64-fachem Schleifendurchlauf sind das 51.840.000 Feldprüfungen. Das ist in Java oder C++ Programmen noch möglich (wenngleich nicht gut, besser wäre es die Rechenleistung für größere Zugtiefen zu verwenden; dort wird nicht eine Schleife 64-mal durchlaufen, sondern das ganze Brett steht in je einer 64bit-Zahl pro Figur), in Scratch geht das dann aber gar nicht mehr.</p>
-
 <p>Wir können auch hier etwas unternehmen, nämlich das Gleiche was der Mensch intuitiv beim Schachspielen macht: Aussichtslose Zugmöglichkeiten sofort ausblenden. Züge die schlechter sind als der bisher garantierte Bestwert braucht man gar nicht weiter zu betrachten. Und beim Gegner ist es auch so - wenn er eine bessere Zugmöglichkeit hat, muss man sich eine schlechtere nicht mehr weiter ansehen. Man nennt das auch Alpha/Beta-Suche - Alpha und Beta sind die garantierten oberen und unteren Bewertungs-Grenzen für die aktuelle Berechnung. Alle Varianten außerhalb dieser Grenzen kann man verwerfen.</p>
-
 
 
 
@@ -305,15 +285,10 @@ Die einfachste MiniMax/Alpha-Beta Implementierung ergibt sich daraus wie folgt:<
     </div>
 </div>
 
-
 <p>Super, du bist fertig! Starte jetzt das Programm. Du bist am Zug, danach beginnt der Computer zu rechnen, und zwar genau mit den beiden Funktionsblöcken, die du gerade programmiert hast.</p>
-
 <p>Dabei sind noch nicht alle Spezialfälle abgedeckt. Zum Beispiel beachtet unser Programm noch kein Schach in dem sich Schwarz befinden könnte, und auf das reagiert werden muss. Außerdem gilt es ein mögliches Unentschieden zu verhindern, wenn man sich im Vorteil glaubt. Ähnliches gilt für die Brettbewertung - die Mobilität, also wie frei sich Figuren resultierend aus der Zugwahl später bewegen können, sollten wir auch noch berücksichtigen.</p>
-
 <p>Die vollständige Implementierung mit all diesen Details kannst du unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> einsehen.</p>
-
 <p>Weiterführende Informationen zu unserem Schachprojekt gibt es im Scratch Diskussionsforum unter <a href="https://scratch.mit.edu/discuss/post/2967632/" target="_blank">https://scratch.mit.edu/discuss/post/2967632/</a>. Schachprogrammierung im Allgemeinen wird in dieser Präsentation näher behandelt: <a href="https://www.slideshare.net/ArnoHuetter/chess-engine-programming" target="_blank">https://www.slideshare.net/ArnoHuetter/chess-engine-programming</a></p>
-
 <p>Viel Spaß beim Spielen – gewinnst du gegen den Computer? Wie könnte man ihn noch besser machen – vielleicht indem man bei einigen ausgewählten Zügen doch bis zu einer höheren Zugtiefe vorberechnet, auch wenn es dann etwas länger dauert? Das Original-Programm unter <a href="https://scratch.mit.edu/projects/148769358/" target="_blank">https://scratch.mit.edu/projects/148769358/</a> schafft dank vieler  Optimierungen bis zu Zugtiefe 8 plus 7 Folge-Schlagmöglichkeiten bei Schwierigkeitsgrad &ldquo;Difficult&rdquo;, und ist damit das spielstärkste Schachprogramm auf Scratch. Die besten Schachprogramme der Welt können einzelne Sub-Bäume sogar bis zu Zugtiefe 35 berechnen.</p>
  </div>
         </div>

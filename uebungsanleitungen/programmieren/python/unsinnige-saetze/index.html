@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Python baut unsinnige Sätze </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,143 +150,131 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#unsinnige-sätze">Unsinnige Sätze</a>
-<ul>
-<li><a href="#die-aufgabe">Die Aufgabe</a></li>
-<li><a href="#bestandteile-des-programms">Bestandteile des Programms</a>
-<ul>
-<li><a href="#listen">Listen</a></li>
-<li><a href="#funktionen">Funktionen</a></li>
-</ul></li>
-<li><a href="#eine-lösung">Eine Lösung</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#die-aufgabe">Die Aufgabe</a></li>
+    <li><a href="#bestandteile-des-programms">Bestandteile des Programms</a>
+      <ul>
+        <li><a href="#listen">Listen</a></li>
+        <li><a href="#funktionen">Funktionen</a></li>
+      </ul>
+    </li>
+    <li><a href="#eine-lösung">Eine Lösung</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="unsinnige-sätze">Unsinnige Sätze</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="unsinnige-sätze">Unsinnige Sätze</h1>
 <p>In dieser Übunge erstellen wir ein kleines Python-Programm, das unsinnige Sätze zusammenbaut.</p>
-
 <h2 id="die-aufgabe">Die Aufgabe</h2>
-
 <p>Unser Programm soll aus drei verschiedenen Wortgruppen (Subjekt, Verb, Objekt) willkürlich Sätze zusammenstellen.
 Es wählt zufällig je ein Wort aus einer Gruppe aus und dabei können natürlich auch lustige und unsinnige Sätze herauskommen.</p>
-
 <p>Ein möglicher Ablauf könnte dann im Shell-Fenster so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Unsinnige Sätze
-===============
-
-Drücke einfach ENTER, um einen neuen Satz zu erzeugen.
-Oder <span style="color:#a31515">&#34;n&#34;</span> und dann ENTER, um das Programm zu beenden.
-
-Die Katze träumt im Feld.
-
-Die Katze springt im Meer.
-
-Das Känguru schwimmt im Zirkus.
-
-Tom fährt im Bett.
-
-Die Katze fährt im Zirkus.
-
-Lena tanzt im Feld.
-
-Die Katze fährt im Garten.
-
-Servus!</code></pre></div>
-<h2 id="bestandteile-des-programms">Bestandteile des Programms</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Unsinnige Sätze
+</span></span><span style="display:flex;"><span>===============
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Drücke einfach ENTER, um einen neuen Satz zu erzeugen.
+</span></span><span style="display:flex;"><span>Oder <span style="color:#a31515">&#34;n&#34;</span> und dann ENTER, um das Programm zu beenden.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Die Katze träumt im Feld.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Die Katze springt im Meer.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Das Känguru schwimmt im Zirkus.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Tom fährt im Bett.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Die Katze fährt im Zirkus.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Lena tanzt im Feld.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Die Katze fährt im Garten.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Servus!
+</span></span></code></pre></div><h2 id="bestandteile-des-programms">Bestandteile des Programms</h2>
 <p>Zunächst öffnen wir ein neues Code-Fenster, wie wir es am Ende der Ersten-Schritte-Übung und beim Geisterspiel schon gemacht haben.
 Dort werden wir nun unser Unsinnige-Sätze-Programm schreiben und es unter dem Namen &ldquo;unsinnige-saetze.py&rdquo; speichern.</p>
-
 <p>Von den ersten beiden Übungen her kennen wir auch schon ein paar Dinge, die wir hier wieder benötigen:</p>
-
 <ul>
-<li><p>Zufallszahlen: <code>randint(0, n)</code></p></li>
-
-<li><p>Textausgabe in Shell-Fenster <code>print</code> und Eingabe von der Tastatur <code>input</code></p></li>
-
-<li><p>while-Schleife</p></li>
+<li>
+<p>Zufallszahlen: <code>randint(0, n)</code></p>
+</li>
+<li>
+<p>Textausgabe in Shell-Fenster <code>print</code> und Eingabe von der Tastatur <code>input</code></p>
+</li>
+<li>
+<p>while-Schleife</p>
+</li>
 </ul>
-
 <p>Zusätzlich können wir noch folgende Dinge brauchen:</p>
-
 <h3 id="listen">Listen</h3>
-
-<p>In Python können wir Listen von gleichartigen Werte so definieren und in Variablen speichern.<br />
-Außerdem können wir, wie jede Variable auch Variablen, die Listen enthalten mit <code>print</code> ausgeben.<br />
+<p>In Python können wir Listen von gleichartigen Werte so definieren und in Variablen speichern.<!-- raw HTML omitted -->
+Außerdem können wir, wie jede Variable auch Variablen, die Listen enthalten mit <code>print</code> ausgeben.<!-- raw HTML omitted -->
 Gib dazu folendes im Shell-Fenster ein:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; listeA = [1, 2, 3]
-&gt;&gt;&gt; print(<span style="color:#a31515">&#39;listeA =&#39;</span>, listeA)
-listeA = [1, 2, 3]</code></pre></div>
-<p>Wir können dann auch direkt, über einen sogenannten Index, auf jedes Element der Liste zugreifen und es so auslesen oder auf einen neuen Wert setzen.<br />
-Bei Listen hat das erste Element übrigens den Index 0.<br />
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt;&gt;&gt; listeA = [1, 2, 3]
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; print(<span style="color:#a31515">&#39;listeA =&#39;</span>, listeA)
+</span></span><span style="display:flex;"><span>listeA = [1, 2, 3]
+</span></span></code></pre></div><p>Wir können dann auch direkt, über einen sogenannten Index, auf jedes Element der Liste zugreifen und es so auslesen oder auf einen neuen Wert setzen.<!-- raw HTML omitted -->
+Bei Listen hat das erste Element übrigens den Index 0.<!-- raw HTML omitted -->
 Beispiel im Shell-Fenster:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; listeA[1] = 1000
-&gt;&gt;&gt; print(<span style="color:#a31515">&#39;listeA =&#39;</span>, listeA, <span style="color:#a31515">&#39; 3. Element =&#39;</span>, listeA[2])
-listeA = [1, 1000, 3]  3. Element = 3</code></pre></div>
-<p>Wir können auch die Länge einer Liste mit der Funktion <code>len</code> ermitteln:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; len(listeA)
-3</code></pre></div>
-<h3 id="funktionen">Funktionen</h3>
-
-<p>So wie die Funktionen <code>print</code> und <code>input</code>, die wir schon kennen, können wir natürlich auch selbst Funktionen definieren.<br />
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt;&gt;&gt; listeA[1] = 1000
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; print(<span style="color:#a31515">&#39;listeA =&#39;</span>, listeA, <span style="color:#a31515">&#39; 3. Element =&#39;</span>, listeA[2])
+</span></span><span style="display:flex;"><span>listeA = [1, 1000, 3]  3. Element = 3
+</span></span></code></pre></div><p>Wir können auch die Länge einer Liste mit der Funktion <code>len</code> ermitteln:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt;&gt;&gt; len(listeA)
+</span></span><span style="display:flex;"><span>3
+</span></span></code></pre></div><h3 id="funktionen">Funktionen</h3>
+<p>So wie die Funktionen <code>print</code> und <code>input</code>, die wir schon kennen, können wir natürlich auch selbst Funktionen definieren.<!-- raw HTML omitted -->
 Wieder ein Beispiel im Shell-Fenster:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; def add(a, b):
-	<span style="color:#00f">return</span> a + b</code></pre></div>
-<p>Hier haben wir die Funktion <code>add</code> definiert, die 2 sogenannte Parameter <code>a</code> und <code>b</code> erhält, mit denen sie dann, wie mit lokalen Variablen arbeiten kann.<br />
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt;&gt;&gt; def add(a, b):
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">return</span> a + b
+</span></span></code></pre></div><p>Hier haben wir die Funktion <code>add</code> definiert, die 2 sogenannte Parameter <code>a</code> und <code>b</code> erhält, mit denen sie dann, wie mit lokalen Variablen arbeiten kann.<!-- raw HTML omitted -->
 Nun rufen wir die Funktion ein paarmal auf:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&gt;&gt;&gt; add(1, 2)
-3
-&gt;&gt;&gt; add(3, -4)
--1</code></pre></div>
-<h2 id="eine-lösung">Eine Lösung</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt;&gt;&gt; add(1, 2)
+</span></span><span style="display:flex;"><span>3
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; add(3, -4)
+</span></span><span style="display:flex;"><span>-1
+</span></span></code></pre></div><h2 id="eine-lösung">Eine Lösung</h2>
 
 <div class="alert alert-primary">
 Versuche zuerst selbst eine Lösung zu erstellen, bevor du weiterliest!
 </div>
 
-
 <p>Eine mögliche Lösung für das Unsinnige-Sätze-Programm könnte dann so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000"># CoderDojo Linz - Unsinnige Sätze</span>
-
-<span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
-
-subject = [<span style="color:#a31515">&#39;Lena&#39;</span>, <span style="color:#a31515">&#39;Tom&#39;</span>, <span style="color:#a31515">&#39;Die Katze&#39;</span>, <span style="color:#a31515">&#39;Das Auto&#39;</span>, <span style="color:#a31515">&#39;Das Känguru&#39;</span> ]
-verb = [<span style="color:#a31515">&#39;träumt&#39;</span>, <span style="color:#a31515">&#39;schwimmt&#39;</span>, <span style="color:#a31515">&#39;springt&#39;</span>, <span style="color:#a31515">&#39;fährt&#39;</span>, <span style="color:#a31515">&#39;tanzt&#39;</span> ]
-object = [<span style="color:#a31515">&#39;Meer&#39;</span>, <span style="color:#a31515">&#39;Feld&#39;</span>, <span style="color:#a31515">&#39;Weltraum&#39;</span>, <span style="color:#a31515">&#39;Bett&#39;</span>, <span style="color:#a31515">&#39;Garten&#39;</span>, <span style="color:#a31515">&#39;Zirkus&#39;</span> ]
-
-
-<span style="color:#00f">def</span> pick(words):
-	num_words = len(words)
-	num_picked = randint(0, num_words - 1)
-	word_picked = words[num_picked]
-	<span style="color:#00f">return</span> word_picked
-
-
-<span style="color:#00f">def</span> printSentence():
-	<span style="color:#00f">print</span>(pick(subject), pick(verb), <span style="color:#a31515">&#39;im&#39;</span>, pick(object), end=<span style="color:#a31515">&#39;.&#39;</span>)
-	<span style="color:#00f">print</span>()
-
-<span style="color:#00f">print</span>()
-<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Unsinnige Sätze&#39;</span>)
-<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;===============&#39;</span>)
-<span style="color:#00f">print</span>()
-<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Drücke einfach ENTER, um einen neuen Satz zu erzeugen.&#39;</span>)
-<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Oder &#34;n&#34; und dann ENTER, um das Programm zu beenden.&#39;</span>)
-<span style="color:#00f">print</span>()
-
-printSentence()
-again = input()
-<span style="color:#00f">while</span> again != <span style="color:#a31515">&#39;n&#39;</span>:
-	printSentence()
-	again = input()
-
-<span style="color:#00f">print</span>(<span style="color:#a31515">&#39;Servus!&#39;</span>)</code></pre></div> </div>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># CoderDojo Linz - Unsinnige Sätze</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">from</span> random <span style="color:#00f">import</span> randint
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>subject = [<span style="color:#a31515">&#39;Lena&#39;</span>, <span style="color:#a31515">&#39;Tom&#39;</span>, <span style="color:#a31515">&#39;Die Katze&#39;</span>, <span style="color:#a31515">&#39;Das Auto&#39;</span>, <span style="color:#a31515">&#39;Das Känguru&#39;</span> ]
+</span></span><span style="display:flex;"><span>verb = [<span style="color:#a31515">&#39;träumt&#39;</span>, <span style="color:#a31515">&#39;schwimmt&#39;</span>, <span style="color:#a31515">&#39;springt&#39;</span>, <span style="color:#a31515">&#39;fährt&#39;</span>, <span style="color:#a31515">&#39;tanzt&#39;</span> ]
+</span></span><span style="display:flex;"><span>object = [<span style="color:#a31515">&#39;Meer&#39;</span>, <span style="color:#a31515">&#39;Feld&#39;</span>, <span style="color:#a31515">&#39;Weltraum&#39;</span>, <span style="color:#a31515">&#39;Bett&#39;</span>, <span style="color:#a31515">&#39;Garten&#39;</span>, <span style="color:#a31515">&#39;Zirkus&#39;</span> ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> pick(words):
+</span></span><span style="display:flex;"><span>	num_words = len(words)
+</span></span><span style="display:flex;"><span>	num_picked = randint(0, num_words - 1)
+</span></span><span style="display:flex;"><span>	word_picked = words[num_picked]
+</span></span><span style="display:flex;"><span>	<span style="color:#00f">return</span> word_picked
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">def</span> printSentence():
+</span></span><span style="display:flex;"><span>	print(pick(subject), pick(verb), <span style="color:#a31515">&#39;im&#39;</span>, pick(object), end=<span style="color:#a31515">&#39;.&#39;</span>)
+</span></span><span style="display:flex;"><span>	print()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>print(<span style="color:#a31515">&#39;Unsinnige Sätze&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#a31515">&#39;===============&#39;</span>)
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>print(<span style="color:#a31515">&#39;Drücke einfach ENTER, um einen neuen Satz zu erzeugen.&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#a31515">&#39;Oder &#34;n&#34; und dann ENTER, um das Programm zu beenden.&#39;</span>)
+</span></span><span style="display:flex;"><span>print()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>printSentence()
+</span></span><span style="display:flex;"><span>again = input()
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span> again != <span style="color:#a31515">&#39;n&#39;</span>:
+</span></span><span style="display:flex;"><span>	printSentence()
+</span></span><span style="display:flex;"><span>	again = input()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#a31515">&#39;Servus!&#39;</span>)
+</span></span></code></pre></div> </div>
         </div>
     </div>
 </section>  

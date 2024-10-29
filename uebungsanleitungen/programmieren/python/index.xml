@@ -4,146 +4,93 @@
     <title>Python on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/</link>
     <description>Recent content in Python on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 17 May 2020 08:00:19 +0200</lastBuildDate>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Erste Schritte mit Python</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/erste-schritte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/erste-schritte/</guid>
-      <description>Erste Schritte mit Python Diese Übung gibt eine erste Einführung in das Programmieren mit Python. Die Inhalte sind zum größten Teil aus dem Buch Programmieren supereasy.
-Was ist Python? Python ist eine Programmiersprache, die mit englischen Textbefehlen arbeitet. Sie ist etwas schwieriger als Scratch, dafür gibt es allerdings viel mehr Verwendungsmöglichkeiten.
-Zur Vorbereitung werden wir nun zuerst Python installieren und uns dann mit der Oberfläche vertraut machen.
-Python installieren Lade Python nun herunter und installiere es auf deinem Computer.</description>
+      <description>&lt;h1 id=&#34;erste-schritte-mit-python&#34;&gt;Erste Schritte mit Python&lt;/h1&gt;&#xA;&lt;p&gt;Diese Übung gibt eine erste Einführung in das Programmieren mit Python.&#xA;Die Inhalte sind zum größten Teil aus dem Buch &lt;a href=&#34;http://www.amazon.de/Programmieren-supereasy-Einfacher-Einstieg-SCRATCH/dp/3831027005/ref=sr_1_1?ie=UTF8&amp;amp;qid=1452990098&amp;amp;sr=8-1&amp;amp;keywords=programmieren&amp;#43;f%C3%BCr&amp;#43;kinder&#34; target=&#34;_blank&#34;&gt;Programmieren super&lt;em&gt;easy&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;was-ist-python&#34;&gt;Was ist Python?&lt;/h2&gt;&#xA;&lt;p&gt;Python ist eine Programmiersprache, die mit englischen Textbefehlen arbeitet. Sie ist etwas schwieriger als Scratch, dafür gibt es allerdings viel mehr Verwendungsmöglichkeiten.&lt;/p&gt;&#xA;&lt;p&gt;Zur Vorbereitung werden wir nun zuerst Python installieren und uns dann mit der Oberfläche vertraut machen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;python-installieren&#34;&gt;Python installieren&lt;/h2&gt;&#xA;&lt;p&gt;Lade Python nun herunter und installiere es auf deinem Computer. Python 3 ist kostenlos, einfach zu installieren und funktioniert mit den Betriebssystemen Windows, Mac-OS und mit Linux-Systemen wie Ubuntu.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Alien</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/alien/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/alien/</guid>
-      <description>Wir zeichnen einen Alien Mit dem Package Tkinter zeichnen wir einen Alien und lassen ihn auf Tastendruck reagieren. Die Beschreibung erfolgt in Anlehnung an Beispiele aus dem Buch Programmieren supereasy.
-
-   Voraussetzungen Übungsbeispiele Erste Schritte in Python und Von Scratch zu Python.
-Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (File -&amp;gt; New File) und speichere die Datei als Dateityp auf deinem Computer (File -&amp;gt; Save A).</description>
+      <description>&lt;h1 id=&#34;wir-zeichnen-einen-alien&#34;&gt;Wir zeichnen einen Alien&lt;/h1&gt;&#xA;&lt;p&gt;Mit dem Package &lt;code&gt;Tkinter&lt;/code&gt; zeichnen wir einen Alien und lassen ihn auf Tastendruck reagieren. Die Beschreibung erfolgt in Anlehnung an Beispiele aus dem Buch &lt;a href=&#34;https://www.amazon.de/Programmieren-supereasy-Einfacher-Einstieg-SCRATCH/dp/3831027005/ref=sr_1_1?ie=UTF8&amp;amp;qid=1452990098&amp;amp;sr=8-1&amp;amp;keywords=programmieren&amp;#43;f%C3%BCr&amp;#43;kinder&#34; target=&#34;_blank&#34;&gt;Programmieren supereasy&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/alien/img/alien.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;Übungsbeispiele &lt;a href=&#34;../erste-schritte&#34;&gt;Erste Schritte in Python&lt;/a&gt; und &lt;a href=&#34;../von-scratch-zu-python&#34;&gt;Von Scratch zu Python&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;&#xA;&lt;p&gt;Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (&lt;code&gt;File -&amp;gt; New File&lt;/code&gt;) und speichere die Datei als Dateityp auf deinem Computer (&lt;code&gt;File -&amp;gt; Save A&lt;/code&gt;). Wähle als Dateityp .pyw, wenn du mit Windows arbeitest.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Bubble Blaster</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/bubble-blaster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/bubble-blaster/</guid>
-      <description>Bubble Blaster Mit dem Package Tkinter programmieren wir ein erstes Spiel in Python. Ein U-Boot, das mit Pfeiltasten gesteuert wird, soll in der vorgegebenen Zeit so viel Blasen wie möglich zum Platzen bringen. (Die Beschreibung erfolgt in Anlehnung an Beispiele aus dem Buch Programmieren supereasy).
-
-   Voraussetzungen Übungsbeispiel „Alien“
-Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (File -&amp;gt; New File) und speichere die Datei als Dateityp auf deinem Computer (File -&amp;gt; Save As).</description>
+      <description>&lt;h1 id=&#34;bubble-blaster&#34;&gt;Bubble Blaster&lt;/h1&gt;&#xA;&lt;p&gt;Mit dem Package Tkinter programmieren wir ein erstes Spiel in Python. Ein U-Boot, das mit Pfeiltasten gesteuert wird, soll in der vorgegebenen Zeit so viel Blasen wie möglich zum Platzen bringen. (Die Beschreibung erfolgt in Anlehnung an Beispiele aus dem Buch &lt;a href=&#34;https://www.amazon.de/Programmieren-supereasy-Einfacher-Einstieg-SCRATCH/dp/3831027005/ref=sr_1_1?ie=UTF8&amp;amp;qid=1452990098&amp;amp;sr=8-1&amp;amp;keywords=programmieren&amp;#43;f%C3%BCr&amp;#43;kinder&#34; target=&#34;_blank&#34;&gt;Programmieren supereasy&lt;/a&gt;).&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/bubble-blaster/img/bubble-blaster.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;Übungsbeispiel „Alien“&lt;/p&gt;&#xA;&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;&#xA;&lt;p&gt;Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (&lt;code&gt;File -&amp;gt; New File&lt;/code&gt;) und speichere die Datei als Dateityp auf deinem Computer (&lt;code&gt;File -&amp;gt; Save As&lt;/code&gt;). Wähle als Dateityp .pyw, wenn du mit Windows arbeitest.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fang mich</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/fang-mich/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/fang-mich/</guid>
-      <description>Fang mich Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kannst, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird.
-
-   Voraussetzungen Übungsbeispiel Alien, um schon erste Erfahrungen mit Python und Tkinter gesammelt zu haben.
-Python Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (File -&amp;gt; New File) und speichere die Datei als Dateityp auf deinem Computer (File -&amp;gt; Save As).</description>
+      <description>&lt;h1 id=&#34;fang-mich&#34;&gt;Fang mich&lt;/h1&gt;&#xA;&lt;p&gt;Wir verwenden das Package Tkinter um ein einfaches Spiel in Python zu programmieren. Der Fisch, den du mit Pfeiltasten steuern kannst, versucht dem Hai zu entkommen, damit er nicht von ihm gefressen wird.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/fang-mich/img/fang-mich.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;Übungsbeispiel &lt;a href=&#34;../alien&#34;&gt;Alien&lt;/a&gt;, um schon erste Erfahrungen mit Python und Tkinter gesammelt zu haben.&lt;/p&gt;&#xA;&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;&#xA;&lt;p&gt;Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (&lt;code&gt;File -&amp;gt; New File&lt;/code&gt;) und speichere die Datei als Dateityp auf deinem Computer (&lt;code&gt;File -&amp;gt; Save As&lt;/code&gt;). Wähle als Dateityp &lt;code&gt;.pyw&lt;/code&gt;, wenn du mit Windows arbeitest.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Geisterspiel mit Python</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/geisterspiel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/geisterspiel/</guid>
-      <description>Geisterspiel In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python. Es wird nur ein text-basiertes UI (= User Interface; deutsch: Benutzerschnittstelle) haben, d.h. wir werden Text auf dem Bildschirm lesen und Zeichen mit der Tastatur eingeben, um das Spiel zu steuern.
-Die Aufgabe Der Geist versteckt sich zufällig hinter einer von 3 Türen. Du entscheidest, welche Türe du öffnen möchtest. Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste.</description>
+      <description>&lt;h1 id=&#34;geisterspiel&#34;&gt;Geisterspiel&lt;/h1&gt;&#xA;&lt;p&gt;In dieser Übung erstellen wir ein erstes, einfaches Computerspiel mit Python.&#xA;Es wird nur ein text-basiertes UI (= &lt;strong&gt;U&lt;/strong&gt;ser &lt;strong&gt;I&lt;/strong&gt;nterface; deutsch: Benutzerschnittstelle) haben, d.h. wir werden Text auf dem Bildschirm lesen und Zeichen mit der Tastatur eingeben, um das Spiel zu steuern.&lt;/p&gt;&#xA;&lt;h2 id=&#34;die-aufgabe&#34;&gt;Die Aufgabe&lt;/h2&gt;&#xA;&lt;p&gt;Der Geist versteckt sich zufällig hinter einer von 3 Türen.&#xA;Du entscheidest, welche Türe du öffnen möchtest.&#xA;Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Music Player</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/music-player/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/music-player/</guid>
-      <description>Music Player Wir programmieren einen Musicplayer in Python, mit dem du deine mp3-Dateien abspielen kannst. Für das Interface verwenden wir das Package Tkinter und für die Steuerung der Musik benötigen wir pygame.
-
-   Voraussetzungen Übungsbeispiel Alien, um schon erste Erfahrungen mit Python und Tkinter gesammelt zu haben.
-Installieren von Packages Wenn du das erste Mal pygame verwendest, dann musst du dieses Package einmal über die Kommmandozeile installieren.</description>
+      <description>&lt;h1 id=&#34;music-player&#34;&gt;Music Player&lt;/h1&gt;&#xA;&lt;p&gt;Wir programmieren einen Musicplayer in Python, mit dem du deine mp3-Dateien abspielen kannst. Für das Interface verwenden wir das Package &lt;code&gt;Tkinter&lt;/code&gt; und für die Steuerung der Musik benötigen wir &lt;code&gt;pygame&lt;/code&gt;.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/music-player/img/music-player.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;Übungsbeispiel &lt;a href=&#34;../alien&#34;&gt;Alien&lt;/a&gt;, um schon erste Erfahrungen mit Python und Tkinter gesammelt zu haben.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installieren-von-packages&#34;&gt;Installieren von Packages&lt;/h2&gt;&#xA;&lt;p&gt;Wenn du das erste Mal &lt;code&gt;pygame&lt;/code&gt; verwendest, dann musst du dieses Package einmal über die Kommmandozeile installieren. Starte dazu den Command Prompt in Windows, indem du auf den Windows Startbutton klickst und nach &lt;code&gt;cmd&lt;/code&gt; suchst. Tippe folgenden Befehl ein und drücke Enter:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Python baut unsinnige Sätze</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/unsinnige-saetze/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/unsinnige-saetze/</guid>
-      <description>Unsinnige Sätze In dieser Übunge erstellen wir ein kleines Python-Programm, das unsinnige Sätze zusammenbaut.
-Die Aufgabe Unser Programm soll aus drei verschiedenen Wortgruppen (Subjekt, Verb, Objekt) willkürlich Sätze zusammenstellen. Es wählt zufällig je ein Wort aus einer Gruppe aus und dabei können natürlich auch lustige und unsinnige Sätze herauskommen.
-Ein möglicher Ablauf könnte dann im Shell-Fenster so aussehen:
-Unsinnige Sätze =============== Drücke einfach ENTER, um einen neuen Satz zu erzeugen.</description>
+      <description>&lt;h1 id=&#34;unsinnige-sätze&#34;&gt;Unsinnige Sätze&lt;/h1&gt;&#xA;&lt;p&gt;In dieser Übunge erstellen wir ein kleines Python-Programm, das unsinnige Sätze zusammenbaut.&lt;/p&gt;&#xA;&lt;h2 id=&#34;die-aufgabe&#34;&gt;Die Aufgabe&lt;/h2&gt;&#xA;&lt;p&gt;Unser Programm soll aus drei verschiedenen Wortgruppen (Subjekt, Verb, Objekt) willkürlich Sätze zusammenstellen.&#xA;Es wählt zufällig je ein Wort aus einer Gruppe aus und dabei können natürlich auch lustige und unsinnige Sätze herauskommen.&lt;/p&gt;&#xA;&lt;p&gt;Ein möglicher Ablauf könnte dann im Shell-Fenster so aussehen:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Unsinnige Sätze&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;===============&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Drücke einfach ENTER, um einen neuen Satz zu erzeugen.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Oder &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;n&amp;#34;&lt;/span&gt; und dann ENTER, um das Programm zu beenden.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Die Katze träumt im Feld.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Die Katze springt im Meer.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Das Känguru schwimmt im Zirkus.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Tom fährt im Bett.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Die Katze fährt im Zirkus.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Lena tanzt im Feld.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Die Katze fährt im Garten.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Servus!&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;bestandteile-des-programms&#34;&gt;Bestandteile des Programms&lt;/h2&gt;&#xA;&lt;p&gt;Zunächst öffnen wir ein neues Code-Fenster, wie wir es am Ende der Ersten-Schritte-Übung und beim Geisterspiel schon gemacht haben.&#xA;Dort werden wir nun unser Unsinnige-Sätze-Programm schreiben und es unter dem Namen &amp;ldquo;unsinnige-saetze.py&amp;rdquo; speichern.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Schriftlich Multiplizieren mit Python</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/schriftlich-multiplizieren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/schriftlich-multiplizieren/</guid>
-      <description>Schriftlich Multiplizieren mit Python Es wäre doch nett, wenn ein Programm das schriftliche Multiplizieren mit allen Zwischenschritten vorführen könnte? Für die Faktoen 345 und 789 soll das Programm z.B. folgendes ausgeben:
-345 x 789 --------- 2415 2760 3105 ------ 272205 Allgemeines zur Programmiersprache Python Wir verwenden für die Programmierung die Programmiersprache Python (siehe die Python Homepage www.python.org), genauer gesagt Python 3, also eine Version von Python, deren Bezeichnung mit 3 beginnt, z.</description>
+      <description>&lt;h1 id=&#34;schriftlich-multiplizieren-mit-python&#34;&gt;Schriftlich Multiplizieren mit Python&lt;/h1&gt;&#xA;&lt;p&gt;Es wäre doch nett, wenn ein Programm das schriftliche Multiplizieren&#xA;mit allen Zwischenschritten vorführen könnte?&#xA;Für die Faktoen &lt;code&gt;345&lt;/code&gt; und &lt;code&gt;789&lt;/code&gt; soll das Programm z.B. folgendes ausgeben:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 345 x 789&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; ---------&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2415&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 2760&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  3105&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;------&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;272205&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;allgemeines-zur-programmiersprache-python&#34;&gt;Allgemeines zur Programmiersprache Python&lt;/h1&gt;&#xA;&lt;p&gt;Wir verwenden für die Programmierung die Programmiersprache Python (siehe die Python Homepage &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;www.python.org&lt;/a&gt;),&#xA;genauer gesagt Python 3, also eine Version von Python, deren Bezeichnung mit 3 beginnt, z.B. Python 3.7.1.&#xA;Zu Beginn ist es am einfachsten, wenn du Python-Programme online im Browser (z.B. auf &lt;a href=&#34;https://www.onlinegdb.com/online_python_interpreter&#34; target=&#34;_blank&#34;&gt;www.onlinegdb.com/online_python_interpreter&lt;/a&gt;)&#xA;entwickelst und ausführst.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Snake mit Python</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/snake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/snake/</guid>
-      <description>Python Snake In dieser Übung erstellen wir das Computerspiel Snake mit Python. So wie für das Bubble Blaster Spiel werden wir auch hier auf das Package Tkinter zurückgreifen, um die Spielelemente (Kugeln aus denen die Schlage besteht, Apfel) auf den Bildschirm zu malen.
-Voraussetzungen Es wäre ideal, wenn du das Bubble Blaster Spiel davor schon programmiert hast, um dich so mit Tkinter vertraut zu machen.
-Code Stand nach der ersten Übungseinheit Den Source Code Stand nach der ersten Übungseinheit am 26.</description>
+      <description>&lt;h1 id=&#34;python-snake&#34;&gt;Python Snake&lt;/h1&gt;&#xA;&lt;p&gt;In dieser Übung erstellen wir das Computerspiel Snake mit Python. So wie für das &lt;em&gt;Bubble Blaster&lt;/em&gt; Spiel werden wir auch hier auf das Package Tkinter zurückgreifen, um die Spielelemente (Kugeln aus denen die Schlage besteht, Apfel) auf den Bildschirm zu malen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;Es wäre ideal, wenn du das &lt;em&gt;Bubble Blaster&lt;/em&gt; Spiel davor schon programmiert hast, um dich so mit Tkinter vertraut zu machen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;code-stand-nach-der-ersten-übungseinheit&#34;&gt;Code Stand nach der ersten Übungseinheit&lt;/h2&gt;&#xA;&lt;p&gt;Den Source Code Stand nach der ersten Übungseinheit am 26.6.2020, von dem aus wir in der zweiten Einheit am 3.7.2020 weitergearbeitet haben, steht &lt;a href=&#34;source/20200626_snake.py&#34;&gt;hier&lt;/a&gt; zum Download bereit.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Von Scratch zu Python</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/von-scratch-zu-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/von-scratch-zu-python/</guid>
-      <description>Von Scratch zu Python Du zeichnest eine geometrische Figur in Scratch und dann übersetzt du das Programm in die Programmiersprache Python.
-
-   Voraussetzungen Übungsbeispiel: Erste Schritte in Python
-Scratch Laden des Malstifts Um in Scratch zu zeichnen, muss man zuerst die Erweiterung „Malstift“ laden. Klicke dazu auf das Symbol in der linken unteren Ecke und wähle dann den Malstift aus. Damit bekommst du einen neuen Eintrag „Malstift“ im Menü am linken Bildschirmrand und eine Menge neuer Blöcke, die du zum Zeichnen verwenden kannst.</description>
+      <description>&lt;h1 id=&#34;von-scratch-zu-python&#34;&gt;Von Scratch zu Python&lt;/h1&gt;&#xA;&lt;p&gt;Du zeichnest eine geometrische Figur in Scratch und dann übersetzt du das Programm in die Programmiersprache Python.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/von-scratch-zu-python/img/von-scratch-zu-python.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;Übungsbeispiel: &lt;a href=&#34;../erste-schritte&#34;&gt;Erste Schritte in Python&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;scratch&#34;&gt;Scratch&lt;/h2&gt;&#xA;&lt;h3 id=&#34;laden-des-malstifts&#34;&gt;Laden des Malstifts&lt;/h3&gt;&#xA;&lt;p&gt;Um in Scratch zu zeichnen, muss man zuerst die Erweiterung „Malstift“ laden. Klicke dazu auf das Symbol in der linken unteren Ecke und wähle dann den Malstift aus. Damit bekommst du einen neuen Eintrag „Malstift“ im Menü am linken Bildschirmrand und eine Menge neuer Blöcke, die du zum Zeichnen verwenden kannst.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Zahlen raten mit Python - Teil 1</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten/</guid>
-      <description>Zahlen raten mit Python Wollen wir ein Programm für das Spiel &amp;ldquo;Zahlen raten&amp;rdquo; schreiben? Der Computer denkt sich eine Zahl im Bereich von 1 - 100 und der Spieler soll diese erraten. Nach jedem Versuch gibt das Programm aus, ob die eingegebene Zahl zu klein, zu groß oder richtig war.
-Allgemeines zur Programmiersprache Python Wir verwenden für die Programmierung die Programmiersprache Python (siehe die Python Homepage www.python.org), genauer gesagt Python 3, also eine Version von Python, deren Bezeichnung mit 3 beginnt, z.</description>
+      <description>&lt;h1 id=&#34;zahlen-raten-mit-python&#34;&gt;Zahlen raten mit Python&lt;/h1&gt;&#xA;&lt;p&gt;Wollen wir ein Programm für das Spiel &amp;ldquo;Zahlen raten&amp;rdquo; schreiben?&#xA;Der Computer denkt sich eine Zahl im Bereich von 1 - 100 und der Spieler soll diese erraten.&#xA;Nach jedem Versuch gibt das Programm aus, ob die eingegebene Zahl zu klein, zu groß&#xA;oder richtig war.&lt;/p&gt;&#xA;&lt;h1 id=&#34;allgemeines-zur-programmiersprache-python&#34;&gt;Allgemeines zur Programmiersprache Python&lt;/h1&gt;&#xA;&lt;p&gt;Wir verwenden für die Programmierung die Programmiersprache Python (siehe die Python Homepage &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;www.python.org&lt;/a&gt;),&#xA;genauer gesagt Python 3, also eine Version von Python, deren Bezeichnung mit 3 beginnt, z.B. Python 3.7.1.&#xA;Zu Beginn ist es am einfachsten, wenn du Python-Programme online im Browser (z.B. auf &lt;a href=&#34;https://www.onlinegdb.com/online_python_interpreter&#34; target=&#34;_blank&#34;&gt;www.onlinegdb.com/online_python_interpreter&lt;/a&gt;)&#xA;entwickelst und ausführst.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Zahlen raten mit Python - Teil 2</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/zahlenraten-2/</guid>
-      <description>Zahlen raten mit Python Teil 2 Kennst du den ersten Teil, wo wir ein Programm entwickelt haben, das sich eine Zahl ausdenkt und den Spieler erraten lässt? Jetzt wollen wir die Rollen tauschen und den Computer eine vom Menschen gedachte Zahl erraten lassen. Der Computer fragt zuerst, wie groß die gedachte Zahl höchstens sein kann, und beginnt dann mit dem Raten. Der Spieler gibt nach jedem Versuch an, ob die vom Computer ausgespuckte Zahl zu klein, zu groß oder richtig war.</description>
+      <description>&lt;h1 id=&#34;zahlen-raten-mit-python-teil-2&#34;&gt;Zahlen raten mit Python Teil 2&lt;/h1&gt;&#xA;&lt;p&gt;Kennst du den &lt;a href=&#34;python-zahlenraten.html&#34;&gt;ersten Teil&lt;/a&gt;, wo wir ein Programm entwickelt haben,&#xA;das sich eine Zahl ausdenkt und den Spieler erraten lässt?&#xA;Jetzt wollen wir die Rollen tauschen und den Computer eine vom Menschen gedachte Zahl erraten lassen.&#xA;Der Computer fragt zuerst, wie groß die gedachte Zahl höchstens sein kann, und beginnt dann&#xA;mit dem Raten. Der Spieler gibt nach jedem Versuch an, ob die vom Computer ausgespuckte Zahl zu klein, zu groß&#xA;oder richtig war.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

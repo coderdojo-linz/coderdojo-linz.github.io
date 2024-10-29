@@ -4,154 +4,106 @@
     <title>CoderDojo Linz Mentoren on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/mentoren/</link>
     <description>Recent content in CoderDojo Linz Mentoren on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/mentoren/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/mentoren/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alexander Rosemann</title>
       <link>https://linz.coderdojo.net/mentoren/rosemann-alexander/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/rosemann-alexander/</guid>
-      <description>Alexander Rosemann ist Geschäftsführer der scintillation e.U. Als Berater, Architekt und Entwickler beschäftigt er sich vorwiegend mit komplexen Geschäftsanwendungen im Java Umfeld.
-Statistische Analysen großer Datenbestände mit R und die Verarbeitung von unstrukturierten Daten mit Apache Solr/Lucene runden sein Profil ab.
-Als Mitbegründer des Technologieplauscherls ist er als Organisator und Moderator des in Linz monatlich stattfindenden Entwicklertreffens in seiner Freizeit tätig.</description>
+      <description>&lt;p&gt;Alexander Rosemann ist Geschäftsführer der scintillation e.U. Als Berater, Architekt und Entwickler beschäftigt er sich vorwiegend mit komplexen Geschäftsanwendungen im Java Umfeld.&lt;/p&gt;&#xA;&lt;p&gt;Statistische Analysen großer Datenbestände mit R und die Verarbeitung von unstrukturierten Daten mit Apache Solr/Lucene runden sein Profil ab.&lt;/p&gt;&#xA;&lt;p&gt;Als Mitbegründer des &lt;!-- raw HTML omitted --&gt;Technologieplauscherls&lt;!-- raw HTML omitted --&gt; ist er als Organisator und Moderator des in Linz monatlich stattfindenden Entwicklertreffens in seiner Freizeit tätig.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Arno Hütter</title>
       <link>https://linz.coderdojo.net/mentoren/huetter-arno/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/huetter-arno/</guid>
-      <description>Arno Hütter hat seine ersten Codezeilen mit zwölf Jahren auf einem Sinclair ZX80 8bit Homecomputer geschrieben. Er studierte Wirtschaftsinformatik und Informatik an der Universität Linz, und ist seit 1995 beruflich in der Software-Entwicklung tätig.
-Im Laufe der Zeit programmierte er Software-Systeme für Banken, Mobiltelefonie, Krankenhäuser, die öffentliche Verwaltung und für Application Performance Management in C++, Java und C#. Performance-Tuning, zum Beispiel von Datenbanken, macht ihm besonders Spaß.
-Heute arbeitet er als Produkt-Entwicklungsleiter bei Dynatrace, einem international erfolgreichen APM Vendor.</description>
+      <description>&lt;p&gt;Arno Hütter hat seine ersten Codezeilen mit zwölf Jahren auf einem Sinclair ZX80 8bit Homecomputer geschrieben. Er studierte Wirtschaftsinformatik und Informatik an der Universität Linz, und ist seit 1995 beruflich in der Software-Entwicklung tätig.&lt;/p&gt;&#xA;&lt;p&gt;Im Laufe der Zeit programmierte er Software-Systeme für Banken, Mobiltelefonie, Krankenhäuser, die öffentliche Verwaltung und für Application Performance Management in C++, Java und C#. Performance-Tuning, zum Beispiel von Datenbanken, macht ihm besonders Spaß.&lt;/p&gt;&#xA;&lt;p&gt;Heute arbeitet er als Produkt-Entwicklungsleiter bei Dynatrace, einem international erfolgreichen APM Vendor. Arno ist Vater zweier Söhne im Alter von zehn und zwölf Jahren.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Elisabeth Rosemann</title>
       <link>https://linz.coderdojo.net/mentoren/rosemann-elisabeth/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/rosemann-elisabeth/</guid>
-      <description>In der Java Enterprise Entwicklung tätig, spezialisiert Elisabeth sich auf die Verarbeitung von unstrukturierten Daten mit Apache Solr und Lucene. Dabei ist sie zusätzlich zur Software Entwicklung auch als Projektmanagerin und Beraterin für Java Webanwendungen tätig.
-Ihre Interessen reichen von Prototyping mit Python bis hin zu statistischen Analysen großer Datenbestände mit R.
-In ihrer Freizeit ist sie außerdem Mitglied des Organisationsteams des Technologieplauscherls Linz.</description>
+      <description>&lt;p&gt;In der Java Enterprise Entwicklung tätig, spezialisiert Elisabeth sich auf die Verarbeitung von unstrukturierten Daten mit Apache Solr und Lucene. Dabei ist sie zusätzlich zur Software Entwicklung auch als Projektmanagerin und Beraterin für Java Webanwendungen tätig.&lt;/p&gt;&#xA;&lt;p&gt;Ihre Interessen reichen von Prototyping mit Python bis hin zu statistischen Analysen großer Datenbestände mit R.&lt;/p&gt;&#xA;&lt;p&gt;In ihrer Freizeit ist sie außerdem Mitglied des Organisationsteams des Technologieplauscherls Linz.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Günther Ehrenberger</title>
       <link>https://linz.coderdojo.net/mentoren/ehrenberger-guenter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/ehrenberger-guenter/</guid>
-      <description>Elektronische Schaltungen und Microprozessoren wie Raspberry, micro:Bit, Arduino und Co sind sein Freizeitvergnügen. Günther Ehrenberger hat darum seinen Job als Anlagenbauer aufgegeben und wechselte in die HTL Leonding, um Lehrer zu werden.
-Um sich die Elektronik Untertan zu machen werden Scratch, Python, HTML, CSS, JavaScript, C usw. verwendet. Nach dem Motto “Aller Anfang ist leicht” beschäftigen wir uns im CoderDojo mit dem BBC micro:bit, dem Arduino und dem ESP WLAN-Controller. Wir basteln und programmieren Smart Home Komponenten mit einfachen günstigen Mitteln ohne große Vorkenntnisse und lernen so nebenbei die IoT Techniken der Neuzeit.</description>
+      <description>&lt;p&gt;Elektronische Schaltungen und Microprozessoren wie Raspberry, micro:Bit, Arduino und Co sind sein Freizeitvergnügen. Günther Ehrenberger hat darum seinen Job als Anlagenbauer aufgegeben und wechselte in die HTL Leonding, um Lehrer zu werden.&lt;/p&gt;&#xA;&lt;p&gt;Um sich die Elektronik Untertan zu machen werden Scratch, Python, HTML, CSS, JavaScript, C usw. verwendet. Nach dem Motto “Aller Anfang ist leicht” beschäftigen wir uns im CoderDojo mit dem BBC micro:bit, dem Arduino und dem ESP WLAN-Controller. Wir basteln und programmieren Smart Home Komponenten mit einfachen günstigen Mitteln ohne große Vorkenntnisse und lernen so nebenbei die IoT Techniken der Neuzeit.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hans-Peter Weidinger</title>
       <link>https://linz.coderdojo.net/mentoren/weidinger-hans-peter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/weidinger-hans-peter/</guid>
-      <description>Hans-Peter ist Senior Software Engeneer bei Dynatrace. Mit „Programmieren“ (wenn man das in Basic so nennen darf) kam er das erste mal in Berührung als in der Familie ein C64 angeschafft wurde.
-Der Besuch der HTL (Elektronik/Informatik) und das Studium Softwae Engeneering an der FH Hagenberg waren dann mehr oder weniger schon &amp;ldquo;vorprogrammiert&amp;rdquo;. Seither war er in Produkt- und Projektentwicklung tätig. Unter anderem für einen österreichischen Mobilfunkbetreiber, wo er an der Entwicklung von SMS und MMS Lösungen sowie deren Anbindungen mitarbeitete.</description>
+      <description>&lt;p&gt;Hans-Peter ist Senior Software Engeneer bei Dynatrace. Mit „Programmieren“ (wenn man das in Basic so nennen darf) kam er das erste mal in Berührung als in der Familie ein C64 angeschafft wurde.&lt;/p&gt;&#xA;&lt;p&gt;Der Besuch der HTL (Elektronik/Informatik) und das Studium Softwae Engeneering an der FH Hagenberg waren dann mehr oder weniger schon &amp;ldquo;vorprogrammiert&amp;rdquo;.&#xA;Seither war er in Produkt- und Projektentwicklung tätig. Unter anderem für einen österreichischen Mobilfunkbetreiber, wo er an der Entwicklung von SMS und MMS Lösungen sowie deren Anbindungen mitarbeitete.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Jonas Kamsker</title>
       <link>https://linz.coderdojo.net/mentoren/jonas-kamsker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/jonas-kamsker/</guid>
-      <description>Jonas ist Software-Entwickler bei Apro Kassensysteme und ist seit Dezember 2019 dabei.
-Angefangen zu programmieren hat er, als er schon 12 Jahre alt war. Hauptsächlich bewegte er sich im .NET Bereich, zuerst VB.NET und mit 14 dann schließlich schaffte er den Übergang zu C#. Dort ist er aber nicht hängen geblieben. Mittlerweile arbeitet er auch mit JavaScript, C++, (wenn&amp;rsquo;s sein muss auch Java) und mit generell allem, was grad&amp;rsquo; so Spaß macht.</description>
+      <description>&lt;p&gt;Jonas ist Software-Entwickler bei Apro Kassensysteme und ist seit Dezember 2019 dabei.&lt;/p&gt;&#xA;&lt;p&gt;Angefangen zu programmieren hat er, als er schon 12 Jahre alt war. Hauptsächlich bewegte er sich im .NET Bereich, zuerst VB.NET und mit 14 dann schließlich schaffte er den Übergang zu C#. Dort ist er aber nicht hängen geblieben. Mittlerweile arbeitet er auch mit JavaScript, C++, (wenn&amp;rsquo;s sein muss auch Java) und mit generell allem, was grad&amp;rsquo; so Spaß macht.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Karin Huber</title>
       <link>https://linz.coderdojo.net/mentoren/huber-karin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/huber-karin/</guid>
-      <description>Karin Huber ist Mitgründerin und Geschäftsführerin der Firma software architechts gmbh und ist seit mehr als 15 Jahren in der Softwareentwicklung tätig.
-Ihre Schwerpunkte liegen im Bereich WPF und Silverlight, sowie in der Webentwicklung mit HTML5, CSS3 und AngularJS. Außerdem ist sie Mitautorin der beiden Bücher &amp;ldquo;XAML. schnell + kompakt&amp;rdquo; und &amp;ldquo;WPF und XAML Programmierhandbuch&amp;rdquo;.</description>
+      <description>&lt;p&gt;Karin Huber ist Mitgründerin und Geschäftsführerin der Firma software architechts gmbh und ist seit mehr als 15 Jahren in der Softwareentwicklung tätig.&lt;/p&gt;&#xA;&lt;p&gt;Ihre Schwerpunkte liegen im Bereich WPF und Silverlight, sowie in der Webentwicklung mit HTML5, CSS3 und AngularJS. Außerdem ist sie Mitautorin der beiden Bücher &amp;ldquo;XAML. schnell + kompakt&amp;rdquo; und &amp;ldquo;WPF und XAML Programmierhandbuch&amp;rdquo;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mario Schnalzenberger</title>
       <link>https://linz.coderdojo.net/mentoren/mario-schnalzenberger/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/mario-schnalzenberger/</guid>
-      <description>Mario Schnalzenberger ist seit über 25 Jahren in der IT-Industrie tätig und setzt sich seit fast 15 Jahren im Bereich Statistik und Big Data als auch im Predictive Bereich mit vielseitigen Lösungen auseinander. Seit sechs Jahren ist er im cubido-Team und unterstützt die Kunden in diesem spannenden Umfeld. Mario hat Abschlüsse in Statistik, Volkswirtschaftslehre und Sozial- und Wirtschaftswissenschaften. Er unterrichtet(e) an mehreren Universitäten und Hochschulen in Österreich sowie der HTL Leonding und trägt regelmäßig bei verschiedensten Konferenzen in den vielfältigen Themen der angewandten Statistik, Informatik, IOT und AI vor.</description>
+      <description>&lt;p&gt;Mario Schnalzenberger ist seit über 25 Jahren in der IT-Industrie tätig und setzt sich seit fast 15 Jahren im Bereich Statistik und Big Data als auch im Predictive Bereich mit vielseitigen Lösungen auseinander. Seit sechs Jahren ist er im cubido-Team und unterstützt die Kunden in diesem spannenden Umfeld. Mario hat Abschlüsse in Statistik, Volkswirtschaftslehre und Sozial- und Wirtschaftswissenschaften. Er unterrichtet(e) an mehreren Universitäten und Hochschulen in Österreich sowie der HTL Leonding und trägt regelmäßig bei verschiedensten Konferenzen in den vielfältigen Themen der angewandten Statistik, Informatik, IOT und AI vor.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Matthias Ableidinger</title>
       <link>https://linz.coderdojo.net/mentoren/ableidinger-matthias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/ableidinger-matthias/</guid>
-      <description>Von klein auf fasziniert von Computern ist es keine Überraschung, dass Matthias nun seit über 3 Jahre Hauptberuflich als Softwareentwickler bei der Linzer Firma Catalysts unterwegs ist. Während er dort großteils Webanwendungen in Java programmiert und betreibt, beschäftigt er sich privat mit Rätsel, Smarthome, neuen Technologien und anderen Spielereien.
-Wenn er nicht vorm Computer sitzt, kocht und liest er gerne, und er hat nach jahrelanger Müdigkeit noch immer nicht gelernt rechtzeitig ins Bett zu gehn.</description>
+      <description>&lt;p&gt;Von klein auf fasziniert von Computern ist es keine Überraschung, dass Matthias nun seit über 3 Jahre Hauptberuflich als Softwareentwickler bei der Linzer Firma Catalysts unterwegs ist. Während er dort großteils Webanwendungen in Java programmiert und betreibt, beschäftigt er sich privat mit Rätsel, Smarthome, neuen Technologien und anderen Spielereien.&lt;/p&gt;&#xA;&lt;p&gt;Wenn er nicht vorm Computer sitzt, kocht und liest er gerne, und er hat nach jahrelanger Müdigkeit noch immer nicht gelernt rechtzeitig ins Bett zu gehn.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Michael Wagner</title>
       <link>https://linz.coderdojo.net/mentoren/michael-wagner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/michael-wagner/</guid>
-      <description>IT Leiter, Technikfreak, Bastler, Elektroniker und Amateurfunker</description>
+      <description>&lt;p&gt;IT Leiter, Technikfreak, Bastler, Elektroniker und Amateurfunker&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Peter Bauer</title>
       <link>https://linz.coderdojo.net/mentoren/bauer-peter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/bauer-peter/</guid>
-      <description>Peter Bauer hat schon so manches quer durch den Gemüsegarten programmiert. Angefangen von Datenbankanwendungen aus den späten 80er-Jahren (Achtung Dinosaurier-Alarm!!) über ganz viel C und C++ Programmen zur Bild- und Signalanalyse bis hin zu Software für Mobiltelefone.
-In letzter Zeit gesellte sich auch das eine oder andere Web-Projekt dazu.
-Peter unterrichtet Programmieren, Technische und Theoretische Informatik und Projektentwicklung an der HTL Leonding.
-Privat ist er verheiratet und Vater zweier Söhne im Alter von 13 und 16 Jahren.</description>
+      <description>&lt;p&gt;Peter Bauer hat schon so manches quer durch den Gemüsegarten programmiert. Angefangen von Datenbankanwendungen aus den späten 80er-Jahren (Achtung Dinosaurier-Alarm!!) über ganz viel C und C++ Programmen zur Bild- und Signalanalyse bis hin zu Software für Mobiltelefone.&lt;/p&gt;&#xA;&lt;p&gt;In letzter Zeit gesellte sich auch das eine oder andere Web-Projekt dazu.&lt;/p&gt;&#xA;&lt;p&gt;Peter unterrichtet Programmieren, Technische und Theoretische Informatik und Projektentwicklung an der HTL Leonding.&lt;/p&gt;&#xA;&lt;p&gt;Privat ist er verheiratet und Vater zweier Söhne im Alter von 13 und 16 Jahren.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pia Gerhofer</title>
       <link>https://linz.coderdojo.net/mentoren/gerhofer-pia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/gerhofer-pia/</guid>
-      <description>Pia Gerhofer ist Software Entwicklerin Linz und beschäftigt sich in ihrer Arbeit hauptsächlich mit der Entwicklung von Business Applikationen und programmiert hauptsächlich in Kotlin/Java und Angular.
-Sie begeistert sich für Technolgie, Umwelt, Förderung von Frauen in der IT und Bildung und ist daher auch oft bei Tech-meetups in und um Linz getroffen werden. Außerdem gründete sie zusammen mit einigen Kolleginnen einen Verein (Female Coders Linz) der es sich zum Ziel setzt, Frauen den Einstieg in die Programmierung zu erleichtern und ihnen ein Netzwerk zu bieten.</description>
+      <description>&lt;p&gt;Pia Gerhofer ist Software Entwicklerin Linz und beschäftigt sich in ihrer Arbeit hauptsächlich mit der Entwicklung von Business Applikationen und programmiert hauptsächlich in Kotlin/Java und Angular.&lt;/p&gt;&#xA;&lt;p&gt;Sie begeistert sich für Technolgie, Umwelt, Förderung von Frauen in der IT und Bildung und ist daher auch oft bei Tech-meetups in und um Linz getroffen werden. Außerdem gründete sie zusammen mit einigen Kolleginnen &lt;a href=&#34;https://female-coders.at/de/home-de/&#34; target=&#34;_blank&#34;&gt;einen Verein (Female Coders Linz)&lt;/a&gt; der es sich zum Ziel setzt, Frauen den Einstieg in die Programmierung zu erleichtern und ihnen ein Netzwerk zu bieten.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rainer Stropek</title>
       <link>https://linz.coderdojo.net/mentoren/stropek-rainer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/stropek-rainer/</guid>
-      <description>Rainer Stropek ist seit über 20 Jahren als Unternehmer in der IT-Industrie tätig. Er gründete und führte in dieser Zeit mehrere IT-Dienstleistungsunternehmen und entwickelt im Augenblick in seiner Firma &amp;ldquo;software architects&amp;rdquo; mit seinem Team die preisgekrönte Software &amp;ldquo;time cockpit&amp;rdquo;.
-Rainer hat Abschlüsse an der Höheren Technischen Schule für MIS, Leonding (AT) sowie der University of Derby (UK). Er ist Autor mehrerer Fachbücher und Artikel in Magazinen im Umfeld von Microsoft .</description>
+      <description>&lt;p&gt;Rainer Stropek ist seit über 20 Jahren als Unternehmer in der IT-Industrie tätig. Er gründete und führte in dieser Zeit mehrere IT-Dienstleistungsunternehmen und entwickelt im Augenblick in seiner Firma &amp;ldquo;software architects&amp;rdquo; mit seinem Team die preisgekrönte Software &amp;ldquo;time cockpit&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;Rainer hat Abschlüsse an der Höheren Technischen Schule für MIS, Leonding (AT) sowie der University of Derby (UK). Er ist Autor mehrerer Fachbücher und Artikel in Magazinen im Umfeld von Microsoft .NET und C#. Seine technischen Schwerpunkte sind C# und das .NET Framework, XAML, die Microsoft Azure Plattform, SQL Server sowie Web Development.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Raphael Schwarz</title>
       <link>https://linz.coderdojo.net/mentoren/schwarz-raphael/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/mentoren/schwarz-raphael/</guid>
-      <description>Raphael Schwarz ist Gründer und Geschäftsführer der codeworx gmbh in Wels und seit vielen Jahren in der Softwarenentwicklung tätig.
-Sein Kernaufgabengebiet liegt in der Architekturberatung und im Coaching von größeren Softwareprojekten mit .NET bzw. Web Technologien.</description>
+      <description>&lt;p&gt;Raphael Schwarz ist Gründer und Geschäftsführer der codeworx gmbh in Wels und seit vielen Jahren in der Softwarenentwicklung tätig.&lt;/p&gt;&#xA;&lt;p&gt;Sein Kernaufgabengebiet liegt in der Architekturberatung und im Coaching von größeren Softwareprojekten mit .NET bzw. Web Technologien.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

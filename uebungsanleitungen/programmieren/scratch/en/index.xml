@@ -4,43 +4,30 @@
     <title>Englische Übungsanleitungen on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/</link>
     <description>Recent content in Englische Übungsanleitungen on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 17 May 2020 07:59:43 +0200</lastBuildDate>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Catch Me</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/catch-me/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/catch-me/</guid>
-      <description>Creating Stage and Sprites   You need to decide what your stage should look like. First of all we need to build our underwater world where our fishes live. Click on Select backdrop from library on the bottom left and choose your background image, for example the underwater1.
-     The next step is to delete the Scratchy sprite with the name Sprite1, by right-clicking on it and selecting delete.</description>
+      <description>&lt;h2 id=&#34;creating-stage-and-sprites&#34;&gt;Creating Stage and Sprites&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;You need to decide what your stage should look like. First of all we need to build our underwater world where our fishes live. Click on &lt;em&gt;Select backdrop from library&lt;/em&gt; on the bottom left and choose your background image, for example the underwater1.&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-6&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/catch-me/img/01-background.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto ml-md-auto mr-md-0&#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;The next step is to delete the Scratchy sprite with the name &lt;em&gt;Sprite1&lt;/em&gt;, by right-clicking on it and selecting &lt;em&gt;delete&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chess</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/chess/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/chess/</guid>
-      <description>You can try the finished project at https://scratch.mit.edu/projects/148769358/
-Chess programs try to find the optimal move by calculating as many moves in advance as possible. The number of resulting boards grows exponentially with each additional move, so that even modern computers reach their computing limits. Our chess program must therefore be quick and smart. Smart means that not every move combination is calculated, which can be achieved by discarding bad moves immediately.</description>
+      <description>&lt;p&gt;You can try the finished project at &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://scratch.mit.edu/projects/148769358/&#34; target=&#34;_blank&#34;&gt;https://scratch.mit.edu/projects/148769358/&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;Chess programs try to find the optimal move by calculating as many moves in advance as possible. The number of resulting boards grows exponentially with each additional move, so that even modern computers reach their computing limits. Our chess program must therefore be quick and smart. Smart means that not every move combination is calculated, which can be achieved by discarding bad moves immediately. Once the program has calculated a sequence of moves, it will evaluate the resulting board and compare it to previous results.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Paddle Game</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/paddle-game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/paddle-game/</guid>
-      <description>Creating Stage and Sprites   You begin by defining what your stage should look like. For this Game we need the beach backdrop, a ball, a paddle a sprite that defines the out area. Select the backdrop from the library with the button on the bottom left.
-     
-     The next step is to delete the Scratchy sprite with the name Sprite1, by right-clicking on it and selecting delete.</description>
+      <description>&lt;h2 id=&#34;creating-stage-and-sprites&#34;&gt;Creating Stage and Sprites&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;You begin by defining what your stage should look like. For this Game we need the beach backdrop, a ball, a paddle a sprite that defines the &lt;em&gt;out&lt;/em&gt; area.&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&#xA;Select the backdrop from the library with the button on the bottom left.&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-6&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/paddle-game/img/buehne-und-figuren.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto ml-md-auto mr-md-0&#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-6&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/en/paddle-game/img/buehnenbild-auswaehlen.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto ml-md-auto mr-md-0&#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;The next step is to delete the Scratchy sprite with the name &lt;em&gt;Sprite1&lt;/em&gt;, by right-clicking on it and selecting &lt;em&gt;delete&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

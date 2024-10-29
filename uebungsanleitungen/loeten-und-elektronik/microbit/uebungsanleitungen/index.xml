@@ -4,165 +4,127 @@
     <title>Übungsanleitungen on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/</link>
     <description>Recent content in Übungsanleitungen on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/hello-world/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Adafruit NeoPixel Guide</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/adafruit-neopixel-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/adafruit-neopixel-guide/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Beschleunigungssensor</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/beschleunigungssensor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/beschleunigungssensor/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>BME280</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/bme280/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/bme280/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Fan Controller</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/fan-controller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/fan-controller/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Fang den Punkt</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/fang-den-punkt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/fang-den-punkt/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hot Wire - der heiße Draht</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/hot-wire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/hot-wire/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>i2c-Bus</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/i2c-bus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/i2c-bus/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Kompass</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/kompass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/kompass/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>LCD</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/lcd-16-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/lcd-16-02/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Led-Array</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/led-array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/led-array/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Missile Shooter</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/missile-shooter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/missile-shooter/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Moonhack 2018</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/moonhack-2018/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/moonhack-2018/</guid>
-      <description>micro:bit Moonhack 2018 Einleitung Am 20. Juli 1969 erreichten die ersten Menschen mit der Mondlandefähre (Englisch Lunar Module) den Mond, aber das Raumschiff am richtigen Ort zu landen war nicht einfach. Der Pilot, Neil Armstrong, musste das Raumschiff präzise zu dem Landepunkt steuern um dort landen zu können und in diesem Spiel werden wir versuchen die Landeansteuerung nachzubauen.
-Wenn du keinen physischen micro:bit hast kannst du das Spiel in dem Online-Editor coden.</description>
+      <description>&lt;h1 id=&#34;microbit-moonhack-2018&#34;&gt;micro:bit Moonhack 2018&lt;/h1&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&lt;p&gt;Am 20. Juli 1969 erreichten die ersten Menschen mit der &lt;a href=&#34;https://de.wikipedia.org/wiki/Mondlandef%C3%A4hre&#34; target=&#34;_blank&#34;&gt;Mondlandefähre (Englisch &lt;em&gt;Lunar Module&lt;/em&gt;)&lt;/a&gt; den Mond, aber das Raumschiff am richtigen Ort zu landen war nicht einfach. Der Pilot, &lt;a href=&#34;https://de.wikipedia.org/wiki/Neil_Armstrong&#34; target=&#34;_blank&#34;&gt;Neil Armstrong&lt;/a&gt;, musste das Raumschiff präzise zu dem Landepunkt steuern um dort landen zu können und in diesem Spiel werden wir versuchen die Landeansteuerung nachzubauen.&lt;/p&gt;&#xA;&lt;p&gt;Wenn du keinen physischen micro:bit hast kannst du das Spiel in dem &lt;a href=&#34;https://makecode.microbit.org/&#34; target=&#34;_blank&#34;&gt;Online-Editor&lt;/a&gt; coden.&lt;/p&gt;&#xA;&lt;h2 id=&#34;schritt-1-vorbereitung&#34;&gt;Schritt 1: Vorbereitung&lt;/h2&gt;&#xA;&lt;p&gt;Öffne den &lt;a href=&#34;https://makecode.microbit.org/&#34; target=&#34;_blank&#34;&gt;Online-Editor&lt;/a&gt; und stelle die Sprache auf Deutsch um, außer du bist mutig genug es mit Englisch zu versuchen. ;) Die Sprache kannst du ändern in dem du rechts oben auf das Zahnrad drückst und dann auf Sprache. (oder im Englischen &amp;ldquo;Language&amp;rdquo;)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>OLED</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/oled-128-64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/oled-128-64/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Schere-Stein-Papier</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/schere-stein-papier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/schere-stein-papier/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Spielwürfel</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/spielwuerfel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/spielwuerfel/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Stoppuhr</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/stoppuhr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/stoppuhr/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

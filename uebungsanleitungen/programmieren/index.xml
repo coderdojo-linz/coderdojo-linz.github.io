@@ -4,12 +4,9 @@
     <title>Programmieren on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/</link>
     <description>Recent content in Programmieren on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 17 May 2020 08:13:15 +0200</lastBuildDate>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

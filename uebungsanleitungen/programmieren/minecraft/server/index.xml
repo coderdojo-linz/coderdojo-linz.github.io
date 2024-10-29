@@ -4,31 +4,22 @@
     <title>Server on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/</link>
     <description>Recent content in Server on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation eines Minecraft Servers</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/installation-minecraft-server/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/installation-minecraft-server/</guid>
-      <description>Installation eines Minecraft Servers Voraussetzungen In dieser Übung installieren wir einen Minecraft Server. Als Grundlage brauchst du dafür einen Computer, auf dem Linux installiert ist. Linux ist eine freie Software, die kostenlos im Internet zu haben ist.
-Falls du nicht sicher bist, welches Linux du verwenden sollst, empfehlen wir für diese Übung Ubuntu. Du bekommst den Ubuntu Server zur Installation kostenlos im Internet. Eine deutsche Anleitung zur Installation von Ubuntu findest du z.</description>
+      <description>&lt;h1 id=&#34;installation-eines-minecraft-servers&#34;&gt;Installation eines Minecraft Servers&lt;/h1&gt;&#xA;&lt;h2 id=&#34;voraussetzungen&#34;&gt;Voraussetzungen&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung installieren wir einen Minecraft Server. Als Grundlage brauchst du dafür einen Computer, auf dem &lt;a href=&#34;https://de.wikipedia.org/wiki/Linux&#34; target=&#34;_blank&#34;&gt;Linux&lt;/a&gt; installiert ist. Linux ist eine freie Software, die kostenlos im Internet zu haben ist.&lt;/p&gt;&#xA;&lt;p&gt;Falls du nicht sicher bist, welches Linux du verwenden sollst, empfehlen wir für diese Übung &lt;a href=&#34;https://www.ubuntu.com/&#34; target=&#34;_blank&#34;&gt;Ubuntu&lt;/a&gt;. Du bekommst den &lt;em&gt;Ubuntu Server&lt;/em&gt; zur Installation &lt;a href=&#34;https://www.ubuntu.com/download/server&#34; target=&#34;_blank&#34;&gt;kostenlos im Internet&lt;/a&gt;. Eine deutsche Anleitung zur Installation von Ubuntu findest du z.B. im &lt;a href=&#34;https://wiki.ubuntuusers.de/Server_Installation/&#34; target=&#34;_blank&#34;&gt;ubuntuusers Wiki&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Lokaler Minecraft-Server mit Scriptcraft</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/scriptcraft-installieren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/scriptcraft-installieren/</guid>
-      <description>Minecraft Server für ScriptCraft Wichtiger Hinweis: Diese Anleitung ist für erfahrene Coder, Mentorinnen und Mentoren. Wenn du im generellen Umgang mit Linux-Servern, Docker, JRE etc. noch unerfahren bist, bitte eine Mentorin aus dem CoderDojo, den Minecraft-Server für dich herzurichten. Später kannst du dich selbst am Installieren eines MineCraft-Servers wie hier beschrieben heran wagen.
-Einleitung Ziel dieser Anleitung ist das Betreiben eines Minecraft Servers auf Basis von Spigot mit installiertem Scriptcraft Mod zum Programmieren von Minecraft mit JavaScript.</description>
+      <description>&lt;h1 id=&#34;minecraft-server-für-scriptcraft&#34;&gt;Minecraft Server für ScriptCraft&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Wichtiger Hinweis: Diese Anleitung ist für erfahrene Coder, Mentorinnen und Mentoren.&lt;/strong&gt; Wenn du im generellen Umgang mit Linux-Servern, Docker, JRE etc. noch unerfahren bist, bitte eine Mentorin aus dem CoderDojo, den Minecraft-Server für dich herzurichten. Später kannst du dich selbst am Installieren eines MineCraft-Servers wie hier beschrieben heran wagen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&lt;p&gt;Ziel dieser Anleitung ist das Betreiben eines Minecraft Servers auf Basis von &lt;a href=&#34;https://www.spigotmc.org/wiki/about-spigot/&#34; target=&#34;_blank&#34;&gt;Spigot&lt;/a&gt; mit installiertem &lt;a href=&#34;http://scriptcraftjs.org/&#34; target=&#34;_blank&#34;&gt;Scriptcraft&lt;/a&gt; Mod zum Programmieren von &lt;a href=&#34;https://minecraft.net/de/&#34; target=&#34;_blank&#34;&gt;Minecraft&lt;/a&gt; mit JavaScript.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

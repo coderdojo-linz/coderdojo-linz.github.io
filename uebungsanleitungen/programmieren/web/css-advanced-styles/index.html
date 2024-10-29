@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Advanced CSS Styles </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,49 +150,41 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#advanced-css-styles">Advanced CSS Styles</a>
-<ul>
-<li><a href="#css-file-hinzufügen">CSS File hinzufügen</a></li>
-<li><a href="#google-font-verwenden">Google Font verwenden</a></li>
-<li><a href="#content-in-der-mitte-platzieren">Content in der Mitte platzieren</a></li>
-<li><a href="#headers">Headers</a></li>
-<li><a href="#bilder">Bilder</a></li>
-<li><a href="#intro-bereich">Intro Bereich</a></li>
-<li><a href="#hintergrundbild">Hintergrundbild</a></li>
-<li><a href="#aufzählungen">Aufzählungen</a></li>
-<li><a href="#flip-box">Flip Box</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#css-file-hinzufügen">CSS File hinzufügen</a></li>
+    <li><a href="#google-font-verwenden">Google Font verwenden</a></li>
+    <li><a href="#content-in-der-mitte-platzieren">Content in der Mitte platzieren</a></li>
+    <li><a href="#headers">Headers</a></li>
+    <li><a href="#bilder">Bilder</a></li>
+    <li><a href="#intro-bereich">Intro Bereich</a></li>
+    <li><a href="#hintergrundbild">Hintergrundbild</a></li>
+    <li><a href="#aufzählungen">Aufzählungen</a></li>
+    <li><a href="#flip-box">Flip Box</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="advanced-css-styles">Advanced CSS Styles</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="advanced-css-styles">Advanced CSS Styles</h1>
 <p>Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
-&lt;html lang=<span style="color:#a31515">&#34;en&#34;</span>&gt;
-
-&lt;head&gt;
-    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
-    &lt;meta name=<span style="color:#a31515">&#34;viewport&#34;</span> content=<span style="color:#a31515">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-    &lt;title&gt;Scratch - Fang mich&lt;/title&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;div class=<span style="color:#a31515">&#34;content&#34;</span>&gt;
-        &lt;h1&gt;Scratch Fang-Mich &lt;span class=<span style="color:#a31515">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/span&gt;&lt;/h1&gt;
-
-        &lt;div class=<span style="color:#a31515">&#34;intro&#34;</span>&gt;
-            &lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;
-            &lt;p&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/p&gt;
-        &lt;/div&gt;
-        ...</code></pre></div>
-<p>Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: <a href="initial-project.zip" target="_blank">Startprojekt</a></p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;html lang=<span style="color:#a31515">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;head&gt;
+</span></span><span style="display:flex;"><span>    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;meta name=<span style="color:#a31515">&#34;viewport&#34;</span> content=<span style="color:#a31515">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;title&gt;Scratch - Fang mich&lt;/title&gt;
+</span></span><span style="display:flex;"><span>&lt;/head&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;body&gt;
+</span></span><span style="display:flex;"><span>    &lt;div class=<span style="color:#a31515">&#34;content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;h1&gt;Scratch Fang-Mich &lt;span class=<span style="color:#a31515">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/span&gt;&lt;/h1&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;div class=<span style="color:#a31515">&#34;intro&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;p&gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&lt;/p&gt;
+</span></span><span style="display:flex;"><span>        &lt;/div&gt;
+</span></span><span style="display:flex;"><span>        ...
+</span></span></code></pre></div><p>Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: <a href="initial-project.zip">Startprojekt</a></p>
 <p>Wenn ihr die Webseite index.html darin öffnet, sieht das dann so aus:</p>
-
 
 
 
@@ -217,13 +209,9 @@
     </div>
 </div>
 
-
 <h2 id="css-file-hinzufügen">CSS File hinzufügen</h2>
-
 <p>Damit wir die Styles für die Webseite in einem eigenen File verwalten können, legen wir zuerst einen Ordner <em>styles</em> in unserem Projekt an, und in diesem Ordner brauchen wir ein neues File <em>style.css</em>.</p>
-
 <p>Im <code>head</code> unsere Webseite müssen wir einen Verweis auf das File einfügen.</p>
-
 
 
 
@@ -248,15 +236,12 @@
     </div>
 </div>
 
-
 <p>Im File <em>style.css</em> könnt ihr dann erste Styles zu eurem Projekt hinzufügen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">body {
-    <span style="color:#00f">background-color</span>: <span style="color:#00f">lightblue</span>;
-}</code></pre></div>
-<h2 id="google-font-verwenden">Google Font verwenden</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>body {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: <span style="color:#00f">lightblue</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="google-font-verwenden">Google Font verwenden</h2>
 <p>Als erstes fügen wir eine hübschere Schriftart dazu. Ihr findet z.B. unter <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a> eine Menge an kostenloser Schriftarten.</p>
-
 
 
 
@@ -281,17 +266,13 @@
     </div>
 </div>
 
-
 <p>Klickt auf eine Schriftart, die euch gefällt, und klickt dann bei den folgenden drei Styles auf &ldquo;+ Select this style&rdquo;:</p>
-
 <ul>
 <li>Light 300</li>
 <li>Regular 400</li>
 <li>Bold 700</li>
 </ul>
-
 <p>Ihr findet dann auf der rechten Seite unter <em>Embed</em> den Code zum Einbetten in eure Webseite.</p>
-
 
 
 
@@ -316,22 +297,21 @@
     </div>
 </div>
 
-
 <p>Den Link müsst ihr im <code>head</code> der HTML Seite einfügen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;head&gt;
-    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
-    &lt;meta name=<span style="color:#a31515">&#34;viewport&#34;</span> content=<span style="color:#a31515">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
-    &lt;title&gt;Scratch - Fang mich&lt;/title&gt;
-    &lt;link href=<span style="color:#a31515">&#34;https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&amp;display=swap&#34;</span> rel=<span style="color:#a31515">&#34;stylesheet&#34;</span>&gt;
-    &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> href=<span style="color:#a31515">&#34;styles/1-style.css&#34;</span>&gt;
-&lt;/head&gt;</code></pre></div>
-<p>Damit die neue Schriftart verwendet wird, müsst ihr im CSS unter <code>body</code> den Style für die <code>font-family</code> einfügen. Wir geben hier außerdem auch gleich noch die Größe der Schrift mit <code>font-size</code> an:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">body {
-    <span style="color:#00f">font-family</span>: <span style="color:#a31515">&#39;Open Sans&#39;</span>, <span style="color:#00f">sans-serif</span>;
-    <span style="color:#00f">font-size</span>: 18<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">background-color</span>: <span style="color:#00f">lightblue</span>;
-}</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;head&gt;
+</span></span><span style="display:flex;"><span>    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;meta name=<span style="color:#a31515">&#34;viewport&#34;</span> content=<span style="color:#a31515">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;title&gt;Scratch - Fang mich&lt;/title&gt;
+</span></span><span style="display:flex;"><span>    &lt;link href=<span style="color:#a31515">&#34;https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&amp;display=swap&#34;</span> rel=<span style="color:#a31515">&#34;stylesheet&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> href=<span style="color:#a31515">&#34;styles/1-style.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/head&gt;
+</span></span></code></pre></div><p>Damit die neue Schriftart verwendet wird, müsst ihr im CSS unter <code>body</code> den Style für die <code>font-family</code> einfügen. Wir geben hier außerdem auch gleich noch die Größe der Schrift mit <code>font-size</code> an:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>body {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">font-family</span>: <span style="color:#a31515">&#39;Open Sans&#39;</span>, <span style="color:#00f">sans-serif</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">font-size</span>: 18<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: <span style="color:#00f">lightblue</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
      
@@ -355,29 +335,27 @@
     </div>
 </div>
 
-
 <h2 id="content-in-der-mitte-platzieren">Content in der Mitte platzieren</h2>
-
 <p>Als nächstes möchten wir den Bereich mit Texten und Bildern in der Mitte platzieren und mit weißen Hintergrund hinterlegen, damit er besser lesbar wird. Dazu ergänzen wir zuerst den <code>body</code> um <code>padding-left</code> und <code>padding-right</code>. Das bewirkt, dass der Text links und rechts etwas Abstand zum Rand bekommt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">body {
-    <span style="">...</span>
-    <span style="color:#00f">padding-left</span>: 60<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">padding-right</span>: 60<span style="color:#2b91af">px</span>;
-}</code></pre></div>
-<p>Dann fügen wir einen eigenen Style für das <code>&lt;div ...&gt;</code> mit der Klasse <code>content</code> ein:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">content</span> {
-    <span style="color:#00f">background-color</span>: <span style="color:#00f">white</span>;
-    <span style="color:#00f">padding</span>: 60<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">max-width</span>: 900<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">margin-left</span>: <span style="color:#00f">auto</span>;
-    <span style="color:#00f">margin-right</span>: <span style="color:#00f">auto</span>;
-    <span style="color:#00f">margin-top</span>: 60<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">margin-bottom</span>: 60<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">border-radius</span>: 20<span style="color:#2b91af">px</span>;
-    <span style="color:#008000">/* offset-x | offset-y | blur-radius | spread-radius | color */</span>
-    <span style="color:#00f">box-shadow</span>: 10<span style="color:#2b91af">px</span> 10<span style="color:#2b91af">px</span> 8<span style="color:#2b91af">px</span> 1<span style="color:#2b91af">px</span> rgba(0, 0, 0, 0.3);
-}</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>body {
+</span></span><span style="display:flex;"><span>    <span style="">...</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">padding-left</span>: 60<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">padding-right</span>: 60<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Dann fügen wir einen eigenen Style für das <code>&lt;div ...&gt;</code> mit der Klasse <code>content</code> ein:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">content</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: <span style="color:#00f">white</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">padding</span>: 60<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">max-width</span>: 900<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-left</span>: <span style="color:#00f">auto</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-right</span>: <span style="color:#00f">auto</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-top</span>: 60<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-bottom</span>: 60<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">border-radius</span>: 20<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">/* offset-x | offset-y | blur-radius | spread-radius | color */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">box-shadow</span>: 10<span style="color:#2b91af">px</span> 10<span style="color:#2b91af">px</span> 8<span style="color:#2b91af">px</span> 1<span style="color:#2b91af">px</span> rgba(0, 0, 0, 0.3);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
      
@@ -401,37 +379,35 @@
     </div>
 </div>
 
-
 <h2 id="headers">Headers</h2>
-
 <p>Als nächstes fügen wir Styles für die Überschriften hinzu. Die erste große Überschrift <code>&lt;h1&gt;</code> soll in blauen Großbuchstaben dargestellt werden. Füge dazu einen neuen Style für <code>h1</code> im Stylesheet hinzu:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">h1 {
-    <span style="color:#00f">text-transform</span>: <span style="color:#00f">uppercase</span>;
-    <span style="color:#00f">color</span>: #0081e4;
-}</code></pre></div>
-<p>In der HTML Seite siehst du, dass in der Überschrift <code>&lt;h1&gt;</code> ein weiteres Tag <code>&lt;span&gt;</code> enthalten ist, das den Bereich mit der Versionsnummer markiert:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h1&gt;Scratch Fang-Mich &lt;span class=<span style="color:#a31515">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/span&gt;&lt;/h1&gt;</code></pre></div>
-<p>Wir können dafür einen eigenen Style im Stylesheet hinzufügen. Wenn Styles im CSS mit Leerzeichen getrennt werden, dann bedeutet das, dass die Elemente ineinander vorkommen müssen. Hier suchen wir also alle Elemente mit der Klasse <em>version</em>, die innerhalb von <code>&lt;h1&gt;</code> Elemente vorkommen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">h1 .<span style="color:#2b91af">version</span> {
-    <span style="color:#00f">font-size</span>: 16<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">margin-left</span>: 10<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">background-color</span>: #2b992b;
-    <span style="color:#00f">color</span>: #fff;
-    <span style="color:#00f">border-radius</span>: 5<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">padding</span>: 2<span style="color:#2b91af">px</span> 10<span style="color:#2b91af">px</span>;
-    <span style="color:#008000">/* necessary for vertical alignment within h1 */</span>
-    <span style="color:#00f">vertical-align</span>: 0.5<span style="color:#2b91af">em</span>;
-}</code></pre></div>
-<p>Die kleineren Überschriften wollen wir in einem Kästchen mit grünem Hintergrund und einem Schatteneffekt darstellen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">h2 {
-    <span style="color:#00f">background-color</span>: #2b992b;
-    <span style="color:#00f">color</span>: #fff;
-    <span style="color:#00f">display</span>: <span style="color:#00f">inline</span>-<span style="color:#00f">block</span>;
-    margin-block-start: 2<span style="color:#2b91af">em</span>;
-    <span style="color:#00f">padding</span>: 2<span style="color:#2b91af">px</span> 10<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">box-shadow</span>: 8<span style="color:#2b91af">px</span> 8<span style="color:#2b91af">px</span> 0 2<span style="color:#2b91af">px</span> rgba(0, 0, 0, 0.3);
-}</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>h1 {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">text-transform</span>: <span style="color:#00f">uppercase</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">color</span>: #0081e4;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In der HTML Seite siehst du, dass in der Überschrift <code>&lt;h1&gt;</code> ein weiteres Tag <code>&lt;span&gt;</code> enthalten ist, das den Bereich mit der Versionsnummer markiert:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;h1&gt;Scratch Fang-Mich &lt;span class=<span style="color:#a31515">&#34;version&#34;</span>&gt;Scratch 3.0&lt;/span&gt;&lt;/h1&gt;
+</span></span></code></pre></div><p>Wir können dafür einen eigenen Style im Stylesheet hinzufügen. Wenn Styles im CSS mit Leerzeichen getrennt werden, dann bedeutet das, dass die Elemente ineinander vorkommen müssen. Hier suchen wir also alle Elemente mit der Klasse <em>version</em>, die innerhalb von <code>&lt;h1&gt;</code> Elemente vorkommen:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>h1 .<span style="color:#2b91af">version</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">font-size</span>: 16<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-left</span>: 10<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: #2b992b;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">color</span>: #fff;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">border-radius</span>: 5<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">padding</span>: 2<span style="color:#2b91af">px</span> 10<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">/* necessary for vertical alignment within h1 */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">vertical-align</span>: 0.5<span style="color:#2b91af">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Die kleineren Überschriften wollen wir in einem Kästchen mit grünem Hintergrund und einem Schatteneffekt darstellen:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>h2 {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: #2b992b;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">color</span>: #fff;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">display</span>: <span style="color:#00f">inline-block</span>;
+</span></span><span style="display:flex;"><span>    margin-block-start: 2<span style="color:#2b91af">em</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">padding</span>: 2<span style="color:#2b91af">px</span> 10<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">box-shadow</span>: 8<span style="color:#2b91af">px</span> 8<span style="color:#2b91af">px</span> 0 2<span style="color:#2b91af">px</span> rgba(0, 0, 0, 0.3);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
      
@@ -455,32 +431,30 @@
     </div>
 </div>
 
-
 <h2 id="bilder">Bilder</h2>
-
 <p>Die Bilder sollen einen Rahmen erhalten, und wenn man mit der Maus drüber fährt, sollte es sich leicht vergrößern und einen Schatten anzeigen. Dazu fügen wir die folgenden Styles ein:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">img {
-    <span style="color:#00f">display</span>: <span style="color:#00f">block</span>;
-    margin-block-start: 1<span style="color:#2b91af">em</span>;
-    margin-block-end: 1<span style="color:#2b91af">em</span>;
-    <span style="color:#00f">max-width</span>: 100<span style="color:#2b91af">%</span>;
-    <span style="color:#00f">background-color</span>: <span style="color:#00f">white</span>;
-    <span style="color:#00f">padding</span>: 20<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">border</span>: 1<span style="color:#2b91af">px</span> <span style="color:#00f">solid</span> rgba(0, 0, 0, 0.3);
-    <span style="color:#008000">/* center images */</span>
-    <span style="color:#00f">margin-left</span>: <span style="color:#00f">auto</span>;
-    <span style="color:#00f">margin-right</span>: <span style="color:#00f">auto</span>;
-    <span style="color:#008000">/* animation */</span>
-    <span style="color:#00f">transition</span>: <span style="color:#00f">all</span> 0.5<span style="color:#2b91af">s</span>;
-}
-
-img:hover {
-    <span style="color:#008000">/* changes when mouse moves over image */</span>
-    <span style="color:#00f">transform</span>: scale(1.01);
-    <span style="color:#008000">/* offset-x | offset-y | blur-radius | spread-radius | color */</span>
-    <span style="color:#00f">box-shadow</span>: 10<span style="color:#2b91af">px</span> 10<span style="color:#2b91af">px</span> 8<span style="color:#2b91af">px</span> 2<span style="color:#2b91af">px</span> rgba(0, 0, 0, 0.3);
-}</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>img {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">display</span>: <span style="color:#00f">block</span>;
+</span></span><span style="display:flex;"><span>    margin-block-start: 1<span style="color:#2b91af">em</span>;
+</span></span><span style="display:flex;"><span>    margin-block-end: 1<span style="color:#2b91af">em</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">max-width</span>: 100<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: <span style="color:#00f">white</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">padding</span>: 20<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">border</span>: 1<span style="color:#2b91af">px</span> <span style="color:#00f">solid</span> rgba(0, 0, 0, 0.3);
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">/* center images */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-left</span>: <span style="color:#00f">auto</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-right</span>: <span style="color:#00f">auto</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">/* animation */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">transition</span>: <span style="color:#00f">all</span> 0.5<span style="color:#2b91af">s</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>img:hover {
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">/* changes when mouse moves over image */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">transform</span>: scale(1.01);
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">/* offset-x | offset-y | blur-radius | spread-radius | color */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">box-shadow</span>: 10<span style="color:#2b91af">px</span> 10<span style="color:#2b91af">px</span> 8<span style="color:#2b91af">px</span> 2<span style="color:#2b91af">px</span> rgba(0, 0, 0, 0.3);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
      
@@ -504,25 +478,23 @@ img:hover {
     </div>
 </div>
 
-
 <h2 id="intro-bereich">Intro Bereich</h2>
-
 <p>Im Einleitungsbereich der Webseite wollen wir den Text etwas größer und zentriert darstellen. Das Bild soll rotieren, wenn die Maus darüber bewegt wird:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">intro</span> p {
-    <span style="color:#00f">font-size</span>: 24<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">font-weight</span>: 300;
-    <span style="color:#00f">text-align</span>: <span style="color:#00f">center</span>;
-}
-
-.<span style="color:#2b91af">intro</span>&gt;img {
-    <span style="color:#00f">transition</span>: <span style="color:#00f">transform</span> 1<span style="color:#2b91af">s</span>;
-}
-
-.<span style="color:#2b91af">intro</span>&gt;img:hover {
-    <span style="color:#00f">transform</span>: rotateY(180<span style="color:#2b91af">deg</span>);
-    <span style="color:#00f">box-shadow</span>: <span style="color:#00f">none</span>;
-}</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">intro</span> p {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">font-size</span>: 24<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">font-weight</span>: 300;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">text-align</span>: <span style="color:#00f">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">intro</span>&gt;img {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">transition</span>: <span style="color:#00f">transform</span> 1<span style="color:#2b91af">s</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">intro</span>&gt;img:hover {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">transform</span>: rotateY(180<span style="color:#2b91af">deg</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">box-shadow</span>: <span style="color:#00f">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
      
@@ -546,23 +518,21 @@ img:hover {
     </div>
 </div>
 
-
 <h2 id="hintergrundbild">Hintergrundbild</h2>
-
 <p>Um für die ganze Seite ein Hintergrundbild hinzuzufügen, füge folgende Styles zum <code>body</code> hinzu:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">body {
-    <span style="">...</span>
-    <span style="color:#00f">background-image</span>: url(<span style="color:#a31515">&#39;/images/underwater-treasures.jpg&#39;</span>);
-    <span style="color:#00f">background-attachment</span>: <span style="color:#00f">fixed</span>;
-    <span style="color:#00f">background-size</span>: <span style="color:#00f">cover</span>;
-    <span style="color:#00f">background-position</span>: <span style="color:#00f">center</span>;
-}</code></pre></div>
-<p>Außerdem kannst du beim Style für den Contentbereich noch die Hintergrundfarbe leicht transparent machen, ändere dafür im Style für <code>.content</code> die <code>background-color</code>:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">content</span> {
-    <span style="color:#00f">background-color</span>: rgba(255, 255, 255, 0.9);
-    <span style="">...</span>
-}</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>body {
+</span></span><span style="display:flex;"><span>    <span style="">...</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-image</span>: url(<span style="color:#a31515">&#39;/images/underwater-treasures.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-attachment</span>: <span style="color:#00f">fixed</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-size</span>: <span style="color:#00f">cover</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-position</span>: <span style="color:#00f">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Außerdem kannst du beim Style für den Contentbereich noch die Hintergrundfarbe leicht transparent machen, ändere dafür im Style für <code>.content</code> die <code>background-color</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">content</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: rgba(255, 255, 255, 0.9);
+</span></span><span style="display:flex;"><span>    <span style="">...</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
      
@@ -586,11 +556,8 @@ img:hover {
     </div>
 </div>
 
-
 <h2 id="aufzählungen">Aufzählungen</h2>
-
-<p>Aufzählungen, die mit dem Element ´<ol>´ gemacht werden, sehen in HTML standardmäßig so aus:</p>
-
+<p>Aufzählungen, die mit dem Element ´<!-- raw HTML omitted -->´ gemacht werden, sehen in HTML standardmäßig so aus:</p>
 
 
 
@@ -615,38 +582,37 @@ img:hover {
     </div>
 </div>
 
-
 <p>Wir können aber ändern, wie die Nummern dargestellt werden. Dazu schalten wir im <code>ol</code> mit <code>list-style: none</code> die Standarddarstellung aus. Stattdessen bauen wir im Style <code>ol&gt;li:before</code> unsere ganz eigene Version:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">ol {
-    <span style="color:#00f">list-style</span>: <span style="color:#00f">none</span>;
-    <span style="color:#00f">counter-reset</span>: my-counter;
-    padding-inline-start: 0;
-}
-
-ol&gt;li {
-    <span style="color:#00f">counter-increment</span>: my-counter;
-    <span style="color:#00f">padding-left</span>: 50<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">padding-top</span>: 5<span style="color:#2b91af">px</span>;
-    margin-block-start: 1<span style="color:#2b91af">em</span>;
-    margin-block-end: 1<span style="color:#2b91af">em</span>;
-}
-
-ol&gt;li:before {
-    <span style="color:#00f">width</span>: 32<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">height</span>: 32<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">line-height</span>: 32<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">text-align</span>: <span style="color:#00f">center</span>;
-    <span style="color:#00f">content</span>: counter(my-counter) <span style="color:#a31515">&#34;.&#34;</span>;
-    <span style="color:#00f">background-color</span>: #2b992b;
-    <span style="color:#00f">color</span>: #fff;
-    <span style="color:#00f">font-weight</span>: <span style="color:#00f">bold</span>;
-    <span style="color:#00f">font-size</span>: 16<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">border-radius</span>: 50<span style="color:#2b91af">%</span>;
-    <span style="color:#00f">position</span>: <span style="color:#00f">absolute</span>;
-    <span style="color:#00f">margin-left</span>: -50<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">margin-top</span>: -5<span style="color:#2b91af">px</span>;
-}</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>ol {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">list-style</span>: <span style="color:#00f">none</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">counter-reset</span>: my-counter;
+</span></span><span style="display:flex;"><span>    padding-inline-start: 0;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ol&gt;li {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">counter-increment</span>: my-counter;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">padding-left</span>: 50<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">padding-top</span>: 5<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    margin-block-start: 1<span style="color:#2b91af">em</span>;
+</span></span><span style="display:flex;"><span>    margin-block-end: 1<span style="color:#2b91af">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ol&gt;li:before {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">width</span>: 32<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">height</span>: 32<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">line-height</span>: 32<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">text-align</span>: <span style="color:#00f">center</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">content</span>: counter(my-counter) <span style="color:#a31515">&#34;.&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: #2b992b;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">color</span>: #fff;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">font-weight</span>: <span style="color:#00f">bold</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">font-size</span>: 16<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">border-radius</span>: 50<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">position</span>: <span style="color:#00f">absolute</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-left</span>: -50<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-top</span>: -5<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
      
@@ -670,94 +636,89 @@ ol&gt;li:before {
     </div>
 </div>
 
-
 <h2 id="flip-box">Flip Box</h2>
-
 <p>Zu guter letzt wollen wir das Bild im Einleitungsbereich noch etwas erweitern. Wenn man mit der Maus drüber fährt, soll es nicht nur rotieren, es soll auf der Hinterseite des Bildes ein Text angezeigt werden, der dadurch dann sichtbar wird.</p>
-
 <p>Dazu müssen wir zuerst im HTML eine Änderung machen. Ersetze im Bereich <code>&lt;div class=&quot;intro&quot;&gt;</code> folgendes Bild:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;</code></pre></div>
-<p>durch folgendes HTML:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div class=<span style="color:#a31515">&#34;flip-box&#34;</span>&gt;
-    &lt;div class=<span style="color:#a31515">&#34;flip-box-inner&#34;</span>&gt;
-        &lt;div class=<span style="color:#a31515">&#34;flip-box-front&#34;</span>&gt;
-            &lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;
-        &lt;/div&gt;
-        &lt;div class=<span style="color:#a31515">&#34;flip-box-back&#34;</span>&gt;
-            &lt;h3&gt;Scratch Fang-Mich&lt;/h3&gt;
-            &lt;p&gt;Figuren: 2&lt;br /&gt;Scripte: 8&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
-<p>Das HTML bildet die Flip Box mit einem Bereich für die Vorderseite und einem Bereich für die Hinterseite des Bildes ab.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;
+</span></span></code></pre></div><p>durch folgendes HTML:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;div class=<span style="color:#a31515">&#34;flip-box&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;div class=<span style="color:#a31515">&#34;flip-box-inner&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;div class=<span style="color:#a31515">&#34;flip-box-front&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;img src=<span style="color:#a31515">&#34;images/endgame.png&#34;</span> alt=<span style="color:#a31515">&#34;Endgame&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/div&gt;
+</span></span><span style="display:flex;"><span>        &lt;div class=<span style="color:#a31515">&#34;flip-box-back&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;h3&gt;Scratch Fang-Mich&lt;/h3&gt;
+</span></span><span style="display:flex;"><span>            &lt;p&gt;Figuren: 2&lt;br /&gt;Scripte: 8&lt;/p&gt;
+</span></span><span style="display:flex;"><span>        &lt;/div&gt;
+</span></span><span style="display:flex;"><span>    &lt;/div&gt;
+</span></span><span style="display:flex;"><span>&lt;/div&gt;
+</span></span></code></pre></div><p>Das HTML bildet die Flip Box mit einem Bereich für die Vorderseite und einem Bereich für die Hinterseite des Bildes ab.</p>
 <p>Im Stylesheet müssen wir jetzt folgende Styles hinzufügen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">flip-box</span> {
-    <span style="color:#00f">width</span>: 540<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">height</span>: 407<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">max-width</span>: 100<span style="color:#2b91af">%</span>;
-    <span style="color:#008000">/* center flip box */</span>
-    <span style="color:#00f">margin-left</span>: <span style="color:#00f">auto</span>;
-    <span style="color:#00f">margin-right</span>: <span style="color:#00f">auto</span>;
-    <span style="color:#008000">/* Remove this if you don&#39;t want the 3D effect */</span>
-    <span style="color:#00f">perspective</span>: 1000<span style="color:#2b91af">px</span>;
-}
-
-<span style="color:#008000">/* Remove general img styles */</span>
-.<span style="color:#2b91af">flip-box</span> img {
-    <span style="color:#00f">border</span>: <span style="color:#00f">none</span>;
-    <span style="color:#00f">padding</span>: 0;
-    <span style="color:#00f">margin</span>: 0;
-    <span style="color:#00f">box-shadow</span>: <span style="color:#00f">none</span>;
-    <span style="color:#00f">border-radius</span>: 20<span style="color:#2b91af">px</span>;
-}
-
-<span style="color:#008000">/* This container is needed to position the front and back side */</span>
-.<span style="color:#2b91af">flip-box-inner</span> {
-    <span style="color:#00f">position</span>: <span style="color:#00f">relative</span>;
-    <span style="color:#00f">width</span>: 100<span style="color:#2b91af">%</span>;
-    <span style="color:#00f">height</span>: 100<span style="color:#2b91af">%</span>;
-    <span style="color:#00f">transition</span>: <span style="color:#00f">transform</span> 0.5<span style="color:#2b91af">s</span>;
-    <span style="color:#00f">transform-style</span>: <span style="color:#00f">preserve-3d</span>;
-}
-
-<span style="color:#008000">/* Do an horizontal flip when you move the mouse over the flip box container */</span>
-.<span style="color:#2b91af">flip-box</span>:hover .<span style="color:#2b91af">flip-box-inner</span> {
-    <span style="color:#00f">transform</span>: rotateY(180<span style="color:#2b91af">deg</span>);
-}
-
-<span style="color:#008000">/* Position the front and back side */</span>
-.<span style="color:#2b91af">flip-box-front</span>,
-.<span style="color:#2b91af">flip-box-back</span> {
-    <span style="color:#00f">position</span>: <span style="color:#00f">absolute</span>;
-    <span style="color:#00f">width</span>: 100<span style="color:#2b91af">%</span>;
-    <span style="color:#00f">height</span>: 100<span style="color:#2b91af">%</span>;
-    <span style="color:#00f">border-radius</span>: 20<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">-webkit-</span><span style="color:#00f">backface-visibility</span>: <span style="color:#00f">hidden</span>; <span style="color:#008000">/* Safari */</span>
-    <span style="color:#00f">backface-visibility</span>: <span style="color:#00f">hidden</span>;
-}
-
-<span style="color:#008000">/* Style the front side (fallback if image is missing) */</span>
-.<span style="color:#2b91af">flip-box-front</span> {
-    <span style="color:#00f">background-color</span>: #bbb;
-    <span style="color:#00f">color</span>: <span style="color:#00f">black</span>;
-}
-
-<span style="color:#008000">/* Style the back side */</span>
-.<span style="color:#2b91af">flip-box-back</span> {
-    <span style="color:#00f">background-color</span>: #0081e4;
-    <span style="color:#00f">color</span>: #fff;
-    <span style="color:#00f">border-radius</span>: 20<span style="color:#2b91af">px</span>;
-    <span style="color:#00f">text-align</span>: <span style="color:#00f">center</span>;
-    <span style="color:#00f">transform</span>: rotateY(180<span style="color:#2b91af">deg</span>);
-}
-
-.<span style="color:#2b91af">flip-box-back</span> h3 {
-    margin-block-start: 4<span style="color:#2b91af">em</span>;
-    <span style="color:#00f">font-size</span>: 2<span style="color:#2b91af">rem</span>;
-}</code></pre></div>
-<p>Wenn man jetzt mit der Maus über das Bild fährt, wird es umgedreht und der Text auf der Hinterseite angezeigt:</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">flip-box</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">width</span>: 540<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">height</span>: 407<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">max-width</span>: 100<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">/* center flip box */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-left</span>: <span style="color:#00f">auto</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin-right</span>: <span style="color:#00f">auto</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#008000">/* Remove this if you don&#39;t want the 3D effect */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">perspective</span>: 1000<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/* Remove general img styles */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">flip-box</span> img {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">border</span>: <span style="color:#00f">none</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">padding</span>: 0;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">margin</span>: 0;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">box-shadow</span>: <span style="color:#00f">none</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">border-radius</span>: 20<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/* This container is needed to position the front and back side */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">flip-box-inner</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">position</span>: <span style="color:#00f">relative</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">width</span>: 100<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">height</span>: 100<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">transition</span>: <span style="color:#00f">transform</span> 0.5<span style="color:#2b91af">s</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">transform-style</span>: <span style="color:#00f">preserve-3d</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/* Do an horizontal flip when you move the mouse over the flip box container */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">flip-box</span>:hover .<span style="color:#2b91af">flip-box-inner</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">transform</span>: rotateY(180<span style="color:#2b91af">deg</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/* Position the front and back side */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">flip-box-front</span>,
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">flip-box-back</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">position</span>: <span style="color:#00f">absolute</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">width</span>: 100<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">height</span>: 100<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">border-radius</span>: 20<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">-webkit-</span><span style="color:#00f">backface-visibility</span>: <span style="color:#00f">hidden</span>; <span style="color:#008000">/* Safari */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">backface-visibility</span>: <span style="color:#00f">hidden</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/* Style the front side (fallback if image is missing) */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">flip-box-front</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: #bbb;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">color</span>: <span style="color:#00f">black</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000">/* Style the back side */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">flip-box-back</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">background-color</span>: #0081e4;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">color</span>: #fff;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">border-radius</span>: 20<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">text-align</span>: <span style="color:#00f">center</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">transform</span>: rotateY(180<span style="color:#2b91af">deg</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#2b91af">flip-box-back</span> h3 {
+</span></span><span style="display:flex;"><span>    margin-block-start: 4<span style="color:#2b91af">em</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">font-size</span>: 2<span style="color:#2b91af">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Wenn man jetzt mit der Maus über das Bild fährt, wird es umgedreht und der Text auf der Hinterseite angezeigt:</p>
 
 
 

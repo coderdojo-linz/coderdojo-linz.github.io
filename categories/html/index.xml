@@ -4,243 +4,162 @@
     <title>HTML on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/categories/html/</link>
     <description>Recent content in HTML on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/categories/html/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/categories/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meine erste Webseite</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-meine-erste-webseite/</guid>
-      <description>Meine erste Webseite In dieser Übung lernst du die Hypertext Markup Language (kurz HTML) kennen. Unser Ziel ist es, Schritt für Schritt eine HTML-Seite zu erstellen und dabei die wichtigsten Grundbegriffe von HTML zu entdecken. Wenn du nach dieser Übung mehr über HTML lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die HTML Einführung auf w3schools.com werfen.
-Das Grundgerüst einer HTML-Seite  Öffne einen beliebigen Texteditor.</description>
+      <description>&lt;h1 id=&#34;meine-erste-webseite&#34;&gt;Meine erste Webseite&lt;/h1&gt;&#xA;&lt;p&gt;In dieser Übung lernst du die &lt;a href=&#34;https://de.wikipedia.org/wiki/Hypertext_Markup_Language&#34; target=&#34;_blank&#34;&gt;Hypertext Markup Language&lt;/a&gt; (kurz HTML) kennen. Unser Ziel ist es, Schritt für Schritt eine HTML-Seite zu erstellen und dabei die wichtigsten Grundbegriffe von HTML zu entdecken. Wenn du nach dieser Übung mehr über HTML lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf &lt;a href=&#34;http://www.w3schools.com/html/default.asp&#34; target=&#34;_blank&#34;&gt;die HTML Einführung auf w3schools.com&lt;/a&gt; werfen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;das-grundgerüst-einer-html-seite&#34;&gt;Das Grundgerüst einer HTML-Seite&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Öffne einen beliebigen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Hier einige Links zu kostenlosen Editoren, mit denen du HTML gut schreiben kannst. Falls du nicht sicher bist, welchen du nehmen sollst, nimm gleich den ersten. Im Lauf der Zeit kannst du mit verschiedenen experimentieren und dich für den entscheiden, der dir am besten gefällt.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Erste Schritte mit CSS</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-css/</guid>
-      <description>Erste Schritte mit CSS Ziel der Übung In dieser Übung lernst du Cascading Style Sheets (kurz CSS) kennen. Unser Ziel ist es, eine HTML-Seite mit CSS zu formatieren und hübsch zu gestalten. Wenn du nach dieser Übung mehr über CSS lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die CSS Einführung auf w3schools.com werfen.
-Falls du noch überhaupt keine Erfahrung mit HTML hast, wende dich an eine CoderDojo Mentorin oder einen Mentor.</description>
+      <description>&lt;h1 id=&#34;erste-schritte-mit-css&#34;&gt;Erste Schritte mit CSS&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung lernst du &lt;em&gt;Cascading Style Sheets&lt;/em&gt; (kurz CSS) kennen. Unser Ziel ist es, eine HTML-Seite mit CSS zu formatieren und hübsch zu gestalten. Wenn du nach dieser Übung mehr über CSS lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf &lt;a href=&#34;http://www.w3schools.com/css/css_intro.asp&#34; target=&#34;_blank&#34;&gt;die CSS Einführung auf w3schools.com&lt;/a&gt; werfen.&lt;/p&gt;&#xA;&lt;p&gt;Falls du noch überhaupt keine Erfahrung mit HTML hast, wende dich an eine CoderDojo Mentorin oder einen Mentor. Sie werden dir die HTML-Basics erklären oder dir eine Übung für HTML-Grundlagen zeigen.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Verschlüsseln mit JavaScript</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/</guid>
-      <description>Verschlüsseln mit JavaScript 
-   Ziel der Übung In dieser Übung lernst du ein einfaches Verschlüsselungsverfahren kennen.
-Technisch lernst du einige Dinge über JavaScript und Node.js:
- Wie programmiert man ein Kommandozeilenprogramm mit JavaScript? Was sind ASCII Codes? Wie arbeitet man in JavaScript mit Zeichenketten?  Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist! Falls JavaScript, Node.js und Visual Studio Code für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut.</description>
+      <description>&lt;h1 id=&#34;verschlüsseln-mit-javascript&#34;&gt;Verschlüsseln mit JavaScript&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/caesar-verschluesseln/img/ergebnis-ausgabe.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung lernst du ein einfaches Verschlüsselungsverfahren kennen.&lt;/p&gt;&#xA;&lt;p&gt;Technisch lernst du einige Dinge über JavaScript und Node.js:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Wie programmiert man ein Kommandozeilenprogramm mit JavaScript?&lt;/li&gt;&#xA;&lt;li&gt;Was sind &lt;a href=&#34;https://de.wikipedia.org/wiki/ASCII&#34; target=&#34;_blank&#34;&gt;ASCII&lt;/a&gt; Codes?&lt;/li&gt;&#xA;&lt;li&gt;Wie arbeitet man in JavaScript mit Zeichenketten?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bitte beachte, dass dieses Beispiel keine Übung für Anfänger ist!&lt;/strong&gt; Falls JavaScript, Node.js und &lt;a href=&#34;https://code.visualstudio.com/&#34; title=&#34;Homepage von Visual Studio Code&#34; target=&#34;_blank&#34;&gt;Visual Studio Code&lt;/a&gt; für dich neu sind, mache dich erst mit diesen Technologien und Werkzeugen vertraut. Dazu sind folgende Übungsbeispiele zu empfehlen:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>JavaScript Zahlen raten</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/javascript-zahlen-raten/</guid>
-      <description>Zahlen raten Ziel der Übung In dieser Übung programmierst du ein einfaches &amp;ldquo;Zahlen raten&amp;rdquo; Spiel und siehst, wie man mit JavaScript Ein- und Ausgaben machen kann.
-Das Spiel soll folgendermaßen funktionieren: Der Computer denkt sich eine Zahl zwischen 0 und 100 aus und der Spieler muss versuchen, diese Zahl mit möglichst wenigen Versuchen zu erraten. Dazu kann er einen Tipp eingeben. Der Computer sagt dann Niedriger oder Höher, und der Spieler kann einen neuen Tipp eingeben, bis er die richtige Zahl erraten hat.</description>
+      <description>&lt;h1 id=&#34;zahlen-raten&#34;&gt;Zahlen raten&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du ein einfaches &amp;ldquo;Zahlen raten&amp;rdquo; Spiel und siehst, wie man mit JavaScript Ein- und Ausgaben machen kann.&lt;/p&gt;&#xA;&lt;p&gt;Das Spiel soll folgendermaßen funktionieren: Der Computer denkt sich eine Zahl zwischen 0 und 100 aus und der Spieler muss versuchen, diese Zahl mit möglichst wenigen Versuchen zu erraten. Dazu kann er einen Tipp eingeben. Der Computer sagt dann &lt;em&gt;Niedriger&lt;/em&gt; oder &lt;em&gt;Höher&lt;/em&gt;, und der Spieler kann einen neuen Tipp eingeben, bis er die richtige Zahl erraten hat.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Advanced CSS Styles</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/css-advanced-styles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/css-advanced-styles/</guid>
-      <description>Advanced CSS Styles Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Scratch - Fang mich&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;content&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Scratch Fang-Mich &amp;lt;span class=&amp;#34;version&amp;#34;&amp;gt;Scratch 3.0&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;div class=&amp;#34;intro&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;images/endgame.png&amp;#34; alt=&amp;#34;Endgame&amp;#34;&amp;gt; &amp;lt;p&amp;gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ... Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: Startprojekt</description>
+      <description>&lt;h1 id=&#34;advanced-css-styles&#34;&gt;Advanced CSS Styles&lt;/h1&gt;&#xA;&lt;p&gt;Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;html lang=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;head&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;meta charset=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;meta name=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; content=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;title&amp;gt;Scratch - Fang mich&amp;lt;/title&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/head&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;body&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;div class=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;h1&amp;gt;Scratch Fang-Mich &amp;lt;span class=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;version&amp;#34;&lt;/span&gt;&amp;gt;Scratch 3.0&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;div class=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;intro&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &amp;lt;img src=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;images/endgame.png&amp;#34;&lt;/span&gt; alt=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Endgame&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &amp;lt;p&amp;gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&amp;lt;/p&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;/div&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: &lt;a href=&#34;initial-project.zip&#34;&gt;Startprojekt&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Erste Schritte mit Bootstrap</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-bootstrap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-bootstrap/</guid>
-      <description>Erste Schritte mit Bootstrap Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Scratch - Fang mich&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;#34;content&amp;#34;&amp;gt; &amp;lt;h1&amp;gt;Scratch Fang-Mich &amp;lt;span class=&amp;#34;version&amp;#34;&amp;gt;Scratch 3.0&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;div class=&amp;#34;intro&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;images/endgame.png&amp;#34; alt=&amp;#34;Endgame&amp;#34;&amp;gt; &amp;lt;p&amp;gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ... Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: Startprojekt</description>
+      <description>&lt;h1 id=&#34;erste-schritte-mit-bootstrap&#34;&gt;Erste Schritte mit Bootstrap&lt;/h1&gt;&#xA;&lt;p&gt;Für diese Übung starten wir mit einer existierenden Webseite, die nur HTML enthält, aber noch gar keine Styles.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;html lang=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;head&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;meta charset=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;meta name=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; content=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;title&amp;gt;Scratch - Fang mich&amp;lt;/title&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/head&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;body&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;div class=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;h1&amp;gt;Scratch Fang-Mich &amp;lt;span class=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;version&amp;#34;&lt;/span&gt;&amp;gt;Scratch 3.0&amp;lt;/span&amp;gt;&amp;lt;/h1&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;div class=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;intro&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &amp;lt;img src=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;images/endgame.png&amp;#34;&lt;/span&gt; alt=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Endgame&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &amp;lt;p&amp;gt;In diesem Spiel bist du ein Fisch, der dem großen Haifisch entkommen muss. Schaffst du es?&amp;lt;/p&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;/div&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        ...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ihr könnt das initiale Projekt mit allen Bildern aber ohne Styles hier herunterladen: &lt;a href=&#34;initial-project.zip&#34;&gt;Startprojekt&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Erste Schritte mit Hugo</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-hugo/</guid>
-      <description>Erste Schritte mit Hugo Was ist Hugo Hugo ist ein statischer Webseitengenerator, der auf der Sprache Go basiert.
-Was ist ein statischer Website Generator Dynamische Webseiten werden erst beim Abruf vom Server generiert (z.B. PHP, ASP.NET). Statische Webseiten bestehen nur aus HTML, JavaScript, CSS und weiteren Resourcen wie Bildern oder Fonts.
-Static Site Generators generieren statische Webseiten und ermöglichen damit die Trennung von Layout und Content. Mehr Infos dazu findest du unter https://www.</description>
+      <description>&lt;h1 id=&#34;erste-schritte-mit-hugo&#34;&gt;Erste Schritte mit Hugo&lt;/h1&gt;&#xA;&lt;h2 id=&#34;was-ist-hugo&#34;&gt;Was ist Hugo&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; ist ein statischer Webseitengenerator, der auf der Sprache &lt;a href=&#34;https://de.wikipedia.org/wiki/Go_%28Programmiersprache%29&#34; target=&#34;_blank&#34;&gt;Go&lt;/a&gt; basiert.&lt;/p&gt;&#xA;&lt;h2 id=&#34;was-ist-ein-statischer-website-generator&#34;&gt;Was ist ein statischer Website Generator&lt;/h2&gt;&#xA;&lt;p&gt;Dynamische Webseiten werden erst beim Abruf vom Server generiert (z.B. PHP, ASP.NET). Statische Webseiten bestehen nur aus HTML, JavaScript, CSS und weiteren Resourcen wie Bildern oder Fonts.&lt;/p&gt;&#xA;&lt;p&gt;Static Site Generators generieren statische Webseiten und ermöglichen damit die Trennung von Layout und Content. Mehr Infos dazu findest du unter &lt;a href=&#34;https://www.projectival.de/blog/static-site-generator-statische-webseiten-dynamische-webseiten/&#34; target=&#34;_blank&#34;&gt;https://www.projectival.de/blog/static-site-generator-statische-webseiten-dynamische-webseiten/&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Erste Schritte mit SVG</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-svg/</guid>
-      <description>Erste Schritte mit SVG Ziel der Übung In dieser Übung lernst du Scalable Vector Graphics (kurz SVG) kennen. Unser Ziel sind:
- Wir wollen verstehen, was SVG ist und wofür es eingesetzt wird. Wir wollen Grafiken mit SVG in eine HTML-Seite einbauen. Wir wollen SVG mit JavaScript programmgesteuert erzeugen. Wir möchten SVG verwenden, um ein mathematisches Prinzip, die Cardanischen Kreise veranschaulichen.  Wenn du nach dieser Übung mehr über SVG lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf die SVG Einführung auf w3schools.</description>
+      <description>&lt;h1 id=&#34;erste-schritte-mit-svg&#34;&gt;Erste Schritte mit SVG&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung lernst du &lt;a href=&#34;https://de.wikipedia.org/wiki/Scalable_Vector_Graphics&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Scalable Vector Graphics&lt;/em&gt;&lt;/a&gt; (kurz &lt;em&gt;SVG&lt;/em&gt;) kennen. Unser Ziel sind:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Wir wollen verstehen, was SVG ist und wofür es eingesetzt wird.&lt;/li&gt;&#xA;&lt;li&gt;Wir wollen Grafiken mit SVG in eine HTML-Seite einbauen.&lt;/li&gt;&#xA;&lt;li&gt;Wir wollen SVG mit JavaScript programmgesteuert erzeugen.&lt;/li&gt;&#xA;&lt;li&gt;Wir möchten SVG verwenden, um ein mathematisches Prinzip, die &lt;a href=&#34;https://de.wikipedia.org/wiki/Cardanische_Kreise&#34; target=&#34;_blank&#34;&gt;Cardanischen Kreise&lt;/a&gt; veranschaulichen.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Wenn du nach dieser Übung mehr über SVG lernen willst oder während der Übung Detailfragen hast, kannst du einen Blick auf &lt;a href=&#34;http://www.w3schools.com/svg/&#34; target=&#34;_blank&#34;&gt;die SVG Einführung auf w3schools.com&lt;/a&gt; werfen.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Feuerwerk-Simulator</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/feuerwerk-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/feuerwerk-basics/</guid>
-      <description>Feuerwerksimulator (für AnfängerInnen) Ziel der Übung Heute wollen wir gemeinsam einen Feuerwerk-Simulator programmieren. Dabei kannst du das Tippen von Code auf der Tastatur üben und lernst Grundlagen der Programmierung wie Variablen, Schleifen und Funktionen kennen.
-Du solltest für diese Übung schon ein wenig Programmiererfahrung mit einer Blockprogrammiersprache wie Scratch oder Snap! haben. Falls du noch nie Programmcode eingetippt hast, solltest du auch etwas Geduld mitbringen. Es ist am Anfang nicht immer leicht, die vielen Sonderzeichen im Code auf der Tastatur zu finden.</description>
+      <description>&lt;h1 id=&#34;feuerwerksimulator-für-anfängerinnen&#34;&gt;Feuerwerksimulator (für AnfängerInnen)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Heute wollen wir gemeinsam einen Feuerwerk-Simulator programmieren. Dabei kannst du das Tippen von Code auf der Tastatur üben und lernst Grundlagen der Programmierung wie Variablen, Schleifen und Funktionen kennen.&lt;/p&gt;&#xA;&lt;p&gt;Du solltest für diese Übung schon ein wenig Programmiererfahrung mit einer Blockprogrammiersprache wie &lt;a href=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/&#34;&gt;&lt;em&gt;Scratch&lt;/em&gt;&lt;/a&gt; oder &lt;a href=&#34;https://snap.berkeley.edu/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Snap!&lt;/em&gt;&lt;/a&gt; haben. Falls du noch nie Programmcode eingetippt hast, solltest du auch etwas Geduld mitbringen. Es ist am Anfang nicht immer leicht, die vielen Sonderzeichen im Code auf der Tastatur zu finden. Halte durch, Übung macht den Meister!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fraktal Baum mit snap.svg</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-fraktalbaum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-fraktalbaum/</guid>
-      <description>Zeichne einen Fraktal Baum mit snap.svg Ziel der Übung Zeichne einen Baum in SVG. Starte dazu mit einer vertikalen Linie als Stamm.
-Am oberen Ende der Linie zeichne zwei weitere Linien - eine etwas nach links und eine etwas nach rechts geneigt. Die neuen beiden Linien sind etwas kürzer als die erste Linie für den Stamm. In dieser zweiten Ebene erhältst du so zwei Zweige.
-Am jeweils oberen Ende der beiden neuen Linie zweichne wieder jeweils zwei neue nach links und rechts geneigte Linien die etwas kürzer als die vorige Linie sind.</description>
+      <description>&lt;h1 id=&#34;zeichne-einen-fraktal-baum-mit-snapsvg&#34;&gt;Zeichne einen Fraktal Baum mit snap.svg&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Zeichne einen Baum in SVG. Starte dazu mit einer vertikalen Linie als Stamm.&lt;/p&gt;&#xA;&lt;p&gt;Am oberen Ende der Linie zeichne zwei weitere Linien - eine etwas nach links und eine etwas nach rechts geneigt.&#xA;Die neuen beiden Linien sind etwas kürzer als die erste Linie für den Stamm. In dieser zweiten Ebene erhältst du so zwei Zweige.&lt;/p&gt;&#xA;&lt;p&gt;Am jeweils oberen Ende der beiden neuen Linie zweichne wieder jeweils zwei neue nach links und rechts geneigte Linien die etwas kürzer als die vorige Linie sind.&#xA;In dieser dritten Ebene erhältst du so jetzt vier Zweige.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Halloween - Catch the Treat</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/catch-the-treat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/catch-the-treat/</guid>
-      <description>Halloween - Catch the Treats Videoanleitung  Einleitung Willkommen bei unserem Halloween-Spiel 🎃. Wir programmieren gemeinsam ein Spiel, bei dem freundliche Monster 👻 gruselige &amp;ldquo;Süßigkeiten&amp;rdquo; herumwerfen, die du erwischen musst. Wenn du sie nicht erwischst, verlierst du ein Leben. Wenn du alle Leben verloren hast, ist das Spiel vorbei. Wer schafft am meisten Punkte?
-Interessante Info am Rande, die für diejenigen interessant sein könnte, die schon etwas mehr Erfahrung haben: Wir programmieren in dieser Übung mit der Programmiersprache TypeScript.</description>
+      <description>&lt;h1 id=&#34;halloween---catch-the-treats&#34;&gt;Halloween - Catch the Treats&lt;/h1&gt;&#xA;&lt;h2 id=&#34;videoanleitung&#34;&gt;Videoanleitung&lt;/h2&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;p&gt;Willkommen bei unserem Halloween-Spiel 🎃. Wir programmieren gemeinsam ein Spiel, bei dem freundliche Monster 👻 gruselige &amp;ldquo;Süßigkeiten&amp;rdquo; herumwerfen, die du erwischen musst. Wenn du sie nicht erwischst, verlierst du ein Leben. Wenn du alle Leben verloren hast, ist das Spiel vorbei. Wer schafft am meisten Punkte?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Interessante Info&lt;/strong&gt; am Rande, die für diejenigen interessant sein könnte, die schon etwas mehr Erfahrung haben: Wir programmieren in dieser Übung mit der Programmiersprache &lt;em&gt;TypeScript&lt;/em&gt;. Unsere Entwicklungsumgebung ist &lt;em&gt;Stackblitz&lt;/em&gt;. Als Grafikbibliothek verwenden wir &lt;em&gt;p5js&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hangman</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/</guid>
-      <description>Hangman Ziel der Übung Der erste Spieler gibt ein Wort ein, das vom zweiten Spieler erraten werden muss.
-Zuerst sieht der zweite Spieler nur ein Sternchen für jeden Buchstaben. Jeder erratene Buchstabe wird aufgedeckt. Für jeden falsch geratenen Buchstaben wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor der Galgen fertig ist.
-
-   Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.</description>
+      <description>&lt;h1 id=&#34;hangman&#34;&gt;Hangman&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Der erste Spieler gibt ein Wort ein, das vom zweiten Spieler erraten werden muss.&lt;/p&gt;&#xA;&lt;p&gt;Zuerst sieht der zweite Spieler nur ein Sternchen für jeden Buchstaben. Jeder erratene Buchstabe wird aufgedeckt. Für jeden falsch geratenen Buchstaben&#xA;wird der Galgen um eine Linie erweitert. Ziel ist es, das Wort zu erraten bevor der Galgen fertig ist.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/hangman/img/hangman.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;grundgerüst-der-html-seite&#34;&gt;Grundgerüst der HTML Seite&lt;/h2&gt;&#xA;&lt;p&gt;Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.html.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HTML &amp; CSS Hands On</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-css-hands-on/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-css-hands-on/</guid>
-      <description>HTML &amp;amp; CSS Hands On Die folgenden Übungen kannst du direkt online in JSFiddle machen. Du brauchst dafür kein installiertes Tool. Für jede Übung wird das gewünschte Ergebnis dargestellt und du findest jeweils einen Link zur Ausgangsbasis für das Beispiel.
-HTML Basic Tags Im ersten Beispiel werden die am häufigsten verwendeten HTML Element verwendet.
-Startprojekt öffnen
- Formatierung mit Tags In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch HTML Elemente zu formatieren.</description>
+      <description>&lt;h1 id=&#34;html--css-hands-on&#34;&gt;HTML &amp;amp; CSS Hands On&lt;/h1&gt;&#xA;&lt;p&gt;Die folgenden Übungen kannst du direkt online in &lt;a href=&#34;https://jsfiddle.net/&#34; target=&#34;_blank&#34;&gt;JSFiddle&lt;/a&gt; machen. Du brauchst dafür kein installiertes Tool. Für jede Übung wird das gewünschte Ergebnis dargestellt und du findest jeweils einen Link zur Ausgangsbasis für das Beispiel.&lt;/p&gt;&#xA;&lt;h2 id=&#34;html&#34;&gt;HTML&lt;/h2&gt;&#xA;&lt;h3 id=&#34;basic-tags&#34;&gt;Basic Tags&lt;/h3&gt;&#xA;&lt;p&gt;Im ersten Beispiel werden die am häufigsten verwendeten HTML Element verwendet.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://jsfiddle.net/karin112358/qmgvrodt/#fork&#34; target=&#34;_blank&#34;&gt;Startprojekt öffnen&lt;/a&gt;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h3 id=&#34;formatierung-mit-tags&#34;&gt;Formatierung mit Tags&lt;/h3&gt;&#xA;&lt;p&gt;In diesem Beispiel geht es um die verschiedenen Optionen, um Text direkt durch HTML Elemente zu formatieren.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Labyrinth-Spiel mit Scratch und JavaScript</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/</guid>
-      <description>Labyrinth-Spiel mit Scratch und JavaScript Ziel der Übung In dieser Übung programmierst du ein Labyrinth-Spiel erst mit Scratch und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.
-Es ist wichtig, dass du vor dieser Übung die Scratch-Variante dieses Spiels genau angesehen oder noch besser selbst programmiert hast.
-Spielbeschreibung Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit &amp;ldquo;X&amp;rdquo; markierte Ziel zu erreichen.</description>
+      <description>&lt;h1 id=&#34;labyrinth-spiel-mit-scratch-und-javascript&#34;&gt;Labyrinth-Spiel mit Scratch und JavaScript&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung programmierst du ein Labyrinth-Spiel &lt;a href=&#34;../../scratch/labyrinth&#34;&gt;erst mit Scratch&lt;/a&gt; und danach mit JavaScript. So lernst du, das, was du in Scratch über Programmieren gelernt hast, in einer textbasierten Programmiersprache anzuwenden.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Es ist wichtig, dass du vor dieser Übung die &lt;a href=&#34;../../scratch/labyrinth&#34;&gt;Scratch-Variante dieses Spiels&lt;/a&gt; genau angesehen oder noch besser selbst programmiert hast.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;spielbeschreibung&#34;&gt;Spielbeschreibung&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;p&gt;Steuere mit den Cursortasten den Spieler (blaue Kugel). Dein Ziel ist es, das mit &amp;ldquo;X&amp;rdquo; markierte Ziel zu erreichen.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mandala</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/mandala/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/mandala/</guid>
-      <description>Mandala mit Code malen Was ist ein Mandala? Stell dir vor, du zeichnest einen Kreis und füllst ihn mit vielen schönen Mustern, Formen und Farben. Es ist wie ein kompliziertes Malbuch, aber alles ist in einem Kreis angeordnet. Dieses Muster kann dir helfen, dich zu entspannen oder über das Leben und die Welt nachzudenken. In manchen Kulturen glauben die Menschen sogar, dass Mandalas ihnen helfen können, sich besser auf ihre Gedanken zu konzentrieren oder sich mit dem Universum zu verbinden.</description>
+      <description>&lt;h1 id=&#34;mandala-mit-code-malen&#34;&gt;Mandala mit Code malen&lt;/h1&gt;&#xA;&lt;h2 id=&#34;was-ist-ein-mandala&#34;&gt;Was ist ein Mandala?&lt;/h2&gt;&#xA;&lt;p&gt;Stell dir vor, du zeichnest einen Kreis und füllst ihn mit vielen schönen Mustern, Formen und Farben. Es ist wie ein kompliziertes Malbuch, aber alles ist in einem Kreis angeordnet. Dieses Muster kann dir helfen, dich zu entspannen oder über das Leben und die Welt nachzudenken. In manchen Kulturen glauben die Menschen sogar, dass Mandalas ihnen helfen können, sich besser auf ihre Gedanken zu konzentrieren oder sich mit dem Universum zu verbinden.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Monster Run</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/monster-run/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/monster-run/</guid>
-      <description>Monster Run Einleitung Wisst ihr was ein Jump &amp;lsquo;n&amp;rsquo; Run-Spiel ist? Man steuert als Spielerin oder Spieler eine kleine Figur und läuft mir ihr durch ein Labyrinth. Meistens muss sich dabei gegen verschiedene Gegner behaupten. In diesem Workshop zeigt euch Rainer Grundlagen, die man zum Programmieren eines Jump &amp;lsquo;n&amp;rsquo; Run in p5js braucht. Er baut mich euch einen Monsterspaziergang.
-Grafiken In dieser Übung verwenden wir Grafiken der Plattform craftpix.net. Du findest dort viele Grafiken für Spiele aller Art.</description>
+      <description>&lt;h1 id=&#34;monster-run&#34;&gt;Monster Run&lt;/h1&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;p&gt;Wisst ihr was ein Jump &amp;rsquo;n&amp;rsquo; Run-Spiel ist? Man steuert als Spielerin oder Spieler eine kleine Figur und läuft mir ihr durch ein Labyrinth. Meistens muss sich dabei gegen verschiedene Gegner behaupten. In diesem Workshop zeigt euch Rainer Grundlagen, die man zum Programmieren eines Jump &amp;rsquo;n&amp;rsquo; Run in p5js braucht. Er baut mich euch einen &lt;em&gt;Monsterspaziergang&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;grafiken&#34;&gt;Grafiken&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung verwenden wir Grafiken der Plattform &lt;a href=&#34;https://craftpix.net/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;craftpix.net&lt;/em&gt;&lt;/a&gt;. Du findest dort viele Grafiken für Spiele aller Art. Einige der Grafik-Pakete gibt es auch &lt;a href=&#34;https://craftpix.net/freebies/&#34; target=&#34;_blank&#34;&gt;kostenlos&lt;/a&gt;. In diesem Spiel verwenden wir die Bilder aus folgenden, kostenlosen Paketen:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Moorhuhn Jagd</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/moorhuhn-jagd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/moorhuhn-jagd/</guid>
-      <description>Moorhuhn Jagd Einleitung In dieser Übung programmierst du das Spiel Moorhuhn Jagd erst mit Scratch und danach mit TypeScript und p5.js. In dieser Anleitung gehen wir davon aus, dass du schon etwas Erfahrung mit TypeScript und p5.js hast.
-   Das Scratch-Spiel Damit du mit dem Spielprinzip vertraut wirst, baue das Spiel zuerst mit Scratch nach. Die Anleitung dazu findest du hier. Dieser Schritt ist wirklich wichtig, nicht auslassen!</description>
+      <description>&lt;h1 id=&#34;moorhuhn-jagd&#34;&gt;Moorhuhn Jagd&lt;/h1&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;In dieser Übung programmierst du das Spiel &lt;em&gt;Moorhuhn Jagd&lt;/em&gt; &lt;a href=&#34;../../scratch/moorhuhn-jagd/&#34;&gt;erst mit Scratch&lt;/a&gt; und danach mit TypeScript und p5.js. In dieser Anleitung gehen wir davon aus, dass du schon etwas Erfahrung mit TypeScript und p5.js hast.&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-5&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/moorhuhn-jagd/img/titel.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto ml-md-auto mr-md-0&#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;das-scratch-spiel&#34;&gt;Das Scratch-Spiel&lt;/h2&gt;&#xA;&lt;p&gt;Damit du mit dem Spielprinzip vertraut wirst, baue das Spiel zuerst mit Scratch nach. Die Anleitung dazu findest du &lt;a href=&#34;../../scratch/moorhuhn-jagd/&#34;&gt;hier&lt;/a&gt;. Dieser Schritt ist wirklich wichtig, nicht auslassen!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Präsentationen mit HTML statt PowerPoint</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-praesentationen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/html-praesentationen/</guid>
-      <description>Präsentationen mit HTML statt PowerPoint Ziel der Übung Egal ob in der Schule, auf der Uni oder später im Beruf - es kommt immer wieder vor, dass man Präsentationen erstellen muss. Die meisten greifen dabei zu Microsoft PowerPoint.
-Das muss aber nicht sein. Als Coder mit HTML- und CSS-Kenntnissen kann man beeindruckende Präsentationen für den Browser erstellen. In dieser Übung lernst du Reveal.js kennen. Mit Grundkenntnissen in HTML und CSS kannst du mit Reveal deine nächste Präsentation ganz ohne PowerPoint erledigen.</description>
+      <description>&lt;h1 id=&#34;präsentationen-mit-html-statt-powerpoint&#34;&gt;Präsentationen mit HTML statt PowerPoint&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Egal ob in der Schule, auf der Uni oder später im Beruf - es kommt immer wieder vor, dass man Präsentationen erstellen muss. Die meisten greifen dabei zu &lt;a href=&#34;https://products.office.com/de-at/powerpoint&#34; target=&#34;_blank&#34;&gt;Microsoft PowerPoint&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Das muss aber nicht sein. Als Coder mit HTML- und CSS-Kenntnissen kann man beeindruckende Präsentationen für den Browser erstellen. In dieser Übung lernst du &lt;a href=&#34;http://lab.hakim.se/reveal-js/&#34; target=&#34;_blank&#34;&gt;Reveal.js&lt;/a&gt; kennen. Mit Grundkenntnissen in HTML und CSS kannst du mit Reveal deine nächste Präsentation ganz ohne PowerPoint erledigen.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Space Invaders</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-invaders/</guid>
-      <description>Space Invaders We will follow another amazing Tutorial by Ania Kubów to build our very own Space Invaders game. If you didn&amp;rsquo;t do so yet head to her Youtube channel and subscribe or give her a like because her content is amazing.
-Set up our files As usual we will use codesandbox.io for our implementation. The entrypoint for our website is our index.html file. In this file we need to add a link to our styles.</description>
+      <description>&lt;h1 id=&#34;space-invaders&#34;&gt;Space Invaders&lt;/h1&gt;&#xA;&lt;p&gt;We will follow another amazing Tutorial by &lt;a href=&#34;https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw&#34; target=&#34;_blank&#34;&gt;Ania Kubów&lt;/a&gt; to build our very own Space Invaders game.&#xA;If you didn&amp;rsquo;t do so yet head to her Youtube channel and subscribe or give her a like because her content is amazing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;set-up-our-files&#34;&gt;Set up our files&lt;/h2&gt;&#xA;&lt;p&gt;As usual we will use &lt;a href=&#34;https://codesandbox.io/&#34; target=&#34;_blank&#34;&gt;codesandbox.io&lt;/a&gt; for our implementation. The entrypoint for our website is our &lt;code&gt;index.html&lt;/code&gt; file.&#xA;In this file we need to add a link to our &lt;code&gt;styles.css&lt;/code&gt; and a reference to our &lt;code&gt;app.js&lt;/code&gt;. In order to check that our linking&#xA;works fine I will add some dummy code to show an alert in our JavaScript file &lt;code&gt;alert(&amp;quot;Hey Space Invaders&amp;quot;)&lt;/code&gt; and a &lt;code&gt;body { background-color: hotpink }&lt;/code&gt; to our CSS file.&#xA;Now when we refresh or open our HTML file we should see a pink background a pop up greeting the Space Invaders.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Spaß mit Bezier-Kurven</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/bezier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/bezier/</guid>
-      <description>Spaß mit Bezier-Kuven Einleitung Kaum jemand von euch wird schon einmal etwas von Bezier-Kurven gehört haben. Unsere Welt ist aber voll davon. Sie werden beim Design von physischen Dingen wie Autos genauso eingesetzt wie bei Computerspielen. Im folgenden Bild siehst du ein Beispiel. Wenn man sich die Form des Autos ansieht, entdeckt man eine Menge Kurven. Diese Kurven sind Bezier-Kurven.
-Im Bild sind bei weitem nicht alle Bezier-Kurven hervorgehoben. Findest du noch weitere?</description>
+      <description>&lt;h1 id=&#34;spaß-mit-bezier-kuven&#34;&gt;Spaß mit Bezier-Kuven&lt;/h1&gt;&#xA;&lt;h2 id=&#34;einleitung&#34;&gt;Einleitung&lt;/h2&gt;&#xA;&lt;p&gt;Kaum jemand von euch wird schon einmal etwas von Bezier-Kurven gehört haben. Unsere Welt ist aber voll davon. Sie werden beim Design von physischen Dingen wie Autos genauso eingesetzt wie bei Computerspielen. Im folgenden Bild siehst du ein Beispiel. Wenn man sich die Form des Autos ansieht, entdeckt man eine Menge Kurven. Diese Kurven sind Bezier-Kurven.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;img/car-with-bezier.png&#34; alt=&#34;Auto mit Bezier-Kurven&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Im Bild sind bei weitem nicht alle Bezier-Kurven hervorgehoben. Findest du noch weitere?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SVG Schreibtrainer</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-schreibtrainer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-schreibtrainer/</guid>
-      <description>SVG Schreibtrainer Ziel der Übung Du baust ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.
-Am oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen. Tippe den Buchstaben, bevor er den unteren Rand des Spielfelds berührt.
-Auf Wikipedia findest du eine Grafik zum Zehnfingersystem, die erklärt, welche Taste mit welchem Finger gedrückt werden soll.
-
-   Grundgerüst der HTML Seite Erstelle als erstes eine neue HTML Seite mit dem Namen schreibtrainer.</description>
+      <description>&lt;h1 id=&#34;svg-schreibtrainer&#34;&gt;SVG Schreibtrainer&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;Du baust ein Spiel das dir hilft, deine Tipp-Geschwindigkeit zu verbessern.&lt;/p&gt;&#xA;&lt;p&gt;Am oberen Spielfeldrand erscheinen Kreise mit Buchstaben, die nach unten fallen. Tippe den Buchstaben, bevor er den unteren&#xA;Rand des Spielfelds berührt.&lt;/p&gt;&#xA;&lt;p&gt;Auf Wikipedia findest du eine Grafik zum&#xA;&lt;!-- raw HTML omitted --&gt;Zehnfingersystem&lt;!-- raw HTML omitted --&gt;, die erklärt, welche Taste&#xA;mit welchem Finger gedrückt werden soll.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/svg-schreibtrainer/img/schreibtrainer.png&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;grundgerüst-der-html-seite&#34;&gt;Grundgerüst der HTML Seite&lt;/h2&gt;&#xA;&lt;p&gt;Erstelle als erstes eine neue HTML Seite mit dem Namen &lt;code&gt;schreibtrainer.html&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tetris</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/tetris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/tetris/</guid>
-      <description>Tetris In this session we will impelment a version of the TETRIS game based on a video by the amazin Ania Kubów. Check out her youtube channel &amp;ndash;&amp;gt; here &amp;lt;&amp;ndash; .
-Project setup and file linking We will need three files - a index.html that contains the markup of our website, an app.js file that contains our logic and a styles.css for styling.
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;app.</description>
+      <description>&lt;h1 id=&#34;tetris&#34;&gt;Tetris&lt;/h1&gt;&#xA;&lt;p&gt;In this session we will impelment a version of the TETRIS game based on a video by the amazin Ania Kubów. Check out her youtube channel &lt;a href=&#34;https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw&#34; target=&#34;_blank&#34;&gt; &amp;ndash;&amp;gt; here &amp;lt;&amp;ndash; &lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;project-setup-and-file-linking&#34;&gt;Project setup and file linking&lt;/h2&gt;&#xA;&lt;p&gt;We will need three files - a index.html that contains the markup of our website, an app.js file that contains our logic and a styles.css for styling.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;html&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;head&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;meta charset=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;script src=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;app.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;link rel=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; type=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt; href=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;styles.css&amp;#34;&lt;/span&gt;/&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &amp;lt;title&amp;gt;Tetris&amp;lt;/title&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/head&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;body&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/body&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/html&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In order to verify that our linking works out properly we put an &lt;code&gt;alert(&#39;Hello Tetris&#39;)&lt;/code&gt; to the app.js file and a &lt;code&gt;body { background: hotpink; }&lt;/code&gt; to the styles.css file.&#xA;We should now see a popup containing the text &amp;ldquo;Hello Tetris&amp;rdquo; when we reload the page and the pages background should have a specified color.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,36 +4,22 @@
     <title>Scratch on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/categories/scratch/</link>
     <description>Recent content in Scratch on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/categories/scratch/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/categories/scratch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ninja Jump&#39;n&#39;run</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/ninja-jumpnrun/</guid>
-      <description>Dieses Spiel ist bereits etwas herausfordernder und soll euch zeigen, wie man in einem Spiel mit einem Spielfeld umgeht, das viel größer als der Bildschirm ist.
-Figuren Bitte lade dir folgende Figuren herunter:
- Ninja als Spieler Blöcke für das Spielfeld Diamanten zum Sammeln Schlangen als Gegner  Außerdem werdet ihr noch
- Level-Datei für das Spielfeld  brauchen.
-Vorbereitung Das Spielfeld selbst ist diesmal nicht wirklich ein Bild, sondern eine Beschreibung wo welcher Block sitzen soll.</description>
+      <description>&lt;p&gt;Dieses Spiel ist bereits etwas herausfordernder und soll euch zeigen, wie man in einem Spiel mit einem Spielfeld umgeht, das&#xA;viel größer als der Bildschirm ist.&lt;/p&gt;&#xA;&lt;h3 id=&#34;figuren&#34;&gt;Figuren&lt;/h3&gt;&#xA;&lt;p&gt;Bitte lade dir folgende Figuren herunter:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;assets/Spieler.sprite3&#34;&gt;Ninja als Spieler&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;assets/game_block.sprite3&#34;&gt;Blöcke für das Spielfeld&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;assets/Diamant.sprite3&#34;&gt;Diamanten zum Sammeln&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;assets/Schlange.sprite3&#34;&gt;Schlangen als Gegner&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Außerdem werdet ihr noch&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;assets/level.txt&#34;&gt;Level-Datei für das Spielfeld&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;brauchen.&lt;/p&gt;&#xA;&lt;h1 id=&#34;vorbereitung&#34;&gt;Vorbereitung&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;Das Spielfeld selbst ist diesmal nicht wirklich ein Bild, sondern eine Beschreibung wo welcher Block sitzen soll. Wir definieren dafür eine Liste namens &lt;code&gt;level&lt;/code&gt; in der Sektion &lt;code&gt;Variablen&lt;/code&gt; durch Klicken auf &lt;code&gt;Neue Liste&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Straße Überqueren</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/strasse-queren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/strasse-queren/</guid>
-      <description>In diesem Spiel werden wir uns ansehen, wie wir eine größere Menge an Figuren in der Welt mit wenig Aufwand erzeugen. Ganz nebenbei helfen wir Scratchy (hoffentlich) über die Straße.
-Figuren Bitte lade dir folgende Figuren herunter:
- Unsere Spielfigur Die Autos Das Treibgut für den Fluss  Importiere alle diese Figuren in Scratch (Figur -&amp;gt; Figur hochladen).
-Der Hintergrund Wie dir vielleicht schon aufgefallen ist, haben wir für dieses Spiel gar keinen Hintergrund importiert.</description>
+      <description>&lt;p&gt;In diesem Spiel werden wir uns ansehen, wie wir eine größere Menge an Figuren in der Welt mit wenig Aufwand erzeugen. Ganz nebenbei helfen wir Scratchy (hoffentlich) über die Straße.&lt;/p&gt;&#xA;&lt;h3 id=&#34;figuren&#34;&gt;Figuren&lt;/h3&gt;&#xA;&lt;p&gt;Bitte lade dir folgende Figuren herunter:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;assets/Spieler.sprite3&#34;&gt;Unsere Spielfigur&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;assets/Autos.sprite3&#34;&gt;Die Autos&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;assets/Treibgut.sprite3&#34;&gt;Das Treibgut für den Fluss&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Importiere alle diese Figuren in Scratch (Figur -&amp;gt; Figur hochladen).&lt;/p&gt;&#xA;&lt;h3 id=&#34;der-hintergrund&#34;&gt;Der Hintergrund&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;p&gt;Wie dir vielleicht schon aufgefallen ist, haben wir für dieses Spiel gar keinen Hintergrund importiert. Das brauchen wir in dem Fall auch gar nicht, da wir uns den Hintergrund von einem &amp;ldquo;Malstift Roboter&amp;rdquo; erzeugen lassen.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

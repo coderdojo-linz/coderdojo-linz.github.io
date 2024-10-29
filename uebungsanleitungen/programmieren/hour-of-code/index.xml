@@ -4,22 +4,16 @@
     <title>Hour of Code on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/</link>
     <description>Recent content in Hour of Code on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 17 May 2020 08:12:48 +0200</lastBuildDate>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Jun 2020 05:28:34 +0200</lastBuildDate>
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hour of Code</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/hour-of-code/</link>
       <pubDate>Mon, 01 Jun 2020 05:28:34 +0200</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/hour-of-code/hour-of-code/</guid>
-      <description>Programmieren lernen mit Hour of Code Anfänger: Programmieren mit Blöcken   Kennst du das Spiel Angry Birds von Smartphone oder Tablet? In Hour of Code kannst du die ersten Schritte des Programmierens mit den Angry Birds erlernen. Programmierspiel unter https://studio.code.org/hoc/1 starten&amp;hellip;
-     Bist du ein Fan von Anna und Elsa? In Hour of Code kannst du ihre Bewegungen programmieren und damit schöne Muster aufs Eis zeichnen.</description>
+      <description>&lt;h1 id=&#34;programmieren-lernen-mit-hour-of-code&#34;&gt;Programmieren lernen mit &lt;em&gt;Hour of Code&lt;/em&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;anfänger-programmieren-mit-blöcken&#34;&gt;Anfänger: Programmieren mit Blöcken&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&#xA;&#xA;&#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;Kennst du das Spiel &lt;em&gt;Angry Birds&lt;/em&gt; von Smartphone oder Tablet? In &lt;em&gt;Hour of Code&lt;/em&gt; kannst du die ersten Schritte des Programmierens mit den &lt;em&gt;Angry Birds&lt;/em&gt; erlernen. Programmierspiel unter &lt;a href=&#34;https://studio.code.org/hoc/1&#34; target=&#34;_blank&#34;&gt;https://studio.code.org/hoc/1&lt;/a&gt; starten&amp;hellip;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-5&#34;&gt;&#xA;    &lt;img src=&#34;https://code.org/images/tutorials/resubmission/codeorg.jpg&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto ml-md-auto mr-md-0&#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#xA;&#xA;&#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;Bist du ein Fan von Anna und Elsa? In &lt;em&gt;Hour of Code&lt;/em&gt; kannst du ihre Bewegungen programmieren und damit schöne Muster aufs Eis zeichnen. Programmierspiel unter &lt;a href=&#34;https://hourofcode.com/frzn&#34; target=&#34;_blank&#34;&gt;https://hourofcode.com/frzn&lt;/a&gt; starten&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

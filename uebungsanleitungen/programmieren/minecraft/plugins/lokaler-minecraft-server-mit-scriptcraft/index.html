@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Lokaler Minecraft-Server mit Scriptcraft </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -162,137 +162,133 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#installation-eines-minecraft-servers-mit-scriptcraft">Installation eines Minecraft Servers mit Scriptcraft</a>
-<ul>
-<li><a href="#voraussetzungen">Voraussetzungen</a></li>
-<li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
-<li><a href="#spigot">Spigot</a></li>
-<li><a href="#scriptcraft">Scriptcraft</a></li>
-<li><a href="#minecraft-server-zum-ersten-mal-starten">Minecraft Server zum ersten Mal starten</a></li>
-<li><a href="#mit-server-verbinden">Mit Server verbinden</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+    <li><a href="#systemvoraussetzungen">Systemvoraussetzungen</a></li>
+    <li><a href="#spigot">Spigot</a></li>
+    <li><a href="#scriptcraft">Scriptcraft</a></li>
+    <li><a href="#minecraft-server-zum-ersten-mal-starten">Minecraft Server zum ersten Mal starten</a></li>
+    <li><a href="#mit-server-verbinden">Mit Server verbinden</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="installation-eines-minecraft-servers-mit-scriptcraft">Installation eines Minecraft Servers mit Scriptcraft</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="installation-eines-minecraft-servers-mit-scriptcraft">Installation eines Minecraft Servers mit Scriptcraft</h1>
 <h2 id="voraussetzungen">Voraussetzungen</h2>
-
 <p>In dieser Übung installieren wir einen Minecraft Server mit Scriptcraft auf deinem Windows-Computer.</p>
-
 <h2 id="systemvoraussetzungen">Systemvoraussetzungen</h2>
-
 <p>Bevor du den Minecraft-Server installieren kannst, musst du folgende Software installieren:</p>
-
 <ol>
-<li><p><em>Java SE Development Kit</em> (kurz <em>JDK</em>)<br/>
-Lade die Windows-Version von der <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Download-Seite</a> herunter und installiere sie.</p></li>
-
-<li><p><em>Git</em><br/>
-Lade die Windows-Version von der <a href="https://git-scm.com/download/win" target="_blank">Download-Seite</a> herunter und installiere sie. Installiere alle verfügbaren Teile von Git, die im Installationsprogramm auswählbar sind.</p></li>
-
-<li><p>Lege mit dem <em>Windows Explorer</em> ein leeres Verzeichnis an, in dem wir den Minecraft-Server installieren können. Unser Vorschlag ist <code>c:\spigot</code>.</p></li>
+<li>
+<p><em>Java SE Development Kit</em> (kurz <em>JDK</em>)<!-- raw HTML omitted -->
+Lade die Windows-Version von der <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Download-Seite</a> herunter und installiere sie.</p>
+</li>
+<li>
+<p><em>Git</em><!-- raw HTML omitted -->
+Lade die Windows-Version von der <a href="https://git-scm.com/download/win" target="_blank">Download-Seite</a> herunter und installiere sie. Installiere alle verfügbaren Teile von Git, die im Installationsprogramm auswählbar sind.</p>
+</li>
+<li>
+<p>Lege mit dem <em>Windows Explorer</em> ein leeres Verzeichnis an, in dem wir den Minecraft-Server installieren können. Unser Vorschlag ist <code>c:\spigot</code>.</p>
+</li>
 </ol>
-
 <h2 id="spigot">Spigot</h2>
-
 <p>Jetzt können wir mit der Installation loslegen. Wir werden den Minecraft-Server namens <a href="https://www.spigotmc.org/" target="_blank">Spigot</a> installieren.</p>
-
 <ol>
-<li><p>Lade die <a href="https://hub.spigotmc.org/jenkins/job/BuildTools/lastStableBuild/artifact/target/BuildTools.jar" target="_blank">Installationdatei von Spigot</a> herunter und speichere sie im Installationsverzeichnis <code>c:\spigot</code>.</p></li>
+<li>
+<p>Lade die <a href="https://hub.spigotmc.org/jenkins/job/BuildTools/lastStableBuild/artifact/target/BuildTools.jar" target="_blank">Installationdatei von Spigot</a> herunter und speichere sie im Installationsverzeichnis <code>c:\spigot</code>.</p>
+</li>
+<li>
+<p>Starte das Programm <em>git bash</em><!-- raw HTML omitted -->
 
-<li><p>Starte das Programm <em>git bash</em><br/>
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/lokaler-minecraft-server-mit-scriptcraft/img/git-bash-starten.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
-
-<li><p>Wechsle mit dem Kommando <code>cd /c/spigot</code> in das Installationsverzeichnis.</p></li>
-
-<li><p>Baue den Spigot-Server mit dem Kommando <code>java -jar BuildTools.jar</code>. Hab etwas Geduld, dieser Schritt kann einige Minuten dauern.</p></li>
-
-<li><p>Die <em>BuildTools</em> brauchen wir jetzt nicht mehr. Du kannst sie mit dem Kommando <code>rm -f BuildTools.*</code> löschen.</p></li>
+   
+   
+        
+       
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <div class="row">
+       <div class="col">
+           <p></p>
+       </div>
+       <div class="col-12 col-md-12">
+       <img src="/uebungsanleitungen/programmieren/minecraft/plugins/lokaler-minecraft-server-mit-scriptcraft/img/git-bash-starten.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+       </div>
+   </div>
+</p>
+</li>
+<li>
+<p>Wechsle mit dem Kommando <code>cd /c/spigot</code> in das Installationsverzeichnis.</p>
+</li>
+<li>
+<p>Baue den Spigot-Server mit dem Kommando <code>java -jar BuildTools.jar</code>. Hab etwas Geduld, dieser Schritt kann einige Minuten dauern.</p>
+</li>
+<li>
+<p>Die <em>BuildTools</em> brauchen wir jetzt nicht mehr. Du kannst sie mit dem Kommando <code>rm -f BuildTools.*</code> löschen.</p>
+</li>
 </ol>
-
 <p>Der Minecraft-Server ist jetzt fertig. Es fehlt nur noch Scriptcraft.</p>
-
 <h2 id="scriptcraft">Scriptcraft</h2>
-
 <p>Damit wir Minecraft mit JavaScript programmieren können, müssen wir das Plugin <em>Scriptcraft</em> installieren:</p>
-
 <ol>
-<li><p>Erstelle ein Unterverzeichnis für <em>plugins</em> mit dem Kommando <code>mkdir plugins</code>.</p></li>
-
-<li><p>Wechsle in das Unterverzeichnis mit dem Kommando <code>cd plugins</code>.</p></li>
-
-<li><p>Lade die <a href="https://scriptcraftjs.org/download/latest/scriptcraft-3.2.1/scriptcraft.jar" target="_blank">Scriptcraft</a> herunter und speichere es im Verzeichnis <code>c:\spigot\plugins</code>.</p></li>
+<li>
+<p>Erstelle ein Unterverzeichnis für <em>plugins</em> mit dem Kommando <code>mkdir plugins</code>.</p>
+</li>
+<li>
+<p>Wechsle in das Unterverzeichnis mit dem Kommando <code>cd plugins</code>.</p>
+</li>
+<li>
+<p>Lade die <a href="https://scriptcraftjs.org/download/latest/scriptcraft-3.2.1/scriptcraft.jar" target="_blank">Scriptcraft</a> herunter und speichere es im Verzeichnis <code>c:\spigot\plugins</code>.</p>
+</li>
 </ol>
-
 <h2 id="minecraft-server-zum-ersten-mal-starten">Minecraft Server zum ersten Mal starten</h2>
-
 <p>Jetzt sind wir soweit, dass wir den Minecraft-Server starten können:</p>
-
 <ol>
-<li><p>Wechsle in das Installationsverzeichnis mit dem Kommando <code>cd /c/spigot</code>.</p></li>
+<li>
+<p>Wechsle in das Installationsverzeichnis mit dem Kommando <code>cd /c/spigot</code>.</p>
+</li>
+<li>
+<p>Starte den Minecraft-Server mit dem Kommando <code>java -jar spigot-1.11.2.jar</code>.</p>
+</li>
+<li>
+<p>An dieser Stelle können wir noch nicht zu spielen beginnen. Wir müssen erst die <a href="https://account.mojang.com/documents/minecraft_eula" target="_blank">Minecraft Lizenzbedingungen</a> (in Englisch &ldquo;End User License Agreement&rdquo; = <em>EULA</em>) akzeptieren. Dazu öffnet man die Datei <code>eula.txt</code> und ersetzt <code>eula=false</code> durch <code>eula=true</code>.<!-- raw HTML omitted -->
 
-<li><p>Starte den Minecraft-Server mit dem Kommando <code>java -jar spigot-1.11.2.jar</code>.</p></li>
-
-<li><p>An dieser Stelle können wir noch nicht zu spielen beginnen. Wir müssen erst die <a href="https://account.mojang.com/documents/minecraft_eula" target="_blank">Minecraft Lizenzbedingungen</a> (in Englisch &ldquo;End User License Agreement&rdquo; = <em>EULA</em>) akzeptieren. Dazu öffnet man die Datei <code>eula.txt</code> und ersetzt <code>eula=false</code> durch <code>eula=true</code>.<br/>
-
-
-
-     
-    
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-    <div class="col">
-        <p></p>
-    </div>
-    <div class="col-12 col-md-12">
-    <img src="/uebungsanleitungen/programmieren/minecraft/plugins/lokaler-minecraft-server-mit-scriptcraft/img/eula-akzeptieren.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
-    </div>
-</div>
-</p></li>
-
-<li><p>Starte den Minecraft-Server nochmal mit dem Kommando <code>java -jar spigot-1.11.2.jar</code>. Jetzt müsste es klappen :-)</p></li>
+  
+  
+       
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="row">
+      <div class="col">
+          <p></p>
+      </div>
+      <div class="col-12 col-md-12">
+      <img src="/uebungsanleitungen/programmieren/minecraft/plugins/lokaler-minecraft-server-mit-scriptcraft/img/eula-akzeptieren.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+      </div>
+  </div>
+</p>
+</li>
+<li>
+<p>Starte den Minecraft-Server nochmal mit dem Kommando <code>java -jar spigot-1.11.2.jar</code>. Jetzt müsste es klappen :-)</p>
+</li>
 </ol>
-
 <h2 id="mit-server-verbinden">Mit Server verbinden</h2>
-
 <p>Los geht es. Starte Minecraft und verbinde dich zu deinem Server. Der Servername ist <code>localhost</code>.</p>
-
 
 
 

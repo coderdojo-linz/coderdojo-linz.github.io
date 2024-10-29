@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Geisterspiel in C# </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,151 +150,135 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#geisterspiel">Geisterspiel</a>
-<ul>
-<li><a href="#die-aufgabe">Die Aufgabe</a></li>
-<li><a href="#bestandteile-des-programms">Bestandteile des Programms</a></li>
-<li><a href="#was-wird-benötigt">Was wird benötigt?</a></li>
-<li><a href="#steuerung-des-progammablaufs">Steuerung des Progammablaufs</a></li>
-<li><a href="#eine-lösung">Eine Lösung</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#die-aufgabe">Die Aufgabe</a></li>
+    <li><a href="#bestandteile-des-programms">Bestandteile des Programms</a></li>
+    <li><a href="#was-wird-benötigt">Was wird benötigt?</a></li>
+    <li><a href="#steuerung-des-progammablaufs">Steuerung des Progammablaufs</a></li>
+    <li><a href="#eine-lösung">Eine Lösung</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="geisterspiel">Geisterspiel</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="geisterspiel">Geisterspiel</h1>
 <p>In dieser Übung erstellen wir ein erstes, einfaches Konsolenspiel mit C# (C-Sharp). Das Spiel wird
 textuell gesteuert d.h Ein/-Ausgaben werden auf einer Konsole zu lesen/schreiben sein.</p>
-
 <h2 id="die-aufgabe">Die Aufgabe</h2>
-
 <p>Der Geist versteckt sich zufällig hinter einer von 3 Türen. Du entscheidest, welche Türe du öffnen
 möchtest. Tippe dazu 1, 2 oder 3 und drücke die ENTER-Taste.
 Unser Programm soll nun prüfen, ob der Geist sich hinter der Tür befindet und eine
 entsprechende Meldung ausgeben; also entweder ‘Geist gefunden’ und damit das Spiel verloren
 oder ‘Kein Geist’ und der Spieler darf zur nächsten Station mit wieder 3 Türen und einem zufällig
 versteckten Geist weitergehen. Das Programm soll also auch mitzählen, wie oft der Spieler durch
-eine Tür geht, ohne dabei auf den Geist zu stoßen.<br />
+eine Tür geht, ohne dabei auf den Geist zu stoßen.<br>
 Ein möglicher Spielablauf könnte dann im Konsolen-Fenster so aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Geisterspiel
-Hinter einer Tür verbirgt sich ein Geist.
-Welche Tür wählst du? 1, 2 oder 3?
-1
-Kein Geist gefunden!
-Hinter einer Tür verbirgt sich ein Geist.
-Welche Tür wählst du? 1, 2 oder 3?
-1
-Game over! Hier ist ein Geist!
-Deine Punkte: 1</code></pre></div>
-<h2 id="bestandteile-des-programms">Bestandteile des Programms</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Geisterspiel
+</span></span><span style="display:flex;"><span>Hinter einer Tür verbirgt sich ein Geist.
+</span></span><span style="display:flex;"><span>Welche Tür wählst du? 1, 2 oder 3?
+</span></span><span style="display:flex;"><span>1
+</span></span><span style="display:flex;"><span>Kein Geist gefunden!
+</span></span><span style="display:flex;"><span>Hinter einer Tür verbirgt sich ein Geist.
+</span></span><span style="display:flex;"><span>Welche Tür wählst du? 1, 2 oder 3?
+</span></span><span style="display:flex;"><span>1
+</span></span><span style="display:flex;"><span>Game over! Hier ist ein Geist!
+</span></span><span style="display:flex;"><span>Deine Punkte: 1
+</span></span></code></pre></div><h2 id="bestandteile-des-programms">Bestandteile des Programms</h2>
 <p>Zunächst öffnen wir Visual Studio IDE (Download auf <a href="https://visualstudio.microsoft.com" target="_blank">https://visualstudio.microsoft.com</a>) ODER
 verwenden die Inoffizielle Online Version welche für Konsolenanwendungen wunderbar
 funktioniert. (<a href="https://dotnetfiddle.net" target="_blank">https://dotnetfiddle.net</a>)</p>
-
 <h2 id="was-wird-benötigt">Was wird benötigt?</h2>
-
-<p><strong>AUS/-EINGABE IN DER KONSOLE</strong><br />
+<p><strong>AUS/-EINGABE IN DER KONSOLE</strong><br>
 Text ausgeben können wir in C# mit der Funktion <code>Console.WriteLine(...);</code>
 Text einlesen (den Spieler auffordern etwas einzugeben) mit der Funktion <code>Console.ReadLine();</code>
 Eingabe in einer String-Variable speichern <code>String eingabe = Console.ReadLine();</code>
-String bedeutet das die Variable mit dem Namen “eingabe” eine beliebige Zeichenkette enthalten kann.<br />
+String bedeutet das die Variable mit dem Namen “eingabe” eine beliebige Zeichenkette enthalten kann.<br>
 Da es in C# klare Definitionen gibt welche Variable welchen Wert annehmen kann müssen wir einen Wert konvertieren um ihn zu ändern. Als Beispiel liefer <code>Console.Readline();</code> einen <code>String</code> zurück (die Eingabe vom Spieler) aber wir wollen die Zahl welche eingegeben wurde in einen <code>int</code> umwandeln das geht wie folgt:
 <code>Convert.ToInt32(Console.ReadLine());</code></p>
-
-<p><strong>Weitere Variablen und Rechenoperationen</strong><br />
-Weiters benötigen wir den Datentyp “Integer” in C# kurz mit <code>int</code> erkennbar. Solch eine Variable anlegen können wir einfach mit <code>int zahl = 2122;</code><br />
+<p><strong>Weitere Variablen und Rechenoperationen</strong><br>
+Weiters benötigen wir den Datentyp “Integer” in C# kurz mit <code>int</code> erkennbar. Solch eine Variable anlegen können wir einfach mit <code>int zahl = 2122;</code><br>
 Wollen wir rechnen können wir eine neue Variable erstellen oder eine bereits vorhandene überschreiben.</p>
-
-<p>Neu: <code>int addition = zahl1 + zahl2;</code><br />
-“zahl1” überschreiben: <code>zahl1 = zahl1 + zahl2;</code><br />
+<p>Neu: <code>int addition = zahl1 + zahl2;</code><br>
+“zahl1” überschreiben: <code>zahl1 = zahl1 + zahl2;</code><br>
 Das gleiche gilt für Multiplizieren, Subtrahieren und Dividieren mit * - oder /</p>
-
-<p><strong>ZUFALLSZAHLEN</strong><br />
-Um eine Zufallszahl zwischen 1 und 3 erzeugen zu können, muss man zunächst die Random-Klasse erstellen.<br />
-<code>Random zufall = new Random();</code><br />
-Danach kann man mit<br />
-<code>zufall.Next(1,4);</code><br />
+<p><strong>ZUFALLSZAHLEN</strong><br>
+Um eine Zufallszahl zwischen 1 und 3 erzeugen zu können, muss man zunächst die Random-Klasse erstellen.<br>
+<code>Random zufall = new Random();</code><br>
+Danach kann man mit<br>
+<code>zufall.Next(1,4);</code><br>
 Eine Zufallszahl zwischen 1 und 3 generieren. (4 da die Zahl ausgeschlossen ist und wir bis 3 Werte erhalten möchten)</p>
-
-<p><strong>WAHRHEITSWERTE (BOOLEAN)</strong><br />
+<p><strong>WAHRHEITSWERTE (BOOLEAN)</strong><br>
 In variablen könne wir aber auch true oder false speichern mit <code>bool variablenName = false;</code></p>
-
 <h2 id="steuerung-des-progammablaufs">Steuerung des Progammablaufs</h2>
-
 <p><strong>BEDINGUNGEN</strong></p>
-
-<p>Um eine Bedingung zu prüfen gibt es den Befehl if, gefolgt von der Bedingung, die geprüft werden soll.
-- Was passieren soll wenn die Bedingung erfüllt ist bestimmen wir in der nächsten Zeile nach
+<p>Um eine Bedingung zu prüfen gibt es den Befehl if, gefolgt von der Bedingung, die geprüft werden soll.</p>
+<ul>
+<li>Was passieren soll wenn die Bedingung erfüllt ist bestimmen wir in der nächsten Zeile nach
 dem wir einen Code-Block geöffnet haben mit einer geschwungen Klammer { aber wir dürfen
 nicht vergessen diese auch wieder zu schließen }. Dazwischen kommt unser Code was
-passieren soll wenn die Bedingung erfüllt wurde.
-- Wollen wir auch sagen was passieren soll wenn die Bedingung nicht erfüllt wurde benutzen wir
-den Befehl else am ende des if Code-Blocks.
-- Logische Operatoren: Um eine Bedingung formulieren zu können, brauchen wir sogenannte logische Operatoren, die 2 Werte vergleichen und als Ergebnis den Wahrheitswert TRUE oder FALSE liefern. In C# gibt es folgende Operatoren:
-    - A == b &hellip; a ist gleich b
-    - A != b &hellip; a ist ungleich b
-    - A &lt; b &hellip; a ist kleiner als b
-    - A &gt; b &hellip; a ist größer als b
-    - A &lt;= b &hellip; a ist kleiner oder gleich b
-    - A &gt;= b &hellip; a ist größer oder gleich b</p>
-
+passieren soll wenn die Bedingung erfüllt wurde.</li>
+<li>Wollen wir auch sagen was passieren soll wenn die Bedingung nicht erfüllt wurde benutzen wir
+den Befehl else am ende des if Code-Blocks.</li>
+<li>Logische Operatoren: Um eine Bedingung formulieren zu können, brauchen wir sogenannte logische Operatoren, die 2 Werte vergleichen und als Ergebnis den Wahrheitswert TRUE oder FALSE liefern. In C# gibt es folgende Operatoren:
+<ul>
+<li>A == b &hellip; a ist gleich b</li>
+<li>A != b &hellip; a ist ungleich b</li>
+<li>A &lt; b &hellip; a ist kleiner als b</li>
+<li>A &gt; b &hellip; a ist größer als b</li>
+<li>A &lt;= b &hellip; a ist kleiner oder gleich b</li>
+<li>A &gt;= b &hellip; a ist größer oder gleich b</li>
+</ul>
+</li>
+</ul>
 <p>Ein Beispiel für eine if Anweisung:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#2b91af">int</span> tuer = 0;
-<span style="color:#00f">if</span>(tuer == 1)
-{
-    Console.WriteLine(<span style="color:#a31515">&#34;gefunden&#34;</span>);
-}
-<span style="color:#00f">else</span>
-{
-    Console.WriteLine(<span style="color:#a31515">&#34;leider nicht gefunden&#34;</span>);
-}
-</code></pre></div>
-<p><strong>SCHLEIFEN</strong><br />
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#2b91af">int</span> tuer = 0;
+</span></span><span style="display:flex;"><span><span style="color:#00f">if</span>(tuer == 1)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Console.WriteLine(<span style="color:#a31515">&#34;gefunden&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#00f">else</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Console.WriteLine(<span style="color:#a31515">&#34;leider nicht gefunden&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>SCHLEIFEN</strong><br>
 Um Dinge zu beschreiben die sich immer auf die gleiche Art wiederholen sollen, solange eine
 Bedingung erfüllt ist, gibt es sogenannte Schleifen, z.B die while-Schleife. Sie beginnt mit dem
 Befehl while gefolgt - wie bei der if-Anweisung - mit einer Bedingung und angefangen wird ebenfalls wieder mit einer geschwungenen Klammer.
 Beispiel:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#2b91af">int</span> punkte = 0;
-<span style="color:#00f">while</span>(punkte &lt; 5)
-{
-Console.WriteLine(<span style="color:#a31515">&#34;gehe weiter&#34;</span>);
-punkte = punkte + 1;
-}
-</code></pre></div>
-<h2 id="eine-lösung">Eine Lösung</h2>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#00f">using</span> System;
-<span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Program</span>
-{
-    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">void</span> Main()
-    {
-        Console.WriteLine(<span style="color:#a31515">&#34;Geisterspiel&#34;</span>);
-        <span style="color:#2b91af">int</span> punkte = 0;
-        <span style="color:#2b91af">bool</span> gameover = <span style="color:#00f">false</span>;
-        Random random = <span style="color:#00f">new</span> Random();
-        <span style="color:#00f">while</span> (gameover == <span style="color:#00f">false</span>)
-        {
-            Console.WriteLine(<span style="color:#a31515">&#34;Hinter einer Tür verbirgt sich ein Geist.\nWelche Tür wählst du? 1, 2 oder 3?&#34;</span>);
-            <span style="color:#2b91af">int</span> tuer = Convert.ToInt32(Console.ReadLine());
-            <span style="color:#2b91af">int</span> geisterTuer = random.Next(1, 4);
-            <span style="color:#00f">if</span> (tuer == geisterTuer)
-            {
-                Console.WriteLine(<span style="color:#a31515">&#34;Game over! Hier ist ein Geist!&#34;</span>);
-                Console.WriteLine(<span style="color:#a31515">&#34;Deine Punkte: {0}&#34;</span>, punkte);
-                gameover = <span style="color:#00f">true</span>;
-            }
-            <span style="color:#00f">else</span>
-            {
-                Console.WriteLine(<span style="color:#a31515">&#34;Kein Geist gefunden!&#34;</span>);
-                punkte = punkte + 1;
-            }
-        }
-    }
-}
-</code></pre></div> </div>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#2b91af">int</span> punkte = 0;
+</span></span><span style="display:flex;"><span><span style="color:#00f">while</span>(punkte &lt; 5)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>Console.WriteLine(<span style="color:#a31515">&#34;gehe weiter&#34;</span>);
+</span></span><span style="display:flex;"><span>punkte = punkte + 1;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="eine-lösung">Eine Lösung</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#00f">using</span> System;
+</span></span><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Program</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">public</span> <span style="color:#00f">static</span> <span style="color:#00f">void</span> Main()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        Console.WriteLine(<span style="color:#a31515">&#34;Geisterspiel&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#2b91af">int</span> punkte = 0;
+</span></span><span style="display:flex;"><span>        <span style="color:#2b91af">bool</span> gameover = <span style="color:#00f">false</span>;
+</span></span><span style="display:flex;"><span>        Random random = <span style="color:#00f">new</span> Random();
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">while</span> (gameover == <span style="color:#00f">false</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            Console.WriteLine(<span style="color:#a31515">&#34;Hinter einer Tür verbirgt sich ein Geist.\nWelche Tür wählst du? 1, 2 oder 3?&#34;</span>);
+</span></span><span style="display:flex;"><span>            <span style="color:#2b91af">int</span> tuer = Convert.ToInt32(Console.ReadLine());
+</span></span><span style="display:flex;"><span>            <span style="color:#2b91af">int</span> geisterTuer = random.Next(1, 4);
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (tuer == geisterTuer)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                Console.WriteLine(<span style="color:#a31515">&#34;Game over! Hier ist ein Geist!&#34;</span>);
+</span></span><span style="display:flex;"><span>                Console.WriteLine(<span style="color:#a31515">&#34;Deine Punkte: {0}&#34;</span>, punkte);
+</span></span><span style="display:flex;"><span>                gameover = <span style="color:#00f">true</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#00f">else</span>
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                Console.WriteLine(<span style="color:#a31515">&#34;Kein Geist gefunden!&#34;</span>);
+</span></span><span style="display:flex;"><span>                punkte = punkte + 1;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div> </div>
         </div>
     </div>
 </section>  

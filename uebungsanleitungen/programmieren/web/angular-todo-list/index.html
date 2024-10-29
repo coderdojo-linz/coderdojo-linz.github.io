@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Todo Liste mit Angular </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,55 +150,45 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#todo-liste-mit-angular">Todo Liste mit Angular</a>
-<ul>
-<li><a href="#voraussetzungen">Voraussetzungen</a></li>
-<li><a href="#projekt-anlegen-und-starten">Projekt anlegen und starten</a></li>
-<li><a href="#navigationsmenü-anlegen">Navigationsmenü anlegen</a>
-<ul>
-<li><a href="#globale-styles">Globale Styles</a></li>
-<li><a href="#html-grundgerüst">HTML Grundgerüst</a></li>
-<li><a href="#navigationsmenü-erstellen">Navigationsmenü erstellen</a></li>
-</ul></li>
-<li><a href="#komponenten-hinzufügen">Komponenten hinzufügen</a></li>
-<li><a href="#todo-component">Todo Component</a></li>
-<li><a href="#todo-list-service">Todo List Service</a></li>
-<li><a href="#einfügen-von-items">Einfügen von Items</a></li>
-<li><a href="#done-items-anzeigen">Done Items anzeigen</a></li>
-<li><a href="#dashboard">Dashboard</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+    <li><a href="#projekt-anlegen-und-starten">Projekt anlegen und starten</a></li>
+    <li><a href="#navigationsmenü-anlegen">Navigationsmenü anlegen</a>
+      <ul>
+        <li><a href="#globale-styles">Globale Styles</a></li>
+        <li><a href="#html-grundgerüst">HTML Grundgerüst</a></li>
+        <li><a href="#navigationsmenü-erstellen">Navigationsmenü erstellen</a></li>
+      </ul>
+    </li>
+    <li><a href="#komponenten-hinzufügen">Komponenten hinzufügen</a></li>
+    <li><a href="#todo-component">Todo Component</a></li>
+    <li><a href="#todo-list-service">Todo List Service</a></li>
+    <li><a href="#einfügen-von-items">Einfügen von Items</a></li>
+    <li><a href="#done-items-anzeigen">Done Items anzeigen</a></li>
+    <li><a href="#dashboard">Dashboard</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="todo-liste-mit-angular">Todo Liste mit Angular</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="todo-liste-mit-angular">Todo Liste mit Angular</h1>
 <h2 id="voraussetzungen">Voraussetzungen</h2>
-
 <ul>
 <li>Aktuelle Version von <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
 </ul>
-
 <h2 id="projekt-anlegen-und-starten">Projekt anlegen und starten</h2>
-
 <ul>
 <li>Öffne einen Command Prompt und installiere als erstes die Angular CLI: <code>npm install -g @angular/cli</code></li>
 <li>Lege einen Ordner an, in dem dein Projekt liegen soll - z.B. <code>angular-todo-list</code>.</li>
 <li>Führe in diesem Ordner im Command Prompt folgendes Command aus um die neue Angular Applikation anzulegen: <code>ng new todo-list-app --strict</code>
-
 <ul>
 <li>Routing - yes</li>
 <li>Stylesheet format - SCSS</li>
-</ul></li>
+</ul>
+</li>
 <li>Wenn das Projekt fertig angelegt ist, wechsle in den generierten Ordner <code>todo-list-app</code> und öffne diesen in Visual Studio Code.</li>
-<li>Im Terminal von Visual Studio Code (STRG + ö) kannst du das Projekt mit folgendem Command starten: <code>ng serve</code><br />
+<li>Im Terminal von Visual Studio Code (STRG + ö) kannst du das Projekt mit folgendem Command starten: <code>ng serve</code><br>
 falls die URL bei dir im Chrome nicht geöffnet werden kann, kannst du localhost auch durch 127.0.0.1 ersetzen</li>
 </ul>
-
 <p>Wenn du das Projekt erfolgreich angelegt und gestartet hast, solltest du im Browser folgende Seite sehen:</p>
-
 
 
 
@@ -223,73 +213,61 @@ falls die URL bei dir im Chrome nicht geöffnet werden kann, kannst du localhost
     </div>
 </div>
 
-
 <h2 id="navigationsmenü-anlegen">Navigationsmenü anlegen</h2>
-
 <h3 id="globale-styles">Globale Styles</h3>
-
 <p>Styles, die für das gesamte Projekt gelten sollen, findest du unter <code>src/styles.scss</code>. Dort ändern wir als erstes die Schriftart und den Margin für den <code>body</code>:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">body {
-    font-family: <span style="color:#a31515">&#39;Segoe UI&#39;</span>, Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-}</code></pre></div>
-<h3 id="html-grundgerüst">HTML Grundgerüst</h3>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span>body {
+</span></span><span style="display:flex;"><span>    font-family: <span style="color:#a31515">&#39;Segoe UI&#39;</span>, Tahoma, Geneva, Verdana, sans-serif;
+</span></span><span style="display:flex;"><span>    margin: 0;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="html-grundgerüst">HTML Grundgerüst</h3>
 <p>Das HTML Grundgerüst deiner App wird im File <code>src/index.html</code> festgelegt. Dort kannst du z.B. externe CSS oder Javascript Libraries wie Bootstrap einbinden. Für unser Beispiel verwenden wir diesmal keine Library und müssen daher im Moment auch nichts ändern im <code>index.html</code>.</p>
-
 <p>Angular Apps bestehen aus mehrere Components und die erste Component wird beim Anlegen des Projekts auch gleich automatisch angelegt - die *AppComponent. Sie besteht aus den folgenden Dateien:</p>
-
 <ul>
 <li><code>src/app/app.component.html</code> - für das HTML der Component</li>
 <li><code>src/app/app.component.scss</code> - für die Styles, die Styles gelten nur für diese Component und können in anderen Components nicht verwendet werden</li>
 <li><code>src/app/app.component.spec.ts</code>- damit kann die Logik von Components getestet werden, wir werden in diesem Beispiel noch keine Tests schreiben</li>
 <li><code>src/app/app.component.ts</code> - in diesem File ist der Typescript Code zur Component enthalten</li>
 </ul>
-
 <p>Wenn du dir den generierten Typescript Code ansiehst, siehst du, dass hier die Urls für das Template (HTML) und die Styles (SCSS) angegeben sind. Außerdem wird mit dem Selector festgelegt, wie die Component verwendet werden kann. <code>app-root</code> heißt, dass die Komponente im HTML mit <code>&lt;app-root&gt;&lt;/app-root&gt;</code> verwendet werden kann.</p>
-
 <p>Wenn du jetzt einen Blick in <code>src/index.html</code> wirfst, dann siehst du, dass genau diese Komponente im <code>&lt;body&gt;</code> verwendet wird.</p>
-
 <h3 id="navigationsmenü-erstellen">Navigationsmenü erstellen</h3>
-
 <p>Lösche dazu den ganzen generierten Content im <code>src/app/app.component.html</code> und ersetze ihn durch folgendes HTML:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;nav&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Todo Liste&lt;/li&gt;
-    &lt;li&gt;Dashboard&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-
-&lt;main&gt;
-  &lt;router-outlet&gt;&lt;/router-outlet&gt;
-  Test
-&lt;/main&gt;</code></pre></div>
-<p>Das Tag <code>&lt;router-outlet&gt;</code> ist ein Platzhalter, in dem dann weitere Komponenten die wir erst erstellen müssen, angezeigt werden können, sobald der User auf einen Menüpunkt klickt.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>&lt;nav&gt;
+</span></span><span style="display:flex;"><span>  &lt;ul&gt;
+</span></span><span style="display:flex;"><span>    &lt;li&gt;Todo Liste&lt;/li&gt;
+</span></span><span style="display:flex;"><span>    &lt;li&gt;Dashboard&lt;/li&gt;
+</span></span><span style="display:flex;"><span>  &lt;/ul&gt;
+</span></span><span style="display:flex;"><span>&lt;/nav&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;main&gt;
+</span></span><span style="display:flex;"><span>  &lt;router-outlet&gt;&lt;/router-outlet&gt;
+</span></span><span style="display:flex;"><span>  Test
+</span></span><span style="display:flex;"><span>&lt;/main&gt;
+</span></span></code></pre></div><p>Das Tag <code>&lt;router-outlet&gt;</code> ist ein Platzhalter, in dem dann weitere Komponenten die wir erst erstellen müssen, angezeigt werden können, sobald der User auf einen Menüpunkt klickt.</p>
 <p>Für eine hübschere Darstellung fügen wir noch ein paar Styles in <code>src/app/app.component.scss</code> ein:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss">ul {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0 40px;
-    width: 100<span style="">%</span>;
-    background-color: #ffeb3b;
-    height: 40px;
-    line-height: 40px;
-}
-
-li {
-    display: inline;
-    margin-right: 40px;
-}
-
-main {
-    margin-top: 40px;
-    padding: 40px;
-}</code></pre></div>
-<p>Deine Seite sollte dann so aussehen:</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span>ul {
+</span></span><span style="display:flex;"><span>    position: fixed;
+</span></span><span style="display:flex;"><span>    top: 0;
+</span></span><span style="display:flex;"><span>    left: 0;
+</span></span><span style="display:flex;"><span>    margin: 0;
+</span></span><span style="display:flex;"><span>    padding: 0 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    width: 100<span style="color:#2b91af">%</span>;
+</span></span><span style="display:flex;"><span>    background-color: #ffeb3b;
+</span></span><span style="display:flex;"><span>    height: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    line-height: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>li {
+</span></span><span style="display:flex;"><span>    display: inline;
+</span></span><span style="display:flex;"><span>    margin-right: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>main {
+</span></span><span style="display:flex;"><span>    margin-top: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    padding: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Deine Seite sollte dann so aussehen:</p>
 
 
 
@@ -314,33 +292,28 @@ main {
     </div>
 </div>
 
-
 <h2 id="komponenten-hinzufügen">Komponenten hinzufügen</h2>
-
 <p>Wir wollen jetzt für jeden Menüpunkt eine Komponente erstellen. Führe dazu entweder im Command Prompt im Ordner <code>todo-list-app</code> oder in einem neuen Terminal Fenster im Visual Studio Code folgende Commands aus:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ng g component todo-list
-ng g component dashboard</code></pre></div>
-<p>Die beiden Components können jetzt schon mit den generierten Selektoren <code>app-dashboard</code> und <code>app-todo-list</code> verwendet werden. Damit sie auch über eine eigene Url erreichbar sind, müssen wir im <code>src/app/app-routing.module.ts</code> neue Routes dafür einfügen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">const</span> routes: <span style="color:#2b91af">Routes</span> = [
-  { path: <span style="color:#a31515">&#39;dashboard&#39;</span>, component: <span style="color:#2b91af">DashboardComponent</span> },
-  { path: <span style="color:#a31515">&#39;todo-list&#39;</span>, component: <span style="color:#2b91af">TodoListComponent</span> }
-];
-</code></pre></div>
-<p>Über die Urls <code>http://127.0.0.1:4200/todo-list</code> und <code>http://127.0.0.1:4200/dashboard</code> können die beiden Komponenten geladen werden.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>ng g component todo-list
+</span></span><span style="display:flex;"><span>ng g component dashboard
+</span></span></code></pre></div><p>Die beiden Components können jetzt schon mit den generierten Selektoren <code>app-dashboard</code> und <code>app-todo-list</code> verwendet werden. Damit sie auch über eine eigene Url erreichbar sind, müssen wir im <code>src/app/app-routing.module.ts</code> neue Routes dafür einfügen:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">const</span> routes: <span style="color:#2b91af">Routes</span> = [
+</span></span><span style="display:flex;"><span>  { path: <span style="color:#a31515">&#39;dashboard&#39;</span>, component: <span style="color:#2b91af">DashboardComponent</span> },
+</span></span><span style="display:flex;"><span>  { path: <span style="color:#a31515">&#39;todo-list&#39;</span>, component: <span style="color:#2b91af">TodoListComponent</span> }
+</span></span><span style="display:flex;"><span>];
+</span></span></code></pre></div><p>Über die Urls <code>http://127.0.0.1:4200/todo-list</code> und <code>http://127.0.0.1:4200/dashboard</code> können die beiden Komponenten geladen werden.</p>
 <p>Im <code>src/app/app.component.html</code> können wir die Testausgabe löschen. Stattdessen fügen wir in der Navigationsleiste Links zu den beiden neuen Komponenten hinzu.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;nav&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a routerLink=<span style="color:#a31515">&#34;/todo-list&#34;</span>&gt;Todo Liste&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a routerLink=<span style="color:#a31515">&#34;/dashboard&#34;</span>&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-
-&lt;main&gt;
-  &lt;router-outlet&gt;&lt;/router-outlet&gt;
-&lt;/main&gt;</code></pre></div>
-<p>Das Ergebnis sollte jetzt so aussehen:</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;nav&gt;
+</span></span><span style="display:flex;"><span>  &lt;ul&gt;
+</span></span><span style="display:flex;"><span>    &lt;li&gt;&lt;a routerLink=<span style="color:#a31515">&#34;/todo-list&#34;</span>&gt;Todo Liste&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>    &lt;li&gt;&lt;a routerLink=<span style="color:#a31515">&#34;/dashboard&#34;</span>&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+</span></span><span style="display:flex;"><span>  &lt;/ul&gt;
+</span></span><span style="display:flex;"><span>&lt;/nav&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;main&gt;
+</span></span><span style="display:flex;"><span>  &lt;router-outlet&gt;&lt;/router-outlet&gt;
+</span></span><span style="display:flex;"><span>&lt;/main&gt;
+</span></span></code></pre></div><p>Das Ergebnis sollte jetzt so aussehen:</p>
 
 
 
@@ -365,43 +338,36 @@ ng g component dashboard</code></pre></div>
     </div>
 </div>
 
-
 <h2 id="todo-component">Todo Component</h2>
-
 <p>Als erstes legen wir ein Interface für die Items in unsere Todo Liste an:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ng g interface shared/todo</code></pre></div>
-<p>Im Interface legen wir alle Properties fest, die ein Todo haben muss:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">export</span> <span style="color:#00f">interface</span> Todo {
-    id: <span style="color:#2b91af">number</span>;
-    description: <span style="color:#2b91af">string</span>;
-    dueDate: <span style="color:#2b91af">Date</span>;
-    doneDate?: <span style="color:#2b91af">Date</span>;
-}
-</code></pre></div>
-<p>Dieses Interface können wir jetzt in <code>src/app/todo-list-component.ts</code> verwenden. Wir legen dort ein public Property mit einigen Todo List Items an:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">  <span style="color:#00f">public</span> todos: <span style="color:#2b91af">Todo</span>[] = [
-    { id: <span style="color:#2b91af">1</span>, description: <span style="color:#a31515">&#39;Mathe Ferien-Hausübung&#39;</span>, dueDate: <span style="color:#2b91af">new</span> Date(2020, 9, 21) },
-    { id: <span style="color:#2b91af">2</span>, description: <span style="color:#a31515">&#39;Geburtstagsgeschenk Oma&#39;</span>, dueDate: <span style="color:#2b91af">new</span> Date(2020, 8, 20) },
-    { id: <span style="color:#2b91af">3</span>, description: <span style="color:#a31515">&#39;Zimmer aufräumen&#39;</span>, dueDate: <span style="color:#2b91af">new</span> Date(2020, 8, 14) }
-  ];
-</code></pre></div>
-<p>Diese Items können wir jetzt im HTML anzeigen. Im einfachsten Fall können wir die Variable todos mit <code>{{ todos }}</code> ausgeben. Das würde <code>[object Object],[object Object],[object Object]</code> ausgeben. Wir können auch komplexere Ausdrücke wie z.B. <code>{{ todos.length }}</code> verwenden, um die Anzahl der Items auszugeben.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>ng g interface shared/todo
+</span></span></code></pre></div><p>Im Interface legen wir alle Properties fest, die ein Todo haben muss:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">interface</span> Todo {
+</span></span><span style="display:flex;"><span>    id: <span style="color:#2b91af">number</span>;
+</span></span><span style="display:flex;"><span>    description: <span style="color:#2b91af">string</span>;
+</span></span><span style="display:flex;"><span>    dueDate: <span style="color:#2b91af">Date</span>;
+</span></span><span style="display:flex;"><span>    doneDate?: <span style="color:#2b91af">Date</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Dieses Interface können wir jetzt in <code>src/app/todo-list-component.ts</code> verwenden. Wir legen dort ein public Property mit einigen Todo List Items an:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>  <span style="color:#00f">public</span> todos: <span style="color:#2b91af">Todo</span>[] = [
+</span></span><span style="display:flex;"><span>    { id: <span style="color:#2b91af">1</span>, description: <span style="color:#a31515">&#39;Mathe Ferien-Hausübung&#39;</span>, dueDate: <span style="color:#2b91af">new</span> Date(2020, 9, 21) },
+</span></span><span style="display:flex;"><span>    { id: <span style="color:#2b91af">2</span>, description: <span style="color:#a31515">&#39;Geburtstagsgeschenk Oma&#39;</span>, dueDate: <span style="color:#2b91af">new</span> Date(2020, 8, 20) },
+</span></span><span style="display:flex;"><span>    { id: <span style="color:#2b91af">3</span>, description: <span style="color:#a31515">&#39;Zimmer aufräumen&#39;</span>, dueDate: <span style="color:#2b91af">new</span> Date(2020, 8, 14) }
+</span></span><span style="display:flex;"><span>  ];
+</span></span></code></pre></div><p>Diese Items können wir jetzt im HTML anzeigen. Im einfachsten Fall können wir die Variable todos mit <code>{{ todos }}</code> ausgeben. Das würde <code>[object Object],[object Object],[object Object]</code> ausgeben. Wir können auch komplexere Ausdrücke wie z.B. <code>{{ todos.length }}</code> verwenden, um die Anzahl der Items auszugeben.</p>
 <p>Wenn wir die Items filter möchten, so dass z.B. nur noch Items ohne <code>doneDate</code> ausgegeben werden, dann können wir das über eine Methode in <code>src/app/todo-list-component.ts</code> lösen. Hier können wir auch gleich noch nach dem Fälligkeitsdatum sortieren:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">  getOpenTodos(): Todo[] {
-    <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todos.filter(t =&gt; !t.doneDate).sort((a, b) =&gt; a.dueDate &lt; b.dueDate ? -1 : <span style="color:#2b91af">1</span>);
-  }
-</code></pre></div>
-<p>Im HTML können wir die Methode jetzt folgendemaßen verwenden:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2&gt;Todos&lt;/h2&gt;
-
-&lt;div <span style="">*</span>ngFor=<span style="color:#a31515">&#34;let item of getOpenTodos()&#34;</span>&gt;
-    {{ item.dueDate | date:&#39;EE, dd.MM.&#39; }} {{ item.description }}
-&lt;/div&gt;
-
-&lt;p&gt;Items: {{ getOpenTodos().length }}&lt;/p&gt;</code></pre></div>
-<p>Damit bekommen wir folgendes Ergebnis:</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>  getOpenTodos(): Todo[] {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todos.filter(t =&gt; !t.doneDate).sort((a, b) =&gt; a.dueDate &lt; b.dueDate ? -1 : <span style="color:#2b91af">1</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>Im HTML können wir die Methode jetzt folgendemaßen verwenden:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;h2&gt;Todos&lt;/h2&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;div <span style="">*</span>ngFor=<span style="color:#a31515">&#34;let item of getOpenTodos()&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ item.dueDate | date:&#39;EE, dd.MM.&#39; }} {{ item.description }}
+</span></span><span style="display:flex;"><span>&lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;p&gt;Items: {{ getOpenTodos().length }}&lt;/p&gt;
+</span></span></code></pre></div><p>Damit bekommen wir folgendes Ergebnis:</p>
 
 
 
@@ -426,161 +392,151 @@ ng g component dashboard</code></pre></div>
     </div>
 </div>
 
-
 <h2 id="todo-list-service">Todo List Service</h2>
-
 <p>Wir könnten jetzt die Methoden zum Hinzufügen und Ändern von Items auch direkt in <code>todo-list.component.ts</code> machen. Um die Todo Liste später aber an mehreren Stellen verwenden zu können (z.B. im Dashboard), legen wir dazu ein neues Service an:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ng g service shared/todo-list</code></pre></div>
-<p>In diesem Service bieten wir Methoden zum Lesen und Ändern der Todo Liste an. Man kann in diesem Service dann auch den Zugriff auf ein Webservice einbauen, um die Daten aus einer Datenbank zu lesen.</p>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>ng g service shared/todo-list
+</span></span></code></pre></div><p>In diesem Service bieten wir Methoden zum Lesen und Ändern der Todo Liste an. Man kann in diesem Service dann auch den Zugriff auf ein Webservice einbauen, um die Daten aus einer Datenbank zu lesen.</p>
 <p>Der Code für das Service könnte z.B. folgendemaßen aussehen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Injectable } from <span style="color:#a31515">&#39;@angular/core&#39;</span>;
-<span style="color:#00f">import</span> { Todo } from <span style="color:#a31515">&#39;./todo&#39;</span>;
-
-<span style="color:#00f">@Injectable</span>({
-  providedIn: <span style="color:#a31515">&#39;root&#39;</span>
-})
-<span style="color:#00f">export</span> <span style="color:#00f">class</span> TodoListService {
-  <span style="color:#00f">public</span> todos: <span style="color:#2b91af">Todo</span>[] = [];
-
-  <span style="color:#00f">constructor</span>() { }
-
-  <span style="color:#00f">public</span> getTodos(done?: <span style="color:#2b91af">boolean</span>): Todo[] {
-    <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todos
-      .filter(t =&gt; done === <span style="color:#00f">undefined</span> || (done &amp;&amp; t.doneDate) || (!done &amp;&amp; !t.doneDate))
-      .sort((a, b) =&gt; a.dueDate.getTime() - b.dueDate.getTime());
-  }
-
-  <span style="color:#00f">public</span> addTodo(description: <span style="color:#2b91af">string</span>, dueDate: <span style="color:#2b91af">Date</span>): <span style="color:#00f">void</span> {
-    <span style="color:#00f">let</span> newId = 0;
-    <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todos.length) {
-      newId = Math.max(...<span style="color:#00f">this</span>.todos.map(t =&gt; t.id)) + 1;
-    }
-
-    <span style="color:#00f">this</span>.todos.push({ id: <span style="color:#2b91af">newId</span>, description: <span style="color:#2b91af">description</span>, dueDate: <span style="color:#2b91af">dueDate</span> });
-  }
-
-  <span style="color:#00f">public</span> deleteTodoById(id: <span style="color:#2b91af">number</span>): <span style="color:#00f">void</span> {
-    <span style="color:#00f">const</span> index = <span style="color:#00f">this</span>.todos.findIndex(t =&gt; t.id === id);
-    <span style="color:#00f">if</span> (index &gt;= 0) {
-      <span style="color:#00f">this</span>.todos.splice(index, 1);
-    }
-  }
-
-  <span style="color:#00f">public</span> updateTodoById(id: <span style="color:#2b91af">number</span>, description: <span style="color:#2b91af">string</span>, dueDate: <span style="color:#2b91af">Date</span>): <span style="color:#00f">void</span> {
-    <span style="color:#00f">const</span> index = <span style="color:#00f">this</span>.todos.findIndex(t =&gt; t.id === id);
-    <span style="color:#00f">if</span> (index &gt;= 0) {
-      <span style="color:#00f">this</span>.todos[index].description = description;
-      <span style="color:#00f">this</span>.todos[index].dueDate = dueDate;
-    }
-  }
-
-  <span style="color:#00f">public</span> toggleDoneStateById(id: <span style="color:#2b91af">number</span>): <span style="color:#00f">void</span> {
-    <span style="color:#00f">const</span> index = <span style="color:#00f">this</span>.todos.findIndex(t =&gt; t.id === id);
-    <span style="color:#00f">if</span> (index &gt;= 0) {
-      <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todos[index].doneDate) {
-        <span style="color:#00f">this</span>.todos[index].doneDate = <span style="color:#00f">undefined</span>;
-      } <span style="color:#00f">else</span> {
-        <span style="color:#00f">this</span>.todos[index].doneDate = <span style="color:#00f">new</span> Date();
-      }
-    }
-  }
-}
-</code></pre></div>
-<p>In der Komponente können wir jetzt das Property <code>todos</code> und die Methode <code>getOpenTodos</code> entfernen. Stattdessen verwenden wir Dependency Injection, um Zugriff auf das Todo List Service zu bekommen. Dazu fügen wir es in den Constructor von <code>todo-list.component.ts</code> ein:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> todoListService: <span style="color:#2b91af">TodoListService</span>) { }
-</code></pre></div>
-<p>Das HTML müssen wir jetzt so ändern, dass das Service anstelle des Properties verwendet wird:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2&gt;Todos&lt;/h2&gt;
-
-&lt;div <span style="">*</span>ngFor=<span style="color:#a31515">&#34;let item of todoListService.getTodos(false)&#34;</span>&gt;
-    {{ item.dueDate | date:&#39;EE, dd.MM.&#39; }} {{ item.description }}
-&lt;/div&gt;
-
-&lt;p&gt;Items: {{ todoListService.getTodos(false).length }}&lt;/p&gt;</code></pre></div>
-<h2 id="einfügen-von-items">Einfügen von Items</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Injectable } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { Todo } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;./todo&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">@Injectable</span>({
+</span></span><span style="display:flex;"><span>  providedIn: <span style="color:#a31515">&#39;root&#39;</span>
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">class</span> TodoListService {
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> todos: <span style="color:#2b91af">Todo</span>[] = [];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">constructor</span>() { }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> getTodos(done?: <span style="color:#2b91af">boolean</span>): Todo[] {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todos
+</span></span><span style="display:flex;"><span>      .filter(t =&gt; done === <span style="color:#00f">undefined</span> || (done &amp;&amp; t.doneDate) || (!done &amp;&amp; !t.doneDate))
+</span></span><span style="display:flex;"><span>      .sort((a, b) =&gt; a.dueDate.getTime() - b.dueDate.getTime());
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> addTodo(description: <span style="color:#2b91af">string</span>, dueDate: <span style="color:#2b91af">Date</span>): <span style="color:#00f">void</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">let</span> newId = 0;
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todos.length) {
+</span></span><span style="display:flex;"><span>      newId = Math.max(...<span style="color:#00f">this</span>.todos.map(t =&gt; t.id)) + 1;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">this</span>.todos.push({ id: <span style="color:#2b91af">newId</span>, description: <span style="color:#2b91af">description</span>, dueDate: <span style="color:#2b91af">dueDate</span> });
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> deleteTodoById(id: <span style="color:#2b91af">number</span>): <span style="color:#00f">void</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">const</span> index = <span style="color:#00f">this</span>.todos.findIndex(t =&gt; t.id === id);
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (index &gt;= 0) {
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">this</span>.todos.splice(index, 1);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> updateTodoById(id: <span style="color:#2b91af">number</span>, description: <span style="color:#2b91af">string</span>, dueDate: <span style="color:#2b91af">Date</span>): <span style="color:#00f">void</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">const</span> index = <span style="color:#00f">this</span>.todos.findIndex(t =&gt; t.id === id);
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (index &gt;= 0) {
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">this</span>.todos[index].description = description;
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">this</span>.todos[index].dueDate = dueDate;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> toggleDoneStateById(id: <span style="color:#2b91af">number</span>): <span style="color:#00f">void</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">const</span> index = <span style="color:#00f">this</span>.todos.findIndex(t =&gt; t.id === id);
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (index &gt;= 0) {
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todos[index].doneDate) {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.todos[index].doneDate = <span style="color:#00f">undefined</span>;
+</span></span><span style="display:flex;"><span>      } <span style="color:#00f">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#00f">this</span>.todos[index].doneDate = <span style="color:#00f">new</span> Date();
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In der Komponente können wir jetzt das Property <code>todos</code> und die Methode <code>getOpenTodos</code> entfernen. Stattdessen verwenden wir Dependency Injection, um Zugriff auf das Todo List Service zu bekommen. Dazu fügen wir es in den Constructor von <code>todo-list.component.ts</code> ein:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> todoListService: <span style="color:#2b91af">TodoListService</span>) { }
+</span></span></code></pre></div><p>Das HTML müssen wir jetzt so ändern, dass das Service anstelle des Properties verwendet wird:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;h2&gt;Todos&lt;/h2&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;div <span style="">*</span>ngFor=<span style="color:#a31515">&#34;let item of todoListService.getTodos(false)&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ item.dueDate | date:&#39;EE, dd.MM.&#39; }} {{ item.description }}
+</span></span><span style="display:flex;"><span>&lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;p&gt;Items: {{ todoListService.getTodos(false).length }}&lt;/p&gt;
+</span></span></code></pre></div><h2 id="einfügen-von-items">Einfügen von Items</h2>
 <p>Damit wir Form Controls mit Bindings verwenden können, müssen wir im <code>app.module.ts</code> das <code>FormsModule</code> hinzufügen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts">...
-<span style="color:#00f">import</span> { FormsModule } from <span style="color:#a31515">&#39;@angular/forms&#39;</span>;
-
-<span style="color:#00f">@NgModule</span>({
-  declarations: [
-    ...
-  ],
-  imports: [
-    ...
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-<span style="color:#00f">export</span> <span style="color:#00f">class</span> AppModule { }
-</code></pre></div>
-<p>In der <code>todo-list.component.ts</code> fügen wir jetzt Properties für die <code>description</code> und das <code>dueDate</code> ein. Diese verwenden wir im HTML dann zum Data Binding. In der neuen Methode <code>addTodo</code> fügen wir das Item im Service dann ein.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Component, OnInit } from <span style="color:#a31515">&#39;@angular/core&#39;</span>;
-
-<span style="color:#00f">import</span> { TodoListService } from <span style="color:#a31515">&#39;../shared/todo-list.service&#39;</span>;
-<span style="color:#00f">import</span> { formatDate } from <span style="color:#a31515">&#39;@angular/common&#39;</span>;
-
-<span style="color:#00f">@Component</span>({
-  selector: <span style="color:#a31515">&#39;app-todo-list&#39;</span>,
-  templateUrl: <span style="color:#a31515">&#39;./todo-list.component.html&#39;</span>,
-  styleUrls: [<span style="color:#a31515">&#39;./todo-list.component.scss&#39;</span>]
-})
-<span style="color:#00f">export</span> <span style="color:#00f">class</span> TodoListComponent <span style="color:#00f">implements</span> OnInit {
-  <span style="color:#00f">public</span> todoDescription = <span style="color:#a31515">&#39;&#39;</span>;
-  <span style="color:#00f">public</span> todoDueDate = formatDate(<span style="color:#00f">new</span> Date(), <span style="color:#a31515">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#a31515">&#39;en&#39;</span>);
-  <span style="color:#00f">public</span> showDone = <span style="color:#00f">false</span>;
-
-  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> todoListService: <span style="color:#2b91af">TodoListService</span>) { }
-
-  ngOnInit(): <span style="color:#00f">void</span> {
-  }
-
-  <span style="color:#00f">public</span> addTodo(): <span style="color:#00f">void</span> {
-    <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todoDescription &amp;&amp; <span style="color:#00f">this</span>.todoDueDate) {
-      <span style="color:#00f">this</span>.todoListService.addTodo(<span style="color:#00f">this</span>.todoDescription, <span style="color:#00f">new</span> Date(<span style="color:#00f">this</span>.todoDueDate));
-      <span style="color:#00f">this</span>.todoDescription = <span style="color:#a31515">&#39;&#39;</span>;
-      <span style="color:#00f">this</span>.todoDueDate = formatDate(<span style="color:#00f">new</span> Date(), <span style="color:#a31515">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#a31515">&#39;en&#39;</span>);
-    }
-  }
-}
-</code></pre></div>
-<p>Jetzt müssen wir noch im HTML eine Möglichkeit bieten, neue Todos zu erfassen und zu löschen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2&gt;Todos&lt;/h2&gt;
-
-&lt;div class=<span style="color:#a31515">&#34;addItem&#34;</span>&gt;
-    Neues Todo: &lt;input type=<span style="color:#a31515">&#34;text&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDescription<span style="">&#34;</span>&gt; &lt;input type=<span style="color:#a31515">&#34;date&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDueDate<span style="">&#34;</span>&gt; &lt;button <span style="">(</span>click<span style="">)=&#34;</span>addTodo<span style="">()&#34;</span>&gt;Hinzufügen&lt;/button&gt;
-&lt;/div&gt;
-
-&lt;div <span style="">*</span>ngFor=<span style="color:#a31515">&#34;let item of todoListService.getTodos(false)&#34;</span>&gt;
-    &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>toggleDoneStateById<span style="">(</span>item<span style="">.</span>id<span style="">)&#34;</span>&gt;Done&lt;/button&gt; &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>deleteTodoById<span style="">(</span>item<span style="">.</span>id<span style="">)&#34;</span>&gt;Löschen&lt;/button&gt; {{ item.dueDate | date:&#39;EE, dd.MM.&#39; }} {{ item.description }}
-&lt;/div&gt;
-
-&lt;p&gt;Todo: {{ todoListService.getTodos(false).length }}&lt;br/&gt;Done: {{ todoListService.getTodos(true).length }}&lt;/p&gt;</code></pre></div>
-<h2 id="done-items-anzeigen">Done Items anzeigen</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { FormsModule } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;@angular/forms&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">@NgModule</span>({
+</span></span><span style="display:flex;"><span>  declarations: [
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  imports: [
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>    FormsModule
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  providers: [],
+</span></span><span style="display:flex;"><span>  bootstrap: [AppComponent]
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">class</span> AppModule { }
+</span></span></code></pre></div><p>In der <code>todo-list.component.ts</code> fügen wir jetzt Properties für die <code>description</code> und das <code>dueDate</code> ein. Diese verwenden wir im HTML dann zum Data Binding. In der neuen Methode <code>addTodo</code> fügen wir das Item im Service dann ein.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Component, OnInit } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { TodoListService } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;../shared/todo-list.service&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { formatDate } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;@angular/common&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">@Component</span>({
+</span></span><span style="display:flex;"><span>  selector: <span style="color:#a31515">&#39;app-todo-list&#39;</span>,
+</span></span><span style="display:flex;"><span>  templateUrl: <span style="color:#a31515">&#39;./todo-list.component.html&#39;</span>,
+</span></span><span style="display:flex;"><span>  styleUrls: [<span style="color:#a31515">&#39;./todo-list.component.scss&#39;</span>]
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">class</span> TodoListComponent <span style="color:#00f">implements</span> OnInit {
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> todoDescription = <span style="color:#a31515">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> todoDueDate = formatDate(<span style="color:#00f">new</span> Date(), <span style="color:#a31515">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#a31515">&#39;en&#39;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> showDone = <span style="color:#00f">false</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> todoListService: <span style="color:#2b91af">TodoListService</span>) { }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ngOnInit(): <span style="color:#00f">void</span> {
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">public</span> addTodo(): <span style="color:#00f">void</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (<span style="color:#00f">this</span>.todoDescription &amp;&amp; <span style="color:#00f">this</span>.todoDueDate) {
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">this</span>.todoListService.addTodo(<span style="color:#00f">this</span>.todoDescription, <span style="color:#00f">new</span> Date(<span style="color:#00f">this</span>.todoDueDate));
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">this</span>.todoDescription = <span style="color:#a31515">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">this</span>.todoDueDate = formatDate(<span style="color:#00f">new</span> Date(), <span style="color:#a31515">&#39;yyyy-MM-dd&#39;</span>, <span style="color:#a31515">&#39;en&#39;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Jetzt müssen wir noch im HTML eine Möglichkeit bieten, neue Todos zu erfassen und zu löschen:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;h2&gt;Todos&lt;/h2&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;div class=<span style="color:#a31515">&#34;addItem&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    Neues Todo: &lt;input type=<span style="color:#a31515">&#34;text&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDescription<span style="">&#34;</span>&gt; &lt;input type=<span style="color:#a31515">&#34;date&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDueDate<span style="">&#34;</span>&gt; &lt;button <span style="">(</span>click<span style="">)=&#34;</span>addTodo<span style="">()&#34;</span>&gt;Hinzufügen&lt;/button&gt;
+</span></span><span style="display:flex;"><span>&lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;div <span style="">*</span>ngFor=<span style="color:#a31515">&#34;let item of todoListService.getTodos(false)&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>toggleDoneStateById<span style="">(</span>item<span style="">.</span>id<span style="">)&#34;</span>&gt;Done&lt;/button&gt; &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>deleteTodoById<span style="">(</span>item<span style="">.</span>id<span style="">)&#34;</span>&gt;Löschen&lt;/button&gt; {{ item.dueDate | date:&#39;EE, dd.MM.&#39; }} {{ item.description }}
+</span></span><span style="display:flex;"><span>&lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;p&gt;Todo: {{ todoListService.getTodos(false).length }}&lt;br/&gt;Done: {{ todoListService.getTodos(true).length }}&lt;/p&gt;
+</span></span></code></pre></div><h2 id="done-items-anzeigen">Done Items anzeigen</h2>
 <p>Wir möchten jetzt noch ein Häkchen hinzufügen, mit dem wir bereits erledigte Items anzeigen können. Dazu fügen wir zuerst in <code>todo-list.component.ts</code> ein Property <code>showDone</code> ein:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">public</span> showDone = <span style="color:#00f">false</span>;
-</code></pre></div>
-<p>Im HTML können wir jetzt das Häckchen hinzufügen und im <code>*ngFor</code> dann den richtigen Parameter übergeben. Außerdem werden bereits erledigte Elemente durchgestrichen angezeigt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2&gt;Todos&lt;/h2&gt;
-
-&lt;div class=<span style="color:#a31515">&#34;addItem&#34;</span>&gt;
-    Neues Todo: &lt;input type=<span style="color:#a31515">&#34;text&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDescription<span style="">&#34;</span>&gt; &lt;input type=<span style="color:#a31515">&#34;date&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDueDate<span style="">&#34;</span>&gt; &lt;button <span style="">(</span>click<span style="">)=&#34;</span>addTodo<span style="">()&#34;</span>&gt;Hinzufügen&lt;/button&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Done anzeigen: &lt;input type=<span style="color:#a31515">&#34;checkbox&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>showDone<span style="">&#34;</span>&gt;&lt;/p&gt;
-
-&lt;div <span style="">*</span>ngFor=<span style="color:#a31515">&#34;let item of todoListService.getTodos(showDone ? undefined : false)&#34;</span>&gt;
-    &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>toggleDoneStateById<span style="">(</span>item<span style="">.</span>id<span style="">)&#34;</span>&gt;Done&lt;/button&gt; 
-    &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>deleteTodoById<span style="">(</span>item<span style="">.</span>id<span style="">)&#34;</span>&gt;Löschen&lt;/button&gt; 
-    &lt;span <span style="">[</span>ngStyle<span style="">]=&#34;{&#39;</span>text-decoration<span style="">&#39;</span>: <span style="">(</span>item<span style="">.</span>doneDate <span style="">?</span> <span style="">&#39;</span>line-through<span style="">&#39;</span> : <span style="">&#39;</span>none<span style="">&#39;)}&#34;</span>&gt;{{ item.dueDate | date:&#39;EE, dd.MM.&#39; }} {{ item.description }}&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Todo: {{ todoListService.getTodos(false).length }}&lt;br/&gt;Done: {{ todoListService.getTodos(true).length }}&lt;/p&gt;</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">public</span> showDone = <span style="color:#00f">false</span>;
+</span></span></code></pre></div><p>Im HTML können wir jetzt das Häckchen hinzufügen und im <code>*ngFor</code> dann den richtigen Parameter übergeben. Außerdem werden bereits erledigte Elemente durchgestrichen angezeigt:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;h2&gt;Todos&lt;/h2&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;div class=<span style="color:#a31515">&#34;addItem&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    Neues Todo: &lt;input type=<span style="color:#a31515">&#34;text&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDescription<span style="">&#34;</span>&gt; &lt;input type=<span style="color:#a31515">&#34;date&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>todoDueDate<span style="">&#34;</span>&gt; &lt;button <span style="">(</span>click<span style="">)=&#34;</span>addTodo<span style="">()&#34;</span>&gt;Hinzufügen&lt;/button&gt;
+</span></span><span style="display:flex;"><span>&lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;p&gt;Done anzeigen: &lt;input type=<span style="color:#a31515">&#34;checkbox&#34;</span> <span style="">[(</span>ngModel<span style="">)]=&#34;</span>showDone<span style="">&#34;</span>&gt;&lt;/p&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;div <span style="">*</span>ngFor=<span style="color:#a31515">&#34;let item of todoListService.getTodos(showDone ? undefined : false)&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>toggleDoneStateById<span style="">(</span>item<span style="">.</span>id<span style="">)&#34;</span>&gt;Done&lt;/button&gt; 
+</span></span><span style="display:flex;"><span>    &lt;button <span style="">(</span>click<span style="">)=&#34;</span>todoListService<span style="">.</span>deleteTodoById<span style="">(</span>item<span style="">.</span>id<span style="">)&#34;</span>&gt;Löschen&lt;/button&gt; 
+</span></span><span style="display:flex;"><span>    &lt;span <span style="">[</span>ngStyle<span style="">]=&#34;{&#39;</span>text-decoration<span style="">&#39;</span>: <span style="">(</span>item<span style="">.</span>doneDate <span style="">?</span> <span style="">&#39;</span>line-through<span style="">&#39;</span> : <span style="">&#39;</span>none<span style="">&#39;)}&#34;</span>&gt;{{ item.dueDate | date:&#39;EE, dd.MM.&#39; }} {{ item.description }}&lt;/span&gt;
+</span></span><span style="display:flex;"><span>&lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;p&gt;Todo: {{ todoListService.getTodos(false).length }}&lt;br/&gt;Done: {{ todoListService.getTodos(true).length }}&lt;/p&gt;
+</span></span></code></pre></div>
 
 
      
@@ -604,72 +560,69 @@ ng g component dashboard</code></pre></div>
     </div>
 </div>
 
-
 <h2 id="dashboard">Dashboard</h2>
-
 <p>Im Dashboard wollen wir jetzt zwei Balken anzeigen für die noch offenen und die bereits erledigten Todos. In <code>dashboard.component.ts</code> fügen wir dazu zwei Methoden ein, die uns die jeweiligen Prozentsätze ausrechnen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ts" data-lang="ts"><span style="color:#00f">import</span> { Component, OnInit } from <span style="color:#a31515">&#39;@angular/core&#39;</span>;
-
-<span style="color:#00f">import</span> { TodoListService } from <span style="color:#a31515">&#39;../shared/todo-list.service&#39;</span>;
-
-<span style="color:#00f">@Component</span>({
-  selector: <span style="color:#a31515">&#39;app-dashboard&#39;</span>,
-  templateUrl: <span style="color:#a31515">&#39;./dashboard.component.html&#39;</span>,
-  styleUrls: [<span style="color:#a31515">&#39;./dashboard.component.scss&#39;</span>]
-})
-<span style="color:#00f">export</span> <span style="color:#00f">class</span> DashboardComponent <span style="color:#00f">implements</span> OnInit {
-
-  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> todoListService: <span style="color:#2b91af">TodoListService</span>) { }
-
-  ngOnInit(): <span style="color:#00f">void</span> {
-  }
-
-  getTodoPercentage(): <span style="color:#2b91af">number</span> {
-    <span style="color:#00f">const</span> allTodos = <span style="color:#00f">this</span>.todoListService.getTodos();
-
-    <span style="color:#00f">if</span> (allTodos.length) {
-      <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todoListService.getTodos(<span style="color:#00f">false</span>).length / allTodos.length * 100;
-    } <span style="color:#00f">else</span> {
-      <span style="color:#00f">return</span> 0;
-    }
-  }
-
-  getDonePercentage(): <span style="color:#2b91af">number</span> {
-    <span style="color:#00f">const</span> allTodos = <span style="color:#00f">this</span>.todoListService.getTodos();
-
-    <span style="color:#00f">if</span> (allTodos.length) {
-      <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todoListService.getTodos(<span style="color:#00f">true</span>).length / allTodos.length * 100;
-    } <span style="color:#00f">else</span> {
-      <span style="color:#00f">return</span> 0;
-    }
-  }
-}
-</code></pre></div>
-<p>Dann fügen wir im HTML zwei divs ein, deren Breite über Data Binding im <code>[ngStyle]</code> gesteuert wird. Hier verwenden wir die berrechneten Prozentsätze:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;h2&gt;Dashboard&lt;/h2&gt;
-&lt;div class=<span style="color:#a31515">&#34;bar-chart&#34;</span>&gt;
-    &lt;div <span style="">[</span>ngStyle<span style="">]=&#34;{</span> <span style="">&#39;</span>width<span style="">&#39;</span>: getTodoPercentage<span style="">().</span>toString<span style="">()</span> <span style="">+</span> <span style="">&#39;%&#39;</span> <span style="">}&#34;</span> class=<span style="color:#a31515">&#34;todo-bar&#34;</span>&gt;Todo: {{ getTodoPercentage() | number:&#39;1.0-0&#39; }} %&lt;/div&gt;
-    &lt;div <span style="">[</span>ngStyle<span style="">]=&#34;{</span> <span style="">&#39;</span>width<span style="">&#39;</span>: getDonePercentage<span style="">().</span>toString<span style="">()</span> <span style="">+</span> <span style="">&#39;%&#39;</span> <span style="">}&#34;</span> class=<span style="color:#a31515">&#34;done-bar&#34;</span>&gt;Done: {{ getDonePercentage() | number:&#39;1.0-0&#39; }} %&lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
-<p>Im Stylesheet müssen wir noch die Höhe und Farben der Balken festlegen:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#2b91af">.bar-chart</span> {
-    &gt;div {
-        height: 40px;
-        margin-bottom: 10px;
-        white-space: nowrap;
-    }
-
-    <span style="color:#2b91af">.todo-bar</span> {
-        background-color: #03a9f4;
-        height: 40px;
-    }
-
-    <span style="color:#2b91af">.done-bar</span> {
-        background-color: #4caf50;
-        height: 40px;
-    }
-}</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">import</span> { Component, OnInit } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">import</span> { TodoListService } <span style="color:#00f">from</span> <span style="color:#a31515">&#39;../shared/todo-list.service&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">@Component</span>({
+</span></span><span style="display:flex;"><span>  selector: <span style="color:#a31515">&#39;app-dashboard&#39;</span>,
+</span></span><span style="display:flex;"><span>  templateUrl: <span style="color:#a31515">&#39;./dashboard.component.html&#39;</span>,
+</span></span><span style="display:flex;"><span>  styleUrls: [<span style="color:#a31515">&#39;./dashboard.component.scss&#39;</span>]
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#00f">export</span> <span style="color:#00f">class</span> DashboardComponent <span style="color:#00f">implements</span> OnInit {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#00f">constructor</span>(<span style="color:#00f">public</span> todoListService: <span style="color:#2b91af">TodoListService</span>) { }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ngOnInit(): <span style="color:#00f">void</span> {
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  getTodoPercentage(): <span style="color:#2b91af">number</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">const</span> allTodos = <span style="color:#00f">this</span>.todoListService.getTodos();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (allTodos.length) {
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todoListService.getTodos(<span style="color:#00f">false</span>).length / allTodos.length * 100;
+</span></span><span style="display:flex;"><span>    } <span style="color:#00f">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">return</span> 0;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  getDonePercentage(): <span style="color:#2b91af">number</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">const</span> allTodos = <span style="color:#00f">this</span>.todoListService.getTodos();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (allTodos.length) {
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">return</span> <span style="color:#00f">this</span>.todoListService.getTodos(<span style="color:#00f">true</span>).length / allTodos.length * 100;
+</span></span><span style="display:flex;"><span>    } <span style="color:#00f">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#00f">return</span> 0;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Dann fügen wir im HTML zwei divs ein, deren Breite über Data Binding im <code>[ngStyle]</code> gesteuert wird. Hier verwenden wir die berrechneten Prozentsätze:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;h2&gt;Dashboard&lt;/h2&gt;
+</span></span><span style="display:flex;"><span>&lt;div class=<span style="color:#a31515">&#34;bar-chart&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;div <span style="">[</span>ngStyle<span style="">]=&#34;{</span> <span style="">&#39;</span>width<span style="">&#39;</span>: getTodoPercentage<span style="">().</span>toString<span style="">()</span> <span style="">+</span> <span style="">&#39;%&#39;</span> <span style="">}&#34;</span> class=<span style="color:#a31515">&#34;todo-bar&#34;</span>&gt;Todo: {{ getTodoPercentage() | number:&#39;1.0-0&#39; }} %&lt;/div&gt;
+</span></span><span style="display:flex;"><span>    &lt;div <span style="">[</span>ngStyle<span style="">]=&#34;{</span> <span style="">&#39;</span>width<span style="">&#39;</span>: getDonePercentage<span style="">().</span>toString<span style="">()</span> <span style="">+</span> <span style="">&#39;%&#39;</span> <span style="">}&#34;</span> class=<span style="color:#a31515">&#34;done-bar&#34;</span>&gt;Done: {{ getDonePercentage() | number:&#39;1.0-0&#39; }} %&lt;/div&gt;
+</span></span><span style="display:flex;"><span>&lt;/div&gt;
+</span></span></code></pre></div><p>Im Stylesheet müssen wir noch die Höhe und Farben der Balken festlegen:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#2b91af">.bar-chart</span> {
+</span></span><span style="display:flex;"><span>    &gt;div {
+</span></span><span style="display:flex;"><span>        height: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>        margin-bottom: 10<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>        white-space: nowrap;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2b91af">.todo-bar</span> {
+</span></span><span style="display:flex;"><span>        background-color: #03a9f4;
+</span></span><span style="display:flex;"><span>        height: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#2b91af">.done-bar</span> {
+</span></span><span style="display:flex;"><span>        background-color: #4caf50;
+</span></span><span style="display:flex;"><span>        height: 40<span style="color:#2b91af">px</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 
 
      

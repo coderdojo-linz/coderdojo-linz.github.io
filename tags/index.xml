@@ -4,11 +4,8 @@
     <title>Tags on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/tags/</link>
     <description>Recent content in Tags on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

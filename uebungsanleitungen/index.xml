@@ -4,12 +4,9 @@
     <title>Übungsanleitungen on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/</link>
     <description>Recent content in Übungsanleitungen on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    <lastBuildDate>Mon, 01 Jun 2020 05:28:34 +0200</lastBuildDate>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

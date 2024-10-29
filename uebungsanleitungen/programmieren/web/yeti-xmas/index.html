@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Yeti Xmas Game mit p5.js </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.73.0" /> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
 
     
 
@@ -38,18 +38,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.55a3cbb6f035c25e5c7cf706ee053eca6f5a54d8095b05fd737d1b0330f99eaf.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.f70d52033ab2e5b886f5be382d7cf57b7a35a2fffbcb332bc21f18611339ae21.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body">
     <!-- NAVIGATION -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/termine">Termine</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/info">Infos</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/mentoren">Mentoren</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item   ">
                     <a class="nav-link" href="/sponsoring">Sponsoring</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item  active ">
                     <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
                 </li>
             </ul>
@@ -150,103 +150,86 @@
             <div class="col-12 sushi-toc">
                 <h2>Inhalt</h2>
                 <nav id="TableOfContents">
-<ul>
-<li><a href="#yeti-xmas-game-mit-p5-js">Yeti Xmas Game mit p5.js</a>
-<ul>
-<li><a href="#ziel-der-übung">Ziel der Übung</a></li>
-<li><a href="#p5-js">p5.js</a></li>
-<li><a href="#anleitung">Anleitung</a></li>
-<li><a href="#source-code">Source Code</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#ziel-der-übung">Ziel der Übung</a></li>
+    <li><a href="#p5js">p5.js</a></li>
+    <li><a href="#anleitung">Anleitung</a></li>
+    <li><a href="#source-code">Source Code</a></li>
+  </ul>
 </nav>
             </div>
-            <div class="col-12 sushi-content"> 
-
-<h1 id="yeti-xmas-game-mit-p5-js">Yeti Xmas Game mit p5.js</h1>
-
+            <div class="col-12 sushi-content"> <h1 id="yeti-xmas-game-mit-p5js">Yeti Xmas Game mit p5.js</h1>
 <h2 id="ziel-der-übung">Ziel der Übung</h2>
-
 <p>In dieser Übung programmierst du mit p5.js and Jump &amp; Run Spiel.</p>
-
-<iframe src="source/index.html" width="600" height="500" style="max-width: 100%" class="inline-game"></iframe>
-
-<h2 id="p5-js">p5.js</h2>
-
+<!-- raw HTML omitted -->
+<h2 id="p5js">p5.js</h2>
 <p>Wir verwenden für diese Übung die JavaScript Bibliothek <a href="https://p5js.org/" target="_blank">p5.js</a>. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.</p>
-
 <p>Öffne zum Starten den <a href="https://editor.p5js.org/" target="_blank">p5.js editor</a>.</p>
-
 <p>Dort wird dir folgender Code angezeigt:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#00f">function</span> setup() {
-  createCanvas(400, 400);
-}
-
-<span style="color:#00f">function</span> draw() {
-  background(220);
-}
-</code></pre></div>
-<h2 id="anleitung">Anleitung</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> setup() {
+</span></span><span style="display:flex;"><span>  createCanvas(400, 400);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+</span></span><span style="display:flex;"><span>  background(220);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="anleitung">Anleitung</h2>
 <p>Die Anleitung zum Yeti Spiel kommt in den nächsten Wochen &hellip;</p>
-
 <h2 id="source-code">Source Code</h2>
-
 <p>Hier findest du den gesamten Source Code:</p>
-
 <ul>
-<li><a href="source/index.html" target="_blank">index.html</a></li>
+<li><a href="source/index.html">index.html</a></li>
 <li>assets
-
 <ul>
-<li><a href="source/assets/background.png" target="_blank">background.png</a></li>
-<li><a href="source/assets/earth.png" target="_blank">earth.png</a></li>
-<li><a href="source/assets/surface-danger.png" target="_blank">surface-danger.png</a></li>
-<li><a href="source/assets/surface-earth.png" target="_blank">surface-earth.png</a></li>
-<li><a href="source/assets/surface.png" target="_blank">surface.png</a></li>
-<li><a href="source/assets/yeti-dead-1.png" target="_blank">yeti-dead-1.png</a></li>
-<li><a href="source/assets/yeti-dead-2.png" target="_blank">yeti-dead-2.png</a></li>
-<li><a href="source/assets/yeti-dead-3.png" target="_blank">yeti-dead-3.png</a></li>
-<li><a href="source/assets/yeti-dead-4.png" target="_blank">yeti-dead-4.png</a></li>
-<li><a href="source/assets/yeti-dead-5.png" target="_blank">yeti-dead-5.png</a></li>
-<li><a href="source/assets/yeti-dead-6.png" target="_blank">yeti-dead-6.png</a></li>
-<li><a href="source/assets/yeti-dead-7.png" target="_blank">yeti-dead-7.png</a></li>
-<li><a href="source/assets/yeti-dead-8.png" target="_blank">yeti-dead-8.png</a></li>
-<li><a href="source/assets/yeti-dead-9.png" target="_blank">yeti-dead-9.png</a></li>
-<li><a href="source/assets/yeti-idle-1.png" target="_blank">yeti-idle-1.png</a></li>
-<li><a href="source/assets/yeti-idle-2.png" target="_blank">yeti-idle-2.png</a></li>
-<li><a href="source/assets/yeti-idle-3.png" target="_blank">yeti-idle-3.png</a></li>
-<li><a href="source/assets/yeti-idle-4.png" target="_blank">yeti-idle-4.png</a></li>
-<li><a href="source/assets/yeti-idle-5.png" target="_blank">yeti-idle-5.png</a></li>
-<li><a href="source/assets/yeti-idle-6.png" target="_blank">yeti-idle-6.png</a></li>
-<li><a href="source/assets/yeti-idle-7.png" target="_blank">yeti-idle-7.png</a></li>
-<li><a href="source/assets/yeti-idle-8.png" target="_blank">yeti-idle-8.png</a></li>
-<li><a href="source/assets/yeti-idle-9.png" target="_blank">yeti-idle-9.png</a></li>
-<li><a href="source/assets/yeti-walk-1.png" target="_blank">yeti-walk-1.png</a></li>
-<li><a href="source/assets/yeti-walk-2.png" target="_blank">yeti-walk-2.png</a></li>
-<li><a href="source/assets/yeti-walk-3.png" target="_blank">yeti-walk-3.png</a></li>
-<li><a href="source/assets/yeti-walk-4.png" target="_blank">yeti-walk-4.png</a></li>
-<li><a href="source/assets/yeti-walk-5.png" target="_blank">yeti-walk-5.png</a></li>
-<li><a href="source/assets/yeti-walk-6.png" target="_blank">yeti-walk-6.png</a></li>
-<li><a href="source/assets/yeti-walk-7.png" target="_blank">yeti-walk-7.png</a></li>
-<li><a href="source/assets/yeti-walk-8.png" target="_blank">yeti-walk-8.png</a></li>
-<li><a href="source/assets/yeti-walk-9.png" target="_blank">yeti-walk-9.png</a></li>
-</ul></li>
+<li><a href="source/assets/background.png">background.png</a></li>
+<li><a href="source/assets/earth.png">earth.png</a></li>
+<li><a href="source/assets/surface-danger.png">surface-danger.png</a></li>
+<li><a href="source/assets/surface-earth.png">surface-earth.png</a></li>
+<li><a href="source/assets/surface.png">surface.png</a></li>
+<li><a href="source/assets/yeti-dead-1.png">yeti-dead-1.png</a></li>
+<li><a href="source/assets/yeti-dead-2.png">yeti-dead-2.png</a></li>
+<li><a href="source/assets/yeti-dead-3.png">yeti-dead-3.png</a></li>
+<li><a href="source/assets/yeti-dead-4.png">yeti-dead-4.png</a></li>
+<li><a href="source/assets/yeti-dead-5.png">yeti-dead-5.png</a></li>
+<li><a href="source/assets/yeti-dead-6.png">yeti-dead-6.png</a></li>
+<li><a href="source/assets/yeti-dead-7.png">yeti-dead-7.png</a></li>
+<li><a href="source/assets/yeti-dead-8.png">yeti-dead-8.png</a></li>
+<li><a href="source/assets/yeti-dead-9.png">yeti-dead-9.png</a></li>
+<li><a href="source/assets/yeti-idle-1.png">yeti-idle-1.png</a></li>
+<li><a href="source/assets/yeti-idle-2.png">yeti-idle-2.png</a></li>
+<li><a href="source/assets/yeti-idle-3.png">yeti-idle-3.png</a></li>
+<li><a href="source/assets/yeti-idle-4.png">yeti-idle-4.png</a></li>
+<li><a href="source/assets/yeti-idle-5.png">yeti-idle-5.png</a></li>
+<li><a href="source/assets/yeti-idle-6.png">yeti-idle-6.png</a></li>
+<li><a href="source/assets/yeti-idle-7.png">yeti-idle-7.png</a></li>
+<li><a href="source/assets/yeti-idle-8.png">yeti-idle-8.png</a></li>
+<li><a href="source/assets/yeti-idle-9.png">yeti-idle-9.png</a></li>
+<li><a href="source/assets/yeti-walk-1.png">yeti-walk-1.png</a></li>
+<li><a href="source/assets/yeti-walk-2.png">yeti-walk-2.png</a></li>
+<li><a href="source/assets/yeti-walk-3.png">yeti-walk-3.png</a></li>
+<li><a href="source/assets/yeti-walk-4.png">yeti-walk-4.png</a></li>
+<li><a href="source/assets/yeti-walk-5.png">yeti-walk-5.png</a></li>
+<li><a href="source/assets/yeti-walk-6.png">yeti-walk-6.png</a></li>
+<li><a href="source/assets/yeti-walk-7.png">yeti-walk-7.png</a></li>
+<li><a href="source/assets/yeti-walk-8.png">yeti-walk-8.png</a></li>
+<li><a href="source/assets/yeti-walk-9.png">yeti-walk-9.png</a></li>
+</ul>
+</li>
 <li>css
-
 <ul>
-<li><a href="source/css/style.css" target="_blank">style.css</a></li>
-</ul></li>
+<li><a href="source/css/style.css">style.css</a></li>
+</ul>
+</li>
 <li>js
-
 <ul>
-<li><a href="source/js/config.json" target="_blank">config.json</a></li>
-<li><a href="source/js/game.js" target="_blank">game.js</a></li>
-<li><a href="source/js/ground.js" target="_blank">ground.js</a></li>
-<li><a href="source/js/p5-play.js" target="_blank">p5-play.js</a></li>
-<li><a href="source/js/sky.js" target="_blank">sky.js</a></li>
-<li><a href="source/js/yeti.js" target="_blank">yeti.js</a></li>
-</ul></li>
+<li><a href="source/js/config.json">config.json</a></li>
+<li><a href="source/js/game.js">game.js</a></li>
+<li><a href="source/js/ground.js">ground.js</a></li>
+<li><a href="source/js/p5-play.js">p5-play.js</a></li>
+<li><a href="source/js/sky.js">sky.js</a></li>
+<li><a href="source/js/yeti.js">yeti.js</a></li>
+</ul>
+</li>
 </ul>
  </div>
         </div>

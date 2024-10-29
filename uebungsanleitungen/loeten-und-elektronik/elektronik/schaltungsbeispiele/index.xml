@@ -4,38 +4,29 @@
     <title>Schaltungsbeispiele on CoderDojo Linz</title>
     <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/</link>
     <description>Recent content in Schaltungsbeispiele on CoderDojo Linz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>de-AT</language>
-    
-	<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lötübung Konstantstromquelle für LED</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/konstantstromquelle-fuer-led/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/konstantstromquelle-fuer-led/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Blinkschaltung</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/blinkschaltung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/blinkschaltung/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Lötübung Solar LED</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/solar-led/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/solar-led/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
