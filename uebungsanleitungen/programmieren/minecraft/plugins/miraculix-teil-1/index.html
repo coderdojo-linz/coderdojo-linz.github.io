@@ -398,13 +398,14 @@
 <li>Freundlich wäre, wenn wir, falls der <code>sender</code> <strong>nicht</strong> vom Datentyp <code>Player</code> ist, dem <code>sender</code> mitteilten, dass er eben kein <code>Player</code> ist und deswegen er keine Gesundheitsdaten hat, der Arme.</li>
 </ol>
 <p>Zum Glück gibts für alle drei Dinge eine Lösung. Also der Reihe nach:</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<ol>
+<li> `sender instanceof Player` ist eine Aussage, die eindeutig mit wahr oder falsch beantwortet werden kann (so ähnlich wie "jetzt scheint die Sonne"). Wenn ein Spieler im Spiel unser Command aufruft, ist `sender instanceof Player` wahr (auf Englisch `true`), wenn jemand in der Console unser Command aufruft ist `sender instanceof Player` aber falsch (auf Englisch `false`)</li>
+<li>Wenn wir Code ausführen wollen, der nur im Fall, wenn die Aussage `sender instanceof Player` wahr ist dann gibt es in Java das schöne Wort `if`. Insgesamt sieht das dann so aus:
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">if</span> (sender <span style="color:#00f">instanceof</span> Player) {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Achte darauf, dass die Aussage (meistens sagen wir einfach die Bedingung) in einem runden Klammernpaar geschrieben werden muss (so ähnlich wie die Parameter einer Methode). Zwischen den geschwungenen Klammern kommt dann der Code, der ausgeführt werden soll, wenn die Bedingung wahr ist.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</li>
+<li>Für den Fall, dass die Aussage nicht wahr ist, und wir in diesem Fall anderen Code ausführen wollen, gibt es das Wort `else`. Alles zusammen sieht das dann so aus:
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    <span style="color:#00f">if</span> (sender <span style="color:#00f">instanceof</span> Player) {
 </span></span><span style="display:flex;"><span>        Player player = (Player) sender;
@@ -416,7 +417,9 @@
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>        <span style="color:#00f">return</span> <span style="color:#00f">false</span>;
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    }
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
-<!-- raw HTML omitted -->
+</li>
+</ol>
+Gut, dann bauen und testen!
 <h2 id="ausführliche-anleitung-heal">Ausführliche Anleitung /heal</h2>
 <h3 id="das-yml-file-erweitern">Das yml-file erweitern</h3>
 <p>Wir müssen unser Plugin so umschreiben, dass es nun auf zwei verschiedene Kommandos reagiert. Beginnen wir einmal damit, dass es überhaupt auf ein weiteres Kommando reagiert. Dazu erweitern wir das <code>plugin.yml</code>.</p>

@@ -208,7 +208,7 @@
 
 <div class="row">
     <div class="col">
-        <p>You begin by defining what your stage should look like. For this Game we need the beach backdrop, a ball, a paddle a sprite that defines the <em>out</em> area.<!-- raw HTML omitted --><!-- raw HTML omitted -->
+        <p>You begin by defining what your stage should look like. For this Game we need the beach backdrop, a ball, a paddle a sprite that defines the <em>out</em> area.<br/><br/>
 Select the backdrop from the library with the button on the bottom left.</p>
     </div>
     <div class="col-12 col-md-6">
@@ -328,7 +328,7 @@ Select the backdrop from the library with the button on the bottom left.</p>
 
 <div class="row">
     <div class="col">
-        <p>At the drawing area we have to paint a simple rectangle. Therefore we need the <em>rectangle</em> and the <em>fill with color</em> tool from the toolbox.<!-- raw HTML omitted --><!-- raw HTML omitted -->
+        <p>At the drawing area we have to paint a simple rectangle. Therefore we need the <em>rectangle</em> and the <em>fill with color</em> tool from the toolbox.<br/><br/>
 When your have finished drawing the paddle you can move it by clicking and dragging the sprite in the top left scene design area. Drag the paddle to the bottom part of your scene but not at the very bottom, because we need some extra space for the <em>out</em> area down there.</p>
     </div>
     <div class="col-12 col-md-8">
@@ -406,9 +406,9 @@ When your have finished drawing the paddle you can move it by clicking and dragg
         <p>In order to be able to keep the ball in the air, you must be able to move the paddle to the left and right.
 To do so use the <em>when &hellip; key pressed</em> event. You can choose the <em>left arrow</em> and the <em>right arrow</em>.
 In case of <em>left arrow</em>, set the direction to -90 degrees, which means that the paddle will move to the left. Then move the paddle 15 steps.
-For <em>right arrow</em> set the direction to 90 degrees, which means that the paddle will move to the right. <!-- raw HTML omitted --><!-- raw HTML omitted -->
-To prevent the paddle from moving out of the screen, check if the current <em>x-position</em> of the paddle is in a valid range. <!-- raw HTML omitted --><!-- raw HTML omitted -->
-When you press either the left or right arrow now, the paddle will move. <!-- raw HTML omitted --><!-- raw HTML omitted -->
+For <em>right arrow</em> set the direction to 90 degrees, which means that the paddle will move to the right. <br/><br/>
+To prevent the paddle from moving out of the screen, check if the current <em>x-position</em> of the paddle is in a valid range. <br/><br/>
+When you press either the left or right arrow now, the paddle will move. <br/><br/>
 At the start of the game the paddle should be placed in the center of the screen. To do so use the <em>when flag clicked</em> action and set the current x-position of the paddle to 0.</p>
     </div>
     <div class="col-12 col-md-4">
@@ -435,9 +435,9 @@ At the start of the game the paddle should be placed in the center of the screen
 
 <div class="row">
     <div class="col">
-        <p>Now it&rsquo;s time to move the ball. When the game is started the ball should be placed in the middle of the screen. To do so set the current x- and y-position to 0. Moreover set the direction to zero, which means that the ball will move upwards. <!-- raw HTML omitted --><!-- raw HTML omitted -->
+        <p>Now it&rsquo;s time to move the ball. When the game is started the ball should be placed in the middle of the screen. To do so set the current x- and y-position to 0. Moreover set the direction to zero, which means that the ball will move upwards. <br/><br/>
 Now the movement can start. Repeat the following three actions: <em>move 10 steps</em>, <em>if on edge, bounce</em> and <em>wait 0.05 secs</em>.
-By changing this value you can control the balls speed. <!-- raw HTML omitted --><!-- raw HTML omitted -->
+By changing this value you can control the balls speed. <br/><br/>
 If you run this script now, the ball will bounce between top and bottom edge, but the paddle will be ignored.</p>
     </div>
     <div class="col-12 col-md-4">
@@ -463,8 +463,8 @@ If you run this script now, the ball will bounce between top and bottom edge, bu
 <div class="row">
     <div class="col">
         <p>To change the direction of the ball, as soon as he touches the paddle, we need some more actions when the game starts.
-Here we have to check infinitely whether the ball touches the paddle or not. If it does, the direction is set to a random value between -40 and 40. <!-- raw HTML omitted --><!-- raw HTML omitted -->
-Direction 0 degrees means straight upwards. A value between -40 and 40 means that the ball will move upwards but spreads slightly to the left or right. <!-- raw HTML omitted --><!-- raw HTML omitted -->
+Here we have to check infinitely whether the ball touches the paddle or not. If it does, the direction is set to a random value between -40 and 40. <br/><br/>
+Direction 0 degrees means straight upwards. A value between -40 and 40 means that the ball will move upwards but spreads slightly to the left or right. <br/><br/>
 Then wait until the ball no longer touches the paddle before continuing the script.</p>
     </div>
     <div class="col-12 col-md-4">

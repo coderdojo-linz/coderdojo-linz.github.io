@@ -283,8 +283,29 @@
 <div class="row">
     <div class="col">
         <p><p>Um die kleine Katze über die Straße zu bringen werden müssen wir sie irgendwie steuern können. Damit das ganze gut aussieht, animieren wir die Kate bei jedem Schritt. Außerdem erlauben wir nur einen Schritt pro Tastendruck, damit das ganze etwas interessanter wird.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<div class="row">
+    <div class="col">
+        <p>Am Anfang rufen wir einen kleinen Block auf, der unsere Katze an die Anfangsposition bringt, und ihr Aussehen sowie die Größe einstellt.</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/player_block_init.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <p><p>Danach bauen wir für die für jede der Pfeiltasten einen Programmteil, der dafür sorgt, dass</p>
+<ul>
+<li>die Katze nicht über den Rand hinauslaufen kann,</li>
+<li>die Katze animiert und bewegt wird</li>
+<li>die Taste losgelassen werden muss, bevor die nächste Taste gedrückt werden kann</li>
+</ul>
+<p>Das Animieren erledigen wir auch in einem Block, damit wir es nicht jedes Mal aufs neue programmieren müssen.</p>
+</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/player_block_animate.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
 <p>So &hellip; das war ein ordentliches Stück Arbeit, aber wir können die Katze nun über den Bildschirm hüpfen lassen.</p>
 <p>Probier es einfach mal aus &hellip;</p>
 </p>
@@ -315,7 +336,17 @@
 <li>die Katze darf keine Autos berühren und</li>
 <li>den Fluss kann sie nur auf einem Treibgut-Stück überqueren.</li>
 </ul>
-<!-- raw HTML omitted --></p>
+<div class="row">
+    <div class="col">
+        <p><p>Sollten wir eine der beiden letzten Punkte erfüllen, so sind wir &ldquo;gestorben&rdquo; und müssen nochmal von vorne anfangen.</p>
+<p>Auch dafür haben wir einen Block.</p>
+</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/player_block_die.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+</p>
     </div>
     <div class="col-12 col-md-4">
     <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/player_lifecycle.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -337,8 +368,16 @@
 
 <div class="row">
     <div class="col">
-        <p><!-- raw HTML omitted -->
-<p>Damit wir mitgekommen, dass wir auf einem Treibgut stehen, das sich bewegt, lassen wir uns eine Nachricht schicken.</p></p>
+        <p><div class="row">
+    <div class="col">
+        <p>Lege dir eine Variable &ldquo;für alle Figuren&rdquo; namens &ldquo;treiben&rdquo; an.</p>
+    </div>
+    <div class="col-12 col-md-2">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/player_variable_drift.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+<p>Damit wir mitgekommen, dass wir auf einem Treibgut stehen, das sich bewegt, lassen wir uns eine Nachricht schicken.</p>
+</p>
     </div>
     <div class="col-12 col-md-3">
     <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/player_event_drift.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -363,7 +402,18 @@
     <div class="col">
         <p><p>Damit wir mit nur einer Figur für die Autos auskommen, verwenden wir einen kleinen Trick. Am Anfang des Spiels werden wir Klone erzeugen, die als &ldquo;Schablone&rdquo; für die einzelnen Autos auf den Fahrspuren dienen. Während des Spiels brauchen wir dann nur mehr die &ldquo;Schablonen&rdquo; klonen.</p>
 <p>Damit wir die Schablonen auch als solche erkennen, merken wir uns in einer Variablen, ob es sich gerade um eine Schablone handelt, oder ein fahrendes Auto. Außerdem brauchen wir noch eine Variable, in dem wir uns die Fahrspur merken.</p>
-<!-- raw HTML omitted -->
+<div class="row">
+    <div class="col">
+        <p><p>Bitte lege also foldende Variablen <strong>nur für diese Figur</strong> an:</p>
+<ul>
+<li>schablone</li>
+<li>spur</li>
+</ul></p>
+    </div>
+    <div class="col-12 col-md-2">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/car_variables.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
 </p>
     </div>
     <div class="col-12 col-md-3">
@@ -388,8 +438,22 @@
     <div class="col">
         <p><p>Kümmern wir uns nun um die Behandlung der Schablonen. Als Erstes müssen wir überprüfen, ob es sich bei dem aktuellen Klon um eine Schablone handelt. Wenn nicht, wird hier gar nichts gemacht.</p>
 <p>Auch die Schablonen bleiben unsichtbar, werden aber bereits auf die richtige Fahrspur gestellt.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<div class="row">
+    <div class="col">
+        <p>Die Position der Fahrspur berechnen wir einfach mit der Formel: (<code>spur</code> * 35) - 135.</p>
+    </div>
+    <div class="col-12 col-md-2">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/car_track_formula.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <p>Zusätzlich berechnen wir auch die Kostüm-Nummer aus der spur: (<code>spur</code> mod 2) + 1.</p>
+    </div>
+    <div class="col-12 col-md-2">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/car_costume_formula.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
 <p><strong>Anmerkung:</strong> <em>mod</em> ist der Divisionsrest. Das +1 am Schluss benötigen wir, da die Kostüme mit Nummer &ldquo;1&rdquo; anfangen.</p>
 <p>Danach sorgen wir dafür, dass jede 2. Fahrspur von der rechten Bildschirmseite beginnt. Auch dafür können wir &ldquo;mod 2&rdquo;. Damit erhalten wir &ldquo;1&rdquo; für ungerade Fahrspuren und &ldquo;0&rdquo; für gerade.</p>
 <p>Ganz am Schluss werden wir in einer Schleife noch Klone der Schablone in zufälligen Abständen erzeugen. Das &ldquo;Warte&rdquo; vor der Schleife ist nur da, damit Scratch etwas Zeit hat zuerst alle Schablonen zu erzeugen, bevor das Spiel wirklich startet.</p>
@@ -416,7 +480,17 @@
 <div class="row">
     <div class="col">
         <p><p>Das Erzeugen der Autos ist dann recht einfach. Nicht vergessen, dass wir natürlich nur &ldquo;nicht-Schablonen&rdquo; als Autos ansehen dürfen.</p>
-<!-- raw HTML omitted --></p>
+<div class="row">
+    <div class="col">
+        <p><p>Wir machen das Auto sichtbar und fahren so lange, bis wir an der anderen Bildschirmseite angekommen sind. Auch da hilft uns wieder die Überprüfung, ob die Fahrspur gerade ist, oder nicht.</p>
+<p>Das Bewegen des Autos ist hier in einem Code-Block ausgeführt, damit die einzelnen Programmteile nicht zu gross werden.</p>
+</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/car_block_drive.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+</p>
     </div>
     <div class="col-12 col-md-3">
     <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/car_clone_regular.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
@@ -443,7 +517,19 @@
     <div class="col">
         <p><p>Wir erzeugen die Schablonen - achte darauf, dass du die Variablen <code>spur</code> und <code>schablone</code> anlegst. Außerdem müssen wir uns die aktuelle X-Richtung merken, damit wir dem Spieler später sagen können, wohin der treibt.</p>
 <p>Leg also bitte die Variablen <strong>nur für diese Figur</strong> an:</p>
-<!-- raw HTML omitted -->
+<div class="row">
+    <div class="col">
+        <p><ul>
+<li>akutelle richtung</li>
+<li>schablone</li>
+<li>spur</li>
+</ul>
+</p>
+    </div>
+    <div class="col-12 col-md-2">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/drifters_variables.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
 </p>
     </div>
     <div class="col-12 col-md-3">
@@ -490,7 +576,15 @@
     <div class="col">
         <p><p>Auch das &ldquo;schwimmen&rdquo; des Treibguts funktioniert wie das Fahren der Autos.
 Ein zusätzlicher Teil kommt allerdings dazu: Wenn der Spieler auf dem Treibgut sitzt, müssen wir ihn wissen lassen, dass er mitkommen muss. Also senden wir die Nachricht <strong>treiben</strong>.</p>
-<!-- raw HTML omitted --></p>
+<div class="row">
+    <div class="col">
+        <p>Auch hier haben wir das eigentliche Treiben in einen eigenen Block ausgelagert.</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/drifters_block_swim.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+</p>
     </div>
     <div class="col-12 col-md-3">
     <img src="/uebungsanleitungen/programmieren/scratch/strasse-queren/img/drifters_clone_regular.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
