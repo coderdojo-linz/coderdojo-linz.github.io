@@ -4,6 +4,9 @@ title = "CoderDojo Linz"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
     codeFences = true
     guessSyntax = false
