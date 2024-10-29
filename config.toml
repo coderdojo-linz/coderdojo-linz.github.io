@@ -3,9 +3,7 @@ languageCode = "de-AT"
 title = "CoderDojo Linz"
 
 [markup]
-  defaultMarkdownHandler = "blackfriday"
-  [markup.blackFriday]
-		hrefTargetBlank = true
+  defaultMarkdownHandler = "goldmark"
   [markup.highlight]
     codeFences = true
     guessSyntax = false

@@ -5,3 +5,4 @@ resources/_gen/
 _site/
 .vscode/
 obj/
+.hugo_build.lock
