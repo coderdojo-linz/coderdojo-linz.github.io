@@ -62,7 +62,11 @@ Als nächstes kannst du den Ball bewegen. Wenn das Spiel gestartet wird, soll de
 Um die Richtung des Balls zu ändern, wenn er den Schläger berührt, brauchst du einen weiteren Block, der beim Start des Spiels ausgeführt wird. Hier wird fortlaufend geprüft, ob der Ball gerade den Schläger berührt. Wenn ja, wird die Richtung auf einen zufälligen Wert zwischen -40 und 40 geändert. Die Richtung 0 Grad bedeutet gerade nach oben. Ein Wert zwischen -40 und 40 sagt aus, dass der Ball gerade nach oben oder aber auch etwas links oder rechts davon fliegt. Dann warte, bis der Ball den Schläger nicht mehr berührt, bevor der Block weiter ausgeführt wird.
 {{< /imgblock >}}
 
-3. {{< imgblock "img/ball-code-3.png" "Out erkennen" >}}
+3. {{< imgblock "img/ball-code-4.png" "Ball startcode" >}}
+Damit sich der Ball auch bewegt, muss er natürlich auch eine Geschwindigkeit haben. Die Geschwindigkeit erhöhen wir alle 5 sekunden ein wenig, damit das Spiel interessanter wird.
+{{< /imgblock >}}
+
+4. {{< imgblock "img/ball-code-3.png" "Out erkennen" >}}
 Als letztes musst du noch erkennen, wann der Ball den Out-Bereich berührt. Dann ist das Spiel vorbei.
 {{< /imgblock >}}
 
