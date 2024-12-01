@@ -14,7 +14,7 @@ This repository contains the source code for the website of [CoderDojo Linz](htt
 
 ### Developing with Hugo
 
-Download version **v0.136.5** for your device from the [Hugo GitHub releases page](https://github.com/gohugoio/hugo/releases/tag/v0.136.5)
+Download version **v0.136.5** (extended) for your device from the [Hugo GitHub releases page](https://github.com/gohugoio/hugo/releases/tag/v0.136.5)
 
 After cloning, use `npm install` to install the dependencies and `hugo` to build the page to the `public/` folder. Use `npm run server` to start a local dev server at `http://localhost:1313/`
 
