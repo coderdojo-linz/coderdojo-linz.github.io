@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Installation eines lokalen Minecraft-Servers auf dem eigenen Rechner </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <link rel="canonical" href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/local-server/" />
+    
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item  active ">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>  
+     
+     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/">Minecraft</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/server/">Server</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 sushi-toc">
+                <h2>Inhalt</h2>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#einführung">Einführung</a></li>
+    <li><a href="#voraussetzungen">Voraussetzungen</a></li>
+    <li><a href="#vorbereitung">Vorbereitung</a>
+      <ul>
+        <li><a href="#java-development-kit-jdk-installieren">Java Development Kit (JDK) installieren</a></li>
+        <li><a href="#minecraft-server-software-herunterladen">Minecraft Server Software herunterladen</a></li>
+        <li><a href="#dateiendungen-anzeigen">Dateiendungen anzeigen</a></li>
+      </ul>
+    </li>
+    <li><a href="#vanilla-minecraft-server-installieren">Vanilla Minecraft Server installieren</a>
+      <ul>
+        <li><a href="#server-starten">Server starten</a></li>
+      </ul>
+    </li>
+    <li><a href="#forge-bzw-fabric-server-installieren">Forge bzw. Fabric Server installieren</a>
+      <ul>
+        <li><a href="#forge-bzw-fabric-server-software-herunterladen">Forge bzw. Fabric Server Software herunterladen</a></li>
+        <li><a href="#mods-installieren">Mods installieren</a></li>
+        <li><a href="#forge--bzw-fabric-server-starten">Forge- bzw. Fabric-Server starten</a></li>
+      </ul>
+    </li>
+    <li><a href="#weitere-server-software">Weitere Server-Software</a></li>
+    <li><a href="#weitere-schritte">Weitere Schritte</a>
+      <ul>
+        <li><a href="#portweiterleitung">Portweiterleitung</a></li>
+        <li><a href="#server-management">Server-Management</a></li>
+        <li><a href="#einen-server-mieten">Einen Server mieten</a></li>
+      </ul>
+    </li>
+    <li><a href="#fazit">Fazit</a></li>
+  </ul>
+</nav>
+            </div>
+            <div class="col-12 sushi-content"> <!-- Cover image by [allinonemovie](https://pixabay.com/users/allinonemovie-201131/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1106252) from [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1106252) (CC0) -->
+<h1 id="installation-eines-minecraft-servers">Installation eines Minecraft-Servers</h1>
+<h2 id="einführung">Einführung</h2>
+<p>In dieser Übung installieren wir einen Minecraft Server. Dieser Server wird auf dem eigenen Rechner installiert. Zuerst installieren wir die Standardversion des Servers. Anschließend installieren wir einen Forge- und Paper-Server. Forge ist eine Modifikation für Minecraft, die es ermöglicht, Mods zu installieren. Paper ist eine spezielle Server-Software, die es erlaubt, Plugins zu installieren.</p>
+<h2 id="voraussetzungen">Voraussetzungen</h2>
+<ul>
+<li>Minecraft Java Edition gekauft und installiert (<a href="https://www.minecraft.net/de-de/store/minecraft-java-edition" target="_blank">minecraft.net/java-edition</a>)</li>
+<li>Erfahrung mit der Erstellung von Dateien und Ordnern auf deinem Rechner.</li>
+<li>Minecraft-Kenntnise (z. B. wie man Minecraft startet und sich mit einem Server verbindet).</li>
+<li>Wenn du einen Forge- oder Fabric-Server installieren möchtest, benötigst du zusätzlich Erfahrung mit der Installation von Mods.</li>
+<li>Einen Texteditor (z. B. Visual Studio Code oder Sublime Text) zum Bearbeiten von Dateien. Ich persönlich empfehle Sublime Text zum Bearbeiten einfacher Dateien.</li>
+</ul>
+<h2 id="vorbereitung">Vorbereitung</h2>
+<h3 id="java-development-kit-jdk-installieren">Java Development Kit (JDK) installieren</h3>
+<p>Falls noch nicht geschehen, installiere Minecraft Java Edition auf deinem Rechner. Zusätzlich benötigst du das JDK (Java Development Kit, Java Entwickler-). Falls du Java noch nicht installiert hast, kannst du es von der <a href="https://adoptium.net/" target="_blank">Adoptium Java-Website</a> herunterladen.</p>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/local-server/img/browser-adoptium.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+<p>Java wurde 1991 von Sun Microsystems entwickelt und von Oracle in 2010 gekauft. Weil Oracle das JDK nicht mehr zum direkten Download anbietet, empfehlen wir dir, Adoptium Java zu verwenden. Adoptium Java ist eine Open-Source-Version von Java, die von der Eclipse Foundation entwickelt wird.</p>
+<h3 id="minecraft-server-software-herunterladen">Minecraft Server Software herunterladen</h3>
+<p>Besuche die Minecraft Server Download-Seite (<a href="https://www.minecraft.net/de-de/download/server" target="_blank">minecraft.net/download/server</a>) und lade die Server-Software herunter. Die Server-Software ist eine JAR-Datei (Java Archive), die du auf deinem Rechner ausführen kannst. Falls du eine ältere Version des Servers benötigst, kannst du sie auf der <a href="https://mcversions.net/" target="_blank">Minecraft Versions-Website</a> herunterladen (Achte darauf, die Server.jar herunterzuladen).</p>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/local-server/img/browser-minecraftserverdownload.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+<p>Nachdem du die Server-Software heruntergeladen hast, erstelle einen neuen Ordner auf deinem Rechner und verschiebe die Server-Software in diesen Ordner. Zur besseren Übersicht kannst du den Ordner <code>Minecraft Server</code> und die Datei <code>minecraft_-_server-X.X.X.jar</code> nennen (wobei <code>X.X.X</code> die Versionsnummer des Servers ist).</p>
+<h3 id="dateiendungen-anzeigen">Dateiendungen anzeigen</h3>
+<p>Standardmäßig sind Dateiendungen in Windows ausgeblendet. Um Dateiendungen anzuzeigen, öffne den Datei-Explorer und klicke auf <code>Ansicht</code> bzw. <code>View</code> in der oberen Menüleiste. Öffne das Menü <code>Zeigen</code> bzw. <code>Show</code> und aktiviere die Option <code>Dateinamenerweiterungen</code> bzw. <code>File Name Extensions</code>.</p>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/local-server/img/explorer-hiddenfiles.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+<p>Unter MacOS kannst du Dateiendungen anzeigen, indem du in den Finder-Einstellungen die Option <code>Alle Dateinamenerweiterungen einblenden</code> aktivierst.
+In Linux werden Dateiendungen standardmäßig angezeigt.</p>
+<h2 id="vanilla-minecraft-server-installieren">Vanilla Minecraft Server installieren</h2>
+<p>Vannila Minecraft ist die Standardversion des Spiels. Das kommt von Vanille-Eis, das als Basis für viele andere Eissorten dient. Der Vanilla Minecraft Server ist die Basisversion des Servers, auf der alle anderen Server-Versionen aufbauen.</p>
+<h3 id="server-starten">Server starten</h3>
+<p>Öffne den Ordner, in dem du die Server-Software gespeichert hast. Erstelle eine neue Textdatei und benenne sie in <code>start.bat</code> (Windows) oder <code>start.sh</code> (MacOS/Linux) um.</p>
+<p>Du kannst einen Startdatei-Generator (z. B. <a href="https://flags.sh/" target="_blank">flags.sh</a>) verwenden, um die Startdatei zu erstellen. Füge den generierten Code in die Datei ein. Die fertige Datei sollte ungefähr wie folgt aussehen:</p>
+<p>Windows:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>@<span style="color:#00f">echo</span> off
+</span></span><span style="display:flex;"><span>java -Xms4096M -Xmx4096M ... -jar minecraft_server-X.X.X.jar nogui
+</span></span><span style="display:flex;"><span><span style="color:#00f">pause</span>
+</span></span></code></pre></div><p>MacOS/Linux:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#00f">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#00f"></span>java ...
+</span></span></code></pre></div><p>Wenn die zweite Zeile so aussieht, ist das kein Problem. Diese zusätzlichen Optionen sind für die Server-Performance und -Stabilität gedacht. Du kannst sie verwenden, um deinen Server zu optimieren:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -Xms4096M -Xmx4096M --add-modules=jdk.incubator.vector -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -jar minecraft_server-X.X.X.jar --nogui
+</span></span></code></pre></div><p><code>@echo off</code> schaltet die Ausgabe von Befehlen aus.</p>
+<p><code>#!/bin/bash</code> sagt MacOS/Linux, dass du die Datei mit &ldquo;bash&rdquo; ausführen möchtest. Die zweite Zeile startet den Server.</p>
+<p><code>pause</code> hält das Fenster offen, damit du die Serverausgabe lesen kannst.</p>
+<p>Deine Optionen für den zugewiesenen Arbeitssüpeicher an (<code>-Xmx</code> und <code>-Xms</code>) können variieren. <code>-Xmx</code> gibt die maximale Speichergröße an, die der Server verwenden kann. <code>-Xms</code> gibt die minimale Speichergröße an, die der Server beim Starten verwendet. In diesem Beispiel verwenden wir 1 GB für beide Optionen. Du kannst die Speichergröße an deine Bedürfnisse anpassen.</p>
+<p><code>-jar minecraft_server-X.X.X.jar</code> sagt Java, wie die Serverdatei heißt. Ersetze <code>X.X.X</code> durch die Versionsnummer des Servers.</p>
+<p><code>nogui</code> startet den Server ohne grafische Benutzeroberfläche, da dies die Performance verbessert. Wenn du den Server mit einer grafischen Benutzeroberfläche starten möchtest, entferne <code>nogui</code>.</p>
+<p>Speichere die Datei und führe sie aus. Ein schwarzes Fenster geht auf und der Server startet&hellip; Und stoppt sofort wieder. Das ist normal. Der Server erstellt die Konfigurationsdateien und stoppt dann wieder. Du musst nämlich zuerst die Minecraft EULA (Endbenutzer-Lizenzvereinbarung) akzeptieren. Öffne dazu die Datei <code>eula.txt</code> und ändere <code>eula=false</code> in <code>eula=true</code>. Speichere die Datei und starte den Server erneut.</p>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/local-server/img/console-eula.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/local-server/img/editor-eula.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+<p>Der Server sollte jetzt starten und die Welt generieren. Du kannst den Server über die Adresse <code>localhost</code> erreichen. Öffne Minecraft und verbinde dich mit dem Server. Wenn du mit deinen Freunden im selben Netzwerk spielen möchtest, gib ihnen deine private IP-Adresse (die Kannst du unter deinen Interneteinstellungen finden) Wenn du den Server für andere Spieler im Internet zugänglich machen möchtest, musst du die Portweiterleitung in deinem Router einrichten (siehe unten).</p>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/local-server/img/minecraft-localhost.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+<h2 id="forge-bzw-fabric-server-installieren">Forge bzw. Fabric Server installieren</h2>
+<p>Forge ist eine Modifikation für Minecraft, die es ermöglicht, Mods zu installieren. Mods sind Erweiterungen für Minecraft, die das Spiel verändern oder verbessern. Forge ist eine der beliebtesten Modifikationen für Minecraft und wird von vielen Mod-Entwicklern unterstützt. Fabric ist eine alternative Modifikation für Minecraft, die von einigen Mod-Entwicklern bevorzugt wird.</p>
+<h3 id="forge-bzw-fabric-server-software-herunterladen">Forge bzw. Fabric Server Software herunterladen</h3>
+<p>Gehe zur <a href="https://files.minecraftforge.net/" target="_blank">Forge-Website</a> oder zur <a href="https://fabricmc.net/use/server/" target="_blank">Fabric-Website</a> und lade die Server-Software herunter. Die Server-Software ist eine JAR-Datei, die du auf deinem Rechner ausführen kannst. Erstelle einen neuen Ordner auf deinem Rechner und verschiebe die Server-Software in diesen Ordner.</p>
+<p>Für Forge musst du zuerst Forge installieren. Gehe dazu zur <a href="https://files.minecraftforge.net/" target="_blank">Forge-Website</a> und lade Forge herunter. Forge ist eine JAR-Datei, die du auf deinem Rechner ausführen kannst. Erstelle einen neuen Ordner auf deinem Rechner und verschiebe die Forge-Modifikation in diesen Ordner. Führe Forge aus, um die Modifikation zu installieren.</p>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p></p>
+    </div>
+    <div class="col-12 col-md-12">
+    <img src="/uebungsanleitungen/programmieren/minecraft/server/local-server/img/forge-installer.png" alt="(.Get 1)" class="mx-auto " style="display: block; width: auto" />
+    </div>
+</div>
+
+<p>Fabric benötigt keine separate Installation. Lade die Fabric-Server-Software herunter und verschiebe sie in den Ordner, den du zuvor erstellt hast.</p>
+<h3 id="mods-installieren">Mods installieren</h3>
+<p>Forge und Fabric ermöglichen es, Mods zu installieren. Mods sind Erweiterungen für Minecraft, die das Spiel verändern oder verbessern. Du kannst Mods von Websites wie <a href="https://www.curseforge.com/minecraft/mc-mods" target="_blank">CurseForge</a> oder <a href="https://modrinth.com/mods" target="_blank">Modrinth</a> herunterladen. Lade die Mods herunter und verschiebe sie in den <code>mods</code>-Ordner im Server-Ordner. Du musst die Mods auch auf dem Client installieren, um sie verwenden zu können.</p>
+<h3 id="forge--bzw-fabric-server-starten">Forge- bzw. Fabric-Server starten</h3>
+<p>Gehe wie beim Vanilla Minecraft Server vor und erstelle eine Startdatei für den Forge- oder Fabric-Server. Ferwende die neue Server-Software (<code>forge-X.X.X-X.X.X-X.jar</code> oder <code>fabric-server-mc.X.X.X-loader.X.X.X-launcher.X.X.X.jar</code>) anstelle der Vanilla-Server-Datei.</p>
+<h2 id="weitere-server-software">Weitere Server-Software</h2>
+<p>Es gibt viele weitere Server-Software für Minecraft, die es ermöglichen, Plugins zu installieren. Einige der beliebtesten Server-Software sind Spigot, Paper und Bukkit. Diese Server-Software ermöglichen es, Plugins zu installieren, die das Spiel verändern oder verbessern. Auf diese werde ich hier nicht eingehen, da sie komplexer sind und mehr Erfahrung erfordern.</p>
+<h2 id="weitere-schritte">Weitere Schritte</h2>
+<h3 id="portweiterleitung">Portweiterleitung</h3>
+<p>Wenn du deinen Server für andere Spieler im Internet zugänglich machen möchtest, musst du die Portweiterleitung in deinem Router einrichten. Öffne dazu die Router-Konfiguration und leite den Port 25565 an die IP-Adresse deines Rechners weiter. Die genaue Vorgehensweise hängt von deinem Router-Modell ab. Du findest die Anleitung in der Bedienungsanleitung des Routers oder auf der Website des Herstellers. Achte darauf, dass du die IP-Adresse deines Rechners statisch einstellst, damit sie sich nicht ändert. Eine allgemeine Anleitung dazu findest du auf dem <a href="https://nordvpn.com/de/blog/portweiterleitung/" target="_blank">NordVPN-Blog</a></p>
+<h3 id="server-management">Server-Management</h3>
+<p>Sobald dein Server läuft, musst du ihn verwalten. Das bedeutet, dass du regelmäßig Backups erstellst, den Server aktualisierst und die Spieler verwaltest. Du kannst ein Server-Management-Tool wie <a href="https://pterodactyl.io/" target="_blank">Pterodactyl</a> verwenden, um den Server zu verwalten.</p>
+<h3 id="einen-server-mieten">Einen Server mieten</h3>
+<p>Wenn du deinen Server nicht auf deinem eigenen Rechner hosten möchtest, kannst du einen Server mieten. Es gibt viele Anbieter, die Minecraft-Server-Hosting anbieten. Am Besten ist es, keinen Minecraft-Server, sondern einen KVM oder VPS zu mieten. Ich persönlich bin mit <a href="https://datalix.de/" target="_blank">Datalix</a> seit Jahren sehr zufrieden.</p>
+<h2 id="fazit">Fazit</h2>
+<p>In dieser Übung haben wir einen lokalen Minecraft-Server installiert. Wir haben die Standardversion des Servers installiert und einen Forge- und Fabric-Server installiert. Wir haben gelernt, dass man Mods und Plugins installieren kann, um das Spiel zu verändern oder zu verbessern. Wir haben auch gelernt, dass man Portweiterleitung benötigt, um den Server für andere Spieler zugänglich zu machen.</p>
+ </div>
+        </div>
+    </div>
+</section>  
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <div>
+                            <img src="/img/logo-coding-club-linz-white.svg">
+                        </div>
+                        <div>Coding Club Linz<br />Birkenweg 16, 4060 Leonding <br />
+                            <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfXNMcZAAAAALYnf3GpUqw5uotVMyjhLNU438i9"></script>
+</body>
+
+</html>
