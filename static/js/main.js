@@ -195,7 +195,7 @@ function loadEvents(eventsTable) {
           formattedBeginTime = '16:00';
           formattedEndTime = '18:00';
 
-          if (formattedDate === '18.10.2024') {
+          if (formattedDate === '24.01.2025') {
             if (event.location.indexOf('Leonding') >= 0) {
               formattedBeginTime = '15:00';
               formattedEndTime = '17:00';
@@ -290,8 +290,7 @@ function loadEvents(eventsTable) {
             formattedDate !== '09.09.2023' &&
             formattedDate !== '10.09.2023'
           ) {
-            row +=
-              '<p>Keine Anmeldung erforderlich.</p>';
+            row += '<p>Keine Anmeldung erforderlich.</p>';
           }
         }
 
