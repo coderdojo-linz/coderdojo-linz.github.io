@@ -136,8 +136,8 @@ Insgesamt sieht unsere Spielschleife dann so aus:
 while True:
     versuch = int(input('Rate meine Zahl: '))
     if versuch == n: 
-      print('Erraten! Ich habe mir %d gedacht.' % n)
-      break
+        print('Erraten! Ich habe mir %d gedacht.' % n)
+        break
     if versuch < n: print('zu klein!')
     if versuch > n: print('zu groß!')
 ```
@@ -153,8 +153,8 @@ print('Ich habe mir eine Zahl von 1-100 ausgedacht.')
 while True:
     versuch = int(input('Rate meine Zahl: '))
     if versuch == n: 
-      print('Erraten! Ich habe mir %d gedacht.' % n)
-      break
+        print('Erraten! Ich habe mir %d gedacht.' % n)
+        break
     if versuch < n: print('zu klein!')
     if versuch > n: print('zu groß!')
 ```
