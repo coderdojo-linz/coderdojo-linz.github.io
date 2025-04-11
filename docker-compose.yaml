@@ -1,0 +1,18 @@
+services:
+  server:
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    #   args:
+    #     HUGO_VERSION: ${HUGO_VERSION}
+    image: floryn90/hugo:${HUGO_VERSION}
+    command: ["server", "-D", "-F"]
+    volumes:
+      - ".:/src"
+    ports:
+      - "1313:1313"
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 512M
