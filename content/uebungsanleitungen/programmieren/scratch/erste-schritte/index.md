@@ -26,18 +26,18 @@ Du findest alle Figuren des Projekts im linken unteren Bereich. Im Moment gibt e
 {{< /imgblock >}}
 
 2. {{< imgblock "img/erste-schritte-scratchy.png" "Erste Schritte von Scratchy" 12 >}}
-Lass Scratchy ein paar Schritte laufen. Wähle dazu den Block *gehe 10er Schritt* und ziehe ihn nach rechts in den leeren grauen Bereich. Wenn du auf den blauen Block klickst, führt Scratchy den Befehl aus. Sie läuft 10 Schritte. Klickst du nochmal, läuft wie wieder 10 Schritte. Den Wert im weißen Feld kannst du verändern, um Scratchy mehr Schritte gehen zu lassen.
+Lass Scratchy ein paar Schritte laufen. Wähle dazu den Block *gehe 10er Schritt* und ziehe ihn nach rechts in den leeren grauen Bereich. Wenn du auf den blauen Block klickst, führt Scratchy den Befehl aus. Sie läuft 10 Schritte. Klickst du nochmal, läuft sie wieder 10 Schritte. Den Wert im weißen Feld kannst du verändern, um Scratchy mehr Schritte gehen zu lassen.
 {{< /imgblock >}}
 
 3. {{< imgblock "img/scratchy-geht-im-kreis.png" "Mehre Blöcke kombinieren" 4 >}}
-Du kannst auch mehrere Blöcke kombinieren, um Scratchy mehrere Aufgaben ausführen zu lassen. Lass Scratchy zuerst 100 Schritte laufen, dann warte eine Sekunde und dann drehe sie um 90 Grad. Wenn du das viermal wiederholst, läuft Scratchy im Kreis. Den Befehl, eine Sekunde zu warten, findest du bei den gelben Blöcken *Steuerung*. 
+Du kannst auch mehrere Blöcke kombinieren, um Scratchy mehrere Aufgaben ausführen zu lassen. Lass Scratchy zuerst 100 Schritte laufen, dann warte eine Sekunde und dann drehe sie um 90 Grad. Wenn du das viermal wiederholst, läuft Scratchy im Kreis. Den Befehl, *warte 1 Sekunden*, findest du bei den gelben Blöcken *Steuerung*. 
 Klicke den ganzen entstanden Block an, um zuzusehen, wie Scratchy deine Befehle ausführt.
 {{< /imgblock >}}
 
 ## Scratchy malt
 
 1. {{< imgblock "img/scratchy-malt.png" "Scratchy malt" 4 >}}
-Scratchy kann den Weg, den sie läuft, auch aufmalen. Verwende dazu die grünen Blöcke im Bereich *Malstift*. Schalte den Stift ein, bevor sie losläuft, wähle eine Farbe und schalte den Stift wieder aus, wenn sie angekommen ist. Wenn du dann den ganzen Block angklickst, malt Scratchy ein Quadrat.
+Scratchy kann den Weg, den sie läuft, auch aufmalen. Verwende dazu die grünen Blöcke im Bereich *Malstift*. Schalte den Stift ein, bevor sie losläuft, wähle eine Farbe und schalte den Stift wieder aus, wenn sie angekommen ist. Wenn du dann den ganzen Block anklickst, malt Scratchy ein Quadrat.
 {{< /imgblock >}}
 
 2. {{< imgblock "img/mehrere-quadrate.png" "Scratchy malt mehrere Quadrate" 4 >}}

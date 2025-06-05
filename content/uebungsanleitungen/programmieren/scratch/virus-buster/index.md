@@ -34,7 +34,7 @@ herunterladen.
 Um dein Spiel auch optisch ansprechend zu gestalten ist ein passender Hintergrund sehr hilfreich. Such dir einfach ein Bühnenbild aus der Bibliothek aus.
 
 ## Variablen
-In unserem Spiel möchten wir 2 Variable verwenden. Achte darauf, dass die Variablen mit einem Häckchen bei **"Für alle Figuren"** 
+In unserem Spiel möchten wir 2 Variablen verwenden. Achte darauf, dass die Variablen mit einem Häckchen bei **"Für alle Figuren"** 
 angelegt werden.
 
 {{< imgblock "img/variables.png" "Variablen für alle Figuren" >}}

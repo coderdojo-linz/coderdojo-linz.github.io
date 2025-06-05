@@ -13,7 +13,7 @@ aliases:
 - /trainingsanleitungen/scratch/scratch-moonhack.html
 ---
 
-In diesem Spiel musst du mit dem <em>Lunar Module</em> auf dem Mond landen. Aber Vorsicht, die Landung muss sanft sein und du hast nur eine begrenzte Menge an Raktentreibstoff.
+In diesem Spiel musst du mit dem <em>Lunar Module</em> auf dem Mond landen. Aber Vorsicht, die Landung muss sanft sein und du hast nur eine begrenzte Menge an Raketentreibstoff.
 
 Du kannst das fertige Spiel unter <a href="https://scratch.mit.edu/projects/236734138/" target="_blank">https://scratch.mit.edu/projects/236734138/</a> auch gleich ausprobieren.
 
@@ -101,7 +101,7 @@ Gratulation, Level 2 ist erledigt. Probiere, ob du erfolgreich am Mond landen ka
 ## Treibstoff
 
 {{< imgblock "img/treibstoff.png" "Treibstoff" >}}
-Es wäre schön, wenn wir immer beliebig viel Treibstoff verfügbar hätten. Unsere Mondlandefähre hat das - genauso wie Neil Armstrong - natürlich nicht. Machen wir unseren Mondladesimulator realistischer, indem wir die Menge an Treibstoff limitieren.
+Es wäre schön, wenn wir immer beliebig viel Treibstoff verfügbar hätten. Unsere Mondlandefähre hat das - genauso wie Neil Armstrong - natürlich nicht. Machen wir unseren Mondlandesimulator realistischer, indem wir die Menge an Treibstoff limitieren.
 
 Lege als erstes eine weitere Variable namens *Treibstoff* an.<br/>
 

@@ -37,7 +37,7 @@ Damit du später die Figuren leichter verwenden kannst, gib ihnen Namen wie *Hai
 ## Fisch bewegen
 
 {{< imgblock "img/08-move-fish.png" "Fisch bewegen" >}}
-Damit du den Fisch bewegen kannst, musst er nach links und rechts sowie oben und unten bewegt werden können.
+Damit du den Fisch bewegen kannst, muss er nach links und rechts sowie oben und unten bewegt werden können.
 
   * Wähle zuerst den Fisch aus, damit er blau umrandet ist.
   * Im Tab *Code* kannst du deinen Fisch nun bewegen. Verwende das Ereignis *Wenn Taste ... gedrückt* unter *Ereignisse*.
