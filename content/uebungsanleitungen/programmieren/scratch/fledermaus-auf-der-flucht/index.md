@@ -45,7 +45,7 @@ Platziere die Röhre au der Bühne dann noch rechts neben der Fledermaus.
 {{< /imgblock >}}
 
 {{< imgblock "img/figure-ziellinie.png" "" >}}
-Erstelle eine weitere leere Figur, welche die Ziellinie darstellt. Als Ziellinie male eine einfache vertikale schwarze Linie mittig in der Figur. Benne die Figur schließlich noch in *Ziellinie* um. Positioniere die Figur dann noch am äußersten linken Rand.
+Erstelle eine weitere leere Figur, welche die Ziellinie darstellt. Als Ziellinie male eine einfache vertikale schwarze Linie mittig in der Figur. Benenne die Figur schließlich noch in *Ziellinie* um. Positioniere die Figur dann noch am äußersten linken Rand.
 {{< /imgblock >}}
 
 ## Skripte
