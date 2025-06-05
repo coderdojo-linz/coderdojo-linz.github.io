@@ -18,7 +18,7 @@ Katzen fürchten sich normalerweise sehr vor Feuerwerk. Deswegen werden wir Scra
 {{< /imgblock >}}
 
 {{< imgblock "img/neue_figur.png" "" 2 >}}
-Für unser kleines Feuerwerk benötigen wir nur eine ganz einfache Figur, die du auch selbst malen kanns. Leg dir eine neue Figur an und nenn sie "Feuerwerk-Partikel". Wir da werden wir die Funken für unser Feuerwerk unterbringen.
+Für unser kleines Feuerwerk benötigen wir nur eine ganz einfache Figur, die du auch selbst malen kannst. Lege dir eine neue Figur an und nenne sie "Feuerwerk-Partikel". Hier werden wir die Funken für unser Feuerwerk unterbringen.
 {{< /imgblock >}}
 
 {{< imgblock "img/figur_malen.png" "" 4 >}}
@@ -62,21 +62,21 @@ Die Position, an der die Rakete explodieren soll suchen wir zufällig in der obe
 {{< /imgblock >}}
 
 {{< imgblock "img/neue_nachricht.png" "" 3 >}}
-Das neue Signal legst du ganz einfach an wenn du den "Sende ... an alle" - Block einfügtst und danach mit einem klick auf das kleine Dreieck den Punkt "Neue Nachricht" auswählst.
+Das neue Signal legst du ganz einfach an wenn du den "Sende ... an alle" - Block einfügst und danach mit einem Klick auf das kleine Dreieck den Punkt "Neue Nachricht" auswählst.
 {{< /imgblock >}}
 
 {{< imgblock "img/script_neue_rakete.png" "" 4 >}}
-Um die Rakete vorzubereiten werden wir zuerst sicherstellen, dass wir nicht irgendwelche Klon-Partikel als neue Raketen ansehen. Dazu ist die überprüfung auf "ist Klon" notwendig.
+Um die Rakete vorzubereiten werden wir zuerst sicherstellen, dass wir nicht irgendwelche Klon-Partikel als neue Raketen ansehen. Dazu ist die Überprüfung auf "ist Klon" notwendig.
 
 Für eine Explosion werden einige Partikel benötigt. Da Scratch leider nicht so viele Objekte zulässt werden wir uns mit 50 Partikel je Rakete begnügen, die in Zufällige Richtungen davonfliegen.
 
 Nachdem alle Partikel erzeugt wurden erzeugen wir noch den Knall und dann lassen wir die Partikel auseinanderfliegen. Dazu legst du wieder ein neues Signal "Feuer" an.
 {{< /imgblock >}}
 
-**Doch halt - wir haben noch eine Kleinigkeit vergessen!**
+**Doch Halt - wir haben noch eine Kleinigkeit vergessen!**
 
 {{< imgblock "img/script_neuer_klon.png" "" 4 >}}
-Wenn ein neuer Klon entsteht, sollten er auch noch initialisert werden. Zuerst sagen wir ihm, dass er ein Klon ist.
+Wenn ein neuer Klon entsteht, sollte er auch noch initialisert werden. Zuerst sagen wir ihm, dass er ein Klon ist.
 
 Danach wird noch zufällig eines der Kostüme ausgesucht, die wir am Anfang gemalt haben. (Wenn du mehr als 5 gemalt hast, kannst du hier die Zufallszahlen auch anpassen).
 
@@ -88,7 +88,7 @@ Ausserdem erhält jeder Partikel-Klon noch seine eigene Geschwindigkeit und ihm 
 {{< imgblock "img/script_feuer.png" "" 4 >}}
 Sobald wir das Signal zur Explosion empfangen haben werden die Partikel sichtbar und fliegen auseinander.
 
-Damit das ganze halbwegs ruckelfrei geht, liegt der eigentlich Zeichenteil in einem Block er "ohne Bildschirmaktualisierung" läuft.
+Damit das ganze halbwegs ruckelfrei geht, liegt der eigentliche Zeichenteil in einem Block der "ohne Bildschirmaktualisierung" läuft.
 {{< /imgblock >}}
 
 {{< imgblock "img/neuer_block.png" "" 4 >}}
