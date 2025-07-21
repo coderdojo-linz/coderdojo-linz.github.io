@@ -195,14 +195,12 @@ function loadEvents(eventsTable) {
           formattedBeginTime = '16:00';
           formattedEndTime = '18:00';
 
-          if (formattedDate === '06.06.2025') {
-            if (
-              event.location.indexOf('Leonding') >= 0 ||
-              event.location.indexOf('Lentos') >= 0
-            ) {
-              formattedBeginTime = '15:00';
-              formattedEndTime = '17:00';
-            }
+          if (
+            event.location.indexOf('Leonding') >= 0 ||
+            event.location.indexOf('Lentos') >= 0
+          ) {
+            formattedBeginTime = '15:00';
+            formattedEndTime = '17:00';
           }
         }
 
