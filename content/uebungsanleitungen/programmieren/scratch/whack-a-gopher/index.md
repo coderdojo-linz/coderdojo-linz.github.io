@@ -50,7 +50,7 @@ Das initiale Erdloch stört allerdings ein bisschen, weswegen wir die Figur sich
 
 ## Gopher programmieren 
 
-Jetzt möchten wir das jede Sekunde ein Gopher aus einem anderen Erdlock kuckt. Du kannst statt dem Gopher natürlich andere Kostüme verwenden. Wenn du die Gopher aus 
+Jetzt möchten wir das jede Sekunde ein Gopher aus einem anderen Erdloch kuckt. Du kannst statt dem Gopher natürlich andere Kostüme verwenden. Wenn du die Gopher aus 
 dem Beispiel verwenden möchtest kannst du sie [hier](img/gopher.sprite3) herunter laden. 
 Wenn du die Gopher Figur geladen hast, sollte sie so aussehen: 
 
@@ -63,7 +63,7 @@ richtige X und Y-Position zu setzen.
 {{< /imgblock >}}
 
 {{< imgblock "img/gopher-kostuem-wechseln.png" "Kostüm wechseln" 8 >}}
-Wenn du nun auf die grüne Flagge des Spiels klickst, sollte die Figur jede Sekunde auf einem anderen Erdloch erscheinen. 
+Wenn du nun auf die grüne Flagge des Spiels klickst, sollte die Figur jede Sekunde aus einem anderen Erdloch erscheinen. 
 
 Als nächstes lassen wir unsere Figur jede Sekunde das Kostüm wechseln und die Figur sich kurz verstecken bevor sie neu erscheint.
 {{< /imgblock >}}
@@ -79,9 +79,9 @@ steht und lassen ihn in einer Wiederholung immer an die Stelle des Mauszeigers g
 Immer wenn mit der Maus geklickt wird, möchten wir mit dem Besen zuschlagen um die Gopher zu verjagen. Die Anzahl der Treffer merken wir uns in einer Variable namens "Treffer". 
 {{< /imgblock >}}
 
-Jetzt ist das Spiel fertig und du kannst Treffer sammeln, indem du die Gopher mit dem Besen erwischt. Möchtest du noch Erweiterungen einabuen? Hier einige Ideen: 
+Jetzt ist das Spiel fertig und du kannst Treffer sammeln, indem du die Gopher mit dem Besen erwischt. Möchtest du noch Erweiterungen einbauen? Hier einige Ideen: 
 * Wenn der Gopher in einem bestimmten Kostüm erscheint kann es Minuspunkte bringen ihn zu klicken. 
 * Den Gopher im Flash Kostüm kannst du schneller machen, sodass er schwerer zu erwischen ist. 
-* Lass mehrere Gopher gleichzeitig erscheinen mit der "Klone erzeugen" funktionalität
+* Lass mehrere Gopher gleichzeitig erscheinen mit der "Klone erzeugen" Funktionalität
 
 Du kannst das fertige Projekt unter [https://scratch.mit.edu/projects/308852736/](https://scratch.mit.edu/projects/308852736/) ausprobieren.

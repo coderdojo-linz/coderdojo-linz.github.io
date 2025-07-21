@@ -173,9 +173,9 @@ Das Entfernen der Bubbles können wir gleich in unsere Hauptschleife einbauen:
 
 ```python
 # HAUPTSCHLEIFE
-while true:
+while True:
     if randint(1, 10) == 1:
-    erzeuge_bubble()
+        erzeuge_bubble()
     bewege_bubbles()
     entferne_bubbles()
     window.update()
@@ -216,9 +216,9 @@ Um diese Funktion zu testen, bauen wir eine Variable score, die die Gesamtpunkte
 ```python
 # HAUPTSCHLEIFE
 score = 0
-while true:
+while True:
     if randint(1, 10) == 1:
-    erzeuge_bubble()
+        erzeuge_bubble()
     bewege_bubbles()
     entferne_bubbles()
     score += treffer()

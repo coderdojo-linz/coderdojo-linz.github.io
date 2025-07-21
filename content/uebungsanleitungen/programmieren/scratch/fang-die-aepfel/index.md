@@ -53,9 +53,9 @@ Damit sich der Knopf wie ein Startknopf verhält, benötigt er folgende Scripte.
 ## Schritt 5: Den Apfel programmieren
 
 {{< imgblock "img/apfel_scaled.jpg" "Scripte des Apfels" 8 >}}
-Bei den Scripten des Apfels findest du einige (rosa) Blöcke aus der Kathegorie "Meine Blöcke". Diese Blöcke verwendet man immer dann, wenn man die selbe Folge an Blöcken an mehreren Stellen benötigt. Das hat den Vorteil, dass man bei Änderungen nur an einer Stelle die Änderung machen muss. Da hält deine Scripte übersichtlich und wartbar.
+Bei den Scripten des Apfels findest du einige (rosa) Blöcke aus der Kathegorie "Meine Blöcke". Diese Blöcke verwendet man immer dann, wenn man die selbe Folge an Blöcken an mehreren Stellen benötigt. Das hat den Vorteil, dass man bei Änderungen nur an einer Stelle die Änderung machen muss. Das hält deine Scripte übersichtlich und wartbar.
 
-Deine eigene Blöcke erstellst du, indem du die Kathegorie "Meins Blöcke" auswählst und dann auf den Knopf "Neuer Block" klickst. Jetzt musst Du deinem Block nur noch einen Namen geben und die Blöcke dranhängen die ausgeführt werden sollen, sobald dein Block aufgerufen wird.
+Deine eigene Blöcke erstellst du, indem du die Kategorie "Meine Blöcke" auswählst und dann auf den Knopf "Neuer Block" klickst. Jetzt musst Du deinem Block nur noch einen Namen geben und die Blöcke dranhängen die ausgeführt werden sollen, sobald dein Block aufgerufen wird.
 
 Im folgenden Bild siehst du die Scripte des Apfels.
 {{< /imgblock >}}
