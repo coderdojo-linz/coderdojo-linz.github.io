@@ -1,6 +1,6 @@
 ---
 title: "Beispiel-Schaltungen"
-description: "Hier sind Beschreibungen mit SChaltungen mit dem ESP8266 zu finden."
-weight: 2
+description: "Einige Beispiel-Schaltungen mit dem ESP8266"
+weight: 5
 img: "beispiel-schaltungen.jpg"
 ---
