@@ -5,11 +5,15 @@
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/</loc>
     <lastmod>2020-05-17T08:00:19+02:00</lastmod>
   </url><url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-huzzah/start/</loc>
+  </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/coder-dojo-bastel-programm/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/computational-thinking/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-projektstart/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/</loc>
+  </url><url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/datenblatt/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/start-elektronik/</loc>
   </url><url>
@@ -17,7 +21,7 @@
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/python/erste-schritte/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/esp8266-startertutorial/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-startertutorial/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/</loc>
   </url><url>
@@ -45,7 +49,7 @@
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/schnell-start-anleitung/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-huzzah/micropython/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/blinkschaltung/</loc>
   </url><url>
@@ -57,7 +61,9 @@
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/erste-schritte-mit-css/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/esp8266-datenblatt/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/</loc>
+  </url><url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-datenblatt/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/grundlagen-loeten/</loc>
   </url><url>
@@ -70,6 +76,8 @@
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/turm/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/pimoroni-inventors-kit/</loc>
+  </url><url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/pinout/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/sicherheitshinweise/</loc>
   </url><url>
@@ -90,11 +98,15 @@
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/csharp/</loc>
     <lastmod>2020-05-17T08:03:59+02:00</lastmod>
   </url><url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-huzzah/</loc>
+  </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-start/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/nodejs-socketio-chat/</loc>
+  </url><url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/start/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/mini-wetterstation/</loc>
   </url><url>
@@ -104,7 +116,7 @@
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/esp8266-pinout-diagramm/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-pinout-diagramm/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/grove-inventor-kit/</loc>
   </url><url>
@@ -129,7 +141,7 @@
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-uno-pinout/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-startertutorial/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-projektstart/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/fang-mich/</loc>
   </url><url>
@@ -151,6 +163,8 @@
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/netbeans-cheatsheet/</loc>
   </url><url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/</loc>
+  </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/raspberry-pi/befehle/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebungsanleitungen/uebung-3/</loc>
@@ -159,13 +173,17 @@
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-nanov3-start/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-datenblatt/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/</loc>
+  </url><url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-esp12e-modul/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/erstes-plugin/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/grundlagen/elektronik-basteln-fuer-anfaenger/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/grundlagen-bauelemente/</loc>
+  </url><url>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-full/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebungsanleitungen/loesungen-uebung-1-2-3/</loc>
   </url><url>
@@ -187,10 +205,6 @@
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/uebungsanleitungen/conrad-downloads/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-esp12e-modul/</loc>
-  </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-pinout-diagramm/</loc>
-  </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/loetworkshop-erstellen/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-with-arduino/</loc>
@@ -207,29 +221,25 @@
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/miraculix-teil-2/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/nodemcu-lua-amica-v2-startertutorial/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/nodemcu-lua-amica-v2-startertutorial/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/welcome-listener/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/microbit-temperaturmessung/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/nodemcu-lua-amica-v2-datenblatt/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/nodemcu-lua-amica-v2-datenblatt/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-servo/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/miraculix-teil-3/</loc>
   </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/nodemcu-lua-amica-v2-pinout-diagramm/</loc>
-  </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/adafruit-breakout/</loc>
+    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/nodemcu-lua-amica-v2-pinout-diagramm/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/arduino/arduino-portable/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/esp-mqtt/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/teleporter/</loc>
-  </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/adafruit-micropython/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/adafruit-remote-control/</loc>
   </url><url>
@@ -541,8 +551,6 @@
     <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/uebungsanleitungen/spielwuerfel/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/sponsoring/</loc>
-  </url><url>
-    <loc>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/</loc>
   </url><url>
     <loc>https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/sterne-fangen/</loc>
   </url><url>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ESP-01 on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/</link>
+    <description>Recent content in ESP-01 on CoderDojo Linz</description>
+    <generator>Hugo</generator>
+    <language>de-AT</language>
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Esp8266 Startertutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-startertutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-startertutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esp8266 Datenblatt</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-datenblatt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-datenblatt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Esp8266 Pinout Diagramm</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-pinout-diagramm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-pinout-diagramm/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

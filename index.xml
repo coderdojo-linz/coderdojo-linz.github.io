@@ -9,6 +9,13 @@
     <lastBuildDate>Mon, 01 Jun 2020 05:28:34 +0200</lastBuildDate>
     <atom:link href="https://linz.coderdojo.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Adafruit HUZZAH Projektstart</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-huzzah/start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-huzzah/start/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>CoderDojo Bastel Programm</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/coder-dojo-bastel-programm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -23,11 +30,11 @@
       <description></description>
     </item>
     <item>
-      <title>D1 Mini Projektstart</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-projektstart/</link>
+      <title>Datenblatt</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/datenblatt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-projektstart/</guid>
-      <description></description>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/datenblatt/</guid>
+      <description>&lt;p&gt;Hier findest du das Datenblatt zum Wemos LOLIN D1 mini.&lt;/p&gt;&#xA;&lt;embed src= &#34;D1_Mini_NodeMCU-Datenblatt.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; /&gt;&#xA;&lt;p&gt;Wir haben dieses Dokument von AZ-Delivery bezogen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Elektronik Programm</title>
@@ -52,9 +59,9 @@
     </item>
     <item>
       <title>Esp8266 Startertutorial</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/esp8266-startertutorial/</link>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-startertutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/esp8266-startertutorial/</guid>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-startertutorial/</guid>
       <description></description>
     </item>
     <item>
@@ -128,6 +135,13 @@
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Adafruit HUZZAH ESP8266 MicroPython</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-huzzah/micropython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/adafruit-huzzah/micropython/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Blinkschaltung</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/elektronik/schaltungsbeispiele/blinkschaltung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -157,9 +171,9 @@
     </item>
     <item>
       <title>Esp8266 Datenblatt</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/esp8266-datenblatt/</link>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-datenblatt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/esp8266-datenblatt/</guid>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-datenblatt/</guid>
       <description></description>
     </item>
     <item>
@@ -203,6 +217,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/erweiterungen/pimoroni-inventors-kit/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Pinout</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/pinout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/pinout/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;D1-Mini-NodeMCU-PinOut.jpg&#34; alt=&#34;D1 Mini Pinout Diagramm&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wir haben dieses Dokument von Random Nerd Tutorials bezogen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sicherheitshinweise</title>
@@ -254,6 +275,13 @@
       <description>&lt;h1 id=&#34;chat-mit-nodejs-und-socketio&#34;&gt;Chat mit Node.js und Socket.io&lt;/h1&gt;&#xA;&lt;h2 id=&#34;ziel-der-übung&#34;&gt;Ziel der Übung&lt;/h2&gt;&#xA;&lt;p&gt;In dieser Übung lernst du, wie du eine Chat-Anwendung mit &lt;a href=&#34;https://de.wikipedia.org/wiki/Client-Server-Modell&#34; title=&#34;Client-Server-Modell auf Wikipedia nachlesen&#34; target=&#34;_blank&#34;&gt;Server- und Clientteil&lt;/a&gt; baust. Mehrere Benutzer können sich im Chat anmelden. Wenn jemand etwas sendet sollen alle anderen Benutzer das sofort sehen.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Wichtig: Diese Übung geht davon aus, dass du die Übung &lt;a href=&#34;../nodejs-webserver&#34;&gt;Einen Node.js Webserver programmieren&lt;/a&gt; gemacht hast und diese bei dir auf deinem Computer funktioniert.&lt;/strong&gt; Mache hier erst weiter, wenn du die vorbereitende Übung erfolgreich abgeschlossen hast.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>D1 Mini Startertutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/start/</guid>
+      <description>&lt;p&gt;Hier findest du ein Startertutorial zum Wemos LOLIN D1 mini.&lt;/p&gt;&#xA;&lt;embed src= &#34;D1-Mini-NodeMCU_Startertutorial.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; /&gt;&#xA;&lt;p&gt;Wir haben dieses Dokument von AZ-Delivery bezogen.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>D1 Mini Wetterstation</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/mini-wetterstation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -276,9 +304,9 @@
     </item>
     <item>
       <title>Esp8266 Pinout Diagramm</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/esp8266-pinout-diagramm/</link>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-pinout-diagramm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/esp8266-pinout-diagramm/</guid>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-01/esp8266-pinout-diagramm/</guid>
       <description></description>
     </item>
     <item>
@@ -345,11 +373,11 @@
       <description></description>
     </item>
     <item>
-      <title>D1 Mini Startertutorial</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-startertutorial/</link>
+      <title>D1 Mini Projektstart</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-projektstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-startertutorial/</guid>
-      <description></description>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-projektstart/</guid>
+      <description>&lt;embed src= &#34;Projektstart%20mit%20Arduino%20und%20ESP.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; /&gt;</description>
     </item>
     <item>
       <title>Fang Mich</title>
@@ -450,11 +478,11 @@
       <description></description>
     </item>
     <item>
-      <title>D1 Mini Datenblatt</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-datenblatt/</link>
+      <title>D1 Mini ESP12E Modul</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-esp12e-modul/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-datenblatt/</guid>
-      <description></description>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-esp12e-modul/</guid>
+      <description>&lt;p&gt;Das im D1 Mini verbaute ESP12E Modul hat folgende Pinbelegung:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;ESP12E-Modul.jpg&#34; alt=&#34;D1 Mini ESP12E Modul&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dein erstes Plugin</title>
@@ -476,6 +504,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/microbit/grundlagen/grundlagen-bauelemente/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Komplettanleitung D1-Mini</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-full/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-full/</guid>
+      <description>&lt;h1 id=&#34;komplettanleitung-d1-mini&#34;&gt;Komplettanleitung D1-Mini&lt;/h1&gt;&#xA;&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;&#xA;&lt;p&gt;Lade hier die komplette Anleitung und das Beispielprojekt herunter:&lt;/p&gt;&#xA;&lt;p&gt;&lt;p class=&#34;text-center&#34;&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;D1mini_HTU_OLED_Projekt.zip&#34; target=&#34;_blank&#34;&gt;Download Projektdateien&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p class=&#34;text-center&#34;&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;D1mini_HTU_OLED.pdf&#34; target=&#34;_blank&#34;&gt;Download PDF Anleitung&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;anleitung&#34;&gt;Anleitung&lt;/h2&gt;&#xA;&lt;embed src= &#34;D1mini_HTU_OLED.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; /&gt;</description>
     </item>
     <item>
       <title>Lösungen zu Übungen 1, 2 &amp; 3</title>
@@ -548,20 +583,6 @@
       <description></description>
     </item>
     <item>
-      <title>D1 Mini ESP12E Modul</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-esp12e-modul/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-esp12e-modul/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>D1 Mini Pinout Diagramm</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-pinout-diagramm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/d1-mini-pinout-diagramm/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Lötworkshop erstellen</title>
       <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/loeten/loetworkshop-erstellen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -619,9 +640,9 @@
     </item>
     <item>
       <title>NodeMCU LUA Amica V2 Startertutorial</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/nodemcu-lua-amica-v2-startertutorial/</link>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/nodemcu-lua-amica-v2-startertutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/nodemcu-lua-amica-v2-startertutorial/</guid>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/nodemcu-lua-amica-v2-startertutorial/</guid>
       <description></description>
     </item>
     <item>
@@ -640,9 +661,9 @@
     </item>
     <item>
       <title>NodeMCU LUA Amica V2 Datenblatt</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/nodemcu-lua-amica-v2-datenblatt/</link>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/nodemcu-lua-amica-v2-datenblatt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/nodemcu-lua-amica-v2-datenblatt/</guid>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/nodemcu-lua-amica-v2-datenblatt/</guid>
       <description></description>
     </item>
     <item>
@@ -661,16 +682,9 @@
     </item>
     <item>
       <title>NodeMCU LUA Amica V2 Pinout Diagramm</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/nodemcu-lua-amica-v2-pinout-diagramm/</link>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/nodemcu-lua-amica-v2-pinout-diagramm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/nodemcu-lua-amica-v2-pinout-diagramm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Adafruit HUZZAH ESP8266 Breakout</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/adafruit-breakout/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/adafruit-breakout/</guid>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/nodemcu-lua-amica-v2/nodemcu-lua-amica-v2-pinout-diagramm/</guid>
       <description></description>
     </item>
     <item>
@@ -693,13 +707,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/teleporter/</guid>
       <description>&lt;h1 id=&#34;minecraft-teleporter&#34;&gt;Minecraft Teleporter&lt;/h1&gt;&#xA;&lt;p&gt;Dieses plugin wurde mit der Entwicklungsumgebung &lt;a href=&#34;https://www.jetbrains.com/idea/download&#34; target=&#34;_blank&#34;&gt;IntelliJ&lt;/a&gt;&#xA;der Firma JetBrains geschrieben. &lt;a href=&#34;https://www.jetbrains.com/idea/download&#34; target=&#34;_blank&#34;&gt;IntelliJ&lt;/a&gt; unterstützt die&#xA;Entwicklung von Minecraft Plugins sehr gut.&lt;/p&gt;&#xA;&lt;h2 id=&#34;vorbereitungen&#34;&gt;Vorbereitungen&lt;/h2&gt;&#xA;&lt;p&gt;Zuerst ist es notwending die Entwicklungsumgebung &lt;a href=&#34;https://www.jetbrains.com/idea/download&#34; target=&#34;_blank&#34;&gt;herunterzuladen&lt;/a&gt; und zu installieren. Verwendet&#xA;hierfür die &amp;ldquo;Community Edition&amp;rdquo;. Wenn das geschehen ist, bitte das Modul für Minecraft hinzufügen.&lt;/p&gt;&#xA;&lt;p&gt;Dafür bitte unter &amp;ldquo;File&amp;rdquo; -&amp;gt; &amp;ldquo;Settings&amp;rdquo; die Einstellungen öffnen und danach &amp;ldquo;Plugins&amp;rdquo; klicken.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;     &#xA;    &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;row&#34;&gt;&#xA;    &lt;div class=&#34;col&#34;&gt;&#xA;        &lt;p&gt;&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;col-12 col-md-12&#34;&gt;&#xA;    &lt;img src=&#34;https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/plugins/teleporter/img/intellij_install_plugin1.PNG&#34; alt=&#34;(.Get 1)&#34; class=&#34;mx-auto &#34; style=&#34;display: block; width: auto&#34; /&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Danach könnt ihr mit &amp;ldquo;Browse repositories&amp;rdquo; und dem Suchfeld nach &amp;ldquo;Minecraft&amp;rdquo; suchen.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Adafruit HUZZAH ESP8266 MicroPython</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/adafruit-micropython/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/start-esp/adafruit-micropython/</guid>
-      <description></description>
     </item>
     <item>
       <title>Adafruit HUZZAH ESP8266 Remote Control</title>

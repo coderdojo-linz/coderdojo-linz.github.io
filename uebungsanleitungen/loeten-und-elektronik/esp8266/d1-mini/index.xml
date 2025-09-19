@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D1 mini on CoderDojo Linz</title>
+    <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/</link>
+    <description>Recent content in D1 mini on CoderDojo Linz</description>
+    <generator>Hugo</generator>
+    <language>de-AT</language>
+    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Datenblatt</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/datenblatt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/datenblatt/</guid>
+      <description>&lt;p&gt;Hier findest du das Datenblatt zum Wemos LOLIN D1 mini.&lt;/p&gt;&#xA;&lt;embed src= &#34;D1_Mini_NodeMCU-Datenblatt.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; /&gt;&#xA;&lt;p&gt;Wir haben dieses Dokument von AZ-Delivery bezogen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pinout</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/pinout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/pinout/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;D1-Mini-NodeMCU-PinOut.jpg&#34; alt=&#34;D1 Mini Pinout Diagramm&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Wir haben dieses Dokument von Random Nerd Tutorials bezogen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>D1 Mini Startertutorial</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/start/</guid>
+      <description>&lt;p&gt;Hier findest du ein Startertutorial zum Wemos LOLIN D1 mini.&lt;/p&gt;&#xA;&lt;embed src= &#34;D1-Mini-NodeMCU_Startertutorial.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; /&gt;&#xA;&lt;p&gt;Wir haben dieses Dokument von AZ-Delivery bezogen.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>D1 Mini Projektstart</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-projektstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-projektstart/</guid>
+      <description>&lt;embed src= &#34;Projektstart%20mit%20Arduino%20und%20ESP.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; /&gt;</description>
+    </item>
+    <item>
+      <title>D1 Mini ESP12E Modul</title>
+      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-esp12e-modul/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/d1-mini/d1-mini-esp12e-modul/</guid>
+      <description>&lt;p&gt;Das im D1 Mini verbaute ESP12E Modul hat folgende Pinbelegung:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;ESP12E-Modul.jpg&#34; alt=&#34;D1 Mini ESP12E Modul&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
