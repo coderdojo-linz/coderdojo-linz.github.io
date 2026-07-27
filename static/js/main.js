@@ -126,10 +126,10 @@ function loadEventsOverview(eventsTable) {
         a.date < b.date
           ? -1
           : a.date > b.date
-          ? 1
-          : a.type.toLowerCase() === 'coderdojo'
-          ? -1
-          : 1
+            ? 1
+            : a.type.toLowerCase() === 'coderdojo'
+              ? -1
+              : 1,
       );
 
       data.slice(0, 3).forEach(function (event) {
@@ -163,7 +163,7 @@ function loadEventsOverview(eventsTable) {
       });
 
       $('.loadingText').hide();
-    }
+    },
   );
 }
 
@@ -177,10 +177,10 @@ function loadEvents(eventsTable) {
         a.date < b.date
           ? -1
           : a.date > b.date
-          ? 1
-          : a.type.toLowerCase() === 'coderdojo'
-          ? -1
-          : 1
+            ? 1
+            : a.type.toLowerCase() === 'coderdojo'
+              ? -1
+              : 1,
       );
 
       data.forEach(function (event) {
@@ -201,6 +201,9 @@ function loadEvents(eventsTable) {
           ) {
             formattedBeginTime = '15:00';
             formattedEndTime = '17:00';
+          } else if (event.location.indexOf('hackathon' >= 0)) {
+            formattedBeginTime = '';
+            formattedEndTime = '';
           }
         }
 
@@ -212,7 +215,7 @@ function loadEvents(eventsTable) {
               })
               .reduce(function (min, val) {
                 return min && min < val ? min : val;
-              }, null)
+              }, null),
           ).format('HH:mm');
 
           formattedEndTime = moment(
@@ -222,7 +225,7 @@ function loadEvents(eventsTable) {
               })
               .reduce(function (max, val) {
                 return max && max > val ? max : val;
-              }, null)
+              }, null),
           ).format('HH:mm');
         }
 
@@ -240,7 +243,7 @@ function loadEvents(eventsTable) {
           formattedDate +
           '<br />' +
           formattedBeginTime +
-          ' - ' +
+          (formattedBeginTime ? ' - ' : '') +
           formattedEndTime +
           '</div>';
         row += '</td>';
@@ -289,7 +292,8 @@ function loadEvents(eventsTable) {
             formattedDate !== '07.09.2023' &&
             formattedDate !== '08.09.2023' &&
             formattedDate !== '09.09.2023' &&
-            formattedDate !== '10.09.2023'
+            formattedDate !== '10.09.2023' &&
+            formattedDate !== '11.09.2026'
           ) {
             row += '<p>Keine Anmeldung erforderlich.</p>';
           }
@@ -405,7 +409,7 @@ function loadEvents(eventsTable) {
           selectedWorkshop.scrollIntoView();
         }
       }
-    }
+    },
   );
 }
 
@@ -439,7 +443,7 @@ function loadRegistrationEvents() {
         .filter(
           (item) =>
             item.type.toLowerCase() === 'coderdojo' &&
-            new moment(item.date).format('YYYY-MM-DD') != '2019-03-01'
+            new moment(item.date).format('YYYY-MM-DD') != '2019-03-01',
         )
         .slice(0, 4)
         .forEach(function (item) {
@@ -450,17 +454,17 @@ function loadRegistrationEvents() {
               new moment(item.date).format('DD. MMMM YYYY') +
               ' - ' +
               (item.location ? item.location : 'Wissensturm') +
-              '</option>'
+              '</option>',
           );
         });
 
       let currentYear = new moment().year();
       for (let i = currentYear - 6; i >= currentYear - 18; i--) {
         $('#yearOfBirth').append(
-          '<option value="' + i.toString() + '">' + i.toString() + '</option>'
+          '<option value="' + i.toString() + '">' + i.toString() + '</option>',
         );
       }
-    }
+    },
   );
 }
 
@@ -502,7 +506,7 @@ $(document).ready(function () {
         }
         form.classList.add('was-validated');
       },
-      false
+      false,
     );
   });
 });
