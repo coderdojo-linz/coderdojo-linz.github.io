@@ -14,6 +14,7 @@ jobs:
   - checkout: self
     persistCredentials: 'true'
     clean: 'true'
+    fetchDepth: 0
     path: src
     displayName: 'Checkout source'
 
@@ -79,11 +80,13 @@ jobs:
     displayName: 'Copy readme.md to temp'
     
   - script: |
+      set -euo pipefail
+      git reset --hard
       git clean -fxd
-      git checkout master
+      git fetch origin +refs/heads/master:refs/remotes/origin/master
+      git checkout -B master origin/master
       rm -rf *
-      rm .gitmodules
-      rm .gitignore
+      rm -f .gitmodules .gitignore
       git clean -fxd
     displayName: 'Switch to master branch'
 
@@ -95,9 +98,14 @@ jobs:
     displayName: 'Copy build results to master branch'
     
   - script: |
+      set -euo pipefail
       git add --all .
-      git commit -m 'Update website'
-      git push origin master
+      if git diff --cached --quiet; then
+        echo 'No changes to publish'
+      else
+        git commit -m 'Update website'
+        git push origin master
+      fi
     displayName: 'Git push master branch'
 
 - job: BuildPreviewSite
