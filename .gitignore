@@ -6,3 +6,4 @@ _site/
 .vscode/
 obj/
 .hugo_build.lock
+.env
