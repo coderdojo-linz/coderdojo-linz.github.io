@@ -46,6 +46,7 @@ jobs:
       cleanTargetFolder: true
       overWrite: true
     displayName: 'Copy build result to temp'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
 
   - task: CopyFiles@2
     inputs:
@@ -54,6 +55,7 @@ jobs:
       cleanTargetFolder: false
       overWrite: true
     displayName: 'Copy .nojekyll to temp'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
 
   - task: CopyFiles@2
     inputs:
@@ -62,6 +64,7 @@ jobs:
       cleanTargetFolder: false
       overWrite: true
     displayName: 'Copy CNAME to temp'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
 
   - task: CopyFiles@2
     inputs:
@@ -70,6 +73,7 @@ jobs:
       cleanTargetFolder: false
       overWrite: true
     displayName: 'Copy azure-pipelines to temp'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
 
   - task: CopyFiles@2
     inputs:
@@ -78,6 +82,7 @@ jobs:
       cleanTargetFolder: false
       overWrite: true
     displayName: 'Copy readme.md to temp'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
     
   - script: |
       set -euo pipefail
@@ -89,6 +94,7 @@ jobs:
       rm -f .gitmodules .gitignore
       git clean -fxd
     displayName: 'Switch to master branch'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
 
   - task: CopyFiles@2
     inputs:
@@ -96,6 +102,7 @@ jobs:
       targetFolder: .
       overWrite: true
     displayName: 'Copy build results to master branch'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
     
   - script: |
       set -euo pipefail
@@ -107,6 +114,7 @@ jobs:
         git push origin master
       fi
     displayName: 'Git push master branch'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
 
 - job: BuildPreviewSite
   displayName: 'Build Preview Site'
@@ -149,6 +157,7 @@ jobs:
   - script: git clone https://$(GitHubPAT)@github.com/coderdojo-linz/$(target_repository).github.io.git dest
     workingDirectory: $(Agent.BuildDirectory)
     displayName: 'Clone destination preview repo'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
 
   - task: CopyFiles@2
     inputs:
@@ -156,10 +165,12 @@ jobs:
       targetFolder: $(Agent.BuildDirectory)/dest
       overWrite: true
     displayName: 'Copy preview build result to destination'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
     
   - script: echo -e linz-preview.coderdojo.net'\n' > CNAME
     workingDirectory: $(Agent.BuildDirectory)/dest
     displayName: 'Create preview CNAME file for GitHub Pages'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
 
   - script: |
       git add --all .
@@ -167,3 +178,4 @@ jobs:
       git push https://$(GitHubPAT)@github.com/coderdojo-linz/$(target_repository).github.io.git
     workingDirectory: $(Agent.BuildDirectory)/dest
     displayName: 'Git push preview to destination repo'
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
