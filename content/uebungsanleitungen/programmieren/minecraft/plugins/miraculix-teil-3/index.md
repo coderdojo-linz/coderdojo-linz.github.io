@@ -235,7 +235,7 @@ public class GetafixPlugin extends JavaPlugin {
 
 
 ## Kurzversion für Profis
-1. Entweder verwendest du dein altes Projekt ``GetafixPlugin``, oder du erstellst ein neues Projekt (siehe auch [hier](/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html)) 
+1. Entweder verwendest du dein altes Projekt ``GetafixPlugin``, oder du erstellst ein neues Projekt (siehe auch [hier](/uebungsanleitungen/programmieren/minecraft/plugins/netbeans-cheatsheet/))
 1. Füge eine neue Klasse namens ``DamageListener`` und  stelle sicher, dass nach dem Klassennamen ``implements Listener`` steht.
 1. Füge eine Methode ``onDamageEvent`` mit der Annotation ``@EventHandler`` hinzu, mit dem ``event`` Parameter vom Typ ``EntityDamageEvent``.
 ```java

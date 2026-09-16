@@ -11,7 +11,7 @@ aliases:
 
 # Zahlen raten mit Python Teil 2
 
-Kennst du den [ersten Teil](python-zahlenraten.html), wo wir ein Programm entwickelt haben,
+Kennst du den [ersten Teil](/uebungsanleitungen/programmieren/python/zahlenraten/), wo wir ein Programm entwickelt haben,
 das sich eine Zahl ausdenkt und den Spieler erraten lässt?
 Jetzt wollen wir die Rollen tauschen und den Computer eine vom Menschen gedachte Zahl erraten lassen.
 Der Computer fragt zuerst, wie groß die gedachte Zahl höchstens sein kann, und beginnt dann

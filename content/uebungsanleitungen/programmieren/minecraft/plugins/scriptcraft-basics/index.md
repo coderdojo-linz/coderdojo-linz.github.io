@@ -17,7 +17,7 @@ aliases:
 
 Du brauchst für diese Übungen einen Minecraft Server mit Scriptcraft. **Wenn du keine Erfahrung bzgl. Konfiguration von Computern, Java etc. hast, komm ins CoderDojo und bitte eine Mentorin, dir einen solchen Server zur Verfügung zu stellen.** Ansonsten hast du folgende Möglichkeiten:
 
-* Folge der [Anleitung auf unserer Homepage](07_spigot_scriptcraft_docker.html)
+* Folge der [Anleitung auf unserer Homepage](/uebungsanleitungen/programmieren/minecraft/server/scriptcraft-installieren/)
 * Installiere Scriptcraft lokal auf deinem Computer ([Installationsanleitung in Englisch](https://github.com/walterhiggins/ScriptCraft/blob/master/README.md))
 
 Zum Programmieren von JavaScript brauchst du einen Texteditor. Empfehlenswert ist ein Editor, der speziell für Softwareentwicklung gedacht ist. Hier einige Links zu kostenlosen Editoren, mit denen du JavaScript gut schreiben kannst. Falls du nicht sicher bist, welchen du nehmen sollst, nimm gleich den ersten. Im Lauf der Zeit kannst du mit verschiedenen experimentieren und dich für den entscheiden, der dir am besten gefällt.

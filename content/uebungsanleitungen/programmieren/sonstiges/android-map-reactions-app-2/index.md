@@ -7,13 +7,13 @@ img: "map_reactions_app.png"
 
 # Android Map Reactions App, Teil 2
 
-Im [ersten Teil dieser Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/) hast du eine Android App in Java programmiert. In dieser App kann man bereits einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem [Comic Strip](https://xkcd.com/2260/). In diesem Teil werden einige Verbesserungen beschrieben, die du noch machen kannst. Diese beinhalten unter anderem das Styling der App, ein paar Verbesserungen des Codes selbst und die App sollte auch etwas stabiler werden.
+Im [ersten Teil dieser Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-1/) hast du eine Android App in Java programmiert. In dieser App kann man bereits einen Satz eingeben, der dann (phonetisch auf Orte übersetzt) als Route auf einer Karte angezeigt wird. Die Idee dazu basiert auf diesem [Comic Strip](https://xkcd.com/2260/). In diesem Teil werden einige Verbesserungen beschrieben, die du noch machen kannst. Diese beinhalten unter anderem das Styling der App, ein paar Verbesserungen des Codes selbst und die App sollte auch etwas stabiler werden.
 
 {{< imgblock "https://imgs.xkcd.com/comics/reaction_maps.png" "XKCD's Reaction Maps comic strip" >}}{{< /imgblock >}}
 
 ## Voraussetzungen
 
-- Du solltest den [ersten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/) abgeschlossen haben.
+- Du solltest den [ersten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-1/) abgeschlossen haben.
 - Ein Smartphone mit Android 5.0 oder höher ([So findest du die Android Version deines Smartphones](https://support.google.com/android/answer/7680439?hl=de)). Alternativ kannst du auch einen [Emulator](https://developer.android.com/studio/run/emulator) verwenden.
 - Ein Kabel um dein Smartphone mit dem Computer zu verbinden (falls du dein Smartphone verwendest).
 - [Android Studio](https://developer.android.com/studio/install)
@@ -100,7 +100,7 @@ if (StringUtils.isBlank(phrase) || !StringUtils.isAlphaSpace(phrase)) {
 
 ## Asynchroner HTTP Request
 
-Wie bereits [im ersten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app/) beschrieben, setzt die Methode `roadManager.getRoad(wayPoints);` einen HTTP Request am Main Thread ab. Das bedeutet, dass diese Methode den Main Thread, und somit die gesamte App, blockiert bis der Request abgeschlossen ist. Deshalb waren auch die folgenden beiden Zeilen nötig.
+Wie bereits [im ersten Teil der Anleitung](/uebungsanleitungen/programmieren/sonstiges/android-map-reactions-app-1/) beschrieben, setzt die Methode `roadManager.getRoad(wayPoints);` einen HTTP Request am Main Thread ab. Das bedeutet, dass diese Methode den Main Thread, und somit die gesamte App, blockiert bis der Request abgeschlossen ist. Deshalb waren auch die folgenden beiden Zeilen nötig.
 ```java
 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 StrictMode.setThreadPolicy(policy);

@@ -436,7 +436,7 @@ Hier findest du den gesamten Source Code:
 
 - [index.html](source/index.html)
 - [sketch.js](source/sketch.js)
-- [style.js](source/style.js)
+- [style.css](source/style.css)
 - [transformer.js](source/transformer.js)
 - img
   - [asteroid.png](source/img/asteroid.png)

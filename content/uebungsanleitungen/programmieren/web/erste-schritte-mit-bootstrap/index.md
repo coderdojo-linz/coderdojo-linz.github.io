@@ -42,7 +42,7 @@ Wenn ihr die Webseite index.html darin öffnet, sieht das dann so aus:
 
 ## Bootstrap hinzufügen
 
-In der Übung [CSS Advanced Styles](css-advanced-styles.html) haben wir gelernt, wie wir selbst CSS Styles schreiben, um das HTML hübscher zu gestalten.
+In der Übung [CSS Advanced Styles](/uebungsanleitungen/programmieren/web/css-advanced-styles/) haben wir gelernt, wie wir selbst CSS Styles schreiben, um das HTML hübscher zu gestalten.
 
 In dieser Übung schreiben wir die Styles nicht selbst, sondern verwenden dazu das [Bootstrap](https://getbootstrap.com/) Framework in der Version 4.4. Unter **Get started** findet ihr alle Anweisungen, wie ihr Bootstrap in eure Webseite einbauen könnt.
 

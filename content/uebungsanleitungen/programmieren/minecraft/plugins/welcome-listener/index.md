@@ -33,7 +33,7 @@ Außerdem werden wir, wenn die Spieler miteinander chatten, die Nachrichten der 
 ## Ausführliche Anleitung
 
 ### Die Listener-Klasse
-Wenn du dein erstes Plugin nicht erweitern willst, dann musst du wieder ein neues Projekt erstellen, ein neues Package und darin eine neue Klasse (`com.bajupa.welcome.Welcome`). Die Kurzversion, wie du dein Projekt erstellst, findest du auch [hier](/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html). Gut, jetzt sind wir bereit, unseren ersten Listener einzubauen.
+Wenn du dein erstes Plugin nicht erweitern willst, dann musst du wieder ein neues Projekt erstellen, ein neues Package und darin eine neue Klasse (`com.bajupa.welcome.Welcome`). Die Kurzversion, wie du dein Projekt erstellst, findest du auch [hier](/uebungsanleitungen/programmieren/minecraft/plugins/netbeans-cheatsheet/). Gut, jetzt sind wir bereit, unseren ersten Listener einzubauen.
 
 Ein wichtiger Punkt beim Programmieren ist Ordnung zu halten. Das heißt, dass wir unser Programm so ordnen, dass nur zusammengehörige Dinge in einer Klasse sind.  Daher legen wir für den Listener eine neue Klasse an. Das kannst du ja schon gut. Ich schlage vor, dass wir die neue Klasse `JoinAndLeaveListener` nenne, weil wir da auf die beiden Events, wenn ein Spieler unserem Server beitritt und wenn ein Spieler unseren Server verlässt, reagieren wollen.
 
@@ -137,7 +137,7 @@ Wenn du aber eigene Ideen hast, probier sie aus, besprich sie mit deinen MentorI
 
 ## Kurzversion für Profis
 
-1. Erstelle ein neues Projekt mit dem Namen ``ListenerPlugin``, eine Klasse mit dem Namen ``Welcome``, eine Klasse mit dem Namen ``JoinAndLeaveListener`` sowie das ``plugin.yml`` (siehe auch [hier](/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html)) 
+1. Erstelle ein neues Projekt mit dem Namen ``ListenerPlugin``, eine Klasse mit dem Namen ``Welcome``, eine Klasse mit dem Namen ``JoinAndLeaveListener`` sowie das ``plugin.yml`` (siehe auch [hier](/uebungsanleitungen/programmieren/minecraft/plugins/netbeans-cheatsheet/))
 1. Implementiere die Klasse ``JoinAndLeaveListener``:
 ```java
 public class JoinAndLeaveListener implements Listener {

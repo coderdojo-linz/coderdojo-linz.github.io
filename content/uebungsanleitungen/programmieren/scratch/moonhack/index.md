@@ -43,7 +43,7 @@ In dieser Übung programmierst du einen Simulator für die Landung auf dem Mond 
 ## Bühne und Figuren anlegen
 
 1. {{< imgblock "img/buehnenbild.png" "Bühnenbild auswählen" >}}
-Zuerst suchen wir uns ein cooles Bühnenbild aus. Wir haben für dich eines vorbereitet. Du kannst es [hier herunterladen](backdrop1.png) und anschließend in Scratch die heruntergeladene Datei als Hintergrund einfügen.
+Zuerst suchen wir uns ein cooles Bühnenbild aus. Wir haben für dich eines vorbereitet. Du kannst es [hier herunterladen](img/backdrop1.png) und anschließend in Scratch die heruntergeladene Datei als Hintergrund einfügen.
 {{< /imgblock >}}
 
 2. {{< imgblock "img/scratchy-loeschen.png" "Scratchy löschen" >}}
@@ -51,7 +51,7 @@ Als nächstes lösche die Figur "Scratchy" mit dem Namen *Figur 1*, indem du mit
 {{< /imgblock >}}
 
 3. {{< imgblock "img/figur.png" "Figur hinzufügen" >}}
-Jetzt fügen wir die Figur für die Mondlandefähre ein. Du kannst sie [hier herunterladen](Lunar_Module.sprite2) und anschließend in Scratch die heruntergeladene Datei als Figur einfügen.
+Jetzt fügen wir die Figur für die Mondlandefähre ein. Du kannst sie [hier herunterladen](img/Lunar_Module.sprite2) und anschließend in Scratch die heruntergeladene Datei als Figur einfügen.
 {{< /imgblock >}}
 
 4. {{< imgblock "img/kostueme-klaenge.png" "Kostüme und Klänge" 4 >}}

@@ -13,7 +13,7 @@ aliases:
 - /trainingsanleitungen/scratch/scratch-space-shooter-2.html
 ---
 
-Hast du die <a href="scratch-space-shooter.html">Space Shooter Scratch Übung</a> schon geschafft? Dann bist du genau richtig hier. Deine Aufgabe ist es, einen modifizierten Space Shooter zu bauen - diesmal aber ohne kompletter Anleitung.
+Hast du die <a href="/uebungsanleitungen/programmieren/scratch/space-shooter/">Space Shooter Scratch Übung</a> schon geschafft? Dann bist du genau richtig hier. Deine Aufgabe ist es, einen modifizierten Space Shooter zu bauen - diesmal aber ohne kompletter Anleitung.
 
 Falls du Hilfe brauchst, kannst du dir Anregungen beim fertigen Spiel unter <a href="https://scratch.mit.edu/projects/236866631/" target="_blank">https://scratch.mit.edu/projects/236866631/</a> holen.
 
