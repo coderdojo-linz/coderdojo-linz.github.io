@@ -1,36 +1,14 @@
 {{ define "main" }}
 
-{{ $imageResource := ($.Scratch.Get "images").GetMatch "corona.jpg" }}
-{{ $resized := $imageResource.Fit "1920x1200" }}
 <section id="event-types" class="dark">
     <div class="container">
         <div class="row">
             <div class="col">
                 <h2>CoderDojo Termine</h2>
                 <p>Wir veranstalten zur Zeit sowohl virtuelle CoderDojos, bei denen man via Zoom Meeting teilnehmen kann
-                    als auch persönliche Treffen in der <a href="https://grandgarage.eu/" target="_blank">Grand
-                        Garage</a>.
-
-                <div class="corona-rules">
-                    <h3>Corona Regeln für persönliche Treffen</h3>
-                    <p>Corona ist leider noch nicht vorbei. Für manche ist es nur ein harmloser Schnupfen, andere aber
-                        erkranken
-                        schwerer. Damit die Teilnahme für alle mit möglichst geringem Risiko möglich ist, bitten wir
-                        euch
-                        darum, euch an folgende Regeln zu halten:</p>
-
-                    <ul>
-                        <li>Bleibt bitte zuhause, wenn ihr euch krank fühlt oder eine Person in eurem Haushalt erkrankt
-                            ist
-                            (auch wenn der Corona Test negativ sein sollte). Es gibt gleichzeitig auch Online
-                            CoderDojos.
-                            Wir freuen uns, wenn ihr uns in diesem Fall über ein virtuelles Zoom Meeting besucht.</li>
-                        <li>Wir werden regelmäßig lüften. Nehmt euch einen Pullover oder eine Jacke mit, damit ihr nicht
-                            friert, wenn die                             Fenster offen sind.</li>
-                        <li>Wer möchte kann gerne während der Veranstaltung im Innenraum eine FFP2 Maske zu tragen. Wenn
-                            ihr keine zur Verfügung habt, bekommt ihr gerne eine von uns.</li>
-                    </ul>
-                </div>
+                    als auch persönliche Treffen abwechselnd in der <a href="https://grandgarage.eu/"
+                        target="_blank">Grand Garage</a> und im <a href="https://wissensturm.linz.at/" target="_blank"
+                        rel="noopener noreferrer">Wissensturm</a>.
             </div>
         </div>
     </div>
@@ -70,6 +48,26 @@
                         href="mailto: info@linz.coderdojo.net">info@linz.coderdojo.net</a> wie alt du bist und ob du
                     schon Programmiererfahrung hast. Wir werden dir dann einen Vorschlag machen, mit welchen Workshop du
                     beginnen könntest.</a></p>
+
+                <div class="corona-rules">
+                    <h3>Corona Regeln für persönliche Treffen</h3>
+                    <p>Corona ist leider noch nicht vorbei. Für manche ist es nur ein harmloser Schnupfen, andere aber
+                        erkranken
+                        schwerer. Damit die Teilnahme für alle mit möglichst geringem Risiko möglich ist, bitten wir
+                        euch
+                        darum, euch an folgende Regeln zu halten:</p>
+
+                    <ul>
+                        <li>Bleibt bitte zuhause, wenn ihr euch krank fühlt oder eine Person in eurem Haushalt erkrankt
+                            ist
+                            (auch wenn der Corona Test negativ sein sollte). Es gibt gleichzeitig auch Online
+                            CoderDojos.
+                            Wir freuen uns, wenn ihr uns in diesem Fall über ein virtuelles Zoom Meeting besucht.</li>
+                        <li>Wir werden regelmäßig lüften. Nehmt euch einen Pullover oder eine Jacke mit, damit ihr nicht
+                            friert, wenn die Fenster offen sind.</li>
+                        <li>Wer möchte kann gerne während der Veranstaltung im Innenraum eine FFP2 Maske zu tragen.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
