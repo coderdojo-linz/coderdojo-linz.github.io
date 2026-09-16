@@ -8,7 +8,7 @@ jobs:
     vmImage: 'ubuntu-latest'
 
   variables:
-    hugo_version: '0.136.5'
+    hugo_version: '0.166.0'
 
   steps:
   - checkout: self
@@ -30,9 +30,9 @@ jobs:
     displayName: 'Install Hugo'
 
   - script: |
-      npm install
+      npm ci
     workingDirectory: $(Agent.BuildDirectory)/src
-    displayName: 'Run npm install'
+    displayName: 'Install locked npm dependencies'
 
   - script: |
       hugo
@@ -114,7 +114,7 @@ jobs:
     vmImage: 'ubuntu-latest'
 
   variables:
-    hugo_version: '0.136.5'
+    hugo_version: '0.166.0'
     target_repository: 'preview-coderdojo-linz'
 
   steps:
@@ -136,9 +136,9 @@ jobs:
     displayName: 'Install Hugo'
 
   - script: |
-      npm install
+      npm ci
     workingDirectory: $(Agent.BuildDirectory)/src
-    displayName: 'Run npm install'
+    displayName: 'Install locked npm dependencies'
 
   - script: |
       sed -i -e 's/linz.coderdojo.net/linz-preview.coderdojo.net/g' config.toml

@@ -1,5 +1,5 @@
 baseURL = "https://linz.coderdojo.net"
-languageCode = "de-AT"
+locale = "de-AT"
 title = "CoderDojo Linz"
 
 [markup]
@@ -19,3 +19,7 @@ title = "CoderDojo Linz"
     tabWidth = 4
 
 [params]
+
+[security]
+  # Tutorial downloads include HTML files in content; keep Org files blocked.
+  allowContent = ['! ^text/org$']
