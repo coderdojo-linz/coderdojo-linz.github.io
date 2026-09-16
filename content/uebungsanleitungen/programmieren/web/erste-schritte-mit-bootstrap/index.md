@@ -698,4 +698,4 @@ Damit beim Scrollen die Menüelemente hervorgehoben werden, müssen wir jetzt no
 
 ## Fertiges Beispiel
 
-Das fertige Beispiel findet ihr auf GitHub unter [https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/web/project](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/master/trainingsanleitungen/web/erste-schritte-mit-bootstrap/project).
+Das fertige Beispiel findet ihr in den [Projektdateien auf GitHub](https://github.com/coderdojo-linz/coderdojo-linz.github.io/tree/develop/content/uebungsanleitungen/programmieren/web/erste-schritte-mit-bootstrap/img/project).
