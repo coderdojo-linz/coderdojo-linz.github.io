@@ -2,7 +2,7 @@
 title: "Komplettanleitung D1-Mini"
 description: "Eine umfassende Anleitung für den D1-Mini"
 weight: 5
-img: "d1-mini-komplettanleitung.jpg"
+img: "d1-mini-komplettanleitung.jpg.jpg"
 ---
 
 # Komplettanleitung D1-Mini

@@ -158,7 +158,7 @@ Das Ziel muss beim Spielstart richtig positioniert werden:
 ## Weitere Ideen
 
 * Lass dir ein neues, schwierigeres Labyrinth einfallen. Versuche es durch Anpassen des Programms in dein Spiel einzubauen.
-* Nachdem du jetzt das Programm in Scratch geschafft hast, könntest du es als nächstes in JavaScript programmieren. Im Bereich *Web* findest du genau [das gleiche Spiel als JavaScript-Übung](../web/labyrinth-mit-svg.html). Du wirst sehen, dass vieles ganz ähnlich funktioniert wie in Scratch.
+* Nachdem du jetzt das Programm in Scratch geschafft hast, könntest du es als nächstes in JavaScript programmieren. Im Bereich *Web* findest du genau [das gleiche Spiel als JavaScript-Übung](/uebungsanleitungen/programmieren/web/labyrinth-mit-svg/). Du wirst sehen, dass vieles ganz ähnlich funktioniert wie in Scratch.
 
 ## Herunterladen
 

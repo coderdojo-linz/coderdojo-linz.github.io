@@ -435,9 +435,9 @@ Wenn du für manche Listen (z.B. für die erste Ebene der Übungsanleitungen) an
 
 Hier wird kein Level angezeigt, dafür wird ein Image in den Carsds angezeigt. Images werden in Hugo in Ordner `static` gespeichert. Lege in diesem Ordner einen neuen Ordner `img` und darin `uebungsbeispiele` an. Kopiere die folgenden drei Dateien in diesen Ordner:
 
-* [scratch.png](scratch.png)
-* [python.png](python.png)
-* [html5.png](html5.png)
+* [scratch.png](img/scratch.png)
+* [python.png](img/python.png)
+* [html5.png](img/html5.png)
 
 Jetzt müssen wir noch festlegen, welche Seiten das neue Layout verwenden sollen. Füge dazu in der Datei `content\uebungsbeispiele\_index.html` den Parameter `layout: topics-list` hinzu. Jetzt müssen wir bei den drei `_index.html` Dateien für Scratch, Python und Web je einen Parameter für das zu verwendende Bild hinzufügen: `img: "scratch.png"`.
 

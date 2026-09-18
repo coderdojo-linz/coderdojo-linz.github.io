@@ -61,7 +61,7 @@ Erstelle als erstes eine neue HTML Seite mit dem Namen hangman.html.
 
 ## Styles
 
-Die Styles sind hier nicht direkt im HTML enthalten, sondern es wird auf die externe Datei styles.css verwiesen. Die Datei muss sich im selben Ordner wie hangman.htm befinden. Du kannst die Datei entweder unter <a href="hangman/styles.css">styles.css</a> herunterladen, 
+Die Styles sind hier nicht direkt im HTML enthalten, sondern es wird auf die externe Datei styles.css verwiesen. Die Datei muss sich im selben Ordner wie hangman.htm befinden. Du kannst die Datei entweder unter <a href="styles.css">styles.css</a> herunterladen,
 oder du erstellst eine neue Datei styles.css mit folgendem Inhalt:
 
 ```css
