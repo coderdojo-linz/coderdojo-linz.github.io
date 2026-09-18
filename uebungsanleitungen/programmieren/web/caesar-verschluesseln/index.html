@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Verschlüsseln mit JavaScript </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -279,26 +279,26 @@
 <p>Füge das folgende Grundgerüst in die neue Programmdatei ein. Achte auf die im Code enthaltenen Kommentarzeilen. Mache dich mit dem Code vertraut. Bei Unklarheiten wende dich an eine CoderDojo Mentorin oder einen Mentor.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Den folgenden Text wollen wir verschluesseln.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Den folgenden Text wollen wir verschluesseln.
 </span></span></span><span style="display:flex;"><span><span style="color:#008000">// Der Ausgangstext wird &#34;Klartext&#34; oder auf englisch &#34;plain text&#34; genannt.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> plainText = <span style="color:#a31515">&#34;Wir treffen uns nach der Schule im Park&#34;</span>;
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">var</span> plainText = <span style="color:#a31515">&#34;Wir treffen uns nach der Schule im Park&#34;</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Um diese Anzahl wollen wir die Zeichen im Alphabet verschieben.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> verschiebung = 1;
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">var</span> verschiebung = 1;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// In dieser Variable speichern wir den verschluesselten Text.
 </span></span></span><span style="display:flex;"><span><span style="color:#008000">// Der verschluesselte Text wird auf englisch &#34;cipher text&#34; genannt.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> cipherText;
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">var</span> cipherText;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// HIER FOLGT UNSER VERSCHLUESSELUNGSMECHANISMUS
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Zur Kontrolle geben wir den verschluesselten Text aus.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>console.log(<span style="color:#a31515">&#34;Aus &#39;&#34;</span> + plainText + <span style="color:#a31515">&#34;&#39; wird &#39;&#34;</span> + cipherText + <span style="color:#a31515">&#34;&#39;.&#34;</span>);
+</span></span></span><span style="display:flex;"><span>console.log(<span style="color:#a31515">&#34;Aus &#39;&#34;</span> + plainText + <span style="color:#a31515">&#34;&#39; wird &#39;&#34;</span> + cipherText + <span style="color:#a31515">&#34;&#39;.&#34;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// HIER FOLGT UNSER ENTSCHLUESSELUNGSMECHANISMUS
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Zur Kontrolle geben wir den entschluesselten Text aus.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>console.log(<span style="color:#a31515">&#34;Aus &#39;&#34;</span> + cipherText + <span style="color:#a31515">&#34;&#39; wird &#39;&#34;</span> + plainText + <span style="color:#a31515">&#34;&#39;.&#34;</span>);
+</span></span></span><span style="display:flex;"><span>console.log(<span style="color:#a31515">&#34;Aus &#39;&#34;</span> + cipherText + <span style="color:#a31515">&#34;&#39; wird &#39;&#34;</span> + plainText + <span style="color:#a31515">&#34;&#39;.&#34;</span>);
 </span></span></code></pre></div><ol start="4">
 <li>
 <p>Probiere das Programm aus. Dazu startest du ein Kommandozeilenfenster und wechselst mit dem Kommando <code>cd</code> (<em>Change Directory</em>) in das Verzeichnis, in dem du deine Programmdatei gespeichert hast. Falls du noch nicht weißt, wie das geht, sprich eine CoderDojo Mentorin oder einen Mentor an.</p>
@@ -307,7 +307,7 @@
 <p>Starte dein Programm mit <code>node caesar.js</code>. Die Ausgabe sollte so aussehen. Lass dich von dem Wort <em>undefined</em> nicht abschrecken. Das verschwindet sobald wir die eigentliche Verschlüsselung eingefügt haben.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Aus <span style="color:#a31515">&#39;Wir treffen uns nach der Schule im Park&#39;</span> wird <span style="color:#a31515">&#39;undefined&#39;</span>.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Aus <span style="color:#a31515">&#39;Wir treffen uns nach der Schule im Park&#39;</span> wird <span style="color:#a31515">&#39;undefined&#39;</span>.
 </span></span><span style="display:flex;"><span>Aus <span style="color:#a31515">&#39;undefined&#39;</span> wird <span style="color:#a31515">&#39;Wir treffen uns nach der Schule im Park&#39;</span>.
 </span></span></code></pre></div><h2 id="verschlüsseln">Verschlüsseln</h2>
 <p>Damit du das Programm zum Verschlüsseln programmieren kannst, musst du verstehen, was der <a href="https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange" target="_blank">ASCII Standard</a> ist. Er ordnet jedem Zeichen (z.B. Buchstaben, Ziffern, Sonderzeichen etc.) eine Zahl zwischen 0 und 255 zu. In <a href="https://de.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange#ASCII-Tabelle" target="_blank">Wikipedia</a> findest du eine Tabelle mit allen Zeichen und den zugehörigen Zahlen.</p>
@@ -321,78 +321,78 @@
 <p>Füge die folgenden Zeilen an dieser Stelle ein. Nicht erschrecken, der Großteil der Zeilen sind Kommentare, die dir beim Verständnis des Codes helfen sollen. Mache dich mit dem Code vertraut. Bei Unklarheiten wende dich an eine CoderDojo Mentorin oder einen Mentor.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Hier Hilfsvariablen mit den ASCII Codes von a, z, A und Z.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Hier Hilfsvariablen mit den ASCII Codes von a, z, A und Z.
 </span></span></span><span style="display:flex;"><span><span style="color:#008000">// Die werden wir spaeter gleich brauchen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> charCodeKleinA = <span style="color:#a31515">&#34;a&#34;</span>.charCodeAt(0);
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">var</span> charCodeKleinA = <span style="color:#a31515">&#34;a&#34;</span>.charCodeAt(0);
 </span></span><span style="display:flex;"><span><span style="color:#00f">var</span> charCodeKleinZ = <span style="color:#a31515">&#34;z&#34;</span>.charCodeAt(0);
 </span></span><span style="display:flex;"><span><span style="color:#00f">var</span> charCodeGrossA = <span style="color:#a31515">&#34;A&#34;</span>.charCodeAt(0);
 </span></span><span style="display:flex;"><span><span style="color:#00f">var</span> charCodeGrossZ = <span style="color:#a31515">&#34;Z&#34;</span>.charCodeAt(0);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Hier machen wir die eigentliche Transformation eines Zeichens.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> zeichenTransformieren(charCode, startAsciiCode) {
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">function</span> zeichenTransformieren(charCode, startAsciiCode) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// charCode: Enthält den ASCII Code des Ausgangszeichens, das
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">//           wir transformieren wollen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// startAsciiCode: ASCII Code des ersten Zeichens des 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">//                 Alphabets (97 fuer &#34;a&#34; oder 65 fuer &#34;A&#34;)
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">//           wir transformieren wollen
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// startAsciiCode: ASCII Code des ersten Zeichens des 
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">//                 Alphabets (97 fuer &#34;a&#34; oder 65 fuer &#34;A&#34;)
+</span></span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Als erstes berechnen wir, an welcher Stelle im Alphabet das
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// Ausgangszeichen steht. Achte darauf, dass dieser Wert mit
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// 0 (Null) zu zählen beginnt, nicht mit 1. 0 steht also für 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// a bzw. A, 1 für b bzw. B, ...
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">var</span> indexImAlphabet = charCode - startAsciiCode;
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// Ausgangszeichen steht. Achte darauf, dass dieser Wert mit
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// 0 (Null) zu zählen beginnt, nicht mit 1. 0 steht also für 
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// a bzw. A, 1 für b bzw. B, ...
+</span></span></span><span style="display:flex;"><span>        <span style="color:#00f">var</span> indexImAlphabet = charCode - startAsciiCode;
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Jetzt verschieben wir.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">var</span> transformiertCode = indexImAlphabet + verschiebung;
+</span></span></span><span style="display:flex;"><span>        <span style="color:#00f">var</span> transformiertCode = indexImAlphabet + verschiebung;
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Wenn wir ueber Z hinaus kommen, fangen wir am Anfang wieder an.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// Das machen wir, indem wir die Anzahl der Buchstaben des deutschen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// Alphabets (26) abziehen. 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (transformiertCode &gt; 25) { transformiertCode -= 26; }
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// Das machen wir, indem wir die Anzahl der Buchstaben des deutschen
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// Alphabets (26) abziehen. 
+</span></span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (transformiertCode &gt; 25) { transformiertCode -= 26; }
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Beim Verschieben nach Links können wir vor dem A landen. In diesem
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// Fall muessen wir zur Korrektur die Anzahl an Buchstaben im deutschen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// Alphabets (26) addieren.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (transformiertCode &lt; 0) { transformiertCode += 26; }
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// Fall muessen wir zur Korrektur die Anzahl an Buchstaben im deutschen
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// Alphabets (26) addieren.
+</span></span></span><span style="display:flex;"><span>        <span style="color:#00f">else</span> <span style="color:#00f">if</span> (transformiertCode &lt; 0) { transformiertCode += 26; }
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Jetzt können wir den Index im Alphabet wieder in ASCII umwandeln,
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// indem wir 97 fuer &#34;a&#34; oder 65 fuer &#34;A&#34; addieren.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">return</span> startAsciiCode + transformiertCode;
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// indem wir 97 fuer &#34;a&#34; oder 65 fuer &#34;A&#34; addieren.
+</span></span></span><span style="display:flex;"><span>        <span style="color:#00f">return</span> startAsciiCode + transformiertCode;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Hier machen wir die eigentliche Transformation des Textes
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> textTransformieren(ausgangstext) {
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">function</span> textTransformieren(ausgangstext) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// In dieser Variable bauen wir unser Ergebnis. Wir starten
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// mit einem leeren Text.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">var</span> ergebnis = <span style="color:#a31515">&#34;&#34;</span>;
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// mit einem leeren Text.
+</span></span></span><span style="display:flex;"><span>        <span style="color:#00f">var</span> ergebnis = <span style="color:#a31515">&#34;&#34;</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Wir starten mit einer Schleife ueber alle Zeichen des Textes. 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; ausgangstext.length; i++) {
+</span></span></span><span style="display:flex;"><span>        <span style="color:#00f">for</span> (<span style="color:#00f">var</span> i = 0; i &lt; ausgangstext.length; i++) {
 </span></span><span style="display:flex;"><span>                <span style="color:#008000">// Wir holen uns den ASCII Code des aktuellen Zeichens
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                <span style="color:#00f">var</span> charCode = ausgangstext.charCodeAt(i);
+</span></span></span><span style="display:flex;"><span>                <span style="color:#00f">var</span> charCode = ausgangstext.charCodeAt(i);
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>                <span style="color:#008000">// Ist es ein Buchstabe zwischen A und Z?
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                <span style="color:#00f">if</span> (charCode &gt;= charCodeGrossA &amp;&amp; charCode &lt;= charCodeGrossZ) {
+</span></span></span><span style="display:flex;"><span>                <span style="color:#00f">if</span> (charCode &gt;= charCodeGrossA &amp;&amp; charCode &lt;= charCodeGrossZ) {
 </span></span><span style="display:flex;"><span>                        <span style="color:#008000">// Verschluesseln ausgehend von &#34;A&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                        charCode = zeichenTransformieren(charCode, charCodeGrossA);
+</span></span></span><span style="display:flex;"><span>                        charCode = zeichenTransformieren(charCode, charCodeGrossA);
 </span></span><span style="display:flex;"><span>                }
 </span></span><span style="display:flex;"><span>                <span style="color:#008000">// Ist es ein Buchstabe zwischen a und z?
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                <span style="color:#00f">else</span> <span style="color:#00f">if</span> (charCode &gt;= charCodeKleinA &amp;&amp; charCode &lt;= charCodeKleinZ) {
+</span></span></span><span style="display:flex;"><span>                <span style="color:#00f">else</span> <span style="color:#00f">if</span> (charCode &gt;= charCodeKleinA &amp;&amp; charCode &lt;= charCodeKleinZ) {
 </span></span><span style="display:flex;"><span>                        <span style="color:#008000">// Verschluesseln ausgehend von &#34;a&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                        charCode = zeichenTransformieren(charCode, charCodeKleinA);
+</span></span></span><span style="display:flex;"><span>                        charCode = zeichenTransformieren(charCode, charCodeKleinA);
 </span></span><span style="display:flex;"><span>                }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                <span style="color:#008000">// Wenn es kein Buchstabe sondern z.B. ein Sonderzeichen ist, 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                <span style="color:#008000">// lassen wir das Zeichen unverändert.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        
+</span></span></span><span style="display:flex;"><span>                <span style="color:#008000">// lassen wir das Zeichen unverändert.
+</span></span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Wir haengen das transformierte Zeichen an das Ergebnis 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                ergebnis += String.fromCharCode(charCode);
+</span></span></span><span style="display:flex;"><span>                ergebnis += String.fromCharCode(charCode);
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">return</span> ergebnis;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Verschlüsseln
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>cipherText = textTransformieren(plainText);
+</span></span></span><span style="display:flex;"><span>cipherText = textTransformieren(plainText);
 </span></span></code></pre></div><ol>
 <li>
 <p>Suche im zuvor erstellten Programmgrundgerüst die Zeile <code>// HIER FOLGT UNSER ENTSCHLUESSELUNGSMECHANISMUS</code>.</p>
@@ -401,13 +401,13 @@
 <p>Füge die folgenden Zeilen an dieser Stelle ein. Mache dich mit dem Code vertraut. Bei Unklarheiten wende dich an eine CoderDojo Mentorin oder einen Mentor.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Entschlüsseln
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>verschiebung *= -1;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Entschlüsseln
+</span></span></span><span style="display:flex;"><span>verschiebung *= -1;
 </span></span><span style="display:flex;"><span>plainText = textTransformieren(cipherText);
 </span></span></code></pre></div><ol start="4">
 <li>Geschafft! Probiere das Programm aus. Wie schon zuvor startest du dazu dein Programm mit <code>node caesar.js</code>. Der Text am Anfang und am Ende müssen übereinstimmen.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Aus <span style="color:#a31515">&#39;Wir treffen uns nach der Schule im Park&#39;</span> wird <span style="color:#a31515">&#39;Xjs usfggfo vot obdi efs Tdivmf jn Qbsl&#39;</span>.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>Aus <span style="color:#a31515">&#39;Wir treffen uns nach der Schule im Park&#39;</span> wird <span style="color:#a31515">&#39;Xjs usfggfo vot obdi efs Tdivmf jn Qbsl&#39;</span>.
 </span></span><span style="display:flex;"><span>Aus <span style="color:#a31515">&#39;Xjs usfggfo vot obdi efs Tdivmf jn Qbsl&#39;</span> wird <span style="color:#a31515">&#39;Wir treffen uns nach der Schule im Park&#39;</span>.
 </span></span></code></pre></div><h2 id="kompletter-code">Kompletter Code</h2>
 <p>Den kompletten Code dieser Übung kannst du dir <a href="caesarSimple.js">hier</a> ansehen.</p>
@@ -447,10 +447,10 @@
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

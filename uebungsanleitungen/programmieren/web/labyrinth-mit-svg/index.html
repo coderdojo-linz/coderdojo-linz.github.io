@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Labyrinth-Spiel mit Scratch und JavaScript </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -237,7 +237,7 @@
 <p>Gib folgenden Code in die neue Datei ein und vergiss nicht, danach die Änderungen zu speichern.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;html&gt;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>&lt;head&gt;
@@ -259,10 +259,10 @@
 <p>Gib folgenden Code in die neue Datei ein und vergiss nicht, danach die Änderungen zu speichern.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>window.onload = <span style="color:#00f">function</span> () {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>window.onload = <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Die folgende Zeile ist nur zum Testen da. Wir werden sie 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// in Kürze wieder löschen.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    windows.alert(<span style="color:#a31515">&#34;Hallo!&#34;</span>);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// in Kürze wieder löschen.
+</span></span></span><span style="display:flex;"><span>    windows.alert(<span style="color:#a31515">&#34;Hallo!&#34;</span>);
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div><ol>
 <li>Suche die gespeicherte Datei im Dateiexplorer (Windows) bzw. Finder (MacOS). Öffne sie durch Doppelklick. Ein Webbrowser sollte sich öffnen und es sollte die Meldung <em>Hallo!</em> erscheinen.</li>
@@ -276,17 +276,17 @@
 <p>Öffne die Datei <code>index.js</code> und ändere den Code wie folgt. <strong>Tipp:</strong> Alle Zeilen, die mit <code>//</code> beginnen, sind nur Kommentare. Sie sollen dir beim Verstehen des Codes helfen. Du musst sie aber nicht abtippen. Das Programm funktioniert auch ohne sie.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>window.onload = <span style="color:#00f">function</span> () {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>window.onload = <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Die folgende Zeile versetzt JavaScript in den &#34;Strict Mode&#34;. Dadurch zwingt es dich,
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// sauberen Code zu schreiben. Ohne diese Zeile versucht JavaScript bei Fehlern zu erraten,
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// was du gemeint hast. Das führt aber oft zu Fehlern. Daher solltest du immer den &#34;Strict Mode&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// einschalten, um Fehler schnell zu entdecken. Mehr zum &#34;Strict Mode&#34; kannst du unter
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// http://www.w3schools.com/js/js_strict.asp nachlesen.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#a31515">&#34;use strict&#34;</span>;
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// sauberen Code zu schreiben. Ohne diese Zeile versucht JavaScript bei Fehlern zu erraten,
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// was du gemeint hast. Das führt aber oft zu Fehlern. Daher solltest du immer den &#34;Strict Mode&#34;
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// einschalten, um Fehler schnell zu entdecken. Mehr zum &#34;Strict Mode&#34; kannst du unter
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// http://www.w3schools.com/js/js_strict.asp nachlesen.
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a31515">&#34;use strict&#34;</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Globale Variablen anlegen. Das entspricht in etwa den Variablen,
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// die du aus Scratch kennst.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">var</span> spielfeld = [],
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// die du aus Scratch kennst.
+</span></span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> spielfeld = [],
 </span></span><span style="display:flex;"><span>        elemente = [],
 </span></span><span style="display:flex;"><span>        svg = <span style="color:#00f">new</span> Snap(<span style="color:#a31515">&#34;#svg&#34;</span>),
 </span></span><span style="display:flex;"><span>        spielerSpalteIndex,
@@ -301,7 +301,7 @@
 </span></span><span style="display:flex;"><span>        anzahlBewegungen = 0;
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// &lt;&lt;&lt;--- HIER PROGRAMMIERST DU IM NÄCHSTEN SCHRITT WEITER
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>};
+</span></span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div><ol>
 <li>
 <p>Achte besonders auf die Zeile <code>svg = Snap(&quot;#svg&quot;),</code>. Hier verwenden wir die Bibliothek <a href="http://snapsvg.io/" target="_blank"><em>Snap.svg</em></a>. <em>Snap.svg</em> erleichtert die Arbeit mit SVG in JavaScript ganz gewaltig. Möchtes du mehr über SVG und Snap.svg lernen? Wir haben <a href="http://coderdojo-linz.github.io/infos/uebungsbeispiele.html" target="_blank">eigene Übungen dazu im Bereich <em>Web</em></a>.</p>
@@ -337,17 +337,17 @@
 </div>
 
 <p>Hier der Code als Text, den du in dein Programm einfügen musst:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> variablenFuerSpielfeldSetzen() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> variablenFuerSpielfeldSetzen() {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Lösche alle vorhandenen Zeilen im Spielfeld
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// Mehr zur Funktion &#34;splice&#34; findest du unter 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// http://www.w3schools.com/jsref/jsref_splice.asp
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    spielfeld.splice(0, spielfeld.length);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// Mehr zur Funktion &#34;splice&#34; findest du unter 
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// http://www.w3schools.com/jsref/jsref_splice.asp
+</span></span></span><span style="display:flex;"><span>    spielfeld.splice(0, spielfeld.length);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Füge Zeilen des Labyrinth hinzu. &#34;M&#34; steht für &#34;Mauer&#34;, 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// ein zerstörbares Element. &#34;B&#34; steht für &#34;Beton&#34;, 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// ein unzerstörbares Element. &#34;O&#34; ist ein Platzhalter 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// für ein leeres Feld.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    spielfeld.push(<span style="color:#a31515">&#34;MMMMMMMMMMMMMMMO&#34;</span>);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// ein zerstörbares Element. &#34;B&#34; steht für &#34;Beton&#34;, 
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// ein unzerstörbares Element. &#34;O&#34; ist ein Platzhalter 
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// für ein leeres Feld.
+</span></span></span><span style="display:flex;"><span>    spielfeld.push(<span style="color:#a31515">&#34;MMMMMMMMMMMMMMMO&#34;</span>);
 </span></span><span style="display:flex;"><span>    spielfeld.push(<span style="color:#a31515">&#34;OOMMOBMBOOMMMMMM&#34;</span>);
 </span></span><span style="display:flex;"><span>    spielfeld.push(<span style="color:#a31515">&#34;MOMOOOOOOMBMOOBM&#34;</span>);
 </span></span><span style="display:flex;"><span>    spielfeld.push(<span style="color:#a31515">&#34;MMMMMMMOMMOOOBMM&#34;</span>);
@@ -361,7 +361,7 @@
 </span></span><span style="display:flex;"><span>    spielfeld.push(<span style="color:#a31515">&#34;MMMMMMMMMMMMBBBB&#34;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Positionen für Spieler und Ziel festlegen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    spielerSpalteIndex = 1;
+</span></span></span><span style="display:flex;"><span>    spielerSpalteIndex = 1;
 </span></span><span style="display:flex;"><span>    spielerZeileIndex = 2;
 </span></span><span style="display:flex;"><span>    zielSpalteIndex = 1;
 </span></span><span style="display:flex;"><span>    zielZeileIndex = 10;
@@ -467,30 +467,30 @@
 </div>
 
 <p>Hier der Code als Text, den du in dein Programm einfügen musst:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> erzeugeClone(aktuellesFeld, spalteIndex, zeileIndex) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> erzeugeClone(aktuellesFeld, spalteIndex, zeileIndex) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> aussehen,
 </span></span><span style="display:flex;"><span>        element;
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (aktuellesFeld === <span style="color:#a31515">&#34;M&#34;</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Mauer -&gt; dunkles Grau
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        aussehen = { fill: <span style="color:#a31515">&#39;#373737&#39;</span> };
+</span></span></span><span style="display:flex;"><span>        aussehen = { fill: <span style="color:#a31515">&#39;#373737&#39;</span> };
 </span></span><span style="display:flex;"><span>    } <span style="color:#00f">else</span> {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Beton -&gt; Rot
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        aussehen = { fill: <span style="color:#a31515">&#39;#ff3838&#39;</span> };
+</span></span></span><span style="display:flex;"><span>        aussehen = { fill: <span style="color:#a31515">&#39;#ff3838&#39;</span> };
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Labyrinthelement hinzufügen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    element = svg.rect(spalteIndex * 30, zeileIndex * 30, 30, 30)
+</span></span></span><span style="display:flex;"><span>    element = svg.rect(spalteIndex * 30, zeileIndex * 30, 30, 30)
 </span></span><span style="display:flex;"><span>        .attr(aussehen)
 </span></span><span style="display:flex;"><span>        .data({ spalteIndex: spalteIndex, zeileIndex: zeileIndex });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// In Scratch musst du dich nicht um das Verwalten der Klone kümmern. Scratch
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// macht das für dich. In JavaScript müssen wir alle erstellten Klone selbst
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// speichern, damit wir später wieder auf sie zugreifen können.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    elemente.push(element);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// macht das für dich. In JavaScript müssen wir alle erstellten Klone selbst
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// speichern, damit wir später wieder auf sie zugreifen können.
+</span></span></span><span style="display:flex;"><span>    elemente.push(element);
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Labyrinth auf Basis des Inhalts der Variable &#34;spielfeld&#34; aufbauen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> baueSpielfeld() {
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">function</span> baueSpielfeld() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> zeileIndex,
 </span></span><span style="display:flex;"><span>        spalteIndex,
 </span></span><span style="display:flex;"><span>        aktuellesFeld;
@@ -530,25 +530,25 @@
 </div>
 
 <p>Hier der Code als Text, den du in dein Programm einfügen musst:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> zerstoere(zerstoereZeileIndex, zerstoereSpalteIndex) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> zerstoere(zerstoereZeileIndex, zerstoereSpalteIndex) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> index,
 </span></span><span style="display:flex;"><span>        neueLabyrinthZeile,
 </span></span><span style="display:flex;"><span>        aktuelleZeile,
 </span></span><span style="display:flex;"><span>        aktuelleSpalteIndex;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// In Scratch kann man mit &#34;Sende ... an alle&#34; ganz einfach eine Nachricht an alle
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// Klone aller Figuren schicken. So etwas gibt es in JavaScript nicht. Wir müssen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// selbst in einer Schleife alle Klone der Labyrinthelemente durchgehen. Genau das
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// macht die folgende Schleife.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">for</span> (index = 0; index &lt; elemente.length; index++) {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// Klone aller Figuren schicken. So etwas gibt es in JavaScript nicht. Wir müssen
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// selbst in einer Schleife alle Klone der Labyrinthelemente durchgehen. Genau das
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// macht die folgende Schleife.
+</span></span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> (index = 0; index &lt; elemente.length; index++) {
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (elemente[index].data(<span style="color:#a31515">&#34;spalteIndex&#34;</span>) === zerstoereSpalteIndex &amp;&amp; elemente[index].data(<span style="color:#a31515">&#34;zeileIndex&#34;</span>) === zerstoereZeileIndex) {
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// Die Variable wird hier bewusst auf einen leeren Inhalt gesetzt
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            neueLabyrinthZeile = <span style="color:#a31515">&#34;&#34;</span>;
+</span></span></span><span style="display:flex;"><span>            neueLabyrinthZeile = <span style="color:#a31515">&#34;&#34;</span>;
 </span></span><span style="display:flex;"><span>            aktuelleZeile = spielfeld[zerstoereZeileIndex];
 </span></span><span style="display:flex;"><span>            
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// Wir kopieren die Labyrinthzeile, in der das zu zerstörende Element enthalten ist. 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#008000">// Alle Elemente werden unverändert kopiert, nur das zu zerstörende Element nicht.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#00f">for</span> (aktuelleSpalteIndex = 0; aktuelleSpalteIndex &lt; 16; aktuelleSpalteIndex++) {
+</span></span></span><span style="display:flex;"><span>            <span style="color:#008000">// Alle Elemente werden unverändert kopiert, nur das zu zerstörende Element nicht.
+</span></span></span><span style="display:flex;"><span>            <span style="color:#00f">for</span> (aktuelleSpalteIndex = 0; aktuelleSpalteIndex &lt; 16; aktuelleSpalteIndex++) {
 </span></span><span style="display:flex;"><span>                <span style="color:#00f">if</span> (aktuelleSpalteIndex === zerstoereSpalteIndex) {
 </span></span><span style="display:flex;"><span>                    neueLabyrinthZeile += <span style="color:#a31515">&#34;O&#34;</span>;
 </span></span><span style="display:flex;"><span>                } <span style="color:#00f">else</span> {
@@ -557,12 +557,12 @@
 </span></span><span style="display:flex;"><span>            }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// JavaScript hat eine Funktion, die Scratch nicht hat: &#34;substring&#34;. Sie gibt dir einen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#008000">// Teil einer Texts zurück. Damit könnte man die gesamte, oben gezeigte Schleife, durch
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#008000">// eine einzige Zeile ersetzen. Mehr über substring findest du unter
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#008000">// http://www.w3schools.com/jsref/jsref_substring.asp
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#008000">////neueLabyrinthZeile = aktuelleZeile.substring(0, zerstoereSpalteIndex) + &#34;O&#34; +
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            <span style="color:#008000">////    aktuelleZeile.substring(zerstoereSpalteIndex + 1);
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>
+</span></span></span><span style="display:flex;"><span>            <span style="color:#008000">// Teil einer Texts zurück. Damit könnte man die gesamte, oben gezeigte Schleife, durch
+</span></span></span><span style="display:flex;"><span>            <span style="color:#008000">// eine einzige Zeile ersetzen. Mehr über substring findest du unter
+</span></span></span><span style="display:flex;"><span>            <span style="color:#008000">// http://www.w3schools.com/jsref/jsref_substring.asp
+</span></span></span><span style="display:flex;"><span>            <span style="color:#008000">////neueLabyrinthZeile = aktuelleZeile.substring(0, zerstoereSpalteIndex) + &#34;O&#34; +
+</span></span></span><span style="display:flex;"><span>            <span style="color:#008000">////    aktuelleZeile.substring(zerstoereSpalteIndex + 1);
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>            spielfeld.splice(zerstoereZeileIndex, 1, neueLabyrinthZeile);
 </span></span><span style="display:flex;"><span>            
 </span></span><span style="display:flex;"><span>            elemente[index].remove();
@@ -596,13 +596,13 @@
 </div>
 
 <p>Hier der Code als Text, den du in dein Programm einfügen musst:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Ermittle das Element im Spielfeld an der angegebenen Position
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> ermittleSpielfeldelement(zeile, spalte) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Ermittle das Element im Spielfeld an der angegebenen Position
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">function</span> ermittleSpielfeldelement(zeile, spalte) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> spielfeld[zeile][spalte];
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Bewege den Spieler zur angegebenen Position in der angegebenen Zeit.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> aktualisiereSpielerposition(zeile, spalte, sekunden, next) {
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">function</span> aktualisiereSpielerposition(zeile, spalte, sekunden, next) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> transformation = <span style="color:#a31515">&#34;t&#34;</span> + (spalte * 30 + 15).toString() + <span style="color:#a31515">&#34;,&#34;</span> + (zeile * 30 + 15).toString();
 </span></span><span style="display:flex;"><span>    spieler.animate({ transform: transformation }, sekunden * 1000, next);
 </span></span><span style="display:flex;"><span>}
@@ -632,25 +632,25 @@
 </div>
 
 <p>Hier der Code als Text, den du in dein Programm einfügen musst:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Führe eine vertikale Bewegung (oben/unten) durch
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> bewegeVertikal(bewegung) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Führe eine vertikale Bewegung (oben/unten) durch
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">function</span> bewegeVertikal(bewegung) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> aktuellesFeld;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Stelle sicher, dass sich der Spieler nicht aus den Grenzen des Labyrinths bewegt (wir haben 12 Zeilen)
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (spielerZeileIndex + bewegung &gt;= 0 &amp;&amp; spielerZeileIndex + bewegung &lt; 12) {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (spielerZeileIndex + bewegung &gt;= 0 &amp;&amp; spielerZeileIndex + bewegung &lt; 12) {
 </span></span><span style="display:flex;"><span>        aktuellesFeld = ermittleSpielfeldelement(spielerZeileIndex + bewegung, spielerSpalteIndex);
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (aktuellesFeld === <span style="color:#a31515">&#34;O&#34;</span>) {
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// Das Zielfeld ist leer, der Spieler kann sich hin bewegen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            anzahlBewegungen++;
+</span></span></span><span style="display:flex;"><span>            anzahlBewegungen++;
 </span></span><span style="display:flex;"><span>            spielerZeileIndex += bewegung;
 </span></span><span style="display:flex;"><span>            aktualisiereSpielerposition(spielerZeileIndex, spielerSpalteIndex, sekundenProSchritt);
 </span></span><span style="display:flex;"><span>        } <span style="color:#00f">else</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (aktuellesFeld === <span style="color:#a31515">&#34;M&#34;</span>) {
 </span></span><span style="display:flex;"><span>                <span style="color:#008000">// Das Zielfeld enthält ein Element, das zerstörbar ist
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                aktuellesFeld = ermittleSpielfeldelement(spielerZeileIndex + bewegung * (-1), spielerSpalteIndex);
+</span></span></span><span style="display:flex;"><span>                aktuellesFeld = ermittleSpielfeldelement(spielerZeileIndex + bewegung * (-1), spielerSpalteIndex);
 </span></span><span style="display:flex;"><span>                <span style="color:#00f">if</span> (aktuellesFeld === <span style="color:#a31515">&#34;O&#34;</span>) {
 </span></span><span style="display:flex;"><span>                    <span style="color:#008000">// Es ist Platz, dass der Spieler Anlauf nehmen kann
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                    anzahlBewegungen++;
+</span></span></span><span style="display:flex;"><span>                    anzahlBewegungen++;
 </span></span><span style="display:flex;"><span>                    aktualisiereSpielerposition(spielerZeileIndex + bewegung * (-1), spielerSpalteIndex, sekundenAnlauf, <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>                        aktualisiereSpielerposition(spielerZeileIndex, spielerSpalteIndex, sekundenStoss, <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>                            zerstoere(spielerZeileIndex + bewegung, spielerSpalteIndex);
@@ -663,24 +663,24 @@
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Führe eine horizonale Bewegung (links/rechts) durch
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">function</span> bewegeHorizontal(bewegung) {
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">function</span> bewegeHorizontal(bewegung) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> aktuellesFeld;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Stelle sicher, dass sich der Spieler nicht aus den Grenzen des Labyrinths bewegt (wir haben 16 Spalten)
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (spielerSpalteIndex + bewegung &gt;= 0 &amp;&amp; spielerSpalteIndex + bewegung &lt; 16) {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (spielerSpalteIndex + bewegung &gt;= 0 &amp;&amp; spielerSpalteIndex + bewegung &lt; 16) {
 </span></span><span style="display:flex;"><span>        aktuellesFeld = ermittleSpielfeldelement(spielerZeileIndex, spielerSpalteIndex + bewegung);
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (aktuellesFeld === <span style="color:#a31515">&#34;O&#34;</span>) {
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// Das Zielfeld ist leer, der Spieler kann sich hin bewegen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            anzahlBewegungen++;
+</span></span></span><span style="display:flex;"><span>            anzahlBewegungen++;
 </span></span><span style="display:flex;"><span>            spielerSpalteIndex += bewegung;
 </span></span><span style="display:flex;"><span>            aktualisiereSpielerposition(spielerZeileIndex, spielerSpalteIndex, sekundenProSchritt);
 </span></span><span style="display:flex;"><span>        } <span style="color:#00f">else</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#00f">if</span> (aktuellesFeld === <span style="color:#a31515">&#34;M&#34;</span>) {
 </span></span><span style="display:flex;"><span>                <span style="color:#008000">// Das Zielfeld enthält ein Element, das zerstörbar ist
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                aktuellesFeld = ermittleSpielfeldelement(spielerZeileIndex, spielerSpalteIndex + bewegung * (-1));
+</span></span></span><span style="display:flex;"><span>                aktuellesFeld = ermittleSpielfeldelement(spielerZeileIndex, spielerSpalteIndex + bewegung * (-1));
 </span></span><span style="display:flex;"><span>                <span style="color:#00f">if</span> (aktuellesFeld === <span style="color:#a31515">&#34;O&#34;</span>) {
 </span></span><span style="display:flex;"><span>                    <span style="color:#008000">// Es ist Platz, dass der Spieler Anlauf nehmen kann
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                    anzahlBewegungen++;
+</span></span></span><span style="display:flex;"><span>                    anzahlBewegungen++;
 </span></span><span style="display:flex;"><span>                    aktualisiereSpielerposition(spielerZeileIndex, spielerSpalteIndex + bewegung * (-1), sekundenAnlauf, <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>                        aktualisiereSpielerposition(spielerZeileIndex, spielerSpalteIndex, sekundenStoss, <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>                            zerstoere(spielerZeileIndex, spielerSpalteIndex + bewegung);
@@ -717,16 +717,16 @@
 </div>
 
 <p>Hier der Code als Text, den du in dein Programm einfügen musst:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> spielstart() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> spielstart() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> transformation;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Positioniere Spieler
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    spieler = svg.ellipse(0, 0, 15, 15).attr({ fill: <span style="color:#a31515">&#39;#5d9eff&#39;</span> });
+</span></span></span><span style="display:flex;"><span>    spieler = svg.ellipse(0, 0, 15, 15).attr({ fill: <span style="color:#a31515">&#39;#5d9eff&#39;</span> });
 </span></span><span style="display:flex;"><span>    transformation = <span style="color:#a31515">&#34;t&#34;</span> + (30 + spielerSpalteIndex * 30 - 15).toString() + <span style="color:#a31515">&#34;,&#34;</span> + (30 + spielerZeileIndex * 30 - 15).toString();
 </span></span><span style="display:flex;"><span>    spieler.transform(transformation);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Positioniere Ziel
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    ziel = svg.g();
+</span></span></span><span style="display:flex;"><span>    ziel = svg.g();
 </span></span><span style="display:flex;"><span>    ziel.add(svg.line(1, 1, 29, 29).attr({ stroke: <span style="color:#a31515">&#34;#373737&#34;</span>, strokeWidth: 2, strokeLinecap: <span style="color:#a31515">&#34;round&#34;</span> }));
 </span></span><span style="display:flex;"><span>    ziel.add(svg.line(29, 1, 1, 29).attr({ stroke: <span style="color:#a31515">&#34;#373737&#34;</span>, strokeWidth: 2, strokeLinecap: <span style="color:#a31515">&#34;round&#34;</span> }));
 </span></span><span style="display:flex;"><span>    transformation = <span style="color:#a31515">&#34;t&#34;</span> + (zielSpalteIndex * 30).toString() + <span style="color:#a31515">&#34;,&#34;</span> + (zielZeileIndex * 30).toString();
@@ -734,23 +734,23 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    document.onkeydown = <span style="color:#00f">function</span> (evt) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Reagiere auf Tastendruck
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        evt = evt || window.event;
+</span></span></span><span style="display:flex;"><span>        evt = evt || window.event;
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (evt.keyCode === 39) {
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// Nach rechts
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            bewegeHorizontal(1);
+</span></span></span><span style="display:flex;"><span>            bewegeHorizontal(1);
 </span></span><span style="display:flex;"><span>        } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (evt.keyCode === 37) {
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// Nach links
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            bewegeHorizontal(-1);
+</span></span></span><span style="display:flex;"><span>            bewegeHorizontal(-1);
 </span></span><span style="display:flex;"><span>        } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (evt.keyCode === 40) {
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// Nach unten
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            bewegeVertikal(1);
+</span></span></span><span style="display:flex;"><span>            bewegeVertikal(1);
 </span></span><span style="display:flex;"><span>        } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (evt.keyCode === 38) {
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// Nach oben
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            bewegeVertikal(-1);
+</span></span></span><span style="display:flex;"><span>            bewegeVertikal(-1);
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Ermittle, ob Spieler das Ziel erreicht hat
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#00f">if</span> (spielerSpalteIndex === zielSpalteIndex &amp;&amp; spielerZeileIndex === zielZeileIndex) {
+</span></span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (spielerSpalteIndex === zielSpalteIndex &amp;&amp; spielerZeileIndex === zielZeileIndex) {
 </span></span><span style="display:flex;"><span>            svg.rect(0, 0, 480, 360).attr({ fill: <span style="color:#a31515">&#39;white&#39;</span>, opacity: 0.75 });
 </span></span><span style="display:flex;"><span>            svg.text(240, 180, <span style="color:#a31515">&#34;Geschafft! Du hast &#34;</span> + anzahlBewegungen.toString() + <span style="color:#a31515">&#34; Bewegungen gebraucht&#34;</span>)
 </span></span><span style="display:flex;"><span>                .attr({ fontFamily: <span style="color:#a31515">&#39;sans-serif&#39;</span>, fontSize: <span style="color:#a31515">&#39;20px&#39;</span>, <span style="color:#a31515">&#34;text-anchor&#34;</span>: <span style="color:#a31515">&#34;middle&#34;</span> });
@@ -759,8 +759,8 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="los-gehts">Los gehts!</h3>
 <p>Zum Abschluss müssen wir in JavaScript noch den Programmstart programmieren. Das sind nur noch wenige Zeilen Code:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Hauptprogramm
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>variablenFuerSpielfeldSetzen();
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// Hauptprogramm
+</span></span></span><span style="display:flex;"><span>variablenFuerSpielfeldSetzen();
 </span></span><span style="display:flex;"><span>baueSpielfeld();
 </span></span><span style="display:flex;"><span>spielstart();
 </span></span></code></pre></div><p>Fertig! Versuche mit dem Spieler das Ziel zu erreichen. Wie viele Bewegungen brauchst du? Fordere deine Freundinnen und Freunde heraus. Schaffen sie es genauso schnell wie du?</p>
@@ -787,10 +787,10 @@
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

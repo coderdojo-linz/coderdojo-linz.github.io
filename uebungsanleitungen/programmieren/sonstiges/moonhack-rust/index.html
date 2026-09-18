@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Moonhack - Rust Edition </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -210,7 +210,7 @@
 <p><code>Cargo</code> is sozusagen das alles in einem Build-System von Rust. Damit kannst du festlegen welche Bibliotheken du verwenden möchtest und wo dein fertiges Programm dann laufen soll.</p>
 <p>Wir möchten unser Moonhack zuerst gerne auf unserem Computer Spielen und anschließend das ganze noch im Web für alle anderen zur Verfügung stellen.</p>
 <p>Als Spiele-Framework werden wir in unserem Fall das <a href="https://bevyengine.org/" target="_blank"><em>Bevy - Framework</em></a> verwenden. Damit das mit dem Ton Abspielen auch ordentlich funktioniert werden wir zusätzlich auch das <a href="https://docs.rs/kira/0.5.3/kira/" target="_blank"><em>bevy-kira Framework</em></a> hinzufügen. Unser <em>cargo.toml</em> sieht demnach so aus:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[package]
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[package]
 </span></span><span style="display:flex;"><span>name = <span style="color:#a31515">&#34;moonhack-rust&#34;</span>
 </span></span><span style="display:flex;"><span>version = <span style="color:#a31515">&#34;0.1.0&#34;</span>
 </span></span><span style="display:flex;"><span>authors = [<span style="color:#a31515">&#34;dein name&#34;</span>]
@@ -228,7 +228,7 @@
 </ul>
 <p>Beim Start werden wir das startup-system verwenden.</p>
 <p>main.rs</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#00f">pub</span> <span style="color:#00f">fn</span> main() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#00f">pub</span> <span style="color:#00f">fn</span> main() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">let</span> <span style="color:#00f">mut</span> app = App::build();
 </span></span><span style="display:flex;"><span>    app.insert_resource(ClearColor(Color::rgb(0.04, 0.04, 0.04)))
 </span></span><span style="display:flex;"><span>        .insert_resource(WindowDescriptor {
@@ -264,7 +264,7 @@
 </span></span><span style="display:flex;"><span>        transform: <span style="color:#2b91af">Transform</span> {
 </span></span><span style="display:flex;"><span>            translation: <span style="color:#2b91af">Vec3</span>::new(0., 0., 1.),
 </span></span><span style="display:flex;"><span>            scale: <span style="color:#2b91af">Vec3</span>::new(0.7, 0.7, 1.), <span style="color:#008000">// durch Probieren rausgefunden 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            ..Default::default()
+</span></span></span><span style="display:flex;"><span>            ..Default::default()
 </span></span><span style="display:flex;"><span>        },
 </span></span><span style="display:flex;"><span>        ..Default::default()
 </span></span><span style="display:flex;"><span>    });
@@ -272,7 +272,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Game-Assets (Grafiken und Töne) zur späteren Verwendung im Spiel
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">struct</span> <span style="color:#2b91af">GameAssets</span> {
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">struct</span> <span style="color:#2b91af">GameAssets</span> {
 </span></span><span style="display:flex;"><span>    background: <span style="color:#2b91af">Handle</span>&lt;ColorMaterial&gt;,
 </span></span><span style="display:flex;"><span>    lunar_module: <span style="color:#2b91af">Handle</span>&lt;TextureAtlas&gt;,
 </span></span><span style="display:flex;"><span>    sound_thruster: <span style="color:#2b91af">Handle</span>&lt;AudioSource&gt;,
@@ -298,7 +298,7 @@
 <h1 id="plugins-hinzufügen">Plugins hinzufügen</h1>
 <p>Damit wir später auch Töne ordentlich ausgeben können (Triebwerk und Funk auf unterschiedlichen Kanälen) werden wir noch einige Plugins hinzufügen.
 Das vollständige main.rs sieht dann folgendermaßen aus:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#00f">use</span> bevy_kira_audio::{AudioChannel, AudioPlugin, AudioSource};
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#00f">use</span> bevy_kira_audio::{AudioChannel, AudioPlugin, AudioSource};
 </span></span><span style="display:flex;"><span><span style="color:#00f">use</span> bevy;
 </span></span><span style="display:flex;"><span><span style="color:#00f">use</span> bevy::math::{Vec2, Vec3};
 </span></span><span style="display:flex;"><span><span style="color:#00f">use</span> bevy::prelude::{*};
@@ -345,7 +345,7 @@ Das vollständige main.rs sieht dann folgendermaßen aus:</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">pub</span> <span style="color:#00f">fn</span> main() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">let</span> <span style="color:#00f">mut</span> app = App::build(); <span style="color:#008000">// mut - heisst &#34;mutable&#34; - Veränderbar. &#34;app&#34; wird intern durch die inserts verändert.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    app.insert_resource(ClearColor(Color::rgb(0.04, 0.04, 0.04)))
+</span></span></span><span style="display:flex;"><span>    app.insert_resource(ClearColor(Color::rgb(0.04, 0.04, 0.04)))
 </span></span><span style="display:flex;"><span>        .insert_resource(WindowDescriptor {
 </span></span><span style="display:flex;"><span>            title: <span style="color:#a31515">&#34;CoderDojo MoonHack&#34;</span>.to_string(),
 </span></span><span style="display:flex;"><span>            width: 640.,
@@ -354,10 +354,10 @@ Das vollständige main.rs sieht dann folgendermaßen aus:</p>
 </span></span><span style="display:flex;"><span>            ..Default::default()
 </span></span><span style="display:flex;"><span>        })
 </span></span><span style="display:flex;"><span>        .insert_resource(AudioChannels::new()) <span style="color:#008000">// Audiochannels für kira - werden später noch gebraucht
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        .add_plugins(DefaultPlugins)
+</span></span></span><span style="display:flex;"><span>        .add_plugins(DefaultPlugins)
 </span></span><span style="display:flex;"><span>        .add_plugin(AudioPlugin) <span style="color:#008000">// Initialisieren von Kira
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        .add_plugin(LunarLander) <span style="color:#008000">// Hier kommt die Mondlandefähre ins Spiel
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        .add_startup_system(setup.system())
+</span></span></span><span style="display:flex;"><span>        .add_plugin(LunarLander) <span style="color:#008000">// Hier kommt die Mondlandefähre ins Spiel
+</span></span></span><span style="display:flex;"><span>        .add_startup_system(setup.system())
 </span></span><span style="display:flex;"><span>        .add_startup_stage(<span style="color:#a31515">&#34;background&#34;</span>, SystemStage::single(spawn_background.system()));
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>        app.run();
@@ -382,14 +382,14 @@ Das vollständige main.rs sieht dann folgendermaßen aus:</p>
 </span></span><span style="display:flex;"><span>        transform: <span style="color:#2b91af">Transform</span> {
 </span></span><span style="display:flex;"><span>            translation: <span style="color:#2b91af">Vec3</span>::new(0., 0., 1.),
 </span></span><span style="display:flex;"><span>            scale: <span style="color:#2b91af">Vec3</span>::new(0.7, 0.7, 1.), <span style="color:#008000">// durch Probieren rausgefunden 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>            ..Default::default()
+</span></span></span><span style="display:flex;"><span>            ..Default::default()
 </span></span><span style="display:flex;"><span>        },
 </span></span><span style="display:flex;"><span>        ..Default::default()
 </span></span><span style="display:flex;"><span>    });
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="mondlandefähre">Mondlandefähre</h2>
 <p>Nun fehlt nur noch der Code für die Mondlandefähre:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#00f">use</span> bevy_kira_audio::Audio;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#00f">use</span> bevy_kira_audio::Audio;
 </span></span><span style="display:flex;"><span><span style="color:#00f">use</span> bevy::prelude::{*};
 </span></span><span style="display:flex;"><span><span style="color:#00f">use</span> <span style="color:#00f">crate</span>::{AudioChannels, GameAssets};
 </span></span><span style="display:flex;"><span>
@@ -438,7 +438,7 @@ Das vollständige main.rs sieht dann folgendermaßen aus:</p>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// aktualisieren des Landers (z.B. Position und Landung)
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">fn</span> lander_run(
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">fn</span> lander_run(
 </span></span><span style="display:flex;"><span>    audio: <span style="color:#2b91af">Res</span>&lt;Audio&gt;,
 </span></span><span style="display:flex;"><span>    audiochannels: <span style="color:#2b91af">Res</span>&lt;AudioChannels&gt;,
 </span></span><span style="display:flex;"><span>    game_assets: <span style="color:#2b91af">Res</span>&lt;GameAssets&gt;,
@@ -471,7 +471,7 @@ Das vollständige main.rs sieht dann folgendermaßen aus:</p>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Eingaben verarbeiten die für den Lander relevant sind
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">fn</span> lander_input(
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">fn</span> lander_input(
 </span></span><span style="display:flex;"><span>    keyboard: <span style="color:#2b91af">Res</span>&lt;Input&lt;KeyCode&gt;&gt;,
 </span></span><span style="display:flex;"><span>    mouse_button_input_events: <span style="color:#2b91af">Res</span>&lt;Input&lt;MouseButton&gt;&gt;,
 </span></span><span style="display:flex;"><span>    audio: <span style="color:#2b91af">Res</span>&lt;Audio&gt;,
@@ -525,10 +525,10 @@ Das vollständige main.rs sieht dann folgendermaßen aus:</p>
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

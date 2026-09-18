@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Moonhack für C# </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -222,14 +222,14 @@ MonoGame Windows Desktop Application         mgwindowsdx  [C#]      MonoGame/Gam
 </code></pre><p>Dann könnt ihr euer Projekt mit eurer Entwicklungsumgebung (IDE, Integrated Development Environment) öffnen.</p>
 <h2 id="anpassen-des-erstellten-codes">Anpassen des erstellten Codes</h2>
 <p>Die Vorlage für das Spiel ist ja nun fertig. Zuerst benennen wir die Datei <code>Game1.cs</code> in <code>LunarLanderGame.cs</code> um. Anschließend die Datei öffnen und dort die Zeile:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Game1</span> : Game {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Game1</span> : Game {
 </span></span></code></pre></div><p>in</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">LunarLanderGame</span> : Game {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">LunarLanderGame</span> : Game {
 </span></span></code></pre></div><p>ändern.</p>
 <p>In Program.cs müssen wir auch dafür sorgen, dass dort die neue Klasse verwendet wird. Dort wird die Zeile</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">using</span> var game = <span style="color:#00f">new</span> csmoonhack.Game1();
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">using</span> var game = <span style="color:#00f">new</span> csmoonhack.Game1();
 </span></span></code></pre></div><p>zu</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">using</span> var game = <span style="color:#00f">new</span> csmoonhack.LunarLanderGame();
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">using</span> var game = <span style="color:#00f">new</span> csmoonhack.LunarLanderGame();
 </span></span></code></pre></div><h2 id="content-hinzufügen">Content hinzufügen</h2>
 <p>Kopiere die im ersten Abschnitt genannten Dateien (<code>.png</code> und <code>.wav</code>) in das Unterverzeichnis <code>Content</code> deines Projekts. Dazu gehören:</p>
 <ul>
@@ -290,7 +290,7 @@ Beispiel:</p>
 <li>einen Indikator, ob das Spiel noch läuft oder schon vorbei ist.</li>
 </ul>
 <p>Der Anfang der Klasse <code>LunarLanderGame</code> sollte dann so aussehen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">LunarLanderGame</span> : Game {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">LunarLanderGame</span> : Game {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> <span style="color:#00f">const</span> <span style="color:#2b91af">int</span> GAME_UNIT_HEIGHT = 200;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// wird vom Framework benötigt</span>
@@ -314,7 +314,7 @@ Beispiel:</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> <span style="color:#2b91af">int</span> _absoluteYPos;
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">private</span> <span style="color:#2b91af">bool</span> _gameOver;
 </span></span></code></pre></div><p>Ausserdem müssen wir im Konstruktor, den wir auch noch auf <code>LunarLanderGame</code> umbenennen sollten, noch das Spielfeld einstellen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">public</span> LunarLanderGame() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">public</span> LunarLanderGame() {
 </span></span><span style="display:flex;"><span>        _graphics = <span style="color:#00f">new</span> GraphicsDeviceManager(<span style="color:#00f">this</span>) {
 </span></span><span style="display:flex;"><span>            PreferredBackBufferWidth = 1024,
 </span></span><span style="display:flex;"><span>            PreferredBackBufferHeight = 720,
@@ -325,7 +325,7 @@ Beispiel:</p>
 </span></span><span style="display:flex;"><span>        IsMouseVisible = <span style="color:#00f">true</span>;
 </span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><p>In der <code>Initialize</code> Methode sollten die Zustände für den Spielanfang eingetragen werden:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">protected</span> <span style="color:#00f">override</span> <span style="color:#00f">void</span> Initialize() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">protected</span> <span style="color:#00f">override</span> <span style="color:#00f">void</span> Initialize() {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Initiale Werte für das Spiel</span>
 </span></span><span style="display:flex;"><span>        _speed = 0;
 </span></span><span style="display:flex;"><span>        _gameOver = <span style="color:#00f">false</span>;
@@ -336,7 +336,7 @@ Beispiel:</p>
 </span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><h2 id="laden-des-content">Laden des Content</h2>
 <p>Die Inhalte, die in <code>Content.mgcb</code> eingefügt wurden können wir nun einfach laden. Das Spritesheet müssen wir allerdings noch zerlegen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">protected</span> <span style="color:#00f">override</span> <span style="color:#00f">void</span> LoadContent() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">protected</span> <span style="color:#00f">override</span> <span style="color:#00f">void</span> LoadContent() {
 </span></span><span style="display:flex;"><span>        _spriteBatch = <span style="color:#00f">new</span> SpriteBatch(GraphicsDevice);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        _lunarLanderSpriteSheet = Content.Load&lt;Texture2D&gt;(<span style="color:#a31515">&#34;lunar_lander_sheet&#34;</span>);
@@ -376,7 +376,7 @@ Beispiel:</p>
 </span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><h2 id="die-hauptschleife-des-spiels-update-und-draw">Die Hauptschleife des Spiels (Update und Draw)</h2>
 <p>Unsere <code>Update</code>-Methode sieht ungefähr so aus:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">protected</span> <span style="color:#00f">override</span> <span style="color:#00f">void</span> Update(GameTime gameTime) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">protected</span> <span style="color:#00f">override</span> <span style="color:#00f">void</span> Update(GameTime gameTime) {
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
 </span></span><span style="display:flex;"><span>            Keyboard.GetState().IsKeyDown(Keys.Escape)) {
 </span></span><span style="display:flex;"><span>            Exit();
@@ -411,7 +411,7 @@ Beispiel:</p>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><p>Die Hilfsmethoden <code>CalculateSpritePosition</code> und <code>CheckLanding</code> haben wir ausgelagert und du findest sie hier:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">private</span> <span style="color:#00f">void</span> CheckLanding() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">private</span> <span style="color:#00f">void</span> CheckLanding() {
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (_position &gt; GAME_UNIT_HEIGHT * 0.95f) {
 </span></span><span style="display:flex;"><span>            <span style="color:#008000">// ende nach 95% des spielfelds</span>
 </span></span><span style="display:flex;"><span>            _gameOver = <span style="color:#00f">true</span>;
@@ -441,7 +441,7 @@ Beispiel:</p>
 </span></span><span style="display:flex;"><span>        _position += _speed * gameTime.ElapsedGameTime.Milliseconds * 0.001f;
 </span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><p>Die <code>Draw</code>-Methode kümmert sich um die Skalierung der Figuren und die Darstellung des Spielfelds</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">protected</span> <span style="color:#00f">override</span> <span style="color:#00f">void</span> Draw(GameTime gameTime) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cs" data-lang="cs"><span style="display:flex;"><span>    <span style="color:#00f">protected</span> <span style="color:#00f">override</span> <span style="color:#00f">void</span> Draw(GameTime gameTime) {
 </span></span><span style="display:flex;"><span>        GraphicsDevice.Clear(Color.CornflowerBlue);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Hintergrund zeichnen</span>
@@ -490,10 +490,10 @@ Beispiel:</p>
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

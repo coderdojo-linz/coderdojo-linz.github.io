@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Bubble Blaster </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -202,12 +202,12 @@
 <p>Starte für Python die Programmierumgebung IDLE und öffne eine neue Datei (<code>File -&gt; New File</code>) und speichere die Datei als Dateityp auf deinem Computer (<code>File -&gt; Save As</code>). Wähle als Dateityp .pyw, wenn du mit Windows arbeitest.</p>
 <h2 id="laden-von-packages">Laden von Packages</h2>
 <p>Für dieses Beispiel verwenden wir das Package <code>tkinter</code>. Um Zufallszahlen zu genierieren, brauchen wir auch das Package <code>random</code>. Für die Anzeige der Zeit und kurzen Pausen zwischen den Bewegungen der Bubbles brauchen wir die Funktionen <code>sleep</code> und <code>time</code> aus dem Package time.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">from</span> tkinter <span style="color:#00f">import</span> *
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#00f">from</span> tkinter <span style="color:#00f">import</span> *
 </span></span><span style="display:flex;"><span><span style="color:#00f">from</span> random <span style="color:#00f">import</span> *
 </span></span><span style="display:flex;"><span><span style="color:#00f">from</span> time <span style="color:#00f">import</span> sleep, time
 </span></span></code></pre></div><h2 id="ein-fenster-mit-einer-leinwand-erstellen">Ein Fenster mit einer Leinwand erstellen</h2>
 <p>Zuerst erzeugen wir ein neues Fenster, das wir <code>window</code> nennen. Als Titel wählen wir „Bubble Blaster“). Die Leinwand wird 500 Pixel hoch und 800 Pixel breit, der Hintergrund ist dunkelblau.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Leinwand erstellen</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Leinwand erstellen</span>
 </span></span><span style="display:flex;"><span>H = 500
 </span></span><span style="display:flex;"><span>B = 800
 </span></span><span style="display:flex;"><span>window = Tk()
@@ -216,7 +216,7 @@
 </span></span><span style="display:flex;"><span>c.pack()
 </span></span></code></pre></div><h2 id="das-u-boot-laden">Das U-Boot laden</h2>
 <p>Für das U-Boot laden wir ein Bild, das du <a href="img/uboot.png">hier</a> herunterladen kannst. Speichere dieses Bild in das gleiche Verzeichnis wie dein Python-Programm. Das geladene Bild positionieren wir dann in der Mitte der Leinwand (als x = B/2 und y = H/2). Den U-Boot Radius brauchen wir dann etwas später.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># U-Boot zeichnen</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># U-Boot zeichnen</span>
 </span></span><span style="display:flex;"><span>img = PhotoImage(file=<span style="color:#a31515">&#34;uboot.png&#34;</span>)
 </span></span><span style="display:flex;"><span>uboot = c.create_image(B/2, H/2, image=img)
 </span></span><span style="display:flex;"><span>UBOOT_R = 45
@@ -227,7 +227,7 @@
 <li>Bei Pfeiltaste „unten“ wird die y-Koordinate größer, bei „oben“ wird die y-Koordinate kleiner. (Der Koordinatenursprung ist links oben!) die x-Koordinate bleibt gleich.</li>
 <li>Damit das U-Boot sich nicht über den Rand der Leinwand hinausbewegen kann, fragen wir zuerst die Koordinaten x, y des U-Boots ab. Die Bewegung des U-Boots wird nur dann durchgeführt, wenn das U-Boot auch nach der Bewegung innerhalb der Leinwand bleibt.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># U-Boot steuern</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># U-Boot steuern</span>
 </span></span><span style="display:flex;"><span>UBOOT_GESCHW = 10
 </span></span><span style="display:flex;"><span><span style="color:#00f">def</span> uboot_bewegen(event):
 </span></span><span style="display:flex;"><span>        x, y = c.coords(uboot)
@@ -253,7 +253,7 @@
 <p>Die Geschwindigkeit der Bubbles beschränken wir durch die Konstante MAX_BUB_GESCHW, die wir auf 10 setzen und dann definieren wir noch eine Konstante GAP, die wir für die Anfangsposition der Bubbles brauchen.</p>
 <p>Nun schreiben wir uns eine Funktion, die genau eine Bubble erzeugt. Die Bubble entsteht rechts etwas außerhalb unseres Fensters. Die x-Koordinate setzen wir auf die Fensterbreite plus unseren definierten GAP. Die y-Koordinate soll eine Zufallszahl zwischen 0 und H sein (dafür verwenden wir den Befehl <code>randint</code>) und auch die Geschwindigkeit v wählen wir zufällig zwischen 1 und der maximal möglichen Geschwindigkeit.</p>
 <p>Nun erzeugen wir die Bubble und hängen die ID (id_num) an unsere ID-Liste an und die Geschwindigkeit hängen wir an unsere Geschwindigkeits-Liste an (mit der Methode <code>append</code>).</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubbles erzeugen</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubbles erzeugen</span>
 </span></span><span style="display:flex;"><span>bubble_img = PhotoImage(file=<span style="color:#a31515">&#34;bubble.png&#34;</span>)
 </span></span><span style="display:flex;"><span>BUB_R = 25
 </span></span><span style="display:flex;"><span>bub_id = []
@@ -270,14 +270,14 @@
 </span></span><span style="display:flex;"><span>    bub_geschw.append(v)
 </span></span></code></pre></div><h2 id="bubbles-bewegen">Bubbles bewegen</h2>
 <p>Für die Bewegung der Bubbles über den Bildschirm verwenden wir auch eine Funktion. Diese Funktion geht jede Bubble der Reihe nach durch. Die Anzahl der aktuell vorhandenen Bubbles bekommen wir über die Länge unserer ID-Liste: <code>len(bub_id)</code>. Bei jeder Bubble wird die x-Koordinate um ihre Geschwindigkeit verringert und die y-Koordinate gleich gelassen. Damit wandern die Bubbles horizontal nach links.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubbles bewegen</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubbles bewegen</span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">def</span> bewege_bubbles():
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(len(bub_id)):
 </span></span><span style="display:flex;"><span>        c.move(bub_id[i], -bub_geschw[i], 0)
 </span></span></code></pre></div><h2 id="hauptschleife--1-test">Hauptschleife – 1. Test</h2>
 <p>Nun ist es an der Zeit die, bis jetzt geschriebenen, Funktionen zu testen. In einer ersten Version unserer Hauptschleife verwenden wir eine Endlosschleife <code>(while True)</code>, in der wir laufend Blasen erzeugen, die Bubbles bewegen, das Fenster aktualisieren und dann kurz warten.</p>
 <p>Damit nicht zu viele Blasen erzeugt werden, sondern nur durchschnittlich in einem Zehntel der Zeitschritte, erzeugen wir eine Zufallszahl zwischen 1 und 10. Nur wenn diese Zufallszahl 1 ist, dann erzeugen wir eine Bubble und sonst nicht.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># HAUPTSCHLEIFE</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># HAUPTSCHLEIFE</span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">while</span> <span style="color:#00f">True</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> randint(1, 10) == 1:
 </span></span><span style="display:flex;"><span>        erzeuge_bubble()
@@ -287,13 +287,13 @@
 </span></span></code></pre></div><h2 id="bubbles-entfernen">Bubbles entfernen</h2>
 <p>Jetzt beschäftigen wir uns mit dem Entfernen der Bubbles. Bubbles verschwinden, wenn sie komplett über den Bildschirm gewandert sind und auch wenn das U-Boot die Bubble zum Platzen gebracht hat. Für beides brauchen wir eine Funktion, die eine Bubble löschen kann.</p>
 <p>Mit der Methode <code>delete</code> können wir das Bild einer Bubble entfernen, indem wir die ID angeben. Wir müssen aber auch unsere beiden Listen aktuell halten und dort die entsprechenden Einträge löschen.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubble löschen</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubble löschen</span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">def</span> lösche_bubble(i):
 </span></span><span style="display:flex;"><span>    c.delete(bub_id[i])
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">del</span> bub_id[i]
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">del</span> bub_geschw[i]
 </span></span></code></pre></div><p>Für das Entfernen der Bubbles, wenn sie über den linken Bildschirmrand hinausgewandert sind, verwenden wir folgende Funktion:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubbles entfernen (wenn sie über den Bildschirm gewandert sind)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubbles entfernen (wenn sie über den Bildschirm gewandert sind)</span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">def</span> entferne_bubbles():
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(len(bub_id)-1, -1, -1):
 </span></span><span style="display:flex;"><span>        x, y = c.coords(bub_id[i])
@@ -302,7 +302,7 @@
 </span></span></code></pre></div><p>Auch hier gehen wir wieder jede Bubble durch, holen und die aktuellen Koordinaten mit der Methode <code>coords</code> und löschen die Bubble, wenn die x-Koordinate mehr als unser GAP hinter dem linken Fensterrand liegt. Aber Achtung: Hier müssen wir die Liste unserer Bubbles von hinten durcharbeiten, sonst kommt unserer Nummerierung der Bubbles durcheinander. Würden wir z. B. die zweite Bubble löschen, dann wäre Bubble Nr. 3 plötzlich Bubble Nr. 2. Wir beginnen also bei der letzten Bubble (diese hat die Nr. <code>len(bub_id)</code>-1, weil ja Python bei 0 zu zählen beginnt). Dann ändern wir die Nummer immer um -1 und lassen den <code>range</code> bis -1 laufen, da das <code>range</code>-Objekt den letzten Eintrag nicht mehr dazu nimmt, also ist 0 der letzte Wert, den wir für i bekommen.</p>
 <h2 id="hauptschleife--2-test">Hauptschleife – 2. Test</h2>
 <p>Das Entfernen der Bubbles können wir gleich in unsere Hauptschleife einbauen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># HAUPTSCHLEIFE</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># HAUPTSCHLEIFE</span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">while</span> <span style="color:#00f">True</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> randint(1, 10) == 1:
 </span></span><span style="display:flex;"><span>        erzeuge_bubble()
@@ -312,7 +312,7 @@
 </span></span><span style="display:flex;"><span>    sleep(0.01)
 </span></span></code></pre></div><h2 id="bubbles-platzen-lassen">Bubbles platzen lassen</h2>
 <p>Wenn eine Bubble vom U-Boot getroffen wird, soll sie platzen und vom Bildschirm verschwinden. Um feststellen zu können, ob das U-Boot eine Bubble trifft, brauchen wir eine Funktion, die den Abstand zwischen dem U-Boot und einer Bubble berechnen kann. Dazu holen wir uns die aktuellen Koordinaten von U-Boot und Bubble und wenden den Satz von Pythagoras an. Die dazu notwendige Wurzelfunktion (<code>sqrt</code>) importieren wir aus dem <code>math</code>-Package. Der Abstand a wird als Wert der Funktion ausgegeben.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Entfernung zwischen Punkten</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Entfernung zwischen Punkten</span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">from</span> math <span style="color:#00f">import</span> sqrt
 </span></span><span style="display:flex;"><span><span style="color:#00f">def</span> abstand(uboot, id_bubble):
 </span></span><span style="display:flex;"><span>    x1, y1 = c.coords(uboot)
@@ -320,7 +320,7 @@
 </span></span><span style="display:flex;"><span>    a = sqrt((x2-x1)**2 + (y2-y1)**2)
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> a
 </span></span></code></pre></div><p>In einer Schleife gehen wir die Liste der Bubbles wieder von hinten durch. Wenn der Abstand zwischen U-Boot und Bubble kleiner ist als die Summe von U-Boot-Radius und Bubble-Radius, dann hat das U-Boot die Bubble getroffen. Wir erhöhen die Punkteanzahl, die wir zu Beginn auf 0 gesetzt haben um den Bubble-Radius + Bubble-Geschwindigkeit. Damit erreichen wir mehr Punkte, wenn die Bubble schneller ist. Die getroffene Bubble wird gelöscht und die erreichte Punkteanzahl wird ausgegeben.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubbles platzen lassen (wenn sie vom U-Boot getroffen werden)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Bubbles platzen lassen (wenn sie vom U-Boot getroffen werden)</span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">def</span> treffer():
 </span></span><span style="display:flex;"><span>    punkte = 0
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(len(bub_id)-1, -1, -1):
@@ -330,7 +330,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> punkte
 </span></span></code></pre></div><h2 id="hauptschleife--3-test">Hauptschleife – 3. Test</h2>
 <p>Um diese Funktion zu testen, bauen wir eine Variable score, die die Gesamtpunkteanzahl abspeichert, in die Hauptschleife ein. Zu Beginn ist die Punkteanzahl 0 und in jedem Zeitschritt wird die Punkteanzahl um die erreichten Treffer erhöht. Um die Punkteanzahl mitzuverfolgen, lassen wir sie im Shell-Fenster ausgeben.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># HAUPTSCHLEIFE</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># HAUPTSCHLEIFE</span>
 </span></span><span style="display:flex;"><span>score = 0
 </span></span><span style="display:flex;"><span><span style="color:#00f">while</span> <span style="color:#00f">True</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> randint(1, 10) == 1:
@@ -343,7 +343,7 @@
 </span></span><span style="display:flex;"><span>    sleep(0.01)
 </span></span></code></pre></div><h2 id="zeit-und-punkte-anzeigen">Zeit und Punkte anzeigen</h2>
 <p>In der Endversion des Spiels soll die Zeit und die Punktanzahl in unserem Fenster angezeigt werden. Wir schreiben dazu <code>create_text</code> einen passenden Text in die linke obere Ecke unserer Leinwand. Die beiden Zahlen geben die x und y Koordinaten an, mit der Option <code>fill</code> wird die Textfarbe festgelegt. Für die Anzeige der aktuellen Zeit und Punkteanzahl erzeugen wir die Objekte <code>time_text</code> und <code>score_text</code>. Mit den Funktionen <code>zeige_punkte</code> und <code>zeige_zeit</code>, ändern wir diese Objekte so, dass immer der aktuelle Stand zu sehen ist. Achtung: Der Text muss immer vom Datentyp string sein. Da die Zeit und die Punkte Zahlen sind, müssen wir sie mit der Funktion <code>str</code> in einen string umwandeln.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Zeit und Punkte anzeigen</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Zeit und Punkte anzeigen</span>
 </span></span><span style="display:flex;"><span>c.create_text(50, 30, text = <span style="color:#a31515">&#34;ZEIT&#34;</span>, fill=<span style="color:#a31515">&#34;white&#34;</span>)
 </span></span><span style="display:flex;"><span>c.create_text(150, 30, text = <span style="color:#a31515">&#34;PUNKTE&#34;</span>, fill=<span style="color:#a31515">&#34;white&#34;</span>)
 </span></span><span style="display:flex;"><span>time_text = c.create_text(50, 50, fill=<span style="color:#a31515">&#34;white&#34;</span>)
@@ -355,7 +355,7 @@
 </span></span></code></pre></div><p>Hauptschleife - komplett
 Nun können wir die Hauptschleife fertigstellen. Wir geben ein Zeitlimit von 30 Sekunden für das Spiel vor. In der Variable <code>ende</code> speichern wir den Endzeitpunkt des Spiels. Das ist die aktuelle Zeit, wenn das Spiel gestartet wird plus unser Zeitlimit. Die aktuelle Zeit bekommen wir mit dem Befehl <code>time()</code>. Anstelle der Endlosschleife überprüfen wir, ob unsere Spielzeit noch nicht abgelaufen ist. In der Schleife ergänzen wir die Anzeige der aktuellen Zeit und der Punkte.</p>
 <p>Ist das Spiel aus, zeigen wir den Text „GAME OVER“ und die erreichte Punkteanzahl an.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># HAUPTSCHLEIFE</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># HAUPTSCHLEIFE</span>
 </span></span><span style="display:flex;"><span>score = 0
 </span></span><span style="display:flex;"><span>TIME_LIMIT = 30
 </span></span><span style="display:flex;"><span>ende = time() + TIME_LIMIT
@@ -376,7 +376,7 @@ Nun können wir die Hauptschleife fertigstellen. Wir geben ein Zeitlimit von 30 
 </span></span><span style="display:flex;"><span>              text = <span style="color:#a31515">&#34;Punkte: &#34;</span> + str(score), fill = <span style="color:#a31515">&#34;white&#34;</span>)
 </span></span></code></pre></div><h2 id="aktivierung-des-fensters">Aktivierung des Fensters</h2>
 <p>Zu guter Letzt gibt es noch einen Befehl, um das Fenster zu aktivieren:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Aktivierung des Fensters</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#008000"># Aktivierung des Fensters</span>
 </span></span><span style="display:flex;"><span>window.mainloop()
 </span></span></code></pre></div><p>Wenn du nun das Programm speicherst (STRG + S), kannst du es ausführen (F5). Wie viele Punkte kannst du erreichen?</p>
 <h2 id="erweiterungsmöglichkeiten">Erweiterungsmöglichkeiten</h2>
@@ -407,10 +407,10 @@ Nun können wir die Hauptschleife fertigstellen. Wir geben ein Zeitlimit von 30 
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

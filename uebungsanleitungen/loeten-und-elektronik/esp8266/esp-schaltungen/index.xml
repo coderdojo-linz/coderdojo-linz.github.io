@@ -1,74 +1,78 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Beispiel-Schaltungen on CoderDojo Linz</title>
-    <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/</link>
-    <description>Recent content in Beispiel-Schaltungen on CoderDojo Linz</description>
-    <generator>Hugo</generator>
-    <language>de-AT</language>
-    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>D1 Mini im Akku-Betrieb</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/esp-akkubetrieb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/esp-akkubetrieb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>D1 Mini Wetterstation</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/mini-wetterstation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/mini-wetterstation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LED-Bild</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/led-bild/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/led-bild/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Komplettanleitung D1-Mini</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-full/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-full/</guid>
-      <description>&lt;h1 id=&#34;komplettanleitung-d1-mini&#34;&gt;Komplettanleitung D1-Mini&lt;/h1&gt;&#xA;&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;&#xA;&lt;p&gt;Lade hier die komplette Anleitung und das Beispielprojekt herunter:&lt;/p&gt;&#xA;&lt;p&gt;&lt;p class=&#34;text-center&#34;&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;D1mini_HTU_OLED_Projekt.zip&#34; target=&#34;_blank&#34;&gt;Download Projektdateien&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p class=&#34;text-center&#34;&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;D1mini_HTU_OLED.pdf&#34; target=&#34;_blank&#34;&gt;Download PDF Anleitung&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;anleitung&#34;&gt;Anleitung&lt;/h2&gt;&#xA;&lt;embed src= &#34;D1mini_HTU_OLED.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; /&gt;</description>
-    </item>
-    <item>
-      <title>Stromversorgung ESP8266</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/stromversorgung/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/stromversorgung/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Clown</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/clown/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/clown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>D1 Mini und MQTT</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/esp-mqtt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/esp-mqtt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Adafruit HUZZAH ESP8266 Remote Control</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/adafruit-remote-control/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/adafruit-remote-control/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Temperaturmessung mit dem ESP8266</title>
-      <link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/temperatur-webserver/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/temperatur-webserver/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Beispiel-Schaltungen on CoderDojo Linz</title>
+		<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/</link>
+		<description>Recent content in Beispiel-Schaltungen on CoderDojo Linz</description>
+		<generator>Hugo</generator>
+		<language>de-AT</language>
+		
+		
+		
+		
+			<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>D1 Mini im Akku-Betrieb</title>
+				<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/esp-akkubetrieb/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/esp-akkubetrieb/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>D1 Mini Wetterstation</title>
+				<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/mini-wetterstation/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/mini-wetterstation/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>LED-Bild</title>
+				<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/led-bild/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/led-bild/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Komplettanleitung D1-Mini</title>
+				<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-full/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/d1-mini-full/</guid>
+				<description>&lt;h1 id=&#34;komplettanleitung-d1-mini&#34;&gt;Komplettanleitung D1-Mini&lt;/h1&gt;&#xA;&lt;h2 id=&#34;download&#34;&gt;Download&lt;/h2&gt;&#xA;&lt;p&gt;Lade hier die komplette Anleitung und das Beispielprojekt herunter:&lt;/p&gt;&#xA;&lt;p&gt;&lt;p class=&#34;text-center&#34;&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;D1mini_HTU_OLED_Projekt.zip&#34; target=&#34;_blank&#34;&gt;Download Projektdateien&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p class=&#34;text-center&#34;&gt;&lt;a class=&#34;btn btn-primary&#34; href=&#34;D1mini_HTU_OLED.pdf&#34; target=&#34;_blank&#34;&gt;Download PDF Anleitung&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;anleitung&#34;&gt;Anleitung&lt;/h2&gt;&#xA;&lt;embed src= &#34;D1mini_HTU_OLED.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; /&gt;</description>
+			</item>
+			<item>
+				<title>Stromversorgung ESP8266</title>
+				<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/stromversorgung/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/stromversorgung/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Clown</title>
+				<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/clown/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/clown/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>D1 Mini und MQTT</title>
+				<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/esp-mqtt/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/esp-mqtt/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Adafruit HUZZAH ESP8266 Remote Control</title>
+				<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/adafruit-remote-control/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/adafruit-remote-control/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Temperaturmessung mit dem ESP8266</title>
+				<link>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/temperatur-webserver/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://linz.coderdojo.net/uebungsanleitungen/loeten-und-elektronik/esp8266/esp-schaltungen/temperatur-webserver/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

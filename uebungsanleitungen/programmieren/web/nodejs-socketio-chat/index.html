@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Chat mit Node.js und Socket.io </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -207,68 +207,68 @@
 <p>Hier ist der Code für unseren Chat-Server. Schreibe ihn in deine <em>server.js</em> Datei und achte besonders auf die enthaltenen Kommentarzeilen. Wenn du den Code abtippst, musst du die Kommentarzeilen nicht unbedingt mit eingeben.</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#008000">// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#008000">// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
 </span></span></span><span style="display:flex;"><span><span style="color:#008000">// aus dem Ordner &#34;public&#34; zu veröffentlichen.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>);
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">var</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#00f">var</span> app = express();
 </span></span><span style="display:flex;"><span><span style="color:#00f">var</span> server = require(<span style="color:#a31515">&#39;http&#39;</span>).createServer(app);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Mit dieser zusätzlichen Zeile bringen wir Socket.io in unseren Server.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> io = require(<span style="color:#a31515">&#39;socket.io&#39;</span>)(server);
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">var</span> io = require(<span style="color:#a31515">&#39;socket.io&#39;</span>)(server);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Mit diesem Kommando starten wir den Webserver.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> port = process.env.PORT || 3000;
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">var</span> port = process.env.PORT || 3000;
 </span></span><span style="display:flex;"><span>server.listen(port, <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Wir geben einen Hinweis aus, dass der Webserer läuft.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  console.log(<span style="color:#a31515">&#39;Webserver läuft und hört auf Port %d&#39;</span>, port);
+</span></span></span><span style="display:flex;"><span>  console.log(<span style="color:#a31515">&#39;Webserver läuft und hört auf Port %d&#39;</span>, port);
 </span></span><span style="display:flex;"><span>});
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
 </span></span></span><span style="display:flex;"><span><span style="color:#008000">// im Ordner &#34;public&#34; zu finden sind.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>app.use(express.<span style="color:#00f">static</span>(__dirname + <span style="color:#a31515">&#39;/public&#39;</span>));
+</span></span></span><span style="display:flex;"><span>app.use(express.<span style="color:#00f">static</span>(__dirname + <span style="color:#a31515">&#39;/public&#39;</span>));
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// === Ab hier folgt der Code für den Chat-Server
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Hier sagen wir Socket.io, dass wir informiert werden wollen,
 </span></span></span><span style="display:flex;"><span><span style="color:#008000">// wenn sich etwas bei den Verbindungen (&#34;connections&#34;) zu 
 </span></span></span><span style="display:flex;"><span><span style="color:#008000">// den Browsern tut. 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>io.on(<span style="color:#a31515">&#39;connection&#39;</span>, <span style="color:#00f">function</span> (socket) {
+</span></span></span><span style="display:flex;"><span>io.on(<span style="color:#a31515">&#39;connection&#39;</span>, <span style="color:#00f">function</span> (socket) {
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Die variable &#34;socket&#34; repräsentiert die aktuelle Web Sockets
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">// Verbindung zu jeweiligen Browser client.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  
+</span></span></span><span style="display:flex;"><span>  <span style="color:#008000">// Verbindung zu jeweiligen Browser client.
+</span></span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Kennzeichen, ob der Benutzer sich angemeldet hat 
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">var</span> addedUser = <span style="color:#00f">false</span>;
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> addedUser = <span style="color:#00f">false</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Funktion, die darauf reagiert, wenn sich der Benutzer anmeldet
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  socket.on(<span style="color:#a31515">&#39;add user&#39;</span>, <span style="color:#00f">function</span> (username) {
+</span></span></span><span style="display:flex;"><span>  socket.on(<span style="color:#a31515">&#39;add user&#39;</span>, <span style="color:#00f">function</span> (username) {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Benutzername wird in der aktuellen Socket-Verbindung gespeichert
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    socket.username = username;
+</span></span></span><span style="display:flex;"><span>    socket.username = username;
 </span></span><span style="display:flex;"><span>    addedUser = <span style="color:#00f">true</span>;
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Dem Client wird die &#34;login&#34;-Nachricht geschickt, damit er weiß,
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#008000">// dass er erfolgreich angemeldet wurde.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    socket.emit(<span style="color:#a31515">&#39;login&#39;</span>);
+</span></span></span><span style="display:flex;"><span>    <span style="color:#008000">// dass er erfolgreich angemeldet wurde.
+</span></span></span><span style="display:flex;"><span>    socket.emit(<span style="color:#a31515">&#39;login&#39;</span>);
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Alle Clients informieren, dass ein neuer Benutzer da ist.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    socket.broadcast.emit(<span style="color:#a31515">&#39;user joined&#39;</span>, socket.username);
+</span></span></span><span style="display:flex;"><span>    socket.broadcast.emit(<span style="color:#a31515">&#39;user joined&#39;</span>, socket.username);
 </span></span><span style="display:flex;"><span>  });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Funktion, die darauf reagiert, wenn ein Benutzer eine Nachricht schickt
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  socket.on(<span style="color:#a31515">&#39;new message&#39;</span>, <span style="color:#00f">function</span> (data) {
+</span></span></span><span style="display:flex;"><span>  socket.on(<span style="color:#a31515">&#39;new message&#39;</span>, <span style="color:#00f">function</span> (data) {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Sende die Nachricht an alle Clients
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    socket.broadcast.emit(<span style="color:#a31515">&#39;new message&#39;</span>, {
+</span></span></span><span style="display:flex;"><span>    socket.broadcast.emit(<span style="color:#a31515">&#39;new message&#39;</span>, {
 </span></span><span style="display:flex;"><span>      username: socket.username,
 </span></span><span style="display:flex;"><span>      message: data
 </span></span><span style="display:flex;"><span>    });
 </span></span><span style="display:flex;"><span>  });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Funktion, die darauf reagiert, wenn sich ein Benutzer abmeldet.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">// Benutzer müssen sich nicht explizit abmelden. &#34;disconnect&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#008000">// tritt auch auf wenn der Benutzer den Client einfach schließt.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  socket.on(<span style="color:#a31515">&#39;disconnect&#39;</span>, <span style="color:#00f">function</span> () {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#008000">// Benutzer müssen sich nicht explizit abmelden. &#34;disconnect&#34;
+</span></span></span><span style="display:flex;"><span>  <span style="color:#008000">// tritt auch auf wenn der Benutzer den Client einfach schließt.
+</span></span></span><span style="display:flex;"><span>  socket.on(<span style="color:#a31515">&#39;disconnect&#39;</span>, <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (addedUser) {
 </span></span><span style="display:flex;"><span>      <span style="color:#008000">// Alle über den Abgang des Benutzers informieren
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>      socket.broadcast.emit(<span style="color:#a31515">&#39;user left&#39;</span>, socket.username);
+</span></span></span><span style="display:flex;"><span>      socket.broadcast.emit(<span style="color:#a31515">&#39;user left&#39;</span>, socket.username);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  });
 </span></span><span style="display:flex;"><span>});
@@ -276,7 +276,7 @@
 <ol>
 <li>Der Client besteht aus einer HTML-Datei und einer JavaScript-Datei. Beginnen wir mit dem HTML. Hier ist der Code, den du in <em>public/chat.html</em> schreiben musst. Achte besonders auf die Kommentare.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!doctype html&gt;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!doctype html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;html lang=<span style="color:#a31515">&#34;de&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;head&gt;
 </span></span><span style="display:flex;"><span>  &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
@@ -322,89 +322,89 @@
 </span></span></code></pre></div><ol start="2">
 <li>Ganz am Ende wird auf die JavaScript-Datei <em>main.js</em> verwiesen. Die musst du als nächstes erstellen. Hier ist der Code. Wie immer gilt: Gehe die enthaltenen Kommentare Schritt für Schritt durch.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>$(<span style="color:#00f">function</span> () {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>$(<span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Hilfsvariablen für HTML-Elemente werden mit Hilfe von JQuery gesetzt.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">var</span> $window = $(window);
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> $window = $(window);
 </span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> $usernameInput = $(<span style="color:#a31515">&#39;.usernameInput&#39;</span>); <span style="color:#008000">// Eingabefeld für Benutzername
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">var</span> $messages = $(<span style="color:#a31515">&#39;.messages&#39;</span>);           <span style="color:#008000">// Liste mit Chat-Nachrichten
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">var</span> $inputMessage = $(<span style="color:#a31515">&#39;.inputMessage&#39;</span>);   <span style="color:#008000">// Eingabefeld für Chat-Nachricht
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">var</span> $loginPage = $(<span style="color:#a31515">&#39;.login.page&#39;</span>);        <span style="color:#008000">// Login-Seite
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">var</span> $chatPage = $(<span style="color:#a31515">&#39;.chat.page&#39;</span>);          <span style="color:#008000">// Chat-Seite
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> $messages = $(<span style="color:#a31515">&#39;.messages&#39;</span>);           <span style="color:#008000">// Liste mit Chat-Nachrichten
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> $inputMessage = $(<span style="color:#a31515">&#39;.inputMessage&#39;</span>);   <span style="color:#008000">// Eingabefeld für Chat-Nachricht
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> $loginPage = $(<span style="color:#a31515">&#39;.login.page&#39;</span>);        <span style="color:#008000">// Login-Seite
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> $chatPage = $(<span style="color:#a31515">&#39;.chat.page&#39;</span>);          <span style="color:#008000">// Chat-Seite
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> username;                             <span style="color:#008000">// Aktueller Benutzername
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">var</span> connected = <span style="color:#00f">false</span>;                    <span style="color:#008000">// Kennzeichen ob angemeldet
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> connected = <span style="color:#00f">false</span>;                    <span style="color:#008000">// Kennzeichen ob angemeldet
+</span></span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Eingabefeld für Benutzername erhält den Fokus
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">var</span> $currentInput = $usernameInput.focus();
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> $currentInput = $usernameInput.focus();
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Socket.io Objekt anlegen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">var</span> socket = io();
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">var</span> socket = io();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// ==== Code für Benutzerschnittstelle
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Tastendruck behandeln
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  $window.keydown(<span style="color:#00f">function</span> (event) {
+</span></span></span><span style="display:flex;"><span>  $window.keydown(<span style="color:#00f">function</span> (event) {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Die Return-Taste (Ascii 13) behandeln wir speziell
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (event.which === 13) {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (event.which === 13) {
 </span></span><span style="display:flex;"><span>      <span style="color:#00f">if</span> (username) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Wenn der Benutzername schon gesetzt ist, handelt es sich
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// um eine Chat-Nachricht.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        sendMessage();
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// um eine Chat-Nachricht.
+</span></span></span><span style="display:flex;"><span>        sendMessage();
 </span></span><span style="display:flex;"><span>      } <span style="color:#00f">else</span> {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// Wenn der Benutzername noch nicht gesetzt ist, hat sich
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        <span style="color:#008000">// der Benutzer gerade angemeldet.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        setUsername();
+</span></span></span><span style="display:flex;"><span>        <span style="color:#008000">// der Benutzer gerade angemeldet.
+</span></span></span><span style="display:flex;"><span>        setUsername();
 </span></span><span style="display:flex;"><span>      }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Benutzername wird gesetzt
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">function</span> setUsername() {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">function</span> setUsername() {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Benutzername aus Eingabefeld holen (ohne Leerzeichen am Anfang oder Ende).
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    username = $usernameInput.val().trim();
+</span></span></span><span style="display:flex;"><span>    username = $usernameInput.val().trim();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Prüfen, ob der Benutzername nicht leer ist
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (username) {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (username) {
 </span></span><span style="display:flex;"><span>      <span style="color:#008000">// Loginmaske ausblenden und Chat-Seite einblenden
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>      $loginPage.fadeOut();
+</span></span></span><span style="display:flex;"><span>      $loginPage.fadeOut();
 </span></span><span style="display:flex;"><span>      $chatPage.show();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      <span style="color:#008000">// Chat-Nachricht wird neues, aktuelles Eingabefeld
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>      $currentInput = $inputMessage.focus();
+</span></span></span><span style="display:flex;"><span>      $currentInput = $inputMessage.focus();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      <span style="color:#008000">// Server mit Socket.io über den neuen Benutzer informieren. Wenn die
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>      <span style="color:#008000">// Anmeldung klappt wird der Server die &#34;login&#34;-Nachricht zurückschicken.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>      socket.emit(<span style="color:#a31515">&#39;add user&#39;</span>, username);
+</span></span></span><span style="display:flex;"><span>      <span style="color:#008000">// Anmeldung klappt wird der Server die &#34;login&#34;-Nachricht zurückschicken.
+</span></span></span><span style="display:flex;"><span>      socket.emit(<span style="color:#a31515">&#39;add user&#39;</span>, username);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Chat-Nachricht versenden
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">function</span> sendMessage() {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">function</span> sendMessage() {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Nachricht aus Eingabefeld holen (ohne Leerzeichen am Anfang oder Ende).
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">var</span> message = $inputMessage.val().trim();
+</span></span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> message = $inputMessage.val().trim();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Prüfen, ob die Nachricht nicht leer ist und wir verbunden sind.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (message &amp;&amp; connected) {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (message &amp;&amp; connected) {
 </span></span><span style="display:flex;"><span>      <span style="color:#008000">// Eingabefeld auf leer setzen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>      $inputMessage.val(<span style="color:#a31515">&#39;&#39;</span>);
+</span></span></span><span style="display:flex;"><span>      $inputMessage.val(<span style="color:#a31515">&#39;&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      <span style="color:#008000">// Chat-Nachricht zum Chatprotokoll hinzufügen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>      addChatMessage({ username: username, message: message });
+</span></span></span><span style="display:flex;"><span>      addChatMessage({ username: username, message: message });
 </span></span><span style="display:flex;"><span>      
 </span></span><span style="display:flex;"><span>      <span style="color:#008000">// Server über neue Nachricht informieren. Der Server wird die Nachricht
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>      <span style="color:#008000">// an alle anderen Clients verteilen.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>      socket.emit(<span style="color:#a31515">&#39;new message&#39;</span>, message);
+</span></span></span><span style="display:flex;"><span>      <span style="color:#008000">// an alle anderen Clients verteilen.
+</span></span></span><span style="display:flex;"><span>      socket.emit(<span style="color:#a31515">&#39;new message&#39;</span>, message);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Protokollnachricht zum Chat-Protokoll anfügen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">function</span> log(message) {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">function</span> log(message) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> $el = $(<span style="color:#a31515">&#39;&lt;li&gt;&#39;</span>).addClass(<span style="color:#a31515">&#39;log&#39;</span>).text(message);
 </span></span><span style="display:flex;"><span>    $messages.append($el);
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Chat-Nachricht zum Chat-Protokoll anfügen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">function</span> addChatMessage(data) {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">function</span> addChatMessage(data) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> $usernameDiv = $(<span style="color:#a31515">&#39;&lt;span class=&#34;username&#34;/&gt;&#39;</span>).text(data.username);
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> $messageBodyDiv = $(<span style="color:#a31515">&#39;&lt;span class=&#34;messageBody&#34;&gt;&#39;</span>).text(data.message);
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">var</span> $messageDiv = $(<span style="color:#a31515">&#39;&lt;li class=&#34;message&#34;/&gt;&#39;</span>).append($usernameDiv, $messageBodyDiv);
@@ -412,25 +412,25 @@
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// ==== Code für Socket.io Events
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Server schickt &#34;login&#34;: Anmeldung war erfolgreich
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  socket.on(<span style="color:#a31515">&#39;login&#39;</span>, <span style="color:#00f">function</span> (data) {
+</span></span></span><span style="display:flex;"><span>  socket.on(<span style="color:#a31515">&#39;login&#39;</span>, <span style="color:#00f">function</span> (data) {
 </span></span><span style="display:flex;"><span>    connected = <span style="color:#00f">true</span>;
 </span></span><span style="display:flex;"><span>    log(<span style="color:#a31515">&#34;Willkommen beim Chat!&#34;</span>);
 </span></span><span style="display:flex;"><span>  });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Server schickt &#34;new message&#34;: Neue Nachricht zum Chat-Protokoll hinzufügen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  socket.on(<span style="color:#a31515">&#39;new message&#39;</span>, <span style="color:#00f">function</span> (data) {
+</span></span></span><span style="display:flex;"><span>  socket.on(<span style="color:#a31515">&#39;new message&#39;</span>, <span style="color:#00f">function</span> (data) {
 </span></span><span style="display:flex;"><span>    addChatMessage(data);
 </span></span><span style="display:flex;"><span>  });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Server schickt &#34;user joined&#34;: Neuen Benutzer im Chat-Protokoll anzeigen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  socket.on(<span style="color:#a31515">&#39;user joined&#39;</span>, <span style="color:#00f">function</span> (data) {
+</span></span></span><span style="display:flex;"><span>  socket.on(<span style="color:#a31515">&#39;user joined&#39;</span>, <span style="color:#00f">function</span> (data) {
 </span></span><span style="display:flex;"><span>    log(data + <span style="color:#a31515">&#39; joined&#39;</span>);
 </span></span><span style="display:flex;"><span>  });
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Server schickt &#34;user left&#34;: Benutzer, der gegangen ist, im Chat-Protokoll anzeigen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  socket.on(<span style="color:#a31515">&#39;user left&#39;</span>, <span style="color:#00f">function</span> (data) {
+</span></span></span><span style="display:flex;"><span>  socket.on(<span style="color:#a31515">&#39;user left&#39;</span>, <span style="color:#00f">function</span> (data) {
 </span></span><span style="display:flex;"><span>    log(data + <span style="color:#a31515">&#39; left&#39;</span>);
 </span></span><span style="display:flex;"><span>  });
 </span></span><span style="display:flex;"><span>});
@@ -575,15 +575,15 @@
 <h2 id="chat-mit-passwort-sichern">Chat mit Passwort sichern</h2>
 <p>Damit nicht jeder einfach in deinem Chat mitlesen kann, kannst du die Applikation mit einem Passwort sichern. Installiere dazu in der Kommandozeile das Paket express-basic-auth mit dem Befehl <code>npm install express-basic-auth --save</code> (<em>Achtung:</em> Bevor du ihn ausführst, stelle sicher, dass du im Verzeichnis <em>C:\Code\Chat</em> bist).</p>
 <p>Jetzt kannst du den Code in server.js um folgende Zeilen erweitern:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#008000">// Mit diesem Kommando starten wir den Webserver.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> port = process.env.PORT || 3000;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#008000">// Mit diesem Kommando starten wir den Webserver.
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">var</span> port = process.env.PORT || 3000;
 </span></span><span style="display:flex;"><span>app.use(require(<span style="color:#a31515">&#39;express-basic-auth&#39;</span>)({
 </span></span><span style="display:flex;"><span>  users: { <span style="color:#a31515">&#39;admin&#39;</span>: <span style="color:#a31515">&#39;password&#39;</span> }, <span style="color:#008000">// vergib hier deine gewünschten Benutzernamen und Passwörter
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  challenge: <span style="color:#00f">true</span>
+</span></span></span><span style="display:flex;"><span>  challenge: <span style="color:#00f">true</span>
 </span></span><span style="display:flex;"><span>}));
 </span></span><span style="display:flex;"><span>server.listen(port, <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Wir geben einen Hinweis aus, dass der Webserer läuft.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  console.log(<span style="color:#a31515">&#39;Webserver läuft und hört auf Port %d&#39;</span>, port);
+</span></span></span><span style="display:flex;"><span>  console.log(<span style="color:#a31515">&#39;Webserver läuft und hört auf Port %d&#39;</span>, port);
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><p>Wenn du den Webserver jetzt wieder mit <code>node server.js</code> startest und dann deine Seite <code>localhost:3000/index.html</code> öffnest, bekommst zu einen Dialog zum Eingeben deines Usernamen und deines Passworts angezeigt.</p>
 
@@ -639,10 +639,10 @@
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

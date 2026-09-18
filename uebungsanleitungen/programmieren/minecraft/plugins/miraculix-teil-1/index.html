@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Miraculix der Druide - Teil 1 </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -190,7 +190,7 @@
             <div class="col-12 sushi-content"> <h1 id="miraculix-der-druide---teil-1">Miraculix der Druide - Teil 1</h1>
 <h2 id="einleitung">Einleitung</h2>
 <p>Vielleicht hast du schon einmal Asterix und Obelix gelesen oder einen der Filme angesehen. Dann wirst du dich sicherlich an den Druiden Miraculix erinnern, das ist der, der den Zaubertrank zubereiten kann. Wir werden in dieser und einigen weiteren Episoden ein Plugin programmieren, mit dem du Miraculix spielen kannst. Wir fangen damit an, dass du dich und andere Spieler sofort heilen kannst. Auch kannst du deine Gesundheit oder die Gesundheit anderer Spieler anzeigen. Dazu soll es folgende Befehle geben:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>/gethealth me
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>/gethealth me
 </span></span><span style="display:flex;"><span>/gethealth OidaZocktYT
 </span></span><span style="display:flex;"><span>/heal me
 </span></span><span style="display:flex;"><span>/heal OidaZocktYT
@@ -311,21 +311,21 @@
 <h3 id="über-menschen-berufe-variablen-parameter-und-datentypen">Über Menschen, Berufe, Variablen, Parameter und Datentypen</h3>
 <p>In der letzten Episode, als wir das erste Plugin geschrieben haben, war ich ein bisschen schlampig bei meinen Erklärungen. Du erinnerst dich sicher noch an den Parameter <code>sender</code>, mit dem wir die Spielerin, die das Kommando eingetippt hat &ldquo;ansprechen&rdquo; konnten und ihr eine Nachricht mit Hilfe der Methode <code>sendMessage</code> senden konnten.</p>
 <p>Ja gut und ich habe dir gar nicht gesagt, warum das so funktioniert, weil ich wollte, dass wir ganz schnell unser Plugin fertig bekommen. Diese Sache hole ich jetzt nach. Du erinnerst dich ja noch, dass die leere Methode <code>onCommand</code> so ausgesehen hat:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Wir haben dann gesagt, dass in den runden Klammern die Parameter stehen, damit man der Methode bestimmte Informationen, die sie zum Arbeiten braucht, &ldquo;mitgeben&rdquo; kann. So wie oben den Sender des Kommandos, also den, der das Kommando eingetippt hat.</p>
 <p>Dabei ist nun folgendes zu beachten: <code>sender</code> ist der <em>Name</em> des Parameters und <code>CommandSender</code> der <em>Typ</em> des Parameters. Das ist ein bisschen so, wie im echten Leben mit den Menschen und ihren Berufen. Beispielsweise könnten wir sagen, dass in dem Falle, dass irgendwo gearbeitet wird, wir einen Tischler und einen Programmierer brauchen. &ldquo;Anton ist ein Tischler&rdquo; und &ldquo;Sophia ist eine Programmiererin&rdquo;. In Java-Notation könnte das dann so aussehen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onWork(Joiner anton, Programmer sophia) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onWork(Joiner anton, Programmer sophia) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Also <code>onWork</code> ist der Name der Methode und <code>anton</code> und <code>sophia</code> sind die Parameter. Wir werden noch eine andere Schreibweise kennenlernen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Joiner anton;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Joiner anton;
 </span></span><span style="display:flex;"><span>Programmer sophia;
 </span></span></code></pre></div><p>Das werden wir dann verwenden, wenn wir in einer Methode kurz mal jemanden mit einem bestimmten Beruf benötigen (äh, einen Namen mit einem bestimmten Typ natürlich). In diesem Fall sagen wir nicht <em>Parameter</em> sondern <em>Variable</em>, sonst ist es aber das gleiche.</p>
 <p>Ja, Java ist eine etwas schlichte Sprache, aber so ist das nun mal. Außerdem schreiben wir Namen in Java immer klein, dafür die &ldquo;Berufe&rdquo; (eigentlich sprechen wir von Datentypen) immer groß. Auf unser Beispiel oben angewendet können wir jetzt sagen &ldquo;<code>sender</code> ist ein <code>CommandSender</code>&rdquo;.</p>
 <p>Wie im echten Leben auch, können wir Menschen mit unterschiedlichen Berufen unterschiedliche &ldquo;Befehle&rdquo; geben. Einem Tischler können wir sagen &ldquo;baue mir bitte ein Wohnzimmer&rdquo; und er wird das machen können. Eine Programmiererin können wir bitten &ldquo;schreibe mir ein Minecraft-Plugin&rdquo;. In Java würde das vielleicht dann so aussehen</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Joiner anton;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Joiner anton;
 </span></span><span style="display:flex;"><span>Programmer sophia;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>anton.buildLivingRoom();
@@ -334,30 +334,30 @@
 <p>Jetzt, da du das verstanden hast, kannst du dir auch vorstellen, dass du den Namen <code>sender</code> im <code>onCommand</code> ändern kannst, ohne dass die Funktionalität leiden würde. Wie im echten Leben kannst du deine Kinder nennen, wie du magst. Wenn du aber den Datentyp <code>CommandSender</code> ändern würdest, dann würde plötzlich nix mehr funktionieren, weil das <code>onCommand</code> als ersten Parameter einen <code>CommandSender</code> erwartet. Wieder hilft uns das echte Leben: Wenn du neue Möbel für dein Wohnzimmer brauchst, dann willst du einen Tischler und keinen Programmierer.</p>
 <h2 id="ausführliche-anleitung-gethealth">Ausführliche Anleitung /gethealth</h2>
 <p>Wir beginnen mit einem einfachen Fall. Sobald der Spieler <code>/gethealth</code> im Spiel eingibt, soll die Gesundheit als Zahl zwischen 0 und 20 ausgegeben werden. Also sehen wir uns den Typ des Parameters <code>sender</code> einmal an. Das ist ein <code>CommandSender</code> und wenn du nun <code>sender.</code> in einer Zeile der Methode <code>onCommand</code> eintippst, dann siehst du, was so ein <code>CommandSender</code> alles kann. Du wirst feststellen, dass der aber mit Gesundheit nix am Hut hat, weil wir keine Methode finden, die irgendwo &ldquo;Health&rdquo; im Namen hat. Aber es gibt einen anderen Datentypen, nämlich <code>Player</code>, der den Spieler in einem Minecraft-Game genauer spezifiziert. Genauer gesagt ist ein <code>Player</code> auch ein <code>CommandSender</code>und kann aber noch um einiges mehr. Du kannst das ausprobieren, indem du folgendes eintippst:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    Player player;
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    player.
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>Jetzt sollte das Menü mit den verfügbaren Methoden ein wenig länger sein. Du findest auch alle Methoden vom <code>CommandSender</code> wieder und eben noch mehr. Besonders auffallen sollten dir die Methoden <code>getHealth</code> und <code>setHealth</code>.</p>
 <p>Wenn also der <code>sender</code> nicht nur ein <code>CommandSender</code> sondern auch ein <code>Player</code> ist (und das ist er auf jeden Fall, wenn ein Spieler unser Command <code>/gethealth</code> eingibt), dann könnten wir auf das viel umfangreichere Methodenangebot von <code>Player</code> zurückgreifen. Dazu brauchen wir nur noch einen Trick, wie wir aus einem <code>CommandSender</code> einen <code>Player</code> machen können. Dazu legen wir uns eine Variable vom Type <code>Player</code> an und weisen ihr den sender zu. Das sieht dann folgendermaßen aus:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    Player player = sender;
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>Du wirst aber sehen, dass der Compiler noch nicht einverstanden ist. <code>incompatible types: CommandSender cannot be converted to Player</code> meint er und hat aber auch gleich mehrere Lösungsvorschläge. Wir nehmen den ersten, also wir <em>casten</em> den <code>sender</code> in einen <code>Player</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    Player player = (Player)sender;
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>Nun ist die Variable <code>player</code> der Player, welcher das Kommando abgeschickt hat und wir haben den vollen Zugriff auf alle Methoden von <code>Player</code>. Und das nutzen wir gleich schamlos aus und geben die Gesundheit des Spielers aus:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex;"><span>    Player player = (Player) sender;
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    sender.sendMessage(<span style="color:#a31515">&#34;Health of &#34;</span> + player.getName() + <span style="color:#a31515">&#34;: &#34;</span> + player.getHealth());
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> <span style="color:#00f">true</span>;
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>Jetzt fehlt uns noch das <code>plugin.yml</code>:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#008000">## YAML Template.</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#008000">## YAML Template.</span>
 </span></span><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>name: Getafix
 </span></span><span style="display:flex;"><span>main: com.bajupa.getafix.Getafix
@@ -374,7 +374,7 @@
 <h3 id="eine-notwendige-erweiterung">Eine notwendige Erweiterung</h3>
 <p>Wir können ja alle Minecraft-Befehle (also auch die von Plugins) in der Server-Konsole eintippen. Das probierst du am besten auch gleich aus. Achte darauf, dass in diesem Fall <strong>kein</strong> Schrägstrich davorkommt.</p>
 <p>Und hast du schon probiert? Da haben wir nämlich jetzt den Salat und der heißt <em>Exception</em>. Wenn eine Exception passiert, dann heißt das immer, dass der Programmierer Mist gebaut hat und das wollen wir ja nun wirklich nicht auf uns sitzen lassen. Daher schauen wir uns das mal ein wenig genauer an:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>[16:32:03 WARN]: Unexpected exception <span style="color:#00f">while</span> parsing console command <span style="color:#a31515">&#34;gethealth&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>[16:32:03 WARN]: Unexpected exception <span style="color:#00f">while</span> parsing console command <span style="color:#a31515">&#34;gethealth&#34;</span>
 </span></span><span style="display:flex;"><span>org.bukkit.command.CommandException: Unhandled exception executing command <span style="color:#a31515">&#39;gethealth&#39;</span> in plugin FirstPlugin v0.1.0
 </span></span><span style="display:flex;"><span>at org.bukkit.command.PluginCommand.execute(PluginCommand.java:46) ~[craftbukkit.jar:git-Spigot-6d16e64-b105298]
 </span></span><span style="display:flex;"><span>at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:141) ~[craftbukkit.jar:git-Spigot-6d16e64-b105298]
@@ -401,12 +401,12 @@
 <ol>
 <li> `sender instanceof Player` ist eine Aussage, die eindeutig mit wahr oder falsch beantwortet werden kann (so ähnlich wie "jetzt scheint die Sonne"). Wenn ein Spieler im Spiel unser Command aufruft, ist `sender instanceof Player` wahr (auf Englisch `true`), wenn jemand in der Console unser Command aufruft ist `sender instanceof Player` aber falsch (auf Englisch `false`)</li>
 <li>Wenn wir Code ausführen wollen, der nur im Fall, wenn die Aussage `sender instanceof Player` wahr ist dann gibt es in Java das schöne Wort `if`. Insgesamt sieht das dann so aus:
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">if</span> (sender <span style="color:#00f">instanceof</span> Player) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">if</span> (sender <span style="color:#00f">instanceof</span> Player) {
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Achte darauf, dass die Aussage (meistens sagen wir einfach die Bedingung) in einem runden Klammernpaar geschrieben werden muss (so ähnlich wie die Parameter einer Methode). Zwischen den geschwungenen Klammern kommt dann der Code, der ausgeführt werden soll, wenn die Bedingung wahr ist.</p>
 </li>
 <li>Für den Fall, dass die Aussage nicht wahr ist, und wir in diesem Fall anderen Code ausführen wollen, gibt es das Wort `else`. Alles zusammen sieht das dann so aus:
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    <span style="color:#00f">if</span> (sender <span style="color:#00f">instanceof</span> Player) {
 </span></span><span style="display:flex;"><span>        Player player = (Player) sender;
 </span></span><span style="display:flex;"><span>        sender.sendMessage(<span style="color:#a31515">&#34;Health of &#34;</span> + player.getName() + <span style="color:#a31515">&#34;: &#34;</span> + player.getHealth());
@@ -423,7 +423,7 @@ Gut, dann bauen und testen!
 <h2 id="ausführliche-anleitung-heal">Ausführliche Anleitung /heal</h2>
 <h3 id="das-yml-file-erweitern">Das yml-file erweitern</h3>
 <p>Wir müssen unser Plugin so umschreiben, dass es nun auf zwei verschiedene Kommandos reagiert. Beginnen wir einmal damit, dass es überhaupt auf ein weiteres Kommando reagiert. Dazu erweitern wir das <code>plugin.yml</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#008000">## YAML Template.</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#008000">## YAML Template.</span>
 </span></span><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>name: Getafix
 </span></span><span style="display:flex;"><span>main: com.bajupa.getafix.Getafix
@@ -449,7 +449,7 @@ Gut, dann bauen und testen!
 <h3 id="erste-code-erweiterungen">Erste Code-Erweiterungen</h3>
 <p>Als erstes sehen wir uns die Sache mit dem <code>label</code> an. Du erinnerst dich? <code>label</code> ist der Name und <code>String</code> ist der Datentyp. <code>String</code>s sind Zeichenketten, das hatten wir schon mal bei der Methode <code>sendMessage</code>, der wir einen Text zum Anzeigen mitgegeben haben und das war auch der mit dem + zum Aneinanderkleben von mehreren Strings. So ein String kann aber noch mehr.</p>
 <p>Als erstes sehen wir uns aber an, ob im <code>label</code> auch wirklich das Kommando drinnensteht. Da wir mit <code>sendMessage</code> eine Methode haben, einen String auszugeben benutzen wir das gleich mal:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    sender.sendMessage(<span style="color:#a31515">&#34;Label: &#34;</span> + label);
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (sender <span style="color:#00f">instanceof</span> Player) {
 </span></span><span style="display:flex;"><span>        Player player = (Player) sender;
@@ -462,7 +462,7 @@ Gut, dann bauen und testen!
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>Wenn du das jetzt baust und das jar neu lädst müsste bei Aufruf von <code>/gethealth</code> oder auch <code>/heal</code> immer das Kommando, das du eingegeben hast, ausgegeben werden. Naja, damit haben wir doch schon mal unser Unterscheidungskriterium. Jetzt wollen wir das ganze in ein <code>if</code> verpacken und dann haben wir wieder schön unterscheidbare Code-Teile, die je nach Eingabe ausgeführt werden.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>    <span style="color:#00f">if</span> (label.equalsIgnoreCase(<span style="color:#a31515">&#34;gethealth&#34;</span>)) {
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (sender <span style="color:#00f">instanceof</span> Player) {
 </span></span><span style="display:flex;"><span>            Player player = (Player) sender;
@@ -499,7 +499,7 @@ Da habe ich jetzt einen Vorschlag. Das probierst du jetzt schnell mal selber. Di
 <li>Methode <code>onCommand</code> generieren: Rechte Maus-Klick im Editor zwischen den geschwungenen Klammern &gt; <strong>Inserter Code</strong> &gt; <strong>Override Method</strong> &gt; Auswahl von <code>onCommand</code> &gt; <strong>Generate</strong></li>
 <li>Die Methode ausprogrammieren, also reinschreiben, was geschehen soll, wenn eines der Kommandos aufgerufen wird:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">boolean</span> onCommand(CommandSender sender, Command command, String label, String[] args) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (label.equalsIgnoreCase(<span style="color:#a31515">&#34;gethealth&#34;</span>)) {
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (sender <span style="color:#00f">instanceof</span> Player) {
 </span></span><span style="display:flex;"><span>            Player player = (Player) sender;
@@ -520,7 +520,7 @@ Da habe ich jetzt einen Vorschlag. Das probierst du jetzt schnell mal selber. Di
 <li><code>plugin.yml</code> zum Projekt hinzufügen: Rechte Maus-Klick auf <strong>Source Packages</strong> &gt; <strong>New</strong> auswählen &gt; <strong>YAML File</strong> mit File Name <code>plugin</code></li>
 <li>Die Details im <code>plugin.yml</code> eingeben, wobei du die Details in den eckigen Klammern [] durch deine Werte ersetzt:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#008000">## YAML Template.</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#008000">## YAML Template.</span>
 </span></span><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>name: Getafix
 </span></span><span style="display:flex;"><span>main: [Package Name].[Class Name]
@@ -561,10 +561,10 @@ Da habe ich jetzt einen Vorschlag. Das probierst du jetzt schnell mal selber. Di
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

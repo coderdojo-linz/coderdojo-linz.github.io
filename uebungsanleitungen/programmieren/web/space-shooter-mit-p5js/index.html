@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Space Shooter mit p5.js </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -177,7 +177,7 @@
 <p>Wir verwenden für diese Übung die JavaScript Bibliothek <a href="https://p5js.org/" target="_blank">p5.js</a>. Du kannst den online Editor verwenden, um damit Programme zu bauen, du kannst die Bibliothek aber auch in deine eigene Webseite einbauen.</p>
 <p>Öffne zum Starten den <a href="https://editor.p5js.org/" target="_blank">p5.js editor</a>.</p>
 <p>Dort wird dir folgender Code angezeigt:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> setup() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> setup() {
 </span></span><span style="display:flex;"><span>  createCanvas(400, 400);
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
@@ -186,7 +186,7 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="html">HTML</h2>
 <p>Wähle auf der linke Seite zuerst die Datei <code>index.html</code> aus. Dort müssen wir noch die Verweise auf zwei weiter JavaScript Bibliotheken einfügen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;html lang=<span style="color:#a31515">&#34;en&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>  &lt;head&gt;
 </span></span><span style="display:flex;"><span>    &lt;script src=<span style="color:#a31515">&#34;https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js&#34;</span>&gt;&lt;/script&gt;
@@ -204,20 +204,20 @@
 </span></span><span style="display:flex;"><span>&lt;/html&gt;</span></span></code></pre></div>
 <h2 id="variablen">Variablen</h2>
 <p>Wechsle jetzt zurück zur Datei <code>sketch.js</code>. Als erstes legen wir alle Variablen an, die wir für das Spiel brauchen. Füge die Variablen ganz am Anfang des Codes ein. Zeilen die mit <code>//</code> beginnen sind Kommentare, die sind nicht nötig, damit das Programm läuft:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// x Position vom Raumschiff
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> spaceshipX = 250;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#008000">// x Position vom Raumschiff
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">let</span> spaceshipX = 250;
 </span></span><span style="display:flex;"><span><span style="color:#008000">// y Position vom Raumschiff
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> spaceshipY = 360;
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">let</span> spaceshipY = 360;
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Rotation vom Raumschiff
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> rotation = 0;
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">let</span> rotation = 0;
 </span></span><span style="display:flex;"><span><span style="color:#008000">// gibt an, ob das Spiel schon vorbei ist weil das Raumschiff getroffen wurde
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> gameOver = <span style="color:#00f">false</span>;
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">let</span> gameOver = <span style="color:#00f">false</span>;
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Liste der Sterne
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> stars = [];
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">let</span> stars = [];
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Liste der Asteroiden
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">const</span> asteroids = [];
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">const</span> asteroids = [];
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Liste der abgefeuerten Laser
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">let</span> lasers = [];
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">let</span> lasers = [];
 </span></span><span style="display:flex;"><span><span style="color:#00f">let</span> explosions = [];
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">let</span> spaceshipImg;
@@ -227,7 +227,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#00f">const</span> explosionImg = [];
 </span></span></code></pre></div><h2 id="grafiken-laden">Grafiken laden</h2>
 <p>Direkt darunter und noch über der Funktion <code>setup</code> fügen wir eine neue Funktion <code>preload</code> ein, mit der wir alle Grafiken für das Spiel laden:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> preload() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> preload() {
 </span></span><span style="display:flex;"><span>  spaceshipImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/spaceship.png&#39;</span>);
 </span></span><span style="display:flex;"><span>  asteroidImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/asteroid.png&#39;</span>);
 </span></span><span style="display:flex;"><span>  laserImg = loadImage(<span style="color:#a31515">&#39;https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/space-shooter-mit-p5js/source/img/shot.png&#39;</span>);
@@ -238,35 +238,35 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="spielfeld-vorbereiten">Spielfeld vorbereiten</h2>
 <p>Für das Spielfeld nutzen wir die Funktion <code>setup</code>, die einmal beim Starten des Programms aufgerufen wird. Ändere in dieser Funktion die Breite des Spielfelds auf 500:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> setup() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> setup() {
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>  createCanvas(500, 400);
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <h2 id="spielfeld-updaten">Spielfeld updaten</h2>
 <p>In der Funktion <code>draw</code> wird das Spielfeld regelmäßig upgedated. Dazu setzen wir in jedem Durchlauf die Hintergrundfarbe auf schwarz. Außerdem rufen wir eine neue Funktion zum Zeichnen des Raumschiffs auf, die wir gleich nachher noch anlegen werden.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>  background(<span style="color:#a31515">&#39;black&#39;</span>);
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>  drawSpaceship();
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <h2 id="raumschiff">Raumschiff</h2>
 <p>Nun fügen wir die neue Funktion zum Zeichnen und Steuern des Raumschiffs ein. Füge die Funktion am Ende des Codes ein:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> drawSpaceship() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> drawSpaceship() {
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// links und rechts bewegen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (keyIsDown(LEFT_ARROW) &amp;&amp; spaceshipX &gt;= 2) {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">if</span> (keyIsDown(LEFT_ARROW) &amp;&amp; spaceshipX &gt;= 2) {
 </span></span><span style="display:flex;"><span>    spaceshipX -= 2;
 </span></span><span style="display:flex;"><span>  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyIsDown(RIGHT_ARROW) &amp;&amp; spaceshipX &lt;= width - 2) {
 </span></span><span style="display:flex;"><span>    spaceshipX += 2;
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// rotieren
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (keyIsDown(65)) {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">if</span> (keyIsDown(65)) {
 </span></span><span style="display:flex;"><span>    rotation -= 0.05;
 </span></span><span style="display:flex;"><span>  } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (keyIsDown(68)) {
 </span></span><span style="display:flex;"><span>    rotation += 0.05;
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Spaceship zeichnen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  push();
+</span></span></span><span style="display:flex;"><span>  push();
 </span></span><span style="display:flex;"><span>  translate(spaceshipX, spaceshipY);
 </span></span><span style="display:flex;"><span>  rotate(rotation);
 </span></span><span style="display:flex;"><span>  image(spaceshipImg, -30, -47, 60, 94);
@@ -274,14 +274,14 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="meteoriten">Meteoriten</h2>
 <p>Als nächstes lassen wir neue Asteroiden entstehen, die Richtung Raumschiff fallen. Die neue Funktion kannst du am Ende der Datei einfügen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> drawAsteroids() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> drawAsteroids() {
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// neue Asteroiden generieren
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">if</span> (frameCount % 120 === 0) {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">if</span> (frameCount % 120 === 0) {
 </span></span><span style="display:flex;"><span>    asteroids.push({ x: random(0, width), y: 0, size: 10 });
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// Asteroiden zeichnen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; asteroids.length; i++) {
+</span></span></span><span style="display:flex;"><span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; asteroids.length; i++) {
 </span></span><span style="display:flex;"><span>    push();
 </span></span><span style="display:flex;"><span>    translate(asteroids[i].x, asteroids[i].y)
 </span></span><span style="display:flex;"><span>    image(asteroidImg, asteroids[i].size / -2, asteroids[i].size / -2, asteroids[i].size, asteroids[i].size);
@@ -292,7 +292,7 @@
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Zusätzlich muss du die neue Funktion auch in der <code>draw</code> Funktion aufrufen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
 </span></span><span style="display:flex;"><span>  background(<span style="color:#a31515">&#39;black&#39;</span>);
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>  drawAsteroids();
@@ -300,13 +300,13 @@
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <h2 id="laser">Laser</h2>
 <p>Als nächstes wollen wir mit der Leertaste Laser abfeuern. Dazu fügen wir die neue Funktion <code>keyPressed</code> ein, um neue Laser entstehen zu lassen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> keyPressed() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> keyPressed() {
 </span></span><span style="display:flex;"><span>  <span style="color:#00f">if</span> (keyCode === 32) {
 </span></span><span style="display:flex;"><span>    lasers.push({ x: spaceshipX, y: spaceshipY, rotation: rotation, age: 0 });
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Weiters brauchen wir eine neue Funktion <code>drawLasers</code>, um diese ins Spielfeld zu malen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> drawLasers() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> drawLasers() {
 </span></span><span style="display:flex;"><span>  <span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; lasers.length; i++) {
 </span></span><span style="display:flex;"><span>    push();
 </span></span><span style="display:flex;"><span>    translate(lasers[i].x, lasers[i].y);
@@ -316,16 +316,16 @@
 </span></span><span style="display:flex;"><span>    pop();
 </span></span><span style="display:flex;"><span>     
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// neue Position berechnen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    lasers[i].x += 10 * sin(lasers[i].rotation);
+</span></span></span><span style="display:flex;"><span>    lasers[i].x += 10 * sin(lasers[i].rotation);
 </span></span><span style="display:flex;"><span>    lasers[i].y -= 10 * cos(lasers[i].rotation);
 </span></span><span style="display:flex;"><span>    lasers[i].age++;
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  <span style="color:#008000">// alte Laser entfernen
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>  lasers = lasers.filter(l =&gt; l.x &gt;= 0 &amp;&amp; l.x &lt;= width &amp;&amp; l.y &gt;= 0 &amp;&amp; l.y &lt;= height);
+</span></span></span><span style="display:flex;"><span>  lasers = lasers.filter(l =&gt; l.x &gt;= 0 &amp;&amp; l.x &lt;= width &amp;&amp; l.y &gt;= 0 &amp;&amp; l.y &lt;= height);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Und auch in die <code>draw</code> Funktion müssen wir wieder einen Aufruf, zum Zeichnen der Laser einfügen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
 </span></span><span style="display:flex;"><span>  background(<span style="color:#a31515">&#39;black&#39;</span>);
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  drawAsteroids();
@@ -393,7 +393,7 @@ function addPointToPolygon(polygon, x, y) {
   pop();
 }
 </code></pre><p>Außerdem brauchen wir in der <code>draw</code> Methode einen Aufruf <code>detectCollisions()</code>:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
 </span></span><span style="display:flex;"><span>  background(<span style="color:#a31515">&#39;black&#39;</span>);
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  drawAsteroids();
@@ -419,7 +419,7 @@ function addPointToPolygon(polygon, x, y) {
   explosions = explosions.filter(e =&gt; e.duration / 3 &lt;= 9);
 }
 </code></pre><p>Auch diese Funtion wird wieder in der <code>draw</code> Methode aufgerufen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
 </span></span><span style="display:flex;"><span>  background(<span style="color:#a31515">&#39;black&#39;</span>);
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span>  drawAsteroids();
@@ -465,7 +465,7 @@ function addPointToPolygon(polygon, x, y) {
   pop();
 }
 </code></pre><p>Auch diese Funtion wird wieder in der <code>draw</code> Methode aufgerufen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
 </span></span><span style="display:flex;"><span>  background(<span style="color:#a31515">&#39;black&#39;</span>);
 </span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>  drawStars();
@@ -478,7 +478,7 @@ function addPointToPolygon(polygon, x, y) {
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <h2 id="game-over">Game Over</h2>
 <p>Zu guter letzt müssen wir in der <code>draw</code> Methode noch erkennen, ob das Spiel schon verloren ist:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#00f">function</span> draw() {
 </span></span><span style="display:flex;"><span>  background(<span style="color:#a31515">&#39;black&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex; background-color:#e5e5e5"><span>  <span style="color:#00f">if</span> (gameOver) {
@@ -502,7 +502,7 @@ function addPointToPolygon(polygon, x, y) {
 <ul>
 <li><a href="source/index.html">index.html</a></li>
 <li><a href="source/sketch.js">sketch.js</a></li>
-<li><a href="source/style.js">style.js</a></li>
+<li><a href="source/style.css">style.css</a></li>
 <li><a href="source/transformer.js">transformer.js</a></li>
 <li>img
 <ul>
@@ -543,10 +543,10 @@ function addPointToPolygon(polygon, x, y) {
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

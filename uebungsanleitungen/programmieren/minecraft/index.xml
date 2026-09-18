@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Minecraft on CoderDojo Linz</title>
-    <link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/</link>
-    <description>Recent content in Minecraft on CoderDojo Linz</description>
-    <generator>Hugo</generator>
-    <language>de-AT</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+	<channel>
+		<title>Minecraft on CoderDojo Linz</title>
+		<link>https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/</link>
+		<description>Recent content in Minecraft on CoderDojo Linz</description>
+		<generator>Hugo</generator>
+		<language>de-AT</language>
+		
+		
+		
+		
+			<lastBuildDate></lastBuildDate>
+		
+			<atom:link href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/minecraft/index.xml" rel="self" type="application/rss+xml" />
+	</channel>
 </rss>

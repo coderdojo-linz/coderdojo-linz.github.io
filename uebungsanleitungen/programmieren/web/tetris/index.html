@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Tetris </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -168,7 +168,7 @@
 <p>In this session we will impelment a version of the TETRIS game based on a video by the amazin Ania Kubów. Check out her youtube channel <a href="https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw" target="_blank"> &ndash;&gt; here &lt;&ndash; </a>.</p>
 <h2 id="project-setup-and-file-linking">Project setup and file linking</h2>
 <p>We will need three files - a index.html that contains the markup of our website, an app.js file that contains our logic and a styles.css for styling.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;html&gt;
 </span></span><span style="display:flex;"><span>    &lt;head&gt;
 </span></span><span style="display:flex;"><span>        &lt;meta charset=<span style="color:#a31515">&#34;utf-8&#34;</span>&gt;
@@ -185,7 +185,7 @@ We should now see a popup containing the text &ldquo;Hello Tetris&rdquo; when we
 <h2 id="set-up-the-grid-for-our-tetris-game">Set up the Grid for our Tetris game</h2>
 <p>The main thing we need in our game is our game grid - We will start with a game are with a width of 10 and a height of 20. Therefore we need 200 cells.
 A cell will be represented by a div tag.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!DOCTYPE html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;html&gt;
 </span></span><span style="display:flex;"><span>    &lt;head&gt;
 </span></span><span style="display:flex;"><span>        &lt;meta charset=<span style="color:#a31515">&#34;utf-8&#34;</span>&gt;
@@ -202,7 +202,7 @@ A cell will be represented by a div tag.</p>
 </span></span><span style="display:flex;"><span>    &lt;/body&gt;
 </span></span><span style="display:flex;"><span>&lt;/html&gt;
 </span></span></code></pre></div><p>Next up we will define the size of our grid and make it visibile by applying some background colors. We want every cell to have a size of 20 x 20 pixels therefor our whole grid will have a width of 10 * 20 = 200 and a height of 20 * 20 = 400 pixels. We will also set up some styling for our cells so we see their placement.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">grid</span> {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">grid</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">height</span>: 400<span style="color:#2b91af">px</span>; 
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">width</span>: 200<span style="color:#2b91af">px</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">background</span>: <span style="color:#00f">lightblue</span>;
@@ -214,7 +214,7 @@ A cell will be represented by a div tag.</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">width</span>: 18<span style="color:#2b91af">px</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>When we refresh our page now, we will see that our cells actually fall out of our grid. In order to correct that we will use flex-wrap on the grid, which tells the child elements to wrap if necessary (instead of overflowing like we&rsquo;ve seen before).</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">grid</span> {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">grid</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">display</span>: <span style="color:#00f">flex</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">flex-wrap</span>: <span style="color:#00f">wrap</span>;
 </span></span><span style="display:flex;"><span>}
@@ -251,14 +251,14 @@ A cell will be represented by a div tag.</p>
 2 # # #
 3   
 </code></pre><p>which corresponds to</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">const</span> lTetromino = [
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">const</span> lTetromino = [
 </span></span><span style="display:flex;"><span>    [1, width+1, width*2+1, 2], 
 </span></span><span style="display:flex;"><span>    [width, width+1, width+2, width*2+2], 
 </span></span><span style="display:flex;"><span>    [1, width+1, width*2+1, width*2], 
 </span></span><span style="display:flex;"><span>    [width, width*2, width*2+1, width*2+2]
 </span></span><span style="display:flex;"><span>];
 </span></span></code></pre></div><p>We&rsquo;ll do the exact same thing for all five of our tetrominos and put the five tetrominos in one array to choose randomly from.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">const</span> width = 10;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">const</span> width = 10;
 </span></span><span style="display:flex;"><span><span style="color:#00f">const</span> height = 20;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">const</span> lTetromino = [
@@ -294,11 +294,11 @@ A cell will be represented by a div tag.</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">const</span> allTetrominos = [lTetromino, zTetromino, tTetromino, iTetromino, oTetromino];
 </span></span></code></pre></div><p>Next we will write a function to display our tetromino on the grid, we will do this by applying a css class to the cells that our tetromino is covering. First we will add some styling to all elements that have a <code>class=&quot;falling-tetromino&quot;</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">falling-tetromino</span> {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#2b91af">falling-tetromino</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">background</span>: <span style="color:#00f">hotpink</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Now we need to implement a draw and undraw function for our tetromino - the function will draw a tetromino, which is an array of numbers that tells us which cells to color repectively to our current position at a specific position. <code>currentTetromino</code> and <code>currentPosition</code> are global variables, we will need to modify and read them across functions.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">let</span> cells = Array.from(document.querySelectorAll(<span style="color:#a31515">&#39;.grid div&#39;</span>))
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">let</span> cells = Array.from(document.querySelectorAll(<span style="color:#a31515">&#39;.grid div&#39;</span>))
 </span></span><span style="display:flex;"><span><span style="color:#00f">let</span> currentTetromino = allTetrominos[0][0];
 </span></span><span style="display:flex;"><span><span style="color:#00f">let</span> currentPosition = 4;
 </span></span><span style="display:flex;"><span>
@@ -316,12 +316,12 @@ A cell will be represented by a div tag.</p>
 </span></span></code></pre></div><p>In order to test it we will just use a <code>draw();</code> at the end of our code and set <code>currentTetromino</code> to  <code>allTetrominos[0][0]</code> and currentPosition to <code>4</code> which is the center of the top row of our grid. Now if we reload the page - we might see no tetrominio displayed and see an error in our console instead.</p>
 <p>⚠️ That&rsquo;s because we try to load all cells with <code>document.querySelectorAll('.grid div')</code> before the HTML is built actually and then this selector returns nothing.
 In order to fix that we will wrap our code in a event listener that listens on the document ready - this event will be fired once the full HTML has been rendered initially.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.addEventListener(<span style="color:#a31515">&#39;DOMContentLoaded&#39;</span>, () =&gt; {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.addEventListener(<span style="color:#a31515">&#39;DOMContentLoaded&#39;</span>, () =&gt; {
 </span></span><span style="display:flex;"><span>   <span style="color:#008000">// all of our existing code
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>});
+</span></span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><h2 id="implement-moving-left-and-right-with-the-arrow-keys">Implement moving left and right with the arrow keys</h2>
 <p>Next we will implement our moveLeft and moveRight functions so that we can move our tetromino to the left and right when we press those arrow keys:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveLeft() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveLeft() {
 </span></span><span style="display:flex;"><span>    undraw();
 </span></span><span style="display:flex;"><span>    currentPosition -= 1; 
 </span></span><span style="display:flex;"><span>    draw();
@@ -333,23 +333,23 @@ In order to fix that we will wrap our code in a event listener that listens on t
 </span></span><span style="display:flex;"><span>    draw();
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>By adding an event listener to the keydown event we can specify a function that will always be called when any key on the keyboard is pressed. This event has a property <code>keyCode</code> which we can use to only react on certain key presses.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.addEventListener(<span style="color:#a31515">&#39;keydown&#39;</span>, <span style="color:#00f">function</span> keyDownListener(e) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.addEventListener(<span style="color:#a31515">&#39;keydown&#39;</span>, <span style="color:#00f">function</span> keyDownListener(e) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (e.keyCode ===39) { <span style="color:#008000">// arrow right
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        moveRight();
+</span></span></span><span style="display:flex;"><span>        moveRight();
 </span></span><span style="display:flex;"><span>    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (e.keyCode === 37) { <span style="color:#008000">// arrow left
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        moveLeft();
+</span></span></span><span style="display:flex;"><span>        moveLeft();
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><p>Now we can already properly move to the left and to the right but we can move outside of our grid and cause an error in our program, so we need to add a check in the moveLeft/moveRight function to only if move if we are not yet touching the edge.</p>
 <p>We can easily identify if one of our displayed elements touches the left side by calculating the aboslute positions and using the modolo function.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> touchingRightEdge() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> touchingRightEdge() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> currentTetromino.some(offset =&gt; (currentPosition + offset) % width === width - 1);
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">function</span> moveRight() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (!touchingRightEdge()) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// undraw, modify currentPosition, draw
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    }
+</span></span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">function</span> touchingLeftEdge() {
@@ -359,12 +359,12 @@ In order to fix that we will wrap our code in a event listener that listens on t
 </span></span><span style="display:flex;"><span><span style="color:#00f">function</span> moveLeft() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (!touchingLeftEdge()) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// undraw, modify currentPosition, draw
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    }
+</span></span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>💡 <code>some</code> is a function on an array or list that evaluates a given condition for every element in the array or list. If the condition resolves to true for any (or some ;)) of the elements it will return <code>true</code>.</p>
 <h2 id="implement-rotating-with-the-arrow-up-key">Implement rotating with the arrow up key</h2>
 <p>When we press the arrow up key we would like to rotate our tetromino. In order to do so we will extract variables for the currentTetrominoIdx and the currentRotationIdx and modify the rotationIdx and currentTetromino variable in the rotate function. Moreover we will add another if statement to our keydown event listener.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> rotate() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> rotate() {
 </span></span><span style="display:flex;"><span>    undraw()
 </span></span><span style="display:flex;"><span>    currentRotationIdx = (currentRotationIdx + 1) % 4
 </span></span><span style="display:flex;"><span>    currentTetromino = allTetrominos[currentTetrominoIdx][currentRotationIdx]
@@ -373,14 +373,14 @@ In order to fix that we will wrap our code in a event listener that listens on t
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>document.addEventListener(<span style="color:#a31515">&#39;keydown&#39;</span>, <span style="color:#00f">function</span> keyDownListener(e) {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// left and right arrow handling
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (e.keyCode === 38) { <span style="color:#008000">// arrow up
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        rotate();
+</span></span></span><span style="display:flex;"><span>    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (e.keyCode === 38) { <span style="color:#008000">// arrow up
+</span></span></span><span style="display:flex;"><span>        rotate();
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><p>Now when we press the arrow up key we can rotate our tetromino - great!</p>
 <h2 id="implement-moving-down-with-the-arrow-down-key">Implement moving down with the arrow down key</h2>
 <p>In tetris the tetrominos fall downward over time (we will implement that soon ;)) but you can also speed that process up by clicking the down arrow. That&rsquo;s what we will implement next.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveDown() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveDown() {
 </span></span><span style="display:flex;"><span>    undraw()
 </span></span><span style="display:flex;"><span>    currentPosition += width
 </span></span><span style="display:flex;"><span>    draw()
@@ -388,15 +388,15 @@ In order to fix that we will wrap our code in a event listener that listens on t
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>document.addEventListener(<span style="color:#a31515">&#39;keydown&#39;</span>, <span style="color:#00f">function</span> keyDownListener(e) {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// left, right and up arrow handling
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (e.keyCode === 40) { <span style="color:#008000">// arrow down
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>        moveDown();
+</span></span></span><span style="display:flex;"><span>    } <span style="color:#00f">else</span> <span style="color:#00f">if</span> (e.keyCode === 40) { <span style="color:#008000">// arrow down
+</span></span></span><span style="display:flex;"><span>        moveDown();
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><p>Now we have the same problem as we had before when we implemented the left and right movement. When we are at the bottom of our field we get an error. What should actually happen is that the block freezes and stays at the bottom.</p>
 <p>We reach the last row if any of our absolute positions from our current tetromino is greater than 190. When we reach it we will mark our current tetromino cells as <code>frozen-tetromino</code> for later usage and start a new tetromino at the top of our grid.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveDown() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveDown() {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// undraw, modify currentPosition, draw
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    freeze();
+</span></span></span><span style="display:flex;"><span>    freeze();
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">function</span> freeze() {
@@ -416,33 +416,33 @@ In order to fix that we will wrap our code in a event listener that listens on t
 </span></span></code></pre></div><p>Perfect! Now tetrominos get stuck at the bottom and new ones appear at the top. But for now they can still fall through other tetrominos. We will fix this next - we will make tetrominos get stuck when they touch another tetromino.</p>
 <h2 id="freezing-tetrominos-when-they-touch-another-tetromino">Freezing tetrominos when they touch another tetromino</h2>
 <p>This is where our <code>frozen-tetromino</code> class comes into play. We will add a function to check if any cell of our current tetrominos would touch an existing frozen tetromino at its new index.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> wouldTouchFrozenTetromino(potentialPosition) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> wouldTouchFrozenTetromino(potentialPosition) {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">return</span> currentTetromino.some(offset =&gt; cells[potentialPosition + offset].classList.contains(<span style="color:#a31515">&#39;frozen-tetromino&#39;</span>));
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>We need to call this function in our freeze method, to check if we would touch a frozen tetromino, if we were on row below.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> freeze() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> freeze() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (touchingBottom() || wouldTouchFrozenTetromino(currentPosition + width)) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// as before
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    }
+</span></span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>We should also check in our moveLeft and moveRight function if no frozen tetrominos are in our way.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveRight() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveRight() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (!touchingRightEdge() &amp;&amp; !wouldTouchFrozenTetromino(currentPosition + 1)) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// as before
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    }
+</span></span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#00f">function</span> moveLeft() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (!touchingLeftEdge() &amp;&amp; !wouldTouchFrozenTetromino(currentPosition - 1)) {
 </span></span><span style="display:flex;"><span>        <span style="color:#008000">// as before
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    }
+</span></span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="tetrominos-move-down-on-their-own">Tetrominos move down on their own</h2>
 <p>Next up we will let the tetrominos move down on their own as soon as we click a start button. For that we will add a start button and a score field to our HTML above the grid.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>    &lt;button class=<span style="color:#a31515">&#34;start-button&#34;</span>&gt;Start&lt;/button&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>    &lt;button class=<span style="color:#a31515">&#34;start-button&#34;</span>&gt;Start&lt;/button&gt;
 </span></span><span style="display:flex;"><span>    &lt;h1&gt;Score: &lt;span class=<span style="color:#a31515">&#34;score&#34;</span>&gt;0&lt;/span&gt;&lt;/h1&gt;
 </span></span></code></pre></div><p>In our JavaScript file we will add an on-click listener to the start button and call the setupTetromino logic from there to randomly select a tetromino. We can now also remove our hardcoded tetromnio from the beginning (the draw call).</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">let</span> timerId = <span style="color:#00f">null</span>;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">let</span> timerId = <span style="color:#00f">null</span>;
 </span></span><span style="display:flex;"><span>document.querySelector(<span style="color:#a31515">&#39;.start-button&#39;</span>).addEventListener(<span style="color:#a31515">&#39;click&#39;</span>, () =&gt; {
 </span></span><span style="display:flex;"><span>    setupRandomTetromino();
 </span></span><span style="display:flex;"><span>    timerId = setInterval(moveDown, 1000);
@@ -451,7 +451,7 @@ In order to fix that we will wrap our code in a event listener that listens on t
 <h2 id="full-rows-vanish-and-add-to-the-score">Full rows vanish and add to the score</h2>
 <p>Great now we can already play the game and it behaves a lot like the original game, but full rows don&rsquo;t vanish yet.
 Whenever all cells in one row have the <code>frozen-tetromino</code> class we need to cut out that row, and add it on top of the array again (top of the grid).</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> recalculateScore() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> recalculateScore() {
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">for</span> (currentIndex = 0; currentIndex &lt; 200; currentIndex += width) {
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">const</span> row = [currentIndex, currentIndex + 1, currentIndex + 2, currentIndex + 3, currentIndex + 4, currentIndex + 5, currentIndex + 6, currentIndex + 7, currentIndex + 8, currentIndex + 9]
 </span></span><span style="display:flex;"><span>        <span style="color:#00f">if</span> (row.every(index =&gt; cells[index].classList.contains(<span style="color:#a31515">&#39;frozen-tetromino&#39;</span>))) {
@@ -465,12 +465,12 @@ Whenever all cells in one row have the <code>frozen-tetromino</code> class we ne
 <p>💡 <code>every</code> is a function on an array or list that evaluates a given condition for every element in the array or list, like <code>some</code>. In comparision to <code>some</code> it will only return <code>true</code> if the condition is true for each element in the list or array. If a single element results in the condition evaluating to <code>false</code> the result of the <code>every</code> call will be false.</p>
 <p>💡 <code>splice</code> is a method on an array that cuts out n elements on a specific index and returns a list of those elements.</p>
 <p>We add a call to this function in our <code>moveDown()</code> function.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveDown() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> moveDown() {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// previous logic
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    recalculateScore();
+</span></span></span><span style="display:flex;"><span>    recalculateScore();
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Now when we are able to create a full row that row will vanish and the row will appear at the top of the grid again - with the frozen-tetromino class styling so still in pink, we need to remove this styling before we move the row to the top</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">if</span> (row.every(index =&gt; cells[index].classList.contains(<span style="color:#a31515">&#39;frozen-tetromino&#39;</span>))) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">if</span> (row.every(index =&gt; cells[index].classList.contains(<span style="color:#a31515">&#39;frozen-tetromino&#39;</span>))) {
 </span></span><span style="display:flex;"><span>    row.forEach(
 </span></span><span style="display:flex;"><span>        cellIndex =&gt; {
 </span></span><span style="display:flex;"><span>            cells[cellIndex].classList.remove(<span style="color:#a31515">&#39;frozen-tetromino&#39;</span>);
@@ -480,21 +480,21 @@ Whenever all cells in one row have the <code>frozen-tetromino</code> class we ne
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">const</span> cellsRemoved = cells.splice(currentIndex, width)
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// add cells on top ...
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>}
+</span></span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Now the moving of the cells to the top should work properly. One thing that&rsquo;s still left is adding to the score and displaying it.
 We can easily do that by increasing the score by 10 whenever a row is full (because a row consists of 10 blocks) and updating our dedicated HTML element.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">if</span> (row.every(index =&gt; cells[index].classList.contains(<span style="color:#a31515">&#39;frozen-tetromino&#39;</span>))) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">if</span> (row.every(index =&gt; cells[index].classList.contains(<span style="color:#a31515">&#39;frozen-tetromino&#39;</span>))) {
 </span></span><span style="display:flex;"><span>    score += 10;
 </span></span><span style="display:flex;"><span>    document.querySelector(<span style="color:#a31515">&#39;.score&#39;</span>).innerHTML = score;
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// splice array and move cells to top ...
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>}
+</span></span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="game-over">Game Over</h2>
 <p>Whenever we start a new tetromino and on any of its positions there is already a tetromino, that means we have lost.
 So we need to check if we are touching any frozen tetromino on our current position whenever we create a new random tetromino.
 When we have lost we will just show a pop up that tells us that we have lost and clear the interval to prevent the tetrominos from falling down further.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> setupRandomTetromino() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#00f">function</span> setupRandomTetromino() {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// set up of tetrominos
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    <span style="color:#00f">if</span> (wouldTouchFrozenTetromino(currentPosition)) {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#00f">if</span> (wouldTouchFrozenTetromino(currentPosition)) {
 </span></span><span style="display:flex;"><span>        alert(<span style="color:#a31515">&#39;Game Over!&#39;</span>);
 </span></span><span style="display:flex;"><span>        clearInterval(timerId);
 </span></span><span style="display:flex;"><span>    }
@@ -520,10 +520,10 @@ When we have lost we will just show a pop up that tells us that we have lost and
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

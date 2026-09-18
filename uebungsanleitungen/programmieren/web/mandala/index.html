@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Mandala </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -223,19 +223,19 @@
 <h2 id="die-ersten-kreise">Die ersten Kreise</h2>
 <p>Starten wir mit dem Zeichnen der ersten Kreise. Dafür suchst du dir im Startercode die Zeile <code>p.background('white');</code> in der Methode <code>draw</code> heraus. Sie müsste relativ weit unten im Code zu finden sein.</p>
 <p>Unmittelbar nach dieser Zeile (<strong>vor</strong> der geschweiften Klammer zu) fügen wir folgenden Code ein. Die Kommentare (alles nach <code>//</code> musst du <strong>nicht</strong> eintippen. Das sind nur Erklärungen, was der Code macht):</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>p.strokeWeight(1);      <span style="color:#008000">// Linienstärke
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.stroke(<span style="color:#a31515">&#39;black&#39;</span>);      <span style="color:#008000">// Linienfarbe
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.angleMode(p.DEGREES); <span style="color:#008000">// Wir arbeiten mit Grad, ändere an dieser Zeile besser nichts
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.noFill();             <span style="color:#008000">// Wir wollen im Moment keine Füllfarbe
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.translate(230, 230);  <span style="color:#008000">// Wir verschieben den Mittelpunkt (0/0) unserer Zeichnung in
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>                        <span style="color:#008000">// die Mitte unseres Mandalas auf die Koordinaten 230/230.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>p.strokeWeight(1);      <span style="color:#008000">// Linienstärke
+</span></span></span><span style="display:flex;"><span>p.stroke(<span style="color:#a31515">&#39;black&#39;</span>);      <span style="color:#008000">// Linienfarbe
+</span></span></span><span style="display:flex;"><span>p.angleMode(p.DEGREES); <span style="color:#008000">// Wir arbeiten mit Grad, ändere an dieser Zeile besser nichts
+</span></span></span><span style="display:flex;"><span>p.noFill();             <span style="color:#008000">// Wir wollen im Moment keine Füllfarbe
+</span></span></span><span style="display:flex;"><span>p.translate(230, 230);  <span style="color:#008000">// Wir verschieben den Mittelpunkt (0/0) unserer Zeichnung in
+</span></span></span><span style="display:flex;"><span>                        <span style="color:#008000">// die Mitte unseres Mandalas auf die Koordinaten 230/230.
 </span></span></span></code></pre></div><p>Falls du später mit verschiedenen Linienfarben experimentieren möchtest, findest du die englischen Farbnamen unter <a href="https://htmlcolorcodes.com/color-names/" target="_blank">https://htmlcolorcodes.com/color-names/</a>.</p>
 <p>Noch hat sich an unserem weißen Bildschirm nichts verändert. Das ändern wir jetzt. Füge folgenden Code ein <strong>unmittelbar nach dem Code ein, den du zuvor geschrieben hast</strong>, um die drei großen Kreise zu zeichnen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>p.push(); <span style="color:#008000">// Ist einfach notwendig, vertrau uns ;-)
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.circle(0, 0, 450); <span style="color:#008000">// Ganz großer Kreis
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.circle(0, 0, 390); <span style="color:#008000">// Mittlerer Kreis
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.circle(0, 0, 225); <span style="color:#008000">// Innerer Kreis
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.pop(); <span style="color:#008000">// Ist einfach notwendig, vertrau uns ;-)
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>p.push(); <span style="color:#008000">// Ist einfach notwendig, vertrau uns ;-)
+</span></span></span><span style="display:flex;"><span>p.circle(0, 0, 450); <span style="color:#008000">// Ganz großer Kreis
+</span></span></span><span style="display:flex;"><span>p.circle(0, 0, 390); <span style="color:#008000">// Mittlerer Kreis
+</span></span></span><span style="display:flex;"><span>p.circle(0, 0, 225); <span style="color:#008000">// Innerer Kreis
+</span></span></span><span style="display:flex;"><span>p.pop(); <span style="color:#008000">// Ist einfach notwendig, vertrau uns ;-)
 </span></span></span></code></pre></div><p>So sollte die Grafik jetzt aussehen. Damit du die Parameter beim Aufruf der <code>circle</code>-Methode besser verstehst, ist eingezeichnet, welcher Kreis welchen Durchmesser hat.</p>
 
 
@@ -288,11 +288,11 @@
 </div>
 
 <p>Sechs Linien einzeln zeichnen ist langweilig. Wir verwenden stattdessen eine Schleife. Schleifen kennst du vielleicht schon aus Scratch. Füge folgenden Code ein <strong>unmittelbar nach dem Code ein, den du zuvor geschrieben hast</strong>, um die Linien zu zeichnen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>p.push();
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>p.push();
 </span></span><span style="display:flex;"><span><span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; 6; i++) { <span style="color:#008000">// Schleife, die sechs mal wiederholt wird
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    p.line(0, -225, 0, 225); <span style="color:#008000">// Zeichne eine Linie
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    p.rotate(30); <span style="color:#008000">// Rotiere die nächste Linie um 30 Grad
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>}
+</span></span></span><span style="display:flex;"><span>    p.line(0, -225, 0, 225); <span style="color:#008000">// Zeichne eine Linie
+</span></span></span><span style="display:flex;"><span>    p.rotate(30); <span style="color:#008000">// Rotiere die nächste Linie um 30 Grad
+</span></span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>p.pop();
 </span></span></code></pre></div><p>Experimentiere mit den verschiedenen Zahlen. Kannst du herausfinden, was sie genau steuern?</p>
 <h2 id="kleine-kreise">Kleine Kreise</h2>
@@ -322,21 +322,21 @@
 </div>
 
 <p>Füge folgenden Code ein <strong>unmittelbar nach dem Code ein, den du zuvor geschrieben hast</strong>, um die inneren Kreise zu zeichnen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; 6; i++) { <span style="color:#008000">// Schleife, die sechs mal wiederholt wird
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    p.circle(113, 0, 225); <span style="color:#008000">// Zeichne den Kreis
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    p.rotate(60); <span style="color:#008000">// Rotiere den nächsten Kreis um 60 Grad
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>}
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; 6; i++) { <span style="color:#008000">// Schleife, die sechs mal wiederholt wird
+</span></span></span><span style="display:flex;"><span>    p.circle(113, 0, 225); <span style="color:#008000">// Zeichne den Kreis
+</span></span></span><span style="display:flex;"><span>    p.rotate(60); <span style="color:#008000">// Rotiere den nächsten Kreis um 60 Grad
+</span></span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Experimentiere mit den verschiedenen Zahlen. Kannst du herausfinden, was sie genau steuern?</p>
 <p><strong>Gratuliere!</strong> Dein Mandala-Muster in Schwarzweiß ist fertig.</p>
 <h2 id="farben">Farben</h2>
 <p>Jetzt wollen wir das Mandala noch farbig ausmalen. Starten wir mit den großen Kreisen. Suche dir den Code heraus, mit dem wir die großen Kreise gezeichnet haben. Hier fügen wir jetzt Füllfarben ein:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>p.push();
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>p.push();
 </span></span><span style="display:flex;"><span>p.fill(255, 0, 0, 255); <span style="color:#008000">// &lt;&lt;&lt; DIESE ZEILE EINFÜGEN
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.circle(0, 0, 450);
+</span></span></span><span style="display:flex;"><span>p.circle(0, 0, 450);
 </span></span><span style="display:flex;"><span>p.fill(0, 255, 0, 255); <span style="color:#008000">// &lt;&lt;&lt; DIESE ZEILE EINFÜGEN
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.circle(0, 0, 390);
+</span></span></span><span style="display:flex;"><span>p.circle(0, 0, 390);
 </span></span><span style="display:flex;"><span>p.fill(0, 0, 255, 255); <span style="color:#008000">// &lt;&lt;&lt; DIESE ZEILE EINFÜGEN
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>p.circle(0, 0, 225);
+</span></span></span><span style="display:flex;"><span>p.circle(0, 0, 225);
 </span></span><span style="display:flex;"><span>p.pop();
 </span></span></code></pre></div><p>So sieht das dann aus:</p>
 
@@ -389,9 +389,9 @@
 </div>
 
 <p>Die vierte Zahl bei <code>fill</code> in Klammern ist die Deckkraft der Farbe. 255 ist die höchste Deckkraft, 0 die niedrigste. Die Deckkraft ist wichtig, wenn du die inneren Kreis ausmalen möchtest. Das sieht auch schön aus. Hier ein Beispiel:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; 6; i++) {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#00f">for</span> (<span style="color:#00f">let</span> i = 0; i &lt; 6; i++) {
 </span></span><span style="display:flex;"><span>    p.fill(255, 255, 0, 75); <span style="color:#008000">// &lt;&lt;&lt; DIESE ZEILE EINFÜGEN
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    p.circle(113, 0, 225);
+</span></span></span><span style="display:flex;"><span>    p.circle(113, 0, 225);
 </span></span><span style="display:flex;"><span>    p.rotate(60);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Das sieht dann so aus:</p>
@@ -447,10 +447,10 @@
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

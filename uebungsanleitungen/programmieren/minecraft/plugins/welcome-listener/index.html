@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Auf Ereignisse reagieren </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -215,16 +215,16 @@
 <p>Außerdem werden wir, wenn die Spieler miteinander chatten, die Nachrichten der ops in einer speziellen Farbe darstellen. Da diese Listender sehr gut zum Thema Begrüßen passt, kannst du sie zu deinem ersten Plugin (das mit dem <code>/sayhello</code>) dazugeben oder auch ein neues Projekt beginnen, wie du willst.</p>
 <h2 id="ausführliche-anleitung">Ausführliche Anleitung</h2>
 <h3 id="die-listener-klasse">Die Listener-Klasse</h3>
-<p>Wenn du dein erstes Plugin nicht erweitern willst, dann musst du wieder ein neues Projekt erstellen, ein neues Package und darin eine neue Klasse (<code>com.bajupa.welcome.Welcome</code>). Die Kurzversion, wie du dein Projekt erstellst, findest du auch <a href="/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html">hier</a>. Gut, jetzt sind wir bereit, unseren ersten Listener einzubauen.</p>
+<p>Wenn du dein erstes Plugin nicht erweitern willst, dann musst du wieder ein neues Projekt erstellen, ein neues Package und darin eine neue Klasse (<code>com.bajupa.welcome.Welcome</code>). Die Kurzversion, wie du dein Projekt erstellst, findest du auch <a href="/uebungsanleitungen/programmieren/minecraft/plugins/netbeans-cheatsheet/">hier</a>. Gut, jetzt sind wir bereit, unseren ersten Listener einzubauen.</p>
 <p>Ein wichtiger Punkt beim Programmieren ist Ordnung zu halten. Das heißt, dass wir unser Programm so ordnen, dass nur zusammengehörige Dinge in einer Klasse sind.  Daher legen wir für den Listener eine neue Klasse an. Das kannst du ja schon gut. Ich schlage vor, dass wir die neue Klasse <code>JoinAndLeaveListener</code> nenne, weil wir da auf die beiden Events, wenn ein Spieler unserem Server beitritt und wenn ein Spieler unseren Server verlässt, reagieren wollen.</p>
 <p>So ähnlich wie bei der Plugin-Klasse, welche eine Erweiterung von <code>JavaPlugin</code> ist, müssen wir einen Listener auch von einer <em>Basisklasse</em> ableiten. Das sieht dann folgendermaßen aus</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">JoinAndLeaveListener</span> <span style="color:#00f">implements</span> Listener {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">JoinAndLeaveListener</span> <span style="color:#00f">implements</span> Listener {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Wenn du genau hinsiehst, merkst du, dass hier statt <code>extends</code> das Wörtchen <code>implements</code> steht. Sehr grob</p>
 <p>In Listener-Klassen kannst du nun einen oder mehrere sog. <em>EventHandler</em> reinschreiben. Diese EventHandler sind eigentlich ganz normale Methoden, die halt nicht nach Eintippen eines Kommandos aufgerufen, sondern sobald ein Ereignis (auf Englisch eben Event) eintritt.</p>
 <p>Also wollen wir unseren ersten EventHandler implementieren. Leider haben wir hier keine so tolle Unterstützung von NetBeans, dass wir einfach <strong>Source</strong> und <strong>Insert Code &hellip;</strong> auswählen könne. Diesmal müssen wir das ganze selber machen.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">JoinAndLeaveListener</span> <span style="color:#00f">implements</span> Listener {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">JoinAndLeaveListener</span> <span style="color:#00f">implements</span> Listener {
 </span></span><span style="display:flex;"><span>    @EventHandler
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onJoin(PlayerJoinEvent event) {
 </span></span><span style="display:flex;"><span>        Player player = event.getPlayer();
@@ -263,7 +263,7 @@
 </div>
 
 <p>Wie in der Abbildung vorgegeben, wählst du <strong>onEnable()</strong> aus und drückst auf <strong>Generate</strong>. Damit sollte deine Klasse ca. so aussehen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Welcome</span> <span style="color:#00f">extends</span> JavaPlugin {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Welcome</span> <span style="color:#00f">extends</span> JavaPlugin {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    @Override
 </span></span><span style="display:flex;"><span>    <span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onEnable() {
@@ -303,7 +303,7 @@
 </div>
 
 <p>Du siehst, dass diese Methode zwei Parameter verlangt, nämlich einen Listener (was wir ja erwartet haben) und aber auch ein Plugin, dem dieser Listener zuzuordnen ist. Also los gehts: Den Listener haben wir ja gerade programmiert, den müssen wir nur noch erzeugen (das passiert mit dem Wörtchen <code>new</code>) und das Plugin, das gibt es ja bereits (in dieser Klasse befinden wir uns gerade) und wir müssen nur darauf verweisen (das passiert mit dem Wörtchen <code>this</code>). Zum Schluss sollte deine Methode genau so aussehen:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onEnable() {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onEnable() {
 </span></span><span style="display:flex;"><span>    getServer().getPluginManager().registerEvents(<span style="color:#00f">new</span> JoinAndLeaveListener(), <span style="color:#00f">this</span>);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="auch-eine-schöne-verabschiedung">Auch eine schöne Verabschiedung</h3>
@@ -353,10 +353,10 @@
 <p>Wenn du aber eigene Ideen hast, probier sie aus, besprich sie mit deinen MentorInnen und bleib hartnäckig dran, dann wird&rsquo;s bestimmt etwas.</p>
 <h2 id="kurzversion-für-profis">Kurzversion für Profis</h2>
 <ol>
-<li>Erstelle ein neues Projekt mit dem Namen <code>ListenerPlugin</code>, eine Klasse mit dem Namen <code>Welcome</code>, eine Klasse mit dem Namen <code>JoinAndLeaveListener</code> sowie das <code>plugin.yml</code> (siehe auch <a href="/uebungsanleitungen/programmieren/minecraft/plugins/netbeans_cheatsheet.html">hier</a>)</li>
+<li>Erstelle ein neues Projekt mit dem Namen <code>ListenerPlugin</code>, eine Klasse mit dem Namen <code>Welcome</code>, eine Klasse mit dem Namen <code>JoinAndLeaveListener</code> sowie das <code>plugin.yml</code> (siehe auch <a href="/uebungsanleitungen/programmieren/minecraft/plugins/netbeans-cheatsheet/">hier</a>)</li>
 <li>Implementiere die Klasse <code>JoinAndLeaveListener</code>:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">JoinAndLeaveListener</span> <span style="color:#00f">implements</span> Listener {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">JoinAndLeaveListener</span> <span style="color:#00f">implements</span> Listener {
 </span></span><span style="display:flex;"><span>			
 </span></span><span style="display:flex;"><span>	@EventHandler
 </span></span><span style="display:flex;"><span>	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onJoin(PlayerJoinEvent event) {
@@ -368,7 +368,7 @@
 </span></span></code></pre></div><ol>
 <li>Registriere den Listener, indem du die Klasse <code>Welcome</code> implementierst:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Welcome</span> <span style="color:#00f">extends</span> JavaPlugin {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#00f">public</span> <span style="color:#00f">class</span> <span style="color:#2b91af">Welcome</span> <span style="color:#00f">extends</span> JavaPlugin {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	@Override
 </span></span><span style="display:flex;"><span>	<span style="color:#00f">public</span> <span style="color:#2b91af">void</span> onEnable() {
@@ -415,10 +415,10 @@
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>

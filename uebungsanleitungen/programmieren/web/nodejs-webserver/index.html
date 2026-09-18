@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Node.js Webserver </title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.136.5"> <!-- Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
 
     
 
@@ -38,11 +38,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
      
     
-    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.427db798bc1fd8e87412688ee1bc17b146a8ab9607228f687fa08070b18c0575.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
     <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
      
      
-    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.a2e6859e8cb9160bace1b028b41c1206669c8ff293c2ad7667b894b27390b461.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
     <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
 </head>
 
@@ -317,27 +317,27 @@ Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://no
 <p>Einen Webserver zu programmieren ist mit Node.js nicht schwierig. Es reichen ein paar Zeilen Code. Hier sind sie. Schreibe sie in deine <em>server.js</em> Datei und achte besonders auf die enthaltenen Kommentarzeilen:</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#008000">// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#008000">// express und http Module importieren. Sie sind dazu da, die HTML-Dateien
 </span></span></span><span style="display:flex;"><span><span style="color:#008000">// aus dem Ordner &#34;public&#34; zu veröffentlichen.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span><span style="color:#00f">var</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>);
+</span></span></span><span style="display:flex;"><span><span style="color:#00f">var</span> express = require(<span style="color:#a31515">&#39;express&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#00f">var</span> app = express();
 </span></span><span style="display:flex;"><span><span style="color:#00f">var</span> server = require(<span style="color:#a31515">&#39;http&#39;</span>).createServer(app);
 </span></span><span style="display:flex;"><span><span style="color:#00f">var</span> port = 3000;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Mit diesem Kommando starten wir den Webserver.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>server.listen(port, <span style="color:#00f">function</span> () {
+</span></span></span><span style="display:flex;"><span>server.listen(port, <span style="color:#00f">function</span> () {
 </span></span><span style="display:flex;"><span>    <span style="color:#008000">// Wir geben einen Hinweis aus, dass der Webserer läuft.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>    console.log(<span style="color:#a31515">&#39;Webserver läuft und hört auf Port %d&#39;</span>, port);
+</span></span></span><span style="display:flex;"><span>    console.log(<span style="color:#a31515">&#39;Webserver läuft und hört auf Port %d&#39;</span>, port);
 </span></span><span style="display:flex;"><span>});
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Hier teilen wir express mit, dass die öffentlichen HTML-Dateien
 </span></span></span><span style="display:flex;"><span><span style="color:#008000">// im Ordner &#34;public&#34; zu finden sind.
-</span></span></span><span style="display:flex;"><span><span style="color:#008000"></span>app.use(express.<span style="color:#00f">static</span>(__dirname + <span style="color:#a31515">&#39;/public&#39;</span>));
+</span></span></span><span style="display:flex;"><span>app.use(express.<span style="color:#00f">static</span>(__dirname + <span style="color:#a31515">&#39;/public&#39;</span>));
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#008000">// Fertig. Wir haben unseren ersten, eigenen Webserver programmiert :-)
 </span></span></span></code></pre></div><h2 id="den-clientcode-erstellen">Den Clientcode erstellen</h2>
 <p>Noch können wir nichts ausprobieren, da unser <em>public</em> Verzeichnis leer ist. Erstelle daher im <em>public</em> Verzeichnis eine Datei namens <em>chat.html</em> und füge zum Testen folgenden Inhalt ein. Wie du siehst enthält die Datei nur eine Begrüßung, sonst nichts.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!doctype html&gt;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#00f">&lt;!doctype html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;html lang=<span style="color:#a31515">&#34;de&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;head&gt;
 </span></span><span style="display:flex;"><span>    &lt;meta charset=<span style="color:#a31515">&#34;UTF-8&#34;</span>&gt;
@@ -401,10 +401,10 @@ Unter Windows kannst du einfach auf <em>Install</em> auf der <a href="https://no
         </div>
     </footer> <!-- Js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
