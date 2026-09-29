@@ -201,7 +201,7 @@ function loadEvents(eventsTable) {
           ) {
             formattedBeginTime = '15:00';
             formattedEndTime = '17:00';
-          } else if (event.location.indexOf('hackathon' >= 0)) {
+          } else if (event.location.toLowerCase().indexOf('hackathon') >= 0) {
             formattedBeginTime = '';
             formattedEndTime = '';
           }
@@ -260,7 +260,7 @@ function loadEvents(eventsTable) {
           formattedDate +
           ' ' +
           formattedBeginTime +
-          ' - ' +
+          (formattedBeginTime ? ' - ' : '') +
           formattedEndTime +
           '</b>';
         row += '</div>';
