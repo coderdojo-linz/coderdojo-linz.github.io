@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de-AT">
+
+
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Parrot Escape </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="generator" content="Hugo 0.166.0"> <!-- Fonts -->
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <link rel="canonical" href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/parrot-escape/" />
+    
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> <!-- Stylesheets -->
+     
+    
+    <link rel="stylesheet" href="https://linz.coderdojo.net/vendor.min.368fde54ac9e1c8c6ff4b026c1b3dfeed521a28334f683595f37e26d18b6074e.css">
+    <link rel="stylesheet" href="https://linz.coderdojo.net/css/animate.css">
+     
+     
+    <link rel="stylesheet" href="https://linz.coderdojo.net/style.min.03ae36493e0ac6d14c3200a76e542ad02edcf3618fdc3d3d644abe8f30b24709.css">
+    <script src="https://kit.fontawesome.com/5bb5b2cc9c.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <!-- NAVIGATION -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light   ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/img/logo-linz.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/termine">Termine</a>
+                </li>
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/info">Infos</a>
+                </li>
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/mentoren">Mentoren</a>
+                </li>
+                <li class="nav-item   ">
+                    <a class="nav-link" href="/sponsoring">Sponsoring</a>
+                </li>
+                <li class="nav-item  active ">
+                    <a class="nav-link" href="/uebungsanleitungen">Übungsanleitungen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>  
+     
+     
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/">Übungsanleitungen</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/">Programmieren</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        <li class="breadcrumb-item">
+            <a href="https://linz.coderdojo.net/uebungsanleitungen/programmieren/scratch/">Scratch</a>
+        </li>
+        
+        
+        
+        
+
+        
+        
+        
+        
+        </ol>
+
+        
+        </nav>
+    </div>
+</div> 
+
+<section id="sushi-overview">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Parrot Escape</h1>
+                </div>
+                <div class="col-12 col-md-6">  <img src="/uebungsanleitungen/programmieren/scratch/parrot-escape/game.png" alt="Parrot Escape"> 
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="mb-4">Fliege mit dem Papagei der Freiheit entgegen.</p>
+                    
+                    <table class="table">
+                        <tr>
+                            <td><i class="fas fa-dragon"></i>Figuren</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-code"></i>Skripte</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-clipboard-list"></i>Variablen</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sushi">
+    <div class="container">
+        <div class="row">
+            
+            
+            <div class="col-12 sushi-content"> <h2 id="vorbereitung">Vorbereitung</h2>
+<p>Du benötigst für das Spiel:</p>
+<ul>
+<li>einen Hintergrund (wähle aus, was dir gefällt)</li>
+<li>den Vogel <strong>Parrot</strong> aus der Scratch-Bibliothek</li>
+<li>Wände, die du selbst zeichnen oder als <a href="assets/Wand.sprite3">Figur</a> herunterladen kannst</li>
+</ul>
+<p>Wenn du den Hintergrund und alle Figuren eingerichtet hast, können wir loslegen.</p>
+<h2 id="der-vogel">Der Vogel</h2>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Zuerst legen wir zwei Variablen an. Wähle für beide die Option <strong>Nur für diese Figur</strong>:</p>
+<ul>
+<li><strong>Fallgeschwindigkeit</strong></li>
+<li><strong>Flattern</strong></li>
+</ul></p>
+    </div>
+    <div class="col-12 col-md-2">
+    <img src="/uebungsanleitungen/programmieren/scratch/parrot-escape/img/parrot_variablen.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Jetzt geht es los.</p>
+<p>Der Papagei soll <strong>links in der Mitte</strong> starten, das <strong>erste Kostüm</strong> tragen, <strong>nicht fallen</strong> und <strong>sichtbar sein</strong>. Die ersten vier Blöcke kümmern sich darum.</p>
+<p>Danach kommt die Hauptschleife. Sie erledigt Folgendes:</p>
+<ul>
+<li>Sie lässt den Vogel entsprechend seiner <strong>Fallgeschwindigkeit</strong> nach unten fallen.</li>
+<li>Sie überprüft, ob der Vogel eine <strong>Wand</strong> oder den <strong>Rand</strong> berührt. Wenn das passiert, <strong>piept der Vogel</strong> kurz und das <strong>Spiel ist vorbei</strong>.</li>
+</ul>
+</p>
+    </div>
+    <div class="col-12 col-md-5">
+    <img src="/uebungsanleitungen/programmieren/scratch/parrot-escape/img/parrot_main_loop.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Das ist natürlich noch nicht alles. 😎</p>
+<p>Wenn du die <strong>Leertaste</strong> drückst, soll der Vogel flattern und sich nach oben bewegen. <strong>Ansonsten</strong> zieht ihn die Schwerkraft nach unten und er fällt immer schneller.</p>
+<p><strong>Fleißaufgabe:</strong> Fällt dir an diesem Programmteil etwas auf? Könnte man ihn eleganter gestalten? 🤔</p>
+</p>
+    </div>
+    <div class="col-12 col-md-4">
+    <img src="/uebungsanleitungen/programmieren/scratch/parrot-escape/img/parrot_fly_and_fall.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Damit der Vogel sichtbar flattert, lassen wir ihn zwischen zwei Kostümen wechseln. Das passiert nur, wenn die Variable <strong>Flattern</strong> auf 1 steht.</p>
+<p>Steht sie auf 0, zeigt der Vogel wieder sein erstes Kostüm.</p>
+</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/parrot-escape/img/parrot_flapping.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+<p>Damit ist der Vogel fertig. Probiere ihn gleich einmal aus.</p>
+<h2 id="die-wände-als-hindernisse">Die Wände als Hindernisse</h2>
+<p>Die Wände sind längliche Figuren mit einer Lücke in der Mitte, durch die der Vogel fliegen kann. Wenn du eine Wand selbst zeichnest, achte darauf, dass sie oben und unten weit über den sichtbaren Spielfeldrand hinausragt.</p>
+<p>Die Wände bewegen sich vom rechten zum linken Spielfeldrand. Wenn eine Wand den linken Rand erreicht, verschwindet sie und du erhältst einen Punkt.
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Damit die Punkte gezählt werden können, lege die Variable <strong>Punkte</strong> an. Wähle dafür die Option <strong>Für alle Figuren</strong>.</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/parrot-escape/img/points.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+</p>
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Zu Beginn:</p>
+<ul>
+<li>setzen wir die Variable <strong>Punkte</strong> auf 0,</li>
+<li><strong>verstecken</strong> die Wand und</li>
+<li><strong>drehen</strong> sie in die <strong>senkrechte Position</strong>.</li>
+</ul>
+<p>Danach wird die Wand alle fünf bis acht Sekunden geklont.</p>
+</p>
+    </div>
+    <div class="col-12 col-md-4">
+    <img src="/uebungsanleitungen/programmieren/scratch/parrot-escape/img/walls_main_loop.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p><p>Sobald ein Klon entstanden ist:</p>
+<ul>
+<li>bewegen wir ihn <strong>an den rechten Rand</strong>,</li>
+<li>geben ihm eine <strong>zufällige Höhe</strong> und</li>
+<li>machen ihn <strong>sichtbar</strong>.</li>
+</ul>
+<p>Dann warten wir, bis der Klon weit genug links ist. Anschließend <strong>erhöhen wir die Punktzahl um eins</strong> und <strong>löschen den Klon</strong>. Dadurch verschwindet diese Wand.</p>
+</p>
+    </div>
+    <div class="col-12 col-md-4">
+    <img src="/uebungsanleitungen/programmieren/scratch/parrot-escape/img/walls_lifecycle.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+
+
+
+     
+    
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <p>Die Wand soll sich gleichmäßig nach links bewegen.</p>
+    </div>
+    <div class="col-12 col-md-3">
+    <img src="/uebungsanleitungen/programmieren/scratch/parrot-escape/img/walls_movement.png" alt="(.Get 1)" class="mx-auto ml-md-auto mr-md-0" style="display: block; width: auto" />
+    </div>
+</div>
+
+<h2 id="fertig">Fertig</h2>
+<p>Damit ist dein Spiel fertig. Viel Spaß damit!</p>
+<p>Wenn dein Spiel nicht funktioniert oder du das fertige Spiel ausprobieren möchtest, kannst du es <a href="https://scratch.mit.edu/projects/1390054726/" target="_blank">hier spielen</a>.</p>
+ </div>
+        </div>
+    </div>
+</section>  
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <div>
+                            <img src="/img/logo-coding-club-linz-white.svg">
+                        </div>
+                        <div>Coding Club Linz<br />Birkenweg 16, 4060 Leonding <br />
+                            <a href="mailto:info@linz.coderdojo.net">info@linz.coderdojo.net</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/de-at.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/wow.min.js"></script>
+    <script src="https://linz.coderdojo.net/js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfXNMcZAAAAALYnf3GpUqw5uotVMyjhLNU438i9"></script>
+</body>
+
+</html>
